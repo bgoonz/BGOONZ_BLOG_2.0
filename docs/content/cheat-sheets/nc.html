@@ -25,7 +25,7 @@
 <h1 id="this-example-could-also-be-used-by-ssh1-see-the-proxycommand"><proxy-port>. This example could also be used by ssh(1); see the ProxyCommand</h1>
 <h1 id="directive-in-ssh_config5-for-more-information.">directive in ssh_config(5) for more information.</h1>
 <p>nc -x<proxy-host>:<proxy-port> -Xconnect <dest-host> <dest-port></p>
-<h1 id="the-same-example-again-this-time-enabling-proxy-authentication-with-username-ruser-if-the-proxy-requires-it">The same example again, this time enabling proxy authentication with username “ruser” if the proxy requires it:</h1>
+<h1 id="the-same-example-again-this-time-enabling-proxy-authentication-with-username-ruser-if-the-proxy-requires-it">The same example again, this time enabling proxy authentication with username "ruser” if the proxy requires it:</h1>
 <p>nc -x<proxy-host>:<proxy-port> -Xconnect -Pruser <host> <port></p>
 <h1 id="to-choose-the-source-ip-for-the-testing-using-the--s-option">To choose the source IP for the testing using the -s option</h1>
 <p>nc -zv -s source_IP target_IP Port</p>

@@ -23,7 +23,7 @@ tags: \[Featured\] weight: -10 intro: | A quick overview of new JavaScript featu
         }
     }
 
-{: data-line=“2,4”}
+{: data-line="2,4”}
 
 #### Const
 
@@ -77,7 +77,7 @@ See: [New methods](https://babeljs.io/learn-es2015/#math--number--string--object
         this.radius = radius
       }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Methods
 
@@ -85,7 +85,7 @@ See: [New methods](https://babeljs.io/learn-es2015/#math--number--string--object
         return Math.PI * 2 * this.radius
       }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Calling superclass methods
 
@@ -93,7 +93,7 @@ See: [New methods](https://babeljs.io/learn-es2015/#math--number--string--object
         return super.expand(n) * Math.PI
       }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 #### Static methods
 
@@ -102,7 +102,7 @@ See: [New methods](https://babeljs.io/learn-es2015/#math--number--string--object
       }
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Syntactic sugar for prototypes. See: [Classes](https://babeljs.io/learn-es2015/#classes)
 
@@ -111,7 +111,7 @@ Syntactic sugar for prototypes. See: [Classes](https://babeljs.io/learn-es2015/#
     const byte = 2 ** 8;
     // Same as: Math.pow(2, 8)
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Promises
 --------
@@ -126,7 +126,7 @@ Promises
         }
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 For asynchronous programming. See: [Promises](https://babeljs.io/learn-es2015/#promises)
 
@@ -136,7 +136,7 @@ For asynchronous programming. See: [Promises](https://babeljs.io/learn-es2015/#p
       .then((result) => { ··· })
       .catch((error) => { ··· })
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 ### Using promises with finally
 
@@ -145,7 +145,7 @@ For asynchronous programming. See: [Promises](https://babeljs.io/learn-es2015/#p
       .catch((error) => { ··· })
       .finally(() => { // logic independent of success/error })
 
-{: data-line=“4”}
+{: data-line="4”}
 
 The handler is called when the promise is fulfilled or rejected.
 
@@ -164,7 +164,7 @@ The handler is called when the promise is fulfilled or rejected.
         return [user, tweets];
     }
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 `async` functions are another way of using functions.
 
@@ -179,7 +179,7 @@ Destructuring
 
     const [first, last] = ['Nikola', 'Tesla'];
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Objects
 
@@ -188,7 +188,7 @@ Destructuring
         author: 'R. Galbraith'
     };
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Supports for matching arrays and objects. See: [Destructuring](https://babeljs.io/learn-es2015/#destructuring)
 
@@ -210,7 +210,7 @@ Default values can be assigned while destructuring arrays or objects.
         console.log(`${greeting}, ${name}!`);
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     greet({ name: 'Larry', greeting: 'Ahoy' });
 
@@ -224,7 +224,7 @@ Destructuring of objects and arrays can also be done in function arguments.
         console.log(`Hi ${name}!`);
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     greet(); // Hi Rauno!
     greet({ name: 'Larry' }); // Hi Larry!
@@ -237,7 +237,7 @@ Destructuring of objects and arrays can also be done in function arguments.
         console.log(`x: ${x}, y: ${y}`);
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     printCoordinates({ left: 25, top: 90 });
 
@@ -249,7 +249,7 @@ This example assigns `x` to the value of the `left` key.
       ···
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 The assignment expressions work in loops, too.
 
@@ -257,7 +257,7 @@ The assignment expressions work in loops, too.
 
     const { id, ...detail } = song;
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Extract some keys individually and remaining keys in the object using rest (…) operator
 
@@ -273,7 +273,7 @@ Spread
         visible: true
     };
 
-{: data-line=“2”}
+{: data-line="2”}
 
 #### without Object spread
 
@@ -289,7 +289,7 @@ See: [Object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 
     const users = [...admins, ...editors, 'rstacruz'];
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 #### without Array spread
 
@@ -312,7 +312,7 @@ Functions
         return `Hello ${name}`;
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Rest arguments
 
@@ -323,14 +323,14 @@ Functions
         return x * y.length;
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Spread
 
     fn(...[1, 2, 3]);
     // same as fn(1, 2, 3)
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Default, rest, spread. See: [Function arguments](https://babeljs.io/learn-es2015/#default--rest--spread)
 
@@ -342,7 +342,7 @@ Default, rest, spread. See: [Function arguments](https://babeljs.io/learn-es2015
       ···
     })
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### With arguments
 
@@ -350,7 +350,7 @@ Default, rest, spread. See: [Function arguments](https://babeljs.io/learn-es2015
       ...
     })
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Implicit return
 
@@ -362,7 +362,7 @@ Default, rest, spread. See: [Function arguments](https://babeljs.io/learn-es2015
     }));
     // Implicitly returning objects requires parentheses around the object
 
-{: data-line=“1,4,5,6”}
+{: data-line="1,4,5,6”}
 
 Like functions but with `this` preserved. See: [Fat arrows](https://babeljs.io/learn-es2015/#arrows-and-lexical-this)
 
@@ -385,7 +385,7 @@ See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-obj
     };
     // Same as: App = { start: function () {···} }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
@@ -400,7 +400,7 @@ See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-obj
         }
     };
 
-{: data-line=“2,5”}
+{: data-line="2,5”}
 
 See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
@@ -423,7 +423,7 @@ See: [Object literal enhancements](https://babeljs.io/learn-es2015/#enhanced-obj
     Object.entries(fatherJS);
     // [["age", 57], ["name", "Brendan Eich"]]
 
-{: data-line=“3,5”}
+{: data-line="3,5”}
 
 Modules
 -------

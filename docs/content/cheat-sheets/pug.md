@@ -85,14 +85,14 @@ See: [Includes](https://pugjs.org/language/includes.html)
       This is text that doesn't need to
       be prefixed by pipes.
 
-{: data-line=“1”}
+{: data-line="1”}
 
     script.
       // It's great for raw
       // JavaScript and stuff
       alert('hello')
 
-{: data-line=“1”}
+{: data-line="1”}
 
 ### Conditionals
 
@@ -101,7 +101,7 @@ See: [Includes](https://pugjs.org/language/includes.html)
     else
       a(href='/login') Sign in
 
-{: data-line=“1,3”}
+{: data-line="1,3”}
 
 See: [Conditionals](https://pugjs.org/language/conditionals.html)
 
@@ -114,7 +114,7 @@ Mixins
       ul
         ···
 
-{: data-line=“1”}
+{: data-line="1”}
 
     +list
 
@@ -125,7 +125,7 @@ Mixins allow you to create reusable code blocks. See: [Mixins](https://pugjs.org
     mixin pet(name)
       span.pet= name
 
-{: data-line=“1”}
+{: data-line="1”}
 
     +pet('cat')
 
@@ -138,7 +138,7 @@ See: [Mixin attributes](https://pugjs.org/language/mixins.html#mixin-attributes)
         h2.title= title
         block
 
-{: data-line=“1,4”}
+{: data-line="1,4”}
 
     +article('hello there')
       p Content goes here

@@ -2,7 +2,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 
 -   /en/differences-between-undefined-and-null/
 -   -   `undefined` means a variable has not been declared,
--   `null` is an assignment value that means “no value”
+-   `null` is an assignment value that means "no value”
 -   Javascript sets unassigned variables with a default value of `undefined`
 -   Javascript never sets a value to `null`. It is u
 -   `undefined` is not valid in JSON

@@ -90,7 +90,7 @@ The following example demonstrates the use of the global and ignore case flags w
 
 ### Using named capturing groups
 
-In browsers which support named capturing groups, the following code captures “`fox`” or “`cat`” into a group named “`animal`”:
+In browsers which support named capturing groups, the following code captures "`fox`” or "`cat`” into a group named "`animal`”:
 
     const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
 

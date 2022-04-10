@@ -37,7 +37,7 @@ Trees: basic concepts
 
 A tree is a data structure where a node can have zero or more children. Each node contains a **value**. Like graphs, the connection between nodes is called **edges**. A tree is a type of graph, but not all of them are trees (more on that later).
 
-These data structures are called “trees” because the data structure resembles a tree 🌳. It starts with a **root** node and **branch** off with its descendants, and finally, there are **leaves**.
+These data structures are called "trees” because the data structure resembles a tree 🌳. It starts with a **root** node and **branch** off with its descendants, and finally, there are **leaves**.
 
 ![](https://chrome-extension/cjedbglnccaioiolemnfhjncicchinao/images/tree-parts.jpg)
 
@@ -113,7 +113,7 @@ These properties are not always mutually exclusive. You can have more than one:
 -   A perfect tree is **always** complete and full.
     -   Perfect binary trees have precisely 2k-1 nodes, where *`k`* is the last level of the tree (starting with 1).
 -   A complete tree is **not** always `full`.
-    -   Like in our “complete” example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
+    -   Like in our "complete” example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
 -   A full tree is not always complete and perfect.
 
 Binary Search Tree (BST)

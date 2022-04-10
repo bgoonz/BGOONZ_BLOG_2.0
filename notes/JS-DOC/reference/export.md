@@ -90,9 +90,9 @@ You can also rename named exports to avoid naming conflicts:
 
 ### Re-exporting / Aggregating
 
-It is also possible to “import/export” from different modules in a parent module so that they are available to import from that module. In other words, one can create a single module concentrating various exports from various modules.
+It is also possible to "import/export” from different modules in a parent module so that they are available to import from that module. In other words, one can create a single module concentrating various exports from various modules.
 
-This can be achieved with the “export from” syntax:
+This can be achieved with the "export from” syntax:
 
     export { default as function1,
              function2 } from 'bar.js';
@@ -115,7 +115,7 @@ The correct way of doing this is to rename the export:
 
     export { default as DefaultExport } from 'bar.js';
 
-The “export from” syntax allows the `as` token to be omitted; however this will mean the default item cannot be imported as a named import:
+The "export from” syntax allows the `as` token to be omitted; however this will mean the default item cannot be imported as a named import:
 
     export { default, function2 } from 'bar.js';
 
@@ -160,7 +160,7 @@ Then in the top-level module included in your HTML page, we could have:
 
 It is important to note the following:
 
--   You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type=“module”, so that it gets recognized as a module and dealt with appropriately.
+-   You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type="module”, so that it gets recognized as a module and dealt with appropriately.
 -   You can’t run JS modules via a `file://` URL — you’ll get [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP server.
 
 ### Using the default export
@@ -312,7 +312,7 @@ See also
 -   [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) guide
 -   [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/), Hacks blog post by Jason Orendorff
 -   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
--   [Axel Rauschmayer’s book: “Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
+-   [Axel Rauschmayer’s book: "Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a>

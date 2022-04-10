@@ -54,7 +54,7 @@ except that it does not create an intermediate array.
 
 The `length` property of the `from()` method is `1`.
 
-In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are “inherited” by subclasses of `Array`, and create new instances *of the subclass*, not `Array`.
+In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are "inherited” by subclasses of `Array`, and create new instances *of the subclass*, not `Array`.
 
 Examples
 --------

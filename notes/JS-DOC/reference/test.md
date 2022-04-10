@@ -31,7 +31,7 @@ Examples
 
 ### Using test()
 
-Simple example that tests if “`hello`” is contained at the very beginning of a string, returning a boolean result.
+Simple example that tests if "`hello`” is contained at the very beginning of a string, returning a boolean result.
 
     const str = 'hello world!';
     const result = /^hello/.test(str);
@@ -50,7 +50,7 @@ The following example logs a message which depends on the success of the test:
       console.log(`${str}${midstring}${re.source}`);
     }
 
-### Using test() on a regex with the “global” flag
+### Using test() on a regex with the "global” flag
 
 When a regex has the [global flag](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2) set, `test()` will advance the [`lastIndex`](lastindex) of the regex. ([`RegExp.prototype.exec()`](exec) also advances the `lastIndex` property.)
 

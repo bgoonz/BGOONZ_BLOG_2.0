@@ -55,7 +55,7 @@ The minimum safe integer in JavaScript (`-(253 - 1)`).
 The smallest positive representable number—that is, the positive number closest to zero (without actually being zero).
 
 [`Number.NaN`](number/nan)  
-Special “**N**ot **a** **N**umber” value.
+Special "**N**ot **a** **N**umber” value.
 
 [`Number.NEGATIVE_INFINITY`](number/negative_infinity)  
 Special value representing negative infinity. Returned on overflow.
@@ -103,7 +103,7 @@ Returns a string with a language sensitive representation of this number. Overri
 Returns a string representing the number to a specified precision in fixed-point or exponential notation.
 
 [`Number.prototype.toString([radix])`](number/tostring)  
-Returns a string representing the specified object in the specified radix (“base”). Overrides the [`Object.prototype.toString()`](object/tostring) method.
+Returns a string representing the specified object in the specified radix ("base”). Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
 [`Number.prototype.valueOf()`](number/valueof)  
 Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.

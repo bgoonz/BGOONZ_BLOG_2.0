@@ -111,7 +111,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-7" title="7">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;input changed:&#39;</span><span class="op">,</span> <span class="va">event</span>.<span class="va">target</span>.<span class="at">value</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-8" title="8">    <span class="op">}</span></a>
 <a class="sourceLine" id="cb3-9" title="9"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“5,10,11”}</p>
+<p>{: data-line="5,10,11”}</p>
 <p>Stencil uses DOM events.</p>
 <p>See: <a href="https://stenciljs.com/docs/templating/#handling-user-input">Handling user input</a></p>
 <h3 id="multiple-children">Multiple children</h3>
@@ -121,7 +121,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-4" title="4">    <span class="op">&lt;</span>p<span class="op">&gt;</span>This component returns multiple nodes&lt;/p<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb4-5" title="5">  ]</a>
 <a class="sourceLine" id="cb4-6" title="6"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4”}</p>
+<p>{: data-line="3,4”}</p>
 <p><code>render()</code> can return an array of elements.</p>
 <p>See: <a href="https://stenciljs.com/docs/templating#complex-template-content">Complex template content</a></p>
 <h2 id="state">State</h2>
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-5" title="5">        <span class="kw">this</span>.<span class="at">isVisible</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb5-6" title="6">    <span class="op">}</span></a>
 <a class="sourceLine" id="cb5-7" title="7"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“4,5”}</p>
+<p>{: data-line="4,5”}</p>
 <p>Just do assignments. You can’t do mutations though, see next section.</p>
 <p>See: <a href="https://stenciljs.com/docs/decorators#managing-component-state">Managing component state</a></p>
 <h3 id="updating-arrays-and-objects">Updating arrays and objects</h3>
@@ -150,12 +150,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">&lt;my-component&gt;</span></a>
 <a class="sourceLine" id="cb8-2" title="2">    <span class="kw">&lt;span&gt;</span>Hello, friends<span class="kw">&lt;/span&gt;</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="kw">&lt;/my-component&gt;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h4 id="component">Component</h4>
 <div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">render</span>() <span class="op">{</span></a>
 <a class="sourceLine" id="cb9-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>h1<span class="op">&gt;&lt;</span>slot /<span class="op">&gt;</span>&lt;/h1<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>You can pass JSX/HTML as child elements. Use the <code>slot</code> tag to use them inside your component.</p>
 <p>See: <a href="https://stenciljs.com/docs/templating#slots">Slots</a></p>
 <h3 id="multiple-slots">Multiple slots</h3>
@@ -163,7 +163,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-2" title="2">    <span class="kw">&lt;p</span><span class="ot"> slot=</span><span class="st">&quot;my-header&quot;</span><span class="kw">&gt;</span>Hello<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb10-3" title="3">    <span class="kw">&lt;p</span><span class="ot"> slot=</span><span class="st">&quot;my-footer&quot;</span><span class="kw">&gt;</span>Thanks<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="kw">&lt;/my-component&gt;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <h4 id="component-1">Component</h4>
 <div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
 <a class="sourceLine" id="cb11-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>div<span class="op">&gt;</span></a>
@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb11-4" title="4">    <span class="op">&lt;</span>footer<span class="op">&gt;&lt;</span>slot name<span class="op">=</span><span class="st">&#39;my-footer&#39;</span> /&gt;&lt;/footer<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb11-5" title="5">  &lt;/div<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb11-6" title="6"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4”}</p>
+<p>{: data-line="3,4”}</p>
 <p>See: <a href="https://stenciljs.com/docs/templating#slots">Slots</a></p>
 <h2 id="lifecycle">Lifecycle</h2>
 <h3 id="lifecycle-hooks">Lifecycle hooks</h3>

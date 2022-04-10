@@ -502,7 +502,7 @@ Logical operators:
 
 <table><thead><tr class="header"><th>Operator</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>!</code></td><td>Logical inverse, not</td></tr><tr class="even"><td><code>&amp;&amp;</code></td><td>Logical AND</td></tr><tr class="odd"><td>`</td><td>`</td></tr></tbody></table>
 
-The not operator `!` can be used to test whether or not a value is “truthy”.
+The not operator `!` can be used to test whether or not a value is "truthy”.
 
     !0; // true
     !!0; // false
@@ -532,7 +532,7 @@ Logical operators:
 
 <table><thead><tr class="header"><th>Operator</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>not</code></td><td>Logical inverse, not</td></tr><tr class="even"><td><code>and</code></td><td>Logical AND</td></tr><tr class="odd"><td><code>or</code></td><td>Logical OR</td></tr></tbody></table>
 
-The `not` operator can be used to test whether or not a value is “truthy”.
+The `not` operator can be used to test whether or not a value is "truthy”.
 
     not 0      # true
     not not 0  # false

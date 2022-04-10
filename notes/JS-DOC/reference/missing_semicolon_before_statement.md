@@ -1,7 +1,7 @@
 SyntaxError: missing ; before statement
 =======================================
 
-The JavaScript exception “missing ; before statement” occurs when there is a semicolon (`;`) missing somewhere and can’t be added by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). You need to provide a semicolon, so that JavaScript can parse the source code correctly.
+The JavaScript exception "missing ; before statement” occurs when there is a semicolon (`;`) missing somewhere and can’t be added by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). You need to provide a semicolon, so that JavaScript can parse the source code correctly.
 
 Message
 -------

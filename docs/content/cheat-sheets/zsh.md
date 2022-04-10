@@ -104,7 +104,7 @@ files=(\*.txt) \# store a glob in a variable print -l $files print -l $files(:h)
 :s modifier
 ===========
 
-variable=“path/aaabcd” echo ${variable:s/bc/BC/} \# path/aaaBCd echo ${variable:s*bc\_BC*} \# path/aaaBCd echo ${variable:s///./} \# path.aaabcd (escaping the slash /) echo ${variable:s*/*.\_} \# path.aaabcd (slightly more readable) echo ${variable:s/a/A/} \# pAth/aaabcd (only first A is replaced) echo ${variable:gs/a/A/} \# pAth/AAAbcd (all A is replaced)
+variable="path/aaabcd” echo ${variable:s/bc/BC/} \# path/aaaBCd echo ${variable:s*bc\_BC*} \# path/aaaBCd echo ${variable:s///./} \# path.aaabcd (escaping the slash /) echo ${variable:s*/*.\_} \# path.aaabcd (slightly more readable) echo ${variable:s/a/A/} \# pAth/aaabcd (only first A is replaced) echo ${variable:gs/a/A/} \# pAth/AAAbcd (all A is replaced)
 
 Split the file name at each underscore
 ======================================

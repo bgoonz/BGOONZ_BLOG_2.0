@@ -24,7 +24,7 @@ An <a href="../../iteration_protocols#the_iterable_protocol">iterable</a> object
 <ul>
 <li>An <strong>already resolved</strong> <a href="../promise"><code>Promise</code></a> if the iterable passed is empty.</li>
 <li>An <strong>asynchronously resolved</strong> <a href="../promise"><code>Promise</code></a> if the iterable passed contains no promises. Note, Google Chrome 58 returns an <strong>already resolved</strong> promise in this case.</li>
-<li>A <strong>pending</strong> <a href="../promise"><code>Promise</code></a> in all other cases. This returned promise is then resolved/rejected <strong>asynchronously</strong> (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about “Asynchronicity or synchronicity of Promise.all” below. Returned values will be in order of the Promises passed, regardless of completion order.</li>
+<li>A <strong>pending</strong> <a href="../promise"><code>Promise</code></a> in all other cases. This returned promise is then resolved/rejected <strong>asynchronously</strong> (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all” below. Returned values will be in order of the Promises passed, regardless of completion order.</li>
 </ul>
 <h2 id="description">Description</h2>
 <p>This method can be useful for aggregating the results of multiple promises. It is typically used when there are multiple related asynchronous tasks that the overall code relies on to work successfully — all of whom we want to fulfill before the code execution continues.</p>

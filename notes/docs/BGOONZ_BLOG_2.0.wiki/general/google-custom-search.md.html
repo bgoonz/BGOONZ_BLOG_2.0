@@ -59,14 +59,14 @@
 Pizza My Heart
 </h1>
 </div>
-<span>88%</span> like it &lt;a href=“#reviews”&gt;See all 12 reviews</a> <span>Under $10 per entree</span><br />
+<span>88%</span> like it &lt;a href="#reviews”&gt;See all 12 reviews</a> <span>Under $10 per entree</span><br />
 
 <div>
 <p>The following snippet shows the previous HTML code extended with a format called <a href="https://developers.google.com/custom-search/docs/structured_data#microformats">microformats</a>:</p>
-&lt;div class=“hreview-aggregate”&gt; &lt;div class=“vcard item”&gt; &lt;h1 class=“fn”&gt;Pizza My Heart
+&lt;div class="hreview-aggregate”&gt; &lt;div class="vcard item”&gt; &lt;h1 class="fn”&gt;Pizza My Heart
 </h1>
 </div>
-&lt;span class=“rating average”&gt;88%</span> like it &lt;a href=“#reviews”&gt;See all &lt;span class=“count”&gt;12</span> reviews</a> &lt;span class=“pricerange”&gt;Under $10 per entree</span><br />
+&lt;span class="rating average”&gt;88%</span> like it &lt;a href="#reviews”&gt;See all &lt;span class="count”&gt;12</span> reviews</a> &lt;span class="pricerange”&gt;Under $10 per entree</span><br />
 
 <div>
 
@@ -140,24 +140,24 @@ count = 12</p>
 <p>If you don’t want to include PageMap data in the HTML of your pages, you can add PageMap data to a Sitemap and submit that Sitemap via the <a href="https://search.google.com/search-console/sitemaps">Search Console Sitemaps tool</a>.</p>
 <p>Here’s an example of a Sitemap that includes PageMap information for two URLs: http://www.example.com/foo and http://www.example.com/bar.</p>
 <?xml version\="1.0" encoding\="UTF-8"?>
-<p>&lt;urlset xmlns=“http://www.sitemaps.org/schemas/sitemap/0.9”&gt; <url> <loc>http://www.example.com/foo</loc> &lt;PageMap xmlns=“http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type=“document” id=“hibachi”&gt; &lt;Attribute name=“name”&gt;Dragon</Attribute> &lt;Attribute name=“review”&gt;3.5</Attribute> </DataObject> </PageMap> </url> <url> <loc>http://www.example.com/bar</loc> &lt;PageMap xmlns=“http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type=“document” id=“biggreenegg”&gt; &lt;Attribute name=“name”&gt;Ribs</Attribute> &lt;Attribute name=“review”&gt;4.0</Attribute> </DataObject> </PageMap> </url><br />
+<p>&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9”&gt; <url> <loc>http://www.example.com/foo</loc> &lt;PageMap xmlns="http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type="document” id="hibachi”&gt; &lt;Attribute name="name”&gt;Dragon</Attribute> &lt;Attribute name="review”&gt;3.5</Attribute> </DataObject> </PageMap> </url> <url> <loc>http://www.example.com/bar</loc> &lt;PageMap xmlns="http://www.google.com/schemas/sitemap-pagemap/1.0”&gt; &lt;DataObject type="document” id="biggreenegg”&gt; &lt;Attribute name="name”&gt;Ribs</Attribute> &lt;Attribute name="review”&gt;4.0</Attribute> </DataObject> </PageMap> </url><br />
 </urlset></p>
 <h3 id="parsing-pagemap-data">Parsing PageMap data</h3>
 <p>Using the Programmable Search Element, custom attributes are returned in the richSnippet property of each result, can can be used with Search Element <a href="https://developers.google.com/custom-search/docs/element#search-time-callbacks">Callbacks</a>.</p>
-<p>&lt;r n=“1”&gt; <u> http://www.xyz.com/business/vending_machine.html </u> … <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> … <s>The European vending machine industry has annual sales of about #33<br />
-billion, much of it coming from factories and offices.</s> … <PageMap> &lt;DataObject type=“image”&gt; &lt;Attribute name=“image_src” value=“http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg”/&gt; </DataObject> &lt;DataObject type=“publication”&gt; &lt;Attribute name=“author” value=“John Tagliabue”/&gt; &lt;Attribute name=“date” value=“March 14, 2009”/&gt; &lt;Attribute name=“category” value=“Business/World Business”/&gt; </DataObject> </PageMap> …</r></p>
+<p>&lt;r n="1”&gt; <u> http://www.xyz.com/business/vending_machine.html </u> … <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> … <s>The European vending machine industry has annual sales of about #33<br />
+billion, much of it coming from factories and offices.</s> … <PageMap> &lt;DataObject type="image”&gt; &lt;Attribute name="image_src” value="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg”/&gt; </DataObject> &lt;DataObject type="publication”&gt; &lt;Attribute name="author” value="John Tagliabue”/&gt; &lt;Attribute name="date” value="March 14, 2009”/&gt; &lt;Attribute name="category” value="Business/World Business”/&gt; </DataObject> </PageMap> …</r></p>
 <p><a href="https://developers.google.com/custom-search/docs/structured_data#top">Back to top</a></p>
 <h3 id="using-meta-tags">Using <code>&lt;meta&gt;</code> tags</h3>
 <p>While PageMaps allow you to precisely specify the data you want for each page, sometimes you have a large amount of content which you do not want to annotate. Google extracts selected content from <a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#h-7.4.4.2">META</a> tags of the form <code>&lt;meta name="_KEY_" content="_VALUE_"&gt;</code>. We do not support variants of the META tag, such as the use of <code>property</code> instead of <code>name</code>.</p>
 <p>While we explicitly exclude common tags that are usually inserted programmatically by web authoring tools, such as <code>robots</code>, <code>description</code>, and <code>keywords</code>, rarer tags specific to your site will be extracted and put into a special data object of type <code>metatags</code>, which can be used with all of Custom Search’s structured data features. For example, a <code>&lt;meta&gt;</code> tag of the form:</p>
-<p>&lt;meta name=“pubdate” content=“20100101”&gt;</p>
+<p>&lt;meta name="pubdate” content="20100101”&gt;</p>
 <p>creates a PageMap DataObject which is returned in XML results like this:</p>
-<p>&lt;r n=“1”&gt; … <PageMap> &lt;DataObject type=“metatags”&gt; &lt;Attribute name=“pubdate” value=“20100101”/&gt; </DataObject> </PageMap> …</r></p>
+<p>&lt;r n="1”&gt; … <PageMap> &lt;DataObject type="metatags”&gt; &lt;Attribute name="pubdate” value="20100101”/&gt; </DataObject> </PageMap> …</r></p>
 <p>The data in this automatically created PageMap can be used anywhere you can use data from a PageMap explicitly included in your page’s content. For instance, it can be used with structured search operators like <a href="https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute">Sort by Attribute</a>:</p>
 <p>https://www.google.com/cse?cx=12345:example&amp;q=oil+spill<strong>&amp;sort=metatags-pubdate</strong></p>
 <p>or with the <a href="https://developers.google.com/custom-search/docs/structured_search#structured_search_element">Programmable Search Element</a>:</p>
 <p>…</p>
-<p>&lt;div class=“gcse-search” sort_by=“metatags-pubdate:d:s”&gt;&lt;/div&gt;<br />
+<p>&lt;div class="gcse-search” sort_by="metatags-pubdate:d:s”&gt;&lt;/div&gt;<br />
 …</p>
 <p>The <code>&lt;meta&gt;</code> tags excluded by Google include:</p>
 <ul>
@@ -235,7 +235,7 @@ Googlelandia, CA 94043
 <div **class\="vcard"**\>  <p><strong **class\="fn"**\>Kevin Grendelzilla</strong></p>  <p><span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span></p>  <p><span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span></p>  
 </div>
 <p>Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:</p>
-<p>&lt;r n=“1”&gt; … <PageMap> &lt;DataObject type=“person”&gt; &lt;Attribute name=“location” value=“Googlelandia”/&gt; &lt;Attribute name=“role” value=“Technical Writer”/&gt; </DataObject> </PageMap> …</r></p>
+<p>&lt;r n="1”&gt; … <PageMap> &lt;DataObject type="person”&gt; &lt;Attribute name="location” value="Googlelandia”/&gt; &lt;Attribute name="role” value="Technical Writer”/&gt; </DataObject> </PageMap> …</r></p>
 <p>To see what Google extracts for a page, use the <a href="https://search.google.com/structured-data/testing-tool">Structured Data Testing Tool</a> in Google’s Search Console site. The data Google extracts from pages is continually being extended, so check back periodically to see if the data you want has been made available. In the meantime, if you need custom data that does not correspond to a defined microformat, you can use <a href="https://developers.google.com/custom-search/docs/structured_data#pagemaps">PageMaps</a>.</p>
 <p>To learn more about microformats, see the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">structured data documentation</a> and <a href="http://microformats.org/get-started">microformats.org</a>.</p>
 <p><a href="https://developers.google.com/custom-search/docs/structured_data#top">Back to top</a></p>
@@ -253,7 +253,7 @@ Makoto Shinkai
 </div>
 <p>The following snippet shows the previous HTML code extended with RDFa:</p>
 <div>
-&lt;h3 <strong>property=“dc:title”</strong>&gt;5 Centimeters Per Second
+&lt;h3 <strong>property="dc:title”</strong>&gt;5 Centimeters Per Second
 </h3>
 <h4 **property\="dc:maker"**\>Makoto Shinkai</h4>
 …
@@ -264,7 +264,7 @@ Makoto Shinkai
 <p>HTML5, the latest revision of the language web pages are written in, defines a format called <a href="https://www.w3.org/TR/microdata/">microdata</a> that incorporates the ideas of RDFa and Microformats directly into the HTML standard itself. Microdata uses simple attributes in HTML tags (often <code>span</code> or <code>div</code>) to assign brief and descriptive names to items and properties.</p>
 <p>Like RDFa and Microformats, Microdata’s attributes help you specify that your content describes information of specific types, like reviews, people, information or events. For example, an person can have the properties name, nickname, url, title and affiliation. The following is an example of a short HTML block showing this basic contact information for Bob Smith:</p>
 <div>
-My name is Bob Smith but people call me Smithy. Here is my home page: &lt;a href=“http://www.example.com”&gt;www.example.com</a> I live in Albuquerque, NM and work as an engineer at ACME Corp.
+My name is Bob Smith but people call me Smithy. Here is my home page: &lt;a href="http://www.example.com”&gt;www.example.com</a> I live in Albuquerque, NM and work as an engineer at ACME Corp.
 </div>
 <p>The following is the same HTML marked up with microdata. Note that in this example we use a property ‘nickname’ that is not yet officially part of schema.org. Custom Search is a good way to explore possible schema.org extensions locally before proposing them to the wider community.</p>
 <div itemscope itemtype\="http://schema.org/Person"\> My name is <span itemprop\="name"\>Bob Smith</span> but people call me <span itemprop\="nickname"\>Smithy</span>.  
@@ -278,9 +278,9 @@ My name is Bob Smith but people call me Smithy. Here is my home page: &lt;a href
 <p><strong>Figure 1:</strong> Result snippet with rating, price range, and review.</p>
 <p><img src="https://developers.google.com/custom-search/images/snippets_rich_snippets_basic.png" /></p>
 <p>Once you have found a page with structured data, you can view that page’s source to see the structured data that site has implemented, or view that page in the Structured Data Testing Tool to see what data is extracted for Google Search rich snippets and Programmable Search Engine structured search. For example, consider the following snippet of HTML with structured data about a person implemented as microformats:</p>
-&lt;div class=“vcard”&gt; &lt;h1 class=“fn”&gt; &lt;span class=“given-name”&gt;Godzilla</span> &lt;span class=“family-name”&gt;Gigantis</span>
+&lt;div class="vcard”&gt; &lt;h1 class="fn”&gt; &lt;span class="given-name”&gt;Godzilla</span> &lt;span class="family-name”&gt;Gigantis</span>
 </h1>
-&lt;span class=“title”&gt;Senior Giant Monster</span>, &lt;span class=“adr”&gt; &lt;span class=“locality”&gt;Tokyo</span> </span><br />
+&lt;span class="title”&gt;Senior Giant Monster</span>, &lt;span class="adr”&gt; &lt;span class="locality”&gt;Tokyo</span> </span><br />
 
 <div>
 
@@ -323,7 +323,7 @@ locality = Tokyo title = Senior Giant Monster</p>
 </figure>
 <p><strong>Figure 3:</strong> Result snippet that includes document types, authors, page views, and comments.</p>
 <p><img src="https://developers.google.com/custom-search/images/snippets_pagemap_docs.png" /></p>
-<p><strong>Figure 4:</strong> Richly formatted result snippet that provides multimedia access and buttons (“ADD TO CART”).</p>
+<p><strong>Figure 4:</strong> Richly formatted result snippet that provides multimedia access and buttons ("ADD TO CART”).</p>
 <p><img src="https://developers.google.com/custom-search/images/snippets_pagemap_songlist_fancy.png" /></p>
 <p><a href="https://developers.google.com/custom-search/docs/snippets#top">Back to top</a></p>
 <h2 id="creating-rich-snippets-with-the-programmable-search-element">Creating Rich Snippets with the Programmable Search Element</h2>
@@ -407,19 +407,19 @@ locality = Tokyo title = Senior Giant Monster</p>
 <p>The <code>document-author:</code> qualifier of the operator tells us to look for the DataObject with type <code>document</code> with an Attribute named <code>author</code>. This structured data key is followed by the value <code>lisamorton</code>, which must match exactly the value of the Attribute to be returned in a search containing this restriction.</p>
 <p><code>more:p:document-author:lisamorton</code></p>
 <p>When filtering by Attribute, you can create more complex filters (and shorter commands) by using a compact query. For instance, you could add the following PageMap for a URL:</p>
-<p><pagemap> &lt;DataObject type=“document”&gt; &lt;Attribute name=“keywords”&gt;horror</Attribute> &lt;Attribute name=“keywords”&gt;fiction</Attribute> &lt;Attribute name=“keywords”&gt;Irish</Attribute> </DataObject> </pagemap> </page></p>
-<p>To retrieve results for the query “Irish AND fiction”, use the following:</p>
+<p><pagemap> &lt;DataObject type="document”&gt; &lt;Attribute name="keywords”&gt;horror</Attribute> &lt;Attribute name="keywords”&gt;fiction</Attribute> &lt;Attribute name="keywords”&gt;Irish</Attribute> </DataObject> </pagemap> </page></p>
+<p>To retrieve results for the query "Irish AND fiction”, use the following:</p>
 <p>more:p:document-keywords:irish*fiction</p>
 <p>This is equivalent to <code>more:pagemap:document-keywords:Irish more:pagemap:document-keywords:fiction</code>.</p>
-<p>To retrieve the results for “Irish AND (fiction OR horror)”, use the following:</p>
+<p>To retrieve the results for "Irish AND (fiction OR horror)”, use the following:</p>
 <p>more:p:document-keywords:irish*fiction,irish*horror</p>
 <h3 id="using-filter-by-attribute-with-other-features">Using Filter by Attribute with Other Features</h3>
 <p>You can use this open-ended syntax for drill down into content specified in PageMaps on the documents on your site; you can also use this same syntax with almost all other types of <a href="https://developers.google.com/custom-search/docs/structured_data">structured data</a> supported by Google, excluding only the <a href="https://developers.google.com/custom-search/docs/structured_data#page_dates">estimated page date</a>. You can also use these <code>more:pagemap:</code> operators with <a href="http://www.google.com/support/customsearch/bin/answer.py?answer=70359">refinement labels</a> or <a href="http://www.google.com/support/forum/p/customsearch/thread?tid=3b8c2315d4ce9c85">hidden query elements</a> to filter results by attributes that are important to your application, so end users will not have to type these restriction qualifiers directly.</p>
 <p>You can also omit parts of the search operator. In the example above, note that the PageMap specifies a DataObject of type <code>document</code> and an attribute of type <code>author</code>. But not every page on your site may be a document, and not all documents may have an attributed author. If you use an operator of the form <code>more:pagemap:document-author</code>, the returned results will include all pages with an <code>author</code> Attribute in the <code>document</code> DataObject, regardless of what the value of the Attribute is. Similarly, <code>more:pagemap:document</code> will return all results with PageMaps that have DataObjects of type <code>document</code>, regardless of what fields are on that DataObject.</p>
 <h4 id="drilling-into-tokenized-values-using-multiple-restrictions">Drilling Into Tokenized Values Using Multiple Restrictions</h4>
-<p>Attribute values which contain spaces, punctuation, or special characters are almost always split into separate tokens; for example, an attribute value of “Programmable Search Engine@google” would be split into three separate tokens, “custom”, “search” and “google”. This permits searches on a single word embedded in a larger sequence of words and punctuation, such as an production description. (Programmable Search Engine will extract up to 10 tokens per string, so if your attribute value contains more than 10 words, not all may be available for restricting results.) For example, the following PageMap includes a production description of <a href="https://programmablesearchengine.googleblog.com//">Programmable Search Engine</a>:</p>
+<p>Attribute values which contain spaces, punctuation, or special characters are almost always split into separate tokens; for example, an attribute value of "Programmable Search Engine@google” would be split into three separate tokens, "custom”, "search” and "google”. This permits searches on a single word embedded in a larger sequence of words and punctuation, such as an production description. (Programmable Search Engine will extract up to 10 tokens per string, so if your attribute value contains more than 10 words, not all may be available for restricting results.) For example, the following PageMap includes a production description of <a href="https://programmablesearchengine.googleblog.com//">Programmable Search Engine</a>:</p>
 <p><PageMap> <DataObject type="product"> <Attribute name="description">Programmable Search Engine provides customized search engines</Attribute> </DataObject> </PageMap></p>
-<p>The following restriction would find all pages with <code>product-description</code> attributes about “search”:</p>
+<p>The following restriction would find all pages with <code>product-description</code> attributes about "search”:</p>
 <p>[more:pagemap:product-description:search]</p>
 <p>To drill down more deeply, you can add other restrictions; for example, to get only pages that describe products of search engine, add the restrictions:</p>
 <p>[more:pagemap:product-description:search <strong>more:pagemap:product-description:engine</strong>]</p>
@@ -427,7 +427,7 @@ locality = Tokyo title = Senior Giant Monster</p>
 <p>These restrictions are combined by default with an AND; however, you could also combine them with an <a href="http://www.google.com/support/websearch/bin/answer.py?answer=136861">OR operator</a> to get results that match either restrict. For example, the following is a search that would match content from either about search or game:</p>
 <p>[more:pagemap:product-description:search <strong>OR</strong> more:pagemap:product-description:game]</p>
 <p>One exception to tokenization is for attribute values which are URLs. Since tokens from URLs have marginal usefulness, we do not generate any token from attribute values which are valid URL.</p>
-<p>In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens “President” and “Obama” frequently appear next to each other, Programmable Search Engine may create the supertoken “president_obama”. As a result, <code>[more:pagemap:leaders-name:president_obama]</code> will return the same results as <code>[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]</code>.</p>
+<p>In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens "President” and "Obama” frequently appear next to each other, Programmable Search Engine may create the supertoken "president_obama”. As a result, <code>[more:pagemap:leaders-name:president_obama]</code> will return the same results as <code>[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]</code>.</p>
 <p>Another principal exception to tokenization based on punctuation is the forward slash ‘/’ when it separates numbers. Attribute values of the form ‘NUMBER/NUMBER’ or ‘NUMBER/NUMBER/NUMBER’ are treated as single contiguous tokens; for example, ‘3.5/5.0’ and ‘<a href="https://programmablesearchengine.googleblog.com//2009/10/three-birthday-candles-for-custom.html">09/23/2006</a>’ are treated as single tokens. For example, to search on an Attribute with a value of ‘2006/09/23’, use the restrict:</p>
 <p>[more:pagemap:birth-date:2006/09/23]</p>
 <p>Joining based on slashes only works when the forward slash is between numbers without spaces; spaces between the slash and the number will result in the creation of separate tokens. Furthermore, numbers joined by slashes must match exactly; the Filter by Attribute operator does not interpret these values as fractions or dates. Programmable Search Engine’s other structured search operators, such as <a href="https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute">Sort by Attribute</a> and <a href="https://developers.google.com/custom-search/docs/structured_search#restrict_to_range">Restrict to Range</a>, do interpret these numbers as fractions and dates; see the documentation on <a href="https://developers.google.com/custom-search/docs/structured_data">Providing Structured Data</a> for more details.</p>
@@ -471,7 +471,7 @@ locality = Tokyo title = Senior Giant Monster</p>
 <blockquote>
 <p><img src="https://developers.google.com/custom-search/images/signonsandiego.png" /></p>
 </blockquote>
-<p>To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a “strong” weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:</p>
+<p>To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a "strong” weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:</p>
 <!--
   <PageMap>
     <DataObject type="date">
@@ -487,7 +487,7 @@ locality = Tokyo title = Senior Giant Monster</p>
   -->
 <p>To apply Sort by Attribute over this field, you set the <code>sort</code> option in the search code for the Programmable Search Element as shown below:</p>
 <p>…</p>
-<p>&lt;div class=“gcse-search” sort_by=“date-sdate:d:s”&gt;&lt;/div&gt;<br />
+<p>&lt;div class="gcse-search” sort_by="date-sdate:d:s”&gt;&lt;/div&gt;<br />
 …</p>
 <p>Just like the URL <code>&amp;sort=</code> parameter described above, the sort option in the Programmable Search Element <code>&lt;div class="gcse-search" sort_by="date-sdate:d:s"&gt;&lt;/div&gt;</code> takes a combined attribute name, like <code>date-sdate</code>, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order <code>d</code> using the strong bias <code>s</code> flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.</p>
 <p>The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to <code>date-sdate:r:20100825:20100907</code>. This again uses the combined attribute name <code>date-sdate</code>, but instead restricts to the range <code>r</code> of specified values <code>20100825:20100907</code>. As with the URL parameter, you can omit the upper or lower item of the range in the <code>sort</code> option of the Programmable Search Element.</p>
@@ -495,7 +495,7 @@ locality = Tokyo title = Senior Giant Monster</p>
 <p>Please refer to <a href="https://developers.google.com/custom-search/docs/element#supported_attributes">this page</a> for all supported attributes.</p>
 <p>You can also use Filter by Attribute with the Programmable Search Element. For example, take our <a href="https://developers.google.com/custom-search/docs/structured_search#tokenization">earlier example</a> with pages that had <code>linked-blog</code> attributes; to create a custom search control that only returned pages that linked to use the following code to inject a <code>more:pagemap:linked-blog:blogspot</code> operator into every query:</p>
 <p>…</p>
-<p>&lt;div class=“gcse-search” webSearchQueryAddition=“more:pagemap:linked-blog:blogspot”&gt;&lt;/div&gt;<br />
+<p>&lt;div class="gcse-search” webSearchQueryAddition="more:pagemap:linked-blog:blogspot”&gt;&lt;/div&gt;<br />
 …</p>
 <p>This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the <a href="https://developers.google.com/custom-search/docs/element">Programmable Search Element</a>.</p>
 <p><a href="https://developers.google.com/custom-search/docs/structured_search#top">Back to top</a></p>

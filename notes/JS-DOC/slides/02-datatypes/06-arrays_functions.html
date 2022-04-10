@@ -84,7 +84,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>JavaScript has a special syntax for creating arrays, <code>[value, value, ...]</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> arr <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">;</span></a></code></pre></div>
 <p>If you run <code>console.dir([1, 2])</code> in your browser’s console, you can inspect the structure of the array object in more detail.</p>
-<p>Unlike “plain” objects, array objects have <code>Array.prototype</code> as prototype, which provides all the array methods, such as <code>.push</code>, <code>.map</code>, etc.</p>
+<p>Unlike "plain” objects, array objects have <code>Array.prototype</code> as prototype, which provides all the array methods, such as <code>.push</code>, <code>.map</code>, etc.</p>
 <div class="ascii">
 <pre><code>┌──────────┐       [[Prototype]]        ┌──────────────────┐
 │  obj {}  │───────────────────────────▶│ Object.prototype │
@@ -108,7 +108,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-5" title="5"><span class="op">}</span></a></code></pre></div>
 <p>There are other ways to create functions, which will be explained later.</p>
 <div class="callout">
-<p>The most important implication of functions being objects is that “work” just like any other value. Functions can be <em>passed to</em> functions and <em>returned from</em> functions, allowing to creation of <strong>higher-order functions</strong>.</p>
+<p>The most important implication of functions being objects is that "work” just like any other value. Functions can be <em>passed to</em> functions and <em>returned from</em> functions, allowing to creation of <strong>higher-order functions</strong>.</p>
 </div>
 <p>Similar to arrays, function objects also have a dedicated prototype, <code>Function.prototype</code>:</p>
 <div class="ascii">

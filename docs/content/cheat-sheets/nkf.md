@@ -46,4 +46,4 @@ echo テスト | nkf -WwMQ
 To MIME decode:
 ===============
 
-echo “=E3=83=86=E3=82=B9=E3=83=88” | nkf -WwmQ
+echo "=E3=83=86=E3=82=B9=E3=83=88” | nkf -WwmQ

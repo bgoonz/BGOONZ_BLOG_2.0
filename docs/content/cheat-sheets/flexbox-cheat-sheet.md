@@ -59,7 +59,7 @@ Flexbox Cheat Sheet
     -   If the size of all flex items is larger than the flex container, items shrink to fit according to `flex-shrink`
 -   `flex-basis` determines the initial size of a flex item before the remaining space is distributed
     -   Can use any valid `width` value, intrinsic size values, `auto` (default) or `content`
-    -   `auto` means “look at my `width` or `height` property”, whereas `content` is used for automatic sizing
+    -   `auto` means "look at my `width` or `height` property”, whereas `content` is used for automatic sizing
 -   `flex`: shorthand combining `flex-grow`, `flex-shrink` and `flex-basis`
     -   Formal syntax: `flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]`
 -   `align-self` allows the item to override the default `align-items` specified by the container

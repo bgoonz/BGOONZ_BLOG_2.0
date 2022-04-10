@@ -10,8 +10,7 @@ seo:
 template: docs
 ---
 
-
-# **.arpa** (address and routing parameter area) is a TLD","top-level domain"used for Internet infrastructure purposes, especially reverse DNS lookup (i.e., find the {{glossary('domain name'for a given IP address" )
+#  **.arpa** (address and routing parameter area) is a TLD","top-level domain"used for Internet infrastructure purposes, especially reverse DNS lookup (i.e., find the {{glossary('domain name'for a given IP address" )
 
 ## See also
 

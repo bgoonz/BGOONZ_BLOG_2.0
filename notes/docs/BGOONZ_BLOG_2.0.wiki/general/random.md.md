@@ -2,6 +2,6 @@ www.algolia.com/interface-demos/2e4a0ba7-4fc8-4ed3-ab24-9b3d53e9b894
 
 -   [jsanimate](https://jsanimate-gnj46.ondigitalocean.app/)
 
-&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=”https://codesandbox.io/embed/nav-bar-examples-forked-izhl5?fontsize=14&hidenavigation=1&theme=dark" style=“width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;” title=“Nav Bar Examples (forked)” allow=“accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking” sandbox=“allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts” &gt;
+&lt;iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=”https://codesandbox.io/embed/nav-bar-examples-forked-izhl5?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;” title="Nav Bar Examples (forked)” allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking” sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts” &gt;
 
 &lt;p&gt;algoliasearchNetlify({ appId: ‘O6OT9G9U8Z’, apiKey: ‘b0cb3d390176e1ff4bd1ecb12fc15730’, siteId: ‘a1b7ee1a-11a7-4bd2-a341-2260656e216f’, branch: ‘master’, selector: ‘div\#search’, }); &lt;/script&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;

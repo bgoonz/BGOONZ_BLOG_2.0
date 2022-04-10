@@ -21,7 +21,7 @@ php -l file.php
 To lint all php files within the cwd:
 =====================================
 
-find . -name “\*.php” -print0 | xargs -0 -n1 -P8 php -l
+find . -name "\*.php” -print0 | xargs -0 -n1 -P8 php -l
 
 To enter an interactive shell:
 ==============================
@@ -31,7 +31,7 @@ php -a
 To locate the system’s php.ini files:
 =====================================
 
-php -i | grep “php.ini”
+php -i | grep "php.ini”
 
 To start a local webserver for the cwd on port 3000 (requires php &gt;= 5.4):
 =============================================================================

@@ -1,7 +1,7 @@
 URIError: malformed URI sequence
 ================================
 
-The JavaScript exception “malformed URI sequence” occurs when URI encoding or decoding wasn’t successful.
+The JavaScript exception "malformed URI sequence” occurs when URI encoding or decoding wasn’t successful.
 
 Message
 -------

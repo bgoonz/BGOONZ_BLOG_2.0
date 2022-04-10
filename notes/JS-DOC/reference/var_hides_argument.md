@@ -1,7 +1,7 @@
-TypeError: variable “x” redeclares argument
+TypeError: variable "x” redeclares argument
 ===========================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “variable redeclares argument” occurs when the same variable name occurs as a function parameter and is then redeclared using a `var` assignment in a function body again.
+The JavaScript [strict mode](../strict_mode)-only exception "variable redeclares argument” occurs when the same variable name occurs as a function parameter and is then redeclared using a `var` assignment in a function body again.
 
 Message
 -------
@@ -25,7 +25,7 @@ Examples
 
 ### Invalid cases
 
-In this case, the variable “arg” redeclares the argument.
+In this case, the variable "arg” redeclares the argument.
 
     'use strict';
 

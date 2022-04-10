@@ -22,7 +22,7 @@
 <h1 id="to-print-file-metadata">To print file metadata:</h1>
 <p>ffmpeg -i <file></p>
 <h1 id="to-convert-all-m4a-files-to-mp3">To convert all m4a files to mp3</h1>
-<p>for f in *.m4a; do ffmpeg -i “<span class="math inline">$f" -acodec libmp3lame -vn -b:a 320k "$</span>{f%.m4a}.mp3”; done</p>
+<p>for f in *.m4a; do ffmpeg -i "<span class="math inline">$f" -acodec libmp3lame -vn -b:a 320k "$</span>{f%.m4a}.mp3”; done</p>
 <h1 id="to-convert-video-from-.foo-to-.bar">To convert video from .foo to .bar</h1>
 <h1 id="g-gop-for-searchability">-g : GOP, for searchability</h1>
 <p>ffmpeg -i input.foo -vcodec bar -acodec baz -b:v 21000k -b:a 320k -g 150 -threads 4 output.bar</p>

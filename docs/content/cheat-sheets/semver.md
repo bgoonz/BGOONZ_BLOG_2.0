@@ -48,9 +48,9 @@ When the left is partial (eg, `1.2`), missing pieces are assumed to be `0` (eg, 
 
 ### Explanation
 
-`^` | means “compatible with” |  
-`~` | means “reasonably close to” |  
-`0.x.x` | is for “initial development” |  
+`^` | means "compatible with” |  
+`~` | means "reasonably close to” |  
+`0.x.x` | is for "initial development” |  
 `1.x.x` | means public API is defined |
 
 {: .-shortcuts}

@@ -387,7 +387,7 @@ find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
 <p>Probably, this is a more difficult way to do ls -l *.txt, but this is for educational purposes.</p>
 <pre><code>ls -l | grep &quot;\.txt$&quot;</code></pre>
 <blockquote>
-<p>Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\.txt$”.</p>
+<p>Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex "\.txt$”.</p>
 </blockquote>
 <h3 id="variables">Variables</h3>
 <p>You can use variables as in any programming languages. There are no data types. A variable in bash can contain a number, a character, a string of characters.</p>
@@ -396,7 +396,7 @@ find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
 <pre><code>#!/bin/bash
             STR=&quot;Hello World!&quot;
             echo $STR</code></pre>
-<p>Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′<em>i</em><em>n</em><em>a</em><em>t</em><em>t</em><em>h</em><em>e</em><em>b</em><em>e</em><em>g</em><em>i</em><em>n</em><em>n</em><em>i</em><em>n</em><em>g</em>.<em>P</em><em>l</em><em>e</em><em>a</em><em>s</em><em>e</em><em>n</em><em>o</em><em>t</em><em>i</em><em>c</em><em>e</em>(<em>t</em><em>r</em><em>y</em><em>i</em><em>t</em>!)<em>t</em><em>h</em><em>a</em><em>t</em><em>i</em><em>f</em><em>y</em><em>o</em><em>u</em><em>d</em><em>o</em><em>n</em>′<em>t</em><em>u</em><em>s</em><em>e</em><em>t</em><em>h</em><em>e</em>′</span>’ sign, the output of the program will be different, and probably not what you want it to be.</p>
+<p>Line 2 creates a variable called STR and assigns the string "Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′<em>i</em><em>n</em><em>a</em><em>t</em><em>t</em><em>h</em><em>e</em><em>b</em><em>e</em><em>g</em><em>i</em><em>n</em><em>n</em><em>i</em><em>n</em><em>g</em>.<em>P</em><em>l</em><em>e</em><em>a</em><em>s</em><em>e</em><em>n</em><em>o</em><em>t</em><em>i</em><em>c</em><em>e</em>(<em>t</em><em>r</em><em>y</em><em>i</em><em>t</em>!)<em>t</em><em>h</em><em>a</em><em>t</em><em>i</em><em>f</em><em>y</em><em>o</em><em>u</em><em>d</em><em>o</em><em>n</em>′<em>t</em><em>u</em><em>s</em><em>e</em><em>t</em><em>h</em><em>e</em>′</span>’ sign, the output of the program will be different, and probably not what you want it to be.</p>
 <h3 id="a-very-simple-backup-script-little-bit-better">A very simple backup script (little bit better)</h3>
 <pre><code>#!/bin/bash
            OF=/var/my-backup-$(date +%Y%m%d).tgz
@@ -425,7 +425,7 @@ find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" />
 </figure>
-<p>#!/bin/bash if [ “foo” = “foo” ]; then echo expression evaluated as true fi</p>
+<p>#!/bin/bash if [ "foo” = "foo” ]; then echo expression evaluated as true fi</p>
 <p><em>The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code.</em></p>
 <h3 id="basic-conditional-example-if-..-then-else">Basic conditional example if .. then … else</h3>
 <pre><code>#!/bin/bash

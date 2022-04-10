@@ -29,7 +29,7 @@ $ git clone github/hub $ cd hub
 create a topic branch
 =====================
 
-$ git checkout -b feature → ( making changes … ) $ git commit -m “done with feature”
+$ git checkout -b feature → ( making changes … ) $ git commit -m "done with feature”
 
 It’s time to fork the repo!
 ===========================
@@ -87,4 +87,4 @@ $ git compare -u feature | pbcopy
 create a repo for a new project
 ===============================
 
-$ git init $ git add . && git commit -m “It begins.” $ git create -d “My new thing” → (creates a new project on GitHub with the name of current directory) $ git push origin master
+$ git init $ git add . && git commit -m "It begins.” $ git create -d "My new thing” → (creates a new project on GitHub with the name of current directory) $ git push origin master

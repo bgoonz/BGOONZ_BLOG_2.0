@@ -40,9 +40,9 @@ $ egrep = grep -E $ fgrep = grep -F $ rgrep = grep -r
 
 Below are some basic grep commands:
 
-**tecmint@TecMint ~ $** grep “aaronkilik” /etc/passwd **aaronkilik:x:1001:1001::/home/aaronkilik:**
+**tecmint@TecMint ~ $** grep "aaronkilik” /etc/passwd **aaronkilik:x:1001:1001::/home/aaronkilik:**
 
-**tecmint@TecMint ~ $** cat /etc/passwd | grep “aronkilik” **aaronkilik:x:1001:1001::/home/aaronkilik:**
+**tecmint@TecMint ~ $** cat /etc/passwd | grep "aronkilik” **aaronkilik:x:1001:1001::/home/aaronkilik:**
 
 You can read more about [What’s Difference Between Grep, Egrep and Fgrep in Linux?](https://www.tecmint.com/difference-between-grep-egrep-and-fgrep-in-linux/).
 
@@ -162,9 +162,9 @@ Take a look at the examples below, in the first command, `set1( [:upper:] )` rep
 
 Then `set2([:lower:])` represents the case in which the resultant characters will be. It’s same thing in the second example and the escape sequence `\n` means print output on a new line:
 
-**tecmint@TecMint ~ $** **echo “WWW.TECMINT.COM” | tr \[:upper:\] \[:lower:\]** www.tecmint.com
+**tecmint@TecMint ~ $** **echo "WWW.TECMINT.COM” | tr \[:upper:\] \[:lower:\]** www.tecmint.com
 
-**tecmint@TecMint ~ $** **echo “news.tecmint.com” | tr \[:lower:\] \[:upper:\]** NEWS.TECMINT.COM
+**tecmint@TecMint ~ $** **echo "news.tecmint.com” | tr \[:lower:\] \[:upper:\]** NEWS.TECMINT.COM
 
 ### 11. more Command
 

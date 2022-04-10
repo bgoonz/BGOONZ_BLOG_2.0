@@ -29,7 +29,7 @@ directive in ssh\_config(5) for more information.
 
 nc -x: -Xconnect
 
-The same example again, this time enabling proxy authentication with username “ruser” if the proxy requires it:
+The same example again, this time enabling proxy authentication with username "ruser” if the proxy requires it:
 ===============================================================================================================
 
 nc -x: -Xconnect -Pruser

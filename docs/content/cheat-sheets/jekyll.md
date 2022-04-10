@@ -59,7 +59,7 @@ Front-matter
     ---
     Hello! this is my post.
 
-{: data-line=“1,2,3,4”}
+{: data-line="1,2,3,4”}
 
 Attach metadata to a page by adding them on top of the page, delimited by `---`. See: [Front-matter](http://jekyllrb.com/docs/frontmatter/)
 
@@ -91,13 +91,13 @@ Markup
 
     <title>{{ page.title }}</title>
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Filters
 
     <p>{{ page.description | truncate_words: 20 }}</p>
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Loops
 
@@ -108,7 +108,7 @@ Markup
     </a>
     {% endfor %}
 
-{: data-line=“1,6”}
+{: data-line="1,6”}
 
 ### Dates
 
@@ -127,24 +127,24 @@ Markup
     {% case shipping.title %} {% when 'international' %} Arriving in 2-3 weeks {% when 'Domestic' %} Arriving in 2-3 days {% else %} Thank you for your order! {%
     endcase %}
 
-{: data-line=“1,2,4,6,8”}
+{: data-line="1,2,4,6,8”}
 
 ### Includes (partials)
 
     {% include header.html %}
 
-{: data-line=“1”}
+{: data-line="1”}
 
     <!-- Including local vars -->
     {% include header.html page=page %}
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Comments
 
     {% comment %} This is a comment! {% endcomment %}
 
-{: data-line=“1,3”}
+{: data-line="1,3”}
 
 Variables
 ---------
@@ -211,7 +211,7 @@ Filters
 
 {: .-setup}
 
-<table><thead><tr class="header"><th>Filter</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>where:</code> <em>“year”, “2014”</em></td><td></td></tr><tr class="even"><td><code>where_exp:</code> <em>“item”, “item.year &gt;= 2014”</em></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>group_by:</code> <em>“genre”</em></td><td>→ <code>{name, items}</code></td></tr><tr class="odd"><td><code>group_by_exp:</code> <em>“item”, “item.genre”</em></td><td>→ <code>{name, items}</code></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>sort</code></td><td></td></tr><tr class="even"><td><code>sort:</code> <em>‘author’</em></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>uniq</code></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>first</code></td><td></td></tr><tr class="odd"><td><code>last</code></td><td></td></tr><tr class="even"><td><code>join:</code> <em>‘,’</em></td><td></td></tr><tr class="odd"><td><code>array_to_sentence_string</code></td><td>→ <code>"X, Y and Z"</code></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>map:</code> <em>‘post’</em></td><td>Works like ‘pluck’</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>size</code></td><td></td></tr><tr class="even"><td><code>push:</code> <em>‘xxx’</em></td><td>Adds an item</td></tr></tbody></table>
+<table><thead><tr class="header"><th>Filter</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>where:</code> <em>"year”, "2014”</em></td><td></td></tr><tr class="even"><td><code>where_exp:</code> <em>"item”, "item.year &gt;= 2014”</em></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>group_by:</code> <em>"genre”</em></td><td>→ <code>{name, items}</code></td></tr><tr class="odd"><td><code>group_by_exp:</code> <em>"item”, "item.genre”</em></td><td>→ <code>{name, items}</code></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>sort</code></td><td></td></tr><tr class="even"><td><code>sort:</code> <em>‘author’</em></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>uniq</code></td><td></td></tr><tr class="odd"><td>—</td><td>—</td></tr><tr class="even"><td><code>first</code></td><td></td></tr><tr class="odd"><td><code>last</code></td><td></td></tr><tr class="even"><td><code>join:</code> <em>‘,’</em></td><td></td></tr><tr class="odd"><td><code>array_to_sentence_string</code></td><td>→ <code>"X, Y and Z"</code></td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>map:</code> <em>‘post’</em></td><td>Works like ‘pluck’</td></tr><tr class="even"><td>—</td><td>—</td></tr><tr class="odd"><td><code>size</code></td><td></td></tr><tr class="even"><td><code>push:</code> <em>‘xxx’</em></td><td>Adds an item</td></tr></tbody></table>
 
 ### String filters
 

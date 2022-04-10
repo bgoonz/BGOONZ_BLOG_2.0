@@ -19,7 +19,7 @@ A string containing a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/H
 Description
 -----------
 
-The `small()` method embeds a string in a `<small>` element: “`<small>str</small>`”.
+The `small()` method embeds a string in a `<small>` element: "`<small>str</small>`”.
 
 Examples
 --------

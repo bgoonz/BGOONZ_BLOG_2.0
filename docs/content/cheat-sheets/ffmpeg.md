@@ -10,7 +10,7 @@ ffmpeg -i
 To convert all m4a files to mp3
 ===============================
 
-for f in \*.m4a; do ffmpeg -i “<span class="math inline">$f" -acodec libmp3lame -vn -b:a 320k "$</span>{f%.m4a}.mp3”; done
+for f in \*.m4a; do ffmpeg -i "<span class="math inline">$f" -acodec libmp3lame -vn -b:a 320k "$</span>{f%.m4a}.mp3”; done
 
 To convert video from .foo to .bar
 ==================================

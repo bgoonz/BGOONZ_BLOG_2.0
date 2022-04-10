@@ -53,14 +53,14 @@ Bitwise Solution
 Bitwise algorithm basically approaches the problem like this:
 
 -   Queens can attack diagonally, vertically, or horizontally. As a result, there can only be one queen in each row, one in each column, and at most one on each diagonal.
--   Since we know there can only one queen per row, we will start at the first row, place a queen, then move to the second row, place a second queen, and so on until either a) we reach a valid solution or b) we reach a dead end (ie. we can’t place a queen such that it is “safe” from the other queens).
+-   Since we know there can only one queen per row, we will start at the first row, place a queen, then move to the second row, place a second queen, and so on until either a) we reach a valid solution or b) we reach a dead end (ie. we can’t place a queen such that it is "safe” from the other queens).
 -   Since we are only placing one queen per row, we don’t need to worry about horizontal attacks, since no queen will ever be on the same row as another queen.
 -   That means we only need to check three things before placing a queen on a certain square: 1) The square’s column doesn’t have any other queens on it, 2) the square’s left diagonal doesn’t have any other queens on it, and 3) the square’s right diagonal doesn’t have any other queens on it.
 -   If we ever reach a point where there is nowhere safe to place a queen, we can give up on our current attempt and immediately test out the next possibility.
 
 First let’s talk about the recursive function. You’ll notice that it accepts 3 parameters: `leftDiagonal`, `column`, and `rightDiagonal`. Each of these is technically an integer, but the algorithm takes advantage of the fact that an integer is represented by a sequence of bits. So, think of each of these parameters as a sequence of `N` bits.
 
-Each bit in each of the parameters represents whether the corresponding location on the current row is “available”.
+Each bit in each of the parameters represents whether the corresponding location on the current row is "available”.
 
 For example:
 

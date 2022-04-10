@@ -53,7 +53,7 @@ console.log(new Person(&#39;Joe&#39;).toSource()); // ---&gt; new Person(&quot;J
 <li><a href="../regexp/tosource"><code>RegExp.prototype.toSource()</code></a> — <a href="../regexp"><code>RegExp</code></a> object.</li>
 <li><a href="../string/tosource"><code>String.prototype.toSource()</code></a> — <a href="../string"><code>String</code></a> object.</li>
 <li><a href="../symbol/tosource"><code>Symbol.prototype.toSource()</code></a> — <a href="../symbol"><code>Symbol</code></a> object.</li>
-<li><code>Math.toSource()</code> — Returns the String “Math”.</li>
+<li><code>Math.toSource()</code> — Returns the String "Math”.</li>
 </ul>
 <h3 id="limitations-on-cyclical-objects">Limitations on cyclical objects</h3>
 <p>In the case of objects that contain references to themselves, e.g. a cyclically linked list or a tree that can be traversed both ways, <code>toSource()</code> will not recreate the self-reference, as of Firefox 24. For example:</p>

@@ -31,7 +31,7 @@ grep -v
 To grep with regular expressions:
 =================================
 
-grep “^00” \# Match lines starting with 00 grep -E “\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}” \# Find IP add
+grep "^00” \# Match lines starting with 00 grep -E "\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}.\[0-9\]{1,3}” \# Find IP add
 
 \# To find all files that match in
 

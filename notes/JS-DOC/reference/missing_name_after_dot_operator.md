@@ -1,7 +1,7 @@
 SyntaxError: missing name after . operator
 ==========================================
 
-The JavaScript exception “missing name after . operator” occurs when there is a problem with how the dot operator (`.`) is used for [property access](../operators/property_accessors).
+The JavaScript exception "missing name after . operator” occurs when there is a problem with how the dot operator (`.`) is used for [property access](../operators/property_accessors).
 
 Message
 -------

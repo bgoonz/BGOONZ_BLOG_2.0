@@ -1,4 +1,4 @@
-Marking guide for “Typesetting a community school homepage”
+Marking guide for "Typesetting a community school homepage”
 ===========================================================
 
 The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Typesetting a community school homepage](https://developer.mozilla.org/en-US/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth, and the mark breakdown.
@@ -10,58 +10,58 @@ The overall mark awarded is out of 40. Work out their final mark, and then divid
 Fonts
 -----
 
- “download a couple of free-to-use fonts” (3 marks)   
-the student will get one mark for the suitability of each of the two fonts (the description in the question says “the fonts should be chosen to give the page a fairly serious, formal, trustworthy feel — a serif side-wide font for the general text body, coupled with sans-serif or slab serif for the headings might be nice.”) and one mark for the fonts being ok to use.
+ "download a couple of free-to-use fonts” (3 marks)   
+the student will get one mark for the suitability of each of the two fonts (the description in the question says "the fonts should be chosen to give the page a fairly serious, formal, trustworthy feel — a serif side-wide font for the general text body, coupled with sans-serif or slab serif for the headings might be nice.”) and one mark for the fonts being ok to use.
 
- “Use a suitable service to generate bulletproof `@font-face` code” (2 marks)   
+ "Use a suitable service to generate bulletproof `@font-face` code” (2 marks)   
 The student will get the marks by using a service like fontsquirrel’s generator to create bulletproof `@font-face` code. You can check it against the example linked above. If it is not cross-browser, or fails to apply the fonts, then they get no marks.
 
- “Apply your body font to the whole page, and your heading font to your headings.” (3 marks)   
+ "Apply your body font to the whole page, and your heading font to your headings.” (3 marks)   
 The body font should be applied to the `<html>` element, and the heading font should be applied only to `<h1>` and `<h2>`. One mark for each. Also, one bonus mark for providing something of a fallback for each in a font stack, and not just a single font.
 
 General text styling
 --------------------
 
- “Give the page a site-wide `font-size` of 10px” (1 mark)   
+ "Give the page a site-wide `font-size` of 10px” (1 mark)   
 `font-size: 10px;` should be applied to the `<html>` element.
 
- “Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.” (3 marks)   
+ "Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.” (3 marks)   
 Award between 0 and 2 marks for the sizing, depending on how well thought out it looks. Also award one mark if a sensible relative unit such as em or rem is used.
 
- “Give your body text a suitable `line-height`.” (1 mark)   
+ "Give your body text a suitable `line-height`.” (1 mark)   
 Between about 1.4 and 1.6 is ideal, and will get the mark.
 
- “Center your top level heading on the page.” (1 mark)   
+ "Center your top level heading on the page.” (1 mark)   
 Setting `text-align: center;` on the `h1` will get the mark. Flexbox would also do. Anything else is probably too convoluted to get the mark.
 
- “Give your headings a little bit of `letter-spacing`…” (1 mark)   
+ "Give your headings a little bit of `letter-spacing`…” (1 mark)   
 Generally something small like 1 or 2 pixels (0.1 or 0.2 rem) will work ok, depending on the font.
 
- “Give your body text some letter-spacing and word-spacing, as appropriate.” (1 mark)   
+ "Give your body text some letter-spacing and word-spacing, as appropriate.” (1 mark)   
 About 0.5 or 1 pixel of letter spacing and about 3px of word spacing will look ok to help the text breathe a bit, depending on the font.
 
- “Give the first paragraph after each heading in the `<section>` a little bit of text-indentation, say 20px.” (2 marks)   
+ "Give the first paragraph after each heading in the `<section>` a little bit of text-indentation, say 20px.” (2 marks)   
 A good little test of selector and background knowledge. The selector should be `h2 + p`, and the declaration used should be `text-indent: 20px;`. One mark for each.
 
 Links
 -----
 
- “Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.” (3 marks)   
+ "Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.” (3 marks)   
 The link state rules should be laid out in the proper order of `a`, `a:link`, `a:visited`, `a:focus`, `a:hover`, and `a:active` to get the first mark. For the second mark, make the link and visited states have a color that goes with the page. For the third mark, make the focus AND hover states have a different color, or you could even just give them the same color, because of the next instruction. It is acceptable for link and visited to have the same styling, and focus and hover.
 
- “Make it so that links are underlined by default, but when you hover or focus them, the underline disappears.” (2 marks)   
+ "Make it so that links are underlined by default, but when you hover or focus them, the underline disappears.” (2 marks)   
 The links will have `text-decoration: underline` set by default. You could just set `text-decoration: none;` on the focus and hover states. The method of using `border-bottom` is also acceptable.
 
- “Remove the default focus outline from ALL the links on the page.” (1 mark)   
+ "Remove the default focus outline from ALL the links on the page.” (1 mark)   
 You just need to set `outline: none` on all links (`a`).
 
- “Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.” (2 marks)   
+ "Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.” (2 marks)   
 they can get one mark for something totally crazy that stands out, or two marks for something tasteful that stands out.
 
- “Make it so that external links have the external link icon inserted next to them.” (4 marks)   
+ "Make it so that external links have the external link icon inserted next to them.” (4 marks)   
 This is worth four marks because it is fairly complex. They can get a mark each for:
 
--   Using asuitable attribute selector that only selects links containing “http” in their `href` attribute.
+-   Using asuitable attribute selector that only selects links containing "http” in their `href` attribute.
 -   Including some padding to make way for the link to be displayed.
 -   Including the correct `background-*` properties or `background` shorthand to place the background image, and to make it not repeat.
 -   Including the `background-size` property to resize the icon to something appropriate dynamically, OR resizing it in an image editor to an appropriate size.
@@ -69,16 +69,16 @@ This is worth four marks because it is fairly complex. They can get a mark each 
 Lists
 -----
 
- “Make sure the spacing of your lists and list items works well with the styling of the overall page.” (1 mark)   
+ "Make sure the spacing of your lists and list items works well with the styling of the overall page.” (1 mark)   
 This will basically work ok anyway, but one bonus mark is being awarded for students that set 16px (1.6rem) for the top and bottom margins of `<ul>` and `<ol>`. This is to make sure the spacing will always be correct, even if two lists were to be placed next to one another.
 
- “Give your list items a nice bullet, appropriate for the design of the page. It is up to you whether you choose a custom bullet image or something else.” (1 mark)   
+ "Give your list items a nice bullet, appropriate for the design of the page. It is up to you whether you choose a custom bullet image or something else.” (1 mark)   
 This is really up to the student: they can give `<ul>` and `<ol>` a simple `list-style-type` or something a bit more interesting; whatever they feel like.
 
 Navigation menu
 ---------------
 
- “Style your navigation menu so that it has an appropriate look for the look and feel for the page.” (8 marks)   
+ "Style your navigation menu so that it has an appropriate look for the look and feel for the page.” (8 marks)   
 The mark award for this one question is quite high, because it is fairly complex and has multiple parts. Ideally, they should:
 
 -   Start every selector with `nav` to make sure only the nav menu is affected.

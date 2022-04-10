@@ -20,7 +20,7 @@ yes
 Description
 -----------
 
-The value of `sticky` is a [`Boolean`](../boolean) and true if the “`y`” flag was used; otherwise, false. The “`y`” flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
+The value of `sticky` is a [`Boolean`](../boolean) and true if the "`y`” flag was used; otherwise, false. The "`y`” flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
 
 You cannot change this property directly. It is read-only.
 

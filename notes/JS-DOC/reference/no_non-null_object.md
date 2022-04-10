@@ -1,7 +1,7 @@
-TypeError: “x” is not a non-null object
+TypeError: "x” is not a non-null object
 =======================================
 
-The JavaScript exception “is not a non-null object” occurs when an object is expected somewhere and wasn’t provided. [`null`](../global_objects/null) is not an object and won’t work.
+The JavaScript exception "is not a non-null object” occurs when an object is expected somewhere and wasn’t provided. [`null`](../global_objects/null) is not an object and won’t work.
 
 Message
 -------

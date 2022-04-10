@@ -16,7 +16,7 @@
 <h1 id="arguments.callee">arguments.callee</h1>
 <p>The <code>arguments.callee</code> property contains the currently executing function.</p>
 <h2 id="description">Description</h2>
-<p><code>callee</code> is a property of the <code>arguments</code> object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called “anonymous functions”).</p>
+<p><code>callee</code> is a property of the <code>arguments</code> object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called "anonymous functions”).</p>
 <p><strong>Warning:</strong> The 5th edition of ECMAScript (ES5) forbids use of <code>arguments.callee()</code> in <a href="../../strict_mode">strict mode</a>. Avoid using <code>arguments.callee()</code> by either giving function expressions a name or use a function declaration where a function must call itself.</p>
 <h3 id="why-was-arguments.callee-removed-from-es5-strict-mode">Why was <code>arguments.callee</code> removed from ES5 strict mode?</h3>
 <p>(adapted from <a href="https://stackoverflow.com/a/235760/578288">a Stack Overflow answer by olliej</a>)</p>

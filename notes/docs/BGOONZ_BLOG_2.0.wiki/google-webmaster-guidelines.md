@@ -8,7 +8,7 @@ Webmaster Guidelines | Google Search Central | Google Developers
 
 ------------------------------------------------------------------------
 
-&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title=“YouTube video player” width=“640” height=“360” src=“https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=yFxNda5Z4eE&enablejsapi=1&widgetid=1” id=“widget2”&gt;
+&lt;iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen="1” allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title="YouTube video player” width="640” height="360” src="https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=yFxNda5Z4eE&enablejsapi=1&widgetid=1” id="widget2”&gt;
 
 Following the [General guidelines](https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en&_ga=2.47561892.2010395531.1639933504-972587081.1639933504&visit_id=1639931578542-8725338968151920159&rd=1#general) will help Google find, index, and rank your site.
 
@@ -60,13 +60,13 @@ These quality guidelines cover the most common forms of deceptive or manipulativ
 
 If you believe that another site is abusing Google’s quality guidelines, please let us know by [filing a spam report](https://www.google.com/webmasters/tools/spamreport). Google prefers developing scalable and automated solutions to problems, and will use the report for further improving our spam detection systems.
 
-&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title=“YouTube video player” width=“640” height=“360” src=“https://www.youtube.com/embed/2oPj5\_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=2oPj5\_9WxpA&enablejsapi=1&widgetid=3” id=“widget4”&gt;
+&lt;iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen="1” allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” title="YouTube video player” width="640” height="360” src="https://www.youtube.com/embed/2oPj5\_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=2oPj5\_9WxpA&enablejsapi=1&widgetid=3” id="widget4”&gt;
 
 ### Basic principles
 
 -   Make pages primarily for users, not for search engines.
 -   Don’t deceive your users.
--   Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, “Does this help my users? Would I do this if search engines didn’t exist?”
+-   Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you’d feel comfortable explaining what you’ve done to a website that competes with you, or to a Google employee. Another useful test is to ask, "Does this help my users? Would I do this if search engines didn’t exist?”
 -   Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.
 
 ### Specific guidelines
@@ -150,7 +150,7 @@ What Is a Sitemap | Google Search Central | Google Developers
 
 ------------------------------------------------------------------------
 
-&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen=“1” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” width=“640” height=“360” src=“https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=JlamLfyFjTA&enablejsapi=1&widgetid=1” id=“widget2” data-title=“YouTube video player”&gt;
+&lt;iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);frameborder=”0" allowfullscreen="1” allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” width="640” height="360” src="https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&showinfo=0&video-id=JlamLfyFjTA&enablejsapi=1&widgetid=1” id="widget2” data-title="YouTube video player”&gt;
 
 A *sitemap* is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files. For example, when the page was last updated and any alternate language versions of the page.
 
@@ -174,7 +174,7 @@ If your site’s pages are properly linked, Google can usually discover most of 
 
 **You might *not* need a sitemap if:**
 
--   **Your site is “small”.** By small, we mean about 500 pages or fewer on your site. (Only pages that you think need to be in search results count toward this total.)
+-   **Your site is "small”.** By small, we mean about 500 pages or fewer on your site. (Only pages that you think need to be in search results count toward this total.)
 -   **Your site is comprehensively linked internally.** This means that Google can find all the important pages on your site by following links starting from the homepage.
 -   **You don’t have many media files** (video, image) **or news pages** that you want to show in search results. Sitemaps can help Google find and understand video and image files, or news articles, on your site. If you don’t need these results to appear in image, video, or news results, you might not need a sitemap.
 

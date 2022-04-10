@@ -27,7 +27,7 @@
 <p>no</p>
 <h2 id="examples">Examples</h2>
 <h3 id="scoping-in-with-statements">Scoping in with statements</h3>
-<p>The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the <a href="../array/keys"><code>Array.prototype.keys()</code></a> method was introduced. That means that inside <code>with</code> environment “keys” would now be the method and not the variable. That’s when the <code>unscopable</code>s symbol was introduced. A built-in <code>unscopables</code> setting is implemented as <a href="../array/@@unscopables"><code>Array.prototype[@@unscopables]</code></a> to prevent that some of the Array methods are being scoped into the <code>with</code> statement.</p>
+<p>The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the <a href="../array/keys"><code>Array.prototype.keys()</code></a> method was introduced. That means that inside <code>with</code> environment "keys” would now be the method and not the variable. That’s when the <code>unscopable</code>s symbol was introduced. A built-in <code>unscopables</code> setting is implemented as <a href="../array/@@unscopables"><code>Array.prototype[@@unscopables]</code></a> to prevent that some of the Array methods are being scoped into the <code>with</code> statement.</p>
 <pre><code>var keys = [];
 
 with (Array.prototype) {

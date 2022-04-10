@@ -42,7 +42,7 @@
 <p>There is no fluff here. All the improvements are actionable and you can increase your site speed today!</p>
 <p>We only need a single tool to investigate the improvements on your site.</p>
 <p>Google Chrome Developer Tools.</p>
-<p>To access these tools open Chrome and navigate to your site. Right-click the page and choose the “Inspect” option.</p>
+<p>To access these tools open Chrome and navigate to your site. Right-click the page and choose the "Inspect” option.</p>
 <p>You now have developer tools open, let’s improve your site!</p>
 <p>Here is the checklist of improvements we are going to make:</p>
 <ul>
@@ -133,7 +133,7 @@
 <p>By selecting the correct compression type, we can reduce image size by up to 90%.</p>
 <h4 id="what">What</h4>
 <p>To check if compression could improve the images on your site, use the Dev Tools and select the network tab.</p>
-<p>You can filter by “Img” and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It’s the resource file size we are looking at.</p>
+<p>You can filter by "Img” and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It’s the resource file size we are looking at.</p>
 <p>If you see files that are larger than 100kb it’s time to try compression.</p>
 <h4 id="how">How</h4>
 <p>Follow these rules when deciding on the type of compression to use:</p>
@@ -206,7 +206,7 @@
 <p>To support these devices we want to show a nice clear image. We do not want to have blurry images that negatively affect the user experience. We should provide different images for each resolution.</p>
 <h4 id="what-4">What</h4>
 <p>Check to see if there are any picture tags in the HTML. You are then looking for different sources of the same image.</p>
-<p>It can help to search for “srcset” in the markup.</p>
+<p>It can help to search for "srcset” in the markup.</p>
 <h4 id="how-4">How</h4>
 <p>To support different resolutions we need to create images at various widths. It’s common to see 3 widths for mobile, tablet and desktop.</p>
 <p>Use the <code>&lt;picture&gt;</code> tag to add images at different widths:</p>
@@ -267,12 +267,12 @@
 <p>There is no need for the extra <code>="true"</code> and this text is redundant.</p>
 <p>It is safe to remove all these default true values from your HTML.</p>
 <h4 id="what-7">What</h4>
-<p>To check if your site has this open Dev Tools and click on the “Elements” tab.</p>
-<p>This will show the HTML and you can perform a search for “true”.</p>
+<p>To check if your site has this open Dev Tools and click on the "Elements” tab.</p>
+<p>This will show the HTML and you can perform a search for "true”.</p>
 <p>If you find some you can remove them.</p>
 <h4 id="how-7">How</h4>
 <p>Most HTML minifiers will have an option to remove these values.</p>
-<p>The <a href="http://kangax.github.io/html-minifier/">HTML minifier</a> tool we mentioned above has a “Collapse boolean attributes” option. To remove the “true” values check this checkbox.</p>
+<p>The <a href="http://kangax.github.io/html-minifier/">HTML minifier</a> tool we mentioned above has a "Collapse boolean attributes” option. To remove the "true” values check this checkbox.</p>
 <p>Impact: Low</p>
 <h4 id="why-8">Why</h4>
 <p>Comments are often found in HTML.</p>
@@ -285,14 +285,14 @@
 <p>If you find some these are comments and you can remove them.</p>
 <h4 id="how-8">How</h4>
 <p>The <a href="http://kangax.github.io/html-minifier/">HTML minifier</a> can remove these comments for us.</p>
-<p>There is a section in the options called “Remove comments”. Check this to remove all comments from the file.</p>
+<p>There is a section in the options called "Remove comments”. Check this to remove all comments from the file.</p>
 <h3 id="remove-legacy-tag-attributes">Remove Legacy Tag Attributes</h3>
 <p>Impact: Low</p>
 <h4 id="why-9">Why</h4>
 <p>There are many defaults in HTML 5 that make some markup redundant.</p>
 <p>It is important to be aware of these defaults so that you know what to remove.</p>
 <h4 id="what-9">What</h4>
-<p>In Dev Tools click the “Elements” tab and search for “text/javascript” and “text/css”.</p>
+<p>In Dev Tools click the "Elements” tab and search for "text/javascript” and "text/css”.</p>
 <p>Which will return results like this:</p>
 <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>
 <p>This would tell the browser that we were going to load a script tag and run Javascript.</p>
@@ -300,11 +300,11 @@
 <p>Now all browsers by default will assume that a script tag is loading Javascript.</p>
 <p>Replace the above code with:</p>
 <h4 id="how-9">How</h4>
-<p>Again, using an <a href="http://kangax.github.io/html-minifier/">HTML minifier</a> there is an option labeled “HTML5”. Check this when minifying and it will remove these attributes.</p>
+<p>Again, using an <a href="http://kangax.github.io/html-minifier/">HTML minifier</a> there is an option labeled "HTML5”. Check this when minifying and it will remove these attributes.</p>
 <h3 id="minify-inline-css-and-javascript">Minify inline CSS and Javascript</h3>
 <p>Impact: Medium (depending on the amount of CSS and Javascript inlined)</p>
 <h4 id="why-10">Why</h4>
-<p>If the HTML file has Javascript or CSS within the HTML file (called “inline”). For example:</p>
+<p>If the HTML file has Javascript or CSS within the HTML file (called "inline”). For example:</p>
 <pre><code>&lt;style&gt;
   .background {
     border: none !important;
@@ -325,10 +325,10 @@
 <pre><code>&lt;style&gt;.background{border:none!important;margin:0!important;padding:0!important;width:1px!important;min-width:100%!important;overflow:hidden!important;display:block!important;visibility:hidden!important;position:fixed!important;height:1px!important;pointer-events:none!important;user-select:none!important}&lt;/stlye&gt;</code></pre>
 <p>Making the file size smaller.</p>
 <h4 id="what-10">What</h4>
-<p>In the Dev Tools open the “Network” tab and locate the HTML file and click on the “Response”. Search for the “style” or “script” tag in the HTML, if there is CSS or Javascript written inline.</p>
+<p>In the Dev Tools open the "Network” tab and locate the HTML file and click on the "Response”. Search for the "style” or "script” tag in the HTML, if there is CSS or Javascript written inline.</p>
 <p>If there is, check to see if it has whitespace and indentations. If it does we can minify it.</p>
 <h4 id="how-10">How</h4>
-<p>We can use our old friend <a href="http://kangax.github.io/html-minifier/">HTML minifier</a>. Make sure you select the options “Minify CSS” and “Minify Javascript”.</p>
+<p>We can use our old friend <a href="http://kangax.github.io/html-minifier/">HTML minifier</a>. Make sure you select the options "Minify CSS” and "Minify Javascript”.</p>
 <h3 id="load-css-before-javascript">Load CSS Before Javascript</h3>
 <p>Impact: High</p>
 <h4 id="why-11">Why</h4>
@@ -338,7 +338,7 @@
 <p>The browser will download the script first. Then block the page from loading before it starts to download the CSS.</p>
 <p>Since we need the CSS to show the final page, it is better to load the CSS first which will decrease rendering time.</p>
 <h4 id="what-11">What</h4>
-<p>Search for Script and stylesheet in your HTML. You can view this in the “Network” tab of Chrome Dev Tools, ensure that they are in the correct order.</p>
+<p>Search for Script and stylesheet in your HTML. You can view this in the "Network” tab of Chrome Dev Tools, ensure that they are in the correct order.</p>
 <h4 id="how-11">How</h4>
 <p>Reorder the tags so that all required CSS loads before the javascript:</p>
 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;cats.css&quot;/&gt;
@@ -349,11 +349,11 @@
 <p>As iFrames are actually pages inside pages there use can decrease the performance of a site.</p>
 <p>The more iFrames you add, the slower the site will be.</p>
 <h4 id="what-12">What</h4>
-<p>To locate the iFrames, use Developer tools click the “Elements” tab.</p>
+<p>To locate the iFrames, use Developer tools click the "Elements” tab.</p>
 <figure>
 <img src="https://pagedart.com/images/30-ways-to-improve-your-website-performance/iframe.jpg" alt="iFrames" /><figcaption>iFrames</figcaption>
 </figure>
-<p>This will show the HTML markup from here you can perform a find and search for “iframe”.</p>
+<p>This will show the HTML markup from here you can perform a find and search for "iframe”.</p>
 <h4 id="how-12">How</h4>
 <p>Assess the iFrames and consider whether an API call makes more sense.</p>
 <h3 id="use-pre-load">Use Pre-load</h3>
@@ -404,7 +404,7 @@
 <img src="https://pagedart.com/images/30-ways-to-improve-your-website-performance/async-defer.jpg" alt="Async Defer" /><figcaption>Async Defer</figcaption>
 </figure>
 <h4 id="what-15">What</h4>
-<p>You can look at the HTML file in the “Elements” tab of the Dev Tools.</p>
+<p>You can look at the HTML file in the "Elements” tab of the Dev Tools.</p>
 <p>Look for where the script tags are being loaded.</p>
 <p>Do they have the <code>async</code> or <code>defer</code> keywords.</p>
 <h4 id="how-15">How</h4>
@@ -459,11 +459,11 @@
 <h4 id="what-19">What</h4>
 <p>It can be almost impossible to look at a CSS file and figure out if the styles are in use.</p>
 <p>A simpler way is to perform a Lighthouse Audit.</p>
-<p>To do this in Chrome Developer Tools open the Audit tab and run a “Performance” Audit.</p>
+<p>To do this in Chrome Developer Tools open the Audit tab and run a "Performance” Audit.</p>
 <figure>
 <img src="https://pagedart.com/images/30-ways-to-improve-your-website-performance/audit.jpg" alt="Lighthouse Audit" /><figcaption>Lighthouse Audit</figcaption>
 </figure>
-<p>This will flag the “Remove unused CSS” opportunity if your site would benefit.</p>
+<p>This will flag the "Remove unused CSS” opportunity if your site would benefit.</p>
 <h4 id="how-19">How</h4>
 <p>We can remove unused CSS using the online tool <a href="https://uncss-online.com/">UnCSS</a>.</p>
 <p>Load the HTML and the CSS into this tool and it will strip out all the CSS that is not needed.</p>
@@ -482,7 +482,7 @@
 <h4 id="how-20">How</h4>
 <p>We can also use <a href="https://uncss-online.com/">UnCSS</a> to extract the CSS needed for the above the fold content. To do this select the HTML that is above the fold and insert it into the tool.</p>
 <p>Then add the CSS styles.</p>
-<p>Once you hit “UnCSS my styles” you have the critical CSS and you can insert this inline to the HTML.</p>
+<p>Once you hit "UnCSS my styles” you have the critical CSS and you can insert this inline to the HTML.</p>
 <p>To do this add the critical CSS to a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of your HTML.</p>
 <p>Add the remaining CSS to a stylesheet using a <code>&lt;link&gt;</code> tag and add preload. We will look at this next.</p>
 <h4 id="use-preload">Use Preload</h4>
@@ -504,7 +504,7 @@
 <p>Especially, any inline CSS added to the <code>&lt;body&gt;</code>.</p>
 <p>Remove this and add it to an external CSS file using preload. This will make the HTML smaller and speed up the download of the file.</p>
 <h4 id="what-22">What</h4>
-<p>Look in the “Network” tab and at the HTML file for any inline CSS.</p>
+<p>Look in the "Network” tab and at the HTML file for any inline CSS.</p>
 <h4 id="how-22">How</h4>
 <p>Extract the existing CSS and save as a file, then replace the <code>&lt;style&gt;</code> tag with a <code>&lt;link&gt;</code> tag.</p>
 <h2 id="fonts">Fonts</h2>
@@ -536,7 +536,7 @@
 <p>To reduce the time it takes to do this lookup we can perform the DNS lookup before the CSS loads the font.</p>
 <p>Making the initial connection faster.</p>
 <h4 id="what-24">What</h4>
-<p>To do this on the “Elements” tab search for “preconnect” in the HTML.</p>
+<p>To do this on the "Elements” tab search for "preconnect” in the HTML.</p>
 <p>Have a look to see if there are any <code>&lt;link&gt;</code> tags that have the DNS domain name of the location of the fonts.</p>
 <h4 id="how-24">How</h4>
 <p>To enable pre-connect, add the following code to the head of the page:</p>
@@ -613,7 +613,7 @@
 <p>There is also a performance boost if you register your site with the <a href="https://hstspreload.org/">Google HSTS preload</a>.</p>
 <h4 id="what-27">What</h4>
 <p>To check if you have HTTPS enabled open Chrome and look for the padlock next to the URL.</p>
-<p>If you don’t see it, you may see the “Not Secure” text instead.</p>
+<p>If you don’t see it, you may see the "Not Secure” text instead.</p>
 <figure>
 <img src="https://pagedart.com/images/30-ways-to-improve-your-website-performance/not-secure.jpg" alt="Not Secure" /><figcaption>Not Secure</figcaption>
 </figure>
@@ -629,8 +629,8 @@
 <p>The goal of the h2 project was to reduce <a href="https://developers.google.com/web/fundamentals/performance/http2/">page load times by 50%</a>.</p>
 <p>This changes the advice on some of the above improvements. Loading many files can be faster than one large big file. When enabling h2 it’s important to test the changes you make.</p>
 <h4 id="what-28">What</h4>
-<p>To check if the site is using HTTP/2 we can look in the network tab and add the “Protocol” column.</p>
-<p>This will show “h2” if we have HTTP/2 enabled on the server.</p>
+<p>To check if the site is using HTTP/2 we can look in the network tab and add the "Protocol” column.</p>
+<p>This will show "h2” if we have HTTP/2 enabled on the server.</p>
 <h4 id="how-28">How</h4>
 <p>Not every server supports h2, check with your hosting provider to enable h2.</p>
 <h3 id="reduce-cookies">Reduce Cookies</h3>
@@ -640,7 +640,7 @@
 <p>This extra data will slowdown each request.</p>
 <p>Try to keep these cookies to at least below 20.</p>
 <h4 id="what-29">What</h4>
-<p>To check this have a look at the network tab and click on the headers tab. You need to find the “cookie” header in the request, like this:</p>
+<p>To check this have a look at the network tab and click on the headers tab. You need to find the "cookie” header in the request, like this:</p>
 <figure>
 <img src="https://pagedart.com/images/30-ways-to-improve-your-website-performance/cookies.jpg" alt="Cookies" /><figcaption>Cookies</figcaption>
 </figure>

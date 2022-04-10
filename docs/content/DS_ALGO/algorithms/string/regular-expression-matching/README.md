@@ -47,7 +47,7 @@ Input:
 
 Output: `true`
 
-Explanation: `.*` means “zero or more (`*`) of any character (`.`)”.
+Explanation: `.*` means "zero or more (`*`) of any character (`.`)”.
 
 **Example \#4**
 

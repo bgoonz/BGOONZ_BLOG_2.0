@@ -222,21 +222,21 @@ If you have a join model: {: .-setup}
       has_many :projects, :through => :assignments
     end
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
     class Project < ActiveRecord::Base
       has_many :assignments
       has_many :programmers, :through => :assignments
     end
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
     class Assignment
       belongs_to :project
       belongs_to :programmer
     end
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 ### Many-to-many (HABTM)
 
@@ -254,13 +254,13 @@ If you have a join model: {: .-setup}
       has_many :attachments, as: :parent
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
     class Image
       belongs_to :parent, polymorphic: true
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
 And in migrations:
 
@@ -268,7 +268,7 @@ And in migrations:
       t.references :post, polymorphic: true
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Validation
 ----------
@@ -282,7 +282,7 @@ Validation
       # Presence
       validates :name,     presence: true
 
-{: data-line=“2”}
+{: data-line="2”}
 
       # Acceptance
       validates :terms,    acceptance: true
@@ -352,7 +352,7 @@ Validation
       end
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Errors
 
@@ -405,7 +405,7 @@ Other API
       serialize :preferences
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
     user = User.create(
       preferences: {
@@ -442,7 +442,7 @@ Other tricks
       end
     end
 
-{: data-line=“4,8”}
+{: data-line="4,8”}
 
 See: <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html" class="uri">http://api.rubyonrails.org/classes/ActiveRecord/Base.html</a>
 

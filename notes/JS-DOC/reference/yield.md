@@ -125,7 +125,7 @@ Samsung Internet
 
 26
 
-\[“Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.”, “Starting with Firefox 29, an `IteratorResult` object returned for completed generator function.”\]
+\["Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.”, "Starting with Firefox 29, an `IteratorResult` object returned for completed generator function.”\]
 
 No
 
@@ -139,7 +139,7 @@ No
 
 26
 
-\[“Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.”, “Starting with Firefox 29, an `IteratorResult` object returned for completed generator function.”\]
+\["Starting with Firefox 33, the parsing of the `yield` expression has been updated to conform with the ES2015 specification.”, "Starting with Firefox 29, an `IteratorResult` object returned for completed generator function.”\]
 
 26
 

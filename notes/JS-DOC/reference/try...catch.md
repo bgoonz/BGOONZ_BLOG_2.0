@@ -60,7 +60,7 @@ The `catch`-block specifies an identifier (`e` in the example above) that holds 
 
 ### Conditional catch-blocks
 
-You can create “Conditional `catch`-blocks” by combining `try...catch` blocks with `if...else if...else` structures, like this:
+You can create "Conditional `catch`-blocks” by combining `try...catch` blocks with `if...else if...else` structures, like this:
 
     try {
       myroutine(); // may throw three types of exceptions
@@ -175,7 +175,7 @@ And now, let’s rethrow the error.
     // "finally"
     // "outer" "oops"
 
-Any given exception will be caught only once by the nearest enclosing `catch`-block unless it is rethrown. Of course, any new exceptions raised in the “inner” block (because the code in `catch`-block may do something that throws), will be caught by the “outer” block.
+Any given exception will be caught only once by the nearest enclosing `catch`-block unless it is rethrown. Of course, any new exceptions raised in the "inner” block (because the code in `catch`-block may do something that throws), will be caught by the "outer” block.
 
 ### Returning from a finally-block
 
@@ -201,7 +201,7 @@ If the `finally`-block returns a value, this value becomes the return value of t
     // "inner" "oops"
     // "finally"
 
-The outer “oops” is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
+The outer "oops” is not thrown because of the return in the `finally`-block. The same would apply to any value returned from the `catch`-block.
 
 Specifications
 --------------

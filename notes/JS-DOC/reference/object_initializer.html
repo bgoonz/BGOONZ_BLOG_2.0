@@ -51,7 +51,7 @@ let o = {
 <ul>
 <li>JSON permits <em>only</em> property definition using <code>"property": value</code> syntax. The property name must be double-quoted, and the definition cannot be a shorthand.</li>
 <li>In JSON the values can only be strings, numbers, arrays, <code>true</code>, <code>false</code>, <code>null</code>, or another (JSON) object.</li>
-<li>A function value (see “Methods” below) can not be assigned to a value in JSON.</li>
+<li>A function value (see "Methods” below) can not be assigned to a value in JSON.</li>
 <li>Objects like <a href="../global_objects/date"><code>Date</code></a> will be a string after <a href="../global_objects/json/parse"><code>JSON.parse()</code></a>.</li>
 <li><a href="../global_objects/json/parse"><code>JSON.parse()</code></a> will reject computed property names and an error will be thrown.</li>
 </ul>
@@ -117,7 +117,7 @@ console.log(a) // {x: 2}</code></pre>
   get property() {},
   set property(value) {}
 }</code></pre>
-<p>In ECMAScript 2015, a shorthand notation is available, so that the keyword “<code>function</code>” is no longer necessary.</p>
+<p>In ECMAScript 2015, a shorthand notation is available, so that the keyword "<code>function</code>” is no longer necessary.</p>
 <pre><code>// Shorthand method names (ES2015)
 let o = {
   property(parameters) {},
@@ -192,7 +192,7 @@ let obj4 = {__proto__: &#39;not an object or null&#39;}
 assert(Object.getPrototypeOf(obj4) === Object.prototype)
 assert(!obj4.hasOwnProperty(&#39;__proto__&#39;))</code></pre>
 <p>Only a single prototype mutation is permitted in an object literal. Multiple prototype mutations are a syntax error.</p>
-<p>Property definitions that do not use “colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.</p>
+<p>Property definitions that do not use "colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.</p>
 <pre><code>let __proto__ = &#39;variable&#39;
 
 let obj1 = {__proto__}

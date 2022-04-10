@@ -229,7 +229,7 @@ It’s the *only* way you should ever update a component’s state. It may seem 
 
 #### So the way to use `setState` to update a component’s state is to pass it an object with each of the state keys you wish to update, along with the updated value.
 
-In our `increment` method we said “I would like to update the `aNumber` property on my component state by adding one to it and then setting the new value as my new `aNumber`”.
+In our `increment` method we said "I would like to update the `aNumber` property on my component state by adding one to it and then setting the new value as my new `aNumber`”.
 
 The same thing happens in our `decrement` method, only we’re subtracting instead of adding.
 

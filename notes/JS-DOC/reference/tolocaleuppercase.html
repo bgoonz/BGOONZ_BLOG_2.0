@@ -26,8 +26,8 @@ The <code>locale</code> parameter indicates the locale to be used to convert to 
 <p>A new string representing the calling string converted to upper case, according to any locale-specific case mappings.</p>
 <h3 id="exceptions">Exceptions</h3>
 <ul>
-<li>A <a href="../rangeerror"><code>RangeError</code></a> (“invalid language tag: xx_yy”) is thrown if a <code>locale</code> argument isn’t a valid language tag.</li>
-<li>A <a href="../typeerror"><code>TypeError</code></a> (“invalid element in locales argument”) is thrown if an array element isn’t of type string.</li>
+<li>A <a href="../rangeerror"><code>RangeError</code></a> ("invalid language tag: xx_yy”) is thrown if a <code>locale</code> argument isn’t a valid language tag.</li>
+<li>A <a href="../typeerror"><code>TypeError</code></a> ("invalid element in locales argument”) is thrown if an array element isn’t of type string.</li>
 </ul>
 <h2 id="description">Description</h2>
 <p>The <code>toLocaleUpperCase()</code> method returns the value of the string converted to upper case according to any locale-specific case mappings. <code>toLocaleUpperCase()</code> does not affect the value of the string itself. In most cases, this will produce the same result as <a href="touppercase"><code>toUpperCase()</code></a>, but for some locales, such as Turkish, whose case mappings do not follow the default case mappings in Unicode, there may be a different result.</p>

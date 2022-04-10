@@ -1,7 +1,7 @@
 TypeError: invalid Array.prototype.sort argument
 ================================================
 
-The JavaScript exception “invalid Array.prototype.sort argument” occurs when the argument of [`Array.prototype.sort()`](../global_objects/array/sort) isn’t either [`undefined`](../global_objects/undefined) or a function which compares its operands.
+The JavaScript exception "invalid Array.prototype.sort argument” occurs when the argument of [`Array.prototype.sort()`](../global_objects/array/sort) isn’t either [`undefined`](../global_objects/undefined) or a function which compares its operands.
 
 Message
 -------

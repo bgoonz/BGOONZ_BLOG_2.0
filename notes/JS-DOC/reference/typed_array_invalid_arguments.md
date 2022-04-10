@@ -1,7 +1,7 @@
 TypeError: invalid arguments
 ============================
 
-The JavaScript exception “invalid arguments” occurs when [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors are provided with a wrong argument.
+The JavaScript exception "invalid arguments” occurs when [typed array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) constructors are provided with a wrong argument.
 
 Message
 -------

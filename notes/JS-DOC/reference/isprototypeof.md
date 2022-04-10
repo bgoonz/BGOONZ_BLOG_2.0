@@ -3,7 +3,7 @@ Object.prototype.isPrototypeOf()
 
 The `isPrototypeOf()` method checks if an object exists in another object’s prototype chain.
 
-**Note:** `isPrototypeOf()` differs from the [`instanceof`](../../operators/instanceof) operator. In the expression “`object instanceof AFunction`”, the `object` prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
+**Note:** `isPrototypeOf()` differs from the [`instanceof`](../../operators/instanceof) operator. In the expression "`object instanceof AFunction`”, the `object` prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
 
 Syntax
 ------

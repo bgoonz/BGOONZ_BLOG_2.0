@@ -28,7 +28,7 @@
 
 console.log(regex.source); // &quot;fooBar&quot;, doesn&#39;t contain /.../ and &quot;ig&quot;.</code></pre>
 <h3 id="empty-regular-expressions-and-escaping">Empty regular expressions and escaping</h3>
-<p>Starting with ECMAScript 5, the <code>source</code> property no longer returns an empty string for empty regular expressions. Instead, the string <code>(?:)</code> is returned. In addition, line terminators (such as “\n”) are escaped now.</p>
+<p>Starting with ECMAScript 5, the <code>source</code> property no longer returns an empty string for empty regular expressions. Instead, the string <code>(?:)</code> is returned. In addition, line terminators (such as "\n”) are escaped now.</p>
 <pre><code>new RegExp().source; // &quot;(?:)&quot;
 
 new RegExp(&#39;\n&#39;).source === &#39;\n&#39;;  // true, prior to ES5

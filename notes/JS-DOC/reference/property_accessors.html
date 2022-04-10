@@ -23,7 +23,7 @@ object[&#39;property&#39;]</code></pre>
 <p>It’s typical when speaking of an object’s properties to make a distinction between properties and methods. However, the property/method distinction is little more than a convention. A method is a property that can be called (for example, if it has a reference to a <a href="../global_objects/function"><code>Function</code></a> instance as its value).</p>
 <p>There are two ways to access properties: <em>dot notation</em> and <em>bracket notation</em>.</p>
 <h3 id="dot-notation">Dot notation</h3>
-<p>In the <code>object.property</code> syntax, the <code>property</code> must be a valid JavaScript <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifier</a>. (In the ECMAScript standard, the names of properties are technically “IdentifierNames”, not “Identifiers”, so reserved words can be used but are not recommended). For example, <code>object.$1</code> is valid, while <code>object.1</code> is not.</p>
+<p>In the <code>object.property</code> syntax, the <code>property</code> must be a valid JavaScript <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifier</a>. (In the ECMAScript standard, the names of properties are technically "IdentifierNames”, not "Identifiers”, so reserved words can be used but are not recommended). For example, <code>object.$1</code> is valid, while <code>object.1</code> is not.</p>
 <pre><code>const variable = object.property_name;
 
 object.property_name = value;
@@ -66,9 +66,9 @@ console.log(object[1])</code></pre>
 <pre><code>let foo = {unique_prop: 1}, bar = {unique_prop: 2}, object = {};
 object[foo] = &#39;value&#39;
 console.log(object[bar])</code></pre>
-<p>In the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a> JavaScript engine, this string would be “<code>[object Object]</code>”.</p>
+<p>In the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey">SpiderMonkey</a> JavaScript engine, this string would be "<code>[object Object]</code>”.</p>
 <h3 id="method-binding">Method binding</h3>
-<p>A method is not bound to the object that it is a method of. Specifically, <code>this</code> is not fixed in a method. Put another way, <code>this</code> does not necessarily refer to the object containing a method. Instead, <code>this</code> is “passed” by the function call. See <a href="this#method_binding">method binding</a>.</p>
+<p>A method is not bound to the object that it is a method of. Specifically, <code>this</code> is not fixed in a method. Put another way, <code>this</code> does not necessarily refer to the object containing a method. Instead, <code>this</code> is "passed” by the function call. See <a href="this#method_binding">method binding</a>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="bracket-notation-vs.-eval">Bracket notation vs. <code>eval</code></h3>
 <p>JavaScript novices often make the mistake of using <a href="../global_objects/eval"><code>eval()</code></a> where the bracket notation can be used instead.</p>

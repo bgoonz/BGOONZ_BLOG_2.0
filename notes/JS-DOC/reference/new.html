@@ -47,9 +47,9 @@ A list of values that the <code>constructor</code> will be called with.</p>
 <li>The constructor function <code>Foo</code> is called with the specified arguments, and with <code>this</code> bound to the newly created object. <code>new Foo</code> is equivalent to <code>new Foo()</code>, i.e. if no argument list is specified, <code>Foo</code> is called without arguments.</li>
 <li>The object (not null, false, 3.1415 or other primitive types) returned by the constructor function becomes the result of the whole <code>new</code> expression. If the constructor function doesn’t explicitly return an object, the object created in step 1 is used instead (normally constructors don’t return a value, but they can choose to do so if they want to override the normal object creation process).</li>
 </ol>
-<p>You can always add a property to a previously defined object instance. For example, the statement <code>car1.color = "black"</code> adds a property <code>color</code> to <code>car1</code>, and assigns it a value of “<code>black</code>”.</p>
+<p>You can always add a property to a previously defined object instance. For example, the statement <code>car1.color = "black"</code> adds a property <code>color</code> to <code>car1</code>, and assigns it a value of "<code>black</code>”.</p>
 <p>However, this does not affect any other objects. To add the new property to all objects of the same type, you must add the property to the definition of the <code>Car</code> object type.</p>
-<p>You can add a shared property to a previously defined object type by using the <code>Function.prototype</code> property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value <code>"original color"</code> to all objects of type <code>Car</code>, and then overwrites that value with the string “<code>black</code>” only in the instance object <code>car1</code>. For more information, see <a href="../global_objects/function">prototype</a>.</p>
+<p>You can add a shared property to a previously defined object type by using the <code>Function.prototype</code> property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value <code>"original color"</code> to all objects of type <code>Car</code>, and then overwrites that value with the string "<code>black</code>” only in the instance object <code>car1</code>. For more information, see <a href="../global_objects/function">prototype</a>.</p>
 <pre><code>function Car() {}
 car1 = new Car();
 car2 = new Car();
@@ -77,7 +77,7 @@ console.log(car2.color);   // &#39;original color&#39;</code></pre>
 }</code></pre>
 <p>Now you can create an object called <code>myCar</code> as follows:</p>
 <pre><code>var myCar = new Car(&#39;Eagle&#39;, &#39;Talon TSi&#39;, 1993);</code></pre>
-<p>This statement creates <code>myCar</code> and assigns it the specified values for its properties. Then the value of <code>myCar.make</code> is the string “Eagle”, <code>myCar.year</code> is the integer 1993, and so on.</p>
+<p>This statement creates <code>myCar</code> and assigns it the specified values for its properties. Then the value of <code>myCar.make</code> is the string "Eagle”, <code>myCar.year</code> is the integer 1993, and so on.</p>
 <p>You can create any number of <code>car</code> objects by calls to <code>new</code>. For example:</p>
 <pre><code>var kensCar = new Car(&#39;Nissan&#39;, &#39;300ZX&#39;, 1992);</code></pre>
 <h3 id="object-property-that-is-itself-another-object">Object property that is itself another object</h3>

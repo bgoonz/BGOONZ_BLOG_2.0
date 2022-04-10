@@ -13,8 +13,8 @@
   </style>
 </head>
 <body>
-<h1 id="typeerror-cant-define-property-x-obj-is-not-extensible">TypeError: can’t define property “x”: “obj” is not extensible</h1>
-<p>The JavaScript exception “can’t define property”x“:”obj" is not extensible" occurs when <a href="../global_objects/object/preventextensions"><code>Object.preventExtensions()</code></a> marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.</p>
+<h1 id="typeerror-cant-define-property-x-obj-is-not-extensible">TypeError: can’t define property "x”: "obj” is not extensible</h1>
+<p>The JavaScript exception "can’t define property”x":”obj" is not extensible" occurs when <a href="../global_objects/object/preventextensions"><code>Object.preventExtensions()</code></a> marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.</p>
 <h2 id="message">Message</h2>
 <pre><code>TypeError: Cannot create property for a non-extensible object (Edge)
 TypeError: can&#39;t define property &quot;x&quot;: &quot;obj&quot; is not extensible (Firefox)
@@ -25,7 +25,7 @@ TypeError: Cannot define property: &quot;x&quot;, object is not extensible. (Chr
 <p>Usually, an object is extensible and new properties can be added to it. However, in this case <a href="../global_objects/object/preventextensions"><code>Object.preventExtensions()</code></a> marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="adding-new-properties-to-a-non-extensible-objects">Adding new properties to a non-extensible objects</h3>
-<p>In <a href="../strict_mode">strict mode</a>, attempting to add new properties to a non-extensible object throws a <code>TypeError</code>. In sloppy mode, the addition of the “x” property is silently ignored.</p>
+<p>In <a href="../strict_mode">strict mode</a>, attempting to add new properties to a non-extensible object throws a <code>TypeError</code>. In sloppy mode, the addition of the "x” property is silently ignored.</p>
 <pre><code>&#39;use strict&#39;;
 
 var obj = {};

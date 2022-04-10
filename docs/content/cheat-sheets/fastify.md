@@ -149,7 +149,7 @@ See: [Reply](https://github.com/fastify/fastify/blob/master/docs/Reply.md)
       ···
     })
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### or (same as above)
 
@@ -160,7 +160,7 @@ See: [Reply](https://github.com/fastify/fastify/blob/master/docs/Reply.md)
       handler: (req, reply) => { ··· }
     })
 
-{: data-line=“4”}
+{: data-line="4”}
 
 By defining a JSON schema, you get validation and improved performance.
 
@@ -257,7 +257,7 @@ Template rendering
         reply.view('/templates/index.ejs', { text: 'text' });
     });
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Support `ejs`, `pug`, `handlebars` and `marko`.
 

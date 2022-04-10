@@ -34,7 +34,7 @@ This parses the given date using the given format. Returns a moment object.
 
 See [datetime](./datetime) for more.
 
-{% include common/moment\_format.md title=“Formatting” %}
+{% include common/moment\_format.md title="Formatting” %}
 
 References
 ----------

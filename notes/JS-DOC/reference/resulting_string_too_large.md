@@ -1,7 +1,7 @@
 RangeError: repeat count must be less than infinity
 ===================================================
 
-The JavaScript exception “repeat count must be less than infinity” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is infinity.
+The JavaScript exception "repeat count must be less than infinity” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is infinity.
 
 Message
 -------

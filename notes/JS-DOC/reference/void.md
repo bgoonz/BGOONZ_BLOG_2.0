@@ -13,7 +13,7 @@ Description
 
 This operator allows evaluating expressions that produce a value into places where an expression that evaluates to [`undefined`](../global_objects/undefined) is desired.
 
-The `void` operator is often used merely to obtain the `undefined` primitive value, usually using “`void(0)`” (which is equivalent to “`void 0`”). In these cases, the global variable [`undefined`](../global_objects/undefined) can be used.
+The `void` operator is often used merely to obtain the `undefined` primitive value, usually using "`void(0)`” (which is equivalent to "`void 0`”). In these cases, the global variable [`undefined`](../global_objects/undefined) can be used.
 
 It should be noted that [the precedence](operator_precedence) of the `void` operator should be taken into account and that parentheses can help clarify the resolution of the expression following the `void` operator:
 

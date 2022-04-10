@@ -109,7 +109,7 @@ render () {
   const { fullscreen, autoplay } = this.props
   ···
 }</code></pre>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>Use <code>this.props</code> to access properties passed to the component.</p>
 <p>See: <a href="https://reactjs.org/docs/tutorial.html#using-props">Properties</a></p>
 <h4 id="states">States</h4>
@@ -127,7 +127,7 @@ render () {
   const { username } = this.state
   ···
 }</code></pre>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>Use states (<code>this.state</code>) to manage dynamic data.</p>
 <p>With <a href="https://babeljs.io">Babel</a> you can use <a href="https://github.com/tc39/proposal-class-fields">proposal-class-fields</a> and get rid of constructor</p>
 <pre class="jsx"><code>
@@ -165,27 +165,27 @@ class Info extends Component {
         );
     }
 }</code></pre>
-<p>{: data-line=“5,6,7,8,9,10”}</p>
+<p>{: data-line="5,6,7,8,9,10”}</p>
 <p>Nest components to separate concerns.</p>
 <p>See: <a href="https://reactjs.org/docs/components-and-props.html#composing-components">Composing Components</a></p>
 <h4 id="children">Children</h4>
 <pre class="jsx"><code>&lt;AlertBox&gt;
     &lt;h1&gt;You have pending notifications&lt;/h1&gt;
 &lt;/AlertBox&gt;</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <pre class="jsx"><code>class AlertBox extends Component {
     render() {
         return &lt;div className=&quot;alert-box&quot;&gt;{this.props.children}&lt;/div&gt;;
     }
 }</code></pre>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <p>Children are passed as the <code>children</code> property.</p>
 <h3 id="defaults">Defaults</h3>
 <h4 id="setting-default-props">Setting default props</h4>
 <pre class="jsx"><code>Hello.defaultProps = {
     color: &#39;blue&#39;
 };</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>See: <a href="https://reactjs.org/docs/react-component.html#defaultprops">defaultProps</a></p>
 <h4 id="setting-default-state">Setting default state</h4>
 <pre class="jsx"><code>class Hello extends Component {
@@ -194,7 +194,7 @@ class Info extends Component {
         this.state = { visible: true };
     }
 }</code></pre>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <p>Set the default state in the <code>constructor()</code>.</p>
 <p>And without constructor using <a href="https://babeljs.io">Babel</a> with <a href="https://github.com/tc39/proposal-class-fields">proposal-class-fields</a>.</p>
 <pre class="jsx"><code>
@@ -203,14 +203,14 @@ class Hello extends Component {
     state = { visible: true }
   }
 }</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="https://reactjs.org/docs/react-without-es6.html#setting-the-initial-state">Setting the default state</a></p>
 <h3 id="other-components">Other components</h3>
 <h4 id="functional-components">Functional components</h4>
 <pre class="jsx"><code>function MyComponent({ name }) {
     return &lt;div className=&quot;message-box&quot;&gt;Hello {name}&lt;/div&gt;;
 }</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>Functional components have no state. Also, their <code>props</code> are passed as the first parameter to a function.</p>
 <p>See: <a href="https://reactjs.org/docs/components-and-props.html#functional-and-class-components">Function and Class Components</a></p>
 <h4 id="pure-components">Pure components</h4>
@@ -328,7 +328,7 @@ function Example() {
         &lt;/div&gt;
     );
 }</code></pre>
-<p>{: data-line=“5,10”}</p>
+<p>{: data-line="5,10”}</p>
 <p>Hooks are a new addition in React 16.8.</p>
 <p>See: <a href="https://reactjs.org/docs/hooks-overview.html">Hooks at a Glance</a></p>
 <h4 id="declaring-multiple-state-variables">Declaring multiple state variables</h4>
@@ -358,7 +358,7 @@ function Example() {
         &lt;/div&gt;
     );
 }</code></pre>
-<p>{: data-line=“6,7,8,9,10”}</p>
+<p>{: data-line="6,7,8,9,10”}</p>
 <p>If you’re familiar with React class lifecycle methods, you can think of <code>useEffect</code> Hook as <code>componentDidMount</code>, <code>componentDidUpdate</code>, and <code>componentWillUnmount</code> combined.</p>
 <p>By default, React runs the effects after every render — including the first render.</p>
 <h4 id="building-your-own-hooks">Building your own hooks</h4>
@@ -384,8 +384,8 @@ function FriendStatus(props) {
     }
     return isOnline ? &#39;Online&#39; : &#39;Offline&#39;;
 }</code></pre>
-<p>{: data-line=“11,12,13,14”}</p>
-<p>Effects may also optionally specify how to “clean up” after them by returning a function.</p>
+<p>{: data-line="11,12,13,14”}</p>
+<p>Effects may also optionally specify how to "clean up” after them by returning a function.</p>
 <p><strong>Use FriendStatus</strong></p>
 <pre class="jsx"><code>function FriendStatus(props) {
     const isOnline = useFriendStatus(props.friend.id);
@@ -395,7 +395,7 @@ function FriendStatus(props) {
     }
     return isOnline ? &#39;Online&#39; : &#39;Offline&#39;;
 }</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="https://reactjs.org/docs/hooks-custom.html">Building Your Own Hooks</a></p>
 <h4 id="hooks-api-reference">Hooks API Reference</h4>
 <p>Also see: <a href="https://reactjs.org/docs/hooks-faq.html">Hooks FAQ</a></p>
@@ -483,7 +483,7 @@ function FriendStatus(props) {
         this.input.focus();
     }
 }</code></pre>
-<p>{: data-line=“4,9”}</p>
+<p>{: data-line="4,9”}</p>
 <p>Allows access to DOM nodes.</p>
 <p>See: <a href="https://reactjs.org/docs/refs-and-the-dom.html">Refs and the DOM</a></p>
 <h4 id="dom-events">DOM Events</h4>
@@ -496,7 +496,7 @@ function FriendStatus(props) {
         this.setState({ value: event.target.value });
     }
 }</code></pre>
-<p>{: data-line=“5,9”}</p>
+<p>{: data-line="5,9”}</p>
 <p>Pass functions to attributes like <code>onChange</code>.</p>
 <p>See: <a href="https://reactjs.org/docs/events.html">Events</a></p>
 <h3 id="other-features">Other features</h3>
@@ -548,7 +548,7 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
         );
     }
 }</code></pre>
-<p>{: data-line=“6,7”}</p>
+<p>{: data-line="6,7”}</p>
 <p>Always supply a <code>key</code> property.</p>
 <h4 id="conditionals">Conditionals</h4>
 <pre class="jsx"><code>&lt;Fragment&gt;{showMyComponent ? &lt;MyComponent /&gt; : &lt;OtherComponent /&gt;}&lt;/Fragment&gt;</code></pre>
@@ -568,7 +568,7 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
 <a class="sourceLine" id="cb42-5" title="5">    <span class="op">&lt;</span>li key<span class="op">=</span><span class="st">&quot;B&quot;</span><span class="op">&gt;</span>Second item&lt;/li<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb42-6" title="6">  ]</a>
 <a class="sourceLine" id="cb42-7" title="7"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4,5,6”}</p>
+<p>{: data-line="3,4,5,6”}</p>
 <p><strong>Fragments</strong></p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb43-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
 <a class="sourceLine" id="cb43-2" title="2">  <span class="co">// Fragments don&#39;t require keys!</span></a>
@@ -579,13 +579,13 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
 <a class="sourceLine" id="cb43-7" title="7">    &lt;/Fragment<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb43-8" title="8">  )</a>
 <a class="sourceLine" id="cb43-9" title="9"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4,5,6,7,8”}</p>
+<p>{: data-line="3,4,5,6,7,8”}</p>
 <p>See: <a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings">Fragments and strings</a></p>
 <h4 id="returning-strings">Returning strings</h4>
 <div class="sourceCode" id="cb44"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb44-1" title="1"><span class="at">render</span>() <span class="op">{</span></a>
 <a class="sourceLine" id="cb44-2" title="2">  <span class="cf">return</span> <span class="st">&#39;Look ma, no spans!&#39;</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb44-3" title="3"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>You can return just a string.</p>
 <p>See: <a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings">Fragments and strings</a></p>
 <h4 id="errors">Errors</h4>
@@ -595,7 +595,7 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
 <a class="sourceLine" id="cb45-4" title="4">    <span class="kw">this</span>.<span class="at">setState</span>(<span class="op">{</span> error <span class="op">}</span>)</a>
 <a class="sourceLine" id="cb45-5" title="5">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb45-6" title="6"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4,5”}</p>
+<p>{: data-line="3,4,5”}</p>
 <p>Catch errors via <code>componentDidCatch</code>. (React 16+)</p>
 <p>See: <a href="https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">Error handling in React 16</a></p>
 <h4 id="portals">Portals</h4>
@@ -605,13 +605,13 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
 <a class="sourceLine" id="cb46-4" title="4">    <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;menu&#39;</span>)</a>
 <a class="sourceLine" id="cb46-5" title="5">  )</a>
 <a class="sourceLine" id="cb46-6" title="6"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“2,3,4,5”}</p>
+<p>{: data-line="2,3,4,5”}</p>
 <p>This renders <code>this.props.children</code> into any location in the DOM.</p>
 <p>See: <a href="https://reactjs.org/docs/portals.html">Portals</a></p>
 <h4 id="hydration">Hydration</h4>
 <div class="sourceCode" id="cb47"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">const</span> el <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;app&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb47-2" title="2"><span class="va">ReactDOM</span>.<span class="at">hydrate</span>(<span class="op">&lt;</span>App /<span class="op">&gt;,</span> el)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>Use <code>ReactDOM.hydrate</code> instead of using <code>ReactDOM.render</code> if you’re rendering over the output of <a href="https://reactjs.org/docs/react-dom-server.html">ReactDOMServer</a>.</p>
 <p>See: <a href="https://reactjs.org/docs/react-dom.html#hydrate">Hydrate</a></p>
 <h3 id="property-validation">Property validation</h3>

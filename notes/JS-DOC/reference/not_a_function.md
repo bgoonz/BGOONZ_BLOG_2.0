@@ -1,7 +1,7 @@
-TypeError: “x” is not a function
+TypeError: "x” is not a function
 ================================
 
-The JavaScript exception “is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.
+The JavaScript exception "is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.
 
 Message
 -------

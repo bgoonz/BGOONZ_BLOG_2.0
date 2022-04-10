@@ -31,8 +31,8 @@ A JSON string representing the given value, or undefined.
 
 ### Exceptions
 
--   Throws a [`TypeError`](../typeerror) (“cyclic object value”) exception when a circular reference is found.
--   Throws a [`TypeError`](../typeerror) (“BigInt value can’t be serialized in JSON”) when trying to stringify a [`BigInt`](../bigint) value.
+-   Throws a [`TypeError`](../typeerror) ("cyclic object value”) exception when a circular reference is found.
+-   Throws a [`TypeError`](../typeerror) ("BigInt value can’t be serialized in JSON”) when trying to stringify a [`BigInt`](../bigint) value.
 
 Description
 -----------
@@ -41,7 +41,7 @@ Description
 
 -   If the value has a `toJSON()` method, it’s responsible to define what data will be serialized.
 -   [`Boolean`](../boolean), [`Number`](../number), and [`String`](../string) objects are converted to the corresponding primitive values during stringification, in accord with the traditional conversion semantics.
--   [`undefined`](../undefined), [`Function`](../function)s, and [`Symbol`](../symbol)s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to [`null`](../null) (when found in an array). `JSON.stringify()` can return `undefined` when passing in “pure” values like `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
+-   [`undefined`](../undefined), [`Function`](../function)s, and [`Symbol`](../symbol)s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to [`null`](../null) (when found in an array). `JSON.stringify()` can return `undefined` when passing in "pure” values like `JSON.stringify(function(){})` or `JSON.stringify(undefined)`.
 -   All [`Symbol`](../symbol)-keyed properties will be completely ignored, even when using the `replacer` function.
 -   The instances of [`Date`](../date) implement the `toJSON()` function by returning a string (the same as `date.toISOString()`). Thus, they are treated as strings.
 -   The numbers [`Infinity`](../infinity) and [`NaN`](../nan), as well as the value [`null`](../null), are all considered `null`.

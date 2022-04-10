@@ -1,7 +1,7 @@
 MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN
 ===============================================================
 
-::: {\#react-container data-component-name=“SPA”} ::: {.loading-bar} :::
+::: {\#react-container data-component-name="SPA”} ::: {.loading-bar} :::
 
 -   Skip to main content{\#skip-main}
 -   Select language{\#skip-language}
@@ -36,14 +36,14 @@ MDN Web Docs Glossary: Definitions of Web-related terms \\| MDN
 
 Open search :::
 
-::: {role=“main”} ::: {.titlebar-container} ::: {.titlebar} ::: :::
+::: {role="main”} ::: {.titlebar-container} ::: {.titlebar} ::: :::
 
 ::: {.full-width-row-container} ::: {.max-content-width-container}
 
-1.  \[See \]{.pre-text}\[MDN Web Docs Glossary: Definitions of Web-related terms\]{property=“name”}{.breadcrumb-previous}
-2.  \[Algorithm\]{property=“name” aria-current=“page”}{.crumb-current-page}
+1.  \[See \]{.pre-text}\[MDN Web Docs Glossary: Definitions of Web-related terms\]{property="name”}{.breadcrumb-previous}
+2.  \[Algorithm\]{property="name” aria-current="page”}{.crumb-current-page}
 
-::: {.dropdown-container .language-menu} English\[▼\]{.dropdown-arrow-down aria-hidden=“true”}
+::: {.dropdown-container .language-menu} English\[▼\]{.dropdown-arrow-down aria-hidden="true”}
 
 -   عربي
 -   Deutsch
@@ -70,7 +70,7 @@ Jump to section
 
 ::: {\#content .article .text-content} An algorithm is a self-contained series of instructions to perform a function.
 
-In other words, an algorithm is a means of describing a way to solve a problem so that it can be solved repeatedly, by humans or machines. Computer scientists compare the efficiency of algorithms through the concept of “Algorithmic Complexity” or “Big O” notation.
+In other words, an algorithm is a means of describing a way to solve a problem so that it can be solved repeatedly, by humans or machines. Computer scientists compare the efficiency of algorithms through the concept of "Algorithmic Complexity” or "Big O” notation.
 
 For example:
 
@@ -106,7 +106,7 @@ The newsletter is offered in English only at the moment. :::
 
 ::: {.form-group .newsletter-group-email} E-mail :::
 
-::: {\#newsletter-privacy .form-group .form-group-agree .newsletter-group-privacy aria-hidden=“false”} I’m okay with Mozilla handling my info as explained in this Privacy Policy. :::
+::: {\#newsletter-privacy .form-group .form-group-agree .newsletter-group-privacy aria-hidden="false”} I’m okay with Mozilla handling my info as explained in this Privacy Policy. :::
 
 ::: {.newsletter-group-submit} Sign up now :::
 

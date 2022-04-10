@@ -24,7 +24,7 @@ Determine if you are able to reach the last index.
 Naming
 ------
 
-We call a position in the array a **“good index”** if starting at that position, we can reach the last index. Otherwise, that index is called a **“bad index”**. The problem then reduces to whether or not index 0 is a “good index”.
+We call a position in the array a **"good index”** if starting at that position, we can reach the last index. Otherwise, that index is called a **"bad index”**. The problem then reduces to whether or not index 0 is a "good index”.
 
 Solutions
 ---------

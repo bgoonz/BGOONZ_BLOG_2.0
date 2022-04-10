@@ -1,7 +1,7 @@
-ReferenceError: reference to undefined property “x”
+ReferenceError: reference to undefined property "x”
 ===================================================
 
-The JavaScript warning “reference to undefined property” occurs when a script attempted to access an object property which doesn’t exist.
+The JavaScript warning "reference to undefined property” occurs when a script attempted to access an object property which doesn’t exist.
 
 Message
 -------

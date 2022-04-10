@@ -37,8 +37,8 @@
 </ol>
 <h2 id="usage"><a href="#usage"></a>Usage</h2>
 <p>When a user logs into Netlify CMS who doesn’t have write access to your repo, the CMS asks for permission to create a fork of your repo (or uses their existing fork, if they already have one). They are then presented with the normal CMS interface. The published content shown is from the original repo, so it stays up-to-date as changes are made.</p>
-<p>On the editorial workflow screen, the normal three columns are replaced by two columns instead — “Draft” and “Ready to Review”.</p>
-<p>When they make changes to content in the CMS, the changes are made to a branch on their fork. In the editorial workflow screen, they see only their own pending changes. Once they’re ready to submit their changes, they can move the card into the “Ready To Review” column to create a pull request. When the pull request is merged (by a repository maintainer via the GitHub UI), Netlify CMS deletes the branch and removes the card from the user’s editorial workflow screen. Open Authoring users cannot publish entries through the CMS.</p>
+<p>On the editorial workflow screen, the normal three columns are replaced by two columns instead — "Draft” and "Ready to Review”.</p>
+<p>When they make changes to content in the CMS, the changes are made to a branch on their fork. In the editorial workflow screen, they see only their own pending changes. Once they’re ready to submit their changes, they can move the card into the "Ready To Review” column to create a pull request. When the pull request is merged (by a repository maintainer via the GitHub UI), Netlify CMS deletes the branch and removes the card from the user’s editorial workflow screen. Open Authoring users cannot publish entries through the CMS.</p>
 <p>Users who <em>do</em> have write access to the original repository continue to use the CMS normally. Unpublished changes made by users via Open Authoring are not visible on the editorial workflow screen, and their unpublished changes must be merged through the GitHub UI.</p>
 <h2 id="alternative-for-external-contributors-with-git-gateway"><a href="#alternative-for-external-contributors-with-git-gateway"></a>Alternative for external contributors with Git Gateway</h2>
 <p><a href="#requirements">As noted above</a>, Open Authoring does not work with the Git Gateway backend. However, you can use Git Gateway on a site with Netlify Identity that has <a href="https://www.netlify.com/docs/identity/#adding-identity-users">open registration</a>. This lets users create accounts on your site and log into the CMS. There are a few differences, including the following:</p>
@@ -48,11 +48,11 @@
 <li>There is no distinction between users with write access to the repo and users without — all editorial workflow entries are visible from within the CMS and can be published with the CMS. (Unpublished Open Authoring entries, on the other hand, are visible only to the author in the CMS UI or publicly as GitHub PRs.)</li>
 </ul>
 <h2 id="linking-to-specific-entries-in-the-cms"><a href="#linking-to-specific-entries-in-the-cms"></a>Linking to specific entries in the CMS</h2>
-<p>Open authoring often includes some sort of “Edit this page” link on the live site. Netlify CMS supports this via the <strong>edit</strong> path:</p>
+<p>Open authoring often includes some sort of "Edit this page” link on the live site. Netlify CMS supports this via the <strong>edit</strong> path:</p>
 <pre><code>/#/edit/{collectionName}/{entryName}</code></pre>
-<p>For the entry named “general” in the “settings” file collection</p>
+<p>For the entry named "general” in the "settings” file collection</p>
 <pre><code>https://www.example.com/path-to-cms/#/edit/settings/general</code></pre>
-<p>For blog post “test.md” in the “posts” folder collection</p>
+<p>For blog post "test.md” in the "posts” folder collection</p>
 <pre><code>https://www.example.com/path-to-cms/#/edit/posts/test</code></pre>
 <ul>
 <li><strong><code>collectionName</code></strong>: the name of the collection as entered in the CMS config.</li>

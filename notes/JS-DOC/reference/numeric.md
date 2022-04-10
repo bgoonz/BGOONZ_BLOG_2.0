@@ -6,14 +6,14 @@ The `Intl.Locale.prototype.numeric` property is an accessor property that return
 Description
 -----------
 
-Like [`Intl.Locale.caseFirst`](casefirst), `numeric` represents a modification to the collation rules utilized by the locale. `numeric` is a [`Boolean`](../../boolean) value, which means that it can be either `true` or `false`. If `numeric` is set to `false`, there will be no special handling of numeric values in strings. If `numeric` is set to `true`, then the locale will take numeric characters into account when collating strings. This special numeric handling means that sequences of decimal digits will be compared as numbers. For example, the string “A-21” will be considered less than “A-123”.
+Like [`Intl.Locale.caseFirst`](casefirst), `numeric` represents a modification to the collation rules utilized by the locale. `numeric` is a [`Boolean`](../../boolean) value, which means that it can be either `true` or `false`. If `numeric` is set to `false`, there will be no special handling of numeric values in strings. If `numeric` is set to `true`, then the locale will take numeric characters into account when collating strings. This special numeric handling means that sequences of decimal digits will be compared as numbers. For example, the string "A-21” will be considered less than "A-123”.
 
 Examples
 --------
 
 ### Setting the numeric value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numeric` represents correspond to the key `kn`. `kn` is considered a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `numeric` value can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To set the `numeric` value, first add the `-u` extension key to the string. Next, add the `-kn` extension key to indicate that you are adding a value for `numeric`. Finally, add the `numeric` value to the string. If you want to set `numeric` to `true`, adding the `kn` key will suffice. To set the value to `false`, you must specify in by adding “`false`” after the `kn` key.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numeric` represents correspond to the key `kn`. `kn` is considered a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `numeric` value can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To set the `numeric` value, first add the `-u` extension key to the string. Next, add the `-kn` extension key to indicate that you are adding a value for `numeric`. Finally, add the `numeric` value to the string. If you want to set `numeric` to `true`, adding the `kn` key will suffice. To set the value to `false`, you must specify in by adding "`false`” after the `kn` key.
 
     let numericViaStr = new Intl.Locale("fr-Latn-FR-u-kn-false");
     console.log(numericStr.numeric); // Prints "false"

@@ -1,7 +1,7 @@
 SyntaxError: missing \] after element list
 ==========================================
 
-The JavaScript exception “missing \] after element list” occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“`]`”) or a comma (“`,`”) missing.
+The JavaScript exception "missing \] after element list” occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`”) or a comma ("`,`”) missing.
 
 Message
 -------
@@ -16,7 +16,7 @@ Error type
 What went wrong?
 ----------------
 
-There is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“`]`”) or a comma (“`,`”) missing.
+There is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`”) or a comma ("`,`”) missing.
 
 Examples
 --------

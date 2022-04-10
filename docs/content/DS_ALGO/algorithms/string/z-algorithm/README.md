@@ -1,7 +1,7 @@
 Z Algorithm
 ===========
 
-The Z-algorithm finds occurrences of a “word” `W` within a main “text string” `T` in linear time `O(|W| + |T|)`.
+The Z-algorithm finds occurrences of a "word” `W` within a main "text string” `T` in linear time `O(|W| + |T|)`.
 
 Given a string `S` of length `n`, the algorithm produces an array, `Z` where `Z[i]` represents the longest substring starting from `S[i]` which is also a prefix of `S`. Finding `Z` for the string obtained by concatenating the word, `W` with a nonce character, say `$` followed by the text, `T`, helps with pattern matching, for if there is some index `i` such that `Z[i]` equals the pattern length, then the pattern must be present at that point.
 

@@ -36,7 +36,7 @@ This compiles `src/app.js` into `public/app.js`. (Note: you may need to use `./n
         }
     };
 
-{: data-line=“2,3,4,8”}
+{: data-line="2,3,4,8”}
 
 This creates `app.js` and `vendor.js`.
 
@@ -68,7 +68,7 @@ Loaders
       }
     }
 
-{: data-line=“3,4,5,6,7,8”}
+{: data-line="3,4,5,6,7,8”}
 
 #### .babelrc
 
@@ -103,7 +103,7 @@ Adds support for [Babel](http://babeljs.io).
       }
     }
 
-{: data-line=“3,4,5,6,7,8,9”}
+{: data-line="3,4,5,6,7,8,9”}
 
 #### Your JavaScript
 
@@ -133,7 +133,7 @@ This allows you to use CSS inside your JavaScript. This packages your CSS inside
         { loader: 'postcss-loader' }
     ···
 
-{: data-line=“8”}
+{: data-line="8”}
 
 #### postcss.config.js
 

@@ -1,7 +1,7 @@
 SyntaxError: function statement requires a name
 ===============================================
 
-The JavaScript exception “function statement requires a name” occurs when there is a [function statement](../statements/function) in the code that requires a name.
+The JavaScript exception "function statement requires a name” occurs when there is a [function statement](../statements/function) in the code that requires a name.
 
 Message
 -------

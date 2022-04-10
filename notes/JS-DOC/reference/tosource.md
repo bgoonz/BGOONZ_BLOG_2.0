@@ -57,7 +57,7 @@ Each core JavaScript type has its own `toSource()` method. These objects are:
 -   [`RegExp.prototype.toSource()`](../regexp/tosource) — [`RegExp`](../regexp) object.
 -   [`String.prototype.toSource()`](../string/tosource) — [`String`](../string) object.
 -   [`Symbol.prototype.toSource()`](../symbol/tosource) — [`Symbol`](../symbol) object.
--   `Math.toSource()` — Returns the String “Math”.
+-   `Math.toSource()` — Returns the String "Math”.
 
 ### Limitations on cyclical objects
 

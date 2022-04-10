@@ -1,7 +1,7 @@
 SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //\# instead
 ====================================================================================
 
-The JavaScript warning “Using `//@` to indicate sourceURL pragmas is deprecated. Use `//#` instead” occurs when there is a deprecated source map syntax in a JavaScript source.
+The JavaScript warning "Using `//@` to indicate sourceURL pragmas is deprecated. Use `//#` instead” occurs when there is a deprecated source map syntax in a JavaScript source.
 
 Message
 -------
@@ -29,13 +29,13 @@ Examples
 
 ### Deprecated syntax
 
-Syntax with the “@” sign is deprecated.
+Syntax with the "@” sign is deprecated.
 
     //@ sourceMappingURL=http://example.com/path/to/your/sourcemap.map
 
 ### Standard syntax
 
-Use the “\#” sign instead.
+Use the "\#” sign instead.
 
     //# sourceMappingURL=http://example.com/path/to/your/sourcemap.map
 

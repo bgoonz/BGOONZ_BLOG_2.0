@@ -21,7 +21,7 @@ dd if=/dev/zero of=/dev/null bs=4KB &; export dd\_pid=`pgrep '^dd'`; while \[\[-
 Watch the progress of ‘dd’ with `pv` and `dialog` (apt-get install pv dialog)
 =============================================================================
 
-(pv -n /dev/zero | dd of=/dev/null bs=128M conv=notrunc,noerror) 2&gt;&1 | dialog –gauge “Running dd command (cloning), please wait…” 10 70 0
+(pv -n /dev/zero | dd of=/dev/null bs=128M conv=notrunc,noerror) 2&gt;&1 | dialog –gauge "Running dd command (cloning), please wait…” 10 70 0
 
 Watch the progress of ‘dd’ with `pv` and `zenity` (apt-get install pv zenity)
 =============================================================================
@@ -33,7 +33,7 @@ Watch the progress of ‘dd’ with the built-in `progress` functionality (intro
 
 dd if=/dev/zero of=/dev/null bs=128M status=progress
 
-DD with “graphical” return
+DD with "graphical” return
 ==========================
 
 dcfldd if=/dev/zero of=/dev/null bs=500K

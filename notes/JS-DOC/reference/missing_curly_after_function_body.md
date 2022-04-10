@@ -1,7 +1,7 @@
 SyntaxError: missing } after function body
 ==========================================
 
-The JavaScript exception “missing } after function body” occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.
+The JavaScript exception "missing } after function body” occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.
 
 Message
 -------

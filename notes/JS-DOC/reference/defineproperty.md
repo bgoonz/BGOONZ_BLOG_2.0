@@ -152,13 +152,13 @@ When the property specified doesn’t exist in the object, `Object.definePropert
 
 ### Modifying a property
 
-When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be “non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
+When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be "non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
 
 A [`TypeError`](../typeerror) is thrown when attempts are made to change non-configurable property attributes (except `value` and `writable`, if permitted) unless the current and new values are the same.
 
 #### Writable attribute
 
-When the `writable` property attribute is set to `false`, the property is said to be “non-writable”. It cannot be reassigned.
+When the `writable` property attribute is set to `false`, the property is said to be "non-writable”. It cannot be reassigned.
 
     var o = {}; // Creates a new object
 
@@ -467,7 +467,7 @@ Internet Explorer 8 implemented a `Object.defineProperty()` method that could [o
 
 ### Chrome 37 (and below) specific notes
 
-Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?id=3448) where an attempt to define a “prototype” property, on a function, with `writable: false` doesn’t work as expected.
+Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?id=3448) where an attempt to define a "prototype” property, on a function, with `writable: false` doesn’t work as expected.
 
 See also
 --------

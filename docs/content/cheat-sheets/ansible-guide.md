@@ -4,7 +4,7 @@ subtitle
 
 ------------------------------------------------------------------------
 
-title: “Ansible quickstart” category: Ansible
+title: "Ansible quickstart” category: Ansible
 
 description: | A quick guide to getting started with your first Ansible playbook.
 

@@ -19,7 +19,7 @@
 <pre><code>void expression</code></pre>
 <h2 id="description">Description</h2>
 <p>This operator allows evaluating expressions that produce a value into places where an expression that evaluates to <a href="../global_objects/undefined"><code>undefined</code></a> is desired.</p>
-<p>The <code>void</code> operator is often used merely to obtain the <code>undefined</code> primitive value, usually using “<code>void(0)</code>” (which is equivalent to “<code>void 0</code>”). In these cases, the global variable <a href="../global_objects/undefined"><code>undefined</code></a> can be used.</p>
+<p>The <code>void</code> operator is often used merely to obtain the <code>undefined</code> primitive value, usually using "<code>void(0)</code>” (which is equivalent to "<code>void 0</code>”). In these cases, the global variable <a href="../global_objects/undefined"><code>undefined</code></a> can be used.</p>
 <p>It should be noted that <a href="operator_precedence">the precedence</a> of the <code>void</code> operator should be taken into account and that parentheses can help clarify the resolution of the expression following the <code>void</code> operator:</p>
 <pre><code>void 2 == &#39;2&#39;;   // (void 2) == &#39;2&#39;, returns false
 void (2 == &#39;2&#39;); // void (2 == &#39;2&#39;), returns undefined</code></pre>

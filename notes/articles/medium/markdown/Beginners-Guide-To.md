@@ -293,7 +293,7 @@ Python has two primitive loop commands:
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
     A nested loop is a loop inside a loop.</span>
--   <span id="acbb">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span>
+-   <span id="acbb">The "inner loop” will be executed one time for each iteration of the "outer loop”:</span>
 
 <!-- -->
 
@@ -336,7 +336,7 @@ Lets create a <a href="https://repl.it/languages/python3" class="markup--anchor 
 
     print('Hello world!')
 
-> *Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+> *Brian Kernighan actually wrote the first "Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 

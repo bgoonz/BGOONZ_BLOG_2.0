@@ -19,7 +19,7 @@ A string representing a [`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HT
 Description
 -----------
 
-The `fixed()` method embeds a string in a `<tt>` element: “`<tt>str</tt>`”.
+The `fixed()` method embeds a string in a `<tt>` element: "`<tt>str</tt>`”.
 
 Examples
 --------

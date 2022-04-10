@@ -1,7 +1,7 @@
 SyntaxError: illegal character
 ==============================
 
-The JavaScript exception “illegal character” occurs when there is an invalid or unexpected token that doesn’t belong at this position in the code.
+The JavaScript exception "illegal character” occurs when there is an invalid or unexpected token that doesn’t belong at this position in the code.
 
 Message
 -------

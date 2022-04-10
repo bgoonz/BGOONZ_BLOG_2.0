@@ -61,7 +61,7 @@ how are you?</code></pre>
 <p><em>Depending on how you structure your code, sometimes you’ll be able to omit semicolons at the end of lines. For now, you’ll want to include them just as we do.</em></p>
 </blockquote>
 <h3 id="syntax">Syntax</h3>
-<p>We refer to the exact arrangement of the symbols, characters, and keywords as <strong>syntax</strong>. These details matter — your computer will only be able to “understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!</p>
+<p>We refer to the exact arrangement of the symbols, characters, and keywords as <strong>syntax</strong>. These details matter — your computer will only be able to "understand” proper JavaScript syntax. A programming language is similar to a spoken language. A spoken language like English has grammar rules that we should follow in order to be understood by fellow speakers. In the same way, a programming language like JavaScript has syntax rules that we ought to follow!</p>
 <p>As you write your first lines of code in this new language, you may make many syntax errors. Don’t get frustrated! This is normal — all new programmers go through this phase. Every time we recognize an error in our code, we have an opportunity to reinforce your understanding of correct syntax. Adopt a growth mindset and learn from your mistakes.</p>
 <p>Additionally, one of the best things about programming is that we can get such immediate feedback from our creations. There is no penalty for making a mistake when programming. Write some code, run the code, read the errors, fix the errors, rinse and repeat!</p>
 <h3 id="code-comments">Code comments</h3>
@@ -102,21 +102,21 @@ console.log(7 % 10) // =&gt; 7;</span></li>
 <ul>
 <li><span id="e1b0">can be wrapped by either <strong>single</strong> or <strong>double</strong> quotation marks, <em>best to choose one and stick with it for consistency</em>.</span></li>
 <li><span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.<br />
-“That’s a great string”; (valid) ‘Shakespeare wrote, “To be or not to be”’; (valid) ‘That’s a bad string’; (invalid)</span></li>
+"That’s a great string”; (valid) ‘Shakespeare wrote, "To be or not to be”’; (valid) ‘That’s a bad string’; (invalid)</span></li>
 <li><span id="b2cb">Alt. way to add other quotes within strings is to use template literals.<br />
 `This is a temp’l’ate literal ${function}` // use ${} to invoke functions within.</span></li>
 <li><span id="7b1a"><strong>.length</strong> : property that can be appended to data to return the length.</span></li>
 <li><span id="f633">empty strings have a length of zero.</span></li>
 <li><span id="0a07"><strong>indices</strong> : indexes of data that begin at 0, can call upon index by using the bracket notation [ ].<br />
-console.log(“bootcamp”[0]); // =&gt; “b”<br />
-console.log(“bootcamp”[10]); // =&gt; “undefined”<br />
-console.log(“boots”[1 * 2]); // =&gt; “o”<br />
-console.log(“boots”[“boot”.length-1]); // =&gt; “t”</span></li>
+console.log("bootcamp”[0]); // =&gt; "b”<br />
+console.log("bootcamp”[10]); // =&gt; "undefined”<br />
+console.log("boots”[1 * 2]); // =&gt; "o”<br />
+console.log("boots”["boot”.length-1]); // =&gt; "t”</span></li>
 <li><span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span></li>
 <li><span id="e2f5">The index of the last character of a string is always one less than it’s length.</span></li>
 <li><span id="2271"><strong>indexOf()</strong> : method used to find the first index of a given character within a string.<br />
-console.log(“bagel”.indexOf(“b”)); // =&gt; 0<br />
-console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span></li>
+console.log("bagel”.indexOf("b”)); // =&gt; 0<br />
+console.log("bagel”.indexOf("z”)); // =&gt; -1</span></li>
 <li><span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span></li>
 <li><span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span></li>
 <li><span id="a275"><strong>concatenate</strong> : word to describe joining strings together into a single string.</span></li>
@@ -129,8 +129,8 @@ console.log(“bagel”.indexOf(“z”)); // =&gt; -1</span></li>
 console.log(!true); // =&gt; false<br />
 console.log(!!false); // =&gt; false</span></li>
 <li><span id="e412"><strong>Logical Order of Operations</strong> : JS will evaluate !, then &amp;&amp;, then ||.</span></li>
-<li><span id="99ad"><strong>Short-Circuit Evaluation</strong> : Because JS evalutes from left to right, expressions can “short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.<br />
-console.log(true || !false) // =&gt; stops after it sees “true ||”</span></li>
+<li><span id="99ad"><strong>Short-Circuit Evaluation</strong> : Because JS evalutes from left to right, expressions can "short-circuit”. For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.<br />
+console.log(true || !false) // =&gt; stops after it sees "true ||”</span></li>
 </ul>
 <p><strong>Comparison Operators</strong></p>
 <p>All comparison operators will result in a boolean output.</p>
@@ -143,7 +143,7 @@ console.log(true || !false) // =&gt; stops after it sees “true ||”</span></l
 <li><span id="0c13"><strong>===</strong> (equal to)</span></li>
 <li><span id="b73a"><strong>!==</strong> (not equal to)</span></li>
 </ul>
-<p>Fun Fact: “a” &lt; “b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so “a” is less than “b” because it appears earlier!</p>
+<p>Fun Fact: "a” &lt; "b” is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so "a” is less than "b” because it appears earlier!</p>
 <p>If there is ever a standstill comparison of two string lexicographically (i.e. app vs apple) the comparison will deem the shorter string lesser.</p>
 <p><strong>Difference between == and ===</strong></p>
 <h4 id="section">===</h4>
@@ -154,8 +154,8 @@ console.log(true || !false) // =&gt; stops after it sees “true ||”</span></l
 <p>Variables are used to store information to be referenced and manipulated in a program.</p>
 <ul>
 <li><span id="c73d">We initialize a variable by using the <strong>let</strong> keyword and a <strong>=</strong> single equals sign (assignment operator).<br />
-let bootcamp = “App Academy”;<br />
-console.log(bootcamp); // “App Academy”</span></li>
+let bootcamp = "App Academy”;<br />
+console.log(bootcamp); // "App Academy”</span></li>
 <li><span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span></li>
 <li><span id="ad76">If you do not declare a value for a variable, undefined is automatically set.<br />
 let bootcamp;<br />
@@ -226,14 +226,14 @@ num *= 7; // same as num = num * 7</p>
 <h3 id="objects">Objects</h3>
 <p>Objects are certain kinds of variables. They are variables that can have their own values and methods. The latter are actions that you can perform on objects.</p>
 <p>var person = {</p>
-<p>firstName:“John”,</p>
-<p>lastName:“Doe”,</p>
+<p>firstName:"John”,</p>
+<p>lastName:"Doe”,</p>
 <p>age:20,</p>
-<p>nationality:“German”</p>
+<p>nationality:"German”</p>
 <p>};</p>
 <h3 id="the-next-level-arrays">The Next Level: Arrays</h3>
 <p>Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:</p>
-<p>var fruit = [“Banana”, “Apple”, “Pear”];</p>
+<p>var fruit = ["Banana”, "Apple”, "Pear”];</p>
 <p>Now you have an array called <code>fruit</code> which contains three items that you can use for future operations.</p>
 <h3 id="array-methods">Array Methods</h3>
 <p>Once you have created arrays, there are a few things you can do with them:</p>
@@ -346,7 +346,7 @@ num *= 7; // same as num = num * 7</p>
 <p>A similar concept to <code>if else</code> is the <code>switch</code> statement. However, using the switch you select one of several code blocks to execute.</p>
 <h3 id="strings">Strings</h3>
 <p>Strings are what JavaScript calls to text that does not perform a function but can appear on the screen.</p>
-<p>var person = “John Doe”;</p>
+<p>var person = "John Doe”;</p>
 <p>In this case, <code>John Doe</code> is the string.</p>
 <h3 id="escape-characters">Escape Characters</h3>
 <p>In JavaScript, strings are marked with single or double-quotes. If you want to use quotation marks in a string, you need to use special characters:</p>
@@ -444,7 +444,7 @@ num *= 7; // same as num = num * 7</p>
 <ul>
 <li><span id="3554"><code>MAX_VALUE</code> — The maximum numeric value representable in JavaScript</span></li>
 <li><span id="c55d"><code>MIN_VALUE</code> — Smallest positive numeric value representable in JavaScript</span></li>
-<li><span id="49e0"><code>NaN</code> — The “Not-a-Number” value</span></li>
+<li><span id="49e0"><code>NaN</code> — The "Not-a-Number” value</span></li>
 <li><span id="3024"><code>NEGATIVE_INFINITY</code> — The negative Infinity value</span></li>
 <li><span id="0bf4"><code>POSITIVE_INFINITY</code> — Positive Infinity value</span></li>
 </ul>
@@ -765,7 +765,7 @@ num *= 7; // same as num = num * 7</p>
 <p>The error property can return six different values as its name:</p>
 <ul>
 <li><span id="b389"><code>EvalError</code> — An error has occurred in the <code>eval()</code> function</span></li>
-<li><span id="570c"><code>RangeError</code> — A number is “out of range”</span></li>
+<li><span id="570c"><code>RangeError</code> — A number is "out of range”</span></li>
 <li><span id="2352"><code>ReferenceError</code> — An illegal reference has occurred</span></li>
 <li><span id="5019"><code>SyntaxError</code> — A syntax error has occurred</span></li>
 <li><span id="0527"><code>TypeError</code> — A type error has occurred</span></li>
@@ -782,15 +782,15 @@ num *= 7; // same as num = num * 7</p>
 <p>hex</p>
 <p><code>let n = 123456.789;</code></p>
 <p><code>n.toFixed(0)</code></p>
-<p>“123457”</p>
+<p>"123457”</p>
 <p><code>n.toFixed(5)</code></p>
-<p>“123456.78900”</p>
+<p>"123456.78900”</p>
 <p><code>n.toExponential(3)</code></p>
-<p>“1.235e+5”</p>
+<p>"1.235e+5”</p>
 <p><code>n.toPrecision(7)</code></p>
-<p>“123456.8”</p>
+<p>"123456.8”</p>
 <p><code>n.toPrecision(10)</code></p>
-<p>“123456.7890”</p>
+<p>"123456.7890”</p>
 <p><code>parseInt("3 blind mice")</code></p>
 <p>3</p>
 <p><code>parseFloat(" 3.14 meters")</code></p>
@@ -818,15 +818,15 @@ num *= 7; // same as num = num * 7</p>
 <p>hex</p>
 <p><code>let n = 123456.789;</code></p>
 <p><code>n.toFixed(0)</code></p>
-<p>“123457”</p>
+<p>"123457”</p>
 <p><code>n.toFixed(5)</code></p>
-<p>“123456.78900”</p>
+<p>"123456.78900”</p>
 <p><code>n.toExponential(3)</code></p>
-<p>“1.235e+5”</p>
+<p>"1.235e+5”</p>
 <p><code>n.toPrecision(7)</code></p>
-<p>“123456.8”</p>
+<p>"123456.8”</p>
 <p><code>n.toPrecision(10)</code></p>
-<p>“123456.7890”</p>
+<p>"123456.7890”</p>
 <p><code>parseInt("3 blind mice")</code></p>
 <p>3</p>
 <p><code>parseFloat(" 3.14 meters")</code></p>
@@ -842,9 +842,9 @@ num *= 7; // same as num = num * 7</p>
 <p><code>parseInt("0.1")</code></p>
 <p>0</p>
 <p><code>parseInt(".1")</code></p>
-<p>NaN: integers can’t start with “.”</p>
+<p>NaN: integers can’t start with ".”</p>
 <p><code>parseFloat("$72.47")</code></p>
-<p>NaN: numbers can’t start with “$”</p>
+<p>NaN: numbers can’t start with "$”</p>
 <p>Supply Radix</p>
 <p><code>parseInt("11", 2)</code></p>
 <p>3</p>
@@ -891,7 +891,7 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;
 <p><code>let [x, ...y] = [1,2,3,4];</code></p>
 <p>y == [2,3,4]</p>
 <p><code>let [first, ...rest] = "Hello";</code></p>
-<p>first == “H”; rest ==[“e”,“l”,“l”,“o”]</p>
+<p>first == "H”; rest ==["e”,"l”,"l”,"o”]</p>
 <p>Destructuring assignment can also be performed when the righthand side is an object value.</p>
 <p><code>let transparent = {r: 0.0, g: 0.0, b: 0.0, a: 1.0};</code></p>
 <p><code>let {r, g, b} = transparent;</code></p>
@@ -910,14 +910,14 @@ log?.(x); // Call the function if there is one
 return x * x;
 
 }</code></pre>
-<p>Note that expression <code>x++</code> is not always the same as <code>x = x + 1</code>.The <code>++</code> operator never performs string concatenation: it always converts its operand to a number and increments it. If x is the string “1”, <code>++x</code> is the number 2, but<code>x + 1</code> is the string “11”.</p>
+<p>Note that expression <code>x++</code> is not always the same as <code>x = x + 1</code>.The <code>++</code> operator never performs string concatenation: it always converts its operand to a number and increments it. If x is the string "1”, <code>++x</code> is the number 2, but<code>x + 1</code> is the string "11”.</p>
 <p>JavaScript objects are compared by reference, not by value. An object is equal to itself, but not to any other object. If two distinct objects have the same number of properties, with the same names and values, they are still not equal. Similarly, two arrays that have the same elements in the same order are not equal to each other.</p>
 <p><code>NaN</code>value is never equal to any other value, including itself! To check whether a value <code>x</code> is <code>NaN</code>, use <code>x !==</code>, or the global <code>isNaN()</code> function.</p>
 <p>If both values refer to the same object, array, or function, they are equal. If they refer to different objects, they are not equal, even if both objects have identical properties.</p>
 <h3 id="evaluating-expressions">Evaluating Expressions</h3>
 <p>JavaScript has the ability to interpret strings of JavaScript source code, evaluating them to produce a value.</p>
 <p><code>eval("3+2")</code></p>
-<p>Because of security issues, some web servers use the HTTP “Content-Security-Policy” header to disable<code>eval()</code> for an entire website.</p>
+<p>Because of security issues, some web servers use the HTTP "Content-Security-Policy” header to disable<code>eval()</code> for an entire website.</p>
 <h3 id="first-defined">First-Defined (??)</h3>
 <p>The first-defined operator <code>??</code> evaluates to its first defined operand: if its left operand is not <code>null</code> and not <code>undefined</code>, it returns that value.</p>
 <p><code>a ?? b</code> is equivalent to <code>(a !== null &amp;&amp; a !== undefined) ? a : b</code></p>
@@ -925,7 +925,7 @@ return x * x;
 <p><code>let max = maxWidth || preferences.maxWidth || 500;</code></p>
 <p><code>let max = maxWidth ?? preferences.maxWidth ?? 500;</code></p>
 <h3 id="delete-operator">delete Operator</h3>
-<p>Deleting an array element leaves a “hole” in the array and does not change the array’s length. The resulting array is sparse.</p>
+<p>Deleting an array element leaves a "hole” in the array and does not change the array’s length. The resulting array is sparse.</p>
 <h3 id="void-operator">void Operator</h3>
 <p>Using the <code>void</code> operator makes sense only if the operand has side effects.</p>
 <p><code>let counter = 0;</code></p>
@@ -1030,7 +1030,7 @@ email.value = &quot;&quot;;
 <p>· A function is invoked with <code>call()</code>or <code>apply()</code> , the <code>this</code>value is exactly the value passed as the first argument to <code>call()</code> or <code>apply()</code>. (In non-strict mode, <code>null</code>and <code>undefined</code>values are replaced with the global object and non-object values are converted to objects.)</p>
 <p>· In strict mode, assignments to non-writable properties and attempts to create new properties on non-extensible objects throw a <code>TypeError</code>. (In non-strict mode, these attempts fail silently.)</p>
 <p>· In strict mode, code passed to <code>eval()</code>cannot declare variables or define functions in the caller’s scope as it can in non-strict mode. Instead, variable and function definitions live in a new scope created for the <code>eval()</code>. This scope is discarded when the <code>eval()</code> returns.</p>
-<p>· In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has “magical” behavior in which elements of the array and named function parameters both refer to the same value.</p>
+<p>· In strict mode, the Arguments object in a function holds a static copy of the values passed to the function. In non-strict mode, the Arguments object has "magical” behavior in which elements of the array and named function parameters both refer to the same value.</p>
 <p>· In strict mode, a <code>SyntaxError</code>is thrown if the <code>delete</code>operator is followed by an unqualified identifier such as a variable, function, or function parameter. (In non-strict mode, such a <code>delete</code>expression does nothing and evaluates to false.)</p>
 <p>· In strict mode, an attempt to delete a non-configurable property throws a <code>TypeError</code>. (In non-strict mode, the attempt fails and the delete expression evaluates to false.)</p>
 <p>· In strict mode, it is a syntax error for an object literal to define two or more properties by the same name. (In non-strict mode, no error occurs.)</p>
@@ -1183,13 +1183,13 @@ target[key] = source[key];
 <p>The functions <code>JSON.stringify()</code> and<code>JSON.parse()</code> serialize and restore JavaScript objects.</p>
 <p><code>let o = {x: 1, y: {z: [false, null, ""]}};</code></p>
 <p><code>let s = JSON.stringify(o);</code></p>
-<p>s == ‘{“x”:1,“y”:{“z”:[false,null,""]}}’</p>
+<p>s == ‘{"x”:1,"y”:{"z”:[false,null,""]}}’</p>
 <p><code>let p = JSON.parse(s);</code></p>
 <p>p == {x: 1, y: {z: [false,null, ""]}}</p>
 <h3 id="object-methods">Object methods</h3>
 <p><code>toString(), valueOf(), loLocaleString(), toJSON()</code></p>
 <p><code>let s = { x: 1, y: 1 }.toString();</code></p>
-<p>s == “[object Object]”</p>
+<p>s == "[object Object]”</p>
 <h3 id="extended-object-literal-syntax">Extended Object Literal Syntax</h3>
 <h3 id="shorthand-properties">Shorthand Properties</h3>
 <pre><code>let x = 1, y = 2;
@@ -1233,7 +1233,7 @@ o[extension].x = 0;</code></pre>
 <p>Two Symbols created with the same string argument are still different from one another.</p>
 <p>The point of Symbols is not security, but to define a safe extension mechanism for JavaScript objects. If you get an object from third-party code that you do not control and need to add some of your own properties to that object but want to be sure that your properties will not conflict with any properties that may already exist on the object, you can safely use Symbols as your property names.</p>
 <h3 id="spread-operator">Spread Operator</h3>
-<p>You can copy the properties of an existing object into a new object using the “spread operator” … inside an object literal:</p>
+<p>You can copy the properties of an existing object into a new object using the "spread operator” … inside an object literal:</p>
 <p><code>let position = { x: 0, y: 0 };</code><br />
 <code>let dimensions = { width: 100, height: 75 };</code><br />
 <code>let rect = { ...position, ...dimensions };</code><br />
@@ -1311,11 +1311,11 @@ set accessorProp(value) { this.dataProp = value; }
 <p><code>let original = [1,2,3];</code><br />
 <code>let copy = [...original];</code></p>
 <p><code>let digits = [..."0123456789ABCDEF"];</code></p>
-<p>[“0”,“1”,“2”,“3”,“4”,“5”,“6”,“7”,“8”,“9”,“A”,“B”,“C”,“D”,“E”,“F”]</p>
+<p>["0”,"1”,"2”,"3”,"4”,"5”,"6”,"7”,"8”,"9”,"A”,"B”,"C”,"D”,"E”,"F”]</p>
 <p><code>let letters = [..."hello world"];</code></p>
-<p>[“h”,“e”,“l”,“l”“o”,"“,”w“,”o"“r”,“l”,“d”]</p>
+<p>["h”,"e”,"l”,"l”"o”,"",”w",”o""r”,"l”,"d”]</p>
 <p><code>[...new Set(letters)]</code></p>
-<p>[“h”,“e”,“l”,“o”,"“,”w“,”r“,”d"]</p>
+<p>["h”,"e”,"l”,"o”,"",”w",”r",”d"]</p>
 <h3 id="array.of">Array.of()</h3>
 <p>When the <code>Array()</code> constructor function is invoked with one numeric argument, it uses that argument as an array length. But when invoked with more than one numeric argument, it treats those arguments as elements for the array to be created. This means that the <code>Array()</code> constructor cannot be used to create an array with a single numeric element.</p>
 <p><code>Array.of()</code></p>
@@ -1332,16 +1332,16 @@ set accessorProp(value) { this.dataProp = value; }
 <p><code>Array.from()</code> also accepts an optional second argument. If you pass a function as the second argument, then as the new array is being built, each element from the source object will be passed to the function you specify, and the return value of the function will be stored in the array instead of the original value.</p>
 <h3 id="reading-and-writing-array-elements">Reading and Writing Array Elements</h3>
 <p>What is special about arrays is that when you use property names that are non-negative integers , the array automatically maintains the value of the <code>length</code> property for you.</p>
-<p>JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string “1”, then uses that string as a property name.</p>
+<p>JavaScript converts the numeric array index you specify to a string — the index 1 becomes the string "1”, then uses that string as a property name.</p>
 <p>It is helpful to clearly distinguish an array index from an object property name. All indexes are property names, but only property names that are integers between 0 and 231 are indexes. All arrays are objects, and you can create properties of any name on them. If you use properties that are array indexes, however, arrays have the special behavior of updating their <code>length</code> property as needed.</p>
 <p>Note that you can index an array using numbers that are negative or that are not integers. When you do this, the number is converted to a string, and that string is used as the property name. Since the name is not a non-negative integer, it is treated as a regular object property, not an array index.</p>
 <p><code>a[-1.23] = true;</code></p>
-<p>This creates a property named “-1.23”</p>
+<p>This creates a property named "-1.23”</p>
 <p><code>a["1000"] = 0;</code></p>
 <p>This the 1001st element of the array</p>
 <p><code>a[1.000] = 1;</code></p>
 <p>Array index 1. Same as a[1] = 1;</p>
-<p>The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an “out of bounds” error. When you try to query a nonexistent property of any object, you don’t get an error; you simply get <code>undefined</code>.</p>
+<p>The fact that array indexes are simply a special type of object property name means that JavaScript arrays have no notion of an "out of bounds” error. When you try to query a nonexistent property of any object, you don’t get an error; you simply get <code>undefined</code>.</p>
 <h3 id="sparse-arrays">Sparse Arrays</h3>
 <p>Sparse arrays can be created with the <code>Array()</code> constructor or simply by assigning to an array index larger than the current array length.</p>
 <p><code>a[1000] = 0;</code></p>
@@ -1506,7 +1506,7 @@ a[i] = v + 1;
 <p>[1, 2, 3, 4]</p>
 <p><code>let phrases = ["hello world", "the definitive guide"];</code><br />
 <code>let words = phrases.flatMap(phrase =&gt; phrase.split(" "));</code></p>
-<p>[“hello”, “world”, “the”, “definitive”, “guide”];</p>
+<p>["hello”, "world”, "the”, "definitive”, "guide”];</p>
 <p>Calling <code>a.flatMap(f)</code> is the same as (but more efficient than) <code>a.map(f).flat()</code>:</p>
 <h3 id="adding-arrays-with-concat">Adding arrays with concat()</h3>
 <p><code>let a = [1,2,3];</code></p>
@@ -1548,8 +1548,8 @@ a[i] = v + 1;
 <p>[5,6,7,8]; <code>a</code> is now [1,2,3,4]</p>
 <p>[2,3]; a is now [1,4]</p>
 <p>[4]; a is now [1]</p>
-<p>[]; a is now [1,2,“a”,“b”,3,4,5]</p>
-<p>[“a”,“b”]; a is now [1,2,[1,2],3,3,4,5]</p>
+<p>[]; a is now [1,2,"a”,"b”,3,4,5]</p>
+<p>["a”,"b”]; a is now [1,2,[1,2],3,3,4,5]</p>
 <p>FILL()</p>
 <p><code>let a = new Array(5);</code></p>
 <p><code>a.fill(0)</code></p>
@@ -1618,19 +1618,19 @@ return 0;
 <p><code>a.join()</code></p>
 <p><code>a.join(" ")</code></p>
 <p><code>a.join("")</code></p>
-<p>“1,2,3”</p>
-<p>“1 2 3”</p>
-<p>“123”</p>
+<p>"1,2,3”</p>
+<p>"1 2 3”</p>
+<p>"123”</p>
 <p><code>let b = new Array(10);</code></p>
 <p><code>b.join("-")</code></p>
-<p>“ — — — — -”</p>
+<p>" — — — — -”</p>
 <p>Arrays, like all JavaScript objects, have a <code>toString()</code> method. For an array, this method works just like the <code>join()</code> method with no arguments:</p>
 <p><code>[1,2,3].toString()</code></p>
-<p>“1,2,3”</p>
+<p>"1,2,3”</p>
 <p><code>["a", "b", "c"].toString()</code></p>
-<p>“a,b,c”</p>
+<p>"a,b,c”</p>
 <p><code>[1, [2,"c"]].toString()</code></p>
-<p>“1,2,c”</p>
+<p>"1,2,c”</p>
 <h3 id="static-array-functions">Static Array Functions</h3>
 <p><code>Array.isArray([])</code></p>
 <p>true</p>
@@ -1665,13 +1665,13 @@ total += a[j];
 <p><code>let a = {"0": "a", "1": "b", "2": "c", length: 3};</code></p>
 <p>// An array-like object</p>
 <p><code>Array.prototype.join.call(a, "+")</code></p>
-<p>“a+b+c”</p>
+<p>"a+b+c”</p>
 <p><code>Array.prototype.join.call("JavaScript", " ")</code></p>
-<p>“J a v a S c r i p t”</p>
+<p>"J a v a S c r i p t”</p>
 <p><code>Array.prototype.map.call(a, x =&gt; x.toUpperCase())</code></p>
-<p>[“A”,“B”,“C”]</p>
+<p>["A”,"B”,"C”]</p>
 <p><code>Array.from(a)</code></p>
-<p>[“a”,“b”,“c”]</p>
+<p>["a”,"b”,"c”]</p>
 <h3 id="strings-as-arrays">Strings as Arrays</h3>
 <p><code>let s = "test";</code></p>
 <p><code>s.charAt(0)</code></p>
@@ -1690,7 +1690,7 @@ console.log(`${p}: ${o[p]}\n`);
 }
 
 }</code></pre>
-<p>Function declaration statements are “hoisted” to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.</p>
+<p>Function declaration statements are "hoisted” to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.</p>
 <h3 id="function-expressions">Function Expressions</h3>
 <p><code>const square = function(x) { return x*x; };</code></p>
 <pre><code>const f = function fact(x) {
@@ -1924,7 +1924,7 @@ return total;
 <p><code>let a = [x =&gt; x*x, 20];</code></p>
 <p><code>a[0](a[1])</code></p>
 <p>400</p>
-<p><code>a[0]</code> accesses first element of the array, which is “<code>x =&gt; x*x</code>”, <code>(a[1])</code> passes parameter, which is 20.</p>
+<p><code>a[0]</code> accesses first element of the array, which is "<code>x =&gt; x*x</code>”, <code>(a[1])</code> passes parameter, which is 20.</p>
 <h3 id="examples-of-using-functions-as-data">Examples of using functions as data</h3>
 <pre><code>function add(x,y) { return x + y; }
 
@@ -1968,11 +1968,11 @@ else throw &quot;unknown operator&quot;;
 
 }</code></pre>
 <p><code>operate2("add", "hello", operate2("add", " ", "world"))</code></p>
-<p>// “hello world”</p>
+<p>// "hello world”</p>
 <p><code>operate2("pow", 10, 2)</code></p>
 <p>100</p>
 <h3 id="defining-your-own-function-properties">Defining Your Own Function Properties</h3>
-<p>When a function needs a “static” variable whose value persists across invocations, it is often convenient to use a property of the function itself.</p>
+<p>When a function needs a "static” variable whose value persists across invocations, it is often convenient to use a property of the function itself.</p>
 <p>For example, suppose you want to write a function that returns a unique integer whenever it is invoked. The function must never return the same value twice. In order to manage this, the function needs to keep track of the values it has already returned, and this information must persist across function invocations.</p>
 <pre><code>uniqueInteger.counter = 0;
 
@@ -2054,7 +2054,7 @@ return f();
 
 }</code></pre>
 <p><code>checkscope()</code></p>
-<p>“local scope”</p>
+<p>"local scope”</p>
 <pre><code>let scope = &quot;global scope&quot;;
 
 function checkscope() {
@@ -2067,7 +2067,7 @@ return f;
 
 }</code></pre>
 <p><code>let s = checkscope()();</code></p>
-<p>“local scope”</p>
+<p>"local scope”</p>
 <p>Closures capture the local variables of a single function invocation and can use those variables as private state.</p>
 <pre><code>let uniqueInteger = (function() {
 
@@ -2161,7 +2161,7 @@ value = v;
 <p><code>addPrivateProperty(o, "Name", x =&gt; typeof x === "string");</code></p>
 <p><code>o.setName("Frank");</code></p>
 <p><code>o.getName()</code></p>
-<p>“Frank”</p>
+<p>"Frank”</p>
 <p><code>o.setName(0);</code></p>
 <p>TypeError: try to set a value ofthe wrong type</p>
 <h3 id="function-properties-methods-and-constructor">Function Properties, Methods, and Constructor</h3>
@@ -2304,7 +2304,7 @@ toString() { return &quot;(&quot; + this.from + &quot;...&quot; + this.to +&quot
 <p><code>r.includes(2)</code></p>
 <p>true</p>
 <p><code>r.toString()</code></p>
-<p>“(1…3)”</p>
+<p>"(1…3)”</p>
 <p><code>[...r]</code></p>
 <p>[1, 2, 3]</p>
 <h3 id="classes-and-constructors">Classes and Constructors</h3>
@@ -2340,7 +2340,7 @@ toString: function() { return &quot;(&quot; + this.from + &quot;...&quot; + this
 <p><code>r.includes(2)</code></p>
 <p>true</p>
 <p><code>r.toString()</code></p>
-<p>“(1…3)”</p>
+<p>"(1…3)”</p>
 <p><code>[...r]</code></p>
 <p>[1, 2, 3]</p>
 <p>Because the <code>Range()</code>constructor is invoked with <code>new</code>, it does not have to call <code>Object.create()</code> or take any action to create a new object.</p>
@@ -2788,7 +2788,7 @@ let p = new Map(Object.entries(o));</code></pre>
 <p>Iterate over map:</p>
 <p><code>let m = new Map([["x", 1], ["y", 2]]);</code></p>
 <p><code>[...m]</code></p>
-<p>[[“x”, 1], [“y”, 2]]</p>
+<p>[["x”, 1], ["y”, 2]]</p>
 <p><code>for(let [key, value] of m) {...}</code></p>
 <p>Map class iterates in insertion order</p>
 <p>If you want to iterate just the keys or just the associated values of a map, use the <code>keys()</code> and <code>values()</code> methods: these return iterable objects that iterate keys and values, in insertion order. (The<br />
@@ -2849,7 +2849,7 @@ buffer.byteLength</code></pre>
 <p><code>let ints = new Int16Array(10);</code></p>
 <p>10 short integers</p>
 <p><code>ints.fill(3).map(x=&gt;x*x).join("")</code></p>
-<p>“9999999999”</p>
+<p>"9999999999”</p>
 <p>Remember that typed arrays have fixed lengths, so the length property is read-only, and methods that change the length of the array (such as<code>push(), pop(), unshift(), shift(),</code> and <code>splice()</code>) are not implemented for typed arrays. Methods that alter the contents of an array without changing the length (such as <code>sort(), reverse()</code>, and <code>fill()</code>) are implemented.</p>
 <h3 id="determine-endianess-and-dataview">Determine Endianess and DataView</h3>
 <pre><code>let littleEndian = new Int8Array(new Int32Array([1]).buffer)
@@ -2912,7 +2912,7 @@ buffer.byteLength</code></pre>
 <pre><code>r = /\w{3}\d?/;</code></pre>
 <p>Match exactly three word characters and an optional digit</p>
 <pre><code>r = /\s+java\s+/;</code></pre>
-<p>Match “java” with one or more spaces before and after</p>
+<p>Match "java” with one or more spaces before and after</p>
 <pre><code>r = /[^(]*/;</code></pre>
 <p>Match zero or more characters that are not open parens</p>
 <p>If you want to match repetitions of more complicated expressions, you’ll need to define a group with parentheses</p>
@@ -2940,17 +2940,17 @@ buffer.byteLength</code></pre>
 <p><strong>Pattern</strong></p>
 <p><code>|</code></p>
 <p><code>/ab|cd|ef/</code></p>
-<p>“ab” or the string “cd” or the string “ef”.</p>
+<p>"ab” or the string "cd” or the string "ef”.</p>
 <p><code>/\d{3}|[a-z]{4}/</code></p>
 <p>either three digits or four lowercase letters.</p>
 <p><code>/a|ab/</code></p>
-<p>matches only the first letter “a”</p>
+<p>matches only the first letter "a”</p>
 <p><code>()</code></p>
 <p><code>/java(script)?/</code></p>
-<p>matches “java” followed by the optional “script”</p>
+<p>matches "java” followed by the optional "script”</p>
 <p><code>/(ab|cd)+|ef/</code></p>
-<p>matches “java” followed by the optional “script”</p>
-<p>If the left alternative matches, the right alternative is ignored, even if it would have produced a “better” match</p>
+<p>matches "java” followed by the optional "script”</p>
+<p>If the left alternative matches, the right alternative is ignored, even if it would have produced a "better” match</p>
 <p>Another purpose of parentheses in regular expressions is to define subpatterns within the complete pattern. When a regular expression is successfully matched against a target string, it is possible to extract the portions of the target string that matched any particular parenthesized subpattern. For example, suppose you are looking for one or more lowercase letters followed by one or more digits. You might use the pattern <code>/[a-z]+\d+/</code>. But suppose you only really care about the digits at the end of each match. If you put that part of the pattern in parentheses (/[a-z]+(\d+)/), you can extract the digits from any matches you find,</p>
 <p>A related use of parenthesized subexpressions is to allow you to refer back to a subexpression later in the same regular expression. This is done by following a \ character by a digit or digits. The digits refer to the position of the parenthesized subexpression within the regular expression. For example, \1 refers back to the first subexpression, and \3 refers to the third.</p>
 <p><strong>Match</strong></p>
@@ -2974,10 +2974,10 @@ require the opening and closing quotes to match</p>
 <p><em>regular expression anchors</em> because they anchor the pattern to a specific position in the search string. The most commonly used anchor elements are ^, which ties the pattern to the beginning of the string, and $, which anchors the pattern to the end of the string.</p>
 <p><strong>Example</strong></p>
 <p><strong>Pattern</strong></p>
-<p>match the word “JavaScript” on a line by itself</p>
+<p>match the word "JavaScript” on a line by itself</p>
 <p><code>/^JavaScript$/</code></p>
-<p>To search for “Java” as a word by itself you can try the pattern <code>/\sJava\s/</code>, which requires a space before and after the word. But there are two problems with this solution. First, it does not match “Java” at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what’s needed. So instead of matching actual space characters with \s, match (or anchor to) word boundaries with \b. The resulting expression is <code>/\bJava\b/</code>.</p>
-<p>The element <code>\B</code> anchors the match to a location that is not a word boundary. Thus, the pattern <code>/\B[Ss]cript/</code> matches “JavaScript” and “postscript”, but not “script” or “Scripting”.</p>
+<p>To search for "Java” as a word by itself you can try the pattern <code>/\sJava\s/</code>, which requires a space before and after the word. But there are two problems with this solution. First, it does not match "Java” at the beginning or the end of a string, but only if it appears with space on either side. Second, when this pattern does find a match, the matched string it returns has leading and trailing spaces, which is not quite what’s needed. So instead of matching actual space characters with \s, match (or anchor to) word boundaries with \b. The resulting expression is <code>/\bJava\b/</code>.</p>
+<p>The element <code>\B</code> anchors the match to a location that is not a word boundary. Thus, the pattern <code>/\B[Ss]cript/</code> matches "JavaScript” and "postscript”, but not "script” or "Scripting”.</p>
 <p>You can also use arbitrary regular expressions as anchor conditions.</p>
 <p>If you include an expression within <code>(?= and )</code> characters, it is a lookahead assertion, and it specifies that the enclosed characters must match, without actually matching them.</p>
 <p><strong>Example</strong></p>
@@ -2985,26 +2985,26 @@ require the opening and closing quotes to match</p>
 <p><strong>Matches</strong></p>
 <p>to match the name of a common programming language, but only if it is followed by a colon</p>
 <p><code>/[Jj]ava([Ss]cript)?(?=\:)/</code></p>
-<p>matches the word “JavaScript” in “JavaScript: The DefinitiveGuide”</p>
-<p>does not match “Java” in “Java in a Nutshell”</p>
+<p>matches the word "JavaScript” in "JavaScript: The DefinitiveGuide”</p>
+<p>does not match "Java” in "Java in a Nutshell”</p>
 <p>If you instead introduce an assertion with <code>(?!</code>, it is a negative lookahead assertion.</p>
 <h3 id="flags">FLAGS</h3>
 <p>Flags are specified after the second / character of a regular expression literal or as a string passed as the second argument to the RegExp() constructor.</p>
 <p><strong>Flag</strong></p>
 <p><strong>Meaning</strong></p>
 <p>g</p>
-<p>“global” — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String <code>match()</code> method and the <code>RegExp exec()</code> method in important ways.</p>
+<p>"global” — that is,that we intend to use it to find all matches within a string rather than just finding the first <a href="http://match.it/" class="markup--anchor markup--p-anchor">match.it</a> does alter the behavior of the String <code>match()</code> method and the <code>RegExp exec()</code> method in important ways.</p>
 <p>i</p>
 <p>case-insensitive</p>
 <p>m</p>
-<p>“multiline” mode</p>
+<p>"multiline” mode</p>
 <p>s</p>
-<p>useful when working with text that includes newlines.Normally, a “.” in a regular expression matches any character except a line terminator. When the s flag is used, however, “.” will match any character, including line terminators.</p>
+<p>useful when working with text that includes newlines.Normally, a ".” in a regular expression matches any character except a line terminator. When the s flag is used, however, ".” will match any character, including line terminators.</p>
 <p>u</p>
 <p>Unicode.</p>
 <p>Setting the u flag on a RegExp also allows you to use the new <code>\u{...}</code> escape sequence for Unicode character and also enables the \p{…} notation for Unicode character classes.</p>
 <p>y</p>
-<p>“sticky”. should match at the beginning of a string or at the first character following the previous match</p>
+<p>"sticky”. should match at the beginning of a string or at the first character following the previous match</p>
 <h3 id="string-methods-for-pattern-matching">String Methods for Pattern Matching</h3>
 <h3 id="search">SEARCH()</h3>
 <p>Strings support four methods that use regular expressions.</p>
@@ -3029,10 +3029,10 @@ require the opening and closing quotes to match</p>
 <p>Example to convert decimal integers in a string to hexadecimal:</p>
 <p><code>let s = "15 times 15 is 225";</code></p>
 <p><code>s.replace(/\d+/gu, n =&gt; parseInt(n).toString(16))</code></p>
-<p>“f times f is e1”</p>
+<p>"f times f is e1”</p>
 <h3 id="match">MATCH()</h3>
 <p><code>"7 plus 8 equals 15".match(/\d+/g)</code></p>
-<p>[“7”, “8”, “15”]</p>
+<p>["7”, "8”, "15”]</p>
 <p>If the regular expression does not have the <code>g</code> flag set, <code>match()</code> does not do a global search; it simply searches for the first match. In this nonglobal case, <code>match()</code> still returns an array, but the array elements are completely different.</p>
 <p>Thus, if <code>match()</code> returns an array a, a[0] contains the complete match, a[1] contains the substring that matched the first parenthesized expression, and so on.</p>
 <pre><code>let url = /(\w+):\/\/([\w.]+)\/(\S*)/;
@@ -3046,13 +3046,13 @@ let fullurl, protocol, host, path;
 if (match !== null) {
 
 fullurl = match[0];</code></pre>
-<p><a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">“http://www.example.com/~david</a>”</p>
+<p><a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"http://www.example.com/~david</a>”</p>
 <pre><code>protocol = match[1];</code></pre>
-<p>“http”</p>
+<p>"http”</p>
 <pre><code>host = match[2];</code></pre>
-<p><a href="http://www.example.com/" class="markup--anchor markup--p-anchor">“www.example.com</a>”</p>
+<p><a href="http://www.example.com/" class="markup--anchor markup--p-anchor">"www.example.com</a>”</p>
 <pre><code>path = match[3];</code></pre>
-<p>“~david”</p>
+<p>"~david”</p>
 <p>In this non-global case, the array returned by match() also has some object properties in addition to the numbered array elements.</p>
 <p>input property refers to the string on which match() was called</p>
 <p>The index property is the position within that string at which the match starts.</p>
@@ -3061,29 +3061,29 @@ fullurl = match[0];</code></pre>
 <p><code>let text = "Visit my blog at http://www.example.com/~david";</code></p>
 <p><code>let match = text.match(url);</code></p>
 <p><code>match[0]</code></p>
-<p><a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">“http://www.example.com/~david</a>”</p>
+<p><a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"http://www.example.com/~david</a>”</p>
 <p><code>match.input</code></p>
 <p>text</p>
 <p><code>match.index</code></p>
 <p>17</p>
 <p><code>match.groups.protocol</code></p>
-<p>“http”</p>
+<p>"http”</p>
 <p><code>match.groups.host</code></p>
-<p><a href="http://www.example.com/" class="markup--anchor markup--p-anchor">“www.example.com</a>”</p>
+<p><a href="http://www.example.com/" class="markup--anchor markup--p-anchor">"www.example.com</a>”</p>
 <p><code>match.groups.path</code></p>
-<p>“~david”</p>
+<p>"~david”</p>
 <p>There are also important but less dramatic differences in behavior when the y flag is set. Refer to book for examples.</p>
 <h3 id="matchall">MATCHALL()</h3>
 <p>Instead of returning an array of matching substrings like <code>match()</code> does, however, it returns an iterator that yields the kind of match objects that match() returns when used with a non-global RegExp.</p>
 <h3 id="split">SPLIT()</h3>
 <p><code>"123,456,789".split(",")</code></p>
-<p>[“123”, “456”,“789”]</p>
+<p>["123”, "456”,"789”]</p>
 <p><code>"1, 2, 3,\n4, 5".split(/\s*,\s*/)</code></p>
-<p>[“1”, “2”, “3”, “4”,“5”]</p>
+<p>["1”, "2”, "3”, "4”,"5”]</p>
 <p>Surprisingly, if you call <code>split()</code> with a RegExp delimiter and the regular expression includes capturing groups, then the text that matches the capturing groups will be included in the returned array.</p>
 <p><code>const htmlTag = /&lt;([^&gt;]+)&gt;/;</code></p>
 <p><code>"Testing&lt;br/&gt;1,2,3".split(htmlTag)</code></p>
-<p>[“Testing”, “br/”,“1,2,3”]</p>
+<p>["Testing”, "br/”,"1,2,3”]</p>
 <h3 id="the-regexp-class">The RegExp Class</h3>
 <p>The <code>RegExp()</code> constructor is useful when a regular expression is being dynamically created and thus cannot be represented with the regular expression literal syntax.</p>
 <pre><code>let zipcode = new RegExp(&quot;\\d{5}&quot;, &quot;g&quot;);</code></pre>
@@ -3133,8 +3133,8 @@ doubleLetterWords.push(word);
 
 }</code></pre>
 <p><code>doubleLetterWords</code></p>
-<p>[“apple”, “coffee”]: “book” is missing!</p>
-<p>Because we set the g flag on the RegExp, the <code>lastIndex</code> property is changed after successful matches, and the <code>test()</code> method (which is based on <code>exec()</code>) starts searching for a match at the position specified by <code>lastIndex</code>. After matching the “pp” in “apple”, <code>lastIndex</code> is 3, and so we start searching the word “book” at position 3 and do not see the “oo” that it contains.</p>
+<p>["apple”, "coffee”]: "book” is missing!</p>
+<p>Because we set the g flag on the RegExp, the <code>lastIndex</code> property is changed after successful matches, and the <code>test()</code> method (which is based on <code>exec()</code>) starts searching for a match at the position specified by <code>lastIndex</code>. After matching the "pp” in "apple”, <code>lastIndex</code> is 3, and so we start searching the word "book” at position 3 and do not see the "oo” that it contains.</p>
 <h3 id="dates-and-times">Dates and Times</h3>
 <pre><code>let now = new Date();</code></pre>
 <p>The current time</p>
@@ -3178,15 +3178,15 @@ console.log(`Spline reticulation took ${endTime -startTime}ms.`);</code></pre>
 <pre><code>let d = new Date(2020, 0, 1, 17, 10, 30);
 
 d.toString()</code></pre>
-<p>“Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)”</p>
+<p>"Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)”</p>
 <pre><code>d.toUTCString()</code></pre>
-<p>“Thu, 02 Jan 2020 01:10:30 GMT”</p>
+<p>"Thu, 02 Jan 2020 01:10:30 GMT”</p>
 <pre><code>d.toLocaleDateString()</code></pre>
-<p>“1/1/2020”: ‘en-US’ locale</p>
+<p>"1/1/2020”: ‘en-US’ locale</p>
 <pre><code>d.toLocaleTimeString()</code></pre>
-<p>“5:10:30 PM”: ‘en-US’ locale</p>
+<p>"5:10:30 PM”: ‘en-US’ locale</p>
 <pre><code>d.toISOString()</code></pre>
-<p>“2020-01-02T01:10:30.000Z”</p>
+<p>"2020-01-02T01:10:30.000Z”</p>
 <p>there is also a static Date.parse() method that takes a string as its argument, attempts to parse it as a date and time, and returns a timestamp representing that date. <code>Date.parse()</code> is able to parse the same strings that the <code>Date()</code> constructor can and is guaranteed to be able to parse the output of<code>toISOString(), toUTCString()</code>, and<code>toString()</code>.</p>
 <h3 id="error-classes">Error Classes</h3>
 <p>One good reason to use an Error object is that, when you create an Error, it captures the state of the JavaScript stack, and if the exception is uncaught, the stack trace will be displayed with the error message, which will help you debug the issue.</p>
@@ -3216,7 +3216,7 @@ let error = new HTTPError(404, &quot;Not Found&quot;, &quot;http://example.com/&
 error.status</code></pre>
 <p>404</p>
 <pre><code>error.message</code></pre>
-<p>“404 Not Found:<a href="http://example.com/" class="markup--anchor markup--p-anchor">http://example.com/</a>”</p>
+<p>"404 Not Found:<a href="http://example.com/" class="markup--anchor markup--p-anchor">http://example.com/</a>”</p>
 <pre><code>error.name</code></pre>
 <p>HTTPError</p>
 <h3 id="json-serialization-and-parsing">JSON Serialization and Parsing</h3>
@@ -3224,7 +3224,7 @@ error.status</code></pre>
 <pre><code>let o = {s: &quot;&quot;, n: 0, a: [true, false, null]};
 
 let s = JSON.stringify(o);</code></pre>
-<p>s == ‘{“s”:"“,”n“:0,”a":[true,false,null]}’</p>
+<p>s == ‘{"s”:"",”n":0,”a":[true,false,null]}’</p>
 <pre><code>let copy = JSON.parse(s);</code></pre>
 <p>copy == {s: "", n: 0, a:[true, false, null]}</p>
 <p>Inefficient way of creating a deep copy of an object</p>
@@ -3237,7 +3237,7 @@ return JSON.parse(JSON.stringify(o));
 <p><code>JSON.stringify()</code> also takes an optional third argument. If you would like your JSONformatted string to be human-readable (if it is being used as a configuration file, for example), then you should pass null as the second argument and pass a number or string as the third argument. If the third argument is a number, then it will use that number of spaces for each indentation level. If the third argument is a string of whitespace (such as ‘\t’), it will use that string for each level of indent.</p>
 <h3 id="json-customizations">JSON Customizations</h3>
 <p>If <code>JSON.stringify()</code> is asked to serialize a value that is not natively supported by the JSON format, it looks to see if that value has a <code>toJSON()</code> method, and if so, it calls that method and then stringifies the return value in place of the original value. Date objects implement <code>toJSON()</code>: it returns the same string that <code>toISOString()</code> method does.</p>
-<p>If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a “reviver” function as the second argument to <code>JSON.parse()</code>.</p>
+<p>If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a "reviver” function as the second argument to <code>JSON.parse()</code>.</p>
 <pre><code>let data = JSON.parse(text, function(key, value) {
 
 if (key[0] === &quot;_&quot;) return undefined;
@@ -3257,23 +3257,23 @@ return value;
 <pre><code>let url = new URL(&quot;https://example.com:8000/path/name?q=term#fragment&quot;);
 
 url.href</code></pre>
-<p><a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">“https://example.com:8000/path/name</a>?q=term#fragment”</p>
+<p><a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">"https://example.com:8000/path/name</a>?q=term#fragment”</p>
 <pre><code>url.origin</code></pre>
-<p><a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">“https://example.com:8000</a>”</p>
+<p><a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">"https://example.com:8000</a>”</p>
 <pre><code>url.protocol</code></pre>
-<p>“https:”</p>
+<p>"https:”</p>
 <pre><code>url.host</code></pre>
-<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">“example.com</a>:8000”</p>
+<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">"example.com</a>:8000”</p>
 <pre><code>url.hostname</code></pre>
-<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">“example.com</a>”</p>
+<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">"example.com</a>”</p>
 <pre><code>url.port</code></pre>
-<p>“8000”</p>
+<p>"8000”</p>
 <pre><code>url.pathname</code></pre>
-<p>“/path/name”</p>
+<p>"/path/name”</p>
 <pre><code>url.search</code></pre>
-<p>“?q=term”</p>
+<p>"?q=term”</p>
 <pre><code>url.hash</code></pre>
-<p>“#fragment”</p>
+<p>"#fragment”</p>
 <pre><code>let url = new URL(&quot;https://example.com&quot;);
 
 url.pathname = &quot;api/search&quot;;</code></pre>
@@ -3281,20 +3281,20 @@ url.pathname = &quot;api/search&quot;;</code></pre>
 <pre><code>url.search = &quot;q=test&quot;;</code></pre>
 <p>Add a query parameter</p>
 <pre><code>url.toString()</code></pre>
-<p><a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">“https://example.com/api/search?q=test</a>”</p>
+<p><a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">"https://example.com/api/search?q=test</a>”</p>
 <p>One of the important features of the URL class is that it correctly adds punctuation and escapes special characters in URLs when that is needed</p>
 <pre><code>let url = new URL(&quot;https://example.com&quot;);
 
 url.pathname = &quot;path with spaces&quot;;
 
 url.pathname</code></pre>
-<p>“/path%20with%20spaces”</p>
+<p>"/path%20with%20spaces”</p>
 <pre><code>url.search = &quot;q=foo#bar&quot;;
 
 url.search</code></pre>
-<p>“?q=foo%23bar”</p>
+<p>"?q=foo%23bar”</p>
 <pre><code>url.href</code></pre>
-<p><a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">“https://example.com/path%20with%20spaces?q=foo%23bar</a>”</p>
+<p><a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">"https://example.com/path%20with%20spaces?q=foo%23bar</a>”</p>
 <p>Often, however, HTTP requests encode the values of multiple form fields or multiple API parameters into the query portion of a URL. In this format, the query portion of the URL is a question mark followed by one or more name/value pairs, which are separated from one another by ampersands.</p>
 <p>If you want to encode these kinds of name/value pairs into the query portion of a URL, then the searchParams property will be more useful than the search property.</p>
 <p><code>let url = new URL("https://example.com/search");</code></p>
@@ -3302,23 +3302,23 @@ url.search</code></pre>
 <p>""</p>
 <p><code>url.searchParams.append("q", "term");</code></p>
 <p><code>url.search</code></p>
-<p>“?q=term”</p>
+<p>"?q=term”</p>
 <p><code>url.searchParams.set("q", "x");</code></p>
 <p><code>url.search</code></p>
-<p>“?q=x”</p>
+<p>"?q=x”</p>
 <p><code>url.searchParams.append("opts", "1");</code></p>
 <p><code>url.search</code></p>
-<p>“?q=x&amp;opts=1”</p>
+<p>"?q=x&amp;opts=1”</p>
 <p>The value of the searchParams property is a URLSearchParams object.</p>
 <p><code>let url = new URL("http://example.com");</code></p>
 <p><code>let params = new URLSearchParams();</code></p>
 <p><code>params.append("q", "term");</code></p>
 <p><code>params.append("opts", "exact");</code></p>
 <p><code>params.toString()</code></p>
-<p>“q=term&amp;opts=exact”</p>
+<p>"q=term&amp;opts=exact”</p>
 <p><code>url.search = params;</code></p>
 <p><code>url.href</code></p>
-<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">“http://example.com/</a>?q=term&amp;opts=exact”</p>
+<p><a href="http://example.com/" class="markup--anchor markup--p-anchor">"http://example.com/</a>?q=term&amp;opts=exact”</p>
 <h3 id="timers">Timers</h3>
 <p><code>setTimeout()</code> and<code>setInterval()</code>—that allow programs to ask the browser to invoke a function after a specified amount of time has elapsed or to invoke the function repeatedly at a specified interval.</p>
 <pre><code>setTimeout(() =&gt; { console.log(&quot;Ready...&quot;); }, 1000);
@@ -3349,7 +3349,7 @@ for(let result = iterator.next(); !result.done; result =iterator.next()) {
 console.log(result.value) // result.value == 99
 
 }</code></pre>
-<p>When you want to iterate though a “partially used” iterator:</p>
+<p>When you want to iterate though a "partially used” iterator:</p>
 <p><code>let list = [1,2,3,4,5];</code><br />
 <code>let iter = list[Symbol.iterator]();</code></p>
 <p><code>let head = iter.next().value;</code></p>
@@ -3528,7 +3528,7 @@ yield key;
 
 };</code></pre>
 <p><code>[...o.g()]</code></p>
-<p>[“x”, “y”, “z”, “g”]</p>
+<p>["x”, "y”, "z”, "g”]</p>
 <p>Generators often make it particularly easy to define iterable classes.</p>
 <pre><code>*[Symbol.iterator]() {
 
@@ -3716,9 +3716,9 @@ displayUserProfile(profile);
 
 .then(callback2); // task 3; returns promise 3</code></pre>
 <h3 id="resolving-promises">Resolving Promises</h3>
-<p>There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”</p>
+<p>There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be "resolved.”</p>
 <p>fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has <code>.text(), .json(),</code> and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.</p>
-<p>“task 2” calls the <code>.json()</code> method and returns its value. This is the fourth Promise object, and it is the return value of the <code>callback1()</code> function.</p>
+<p>"task 2” calls the <code>.json()</code> method and returns its value. This is the fourth Promise object, and it is the return value of the <code>callback1()</code> function.</p>
 <p>Let’s consider:</p>
 <pre><code>function c1(response) {
 
@@ -3757,8 +3757,8 @@ promise 3, task 3</code></pre>
 <p>Promises are about managing asynchronous tasks, and if task 2 is asynchronous, then that task will not be complete by the time the callback returns.</p>
 <p>When you pass a callback c to the <code>then()</code> method, <code>then()</code> returns a Promise p and arranges to asynchronously invoke c at some later time. The callback performs some computation and returns a value v. When the callback returns, p is resolved with the value v. When a Promise is resolved with a value that is not itself a Promise, it is immediately fulfilled with that value.</p>
 <p>So if c returns a non-Promise, that return value becomes the value of p, p is fulfilled and we are done. But if the return value v is itself a Promise, then p is resolved but not yet fulfilled.</p>
-<p>At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the “resolved” state of a Promise means</p>
-<p>the Promise has become associated with, or “locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is “resolved” in the sense that its fate now depends entirely on what happens to Promise v.</p>
+<p>At this stage, p cannot settle until the Promise v settles. If v is fulfilled, then p will be fulfilled to the same value. If v is rejected, then p will be rejected for the same reason. This is what the "resolved” state of a Promise means</p>
+<p>the Promise has become associated with, or "locked onto,” another Promise. We don’t know yet whether p will be fulfilled or rejected, but our callback c no longer has any control over that. p is "resolved” in the sense that its fate now depends entirely on what happens to Promise v.</p>
 <p>Let’s bring this back to our URL-fetching example. When c1 returns p4, p2 is resolved. But being resolved is not the same as being fulfilled, so task 3 does not begin yet. When the full body of the HTTP response becomes available, then the .<code>json()</code> method can parse it and use that parsed value to fulfill p4. When p4 is fulfilled, p2 is automatically fulfilled as well, with the same parsed JSON value. At this point, the parsed JSON object is passed to c2, and task 3 begins.</p>
 <h3 id="more-on-promises-and-errors">More on Promises and Errors</h3>
 <p>With synchronous code, if you leave out error-handling code, you’ll at least get an exception and a stack trace that you can use to figure out what is going wrong. With asynchronous code, unhandled exceptions will often go unreported, and errors can occur silently, making them much harder to debug. The good news is that the <code>.catch()</code> method makes it easy to handle errors when working with Promises.</p>
@@ -3871,7 +3871,7 @@ Promise.all(promises)
 
 .catch(e =&gt; console.error(e));</code></pre>
 <p>The Promise returned by <code>Promise.all()</code> rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, <code>Promise.allSettled()</code> takes an array of input<br />
-Promises and returns a Promise, just like Promise.all() does. But <code>Promise.allSettled()</code> never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to “fulfilled” or “rejected.” If the status is “fulfilled”, then the object will also have a value property that gives the fulfillment value. And if the status is “rejected”, then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.</p>
+Promises and returns a Promise, just like Promise.all() does. But <code>Promise.allSettled()</code> never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled” or "rejected.” If the status is "fulfilled”, then the object will also have a value property that gives the fulfillment value. And if the status is "rejected”, then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.</p>
 <pre><code>Promise.allSettled([Promise.resolve(1), Promise.reject(2),3]).then(results =&gt; {
 
 results[0] // =&gt; { status: &quot;fulfilled&quot;, value: 1 }

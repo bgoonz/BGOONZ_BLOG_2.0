@@ -434,7 +434,7 @@ Bookmarks
 
   
 
-### RESOURCES {\#resources add\_date=“1640717067” last\_modified=“1640718980”}\#\#\# Lambda
+### RESOURCES {\#resources add\_date="1640717067” last\_modified="1640718980”}\#\#\# Lambda
 
 -   \[✅\] [***JavaScript Guide***](http://javascriptguide.herokuapp.com/)
 -   \[✅\] [***App Academy Open***](https://open.appacademy.io/login)
@@ -1669,7 +1669,7 @@ Bookmarks
 -   \[✅\] [***Job Search Intent Form - NewGrad***](https://airtable.com/shrz3tX6QTJqUS5ay)
 -   \[✅\] [***README***](https://determined-dijkstra-ee7390.netlify.app/)
 -   \[✅\] [***LambdaSchool/CS-Wiki: Lambda School CSWiki***](https://github.com/LambdaSchool/CS-Wiki)
--   \[✅\] [***“Mike West's brief bio” — Mike West***](https://mikewest.org/is/)
+-   \[✅\] [***"Mike West's brief bio” — Mike West***](https://mikewest.org/is/)
 -   \[✅\] [***sales force hackerrank github - GoogleSearch***](https://www.google.com/search?q=sales+force+hackerrank+github&sxsrf=AOaemvJmOUDDQgGba8gW_VMI29YR_khIeQ%3A1635799542803&ei=9lGAYbrKMIm2ggfOroHAAg&oq=sales+force+hackerrank+github&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA06BwgAEEcQsANKBAhBGABQsuMCWOLqAmCB7AJoAXABeACAAWaIAboEkgEDNi4xmAEAoAEByAEIwAEB&sclient=gws-wiz&ved=0ahUKEwi6nbCVhPjzAhUJm-AKHU5XACgQ4dUDCA8&uact=5)
 -   \[✅\] [***Salesforce Archives -GeeksforGeeks***](https://www.geeksforgeeks.org/tag/salesforce/)
 -   \[✅\] [***(3) What is the Salesforce 2-hour remote programming test (2nd roundinterview) like? -Quora***](https://www.quora.com/What-is-the-Salesforce-2-hour-remote-programming-test-2nd-round-interview-like)
@@ -2119,7 +2119,7 @@ Bookmarks
 -   \[✅\] [***Graph API Explorer - Facebook forDevelopers***](https://developers.facebook.com/tools/explorer/951130702132399/?session_id=371757718023204)
 -   \[✅\] [***CreatorStudio***](https://business.facebook.com/creatorstudio/pre_published?content_table=SCHEDULED_POSTS&post_type=ALL)
 -   \[✅\] [***Webdevresourcehub-blog |Facebook***](https://business.facebook.com/Webdevresourcehub-blog-103884128414320/publishing_tools/?section=INSTANT_ARTICLES)
--   \[✅\] [***Bryan Guner Music on Instagram: “I know I’ve already posted thisvideo… but I just think this filter is socool”***](https://www.instagram.com/p/CQXdtMrhI5Y/)
+-   \[✅\] [***Bryan Guner Music on Instagram: "I know I’ve already posted thisvideo… but I just think this filter is socool”***](https://www.instagram.com/p/CQXdtMrhI5Y/)
 -   \[✅\] [***Bryan Guner Music (@bgoonz) • Instagram photos andvideos***](https://www.instagram.com/bgoonz/?fbclid=IwAR3b0JQYBxEYFQNqQJsTMwQreI3X6WD4qK4yQfuFtvKGqkT6BA1dFdP2aFI)
 -   \[✅\] [***Bgoon (@musicians\_network\_features) • Instagram photos andvideos***](https://www.instagram.com/musicians_network_features/?fbclid=IwAR09ePn6TFs-CGALxxj-BwpX7jIQCZpB8fmu2VMOYl4MAlEcZzySlp3gQzc)
 -   \[✅\] [***Data Structures Overview -datastructures-in-python***](https://app.gitbook.com/@py-v2/s/datastructures-in-pytho/abstract-data-structures/untitled-7)
@@ -2608,7 +2608,7 @@ Bookmarks
 -   \[✅\] [***Internet Archive: Digital Library of Free & Borrowable Books, Movies,Music & Wayback Machine***](https://archive.org/)
 -   \[✅\] [***Commits ·BrentOzarULTD/BrentOzar.com-Demos***](https://github.com/BrentOzarULTD/BrentOzar.com-Demos/commits?author=BrentOzar)
 -   \[✅\] [***SQL ConstantCare® - Brent OzarUnlimited®***](https://www.brentozar.com/sql-constantcare/)
--   \[✅\] [***Web Development ResourcesSite***](https://web-dev-hub.com/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+-   \[✅\] [***Web Development ResourcesSite***](https://bgoonz-blog.netlify.app/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
 -   \[✅\] [***stack overflow postgres database - GoogleSearch***](https://www.google.com/search?q=stack+overflow+postgres+database&oq=stack+overflow+postgres+database&aqs=chrome..69i57j69i64l2.6496j0j7&sourceid=chrome&ie=UTF-8)
 -   \[✅\] [***stackoverflow-to-postgresql.pdf***](https://www.bortzmeyer.org/stackoverflow-to-postgresql.pdf)
 -   \[✅\] [***Improve database performance with connection pooling - Stack OverflowBlog***](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)

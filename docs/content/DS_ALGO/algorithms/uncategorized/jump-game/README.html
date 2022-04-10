@@ -27,7 +27,7 @@ Output: false
 Explanation: You will always arrive at index 3 no matter what. Its maximum
              jump length is 0, which makes it impossible to reach the last index.</code></pre>
 <h2 id="naming">Naming</h2>
-<p>We call a position in the array a <strong>“good index”</strong> if starting at that position, we can reach the last index. Otherwise, that index is called a <strong>“bad index”</strong>. The problem then reduces to whether or not index 0 is a “good index”.</p>
+<p>We call a position in the array a <strong>"good index”</strong> if starting at that position, we can reach the last index. Otherwise, that index is called a <strong>"bad index”</strong>. The problem then reduces to whether or not index 0 is a "good index”.</p>
 <h2 id="solutions">Solutions</h2>
 <h3 id="approach-1-backtracking">Approach 1: Backtracking</h3>
 <p>This is the inefficient solution where we try every single jump pattern that takes us from the first position to the last. We start from the first position and jump to every index that is reachable. We repeat the process until last index is reached. When stuck, backtrack.</p>

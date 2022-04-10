@@ -387,7 +387,7 @@ function FriendStatus(props) {
 }
 ```
 
-Effects may also optionally specify how to “clean up” after them by returning a function.
+Effects may also optionally specify how to "clean up” after them by returning a function.
 
 #### Use FriendStatus
 

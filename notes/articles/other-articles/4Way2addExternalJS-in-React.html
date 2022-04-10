@@ -20,7 +20,7 @@
 <p>This is the easiest way of loading JS files for a beginner.</p>
 <p><a href="https://www.npmjs.com/package/react-script-tag">React-script-tag</a> is an npm package that provides a React <code>&lt;script&gt;</code> tag that supports universal rendering. All standard <code>&lt;script&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">attributes</a> like <code>async</code>, <code>src</code>, <code>type</code>, and <code>defer</code> are supported, including <code>onLoad</code> and <code>onError</code> callbacks.</p>
 <p><strong>import</strong> ScriptTag <strong>from</strong> ‘react-script-tag’;const Demo = props =&gt; (<br />
-<strong>&lt;</strong>ScriptTag type<strong>=</strong>“text/javascript” src<strong>=</strong>“/path/to/resource.js” <strong>/&gt;<br />
+<strong>&lt;</strong>ScriptTag type<strong>=</strong>"text/javascript” src<strong>=</strong>"/path/to/resource.js” <strong>/&gt;<br />
 )</strong></p>
 <p>We also have an <code>isHydrating</code> flag, which is a <code>boolean</code> value. It defaults to <code>false</code> and must be <code>true</code> if the client is <code>hydrate()</code>ing the server render.</p>
 <p>You can read more about <code>hydrate()</code> <a href="https://reactjs.org/docs/react-dom.html#hydrate">in the React docs</a>.</p>
@@ -38,7 +38,7 @@
 <p>React allows us to build <a href="https://reactjs.org/docs/hooks-custom.html">custom Hooks</a>, which let us extract component logic into reusable functions. The logic to append an external JS file to a component could be stored as a custom Hook as below:</p>
 <p>Which could be used in components as below:</p>
 <p>import importScript from ‘customHooks/importScript’;const Demo = props =&gt; {<br />
-importScript(“/path/to/resource.js”);<br />
+importScript("/path/to/resource.js”);<br />
 }</p>
 </body>
 </html>

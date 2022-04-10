@@ -112,7 +112,7 @@ Slices have a dynamic size, unlike arrays.
       fmt.Println("Value is", b)
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
     func getPointer () (myPointer *int) {
       a := 234
@@ -122,7 +122,7 @@ Slices have a dynamic size, unlike arrays.
     a := new(int)
     *a = 234
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Pointers point to a memory location of a variable. Go is fully garbage-collected.
 
@@ -149,7 +149,7 @@ Flow control
       work()
     }
 
-{: data-line=“1,3,5”}
+{: data-line="1,3,5”}
 
 See: [If](https://tour.golang.org/flowcontrol/5)
 
@@ -159,7 +159,7 @@ See: [If](https://tour.golang.org/flowcontrol/5)
       fmt.Println("Uh oh")
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 A condition in an `if` statement can be preceded with a statement before a `;`. Variables declared by the statement are only in scope until the end of the `if`.
 
@@ -206,7 +206,7 @@ See: [For-Range loops](https://gobyexample.com/range)
       n := guess()
     }
 
-See: [Go’s “while”](https://tour.golang.org/flowcontrol/3)
+See: [Go’s "while”](https://tour.golang.org/flowcontrol/3)
 
 Functions
 ---------
@@ -217,7 +217,7 @@ Functions
       return x > 10000
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Functions are first class objects.
 
@@ -229,7 +229,7 @@ Functions are first class objects.
       return "Hello", "World"
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Named return values
 
@@ -239,7 +239,7 @@ Functions are first class objects.
       return
     }
 
-{: data-line=“4”}
+{: data-line="4”}
 
 By defining the return value names in the signature, a `return` (no args) will return variables with those names.
 
@@ -266,7 +266,7 @@ See: [Importing](https://tour.golang.org/basics/1)
 
     import r "math/rand"
 
-{: data-line=“1”}
+{: data-line="1”}
 
     r.Intn()
 
@@ -306,7 +306,7 @@ Concurrency
       fmt.Println(<-ch, <-ch, <-ch)
     }
 
-{: data-line=“3,6,7,8,13”}
+{: data-line="3,6,7,8,13”}
 
     func push(name string, ch chan string) {
       msg := "Hey, " + name
@@ -326,7 +326,7 @@ See: [Goroutines](https://tour.golang.org/concurrency/1), [Channels](https://tou
     // fatal error:
     // all goroutines are asleep - deadlock!
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Buffered channels limit the amount of messages it can keep.
 
@@ -341,7 +341,7 @@ See: [Buffered channels](https://tour.golang.org/concurrency/3)
     ch <- 3
     close(ch)
 
-{: data-line=“4”}
+{: data-line="4”}
 
 #### Iterates across a channel until its closed
 
@@ -349,7 +349,7 @@ See: [Buffered channels](https://tour.golang.org/concurrency/3)
       ···
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Closed if `ok == false`
 
@@ -374,7 +374,7 @@ See: [Range and close](https://tour.golang.org/concurrency/4)
 
     }
 
-{: data-line=“1,4,8,12”}
+{: data-line="1,4,8,12”}
 
     func doOperation(item string) {
       defer wg.Done()
@@ -382,7 +382,7 @@ See: [Range and close](https://tour.golang.org/concurrency/4)
       // ...
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 A WaitGroup waits for a collection of goroutines to finish. The main goroutine calls Add to set the number of goroutines to wait for. The goroutine calls `wg.Done()` when it finishes. See: [WaitGroup](https://golang.org/pkg/sync/#WaitGroup)
 
@@ -396,7 +396,7 @@ Error control
       fmt.Println("Working...")
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Defers running a function until the surrounding function returns. The arguments are evaluated immediately, but the function call is not ran until later.
 
@@ -411,7 +411,7 @@ See: [Defer, panic and recover](https://blog.golang.org/defer-panic-and-recover)
       fmt.Println("Working...")
     }
 
-{: data-line=“2,3,4”}
+{: data-line="2,3,4”}
 
 Lambdas are better suited for defer blocks.
 
@@ -424,7 +424,7 @@ Lambdas are better suited for defer blocks.
       d = time.Now().Unix()
     }
 
-{: data-line=“3,4,5”} The defer func uses current value of d, unless we use a pointer to get final value at end of main.
+{: data-line="3,4,5”} The defer func uses current value of d, unless we use a pointer to get final value at end of main.
 
 Structs
 -------
@@ -436,7 +436,7 @@ Structs
       Y int
     }
 
-{: data-line=“1,2,3,4”}
+{: data-line="1,2,3,4”}
 
     func main() {
       v := Vertex{1, 2}
@@ -478,7 +478,7 @@ Methods
       return math.Sqrt(v.X * v.X + v.Y * v.Y)
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     v := Vertex{1, 2}
     v.Abs()
@@ -494,7 +494,7 @@ See: [Methods](https://tour.golang.org/methods/1)
       v.Y = v.Y * f
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     v := Vertex{6, 12}
     v.Scale(0.5)

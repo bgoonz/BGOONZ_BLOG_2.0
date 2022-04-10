@@ -19,7 +19,7 @@
 -   [web archive feed](https://archive.org/services/collection-rss.php?collection=books&query=%28%28openlibrary_edition%3A%2A%20OR%20sponsor%3AGoogle%20OR%20collection%3Adigitallibraryindia%29%20AND%20mediatype%3Atexts%20AND%20-repub_state%3A%28%27-2%27%20OR%20%27-1%27%20OR%200%20OR%2010%20OR%2011%20OR%2012%20OR%2013%20OR%2018%29%29%20AND%20-mediatype%3Acollection)
 -   [Blog starter](https://github.com/Portfolio-Projects42/BLOG2.oStarter)
 
-&lt;iframe style=“-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=”https://trinket.io/embed/python/40e4c71864" width=“100%” height=“600” frameborder=“0” marginwidth=“0” marginheight=“0” allowfullscreen&gt;
+&lt;iframe style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=”https://trinket.io/embed/python/40e4c71864" width="100%” height="600” frameborder="0” marginwidth="0” marginheight="0” allowfullscreen&gt;
 
 Search feature
 
@@ -151,7 +151,7 @@ See the Pen [Search Box](https://codepen.io/bgoonz/pen/OJxPJrr) by Bryan C Guner
 -   <https://vercel.com/bgoonz>
 -   <https://vimeo.com/user128661018>
 -   <span class="citation" data-cites="bgoonz42">\[https://wakatime.com/@bgoonz42\]</span>(https://wakatime.com/<span class="citation" data-cites="bgoonz42">@bgoonz42</span>)
--   <https://web-dev-hub.com/>
+-   <https://bgoonz-blog.netlify.app/>
 -   <https://web-dev-resource-hub.netlify.app/>
 -   <https://webcomponents.dev/user/bgoonz>
 -   <https://webdevhub.ghost.io/ghost/#/tags/new>

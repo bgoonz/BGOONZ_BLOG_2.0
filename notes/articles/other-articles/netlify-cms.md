@@ -177,7 +177,7 @@ With the backend set to handle authentication, now you need a frontend interface
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site’s main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a “partial” or “include” template. If you can find where the site stylesheet is linked, that’s probably the right place. Alternatively, you can include the script in your site using Netlify’s [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
+Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site’s main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a "partial” or "include” template. If you can find where the site stylesheet is linked, that’s probably the right place. Alternatively, you can include the script in your site using Netlify’s [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
 
 When a user logs in with the Netlify Identity widget, an access token directs to the site homepage. In order to complete the login and get back to the CMS, redirect the user back to the `/admin/` path. To do this, add the following script before the closing `body` tag of your site’s main index page:
 
@@ -200,7 +200,7 @@ Note: This example script requires modern JavaScript and does not work on IE11. 
 
 Your site CMS is now fully configured and ready for login!
 
-If you set your registration preference to “Invite only,” invite yourself (and anyone else you choose) as a site user. To do this, select the **Identity** tab from your site dashboard, and then select the **Invite users** button. Invited users receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.
+If you set your registration preference to "Invite only,” invite yourself (and anyone else you choose) as a site user. To do this, select the **Identity** tab from your site dashboard, and then select the **Invite users** button. Invited users receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.
 
 If you left your site registration open, or for return visits after confirming an email invitation, access your site’s CMS at `yoursite.com/admin/`.
 

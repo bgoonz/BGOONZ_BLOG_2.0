@@ -23,59 +23,59 @@ new Intl.NumberFormat(locales, options)</code></pre>
 <p><code>locales</code> <span class="badge inline optional">Optional</span><br />
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the <code>locales</code> argument, see the <a href="../../intl#locale_identification_and_negotiation">Intl</a> page. The following Unicode extension key is allowed:</p>
 <p><code>nu</code><br />
-The numbering system to be used. Possible values include: “<code>adlm</code>”, “<code>ahom</code>”, “<code>arab</code>”, “<code>arabext</code>”, “<code>bali</code>”, “<code>beng</code>”, “<code>bhks</code>”, “<code>brah</code>”, “<code>cakm</code>”, “<code>cham</code>”, “<code>deva</code>”, “<code>diak</code>”, “<code>fullwide</code>”, “<code>gong</code>”, “<code>gonm</code>”, “<code>gujr</code>”, “<code>guru</code>”, “<code>hanidec</code>”, “<code>hmng</code>”, “<code>hmnp</code>”, “<code>java</code>”, “<code>kali</code>”, “<code>khmr</code>”, “<code>knda</code>”, “<code>lana</code>”, “<code>lanatham</code>”, “<code>laoo</code>”, “<code>latn</code>”, “<code>lepc</code>”, “<code>limb</code>”, “<code>mathbold</code>”, “<code>mathdbl</code>”, “<code>mathmono</code>”, “<code>mathsanb</code>”, “<code>mathsans</code>”, “<code>mlym</code>”, “<code>modi</code>”, “<code>mong</code>”, “<code>mroo</code>”, “<code>mtei</code>”, “<code>mymr</code>”, “<code>mymrshan</code>”, “<code>mymrtlng</code>”, “<code>newa</code>”, “<code>nkoo</code>”, “<code>olck</code>”, “<code>orya</code>”, “<code>osma</code>”, “<code>rohg</code>”, “<code>saur</code>”, “<code>segment</code>”, “<code>shrd</code>”, “<code>sind</code>”, “<code>sinh</code>”, “<code>sora</code>”, “<code>sund</code>”, “<code>takr</code>”, “<code>talu</code>”, “<code>tamldec</code>”, “<code>telu</code>”, “<code>thai</code>”, “<code>tibt</code>”, “<code>tirh</code>”, “<code>vaii</code>”, “<code>wara</code>”, “<code>wcho</code>”. — see the <a href="../locale/numberingsystem">standard Unicode numeral systems list</a>.</p>
+The numbering system to be used. Possible values include: "<code>adlm</code>”, "<code>ahom</code>”, "<code>arab</code>”, "<code>arabext</code>”, "<code>bali</code>”, "<code>beng</code>”, "<code>bhks</code>”, "<code>brah</code>”, "<code>cakm</code>”, "<code>cham</code>”, "<code>deva</code>”, "<code>diak</code>”, "<code>fullwide</code>”, "<code>gong</code>”, "<code>gonm</code>”, "<code>gujr</code>”, "<code>guru</code>”, "<code>hanidec</code>”, "<code>hmng</code>”, "<code>hmnp</code>”, "<code>java</code>”, "<code>kali</code>”, "<code>khmr</code>”, "<code>knda</code>”, "<code>lana</code>”, "<code>lanatham</code>”, "<code>laoo</code>”, "<code>latn</code>”, "<code>lepc</code>”, "<code>limb</code>”, "<code>mathbold</code>”, "<code>mathdbl</code>”, "<code>mathmono</code>”, "<code>mathsanb</code>”, "<code>mathsans</code>”, "<code>mlym</code>”, "<code>modi</code>”, "<code>mong</code>”, "<code>mroo</code>”, "<code>mtei</code>”, "<code>mymr</code>”, "<code>mymrshan</code>”, "<code>mymrtlng</code>”, "<code>newa</code>”, "<code>nkoo</code>”, "<code>olck</code>”, "<code>orya</code>”, "<code>osma</code>”, "<code>rohg</code>”, "<code>saur</code>”, "<code>segment</code>”, "<code>shrd</code>”, "<code>sind</code>”, "<code>sinh</code>”, "<code>sora</code>”, "<code>sund</code>”, "<code>takr</code>”, "<code>talu</code>”, "<code>tamldec</code>”, "<code>telu</code>”, "<code>thai</code>”, "<code>tibt</code>”, "<code>tirh</code>”, "<code>vaii</code>”, "<code>wara</code>”, "<code>wcho</code>”. — see the <a href="../locale/numberingsystem">standard Unicode numeral systems list</a>.</p>
 <p><code>options</code> <span class="badge inline optional">Optional</span><br />
 An object with some or all of the following properties:</p>
 <p><code>compactDisplay</code><br />
-Only used when <code>notation</code> is “<code>compact</code>”. Takes either “<code>short</code>” (default) or “<code>long</code>”.</p>
+Only used when <code>notation</code> is "<code>compact</code>”. Takes either "<code>short</code>” (default) or "<code>long</code>”.</p>
 <p><code>currency</code><br />
-The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as “<code>USD</code>” for the US dollar, “<code>EUR</code>” for the euro, or “<code>CNY</code>” for the Chinese RMB — see the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">Current currency &amp; funds code list</a>. There is no default value; if the <code>style</code> is “<code>currency</code>”, the <code>currency</code> property must be provided.</p>
+The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as "<code>USD</code>” for the US dollar, "<code>EUR</code>” for the euro, or "<code>CNY</code>” for the Chinese RMB — see the <a href="https://www.currency-iso.org/en/home/tables/table-a1.html">Current currency &amp; funds code list</a>. There is no default value; if the <code>style</code> is "<code>currency</code>”, the <code>currency</code> property must be provided.</p>
 <p><code>currencyDisplay</code><br />
 How to display the currency in currency formatting. Possible values are:</p>
 <ul>
-<li>“<code>symbol</code>” to use a localized currency symbol such as €, this is the default value,</li>
-<li>“<code>narrowSymbol</code>” to use a narrow format symbol (“$100” rather than “US$100”),</li>
-<li>“<code>code</code>” to use the ISO currency code,</li>
-<li>“<code>name</code>” to use a localized currency name such as “<code>dollar</code>”,</li>
+<li>"<code>symbol</code>” to use a localized currency symbol such as €, this is the default value,</li>
+<li>"<code>narrowSymbol</code>” to use a narrow format symbol ("$100” rather than "US$100”),</li>
+<li>"<code>code</code>” to use the ISO currency code,</li>
+<li>"<code>name</code>” to use a localized currency name such as "<code>dollar</code>”,</li>
 </ul>
 <p><code>currencySign</code><br />
-In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the <code>currencySign</code> option to “<code>accounting</code>”. The default value is “<code>standard</code>”.</p>
+In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the <code>currencySign</code> option to "<code>accounting</code>”. The default value is "<code>standard</code>”.</p>
 <p><code>localeMatcher</code><br />
-The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+The locale matching algorithm to use. Possible values are "<code>lookup</code>” and "<code>best fit</code>”; the default is "<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
 <p><code>notation</code><br />
-The formatting that should be displayed for the number, the defaults is “<code>standard</code>”</p>
+The formatting that should be displayed for the number, the defaults is "<code>standard</code>”</p>
 <ul>
-<li>“<code>standard</code>” plain number formatting</li>
-<li>“<code>scientific</code>” return the order-of-magnitude for formatted number.</li>
-<li>“<code>engineering</code>” return the exponent of ten when divisible by three</li>
-<li>“<code>compact</code>” string representing exponent, defaults is using the “short” form.</li>
+<li>"<code>standard</code>” plain number formatting</li>
+<li>"<code>scientific</code>” return the order-of-magnitude for formatted number.</li>
+<li>"<code>engineering</code>” return the exponent of ten when divisible by three</li>
+<li>"<code>compact</code>” string representing exponent, defaults is using the "short” form.</li>
 </ul>
 <p><code>numberingSystem</code><br />
-Numbering System. Possible values include: “<code>arab</code>”, “<code>arabext</code>”, " <code>bali</code>“,”<code>beng</code>“,”<code>deva</code>“,”<code>fullwide</code>“,” <code>gujr</code>“,”<code>guru</code>“,”<code>hanidec</code>“,”<code>khmr</code>“,” <code>knda</code>“,”<code>laoo</code>“,”<code>latn</code>“,”<code>limb</code>“,”<code>mlym</code>“,” <code>mong</code>“,”<code>mymr</code>“,”<code>orya</code>“,”<code>tamldec</code>“,” <code>telu</code>“,”<code>thai</code>“,”<code>tibt</code>".</p>
+Numbering System. Possible values include: "<code>arab</code>”, "<code>arabext</code>”, " <code>bali</code>",”<code>beng</code>",”<code>deva</code>",”<code>fullwide</code>",” <code>gujr</code>",”<code>guru</code>",”<code>hanidec</code>",”<code>khmr</code>",” <code>knda</code>",”<code>laoo</code>",”<code>latn</code>",”<code>limb</code>",”<code>mlym</code>",” <code>mong</code>",”<code>mymr</code>",”<code>orya</code>",”<code>tamldec</code>",” <code>telu</code>",”<code>thai</code>",”<code>tibt</code>".</p>
 <p><code>signDisplay</code><br />
-When to display the sign for the number; defaults to “<code>auto</code>”</p>
+When to display the sign for the number; defaults to "<code>auto</code>”</p>
 <ul>
-<li>“<code>auto</code>” sign display for negative numbers only</li>
-<li>“<code>never</code>” never display sign</li>
-<li>“<code>always</code>” always display sign</li>
-<li>“<code>exceptZero</code>” sign display for positive and negative numbers, but not zero</li>
+<li>"<code>auto</code>” sign display for negative numbers only</li>
+<li>"<code>never</code>” never display sign</li>
+<li>"<code>always</code>” always display sign</li>
+<li>"<code>exceptZero</code>” sign display for positive and negative numbers, but not zero</li>
 </ul>
 <p><code>style</code><br />
-The formatting style to use , the default is “<code>decimal</code>”.</p>
+The formatting style to use , the default is "<code>decimal</code>”.</p>
 <ul>
-<li>“<code>decimal</code>” for plain number formatting.</li>
-<li>“<code>currency</code>” for currency formatting.</li>
-<li>“<code>percent</code>” for percent formatting</li>
-<li>“<code>unit</code>” for unit formatting</li>
+<li>"<code>decimal</code>” for plain number formatting.</li>
+<li>"<code>currency</code>” for currency formatting.</li>
+<li>"<code>percent</code>” for percent formatting</li>
+<li>"<code>unit</code>” for unit formatting</li>
 </ul>
 <p><code>unit</code><br />
-The unit to use in <code>unit</code> formatting, Possible values are core unit identifiers, defined in <a href="https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements">UTS #35, Part 2, Section 6</a>. A <a href="https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier">subset</a> of units from the <a href="https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml">full list</a> was selected for use in ECMAScript. Pairs of simple units can be concatenated with “<code>-per-</code>” to make a compound unit. There is no default value; if the <code>style</code> is “<code>unit</code>”, the <code>unit</code> property must be provided.</p>
+The unit to use in <code>unit</code> formatting, Possible values are core unit identifiers, defined in <a href="https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements">UTS #35, Part 2, Section 6</a>. A <a href="https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier">subset</a> of units from the <a href="https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml">full list</a> was selected for use in ECMAScript. Pairs of simple units can be concatenated with "<code>-per-</code>” to make a compound unit. There is no default value; if the <code>style</code> is "<code>unit</code>”, the <code>unit</code> property must be provided.</p>
 <p><code>unitDisplay</code><br />
-The unit formatting style to use in <code>unit</code> formatting, the defaults is “<code>short</code>”.</p>
+The unit formatting style to use in <code>unit</code> formatting, the defaults is "<code>short</code>”.</p>
 <ul>
-<li>“<code>long</code>” (e.g., <code>16 litres</code>)</li>
-<li>“<code>short</code>” (e.g., <code>16 l</code>)</li>
-<li>“<code>narrow</code>” (e.g., <code>16l</code>)</li>
+<li>"<code>long</code>” (e.g., <code>16 litres</code>)</li>
+<li>"<code>short</code>” (e.g., <code>16 l</code>)</li>
+<li>"<code>narrow</code>” (e.g., <code>16l</code>)</li>
 </ul>
 <p><code>useGrouping</code><br />
 Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.</p>
@@ -167,7 +167,7 @@ new Intl.NumberFormat(&#39;en-GB&#39;, {
     signDisplay: &quot;exceptZero&quot;
 }).format(0.55);
 // → &#39;+55%&#39;</code></pre>
-<p>Note that when the currency sign is “accounting”, parentheses might be used instead of a minus sign:</p>
+<p>Note that when the currency sign is "accounting”, parentheses might be used instead of a minus sign:</p>
 <pre><code>new Intl.NumberFormat(&#39;bn&#39;, {
   style: &#39;currency&#39;,
   currency: &#39;USD&#39;,

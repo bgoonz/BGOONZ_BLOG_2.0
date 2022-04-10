@@ -37,7 +37,7 @@ An object’s `valueOf` method is usually invoked by JavaScript, but you can inv
 
     myNumberType.valueOf()
 
-**Note:** Objects in string contexts convert via the [`toString()`](tostring) method, which is different from [`String`](../string) objects converting to string primitives using `valueOf`. All objects have a string conversion, if only “`[object type]`”. But many objects do not convert to number, boolean, or function.
+**Note:** Objects in string contexts convert via the [`toString()`](tostring) method, which is different from [`String`](../string) objects converting to string primitives using `valueOf`. All objects have a string conversion, if only "`[object type]`”. But many objects do not convert to number, boolean, or function.
 
 Examples
 --------

@@ -29,7 +29,7 @@ Examples
 
 ### Scoping in with statements
 
-The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the [`Array.prototype.keys()`](../array/keys) method was introduced. That means that inside `with` environment “keys” would now be the method and not the variable. That’s when the `unscopable`s symbol was introduced. A built-in `unscopables` setting is implemented as [`Array.prototype[@@unscopables]`](../array/@@unscopables) to prevent that some of the Array methods are being scoped into the `with` statement.
+The following code works fine in ES5 and below. However, in ECMAScript 2015 and later, the [`Array.prototype.keys()`](../array/keys) method was introduced. That means that inside `with` environment "keys” would now be the method and not the variable. That’s when the `unscopable`s symbol was introduced. A built-in `unscopables` setting is implemented as [`Array.prototype[@@unscopables]`](../array/@@unscopables) to prevent that some of the Array methods are being scoped into the `with` statement.
 
     var keys = [];
 

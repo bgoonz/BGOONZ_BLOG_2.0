@@ -42,7 +42,7 @@
 <p>If we could only see the <code>ranchers</code> table, we would know that John, Jane, and Jen all work together and that Jim and Jay also work together. However, to know where any of them work, we would need to look at the <code>farms</code> table.</p>
 <h3 id="challenge">Challenge</h3>
 <p>Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in" class="markup--anchor markup--p-anchor">SQLTryIT</a></p>
-<p>How many records in the products table belong to the category “confections”?</p>
+<p>How many records in the products table belong to the category "confections”?</p>
 <h3 id="objective-2-query-data-from-multiple-tables">Objective 2 — query data from multiple tables</h3>
 <p>Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.</p>
 <h3 id="review-1">REVIEW:</h3>
@@ -259,7 +259,7 @@ function remove(id) {
 <img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
 </figure>
 <h3 id="a-database-is-a-collection-of-data-organized-for-easy-retrieval-and-manipulation.">A database is a collection of data organized for easy retrieval and manipulation.</h3>
-<p>We’re concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.</p>
+<p>We’re concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related” data, are the oldest and most common type of database in use today.</p>
 <h3 id="data-persistence">Data Persistence</h3>
 <p>A database is often necessary because our application or code requires data persistence. This term refers to data that is infrequently accessed and not likely to be modified. In less technical terms, the information will be safely stored and remain untouched unless intentionally modified.</p>
 <p>A familiar example of non-persistent data would be JavaScript objects and arrays, which reset each time the code runs.</p>
@@ -988,7 +988,7 @@ router.get(&#39;/&#39;, (req, res) =&gt; {
 <p><a href="https://www.notion.so/19a01f68a659470fb85bbe6906fb4bad" class="markup--anchor markup--p-anchor">Untitled</a></p>
 <p>This table has two issues. There is no proper id field (as multiple farms may have the same name), and multiple fields are representing the same type of data: animals.</p>
 <p><a href="https://www.notion.so/075ad6dd99ac48698625d7b56ca67bef" class="markup--anchor markup--p-anchor">Untitled</a></p>
-<p>While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn’t good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.</p>
+<p>While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn’t good either, as its another example of denormalization. There is no "array” data type in a relational database, so each field must contain only one data point.</p>
 <p><a href="https://www.notion.so/375a15b0cb3f444a8698cd6cb3a08fe0" class="markup--anchor markup--p-anchor">Untitled</a></p>
 <p>Now we’ve solved the multiple fields issue, but we created repeating data (the farm field), which is also an example of denormalization. As well, we can see that if we were tracking additional ranch information (such as annual revenue), that field is only vaguely related to the animal information.</p>
 <p><strong>When these issues begin arising in your schema design, it means that you should separate information into two or more tables.</strong></p>
@@ -1033,7 +1033,7 @@ router.get(&#39;/&#39;, (req, res) =&gt; {
 <li><span id="cc42">One <code>user</code> can have many <code>posts</code>.</span></li>
 <li><span id="dae3">One <code>post</code> can have many <code>comments</code>.</span></li>
 </ul>
-<p>Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the <code>farms</code> and <code>ranchers</code> tables.</p>
+<p>Manage this type of relationship by adding a foreign key on the "many” table of the relationship that points to the primary key on the "one” table. Consider the <code>farms</code> and <code>ranchers</code> tables.</p>
 <p><a href="https://www.notion.so/7dfd2e69c9804a01845f2e9b716a5ac2" class="markup--anchor markup--p-anchor">Untitled</a></p>
 <p><a href="https://www.notion.so/c95f3d418db94ab4b4532eeba0e4f918" class="markup--anchor markup--p-anchor">Untitled</a></p>
 <p>In a many-to-many relationship, the foreign key (in this case <code>farm_id</code>) should <em>not</em> be unique.</p>

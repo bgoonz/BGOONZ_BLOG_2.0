@@ -65,7 +65,7 @@ try {
 
 console.assert(error instanceof TypeError)</code></pre>
 <h3 id="private-instance-fields">Private instance fields</h3>
-<p>Private instance fields are declared with <strong># names</strong> (pronounced “<em>hash names</em>”), which are identifiers prefixed with <code>#</code>. The <code>#</code> is a part of the name itself. It is used for declaration and accessing as well.</p>
+<p>Private instance fields are declared with <strong># names</strong> (pronounced "<em>hash names</em>”), which are identifiers prefixed with <code>#</code>. The <code>#</code> is a part of the name itself. It is used for declaration and accessing as well.</p>
 <p>The encapsulation is enforced by the language. It is a syntax error to refer to <code>#</code> names from out of scope.</p>
 <pre><code>class ClassWithPrivateField {
   #privateField
@@ -98,7 +98,7 @@ instance.#privateField === 42 // Syntax error</code></pre>
 
 console.assert(ClassWithPrivateStaticMethod.publicStaticMethod1() === 42);
 console.assert(ClassWithPrivateStaticMethod.publicStaticMethod2() === 42);</code></pre>
-<p>This can lead to unexpected behavior when using <code>this</code>. In the following example <code>this</code> refers to the <code>Derived</code> class (not the <code>Base</code> class) when we try to call <code>Derived.publicStaticMethod2()</code>, and thus exhibits the same “provenance restriction” as mentioned above:</p>
+<p>This can lead to unexpected behavior when using <code>this</code>. In the following example <code>this</code> refers to the <code>Derived</code> class (not the <code>Base</code> class) when we try to call <code>Derived.publicStaticMethod2()</code>, and thus exhibits the same "provenance restriction” as mentioned above:</p>
 <pre><code>class Base {
   static #privateStaticMethod() {
     return 42;

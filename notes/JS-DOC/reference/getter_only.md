@@ -1,7 +1,7 @@
-TypeError: setting getter-only property “x”
+TypeError: setting getter-only property "x”
 ===========================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
+The JavaScript [strict mode](../strict_mode)-only exception "setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
 
 Message
 -------

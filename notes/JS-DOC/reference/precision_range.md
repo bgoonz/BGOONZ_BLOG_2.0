@@ -1,7 +1,7 @@
 RangeError: precision is out of range
 =====================================
 
-The JavaScript exception “precision is out of range” occurs when a number that’s outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
+The JavaScript exception "precision is out of range” occurs when a number that’s outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
 
 Message
 -------

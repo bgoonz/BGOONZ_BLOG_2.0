@@ -71,7 +71,7 @@ Try it Option Online
 >
 > Try the following example using the **Live Demo** option available at the top right corner of the below sample code box (on our website) −
 >
-> /\* Hello World! program in Node.js \*/ console.log(“Hello World!”);
+> /\* Hello World! program in Node.js \*/ console.log("Hello World!”);
 >
 > For most of the examples given in this tutorial, you will find a Try it option, so just make use of it and enjoy your learning.
 
@@ -87,7 +87,7 @@ This will be used to type your program. Examples of few editors include Windows 
 
 Name and version of text editor can vary on different operating systems. For example, Notepad will be used on Windows, and vim or vi can be used on windows as well as Linux or UNIX.
 
-The files you create with your editor are called source files and contain program source code. The source files for Node.js programs are typically named with the extension “**.js**”.
+The files you create with your editor are called source files and contain program source code. The source files for Node.js programs are typically named with the extension "**.js**”.
 
 Before starting your programming, make sure you have one text editor in place and you have enough experience to write a computer program, save it in a file, and finally execute it.
 
@@ -160,7 +160,7 @@ Verify installation: Executing a File
 
 Create a js file named **main.js** on your machine (Windows or Linux) having the following code.
 
-/\* Hello, World! program in node.js \*/ console.log(“Hello, World!”)
+/\* Hello, World! program in node.js \*/ console.log("Hello, World!”)
 
 Now execute main.js file using Node.js interpreter to see the result −
 
@@ -170,7 +170,7 @@ If everything is fine with your installation, this should produce the following 
 
 Hello, World!
 
-Before creating an actual “Hello, World!” application using Node.js, let us see the components of a Node.js application. A Node.js application consists of the following three important components −
+Before creating an actual "Hello, World!” application using Node.js, let us see the components of a Node.js application. A Node.js application consists of the following three important components −
 
 -   **Import required modules** − We use the **require** directive to load Node.js modules.
 -   **Create server** − A server which will listen to client’s requests similar to Apache HTTP Server.
@@ -183,13 +183,13 @@ Creating Node.js Application
 
 We use the **require** directive to load the http module and store the returned HTTP instance into an http variable as follows −
 
-var http = require(“http”);
+var http = require("http”);
 
 ### Step 2 - Create Server
 
-We use the created http instance and call **http.createServer()** method to create a server instance and then we bind it at port 8081 using the **listen** method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return “Hello World”.
+We use the created http instance and call **http.createServer()** method to create a server instance and then we bind it at port 8081 using the **listen** method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return "Hello World”.
 
-http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as “Hello World” response.end(‘Hello World\\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
+http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as "Hello World” response.end(‘Hello World\\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
 
 The above code is enough to create an HTTP server which listens, i.e., waits for a request over 8081 port on the local machine.
 
@@ -197,7 +197,7 @@ The above code is enough to create an HTTP server which listens, i.e., waits for
 
 Let’s put step 1 and 2 together in a file called **main.js** and start our HTTP server as shown below −
 
-var http = require(“http”); http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as “Hello World” response.end(‘Hello World\\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
+var http = require("http”); http.createServer(function (request, response) { // Send the HTTP header // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/plain’}); // Send the response body as "Hello World” response.end(‘Hello World\\n’); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
 
 Now execute the main.js to start the server as follows −
 
@@ -254,7 +254,7 @@ You can make use variables to store values and print later like any conventional
 
 $ node
 
-> x = 10 10 var y = 10 undefined x + y 20 console.log(“Hello World”) Hello World undefined
+> x = 10 10 var y = 10 undefined x + y 20 console.log("Hello World”) Hello World undefined
 
 ### Multiline Expression
 
@@ -262,7 +262,7 @@ Node REPL supports multiline expression similar to JavaScript. Let’s check the
 
 $ node
 
-> var x = 0 undefined do { … x++; … console.log(“x:” + x); … } while ( x &lt; 5 ); x: 1 x: 2 x: 3 x: 4 x: 5 undefined
+> var x = 0 undefined do { … x++; … console.log("x:” + x); … } while ( x &lt; 5 ); x: 1 x: 2 x: 3 x: 4 x: 5 undefined
 
 **…** comes automatically when you press Enter after the opening bracket. Node automatically checks the continuity of expressions.
 
@@ -351,7 +351,7 @@ Using package.json
 
 package.json is present in the root directory of any Node application/module and is used to define the properties of a package. Let’s open package.json of express package present in **node\_modules/express/**
 
-{ “name”: “express”, “description”: “Fast, unopinionated, minimalist web framework”, “version”: “4.11.2”, “author”: { “name”: “TJ Holowaychuk”, “email”: “tj@vision-media.ca” }, “contributors”: \[{ “name”: “Aaron Heckmann”, “email”: “aaron.heckmann+github@gmail.com” }, { “name”: “Ciaran Jessup”, “email”: “ciaranj@gmail.com” }, { “name”: “Douglas Christopher Wilson”, “email”: “doug@somethingdoug.com” }, { “name”: “Guillermo Rauch”, “email”: “rauchg@gmail.com” }, { “name”: “Jonathan Ong”, “email”: “me@jongleberry.com” }, { “name”: “Roman Shtylman”, “email”: “shtylman+expressjs@gmail.com” }, { “name”: “Young Jae Sim”, “email”: “hanul@hanul.me” } \], “license”: “MIT”, “repository”: { “type”: “git”, “url”: “https://github.com/strongloop/express” }, “homepage”: “https://expressjs.com/”, “keywords”: \[ “express”, “framework”, “sinatra”, “web”, “rest”, “restful”, “router”, “app”, “api” \], “dependencies”: { “accepts”: “~1.2.3”, “content-disposition”: “0.5.0”, “cookie-signature”: “1.0.5”, “debug”: “~2.1.1”, “depd”: “~1.0.0”, “escape-html”: “1.0.1”, “etag”: “~1.5.1”, “finalhandler”: “0.3.3”, “fresh”: “0.2.4”, “media-typer”: “0.3.0”, “methods”: “~1.1.1”, “on-finished”: “~2.2.0”, “parseurl”: “~1.3.0”, “path-to-regexp”: “0.1.3”, “proxy-addr”: “~1.0.6”, “qs”: “2.3.3”, “range-parser”: “~1.0.2”, “send”: “0.11.1”, “serve-static”: “~1.8.1”, “type-is”: “~1.5.6”, “vary”: “~1.0.0”, “cookie”: “0.1.2”, “merge-descriptors”: “0.0.2”, “utils-merge”: “1.0.0” }, “devDependencies”: { “after”: “0.8.1”, “ejs”: “2.1.4”, “istanbul”: “0.3.5”, “marked”: “0.3.3”, “mocha”: “~2.1.0”, “should”: “~4.6.2”, “supertest”: “~0.15.0”, “hjs”: “~0.0.6”, “body-parser”: “~1.11.0”, “connect-redis”: “~2.2.0”, “cookie-parser”: “~1.3.3”, “express-session”: “~1.10.2”, “jade”: “~1.9.1”, “method-override”: “~2.3.1”, “morgan”: “~1.5.1”, “multiparty”: “~4.1.1”, “vhost”: “~3.0.0” }, “engines”: { “node”: “&gt;= 0.10.0” }, “files”: \[ “LICENSE”, “History.md”, “Readme.md”, “index.js”, “lib/” \], “scripts”: { “test”: “mocha –require test/support/env –reporter spec –bail –check-leaks test/ test/acceptance/”, “test-cov”: “istanbul cover node\_modules/mocha/bin/\_mocha – –require test/support/env –reporter dot –check-leaks test/ test/acceptance/”, “test-tap”: “mocha –require test/support/env –reporter tap –check-leaks test/ test/acceptance/”, “test-travis”: “istanbul cover node\_modules/mocha/bin/\_mocha –report lcovonly – –require test/support/env –reporter spec –check-leaks test/ test/acceptance/” }, “gitHead”: “63ab25579bda70b4927a179b580a9c580b6c7ada”, “bugs”: { “url”: “https://github.com/strongloop/express/issues” }, “\_id”: “express@4.11.2”, “\_shasum”: “8df3d5a9ac848585f00a0777601823faecd3b148”, “\_from”: “express@\*”, “\_npmVersion”: “1.4.28”, “\_npmUser”: { “name”: “dougwilson”, “email”: “doug@somethingdoug.com” }, “maintainers”: \[{ “name”: “tjholowaychuk”, “email”: “tj@vision-media.ca” }, { “name”: “jongleberry”, “email”: “jonathanrichardong@gmail.com” }, { “name”: “shtylman”, “email”: “shtylman@gmail.com” }, { “name”: “dougwilson”, “email”: “doug@somethingdoug.com” }, { “name”: “aredridel”, “email”: “aredridel@nbtsc.org” }, { “name”: “strongloop”, “email”: “callback@strongloop.com” }, { “name”: “rfeng”, “email”: “enjoyjava@gmail.com” }\], “dist”: { “shasum”: “8df3d5a9ac848585f00a0777601823faecd3b148”, “tarball”: “https://registry.npmjs.org/express/-/express-4.11.2.tgz” }, “directories”: {}, “\_resolved”: “https://registry.npmjs.org/express/-/express-4.11.2.tgz”, “readme”: “ERROR: No README data found!” }
+{ "name”: "express”, "description”: "Fast, unopinionated, minimalist web framework”, "version”: "4.11.2”, "author”: { "name”: "TJ Holowaychuk”, "email”: "tj@vision-media.ca” }, "contributors”: \[{ "name”: "Aaron Heckmann”, "email”: "aaron.heckmann+github@gmail.com” }, { "name”: "Ciaran Jessup”, "email”: "ciaranj@gmail.com” }, { "name”: "Douglas Christopher Wilson”, "email”: "doug@somethingdoug.com” }, { "name”: "Guillermo Rauch”, "email”: "rauchg@gmail.com” }, { "name”: "Jonathan Ong”, "email”: "me@jongleberry.com” }, { "name”: "Roman Shtylman”, "email”: "shtylman+expressjs@gmail.com” }, { "name”: "Young Jae Sim”, "email”: "hanul@hanul.me” } \], "license”: "MIT”, "repository”: { "type”: "git”, "url”: "https://github.com/strongloop/express” }, "homepage”: "https://expressjs.com/”, "keywords”: \[ "express”, "framework”, "sinatra”, "web”, "rest”, "restful”, "router”, "app”, "api” \], "dependencies”: { "accepts”: "~1.2.3”, "content-disposition”: "0.5.0”, "cookie-signature”: "1.0.5”, "debug”: "~2.1.1”, "depd”: "~1.0.0”, "escape-html”: "1.0.1”, "etag”: "~1.5.1”, "finalhandler”: "0.3.3”, "fresh”: "0.2.4”, "media-typer”: "0.3.0”, "methods”: "~1.1.1”, "on-finished”: "~2.2.0”, "parseurl”: "~1.3.0”, "path-to-regexp”: "0.1.3”, "proxy-addr”: "~1.0.6”, "qs”: "2.3.3”, "range-parser”: "~1.0.2”, "send”: "0.11.1”, "serve-static”: "~1.8.1”, "type-is”: "~1.5.6”, "vary”: "~1.0.0”, "cookie”: "0.1.2”, "merge-descriptors”: "0.0.2”, "utils-merge”: "1.0.0” }, "devDependencies”: { "after”: "0.8.1”, "ejs”: "2.1.4”, "istanbul”: "0.3.5”, "marked”: "0.3.3”, "mocha”: "~2.1.0”, "should”: "~4.6.2”, "supertest”: "~0.15.0”, "hjs”: "~0.0.6”, "body-parser”: "~1.11.0”, "connect-redis”: "~2.2.0”, "cookie-parser”: "~1.3.3”, "express-session”: "~1.10.2”, "jade”: "~1.9.1”, "method-override”: "~2.3.1”, "morgan”: "~1.5.1”, "multiparty”: "~4.1.1”, "vhost”: "~3.0.0” }, "engines”: { "node”: "&gt;= 0.10.0” }, "files”: \[ "LICENSE”, "History.md”, "Readme.md”, "index.js”, "lib/” \], "scripts”: { "test”: "mocha –require test/support/env –reporter spec –bail –check-leaks test/ test/acceptance/”, "test-cov”: "istanbul cover node\_modules/mocha/bin/\_mocha – –require test/support/env –reporter dot –check-leaks test/ test/acceptance/”, "test-tap”: "mocha –require test/support/env –reporter tap –check-leaks test/ test/acceptance/”, "test-travis”: "istanbul cover node\_modules/mocha/bin/\_mocha –report lcovonly – –require test/support/env –reporter spec –check-leaks test/ test/acceptance/” }, "gitHead”: "63ab25579bda70b4927a179b580a9c580b6c7ada”, "bugs”: { "url”: "https://github.com/strongloop/express/issues” }, "\_id”: "express@4.11.2”, "\_shasum”: "8df3d5a9ac848585f00a0777601823faecd3b148”, "\_from”: "express@\*”, "\_npmVersion”: "1.4.28”, "\_npmUser”: { "name”: "dougwilson”, "email”: "doug@somethingdoug.com” }, "maintainers”: \[{ "name”: "tjholowaychuk”, "email”: "tj@vision-media.ca” }, { "name”: "jongleberry”, "email”: "jonathanrichardong@gmail.com” }, { "name”: "shtylman”, "email”: "shtylman@gmail.com” }, { "name”: "dougwilson”, "email”: "doug@somethingdoug.com” }, { "name”: "aredridel”, "email”: "aredridel@nbtsc.org” }, { "name”: "strongloop”, "email”: "callback@strongloop.com” }, { "name”: "rfeng”, "email”: "enjoyjava@gmail.com” }\], "dist”: { "shasum”: "8df3d5a9ac848585f00a0777601823faecd3b148”, "tarball”: "https://registry.npmjs.org/express/-/express-4.11.2.tgz” }, "directories”: {}, "\_resolved”: "https://registry.npmjs.org/express/-/express-4.11.2.tgz”, "readme”: "ERROR: No README data found!” }
 
 Attributes of Package.json
 --------------------------
@@ -431,7 +431,7 @@ Tutorials Point is giving self learning content to teach the world in simple and
 
 Create a js file named **main.js** with the following code −
 
-var fs = require(“fs”); var data = fs.readFileSync(‘input.txt’); console.log(data.toString()); console.log(“Program Ended”);
+var fs = require("fs”); var data = fs.readFileSync(‘input.txt’); console.log(data.toString()); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -450,7 +450,7 @@ Tutorials Point is giving self learning content to teach the world in simple and
 
 Update main.js to have the following code −
 
-var fs = require(“fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) return console.error(err); console.log(data.toString()); }); console.log(“Program Ended”);
+var fs = require("fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) return console.error(err); console.log(data.toString()); }); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -463,7 +463,7 @@ Program Ended Tutorials Point is giving self learning content to teach the world
 These two examples explain the concept of blocking and non-blocking calls.
 
 -   The first example shows that the program blocks until it reads the file and then only it proceeds to end the program.
--   The second example shows that the program does not wait for file reading and proceeds to print “Program Ended” and at the same time, the program without blocking continues reading the file.
+-   The second example shows that the program does not wait for file reading and proceeds to print "Program Ended” and at the same time, the program without blocking continues reading the file.
 
 Thus, a blocking program executes very much in sequence. From the programming point of view, it is easier to implement the logic but non-blocking programs do not execute in sequence. In case a program needs to use any data to be processed, it should be kept within the same block to make it sequential execution.
 
@@ -497,7 +497,7 @@ Example
 
 Create a js file named main.js with the following code −
 
-// Import events module var events = require(‘events’); // Create an eventEmitter object var eventEmitter = new events.EventEmitter(); // Create an event handler as follows var connectHandler = function connected() { console.log(‘connection succesful.’); // Fire the data\_received event eventEmitter.emit(‘data\_received’); } // Bind the connection event with the handler eventEmitter.on(‘connection’, connectHandler); // Bind the data\_received event with the anonymous function eventEmitter.on(‘data\_received’, function() { console.log(‘data received succesfully.’); }); // Fire the connection event eventEmitter.emit(‘connection’); console.log(“Program Ended.”);
+// Import events module var events = require(‘events’); // Create an eventEmitter object var eventEmitter = new events.EventEmitter(); // Create an event handler as follows var connectHandler = function connected() { console.log(‘connection succesful.’); // Fire the data\_received event eventEmitter.emit(‘data\_received’); } // Bind the connection event with the handler eventEmitter.on(‘connection’, connectHandler); // Bind the data\_received event with the anonymous function eventEmitter.on(‘data\_received’, function() { console.log(‘data received succesfully.’); }); // Fire the connection event eventEmitter.emit(‘connection’); console.log("Program Ended.”);
 
 Now let’s try to run the above program and check its output −
 
@@ -516,7 +516,7 @@ Tutorials Point is giving self learning content to teach the world in simple and
 
 Create a js file named main.js having the following code −
 
-var fs = require(“fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) { console.log(err.stack); return; } console.log(data.toString()); }); console.log(“Program Ended”);
+var fs = require("fs”); fs.readFile(‘input.txt’, function (err, data) { if (err) { console.log(err.stack); return; } console.log(data.toString()); }); console.log("Program Ended”);
 
 Here fs.readFile() is a async function whose purpose is to read a file. If an error occurs during the read operation, then the **err object** will contain the corresponding error, else data will contain the contents of the file. **readFile** passes err and data to the callback function after the read operation is complete, which finally prints the content.
 
@@ -635,7 +635,7 @@ Example
 
 Create a js file named main.js with the following Node.js code −
 
-var events = require(‘events’); var eventEmitter = new events.EventEmitter(); // listener \#1 var listner1 = function listner1() { console.log(‘listner1 executed.’); } // listener \#2 var listner2 = function listner2() { console.log(‘listner2 executed.’); } // Bind the connection event with the listner1 function eventEmitter.addListener(‘connection’, listner1); // Bind the connection event with the listner2 function eventEmitter.on(‘connection’, listner2); var eventListeners = require(‘events’).EventEmitter.listenerCount (eventEmitter,‘connection’); console.log(eventListeners + " Listner(s) listening to connection event“); // Fire the connection event eventEmitter.emit(‘connection’); // Remove the binding of listner1 function eventEmitter.removeListener(‘connection’, listner1); console.log(”Listner1 will not listen now.“); // Fire the connection event eventEmitter.emit(‘connection’); eventListeners = require(‘events’).EventEmitter.listenerCount(eventEmitter,‘connection’); console.log(eventListeners +” Listner(s) listening to connection event“); console.log(”Program Ended.");
+var events = require(‘events’); var eventEmitter = new events.EventEmitter(); // listener \#1 var listner1 = function listner1() { console.log(‘listner1 executed.’); } // listener \#2 var listner2 = function listner2() { console.log(‘listner2 executed.’); } // Bind the connection event with the listner1 function eventEmitter.addListener(‘connection’, listner1); // Bind the connection event with the listner2 function eventEmitter.on(‘connection’, listner2); var eventListeners = require(‘events’).EventEmitter.listenerCount (eventEmitter,‘connection’); console.log(eventListeners + " Listner(s) listening to connection event"); // Fire the connection event eventEmitter.emit(‘connection’); // Remove the binding of listner1 function eventEmitter.removeListener(‘connection’, listner1); console.log(”Listner1 will not listen now."); // Fire the connection event eventEmitter.emit(‘connection’); eventListeners = require(‘events’).EventEmitter.listenerCount(eventEmitter,‘connection’); console.log(eventListeners +” Listner(s) listening to connection event"); console.log(”Program Ended.");
 
 Now run the main.js to see the result −
 
@@ -670,9 +670,9 @@ var buf = new Buffer(\[10, 20, 30, 40, 50\]);
 
 Following is the syntax to create a Buffer from a given string and optionally encoding type −
 
-var buf = new Buffer(“Simply Easy Learning”, “utf-8”);
+var buf = new Buffer("Simply Easy Learning”, "utf-8”);
 
-Though “utf8” is the default encoding, you can use any of the following encodings “ascii”, “utf8”, “utf16le”, “ucs2”, “base64” or “hex”.
+Though "utf8” is the default encoding, you can use any of the following encodings "ascii”, "utf8”, "utf16le”, "ucs2”, "base64” or "hex”.
 
 Writing to Buffers
 ------------------
@@ -698,7 +698,7 @@ This method returns the number of octets written. If there is not enough space i
 
 ### Example
 
-buf = new Buffer(256); len = buf.write(“Simply Easy Learning”); console.log(“Octets written :”+ len);
+buf = new Buffer(256); len = buf.write("Simply Easy Learning”); console.log("Octets written :”+ len);
 
 When the above program is executed, it produces the following result −
 
@@ -776,7 +776,7 @@ This method returns a Buffer instance.
 
 ### Example
 
-var buffer1 = new Buffer(‘TutorialsPoint’); var buffer2 = new Buffer(‘Simply Easy Learning’); var buffer3 = Buffer.concat(\[buffer1,buffer2\]); console.log(“buffer3 content:” + buffer3.toString());
+var buffer1 = new Buffer(‘TutorialsPoint’); var buffer2 = new Buffer(‘Simply Easy Learning’); var buffer3 = Buffer.concat(\[buffer1,buffer2\]); console.log("buffer3 content:” + buffer3.toString());
 
 When the above program is executed, it produces the following result −
 
@@ -833,7 +833,7 @@ No return value. Copies data from a region of this buffer to a region in the tar
 
 ### Example
 
-var buffer1 = new Buffer(‘ABC’); //copy a buffer var buffer2 = new Buffer(3); buffer1.copy(buffer2); console.log(“buffer2 content:” + buffer2.toString());
+var buffer1 = new Buffer(‘ABC’); //copy a buffer var buffer2 = new Buffer(3); buffer1.copy(buffer2); console.log("buffer2 content:” + buffer2.toString());
 
 When the above program is executed, it produces the following result −
 
@@ -861,7 +861,7 @@ Returns a new buffer which references the same memory as the old one, but offset
 
 ### Example
 
-var buffer1 = new Buffer(‘TutorialsPoint’); //slicing a buffer var buffer2 = buffer1.slice(0,9); console.log(“buffer2 content:” + buffer2.toString());
+var buffer1 = new Buffer(‘TutorialsPoint’); //slicing a buffer var buffer2 = buffer1.slice(0,9); console.log("buffer2 content:” + buffer2.toString());
 
 When the above program is executed, it produces the following result −
 
@@ -882,7 +882,7 @@ Returns the size of a buffer in bytes.
 
 ### Example
 
-var buffer = new Buffer(‘TutorialsPoint’); //length of the buffer console.log(“buffer length:” + buffer.length);
+var buffer = new Buffer(‘TutorialsPoint’); //length of the buffer console.log("buffer length:” + buffer.length);
 
 When the above program is executed, it produces following result −
 
@@ -958,7 +958,7 @@ Tutorials Point is giving self learning content to teach the world in simple and
 
 Create a js file named main.js with the following code −
 
-var fs = require(“fs”); var data = ’‘; // Create a readable stream var readerStream = fs.createReadStream(’input.txt’); // Set the encoding to be utf8. readerStream.setEncoding(‘UTF8’); // Handle stream events –&gt; data, end, and error readerStream.on(‘data’, function(chunk) { data += chunk; }); readerStream.on(‘end’,function() { console.log(data); }); readerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log(“Program Ended”);
+var fs = require("fs”); var data = ’‘; // Create a readable stream var readerStream = fs.createReadStream(’input.txt’); // Set the encoding to be utf8. readerStream.setEncoding(‘UTF8’); // Handle stream events –&gt; data, end, and error readerStream.on(‘data’, function(chunk) { data += chunk; }); readerStream.on(‘end’,function() { console.log(data); }); readerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -973,7 +973,7 @@ Writing to a Stream
 
 Create a js file named main.js with the following code −
 
-var fs = require(“fs”); var data = ‘Simply Easy Learning’; // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Write the data to stream with encoding to be utf8 writerStream.write(data,‘UTF8’); // Mark the end of file writerStream.end(); // Handle stream events –&gt; finish, and error writerStream.on(‘finish’, function() { console.log(“Write completed.”); }); writerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log(“Program Ended”);
+var fs = require("fs”); var data = ‘Simply Easy Learning’; // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Write the data to stream with encoding to be utf8 writerStream.write(data,‘UTF8’); // Mark the end of file writerStream.end(); // Handle stream events –&gt; finish, and error writerStream.on(‘finish’, function() { console.log("Write completed.”); }); writerStream.on(‘error’, function(err) { console.log(err.stack); }); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -994,7 +994,7 @@ Piping is a mechanism where we provide the output of one stream as the input to 
 
 Create a js file named main.js with the following code −
 
-var fs = require(“fs”); // Create a readable stream var readerStream = fs.createReadStream(‘input.txt’); // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Pipe the read and write operations // read input.txt and write data to output.txt readerStream.pipe(writerStream); console.log(“Program Ended”);
+var fs = require("fs”); // Create a readable stream var readerStream = fs.createReadStream(‘input.txt’); // Create a writable stream var writerStream = fs.createWriteStream(‘output.txt’); // Pipe the read and write operations // read input.txt and write data to output.txt readerStream.pipe(writerStream); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -1015,7 +1015,7 @@ Chaining is a mechanism to connect the output of one stream to another stream an
 
 Create a js file named main.js with the following code −
 
-var fs = require(“fs”); var zlib = require(‘zlib’); // Compress the file input.txt to input.txt.gz fs.createReadStream(‘input.txt’) .pipe(zlib.createGzip()) .pipe(fs.createWriteStream(‘input.txt.gz’)); console.log(“File Compressed.”);
+var fs = require("fs”); var zlib = require(‘zlib’); // Compress the file input.txt to input.txt.gz fs.createReadStream(‘input.txt’) .pipe(zlib.createGzip()) .pipe(fs.createWriteStream(‘input.txt.gz’)); console.log("File Compressed.”);
 
 Now run the main.js to see the result −
 
@@ -1027,7 +1027,7 @@ File Compressed.
 
 You will find that input.txt has been compressed and it created a file input.txt.gz in the current directory. Now let’s try to decompress the same file using the following code −
 
-var fs = require(“fs”); var zlib = require(‘zlib’); // Decompress the file input.txt.gz to input.txt fs.createReadStream(‘input.txt.gz’) .pipe(zlib.createGunzip()) .pipe(fs.createWriteStream(‘input.txt’)); console.log(“File Decompressed.”);
+var fs = require("fs”); var zlib = require(‘zlib’); // Decompress the file input.txt.gz to input.txt fs.createReadStream(‘input.txt.gz’) .pipe(zlib.createGunzip()) .pipe(fs.createWriteStream(‘input.txt’)); console.log("File Decompressed.”);
 
 Now run the main.js to see the result −
 
@@ -1039,7 +1039,7 @@ File Decompressed.
 
 Node implements File I/O using simple wrappers around standard POSIX functions. The Node File System (fs) module can be imported using the following syntax −
 
-var fs = require(“fs”)
+var fs = require("fs”)
 
 Synchronous vs Asynchronous
 ---------------------------
@@ -1054,7 +1054,7 @@ Tutorials Point is giving self learning content to teach the world in simple and
 
 Let us create a js file named **main.js** with the following code −
 
-var fs = require(“fs”); // Asynchronous read fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log(“Asynchronous read:” + data.toString()); }); // Synchronous read var data = fs.readFileSync(‘input.txt’); console.log(“Synchronous read:” + data.toString()); console.log(“Program Ended”);
+var fs = require("fs”); // Asynchronous read fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log("Asynchronous read:” + data.toString()); }); // Synchronous read var data = fs.readFileSync(‘input.txt’); console.log("Synchronous read:” + data.toString()); console.log("Program Ended”);
 
 Now run the main.js to see the result −
 
@@ -1171,7 +1171,7 @@ Like ‘a+’ but fails if the the path exists.
 
 Let us create a js file named **main.js** having the following code to open a file input.txt for reading and writing.
 
-var fs = require(“fs”); // Asynchronous - Opening File console.log(“Going to open file!”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); });
+var fs = require("fs”); // Asynchronous - Opening File console.log("Going to open file!”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log("File opened successfully!”); });
 
 Now run the main.js to see the result −
 
@@ -1249,7 +1249,7 @@ Returns true if file type of asocket.
 
 Let us create a js file named **main.js** with the following code −
 
-var fs = require(“fs”); console.log(“Going to get file info!”); fs.stat(‘input.txt’, function (err, stats) { if (err) { return console.error(err); } console.log(stats); console.log(“Got file info successfully!”); // Check file type console.log(“isFile ?” + stats.isFile()); console.log(“isDirectory ?” + stats.isDirectory()); });
+var fs = require("fs”); console.log("Going to get file info!”); fs.stat(‘input.txt’, function (err, stats) { if (err) { return console.error(err); } console.log(stats); console.log("Got file info successfully!”); // Check file type console.log("isFile ?” + stats.isFile()); console.log("isDirectory ?” + stats.isDirectory()); });
 
 Now run the main.js to see the result −
 
@@ -1283,7 +1283,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); console.log(“Going to write into existing file”); fs.writeFile(‘input.txt’, ‘Simply Easy Learning!’, function(err) { if (err) { return console.error(err); } console.log(“Data written successfully!”); console.log(“Let’s read newly written data”); fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log(“Asynchronous read:” + data.toString()); }); });
+var fs = require("fs”); console.log("Going to write into existing file”); fs.writeFile(‘input.txt’, ‘Simply Easy Learning!’, function(err) { if (err) { return console.error(err); } console.log("Data written successfully!”); console.log("Let’s read newly written data”); fs.readFile(‘input.txt’, function (err, data) { if (err) { return console.error(err); } console.log("Asynchronous read:” + data.toString()); }); });
 
 Now run the main.js to see the result −
 
@@ -1319,7 +1319,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** with the following code −
 
-var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err){ console.log(err); } console.log(bytes + " bytes read"); // Print only read bytes to avoid junk. if(bytes &gt; 0){ console.log(buf.slice(0, bytes).toString()); } }); });
+var fs = require("fs”); var buf = new Buffer(1024); console.log("Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log("File opened successfully!”); console.log("Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err){ console.log(err); } console.log(bytes + " bytes read"); // Print only read bytes to avoid junk. if(bytes &gt; 0){ console.log(buf.slice(0, bytes).toString()); } }); });
 
 Now run the main.js to see the result −
 
@@ -1349,7 +1349,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) { if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log(“File closed successfully.”); }); }); });
+var fs = require("fs”); var buf = new Buffer(1024); console.log("Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log("File opened successfully!”); console.log("Going to read the file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) { if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log("File closed successfully.”); }); }); });
 
 Now run the main.js to see the result −
 
@@ -1382,7 +1382,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); var buf = new Buffer(1024); console.log(“Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log(“File opened successfully!”); console.log(“Going to truncate the file after 10 bytes”); // Truncate the opened file. fs.ftruncate(fd, 10, function(err) { if (err) { console.log(err); } console.log(“File truncated successfully.”); console.log(“Going to read the same file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log(“File closed successfully.”); }); }); }); });
+var fs = require("fs”); var buf = new Buffer(1024); console.log("Going to open an existing file”); fs.open(‘input.txt’, ‘r+’, function(err, fd) { if (err) { return console.error(err); } console.log("File opened successfully!”); console.log("Going to truncate the file after 10 bytes”); // Truncate the opened file. fs.ftruncate(fd, 10, function(err) { if (err) { console.log(err); } console.log("File truncated successfully.”); console.log("Going to read the same file”); fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){ if (err) { console.log(err); } // Print only read bytes to avoid junk. if(bytes &gt; 0) { console.log(buf.slice(0, bytes).toString()); } // Close the opened file. fs.close(fd, function(err) { if (err) { console.log(err); } console.log("File closed successfully.”); }); }); }); });
 
 Now run the main.js to see the result −
 
@@ -1412,7 +1412,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); console.log(“Going to delete an existing file”); fs.unlink(‘input.txt’, function(err) { if (err) { return console.error(err); } console.log(“File deleted successfully!”); });
+var fs = require("fs”); console.log("Going to delete an existing file”); fs.unlink(‘input.txt’, function(err) { if (err) { return console.error(err); } console.log("File deleted successfully!”); });
 
 Now run the main.js to see the result −
 
@@ -1443,7 +1443,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); console.log(“Going to create directory /tmp/test”); fs.mkdir(‘/tmp/test’,function(err) { if (err) { return console.error(err); } console.log(“Directory created successfully!”); });
+var fs = require("fs”); console.log("Going to create directory /tmp/test”); fs.mkdir(‘/tmp/test’,function(err) { if (err) { return console.error(err); } console.log("Directory created successfully!”); });
 
 Now run the main.js to see the result −
 
@@ -1473,7 +1473,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); console.log(“Going to read directory /tmp”); fs.readdir(“/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); });
+var fs = require("fs”); console.log("Going to read directory /tmp”); fs.readdir("/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); });
 
 Now run the main.js to see the result −
 
@@ -1503,7 +1503,7 @@ Here is the description of the parameters used −
 
 Let us create a js file named **main.js** having the following code −
 
-var fs = require(“fs”); console.log(“Going to delete directory /tmp/test”); fs.rmdir(“/tmp/test”,function(err) { if (err) { return console.error(err); } console.log(“Going to read directory /tmp”); fs.readdir(“/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); }); });
+var fs = require("fs”); console.log("Going to delete directory /tmp/test”); fs.rmdir("/tmp/test”,function(err) { if (err) { return console.error(err); } console.log("Going to read directory /tmp”); fs.readdir("/tmp/”,function(err, files) { if (err) { return console.error(err); } files.forEach( function (file) { console.log( file ); }); }); });
 
 Now run the main.js to see the result −
 
@@ -1569,7 +1569,7 @@ This function returns an opaque value that represents the timer which can be use
 
 Create a js file named main.js with the following code −
 
-function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds setTimeout(printHello, 2000);
+function printHello() { console.log( "Hello, World!”); } // Now call above function after 2 seconds setTimeout(printHello, 2000);
 
 Now run the main.js to see the result −
 
@@ -1588,7 +1588,7 @@ The **clearTimeout(t)** global function is used to stop a timer that was previou
 
 Create a js file named main.js with the following code −
 
-function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds var t = setTimeout(printHello, 2000); // Now clear the timer clearTimeout(t);
+function printHello() { console.log( "Hello, World!”); } // Now call above function after 2 seconds var t = setTimeout(printHello, 2000); // Now clear the timer clearTimeout(t);
 
 Now run the main.js to see the result −
 
@@ -1607,7 +1607,7 @@ This function returns an opaque value that represents the timer which can be use
 
 Create a js file named main.js with the following code −
 
-function printHello() { console.log( “Hello, World!”); } // Now call above function after 2 seconds setInterval(printHello, 2000);
+function printHello() { console.log( "Hello, World!”); } // Now call above function after 2 seconds setInterval(printHello, 2000);
 
 Now run the main.js to see the result −
 
@@ -1702,7 +1702,7 @@ Create a js file named server.js −
 
 **File: server.js**
 
-var http = require(‘http’); var fs = require(‘fs’); var url = require(‘url’); // Create a server http.createServer( function (request, response) { // Parse the request containing file name var pathname = url.parse(request.url).pathname; // Print the name of the file for which request is made. console.log(“Request for” + pathname + " received."); // Read the requested file content from file system fs.readFile(pathname.substr(1), function (err, data) { if (err) { console.log(err); // HTTP Status: 404 : NOT FOUND // Content Type: text/plain response.writeHead(404, {‘Content-Type’: ‘text/html’}); } else { //Page found // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/html’}); // Write the content of the file to response body response.write(data.toString()); } // Send the response body response.end(); }); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
+var http = require(‘http’); var fs = require(‘fs’); var url = require(‘url’); // Create a server http.createServer( function (request, response) { // Parse the request containing file name var pathname = url.parse(request.url).pathname; // Print the name of the file for which request is made. console.log("Request for” + pathname + " received."); // Read the requested file content from file system fs.readFile(pathname.substr(1), function (err, data) { if (err) { console.log(err); // HTTP Status: 404 : NOT FOUND // Content Type: text/plain response.writeHead(404, {‘Content-Type’: ‘text/html’}); } else { //Page found // HTTP Status: 200 : OK // Content Type: text/plain response.writeHead(200, {‘Content-Type’: ‘text/html’}); // Write the content of the file to response body response.write(data.toString()); } // Send the response body response.end(); }); }).listen(8081); // Console will print the message console.log(‘Server running at http://127.0.0.1:8081/’);
 
 Next let’s create the following html file named index.htm in the same directory where you created server.js.
 
@@ -1783,7 +1783,7 @@ Following is a very basic Express app which starts a server and listens on port 
 
 var express = require(‘express’); var app = express(); app.get(‘/’, function (req, res) { res.send(‘Hello World’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Save the above code in a file named server.js and run it with the following command.
 
@@ -1816,9 +1816,9 @@ We have seen a basic application which serves HTTP request for the homepage. Rou
 
 We will extend our Hello World program to handle more types of HTTP requests.
 
-var express = require(‘express’); var app = express(); // This responds with “Hello World” on the homepage app.get(‘/’, function (req, res) { console.log(“Got a GET request for the homepage”); res.send(‘Hello GET’); }) // This responds a POST request for the homepage app.post(‘/’, function (req, res) { console.log(“Got a POST request for the homepage”); res.send(‘Hello POST’); }) // This responds a DELETE request for the /del\_user page. app.delete(‘/del\_user’, function (req, res) { console.log(“Got a DELETE request for /del\_user”); res.send(‘Hello DELETE’); }) // This responds a GET request for the /list\_user page. app.get(‘/list\_user’, function (req, res) { console.log(“Got a GET request for /list\_user”); res.send(‘Page Listing’); }) // This responds a GET request for abcd, abxcd, ab123cd, and so on app.get(‘/ab\*cd’, function(req, res) { console.log(“Got a GET request for /ab\*cd”); res.send(‘Page Pattern Match’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
+var express = require(‘express’); var app = express(); // This responds with "Hello World” on the homepage app.get(‘/’, function (req, res) { console.log("Got a GET request for the homepage”); res.send(‘Hello GET’); }) // This responds a POST request for the homepage app.post(‘/’, function (req, res) { console.log("Got a POST request for the homepage”); res.send(‘Hello POST’); }) // This responds a DELETE request for the /del\_user page. app.delete(‘/del\_user’, function (req, res) { console.log("Got a DELETE request for /del\_user”); res.send(‘Hello DELETE’); }) // This responds a GET request for the /list\_user page. app.get(‘/list\_user’, function (req, res) { console.log("Got a GET request for /list\_user”); res.send(‘Page Listing’); }) // This responds a GET request for abcd, abxcd, ab123cd, and so on app.get(‘/ab\*cd’, function(req, res) { console.log("Got a GET request for /ab\*cd”); res.send(‘Page Pattern Match’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Save the above code in a file named server.js and run it with the following command.
 
@@ -1855,11 +1855,11 @@ We will keep a few images in **public/images** sub-directory as follows −
 
 node\_modules server.js public/ public/images public/images/logo.png
 
-Let’s modify “Hello Word” app to add the functionality to handle static files.
+Let’s modify "Hello Word” app to add the functionality to handle static files.
 
 var express = require(‘express’); var app = express(); app.use(express.static(‘public’)); app.get(‘/’, function (req, res) { res.send(‘Hello World’); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Save the above code in a file named server.js and run it with the following command.
 
@@ -1879,15 +1879,15 @@ Last Name:
 
 Let’s save above code in index.htm and modify server.js to handle home page requests as well as the input sent by the HTML form.
 
-var express = require(‘express’); var app = express(); app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + “/” + “index.htm” ); }) app.get(‘/process\_get’, function (req, res) { // Prepare output in JSON format response = { first\_name:req.query.first\_name, last\_name:req.query.last\_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
+var express = require(‘express’); var app = express(); app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + "/” + "index.htm” ); }) app.get(‘/process\_get’, function (req, res) { // Prepare output in JSON format response = { first\_name:req.query.first\_name, last\_name:req.query.last\_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Accessing the HTML document using *http://127.0.0.1:8081/index.htm* will generate the following form −
 
 Now you can enter the First and Last Name and then click submit button to see the result and it should return the following result −
 
-{“first\_name”:“John”,“last\_name”:“Paul”}
+{"first\_name”:"John”,"last\_name”:"Paul”}
 
 POST Method
 -----------
@@ -1899,15 +1899,15 @@ Last Name:
 
 Let’s save the above code in index.htm and modify server.js to handle home page requests as well as the input sent by the HTML form.
 
-var express = require(‘express’); var app = express(); var bodyParser = require(‘body-parser’); // Create application/x-www-form-urlencoded parser var urlencodedParser = bodyParser.urlencoded({ extended: false }) app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + “/” + “index.htm” ); }) app.post(‘/process\_post’, urlencodedParser, function (req, res) { // Prepare output in JSON format response = { first\_name:req.body.first\_name, last\_name:req.body.last\_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
+var express = require(‘express’); var app = express(); var bodyParser = require(‘body-parser’); // Create application/x-www-form-urlencoded parser var urlencodedParser = bodyParser.urlencoded({ extended: false }) app.use(express.static(‘public’)); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + "/” + "index.htm” ); }) app.post(‘/process\_post’, urlencodedParser, function (req, res) { // Prepare output in JSON format response = { first\_name:req.body.first\_name, last\_name:req.body.last\_name }; console.log(response); res.end(JSON.stringify(response)); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Accessing the HTML document using *http://127.0.0.1:8081/index.htm* will generate the following form −
 
 Now you can enter the First and Last Name and then click the submit button to see the following result −
 
-{“first\_name”:“John”,“last\_name”:“Paul”}
+{"first\_name”:"John”,"last\_name”:"Paul”}
 
 File Upload
 -----------
@@ -1917,14 +1917,14 @@ The following HTML code creates a file uploader form. This form has method attri
 ### File Upload:
 
 Select a file to upload:  
-&lt;form action = “http://127.0.0.1:8081/file\_upload” method = “POST” enctype = “multipart/form-data”&gt; &lt;input type=“file” name=“file” size=“50” /&gt;  
-&lt;input type = “submit” value = “Upload File” /&gt;
+&lt;form action = "http://127.0.0.1:8081/file\_upload” method = "POST” enctype = "multipart/form-data”&gt; &lt;input type="file” name="file” size="50” /&gt;  
+&lt;input type = "submit” value = "Upload File” /&gt;
 
 Let’s save above code in index.htm and modify server.js to handle home page requests as well as file upload.
 
-var express = require(‘express’); var app = express(); var fs = require(“fs”); var bodyParser = require(‘body-parser’); var multer = require(‘multer’); app.use(express.static(‘public’)); app.use(bodyParser.urlencoded({ extended: false })); app.use(multer({ dest: ‘/tmp/’})); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + “/” + “index.htm” ); }) app.post(‘/file\_upload’, function (req, res) { console.log(req.files.file.name); console.log(req.files.file.path); console.log(req.files.file.type); var file = \_\_dirname + “/” + req.files.file.name; fs.readFile( req.files.file.path, function (err, data) { fs.writeFile(file, data, function (err) { if( err ) { console.log( err ); } else { response = { message:‘File uploaded successfully’, filename:req.files.file.name }; } console.log( response ); res.end( JSON.stringify( response ) ); }); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
+var express = require(‘express’); var app = express(); var fs = require("fs”); var bodyParser = require(‘body-parser’); var multer = require(‘multer’); app.use(express.static(‘public’)); app.use(bodyParser.urlencoded({ extended: false })); app.use(multer({ dest: ‘/tmp/’})); app.get(‘/index.htm’, function (req, res) { res.sendFile( \_\_dirname + "/” + "index.htm” ); }) app.post(‘/file\_upload’, function (req, res) { console.log(req.files.file.name); console.log(req.files.file.path); console.log(req.files.file.type); var file = \_\_dirname + "/” + req.files.file.name; fs.readFile( req.files.file.path, function (err, data) { fs.writeFile(file, data, function (err) { if( err ) { console.log( err ); } else { response = { message:‘File uploaded successfully’, filename:req.files.file.name }; } console.log( response ); res.end( JSON.stringify( response ) ); }); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port
 
-console.log(“Example app listening at http://%s:%s”, host, port) })
+console.log("Example app listening at http://%s:%s”, host, port) })
 
 Accessing the HTML document using *http://127.0.0.1:8081/index.htm* will generate the following form −
 
@@ -1937,7 +1937,7 @@ Cookies Management
 
 You can send cookies to a Node.js server which can handle the same using the following middleware option. Following is a simple example to print all the cookies sent by the client.
 
-var express = require(‘express’) var cookieParser = require(‘cookie-parser’) var app = express() app.use(cookieParser()) app.get(‘/’, function(req, res) { console.log(“Cookies:”, req.cookies) }) app.listen(8081)
+var express = require(‘express’) var cookieParser = require(‘cookie-parser’) var app = express() app.use(cookieParser()) app.get(‘/’, function(req, res) { console.log("Cookies:”, req.cookies) }) app.listen(8081)
 
 What is REST architecture?
 --------------------------
@@ -1968,7 +1968,7 @@ Creating RESTful for A Library
 
 Consider we have a JSON based database of users having the following users in a file **users.json**:
 
-{ “user1” : { “name” : “mahesh”, “password” : “password1”, “profession” : “teacher”, “id”: 1 }, “user2” : { “name” : “suresh”, “password” : “password2”, “profession” : “librarian”, “id”: 2 }, “user3” : { “name” : “ramesh”, “password” : “password3”, “profession” : “clerk”, “id”: 3 } }
+{ "user1” : { "name” : "mahesh”, "password” : "password1”, "profession” : "teacher”, "id”: 1 }, "user2” : { "name” : "suresh”, "password” : "password2”, "profession” : "librarian”, "id”: 2 }, "user3” : { "name” : "ramesh”, "password” : "password3”, "profession” : "clerk”, "id”: 3 } }
 
 Based on this information we are going to provide following RESTful APIs.
 
@@ -2031,30 +2031,30 @@ Let’s implement our first RESTful API **listUsers** using the following code i
 
 *server.js*
 
-var express = require(‘express’); var app = express(); var fs = require(“fs”); app.get(‘/listUsers’, function (req, res) { fs.readFile( \_\_dirname + “/” + “users.json”, ‘utf8’, function (err, data) { console.log( data ); res.end( data ); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })
+var express = require(‘express’); var app = express(); var fs = require("fs”); app.get(‘/listUsers’, function (req, res) { fs.readFile( \_\_dirname + "/” + "users.json”, ‘utf8’, function (err, data) { console.log( data ); res.end( data ); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log("Example app listening at http://%s:%s”, host, port) })
 
 Now try to access defined API using *URL: http://127.0.0.1:8081/listUsers* and *HTTP Method : GET* on local machine using any REST client. This should produce following result −
 
 You can change given IP address when you will put the solution in production environment.
 
-{ “user1” : { “name” : “mahesh”, “password” : “password1”, “profession” : “teacher”, “id”: 1 }, “user2” : { “name” : “suresh”, “password” : “password2”, “profession” : “librarian”, “id”: 2 }, “user3” : { “name” : “ramesh”, “password” : “password3”, “profession” : “clerk”, “id”: 3 } }
+{ "user1” : { "name” : "mahesh”, "password” : "password1”, "profession” : "teacher”, "id”: 1 }, "user2” : { "name” : "suresh”, "password” : "password2”, "profession” : "librarian”, "id”: 2 }, "user3” : { "name” : "ramesh”, "password” : "password3”, "profession” : "clerk”, "id”: 3 } }
 
 Add User
 --------
 
 Following API will show you how to add new user in the list. Following is the detail of the new user −
 
-user = { “user4” : { “name” : “mohit”, “password” : “password4”, “profession” : “teacher”, “id”: 4 } }
+user = { "user4” : { "name” : "mohit”, "password” : "password4”, "profession” : "teacher”, "id”: 4 } }
 
 You can accept the same input in the form of JSON using Ajax call but for teaching point of view, we are making it hard coded here. Following is the **addUser** API to a new user in the database −
 
 *server.js*
 
-var express = require(‘express’); var app = express(); var fs = require(“fs”); var user = { “user4” : { “name” : “mohit”, “password” : “password4”, “profession” : “teacher”, “id”: 4 } } app.post(‘/addUser’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + “/” + “users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); data\[“user4”\] = user\[“user4”\]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })
+var express = require(‘express’); var app = express(); var fs = require("fs”); var user = { "user4” : { "name” : "mohit”, "password” : "password4”, "profession” : "teacher”, "id”: 4 } } app.post(‘/addUser’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + "/” + "users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); data\["user4”\] = user\["user4”\]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log("Example app listening at http://%s:%s”, host, port) })
 
 Now try to access defined API using *URL: http://127.0.0.1:8081/addUser* and *HTTP Method : POST* on local machine using any REST client. This should produce following result −
 
-{ “user1”:{“name”:“mahesh”,“password”:“password1”,“profession”:“teacher”,“id”:1}, “user2”:{“name”:“suresh”,“password”:“password2”,“profession”:“librarian”,“id”:2}, “user3”:{“name”:“ramesh”,“password”:“password3”,“profession”:“clerk”,“id”:3}, “user4”:{“name”:“mohit”,“password”:“password4”,“profession”:“teacher”,“id”:4} }
+{ "user1”:{"name”:"mahesh”,"password”:"password1”,"profession”:"teacher”,"id”:1}, "user2”:{"name”:"suresh”,"password”:"password2”,"profession”:"librarian”,"id”:2}, "user3”:{"name”:"ramesh”,"password”:"password3”,"profession”:"clerk”,"id”:3}, "user4”:{"name”:"mohit”,"password”:"password4”,"profession”:"teacher”,"id”:4} }
 
 Show Detail
 -----------
@@ -2063,11 +2063,11 @@ Now we will implement an API which will be called using user ID and it will disp
 
 *server.js*
 
-var express = require(‘express’); var app = express(); var fs = require(“fs”); app.get(‘/:id’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + “/” + “users.json”, ‘utf8’, function (err, data) { var users = JSON.parse( data ); var user = users\[“user” + req.params.id\] console.log( user ); res.end( JSON.stringify(user)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })
+var express = require(‘express’); var app = express(); var fs = require("fs”); app.get(‘/:id’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + "/” + "users.json”, ‘utf8’, function (err, data) { var users = JSON.parse( data ); var user = users\["user” + req.params.id\] console.log( user ); res.end( JSON.stringify(user)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log("Example app listening at http://%s:%s”, host, port) })
 
 Now try to access defined API using *URL: http://127.0.0.1:8081/2* and *HTTP Method : GET* on local machine using any REST client. This should produce following result −
 
-{“name”:“suresh”,“password”:“password2”,“profession”:“librarian”,“id”:2}
+{"name”:"suresh”,"password”:"password2”,"profession”:"librarian”,"id”:2}
 
 Delete User
 -----------
@@ -2076,11 +2076,11 @@ This API is very similar to addUser API where we receive input data through req.
 
 **server.js**
 
-var express = require(‘express’); var app = express(); var fs = require(“fs”); var id = 2; app.delete(‘/deleteUser’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + “/” + “users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); delete data\[“user” + 2\]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log(“Example app listening at http://%s:%s”, host, port) })
+var express = require(‘express’); var app = express(); var fs = require("fs”); var id = 2; app.delete(‘/deleteUser’, function (req, res) { // First read existing users. fs.readFile( \_\_dirname + "/” + "users.json”, ‘utf8’, function (err, data) { data = JSON.parse( data ); delete data\["user” + 2\]; console.log( data ); res.end( JSON.stringify(data)); }); }) var server = app.listen(8081, function () { var host = server.address().address var port = server.address().port console.log("Example app listening at http://%s:%s”, host, port) })
 
 Now try to access defined API using *URL: http://127.0.0.1:8081/deleteUser* and *HTTP Method : DELETE* on local machine using any REST client. This should produce following result −
 
-{“user1”:{“name”:“mahesh”,“password”:“password1”,“profession”:“teacher”,“id”:1}, “user3”:{“name”:“ramesh”,“password”:“password3”,“profession”:“clerk”,“id”:3}}
+{"user1”:{"name”:"mahesh”,"password”:"password1”,"profession”:"teacher”,"id”:1}, "user3”:{"name”:"ramesh”,"password”:"password3”,"profession”:"clerk”,"id”:3}}
 
 Node.js runs in a single-thread mode, but it uses an event-driven paradigm to handle concurrency. It also facilitates creation of child processes to leverage parallel processing on multi-core CPU based systems.
 
@@ -2127,7 +2127,7 @@ Let us create two js files named support.js and master.js −
 
 **File: support.js**
 
-console.log(“Child Process” + process.argv\[2\] + " executed." );
+console.log("Child Process” + process.argv\[2\] + " executed." );
 
 **File: master.js**
 
@@ -2177,7 +2177,7 @@ Create two js files named support.js and master.js −
 
 **File: support.js**
 
-console.log(“Child Process” + process.argv\[2\] + " executed." );
+console.log("Child Process” + process.argv\[2\] + " executed." );
 
 **File: master.js**
 
@@ -2216,7 +2216,7 @@ Here is the description of the parameters used −
     -   **env** (Object) Environment key-value pairs.
     -   **execPath** (String) Executable used to create the child process.
     -   **execArgv** (Array) List of string arguments passed to the executable (Default: process.execArgv).
-    -   **silent** (Boolean) If true, stdin, stdout, and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent, see the “pipe” and “inherit” options for spawn()’s stdio for more details (default is false).
+    -   **silent** (Boolean) If true, stdin, stdout, and stderr of the child will be piped to the parent, otherwise they will be inherited from the parent, see the "pipe” and "inherit” options for spawn()’s stdio for more details (default is false).
     -   **uid** (Number) Sets the user identity of the process.
     -   **gid** (Number) Sets the group identity of the process.
 
@@ -2229,11 +2229,11 @@ Create two js files named support.js and master.js −
 
 **File: support.js**
 
-console.log(“Child Process” + process.argv\[2\] + " executed." );
+console.log("Child Process” + process.argv\[2\] + " executed." );
 
 **File: master.js**
 
-const fs = require(‘fs’); const child\_process = require(‘child\_process’); for(var i=0; i&lt;3; i++) { var worker\_process = child\_process.fork(“support.js”, \[i\]); worker\_process.on(‘close’, function (code) { console.log(‘child process exited with code’ + code); }); }
+const fs = require(‘fs’); const child\_process = require(‘child\_process’); for(var i=0; i&lt;3; i++) { var worker\_process = child\_process.fork("support.js”, \[i\]); worker\_process.on(‘close’, function (code) { console.log(‘child process exited with code’ + code); }); }
 
 Now run the master.js to see the result −
 

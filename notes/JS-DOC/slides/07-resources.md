@@ -8,8 +8,8 @@
 
 -   [quirksmode.org - JavaScript](http://quirksmode.org/js/contents.html) — basic introduction and excellent explanation of event handling.
 
--   [Learning Advanced JavaScript](http://ejohn.org/apps/learn/) — “strange” JavaScript concepts explored.
+-   [Learning Advanced JavaScript](http://ejohn.org/apps/learn/) — "strange” JavaScript concepts explored.
 
--   [jsFiddle](http://jsfiddle.net/) — an online “editor” to quickly prototype JavaScript examples (with HTML, CSS and a selection of JS libraries).
+-   [jsFiddle](http://jsfiddle.net/) — an online "editor” to quickly prototype JavaScript examples (with HTML, CSS and a selection of JS libraries).
 
 -   [Learn how to **debug** JavaScript](https://developers.google.com/chrome-developer-tools/docs/javascript-debugging) — knowing how to debug a program written in a specific language is as as important as knowing the language itself.

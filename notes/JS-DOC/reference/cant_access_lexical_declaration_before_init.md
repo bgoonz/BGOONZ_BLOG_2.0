@@ -1,7 +1,7 @@
 ReferenceError: can’t access lexical declaration\`X’ before initialization
 ==========================================================================
 
-The JavaScript exception “can’t access lexical declaration \`*variable*’ before initialization” occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
+The JavaScript exception "can’t access lexical declaration \`*variable*’ before initialization” occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
 
 Message
 -------
@@ -25,7 +25,7 @@ Examples
 
 ### Invalid cases
 
-In this case, the variable “foo” is redeclared in the block statement using `let`.
+In this case, the variable "foo” is redeclared in the block statement using `let`.
 
     function test() {
       let foo = 33;
@@ -39,7 +39,7 @@ In this case, the variable “foo” is redeclared in the block statement using 
 
 ### Valid cases
 
-To change “foo” inside the if statement, you need to remove the `let` that causes the redeclaration.
+To change "foo” inside the if statement, you need to remove the `let` that causes the redeclaration.
 
     function test(){
        let foo = 33;

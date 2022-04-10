@@ -31,14 +31,14 @@
 <h1 id="to-create-a-socks-proxy-on-localhost-and">To create a SOCKS proxy on localhost and <port>:</h1>
 <p>ssh -qND <port> <user>@<host></p>
 <h1 id="to-tunnel-an-ssh-session-over-the-socks-proxy-on-localhost-and-port-9999">To tunnel an ssh session over the SOCKS proxy on localhost and port 9999:</h1>
-<p>ssh -o “ProxyCommand nc -x 127.0.0.1:9999 -X 4 %h %p” <user>@<host></p>
-<h1 id="x-use-an-xsession--c-compress-data--c-blowfish-use-the-encryption-blowfish">-X use an xsession, -C compress data, “-c blowfish” use the encryption blowfish:</h1>
+<p>ssh -o "ProxyCommand nc -x 127.0.0.1:9999 -X 4 %h %p” <user>@<host></p>
+<h1 id="x-use-an-xsession--c-compress-data--c-blowfish-use-the-encryption-blowfish">-X use an xsession, -C compress data, "-c blowfish” use the encryption blowfish:</h1>
 <p>ssh <user>@<host> -C -c blowfish -X</p>
 <h1 id="for-more-information-see">For more information, see:</h1>
 <h1 id="httpunix.stackexchange.comq1275544856">http://unix.stackexchange.com/q/12755/44856</h1>
 <h1 id="to-copy-files-and-folders-through-ssh-from-remote-host-to-pwd-with-tar.gz">To copy files and folders through ssh from remote host to pwd with tar.gz</h1>
 <h1 id="compression-when-there-is-no-rsync-command-available">compression when there is no rsync command available:</h1>
-<p>ssh <user>@<host> “cd /var/www/Shared/; tar zcf - asset1 asset2” | tar zxf -</p>
+<p>ssh <user>@<host> "cd /var/www/Shared/; tar zcf - asset1 asset2” | tar zxf -</p>
 <h1 id="to-mount-folderfilesystem-through-ssh">To mount folder/filesystem through SSH</h1>
 <h1 id="install-sshfs-from-httpsgithub.comlibfusesshfs">Install SSHFS from https://github.com/libfuse/sshfs</h1>
 <h1 id="will-allow-you-to-mount-a-folder-securely-over-a-network.">Will allow you to mount a folder securely over a network.</h1>

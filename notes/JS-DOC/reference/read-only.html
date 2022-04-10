@@ -13,8 +13,8 @@
   </style>
 </head>
 <body>
-<h1 id="typeerror-x-is-read-only">TypeError: “x” is read-only</h1>
-<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “is read-only” occurs when a global variable or object property that was assigned to is a read-only property.</p>
+<h1 id="typeerror-x-is-read-only">TypeError: "x” is read-only</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception "is read-only” occurs when a global variable or object property that was assigned to is a read-only property.</p>
 <h2 id="message">Message</h2>
 <pre><code>TypeError: Assignment to read-only properties is not allowed in strict mode (Edge)
 TypeError: &quot;x&quot; is read-only (Firefox)
@@ -44,7 +44,7 @@ frozenArray[0]++;  // TypeError</code></pre>
 <pre><code>&#39;use strict&#39;;
 Math.PI = 4;  // TypeError</code></pre>
 <p>Sorry, you can’t do that.</p>
-<p>The global variable <code>undefined</code> is also read-only, so you can’t silence the infamous “undefined is not a function” error by doing this:</p>
+<p>The global variable <code>undefined</code> is also read-only, so you can’t silence the infamous "undefined is not a function” error by doing this:</p>
 <pre><code>&#39;use strict&#39;;
 undefined = function() {};  // TypeError: &quot;undefined&quot; is read-only</code></pre>
 <h3 id="valid-cases">Valid cases</h3>

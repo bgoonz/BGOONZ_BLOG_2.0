@@ -1,7 +1,7 @@
 ReferenceError: deprecated caller or arguments usage
 ====================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “deprecated caller or arguments usage” occurs when the deprecated [`Function.caller`](../global_objects/function/caller) or [`Function.arguments`](../global_objects/function/arguments) properties are used.
+The JavaScript [strict mode](../strict_mode)-only exception "deprecated caller or arguments usage” occurs when the deprecated [`Function.caller`](../global_objects/function/caller) or [`Function.arguments`](../global_objects/function/arguments) properties are used.
 
 Message
 -------

@@ -20,7 +20,7 @@ There are two ways to access properties: *dot notation* and *bracket notation*.
 
 ### Dot notation
 
-In the `object.property` syntax, the `property` must be a valid JavaScript [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the names of properties are technically “IdentifierNames”, not “Identifiers”, so reserved words can be used but are not recommended). For example, `object.$1` is valid, while `object.1` is not.
+In the `object.property` syntax, the `property` must be a valid JavaScript [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the names of properties are technically "IdentifierNames”, not "Identifiers”, so reserved words can be used but are not recommended). For example, `object.$1` is valid, while `object.1` is not.
 
     const variable = object.property_name;
 
@@ -81,11 +81,11 @@ This also outputs `'value'`, since both `foo` and `bar` are converted to the sam
     object[foo] = 'value'
     console.log(object[bar])
 
-In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, this string would be “`[object Object]`”.
+In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, this string would be "`[object Object]`”.
 
 ### Method binding
 
-A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is “passed” by the function call. See [method binding](this#method_binding).
+A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is "passed” by the function call. See [method binding](this#method_binding).
 
 Examples
 --------

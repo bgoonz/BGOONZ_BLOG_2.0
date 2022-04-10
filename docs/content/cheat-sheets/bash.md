@@ -10,7 +10,7 @@ for file in \*; do echo $file found; done
 To implement a case command:
 ============================
 
-case “$1” in 0) echo “zero found”;; 1) echo “one found”;; 2) echo “two found”;; 3\*) echo “something beginning with 3 found”;; esac
+case "$1” in 0) echo "zero found”;; 1) echo "one found”;; 2) echo "two found”;; 3\*) echo "something beginning with 3 found”;; esac
 
 To turn on debugging:
 =====================

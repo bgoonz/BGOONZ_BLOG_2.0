@@ -1,7 +1,7 @@
 SyntaxError: Unexpected token
 =============================
 
-The JavaScript exceptions “unexpected token” occur when a specific language construct was expected, but something else was provided. This might be a simple typo.
+The JavaScript exceptions "unexpected token” occur when a specific language construct was expected, but something else was provided. This might be a simple typo.
 
 Message
 -------

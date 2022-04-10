@@ -41,7 +41,7 @@ INSERT INTO tbl\_name (col1,col2) VALUES(15,col1\*2);
 Basic UPDATE Statement:
 =======================
 
-UPDATE tbl\_name SET col1 = “example”;
+UPDATE tbl\_name SET col1 = "example”;
 
 Basic DELETE Statement:
 =======================

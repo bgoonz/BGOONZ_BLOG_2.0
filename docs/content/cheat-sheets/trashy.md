@@ -3,7 +3,7 @@ To trash foo and bar:
 
 trash foo bar
 
-To trash “foo bar”:
+To trash "foo bar”:
 ===================
 
 trash foo bar

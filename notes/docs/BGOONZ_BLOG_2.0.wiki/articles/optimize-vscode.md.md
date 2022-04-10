@@ -1,4 +1,4 @@
-VS Code Performance - How to Optimize Visual Studio Code and Choose the “Best” Extensions
+VS Code Performance - How to Optimize Visual Studio Code and Choose the "Best” Extensions
 =========================================================================================
 
 > Excerpt
@@ -52,7 +52,7 @@ Not all extensions are created equal
 ------------------------------------
 
 ![extension inequality parody](https://www.freecodecamp.org/news/content/images/2020/10/blind-judgment.jpg)  
-Edit of “Blindfolded Lady Justice” by [Tingey Injury Law Firm](https://unsplash.com/@tingeyinjurylawfirm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/equal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Edit of "Blindfolded Lady Justice” by [Tingey Injury Law Firm](https://unsplash.com/@tingeyinjurylawfirm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/equal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Extensions are loaded and unloaded under different conditions. The author of the extension decides this. This is specified through *Activation Events*, which we will discuss later.
 
@@ -75,7 +75,7 @@ Some of the criteria that I suggest involves looking at source code. Don’t be 
 
 1.  **Is the feature I need available in VS Code already?**
 
-    I demonstrated that you don’t need many popular extensions in an article [“VS Code: you don’t need that extension”](https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html). You can consult the [VS Code docs](https://code.visualstudio.com/Docs) to check on a particular feature.
+    I demonstrated that you don’t need many popular extensions in an article ["VS Code: you don’t need that extension”](https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html). You can consult the [VS Code docs](https://code.visualstudio.com/Docs) to check on a particular feature.
 
 2.  **Does the extension have the features I need?**
 
@@ -109,7 +109,7 @@ Some of the criteria that I suggest involves looking at source code. Don’t be 
 
 3.  **Is it actively maintained?**
 
-    The *Project Details* section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be “done”, so maintenance is not an important consideration.
+    The *Project Details* section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be "done”, so maintenance is not an important consideration.
 
 ![Marktetplace Page Project Details](https://www.freecodecamp.org/news/content/images/2020/10/marketplace-maintenance.png)
 
@@ -166,7 +166,7 @@ This extension will be activated whenever a file of a certain language is opened
 
 The `onLanguage` event takes a [language identifier](https://code.visualstudio.com/docs/languages/identifiers) value. You can declare as many languages as you wish.
 
-**Popular Extensions with this Activation Event**: Most extensions in the [“Programming Languages” category](https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs) in the Visual Studio Code Marketplace have an *onLanguage* entry along with other Activation Events, [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) (5.6M installs - active for *Vue* only), [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) (4.3M installs - active for *YAML* only), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) (1.1M installs - active for supported languages only).
+**Popular Extensions with this Activation Event**: Most extensions in the ["Programming Languages” category](https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs) in the Visual Studio Code Marketplace have an *onLanguage* entry along with other Activation Events, [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) (5.6M installs - active for *Vue* only), [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) (4.3M installs - active for *YAML* only), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) (1.1M installs - active for supported languages only).
 
 ### workspaceContains event
 
@@ -213,7 +213,7 @@ Edit of untitled photo by [Pablo Merchán Montes](https://unsplash.com/@pablomer
 
 It can make a big impact!
 
-John Papa speaks about this in his article “[Is Your VS Code Extension Slow? Here’s How to Speed it Up!](https://dev.to/azure/is-your-vs-code-extension-slow-heres-how-to-speed-it-up-4d66)”.
+John Papa speaks about this in his article "[Is Your VS Code Extension Slow? Here’s How to Speed it Up!](https://dev.to/azure/is-your-vs-code-extension-slow-heres-how-to-speed-it-up-4d66)”.
 
 He reveals the results of an overhaul of 2 of Microsoft’s extensions:
 
@@ -225,7 +225,7 @@ You can improve your favourite extension by raising this issue with the author o
 How to audit performance
 ------------------------
 
-You can run the **Developer: Show Running Extensions** command to get the basic stats about the running extensions. It sorts the extensions from longest to shortest activation time. The time is titled “Startup Activation” if the extension is loaded on startup.
+You can run the **Developer: Show Running Extensions** command to get the basic stats about the running extensions. It sorts the extensions from longest to shortest activation time. The time is titled "Startup Activation” if the extension is loaded on startup.
 
 As you can see from the screenshot, it also gives warnings about performance issues.
 
@@ -243,7 +243,7 @@ The *Extension Activation Stats* section gives a more detailed overview of exten
 
 ![startup performance](https://www.freecodecamp.org/news/content/images/2020/10/startup-performance.png)
 
-You can see that VS Code loads its own “core” extensions for Git, Emmet, and a few others on startup also. ? You don’t want the list of extensions loading on startup to get too long!
+You can see that VS Code loads its own "core” extensions for Git, Emmet, and a few others on startup also. ? You don’t want the list of extensions loading on startup to get too long!
 
 Scorecard for some of the most popular extensions
 -------------------------------------------------
@@ -361,7 +361,7 @@ Vue language support.
 -   **Activation Events**: `onLanguage: vue`.
 -   **Are resources optimized**: No.
 -   **File size**: 70.6 MB.
--   **Activation time on my system**: 252ms. However, the “Finish Activate” stat is 3943ms!
+-   **Activation time on my system**: 252ms. However, the "Finish Activate” stat is 3943ms!
 -   **Test suite**: Yes.
 -   **Actively maintained**: Yes.
 -   **Alternative extensions:** No obvious alternative. Formatting can be done with Prettier.

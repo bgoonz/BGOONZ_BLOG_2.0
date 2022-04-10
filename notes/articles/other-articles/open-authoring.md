@@ -33,9 +33,9 @@ At the same time, any contributors who *do* have write access to the repository 
 
 When a user logs into Netlify CMS who doesn’t have write access to your repo, the CMS asks for permission to create a fork of your repo (or uses their existing fork, if they already have one). They are then presented with the normal CMS interface. The published content shown is from the original repo, so it stays up-to-date as changes are made.
 
-On the editorial workflow screen, the normal three columns are replaced by two columns instead — “Draft” and “Ready to Review”.
+On the editorial workflow screen, the normal three columns are replaced by two columns instead — "Draft” and "Ready to Review”.
 
-When they make changes to content in the CMS, the changes are made to a branch on their fork. In the editorial workflow screen, they see only their own pending changes. Once they’re ready to submit their changes, they can move the card into the “Ready To Review” column to create a pull request. When the pull request is merged (by a repository maintainer via the GitHub UI), Netlify CMS deletes the branch and removes the card from the user’s editorial workflow screen. Open Authoring users cannot publish entries through the CMS.
+When they make changes to content in the CMS, the changes are made to a branch on their fork. In the editorial workflow screen, they see only their own pending changes. Once they’re ready to submit their changes, they can move the card into the "Ready To Review” column to create a pull request. When the pull request is merged (by a repository maintainer via the GitHub UI), Netlify CMS deletes the branch and removes the card from the user’s editorial workflow screen. Open Authoring users cannot publish entries through the CMS.
 
 Users who *do* have write access to the original repository continue to use the CMS normally. Unpublished changes made by users via Open Authoring are not visible on the editorial workflow screen, and their unpublished changes must be merged through the GitHub UI.
 
@@ -51,15 +51,15 @@ Users who *do* have write access to the original repository continue to use the 
 [](#linking-to-specific-entries-in-the-cms)Linking to specific entries in the CMS
 ---------------------------------------------------------------------------------
 
-Open authoring often includes some sort of “Edit this page” link on the live site. Netlify CMS supports this via the **edit** path:
+Open authoring often includes some sort of "Edit this page” link on the live site. Netlify CMS supports this via the **edit** path:
 
     /#/edit/{collectionName}/{entryName}
 
-For the entry named “general” in the “settings” file collection
+For the entry named "general” in the "settings” file collection
 
     https://www.example.com/path-to-cms/#/edit/settings/general
 
-For blog post “test.md” in the “posts” folder collection
+For blog post "test.md” in the "posts” folder collection
 
     https://www.example.com/path-to-cms/#/edit/posts/test
 

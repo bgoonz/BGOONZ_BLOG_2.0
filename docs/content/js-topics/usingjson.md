@@ -2,7 +2,7 @@ title: Using JSON.Stringify tip-number: 40 tip-username: vamshisuram tip-usernam
 
 -   /en/using-json-stringify/
 
-Let’s say there is an object with properties “prop1”, “prop2”, “prop3”. We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
+Let’s say there is an object with properties "prop1”, "prop2”, "prop3”. We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
 
     var obj = {
         prop1: 'value1',
@@ -17,7 +17,7 @@ Let’s say there is an object with properties “prop1”, “prop2”, “prop
     // str
     // {"prop1":"value1","prop2":"value2"}
 
-The **“str”** will contain only info on selected properties only.
+The **"str”** will contain only info on selected properties only.
 
 Instead of array we can pass a function also.
 

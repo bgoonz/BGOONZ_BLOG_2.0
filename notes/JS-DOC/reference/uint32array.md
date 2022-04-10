@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `4` in the case of an `Uint32Array`.
 
 [`Uint32Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Uint32Array` type: “Uint32Array”.
+Returns the string value of the constructor name. In the case of the `Uint32Array` type: "Uint32Array”.
 
 Static methods
 --------------

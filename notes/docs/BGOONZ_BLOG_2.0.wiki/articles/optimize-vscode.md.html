@@ -13,7 +13,7 @@
   </style>
 </head>
 <body>
-<h1 id="vs-code-performance---how-to-optimize-visual-studio-code-and-choose-the-best-extensions">VS Code Performance - How to Optimize Visual Studio Code and Choose the “Best” Extensions</h1>
+<h1 id="vs-code-performance---how-to-optimize-visual-studio-code-and-choose-the-best-extensions">VS Code Performance - How to Optimize Visual Studio Code and Choose the "Best” Extensions</h1>
 <blockquote>
 <h2 id="excerpt">Excerpt</h2>
 <p>Visual Studio Code (VS Code) is designed to be lightweight. It has a tight set of core features, and you can add extra features through extensions. But performance will inevitably be affected as your collection of extensions grows. Do you evaluate the performance of an extension before installing it? What</p>
@@ -49,7 +49,7 @@
 <p>If you want to try it out for yourself, you can follow the instructions he has laid out. He’s done a lot of work to make it as straightforward as possible.</p>
 <h2 id="not-all-extensions-are-created-equal">Not all extensions are created equal</h2>
 <p><img src="https://www.freecodecamp.org/news/content/images/2020/10/blind-judgment.jpg" alt="extension inequality parody" /><br />
-Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyinjurylawfirm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tingey Injury Law Firm</a> on <a href="https://unsplash.com/s/photos/equal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+Edit of "Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyinjurylawfirm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tingey Injury Law Firm</a> on <a href="https://unsplash.com/s/photos/equal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <p>Extensions are loaded and unloaded under different conditions. The author of the extension decides this. This is specified through <em>Activation Events</em>, which we will discuss later.</p>
 <p>There is no feedback in the editor indicating if an extension is active or not. So how do we know when an extension is active?</p>
 <p>Most extensions are written in TypeScript, but they can also be written in JavaScript. Extensions can include Node modules as dependencies.</p>
@@ -61,7 +61,7 @@ Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyi
 <p>Some of the criteria that I suggest involves looking at source code. Don’t be put off by that. To gather the key facts only takes a couple of minutes. I will show you how!</p>
 <ol type="1">
 <li><p><strong>Is the feature I need available in VS Code already?</strong></p>
-<p>I demonstrated that you don’t need many popular extensions in an article <a href="https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html">“VS Code: you don’t need that extension”</a>. You can consult the <a href="https://code.visualstudio.com/Docs">VS Code docs</a> to check on a particular feature.</p></li>
+<p>I demonstrated that you don’t need many popular extensions in an article <a href="https://roboleary.net/vscode/2020/08/05/dont-need-extensions.html">"VS Code: you don’t need that extension”</a>. You can consult the <a href="https://code.visualstudio.com/Docs">VS Code docs</a> to check on a particular feature.</p></li>
 <li><p><strong>Does the extension have the features I need?</strong></p>
 <p>Consult the extension page on Visual Studio Marketplace to find this out.</p></li>
 <li><p><strong>When is an extension loaded and active?</strong></p>
@@ -82,7 +82,7 @@ Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyi
 <li><p><strong>Does the code have tests?</strong></p>
 <p>The extension is going to be more susceptible to bugs without tests. You need to check the source code to see if there are tests.</p></li>
 <li><p><strong>Is it actively maintained?</strong></p>
-<p>The <em>Project Details</em> section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be “done”, so maintenance is not an important consideration.</p></li>
+<p>The <em>Project Details</em> section of the extension page gives an overview of the activity of the public Git repo. In some cases, an extension may be "done”, so maintenance is not an important consideration.</p></li>
 </ol>
 <figure>
 <img src="https://www.freecodecamp.org/news/content/images/2020/10/marketplace-maintenance.png" alt="Marktetplace Page Project Details" /><figcaption>Marktetplace Page Project Details</figcaption>
@@ -119,7 +119,7 @@ Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyi
     &quot;onLanguage:typescript&quot;
 ]</code></pre>
 <p>The <code>onLanguage</code> event takes a <a href="https://code.visualstudio.com/docs/languages/identifiers">language identifier</a> value. You can declare as many languages as you wish.</p>
-<p><strong>Popular Extensions with this Activation Event</strong>: Most extensions in the <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Programming%20Languages&amp;sortBy=Installs">“Programming Languages” category</a> in the Visual Studio Code Marketplace have an <em>onLanguage</em> entry along with other Activation Events, <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a> (5.6M installs - active for <em>Vue</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a> (4.3M installs - active for <em>YAML</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a> (1.1M installs - active for supported languages only).</p>
+<p><strong>Popular Extensions with this Activation Event</strong>: Most extensions in the <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Programming%20Languages&amp;sortBy=Installs">"Programming Languages” category</a> in the Visual Studio Code Marketplace have an <em>onLanguage</em> entry along with other Activation Events, <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a> (5.6M installs - active for <em>Vue</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a> (4.3M installs - active for <em>YAML</em> only), <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a> (1.1M installs - active for supported languages only).</p>
 <h3 id="workspacecontains-event">workspaceContains event</h3>
 <p>This extension will be activated whenever you open a folder that contains at least one file that matches a glob pattern.</p>
 <pre><code>&quot;activationEvents&quot;: [
@@ -152,7 +152,7 @@ Edit of “Blindfolded Lady Justice” by <a href="https://unsplash.com/@tingeyi
 <p><img src="https://www.freecodecamp.org/news/content/images/2020/10/burger-bundle.jpg" alt="bundling a burger" /><br />
 Edit of untitled photo by <a href="https://unsplash.com/@pablomerchanm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pablo Merchán Montes</a> on <a href="https://unsplash.com/s/photos/burger?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <p>It can make a big impact!</p>
-<p>John Papa speaks about this in his article “<a href="https://dev.to/azure/is-your-vs-code-extension-slow-heres-how-to-speed-it-up-4d66">Is Your VS Code Extension Slow? Here’s How to Speed it Up!</a>”.</p>
+<p>John Papa speaks about this in his article "<a href="https://dev.to/azure/is-your-vs-code-extension-slow-heres-how-to-speed-it-up-4d66">Is Your VS Code Extension Slow? Here’s How to Speed it Up!</a>”.</p>
 <p>He reveals the results of an overhaul of 2 of Microsoft’s extensions:</p>
 <ol type="1">
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account&amp;wt.mc_id=devto-blog-jopapa">Azure Account</a>: Bundling reduced activation time by 50%. The extension size was reduced from 6.2MB to 840KB through bundling and excluding more files (in the <em>.vscodeignore</em> file).</li>
@@ -160,7 +160,7 @@ Edit of untitled photo by <a href="https://unsplash.com/@pablomerchanm?utm_sourc
 </ol>
 <p>You can improve your favourite extension by raising this issue with the author of an extension. The <a href="https://code.visualstudio.com/api/working-with-extensions/bundling-extension">Bundling Extensions User Guide</a> explains how.</p>
 <h2 id="how-to-audit-performance">How to audit performance</h2>
-<p>You can run the <strong>Developer: Show Running Extensions</strong> command to get the basic stats about the running extensions. It sorts the extensions from longest to shortest activation time. The time is titled “Startup Activation” if the extension is loaded on startup.</p>
+<p>You can run the <strong>Developer: Show Running Extensions</strong> command to get the basic stats about the running extensions. It sorts the extensions from longest to shortest activation time. The time is titled "Startup Activation” if the extension is loaded on startup.</p>
 <p>As you can see from the screenshot, it also gives warnings about performance issues.</p>
 <figure>
 <img src="https://www.freecodecamp.org/news/content/images/2020/10/running-extensions.png" alt="running extensions" /><figcaption>running extensions</figcaption>
@@ -175,7 +175,7 @@ Edit of untitled photo by <a href="https://unsplash.com/@pablomerchanm?utm_sourc
 <figure>
 <img src="https://www.freecodecamp.org/news/content/images/2020/10/startup-performance.png" alt="startup performance" /><figcaption>startup performance</figcaption>
 </figure>
-<p>You can see that VS Code loads its own “core” extensions for Git, Emmet, and a few others on startup also. ? You don’t want the list of extensions loading on startup to get too long!</p>
+<p>You can see that VS Code loads its own "core” extensions for Git, Emmet, and a few others on startup also. ? You don’t want the list of extensions loading on startup to get too long!</p>
 <h2 id="scorecard-for-some-of-the-most-popular-extensions">Scorecard for some of the most popular extensions</h2>
 <p>I am focusing on extensions that I have used myself here. I don’t want to speculate on extensions I haven’t really used.</p>
 <h3 id="eslint">ESLint</h3>
@@ -266,7 +266,7 @@ Edit of untitled photo by <a href="https://unsplash.com/@pablomerchanm?utm_sourc
 <li><strong>Activation Events</strong>: <code>onLanguage: vue</code>.</li>
 <li><strong>Are resources optimized</strong>: No.</li>
 <li><strong>File size</strong>: 70.6 MB.</li>
-<li><strong>Activation time on my system</strong>: 252ms. However, the “Finish Activate” stat is 3943ms!</li>
+<li><strong>Activation time on my system</strong>: 252ms. However, the "Finish Activate” stat is 3943ms!</li>
 <li><strong>Test suite</strong>: Yes.</li>
 <li><strong>Actively maintained</strong>: Yes.</li>
 <li><strong>Alternative extensions:</strong> No obvious alternative. Formatting can be done with Prettier.</li>

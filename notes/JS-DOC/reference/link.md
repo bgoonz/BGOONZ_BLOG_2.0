@@ -33,7 +33,7 @@ Examples
 
 ### Using link()
 
-The following example displays the word “MDN” as a hypertext link that returns the user to the Mozilla Developer Network.
+The following example displays the word "MDN” as a hypertext link that returns the user to the Mozilla Developer Network.
 
     var hotText = 'MDN';
     var url = 'https://developer.mozilla.org/';

@@ -1,7 +1,7 @@
 ---
 title: Adobe Flash
 weight: 0
-excerpt: 
+excerpt: Flash is an obsolete technology developed by Adobe for viewing expressive web applications
 seo:
     title: 'Adobe_Flash'
     robots: []
@@ -10,8 +10,7 @@ seo:
 template: docs
 ---
 
-
-# Flash is an obsolete technology developed by Adobe for viewing expressive web applications, multimedia content, and streaming media.
+#  Flash is an obsolete technology developed by Adobe for viewing expressive web applications, multimedia content, and streaming media.
 
 As of 2021, Flash is no longer supported by Adobe or any major web browsers.
 

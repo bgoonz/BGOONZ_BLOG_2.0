@@ -28,7 +28,7 @@
 <p>In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks; for example tab completion of object names and SQL syntax.</p>
 <p><strong>pgAdmin:</strong></p>
 <p>The pgAdmin package is a free and open-source <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" class="markup--anchor markup--p-anchor" title="Graphical user interface">graphical user interface</a> (GUI) administration tool for PostgreSQL.</p>
-<p>When you read “installation”, that means the actual OS that’s running on your machine. So, you have a Windows installation, Windows 10, that’s running when you boot your computer. Then, when you start the Ubuntu installation, it’s as if there’s a completely separate computer running inside your computer. It’s like having two completely different laptops.</p>
+<p>When you read "installation”, that means the actual OS that’s running on your machine. So, you have a Windows installation, Windows 10, that’s running when you boot your computer. Then, when you start the Ubuntu installation, it’s as if there’s a completely separate computer running inside your computer. It’s like having two completely different laptops.</p>
 <h3 id="other-noteworthy-distinctions">Other Noteworthy Distinctions:</h3>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" />
@@ -66,21 +66,21 @@
 <pre><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -</code></pre>
 <p>If prompted for your password, type it.</p>
 <pre><code>echo &quot;deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main&quot; | sudo tee  /etc/apt/sources.list.d/pgdg.list</code></pre>
-<p>The last line of output of those two commands running should read “OK”. If it does not, try copying and pasting them one at a time.</p>
+<p>The last line of output of those two commands running should read "OK”. If it does not, try copying and pasting them one at a time.</p>
 <p>Now that you’ve registered the PostgreSQL repositories as a source to look for PostgreSQL, you need to update the <code>apt</code> registry. You should do this before you install <em>any</em> software on Ubuntu.</p>
 <pre><code>sudo apt update</code></pre>
 <p>Once that’s finished running, the new entries for PostgreSQL 12 should be in the repository. Now, you can install them with the following command.</p>
 <pre><code>sudo apt install postgresql-client-12 postgresql-common</code></pre>
-<p>If it asks you if you want to install them, please tell it “Y”.</p>
+<p>If it asks you if you want to install them, please tell it "Y”.</p>
 <p>Test that it installed by typing <code>psql --version</code>. You should see it print out information about the version of the installed tools. If it tells you that it can’t find the command, try these instructions over.</p>
 <h3 id="configuring-the-client-tools">Configuring the client tools</h3>
 <p>Since you’re going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you’re going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this, you can customize your shell to always add the extra commands for you.</p>
 <p>This assumes you’re still using Bash. If you changed the shell that your Ubuntu installation uses, please follow that shell’s directions for adding an alias to its startup file.</p>
 <p>Make sure you’re in your Ubuntu home directory. You can do that by typing <code>cd</code> and hitting enter. Use <code>ls</code> to find out if you have a <code>.bashrc</code> file. Type <code>ls .bashrc</code>. If it shows you that one exists, that’s the one you will add the alias to. If it tells you that there is no file named that, then type <code>ls .profile</code>. If it shows you that one exists, that’s the one you will add the alias to. If it shows you that it does not exist, then use the file name <code>.bashrc</code> in the following section.</p>
-<p>Now that you know which profile file to use, type <code>code «profile file name»</code> where “profile file name” is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you’ve already added aliases, in that section), type the following.</p>
+<p>Now that you know which profile file to use, type <code>code «profile file name»</code> where "profile file name” is the name of the file you determined from the last section. Once Visual Studio Code starts up with your file, at the end of it (or if you’ve already added aliases, in that section), type the following.</p>
 <pre><code>alias psql=&quot;psql -h localhost&quot;</code></pre>
 <p>When you run <code>psql</code> from the command line, it will now always add the part about wanting to connect to <em>localhost</em> every time. You would have to type that each time, otherwise.</p>
-<p>To make sure that you set that up correctly, type <code>psql -U postgres postgres</code>. This tells the <code>psql</code> client that you want to connect as the user “postgres” (<code>-U postgres</code>) to the database postgres (<code>postgres</code> at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password, then you should see something like the following output.</p>
+<p>To make sure that you set that up correctly, type <code>psql -U postgres postgres</code>. This tells the <code>psql</code> client that you want to connect as the user "postgres” (<code>-U postgres</code>) to the database postgres (<code>postgres</code> at the end), which is the default database created when PostgreSQL is installed. It will prompt you for a password. Type the password that you used when you installed PostgrSQL, earlier. If the alias works correctly and you type the correct password, then you should see something like the following output.</p>
 <pre><code>psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))
 Type &quot;help&quot; for help.
 
@@ -89,7 +89,7 @@ postgres=#</code></pre>
 <p>Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a file that PostgreSQL will use to automatically send your password every time.</p>
 <p>Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. <strong>Replace the password in the single quotes in the command with the password that you want.</strong> It <em>has</em> to be a non-empty string. PostgreSQL doesn’t like it when it’s not.</p>
 <pre><code>psql -U postgres -c &quot;CREATE USER `whoami` WITH PASSWORD &#39;password&#39; SUPERUSER&quot;</code></pre>
-<p>It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see “CREATE ROLE”.</p>
+<p>It should prompt you for a password. Type the password that you created when you installed PostgreSQL. Once you type the correct password, you should see "CREATE ROLE”.</p>
 <p>Now you will create your PostgreSQL password file. Type the following into your Ubuntu shell to open Visual Studio Code and create a new file.</p>
 <pre><code>code ~/.pgpass</code></pre>
 <p>In that file, you will add this line, which tells it that on localhost for port 5432 (where PostgreSQL is running), for all databases (*), <strong>use your Ubuntu user name and the password that you just created for that user with the</strong> <code>psql</code> <strong>command you just typed.</strong> (If you have forgotten your Ubuntu user name, type <code>whoami</code> on the command line.) Your entry in the file should have this format.</p>
@@ -97,11 +97,11 @@ postgres=#</code></pre>
 <p>Once you have that information in the file, save it, and close Visual Studio Code.</p>
 <p>The last step you have to take is change the permission on that file so that it is only readable by your user. PostgreSQL will ignore it if just anyone can read and write to it. This is for <em>your</em> security. Change the file permissions so only you can read and write to it. You did this once upon a time. Here’s the command.</p>
 <pre><code>chmod go-rw ~/.pgpass</code></pre>
-<p>You can confirm that only you have read/write permission by typing <code>ls -al ~/.pgpass</code>. That should return output that looks like this, <strong>with your Ubuntu user name instead of “web-dev-hub”.</strong></p>
+<p>You can confirm that only you have read/write permission by typing <code>ls -al ~/.pgpass</code>. That should return output that looks like this, <strong>with your Ubuntu user name instead of "web-dev-hub”.</strong></p>
 <pre><code>-rw------- 1 web-dev-hub web-dev-hub 37 Mar 28 21:20 /home/web-dev-hub/.pgpass</code></pre>
 <p>Now, try connecting to PostreSQL by typing <code>psql postgres</code>. Because you added the alias to your startup script, and because you created your <strong>.pgpass</strong> file, it should now connect without prompting you for any credentials! Type <code>\q</code> and press Enter to exit the PostgreSQL command line client.</p>
 <h3 id="installing-postbird">Installing Postbird</h3>
-<p>Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it’s the only file in the list that ends with “.exe”.</p>
+<p>Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it’s the only file in the list that ends with ".exe”.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png" class="graf-image" />
 </figure>
@@ -110,11 +110,11 @@ postgres=#</code></pre>
 <img src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png" class="graf-image" />
 </figure>
 <p>You should get used to seeing this because many open-source applications aren’t signed with the Microsoft Store for monetary and philosophical reasons.</p>
-<p>Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads “More info” and the “Run anyway” button.</p>
+<p>Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads "More info” and the "Run anyway” button.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" />
 </figure>
-<p>When it’s done installing, it will launch itself. Test it out by typing the “postgres” into the “Username” field and the password from your installation in the “Password” field. Click the Connect button. It should properly connect to the running</p>
+<p>When it’s done installing, it will launch itself. Test it out by typing the "postgres” into the "Username” field and the password from your installation in the "Password” field. Click the Connect button. It should properly connect to the running</p>
 <p>You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.</p>
 <h3 id="now..-if-you-still-have-some-gas-in-the-tank-lets-put-our-new-tools-to-work">Now.. if you still have some gas in the tank… let’s put our new tools to work:</h3>
 <h3 id="the-node-postgres">The node-postgres</h3>

@@ -40,14 +40,14 @@ An integer between <code>2</code> and <code>36</code> that represents the <em>ra
 <p><code>parseInt</code> understands exactly two signs: <code>+</code> for positive, and <code>-</code> for negative (since ECMAScript 1). It is done as an initial step in the parsing after whitespace is removed. If no signs are found, the algorithm moves to the following step; otherwise, it removes the sign and runs the number-parsing on the rest of the string.</p>
 <p>A value passed as the radix argument is coerced to a Number (if necessary), then if the value is 0, <code>NaN</code> or <code>Infinity</code> (undefined is coerced to <code>NaN</code>), JavaScript assumes the following:</p>
 <ol type="1">
-<li>If the input <code>string</code> begins with “<code>0x</code>” or “<code>0X</code>” (a zero, followed by lowercase or uppercase X), <code>radix</code> is assumed to be <code>16</code> and the rest of the string is parsed as a hexadecimal number.</li>
+<li>If the input <code>string</code> begins with "<code>0x</code>” or "<code>0X</code>” (a zero, followed by lowercase or uppercase X), <code>radix</code> is assumed to be <code>16</code> and the rest of the string is parsed as a hexadecimal number.</li>
 <li>If the input <code>string</code> begins with any other value, the radix is <code>10</code> (decimal).</li>
 </ol>
 <p>Else if the radix value (coerced if necessary) is not in range [2, 36] (inclusive) <code>parseInt</code> returns <code>NaN</code>.</p>
 <p>If the first character cannot be converted to a number with the radix in use, <code>parseInt</code> returns <code>NaN</code>.</p>
 <p>For arithmetic purposes, the <code>NaN</code> value is not a number in any radix. You can call the <a href="isnan"><code>isNaN</code></a> function to determine if the result of <code>parseInt</code> is <code>NaN</code>. If <code>NaN</code> is passed on to arithmetic operations, the operation result will also be <code>NaN</code>.</p>
 <p>To convert a number to its string literal in a particular radix, use <code>thatNumber.toString(radix)</code>.</p>
-<p><strong>Warning:</strong> <code>parseInt</code> converts a <a href="bigint"><code>BigInt</code></a> to a <a href="number"><code>Number</code></a> and loses precision in the process. This is because trailing non-numeric values, including “<code>n</code>”, are discarded.</p>
+<p><strong>Warning:</strong> <code>parseInt</code> converts a <a href="bigint"><code>BigInt</code></a> to a <a href="number"><code>Number</code></a> and loses precision in the process. This is because trailing non-numeric values, including "<code>n</code>”, are discarded.</p>
 <h3 id="octal-interpretations-with-no-radix">Octal interpretations with no radix</h3>
 <p>Please note that following information doesn’t apply to recent implementations as of 2021.</p>
 <p>Although discouraged by ECMAScript 3, many ECMAScript 3 implementations had interpreted a numeric string beginning with a leading <code>0</code> as octal. The following might have had an octal result, or it might have had a decimal result.</p>

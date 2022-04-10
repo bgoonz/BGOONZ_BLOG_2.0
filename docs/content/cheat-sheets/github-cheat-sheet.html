@@ -101,7 +101,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <h3 id="git-architecture">Git Architecture</h3>
 <h4 id="repository">Repository</h4>
-<p>A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code “element” gives you access to its revision history, among other things.</p>
+<p>A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code "element” gives you access to its revision history, among other things.</p>
 <p>A git repository is comprised of the .git directory &amp; working tree.</p>
 <h4 id="git-directory-component-of-repository">.git Directory (component of repository)</h4>
 <p>The .git directory contains all the configurations, logs, branches, HEAD, and more. <a href="http://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html">Detailed List.</a></p>
@@ -130,7 +130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <h3 id="commands">Commands</h3>
 <h4 id="init">init</h4>
-<p>Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named “.git”.</p>
+<p>Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named ".git”.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1">$ <span class="fu">git</span> init</a></code></pre></div>
 <h4 id="config">config</h4>
 <p>To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is <code>~/.gitconfig</code> ).</p>
@@ -241,7 +241,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-7" title="7"><span class="co"># clone only a specific branch</span></a>
 <a class="sourceLine" id="cb10-8" title="8">$ <span class="fu">git</span> clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git --single-branch</a></code></pre></div>
 <h4 id="commit-1">commit</h4>
-<p>Stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.</p>
+<p>Stores the current contents of the index in a new "commit.” This commit contains the changes made and a message created by the user.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="co"># commit with a message</span></a>
 <a class="sourceLine" id="cb11-2" title="2">$ <span class="fu">git</span> commit -m <span class="st">&quot;Added multiplyNumbers() function to HelloWorld.c&quot;</span></a>
 <a class="sourceLine" id="cb11-3" title="3"></a>
@@ -293,7 +293,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb15-10" title="10"><span class="co"># Show all commits represented by an ASCII graph</span></a>
 <a class="sourceLine" id="cb15-11" title="11">$ <span class="fu">git</span> log --graph</a></code></pre></div>
 <h4 id="merge">merge</h4>
-<p>“Merge” in changes from external commits into the current branch.</p>
+<p>"Merge” in changes from external commits into the current branch.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb16-1" title="1"><span class="co"># Merge the specified branch into the current.</span></a>
 <a class="sourceLine" id="cb16-2" title="2">$ <span class="fu">git</span> merge branchName</a>
 <a class="sourceLine" id="cb16-3" title="3"></a>
@@ -355,7 +355,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb22-1" title="1">$ <span class="fu">git</span> status</a>
 <a class="sourceLine" id="cb22-2" title="2"><span class="co"># On branch master</span></a>
 <a class="sourceLine" id="cb22-3" title="3"><span class="ex">nothing</span> to commit, working directory clean</a></code></pre></div>
-<p>You can see what “hunks” you’ve stashed so far using <code>git stash list</code>. Since the “hunks” are stored in a Last-In-First-Out stack, our most recent change will be at top.</p>
+<p>You can see what "hunks” you’ve stashed so far using <code>git stash list</code>. Since the "hunks” are stored in a Last-In-First-Out stack, our most recent change will be at top.</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb23-1" title="1">$ <span class="fu">git</span> stash list</a>
 <a class="sourceLine" id="cb23-2" title="2"><span class="ex">stash@</span><span class="dt">{0}</span>: WIP on master: 049d078 added the index file</a>
 <a class="sourceLine" id="cb23-3" title="3"><span class="ex">stash@</span><span class="dt">{1}</span>: WIP on master: c264051 Revert <span class="st">&quot;added file_size&quot;</span></a>

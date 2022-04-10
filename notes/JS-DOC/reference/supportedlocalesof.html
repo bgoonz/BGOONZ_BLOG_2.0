@@ -24,14 +24,14 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 <p><code>options</code> <span class="badge inline optional">Optional</span><br />
 An object that may have the following property:</p>
 <p><code>localeMatcher</code><br />
-The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+The locale matching algorithm to use. Possible values are "<code>lookup</code>” and "<code>best fit</code>”; the default is "<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
 <h3 id="return-value">Return value</h3>
 <p>An array of strings representing a subset of the given locale tags that are supported in date and time formatting without having to fall back to the runtime’s default locale.</p>
 <h2 id="description">Description</h2>
 <p>Returns an array with a subset of the language tags provided in <code>locales</code>. The language tags returned are those for which the runtime supports a locale in date and time formatting that the locale matching algorithm used considers a match, so that it wouldn’t have to fall back to the default locale.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="using-supportedlocalesof">Using supportedLocalesOf()</h3>
-<p>Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, <code>supportedLocalesOf</code> returns the Indonesian and German language tags unchanged, even though <code>pinyin</code> collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the “<code>lookup</code>” algorithm here — a “<code>best fit</code>” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.</p>
+<p>Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, <code>supportedLocalesOf</code> returns the Indonesian and German language tags unchanged, even though <code>pinyin</code> collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the "<code>lookup</code>” algorithm here — a "<code>best fit</code>” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.</p>
 <pre><code>const locales = [&#39;ban&#39;, &#39;id-u-co-pinyin&#39;, &#39;de-ID&#39;];
 const options = { localeMatcher: &#39;lookup&#39; };
 console.log(Intl.RelativeTimeFormat.supportedLocalesOf(locales, options).join(&#39;, &#39;));

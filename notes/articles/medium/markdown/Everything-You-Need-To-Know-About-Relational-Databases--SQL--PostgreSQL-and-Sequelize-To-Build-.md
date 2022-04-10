@@ -216,7 +216,7 @@ FROM friends;
 
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
-— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
+— Notice here we are indicating that we want the "name” field from the "friends” table as well as the "name” field from the "puppies” table. We indicate the table name by table.column  
 — We are also aliasing these fields with the AS keyword so that our returned results have friend\_name and puppy\_name as field headers
 
     SELECT
@@ -721,7 +721,7 @@ pool.end(); // invoking end() will close our connection to the database
 ### Sequelize Op operator
 
 -   <span id="dd6a">By requiring Op from the sequelize library we can provide more advanced comparison operators</span>
--   <span id="0a01">const { Op } = require(“sequelize”);</span>
+-   <span id="0a01">const { Op } = require("sequelize”);</span>
 -   <span id="8936">Op.ne: Not equal operator</span>
 
 <!-- -->
@@ -778,7 +778,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 -   <span id="4ee4">Just like the where clause, we can pass an order key to specify we want our results ordered</span>
 -   <span id="46a6">The key order points to an array with the fields that we want to order by</span>
 -   <span id="ba7f">By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)</span>
--   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\[“age”, “DESC”\], “firstName”\], }); console.log(JSON.stringify(cats, null, 2));</span>
+-   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\["age”, "DESC”\], "firstName”\], }); console.log(JSON.stringify(cats, null, 2));</span>
 
 <!-- -->
 

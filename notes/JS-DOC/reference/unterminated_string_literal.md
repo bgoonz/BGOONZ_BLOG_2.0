@@ -1,7 +1,7 @@
 SyntaxError: unterminated string literal
 ========================================
 
-The JavaScript error “unterminated string literal” occurs when there is an unterminated [`String`](../global_objects/string) somewhere. String literals must be enclosed by single (`'`) or double (`"`) quotes.
+The JavaScript error "unterminated string literal” occurs when there is an unterminated [`String`](../global_objects/string) somewhere. String literals must be enclosed by single (`'`) or double (`"`) quotes.
 
 Message
 -------
@@ -41,7 +41,7 @@ Instead, use the [+ operator](https://developer.mozilla.org/en-US/docs/Web/JavaS
                      'to wrap across multiple lines because ' +
                      'otherwise my code is unreadable.';
 
-Or you can use the backslash character (“\\”) at the end of each line to indicate that the string will continue on the next line. Make sure there is no space or any other character after the backslash (except for a line break), or as an indent; otherwise it will not work. That form looks like this:
+Or you can use the backslash character ("\\”) at the end of each line to indicate that the string will continue on the next line. Make sure there is no space or any other character after the backslash (except for a line break), or as an indent; otherwise it will not work. That form looks like this:
 
     var longString = 'This is a very long string which needs \
     to wrap across multiple lines because \

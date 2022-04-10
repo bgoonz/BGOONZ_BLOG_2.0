@@ -1,7 +1,7 @@
 SyntaxError: missing = in const declaration
 ===========================================
 
-The JavaScript exception “missing = in const declaration” occurs when a const declaration was not given a value in the same statement (like `const RED_FLAG;`). You need to provide one (`const RED_FLAG = '#ff0'`).
+The JavaScript exception "missing = in const declaration” occurs when a const declaration was not given a value in the same statement (like `const RED_FLAG;`). You need to provide one (`const RED_FLAG = '#ff0'`).
 
 Message
 -------

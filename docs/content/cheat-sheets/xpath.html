@@ -381,7 +381,7 @@ table.xp tr>:nth-child(3) {width: 10%; text-align:right;}
 </style>
 <h3 id="class-check">Class check</h3>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">/</span>/<span class="ex">div</span>[contains(concat(<span class="st">&#39; &#39;</span>,normalize-space(@class),<span class="st">&#39; &#39;</span>),<span class="st">&#39; foobar &#39;</span>)]</a></code></pre></div>
-<p>Xpath doesn’t have the “check if part of space-separated list” operator, so this is the workaround (<a href="http://pivotallabs.com/xpath-css-class-matching/">source</a>).</p>
+<p>Xpath doesn’t have the "check if part of space-separated list” operator, so this is the workaround (<a href="http://pivotallabs.com/xpath-css-class-matching/">source</a>).</p>
 <h2 id="expressions">Expressions</h2>
 <h3 id="steps-and-axes">Steps and axes</h3>
 <div class="line-block"><code>//</code> | <code>ul</code> | <code>/</code> | <code>a[@id='link']</code> |<br />
@@ -517,7 +517,7 @@ Axis | Step | Axis | Step |</div>
 <a class="sourceLine" id="cb19-3" title="3"><span class="ex">//ul</span>/following-sibling::<span class="ex">li</span>    <span class="co"># ul ~ li</span></a>
 <a class="sourceLine" id="cb19-4" title="4"><span class="ex">//ul</span>/descendant-or-self::<span class="ex">li</span>   <span class="co"># ul li</span></a>
 <a class="sourceLine" id="cb19-5" title="5"><span class="ex">//ul</span>/ancestor-or-self::<span class="ex">li</span>     <span class="co"># $(&#39;ul&#39;).closest(&#39;li&#39;)</span></a></code></pre></div>
-<p>Steps of an expression are separated by <code>/</code>, usually used to pick child nodes. That’s not always true: you can specify a different “axis” with <code>::</code>.</p>
+<p>Steps of an expression are separated by <code>/</code>, usually used to pick child nodes. That’s not always true: you can specify a different "axis” with <code>::</code>.</p>
 <div class="line-block"><code>//</code> | <code>ul</code> | <code>/child::</code> | <code>li</code> |<br />
 Axis | Step | Axis | Step |</div>
 <p>{: .-css-breakdown}</p>

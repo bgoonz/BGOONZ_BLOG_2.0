@@ -19,13 +19,13 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 An object with some or all of the following properties:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `type`  
 The type to use. Possible values are:
 
--   “`cardinal`” for cardinal numbers (refering to the quantity of things). This is the default value.
--   “`ordinal`” for ordinal number (refering to the ordering or ranking of things, e.g. “1st”, “2nd”, “3rd” in English).
+-   "`cardinal`” for cardinal numbers (refering to the quantity of things). This is the default value.
+-   "`ordinal`” for ordinal number (refering to the ordering or ranking of things, e.g. "1st”, "2nd”, "3rd” in English).
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
@@ -49,7 +49,7 @@ Examples
 
 ### Basic usage
 
-In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. “dog” and “dogs”.
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. "dog” and "dogs”.
 
     var pr = new Intl.PluralRules();
 
@@ -64,7 +64,7 @@ In basic use without specifying a locale, a formatted string in the default loca
 
 ### Using options
 
-The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. “1st”, “2nd”, “3rd”, “4th”, “42nd” and so forth.
+The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. "1st”, "2nd”, "3rd”, "4th”, "42nd” and so forth.
 
     var pr = new Intl.PluralRules('en-US', { type: 'ordinal' });
 

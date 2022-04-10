@@ -32,7 +32,7 @@ The plugin has very a minimal amount of required configuration. While it has som
 
 Copy
 
-To obtain your enpoint URL, log into your Mailchimp account and go to “Audience” &gt; “All Contacts” from the top navigation. Once there, click “Signup forms” and then “Embedded forms”. This will open a page with HTML that you can copy to add an embedded form on your site. However, we don’t want the full embedded form code as we are creating a custom form. We only want the endpoint URL in the `action` attribute of the form as seen below.![getting the Mailchimp endpoint URL](https://www.stackbit.com/images/1595862101-endpoint-sm.png)Paste that URL into the `endpoint` option for the plugin configuration and we are done with configuration.
+To obtain your enpoint URL, log into your Mailchimp account and go to "Audience” &gt; "All Contacts” from the top navigation. Once there, click "Signup forms” and then "Embedded forms”. This will open a page with HTML that you can copy to add an embedded form on your site. However, we don’t want the full embedded form code as we are creating a custom form. We only want the endpoint URL in the `action` attribute of the form as seen below.![getting the Mailchimp endpoint URL](https://www.stackbit.com/images/1595862101-endpoint-sm.png)Paste that URL into the `endpoint` option for the plugin configuration and we are done with configuration.
 
 Updating the Form Code
 ----------------------

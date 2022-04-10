@@ -54,7 +54,7 @@ Statements that are executed after the <code>try</code> statement completes. The
 }</code></pre>
 <p>The <code>catch</code>-block specifies an identifier (<code>e</code> in the example above) that holds the value of the exception; this value is only available in the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Scope">scope</a> of the <code>catch</code>-block.</p>
 <h3 id="conditional-catch-blocks">Conditional catch-blocks</h3>
-<p>You can create “Conditional <code>catch</code>-blocks” by combining <code>try...catch</code> blocks with <code>if...else if...else</code> structures, like this:</p>
+<p>You can create "Conditional <code>catch</code>-blocks” by combining <code>try...catch</code> blocks with <code>if...else if...else</code> structures, like this:</p>
 <pre><code>try {
   myroutine(); // may throw three types of exceptions
 } catch (e) {
@@ -149,7 +149,7 @@ try {
 // &quot;inner&quot; &quot;oops&quot;
 // &quot;finally&quot;
 // &quot;outer&quot; &quot;oops&quot;</code></pre>
-<p>Any given exception will be caught only once by the nearest enclosing <code>catch</code>-block unless it is rethrown. Of course, any new exceptions raised in the “inner” block (because the code in <code>catch</code>-block may do something that throws), will be caught by the “outer” block.</p>
+<p>Any given exception will be caught only once by the nearest enclosing <code>catch</code>-block unless it is rethrown. Of course, any new exceptions raised in the "inner” block (because the code in <code>catch</code>-block may do something that throws), will be caught by the "outer” block.</p>
 <h3 id="returning-from-a-finally-block">Returning from a finally-block</h3>
 <p>If the <code>finally</code>-block returns a value, this value becomes the return value of the entire <code>try-catch-finally</code> statement, regardless of any <code>return</code> statements in the <code>try</code> and <code>catch</code>-blocks. This includes exceptions thrown inside of the <code>catch</code>-block:</p>
 <pre><code>(function() {
@@ -171,7 +171,7 @@ try {
 // Output:
 // &quot;inner&quot; &quot;oops&quot;
 // &quot;finally&quot;</code></pre>
-<p>The outer “oops” is not thrown because of the return in the <code>finally</code>-block. The same would apply to any value returned from the <code>catch</code>-block.</p>
+<p>The outer "oops” is not thrown because of the return in the <code>finally</code>-block. The same would apply to any value returned from the <code>catch</code>-block.</p>
 <h2 id="specifications">Specifications</h2>
 <table>
 <thead>

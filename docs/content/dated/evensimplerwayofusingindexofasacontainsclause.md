@@ -29,7 +29,7 @@ But let’s look at these [Expressjs](https://github.com/strongloop/express) cod
     // key is invalid
     if (!~apiKeys.indexOf(key)) return next(error(401, 'invalid api key'));
 
-The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) **~**, “Bitwise operators perform their operations on binary representations, but they return standard JavaScript numerical values.”
+The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) **~**, "Bitwise operators perform their operations on binary representations, but they return standard JavaScript numerical values.”
 
 It transforms `-1` into `0`, and `0` evaluates to `false` in JavaScript:
 

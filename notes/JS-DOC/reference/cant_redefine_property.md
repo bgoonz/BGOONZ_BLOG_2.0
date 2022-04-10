@@ -1,7 +1,7 @@
-TypeError: can’t redefine non-configurable property “x”
+TypeError: can’t redefine non-configurable property "x”
 =======================================================
 
-The JavaScript exception “can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------
@@ -33,7 +33,7 @@ The [`Object.defineProperty()`](../global_objects/object/defineproperty) creates
     Object.defineProperty(obj, "foo", {value: "baz"});
     // TypeError: can't redefine non-configurable property "foo"
 
-You will need to set the “foo” property to configurable, if you intend to redefine it later in the code.
+You will need to set the "foo” property to configurable, if you intend to redefine it later in the code.
 
     var obj = Object.create({});
     Object.defineProperty(obj, "foo", {value: "bar", configurable: true});

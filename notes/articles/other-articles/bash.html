@@ -27,7 +27,7 @@
 <p>Sometimes it would be very nice to know when some command got executed.</p>
 <p>Set <code>HISTTIMEFORMAT</code> to print the time stamps associated with each history entry.</p>
 <p>Append the following line to <code>~/.bashrc</code> file:</p>
-<p>export HISTTIMEFORMAT=“%h %d %H:%M:%S”</p>
+<p>export HISTTIMEFORMAT="%h %d %H:%M:%S”</p>
 <p>Now, when you type <strong>history</strong>, it will show something like:</p>
 <p>113 Jun 08 16:31:06 sudo ifconfig 114 Jun 08 16:31:10 top 115 Jun 08 16:31:19 ping 8.8.8.8 116 Jun 08 16:31:22 history</p>
 <h2 id="increase-bash-history-size">2. Increase Bash History Size</h2>
@@ -80,9 +80,9 @@
 <h2 id="ignore-specific-commands">6. Ignore Specific Commands</h2>
 <p><code>HISTIGNORE</code> is a colon-separated list of patterns used to decide which command lines should be saved in the history file.</p>
 <p>Don’t save <code>ls</code>, <code>ps</code> and <code>history</code> commands:</p>
-<p>export HISTIGNORE=“ls:ps:history”</p>
+<p>export HISTIGNORE="ls:ps:history”</p>
 <p>Don’t save commands with <code>s</code> in the beginig:</p>
-<p>export HISTIGNORE=“s*”</p>
+<p>export HISTIGNORE="s*”</p>
 <h2 id="use-one-command-per-line">7. Use one command per line</h2>
 <p>Store multi-line commands in one history entry:</p>
 <p>shopt -s cmdhist</p>

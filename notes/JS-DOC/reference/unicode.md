@@ -1,7 +1,7 @@
 RegExp.prototype.unicode
 ========================
 
-The `unicode` property indicates whether or not the “`u`” flag is used with a regular expression. `unicode` is a read-only property of an individual regular expression instance.
+The `unicode` property indicates whether or not the "`u`” flag is used with a regular expression. `unicode` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.unicode`
 
@@ -20,7 +20,7 @@ yes
 Description
 -----------
 
-The value of `unicode` is a [`Boolean`](../boolean) and `true` if the “`u`” flag was used; otherwise `false`. The “`u`” flag enables various Unicode-related features. With the “u” flag, any Unicode code point escapes will be interpreted as such, for example.
+The value of `unicode` is a [`Boolean`](../boolean) and `true` if the "`u`” flag was used; otherwise `false`. The "`u`” flag enables various Unicode-related features. With the "u” flag, any Unicode code point escapes will be interpreted as such, for example.
 
 You cannot change this property directly. It is read-only.
 

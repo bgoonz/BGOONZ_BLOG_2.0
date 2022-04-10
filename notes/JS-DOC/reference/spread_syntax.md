@@ -46,7 +46,7 @@ For object literals (new in ECMAScript 2018):
 Rest syntax (parameters)
 ------------------------
 
-Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax “expands” an array into its elements, while rest syntax collects multiple elements and “condenses” them into a single element. See [rest parameters](../functions/rest_parameters).
+Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands” an array into its elements, while rest syntax collects multiple elements and "condenses” them into a single element. See [rest parameters](../functions/rest_parameters).
 
 Examples
 --------

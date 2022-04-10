@@ -123,7 +123,7 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
         <h1>You have pending notifications</h1>
     </AlertBox>
 
-{: data-line=“2”}
+{: data-line="2”}
 
     class AlertBox extends Component {
         render() {
@@ -152,7 +152,7 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
         }
     }
 
-{: data-line=“4”}
+{: data-line="4”}
 
 Set the default state in the `constructor()`.
 
@@ -307,7 +307,7 @@ By default, React runs the effects after every render — including the first re
         return isOnline ? 'Online' : 'Offline';
     }
 
-Effects may also optionally specify how to “clean up” after them by returning a function.
+Effects may also optionally specify how to "clean up” after them by returning a function.
 
 **Use FriendStatus**
 
@@ -475,7 +475,7 @@ You can return multiple elements as arrays or fragments.
       ]
     }
 
-{: data-line=“3,4,5,6”}
+{: data-line="3,4,5,6”}
 
 **Fragments**
 

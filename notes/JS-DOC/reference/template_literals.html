@@ -15,7 +15,7 @@
 <body>
 <h1 id="template-literals-template-strings">Template literals (Template strings)</h1>
 <p>Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.</p>
-<p>They were called “template strings” in prior editions of the ES2015 specification.</p>
+<p>They were called "template strings” in prior editions of the ES2015 specification.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code>`string text`
 
@@ -146,10 +146,10 @@ Array.from(str).join(&#39;,&#39;);
 <h4 id="es2016-behavior">ES2016 behavior</h4>
 <p>As of ECMAScript 2016, tagged templates conform to the rules of the following escape sequences:</p>
 <ul>
-<li>Unicode escapes started by “<code>\u</code>”, for example <code>\u00A9</code></li>
-<li>Unicode code point escapes indicated by “<code>\u{}</code>”, for example <code>\u{2F804}</code></li>
-<li>Hexadecimal escapes started by “<code>\x</code>”, for example <code>\xA9</code></li>
-<li>Octal literal escapes started by “<code>\0o</code>” and followed by one or more digits, for example <code>\0o251</code></li>
+<li>Unicode escapes started by "<code>\u</code>”, for example <code>\u00A9</code></li>
+<li>Unicode code point escapes indicated by "<code>\u{}</code>”, for example <code>\u{2F804}</code></li>
+<li>Hexadecimal escapes started by "<code>\x</code>”, for example <code>\xA9</code></li>
+<li>Octal literal escapes started by "<code>\0o</code>” and followed by one or more digits, for example <code>\0o251</code></li>
 </ul>
 <p>This means that a tagged template like the following is problematic, because, per ECMAScript grammar, a parser looks for valid Unicode escape sequences, but finds malformed syntax:</p>
 <pre><code>latex`\unicode`
@@ -157,7 +157,7 @@ Array.from(str).join(&#39;,&#39;);
 // SyntaxError: malformed Unicode character escape sequence</code></pre>
 <h4 id="es2018-revision-of-illegal-escape-sequences">ES2018 revision of illegal escape sequences</h4>
 <p>Tagged templates should allow the embedding of languages (for example <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSLs</a>, or <a href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a>), where other escapes sequences are common. The ECMAScript proposal <a href="https://tc39.github.io/proposal-template-literal-revision/">Template Literal Revision</a> (Stage 4, to be integrated in the ECMAScript 2018 standard) removes the syntax restriction of ECMAScript escape sequences from tagged templates.</p>
-<p>However, illegal escape sequences must still be represented in the “cooked” representation. They will show up as <a href="global_objects/undefined"><code>undefined</code></a> element in the “cooked” array:</p>
+<p>However, illegal escape sequences must still be represented in the "cooked” representation. They will show up as <a href="global_objects/undefined"><code>undefined</code></a> element in the "cooked” array:</p>
 <pre><code>function latex(str) {
   return { &quot;cooked&quot;: str[0], &quot;raw&quot;: str.raw[0] }
 }
@@ -232,7 +232,7 @@ Specification
 <li><a href="global_objects/string/raw"><code>String.raw()</code></a></li>
 <li><a href="lexical_grammar">Lexical grammar</a></li>
 <li><a href="https://gist.github.com/WebReflection/8f227532143e63649804">Template-like strings in ES3 compatible syntax</a></li>
-<li><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/">“ES6 in Depth: Template strings” on hacks.mozilla.org</a></li>
+<li><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/">"ES6 in Depth: Template strings” on hacks.mozilla.org</a></li>
 </ul>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
 </body>

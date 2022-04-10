@@ -38,52 +38,52 @@
 <pre class="stylus"><code>caps-type()
   text-transform: uppercase
   letter-spacing: 0.05em</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>h5
   caps-type()</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See <a href="#mixins-1">Mixins</a> below.</p>
 <h3 id="variables">Variables</h3>
 <pre class="stylus"><code>royal-blue = #36a</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>div
   color: royal-blue</code></pre>
 <h2 id="mixins-1">Mixins</h2>
 <h3 id="without-arguments">Without arguments</h3>
 <pre class="stylus"><code>red-border()
   border: solid 2px red</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>div
   red-border()</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="http://stylus-lang.com/docs/mixins.html">Mixins</a></p>
 <h3 id="with-arguments">With arguments</h3>
 <pre class="stylus"><code>border-radius(n)
   -webkit-border-radius: n
   border-radius: n</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>div
   border-radius: 2px
   border-radius(2px)</code></pre>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>Mixins can be applied in two different ways.</p>
 <h3 id="argument-defaults">Argument defaults</h3>
 <pre class="stylus"><code>border-radius(n = 2px)
   -webkit-border-radius: n</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <h3 id="block-mixins">Block mixins</h3>
 <pre class="stylus"><code>mobile()
   @media (max-width: 480px)
     {block}</code></pre>
 <pre class="stylus"><code>+mobile()
   width: 10px</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>See: <a href="http://stylus-lang.com/docs/mixins.html#block-mixins">Block mixins</a></p>
 <h3 id="rest-params">Rest params</h3>
 <pre class="stylus"><code>shadow(offset-x, args...)
   box-shadow: offset-x args
   margin-top: offset-x</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>#login
   shadow: 1px 2px 5px #eee</code></pre>
 <p>See: <a href="http://stylus-lang.com/docs/vargs.html">Rest params</a></p>
@@ -91,27 +91,27 @@
 <h3 id="functions-1">Functions</h3>
 <pre class="stylus"><code>add(a, b)
   a + b</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <pre class="stylus"><code>body
   padding: add(10px, 5)</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="http://stylus-lang.com/docs/functions.html">Functions</a></p>
 <h3 id="argument-defaults-1">Argument defaults</h3>
 <pre class="stylus"><code>add(a, b = 2)
   a + b</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>See: <a href="http://stylus-lang.com/docs/functions.html#argument-defaults">Argument defaults</a></p>
 <h3 id="named-parameters">Named parameters</h3>
 <pre class="stylus"><code>shadow(x, y)
   x y (y * 1.5) #000</code></pre>
 <pre class="stylus"><code>.button
   box-shadow: shadow(x: 2, y: 4)</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="http://stylus-lang.com/docs/functions.html#named-parameters">Named parameters</a></p>
 <h3 id="multiple-return-values">Multiple return values</h3>
 <pre class="stylus"><code>sizes()
   8px 16px</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <pre class="stylus"><code>sizes()[0]  // → 8px
 sizes()[1]  // → 16px</code></pre>
 <p>See: <a href="http://stylus-lang.com/docs/functions.html#multiple-return-values">Multiple return values</a></p>
@@ -119,7 +119,7 @@ sizes()[1]  // → 16px</code></pre>
 <h3 id="conditional-assignment">Conditional assignment</h3>
 <pre class="stylus"><code>royal-blue = #36a
 royal-blue ?= #89f</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <pre class="stylus"><code>div
   color: royal-blue  // #36a</code></pre>
 <p><code>?=</code> will only set a variable if it’s previously unset.</p>
@@ -131,7 +131,7 @@ royal-blue ?= #89f</code></pre>
   // or
   height: 80px
   margin-top: -(@height / 2)</code></pre>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>See: <a href="https://stylus-lang.com/docs/variables.html#property-lookup">Property lookup</a></p>
 <h3 id="interpolation">Interpolation</h3>
 <pre class="stylus"><code>-{prefix}-border-radius: 2px</code></pre>
@@ -144,7 +144,7 @@ royal-blue ?= #89f</code></pre>
 <pre class="stylus"><code>n = 5px</code></pre>
 <pre class="stylus"><code>foo: (n)em
 foo: (n * 5)%</code></pre>
-<p>{: data-line=“1,2”}</p>
+<p>{: data-line="1,2”}</p>
 <h3 id="lookup">Lookup</h3>
 <pre class="stylus"><code>light-blue = #3bd
 name = &#39;blue&#39;
@@ -173,11 +173,11 @@ font-size-3 = 30px
 for i in 1..3
   .text-{i}
     font-size: lookup(&#39;font-size-&#39; + i)</code></pre>
-<p>{: data-line=“5”}</p>
+<p>{: data-line="5”}</p>
 <h3 id="definition-check">Definition check</h3>
 <pre class="stylus"><code>if ohnoes is defined
   color: blue</code></pre>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>See: <a href="https://stylus-lang.com/docs/operators.html#variable-definition-is-defined">is defined</a></p>
 <h3 id="false-values">False values</h3>
 <pre class="stylus"><code>0

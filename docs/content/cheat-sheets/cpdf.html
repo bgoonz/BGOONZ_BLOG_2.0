@@ -27,7 +27,7 @@
 <p>cpdf in.pdf even -o out.pdf</p>
 <h1 id="using-and-to-perform-several-operations-in-order-here-merging-two">Using AND to perform several operations in order, here merging two</h1>
 <h1 id="files-together-and-adding-a-copyright-stamp-to-every-page.">files together and adding a copyright stamp to every page.</h1>
-<p>cpdf -merge in.pdf in2.pdf AND -add-text “Copyright 2014” -o out.pdf</p>
+<p>cpdf -merge in.pdf in2.pdf AND -add-text "Copyright 2014” -o out.pdf</p>
 <h1 id="read-control.txt-and-use-its-contents-as-the-command-line-arguments">Read control.txt and use its contents as the command line arguments</h1>
 <h1 id="for-cpdf.">for cpdf.</h1>
 <p>cpdf -control control.txt</p>
@@ -41,18 +41,18 @@
 <p>cpdf -split-bookmarks 0 in.pdf -o <span class="citation" data-cites="N.pdf">@N.pdf</span></p>
 <h1 id="scale-both-the-dimensions-and-contents-of-in.pdf-by-a-factor-of-two">Scale both the dimensions and contents of in.pdf by a factor of two</h1>
 <h1 id="in-x-and-y-directions.">in x and y directions.</h1>
-<p>cpdf -scale-page “2 2” in.pdf -o out.pdf</p>
+<p>cpdf -scale-page "2 2” in.pdf -o out.pdf</p>
 <h1 id="scale-the-pages-in-in.pdf-to-fit-the-us-letter-page-size-writing-to">Scale the pages in in.pdf to fit the US Letter page size, writing to</h1>
 <h1 id="out.pdf-1">out.pdf</h1>
 <p>cpdf -scale-to-fit usletterportrait in.pdf -o out.pdf</p>
 <h1 id="shift-the-contents-of-the-page-by-26-pts-in-the-x-direction-and-18">Shift the contents of the page by 26 pts in the x direction, and 18</h1>
 <h1 id="millimetres-in-the-y-direction-writing-to-out.pdf">millimetres in the y direction, writing to out.pdf</h1>
-<p>cpdf -shift “26pt 18mm” in.pdf -o out.pdf</p>
+<p>cpdf -shift "26pt 18mm” in.pdf -o out.pdf</p>
 <h1 id="rotate-the-contents-of-the-pages-in-in.pdf-by-ninety-degrees-and">Rotate the contents of the pages in in.pdf by ninety degrees and</h1>
 <h1 id="write-to-out.pdf.">write to out.pdf.</h1>
 <p>cpdf -rotate-contents 90 in.pdf -o out.pdf</p>
 <h1 id="crop-the-pages-in-in.pdf-to-a-600-pts-by-400-pts-rectangle.">Crop the pages in in.pdf to a 600 pts by 400 pts rectangle.</h1>
-<p>cpdf -crop “0 0 600pt 400pt” in.pdf -o out.pdf</p>
+<p>cpdf -crop "0 0 600pt 400pt” in.pdf -o out.pdf</p>
 <h1 id="encrypt-using-128bit-pdf-encryption-using-the-owner-password-fred">Encrypt using 128bit PDF encryption using the owner password ‘fred’</h1>
 <h1 id="and-the-user-password-joe">and the user password ‘joe’</h1>
 <p>cpdf -encrypt 128bit fred joe in.pdf -o out.pdf</p>
@@ -78,7 +78,7 @@
 <p>cpdf -stamp-on watermark.pdf in.pdf -o out.pdf</p>
 <h1 id="add-a-page-number-and-date-to-all-the-pages-in-in.pdf-using-the">Add a page number and date to all the pages in in.pdf using the</h1>
 <h1 id="courier-font-writing-to-out.pdf">Courier font, writing to out.pdf</h1>
-<p>cpdf -topleft 10 -font Courier -add-text “Page %Page%d-%m-%Y” in.pdf -o out.pdf</p>
+<p>cpdf -topleft 10 -font Courier -add-text "Page %Page%d-%m-%Y” in.pdf -o out.pdf</p>
 <h1 id="two-up-impose-the-file-in.pdf-writing-to-out.pdf">Two up impose the file in.pdf, writing to out.pdf</h1>
 <p>cpdf -twoup-stack in.pdf -o out.pdf</p>
 <h1 id="add-extra-blank-pages-after-pages-one-three-and-four-of-a-document.">Add extra blank pages after pages one, three and four of a document.</h1>
@@ -91,7 +91,7 @@
 <h1 id="copy-the-annotations-from-from.pdf-to-in.pdf-writing-to-out.pdf.">Copy the annotations from from.pdf to in.pdf, writing to out.pdf.</h1>
 <p>cpdf -copy-annotations from.pdf in.pdf -o out.pdf</p>
 <h1 id="set-the-document-title-of-in.pdf.-writing-to-out.pdf.">Set the document title of in.pdf. writing to out.pdf.</h1>
-<p>cpdf -set-title “The New Title” in.pdf -o out.pdf</p>
+<p>cpdf -set-title "The New Title” in.pdf -o out.pdf</p>
 <h1 id="set-the-document-in.pdf-to-open-with-the-acrobat-viewers-toolbar">Set the document in.pdf to open with the Acrobat Viewer’s toolbar</h1>
 <h1 id="hidden-writing-to-out.pdf.">hidden, writing to out.pdf.</h1>
 <p>cpdf -hide-toolbar true in.pdf -o out.pdf</p>

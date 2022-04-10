@@ -58,17 +58,17 @@ getify/You-Dont-Know-JS*A book series on JavaScript. <span class="citation" data
 
 JavaScript — Double Equals vs. Triple Equals*Learn equality in JavaScript in 3 minutes*[codeburst.io](http://codeburst.io)
 
-Why Use the Triple-Equals Operator in JavaScript? - Impressive Webs*“Determining whether two variables are equivalent is one of the most important operations in programming.” That’s…*[www.impressivewebs.com](http://www.impressivewebs.com)
+Why Use the Triple-Equals Operator in JavaScript? - Impressive Webs*"Determining whether two variables are equivalent is one of the most important operations in programming.” That’s…*[www.impressivewebs.com](http://www.impressivewebs.com)
 
 What is the difference between == and === in JavaScript?*On the surface == and === appear to be functionally the same, so why bother typing an extra character? In this video…*[www.oreilly.com](http://www.oreilly.com)
 
-Why javascript’s typeof always return “object”?*To add in with the others, typeof returns both objects and primitives. There are 5 primitive types in javascript…*[stackoverflow.com](http://stackoverflow.com)
+Why javascript’s typeof always return "object”?*To add in with the others, typeof returns both objects and primitives. There are 5 primitive types in javascript…*[stackoverflow.com](http://stackoverflow.com)
 
 Checking Types in Javascript*Have you ever wondered: what is the correct way to check if a Javascript variable is an Array? Do a Google search and…*[tobyho.com](http://tobyho.com)
 
 How to better check data types in javascript - Webbjocke*To check what data type something has in javascript is not always the easiest. The language itself provides an operator…*[webbjocke.com](http://webbjocke.com)
 
-A JavaScript Fundamentals Cheat Sheet: Scope, Context, and “this”*Scope Scope refers to where a variable can be accessed within a program. Some variables can be accessed from anywhere…*[dev.to](http://dev.to)
+A JavaScript Fundamentals Cheat Sheet: Scope, Context, and "this”*Scope Scope refers to where a variable can be accessed within a program. Some variables can be accessed from anywhere…*[dev.to](http://dev.to)
 
 Quick Tip: Function Expressions vs Function Declarations - SitePoint*This article was peer reviewed by Jeff Mott. Thanks to all of SitePoint’s peer reviewers for making SitePoint content…*[www.sitepoint.com](http://www.sitepoint.com)
 

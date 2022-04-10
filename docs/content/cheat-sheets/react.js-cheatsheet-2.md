@@ -46,7 +46,7 @@ Use the [React.js jsfiddle](http://jsfiddle.net/reactjs/69z2wepo/) to start hack
       ···
     }
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 Use `this.props` to access properties passed to the component.
 
@@ -69,7 +69,7 @@ See: [Properties](https://reactjs.org/docs/tutorial.html#using-props)
       ···
     }
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 Use states (`this.state`) to manage dynamic data.
 
@@ -115,7 +115,7 @@ As of React v16.2.0, fragments can be used to return multiple children without a
         }
     }
 
-{: data-line=“5,6,7,8,9,10”}
+{: data-line="5,6,7,8,9,10”}
 
 Nest components to separate concerns.
 
@@ -127,7 +127,7 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
         <h1>You have pending notifications</h1>
     </AlertBox>
 
-{: data-line=“2”}
+{: data-line="2”}
 
     class AlertBox extends Component {
         render() {
@@ -135,7 +135,7 @@ See: [Composing Components](https://reactjs.org/docs/components-and-props.html#c
         }
     }
 
-{: data-line=“4”}
+{: data-line="4”}
 
 Children are passed as the `children` property.
 
@@ -147,7 +147,7 @@ Children are passed as the `children` property.
         color: 'blue'
     };
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
 
@@ -160,7 +160,7 @@ See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
         }
     }
 
-{: data-line=“4”}
+{: data-line="4”}
 
 Set the default state in the `constructor()`.
 
@@ -172,7 +172,7 @@ And without constructor using [Babel](https://babeljs.io) with [proposal-class-f
       }
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html#setting-the-initial-state)
 
@@ -184,7 +184,7 @@ See: [Setting the default state](https://reactjs.org/docs/react-without-es6.html
         return <div className="message-box">Hello {name}</div>;
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Functional components have no state. Also, their `props` are passed as the first parameter to a function.
 
@@ -256,7 +256,7 @@ See: [Component specs](http://facebook.github.io/react/docs/component-specs.html
         );
     }
 
-{: data-line=“5,10”}
+{: data-line="5,10”}
 
 Hooks are a new addition in React 16.8.
 
@@ -293,7 +293,7 @@ See: [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
         );
     }
 
-{: data-line=“6,7,8,9,10”}
+{: data-line="6,7,8,9,10”}
 
 If you’re familiar with React class lifecycle methods, you can think of `useEffect` Hook as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined.
 
@@ -325,9 +325,9 @@ By default, React runs the effects after every render — including the first re
         return isOnline ? 'Online' : 'Offline';
     }
 
-{: data-line=“11,12,13,14”}
+{: data-line="11,12,13,14”}
 
-Effects may also optionally specify how to “clean up” after them by returning a function.
+Effects may also optionally specify how to "clean up” after them by returning a function.
 
 **Use FriendStatus**
 
@@ -340,7 +340,7 @@ Effects may also optionally specify how to “clean up” after them by returnin
         return isOnline ? 'Online' : 'Offline';
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
 
@@ -380,7 +380,7 @@ Full details: [Additional Hooks](https://reactjs.org/docs/hooks-reference.html#a
         }
     }
 
-{: data-line=“4,9”}
+{: data-line="4,9”}
 
 Allows access to DOM nodes.
 
@@ -398,7 +398,7 @@ See: [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
         }
     }
 
-{: data-line=“5,9”}
+{: data-line="5,9”}
 
 Pass functions to attributes like `onChange`.
 
@@ -476,7 +476,7 @@ See: [Dangerously set innerHTML](https://reactjs.org/tips/dangerously-set-inner-
         }
     }
 
-{: data-line=“6,7”}
+{: data-line="6,7”}
 
 Always supply a `key` property.
 
@@ -507,7 +507,7 @@ You can return multiple elements as arrays or fragments.
       ]
     }
 
-{: data-line=“3,4,5,6”}
+{: data-line="3,4,5,6”}
 
 **Fragments**
 
@@ -521,7 +521,7 @@ You can return multiple elements as arrays or fragments.
       )
     }
 
-{: data-line=“3,4,5,6,7,8”}
+{: data-line="3,4,5,6,7,8”}
 
 See: [Fragments and strings](https://reactjs.org/blog/2017/09/26/react-v16.0.html#new-render-return-types-fragments-and-strings)
 
@@ -531,7 +531,7 @@ See: [Fragments and strings](https://reactjs.org/blog/2017/09/26/react-v16.0.htm
       return 'Look ma, no spans!';
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 You can return just a string.
 
@@ -546,7 +546,7 @@ See: [Fragments and strings](https://reactjs.org/blog/2017/09/26/react-v16.0.htm
       }
     }
 
-{: data-line=“3,4,5”}
+{: data-line="3,4,5”}
 
 Catch errors via `componentDidCatch`. (React 16+)
 
@@ -561,7 +561,7 @@ See: [Error handling in React 16](https://reactjs.org/blog/2017/07/26/error-hand
       )
     }
 
-{: data-line=“2,3,4,5”}
+{: data-line="2,3,4,5”}
 
 This renders `this.props.children` into any location in the DOM.
 
@@ -572,7 +572,7 @@ See: [Portals](https://reactjs.org/docs/portals.html)
     const el = document.getElementById('app');
     ReactDOM.hydrate(<App />, el);
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Use `ReactDOM.hydrate` instead of using `ReactDOM.render` if you’re rendering over the output of [ReactDOMServer](https://reactjs.org/docs/react-dom-server.html).
 

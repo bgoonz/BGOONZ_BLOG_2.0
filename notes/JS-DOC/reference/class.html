@@ -24,10 +24,10 @@
 <p>A class expression has a similar syntax to a <a href="../statements/class">class declaration (statement)</a>. As with <code>class</code> statements, the body of a <code>class</code> expression is executed in <a href="../strict_mode">strict mode</a>.</p>
 <p>There are several differences between class expressions and <a href="../statements/class">class statements</a>, however:</p>
 <ul>
-<li>Class expressions may omit the class name (“binding identifier”), which is not possible with <a href="../statements/class">class statements</a>.</li>
+<li>Class expressions may omit the class name ("binding identifier”), which is not possible with <a href="../statements/class">class statements</a>.</li>
 <li>Class expressions allow you to redefine (re-declare) classes <strong>without throwing</strong> a <a href="../global_objects/syntaxerror"><code>SyntaxError</code></a>. This is not the case with <a href="../statements/class">class statements</a>.</li>
 </ul>
-<p>The <code>constructor</code> method is optional. Classes generated with class expressions will always respond to <a href="typeof"><code>typeof</code></a> with the value “<code>function</code>”.</p>
+<p>The <code>constructor</code> method is optional. Classes generated with class expressions will always respond to <a href="typeof"><code>typeof</code></a> with the value "<code>function</code>”.</p>
 <pre><code>&#39;use strict&#39;;
 let Foo = class {};  // constructor property is optional
 Foo = class {};      // Re-declaration is allowed

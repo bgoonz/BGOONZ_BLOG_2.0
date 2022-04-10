@@ -74,7 +74,7 @@ You cannot use single-quotes around properties, like ‘foo’.
     // SyntaxError: JSON.parse: expected property name or '}'
     // at line 1 column 2 of the JSON data
 
-Instead write “foo”:
+Instead write "foo”:
 
     JSON.parse('{"foo": 1}');
 

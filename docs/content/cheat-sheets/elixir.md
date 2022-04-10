@@ -49,7 +49,7 @@ Getting started
 
     users = [ "Tom", "Dick", "Harry" ]
 
-{: data-line=“1”}
+{: data-line="1”}
 
     Enum.map(users, fn user ->
       IO.puts "Hello " <> user
@@ -61,7 +61,7 @@ Getting started
     |> transform(:hello)
     |> print()
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
     # Same as:
     print(transform(source, :hello))
@@ -73,7 +73,7 @@ These two are equivalent.
     user = %{name: "Tom", age: 23}
     %{name: username} = user
 
-{: data-line=“2”}
+{: data-line="2”}
 
 This sets `username` to `"Tom"`.
 
@@ -85,7 +85,7 @@ This sets `username` to `"Tom"`.
 
     user = %{name: "Tom", age: 23}
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Pattern matching works in function parameters too.
 

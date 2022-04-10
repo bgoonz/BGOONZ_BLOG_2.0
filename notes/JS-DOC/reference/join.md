@@ -12,7 +12,7 @@ Syntax
 ### Parameters
 
 `separator` <span class="badge inline optional">Optional</span>  
-Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (“,”). If `separator` is an empty string, all elements are joined without any characters in between them.
+Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (",”). If `separator` is an empty string, all elements are joined without any characters in between them.
 
 ### Return value
 

@@ -36,7 +36,7 @@ sudo hwclock –utc
 To set hwclock manually:
 ========================
 
-sudo hwclock –set –date=“8/10/15 13:10:05”
+sudo hwclock –set –date="8/10/15 13:10:05”
 
 To query surrounding stratum time servers
 =========================================
@@ -51,7 +51,7 @@ To config file:
 To driftfile:
 =============
 
-location of “drift” of your system clock compared to ntp servers:
+location of "drift” of your system clock compared to ntp servers:
 =================================================================
 
 /var/lib/ntp/ntp.drift

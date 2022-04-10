@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `1` in the case of an `Uint8Array`.
 
 [`Uint8Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Uint8Array` type: “`Uint8Array`”.
+Returns the string value of the constructor name. In the case of the `Uint8Array` type: "`Uint8Array`”.
 
 Static methods
 --------------

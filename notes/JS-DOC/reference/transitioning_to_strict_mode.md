@@ -105,9 +105,9 @@ In strict mode code, `eval` doesn’t create a new variable in the scope from wh
 Strictness-neutral code
 -----------------------
 
-A potential “downside” of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
+A potential "downside” of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:
 
-1.  Write your code as strict and make sure no strict-only errors (from the above “New runtime errors” section) are thrown.
+1.  Write your code as strict and make sure no strict-only errors (from the above "New runtime errors” section) are thrown.
 2.  Stay away from semantic differences
     1.  `eval`: use it only if you know what you’re doing
     2.  `arguments`: always access function arguments via their name or perform a copy of the arguments object using:  

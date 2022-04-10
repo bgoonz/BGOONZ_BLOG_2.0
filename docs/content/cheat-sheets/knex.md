@@ -27,7 +27,7 @@ See: [Schema](#schema)
       .where({ email: 'hi@example.com' })
       .then(rows => ···)
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Select](#select-1)
 
@@ -35,7 +35,7 @@ See: [Select](#select-1)
 
     knex('users').insert({ email: 'hi@example.com' });
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Insert](#insert-1)
 
@@ -43,7 +43,7 @@ See: [Insert](#insert-1)
 
     knex('users').where({ id: 135 }).update({ email: 'hi@example.com' });
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 See: [Update](#update-1)
 
@@ -93,7 +93,7 @@ See: [Node.js installation](http://knexjs.org/#Installation-node)
         pool: { min: 0, max: 7 }
     });
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 See: [Initializing the library](http://knexjs.org/#Installation-client)
 
@@ -106,7 +106,7 @@ See: [Initializing the library](http://knexjs.org/#Installation-client)
         pool: { min: 0, max: 7 }
     });
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 ### Connect via Sqlite
 
@@ -115,7 +115,7 @@ See: [Initializing the library](http://knexjs.org/#Installation-client)
         connection: { filename: './mydb.sqlite' }
     });
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 Select
 ------

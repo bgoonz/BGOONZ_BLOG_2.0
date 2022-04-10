@@ -36,7 +36,7 @@ i.) WordPress.com is a hosted version of WordPress where you may establish a blo
 
 ii.) A custom domain, additional storage space, Google Analytics connection, the option to install your plugins and themes, and other features are all available as paid upgrades.
 
-iii.) The word “WordPress” will be included in your website’s URL or domain by default, such as mysite.wordpress.com.
+iii.) The word "WordPress” will be included in your website’s URL or domain by default, such as mysite.wordpress.com.
 
 WordPress.org
 
@@ -46,7 +46,7 @@ ii.) The WordPress software is open-source, which means you may download and use
 
 iii.) You’ll need a domain name and web hosting from another trustworthy business to utilize the WordPress.org version of WordPress.
 
-iv.) If you don’t want to install WordPress manually, most web providers offer a WordPress “fast install” or “done-for-you” installation to assist you in getting started.
+iv.) If you don’t want to install WordPress manually, most web providers offer a WordPress "fast install” or "done-for-you” installation to assist you in getting started.
 
 Headless CMS: The alternative
 -----------------------------
@@ -57,9 +57,9 @@ As digital platforms have grown, more adaptable solutions have been necessary. D
 
 Meanwhile, traditional content management systems (CMS) have fallen behind. Why? Because a CMS organizes material into webpage-oriented frameworks, the same content cannot be adapted to other digital platforms.
 
-Any back-end content management system in which the content repository “body” is isolated or disconnected from the presentation layer “head” is known as a headless CMS. Content stored in a headless CMS is provided via APIs to ensure that it is shown consistently across devices.
+Any back-end content management system in which the content repository "body” is isolated or disconnected from the presentation layer "head” is known as a headless CMS. Content stored in a headless CMS is provided via APIs to ensure that it is shown consistently across devices.
 
-Some conventional CMS solutions have a “headless API” that lets you deliver content to a different display layer. Because the presentation layer is isolated from the body, this is referred to as “headless.”
+Some conventional CMS solutions have a "headless API” that lets you deliver content to a different display layer. Because the presentation layer is isolated from the body, this is referred to as "headless.”
 
 Headless CMS: Benefits & Drawbacks
 ----------------------------------
@@ -261,7 +261,7 @@ WordPress is a content management system; however, because of the system’s fle
 
 4. Communities
 
-WordPress has been used to create several community websites that may be seen online. Fresh Apps is a good example; while it appears to be a standard website, it has about 40,000 registered individuals who contribute to the published apps by making them “fresh.” This is only possible if the user is logged in, demonstrating the community component that WordPress can offer to your website.
+WordPress has been used to create several community websites that may be seen online. Fresh Apps is a good example; while it appears to be a standard website, it has about 40,000 registered individuals who contribute to the published apps by making them "fresh.” This is only possible if the user is logged in, demonstrating the community component that WordPress can offer to your website.
 
 5. Business
 
@@ -284,11 +284,11 @@ A client-side web app and a server-side CMS need to communicate with each other.
 
 WordPress features a REST API, a web-based API that allows the program to communicate with it using HTTP web addresses called endpoints via the internet. Endpoints resemble the web addresses we use to access websites every day. They allow a variety of requests, including GET requests for retrieving information, POST requests for submitting information, and so on.
 
-WordPress, for instance, offers a “posts” endpoint that looks something like this:
+WordPress, for instance, offers a "posts” endpoint that looks something like this:
 
 <a href="https://example.com/wp-json/wp/v2/posts" class="uri">https://example.com/wp-json/wp/v2/posts</a>​
 
-When software makes a GET call to a WordPress site’s “posts” endpoint, it gets a list of posts and related information back.
+When software makes a GET call to a WordPress site’s "posts” endpoint, it gets a list of posts and related information back.
 
 ### Possible drawbacks of a Headless WordPress:
 

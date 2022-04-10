@@ -58,7 +58,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 

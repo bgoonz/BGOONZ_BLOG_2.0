@@ -63,7 +63,7 @@ If code runs in *[strict mode](https://developer.mozilla.org/en-US/docs/Web/Java
 
 ### Strict mode
 
-[Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode) is a mode of evaluating JavaScript that enforces stricter rules. It was introduced to “deprecate” certain patterns/behaviors that are considered bad or confusing.
+[Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode) is a mode of evaluating JavaScript that enforces stricter rules. It was introduced to "deprecate” certain patterns/behaviors that are considered bad or confusing.
 
 Strict mode can be enabled for a JavaScript or a function by putting
 
@@ -123,7 +123,7 @@ toc: What is this? chapter: this style: | h1 { text-align: center }
 What is `this`?
 ===============
 
-[**`this`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is a special “variable” which implicitly exists in every function. It can be thought of being similar to Java’s `this` and Python’s `self`, but it’s much more flexible than that.
+[**`this`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is a special "variable” which implicitly exists in every function. It can be thought of being similar to Java’s `this` and Python’s `self`, but it’s much more flexible than that.
 
 **Important**: The value of `this` is determined when the function is **called**, not when the function is *defined*.
 
@@ -213,7 +213,7 @@ title: Demo layout\_data: description: Run the code and have a look at the outpu
 
 ------------------------------------------------------------------------
 
-var a = 10; var b = 5; var c = “1”;
+var a = 10; var b = 5; var c = "1”;
 
 log(a + b); log(a + c); log(b + Number(c));
 
@@ -266,7 +266,7 @@ Given the example above, use `console.dir(felix);` to get a better understanding
 
 ------------------------------------------------------------------------
 
-title: Exercise layout*data: description: | Create a local variable with name `foo` and value `42`. Use `log(foo)` to log the value of `foo`. Remember to open your browser’s \_developer tools* to view the log output. assertion: | assert( /var foo\*=.+;?$/m.test(source), “It doesn’t look like you have declared a variable (hint: var).” ); assert(output\[0\] === 42, “Don’t forget to log the value”);
+title: Exercise layout*data: description: | Create a local variable with name `foo` and value `42`. Use `log(foo)` to log the value of `foo`. Remember to open your browser’s \_developer tools* to view the log output. assertion: | assert( /var foo\*=.+;?$/m.test(source), "It doesn’t look like you have declared a variable (hint: var).” ); assert(output\[0\] === 42, "Don’t forget to log the value”);
 
     ---
 
@@ -437,7 +437,7 @@ You can select some predefined examples and see which steps are performed during
 
 Also have a look at [this table](https://dorey.github.io/JavaScript-Equality-Table/) to get a quick overview of the differences between `==` and `===`.
 
-The above examples hopefully showed you that loose comparison isn’t that “simple” and it’s not always clear what ends up being compared in the end. For that reason you should follow this advice:
+The above examples hopefully showed you that loose comparison isn’t that "simple” and it’s not always clear what ends up being compared in the end. For that reason you should follow this advice:
 
 **You should *always* use strict comparison**, unless you explicitly want to make use of the type conversion (i.e. you know what you are doing).
 
@@ -507,7 +507,7 @@ Here the function `bar` has access to `foo`, which is defined outside of it.
 
 ------------------------------------------------------------------------
 
-title: Exercise layout\_data: description: Run the code and have a look at the output. Is it what you expect? What are reasons for this output? Modify the code, so that it prints the result you would expect. assertion: | var values = \[" “,”0", 0\];
+title: Exercise layout\_data: description: Run the code and have a look at the output. Is it what you expect? What are reasons for this output? Modify the code, so that it prints the result you would expect. assertion: | var values = \[" ",”0", 0\];
 
         var c = 1;
         for (var i = 0, l = values.length; i < l; i++) {
@@ -525,7 +525,7 @@ title: Exercise layout\_data: description: Run the code and have a look at the o
 
 ------------------------------------------------------------------------
 
-var values = \[" “,”0", 0\];
+var values = \[" ",”0", 0\];
 
 for (var i = 0, l = values.length; i &lt; l; i++) { for (var j = i; j &lt; l; j++) { log( JSON.stringify(values\[i\]) + ’ == ’ + JSON.stringify(values\[j\]) + ‘:’, values\[i\] == values\[j\] ); } }
 
@@ -552,7 +552,7 @@ Examples:
 
 There are other native occurrence of `undefined` which we will mention later.
 
-**Remember:** A variable that doesn’t exist cannot be accessed at all (it will throw a reference error). Instead of saying “the variable is undefined” we rather say “the variable is not *declared*” to avoid confusion.
+**Remember:** A variable that doesn’t exist cannot be accessed at all (it will throw a reference error). Instead of saying "the variable is undefined” we rather say "the variable is not *declared*” to avoid confusion.
 
     var foo;
     console.log(foo); // logs `undefined`
@@ -641,7 +641,7 @@ title: Objects
 
 Everything else besides primitive data type values is an *object*.
 
-Objects are *key-value* stores, more specifically *stringkey-value* stores. The “keys” of an object are called *properties*.
+Objects are *key-value* stores, more specifically *stringkey-value* stores. The "keys” of an object are called *properties*.
 
 The syntax to create a plain object is `{key: value, ...}`, which is called an object literal. For example:
 
@@ -702,7 +702,7 @@ Assigning the value to another variable makes both variables point to the same o
     │owner│ ref:123 ◆┼──┘    │ name │ "Tom" │
     └─────┴──────────┘       └──────┴───────┘
 
-Assigning to `user.name` will therefore also “change” `owner.name`:
+Assigning to `user.name` will therefore also "change” `owner.name`:
 
     user.name = 'Joe';
     console.log(user.name, owner.name);
@@ -736,7 +736,7 @@ The JavaScript standard defines a couple of [built-in objects](https://developer
 
 ------------------------------------------------------------------------
 
-title: Exercise layout\_data: description: Log the two properties of the object using dot and bracket notation. assertion: assert( source.indexOf(‘obj.foo’) &gt; -1, ‘Access property foo with dot notation’ ); assert( /obj\[(42|‘42’|“42”)\]/.test(source), ‘How exactly did you want to access property 42?’ );
+title: Exercise layout\_data: description: Log the two properties of the object using dot and bracket notation. assertion: assert( source.indexOf(‘obj.foo’) &gt; -1, ‘Access property foo with dot notation’ ); assert( /obj\[(42|‘42’|"42”)\]/.test(source), ‘How exactly did you want to access property 42?’ );
 
     ---
 
@@ -765,7 +765,7 @@ title: Exercise layout\_data: description: Log the two properties of the object 
 
     :::ascii
 
-┌───────────────────────┐ ┌────────────────────────┐ │ A │ │ B │ ├───────────────┬───────┤ ├───────────────┬────────┤ │ name │ “Tom” │ ┌──▶│ toString │ │ ├───────────────┼───────┤ │ ├───────────────┼────────┤ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼───┘ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ null │ └───────────────┴───────┘ └───────────────┴────────┘
+┌───────────────────────┐ ┌────────────────────────┐ │ A │ │ B │ ├───────────────┬───────┤ ├───────────────┬────────┤ │ name │ "Tom” │ ┌──▶│ toString │ │ ├───────────────┼───────┤ │ ├───────────────┼────────┤ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼───┘ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ null │ └───────────────┴───────┘ └───────────────┴────────┘
 
     :::
 
@@ -773,7 +773,7 @@ title: Exercise layout\_data: description: Log the two properties of the object 
 
     :::ascii
 
-┌───────────────────────┐ ┌────────────────────────┐ │ A │ │ B │ ├───────────────┬───────┤ ├───────────────┬────────┤ │ name │ “Tom” │ ┌──▶│ toString │ │ ├───────────────┼───────┤ │ ├───────────────┼────────┤ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼───┘ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ null │ └───────────────┴───────┘ └───────────────┴────────┘ ▲ ┌───────────────────────┐ │ │ C │ │ ├───────────────┬───────┤ │ │ time │ “day” │ │ ├───────────────┼───────┤ │ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼────────────────────┘ └───────────────┴───────┘
+┌───────────────────────┐ ┌────────────────────────┐ │ A │ │ B │ ├───────────────┬───────┤ ├───────────────┬────────┤ │ name │ "Tom” │ ┌──▶│ toString │ │ ├───────────────┼───────┤ │ ├───────────────┼────────┤ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼───┘ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ null │ └───────────────┴───────┘ └───────────────┴────────┘ ▲ ┌───────────────────────┐ │ │ C │ │ ├───────────────┬───────┤ │ │ time │ "day” │ │ ├───────────────┼───────┤ │ │ \[[Prototype](https://en.wikipedia.org/wiki/Prototype-based_programming)\] │ ◆───┼────────────────────┘ └───────────────┴───────┘
 
     :::
 
@@ -888,7 +888,7 @@ JavaScript has a special syntax for creating arrays, `[value, value, ...]`:
 
 If you run `console.dir([1, 2])` in your browser’s console, you can inspect the structure of the array object in more detail.
 
-Unlike “plain” objects, array objects have `Array.prototype` as prototype, which provides all the array methods, such as `.push`, `.map`, etc.
+Unlike "plain” objects, array objects have `Array.prototype` as prototype, which provides all the array methods, such as `.push`, `.map`, etc.
 
     ┌──────────┐       [[Prototype]]        ┌──────────────────┐
     │  obj {}  │───────────────────────────▶│ Object.prototype │
@@ -916,7 +916,7 @@ Functions are the only kind of objects that are *callable*, and JavaScript also 
 
 There are other ways to create functions, which will be explained later.
 
-The most important implication of functions being objects is that “work” just like any other value. Functions can be *passed to* functions and *returned from* functions, allowing to creation of **higher-order functions**.
+The most important implication of functions being objects is that "work” just like any other value. Functions can be *passed to* functions and *returned from* functions, allowing to creation of **higher-order functions**.
 
 Similar to arrays, function objects also have a dedicated prototype, `Function.prototype`:
 
@@ -982,7 +982,7 @@ for (var prop in obj) { log(‘property:’ + prop, ‘value:’ + obj\[prop\]);
 
 ------------------------------------------------------------------------
 
-title: Exercise layout\_data: description: | Log two value: an object which has a property `foo` and a value `"bar"`, and an array with the values `1`, `2` and `42`. assertion: | assert( output.some(function(x) { return JSON.stringify(x) === JSON.stringify({foo: ‘bar’}); }), ‘Your log must contain an object with property “foo” and value “bar”. Hint: `{key: value}`.’ );
+title: Exercise layout\_data: description: | Log two value: an object which has a property `foo` and a value `"bar"`, and an array with the values `1`, `2` and `42`. assertion: | assert( output.some(function(x) { return JSON.stringify(x) === JSON.stringify({foo: ‘bar’}); }), ‘Your log must contain an object with property "foo” and value "bar”. Hint: `{key: value}`.’ );
 
         assert(
           output.some(function(x) {
@@ -1412,7 +1412,7 @@ title: Differences between `undefined` and `null` tip-number: 05 tip-username: l
 -   /en/differences-between-undefined-and-null/
 
 -   `undefined` means a variable has not been declared, or has been declared but has not yet been assigned a value
--   `null` is an assignment value that means “no value”
+-   `null` is an assignment value that means "no value”
 -   Javascript sets unassigned variables with a default value of `undefined`
 -   Javascript never sets a value to `null`. It is used by programmers to indicate that a `var` has no value.
 -   `undefined` is not valid in JSON while `null` is
@@ -1465,15 +1465,15 @@ You just have to concat everything into an array first. `Array.concat` will acce
     //  BEAR
     //  POTATO
 
-title: use strict and get lazy tip-number: 07 tip-username: nainslie tip-username-profile: https://twitter.com/nat5an tip-tldr: Strict-mode JavaScript makes it easier for the developer to write “secure” JavaScript.
+title: use strict and get lazy tip-number: 07 tip-username: nainslie tip-username-profile: https://twitter.com/nat5an tip-tldr: Strict-mode JavaScript makes it easier for the developer to write "secure” JavaScript.
 
 -   /en/use-strict-and-get-lazy/
 
-Strict-mode JavaScript makes it easier for the developer to write “secure” JavaScript.
+Strict-mode JavaScript makes it easier for the developer to write "secure” JavaScript.
 
-By default, JavaScript allows the programmer to be pretty careless, for example, by not requiring us to declare our variables with “var” when we first introduce them. While this may seem like a convenience to the unseasoned developer, it’s also the source of many errors when a variable name is misspelled or accidentally referred to out of its scope.
+By default, JavaScript allows the programmer to be pretty careless, for example, by not requiring us to declare our variables with "var” when we first introduce them. While this may seem like a convenience to the unseasoned developer, it’s also the source of many errors when a variable name is misspelled or accidentally referred to out of its scope.
 
-Programmers like to make the computer do the boring stuff for us, and automatically check our work for mistakes. That’s what the JavaScript “use strict” directive allows us to do, by turning our mistakes into JavaScript errors.
+Programmers like to make the computer do the boring stuff for us, and automatically check our work for mistakes. That’s what the JavaScript "use strict” directive allows us to do, by turning our mistakes into JavaScript errors.
 
 We add this directive either by adding it at the top of a js file:
 
@@ -1499,10 +1499,10 @@ or inside a function:
 
 By including this directive in a JavaScript file or function, we will direct the JavaScript engine to execute in strict mode which disables a bunch of behaviors that are usually undesirable in larger JavaScript projects. Among other things, strict mode changes the following behaviors:
 
--   Variables can only be introduced when they are preceded with “var”
+-   Variables can only be introduced when they are preceded with "var”
 -   Attempting to write to read-only properties generates a noisy error
--   You have to call constructors with the “new” keyword
--   “this” is not implicitly bound to the global object
+-   You have to call constructors with the "new” keyword
+-   "this” is not implicitly bound to the global object
 -   Very limited use of eval() allowed
 -   Protects you from using reserved words or future reserved words as variable names
 
@@ -1522,7 +1522,7 @@ title: Converting a Node List to an Array tip-number: 08 tip-username: Tevko tip
 
 -   /en/converting-a-node-list-to-an-array/
 
-The `querySelectorAll` method returns an array-like object called a node list. These data structures are referred to as “Array-like”, because they appear as an array, but can not be used with array methods like `map` and `forEach`. Here’s a quick, safe, and reusable way to convert a node list into an array of DOM elements:
+The `querySelectorAll` method returns an array-like object called a node list. These data structures are referred to as "Array-like”, because they appear as an array, but can not be used with array methods like `map` and `forEach`. Here’s a quick, safe, and reusable way to convert a node list into an array of DOM elements:
 
     const nodelist = document.querySelectorAll('div');
     const nodelistToArray = Array.apply(null, nodelist);
@@ -1844,7 +1844,7 @@ But let’s look at these [Expressjs](https://github.com/strongloop/express) cod
     // key is invalid
     if (!~apiKeys.indexOf(key)) return next(error(401, 'invalid api key'));
 
-The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) **~**, “Bitwise operators perform their operations on binary representations, but they return standard JavaScript numerical values.”
+The gotcha is the [bitwise operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) **~**, "Bitwise operators perform their operations on binary representations, but they return standard JavaScript numerical values.”
 
 It transforms `-1` into `0`, and `0` evaluates to `false` in JavaScript:
 
@@ -1935,7 +1935,7 @@ title: Truncating the fast (but risky) way tip-number: 18 tip-username: pklinger
 
 This tip is about performance…with a hidden price tag.
 
-Have you ever come across the [double tilde `~~` operator](http://stackoverflow.com/questions/5971645/what-is-the-double-tilde-operator-in-javascript)? It’s also often called the “double bitwise NOT” operator. You can often use it as a faster substitute for `Math.trunc()`. Why is that?
+Have you ever come across the [double tilde `~~` operator](http://stackoverflow.com/questions/5971645/what-is-the-double-tilde-operator-in-javascript)? It’s also often called the "double bitwise NOT” operator. You can often use it as a faster substitute for `Math.trunc()`. Why is that?
 
 One bitwise shift `~` first truncates `input` to 32 bits, then transforms it into `-(input+1)`. The double bitwise shift therefore transforms the input into `-(-(input + 1)+1)` making it a great tool to round towards zero. For numeric input, it therefore mimics `Math.trunc()`. On failure, `0` is returned, which might come in handy sometimes instead of `Math.trunc()`, which returns `NaN` on failure.
 
@@ -1967,13 +1967,13 @@ Code clarity is of great importance in the long term, whether you work in a team
 
 > Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.
 
-For a solo programmer, that psychopath is inevitably “you in six months”.
+For a solo programmer, that psychopath is inevitably "you in six months”.
 
 ##### When you forget that `~~` always rounds to zero
 
-Newbie programmers may fixate on the cleverness of `~~`, forgetting the significance of “just drop the fractional portion of this number”. This can easily lead to **fencepost errors** (a.k.a. “off-by-one”) when transforming floats to array indices or related ordinal values, where a different kind of fractional rounding may actually be called for. (Lack of code clarity usually contributes to this problem.)
+Newbie programmers may fixate on the cleverness of `~~`, forgetting the significance of "just drop the fractional portion of this number”. This can easily lead to **fencepost errors** (a.k.a. "off-by-one”) when transforming floats to array indices or related ordinal values, where a different kind of fractional rounding may actually be called for. (Lack of code clarity usually contributes to this problem.)
 
-For instance, if you’re counting numbers on a “nearest integer” basis, you should use `Math.round()` instead of `~~`, but programmer laziness and the impact of ***10 whole characters saved per use*** on human fingers often triumph over cold logic, leading to incorrect results.
+For instance, if you’re counting numbers on a "nearest integer” basis, you should use `Math.round()` instead of `~~`, but programmer laziness and the impact of ***10 whole characters saved per use*** on human fingers often triumph over cold logic, leading to incorrect results.
 
 In contrast, the very names of the `Math.xyz()` functions clearly communicate their effect, reducing the probability of accidental errors.
 
@@ -2015,7 +2015,7 @@ some programmers treat it as alternative to proper input validation. However, th
 
 ##### When so many people think `~~X == Math.floor(X)`
 
-Most people who write about “double bitwise NOT” incorrectly equate it with `Math.floor()` for some reason. If you can’t write about it accurately, odds are good you’ll eventually misuse it.
+Most people who write about "double bitwise NOT” incorrectly equate it with `Math.floor()` for some reason. If you can’t write about it accurately, odds are good you’ll eventually misuse it.
 
 Others are more careful to mention `Math.floor()` for positive inputs and `Math.ceil()` for negative ones, but that forces you to stop and think about the values you’re dealing with. This defeats the purpose of `~~` as a handy no-gotchas shortcut.
 
@@ -2187,11 +2187,11 @@ The `==` (or `!=`) operator performs an automatic type conversion if needed. The
      ''  ==  false   // is true but true == "a" is false
      ''  === false   // is false
 
-title: Using immediately invoked function expression tip-number: 25 tip-username: rishantagarwal tip-username-profile: https://github.com/rishantagarwal tip-tldr: Called as “Iffy” ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
+title: Using immediately invoked function expression tip-number: 25 tip-username: rishantagarwal tip-username-profile: https://github.com/rishantagarwal tip-tldr: Called as "Iffy” ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
 -   /en/Using-immediately-invoked-function-expression/
 
-Called as “Iffy” ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
+Called as "Iffy” ( IIFE - immediately invoked function expression) is an anonymous function expression that is immediately invoked and has some important uses in Javascript.
 
     (function () {
         // Do something​
@@ -3007,7 +3007,7 @@ title: Observe DOM changes in extensions tip-number: 36 tip-username: beyondns t
 
 -   /en/observe-dom-changes/
 
-[MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver) is a solution to listen DOM changes and do what you want to do with elements when they changed. In following example there is some emulation of dynamic content loading with help of timers, after first “target” element creation goes “subTarget”. In extension code firstly rootObserver works till targetElement appearance then elementObserver starts. This cascading observing helps finally get moment when subTargetElement found. This useful to develop extensions to complex sites with dynamic content loading.
+[MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver) is a solution to listen DOM changes and do what you want to do with elements when they changed. In following example there is some emulation of dynamic content loading with help of timers, after first "target” element creation goes "subTarget”. In extension code firstly rootObserver works till targetElement appearance then elementObserver starts. This cascading observing helps finally get moment when subTargetElement found. This useful to develop extensions to complex sites with dynamic content loading.
 
     const observeConfig = {
         attributes: true,
@@ -3289,7 +3289,7 @@ But that’s not all! Advanced properties allows us to create **getters** and **
     foobar.foo; // 15
     foobar.foo = 20; // _foo = 20
 
-Aside for the obvious advantage of encapsulation and advanced accessors, you will notice that we didn’t “call” the getter, instead we just “get” the property without parentheses! This is awesome! For instance, let’s imagine that we have an object with long nested properties, like so:
+Aside for the obvious advantage of encapsulation and advanced accessors, you will notice that we didn’t "call” the getter, instead we just "get” the property without parentheses! This is awesome! For instance, let’s imagine that we have an object with long nested properties, like so:
 
     var obj = { a: { b: { c: [{ d: 10 }, { d: 20 }] } } };
 
@@ -3316,7 +3316,7 @@ title: Using JSON.Stringify tip-number: 40 tip-username: vamshisuram tip-usernam
 
 -   /en/using-json-stringify/
 
-Let’s say there is an object with properties “prop1”, “prop2”, “prop3”. We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
+Let’s say there is an object with properties "prop1”, "prop2”, "prop3”. We can pass **additional params** to **JSON.stringify** to selectively write properties of the object to string like:
 
     var obj = {
         prop1: 'value1',
@@ -3331,7 +3331,7 @@ Let’s say there is an object with properties “prop1”, “prop2”, “prop
     // str
     // {"prop1":"value1","prop2":"value2"}
 
-The **“str”** will contain only info on selected properties only.
+The **"str”** will contain only info on selected properties only.
 
 Instead of array we can pass a function also.
 
@@ -3600,7 +3600,7 @@ A simpler, ES2015 way of accomplishing this is with the new [spread operator](ht
     Math.max(...numbers); // 4
     Math.min(...numbers); // 1
 
-This operator causes the values in the array to be expanded, or “spread”, into the function’s arguments.
+This operator causes the values in the array to be expanded, or "spread”, into the function’s arguments.
 
 title: Detect document ready in pure JS tip-number: 46 tip-username: loverajoel tip-username-profile: https://www.twitter.com/loverajoel tip-tldr: The cross-browser way to check if the document has loaded in pure JavaScript tip-writer-support: https://www.coinbase.com/loverajoel
 
@@ -4179,7 +4179,7 @@ Example function where arguments 2 and 3 are optional
 
 Design your function to require optionalA in order to accept optionalB
 
-title: Create an easy loop using an array tip-number: 55 tip-username: jamet-julien tip-username-profile: https://github.com/jamet-julien tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers”
+title: Create an easy loop using an array tip-number: 55 tip-username: jamet-julien tip-username-profile: https://github.com/jamet-julien tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it "looping powers”
 
 -   /en/make-easy-loop-on-array/
 
@@ -4187,7 +4187,7 @@ categories: - en - javascript
 
 ------------------------------------------------------------------------
 
-Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers”:
+Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it "looping powers”:
 
     var aList = ['A', 'B', 'C', 'D', 'E'];
 
@@ -4277,7 +4277,7 @@ Using the `%` ( Modulus ) operator is prettier.The modulus return division’s r
     aList.prev(); // -> A
     aList.prev(); // -> D
 
-title: Copy to Clipboard tip-number: 56 tip-username: loverajoel tip-username-profile: https://twitter.com/loverajoel tip-tldr: This week I had to create a common “Copy to Clipboard” button, I’ve never created one before and I want to share how I made it. tip-writer-support: https://www.coinbase.com/loverajoel
+title: Copy to Clipboard tip-number: 56 tip-username: loverajoel tip-username-profile: https://twitter.com/loverajoel tip-tldr: This week I had to create a common "Copy to Clipboard” button, I’ve never created one before and I want to share how I made it. tip-writer-support: https://www.coinbase.com/loverajoel
 
 -   /en/copy-to-clipboard/
 
@@ -4285,7 +4285,7 @@ categories: - en - javascript
 
 ------------------------------------------------------------------------
 
-This is a simple tip, this week I had to create a common “Copy to Clipboard” button, I’ve never created one before and I want to share how I made it. It’s easy, the bad thing is that we must add an `<input/>` with the text to be copied to the DOM. Then, we selected the content and execute the copy command with [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand). `execCommand('copy')` will copy the actual selected content.
+This is a simple tip, this week I had to create a common "Copy to Clipboard” button, I’ve never created one before and I want to share how I made it. It’s easy, the bad thing is that we must add an `<input/>` with the text to be copied to the DOM. Then, we selected the content and execute the copy command with [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand). `execCommand('copy')` will copy the actual selected content.
 
 Also, this command that now is [supported](http://caniuse.com/#search=execCommand) by all the latest version of browsers, allows us to execute another system commands like `copy`, `cut`, `paste`, and make changes like fonts color, size, and much more.
 
@@ -4542,7 +4542,7 @@ You can use a short-circuit just like this:
 
     condition && dosomething();
 
-#### Set variable default values using “||”
+#### Set variable default values using "||”
 
 If you have to set a default value to variables, you can simple do this:
 
@@ -4876,7 +4876,7 @@ categories: - en - javascript
 
 ------------------------------------------------------------------------
 
-We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting “converting one of the 2 operands to the other’s type then compare”.
+We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting "converting one of the 2 operands to the other’s type then compare”.
 
     0 == ' '; //true
     (null == undefined[1]) == //true
@@ -4893,7 +4893,7 @@ The great news that in ES6 there is the new ‘Object.is()’ which is better an
     Object.is([1], true); //false
     Object.is(NaN, NaN); //true
 
-Mozilla team doesn’t think that Object.is is “stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.
+Mozilla team doesn’t think that Object.is is "stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.
 
 Now this table illustrates..
 
@@ -5612,7 +5612,7 @@ The ternary operator is a shortcut for the `if` statement. It consists of three 
 About the JavaScript reference
 ==============================
 
-The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you’ll refer to these pages often (thus the title “JavaScript reference”). If you’re learning JavaScript, or need help understanding some of its capabilities or features, check out the [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
+The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you’ll refer to these pages often (thus the title "JavaScript reference”). If you’re learning JavaScript, or need help understanding some of its capabilities or features, check out the [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
 The JavaScript language is intended to be used within some larger environment, be it a browser, server-side scripts, or similar. For the most part, this reference attempts to be environment-agnostic and does not target a web browser environment.
 
@@ -6249,7 +6249,7 @@ An [iterable](../../iteration_protocols#the_iterable_protocol) object such as an
 
 -   An **already resolved** [`Promise`](../promise) if the iterable passed is empty.
 -   An **asynchronously resolved** [`Promise`](../promise) if the iterable passed contains no promises. Note, Google Chrome 58 returns an **already resolved** promise in this case.
--   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about “Asynchronicity or synchronicity of Promise.all” below. Returned values will be in order of the Promises passed, regardless of completion order.
+-   A **pending** [`Promise`](../promise) in all other cases. This returned promise is then resolved/rejected **asynchronously** (as soon as the stack is empty) when all the promises in the given iterable have resolved, or if any of the promises reject. See the example about "Asynchronicity or synchronicity of Promise.all” below. Returned values will be in order of the Promises passed, regardless of completion order.
 
 Description
 -----------
@@ -6549,7 +6549,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 Warning: -file- is being assigned a //\# sourceMappingURL, but already has one
 ==============================================================================
 
-The JavaScript warning “-file- is being assigned a //\# sourceMappingURL, but already has one.” occurs when a source map has been specified more than once for a given JavaScript source.
+The JavaScript warning "-file- is being assigned a //\# sourceMappingURL, but already has one.” occurs when a source map has been specified more than once for a given JavaScript source.
 
 Message
 -------
@@ -6987,7 +6987,7 @@ You can assign a different `this` object when calling an existing function. `thi
 
 You can also use [`arguments`](../../functions/arguments) for the `argsArray` parameter. [`arguments`](../../functions/arguments) is a local variable of a function. It can be used for all unspecified arguments of the called object. Thus, you do not have to know the arguments of the called object when you use the `apply` method. You can use `arguments` to pass all the arguments to the called object. The called object is then responsible for handling the arguments.
 
-Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it’s going to have a `length` property, and integer (“index”) properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
+Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it’s going to have a `length` property, and integer ("index”) properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
 
 **Note:** Many older browsers—including Chrome &lt;17 and Internet Explorer &lt;9—don’t accept array-like objects, and will throw an exception.
 
@@ -7103,7 +7103,7 @@ Description
 
 **Note:** If you’re writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
-**Note:** “Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn’t have [`Array`](../global_objects/array)’s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
+**Note:** "Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn’t have [`Array`](../global_objects/array)’s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
 
 The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function’s arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry’s index at `0`.
 
@@ -7192,7 +7192,7 @@ You can pass as many arguments as you like to this function. It returns a string
 
 ### Defining a function that creates HTML lists
 
-This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is “`u`” if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or “`o`” if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
+This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is "`u`” if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or "`o`” if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
 
     function list(type) {
       var html = '<' + type + 'l><li>';
@@ -7562,10 +7562,10 @@ To help explain these properties and elements, see this example and then refer t
 The properties and elements returned from this match are as follows:
 
 <table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><p><code>input</code><br />
-</p><span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>“cdbBdbsbz”</code></td></tr><tr class="even"><td><p><code>index</code><br />
+</p><span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz”</code></td></tr><tr class="even"><td><p><code>index</code><br />
 </p><span class="badge inline readonly">Read only </span></td><td>The zero-based index of the match in the string.</td><td><code>1</code></td></tr><tr class="odd"><td><p><code>[0]</code><br />
-</p><span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>“dbBd”</code></td></tr><tr class="even"><td><p><code>[1], …[n]</code><br />
-</p><span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: “bB” [2]: “d”</code></td></tr></tbody></table>
+</p><span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>"dbBd”</code></td></tr><tr class="even"><td><p><code>[1], …[n]</code><br />
+</p><span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB” [2]: "d”</code></td></tr></tbody></table>
 
 Constructor
 -----------
@@ -7780,7 +7780,7 @@ Results in
 TypeError: invalid Array.prototype.sort argument
 ================================================
 
-The JavaScript exception “invalid Array.prototype.sort argument” occurs when the argument of [`Array.prototype.sort()`](../global_objects/array/sort) isn’t either [`undefined`](../global_objects/undefined) or a function which compares its operands.
+The JavaScript exception "invalid Array.prototype.sort argument” occurs when the argument of [`Array.prototype.sort()`](../global_objects/array/sort) isn’t either [`undefined`](../global_objects/undefined) or a function which compares its operands.
 
 Message
 -------
@@ -7827,7 +7827,7 @@ ArrayBuffer
 
 The `ArrayBuffer` object is used to represent a generic, fixed-length raw binary data buffer.
 
-It is an array of bytes, often referred to in other languages as a “byte array”.You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you create one of the [typed array objects](typedarray) or a [`DataView`](dataview) object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.
+It is an array of bytes, often referred to in other languages as a "byte array”.You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you create one of the [typed array objects](typedarray) or a [`DataView`](dataview) object which represents the buffer in a specific format, and use that to read and write the contents of the buffer.
 
 The `ArrayBuffer()` constructor creates a new `ArrayBuffer` of the given length in bytes. You can also get an array buffer from existing data, for example [from a Base64 string](https://developer.mozilla.org/en-US/docs/Glossary/Base64#appendix_to_solution_1_decode_a_base64_string_to_uint8array_or_arraybuffer) or [from a local file](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsArrayBuffer).
 
@@ -8061,8 +8061,8 @@ An **arrow function expression** is a compact alternative to a traditional [func
 
 ### Comparing traditional functions to arrow functions
 
-Let’s decompose a “traditional function” down to the simplest “arrow function” step-by-step:  
-NOTE: Each step along the way is a valid “arrow function”
+Let’s decompose a "traditional function” down to the simplest "arrow function” step-by-step:  
+NOTE: Each step along the way is a valid "arrow function”
 
     // Traditional Function
     function (a){
@@ -8082,7 +8082,7 @@ NOTE: Each step along the way is a valid “arrow function”
     // 3. Remove the argument parentheses
     a => a + 100;
 
-**Note:** As shown above, the { brackets } and ( parentheses ) and “return” are optional, but may be required.
+**Note:** As shown above, the { brackets } and ( parentheses ) and "return” are optional, but may be required.
 
 For example, if you have **multiple arguments** or **no arguments**, you’ll need to re-introduce parentheses around the arguments:
 
@@ -8106,7 +8106,7 @@ For example, if you have **multiple arguments** or **no arguments**, you’ll ne
     let b = 2;
     () => a + b + 100;
 
-Likewise, if the body requires **additional lines** of processing, you’ll need to re-introduce brackets **PLUS the “return”** (arrow functions do not magically guess what or when you want to “return”):
+Likewise, if the body requires **additional lines** of processing, you’ll need to re-introduce brackets **PLUS the "return”** (arrow functions do not magically guess what or when you want to "return”):
 
     // Traditional Function
     function (a, b){
@@ -8213,7 +8213,7 @@ Arrow functions do not have their own `this`. Another example involving [`Object
 
 ### call, apply and bind
 
-The `call`, `apply` and [`bind`](../global_objects/function/bind) methods are **NOT suitable** for Arrow functions – as they were designed to allow methods to execute within different scopes – because **Arrow functions establish “this” based on the scope the Arrow function is defined within.**
+The `call`, `apply` and [`bind`](../global_objects/function/bind) methods are **NOT suitable** for Arrow functions – as they were designed to allow methods to execute within different scopes – because **Arrow functions establish "this” based on the scope the Arrow function is defined within.**
 
 For example `call`, `apply` and [`bind`](../global_objects/function/bind) work as expected with Traditional functions, because we establish the scope for each of the methods:
 
@@ -8349,7 +8349,7 @@ The `yield` keyword may not be used in an arrow function’s body (except when p
 
 ### Function body
 
-Arrow functions can have either a “concise body” or the usual “block body”.
+Arrow functions can have either a "concise body” or the usual "block body”.
 
 In a concise body, only an expression is specified, which becomes the implicit return value. In a block body, you must use an explicit `return` statement.
 
@@ -8478,7 +8478,7 @@ Specifications
 
 22
 
-\[“The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, “Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
+\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
 
 No
 
@@ -8492,7 +8492,7 @@ No
 
 22
 
-\[“The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, “Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
+\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
 
 32
 
@@ -8529,7 +8529,7 @@ No
 See also
 --------
 
--   [“ES6 In Depth: Arrow functions” on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+-   ["ES6 In Depth: Arrow functions” on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
 
@@ -9255,7 +9255,7 @@ In the following example, we successively await two promises. Progress moves thr
 
 Note how the promise chain is not built-up in one go. Instead, the promise chain is constructed in stages as control is successively yielded from and returned to the async function. As a result, we must be mindful of error handling behavior when dealing with concurrent asynchronous operations.
 
-For example, in the following code an unhandled promise rejection error will be thrown, even if a `.catch` handler has been configured further along the promise chain. This is because `p2` will not be “wired into” the promise chain until control returns from `p1`.
+For example, in the following code an unhandled promise rejection error will be thrown, even if a `.catch` handler has been configured further along the promise chain. This is because `p2` will not be "wired into” the promise chain until control returns from `p1`.
 
     async function foo() {
        const p1 = new Promise((resolve) => setTimeout(() => resolve('1'), 1000))
@@ -9442,7 +9442,7 @@ See also
 -   [`async function expression`](../operators/async_function)
 -   [`AsyncFunction`](../global_objects/asyncfunction) object
 -   [`await`](../operators/await)
--   [“Decorating Async Javascript Functions” on “innolitics.com”](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
+-   ["Decorating Async Javascript Functions” on "innolitics.com”](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>
@@ -9466,7 +9466,7 @@ Syntax
 ### Parameters
 
 `arg1, arg2, ... argN`  
-Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “`x`”, “`theValue`”, or “`a,b`”.
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`”, "`theValue`”, or "`a,b`”.
 
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.
@@ -10011,7 +10011,7 @@ When memory is shared, multiple threads can read and write the same data in memo
 
 ### Wait and notify
 
-The `wait()` and `notify()` methods are modeled on Linux futexes (“fast user-space mutex”) and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
+The `wait()` and `notify()` methods are modeled on Linux futexes ("fast user-space mutex”) and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
 
 Static methods
 --------------
@@ -10047,7 +10047,7 @@ Stores a value at the specified index of the array. Returns the value.
 Subtracts a value at the specified index of the array. Returns the old value at that index.
 
 [`Atomics.wait()`](atomics/wait)  
-Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either “`ok`”, “`not-equal`”, or “`timed-out`”. If waiting is not allowed in the calling agent then it throws an [`Error`](error) exception. (Most browsers will not allow `wait()` on the browser’s main thread.)
+Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either "`ok`”, "`not-equal`”, or "`timed-out`”. If waiting is not allowed in the calling agent then it throws an [`Error`](error) exception. (Most browsers will not allow `wait()` on the browser’s main thread.)
 
 [`Atomics.xor()`](atomics/xor)  
 Computes a bitwise XOR on the value at the specified index of the array with the provided value. Returns the old value at that index.
@@ -10986,7 +10986,7 @@ Here is an example of a simple module using the [Fetch API](https://developer.mo
 Warning: 08/09 is not a legal ECMA-262 octal constant
 =====================================================
 
-The JavaScript warning “08 (or 09) is not a legal ECMA-262 octal constant” occurs when `08` or `09` number literals are used. They can’t be interpreted as an octal number.
+The JavaScript warning "08 (or 09) is not a legal ECMA-262 octal constant” occurs when `08` or `09` number literals are used. They can’t be interpreted as an octal number.
 
 Message
 -------
@@ -11004,7 +11004,7 @@ What went wrong?
 
 Decimal literals can start with a zero (`0`) followed by another decimal digit, but If all digits after the leading `0` are smaller than 8, the number is interpreted as an octal number. Because this is not the case with `08` and `09`, JavaScript warns about it.
 
-Note that octal literals and octal escape sequences are deprecated and will present an additional deprecation warning. With ECMAScript 6 and later, the syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`. See the page about [lexical grammar](../lexical_grammar#octal) for more information.
+Note that octal literals and octal escape sequences are deprecated and will present an additional deprecation warning. With ECMAScript 6 and later, the syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (`0o` or `0O)`. See the page about [lexical grammar](../lexical_grammar#octal) for more information.
 
 Examples
 --------
@@ -11019,7 +11019,7 @@ Examples
 
 ### Valid octal numbers
 
-Use a leading zero followed by the letter “o”;
+Use a leading zero followed by the letter "o”;
 
     0O755;
     0o644;
@@ -11028,14 +11028,14 @@ See also
 --------
 
 -   [Lexical grammar](../lexical_grammar#octal)
--   [SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated](deprecated_octal)
+-   [SyntaxError: "0”-prefixed octal literals and octal escape seq. are deprecated](deprecated_octal)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_octal</a>
 
 RangeError: radix must be an integer
 ====================================
 
-The JavaScript exception “radix must be an integer at least 2 and no greater than 36” occurs when the optional `radix` parameter of the [`Number.prototype.toString()`](../global_objects/number/tostring) or the [`BigInt.prototype.toString()`](../global_objects/bigint/tostring) method was specified and is not between 2 and 36.
+The JavaScript exception "radix must be an integer at least 2 and no greater than 36” occurs when the optional `radix` parameter of the [`Number.prototype.toString()`](../global_objects/number/tostring) or the [`BigInt.prototype.toString()`](../global_objects/bigint/tostring) method was specified and is not between 2 and 36.
 
 Message
 -------
@@ -11090,10 +11090,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Bad_radix</a>
 
-SyntaxError: invalid regular expression flag “x”
+SyntaxError: invalid regular expression flag "x”
 ================================================
 
-The JavaScript exception “invalid regular expression flag” occurs when the flags, defined after the second slash in regular expression literal, are not one of `g`, `i`, `m`, `s`, `u`, or `y`.
+The JavaScript exception "invalid regular expression flag” occurs when the flags, defined after the second slash in regular expression literal, are not one of `g`, `i`, `m`, `s`, `u`, or `y`.
 
 Message
 -------
@@ -11120,7 +11120,7 @@ or
 
     var re = new RegExp('pattern', 'flags');
 
-<table><caption> Regular expression flags </caption><thead><tr class="header"><th>Flag</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>g</code></td><td>Global search.</td></tr><tr class="even"><td>i</td><td>Case-insensitive search.</td></tr><tr class="odd"><td>m</td><td>Multi-line search.</td></tr><tr class="even"><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr class="odd"><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr class="even"><td>y</td><td>Perform a “sticky” search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky"><code>sticky</code></a></td></tr></tbody></table>
+<table><caption> Regular expression flags </caption><thead><tr class="header"><th>Flag</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>g</code></td><td>Global search.</td></tr><tr class="even"><td>i</td><td>Case-insensitive search.</td></tr><tr class="odd"><td>m</td><td>Multi-line search.</td></tr><tr class="even"><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr class="odd"><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr class="even"><td>y</td><td>Perform a "sticky” search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky"><code>sticky</code></a></td></tr></tbody></table>
 
 Examples
 --------
@@ -11164,7 +11164,7 @@ See also
 SyntaxError: return not in function
 ===================================
 
-The JavaScript exception “return (or yield) not in function” occurs when a `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
+The JavaScript exception "return (or yield) not in function” occurs when a `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
 Message
 -------
@@ -11319,7 +11319,7 @@ A string containing a [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTM
 Description
 -----------
 
-The `big()` method embeds a string in a `<big>` element: “`<big>str</big>`”.
+The `big()` method embeds a string in a `<big>` element: "`<big>str</big>`”.
 
 Examples
 --------
@@ -11410,7 +11410,7 @@ BigInt values are similar to Number values in some ways, but also differ in a fe
 
 ### Type information
 
-When tested against `typeof`, a BigInt value (`bigint` primitive) will give “`bigint`”:
+When tested against `typeof`, a BigInt value (`bigint` primitive) will give "`bigint`”:
 
     typeof 1n === 'bigint'           // true
     typeof BigInt('1') === 'bigint'  // true
@@ -11846,7 +11846,7 @@ Static properties
 Returns a number value of the element size. `8` in the case of a `BigInt64Array`.
 
 [`BigInt64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is “BigInt64Array”.
+Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is "BigInt64Array”.
 
 Static methods
 --------------
@@ -12068,7 +12068,7 @@ Static properties
 Returns a number value of the element size. `8` in the case of a `BigUint64Array`.
 
 [`BigUint64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `BigUint64Array` type this is “BigUint64Array”.
+Returns the string value of the constructor name. In the case of the `BigUint64Array` type this is "BigUint64Array”.
 
 Static methods
 --------------
@@ -12558,10 +12558,10 @@ You can partially work around this by inserting the following code at the beginn
 Some of the many differences (there may well be others, as this list does not seriously attempt to be exhaustive) between this algorithm and the specified algorithm are:
 
 -   The partial implementation relies on [`Array.prototype.slice()`](../array/slice), [`Array.prototype.concat()`](../array/concat), [`Function.prototype.call()`](call) and [`Function.prototype.apply()`](apply), built-in methods to have their original values.
--   The partial implementation creates functions that do not have immutable “poison pill” [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
+-   The partial implementation creates functions that do not have immutable "poison pill” [`caller`](caller) and `arguments` properties that throw a [`TypeError`](../typeerror) upon get, set, or deletion. (This could be added if the implementation supports [`Object.defineProperty`](../object/defineproperty), or partially implemented \[without throw-on-delete behavior\] if the implementation supports the [`__defineGetter__`](../object/__definegetter__) and [`__defineSetter__`](../object/__definesetter__) extensions.)
 -   The partial implementation creates functions that have a `prototype` property. (Proper bound functions have none.)
 -   The partial implementation creates bound functions whose [`length`](length) property does not agree with that mandated by ECMA-262: it creates functions with `length` of `0`. A full implementation—depending on the length of the target function and the number of pre-specified arguments—may return a non-zero length.
--   The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be “bound” + name of target function (note the space character).
+-   The partial implementation creates bound functions whose [`name`](name) property is not derived from the original function name. According to ECMA-262, name of the returned bound function should be "bound” + name of target function (note the space character).
 
 If you choose to use this partial implementation, **you must not rely on those cases where behavior deviates from ECMA-262, 5<sup>th</sup> edition!** Thankfully, these deviations from the specification rarely (if ever) come up in most coding situations. If you do not understand any of the deviations from the specification above, then it is safe in this particular case to not worry about these noncompliant deviation details.
 
@@ -13163,7 +13163,7 @@ A string containing a [`<blink>`](https://developer.mozilla.org/en-US/docs/Web/H
 Description
 -----------
 
-The `blink()` method embeds a string in a `<blink>` element: “`<blink>str</blink>`”.
+The `blink()` method embeds a string in a `<blink>` element: "`<blink>str</blink>`”.
 
 Examples
 --------
@@ -13224,7 +13224,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 block
 =====
 
-A **block statement** (or **compound statement** in other languages) is used to group zero or more statements. The block is delimited by a pair of braces (“curly brackets”) and may optionally be [labelled](label):
+A **block statement** (or **compound statement** in other languages) is used to group zero or more statements. The block is delimited by a pair of braces ("curly brackets”) and may optionally be [labelled](label):
 
 Syntax
 ------
@@ -13358,7 +13358,7 @@ A string containing a [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 Description
 -----------
 
-The `bold()` method embeds a string in a `<b>` element: “`<b>str</b>`”.
+The `bold()` method embeds a string in a `<b>` element: "`<b>str</b>`”.
 
 Examples
 --------
@@ -13424,7 +13424,7 @@ The `Boolean` object is an object wrapper for a boolean value.
 Description
 -----------
 
-The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is `0`, `-0`, [`null`](null), `false`, [`NaN`](nan), [`undefined`](undefined), or the empty string (`""`), the object has an initial value of `false`. All other values, including any object, an empty array (`[]`), or the string “`false`”, create an object with an initial value of `true`.
+The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is `0`, `-0`, [`null`](null), `false`, [`NaN`](nan), [`undefined`](undefined), or the empty string (`""`), the object has an initial value of `false`. All other values, including any object, an empty array (`[]`), or the string "`false`”, create an object with an initial value of `true`.
 
 Do not confuse the [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) `Boolean` values `true` and `false` with the `true` and `false` values of the `Boolean` object.
 
@@ -13923,7 +13923,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -14118,7 +14118,7 @@ Examples
 
 ### Adding a calendar in the Locale string
 
-Calendar eras fall under the category of locale key “extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the [`Intl.Locale`](locale) constructor. To add the calendar type, first add the `-u` extension to the string. Next, add the `-ca` extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.
+Calendar eras fall under the category of locale key "extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the [`Intl.Locale`](locale) constructor. To add the calendar type, first add the `-u` extension to the string. Next, add the `-ca` extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.
 
     let frBuddhist = new Intl.Locale("fr-FR-u-ca-buddhist");
     console.log(frBuddhist.calendar); // Prints "buddhist"
@@ -14344,7 +14344,7 @@ See also
 TypeError: X.prototype.y called on incompatible type
 ====================================================
 
-The JavaScript exception “called on incompatible target (or object)” occurs when a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
+The JavaScript exception "called on incompatible target (or object)” occurs when a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
 
 Message
 -------
@@ -14413,7 +14413,7 @@ The `arguments.callee` property contains the currently executing function.
 Description
 -----------
 
-`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called “anonymous functions”).
+`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called "anonymous functions”).
 
 **Warning:** The 5th edition of ECMAScript (ES5) forbids use of `arguments.callee()` in [strict mode](../../strict_mode). Avoid using `arguments.callee()` by either giving function expressions a name or use a function declaration where a function must call itself.
 
@@ -14650,7 +14650,7 @@ See also
 ReferenceError: can’t access lexical declaration\`X’ before initialization
 ==========================================================================
 
-The JavaScript exception “can’t access lexical declaration \`*variable*’ before initialization” occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
+The JavaScript exception "can’t access lexical declaration \`*variable*’ before initialization” occurs when a lexical variable was accessed before it was initialized. This happens within any block statement, when `let` or `const` declarations are accessed before they are defined.
 
 Message
 -------
@@ -14674,7 +14674,7 @@ Examples
 
 ### Invalid cases
 
-In this case, the variable “foo” is redeclared in the block statement using `let`.
+In this case, the variable "foo” is redeclared in the block statement using `let`.
 
     function test() {
       let foo = 33;
@@ -14688,7 +14688,7 @@ In this case, the variable “foo” is redeclared in the block statement using 
 
 ### Valid cases
 
-To change “foo” inside the if statement, you need to remove the `let` that causes the redeclaration.
+To change "foo” inside the if statement, you need to remove the `let` that causes the redeclaration.
 
     function test(){
        let foo = 33;
@@ -14705,10 +14705,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_lexical_declaration_before_init</a>
 
-TypeError: can’t access property “x” of “y”
+TypeError: can’t access property "x” of "y”
 ===========================================
 
-The JavaScript exception “can’t access property” occurs when property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+The JavaScript exception "can’t access property” occurs when property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
 Message
 -------
@@ -14762,10 +14762,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property</a>
 
-TypeError: can’t assign to property “x” on “y”: not an object
+TypeError: can’t assign to property "x” on "y”: not an object
 =============================================================
 
-The JavaScript strict mode exception “can’t assign to property” occurs when attempting to create a property on [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) value such as a [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol), a [string](https://developer.mozilla.org/en-US/docs/Glossary/String), a [number](https://developer.mozilla.org/en-US/docs/Glossary/Number) or a [boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean). [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values cannot hold any [property](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript).
+The JavaScript strict mode exception "can’t assign to property” occurs when attempting to create a property on [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) value such as a [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol), a [string](https://developer.mozilla.org/en-US/docs/Glossary/String), a [number](https://developer.mozilla.org/en-US/docs/Glossary/Number) or a [boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean). [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values cannot hold any [property](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript).
 
 Message
 -------
@@ -14813,10 +14813,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_assign_to_property</a>
 
-TypeError: can’t define property “x”: “obj” is not extensible
+TypeError: can’t define property "x”: "obj” is not extensible
 =============================================================
 
-The JavaScript exception “can’t define property”x“:”obj" is not extensible" occurs when [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
+The JavaScript exception "can’t define property”x":”obj" is not extensible" occurs when [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
 
 Message
 -------
@@ -14840,7 +14840,7 @@ Examples
 
 ### Adding new properties to a non-extensible objects
 
-In [strict mode](../strict_mode), attempting to add new properties to a non-extensible object throws a `TypeError`. In sloppy mode, the addition of the “x” property is silently ignored.
+In [strict mode](../strict_mode), attempting to add new properties to a non-extensible object throws a `TypeError`. In sloppy mode, the addition of the "x” property is silently ignored.
 
     'use strict';
 
@@ -14876,10 +14876,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_define_property_object_not_extensible" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_define_property_object_not_extensible</a>
 
-TypeError: property “x” is non-configurable and can’t be deleted
+TypeError: property "x” is non-configurable and can’t be deleted
 ================================================================
 
-The JavaScript exception “property is non-configurable and can’t be deleted” occurs when it was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "property is non-configurable and can’t be deleted” occurs when it was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------
@@ -14934,10 +14934,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_delete</a>
 
-TypeError: can’t redefine non-configurable property “x”
+TypeError: can’t redefine non-configurable property "x”
 =======================================================
 
-The JavaScript exception “can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------
@@ -14969,7 +14969,7 @@ The [`Object.defineProperty()`](../global_objects/object/defineproperty) creates
     Object.defineProperty(obj, "foo", {value: "baz"});
     // TypeError: can't redefine non-configurable property "foo"
 
-You will need to set the “foo” property to configurable, if you intend to redefine it later in the code.
+You will need to set the "foo” property to configurable, if you intend to redefine it later in the code.
 
     var obj = Object.create({});
     Object.defineProperty(obj, "foo", {value: "bar", configurable: true});
@@ -15004,7 +15004,7 @@ Examples
 
 ### Setting the caseFirst value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `caseFirst` represents correspond to the key `kf`. `kf` is treated as a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `caseFirst` value can be added to the initial locale identifier string that is passed into the `Locale` constructor. To add the `caseFirst` value, first add the `-u` extension key to the string. Next, add the `-kf` extension key to indicate that you are adding a value for `caseFirst`. Finally, add the `caseFirst` value to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `caseFirst` represents correspond to the key `kf`. `kf` is treated as a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `caseFirst` value can be added to the initial locale identifier string that is passed into the `Locale` constructor. To add the `caseFirst` value, first add the `-u` extension key to the string. Next, add the `-kf` extension key to indicate that you are adding a value for `caseFirst`. Finally, add the `caseFirst` value to the string.
 
     let caseFirstStr = new Intl.Locale("fr-Latn-FR-u-kf-upper");
     console.log(caseFirstStr.caseFirst); // Prints "upper"
@@ -15523,7 +15523,7 @@ Examples
 
 ### Displaying characters at different locations in a string
 
-The following example displays characters at different locations in the string “`Brave new world`”:
+The following example displays characters at different locations in the string "`Brave new world`”:
 
     var anyString = 'Brave new world';
     console.log("The character at index 0   is '" + anyString.charAt()   + "'");
@@ -15758,7 +15758,7 @@ Description
 
 Unicode code points range from `0` to `1114111` (`0x10FFFF`). The first 128 Unicode code points are a direct match of the ASCII character encoding. (For information on Unicode, see the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#unicode).)
 
-**Note:** `charCodeAt()` will always return a value that is less than `65536`. This is because the higher code points are represented by *a pair* of (lower valued) “surrogate” pseudo-characters which are used to comprise the real character.
+**Note:** `charCodeAt()` will always return a value that is less than `65536`. This is because the higher code points are represented by *a pair* of (lower valued) "surrogate” pseudo-characters which are used to comprise the real character.
 
 Because of this, in order to examine (or reproduce) the full character for individual character values of `65536` or greater, for such characters, it is necessary to retrieve not only `charCodeAt(i)`, but also `charCodeAt(i+1)` (as if manipulating a string with two letters), or to use `codePointAt(i)` instead. See examples 2 and 3 (below).
 
@@ -15913,10 +15913,10 @@ A class expression has a similar syntax to a [class declaration (statement)](../
 
 There are several differences between class expressions and [class statements](../statements/class), however:
 
--   Class expressions may omit the class name (“binding identifier”), which is not possible with [class statements](../statements/class).
+-   Class expressions may omit the class name ("binding identifier”), which is not possible with [class statements](../statements/class).
 -   Class expressions allow you to redefine (re-declare) classes **without throwing** a [`SyntaxError`](../global_objects/syntaxerror). This is not the case with [class statements](../statements/class).
 
-The `constructor` method is optional. Classes generated with class expressions will always respond to [`typeof`](typeof) with the value “`function`”.
+The `constructor` method is optional. Classes generated with class expressions will always respond to [`typeof`](typeof) with the value "`function`”.
 
     'use strict';
     let Foo = class {};  // constructor property is optional
@@ -16012,11 +16012,11 @@ Classes are a template for creating objects. They encapsulate data with code to 
 Defining classes
 ----------------
 
-Classes are in fact “special functions”, and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
+Classes are in fact "special functions”, and just as you can define [function expressions](operators/function) and [function declarations](statements/function), the class syntax has two components: [class expressions](operators/class) and [class declarations](statements/class).
 
 ### Class declarations
 
-One way to define a class is using a **class declaration**. To declare a class, you use the `class` keyword with the name of the class (“Rectangle” here).
+One way to define a class is using a **class declaration**. To declare a class, you use the `class` keyword with the name of the class ("Rectangle” here).
 
     class Rectangle {
       constructor(height, width) {
@@ -16070,7 +16070,7 @@ The body of a class is executed in [strict mode](strict_mode), i.e., code writte
 
 ### Constructor
 
-The [constructor](classes/constructor) method is a special method for creating and initializing an object created with a `class`. There can only be one special method with the name “constructor” in a class. A [`SyntaxError`](global_objects/syntaxerror) will be thrown if the class contains more than one occurrence of a `constructor` method.
+The [constructor](classes/constructor) method is a special method for creating and initializing an object created with a `class`. There can only be one special method with the name "constructor” in a class. A [`SyntaxError`](global_objects/syntaxerror) will be thrown if the class contains more than one occurrence of a `constructor` method.
 
 A constructor can use the `super` keyword to call the constructor of the super class.
 
@@ -16275,9 +16275,9 @@ The [`extends`](classes/extends) keyword is used in *class declarations* or *cla
     let d = new Dog('Mitzie');
     d.speak(); // Mitzie barks.
 
-If there is a constructor present in the subclass, it needs to first call super() before using “this”.
+If there is a constructor present in the subclass, it needs to first call super() before using "this”.
 
-One may also extend traditional function-based “classes”:
+One may also extend traditional function-based "classes”:
 
     function Animal (name) {
       this.name = name;
@@ -16727,7 +16727,7 @@ See also
 -   [Public class fields](classes/public_class_fields)
 -   [Private class fields](classes/private_class_fields)
 -   [`super`](operators/super)
--   [Blog post: “ES6 In Depth: Classes”](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
+-   [Blog post: "ES6 In Depth: Classes”](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
 -   [Fields and public/private class properties proposal (stage 3)](https://github.com/tc39/proposal-class-fields)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a>
@@ -16826,7 +16826,7 @@ The number of leading zero bits in the 32-bit binary representation of the given
 Description
 -----------
 
-“`clz32`” is short for **CountLeadingZeroes32**.
+"`clz32`” is short for **CountLeadingZeroes32**.
 
 If `x` is not a number, then it will be converted to a number first, then converted to a 32-bit unsigned integer.
 
@@ -16836,7 +16836,7 @@ This function is particularly useful for systems that compile to JS, like [Emscr
 
 ### Count Leading Ones and beyond
 
-At present, there is no `Math.clon` for “Count Leading Ones” (named “clon”, not “clo”, because “clo” and “clz” are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0’s (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
+At present, there is no `Math.clon` for "Count Leading Ones” (named "clon”, not "clo”, because "clo” and "clz” are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0’s (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
 
 Consider the following 32-bit word:
 
@@ -16853,7 +16853,7 @@ Using this logic, a `clon` function can be created as follows:
         return clz(~integer);
     }
 
-Further, this technique could be extended to create jumpless “Count Trailing Zeros” and “Count Trailing Ones” functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
+Further, this technique could be extended to create jumpless "Count Trailing Zeros” and "Count Trailing Ones” functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
 
     var clz = Math.clz32;
     function ctrz(integer){ // count trailing zeros
@@ -17151,7 +17151,7 @@ Like other locale subtags, the collation type can be added to the [`Intl.Locale`
 
 ### Adding a collation type via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), collation types are locale key “extension subtags”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the collation type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the collation type, first add the `-u` extension to the string. Next, add the `-co` extension to indicate that you are adding a collation type. Finally, add the collation to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), collation types are locale key "extension subtags”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the collation type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the collation type, first add the `-u` extension to the string. Next, add the `-co` extension to indicate that you are adding a collation type. Finally, add the collation to the string.
 
     let stringColl = new Intl.Locale("en-Latn-US-u-co-emoji");
     console.log(stringColl.collation); // Prints "emoji"
@@ -17224,48 +17224,48 @@ The following Unicode extension keys are allowed:
 **Note:** These keys can usually also be set with `options` (as listed below). When both are set, the `options` property takes precedence.
 
 `co`  
-Variant collations for certain locales. Possible values include: “`big5han`”, “`dict`”, “`direct`”, “`ducet`”, “`gb2312`”, “`phonebk`”, “`phonetic`”, “`pinyin`”, “`reformed`”, “`searchjl`”, “`stroke`”, “`trad`”, “`unihan`”. This option can be also be set through the `options` property “`collation`”.
+Variant collations for certain locales. Possible values include: "`big5han`”, "`dict`”, "`direct`”, "`ducet`”, "`gb2312`”, "`phonebk`”, "`phonetic`”, "`pinyin`”, "`reformed`”, "`searchjl`”, "`stroke`”, "`trad`”, "`unihan`”. This option can be also be set through the `options` property "`collation`”.
 
 `kn`  
-Whether numeric collation should be used, such that “1” &lt; “2” &lt; “10”. Possible values are “`true`” and “`false`”. This option can be also be set through the `options` property “`numeric`”.
+Whether numeric collation should be used, such that "1” &lt; "2” &lt; "10”. Possible values are "`true`” and "`false`”. This option can be also be set through the `options` property "`numeric`”.
 
 `kf`  
-Whether upper case or lower case should sort first. Possible values are “`upper`”, “`lower`”, or “`false`” (use the locale’s default). This option can be also be set through the `options` property “`caseFirst`”.
+Whether upper case or lower case should sort first. Possible values are "`upper`”, "`lower`”, or "`false`” (use the locale’s default). This option can be also be set through the `options` property "`caseFirst`”.
 
 `options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `usage`  
-Whether the comparison is for sorting or for searching for matching strings. Possible values are “`sort`” and “`search`”; the default is “`sort`”.
+Whether the comparison is for sorting or for searching for matching strings. Possible values are "`sort`” and "`search`”; the default is "`sort`”.
 
 `sensitivity`  
 Which differences in the strings should lead to non-zero result values. Possible values are:
 
--   “`base`”: Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.
--   “`accent`”: Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.
--   “`case`”: Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.
--   “`variant`”: Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.
+-   "`base`”: Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.
+-   "`accent`”: Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.
+-   "`case`”: Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.
+-   "`variant`”: Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.
 
-The default is “`variant`” for usage “`sort`”; it’s locale dependent for usage “`search`”.
+The default is "`variant`” for usage "`sort`”; it’s locale dependent for usage "`search`”.
 
 `ignorePunctuation`  
 Whether punctuation should be ignored. Possible values are `true` and `false`; the default is `false`.
 
 `numeric`  
-Whether numeric collation should be used, such that “1” &lt; “2” &lt; “10”. Possible values are `true` and `false`; the default is `false`.
+Whether numeric collation should be used, such that "1” &lt; "2” &lt; "10”. Possible values are `true` and `false`; the default is `false`.
 
 **Note:** This option can also be set through the `kn` Unicode extension key; if both are provided, this `options` property takes precedence.
 
 `caseFirst`  
-Whether upper case or lower case should sort first. Possible values are “`upper`”, “`lower`”, or “`false`” (use the locale’s default). This option can be set through an `options` property or through a Unicode extension key; if both are provided, the `options` property takes precedence.
+Whether upper case or lower case should sort first. Possible values are "`upper`”, "`lower`”, or "`false`” (use the locale’s default). This option can be set through an `options` property or through a Unicode extension key; if both are provided, the `options` property takes precedence.
 
 **Note:** This option can also be set through the `kf` Unicode extension key; if both are provided, this `options` property takes precedence.
 
 `collation`  
-Variant collations for certain locales. Possible values include: “`big5han`”, “`dict`”, “`direct`”, “`ducet`”, “`gb2312`”, “`phonebk`” (only supported in German), “`phonetic`”, “`pinyin`”, “`reformed`”, “`searchjl`”, “`stroke`”, “`trad`”, “`unihan`”.
+Variant collations for certain locales. Possible values include: "`big5han`”, "`dict`”, "`direct`”, "`ducet`”, "`gb2312`”, "`phonebk`” (only supported in German), "`phonetic`”, "`pinyin`”, "`reformed`”, "`searchjl`”, "`stroke`”, "`trad`”, "`unihan`”.
 
 **Note:** This option can also be set through the `co` Unicode extension key; if both are provided, this `options` property takes precedence.
 
@@ -18224,7 +18224,7 @@ One common usage is to handle a value that may be `null`:
 
 ### Conditional chains
 
-The ternary operator is right-associative, which means it can be “chained” in the following way, similar to an `if … else if … else if … else` chain:
+The ternary operator is right-associative, which means it can be "chained” in the following way, similar to an `if … else if … else if … else` chain:
 
     function example(…) {
         return condition1 ? value1
@@ -18316,7 +18316,7 @@ An initializer for a constant is required. You must specify its value in the sam
 
 The `const` creates a read-only reference to a value. It does **not** mean the value it holds is immutable—just that the variable identifier cannot be reassigned. For instance, in the case where the content is an object, this means the object’s contents (e.g., its properties) can be altered.
 
-All the considerations about the “[temporal dead zone](let#temporal_dead_zone_tdz)” apply to both [`let`](let) and `const`.
+All the considerations about the "[temporal dead zone](let#temporal_dead_zone_tdz)” apply to both [`let`](let) and `const`.
 
 A constant cannot share its name with a function or a variable in the same scope.
 
@@ -18408,7 +18408,7 @@ Specifications
 
 36
 
-\[“Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.”, “Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`.”\]
+\["Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.”, "Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`.”\]
 
 11
 
@@ -18422,7 +18422,7 @@ Specifications
 
 36
 
-\[“Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.”, “Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`.”\]
+\["Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.”, "Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`.”\]
 
 10.1
 
@@ -19377,7 +19377,7 @@ Adding the missing object-method directly from the standard-object does NOT work
 
     > ocn.toString() // error: Function.prototype.toString requires that 'this' be a Function
 
-Adding the missing object-method directly to new object’s “prototype” does not work either, since the new object does not have a real prototype (which is really the cause of ALL these problems) and one cannot be **directly** added:
+Adding the missing object-method directly to new object’s "prototype” does not work either, since the new object does not have a real prototype (which is really the cause of ALL these problems) and one cannot be **directly** added:
 
     ocn = Object.create( null ); // create "null" object (same as before)
 
@@ -19661,9 +19661,9 @@ If `module` is not a [`WebAssembly.Module`](../module) object instance, a [`Type
 Description
 -----------
 
-A wasm module is comprised of a sequence of **sections**. Most of these sections are fully specified and validated by the wasm spec, but modules can also contain **custom sections** that are ignored and skipped over during validation. (Read [High level structure](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#high-level-structure) for information on section structures, and how normal sections (“known sections”) and custom sections are distinguished.)
+A wasm module is comprised of a sequence of **sections**. Most of these sections are fully specified and validated by the wasm spec, but modules can also contain **custom sections** that are ignored and skipped over during validation. (Read [High level structure](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#high-level-structure) for information on section structures, and how normal sections ("known sections”) and custom sections are distinguished.)
 
-This provides developers with a way to include custom data inside wasm modules for other purposes, for example the [name custom section](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#name-section), which allows developers to provide names for all the functions and locals in the module (like “symbols” in a native build).
+This provides developers with a way to include custom data inside wasm modules for other purposes, for example the [name custom section](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#name-section), which allows developers to provide names for all the functions and locals in the module (like "symbols” in a native build).
 
 Note that the WebAssembly text format currently doesn’t have a syntax specified for adding new custom sections; you can however add a name section to your wasm during conversion from text format over to .wasm. The wast2wasm command available as part of the [wabt tool](https://github.com/webassembly/wabt) has a `--debug-names` option — specify this during conversion to get a .wasm with a names custom section, for example:
 
@@ -19676,7 +19676,7 @@ Examples
 
 The following example (see the custom-section.html [source](https://github.com/mdn/webassembly-examples/blob/master/other-examples/custom-section.html) and [live example](https://mdn.github.io/webassembly-examples/other-examples/custom-section.html)) compiles the loaded simple-name-section.wasm byte code.
 
-We then do a check using `WebAssembly.Module.customSections`, looking to see whether the module instance contains a “name” custom section by checking that its `length` is more than 0. Since there is a “name” section in the example, an `ArrayBuffer` object is returned.
+We then do a check using `WebAssembly.Module.customSections`, looking to see whether the module instance contains a "name” custom section by checking that its `length` is more than 0. Since there is a "name” section in the example, an `ArrayBuffer` object is returned.
 
     WebAssembly.compileStreaming(fetch('simple-name-section.wasm'))
     .then(function(mod) {
@@ -19736,7 +19736,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 TypeError: cyclic object value
 ==============================
 
-The JavaScript exception “cyclic object value” occurs when object references were found in [JSON](https://www.json.org/). [`JSON.stringify()`](../global_objects/json/stringify) doesn’t try to solve them and fails accordingly.
+The JavaScript exception "cyclic object value” occurs when object references were found in [JSON](https://www.json.org/). [`JSON.stringify()`](../global_objects/json/stringify) doesn’t try to solve them and fails accordingly.
 
 Message
 -------
@@ -20761,7 +20761,7 @@ Sets the seconds for a specified date according to universal time.
 Sets the year (usually 2-3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
 
 [`Date.prototype.toDateString()`](date/todatestring)  
-Returns the “date” portion of the [`Date`](date) as a human-readable string like `'Thu Apr 12 2018'`.
+Returns the "date” portion of the [`Date`](date) as a human-readable string like `'Thu Apr 12 2018'`.
 
 [`Date.prototype.toISOString()`](date/toisostring)  
 Converts a date to a string following the ISO 8601 Extended Format.
@@ -20788,7 +20788,7 @@ Returns a string with a locality-sensitive representation of the time portion of
 Returns a string representing the specified [`Date`](date) object. Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
 [`Date.prototype.toTimeString()`](date/totimestring)  
-Returns the “time” portion of the [`Date`](date) as a human-readable string.
+Returns the "time” portion of the [`Date`](date) as a human-readable string.
 
 [`Date.prototype.toUTCString()`](date/toutcstring)  
 Converts a date to a string using the UTC timezone.
@@ -22282,16 +22282,16 @@ Syntax
 ### Parameters
 
 `locales` <span class="badge inline optional">Optional</span>  
-A string with a BCP 47 language tag, or an array of such strings. To use the browser’s default locale, pass an empty array. Unicode extension are supported (for example “`en-US-u-ca-buddhist`”). For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension keys are allowed:
+A string with a BCP 47 language tag, or an array of such strings. To use the browser’s default locale, pass an empty array. Unicode extension are supported (for example "`en-US-u-ca-buddhist`”). For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension keys are allowed:
 
 `nu`  
-Numbering system. Possible values include: “`arab`”, “`arabext`”, “`bali`”, “`beng`”, “`deva`”, “`fullwide`”, “`gujr`”, “`guru`”, “`hanidec`”, “`khmr`”, “`knda`”, “`laoo`”, “`latn`”, “`limb`”, “`mlym`”, “`mong`”, “`mymr`”, “`orya`”, “`tamldec`”, “`telu`”, “`thai`”, “`tibt`”.
+Numbering system. Possible values include: "`arab`”, "`arabext`”, "`bali`”, "`beng`”, "`deva`”, "`fullwide`”, "`gujr`”, "`guru`”, "`hanidec`”, "`khmr`”, "`knda`”, "`laoo`”, "`latn`”, "`limb`”, "`mlym`”, "`mong`”, "`mymr`”, "`orya`”, "`tamldec`”, "`telu`”, "`thai`”, "`tibt`”.
 
 `ca`  
-Calendar. Possible values include: “`buddhist`”, “`chinese`”, “`coptic`”, “`ethiopia`”, “`ethiopic`”, “`gregory`”, “`hebrew`”, “`indian`”, “`islamic`”, “`iso8601`”, “`japanese`”, “`persian`”, “`roc`”.
+Calendar. Possible values include: "`buddhist`”, "`chinese`”, "`coptic`”, "`ethiopia`”, "`ethiopic`”, "`gregory`”, "`hebrew`”, "`indian`”, "`islamic`”, "`iso8601`”, "`japanese`”, "`persian`”, "`roc`”.
 
 `hc`  
-Hour cycle. Possible values include: “`h11`”, “`h12`”, “`h23`”, “`h24`”.
+Hour cycle. Possible values include: "`h11`”, "`h12`”, "`h23`”, "`h24`”.
 
 `options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
@@ -22299,46 +22299,46 @@ An object with some or all of the following properties:
 `dateStyle`  
 The date formatting style to use when calling `format()`. Possible values include:
 
--   “`full`”
--   “`long`”
--   “`medium`”
--   “`short`”
+-   "`full`”
+-   "`long`”
+-   "`medium`”
+-   "`short`”
 
 **Note:** `dateStyle` can be used with `timeStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
 `timeStyle`  
 The time formatting style to use when calling `format()`. Possible values include:
 
--   “`full`”
--   “`long`”
--   “`medium`”
--   “`short`”
+-   "`full`”
+-   "`long`”
+-   "`medium`”
+-   "`short`”
 
 **Note:** `timeStyle` can be used with `dateStyle`, but not with other options (e.g. `weekday`, `hour`, `month`, etc.).
 
 `calendar`  
-Calendar. Possible values include: “`buddhist`”, “`chinese`”, " `coptic`“,”`ethiopia`“,”`ethiopic`“,”`gregory`“,” `hebrew`“,”`indian`“,”`islamic`“,”`iso8601`“,” `japanese`“,”`persian`“,”`roc`".
+Calendar. Possible values include: "`buddhist`”, "`chinese`”, " `coptic`",”`ethiopia`",”`ethiopic`",”`gregory`",” `hebrew`",”`indian`",”`islamic`",”`iso8601`",” `japanese`",”`persian`",”`roc`".
 
 `dayPeriod`  
-The way day periods should be expressed. Possible values include: “`narrow`”, “`short`”, " `long`".
+The way day periods should be expressed. Possible values include: "`narrow`”, "`short`”, " `long`".
 
 `numberingSystem`  
-Numbering System. Possible values include: “`arab`”, “`arabext`”, " `bali`“,”`beng`“,”`deva`“,”`fullwide`“,” `gujr`“,”`guru`“,”`hanidec`“,”`khmr`“,” `knda`“,”`laoo`“,”`latn`“,”`limb`“,”`mlym`“,” `mong`“,”`mymr`“,”`orya`“,”`tamldec`“,” `telu`“,”`thai`“,”`tibt`".
+Numbering System. Possible values include: "`arab`”, "`arabext`”, " `bali`",”`beng`",”`deva`",”`fullwide`",” `gujr`",”`guru`",”`hanidec`",”`khmr`",” `knda`",”`laoo`",”`latn`",”`limb`",”`mlym`",” `mong`",”`mymr`",”`orya`",”`tamldec`",” `telu`",”`thai`",”`tibt`".
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `timeZone`  
-The time zone to use. The only value implementations must recognize is “`UTC`”; the default is the runtime’s default time zone. Implementations may also recognize the time zone names of the [IANA time zone database](https://www.iana.org/time-zones), such as “`Asia/Shanghai`”, “`Asia/Kolkata`”, “`America/New_York`”.
+The time zone to use. The only value implementations must recognize is "`UTC`”; the default is the runtime’s default time zone. Implementations may also recognize the time zone names of the [IANA time zone database](https://www.iana.org/time-zones), such as "`Asia/Shanghai`”, "`Asia/Kolkata`”, "`America/New_York`”.
 
 `hour12`  
 Whether to use 12-hour time (as opposed to 24-hour time). Possible values are `true` and `false`; the default is locale dependent. This option overrides the `hc` language tag and/or the `hourCycle` option in case both are present.
 
 `hourCycle`  
-The hour cycle to use. Possible values are “`h11`”, “`h12`”, “`h23`”, or “`h24`”. This option overrides the `hc` language tag, if both are present, and the `hour12` option takes precedence in case both options have been specified.
+The hour cycle to use. Possible values are "`h11`”, "`h12`”, "`h23`”, or "`h24`”. This option overrides the `hc` language tag, if both are present, and the `hour12` option takes precedence in case both options have been specified.
 
 `formatMatcher`  
-The format matching algorithm to use. Possible values are “`basic`” and “`best fit`”; the default is “`best fit`”. See the following paragraphs for information about the use of this property.
+The format matching algorithm to use. Possible values are "`basic`” and "`best fit`”; the default is "`best fit`”. See the following paragraphs for information about the use of this property.
 
 The following properties describe the date-time components to use in formatted output, and their desired representations. Implementations are required to support at least the following subsets:
 
@@ -22350,51 +22350,51 @@ The following properties describe the date-time components to use in formatted o
 -   `hour`, `minute`, `second`
 -   `hour`, `minute`
 
-Implementations may support other subsets, and requests will be negotiated against all available subset-representation combinations to find the best match. Two algorithms are available for this negotiation and selected by the `formatMatcher` property: A [fully specified “`basic`” algorithm](https://www.ecma-international.org/ecma-402/1.0/#BasicFormatMatcher) and an implementation-dependent “`best fit`” algorithm.
+Implementations may support other subsets, and requests will be negotiated against all available subset-representation combinations to find the best match. Two algorithms are available for this negotiation and selected by the `formatMatcher` property: A [fully specified "`basic`” algorithm](https://www.ecma-international.org/ecma-402/1.0/#BasicFormatMatcher) and an implementation-dependent "`best fit`” algorithm.
 
 `weekday`  
 The representation of the weekday. Possible values are:
 
--   “`long`” (e.g., `Thursday`)
--   “`short`” (e.g., `Thu`)
--   “`narrow`” (e.g., `T`). Two weekdays may have the same narrow style for some locales (e.g. `Tuesday`’s narrow style is also `T`).
+-   "`long`” (e.g., `Thursday`)
+-   "`short`” (e.g., `Thu`)
+-   "`narrow`” (e.g., `T`). Two weekdays may have the same narrow style for some locales (e.g. `Tuesday`’s narrow style is also `T`).
 
 `era`  
 The representation of the era. Possible values are:
 
--   “`long`” (e.g., `Anno Domini`)
--   “`short`” (e.g., `AD`)
--   “`narrow`” (e.g., `A`)
+-   "`long`” (e.g., `Anno Domini`)
+-   "`short`” (e.g., `AD`)
+-   "`narrow`” (e.g., `A`)
 
 `year`  
 The representation of the year. Possible values are:
 
--   “`numeric`” (e.g., `2012`)
--   “`2-digit`” (e.g., `12`)
+-   "`numeric`” (e.g., `2012`)
+-   "`2-digit`” (e.g., `12`)
 
 `month`  
 The representation of the month. Possible values are:
 
--   “`numeric`” (e.g., `2`)
--   “`2-digit`” (e.g., `02`)
--   “`long`” (e.g., `March`)
--   “`short`” (e.g., `Mar`)
--   “`narrow`” (e.g., `M`). Two months may have the same narrow style for some locales (e.g. `May`’s narrow style is also `M`).
+-   "`numeric`” (e.g., `2`)
+-   "`2-digit`” (e.g., `02`)
+-   "`long`” (e.g., `March`)
+-   "`short`” (e.g., `Mar`)
+-   "`narrow`” (e.g., `M`). Two months may have the same narrow style for some locales (e.g. `May`’s narrow style is also `M`).
 
 `day`  
 The representation of the day. Possible values are:
 
--   “`numeric`” (e.g., `1`)
--   “`2-digit`” (e.g., `01`)
+-   "`numeric`” (e.g., `1`)
+-   "`2-digit`” (e.g., `01`)
 
 `hour`  
-The representation of the hour. Possible values are “`numeric`”, “`2-digit`”.
+The representation of the hour. Possible values are "`numeric`”, "`2-digit`”.
 
 `minute`  
-The representation of the minute. Possible values are “`numeric`”, “`2-digit`”.
+The representation of the minute. Possible values are "`numeric`”, "`2-digit`”.
 
 `second`  
-The representation of the second. Possible values are “`numeric`”, “`2-digit`”.
+The representation of the second. Possible values are "`numeric`”, "`2-digit`”.
 
 `fractionalSecondDigits`  
 The number of digits used to represent fractions of a second (any additional digits are truncated). Possible values are:
@@ -22407,10 +22407,10 @@ The number of digits used to represent fractions of a second (any additional dig
 `timeZoneName`  
 The representation of the time zone name. Possible values are:
 
--   “`long`” (e.g., `British Summer Time`)
--   “`short`” (e.g., `GMT+1`)
+-   "`long`” (e.g., `British Summer Time`)
+-   "`short`” (e.g., `GMT+1`)
 
-The default value for each date-time component property is [`undefined`](../../undefined), but if all component properties are [`undefined`](../../undefined), then `year`, `month`, and `day` are assumed to be “`numeric`”.
+The default value for each date-time component property is [`undefined`](../../undefined), but if all component properties are [`undefined`](../../undefined), then `year`, `month`, and `day` are assumed to be "`numeric`”.
 
 Examples
 --------
@@ -22617,7 +22617,7 @@ See also
 TypeError: can’t access dead object
 ===================================
 
-The JavaScript exception “can’t access dead object” occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.
+The JavaScript exception "can’t access dead object” occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.
 
 Message
 -------
@@ -22657,7 +22657,7 @@ Unprivileged code has no access to Component.utils and might just be able catch 
 See also
 --------
 
--   [What does “can’t access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
+-   [What does "can’t access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
 -   [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)
 -   [Components.utils](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils)
 -   [Zombie Compartments](https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments)
@@ -22752,12 +22752,12 @@ A new string representing the unencoded version of the given encoded Uniform Res
 
 ### Exceptions
 
-Throws an [`URIError`](urierror) (“malformed URI sequence”) exception when `encodedURI` contains invalid character sequences.
+Throws an [`URIError`](urierror) ("malformed URI sequence”) exception when `encodedURI` contains invalid character sequences.
 
 Description
 -----------
 
-Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character “`#`” is not decoded from escape sequences.
+Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by [`encodeURI`](encodeuri). The character "`#`” is not decoded from escape sequences.
 
 Examples
 --------
@@ -22839,7 +22839,7 @@ A new string representing the decoded version of the given encoded Uniform Resou
 
 ### Exceptions
 
-Throws an [`URIError`](urierror) (“malformed URI sequence”) exception when used wrongly.
+Throws an [`URIError`](urierror) ("malformed URI sequence”) exception when used wrongly.
 
 Description
 -----------
@@ -23607,13 +23607,13 @@ When the property specified doesn’t exist in the object, `Object.definePropert
 
 ### Modifying a property
 
-When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be “non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
+When the property already exists, `Object.defineProperty()` attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its `configurable` attribute set to `false` the property is said to be "non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change `writable` attribute from `true` to `false`. It is not possible to switch between data and accessor property types when the property is non-configurable.
 
 A [`TypeError`](../typeerror) is thrown when attempts are made to change non-configurable property attributes (except `value` and `writable`, if permitted) unless the current and new values are the same.
 
 #### Writable attribute
 
-When the `writable` property attribute is set to `false`, the property is said to be “non-writable”. It cannot be reassigned.
+When the `writable` property attribute is set to `false`, the property is said to be "non-writable”. It cannot be reassigned.
 
     var o = {}; // Creates a new object
 
@@ -23922,7 +23922,7 @@ Internet Explorer 8 implemented a `Object.defineProperty()` method that could [o
 
 ### Chrome 37 (and below) specific notes
 
-Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?id=3448) where an attempt to define a “prototype” property, on a function, with `writable: false` doesn’t work as expected.
+Chrome 37 (and below) has a [bug](https://bugs.chromium.org/p/v8/issues/detail?id=3448) where an attempt to define a "prototype” property, on a function, with `writable: false` doesn’t work as expected.
 
 See also
 --------
@@ -24207,7 +24207,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: applying the ‘delete’ operator to an unqualified name is deprecated
 ================================================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “applying the ‘delete’ operator to an unqualified name is deprecated” occurs when variables are attempted to be deleted using the `delete` operator.
+The JavaScript [strict mode](../strict_mode)-only exception "applying the ‘delete’ operator to an unqualified name is deprecated” occurs when variables are attempted to be deleted using the `delete` operator.
 
 Message
 -------
@@ -24226,7 +24226,7 @@ What went wrong?
 
 Normal variables in JavaScript can’t be deleted using the `delete` operator. In strict mode, an attempt to delete a variable will throw an error and is not allowed.
 
-The `delete` operator can only delete properties on an object. Object properties are “qualified” if they are configurable.
+The `delete` operator can only delete properties on an object. Object properties are "qualified” if they are configurable.
 
 Unlike what common belief suggests, the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references, see the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page and the `delete` operator page for more details.
 
@@ -24267,7 +24267,7 @@ See also
 
 -   `delete`
 -   [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
--   [TypeError: property “x” is non-configurable and can’t be deleted](cant_delete)
+-   [TypeError: property "x” is non-configurable and can’t be deleted](cant_delete)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode</a>
 
@@ -24395,7 +24395,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 ReferenceError: deprecated caller or arguments usage
 ====================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “deprecated caller or arguments usage” occurs when the deprecated [`Function.caller`](../global_objects/function/caller) or [`Function.arguments`](../global_objects/function/arguments) properties are used.
+The JavaScript [strict mode](../strict_mode)-only exception "deprecated caller or arguments usage” occurs when the deprecated [`Function.caller`](../global_objects/function/caller) or [`Function.arguments`](../global_objects/function/arguments) properties are used.
 
 Message
 -------
@@ -24468,7 +24468,7 @@ See also
 Warning: expression closures are deprecated
 ===========================================
 
-The JavaScript warning “expression closures are deprecated” occurs when the non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is used.
+The JavaScript warning "expression closures are deprecated” occurs when the non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is used.
 
 Message
 -------
@@ -24539,10 +24539,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_expression_closures" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Deprecated_expression_closures</a>
 
-SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated
+SyntaxError: "0”-prefixed octal literals and octal escape seq. are deprecated
 =============================================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “0-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the”0o" prefix instead" occurs when deprecated octal literals and octal escape sequences are used.
+The JavaScript [strict mode](../strict_mode)-only exception "0-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the”0o" prefix instead" occurs when deprecated octal literals and octal escape sequences are used.
 
 Message
 -------
@@ -24560,12 +24560,12 @@ Error type
 What went wrong?
 ----------------
 
-Octal literals and octal escape sequences are deprecated and will throw a [`SyntaxError`](../global_objects/syntaxerror) in strict mode. With ECMAScript 2015 and later, the standardized syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`.
+Octal literals and octal escape sequences are deprecated and will throw a [`SyntaxError`](../global_objects/syntaxerror) in strict mode. With ECMAScript 2015 and later, the standardized syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (`0o` or `0O)`.
 
 Examples
 --------
 
-### “0”-prefixed octal literals
+### "0”-prefixed octal literals
 
     "use strict";
 
@@ -24585,7 +24585,7 @@ Examples
 
 ### Valid octal numbers
 
-Use a leading zero followed by the letter “o” or “O”:
+Use a leading zero followed by the letter "o” or "O”:
 
     0o3;
 
@@ -24604,7 +24604,7 @@ See also
 SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //\# instead
 ====================================================================================
 
-The JavaScript warning “Using `//@` to indicate sourceURL pragmas is deprecated. Use `//#` instead” occurs when there is a deprecated source map syntax in a JavaScript source.
+The JavaScript warning "Using `//@` to indicate sourceURL pragmas is deprecated. Use `//#` instead” occurs when there is a deprecated source map syntax in a JavaScript source.
 
 Message
 -------
@@ -24632,13 +24632,13 @@ Examples
 
 ### Deprecated syntax
 
-Syntax with the “@” sign is deprecated.
+Syntax with the "@” sign is deprecated.
 
     //@ sourceMappingURL=http://example.com/path/to/your/sourcemap.map
 
 ### Standard syntax
 
-Use the “\#” sign instead.
+Use the "\#” sign instead.
 
     //# sourceMappingURL=http://example.com/path/to/your/sourcemap.map
 
@@ -24759,7 +24759,7 @@ See also
 Warning: Date.prototype.toLocaleFormat is deprecated
 ====================================================
 
-The JavaScript warning “Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead” occurs when the non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is used.
+The JavaScript warning "Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead” occurs when the non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is used.
 
 Message
 -------
@@ -24851,7 +24851,7 @@ The read-only `description` property is a string returning the optional descript
 Description
 -----------
 
-[`Symbol`](../symbol) objects can be created with an optional description which can be used for debugging but not to access the symbol itself. The `Symbol.prototype.description` property can be used to read that description. It is different to `Symbol.prototype.toString()` as it does not contain the enclosing “`Symbol()`” string. See the examples.
+[`Symbol`](../symbol) objects can be created with an optional description which can be used for debugging but not to access the symbol itself. The `Symbol.prototype.description` property can be used to read that description. It is different to `Symbol.prototype.toString()` as it does not contain the enclosing "`Symbol()`” string. See the examples.
 
 Examples
 --------
@@ -25423,7 +25423,7 @@ See also
 --------
 
 -   [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
--   [“ES6 in Depth: Destructuring” on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
+-   ["ES6 in Depth: Destructuring” on hacks.mozilla.org](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a>
@@ -25444,7 +25444,7 @@ Examples
 
 It is usually preferred by consoles and profilers over [`func.name`](name) to display the name of a function.
 
-By entering the following in a console, it should display as something like “`function My Function()`”:
+By entering the following in a console, it should display as something like "`function My Function()`”:
 
     var a = function() {};
     a.displayName = 'My Function';
@@ -25936,7 +25936,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 RegExp.prototype.dotAll
 =======================
 
-The `dotAll` property indicates whether or not the “`s`” flag is used with the regular expression. `dotAll` is a read-only property of an individual regular expression instance.
+The `dotAll` property indicates whether or not the "`s`” flag is used with the regular expression. `dotAll` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.dotAll`
 
@@ -25955,14 +25955,14 @@ yes
 Description
 -----------
 
-The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the “`s`” flag was used; otherwise, `false`. The “`s`” flag indicates that the dot special character (“`.`”) should additionally match the following line terminator (“newline”) characters in a string, which it would not match otherwise:
+The value of `dotAll` is a [`Boolean`](../boolean) and `true` if the "`s`” flag was used; otherwise, `false`. The "`s`” flag indicates that the dot special character ("`.`”) should additionally match the following line terminator ("newline”) characters in a string, which it would not match otherwise:
 
--   U+000A LINE FEED (LF) (“`\n`”)
--   U+000D CARRIAGE RETURN (CR) (“`\r`”)
+-   U+000A LINE FEED (LF) ("`\n`”)
+-   U+000D CARRIAGE RETURN (CR) ("`\r`”)
 -   U+2028 LINE SEPARATOR
 -   U+2029 PARAGRAPH SEPARATOR
 
-This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the “`u`” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.
+This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the "`u`” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.
 
 You cannot change this property directly.
 
@@ -26215,7 +26215,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 encodeURI()
 ===========
 
-The `encodeURI()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).
+The `encodeURI()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two "surrogate” characters).
 
 Syntax
 ------
@@ -26234,11 +26234,11 @@ A new string representing the provided string encoded as a URI.
 Description
 -----------
 
-The `encodeURI()` function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI “scheme” can possibly contain. Note how certain characters are used to signify special meaning:
+The `encodeURI()` function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI "scheme” can possibly contain. Note how certain characters are used to signify special meaning:
 
     http://username:password@www.example.com:80/path/to/file.php?foo=316&bar=this+has+spaces#anchor
 
-Hence `encodeURI()` **does not** encode characters that are necessary to formulate a complete URI. Also, `encodeURI()` **does not** encode a few additional characters, known as “unreserved marks”, which do not have a reserved purpose but are allowed in a URI “as is”. (See [RFC2396)](https://www.ietf.org/rfc/rfc2396.txt)
+Hence `encodeURI()` **does not** encode characters that are necessary to formulate a complete URI. Also, `encodeURI()` **does not** encode a few additional characters, known as "unreserved marks”, which do not have a reserved purpose but are allowed in a URI "as is”. (See [RFC2396)](https://www.ietf.org/rfc/rfc2396.txt)
 
 `encodeURI()` escapes all characters **except**:
 
@@ -26265,7 +26265,7 @@ Examples
     console.log(encodeURIComponent(set2)); // -_.!~*'()
     console.log(encodeURIComponent(set3)); // ABC%20abc%20123 (the space gets encoded as %20)
 
-Note that `encodeURI()` by itself *cannot* form proper HTTP [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) and [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) requests, such as for [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), because “`&`”, “`+`”, and “`=`” are not encoded, which are treated as special characters in `GET` and `POST` requests. `encodeURIComponent()`, however, does encode these characters.
+Note that `encodeURI()` by itself *cannot* form proper HTTP [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) and [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) requests, such as for [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), because "`&`”, "`+`”, and "`=`” are not encoded, which are treated as special characters in `GET` and `POST` requests. `encodeURIComponent()`, however, does encode these characters.
 
 ### Encoding a lone high surrogate throws
 
@@ -26332,7 +26332,7 @@ See also
 encodeURIComponent()
 ====================
 
-The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).
+The `encodeURIComponent()` function encodes a [URI](https://developer.mozilla.org/en-US/docs/Glossary/URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8) encoding of the character (will only be four escape sequences for characters composed of two "surrogate” characters).
 
 Syntax
 ------
@@ -26810,7 +26810,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: test for equality (==) mistyped as assignment (=)?
 ===============================================================
 
-The JavaScript warning “test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
+The JavaScript warning "test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
 
 Message
 -------
@@ -27017,7 +27017,7 @@ Creates an instance representing an error that occurs when [`encodeURI()`](encod
 Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by [`Promise.any()`](promise/any).
 
 [`InternalError`](internalerror) <span class="icon non-standard" data-viewbox="0 0 100 100" data-xmlns="http://www.w3.org/2000/svg" data-role="img"> This API has not been standardized. </span>  
-Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. “too much recursion”.
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion”.
 
 Constructor
 -----------
@@ -27096,7 +27096,7 @@ You can choose to handle only specific error types by testing the error type wit
 
 You might want to define your own error types deriving from `Error` to be able to `throw new MyError()` and use `instanceof MyError` to check the kind of error in the exception handler. This results in cleaner and more consistent error handling code.
 
-See [“What’s a good way to extend Error in JavaScript?”](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
+See ["What’s a good way to extend Error in JavaScript?”](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
 
 #### ES6 Custom Error Class
 
@@ -27458,7 +27458,7 @@ List of errors
 
 In this list, each page is listed by name (the type of error) and message (a more detailed human-readable error message). Together, these two properties provide a starting point toward understanding and resolving the error. For more information, follow the links below!
 
--   [Error: Permission denied to access property “x”](errors/property_access_denied)
+-   [Error: Permission denied to access property "x”](errors/property_access_denied)
 -   [InternalError: too much recursion](errors/too_much_recursion)
 -   [RangeError: argument is not a valid code point](errors/not_a_codepoint)
 -   [RangeError: invalid array length](errors/invalid_array_length)
@@ -27467,15 +27467,15 @@ In this list, each page is listed by name (the type of error) and message (a mor
 -   [RangeError: radix must be an integer](errors/bad_radix)
 -   [RangeError: repeat count must be less than infinity](errors/resulting_string_too_large)
 -   [RangeError: repeat count must be non-negative](errors/negative_repetition_count)
--   [ReferenceError: “x” is not defined](errors/not_defined)
--   [ReferenceError: assignment to undeclared variable “x”](errors/undeclared_var)
+-   [ReferenceError: "x” is not defined](errors/not_defined)
+-   [ReferenceError: assignment to undeclared variable "x”](errors/undeclared_var)
 -   [ReferenceError: can’t access lexical declaration\`X’ before initialization](errors/cant_access_lexical_declaration_before_init)
 -   [ReferenceError: deprecated caller or arguments usage](errors/deprecated_caller_or_arguments_usage)
 -   [ReferenceError: invalid assignment left-hand side](errors/invalid_assignment_left-hand_side)
--   [ReferenceError: reference to undefined property “x”](errors/undefined_prop)
--   [SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated](errors/deprecated_octal)
--   [SyntaxError: “use strict” not allowed in function with non-simple parameters](errors/strict_non_simple_params)
--   [SyntaxError: “x” is a reserved identifier](errors/reserved_identifier)
+-   [ReferenceError: reference to undefined property "x”](errors/undefined_prop)
+-   [SyntaxError: "0”-prefixed octal literals and octal escape seq. are deprecated](errors/deprecated_octal)
+-   [SyntaxError: "use strict” not allowed in function with non-simple parameters](errors/strict_non_simple_params)
+-   [SyntaxError: "x” is a reserved identifier](errors/reserved_identifier)
 -   [SyntaxError: JSON.parse: bad parsing](errors/json_bad_parse)
 -   [SyntaxError: Malformed formal parameter](errors/malformed_formal_parameter)
 -   [SyntaxError: Unexpected ‘\#’ used outside of class body](errors/hash_outside_class)
@@ -27487,7 +27487,7 @@ In this list, each page is listed by name (the type of error) and message (a mor
 -   [SyntaxError: function statement requires a name](errors/unnamed_function_statement)
 -   [SyntaxError: identifier starts immediately after numeric literal](errors/identifier_after_number)
 -   [SyntaxError: illegal character](errors/illegal_character)
--   [SyntaxError: invalid regular expression flag “x”](errors/bad_regexp_flag)
+-   [SyntaxError: invalid regular expression flag "x”](errors/bad_regexp_flag)
 -   [SyntaxError: missing ) after argument list](errors/missing_parenthesis_after_argument_list)
 -   [SyntaxError: missing ) after condition](errors/missing_parenthesis_after_condition)
 -   [SyntaxError: missing : after property id](errors/missing_colon_after_property_id)
@@ -27499,35 +27499,35 @@ In this list, each page is listed by name (the type of error) and message (a mor
 -   [SyntaxError: missing variable name](errors/no_variable_name)
 -   [SyntaxError: missing } after function body](errors/missing_curly_after_function_body)
 -   [SyntaxError: missing } after property list](errors/missing_curly_after_property_list)
--   [SyntaxError: redeclaration of formal parameter “x”](errors/redeclared_parameter)
+-   [SyntaxError: redeclaration of formal parameter "x”](errors/redeclared_parameter)
 -   [SyntaxError: return not in function](errors/bad_return_or_yield)
 -   [SyntaxError: test for equality (==) mistyped as assignment (=)?](errors/equal_as_assign)
 -   [SyntaxError: unterminated string literal](errors/unterminated_string_literal)
--   [TypeError: “x” has no properties](errors/no_properties)
--   [TypeError: “x” is (not) “y”](errors/unexpected_type)
--   [TypeError: “x” is not a constructor](errors/not_a_constructor)
--   [TypeError: “x” is not a function](errors/not_a_function)
--   [TypeError: “x” is not a non-null object](errors/no_non-null_object)
--   [TypeError: “x” is read-only](errors/read-only)
+-   [TypeError: "x” has no properties](errors/no_properties)
+-   [TypeError: "x” is (not) "y”](errors/unexpected_type)
+-   [TypeError: "x” is not a constructor](errors/not_a_constructor)
+-   [TypeError: "x” is not a function](errors/not_a_function)
+-   [TypeError: "x” is not a non-null object](errors/no_non-null_object)
+-   [TypeError: "x” is read-only](errors/read-only)
 -   [TypeError: ‘x’ is not iterable](errors/is_not_iterable)
 -   [TypeError: More arguments needed](errors/more_arguments_needed)
 -   [TypeError: Reduce of empty array with no initial value](errors/reduce_of_empty_array_with_no_initial_value)
 -   [TypeError: X.prototype.y called on incompatible type](errors/called_on_incompatible_type)
 -   [TypeError: can’t access dead object](errors/dead_object)
--   [TypeError: can’t access property “x” of “y”](errors/cant_access_property)
--   [TypeError: can’t assign to property “x” on “y”: not an object](errors/cant_assign_to_property)
--   [TypeError: can’t define property “x”: “obj” is not extensible](errors/cant_define_property_object_not_extensible)
+-   [TypeError: can’t access property "x” of "y”](errors/cant_access_property)
+-   [TypeError: can’t assign to property "x” on "y”: not an object](errors/cant_assign_to_property)
+-   [TypeError: can’t define property "x”: "obj” is not extensible](errors/cant_define_property_object_not_extensible)
 -   [TypeError: can’t delete non-configurable array element](errors/non_configurable_array_element)
--   [TypeError: can’t redefine non-configurable property “x”](errors/cant_redefine_property)
+-   [TypeError: can’t redefine non-configurable property "x”](errors/cant_redefine_property)
 -   [TypeError: cannot use ‘in’ operator to search for ‘x’ in ‘y’](errors/in_operator_no_object)
 -   [TypeError: cyclic object value](errors/cyclic_object_value)
 -   [TypeError: invalid ‘instanceof’ operand ‘x’](errors/invalid_right_hand_side_instanceof_operand)
 -   [TypeError: invalid Array.prototype.sort argument](errors/array_sort_argument)
 -   [TypeError: invalid arguments](errors/typed_array_invalid_arguments)
--   [TypeError: invalid assignment to const “x”](errors/invalid_const_assignment)
--   [TypeError: property “x” is non-configurable and can’t be deleted](errors/cant_delete)
--   [TypeError: setting getter-only property “x”](errors/getter_only)
--   [TypeError: variable “x” redeclares argument](errors/var_hides_argument)
+-   [TypeError: invalid assignment to const "x”](errors/invalid_const_assignment)
+-   [TypeError: property "x” is non-configurable and can’t be deleted](errors/cant_delete)
+-   [TypeError: setting getter-only property "x”](errors/getter_only)
+-   [TypeError: variable "x” redeclares argument](errors/var_hides_argument)
 -   [URIError: malformed URI sequence](errors/malformed_uri)
 -   [Warning: 08/09 is not a legal ECMA-262 octal constant](errors/bad_octal)
 -   [Warning: -file- is being assigned a //\# sourceMappingURL, but already has one](errors/already_has_pragma)
@@ -27567,7 +27567,7 @@ Description
 
 The argument of the `eval()` function is a string. If the string represents an expression, `eval()` evaluates the expression. If the argument represents one or more JavaScript statements, `eval()` evaluates the statements. Do not call `eval()` to evaluate an arithmetic expression; JavaScript evaluates arithmetic expressions automatically.
 
-If you construct an arithmetic expression as a string, you can use `eval()` to evaluate it at a later time. For example, suppose you have a variable `x`. You can postpone evaluation of an expression involving `x` by assigning the string value of the expression, say “`3 * x + 2`”, to a variable, and then calling `eval()` at a later point in your script.
+If you construct an arithmetic expression as a string, you can use `eval()` to evaluate it at a later time. For example, suppose you have a variable `x`. You can postpone evaluation of an expression involving `x` by assigning the string value of the expression, say "`3 * x + 2`”, to a variable, and then calling `eval()` at a later point in your script.
 
 If the argument of `eval()` is not a string, `eval()` returns the argument unchanged. In the following example, the `String` constructor is specified and `eval()` returns a `String` object rather than evaluating the string.
 
@@ -27740,7 +27740,7 @@ Examples
 
 ### Using `eval`
 
-In the following code, both of the statements containing `eval()` return 42. The first evaluates the string “`x + y + 1`”; the second evaluates the string “`42`”.
+In the following code, both of the statements containing `eval()` return 42. The first evaluates the string "`x + y + 1`”; the second evaluates the string "`42`”.
 
     var x = 2;
     var y = 39;
@@ -27779,7 +27779,7 @@ If you define multiple values then the last value is returned.
 
     console.log('b is : ' + b);
 
-### `eval` as a string defining function requires “(” and “)” as prefix and suffix
+### `eval` as a string defining function requires "(” and ")” as prefix and suffix
 
     var fctStr1 = 'function a() {}'
     var fctStr2 = '(function a() {})'
@@ -28005,7 +28005,7 @@ If a `thisArg` parameter is provided to `every`, it will be used as callback’s
 
 The range of elements processed by `every` is set before the first invocation of `callbackFn`. Therefore, `callbackFn` will not run on elements that are appended to the array after the call to `every` begins. If existing elements of the array are changed, their value as passed to `callbackFn` will be the value at the time `every` visits them. Elements that are deleted are not visited.
 
-`every` acts like the “for all” quantifier in mathematics. In particular, for an empty array, it returns `true`. (It is [vacuously true](https://en.wikipedia.org/wiki/Vacuous_truth) that all elements of the [empty set](https://en.wikipedia.org/wiki/Empty_set#Properties) satisfy any given condition.)
+`every` acts like the "for all” quantifier in mathematics. In particular, for an empty array, it returns `true`. (It is [vacuously true](https://en.wikipedia.org/wiki/Vacuous_truth) that all elements of the [empty set](https://en.wikipedia.org/wiki/Empty_set#Properties) satisfy any given condition.)
 
 Polyfill
 --------
@@ -28346,7 +28346,7 @@ Consider the following example:
 
 The following table shows the state of `result` after running this script:
 
-<table style="width:99%;"><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>“Quick Brown Fox Jumps”</code></td></tr><tr class="even"><td><code>[1], …[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === “Brown”</code></p><p><code>result[2] === “Jumps”</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td><p>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index.<br />
+<table style="width:99%;"><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps”</code></td></tr><tr class="even"><td><code>[1], …[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown”</code></p><p><code>result[2] === "Jumps”</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td><p>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index.<br />
 </p>The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn’t contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td><td><p><code>indices[0] === Array [ 4, 25 ]</code></p><p><code>indices[1] === Array [ 10, 15 ]</code></p><p><code>indices[2] === Array [ 20, 25 ]</code></p><p><code>indices.groups === undefined</code></p><p><code>indices.length === 3</code></p></td></tr><tr class="odd"><td><code>input</code></td><td>The original string that was matched against.</td><td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td></tr></tbody></table>
 
 The following table shows the state of `re` after running this script:
@@ -28358,7 +28358,7 @@ Examples
 
 ### Finding successive matches
 
-If your regular expression uses the “`g`” flag, you can use the `exec()` method multiple times to find successive matches in the same string. When you do so, the search starts at the substring of `str` specified by the regular expression’s [`lastIndex`](lastindex) property ([`test()`](test) will also advance the [`lastIndex`](lastindex) property). Note that the [`lastIndex`](lastindex) property will not be reset when searching a different string, it will start its search at its existing [`lastIndex`](lastindex) .
+If your regular expression uses the "`g`” flag, you can use the `exec()` method multiple times to find successive matches in the same string. When you do so, the search starts at the substring of `str` specified by the regular expression’s [`lastIndex`](lastindex) property ([`test()`](test) will also advance the [`lastIndex`](lastindex) property). Note that the [`lastIndex`](lastindex) property will not be reset when searching a different string, it will start its search at its existing [`lastIndex`](lastindex) .
 
 For example, assume you have this script:
 
@@ -28380,7 +28380,7 @@ This script displays the following text:
 
 It will create an infinite loop if there is a match, due to the [`lastIndex`](lastindex) property being reset upon each iteration.
 
-Also, be sure that the global flag (“`g`”) is set, or it will also cause an infinite loop.
+Also, be sure that the global flag ("`g`”) is set, or it will also cause an infinite loop.
 
 ### Using exec() with RegExp literals
 
@@ -28785,9 +28785,9 @@ You can also rename named exports to avoid naming conflicts:
 
 ### Re-exporting / Aggregating
 
-It is also possible to “import/export” from different modules in a parent module so that they are available to import from that module. In other words, one can create a single module concentrating various exports from various modules.
+It is also possible to "import/export” from different modules in a parent module so that they are available to import from that module. In other words, one can create a single module concentrating various exports from various modules.
 
-This can be achieved with the “export from” syntax:
+This can be achieved with the "export from” syntax:
 
     export { default as function1,
              function2 } from 'bar.js';
@@ -28810,7 +28810,7 @@ The correct way of doing this is to rename the export:
 
     export { default as DefaultExport } from 'bar.js';
 
-The “export from” syntax allows the `as` token to be omitted; however this will mean the default item cannot be imported as a named import:
+The "export from” syntax allows the `as` token to be omitted; however this will mean the default item cannot be imported as a named import:
 
     export { default, function2 } from 'bar.js';
 
@@ -28855,7 +28855,7 @@ Then in the top-level module included in your HTML page, we could have:
 
 It is important to note the following:
 
--   You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type=“module”, so that it gets recognized as a module and dealt with appropriately.
+-   You need to include this script in your HTML with a [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element of type="module”, so that it gets recognized as a module and dealt with appropriately.
 -   You can’t run JS modules via a `file://` URL — you’ll get [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors. You need to run it via an HTTP server.
 
 ### Using the default export
@@ -29007,7 +29007,7 @@ See also
 -   [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) guide
 -   [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/), Hacks blog post by Jason Orendorff
 -   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/), Hacks blog post by Lin Clark
--   [Axel Rauschmayer’s book: “Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
+-   [Axel Rauschmayer’s book: "Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a>
@@ -29258,7 +29258,7 @@ The `fileName` property contains the path to the file that raised this error.
 Description
 -----------
 
-This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, “debugger eval code” is returned.
+This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, "debugger eval code” is returned.
 
 Examples
 --------
@@ -30220,7 +30220,7 @@ A string representing a [`<tt>`](https://developer.mozilla.org/en-US/docs/Web/HT
 Description
 -----------
 
-The `fixed()` method embeds a string in a `<tt>` element: “`<tt>str</tt>`”.
+The `fixed()` method embeds a string in a `<tt>` element: "`<tt>str</tt>`”.
 
 Examples
 --------
@@ -30696,7 +30696,7 @@ Static properties
 Returns a number value of the element size. `4` in the case of an `Float32Array`.
 
 [`Float32Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Float32Array` type: “Float32Array”.
+Returns the string value of the constructor name. In the case of the `Float32Array` type: "Float32Array”.
 
 Static methods
 --------------
@@ -30918,7 +30918,7 @@ Static properties
 Returns a number value of the element size. `8` in the case of an `Float64Array`.
 
 [`Float64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Float64Array` type: “Float64Array”.
+Returns the string value of the constructor name. In the case of the `Float64Array` type: "Float64Array”.
 
 Static methods
 --------------
@@ -31287,7 +31287,7 @@ A string containing a [`<font>`](https://developer.mozilla.org/en-US/docs/Web/HT
 Description
 -----------
 
-If you express color as a hexadecimal RGB triplet, you must use the format `rrggbb`. For example, the hexadecimal RGB values for salmon are red=FA, green=80, and blue=72, so the RGB triplet for salmon is “`FA8072`”.
+If you express color as a hexadecimal RGB triplet, you must use the format `rrggbb`. For example, the hexadecimal RGB values for salmon are red=FA, green=80, and blue=72, so the RGB triplet for salmon is "`FA8072`”.
 
 Examples
 --------
@@ -31376,7 +31376,7 @@ A string containing a [`<font>`](https://developer.mozilla.org/en-US/docs/Web/HT
 Description
 -----------
 
-When you specify size as an integer, you set the font size of `str` to one of the 7 defined sizes. When you specify `size` as a string such as “-2”, you adjust the font size of `str` relative to the size set in the [`<basefont>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont) element.
+When you specify size as an integer, you set the font size of `str` to one of the 7 defined sizes. When you specify `size` as a string such as "-2”, you adjust the font size of `str` relative to the size set in the [`<basefont>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont) element.
 
 Examples
 --------
@@ -31684,7 +31684,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 Warning: JavaScript 1.6’s for-each-in loops are deprecated
 ==========================================================
 
-The JavaScript warning “JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
+The JavaScript warning "JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
 
 Message
 -------
@@ -31886,7 +31886,7 @@ Why Use for…in?
 
 Given that `for...in` is built for iterating object properties, not recommended for use with arrays, and options like `Array.prototype.forEach()` and `for...of` exist, what might be the use of `for...in` at all?
 
-It may be most practically used for debugging purposes, being an easy way to check the properties of an object (by outputting to the console or otherwise). Although arrays are often more practical for storing data, in situations where a key-value pair is preferred for working with data (with properties acting as the “key”), there may be instances where you want to check if any of those keys hold a particular value.
+It may be most practically used for debugging purposes, being an easy way to check the properties of an object (by outputting to the console or otherwise). Although arrays are often more practical for storing data, in situations where a key-value pair is preferred for working with data (with properties acting as the "key”), there may be instances where you want to check if any of those keys hold a particular value.
 
 Examples
 --------
@@ -31973,7 +31973,7 @@ Prior to Firefox 40, it was possible to use an initializer expression (`i=0`) in
     // 2
     // 3
 
-This nonstandard behavior is now ignored in version 40 and later, and will present a [`SyntaxError`](../global_objects/syntaxerror) (“[for-in loop head declarations may not have initializers](../errors/invalid_for-in_initializer)”) error in [strict mode](../strict_mode) ([bug 748550](https://bugzilla.mozilla.org/show_bug.cgi?id=748550) and [bug 1164741](https://bugzilla.mozilla.org/show_bug.cgi?id=1164741)).
+This nonstandard behavior is now ignored in version 40 and later, and will present a [`SyntaxError`](../global_objects/syntaxerror) ("[for-in loop head declarations may not have initializers](../errors/invalid_for-in_initializer)”) error in [strict mode](../strict_mode) ([bug 748550](https://bugzilla.mozilla.org/show_bug.cgi?id=748550) and [bug 1164741](https://bugzilla.mozilla.org/show_bug.cgi?id=1164741)).
 
 Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are investigating whether to remove the nonstandard behavior as well.
 
@@ -32266,7 +32266,7 @@ Specifications
 
 13
 
-Prior to Firefox 51, using the `for...of` loop construct with the `const` keyword threw a `SyntaxError` (“missing = in const declaration”).
+Prior to Firefox 51, using the `for...of` loop construct with the `const` keyword threw a `SyntaxError` ("missing = in const declaration”).
 
 No
 
@@ -32280,7 +32280,7 @@ No
 
 14
 
-Prior to Firefox 51, using the `for...of` loop construct with the `const` keyword threw a `SyntaxError` (“missing = in const declaration”).
+Prior to Firefox 51, using the `for...of` loop construct with the `const` keyword threw a `SyntaxError` ("missing = in const declaration”).
 
 25
 
@@ -33159,46 +33159,46 @@ The `formatToParts()` method is useful for custom formatting of date strings. It
 Possible types are the following:
 
 day  
-The string used for the day, for example “`17`”.
+The string used for the day, for example "`17`”.
 
 dayPeriod  
-The string used for the day period, for example, “`AM`”, “`PM`”, “`in the morning`”, or “`noon`”
+The string used for the day period, for example, "`AM`”, "`PM`”, "`in the morning`”, or "`noon`”
 
 era  
-The string used for the era, for example “`BC`” or “`AD`”.
+The string used for the era, for example "`BC`” or "`AD`”.
 
 fractionalSecond  
-The string used for the fractional seconds, for example “`0`” or “`00`” or “`000`”.
+The string used for the fractional seconds, for example "`0`” or "`00`” or "`000`”.
 
 hour  
-The string used for the hour, for example “`3`” or “`03`”.
+The string used for the hour, for example "`3`” or "`03`”.
 
 literal  
-The string used for separating date and time values, for example “`/`”, “`,`”, “`o'clock`”, “`de`”, etc.
+The string used for separating date and time values, for example "`/`”, "`,`”, "`o'clock`”, "`de`”, etc.
 
 minute  
-The string used for the minute, for example “`00`”.
+The string used for the minute, for example "`00`”.
 
 month  
-The string used for the month, for example “`12`”.
+The string used for the month, for example "`12`”.
 
 relatedYear  
-The string used for the related 4-digit Gregorian year, in the event that the calendar’s representation would be a yearName instead of a year, for example “`2019`”.
+The string used for the related 4-digit Gregorian year, in the event that the calendar’s representation would be a yearName instead of a year, for example "`2019`”.
 
 second  
-The string used for the second, for example “`07`” or “`42`”.
+The string used for the second, for example "`07`” or "`42`”.
 
 timeZoneName  
-The string used for the name of the time zone, for example “`UTC`”.
+The string used for the name of the time zone, for example "`UTC`”.
 
 weekday  
-The string used for the weekday, for example “`M`”, “`Monday`”, or “`Montag`”.
+The string used for the weekday, for example "`M`”, "`Monday`”, or "`Montag`”.
 
 year  
-The string used for the year, for example “`2012`” or “`96`”.
+The string used for the year, for example "`2012`” or "`96`”.
 
 yearName  
-The string used for the yearName in relevant contexts, for example “`geng-zi`”
+The string used for the yearName in relevant contexts, for example "`geng-zi`”
 
 Polyfill
 --------
@@ -33527,7 +33527,7 @@ The object being frozen is *immutable*. However, it is not necessarily *constant
 
 To be a constant object, the entire reference graph (direct and indirect references to other objects) must reference only immutable frozen objects. The object being frozen is said to be immutable because the entire object *state* (values and references to other objects) within the whole object is fixed. Note that strings, numbers, and booleans are always immutable and that Functions and Arrays are objects.
 
-#### What is “shallow freeze”?
+#### What is "shallow freeze”?
 
 The result of calling `Object.freeze(object)` only applies to the immediate properties of `object` itself and will prevent future property addition, removal or value re-assignment operations *only* on `object`. If the value of those properties are objects themselves, those objects are not frozen and may be the target of property addition, removal or value re-assignment operations.
 
@@ -33677,7 +33677,7 @@ except that it does not create an intermediate array.
 
 The `length` property of the `from()` method is `1`.
 
-In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are “inherited” by subclasses of `Array`, and create new instances *of the subclass*, not `Array`.
+In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as `Array.from()` are "inherited” by subclasses of `Array`, and create new instances *of the subclass*, not `Array`.
 
 Examples
 --------
@@ -33973,9 +33973,9 @@ Because `fromCharCode()` is a static method of [`String`](../string), you always
 
 In UTF-16, the most common characters can be represented by a single 16-bit value (i.e. a code unit). However, this set of characters, known as the Base Multilingual Plane (BMP), is only <sup>1</sup>/<sub>17</sub><sup>th</sup> of the total addressable Unicode code points. The remaining code points, in the range of `65536` (`0x010000`) to `1114111` (`0x10FFFF`) are known as supplementary characters. In UTF-16, supplementary characters are represented by two 16-bit code units, known as surrogates, that were reserved for this purpose. A valid combination of two surrogates used to represent a supplementary character is known as a surrogate pair.
 
-Because `fromCharCode()` only works with 16-bit values (same as the `\u` escape sequence), a surrogate pair is required in order to return a supplementary character. For example, both `String.fromCharCode(0xD83C, 0xDF03)` and `\uD83C\uDF03` return code point `U+1F303` “Night with Stars”.
+Because `fromCharCode()` only works with 16-bit values (same as the `\u` escape sequence), a surrogate pair is required in order to return a supplementary character. For example, both `String.fromCharCode(0xD83C, 0xDF03)` and `\uD83C\uDF03` return code point `U+1F303` "Night with Stars”.
 
-While there is a mathematical relationship between the supplementary code point value (e.g. `0x1F303`) and both surrogate values that represent it (e.g., `0xD83C` and `0xDF03`), it does require an extra step to either calculate or look up the surrogate pair values every time a supplementary code point is to be used. For this reason, it’s more convenient to use [`String.fromCodePoint()`](fromcodepoint) (part of the ES2015 standard), which allows for returning supplementary characters based on their actual code point value. For example, `String.fromCodePoint(0x1F303)` returns code point `U+1F303` “Night with Stars”.
+While there is a mathematical relationship between the supplementary code point value (e.g. `0x1F303`) and both surrogate values that represent it (e.g., `0xD83C` and `0xDF03`), it does require an extra step to either calculate or look up the surrogate pair values every time a supplementary code point is to be used. For this reason, it’s more convenient to use [`String.fromCodePoint()`](fromcodepoint) (part of the ES2015 standard), which allows for returning supplementary characters based on their actual code point value. For example, `String.fromCodePoint(0x1F303)` returns code point `U+1F303` "Night with Stars”.
 
 Examples
 --------
@@ -34319,7 +34319,7 @@ Description
 
 JavaScript uses 64-bit double floating-point numbers internally, which offer a very high precision. However, sometimes you may be working with 32-bit floating-point numbers, for example if you are reading values from a [`Float32Array`](../float32array). This can create confusion: Checking a 64-bit float and a 32-bit float for equality may fail even though the numbers are seemingly identical.
 
-To solve this, `Math.fround()` can be used to cast the 64-bit float to a 32-bit float. Internally, JavaScript continues to treat the number as a 64-bit float, it just performs a “round to even” on the 23rd bit of the mantissa, and sets all following mantissa bits to `0`. If the number is outside the range of a 32-bit float, [`Infinity`](../infinity) or `-Infinity` is returned.
+To solve this, `Math.fround()` can be used to cast the 64-bit float to a 32-bit float. Internally, JavaScript continues to treat the number as a 64-bit float, it just performs a "round to even” on the 23rd bit of the mantissa, and sets all following mantissa bits to `0`. If the number is outside the range of a 32-bit float, [`Infinity`](../infinity) or `-Infinity` is returned.
 
 Because `fround()` is a static method of `Math`, you always use it as `Math.fround()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
@@ -34931,7 +34931,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 Functions
 =========
 
-Generally speaking, a function is a “subprogram” that can be *called* by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the *function body*. Values can be *passed* to a function, and the function will *return* a value.
+Generally speaking, a function is a "subprogram” that can be *called* by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the *function body*. Values can be *passed* to a function, and the function will *return* a value.
 
 In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are `Function` objects.
 
@@ -35000,7 +35000,7 @@ The statements comprising the body of the function.
 
 ### The function expression (`function` expression)
 
-A function expression is similar to and has the same syntax as a function declaration (see [function expression](operators/function) for details). A function expression may be a part of a larger expression. One can define “named” function expressions (where the name of the expression might be used in the call stack for example) or “anonymous” function expressions. Function expressions are not *hoisted* onto the beginning of the scope, therefore they cannot be used before they appear in the code.
+A function expression is similar to and has the same syntax as a function declaration (see [function expression](operators/function) for details). A function expression may be a part of a larger expression. One can define "named” function expressions (where the name of the expression might be used in the call stack for example) or "anonymous” function expressions. Function expressions are not *hoisted* onto the beginning of the scope, therefore they cannot be used before they appear in the code.
 
     function [name]([param[, param[, ... param]]]) {
        statements
@@ -35116,7 +35116,7 @@ As all other objects, [`GeneratorFunction`](global_objects/generatorfunction) ob
     new GeneratorFunction (arg1, arg2, ... argN, functionBody)
 
 `arg1, arg2, ... argN`  
-Zero or more names to be used by the function as formal argument names. Each must be a string that conforms to the rules for a valid JavaScript identifier or a list of such strings separated with a comma; for example “`x`”, “`theValue`”, or “`a,b`”.
+Zero or more names to be used by the function as formal argument names. Each must be a string that conforms to the rules for a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`”, "`theValue`”, or "`a,b`”.
 
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.
@@ -35208,7 +35208,7 @@ On the other hand, the variable the function is assigned to is limited only by i
 
 As the 4th example shows, the function name can be different from the variable the function is assigned to. They have no relation to each other. A function declaration also creates a variable with the same name as the function name. Thus, unlike those defined by function expressions, functions defined by function declarations can be accessed by their name in the scope they were defined in:
 
-A function defined by ’`new Function'` does not have a function name. However, in the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, the serialized form of the function shows as if it has the name “anonymous”. For example, `alert(new Function())` outputs:
+A function defined by ’`new Function'` does not have a function name. However, in the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, the serialized form of the function shows as if it has the name "anonymous”. For example, `alert(new Function())` outputs:
 
     function anonymous() {
     }
@@ -35262,7 +35262,7 @@ A function defined by a function expression or by a function declaration inherit
      * 5  - for 'cons' by Function constructor (global scope)
      */
 
-Functions defined by function expressions and function declarations are parsed only once, while those defined by the `Function` constructor are not. That is, the function body string passed to the `Function` constructor must be parsed each and every time the constructor is called. Although a function expression creates a closure every time, the function body is not reparsed, so function expressions are still faster than “`new Function(...)`”. Therefore the `Function` constructor should generally be avoided whenever possible.
+Functions defined by function expressions and function declarations are parsed only once, while those defined by the `Function` constructor are not. That is, the function body string passed to the `Function` constructor must be parsed each and every time the constructor is called. Although a function expression creates a closure every time, the function body is not reparsed, so function expressions are still faster than "`new Function(...)`”. Therefore the `Function` constructor should generally be avoided whenever possible.
 
 It should be noted, however, that function expressions and function declarations nested within the function generated by parsing a `Function constructor` ’s string aren’t parsed repeatedly. For example:
 
@@ -35272,7 +35272,7 @@ It should be noted, however, that function expressions and function declarations
 A function declaration is very easily (and often unintentionally) turned into a function expression. A function declaration ceases to be one when it either:
 
 -   becomes part of an expression
--   is no longer a “source element” of a function or the script itself. A “source element” is a non-nested statement in the script or a function body:
+-   is no longer a "source element” of a function or the script itself. A "source element” is a non-nested statement in the script or a function body:
 
 <!-- -->
 
@@ -35396,7 +35396,7 @@ You can determine whether a function exists by using the `typeof` operator. In t
        // do something else
      }
 
-Note that in the `if` test, a reference to `noFunc` is used—there are no brackets “()” after the function name so the actual function is not called.
+Note that in the `if` test, a reference to `noFunc` is used—there are no brackets "()” after the function name so the actual function is not called.
 
 Specifications
 --------------
@@ -35464,7 +35464,7 @@ Specifications
 
 22
 
-\[“The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, “Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
+\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
 
 No
 
@@ -35478,7 +35478,7 @@ No
 
 22
 
-\[“The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, “Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
+\["The initial implementation of arrow functions in Firefox made them automatically strict. This has been changed as of Firefox 24. The use of `'use strict';` is now required.”, "Prior to Firefox 39, a line terminator (`\\n`) was incorrectly allowed after arrow function arguments. This has been fixed to conform to the ES2015 specification and code like `() \\n => {}` will now throw a `SyntaxError` in this and later versions.”\]
 
 32
 
@@ -35857,7 +35857,7 @@ Syntax
 ### Parameters
 
 `arg1, arg2, ... argN`  
-Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “`x`”, “`theValue`”, or “`a,b`”.
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`”, "`theValue`”, or "`a,b`”.
 
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.
@@ -36011,7 +36011,7 @@ To append a getter to an existing object later at any time, use [`Object.defineP
 
 Getters give you a way to *define* a property of an object, but they do not *calculate* the property’s value until it is accessed. A getter defers the cost of calculating the value until the value is needed. If it is never needed, you never pay the cost.
 
-An additional optimization technique to lazify or delay the calculation of a property value and cache it for later access are **smart (or “[memoized](https://en.wikipedia.org/wiki/Memoization)”) getters**. The value is calculated the first time the getter is called, and is then cached so subsequent accesses return the cached value without recalculating it. This is useful in the following situations:
+An additional optimization technique to lazify or delay the calculation of a property value and cache it for later access are **smart (or "[memoized](https://en.wikipedia.org/wiki/Memoization)”) getters**. The value is calculated the first time the getter is called, and is then cached so subsequent accesses return the cached value without recalculating it. This is useful in the following situations:
 
 -   If the calculation of a property value is expensive (takes much RAM or CPU time, spawns worker threads, retrieves remote file, etc).
 -   If the value isn’t needed just now. It will be used later, or in some case it’s not used at all.
@@ -36019,7 +36019,7 @@ An additional optimization technique to lazify or delay the calculation of a pro
 
 **Note:** This means that you shouldn’t write a lazy getter for a property whose value you expect to change, because if the getter is lazy then it will not recalculate the value.
 
-Note that getters are not “lazy” or “memoized” by nature; you must implement this technique if you desire this behavior.
+Note that getters are not "lazy” or "memoized” by nature; you must implement this technique if you desire this behavior.
 
 In the following example, the object has a getter as its own property. On getting the property, the property is removed from the object and re-added, but implicitly as a data property this time. Finally, the value gets returned.
 
@@ -36461,7 +36461,7 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
     console.log(weekday); // 1
 
-**Note:** If needed, the full name of a day (“`Monday`” for example) can be obtained by using [`Intl.DateTimeFormat`](../intl/datetimeformat) with an `options` parameter. Using this method, the internationalization is made easier:
+**Note:** If needed, the full name of a day ("`Monday`” for example) can be obtained by using [`Intl.DateTimeFormat`](../intl/datetimeformat) with an `options` parameter. Using this method, the internationalization is made easier:
 
     var options = { weekday: 'long'};
     console.log(new Intl.DateTimeFormat('en-US', options).format(Xmas95));
@@ -37973,10 +37973,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds</a>
 
-TypeError: setting getter-only property “x”
+TypeError: setting getter-only property "x”
 ===========================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
+The JavaScript [strict mode](../strict_mode)-only exception "setting getter-only property” occurs when there is an attempt to set a new value to a property for which only a [getter](../functions/get) is specified.
 
 Message
 -------
@@ -38771,7 +38771,7 @@ Syntax
 
 An integer number, between 0 and 999, representing the milliseconds portion of the given date object. This method is a companion to the other UTC based methods that give hour portion, minute portion, etc.; this method gives milliseconds portion.
 
-Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method “.getTime()”.
+Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method ".getTime()”.
 
 Examples
 --------
@@ -39022,7 +39022,7 @@ Date.prototype.getYear()
 
 This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 
-The `getYear()` method returns the year in the specified date according to local time. Because `getYear()` does not return full years (“year 2000 problem”), it is no longer used and has been replaced by the [`getFullYear()`](getfullyear) method.
+The `getYear()` method returns the year in the specified date according to local time. Because `getYear()` does not return full years ("year 2000 problem”), it is no longer used and has been replaced by the [`getFullYear()`](getfullyear) method.
 
 Syntax
 ------
@@ -39256,7 +39256,7 @@ In many engines `globalThis` will be a reference to the actual global object, bu
 
 ### Naming
 
-Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal’s “naming” document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
+Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal’s "naming” document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
 
 Examples
 --------
@@ -39821,7 +39821,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: Unexpected ‘\#’ used outside of class body
 =======================================================
 
-The JavaScript exception “Unexpected ‘\#’ used outside of class body” occurs when a hash (“\#”) is encountered in an unexpected context, most notably [outside of a class declaration](../classes/private_class_fields). Hashes are valid at the beginning of a file as a [hashbang comment](../lexical_grammar), or inside of a class as part of a private field. You may encounter this error if you forget the quotation marks when trying to access a DOM identifier as well.
+The JavaScript exception "Unexpected ‘\#’ used outside of class body” occurs when a hash ("\#”) is encountered in an unexpected context, most notably [outside of a class declaration](../classes/private_class_fields). Hashes are valid at the beginning of a file as a [hashbang comment](../lexical_grammar), or inside of a class as part of a private field. You may encounter this error if you forget the quotation marks when trying to access a DOM identifier as well.
 
 Message
 -------
@@ -39882,7 +39882,7 @@ See also
 RegExp.prototype.hasIndices
 ===========================
 
-The `hasIndices` property indicates whether or not the “`d`” flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
+The `hasIndices` property indicates whether or not the "`d`” flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.hasIndices`
 
@@ -39901,7 +39901,7 @@ yes
 Description
 -----------
 
-The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the “`d`” flag was used; otherwise, `false`. The “`d`” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
+The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the "`d`” flag was used; otherwise, `false`. The "`d`” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
 
 You cannot change this property directly.
 
@@ -40260,7 +40260,7 @@ These examples will show you how to add hour cycle data to your [`Locale`](../lo
 
 ### Adding an hour cycle via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the hour cycle is a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the hour cycle type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the hour cycle type, first add the `-u` extension key to the string. Next, add the `-hc` extension key to indicate that you are adding an hour cycle. Finally, add the hour cycle type to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the hour cycle is a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the hour cycle type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the hour cycle type, first add the `-u` extension key to the string. Next, add the `-hc` extension key to indicate that you are adding an hour cycle. Finally, add the hour cycle type to the string.
 
     let fr24hour = new Intl.Locale("fr-FR-u-hc-h23");
     console.log(fr24hour.hourCycle); // Prints "h23"
@@ -40446,7 +40446,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: identifier starts immediately after numeric literal
 ================================================================
 
-The JavaScript exception “identifier starts immediately after numeric literal” occurs when an identifier started with a digit. Identifiers can only start with a letter, underscore (\_), or dollar sign ($).
+The JavaScript exception "identifier starts immediately after numeric literal” occurs when an identifier started with a digit. Identifiers can only start with a letter, underscore (\_), or dollar sign ($).
 
 Message
 -------
@@ -40641,7 +40641,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 RegExp.prototype.ignoreCase
 ===========================
 
-The `ignoreCase` property indicates whether or not the “`i`” flag is used with the regular expression. `ignoreCase` is a read-only property of an individual regular expression instance.
+The `ignoreCase` property indicates whether or not the "`i`” flag is used with the regular expression. `ignoreCase` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.ignoreCase`
 
@@ -40660,7 +40660,7 @@ yes
 Description
 -----------
 
-The value of `ignoreCase` is a [`Boolean`](../boolean) and `true` if the “`i`” flag was used; otherwise, `false`. The “`i`” flag indicates that case should be ignored while attempting a match in a string.
+The value of `ignoreCase` is a [`Boolean`](../boolean) and `true` if the "`i`” flag was used; otherwise, `false`. The "`i`” flag indicates that case should be ignored while attempting a match in a string.
 
 You cannot change this property directly.
 
@@ -40749,7 +40749,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: illegal character
 ==============================
 
-The JavaScript exception “illegal character” occurs when there is an invalid or unexpected token that doesn’t belong at this position in the code.
+The JavaScript exception "illegal character” occurs when there is an invalid or unexpected token that doesn’t belong at this position in the code.
 
 Message
 -------
@@ -40865,7 +40865,7 @@ Names that will refer to the named imports.
 Description
 -----------
 
-The `name` parameter is the name of the “module object” which will be used as a kind of namespace to refer to the exports. The `export` parameters specify individual named exports, while the `import * as name` syntax imports all of them. Below are examples to clarify the syntax.
+The `name` parameter is the name of the "module object” which will be used as a kind of namespace to refer to the exports. The `export` parameters specify individual named exports, while the `import * as name` syntax imports all of them. Below are examples to clarify the syntax.
 
 ### Import an entire module’s contents
 
@@ -40873,7 +40873,7 @@ This inserts `myModule` into the current scope, containing all the exports from 
 
     import * as myModule from '/modules/my-module.js';
 
-Here, accessing the exports means using the module name (“myModule” in this case) as a namespace. For example, if the module imported above includes an export `doAllTheAmazingThings()`, you would call it like this:
+Here, accessing the exports means using the module name ("myModule” in this case) as a namespace. For example, if the module imported above includes an export `doAllTheAmazingThings()`, you would call it like this:
 
     myModule.doAllTheAmazingThings();
 
@@ -40940,7 +40940,7 @@ or
     import myDefault, {foo, bar} from '/modules/my-module.js';
     // specific, named imports
 
-When importing a default export with [dynamic imports](#dynamic_imports), it works a bit differently. You need to destructure and rename the “default” key from the returned object.
+When importing a default export with [dynamic imports](#dynamic_imports), it works a bit differently. You need to destructure and rename the "default” key from the returned object.
 
     (async () => {
       if (somethingIsTrue) {
@@ -41127,7 +41127,7 @@ See also
 -   Limin Zhu, Brian Terlson and Microsoft Edge Team: [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/)
 -   Hacks blog post by Jason Orendorff: [ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
 -   Hacks blog post by Lin Clark: [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
--   Axel Rauschmayer’s book: [“Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
+-   Axel Rauschmayer’s book: ["Exploring JS: Modules”](https://exploringjs.com/es6/ch_modules.html)
 -   The Modern JavaScript Tutorial(javascript.info): [Export and Import](https://javascript.info/import-export)
 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -41568,7 +41568,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 TypeError: cannot use ‘in’ operator to search for ‘x’ in ‘y’
 ============================================================
 
-The JavaScript exception “right-hand side of ‘in’ should be an object” occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
+The JavaScript exception "right-hand side of ‘in’ should be an object” occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
 
 Message
 -------
@@ -43159,7 +43159,7 @@ Static properties
 Returns a number value of the element size. `2` in the case of an `Int16Array`.
 
 [`Int16Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Int16Array` type: “`Int16Array`”.
+Returns the string value of the constructor name. In the case of the `Int16Array` type: "`Int16Array`”.
 
 Static methods
 --------------
@@ -43571,7 +43571,7 @@ Static properties
 Returns a number value of the element size. `1` in the case of an `Int8Array`.
 
 [`Int8Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Int8Array` type: “`Int8Array`”.
+Returns the string value of the constructor name. In the case of the `Int8Array` type: "`Int8Array`”.
 
 Static methods
 --------------
@@ -43786,10 +43786,10 @@ The `InternalError` indicates an error that occurred internally in the JavaScrip
 
 Example cases are mostly when something is too large, e.g.:
 
--   “too many switch cases”,
--   “too many parentheses in regular expression”,
--   “array initializer too large”,
--   “too much recursion”.
+-   "too many switch cases”,
+-   "too many parentheses in regular expression”,
+-   "array initializer too large”,
+-   "too much recursion”.
 
 Constructor
 -----------
@@ -43976,35 +43976,35 @@ A locale identifier is a string that consists of:
 
 …with all present subtags and sequences separated by hyphens. Locale identifiers are case-insensitive ASCII. However, it’s conventional to use title case (first letter capitalized, successive letters lower case) for script subtags, upper case for region subtags, and lower case for everything else. For example:
 
--   “`hi`”: Hindi (language)
--   “`de-AT`”: German (language) as used in Austria (region)
--   “`zh-Hans-CN`”: Chinese (language) written in simplified characters (script) as used in China (region)
--   “`en-emodeng`”: English (language) in the “Early modern English” dialect (variant)
+-   "`hi`”: Hindi (language)
+-   "`de-AT`”: German (language) as used in Austria (region)
+-   "`zh-Hans-CN`”: Chinese (language) written in simplified characters (script) as used in China (region)
+-   "`en-emodeng`”: English (language) in the "Early modern English” dialect (variant)
 
 Subtags identifying languages, scripts, regions (including countries), and (rarely used) variants are registered in the [IANA Language Subtag Registry](https://www.iana.org/assignments/language-subtag-registry). This registry is periodically updated over time, and implementations may not always be up to date, so don’t rely too much on subtags being universally supported.
 
-BCP 47 extension sequences consist of a single digit or letter (other than `"x"`) and one or more two- to eight-letter or digit subtags separated by hyphens. Only one sequence is permitted for each digit or letter: “`de-a-foo-a-foo`” is invalid. BCP 47 extension subtags are defined in the [Unicode CLDR Project](https://github.com/unicode-org/cldr/tree/master/common/bcp47). Currently only two extensions have defined semantics:
+BCP 47 extension sequences consist of a single digit or letter (other than `"x"`) and one or more two- to eight-letter or digit subtags separated by hyphens. Only one sequence is permitted for each digit or letter: "`de-a-foo-a-foo`” is invalid. BCP 47 extension subtags are defined in the [Unicode CLDR Project](https://github.com/unicode-org/cldr/tree/master/common/bcp47). Currently only two extensions have defined semantics:
 
 -   The `"u"` (Unicode) extension can be used to request additional customization of [`Intl/Collator`](intl/collator), [`Intl/NumberFormat`](intl/numberformat), or [`Intl/DateTimeFormat`](intl/datetimeformat) objects. Examples:
-    -   “`de-DE-u-co-phonebk`”: Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.
-    -   “`th-TH-u-nu-thai`”: Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.
-    -   “`ja-JP-u-ca-japanese`”: Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.
-    -   “`en-GB-u-ca-islamic`”: use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.
--   The `"t"` (transformed) extension indicates transformed content: for example, text that was translated from another locale. No `Intl` functionality currently considers the `"t"` extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in “`de-t-en`” contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because “`en-emodeng-emodeng`” is invalid (because it contains a duplicate `emodeng` variant subtag), “`de-t-en-emodeng-emodeng`” is also invalid.
+    -   "`de-DE-u-co-phonebk`”: Use the phonebook variant of the German sort order, which interprets umlauted vowels as corresponding character pairs: ä → ae, ö → oe, ü → ue.
+    -   "`th-TH-u-nu-thai`”: Use Thai digits (๐, ๑, ๒, ๓, ๔, ๕, ๖, ๗, ๘, ๙) in number formatting.
+    -   "`ja-JP-u-ca-japanese`”: Use the Japanese calendar in date and time formatting, so that 2013 is expressed as the year 25 of the Heisei period, or 平成 25.
+    -   "`en-GB-u-ca-islamic`”: use British English with the Islamic (Hijri) calendar, where the Gregorian date 14 October, 2017 is the Hijri date 24 Muharram, 1439.
+-   The `"t"` (transformed) extension indicates transformed content: for example, text that was translated from another locale. No `Intl` functionality currently considers the `"t"` extension. However, this extension sometimes contains a nested locale (with no extensions): for example, the transformed extension in "`de-t-en`” contains the locale identifier for English. If a nested locale is present, it must be a valid locale identifier. For example, because "`en-emodeng-emodeng`” is invalid (because it contains a duplicate `emodeng` variant subtag), "`de-t-en-emodeng-emodeng`” is also invalid.
 
 Finally, a private-use extension sequence using the letter `"x"` may appear, followed by one or more one- to eight-letter or digit subtags separated by hyphens. This allows applications to encode information for their own private use, that will be ignored by all `Intl` operations.
 
 ### Locale negotiation
 
-The list of locales specified by the `locales` argument, after Unicode extensions have been removed from them, is interpreted as a prioritized request from the application. The runtime compares it against the locales it has available and picks the best one available. Two matching algorithms exist: the “`lookup`” matcher follows the Lookup algorithm specified in [BCP 47](https://datatracker.ietf.org/doc/html/rfc4647#section-3.4); the “`best fit`” matcher lets the runtime provide a locale that’s at least, but possibly more, suited for the request than the result of the Lookup algorithm. If the application doesn’t provide a `locales` argument, or the runtime doesn’t have a locale that matches the request, then the runtime’s default locale is used. The matcher can be selected using a property of the `options` argument (see below).
+The list of locales specified by the `locales` argument, after Unicode extensions have been removed from them, is interpreted as a prioritized request from the application. The runtime compares it against the locales it has available and picks the best one available. Two matching algorithms exist: the "`lookup`” matcher follows the Lookup algorithm specified in [BCP 47](https://datatracker.ietf.org/doc/html/rfc4647#section-3.4); the "`best fit`” matcher lets the runtime provide a locale that’s at least, but possibly more, suited for the request than the result of the Lookup algorithm. If the application doesn’t provide a `locales` argument, or the runtime doesn’t have a locale that matches the request, then the runtime’s default locale is used. The matcher can be selected using a property of the `options` argument (see below).
 
-If the selected locale identifier had a Unicode extension sequence, that extension is now used to customize the constructed object or the behavior of the function. Each constructor or function supports only a subset of the keys defined for the Unicode extension, and the supported values often depend on the locale identifier. For example, the “`co`” key (collation) is only supported by [`Intl/Collator`](intl/collator), and its “`phonebk`” value is only supported for German.
+If the selected locale identifier had a Unicode extension sequence, that extension is now used to customize the constructed object or the behavior of the function. Each constructor or function supports only a subset of the keys defined for the Unicode extension, and the supported values often depend on the locale identifier. For example, the "`co`” key (collation) is only supported by [`Intl/Collator`](intl/collator), and its "`phonebk`” value is only supported for German.
 
 ### options argument
 
 The `options` argument must be an object with properties that vary between constructors and functions. If the `options` argument is not provided or is undefined, default values are used for all properties.
 
-One property is supported by all language sensitive constructors and functions: The `localeMatcher` property, whose value must be a string “`lookup`” or “`best fit`” and which selects one of the locale matching algorithms described above.
+One property is supported by all language sensitive constructors and functions: The `localeMatcher` property, whose value must be a string "`lookup`” or "`best fit`” and which selects one of the locale matching algorithms described above.
 
 Examples
 --------
@@ -44344,7 +44344,7 @@ See also
 RangeError: invalid array length
 ================================
 
-The JavaScript exception “Invalid array length” occurs when specifying an array length that is either negative or exceeds the maximum supported by the platform (i.e. when creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer), or when setting the [`Array.length`](../global_objects/array/length) property).
+The JavaScript exception "Invalid array length” occurs when specifying an array length that is either negative or exceeds the maximum supported by the platform (i.e. when creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer), or when setting the [`Array.length`](../global_objects/array/length) property).
 
 The maximum allowed array length depends on the platform, browser and browser version. For [`Array`](../global_objects/array) the maximum length is 2GB-1 (2^32-1). For [`ArrayBuffer`](../global_objects/arraybuffer) the maximum is 2GB-1 on 32-bit systems (2^32-1). From Firefox version 89 the maximum value of [`ArrayBuffer`](../global_objects/arraybuffer) is 8GB on 64-bit systems (2^33).
 
@@ -44421,7 +44421,7 @@ See also
 ReferenceError: invalid assignment left-hand side
 =================================================
 
-The JavaScript exception “invalid assignment left-hand side” occurs when there was an unexpected assignment somewhere. For example, a single “`=`” sign was used instead of “`==`” or “`===`”.
+The JavaScript exception "invalid assignment left-hand side” occurs when there was an unexpected assignment somewhere. For example, a single "`=`” sign was used instead of "`==`” or "`===`”.
 
 Message
 -------
@@ -44436,7 +44436,7 @@ Error type
 What went wrong?
 ----------------
 
-There was an unexpected assignment somewhere. This might be due to a mismatch of a [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators) and a [comparison operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), for example. While a single “`=`” sign assigns a value to a variable, the “`==`” or “`===`” operators compare a value.
+There was an unexpected assignment somewhere. This might be due to a mismatch of a [assignment operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators) and a [comparison operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators), for example. While a single "`=`” sign assigns a value to a variable, the "`==`” or "`===`” operators compare a value.
 
 Examples
 --------
@@ -44453,7 +44453,7 @@ Examples
     += 'you\'re looking for?';
     // ReferenceError: invalid assignment left-hand side
 
-In the `if` statement, you want to use a comparison operator (“==”), and for the string concatenation, the plus (“+”) operator is needed.
+In the `if` statement, you want to use a comparison operator ("==”), and for the string concatenation, the plus ("+”) operator is needed.
 
     if (Math.PI == 3 || Math.PI == 4) {
       console.log('no way!');
@@ -44471,10 +44471,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_assignment_left-hand_side" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_assignment_left-hand_side</a>
 
-TypeError: invalid assignment to const “x”
+TypeError: invalid assignment to const "x”
 ==========================================
 
-The JavaScript exception “invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript `const` declarations can’t be re-assigned or redeclared.
+The JavaScript exception "invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript `const` declarations can’t be re-assigned or redeclared.
 
 Message
 -------
@@ -44562,7 +44562,7 @@ See also
 RangeError: invalid date
 ========================
 
-The JavaScript exception “invalid date” occurs when a string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
+The JavaScript exception "invalid date” occurs when a string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
 
 Message
 -------
@@ -44616,7 +44616,7 @@ See also
 SyntaxError: for-in loop head declarations may not have initializers
 ====================================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “for-in loop head declarations may not have initializers” occurs when the head of a [for…in](../statements/for...in) contains an initializer expression, such as |`for (var i = 0 in obj)`|. This is not allowed in for-of loops in strict mode.
+The JavaScript [strict mode](../strict_mode)-only exception "for-in loop head declarations may not have initializers” occurs when the head of a [for…in](../statements/for...in) contains an initializer expression, such as |`for (var i = 0 in obj)`|. This is not allowed in for-of loops in strict mode.
 
 Message
 -------
@@ -44686,7 +44686,7 @@ See also
 SyntaxError: a declaration in the head of a for-of loop can’t have an initializer
 =================================================================================
 
-The JavaScript exception “a declaration in the head of a for-of loop can’t have an initializer” occurs when the head of a [for…of](../statements/for...of) loop contains an initializer expression such as |`for (var i = 0 of iterable)`|. This is not allowed in for-of loops.
+The JavaScript exception "a declaration in the head of a for-of loop can’t have an initializer” occurs when the head of a [for…of](../statements/for...of) loop contains an initializer expression such as |`for (var i = 0 of iterable)`|. This is not allowed in for-of loops.
 
 Message
 -------
@@ -44745,7 +44745,7 @@ See also
 TypeError: invalid ‘instanceof’ operand ‘x’
 ===========================================
 
-The JavaScript exception “invalid ‘instanceof’ operand” occurs when the right hand side operands of the [`instanceof` operator](../operators/instanceof) isn’t used with a constructor object, i.e. an object which has a `prototype` property and is callable.
+The JavaScript exception "invalid ‘instanceof’ operand” occurs when the right hand side operands of the [`instanceof` operator](../operators/instanceof) isn’t used with a constructor object, i.e. an object which has a `prototype` property and is callable.
 
 Message
 -------
@@ -44936,7 +44936,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 TypeError: ‘x’ is not iterable
 ==============================
 
-The JavaScript exception “is not iterable” occurs when the value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols).
+The JavaScript exception "is not iterable” occurs when the value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols).
 
 Message
 -------
@@ -45080,7 +45080,7 @@ Description
 
 If the value is an [`Array`](../array), `true` is returned; otherwise, `false` is.
 
-See the article [“Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
+See the article ["Determining with absolute accuracy whether or not a JavaScript object is an array”](https://web.mit.edu/jwalden/www/isArray.html) for more details. Given a [`TypedArray`](../typedarray) instance, `false` is always returned.
 
 Examples
 --------
@@ -45858,9 +45858,9 @@ For example, dividing zero by zero results in a `NaN` — but dividing other num
 
 ### Confusing special-case behavior
 
-Since the very earliest versions of the `isNaN` function specification, its behavior for non-numeric arguments has been confusing. When the argument to the `isNaN` function is not of type [Number](https://es5.github.com/#x8.5), the value is first coerced to a Number. The resulting value is then tested to determine whether it is [`NaN`](nan). Thus for non-numbers that when coerced to numeric type result in a valid non-NaN numeric value (notably the empty string and boolean primitives, which when coerced give numeric values zero or one), the “false” returned value may be unexpected; the empty string, for example, is surely “not a number.” The confusion stems from the fact that the term, “not a number”, has a specific meaning for numbers represented as IEEE-754 floating-point values. The function should be interpreted as answering the question, “is this value, when coerced to a numeric value, an IEEE-754 ‘Not A Number’ value?”
+Since the very earliest versions of the `isNaN` function specification, its behavior for non-numeric arguments has been confusing. When the argument to the `isNaN` function is not of type [Number](https://es5.github.com/#x8.5), the value is first coerced to a Number. The resulting value is then tested to determine whether it is [`NaN`](nan). Thus for non-numbers that when coerced to numeric type result in a valid non-NaN numeric value (notably the empty string and boolean primitives, which when coerced give numeric values zero or one), the "false” returned value may be unexpected; the empty string, for example, is surely "not a number.” The confusion stems from the fact that the term, "not a number”, has a specific meaning for numbers represented as IEEE-754 floating-point values. The function should be interpreted as answering the question, "is this value, when coerced to a numeric value, an IEEE-754 ‘Not A Number’ value?”
 
-ECMAScript 2015 contains the [`Number.isNaN()`](number/isnan) function. `Number.isNaN(x)` is a reliable way to test whether `x` is `NaN` or not. Even with `Number.isNaN`, however, the meaning of `NaN` remains the precise numeric meaning and not, “not a number”. Alternatively, in the absence of `Number.isNaN`, the expression `(x != x)` is a more reliable way to test whether variable `x` is `NaN` or not, as the result is not subject to the false positives that make `isNaN` unreliable.
+ECMAScript 2015 contains the [`Number.isNaN()`](number/isnan) function. `Number.isNaN(x)` is a reliable way to test whether `x` is `NaN` or not. Even with `Number.isNaN`, however, the meaning of `NaN` remains the precise numeric meaning and not, "not a number”. Alternatively, in the absence of `Number.isNaN`, the expression `(x != x)` is a more reliable way to test whether variable `x` is `NaN` or not, as the result is not subject to the false positives that make `isNaN` unreliable.
 
 A polyfill for `isNaN` would be (the polyfill leverages the unique never-equal-to-itself characteristic of `NaN`):
 
@@ -45900,7 +45900,7 @@ Examples
 
 There is a more usage oriented way to think of `isNaN()`: If `isNaN(x)` returns `false`, you can use `x` in an arithmetic expression not making the expression return `NaN`. If it returns `true`, `x` will make every arithmetic expression return `NaN`. This means that in JavaScript, `isNaN(x) == true` is equivalent to `x - 0` returning `NaN` (though in JavaScript `x - 0 == NaN` always returns false, so you can’t test for it). Actually, `isNaN(x)`, `isNaN(x - 0)`, `isNaN(Number(x))`, `Number.isNaN(x - 0)`, and `Number.isNaN(Number(x))` always return the same and in JavaScript `isNaN(x)` is just the shortest possible form to express each of these terms.
 
-You can use this, for example, to test whether an argument to a function is arithmetically processable (usable “like” a number), or if it’s not and you have to provide a default value or something else. This way you can have a function that makes use of the full versatility JavaScript provides by implicitly converting values depending on context.
+You can use this, for example, to test whether an argument to a function is arithmetically processable (usable "like” a number), or if it’s not and you have to provide a default value or something else. This way you can have a function that makes use of the full versatility JavaScript provides by implicitly converting values depending on context.
 
 Specifications
 --------------
@@ -45947,7 +45947,7 @@ Object.prototype.isPrototypeOf()
 
 The `isPrototypeOf()` method checks if an object exists in another object’s prototype chain.
 
-**Note:** `isPrototypeOf()` differs from the [`instanceof`](../../operators/instanceof) operator. In the expression “`object instanceof AFunction`”, the `object` prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
+**Note:** `isPrototypeOf()` differs from the [`instanceof`](../../operators/instanceof) operator. In the expression "`object instanceof AFunction`”, the `object` prototype chain is checked against `AFunction.prototype`, not against `AFunction` itself.
 
 Syntax
 ------
@@ -46375,7 +46375,7 @@ A string containing a [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 Description
 -----------
 
-The `italics()` method embeds a string in an `<i>` element: “`<i>str</i>`”.
+The `italics()` method embeds a string in an `<i>` element: "`<i>str</i>`”.
 
 Examples
 --------
@@ -46461,7 +46461,7 @@ The iterator protocol
 
 An object is an iterator when it implements a `next()` method with the following semantics:
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Property</th><th>Value</th></tr></thead><tbody><tr class="odd"><td><code>next()</code></td><td><p>A zero-argument function that returns an object with at least the following two properties:</p><dl><dt> <code>done</code> (boolean) </dt><dd><p>Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)</p><p>Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.</p></dd><dt> <code>value</code> </dt><dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.</dd></dl><p>The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a <a href="global_objects/typeerror"><code>TypeError</code></a> (<code>“iterator.next() returned a non-object value”</code>) will be thrown.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Property</th><th>Value</th></tr></thead><tbody><tr class="odd"><td><code>next()</code></td><td><p>A zero-argument function that returns an object with at least the following two properties:</p><dl><dt> <code>done</code> (boolean) </dt><dd><p>Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)</p><p>Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.</p></dd><dt> <code>value</code> </dt><dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.</dd></dl><p>The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a <a href="global_objects/typeerror"><code>TypeError</code></a> (<code>"iterator.next() returned a non-object value”</code>) will be thrown.</p></td></tr></tbody></table>
 
 **Note:** It is not possible to know reflectively whether a particular object implements the iterator protocol. However, it is easy to create an object that satisfies *both* the iterator and iterable protocols (as shown in the example below).
 
@@ -46886,7 +46886,7 @@ Syntax
 ### Parameters
 
 `separator` <span class="badge inline optional">Optional</span>  
-Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (“,”). If `separator` is an empty string, all elements are joined without any characters in between them.
+Specifies a string to separate each pair of adjacent elements of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma (",”). If `separator` is an empty string, all elements are joined without any characters in between them.
 
 ### Return value
 
@@ -47275,7 +47275,7 @@ You cannot use single-quotes around properties, like ‘foo’.
     // SyntaxError: JSON.parse: expected property name or '}'
     // at line 1 column 2 of the JSON data
 
-Instead write “foo”:
+Instead write "foo”:
 
     JSON.parse('{"foo": 1}');
 
@@ -47563,7 +47563,7 @@ You can use a label to identify a loop, and then use the `break` or `continue` s
 
 Note that JavaScript has *no* `goto` statement, you can only use labels with `break` or `continue`.
 
-In [strict mode](../strict_mode) code, you can’t use “`let`” as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
+In [strict mode](../strict_mode) code, you can’t use "`let`” as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
 
 Examples
 --------
@@ -48554,7 +48554,7 @@ Description
 
 Just like [`const`](const#description) the `let` does *not* create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
 
-An explanation of why the name “**let**” was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
+An explanation of why the name "**let**” was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
 
 **Note:** Many issues with `let` variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).
 
@@ -48676,7 +48676,7 @@ However, it’s important to point out that a block nested inside a case clause 
 
 **Note:** This differs from [`var`](var#var_hoisting) variables, which will return a value of `undefined` if they are accessed before they are declared.
 
-The variable is said to be in a “temporal dead zone” (TDZ) from the start of the block until the initialization has completed.
+The variable is said to be in a "temporal dead zone” (TDZ) from the start of the block until the initialization has completed.
 
     { // TDZ starts at beginning of scope
       console.log(bar); // undefined
@@ -48685,7 +48685,7 @@ The variable is said to be in a “temporal dead zone” (TDZ) from the start of
       let foo = 2; // End of TDZ (for foo)
     }
 
-The term “temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
+The term "temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
 
     {
         // TDZ starts at beginning of scope
@@ -48791,7 +48791,7 @@ In Edge 12 and 13, `let` within a `for` loop initializer does not create a separ
 
 44
 
-\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
+\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, "Firefox 54 adds support of `let` in workers.”\]
 
 11
 
@@ -48819,7 +48819,7 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 44
 
-\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
+\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, "Firefox 54 adds support of `let` in workers.”\]
 
 18
 
@@ -49092,7 +49092,7 @@ The decimal exponential literal is specified by the following format: `beN`; whe
 
 #### Binary
 
-Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “B” (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing binary digits after 0b”.
+Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "B” (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing binary digits after 0b”.
 
     var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648
     var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040
@@ -49100,7 +49100,7 @@ Binary number syntax uses a leading zero followed by a lowercase or uppercase La
 
 #### Octal
 
-Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing octal digits after 0o”.
+Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing octal digits after 0o”.
 
     var n = 0O755; // 493
     var m = 0o644; // 420
@@ -49111,7 +49111,7 @@ Octal number syntax uses a leading zero followed by a lowercase or uppercase Lat
 
 #### Hexadecimal
 
-Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “X” (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Identifier starts immediately after numeric literal”.
+Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "X” (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Identifier starts immediately after numeric literal”.
 
     0xFFFFFFFFFFFFFFFFF // 295147905179352830000
     0x123456789ABCDEF   // 81985529216486900
@@ -49131,7 +49131,7 @@ Note that legacy octal numbers with just a leading zero won’t work for `BigInt
     // 0755n
     // SyntaxError: invalid BigInt syntax
 
-For octal `BigInt` numbers, always use zero followed by the letter “o” (uppercase or lowercase):
+For octal `BigInt` numbers, always use zero followed by the letter "o” (uppercase or lowercase):
 
     0o755n
 
@@ -49266,7 +49266,7 @@ Some [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 The ECMAScript specification mentions [three rules of semicolon insertion](https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion).
 
-1.  A semicolon is inserted before, when a [Line terminator](#line_terminators) or “}” is encountered that is not allowed by the grammar.
+1.  A semicolon is inserted before, when a [Line terminator](#line_terminators) or "}” is encountered that is not allowed by the grammar.
 
     { 1 2 } 3
 
@@ -49286,7 +49286,7 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
     a = b;
     ++c;
 
-1.  A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with “no LineTerminator here” rules are:
+1.  A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with "no LineTerminator here” rules are:
 
 -   PostfixExpressions (`++` and `--`)
 -   `continue`
@@ -49868,7 +49868,7 @@ Examples
 
 ### Using link()
 
-The following example displays the word “MDN” as a hypertext link that returns the user to the Mozilla Developer Network.
+The following example displays the word "MDN” as a hypertext link that returns the user to the Mozilla Developer Network.
 
     var hotText = 'MDN';
     var url = 'https://developer.mozilla.org/';
@@ -51805,7 +51805,7 @@ Even though the `&&` operator can be used with operands that are not Boolean val
 
 ### Short-circuit evaluation
 
-The logical AND expression is evaluated left to right, it is tested for possible “short-circuit” evaluation using the following rule:
+The logical AND expression is evaluated left to right, it is tested for possible "short-circuit” evaluation using the following rule:
 
 `(some falsy expression) && expr` is short-circuit evaluated to the falsy expression;
 
@@ -51959,7 +51959,7 @@ The following code shows examples of the `!` (logical NOT) operator.
 
 ### Double NOT (`!!`)
 
-It is possible to use a couple of NOT operators in series to explicitly force the conversion of any value to the corresponding [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). The conversion is based on the “truthyness” or “falsyness” of the value (see [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)).
+It is possible to use a couple of NOT operators in series to explicitly force the conversion of any value to the corresponding [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). The conversion is based on the "truthyness” or "falsyness” of the value (see [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)).
 
 The same conversion can be done through the [`Boolean`](../global_objects/boolean/boolean) function.
 
@@ -52051,7 +52051,7 @@ Even though the `||` operator can be used with operands that are not Boolean val
 
 ### Short-circuit evaluation
 
-The logical OR expression is evaluated left to right, it is tested for possible “short-circuit” evaluation using the following rule:
+The logical OR expression is evaluated left to right, it is tested for possible "short-circuit” evaluation using the following rule:
 
 `(some truthy expression) || expr` is short-circuit evaluated to the truthy expression.
 
@@ -52206,7 +52206,7 @@ Examples
 
 ### Setting default content
 
-If the “lyrics” element is empty, display a default value:
+If the "lyrics” element is empty, display a default value:
 
     document.getElementById('lyrics').textContent ||= 'No lyrics.'
 
@@ -52262,7 +52262,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 SyntaxError: Malformed formal parameter
 =======================================
 
-The JavaScript exception “malformed formal parameter” occurs when the argument list of a `Function()` constructor call is invalid somehow.
+The JavaScript exception "malformed formal parameter” occurs when the argument list of a `Function()` constructor call is invalid somehow.
 
 Message
 -------
@@ -52284,7 +52284,7 @@ The argument list is invalid somehow. Perhaps you accidentally picked a keyword 
 
 ### OK, that fixed my problem. But why didn’t you say that in the first place?
 
-Admittedly the wording in the error message is slightly strange. “Formal parameter” is a fancy way of saying “function argument”. And we use the word “malformed” because all Firefox engineers are huge fans of 19th-century Gothic horror novels.
+Admittedly the wording in the error message is slightly strange. "Formal parameter” is a fancy way of saying "function argument”. And we use the word "malformed” because all Firefox engineers are huge fans of 19th-century Gothic horror novels.
 
 Examples
 --------
@@ -52314,14 +52314,14 @@ See also
 
 -   `Function()`
 -   [About functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
--   [*Frankenstein* by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) (“Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.”)
+-   [*Frankenstein* by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) ("Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.”)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter</a>
 
 URIError: malformed URI sequence
 ================================
 
-The JavaScript exception “malformed URI sequence” occurs when URI encoding or decoding wasn’t successful.
+The JavaScript exception "malformed URI sequence” occurs when URI encoding or decoding wasn’t successful.
 
 Message
 -------
@@ -52395,7 +52395,7 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 -   Key equality is based on the [`sameValueZero`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm.
 -   [`NaN`](nan) is considered the same as `NaN` (even though `NaN !== NaN`) and all other values are considered equal according to the semantics of the `===` operator.
--   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See *“Value equality for -0 and 0”* in the [Browser compatibility](#browser_compatibility) table for details.
+-   In the current ECMAScript specification, `-0` and `+0` are considered equal, although this was not so in earlier drafts. See *"Value equality for -0 and 0”* in the [Browser compatibility](#browser_compatibility) table for details.
 
 ### Objects vs. Maps
 
@@ -53191,7 +53191,7 @@ The following example demonstrates the use of the global and ignore case flags w
 
 ### Using named capturing groups
 
-In browsers which support named capturing groups, the following code captures “`fox`” or “`cat`” into a group named “`animal`”:
+In browsers which support named capturing groups, the following code captures "`fox`” or "`cat`” into a group named "`animal`”:
 
     const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
 
@@ -54880,7 +54880,7 @@ Examples
 
 ### Numbers higher than safe integer
 
-This returns 2 because in floating points, the value is actually the decimal trailing “1” except for in subnormal precision cases such as zero.
+This returns 2 because in floating points, the value is actually the decimal trailing "1” except for in subnormal precision cases such as zero.
 
     Number.MAX_SAFE_INTEGER * Number.EPSILON; // 2
 
@@ -55023,7 +55023,7 @@ A [`Locale`](../locale) instance whose `baseName` property returns the result of
 Description
 -----------
 
-Sometimes, it is convenient to be able to identify the most likely locale language identifier subtags based on an incomplete langauage ID. The Add Likely Subtags algorithm gives us this functionality. For instance, given the language ID “en”, the algorithm would return “en-Latn-US”, since English can only be written in the Latin script, and is most likely to be used in the United States, as it is the largest English-speaking country in the world. This functionality is provided to JavaScript programmers via the `maximize()` method. `maximize()` only affects the main subtags that comprise the [language identifier](https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions): language, script, and region subtags. Other subtags after the “-u” in the locale identifier are called extension subtags and are not affected by the `maximize()` method. Examples of these subtags include [`Locale.hourCycle`](hourcycle), [`Locale.calendar`](calendar), and [`Locale.numeric`](numeric).
+Sometimes, it is convenient to be able to identify the most likely locale language identifier subtags based on an incomplete langauage ID. The Add Likely Subtags algorithm gives us this functionality. For instance, given the language ID "en”, the algorithm would return "en-Latn-US”, since English can only be written in the Latin script, and is most likely to be used in the United States, as it is the largest English-speaking country in the world. This functionality is provided to JavaScript programmers via the `maximize()` method. `maximize()` only affects the main subtags that comprise the [language identifier](https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions): language, script, and region subtags. Other subtags after the "-u” in the locale identifier are called extension subtags and are not affected by the `maximize()` method. Examples of these subtags include [`Locale.hourCycle`](hourcycle), [`Locale.calendar`](calendar), and [`Locale.numeric`](numeric).
 
 Examples
 --------
@@ -55832,7 +55832,7 @@ no
 Description
 -----------
 
-`Number.MIN_VALUE` is the smallest positive number (not the most negative number) that can be represented within float precision — in other words, the number closest to 0. That’s approximately `5e-324` (`5 × 10-324`). The ECMAScript spec doesn’t define a precise value that implementations are required to support — instead the spec says, *“must be the smallest non-zero positive value that can actually be represented by the implementation”*. But in practice, its precise value in browsers and in Node.js is `2-1074`.
+`Number.MIN_VALUE` is the smallest positive number (not the most negative number) that can be represented within float precision — in other words, the number closest to 0. That’s approximately `5e-324` (`5 × 10-324`). The ECMAScript spec doesn’t define a precise value that implementations are required to support — instead the spec says, *"must be the smallest non-zero positive value that can actually be represented by the implementation”*. But in practice, its precise value in browsers and in Node.js is `2-1074`.
 
 Because `MIN_VALUE` is a static property of [`Number`](../number), you always use it as `Number.MIN_VALUE`, rather than as a property of a [`Number`](../number) object you created.
 
@@ -55906,7 +55906,7 @@ A [`Locale`](../locale) instance whose `baseName` property returns the result of
 Description
 -----------
 
-This method carries out the reverse of [`maximize()`](maximize), removing any language, script, or region subtags from the locale language identifier (essentially the contents of `baseName`). This is useful when there are superfluous subtags in the language identifier; for instance, “en-Latn” can be simplified to “en”, since “Latn” is the only script used to write English. `minimize()` only affects the main subtags that comprise the [language identifier](https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions): language, script, and region subtags. Other subtags after the “-u” in the locale identifier are called extension subtags and are not affected by the `minimize()` method. Examples of these subtags include [`Locale.hourCycle`](hourcycle), [`Locale.calendar`](calendar), and [`Locale.numeric`](numeric).
+This method carries out the reverse of [`maximize()`](maximize), removing any language, script, or region subtags from the locale language identifier (essentially the contents of `baseName`). This is useful when there are superfluous subtags in the language identifier; for instance, "en-Latn” can be simplified to "en”, since "Latn” is the only script used to write English. `minimize()` only affects the main subtags that comprise the [language identifier](https://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions): language, script, and region subtags. Other subtags after the "-u” in the locale identifier are called extension subtags and are not affected by the `minimize()` method. Examples of these subtags include [`Locale.hourCycle`](hourcycle), [`Locale.calendar`](calendar), and [`Locale.numeric`](numeric).
 
 Examples
 --------
@@ -55970,7 +55970,7 @@ See also
 SyntaxError: missing \] after element list
 ==========================================
 
-The JavaScript exception “missing \] after element list” occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“`]`”) or a comma (“`,`”) missing.
+The JavaScript exception "missing \] after element list” occurs when there is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`”) or a comma ("`,`”) missing.
 
 Message
 -------
@@ -55985,7 +55985,7 @@ Error type
 What went wrong?
 ----------------
 
-There is an error with the array initializer syntax somewhere. Likely there is a closing bracket (“`]`”) or a comma (“`,`”) missing.
+There is an error with the array initializer syntax somewhere. Likely there is a closing bracket ("`]`”) or a comma ("`,`”) missing.
 
 Examples
 --------
@@ -56024,7 +56024,7 @@ See also
 SyntaxError: missing : after property id
 ========================================
 
-The JavaScript exception “missing : after property id” occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.
+The JavaScript exception "missing : after property id” occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.
 
 Message
 -------
@@ -56095,7 +56095,7 @@ See also
 SyntaxError: missing } after function body
 ==========================================
 
-The JavaScript exception “missing } after function body” occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.
+The JavaScript exception "missing } after function body” occurs when there is a syntax mistake when creating a function somewhere. Check if any closing curly brackets or parenthesis are in the correct order.
 
 Message
 -------
@@ -56159,7 +56159,7 @@ See also
 SyntaxError: missing } after property list
 ==========================================
 
-The JavaScript exception “missing } after property list” occurs when there is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma.
+The JavaScript exception "missing } after property list” occurs when there is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma.
 
 Message
 -------
@@ -56208,7 +56208,7 @@ See also
 SyntaxError: missing formal parameter
 =====================================
 
-The JavaScript exception “missing formal parameter” occurs when your function declaration is missing valid parameters.
+The JavaScript exception "missing formal parameter” occurs when your function declaration is missing valid parameters.
 
 Message
 -------
@@ -56223,9 +56223,9 @@ Error type
 What went wrong?
 ----------------
 
-“Formal parameter” is a fancy way of saying “function parameter”. Your function declaration is missing valid parameters. In the declaration of a function, the parameters must be [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), not any value like numbers, strings, or objects. Declaring functions and calling functions are two separate steps. Declarations require identifier as parameters, and only when calling (invoking) the function, you provide the values the function should use.
+"Formal parameter” is a fancy way of saying "function parameter”. Your function declaration is missing valid parameters. In the declaration of a function, the parameters must be [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), not any value like numbers, strings, or objects. Declaring functions and calling functions are two separate steps. Declarations require identifier as parameters, and only when calling (invoking) the function, you provide the values the function should use.
 
-In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), identifiers can contain only alphanumeric characters (or “$” or “\_”), and may not start with a digit. An identifier differs from a **string** in that a string is data, while an identifier is part of the code.
+In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), identifiers can contain only alphanumeric characters (or "$” or "\_”), and may not start with a digit. An identifier differs from a **string** in that a string is data, while an identifier is part of the code.
 
 Examples
 --------
@@ -56276,14 +56276,14 @@ See also
 
 -   Other errors regarding formal parameters:
     -   [SyntaxError: Malformed formal parameter](malformed_formal_parameter)
-    -   [SyntaxError: redeclaration of formal parameter “x”](redeclared_parameter)
+    -   [SyntaxError: redeclaration of formal parameter "x”](redeclared_parameter)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter</a>
 
 SyntaxError: missing = in const declaration
 ===========================================
 
-The JavaScript exception “missing = in const declaration” occurs when a const declaration was not given a value in the same statement (like `const RED_FLAG;`). You need to provide one (`const RED_FLAG = '#ff0'`).
+The JavaScript exception "missing = in const declaration” occurs when a const declaration was not given a value in the same statement (like `const RED_FLAG;`). You need to provide one (`const RED_FLAG = '#ff0'`).
 
 Message
 -------
@@ -56340,7 +56340,7 @@ See also
 SyntaxError: missing name after . operator
 ==========================================
 
-The JavaScript exception “missing name after . operator” occurs when there is a problem with how the dot operator (`.`) is used for [property access](../operators/property_accessors).
+The JavaScript exception "missing name after . operator” occurs when there is a problem with how the dot operator (`.`) is used for [property access](../operators/property_accessors).
 
 Message
 -------
@@ -56404,7 +56404,7 @@ See also
 SyntaxError: missing ) after argument list
 ==========================================
 
-The JavaScript exception “missing ) after argument list” occurs when there is an error with how a function is called. This might be a typo, a missing operator, or an unescaped string.
+The JavaScript exception "missing ) after argument list” occurs when there is an error with how a function is called. This might be a typo, a missing operator, or an unescaped string.
 
 Message
 -------
@@ -56425,12 +56425,12 @@ There is an error with how a function is called. This might be a typo, a missing
 Examples
 --------
 
-Because there is no “+” operator to concatenate the string, JavaScript expects the argument for the `log` function to be just `"PI: "`. In that case, it should be terminated by a closing parenthesis.
+Because there is no "+” operator to concatenate the string, JavaScript expects the argument for the `log` function to be just `"PI: "`. In that case, it should be terminated by a closing parenthesis.
 
     console.log('PI: ' Math.PI);
     // SyntaxError: missing ) after argument list
 
-You can correct the `log` call by adding the “`+`” operator:
+You can correct the `log` call by adding the "`+`” operator:
 
     console.log('PI: ' + Math.PI);
     // "PI: 3.141592653589793"
@@ -56440,7 +56440,7 @@ You can correct the `log` call by adding the “`+`” operator:
     console.log('"Java" + "Script" = \"' + 'Java' + 'Script\");
     // SyntaxError: missing ) after argument list
 
-Here JavaScript thinks that you meant to have `);` inside the string and ignores it, and it ends up not knowing that you meant the `);` to end the function `console.log`. To fix this, we could put a`'` after the “Script” string:
+Here JavaScript thinks that you meant to have `);` inside the string and ignores it, and it ends up not knowing that you meant the `);` to end the function `console.log`. To fix this, we could put a`'` after the "Script” string:
 
     console.log('"Java" + "Script" = \"' + 'Java' + 'Script\"');
     // '"Java" + "Script" = "JavaScript"'
@@ -56455,7 +56455,7 @@ See also
 SyntaxError: missing ) after condition
 ======================================
 
-The JavaScript exception “missing ) after condition” occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
+The JavaScript exception "missing ) after condition” occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
 
 Message
 -------
@@ -56524,7 +56524,7 @@ See also
 SyntaxError: missing ; before statement
 =======================================
 
-The JavaScript exception “missing ; before statement” occurs when there is a semicolon (`;`) missing somewhere and can’t be added by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). You need to provide a semicolon, so that JavaScript can parse the source code correctly.
+The JavaScript exception "missing ; before statement” occurs when there is a semicolon (`;`) missing somewhere and can’t be added by [automatic semicolon insertion (ASI)](../lexical_grammar#automatic_semicolon_insertion). You need to provide a semicolon, so that JavaScript can parse the source code correctly.
 
 Message
 -------
@@ -56824,7 +56824,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 TypeError: More arguments needed
 ================================
 
-The JavaScript exception “more arguments needed” occurs when there is an error with how a function is called. More arguments need to be provided.
+The JavaScript exception "more arguments needed” occurs when there is an error with how a function is called. More arguments need to be provided.
 
 Message
 -------
@@ -56873,7 +56873,7 @@ See also
 RegExp.prototype.multiline
 ==========================
 
-The `multiline` property indicates whether or not the “`m`” flag is used with the regular expression. `multiline` is a read-only property of an individual regular expression instance.
+The `multiline` property indicates whether or not the "`m`” flag is used with the regular expression. `multiline` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.multiline`
 
@@ -56892,7 +56892,7 @@ yes
 Description
 -----------
 
-The value of `multiline` is a [`Boolean`](../boolean) and is true if the “`m`” flag was used; otherwise, false. The “`m`” flag indicates that a multiline input string should be treated as multiple lines. For example, if “`m`” is used, “`^`” and “`$`” change from matching at only the start or end of the entire string to the start or end of any line within the string.
+The value of `multiline` is a [`Boolean`](../boolean) and is true if the "`m`” flag was used; otherwise, false. The "`m`” flag indicates that a multiline input string should be treated as multiple lines. For example, if "`m`” is used, "`^`” and "`$`” change from matching at only the start or end of the entire string to the start or end of any line within the string.
 
 You cannot change this property directly.
 
@@ -57100,7 +57100,7 @@ may be compressed to:
       console.log('Oops!');
     }
 
-In the uncompressed version, the program runs into the truthy-branch and logs “`'foo' is an instance of 'Foo'`”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.
+In the uncompressed version, the program runs into the truthy-branch and logs "`'foo' is an instance of 'Foo'`”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.
 
 Examples
 --------
@@ -57114,7 +57114,7 @@ The `name` property returns the name of a function statement.
 
 ### Function constructor name
 
-Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is “anonymous”.
+Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is "anonymous”.
 
     (new Function).name; // "anonymous"
 
@@ -57168,14 +57168,14 @@ To change it, use [`Object.defineProperty()`](../object/defineproperty).
 
 ### Bound function names
 
-[`Function.bind()`](bind) produces a function whose name is “bound” plus the function name.
+[`Function.bind()`](bind) produces a function whose name is "bound” plus the function name.
 
     function foo() {};
     foo.bind({}).name; // "bound foo"
 
 ### Function names for getters and setters
 
-When using `get` and `set` accessor properties, “get” or “set” will appear in the function name.
+When using `get` and `set` accessor properties, "get” or "set” will appear in the function name.
 
     let o = {
       get foo(){},
@@ -57188,7 +57188,7 @@ When using `get` and `set` accessor properties, “get” or “set” will appe
 
 ### Function names in classes
 
-You can use `obj.constructor.name` to check the “class” of an object (but be sure to read the warnings below):
+You can use `obj.constructor.name` to check the "class” of an object (but be sure to read the warnings below):
 
     function Foo() {}  // ES2015 Syntax: class Foo {}
 
@@ -57533,7 +57533,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 RangeError: repeat count must be non-negative
 =============================================
 
-The JavaScript exception “repeat count must be non-negative” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is a negative number.
+The JavaScript exception "repeat count must be non-negative” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is a negative number.
 
 Message
 -------
@@ -57623,11 +57623,11 @@ When the code `new Foo(...)` is executed, the following things happen:
 2.  The constructor function `Foo` is called with the specified arguments, and with `this` bound to the newly created object. `new Foo` is equivalent to `new Foo()`, i.e. if no argument list is specified, `Foo` is called without arguments.
 3.  The object (not null, false, 3.1415 or other primitive types) returned by the constructor function becomes the result of the whole `new` expression. If the constructor function doesn’t explicitly return an object, the object created in step 1 is used instead (normally constructors don’t return a value, but they can choose to do so if they want to override the normal object creation process).
 
-You can always add a property to a previously defined object instance. For example, the statement `car1.color = "black"` adds a property `color` to `car1`, and assigns it a value of “`black`”.
+You can always add a property to a previously defined object instance. For example, the statement `car1.color = "black"` adds a property `color` to `car1`, and assigns it a value of "`black`”.
 
 However, this does not affect any other objects. To add the new property to all objects of the same type, you must add the property to the definition of the `Car` object type.
 
-You can add a shared property to a previously defined object type by using the `Function.prototype` property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value `"original color"` to all objects of type `Car`, and then overwrites that value with the string “`black`” only in the instance object `car1`. For more information, see [prototype](../global_objects/function).
+You can add a shared property to a previously defined object type by using the `Function.prototype` property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value `"original color"` to all objects of type `Car`, and then overwrites that value with the string "`black`” only in the instance object `car1`. For more information, see [prototype](../global_objects/function).
 
     function Car() {}
     car1 = new Car();
@@ -57665,7 +57665,7 @@ Now you can create an object called `myCar` as follows:
 
     var myCar = new Car('Eagle', 'Talon TSi', 1993);
 
-This statement creates `myCar` and assigns it the specified values for its properties. Then the value of `myCar.make` is the string “Eagle”, `myCar.year` is the integer 1993, and so on.
+This statement creates `myCar` and assigns it the specified values for its properties. Then the value of `myCar.make` is the string "Eagle”, `myCar.year` is the integer 1993, and so on.
 
 You can create any number of `car` objects by calls to `new`. For example:
 
@@ -58016,10 +58016,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next</a>
 
-TypeError: “x” is not a non-null object
+TypeError: "x” is not a non-null object
 =======================================
 
-The JavaScript exception “is not a non-null object” occurs when an object is expected somewhere and wasn’t provided. [`null`](../global_objects/null) is not an object and won’t work.
+The JavaScript exception "is not a non-null object” occurs when an object is expected somewhere and wasn’t provided. [`null`](../global_objects/null) is not an object and won’t work.
 
 Message
 -------
@@ -58078,10 +58078,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/No_non-null_object</a>
 
-TypeError: “x” has no properties
+TypeError: "x” has no properties
 ================================
 
-The JavaScript exception “null (or undefined) has no properties” occurs when you attempt to access properties of [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined). They don’t have any.
+The JavaScript exception "null (or undefined) has no properties” occurs when you attempt to access properties of [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined). They don’t have any.
 
 Message
 -------
@@ -58122,7 +58122,7 @@ See also
 SyntaxError: missing variable name
 ==================================
 
-The JavaScript exception “missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
+The JavaScript exception "missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
 
 Message
 -------
@@ -58203,7 +58203,7 @@ See also
 TypeError: can’t delete non-configurable array element
 ======================================================
 
-The JavaScript exception “can’t delete non-configurable array element” occurs when it was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array’s elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "can’t delete non-configurable array element” occurs when it was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array’s elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------
@@ -58525,7 +58525,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 RangeError: argument is not a valid code point
 ==============================================
 
-The JavaScript exception “Invalid code point” occurs when [`NaN`](../global_objects/nan) values, negative Integers (-1), non-Integers (5.4), or values larger than 0x10FFFF (1114111) are used with [`String.fromCodePoint()`](../global_objects/string/fromcodepoint).
+The JavaScript exception "Invalid code point” occurs when [`NaN`](../global_objects/nan) values, negative Integers (-1), non-Integers (5.4), or values larger than 0x10FFFF (1114111) are used with [`String.fromCodePoint()`](../global_objects/string/fromcodepoint).
 
 Message
 -------
@@ -58573,10 +58573,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_codepoint" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_codepoint</a>
 
-TypeError: “x” is not a constructor
+TypeError: "x” is not a constructor
 ===================================
 
-The JavaScript exception “is not a constructor” occurs when there was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor.
+The JavaScript exception "is not a constructor” occurs when there was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor.
 
 Message
 -------
@@ -58663,10 +58663,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor</a>
 
-TypeError: “x” is not a function
+TypeError: "x” is not a function
 ================================
 
-The JavaScript exception “is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.
+The JavaScript exception "is not a function” occurs when there was an attempt to call a value from a function, but the value is not actually a function.
 
 Message
 -------
@@ -58814,10 +58814,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_function</a>
 
-ReferenceError: “x” is not defined
+ReferenceError: "x” is not defined
 ==================================
 
-The JavaScript exception “*variable* is not defined” occurs when there is a non-existent variable referenced somewhere.
+The JavaScript exception "*variable* is not defined” occurs when there is a non-existent variable referenced somewhere.
 
 Message
 -------
@@ -58834,7 +58834,7 @@ What went wrong?
 
 There is a non-existent variable referenced somewhere. This variable needs to be declared, or you need to make sure it is available in your current script or [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
 
-**Note:** When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as “$”. Put the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element that loads the library before your code that uses it.
+**Note:** When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as "$”. Put the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element that loads the library before your code that uses it.
 
 Examples
 --------
@@ -58843,7 +58843,7 @@ Examples
 
     foo.substring(1); // ReferenceError: foo is not defined
 
-The “foo” variable isn’t defined anywhere. It needs to be some string, so that the [`String.prototype.substring()`](../global_objects/string/substring) method will work.
+The "foo” variable isn’t defined anywhere. It needs to be some string, so that the [`String.prototype.substring()`](../global_objects/string/substring) method will work.
 
     var foo = 'bar';
     foo.substring(1); // "ar"
@@ -59506,7 +59506,7 @@ The minimum safe integer in JavaScript (`-(253 - 1)`).
 The smallest positive representable number—that is, the positive number closest to zero (without actually being zero).
 
 [`Number.NaN`](number/nan)  
-Special “**N**ot **a** **N**umber” value.
+Special "**N**ot **a** **N**umber” value.
 
 [`Number.NEGATIVE_INFINITY`](number/negative_infinity)  
 Special value representing negative infinity. Returned on overflow.
@@ -59554,7 +59554,7 @@ Returns a string with a language sensitive representation of this number. Overri
 Returns a string representing the number to a specified precision in fixed-point or exponential notation.
 
 [`Number.prototype.toString([radix])`](number/tostring)  
-Returns a string representing the specified object in the specified radix (“base”). Overrides the [`Object.prototype.toString()`](object/tostring) method.
+Returns a string representing the specified object in the specified radix ("base”). Overrides the [`Object.prototype.toString()`](object/tostring) method.
 
 [`Number.prototype.valueOf()`](number/valueof)  
 Returns the primitive value of the specified object. Overrides the [`Object.prototype.valueOf()`](object/valueof) method.
@@ -60279,67 +60279,67 @@ Syntax
 A string with a BCP 47 language tag, or an array of such strings. For the general form and interpretation of the `locales` argument, see the [Intl](../../intl#locale_identification_and_negotiation) page. The following Unicode extension key is allowed:
 
 `nu`  
-The numbering system to be used. Possible values include: “`adlm`”, “`ahom`”, “`arab`”, “`arabext`”, “`bali`”, “`beng`”, “`bhks`”, “`brah`”, “`cakm`”, “`cham`”, “`deva`”, “`diak`”, “`fullwide`”, “`gong`”, “`gonm`”, “`gujr`”, “`guru`”, “`hanidec`”, “`hmng`”, “`hmnp`”, “`java`”, “`kali`”, “`khmr`”, “`knda`”, “`lana`”, “`lanatham`”, “`laoo`”, “`latn`”, “`lepc`”, “`limb`”, “`mathbold`”, “`mathdbl`”, “`mathmono`”, “`mathsanb`”, “`mathsans`”, “`mlym`”, “`modi`”, “`mong`”, “`mroo`”, “`mtei`”, “`mymr`”, “`mymrshan`”, “`mymrtlng`”, “`newa`”, “`nkoo`”, “`olck`”, “`orya`”, “`osma`”, “`rohg`”, “`saur`”, “`segment`”, “`shrd`”, “`sind`”, “`sinh`”, “`sora`”, “`sund`”, “`takr`”, “`talu`”, “`tamldec`”, “`telu`”, “`thai`”, “`tibt`”, “`tirh`”, “`vaii`”, “`wara`”, “`wcho`”. — see the [standard Unicode numeral systems list](../locale/numberingsystem).
+The numbering system to be used. Possible values include: "`adlm`”, "`ahom`”, "`arab`”, "`arabext`”, "`bali`”, "`beng`”, "`bhks`”, "`brah`”, "`cakm`”, "`cham`”, "`deva`”, "`diak`”, "`fullwide`”, "`gong`”, "`gonm`”, "`gujr`”, "`guru`”, "`hanidec`”, "`hmng`”, "`hmnp`”, "`java`”, "`kali`”, "`khmr`”, "`knda`”, "`lana`”, "`lanatham`”, "`laoo`”, "`latn`”, "`lepc`”, "`limb`”, "`mathbold`”, "`mathdbl`”, "`mathmono`”, "`mathsanb`”, "`mathsans`”, "`mlym`”, "`modi`”, "`mong`”, "`mroo`”, "`mtei`”, "`mymr`”, "`mymrshan`”, "`mymrtlng`”, "`newa`”, "`nkoo`”, "`olck`”, "`orya`”, "`osma`”, "`rohg`”, "`saur`”, "`segment`”, "`shrd`”, "`sind`”, "`sinh`”, "`sora`”, "`sund`”, "`takr`”, "`talu`”, "`tamldec`”, "`telu`”, "`thai`”, "`tibt`”, "`tirh`”, "`vaii`”, "`wara`”, "`wcho`”. — see the [standard Unicode numeral systems list](../locale/numberingsystem).
 
 `options` <span class="badge inline optional">Optional</span>  
 An object with some or all of the following properties:
 
 `compactDisplay`  
-Only used when `notation` is “`compact`”. Takes either “`short`” (default) or “`long`”.
+Only used when `notation` is "`compact`”. Takes either "`short`” (default) or "`long`”.
 
 `currency`  
-The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as “`USD`” for the US dollar, “`EUR`” for the euro, or “`CNY`” for the Chinese RMB — see the [Current currency & funds code list](https://www.currency-iso.org/en/home/tables/table-a1.html). There is no default value; if the `style` is “`currency`”, the `currency` property must be provided.
+The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as "`USD`” for the US dollar, "`EUR`” for the euro, or "`CNY`” for the Chinese RMB — see the [Current currency & funds code list](https://www.currency-iso.org/en/home/tables/table-a1.html). There is no default value; if the `style` is "`currency`”, the `currency` property must be provided.
 
 `currencyDisplay`  
 How to display the currency in currency formatting. Possible values are:
 
--   “`symbol`” to use a localized currency symbol such as €, this is the default value,
--   “`narrowSymbol`” to use a narrow format symbol (“$100” rather than “US$100”),
--   “`code`” to use the ISO currency code,
--   “`name`” to use a localized currency name such as “`dollar`”,
+-   "`symbol`” to use a localized currency symbol such as €, this is the default value,
+-   "`narrowSymbol`” to use a narrow format symbol ("$100” rather than "US$100”),
+-   "`code`” to use the ISO currency code,
+-   "`name`” to use a localized currency name such as "`dollar`”,
 
 `currencySign`  
-In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to “`accounting`”. The default value is “`standard`”.
+In many locales, accounting format means to wrap the number with parentheses instead of appending a minus sign. You can enable this formatting by setting the `currencySign` option to "`accounting`”. The default value is "`standard`”.
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `notation`  
-The formatting that should be displayed for the number, the defaults is “`standard`”
+The formatting that should be displayed for the number, the defaults is "`standard`”
 
--   “`standard`” plain number formatting
--   “`scientific`” return the order-of-magnitude for formatted number.
--   “`engineering`” return the exponent of ten when divisible by three
--   “`compact`” string representing exponent, defaults is using the “short” form.
+-   "`standard`” plain number formatting
+-   "`scientific`” return the order-of-magnitude for formatted number.
+-   "`engineering`” return the exponent of ten when divisible by three
+-   "`compact`” string representing exponent, defaults is using the "short” form.
 
 `numberingSystem`  
-Numbering System. Possible values include: “`arab`”, “`arabext`”, " `bali`“,”`beng`“,”`deva`“,”`fullwide`“,” `gujr`“,”`guru`“,”`hanidec`“,”`khmr`“,” `knda`“,”`laoo`“,”`latn`“,”`limb`“,”`mlym`“,” `mong`“,”`mymr`“,”`orya`“,”`tamldec`“,” `telu`“,”`thai`“,”`tibt`".
+Numbering System. Possible values include: "`arab`”, "`arabext`”, " `bali`",”`beng`",”`deva`",”`fullwide`",” `gujr`",”`guru`",”`hanidec`",”`khmr`",” `knda`",”`laoo`",”`latn`",”`limb`",”`mlym`",” `mong`",”`mymr`",”`orya`",”`tamldec`",” `telu`",”`thai`",”`tibt`".
 
 `signDisplay`  
-When to display the sign for the number; defaults to “`auto`”
+When to display the sign for the number; defaults to "`auto`”
 
--   “`auto`” sign display for negative numbers only
--   “`never`” never display sign
--   “`always`” always display sign
--   “`exceptZero`” sign display for positive and negative numbers, but not zero
+-   "`auto`” sign display for negative numbers only
+-   "`never`” never display sign
+-   "`always`” always display sign
+-   "`exceptZero`” sign display for positive and negative numbers, but not zero
 
 `style`  
-The formatting style to use , the default is “`decimal`”.
+The formatting style to use , the default is "`decimal`”.
 
--   “`decimal`” for plain number formatting.
--   “`currency`” for currency formatting.
--   “`percent`” for percent formatting
--   “`unit`” for unit formatting
+-   "`decimal`” for plain number formatting.
+-   "`currency`” for currency formatting.
+-   "`percent`” for percent formatting
+-   "`unit`” for unit formatting
 
 `unit`  
-The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with “`-per-`” to make a compound unit. There is no default value; if the `style` is “`unit`”, the `unit` property must be provided.
+The unit to use in `unit` formatting, Possible values are core unit identifiers, defined in [UTS \#35, Part 2, Section 6](https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements). A [subset](https://tc39.es/proposal-unified-intl-numberformat/section6/locales-currencies-tz_proposed_out.html#sec-issanctionedsimpleunitidentifier) of units from the [full list](https://github.com/unicode-org/cldr/blob/master/common/validity/unit.xml) was selected for use in ECMAScript. Pairs of simple units can be concatenated with "`-per-`” to make a compound unit. There is no default value; if the `style` is "`unit`”, the `unit` property must be provided.
 
 `unitDisplay`  
-The unit formatting style to use in `unit` formatting, the defaults is “`short`”.
+The unit formatting style to use in `unit` formatting, the defaults is "`short`”.
 
--   “`long`” (e.g., `16 litres`)
--   “`short`” (e.g., `16 l`)
--   “`narrow`” (e.g., `16l`)
+-   "`long`” (e.g., `16 litres`)
+-   "`short`” (e.g., `16 l`)
+-   "`narrow`” (e.g., `16l`)
 
 `useGrouping`  
 Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators. Possible values are true and false; the default is true.
@@ -60457,7 +60457,7 @@ Display a sign for positive and negative numbers, but not zero:
     }).format(0.55);
     // → '+55%'
 
-Note that when the currency sign is “accounting”, parentheses might be used instead of a minus sign:
+Note that when the currency sign is "accounting”, parentheses might be used instead of a minus sign:
 
     new Intl.NumberFormat('bn', {
       style: 'currency',
@@ -60746,7 +60746,7 @@ Examples
 
 ### Setting the `numberingSystem` value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numberingSystem` represents correspond to the key `nu`. `nu` is considered a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by first adding the `-u` key. To set the `numberingSystem` value via the string argument to the [`Locale`](locale) constructor, first add the `-u` extension key. Next, add the `-nu` extension key to indicate that you are adding a value for `numberingSystem`. Finally, add the `numberingSystem` value to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numberingSystem` represents correspond to the key `nu`. `nu` is considered a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by first adding the `-u` key. To set the `numberingSystem` value via the string argument to the [`Locale`](locale) constructor, first add the `-u` extension key. Next, add the `-nu` extension key to indicate that you are adding a value for `numberingSystem`. Finally, add the `numberingSystem` value to the string.
 
     let numberingSystemViaStr = new Intl.Locale("fr-Latn-FR-u-nu-mong");
     console.log(numberingSystemStr.numberingSystem); // Prints "mong"
@@ -60837,14 +60837,14 @@ The `Intl.Locale.prototype.numeric` property is an accessor property that return
 Description
 -----------
 
-Like [`Intl.Locale.caseFirst`](casefirst), `numeric` represents a modification to the collation rules utilized by the locale. `numeric` is a [`Boolean`](../../boolean) value, which means that it can be either `true` or `false`. If `numeric` is set to `false`, there will be no special handling of numeric values in strings. If `numeric` is set to `true`, then the locale will take numeric characters into account when collating strings. This special numeric handling means that sequences of decimal digits will be compared as numbers. For example, the string “A-21” will be considered less than “A-123”.
+Like [`Intl.Locale.caseFirst`](casefirst), `numeric` represents a modification to the collation rules utilized by the locale. `numeric` is a [`Boolean`](../../boolean) value, which means that it can be either `true` or `false`. If `numeric` is set to `false`, there will be no special handling of numeric values in strings. If `numeric` is set to `true`, then the locale will take numeric characters into account when collating strings. This special numeric handling means that sequences of decimal digits will be compared as numbers. For example, the string "A-21” will be considered less than "A-123”.
 
 Examples
 --------
 
 ### Setting the numeric value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numeric` represents correspond to the key `kn`. `kn` is considered a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `numeric` value can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To set the `numeric` value, first add the `-u` extension key to the string. Next, add the `-kn` extension key to indicate that you are adding a value for `numeric`. Finally, add the `numeric` value to the string. If you want to set `numeric` to `true`, adding the `kn` key will suffice. To set the value to `false`, you must specify in by adding “`false`” after the `kn` key.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numeric` represents correspond to the key `kn`. `kn` is considered a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `numeric` value can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To set the `numeric` value, first add the `-u` extension key to the string. Next, add the `-kn` extension key to indicate that you are adding a value for `numeric`. Finally, add the `numeric` value to the string. If you want to set `numeric` to `true`, adding the `kn` key will suffice. To set the value to `false`, you must specify in by adding "`false`” after the `kn` key.
 
     let numericViaStr = new Intl.Locale("fr-Latn-FR-u-kn-false");
     console.log(numericStr.numeric); // Prints "false"
@@ -61093,7 +61093,7 @@ The following examples store [`Boolean`](boolean) objects in `o`:
 
 When altering the behavior of existing `Object.prototype` methods, consider injecting code by wrapping your extension before or after the existing logic. For example, this (untested) code will pre-conditionally execute custom logic before the built-in logic or someone else’s extension is executed.
 
-When a function is called, the arguments to the call are held in the array-like “variable” [arguments](../functions/arguments). For example, in the call `myFn(a, b, c)`, the arguments within `myFn`’s body will contain 3 array-like elements corresponding to `(a, b, c)`.
+When a function is called, the arguments to the call are held in the array-like "variable” [arguments](../functions/arguments). For example, in the call `myFn(a, b, c)`, the arguments within `myFn`’s body will contain 3 array-like elements corresponding to `(a, b, c)`.
 
 When modifying prototypes with hooks, pass `this` and the arguments (the call state) to the current behavior by calling `apply()` on the function. This pattern can be used for any prototype, such as `Node.prototype`, `Function.prototype`, etc.
 
@@ -61113,7 +61113,7 @@ When modifying prototypes with hooks, pass `this` and the arguments (the call st
       }
     }
 
-Since JavaScript doesn’t exactly have sub-class objects, prototype is a useful workaround to make a “base class” object of certain functions that act as objects. For example:
+Since JavaScript doesn’t exactly have sub-class objects, prototype is a useful workaround to make a "base class” object of certain functions that act as objects. For example:
 
     var Person = function(name) {
       this.name = name;
@@ -62230,7 +62230,7 @@ The object literal notation is not the same as the **J**ava**S**cript **O**bject
 
 -   JSON permits *only* property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
 -   In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
--   A function value (see “Methods” below) can not be assigned to a value in JSON.
+-   A function value (see "Methods” below) can not be assigned to a value in JSON.
 -   Objects like [`Date`](../global_objects/date) will be a string after [`JSON.parse()`](../global_objects/json/parse).
 -   [`JSON.parse()`](../global_objects/json/parse) will reject computed property names and an error will be thrown.
 
@@ -62320,7 +62320,7 @@ A property of an object can also refer to a [function](../functions) or a [gette
       set property(value) {}
     }
 
-In ECMAScript 2015, a shorthand notation is available, so that the keyword “`function`” is no longer necessary.
+In ECMAScript 2015, a shorthand notation is available, so that the keyword "`function`” is no longer necessary.
 
     // Shorthand method names (ES2015)
     let o = {
@@ -62415,7 +62415,7 @@ A property definition of the form `__proto__: value` or `"__proto__": value` doe
 
 Only a single prototype mutation is permitted in an object literal. Multiple prototype mutations are a syntax error.
 
-Property definitions that do not use “colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.
+Property definitions that do not use "colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.
 
     let __proto__ = 'variable'
 
@@ -62809,7 +62809,7 @@ Remember that precedence comes before associativity. So, mixing division and exp
 
 In the table below, **Grouping** is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols `( … )` is evaluated first, especially when it comes to short-circuiting.
 
-Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator (“OR”) is “short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction (“AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
+Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator ("OR”) is "short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction ("AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
 
     a || (b * c);  // evaluate `a` first, then produce `a` if `a` is "truthy"
     a && (b < c);  // evaluate `a` first, then produce `a` if `a` is "falsy"
@@ -62832,7 +62832,7 @@ Table
 
 The following table lists operators in order from highest precedence (21) to lowest precedence (1).
 
-Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), “[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
+Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), "[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
 
 Precedence
 
@@ -63956,7 +63956,7 @@ A number representing the milliseconds elapsed since January 1, 1970, 00:00:00 U
 Description
 -----------
 
-The `parse()` method takes a date string (such as “`2011-10-10T14:48:00`”) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+The `parse()` method takes a date string (such as "`2011-10-10T14:48:00`”) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
 This function is useful for setting date values based on string values, for example in conjunction with the [`setTime()`](settime) method and the [`Date`](../date) object.
 
@@ -63964,7 +63964,7 @@ This function is useful for setting date values based on string values, for exam
 
 The standard string representation of a date time string is a simplification of the ISO 8601 calendar date extended format. (See the section [Date Time String Format](https://tc39.github.io/ecma262/#sec-date-time-string-format) in the ECMAScript specification for more details.)
 
-For example, “`2011-10-10`” (*date-only* form), “`2011-10-10T14:48:00`” (*date-time* form), or “`2011-10-10T14:48:00.000+09:00`” (*date-time* form with milliseconds and time zone) can be passed and will be parsed. When the time zone offset is absent, date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time.
+For example, "`2011-10-10`” (*date-only* form), "`2011-10-10T14:48:00`” (*date-time* form), or "`2011-10-10T14:48:00.000+09:00`” (*date-time* form with milliseconds and time zone) can be passed and will be parsed. When the time zone offset is absent, date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time.
 
 While time zone specifiers are used during date string parsing to interpret the argument, the value returned is always the number of milliseconds between January 1, 1970 00:00:00 UTC and the point in time represented by the argument or `NaN`.
 
@@ -63989,7 +63989,7 @@ However, if the string is recognized as an ISO format string and it contains inv
     new Date('2014-25-23').toISOString();
     // throws "RangeError: invalid date" in all ES5-compliant browsers
 
-SpiderMonkey’s implementation-specific heuristic can be found in [`jsdate.cpp`](https://dxr.mozilla.org/mozilla-central/source/js/src/jsdate.cpp?rev=64553c483cd1#889). The string “`10 06 2014`” is an example of a non-conforming ISO format and thus falls back to a custom routine. See also this [rough outline](https://bugzilla.mozilla.org/show_bug.cgi?id=1023155#c6) on how the parsing works.
+SpiderMonkey’s implementation-specific heuristic can be found in [`jsdate.cpp`](https://dxr.mozilla.org/mozilla-central/source/js/src/jsdate.cpp?rev=64553c483cd1#889). The string "`10 06 2014`” is an example of a non-conforming ISO format and thus falls back to a custom routine. See also this [rough outline](https://bugzilla.mozilla.org/show_bug.cgi?id=1023155#c6) on how the parsing works.
 
     new Date('10 06 2014');
 
@@ -64007,7 +64007,7 @@ Other examples:
 
 **Note:** This section contains implementation-specific behavior that can be inconsistent across implementations.
 
-Given a non-standard date string of “`March 7, 2014`”, `parse()` assumes a local time zone, but given a simplification of the ISO 8601 calendar date extended format such as “`2014-03-07`”, it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore [`Date`](../date) objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
+Given a non-standard date string of "`March 7, 2014`”, `parse()` assumes a local time zone, but given a simplification of the ISO 8601 calendar date extended format such as "`2014-03-07`”, it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore [`Date`](../date) objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
 
 Examples
 --------
@@ -64149,8 +64149,8 @@ Samsung Internet
 
 ### Compatibility notes
 
--   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like “`2017-04-16`” ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
--   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because “`42`” is interpreted as January 1<sup>st</sup>, 2042.
+-   Firefox 49 changed the parsing of 2-digit years to be aligned with the Google Chrome browser instead of Internet Explorer. Now, 2-digit years that are less than `50` are parsed as 21<sup>st</sup> century years. For example, `04/16/17`, previously parsed as April 16, 1917, will be April 16, 2017 now. To avoid any interoperability issues or ambiguous years, it is recommended to use the ISO 8601 format like "`2017-04-16`” ([bug 1265136](https://bugzilla.mozilla.org/show_bug.cgi?id=1265136)).
+-   Google Chrome will accept a numerical string as a valid `dateString` parameter. This means that, for instance, while `!!Date.parse("42")` evaluates to `false` in Firefox, it evaluates to `true` in Google Chrome because "`42`” is interpreted as January 1<sup>st</sup>, 2042.
 
 See also
 --------
@@ -64345,7 +64345,7 @@ Because some numbers use the `e` character in their string representation (e.g.�
 
 A value passed as the radix argument is coerced to a Number (if necessary), then if the value is 0, `NaN` or `Infinity` (undefined is coerced to `NaN`), JavaScript assumes the following:
 
-1.  If the input `string` begins with “`0x`” or “`0X`” (a zero, followed by lowercase or uppercase X), `radix` is assumed to be `16` and the rest of the string is parsed as a hexadecimal number.
+1.  If the input `string` begins with "`0x`” or "`0X`” (a zero, followed by lowercase or uppercase X), `radix` is assumed to be `16` and the rest of the string is parsed as a hexadecimal number.
 2.  If the input `string` begins with any other value, the radix is `10` (decimal).
 
 Else if the radix value (coerced if necessary) is not in range \[2, 36\] (inclusive) `parseInt` returns `NaN`.
@@ -64356,7 +64356,7 @@ For arithmetic purposes, the `NaN` value is not a number in any radix. You can c
 
 To convert a number to its string literal in a particular radix, use `thatNumber.toString(radix)`.
 
-**Warning:** `parseInt` converts a [`BigInt`](bigint) to a [`Number`](number) and loses precision in the process. This is because trailing non-numeric values, including “`n`”, are discarded.
+**Warning:** `parseInt` converts a [`BigInt`](bigint) to a [`Number`](number) and loses precision in the process. This is because trailing non-numeric values, including "`n`”, are discarded.
 
 ### Octal interpretations with no radix
 
@@ -64761,13 +64761,13 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 An object with some or all of the following properties:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 `type`  
 The type to use. Possible values are:
 
--   “`cardinal`” for cardinal numbers (refering to the quantity of things). This is the default value.
--   “`ordinal`” for ordinal number (refering to the ordering or ranking of things, e.g. “1st”, “2nd”, “3rd” in English).
+-   "`cardinal`” for cardinal numbers (refering to the quantity of things). This is the default value.
+-   "`ordinal`” for ordinal number (refering to the ordering or ranking of things, e.g. "1st”, "2nd”, "3rd” in English).
 
 The following properties fall into two groups: `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` in one group, `minimumSignificantDigits` and `maximumSignificantDigits` in the other. If at least one property from the second group is defined, then the first group is ignored.
 
@@ -64791,7 +64791,7 @@ Examples
 
 ### Basic usage
 
-In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. “dog” and “dogs”.
+In basic use without specifying a locale, a formatted string in the default locale and with default options is returned. This is useful to distinguish between singular and plural forms, e.g. "dog” and "dogs”.
 
     var pr = new Intl.PluralRules();
 
@@ -64806,7 +64806,7 @@ In basic use without specifying a locale, a formatted string in the default loca
 
 ### Using options
 
-The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. “1st”, “2nd”, “3rd”, “4th”, “42nd” and so forth.
+The results can be customized using the `options` argument, which has one property called `type` which you can set to `ordinal`. This is useful to figure out the ordinal indicator, e.g. "1st”, "2nd”, "3rd”, "4th”, "42nd” and so forth.
 
     var pr = new Intl.PluralRules('en-US', { type: 'ordinal' });
 
@@ -65280,7 +65280,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 RangeError: precision is out of range
 =====================================
 
-The JavaScript exception “precision is out of range” occurs when a number that’s outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
+The JavaScript exception "precision is out of range” occurs when a number that’s outside of the range of 0 and 20 (or 21) was passed into `toFixed` or `toPrecision`.
 
 Message
 -------
@@ -65598,7 +65598,7 @@ This can lead to unexpected behavior when using `this`.
 
 ### Private instance fields
 
-Private instance fields are declared with **\# names** (pronounced “*hash names*”), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
+Private instance fields are declared with **\# names** (pronounced "*hash names*”), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
 
 The encapsulation is enforced by the language. It is a syntax error to refer to `#` names from out of scope.
 
@@ -65639,7 +65639,7 @@ Private static methods may be generator, async, and async generator functions.
     console.assert(ClassWithPrivateStaticMethod.publicStaticMethod1() === 42);
     console.assert(ClassWithPrivateStaticMethod.publicStaticMethod2() === 42);
 
-This can lead to unexpected behavior when using `this`. In the following example `this` refers to the `Derived` class (not the `Base` class) when we try to call `Derived.publicStaticMethod2()`, and thus exhibits the same “provenance restriction” as mentioned above:
+This can lead to unexpected behavior when using `this`. In the following example `this` refers to the `Derived` class (not the `Base` class) when we try to call `Derived.publicStaticMethod2()`, and thus exhibits the same "provenance restriction” as mentioned above:
 
     class Base {
       static #privateStaticMethod() {
@@ -65800,9 +65800,9 @@ As the `Promise.prototype.then()` and `Promise.prototype.catch()` methods return
 
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyEAAAEpCAMAAACz/N2FAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAJkUExURf////3//u/u7v///ikmdM73/xAQEAAAAPjSewsKCv//+dP4/xkZGSAgH6ioqPbHafD+/y0sLHx8e/j4+Nj6/wYEBfLy8icmJvv7+/fPd/X//0FCQoKCgtPR0zc3OOTk5VVVVf/98rS0tLm5uazt/nZ2dhQUFPb39s3NzYiIiCIthf/wsyUoejIxMpaWltvb29bX1ygOAqSkpA9ErI2Nja+urwEDEltbW0ZGRjw8PHwxDnFxcbzy/0ESMufn58jIx0tKSqDn/WpqauCVNOvr60USPr6+vmBgX/bMcf/zwvn//5ubm97e3xdUuf/76t36/05OTuzr1sPDw/nairTw/xEvjOLg4GVlZQAAB1FRUScPO+b8/+v+/6CfodiHMKZgI//63//xu8j1//zgli6J2c51I5DZ+G3K9oO/4So7gCMDEv/2zQUNLf/41lwXHTmX4fzloCESUEYjDJGRkeunPNiiZFW58HC664DV+f7qqsF9M+reuTFioyZ40DkXCs739jEZVQQWOnGx2pE1IM2NUw4bZKV8R8dpH+azb0MdUg44kxthwb5YFz1/wYg3DYpHGwMTUubz5eysRS4iZq/h+VMaOvbqyQEHQ6Lc9idZlVWW1em+f7jY5G0jLPC3UrN2MqhBEy4NLPXfvRcwWfXarBc3aR9Bb2Oq1hAldR5syJ+/5Fg7GH6SyOzJkw4yf0YSIlkQBEao6N26obrn+05+rcbh8tn39uTl1WCIiqK4ccXq/MKYasCmqkxBh2F/bnw+WIlfOChBopB2S0SNyLC002pakM/165yjvEVmV7C0komhfJaxz2mFEBIAABnBSURBVHja7J35XxNJGocraZKQDkiQ0wjIHZBLRFEiAQEVOQS5FEEhiOAFirqiMiog4wEoILreo3jfB473zDjuzoyr81dtdXcCBBLIhBiS+H0+/JDqVHdjpx7e961CihAAAAAAAAAAAAAAAAAAAAAAAAAAAHsjszN44sDJDHHp2wEAQwCAIQDAEABgCAwBMASGABgCQwAMgSEAwBAAYAgAMAQAGAIADAEAhgDwXRkStzLSa74vDAEwxKwhF/5UwhDwvRgS9mOy7HYjaa6Vp55Rn96Szzb0ztl+IrnzgIjdfzT1sO9oF779tk828H6+L/d6+8/EXejJn7wRhgBXNKSsaltJ7RrV4INrT7UHB3uKmzWt7jvOnG2rKKbv/KDZkj/SRWgLWVbZzWMltSnV+p7CyTAEuKIhRfPydW0pysHjj1RiZcvKrLKOdPc95WSOW3tDr4q58yjf0EUttHlD3tSsUZL6qiyhp0Q4GYYAVzREd8I75HGKsuiXvU2vfHVDwzW9Snc3CXF3az/NxY/RLmqhLRhy8kg+qdM2Cj0lwskwBLigIUzOsw9kMEV56zVzS7NFlHNZ00r0hpzsVZGnT1SGLmqhPSaGaLP0huhPhiHA9Qxhc3p8b2lSNtY8e/2DZreoLHkgXW+IZE7Vtgt9NG4YugjtOG3WmDpEcEl/MgwBLphl1WlSb/99dDiv34+buNqpocFBb0jY/uTUy4rRLkK7uf/imLksoaf+ZBgCXNAQPfoAoOtqHZOBmewyetz4fQaGABc2RKDoVEe6HW8HgHMZwgw2XcmHIQCGuObtAIAhAMAQAGAIADAEhgAYAkMADIEhAIbAEABgCAAwBAAYAgAMAQCGAOBghmA/dQAAAAAAAAAAAAAAAPhuCAyS62dr5cF4GgBMZIE374g8HI8CAFOsC+EECcKDAMAE4ih5NhUkFE8CgIn4x0qXJBGZn7cPngUA4/FJ9FjO1eey6BV4GACMQ7TQM62Uf4VpLAAmEO7tbZi+wjQWcEbiVkbSr9XxitFDTIut/l57aZrnQhGeMXAxQ4iNDIlZ7pGI2hw4HYyO36ycvbq38t755j5Z01HZwPt4hdDmtjpv+mgLQ5JCpbFqPG3ghIYIm5W3PL9fUttTPBJD9G0vbo/zgWkbkpEtjxLjWQPnNITfrDwnZSM5pM0aMURoXzr9UEW89kzTEG6BMANPGjgp/GblbxoqpVJpU6PBkHZ9e2i3iJRNL8sSFggBcFJEwmblOWuUpChYORpD+LZ62jHEsEAIgJPCCpuV12uPldyo8I2jiZY2ixqib3N1SJ/1dcjoAiEAzoqwWTl7am/l3Uukuf/itf6L3FyW0Obmst51W2vImAVCAJy7Xh/zc5+x0TWxQAiAebBACIB5sEAIgHmwQAiAebBACIB5sEAIgHmwQAiAebBACMAkYIEQAPNggRAA82CBEADzYIEQOCnYVxCASQ1x4bsBAEMAgCEAwBAAYAgMATAEhgAYAkMADIEhAMAQAGAIADAEABgCAAwBAIYAAENgCIAhMATAEBgCYIij3419eR4fE4AhZtF1fUnYKlZyL8Pwt37BzBgStzLS3U1i6gf4jweMD+S94P67uWHTqdXxCl1t5/v5vvSF8R7rRtDLn7qSb6Uhh46++vrYo+lVMSFe833xiQGHMqTlt3FjMm/XAbFY7C8aMaTu340X/lROacjO3yOtNOR6xZu2K8W3NEdUVx+nvEHKBawmTGmtIc19soH35/6b3HlAxF7dW3nvPHHffoJv1ewWsfuPpm7/2XAkb9dW7gzup7kXFzo+D9FTDTHE3e2T/O7Xx6mHq40uw10+kl7JKkPCTm7Z+XtuwO3HPcV5mnvbulpJ2MsP+LDBP9ejaGh4WjFkx5mzbRXFLc/vl9T2FOtbuq6DpOzmsZLalGr9kfGG0BiS5TViyI4rFzQDl67ebDS+DL088fpPtVWGNGu25v1VzVz4+kTV0h1Jv0jeT42o3sE/9MN/aFiUk7JxOobsKSdz4hXcRQ5ps/iWmySuu5ytWaMk9VWGI3wdkjpsxpBzm9mGh6qdPx0cdxlqyCFuO1ArDCn61beo9tWCX35LJ9d7qukXofkgX73b0ZKWjnTUQE6sx8vPQ8N0SNZ3R06zDnGPb2+olEqlTY18y01Sf25z2Mkj+aROaziSt+t+YWFhtRlD3CRswxHOEOPLcIbQfqOGzE5Yv2+VZRNTXMWT98nz9jEVzbfoVz5b06ui1Xvp2a4vIfcaRfYyhBZbGGrOmV0x149fevqI6qGjOfp0DVHk0IhRFKwcNUSIITQcGAwxZFnMYIV5Q4wvM8GQwOCFUUujPdfOnpVk2RBnGIbo+v5Qn+5R3HkxTKt3X3Lo+RV12wOJDZ8l86/Ln+S3G4lxLcbth/2RjyGGA/uTO9+d24yx5xTQ4oMZTNnIvj3b1cpyw3ISAjN9TBpS9OuHOL0B8Yp67bGSGxW+hqHdXT5ShxgZ4l617ZZmEkPGXUabZSrLyoiIXeItDVmfWOpvyfgVPf1rc92nhC9VWVwooZYUcxmcTQ1J/ePtjQcK4yLKq2rbD5oB3hDhwBzuwHEY4hypK8NlV9p317paqR71HeWTdo6QJgSVBk4wpO5Fa3P/xfeCIeypvZV3LxH90OYqdcNclpEhulp559/bzRtifBl6+UhzlbpPzKZlc6M9N1gSThhuJ/ed/6um1Tvhsj82p1dlU0MeKEjdrq1GRVT76Ycq4rWHN0Q4cPKhisZtGOLQqevohCfNrtrkh9/krCnrKJ8yzYrw85PKjS2ZvHZm+TlaW8BOPts7Lzw21OJwwtDqnZvjItZN301iCFWjWdNqVER9HqLfeJmQZfEH2rkDq5FlOXTqypUe/E/yxcU6Ibsq66BhhC8ZJldELpPJ/Pyikyw0ZOKKobVYsmLoE1PAh5OgxYWiKRIufo6LxHG1zTeIIWOLqLExRDhAYwhBDHHs1FUoPaoJl87weqRTUaged55MOt+7IjwqwI8a4rHA0hhCwsb/1om137Hlv3WyLjwoNECall2Q6T/VHBdNuL7BhykxLqK4D7NvYNQQyWrUIY6fugqlB5+L1/PZFQ0fnB58om6Swk3rA6I3LIqVy+QhYmKxITZ7TsJ3ZvHd1JkF2WnSgNCg8EJ7fpjP+v24hMCoiOISgnfdYwyhBzo/2nSKwLUNmYHUlWGF0kNJvOYreD16JwsfgTH7Qj0Ccgu41CpbJs8NJPY3xLq7FRrCSYzaTh8mzVKZqXrdeSRMpAHHTV0ZfW5Fw9ZBVp9dmQ4f/hFBc6UhyxZn6NueskXTGrP2NUT4J2Qm8uEkNnydXQyZEq/j55v7j6gw+B06dRVKD3Z/8pZ8Xg9TfTJmLUuQLg1aNSadF0sjiLMZIlQdhYuDNnhGz11WEOMz04YUtSWnHlZg7Dt26kr1YAblHpczr4lMRo8FBbkBHqH7YsatfsQkEec0RB9OShPXh0i9Q2Mj5s34B4+x79ipK1d6sG9f55sqOzIXrY32Xr+w0B5j1r6GCOEkadbstVw42RSD3aedxZAZSF2F0mO8muLw2XOlaVHhYruOWTIDdxML4WRJbEQGRqELGGL71JWXw0iQdbOyvaOXx5b6zNCYnYG7BdJwstzTY2nUwuBAE29PzCmBY9v0za4sCk5c4um5JDFYNNNjdibuJl61LzdBnpC7KGLFuDcmzEsQ8aI0D/k33TFe7jk3UY3B7kCoS4OW/5+9c3Fu4rjj+EmCUw7uFEuyJWG9pehVKlkoErLRIClClSA2jjCpXQdUSIaGFEJp6pY2hT5m8pyQkklmkgwp7RDotB1omClDkk5pMh3alE7zT/VOd7IlWSfrfXfS9zNj3519d6vb3a9297d7vx+pz+mcMqqzEqRmiep8WZptTnQ1zckm23aZLiYG3CtTOWMuxtuPvBouo6mOvMfnIK0Gr0mOdVaK1NSFON+c8K9nNc6PpvTRoTxmhonLP6+kTG0oCMtIMhaUQ2Nzwr2eRdNZny5Sv8Zm3jwsf1tO2gOFSEjtMhKUg1j76o0nmbp1mnl/dGipFxgjSkYaGpeRoBzEaVjrH1oZYtqzsTEqGdnYP5osI4FCWgik4X0xR2GIiZdd41My8rB/iCwjgULEBdL4zjE1zCn4GfPYlIz09o/OlpFAIdVcaxTE1DCf1EiNS8lIbP/ofBkJFDIij6qQjyul/aO7ZSSd5sz4zEtBIYNITSL7Rw/LSAAUMszUJLB/9LiMBEAhw0xNAvuHobdlJAAKGWZqCrN/gDFUSKsAYrwTpkF+XEz9QyGKVcgPv5jkHflBIWCMFdI6gFi7bmWhEDDSbYhYADE+9BcUAsZdISIBxAg+KAUUAjAOaRpAjOADG0EhoC+5W4nR+OJHE03/2WkwGAkUsjmAGBQC+qqQH/xUfeT+mdNN/9lpMJjhKESzRQAx9LJAXxVymotOfX7X91/f9qtq5K1qhHi2DTl3gtr7m+OCwajfZbkp8Gl7N9gigBhG6qDPCtnx2zMXdp25em09inw1QjyrkPf+fO2T/T8TDEb9Lks7WYz2tzLA2gsGMQ75zqVju17aiCK/HiGeU8hrt6bVE4LBqO9ladNSDo+qn5UBM4ag323InxYW2E7Jrm3ba6LIC7FLWYUs3v/Ri/c+EwxGfS9Li1mrpei4un+VwS2LVSfysn+AnschmopCaqLIbyjkxqeaG/tOCQajNlMLdfDyzBT3y2+Xz5eze9k5Xf0ZEfsH6FkhREUhNVHk1xXy2XfvfHpx33nBYNT/snSxCqFWl2XUfTm658Onqz/KtH+AVuR7UchGFPmNNuTQO1N7L00KBqO+l+UMpaX0mZ4qw+5vCaOO6krG9lf3DlYhktk/QCs8JO1IhnSZdF9zt13/5B2n5tL6dSqivwppf6w+4HGIZPYP0ArOo9wURU4JXXt5W11mKFugixtwbd2lSfere7Q3n+dW+T5WOX5EWOvbvr13gAqR1P4BtpTIhltSeSvEu9zNDTRHuQiZp9jfR04cnmbbEP6489W9g1RI/+0foDnu5SP3iy+0HcnLsmTTT9W4th7FlYs7vnd5WvOHW4vOJ0/+/PEJViH8sbDWt4N1JwNWiHT2j94LUiHegNzLH5Qvvp/924Nn2lqJpwrGs+ScIUXVhEcYRYW43z7FDcRPvq533K4ohD+urtNqf+3icBQyfPuHDApyoKk9eum4e2GCePmL5559//al/1z5xZOL1y9seVU0suoP+zh3GOHaEDsj2Ya8cXma+OQvB+78nXivohD+WE4Kkdb+MeoKeeTXDy+yBXzod8+fvHJ5gvvC3PHGqZbWy+VyktbnEnzPKl8Xpm3kFMIt7N31zAsfXDl14K3JG/seP757/xP8saAQWfSyFFxdZf2Ai3cjD586eWLvvXdfOU2cvH6BVYdKc+DwtObHh0WHc2ndipkpxjbckHvtxCgrhFvY6/7Jnr1Xdz67b+/N//3yr+fe+fCxyrGgEFmM1KGQ/vet2SHHuydu5m7f2X7uldPut8+ruMaDVQfx6LefIg42X8lj8qT0tGt+YXTKsr0bqDT1XZXaY0IW1l455GqjL5j1iSNlPiA35Lj70ef/eEBd4ORx4PL04vXDE5w6Xv5qJ+He7OMvUDA4/KW1rVy4jqFHOTnMGMohV8/++/gIKUTDDTmOfmz98uG1YztYeRz8+Mt//vcbk5w6mmBZsllJa6idcI5jqBB3b6tOlK0QbiHYc4J/pG3bhYVflRnWz7mp1c6SzDZNO5bc6mKtdopJNP3wm+6Y1BHtWzBVh746Rpzdd4H4/WtfB+4abgWaOodV2Ssm3YJR6WU5yI+r0RDjqpAzV69V/SNt2y7s8TOqnbch2mZpq7cMncJeY/HQ7T1K5W7tzROzQ44dr/7RcPutSeLsg3vHmtsCZyIufzjlMY1CWSr548pYIS89ran6R9q2XdjjZ1Q7Vgg3lactm6cShHOWmpshtDaG3bcZml3gtFJWp3AGpxAdXb1I2LK/9cHKHevOJQy2dh+QG3K479q+Pi52grNcZMw5Xb6z3B2qV+SxiUElY4Vw85JV/0hVT0n8jGp3bYhPnZgiXDqjzkpoDQF2P2xvdsGqweQrCWdws+Rmb/UiYVtKmXR6vlWqPZewh9ttQypDDrHOQV6X40y6XcSOQBzD8VPIhn8kfi/Az6h2p5AAtyG5yLyE1sTtU03D85JqQk0KZ2gJU5YdXggXCVtKvd5vqz2XCFA9Z6fJkwrTrkiXceQRC3fsFEJs+EcS9vgZ1d37n+hCIZUNma/+USvyncvVeko4g/2dZ/LrF/Fbsl4h1XMr/Y4estNYMMyR2XgPUbkQT338FLLhH0nY42dYuanVDhWSF+pxyReIOIT9cLTZBSW25zS7oRAivrZ+Eb9lu1ZcL4u7Y+25RFTfdXZaMiErabVleguVnffbh1aSXsYIhcjnY9bMGGq6SVJLZKvf9MtWihUGv28LETUNTNXcxZ4xt1CjEOPq+kX8lh2ph4P8HWvPJUKGrh5QZV8r+R1tm3RbIXFc49FUiBLsH5o3v7lzEDmjNjeYUlv2UnRbhOsyMc4uXrybd9H6jky6LUnph9OKZJg4MTYKUYD94+CZf00PJGfKxfpjX6sb+RKtE0rOd1gO6ViRMa90atJtTYxOJtKDLUSVM7bKeImxUYjC7B99zBmNiv+RpBzUiZyZTpaX+/646vgcTQ30HTGKsUYCxPgoRGH2jwHmjKrzMU53qZm8vrDfFYkSY45C3v6Uwv5hoPVWV84Qj3kyM2rZfncMJDXBpBtUEUApSGD/CCwHvbqILZWcdTDUFK2fKxV9ofnEUjRtGWWFWIKhWdJqW7Kg0ikLie0fxrS9kJgPpYolh9mvJc2ObDJli+gKdqexf3V20SK1QqJrq36HzxtAfVMgMrJ/qPLRJU85blhZterpKYoJz7K9sbWYN7PQlj3UspaWYxuyMJ/kTLpqVDWlIlf7h2kh442tGXKu2XClN2ZdXTHEy56laF6sG28nbQF5KSStW2GYFV0atQwMGKPTXqgMXrIOM6n1mx2lYoodvBTs6dremK3BN6ykClEnUno62fLVcgAGgiUdXWIHL75iac7M9cYcs5XBize4YK73Ly6ZQgJen8O/uhZFWQEZ9BJnMp5YnO2NcYOX+hgVkinEMBsKwmgF5IerPs4RwtABUMsMVR8rDwoBoK4JaYi3CoUAUNeEFKOS1lkoBMiaqLqNOptt+FeD16yOfWSto4JCgPLQiv+F32n0mtWxjywoBChfIRUfV0TGQdFlbiE0f8h70OK8ZvXkIwsKAcpWiFtDCD6uzDpL0M/VYsHlVcWDFuc1qycfWVAIULZCTrIK4X1c5W2rTMU9g+DyKlD1mtWTjyyM1IHye1m8j6u5SGGmopB1l1eC16yefGRBIUD5CuF9XFHBdFLLeboSXF4RVa9ZPfnIgkKA0hWiFXxcRUg6XvGdxR9ueM3qyUcWFAKU34a0YJPXrBra8pEFhYCRVsgmr1k1tOUjCwoBo60Q5aYGABQCABQCABQCABQChQAoBAoBUAgUAqAQKAQAKASALeusMqJUAKAsAp6c2ZzrW4BBAEaQmbUsaQ3ZkREAiGEs+PT0ig6BDQAQxTnv8jtsGQRWA0AMS8bgoJMxRAEBQJR8LEmHDQU4dAdADFUwNOd3IWQOAOKodSuMOeU1IicAECManyWza1FkBABiBDwpM5NLYEYRAFEWIiXSGgrCDAyAGMaCL0wXMaMIgDjpssvvMGRgBgZADEvG5vC7yphRBEAUta5Ih30FmIEBEEMVDFnJUgQzigCIYkrkGHPOE0BOACBGdC1LzsajyAgAxDB6U2Zm84slmDsBYJ3leZd/rn5GsRBEtgCwgaVgCNPJWL56rCYhEQDqSceS9PqMIkNBIgA0oqrMKM47CSL3//bu7qWpMA7g+GN738RtMC820rAoMAYxBgtGI2JdjIEbY42GSfOFxImRChKtdE1ylvRiKVEU9mIvWFBEN+aFFxFd9Ff1nJ1zgtlZ4FV2+n7gwJ6fF4PBl+c8B9kcJAIY2ddxtt1/eL+LRIBWunr9nQ4SAVo55FK+mJFEAONA5A7S6bK7jhzjswB+c9De3n28t+Mk/wMMGDnNRwAAAAAAAIA9wsFPwgF/KsTUbwdQCEAhAIUAFEIhoBAKAYVQCCiEQgAKASgEoBCAQgAKASgEMGshTqvNcG6ZvH4iFfZ4jwYoBBRiQC3k4TcfhcDkhbifTBffrIpguW79Iq/qzFys/LmxHJaFrHyN1C639dyIONZHhbNc11YT2/oeos9mIrXNlWEKgekKmfz4NldaygbHHz9VrvyL+Vwpek55GZKFjN+5Xylk8/1juVJfSFt5+8euxpf1QtRZUJktUAhMV4glGR0QVxKnglNnhLzc5/t8YqS/sVTuspRp2JM5kB6sRH2NlbV6eyMkvFN6IepscSNkWaMQmK8Q94Wi3W6fGA3KE4e8ehZn02Io0Vhq5xBn2DNY93e/l4UoK+v355faRP7XXVZjVlVmKe6yYMJCknLTyHT5tELUPURuKU2FJD9siQd6ITv2EHUm9xDBHgIznkNGEvO5Z4WAVojQzyHNhSwFXsajA2oNNuUccne5qRBbinMITFqI++Z08fUjoRfi1p5lNRUyFI+t/5j7pNWgPMvavNVciJzVtg0eDVMI/vVCjFh2NVb+8updWqwVshSC/6KQ3fMurF68NxuiEFCIoUwlErvmERQCCml9q2WhEFDInn47gEIACgEoBKAQCgGFUAgohEJAIRQCUAhAIQCFABQC/IVC+D11AAAAAAAAAAAAAAAAAAB2+gmClD1PTc6eHQAAAABJRU5ErkJggg==" width="801" height="297" />
 
-**Note:** Several other languages have mechanisms for lazy evaluation and deferring a computation, which they also call “promises”, e.g. Scheme. Promises in JavaScript represent processes that are already happening, which can be chained with callback functions. If you are looking to lazily evaluate an expression, consider the [arrow function](../functions/arrow_functions) with no arguments: `f = () => expression` to create the lazily-evaluated expression, and `f()` to evaluate.
+**Note:** Several other languages have mechanisms for lazy evaluation and deferring a computation, which they also call "promises”, e.g. Scheme. Promises in JavaScript represent processes that are already happening, which can be chained with callback functions. If you are looking to lazily evaluate an expression, consider the [arrow function](../functions/arrow_functions) with no arguments: `f = () => expression` to create the lazily-evaluated expression, and `f()` to evaluate.
 
-**Note:** A promise is said to be *settled* if it is either fulfilled or rejected, but not pending. You will also hear the term *resolved* used with promises — this means that the promise is settled or “locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
+**Note:** A promise is said to be *settled* if it is either fulfilled or rejected, but not pending. You will also hear the term *resolved* used with promises — this means that the promise is settled or "locked-in” to match the state of another promise. [States and fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md) contain more details about promise terminology.
 
 ### Chained Promises
 
@@ -65841,23 +65841,23 @@ Using `Arrow Function Expressions` for the callback functions, an implementation
     .then(value => { console.log(value) })
     .catch(err => { console.log(err) });
 
-The termination condition of a promise determines the “settled” state of the next promise in the chain. A “resolved” state indicates a successful completion of the promise, while a “rejected” state indicates a lack of success. The return value of each resolved promise in the chain is passed along to the next `.then()`, while the reason for rejection is passed along to the next rejection-handler function in the chain.
+The termination condition of a promise determines the "settled” state of the next promise in the chain. A "resolved” state indicates a successful completion of the promise, while a "rejected” state indicates a lack of success. The return value of each resolved promise in the chain is passed along to the next `.then()`, while the reason for rejection is passed along to the next rejection-handler function in the chain.
 
 The promises of a chain are nested like Russian dolls, but get popped like the top of a stack. The first promise in the chain is most deeply nested and is the first to pop.
 
     (promise D, (promise C, (promise B, (promise A) ) ) )
 
-When a `nextValue` is a promise, the effect is a dynamic replacement. The `return` causes a promise to be popped, but the `nextValue` promise is pushed into its place. For the nesting shown above, suppose the `.then()` associated with “promise B” returns a `nextValue` of “promise X”. The resulting nesting would look like this:
+When a `nextValue` is a promise, the effect is a dynamic replacement. The `return` causes a promise to be popped, but the `nextValue` promise is pushed into its place. For the nesting shown above, suppose the `.then()` associated with "promise B” returns a `nextValue` of "promise X”. The resulting nesting would look like this:
 
     (promise D, (promise C, (promise X) ) )
 
-A promise can participate in more than one nesting. For the following code, the transition of `promiseA` into a “settled” state will cause both instances of `.then()` to be invoked.
+A promise can participate in more than one nesting. For the following code, the transition of `promiseA` into a "settled” state will cause both instances of `.then()` to be invoked.
 
     const promiseA = new Promise(myExecutorFunc);
     const promiseB = promiseA.then(handleFulfilled1, handleRejected1);
     const promiseC = promiseA.then(handleFulfilled2, handleRejected2);
 
-An action can be assigned to an already “settled” promise. In that case, the action (if appropriate) will be performed at the first asynchronous opportunity. Note that promises are guaranteed to be asynchronous. Therefore, an action for an already “settled” promise will occur only after the stack has cleared and a clock-tick has passed. The effect is much like that of `setTimeout(action,10)`.
+An action can be assigned to an already "settled” promise. In that case, the action (if appropriate) will be performed at the first asynchronous opportunity. Note that promises are guaranteed to be asynchronous. Therefore, an action for an already "settled” promise will occur only after the stack has cleared and a clock-tick has passed. The effect is much like that of `setTimeout(action,10)`.
 
     const promiseA = new Promise( (resolutionFunc,rejectionFunc) => {
         resolutionFunc(777);
@@ -65874,7 +65874,7 @@ An action can be assigned to an already “settled” promise. In that case, the
 
 A settings object is an [environment](https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object) that provides additional information when JavaScript code is running. This includes the realm and module map, as well as HTML specific information such as the origin. The incumbent settings object is tracked in order to ensure that the browser knows which one to use for a given piece of user code.
 
-To better picture this, we can take a closer look at how the realm might be an issue. A **realm** can be roughly thought of as the global object. What is unique about realms is that they hold all of the necessary information to run JavaScript code. This includes objects like `Array` and `Error`. Each settings object has its own “copy” of these and they are not shared. That can cause some unexpected behavior in relation to promises. In order to get around this, we track something called the **incumbent settings object**. This represents information specific to the context of the user code responsible for a certain function call.
+To better picture this, we can take a closer look at how the realm might be an issue. A **realm** can be roughly thought of as the global object. What is unique about realms is that they hold all of the necessary information to run JavaScript code. This includes objects like `Array` and `Error`. Each settings object has its own "copy” of these and they are not shared. That can cause some unexpected behavior in relation to promises. In order to get around this, we track something called the **incumbent settings object**. This represents information specific to the context of the user code responsible for a certain function call.
 
 To illustrate this a bit further we can take a look at how an `<iframe>` embedded in a document communicates with its host. Since all web APIs are aware of the incumbent settings object, the following will work in all browsers:
 
@@ -65963,7 +65963,7 @@ If it rejects, it is rejected with the reason from the first promise that was re
 Returns a new `Promise` object that is rejected with the given reason.
 
 [`Promise.resolve(value)`](promise/resolve)  
-Returns a new `Promise` object that is resolved with the given value. If the value is a thenable (i.e. has a `then` method), the returned promise will “follow” that thenable, adopting its eventual state; otherwise, the returned promise will be fulfilled with the value.
+Returns a new `Promise` object that is resolved with the given value. If the value is a thenable (i.e. has a `then` method), the returned promise will "follow” that thenable, adopting its eventual state; otherwise, the returned promise will be fulfilled with the value.
 
 Generally, if you don’t know if a value is a promise or not, [`Promise.resolve(value)`](promise/resolve) it instead and work with the return value as a promise.
 
@@ -66007,7 +66007,7 @@ This example shows diverse techniques for using Promise capabilities and diverse
 
 The example function `tetheredGetNumber()` shows that a promise generator will utilize `reject()` while setting up an asynchronous call, or within the call-back, or both. The function `promiseGetWord()` illustrates how an API function might generate and return a promise in a self-contained manner.
 
-Note that the function `troubleWithGetNumber()` ends with a `throw()`. That is forced because an ES6 promise chain goes through all the `.then()` promises, even after an error, and without the “throw()”, the error would seem “fixed”. This is a hassle, and for this reason, it is common to omit `rejectionFunc` throughout the chain of `.then()` promises, and just have a single `rejectionFunc` in the final `catch()`. The alternative is to throw a special value (in this case “-999”, but a custom Error type would be more appropriate).
+Note that the function `troubleWithGetNumber()` ends with a `throw()`. That is forced because an ES6 promise chain goes through all the `.then()` promises, even after an error, and without the "throw()”, the error would seem "fixed”. This is a hassle, and for this reason, it is common to omit `rejectionFunc` throughout the chain of `.then()` promises, and just have a single `rejectionFunc` in the final `catch()`. The alternative is to throw a special value (in this case "-999”, but a custom Error type would be more appropriate).
 
 This code can be run under NodeJS. Comprehension is enhanced by seeing the errors actually occur. To force more errors, change the `threshold` values.
 
@@ -66520,10 +66520,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a>
 
-Error: Permission denied to access property “x”
+Error: Permission denied to access property "x”
 ===============================================
 
-The JavaScript exception “Permission denied to access property” occurs when there was an attempt to access an object for which you have no permission.
+The JavaScript exception "Permission denied to access property” occurs when there was an attempt to access an object for which you have no permission.
 
 Message
 -------
@@ -66589,7 +66589,7 @@ There are two ways to access properties: *dot notation* and *bracket notation*.
 
 ### Dot notation
 
-In the `object.property` syntax, the `property` must be a valid JavaScript [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the names of properties are technically “IdentifierNames”, not “Identifiers”, so reserved words can be used but are not recommended). For example, `object.$1` is valid, while `object.1` is not.
+In the `object.property` syntax, the `property` must be a valid JavaScript [identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier). (In the ECMAScript standard, the names of properties are technically "IdentifierNames”, not "Identifiers”, so reserved words can be used but are not recommended). For example, `object.$1` is valid, while `object.1` is not.
 
     const variable = object.property_name;
 
@@ -66650,11 +66650,11 @@ This also outputs `'value'`, since both `foo` and `bar` are converted to the sam
     object[foo] = 'value'
     console.log(object[bar])
 
-In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, this string would be “`[object Object]`”.
+In the [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) JavaScript engine, this string would be "`[object Object]`”.
 
 ### Method binding
 
-A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is “passed” by the function call. See [method binding](this#method_binding).
+A method is not bound to the object that it is a method of. Specifically, `this` is not fixed in a method. Put another way, `this` does not necessarily refer to the object containing a method. Instead, `this` is "passed” by the function call. See [method binding](this#method_binding).
 
 Examples
 --------
@@ -67194,7 +67194,7 @@ In this example, we are using a native JavaScript object to which our proxy will
     //  37
     //  (The operation has been properly forwarded!)
 
-Note that while this “no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.
+Note that while this "no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.
 
 ### Validation
 
@@ -67364,7 +67364,7 @@ The `products` proxy object evaluates the passed value and converts it to an arr
 
 ### Finding an array item object by its property
 
-This proxy extends an array with some utility features. As you see, you can flexibly “define” properties without using [`Object.defineProperties()`](object/defineproperties). This example can be adapted to find a table row by its cell. In that case, the target will be [`table.rows`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows).
+This proxy extends an array with some utility features. As you see, you can flexibly "define” properties without using [`Object.defineProperties()`](object/defineproperties). This example can be adapted to find a table row by its cell. In that case, the target will be [`table.rows`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows).
 
     let products = new Proxy([
       { name: 'Firefox', type: 'browser' },
@@ -67424,7 +67424,7 @@ This proxy extends an array with some utility features. As you see, you can flex
 
 ### A complete `traps` list example
 
-Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a *non-native* object that is particularly suited to this type of operation: the `docCookies` global object created by [the “little framework” published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
+Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a *non-native* object that is particularly suited to this type of operation: the `docCookies` global object created by [the "little framework” published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
 
     /*
       var docCookies = ... get the "docCookies" object here:
@@ -67593,7 +67593,7 @@ No
 See also
 --------
 
--   [“Proxies are awesome” Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
+-   ["Proxies are awesome” Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
 -   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
 -   [Tutorial on proxies](https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
 -   [SpiderMonkey specific Old Proxy API](https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API)
@@ -68780,10 +68780,10 @@ See also
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw</a>
 
-TypeError: “x” is read-only
+TypeError: "x” is read-only
 ===========================
 
-The JavaScript [strict mode](../strict_mode)-only exception “is read-only” occurs when a global variable or object property that was assigned to is a read-only property.
+The JavaScript [strict mode](../strict_mode)-only exception "is read-only” occurs when a global variable or object property that was assigned to is a read-only property.
 
 Message
 -------
@@ -68832,7 +68832,7 @@ There are also a few read-only properties built into JavaScript. Maybe you tried
 
 Sorry, you can’t do that.
 
-The global variable `undefined` is also read-only, so you can’t silence the infamous “undefined is not a function” error by doing this:
+The global variable `undefined` is also read-only, so you can’t silence the infamous "undefined is not a function” error by doing this:
 
     'use strict';
     undefined = function() {};  // TypeError: "undefined" is read-only
@@ -68855,10 +68855,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Read-only</a>
 
-SyntaxError: redeclaration of formal parameter “x”
+SyntaxError: redeclaration of formal parameter "x”
 ==================================================
 
-The JavaScript exception “redeclaration of formal parameter” occurs when the same variable name occurs as a function parameter and is then redeclared using a [`let`](../statements/let) assignment in a function body again.
+The JavaScript exception "redeclaration of formal parameter” occurs when the same variable name occurs as a function parameter and is then redeclared using a [`let`](../statements/let) assignment in a function body again.
 
 Message
 -------
@@ -68882,7 +68882,7 @@ Examples
 
 ### Redeclared argument
 
-In this case, the variable “arg” redeclares the argument.
+In this case, the variable "arg” redeclares the argument.
 
     function f(arg) {
       let arg = 'foo';
@@ -68890,7 +68890,7 @@ In this case, the variable “arg” redeclares the argument.
 
     // SyntaxError: redeclaration of formal parameter "arg"
 
-If you want to change the value of “arg” in the function body, you can do so, but you do not need to declare the same variable again. In other words: you can omit the `let` keyword. If you want to create a new variable, you need to rename it as conflicts with the function parameter already.
+If you want to change the value of "arg” in the function body, you can do so, but you do not need to declare the same variable again. In other words: you can omit the `let` keyword. If you want to create a new variable, you need to rename it as conflicts with the function parameter already.
 
     function f(arg) {
       arg = 'foo';
@@ -69418,7 +69418,7 @@ See also
 TypeError: Reduce of empty array with no initial value
 ======================================================
 
-The JavaScript exception “reduce of empty array with no initial value” occurs when a reduce function is used.
+The JavaScript exception "reduce of empty array with no initial value” occurs when a reduce function is used.
 
 Message
 -------
@@ -72320,10 +72320,10 @@ A [`RegExp`](../regexp) object or literal. The match or matches are replaced wit
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is *not* interpreted as a regular expression. Only the first occurrence will be replaced.
 
 `newSubstr` (replacement)  
-The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the “[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
 
 `replacerFunction` (replacement)  
-A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the “[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
 
 ### Return value
 
@@ -72530,21 +72530,21 @@ Syntax
     replaceAll(substr, newSubstr)
     replaceAll(substr, replacerFunction)
 
-**Note:** When using a \`regexp\` you have to set the global (“g”) flag; otherwise, it will throw a `TypeError`: “replaceAll must be called with a global RegExp”.
+**Note:** When using a \`regexp\` you have to set the global ("g”) flag; otherwise, it will throw a `TypeError`: "replaceAll must be called with a global RegExp”.
 
 ### Parameters
 
 `regexp` (pattern)  
-A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global (“g”) flag will throw a `TypeError`: “replaceAll must be called with a global RegExp”.
+A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global ("g”) flag will throw a `TypeError`: "replaceAll must be called with a global RegExp”.
 
 `substr`  
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is *not* interpreted as a regular expression.
 
 `newSubstr` (replacement)  
-The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the “[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
 
 `replacerFunction` (replacement)  
-A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the “[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
 
 ### Return value
 
@@ -72667,10 +72667,10 @@ See also
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll</a>
 
-SyntaxError: “x” is a reserved identifier
+SyntaxError: "x” is a reserved identifier
 =========================================
 
-The JavaScript exception “*variable* is a reserved identifier” occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
+The JavaScript exception "*variable* is a reserved identifier” occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
 
 Message
 -------
@@ -72743,7 +72743,7 @@ See also
 Promise.resolve()
 =================
 
-The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will “follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
+The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will "follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
 
 Syntax
 ------
@@ -72933,24 +72933,24 @@ The resulting object has the following properties:
 The BCP 47 language tag for the locale actually used. If any Unicode extension values were requested in the input BCP 47 language tag that led to this locale, the key-value pairs that were requested and are supported for this locale are included in `locale`.
 
 `numberingSystem`  
-The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key “`nu`” or filled in as a default.
+The value provided for this properties in the `options` argument, if present, or the value requested using the Unicode extension key "`nu`” or filled in as a default.
 
 `notation`  
-The value provided for this property in the `options` argument, if present, or “`standard`” filled in as a default.
+The value provided for this property in the `options` argument, if present, or "`standard`” filled in as a default.
 
 `compactDisplay`  
-The value provided for this property in the `options` argument, or “`short`” filled in as a default.  
-This property is only present if the `notation` is set to “compact”.
+The value provided for this property in the `options` argument, or "`short`” filled in as a default.  
+This property is only present if the `notation` is set to "compact”.
 
 `signDisplay`  
-The value provided for this property in the `options` argument, or “`auto`” filled in as a default.
+The value provided for this property in the `options` argument, or "`auto`” filled in as a default.
 
 `useGrouping`  
 The values provided for these properties in the `options` argument or filled in as defaults.
 
 `currency`  
 `currencyDisplay`  
-The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is “`currency`”.
+The values provided for these properties in the `options` argument or filled in as defaults. These properties are only present if `style` is "`currency`”.
 
 Only one of the following two groups of properties is included:
 
@@ -73066,7 +73066,7 @@ Syntax
 Description
 -----------
 
-A function definition’s last parameter can be prefixed with “`...`” (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a [“standard” JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
+A function definition’s last parameter can be prefixed with "`...`” (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a ["standard” JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
 
     function myFun(a,  b, ...manyMoreArgs) {
       console.log("a", a)
@@ -73325,7 +73325,7 @@ See also
 RangeError: repeat count must be less than infinity
 ===================================================
 
-The JavaScript exception “repeat count must be less than infinity” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is infinity.
+The JavaScript exception "repeat count must be less than infinity” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is infinity.
 
 Message
 -------
@@ -73414,7 +73414,7 @@ is transformed by ASI into:
     return;
     a + b;
 
-The console will warn “unreachable code after return statement”.
+The console will warn "unreachable code after return statement”.
 
 **Note:** Starting with Firefox 40, a warning is shown in the console if unreachable code is found after a `return` statement.
 
@@ -73787,7 +73787,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 Right shift (&gt;&gt;)
 ======================
 
-The `>>` shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name “sign-propagating”.
+The `>>` shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name "sign-propagating”.
 
 Syntax
 ------
@@ -73797,7 +73797,7 @@ Syntax
 Description
 -----------
 
-This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name “sign-propagating”.
+This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit (the leftmost bit) does not change. Hence the name "sign-propagating”.
 
 For example, `9 >> 2` yields 2:
 
@@ -74804,7 +74804,7 @@ Description
 
 ### Value equality
 
-Because each value in the `Set` has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the `===` operator. Specifically, for `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values. However, this was changed in the ECMAScript 2015 specification. See *“Key equality for -0 and 0”* in the [browser compatibility](#browser_compatibility) table for details.
+Because each value in the `Set` has to be unique, the value equality will be checked. In an earlier version of ECMAScript specification, this was not based on the same algorithm as the one used in the `===` operator. Specifically, for `Set`s, `+0` (which is strictly equal to `-0`) and `-0` were different values. However, this was changed in the ECMAScript 2015 specification. See *"Key equality for -0 and 0”* in the [browser compatibility](#browser_compatibility) table for details.
 
 [`NaN`](nan) and [`undefined`](undefined) can also be stored in a Set. All `NaN` values are equated (i.e. `NaN` is considered the same as `NaN`, even though `NaN !== NaN`).
 
@@ -78493,7 +78493,7 @@ Date.prototype.setYear()
 
 This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the [compatibility table](#browser_compatibility) at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
 
-The `setYear()` method sets the year for a specified date according to local time. Because `setYear()` does not set full years (“year 2000 problem”), it is no longer used and has been replaced by the [`setFullYear()`](setfullyear) method.
+The `setYear()` method sets the year for a specified date according to local time. Because `setYear()` does not set full years ("year 2000 problem”), it is no longer used and has been replaced by the [`setFullYear()`](setfullyear) method.
 
 Syntax
 ------
@@ -78776,7 +78776,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -78836,7 +78836,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -78896,7 +78896,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -78956,7 +78956,7 @@ Chrome disabled SharedArrayBuffer on January 5, 2018 to help reduce the efficacy
 
 89
 
-`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website “cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
+`SharedArrayBuffer` is gated behind COOP/COEP. For more detail, read [Making your website "cross-origin isolated” using COOP and COEP](https://web.dev/coop-coep/).
 
 60-63
 
@@ -79783,7 +79783,7 @@ A string containing a [`<small>`](https://developer.mozilla.org/en-US/docs/Web/H
 Description
 -----------
 
-The `small()` method embeds a string in a `<small>` element: “`<small>str</small>`”.
+The `small()` method embeds a string in a `<small>` element: "`<small>str</small>`”.
 
 Examples
 --------
@@ -80148,7 +80148,7 @@ The sorted array. Note that the array is sorted *[in place](https://en.wikipedia
 Description
 -----------
 
-If `compareFunction` is not supplied, all non-`undefined` array elements are sorted by converting them to strings and comparing strings in UTF-16 code units order. For example, “banana” comes before “cherry”. In a numeric sort, 9 comes before 80, but because numbers are converted to strings, “80” comes before “9” in the Unicode order. All `undefined` elements are sorted to the end of the array.
+If `compareFunction` is not supplied, all non-`undefined` array elements are sorted by converting them to strings and comparing strings in UTF-16 code units order. For example, "banana” comes before "cherry”. In a numeric sort, 9 comes before 80, but because numbers are converted to strings, "80” comes before "9” in the Unicode order. All `undefined` elements are sorted to the end of the array.
 
 **Note:** In UTF-16, Unicode characters above `\uFFFF` are encoded as two surrogate code units, of the range `\uD800`-`\uDFFF`. The value of each code unit is taken separately into account for the comparison. Thus the character formed by the surrogate pair `\uD655\uDE55` will be sorted before the character `\uFF3A`.
 
@@ -80463,7 +80463,7 @@ Examples
 
 ### Empty regular expressions and escaping
 
-Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as “\\n”) are escaped now.
+Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as "\\n”) are escaped now.
 
     new RegExp().source; // "(?:)"
 
@@ -80780,7 +80780,7 @@ If the specified number of elements to insert differs from the number of element
 Examples
 --------
 
-### Remove 0 (zero) elements before index 2, and insert “drum”
+### Remove 0 (zero) elements before index 2, and insert "drum”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum')
@@ -80788,7 +80788,7 @@ Examples
     // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
     // removed is [], no elements removed
 
-### Remove 0 (zero) elements before index 2, and insert “drum” and “guitar”
+### Remove 0 (zero) elements before index 2, and insert "drum” and "guitar”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum', 'guitar')
@@ -80804,7 +80804,7 @@ Examples
     // myFish is ["angel", "clown", "drum", "sturgeon"]
     // removed is ["mandarin"]
 
-### Remove 1 element at index 2, and insert “trumpet”
+### Remove 1 element at index 2, and insert "trumpet”
 
     let myFish = ['angel', 'clown', 'drum', 'sturgeon']
     let removed = myFish.splice(2, 1, 'trumpet')
@@ -80812,7 +80812,7 @@ Examples
     // myFish is ["angel", "clown", "trumpet", "sturgeon"]
     // removed is ["drum"]
 
-### Remove 2 elements from index 0, and insert “parrot”, “anemone” and “blue”
+### Remove 2 elements from index 0, and insert "parrot”, "anemone” and "blue”
 
     let myFish = ['angel', 'clown', 'trumpet', 'sturgeon']
     let removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue')
@@ -80939,9 +80939,9 @@ The pattern describing where each split should occur. The `separator` can be a s
 -   If `separator` contains multiple characters, that entire character sequence must be found in order to split.
 -   If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
 -   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
--   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 “characters”.
+-   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters”.
 
-**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by *user-perceived characters* ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See [“How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
+**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by *user-perceived characters* ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
 
 `limit` <span class="badge inline optional">Optional</span>  
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.
@@ -81197,7 +81197,7 @@ For object literals (new in ECMAScript 2018):
 Rest syntax (parameters)
 ------------------------
 
-Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax “expands” an array into its elements, while rest syntax collects multiple elements and “condenses” them into a single element. See [rest parameters](../functions/rest_parameters).
+Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands” an array into its elements, while rest syntax collects multiple elements and "condenses” them into a single element. See [rest parameters](../functions/rest_parameters).
 
 Examples
 --------
@@ -82361,7 +82361,7 @@ yes
 Description
 -----------
 
-The value of `sticky` is a [`Boolean`](../boolean) and true if the “`y`” flag was used; otherwise, false. The “`y`” flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
+The value of `sticky` is a [`Boolean`](../boolean) and true if the "`y`” flag was used; otherwise, false. The "`y`” flag indicates that it matches only from the index indicated by the [`lastIndex`](lastindex) property of this regular expression in the target string (and does not attempt to match from any later indexes). A regular expression defined as both `sticky` and `global` ignores the `global` flag.
 
 You cannot change this property directly. It is read-only.
 
@@ -82530,7 +82530,7 @@ Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later
 Warning: unreachable code after return statement
 ================================================
 
-The JavaScript warning “unreachable code after return statement” occurs when using an expression after a [`return`](../statements/return) statement, or when using a semicolon-less return statement but including an expression directly after.
+The JavaScript warning "unreachable code after return statement” occurs when using an expression after a [`return`](../statements/return) statement, or when using a semicolon-less return statement but including an expression directly after.
 
 Message
 -------
@@ -83016,7 +83016,7 @@ Strict Mode Overview
 
 **Note:** Sometimes you’ll see the default, non-strict mode referred to as **" [sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)"**. This isn’t an official term, but be aware of it, just in case.
 
-JavaScript’s strict mode, introduced in ECMAScript 5, is a way to *opt in* to a restricted variant of JavaScript, thereby implicitly opting-out of “[sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)”. Strict mode isn’t just a subset: it *intentionally* has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don’t rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
+JavaScript’s strict mode, introduced in ECMAScript 5, is a way to *opt in* to a restricted variant of JavaScript, thereby implicitly opting-out of "[sloppy mode](https://developer.mozilla.org/docs/Glossary/Sloppy_mode)”. Strict mode isn’t just a subset: it *intentionally* has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don’t rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
 
 Strict mode makes several changes to normal JavaScript semantics:
 
@@ -83067,13 +83067,13 @@ ECMAScript 2015 introduced [JavaScript modules](statements/export) and therefore
 Changes in strict mode
 ----------------------
 
-Strict mode changes both syntax and runtime behavior. Changes generally fall into these categories: changes converting mistakes into errors (as syntax errors or at runtime), changes simplifying how the particular variable for a given use of a name is computed, changes simplifying `eval` and `arguments`, changes making it easier to write “secure” JavaScript, and changes anticipating future ECMAScript evolution.
+Strict mode changes both syntax and runtime behavior. Changes generally fall into these categories: changes converting mistakes into errors (as syntax errors or at runtime), changes simplifying how the particular variable for a given use of a name is computed, changes simplifying `eval` and `arguments`, changes making it easier to write "secure” JavaScript, and changes anticipating future ECMAScript evolution.
 
 ### Converting mistakes into errors
 
 Strict mode changes some previously-accepted mistakes into errors. JavaScript was designed to be easy for novice developers, and sometimes it gives operations which should be errors non-error semantics. Sometimes this fixes the immediate problem, but sometimes this creates worse problems in the future. Strict mode treats these mistakes as errors so that they’re discovered and promptly fixed.
 
-First, strict mode makes it impossible to accidentally create global variables. In normal JavaScript mistyping a variable in an assignment creates a new property on the global object and continues to “work” (although future failure is possible: likely, in modern JavaScript). Assignments, which would accidentally create global variables, instead throw an error in strict mode:
+First, strict mode makes it impossible to accidentally create global variables. In normal JavaScript mistyping a variable in an assignment creates a new property on the global object and continues to "work” (although future failure is possible: likely, in modern JavaScript). Assignments, which would accidentally create global variables, instead throw an error in strict mode:
 
     'use strict';
                            // Assuming no global variable mistypeVariable exists
@@ -83114,7 +83114,7 @@ Fourth, strict mode requires that function parameter names be unique. In normal 
       return a + a + c; // wrong if this code ran
     }
 
-Fifth, a strict mode in ECMAScript 5 [forbids a `0`-prefixed octal literal or octal escape sequence](errors/deprecated_octal). Outside strict mode, a number beginning with a `0`, such as `0644`, is interpreted as an octal number (`0644 === 420`), if all digits are smaller than 8. Octal escape sequences, such as `"\45"`, which is equal to `"%"`, can be used to represent characters by extended-ASCII character code numbers in octal. In strict mode, this is a syntax error. In ECMAScript 2015, octal literals are supported by prefixing a number with “`0o`”; for example:
+Fifth, a strict mode in ECMAScript 5 [forbids a `0`-prefixed octal literal or octal escape sequence](errors/deprecated_octal). Outside strict mode, a number beginning with a `0`, such as `0644`, is interpreted as an octal number (`0644 === 420`), if all digits are smaller than 8. Octal escape sequences, such as `"\45"`, which is equal to `"%"`, can be used to represent characters by extended-ASCII character code numbers in octal. In strict mode, this is a syntax error. In ECMAScript 2015, octal literals are supported by prefixing a number with "`0o`”; for example:
 
     var a = 0o10; // ES2015: Octal
 
@@ -83238,11 +83238,11 @@ Third, `arguments.callee` is no longer supported. In normal code `arguments.call
     var f = function() { return arguments.callee; };
     f(); // throws a TypeError
 
-### “Securing” JavaScript
+### "Securing” JavaScript
 
-Strict mode makes it easier to write “secure” JavaScript. Some websites now provide ways for users to write JavaScript which will be run by the website *on behalf of other users*. JavaScript in browsers can access the user’s private information, so such JavaScript must be partially transformed before it is run, to censor access to forbidden functionality. JavaScript’s flexibility makes it effectively impossible to do this without many runtime checks. Certain language functions are so pervasive that performing runtime checks has a considerable performance cost. A few strict mode tweaks, plus requiring that user-submitted JavaScript be strict mode code and that it be invoked in a certain manner, substantially reduce the need for those runtime checks.
+Strict mode makes it easier to write "secure” JavaScript. Some websites now provide ways for users to write JavaScript which will be run by the website *on behalf of other users*. JavaScript in browsers can access the user’s private information, so such JavaScript must be partially transformed before it is run, to censor access to forbidden functionality. JavaScript’s flexibility makes it effectively impossible to do this without many runtime checks. Certain language functions are so pervasive that performing runtime checks has a considerable performance cost. A few strict mode tweaks, plus requiring that user-submitted JavaScript be strict mode code and that it be invoked in a certain manner, substantially reduce the need for those runtime checks.
 
-First, the value passed as `this` to a function in strict mode is not forced into being an object (a.k.a. “boxed”). For a normal function, `this` is always an object: either the provided object if called with an object-valued `this`; the value, boxed, if called with a Boolean, string, or number `this`; or the global object if called with an `undefined` or `null` `this`. (Use [`call`](global_objects/function/call), [`apply`](global_objects/function/apply), or [`bind`](global_objects/function/bind) to specify a particular `this`.) Not only is automatic boxing a performance cost, but exposing the global object in browsers is a security hazard because the global object provides access to functionality that “secure” JavaScript environments must restrict. Thus for a strict mode function, the specified `this` is not boxed into an object, and if unspecified, `this` will be `undefined`:
+First, the value passed as `this` to a function in strict mode is not forced into being an object (a.k.a. "boxed”). For a normal function, `this` is always an object: either the provided object if called with an object-valued `this`; the value, boxed, if called with a Boolean, string, or number `this`; or the global object if called with an `undefined` or `null` `this`. (Use [`call`](global_objects/function/call), [`apply`](global_objects/function/apply), or [`bind`](global_objects/function/bind) to specify a particular `this`.) Not only is automatic boxing a performance cost, but exposing the global object in browsers is a security hazard because the global object provides access to functionality that "secure” JavaScript environments must restrict. Thus for a strict mode function, the specified `this` is not boxed into an object, and if unspecified, `this` will be `undefined`:
 
     'use strict';
     function fun() { return this; }
@@ -83254,7 +83254,7 @@ First, the value passed as `this` to a function in strict mode is not forced int
 
 That means, among other things, that in browsers it’s no longer possible to reference the `window` object through `this` inside a strict mode function.
 
-Second, in strict mode it’s no longer possible to “walk” the JavaScript stack via commonly-implemented extensions to ECMAScript. In normal code with these extensions, when a function `fun` is in the middle of being called, `fun.caller` is the function that most recently called `fun`, and `fun.arguments` is the `arguments` for that invocation of `fun`. Both extensions are problematic for “secure” JavaScript because they allow “secured” code to access “privileged” functions and their (potentially unsecured) arguments. If `fun` is in strict mode, both `fun.caller` and `fun.arguments` are non-deletable properties which throw when set or retrieved:
+Second, in strict mode it’s no longer possible to "walk” the JavaScript stack via commonly-implemented extensions to ECMAScript. In normal code with these extensions, when a function `fun` is in the middle of being called, `fun.caller` is the function that most recently called `fun`, and `fun.arguments` is the `arguments` for that invocation of `fun`. Both extensions are problematic for "secure” JavaScript because they allow "secured” code to access "privileged” functions and their (potentially unsecured) arguments. If `fun` is in strict mode, both `fun.caller` and `fun.arguments` are non-deletable properties which throw when set or retrieved:
 
     function restricted() {
       'use strict';
@@ -83297,7 +83297,7 @@ First, in strict mode, a short list of identifiers become reserved keywords. The
 
 Two Mozilla-specific caveats: First, if your code is JavaScript 1.7 or greater (for example in chrome code or when using the right `<script type="">`) and is strict mode code, `let` and `yield` have the functionality they’ve had since those keywords were first introduced. But strict mode code on the web, loaded with `<script src="">` or `<script>...</script>`, won’t be able to use `let`/`yield` as identifiers. Second, while ES5 unconditionally reserves the words `class`, `enum`, `export`, `extends`, `import`, and `super`, before Firefox 5 Mozilla reserved them only in strict mode.
 
-Second, [strict mode prohibits function statements that are not at the top level of a script or function](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/). In normal mode in browsers, function statements are permitted “everywhere”. *This is not part of ES5 (or even ES3)!* It’s an extension with incompatible semantics in different browsers. Note that function statements outside top level are permitted in ES2015.
+Second, [strict mode prohibits function statements that are not at the top level of a script or function](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/). In normal mode in browsers, function statements are permitted "everywhere”. *This is not part of ES5 (or even ES3)!* It’s an extension with incompatible semantics in different browsers. Note that function statements outside top level are permitted in ES2015.
 
     'use strict';
     if (true) {
@@ -83328,7 +83328,7 @@ See also
 -   [Where’s Walden? » New ES5 strict mode support: now with poison pills!](https://whereswalden.com/2010/09/08/new-es5-strict-mode-support-now-with-poison-pills/)
 -   [Where’s Walden? » New ES5 strict mode requirement: function statements not at top level of a program or function are prohibited](https://whereswalden.com/2011/01/24/new-es5-strict-mode-requirement-function-statements-not-at-top-level-of-a-program-or-function-are-prohibited/)
 -   [Where’s Walden? » New ES5 strict mode support: new vars created by strict mode eval code are local to that code only](https://whereswalden.com/2011/01/10/new-es5-strict-mode-support-new-vars-created-by-strict-mode-eval-code-are-local-to-that-code-only/)
--   [JavaScript “use strict” tutorial for beginners.](http://qnimate.com/javascript-strict-mode-in-nutshell/)
+-   [JavaScript "use strict” tutorial for beginners.](http://qnimate.com/javascript-strict-mode-in-nutshell/)
 -   [John Resig - ECMAScript 5 Strict Mode, JSON, and More](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/)
 -   [ECMA-262-5 in detail. Chapter 2. Strict Mode.](http://dmitrysoshnikov.com/ecmascript/es5-chapter-2-strict-mode/)
 -   [Strict mode compatibility table](https://kangax.github.io/compat-table/es5/#Strict_mode)
@@ -83336,10 +83336,10 @@ See also
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode</a>
 
-SyntaxError: “use strict” not allowed in function with non-simple parameters
+SyntaxError: "use strict” not allowed in function with non-simple parameters
 ============================================================================
 
-The JavaScript exception “`'use strict'` not allowed in function” occurs when a `"use strict"` directive is used at the top of a function with [default parameters](../functions/default_parameters), [rest parameters](../functions/rest_parameters), or [destructuring parameters](../operators/destructuring_assignment).
+The JavaScript exception "`'use strict'` not allowed in function” occurs when a `"use strict"` directive is used at the top of a function with [default parameters](../functions/default_parameters), [rest parameters](../functions/rest_parameters), or [destructuring parameters](../operators/destructuring_assignment).
 
 Message
 -------
@@ -83462,7 +83462,7 @@ A string containing a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/
 Description
 -----------
 
-The `strike()` method embeds a string in a `<strike>` element: “`<strike>str</strike>`”.
+The `strike()` method embeds a string in a `<strike>` element: "`<strike>str</strike>`”.
 
 Examples
 --------

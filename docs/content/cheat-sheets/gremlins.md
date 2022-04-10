@@ -6,7 +6,7 @@ subtitle
 
 title: Gremlins.js category: JavaScript libraries
 
-weight: -1 intro: | [Gremlins](https://github.com/marmelab/gremlins.js) is a JavaScript library to do “monkey-testing” by providing random user input (clicks, scrolls, and so on).
+weight: -1 intro: | [Gremlins](https://github.com/marmelab/gremlins.js) is a JavaScript library to do "monkey-testing” by providing random user input (clicks, scrolls, and so on).
 
 ------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ Example
             document.activeElement.blur();
         });
 
-{: data-line=“3,4,5”}
+{: data-line="3,4,5”}
 
 Runs the given function at regular intervals.
 
@@ -69,7 +69,7 @@ Hooks
             console.profileEnd();
         });
 
-{: data-line=“2,6”}
+{: data-line="2,6”}
 
 ### Asynchronous
 
@@ -80,7 +80,7 @@ Hooks
         }, 500);
     });
 
-{: data-line=“2”}
+{: data-line="2”}
 
 References
 ----------

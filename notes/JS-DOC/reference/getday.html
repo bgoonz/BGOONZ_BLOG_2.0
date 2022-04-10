@@ -26,7 +26,7 @@
 var weekday = Xmas95.getDay();
 
 console.log(weekday); // 1</code></pre>
-<p><strong>Note:</strong> If needed, the full name of a day (“<code>Monday</code>” for example) can be obtained by using <a href="../intl/datetimeformat"><code>Intl.DateTimeFormat</code></a> with an <code>options</code> parameter. Using this method, the internationalization is made easier:</p>
+<p><strong>Note:</strong> If needed, the full name of a day ("<code>Monday</code>” for example) can be obtained by using <a href="../intl/datetimeformat"><code>Intl.DateTimeFormat</code></a> with an <code>options</code> parameter. Using this method, the internationalization is made easier:</p>
 <pre><code>var options = { weekday: &#39;long&#39;};
 console.log(new Intl.DateTimeFormat(&#39;en-US&#39;, options).format(Xmas95));
 // Monday

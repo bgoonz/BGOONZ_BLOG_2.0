@@ -23,7 +23,7 @@
 <p>In the following phases, you will configure your application to work in production, not just in development, and configure the <code>package.json</code> scripts for <code>install</code>, <code>heroku-postbuild</code> and <code>start</code> scripts to install, build your React application, and start the Express production server.</p>
 <h3 id="phase-1-heroku-connection">Phase 1: Heroku Connection</h3>
 <p>If you haven’t created a Heroku account yet, create one <a href="https://signup.heroku.com/" class="markup--anchor markup--p-anchor">here</a>.</p>
-<p>Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the “Resources” tab in your new application, click “Find more add-ons” and add the “Heroku Postgres” add-on with the free Hobby Dev setting.</p>
+<p>Add a new application in your <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a> named whatever you want. Under the "Resources” tab in your new application, click "Find more add-ons” and add the "Heroku Postgres” add-on with the free Hobby Dev setting.</p>
 <p>In your terminal, install the <a href="https://devcenter.heroku.com/articles/heroku-command-line" class="markup--anchor markup--p-anchor">Heroku CLI</a>. Afterwards, login to Heroku in your terminal by running the following:</p>
 <pre><code>heroku login</code></pre>
 <p>Add Heroku as a remote to your project’s git repository in the following command and replace <code>&lt;name-of-Heroku-app&gt;</code> with the name of the application you created in the <a href="https://dashboard.heroku.com/" class="markup--anchor markup--p-anchor">Heroku dashboard</a>.</p>
@@ -102,7 +102,7 @@ module.exports = router;</code></pre>
 <p>The <code>dev:backend</code> and <code>dev:frontend</code> scripts are optional and will not be used for Heroku.</p>
 <p>Finally, commit your changes.</p>
 <h3 id="phase-3-deploy-to-heroku">Phase 3: Deploy to Heroku</h3>
-<p>Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under “Settings” there is a section for “Config Vars”. Click the <code>Reveal Config Vars</code> button to see all your production environment variables. You should have a <code>DATABASE_URL</code> environment variable already from the Heroku Postgres add-on.</p>
+<p>Once you’re finished setting this up, navigate to your application’s Heroku dashboard. Under "Settings” there is a section for "Config Vars”. Click the <code>Reveal Config Vars</code> button to see all your production environment variables. You should have a <code>DATABASE_URL</code> environment variable already from the Heroku Postgres add-on.</p>
 <p>Add environment variables for <code>JWT_EXPIRES_IN</code> and <code>JWT_SECRET</code> and any other environment variables you need for production.</p>
 <p>You can also set environment variables through the Heroku CLI you installed earlier in your terminal. See the docs for <a href="https://devcenter.heroku.com/articles/config-vars" class="markup--anchor markup--p-anchor">Setting Heroku Config Variables</a>.</p>
 <p>Push your project to Heroku. Heroku only allows the <code>master</code> branch to be pushed. But, you can alias your branch to be named <code>master</code> when pushing to Heroku. For example, to push a branch called <code>login-branch</code> to <code>master</code> run:</p>
@@ -116,7 +116,7 @@ module.exports = router;</code></pre>
 <pre><code>heroku run npm run sequelize db:migrate</code></pre>
 <p>To seed the production database, run:</p>
 <pre><code>heroku run npm run sequelize db:seed:all</code></pre>
-<p>Note: You can interact with your database this way as you’d like, but beware that <code>db:drop</code> cannot be run in the Heroku environment. If you want to drop and create the database, you need to remove and add back the “Heroku Postgres” add-on.</p>
+<p>Note: You can interact with your database this way as you’d like, but beware that <code>db:drop</code> cannot be run in the Heroku environment. If you want to drop and create the database, you need to remove and add back the "Heroku Postgres” add-on.</p>
 <p>Another way to interact with the production application is by opening a bash shell through your terminal by running:</p>
 <pre><code>heroku bash</code></pre>
 <p>In the opened shell, you can run things like <code>npm run sequelize db:migrate</code>.</p>

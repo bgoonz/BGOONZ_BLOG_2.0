@@ -1,7 +1,7 @@
 SyntaxError: missing : after property id
 ========================================
 
-The JavaScript exception “missing : after property id” occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.
+The JavaScript exception "missing : after property id” occurs when objects are created using the [object initializer](../operators/object_initializer) syntax. A colon (`:`) separates keys and values for the object’s properties. Somehow, this colon is missing or misplaced.
 
 Message
 -------

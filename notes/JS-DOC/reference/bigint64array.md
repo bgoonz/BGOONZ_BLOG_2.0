@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `8` in the case of a `BigInt64Array`.
 
 [`BigInt64Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is “BigInt64Array”.
+Returns the string value of the constructor name. In the case of the `BigInt64Array` type, this is "BigInt64Array”.
 
 Static methods
 --------------

@@ -74,7 +74,7 @@ That’s allowed for historical reasons, and mostly works, but generally not rec
 
 ### Looping over keys
 
-As we’ve seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?
+As we’ve seen, the methods provide "get/set/remove by key” functionality. But how to get all saved values or keys?
 
 Unfortunately, storage objects are not iterable.
 
@@ -103,7 +103,7 @@ It iterates over keys, but also outputs few built-in fields that we don’t need
       alert(`${key}: ${localStorage.getItem(key)}`);
     }
 
-…Or just get the “own” keys with `Object.keys` and then loop over them if needed:
+…Or just get the "own” keys with `Object.keys` and then loop over them if needed:
 
     let keys = Object.keys(localStorage);
     for(let key of keys) {
@@ -155,7 +155,7 @@ Run this code…
 
     alert( sessionStorage.getItem('test') ); // after refresh: 1
 
-…But if you open the same page in another tab, and try again there, the code above returns `null`, meaning “nothing found”.
+…But if you open the same page in another tab, and try again there, the code above returns `null`, meaning "nothing found”.
 
 That’s exactly because `sessionStorage` is bound not only to the origin, but also to the browser tab. For that reason, `sessionStorage` is used sparingly.
 
@@ -189,7 +189,7 @@ If both windows are listening for `window.onstorage`, then each one will react o
 
 Please note that the event also contains: `event.url` – the url of the document where the data was updated.
 
-Also, `event.storageArea` contains the storage object – the event is the same for both `sessionStorage` and `localStorage`, so `event.storageArea` references the one that was modified. We may even want to set something back in it, to “respond” to a change.
+Also, `event.storageArea` contains the storage object – the event is the same for both `sessionStorage` and `localStorage`, so `event.storageArea` references the one that was modified. We may even want to set something back in it, to "respond” to a change.
 
 **That allows different windows from the same origin to exchange messages.**
 

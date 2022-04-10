@@ -19,9 +19,9 @@ The pattern describing where each split should occur. The `separator` can be a s
 -   If `separator` contains multiple characters, that entire character sequence must be found in order to split.
 -   If `separator` is omitted or does not occur in `str`, the returned array contains one element consisting of the entire string.
 -   If `separator` appears at the beginning (or end) of the string, it still has the effect of splitting. The result is an empty (i.e. zero length) string, which appears at the first (or last) position of the returned array.
--   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 “characters”.
+-   If `separator` is an empty string (`""`), `str` is converted to an array of each of its UTF-16 "characters”.
 
-**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by *user-perceived characters* ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See [“How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
+**Warning:** When the empty string (`""`) is used as a separator, the string is **not** split by *user-perceived characters* ([grapheme clusters](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries)) or unicode characters (codepoints), but by UTF-16 codeunits. This destroys [surrogate pairs](https://unicode.org/faq/utf_bom.html#utf16-2). See ["How do you get a string to a character array in JavaScript?” on StackOverflow](https://stackoverflow.com/a/34717402).
 
 `limit` <span class="badge inline optional">Optional</span>  
 A non-negative integer specifying a limit on the number of substrings to be included in the array. If provided, splits the string at each occurrence of the specified `separator`, but stops when `limit` entries have been placed in the array. Any leftover text is not included in the array at all.

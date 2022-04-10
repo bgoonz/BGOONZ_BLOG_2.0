@@ -18,7 +18,7 @@ A string with a BCP 47 language tag, or an array of such strings. For the genera
 An object that may have the following property:
 
 `localeMatcher`  
-The locale matching algorithm to use. Possible values are “`lookup`” and “`best fit`”; the default is “`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
+The locale matching algorithm to use. Possible values are "`lookup`” and "`best fit`”; the default is "`best fit`”. For information about this option, see the [Intl](../../intl#locale_negotiation) page.
 
 ### Return value
 
@@ -34,7 +34,7 @@ Examples
 
 ### Using supportedLocalesOf()
 
-Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, `supportedLocalesOf` returns the Indonesian and German language tags unchanged, even though `pinyin` collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the “`lookup`” algorithm here — a “`best fit`” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.
+Assuming a runtime that supports Indonesian and German but not Balinese in date and time formatting, `supportedLocalesOf` returns the Indonesian and German language tags unchanged, even though `pinyin` collation is neither relevant to date and time formatting nor used with Indonesian, and a specialized German for Indonesia is unlikely to be supported. Note the specification of the "`lookup`” algorithm here — a "`best fit`” matcher might decide that Indonesian is an adequate match for Balinese since most Balinese speakers also understand Indonesian, and therefore return the Balinese language tag as well.
 
     const locales = ['ban', 'id-u-co-pinyin', 'de-ID'];
     const options = { localeMatcher: 'lookup' };

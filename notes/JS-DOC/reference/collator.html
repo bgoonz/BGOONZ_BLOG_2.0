@@ -25,36 +25,36 @@ Optional. A string with a BCP 47 language tag, or an array of such strings. For 
 <p>The following Unicode extension keys are allowed:</p>
 <p><strong>Note:</strong> These keys can usually also be set with <code>options</code> (as listed below). When both are set, the <code>options</code> property takes precedence.</p>
 <p><code>co</code><br />
-Variant collations for certain locales. Possible values include: “<code>big5han</code>”, “<code>dict</code>”, “<code>direct</code>”, “<code>ducet</code>”, “<code>gb2312</code>”, “<code>phonebk</code>”, “<code>phonetic</code>”, “<code>pinyin</code>”, “<code>reformed</code>”, “<code>searchjl</code>”, “<code>stroke</code>”, “<code>trad</code>”, “<code>unihan</code>”. This option can be also be set through the <code>options</code> property “<code>collation</code>”.</p>
+Variant collations for certain locales. Possible values include: "<code>big5han</code>”, "<code>dict</code>”, "<code>direct</code>”, "<code>ducet</code>”, "<code>gb2312</code>”, "<code>phonebk</code>”, "<code>phonetic</code>”, "<code>pinyin</code>”, "<code>reformed</code>”, "<code>searchjl</code>”, "<code>stroke</code>”, "<code>trad</code>”, "<code>unihan</code>”. This option can be also be set through the <code>options</code> property "<code>collation</code>”.</p>
 <p><code>kn</code><br />
-Whether numeric collation should be used, such that “1” &lt; “2” &lt; “10”. Possible values are “<code>true</code>” and “<code>false</code>”. This option can be also be set through the <code>options</code> property “<code>numeric</code>”.</p>
+Whether numeric collation should be used, such that "1” &lt; "2” &lt; "10”. Possible values are "<code>true</code>” and "<code>false</code>”. This option can be also be set through the <code>options</code> property "<code>numeric</code>”.</p>
 <p><code>kf</code><br />
-Whether upper case or lower case should sort first. Possible values are “<code>upper</code>”, “<code>lower</code>”, or “<code>false</code>” (use the locale’s default). This option can be also be set through the <code>options</code> property “<code>caseFirst</code>”.</p>
+Whether upper case or lower case should sort first. Possible values are "<code>upper</code>”, "<code>lower</code>”, or "<code>false</code>” (use the locale’s default). This option can be also be set through the <code>options</code> property "<code>caseFirst</code>”.</p>
 <p><code>options</code> <span class="badge inline optional">Optional</span><br />
 An object with some or all of the following properties:</p>
 <p><code>localeMatcher</code><br />
-The locale matching algorithm to use. Possible values are “<code>lookup</code>” and “<code>best fit</code>”; the default is “<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
+The locale matching algorithm to use. Possible values are "<code>lookup</code>” and "<code>best fit</code>”; the default is "<code>best fit</code>”. For information about this option, see the <a href="../../intl#locale_negotiation">Intl</a> page.</p>
 <p><code>usage</code><br />
-Whether the comparison is for sorting or for searching for matching strings. Possible values are “<code>sort</code>” and “<code>search</code>”; the default is “<code>sort</code>”.</p>
+Whether the comparison is for sorting or for searching for matching strings. Possible values are "<code>sort</code>” and "<code>search</code>”; the default is "<code>sort</code>”.</p>
 <p><code>sensitivity</code><br />
 Which differences in the strings should lead to non-zero result values. Possible values are:</p>
 <ul>
-<li>“<code>base</code>”: Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.</li>
-<li>“<code>accent</code>”: Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.</li>
-<li>“<code>case</code>”: Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.</li>
-<li>“<code>variant</code>”: Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.</li>
+<li>"<code>base</code>”: Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A.</li>
+<li>"<code>accent</code>”: Only strings that differ in base letters or accents and other diacritic marks compare as unequal. Examples: a ≠ b, a ≠ á, a = A.</li>
+<li>"<code>case</code>”: Only strings that differ in base letters or case compare as unequal. Examples: a ≠ b, a = á, a ≠ A.</li>
+<li>"<code>variant</code>”: Strings that differ in base letters, accents and other diacritic marks, or case compare as unequal. Other differences may also be taken into consideration. Examples: a ≠ b, a ≠ á, a ≠ A.</li>
 </ul>
-<p>The default is “<code>variant</code>” for usage “<code>sort</code>”; it’s locale dependent for usage “<code>search</code>”.</p>
+<p>The default is "<code>variant</code>” for usage "<code>sort</code>”; it’s locale dependent for usage "<code>search</code>”.</p>
 <p><code>ignorePunctuation</code><br />
 Whether punctuation should be ignored. Possible values are <code>true</code> and <code>false</code>; the default is <code>false</code>.</p>
 <p><code>numeric</code><br />
-Whether numeric collation should be used, such that “1” &lt; “2” &lt; “10”. Possible values are <code>true</code> and <code>false</code>; the default is <code>false</code>.</p>
+Whether numeric collation should be used, such that "1” &lt; "2” &lt; "10”. Possible values are <code>true</code> and <code>false</code>; the default is <code>false</code>.</p>
 <p><strong>Note:</strong> This option can also be set through the <code>kn</code> Unicode extension key; if both are provided, this <code>options</code> property takes precedence.</p>
 <p><code>caseFirst</code><br />
-Whether upper case or lower case should sort first. Possible values are “<code>upper</code>”, “<code>lower</code>”, or “<code>false</code>” (use the locale’s default). This option can be set through an <code>options</code> property or through a Unicode extension key; if both are provided, the <code>options</code> property takes precedence.</p>
+Whether upper case or lower case should sort first. Possible values are "<code>upper</code>”, "<code>lower</code>”, or "<code>false</code>” (use the locale’s default). This option can be set through an <code>options</code> property or through a Unicode extension key; if both are provided, the <code>options</code> property takes precedence.</p>
 <p><strong>Note:</strong> This option can also be set through the <code>kf</code> Unicode extension key; if both are provided, this <code>options</code> property takes precedence.</p>
 <p><code>collation</code><br />
-Variant collations for certain locales. Possible values include: “<code>big5han</code>”, “<code>dict</code>”, “<code>direct</code>”, “<code>ducet</code>”, “<code>gb2312</code>”, “<code>phonebk</code>” (only supported in German), “<code>phonetic</code>”, “<code>pinyin</code>”, “<code>reformed</code>”, “<code>searchjl</code>”, “<code>stroke</code>”, “<code>trad</code>”, “<code>unihan</code>”.</p>
+Variant collations for certain locales. Possible values include: "<code>big5han</code>”, "<code>dict</code>”, "<code>direct</code>”, "<code>ducet</code>”, "<code>gb2312</code>”, "<code>phonebk</code>” (only supported in German), "<code>phonetic</code>”, "<code>pinyin</code>”, "<code>reformed</code>”, "<code>searchjl</code>”, "<code>stroke</code>”, "<code>trad</code>”, "<code>unihan</code>”.</p>
 <p><strong>Note:</strong> This option can also be set through the <code>co</code> Unicode extension key; if both are provided, this <code>options</code> property takes precedence.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="using-collator">Using Collator</h3>

@@ -19,7 +19,7 @@ A string containing a [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTM
 Description
 -----------
 
-The `sup()` method embeds a string in a `<sup>` element: “`<sup>str</sup>`”.
+The `sup()` method embeds a string in a `<sup>` element: "`<sup>str</sup>`”.
 
 Examples
 --------

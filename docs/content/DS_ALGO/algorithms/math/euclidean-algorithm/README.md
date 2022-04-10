@@ -11,7 +11,7 @@ By reversing the steps, the GCD can be expressed as a sum of the two original nu
 
 ![GCD](https://upload.wikimedia.org/wikipedia/commons/3/37/Euclid%27s_algorithm_Book_VII_Proposition_2_3.png)
 
-Euclid’s method for finding the greatest common divisor (GCD) of two starting lengths `BA` and `DC`, both defined to be multiples of a common “unit” length. The length `DC` being shorter, it is used to “measure” `BA`, but only once because remainder `EA` is less than `DC`. EA now measures (twice) the shorter length `DC`, with remainder `FC` shorter than `EA`. Then `FC` measures (three times) length `EA`. Because there is no remainder, the process ends with `FC` being the `GCD`. On the right Nicomachus’ example with numbers `49` and `21` resulting in their GCD of `7` (derived from Heath 1908:300).
+Euclid’s method for finding the greatest common divisor (GCD) of two starting lengths `BA` and `DC`, both defined to be multiples of a common "unit” length. The length `DC` being shorter, it is used to "measure” `BA`, but only once because remainder `EA` is less than `DC`. EA now measures (twice) the shorter length `DC`, with remainder `FC` shorter than `EA`. Then `FC` measures (three times) length `EA`. Because there is no remainder, the process ends with `FC` being the `GCD`. On the right Nicomachus’ example with numbers `49` and `21` resulting in their GCD of `7` (derived from Heath 1908:300).
 
 ![GCD](https://upload.wikimedia.org/wikipedia/commons/7/74/24x60.svg)
 

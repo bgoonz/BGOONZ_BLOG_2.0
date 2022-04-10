@@ -24,7 +24,7 @@ Set `HISTTIMEFORMAT` to print the time stamps associated with each history entry
 
 Append the following line to `~/.bashrc` file:
 
-export HISTTIMEFORMAT=“%h %d %H:%M:%S”
+export HISTTIMEFORMAT="%h %d %H:%M:%S”
 
 Now, when you type **history**, it will show something like:
 
@@ -85,11 +85,11 @@ export HISTCONTROL=ignorespace:erasedups
 
 Don’t save `ls`, `ps` and `history` commands:
 
-export HISTIGNORE=“ls:ps:history”
+export HISTIGNORE="ls:ps:history”
 
 Don’t save commands with `s` in the beginig:
 
-export HISTIGNORE=“s\*”
+export HISTIGNORE="s\*”
 
 7. Use one command per line
 ---------------------------

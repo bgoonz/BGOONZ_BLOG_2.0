@@ -1,7 +1,7 @@
-SyntaxError: “0”-prefixed octal literals and octal escape seq. are deprecated
+SyntaxError: "0”-prefixed octal literals and octal escape seq. are deprecated
 =============================================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “0-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the”0o" prefix instead" occurs when deprecated octal literals and octal escape sequences are used.
+The JavaScript [strict mode](../strict_mode)-only exception "0-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the”0o" prefix instead" occurs when deprecated octal literals and octal escape sequences are used.
 
 Message
 -------
@@ -19,12 +19,12 @@ Error type
 What went wrong?
 ----------------
 
-Octal literals and octal escape sequences are deprecated and will throw a [`SyntaxError`](../global_objects/syntaxerror) in strict mode. With ECMAScript 2015 and later, the standardized syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`.
+Octal literals and octal escape sequences are deprecated and will throw a [`SyntaxError`](../global_objects/syntaxerror) in strict mode. With ECMAScript 2015 and later, the standardized syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (`0o` or `0O)`.
 
 Examples
 --------
 
-### “0”-prefixed octal literals
+### "0”-prefixed octal literals
 
     "use strict";
 
@@ -44,7 +44,7 @@ Examples
 
 ### Valid octal numbers
 
-Use a leading zero followed by the letter “o” or “O”:
+Use a leading zero followed by the letter "o” or "O”:
 
     0o3;
 

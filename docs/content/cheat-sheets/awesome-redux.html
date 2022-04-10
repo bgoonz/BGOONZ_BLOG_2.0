@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb11-10" title="10"><span class="op">}</span></a></code></pre></div>
 <p><a href="https://www.npmjs.com/package/redux-effects">redux-effects</a> {: .-crosslink}</p>
 <h3 id="redux-thunk">redux-thunk</h3>
-<p>Pass “thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}</p>
+<p>Pass "thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1">fetchData <span class="op">=</span> (url) <span class="kw">=&gt;</span> (dispatch<span class="op">,</span> getState) <span class="kw">=&gt;</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb12-2" title="2">  <span class="at">dispatch</span>(<span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;FETCH_REQUEST&#39;</span> <span class="op">}</span>)</a>
 <a class="sourceLine" id="cb12-3" title="3">  <span class="at">fetch</span>(url)</a>

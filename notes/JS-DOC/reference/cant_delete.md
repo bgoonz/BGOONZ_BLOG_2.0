@@ -1,7 +1,7 @@
-TypeError: property “x” is non-configurable and can’t be deleted
+TypeError: property "x” is non-configurable and can’t be deleted
 ================================================================
 
-The JavaScript exception “property is non-configurable and can’t be deleted” occurs when it was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "property is non-configurable and can’t be deleted” occurs when it was attempted to delete a property, but that property is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------

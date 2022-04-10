@@ -19,7 +19,7 @@ A string containing a [`<strike>`](https://developer.mozilla.org/en-US/docs/Web/
 Description
 -----------
 
-The `strike()` method embeds a string in a `<strike>` element: “`<strike>str</strike>`”.
+The `strike()` method embeds a string in a `<strike>` element: "`<strike>str</strike>`”.
 
 Examples
 --------

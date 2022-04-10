@@ -1,7 +1,7 @@
-SyntaxError: invalid regular expression flag “x”
+SyntaxError: invalid regular expression flag "x”
 ================================================
 
-The JavaScript exception “invalid regular expression flag” occurs when the flags, defined after the second slash in regular expression literal, are not one of `g`, `i`, `m`, `s`, `u`, or `y`.
+The JavaScript exception "invalid regular expression flag” occurs when the flags, defined after the second slash in regular expression literal, are not one of `g`, `i`, `m`, `s`, `u`, or `y`.
 
 Message
 -------
@@ -28,7 +28,7 @@ or
 
     var re = new RegExp('pattern', 'flags');
 
-<table><caption> Regular expression flags </caption><thead><tr class="header"><th>Flag</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>g</code></td><td>Global search.</td></tr><tr class="even"><td>i</td><td>Case-insensitive search.</td></tr><tr class="odd"><td>m</td><td>Multi-line search.</td></tr><tr class="even"><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr class="odd"><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr class="even"><td>y</td><td>Perform a “sticky” search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky"><code>sticky</code></a></td></tr></tbody></table>
+<table><caption> Regular expression flags </caption><thead><tr class="header"><th>Flag</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>g</code></td><td>Global search.</td></tr><tr class="even"><td>i</td><td>Case-insensitive search.</td></tr><tr class="odd"><td>m</td><td>Multi-line search.</td></tr><tr class="even"><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr class="odd"><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr class="even"><td>y</td><td>Perform a "sticky” search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky"><code>sticky</code></a></td></tr></tbody></table>
 
 Examples
 --------

@@ -10,7 +10,7 @@ GUI mode $ emacs Terminal mode $ emacs -nw
 Basic usage
 ===========
 
-Indent Select text then press TAB Cut C-w Copy M-w Paste (“yank”) C-y Begin selection C-SPACE Search/Find C-s Replace M-% (M-SHIFT-5) Save C-x C-s Save as C-x C-w Load/Open C-x C-f Undo C-x u Highlight all text C-x h Directory listing C-x d Cancel a command C-g Font size bigger C-x C-+ Font size smaller C-x C–
+Indent Select text then press TAB Cut C-w Copy M-w Paste ("yank”) C-y Begin selection C-SPACE Search/Find C-s Replace M-% (M-SHIFT-5) Save C-x C-s Save as C-x C-w Load/Open C-x C-f Undo C-x u Highlight all text C-x h Directory listing C-x d Cancel a command C-g Font size bigger C-x C-+ Font size smaller C-x C–
 
 Buffers
 =======

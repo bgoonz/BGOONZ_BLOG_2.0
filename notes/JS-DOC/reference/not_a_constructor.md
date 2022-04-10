@@ -1,7 +1,7 @@
-TypeError: “x” is not a constructor
+TypeError: "x” is not a constructor
 ===================================
 
-The JavaScript exception “is not a constructor” occurs when there was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor.
+The JavaScript exception "is not a constructor” occurs when there was an attempt to use an object or a variable as a constructor, but that object or variable is not a constructor.
 
 Message
 -------

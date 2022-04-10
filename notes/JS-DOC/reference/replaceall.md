@@ -14,21 +14,21 @@ Syntax
     replaceAll(substr, newSubstr)
     replaceAll(substr, replacerFunction)
 
-**Note:** When using a \`regexp\` you have to set the global (“g”) flag; otherwise, it will throw a `TypeError`: “replaceAll must be called with a global RegExp”.
+**Note:** When using a \`regexp\` you have to set the global ("g”) flag; otherwise, it will throw a `TypeError`: "replaceAll must be called with a global RegExp”.
 
 ### Parameters
 
 `regexp` (pattern)  
-A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global (“g”) flag will throw a `TypeError`: “replaceAll must be called with a global RegExp”.
+A [`RegExp`](../regexp) object or literal with the global flag. The matches are replaced with `newSubstr` or the value returned by the specified `replacerFunction`. A RegExp without the global ("g”) flag will throw a `TypeError`: "replaceAll must be called with a global RegExp”.
 
 `substr`  
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is *not* interpreted as a regular expression.
 
 `newSubstr` (replacement)  
-The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the “[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
 
 `replacerFunction` (replacement)  
-A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the “[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
 
 ### Return value
 

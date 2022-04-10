@@ -17,7 +17,7 @@ Examples
 
 ### Adding a calendar in the Locale string
 
-Calendar eras fall under the category of locale key “extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the [`Intl.Locale`](locale) constructor. To add the calendar type, first add the `-u` extension to the string. Next, add the `-ca` extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.
+Calendar eras fall under the category of locale key "extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the `-u` extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the [`Intl.Locale`](locale) constructor. To add the calendar type, first add the `-u` extension to the string. Next, add the `-ca` extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.
 
     let frBuddhist = new Intl.Locale("fr-FR-u-ca-buddhist");
     console.log(frBuddhist.calendar); // Prints "buddhist"

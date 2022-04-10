@@ -83,4 +83,4 @@ Create stripped LV (RAID0)
 
 lvcreate –name root –size 8G –stripes 2 –stripesize 4 vg0
 
-\#Exclusive Activation of a Volume Group in a Cluster \#Link –&gt; https://access.redhat.com/documentation/en-US/Red\_Hat\_Enterprise\_Linux/7/html/High\_Availability\_Add-On\_Administration/s1-exclusiveactive-HAAA.html 1&gt; vgs –noheadings -o vg\_name 2&gt; volume\_list = \[ “rhel\_root”, “rhel\_home” \] 3&gt; dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r) 4&gt; Reboot the node 5&gt; uname -r to verify the correct initrd image
+\#Exclusive Activation of a Volume Group in a Cluster \#Link –&gt; https://access.redhat.com/documentation/en-US/Red\_Hat\_Enterprise\_Linux/7/html/High\_Availability\_Add-On\_Administration/s1-exclusiveactive-HAAA.html 1&gt; vgs –noheadings -o vg\_name 2&gt; volume\_list = \[ "rhel\_root”, "rhel\_home” \] 3&gt; dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r) 4&gt; Reboot the node 5&gt; uname -r to verify the correct initrd image

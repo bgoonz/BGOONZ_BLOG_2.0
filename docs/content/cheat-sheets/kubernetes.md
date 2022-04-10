@@ -89,7 +89,7 @@ Viewing, Finding resources
 
     kubectl scale --replicas=3 rs/foo
 
--   Scale a resource specified in “foo.yaml” to 3
+-   Scale a resource specified in "foo.yaml” to 3
 
 <!-- -->
 

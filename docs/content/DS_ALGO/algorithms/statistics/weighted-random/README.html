@@ -80,7 +80,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <figure>
 <img src="images/cover.png" alt="Weighted Random" /><figcaption>Weighted Random</figcaption>
 </figure>
-<h2 id="what-is-weighted-random">What is “Weighted Random”</h2>
+<h2 id="what-is-weighted-random">What is "Weighted Random”</h2>
 <p>Let’s say you have a list of <strong>items</strong>. Item could be anything. For example, we may have a list of fruits and vegetables that you like to eat: <code>[ '🍌', '🍎', '🥕' ]</code>.</p>
 <p>The list of <strong>weights</strong> represent the weight (or probability, or importance) of each item. Weights are numbers. For example, the weights like <code>[3, 7, 1]</code> would say that:</p>
 <ul>
@@ -103,7 +103,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-8" title="8"><span class="kw">const</span> nextSnackToEat <span class="op">=</span> <span class="at">weightedRandom</span>(items<span class="op">,</span> weights)<span class="op">;</span> <span class="co">// Could be &#39;🍎&#39;</span></a></code></pre></div>
 <h2 id="applications-of-weighted-random">Applications of Weighted Random</h2>
 <ul>
-<li>In <a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithm</a> the weighted random is used during the “Selection” phase, when we need to select the fittest/strongest individuums based on their fitness score for mating and for producing the next stronger generation. You may find an <strong>example</strong> in the <a href="https://trekhleb.dev/blog/2021/self-parking-car-evolution/">Self-Parking Car in 500 Lines of Code</a> article.</li>
+<li>In <a href="https://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithm</a> the weighted random is used during the "Selection” phase, when we need to select the fittest/strongest individuums based on their fitness score for mating and for producing the next stronger generation. You may find an <strong>example</strong> in the <a href="https://trekhleb.dev/blog/2021/self-parking-car-evolution/">Self-Parking Car in 500 Lines of Code</a> article.</li>
 <li>In <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Networks (RNN)</a> when trying to decide what letter to choose next (to form the sentence) based on the next letter probability. You may find an <strong>example</strong> in the <a href="https://nbviewer.org/github/trekhleb/machine-learning-experiments/blob/master/experiments/recipe_generation_rnn/recipe_generation_rnn.ipynb">Recipe Generation using Recurrent Neural Network (RNN)</a> Jupyter notebook.</li>
 <li>In <a href="https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/">Nginx Load Balancing</a> to send HTTP requests more often to the servers with the higher weights.</li>
 <li>And more…</li>
@@ -129,7 +129,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Generate the random number <code>randomNumber</code> from <code>0</code> to the highest cumulative weight value. In our case the random number will be in a range of <code>[0..11]</code>. Let’s say that we have <code>randomNumber = 8</code>.</li>
 <li>Go through the <code>cumulativeWeights</code> list from left to right and pick the first element which is higher or equal to the <code>randomNumber</code>. The index of such element we will use to pick the item from the <code>items</code> array.</li>
 </ol>
-<p>The idea behind this approach is that the higher weights will “occupy” more numeric space. Therefore, there is a higher chance that the random number will fall into the “higher weight numeric bucket”.</p>
+<p>The idea behind this approach is that the higher weights will "occupy” more numeric space. Therefore, there is a higher chance that the random number will fall into the "higher weight numeric bucket”.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> weights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="kw">const</span> cumulativeWeights <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">11</span>]<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-3" title="3"></a>

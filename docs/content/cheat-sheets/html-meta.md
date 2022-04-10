@@ -7,21 +7,21 @@
     <meta property="og:title" content="···" />
     <meta name="twitter:title" content="···" />
 
-{: data-line=“2”}
+{: data-line="2”}
 
     <!-- url -->
     <link rel="canonical" href="http://···" />
     <meta property="og:url" content="http://···" />
     <meta name="twitter:url" content="http://···" />
 
-{: data-line=“2”}
+{: data-line="2”}
 
     <!-- description -->
     <meta name="description" content="···" />
     <meta property="og:description" content="···" />
     <meta name="twitter:description" content="···" />
 
-{: data-line=“2”}
+{: data-line="2”}
 
     <!-- image -->
     <meta property="og:image" content="http://···" />

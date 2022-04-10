@@ -11,7 +11,7 @@ tags: \[Featured\] weight: -1 keywords:
 -   shallow()
 -   mount()
 -   wrap.setProps()
--   “wrap.find().simulate(‘click’)”
+-   "wrap.find().simulate(‘click’)”
 -   "wrap.contains(
 
     )"

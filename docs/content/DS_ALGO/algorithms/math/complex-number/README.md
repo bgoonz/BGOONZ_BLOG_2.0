@@ -34,7 +34,7 @@ The *absolute value* (or modulus or magnitude) of a complex number `z = x + yi` 
 
 ![Radius](https://wikimedia.org/api/rest_v1/media/math/render/svg/b59629c801aa0ddcdf17ee489e028fb9f8d4ea75)
 
-The argument of `z` (in many applications referred to as the “phase”) is the angle of the radius `OP` with the positive real axis, and is written as `arg(z)`. As with the modulus, the argument can be found from the rectangular form `x+yi`:
+The argument of `z` (in many applications referred to as the "phase”) is the angle of the radius `OP` with the positive real axis, and is written as `arg(z)`. As with the modulus, the argument can be found from the rectangular form `x+yi`:
 
 ![Phase](https://wikimedia.org/api/rest_v1/media/math/render/svg/7cbbdd9bb1dd5df86dd2b820b20f82995023e566)
 
@@ -77,7 +77,7 @@ To subtract two complex numbers we subtract each part separately:
 
 To multiply complex numbers each part of the first complex number gets multiplied by each part of the second complex number:
 
-Just use “FOIL”, which stands for “**F**irsts, **O**uters, **I**nners, **L**asts” ( see [Binomial Multiplication](ttps://www.mathsisfun.com/algebra/polynomials-multiplying.html) for more details):
+Just use "FOIL”, which stands for "**F**irsts, **O**uters, **I**nners, **L**asts” ( see [Binomial Multiplication](ttps://www.mathsisfun.com/algebra/polynomials-multiplying.html) for more details):
 
 ![Complex Multiplication](https://www.mathsisfun.com/algebra/images/foil-complex.svg)
 

@@ -79,7 +79,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>title: Why you should use Object.is() in equality comparison tip-number: 68 tip-username: TarekAlQaddy tip-username-profile: https://github.com/TarekAlQaddy tip-tldr: A good solution for the looseness of equality comparisons in javascript</p>
 <p>categories: - en - javascript</p>
 <hr />
-<p>We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting “converting one of the 2 operands to the other’s type then compare”.</p>
+<p>We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting "converting one of the 2 operands to the other’s type then compare”.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="dv">0</span> <span class="op">==</span> <span class="st">&#39; &#39;</span><span class="op">;</span> <span class="co">//true</span></a>
 <a class="sourceLine" id="cb1-2" title="2">(<span class="kw">null</span> <span class="op">==</span> <span class="kw">undefined</span>[<span class="dv">1</span>]) <span class="op">==</span> <span class="co">//true</span></a>
 <a class="sourceLine" id="cb1-3" title="3">    <span class="kw">true</span><span class="op">;</span> <span class="co">//true</span></a></code></pre></div>
@@ -90,7 +90,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-2" title="2"><span class="va">Object</span>.<span class="at">is</span>(<span class="kw">null</span><span class="op">,</span> <span class="kw">undefined</span>)<span class="op">;</span> <span class="co">//false</span></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="va">Object</span>.<span class="at">is</span>([<span class="dv">1</span>]<span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span> <span class="co">//false</span></a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="va">Object</span>.<span class="at">is</span>(<span class="kw">NaN</span><span class="op">,</span> <span class="kw">NaN</span>)<span class="op">;</span> <span class="co">//true</span></a></code></pre></div>
-<p>Mozilla team doesn’t think that Object.is is “stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.</p>
+<p>Mozilla team doesn’t think that Object.is is "stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.</p>
 <p>Now this table illustrates..</p>
 <figure>
 <img src="http://i.imgur.com/pCyqkLc.png" alt="differences of operators in equality comparisons javascript" /><figcaption>differences of operators in equality comparisons javascript</figcaption>

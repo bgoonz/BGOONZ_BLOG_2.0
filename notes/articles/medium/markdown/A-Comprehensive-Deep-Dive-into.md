@@ -499,7 +499,7 @@ Default Prop Values
 -   <span id="0940">Install React Router with:</span>
 -   <span id="742a">npm install — save react-router-dom@⁵.1.2</span>
 -   <span id="f07f">Import `Browser Router` from package.</span>
--   <span id="9e4e">import { BrowserRouter } from “react-router-dom”;</span>
+-   <span id="9e4e">import { BrowserRouter } from "react-router-dom”;</span>
 -   <span id="cb01">`BrowserRouter` is the primary component of the router that wraps your route hierarchy.</span>
 -   <span id="adfa">Wrap it around components.</span>
 -   <span id="0276">Creates a `React Context` that passes routing information down to all its descendant components.</span>
@@ -541,9 +541,9 @@ Default Prop Values
 -   <span id="594b">Causes extra work for React.</span>
 -   <span id="5320">Preferred for inline rendering of simple functional components.</span>
 -   <span id="0d3e">Difference between `component` and `render` is that component returns new JSX that be re-mounted, but render returns the JSX that will be mounted only once.</span>
--   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path=“/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path=“/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
+-   <span id="4a08">// This inline rendering will work, but is unnecessarily slow. &lt;Route path="/hello” component={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt; // This is the preferred way for inline rendering. &lt;Route path="/hello” render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</span>
 -   <span id="a2d3">Also useful if you need to pass in specific props to a component.</span>
--   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: “Andrew” }, 2: { name: “Raymond” }, }; &lt;Route path=“/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
+-   <span id="e09f">// \`users\` to be passed as a prop: const users = { 1: { name: "Andrew” }, 2: { name: "Raymond” }, }; &lt;Route path="/users” render={() =&gt; &lt;Users users={users} /&gt;} /&gt;;</span>
 
 Route path params
 

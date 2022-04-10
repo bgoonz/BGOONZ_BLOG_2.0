@@ -261,7 +261,7 @@ You should probably skip this one… seriously it’s just for internal use!
 
 **Scheduling: setTimeout and setInterval**  
 
-*We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.*javascript.plainenglish.io<a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*We may decide to execute a function not right now, but at a later time. That’s called "scheduling a call”.*javascript.plainenglish.io<a href="https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **LocalStorage VS SessionStorage**  
 
@@ -273,7 +273,7 @@ You should probably skip this one… seriously it’s just for internal use!
 
 **How To Implement Native(ES6) Data Structures Using Arrays & Objects**  
 
-*Smart data structures and dumb code works better than the other way around -“Eric S. Raymond”*<a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Smart data structures and dumb code works better than the other way around -"Eric S. Raymond”*<a href="https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **Objects in Javascript**  
 

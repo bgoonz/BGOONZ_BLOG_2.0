@@ -27,8 +27,8 @@ Workflows and actions
 -   A **job** is a virtual machine that runs a series of **steps**. **Jobs** are parallelized by default, but **steps** are sequential by default.
 -   **To [get started](https://docs.github.com/en/actions/getting-started-with-github-actions):**
     -   Navigate to one of your repos
-    -   Click the “Actions” tab.
-    -   Select “New workflow”
+    -   Click the "Actions” tab.
+    -   Select "New workflow”
     -   Choose one of the starter workflows. These templates come from [actions/starter-workflows](https://github.com/actions/starter-workflows).
 -   Workflows can be [triggered](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) by many different events from the GitHub API. The `workflow_dispatch` trigger allows workflows to be triggered manually, with optional input values that can be referenced in the workflow.
 -   GitHub provides a [context and expression syntax](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions) for programmatic control of workflows. For example:
@@ -208,9 +208,9 @@ Pro tips
     -   To only allow one concurrent workflow per commit: `concurrency: ci-${{ github.ref }}`
     -   To only allow one concurrent workflow per [environment](https://docs.github.com/en/actions/reference/environments), at the job level: `concurrency: ${{ environment.name }}`
 -   Concurrency can be specified at the workflow level, or at the job level.
-    -   It’s most useful to specify concurrency at the job level, because outputs from earlier jobs in the workflow can be used (like `concurrency: ${{ needs.setup-job.outputs.ecs-deployment-group-name }}`). Unfortunately, job-level concurrency ([`jobs.<job_id>.concurrency`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idconcurrency)) triggers runs out of order (earlier jobs run after later jobs), which is not very useful. The docs explain, “Note: When concurrency is specified at the job level, order is not guaranteed for jobs or runs that queue within 5 minutes of each other.”
+    -   It’s most useful to specify concurrency at the job level, because outputs from earlier jobs in the workflow can be used (like `concurrency: ${{ needs.setup-job.outputs.ecs-deployment-group-name }}`). Unfortunately, job-level concurrency ([`jobs.<job_id>.concurrency`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idconcurrency)) triggers runs out of order (earlier jobs run after later jobs), which is not very useful. The docs explain, "Note: When concurrency is specified at the job level, order is not guaranteed for jobs or runs that queue within 5 minutes of each other.”
     -   Concurrency can also be specified at the workflow level, using the name of the workflow (`concurrency: ${{ github.workflow }}`). This avoids triggering runs out of order, but could also result in canceled workflow runs. Only one run can be pending at a time, and each new run will cancel the previous pending run.
--   A common use case for limiting concurrency is in deployments. For example, when deploying Docker containers to AWS ECS Fargate with CodeDeploy, the [aws-actions/amazon-ecs-deploy-task-definition](https://github.com/marketplace/actions/amazon-ecs-deploy-task-definition-action-for-github-actions) step may error with [`DeploymentLimitExceededException`](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeployment.html). The error message will look something like, “The Deployment Group already has an active Deployment.” Furthermore, if GitHub Actions workflows are canceled, the ECS Fargate CodeDeploy deployments are not necessarily also canceled. If another GitHub Actions run proceeds, the `DeploymentLimitExceededException` may still be seen.
+-   A common use case for limiting concurrency is in deployments. For example, when deploying Docker containers to AWS ECS Fargate with CodeDeploy, the [aws-actions/amazon-ecs-deploy-task-definition](https://github.com/marketplace/actions/amazon-ecs-deploy-task-definition-action-for-github-actions) step may error with [`DeploymentLimitExceededException`](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeployment.html). The error message will look something like, "The Deployment Group already has an active Deployment.” Furthermore, if GitHub Actions workflows are canceled, the ECS Fargate CodeDeploy deployments are not necessarily also canceled. If another GitHub Actions run proceeds, the `DeploymentLimitExceededException` may still be seen.
     -   One solution is to add the `force-new-deployment: true` setting to the [aws-actions/amazon-ecs-deploy-task-definition](https://github.com/marketplace/actions/amazon-ecs-deploy-task-definition-action-for-github-actions) step, to ensure that a new deployment is triggered.
     -   It is possible to simply re-run any workflows that failed because of this error.
     -   It could also be helpful to limit concurrency to a single deployment to avoid errors.
@@ -657,6 +657,6 @@ GitHub Gist notes
 -   To add images to a Markdown file in a Gist:
     -   Commit the image file (in the same directory, no sub-directories)
     -   Push the change to GitHub with `git push`
-    -   Click on the “raw” button next to the image
+    -   Click on the "raw” button next to the image
     -   Copy the URL
     -   Add the URL to an image tag in the Markdown file.

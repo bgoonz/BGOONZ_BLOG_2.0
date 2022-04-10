@@ -69,7 +69,7 @@ But that’s not all! Advanced properties allows us to create **getters** and **
     foobar.foo; // 15
     foobar.foo = 20; // _foo = 20
 
-Aside for the obvious advantage of encapsulation and advanced accessors, you will notice that we didn’t “call” the getter, instead we just “get” the property without parentheses! This is awesome! For instance, let’s imagine that we have an object with long nested properties, like so:
+Aside for the obvious advantage of encapsulation and advanced accessors, you will notice that we didn’t "call” the getter, instead we just "get” the property without parentheses! This is awesome! For instance, let’s imagine that we have an object with long nested properties, like so:
 
     var obj = { a: { b: { c: [{ d: 10 }, { d: 20 }] } } };
 

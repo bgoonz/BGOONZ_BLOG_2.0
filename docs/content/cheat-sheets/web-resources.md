@@ -854,7 +854,7 @@ Ultimate Resource List
 
 ##### ▪️ Operating Systems
 
--   \[✅\] [**Slackware**](http://www.slackware.com/) - the most “Unix-like” Linux distribution.
+-   \[✅\] [**Slackware**](http://www.slackware.com/) - the most "Unix-like” Linux distribution.
 
 -   \[✅\] [**OpenBSD**](https://www.openbsd.org/) - multi-platform 4.4BSD-based UNIX-like operating system.
 
@@ -1126,7 +1126,7 @@ Ultimate Resource List
 
 -   \[✅\] [**OWASP ASVS 4.0**](https://github.com/OWASP/ASVS/tree/master/4.0) - is a list of application security requirements or tests.
 
--   \[✅\] [**OWASP Testing Guide v4**](https://www.owasp.org/index.php/OWASP_Testing_Project) - includes a “best practice” penetration testing framework.
+-   \[✅\] [**OWASP Testing Guide v4**](https://www.owasp.org/index.php/OWASP_Testing_Project) - includes a "best practice” penetration testing framework.
 
 -   \[✅\] [**OWASP Dev Guide**](https://github.com/OWASP/DevGuide) - this is the development version of the OWASP Developer Guide.
 
@@ -1222,11 +1222,11 @@ Ultimate Resource List
 
 -   \[✅\] [**simple-computer**](https://djhworld.github.io/post/2019/05/21/i-dont-know-how-cpus-work-so-i-simulated-one-in-code/) - great resource to understand how computers work under the hood.
 
--   \[✅\] [**The story of “Have I been pwned?”**](https://www.troyhunt.com/working-with-154-million-records-on/) - working with 154 million records on Azure Table Storage.
+-   \[✅\] [**The story of "Have I been pwned?”**](https://www.troyhunt.com/working-with-154-million-records-on/) - working with 154 million records on Azure Table Storage.
 
 -   \[✅\] [**TOP500 Supercomputers**](https://www.top500.org/) - shows the 500 most powerful commercially available computer systems known to us.
 
--   \[✅\] [**How to build a 8 GPU password cracker**](https://www.shellntel.com/blog/2017/2/8/how-to-build-a-8-gpu-password-cracker) - any “black magic” or hours of frustration like desktop components do.
+-   \[✅\] [**How to build a 8 GPU password cracker**](https://www.shellntel.com/blog/2017/2/8/how-to-build-a-8-gpu-password-cracker) - any "black magic” or hours of frustration like desktop components do.
 
 -   \[✅\] [**CERN Data Centre**](https://home.cern/science/computing) - 3D visualizations of the CERN computing environments (and more).
 
@@ -1332,7 +1332,7 @@ Ultimate Resource List
 
 -   \[✅\] [**wildcard-certificates**](https://gist.github.com/joepie91/7e5cad8c0726fd6a5e90360a754fc568) - why you probably shouldn’t use a wildcard certificate.
 
--   \[✅\] [**Don’t use VPN services**](https://gist.github.com/joepie91/5a9909939e6ce7d09e29) - which is what every third-party “VPN provider” does.
+-   \[✅\] [**Don’t use VPN services**](https://gist.github.com/joepie91/5a9909939e6ce7d09e29) - which is what every third-party "VPN provider” does.
 
 -   \[✅\] [**awesome-yara**](https://github.com/InQuest/awesome-yara) - a curated list of awesome YARA rules, tools, and people.
 
@@ -1386,9 +1386,9 @@ Ultimate Resource List
 
 -   \[✅\] [**Brendan Gregg’s Blog**](http://www.brendangregg.com/) - is an industry expert in computing performance and cloud computing.
 
--   \[✅\] [**Gynvael “GynDream” Coldwind**](https://gynvael.coldwind.pl/) - is a IT security engineer at Google.
+-   \[✅\] [**Gynvael "GynDream” Coldwind**](https://gynvael.coldwind.pl/) - is a IT security engineer at Google.
 
--   \[✅\] [**Michał “lcamtuf” Zalewski**](http://lcamtuf.coredump.cx/) - white hat hacker, computer security expert.
+-   \[✅\] [**Michał "lcamtuf” Zalewski**](http://lcamtuf.coredump.cx/) - white hat hacker, computer security expert.
 
 -   \[✅\] [**Mattias Geniar**](https://ma.ttias.be/) - developer, sysadmin, blogger, podcaster and public speaker.
 
@@ -1398,7 +1398,7 @@ Ultimate Resource List
 
 -   \[✅\] [**Brian Krebs**](https://krebsonsecurity.com/) - The Washington Post and now an Independent investigative journalist.
 
--   \[✅\] [**Bruce Schneier**](https://www.schneier.com/) - is an internationally renowned security technologist, called a “security guru”.
+-   \[✅\] [**Bruce Schneier**](https://www.schneier.com/) - is an internationally renowned security technologist, called a "security guru”.
 
 -   \[✅\] [**Chrissy Morgan**](https://chrissymorgan.co.uk/) - advocate of practical learning, Chrissy also takes part in bug bounty programs.
 
@@ -1506,7 +1506,7 @@ Ultimate Resource List
 
 -   \[✅\] [**<span class="citation" data-cites="dakami">@dakami</span>**](https://twitter.com/dakami) - is one of just seven people with the authority to restore the DNS root keys.
 
--   \[✅\] [**<span class="citation" data-cites="samykamkar">@samykamkar</span>**](https://twitter.com/samykamkar) - is a famous “grey hat” hacker, security researcher, creator of the MySpace “Samy” worm.
+-   \[✅\] [**<span class="citation" data-cites="samykamkar">@samykamkar</span>**](https://twitter.com/samykamkar) - is a famous "grey hat” hacker, security researcher, creator of the MySpace "Samy” worm.
 
 -   \[✅\] [**<span class="citation" data-cites="securityweekly">@securityweekly</span>**](https://twitter.com/securityweekly) - founder & CTO of Security Weekly podcast network.
 
@@ -1844,7 +1844,7 @@ Ultimate Resource List
 
 -   \[✅\] [**vulhub**](https://github.com/vulhub/vulhub) - pre-built Vulnerable Environments based on docker-compose.
 
--   \[✅\] [**CloudGoat 2**](https://rhinosecuritylabs.com/aws/introducing-cloudgoat-2/) - the new & improved “Vulnerable by Design” AWS deployment tool.
+-   \[✅\] [**CloudGoat 2**](https://rhinosecuritylabs.com/aws/introducing-cloudgoat-2/) - the new & improved "Vulnerable by Design” AWS deployment tool.
 
 -   \[✅\] [**secDevLabs**](https://github.com/globocom/secDevLabs) - is a laboratory for learning secure web development in a practical manner.
 
@@ -2038,6 +2038,6 @@ Ultimate Resource List
 
 -   \[✅\] [**x86 Bare Metal Examples**](https://github.com/cirosantilli/x86-bare-metal-examples) - dozens of minimal operating systems to learn x86 system programming.
 
--   \[✅\] [**simple-computer**](https://github.com/djhworld/simple-computer) - the scott CPU from “But How Do It Know?” by J. Clark Scott.
+-   \[✅\] [**simple-computer**](https://github.com/djhworld/simple-computer) - the scott CPU from "But How Do It Know?” by J. Clark Scott.
 
 -   \[✅\] [**littleosbook**](https://littleosbook.github.io/) - the little book about OS development.

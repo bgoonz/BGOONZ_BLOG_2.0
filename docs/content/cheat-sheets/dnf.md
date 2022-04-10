@@ -22,7 +22,7 @@ To find which package provides an executable:
 
 dnf provides
 
-The following are available after installing “dnf-plugins-core”
+The following are available after installing "dnf-plugins-core”
 ===============================================================
 
 To download a package:

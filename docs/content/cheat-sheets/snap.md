@@ -18,7 +18,7 @@ To install the :
 
 sudo snap install
 
-To install the from the “beta” channel:
+To install the from the "beta” channel:
 =======================================
 
 sudo snap install –channel=beta
@@ -43,7 +43,7 @@ To (manually) update :
 
 sudo snap refresh
 
-To update to the “beta” channel:
+To update to the "beta” channel:
 ================================
 
 sudo snap refresh –channel=beta
@@ -117,7 +117,7 @@ developing.
 
 snap install –dangerous foo.snap
 
-To install snap `foo` in “dev mode”:
+To install snap `foo` in "dev mode”:
 ====================================
 
 NB: this is dangerous, and bypasses the snap sandboxing mechanisms
@@ -125,7 +125,7 @@ NB: this is dangerous, and bypasses the snap sandboxing mechanisms
 
 snap install –devmode foo
 
-To install snap `foo` in “classic mode”:
+To install snap `foo` in "classic mode”:
 ========================================
 
 NB: this is likewise dangerous

@@ -156,14 +156,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb12-2" title="2">  b := *getPointer()</a>
 <a class="sourceLine" id="cb12-3" title="3">  fmt.Println(<span class="st">&quot;Value is&quot;</span>, b)</a>
 <a class="sourceLine" id="cb12-4" title="4">}</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">func</span> getPointer () (myPointer *<span class="dt">int</span>) {</a>
 <a class="sourceLine" id="cb13-2" title="2">  a := <span class="dv">234</span></a>
 <a class="sourceLine" id="cb13-3" title="3">  <span class="kw">return</span> &amp;a</a>
 <a class="sourceLine" id="cb13-4" title="4">}</a></code></pre></div>
 <div class="sourceCode" id="cb14"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb14-1" title="1">a := <span class="bu">new</span>(<span class="dt">int</span>)</a>
 <a class="sourceLine" id="cb14-2" title="2">*a = <span class="dv">234</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>Pointers point to a memory location of a variable. Go is fully garbage-collected.</p>
 <p>See: <a href="https://tour.golang.org/moretypes/1">Pointers</a></p>
 <h3 id="type-conversions">Type conversions</h3>
@@ -180,13 +180,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb16-5" title="5">} <span class="kw">else</span> {</a>
 <a class="sourceLine" id="cb16-6" title="6">  work()</a>
 <a class="sourceLine" id="cb16-7" title="7">}</a></code></pre></div>
-<p>{: data-line=“1,3,5”}</p>
+<p>{: data-line="1,3,5”}</p>
 <p>See: <a href="https://tour.golang.org/flowcontrol/5">If</a></p>
 <h3 id="statements-in-if">Statements in if</h3>
 <div class="sourceCode" id="cb17"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">if</span> _, err := doThing(); err != <span class="ot">nil</span> {</a>
 <a class="sourceLine" id="cb17-2" title="2">  fmt.Println(<span class="st">&quot;Uh oh&quot;</span>)</a>
 <a class="sourceLine" id="cb17-3" title="3">}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>A condition in an <code>if</code> statement can be preceded with a statement before a <code>;</code>. Variables declared by the statement are only in scope until the end of the <code>if</code>.</p>
 <p>See: <a href="https://tour.golang.org/flowcontrol/6">If with a short statement</a></p>
 <h3 id="switch">Switch</h3>
@@ -219,27 +219,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb21-3" title="3"><span class="kw">for</span> n != x {</a>
 <a class="sourceLine" id="cb21-4" title="4">  n := guess()</a>
 <a class="sourceLine" id="cb21-5" title="5">}</a></code></pre></div>
-<p>See: <a href="https://tour.golang.org/flowcontrol/3">Go’s “while”</a></p>
+<p>See: <a href="https://tour.golang.org/flowcontrol/3">Go’s "while”</a></p>
 <h2 id="functions">Functions</h2>
 <h3 id="lambdas">Lambdas</h3>
 <div class="sourceCode" id="cb22"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb22-1" title="1">myfunc := <span class="kw">func</span>() <span class="dt">bool</span> {</a>
 <a class="sourceLine" id="cb22-2" title="2">  <span class="kw">return</span> x &gt; <span class="dv">10000</span></a>
 <a class="sourceLine" id="cb22-3" title="3">}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>Functions are first class objects.</p>
 <h3 id="multiple-return-types">Multiple return types</h3>
 <div class="sourceCode" id="cb23"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb23-1" title="1">a, b := getMessage()</a></code></pre></div>
 <div class="sourceCode" id="cb24"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">func</span> getMessage() (a <span class="dt">string</span>, b <span class="dt">string</span>) {</a>
 <a class="sourceLine" id="cb24-2" title="2">  <span class="kw">return</span> <span class="st">&quot;Hello&quot;</span>, <span class="st">&quot;World&quot;</span></a>
 <a class="sourceLine" id="cb24-3" title="3">}</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h3 id="named-return-values">Named return values</h3>
 <div class="sourceCode" id="cb25"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">func</span> split(sum <span class="dt">int</span>) (x, y <span class="dt">int</span>) {</a>
 <a class="sourceLine" id="cb25-2" title="2">  x = sum * <span class="dv">4</span> / <span class="dv">9</span></a>
 <a class="sourceLine" id="cb25-3" title="3">  y = sum - x</a>
 <a class="sourceLine" id="cb25-4" title="4">  <span class="kw">return</span></a>
 <a class="sourceLine" id="cb25-5" title="5">}</a></code></pre></div>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <p>By defining the return value names in the signature, a <code>return</code> (no args) will return variables with those names.</p>
 <p>See: <a href="https://tour.golang.org/basics/7">Named return values</a></p>
 <h2 id="packages">Packages</h2>
@@ -254,7 +254,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>See: <a href="https://tour.golang.org/basics/1">Importing</a></p>
 <h3 id="aliases">Aliases</h3>
 <div class="sourceCode" id="cb28"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">import</span> r <span class="st">&quot;math/rand&quot;</span></a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb29-1" title="1">r.Intn()</a></code></pre></div>
 <h3 id="exporting-names">Exporting names</h3>
 <div class="sourceCode" id="cb30"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">func</span> Hello () {</a>
@@ -281,7 +281,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb32-12" title="12">  <span class="co">// the order isn&#39;t guaranteed!)</span></a>
 <a class="sourceLine" id="cb32-13" title="13">  fmt.Println(&lt;-ch, &lt;-ch, &lt;-ch)</a>
 <a class="sourceLine" id="cb32-14" title="14">}</a></code></pre></div>
-<p>{: data-line=“3,6,7,8,13”}</p>
+<p>{: data-line="3,6,7,8,13”}</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">func</span> push(name <span class="dt">string</span>, ch <span class="kw">chan</span> <span class="dt">string</span>) {</a>
 <a class="sourceLine" id="cb33-2" title="2">  msg := <span class="st">&quot;Hey, &quot;</span> + name</a>
 <a class="sourceLine" id="cb33-3" title="3">  ch &lt;- msg</a>
@@ -295,7 +295,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb34-4" title="4">ch &lt;- <span class="dv">3</span></a>
 <a class="sourceLine" id="cb34-5" title="5"><span class="co">// fatal error:</span></a>
 <a class="sourceLine" id="cb34-6" title="6"><span class="co">// all goroutines are asleep - deadlock!</span></a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>Buffered channels limit the amount of messages it can keep.</p>
 <p>See: <a href="https://tour.golang.org/concurrency/3">Buffered channels</a></p>
 <h3 id="closing-channels">Closing channels</h3>
@@ -304,12 +304,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb35-2" title="2">ch &lt;- <span class="dv">2</span></a>
 <a class="sourceLine" id="cb35-3" title="3">ch &lt;- <span class="dv">3</span></a>
 <a class="sourceLine" id="cb35-4" title="4"><span class="bu">close</span>(ch)</a></code></pre></div>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <h4 id="iterates-across-a-channel-until-its-closed">Iterates across a channel until its closed</h4>
 <div class="sourceCode" id="cb36"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">for</span> i := <span class="kw">range</span> ch {</a>
 <a class="sourceLine" id="cb36-2" title="2">  ···</a>
 <a class="sourceLine" id="cb36-3" title="3">}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <h4 id="closed-if-ok-false">Closed if <code>ok == false</code></h4>
 <div class="sourceCode" id="cb37"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb37-1" title="1">v, ok := &lt;- ch</a></code></pre></div>
 <p>See: <a href="https://tour.golang.org/concurrency/4">Range and close</a></p>
@@ -328,13 +328,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb38-12" title="12">  wg.Wait()</a>
 <a class="sourceLine" id="cb38-13" title="13"></a>
 <a class="sourceLine" id="cb38-14" title="14">}</a></code></pre></div>
-<p>{: data-line=“1,4,8,12”}</p>
+<p>{: data-line="1,4,8,12”}</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">func</span> doOperation(item <span class="dt">string</span>) {</a>
 <a class="sourceLine" id="cb39-2" title="2">  <span class="kw">defer</span> wg.Done()</a>
 <a class="sourceLine" id="cb39-3" title="3">  <span class="co">// do operation on item</span></a>
 <a class="sourceLine" id="cb39-4" title="4">  <span class="co">// ...</span></a>
 <a class="sourceLine" id="cb39-5" title="5">}</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>A WaitGroup waits for a collection of goroutines to finish. The main goroutine calls Add to set the number of goroutines to wait for. The goroutine calls <code>wg.Done()</code> when it finishes. See: <a href="https://golang.org/pkg/sync/#WaitGroup">WaitGroup</a></p>
 <h2 id="error-control">Error control</h2>
 <h3 id="defer">Defer</h3>
@@ -342,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb40-2" title="2">  <span class="kw">defer</span> fmt.Println(<span class="st">&quot;Done&quot;</span>)</a>
 <a class="sourceLine" id="cb40-3" title="3">  fmt.Println(<span class="st">&quot;Working...&quot;</span>)</a>
 <a class="sourceLine" id="cb40-4" title="4">}</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>Defers running a function until the surrounding function returns. The arguments are evaluated immediately, but the function call is not ran until later.</p>
 <p>See: <a href="https://blog.golang.org/defer-panic-and-recover">Defer, panic and recover</a></p>
 <h3 id="deferring-functions">Deferring functions</h3>
@@ -352,7 +352,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb41-4" title="4">  }()</a>
 <a class="sourceLine" id="cb41-5" title="5">  fmt.Println(<span class="st">&quot;Working...&quot;</span>)</a>
 <a class="sourceLine" id="cb41-6" title="6">}</a></code></pre></div>
-<p>{: data-line=“2,3,4”}</p>
+<p>{: data-line="2,3,4”}</p>
 <p>Lambdas are better suited for defer blocks.</p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">func</span> main() {</a>
 <a class="sourceLine" id="cb42-2" title="2">  <span class="kw">var</span> d = <span class="dt">int64</span>(<span class="dv">0</span>)</a>
@@ -362,14 +362,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb42-6" title="6">  fmt.Print(<span class="st">&quot;Done &quot;</span>)</a>
 <a class="sourceLine" id="cb42-7" title="7">  d = time.Now().Unix()</a>
 <a class="sourceLine" id="cb42-8" title="8">}</a></code></pre></div>
-<p>{: data-line=“3,4,5”} The defer func uses current value of d, unless we use a pointer to get final value at end of main.</p>
+<p>{: data-line="3,4,5”} The defer func uses current value of d, unless we use a pointer to get final value at end of main.</p>
 <h2 id="structs">Structs</h2>
 <h3 id="defining">Defining</h3>
 <div class="sourceCode" id="cb43"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">type</span> Vertex <span class="kw">struct</span> {</a>
 <a class="sourceLine" id="cb43-2" title="2">  X <span class="dt">int</span></a>
 <a class="sourceLine" id="cb43-3" title="3">  Y <span class="dt">int</span></a>
 <a class="sourceLine" id="cb43-4" title="4">}</a></code></pre></div>
-<p>{: data-line=“1,2,3,4”}</p>
+<p>{: data-line="1,2,3,4”}</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">func</span> main() {</a>
 <a class="sourceLine" id="cb44-2" title="2">  v := Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a>
 <a class="sourceLine" id="cb44-3" title="3">  v.X = <span class="dv">4</span></a>
@@ -395,7 +395,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb50"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">func</span> (v Vertex) Abs() <span class="dt">float64</span> {</a>
 <a class="sourceLine" id="cb50-2" title="2">  <span class="kw">return</span> math.Sqrt(v.X * v.X + v.Y * v.Y)</a>
 <a class="sourceLine" id="cb50-3" title="3">}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb51-1" title="1">v := Vertex{<span class="dv">1</span>, <span class="dv">2</span>}</a>
 <a class="sourceLine" id="cb51-2" title="2">v.Abs()</a></code></pre></div>
 <p>There are no classes, but you can define functions with <em>receivers</em>.</p>
@@ -405,7 +405,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb52-2" title="2">  v.X = v.X * f</a>
 <a class="sourceLine" id="cb52-3" title="3">  v.Y = v.Y * f</a>
 <a class="sourceLine" id="cb52-4" title="4">}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode go"><code class="sourceCode go"><a class="sourceLine" id="cb53-1" title="1">v := Vertex{<span class="dv">6</span>, <span class="dv">12</span>}</a>
 <a class="sourceLine" id="cb53-2" title="2">v.Scale(<span class="dv">0</span><span class="fl">.5</span>)</a>
 <a class="sourceLine" id="cb53-3" title="3"><span class="co">// `v` is updated</span></a></code></pre></div>

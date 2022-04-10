@@ -1,7 +1,7 @@
 SyntaxError: missing formal parameter
 =====================================
 
-The JavaScript exception “missing formal parameter” occurs when your function declaration is missing valid parameters.
+The JavaScript exception "missing formal parameter” occurs when your function declaration is missing valid parameters.
 
 Message
 -------
@@ -16,9 +16,9 @@ Error type
 What went wrong?
 ----------------
 
-“Formal parameter” is a fancy way of saying “function parameter”. Your function declaration is missing valid parameters. In the declaration of a function, the parameters must be [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), not any value like numbers, strings, or objects. Declaring functions and calling functions are two separate steps. Declarations require identifier as parameters, and only when calling (invoking) the function, you provide the values the function should use.
+"Formal parameter” is a fancy way of saying "function parameter”. Your function declaration is missing valid parameters. In the declaration of a function, the parameters must be [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier), not any value like numbers, strings, or objects. Declaring functions and calling functions are two separate steps. Declarations require identifier as parameters, and only when calling (invoking) the function, you provide the values the function should use.
 
-In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), identifiers can contain only alphanumeric characters (or “$” or “\_”), and may not start with a digit. An identifier differs from a **string** in that a string is data, while an identifier is part of the code.
+In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), identifiers can contain only alphanumeric characters (or "$” or "\_”), and may not start with a digit. An identifier differs from a **string** in that a string is data, while an identifier is part of the code.
 
 Examples
 --------
@@ -69,6 +69,6 @@ See also
 
 -   Other errors regarding formal parameters:
     -   [SyntaxError: Malformed formal parameter](malformed_formal_parameter)
-    -   [SyntaxError: redeclaration of formal parameter “x”](redeclared_parameter)
+    -   [SyntaxError: redeclaration of formal parameter "x”](redeclared_parameter)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Missing_formal_parameter</a>

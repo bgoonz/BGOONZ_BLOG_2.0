@@ -5,7 +5,7 @@ subtitle
 To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):
 ===================================================================
 
-find . -iname “\*.jpg”
+find . -iname "\*.jpg”
 
 To find directories:
 ====================
@@ -45,7 +45,7 @@ find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 To find files bigger than 2 Megabyte and list them:
 ===================================================
 
-find . -type f -size +200000000c -exec ls -lh {} ; | awk ‘{ print $9 “:” $5 }’
+find . -type f -size +200000000c -exec ls -lh {} ; | awk ‘{ print $9 ":” $5 }’
 
 To find files modified more than 7 days ago and list file information:
 ======================================================================

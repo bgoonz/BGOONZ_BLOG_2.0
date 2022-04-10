@@ -43,7 +43,7 @@ Constructor
 -----------
 
 [`Symbol()`](symbol/symbol)  
-Creates a new `Symbol` object. It is incomplete as a constructor because it does not support the syntax “`new Symbol()`”.
+Creates a new `Symbol` object. It is incomplete as a constructor because it does not support the syntax "`new Symbol()`”.
 
 Static properties
 -----------------
@@ -136,7 +136,7 @@ Some things to note when working with type conversion of Symbols.
     (e.g. `+sym` or `sym | 0`).
 -   When using loose equality, `Object(sym) == sym` returns `true`.
 -   `Symbol("foo") + "bar"`throws a [`TypeError`](typeerror) (can’t convert Symbol to string). This prevents you from silently creating a new string property name from a Symbol, for example.
--   The [“safer” `String(sym)` conversion](string#string_conversion) works like a call to [`Symbol.prototype.toString()`](symbol/tostring) with Symbols, but note that `new String(sym)` will throw.
+-   The ["safer” `String(sym)` conversion](string#string_conversion) works like a call to [`Symbol.prototype.toString()`](symbol/tostring) with Symbols, but note that `new String(sym)` will throw.
 
 ### Symbols and for…in iteration
 
@@ -798,6 +798,6 @@ See also
 -   [Glossary: Symbol data type](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)
 -   [`typeof`](../operators/typeof)
 -   [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
--   [“ES6 In Depth: Symbols” on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+-   ["ES6 In Depth: Symbols” on hacks.mozilla.org](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a>

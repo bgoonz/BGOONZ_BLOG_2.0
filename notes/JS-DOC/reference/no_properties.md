@@ -1,7 +1,7 @@
-TypeError: “x” has no properties
+TypeError: "x” has no properties
 ================================
 
-The JavaScript exception “null (or undefined) has no properties” occurs when you attempt to access properties of [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined). They don’t have any.
+The JavaScript exception "null (or undefined) has no properties” occurs when you attempt to access properties of [`null`](../global_objects/null) and [`undefined`](../global_objects/undefined). They don’t have any.
 
 Message
 -------

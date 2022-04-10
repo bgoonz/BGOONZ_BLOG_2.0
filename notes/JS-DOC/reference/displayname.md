@@ -14,7 +14,7 @@ Examples
 
 It is usually preferred by consoles and profilers over [`func.name`](name) to display the name of a function.
 
-By entering the following in a console, it should display as something like “`function My Function()`”:
+By entering the following in a console, it should display as something like "`function My Function()`”:
 
     var a = function() {};
     a.displayName = 'My Function';

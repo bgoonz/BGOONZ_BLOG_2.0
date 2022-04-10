@@ -10,7 +10,7 @@ The `fileName` property contains the path to the file that raised this error.
 Description
 -----------
 
-This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, “debugger eval code” is returned.
+This non-standard property contains the path to the file that raised this error. If called from a debugger context, the Firefox Developer Tools for example, "debugger eval code” is returned.
 
 Examples
 --------

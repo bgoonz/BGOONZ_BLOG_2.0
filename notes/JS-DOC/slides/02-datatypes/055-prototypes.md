@@ -1,11 +1,11 @@
-You may have heard that JavaScript is a *“[prototype-based language](https://en.wikipedia.org/wiki/Prototype-based_programming)”*, unlike other languages, such as Java, which are *“[class-based languages](https://en.wikipedia.org/wiki/Class-based_programming)”*.
+You may have heard that JavaScript is a *"[prototype-based language](https://en.wikipedia.org/wiki/Prototype-based_programming)”*, unlike other languages, such as Java, which are *"[class-based languages](https://en.wikipedia.org/wiki/Class-based_programming)”*.
 
 What exactly is a prototype?
 ----------------------------
 
-In short: A prototype is just another object. If an object `A` has this special connection to object `B`, then we say that “`B` is the prototype of `A`”.
+In short: A prototype is just another object. If an object `A` has this special connection to object `B`, then we say that "`B` is the prototype of `A`”.
 
-In addition to having “external” properties that can be accessed from code, objects also have *internal/private* properties/state. These cannot be accessed from code and their concrete implementation depends on the JavaScript engine.
+In addition to having "external” properties that can be accessed from code, objects also have *internal/private* properties/state. These cannot be accessed from code and their concrete implementation depends on the JavaScript engine.
 
 Every object has an *internal* property `[[Prototype]]` (internal properties are usually denoted with `[[...]]` around the name). This property points to another object.
 

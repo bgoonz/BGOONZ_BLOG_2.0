@@ -1,7 +1,7 @@
 RangeError: argument is not a valid code point
 ==============================================
 
-The JavaScript exception “Invalid code point” occurs when [`NaN`](../global_objects/nan) values, negative Integers (-1), non-Integers (5.4), or values larger than 0x10FFFF (1114111) are used with [`String.fromCodePoint()`](../global_objects/string/fromcodepoint).
+The JavaScript exception "Invalid code point” occurs when [`NaN`](../global_objects/nan) values, negative Integers (-1), non-Integers (5.4), or values larger than 0x10FFFF (1114111) are used with [`String.fromCodePoint()`](../global_objects/string/fromcodepoint).
 
 Message
 -------

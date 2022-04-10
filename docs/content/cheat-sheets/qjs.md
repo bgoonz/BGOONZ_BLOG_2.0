@@ -60,7 +60,7 @@
 
 Q.try -&gt; promise()
 
-.catch (e) -&gt; console.error “Oh well”, e
+.catch (e) -&gt; console.error "Oh well”, e
 
 ### Reference
 

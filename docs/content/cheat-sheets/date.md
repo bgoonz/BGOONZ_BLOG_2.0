@@ -10,7 +10,7 @@ tags: \[date, time\]
 To print the date in a format suitable for affixing to file names:
 ==================================================================
 
-date +“%Y%m%d\_%H%M%S”
+date +"%Y%m%d\_%H%M%S”
 
 To convert a Unix timestamp to Date (Linux)
 ===========================================

@@ -1,7 +1,7 @@
 TypeError: Reduce of empty array with no initial value
 ======================================================
 
-The JavaScript exception “reduce of empty array with no initial value” occurs when a reduce function is used.
+The JavaScript exception "reduce of empty array with no initial value” occurs when a reduce function is used.
 
 Message
 -------

@@ -19,9 +19,9 @@ Example
 
 For example, the Levenshtein distance between `kitten` and `sitting` is `3`, since the following three edits change one into the other, and there is no way to do it with fewer than three edits:
 
-1.  **k**itten → **s**itten (substitution of “s” for “k”)
-2.  sitt**e**n → sitt**i**n (substitution of “i” for “e”)
-3.  sittin → sittin**g** (insertion of “g” at the end).
+1.  **k**itten → **s**itten (substitution of "s” for "k”)
+2.  sitt**e**n → sitt**i**n (substitution of "i” for "e”)
+3.  sittin → sittin**g** (insertion of "g” at the end).
 
 Applications
 ------------

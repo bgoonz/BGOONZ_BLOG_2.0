@@ -4,7 +4,7 @@ subtitle
 
 ------------------------------------------------------------------------
 
-find . -name “*" -type f | xargs sed -i -e ‘/lucywyman/d’ find . -name "*” -type f | xargs sed -i -e ‘/- keyword/d’ find . -name “*" -type f | xargs sed -i -e ‘/- Puppe/d’ find . -name "*” -type f | xargs sed -i -e ‘/- keywor/d’ find . -name “*" -type f | xargs sed -i -e ‘/updated:/d’ find . -name "*” -type f | xargs sed -i -e ‘/updated:/d’
+find . -name "*" -type f | xargs sed -i -e ‘/lucywyman/d’ find . -name "*” -type f | xargs sed -i -e ‘/- keyword/d’ find . -name "*" -type f | xargs sed -i -e ‘/- Puppe/d’ find . -name "*” -type f | xargs sed -i -e ‘/- keywor/d’ find . -name "*" -type f | xargs sed -i -e ‘/updated:/d’ find . -name "*” -type f | xargs sed -i -e ‘/updated:/d’
 
 title: Bolt Quickstart category: Bolt
 

@@ -1377,7 +1377,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The <em>itertools</em> module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like lists or dictionaries).</p>
 <p>From the official <a href="https://docs.python.org/3/library/itertools.html">Python 3.x documentation</a>:</p>
 <blockquote>
-<p>The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.</p>
+<p>The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an "iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.</p>
 </blockquote>
 <p>The <em>itertools</em> module comes in the standard library and must be imported.</p>
 <p>The <a href="https://docs.python.org/3/library/operator.html">operator</a> module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.</p>
@@ -2074,7 +2074,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb259-8" title="8"><span class="co">&#39;Batwoman&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h4 id="matching-zero-or-more-with-the-star">Matching Zero or More with the Star</h4>
-<p>The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.</p>
+<p>The * (called the star or asterisk) means "match zero or more”—the group that precedes the star can occur any number of times in the text.</p>
 <div class="sourceCode" id="cb260"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb260-1" title="1"><span class="op">&gt;&gt;&gt;</span> bat_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;Bat(wo)*man&#39;</span>)</a>
 <a class="sourceLine" id="cb260-2" title="2"><span class="op">&gt;&gt;&gt;</span> mo1 <span class="op">=</span> bat_regex.search(<span class="st">&#39;The Adventures of Batman&#39;</span>)</a>
 <a class="sourceLine" id="cb260-3" title="3"><span class="op">&gt;&gt;&gt;</span> mo1.group()</a>
@@ -2089,7 +2089,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb260-12" title="12"><span class="co">&#39;Batwowowowoman&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h4 id="matching-one-or-more-with-the-plus">Matching One or More with the Plus</h4>
-<p>While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:</p>
+<p>While * means "match zero or more,” the + (or plus) means "match one or more”. The group preceding a plus must appear at least once. It is not optional:</p>
 <div class="sourceCode" id="cb261"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb261-1" title="1"><span class="op">&gt;&gt;&gt;</span> bat_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;Bat(wo)+man&#39;</span>)</a>
 <a class="sourceLine" id="cb261-2" title="2"><span class="op">&gt;&gt;&gt;</span> mo1 <span class="op">=</span> bat_regex.search(<span class="st">&#39;The Adventures of Batwoman&#39;</span>)</a>
 <a class="sourceLine" id="cb261-3" title="3"><span class="op">&gt;&gt;&gt;</span> mo1.group()</a>
@@ -2311,7 +2311,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb284-4" title="4">A<span class="op">****</span> told C<span class="op">****</span> that E<span class="op">****</span> knew B<span class="op">****</span> was a double agent.<span class="st">&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h4 id="managing-complex-regexes">Managing Complex Regexes</h4>
-<p>To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().</p>
+<p>To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, "verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().</p>
 <p>Now instead of a hard-to-read regular expression like this:</p>
 <div class="sourceCode" id="cb285"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb285-1" title="1">phone_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;((\d</span><span class="sc">{3}</span><span class="vs">|\(\d</span><span class="sc">{3}</span><span class="vs">\))?(\s|-|\.)?\d</span><span class="sc">{3}</span><span class="vs">(\s|-|\.)\d</span><span class="sc">{4}</span><span class="vs">(\s*(ext|x|ext.)\s*\d{2,5})?)&#39;</span>)</a></code></pre></div>
 <p>you can spread the regular expression over multiple lines with comments like this:</p>
@@ -2412,7 +2412,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>An absolute path, which always begins with the root folder</li>
 <li>A relative path, which is relative to the program’s current working directory</li>
 </ul>
-<p>There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”</p>
+<p>There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot”) for a folder name is shorthand for "this directory.” Two periods ("dot-dot”) means "the parent folder.”</p>
 <p><em>Return to the Top</em></p>
 <h4 id="handling-absolute-and-relative-paths">Handling Absolute and Relative Paths</h4>
 <p>To see if a path is an absolute path:</p>
@@ -2860,7 +2860,7 @@ Exception: This is the error message.</code></pre>
 <a class="sourceLine" id="cb341-10" title="10">  File <span class="st">&quot;&lt;pyshell#10&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb341-11" title="11">    <span class="cf">assert</span> pod_bay_door_status <span class="op">==</span> <span class="st">&#39;open&#39;</span>, <span class="st">&#39;The pod bay doors need to be &quot;open&quot;.&#39;</span></a>
 <a class="sourceLine" id="cb341-12" title="12"><span class="pp">AssertionError</span>: The pod bay doors need to be <span class="st">&quot;open&quot;</span>.</a></code></pre></div>
-<p>In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.</p>
+<p>In plain English, an assert statement says, "I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.</p>
 <p>Disabling Assertions</p>
 <p>Assertions can be disabled by passing the -O option when running Python.</p>
 <p><em>Return to the Top</em></p>
@@ -3020,8 +3020,8 @@ Exception: This is the error message.</code></pre>
 <h3 id="args-and-kwargs">args and kwargs</h3>
 <p>The names <code>args and kwargs</code> are arbitrary - the important thing are the <code>*</code> and <code>**</code> operators. They can mean:</p>
 <ol type="1">
-<li>In a function declaration, <code>*</code> means “pack all remaining positional arguments into a tuple named <code>&lt;name&gt;</code>”, while <code>**</code> is the same for keyword arguments (except it uses a dictionary, not a tuple).</li>
-<li>In a function call, <code>*</code> means “unpack tuple or list named <code>&lt;name&gt;</code> to positional arguments at this position”, while <code>**</code> is the same for keyword arguments.</li>
+<li>In a function declaration, <code>*</code> means "pack all remaining positional arguments into a tuple named <code>&lt;name&gt;</code>”, while <code>**</code> is the same for keyword arguments (except it uses a dictionary, not a tuple).</li>
+<li>In a function call, <code>*</code> means "unpack tuple or list named <code>&lt;name&gt;</code> to positional arguments at this position”, while <code>**</code> is the same for keyword arguments.</li>
 </ol>
 <p>For example you can make a function that you can use to call any other function, no matter what parameters it has:</p>
 <div class="sourceCode" id="cb354"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb354-1" title="1"><span class="kw">def</span> forward(f, <span class="op">*</span>args, <span class="op">**</span>kwargs):</a>
@@ -4588,7 +4588,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <p>The <em>itertools</em> module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like lists or dictionaries).</p>
 <p>From the official <a href="https://docs.python.org/3/library/itertools.html">Python 3.x documentation</a>:</p>
 <blockquote>
-<p>The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.</p>
+<p>The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an "iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.</p>
 </blockquote>
 <p>The <em>itertools</em> module comes in the standard library and must be imported.</p>
 <p>The <a href="https://docs.python.org/3/library/operator.html">operator</a> module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.</p>
@@ -5285,7 +5285,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <a class="sourceLine" id="cb648-8" title="8"><span class="co">&#39;Batwoman&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h3 id="matching-zero-or-more-with-the-star-1">Matching Zero or More with the Star</h3>
-<p>The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.</p>
+<p>The * (called the star or asterisk) means "match zero or more”—the group that precedes the star can occur any number of times in the text.</p>
 <div class="sourceCode" id="cb649"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb649-1" title="1"><span class="op">&gt;&gt;&gt;</span> bat_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;Bat(wo)*man&#39;</span>)</a>
 <a class="sourceLine" id="cb649-2" title="2"><span class="op">&gt;&gt;&gt;</span> mo1 <span class="op">=</span> bat_regex.search(<span class="st">&#39;The Adventures of Batman&#39;</span>)</a>
 <a class="sourceLine" id="cb649-3" title="3"><span class="op">&gt;&gt;&gt;</span> mo1.group()</a>
@@ -5300,7 +5300,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <a class="sourceLine" id="cb649-12" title="12"><span class="co">&#39;Batwowowowoman&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h3 id="matching-one-or-more-with-the-plus-1">Matching One or More with the Plus</h3>
-<p>While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:</p>
+<p>While * means "match zero or more,” the + (or plus) means "match one or more”. The group preceding a plus must appear at least once. It is not optional:</p>
 <div class="sourceCode" id="cb650"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb650-1" title="1"><span class="op">&gt;&gt;&gt;</span> bat_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;Bat(wo)+man&#39;</span>)</a>
 <a class="sourceLine" id="cb650-2" title="2"><span class="op">&gt;&gt;&gt;</span> mo1 <span class="op">=</span> bat_regex.search(<span class="st">&#39;The Adventures of Batwoman&#39;</span>)</a>
 <a class="sourceLine" id="cb650-3" title="3"><span class="op">&gt;&gt;&gt;</span> mo1.group()</a>
@@ -5522,7 +5522,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <a class="sourceLine" id="cb673-4" title="4">A<span class="op">****</span> told C<span class="op">****</span> that E<span class="op">****</span> knew B<span class="op">****</span> was a double agent.<span class="st">&#39;</span></a></code></pre></div>
 <p><em>Return to the Top</em></p>
 <h3 id="managing-complex-regexes-1">Managing Complex Regexes</h3>
-<p>To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().</p>
+<p>To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, "verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().</p>
 <p>Now instead of a hard-to-read regular expression like this:</p>
 <div class="sourceCode" id="cb674"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb674-1" title="1">phone_regex <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r&#39;((\d</span><span class="sc">{3}</span><span class="vs">|\(\d</span><span class="sc">{3}</span><span class="vs">\))?(\s|-|\.)?\d</span><span class="sc">{3}</span><span class="vs">(\s|-|\.)\d</span><span class="sc">{4}</span><span class="vs">(\s*(ext|x|ext.)\s*\d{2,5})?)&#39;</span>)</a></code></pre></div>
 <p>you can spread the regular expression over multiple lines with comments like this:</p>
@@ -5623,7 +5623,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <li>An absolute path, which always begins with the root folder</li>
 <li>A relative path, which is relative to the program’s current working directory</li>
 </ul>
-<p>There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”</p>
+<p>There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot”) for a folder name is shorthand for "this directory.” Two periods ("dot-dot”) means "the parent folder.”</p>
 <p><em>Return to the Top</em></p>
 <h3 id="handling-absolute-and-relative-paths-1">Handling Absolute and Relative Paths</h3>
 <p>To see if a path is an absolute path:</p>
@@ -6071,7 +6071,7 @@ Exception: This is the error message.</code></pre>
 <a class="sourceLine" id="cb730-10" title="10">  File <span class="st">&quot;&lt;pyshell#10&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb730-11" title="11">    <span class="cf">assert</span> pod_bay_door_status <span class="op">==</span> <span class="st">&#39;open&#39;</span>, <span class="st">&#39;The pod bay doors need to be &quot;open&quot;.&#39;</span></a>
 <a class="sourceLine" id="cb730-12" title="12"><span class="pp">AssertionError</span>: The pod bay doors need to be <span class="st">&quot;open&quot;</span>.</a></code></pre></div>
-<p>In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.</p>
+<p>In plain English, an assert statement says, "I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that’s causing the bug.</p>
 <p>Disabling Assertions</p>
 <p>Assertions can be disabled by passing the -O option when running Python.</p>
 <p><em>Return to the Top</em></p>
@@ -6231,8 +6231,8 @@ Exception: This is the error message.</code></pre>
 <h2 id="args-and-kwargs-1">args and kwargs</h2>
 <p>The names <code>args and kwargs</code> are arbitrary - the important thing are the <code>*</code> and <code>**</code> operators. They can mean:</p>
 <ol type="1">
-<li>In a function declaration, <code>*</code> means “pack all remaining positional arguments into a tuple named <code>&lt;name&gt;</code>”, while <code>**</code> is the same for keyword arguments (except it uses a dictionary, not a tuple).</li>
-<li>In a function call, <code>*</code> means “unpack tuple or list named <code>&lt;name&gt;</code> to positional arguments at this position”, while <code>**</code> is the same for keyword arguments.</li>
+<li>In a function declaration, <code>*</code> means "pack all remaining positional arguments into a tuple named <code>&lt;name&gt;</code>”, while <code>**</code> is the same for keyword arguments (except it uses a dictionary, not a tuple).</li>
+<li>In a function call, <code>*</code> means "unpack tuple or list named <code>&lt;name&gt;</code> to positional arguments at this position”, while <code>**</code> is the same for keyword arguments.</li>
 </ol>
 <p>For example you can make a function that you can use to call any other function, no matter what parameters it has:</p>
 <div class="sourceCode" id="cb743"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb743-1" title="1"><span class="kw">def</span> forward(f, <span class="op">*</span>args, <span class="op">**</span>kwargs):</a>

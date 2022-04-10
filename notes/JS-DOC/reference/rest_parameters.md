@@ -13,7 +13,7 @@ Syntax
 Description
 -----------
 
-A function definition’s last parameter can be prefixed with “`...`” (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a [“standard” JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
+A function definition’s last parameter can be prefixed with "`...`” (three U+002E FULL STOP characters), which will cause all remaining (user supplied) parameters to be placed within a ["standard” JavaScript array.](../global_objects/array). Only the last parameter in a function definition can be a rest parameter.
 
     function myFun(a,  b, ...manyMoreArgs) {
       console.log("a", a)

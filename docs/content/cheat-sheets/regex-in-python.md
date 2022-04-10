@@ -15,7 +15,7 @@ Whatever the reason may be, regular expressions are and will be one of the most 
 
 Regex is a whole new language in itself. A regex engine interprets patterns comprised of several characters equipped with specific meanings. Basic literals such as alphanumeric characters match themselves. But complex characters such as $, \*, +, {, etc. aid in higher-order matching.
 
-1.  **Asterisk (\*):** Matches the preceding character zero or more times. The literal meaning of the character would be “Element multiplied n times”. For example, if the regular expression is **abc\***, the strings matched will be ab, abc, abcc, abccc, abcccc, etc. The expression **\[bc\]\*** will match bc, bcbc, bcbc, etc.
+1.  **Asterisk (\*):** Matches the preceding character zero or more times. The literal meaning of the character would be "Element multiplied n times”. For example, if the regular expression is **abc\***, the strings matched will be ab, abc, abcc, abccc, abcccc, etc. The expression **\[bc\]\*** will match bc, bcbc, bcbc, etc.
 2.  **Plus (+):** Matches the preceding character one or more times. The working of the **+** character is similar to **\***, but the **+** character omits the pattern if the character doesn’t occur. For example, **abc+** will match abc, abcc, abccc, etc. but not ab.
 3.  **Question Mark (?):** Matches the preceding character zero or one time(s). For example, the pattern **abc?** will match ab and abc only.
 4.  **Pipe (|):** Used as a binary **OR** operator. Matches either of the characters preceding and succeeding the pipe. For example, **a|b** will match either a or b.

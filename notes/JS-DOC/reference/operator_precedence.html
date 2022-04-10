@@ -141,7 +141,7 @@ Evaluating the right side
 <p>Remember that precedence comes before associativity. So, mixing division and exponentiation, the exponentiation comes before the division. For example, <code>2 ** 3 / 3 ** 2</code> results in 0.8888888888888888 because it is the same as <code>(2 ** 3) / (3 ** 2)</code>.</p>
 <h3 id="note-on-grouping-and-short-circuiting">Note on grouping and short-circuiting</h3>
 <p>In the table below, <strong>Grouping</strong> is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols <code>( … )</code> is evaluated first, especially when it comes to short-circuiting.</p>
-<p>Short-circuiting is jargon for conditional evaluation. For example, in the expression <code>a &amp;&amp; (b + c)</code>, if <code>a</code> is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator (“OR”) is “short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction (“AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.</p>
+<p>Short-circuiting is jargon for conditional evaluation. For example, in the expression <code>a &amp;&amp; (b + c)</code>, if <code>a</code> is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a>, then the sub-expression <code>(b + c)</code> will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator ("OR”) is "short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction ("AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.</p>
 <pre><code>a || (b * c);  // evaluate `a` first, then produce `a` if `a` is &quot;truthy&quot;
 a &amp;&amp; (b &lt; c);  // evaluate `a` first, then produce `a` if `a` is &quot;falsy&quot;
 a ?? (b || c); // evaluate `a` first, then produce `a` if `a` is not `null` and not `undefined`
@@ -156,7 +156,7 @@ a?.b.c;        // evaluate `a` first, then produce `undefined` if `a` is `null` 
 //  is false. Adding parentheses makes things clear: (3 &gt; 2) &gt; 1.</code></pre>
 <h2 id="table">Table</h2>
 <p>The following table lists operators in order from highest precedence (21) to lowest precedence (1).</p>
-<p>Note that <a href="spread_syntax">spread syntax</a> is intentionally not included in the table — because, to quote an <a href="https://stackoverflow.com/a/48656377">an answer at Stack Overflow</a>, “<a href="https://stackoverflow.com/q/44934828/1048572">Spread syntax is not an operator</a> and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”</p>
+<p>Note that <a href="spread_syntax">spread syntax</a> is intentionally not included in the table — because, to quote an <a href="https://stackoverflow.com/a/48656377">an answer at Stack Overflow</a>, "<a href="https://stackoverflow.com/q/44934828/1048572">Spread syntax is not an operator</a> and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”</p>
 <p>Precedence</p>
 <p>Operator type</p>
 <p>Associativity</p>

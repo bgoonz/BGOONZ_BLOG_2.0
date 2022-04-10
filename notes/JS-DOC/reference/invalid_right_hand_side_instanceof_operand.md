@@ -1,7 +1,7 @@
 TypeError: invalid ‘instanceof’ operand ‘x’
 ===========================================
 
-The JavaScript exception “invalid ‘instanceof’ operand” occurs when the right hand side operands of the [`instanceof` operator](../operators/instanceof) isn’t used with a constructor object, i.e. an object which has a `prototype` property and is callable.
+The JavaScript exception "invalid ‘instanceof’ operand” occurs when the right hand side operands of the [`instanceof` operator](../operators/instanceof) isn’t used with a constructor object, i.e. an object which has a `prototype` property and is callable.
 
 Message
 -------

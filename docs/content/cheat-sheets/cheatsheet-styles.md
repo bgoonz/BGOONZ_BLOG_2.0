@@ -91,7 +91,7 @@ Each section can have the following children:
 
 {: .-prime}
 
-This is a section with `{: .-prime}`. Notice the fancy highlight! Great for “getting started” kind of snippets.
+This is a section with `{: .-prime}`. Notice the fancy highlight! Great for "getting started” kind of snippets.
 
 ### H3 section
 
@@ -141,7 +141,7 @@ Code blocks can have headings.
         console.log(`Started at ${port}`);
     });
 
-{: data-line=“3”}
+{: data-line="3”}
 
 Add `{: data-line="3"}` to add line highlights.
 
@@ -152,7 +152,7 @@ Add `{: data-line="3"}` to add line highlights.
         console.log(`Started at ${port}`);
     });
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 Add `{: data-line="2,3"}` to add multiple line highlights.
 

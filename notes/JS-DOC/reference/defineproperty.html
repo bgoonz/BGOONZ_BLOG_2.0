@@ -133,10 +133,10 @@ Object.defineProperty(o, &#39;conflict&#39;, {
 // only in data descriptors,
 // get appears only in accessor descriptors</code></pre>
 <h3 id="modifying-a-property">Modifying a property</h3>
-<p>When the property already exists, <code>Object.defineProperty()</code> attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its <code>configurable</code> attribute set to <code>false</code> the property is said to be “non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change <code>writable</code> attribute from <code>true</code> to <code>false</code>. It is not possible to switch between data and accessor property types when the property is non-configurable.</p>
+<p>When the property already exists, <code>Object.defineProperty()</code> attempts to modify the property according to the values in the descriptor and the object’s current configuration. If the old descriptor had its <code>configurable</code> attribute set to <code>false</code> the property is said to be "non-configurable”. It is not possible to change any attribute of a non-configurable accessor property. For data properties, it is possible to modify the value if the property is writable, and it is possible to change <code>writable</code> attribute from <code>true</code> to <code>false</code>. It is not possible to switch between data and accessor property types when the property is non-configurable.</p>
 <p>A <a href="../typeerror"><code>TypeError</code></a> is thrown when attempts are made to change non-configurable property attributes (except <code>value</code> and <code>writable</code>, if permitted) unless the current and new values are the same.</p>
 <h4 id="writable-attribute">Writable attribute</h4>
-<p>When the <code>writable</code> property attribute is set to <code>false</code>, the property is said to be “non-writable”. It cannot be reassigned.</p>
+<p>When the <code>writable</code> property attribute is set to <code>false</code>, the property is said to be "non-writable”. It cannot be reassigned.</p>
 <pre><code>var o = {}; // Creates a new object
 
 Object.defineProperty(o, &#39;a&#39;, {
@@ -407,7 +407,7 @@ Specification
 <li>Reconfiguring a property requires first deleting the property. If the property isn’t deleted, it stays as it was before the reconfiguration attempt.</li>
 </ul>
 <h3 id="chrome-37-and-below-specific-notes">Chrome 37 (and below) specific notes</h3>
-<p>Chrome 37 (and below) has a <a href="https://bugs.chromium.org/p/v8/issues/detail?id=3448">bug</a> where an attempt to define a “prototype” property, on a function, with <code>writable: false</code> doesn’t work as expected.</p>
+<p>Chrome 37 (and below) has a <a href="https://bugs.chromium.org/p/v8/issues/detail?id=3448">bug</a> where an attempt to define a "prototype” property, on a function, with <code>writable: false</code> doesn’t work as expected.</p>
 <h2 id="see-also">See also</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">Enumerability and ownership of properties</a></li>

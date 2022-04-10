@@ -1,1 +1,1 @@
-{% include common/strftime\_format.md title=“strftime” %}
+{% include common/strftime\_format.md title="strftime” %}

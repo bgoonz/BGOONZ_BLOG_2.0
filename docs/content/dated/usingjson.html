@@ -79,7 +79,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>/en/using-json-stringify/</li>
 </ul>
-<p>Let’s say there is an object with properties “prop1”, “prop2”, “prop3”. We can pass <strong>additional params</strong> to <strong>JSON.stringify</strong> to selectively write properties of the object to string like:</p>
+<p>Let’s say there is an object with properties "prop1”, "prop2”, "prop3”. We can pass <strong>additional params</strong> to <strong>JSON.stringify</strong> to selectively write properties of the object to string like:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> obj <span class="op">=</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb1-2" title="2">    <span class="dt">prop1</span><span class="op">:</span> <span class="st">&#39;value1&#39;</span><span class="op">,</span></a>
 <a class="sourceLine" id="cb1-3" title="3">    <span class="dt">prop2</span><span class="op">:</span> <span class="st">&#39;value2&#39;</span><span class="op">,</span></a>
@@ -92,7 +92,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-10" title="10"></a>
 <a class="sourceLine" id="cb1-11" title="11"><span class="co">// str</span></a>
 <a class="sourceLine" id="cb1-12" title="12"><span class="co">// {&quot;prop1&quot;:&quot;value1&quot;,&quot;prop2&quot;:&quot;value2&quot;}</span></a></code></pre></div>
-<p>The <strong>“str”</strong> will contain only info on selected properties only.</p>
+<p>The <strong>"str”</strong> will contain only info on selected properties only.</p>
 <p>Instead of array we can pass a function also.</p>
 <hr />
 <div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">selectedProperties</span>(key<span class="op">,</span> val) <span class="op">{</span></a>

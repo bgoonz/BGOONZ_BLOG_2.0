@@ -23,7 +23,7 @@ This method shifts `1` over by `bitPosition` bits, creating a value that looks l
 
 #### Update Bit
 
-This method is a combination of “Clear Bit” and “Set Bit” methods.
+This method is a combination of "Clear Bit” and "Set Bit” methods.
 
 > See [updateBit.js](updateBit.js) for further details.
 
@@ -81,7 +81,7 @@ This method shifts original number by one bit to the right. Thus all binary numb
 
 #### Switch Sign
 
-This method make positive numbers to be negative and backwards. To do so it uses “Twos Complement” approach which does it by inverting all of the bits of the number and adding 1 to it.
+This method make positive numbers to be negative and backwards. To do so it uses "Twos Complement” approach which does it by inverting all of the bits of the number and adding 1 to it.
 
     1101 -3
     1110 -2
@@ -109,7 +109,7 @@ The advantage of this approach is that in each recursive step one of the operand
 
 #### Multiply Two Unsigned Numbers
 
-This method multiplies two integer numbers using bitwise operators. This method is based on that “Every number can be denoted as the sum of powers of 2”.
+This method multiplies two integer numbers using bitwise operators. This method is based on that "Every number can be denoted as the sum of powers of 2”.
 
 The main idea of bitwise multiplication is that every number may be split to the sum of powers of two:
 
@@ -172,7 +172,7 @@ This method checks if a number provided is power of two. It uses the following p
 
 This method adds up two integer numbers using bitwise operators.
 
-It implements [full adder](https://en.wikipedia.org/wiki/Adder_(electronics)) electronics circuit logic to sum two 32-bit integers in two’s complement format. It’s using the boolean logic to cover all possible cases of adding two input bits: with and without a “carry bit” from adding the previous less-significant stage.
+It implements [full adder](https://en.wikipedia.org/wiki/Adder_(electronics)) electronics circuit logic to sum two 32-bit integers in two’s complement format. It’s using the boolean logic to cover all possible cases of adding two input bits: with and without a "carry bit” from adding the previous less-significant stage.
 
 Legend:
 

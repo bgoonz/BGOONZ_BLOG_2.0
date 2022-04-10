@@ -28,7 +28,7 @@ Description
 
 Just like [`const`](const#description) the `let` does *not* create properties of the [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object when declared globally (in the top-most scope).
 
-An explanation of why the name “**let**” was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
+An explanation of why the name "**let**” was chosen can be found [here](https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri).
 
 **Note:** Many issues with `let` variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).
 
@@ -150,7 +150,7 @@ However, it’s important to point out that a block nested inside a case clause 
 
 **Note:** This differs from [`var`](var#var_hoisting) variables, which will return a value of `undefined` if they are accessed before they are declared.
 
-The variable is said to be in a “temporal dead zone” (TDZ) from the start of the block until the initialization has completed.
+The variable is said to be in a "temporal dead zone” (TDZ) from the start of the block until the initialization has completed.
 
     { // TDZ starts at beginning of scope
       console.log(bar); // undefined
@@ -159,7 +159,7 @@ The variable is said to be in a “temporal dead zone” (TDZ) from the start of
       let foo = 2; // End of TDZ (for foo)
     }
 
-The term “temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
+The term "temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the `let` variable appears before the variable is declared, the function is *called* outside the TDZ.
 
     {
         // TDZ starts at beginning of scope
@@ -265,7 +265,7 @@ In Edge 12 and 13, `let` within a `for` loop initializer does not create a separ
 
 44
 
-\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
+\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, "Firefox 54 adds support of `let` in workers.”\]
 
 11
 
@@ -293,7 +293,7 @@ Support outside of [strict mode](https://developer.mozilla.org/docs/Web/JavaScri
 
 44
 
-\[“Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, “Firefox 54 adds support of `let` in workers.”\]
+\["Prior to Firefox 44, `let` is only available to code blocks in HTML wrapped in a `<script type=\"application/javascript;version=1.7\">` block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a `TypeError` is thrown on redeclaration instead of a `SyntaxError`.”, "Firefox 54 adds support of `let` in workers.”\]
 
 18
 

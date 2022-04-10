@@ -25,7 +25,7 @@ You can use a short-circuit just like this:
 
     condition && dosomething();
 
-#### Set variable default values using “||”
+#### Set variable default values using "||”
 
 If you have to set a default value to variables, you can simple do this:
 

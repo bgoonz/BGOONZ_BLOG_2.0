@@ -19,7 +19,7 @@ Such an implementation would have two main inconveniences:
 1.  The first one is an *O(n)* set and search (n being the number of keys in the map) since both operations must iterate through the list of keys to find a matching value.
 2.  The second inconvenience is a memory leak because the arrays ensure that references to each key and each value are maintained indefinitely. These references prevent the keys from being garbage collected, even if there are no other references to the object. This would also prevent the corresponding values from being garbage collected.
 
-By contrast, native `WeakMap`s hold “weak” references to key objects. As such native `WeakMap`s do not prevent garbage collection, which eventually removes references to the key object. “Weak” references also avoid preventing garbage collection of values in the map. `WeakMap`s can be particularly useful constructs when mapping keys to information about the key that is valuable *only if* the key has not been garbage collected.
+By contrast, native `WeakMap`s hold "weak” references to key objects. As such native `WeakMap`s do not prevent garbage collection, which eventually removes references to the key object. "Weak” references also avoid preventing garbage collection of values in the map. `WeakMap`s can be particularly useful constructs when mapping keys to information about the key that is valuable *only if* the key has not been garbage collected.
 
 `WeakMap` There is no method to obtain a list of the keys. If there was, the list would depend on the state of garbage collection, introducing non-determinism. If you want to have a list of keys, you should use a [`Map`](map).
 

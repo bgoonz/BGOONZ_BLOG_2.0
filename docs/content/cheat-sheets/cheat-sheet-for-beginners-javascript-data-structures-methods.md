@@ -17,7 +17,7 @@ There are two ways you learn about available methods in programming languages:
 1.  You find yourself with a problem that needs a solution that prompts you to search for it.
 2.  You read about it; be it from the documentation or some article.
 
-This article serves as my notes from reading “JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93”. While this cheat sheet is inspired by the book, it is also created with reference from [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) to keep updated.
+This article serves as my notes from reading "JavaScript: The Good Parts by Douglas Crockford, 2008. Page 78-93”. While this cheat sheet is inspired by the book, it is also created with reference from [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) to keep updated.
 
 ------------------------------------------------------------------------
 
@@ -108,9 +108,9 @@ What’s an Array? The way I visualize it is a table. Below is an example of how
 2. Objects
 ----------
 
-Think of objects as a logical grouping of a bunch of properties. Properties could be some variable that it’s storing or some methods that it’s using. I also visualize an object as a table. The main difference is that object’s “index” need not be numbers and is not necessarily sequenced.
+Think of objects as a logical grouping of a bunch of properties. Properties could be some variable that it’s storing or some methods that it’s using. I also visualize an object as a table. The main difference is that object’s "index” need not be numbers and is not necessarily sequenced.
 
-<table style="width:99%;"><colgroup><col style="width: 6%" /><col style="width: 93%" /></colgroup><thead><tr class="header"><th>properties</th><th>value</th></tr></thead><tbody><tr class="odd"><td>name</td><td>“I’m an object”</td></tr><tr class="even"><td>data</td><td>[“You can add an array as a property”, “Recall that array is a sequenced list of items”, “but just because it’s sequenced, doesn’t means you can only use it for that purpose”]</td></tr><tr class="odd"><td>function_name</td><td><code>function(parameters){//do something}</code></td></tr></tbody></table>
+<table style="width:99%;"><colgroup><col style="width: 6%" /><col style="width: 93%" /></colgroup><thead><tr class="header"><th>properties</th><th>value</th></tr></thead><tbody><tr class="odd"><td>name</td><td>"I’m an object”</td></tr><tr class="even"><td>data</td><td>["You can add an array as a property”, "Recall that array is a sequenced list of items”, "but just because it’s sequenced, doesn’t means you can only use it for that purpose”]</td></tr><tr class="odd"><td>function_name</td><td><code>function(parameters){//do something}</code></td></tr></tbody></table>
 
     // 16. Creating an Object
 

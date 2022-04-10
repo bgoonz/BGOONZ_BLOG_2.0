@@ -247,7 +247,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 **GitHub - feross/awesome-mad-science: Delightful npm packages that make you say "wow, didn’t know…**  
 
-*Delightful npm packages that make you say “wow, didn’t know that was possible!” PRs welcome!*github.com<a href="https://github.com/feross/awesome-mad-science" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Delightful npm packages that make you say "wow, didn’t know that was possible!” PRs welcome!*github.com<a href="https://github.com/feross/awesome-mad-science" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub - maxogden/maintenance-modules: a list of modules that are useful for maintaining or…**  
 
@@ -659,7 +659,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 **GitHub - pazguille/offline-first: Everything you need to know to create offline-first web apps.**  
 
-*Useful resources for creating Offline-First web apps “Web” and “online” are two closely associated terms, downright…*github.com<a href="https://github.com/pazguille/offline-first" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*Useful resources for creating Offline-First web apps "Web” and "online” are two closely associated terms, downright…*github.com<a href="https://github.com/pazguille/offline-first" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub - agarrharr/awesome-static-website-services: 📄 🛠 A curated list of awesome static websites…**  
 
@@ -693,9 +693,9 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 *A curated list of the best charting and dataviz resources that developers may find useful, including the best…*github.com<a href="https://github.com/zingchart/awesome-charting" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-**GitHub - candelibas/awesome-ionic: An “awesome” list of Ionic resources**  
+**GitHub - candelibas/awesome-ionic: An "awesome” list of Ionic resources**  
 
-*An “awesome” list of Ionic resources . Contribute to candelibas/awesome-ionic development by creating an account on…*github.com<a href="https://github.com/candelibas/awesome-ionic" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*An "awesome” list of Ionic resources . Contribute to candelibas/awesome-ionic development by creating an account on…*github.com<a href="https://github.com/candelibas/awesome-ionic" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub - ChromeDevTools/awesome-chrome-devtools: Awesome tooling and resources in the Chrome…**  
 
@@ -879,7 +879,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 **GitHub - gramantin/awesome-rails: A curated list of awesome things related to Ruby on Rails**  
 
-*A curated list of awesome things related to Ruby on Rails Use the “Table on Contents” menu on the top-left corner to…*github.com<a href="https://github.com/gramantin/awesome-rails" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+*A curated list of awesome things related to Ruby on Rails Use the "Table on Contents” menu on the top-left corner to…*github.com<a href="https://github.com/gramantin/awesome-rails" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 **GitHub - hothero/awesome-rails-gem: A collection of awesome Ruby Gems for Rails development.**  
 
@@ -1491,7 +1491,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 **GitHub - ebu/awesome-broadcasting: A curated list of amazingly awesome open source resources…**  
 
-*A curated list of amazingly awesome open source resources for broadcasters. OnAirScreen - Cross-platform “OnAir Lamp”…*github.com<a href="https://github.com/ebu/awesome-broadcasting" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*A curated list of amazingly awesome open source resources for broadcasters. OnAirScreen - Cross-platform "OnAir Lamp”…*github.com<a href="https://github.com/ebu/awesome-broadcasting" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub - Siilwyn/awesome-pixel-art: Curated list of everything awesome around pixel art.**  
 
@@ -1679,7 +1679,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 **GitHub - gitfrage/guitarspecs: Overview of the electric guitar’s parts specs**  
 
-*This is a “top-down checklist” for the assembly of a solid-body electric guitar. It can help you to build a guitar with…*github.com<a href="https://github.com/gitfrage/guitarspecs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*This is a "top-down checklist” for the assembly of a solid-body electric guitar. It can help you to build a guitar with…*github.com<a href="https://github.com/gitfrage/guitarspecs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub - beardicus/awesome-plotters: A curated list of code and resources for computer-controlled…**  
 
@@ -1765,7 +1765,7 @@ https://github.com/igorbarinov/awesome-bitcoin
 
 *octocat: A curated awesome list of lists of interview questions. Feel free to contribute! :mortar\_board: - GitHub …*github.com<a href="https://github.com/DopplerHQ/awesome-interview-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-**GitHub - joho/awesome-code-review: An “Awesome” list of code review resources - articles, papers…**  
+**GitHub - joho/awesome-code-review: An "Awesome” list of code review resources - articles, papers…**  
 
 *A curated list of tools, articles, books, and any other resource related to code review Code review is the systematic…*github.com<a href="https://github.com/joho/awesome-code-review" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
@@ -2075,7 +2075,7 @@ GeoJSON utilities that will make your life easier.github.com<a href="https://git
 
 **GitHub — antontarasenko/awesome-economics: A curated collection of links for economists**  
 
-*A curated collection of links for economists. Part of the “Awesome X” series. The list is periodically updated with new…*github.com<a href="https://github.com/antontarasenko/awesome-economics" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+*A curated collection of links for economists. Part of the "Awesome X” series. The list is periodically updated with new…*github.com<a href="https://github.com/antontarasenko/awesome-economics" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 **GitHub — sublimino/awesome-funny-markov: A curated list of delightfully amusing and facetious…**  
 
@@ -2333,7 +2333,7 @@ GeoJSON utilities that will make your life easier.github.com<a href="https://git
 
 *Disclaimer: I know people really dislike and, sometimes, get angry about ads on sites and apps. As they are widely used…*github.com<a href="https://github.com/cenoura/awesome-ads" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-**GitHub — philsturgeon/awesome-earth: “What can I do about the climate crisis?” Here are 326 things…**  
+**GitHub — philsturgeon/awesome-earth: "What can I do about the climate crisis?” Here are 326 things…**  
 
 *The world is simultaneously underwater and on fire, and people want to know what they can do about it. Let’s share…*github.com<a href="https://github.com/philsturgeon/awesome-earth" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 

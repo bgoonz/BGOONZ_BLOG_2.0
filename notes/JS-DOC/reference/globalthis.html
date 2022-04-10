@@ -29,7 +29,7 @@ The <code>this</code> keyword could be used inside functions running in non-stri
 <h3 id="html-and-the-windowproxy">HTML and the WindowProxy</h3>
 <p>In many engines <code>globalThis</code> will be a reference to the actual global object, but in web browsers, due to iframe and cross-window security considerations, it references a <a href="proxy"><code>Proxy</code></a> around the actual global object (which you can’t directly access). This distinction is rarely relevant in common usage, but important to be aware of.</p>
 <h3 id="naming">Naming</h3>
-<p>Several other popular name choices such as <code>self</code> and <code>global</code> were removed from consideration because of their potential to break compatibility with existing code. See the <a href="https://github.com/tc39/proposal-global/blob/master/NAMING.md">language proposal’s “naming” document</a> for more details.</p>
+<p>Several other popular name choices such as <code>self</code> and <code>global</code> were removed from consideration because of their potential to break compatibility with existing code. See the <a href="https://github.com/tc39/proposal-global/blob/master/NAMING.md">language proposal’s "naming” document</a> for more details.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="search-for-the-global-across-environments">Search for the global across environments</h3>
 <p>Prior to <code>globalThis</code>, the only reliable cross-platform way to get the global object for an environment was <code>Function('return this')()</code>. However, this causes <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">CSP</a> violations in some settings, so <a href="https://github.com/paulmillr/es6-shim">es6-shim</a> uses a check like this, for example:</p>

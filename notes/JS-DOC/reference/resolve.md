@@ -1,7 +1,7 @@
 Promise.resolve()
 =================
 
-The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will “follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
+The `Promise.resolve()` method returns a [`Promise`](../promise) object that is resolved with a given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a [`"then" method`](then)), the returned promise will "follow” that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. This function flattens nested layers of promise-like objects (e.g. a promise that resolves to a promise that resolves to something) into a single layer.
 
 Syntax
 ------

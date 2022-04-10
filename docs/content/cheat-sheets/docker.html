@@ -23,7 +23,7 @@
 <p>docker -d</p>
 <h1 id="to-start-a-container-with-an-interactive-shell">To start a container with an interactive shell:</h1>
 <p>docker run -ti <image-name> /bin/bash</p>
-<h1 id="to-shell-into-a-running-container-docker-1.3">To “shell” into a running container (docker-1.3+):</h1>
+<h1 id="to-shell-into-a-running-container-docker-1.3">To "shell” into a running container (docker-1.3+):</h1>
 <p>docker exec -ti <container-name> bash</p>
 <h1 id="to-inspect-a-running-container">To inspect a running container:</h1>
 <p>docker inspect <container-name> (or <container-id>)</p>
@@ -42,7 +42,7 @@
 <h1 id="to-list-all-images">To list all images:</h1>
 <p>docker images</p>
 <h1 id="to-remove-all-untagged-images">To remove all untagged images:</h1>
-<p>docker rmi $(docker images | grep “^<none>” | awk “{print $3}”)</p>
+<p>docker rmi $(docker images | grep "^<none>” | awk "{print $3}”)</p>
 <h1 id="to-remove-all-volumes-not-used-by-at-least-one-container">To remove all volumes not used by at least one container:</h1>
 <p>docker volume prune</p>
 </body>

@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="syntaxerror-using-to-indicate-sourceurl-pragmas-is-deprecated.-use-instead">SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead</h1>
-<p>The JavaScript warning “Using <code>//@</code> to indicate sourceURL pragmas is deprecated. Use <code>//#</code> instead” occurs when there is a deprecated source map syntax in a JavaScript source.</p>
+<p>The JavaScript warning "Using <code>//@</code> to indicate sourceURL pragmas is deprecated. Use <code>//#</code> instead” occurs when there is a deprecated source map syntax in a JavaScript source.</p>
 <h2 id="message">Message</h2>
 <pre><code>Warning: SyntaxError: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
 
@@ -27,10 +27,10 @@ Warning: SyntaxError: Using //@ to indicate sourceMappingURL pragmas is deprecat
 <p>The source map specification changed the syntax due to a conflict with IE whenever it was found in the page after <code>//@cc_on</code> was interpreted to turn on conditional compilation in the IE JScript engine. The <a href="https://msdn.microsoft.com/en-us/library/8ka90k2e%28v=vs.94%29.aspx">conditional compilation comment</a> in IE is a little known feature, but it broke source maps with <a href="https://bugs.jquery.com/ticket/13274">jQuery</a> and other libraries.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="deprecated-syntax">Deprecated syntax</h3>
-<p>Syntax with the “@” sign is deprecated.</p>
+<p>Syntax with the "@” sign is deprecated.</p>
 <pre><code>//@ sourceMappingURL=http://example.com/path/to/your/sourcemap.map</code></pre>
 <h3 id="standard-syntax">Standard syntax</h3>
-<p>Use the “#” sign instead.</p>
+<p>Use the "#” sign instead.</p>
 <pre><code>//# sourceMappingURL=http://example.com/path/to/your/sourcemap.map</code></pre>
 <p>Or, alternatively, you can set a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/SourceMap"><code>SourceMap</code></a> header to your JavaScript file to avoid having a comment at all:</p>
 <pre><code>SourceMap: /path/to/file.js.map</code></pre>

@@ -31,7 +31,7 @@
 <p>Note that this behavior is different to mathematical and bitwise assignment operators.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="setting-default-content">Setting default content</h3>
-<p>If the “lyrics” element is empty, display a default value:</p>
+<p>If the "lyrics” element is empty, display a default value:</p>
 <pre><code>document.getElementById(&#39;lyrics&#39;).textContent ||= &#39;No lyrics.&#39;</code></pre>
 <p>Here the short-circuit is especially beneficial, since the element will not be updated unnecessarily and won’t cause unwanted side-effects such as additional parsing or rendering work, or loss of focus, etc.</p>
 <p>Note: Pay attention to the value returned by the API you’re checking against. If an empty string is returned (a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy</a> value), <code>||=</code> must be used, otherwise you want to use the <code>??=</code> operator (for <a href="../global_objects/null"><code>null</code></a> or <a href="../global_objects/undefined"><code>undefined</code></a> return values).</p>

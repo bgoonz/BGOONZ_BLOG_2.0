@@ -1,7 +1,7 @@
 Matrices
 ========
 
-In mathematics, a **matrix** (plural **matrices**) is a rectangular array or table of numbers, symbols, or expressions, arranged in rows and columns. For example, the dimension of the matrix below is `2 × 3` (read “two by three”), because there are two rows and three columns:
+In mathematics, a **matrix** (plural **matrices**) is a rectangular array or table of numbers, symbols, or expressions, arranged in rows and columns. For example, the dimension of the matrix below is `2 × 3` (read "two by three”), because there are two rows and three columns:
 
     | 1  9 -13 |
     | 20 5 -6  |
@@ -51,9 +51,9 @@ If we’ll do the same for the rest of the rows and columns we’ll get the foll
 
 ### Transposing
 
-To “transpose” a matrix, swap the rows and columns.
+To "transpose” a matrix, swap the rows and columns.
 
-We put a “T” in the top right-hand corner to mean transpose:
+We put a "T” in the top right-hand corner to mean transpose:
 
 ![Transposing](https://www.mathsisfun.com/algebra/images/matrix-transpose.gif)
 

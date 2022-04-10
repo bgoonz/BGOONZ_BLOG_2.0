@@ -1,4 +1,4 @@
-title: Create an easy loop using an array tip-number: 55 tip-username: jamet-julien tip-username-profile: https://github.com/jamet-julien tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers”
+title: Create an easy loop using an array tip-number: 55 tip-username: jamet-julien tip-username-profile: https://github.com/jamet-julien tip-tldr: Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it "looping powers”
 
 -   /en/make-easy-loop-on-array/
 
@@ -6,7 +6,7 @@ categories: - en - javascript
 
 ------------------------------------------------------------------------
 
-Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers”:
+Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it "looping powers”:
 
     var aList = ['A', 'B', 'C', 'D', 'E'];
 

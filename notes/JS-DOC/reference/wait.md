@@ -1,7 +1,7 @@
 Atomics.wait()
 ==============
 
-The static ``` Atomics``.wait() ``` method verifies that a given position in an [`Int32Array`](../int32array) still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either “`ok`”, “`not-equal`”, or “`timed-out`”.
+The static ``` Atomics``.wait() ``` method verifies that a given position in an [`Int32Array`](../int32array) still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either "`ok`”, "`not-equal`”, or "`timed-out`”.
 
 **Note:** This operation only works with a shared [`Int32Array`](../int32array) and may not be allowed on the main thread.
 
@@ -27,7 +27,7 @@ Time to wait in milliseconds. [`Infinity`](../infinity), if no time is provided.
 
 ### Return value
 
-A string which is either “`ok`”, “`not-equal`”, or “`timed-out`”.
+A string which is either "`ok`”, "`not-equal`”, or "`timed-out`”.
 
 ### Exceptions
 

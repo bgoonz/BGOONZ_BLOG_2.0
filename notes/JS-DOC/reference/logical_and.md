@@ -27,7 +27,7 @@ Even though the `&&` operator can be used with operands that are not Boolean val
 
 ### Short-circuit evaluation
 
-The logical AND expression is evaluated left to right, it is tested for possible “short-circuit” evaluation using the following rule:
+The logical AND expression is evaluated left to right, it is tested for possible "short-circuit” evaluation using the following rule:
 
 `(some falsy expression) && expr` is short-circuit evaluated to the falsy expression;
 

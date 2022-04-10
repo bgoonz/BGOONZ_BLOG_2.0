@@ -76,7 +76,7 @@ Variables
     zip101 = "233-7383"
     magic_number = 42
 
-Should be “`[a-z][a-z0-9_]+`”(snake\_case).
+Should be "`[a-z][a-z0-9_]+`”(snake\_case).
 
 ### Instance variable
 
@@ -93,7 +93,7 @@ Should be “`[a-z][a-z0-9_]+`”(snake\_case).
     state.show
     #=> success
 
-Should be “`@[a-z][a-z0-9_]+`”(snake\_case).
+Should be "`@[a-z][a-z0-9_]+`”(snake\_case).
 
 ### Multiple assignment
 
@@ -138,7 +138,7 @@ Method definition
 
     foo_bar? "Hi, Goby!" #=> true
 
-Method name should be “`[a-z][a-z0-9_]+\??`” (snake\_case). You can omit the trailing “`()`” only if no parameters are taken. Trailing using “`!`” is **unsupported**.
+Method name should be "`[a-z][a-z0-9_]+\??`” (snake\_case). You can omit the trailing "`()`” only if no parameters are taken. Trailing using "`!`” is **unsupported**.
 
 ### Order of method parameter
 
@@ -286,7 +286,7 @@ Module/Class definition
 
     Bar.new.foo     #=> Foo's instance method
 
-Module names should be “`[A-Z][A-Za-z0-9_]+`” (UpperCamelCase). Modules cannot be inherited.
+Module names should be "`[A-Z][A-Za-z0-9_]+`” (UpperCamelCase). Modules cannot be inherited.
 
 ### Module definition and `extend`
 
@@ -314,7 +314,7 @@ Module names should be “`[A-Z][A-Za-z0-9_]+`” (UpperCamelCase). Modules cann
 
     Foo.new.foo  #=> 99
 
-Actually, Goby’s module can be even **instantiated** via “`new`” like “`Foo.new`”.
+Actually, Goby’s module can be even **instantiated** via "`new`” like "`Foo.new`”.
 
 ### Class definition and inheritance
 
@@ -329,7 +329,7 @@ Actually, Goby’s module can be even **instantiated** via “`new`” like “`
 
     Baz.new.bar  #=> 99
 
-Class names should be “`[A-Z][A-Za-z0-9]+`” (UpperCamelCase). Inheritance with “`<`” is supported.
+Class names should be "`[A-Z][A-Za-z0-9]+`” (UpperCamelCase). Inheritance with "`<`” is supported.
 
 ### Constants
 
@@ -679,7 +679,7 @@ Block
 Native class (Primary)
 ----------------------
 
-Goby’s most “native” classes cannot instantiate with `new` in principle.
+Goby’s most "native” classes cannot instantiate with `new` in principle.
 
 ### `Object`
 
@@ -907,7 +907,7 @@ Pretty new experimental library.
 
     result   #=> [2, 4, 6]
 
-A shorthand `#lazy` method is also provided in `Array` and `Range` by now. See “Tips & tricks” below.
+A shorthand `#lazy` method is also provided in `Array` and `Range` by now. See "Tips & tricks” below.
 
 -   **`LazyEnumerator.methods`**: the same as `Class.methods`
 -   **`[1, 2].lazy`**: `each`, `first`, `has_next?`, `initialize`, `map`, `next`

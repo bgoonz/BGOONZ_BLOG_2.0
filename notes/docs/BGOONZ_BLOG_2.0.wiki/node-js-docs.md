@@ -354,13 +354,13 @@ An alias of [`assert.deepStrictEqual()`](https://nodejs.org/dist/v16.13.1/docs/a
 
 Tests for deep equality between the `actual` and `expected` parameters. Consider using [`assert.deepStrictEqual()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdeepstrictequalactual-expected-message) instead. [`assert.deepEqual()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdeepequalactual-expected-message) can have surprising results.
 
-*Deep equality* means that the enumerable “own” properties of child objects are also recursively evaluated by the following rules.
+*Deep equality* means that the enumerable "own” properties of child objects are also recursively evaluated by the following rules.
 
 #### Comparison details[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_comparison-details)
 
 -   Primitive values are compared with the [Abstract Equality Comparison](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison) ( `==` ) with the exception of `NaN`. It is treated as being identical in case both sides are `NaN`.
 -   [Type tags](https://tc39.github.io/ecma262/#sec-object.prototype.tostring) of objects should be the same.
--   Only [enumerable “own” properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are considered.
+-   Only [enumerable "own” properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are considered.
 -   [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) names and messages are always compared, even if these are not enumerable properties.
 -   [Object wrappers](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) are compared both as objects and unwrapped values.
 -   `Object` properties are compared unordered.
@@ -377,7 +377,7 @@ The following example does not throw an [`AssertionError`](https://nodejs.org/di
 
     assert.deepEqual('+00000000', false);
 
-“Deep” equality means that the enumerable “own” properties of child objects are evaluated also:
+"Deep” equality means that the enumerable "own” properties of child objects are evaluated also:
 
     import assert from 'assert';
 
@@ -419,14 +419,14 @@ If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.1
 -   `expected` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
 -   `message` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 
-Tests for deep equality between the `actual` and `expected` parameters. “Deep” equality means that the enumerable “own” properties of child objects are recursively evaluated also by the following rules.
+Tests for deep equality between the `actual` and `expected` parameters. "Deep” equality means that the enumerable "own” properties of child objects are recursively evaluated also by the following rules.
 
 #### Comparison details[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_comparison-details_1)
 
 -   Primitive values are compared using the [SameValue Comparison](https://tc39.github.io/ecma262/#sec-samevalue), used by [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
 -   [Type tags](https://tc39.github.io/ecma262/#sec-object.prototype.tostring) of objects should be the same.
 -   [`[[Prototype]]`](https://tc39.github.io/ecma262/#sec-ordinary-object-internal-methods-and-internal-slots) of objects are compared using the [Strict Equality Comparison](https://tc39.github.io/ecma262/#sec-strict-equality-comparison).
--   Only [enumerable “own” properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are considered.
+-   Only [enumerable "own” properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) are considered.
 -   [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) names and messages are always compared, even if these are not enumerable properties.
 -   Enumerable own [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) properties are compared as well.
 -   [Object wrappers](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) are compared both as objects and unwrapped values.
@@ -1793,7 +1793,7 @@ It is possible to have type name collisions. Embedders are encouraged to use uni
 
 ###### `triggerAsyncId`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_triggerasyncid)
 
-`triggerAsyncId` is the `asyncId` of the resource that caused (or “triggered”) the new resource to initialize and that caused `init` to call. This is different from `async_hooks.executionAsyncId()` that only shows *when* a resource was created, while `triggerAsyncId` shows *why* a resource was created.
+`triggerAsyncId` is the `asyncId` of the resource that caused (or "triggered”) the new resource to initialize and that caused `init` to call. This is different from `async_hooks.executionAsyncId()` that only shows *when* a resource was created, while `triggerAsyncId` shows *why* a resource was created.
 
 The following is a simple demonstration of `triggerAsyncId`:
 
@@ -2156,7 +2156,7 @@ Converting a `Buffer` into a string using one of the above is referred to as dec
 
 Node.js also supports the following binary-to-text encodings. For binary-to-text encodings, the naming convention is reversed: Converting a `Buffer` into a string is typically referred to as encoding, and converting a string into a `Buffer` as decoding.
 
--   `'base64'`: [Base64](https://en.wikipedia.org/wiki/Base64) encoding. When creating a `Buffer` from a string, this encoding will also correctly accept “URL and Filename Safe Alphabet” as specified in [RFC 4648, Section 5](https://tools.ietf.org/html/rfc4648#section-5). Whitespace characters such as spaces, tabs, and new lines contained within the base64-encoded string are ignored.
+-   `'base64'`: [Base64](https://en.wikipedia.org/wiki/Base64) encoding. When creating a `Buffer` from a string, this encoding will also correctly accept "URL and Filename Safe Alphabet” as specified in [RFC 4648, Section 5](https://tools.ietf.org/html/rfc4648#section-5). Whitespace characters such as spaces, tabs, and new lines contained within the base64-encoded string are ignored.
 -   `'base64url'`: [base64url](https://tools.ietf.org/html/rfc4648#section-5) encoding as specified in [RFC 4648, Section 5](https://tools.ietf.org/html/rfc4648#section-5). When creating a `Buffer` from a string, this encoding will also correctly accept regular base64-encoded strings. When encoding a `Buffer` to a string, this encoding will omit padding.
 -   `'hex'`: Encode each byte as two hexadecimal characters. Data truncation may occur when decoding strings that do exclusively contain valid hexadecimal characters. See below for an example.
 
@@ -4364,7 +4364,7 @@ Node.js can be started using the `--zero-fill-buffers` command-line option to ca
     > Buffer.allocUnsafe(5);
     <Buffer 00 00 00 00 00>
 
-#### What makes `Buffer.allocUnsafe()` and `Buffer.allocUnsafeSlow()` “unsafe”?[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_what-makes-bufferallocunsafe-and-bufferallocunsafeslow-unsafe)
+#### What makes `Buffer.allocUnsafe()` and `Buffer.allocUnsafeSlow()` "unsafe”?[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_what-makes-bufferallocunsafe-and-bufferallocunsafeslow-unsafe)
 
 When calling [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) and [`Buffer.allocUnsafeSlow()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafeslowsize), the segment of allocated memory is *uninitialized* (it is not zeroed-out). While this design makes the allocation of memory quite fast, the allocated segment of memory might contain old data that is potentially sensitive. Using a `Buffer` created by [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) without *completely* overwriting the memory can allow this old data to be leaked when the `Buffer` memory is read.
 
@@ -4388,7 +4388,7 @@ All of the following examples are available for [download](https://github.com/no
 
 ### Hello world[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_hello-world)
 
-This “Hello world” example is a simple addon, written in C++, that is the equivalent of the following JavaScript code:
+This "Hello world” example is a simple addon, written in C++, that is the equivalent of the following JavaScript code:
 
     module.exports.hello = () => 'world';
 
@@ -4651,7 +4651,7 @@ Node-API is an API for building native addons. It is independent from the underl
 
 Creating and maintaining an addon that benefits from the ABI stability provided by Node-API carries with it certain [implementation considerations](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_implications-of-abi-stability).
 
-To use Node-API in the above “Hello world” example, replace the content of `hello.cc` with the following. All other instructions remain the same.
+To use Node-API in the above "Hello world” example, replace the content of `hello.cc` with the following. All other instructions remain the same.
 
     #include <node_api.h>
 
@@ -5767,7 +5767,7 @@ The Node.js-specific parts of an addon can be separated from the code that expos
 
 ### Environment life cycle APIs[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_environment-life-cycle-apis)
 
-[Section 8.7](https://tc39.es/ecma262/#sec-agents) of the [ECMAScript Language Specification](https://tc39.github.io/ecma262/) defines the concept of an “Agent” as a self-contained environment in which JavaScript code runs. Multiple such Agents may be started and terminated either concurrently or in sequence by the process.
+[Section 8.7](https://tc39.es/ecma262/#sec-agents) of the [ECMAScript Language Specification](https://tc39.github.io/ecma262/) defines the concept of an "Agent” as a self-contained environment in which JavaScript code runs. Multiple such Agents may be started and terminated either concurrently or in sequence by the process.
 
 A Node.js environment corresponds to an ECMAScript Agent. In the main process, an environment is created at startup, and additional environments can be created on separate threads to serve as [worker threads](https://nodejs.org/api/worker_threads.html). When Node.js is embedded in another application, the main thread of the application may also construct and destroy a Node.js environment multiple times during the life cycle of the application process such that each Node.js environment created by the application may, in turn, during its life cycle create and destroy additional environments as worker threads.
 
@@ -5928,7 +5928,7 @@ For more details, review the [Object lifetime management](https://nodejs.org/dis
 
 Added in: v14.8.0, v12.19.0 N-API version: 8
 
-A 128-bit value stored as two unsigned 64-bit integers. It serves as a UUID with which JavaScript objects can be “tagged” in order to ensure that they are of a certain type. This is a stronger check than [`napi_instanceof`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_instanceof), because the latter can report a false positive if the object’s prototype has been manipulated. Type-tagging is most useful in conjunction with [`napi_wrap`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_wrap) because it ensures that the pointer retrieved from a wrapped object can be safely cast to the native type corresponding to the type tag that had been previously applied to the JavaScript object.
+A 128-bit value stored as two unsigned 64-bit integers. It serves as a UUID with which JavaScript objects can be "tagged” in order to ensure that they are of a certain type. This is a stronger check than [`napi_instanceof`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_instanceof), because the latter can report a false positive if the object’s prototype has been manipulated. Type-tagging is most useful in conjunction with [`napi_wrap`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_wrap) because it ensures that the pointer retrieved from a wrapped object can be safely cast to the native type corresponding to the type tag that had been previously applied to the JavaScript object.
 
     typedef struct {
       uint64_t lower;
@@ -8608,7 +8608,7 @@ Returns `napi_ok` if the API succeeded.
 
 ### Object wrap[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_object-wrap)
 
-Node-API offers a way to “wrap” C++ classes and instances so that the class constructor and methods can be called from JavaScript.
+Node-API offers a way to "wrap” C++ classes and instances so that the class constructor and methods can be called from JavaScript.
 
 1.  The [`napi_define_class`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_define_class) API defines a JavaScript class with constructor, static properties and methods, and instance properties and methods that correspond to the C++ class.
 2.  When JavaScript code invokes the constructor, the constructor callback uses [`napi_wrap`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_wrap) to wrap a new C++ instance in a JavaScript object, then returns the wrapper object.
@@ -8660,7 +8660,7 @@ Unfortunately, `napi_instanceof()` does not protect against prototype manipulati
 
 To this end, Node-API provides type-tagging capabilities.
 
-A type tag is a 128-bit integer unique to the addon. Node-API provides the `napi_type_tag` structure for storing a type tag. When such a value is passed along with a JavaScript object stored in a `napi_value` to `napi_type_tag_object()`, the JavaScript object will be “marked” with the type tag. The “mark” is invisible on the JavaScript side. When a JavaScript object arrives into a native binding, `napi_check_object_type_tag()` can be used along with the original type tag to determine whether the JavaScript object was previously “marked” with the type tag. This creates a type-checking capability of a higher fidelity than `napi_instanceof()` can provide, because such type- tagging survives prototype manipulation and addon unloading/reloading.
+A type tag is a 128-bit integer unique to the addon. Node-API provides the `napi_type_tag` structure for storing a type tag. When such a value is passed along with a JavaScript object stored in a `napi_value` to `napi_type_tag_object()`, the JavaScript object will be "marked” with the type tag. The "mark” is invisible on the JavaScript side. When a JavaScript object arrives into a native binding, `napi_check_object_type_tag()` can be used along with the original type tag to determine whether the JavaScript object was previously "marked” with the type tag. This creates a type-checking capability of a higher fidelity than `napi_instanceof()` can provide, because such type- tagging survives prototype manipulation and addon unloading/reloading.
 
 Continuing the above example, the following skeleton addon implementation illustrates the use of `napi_type_tag_object()` and `napi_check_object_type_tag()`.
 
@@ -9155,7 +9155,7 @@ This function gives V8 an indication of the amount of externally allocated memor
 
 ### Promises[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_promises)
 
-Node-API provides facilities for creating `Promise` objects as described in [Section 25.4](https://tc39.github.io/ecma262/#sec-promise-objects) of the ECMA specification. It implements promises as a pair of objects. When a promise is created by `napi_create_promise()`, a “deferred” object is created and returned alongside the `Promise`. The deferred object is bound to the created `Promise` and is the only means to resolve or reject the `Promise` using `napi_resolve_deferred()` or `napi_reject_deferred()`. The deferred object that is created by `napi_create_promise()` is freed by `napi_resolve_deferred()` or `napi_reject_deferred()`. The `Promise` object may be returned to JavaScript where it can be used in the usual fashion.
+Node-API provides facilities for creating `Promise` objects as described in [Section 25.4](https://tc39.github.io/ecma262/#sec-promise-objects) of the ECMA specification. It implements promises as a pair of objects. When a promise is created by `napi_create_promise()`, a "deferred” object is created and returned alongside the `Promise`. The deferred object is bound to the created `Promise` and is the only means to resolve or reject the `Promise` using `napi_resolve_deferred()` or `napi_reject_deferred()`. The deferred object that is created by `napi_create_promise()` is freed by `napi_resolve_deferred()` or `napi_reject_deferred()`. The `Promise` object may be returned to JavaScript where it can be used in the usual fashion.
 
 For example, to create a promise and pass it to an asynchronous worker:
 
@@ -9323,11 +9323,11 @@ Threads can be added to and removed from a `napi_threadsafe_function` object dur
 
 Once the number of threads making use of a `napi_threadsafe_function` reaches zero, no further threads can start making use of it by calling `napi_acquire_threadsafe_function()`. In fact, all subsequent API calls associated with it, except `napi_release_threadsafe_function()`, will return an error value of `napi_closing`.
 
-The thread-safe function can be “aborted” by giving a value of `napi_tsfn_abort` to `napi_release_threadsafe_function()`. This will cause all subsequent APIs associated with the thread-safe function except `napi_release_threadsafe_function()` to return `napi_closing` even before its reference count reaches zero. In particular, `napi_call_threadsafe_function()` will return `napi_closing`, thus informing the threads that it is no longer possible to make asynchronous calls to the thread-safe function. This can be used as a criterion for terminating the thread. **Upon receiving a return value of `napi_closing` from `napi_call_threadsafe_function()` a thread must not use the thread-safe function anymore because it is no longer guaranteed to be allocated.**
+The thread-safe function can be "aborted” by giving a value of `napi_tsfn_abort` to `napi_release_threadsafe_function()`. This will cause all subsequent APIs associated with the thread-safe function except `napi_release_threadsafe_function()` to return `napi_closing` even before its reference count reaches zero. In particular, `napi_call_threadsafe_function()` will return `napi_closing`, thus informing the threads that it is no longer possible to make asynchronous calls to the thread-safe function. This can be used as a criterion for terminating the thread. **Upon receiving a return value of `napi_closing` from `napi_call_threadsafe_function()` a thread must not use the thread-safe function anymore because it is no longer guaranteed to be allocated.**
 
 #### Deciding whether to keep the process running[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_deciding-whether-to-keep-the-process-running)
 
-Similarly to libuv handles, thread-safe functions can be “referenced” and “unreferenced”. A “referenced” thread-safe function will cause the event loop on the thread on which it is created to remain alive until the thread-safe function is destroyed. In contrast, an “unreferenced” thread-safe function will not prevent the event loop from exiting. The APIs `napi_ref_threadsafe_function` and `napi_unref_threadsafe_function` exist for this purpose.
+Similarly to libuv handles, thread-safe functions can be "referenced” and "unreferenced”. A "referenced” thread-safe function will cause the event loop on the thread on which it is created to remain alive until the thread-safe function is destroyed. In contrast, an "unreferenced” thread-safe function will not prevent the event loop from exiting. The APIs `napi_ref_threadsafe_function` and `napi_unref_threadsafe_function` exist for this purpose.
 
 Neither does `napi_unref_threadsafe_function` mark the thread-safe functions as able to be destroyed nor does `napi_ref_threadsafe_function` prevent it from being destroyed.
 
@@ -9517,7 +9517,7 @@ The following example shows how these can be set up. Some class names are from t
 
 #### Per-instance state[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#embedding_per-instance-state)
 
-Node.js has a concept of a “Node.js instance”, that is commonly being referred to as `node::Environment`. Each `node::Environment` is associated with:
+Node.js has a concept of a "Node.js instance”, that is commonly being referred to as `node::Environment`. Each `node::Environment` is associated with:
 
 -   Exactly one `v8::Isolate`, i.e. one JS Engine instance,
 -   Exactly one `uv_loop_t`, i.e. one event loop, and
@@ -10443,7 +10443,7 @@ While the example above uses a server created using the `net` module, `dgram` mo
 
 ##### Example: sending a socket object[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_example-sending-a-socket-object)
 
-Similarly, the `sendHandler` argument can be used to pass the handle of a socket to the child process. The example below spawns two children that each handle connections with “normal” or “special” priority:
+Similarly, the `sendHandler` argument can be used to pass the handle of a socket to the child process. The example below spawns two children that each handle connections with "normal” or "special” priority:
 
     const { fork } = require('child_process');
     const normal = fork('subprocess.js', ['normal']);
@@ -10686,7 +10686,7 @@ Because `server.listen()` hands off most of the work to the primary process, the
 
 1.  `server.listen({fd: 7})` Because the message is passed to the primary, file descriptor 7 **in the parent** will be listened on, and the handle passed to the worker, rather than listening to the worker’s idea of what the number 7 file descriptor references.
 2.  `server.listen(handle)` Listening on handles explicitly will cause the worker to use the supplied handle, rather than talk to the primary process.
-3.  `server.listen(0)` Normally, this will cause servers to listen on a random port. However, in a cluster, each worker will receive the same “random” port each time they do `listen(0)`. In essence, the port is random the first time, but predictable thereafter. To listen on a unique port, generate a port number based on the cluster worker ID.
+3.  `server.listen(0)` Normally, this will cause servers to listen on a random port. However, in a cluster, each worker will receive the same "random” port each time they do `listen(0)`. In essence, the port is random the first time, but predictable thereafter. To listen on a unique port, generate a port number based on the cluster worker ID.
 
 Node.js does not provide routing logic. It is, therefore important to design an application such that it does not rely too heavily on in-memory data objects for things like sessions and login.
 
@@ -11341,7 +11341,7 @@ Any number of custom string condition names are permitted.
 
 The default Node.js conditions of `"node"`, `"default"`, `"import"`, and `"require"` will always apply as defined.
 
-For example, to run a module with “development” resolutions:
+For example, to run a module with "development” resolutions:
 
     $ node -C=development app.js
 
@@ -11711,7 +11711,7 @@ Added in: v8.0.0
 
 Emit pending deprecation warnings.
 
-Pending deprecations are generally identical to a runtime deprecation with the notable exception that they are turned *off* by default and will not be emitted unless either the `--pending-deprecation` command-line flag, or the `NODE_PENDING_DEPRECATION=1` environment variable, is set. Pending deprecations are used to provide a kind of selective “early warning” mechanism that developers may leverage to detect deprecated API usage.
+Pending deprecations are generally identical to a runtime deprecation with the notable exception that they are turned *off* by default and will not be emitted unless either the `--pending-deprecation` command-line flag, or the `NODE_PENDING_DEPRECATION=1` environment variable, is set. Pending deprecations are used to provide a kind of selective "early warning” mechanism that developers may leverage to detect deprecated API usage.
 
 #### `--policy-integrity=sri`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--policy-integritysri)
 
@@ -11725,7 +11725,7 @@ Added in: v6.3.0
 
 Instructs the module loader to preserve symbolic links when resolving and caching modules.
 
-By default, when Node.js loads a module from a path that is symbolically linked to a different on-disk location, Node.js will dereference the link and use the actual on-disk “real path” of the module as both an identifier and as a root path to locate other dependency modules. In most cases, this default behavior is acceptable. However, when using symbolically linked peer dependencies, as illustrated in the example below, the default behavior causes an exception to be thrown if `moduleA` attempts to require `moduleB` as a peer dependency:
+By default, when Node.js loads a module from a path that is symbolically linked to a different on-disk location, Node.js will dereference the link and use the actual on-disk "real path” of the module as both an identifier and as a root path to locate other dependency modules. In most cases, this default behavior is acceptable. However, when using symbolically linked peer dependencies, as illustrated in the example below, the default behavior causes an exception to be thrown if `moduleA` attempts to require `moduleB` as a peer dependency:
 
     {appDir}
      ├── app
@@ -12111,7 +12111,7 @@ When set, colors will not be used in the REPL.
 
 Added in: v7.3.0
 
-When set, the well known “root” CAs (like VeriSign) will be extended with the extra certificates in `file`. The file should consist of one or more trusted certificates in PEM format. A message will be emitted (once) with [`process.emitWarning()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processemitwarningwarning-options) if the file is missing or malformed, but any errors are otherwise ignored.
+When set, the well known "root” CAs (like VeriSign) will be extended with the extra certificates in `file`. The file should consist of one or more trusted certificates in PEM format. A message will be emitted (once) with [`process.emitWarning()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processemitwarningwarning-options) if the file is missing or malformed, but any errors are otherwise ignored.
 
 Neither the well known nor extra certificates are used when the `ca` options property is explicitly specified for a TLS or HTTPS client or server.
 
@@ -12268,7 +12268,7 @@ Added in: v8.0.0
 
 When set to `1`, emit pending deprecation warnings.
 
-Pending deprecations are generally identical to a runtime deprecation with the notable exception that they are turned *off* by default and will not be emitted unless either the `--pending-deprecation` command-line flag, or the `NODE_PENDING_DEPRECATION=1` environment variable, is set. Pending deprecations are used to provide a kind of selective “early warning” mechanism that developers may leverage to detect deprecated API usage.
+Pending deprecations are generally identical to a runtime deprecation with the notable exception that they are turned *off* by default and will not be emitted unless either the `--pending-deprecation` command-line flag, or the `NODE_PENDING_DEPRECATION=1` environment variable, is set. Pending deprecations are used to provide a kind of selective "early warning” mechanism that developers may leverage to detect deprecated API usage.
 
 #### `NODE_PENDING_PIPE_INSTANCES=instances`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_node_pending_pipe_instancesinstances)
 
@@ -12706,7 +12706,7 @@ Added in: v0.1.104
 
 -   `label` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) **Default:** `'default'`
 
-Starts a timer that can be used to compute the duration of an operation. Timers are identified by a unique `label`. Use the same `label` when calling [`console.timeEnd()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimeendlabel) to stop the timer and output the elapsed time in suitable time units to `stdout`. For example, if the elapsed time is 3869ms, `console.timeEnd()` displays “3.869s”.
+Starts a timer that can be used to compute the duration of an operation. Timers are identified by a unique `label`. Use the same `label` when calling [`console.timeEnd()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimeendlabel) to stop the timer and output the elapsed time in suitable time units to `stdout`. For example, if the elapsed time is 3869ms, `console.timeEnd()` displays "3.869s”.
 
 #### `console.timeEnd([label])`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimeendlabel)
 
@@ -14954,7 +14954,7 @@ Added in: v10.0.0
 
 Added in: v0.9.3
 
--   Returns: [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) An array of the names of the supported hash algorithms, such as `'RSA-SHA256'`. Hash algorithms are also called “digest” algorithms.
+-   Returns: [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) An array of the names of the supported hash algorithms, such as `'RSA-SHA256'`. Hash algorithms are also called "digest” algorithms.
 
 <!-- -->
 
@@ -15697,7 +15697,7 @@ Attempts to use the server’s preferences instead of the client’s when select
 
 `SSL_OP_CISCO_ANYCONNECT`
 
-Instructs OpenSSL to use Cisco’s “speshul” version of DTLS\_BAD\_VER.
+Instructs OpenSSL to use Cisco’s "speshul” version of DTLS\_BAD\_VER.
 
 `SSL_OP_COOKIE_EXCHANGE`
 
@@ -16965,7 +16965,7 @@ The previously undocumented `timers.active()` is deprecated. Please use the publ
 
 Type: Runtime
 
-The previously undocumented and “private” `timers._unrefActive()` is deprecated. Please use the publicly documented [`timeout.refresh()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timeoutrefresh) instead. If unreferencing the timeout is necessary, [`timeout.unref()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timeoutunref) can be used with no performance impact since Node.js 10.
+The previously undocumented and "private” `timers._unrefActive()` is deprecated. Please use the publicly documented [`timeout.refresh()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timeoutrefresh) instead. If unreferencing the timeout is necessary, [`timeout.unref()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timeoutunref) can be used with no performance impact since Node.js 10.
 
 #### DEP0128: modules with an invalid `main` entry and an `index.js` file[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#deprecations_dep0128-modules-with-an-invalid-main-entry-and-an-indexjs-file)
 
@@ -18477,7 +18477,7 @@ Domains provide a way to handle multiple different IO operations as a single gro
 
 Domain error handlers are not a substitute for closing down a process when an error occurs.
 
-By the very nature of how [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw) works in JavaScript, there is almost never any way to safely “pick up where it left off”, without leaking references, or creating some other sort of undefined brittle state.
+By the very nature of how [`throw`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw) works in JavaScript, there is almost never any way to safely "pick up where it left off”, without leaking references, or creating some other sort of undefined brittle state.
 
 The safest way to respond to a thrown error is to shut down the process. Of course, in a normal web server, there may be many open connections, and it is not reasonable to abruptly shut those down because an error was triggered by someone else.
 
@@ -18935,7 +18935,7 @@ This will not work because the callback function passed to `fs.readFile()` is ca
 
 ### Class: `Error`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error)
 
-A generic JavaScript [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) object that does not denote any specific circumstance of why the error occurred. `Error` objects capture a “stack trace” detailing the point in the code at which the `Error` was instantiated, and may provide a text description of the error.
+A generic JavaScript [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) object that does not denote any specific circumstance of why the error occurred. `Error` objects capture a "stack trace” detailing the point in the code at which the `Error` was instantiated, and may provide a text description of the error.
 
 All errors generated by Node.js, including all system and JavaScript errors, will either be instances of, or inherit from, the `Error` class.
 
@@ -19008,7 +19008,7 @@ The `error.stack` property is a string describing the point in the code at which
        at Actor.<anonymous> (/home/gbusey/actors.js:400:8)
        at increaseSynergy (/home/gbusey/actors.js:701:6)
 
-The first line is formatted as `<error class name>: <error message>`, and is followed by a series of stack frames (each line beginning with “at”). Each frame describes a call site within the code that lead to the error being generated. V8 attempts to display a name for each function (by variable name, function name, or object method name), but occasionally it will not be able to find a suitable name. If V8 cannot determine a name for the function, only location information will be displayed for that frame. Otherwise, the determined function name will be displayed with location information appended in parentheses.
+The first line is formatted as `<error class name>: <error message>`, and is followed by a series of stack frames (each line beginning with "at”). Each frame describes a call site within the code that lead to the error being generated. V8 attempts to display a name for each function (by variable name, function name, or object method name), but occasionally it will not be able to find a suitable name. If V8 cannot determine a name for the function, only location information will be displayed for that frame. Otherwise, the determined function name will be displayed with location information appended in parentheses.
 
 Frames are only generated for JavaScript functions. If, for example, execution synchronously passes through a C++ addon function called `cheetahify` which itself calls a JavaScript function, the frame representing the `cheetahify` call will not be present in the stack traces:
 
@@ -19912,7 +19912,7 @@ A Node.js API that consumes `file:` URLs (such as certain functions in the [`fs`
 
 #### `ERR_INVALID_HANDLE_TYPE`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_handle_type)
 
-An attempt was made to send an unsupported “handle” over an IPC communication channel to a child process. See [`subprocess.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesssendmessage-sendhandle-options-callback) and [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) for more information.
+An attempt was made to send an unsupported "handle” over an IPC communication channel to a child process. See [`subprocess.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesssendmessage-sendhandle-options-callback) and [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) for more information.
 
 #### `ERR_INVALID_HTTP_TOKEN`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_http_token)
 
@@ -20053,7 +20053,7 @@ An attempt was made to read from a policy manifest, but the manifest initializat
 
 #### `ERR_MANIFEST_UNKNOWN_ONERROR`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_manifest_unknown_onerror)
 
-A policy manifest was loaded, but had an unknown value for its “onerror” behavior. See the documentation for [policy](https://nodejs.org/dist/v16.13.1/docs/api/policy.html) manifests for more information.
+A policy manifest was loaded, but had an unknown value for its "onerror” behavior. See the documentation for [policy](https://nodejs.org/dist/v16.13.1/docs/api/policy.html) manifests for more information.
 
 #### `ERR_MEMORY_ALLOCATION_FAILED`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_memory_allocation_failed)
 
@@ -20648,7 +20648,7 @@ Added in: v10.5.0Removed in: v14.0.0
 
 A `SharedArrayBuffer` whose memory is not managed by the JavaScript engine or by Node.js was encountered during serialization. Such a `SharedArrayBuffer` cannot be serialized.
 
-This can only happen when native addons create `SharedArrayBuffer`s in “externalized” mode, or put existing `SharedArrayBuffer` into externalized mode.
+This can only happen when native addons create `SharedArrayBuffer`s in "externalized” mode, or put existing `SharedArrayBuffer` into externalized mode.
 
 #### `ERR_UNKNOWN_STDIN_TYPE`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_unknown_stdin_type)
 
@@ -20699,7 +20699,7 @@ Events[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_events)
 
 **Source Code:** [lib/events.js](https://github.com/nodejs/node/blob/v16.13.1/lib/events.js)
 
-Much of the Node.js core API is built around an idiomatic asynchronous event-driven architecture in which certain kinds of objects (called “emitters”) emit named events that cause `Function` objects (“listeners”) to be called.
+Much of the Node.js core API is built around an idiomatic asynchronous event-driven architecture in which certain kinds of objects (called "emitters”) emit named events that cause `Function` objects ("listeners”) to be called.
 
 For instance: a [`net.Server`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netserver) object emits an event each time a peer connects to it; a [`fs.ReadStream`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsreadstream) emits an event when the file is opened; a [stream](https://nodejs.org/dist/v16.13.1/docs/api/stream.html) emits an event whenever data is available to be read.
 
@@ -21239,7 +21239,7 @@ By default, a maximum of `10` listeners can be registered for any single event. 
 
 Take caution when setting the `events.defaultMaxListeners` because the change affects *all* `EventEmitter` instances, including those created before the change is made. However, calling [`emitter.setMaxListeners(n)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_emittersetmaxlistenersn) still has precedence over `events.defaultMaxListeners`.
 
-This is not a hard limit. The `EventEmitter` instance will allow more listeners to be added but will output a trace warning to stderr indicating that a “possible EventEmitter memory leak” has been detected. For any single `EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to temporarily avoid this warning:
+This is not a hard limit. The `EventEmitter` instance will allow more listeners to be added but will output a trace warning to stderr indicating that a "possible EventEmitter memory leak” has been detected. For any single `EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to temporarily avoid this warning:
 
     emitter.setMaxListeners(emitter.getMaxListeners() + 1);
     emitter.once('event', () => {
@@ -22778,7 +22778,7 @@ It is unsafe to use `fsPromises.writeFile()` multiple times on the same file wit
 
 Similarly to `fsPromises.readFile` - `fsPromises.writeFile` is a convenience method that performs multiple `write` calls internally to write the buffer passed to it. For performance sensitive code consider using [`fs.createWriteStream()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fscreatewritestreampath-options).
 
-It is possible to use an [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fsPromises.writeFile()`. Cancelation is “best effort”, and some amount of data is likely still to be written.
+It is possible to use an [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fsPromises.writeFile()`. Cancelation is "best effort”, and some amount of data is likely still to be written.
 
     import { writeFile } from 'fs/promises';
     import { Buffer } from 'buffer';
@@ -22943,7 +22943,7 @@ Do not use `fs.access()` to check for the accessibility of a file before calling
       }
     });
 
-The “not recommended” examples above check for accessibility and then use the file; the “recommended” examples are better because they use the file directly and handle the error, if any.
+The "not recommended” examples above check for accessibility and then use the file; the "recommended” examples are better because they use the file directly and handle the error, if any.
 
 In general, check for the accessibility of a file only if the file will not be used directly, for example when its accessibility is a signal from another process.
 
@@ -23396,7 +23396,7 @@ Using `fs.exists()` to check for the existence of a file before calling `fs.open
       }
     });
 
-The “not recommended” examples above check for existence and then use the file; the “recommended” examples are better because they use the file directly and handle the error, if any.
+The "not recommended” examples above check for existence and then use the file; the "recommended” examples are better because they use the file directly and handle the error, if any.
 
 In general, check for the existence of a file only if the file won’t be used directly, for example when its existence is a signal from another process.
 
@@ -24325,7 +24325,7 @@ It is unsafe to use `fs.writeFile()` multiple times on the same file without wai
 
 Similarly to `fs.readFile` - `fs.writeFile` is a convenience method that performs multiple `write` calls internally to write the buffer passed to it. For performance sensitive code consider using [`fs.createWriteStream()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fscreatewritestreampath-options).
 
-It is possible to use an [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fs.writeFile()`. Cancelation is “best effort”, and some amount of data is likely still to be written.
+It is possible to use an [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fs.writeFile()`. Cancelation is "best effort”, and some amount of data is likely still to be written.
 
     import { writeFile } from 'fs';
     import { Buffer } from 'buffer';
@@ -25212,7 +25212,7 @@ Added in: v14.3.0, v12.20.0
 
 When called, requests that the Node.js event loop *not* exit so long as the [&lt;fs.FSWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsfswatcher) is active. Calling `watcher.ref()` multiple times will have no effect.
 
-By default, all [&lt;fs.FSWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsfswatcher) objects are “ref’ed”, making it normally unnecessary to call `watcher.ref()` unless `watcher.unref()` had been called previously.
+By default, all [&lt;fs.FSWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsfswatcher) objects are "ref’ed”, making it normally unnecessary to call `watcher.ref()` unless `watcher.unref()` had been called previously.
 
 ##### `watcher.unref()`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_watcherunref)
 
@@ -25238,7 +25238,7 @@ Added in: v14.3.0, v12.20.0
 
 When called, requests that the Node.js event loop *not* exit so long as the [&lt;fs.StatWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsstatwatcher) is active. Calling `watcher.ref()` multiple times will have no effect.
 
-By default, all [&lt;fs.StatWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsstatwatcher) objects are “ref’ed”, making it normally unnecessary to call `watcher.ref()` unless `watcher.unref()` had been called previously.
+By default, all [&lt;fs.StatWatcher&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsstatwatcher) objects are "ref’ed”, making it normally unnecessary to call `watcher.ref()` unless `watcher.unref()` had been called previously.
 
 ##### `watcher.unref()`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_watcherunref_1)
 
@@ -25424,7 +25424,7 @@ The numeric identifier of the device containing the file.
 
 -   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 
-The file system specific “Inode” number for the file.
+The file system specific "Inode” number for the file.
 
 ##### `stats.mode`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_statsmode)
 
@@ -25580,12 +25580,12 @@ The `atimeNs`, `mtimeNs`, `ctimeNs`, `birthtimeNs` properties are [bigints](http
 
 The times in the stat object have the following semantics:
 
--   `atime` “Access Time”: Time when file data last accessed. Changed by the [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), and [`read(2)`](http://man7.org/linux/man-pages/man2/read.2.html) system calls.
--   `mtime` “Modified Time”: Time when file data last modified. Changed by the [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), and [`write(2)`](http://man7.org/linux/man-pages/man2/write.2.html) system calls.
--   `ctime` “Change Time”: Time when file status was last changed (inode data modification). Changed by the [`chmod(2)`](http://man7.org/linux/man-pages/man2/chmod.2.html), [`chown(2)`](http://man7.org/linux/man-pages/man2/chown.2.html), [`link(2)`](http://man7.org/linux/man-pages/man2/link.2.html), [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`rename(2)`](http://man7.org/linux/man-pages/man2/rename.2.html), [`unlink(2)`](http://man7.org/linux/man-pages/man2/unlink.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), [`read(2)`](http://man7.org/linux/man-pages/man2/read.2.html), and [`write(2)`](http://man7.org/linux/man-pages/man2/write.2.html) system calls.
--   `birthtime` “Birth Time”: Time of file creation. Set once when the file is created. On filesystems where birthtime is not available, this field may instead hold either the `ctime` or `1970-01-01T00:00Z` (ie, Unix epoch timestamp `0`). This value may be greater than `atime` or `mtime` in this case. On Darwin and other FreeBSD variants, also set if the `atime` is explicitly set to an earlier value than the current `birthtime` using the [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html) system call.
+-   `atime` "Access Time”: Time when file data last accessed. Changed by the [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), and [`read(2)`](http://man7.org/linux/man-pages/man2/read.2.html) system calls.
+-   `mtime` "Modified Time”: Time when file data last modified. Changed by the [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), and [`write(2)`](http://man7.org/linux/man-pages/man2/write.2.html) system calls.
+-   `ctime` "Change Time”: Time when file status was last changed (inode data modification). Changed by the [`chmod(2)`](http://man7.org/linux/man-pages/man2/chmod.2.html), [`chown(2)`](http://man7.org/linux/man-pages/man2/chown.2.html), [`link(2)`](http://man7.org/linux/man-pages/man2/link.2.html), [`mknod(2)`](http://man7.org/linux/man-pages/man2/mknod.2.html), [`rename(2)`](http://man7.org/linux/man-pages/man2/rename.2.html), [`unlink(2)`](http://man7.org/linux/man-pages/man2/unlink.2.html), [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html), [`read(2)`](http://man7.org/linux/man-pages/man2/read.2.html), and [`write(2)`](http://man7.org/linux/man-pages/man2/write.2.html) system calls.
+-   `birthtime` "Birth Time”: Time of file creation. Set once when the file is created. On filesystems where birthtime is not available, this field may instead hold either the `ctime` or `1970-01-01T00:00Z` (ie, Unix epoch timestamp `0`). This value may be greater than `atime` or `mtime` in this case. On Darwin and other FreeBSD variants, also set if the `atime` is explicitly set to an earlier value than the current `birthtime` using the [`utimes(2)`](http://man7.org/linux/man-pages/man2/utimes.2.html) system call.
 
-Prior to Node.js 0.12, the `ctime` held the `birthtime` on Windows systems. As of 0.12, `ctime` is not “creation time”, and on Unix systems, it never was.
+Prior to Node.js 0.12, the `ctime` held the `birthtime` on Windows systems. As of 0.12, `ctime` is not "creation time”, and on Unix systems, it never was.
 
 #### Class: `fs.WriteStream`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fswritestream)
 
@@ -29083,7 +29083,7 @@ A `URL` object, or any object with an `origin` property, may be passed as `origi
 
 ##### Specifying alternative services[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_specifying-alternative-services)
 
-The format of the `alt` parameter is strictly defined by [RFC 7838](https://tools.ietf.org/html/rfc7838) as an ASCII string containing a comma-delimited list of “alternative” protocols associated with a specific host and port.
+The format of the `alt` parameter is strictly defined by [RFC 7838](https://tools.ietf.org/html/rfc7838) as an ASCII string containing a comma-delimited list of "alternative” protocols associated with a specific host and port.
 
 For example, the value `'h2="example.org:81"'` indicates that the HTTP/2 protocol is available on the host `'example.org'` on TCP/IP port 81. The host and port *must* be contained within the quote (`"`) characters.
 
@@ -30393,7 +30393,7 @@ The `http2.getDefaultSettings()`, `http2.getPackedSettings()`, `http2.createServ
 -   `maxConcurrentStreams` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Specifies the maximum number of concurrent streams permitted on an `Http2Session`. There is no default value which implies, at least theoretically, 232-1 streams may be open concurrently at any given time in an `Http2Session`. The minimum value is 0. The maximum allowed value is 232-1. **Default:** `4294967295`.
 -   `maxHeaderListSize` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Specifies the maximum size (uncompressed octets) of header list that will be accepted. The minimum allowed value is 0. The maximum allowed value is 2232-1. **Default:** `65535`.
 -   `maxHeaderSize` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Alias for `maxHeaderListSize`.
--   `enableConnectProtocol`[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Specifies `true` if the “Extended Connect Protocol” defined by [RFC 8441](https://tools.ietf.org/html/rfc8441) is to be enabled. This setting is only meaningful if sent by the server. Once the `enableConnectProtocol` setting has been enabled for a given `Http2Session`, it cannot be disabled. **Default:** `false`.
+-   `enableConnectProtocol`[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Specifies `true` if the "Extended Connect Protocol” defined by [RFC 8441](https://tools.ietf.org/html/rfc8441) is to be enabled. This setting is only meaningful if sent by the server. Once the `enableConnectProtocol` setting has been enabled for a given `Http2Session`, it cannot be disabled. **Default:** `false`.
 
 All additional properties on the settings object are ignored.
 
@@ -30510,7 +30510,7 @@ An HTTP/2 CONNECT client:
 
 #### The extended `CONNECT` protocol[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_the-extended-connect-protocol)
 
-[RFC 8441](https://tools.ietf.org/html/rfc8441) defines an “Extended CONNECT Protocol” extension to HTTP/2 that may be used to bootstrap the use of an `Http2Stream` using the `CONNECT` method as a tunnel for other communication protocols (such as WebSockets).
+[RFC 8441](https://tools.ietf.org/html/rfc8441) defines an "Extended CONNECT Protocol” extension to HTTP/2 that may be used to bootstrap the use of an `Http2Stream` using the `CONNECT` method as a tunnel for other communication protocols (such as WebSockets).
 
 The use of the Extended CONNECT Protocol is enabled by HTTP/2 servers by using the `enableConnectProtocol` setting:
 
@@ -31874,7 +31874,7 @@ full
 
 full
 
-The “(not locale-aware)” designation denotes that the function carries out its operation just like the non-`Locale` version of the function, if one exists. For example, under `none` mode, `Date.prototype.toLocaleString()`’s operation is identical to that of `Date.prototype.toString()`.
+The "(not locale-aware)” designation denotes that the function carries out its operation just like the non-`Locale` version of the function, if one exists. For example, under `none` mode, `Date.prototype.toLocaleString()`’s operation is identical to that of `Date.prototype.toString()`.
 
 #### Disable all internationalization features (`none`)[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#intl_disable-all-internationalization-features-none)
 
@@ -31916,7 +31916,7 @@ If the `small-icu` option is used, one can still provide additional locale data 
 
 (If both are specified, the `--icu-data-dir` CLI parameter takes precedence.)
 
-ICU is able to automatically find and load a variety of data formats, but the data must be appropriate for the ICU version, and the file correctly named. The most common name for the data file is `icudt6X[bl].dat`, where `6X` denotes the intended ICU version, and `b` or `l` indicates the system’s endianness. Check [“ICU Data”](http://userguide.icu-project.org/icudata) article in the ICU User Guide for other supported formats and more details on ICU data in general.
+ICU is able to automatically find and load a variety of data formats, but the data must be appropriate for the ICU version, and the file correctly named. The most common name for the data file is `icudt6X[bl].dat`, where `6X` denotes the intended ICU version, and `b` or `l` indicates the system’s endianness. Check ["ICU Data”](http://userguide.icu-project.org/icudata) article in the ICU User Guide for other supported formats and more details on ICU data in general.
 
 The [full-icu](https://www.npmjs.com/package/full-icu) npm module can greatly simplify ICU data installation by detecting the ICU version of the running `node` executable and downloading the appropriate data file. After installing the module through `npm i full-icu`, the data file will be available at `./node_modules/full-icu`. This path can be then passed either to `NODE_ICU_DATA` or `--icu-data-dir` as shown above to enable full `Intl` support.
 
@@ -32048,12 +32048,12 @@ require(X) from module at path Y
 3.  If X begins with ‘./’ or ‘/’ or ‘../’
     1.  LOAD\_AS\_FILE(Y + X)
     2.  LOAD\_AS\_DIRECTORY(Y + X)
-    3.  THROW “not found”
+    3.  THROW "not found”
 4.  If X begins with ‘\#’
     1.  LOAD\_PACKAGE\_IMPORTS(X, dirname(Y))
 5.  LOAD\_PACKAGE\_SELF(X, dirname(Y))
 6.  LOAD\_NODE\_MODULES(X, dirname(Y))
-7.  THROW “not found”
+7.  THROW "not found”
 
 LOAD\_AS\_FILE(X)
 
@@ -32071,13 +32071,13 @@ LOAD\_INDEX(X)
 LOAD\_AS\_DIRECTORY(X)
 
 1.  If X/package.json is a file,
-    1.  Parse X/package.json, and look for “main” field.
-    2.  If “main” is a falsy value, GOTO 2.
+    1.  Parse X/package.json, and look for "main” field.
+    2.  If "main” is a falsy value, GOTO 2.
     3.  let M = X + (json main field)
     4.  LOAD\_AS\_FILE(M)
     5.  LOAD\_INDEX(M)
     6.  LOAD\_INDEX(X) DEPRECATED
-    7.  THROW “not found”
+    7.  THROW "not found”
 2.  LOAD\_INDEX(X)
 
 LOAD\_NODE\_MODULES(X, START)
@@ -32094,8 +32094,8 @@ NODE\_MODULES\_PATHS(START)
 2.  let I = count of PARTS - 1
 3.  let DIRS = \[GLOBAL\_FOLDERS\]
 4.  while I &gt;= 0,
-    1.  if PARTS\[I\] = “node\_modules” CONTINUE
-    2.  DIR = path join(PARTS\[0 .. I\] + “node\_modules”)
+    1.  if PARTS\[I\] = "node\_modules” CONTINUE
+    2.  DIR = path join(PARTS\[0 .. I\] + "node\_modules”)
     3.  DIRS = DIRS + DIR
     4.  let I = I - 1
 5.  return DIRS
@@ -32104,26 +32104,26 @@ LOAD\_PACKAGE\_IMPORTS(X, DIR)
 
 1.  Find the closest package scope SCOPE to DIR.
 2.  If no scope was found, return.
-3.  If the SCOPE/package.json “imports” is null or undefined, return.
-4.  let MATCH = PACKAGE\_IMPORTS\_RESOLVE(X, pathToFileURL(SCOPE), \[“node”, “require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
+3.  If the SCOPE/package.json "imports” is null or undefined, return.
+4.  let MATCH = PACKAGE\_IMPORTS\_RESOLVE(X, pathToFileURL(SCOPE), \["node”, "require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
 5.  RESOLVE\_ESM\_MATCH(MATCH).
 
 LOAD\_PACKAGE\_EXPORTS(X, DIR)
 
 1.  Try to interpret X as a combination of NAME and SUBPATH where the name may have a <span class="citation" data-cites="scope">@scope</span>/ prefix and the subpath begins with a slash (\`/\`).
 2.  If X does not match this pattern or DIR/NAME/package.json is not a file, return.
-3.  Parse DIR/NAME/package.json, and look for “exports” field.
-4.  If “exports” is null or undefined, return.
-5.  let MATCH = PACKAGE\_EXPORTS\_RESOLVE(pathToFileURL(DIR/NAME), “.” + SUBPATH, \`package.json\` “exports”, \[“node”, “require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
+3.  Parse DIR/NAME/package.json, and look for "exports” field.
+4.  If "exports” is null or undefined, return.
+5.  let MATCH = PACKAGE\_EXPORTS\_RESOLVE(pathToFileURL(DIR/NAME), ".” + SUBPATH, \`package.json\` "exports”, \["node”, "require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
 6.  RESOLVE\_ESM\_MATCH(MATCH)
 
 LOAD\_PACKAGE\_SELF(X, DIR)
 
 1.  Find the closest package scope SCOPE to DIR.
 2.  If no scope was found, return.
-3.  If the SCOPE/package.json “exports” is null or undefined, return.
-4.  If the SCOPE/package.json “name” is not the first segment of X, return.
-5.  let MATCH = PACKAGE\_EXPORTS\_RESOLVE(pathToFileURL(SCOPE), “.” + X.slice(“name”.length), \`package.json\` “exports”, \[“node”, “require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
+3.  If the SCOPE/package.json "exports” is null or undefined, return.
+4.  If the SCOPE/package.json "name” is not the first segment of X, return.
+5.  let MATCH = PACKAGE\_EXPORTS\_RESOLVE(pathToFileURL(SCOPE), ".” + X.slice("name”.length), \`package.json\` "exports”, \["node”, "require”\]) [defined in the ESM resolver](https://nodejs.org/dist/v16.13.1/docs/api/esm.md#resolver-algorithm-specification).
 6.  RESOLVE\_ESM\_MATCH(MATCH)
 
 RESOLVE\_ESM\_MATCH(MATCH)
@@ -32135,13 +32135,13 @@ RESOLVE\_ESM\_MATCH(MATCH)
 4.  Otherwise, if EXACT is false,
     1.  LOAD\_AS\_FILE(RESOLVED\_PATH)
     2.  LOAD\_AS\_DIRECTORY(RESOLVED\_PATH)
-5.  THROW “not found”
+5.  THROW "not found”
 
 ### Caching[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_caching)
 
 Modules are cached after the first time they are loaded. This means (among other things) that every call to `require('foo')` will get exactly the same object returned, if it would resolve to the same file.
 
-Provided `require.cache` is not modified, multiple calls to `require('foo')` will not cause the module code to be executed multiple times. This is an important feature. With it, “partially done” objects can be returned, thus allowing transitive dependencies to be loaded even when they would cause cycles.
+Provided `require.cache` is not modified, multiple calls to `require('foo')` will not cause the module code to be executed multiple times. This is an important feature. With it, "partially done” objects can be returned, thus allowing transitive dependencies to be loaded even when they would cause cycles.
 
 To have a module execute code multiple times, export a function, and call that function.
 
@@ -32416,7 +32416,7 @@ Added in: v0.1.17
 
 -   [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_the-module-object)
 
-The `Module` object representing the entry script loaded when the Node.js process launched. See [“Accessing the main module”](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_accessing-the-main-module).
+The `Module` object representing the entry script loaded when the Node.js process launched. See ["Accessing the main module”](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_accessing-the-main-module).
 
 In `entry.js` script:
 
@@ -33095,7 +33095,7 @@ In a more advanced scenario, this can also be used to transform an unsupported s
 
 Sometimes it might be necessary to run some code inside of the same global scope that the application runs in. This hook allows the return of a string that is run as a sloppy-mode script on startup.
 
-Similar to how CommonJS wrappers work, the code runs in an implicit function scope. The only argument is a `require`-like function that can be used to load builtins like “fs”: `getBuiltin(request: string)`.
+Similar to how CommonJS wrappers work, the code runs in an implicit function scope. The only argument is a `require`-like function that can be used to load builtins like "fs”: `getBuiltin(request: string)`.
 
 If the code needs more advanced `require` features, it has to construct its own `require` using `module.createRequire()`.
 
@@ -33297,7 +33297,7 @@ The resolver has the following properties:
 
 The algorithm to load an ES module specifier is given through the **ESM\_RESOLVE** method below. It returns the resolved URL for a module specifier relative to a parentURL.
 
-The algorithm to determine the module format of a resolved URL is provided by **ESM\_FORMAT**, which returns the unique module format for any file. The *“module”* format is returned for an ECMAScript Module, while the *“commonjs”* format is used to indicate loading through the legacy CommonJS loader. Additional formats such as *“addon”* can be extended in future updates.
+The algorithm to determine the module format of a resolved URL is provided by **ESM\_FORMAT**, which returns the unique module format for any file. The *"module”* format is returned for an ECMAScript Module, while the *"commonjs”* format is used to indicate loading through the legacy CommonJS loader. Additional formats such as *"addon”* can be extended in future updates.
 
 In the following algorithms, all subroutine errors are propagated as errors of these top-level routines unless stated otherwise.
 
@@ -33320,14 +33320,14 @@ The resolver can throw the following errors:
 > 1.  Let *resolved* be **undefined**.
 > 2.  If *specifier* is a valid URL, then
 >     1.  Set *resolved* to the result of parsing and reserializing *specifier* as a URL.
-> 3.  Otherwise, if *specifier* starts with *“/”*, *“./”* or *“../”*, then
+> 3.  Otherwise, if *specifier* starts with *"/”*, *"./”* or *"../”*, then
 >     1.  Set *resolved* to the URL resolution of *specifier* relative to *parentURL*.
-> 4.  Otherwise, if *specifier* starts with *“\#”*, then
+> 4.  Otherwise, if *specifier* starts with *"\#”*, then
 >     1.  Set *resolved* to the destructured value of the result of **PACKAGE\_IMPORTS\_RESOLVE**(*specifier*, *parentURL*, *defaultConditions*).
 > 5.  Otherwise,
 >     1.  Note: *specifier* is now a bare specifier.
 >     2.  Set *resolved* the result of **PACKAGE\_RESOLVE**(*specifier*, *parentURL*).
-> 6.  If *resolved* contains any percent encodings of *“/”* or *“\\”* (*“%2f”* and *“%5C”* respectively), then
+> 6.  If *resolved* contains any percent encodings of *"/”* or *"\\”* (*"%2f”* and *"%5C”* respectively), then
 >     1.  Throw an *Invalid Module Specifier* error.
 > 7.  If the file at *resolved* is a directory, then
 >     1.  Throw an *Unsupported Directory Import* error.
@@ -33343,21 +33343,21 @@ The resolver can throw the following errors:
 > 1.  Let *packageName* be **undefined**.
 > 2.  If *packageSpecifier* is an empty string, then
 >     1.  Throw an *Invalid Module Specifier* error.
-> 3.  If *packageSpecifier* does not start with *“@”*, then
->     1.  Set *packageName* to the substring of *packageSpecifier* until the first *“/”* separator or the end of the string.
+> 3.  If *packageSpecifier* does not start with *"@”*, then
+>     1.  Set *packageName* to the substring of *packageSpecifier* until the first *"/”* separator or the end of the string.
 > 4.  Otherwise,
->     1.  If *packageSpecifier* does not contain a *“/”* separator, then
+>     1.  If *packageSpecifier* does not contain a *"/”* separator, then
 >         1.  Throw an *Invalid Module Specifier* error.
->     2.  Set *packageName* to the substring of *packageSpecifier* until the second *“/”* separator or the end of the string.
-> 5.  If *packageName* starts with *“.”* or contains *“\\”* or *“%”*, then
+>     2.  Set *packageName* to the substring of *packageSpecifier* until the second *"/”* separator or the end of the string.
+> 5.  If *packageName* starts with *".”* or contains *"\\”* or *"%”*, then
 >     1.  Throw an *Invalid Module Specifier* error.
-> 6.  Let *packageSubpath* be *“.”* concatenated with the substring of *packageSpecifier* from the position at the length of *packageName*.
+> 6.  Let *packageSubpath* be *".”* concatenated with the substring of *packageSpecifier* from the position at the length of *packageName*.
 > 7.  Let *selfUrl* be the result of **PACKAGE\_SELF\_RESOLVE**(*packageName*, *packageSubpath*, *parentURL*).
 > 8.  If *selfUrl* is not **undefined**, return *selfUrl*.
-> 9.  If *packageSubpath* is *“.”* and *packageName* is a Node.js builtin module, then
->     1.  Return the string *“node:”* concatenated with *packageSpecifier*.
+> 9.  If *packageSubpath* is *".”* and *packageName* is a Node.js builtin module, then
+>     1.  Return the string *"node:”* concatenated with *packageSpecifier*.
 > 10. While *parentURL* is not the file system root,
-> 11. Let *packageURL* be the URL resolution of *“node\_modules/”* concatenated with *packageSpecifier*, relative to *parentURL*.
+> 11. Let *packageURL* be the URL resolution of *"node\_modules/”* concatenated with *packageSpecifier*, relative to *parentURL*.
 > 12. Set *parentURL* to the parent folder URL of *parentURL*.
 > 13. If the folder at *packageURL* does not exist, then
 >     1.  Set *parentURL* to the parent URL path of *parentURL*.
@@ -33366,7 +33366,7 @@ The resolver can throw the following errors:
 > 15. If *pjson* is not **null** and *pjson*.\_exports\_ is not **null** or **undefined**, then
 >     1.  Let *exports* be *pjson.exports*.
 >     2.  Return the *resolved* destructured value of the result of **PACKAGE\_EXPORTS\_RESOLVE**(*packageURL*, *packageSubpath*, *pjson.exports*, *defaultConditions*).
-> 16. Otherwise, if *packageSubpath* is equal to *“.”*, then
+> 16. Otherwise, if *packageSubpath* is equal to *".”*, then
 >     1.  Return the result applying the legacy **LOAD\_AS\_DIRECTORY** CommonJS resolver to *packageURL*, throwing a *Module Not Found* error for no resolution.
 > 17. Otherwise,
 >     1.  Return the URL resolution of *packageSubpath* in *packageURL*.
@@ -33386,19 +33386,19 @@ The resolver can throw the following errors:
 
 **PACKAGE\_EXPORTS\_RESOLVE**(*packageURL*, *subpath*, *exports*, *conditions*)
 
-> 1.  If *exports* is an Object with both a key starting with *“.”* and a key not starting with *“.”*, throw an *Invalid Package Configuration* error.
-> 2.  If *subpath* is equal to *“.”*, then
+> 1.  If *exports* is an Object with both a key starting with *".”* and a key not starting with *".”*, throw an *Invalid Package Configuration* error.
+> 2.  If *subpath* is equal to *".”*, then
 >     1.  Let *mainExport* be **undefined**.
->     2.  If *exports* is a String or Array, or an Object containing no keys starting with *“.”*, then
+>     2.  If *exports* is a String or Array, or an Object containing no keys starting with *".”*, then
 >         1.  Set *mainExport* to *exports*.
->     3.  Otherwise if *exports* is an Object containing a *“.”* property, then
->         1.  Set *mainExport* to *exports*\[*“.”*\].
+>     3.  Otherwise if *exports* is an Object containing a *".”* property, then
+>         1.  Set *mainExport* to *exports*\[*".”*\].
 >     4.  If *mainExport* is not **undefined**, then
 >         1.  Let *resolved* be the result of **PACKAGE\_TARGET\_RESOLVE**( *packageURL*, *mainExport*, *""*, **false**, **false**, *conditions*).
 >         2.  If *resolved* is not **null** or **undefined**, then
 >             1.  Return *resolved*.
-> 3.  Otherwise, if *exports* is an Object and all keys of *exports* start with *“.”*, then
->     1.  Let *matchKey* be the string *“./”* concatenated with *subpath*.
+> 3.  Otherwise, if *exports* is an Object and all keys of *exports* start with *".”*, then
+>     1.  Let *matchKey* be the string *"./”* concatenated with *subpath*.
 >     2.  Let *resolvedMatch* be result of **PACKAGE\_IMPORTS\_EXPORTS\_RESOLVE**( *matchKey*, *exports*, *packageURL*, **false**, *conditions*).
 >     3.  If *resolvedMatch*.\_resolve\_ is not **null** or **undefined**, then
 >         1.  Return *resolvedMatch*.
@@ -33406,8 +33406,8 @@ The resolver can throw the following errors:
 
 **PACKAGE\_IMPORTS\_RESOLVE**(*specifier*, *parentURL*, *conditions*)
 
-> 1.  Assert: *specifier* begins with *“\#”*.
-> 2.  If *specifier* is exactly equal to *“\#”* or starts with *“\#/”*, then
+> 1.  Assert: *specifier* begins with *"\#”*.
+> 2.  If *specifier* is exactly equal to *"\#”* or starts with *"\#/”*, then
 >     1.  Throw an *Invalid Module Specifier* error.
 > 3.  Let *packageURL* be the result of **READ\_PACKAGE\_SCOPE**(*parentURL*).
 > 4.  If *packageURL* is not **null**, then
@@ -33420,17 +33420,17 @@ The resolver can throw the following errors:
 
 **PACKAGE\_IMPORTS\_EXPORTS\_RESOLVE**(*matchKey*, *matchObj*, *packageURL*, *isImports*, *conditions*)
 
-> 1.  If *matchKey* is a key of *matchObj* and does not end in *“/”* or contain *“\*”*, then
+> 1.  If *matchKey* is a key of *matchObj* and does not end in *"/”* or contain *"\*”*, then
 >     1.  Let *target* be the value of *matchObj*\[*matchKey*\].
 >     2.  Let *resolved* be the result of **PACKAGE\_TARGET\_RESOLVE**( *packageURL*, *target*, *""*, **false**, *isImports*, *conditions*).
 >     3.  Return the object *{ resolved, exact: **true** }*.
-> 2.  Let *expansionKeys* be the list of keys of *matchObj* either ending in *“/”* or containing only a single *“\*”*, sorted by the sorting function **PATTERN\_KEY\_COMPARE** which orders in descending order of specificity.
+> 2.  Let *expansionKeys* be the list of keys of *matchObj* either ending in *"/”* or containing only a single *"\*”*, sorted by the sorting function **PATTERN\_KEY\_COMPARE** which orders in descending order of specificity.
 > 3.  For each key *expansionKey* in *expansionKeys*, do
 >     1.  Let *patternBase* be **null**.
->     2.  If *expansionKey* contains *“\*”*, set *patternBase* to the substring of *expansionKey* up to but excluding the first *“\*”* character.
+>     2.  If *expansionKey* contains *"\*”*, set *patternBase* to the substring of *expansionKey* up to but excluding the first *"\*”* character.
 >     3.  If *patternBase* is not **null** and *matchKey* starts with but is not equal to *patternBase*, then
->         1.  If *matchKey* ends with *“/”*, throw an *Invalid Module Specifier* error.
->         2.  Let *patternTrailer* be the substring of *expansionKey* from the index after the first *“\*”* character.
+>         1.  If *matchKey* ends with *"/”*, throw an *Invalid Module Specifier* error.
+>         2.  Let *patternTrailer* be the substring of *expansionKey* from the index after the first *"\*”* character.
 >         3.  If *patternTrailer* has zero length, or if *matchKey* ends with *patternTrailer* and the length of *matchKey* is greater than or equal to the length of *expansionKey*, then
 >             1.  Let *target* be the value of *matchObj*\[*expansionKey*\].
 >             2.  Let *subpath* be the substring of *matchKey* starting at the index of the length of *patternBase* up to the length of *matchKey* minus the length of *patternTrailer*.
@@ -33445,14 +33445,14 @@ The resolver can throw the following errors:
 
 **PATTERN\_KEY\_COMPARE**(*keyA*, *keyB*)
 
-> 1.  Assert: *keyA* ends with *“/”* or contains only a single *“\*”*.
-> 2.  Assert: *keyB* ends with *“/”* or contains only a single *“\*”*.
-> 3.  Let *baseLengthA* be the index of *“\*”* in *keyA* plus one, if *keyA* contains *“\*”*, or the length of *keyA* otherwise.
-> 4.  Let *baseLengthB* be the index of *“\*”* in *keyB* plus one, if *keyB* contains *“\*”*, or the length of *keyB* otherwise.
+> 1.  Assert: *keyA* ends with *"/”* or contains only a single *"\*”*.
+> 2.  Assert: *keyB* ends with *"/”* or contains only a single *"\*”*.
+> 3.  Let *baseLengthA* be the index of *"\*”* in *keyA* plus one, if *keyA* contains *"\*”*, or the length of *keyA* otherwise.
+> 4.  Let *baseLengthB* be the index of *"\*”* in *keyB* plus one, if *keyB* contains *"\*”*, or the length of *keyB* otherwise.
 > 5.  If *baseLengthA* is greater than *baseLengthB*, return -1.
 > 6.  If *baseLengthB* is greater than *baseLengthA*, return 1.
-> 7.  If *keyA* does not contain *“\*”*, return 1.
-> 8.  If *keyB* does not contain *“\*”*, return -1.
+> 7.  If *keyA* does not contain *"\*”*, return 1.
+> 8.  If *keyB* does not contain *"\*”*, return -1.
 > 9.  If the length of *keyA* is greater than the length of *keyB*, return -1.
 > 10. If the length of *keyB* is greater than the length of *keyA*, return 1.
 > 11. Return 0.
@@ -33460,25 +33460,25 @@ The resolver can throw the following errors:
 **PACKAGE\_TARGET\_RESOLVE**(*packageURL*, *target*, *subpath*, *pattern*, *internal*, *conditions*)
 
 > 1.  If *target* is a String, then
->     1.  If *pattern* is **false**, *subpath* has non-zero length and *target* does not end with *“/”*, throw an *Invalid Module Specifier* error.
->     2.  If *target* does not start with *“./”*, then
->         1.  If *internal* is **true** and *target* does not start with *“../”* or *“/”* and is not a valid URL, then
+>     1.  If *pattern* is **false**, *subpath* has non-zero length and *target* does not end with *"/”*, throw an *Invalid Module Specifier* error.
+>     2.  If *target* does not start with *"./”*, then
+>         1.  If *internal* is **true** and *target* does not start with *"../”* or *"/”* and is not a valid URL, then
 >             1.  If *pattern* is **true**, then
->                 1.  Return **PACKAGE\_RESOLVE**(*target* with every instance of *“\*”* replaced by *subpath*, *packageURL* + *“/”*)\_.
->             2.  Return **PACKAGE\_RESOLVE**(*target* + *subpath*, *packageURL* + *“/”*)\_.
+>                 1.  Return **PACKAGE\_RESOLVE**(*target* with every instance of *"\*”* replaced by *subpath*, *packageURL* + *"/”*)\_.
+>             2.  Return **PACKAGE\_RESOLVE**(*target* + *subpath*, *packageURL* + *"/”*)\_.
 >         2.  Otherwise, throw an *Invalid Package Target* error.
->     3.  If *target* split on *“/”* or *“\\”* contains any *“.”*, *“..”* or *“node\_modules”* segments after the first segment, throw an *Invalid Package Target* error.
+>     3.  If *target* split on *"/”* or *"\\”* contains any *".”*, *"..”* or *"node\_modules”* segments after the first segment, throw an *Invalid Package Target* error.
 >     4.  Let *resolvedTarget* be the URL resolution of the concatenation of *packageURL* and *target*.
 >     5.  Assert: *resolvedTarget* is contained in *packageURL*.
->     6.  If *subpath* split on *“/”* or *“\\”* contains any *“.”*, *“..”* or *“node\_modules”* segments, throw an *Invalid Module Specifier* error.
+>     6.  If *subpath* split on *"/”* or *"\\”* contains any *".”*, *"..”* or *"node\_modules”* segments, throw an *Invalid Module Specifier* error.
 >     7.  If *pattern* is **true**, then
->         1.  Return the URL resolution of *resolvedTarget* with every instance of *“\*”* replaced with *subpath*.
+>         1.  Return the URL resolution of *resolvedTarget* with every instance of *"\*”* replaced with *subpath*.
 >     8.  Otherwise,
 >         1.  Return the URL resolution of the concatenation of *subpath* and *resolvedTarget*.
 > 2.  Otherwise, if *target* is a non-null Object, then
 >     1.  If *exports* contains any index property keys, as defined in ECMA-262 [6.1.7 Array Index](https://tc39.es/ecma262/#integer-index), throw an *Invalid Package Configuration* error.
 >     2.  For each property *p* of *target*, in object insertion order as,
->         1.  If *p* equals *“default”* or *conditions* contains an entry for *p*, then
+>         1.  If *p* equals *"default”* or *conditions* contains an entry for *p*, then
 >             1.  Let *targetValue* be the value of the *p* property in *target*.
 >             2.  Let *resolved* be the result of **PACKAGE\_TARGET\_RESOLVE**( *packageURL*, *targetValue*, *subpath*, *pattern*, *internal*, *conditions*).
 >             3.  If *resolved* is equal to **undefined**, continue the loop.
@@ -33498,13 +33498,13 @@ The resolver can throw the following errors:
 
 > 1.  Assert: *url* corresponds to an existing file.
 > 2.  Let *pjson* be the result of **READ\_PACKAGE\_SCOPE**(*url*).
-> 3.  If *url* ends in *“.mjs”*, then
->     1.  Return *“module”*.
-> 4.  If *url* ends in *“.cjs”*, then
->     1.  Return *“commonjs”*.
-> 5.  If *pjson?.type* exists and is *“module”*, then
->     1.  If *url* ends in *“.js”*, then
->         1.  Return *“module”*.
+> 3.  If *url* ends in *".mjs”*, then
+>     1.  Return *"module”*.
+> 4.  If *url* ends in *".cjs”*, then
+>     1.  Return *"commonjs”*.
+> 5.  If *pjson?.type* exists and is *"module”*, then
+>     1.  If *url* ends in *".js”*, then
+>         1.  Return *"module”*.
 >     2.  Throw an *Unsupported File Extension* error.
 > 6.  Otherwise,
 >     1.  Throw an *Unsupported File Extension* error.
@@ -33514,7 +33514,7 @@ The resolver can throw the following errors:
 > 1.  Let *scopeURL* be *url*.
 > 2.  While *scopeURL* is not the file system root,
 >     1.  Set *scopeURL* to the parent URL of *scopeURL*.
->     2.  If *scopeURL* ends in a *“node\_modules”* path segment, return **null**.
+>     2.  If *scopeURL* ends in a *"node\_modules”* path segment, return **null**.
 >     3.  Let *pjson* be the result of **READ\_PACKAGE\_JSON**(*scopeURL*).
 >     4.  If *pjson* is not **null**, then
 >         1.  Return *pjson*.
@@ -33522,7 +33522,7 @@ The resolver can throw the following errors:
 
 **READ\_PACKAGE\_JSON**(*packageURL*)
 
-> 1.  Let *pjsonURL* be the resolution of *“package.json”* within *packageURL*.
+> 1.  Let *pjsonURL* be the resolution of *"package.json”* within *packageURL*.
 > 2.  If the file at *pjsonURL* does not exist, then
 >     1.  Return **null**.
 > 3.  If the file at *packageURL* does not parse as valid JSON, then
@@ -33750,7 +33750,7 @@ For completeness there is also `--input-type=commonjs`, for explicitly running s
 
 While all Node.js projects are expected to be installable by all package managers once published, their development teams are often required to use one specific package manager. To make this process easier, Node.js ships with a tool called [Corepack](https://nodejs.org/dist/v16.13.1/docs/api/corepack.html) that aims to make all package managers transparently available in your environment - provided you have Node.js installed.
 
-By default Corepack won’t enforce any specific package manager and will use the generic “Last Known Good” versions associated with each Node.js release, but you can improve this experience by setting the [`"packageManager"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_packagemanager) field in your project’s `package.json`.
+By default Corepack won’t enforce any specific package manager and will use the generic "Last Known Good” versions associated with each Node.js release, but you can improve this experience by setting the [`"packageManager"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_packagemanager) field in your project’s `package.json`.
 
 ### Package entry points[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_package-entry-points)
 
@@ -34104,7 +34104,7 @@ Node.js can now run ES module entry points, and a package can contain both Commo
 
 #### Dual package hazard[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_dual-package-hazard)
 
-When an application is using a package that provides both CommonJS and ES module sources, there is a risk of certain bugs if both versions of the package get loaded. This potential comes from the fact that the `pkgInstance` created by `const pkgInstance = require('pkg')` is not the same as the `pkgInstance` created by `import pkgInstance from 'pkg'` (or an alternative main path like `'pkg/module'`). This is the “dual package hazard,” where two versions of the same package can be loaded within the same runtime environment. While it is unlikely that an application or package would intentionally load both versions directly, it is common for an application to load one version while a dependency of the application loads the other version. This hazard can happen because Node.js supports intermixing CommonJS and ES modules, and can lead to unexpected behavior.
+When an application is using a package that provides both CommonJS and ES module sources, there is a risk of certain bugs if both versions of the package get loaded. This potential comes from the fact that the `pkgInstance` created by `const pkgInstance = require('pkg')` is not the same as the `pkgInstance` created by `import pkgInstance from 'pkg'` (or an alternative main path like `'pkg/module'`). This is the "dual package hazard,” where two versions of the same package can be loaded within the same runtime environment. While it is unlikely that an application or package would intentionally load both versions directly, it is common for an application to load one version while a dependency of the application loads the other version. This hazard can happen because Node.js supports intermixing CommonJS and ES modules, and can lead to unexpected behavior.
 
 If the package main export is a constructor, an `instanceof` comparison of instances created by the two versions returns `false`, and if the export is an object, properties added to one (like `pkgInstance.foo = 3`) are not present on the other. This differs from how `import` and `require` statements work in all-CommonJS or all-ES module environments, respectively, and therefore is surprising to users. It also differs from the behavior users are familiar with when using transpilation via tools like [Babel](https://babeljs.io/) or [`esm`](https://github.com/standard-things/esm#readme).
 
@@ -34843,7 +34843,7 @@ This property shows the number of characters buffered for writing. The buffer ma
 
 `net.Socket` has the property that `socket.write()` always works. This is to help users get up and running quickly. The computer cannot always keep up with the amount of data that is written to a socket. The network connection simply might be too slow. Node.js will internally queue up the data written to a socket and send it out over the wire when it is possible.
 
-The consequence of this internal buffering is that memory may grow. Users who experience large or growing `bufferSize` should attempt to “throttle” the data flows in their program with [`socket.pause()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketpause) and [`socket.resume()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketresume).
+The consequence of this internal buffering is that memory may grow. Users who experience large or growing `bufferSize` should attempt to "throttle” the data flows in their program with [`socket.pause()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketpause) and [`socket.resume()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketresume).
 
 #### `socket.bytesRead`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketbytesread)
 
@@ -35253,7 +35253,7 @@ To connect on the socket `/tmp/echo.sock`:
 Added in: v0.1.90
 
 -   `path` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Path the socket should connect to. Will be passed to [`socket.connect(path[, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectpath-connectlistener). See [Identifying paths for IPC connections](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_identifying-paths-for-ipc-connections).
--   `connectListener` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Common parameter of the [`net.createConnection()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateconnection) functions, an “once” listener for the `'connect'` event on the initiating socket. Will be passed to [`socket.connect(path[, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectpath-connectlistener).
+-   `connectListener` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Common parameter of the [`net.createConnection()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateconnection) functions, an "once” listener for the `'connect'` event on the initiating socket. Will be passed to [`socket.connect(path[, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectpath-connectlistener).
 -   Returns: [&lt;net.Socket&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) The newly created socket used to start the connection.
 
 Initiates an [IPC](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_ipc-support) connection.
@@ -35266,7 +35266,7 @@ Added in: v0.1.90
 
 -   `port` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Port the socket should connect to. Will be passed to [`socket.connect(port[, host][, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectport-host-connectlistener).
 -   `host` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Host the socket should connect to. Will be passed to [`socket.connect(port[, host][, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectport-host-connectlistener). **Default:** `'localhost'`.
--   `connectListener` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Common parameter of the [`net.createConnection()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateconnection) functions, an “once” listener for the `'connect'` event on the initiating socket. Will be passed to [`socket.connect(port[, host][, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectport-host-connectlistener).
+-   `connectListener` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Common parameter of the [`net.createConnection()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateconnection) functions, an "once” listener for the `'connect'` event on the initiating socket. Will be passed to [`socket.connect(port[, host][, connectListener])`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectport-host-connectlistener).
 -   Returns: [&lt;net.Socket&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) The newly created socket used to start the connection.
 
 Initiates a TCP connection.
@@ -37625,7 +37625,7 @@ To mitigate tampering with policy files on disk, an integrity for the policy fil
 
 #### Error behavior[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_error-behavior)
 
-When a policy check fails, Node.js by default will throw an error. It is possible to change the error behavior to one of a few possibilities by defining an “onerror” field in a policy manifest. The following values are available to change the behavior:
+When a policy check fails, Node.js by default will throw an error. It is possible to change the error behavior to one of a few possibilities by defining an "onerror” field in a policy manifest. The following values are available to change the behavior:
 
 -   `"exit"`: will exit the process immediately. No cleanup code will be allowed to run.
 -   `"log"`: will log the error at the site of the failure.
@@ -37703,7 +37703,7 @@ Specifier strings are canonicalized but not resolved prior to be used for matchi
 
 Any specifier used to load `file:///C:/app/utils.js` would then be intercepted and redirected to `file:///C:/app/utils-v2.js` instead regardless of using an absolute or relative specifier. However, if a specifier that is not an absolute or relative URL string is used, it would not be intercepted. So, if an import such as `import('#utils')` was used, it would not be intercepted.
 
-If the value of the redirection is `true`, a “dependencies” field at the top of the policy file will be used. If that field at the top of the policy file is `true` the default node searching algorithms are used to find the module.
+If the value of the redirection is `true`, a "dependencies” field at the top of the policy file will be used. If that field at the top of the policy file is `true` the default node searching algorithms are used to find the module.
 
 If the value of the redirection is a string, it is resolved relative to the manifest and then immediately used without searching.
 
@@ -37870,7 +37870,7 @@ Given an import map:
 
 Import maps assume you can get any resource by default. This means `"dependencies"` at the top level of the policy should be set to `true`. Policies require this to be opt-in since it enables all resources of the application cross linkage which doesn’t make sense for many scenarios. They also assume any given scope has access to any scope above its allowed dependencies; all scopes emulating import maps must set `"cascade": true`.
 
-Import maps only have a single top level scope for their “imports”. So for emulating `"imports"` use the `""` scope. For emulating `"scopes"` use the `"scopes"` in a similar manner to how `"scopes"` works in import maps.
+Import maps only have a single top level scope for their "imports”. So for emulating `"imports"` use the `""` scope. For emulating `"scopes"` use the `"scopes"` in a similar manner to how `"scopes"` works in import maps.
 
 Caveats: Policies do not use string matching for various finding of scope. They do URL traversals. This means things like `blob:` and `data:` URLs might not be entirely interoperable between the two systems. For example import maps can partially match a `data:` or `blob:` URL by partitioning the URL on a `/` character, policies intentionally cannot. For `blob:` URLs import map scopes do not adopt the origin of the `blob:` URL.
 
@@ -38099,7 +38099,7 @@ Installing an `'uncaughtExceptionMonitor'` listener does not change the behavior
 -   `reason` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) The object with which the promise was rejected (typically an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) object).
 -   `promise` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) The rejected promise.
 
-The `'unhandledRejection'` event is emitted whenever a `Promise` is rejected and no error handler is attached to the promise within a turn of the event loop. When programming with Promises, exceptions are encapsulated as “rejected promises”. Rejections can be caught and handled using [`promise.catch()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) and are propagated through a `Promise` chain. The `'unhandledRejection'` event is useful for detecting and keeping track of promises that were rejected whose rejections have not yet been handled.
+The `'unhandledRejection'` event is emitted whenever a `Promise` is rejected and no error handler is attached to the promise within a turn of the event loop. When programming with Promises, exceptions are encapsulated as "rejected promises”. Rejections can be caught and handled using [`promise.catch()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) and are propagated through a `Promise` chain. The `'unhandledRejection'` event is useful for detecting and keeping track of promises that were rejected whose rejections have not yet been handled.
 
     import process from 'process';
 
@@ -39011,7 +39011,7 @@ This is the same value as the `rss` property provided by `process.memoryUsage()`
 -   `callback` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   `...args` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Additional arguments to pass when invoking the `callback`
 
-`process.nextTick()` adds `callback` to the “next tick queue”. This queue is fully drained after the current operation on the JavaScript stack runs to completion and before the event loop is allowed to continue. It’s possible to create an infinite loop if one were to recursively call `process.nextTick()`. See the [Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#process-nexttick) guide for more background.
+`process.nextTick()` adds `callback` to the "next tick queue”. This queue is fully drained after the current operation on the JavaScript stack runs to completion and before the event loop is allowed to continue. It’s possible to create an infinite loop if one were to recursively call `process.nextTick()`. See the [Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#process-nexttick) guide for more background.
 
     import { nextTick } from 'process';
 
@@ -39074,7 +39074,7 @@ The following approach is much better:
 
 #### When to use `queueMicrotask()` vs. `process.nextTick()`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_when-to-use-queuemicrotask-vs-processnexttick)
 
-The [`queueMicrotask()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_queuemicrotaskcallback) API is an alternative to `process.nextTick()` that also defers execution of a function using the same microtask queue used to execute the then, catch, and finally handlers of resolved promises. Within Node.js, every time the “next tick queue” is drained, the microtask queue is drained immediately after.
+The [`queueMicrotask()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_queuemicrotaskcallback) API is an alternative to `process.nextTick()` that also defers execution of a function using the same microtask queue used to execute the then, catch, and finally handlers of resolved promises. Within Node.js, every time the "next tick queue” is drained, the microtask queue is drained immediately after.
 
     import { nextTick } from 'process';
 
@@ -39507,9 +39507,9 @@ The `process.stdin` property returns a stream connected to `stdin` (fd `0`). It 
 
 For details of how to read from `stdin` see [`readable.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize).
 
-As a [Duplex](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_duplex-and-transform-streams) stream, `process.stdin` can also be used in “old” mode that is compatible with scripts written for Node.js prior to v0.10. For more information see [Stream compatibility](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_compatibility-with-older-nodejs-versions).
+As a [Duplex](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_duplex-and-transform-streams) stream, `process.stdin` can also be used in "old” mode that is compatible with scripts written for Node.js prior to v0.10. For more information see [Stream compatibility](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_compatibility-with-older-nodejs-versions).
 
-In “old” streams mode the `stdin` stream is paused by default, so one must call `process.stdin.resume()` to read from it. Note also that calling `process.stdin.resume()` itself would switch stream to “old” mode.
+In "old” streams mode the `stdin` stream is paused by default, so one must call `process.stdin.resume()` to read from it. Note also that calling `process.stdin.resume()` itself would switch stream to "old” mode.
 
 #### `process.stdin.fd`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdinfd)
 
@@ -39874,7 +39874,7 @@ Added in: v0.1.25
 -   `options`
     -   `encodeURIComponent` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) The function to use when converting URL-unsafe characters to percent-encoding in the query string. **Default:** `querystring.escape()`.
 
-The `querystring.stringify()` method produces a URL query string from a given `obj` by iterating through the object’s “own properties”.
+The `querystring.stringify()` method produces a URL query string from a given `obj` by iterating through the object’s "own properties”.
 
 It serializes the following types of values passed in `obj`: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) | [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [&lt;number\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) | [&lt;bigint\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) | [&lt;boolean\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) The numeric values must be finite. Any other input values will be coerced to empty strings.
 
@@ -41087,7 +41087,7 @@ Running this application from the command line will start a REPL on stdin. Other
 
 By starting a REPL from a Unix socket-based server instead of stdin, it is possible to connect to a long-running Node.js process without restarting it.
 
-For an example of running a “full-featured” (`terminal`) REPL over a `net.Server` and `net.Socket` instance, see: <https://gist.github.com/TooTallNate/2209310>.
+For an example of running a "full-featured” (`terminal`) REPL over a `net.Server` and `net.Socket` instance, see: <https://gist.github.com/TooTallNate/2209310>.
 
 For an example of running a REPL instance over [`curl(1)`](https://curl.haxx.se/docs/manpage.html), see: <https://gist.github.com/TooTallNate/2053342>.
 
@@ -41623,7 +41623,7 @@ The `stream/promises` API provides an alternative set of asynchronous utility fu
 
 #### Object mode[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_object-mode)
 
-All streams created by Node.js APIs operate exclusively on strings and `Buffer` (or `Uint8Array`) objects. It is possible, however, for stream implementations to work with other types of JavaScript values (with the exception of `null`, which serves a special purpose within streams). Such streams are considered to operate in “object mode”.
+All streams created by Node.js APIs operate exclusively on strings and `Buffer` (or `Uint8Array`) objects. It is possible, however, for stream implementations to work with other types of JavaScript values (with the exception of `null`, which serves a special purpose within streams). Such streams are considered to operate in "object mode”.
 
 Stream instances are switched into object mode using the `objectMode` option when the stream is created. Attempting to switch an existing stream into object mode is not safe.
 
@@ -42078,7 +42078,7 @@ Adding a [`'readable'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#strea
 
 ##### Three states[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_three-states)
 
-The “two modes” of operation for a `Readable` stream are a simplified abstraction for the more complicated internal state management that is happening within the `Readable` stream implementation.
+The "two modes” of operation for a `Readable` stream are a simplified abstraction for the more complicated internal state management that is happening within the `Readable` stream implementation.
 
 Specifically, at any given point in time, every `Readable` is in one of three possible states:
 
@@ -42508,7 +42508,7 @@ If the `destination` is specified, but no pipe is set up for it, then the method
 
 Passing `chunk` as `null` signals the end of the stream (EOF) and behaves the same as `readable.push(null)`, after which no more data can be written. The EOF signal is put at the end of the buffer and any buffered data will still be flushed.
 
-The `readable.unshift()` method pushes a chunk of data back into the internal buffer. This is useful in certain situations where a stream is being consumed by code that needs to “un-consume” some amount of data that it has optimistically pulled out of the source, so that the data can be passed on to some other party.
+The `readable.unshift()` method pushes a chunk of data back into the internal buffer. This is useful in certain situations where a stream is being consumed by code that needs to "un-consume” some amount of data that it has optimistically pulled out of the source, so that the data can be passed on to some other party.
 
 The `stream.unshift(chunk)` method cannot be called after the [`'end'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-end) event has been emitted or a runtime error will be thrown.
 
@@ -42553,7 +42553,7 @@ Unlike [`stream.push(chunk)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html
 
 Added in: v0.9.4
 
--   `stream` [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_stream) An “old style” readable stream
+-   `stream` [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_stream) An "old style” readable stream
 -   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 Prior to Node.js 0.10, streams did not implement the entire `stream` module API as it is currently defined. (See [Compatibility](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_compatibility-with-older-nodejs-versions) for more information.)
@@ -43067,7 +43067,7 @@ Operate on written data, then read the result
 
 [`_transform()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_transform_transformchunk-encoding-callback), [`_flush()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_transform_flushcallback), [`_final()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_writable_finalcallback)
 
-The implementation code for a stream should *never* call the “public” methods of a stream that are intended for use by consumers (as described in the [API for stream consumers](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_api-for-stream-consumers) section). Doing so may lead to adverse side effects in application code consuming the stream.
+The implementation code for a stream should *never* call the "public” methods of a stream that are intended for use by consumers (as described in the [API for stream consumers](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_api-for-stream-consumers) section). Doing so may lead to adverse side effects in application code consuming the stream.
 
 Avoid overriding public methods such as `write()`, `end()`, `cork()`, `uncork()`, `read()` and `destroy()`, or emitting internal events such as `'error'`, `'data'`, `'end'`, `'finish'` and `'close'` through `.emit()`. Doing so can break current and future stream invariants leading to behavior and/or compatibility issues with other streams, stream utilities, and user expectations.
 
@@ -43458,7 +43458,7 @@ When [`readable._read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#str
 
 Once the [`readable._read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readable_readsize) method has been called, it will not be called again until more data is pushed through the [`readable.push()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablepushchunk-encoding) method. Empty data such as empty buffers and strings will not cause [`readable._read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readable_readsize) to be called.
 
-The `size` argument is advisory. For implementations where a “read” is a single operation that returns data can use the `size` argument to determine how much data to fetch. Other implementations may ignore this argument and simply provide data whenever it becomes available. There is no need to “wait” until `size` bytes are available before calling [`stream.push(chunk)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablepushchunk-encoding).
+The `size` argument is advisory. For implementations where a "read” is a single operation that returns data can use the `size` argument to determine how much data to fetch. Other implementations may ignore this argument and simply provide data whenever it becomes available. There is no need to "wait” until `size` bytes are available before calling [`stream.push(chunk)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablepushchunk-encoding).
 
 The [`readable._read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readable_readsize) method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
 
@@ -43911,7 +43911,7 @@ Prior to Node.js 0.10, the `Readable` stream interface was simpler, but also les
 -   Rather than waiting for calls to the [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) method, [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) events would begin emitting immediately. Applications that would need to perform some amount of work to decide how to handle data were required to store read data into buffers so the data would not be lost.
 -   The [`stream.pause()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablepause) method was advisory, rather than guaranteed. This meant that it was still necessary to be prepared to receive [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) events *even when the stream was in a paused state*.
 
-In Node.js 0.10, the [`Readable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) class was added. For backward compatibility with older Node.js programs, `Readable` streams switch into “flowing mode” when a [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) event handler is added, or when the [`stream.resume()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readableresume) method is called. The effect is that, even when not using the new [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) method and [`'readable'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-readable) event, it is no longer necessary to worry about losing [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) chunks.
+In Node.js 0.10, the [`Readable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) class was added. For backward compatibility with older Node.js programs, `Readable` streams switch into "flowing mode” when a [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) event handler is added, or when the [`stream.resume()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readableresume) method is called. The effect is that, even when not using the new [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) method and [`'readable'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-readable) event, it is no longer necessary to worry about losing [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) chunks.
 
 While most applications will continue to function normally, this introduces an edge case in the following conditions:
 
@@ -44058,7 +44058,7 @@ Added in: v9.7.0
 
 When called, requests that the Node.js event loop *not* exit so long as the `Immediate` is active. Calling `immediate.ref()` multiple times will have no effect.
 
-By default, all `Immediate` objects are “ref’ed”, making it normally unnecessary to call `immediate.ref()` unless `immediate.unref()` had been called previously.
+By default, all `Immediate` objects are "ref’ed”, making it normally unnecessary to call `immediate.ref()` unless `immediate.unref()` had been called previously.
 
 #### `immediate.unref()`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_immediateunref)
 
@@ -44098,7 +44098,7 @@ Added in: v0.9.1
 
 When called, requests that the Node.js event loop *not* exit so long as the `Timeout` is active. Calling `timeout.ref()` multiple times will have no effect.
 
-By default, all `Timeout` objects are “ref’ed”, making it normally unnecessary to call `timeout.ref()` unless `timeout.unref()` had been called previously.
+By default, all `Timeout` objects are "ref’ed”, making it normally unnecessary to call `timeout.ref()` unless `timeout.unref()` had been called previously.
 
 #### `timeout.refresh()`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timeoutrefresh)
 
@@ -44140,7 +44140,7 @@ Added in: v0.9.1
 -   `...args` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Optional arguments to pass when the `callback` is called.
 -   Returns: [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_class-immediate) for use with [`clearImmediate()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_clearimmediateimmediate)
 
-Schedules the “immediate” execution of the `callback` after I/O events’ callbacks.
+Schedules the "immediate” execution of the `callback` after I/O events’ callbacks.
 
 When multiple calls to `setImmediate()` are made, the `callback` functions are queued for execution in the order in which they are created. The entire callback queue is processed every event loop iteration. If an immediate timer is queued from inside an executing callback, that timer will not be triggered until the next event loop iteration.
 
@@ -44339,7 +44339,7 @@ Private keys can be generated in multiple ways. The example below illustrates us
 
     openssl genrsa -out ryans-key.pem 2048
 
-With TLS/SSL, all servers (and some clients) must have a *certificate*. Certificates are *public keys* that correspond to a private key, and that are digitally signed either by a Certificate Authority or by the owner of the private key (such certificates are referred to as “self-signed”). The first step to obtaining a certificate is to create a *Certificate Signing Request* (CSR) file.
+With TLS/SSL, all servers (and some clients) must have a *certificate*. Certificates are *public keys* that correspond to a private key, and that are digitally signed either by a Certificate Authority or by the owner of the private key (such certificates are referred to as "self-signed”). The first step to obtaining a certificate is to create a *Certificate Signing Request* (CSR) file.
 
 The OpenSSL command-line interface can be used to generate a CSR for a private key:
 
@@ -44366,9 +44366,9 @@ Where:
 
 The term *[forward secrecy](https://en.wikipedia.org/wiki/Perfect_forward_secrecy)* or *perfect forward secrecy* describes a feature of key-agreement (i.e., key-exchange) methods. That is, the server and client keys are used to negotiate new temporary keys that are used specifically and only for the current communication session. Practically, this means that even if the server’s private key is compromised, communication can only be decrypted by eavesdroppers if the attacker manages to obtain the key-pair specifically generated for the session.
 
-Perfect forward secrecy is achieved by randomly generating a key pair for key-agreement on every TLS/SSL handshake (in contrast to using the same key for all sessions). Methods implementing this technique are called “ephemeral”.
+Perfect forward secrecy is achieved by randomly generating a key pair for key-agreement on every TLS/SSL handshake (in contrast to using the same key for all sessions). Methods implementing this technique are called "ephemeral”.
 
-Currently two methods are commonly used to achieve perfect forward secrecy (note the character “E” appended to the traditional abbreviations):
+Currently two methods are commonly used to achieve perfect forward secrecy (note the character "E” appended to the traditional abbreviations):
 
 -   [DHE](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange): An ephemeral version of the Diffie-Hellman key-agreement protocol.
 -   [ECDHE](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman): An ephemeral version of the Elliptic Curve Diffie-Hellman key-agreement protocol.
@@ -44429,7 +44429,7 @@ For Node.js, clients wait for the [`'session'`](https://nodejs.org/dist/v16.13.1
 
 ##### Session tickets[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-tickets)
 
-The servers encrypt the entire session state and send it to the client as a “ticket”. When reconnecting, the state is sent to the server in the initial connection. This mechanism avoids the need for server-side session cache. If the server doesn’t use the ticket, for any reason (failure to decrypt it, it’s too old, etc.), it will create a new session and send a new ticket. See [RFC 5077](https://tools.ietf.org/html/rfc5077) for more information.
+The servers encrypt the entire session state and send it to the client as a "ticket”. When reconnecting, the state is sent to the server in the initial connection. This mechanism avoids the need for server-side session cache. If the server doesn’t use the ticket, for any reason (failure to decrypt it, it’s too old, etc.), it will create a new session and send a new ticket. See [RFC 5077](https://tools.ietf.org/html/rfc5077) for more information.
 
 Resumption using session tickets is becoming commonly supported by many web browsers when making HTTPS requests.
 
@@ -44451,11 +44451,11 @@ For all the mechanisms, when resumption fails, servers will create new sessions.
 
     $ openssl s_client -connect localhost:443 -reconnect
 
-Read through the debug output. The first connection should say “New”, for example:
+Read through the debug output. The first connection should say "New”, for example:
 
     New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
 
-Subsequent connections should say “Reused”, for example:
+Subsequent connections should say "Reused”, for example:
 
     Reused, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
 
@@ -45325,7 +45325,7 @@ A port or host option, if specified, will take precedence over any port or host 
 ### `tls.createSecureContext([options])`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions)
 
 -   `options`
-    -   `ca` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [&lt;Buffer\[\]&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) Optionally override the trusted CA certificates. Default is to trust the well-known CAs curated by Mozilla. Mozilla’s CAs are completely replaced when CAs are explicitly specified using this option. The value can be a string or `Buffer`, or an `Array` of strings and/or `Buffer`s. Any string or `Buffer` can contain multiple PEM CAs concatenated together. The peer’s certificate must be chainable to a CA trusted by the server for the connection to be authenticated. When using certificates that are not chainable to a well-known CA, the certificate’s CA must be explicitly specified as a trusted or the connection will fail to authenticate. If the peer uses a certificate that doesn’t match or chain to one of the default CAs, use the `ca` option to provide a CA certificate that the peer’s certificate can match or chain to. For self-signed certificates, the certificate is its own CA, and must be provided. For PEM encoded certificates, supported types are “TRUSTED CERTIFICATE”, “X509 CERTIFICATE”, and “CERTIFICATE”. See also [`tls.rootCertificates`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsrootcertificates).
+    -   `ca` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [&lt;Buffer\[\]&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) Optionally override the trusted CA certificates. Default is to trust the well-known CAs curated by Mozilla. Mozilla’s CAs are completely replaced when CAs are explicitly specified using this option. The value can be a string or `Buffer`, or an `Array` of strings and/or `Buffer`s. Any string or `Buffer` can contain multiple PEM CAs concatenated together. The peer’s certificate must be chainable to a CA trusted by the server for the connection to be authenticated. When using certificates that are not chainable to a well-known CA, the certificate’s CA must be explicitly specified as a trusted or the connection will fail to authenticate. If the peer uses a certificate that doesn’t match or chain to one of the default CAs, use the `ca` option to provide a CA certificate that the peer’s certificate can match or chain to. For self-signed certificates, the certificate is its own CA, and must be provided. For PEM encoded certificates, supported types are "TRUSTED CERTIFICATE”, "X509 CERTIFICATE”, and "CERTIFICATE”. See also [`tls.rootCertificates`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsrootcertificates).
     -   `cert` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [&lt;Buffer\[\]&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) Cert chains in PEM format. One cert chain should be provided per private key. Each cert chain should consist of the PEM formatted certificate for a provided private `key`, followed by the PEM formatted intermediate certificates (if any), in order, and not including the root CA (the root CA must be pre-known to the peer, see `ca`). When providing multiple cert chains, they do not have to be in the same order as their private keys in `key`. If the intermediate certificates are not provided, the peer will not be able to validate the certificate, and the handshake will fail.
     -   `sigalgs` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Colon-separated list of supported signature algorithms. The list can contain digest algorithms (`SHA256`, `MD5` etc.), public key algorithms (`RSA-PSS`, `ECDSA` etc.), combination of both (e.g ‘RSA+SHA384’) or TLS v1.3 scheme names (e.g. `rsa_pss_pss_sha512`). See [OpenSSL man pages](https://www.openssl.org/docs/man1.1.1/man3/SSL_CTX_set1_sigalgs_list.html) for more info.
     -   `ciphers` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Cipher suite specification, replacing the default. For more information, see [modifying the default cipher suite](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_modifying-the-default-tls-cipher-suite). Permitted ciphers can be obtained via [`tls.getCiphers()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsgetciphers). Cipher names must be uppercased in order for OpenSSL to accept them.
@@ -45413,7 +45413,7 @@ where `secureSocket` has the same API as `pair.cleartext`.
         -   identity: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) identity parameter sent from the client.
         -   Returns: [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) pre-shared key that must either be a buffer or `null` to stop the negotiation process. Returned PSK must be compatible with the selected cipher’s digest.
 
-        When negotiating TLS-PSK (pre-shared keys), this function is called with the identity provided by the client. If the return value is `null` the negotiation process will stop and an “unknown\_psk\_identity” alert message will be sent to the other party. If the server wishes to hide the fact that the PSK identity was not known, the callback must provide some random data as `psk` to make the connection fail with “decrypt\_error” before negotiation is finished. PSK ciphers are disabled by default, and using TLS-PSK thus requires explicitly specifying a cipher suite with the `ciphers` option. More information can be found in the [RFC 4279](https://tools.ietf.org/html/rfc4279).
+        When negotiating TLS-PSK (pre-shared keys), this function is called with the identity provided by the client. If the return value is `null` the negotiation process will stop and an "unknown\_psk\_identity” alert message will be sent to the other party. If the server wishes to hide the fact that the PSK identity was not known, the callback must provide some random data as `psk` to make the connection fail with "decrypt\_error” before negotiation is finished. PSK ciphers are disabled by default, and using TLS-PSK thus requires explicitly specifying a cipher suite with the `ciphers` option. More information can be found in the [RFC 4279](https://tools.ietf.org/html/rfc4279).
 
     -   `pskIdentityHint` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) optional hint to send to a client to help with selecting the identity during TLS-PSK negotiation. Will be ignored in TLS 1.3. Upon failing to set pskIdentityHint `'tlsClientError'` will be emitted with `'ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED'` code.
     -   …: Any [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) option can be provided. For servers, the identity options (`pfx`, `key`/`cert` or `pskCallback`) are usually required.
@@ -45650,7 +45650,7 @@ The `tty` module provides the `tty.ReadStream` and `tty.WriteStream` classes. In
 
     const tty = require('tty');
 
-When Node.js detects that it is being run with a text terminal (“TTY”) attached, [`process.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdin) will, by default, be initialized as an instance of `tty.ReadStream` and both [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) and [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr) will, by default, be instances of `tty.WriteStream`. The preferred method of determining whether Node.js is being run within a TTY context is to check that the value of the `process.stdout.isTTY` property is `true`:
+When Node.js detects that it is being run with a text terminal ("TTY”) attached, [`process.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdin) will, by default, be initialized as an instance of `tty.ReadStream` and both [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) and [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr) will, by default, be instances of `tty.WriteStream`. The preferred method of determining whether Node.js is being run within a TTY context is to check that the value of the `process.stdout.isTTY` property is `true`:
 
     $ node -p -e "Boolean(process.stdout.isTTY)"
     true
@@ -46121,7 +46121,7 @@ The `msg` argument contains the message to be sent. Depending on its type, diffe
 
 The `address` argument is a string. If the value of `address` is a host name, DNS will be used to resolve the address of the host. If `address` is not provided or otherwise falsy, `'127.0.0.1'` (for `udp4` sockets) or `'::1'` (for `udp6` sockets) will be used by default.
 
-If the socket has not been previously bound with a call to `bind`, the socket is assigned a random port number and is bound to the “all interfaces” address (`'0.0.0.0'` for `udp4` sockets, `'::0'` for `udp6` sockets.)
+If the socket has not been previously bound with a call to `bind`, the socket is assigned a random port number and is bound to the "all interfaces” address (`'0.0.0.0'` for `udp4` sockets, `'::0'` for `udp6` sockets.)
 
 An optional `callback` function may be specified to as a way of reporting DNS errors or for determining when it is safe to reuse the `buf` object. DNS lookups delay the time to send for at least one tick of the Node.js event loop.
 
@@ -46262,7 +46262,7 @@ Added in: v0.3.8
 
 -   `ttl` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 
-Sets the `IP_MULTICAST_TTL` socket option. While TTL generally stands for “Time to Live”, in this context it specifies the number of IP hops that a packet is allowed to travel through, specifically for multicast traffic. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded.
+Sets the `IP_MULTICAST_TTL` socket option. While TTL generally stands for "Time to Live”, in this context it specifies the number of IP hops that a packet is allowed to travel through, specifically for multicast traffic. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded.
 
 The `ttl` argument may be between 0 and 255. The default on most systems is `1`.
 
@@ -46294,7 +46294,7 @@ Added in: v0.1.101
 
 -   `ttl` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 
-Sets the `IP_TTL` socket option. While TTL generally stands for “Time to Live”, in this context it specifies the number of IP hops that a packet is allowed to travel through. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded. Changing TTL values is typically done for network probes or when multicasting.
+Sets the `IP_TTL` socket option. While TTL generally stands for "Time to Live”, in this context it specifies the number of IP hops that a packet is allowed to travel through. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded. Changing TTL values is typically done for network probes or when multicasting.
 
 The `ttl` argument may be between between 1 and 255. The default on most systems is 64.
 
@@ -46329,7 +46329,7 @@ The `socket.unref()` method returns a reference to the socket so calls can be ch
 -   `callback` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Attached as a listener for `'message'` events. Optional.
 -   Returns: [&lt;dgram.Socket&gt;](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_class-dgramsocket)
 
-Creates a `dgram.Socket` object. Once the socket is created, calling [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) will instruct the socket to begin listening for datagram messages. When `address` and `port` are not passed to [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) the method will bind the socket to the “all interfaces” address on a random port (it does the right thing for both `udp4` and `udp6` sockets). The bound address and port can be retrieved using [`socket.address().address`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress) and [`socket.address().port`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress).
+Creates a `dgram.Socket` object. Once the socket is created, calling [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) will instruct the socket to begin listening for datagram messages. When `address` and `port` are not passed to [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) the method will bind the socket to the "all interfaces” address on a random port (it does the right thing for both `udp4` and `udp6` sockets). The bound address and port can be retrieved using [`socket.address().address`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress) and [`socket.address().port`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress).
 
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.close()` on the socket:
 
@@ -46352,7 +46352,7 @@ Added in: v0.1.99
 
 Creates a `dgram.Socket` object of the specified `type`.
 
-Once the socket is created, calling [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) will instruct the socket to begin listening for datagram messages. When `address` and `port` are not passed to [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) the method will bind the socket to the “all interfaces” address on a random port (it does the right thing for both `udp4` and `udp6` sockets). The bound address and port can be retrieved using [`socket.address().address`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress) and [`socket.address().port`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress).
+Once the socket is created, calling [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) will instruct the socket to begin listening for datagram messages. When `address` and `port` are not passed to [`socket.bind()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketbindport-address-callback) the method will bind the socket to the "all interfaces” address on a random port (it does the right thing for both `udp4` and `udp6` sockets). The bound address and port can be retrieved using [`socket.address().address`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress) and [`socket.address().port`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dgram_socketaddress).
 
 URL[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_url)
 -------------------------------------------------------------------
@@ -46601,25 +46601,25 @@ protocol
 
 port
 
-“ftp”
+"ftp”
 
 21
 
-“file”
+"file”
 
-“http”
+"http”
 
 80
 
-“https”
+"https”
 
 443
 
-“ws”
+"ws”
 
 80
 
-“wss”
+"wss”
 
 443
 
@@ -47264,7 +47264,7 @@ If returned as a string, no decoding of the query string is performed. If return
 
 ##### `urlObject.search`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_urlobjectsearch)
 
-The `search` property consists of the entire “query string” portion of the URL, including the leading ASCII question mark (`?`) character.
+The `search` property consists of the entire "query string” portion of the URL, including the leading ASCII question mark (`?`) character.
 
 For example: `'?query=string'`.
 
@@ -47390,7 +47390,7 @@ For example, the ASCII space character (`' '`) is encoded as `%20`. The ASCII fo
 
 The [WHATWG URL Standard](https://url.spec.whatwg.org/) uses a more selective and fine grained approach to selecting encoded characters than that used by the Legacy API.
 
-The WHATWG algorithm defines four “percent-encode sets” that describe ranges of characters that must be percent-encoded:
+The WHATWG algorithm defines four "percent-encode sets” that describe ranges of characters that must be percent-encoded:
 
 -   The *C0 control percent-encode set* includes code points in range U+0000 to U+001F (inclusive) and all code points greater than U+007E.
 -   The *fragment percent-encode set* includes the *C0 control percent-encode set* and code points U+0020, U+0022, U+003C, U+003E, and U+0060.
@@ -47844,7 +47844,7 @@ The default styles and associated colors are:
 
 Color styling uses ANSI control codes that may not be supported on all terminals. To verify color support use [`tty.hasColors()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tty_writestreamhascolorscount-env).
 
-Predefined control codes are listed below (grouped as “Modifiers”, “Foreground colors”, and “Background colors”).
+Predefined control codes are listed below (grouped as "Modifiers”, "Foreground colors”, and "Background colors”).
 
 ##### Modifiers[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_modifiers)
 
@@ -48387,7 +48387,7 @@ Added in: v16.8.0
 
 -   `string` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
-Returns the `string` after replacing any surrogate code points (or equivalently, any unpaired surrogate code units) with the Unicode “replacement character” U+FFFD.
+Returns the `string` after replacing any surrogate code points (or equivalently, any unpaired surrogate code units) with the Unicode "replacement character” U+FFFD.
 
 ### `util.types`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypes)
 
@@ -50449,13 +50449,13 @@ In order to run a simple web server using the `http` module the code passed to t
 
 The `require()` in the above case shares the state with the context it is passed from. This may introduce risks when untrusted code is executed, e.g. altering objects in the context in unwanted ways.
 
-### What does it mean to “contextify” an object?[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object)
+### What does it mean to "contextify” an object?[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object)
 
-All JavaScript executed within Node.js runs within the scope of a “context”. According to the [V8 Embedder’s Guide](https://v8.dev/docs/embed#contexts):
+All JavaScript executed within Node.js runs within the scope of a "context”. According to the [V8 Embedder’s Guide](https://v8.dev/docs/embed#contexts):
 
 > In V8, a context is an execution environment that allows separate, unrelated, JavaScript applications to run in a single instance of V8. You must explicitly specify the context in which you want any JavaScript code to be run.
 
-When the method `vm.createContext()` is called, the `contextObject` argument (or a newly-created object if `contextObject` is `undefined`) is associated internally with a new instance of a V8 Context. This V8 Context provides the `code` run using the `vm` module’s methods with an isolated global environment within which it can operate. The process of creating the V8 Context and associating it with the `contextObject` is what this document refers to as “contextifying” the object.
+When the method `vm.createContext()` is called, the `contextObject` argument (or a newly-created object if `contextObject` is `undefined`) is associated internally with a new instance of a V8 Context. This V8 Context provides the `code` run using the `vm` module’s methods with an isolated global environment within which it can operate. The process of creating the V8 Context and associating it with the `contextObject` is what this document refers to as "contextifying” the object.
 
 ### Timeout interactions with asynchronous tasks and Promises[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_timeout-interactions-with-asynchronous-tasks-and-promises)
 
@@ -51835,7 +51835,7 @@ Added in: v15.0.0
 -   `keyUsages`: [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) See [Key usages](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_cryptokeyusages).
 -   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey)
 
-In cryptography, “wrapping a key” refers to exporting and then encrypting the keying material. The `subtle.unwrapKey()` method attempts to decrypt a wrapped key and create a [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey) instance. It is equivalent to calling `subtle.decrypt()` first on the encrypted key data (using the `wrappedKey`, `unwrapAlgo`, and `unwrappingKey` arguments as input) then passing the results in to the `subtle.importKey()` method using the `unwrappedKeyAlgo`, `extractable`, and `keyUsages` arguments as inputs. If successful, the returned promise is resolved with a [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey) object.
+In cryptography, "wrapping a key” refers to exporting and then encrypting the keying material. The `subtle.unwrapKey()` method attempts to decrypt a wrapped key and create a [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey) instance. It is equivalent to calling `subtle.decrypt()` first on the encrypted key data (using the `wrappedKey`, `unwrapAlgo`, and `unwrappingKey` arguments as input) then passing the results in to the `subtle.importKey()` method using the `unwrappedKeyAlgo`, `extractable`, and `keyUsages` arguments as inputs. If successful, the returned promise is resolved with a [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey) object.
 
 The wrapping algorithms currently supported include:
 
@@ -51892,7 +51892,7 @@ Added in: v15.0.0
 -   `wrapAlgo`: [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-rsaoaepparams) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-aesctrparams) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-aescbcparams) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-aesgcmparams) | [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-aeskwparams)
 -   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
 
-In cryptography, “wrapping a key” refers to exporting and then encrypting the keying material. The `subtle.wrapKey()` method exports the keying material into the format identified by `format`, then encrypts it using the method and parameters specified by `wrapAlgo` and the keying material provided by `wrappingKey`. It is the equivalent to calling `subtle.exportKey()` using `format` and `key` as the arguments, then passing the result to the `subtle.encrypt()` method using `wrappingKey` and `wrapAlgo` as inputs. If successful, the returned promise will be resolved with an [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) containing the encrypted key data.
+In cryptography, "wrapping a key” refers to exporting and then encrypting the keying material. The `subtle.wrapKey()` method exports the keying material into the format identified by `format`, then encrypts it using the method and parameters specified by `wrapAlgo` and the keying material provided by `wrappingKey`. It is the equivalent to calling `subtle.exportKey()` using `format` and `key` as the arguments, then passing the result to the `subtle.encrypt()` method using `wrappingKey` and `wrapAlgo` as inputs. If successful, the returned promise will be resolved with an [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) containing the encrypted key data.
 
 The wrapping algorithms currently supported include:
 
@@ -51904,7 +51904,7 @@ The wrapping algorithms currently supported include:
 
 ### Algorithm Parameters[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_algorithm-parameters)
 
-The algorithm parameter objects define the methods and parameters used by the various [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-subtlecrypto) methods. While described here as “classes”, they are simple JavaScript dictionary objects.
+The algorithm parameter objects define the methods and parameters used by the various [](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-subtlecrypto) methods. While described here as "classes”, they are simple JavaScript dictionary objects.
 
 #### Class: `AesCbcParams`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-aescbcparams)
 
@@ -52636,7 +52636,7 @@ An implementation of the [WHATWG Streams Standard](https://streams.spec.whatwg.o
 
 ### Overview[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_overview)
 
-The [WHATWG Streams Standard](https://streams.spec.whatwg.org/) (or “web streams”) defines an API for handling streaming data. It is similar to the Node.js [Streams](https://nodejs.org/dist/v16.13.1/docs/api/stream.html) API but emerged later and has become the “standard” API for streaming data across many JavaScript environments.
+The [WHATWG Streams Standard](https://streams.spec.whatwg.org/) (or "web streams”) defines an API for handling streaming data. It is similar to the Node.js [Streams](https://nodejs.org/dist/v16.13.1/docs/api/stream.html) API but emerged later and has become the "standard” API for streaming data across many JavaScript environments.
 
 There are three primary types of objects
 
@@ -52901,7 +52901,7 @@ Added in: v16.5.0
 
 The `ReadableStreamBYOBReader` is an alternative consumer for byte-oriented [](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream)’s (those that are created with `underlyingSource.type` set equal to `'bytes'` when the `ReadableStream` was created).
 
-The `BYOB` is short for “bring your own buffer”. This is a pattern that allows for more efficient reading of byte-oriented data that avoids extraneous copying.
+The `BYOB` is short for "bring your own buffer”. This is a pattern that allows for more efficient reading of byte-oriented data that avoids extraneous copying.
 
     import {
       open
@@ -53614,7 +53614,7 @@ Unlike `child_process` or `cluster`, `worker_threads` can share memory. They do 
 
 The above example spawns a Worker thread for each `parse()` call. In actual practice, use a pool of Workers for these kinds of tasks. Otherwise, the overhead of creating Workers would likely exceed their benefit.
 
-When implementing a worker pool, use the [`AsyncResource`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_class-asyncresource) API to inform diagnostic tools (e.g. to provide asynchronous stack traces) about the correlation between tasks and their outcomes. See [“Using `AsyncResource` for a `Worker` thread pool”](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_using-asyncresource-for-a-worker-thread-pool) in the `async_hooks` documentation for an example implementation.
+When implementing a worker pool, use the [`AsyncResource`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_class-asyncresource) API to inform diagnostic tools (e.g. to provide asynchronous stack traces) about the correlation between tasks and their outcomes. See ["Using `AsyncResource` for a `Worker` thread pool”](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_using-asyncresource-for-a-worker-thread-pool) in the `async_hooks` documentation for an example implementation.
 
 Worker threads inherit non-process-specific options by default. Refer to [`Worker constructor options`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options) to know how to customize worker thread options, specifically `argv` and `execArgv` options.
 
@@ -54728,7 +54728,7 @@ The following flags can be set for advanced control over the compression algorit
 -   `BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING`
     -   Boolean flag that decreases compression ratio in favour of decompression speed.
 -   `BROTLI_PARAM_LARGE_WINDOW`
-    -   Boolean flag enabling “Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+    -   Boolean flag enabling "Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
 -   `BROTLI_PARAM_NPOSTFIX`
     -   Ranges from `0` to `BROTLI_MAX_NPOSTFIX`.
 -   `BROTLI_PARAM_NDIRECT`
@@ -54741,7 +54741,7 @@ These advanced options are available for controlling decompression:
 -   `BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION`
     -   Boolean flag that affects internal memory allocation patterns.
 -   `BROTLI_DECODER_PARAM_LARGE_WINDOW`
-    -   Boolean flag enabling “Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+    -   Boolean flag enabling "Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
 
 ### Class: `Options`[\#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
 

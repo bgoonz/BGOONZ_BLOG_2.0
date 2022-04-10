@@ -47,7 +47,7 @@
 -   `tmutil` - Configure Time Machine (enable/disable, exclude path, delete snapshots, etc)
 -   `mdutil` - Manage Spotlight (enable/disable, exclude, etc)
 -   `diskutil` - Control disk (format, eject, unmount, etc)
--   `launchctl` - Control running “agents”
+-   `launchctl` - Control running "agents”
 
 ### Useful utils
 

@@ -29,7 +29,7 @@ Examples
 
 ### Displaying characters at different locations in a string
 
-The following example displays characters at different locations in the string “`Brave new world`”:
+The following example displays characters at different locations in the string "`Brave new world`”:
 
     var anyString = 'Brave new world';
     console.log("The character at index 0   is '" + anyString.charAt()   + "'");

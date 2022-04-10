@@ -79,7 +79,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>/en/converting-a-node-list-to-an-array/</li>
 </ul>
-<p>The <code>querySelectorAll</code> method returns an array-like object called a node list. These data structures are referred to as “Array-like”, because they appear as an array, but can not be used with array methods like <code>map</code> and <code>forEach</code>. Here’s a quick, safe, and reusable way to convert a node list into an array of DOM elements:</p>
+<p>The <code>querySelectorAll</code> method returns an array-like object called a node list. These data structures are referred to as "Array-like”, because they appear as an array, but can not be used with array methods like <code>map</code> and <code>forEach</code>. Here’s a quick, safe, and reusable way to convert a node list into an array of DOM elements:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> nodelist <span class="op">=</span> <span class="va">document</span>.<span class="at">querySelectorAll</span>(<span class="st">&#39;div&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="kw">const</span> nodelistToArray <span class="op">=</span> <span class="va">Array</span>.<span class="at">apply</span>(<span class="kw">null</span><span class="op">,</span> nodelist)<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-3" title="3"></a>

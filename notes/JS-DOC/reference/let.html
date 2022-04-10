@@ -28,7 +28,7 @@ For each variable declared, you may optionally specify its initial value to any 
 <h2 id="description">Description</h2>
 <p><code>let</code> allows you to declare variables that are limited to the scope of a <a href="block">block</a> statement, or expression on which it is used, unlike the <a href="var"><code>var</code></a> keyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between <a href="var"><code>var</code></a> and <code>let</code> is that the latter is initialized to a value only when a <a href="#temporal_dead_zone">parser evaluates it (see below)</a>.</p>
 <p>Just like <a href="const#description"><code>const</code></a> the <code>let</code> does <em>not</em> create properties of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window"><code>window</code></a> object when declared globally (in the top-most scope).</p>
-<p>An explanation of why the name “<strong>let</strong>” was chosen can be found <a href="https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri">here</a>.</p>
+<p>An explanation of why the name "<strong>let</strong>” was chosen can be found <a href="https://stackoverflow.com/questions/37916940/why-was-the-name-let-chosen-for-block-scoped-variable-declarations-in-javascri">here</a>.</p>
 <p><strong>Note:</strong> Many issues with <code>let</code> variables can be avoided by declaring them at the top of the scope in which they are used (doing so may impact readibility).</p>
 <h2 id="examples">Examples</h2>
 <h3 id="scoping-rules">Scoping rules</h3>
@@ -127,14 +127,14 @@ switch(x) {
 <h3 id="temporal-dead-zone-tdz">Temporal dead zone (TDZ)</h3>
 <p><code>let</code> variables cannot be read/written until they have been fully initialized, which happens when they are declared (if no initial value is specified on declaration, the variable is initialized with a value of <code>undefined</code>). Accessing the variable before the initialization results in a <a href="../global_objects/referenceerror"><code>ReferenceError</code></a>.</p>
 <p><strong>Note:</strong> This differs from <a href="var#var_hoisting"><code>var</code></a> variables, which will return a value of <code>undefined</code> if they are accessed before they are declared.</p>
-<p>The variable is said to be in a “temporal dead zone” (TDZ) from the start of the block until the initialization has completed.</p>
+<p>The variable is said to be in a "temporal dead zone” (TDZ) from the start of the block until the initialization has completed.</p>
 <pre><code>{ // TDZ starts at beginning of scope
   console.log(bar); // undefined
   console.log(foo); // ReferenceError
   var bar = 1;
   let foo = 2; // End of TDZ (for foo)
 }</code></pre>
-<p>The term “temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the <code>let</code> variable appears before the variable is declared, the function is <em>called</em> outside the TDZ.</p>
+<p>The term "temporal” is used because the zone depends on the order of execution (time) rather than the order in which the code is written (position). For example, the code below works because, even though the function that uses the <code>let</code> variable appears before the variable is declared, the function is <em>called</em> outside the TDZ.</p>
 <pre><code>{
     // TDZ starts at beginning of scope
     const func = () =&gt; console.log(letVar); // OK
@@ -223,7 +223,7 @@ Specification
 <p>12-14</p>
 <p>In Edge 12 and 13, <code>let</code> within a <code>for</code> loop initializer does not create a separate variable for each loop iteration as defined by ES2015. Instead, it behaves as though the loop were wrapped in a scoping block with the <code>let</code> immediately before the loop.</p>
 <p>44</p>
-<p>[“Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, “Firefox 54 adds support of <code>let</code> in workers.”]</p>
+<p>["Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, "Firefox 54 adds support of <code>let</code> in workers.”]</p>
 <p>11</p>
 <p>In Internet Explorer, <code>let</code> within a <code>for</code> loop initializer does not create a separate variable for each loop iteration as defined by ES2015. Instead, it behaves as though the loop were wrapped in a scoping block with the <code>let</code> immediately before the loop.</p>
 <p>17</p>
@@ -237,7 +237,7 @@ Specification
 <p>41-49</p>
 <p><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode">Strict mode</a> is required.</p>
 <p>44</p>
-<p>[“Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, “Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, “Firefox 54 adds support of <code>let</code> in workers.”]</p>
+<p>["Prior to Firefox 44, <code>let</code> is only available to code blocks in HTML wrapped in a <code>&lt;script type=\"application/javascript;version=1.7\"&gt;</code> block (or higher version) and has different semantics (e.g. no temporal dead zone).”, "Prior to Firefox 46, a <code>TypeError</code> is thrown on redeclaration instead of a <code>SyntaxError</code>.”, "Firefox 54 adds support of <code>let</code> in workers.”]</p>
 <p>18</p>
 <p>10</p>
 <p>5.0</p>

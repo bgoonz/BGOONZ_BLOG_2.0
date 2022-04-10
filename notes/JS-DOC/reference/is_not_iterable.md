@@ -1,7 +1,7 @@
 TypeError: ‘x’ is not iterable
 ==============================
 
-The JavaScript exception “is not iterable” occurs when the value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols).
+The JavaScript exception "is not iterable” occurs when the value which is given as the right hand-side of [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement) or as argument of a function such as [`Promise.all`](../global_objects/promise/all) or [`TypedArray.from`](../global_objects/typedarray/from), is not an [iterable object](../iteration_protocols).
 
 Message
 -------

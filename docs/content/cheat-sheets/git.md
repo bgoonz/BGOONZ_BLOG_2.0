@@ -74,16 +74,16 @@ git commit –amend
 Git commit in the past
 ======================
 
-git commit –date=“`date --date='2 day ago'`” git commit –date=“Jun 13 18:30:25 IST 2015”
+git commit –date="`date --date='2 day ago'`” git commit –date="Jun 13 18:30:25 IST 2015”
 
-more recent versions of Git also support –date=“2 days ago” directly
+more recent versions of Git also support –date="2 days ago” directly
 ====================================================================
 
 To change the date of an existing commit:
 =========================================
 
 git filter-branch –env-filter  
-‘if \[ $GIT\_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 \] then export GIT\_AUTHOR\_DATE=“Fri Jan 2 21:38:53 2009 -0800” export GIT\_COMMITTER\_DATE=“Sat May 19 01:01:01 2007 -0700” fi’
+‘if \[ $GIT\_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 \] then export GIT\_AUTHOR\_DATE="Fri Jan 2 21:38:53 2009 -0800” export GIT\_COMMITTER\_DATE="Sat May 19 01:01:01 2007 -0700” fi’
 
 To remove staged and working directory changes:
 ===============================================
@@ -238,7 +238,7 @@ git remote prune $(git remote | tr ‘’ ’ ’)
 Revisions can also be identified with :/text
 ============================================
 
-So, this will show the first commit that has “cool” in their message body
+So, this will show the first commit that has "cool” in their message body
 =========================================================================
 
 git show :/cool

@@ -51,7 +51,7 @@ has the same result as <code>Array.from(obj).map(mapFn, thisArg)</code>,<br />
 except that it does not create an intermediate array.</p>
 <p><strong>Note:</strong> This is especially important for certain array subclasses, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">typed arrays</a>, since the intermediate array would necessarily have values truncated to fit into the appropriate type.</p>
 <p>The <code>length</code> property of the <code>from()</code> method is <code>1</code>.</p>
-<p>In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as <code>Array.from()</code> are “inherited” by subclasses of <code>Array</code>, and create new instances <em>of the subclass</em>, not <code>Array</code>.</p>
+<p>In ES2015, the class syntax allows sub-classing of both built-in and user-defined classes. As a result, static methods such as <code>Array.from()</code> are "inherited” by subclasses of <code>Array</code>, and create new instances <em>of the subclass</em>, not <code>Array</code>.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="array-from-a-string">Array from a <code>String</code></h3>
 <pre><code>Array.from(&#39;foo&#39;);

@@ -93,7 +93,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">&lt;a</span><span class="ot"> v-bind:href=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/a&gt;</span></a></code></pre></div>
 <h4 id="shorthand-syntax">Shorthand syntax</h4>
 <div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;a</span><span class="ot"> :href=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/a&gt;</span></a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <h4 id="true-or-false-will-add-or-remove-attribute">True or false will add or remove attribute</h4>
 <div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">&lt;button</span><span class="ot"> :disabled=</span><span class="st">&quot;isButtonDisabled&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/button&gt;</span></a></code></pre></div>
 <h4 id="if-isactive-is-truthy-the-class-active-will-appear">If isActive is truthy, the class ‘active’ will appear</h4>
@@ -138,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">&lt;button</span><span class="ot"> v-on:click=</span><span class="st">&quot;addToCart&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/button&gt;</span></a></code></pre></div>
 <h4 id="shorthand-syntax-1">Shorthand syntax</h4>
 <div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;button</span> <span class="er">@click</span><span class="ot">=</span><span class="st">&quot;addToCart&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/button&gt;</span></a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <h4 id="arguments-can-be-passed">Arguments can be passed</h4>
 <div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">&lt;button</span> <span class="er">@click</span><span class="ot">=</span><span class="st">&quot;addToCart(product)&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/button&gt;</span></a></code></pre></div>
 <h4 id="to-prevent-default-behavior-e.g.-page-reload">To prevent default behavior (e.g. page reload)</h4>
@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="list-rendering">List rendering</h3>
 <h4 id="the-key-is-always-recommended">The <code>:key</code> is always recommended</h4>
 <div class="sourceCode" id="cb18"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">&lt;li</span><span class="ot"> v-for=</span><span class="st">&quot;item in items&quot;</span><span class="ot"> :key=</span><span class="st">&quot;item.id&quot;</span><span class="kw">&gt;</span>{{ item }}<span class="kw">&lt;/li&gt;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h4 id="to-access-the-position-in-the-array">To access the position in the array</h4>
 <div class="sourceCode" id="cb19"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">&lt;li</span><span class="ot"> v-for=</span><span class="st">&quot;(item, index) in items&quot;</span><span class="kw">&gt;</span>...<span class="kw">&lt;/li&gt;</span></a></code></pre></div>
 <h4 id="to-iterate-through-objects">To iterate through objects</h4>
@@ -221,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb22-38" title="38">  <span class="dt">template</span><span class="op">:</span> <span class="st">&#39;&lt;span&gt;{{ message }}&lt;/span&gt;&#39;</span><span class="op">,</span></a>
 <a class="sourceLine" id="cb22-39" title="39">  <span class="co">// Can also use backticks in `template` for multi-line</span></a>
 <a class="sourceLine" id="cb22-40" title="40"><span class="op">}</span>)</a></code></pre></div>
-<p>{: data-line=“3, 8, 16, 21, 28, 34, 39”}</p>
+<p>{: data-line="3, 8, 16, 21, 28, 34, 39”}</p>
 <p>See: <a href="https://vuejs.org/v2/guide/components.html">Components Basics</a></p>
 <h3 id="lifecycle-hooks">Lifecycle hooks</h3>
 <table>
@@ -318,12 +318,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb28-2" title="2">    <span class="kw">&lt;h2&gt;</span>I&#39;m a title<span class="kw">&lt;/h2&gt;</span></a>
 <a class="sourceLine" id="cb28-3" title="3">    <span class="kw">&lt;slot&gt;</span> Only displayed if no slot content <span class="kw">&lt;/slot&gt;</span></a>
 <a class="sourceLine" id="cb28-4" title="4"><span class="kw">&lt;/div&gt;</span></a></code></pre></div>
-<p>{: data-line=“3,4,5”}</p>
+<p>{: data-line="3,4,5”}</p>
 <h4 id="use-of-component-with-data-for-slot">Use of component with data for slot</h4>
 <div class="sourceCode" id="cb29"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">&lt;my-component&gt;</span></a>
 <a class="sourceLine" id="cb29-2" title="2">    <span class="kw">&lt;p&gt;</span>This will go in the slot<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb29-3" title="3"><span class="kw">&lt;/my-component&gt;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="https://vuejs.org/v2/guide/components-slots.html">Slots</a></p>
 <h3 id="multiple-slots">Multiple slots</h3>
 <h4 id="component-template-1">Component template</h4>
@@ -338,14 +338,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb30-9" title="9">        <span class="kw">&lt;slot</span><span class="ot"> name=</span><span class="st">&quot;footer&quot;</span><span class="kw">&gt;&lt;/slot&gt;</span></a>
 <a class="sourceLine" id="cb30-10" title="10">    <span class="kw">&lt;/footer&gt;</span></a>
 <a class="sourceLine" id="cb30-11" title="11"><span class="kw">&lt;/div&gt;</span></a></code></pre></div>
-<p>{: data-line=“3,6,9”}</p>
+<p>{: data-line="3,6,9”}</p>
 <h4 id="use-of-component-with-data-for-slots">Use of component with data for slots</h4>
 <div class="sourceCode" id="cb31"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">&lt;app-layout&gt;</span></a>
 <a class="sourceLine" id="cb31-2" title="2">    <span class="kw">&lt;h1</span><span class="ot"> slot=</span><span class="st">&quot;header&quot;</span><span class="kw">&gt;</span>Page title<span class="kw">&lt;/h1&gt;</span></a>
 <a class="sourceLine" id="cb31-3" title="3">    <span class="kw">&lt;p&gt;</span>the main content.<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb31-4" title="4">    <span class="kw">&lt;p</span><span class="ot"> slot=</span><span class="st">&quot;footer&quot;</span><span class="kw">&gt;</span>Contact info<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb31-5" title="5"><span class="kw">&lt;/app-layout&gt;</span></a></code></pre></div>
-<p>{: data-line=“2,3,4”}</p>
+<p>{: data-line="2,3,4”}</p>
 <p>See: <a href="https://vuejs.org/v2/guide/components-slots.html">Slots</a></p>
 <h2 id="also-see">Also see</h2>
 <ul>

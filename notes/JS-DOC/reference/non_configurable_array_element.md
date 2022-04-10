@@ -1,7 +1,7 @@
 TypeError: can’t delete non-configurable array element
 ======================================================
 
-The JavaScript exception “can’t delete non-configurable array element” occurs when it was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array’s elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
+The JavaScript exception "can’t delete non-configurable array element” occurs when it was attempted to [shorten the length](../global_objects/array/length#shortening_an_array) of an array, but one of the array’s elements is [non-configurable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties).
 
 Message
 -------

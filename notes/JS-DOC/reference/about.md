@@ -1,7 +1,7 @@
 About the JavaScript reference
 ==============================
 
-The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you’ll refer to these pages often (thus the title “JavaScript reference”). If you’re learning JavaScript, or need help understanding some of its capabilities or features, check out the [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
+The JavaScript reference serves as a repository of facts about the JavaScript language. The entire language is described here in detail. As you write JavaScript code, you’ll refer to these pages often (thus the title "JavaScript reference”). If you’re learning JavaScript, or need help understanding some of its capabilities or features, check out the [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
 The JavaScript language is intended to be used within some larger environment, be it a browser, server-side scripts, or similar. For the most part, this reference attempts to be environment-agnostic and does not target a web browser environment.
 

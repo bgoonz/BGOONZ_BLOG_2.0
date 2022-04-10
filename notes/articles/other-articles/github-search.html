@@ -19,7 +19,7 @@
 </blockquote>
 <p>The GitHub Search API lets you to search for the specific item efficiently.</p>
 <p>The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It’s designed to help you find the one result you’re looking for (or maybe the few results you’re looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides <strong>up to 1,000 results for each search</strong>.</p>
-<p>You can narrow your search using queries. To learn more about the search query syntax, see “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/search#constructing-a-search-query">Constructing a search query</a>.”</p>
+<p>You can narrow your search using queries. To learn more about the search query syntax, see "<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/search#constructing-a-search-query">Constructing a search query</a>.”</p>
 <h3 id="ranking-search-results"><a href="#ranking-search-results">Ranking search results</a></h3>
 <p>Unless another sort option is provided as a query parameter, results are sorted by best match in descending order. Multiple factors are combined to boost the most relevant item to the top of the result list.</p>
 <h3 id="rate-limit"><a href="#rate-limit">Rate limit</a></h3>
@@ -33,19 +33,19 @@
 <pre><code>GitHub Octocat in:readme user:defunkt</code></pre>
 <p><strong>Note:</strong> Be sure to use your language’s preferred HTML-encoder to construct your query strings. For example:</p>
 <pre><code>const queryString = &#39;q=&#39; + encodeURIComponent(&#39;GitHub Octocat in:readme user:defunkt&#39;);</code></pre>
-<p>See “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/searching-on-github">Searching on GitHub</a>” for a complete list of available qualifiers, their format, and an example of how to use them. For information about how to use operators to match specific quantities, dates, or to exclude results, see “<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/understanding-the-search-syntax">Understanding the search syntax</a>.”</p>
+<p>See "<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/searching-on-github">Searching on GitHub</a>” for a complete list of available qualifiers, their format, and an example of how to use them. For information about how to use operators to match specific quantities, dates, or to exclude results, see "<a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/understanding-the-search-syntax">Understanding the search syntax</a>.”</p>
 <h3 id="limitations-on-query-length"><a href="#limitations-on-query-length">Limitations on query length</a></h3>
 <p>The Search API does not support queries that:</p>
 <ul>
 <li>are longer than 256 characters (not including operators or qualifiers).</li>
 <li>have more than five <code>AND</code>, <code>OR</code>, or <code>NOT</code> operators.</li>
 </ul>
-<p>These search queries will return a “Validation failed” error message.</p>
+<p>These search queries will return a "Validation failed” error message.</p>
 <h3 id="timeouts-and-incomplete-results"><a href="#timeouts-and-incomplete-results">Timeouts and incomplete results</a></h3>
 <p>To keep the Search API fast for everyone, we limit how long any individual query can run. For queries that <a href="https://developer.github.com/changes/2014-04-07-understanding-search-results-and-potential-timeouts/">exceed the time limit</a>, the API returns the matches that were already found prior to the timeout, and the response has the <code>incomplete_results</code> property set to <code>true</code>.</p>
 <p>Reaching a timeout does not necessarily mean that search results are incomplete. More results might have been found, but also might not.</p>
 <h3 id="access-errors-or-missing-search-results"><a href="#access-errors-or-missing-search-results">Access errors or missing search results</a></h3>
-<p>You need to successfully authenticate and have access to the repositories in your search queries, otherwise, you’ll see a <code>422 Unprocessible Entry</code> error with a “Validation Failed” message. For example, your search will fail if your query includes <code>repo:</code>, <code>user:</code>, or <code>org:</code> qualifiers that request resources that you don’t have access to when you sign in on GitHub.</p>
+<p>You need to successfully authenticate and have access to the repositories in your search queries, otherwise, you’ll see a <code>422 Unprocessible Entry</code> error with a "Validation Failed” message. For example, your search will fail if your query includes <code>repo:</code>, <code>user:</code>, or <code>org:</code> qualifiers that request resources that you don’t have access to when you sign in on GitHub.</p>
 <p>When your search query requests multiple resources, the response will only contain the resources that you have access to and will <strong>not</strong> provide an error message listing the resources that were not returned.</p>
 <p>For example, if your search query searches for the <code>octocat/test</code> and <code>codertocat/test</code> repositories, but you only have access to <code>octocat/test</code>, your response will show search results for <code>octocat/test</code> and nothing for <code>codertocat/test</code>. This behavior mimics how search works on GitHub.</p>
 <h3 id="search-code"><a href="#search-code">Search code</a></h3>
@@ -84,7 +84,7 @@
 <p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
 <div class="line-block"><br />
 <code>q</code> | string | query |</div>
-<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-code/">Searching code</a>” for a detailed list of qualifiers.</p>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See "<a href="https://help.github.com/articles/searching-code/">Searching code</a>” for a detailed list of qualifiers.</p>
 <div class="line-block"><br />
 <code>sort</code> | string | query |</div>
 <p>Sorts the results of your query. Can only be <code>indexed</code>, which indicates how recently a file has been indexed by the GitHub search infrastructure. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
@@ -231,7 +231,7 @@
 <p>This API is under preview and subject to change.<a href="#search-commits-preview-notices">See preview notice</a></p>
 <div class="line-block"><br />
 <code>q</code> | string | query |</div>
-<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-commits/">Searching commits</a>” for a detailed list of qualifiers.</p>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See "<a href="https://help.github.com/articles/searching-commits/">Searching commits</a>” for a detailed list of qualifiers.</p>
 <div class="line-block"><br />
 <code>sort</code> | string | query |</div>
 <p>Sorts the results of your query by <code>author-date</code> or <code>committer-date</code>. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
@@ -408,7 +408,7 @@
 <p>For example, if you want to find the oldest unresolved Python bugs on Windows. Your query might look something like this.</p>
 <p><code>q=windows+label:bug+language:python+state:open&amp;sort=created&amp;order=asc</code></p>
 <p>This query searches for the keyword <code>windows</code>, within any open issue that is labeled as <code>bug</code>. The search runs across repositories whose primary language is Python. The results are sorted by creation date in ascending order, which means the oldest issues appear first in the search results.</p>
-<p><strong>Note:</strong> For <a href="https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests">user-to-server</a> GitHub App requests, you can’t retrieve a combination of issues and pull requests in a single query. Requests that don’t include the <code>is:issue</code> or <code>is:pull-request</code> qualifier will receive an HTTP <code>422 Unprocessable Entity</code> response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the <code>is</code> qualifier, see “<a href="https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests">Searching only issues or pull requests</a>.”</p>
+<p><strong>Note:</strong> For <a href="https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests">user-to-server</a> GitHub App requests, you can’t retrieve a combination of issues and pull requests in a single query. Requests that don’t include the <code>is:issue</code> or <code>is:pull-request</code> qualifier will receive an HTTP <code>422 Unprocessable Entity</code> response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the <code>is</code> qualifier, see "<a href="https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests">Searching only issues or pull requests</a>.”</p>
 <pre><code>get /search/issues</code></pre>
 <h4 id="parameters-2"><a href="#search-issues-and-pull-requests--parameters">Parameters</a></h4>
 <table>
@@ -432,7 +432,7 @@
 <p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
 <div class="line-block"><br />
 <code>q</code> | string | query |</div>
-<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-issues-and-pull-requests/">Searching issues and pull requests</a>” for a detailed list of qualifiers.</p>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See "<a href="https://help.github.com/articles/searching-issues-and-pull-requests/">Searching issues and pull requests</a>” for a detailed list of qualifiers.</p>
 <div class="line-block"><br />
 <code>sort</code> | string | query |</div>
 <p>Sorts the results of your query by the number of <code>comments</code>, <code>reactions</code>, <code>reactions-+1</code>, <code>reactions--1</code>, <code>reactions-smile</code>, <code>reactions-thinking_face</code>, <code>reactions-heart</code>, <code>reactions-tada</code>, or <code>interactions</code>. You can also sort results by how recently the items were <code>created</code> or <code>updated</code>, Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
@@ -696,7 +696,7 @@
 <p>Setting to <code>application/vnd.github.v3+json</code> is recommended.<a href="#search-repositories-preview-notices">See preview notice</a></p>
 <div class="line-block"><br />
 <code>q</code> | string | query |</div>
-<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-for-repositories/">Searching for repositories</a>” for a detailed list of qualifiers.</p>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See "<a href="https://help.github.com/articles/searching-for-repositories/">Searching for repositories</a>” for a detailed list of qualifiers.</p>
 <div class="line-block"><br />
 <code>sort</code> | string | query |</div>
 <p>Sorts the results of your query by number of <code>stars</code>, <code>forks</code>, or <code>help-wanted-issues</code> or how recently the items were <code>updated</code>. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
@@ -844,7 +844,7 @@
 <pre><code>application/vnd.github.mercy-preview+json</code></pre>
 <hr />
 <h3 id="search-topics"><a href="#search-topics">Search topics</a></h3>
-<p>Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>. See “<a href="https://help.github.com/articles/searching-topics/">Searching topics</a>” for a detailed list of qualifiers.</p>
+<p>Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results <a href="https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination">per page</a>. See "<a href="https://help.github.com/articles/searching-topics/">Searching topics</a>” for a detailed list of qualifiers.</p>
 <p>When searching for topics, you can get text match metadata for the topic’s <strong>short_description</strong>, <strong>description</strong>, <strong>name</strong>, or <strong>display_name</strong> field when you pass the <code>text-match</code> media type. For more details about how to receive highlighted search results, see <a href="https://docs.github.com/rest/reference/search#text-match-metadata">Text match metadata</a>.</p>
 <p>For example, if you want to search for topics related to Ruby that are featured on <a href="https://github.com/topics">https://github.com/topics</a>. Your query might look like this:</p>
 <p><code>q=ruby+is:featured</code></p>
@@ -1022,7 +1022,7 @@
 <p>Setting to <code>application/vnd.github.v3+json</code> is recommended.</p>
 <div class="line-block"><br />
 <code>q</code> | string | query |</div>
-<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See “<a href="https://help.github.com/articles/searching-users/">Searching users</a>” for a detailed list of qualifiers.</p>
+<p>The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see <a href="https://docs.github.com/rest/reference/search#constructing-a-search-query">Constructing a search query</a>. See "<a href="https://help.github.com/articles/searching-users/">Searching users</a>” for a detailed list of qualifiers.</p>
 <div class="line-block"><br />
 <code>sort</code> | string | query |</div>
 <p>Sorts the results of your query by number of <code>followers</code> or <code>repositories</code>, or when the person <code>joined</code> GitHub. Default: <a href="https://docs.github.com/rest/reference/search#ranking-search-results">best match</a></p>
@@ -1123,7 +1123,7 @@
 </tr>
 <tr class="odd">
 <td><code>matches</code></td>
-<td>An array of one or more search terms that are present in <code>fragment</code>. The indices (i.e., “offsets”) are relative to the fragment. (They are not relative to the <em>full</em> content of <code>property</code>.)</td>
+<td>An array of one or more search terms that are present in <code>fragment</code>. The indices (i.e., "offsets”) are relative to the fragment. (They are not relative to the <em>full</em> content of <code>property</code>.)</td>
 </tr>
 </tbody>
 </table>

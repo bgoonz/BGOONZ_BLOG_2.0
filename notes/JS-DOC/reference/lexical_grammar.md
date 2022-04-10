@@ -245,7 +245,7 @@ The decimal exponential literal is specified by the following format: `beN`; whe
 
 #### Binary
 
-Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “B” (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing binary digits after 0b”.
+Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "B” (`0b` or `0B`). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0b` are not 0 or 1, the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing binary digits after 0b”.
 
     var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648
     var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040
@@ -253,7 +253,7 @@ Binary number syntax uses a leading zero followed by a lowercase or uppercase La
 
 #### Octal
 
-Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Missing octal digits after 0o”.
+Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (`0o` or `0O)`. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the `0o` are outside the range (01234567), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Missing octal digits after 0o”.
 
     var n = 0O755; // 493
     var m = 0o644; // 420
@@ -264,7 +264,7 @@ Octal number syntax uses a leading zero followed by a lowercase or uppercase Lat
 
 #### Hexadecimal
 
-Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “X” (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: “Identifier starts immediately after numeric literal”.
+Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "X” (`0x` or `0X)`. If the digits after 0x are outside the range (0123456789ABCDEF), the following [`SyntaxError`](global_objects/syntaxerror) is thrown: "Identifier starts immediately after numeric literal”.
 
     0xFFFFFFFFFFFFFFFFF // 295147905179352830000
     0x123456789ABCDEF   // 81985529216486900
@@ -284,7 +284,7 @@ Note that legacy octal numbers with just a leading zero won’t work for `BigInt
     // 0755n
     // SyntaxError: invalid BigInt syntax
 
-For octal `BigInt` numbers, always use zero followed by the letter “o” (uppercase or lowercase):
+For octal `BigInt` numbers, always use zero followed by the letter "o” (uppercase or lowercase):
 
     0o755n
 
@@ -419,7 +419,7 @@ Some [JavaScript statements](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 The ECMAScript specification mentions [three rules of semicolon insertion](https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion).
 
-1.  A semicolon is inserted before, when a [Line terminator](#line_terminators) or “}” is encountered that is not allowed by the grammar.
+1.  A semicolon is inserted before, when a [Line terminator](#line_terminators) or "}” is encountered that is not allowed by the grammar.
 
     { 1 2 } 3
 
@@ -439,7 +439,7 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
     a = b;
     ++c;
 
-1.  A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with “no LineTerminator here” rules are:
+1.  A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with "no LineTerminator here” rules are:
 
 -   PostfixExpressions (`++` and `--`)
 -   `continue`

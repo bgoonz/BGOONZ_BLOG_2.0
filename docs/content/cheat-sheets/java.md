@@ -9,14 +9,14 @@ java -jar &lt;filename.jar&gt;
 To pass arguments to your java program
 ======================================
 
-java -jar &lt;filename.jar&gt; … java -jar example.jar “Hello world” 1234
+java -jar &lt;filename.jar&gt; … java -jar example.jar "Hello world” 1234
 
 To get the version of the installed java enviroment
 ===================================================
 
 java -showversion
 
-Example output: openjdk version “11.0.8” 2020-07-14 OpenJDK Runtime Environment (build 11.0.8+10-post-Ubuntu-0ubuntu120.04) OpenJDK 64-Bit Server VM (build 11.0.8+10-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)
+Example output: openjdk version "11.0.8” 2020-07-14 OpenJDK Runtime Environment (build 11.0.8+10-post-Ubuntu-0ubuntu120.04) OpenJDK 64-Bit Server VM (build 11.0.8+10-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)
 
 To set the intial memory size to be used by the program
 =======================================================
@@ -47,7 +47,7 @@ If you restart the application you need to again set the classpath variable.
 You can use either: -classpath, –classpath or -cp
 =================================================
 
-java -classpath -jar &lt;filename.jar&gt; java -classpath “my/example/path/one:my/example/path/two” -jar myfile.zip
+java -classpath -jar &lt;filename.jar&gt; java -classpath "my/example/path/one:my/example/path/two” -jar myfile.zip
 
 To execute a java class
 =======================
@@ -55,10 +55,10 @@ To execute a java class
 Say you have a java class of name HelloWorld in a file called HelloWorld.java
 =============================================================================
 
-Say you want to execute your class HelloWorld and pass it the argument “hello”
+Say you want to execute your class HelloWorld and pass it the argument "hello”
 ==============================================================================
 
-Say the file is the local directory we use the options “-cp .”
+Say the file is the local directory we use the options "-cp .”
 ==============================================================
 
-java -cp java -cp . HelloWorld “hello”
+java -cp java -cp . HelloWorld "hello”

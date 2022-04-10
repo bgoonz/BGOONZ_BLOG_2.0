@@ -92,15 +92,15 @@ VM
 
 -   `List all instances`: gcloud compute instances list, gcloud compute instance-templates list
 
--   `Show instance info`: gcloud compute instances describe “” –project “” –zone “us-west2-a”
+-   `Show instance info`: gcloud compute instances describe "” –project "” –zone "us-west2-a”
 
 -   `Stop an instance`: gcloud compute instances stop instance-2
 
 -   `Start an instance`: gcloud compute instances start instance-2
 
--   `Create an instance`: gcloud compute instances create vm1 –image image-1 –tags test –zone “” –machine-type f1-micro
+-   `Create an instance`: gcloud compute instances create vm1 –image image-1 –tags test –zone "” –machine-type f1-micro
 
--   `SSH to instance`: gcloud compute ssh –project “” –zone “” “”
+-   `SSH to instance`: gcloud compute ssh –project "” –zone "” "”
 
 -   `Download files`: gcloud compute copy-files example-instance:~/REMOTE-DIR ~/LOCAL-DIR –zone us-central1-a
 

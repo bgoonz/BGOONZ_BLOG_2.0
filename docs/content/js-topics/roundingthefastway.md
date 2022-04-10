@@ -4,7 +4,7 @@ title: Truncating the fast (but risky) way tip-number: 18 tip-username: pklinger
 
 This tip is about performance…with a hidden price tag.
 
-Have you ever come across the [double tilde `~~` operator](http://stackoverflow.com/questions/5971645/what-is-the-double-tilde-operator-in-javascript)? It’s also often called the “double bitwise NOT” operator. You can often use it as a faster substitute for `Math.trunc()`. Why is that?
+Have you ever come across the [double tilde `~~` operator](http://stackoverflow.com/questions/5971645/what-is-the-double-tilde-operator-in-javascript)? It’s also often called the "double bitwise NOT” operator. You can often use it as a faster substitute for `Math.trunc()`. Why is that?
 
 One bitwise shift `~` first truncates `input` to 32 bits, then transforms it into `-(input+1)`. The double bitwise shift therefore transforms the input into `-(-(input + 1)+1)` making it a great tool to round towards zero. For numeric input, it therefore mimics `Math.trunc()`. On failure, `0` is returned, which might come in handy sometimes instead of `Math.trunc()`, which returns `NaN` on failure.
 
@@ -36,13 +36,13 @@ Code clarity is of great importance in the long term, whether you work in a team
 
 > Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.
 
-For a solo programmer, that psychopath is inevitably “you in six months”.
+For a solo programmer, that psychopath is inevitably "you in six months”.
 
 ##### When you forget that `~~` always rounds to zero
 
-Newbie programmers may fixate on the cleverness of `~~`, forgetting the significance of “just drop the fractional portion of this number”. This can easily lead to **fencepost errors** (a.k.a. “off-by-one”) when transforming floats to array indices or related ordinal values, where a different kind of fractional rounding may actually be called for. (Lack of code clarity usually contributes to this problem.)
+Newbie programmers may fixate on the cleverness of `~~`, forgetting the significance of "just drop the fractional portion of this number”. This can easily lead to **fencepost errors** (a.k.a. "off-by-one”) when transforming floats to array indices or related ordinal values, where a different kind of fractional rounding may actually be called for. (Lack of code clarity usually contributes to this problem.)
 
-For instance, if you’re counting numbers on a “nearest integer” basis, you should use `Math.round()` instead of `~~`, but programmer laziness and the impact of ***10 whole characters saved per use*** on human fingers often triumph over cold logic, leading to incorrect results.
+For instance, if you’re counting numbers on a "nearest integer” basis, you should use `Math.round()` instead of `~~`, but programmer laziness and the impact of ***10 whole characters saved per use*** on human fingers often triumph over cold logic, leading to incorrect results.
 
 In contrast, the very names of the `Math.xyz()` functions clearly communicate their effect, reducing the probability of accidental errors.
 
@@ -84,7 +84,7 @@ some programmers treat it as alternative to proper input validation. However, th
 
 ##### When so many people think `~~X == Math.floor(X)`
 
-Most people who write about “double bitwise NOT” incorrectly equate it with `Math.floor()` for some reason. If you can’t write about it accurately, odds are good you’ll eventually misuse it.
+Most people who write about "double bitwise NOT” incorrectly equate it with `Math.floor()` for some reason. If you can’t write about it accurately, odds are good you’ll eventually misuse it.
 
 Others are more careful to mention `Math.floor()` for positive inputs and `Math.ceil()` for negative ones, but that forces you to stop and think about the values you’re dealing with. This defeats the purpose of `~~` as a handy no-gotchas shortcut.
 

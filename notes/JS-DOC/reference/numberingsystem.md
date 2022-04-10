@@ -15,7 +15,7 @@ Examples
 
 ### Setting the `numberingSystem` value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numberingSystem` represents correspond to the key `nu`. `nu` is considered a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by first adding the `-u` key. To set the `numberingSystem` value via the string argument to the [`Locale`](locale) constructor, first add the `-u` extension key. Next, add the `-nu` extension key to indicate that you are adding a value for `numberingSystem`. Finally, add the `numberingSystem` value to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `numberingSystem` represents correspond to the key `nu`. `nu` is considered a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by first adding the `-u` key. To set the `numberingSystem` value via the string argument to the [`Locale`](locale) constructor, first add the `-u` extension key. Next, add the `-nu` extension key to indicate that you are adding a value for `numberingSystem`. Finally, add the `numberingSystem` value to the string.
 
     let numberingSystemViaStr = new Intl.Locale("fr-Latn-FR-u-nu-mong");
     console.log(numberingSystemStr.numberingSystem); // Prints "mong"

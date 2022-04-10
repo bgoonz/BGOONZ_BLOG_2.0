@@ -26,7 +26,7 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… "-SickNasty … Autor Unknown”*
 
 ------------------------------------------------------------------------
 
@@ -89,8 +89,8 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">*“\*\*” : Double asterisk for exponent.*</span>
--   <span id="03b4">*“//” : Integer Division.*</span>
+-   <span id="8cf4">*"\*\*” : Double asterisk for exponent.*</span>
+-   <span id="03b4">*"//” : Integer Division.*</span>
 -   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
@@ -167,7 +167,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     '''.count('the '))                # => 4
 
 -   <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
--   <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
+-   <span id="ed0a">**You can also use "\*” to repeat strings or multiply strings.**</span>
 -   <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
 
 <!-- -->

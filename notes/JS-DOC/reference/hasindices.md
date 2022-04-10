@@ -1,7 +1,7 @@
 RegExp.prototype.hasIndices
 ===========================
 
-The `hasIndices` property indicates whether or not the “`d`” flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
+The `hasIndices` property indicates whether or not the "`d`” flag is used with the regular expression. `hasIndices` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.hasIndices`
 
@@ -20,7 +20,7 @@ yes
 Description
 -----------
 
-The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the “`d`” flag was used; otherwise, `false`. The “`d`” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
+The value of `hasIndices` is a [`Boolean`](../boolean) and `true` if the "`d`” flag was used; otherwise, `false`. The "`d`” flag indicates that the result of a regular expression match should contain the start and end indices of the substrings of each capture group.
 
 You cannot change this property directly.
 

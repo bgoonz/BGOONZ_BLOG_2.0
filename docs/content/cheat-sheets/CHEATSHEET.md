@@ -392,7 +392,7 @@ GLOBAL OBJECTS
 
     setImmediate(callback, [arg], [...]);
 
-> To schedule the “immediate” execution of callback after I/O events callbacks and before setTimeout and setInterval.
+> To schedule the "immediate” execution of callback after I/O events callbacks and before setTimeout and setInterval.
 
     clearImmediate(immediateObject);
 
@@ -717,15 +717,15 @@ GLOBAL OBJECTS
 
     util.isRegExp(object);
 
-> Returns true if the given “object” is a RegExp. false otherwise.
+> Returns true if the given "object” is a RegExp. false otherwise.
 
     util.isDate(object);
 
-> Returns true if the given “object” is a Date. false otherwise.
+> Returns true if the given "object” is a Date. false otherwise.
 
     util.isError(object);
 
-> Returns true if the given “object” is an Error. false otherwise.
+> Returns true if the given "object” is an Error. false otherwise.
 
     util.promisify(fn)
     >  Takes a function whose last argument is a callback and returns a version that returns promises.
@@ -1564,7 +1564,7 @@ GLOBAL OBJECTS
 
     os.endianness();
 
-> Returns the endianness of the CPU. Possible values are “BE” or “LE”.
+> Returns the endianness of the CPU. Possible values are "BE” or "LE”.
 
     os.hostname();
 
@@ -1769,9 +1769,9 @@ notes: don’t forget the command lines
 
 > In rare cases, it’s okay to initialize state based on props.
 
-> This effectively “forks” the props and sets the state with the initial props.
+> This effectively "forks” the props and sets the state with the initial props.
 
-> If you “fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
+> If you "fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
 
         color: props.initialColor
       };

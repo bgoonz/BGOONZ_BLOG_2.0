@@ -22,7 +22,7 @@ See: [Delimiters](https://vuejs.org/v2/api/#delimiters)
 
     <a :href="url">...</a>
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### True or false will add or remove attribute
 
@@ -69,7 +69,7 @@ See: [Directives](https://vuejs.org/v2/api/#Directives)
 
     <button @click="addToCart">...</button>
 
-{: data-line=“1”}
+{: data-line="1”}
 
 #### Arguments can be passed
 
@@ -101,7 +101,7 @@ See: [Events](https://vuejs.org/v2/guide/events.html)
 
     <li v-for="item in items" :key="item.id">{{ item }}</li>
 
-{: data-line=“2”}
+{: data-line="2”}
 
 #### To access the position in the array
 
@@ -163,7 +163,7 @@ Component
       // Can also use backticks in `template` for multi-line
     })
 
-{: data-line=“3, 8, 16, 21, 28, 34, 39”}
+{: data-line="3, 8, 16, 21, 28, 34, 39”}
 
 See: [Components Basics](https://vuejs.org/v2/guide/components.html)
 
@@ -246,7 +246,7 @@ Slots
         <slot> Only displayed if no slot content </slot>
     </div>
 
-{: data-line=“3,4,5”}
+{: data-line="3,4,5”}
 
 #### Use of component with data for slot
 
@@ -254,7 +254,7 @@ Slots
         <p>This will go in the slot</p>
     </my-component>
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Slots](https://vuejs.org/v2/guide/components-slots.html)
 
@@ -274,7 +274,7 @@ See: [Slots](https://vuejs.org/v2/guide/components-slots.html)
         </footer>
     </div>
 
-{: data-line=“3,6,9”}
+{: data-line="3,6,9”}
 
 #### Use of component with data for slots
 
@@ -284,7 +284,7 @@ See: [Slots](https://vuejs.org/v2/guide/components-slots.html)
         <p slot="footer">Contact info</p>
     </app-layout>
 
-{: data-line=“2,3,4”}
+{: data-line="2,3,4”}
 
 See: [Slots](https://vuejs.org/v2/guide/components-slots.html)
 

@@ -1,7 +1,7 @@
 Warning: expression closures are deprecated
 ===========================================
 
-The JavaScript warning “expression closures are deprecated” occurs when the non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is used.
+The JavaScript warning "expression closures are deprecated” occurs when the non-standard [expression closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Expression_closures) syntax (shorthand function syntax) is used.
 
 Message
 -------

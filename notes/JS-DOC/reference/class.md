@@ -19,10 +19,10 @@ A class expression has a similar syntax to a [class declaration (statement)](../
 
 There are several differences between class expressions and [class statements](../statements/class), however:
 
--   Class expressions may omit the class name (“binding identifier”), which is not possible with [class statements](../statements/class).
+-   Class expressions may omit the class name ("binding identifier”), which is not possible with [class statements](../statements/class).
 -   Class expressions allow you to redefine (re-declare) classes **without throwing** a [`SyntaxError`](../global_objects/syntaxerror). This is not the case with [class statements](../statements/class).
 
-The `constructor` method is optional. Classes generated with class expressions will always respond to [`typeof`](typeof) with the value “`function`”.
+The `constructor` method is optional. Classes generated with class expressions will always respond to [`typeof`](typeof) with the value "`function`”.
 
     'use strict';
     let Foo = class {};  // constructor property is optional

@@ -171,7 +171,7 @@ class Info extends Component {
 <pre class="jsx"><code>&lt;AlertBox&gt;
     &lt;h1&gt;You have pending notifications&lt;/h1&gt;
 &lt;/AlertBox&gt;</code></pre>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <pre class="jsx"><code>class AlertBox extends Component {
     render() {
         return &lt;div className=&quot;alert-box&quot;&gt;{this.props.children}&lt;/div&gt;;
@@ -191,7 +191,7 @@ class Info extends Component {
         this.state = { visible: true };
     }
 }</code></pre>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <p>Set the default state in the <code>constructor()</code>.</p>
 <p>And without constructor using <a href="https://babeljs.io">Babel</a> with <a href="https://github.com/tc39/proposal-class-fields">proposal-class-fields</a>.</p>
 <pre class="jsx"><code>
@@ -376,7 +376,7 @@ function FriendStatus(props) {
     }
     return isOnline ? &#39;Online&#39; : &#39;Offline&#39;;
 }</code></pre>
-<p>Effects may also optionally specify how to “clean up” after them by returning a function.</p>
+<p>Effects may also optionally specify how to "clean up” after them by returning a function.</p>
 <p><strong>Use FriendStatus</strong></p>
 <pre class="jsx"><code>function FriendStatus(props) {
     const isOnline = useFriendStatus(props.friend.id);
@@ -553,7 +553,7 @@ return &lt;div style={style}&gt;&lt;/div&gt;;</code></pre>
 <a class="sourceLine" id="cb45-5" title="5">    <span class="op">&lt;</span>li key<span class="op">=</span><span class="st">&quot;B&quot;</span><span class="op">&gt;</span>Second item&lt;/li<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb45-6" title="6">  ]</a>
 <a class="sourceLine" id="cb45-7" title="7"><span class="op">}</span></a></code></pre></div>
-<p>{: data-line=“3,4,5,6”}</p>
+<p>{: data-line="3,4,5,6”}</p>
 <p><strong>Fragments</strong></p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="at">render</span> () <span class="op">{</span></a>
 <a class="sourceLine" id="cb46-2" title="2">  <span class="co">// Fragments don&#39;t require keys!</span></a>

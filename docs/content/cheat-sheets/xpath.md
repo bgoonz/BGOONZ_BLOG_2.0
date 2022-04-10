@@ -58,7 +58,7 @@ Selectors
 
     //div[contains(concat(' ',normalize-space(@class),' '),' foobar ')]
 
-Xpath doesn’t have the “check if part of space-separated list” operator, so this is the workaround ([source](http://pivotallabs.com/xpath-css-class-matching/)).
+Xpath doesn’t have the "check if part of space-separated list” operator, so this is the workaround ([source](http://pivotallabs.com/xpath-css-class-matching/)).
 
 Expressions
 -----------
@@ -205,7 +205,7 @@ Axes
     //ul/descendant-or-self::li   # ul li
     //ul/ancestor-or-self::li     # $('ul').closest('li')
 
-Steps of an expression are separated by `/`, usually used to pick child nodes. That’s not always true: you can specify a different “axis” with `::`.
+Steps of an expression are separated by `/`, usually used to pick child nodes. That’s not always true: you can specify a different "axis” with `::`.
 
 `//` | `ul` | `/child::` | `li` |  
 Axis | Step | Axis | Step |

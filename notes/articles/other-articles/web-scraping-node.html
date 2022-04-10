@@ -42,7 +42,7 @@ npm install –save request request-promise cheerio puppeteer
 </tr>
 </tbody>
 </table>
-<p>Next, let’s open a new text file (name the file potusScraper.js), and write a quick function to get the HTML of the Wikipedia “List of Presidents” page.</p>
+<p>Next, let’s open a new text file (name the file potusScraper.js), and write a quick function to get the HTML of the Wikipedia "List of Presidents” page.</p>
 <table data-tab-size="8" data-paste-markdown-skip>
 <tbody>
 <tr>
@@ -137,7 +137,7 @@ console.log(html);
 <td id="file-potusscraper-js-v1-output-L2" data-line-number="2">
 </td>
 <td id="file-potusscraper-js-v1-output-LC2">
-&lt;html class=“client-nojs” lang=“en” dir=“ltr”&gt;
+&lt;html class="client-nojs” lang="en” dir="ltr”&gt;
 </td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ console.log(html);
 <td id="file-potusscraper-js-v1-output-L4" data-line-number="4">
 </td>
 <td id="file-potusscraper-js-v1-output-LC4">
-&lt;meta charset=“UTF-8”/&gt;
+&lt;meta charset="UTF-8”/&gt;
 </td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ console.log(html);
 <p>Now, simply click inspect, and Chrome will bring up its DevTools pane, allowing you to easily inspect the page’s source HTML.</p>
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*HSUjFgji22vjwvGi2uZe1A.png" /></p>
 <h3 id="parsing-html-with-cheerio.js">Parsing HTML with Cheerio.js</h3>
-<p>Awesome, Chrome DevTools is now showing us the exact pattern we should be looking for in the code (a “big” tag with a hyperlink inside of it). Let’s use Cheerio.js to parse the HTML we received earlier to return a list of links to the individual Wikipedia pages of U.S. presidents.</p>
+<p>Awesome, Chrome DevTools is now showing us the exact pattern we should be looking for in the code (a "big” tag with a hyperlink inside of it). Let’s use Cheerio.js to parse the HTML we received earlier to return a list of links to the individual Wikipedia pages of U.S. presidents.</p>
 <table data-tab-size="8" data-paste-markdown-skip>
 <tbody>
 <tr>
@@ -403,7 +403,7 @@ parent: [Object] } },
 </tr>
 </tbody>
 </table>
-<p>We check to make sure there are exactly 45 elements returned (the number of U.S. presidents), meaning there aren’t any extra hidden “big” tags elsewhere on the page. Now, we can go through and grab a list of links to all 45 presidential Wikipedia pages by getting them from the “attribs” section of each element.</p>
+<p>We check to make sure there are exactly 45 elements returned (the number of U.S. presidents), meaning there aren’t any extra hidden "big” tags elsewhere on the page. Now, we can go through and grab a list of links to all 45 presidential Wikipedia pages by getting them from the "attribs” section of each element.</p>
 <table data-tab-size="8" data-paste-markdown-skip>
 <tbody>
 <tr>
@@ -681,7 +681,7 @@ console.log(html);
 <td id="file-potusparse-js-v1-output-L1" data-line-number="1">
 </td>
 <td id="file-potusparse-js-v1-output-LC1">
-&lt;html class=“client-nojs” lang=“en” dir=“ltr”&gt;
+&lt;html class="client-nojs” lang="en” dir="ltr”&gt;
 </td>
 </tr>
 <tr>
@@ -695,7 +695,7 @@ console.log(html);
 <td id="file-potusparse-js-v1-output-L3" data-line-number="3">
 </td>
 <td id="file-potusparse-js-v1-output-LC3">
-&lt;meta charset=“UTF-8”/&gt;
+&lt;meta charset="UTF-8”/&gt;
 </td>
 </tr>
 <tr>
@@ -717,7 +717,7 @@ console.log(html);
 <p>Let’s once again use Chrome DevTools to find the syntax of the code we want to parse, so that we can extract the name and birthday with Cheerio.js.</p>
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*exzZbuIwfrCcbTM2rr9_bw.png" /></p>
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*yth6AmHpywM77n0wEprpiA.png" /></p>
-<p>So we see that the name is in a class called “firstHeading” and the birthday is in a class called “bday”. Let’s modify our code to use Cheerio.js to extract these two classes.</p>
+<p>So we see that the name is in a class called "firstHeading” and the birthday is in a class called "bday”. Let’s modify our code to use Cheerio.js to extract these two classes.</p>
 <table data-tab-size="8" data-paste-markdown-skip>
 <tbody>
 <tr>
@@ -1571,7 +1571,7 @@ console.log(html);
 <td id="file-reddit-js-v1-output-L2" data-line-number="2">
 </td>
 <td id="file-reddit-js-v1-output-LC2">
-lang=“en”&gt;&lt;head&gt;&lt;title&gt;reddit: the front page of the
+lang="en”&gt;&lt;head&gt;&lt;title&gt;reddit: the front page of the
 </td>
 </tr>
 <tr>
@@ -1736,21 +1736,21 @@ console.log(html);
 <td id="file-reddit-js-v2-output-L1" data-line-number="1">
 </td>
 <td id="file-reddit-js-v2-output-LC1">
-&lt;!DOCTYPE html&gt;&lt;html lang=“en”&gt;&lt;head&gt;&lt;link
+&lt;!DOCTYPE html&gt;&lt;html lang="en”&gt;&lt;head&gt;&lt;link
 </td>
 </tr>
 <tr>
 <td id="file-reddit-js-v2-output-L2" data-line-number="2">
 </td>
 <td id="file-reddit-js-v2-output-LC2">
-href=“//c.amazon-adsystem.com/aax2/apstag.js” rel=“preload”
+href="//c.amazon-adsystem.com/aax2/apstag.js” rel="preload”
 </td>
 </tr>
 <tr>
 <td id="file-reddit-js-v2-output-L3" data-line-number="3">
 </td>
 <td id="file-reddit-js-v2-output-LC3">
-as=“script”&gt;
+as="script”&gt;
 </td>
 </tr>
 <tr>
@@ -1766,7 +1766,7 @@ as=“script”&gt;
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*N5HtAiijcMEB_fBQvPd7Ow.png" /></p>
 <p>Now we can use Chrome DevTools like we did in the previous example.</p>
 <p><img src="https://cdn-media-1.freecodecamp.org/images/1*tHSgjPMvn3M26N2f7Q2B1Q.png" /></p>
-<p>It looks like Reddit is putting the titles inside “h2” tags. Let’s use Cheerio.js to extract the h2 tags from the page.</p>
+<p>It looks like Reddit is putting the titles inside "h2” tags. Let’s use Cheerio.js to extract the h2 tags from the page.</p>
 <table data-tab-size="8" data-paste-markdown-skip>
 <tbody>
 <tr>
@@ -1924,7 +1924,7 @@ return page.content();
 <td id="file-reddit-js-v3-output-L1" data-line-number="1">
 </td>
 <td id="file-reddit-js-v3-output-LC1">
-Russian Pipeline. Upvote so that this is the first image people see when they Google “Russian Pipeline”
+Russian Pipeline. Upvote so that this is the first image people see when they Google "Russian Pipeline”
 </td>
 </tr>
 <tr>
@@ -1980,7 +1980,7 @@ F***ing genius.
 <td id="file-reddit-js-v3-output-L9" data-line-number="9">
 </td>
 <td id="file-reddit-js-v3-output-LC9">
-TIL Anthony Daniels, who endured years of discomfort in the C-3PO costume, was so annoyed by Alan Tudyk (Rogue One) playing K-2SO in the comfort of a motion-capture suit that he cursed at Tudyk. Tudyk later joked that a “fuck you” from Daniels was among the highest compliments he had ever received.
+TIL Anthony Daniels, who endured years of discomfort in the C-3PO costume, was so annoyed by Alan Tudyk (Rogue One) playing K-2SO in the comfort of a motion-capture suit that he cursed at Tudyk. Tudyk later joked that a "fuck you” from Daniels was among the highest compliments he had ever received.
 </td>
 </tr>
 <tr>
@@ -2071,7 +2071,7 @@ Elon Musk’s apology is out
 <td id="file-reddit-js-v3-output-L22" data-line-number="22">
 </td>
 <td id="file-reddit-js-v3-output-LC22">
-“When you’re going private so you plant trees to throw some last shade at TDNW before you vanish.” Thanos’ farm advances. The soul children will have full bellies. 1024 points will give him the resources to double, and irrigate, his farm. (See comment)
+"When you’re going private so you plant trees to throw some last shade at TDNW before you vanish.” Thanos’ farm advances. The soul children will have full bellies. 1024 points will give him the resources to double, and irrigate, his farm. (See comment)
 </td>
 </tr>
 <tr>
@@ -2141,7 +2141,7 @@ When you’re fighting a Dark Souls boss and you gamble to get ‘just one extra
 <td id="file-reddit-js-v3-output-L32" data-line-number="32">
 </td>
 <td id="file-reddit-js-v3-output-LC32">
-“I check for traps”
+"I check for traps”
 </td>
 </tr>
 <tr>

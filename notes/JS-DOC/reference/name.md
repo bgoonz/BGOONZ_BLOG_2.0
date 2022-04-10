@@ -45,7 +45,7 @@ may be compressed to:
       console.log('Oops!');
     }
 
-In the uncompressed version, the program runs into the truthy-branch and logs “`'foo' is an instance of 'Foo'`”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.
+In the uncompressed version, the program runs into the truthy-branch and logs "`'foo' is an instance of 'Foo'`”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on `Function.name`, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.
 
 Examples
 --------
@@ -59,7 +59,7 @@ The `name` property returns the name of a function statement.
 
 ### Function constructor name
 
-Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is “anonymous”.
+Functions created with the syntax `new Function(...)` or just `Function(...)` create [`Function`](../function) objects and their name is "anonymous”.
 
     (new Function).name; // "anonymous"
 
@@ -113,14 +113,14 @@ To change it, use [`Object.defineProperty()`](../object/defineproperty).
 
 ### Bound function names
 
-[`Function.bind()`](bind) produces a function whose name is “bound” plus the function name.
+[`Function.bind()`](bind) produces a function whose name is "bound” plus the function name.
 
     function foo() {};
     foo.bind({}).name; // "bound foo"
 
 ### Function names for getters and setters
 
-When using `get` and `set` accessor properties, “get” or “set” will appear in the function name.
+When using `get` and `set` accessor properties, "get” or "set” will appear in the function name.
 
     let o = {
       get foo(){},
@@ -133,7 +133,7 @@ When using `get` and `set` accessor properties, “get” or “set” will appe
 
 ### Function names in classes
 
-You can use `obj.constructor.name` to check the “class” of an object (but be sure to read the warnings below):
+You can use `obj.constructor.name` to check the "class” of an object (but be sure to read the warnings below):
 
     function Foo() {}  // ES2015 Syntax: class Foo {}
 

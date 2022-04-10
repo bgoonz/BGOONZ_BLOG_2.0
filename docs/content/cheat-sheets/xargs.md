@@ -28,4 +28,4 @@ If find returns no result, do not run rm
 This option is a GNU extension.
 ===============================
 
-find -name “\*.pdf” | xargs –no-run-if-empty rm
+find -name "\*.pdf” | xargs –no-run-if-empty rm

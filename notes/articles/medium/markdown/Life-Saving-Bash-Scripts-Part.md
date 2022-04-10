@@ -191,7 +191,7 @@ Recursively find suid executables
 
     find . -type f -a \( -name "*.html" -o -name "*.js" -o -name "*.css" -o -name "*.md" \) -a -exec sed -i  '/BADSTRING/d' '{}' +
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 15.) Recursively remove from all html files any lines containing the string “badText”
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" /></figure>### 15.) Recursively remove from all html files any lines containing the string "badText”
 
     find . -type f -exec sed -i '/badText/d' ./*.html {} \;
 

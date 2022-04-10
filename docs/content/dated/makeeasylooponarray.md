@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 
-Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it “looping powers”:
+Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here’s how to take an array and give it "looping powers”:
 
     var aList = ['A', 'B', 'C', 'D', 'E'];
 

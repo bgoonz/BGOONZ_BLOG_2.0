@@ -11,7 +11,7 @@ Cookies are one of the methods available for adding persistent state to web site
 
 Each cookie is a `key=value` pair along with a number of attributes that control when and where that cookie is used. You’ve probably already used these attributes to set things like expiration dates or indicating the cookie should only be sent over HTTPS. Servers set cookies by sending the aptly-named `Set-Cookie` header in their response. For all the detail you can dive into [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1), but for now here’s a quick refresher.
 
-Say you have a blog where you want to display a “What’s new” promo to your users. Users can dismiss the promo and then they won’t see it again for a while. You can store that preference in a cookie, set it to expire in a month (2,600,000 seconds), and only send it over HTTPS. That header would look like this:
+Say you have a blog where you want to display a "What’s new” promo to your users. Users can dismiss the promo and then they won’t see it again for a while. You can store that preference in a cookie, set it to expire in a month (2,600,000 seconds), and only send it over HTTPS. That header would look like this:
 
     Set-Cookie: promo_shown=1; Max-Age=2600000; Secure
 
@@ -52,7 +52,7 @@ Cookies may come from a variety of different domains on one page.
 
 Continuing the example from above, let’s say one of your blog posts has a picture of a particularly amazing cat in it and it’s hosted at `/blog/img/amazing-cat.png`. Because it’s such an amazing image, another person uses it directly on their site. If a visitor has been to your blog and has the `promo_shown` cookie, then when they view `amazing-cat.png` on the other person’s site that cookie **will be sent** in that request for the image. This isn’t particularly useful for anyone since `promo_shown` isn’t used for anything on this other person’s site, it’s just adding overhead to the request.
 
-If that’s an unintended effect, why would you want to do this? It’s this mechanism that allows sites to maintain state when they are being used in a third-party context. For example, if you embed a YouTube video on your site then visitors will see a “Watch later” option in the player. If your visitor is already signed in to YouTube, that session is being made available in the embedded player by a third-party cookie—meaning that “Watch later” button will just save the video in one go rather than prompting them to sign in or having to navigate them away from your page and back over to YouTube.
+If that’s an unintended effect, why would you want to do this? It’s this mechanism that allows sites to maintain state when they are being used in a third-party context. For example, if you embed a YouTube video on your site then visitors will see a "Watch later” option in the player. If your visitor is already signed in to YouTube, that session is being made available in the embedded player by a third-party cookie—meaning that "Watch later” button will just save the video in one go rather than prompting them to sign in or having to navigate them away from your page and back over to YouTube.
 
 ![The same cookie being sent in three different contexts](https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/u9chHBLm3i27yFRwHx5W.png?auto=format)
 

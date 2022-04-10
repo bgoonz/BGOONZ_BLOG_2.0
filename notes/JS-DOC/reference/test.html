@@ -28,7 +28,7 @@ The string against which to match the regular expression.</p>
 <p>As with <code>exec()</code> (or in combination with it), <code>test()</code> called multiple times on the same global regular expression instance will advance past the previous match.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="using-test">Using test()</h3>
-<p>Simple example that tests if “<code>hello</code>” is contained at the very beginning of a string, returning a boolean result.</p>
+<p>Simple example that tests if "<code>hello</code>” is contained at the very beginning of a string, returning a boolean result.</p>
 <pre><code>const str = &#39;hello world!&#39;;
 const result = /^hello/.test(str);
 
@@ -43,7 +43,7 @@ console.log(result); // true</code></pre>
   }
   console.log(`${str}${midstring}${re.source}`);
 }</code></pre>
-<h3 id="using-test-on-a-regex-with-the-global-flag">Using test() on a regex with the “global” flag</h3>
+<h3 id="using-test-on-a-regex-with-the-global-flag">Using test() on a regex with the "global” flag</h3>
 <p>When a regex has the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags_2">global flag</a> set, <code>test()</code> will advance the <a href="lastindex"><code>lastIndex</code></a> of the regex. (<a href="exec"><code>RegExp.prototype.exec()</code></a> also advances the <code>lastIndex</code> property.)</p>
 <p>Further calls to <code>test(str)</code> will resume searching <code>str</code> starting from <code>lastIndex</code>. The <code>lastIndex</code> property will continue to increase each time <code>test()</code> returns <code>true</code>.</p>
 <p><strong>Note:</strong> As long as <code>test()</code> returns <code>true</code>, <code>lastIndex</code> will <em>not</em> reset—even when testing a different string!</p>

@@ -24,7 +24,7 @@ Using AND to perform several operations in order, here merging two
 files together and adding a copyright stamp to every page.
 ==========================================================
 
-cpdf -merge in.pdf in2.pdf AND -add-text “Copyright 2014” -o out.pdf
+cpdf -merge in.pdf in2.pdf AND -add-text "Copyright 2014” -o out.pdf
 
 Read control.txt and use its contents as the command line arguments
 ===================================================================
@@ -61,7 +61,7 @@ Scale both the dimensions and contents of in.pdf by a factor of two
 in x and y directions.
 ======================
 
-cpdf -scale-page “2 2” in.pdf -o out.pdf
+cpdf -scale-page "2 2” in.pdf -o out.pdf
 
 Scale the pages in in.pdf to fit the US Letter page size, writing to
 ====================================================================
@@ -77,7 +77,7 @@ Shift the contents of the page by 26 pts in the x direction, and 18
 millimetres in the y direction, writing to out.pdf
 ==================================================
 
-cpdf -shift “26pt 18mm” in.pdf -o out.pdf
+cpdf -shift "26pt 18mm” in.pdf -o out.pdf
 
 Rotate the contents of the pages in in.pdf by ninety degrees and
 ================================================================
@@ -90,7 +90,7 @@ cpdf -rotate-contents 90 in.pdf -o out.pdf
 Crop the pages in in.pdf to a 600 pts by 400 pts rectangle.
 ===========================================================
 
-cpdf -crop “0 0 600pt 400pt” in.pdf -o out.pdf
+cpdf -crop "0 0 600pt 400pt” in.pdf -o out.pdf
 
 Encrypt using 128bit PDF encryption using the owner password ‘fred’
 ===================================================================
@@ -159,7 +159,7 @@ Add a page number and date to all the pages in in.pdf using the
 Courier font, writing to out.pdf
 ================================
 
-cpdf -topleft 10 -font Courier -add-text “Page %Page%d-%m-%Y” in.pdf -o out.pdf
+cpdf -topleft 10 -font Courier -add-text "Page %Page%d-%m-%Y” in.pdf -o out.pdf
 
 Two up impose the file in.pdf, writing to out.pdf
 =================================================
@@ -193,7 +193,7 @@ cpdf -copy-annotations from.pdf in.pdf -o out.pdf
 Set the document title of in.pdf. writing to out.pdf.
 =====================================================
 
-cpdf -set-title “The New Title” in.pdf -o out.pdf
+cpdf -set-title "The New Title” in.pdf -o out.pdf
 
 Set the document in.pdf to open with the Acrobat Viewer’s toolbar
 =================================================================

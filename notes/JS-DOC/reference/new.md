@@ -48,11 +48,11 @@ When the code `new Foo(...)` is executed, the following things happen:
 2.  The constructor function `Foo` is called with the specified arguments, and with `this` bound to the newly created object. `new Foo` is equivalent to `new Foo()`, i.e. if no argument list is specified, `Foo` is called without arguments.
 3.  The object (not null, false, 3.1415 or other primitive types) returned by the constructor function becomes the result of the whole `new` expression. If the constructor function doesn’t explicitly return an object, the object created in step 1 is used instead (normally constructors don’t return a value, but they can choose to do so if they want to override the normal object creation process).
 
-You can always add a property to a previously defined object instance. For example, the statement `car1.color = "black"` adds a property `color` to `car1`, and assigns it a value of “`black`”.
+You can always add a property to a previously defined object instance. For example, the statement `car1.color = "black"` adds a property `color` to `car1`, and assigns it a value of "`black`”.
 
 However, this does not affect any other objects. To add the new property to all objects of the same type, you must add the property to the definition of the `Car` object type.
 
-You can add a shared property to a previously defined object type by using the `Function.prototype` property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value `"original color"` to all objects of type `Car`, and then overwrites that value with the string “`black`” only in the instance object `car1`. For more information, see [prototype](../global_objects/function).
+You can add a shared property to a previously defined object type by using the `Function.prototype` property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value `"original color"` to all objects of type `Car`, and then overwrites that value with the string "`black`” only in the instance object `car1`. For more information, see [prototype](../global_objects/function).
 
     function Car() {}
     car1 = new Car();
@@ -90,7 +90,7 @@ Now you can create an object called `myCar` as follows:
 
     var myCar = new Car('Eagle', 'Talon TSi', 1993);
 
-This statement creates `myCar` and assigns it the specified values for its properties. Then the value of `myCar.make` is the string “Eagle”, `myCar.year` is the integer 1993, and so on.
+This statement creates `myCar` and assigns it the specified values for its properties. Then the value of `myCar.make` is the string "Eagle”, `myCar.year` is the integer 1993, and so on.
 
 You can create any number of `car` objects by calls to `new`. For example:
 

@@ -35,7 +35,7 @@ Simple patterns are constructed of characters for which you want to find a direc
 
 ### Using special characters
 
-When the search for a match requires something more than a direct match, such as finding one or more b’s, or finding white space, you can include special characters in the pattern. For example, to match *a single `"a"` followed by zero or more `"b"`s followed by `"c"`*, you’d use the pattern `/ab*c/`: the `*` after `"b"` means “0 or more occurrences of the preceding item.” In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
+When the search for a match requires something more than a direct match, such as finding one or more b’s, or finding white space, you can include special characters in the pattern. For example, to match *a single `"a"` followed by zero or more `"b"`s followed by `"c"`*, you’d use the pattern `/ab*c/`: the `*` after `"b"` means "0 or more occurrences of the preceding item.” In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
 The following pages provide lists of the different special characters that fit into each category, along with descriptions and examples.
 
@@ -83,13 +83,13 @@ Special characters in regular expressions. | Characters / constructs | Correspon
 
 ### Escaping
 
-If you need to use any of the special characters literally (actually searching for a `"*"`, for instance), you must escape it by putting a backslash in front of it. For instance, to search for `"a"` followed by `"*"` followed by `"b"`, you’d use `/a\*b/` — the backslash “escapes” the `"*"`, making it literal instead of special.
+If you need to use any of the special characters literally (actually searching for a `"*"`, for instance), you must escape it by putting a backslash in front of it. For instance, to search for `"a"` followed by `"*"` followed by `"b"`, you’d use `/a\*b/` — the backslash "escapes” the `"*"`, making it literal instead of special.
 
-Similarly, if you’re writing a regular expression literal and need to match a slash (“/”), you need to escape that (otherwise, it terminates the pattern). For instance, to search for the string “/example/” followed by one or more alphabetic characters, you’d use `/\/example\/[a-z]+/i`—the backslashes before each slash make them literal.
+Similarly, if you’re writing a regular expression literal and need to match a slash ("/”), you need to escape that (otherwise, it terminates the pattern). For instance, to search for the string "/example/” followed by one or more alphabetic characters, you’d use `/\/example\/[a-z]+/i`—the backslashes before each slash make them literal.
 
-To match a literal backslash, you need to escape the backslash. For instance, to match the string “C:\\” where “C” can be any letter, you’d use `/[A-Z]:\\/` — the first backslash escapes the one after it, so the expression searches for a single literal backslash.
+To match a literal backslash, you need to escape the backslash. For instance, to match the string "C:\\” where "C” can be any letter, you’d use `/[A-Z]:\\/` — the first backslash escapes the one after it, so the expression searches for a single literal backslash.
 
-If using the `RegExp` constructor with a string literal, remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level. `/a\*b/` and `new RegExp("a\\*b")` create the same expression, which searches for “a” followed by a literal “\*” followed by “b”.
+If using the `RegExp` constructor with a string literal, remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level. `/a\*b/` and `new RegExp("a\\*b")` create the same expression, which searches for "a” followed by a literal "\*” followed by "b”.
 
 If escape strings are not already part of your pattern you can add them using [`String.replace`](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace):
 
@@ -97,7 +97,7 @@ If escape strings are not already part of your pattern you can add them using [`
       return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
     }
 
-The “g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches. It is explained in detail below in [Advanced Searching With Flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
+The "g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches. It is explained in detail below in [Advanced Searching With Flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
 
 *Why isn’t this built into JavaScript?* There is a proposal to add such a function to RegExp, but it was [rejected by TC39.](https://github.com/benjamingr/RegExp.escape/issues/37)
 
@@ -151,7 +151,7 @@ The occurrences of `/d(b+)d/g` in the two statements are different regular expre
 
 Regular expressions have six optional flags that allow for functionality like global and case insensitive searching. These flags can be used separately or together in any order, and are included as part of the regular expression.
 
-Regular expression flags | Flag | Description | Corresponding property | | — | — | — | | `g` | Global search. | `[RegExp.prototype.global](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global)` | | `i` | Case-insensitive search. | `[RegExp.prototype.ignoreCase](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase)` | | `m` | Multi-line search. | `[RegExp.prototype.multiline](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline)` | | `s` | Allows `.` to match newline characters. | `[RegExp.prototype.dotAll](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)` | | `u` | “unicode”; treat a pattern as a sequence of unicode code points. | `[RegExp.prototype.unicode](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)` | | `y` | Perform a “sticky” search that matches starting at the current position in the target string. See [`sticky`](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky). | `[RegExp.prototype.sticky](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)` |
+Regular expression flags | Flag | Description | Corresponding property | | — | — | — | | `g` | Global search. | `[RegExp.prototype.global](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global)` | | `i` | Case-insensitive search. | `[RegExp.prototype.ignoreCase](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase)` | | `m` | Multi-line search. | `[RegExp.prototype.multiline](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline)` | | `s` | Allows `.` to match newline characters. | `[RegExp.prototype.dotAll](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)` | | `u` | "unicode”; treat a pattern as a sequence of unicode code points. | `[RegExp.prototype.unicode](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)` | | `y` | Perform a "sticky” search that matches starting at the current position in the target string. See [`sticky`](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky). | `[RegExp.prototype.sticky](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky)` |
 
 To include a flag with the regular expression, use this syntax:
 
@@ -180,7 +180,7 @@ with:
 
 and get the same result.
 
-The behavior associated with the `g` flag is different when the `.exec()` method is used. The roles of “class” and “argument” get reversed: In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument, while in the case of `.exec()`, it is the regular expression that owns the method, with the string being the argument. Contrast this *`str.match(re)`* versus *`re.exec(str)`*. The `g` flag is used with the **`.exec()`** method to get iterative progression.
+The behavior associated with the `g` flag is different when the `.exec()` method is used. The roles of "class” and "argument” get reversed: In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument, while in the case of `.exec()`, it is the regular expression that owns the method, with the string being the argument. Contrast this *`str.match(re)`* versus *`re.exec(str)`*. The `g` flag is used with the **`.exec()`** method to get iterative progression.
 
     var xArray; while(xArray = re.exec(str)) console.log(xArray);
 
@@ -196,7 +196,7 @@ Examples
 
 ### Using special characters to verify input
 
-In the following example, the user is expected to enter a phone number. When the user presses the “Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
+In the following example, the user is expected to enter a phone number. When the user presses the "Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
 
 Within non-capturing parentheses `(?:` , the regular expression looks for three numeric characters `\d{3}` OR `|` a left parenthesis `\(` followed by three digits `\d{3}`, followed by a close parenthesis `\)`, (end non-capturing parenthesis `)`), followed by one dash, forward slash, or decimal point and when found, remember the character `([-\/\.])`, followed by three digits `\d{3}`, followed by the remembered match of a dash, forward slash, or decimal point `\1`, followed by four digits `\d{4}`.
 

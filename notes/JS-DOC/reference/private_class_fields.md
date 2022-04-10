@@ -67,7 +67,7 @@ This can lead to unexpected behavior when using `this`.
 
 ### Private instance fields
 
-Private instance fields are declared with **\# names** (pronounced “*hash names*”), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
+Private instance fields are declared with **\# names** (pronounced "*hash names*”), which are identifiers prefixed with `#`. The `#` is a part of the name itself. It is used for declaration and accessing as well.
 
 The encapsulation is enforced by the language. It is a syntax error to refer to `#` names from out of scope.
 
@@ -108,7 +108,7 @@ Private static methods may be generator, async, and async generator functions.
     console.assert(ClassWithPrivateStaticMethod.publicStaticMethod1() === 42);
     console.assert(ClassWithPrivateStaticMethod.publicStaticMethod2() === 42);
 
-This can lead to unexpected behavior when using `this`. In the following example `this` refers to the `Derived` class (not the `Base` class) when we try to call `Derived.publicStaticMethod2()`, and thus exhibits the same “provenance restriction” as mentioned above:
+This can lead to unexpected behavior when using `this`. In the following example `this` refers to the `Derived` class (not the `Base` class) when we try to call `Derived.publicStaticMethod2()`, and thus exhibits the same "provenance restriction” as mentioned above:
 
     class Base {
       static #privateStaticMethod() {

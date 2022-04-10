@@ -1,7 +1,7 @@
-TypeError: can’t access property “x” of “y”
+TypeError: can’t access property "x” of "y”
 ===========================================
 
-The JavaScript exception “can’t access property” occurs when property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+The JavaScript exception "can’t access property” occurs when property access was operated on [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
 Message
 -------

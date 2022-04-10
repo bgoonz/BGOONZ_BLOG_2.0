@@ -227,7 +227,7 @@ See: [sogko/graphql-shorthand-notation-cheat-sheet](https://raw.githubuserconten
       direction: DIRECTION!
     }
 
-{: data-line=“1,2,3,4”}
+{: data-line="1,2,3,4”}
 
 ### Unions
 
@@ -240,7 +240,7 @@ See: [sogko/graphql-shorthand-notation-cheat-sheet](https://raw.githubuserconten
       search(q: String) [Result]
     }
 
-{: data-line=“4”}
+{: data-line="4”}
 
 References
 ----------

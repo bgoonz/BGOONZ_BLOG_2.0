@@ -506,7 +506,7 @@ Obs: Unlike C, Go doesn’t have pointer arithmetics.
 Methods and Interfaces
 ----------------------
 
-Go doesn’t have classes. But you can implement methods, interfaces and almost everything contained in OOP, but in what gophers call “Go Way”
+Go doesn’t have classes. But you can implement methods, interfaces and almost everything contained in OOP, but in what gophers call "Go Way”
 
     type Dog struct {
         Name string

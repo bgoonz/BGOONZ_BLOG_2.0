@@ -31,7 +31,7 @@ In many engines `globalThis` will be a reference to the actual global object, bu
 
 ### Naming
 
-Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal’s “naming” document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
+Several other popular name choices such as `self` and `global` were removed from consideration because of their potential to break compatibility with existing code. See the [language proposal’s "naming” document](https://github.com/tc39/proposal-global/blob/master/NAMING.md) for more details.
 
 Examples
 --------

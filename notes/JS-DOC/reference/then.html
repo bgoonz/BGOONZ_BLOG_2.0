@@ -26,9 +26,9 @@ p.then(value =&gt; {
 });</code></pre>
 <h3 id="parameters">Parameters</h3>
 <p><code>onFulfilled</code> <span class="badge inline optional">Optional</span><br />
-A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is fulfilled. This function has one argument, the <code>fulfillment value</code>. If it is not a function, it is internally replaced with an “Identity” function (it returns the received argument).</p>
+A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is fulfilled. This function has one argument, the <code>fulfillment value</code>. If it is not a function, it is internally replaced with an "Identity” function (it returns the received argument).</p>
 <p><code>onRejected</code> <span class="badge inline optional">Optional</span><br />
-A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is rejected. This function has one argument, the <code>rejection reason</code>. If it is not a function, it is internally replaced with a “Thrower” function (it throws an error it received as argument).</p>
+A <a href="../function"><code>Function</code></a> called if the <code>Promise</code> is rejected. This function has one argument, the <code>rejection reason</code>. If it is not a function, it is internally replaced with a "Thrower” function (it throws an error it received as argument).</p>
 <h3 id="return-value">Return value</h3>
 <p>Once a <a href="../promise"><code>Promise</code></a> is fulfilled or rejected, the respective handler function (<code>onFulfilled</code> or <code>onRejected</code>) will be called <strong>asynchronously</strong> (scheduled in the current thread loop). The behavior of the handler function follows a specific set of rules. If a handler function:</p>
 <ul>

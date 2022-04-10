@@ -469,7 +469,7 @@ module;</code></pre>
 <div class="sourceCode" id="cb86"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb86-1" title="1"></a>
 <a class="sourceLine" id="cb86-2" title="2"><span class="at">setImmediate</span>(callback<span class="op">,</span> [arg]<span class="op">,</span> [...])<span class="op">;</span></a></code></pre></div>
 <blockquote>
-<p>To schedule the “immediate” execution of callback after I/O events callbacks and before setTimeout and setInterval.</p>
+<p>To schedule the "immediate” execution of callback after I/O events callbacks and before setTimeout and setInterval.</p>
 </blockquote>
 <div class="sourceCode" id="cb87"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb87-1" title="1"><span class="at">clearImmediate</span>(immediateObject)<span class="op">;</span></a></code></pre></div>
 <blockquote>
@@ -804,15 +804,15 @@ util.inspect(object, [opts]);</code></pre>
 util.isRegExp(object);
 </code></pre>
 <blockquote>
-<p>Returns true if the given “object” is a RegExp. false otherwise.</p>
+<p>Returns true if the given "object” is a RegExp. false otherwise.</p>
 </blockquote>
 <div class="sourceCode" id="cb135"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb135-1" title="1"><span class="va">util</span>.<span class="at">isDate</span>(object)<span class="op">;</span></a></code></pre></div>
 <blockquote>
-<p>Returns true if the given “object” is a Date. false otherwise.</p>
+<p>Returns true if the given "object” is a Date. false otherwise.</p>
 </blockquote>
 <div class="sourceCode" id="cb136"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb136-1" title="1"><span class="va">util</span>.<span class="at">isError</span>(object)<span class="op">;</span></a></code></pre></div>
 <blockquote>
-<p>Returns true if the given “object” is an Error. false otherwise.</p>
+<p>Returns true if the given "object” is an Error. false otherwise.</p>
 </blockquote>
 <div class="sourceCode" id="cb137"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb137-1" title="1"></a>
 <a class="sourceLine" id="cb137-2" title="2"><span class="va">util</span>.<span class="at">promisify</span>(fn)</a>
@@ -1638,7 +1638,7 @@ http.get(options, [callback]);
 </blockquote>
 <div class="sourceCode" id="cb280"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb280-1" title="1"><span class="va">os</span>.<span class="at">endianness</span>()<span class="op">;</span></a></code></pre></div>
 <blockquote>
-<p>Returns the endianness of the CPU. Possible values are “BE” or “LE”.</p>
+<p>Returns the endianness of the CPU. Possible values are "BE” or "LE”.</p>
 </blockquote>
 <div class="sourceCode" id="cb281"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb281-1" title="1"><span class="va">os</span>.<span class="at">hostname</span>()<span class="op">;</span></a></code></pre></div>
 <blockquote>
@@ -1852,10 +1852,10 @@ buf.toJSON();
 <p>In rare cases, it’s okay to initialize state based on props.</p>
 </blockquote>
 <blockquote>
-<p>This effectively “forks” the props and sets the state with the initial props.</p>
+<p>This effectively "forks” the props and sets the state with the initial props.</p>
 </blockquote>
 <blockquote>
-<p>If you “fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.</p>
+<p>If you "fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.</p>
 </blockquote>
 <div class="sourceCode" id="cb320"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb320-1" title="1"></a>
 <a class="sourceLine" id="cb320-2" title="2">    color<span class="op">:</span> <span class="va">props</span>.<span class="at">initialColor</span></a>

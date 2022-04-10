@@ -12,7 +12,7 @@ To start a container with an interactive shell:
 
 docker run -ti /bin/bash
 
-To “shell” into a running container (docker-1.3+):
+To "shell” into a running container (docker-1.3+):
 ==================================================
 
 docker exec -ti bash
@@ -60,7 +60,7 @@ docker images
 To remove all untagged images:
 ==============================
 
-docker rmi $(docker images | grep “^” | awk “{print $3}”)
+docker rmi $(docker images | grep "^” | awk "{print $3}”)
 
 To remove all volumes not used by at least one container:
 =========================================================

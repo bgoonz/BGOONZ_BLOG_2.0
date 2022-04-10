@@ -15,7 +15,7 @@ A string representing the object.
 Description
 -----------
 
-Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns “`[object type]`”, where `type` is the object type. The following code illustrates this:
+Every object has a `toString()` method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the `toString()` method is inherited by every object descended from `Object`. If this method is not overridden in a custom object, `toString()` returns "`[object type]`”, where `type` is the object type. The following code illustrates this:
 
     const o = new Object();
     o.toString(); // returns [object Object]
@@ -70,7 +70,7 @@ If you call the `toString()` method on this custom object, it returns the defaul
 
     theDog.toString(); // returns [object Object]
 
-The following code creates and assigns `dogToString()` to override the default `toString()` method. This function generates a string containing the `name`, `breed`, `color`, and `sex` of the object, in the form “`property = value;`”.
+The following code creates and assigns `dogToString()` to override the default `toString()` method. This function generates a string containing the `name`, `breed`, `color`, and `sex` of the object, in the form "`property = value;`”.
 
     Dog.prototype.toString = function dogToString() {
       const ret = 'Dog ' + this.name + ' is a ' + this.sex + ' ' + this.color + ' ' + this.breed;

@@ -5,7 +5,7 @@ Testing
 
     npm install --save-dev jest babel-jest
 
-{: data-line=“1”}
+{: data-line="1”}
 
     /* Add to package.json */
     "scripts": {
@@ -123,14 +123,14 @@ More features
       })
     })
 
-{: data-line=“2”}
+{: data-line="2”}
 
     test('works with async/await', async () => {
       const hello = await foo()
       ···
     })
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Return promises, or use async/await. See: [Async tutorial](http://facebook.github.io/jest/docs/en/tutorial-async.html)
 
@@ -155,7 +155,7 @@ First run creates a snapshot. Subsequent runs match the saved snapshot. See: [Sn
         expect(tree).toMatchSnapshot();
     });
 
-{: data-line=“2,3,4”}
+{: data-line="2,3,4”}
 
 React’s test renderer can be used for Jest snapshots. See: [Snapshot test](http://facebook.github.io/jest/docs/en/tutorial-react-native.html#snapshot-test)
 
@@ -208,7 +208,7 @@ See: [Mock functions](http://facebook.github.io/jest/docs/en/mock-functions.html
     Fn.mock.instances;
     // → [a, b]
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [.mock property](http://facebook.github.io/jest/docs/en/mock-functions.html#mock-property)
 
@@ -222,7 +222,7 @@ See: [.mock property](http://facebook.github.io/jest/docs/en/mock-functions.html
     fn.mock.calls[0][0]; // → 123
     fn.mock.calls[1][0]; // → 456
 
-{: data-line=“1,2,3”}
+{: data-line="1,2,3”}
 
 See: [.mock property](http://facebook.github.io/jest/docs/en/mock-functions.html#mock-property)
 
@@ -242,7 +242,7 @@ See: [.mock property](http://facebook.github.io/jest/docs/en/mock-functions.html
         .mockImplementationOnce(() => 1)
         .mockImplementationOnce(() => 2);
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
     fn(); // → 1
     fn(); // → 2

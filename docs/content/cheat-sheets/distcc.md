@@ -11,16 +11,16 @@ INSTALL
 Edit /etc/default/distcc and set theses vars
 ============================================
 
-STARTDISTCC=“true”
+STARTDISTCC="true”
 ==================
 
-ALLOWEDNETS=“127.0.0.1 192.168.1.0/24”\# Your computer and local computers
+ALLOWEDNETS="127.0.0.1 192.168.1.0/24”\# Your computer and local computers
 ==========================================================================
 
-\#LISTENER=“127.0.0.1”\# Comment it
+\#LISTENER="127.0.0.1”\# Comment it
 ===================================
 
-ZEROCONF=“true”\# Auto configuration
+ZEROCONF="true”\# Auto configuration
 ====================================
 
 REMEMBER 1:

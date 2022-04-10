@@ -12,7 +12,7 @@ This is the easiest way of loading JS files for a beginner.
 [React-script-tag](https://www.npmjs.com/package/react-script-tag) is an npm package that provides a React `<script>` tag that supports universal rendering. All standard `<script>` [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) like `async`, `src`, `type`, and `defer` are supported, including `onLoad` and `onError` callbacks.
 
 **import** ScriptTag **from** ‘react-script-tag’;const Demo = props =&gt; (  
-**&lt;**ScriptTag type**=**“text/javascript” src**=**“/path/to/resource.js” **/&gt;  
+**&lt;**ScriptTag type**=**"text/javascript” src**=**"/path/to/resource.js” **/&gt;  
 )**
 
 We also have an `isHydrating` flag, which is a `boolean` value. It defaults to `false` and must be `true` if the client is `hydrate()`ing the server render.
@@ -46,5 +46,5 @@ React allows us to build [custom Hooks](https://reactjs.org/docs/hooks-custom.ht
 Which could be used in components as below:
 
 import importScript from ‘customHooks/importScript’;const Demo = props =&gt; {  
-importScript(“/path/to/resource.js”);  
+importScript("/path/to/resource.js”);  
 }

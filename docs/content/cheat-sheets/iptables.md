@@ -1,7 +1,7 @@
 To show hit for rules with auto refresh:
 ========================================
 
-watch –interval 0 ‘iptables -nvL | grep -v “0 0”’
+watch –interval 0 ‘iptables -nvL | grep -v "0 0”’
 
 To show hit for rule with auto refresh and highlight any changes since the last refresh:
 ========================================================================================
@@ -43,7 +43,7 @@ tcp-reset
 To add a comment to a rule:
 ===========================
 
-iptables … -m comment –comment “This rule is here for this reason”
+iptables … -m comment –comment "This rule is here for this reason”
 
 To remove or insert a rule:
 ===========================
@@ -82,4 +82,4 @@ iptables -D INPUT 2
 2.b) OR INSERT a rule.
 ======================
 
-iptables -I INPUT {LINE\_NUMBER} -i eth1 -p tcp –dport 21 -s 123.123.123.123 -j ACCEPT -m comment –comment “This rule is here for this reason”
+iptables -I INPUT {LINE\_NUMBER} -i eth1 -p tcp –dport 21 -s 123.123.123.123 -j ACCEPT -m comment –comment "This rule is here for this reason”

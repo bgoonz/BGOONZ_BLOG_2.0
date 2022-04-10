@@ -7133,6 +7133,6 @@
         <link rel="prefetch" href="/page-data/lorem-ipsum/page-data.json" crossorigin="anonymous" as="fetch" />
     </head>
 
-=“prefetch” href=“/page-data/lorem-ipsum/page-data.json” crossorigin=“anonymous” as=“fetch”&gt;
+="prefetch” href="/page-data/lorem-ipsum/page-data.json” crossorigin="anonymous” as="fetch”&gt;
 
 

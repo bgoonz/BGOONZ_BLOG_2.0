@@ -200,7 +200,7 @@ Civil (algorithmic) Arabic calendar
 </table>
 <h2 id="examples">Examples</h2>
 <h3 id="adding-a-calendar-in-the-locale-string">Adding a calendar in the Locale string</h3>
-<p>Calendar eras fall under the category of locale key “extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the <a href="locale"><code>Intl.Locale</code></a> constructor. To add the calendar type, first add the <code>-u</code> extension to the string. Next, add the <code>-ca</code> extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.</p>
+<p>Calendar eras fall under the category of locale key "extension keys”. These keys add additional data about the locale, and are added to locale identifiers by using the <code>-u</code> extension. Thus, the calendar era type can be added to the initial locale identifier string that is passed into the <a href="locale"><code>Intl.Locale</code></a> constructor. To add the calendar type, first add the <code>-u</code> extension to the string. Next, add the <code>-ca</code> extension to indicate that you are adding a calendar type. Finally, add the calendar era to the string.</p>
 <pre><code>let frBuddhist = new Intl.Locale(&quot;fr-FR-u-ca-buddhist&quot;);
 console.log(frBuddhist.calendar); // Prints &quot;buddhist&quot;</code></pre>
 <h3 id="adding-a-calendar-with-a-configuration-object">Adding a calendar with a configuration object</h3>

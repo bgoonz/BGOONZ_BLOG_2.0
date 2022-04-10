@@ -138,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="local-variable">Local variable</h3>
 <div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">zip101 = <span class="st">&quot;233-7383&quot;</span></a>
 <a class="sourceLine" id="cb4-2" title="2">magic_number = <span class="dv">42</span></a></code></pre></div>
-<p>Should be “<code>[a-z][a-z0-9_]+</code>”(snake_case).</p>
+<p>Should be "<code>[a-z][a-z0-9_]+</code>”(snake_case).</p>
 <h3 id="instance-variable">Instance variable</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">module</span> <span class="dt">State</span></a>
 <a class="sourceLine" id="cb5-2" title="2">  <span class="kw">def</span> initialize(state)</a>
@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-10" title="10">state = <span class="dt">State</span>.new <span class="st">&quot;success&quot;</span></a>
 <a class="sourceLine" id="cb5-11" title="11">state.show</a>
 <a class="sourceLine" id="cb5-12" title="12"><span class="co">#=&gt; success</span></a></code></pre></div>
-<p>Should be “<code>@[a-z][a-z0-9_]+</code>”(snake_case).</p>
+<p>Should be "<code>@[a-z][a-z0-9_]+</code>”(snake_case).</p>
 <h3 id="multiple-assignment">Multiple assignment</h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># array literal</span></a>
 <a class="sourceLine" id="cb6-2" title="2">a, b, c = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
@@ -184,7 +184,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-7" title="7"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb8-8" title="8"></a>
 <a class="sourceLine" id="cb8-9" title="9">foo_bar? <span class="st">&quot;Hi, Goby!&quot;</span> <span class="co">#=&gt; true</span></a></code></pre></div>
-<p>Method name should be “<code>[a-z][a-z0-9_]+\??</code>” (snake_case). You can omit the trailing “<code>()</code>” only if no parameters are taken. Trailing using “<code>!</code>” is <strong>unsupported</strong>.</p>
+<p>Method name should be "<code>[a-z][a-z0-9_]+\??</code>” (snake_case). You can omit the trailing "<code>()</code>” only if no parameters are taken. Trailing using "<code>!</code>” is <strong>unsupported</strong>.</p>
 <h3 id="order-of-method-parameter">Order of method parameter</h3>
 <div class="sourceCode" id="cb9"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> foo(normal, default=<span class="st">&quot;value&quot;</span>, hash={}, ary=[], keyword:, keyword_default:<span class="st">&quot;key&quot;</span>, *sprat)</a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="kw">end</span></a></code></pre></div>
@@ -304,7 +304,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb20-9" title="9"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb20-10" title="10"></a>
 <a class="sourceLine" id="cb20-11" title="11"><span class="dt">Bar</span>.new.foo     <span class="co">#=&gt; Foo&#39;s instance method</span></a></code></pre></div>
-<p>Module names should be “<code>[A-Z][A-Za-z0-9_]+</code>” (UpperCamelCase). Modules cannot be inherited.</p>
+<p>Module names should be "<code>[A-Z][A-Za-z0-9_]+</code>” (UpperCamelCase). Modules cannot be inherited.</p>
 <h3 id="module-definition-and-extend">Module definition and <code>extend</code></h3>
 <div class="sourceCode" id="cb21"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">module</span> <span class="dt">Foo</span></a>
 <a class="sourceLine" id="cb21-2" title="2">  <span class="kw">def</span> foo</a>
@@ -326,7 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb22-5" title="5"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb22-6" title="6"></a>
 <a class="sourceLine" id="cb22-7" title="7"><span class="dt">Foo</span>.new.foo  <span class="co">#=&gt; 99</span></a></code></pre></div>
-<p>Actually, Goby’s module can be even <strong>instantiated</strong> via “<code>new</code>” like “<code>Foo.new</code>”.</p>
+<p>Actually, Goby’s module can be even <strong>instantiated</strong> via "<code>new</code>” like "<code>Foo.new</code>”.</p>
 <h3 id="class-definition-and-inheritance">Class definition and inheritance</h3>
 <div class="sourceCode" id="cb23"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> <span class="dt">Foo</span>       <span class="co"># class definition</span></a>
 <a class="sourceLine" id="cb23-2" title="2">  <span class="kw">def</span> bar</a>
@@ -338,7 +338,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb23-8" title="8"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb23-9" title="9"></a>
 <a class="sourceLine" id="cb23-10" title="10"><span class="dt">Baz</span>.new.bar  <span class="co">#=&gt; 99</span></a></code></pre></div>
-<p>Class names should be “<code>[A-Z][A-Za-z0-9]+</code>” (UpperCamelCase). Inheritance with “<code>&lt;</code>” is supported.</p>
+<p>Class names should be "<code>[A-Z][A-Za-z0-9]+</code>” (UpperCamelCase). Inheritance with "<code>&lt;</code>” is supported.</p>
 <h3 id="constants">Constants</h3>
 <div class="sourceCode" id="cb24"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb24-1" title="1"><span class="dt">HTTP_ERROR_404</span> = <span class="dv">404</span></a>
 <a class="sourceLine" id="cb24-2" title="2"><span class="dt">HTTP_ERROR_404</span> = <span class="dv">500</span>    <span class="co"># error</span></a>
@@ -605,7 +605,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb50-14" title="14"><span class="dt">Foo</span>.new.bar b  <span class="co">#=&gt; 2</span></a>
 <a class="sourceLine" id="cb50-15" title="15"><span class="dt">Foo</span>.new.bar b  <span class="co">#=&gt; 3</span></a></code></pre></div>
 <h2 id="native-class-primary">Native class (Primary)</h2>
-<p>Goby’s most “native” classes cannot instantiate with <code>new</code> in principle.</p>
+<p>Goby’s most "native” classes cannot instantiate with <code>new</code> in principle.</p>
 <h3 id="object"><code>Object</code></h3>
 <div class="sourceCode" id="cb51"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb51-1" title="1"><span class="dt">Bar</span>.ancestors</a>
 <a class="sourceLine" id="cb51-2" title="2"><span class="co">#» [Bar, Foo, Object]</span></a>
@@ -828,7 +828,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb66-9" title="9"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb66-10" title="10"></a>
 <a class="sourceLine" id="cb66-11" title="11">result   <span class="co">#=&gt; [2, 4, 6]</span></a></code></pre></div>
-<p>A shorthand <code>#lazy</code> method is also provided in <code>Array</code> and <code>Range</code> by now. See “Tips &amp; tricks” below.</p>
+<p>A shorthand <code>#lazy</code> method is also provided in <code>Array</code> and <code>Range</code> by now. See "Tips &amp; tricks” below.</p>
 <ul>
 <li><strong><code>LazyEnumerator.methods</code></strong>: the same as <code>Class.methods</code></li>
 <li><strong><code>[1, 2].lazy</code></strong>: <code>each</code>, <code>first</code>, <code>has_next?</code>, <code>initialize</code>, <code>map</code>, <code>next</code>

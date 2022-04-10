@@ -40,7 +40,7 @@ apt-get download
 To change cache dir and archive dir (where .deb are stored):
 ============================================================
 
-apt-get -o Dir::Cache=“/path/to/destination/dir/” -o Dir::Cache::archives=“./” install …
+apt-get -o Dir::Cache="/path/to/destination/dir/” -o Dir::Cache::archives="./” install …
 
 To show apt-get installed packages:
 ===================================

@@ -53,7 +53,7 @@ Static properties
 Returns a number value of the element size for the different `TypedArray` objects.
 
 [`TypedArray.name`](typedarray/name)  
-Returns the string value of the constructor name (e.g, “`Int8Array`”).
+Returns the string value of the constructor name (e.g, "`Int8Array`”).
 
 [`get TypedArray[@@species]`](typedarray/@@species)  
 The constructor function used to create derived objects.

@@ -1,7 +1,7 @@
 SyntaxError: missing } after property list
 ==========================================
 
-The JavaScript exception “missing } after property list” occurs when there is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma.
+The JavaScript exception "missing } after property list” occurs when there is a mistake in the [object initializer](../operators/object_initializer) syntax somewhere. Might be in fact a missing curly bracket, but could also be a missing comma.
 
 Message
 -------

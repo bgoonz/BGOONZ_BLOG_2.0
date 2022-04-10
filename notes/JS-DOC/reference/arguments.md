@@ -8,7 +8,7 @@ Description
 
 **Note:** If you’re writing ES6 compatible code, then [rest parameters](rest_parameters) should be preferred.
 
-**Note:** “Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn’t have [`Array`](../global_objects/array)’s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
+**Note:** "Array-like” means that `arguments` has a [`length`](arguments/length) property and properties indexed from zero, but it doesn’t have [`Array`](../global_objects/array)’s built-in methods like [`forEach()`](../global_objects/array/foreach) or [`map()`](../global_objects/array/map). See [§Description](#description) for details.
 
 The `arguments` object is a local variable available within all non-[arrow](arrow_functions) functions. You can refer to a function’s arguments inside that function by using its `arguments` object. It has entries for each argument the function was called with, with the first entry’s index at `0`.
 
@@ -97,7 +97,7 @@ You can pass as many arguments as you like to this function. It returns a string
 
 ### Defining a function that creates HTML lists
 
-This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is “`u`” if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or “`o`” if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
+This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is "`u`” if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or "`o`” if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
 
     function list(type) {
       var html = '<' + type + 'l><li>';

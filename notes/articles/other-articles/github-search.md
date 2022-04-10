@@ -7,7 +7,7 @@ The GitHub Search API lets you to search for the specific item efficiently.
 
 The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It’s designed to help you find the one result you’re looking for (or maybe the few results you’re looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the GitHub Search API provides **up to 1,000 results for each search**.
 
-You can narrow your search using queries. To learn more about the search query syntax, see “[Constructing a search query](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/search#constructing-a-search-query).”
+You can narrow your search using queries. To learn more about the search query syntax, see "[Constructing a search query](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/rest/reference/search#constructing-a-search-query).”
 
 ### [Ranking search results](#ranking-search-results)
 
@@ -35,7 +35,7 @@ For example, if you wanted to search for all *repositories* owned by `defunkt` t
 
     const queryString = 'q=' + encodeURIComponent('GitHub Octocat in:readme user:defunkt');
 
-See “[Searching on GitHub](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/searching-on-github)” for a complete list of available qualifiers, their format, and an example of how to use them. For information about how to use operators to match specific quantities, dates, or to exclude results, see “[Understanding the search syntax](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/understanding-the-search-syntax).”
+See "[Searching on GitHub](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/searching-on-github)” for a complete list of available qualifiers, their format, and an example of how to use them. For information about how to use operators to match specific quantities, dates, or to exclude results, see "[Understanding the search syntax](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/en/articles/understanding-the-search-syntax).”
 
 ### [Limitations on query length](#limitations-on-query-length)
 
@@ -44,7 +44,7 @@ The Search API does not support queries that:
 -   are longer than 256 characters (not including operators or qualifiers).
 -   have more than five `AND`, `OR`, or `NOT` operators.
 
-These search queries will return a “Validation failed” error message.
+These search queries will return a "Validation failed” error message.
 
 ### [Timeouts and incomplete results](#timeouts-and-incomplete-results)
 
@@ -54,7 +54,7 @@ Reaching a timeout does not necessarily mean that search results are incomplete.
 
 ### [Access errors or missing search results](#access-errors-or-missing-search-results)
 
-You need to successfully authenticate and have access to the repositories in your search queries, otherwise, you’ll see a `422 Unprocessible Entry` error with a “Validation Failed” message. For example, your search will fail if your query includes `repo:`, `user:`, or `org:` qualifiers that request resources that you don’t have access to when you sign in on GitHub.
+You need to successfully authenticate and have access to the repositories in your search queries, otherwise, you’ll see a `422 Unprocessible Entry` error with a "Validation Failed” message. For example, your search will fail if your query includes `repo:`, `user:`, or `org:` qualifiers that request resources that you don’t have access to when you sign in on GitHub.
 
 When your search query requests multiple resources, the response will only contain the resources that you have access to and will **not** provide an error message listing the resources that were not returned.
 
@@ -91,7 +91,7 @@ Setting to `application/vnd.github.v3+json` is recommended.
   
 `q` | string | query |
 
-The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See “[Searching code](https://help.github.com/articles/searching-code/)” for a detailed list of qualifiers.
+The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching code](https://help.github.com/articles/searching-code/)” for a detailed list of qualifiers.
 
   
 `sort` | string | query |
@@ -257,7 +257,7 @@ This API is under preview and subject to change.[See preview notice](#search-com
   
 `q` | string | query |
 
-The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See “[Searching commits](https://help.github.com/articles/searching-commits/)” for a detailed list of qualifiers.
+The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching commits](https://help.github.com/articles/searching-commits/)” for a detailed list of qualifiers.
 
   
 `sort` | string | query |
@@ -467,7 +467,7 @@ For example, if you want to find the oldest unresolved Python bugs on Windows. Y
 
 This query searches for the keyword `windows`, within any open issue that is labeled as `bug`. The search runs across repositories whose primary language is Python. The results are sorted by creation date in ascending order, which means the oldest issues appear first in the search results.
 
-**Note:** For [user-to-server](https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests) GitHub App requests, you can’t retrieve a combination of issues and pull requests in a single query. Requests that don’t include the `is:issue` or `is:pull-request` qualifier will receive an HTTP `422 Unprocessable Entity` response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the `is` qualifier, see “[Searching only issues or pull requests](https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests).”
+**Note:** For [user-to-server](https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests) GitHub App requests, you can’t retrieve a combination of issues and pull requests in a single query. Requests that don’t include the `is:issue` or `is:pull-request` qualifier will receive an HTTP `422 Unprocessable Entity` response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the `is` qualifier, see "[Searching only issues or pull requests](https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests).”
 
     get /search/issues
 
@@ -480,7 +480,7 @@ Setting to `application/vnd.github.v3+json` is recommended.
   
 `q` | string | query |
 
-The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See “[Searching issues and pull requests](https://help.github.com/articles/searching-issues-and-pull-requests/)” for a detailed list of qualifiers.
+The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching issues and pull requests](https://help.github.com/articles/searching-issues-and-pull-requests/)” for a detailed list of qualifiers.
 
   
 `sort` | string | query |
@@ -788,7 +788,7 @@ Setting to `application/vnd.github.v3+json` is recommended.[See preview notice](
   
 `q` | string | query |
 
-The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See “[Searching for repositories](https://help.github.com/articles/searching-for-repositories/)” for a detailed list of qualifiers.
+The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching for repositories](https://help.github.com/articles/searching-for-repositories/)” for a detailed list of qualifiers.
 
   
 `sort` | string | query |
@@ -964,7 +964,7 @@ The `topics` property for repositories on GitHub is currently available for deve
 
 ### [Search topics](#search-topics)
 
-Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination). See “[Searching topics](https://help.github.com/articles/searching-topics/)” for a detailed list of qualifiers.
+Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination). See "[Searching topics](https://help.github.com/articles/searching-topics/)” for a detailed list of qualifiers.
 
 When searching for topics, you can get text match metadata for the topic’s **short\_description**, **description**, **name**, or **display\_name** field when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://docs.github.com/rest/reference/search#text-match-metadata).
 
@@ -1151,7 +1151,7 @@ Setting to `application/vnd.github.v3+json` is recommended.
   
 `q` | string | query |
 
-The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See “[Searching users](https://help.github.com/articles/searching-users/)” for a detailed list of qualifiers.
+The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://docs.github.com/rest/reference/search#constructing-a-search-query). See "[Searching users](https://help.github.com/articles/searching-users/)” for a detailed list of qualifiers.
 
   
 `sort` | string | query |
@@ -1251,7 +1251,7 @@ To get this metadata in your search results, specify the `text-match` media type
 
 When you provide the `text-match` media type, you will receive an extra key in the JSON payload called `text_matches` that provides information about the position of your search terms within the text and the `property` that includes the search term. Inside the `text_matches` array, each object includes the following attributes:
 
-<table style="width:99%;"><colgroup><col style="width: 4%" /><col style="width: 95%" /></colgroup><thead><tr class="header"><th>Name</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>object_url</code></td><td>The URL for the resource that contains a string property matching one of the search terms.</td></tr><tr class="even"><td><code>object_type</code></td><td>The name for the type of resource that exists at the given <code>object_url</code>.</td></tr><tr class="odd"><td><code>property</code></td><td>The name of a property of the resource that exists at <code>object_url</code>. That property is a string that matches one of the search terms. (In the JSON returned from <code>object_url</code>, the full content for the <code>fragment</code> will be found in the property with this name.)</td></tr><tr class="even"><td><code>fragment</code></td><td>A subset of the value of <code>property</code>. This is the text fragment that matches one or more of the search terms.</td></tr><tr class="odd"><td><code>matches</code></td><td>An array of one or more search terms that are present in <code>fragment</code>. The indices (i.e., “offsets”) are relative to the fragment. (They are not relative to the <em>full</em> content of <code>property</code>.)</td></tr></tbody></table>
+<table style="width:99%;"><colgroup><col style="width: 4%" /><col style="width: 95%" /></colgroup><thead><tr class="header"><th>Name</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>object_url</code></td><td>The URL for the resource that contains a string property matching one of the search terms.</td></tr><tr class="even"><td><code>object_type</code></td><td>The name for the type of resource that exists at the given <code>object_url</code>.</td></tr><tr class="odd"><td><code>property</code></td><td>The name of a property of the resource that exists at <code>object_url</code>. That property is a string that matches one of the search terms. (In the JSON returned from <code>object_url</code>, the full content for the <code>fragment</code> will be found in the property with this name.)</td></tr><tr class="even"><td><code>fragment</code></td><td>A subset of the value of <code>property</code>. This is the text fragment that matches one or more of the search terms.</td></tr><tr class="odd"><td><code>matches</code></td><td>An array of one or more search terms that are present in <code>fragment</code>. The indices (i.e., "offsets”) are relative to the fragment. (They are not relative to the <em>full</em> content of <code>property</code>.)</td></tr></tbody></table>
 
 #### [Example](#example)
 

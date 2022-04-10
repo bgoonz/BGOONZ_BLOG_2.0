@@ -291,7 +291,7 @@ Common String Functions
 
 #### Description
 
-Extracts the characters in a string between “start” and “end”, not including “end” itself.
+Extracts the characters in a string between "start” and "end”, not including "end” itself.
 
 #### Syntax
 

@@ -38,7 +38,7 @@ You can assign a different `this` object when calling an existing function. `thi
 
 You can also use [`arguments`](../../functions/arguments) for the `argsArray` parameter. [`arguments`](../../functions/arguments) is a local variable of a function. It can be used for all unspecified arguments of the called object. Thus, you do not have to know the arguments of the called object when you use the `apply` method. You can use `arguments` to pass all the arguments to the called object. The called object is then responsible for handling the arguments.
 
-Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it’s going to have a `length` property, and integer (“index”) properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
+Since ECMAScript 5<sup>th</sup> Edition, you can also use any kind of object which is array-like. In practice, this means it’s going to have a `length` property, and integer ("index”) properties in the range `(0..length - 1)`. For example, you could use a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), or a custom object like `{ 'length': 2, '0': 'eat', '1': 'bananas' }`.
 
 **Note:** Many older browsers—including Chrome &lt;17 and Internet Explorer &lt;9—don’t accept array-like objects, and will throw an exception.
 

@@ -20,7 +20,7 @@ The number of leading zero bits in the 32-bit binary representation of the given
 Description
 -----------
 
-“`clz32`” is short for **CountLeadingZeroes32**.
+"`clz32`” is short for **CountLeadingZeroes32**.
 
 If `x` is not a number, then it will be converted to a number first, then converted to a 32-bit unsigned integer.
 
@@ -30,7 +30,7 @@ This function is particularly useful for systems that compile to JS, like [Emscr
 
 ### Count Leading Ones and beyond
 
-At present, there is no `Math.clon` for “Count Leading Ones” (named “clon”, not “clo”, because “clo” and “clz” are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0’s (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
+At present, there is no `Math.clon` for "Count Leading Ones” (named "clon”, not "clo”, because "clo” and "clz” are too similar especially for non-English-speaking people). However, a `clon` function can easily be created by inversing the bits of a number and passing the result to `Math.clz32`. Doing this will work because the inverse of 1 is 0 and vice-versa. Thus, inversing the bits will inverse the measured quantity of 0’s (from `Math.clz32`), thereby making `Math.clz32` count the number of ones instead of counting the number of zeros.
 
 Consider the following 32-bit word:
 
@@ -47,7 +47,7 @@ Using this logic, a `clon` function can be created as follows:
         return clz(~integer);
     }
 
-Further, this technique could be extended to create jumpless “Count Trailing Zeros” and “Count Trailing Ones” functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
+Further, this technique could be extended to create jumpless "Count Trailing Zeros” and "Count Trailing Ones” functions as seen below. The `ctrz` function below fills in all the high bits with the lowest filled bit, then negates the bits to erase all higher set bits so that clz can then be used.
 
     var clz = Math.clz32;
     function ctrz(integer){ // count trailing zeros

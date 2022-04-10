@@ -9,10 +9,10 @@ The `InternalError` indicates an error that occurred internally in the JavaScrip
 
 Example cases are mostly when something is too large, e.g.:
 
--   “too many switch cases”,
--   “too many parentheses in regular expression”,
--   “array initializer too large”,
--   “too much recursion”.
+-   "too many switch cases”,
+-   "too many parentheses in regular expression”,
+-   "array initializer too large”,
+-   "too much recursion”.
 
 Constructor
 -----------

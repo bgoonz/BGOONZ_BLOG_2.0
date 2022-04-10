@@ -46,6 +46,6 @@
 <p>lvconvert –mirrors 1 vg0/root</p>
 <h1 id="create-stripped-lv-raid0">Create stripped LV (RAID0)</h1>
 <p>lvcreate –name root –size 8G –stripes 2 –stripesize 4 vg0</p>
-<p>#Exclusive Activation of a Volume Group in a Cluster #Link –&gt; https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html 1&gt; vgs –noheadings -o vg_name 2&gt; volume_list = [ “rhel_root”, “rhel_home” ] 3&gt; dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r) 4&gt; Reboot the node 5&gt; uname -r to verify the correct initrd image</p>
+<p>#Exclusive Activation of a Volume Group in a Cluster #Link –&gt; https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html 1&gt; vgs –noheadings -o vg_name 2&gt; volume_list = [ "rhel_root”, "rhel_home” ] 3&gt; dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r) 4&gt; Reboot the node 5&gt; uname -r to verify the correct initrd image</p>
 </body>
 </html>

@@ -1,13 +1,13 @@
 Scheduling: setTimeout and setInterval
 ======================================
 
-We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That’s called "scheduling a call”.
 
 ------------------------------------------------------------------------
 
 ### Scheduling: setTimeout and setInterval
 
-We may decide to execute a function not right now, but at a later time. That’s called “scheduling a call”.
+We may decide to execute a function not right now, but at a later time. That’s called "scheduling a call”.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*EnCk0hh8R6B290EH.gif" class="graf-image" /></figure>There are two methods for it:
 
@@ -71,7 +71,7 @@ But using strings is not recommended, use arrow functions instead of them, like 
 
 ### Canceling with clearTimeout
 
-A call to `setTimeout` returns a “timer identifier” `timerId` that we can use to cancel the execution.
+A call to `setTimeout` returns a "timer identifier” `timerId` that we can use to cancel the execution.
 
 The syntax to cancel:
 
@@ -110,9 +110,9 @@ The following example will show the message every 2 seconds. After 5 seconds, th
     // after 5 seconds stop
     setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
 
-\`\`\`smart header = “Time goes on while `alert` is shown”
+\`\`\`smart header = "Time goes on while `alert` is shown”
 
-In most browsers, including Chrome and Firefox, the internal timer continues “ticking” while showing `alert/confirm/prompt`.
+In most browsers, including Chrome and Firefox, the internal timer continues "ticking” while showing `alert/confirm/prompt`.
 
 So if you run the code above and don’t dismiss the `alert` window for some time, then the next `alert` will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.
 
@@ -182,7 +182,7 @@ Did you notice?
 
 **The real delay between** `func` **calls for** `setInterval` **is less than in the code!**
 
-That’s normal, because the time taken by `func`’s execution “consumes” a part of the interval.
+That’s normal, because the time taken by `func`’s execution "consumes” a part of the interval.
 
 It is possible that `func`’s execution turns out to be longer than we expected and takes more than 100ms.
 
@@ -213,15 +213,15 @@ There’s a special use case: `setTimeout(func, 0)`, or just `setTimeout(func)`.
 
 This schedules the execution of `func` as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.
 
-So the function is scheduled to run “right after” the current script.
+So the function is scheduled to run "right after” the current script.
 
-For instance, this outputs “Hello”, then immediately “World”:
+For instance, this outputs "Hello”, then immediately "World”:
 
     setTimeout(() => alert("World"));
 
     alert("Hello");
 
-The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so `"Hello"` is first, and `"World"` – after it.
+The first line "puts the call into calendar after 0ms”. But the scheduler will only "check the calendar” after the current script is complete, so `"Hello"` is first, and `"World"` – after it.
 
 There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.
 
@@ -257,7 +257,7 @@ There are also advanced browser-related use cases of a zero-delay timeout, that 
 -   <span id="4074">Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.</span>
 -   <span id="6249">To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.</span>
 -   <span id="af18">Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time *between* executions more precisely.</span>
--   <span id="06e2">Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call “as soon as possible, but after the current script is complete”.</span>
+-   <span id="06e2">Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call "as soon as possible, but after the current script is complete”.</span>
 -   <span id="5393">The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That’s for historical reasons.</span>
 
 Please note that all scheduling methods do not *guarantee* the exact delay.

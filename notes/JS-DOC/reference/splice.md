@@ -46,7 +46,7 @@ If the specified number of elements to insert differs from the number of element
 Examples
 --------
 
-### Remove 0 (zero) elements before index 2, and insert “drum”
+### Remove 0 (zero) elements before index 2, and insert "drum”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum')
@@ -54,7 +54,7 @@ Examples
     // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
     // removed is [], no elements removed
 
-### Remove 0 (zero) elements before index 2, and insert “drum” and “guitar”
+### Remove 0 (zero) elements before index 2, and insert "drum” and "guitar”
 
     let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
     let removed = myFish.splice(2, 0, 'drum', 'guitar')
@@ -70,7 +70,7 @@ Examples
     // myFish is ["angel", "clown", "drum", "sturgeon"]
     // removed is ["mandarin"]
 
-### Remove 1 element at index 2, and insert “trumpet”
+### Remove 1 element at index 2, and insert "trumpet”
 
     let myFish = ['angel', 'clown', 'drum', 'sturgeon']
     let removed = myFish.splice(2, 1, 'trumpet')
@@ -78,7 +78,7 @@ Examples
     // myFish is ["angel", "clown", "trumpet", "sturgeon"]
     // removed is ["drum"]
 
-### Remove 2 elements from index 0, and insert “parrot”, “anemone” and “blue”
+### Remove 2 elements from index 0, and insert "parrot”, "anemone” and "blue”
 
     let myFish = ['angel', 'clown', 'trumpet', 'sturgeon']
     let removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue')

@@ -1,17 +1,17 @@
 EN
 
--   &lt;a href=“https://ar.javascript.info/reference-type”
--   &lt;a href=“reference-type.html”
--   &lt;a href=“https://es.javascript.info/reference-type”
--   &lt;a href=“https://fr.javascript.info/reference-type”
--   &lt;a href=“https://it.javascript.info/reference-type” reference-type"
+-   &lt;a href="https://ar.javascript.info/reference-type”
+-   &lt;a href="reference-type.html”
+-   &lt;a href="https://es.javascript.info/reference-type”
+-   &lt;a href="https://fr.javascript.info/reference-type”
+-   &lt;a href="https://it.javascript.info/reference-type” reference-type"
 
 <!-- -->
 
--   &lt;a href=“https://ko.javascript.info/reference-type”
+-   &lt;a href="https://ko.javascript.info/reference-type”
 -   &lt;a href="
--   &lt;a href=“https://tr.javascript.info/”
--   &lt;a href=“https://zh.javascript.info/reference-type”
+-   &lt;a href="https://tr.javascript.info/”
+-   &lt;a href="https://zh.javascript.info/reference-type”
 
 We want to make this open-source project available for people all around the world.
 
@@ -25,11 +25,11 @@ Search
 
 Search
 
-<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a>&lt;a href=“https://www.facebook.com/sharer/sharer.php?s=100&p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type”
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a>&lt;a href="https://www.facebook.com/sharer/sharer.php?s=100&p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type”
 
 1.  <a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
-2.  <span id="breadcrumb-1">&lt;a href=“js.html” The JavaScript language</span>
-3.  <span id="breadcrumb-2">&lt;a href=“js-misc.html” Miscellaneous</span>
+2.  <span id="breadcrumb-1">&lt;a href="js.html” The JavaScript language</span>
+3.  <span id="breadcrumb-2">&lt;a href="js-misc.html” Miscellaneous</span>
 
 30th April 2021
 
@@ -46,7 +46,7 @@ A dynamically evaluated method call can lose `this`.
 
 For instance:
 
-&lt;a href=“reference-type.html\#” &lt;a href=“reference-type.html\#”
+&lt;a href="reference-type.html\#” &lt;a href="reference-type.html\#”
 
     let user = {
       name: "John",
@@ -87,7 +87,7 @@ So, how does the information about `this` get passed from the first part to the 
 
 If we put these operations on separate lines, then `this` will be lost for sure:
 
-&lt;a href=“reference-type.html\#” &lt;a href=“reference-type.html\#”
+&lt;a href="reference-type.html\#” &lt;a href="reference-type.html\#”
 
     let user = {
       name: "John",
@@ -102,7 +102,7 @@ Here `hi = user.hi` puts the function into the variable, and then on the last li
 
 **To make `user.hi()` calls work, JavaScript uses a trick - the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
 
-The Reference Type is a “specification type”. We can’t explicitly use it, but it is used internally by the language.
+The Reference Type is a "specification type”. We can’t explicitly use it, but it is used internally by the language.
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
@@ -117,9 +117,9 @@ The result of a property access `user.hi` is not a function, but a value of Refe
 
 When parentheses `()` are called on the Reference Type, they receive the full information about the object and its method, and can set the right `this` (`=user` in this case).
 
-Reference type is a special “intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
+Reference type is a special "intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
 
-Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation “loses” `this`.
+Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation "loses” `this`.
 
 So, as the result, the value of `this` is only passed the right way if the function is called directly using a dot `obj.method()` or square brackets `obj['method']()` syntax (they do the same here). There are various ways to solve this problem such as [func.bind()](bind.html#solution-2-bind).
 
@@ -128,7 +128,7 @@ So, as the result, the value of `this` is only passed the right way if the funct
 
 Reference Type is an internal type of the language.
 
-Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special “reference type” value that stores both the property value and the object it was taken from.
+Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special "reference type” value that stores both the property value and the object it was taken from.
 
 That’s for the subsequent method call `()` to get the object and set `this` to it.
 
@@ -162,7 +162,7 @@ solution
 
 Try it:
 
-&lt;a href=“reference-type.html\#” &lt;a href=“reference-type.html\#”
+&lt;a href="reference-type.html\#” &lt;a href="reference-type.html\#”
 
     let user = {
       name: "John",
@@ -183,7 +183,7 @@ Then we can also see that such a joint expression is syntactically a call of the
 
 If we insert the semicolon, all is fine:
 
-&lt;a href=“reference-type.html\#” &lt;a href=“reference-type.html\#”
+&lt;a href="reference-type.html\#” &lt;a href="reference-type.html\#”
 
     let user = {
       name: "John",
@@ -194,7 +194,7 @@ If we insert the semicolon, all is fine:
 
 Please note that parentheses around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there’s no effect. Only the semicolon thing matters.
 
-### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of “this”</a>
+### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of "this”</a>
 
 <a href="task/why-this.html" class="task__open-link"></a>
 
@@ -204,7 +204,7 @@ In the code below we intend to call `obj.go()` method 4 times in a row.
 
 But calls `(1)` and `(2)` works differently from `(3)` and `(4)`. Why?
 
-&lt;a href=“reference-type.html\#” &lt;a href=“reference-type.html\#”
+&lt;a href="reference-type.html\#” &lt;a href="reference-type.html\#”
 
     let obj, method;
 
@@ -243,7 +243,7 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 
 <a href="currying-partials.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="bigint.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
-<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a>&lt;a href=“https://www.facebook.com/sharer/sharer.php?s=100&p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type”
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a>&lt;a href="https://www.facebook.com/sharer/sharer.php?s=100&p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type”
 
 <a href="reference-type.html#comments" id="comments">Comments</a>
 -----------------------------------------------------------------

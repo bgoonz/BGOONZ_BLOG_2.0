@@ -13,8 +13,8 @@
   </style>
 </head>
 <body>
-<h1 id="referenceerror-assignment-to-undeclared-variable-x">ReferenceError: assignment to undeclared variable “x”</h1>
-<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception “Assignment to undeclated variable” occurs when the value has been assigned to an undeclared variable.</p>
+<h1 id="referenceerror-assignment-to-undeclared-variable-x">ReferenceError: assignment to undeclared variable "x”</h1>
+<p>The JavaScript <a href="../strict_mode">strict mode</a>-only exception "Assignment to undeclated variable” occurs when the value has been assigned to an undeclared variable.</p>
 <h2 id="message">Message</h2>
 <pre><code>ReferenceError: assignment to undeclared variable &quot;x&quot; (Firefox)
 ReferenceError: &quot;x&quot; is not defined (Chrome)
@@ -33,14 +33,14 @@ ReferenceError: Variable undefined in strict mode (Edge)</code></pre>
 <p>Errors about undeclared variable assignments occur in <a href="../strict_mode">strict mode code</a> only. In non-strict code, they are silently ignored.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="invalid-cases">Invalid cases</h3>
-<p>In this case, the variable “bar” is an undeclared variable.</p>
+<p>In this case, the variable "bar” is an undeclared variable.</p>
 <pre><code>function foo() {
   &#39;use strict&#39;;
   bar = true;
 }
 foo(); // ReferenceError: assignment to undeclared variable bar</code></pre>
 <h3 id="valid-cases">Valid cases</h3>
-<p>To make “bar” a declared variable, you can add the <code>var</code> keyword in front of it.</p>
+<p>To make "bar” a declared variable, you can add the <code>var</code> keyword in front of it.</p>
 <pre><code>function foo() {
   &#39;use strict&#39;;
   var bar = true;

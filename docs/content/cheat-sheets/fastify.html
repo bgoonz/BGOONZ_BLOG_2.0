@@ -186,7 +186,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="va">fastify</span>.<span class="at">get</span>(<span class="st">&#39;/&#39;</span><span class="op">,</span> <span class="op">{</span> schema <span class="op">},</span> (req<span class="op">,</span> reply) <span class="kw">=&gt;</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb12-2" title="2">  ···</a>
 <a class="sourceLine" id="cb12-3" title="3"><span class="op">}</span>)</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <h4 id="or-same-as-above">or (same as above)</h4>
 <div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="va">fastify</span>.<span class="at">route</span>(<span class="op">{</span></a>
 <a class="sourceLine" id="cb13-2" title="2">  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">,</span></a>
@@ -194,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb13-4" title="4">  schema<span class="op">,</span></a>
 <a class="sourceLine" id="cb13-5" title="5">  <span class="dt">handler</span><span class="op">:</span> (req<span class="op">,</span> reply) <span class="kw">=&gt;</span> <span class="op">{</span> ··· <span class="op">}</span></a>
 <a class="sourceLine" id="cb13-6" title="6"><span class="op">}</span>)</a></code></pre></div>
-<p>{: data-line=“4”}</p>
+<p>{: data-line="4”}</p>
 <p>By defining a JSON schema, you get validation and improved performance.</p>
 <p>See: <a href="https://github.com/fastify/fastify/blob/master/docs/Validation-And-Serialization.md">Validation and serialization</a></p>
 <h2 id="plugins-1">Plugins</h2>
@@ -256,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="va">fastify</span>.<span class="at">get</span>(<span class="st">&#39;/&#39;</span><span class="op">,</span> (req<span class="op">,</span> reply) <span class="kw">=&gt;</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb22-2" title="2">    <span class="va">reply</span>.<span class="at">view</span>(<span class="st">&#39;/templates/index.ejs&#39;</span><span class="op">,</span> <span class="op">{</span> <span class="dt">text</span><span class="op">:</span> <span class="st">&#39;text&#39;</span> <span class="op">}</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb22-3" title="3"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>Support <code>ejs</code>, <code>pug</code>, <code>handlebars</code> and <code>marko</code>.</p>
 <p>See: <a href="https://github.com/fastify/point-of-view">point-of-view</a></p>
 <h3 id="options">Options</h3>

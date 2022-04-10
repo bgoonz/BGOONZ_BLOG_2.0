@@ -40,7 +40,7 @@ a + b;</code></pre>
 <p>is transformed by ASI into:</p>
 <pre><code>return;
 a + b;</code></pre>
-<p>The console will warn “unreachable code after return statement”.</p>
+<p>The console will warn "unreachable code after return statement”.</p>
 <p><strong>Note:</strong> Starting with Firefox 40, a warning is shown in the console if unreachable code is found after a <code>return</code> statement.</p>
 <p>To avoid this problem (to prevent ASI), you could use parentheses:</p>
 <pre><code>return (

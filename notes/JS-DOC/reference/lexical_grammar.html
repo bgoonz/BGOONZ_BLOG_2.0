@@ -465,12 +465,12 @@ false</code></pre>
 1e3    // =&gt; 1000
 1e-3   // =&gt; 0.001</code></pre>
 <h4 id="binary">Binary</h4>
-<p>Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “B” (<code>0b</code> or <code>0B</code>). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0b</code> are not 0 or 1, the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Missing binary digits after 0b”.</p>
+<p>Binary number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "B” (<code>0b</code> or <code>0B</code>). Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0b</code> are not 0 or 1, the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: "Missing binary digits after 0b”.</p>
 <pre><code>var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648
 var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040
 var FLT_MANTISSA = 0B00000000011111111111111111111111; // 8388607</code></pre>
 <h4 id="octal">Octal</h4>
-<p>Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “O” (<code>0o</code> or <code>0O)</code>. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0o</code> are outside the range (01234567), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Missing octal digits after 0o”.</p>
+<p>Octal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "O” (<code>0o</code> or <code>0O)</code>. Because this syntax is new in ECMAScript 2015, see the browser compatibility table, below. If the digits after the <code>0o</code> are outside the range (01234567), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: "Missing octal digits after 0o”.</p>
 <pre><code>var n = 0O755; // 493
 var m = 0o644; // 420
 
@@ -478,7 +478,7 @@ var m = 0o644; // 420
 0755
 0644</code></pre>
 <h4 id="hexadecimal">Hexadecimal</h4>
-<p>Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter “X” (<code>0x</code> or <code>0X)</code>. If the digits after 0x are outside the range (0123456789ABCDEF), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: “Identifier starts immediately after numeric literal”.</p>
+<p>Hexadecimal number syntax uses a leading zero followed by a lowercase or uppercase Latin letter "X” (<code>0x</code> or <code>0X)</code>. If the digits after 0x are outside the range (0123456789ABCDEF), the following <a href="global_objects/syntaxerror"><code>SyntaxError</code></a> is thrown: "Identifier starts immediately after numeric literal”.</p>
 <pre><code>0xFFFFFFFFFFFFFFFFF // 295147905179352830000
 0x123456789ABCDEF   // 81985529216486900
 0XA                 // 10</code></pre>
@@ -491,7 +491,7 @@ var m = 0o644; // 420
 <p>Note that legacy octal numbers with just a leading zero won’t work for <code>BigInt</code>:</p>
 <pre><code>// 0755n
 // SyntaxError: invalid BigInt syntax</code></pre>
-<p>For octal <code>BigInt</code> numbers, always use zero followed by the letter “o” (uppercase or lowercase):</p>
+<p>For octal <code>BigInt</code> numbers, always use zero followed by the letter "o” (uppercase or lowercase):</p>
 <pre><code>0o755n</code></pre>
 <p>For more information about <code>BigInt</code>, see also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type">JavaScript data structures</a>.</p>
 <h4 id="numeric-separators">Numeric separators</h4>
@@ -589,7 +589,7 @@ tag `string text ${expression} string text`</code></pre>
 </ul>
 <p>The ECMAScript specification mentions <a href="https://tc39.github.io/ecma262/#sec-rules-of-automatic-semicolon-insertion">three rules of semicolon insertion</a>.</p>
 <ol type="1">
-<li><p>A semicolon is inserted before, when a <a href="#line_terminators">Line terminator</a> or “}” is encountered that is not allowed by the grammar.</p>
+<li><p>A semicolon is inserted before, when a <a href="#line_terminators">Line terminator</a> or "}” is encountered that is not allowed by the grammar.</p>
 <p>{ 1 2 } 3</p>
 <p>// is transformed by ASI into:</p>
 <p>{ 1 ;2 ;} 3;</p></li>
@@ -604,7 +604,7 @@ tag `string text ${expression} string text`</code></pre>
 a = b;
 ++c;</code></pre>
 <ol start="3" type="1">
-<li>A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with “no LineTerminator here” rules are:</li>
+<li>A semicolon is inserted at the end, when a statement with restricted productions in the grammar is followed by a line terminator. These statements with "no LineTerminator here” rules are:</li>
 </ol>
 <ul>
 <li>PostfixExpressions (<code>++</code> and <code>--</code>)</li>

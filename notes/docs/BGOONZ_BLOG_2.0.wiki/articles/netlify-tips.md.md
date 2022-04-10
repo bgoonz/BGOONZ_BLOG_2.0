@@ -45,7 +45,7 @@ Generally, libraries that choose to fail on warnings presume their users will wa
 
     CI='' npm run build
 
-“False” isn’t always false
+"False” isn’t always false
 
 Though it seems like the logical opposite of `CI=true`, setting `CI=false` may not work as expected. This is because environment variable values are processed as strings, and many libraries interpret *any* non-empty string value for `CI` as `true`.
 
@@ -61,7 +61,7 @@ To effectively change case of a file stored in Git from your case insensitive lo
 
 Files over 10 MB in size are not well-supported by our CDN and may fail to upload to our system, causing your entire deploy to fail. You should host large content elsewhere, such as YouTube embedded videos.
 
-Sites with tens of thousands of html files can lead to long processing times. This shouldn’t cause the deploy to fail, but even a “quick” manual deploy can take quite awhile (many minutes) to finish if you have tens of thousands of files.
+Sites with tens of thousands of html files can lead to long processing times. This shouldn’t cause the deploy to fail, but even a "quick” manual deploy can take quite awhile (many minutes) to finish if you have tens of thousands of files.
 
 [\#](https://docs.netlify.com/configure-builds/troubleshooting-tips/?_ga=2.84803921.938315912.1639898242-345723907.1639767886#post-processing)Post processing
 -------------------------------------------------------------------------------------------------------------------------------------------------------------

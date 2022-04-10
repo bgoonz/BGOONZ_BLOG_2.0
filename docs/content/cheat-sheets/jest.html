@@ -82,7 +82,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 id="testing">Testing</h2>
 <h3 id="quick-start">Quick start</h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">npm</span> install --save-dev jest babel-jest</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* Add to package.json */</span></a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="st">&quot;scripts&quot;</span><span class="op">:</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb2-3" title="3">  <span class="st">&quot;test&quot;</span><span class="op">:</span> <span class="st">&quot;jest&quot;</span></a>
@@ -173,12 +173,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb19-3" title="3">    ···</a>
 <a class="sourceLine" id="cb19-4" title="4">  <span class="op">}</span>)</a>
 <a class="sourceLine" id="cb19-5" title="5"><span class="op">}</span>)</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1"><span class="at">test</span>(<span class="st">&#39;works with async/await&#39;</span><span class="op">,</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
 <a class="sourceLine" id="cb20-2" title="2">  <span class="kw">const</span> hello <span class="op">=</span> <span class="cf">await</span> <span class="at">foo</span>()</a>
 <a class="sourceLine" id="cb20-3" title="3">  ···</a>
 <a class="sourceLine" id="cb20-4" title="4"><span class="op">}</span>)</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>Return promises, or use async/await. See: <a href="http://facebook.github.io/jest/docs/en/tutorial-async.html">Async tutorial</a></p>
 <h3 id="snapshots-1">Snapshots</h3>
 <pre class="jsx"><code>it(&#39;works&#39;, () =&gt; {
@@ -194,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
     expect(tree).toMatchSnapshot();
 });</code></pre>
-<p>{: data-line=“2,3,4”}</p>
+<p>{: data-line="2,3,4”}</p>
 <p>React’s test renderer can be used for Jest snapshots. See: <a href="http://facebook.github.io/jest/docs/en/tutorial-react-native.html#snapshot-test">Snapshot test</a></p>
 <h3 id="timers">Timers</h3>
 <div class="sourceCode" id="cb24"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="va">jest</span>.<span class="at">useFakeTimers</span>()<span class="op">;</span></a></code></pre></div>
@@ -229,7 +229,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb30-4" title="4">b <span class="op">=</span> <span class="kw">new</span> <span class="at">Fn</span>()<span class="op">;</span></a></code></pre></div>
 <div class="sourceCode" id="cb31"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb31-1" title="1"><span class="va">Fn</span>.<span class="va">mock</span>.<span class="at">instances</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb31-2" title="2"><span class="co">// → [a, b]</span></a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>See: <a href="http://facebook.github.io/jest/docs/en/mock-functions.html#mock-property">.mock property</a></p>
 <h3 id="calls">Calls</h3>
 <div class="sourceCode" id="cb32"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">const</span> fn <span class="op">=</span> <span class="va">jest</span>.<span class="at">fn</span>()<span class="op">;</span></a>
@@ -238,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb33"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb33-1" title="1"><span class="va">fn</span>.<span class="va">mock</span>.<span class="va">calls</span>.<span class="at">length</span><span class="op">;</span> <span class="co">// → 2</span></a>
 <a class="sourceLine" id="cb33-2" title="2"><span class="va">fn</span>.<span class="va">mock</span>.<span class="at">calls</span>[<span class="dv">0</span>][<span class="dv">0</span>]<span class="op">;</span> <span class="co">// → 123</span></a>
 <a class="sourceLine" id="cb33-3" title="3"><span class="va">fn</span>.<span class="va">mock</span>.<span class="at">calls</span>[<span class="dv">1</span>][<span class="dv">0</span>]<span class="op">;</span> <span class="co">// → 456</span></a></code></pre></div>
-<p>{: data-line=“1,2,3”}</p>
+<p>{: data-line="1,2,3”}</p>
 <p>See: <a href="http://facebook.github.io/jest/docs/en/mock-functions.html#mock-property">.mock property</a></p>
 <h3 id="return-values">Return values</h3>
 <div class="sourceCode" id="cb34"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">const</span> fn <span class="op">=</span> <span class="va">jest</span>.<span class="at">fn</span>(() <span class="kw">=&gt;</span> <span class="st">&#39;hello&#39;</span>)<span class="op">;</span></a></code></pre></div>
@@ -250,7 +250,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb36-2" title="2">    .<span class="at">fn</span>()</a>
 <a class="sourceLine" id="cb36-3" title="3">    .<span class="at">mockImplementationOnce</span>(() <span class="kw">=&gt;</span> <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb36-4" title="4">    .<span class="at">mockImplementationOnce</span>(() <span class="kw">=&gt;</span> <span class="dv">2</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb37-1" title="1"><span class="at">fn</span>()<span class="op">;</span> <span class="co">// → 1</span></a>
 <a class="sourceLine" id="cb37-2" title="2"><span class="at">fn</span>()<span class="op">;</span> <span class="co">// → 2</span></a></code></pre></div>
 <h2 id="references">References</h2>

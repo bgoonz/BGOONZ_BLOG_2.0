@@ -38,7 +38,7 @@
 <h1 id="non-string-fields-use-the-separator-which-allows-you-to-embed-raw">Non-string fields use the := separator, which allows you to embed raw</h1>
 <h1 id="json-into-the-resulting-object.-text-and-raw-json-files-can-also-be">JSON into the resulting object. Text and raw JSON files can also be</h1>
 <h1 id="embedded-into-fields-using-and">embedded into fields using =@ and :=@:</h1>
-<p>http PUT api.example.com/person/1 name=John age:=29 married:=false hobbies:=‘[“http”, “pies”]’ description=<span class="citation" data-cites="about-john.txt">@about-john.txt</span> bookmarks:=<span class="citation" data-cites="bookmarks.json">@bookmarks.json</span></p>
+<p>http PUT api.example.com/person/1 name=John age:=29 married:=false hobbies:=‘["http”, "pies”]’ description=<span class="citation" data-cites="about-john.txt">@about-john.txt</span> bookmarks:=<span class="citation" data-cites="bookmarks.json">@bookmarks.json</span></p>
 <h1 id="send-json-data-stored-in-a-file">Send JSON data stored in a file:</h1>
 <p>http POST api.example.com/person/1 &lt; person.json</p>
 <h1 id="regular-forms">Regular Forms</h1>
@@ -97,7 +97,7 @@
 <h1 id="or-the-output-of-another-program">Or the output of another program:</h1>
 <p>grep ‘401 Unauthorized’ /var/log/httpd/error_log | http POST example.org/intruders</p>
 <h1 id="you-can-use-echo-for-simple-data">You can use echo for simple data:</h1>
-<p>echo ‘{“name”: “John”}’ | http PATCH example.com/person/1 X-API-Token:123</p>
+<p>echo ‘{"name”: "John”}’ | http PATCH example.com/person/1 X-API-Token:123</p>
 <h1 id="you-can-even-pipe-web-services-together-using-httpie">You can even pipe web services together using HTTPie:</h1>
 <p>http GET <a href="https://api.github.com/repos/jkbrzt/httpie" class="uri">https://api.github.com/repos/jkbrzt/httpie</a> | http POST httpbin.org/post</p>
 <h1 id="you-can-use-cat-to-enter-multiline-data-on-the-terminal">You can use cat to enter multiline data on the terminal:</h1>
@@ -136,9 +136,9 @@
 <p>http -dco file.zip example.org/file</p>
 <h1 id="prettified-streamed-response">Prettified streamed response:</h1>
 <p>http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=‘Justin Bieber’</p>
-<h1 id="send-each-new-tweet-json-object-mentioning-apple-to-another">Send each new tweet (JSON object) mentioning “Apple” to another</h1>
+<h1 id="send-each-new-tweet-json-object-mentioning-apple-to-another">Send each new tweet (JSON object) mentioning "Apple” to another</h1>
 <h1 id="server-as-soon-as-it-arrives-from-the-twitter-streaming-api">server as soon as it arrives from the Twitter streaming API:</h1>
-<p>http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=Apple | while read tweet; do echo “$tweet” | http POST example.org/tweets ; done</p>
+<p>http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=Apple | while read tweet; do echo "$tweet” | http POST example.org/tweets ; done</p>
 <h1 id="create-a-new-session-named-user1-for-example.org">Create a new session named user1 for example.org:</h1>
 <p>http –session=user1 -a user1:password example.org X-Foo:Bar</p>
 <h1 id="now-you-can-refer-to-the-session-by-its-name-and-the-previously-used">Now you can refer to the session by its name, and the previously used</h1>

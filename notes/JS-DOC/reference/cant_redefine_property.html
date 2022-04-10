@@ -13,8 +13,8 @@
   </style>
 </head>
 <body>
-<h1 id="typeerror-cant-redefine-non-configurable-property-x">TypeError: can’t redefine non-configurable property “x”</h1>
-<p>The JavaScript exception “can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>.</p>
+<h1 id="typeerror-cant-redefine-non-configurable-property-x">TypeError: can’t redefine non-configurable property "x”</h1>
+<p>The JavaScript exception "can’t redefine non-configurable property” occurs when it was attempted to redefine a property, but that property is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#properties">non-configurable</a>.</p>
 <h2 id="message">Message</h2>
 <pre><code>TypeError: Cannot modify non-writable property {x} (Edge)
 TypeError: can&#39;t redefine non-configurable property &quot;x&quot; (Firefox)
@@ -31,7 +31,7 @@ Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;bar&quot;});
 
 Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;baz&quot;});
 // TypeError: can&#39;t redefine non-configurable property &quot;foo&quot;</code></pre>
-<p>You will need to set the “foo” property to configurable, if you intend to redefine it later in the code.</p>
+<p>You will need to set the "foo” property to configurable, if you intend to redefine it later in the code.</p>
 <pre><code>var obj = Object.create({});
 Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;bar&quot;, configurable: true});
 Object.defineProperty(obj, &quot;foo&quot;, {value: &quot;baz&quot;, configurable: true});</code></pre>

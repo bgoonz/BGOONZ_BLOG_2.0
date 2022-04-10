@@ -1,7 +1,7 @@
 SyntaxError: missing variable name
 ==================================
 
-The JavaScript exception “missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
+The JavaScript exception "missing variable name” occurs way too often as naming things is so hard. Or maybe a comma is wrong. Check for typos!
 
 Message
 -------

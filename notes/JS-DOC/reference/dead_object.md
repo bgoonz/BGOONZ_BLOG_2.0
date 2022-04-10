@@ -1,7 +1,7 @@
 TypeError: can’t access dead object
 ===================================
 
-The JavaScript exception “can’t access dead object” occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.
+The JavaScript exception "can’t access dead object” occurs when Firefox disallows add-ons to keep strong references to DOM objects after their parent document has been destroyed to improve in memory usage and to prevent memory leaks.
 
 Message
 -------
@@ -41,7 +41,7 @@ Unprivileged code has no access to Component.utils and might just be able catch 
 See also
 --------
 
--   [What does “can’t access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
+-   [What does "can’t access dead object” mean?](https://blog.mozilla.org/addons/2012/09/12/what-does-cant-access-dead-object-mean/)
 -   [Common causes of memory leaks in extensions](https://developer.mozilla.org/en-US/docs/Extensions/Common_causes_of_memory_leaks_in_extensions)
 -   [Components.utils](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_Bindings/Components.utils)
 -   [Zombie Compartments](https://developer.mozilla.org/en-US/docs/Mozilla/Zombie_compartments)

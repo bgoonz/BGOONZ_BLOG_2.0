@@ -19,10 +19,10 @@ Syntax
 ### Parameters
 
 `onFulfilled` <span class="badge inline optional">Optional</span>  
-A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an “Identity” function (it returns the received argument).
+A [`Function`](../function) called if the `Promise` is fulfilled. This function has one argument, the `fulfillment value`. If it is not a function, it is internally replaced with an "Identity” function (it returns the received argument).
 
 `onRejected` <span class="badge inline optional">Optional</span>  
-A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a “Thrower” function (it throws an error it received as argument).
+A [`Function`](../function) called if the `Promise` is rejected. This function has one argument, the `rejection reason`. If it is not a function, it is internally replaced with a "Thrower” function (it throws an error it received as argument).
 
 ### Return value
 

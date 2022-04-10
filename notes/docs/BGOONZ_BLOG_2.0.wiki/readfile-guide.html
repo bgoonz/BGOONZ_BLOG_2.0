@@ -106,7 +106,7 @@
 <p>The <code>watch</code> function can also be used to watch the contents of a directory. It accepts an optional <code>recursive</code> option that determines whether all subdirectories and files are watched.</p>
 <h2 id="file-metadata">File metadata</h2>
 <p>So far, we have focused on reading and modifying the contents of a file, but you may also need to read and update a file’s metadata. File metadata includes its size, type, permissions, and other file system properties.</p>
-<p>The <code>stat</code> function is used to retrieve file metadata, or “statistics” like file size, permissions, and ownership.</p>
+<p>The <code>stat</code> function is used to retrieve file metadata, or "statistics” like file size, permissions, and ownership.</p>
 <p>const fileStats = await fsPromises.stat(‘file1.txt’); console.log(fileStats) console.log(`size of file1.txt is ${fileStats.size}`);</p>
 <p>This example demonstrates the full list of metadata that can be retrieved for a file or directory.</p>
 <p>Keep in mind that some of this metadata is OS-dependent. For example, the <code>uid</code> and <code>gid</code> properties represent the user and group owners — a concept that is applicable to Linux and macOS file systems, but not Windows file systems. Zeroes are returned for these two properties when running in this function on Windows.</p>

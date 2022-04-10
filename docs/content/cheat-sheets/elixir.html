@@ -111,7 +111,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>{: .-setup}</p>
 <h3 id="lists">Lists</h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb6-1" title="1">users <span class="op">=</span> [ <span class="st">&quot;Tom&quot;</span>, <span class="st">&quot;Dick&quot;</span>, <span class="st">&quot;Harry&quot;</span> ]</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb7-1" title="1"><span class="cn">Enum</span><span class="op">.</span>map(users, <span class="kw">fn</span> user <span class="op">-&gt;</span></a>
 <a class="sourceLine" id="cb7-2" title="2">  <span class="cn">IO</span><span class="op">.</span>puts <span class="st">&quot;Hello &quot;</span> <span class="op">&lt;&gt;</span> user</a>
 <a class="sourceLine" id="cb7-3" title="3"><span class="kw">end</span>)</a></code></pre></div>
@@ -119,14 +119,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb8"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb8-1" title="1">source</a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="op">|&gt;</span> transform(<span class="va">:hello</span>)</a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="op">|&gt;</span> print()</a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># Same as:</span></a>
 <a class="sourceLine" id="cb9-2" title="2">print(transform(source, <span class="va">:hello</span>))</a></code></pre></div>
 <p>These two are equivalent.</p>
 <h3 id="pattern-matching">Pattern matching</h3>
 <div class="sourceCode" id="cb10"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb10-1" title="1">user <span class="op">=</span> %{<span class="va">name:</span> <span class="st">&quot;Tom&quot;</span>, <span class="va">age:</span> <span class="dv">23</span>}</a>
 <a class="sourceLine" id="cb10-2" title="2">%{<span class="va">name:</span> username} <span class="op">=</span> user</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>This sets <code>username</code> to <code>"Tom"</code>.</p>
 <h3 id="pattern-matching-in-functions">Pattern matching in functions</h3>
 <div class="sourceCode" id="cb11"><pre class="sourceCode elixir"><code class="sourceCode elixir"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> greet(%{<span class="va">name:</span> username}) <span class="kw">do</span></a>
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb11-3" title="3"><span class="kw">end</span></a>
 <a class="sourceLine" id="cb11-4" title="4"></a>
 <a class="sourceLine" id="cb11-5" title="5">user <span class="op">=</span> %{<span class="va">name:</span> <span class="st">&quot;Tom&quot;</span>, <span class="va">age:</span> <span class="dv">23</span>}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <p>Pattern matching works in function parameters too.</p>
 <h2 id="control-flow">Control flow</h2>
 <h3 id="if">If</h3>

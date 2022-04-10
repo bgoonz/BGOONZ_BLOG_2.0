@@ -19,7 +19,7 @@ A string containing a [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 Description
 -----------
 
-The `italics()` method embeds a string in an `<i>` element: “`<i>str</i>`”.
+The `italics()` method embeds a string in an `<i>` element: "`<i>str</i>`”.
 
 Examples
 --------

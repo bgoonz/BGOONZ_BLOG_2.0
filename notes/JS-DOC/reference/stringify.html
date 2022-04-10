@@ -32,15 +32,15 @@ A <a href="../string"><code>String</code></a> or <a href="../number"><code>Numbe
 <p>A JSON string representing the given value, or undefined.</p>
 <h3 id="exceptions">Exceptions</h3>
 <ul>
-<li>Throws a <a href="../typeerror"><code>TypeError</code></a> (“cyclic object value”) exception when a circular reference is found.</li>
-<li>Throws a <a href="../typeerror"><code>TypeError</code></a> (“BigInt value can’t be serialized in JSON”) when trying to stringify a <a href="../bigint"><code>BigInt</code></a> value.</li>
+<li>Throws a <a href="../typeerror"><code>TypeError</code></a> ("cyclic object value”) exception when a circular reference is found.</li>
+<li>Throws a <a href="../typeerror"><code>TypeError</code></a> ("BigInt value can’t be serialized in JSON”) when trying to stringify a <a href="../bigint"><code>BigInt</code></a> value.</li>
 </ul>
 <h2 id="description">Description</h2>
 <p><code>JSON.stringify()</code> converts a value to JSON notation representing it:</p>
 <ul>
 <li>If the value has a <code>toJSON()</code> method, it’s responsible to define what data will be serialized.</li>
 <li><a href="../boolean"><code>Boolean</code></a>, <a href="../number"><code>Number</code></a>, and <a href="../string"><code>String</code></a> objects are converted to the corresponding primitive values during stringification, in accord with the traditional conversion semantics.</li>
-<li><a href="../undefined"><code>undefined</code></a>, <a href="../function"><code>Function</code></a>s, and <a href="../symbol"><code>Symbol</code></a>s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to <a href="../null"><code>null</code></a> (when found in an array). <code>JSON.stringify()</code> can return <code>undefined</code> when passing in “pure” values like <code>JSON.stringify(function(){})</code> or <code>JSON.stringify(undefined)</code>.</li>
+<li><a href="../undefined"><code>undefined</code></a>, <a href="../function"><code>Function</code></a>s, and <a href="../symbol"><code>Symbol</code></a>s are not valid JSON values. If any such values are encountered during conversion they are either omitted (when found in an object) or changed to <a href="../null"><code>null</code></a> (when found in an array). <code>JSON.stringify()</code> can return <code>undefined</code> when passing in "pure” values like <code>JSON.stringify(function(){})</code> or <code>JSON.stringify(undefined)</code>.</li>
 <li>All <a href="../symbol"><code>Symbol</code></a>-keyed properties will be completely ignored, even when using the <code>replacer</code> function.</li>
 <li>The instances of <a href="../date"><code>Date</code></a> implement the <code>toJSON()</code> function by returning a string (the same as <code>date.toISOString()</code>). Thus, they are treated as strings.</li>
 <li>The numbers <a href="../infinity"><code>Infinity</code></a> and <a href="../nan"><code>NaN</code></a>, as well as the value <a href="../null"><code>null</code></a>, are all considered <code>null</code>.</li>

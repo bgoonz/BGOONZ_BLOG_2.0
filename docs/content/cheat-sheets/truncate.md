@@ -13,5 +13,5 @@ To truncate to 100 KB:
 
 truncate -s 100K
 
-(M, G, T, P, E, Z, and Y may be used in place of “K” as required.)
+(M, G, T, P, E, Z, and Y may be used in place of "K” as required.)
 ==================================================================

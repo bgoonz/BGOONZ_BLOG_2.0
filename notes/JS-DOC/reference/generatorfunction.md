@@ -17,7 +17,7 @@ Syntax
 ### Parameters
 
 `arg1, arg2, ... argN`  
-Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example “`x`”, “`theValue`”, or “`a,b`”.
+Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript identifier or a list of such strings separated with a comma; for example "`x`”, "`theValue`”, or "`a,b`”.
 
 `functionBody`  
 A string containing the JavaScript statements comprising the function definition.

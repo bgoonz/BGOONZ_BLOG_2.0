@@ -1,7 +1,7 @@
 TypeError: cannot use ‘in’ operator to search for ‘x’ in ‘y’
 ============================================================
 
-The JavaScript exception “right-hand side of ‘in’ should be an object” occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
+The JavaScript exception "right-hand side of ‘in’ should be an object” occurs when the [`in` operator](../operators/in) was used to search in strings, or in numbers, or other primitive types. It can only be used to check if a property is in an object.
 
 Message
 -------

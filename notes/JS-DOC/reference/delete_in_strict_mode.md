@@ -1,7 +1,7 @@
 SyntaxError: applying the ‘delete’ operator to an unqualified name is deprecated
 ================================================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “applying the ‘delete’ operator to an unqualified name is deprecated” occurs when variables are attempted to be deleted using the `delete` operator.
+The JavaScript [strict mode](../strict_mode)-only exception "applying the ‘delete’ operator to an unqualified name is deprecated” occurs when variables are attempted to be deleted using the `delete` operator.
 
 Message
 -------
@@ -20,7 +20,7 @@ What went wrong?
 
 Normal variables in JavaScript can’t be deleted using the `delete` operator. In strict mode, an attempt to delete a variable will throw an error and is not allowed.
 
-The `delete` operator can only delete properties on an object. Object properties are “qualified” if they are configurable.
+The `delete` operator can only delete properties on an object. Object properties are "qualified” if they are configurable.
 
 Unlike what common belief suggests, the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references, see the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page and the `delete` operator page for more details.
 
@@ -61,6 +61,6 @@ See also
 
 -   `delete`
 -   [Memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
--   [TypeError: property “x” is non-configurable and can’t be deleted](cant_delete)
+-   [TypeError: property "x” is non-configurable and can’t be deleted](cant_delete)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Delete_in_strict_mode</a>

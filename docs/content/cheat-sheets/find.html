@@ -20,7 +20,7 @@
 <p class="date">2022-01-03</p>
 </header>
 <h1 id="to-find-files-by-case-insensitive-extension-ex-.jpg-.jpg-.jpg">To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):</h1>
-<p>find . -iname “*.jpg”</p>
+<p>find . -iname "*.jpg”</p>
 <h1 id="to-find-directories">To find directories:</h1>
 <p>find . -type d</p>
 <h1 id="to-find-files">To find files:</h1>
@@ -36,7 +36,7 @@
 <h1 id="to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size">To find files with size bigger than 5 Mebibyte and sort them by size:</h1>
 <p>find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z</p>
 <h1 id="to-find-files-bigger-than-2-megabyte-and-list-them">To find files bigger than 2 Megabyte and list them:</h1>
-<p>find . -type f -size +200000000c -exec ls -lh {} ; | awk ‘{ print $9 “:” $5 }’</p>
+<p>find . -type f -size +200000000c -exec ls -lh {} ; | awk ‘{ print $9 ":” $5 }’</p>
 <h1 id="to-find-files-modified-more-than-7-days-ago-and-list-file-information">To find files modified more than 7 days ago and list file information:</h1>
 <p>find . -type f -mtime +7d -ls</p>
 <h1 id="to-find-symlinks-owned-by-a-user-and-list-file-information">To find symlinks owned by a user and list file information:</h1>

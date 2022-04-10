@@ -1,7 +1,7 @@
 Test URL and POST data and return database banner (if possible)
 ===============================================================
 
-./sqlmap.py –url=“” –data=“” –banner
+./sqlmap.py –url="” –data="” –banner
 
 Parse request data and test | request data can be obtained with burp
 ====================================================================
@@ -56,12 +56,12 @@ Extract data
 Execute SQL Query
 =================
 
-./sqlmap.py -r –sql-query=“”
+./sqlmap.py -r –sql-query="”
 
 Append/Prepend SQL Queries
 ==========================
 
-./sqlmap.py -r –prefix=“” –suffix=“”
+./sqlmap.py -r –prefix="” –suffix="”
 
 Get backdoor access to sql server | can give shell access
 =========================================================

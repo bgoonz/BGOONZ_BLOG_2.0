@@ -82,7 +82,7 @@ Installing a package from AUR is a relatively simple process:
 Assuming $pkgname contains the package name.
 ============================================
 
-wget “https://aur.archlinux.org/packages/<span class="math inline">*pkgname* :  : 2/</span>pkgname/<span class="math inline">$pkgname.tar.gz" tar zxvf "$</span>pkgname.tar.gz” cd “$pkgname”
+wget "https://aur.archlinux.org/packages/<span class="math inline">*pkgname* :  : 2/</span>pkgname/<span class="math inline">$pkgname.tar.gz" tar zxvf "$</span>pkgname.tar.gz” cd "$pkgname”
 
 Build the package
 =================

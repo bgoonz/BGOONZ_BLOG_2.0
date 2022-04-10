@@ -1,7 +1,7 @@
 RangeError: invalid array length
 ================================
 
-The JavaScript exception “Invalid array length” occurs when specifying an array length that is either negative or exceeds the maximum supported by the platform (i.e. when creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer), or when setting the [`Array.length`](../global_objects/array/length) property).
+The JavaScript exception "Invalid array length” occurs when specifying an array length that is either negative or exceeds the maximum supported by the platform (i.e. when creating an [`Array`](../global_objects/array) or [`ArrayBuffer`](../global_objects/arraybuffer), or when setting the [`Array.length`](../global_objects/array/length) property).
 
 The maximum allowed array length depends on the platform, browser and browser version. For [`Array`](../global_objects/array) the maximum length is 2GB-1 (2^32-1). For [`ArrayBuffer`](../global_objects/arraybuffer) the maximum is 2GB-1 on 32-bit systems (2^32-1). From Firefox version 89 the maximum value of [`ArrayBuffer`](../global_objects/arraybuffer) is 8GB on 64-bit systems (2^33).
 

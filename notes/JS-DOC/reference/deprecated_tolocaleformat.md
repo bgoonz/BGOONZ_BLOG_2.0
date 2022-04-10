@@ -1,7 +1,7 @@
 Warning: Date.prototype.toLocaleFormat is deprecated
 ====================================================
 
-The JavaScript warning “Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead” occurs when the non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is used.
+The JavaScript warning "Date.prototype.toLocaleFormat is deprecated; consider using Intl.DateTimeFormat instead” occurs when the non-standard <span class="page-not-created">`Date.prototype.toLocaleFormat`</span> method is used.
 
 Message
 -------

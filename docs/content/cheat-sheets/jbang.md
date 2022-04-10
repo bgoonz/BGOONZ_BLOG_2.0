@@ -31,7 +31,7 @@ Run command line as a script
 Run a Java code snippet (Java 9 and later)
 ==========================================
 
-echo ‘Files.list(Paths.get(“/etc”)).forEach(System.out::println);’ | jbang -
+echo ‘Files.list(Paths.get("/etc”)).forEach(System.out::println);’ | jbang -
 
 Debug
 =====

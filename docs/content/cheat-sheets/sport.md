@@ -41,7 +41,7 @@ INSTALLER=upgradepkg sport i foo
 To build dependency list for baz:
 =================================
 
-echo “foo bar” &gt;&gt; /tmp/baz.list
+echo "foo bar” &gt;&gt; /tmp/baz.list
 
 To install list of packages from file:
 ======================================

@@ -20,7 +20,7 @@
 <h3 id="return-value">Return value</h3>
 <p>A string representing the object.</p>
 <h2 id="description">Description</h2>
-<p>Every object has a <code>toString()</code> method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the <code>toString()</code> method is inherited by every object descended from <code>Object</code>. If this method is not overridden in a custom object, <code>toString()</code> returns “<code>[object type]</code>”, where <code>type</code> is the object type. The following code illustrates this:</p>
+<p>Every object has a <code>toString()</code> method that is automatically called when the object is to be represented as a text value or when an object is referred to in a manner in which a string is expected. By default, the <code>toString()</code> method is inherited by every object descended from <code>Object</code>. If this method is not overridden in a custom object, <code>toString()</code> returns "<code>[object type]</code>”, where <code>type</code> is the object type. The following code illustrates this:</p>
 <pre><code>const o = new Object();
 o.toString(); // returns [object Object]</code></pre>
 <p><strong>Note:</strong> Starting in JavaScript 1.8.5, <code>toString()</code> called on <a href="../null"><code>null</code></a> returns <code>[object Null]</code>, and <a href="../undefined"><code>undefined</code></a> returns <code>[object Undefined]</code>, as defined in the 5<sup>th</sup> Edition of ECMAScript and subsequent Errata.</p>
@@ -56,7 +56,7 @@ console.log(bigNum.toString(2));
 theDog = new Dog(&#39;Gabby&#39;, &#39;Lab&#39;, &#39;chocolate&#39;, &#39;female&#39;);</code></pre>
 <p>If you call the <code>toString()</code> method on this custom object, it returns the default value inherited from <a href="../object"><code>Object</code></a>:</p>
 <pre><code>theDog.toString(); // returns [object Object]</code></pre>
-<p>The following code creates and assigns <code>dogToString()</code> to override the default <code>toString()</code> method. This function generates a string containing the <code>name</code>, <code>breed</code>, <code>color</code>, and <code>sex</code> of the object, in the form “<code>property = value;</code>”.</p>
+<p>The following code creates and assigns <code>dogToString()</code> to override the default <code>toString()</code> method. This function generates a string containing the <code>name</code>, <code>breed</code>, <code>color</code>, and <code>sex</code> of the object, in the form "<code>property = value;</code>”.</p>
 <pre><code>Dog.prototype.toString = function dogToString() {
   const ret = &#39;Dog &#39; + this.name + &#39; is a &#39; + this.sex + &#39; &#39; + this.color + &#39; &#39; + this.breed;
   return ret;

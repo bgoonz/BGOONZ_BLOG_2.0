@@ -39,7 +39,7 @@ Examples
 
 ### Custom classes default to object tag
 
-When creating your own class, JavaScript defaults to the “Object” tag:
+When creating your own class, JavaScript defaults to the "Object” tag:
 
     class ValidatorClass {}
 

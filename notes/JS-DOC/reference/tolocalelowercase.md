@@ -21,8 +21,8 @@ A new string representing the calling string converted to lower case, according 
 
 ### Exceptions
 
--   A [`RangeError`](../rangeerror) (“invalid language tag: xx\_yy”) is thrown if a `locale` argument isn’t a valid language tag.
--   A [`TypeError`](../typeerror) (“invalid element in locales argument”) is thrown if an array element isn’t of type string.
+-   A [`RangeError`](../rangeerror) ("invalid language tag: xx\_yy”) is thrown if a `locale` argument isn’t a valid language tag.
+-   A [`TypeError`](../typeerror) ("invalid element in locales argument”) is thrown if an array element isn’t of type string.
 
 Description
 -----------

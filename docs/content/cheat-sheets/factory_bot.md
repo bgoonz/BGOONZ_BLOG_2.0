@@ -8,10 +8,10 @@ title: Factory Bot category: Ruby libraries
 
 weight: -3 keywords:
 
--   “FactoryBot.define do”
--   “factory :user”
--   “first\_name ‘John’”
--   ‘sequence(:username) { |n| “user\#{n}” }’ tags: \[Featurable\]
+-   "FactoryBot.define do”
+-   "factory :user”
+-   "first\_name ‘John’”
+-   ‘sequence(:username) { |n| "user\#{n}” }’ tags: \[Featurable\]
 
 ------------------------------------------------------------------------
 
@@ -41,7 +41,7 @@ Factories
       end
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Defining factories](http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Defining_factories)
 
@@ -91,7 +91,7 @@ Associations
       association :author, factory: [:user, :admin]
     end
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 #### or
 
@@ -108,7 +108,7 @@ Associations
       end
     end
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Other features
 --------------
@@ -121,7 +121,7 @@ Other features
       end
     end
 
-{: data-line=“2,3,4”}
+{: data-line="2,3,4”}
 
     create :user, :admin
 
@@ -137,7 +137,7 @@ Traits allow you to group attributes together. See: [Traits](http://www.rubydoc.
       end
     end
 
-{: data-line=“4,5,6”}
+{: data-line="4,5,6”}
 
     create :sample_user
 
@@ -153,7 +153,7 @@ See: [Inheritance](http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED
       first_name { FFaker::Name.first_name }
     end
 
-{: data-line=“1”}
+{: data-line="1”}
 
     create :sample_user
 
@@ -171,7 +171,7 @@ Works the same as nested factories.
       end
     end
 
-{: data-line=“2,3,4”}
+{: data-line="2,3,4”}
 
     create(user, upcased: true)
 

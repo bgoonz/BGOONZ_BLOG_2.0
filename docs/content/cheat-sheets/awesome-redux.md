@@ -113,7 +113,7 @@ Pass side effects declaratively to keep your actions pure. {: .-setup}
 
 ### redux-thunk
 
-Pass “thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}
+Pass "thunks” to as actions. Extremely similar to redux-promises, but has support for getState. {: .-setup}
 
     fetchData = (url) => (dispatch, getState) => {
       dispatch({ type: 'FETCH_REQUEST' })

@@ -1,7 +1,7 @@
 SyntaxError: Unexpected ‘\#’ used outside of class body
 =======================================================
 
-The JavaScript exception “Unexpected ‘\#’ used outside of class body” occurs when a hash (“\#”) is encountered in an unexpected context, most notably [outside of a class declaration](../classes/private_class_fields). Hashes are valid at the beginning of a file as a [hashbang comment](../lexical_grammar), or inside of a class as part of a private field. You may encounter this error if you forget the quotation marks when trying to access a DOM identifier as well.
+The JavaScript exception "Unexpected ‘\#’ used outside of class body” occurs when a hash ("\#”) is encountered in an unexpected context, most notably [outside of a class declaration](../classes/private_class_fields). Hashes are valid at the beginning of a file as a [hashbang comment](../lexical_grammar), or inside of a class as part of a private field. You may encounter this error if you forget the quotation marks when trying to access a DOM identifier as well.
 
 Message
 -------

@@ -239,17 +239,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb35-2" title="2">  has_many <span class="st">:assignments</span></a>
 <a class="sourceLine" id="cb35-3" title="3">  has_many <span class="st">:projects</span>, <span class="st">:through</span> =&gt; <span class="st">:assignments</span></a>
 <a class="sourceLine" id="cb35-4" title="4"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">class</span> <span class="dt">Project</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
 <a class="sourceLine" id="cb36-2" title="2">  has_many <span class="st">:assignments</span></a>
 <a class="sourceLine" id="cb36-3" title="3">  has_many <span class="st">:programmers</span>, <span class="st">:through</span> =&gt; <span class="st">:assignments</span></a>
 <a class="sourceLine" id="cb36-4" title="4"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">class</span> <span class="dt">Assignment</span></a>
 <a class="sourceLine" id="cb37-2" title="2">  belongs_to <span class="st">:project</span></a>
 <a class="sourceLine" id="cb37-3" title="3">  belongs_to <span class="st">:programmer</span></a>
 <a class="sourceLine" id="cb37-4" title="4"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <h3 id="many-to-many-habtm">Many-to-many (HABTM)</h3>
 <div class="sourceCode" id="cb38"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb38-1" title="1">has_and_belongs_to_many <span class="st">:projects</span></a>
 <a class="sourceLine" id="cb38-2" title="2">has_and_belongs_to_many <span class="st">:projects</span>, <span class="st">:include</span> =&gt; [ <span class="st">:milestones</span>, <span class="st">:manager</span> ]</a>
@@ -262,23 +262,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb39"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">class</span> <span class="dt">Post</span></a>
 <a class="sourceLine" id="cb39-2" title="2">  has_many <span class="st">:attachments</span>, <span class="st">as: :parent</span></a>
 <a class="sourceLine" id="cb39-3" title="3"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">class</span> <span class="dt">Image</span></a>
 <a class="sourceLine" id="cb40-2" title="2">  belongs_to <span class="st">:parent</span>, <span class="st">polymorphic: </span><span class="dv">true</span></a>
 <a class="sourceLine" id="cb40-3" title="3"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>And in migrations:</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb41-1" title="1">create_table <span class="st">:images</span> <span class="kw">do</span> |t|</a>
 <a class="sourceLine" id="cb41-2" title="2">  t.references <span class="st">:post</span>, <span class="st">polymorphic: </span><span class="dv">true</span></a>
 <a class="sourceLine" id="cb41-3" title="3"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h2 id="validation">Validation</h2>
 <h3 id="validation-1">Validation</h3>
 <div class="sourceCode" id="cb42"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">class</span> <span class="dt">Person</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a></code></pre></div>
 <p>{:.-setup}</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb43-1" title="1">  <span class="co"># Presence</span></a>
 <a class="sourceLine" id="cb43-2" title="2">  validates <span class="st">:name</span>,     <span class="st">presence: </span><span class="dv">true</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb44-1" title="1">  <span class="co"># Acceptance</span></a>
 <a class="sourceLine" id="cb44-2" title="2">  validates <span class="st">:terms</span>,    <span class="st">acceptance: </span><span class="dv">true</span></a></code></pre></div>
 <div class="sourceCode" id="cb45"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb45-1" title="1">  <span class="co"># Confirm</span></a>
@@ -331,7 +331,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb57-5" title="5">    errors.add(<span class="st">:foo</span>, <span class="st">&#39;cant be nil&#39;</span>)  <span class="kw">if</span> foo.nil?</a>
 <a class="sourceLine" id="cb57-6" title="6">  <span class="kw">end</span></a>
 <a class="sourceLine" id="cb57-7" title="7"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h3 id="errors">Errors</h3>
 <div class="sourceCode" id="cb58"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb58-1" title="1">record.errors.valid?      <span class="co"># → false</span></a>
 <a class="sourceLine" id="cb58-2" title="2">record.errors             <span class="co"># → { :name =&gt; [&quot;can&#39;t be blank&quot;] }</span></a>
@@ -367,7 +367,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb66"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb66-1" title="1"><span class="kw">class</span> <span class="dt">User</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
 <a class="sourceLine" id="cb66-2" title="2">  serialize <span class="st">:preferences</span></a>
 <a class="sourceLine" id="cb66-3" title="3"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <div class="sourceCode" id="cb67"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb67-1" title="1">user = <span class="dt">User</span>.create(</a>
 <a class="sourceLine" id="cb67-2" title="2">  <span class="st">preferences: </span>{</a>
 <a class="sourceLine" id="cb67-3" title="3">    <span class="st">&#39;background&#39;</span> =&gt; <span class="st">&#39;black&#39;</span>,</a>
@@ -395,7 +395,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb70-9" title="9">    read_attribute(<span class="st">:length</span>) / <span class="dv">60</span></a>
 <a class="sourceLine" id="cb70-10" title="10">  <span class="kw">end</span></a>
 <a class="sourceLine" id="cb70-11" title="11"><span class="kw">end</span></a></code></pre></div>
-<p>{: data-line=“4,8”}</p>
+<p>{: data-line="4,8”}</p>
 <p>See: <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html" class="uri">http://api.rubyonrails.org/classes/ActiveRecord/Base.html</a></p>
 <h2 id="callbacks-1">Callbacks</h2>
 <ul>

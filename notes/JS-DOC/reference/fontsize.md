@@ -26,7 +26,7 @@ A string containing a [`<font>`](https://developer.mozilla.org/en-US/docs/Web/HT
 Description
 -----------
 
-When you specify size as an integer, you set the font size of `str` to one of the 7 defined sizes. When you specify `size` as a string such as “-2”, you adjust the font size of `str` relative to the size set in the [`<basefont>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont) element.
+When you specify size as an integer, you set the font size of `str` to one of the 7 defined sizes. When you specify `size` as a string such as "-2”, you adjust the font size of `str` relative to the size set in the [`<basefont>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont) element.
 
 Examples
 --------

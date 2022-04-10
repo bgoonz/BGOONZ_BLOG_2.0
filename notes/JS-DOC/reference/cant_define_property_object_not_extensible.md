@@ -1,7 +1,7 @@
-TypeError: can’t define property “x”: “obj” is not extensible
+TypeError: can’t define property "x”: "obj” is not extensible
 =============================================================
 
-The JavaScript exception “can’t define property”x“:”obj" is not extensible" occurs when [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
+The JavaScript exception "can’t define property”x":”obj" is not extensible" occurs when [`Object.preventExtensions()`](../global_objects/object/preventextensions) marked an object as no longer extensible, so that it will never have properties beyond the ones it had at the time it was marked as non-extensible.
 
 Message
 -------
@@ -25,7 +25,7 @@ Examples
 
 ### Adding new properties to a non-extensible objects
 
-In [strict mode](../strict_mode), attempting to add new properties to a non-extensible object throws a `TypeError`. In sloppy mode, the addition of the “x” property is silently ignored.
+In [strict mode](../strict_mode), attempting to add new properties to a non-extensible object throws a `TypeError`. In sloppy mode, the addition of the "x” property is silently ignored.
 
     'use strict';
 

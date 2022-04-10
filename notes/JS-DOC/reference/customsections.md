@@ -27,9 +27,9 @@ If `module` is not a [`WebAssembly.Module`](../module) object instance, a [`Type
 Description
 -----------
 
-A wasm module is comprised of a sequence of **sections**. Most of these sections are fully specified and validated by the wasm spec, but modules can also contain **custom sections** that are ignored and skipped over during validation. (Read [High level structure](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#high-level-structure) for information on section structures, and how normal sections (“known sections”) and custom sections are distinguished.)
+A wasm module is comprised of a sequence of **sections**. Most of these sections are fully specified and validated by the wasm spec, but modules can also contain **custom sections** that are ignored and skipped over during validation. (Read [High level structure](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#high-level-structure) for information on section structures, and how normal sections ("known sections”) and custom sections are distinguished.)
 
-This provides developers with a way to include custom data inside wasm modules for other purposes, for example the [name custom section](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#name-section), which allows developers to provide names for all the functions and locals in the module (like “symbols” in a native build).
+This provides developers with a way to include custom data inside wasm modules for other purposes, for example the [name custom section](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#name-section), which allows developers to provide names for all the functions and locals in the module (like "symbols” in a native build).
 
 Note that the WebAssembly text format currently doesn’t have a syntax specified for adding new custom sections; you can however add a name section to your wasm during conversion from text format over to .wasm. The wast2wasm command available as part of the [wabt tool](https://github.com/webassembly/wabt) has a `--debug-names` option — specify this during conversion to get a .wasm with a names custom section, for example:
 
@@ -42,7 +42,7 @@ Examples
 
 The following example (see the custom-section.html [source](https://github.com/mdn/webassembly-examples/blob/master/other-examples/custom-section.html) and [live example](https://mdn.github.io/webassembly-examples/other-examples/custom-section.html)) compiles the loaded simple-name-section.wasm byte code.
 
-We then do a check using `WebAssembly.Module.customSections`, looking to see whether the module instance contains a “name” custom section by checking that its `length` is more than 0. Since there is a “name” section in the example, an `ArrayBuffer` object is returned.
+We then do a check using `WebAssembly.Module.customSections`, looking to see whether the module instance contains a "name” custom section by checking that its `length` is more than 0. Since there is a "name” section in the example, an `ArrayBuffer` object is returned.
 
     WebAssembly.compileStreaming(fetch('simple-name-section.wasm'))
     .then(function(mod) {

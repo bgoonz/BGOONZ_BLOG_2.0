@@ -98,15 +98,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="at">knex</span>(<span class="st">&#39;users&#39;</span>)</a>
 <a class="sourceLine" id="cb3-2" title="2">  .<span class="at">where</span>(<span class="op">{</span> <span class="dt">email</span><span class="op">:</span> <span class="st">&#39;hi@example.com&#39;</span> <span class="op">}</span>)</a>
 <a class="sourceLine" id="cb3-3" title="3">  .<span class="at">then</span>(rows <span class="kw">=&gt;</span> ···)</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="#select-1">Select</a></p>
 <h3 id="insert">Insert</h3>
 <div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="at">knex</span>(<span class="st">&#39;users&#39;</span>).<span class="at">insert</span>(<span class="op">{</span> <span class="dt">email</span><span class="op">:</span> <span class="st">&#39;hi@example.com&#39;</span> <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <p>See: <a href="#insert-1">Insert</a></p>
 <h3 id="update">Update</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="at">knex</span>(<span class="st">&#39;users&#39;</span>).<span class="at">where</span>(<span class="op">{</span> <span class="dt">id</span><span class="op">:</span> <span class="dv">135</span> <span class="op">}</span>).<span class="at">update</span>(<span class="op">{</span> <span class="dt">email</span><span class="op">:</span> <span class="st">&#39;hi@example.com&#39;</span> <span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>See: <a href="#update-1">Update</a></p>
 <h3 id="migrations">Migrations</h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">knex</span> init</a>
@@ -140,7 +140,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-8" title="8">    <span class="op">},</span></a>
 <a class="sourceLine" id="cb8-9" title="9">    <span class="dt">pool</span><span class="op">:</span> <span class="op">{</span> <span class="dt">min</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">7</span> <span class="op">}</span></a>
 <a class="sourceLine" id="cb8-10" title="10"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <p>See: <a href="http://knexjs.org/#Installation-client">Initializing the library</a></p>
 <h3 id="connect-via-url">Connect via URL</h3>
 <div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">var</span> pg <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;knex&#39;</span>)(<span class="op">{</span></a>
@@ -149,13 +149,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb9-4" title="4">    <span class="dt">searchPath</span><span class="op">:</span> <span class="st">&#39;knex,public&#39;</span><span class="op">,</span></a>
 <a class="sourceLine" id="cb9-5" title="5">    <span class="dt">pool</span><span class="op">:</span> <span class="op">{</span> <span class="dt">min</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">7</span> <span class="op">}</span></a>
 <a class="sourceLine" id="cb9-6" title="6"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <h3 id="connect-via-sqlite">Connect via Sqlite</h3>
 <div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">var</span> knex <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;knex&#39;</span>)(<span class="op">{</span></a>
 <a class="sourceLine" id="cb10-2" title="2">    <span class="dt">client</span><span class="op">:</span> <span class="st">&#39;sqlite3&#39;</span><span class="op">,</span></a>
 <a class="sourceLine" id="cb10-3" title="3">    <span class="dt">connection</span><span class="op">:</span> <span class="op">{</span> <span class="dt">filename</span><span class="op">:</span> <span class="st">&#39;./mydb.sqlite&#39;</span> <span class="op">}</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
-<p>{: data-line=“2,3”}</p>
+<p>{: data-line="2,3”}</p>
 <h2 id="select-1">Select</h2>
 <h3 id="where">Where</h3>
 <div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="va">knex</span>.<span class="at">from</span>(<span class="st">&#39;books&#39;</span>).<span class="at">select</span>(<span class="st">&#39;title&#39;</span><span class="op">,</span> <span class="st">&#39;author&#39;</span><span class="op">,</span> <span class="st">&#39;year&#39;</span>)<span class="op">;</span></a></code></pre></div>

@@ -66,7 +66,7 @@ It can mean anything you want, eg, for the estimated date you’ll be paid.
       Expenses:Food            $20
       Assets:Cash              = $500
 
-{: data-line=“2,7”}
+{: data-line="2,7”}
 
 `ACCOUNT = $500` figures out what’s needed to make it $500.
 
@@ -76,7 +76,7 @@ It can mean anything you want, eg, for the estimated date you’ll be paid.
       (Assets:Checking)  -$200
       Expenses:Rent
 
-{: data-line=“2”}
+{: data-line="2”}
 
 ### Commodities
 
@@ -219,7 +219,7 @@ Example:
       Assets:Accounts Receivable            $100.00
       Income: Client name
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Say you’re in business. If you bill a customer, you can enter something like above. Then, when you receive the payment, you change it to:
 
@@ -227,7 +227,7 @@ Say you’re in business. If you bill a customer, you can enter something like a
       Assets:Accounts Receivable            $100.00
       Income: Client name
 
-{: data-line=“1”}
+{: data-line="1”}
 
 References
 ----------

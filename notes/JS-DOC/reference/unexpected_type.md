@@ -1,7 +1,7 @@
-TypeError: “x” is (not) “y”
+TypeError: "x” is (not) "y”
 ===========================
 
-The JavaScript exception “*x* is (not) *y*” occurs when there was an unexpected type. Oftentimes, unexpected [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
+The JavaScript exception "*x* is (not) *y*” occurs when there was an unexpected type. Oftentimes, unexpected [`undefined`](../global_objects/undefined) or [`null`](../global_objects/null) values.
 
 Message
 -------

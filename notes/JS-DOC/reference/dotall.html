@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="regexp.prototype.dotall">RegExp.prototype.dotAll</h1>
-<p>The <code>dotAll</code> property indicates whether or not the “<code>s</code>” flag is used with the regular expression. <code>dotAll</code> is a read-only property of an individual regular expression instance.</p>
+<p>The <code>dotAll</code> property indicates whether or not the "<code>s</code>” flag is used with the regular expression. <code>dotAll</code> is a read-only property of an individual regular expression instance.</p>
 <p>Property attributes of <code>RegExp.prototype.dotAll</code></p>
 <p>Writable</p>
 <p>no</p>
@@ -23,14 +23,14 @@
 <p>Configurable</p>
 <p>yes</p>
 <h2 id="description">Description</h2>
-<p>The value of <code>dotAll</code> is a <a href="../boolean"><code>Boolean</code></a> and <code>true</code> if the “<code>s</code>” flag was used; otherwise, <code>false</code>. The “<code>s</code>” flag indicates that the dot special character (“<code>.</code>”) should additionally match the following line terminator (“newline”) characters in a string, which it would not match otherwise:</p>
+<p>The value of <code>dotAll</code> is a <a href="../boolean"><code>Boolean</code></a> and <code>true</code> if the "<code>s</code>” flag was used; otherwise, <code>false</code>. The "<code>s</code>” flag indicates that the dot special character ("<code>.</code>”) should additionally match the following line terminator ("newline”) characters in a string, which it would not match otherwise:</p>
 <ul>
-<li>U+000A LINE FEED (LF) (“<code>\n</code>”)</li>
-<li>U+000D CARRIAGE RETURN (CR) (“<code>\r</code>”)</li>
+<li>U+000A LINE FEED (LF) ("<code>\n</code>”)</li>
+<li>U+000D CARRIAGE RETURN (CR) ("<code>\r</code>”)</li>
 <li>U+2028 LINE SEPARATOR</li>
 <li>U+2029 PARAGRAPH SEPARATOR</li>
 </ul>
-<p>This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the “<code>u</code>” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.</p>
+<p>This effectively means the dot will match any character on the Unicode Basic Multilingual Plane (BMP). To allow it to match astral characters, the "<code>u</code>” (unicode) flag should be used. Using both flags in conjunction allows the dot to match any Unicode character, without exceptions.</p>
 <p>You cannot change this property directly.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="using-dotall">Using <code>dotAll</code></h3>

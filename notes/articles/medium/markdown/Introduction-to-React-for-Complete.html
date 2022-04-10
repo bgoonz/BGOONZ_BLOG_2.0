@@ -110,7 +110,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 <h3 id="from-the-react-docs">From the React Docs:</h3>
 <h3 id="what-is-react">What is React?</h3>
-<p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+<p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called "components”.</p>
 <p>React has a few different kinds of components, but we’ll start with <code>React.Component</code> subclasses:</p>
 <pre><code>class ShoppingList extends React.Component {
   render() {
@@ -129,8 +129,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 // Example usage: &lt;ShoppingList name=&quot;Mark&quot; /&gt;</code></pre>
 <p>We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.</p>
-<p>Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <code>props</code> (short for “properties”), and returns a hierarchy of views to display via the <code>render</code> method.</p>
-<p>The <code>render</code> method returns a <em>description</em> of what you want to see on the screen. React takes the description and displays the result. In particular, <code>render</code> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The <code>&lt;div /&gt;</code> syntax is transformed at build time to <code>React.createElement('div')</code>. The example above is equivalent to:</p>
+<p>Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <code>props</code> (short for "properties”), and returns a hierarchy of views to display via the <code>render</code> method.</p>
+<p>The <code>render</code> method returns a <em>description</em> of what you want to see on the screen. React takes the description and displays the result. In particular, <code>render</code> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX” which makes these structures easier to write. The <code>&lt;div /&gt;</code> syntax is transformed at build time to <code>React.createElement('div')</code>. The example above is equivalent to:</p>
 <pre><code>return React.createElement(&#39;div&#39;, {className: &#39;shopping-list&#39;},
   React.createElement(&#39;h1&#39;, /* ... h1 children ... */),
   React.createElement(&#39;ul&#39;, /* ... ul children ... */)

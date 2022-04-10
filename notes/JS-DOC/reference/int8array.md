@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `1` in the case of an `Int8Array`.
 
 [`Int8Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Int8Array` type: “`Int8Array`”.
+Returns the string value of the constructor name. In the case of the `Int8Array` type: "`Int8Array`”.
 
 Static methods
 --------------

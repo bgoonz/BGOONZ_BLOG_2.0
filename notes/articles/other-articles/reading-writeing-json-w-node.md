@@ -24,7 +24,7 @@ Let’s first see how we can [read a file](https://stackabuse.com/read-files-wit
         "car": "Honda"
     }
 
-Now save this file as “student.json” to your project directory.
+Now save this file as "student.json” to your project directory.
 
 To read the JSON data from the file we can use the Node.js [fs](https://nodejs.org/api/fs.html) module. There are two functions available in this module that we can use to read files from the file system: `readFile` and `readFileSync`.
 
@@ -34,7 +34,7 @@ Although both of these functions perform similar tasks i.e. reading files from 
 
 The `readFileSync` function reads data from a file in a synchronous manner. This function blocks the rest of the code from executing until all the data is read from a file. The function is particularly useful when your application has to load configuration settings before it can perform any other tasks.
 
-To continue with our example, let’s use this function to read the “student.json” file that we created earlier, using the `readFileSync` function. Add the following code to a ‘.js’ file:
+To continue with our example, let’s use this function to read the "student.json” file that we created earlier, using the `readFileSync` function. Add the following code to a ‘.js’ file:
 
     'use strict';
 
@@ -144,9 +144,9 @@ Note that if the file doesn’t already exist, then a new file is created for yo
     let data = JSON.stringify(student);
     fs.writeFileSync('student-2.json', data);
 
-In the above example we are storing our JSON object `student` to a file named “student-2.json”. Notice that here we have to use the `JSON.stringify` function before saving the data. Just like we needed to parse the data into JSON format when we read the JSON file, we need to “stringify” the data before we can store it in a string form in the file.
+In the above example we are storing our JSON object `student` to a file named "student-2.json”. Notice that here we have to use the `JSON.stringify` function before saving the data. Just like we needed to parse the data into JSON format when we read the JSON file, we need to "stringify” the data before we can store it in a string form in the file.
 
-Execute the above code and open the “student-2.json” file. You should see following content in the file:
+Execute the above code and open the "student-2.json” file. You should see following content in the file:
 
     {"name":"Mike","age":23,"gender":"Male","department":"English","car":"Honda"}
 
@@ -154,7 +154,7 @@ Although this is the data that we wanted to write, the data is in the form of on
 
     let data = JSON.stringify(student, null, 2);
 
-Here we are telling the method to add newlines and a couple of indentations to the serialized JSON. Now if you open the “student-2.json” file, you should see the text in following format.
+Here we are telling the method to add newlines and a couple of indentations to the serialized JSON. Now if you open the "student-2.json” file, you should see the text in following format.
 
     {
       "name": "Mike",
@@ -168,7 +168,7 @@ Here we are telling the method to add newlines and a couple of indentations to t
 
 As I mentioned earlier, the `writeFile` function executes in asynchronous manner, which means our code is not blocked while data is written *to* the file. And just like the asynchronous methods from before, we need to pass a callback to this function.
 
-Let’s write another file, “student-3.json”, using the `writeFile` function.
+Let’s write another file, "student-3.json”, using the `writeFile` function.
 
     'use strict';
 

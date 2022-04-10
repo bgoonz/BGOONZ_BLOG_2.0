@@ -74,7 +74,7 @@ delete localStorage.test;</code></pre>
 <li><span id="3020">There’s a <code>storage</code> event, it triggers when we modify the data. That event does not happen for object-like access. We’ll see that later in this chapter.</span></li>
 </ol>
 <h3 id="looping-over-keys">Looping over keys</h3>
-<p>As we’ve seen, the methods provide “get/set/remove by key” functionality. But how to get all saved values or keys?</p>
+<p>As we’ve seen, the methods provide "get/set/remove by key” functionality. But how to get all saved values or keys?</p>
 <p>Unfortunately, storage objects are not iterable.</p>
 <p>One way is to loop over them as over an array:</p>
 <pre><code>for(let i=0; i&lt;localStorage.length; i++) {
@@ -94,7 +94,7 @@ for(let key in localStorage) {
   }
   alert(`${key}: ${localStorage.getItem(key)}`);
 }</code></pre>
-<p>…Or just get the “own” keys with <code>Object.keys</code> and then loop over them if needed:</p>
+<p>…Or just get the "own” keys with <code>Object.keys</code> and then loop over them if needed:</p>
 <pre><code>let keys = Object.keys(localStorage);
 for(let key of keys) {
   alert(`${key}: ${localStorage.getItem(key)}`);
@@ -128,7 +128,7 @@ alert( JSON.stringify(localStorage, null, 2) );</code></pre>
 <pre><code>sessionStorage.setItem(&#39;test&#39;, 1);</code></pre>
 <p>…Then refresh the page. Now you can still get the data:</p>
 <pre><code>alert( sessionStorage.getItem(&#39;test&#39;) ); // after refresh: 1</code></pre>
-<p>…But if you open the same page in another tab, and try again there, the code above returns <code>null</code>, meaning “nothing found”.</p>
+<p>…But if you open the same page in another tab, and try again there, the code above returns <code>null</code>, meaning "nothing found”.</p>
 <p>That’s exactly because <code>sessionStorage</code> is bound not only to the origin, but also to the browser tab. For that reason, <code>sessionStorage</code> is used sparingly.</p>
 <h3 id="storage-event">Storage event</h3>
 <p>When the data gets updated in <code>localStorage</code> or <code>sessionStorage</code>, <a href="https://www.w3.org/TR/webstorage/#the-storage-event" class="markup--anchor markup--p-anchor">storage</a> event triggers, with properties:</p>
@@ -152,7 +152,7 @@ window.onstorage = event =&gt; { // same as window.addEventListener(&#39;storage
 
 localStorage.setItem(&#39;now&#39;, Date.now());</code></pre>
 <p>Please note that the event also contains: <code>event.url</code> – the url of the document where the data was updated.</p>
-<p>Also, <code>event.storageArea</code> contains the storage object – the event is the same for both <code>sessionStorage</code> and <code>localStorage</code>, so <code>event.storageArea</code> references the one that was modified. We may even want to set something back in it, to “respond” to a change.</p>
+<p>Also, <code>event.storageArea</code> contains the storage object – the event is the same for both <code>sessionStorage</code> and <code>localStorage</code>, so <code>event.storageArea</code> references the one that was modified. We may even want to set something back in it, to "respond” to a change.</p>
 <p><strong>That allows different windows from the same origin to exchange messages.</strong></p>
 <p>Modern browsers also support Broadcast channel API, the special API for same-origin inter-window communication, it’s more full featured, but less supported. There are libraries that polyfill that API, based on <code>localStorage</code>, that make it available everywhere.</p>
 <h3 id="summary">Summary</h3>

@@ -143,7 +143,7 @@ Middlewares are simply decorators for `dispatch()` to allow you to take differen
 
     const store = createStore(reducer, {}, enhancer);
 
-{: data-line=“1”}
+{: data-line="1”}
 
 References
 ----------

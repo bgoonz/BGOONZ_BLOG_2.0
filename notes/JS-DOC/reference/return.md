@@ -44,7 +44,7 @@ is transformed by ASI into:
     return;
     a + b;
 
-The console will warn “unreachable code after return statement”.
+The console will warn "unreachable code after return statement”.
 
 **Note:** Starting with Firefox 40, a warning is shown in the console if unreachable code is found after a `return` statement.
 

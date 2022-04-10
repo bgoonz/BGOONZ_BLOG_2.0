@@ -182,7 +182,7 @@ Models
         }
     });
 
-{: data-line=“2”}
+{: data-line="2”}
 
     obj.validationError  //=> "Can't end before it starts"
     obj.isValid()

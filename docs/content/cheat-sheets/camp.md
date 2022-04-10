@@ -42,7 +42,7 @@ Camp serves files in `web/` by default.
       res.json({ results: ··· })
     })
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Also available: `camp.post`, `camp.get`.
 
@@ -59,7 +59,7 @@ Also available: `camp.post`, `camp.get`.
         );
     });
 
-{: data-line=“1,4”}
+{: data-line="1,4”}
 
 See: [Templates](https://github.com/espadrine/sc/blob/master/doc/Readme.md#templates)
 
@@ -69,7 +69,7 @@ See: [Templates](https://github.com/espadrine/sc/blob/master/doc/Readme.md#templ
         res.file('/404.html');
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [Fall through](https://github.com/espadrine/sc/blob/master/doc/Readme.md#fall-through)
 
@@ -80,7 +80,7 @@ See: [Fall through](https://github.com/espadrine/sc/blob/master/doc/Readme.md#fa
         next();
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [Handlers](https://github.com/espadrine/sc/blob/master/doc/Readme.md#handlers)
 
@@ -100,7 +100,7 @@ Templates
         );
     });
 
-{: data-line=“1,4,5,6”}
+{: data-line="1,4,5,6”}
 
 ### Implicit templates
 

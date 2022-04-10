@@ -60,7 +60,7 @@
 <h2 id="customizing-search-results">Customizing Search Results</h2>
 <p>In a similar way to customizing the search box, you can add additional options to the search results element.</p>
 <p>For example, to change our search engine from webresults-based to image-based, we can utilize the <code>defaultToImageSearch</code> attribute.</p>
-<p>First of all, you need to enable Image Search in the <a href="https://programmablesearchengine.google.com/">Control Panel</a> for your search engine. In the <strong>Setup</strong> section, in the <strong>Basics</strong> tab, click the <strong>Image search</strong> option into the “on” position. After that, add the <code>defaultToImageSearch</code> attribute to the <code>&lt;div class="gcse-searchresults"&gt;&lt;/div&gt;</code> element on your website.</p>
+<p>First of all, you need to enable Image Search in the <a href="https://programmablesearchengine.google.com/">Control Panel</a> for your search engine. In the <strong>Setup</strong> section, in the <strong>Basics</strong> tab, click the <strong>Image search</strong> option into the "on” position. After that, add the <code>defaultToImageSearch</code> attribute to the <code>&lt;div class="gcse-searchresults"&gt;&lt;/div&gt;</code> element on your website.</p>
 <h3 id="advantages-of-adding-google-custom-search">Advantages of adding Google custom search</h3>
 <ul>
 <li>Google custom search is free. There are few custom search engines that are free.</li>
@@ -76,7 +76,7 @@
 <li>It can be shut down or changed at any time. Google is known for killing products ruthlessly without considering the user base.</li>
 </ul>
 <p>Though this might sound great to have Google search on your website, there is no free lunch. Google shows ads to cover up for this service. Now say, your site is about shoes of brand X. when people search on your site for a shoe you have, Google shows an ad of your competitor brand Y and <strong>places it above</strong> your site results. Your visitors are going to believe that you indeed are recommending brand Y yourself. If you are going to monetize your visitors, then this will drastically reduce your income.</p>
-<p>Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.</p>
+<p>Second, no one likes ads. In my opinion, there is nothing like a "non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.</p>
 <h2 id="google-search-bar-for-your-website-using-expertrec">Google search bar for your website using Expertrec</h2>
 <p>Expertrec adds a Google-like search box to your website. It is priced at 9 USD per month. The biggest advantage is that it doesn’t contain ads.</p>
 <p>Before starting to make a custom search engine using Expertrec, make sure that is your website is live and not behind a login (If your website is behind a login, follow steps in this <a href="https://blog.expertrec.com/crawling-behind-login-authenticated-pages/">blog</a>). Have your sitemap URL handy. Also, make sure you have code access to your website. Follow the below steps.</p>
@@ -210,7 +210,7 @@ is just the JavaScript component and can be added using Google tag manager or us
 <p><a href="https://jsfiddle.net/gtpqzhac/">Try it</a></p>
 <p>To implement a stand-alone search results page, paste the results code snippet into your results page:</p>
 <pre><code>&lt;script async src=&quot;https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID&quot;&gt;&lt;/script&gt;&lt;div class=&quot;gcse-searchresults-only&quot;&gt;&lt;/div&gt;</code></pre>
-<p>Now you can trigger search results on this page by passing a “q” argument in the url:</p>
+<p>Now you can trigger search results on this page by passing a "q” argument in the url:</p>
 <pre><code>https://my-results-page-url.com/?q=myQuery</code></pre>
 <p>Note the <em>q=myQuery</em> param in the address bar - this is how the <code>&lt;div class="gcse-searchresults-only"&gt;&lt;/div&gt;</code> element knows what query results to display.</p>
 <p><a href="https://programmablesearchengine.google.com/docs/element/results-only_url.html?q=test">Try it</a></p>
@@ -252,7 +252,7 @@ is just the JavaScript component and can be added using Google tag manager or us
 <ul>
 <li>type - This sets how the input looks on the screen. There are many types such as password, checkbox and radio yet here we are using search</li>
 <li>id - Setting an ID can make it easy to reference the input box from JavaScript which we will use later</li>
-<li>name - It is common to use “q” for the search query box name</li>
+<li>name - It is common to use "q” for the search query box name</li>
 <li>placeholder - This is some text that gives a hint to the user on what the input is for</li>
 </ul>
 <p>When the HTML displays on the browser it looks like this:</p>
@@ -267,8 +267,8 @@ is just the JavaScript component and can be added using Google tag manager or us
 <p>Our form is not quite finished yet, we need to make sure that screen readers can use it for accessibility.</p>
 <p>To do this we have to make two changes to the form:</p>
 <ol type="1">
-<li>We need to add a <code>role</code> to the form with the value of “search”. Setting this will cause the screen readers to announce that this form is a search form.</li>
-<li>We add a <code>aria-label</code> attribute to the <code>&lt;input&gt;</code> element. The screen reader will read aloud the value of this attribute. Set a value that describes what text the search form returns such as “Search through our site content”.</li>
+<li>We need to add a <code>role</code> to the form with the value of "search”. Setting this will cause the screen readers to announce that this form is a search form.</li>
+<li>We add a <code>aria-label</code> attribute to the <code>&lt;input&gt;</code> element. The screen reader will read aloud the value of this attribute. Set a value that describes what text the search form returns such as "Search through our site content”.</li>
 </ol>
 <p>This is our final HTML:</p>
 <pre><code>&lt;form id=&quot;form&quot; role=&quot;search&quot;&gt;
@@ -339,7 +339,7 @@ svg {
   padding: 10px;
 }</code></pre>
 <p>We have used the <code>all: unset;</code> rule again to reset the button to its default. Then set a height and width of <code>44px</code> this is a good size for fingers on touch screens.</p>
-<p>Then we set the height and width of the icon and set the color to white (“#fff”).</p>
+<p>Then we set the height and width of the icon and set the color to white ("#fff”).</p>
 <p>Now our search bar is almost ready! Except nothing happens when we press the search button.</p>
 <p>The last step for us is to hook up the button to JavaScript.</p>
 <h2 id="javascript">JavaScript</h2>

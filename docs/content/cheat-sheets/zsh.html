@@ -55,7 +55,7 @@
 <h1 id="parameter-expansion">Parameter expansion</h1>
 <p>files=(*.txt) # store a glob in a variable print -l $files print -l $files(:h) # this is the syntax we saw before print -l ${files:h} print -l ${files(:h)} # don’t mix the two, or you’ll get an error print -l ${files:u} # the :u modifier makes the text uppercase</p>
 <h1 id="s-modifier">:s modifier</h1>
-<p>variable=“path/aaabcd” echo ${variable:s/bc/BC/} # path/aaaBCd echo ${variable:s<em>bc_BC</em>} # path/aaaBCd echo ${variable:s///./} # path.aaabcd (escaping the slash /) echo ${variable:s<em>/</em>._} # path.aaabcd (slightly more readable) echo ${variable:s/a/A/} # pAth/aaabcd (only first A is replaced) echo ${variable:gs/a/A/} # pAth/AAAbcd (all A is replaced)</p>
+<p>variable="path/aaabcd” echo ${variable:s/bc/BC/} # path/aaaBCd echo ${variable:s<em>bc_BC</em>} # path/aaaBCd echo ${variable:s///./} # path.aaabcd (escaping the slash /) echo ${variable:s<em>/</em>._} # path.aaabcd (slightly more readable) echo ${variable:s/a/A/} # pAth/aaabcd (only first A is replaced) echo ${variable:gs/a/A/} # pAth/AAAbcd (all A is replaced)</p>
 <h1 id="split-the-file-name-at-each-underscore">Split the file name at each underscore</h1>
 <p>echo ${(s._.)file}</p>
 <h1 id="join-expansion-flag-opposite-of-the-split-flag.">Join expansion flag, opposite of the split flag.</h1>

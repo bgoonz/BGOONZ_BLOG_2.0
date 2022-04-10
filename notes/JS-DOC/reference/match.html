@@ -75,7 +75,7 @@ console.log(matches_array);
 // [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]</code></pre>
 <p><strong>Note:</strong> See also <a href="matchall"><code>String.prototype.matchAll()</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags">Advanced searching with flags</a>.</p>
 <h3 id="using-named-capturing-groups">Using named capturing groups</h3>
-<p>In browsers which support named capturing groups, the following code captures “<code>fox</code>” or “<code>cat</code>” into a group named “<code>animal</code>”:</p>
+<p>In browsers which support named capturing groups, the following code captures "<code>fox</code>” or "<code>cat</code>” into a group named "<code>animal</code>”:</p>
 <pre><code>const paragraph = &#39;The quick brown fox jumps over the lazy dog. It barked.&#39;;
 
 const capturingRegex = /(?&lt;animal&gt;fox|cat) jumps over/;

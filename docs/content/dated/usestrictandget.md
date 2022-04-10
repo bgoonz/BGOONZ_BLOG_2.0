@@ -1,10 +1,10 @@
 -   /en/use-strict-and-get-lazy/
 
-Strict-mode JavaScript makes it easier for the developer to write “secure” JavaScript.
+Strict-mode JavaScript makes it easier for the developer to write "secure” JavaScript.
 
-By default, JavaScript allows the programmer to be pretty careless, for example, by not requiring us to declare our variables with “var” when we first introduce them. While this may seem like a convenience to the unseasoned developer, it’s also the source of many errors when a variable name is misspelled or accidentally referred to out of its scope.
+By default, JavaScript allows the programmer to be pretty careless, for example, by not requiring us to declare our variables with "var” when we first introduce them. While this may seem like a convenience to the unseasoned developer, it’s also the source of many errors when a variable name is misspelled or accidentally referred to out of its scope.
 
-Programmers like to make the computer do the boring stuff for us, and automatically check our work for mistakes. That’s what the JavaScript “use strict” directive allows us to do, by turning our mistakes into JavaScript errors.
+Programmers like to make the computer do the boring stuff for us, and automatically check our work for mistakes. That’s what the JavaScript "use strict” directive allows us to do, by turning our mistakes into JavaScript errors.
 
 We add this directive either by adding it at the top of a js file:
 
@@ -30,10 +30,10 @@ or inside a function:
 
 By including this directive in a JavaScript file or function, we will direct the JavaScript engine to execute in strict mode which disables a bunch of behaviors that are usually undesirable in larger JavaScript projects. Among other things, strict mode changes the following behaviors:
 
--   Variables can only be introduced when they are preceded with “var”
+-   Variables can only be introduced when they are preceded with "var”
 -   Attempting to write to read-only properties generates a noisy error
--   You have to call constructors with the “new” keyword
--   “this” is not implicitly bound to the global object
+-   You have to call constructors with the "new” keyword
+-   "this” is not implicitly bound to the global object
 -   Very limited use of eval() allowed
 -   Protects you from using reserved words or future reserved words as variable names
 

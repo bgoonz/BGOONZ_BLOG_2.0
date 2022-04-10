@@ -14,7 +14,7 @@ When memory is shared, multiple threads can read and write the same data in memo
 
 ### Wait and notify
 
-The `wait()` and `notify()` methods are modeled on Linux futexes (“fast user-space mutex”) and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
+The `wait()` and `notify()` methods are modeled on Linux futexes ("fast user-space mutex”) and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
 
 Static methods
 --------------
@@ -50,7 +50,7 @@ Stores a value at the specified index of the array. Returns the value.
 Subtracts a value at the specified index of the array. Returns the old value at that index.
 
 [`Atomics.wait()`](atomics/wait)  
-Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either “`ok`”, “`not-equal`”, or “`timed-out`”. If waiting is not allowed in the calling agent then it throws an [`Error`](error) exception. (Most browsers will not allow `wait()` on the browser’s main thread.)
+Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either "`ok`”, "`not-equal`”, or "`timed-out`”. If waiting is not allowed in the calling agent then it throws an [`Error`](error) exception. (Most browsers will not allow `wait()` on the browser’s main thread.)
 
 [`Atomics.xor()`](atomics/xor)  
 Computes a bitwise XOR on the value at the specified index of the array with the provided value. Returns the old value at that index.

@@ -22,7 +22,7 @@ You can use a label to identify a loop, and then use the `break` or `continue` s
 
 Note that JavaScript has *no* `goto` statement, you can only use labels with `break` or `continue`.
 
-In [strict mode](../strict_mode) code, you can’t use “`let`” as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
+In [strict mode](../strict_mode) code, you can’t use "`let`” as a label name. It will throw a [`SyntaxError`](../global_objects/syntaxerror) (let is a reserved identifier).
 
 Examples
 --------

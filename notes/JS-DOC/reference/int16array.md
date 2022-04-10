@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `2` in the case of an `Int16Array`.
 
 [`Int16Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Int16Array` type: “`Int16Array`”.
+Returns the string value of the constructor name. In the case of the `Int16Array` type: "`Int16Array`”.
 
 Static methods
 --------------

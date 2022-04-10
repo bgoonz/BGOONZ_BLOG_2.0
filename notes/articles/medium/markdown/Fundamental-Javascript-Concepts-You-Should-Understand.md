@@ -134,7 +134,7 @@ Plain Old JS Object Lesson Concepts
 
 ### Callbacks Lesson Concepts
 
--   <span id="a16e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span>
+-   <span id="a16e">Given multiple plausible reasons, identify why functions are called "First Class Objects” in JavaScript.</span>
 -   <span id="0d89">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span>
 -   <span id="e458">supports same basic operations as other types (strings, bools, numbers)</span>
 -   <span id="6af2">higher-order functions take functions as arguments or return functions as values</span>
@@ -223,8 +223,8 @@ Plain Old JS Object Lesson Concepts
 -   <span id="670d">`var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!</span>
 -   <span id="b254">a variable will always evaluate to the value it contains regardless of how it was declared</span>
 -   <span id="aace">Explain the difference between `const`, `let`, and `var` declarations</span>
--   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is “hoisted”</span>
--   <span id="a54b">so it will exist in memory as “undefined” which is bad and unpredictable</span>
+-   <span id="5d79">`var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted”</span>
+-   <span id="a54b">so it will exist in memory as "undefined” which is bad and unpredictable</span>
 -   <span id="2dc2">`var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn’t be able to do that!</span>
 -   <span id="1f74">`const` won’t let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object</span>
 -   <span id="2c20">block-scoped variables allow new variables with the same name in new scopes</span>

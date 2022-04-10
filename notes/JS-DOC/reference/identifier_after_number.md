@@ -1,7 +1,7 @@
 SyntaxError: identifier starts immediately after numeric literal
 ================================================================
 
-The JavaScript exception “identifier starts immediately after numeric literal” occurs when an identifier started with a digit. Identifiers can only start with a letter, underscore (\_), or dollar sign ($).
+The JavaScript exception "identifier starts immediately after numeric literal” occurs when an identifier started with a digit. Identifiers can only start with a letter, underscore (\_), or dollar sign ($).
 
 Message
 -------

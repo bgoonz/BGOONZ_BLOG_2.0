@@ -1,7 +1,7 @@
 TypeError: cyclic object value
 ==============================
 
-The JavaScript exception “cyclic object value” occurs when object references were found in [JSON](https://www.json.org/). [`JSON.stringify()`](../global_objects/json/stringify) doesn’t try to solve them and fails accordingly.
+The JavaScript exception "cyclic object value” occurs when object references were found in [JSON](https://www.json.org/). [`JSON.stringify()`](../global_objects/json/stringify) doesn’t try to solve them and fails accordingly.
 
 Message
 -------

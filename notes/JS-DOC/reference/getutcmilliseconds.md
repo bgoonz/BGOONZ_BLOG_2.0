@@ -12,7 +12,7 @@ Syntax
 
 An integer number, between 0 and 999, representing the milliseconds portion of the given date object. This method is a companion to the other UTC based methods that give hour portion, minute portion, etc.; this method gives milliseconds portion.
 
-Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method “.getTime()”.
+Not to be confused with Unix epoch time. To get total milliseconds since 1970/01/01, use the method ".getTime()”.
 
 Examples
 --------

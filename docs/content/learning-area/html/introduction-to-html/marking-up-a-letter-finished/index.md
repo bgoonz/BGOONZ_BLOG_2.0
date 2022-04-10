@@ -64,4 +64,4 @@ Yours sincerely,
 
 Dr Eleanor Gaye
 
-University of Awesome motto: “Be awesome to each other.” -- The memoirs of Bill S Preston, Esq
+University of Awesome motto: "Be awesome to each other.” -- The memoirs of Bill S Preston, Esq

@@ -42,7 +42,7 @@ Prior to Firefox 40, it was possible to use an initializer expression (`i=0`) in
     // 2
     // 3
 
-This nonstandard behavior is now ignored in version 40 and later, and will present a [`SyntaxError`](../global_objects/syntaxerror) (“[for-in loop head declarations may not have initializers](../errors/invalid_for-in_initializer)”) error in [strict mode](../strict_mode) ([bug 748550](https://bugzilla.mozilla.org/show_bug.cgi?id=748550) and [bug 1164741](https://bugzilla.mozilla.org/show_bug.cgi?id=1164741)).
+This nonstandard behavior is now ignored in version 40 and later, and will present a [`SyntaxError`](../global_objects/syntaxerror) ("[for-in loop head declarations may not have initializers](../errors/invalid_for-in_initializer)”) error in [strict mode](../strict_mode) ([bug 748550](https://bugzilla.mozilla.org/show_bug.cgi?id=748550) and [bug 1164741](https://bugzilla.mozilla.org/show_bug.cgi?id=1164741)).
 
 Other engines such as v8 (Chrome), Chakra (IE/Edge), and JSC (WebKit/Safari) are investigating whether to remove the nonstandard behavior as well.
 

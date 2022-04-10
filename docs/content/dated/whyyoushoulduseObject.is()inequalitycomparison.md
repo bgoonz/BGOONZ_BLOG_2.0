@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------
 
-We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting “converting one of the 2 operands to the other’s type then compare”.
+We all know that JavaScript is loosely typed and in some cases it fall behind specially when it comes to quality comparison with ‘==’, comparing with ‘==’ gives unexpected results due to whats called coercion or casting "converting one of the 2 operands to the other’s type then compare”.
 
     0 == ' '; //true
     (null == undefined[1]) == //true
@@ -17,7 +17,7 @@ The great news that in ES6 there is the new ‘Object.is()’ which is better an
     Object.is([1], true); //false
     Object.is(NaN, NaN); //true
 
-Mozilla team doesn’t think that Object.is is “stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.
+Mozilla team doesn’t think that Object.is is "stricter” than ‘===’, they say that we should think of how this method deal with NaN, -0 and +0 but overall I think it is now a good practice in real applications.
 
 Now this table illustrates..
 

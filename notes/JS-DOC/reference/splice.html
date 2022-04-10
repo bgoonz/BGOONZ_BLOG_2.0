@@ -38,13 +38,13 @@ The elements to add to the array, beginning from <code>start</code>. If you do n
 <h2 id="description">Description</h2>
 <p>If the specified number of elements to insert differs from the number of elements being removed, the array’s <code>length</code> will be changed.</p>
 <h2 id="examples">Examples</h2>
-<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum">Remove 0 (zero) elements before index 2, and insert “drum”</h3>
+<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum">Remove 0 (zero) elements before index 2, and insert "drum”</h3>
 <pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
 let removed = myFish.splice(2, 0, &#39;drum&#39;)
 
 // myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;mandarin&quot;, &quot;sturgeon&quot;]
 // removed is [], no elements removed</code></pre>
-<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum-and-guitar">Remove 0 (zero) elements before index 2, and insert “drum” and “guitar”</h3>
+<h3 id="remove-0-zero-elements-before-index-2-and-insert-drum-and-guitar">Remove 0 (zero) elements before index 2, and insert "drum” and "guitar”</h3>
 <pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;mandarin&#39;, &#39;sturgeon&#39;]
 let removed = myFish.splice(2, 0, &#39;drum&#39;, &#39;guitar&#39;)
 
@@ -56,13 +56,13 @@ let removed = myFish.splice(3, 1)
 
 // myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]
 // removed is [&quot;mandarin&quot;]</code></pre>
-<h3 id="remove-1-element-at-index-2-and-insert-trumpet">Remove 1 element at index 2, and insert “trumpet”</h3>
+<h3 id="remove-1-element-at-index-2-and-insert-trumpet">Remove 1 element at index 2, and insert "trumpet”</h3>
 <pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;drum&#39;, &#39;sturgeon&#39;]
 let removed = myFish.splice(2, 1, &#39;trumpet&#39;)
 
 // myFish is [&quot;angel&quot;, &quot;clown&quot;, &quot;trumpet&quot;, &quot;sturgeon&quot;]
 // removed is [&quot;drum&quot;]</code></pre>
-<h3 id="remove-2-elements-from-index-0-and-insert-parrot-anemone-and-blue">Remove 2 elements from index 0, and insert “parrot”, “anemone” and “blue”</h3>
+<h3 id="remove-2-elements-from-index-0-and-insert-parrot-anemone-and-blue">Remove 2 elements from index 0, and insert "parrot”, "anemone” and "blue”</h3>
 <pre><code>let myFish = [&#39;angel&#39;, &#39;clown&#39;, &#39;trumpet&#39;, &#39;sturgeon&#39;]
 let removed = myFish.splice(0, 2, &#39;parrot&#39;, &#39;anemone&#39;, &#39;blue&#39;)
 

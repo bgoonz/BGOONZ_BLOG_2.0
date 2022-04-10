@@ -20,7 +20,7 @@
         }
     }
 
-{: data-line=“2,3,4,5”}
+{: data-line="2,3,4,5”}
 
 Highlighted lines are required.
 

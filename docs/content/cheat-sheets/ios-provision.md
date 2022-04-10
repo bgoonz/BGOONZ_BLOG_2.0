@@ -49,6 +49,6 @@ No need to use `.mobileprovision` files since XCode 5.
 
 ### Building an .ipa (Adhoc or Appstore)
 
--   In the toolbar, select “iOS Device” as the target
+-   In the toolbar, select "iOS Device” as the target
 -   *Product* menu -&gt; *Archive*
 -   In the Organizer (Cmd+Shift+2) -&gt; *Archives* tab -&gt; *Distribute…* button

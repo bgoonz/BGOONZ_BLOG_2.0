@@ -1,7 +1,7 @@
 RangeError: invalid date
 ========================
 
-The JavaScript exception “invalid date” occurs when a string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
+The JavaScript exception "invalid date” occurs when a string leading to an invalid date has been provided to [`Date`](../global_objects/date) or [`Date.parse()`](../global_objects/date/parse).
 
 Message
 -------

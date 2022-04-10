@@ -36,7 +36,7 @@ Examples
 
 ### Setting default content
 
-If the “lyrics” element is empty, display a default value:
+If the "lyrics” element is empty, display a default value:
 
     document.getElementById('lyrics').textContent ||= 'No lyrics.'
 

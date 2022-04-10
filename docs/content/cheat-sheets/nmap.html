@@ -52,14 +52,14 @@
 <h1 id="loads-all-scripts-whose-name-starts-with-http--such-as-http-auth-and-http-open-proxy.">Loads all scripts whose name starts with http-, such as http-auth and http-open-proxy.</h1>
 <p>nmap –script ‘http-*’</p>
 <h1 id="loads-every-script-except-for-those-in-the-intrusive-category.">Loads every script except for those in the intrusive category.</h1>
-<p>nmap –script “not intrusive”</p>
+<p>nmap –script "not intrusive”</p>
 <h1 id="loads-those-scripts-that-are-in-both-the-default-and-safe-categories.">Loads those scripts that are in both the default and safe categories.</h1>
-<p>nmap –script “default and safe”</p>
+<p>nmap –script "default and safe”</p>
 <h1 id="loads-scripts-in-the-default-safe-or-intrusive-categories-except-for-those-whose-names-start-with-http-.">Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.</h1>
-<p>nmap –script “(default or safe or intrusive) and not http-*”</p>
+<p>nmap –script "(default or safe or intrusive) and not http-*”</p>
 <h1 id="scan-for-the-heartbleed">Scan for the heartbleed</h1>
 <h1 id="pt443-scan-only-port-443-with-tcp-t">-pT:443 =&gt; Scan only port 443 with TCP (T:)</h1>
-<p>nmap -T5 –min-parallelism=50 -n –script “ssl-heartbleed” -pT:443 127.0.0.1</p>
+<p>nmap -T5 –min-parallelism=50 -n –script "ssl-heartbleed” -pT:443 127.0.0.1</p>
 <h1 id="show-all-informations-debug-mode">Show all informations (debug mode)</h1>
 <p>nmap -d …</p>
 <h2 id="port-status-information">Port Status Information</h2>

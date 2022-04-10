@@ -23,15 +23,15 @@
 <p>Stores things in order. Has quick lookups by index.</p>
 <h3 id="linked-list">Linked List</h3>
 <p>Also stores things in order. Faster insertions and deletions than<br />
-arrays, but slower lookups (you have to “walk down” the whole list).</p>
+arrays, but slower lookups (you have to "walk down” the whole list).</p>
 <p>!</p>
 <h3 id="queue">Queue</h3>
-<p>Like the line outside a busy restaurant. “First come, first served.”</p>
+<p>Like the line outside a busy restaurant. "First come, first served.”</p>
 <h3 id="stack">Stack</h3>
 <p>Like a stack of dirty plates in the sink. The first one you take off the<br />
 top is the last one you put down.</p>
 <h3 id="tree">Tree</h3>
-<p>Good for storing hierarchies. Each node can have “child” nodes.</p>
+<p>Good for storing hierarchies. Each node can have "child” nodes.</p>
 <h3 id="binary-search-tree">Binary Search Tree</h3>
 <p>Everything in the left subtree is smaller than the current node,<br />
 everything in the right subtree is larger. lookups, but only if the tree<br />
@@ -100,7 +100,7 @@ is balanced!</p>
 <ol type="1">
 <li><span id="cae3"><strong>The array is <em>uninterrupted</em> (contiguous) in memory</strong>. There can’t</span></li>
 </ol>
-<p>be any gaps in the array…like to “skip over” a memory slot Spotify was already using.</p>
+<p>be any gaps in the array…like to "skip over” a memory slot Spotify was already using.</p>
 <p>These things make our formula for finding the nth item <em>work</em> because they make our array <em>predictable</em>. We can <em>predict</em> exactly where in memory the nth element of our array will be.</p>
 <p>But they also constrain what kinds of things we can put in an array. Every item has to be the same size. And if our array is going to store a <em>lot</em> of stuff, we’ll need a <em>bunch</em> of uninterrupted free space in RAM. Which gets hard when most of our RAM is already occupied by other programs (like Spotify).</p>
 <p>That’s the tradeoff. Arrays have fast lookups ( time), but each item in the array needs to be the same size, and you need a big block of uninterrupted free memory to store the array.</p>
@@ -114,8 +114,8 @@ is balanced!</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*DanfoIJ9nNaOKn-G" class="graf-image" />
 </figure>
-<p>“Wigglesworth” is a cute baby name, right?</p>
-<p>But look at all that wasted space after “Bill”. And what if we wanted to store a string that was <em>more</em> than 13 characters? We’d be out of luck.</p>
+<p>"Wigglesworth” is a cute baby name, right?</p>
+<p>But look at all that wasted space after "Bill”. And what if we wanted to store a string that was <em>more</em> than 13 characters? We’d be out of luck.</p>
 <p>There’s a better way. Instead of storing the strings right inside our array, let’s just put the strings wherever we can fit them in memory. Then we’ll have each element in our array hold the <em>address in memory</em> of its corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of these integers a <strong>pointer</strong>, since it points to another spot in memory.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*aLJ4pDr4uAXU1_Qs" class="graf-image" />
@@ -162,30 +162,30 @@ is balanced!</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*lSOAxFuMAS2xK3JI" class="graf-image" />
 </figure>
-<p>“But that’s not cache-friendly,” you may be thinking. Good point! We’ll get to that.</p>
+<p>"But that’s not cache-friendly,” you may be thinking. Good point! We’ll get to that.</p>
 <p>The first node of a linked list is called the <strong>head</strong>, and the last node is usually called the <strong>tail</strong>.</p>
-<p>Confusingly, some people prefer to use “tail” to refer to <em>everything after the head</em> of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.</p>
+<p>Confusingly, some people prefer to use "tail” to refer to <em>everything after the head</em> of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.</p>
 <p>It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to the start of the list!</p>
 <p>We’ll also sometimes keep a pointer to the tail. That comes in handy when we want to add something new to the end of the linked list. In fact, let’s try that out:</p>
-<p>Suppose we had the string “LOG” stored in a linked list:</p>
+<p>Suppose we had the string "LOG” stored in a linked list:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*c3-7UhJ39PZohsuz" class="graf-image" />
 </figure>
-<p>Suppose we wanted to add an “S” to the end, to make it “LOGS”. How would we do that?</p>
+<p>Suppose we wanted to add an "S” to the end, to make it "LOGS”. How would we do that?</p>
 <p>Easy. We just put it in a new node:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*U1OJCEX8zUd5QbuU" class="graf-image" />
 </figure>
 <p>And tweak some pointers:</p>
-<p>​1. Grab the last letter, which is “G”. Our tail pointer lets us do this in time.</p>
+<p>​1. Grab the last letter, which is "G”. Our tail pointer lets us do this in time.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*YzvjIGZQ6MnkGWcw" class="graf-image" />
 </figure>
-<p>​2. Point the last letter’s next to the letter we’re appending (“S”).</p>
+<p>​2. Point the last letter’s next to the letter we’re appending ("S”).</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*-CA8KHc1tdRfVYoe" class="graf-image" />
 </figure>
-<p>​3. Update the tail pointer to point to our <em>new</em> last letter, “S”.</p>
+<p>​3. Update the tail pointer to point to our <em>new</em> last letter, "S”.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Gbf918HOvlJhMHEf" class="graf-image" />
 </figure>
@@ -198,14 +198,14 @@ is balanced!</p>
 <p>So with a dynamic array, our append would have a <em>worst-case</em> time cost of .</p>
 <p><strong>Linked lists have worst-case -time appends, which is better than the worst-case time of dynamic arrays.</strong></p>
 <p>That <em>worst-case</em> part is important. The <em>average case</em> runtime for appends to linked lists and dynamic arrays is the same: .</p>
-<p>Now, what if we wanted to *pre*pend something to our string? Let’s say we wanted to put a “B” at the beginning.</p>
+<p>Now, what if we wanted to *pre*pend something to our string? Let’s say we wanted to put a "B” at the beginning.</p>
 <p>For our linked list, it’s just as easy as appending. Create the node:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*MSenMuHQuHb1dV1X" class="graf-image" />
 </figure>
 <p>And tweak some pointers:</p>
 <ol type="1">
-<li><span id="cf06">Point “B”’s next to “L”. 2. Point the head to “B”.</span></li>
+<li><span id="cf06">Point "B”’s next to "L”. 2. Point the head to "B”.</span></li>
 </ol>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*GoeByRt15C4nQvQr" class="graf-image" />
@@ -215,11 +215,11 @@ is balanced!</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*PhElGwum7RgTPqAy" class="graf-image" />
 </figure>
-<p>And we wanted to add in that “B”:</p>
+<p>And we wanted to add in that "B”:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*n4qjPFNz4BVHBt5w" class="graf-image" />
 </figure>
-<p>Eep. We have to <em>make room</em> for the “B”!</p>
+<p>Eep. We have to <em>make room</em> for the "B”!</p>
 <p>We have to move <em>each character</em> one space down:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*n90vZS_Exw8Wjs2b" class="graf-image" />
@@ -233,18 +233,18 @@ is balanced!</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*DampgIgyO6Silk8U" class="graf-image" />
 </figure>
-<p><em>Now</em> we can drop the “B” in there:</p>
+<p><em>Now</em> we can drop the "B” in there:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Xxkr4sYP9-drZeEe" class="graf-image" />
 </figure>
 <p>What’s our time cost here?</p>
 <p>It’s all in the step where we made room for the first letter. We had to move <em>all n</em> characters in our string. One at a time. That’s time.</p>
 <p><strong>So linked lists have faster *pre*pends ( time) than dynamic arrays ( time).</strong></p>
-<p>No “worst case” caveat this time — prepends for dynamic arrays are <em>always</em> time. And prepends for linked lists are <em>always</em> time.</p>
+<p>No "worst case” caveat this time — prepends for dynamic arrays are <em>always</em> time. And prepends for linked lists are <em>always</em> time.</p>
 <p>These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They don’t have to sit right next to each other the way items in an array do.</p>
 <p>So if linked lists are so great, why do we usually store strings in an array? <strong>Because</strong> <a href="https://dev.to/bgoonz/common-data-structures-their-background-11eg#constant-time-array-lookups" class="markup--anchor markup--p-anchor"><strong>arrays have -time lookups</strong></a><strong>.</strong> And those constant-time lookups <em>come from</em> the fact that all the array elements are lined up next to each other in memory.</p>
 <p>Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the ith item.</p>
-<p>def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError(“i can’t be negative: %d” % i) current_node = head current_position = 0 while current_node: if current_position == i: # Found it! return current_node # Move on to the next node current_node = current_node.next current_position += 1 raise ValueError(‘List has fewer than i + 1 (%d) nodes’ % (i + 1))</p>
+<p>def get_ith_item_in_linked_list(head, i): if i &lt; 0: raise ValueError("i can’t be negative: %d” % i) current_node = head current_position = 0 while current_node: if current_position == i: # Found it! return current_node # Move on to the next node current_node = current_node.next current_position += 1 raise ValueError(‘List has fewer than i + 1 (%d) nodes’ % (i + 1))</p>
 <p>That’s i + 1 steps down our linked list to get to the ith node (we made our function zero-based to match indices in arrays). <strong>So linked lists have -time lookups.</strong> Much slower than the -time lookups for arrays and dynamic arrays.</p>
 <p>Not only that — <strong>walking down a linked list is <em>not</em> cache-friendly.</strong> Because the next node could be <em>anywhere</em> in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.</p>
 <p>So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, <em>but</em> they have slower lookups.</p>
@@ -286,36 +286,36 @@ is balanced!</p>
 <p>The result is 429. But what if we only have <em>30</em> slots in our array? We’ll use a common trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number that’s less than 30 (and at least 0):</p>
 <p>429 \: \% \: 30 = 9</p>
 <p>Bam. That’ll get us from a word (or any string) to an array index.</p>
-<p>This data structure is called a <strong>hash table</strong> or <strong>hash map</strong>. In our hash table, the <em>counts</em> are the <strong>values</strong> and the <em>words</em> (“lies,” etc.) are the <strong>keys</strong> (analogous to the <em>indices</em> in an array). The process we used to translate a key into an array index is called a <strong>hashing function</strong>.</p>
+<p>This data structure is called a <strong>hash table</strong> or <strong>hash map</strong>. In our hash table, the <em>counts</em> are the <strong>values</strong> and the <em>words</em> ("lies,” etc.) are the <strong>keys</strong> (analogous to the <em>indices</em> in an array). The process we used to translate a key into an array index is called a <strong>hashing function</strong>.</p>
 <p>![A blank array except for a 20, labeled as the value, stored at index</p>
 <ol type="1">
-<li><span id="fadd">To the left the array is the word “lies,” labeled as the key, with an</span></li>
+<li><span id="fadd">To the left the array is the word "lies,” labeled as the key, with an</span></li>
 </ol>
 <p>arrow pointing to the right at diamond with a question mark in the middle, labeled as the hashing function. The diamond points to the 9th index of the array.](<a href="https://www.interviewcake.com/images/svgs/cs_for_hackers__hash_tables_lies_key_labeled.svg?bust=209" class="markup--anchor markup--p-anchor">https://www.interviewcake.com/images/svgs/cs_for_hackers__hash_tables_lies_key_labeled.svg?bust=209</a>)</p>
 <p>The hashing functions used in modern systems get pretty complicated — the one we used here is a simplified example.</p>
 <p>Note that our quick lookups are only in one direction — we can quickly get the value for a given key, but the only way to get the key for a given value is to walk through all the values and keys.</p>
 <p>Same thing with arrays — we can quickly look up the value at a given index, but the only way to figure out the index for a given value is to walk through the whole array.</p>
-<p>One problem — what if two keys hash to the same index in our array? Look at “lies” and “foes”:</p>
+<p>One problem — what if two keys hash to the same index in our array? Look at "lies” and "foes”:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*FEGUBbShygDT_Xmp" class="graf-image" />
 </figure>
 <p>They both sum up to 429! So of course they’ll have the same answer when we mod by 30:</p>
 <p>429 \: \% \: 30 = 9</p>
-<p>So our hashing function gives us the same answer for “lies” and “foes.” This is called a <strong>hash collision</strong>. There are a few different strategies for dealing with them.</p>
+<p>So our hashing function gives us the same answer for "lies” and "foes.” This is called a <strong>hash collision</strong>. There are a few different strategies for dealing with them.</p>
 <p>Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a <em>pointer</em> to a <em>linked list</em> holding the counts for all the words that hash to that index:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*FJ_oFYwm3xi5gvS6" class="graf-image" />
 </figure>
-<p>One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the <em>word</em> as well as the count in each linked list node:</p>
+<p>One problem — how do we know which count is for "lies” and which is for "foes”? To fix this, we’ll store the <em>word</em> as well as the count in each linked list node:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*zUqqK4NJil6nCjlK" class="graf-image" />
 </figure>
-<p>“But wait!” you may be thinking, “Now lookups in our hash table take time in the worst case, since we have to walk down a linked list.” That’s true! You could even say that in the worst case <em>every</em> key creates a hash collision, so our whole hash table <em>degrades to a linked list</em>.</p>
+<p>"But wait!” you may be thinking, "Now lookups in our hash table take time in the worst case, since we have to walk down a linked list.” That’s true! You could even say that in the worst case <em>every</em> key creates a hash collision, so our whole hash table <em>degrades to a linked list</em>.</p>
 <p>In industry though, we usually wave our hands and say <strong>collisions are rare enough that on <em>average</em> lookups in a hash table are time</strong>. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.</p>
 <p>But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except <em>some</em> lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the <em>key</em> for a given <em>value</em> still takes time</p>
 <h3 id="breadth-first-search-bfs-and-breadth-first-traversal">Breadth-First Search (BFS) and Breadth-First Traversal</h3>
 <p><strong>Breadth-first search</strong> (BFS) is a method for exploring a tree or graph. In a BFS, you first explore all the nodes one step away, then all the nodes two steps away, etc.</p>
-<p>Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore “ripple out” from the starting point.</p>
+<p>Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore "ripple out” from the starting point.</p>
 <p>Here’s a how a BFS would traverse this tree, starting with the root:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*m463vT-gl3X8F6AS" class="graf-image" />
@@ -354,16 +354,16 @@ The children are usually called <strong><em>left</em></strong> and <strong><em>r
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*jrVPHH5A60cni3qY" class="graf-image" />
 </figure>
-<p>That particular example is special because every level of the tree is completely full. There are no “gaps.” We call this kind of tree “<strong>perfect</strong>.”</p>
+<p>That particular example is special because every level of the tree is completely full. There are no "gaps.” We call this kind of tree "<strong>perfect</strong>.”</p>
 <p>Binary trees have a few interesting properties when they’re perfect:</p>
-<p><strong>Property 1: the number of total nodes on each “level” doubles as we move down the tree.</strong></p>
+<p><strong>Property 1: the number of total nodes on each "level” doubles as we move down the tree.</strong></p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*r1nTqbN_TJyaaT4L" class="graf-image" />
 </figure>
 <p><strong>Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels (plus 1).</strong> In other words, about <em>half</em> of our nodes are on the last level.</p>
 <p>&lt;==(**Let’s call the number of nodes n, **)==&gt;</p>
 <p>&lt;==(<strong>_</strong>and the height of the tree h. <strong>_</strong>)==&gt;</p>
-<p><strong>h can also be thought of as the “number of levels.”</strong></p>
+<p><strong>h can also be thought of as the "number of levels.”</strong></p>
 <p>If we had h, how could we calculate n?</p>
 <p>Let’s just add up the number of nodes on each level!</p>
 <p>If we zero-index the levels, the number of nodes on the xth level is exactly 2^x.</p>
@@ -380,7 +380,7 @@ The children are usually called <strong><em>left</em></strong> and <strong><em>r
 <p>Notice that we <strong>started counting our levels at 0.</strong></p>
 <ul>
 <li><span id="7500">So if we have h levels in total,</span></li>
-<li><span id="6752">the last level is actually the “h-1”-th level.</span></li>
+<li><span id="6752">the last level is actually the "h-1”-th level.</span></li>
 <li><span id="da3a">That means the number of nodes on the last level is 2^{h-1}.</span></li>
 </ul>
 <p>But we can simplify.</p>
@@ -400,7 +400,7 @@ n = 2^{h} — 1</strong></p>
 <p>First, some quick review.</p>
 <p>&lt;==(log_{10} (100) )==&gt;</p>
 <p>simply means,</p>
-<p><strong>“What power must you raise 10 to in order to get 100?”</strong>.</p>
+<p><strong>"What power must you raise 10 to in order to get 100?”</strong>.</p>
 <p>Which is 2,</p>
 <p>because .</p>
 <p>&lt;==(10² = 100 )==&gt;</p>
@@ -411,15 +411,15 @@ n = 2^{h} — 1</strong></p>
 <p>The number system we usually use (the one you probably learned in elementary school) is called <strong>base 10</strong>, because each digit has <em>ten</em> possible values (1, 2, 3, 4, 5, 6, 7, 8, 9, and 0).</p>
 <p>But computers don’t have digits with ten possible values. They have <em>bits</em> with <em>two</em> possible values. So they use <strong>base 2</strong> numbers.</p>
 <p>Base 10 is also called <strong>decimal</strong>. Base 2 is also called <strong>binary</strong>.</p>
-<p>To understand binary, let’s take a closer look at how decimal numbers work. Take the number “101” in decimal:</p>
+<p>To understand binary, let’s take a closer look at how decimal numbers work. Take the number "101” in decimal:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*SeL92lcm_RTuG-32" class="graf-image" />
 </figure>
-<p>Notice we have two “1”s here, but they don’t <em>mean</em> the same thing. The leftmost “1” <em>means</em> 100, and the rightmost “1” <em>means</em> 1. That’s because the leftmost “1” is in the hundreds place, while the rightmost “1” is in the ones place. And the “0” between them is in the tens place.</p>
+<p>Notice we have two "1”s here, but they don’t <em>mean</em> the same thing. The leftmost "1” <em>means</em> 100, and the rightmost "1” <em>means</em> 1. That’s because the leftmost "1” is in the hundreds place, while the rightmost "1” is in the ones place. And the "0” between them is in the tens place.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*5kyLwItFLJiwsDRY" class="graf-image" />
 </figure>
-<p><strong>So this “101” in base 10 is telling us we have “1 hundred, 0 tens, and 1 one.”</strong></p>
+<p><strong>So this "101” in base 10 is telling us we have "1 hundred, 0 tens, and 1 one.”</strong></p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*BHTYqymE77CnzKpP" class="graf-image" />
 </figure>
@@ -431,7 +431,7 @@ n = 2^{h} — 1</strong></p>
 <ul>
 <li><span id="1ddc">2⁰=1 * 2¹=2 * 2²=4 * 2³=8 * etc.</span></li>
 </ul>
-<p>So let’s take that same “101” but this time let’s read it as a <em>binary</em> number:</p>
+<p>So let’s take that same "101” but this time let’s read it as a <em>binary</em> number:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*pKEnJ9JCGcMapiG4" class="graf-image" />
 </figure>

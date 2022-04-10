@@ -23,4 +23,4 @@ A simpler, ES2015 way of accomplishing this is with the new [spread operator](ht
     Math.max(...numbers); // 4
     Math.min(...numbers); // 1
 
-This operator causes the values in the array to be expanded, or “spread”, into the function’s arguments.
+This operator causes the values in the array to be expanded, or "spread”, into the function’s arguments.

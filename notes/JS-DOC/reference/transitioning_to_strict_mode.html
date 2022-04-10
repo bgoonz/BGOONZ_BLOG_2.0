@@ -87,9 +87,9 @@ s.opacity = 1;
 <h4 id="change-to-eval">Change to <code>eval</code></h4>
 <p>In strict mode code, <code>eval</code> doesn’t create a new variable in the scope from which it was called. Also, of course, in strict mode, the string is evaluated with strict mode rules. Thorough testing will need to be performed to make sure nothing breaks. Not using eval if you don’t really need it may be another pragmatic solution.</p>
 <h2 id="strictness-neutral-code">Strictness-neutral code</h2>
-<p>A potential “downside” of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:</p>
+<p>A potential "downside” of moving strict code to strict mode is that the semantics may be different in legacy browsers which do not implement strict mode. In some rare occasions (like bad concatenation or minification), your code also may not run in the mode you wrote and tested it in. Here are the rules to make your code strictness-neutral:</p>
 <ol type="1">
-<li>Write your code as strict and make sure no strict-only errors (from the above “New runtime errors” section) are thrown.</li>
+<li>Write your code as strict and make sure no strict-only errors (from the above "New runtime errors” section) are thrown.</li>
 <li>Stay away from semantic differences
 <ol type="1">
 <li><code>eval</code>: use it only if you know what you’re doing</li>

@@ -28,7 +28,7 @@ Examples
 
 ### Empty regular expressions and escaping
 
-Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as “\\n”) are escaped now.
+Starting with ECMAScript 5, the `source` property no longer returns an empty string for empty regular expressions. Instead, the string `(?:)` is returned. In addition, line terminators (such as "\\n”) are escaped now.
 
     new RegExp().source; // "(?:)"
 

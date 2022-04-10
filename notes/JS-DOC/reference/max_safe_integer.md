@@ -46,7 +46,7 @@ Examples
 
 ### Numbers higher than safe integer
 
-This returns 2 because in floating points, the value is actually the decimal trailing “1” except for in subnormal precision cases such as zero.
+This returns 2 because in floating points, the value is actually the decimal trailing "1” except for in subnormal precision cases such as zero.
 
     Number.MAX_SAFE_INTEGER * Number.EPSILON; // 2
 

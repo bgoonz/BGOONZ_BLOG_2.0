@@ -241,7 +241,7 @@ Checks if it’s the same instance object.
     "hello" !~ 'xx*'
     "hello" =~ '\v<\d+>'
 
-`\v` enables “extended” regex mode which allows word boundary (`<>`), `+`, and more.
+`\v` enables "extended” regex mode which allows word boundary (`<>`), `+`, and more.
 
 ### Single line
 

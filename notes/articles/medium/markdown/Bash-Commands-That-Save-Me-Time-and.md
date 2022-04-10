@@ -112,7 +112,7 @@ To do this, we use the `cp` command.
 
 -   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
-*The* `-r` *option for “recursive” means that it will copy all of the files including the files inside of subfolders.*
+*The* `-r` *option for "recursive” means that it will copy all of the files including the files inside of subfolders.*
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
 
@@ -233,7 +233,7 @@ The following output from my bash shell corresponds to the directory:
 
 ### !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . ( -name “*SECURITY.txt" -o -name "*RELEASE.txt” -o -name “*CHANGELOG.txt" -o -name "*LICENSE.txt” -o -name “*CONTRIBUTING.txt" -name "*HISTORY.md” -o -name “*LICENSE" -o -name "*SECURITY.md” -o -name “*RELEASE.md" -o -name "*CHANGELOG.md” -o -name “*LICENSE.md" -o -name "*CODE\_OF\_CONDUCT.md” -o -name "\*CONTRIBUTING.md" ) -exec rm -rf – {} +
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . ( -name "*SECURITY.txt" -o -name "*RELEASE.txt” -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt” -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md” -o -name "*LICENSE" -o -name "*SECURITY.md” -o -name "*RELEASE.md" -o -name "*CHANGELOG.md” -o -name "*LICENSE.md" -o -name "*CODE\_OF\_CONDUCT.md” -o -name "\*CONTRIBUTING.md" ) -exec rm -rf – {} +
 
 ------------------------------------------------------------------------
 

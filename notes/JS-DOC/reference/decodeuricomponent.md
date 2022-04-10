@@ -19,7 +19,7 @@ A new string representing the decoded version of the given encoded Uniform Resou
 
 ### Exceptions
 
-Throws an [`URIError`](urierror) (“malformed URI sequence”) exception when used wrongly.
+Throws an [`URIError`](urierror) ("malformed URI sequence”) exception when used wrongly.
 
 Description
 -----------

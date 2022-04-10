@@ -125,7 +125,7 @@ layout: post
 title: Hello
 ---
 Hello! this is my post.</code></pre>
-<p>{: data-line=“1,2,3,4”}</p>
+<p>{: data-line="1,2,3,4”}</p>
 <p>Attach metadata to a page by adding them on top of the page, delimited by <code>---</code>. See: <a href="http://jekyllrb.com/docs/frontmatter/">Front-matter</a></p>
 <h3 id="other-frontmatter-stuff">Other frontmatter stuff</h3>
 <div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb7-1" title="1"><span class="fu">permalink:</span><span class="at"> </span><span class="st">&#39;/hello&#39;</span></a>
@@ -145,10 +145,10 @@ Hello! this is my post.</code></pre>
 <h2 id="markup">Markup</h2>
 <h3 id="page-variables">Page variables</h3>
 <div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">&lt;title&gt;</span>{{ page.title }}<span class="kw">&lt;/title&gt;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h3 id="filters">Filters</h3>
 <div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;p&gt;</span>{{ page.description | truncate_words: 20 }}<span class="kw">&lt;/p&gt;</span></a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h3 id="loops">Loops</h3>
 <div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb11-1" title="1">{% for post in site.posts %}</a>
 <a class="sourceLine" id="cb11-2" title="2"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;{{ post.url }}&quot;</span><span class="kw">&gt;</span></a>
@@ -156,7 +156,7 @@ Hello! this is my post.</code></pre>
 <a class="sourceLine" id="cb11-4" title="4">    <span class="kw">&lt;p&gt;</span>{{ post.date | date_to_string }}<span class="kw">&lt;/p&gt;</span></a>
 <a class="sourceLine" id="cb11-5" title="5"><span class="kw">&lt;/a&gt;</span></a>
 <a class="sourceLine" id="cb11-6" title="6">{% endfor %}</a></code></pre></div>
-<p>{: data-line=“1,6”}</p>
+<p>{: data-line="1,6”}</p>
 <h3 id="dates">Dates</h3>
 <div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb12-1" title="1">{{ page.date | date: &quot;%b %d, %Y&quot; }}</a></code></pre></div>
 <h3 id="conditionals">Conditionals</h3>
@@ -166,16 +166,16 @@ Hello! this is my post.</code></pre>
 <h3 id="case">Case</h3>
 <div class="sourceCode" id="cb15"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb15-1" title="1">{% case shipping.title %} {% when &#39;international&#39; %} Arriving in 2-3 weeks {% when &#39;Domestic&#39; %} Arriving in 2-3 days {% else %} Thank you for your order! {%</a>
 <a class="sourceLine" id="cb15-2" title="2">endcase %}</a></code></pre></div>
-<p>{: data-line=“1,2,4,6,8”}</p>
+<p>{: data-line="1,2,4,6,8”}</p>
 <h3 id="includes-partials">Includes (partials)</h3>
 <div class="sourceCode" id="cb16"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb16-1" title="1">{% include header.html %}</a></code></pre></div>
-<p>{: data-line=“1”}</p>
+<p>{: data-line="1”}</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb17-1" title="1"><span class="co">&lt;!-- Including local vars --&gt;</span></a>
 <a class="sourceLine" id="cb17-2" title="2">{% include header.html page=page %}</a></code></pre></div>
-<p>{: data-line=“2”}</p>
+<p>{: data-line="2”}</p>
 <h3 id="comments">Comments</h3>
 <div class="sourceCode" id="cb18"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb18-1" title="1">{% comment %} This is a comment! {% endcomment %}</a></code></pre></div>
-<p>{: data-line=“1,3”}</p>
+<p>{: data-line="1,3”}</p>
 <h2 id="variables">Variables</h2>
 <h3 id="top-level-variables">Top-level variables</h3>
 <div class="line-block"><code>{{ site }}</code> | Data from <code>config.yml</code> |<br />
@@ -258,11 +258,11 @@ Hello! this is my post.</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>where:</code> <em>“year”, “2014”</em></td>
+<td><code>where:</code> <em>"year”, "2014”</em></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><code>where_exp:</code> <em>“item”, “item.year &gt;= 2014”</em></td>
+<td><code>where_exp:</code> <em>"item”, "item.year &gt;= 2014”</em></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -270,11 +270,11 @@ Hello! this is my post.</code></pre>
 <td>—</td>
 </tr>
 <tr class="even">
-<td><code>group_by:</code> <em>“genre”</em></td>
+<td><code>group_by:</code> <em>"genre”</em></td>
 <td>→ <code>{name, items}</code></td>
 </tr>
 <tr class="odd">
-<td><code>group_by_exp:</code> <em>“item”, “item.genre”</em></td>
+<td><code>group_by_exp:</code> <em>"item”, "item.genre”</em></td>
 <td>→ <code>{name, items}</code></td>
 </tr>
 <tr class="even">

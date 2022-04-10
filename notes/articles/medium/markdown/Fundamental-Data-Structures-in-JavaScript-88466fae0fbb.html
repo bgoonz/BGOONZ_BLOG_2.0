@@ -35,12 +35,12 @@
 <img src="https://cdn-images-1.medium.com/max/800/0*OYmTpAK6tyDQzoIE.gif" class="graf-image" />
 </figure>
 <h3 id="what-is-a-linked-list">What is a Linked List?</h3>
-<p>A Linked List data structure represents a linear sequence of “vertices” (or “nodes”), and tracks three important properties.</p>
+<p>A Linked List data structure represents a linear sequence of "vertices” (or "nodes”), and tracks three important properties.</p>
 <p><strong>Linked List Properties:</strong></p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*z-i1wE6QPOtqxGiW_B6WuA.png" class="graf-image" />
 </figure>
-<p>The data being tracked by a particular Linked List does not live inside the Linked List instance itself. Instead, each vertex is actually an instance of an even simpler, smaller data structure, often referred to as a “Node”.</p>
+<p>The data being tracked by a particular Linked List does not live inside the Linked List instance itself. Instead, each vertex is actually an instance of an even simpler, smaller data structure, often referred to as a "Node”.</p>
 <p>Depending on the type of Linked List (there are many), Node instances track some very important properties as well.</p>
 <p><strong>Linked List Node Properties:</strong></p>
 <figure>
@@ -49,7 +49,7 @@
 <p>Property Description <code>value</code>: The actual value this node represents.<code>next</code>The next node in the list (relative to this node).<code>previous</code>The previous node in the list (relative to this node).</p>
 <p><strong>NOTE:</strong> The <code>previous</code> property is for Doubly Linked Lists only!</p>
 <p>Linked Lists contain <em>ordered</em> data, just like arrays. The first node in the list is, indeed, first. From the perspective of the very first node in the list, the <em>next</em> node is the second node. From the perspective of the second node in the list, the <em>previous</em> node is the first node, and the <em>next</em> node is the third node. And so it goes.</p>
-<h4 id="sothis-sounds-a-lot-like-an-array">“So…this sounds a lot like an Array…”</h4>
+<h4 id="sothis-sounds-a-lot-like-an-array">"So…this sounds a lot like an Array…”</h4>
 <p>Admittedly, this does <em>sound</em> a lot like an Array so far, and that’s because Arrays and Linked Lists are both implementations of the List ADT. However, there is an incredibly important distinction to be made between Arrays and Linked Lists, and that is how they <em>physically store</em> their data. (As opposed to how they <em>represent</em> the order of their data.)</p>
 <p>Recall that Arrays contain <em>contiguous</em> data. Each element of an array is actually stored <em>next to</em> it’s neighboring element <em>in the actual hardware of your machine</em>, in a single continuous block in memory.</p>
 <p><em>An Array’s contiguous data being stored in a continuous block of addresses in memory.</em></p>
@@ -86,11 +86,11 @@
 <h4 id="scenarios">Scenarios</h4>
 <ol type="1">
 <li><span id="16fe">We have a Linked List, and we’d like to find the 8th item in the list.</span></li>
-<li><span id="a9f7">We have a Linked List of sorted alphabet letters, and we’d like to see if the letter “Q” is inside that list.</span></li>
+<li><span id="a9f7">We have a Linked List of sorted alphabet letters, and we’d like to see if the letter "Q” is inside that list.</span></li>
 </ol>
 <h4 id="discussion">Discussion</h4>
 <p>Unlike Arrays, Linked Lists Nodes are not stored contiguously in memory, and thereby do not have an indexed set of memory addresses at which we can quickly lookup individual nodes in constant time. Instead, we must begin at the head of the list (or possibly at the tail, if we have a Doubly Linked List), and iterate through the list until we arrive at the node of interest.</p>
-<p>In Scenario 1, we’ll know we’re there because we’ve iterated 8 times. In Scenario 2, we’ll know we’re there because, while iterating, we’ve checked each node’s value and found one that matches our target value, “Q”.</p>
+<p>In Scenario 1, we’ll know we’re there because we’ve iterated 8 times. In Scenario 2, we’ll know we’re there because, while iterating, we’ve checked each node’s value and found one that matches our target value, "Q”.</p>
 <p>In the worst case scenario, we may have to traverse the entire Linked List until we arrive at the final node. This makes both Access &amp; Search <strong>Linear Time</strong> operations.</p>
 <h3 id="time-complexity-insertion-and-deletion">Time Complexity — Insertion and Deletion</h3>
 <h4 id="scenarios-1">Scenarios</h4>
@@ -108,7 +108,7 @@
 <li><span id="9580">Adjust the <code>previous</code> pointer of the node that lives at position <code>i</code> to point to the new node.</span></li>
 </ol>
 <p>And we’re done, in Constant Time. No iterating across the entire list necessary.</p>
-<p>“But hold on one second,” you may be thinking. “In order to insert a new node in the middle of the list, don’t we have to lookup its position? Doesn’t that take linear time?!”</p>
+<p>"But hold on one second,” you may be thinking. "In order to insert a new node in the middle of the list, don’t we have to lookup its position? Doesn’t that take linear time?!”</p>
 <p>Yes, it is tempting to call insertion or deletion in the middle of a Linked List a linear time operation since there is lookup involved. However, it’s usually the case that you’ll already have a reference to the node where your desired insertion or deletion will occur.</p>
 <p>For this reason, we separate the Access time complexity from the Insertion/Deletion time complexity, and formally state that Insertion and Deletion in a Linked List are <strong>Constant Time</strong> across the board.</p>
 <p><strong><em>Note:</em></strong> <em>Without a reference to the node at which an insertion or deletion will occur, due to linear time lookup, an insertion or deletion in the middle of a Linked List will still take Linear Time, sum total.</em></p>
@@ -125,7 +125,7 @@
 <p><strong>*Note**</strong>: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively, there will be a recursive function call added to the call stack for every node in the Linked List. Even if you’re provided the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.*</p>
 <hr />
 <h3 id="stacks-and-queues">Stacks and Queues</h3>
-<p>Stacks and Queues aren’t really “data structures” by the strict definition of the term. The more appropriate terminology would be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules governing their user-facing behaviors rather than their core implementations.</p>
+<p>Stacks and Queues aren’t really "data structures” by the strict definition of the term. The more appropriate terminology would be to call them abstract data types (ADTs), meaning that their definitions are more conceptual and related to the rules governing their user-facing behaviors rather than their core implementations.</p>
 <p>For the sake of simplicity, we’ll refer to them as data structures and ADTs interchangeably throughout the course, but the distinction is an important one to be familiar with as you level up as an engineer.</p>
 <p>Now that that’s out of the way, Stacks and Queues represent a linear collection of nodes or values. In this way, they are quite similar to the Linked List data structure we discussed in the previous section. In fact, you can even use a modified version of a Linked List to implement each of them. (Hint, hint.)</p>
 <p>These two ADTs are similar to each other as well, but each obey their own special rule regarding the order with which Nodes can be added and removed from the structure.</p>
@@ -142,7 +142,7 @@
 <p>The name Queue comes from this characteristic, as it is helpful to visualize this data structure as a horizontal line of items with a beginning and an end. Personally, I like to think of a Queue as the line one waits on for an amusement park, at a grocery store checkout, or to see the teller at a bank.</p>
 <p>If you can imagine a queue of humans waiting…again, for literally anything…you’ll realize that <em>most</em> people (the civil ones) naturally obey the FIFO rule.</p>
 <p>People add themselves to the <em>back</em> of a queue, wait their turn in line, and make their way toward the <em>front</em>. People exit from the <em>front</em> of a queue, but only when they have made their way to being first in line.</p>
-<p>We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be “cutting” the line, and other humans don’t seem to appreciate that.</p>
+<p>We never add ourselves to the front of a queue (unless there is no one else in line), otherwise we would be "cutting” the line, and other humans don’t seem to appreciate that.</p>
 <p>Note: We can use JavaScript Arrays to implement a basic queue. <code>Array#push</code> adds to the back (enqueue) and <code>Array#shift</code> will remove from the front (dequeue). In the exercise that follows, we’ll build our own Queue class from scratch (without using any arrays). In an interview setting, your evaluator may be okay with you using an array as a queue.</p>
 <h3 id="stack-and-queue-properties">Stack and Queue Properties</h3>
 <p>Stacks and Queues are so similar in composition that we can discuss their properties together. They track the following three properties:</p>

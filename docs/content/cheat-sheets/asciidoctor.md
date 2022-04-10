@@ -69,16 +69,16 @@ cross reference links
 image
 =====
 
-image:image.png\[Alt text, title=“Inline image”\]
+image:image.png\[Alt text, title="Inline image”\]
 
-.Block image title \[caption=“Figure 1:”,link=http://example.com/image.png\] image::image.jpg\[Alt text, 300, 200\]
+.Block image title \[caption="Figure 1:”,link=http://example.com/image.png\] image::image.jpg\[Alt text, 300, 200\]
 
 code
 ====
 
 …. literal block ….
 
-:variable: 123 .Source code title \[source,asciidoc,subs=“+quotes,attributes+”,options=“nowrap”\]
+:variable: 123 .Source code title \[source,asciidoc,subs="+quotes,attributes+”,options="nowrap”\]
 
 ------------------------------------------------------------------------
 
@@ -117,4 +117,4 @@ Non-breaking space {nbsp} Break at the end of + line
 tables
 ======
 
-.Table title \[caption=“Table 2:”\] |=== | Name | Description // | Asciidoctor | Awesome way to write documentation // 2+| This cell spans 2 columns // .2+| This cell spans 2 rows // | Line at the side of the spanned rows | Another line // |===
+.Table title \[caption="Table 2:”\] |=== | Name | Description // | Asciidoctor | Awesome way to write documentation // 2+| This cell spans 2 columns // .2+| This cell spans 2 rows // | Line at the side of the spanned rows | Another line // |===

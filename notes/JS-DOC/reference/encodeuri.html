@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="encodeuri">encodeURI()</h1>
-<p>The <code>encodeURI()</code> function encodes a <a href="https://developer.mozilla.org/en-US/docs/Glossary/URI">URI</a> by replacing each instance of certain characters by one, two, three, or four escape sequences representing the <a href="https://developer.mozilla.org/en-US/docs/Glossary/UTF-8">UTF-8</a> encoding of the character (will only be four escape sequences for characters composed of two “surrogate” characters).</p>
+<p>The <code>encodeURI()</code> function encodes a <a href="https://developer.mozilla.org/en-US/docs/Glossary/URI">URI</a> by replacing each instance of certain characters by one, two, three, or four escape sequences representing the <a href="https://developer.mozilla.org/en-US/docs/Glossary/UTF-8">UTF-8</a> encoding of the character (will only be four escape sequences for characters composed of two "surrogate” characters).</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code>encodeURI(URI)</code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -23,9 +23,9 @@ A complete URI.</p>
 <h3 id="return-value">Return value</h3>
 <p>A new string representing the provided string encoded as a URI.</p>
 <h2 id="description">Description</h2>
-<p>The <code>encodeURI()</code> function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI “scheme” can possibly contain. Note how certain characters are used to signify special meaning:</p>
+<p>The <code>encodeURI()</code> function does not encode characters that have special meaning (reserved characters) for a URI. The following example shows all the parts that a URI "scheme” can possibly contain. Note how certain characters are used to signify special meaning:</p>
 <pre><code>http://username:password@www.example.com:80/path/to/file.php?foo=316&amp;bar=this+has+spaces#anchor</code></pre>
-<p>Hence <code>encodeURI()</code> <strong>does not</strong> encode characters that are necessary to formulate a complete URI. Also, <code>encodeURI()</code> <strong>does not</strong> encode a few additional characters, known as “unreserved marks”, which do not have a reserved purpose but are allowed in a URI “as is”. (See <a href="https://www.ietf.org/rfc/rfc2396.txt">RFC2396)</a></p>
+<p>Hence <code>encodeURI()</code> <strong>does not</strong> encode characters that are necessary to formulate a complete URI. Also, <code>encodeURI()</code> <strong>does not</strong> encode a few additional characters, known as "unreserved marks”, which do not have a reserved purpose but are allowed in a URI "as is”. (See <a href="https://www.ietf.org/rfc/rfc2396.txt">RFC2396)</a></p>
 <p><code>encodeURI()</code> escapes all characters <strong>except</strong>:</p>
 <pre><code>Not Escaped:
 
@@ -44,7 +44,7 @@ console.log(encodeURI(set3)); // ABC%20abc%20123 (the space gets encoded as %20)
 console.log(encodeURIComponent(set1)); // %3B%2C%2F%3F%3A%40%26%3D%2B%24%23
 console.log(encodeURIComponent(set2)); // -_.!~*&#39;()
 console.log(encodeURIComponent(set3)); // ABC%20abc%20123 (the space gets encoded as %20)</code></pre>
-<p>Note that <code>encodeURI()</code> by itself <em>cannot</em> form proper HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"><code>GET</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"><code>POST</code></a> requests, such as for <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"><code>XMLHttpRequest</code></a>, because “<code>&amp;</code>”, “<code>+</code>”, and “<code>=</code>” are not encoded, which are treated as special characters in <code>GET</code> and <code>POST</code> requests. <code>encodeURIComponent()</code>, however, does encode these characters.</p>
+<p>Note that <code>encodeURI()</code> by itself <em>cannot</em> form proper HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"><code>GET</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"><code>POST</code></a> requests, such as for <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"><code>XMLHttpRequest</code></a>, because "<code>&amp;</code>”, "<code>+</code>”, and "<code>=</code>” are not encoded, which are treated as special characters in <code>GET</code> and <code>POST</code> requests. <code>encodeURIComponent()</code>, however, does encode these characters.</p>
 <h3 id="encoding-a-lone-high-surrogate-throws">Encoding a lone high surrogate throws</h3>
 <p>An <a href="urierror"><code>URIError</code></a> will be thrown if one attempts to encode a surrogate which is not part of a high-low pair, e.g.,</p>
 <pre><code>// high-low pair ok

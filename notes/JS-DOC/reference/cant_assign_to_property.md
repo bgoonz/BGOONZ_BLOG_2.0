@@ -1,7 +1,7 @@
-TypeError: can’t assign to property “x” on “y”: not an object
+TypeError: can’t assign to property "x” on "y”: not an object
 =============================================================
 
-The JavaScript strict mode exception “can’t assign to property” occurs when attempting to create a property on [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) value such as a [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol), a [string](https://developer.mozilla.org/en-US/docs/Glossary/String), a [number](https://developer.mozilla.org/en-US/docs/Glossary/Number) or a [boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean). [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values cannot hold any [property](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript).
+The JavaScript strict mode exception "can’t assign to property” occurs when attempting to create a property on [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) value such as a [symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol), a [string](https://developer.mozilla.org/en-US/docs/Glossary/String), a [number](https://developer.mozilla.org/en-US/docs/Glossary/Number) or a [boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean). [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) values cannot hold any [property](https://developer.mozilla.org/en-US/docs/Glossary/property/JavaScript).
 
 Message
 -------

@@ -1,4 +1,4 @@
-For the sake of briefness, we use Bash “group compound” stanza:
+For the sake of briefness, we use Bash "group compound” stanza:
 ===============================================================
 
 /dev/sd{a,b,…}1 =&gt; /dev/sda1 /dev/sdb1 …
@@ -104,7 +104,7 @@ cat /proc/mdstat
 To rename a device:
 ===================
 
-(SHOULD after hostname change; eg. name=“$(hostname -s)”)
+(SHOULD after hostname change; eg. name="$(hostname -s)”)
 =========================================================
 
-mdadm –assemble /dev/md<span class="math inline">*M*/*dev*/*sda*, *b*, *c*, *d*, *e*</span>{P} –name=“<span class="math inline">*name*:</span>{M}” –update=name
+mdadm –assemble /dev/md<span class="math inline">*M*/*dev*/*sda*, *b*, *c*, *d*, *e*</span>{P} –name="<span class="math inline">*name*:</span>{M}” –update=name

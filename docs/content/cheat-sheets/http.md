@@ -63,7 +63,7 @@ JSON into the resulting object. Text and raw JSON files can also be
 embedded into fields using =@ and :=@:
 ======================================
 
-http PUT api.example.com/person/1 name=John age:=29 married:=false hobbies:=‘\[“http”, “pies”\]’ description=<span class="citation" data-cites="about-john.txt">@about-john.txt</span> bookmarks:=<span class="citation" data-cites="bookmarks.json">@bookmarks.json</span>
+http PUT api.example.com/person/1 name=John age:=29 married:=false hobbies:=‘\["http”, "pies”\]’ description=<span class="citation" data-cites="about-john.txt">@about-john.txt</span> bookmarks:=<span class="citation" data-cites="bookmarks.json">@bookmarks.json</span>
 
 Send JSON data stored in a file:
 ================================
@@ -220,7 +220,7 @@ grep ‘401 Unauthorized’ /var/log/httpd/error\_log | http POST example.org/in
 You can use echo for simple data:
 =================================
 
-echo ‘{“name”: “John”}’ | http PATCH example.com/person/1 X-API-Token:123
+echo ‘{"name”: "John”}’ | http PATCH example.com/person/1 X-API-Token:123
 
 You can even pipe web services together using HTTPie:
 =====================================================
@@ -324,13 +324,13 @@ Prettified streamed response:
 
 http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=‘Justin Bieber’
 
-Send each new tweet (JSON object) mentioning “Apple” to another
+Send each new tweet (JSON object) mentioning "Apple” to another
 ===============================================================
 
 server as soon as it arrives from the Twitter streaming API:
 ============================================================
 
-http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=Apple | while read tweet; do echo “$tweet” | http POST example.org/tweets ; done
+http –stream -f -a YOUR-TWITTER-NAME <a href="https://stream.twitter.com/1/statuses/filter.json" class="uri">https://stream.twitter.com/1/statuses/filter.json</a> track=Apple | while read tweet; do echo "$tweet” | http POST example.org/tweets ; done
 
 Create a new session named user1 for example.org:
 =================================================

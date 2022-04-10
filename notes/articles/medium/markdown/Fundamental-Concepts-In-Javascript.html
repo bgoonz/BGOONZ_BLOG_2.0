@@ -67,7 +67,7 @@
 <h3 id="write-a-function-that-accepts-a-array-as-an-argument-and-returns-an-object-representing-the-count-of-each-character-in-the-array">Write a function that accepts a array as an argument and returns an object representing the count of each character in the array</h3>
 <h3 id="callbacks-lesson-concepts">Callbacks Lesson Concepts</h3>
 <ul>
-<li><span id="133e">Given multiple plausible reasons, identify why functions are called “First Class Objects” in JavaScript.</span></li>
+<li><span id="133e">Given multiple plausible reasons, identify why functions are called "First Class Objects” in JavaScript.</span></li>
 <li><span id="22a1">they can be stored in variables, passed as arguments to other functions, and serve as return value for a function</span></li>
 <li><span id="5b83">supports same basic operations as other types (strings, bools, numbers)</span></li>
 <li><span id="2419">higher-order functions take functions as arguments or return functions as values</span></li>
@@ -100,7 +100,7 @@
 </ul>
 <h4 id="explain-the-difference-between-const-let-and-var-declarations">Explain the difference between <code>const</code>, <code>let</code>, and <code>var</code> declarations</h4>
 <blockquote>
-<p><code>var</code> <em>is function scoped—so if you declare it anywhere in a function, the declaration</em> <strong><em>(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is “hoisted”</em></strong> <em>so it will</em> <strong><em>exist in memory as “undefined”</em></strong> <em>which is bad and unpredictable</em></p>
+<p><code>var</code> <em>is function scoped—so if you declare it anywhere in a function, the declaration</em> <strong><em>(but not assignment…the fact that it exists is known to the javascript engine but the value assigned to it is a mystery until the code is run line by line!) is "hoisted”</em></strong> <em>so it will</em> <strong><em>exist in memory as "undefined”</em></strong> <em>which is bad and unpredictable</em></p>
 </blockquote>
 <blockquote>
 <p><code>var</code> <em>will also allow you to redeclare a variable, while</em> <code>let</code> <em>or</em> <code>const</code> <em>will raise a syntax error. you shouldn’t be able to do that!</em></p>
@@ -143,11 +143,11 @@
 <li><span id="b6e8">so you can’t use an arrow function to define a method directly</span></li>
 </ul>
 <h3 id="implement-a-closure-and-explain-how-the-closure-effects-scope">Implement a closure and explain how the closure effects scope</h3>
-<h4 id="a-closure-is-the-combination-of-a-function-and-the-lexical-environment-within-which-that-function-was-declared">a closure is “the combination of a function and the lexical environment within which that function was declared”</h4>
+<h4 id="a-closure-is-the-combination-of-a-function-and-the-lexical-environment-within-which-that-function-was-declared">a closure is "the combination of a function and the lexical environment within which that function was declared”</h4>
 <ul>
-<li><span id="bb50"><strong>alternatively, “when an inner function uses or changes variables in an outer function”</strong></span></li>
+<li><span id="bb50"><strong>alternatively, "when an inner function uses or changes variables in an outer function”</strong></span></li>
 <li><span id="87c8">closures have access to any variables within their own scope + scope of outer functions + global scope</span></li>
-<li><span id="a9e4">the set of all these available variables is “lexical environemnt”</span></li>
+<li><span id="a9e4">the set of all these available variables is "lexical environemnt”</span></li>
 <li><span id="8562">closure keeps reference to all variables ** even if the outer function has returned</span></li>
 <li><span id="0a13">Without a closure to access the variables of an outer function from within a call to an inner function the outer function ‘closed’ over …each function has a private mutable state that cannot be accessed externally</span></li>
 <li><span id="2d6a">The inner function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope- even if that scope</span></li>

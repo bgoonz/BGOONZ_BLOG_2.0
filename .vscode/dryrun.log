@@ -1,7 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/workspace/BGOONZ_BLOG_2.0'
-git add .
-git commit -m " update"
-git push -u origin master
-make: Leaving directory '/workspace/BGOONZ_BLOG_2.0'
- 

@@ -19,7 +19,7 @@ A string containing a [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 Description
 -----------
 
-The `bold()` method embeds a string in a `<b>` element: “`<b>str</b>`”.
+The `bold()` method embeds a string in a `<b>` element: "`<b>str</b>`”.
 
 Examples
 --------

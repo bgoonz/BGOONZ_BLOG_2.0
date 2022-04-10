@@ -33,7 +33,7 @@ To download audio in mp3 format with best quality available
 
 youtube-dl –extract-audio –audio-format mp3 –audio-quality 0 example.com/watch?v=id
 
-For all video formats see link below (unfold “Comparison of YouTube media encoding options”)
+For all video formats see link below (unfold "Comparison of YouTube media encoding options”)
 ============================================================================================
 
 https://en.wikipedia.org/w/index.php?title=YouTube&oldid=723160791\#Quality\_and\_formats

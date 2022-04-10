@@ -121,7 +121,7 @@ In this example, we are using a native JavaScript object to which our proxy will
     //  37
     //  (The operation has been properly forwarded!)
 
-Note that while this “no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.
+Note that while this "no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.
 
 ### Validation
 
@@ -291,7 +291,7 @@ The `products` proxy object evaluates the passed value and converts it to an arr
 
 ### Finding an array item object by its property
 
-This proxy extends an array with some utility features. As you see, you can flexibly “define” properties without using [`Object.defineProperties()`](object/defineproperties). This example can be adapted to find a table row by its cell. In that case, the target will be [`table.rows`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows).
+This proxy extends an array with some utility features. As you see, you can flexibly "define” properties without using [`Object.defineProperties()`](object/defineproperties). This example can be adapted to find a table row by its cell. In that case, the target will be [`table.rows`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows).
 
     let products = new Proxy([
       { name: 'Firefox', type: 'browser' },
@@ -351,7 +351,7 @@ This proxy extends an array with some utility features. As you see, you can flex
 
 ### A complete `traps` list example
 
-Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a *non-native* object that is particularly suited to this type of operation: the `docCookies` global object created by [the “little framework” published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
+Now in order to create a complete sample `traps` list, for didactic purposes, we will try to proxify a *non-native* object that is particularly suited to this type of operation: the `docCookies` global object created by [the "little framework” published on the `document.cookie` page](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework).
 
     /*
       var docCookies = ... get the "docCookies" object here:
@@ -520,7 +520,7 @@ No
 See also
 --------
 
--   [“Proxies are awesome” Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
+-   ["Proxies are awesome” Brendan Eich presentation at JSConf](https://www.youtube.com/watch?v=sClk6aB_CPk) ([slides](https://www.slideshare.net/BrendanEich/metaprog-5303821))
 -   [ECMAScript Harmony Proxy proposal page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies) and [ECMAScript Harmony proxy semantics page](http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics)
 -   [Tutorial on proxies](https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/)
 -   [SpiderMonkey specific Old Proxy API](https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API)

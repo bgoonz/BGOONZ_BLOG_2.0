@@ -8,7 +8,7 @@ The `toDateString()` method returns the date portion of a [`Date`](../date) obje
 3.  Two digit day of the month, padded on the left a zero if necessary
 4.  Four digit year (at least), padded on the left with zeros if necessary
 
-E.g. “Thu Jan 01 1970”.
+E.g. "Thu Jan 01 1970”.
 
 Syntax
 ------

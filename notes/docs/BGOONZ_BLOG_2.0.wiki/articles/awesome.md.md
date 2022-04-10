@@ -139,7 +139,7 @@ Programming Languages
 -   [Perl](https://github.com/hachiojipm/awesome-perl#readme)
 -   [Groovy](https://github.com/kdabir/awesome-groovy#readme)
 -   [Dart](https://github.com/yissachar/awesome-dart#readme)
--   [Java](https://github.com/akullpp/awesome-java#readme) - Popular secure object-oriented language designed for flexibility to “write once, run anywhere”.
+-   [Java](https://github.com/akullpp/awesome-java#readme) - Popular secure object-oriented language designed for flexibility to "write once, run anywhere”.
     -   [RxJava](https://github.com/eleventigers/awesome-rxjava#readme)
 -   [Kotlin](https://github.com/KotlinBy/awesome-kotlin#readme)
 -   [OCaml](https://github.com/ocaml-community/awesome-ocaml#readme)
@@ -642,7 +642,7 @@ Miscellaneous
 -   [Katas](https://github.com/gamontal/awesome-katas#readme)
 -   [Tools for Activism](https://github.com/drewrwilson/toolsforactivism#readme)
 -   [Citizen Science](https://github.com/dylanrees/citizen-science#readme) - For community-based and non-institutional scientists.
--   [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - “Internet of Things” connectivity protocol.
+-   [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things” connectivity protocol.
 -   [Hacking Spots](https://github.com/daviddias/awesome-hacking-locations#readme)
 -   [For Girls](https://github.com/cristianoliveira/awesome4girls#readme)
 -   [Vorpal](https://github.com/vorpaljs/awesome-vorpal#readme) - Node.js CLI framework.

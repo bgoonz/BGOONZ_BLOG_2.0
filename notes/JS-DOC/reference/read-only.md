@@ -1,7 +1,7 @@
-TypeError: “x” is read-only
+TypeError: "x” is read-only
 ===========================
 
-The JavaScript [strict mode](../strict_mode)-only exception “is read-only” occurs when a global variable or object property that was assigned to is a read-only property.
+The JavaScript [strict mode](../strict_mode)-only exception "is read-only” occurs when a global variable or object property that was assigned to is a read-only property.
 
 Message
 -------
@@ -50,7 +50,7 @@ There are also a few read-only properties built into JavaScript. Maybe you tried
 
 Sorry, you can’t do that.
 
-The global variable `undefined` is also read-only, so you can’t silence the infamous “undefined is not a function” error by doing this:
+The global variable `undefined` is also read-only, so you can’t silence the infamous "undefined is not a function” error by doing this:
 
     'use strict';
     undefined = function() {};  // TypeError: "undefined" is read-only

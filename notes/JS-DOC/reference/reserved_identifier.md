@@ -1,7 +1,7 @@
-SyntaxError: “x” is a reserved identifier
+SyntaxError: "x” is a reserved identifier
 =========================================
 
-The JavaScript exception “*variable* is a reserved identifier” occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
+The JavaScript exception "*variable* is a reserved identifier” occurs when [reserved keywords](../lexical_grammar#keywords) are used as identifiers.
 
 Message
 -------

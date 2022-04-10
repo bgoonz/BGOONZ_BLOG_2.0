@@ -28,7 +28,7 @@ You can select some predefined examples and see which steps are performed during
 
 Also have a look at [this table](https://dorey.github.io/JavaScript-Equality-Table/) to get a quick overview of the differences between `==` and `===`.
 
-The above examples hopefully showed you that loose comparison isn’t that “simple” and it’s not always clear what ends up being compared in the end. For that reason you should follow this advice:
+The above examples hopefully showed you that loose comparison isn’t that "simple” and it’s not always clear what ends up being compared in the end. For that reason you should follow this advice:
 
 **You should *always* use strict comparison**, unless you explicitly want to make use of the type conversion (i.e. you know what you are doing).
 

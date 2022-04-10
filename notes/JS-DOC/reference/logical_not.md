@@ -39,7 +39,7 @@ The following code shows examples of the `!` (logical NOT) operator.
 
 ### Double NOT (`!!`)
 
-It is possible to use a couple of NOT operators in series to explicitly force the conversion of any value to the corresponding [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). The conversion is based on the “truthyness” or “falsyness” of the value (see [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)).
+It is possible to use a couple of NOT operators in series to explicitly force the conversion of any value to the corresponding [boolean primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type). The conversion is based on the "truthyness” or "falsyness” of the value (see [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)).
 
 The same conversion can be done through the [`Boolean`](../global_objects/boolean/boolean) function.
 

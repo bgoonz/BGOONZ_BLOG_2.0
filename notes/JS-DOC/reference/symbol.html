@@ -37,7 +37,7 @@ typeof symObj   // &quot;object&quot;</code></pre>
 <p>The method <a href="object/getownpropertysymbols"><code>Object.getOwnPropertySymbols()</code></a> returns an array of Symbols and lets you find Symbol properties on a given object. Note that every object is initialized with no own Symbol properties, so that this array will be empty unless you’ve set Symbol properties on the object.</p>
 <h2 id="constructor">Constructor</h2>
 <p><a href="symbol/symbol"><code>Symbol()</code></a><br />
-Creates a new <code>Symbol</code> object. It is incomplete as a constructor because it does not support the syntax “<code>new Symbol()</code>”.</p>
+Creates a new <code>Symbol</code> object. It is incomplete as a constructor because it does not support the syntax "<code>new Symbol()</code>”.</p>
 <h2 id="static-properties">Static properties</h2>
 <p><a href="symbol/asynciterator"><code>Symbol.asyncIterator</code></a><br />
 A method that returns the default AsyncIterator for an object. Used by <a href="../statements/for-await...of"><code>for await...of</code></a>.</p>
@@ -95,7 +95,7 @@ typeof Symbol.iterator === &#39;symbol&#39;</code></pre>
 (e.g. <code>+sym</code> or <code>sym | 0</code>).</li>
 <li>When using loose equality, <code>Object(sym) == sym</code> returns <code>true</code>.</li>
 <li><code>Symbol("foo") + "bar"</code>throws a <a href="typeerror"><code>TypeError</code></a> (can’t convert Symbol to string). This prevents you from silently creating a new string property name from a Symbol, for example.</li>
-<li>The <a href="string#string_conversion">“safer” <code>String(sym)</code> conversion</a> works like a call to <a href="symbol/tostring"><code>Symbol.prototype.toString()</code></a> with Symbols, but note that <code>new String(sym)</code> will throw.</li>
+<li>The <a href="string#string_conversion">"safer” <code>String(sym)</code> conversion</a> works like a call to <a href="symbol/tostring"><code>Symbol.prototype.toString()</code></a> with Symbols, but note that <code>new String(sym)</code> will throw.</li>
 </ul>
 <h3 id="symbols-and-forin-iteration">Symbols and for…in iteration</h3>
 <p>Symbols are not enumerable in <a href="../statements/for...in"><code>for...in</code></a> iterations. In addition, <a href="object/getownpropertynames"><code>Object.getOwnPropertyNames()</code></a> will not return Symbol object properties, however, you can use <a href="object/getownpropertysymbols"><code>Object.getOwnPropertySymbols()</code></a> to get these.</p>
@@ -450,7 +450,7 @@ Specification
 <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">Glossary: Symbol data type</a></li>
 <li><a href="../operators/typeof"><code>typeof</code></a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">Data types and data structures</a></li>
-<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/">“ES6 In Depth: Symbols” on hacks.mozilla.org</a></li>
+<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/">"ES6 In Depth: Symbols” on hacks.mozilla.org</a></li>
 </ul>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a></p>
 </body>

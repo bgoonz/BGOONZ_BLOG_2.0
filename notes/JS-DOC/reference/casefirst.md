@@ -19,7 +19,7 @@ Examples
 
 ### Setting the caseFirst value via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `caseFirst` represents correspond to the key `kf`. `kf` is treated as a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `caseFirst` value can be added to the initial locale identifier string that is passed into the `Locale` constructor. To add the `caseFirst` value, first add the `-u` extension key to the string. Next, add the `-kf` extension key to indicate that you are adding a value for `caseFirst`. Finally, add the `caseFirst` value to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the values that `caseFirst` represents correspond to the key `kf`. `kf` is treated as a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the `caseFirst` value can be added to the initial locale identifier string that is passed into the `Locale` constructor. To add the `caseFirst` value, first add the `-u` extension key to the string. Next, add the `-kf` extension key to indicate that you are adding a value for `caseFirst`. Finally, add the `caseFirst` value to the string.
 
     let caseFirstStr = new Intl.Locale("fr-Latn-FR-u-kf-upper");
     console.log(caseFirstStr.caseFirst); // Prints "upper"

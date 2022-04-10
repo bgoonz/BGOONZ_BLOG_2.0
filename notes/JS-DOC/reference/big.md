@@ -21,7 +21,7 @@ A string containing a [`<big>`](https://developer.mozilla.org/en-US/docs/Web/HTM
 Description
 -----------
 
-The `big()` method embeds a string in a `<big>` element: “`<big>str</big>`”.
+The `big()` method embeds a string in a `<big>` element: "`<big>str</big>`”.
 
 Examples
 --------

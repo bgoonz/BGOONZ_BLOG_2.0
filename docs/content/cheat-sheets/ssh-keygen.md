@@ -31,7 +31,7 @@ ssh-keygen -p -P -N ’’ -f
 To generate a 4096 bit RSA key with a passphase and comment containing the user and hostname:
 =============================================================================================
 
-ssh-keygen -t rsa -b 4096 -C “<span class="math inline">*USER*@</span>HOSTNAME” -P
+ssh-keygen -t rsa -b 4096 -C "<span class="math inline">*USER*@</span>HOSTNAME” -P
 
 To print the fingerprint of a public key:
 =========================================

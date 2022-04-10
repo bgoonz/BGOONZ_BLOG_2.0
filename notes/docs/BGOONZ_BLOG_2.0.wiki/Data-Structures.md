@@ -100,9 +100,9 @@ Disadvantages
 
 Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.
 
-Each tree has a “root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its “child nodes”. This continues, with each child node, branching off into more child nodes.
+Each tree has a "root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its "child nodes”. This continues, with each child node, branching off into more child nodes.
 
-Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the “binary search tree” which is used to easily search stored data.
+Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the "binary search tree” which is used to easily search stored data.
 
 These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.
 
@@ -112,7 +112,7 @@ This type of tree is defined by four strict rules:
 
 1.  The left subtree contains only nodes with elements lesser than the root.
 2.  The right subtree contains only nodes with elements greater than the root.
-3.  Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
+3.  Left and right subtrees must also be a binary search tree. They must follow the above rules with the "root” of their tree.
 4.  There can be no duplicate nodes, i.e. no two nodes can have the same value.
 
 Advantages
@@ -170,7 +170,7 @@ Disadvantages
 6. Hash Tables (Map)
 --------------------
 
-Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the “key” is a searched string and the “value” is the data paired with that key.
+Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key” is a searched string and the "value” is the data paired with that key.
 
 ![](https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket – a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
 
@@ -216,7 +216,7 @@ Output: an array containing only odd integers
 
 There are two ways you could solve this coding problem in an interview. Let’s discuss each.
 
-#### Solution \#1: Doing it “by hand”
+#### Solution \#1: Doing it "by hand”
 
 ------------------------------------------------------------------------
 

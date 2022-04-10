@@ -1,4 +1,4 @@
-Marking guide for “Structuring a page of content”
+Marking guide for "Structuring a page of content”
 =================================================
 
 The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Structuring a page of content](https://developer.mozilla.org/en-US/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth.
@@ -33,7 +33,7 @@ Other tasks
 
 Apply the provided CSS to the page by adding another &lt;link&gt; element just below the existing one provided at the start (4 marks.)
 
-The element should look like this: &lt;link rel=“stylesheet” href=“style.css”&gt;
+The element should look like this: &lt;link rel="stylesheet” href="style.css”&gt;
 
 You’ll get bonus points if it validates as much as possible (2 marks.)
 

@@ -31,12 +31,12 @@ Also works! The colon is optional, as well. This is typically the syntax used wi
       text-transform: uppercase
       letter-spacing: 0.05em
 
-{: data-line=“1”}
+{: data-line="1”}
 
     h5
       caps-type()
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See [Mixins](#mixins-1) below.
 
@@ -44,7 +44,7 @@ See [Mixins](#mixins-1) below.
 
     royal-blue = #36a
 
-{: data-line=“1”}
+{: data-line="1”}
 
     div
       color: royal-blue
@@ -57,12 +57,12 @@ Mixins
     red-border()
       border: solid 2px red
 
-{: data-line=“1”}
+{: data-line="1”}
 
     div
       red-border()
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Mixins](http://stylus-lang.com/docs/mixins.html)
 
@@ -72,13 +72,13 @@ See: [Mixins](http://stylus-lang.com/docs/mixins.html)
       -webkit-border-radius: n
       border-radius: n
 
-{: data-line=“1”}
+{: data-line="1”}
 
     div
       border-radius: 2px
       border-radius(2px)
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 Mixins can be applied in two different ways.
 
@@ -87,7 +87,7 @@ Mixins can be applied in two different ways.
     border-radius(n = 2px)
       -webkit-border-radius: n
 
-{: data-line=“1”}
+{: data-line="1”}
 
 ### Block mixins
 
@@ -98,7 +98,7 @@ Mixins can be applied in two different ways.
     +mobile()
       width: 10px
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [Block mixins](http://stylus-lang.com/docs/mixins.html#block-mixins)
 
@@ -108,7 +108,7 @@ See: [Block mixins](http://stylus-lang.com/docs/mixins.html#block-mixins)
       box-shadow: offset-x args
       margin-top: offset-x
 
-{: data-line=“1”}
+{: data-line="1”}
 
     #login
       shadow: 1px 2px 5px #eee
@@ -123,12 +123,12 @@ Functions
     add(a, b)
       a + b
 
-{: data-line=“1”}
+{: data-line="1”}
 
     body
       padding: add(10px, 5)
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Functions](http://stylus-lang.com/docs/functions.html)
 
@@ -137,7 +137,7 @@ See: [Functions](http://stylus-lang.com/docs/functions.html)
     add(a, b = 2)
       a + b
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [Argument defaults](http://stylus-lang.com/docs/functions.html#argument-defaults)
 
@@ -149,7 +149,7 @@ See: [Argument defaults](http://stylus-lang.com/docs/functions.html#argument-def
     .button
       box-shadow: shadow(x: 2, y: 4)
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Named parameters](http://stylus-lang.com/docs/functions.html#named-parameters)
 
@@ -158,7 +158,7 @@ See: [Named parameters](http://stylus-lang.com/docs/functions.html#named-paramet
     sizes()
       8px 16px
 
-{: data-line=“2”}
+{: data-line="2”}
 
     sizes()[0]  // → 8px
     sizes()[1]  // → 16px
@@ -173,7 +173,7 @@ Values
     royal-blue = #36a
     royal-blue ?= #89f
 
-{: data-line=“2”}
+{: data-line="2”}
 
     div
       color: royal-blue  // #36a
@@ -191,7 +191,7 @@ See: [Conditional assignment](https://stylus-lang.com/docs/operators.html#condit
       height: 80px
       margin-top: -(@height / 2)
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 See: [Property lookup](https://stylus-lang.com/docs/variables.html#property-lookup)
 
@@ -214,7 +214,7 @@ See: [Interpolation](https://stylus-lang.com/docs/interpolation.html)
     foo: (n)em
     foo: (n * 5)%
 
-{: data-line=“1,2”}
+{: data-line="1,2”}
 
 ### Lookup
 
@@ -256,14 +256,14 @@ See: [Conditionals](https://stylus-lang.com/docs/functions.html#conditionals)
       .text-{i}
         font-size: lookup('font-size-' + i)
 
-{: data-line=“5”}
+{: data-line="5”}
 
 ### Definition check
 
     if ohnoes is defined
       color: blue
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See: [is defined](https://stylus-lang.com/docs/operators.html#variable-definition-is-defined)
 

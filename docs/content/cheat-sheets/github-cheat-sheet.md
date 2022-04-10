@@ -33,7 +33,7 @@ Version control is a system that records changes to a file(s), over time.
 
 #### Repository
 
-A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code “element” gives you access to its revision history, among other things.
+A set of files, directories, historical records, commits, and heads. Imagine it as a source code data structure, with the attribute that each source code "element” gives you access to its revision history, among other things.
 
 A git repository is comprised of the .git directory & working tree.
 
@@ -80,7 +80,7 @@ HEAD is a pointer that points to the current branch. A repository only has 1 *ac
 
 #### init
 
-Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named “.git”.
+Create an empty Git repository. The Git repository’s settings, stored information, and more is stored in a directory (a folder) named ".git”.
 
     $ git init
 
@@ -223,7 +223,7 @@ Clones, or copies, an existing repository into a new directory. It also adds rem
 
 #### commit
 
-Stores the current contents of the index in a new “commit.” This commit contains the changes made and a message created by the user.
+Stores the current contents of the index in a new "commit.” This commit contains the changes made and a message created by the user.
 
     # commit with a message
     $ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
@@ -290,7 +290,7 @@ Display commits to the repository.
 
 #### merge
 
-“Merge” in changes from external commits into the current branch.
+"Merge” in changes from external commits into the current branch.
 
     # Merge the specified branch into the current.
     $ git merge branchName
@@ -372,7 +372,7 @@ Now check that everything is OK
     # On branch master
     nothing to commit, working directory clean
 
-You can see what “hunks” you’ve stashed so far using `git stash list`. Since the “hunks” are stored in a Last-In-First-Out stack, our most recent change will be at top.
+You can see what "hunks” you’ve stashed so far using `git stash list`. Since the "hunks” are stored in a Last-In-First-Out stack, our most recent change will be at top.
 
     $ git stash list
     stash@{0}: WIP on master: 049d078 added the index file

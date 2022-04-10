@@ -8,10 +8,10 @@ title: Git log format string category: Git
 
 weight: -1 keywords:
 
--   “git log –pretty=format:%H”
--   “%H - Commit hash”
--   “%an - Author”
--   “%aD - Author date”
+-   "git log –pretty=format:%H”
+-   "%H - Commit hash”
+-   "%an - Author”
+-   "%aD - Author date”
 
 ------------------------------------------------------------------------
 

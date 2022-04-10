@@ -81,7 +81,7 @@ A few notes:
 -   X<sub>k</sub> = amount of frequency k in the signal (amplitude and phase, a complex number)
 -   The 1/N factor is usually moved to the reverse transform (going from frequencies back to time). This is allowed, though I prefer 1/N in the forward transform since it gives the actual sizes for the time spikes. You can get wild and even use 1/sqrt(N) on both transforms (going forward and back creates the 1/N factor).
 -   n/N is the percent of the time we’ve gone through. 2 \_ pi \_ k is our speed in radians / sec. e^-ix is our backwards-moving circular path. The combination is how far we’ve moved, for this speed and time.
--   The raw equations for the Fourier Transform just say “add the complex numbers”. Many programming languages cannot handle complex numbers directly, so you convert everything to rectangular coordinates and add those.
+-   The raw equations for the Fourier Transform just say "add the complex numbers”. Many programming languages cannot handle complex numbers directly, so you convert everything to rectangular coordinates and add those.
 
 Stuart Riffle has a great interpretation of the Fourier Transform:
 

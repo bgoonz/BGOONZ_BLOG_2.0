@@ -1,7 +1,7 @@
 TypeError: More arguments needed
 ================================
 
-The JavaScript exception “more arguments needed” occurs when there is an error with how a function is called. More arguments need to be provided.
+The JavaScript exception "more arguments needed” occurs when there is an error with how a function is called. More arguments need to be provided.
 
 Message
 -------

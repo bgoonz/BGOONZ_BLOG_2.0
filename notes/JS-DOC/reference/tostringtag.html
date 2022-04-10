@@ -37,7 +37,7 @@ Object.prototype.toString.call(function* () {}); // &quot;[object GeneratorFunct
 Object.prototype.toString.call(Promise.resolve()); // &quot;[object Promise]&quot;
 // ... and more</code></pre>
 <h3 id="custom-classes-default-to-object-tag">Custom classes default to object tag</h3>
-<p>When creating your own class, JavaScript defaults to the “Object” tag:</p>
+<p>When creating your own class, JavaScript defaults to the "Object” tag:</p>
 <pre><code>class ValidatorClass {}
 
 Object.prototype.toString.call(new ValidatorClass()); // &quot;[object Object]&quot;</code></pre>

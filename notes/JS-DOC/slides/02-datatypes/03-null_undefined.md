@@ -16,7 +16,7 @@ Examples:
 
 There are other native occurrence of `undefined` which we will mention later.
 
-**Remember:** A variable that doesn’t exist cannot be accessed at all (it will throw a reference error). Instead of saying “the variable is undefined” we rather say “the variable is not *declared*” to avoid confusion.
+**Remember:** A variable that doesn’t exist cannot be accessed at all (it will throw a reference error). Instead of saying "the variable is undefined” we rather say "the variable is not *declared*” to avoid confusion.
 
     var foo;
     console.log(foo); // logs `undefined`

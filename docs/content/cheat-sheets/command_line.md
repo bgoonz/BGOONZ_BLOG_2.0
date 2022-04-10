@@ -89,7 +89,7 @@ Sudo
 
 ### Prompt
 
-`-p prompt` | Custom prompt (-p “%p password:”) |
+`-p prompt` | Custom prompt (-p "%p password:”) |
 
 {:.shortcuts}
 

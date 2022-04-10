@@ -11,7 +11,7 @@ Workflow syntax for GitHub Actions - GitHub Docs
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#about-yaml-syntax-for-workflows)About YAML syntax for workflows
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file extension. If you’re new to YAML and want to learn more, see “[Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/).”
+Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file extension. If you’re new to YAML and want to learn more, see "[Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/).”
 
 You must store workflow files in the `.github/workflows` directory of your repository.
 
@@ -23,7 +23,7 @@ The name of your workflow. GitHub displays the names of your workflows on your r
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#on)`on`
 -----------------------------------------------------------------------------------------------------
 
-**Required**. The name of the GitHub event that triggers the workflow. You can provide a single event `string`, `array` of events, `array` of event `types`, or an event configuration `map` that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. For a list of available events, see “[Events that trigger workflows](https://docs.github.com/en/articles/events-that-trigger-workflows).”
+**Required**. The name of the GitHub event that triggers the workflow. You can provide a single event `string`, `array` of events, `array` of event `types`, or an event configuration `map` that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. For a list of available events, see "[Events that trigger workflows](https://docs.github.com/en/articles/events-that-trigger-workflows).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-a-single-event)Example: Using a single event
 --------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ If you need to specify activity types or configuration for an event, you must co
 
 Selects the types of activity that will trigger a workflow run. Most GitHub events are triggered by more than one type of activity. For example, the event for the release resource is triggered when a release is `published`, `unpublished`, `created`, `edited`, `deleted`, or `prereleased`. The `types` keyword enables you to narrow down activity that causes the workflow to run. When only one activity type triggers a webhook event, the `types` keyword is unnecessary.
 
-You can use an array of event `types`. For more information about each event and their activity types, see “[Events that trigger workflows](https://docs.github.com/en/articles/events-that-trigger-workflows#webhook-events).”
+You can use an array of event `types`. For more information about each event and their activity types, see "[Events that trigger workflows](https://docs.github.com/en/articles/events-that-trigger-workflows#webhook-events).”
 
     on:
       release:
@@ -69,7 +69,7 @@ You can use an array of event `types`. For more information about each event and
 
 When using the `push` and `pull_request` events, you can configure a workflow to run on specific branches or tags. For a `pull_request` event, only branches and tags on the base are evaluated. If you define only `tags` or only `branches`, the workflow won’t run for events affecting the undefined Git ref.
 
-The `branches`, `branches-ignore`, `tags`, and `tags-ignore` keywords accept glob patterns that use characters like `*`, `**`, `+`, `?`, `!` and others to match more than one branch or tag name. If a name contains any of these characters and you want a literal match, you need to *escape* each of these special characters with `\`. For more information about glob patterns, see the “[Filter pattern cheat sheet](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet).”
+The `branches`, `branches-ignore`, `tags`, and `tags-ignore` keywords accept glob patterns that use characters like `*`, `**`, `+`, `?`, `!` and others to match more than one branch or tag name. If a name contains any of these characters and you want a literal match, you need to *escape* each of these special characters with `\`. For more information about glob patterns, see the "[Filter pattern cheat sheet](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-including-branches-and-tags)Example: Including branches and tags
 
@@ -133,7 +133,7 @@ The following workflow will run on pushes to `releases/10` or `releases/beta/mon
 
 When using the `push` and `pull_request` events, you can configure a workflow to run when at least one file does not match `paths-ignore` or at least one modified file matches the configured `paths`. Path filters are not evaluated for pushes to tags.
 
-The `paths-ignore` and `paths` keywords accept glob patterns that use the `*` and `**` wildcard characters to match more than one path name. For more information, see the “[Filter pattern cheat sheet](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet).”
+The `paths-ignore` and `paths` keywords accept glob patterns that use the `*` and `**` wildcard characters to match more than one path name. For more information, see the "[Filter pattern cheat sheet](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-ignoring-paths)Example: Ignoring paths
 
@@ -189,12 +189,12 @@ GitHub generates the list of changed files using two-dot diffs for pushes and th
 
 Diffs are limited to 300 files. If there are files changed that aren’t matched in the first 300 files returned by the filter, the workflow will not run. You may need to create more specific filters so that the workflow will run automatically.
 
-For more information, see “[About comparing branches in pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests).”
+For more information, see "[About comparing branches in pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onworkflow_callinputs)`on.workflow_call.inputs`
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-When using the `workflow_call` keyword, you can optionally specify inputs that are passed to the called workflow from the caller workflow. For more information about the `workflow_call` keyword, see “[Events that trigger workflows](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#workflow-reuse-events).”
+When using the `workflow_call` keyword, you can optionally specify inputs that are passed to the called workflow from the caller workflow. For more information about the `workflow_call` keyword, see "[Events that trigger workflows](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#workflow-reuse-events).”
 
 In addition to the standard input parameters that are available, `on.workflow_call.inputs` requires a `type` parameter. For more information, see [`on.workflow_call.inputs.<input_id>.type`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onworkflow_callinputsinput_idtype).
 
@@ -223,7 +223,7 @@ If a caller workflow passes an input that is not specified in the called workflo
           - name: Print the input name to STDOUT
             run: echo The username is ${{ inputs.username }}
 
-For more information, see “[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
+For more information, see "[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onworkflow_callinputsinput_idtype)`on.workflow_call.inputs.<input_id>.type`
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -250,7 +250,7 @@ In the example below, two outputs are defined for this reusable workflow: `workf
             description: "The second job output"
             value: ${{ jobs.my_job.outputs.job_output2 }}
 
-For information on how to reference a job output, see [`jobs.<job_id>.outputs`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs). For more information, see “[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
+For information on how to reference a job output, see [`jobs.<job_id>.outputs`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs). For more information, see "[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onworkflow_callsecrets)`on.workflow_call.secrets`
 -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -295,7 +295,7 @@ A boolean specifying whether the secret must be supplied.
 
 When using the `workflow_dispatch` event, you can optionally specify inputs that are passed to the workflow.
 
-The triggered workflow receives the inputs in the `github.event.inputs` context. For more information, see “[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context).”
+The triggered workflow receives the inputs in the `github.event.inputs` context. For more information, see "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-3)Example
 
@@ -340,12 +340,12 @@ This example triggers the workflow every day at 5:30 and 17:30 UTC:
 
         - cron:  '30 5,17 * * *'
 
-For more information about cron syntax, see “[Events that trigger workflows](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events).”
+For more information about cron syntax, see "[Events that trigger workflows](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#permissions)`permissions`
 -----------------------------------------------------------------------------------------------------------------------
 
-You can modify the default permissions granted to the `GITHUB_TOKEN`, adding or removing access as required, so that you only allow the minimum required access. For more information, see “[Authentication in a workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).”
+You can modify the default permissions granted to the `GITHUB_TOKEN`, adding or removing access as required, so that you only allow the minimum required access. For more information, see "[Authentication in a workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).”
 
 You can use `permissions` either as a top-level key, to apply to all jobs in the workflow, or within specific jobs. When you add the `permissions` key within a specific job, all actions and run commands within that job that use the `GITHUB_TOKEN` gain the access rights you specify. For more information, see [`jobs.<job_id>.permissions`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idpermissions).
 
@@ -372,7 +372,7 @@ You can use the following syntax to define read or write access for all of the a
 
     permissions: read-all|write-all
 
-You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can’t grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see “[Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).”
+You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can’t grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see "[Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-4)Example
 
@@ -423,7 +423,7 @@ When more than one default setting is defined with the same name, GitHub uses th
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#concurrency)`concurrency`
 -----------------------------------------------------------------------------------------------------------------------
 
-Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. A concurrency group can be any string or expression. The expression can only use the [`github` context](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context). For more information about expressions, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
+Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. A concurrency group can be any string or expression. The expression can only use the [`github` context](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context). For more information about expressions, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
 
 You can also specify `concurrency` at the job level. For more information, see [`jobs.<job_id>.concurrency`](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idconcurrency).
 
@@ -450,9 +450,9 @@ A workflow run is made up of one or more jobs. Jobs run in parallel by default. 
 
 Each job runs in a runner environment specified by `runs-on`.
 
-You can run an unlimited number of jobs as long as you are within the workflow usage limits. For more information, see “[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration)” for GitHub-hosted runners and “[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
+You can run an unlimited number of jobs as long as you are within the workflow usage limits. For more information, see "[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration)” for GitHub-hosted runners and "[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
 
-If you need to find the unique identifier of a job running in a workflow run, you can use the GitHub API. For more information, see “[Workflow Jobs](https://docs.github.com/en/rest/reference/actions#workflow-jobs).”
+If you need to find the unique identifier of a job running in a workflow run, you can use the GitHub API. For more information, see "[Workflow Jobs](https://docs.github.com/en/rest/reference/actions#workflow-jobs).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_id)`jobs.<job_id>`
 ------------------------------------------------------------------------------------------------------------------------
@@ -506,7 +506,7 @@ The jobs in this example run sequentially:
         if: ${{ always() }}
         needs: [job1, job2]
 
-In this example, `job3` uses the `always()` conditional expression so that it always runs after `job1` and `job2` have completed, regardless of whether they were successful. For more information, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions#job-status-check-functions).”
+In this example, `job3` uses the `always()` conditional expression so that it always runs after `job1` and `job2` have completed, regardless of whether they were successful. For more information, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions#job-status-check-functions).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idruns-on)`jobs.<job_id>.runs-on`
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -559,13 +559,13 @@ macOS Catalina 10.15
 
 `macos-latest` or `macos-10.15`
 
-**Note:** Beta and Deprecated Images are provided “as-is”, “with all faults” and “as available” and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support.
+**Note:** Beta and Deprecated Images are provided "as-is”, "with all faults” and "as available” and are excluded from the service level agreement and warranty. Beta Images may not be covered by customer support.
 
 #### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-8)Example
 
     runs-on: ubuntu-latest
 
-For more information, see “[Virtual environments for GitHub-hosted runners](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/virtual-environments-for-github-hosted-runners).”
+For more information, see "[Virtual environments for GitHub-hosted runners](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/virtual-environments-for-github-hosted-runners).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#self-hosted-runners)Self-hosted runners
 
@@ -579,12 +579,12 @@ Although the `self-hosted` label is not required, we strongly recommend specifyi
 
     runs-on: [self-hosted, linux]
 
-For more information, see “[About self-hosted runners](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/about-self-hosted-runners)” and “[Using self-hosted runners in a workflow](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/using-self-hosted-runners-in-a-workflow).”
+For more information, see "[About self-hosted runners](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/about-self-hosted-runners)” and "[Using self-hosted runners in a workflow](https://docs.github.com/en/github/automating-your-workflow-with-github-actions/using-self-hosted-runners-in-a-workflow).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idpermissions)`jobs.<job_id>.permissions`
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-You can modify the default permissions granted to the `GITHUB_TOKEN`, adding or removing access as required, so that you only allow the minimum required access. For more information, see “[Authentication in a workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).”
+You can modify the default permissions granted to the `GITHUB_TOKEN`, adding or removing access as required, so that you only allow the minimum required access. For more information, see "[Authentication in a workflow](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).”
 
 By specifying the permission within a job definition, you can configure a different set of permissions for the `GITHUB_TOKEN` for each job, if required. Alternatively, you can specify the permissions for all jobs in the workflow. For information on defining permissions at the workflow level, see [`permissions`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#permissions).
 
@@ -611,7 +611,7 @@ You can use the following syntax to define read or write access for all of the a
 
     permissions: read-all|write-all
 
-You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can’t grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see “[Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).”
+You can use the `permissions` key to add and remove read permissions for forked repositories, but typically you can’t grant write access. The exception to this behavior is where an admin user has selected the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings. For more information, see "[Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#enabling-workflows-for-private-repository-forks).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-10)Example
 
@@ -631,9 +631,9 @@ This example shows permissions being set for the `GITHUB_TOKEN` that will only a
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idenvironment)`jobs.<job_id>.environment`
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-The environment that the job references. All environment protection rules must pass before a job referencing the environment is sent to a runner. For more information, see “[Using environments for deployment](https://docs.github.com/en/actions/deployment/using-environments-for-deployment).”
+The environment that the job references. All environment protection rules must pass before a job referencing the environment is sent to a runner. For more information, see "[Using environments for deployment](https://docs.github.com/en/actions/deployment/using-environments-for-deployment).”
 
-You can provide the environment as only the environment `name`, or as an environment object with the `name` and `url`. The URL maps to `environment_url` in the deployments API. For more information about the deployments API, see “[Deployments](https://docs.github.com/en/rest/reference/repos#deployments).”
+You can provide the environment as only the environment `name`, or as an environment object with the `name` and `url`. The URL maps to `environment_url` in the deployments API. For more information about the deployments API, see "[Deployments](https://docs.github.com/en/rest/reference/repos#deployments).”
 
 #### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-a-single-environment-name)Example using a single environment name
 
@@ -645,7 +645,7 @@ You can provide the environment as only the environment `name`, or as an environ
       name: production_environment
       url: https://github.com
 
-The URL can be an expression and can use any context except for the [`secrets` context](https://docs.github.com/en/actions/learn-github-actions/contexts#contexts). For more information about expressions, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
+The URL can be an expression and can use any context except for the [`secrets` context](https://docs.github.com/en/actions/learn-github-actions/contexts#contexts). For more information about expressions, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-11)Example
 
@@ -658,7 +658,7 @@ The URL can be an expression and can use any context except for the [`secrets` c
 
 **Note:** When concurrency is specified at the job level, order is not guaranteed for jobs or runs that queue within 5 minutes of each other.
 
-Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. A concurrency group can be any string or expression. The expression can use any context except for the `secrets` context. For more information about expressions, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
+Concurrency ensures that only a single job or workflow using the same concurrency group will run at a time. A concurrency group can be any string or expression. The expression can use any context except for the `secrets` context. For more information about expressions, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
 
 You can also specify `concurrency` at the workflow level. For more information, see [`concurrency`](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#concurrency).
 
@@ -685,7 +685,7 @@ A `map` of outputs for a job. Job outputs are available to all downstream jobs t
 
 Job outputs are strings, and job outputs containing expressions are evaluated on the runner at the end of each job. Outputs containing secrets are redacted on the runner and not sent to GitHub Actions.
 
-To use job outputs in a dependent job, you can use the `needs` context. For more information, see “[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context).”
+To use job outputs in a dependent job, you can use the `needs` context. For more information, see "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-12)Example
 
@@ -752,14 +752,14 @@ When more than one default setting is defined with the same name, GitHub uses th
 
 You can use the `if` conditional to prevent a job from running unless a condition is met. You can use any supported context and expression to create a conditional.
 
-When you use expressions in an `if` conditional, you may omit the expression syntax (`${{ }}`) because GitHub automatically evaluates the `if` conditional as an expression. For more information, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
+When you use expressions in an `if` conditional, you may omit the expression syntax (`${{ }}`) because GitHub automatically evaluates the `if` conditional as an expression. For more information, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idsteps)`jobs.<job_id>.steps`
 -----------------------------------------------------------------------------------------------------------------------------------
 
 A job contains a sequence of tasks called `steps`. Steps can run commands, run setup tasks, or run an action in your repository, a public repository, or an action published in a Docker registry. Not all steps run actions, but all actions run as a step. Each step runs in its own process in the runner environment and has access to the workspace and filesystem. Because steps run in their own process, changes to environment variables are not preserved between steps. GitHub provides built-in steps to set up and complete a job.
 
-You can run an unlimited number of steps as long as you are within the workflow usage limits. For more information, see “[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration)” for GitHub-hosted runners and “[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
+You can run an unlimited number of steps as long as you are within the workflow usage limits. For more information, see "[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration)” for GitHub-hosted runners and "[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-15)Example
 
@@ -784,14 +784,14 @@ You can run an unlimited number of steps as long as you are within the workflow 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsid)`jobs.<job_id>.steps[*].id`
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-A unique identifier for the step. You can use the `id` to reference the step in contexts. For more information, see “[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
+A unique identifier for the step. You can use the `id` to reference the step in contexts. For more information, see "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepsif)`jobs.<job_id>.steps[*].if`
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 You can use the `if` conditional to prevent a step from running unless a condition is met. You can use any supported context and expression to create a conditional.
 
-When you use expressions in an `if` conditional, you may omit the expression syntax (`${{ }}`) because GitHub automatically evaluates the `if` conditional as an expression. For more information, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
+When you use expressions in an `if` conditional, you may omit the expression syntax (`${{ }}`) because GitHub automatically evaluates the `if` conditional as an expression. For more information, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-contexts)Example: Using contexts
 
@@ -804,7 +804,7 @@ This step only runs when the event type is a `pull_request` and the event action
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-status-check-functions)Example: Using status check functions
 
-The `my backup step` only runs when the previous step of a job fails. For more information, see “[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions#job-status-check-functions).”
+The `my backup step` only runs when the previous step of a job fails. For more information, see "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions#job-status-check-functions).”
 
     steps:
       - name: My first step
@@ -925,7 +925,7 @@ A Docker image in a public registry. This example uses the Google Container Regi
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow)Example: Using an action inside a different private repository than the workflow
 
-Your workflow must checkout the private repository and reference the action locally. Generate a personal access token and add the token as an encrypted secret. For more information, see “[Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)” and “[Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets).”
+Your workflow must checkout the private repository and reference the action locally. Generate a personal access token and add the token as an encrypted secret. For more information, see "[Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)” and "[Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets).”
 
 Replace `PERSONAL_ACCESS_TOKEN` in the example with the name of your secret.
 
@@ -1089,7 +1089,7 @@ For example:
 
 The command used, `perl` in this example, must be installed on the runner.
 
-For information about the software included on GitHub-hosted runners, see “[Specifications for GitHub-hosted runners](https://docs.github.com/en/actions/reference/specifications-for-github-hosted-runners#supported-software).”
+For information about the software included on GitHub-hosted runners, see "[Specifications for GitHub-hosted runners](https://docs.github.com/en/actions/reference/specifications-for-github-hosted-runners#supported-software).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#exit-codes-and-error-action-preference)Exit codes and error action preference
 
@@ -1173,7 +1173,7 @@ Sets environment variables for steps to use in the runner environment. You can a
 
 When more than one environment variable is defined with the same name, GitHub uses the most specific environment variable. For example, an environment variable defined in a step will override job and workflow variables with the same name, while the step executes. A variable defined for a job will override a workflow variable with the same name, while the job executes.
 
-Public actions may specify expected environment variables in the README file. If you are setting a secret in an environment variable, you must set secrets using the `secrets` context. For more information, see “[Using environment variables](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables)” and “[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
+Public actions may specify expected environment variables in the README file. If you are setting a secret in an environment variable, you must set secrets using the `secrets` context. For more information, see "[Using environment variables](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables)” and "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-19)Example
 
@@ -1199,7 +1199,7 @@ The maximum number of minutes to run the step before killing the process.
 
 The maximum number of minutes to let a job run before GitHub automatically cancels it. Default: 360
 
-If the timeout exceeds the job execution time limit for the runner, the job will be canceled when the execution time limit is met instead. For more information about job execution time limits, see “[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#usage-limits)” for GitHub-hosted runners and “[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
+If the timeout exceeds the job execution time limit for the runner, the job will be canceled when the execution time limit is met instead. For more information about job execution time limits, see "[Usage limits and billing](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#usage-limits)” for GitHub-hosted runners and "[About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners/#usage-limits)” for self-hosted runner usage limits.
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstrategy)`jobs.<job_id>.strategy`
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -1213,7 +1213,7 @@ You can define a matrix of different job configurations. A matrix allows you to 
 
 A job matrix can generate a maximum of 256 jobs per workflow run. This limit also applies to self-hosted runners.
 
-Each option you define in the `matrix` has a key and value. The keys you define become properties in the `matrix` context and you can reference the property in other areas of your workflow file. For example, if you define the key `os` that contains an array of operating systems, you can use the `matrix.os` property as the value of the `runs-on` keyword to create a job for each operating system. For more information, see “[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
+Each option you define in the `matrix` has a key and value. The keys you define become properties in the `matrix` context and you can reference the property in other areas of your workflow file. For example, if you define the key `os` that contains an array of operating systems, you can use the `matrix.os` property as the value of the `runs-on` keyword to create a job for each operating system. For more information, see "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts).”
 
 The order that you define a `matrix` matters. The first option you define will be the first job that runs in your workflow.
 
@@ -1254,7 +1254,7 @@ When you define a matrix of operating systems, you must set the value of `runs-o
         with:
           node-version: ${{ matrix.node }}
 
-To find supported configuration options for GitHub-hosted runners, see “[Virtual environments for GitHub-hosted runners](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/virtual-environments-for-github-hosted-runners).”
+To find supported configuration options for GitHub-hosted runners, see "[Virtual environments for GitHub-hosted runners](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/virtual-environments-for-github-hosted-runners).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-including-additional-values-into-combinations)Example: Including additional values into combinations
 
@@ -1440,7 +1440,7 @@ The `<source>` is a volume name or an absolute path on the host machine, and `<d
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idcontaineroptions)`jobs.<job_id>.container.options`
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Additional Docker container resource options. For a list of options, see “[`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).”
+Additional Docker container resource options. For a list of options, see "[`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).”
 
 **Warning:** The `--network` option is not supported.
 
@@ -1458,7 +1458,7 @@ If you configure your job to run in a container, or your step uses container act
 
 If you configure the job to run directly on the runner machine and your step doesn’t use a container action, you must map any required Docker service container ports to the Docker host (the runner machine). You can access the service container using localhost and the mapped port.
 
-For more information about the differences between networking service containers, see “[About service containers](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/about-service-containers).”
+For more information about the differences between networking service containers, see "[About service containers](https://docs.github.com/en/actions/automating-your-workflow-with-github-actions/about-service-containers).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-localhost)Example: Using localhost
 
@@ -1531,7 +1531,7 @@ The `<source>` is a volume name or an absolute path on the host machine, and `<d
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idservicesservice_idoptions)`jobs.<job_id>.services.<service_id>.options`
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Additional Docker container resource options. For a list of options, see “[`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).”
+Additional Docker container resource options. For a list of options, see "[`docker create` options](https://docs.docker.com/engine/reference/commandline/create/#options).”
 
 **Warning:** The `--network` option is not supported.
 
@@ -1542,7 +1542,7 @@ The location and version of a reusable workflow file to run as a job.
 
 `{owner}/{repo}/{path}/{filename}@{ref}`
 
-`{ref}` can be a SHA, a release tag, or a branch name. Using the commit SHA is the safest for stability and security. For more information, see “[Security hardening for GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#reusing-third-party-workflows).”
+`{ref}` can be a SHA, a release tag, or a branch name. Using the commit SHA is the safest for stability and security. For more information, see "[Security hardening for GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#reusing-third-party-workflows).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-25)Example
 
@@ -1552,7 +1552,7 @@ The location and version of a reusable workflow file to run as a job.
       call-workflow-2:
         uses: octo-org/another-repo/.github/workflows/workflow-2.yml@v1
 
-For more information, see “[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
+For more information, see "[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows).”
 
 [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idwith)`jobs.<job_id>.with`
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -1620,7 +1620,7 @@ The characters `*`, `[`, and `!` are special characters in YAML. If you start a 
 
     - **/README.md
 
-For more information about branch, tag, and path filter syntax, see “[`on.<push|pull_request>.<branches|tags>`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onpushpull_requestbranchestags)” and “[`on.<push|pull_request>.paths`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onpushpull_requestpaths).”
+For more information about branch, tag, and path filter syntax, see "[`on.<push|pull_request>.<branches|tags>`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onpushpull_requestbranchestags)” and "[`on.<push|pull_request>.paths`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onpushpull_requestpaths).”
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#patterns-to-match-branches-and-tags)Patterns to match branches and tags
 

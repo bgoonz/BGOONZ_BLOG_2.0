@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="z-algorithm">Z Algorithm</h1>
-<p>The Z-algorithm finds occurrences of a “word” <code>W</code> within a main “text string” <code>T</code> in linear time <code>O(|W| + |T|)</code>.</p>
+<p>The Z-algorithm finds occurrences of a "word” <code>W</code> within a main "text string” <code>T</code> in linear time <code>O(|W| + |T|)</code>.</p>
 <p>Given a string <code>S</code> of length <code>n</code>, the algorithm produces an array, <code>Z</code> where <code>Z[i]</code> represents the longest substring starting from <code>S[i]</code> which is also a prefix of <code>S</code>. Finding <code>Z</code> for the string obtained by concatenating the word, <code>W</code> with a nonce character, say <code>$</code> followed by the text, <code>T</code>, helps with pattern matching, for if there is some index <code>i</code> such that <code>Z[i]</code> equals the pattern length, then the pattern must be present at that point.</p>
 <p>While the <code>Z</code> array can be computed with two nested loops in <code>O(|W| * |T|)</code> time, the following strategy shows how to obtain it in linear time, based on the idea that as we iterate over the letters in the string (index <code>i</code> from <code>1</code> to <code>n - 1</code>), we maintain an interval <code>[L, R]</code> which is the interval with maximum <code>R</code> such that <code>1 ≤ L ≤ i ≤ R</code> and <code>S[L...R]</code> is a prefix that is also a substring (if no such interval exists, just let <code>L = R = - 1</code>). For <code>i = 1</code>, we can simply compute <code>L</code> and <code>R</code> by comparing <code>S[0...]</code> to <code>S[1...]</code>.</p>
 <p><strong>Example of Z array</strong></p>

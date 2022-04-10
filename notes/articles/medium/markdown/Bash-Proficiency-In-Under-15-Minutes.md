@@ -469,7 +469,7 @@ Probably, this is a more difficult way to do ls -l \*.txt, but this is for educa
 
     ls -l | grep "\.txt$"
 
-> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\\.txt$”.
+> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex "\\.txt$”.
 
 ### Variables
 
@@ -483,7 +483,7 @@ You have no need to declare a variable, just assigning a value to its reference 
                 STR="Hello World!"
                 echo $STR
 
-Line 2 creates a variable called STR and assigns the string “Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′*inatthebeginning*.*Pleasenotice*(*tryit*!)*thatifyoudon*′*tusethe*′</span>’ sign, the output of the program will be different, and probably not what you want it to be.
+Line 2 creates a variable called STR and assigns the string "Hello World!” to it. Then the VALUE of this variable is retrieved by putting the ‘<span class="math inline">′*inatthebeginning*.*Pleasenotice*(*tryit*!)*thatifyoudon*′*tusethe*′</span>’ sign, the output of the program will be different, and probably not what you want it to be.
 
 ### A very simple backup script (little bit better)
 
@@ -517,7 +517,7 @@ Local variables can be created by using the keyword *local*.
 
 ### Basic conditional example if .. then
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" /></figure>\#!/bin/bash if \[ “foo” = “foo” \]; then echo expression evaluated as true fi
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*V2XDOXCJO2I8qYBK.jpg" class="graf-image" /></figure>\#!/bin/bash if \[ "foo” = "foo” \]; then echo expression evaluated as true fi
 
 *The code to be executed if the expression within braces is true can be found after the ‘then’ word and before ‘fi’ which indicates the end of the conditionally executed code.*
 

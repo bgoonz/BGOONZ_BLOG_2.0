@@ -44,9 +44,9 @@ ssh -qND @
 To tunnel an ssh session over the SOCKS proxy on localhost and port 9999:
 =========================================================================
 
-ssh -o “ProxyCommand nc -x 127.0.0.1:9999 -X 4 %h %p” @
+ssh -o "ProxyCommand nc -x 127.0.0.1:9999 -X 4 %h %p” @
 
--X use an xsession, -C compress data, “-c blowfish” use the encryption blowfish:
+-X use an xsession, -C compress data, "-c blowfish” use the encryption blowfish:
 ================================================================================
 
 ssh @ -C -c blowfish -X
@@ -63,7 +63,7 @@ To copy files and folders through ssh from remote host to pwd with tar.gz
 compression when there is no rsync command available:
 =====================================================
 
-ssh @ “cd /var/www/Shared/; tar zcf - asset1 asset2” | tar zxf -
+ssh @ "cd /var/www/Shared/; tar zcf - asset1 asset2” | tar zxf -
 
 To mount folder/filesystem through SSH
 ======================================

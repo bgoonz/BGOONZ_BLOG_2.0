@@ -21,7 +21,7 @@ A string containing a [`<blink>`](https://developer.mozilla.org/en-US/docs/Web/H
 Description
 -----------
 
-The `blink()` method embeds a string in a `<blink>` element: “`<blink>str</blink>`”.
+The `blink()` method embeds a string in a `<blink>` element: "`<blink>str</blink>`”.
 
 Examples
 --------

@@ -16,7 +16,7 @@ Static properties
 Returns a number value of the element size. `4` in the case of an `Float32Array`.
 
 [`Float32Array.name`](typedarray/name)  
-Returns the string value of the constructor name. In the case of the `Float32Array` type: “Float32Array”.
+Returns the string value of the constructor name. In the case of the `Float32Array` type: "Float32Array”.
 
 Static methods
 --------------

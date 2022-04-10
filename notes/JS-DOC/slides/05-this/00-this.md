@@ -1,7 +1,7 @@
 What is `this`?
 ===============
 
-[**`this`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is a special “variable” which implicitly exists in every function. It can be thought of being similar to Java’s `this` and Python’s `self`, but it’s much more flexible than that.
+[**`this`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) is a special "variable” which implicitly exists in every function. It can be thought of being similar to Java’s `this` and Python’s `self`, but it’s much more flexible than that.
 
 **Important**: The value of `this` is determined when the function is **called**, not when the function is *defined*.
 

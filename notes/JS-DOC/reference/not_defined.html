@@ -13,19 +13,19 @@
   </style>
 </head>
 <body>
-<h1 id="referenceerror-x-is-not-defined">ReferenceError: “x” is not defined</h1>
-<p>The JavaScript exception “<em>variable</em> is not defined” occurs when there is a non-existent variable referenced somewhere.</p>
+<h1 id="referenceerror-x-is-not-defined">ReferenceError: "x” is not defined</h1>
+<p>The JavaScript exception "<em>variable</em> is not defined” occurs when there is a non-existent variable referenced somewhere.</p>
 <h2 id="message">Message</h2>
 <pre><code>ReferenceError: &quot;x&quot; is not defined</code></pre>
 <h2 id="error-type">Error type</h2>
 <p><a href="../global_objects/referenceerror"><code>ReferenceError</code></a>.</p>
 <h2 id="what-went-wrong">What went wrong?</h2>
 <p>There is a non-existent variable referenced somewhere. This variable needs to be declared, or you need to make sure it is available in your current script or <a href="https://developer.mozilla.org/en-US/docs/Glossary/Scope">scope</a>.</p>
-<p><strong>Note:</strong> When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as “$”. Put the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a> element that loads the library before your code that uses it.</p>
+<p><strong>Note:</strong> When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as "$”. Put the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a> element that loads the library before your code that uses it.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="variable-not-declared">Variable not declared</h3>
 <pre><code>foo.substring(1); // ReferenceError: foo is not defined</code></pre>
-<p>The “foo” variable isn’t defined anywhere. It needs to be some string, so that the <a href="../global_objects/string/substring"><code>String.prototype.substring()</code></a> method will work.</p>
+<p>The "foo” variable isn’t defined anywhere. It needs to be some string, so that the <a href="../global_objects/string/substring"><code>String.prototype.substring()</code></a> method will work.</p>
 <pre><code>var foo = &#39;bar&#39;;
 foo.substring(1); // &quot;ar&quot;</code></pre>
 <h3 id="wrong-scope">Wrong scope</h3>

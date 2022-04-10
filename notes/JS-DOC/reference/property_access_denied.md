@@ -1,7 +1,7 @@
-Error: Permission denied to access property “x”
+Error: Permission denied to access property "x”
 ===============================================
 
-The JavaScript exception “Permission denied to access property” occurs when there was an attempt to access an object for which you have no permission.
+The JavaScript exception "Permission denied to access property” occurs when there was an attempt to access an object for which you have no permission.
 
 Message
 -------

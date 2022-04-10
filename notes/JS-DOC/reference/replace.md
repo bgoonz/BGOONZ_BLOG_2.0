@@ -23,10 +23,10 @@ A [`RegExp`](../regexp) object or literal. The match or matches are replaced wit
 A [`String`](../string) that is to be replaced by `newSubstr`. It is treated as a literal string and is *not* interpreted as a regular expression. Only the first occurrence will be replaced.
 
 `newSubstr` (replacement)  
-The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the “[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
+The [`String`](../string) that replaces the substring specified by the specified `regexp` or `substr` parameter. A number of special replacement patterns are supported; see the "[Specifying a string as a parameter](#specifying_a_string_as_a_parameter)” section below.
 
 `replacerFunction` (replacement)  
-A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the “[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
+A function to be invoked to create the new substring to be used to replace the matches to the given `regexp` or `substr`. The arguments supplied to this function are described in the "[Specifying a function as a parameter](#specifying_a_function_as_a_parameter)” section below.
 
 ### Return value
 

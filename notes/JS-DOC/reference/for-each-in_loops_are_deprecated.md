@@ -1,7 +1,7 @@
 Warning: JavaScript 1.6’s for-each-in loops are deprecated
 ==========================================================
 
-The JavaScript warning “JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
+The JavaScript warning "JavaScript 1.6’s for-each-in loops are deprecated; consider using ES6 for-of instead” occurs when a <span class="page-not-created">`for each (variable in obj)`</span> statement is used.
 
 Message
 -------

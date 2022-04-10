@@ -1,7 +1,7 @@
 SyntaxError: Malformed formal parameter
 =======================================
 
-The JavaScript exception “malformed formal parameter” occurs when the argument list of a `Function()` constructor call is invalid somehow.
+The JavaScript exception "malformed formal parameter” occurs when the argument list of a `Function()` constructor call is invalid somehow.
 
 Message
 -------
@@ -23,7 +23,7 @@ The argument list is invalid somehow. Perhaps you accidentally picked a keyword 
 
 ### OK, that fixed my problem. But why didn’t you say that in the first place?
 
-Admittedly the wording in the error message is slightly strange. “Formal parameter” is a fancy way of saying “function argument”. And we use the word “malformed” because all Firefox engineers are huge fans of 19th-century Gothic horror novels.
+Admittedly the wording in the error message is slightly strange. "Formal parameter” is a fancy way of saying "function argument”. And we use the word "malformed” because all Firefox engineers are huge fans of 19th-century Gothic horror novels.
 
 Examples
 --------
@@ -53,6 +53,6 @@ See also
 
 -   `Function()`
 -   [About functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
--   [*Frankenstein* by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) (“Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.”)
+-   [*Frankenstein* by Mary Wollstonecraft Shelley, full e-text](https://www.gutenberg.org/ebooks/84) ("Cursed (although I curse myself) be the hands that formed you! You have made me wretched beyond expression. You have left me no power to consider whether I am just to you or not. Begone! Relieve me from the sight of your detested form.”)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Malformed_formal_parameter</a>

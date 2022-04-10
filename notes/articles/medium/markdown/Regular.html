@@ -58,7 +58,7 @@
 <p>When the search for a match requires something more than a direct match, such as finding one or more b’s, or finding white space, you can include special characters in the pattern.</p>
 <p>For example, to match <em>a single</em> <code>"a"</code> <em>followed by zero or more</em> <code>"b"</code><em>s followed by</em> <code>"c"</code>, you’d use the pattern <code>/ab*c/</code>:</p>
 <blockquote>
-<p>the <code>*</code> after <code>"b"</code> means “0 or more occurrences of the preceding item.” In the string <code>"cbbabbbbcdebc"</code>, this pattern will match the substring <code>"abbbbc"</code>.</p>
+<p>the <code>*</code> after <code>"b"</code> means "0 or more occurrences of the preceding item.” In the string <code>"cbbabbbbcdebc"</code>, this pattern will match the substring <code>"abbbbc"</code>.</p>
 </blockquote>
 <p><a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor"><strong>Assertions</strong></a>** : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**</p>
 <p><a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html" class="markup--anchor markup--p-anchor"><strong>Character classes</strong></a>** : Distinguish different types of characters. For example, distinguishing between letters and digits.**</p>
@@ -74,23 +74,23 @@
 <p>If you need to use any of the special characters literally (actually searching for a <code>"*"</code>, for instance), you must escape it by putting a <strong>backslash</strong> in front of it.</p>
 <p>For instance, to search for <code>"a"</code> followed by <code>"*"</code> followed by <code>"b"</code>,</p>
 <blockquote>
-<p>you’d use <code>/a\*b/</code> — the backslash “escapes” the <code>"*"</code>, making it literal instead of special.</p>
+<p>you’d use <code>/a\*b/</code> — the backslash "escapes” the <code>"*"</code>, making it literal instead of special.</p>
 </blockquote>
-<p>Similarly, if you’re writing a regular expression literal and need to match a slash (“/”), you need to escape that (otherwise, it terminates the pattern)</p>
-<p>For instance, to search for the string “/example/” followed by one or more alphabetic characters, you’d use <code>/\/example\/[a-z]+/i</code></p>
+<p>Similarly, if you’re writing a regular expression literal and need to match a slash ("/”), you need to escape that (otherwise, it terminates the pattern)</p>
+<p>For instance, to search for the string "/example/” followed by one or more alphabetic characters, you’d use <code>/\/example\/[a-z]+/i</code></p>
 <p><strong>–the backslashes before each slash make them literal.</strong></p>
 <p>To match a literal backslash, you need to escape the backslash.</p>
-<p>For instance, to match the string “C:\” where “C” can be any letter,</p>
+<p>For instance, to match the string "C:\” where "C” can be any letter,</p>
 <p>you’d use <code>/[A-Z]:\\/</code></p>
 <p>— the first backslash escapes the one after it, so the expression searches for a single literal backslash.</p>
 <p>If using the <code>RegExp</code> constructor with a string literal, <strong>remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level</strong>.</p>
 <p><code>/a\*b/</code> and <code>new RegExp("a\\*b")</code> create the same expression,</p>
-<p>which searches for “a” followed by a literal “*” followed by “b”.</p>
+<p>which searches for "a” followed by a literal "*” followed by "b”.</p>
 <p>If escape strings are not already part of your pattern you can add them using <code>String.replace</code>:</p>
 <pre><code>function escapeRegExp(string) {
   return string.replace(/[.*+\-?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;); // $&amp; means the whole matched string
 }</code></pre>
-<p><strong>The “g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.</strong></p>
+<p><strong>The "g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.</strong></p>
 <h3 id="using-parentheses">Using parentheses</h3>
 <p>Parentheses around any part of the regular expression pattern causes that part of the matched substring to be remembered.</p>
 <p>Once remembered, the substring can be recalled for other use.</p>
@@ -163,8 +163,8 @@ console.log(&#39;The value of lastIndex is &#39; + /d(b+)d/g.lastIndex);
 <p><code>i</code> Case-insensitive search. <code>RegExp.prototype.ignoreCase</code></p>
 <p><code>m</code> Multi-line search. <code>RegExp.prototype.multiline</code></p>
 <p><code>s</code> Allows <code>.</code> to match newline characters. <code>RegExp.prototype.dotAll</code></p>
-<p><code>u</code> “unicode”; treat a pattern as a sequence of unicode code points. <code>RegExp.prototype.unicode</code></p>
-<p><code>y</code> Perform a “sticky” search that matches starting at the current position in the target string. <code>RegExp.prototype.sticky</code></p>
+<p><code>u</code> "unicode”; treat a pattern as a sequence of unicode code points. <code>RegExp.prototype.unicode</code></p>
+<p><code>y</code> Perform a "sticky” search that matches starting at the current position in the target string. <code>RegExp.prototype.sticky</code></p>
 <h4 id="regular-expression-flags">Regular expression flags</h4>
 <p><em>To include a flag with the regular expression, use this syntax:</em></p>
 <pre><code>let re = /pattern/flags;</code></pre>
@@ -184,7 +184,7 @@ console.log(myArray);
 <pre><code>let re = new RegExp(&#39;\\w+\\s&#39;, &#39;g&#39;);</code></pre>
 <p>and get the same result.</p>
 <p>The behavior associated with the <code>g</code> flag is different when the <code>.exec()</code> method is used.</p>
-<p>The roles of “class” and “argument” get reversed:</p>
+<p>The roles of "class” and "argument” get reversed:</p>
 <p>In the case of <code>.match()</code>, the string class (or data type) owns the method and the regular expression is just an argument,</p>
 <p>while in the case of <code>.exec()</code>, it is the regular expression that owns the method, with the string being the argument.</p>
 <p>Contrast this <code>str.match(re)</code> versus <code>re.exec(str)</code>.</p>
@@ -197,7 +197,7 @@ console.log(myArray);
 <p>The <code>m</code> flag is used to specify that a multiline input string should be treated as multiple lines.</p>
 <p>If the <code>m</code> flag is used, <code>^</code> and <code>$</code> match at the start or end of any line within the input string instead of the start or end of the entire string.</p>
 <h3 id="using-special-characters-to-verify-input">Using special characters to verify input</h3>
-<p>In the following example, the user is expected to enter a phone number. When the user presses the “Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.</p>
+<p>In the following example, the user is expected to enter a phone number. When the user presses the "Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.</p>
 <p>Within non-capturing parentheses <code>(?:</code> , the regular expression looks for three numeric characters <code>\d{3}</code> OR <code>|</code> a left parenthesis <code>\(</code> followed by three digits<code>\d{3}</code>, followed by a close parenthesis <code>\)</code>, (end non-capturing parenthesis <code>)</code>), followed by one dash, forward slash, or decimal point and when found, remember the character <code>([-\/\.])</code>, followed by three digits <code>\d{3}</code>, followed by the remembered match of a dash, forward slash, or decimal point <code>\1</code>, followed by four digits <code>\d{4}</code>.</p>
 <p>The <code>Change</code> event activated when the user presses Enter sets the value of <code>RegExp.input</code>.</p>
 <h4 id="html">HTML</h4>

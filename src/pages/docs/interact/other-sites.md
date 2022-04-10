@@ -61,7 +61,7 @@ template: docs
 <h1>   Wordpress Site </h1>
 <br>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="  https://web-dev-hub.com/  " height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="  https://bgoonz-blog.netlify.app/  " height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
 <br>

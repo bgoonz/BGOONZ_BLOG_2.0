@@ -16,12 +16,12 @@ ldd
 To libraries available to apps in real-time:
 ============================================
 
-“Dynamic Libraries” (.so.)
+"Dynamic Libraries” (.so.)
 
 To libraries only available to apps when installed (imported):
 ==============================================================
 
-“Static Libraries” (.a.)
+"Static Libraries” (.a.)
 
 To standard (usual) library file location:
 ==========================================

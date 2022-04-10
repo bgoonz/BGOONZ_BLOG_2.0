@@ -35,7 +35,7 @@ const hugeBin = BigInt(&quot;0b1111111111111111111111111111111111111111111111111
 // ↪ 9007199254740991n</code></pre>
 <p>BigInt values are similar to Number values in some ways, but also differ in a few key matters: A BigInt value cannot be used with methods in the built-in <a href="math"><code>Math</code></a> object and cannot be mixed with a Number value in operations; they must be coerced to the same type. Be careful coercing values back and forth, however, as the precision of a BigInt value may be lost when it is coerced to a Number value.</p>
 <h3 id="type-information">Type information</h3>
-<p>When tested against <code>typeof</code>, a BigInt value (<code>bigint</code> primitive) will give “<code>bigint</code>”:</p>
+<p>When tested against <code>typeof</code>, a BigInt value (<code>bigint</code> primitive) will give "<code>bigint</code>”:</p>
 <pre><code>typeof 1n === &#39;bigint&#39;           // true
 typeof BigInt(&#39;1&#39;) === &#39;bigint&#39;  // true</code></pre>
 <p>A BigInt value can also be wrapped in an <code>Object</code>:</p>

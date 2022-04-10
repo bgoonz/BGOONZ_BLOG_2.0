@@ -49,7 +49,7 @@ The object literal notation is not the same as the **J**ava**S**cript **O**bject
 
 -   JSON permits *only* property definition using `"property": value` syntax. The property name must be double-quoted, and the definition cannot be a shorthand.
 -   In JSON the values can only be strings, numbers, arrays, `true`, `false`, `null`, or another (JSON) object.
--   A function value (see “Methods” below) can not be assigned to a value in JSON.
+-   A function value (see "Methods” below) can not be assigned to a value in JSON.
 -   Objects like [`Date`](../global_objects/date) will be a string after [`JSON.parse()`](../global_objects/json/parse).
 -   [`JSON.parse()`](../global_objects/json/parse) will reject computed property names and an error will be thrown.
 
@@ -139,7 +139,7 @@ A property of an object can also refer to a [function](../functions) or a [gette
       set property(value) {}
     }
 
-In ECMAScript 2015, a shorthand notation is available, so that the keyword “`function`” is no longer necessary.
+In ECMAScript 2015, a shorthand notation is available, so that the keyword "`function`” is no longer necessary.
 
     // Shorthand method names (ES2015)
     let o = {
@@ -234,7 +234,7 @@ A property definition of the form `__proto__: value` or `"__proto__": value` doe
 
 Only a single prototype mutation is permitted in an object literal. Multiple prototype mutations are a syntax error.
 
-Property definitions that do not use “colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.
+Property definitions that do not use "colon” notation are not prototype mutations. They are property definitions that behave identically to similar definitions using any other name.
 
     let __proto__ = 'variable'
 

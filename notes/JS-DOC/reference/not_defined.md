@@ -1,7 +1,7 @@
-ReferenceError: “x” is not defined
+ReferenceError: "x” is not defined
 ==================================
 
-The JavaScript exception “*variable* is not defined” occurs when there is a non-existent variable referenced somewhere.
+The JavaScript exception "*variable* is not defined” occurs when there is a non-existent variable referenced somewhere.
 
 Message
 -------
@@ -18,7 +18,7 @@ What went wrong?
 
 There is a non-existent variable referenced somewhere. This variable needs to be declared, or you need to make sure it is available in your current script or [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
 
-**Note:** When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as “$”. Put the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element that loads the library before your code that uses it.
+**Note:** When loading a library (such as jQuery), make sure it is loaded before you access library variables, such as "$”. Put the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element that loads the library before your code that uses it.
 
 Examples
 --------
@@ -27,7 +27,7 @@ Examples
 
     foo.substring(1); // ReferenceError: foo is not defined
 
-The “foo” variable isn’t defined anywhere. It needs to be some string, so that the [`String.prototype.substring()`](../global_objects/string/substring) method will work.
+The "foo” variable isn’t defined anywhere. It needs to be some string, so that the [`String.prototype.substring()`](../global_objects/string/substring) method will work.
 
     var foo = 'bar';
     foo.substring(1); // "ar"

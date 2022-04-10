@@ -11,8 +11,7 @@ seo:
 template: docs
 ---
 
-
-# The **advance measure** 
+#  The **advance measure** 
 
 >of a glyph is its _advance width_ or _advance height_, whichever is in the inline axis of the element
 

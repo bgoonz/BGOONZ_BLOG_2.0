@@ -1,7 +1,7 @@
 SyntaxError: test for equality (==) mistyped as assignment (=)?
 ===============================================================
 
-The JavaScript warning “test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
+The JavaScript warning "test for equality (==) mistyped as assignment (=)?” occurs when there was an assignment (`=`) when you would normally expect a test for equality (`==`).
 
 Message
 -------

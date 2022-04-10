@@ -24,7 +24,7 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
     console.log(weekday); // 1
 
-**Note:** If needed, the full name of a day (“`Monday`” for example) can be obtained by using [`Intl.DateTimeFormat`](../intl/datetimeformat) with an `options` parameter. Using this method, the internationalization is made easier:
+**Note:** If needed, the full name of a day ("`Monday`” for example) can be obtained by using [`Intl.DateTimeFormat`](../intl/datetimeformat) with an `options` parameter. Using this method, the internationalization is made easier:
 
     var options = { weekday: 'long'};
     console.log(new Intl.DateTimeFormat('en-US', options).format(Xmas95));

@@ -53,7 +53,7 @@ _|_||_||||||
 Trap &quot;1 unit&quot; between first 1 and 2, &quot;4 units&quot; between
 first 2 and 3 and &quot;1 unit&quot; between second last 1 and last 2.</code></pre>
 <h2 id="the-algorithm">The Algorithm</h2>
-<p>An element of array can store water if there are higher bars on left and right. We can find amount of water to be stored in every element by finding the heights of bars on left and right sides. The idea is to compute amount of water that can be stored in every element of array. For example, consider the array <code>[3, 0, 0, 2, 0, 4]</code>, We can trap “3*2 units” of water between 3 an 2, “1 unit” on top of bar 2 and “3 units” between 2 and 4. See below diagram also.</p>
+<p>An element of array can store water if there are higher bars on left and right. We can find amount of water to be stored in every element by finding the heights of bars on left and right sides. The idea is to compute amount of water that can be stored in every element of array. For example, consider the array <code>[3, 0, 0, 2, 0, 4]</code>, We can trap "3*2 units” of water between 3 an 2, "1 unit” on top of bar 2 and "3 units” between 2 and 4. See below diagram also.</p>
 <h3 id="approach-1-brute-force">Approach 1: Brute force</h3>
 <p><strong>Intuition</strong></p>
 <p>For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.</p>

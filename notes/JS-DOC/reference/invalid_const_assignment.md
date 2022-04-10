@@ -1,7 +1,7 @@
-TypeError: invalid assignment to const “x”
+TypeError: invalid assignment to const "x”
 ==========================================
 
-The JavaScript exception “invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript `const` declarations can’t be re-assigned or redeclared.
+The JavaScript exception "invalid assignment to const” occurs when it was attempted to alter a constant value. JavaScript `const` declarations can’t be re-assigned or redeclared.
 
 Message
 -------

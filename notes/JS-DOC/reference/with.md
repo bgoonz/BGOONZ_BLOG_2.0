@@ -1,7 +1,7 @@
 with
 ====
 
-**Warning:**Use of the `with` statement is not recommended, as it may be the source of confusing bugs and compatibility issues. See the “Ambiguity Contra” paragraph in the “Description” section below for details.
+**Warning:**Use of the `with` statement is not recommended, as it may be the source of confusing bugs and compatibility issues. See the "Ambiguity Contra” paragraph in the "Description” section below for details.
 
 The **with statement** extends the scope chain for a statement.
 

@@ -101,17 +101,17 @@ nmap –script ‘http-\*’
 Loads every script except for those in the intrusive category.
 ==============================================================
 
-nmap –script “not intrusive”
+nmap –script "not intrusive”
 
 Loads those scripts that are in both the default and safe categories.
 =====================================================================
 
-nmap –script “default and safe”
+nmap –script "default and safe”
 
 Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.
 ===========================================================================================================
 
-nmap –script “(default or safe or intrusive) and not http-\*”
+nmap –script "(default or safe or intrusive) and not http-\*”
 
 Scan for the heartbleed
 =======================
@@ -119,7 +119,7 @@ Scan for the heartbleed
 -pT:443 =&gt; Scan only port 443 with TCP (T:)
 ==============================================
 
-nmap -T5 –min-parallelism=50 -n –script “ssl-heartbleed” -pT:443 127.0.0.1
+nmap -T5 –min-parallelism=50 -n –script "ssl-heartbleed” -pT:443 127.0.0.1
 
 Show all informations (debug mode)
 ==================================

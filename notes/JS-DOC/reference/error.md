@@ -34,7 +34,7 @@ Creates an instance representing an error that occurs when [`encodeURI()`](encod
 Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by [`Promise.any()`](promise/any).
 
 [`InternalError`](internalerror) <span class="icon non-standard" data-viewbox="0 0 100 100" data-xmlns="http://www.w3.org/2000/svg" data-role="img"> This API has not been standardized. </span>  
-Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. “too much recursion”.
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion”.
 
 Constructor
 -----------
@@ -113,7 +113,7 @@ You can choose to handle only specific error types by testing the error type wit
 
 You might want to define your own error types deriving from `Error` to be able to `throw new MyError()` and use `instanceof MyError` to check the kind of error in the exception handler. This results in cleaner and more consistent error handling code.
 
-See [“What’s a good way to extend Error in JavaScript?”](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
+See ["What’s a good way to extend Error in JavaScript?”](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript) on StackOverflow for an in-depth discussion.
 
 #### ES6 Custom Error Class
 

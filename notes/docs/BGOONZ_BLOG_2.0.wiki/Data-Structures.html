@@ -154,15 +154,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <h2 id="trees">4. Trees</h2>
 <p>Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.</p>
-<p>Each tree has a “root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its “child nodes”. This continues, with each child node, branching off into more child nodes.</p>
-<p>Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the “binary search tree” which is used to easily search stored data.</p>
+<p>Each tree has a "root” node, off of which all other nodes branch. The root contains references to all elements directly below it, which are known as its "child nodes”. This continues, with each child node, branching off into more child nodes.</p>
+<p>Nodes with linked child nodes are called internal nodes while those without child nodes are external nodes. A common type of tree is the "binary search tree” which is used to easily search stored data.</p>
 <p>These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.</p>
 <p><img src="https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360" /></p>
 <p>This type of tree is defined by four strict rules:</p>
 <ol type="1">
 <li>The left subtree contains only nodes with elements lesser than the root.</li>
 <li>The right subtree contains only nodes with elements greater than the root.</li>
-<li>Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</li>
+<li>Left and right subtrees must also be a binary search tree. They must follow the above rules with the "root” of their tree.</li>
 <li>There can be no duplicate nodes, i.e. no two nodes can have the same value.</li>
 </ol>
 <p>Advantages</p>
@@ -211,7 +211,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Modeling social networks, such as Facebook.</li>
 </ul>
 <h2 id="hash-tables-map">6. Hash Tables (Map)</h2>
-<p>Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the “key” is a searched string and the “value” is the data paired with that key.</p>
+<p>Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key” is a searched string and the "value” is the data paired with that key.</p>
 <p><img src="https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992" /> Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket – a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.</p>
 <p>Advantages</p>
 <ul>
@@ -243,7 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Output: an array containing only odd integers</p>
 <pre><code>[1,5,3]</code></pre>
 <p>There are two ways you could solve this coding problem in an interview. Let’s discuss each.</p>
-<h4 id="solution-1-doing-it-by-hand">Solution #1: Doing it “by hand”</h4>
+<h4 id="solution-1-doing-it-by-hand">Solution #1: Doing it "by hand”</h4>
 <hr />
 <div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">function</span> <span class="at">removeEven</span>(arr) <span class="op">{</span></a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="kw">const</span> odds <span class="op">=</span> []<span class="op">;</span></a>

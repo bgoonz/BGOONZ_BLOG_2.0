@@ -1,7 +1,7 @@
 RegExp.prototype.multiline
 ==========================
 
-The `multiline` property indicates whether or not the “`m`” flag is used with the regular expression. `multiline` is a read-only property of an individual regular expression instance.
+The `multiline` property indicates whether or not the "`m`” flag is used with the regular expression. `multiline` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.multiline`
 
@@ -20,7 +20,7 @@ yes
 Description
 -----------
 
-The value of `multiline` is a [`Boolean`](../boolean) and is true if the “`m`” flag was used; otherwise, false. The “`m`” flag indicates that a multiline input string should be treated as multiple lines. For example, if “`m`” is used, “`^`” and “`$`” change from matching at only the start or end of the entire string to the start or end of any line within the string.
+The value of `multiline` is a [`Boolean`](../boolean) and is true if the "`m`” flag was used; otherwise, false. The "`m`” flag indicates that a multiline input string should be treated as multiple lines. For example, if "`m`” is used, "`^`” and "`$`” change from matching at only the start or end of the entire string to the start or end of any line within the string.
 
 You cannot change this property directly.
 

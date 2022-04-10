@@ -47,11 +47,11 @@
 <h1 id="to-edit-previous-commit-message">To edit previous commit message:</h1>
 <p>git commit –amend</p>
 <h1 id="git-commit-in-the-past">Git commit in the past</h1>
-<p>git commit –date=“<code>date --date='2 day ago'</code>” git commit –date=“Jun 13 18:30:25 IST 2015”</p>
-<h1 id="more-recent-versions-of-git-also-support-date2-days-ago-directly">more recent versions of Git also support –date=“2 days ago” directly</h1>
+<p>git commit –date="<code>date --date='2 day ago'</code>” git commit –date="Jun 13 18:30:25 IST 2015”</p>
+<h1 id="more-recent-versions-of-git-also-support-date2-days-ago-directly">more recent versions of Git also support –date="2 days ago” directly</h1>
 <h1 id="to-change-the-date-of-an-existing-commit">To change the date of an existing commit:</h1>
 <p>git filter-branch –env-filter<br />
-‘if [ $GIT_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 ] then export GIT_AUTHOR_DATE=“Fri Jan 2 21:38:53 2009 -0800” export GIT_COMMITTER_DATE=“Sat May 19 01:01:01 2007 -0700” fi’</p>
+‘if [ $GIT_COMMIT = 119f9ecf58069b265ab22f1f97d2b648faf932e0 ] then export GIT_AUTHOR_DATE="Fri Jan 2 21:38:53 2009 -0800” export GIT_COMMITTER_DATE="Sat May 19 01:01:01 2007 -0700” fi’</p>
 <h1 id="to-remove-staged-and-working-directory-changes">To remove staged and working directory changes:</h1>
 <p>git reset –hard</p>
 <h1 id="to-go-2-commits-back">To go 2 commits back:</h1>
@@ -112,7 +112,7 @@
 <h1 id="to-prune-all-remotes-at-once">To prune all remotes at once:</h1>
 <p>git remote prune $(git remote | tr ‘’ ’ ’)</p>
 <h1 id="revisions-can-also-be-identified-with-text">Revisions can also be identified with :/text</h1>
-<h1 id="so-this-will-show-the-first-commit-that-has-cool-in-their-message-body">So, this will show the first commit that has “cool” in their message body</h1>
+<h1 id="so-this-will-show-the-first-commit-that-has-cool-in-their-message-body">So, this will show the first commit that has "cool” in their message body</h1>
 <p>git show :/cool</p>
 <h1 id="to-undo-parts-of-last-commit-in-a-specific-file">To undo parts of last commit in a specific file</h1>
 <p>git checkout -p HEAD^ – /path/to/file</p>

@@ -39,7 +39,7 @@ That’s the same example in the [Readme](https://github.com/ionic-team/stencil)
         }
     }
 
-{: data-line=“5,10,11”}
+{: data-line="5,10,11”}
 
 Stencil uses DOM events.
 
@@ -54,7 +54,7 @@ See: [Handling user input](https://stenciljs.com/docs/templating/#handling-user-
       ]
     }
 
-{: data-line=“3,4”}
+{: data-line="3,4”}
 
 `render()` can return an array of elements.
 
@@ -73,7 +73,7 @@ State
         }
     }
 
-{: data-line=“4,5”}
+{: data-line="4,5”}
 
 Just do assignments. You can’t do mutations though, see next section.
 
@@ -104,7 +104,7 @@ Slots
         <span>Hello, friends</span>
     </my-component>
 
-{: data-line=“2”}
+{: data-line="2”}
 
 #### Component
 
@@ -112,7 +112,7 @@ Slots
       return <h1><slot /></h1>
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 You can pass JSX/HTML as child elements. Use the `slot` tag to use them inside your component.
 
@@ -125,7 +125,7 @@ See: [Slots](https://stenciljs.com/docs/templating#slots)
         <p slot="my-footer">Thanks</p>
     </my-component>
 
-{: data-line=“2,3”}
+{: data-line="2,3”}
 
 #### Component
 
@@ -136,7 +136,7 @@ See: [Slots](https://stenciljs.com/docs/templating#slots)
       </div>
     }
 
-{: data-line=“3,4”}
+{: data-line="3,4”}
 
 See: [Slots](https://stenciljs.com/docs/templating#slots)
 

@@ -69,11 +69,11 @@
 </ul>
 <h4 id="the-interface-segregation-principle"><code>The Interface Segregation Principle</code></h4>
 <ul>
-<li><span id="6af3">Method names should be grouped together into granular collections called “interfaces”</span></li>
+<li><span id="6af3">Method names should be grouped together into granular collections called "interfaces”</span></li>
 </ul>
 <h4 id="the-law-of-demeter"><code>The Law Of Demeter</code></h4>
 <ul>
-<li><span id="e90d">Don’t use more than one dot (not counting the one after “this”).</span></li>
+<li><span id="e90d">Don’t use more than one dot (not counting the one after "this”).</span></li>
 <li><span id="6cbd">A method of an object can only invoke the methods (or use the properties) of the following kinds of objects: Methods on the object itself Any of the objects passed in as parameters to the method And object created in the method Any values stored in the instance variables of the object Any values stored in global variables</span></li>
 </ul>
 <h4 id="the-liskov-substitution-principle"><code>The Liskov Substitution Principle</code></h4>
@@ -101,7 +101,7 @@
   author: &quot;J.R.R. Tolkien&quot;,
 };</code></pre>
 <ul>
-<li><span id="9071">The above literal is a “Book” object type.</span></li>
+<li><span id="9071">The above literal is a "Book” object type.</span></li>
 <li><span id="a5d6"><code>Object Type</code> is defined by it’s attributes and behaviors.</span></li>
 </ul>
 <blockquote>
@@ -173,7 +173,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
 <li><span id="a9e8"><code>Prototype</code> : An object that is delegated to when a reference to an object property or method can’t be resolved.</span></li>
 <li><span id="ddc6">Every instance created by a constructor function shares the same prototype.</span></li>
 <li><span id="ddba"><code>Object.setPrototypeOf()</code> and <code>Object.getPrototypeOf()</code> are just used to set a prototype of one object to another object; and also the verify a prototype.</span></li>
-<li><span id="144c"><code>proto</code> : aka “dunder proto” is a property used to gain easy access to an object’s prototype - it is widely supported by browsers but is considered deprecated.</span></li>
+<li><span id="144c"><code>proto</code> : aka "dunder proto” is a property used to gain easy access to an object’s prototype - it is widely supported by browsers but is considered deprecated.</span></li>
 </ul>
 <!-- -->
 <pre><code>function Book(title, series, author) {
@@ -573,7 +573,7 @@ console.log(child.toString()); // my name is Child</code></pre>
 <li><span id="450f">A class is open for extension and closed for modification.</span></li>
 <li><span id="d4c9">Creating new functionality can happen in child classes, and not the original class.</span></li>
 <li><span id="9cb7"><code>Interface Segregation Principle</code></span></li>
-<li><span id="37db">Method names should be grouped together into granular collections called “interfaces”.</span></li>
+<li><span id="37db">Method names should be grouped together into granular collections called "interfaces”.</span></li>
 <li><span id="7861"><code>Dependency Inversion Principle</code></span></li>
 <li><span id="40a9">Functionality that your class depends on should be provided as parameters to methods rather than using new in the class to create a new instance.</span></li>
 </ul>

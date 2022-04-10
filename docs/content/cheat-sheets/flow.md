@@ -22,7 +22,7 @@ Getting started
 
     const four = square(2);
 
-{: data-line=“1,2”}
+{: data-line="1,2”}
 
 Most of what you need to do is to simply add annotations to function arguments!
 
@@ -36,7 +36,7 @@ See: [flow.org docs](https://flow.org/en/docs/)
         const result = n * n;
     }
 
-{: data-line=“2”}
+{: data-line="2”}
 
 `result` is inferred to be a number because `number * number` will result in a number. There’s no need to give it annotations.
 
@@ -49,7 +49,7 @@ See: [flow.org docs](https://flow.org/en/docs/)
         likes: Array<string>
     };
 
-{: data-line=“1,2,3,4,5,6”}
+{: data-line="1,2,3,4,5,6”}
 
 ------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ See: [flow.org docs](https://flow.org/en/docs/)
         console.log('hello', user.name);
     }
 
-{: data-line=“1”}
+{: data-line="1”}
 
     greet({ name: 'Miles Davis', ··· })
 
@@ -98,7 +98,7 @@ Optionals
         name: ?string
     };
 
-{: data-line=“2”}
+{: data-line="2”}
 
     const a: Album = {}; // ✗ Error
     const a: Album = { name: 'Blue' }; // ✓ OK
@@ -115,14 +115,14 @@ See: [Maybe types](https://flow.org/en/docs/types/primitives/#toc-maybe-types)
         name?: string
     };
 
-{: data-line=“2”}
+{: data-line="2”}
 
     const a: Album = {}; // ✓ OK
     a.name = 'Blue'; // ✓ OK
     a.name = null; // ✗ Error
     a.name = undefined; // ✓ OK
 
-This makes an `Album` valid even if `name` is not part of the keys. This is different from “maybe” types.
+This makes an `Album` valid even if `name` is not part of the keys. This is different from "maybe” types.
 
 See: [Optional properties](https://flow.org/en/docs/types/primitives/#toc-optional-object-properties)
 
@@ -142,9 +142,9 @@ Objects
         genre: 'House' // ✓ OK
     };
 
-{: data-line=“6”}
+{: data-line="6”}
 
-A type with more properties is “wider” and is a subtype of a “narrower” type.
+A type with more properties is "wider” and is a subtype of a "narrower” type.
 
 See: [Width subtyping](https://flow.org/en/docs/lang/width-subtyping/)
 
@@ -155,7 +155,7 @@ See: [Width subtyping](https://flow.org/en/docs/lang/width-subtyping/)
         label: string
     |};
 
-{: data-line=“1,4”}
+{: data-line="1,4”}
 
     const a: Artist = {
         name: 'Miguel Migs',
@@ -163,7 +163,7 @@ See: [Width subtyping](https://flow.org/en/docs/lang/width-subtyping/)
         genre: 'House' // ✗ Error
     };
 
-{: data-line=“4”}
+{: data-line="4”}
 
 Exact object types prevent extra properties from being added to an object.
 
@@ -175,7 +175,7 @@ See: [Exact object types](https://flow.org/en/docs/types/objects/#toc-exact-obje
         [key: string]: Item
     };
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See: [Dynamic object keys](https://flow.org/en/docs/types/objects/#toc-objects-as-maps)
 

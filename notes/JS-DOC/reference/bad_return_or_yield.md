@@ -1,7 +1,7 @@
 SyntaxError: return not in function
 ===================================
 
-The JavaScript exception “return (or yield) not in function” occurs when a `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
+The JavaScript exception "return (or yield) not in function” occurs when a `return` or `yield` statement is called outside of a [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions).
 
 Message
 -------

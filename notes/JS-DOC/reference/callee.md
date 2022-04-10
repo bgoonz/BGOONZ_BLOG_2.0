@@ -6,7 +6,7 @@ The `arguments.callee` property contains the currently executing function.
 Description
 -----------
 
-`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called “anonymous functions”).
+`callee` is a property of the `arguments` object. It can be used to refer to the currently executing function inside the function body of that function. This is useful when the name of the function is unknown, such as within a function expression with no name (also called "anonymous functions”).
 
 **Warning:** The 5th edition of ECMAScript (ES5) forbids use of `arguments.callee()` in [strict mode](../../strict_mode). Avoid using `arguments.callee()` by either giving function expressions a name or use a function declaration where a function must call itself.
 

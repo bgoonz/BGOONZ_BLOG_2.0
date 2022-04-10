@@ -19,7 +19,7 @@ These examples will show you how to add hour cycle data to your [`Locale`](../lo
 
 ### Adding an hour cycle via the locale string
 
-In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the hour cycle is a locale string “extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the hour cycle type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the hour cycle type, first add the `-u` extension key to the string. Next, add the `-hc` extension key to indicate that you are adding an hour cycle. Finally, add the hour cycle type to the string.
+In the [Unicode locale string spec](https://www.unicode.org/reports/tr35/), the hour cycle is a locale string "extension subtag”. These subtags add additional data about the locale, and are added to locale identifiers by using the `-u` extension key. Thus, the hour cycle type can be added to the initial locale identifier string that is passed into the [`Locale`](locale) constructor. To add the hour cycle type, first add the `-u` extension key to the string. Next, add the `-hc` extension key to indicate that you are adding an hour cycle. Finally, add the hour cycle type to the string.
 
     let fr24hour = new Intl.Locale("fr-FR-u-hc-h23");
     console.log(fr24hour.hourCycle); // Prints "h23"

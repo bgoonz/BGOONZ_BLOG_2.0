@@ -53,7 +53,7 @@ When the search for a match requires something more than a direct match, such as
 
 For example, to match *a single* `"a"` *followed by zero or more* `"b"`*s followed by* `"c"`, you’d use the pattern `/ab*c/`:
 
-> the `*` after `"b"` means “0 or more occurrences of the preceding item.” In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
+> the `*` after `"b"` means "0 or more occurrences of the preceding item.” In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
 <a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor"><strong>Assertions</strong></a>\*\* : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).\*\*
 
@@ -75,17 +75,17 @@ If you need to use any of the special characters literally (actually searching f
 
 For instance, to search for `"a"` followed by `"*"` followed by `"b"`,
 
-> you’d use `/a\*b/` — the backslash “escapes” the `"*"`, making it literal instead of special.
+> you’d use `/a\*b/` — the backslash "escapes” the `"*"`, making it literal instead of special.
 
-Similarly, if you’re writing a regular expression literal and need to match a slash (“/”), you need to escape that (otherwise, it terminates the pattern)
+Similarly, if you’re writing a regular expression literal and need to match a slash ("/”), you need to escape that (otherwise, it terminates the pattern)
 
-For instance, to search for the string “/example/” followed by one or more alphabetic characters, you’d use `/\/example\/[a-z]+/i`
+For instance, to search for the string "/example/” followed by one or more alphabetic characters, you’d use `/\/example\/[a-z]+/i`
 
 **–the backslashes before each slash make them literal.**
 
 To match a literal backslash, you need to escape the backslash.
 
-For instance, to match the string “C:\\” where “C” can be any letter,
+For instance, to match the string "C:\\” where "C” can be any letter,
 
 you’d use `/[A-Z]:\\/`
 
@@ -95,7 +95,7 @@ If using the `RegExp` constructor with a string literal, **remember that the bac
 
 `/a\*b/` and `new RegExp("a\\*b")` create the same expression,
 
-which searches for “a” followed by a literal “\*” followed by “b”.
+which searches for "a” followed by a literal "\*” followed by "b”.
 
 If escape strings are not already part of your pattern you can add them using `String.replace`:
 
@@ -103,7 +103,7 @@ If escape strings are not already part of your pattern you can add them using `S
       return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
     }
 
-**The “g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.**
+**The "g” after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.**
 
 ### Using parentheses
 
@@ -237,9 +237,9 @@ Flag Description Corresponding property
 
 `s` Allows `.` to match newline characters. `RegExp.prototype.dotAll`
 
-`u` “unicode”; treat a pattern as a sequence of unicode code points. `RegExp.prototype.unicode`
+`u` "unicode”; treat a pattern as a sequence of unicode code points. `RegExp.prototype.unicode`
 
-`y` Perform a “sticky” search that matches starting at the current position in the target string. `RegExp.prototype.sticky`
+`y` Perform a "sticky” search that matches starting at the current position in the target string. `RegExp.prototype.sticky`
 
 #### Regular expression flags
 
@@ -274,7 +274,7 @@ and get the same result.
 
 The behavior associated with the `g` flag is different when the `.exec()` method is used.
 
-The roles of “class” and “argument” get reversed:
+The roles of "class” and "argument” get reversed:
 
 In the case of `.match()`, the string class (or data type) owns the method and the regular expression is just an argument,
 
@@ -296,7 +296,7 @@ If the `m` flag is used, `^` and `$` match at the start or end of any line withi
 
 ### Using special characters to verify input
 
-In the following example, the user is expected to enter a phone number. When the user presses the “Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
+In the following example, the user is expected to enter a phone number. When the user presses the "Check” button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
 
 Within non-capturing parentheses `(?:` , the regular expression looks for three numeric characters `\d{3}` OR `|` a left parenthesis `\(` followed by three digits`\d{3}`, followed by a close parenthesis `\)`, (end non-capturing parenthesis `)`), followed by one dash, forward slash, or decimal point and when found, remember the character `([-\/\.])`, followed by three digits `\d{3}`, followed by the remembered match of a dash, forward slash, or decimal point `\1`, followed by four digits `\d{4}`.
 

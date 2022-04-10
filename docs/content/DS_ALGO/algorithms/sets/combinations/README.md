@@ -5,7 +5,7 @@ When the order doesn’t matter, it is a **Combination**.
 
 When the order **does** matter it is a **Permutation**.
 
-**“My fruit salad is a combination of apples, grapes and bananas”** We don’t care what order the fruits are in, they could also be “bananas, grapes and apples” or “grapes, apples and bananas”, its the same fruit salad.
+**"My fruit salad is a combination of apples, grapes and bananas”** We don’t care what order the fruits are in, they could also be "bananas, grapes and apples” or "grapes, apples and bananas”, its the same fruit salad.
 
 Combinations without repetitions
 --------------------------------
@@ -20,7 +20,7 @@ No Repetition: such as lottery numbers `(2,14,15,27,30,33)`
 
 where `n` is the number of things to choose from, and we choose `r` of them, no repetition, order doesn’t matter.
 
-It is often called “n choose r” (such as “16 choose 3”). And is also known as the Binomial Coefficient.
+It is often called "n choose r” (such as "16 choose 3”). And is also known as the Binomial Coefficient.
 
 Combinations with repetitions
 -----------------------------

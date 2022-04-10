@@ -34,7 +34,7 @@ Creates an instance representing an error that occurs when <a href="encodeuri"><
 <p><a href="aggregateerror"><code>AggregateError</code></a><br />
 Creates an instance representing several errors wrapped in a single error when multiple errors need to be reported by an operation, for example by <a href="promise/any"><code>Promise.any()</code></a>.</p>
 <p><a href="internalerror"><code>InternalError</code></a> <span class="icon non-standard" data-viewbox="0 0 100 100" data-xmlns="http://www.w3.org/2000/svg" data-role="img"> This API has not been standardized. </span><br />
-Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. “too much recursion”.</p>
+Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion”.</p>
 <h2 id="constructor">Constructor</h2>
 <p><a href="error/error"><code>Error()</code></a><br />
 Creates a new <code>Error</code> object.</p>
@@ -83,7 +83,7 @@ Returns a string representing the specified object. Overrides the <a href="objec
 }</code></pre>
 <h3 id="custom-error-types">Custom Error Types</h3>
 <p>You might want to define your own error types deriving from <code>Error</code> to be able to <code>throw new MyError()</code> and use <code>instanceof MyError</code> to check the kind of error in the exception handler. This results in cleaner and more consistent error handling code.</p>
-<p>See <a href="https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript">“What’s a good way to extend Error in JavaScript?”</a> on StackOverflow for an in-depth discussion.</p>
+<p>See <a href="https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript">"What’s a good way to extend Error in JavaScript?”</a> on StackOverflow for an in-depth discussion.</p>
 <h4 id="es6-custom-error-class">ES6 Custom Error Class</h4>
 <p><strong>Warning:</strong> Versions of Babel prior to 7 can handle <code>CustomError</code> class methods, but only when they are declared with <a href="object/defineproperty">Object.defineProperty()</a>. Otherwise, old versions of Babel and other transpilers will not correctly handle the following code without <a href="https://github.com/loganfsmyth/babel-plugin-transform-builtin-extend">additional configuration</a>.</p>
 <p><strong>Note:</strong> Some browsers include the <code>CustomError</code> constructor in the stack trace when using ES2015 classes.</p>

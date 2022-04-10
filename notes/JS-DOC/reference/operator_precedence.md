@@ -76,7 +76,7 @@ Remember that precedence comes before associativity. So, mixing division and exp
 
 In the table below, **Grouping** is listed as having the highest precedence. However, that does not always mean the expression within the grouping symbols `( … )` is evaluated first, especially when it comes to short-circuiting.
 
-Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator (“OR”) is “short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction (“AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
+Short-circuiting is jargon for conditional evaluation. For example, in the expression `a && (b + c)`, if `a` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then the sub-expression `(b + c)` will not even get evaluated, even if it is in parentheses. We could say that the logical disjunction operator ("OR”) is "short-circuited”. Along with logical disjunction, other short-circuited operators include logical conjunction ("AND”), nullish-coalescing, optional chaining, and the conditional operator. Some more examples follow.
 
     a || (b * c);  // evaluate `a` first, then produce `a` if `a` is "truthy"
     a && (b < c);  // evaluate `a` first, then produce `a` if `a` is "falsy"
@@ -99,7 +99,7 @@ Table
 
 The following table lists operators in order from highest precedence (21) to lowest precedence (1).
 
-Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), “[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
+Note that [spread syntax](spread_syntax) is intentionally not included in the table — because, to quote an [an answer at Stack Overflow](https://stackoverflow.com/a/48656377), "[Spread syntax is not an operator](https://stackoverflow.com/q/44934828/1048572) and therefore does not have a precedence. It is part of the array literal and function call (and object literal) syntax.”
 
 Precedence
 

@@ -1,7 +1,7 @@
 RegExp.prototype.ignoreCase
 ===========================
 
-The `ignoreCase` property indicates whether or not the “`i`” flag is used with the regular expression. `ignoreCase` is a read-only property of an individual regular expression instance.
+The `ignoreCase` property indicates whether or not the "`i`” flag is used with the regular expression. `ignoreCase` is a read-only property of an individual regular expression instance.
 
 Property attributes of `RegExp.prototype.ignoreCase`
 
@@ -20,7 +20,7 @@ yes
 Description
 -----------
 
-The value of `ignoreCase` is a [`Boolean`](../boolean) and `true` if the “`i`” flag was used; otherwise, `false`. The “`i`” flag indicates that case should be ignored while attempting a match in a string.
+The value of `ignoreCase` is a [`Boolean`](../boolean) and `true` if the "`i`” flag was used; otherwise, `false`. The "`i`” flag indicates that case should be ignored while attempting a match in a string.
 
 You cannot change this property directly.
 

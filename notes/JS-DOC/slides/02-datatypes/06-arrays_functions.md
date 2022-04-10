@@ -9,7 +9,7 @@ JavaScript has a special syntax for creating arrays, `[value, value, ...]`:
 
 If you run `console.dir([1, 2])` in your browser’s console, you can inspect the structure of the array object in more detail.
 
-Unlike “plain” objects, array objects have `Array.prototype` as prototype, which provides all the array methods, such as `.push`, `.map`, etc.
+Unlike "plain” objects, array objects have `Array.prototype` as prototype, which provides all the array methods, such as `.push`, `.map`, etc.
 
     ┌──────────┐       [[Prototype]]        ┌──────────────────┐
     │  obj {}  │───────────────────────────▶│ Object.prototype │
@@ -38,7 +38,7 @@ Functions are the only kind of objects that are *callable*, and JavaScript also 
 
 There are other ways to create functions, which will be explained later.
 
-The most important implication of functions being objects is that “work” just like any other value. Functions can be *passed to* functions and *returned from* functions, allowing to creation of **higher-order functions**.
+The most important implication of functions being objects is that "work” just like any other value. Functions can be *passed to* functions and *returned from* functions, allowing to creation of **higher-order functions**.
 
 Similar to arrays, function objects also have a dedicated prototype, `Function.prototype`:
 

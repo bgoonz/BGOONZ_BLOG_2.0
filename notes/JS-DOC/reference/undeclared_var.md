@@ -1,7 +1,7 @@
-ReferenceError: assignment to undeclared variable “x”
+ReferenceError: assignment to undeclared variable "x”
 =====================================================
 
-The JavaScript [strict mode](../strict_mode)-only exception “Assignment to undeclated variable” occurs when the value has been assigned to an undeclared variable.
+The JavaScript [strict mode](../strict_mode)-only exception "Assignment to undeclated variable” occurs when the value has been assigned to an undeclared variable.
 
 Message
 -------
@@ -35,7 +35,7 @@ Examples
 
 ### Invalid cases
 
-In this case, the variable “bar” is an undeclared variable.
+In this case, the variable "bar” is an undeclared variable.
 
     function foo() {
       'use strict';
@@ -45,7 +45,7 @@ In this case, the variable “bar” is an undeclared variable.
 
 ### Valid cases
 
-To make “bar” a declared variable, you can add the `var` keyword in front of it.
+To make "bar” a declared variable, you can add the `var` keyword in front of it.
 
     function foo() {
       'use strict';

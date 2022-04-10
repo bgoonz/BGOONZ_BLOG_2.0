@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1 id="atomics.wait">Atomics.wait()</h1>
-<p>The static <code>Atomics``.wait()</code> method verifies that a given position in an <a href="../int32array"><code>Int32Array</code></a> still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either “<code>ok</code>”, “<code>not-equal</code>”, or “<code>timed-out</code>”.</p>
+<p>The static <code>Atomics``.wait()</code> method verifies that a given position in an <a href="../int32array"><code>Int32Array</code></a> still contains a given value and if so sleeps, awaiting a wakeup or a timeout. It returns a string which is either "<code>ok</code>”, "<code>not-equal</code>”, or "<code>timed-out</code>”.</p>
 <p><strong>Note:</strong> This operation only works with a shared <a href="../int32array"><code>Int32Array</code></a> and may not be allowed on the main thread.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code>Atomics.wait(typedArray, index, value)
@@ -29,7 +29,7 @@ The expected value to test.</p>
 <p><code>timeout</code> <span class="badge inline optional">Optional</span><br />
 Time to wait in milliseconds. <a href="../infinity"><code>Infinity</code></a>, if no time is provided.</p>
 <h3 id="return-value">Return value</h3>
-<p>A string which is either “<code>ok</code>”, “<code>not-equal</code>”, or “<code>timed-out</code>”.</p>
+<p>A string which is either "<code>ok</code>”, "<code>not-equal</code>”, or "<code>timed-out</code>”.</p>
 <h3 id="exceptions">Exceptions</h3>
 <ul>
 <li>Throws a <a href="../typeerror"><code>TypeError</code></a>, if <code>typedArray</code> is not a shared <a href="../int32array"><code>Int32Array</code></a>.</li>

@@ -38,8 +38,8 @@
 <p><strong>Note</strong>: The main program is <a href="https://www.tecmint.com/12-practical-examples-of-linux-grep-command/">grep</a>, the variations are simply the same as <a href="https://www.tecmint.com/linux-grep-commands-character-classes-bracket-expressions/">using specific grep options</a> as below (and they are still being used for backward compatibility):</p>
 <p>$ egrep = grep -E $ fgrep = grep -F $ rgrep = grep -r</p>
 <p>Below are some basic grep commands:</p>
-<p><strong>tecmint@TecMint ~ $</strong> grep “aaronkilik” /etc/passwd <strong>aaronkilik:x:1001:1001::/home/aaronkilik:</strong></p>
-<p><strong>tecmint@TecMint ~ $</strong> cat /etc/passwd | grep “aronkilik” <strong>aaronkilik:x:1001:1001::/home/aaronkilik:</strong></p>
+<p><strong>tecmint@TecMint ~ $</strong> grep "aaronkilik” /etc/passwd <strong>aaronkilik:x:1001:1001::/home/aaronkilik:</strong></p>
+<p><strong>tecmint@TecMint ~ $</strong> cat /etc/passwd | grep "aronkilik” <strong>aaronkilik:x:1001:1001::/home/aaronkilik:</strong></p>
 <p>You can read more about <a href="https://www.tecmint.com/difference-between-grep-egrep-and-fgrep-in-linux/">What’s Difference Between Grep, Egrep and Fgrep in Linux?</a>.</p>
 <h3 id="head-command">4. head Command</h3>
 <p><strong>head</strong> is used to display the first parts of a file, it outputs the first <strong>10</strong> lines by default. You can use the <code>-n</code> num flag to specify the number of lines to be displayed:</p>
@@ -106,8 +106,8 @@ Jan 2 10:45:01 TecMint CRON[3383]: pam_unix(cron:session): session opened for us
 <p>$ tr options set1 set2</p>
 <p>Take a look at the examples below, in the first command, <code>set1( [:upper:] )</code> represents the case of input characters (all upper case).</p>
 <p>Then <code>set2([:lower:])</code> represents the case in which the resultant characters will be. It’s same thing in the second example and the escape sequence <code>\n</code> means print output on a new line:</p>
-<p><strong>tecmint@TecMint ~ $</strong> <strong>echo “WWW.TECMINT.COM” | tr [:upper:] [:lower:]</strong> www.tecmint.com</p>
-<p><strong>tecmint@TecMint ~ $</strong> <strong>echo “news.tecmint.com” | tr [:lower:] [:upper:]</strong> NEWS.TECMINT.COM</p>
+<p><strong>tecmint@TecMint ~ $</strong> <strong>echo "WWW.TECMINT.COM” | tr [:upper:] [:lower:]</strong> www.tecmint.com</p>
+<p><strong>tecmint@TecMint ~ $</strong> <strong>echo "news.tecmint.com” | tr [:lower:] [:upper:]</strong> NEWS.TECMINT.COM</p>
 <h3 id="more-command">11. more Command</h3>
 <p><strong>more</strong> command is a useful file perusal filter created basically for certificate viewing. It shows file content in a page like format, where users can press <strong>[Enter]</strong> to view more information.</p>
 <p>You can use it to view large files like so:</p>

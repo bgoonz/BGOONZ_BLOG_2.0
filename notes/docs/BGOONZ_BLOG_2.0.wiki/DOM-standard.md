@@ -67,14 +67,14 @@ The ordered set serializer takes a set and returns the [concatenation](https://i
 To scope-match a selectors string selectors against a node, run these steps:
 
 1.  Let s be the result of [parse a selector](https://drafts.csswg.org/selectors-4/#parse-a-selector) selectors. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4)
-2.  If s is failure, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If s is failure, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return the result of [match a selector against a tree](https://drafts.csswg.org/selectors-4/#match-a-selector-against-a-tree) with s and node’s [root](https://dom.spec.whatwg.org/#concept-tree-root) using [scoping root](https://drafts.csswg.org/selectors-4/#scoping-root) node. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4).
 
 Support for namespaces within selectors is not planned and will not be added.
 
 ### 1.4. Namespaces[](https://dom.spec.whatwg.org/#namespaces)
 
-To validate a qualifiedName, [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production.
+To validate a qualifiedName, [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production.
 
 To validate and extract a namespace and qualifiedName, run these steps:
 
@@ -83,20 +83,20 @@ To validate and extract a namespace and qualifiedName, run these steps:
 3.  Let prefix be null.
 4.  Let localName be qualifiedName.
 5.  If qualifiedName contains a U+003A (:), then [strictly split](https://infra.spec.whatwg.org/#strictly-split) the string on it and set prefix to the part before and localName to the part after.
-6.  If prefix is non-null and namespace is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-7.  If prefix is “`xml`” and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-8.  If either qualifiedName or prefix is “`xmlns`” and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-9.  If namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor prefix is “`xmlns`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+6.  If prefix is non-null and namespace is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+7.  If prefix is "`xml`” and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+8.  If either qualifiedName or prefix is "`xmlns`” and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+9.  If namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor prefix is "`xmlns`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 10. Return namespace, prefix, and localName.
 
 2. Events[](https://dom.spec.whatwg.org/#events)
 ------------------------------------------------
 
-### 2.1. Introduction to “DOM Events”[](https://dom.spec.whatwg.org/#introduction-to-dom-events)
+### 2.1. Introduction to "DOM Events”[](https://dom.spec.whatwg.org/#introduction-to-dom-events)
 
 Throughout the web platform [events](https://dom.spec.whatwg.org/#concept-event) are [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) to objects to signal an occurrence, such as network activity or user interaction. These objects implement the `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` interface and can therefore add [event listeners](https://dom.spec.whatwg.org/#concept-event-listener) to observe [events](https://dom.spec.whatwg.org/#concept-event) by calling `[addEventListener()](https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener)`:
 
-obj.addEventListener(“load”, imgFetched)
+obj.addEventListener("load”, imgFetched)
 
 function imgFetched(ev) { // great success … }
 
@@ -104,15 +104,15 @@ function imgFetched(ev) { // great success … }
 
 Alternatively, [event listeners](https://dom.spec.whatwg.org/#concept-event-listener) can be removed by passing an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` to `[addEventListener()](https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener)` and calling `[abort()](https://dom.spec.whatwg.org/#dom-abortcontroller-abort)` on the controller owning the signal.
 
-[Events](https://dom.spec.whatwg.org/#concept-event) are objects too and implement the `[Event](https://dom.spec.whatwg.org/#event)` interface (or a derived interface). In the example above ev is the [event](https://dom.spec.whatwg.org/#concept-event). ev is passed as an argument to the [event listener](https://dom.spec.whatwg.org/#concept-event-listener)’s [callback](https://dom.spec.whatwg.org/#event-listener-callback) (typically a JavaScript Function as shown above). [Event listeners](https://dom.spec.whatwg.org/#concept-event-listener) key off the [event](https://dom.spec.whatwg.org/#concept-event)’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value (“`load`” in the above example). The [event](https://dom.spec.whatwg.org/#concept-event)’s `[target](https://dom.spec.whatwg.org/#dom-event-target)` attribute value returns the object to which the [event](https://dom.spec.whatwg.org/#concept-event) was [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) (obj above).
+[Events](https://dom.spec.whatwg.org/#concept-event) are objects too and implement the `[Event](https://dom.spec.whatwg.org/#event)` interface (or a derived interface). In the example above ev is the [event](https://dom.spec.whatwg.org/#concept-event). ev is passed as an argument to the [event listener](https://dom.spec.whatwg.org/#concept-event-listener)’s [callback](https://dom.spec.whatwg.org/#event-listener-callback) (typically a JavaScript Function as shown above). [Event listeners](https://dom.spec.whatwg.org/#concept-event-listener) key off the [event](https://dom.spec.whatwg.org/#concept-event)’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value ("`load`” in the above example). The [event](https://dom.spec.whatwg.org/#concept-event)’s `[target](https://dom.spec.whatwg.org/#dom-event-target)` attribute value returns the object to which the [event](https://dom.spec.whatwg.org/#concept-event) was [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) (obj above).
 
 Although [events](https://dom.spec.whatwg.org/#concept-event) are typically [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) by the user agent as the result of user interaction or the completion of some task, applications can [dispatch](https://dom.spec.whatwg.org/#concept-event-dispatch) [events](https://dom.spec.whatwg.org/#concept-event) themselves by using what are commonly known as synthetic events:
 
-// add an appropriate event listener obj.addEventListener(“cat”, function(e) { process(e.detail) })
+// add an appropriate event listener obj.addEventListener("cat”, function(e) { process(e.detail) })
 
-// create and dispatch the event var event = new CustomEvent(“cat”, {“detail”:{“hazcheeseburger”:true}}) obj.dispatchEvent(event)
+// create and dispatch the event var event = new CustomEvent("cat”, {"detail”:{"hazcheeseburger”:true}}) obj.dispatchEvent(event)
 
-Apart from signaling, [events](https://dom.spec.whatwg.org/#concept-event) are sometimes also used to let an application control what happens next in an operation. For instance as part of form submission an [event](https://dom.spec.whatwg.org/#concept-event) whose `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value is “`submit`” is [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch). If this [event](https://dom.spec.whatwg.org/#concept-event)’s `[preventDefault()](https://dom.spec.whatwg.org/#dom-event-preventdefault)` method is invoked, form submission will be terminated. Applications who wish to make use of this functionality through [events](https://dom.spec.whatwg.org/#concept-event) [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) by the application (synthetic events) can make use of the return value of the `[dispatchEvent()](https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent)` method:
+Apart from signaling, [events](https://dom.spec.whatwg.org/#concept-event) are sometimes also used to let an application control what happens next in an operation. For instance as part of form submission an [event](https://dom.spec.whatwg.org/#concept-event) whose `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value is "`submit`” is [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch). If this [event](https://dom.spec.whatwg.org/#concept-event)’s `[preventDefault()](https://dom.spec.whatwg.org/#dom-event-preventdefault)` method is invoked, form submission will be terminated. Applications who wish to make use of this functionality through [events](https://dom.spec.whatwg.org/#concept-event) [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) by the application (synthetic events) can make use of the return value of the `[dispatchEvent()](https://dom.spec.whatwg.org/#dom-eventtarget-dispatchevent)` method:
 
 if(obj.dispatchEvent(event)) { // event was not canceled, time for some magic … }
 
@@ -122,7 +122,7 @@ Let’s look at an example of how [events](https://dom.spec.whatwg.org/#concept-
 
 &lt;!doctype html&gt;
 
-&lt;html&gt; &lt;head&gt; &lt;title&gt;Boring example&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Hello &lt;span id=x&gt;world&lt;/span&gt;!&lt;/p&gt; &lt;script&gt; function test(e) { debug(e.target, e.currentTarget, e.eventPhase) } document.addEventListener(“hey”, test, {capture: true}) document.body.addEventListener(“hey”, test) var ev = new Event(“hey”, {bubbles:true}) document.getElementById(“x”).dispatchEvent(ev) &lt;/script&gt; &lt;/body&gt; &lt;/html&gt;
+&lt;html&gt; &lt;head&gt; &lt;title&gt;Boring example&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Hello &lt;span id=x&gt;world&lt;/span&gt;!&lt;/p&gt; &lt;script&gt; function test(e) { debug(e.target, e.currentTarget, e.eventPhase) } document.addEventListener("hey”, test, {capture: true}) document.body.addEventListener("hey”, test) var ev = new Event("hey”, {bubbles:true}) document.getElementById("x”).dispatchEvent(ev) &lt;/script&gt; &lt;/body&gt; &lt;/html&gt;
 
 The `debug` function will be invoked twice. Each time the [event](https://dom.spec.whatwg.org/#concept-event)’s `[target](https://dom.spec.whatwg.org/#dom-event-target)` attribute value will be the `span` [element](https://dom.spec.whatwg.org/#concept-element). The first time `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)` attribute’s value will be the [document](https://dom.spec.whatwg.org/#concept-document), the second time the `body` [element](https://dom.spec.whatwg.org/#concept-element). `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute’s value switches from `[CAPTURING_PHASE](https://dom.spec.whatwg.org/#dom-event-capturing_phase)` to `[BUBBLING_PHASE](https://dom.spec.whatwg.org/#dom-event-bubbling_phase)`. If an [event listener](https://dom.spec.whatwg.org/#concept-event-listener) was registered for the `span` [element](https://dom.spec.whatwg.org/#concept-element), `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute’s value would have been `[AT_TARGET](https://dom.spec.whatwg.org/#dom-event-at_target)`.
 
@@ -232,7 +232,7 @@ Node.js14.5.0+
 
 `` event . `[type](https://dom.spec.whatwg.org/#dom-event-type)` ``
 
-Returns the type of event, e.g. “`click`”, “`hashchange`”, or “`submit`”.
+Returns the type of event, e.g. "`click`”, "`hashchange`”, or "`submit`”.
 
 [Event/target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target "The read-only target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event.")
 
@@ -310,7 +310,7 @@ Node.js14.5.0+
 
 `` event . `[composedPath()](https://dom.spec.whatwg.org/#dom-event-composedpath)` ``
 
-Returns the [invocation target](https://dom.spec.whatwg.org/#event-path-invocation-target) objects of event’s [path](https://dom.spec.whatwg.org/#event-path) (objects on which listeners will be invoked), except for any [nodes](https://dom.spec.whatwg.org/#concept-node) in [shadow trees](https://dom.spec.whatwg.org/#concept-shadow-tree) of which the [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`closed`” that are not reachable from event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)`.
+Returns the [invocation target](https://dom.spec.whatwg.org/#event-path-invocation-target) objects of event’s [path](https://dom.spec.whatwg.org/#event-path) (objects on which listeners will be invoked), except for any [nodes](https://dom.spec.whatwg.org/#concept-node) in [shadow trees](https://dom.spec.whatwg.org/#concept-shadow-tree) of which the [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`” that are not reachable from event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)`.
 
 [Event/eventPhase](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase "The eventPhase read-only property of the Event interface indicates which phase of the event flow is currently being evaluated.")
 
@@ -1087,7 +1087,7 @@ Node.js14.5.0+
 To flatten options, run these steps:
 
 1.  If options is a boolean, then return options.
-2.  Return options\[“`[capture](https://dom.spec.whatwg.org/#dom-eventlisteneroptions-capture)`”\].
+2.  Return options\["`[capture](https://dom.spec.whatwg.org/#dom-eventlisteneroptions-capture)`”\].
 
 To flatten more options, run these steps:
 
@@ -1096,8 +1096,8 @@ To flatten more options, run these steps:
 3.  Let signal be null.
 4.  If options is a [dictionary](https://webidl.spec.whatwg.org/#dfn-dictionary), then:
 
-    1.  Set passive to options\[“`[passive](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive)`”\] and once to options\[“`[once](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-once)`”\].
-    2.  If options\[“`[signal](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-signal)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set signal to options\[“`[signal](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-signal)`”\].
+    1.  Set passive to options\["`[passive](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive)`”\] and once to options\["`[once](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-once)`”\].
+    2.  If options\["`[signal](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-signal)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set signal to options\["`[signal](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-signal)`”\].
 
 5.  Return capture, passive, once, and signal.
 
@@ -1144,7 +1144,7 @@ The event listener list will not contain multiple event listeners with equal typ
 
 The `dispatchEvent(event)` method steps are:
 
-1.  If event’s [dispatch flag](https://dom.spec.whatwg.org/#dispatch-flag) is set, or if its [initialized flag](https://dom.spec.whatwg.org/#initialized-flag) is not set, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If event’s [dispatch flag](https://dom.spec.whatwg.org/#dispatch-flag) is set, or if its [initialized flag](https://dom.spec.whatwg.org/#initialized-flag) is not set, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Initialize event’s `[isTrusted](https://dom.spec.whatwg.org/#dom-event-istrusted)` attribute to false.
 3.  Return the result of [dispatching](https://dom.spec.whatwg.org/#concept-event-dispatch) event to [this](https://webidl.spec.whatwg.org/#this).
 
@@ -1172,7 +1172,7 @@ To dispatch an event to a target, with an optional legacy target override flag a
     1.  Let touchTargets be a new [list](https://infra.spec.whatwg.org/#list).
     2.  [For each](https://infra.spec.whatwg.org/#list-iterate) touchTarget of event’s [touch target list](https://dom.spec.whatwg.org/#event-touch-target-list), [append](https://infra.spec.whatwg.org/#list-append) the result of [retargeting](https://dom.spec.whatwg.org/#retarget) touchTarget against target to touchTargets.
     3.  [Append to an event path](https://dom.spec.whatwg.org/#concept-event-path-append) with event, target, targetOverride, relatedTarget, touchTargets, and false.
-    4.  Let isActivationEvent be true, if event is a `[MouseEvent](https://www.w3.org/TR/uievents/#mouseevent)` object and event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute is “`click`”; otherwise false.
+    4.  Let isActivationEvent be true, if event is a `[MouseEvent](https://www.w3.org/TR/uievents/#mouseevent)` object and event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute is "`click`”; otherwise false.
     5.  If isActivationEvent is true and target has [activation behavior](https://dom.spec.whatwg.org/#eventtarget-activation-behavior), then set activationTarget to target.
     6.  Let slottable be target, if target is a [slottable](https://dom.spec.whatwg.org/#concept-slotable) and is [assigned](https://dom.spec.whatwg.org/#slotable-assigned), and null otherwise.
     7.  Let slot-in-closed-tree be false.
@@ -1183,7 +1183,7 @@ To dispatch an event to a target, with an optional legacy target override flag a
 
             1.  Assert: parent is a [slot](https://dom.spec.whatwg.org/#concept-slot).
             2.  Set slottable to null.
-            3.  If parent’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`closed`”, then set slot-in-closed-tree to true.
+            3.  If parent’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`”, then set slot-in-closed-tree to true.
 
         2.  If parent is a [slottable](https://dom.spec.whatwg.org/#concept-slotable) and is [assigned](https://dom.spec.whatwg.org/#slotable-assigned), then set slottable to parent.
         3.  Let relatedTarget be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) event’s [relatedTarget](https://dom.spec.whatwg.org/#event-relatedtarget) against parent.
@@ -1213,7 +1213,7 @@ To dispatch an event to a target, with an optional legacy target override flag a
 
     14. If struct’s [shadow-adjusted target](https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target) is non-null, then set event’s `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute to `[AT_TARGET](https://dom.spec.whatwg.org/#dom-event-at_target)`.
     15. Otherwise, set event’s `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute to `[CAPTURING_PHASE](https://dom.spec.whatwg.org/#dom-event-capturing_phase)`.
-    16. [Invoke](https://dom.spec.whatwg.org/#concept-event-listener-invoke) with struct, event, “`capturing`”, and legacyOutputDidListenersThrowFlag if given.
+    16. [Invoke](https://dom.spec.whatwg.org/#concept-event-listener-invoke) with struct, event, "`capturing`”, and legacyOutputDidListenersThrowFlag if given.
     17. [For each](https://infra.spec.whatwg.org/#list-iterate) struct in event’s [path](https://dom.spec.whatwg.org/#event-path):
 
     18. If struct’s [shadow-adjusted target](https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target) is non-null, then set event’s `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute to `[AT_TARGET](https://dom.spec.whatwg.org/#dom-event-at_target)`.
@@ -1222,7 +1222,7 @@ To dispatch an event to a target, with an optional legacy target override flag a
         1.  If event’s `[bubbles](https://dom.spec.whatwg.org/#dom-event-bubbles)` attribute is false, then [continue](https://infra.spec.whatwg.org/#iteration-continue).
         2.  Set event’s `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute to `[BUBBLING_PHASE](https://dom.spec.whatwg.org/#dom-event-bubbling_phase)`.
 
-    20. [Invoke](https://dom.spec.whatwg.org/#concept-event-listener-invoke) with struct, event, “`bubbling`”, and legacyOutputDidListenersThrowFlag if given.
+    20. [Invoke](https://dom.spec.whatwg.org/#concept-event-listener-invoke) with struct, event, "`bubbling`”, and legacyOutputDidListenersThrowFlag if given.
 
 6.  Set event’s `[eventPhase](https://dom.spec.whatwg.org/#dom-event-eventphase)` attribute to `[NONE](https://dom.spec.whatwg.org/#dom-event-none)`.
 7.  Set event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)` attribute to null.
@@ -1244,7 +1244,7 @@ To append to an event path, given an event, invocationTarget, shadowAdjustedTarg
 1.  Let invocationTargetInShadowTree be false.
 2.  If invocationTarget is a [node](https://dom.spec.whatwg.org/#concept-node) and its [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then set invocationTargetInShadowTree to true.
 3.  Let root-of-closed-tree be false.
-4.  If invocationTarget is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`closed`”, then set root-of-closed-tree to true.
+4.  If invocationTarget is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`”, then set root-of-closed-tree to true.
 5.  [Append](https://infra.spec.whatwg.org/#list-append) a new [struct](https://infra.spec.whatwg.org/#struct) to event’s [path](https://dom.spec.whatwg.org/#event-path) whose [invocation target](https://dom.spec.whatwg.org/#event-path-invocation-target) is invocationTarget, [invocation-target-in-shadow-tree](https://dom.spec.whatwg.org/#event-path-invocation-target-in-shadow-tree) is invocationTargetInShadowTree, [shadow-adjusted target](https://dom.spec.whatwg.org/#event-path-shadow-adjusted-target) is shadowAdjustedTarget, [relatedTarget](https://dom.spec.whatwg.org/#event-path-relatedtarget) is relatedTarget, [touch target list](https://dom.spec.whatwg.org/#event-path-touch-target-list) is touchTargets, [root-of-closed-tree](https://dom.spec.whatwg.org/#event-path-root-of-closed-tree) is root-of-closed-tree, and [slot-in-closed-tree](https://dom.spec.whatwg.org/#event-path-slot-in-closed-tree) is slot-in-closed-tree.
 
 To invoke, given a struct, event, phase, and an optional legacyOutputDidListenersThrowFlag, run these steps:
@@ -1269,21 +1269,21 @@ To invoke, given a struct, event, phase, and an optional legacyOutputDidListener
 
         Legacy event type
 
-        “`animationend`”
+        "`animationend`”
 
-        “`webkitAnimationEnd`”
+        "`webkitAnimationEnd`”
 
-        “`animationiteration`”
+        "`animationiteration`”
 
-        “`webkitAnimationIteration`”
+        "`webkitAnimationIteration`”
 
-        “`animationstart`”
+        "`animationstart`”
 
-        “`webkitAnimationStart`”
+        "`webkitAnimationStart`”
 
-        “`transitionend`”
+        "`transitionend`”
 
-        “`webkitTransitionEnd`”
+        "`webkitTransitionEnd`”
 
     3.  [Inner invoke](https://dom.spec.whatwg.org/#concept-event-listener-inner-invoke) with event, listeners, phase, invocationTargetInShadowTree, and legacyOutputDidListenersThrowFlag if given.
     4.  Set event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value to originalEventType.
@@ -1295,8 +1295,8 @@ To inner invoke, given an event, listeners, phase, invocationTargetInShadowTree,
 
     1.  If event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value is not listener’s [type](https://dom.spec.whatwg.org/#event-listener-type), then [continue](https://infra.spec.whatwg.org/#iteration-continue).
     2.  Set found to true.
-    3.  If phase is “`capturing`” and listener’s [capture](https://dom.spec.whatwg.org/#event-listener-capture) is false, then [continue](https://infra.spec.whatwg.org/#iteration-continue).
-    4.  If phase is “`bubbling`” and listener’s [capture](https://dom.spec.whatwg.org/#event-listener-capture) is true, then [continue](https://infra.spec.whatwg.org/#iteration-continue).
+    3.  If phase is "`capturing`” and listener’s [capture](https://dom.spec.whatwg.org/#event-listener-capture) is false, then [continue](https://infra.spec.whatwg.org/#iteration-continue).
+    4.  If phase is "`bubbling`” and listener’s [capture](https://dom.spec.whatwg.org/#event-listener-capture) is true, then [continue](https://infra.spec.whatwg.org/#iteration-continue).
     5.  If listener’s [once](https://dom.spec.whatwg.org/#event-listener-once) is true, then [remove](https://infra.spec.whatwg.org/#list-remove) listener from event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)` attribute value’s [event listener list](https://dom.spec.whatwg.org/#eventtarget-event-listener-list).
     6.  Let global be listener [callback](https://dom.spec.whatwg.org/#event-listener-callback)’s [associated Realm](https://webidl.spec.whatwg.org/#dfn-associated-realm)’s [global object](https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global).
     7.  Let currentEvent be undefined.
@@ -1306,7 +1306,7 @@ To inner invoke, given an event, listeners, phase, invocationTargetInShadowTree,
         2.  If invocationTargetInShadowTree is false, then set global’s [current event](https://dom.spec.whatwg.org/#window-current-event) to event.
 
     9.  If listener’s [passive](https://dom.spec.whatwg.org/#event-listener-passive) is true, then set event’s [in passive listener flag](https://dom.spec.whatwg.org/#in-passive-listener-flag).
-    10. [Call a user object’s operation](https://webidl.spec.whatwg.org/#call-a-user-objects-operation) with listener’s [callback](https://dom.spec.whatwg.org/#event-listener-callback), “`handleEvent`”, « event », and event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)` attribute value. If this throws an exception, then:
+    10. [Call a user object’s operation](https://webidl.spec.whatwg.org/#call-a-user-objects-operation) with listener’s [callback](https://dom.spec.whatwg.org/#event-listener-callback), "`handleEvent`”, « event », and event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)` attribute value. If this throws an exception, then:
 
     11. [Report the exception](https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception).
     12. Set legacyOutputDidListenersThrowFlag if given.
@@ -1336,9 +1336,9 @@ To fire an event named e at target, optionally using an eventConstructor, with a
 
 Fire in the context of DOM is short for [creating](https://dom.spec.whatwg.org/#concept-event-create), initializing, and [dispatching](https://dom.spec.whatwg.org/#concept-event-dispatch) an [event](https://dom.spec.whatwg.org/#concept-event). [Fire an event](https://dom.spec.whatwg.org/#concept-event-fire) makes that process easier to write down.
 
-If the [event](https://dom.spec.whatwg.org/#concept-event) needs its `[bubbles](https://dom.spec.whatwg.org/#dom-event-bubbles)` or `[cancelable](https://dom.spec.whatwg.org/#dom-event-cancelable)` attribute initialized, one could write “[fire an event](https://dom.spec.whatwg.org/#concept-event-fire) named `submit` at target with its `[cancelable](https://dom.spec.whatwg.org/#dom-event-cancelable)` attribute initialized to true”.
+If the [event](https://dom.spec.whatwg.org/#concept-event) needs its `[bubbles](https://dom.spec.whatwg.org/#dom-event-bubbles)` or `[cancelable](https://dom.spec.whatwg.org/#dom-event-cancelable)` attribute initialized, one could write "[fire an event](https://dom.spec.whatwg.org/#concept-event-fire) named `submit` at target with its `[cancelable](https://dom.spec.whatwg.org/#dom-event-cancelable)` attribute initialized to true”.
 
-Or, when a custom constructor is needed, “[fire an event](https://dom.spec.whatwg.org/#concept-event-fire) named `click` at target using `[MouseEvent](https://www.w3.org/TR/uievents/#mouseevent)` with its `[detail](https://www.w3.org/TR/uievents/#dom-uievent-detail)` attribute initialized to 1”.
+Or, when a custom constructor is needed, "[fire an event](https://dom.spec.whatwg.org/#concept-event-fire) named `click` at target using `[MouseEvent](https://www.w3.org/TR/uievents/#mouseevent)` with its `[detail](https://www.w3.org/TR/uievents/#dom-uievent-detail)` attribute initialized to 1”.
 
 Occasionally the return value is important:
 
@@ -1349,7 +1349,7 @@ Occasionally the return value is important:
 
 An [event](https://dom.spec.whatwg.org/#concept-event) signifies an occurrence, not an action. Phrased differently, it represents a notification from an algorithm and can be used to influence the future course of that algorithm (e.g., through invoking `[preventDefault()](https://dom.spec.whatwg.org/#dom-event-preventdefault)`). [Events](https://dom.spec.whatwg.org/#concept-event) must not be used as actions or initiators that cause some algorithm to start running. That is not what they are for.
 
-This is called out here specifically because previous iterations of the DOM had a concept of “default actions” associated with [events](https://dom.spec.whatwg.org/#concept-event) that gave folks all the wrong ideas. [Events](https://dom.spec.whatwg.org/#concept-event) do not represent or cause actions, they can only be used to influence an ongoing one.
+This is called out here specifically because previous iterations of the DOM had a concept of "default actions” associated with [events](https://dom.spec.whatwg.org/#concept-event) that gave folks all the wrong ideas. [Events](https://dom.spec.whatwg.org/#concept-event) do not represent or cause actions, they can only be used to influence an ongoing one.
 
 3. Aborting ongoing activities[](https://dom.spec.whatwg.org/#aborting-ongoing-activities)
 ------------------------------------------------------------------------------------------
@@ -1502,7 +1502,7 @@ Returns the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object ass
 
 `controller . [abort](https://dom.spec.whatwg.org/#dom-abortcontroller-abort)(reason)`
 
-Invoking this method will store reason in this object’s `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)`’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason), and signal to any observers that the associated activity is to be aborted. If reason is undefined, then an “`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be stored.
+Invoking this method will store reason in this object’s `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)`’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason), and signal to any observers that the associated activity is to be aborted. If reason is undefined, then an "`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be stored.
 
 An `[AbortController](https://dom.spec.whatwg.org/#abortcontroller)` object has an associated signal (an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object).
 
@@ -1569,7 +1569,7 @@ Node.jsNone
 
 `AbortSignal . [abort](https://dom.spec.whatwg.org/#dom-abortsignal-abort)(reason)`
 
-Returns an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` instance whose [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) is set to reason if not undefined; otherwise to an “`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+Returns an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` instance whose [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) is set to reason if not undefined; otherwise to an "`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 [AbortSignal/aborted](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/aborted "The aborted read-only property returns a value that indicates whether the DOM requests the signal is communicating with are aborted (true) or not (false).")
 
@@ -1623,7 +1623,7 @@ The [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms
 The static `abort(reason)` method steps are:
 
 1.  Let signal be a new `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object.
-2.  Set signal’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) to reason if it is given; otherwise to a new “`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  Set signal’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) to reason if it is given; otherwise to a new "`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return signal.
 
 The `aborted` getter steps are to return true if [this](https://webidl.spec.whatwg.org/#this) is [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted); otherwise false.
@@ -1694,7 +1694,7 @@ Changes to an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object r
 To signal abort, given an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object signal and an optional reason, run these steps:
 
 1.  If signal is [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted), then return.
-2.  Set signal’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) to reason if it is given; otherwise to a new “`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  Set signal’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) to reason if it is given; otherwise to a new "`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [For each](https://infra.spec.whatwg.org/#list-iterate) algorithm in signal’s [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms): run algorithm.
 4.  [Empty](https://infra.spec.whatwg.org/#list-empty) signal’s [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms).
 5.  [Fire an event](https://dom.spec.whatwg.org/#concept-event-fire) named `[abort](https://dom.spec.whatwg.org/#eventdef-abortsignal-abort)` at signal.
@@ -1721,9 +1721,9 @@ APIs not using promises should still adhere to the above as much as possible.
 4. Nodes[](https://dom.spec.whatwg.org/#nodes)
 ----------------------------------------------
 
-### 4.1. Introduction to “The DOM”[](https://dom.spec.whatwg.org/#introduction-to-the-dom)
+### 4.1. Introduction to "The DOM”[](https://dom.spec.whatwg.org/#introduction-to-the-dom)
 
-In its original sense, “The DOM” is an API for accessing and manipulating documents (in particular, HTML and XML documents). In this specification, the term “document” is used for any markup-based resource, ranging from short static documents to long essays or reports with rich multimedia, as well as to fully-fledged interactive applications.
+In its original sense, "The DOM” is an API for accessing and manipulating documents (in particular, HTML and XML documents). In this specification, the term "document” is used for any markup-based resource, ranging from short static documents to long essays or reports with rich multimedia, as well as to fully-fledged interactive applications.
 
 Each such document is represented as a [node tree](https://dom.spec.whatwg.org/#concept-node-tree). Some of the [nodes](https://dom.spec.whatwg.org/#concept-node) in a [tree](https://dom.spec.whatwg.org/#concept-tree) can have [children](https://dom.spec.whatwg.org/#concept-tree-child), while others are always leaves.
 
@@ -1735,7 +1735,7 @@ It is represented as follows:
 
 -   [Document](https://dom.spec.whatwg.org/#concept-document)
     -   [Doctype](https://dom.spec.whatwg.org/#concept-doctype): `html`
-    -   `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`=“`e`”
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`="`e`”
         -   `[Element](https://dom.spec.whatwg.org/#element)`: `head`
             -   `[Element](https://dom.spec.whatwg.org/#element)`: `title`
                 -   `[Text](https://dom.spec.whatwg.org/#text)`: Aliens?
@@ -1848,7 +1848,7 @@ Use these [attribute change steps](https://dom.spec.whatwg.org/#concept-element-
     5.  Otherwise, set element’s [name](https://dom.spec.whatwg.org/#slot-name) to value.
     6.  Run [assign slottables for a tree](https://dom.spec.whatwg.org/#assign-slotables-for-a-tree) with element’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
 
-The first [slot](https://dom.spec.whatwg.org/#concept-slot) in a [shadow tree](https://dom.spec.whatwg.org/#concept-shadow-tree), in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), whose [name](https://dom.spec.whatwg.org/#slot-name) is the empty string, is sometimes known as the “default slot”.
+The first [slot](https://dom.spec.whatwg.org/#concept-slot) in a [shadow tree](https://dom.spec.whatwg.org/#concept-shadow-tree), in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), whose [name](https://dom.spec.whatwg.org/#slot-name) is the empty string, is sometimes known as the "default slot”.
 
 A [slot](https://dom.spec.whatwg.org/#concept-slot) has an associated assigned nodes (a list of [slottables](https://dom.spec.whatwg.org/#concept-slotable)). Unless stated otherwise it is empty.
 
@@ -1885,8 +1885,8 @@ To find a slot for a given [slottable](https://dom.spec.whatwg.org/#concept-slot
 1.  If slottable’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is null, then return null.
 2.  Let shadow be slottable’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent)’s [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root).
 3.  If shadow is null, then return null.
-4.  If the *open flag* is set and shadow’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is *not* “`open`”, then return null.
-5.  If shadow’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is “`manual`”, then return the [slot](https://dom.spec.whatwg.org/#concept-slot) in shadow’s [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) whose [manually assigned nodes](https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes) [contains](https://infra.spec.whatwg.org/#list-contain) slottable, if any; otherwise null.
+4.  If the *open flag* is set and shadow’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is *not* "`open`”, then return null.
+5.  If shadow’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is "`manual`”, then return the [slot](https://dom.spec.whatwg.org/#concept-slot) in shadow’s [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) whose [manually assigned nodes](https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes) [contains](https://infra.spec.whatwg.org/#list-contain) slottable, if any; otherwise null.
 6.  Return the first [slot](https://dom.spec.whatwg.org/#concept-slot) in [tree order](https://dom.spec.whatwg.org/#concept-tree-order) in shadow’s [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) whose [name](https://dom.spec.whatwg.org/#slot-name) is slottable’s [name](https://dom.spec.whatwg.org/#slotable-name), if any; otherwise null.
 
 To find slottables for a given [slot](https://dom.spec.whatwg.org/#concept-slot) slot, run these steps:
@@ -1895,7 +1895,7 @@ To find slottables for a given [slot](https://dom.spec.whatwg.org/#concept-slot)
 2.  Let root be slot’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
 3.  If root is not a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then return result.
 4.  Let host be root’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host).
-5.  If root’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is “`manual`”, then:
+5.  If root’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is "`manual`”, then:
 
     1.  Let result be « ».
     2.  [For each](https://infra.spec.whatwg.org/#list-iterate) [slottable](https://dom.spec.whatwg.org/#concept-slotable) slottable of slot’s [manually assigned nodes](https://html.spec.whatwg.org/multipage/scripting.html#manually-assigned-nodes), if slottable’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is host, [append](https://infra.spec.whatwg.org/#list-append) slottable to result.
@@ -1953,12 +1953,12 @@ To signal a slot change, for a [slot](https://dom.spec.whatwg.org/#concept-slot)
 
 To ensure pre-insertion validity of a node into a parent before a child, run these steps:
 
-1.  If parent is not a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, or `[Element](https://dom.spec.whatwg.org/#element)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If node is a [host-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor) of parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-3.  If child is non-null and its [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-4.  If node is not a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, `[Element](https://dom.spec.whatwg.org/#element)`, or `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-5.  If either node is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) and parent is a [document](https://dom.spec.whatwg.org/#concept-document), or node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype) and parent is not a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-6.  If parent is a [document](https://dom.spec.whatwg.org/#concept-document), and any of the statements below, switched on the interface node [implements](https://webidl.spec.whatwg.org/#implements), are true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If parent is not a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, or `[Element](https://dom.spec.whatwg.org/#element)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If node is a [host-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor) of parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+3.  If child is non-null and its [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+4.  If node is not a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, `[Element](https://dom.spec.whatwg.org/#element)`, or `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+5.  If either node is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) and parent is a [document](https://dom.spec.whatwg.org/#concept-document), or node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype) and parent is not a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+6.  If parent is a [document](https://dom.spec.whatwg.org/#concept-document), and any of the statements below, switched on the interface node [implements](https://webidl.spec.whatwg.org/#implements), are true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`
 
@@ -2009,7 +2009,7 @@ To insert a node into a parent before a child, with an optional *suppress observ
     1.  [Adopt](https://dom.spec.whatwg.org/#concept-node-adopt) node into parent’s [node document](https://dom.spec.whatwg.org/#concept-node-document).
     2.  If child is null, then [append](https://infra.spec.whatwg.org/#set-append) node to parent’s [children](https://dom.spec.whatwg.org/#concept-tree-child).
     3.  Otherwise, [insert](https://infra.spec.whatwg.org/#list-insert) node into parent’s [children](https://dom.spec.whatwg.org/#concept-tree-child) before child’s [index](https://dom.spec.whatwg.org/#concept-tree-index).
-    4.  If parent is a [shadow host](https://dom.spec.whatwg.org/#element-shadow-host) whose [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is “`named`” and node is a [slottable](https://dom.spec.whatwg.org/#concept-slotable), then [assign a slot](https://dom.spec.whatwg.org/#assign-a-slot) for node.
+    4.  If parent is a [shadow host](https://dom.spec.whatwg.org/#element-shadow-host) whose [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) is "`named`” and node is a [slottable](https://dom.spec.whatwg.org/#concept-slotable), then [assign a slot](https://dom.spec.whatwg.org/#assign-a-slot) for node.
     5.  If parent’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), and parent is a [slot](https://dom.spec.whatwg.org/#concept-slot) whose [assigned nodes](https://dom.spec.whatwg.org/#slot-assigned-nodes) is the empty list, then run [signal a slot change](https://dom.spec.whatwg.org/#signal-a-slot-change) for parent.
     6.  Run [assign slottables for a tree](https://dom.spec.whatwg.org/#assign-slotables-for-a-tree) with node’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
     7.  For each [shadow-including inclusive descendant](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant) inclusiveDescendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order):
@@ -2017,7 +2017,7 @@ To insert a node into a parent before a child, with an optional *suppress observ
         1.  Run the [insertion steps](https://dom.spec.whatwg.org/#concept-node-insert-ext) with inclusiveDescendant.
         2.  If inclusiveDescendant is [connected](https://dom.spec.whatwg.org/#connected), then:
 
-            1.  If inclusiveDescendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom), then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with inclusiveDescendant, callback name “`connectedCallback`”, and an empty argument list.
+            1.  If inclusiveDescendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom), then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with inclusiveDescendant, callback name "`connectedCallback`”, and an empty argument list.
             2.  Otherwise, [try to upgrade](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-try-upgrade) inclusiveDescendant.
 
                 If this successfully upgrades inclusiveDescendant, its `connectedCallback` will be enqueued automatically during the [upgrade an element](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-upgrade-an-element) algorithm.
@@ -2029,12 +2029,12 @@ To append a node to a parent, [pre-insert](https://dom.spec.whatwg.org/#concept-
 
 To replace a child with node within a parent, run these steps:
 
-1.  If parent is not a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, or `[Element](https://dom.spec.whatwg.org/#element)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If node is a [host-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor) of parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-3.  If child’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-4.  If node is not a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, `[Element](https://dom.spec.whatwg.org/#element)`, or `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-5.  If either node is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) and parent is a [document](https://dom.spec.whatwg.org/#concept-document), or node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype) and parent is not a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-6.  If parent is a [document](https://dom.spec.whatwg.org/#concept-document), and any of the statements below, switched on the interface node [implements](https://webidl.spec.whatwg.org/#implements), are true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If parent is not a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, or `[Element](https://dom.spec.whatwg.org/#element)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If node is a [host-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-host-including-inclusive-ancestor) of parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+3.  If child’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+4.  If node is not a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, `[Element](https://dom.spec.whatwg.org/#element)`, or `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+5.  If either node is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) and parent is a [document](https://dom.spec.whatwg.org/#concept-document), or node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype) and parent is not a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+6.  If parent is a [document](https://dom.spec.whatwg.org/#concept-document), and any of the statements below, switched on the interface node [implements](https://webidl.spec.whatwg.org/#implements), are true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`
 
@@ -2086,7 +2086,7 @@ This algorithm does not make any checks with regards to the [node tree](https://
 
 To pre-remove a child from a parent, run these steps:
 
-1.  If child’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If child’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not parent, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  [Remove](https://dom.spec.whatwg.org/#concept-node-remove) child.
 3.  Return child.
 
@@ -2119,15 +2119,15 @@ To remove a node, with an optional *suppress observers flag*, run these steps:
 
 18. Let isParentConnected be parent’s [connected](https://dom.spec.whatwg.org/#connected).
 
-19. If node is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with node, callback name “`disconnectedCallback`”, and an empty argument list.
+19. If node is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with node, callback name "`disconnectedCallback`”, and an empty argument list.
 
     It is intentional for now that [custom](https://dom.spec.whatwg.org/#concept-element-custom) [elements](https://dom.spec.whatwg.org/#concept-element) do not get parent passed. This might change in the future if there is a need.
 
 20. For each [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) descendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), then:
 
 21. Run the [removing steps](https://dom.spec.whatwg.org/#concept-node-remove-ext) with descendant.
-22. If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name “`disconnectedCallback`”, and an empty argument list.
-23. For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\[“`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`”\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
+22. If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name "`disconnectedCallback`”, and an empty argument list.
+23. For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`”\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
 
 24. If *suppress observers flag* is unset, then [queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with « », « node », oldPreviousSibling, and oldNextSibling.
 
@@ -2417,7 +2417,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsun
 
 Inserts nodes before the [first child](https://dom.spec.whatwg.org/#concept-tree-first-child) of node, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [Document/append](https://developer.mozilla.org/en-US/docs/Web/API/Document/append "The Document.append() method inserts a set of Node objects or DOMString objects after the last child of the document. DOMString objects are inserted as equivalent Text nodes.")
 
@@ -2477,7 +2477,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsun
 
 Inserts nodes after the [last child](https://dom.spec.whatwg.org/#concept-tree-last-child) of node, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [Document/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren "The Document.replaceChildren() method replaces the existing children of a Document with a specified new set of children.")
 
@@ -2537,7 +2537,7 @@ Firefox for Android79+iOS Safari14+Chrome for Android86+Android WebView86+Samsun
 
 Replace all [children](https://dom.spec.whatwg.org/#concept-tree-child) of node with nodes, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [Document/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector "The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.")
 
@@ -2889,7 +2889,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsun
 
 Inserts nodes just before node, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [CharacterData/after](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/after "The after() method of the CharacterData interface inserts a set of Node objects or strings in the children list of the object's parent, just after the object itself.")
 
@@ -2949,7 +2949,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsun
 
 Inserts nodes just after node, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [CharacterData/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/replaceWith "The replaceWith() method of the CharacterData interface replaces this node in the children list of its parent with a set of Node objects or string.")
 
@@ -3009,7 +3009,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsun
 
 Replaces node with nodes, while replacing strings in nodes with equivalent `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node).
 
-[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
+[Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
 [CharacterData/remove](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/remove "The remove() method of the CharacterData removes the text contained in the node.")
 
@@ -3545,12 +3545,12 @@ The `new MutationObserver(callback)` constructor steps are:
 
 The `observe(target, options)` method steps are:
 
-1.  If either options\[“`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] or options\[“`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] does not [exist](https://infra.spec.whatwg.org/#map-exists), then set options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] to true.
-2.  If options\[“`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] [exists](https://infra.spec.whatwg.org/#map-exists) and options\[“`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] does not [exist](https://infra.spec.whatwg.org/#map-exists), then set options\[“`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] to true.
-3.  If none of options\[“`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`”\], options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\], and options\[“`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] is true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
-4.  If options\[“`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] is true and options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
-5.  If options\[“`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] is present and options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
-6.  If options\[“`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] is true and options\[“`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
+1.  If either options\["`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] or options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] does not [exist](https://infra.spec.whatwg.org/#map-exists), then set options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] to true.
+2.  If options\["`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] [exists](https://infra.spec.whatwg.org/#map-exists) and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] does not [exist](https://infra.spec.whatwg.org/#map-exists), then set options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] to true.
+3.  If none of options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`”\], options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\], and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] is true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
+4.  If options\["`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] is true and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
+5.  If options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] is present and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
+6.  If options\["`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] is true and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] is false, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a `TypeError`.
 7.  [For each](https://infra.spec.whatwg.org/#list-iterate) registered of target’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is [this](https://webidl.spec.whatwg.org/#this):
 
     1.  [For each](https://infra.spec.whatwg.org/#list-iterate) node of [this](https://webidl.spec.whatwg.org/#this)’s [node list](https://dom.spec.whatwg.org/#mutationobserver-node-list), [remove](https://infra.spec.whatwg.org/#list-remove) all [transient registered observers](https://dom.spec.whatwg.org/#transient-registered-observer) whose [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered from node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
@@ -3583,17 +3583,17 @@ To queue a mutation record of type for target with name, namespace, oldValue, ad
     1.  Let options be registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options).
     2.  If none of the following are true
 
-        -   node is not target and options\[“`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`”\] is false
-        -   type is “`attributes`” and options\[“`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        -   type is “`attributes`”, options\[“`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\[“`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
-        -   type is “`characterData`” and options\[“`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        -   type is “`childList`” and options\[“`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`”\] is false
+        -   node is not target and options\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`”\] is false
+        -   type is "`attributes`” and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`”\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`attributes`”, options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`”\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
+        -   type is "`characterData`” and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`”\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`childList`” and options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`”\] is false
 
         then:
 
         1.  Let mo be registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer).
         2.  If interestedObservers\[mo\] does not [exist](https://infra.spec.whatwg.org/#map-exists), then [set](https://infra.spec.whatwg.org/#map-set) interestedObservers\[mo\] to null.
-        3.  If either type is “`attributes`” and options\[“`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] is true, or type is “`characterData`” and options\[“`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] is true, then [set](https://infra.spec.whatwg.org/#map-set) interestedObservers\[mo\] to oldValue.
+        3.  If either type is "`attributes`” and options\["`[attributeOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributeoldvalue)`”\] is true, or type is "`characterData`” and options\["`[characterDataOldValue](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdataoldvalue)`”\] is true, then [set](https://infra.spec.whatwg.org/#map-set) interestedObservers\[mo\] to oldValue.
 
 4.  [For each](https://infra.spec.whatwg.org/#map-iterate) observer → mappedOldValue of interestedObservers:
 
@@ -3605,7 +3605,7 @@ To queue a mutation record of type for target with name, namespace, oldValue, ad
 To queue a tree mutation record for target with addedNodes, removedNodes, previousSibling, and nextSibling, run these steps:
 
 1.  Assert: either addedNodes or removedNodes [is not empty](https://infra.spec.whatwg.org/#list-is-empty).
-2.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of “`childList`” for target with null, null, null, addedNodes, removedNodes, previousSibling, and nextSibling.
+2.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of "`childList`” for target with null, null, null, addedNodes, removedNodes, previousSibling, and nextSibling.
 
 #### 4.3.3. Interface `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)`[](https://dom.spec.whatwg.org/#interface-mutationrecord)
 
@@ -3631,11 +3631,11 @@ Firefox for Android14+iOS Safari7+Chrome for Android25+Android WebView37+Samsung
 
 `` record . `[type](https://dom.spec.whatwg.org/#dom-mutationrecord-type)` ``
 
-Returns “`attributes`” if it was an [attribute](https://dom.spec.whatwg.org/#concept-attribute) mutation. “`characterData`” if it was a mutation to a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node). And “`childList`” if it was a mutation to the [tree](https://dom.spec.whatwg.org/#concept-tree) of [nodes](https://dom.spec.whatwg.org/#concept-node).
+Returns "`attributes`” if it was an [attribute](https://dom.spec.whatwg.org/#concept-attribute) mutation. "`characterData`” if it was a mutation to a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node). And "`childList`” if it was a mutation to the [tree](https://dom.spec.whatwg.org/#concept-tree) of [nodes](https://dom.spec.whatwg.org/#concept-node).
 
 `` record . `[target](https://dom.spec.whatwg.org/#dom-mutationrecord-target)` ``
 
-Returns the [node](https://dom.spec.whatwg.org/#concept-node) the mutation affected, depending on the `[type](https://dom.spec.whatwg.org/#dom-mutationrecord-type)`. For “`attributes`”, it is the [element](https://dom.spec.whatwg.org/#concept-element) whose [attribute](https://dom.spec.whatwg.org/#concept-attribute) changed. For “`characterData`”, it is the `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node). For “`childList`”, it is the [node](https://dom.spec.whatwg.org/#concept-node) whose [children](https://dom.spec.whatwg.org/#concept-tree-child) changed.
+Returns the [node](https://dom.spec.whatwg.org/#concept-node) the mutation affected, depending on the `[type](https://dom.spec.whatwg.org/#dom-mutationrecord-type)`. For "`attributes`”, it is the [element](https://dom.spec.whatwg.org/#concept-element) whose [attribute](https://dom.spec.whatwg.org/#concept-attribute) changed. For "`characterData`”, it is the `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node). For "`childList`”, it is the [node](https://dom.spec.whatwg.org/#concept-node) whose [children](https://dom.spec.whatwg.org/#concept-tree-child) changed.
 
 `` record . `[addedNodes](https://dom.spec.whatwg.org/#dom-mutationrecord-addednodes)` ``
 
@@ -3659,7 +3659,7 @@ Returns the [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace
 
 `` record . `[oldValue](https://dom.spec.whatwg.org/#dom-mutationrecord-oldvalue)` ``
 
-The return value depends on `[type](https://dom.spec.whatwg.org/#dom-mutationrecord-type)`. For “`attributes`”, it is the [value](https://dom.spec.whatwg.org/#concept-attribute-value) of the changed [attribute](https://dom.spec.whatwg.org/#concept-attribute) before the change. For “`characterData`”, it is the [data](https://dom.spec.whatwg.org/#concept-cd-data) of the changed [node](https://dom.spec.whatwg.org/#concept-node) before the change. For “`childList`”, it is null.
+The return value depends on `[type](https://dom.spec.whatwg.org/#dom-mutationrecord-type)`. For "`attributes`”, it is the [value](https://dom.spec.whatwg.org/#concept-attribute-value) of the changed [attribute](https://dom.spec.whatwg.org/#concept-attribute) before the change. For "`characterData`”, it is the [data](https://dom.spec.whatwg.org/#concept-cd-data) of the changed [node](https://dom.spec.whatwg.org/#concept-node) before the change. For "`childList`”, it is null.
 
 The `type`, `target`, `addedNodes`, `removedNodes`, `previousSibling`, `nextSibling`, `attributeName`, `attributeNamespace`, and `oldValue` attributes must return the values they were initialized to.
 
@@ -3809,11 +3809,11 @@ Its [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-na
 
 An [exclusive `Text` node](https://dom.spec.whatwg.org/#exclusive-text-node)
 
-“`#text`”.
+"`#text`”.
 
 `[CDATASection](https://dom.spec.whatwg.org/#cdatasection)`
 
-“`#cdata-section`”.
+"`#cdata-section`”.
 
 `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)`
 
@@ -3821,11 +3821,11 @@ Its [target](https://dom.spec.whatwg.org/#concept-pi-target).
 
 `[Comment](https://dom.spec.whatwg.org/#comment)`
 
-“`#comment`”.
+"`#comment`”.
 
 `[Document](https://dom.spec.whatwg.org/#document)`
 
-“`#document`”.
+"`#document`”.
 
 `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
@@ -3833,7 +3833,7 @@ Its [name](https://dom.spec.whatwg.org/#concept-doctype-name).
 
 `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`
 
-“`#document-fragment`”.
+"`#document-fragment`”.
 
 The `nodeType` getter steps are to return the first matching statement, switching on the interface [this](https://webidl.spec.whatwg.org/#this) [implements](https://webidl.spec.whatwg.org/#implements):
 
@@ -3885,11 +3885,11 @@ Its [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-na
 
 An [exclusive `Text` node](https://dom.spec.whatwg.org/#exclusive-text-node)
 
-“`#text`”.
+"`#text`”.
 
 `[CDATASection](https://dom.spec.whatwg.org/#cdatasection)`
 
-“`#cdata-section`”.
+"`#cdata-section`”.
 
 `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)`
 
@@ -3897,11 +3897,11 @@ Its [target](https://dom.spec.whatwg.org/#concept-pi-target).
 
 `[Comment](https://dom.spec.whatwg.org/#comment)`
 
-“`#comment`”.
+"`#comment`”.
 
 `[Document](https://dom.spec.whatwg.org/#document)`
 
-“`#document`”.
+"`#document`”.
 
 `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
@@ -3909,7 +3909,7 @@ Its [name](https://dom.spec.whatwg.org/#concept-doctype-name).
 
 `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`
 
-“`#document-fragment`”.
+"`#document-fragment`”.
 
 ------------------------------------------------------------------------
 
@@ -4191,7 +4191,7 @@ The `ownerDocument` getter steps are to return null, if [this](https://webidl.sp
 
 The [node document](https://dom.spec.whatwg.org/#concept-node-document) of a [document](https://dom.spec.whatwg.org/#concept-document) is that [document](https://dom.spec.whatwg.org/#concept-document) itself. All [nodes](https://dom.spec.whatwg.org/#concept-node) have a [node document](https://dom.spec.whatwg.org/#concept-node-document) at all times.
 
-The `getRootNode(options)` method steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [shadow-including root](https://dom.spec.whatwg.org/#concept-shadow-including-root) if options\[“`[composed](https://dom.spec.whatwg.org/#dom-getrootnodeoptions-composed)`”\] is true; otherwise [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
+The `getRootNode(options)` method steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [shadow-including root](https://dom.spec.whatwg.org/#concept-shadow-including-root) if options\["`[composed](https://dom.spec.whatwg.org/#dom-getrootnodeoptions-composed)`”\] is true; otherwise [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
 
 The `parentNode` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
 
@@ -4459,7 +4459,7 @@ To clone a node, with an optional document and *clone children flag*, run these 
 
 The `cloneNode(deep)` method steps are:
 
-1.  If [this](https://webidl.spec.whatwg.org/#this) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If [this](https://webidl.spec.whatwg.org/#this) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Return a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of [this](https://webidl.spec.whatwg.org/#this), with the *clone children flag* set if deep is true.
 
 A [node](https://dom.spec.whatwg.org/#concept-node) A equals a [node](https://dom.spec.whatwg.org/#concept-node) B if all of the following conditions are true:
@@ -4629,7 +4629,7 @@ The `contains(other)` method steps are to return true if other is an [inclusive 
 To locate a namespace prefix for an element using namespace, run these steps:
 
 1.  If element’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is namespace and its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is non-null, then return its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix).
-2.  If element [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is “`xmlns`” and [value](https://dom.spec.whatwg.org/#concept-attribute-value) is namespace, then return element’s first such [attribute](https://dom.spec.whatwg.org/#concept-attribute)’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name).
+2.  If element [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is "`xmlns`” and [value](https://dom.spec.whatwg.org/#concept-attribute-value) is namespace, then return element’s first such [attribute](https://dom.spec.whatwg.org/#concept-attribute)’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name).
 3.  If element’s [parent element](https://dom.spec.whatwg.org/#parent-element) is not null, then return the result of running [locate a namespace prefix](https://dom.spec.whatwg.org/#locate-a-namespace-prefix) on that [element](https://dom.spec.whatwg.org/#concept-element) using namespace.
 4.  Return null.
 
@@ -4638,7 +4638,7 @@ To locate a namespace for a node using prefix, switch on the interface node [imp
 `[Element](https://dom.spec.whatwg.org/#element)`
 
 1.  If its [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is non-null and its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is prefix, then return [namespace](https://dom.spec.whatwg.org/#concept-element-namespace).
-2.  If it [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is “`xmlns`”, and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is prefix, or if prefix is null and it [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is null, and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is “`xmlns`”, then return its [value](https://dom.spec.whatwg.org/#concept-attribute-value) if it is not the empty string, and null otherwise.
+2.  If it [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is "`xmlns`”, and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is prefix, or if prefix is null and it [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is null, and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is "`xmlns`”, then return its [value](https://dom.spec.whatwg.org/#concept-attribute-value) if it is not the empty string, and null otherwise.
 3.  If its [parent element](https://dom.spec.whatwg.org/#parent-element) is null, then return null.
 4.  Return the result of running [locate a namespace](https://dom.spec.whatwg.org/#locate-a-namespace) on its [parent element](https://dom.spec.whatwg.org/#parent-element) using prefix.
 
@@ -4867,7 +4867,7 @@ The list of elements with class names classNames for a [node](https://dom.spec.w
 2.  If classes is the empty set, return an empty `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)`.
 3.  Return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) that have all their [classes](https://dom.spec.whatwg.org/#concept-class) in classes.
 
-    The comparisons for the [classes](https://dom.spec.whatwg.org/#concept-class) must be done in an [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive) manner if root’s [node document](https://dom.spec.whatwg.org/#concept-node-document)’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`quirks`”; otherwise in an [identical to](https://infra.spec.whatwg.org/#string-is) manner.
+    The comparisons for the [classes](https://dom.spec.whatwg.org/#concept-class) must be done in an [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive) manner if root’s [node document](https://dom.spec.whatwg.org/#concept-node-document)’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`quirks`”; otherwise in an [identical to](https://infra.spec.whatwg.org/#string-is) manner.
 
 When invoked with the same argument, the same `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` object may be returned as returned by an earlier call.
 
@@ -4933,19 +4933,19 @@ dictionary `ElementCreationOptions` { [DOMString](https://webidl.spec.whatwg.org
 
 `[Document](https://dom.spec.whatwg.org/#document)` [nodes](https://dom.spec.whatwg.org/#concept-node) are simply known as documents.
 
-Each [document](https://dom.spec.whatwg.org/#concept-document) has an associated encoding (an [encoding](https://encoding.spec.whatwg.org/#encoding)), content type (a string), URL (a [URL](https://url.spec.whatwg.org/#concept-url)), origin (an [origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin)), type (“`xml`” or “`html`”), and mode (“`no-quirks`”, “`quirks`”, or “`limited-quirks`”). [\[ENCODING\]](https://dom.spec.whatwg.org/#biblio-encoding) [\[URL\]](https://dom.spec.whatwg.org/#biblio-url) [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
+Each [document](https://dom.spec.whatwg.org/#concept-document) has an associated encoding (an [encoding](https://encoding.spec.whatwg.org/#encoding)), content type (a string), URL (a [URL](https://url.spec.whatwg.org/#concept-url)), origin (an [origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin)), type ("`xml`” or "`html`”), and mode ("`no-quirks`”, "`quirks`”, or "`limited-quirks`”). [\[ENCODING\]](https://dom.spec.whatwg.org/#biblio-encoding) [\[URL\]](https://dom.spec.whatwg.org/#biblio-url) [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-Unless stated otherwise, a [document](https://dom.spec.whatwg.org/#concept-document)’s [encoding](https://dom.spec.whatwg.org/#concept-document-encoding) is the [utf-8](https://encoding.spec.whatwg.org/#utf-8) [encoding](https://encoding.spec.whatwg.org/#encoding), [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is “`application/xml`”, [URL](https://dom.spec.whatwg.org/#concept-document-url) is “`about:blank`”, [origin](https://dom.spec.whatwg.org/#concept-document-origin) is an [opaque origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque), [type](https://dom.spec.whatwg.org/#concept-document-type) is “`xml`”, and its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`no-quirks`”.
+Unless stated otherwise, a [document](https://dom.spec.whatwg.org/#concept-document)’s [encoding](https://dom.spec.whatwg.org/#concept-document-encoding) is the [utf-8](https://encoding.spec.whatwg.org/#utf-8) [encoding](https://encoding.spec.whatwg.org/#encoding), [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is "`application/xml`”, [URL](https://dom.spec.whatwg.org/#concept-document-url) is "`about:blank`”, [origin](https://dom.spec.whatwg.org/#concept-document-origin) is an [opaque origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque), [type](https://dom.spec.whatwg.org/#concept-document-type) is "`xml`”, and its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`no-quirks`”.
 
-A [document](https://dom.spec.whatwg.org/#concept-document) is said to be an XML document if its [type](https://dom.spec.whatwg.org/#concept-document-type) is “`xml`”; otherwise an HTML document. Whether a [document](https://dom.spec.whatwg.org/#concept-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document) or an [XML document](https://dom.spec.whatwg.org/#xml-document) affects the behavior of certain APIs.
+A [document](https://dom.spec.whatwg.org/#concept-document) is said to be an XML document if its [type](https://dom.spec.whatwg.org/#concept-document-type) is "`xml`”; otherwise an HTML document. Whether a [document](https://dom.spec.whatwg.org/#concept-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document) or an [XML document](https://dom.spec.whatwg.org/#xml-document) affects the behavior of certain APIs.
 
-A [document](https://dom.spec.whatwg.org/#concept-document) is said to be in no-quirks mode if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`no-quirks`”, quirks mode[](https://dom.spec.whatwg.org/#concept-document-quirks) if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`quirks`”, and limited-quirks mode if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`limited-quirks`”.
+A [document](https://dom.spec.whatwg.org/#concept-document) is said to be in no-quirks mode if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`no-quirks`”, quirks mode[](https://dom.spec.whatwg.org/#concept-document-quirks) if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`quirks`”, and limited-quirks mode if its [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`limited-quirks`”.
 
-The [mode](https://dom.spec.whatwg.org/#concept-document-mode) is only ever changed from the default for [documents](https://dom.spec.whatwg.org/#concept-document) created by the [HTML parser](https://html.spec.whatwg.org/multipage/parsing.html#html-parser) based on the presence, absence, or value of the DOCTYPE string, and by a new [browsing context](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context) (initial “`about:blank`”). [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
+The [mode](https://dom.spec.whatwg.org/#concept-document-mode) is only ever changed from the default for [documents](https://dom.spec.whatwg.org/#concept-document) created by the [HTML parser](https://html.spec.whatwg.org/multipage/parsing.html#html-parser) based on the presence, absence, or value of the DOCTYPE string, and by a new [browsing context](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context) (initial "`about:blank`”). [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-[No-quirks mode](https://dom.spec.whatwg.org/#concept-document-no-quirks) was originally known as “standards mode” and [limited-quirks mode](https://dom.spec.whatwg.org/#concept-document-limited-quirks) was once known as “almost standards mode”. They have been renamed because their details are now defined by standards. (And because Ian Hickson vetoed their original names on the basis that they are nonsensical.)
+[No-quirks mode](https://dom.spec.whatwg.org/#concept-document-no-quirks) was originally known as "standards mode” and [limited-quirks mode](https://dom.spec.whatwg.org/#concept-document-limited-quirks) was once known as "almost standards mode”. They have been renamed because their details are now defined by standards. (And because Ian Hickson vetoed their original names on the basis that they are nonsensical.)
 
-A [document](https://dom.spec.whatwg.org/#concept-document)’s [get the parent](https://dom.spec.whatwg.org/#get-the-parent) algorithm, given an event, returns null if event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value is “`load`” or [document](https://dom.spec.whatwg.org/#concept-document) does not have a [browsing context](https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc); otherwise the [document](https://dom.spec.whatwg.org/#concept-document)’s [relevant global object](https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global).
+A [document](https://dom.spec.whatwg.org/#concept-document)’s [get the parent](https://dom.spec.whatwg.org/#get-the-parent) algorithm, given an event, returns null if event’s `[type](https://dom.spec.whatwg.org/#dom-event-type)` attribute value is "`load`” or [document](https://dom.spec.whatwg.org/#concept-document) does not have a [browsing context](https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc); otherwise the [document](https://dom.spec.whatwg.org/#concept-document)’s [relevant global object](https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global).
 
 ------------------------------------------------------------------------
 
@@ -5055,7 +5055,7 @@ Firefox for Android4+iOS Safari2+Chrome for Android18+Android WebView1+Samsung I
 
 `` document . `[compatMode](https://dom.spec.whatwg.org/#dom-document-compatmode)` ``
 
-Returns the string “`BackCompat`” if document’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`quirks`”; otherwise “`CSS1Compat`”.
+Returns the string "`BackCompat`” if document’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`quirks`”; otherwise "`CSS1Compat`”.
 
 [Document/characterSet](https://developer.mozilla.org/en-US/docs/Web/API/Document/characterSet "The Document.characterSet read-only property returns the character encoding of the document that it's currently rendered with.")
 
@@ -5109,7 +5109,7 @@ The `implementation` getter steps are to return the `[DOMImplementation](https:/
 
 The `URL` and `documentURI` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [URL](https://dom.spec.whatwg.org/#concept-document-url), [serialized](https://url.spec.whatwg.org/#concept-url-serializer).
 
-The `compatMode` getter steps are to return “`BackCompat`” if [this](https://webidl.spec.whatwg.org/#this)’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is “`quirks`”; otherwise “`CSS1Compat`”.
+The `compatMode` getter steps are to return "`BackCompat`” if [this](https://webidl.spec.whatwg.org/#this)’s [mode](https://dom.spec.whatwg.org/#concept-document-mode) is "`quirks`”; otherwise "`CSS1Compat`”.
 
 The `characterSet`, `charset`, and `inputEncoding` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [encoding](https://dom.spec.whatwg.org/#concept-document-encoding)’s [name](https://encoding.spec.whatwg.org/#name).
 
@@ -5181,7 +5181,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 collection = document . `[getElementsByTagName(qualifiedName)](https://dom.spec.whatwg.org/#dom-document-getelementsbytagname)`
 
-If qualifiedName is “`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
+If qualifiedName is "`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
 
 Otherwise, returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName. (Matches case-insensitively against [elements](https://dom.spec.whatwg.org/#concept-element) in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) within an [HTML document](https://dom.spec.whatwg.org/#html-document).)
 
@@ -5205,11 +5205,11 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 collection = document . `[getElementsByTagNameNS(namespace, localName)](https://dom.spec.whatwg.org/#dom-document-getelementsbytagnamens)`
 
-If namespace and localName are “`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
+If namespace and localName are "`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
 
-If only namespace is “`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is localName.
+If only namespace is "`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is localName.
 
-If only localName is “`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is namespace.
+If only localName is "`*`” returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is namespace.
 
 Otherwise, returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is namespace and [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is localName.
 
@@ -5303,9 +5303,9 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 `element = document . [createElement(localName [, options])](https://dom.spec.whatwg.org/#dom-document-createelement)`
 
-Returns an [element](https://dom.spec.whatwg.org/#concept-element) with localName as [local name](https://dom.spec.whatwg.org/#concept-element-local-name) (if document is an [HTML document](https://dom.spec.whatwg.org/#html-document), localName gets lowercased). The [element](https://dom.spec.whatwg.org/#concept-element)’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) when document is an [HTML document](https://dom.spec.whatwg.org/#html-document) or document’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is “`application/xhtml+xml`”; otherwise null.
+Returns an [element](https://dom.spec.whatwg.org/#concept-element) with localName as [local name](https://dom.spec.whatwg.org/#concept-element-local-name) (if document is an [HTML document](https://dom.spec.whatwg.org/#html-document), localName gets lowercased). The [element](https://dom.spec.whatwg.org/#concept-element)’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) when document is an [HTML document](https://dom.spec.whatwg.org/#html-document) or document’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is "`application/xhtml+xml`”; otherwise null.
 
-If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
+If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
 
 When supplied, options’s `[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)` can be used to create a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element).
 
@@ -5331,14 +5331,14 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns an [element](https://dom.spec.whatwg.org/#concept-element) with [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) namespace. Its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) will be everything before U+003A (:) in qualifiedName or null. Its [local name](https://dom.spec.whatwg.org/#concept-element-local-name) will be everything after U+003A (:) in qualifiedName or qualifiedName.
 
-If qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
+If qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
 
-If one of the following conditions is true a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown:
+If one of the following conditions is true a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown:
 
 -   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is not null and namespace is the empty string.
--   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is “`xml`” and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
--   qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is “`xmlns`” and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
--   namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is “`xmlns`”.
+-   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xml`” and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
+-   qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`” and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
+-   namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`”.
 
 When supplied, options’s `[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)` can be used to create a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element).
 
@@ -5450,7 +5450,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 `` processingInstruction = document . `[createProcessingInstruction(target, data)](https://dom.spec.whatwg.org/#dom-document-createprocessinginstruction)` ``
 
-Returns a `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` [node](https://dom.spec.whatwg.org/#concept-node) whose [target](https://dom.spec.whatwg.org/#concept-pi-target) is target and [data](https://dom.spec.whatwg.org/#concept-cd-data) is data. If target does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown. If data contains “`?>`” an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
+Returns a `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` [node](https://dom.spec.whatwg.org/#concept-node) whose [target](https://dom.spec.whatwg.org/#concept-pi-target) is target and [data](https://dom.spec.whatwg.org/#concept-cd-data) is data. If target does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown. If data contains "`?>`” an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown.
 
 The element interface for any name and namespace is `[Element](https://dom.spec.whatwg.org/#element)`, unless stated otherwise.
 
@@ -5458,18 +5458,18 @@ The HTML Standard will, e.g., define that for `html` and the [HTML namespace](ht
 
 The `createElement(localName, options)` method steps are:
 
-1.  If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then set localName to localName in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
 3.  Let is be null.
-4.  If options is a [dictionary](https://webidl.spec.whatwg.org/#dfn-dictionary) and options\[“`[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set is to it.
-5.  Let namespace be the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), if [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document) or [this](https://webidl.spec.whatwg.org/#this)’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is “`application/xhtml+xml`”; otherwise null.
+4.  If options is a [dictionary](https://webidl.spec.whatwg.org/#dfn-dictionary) and options\["`[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set is to it.
+5.  Let namespace be the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), if [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document) or [this](https://webidl.spec.whatwg.org/#this)’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) is "`application/xhtml+xml`”; otherwise null.
 6.  Return the result of [creating an element](https://dom.spec.whatwg.org/#concept-create-element) given [this](https://webidl.spec.whatwg.org/#this), localName, namespace, null, is, and with the synchronous custom elements flag set.
 
 The internal `createElementNS` steps, given document, namespace, qualifiedName, and options, are as follows:
 
 1.  Let namespace, prefix, and localName be the result of passing namespace and qualifiedName to [validate and extract](https://dom.spec.whatwg.org/#validate-and-extract).
 2.  Let is be null.
-3.  If options is a [dictionary](https://webidl.spec.whatwg.org/#dfn-dictionary) and options\[“`[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set is to it.
+3.  If options is a [dictionary](https://webidl.spec.whatwg.org/#dfn-dictionary) and options\["`[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)`”\] [exists](https://infra.spec.whatwg.org/#map-exists), then set is to it.
 4.  Return the result of [creating an element](https://dom.spec.whatwg.org/#concept-create-element) given document, localName, namespace, prefix, is, and with the synchronous custom elements flag set.
 
 The `createElementNS(namespace, qualifiedName, options)` method steps are to return the result of running the [internal `createElementNS` steps](https://dom.spec.whatwg.org/#internal-createelementns-steps), given [this](https://webidl.spec.whatwg.org/#this), namespace, qualifiedName, and options.
@@ -5484,8 +5484,8 @@ No check is performed that data consists of characters that match the `[Char](ht
 
 The `createCDATASection(data)` method steps are:
 
-1.  If [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If data contains the string “`]]>`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If data contains the string "`]]>`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return a new `[CDATASection](https://dom.spec.whatwg.org/#cdatasection)` [node](https://dom.spec.whatwg.org/#concept-node) with its [data](https://dom.spec.whatwg.org/#concept-cd-data) set to data and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to [this](https://webidl.spec.whatwg.org/#this).
 
 The method steps are to return a new `[Comment](https://dom.spec.whatwg.org/#comment)` [node](https://dom.spec.whatwg.org/#concept-node) whose [data](https://dom.spec.whatwg.org/#concept-cd-data) is data and [node document](https://dom.spec.whatwg.org/#concept-node-document) is [this](https://webidl.spec.whatwg.org/#this).
@@ -5494,11 +5494,11 @@ No check is performed that data consists of characters that match the `[Char](ht
 
 The `createProcessingInstruction(target, data)` method steps are:
 
-1.  If target does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If data contains the string “`?>`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If target does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If data contains the string "`?>`”, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return a new `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` [node](https://dom.spec.whatwg.org/#concept-node), with [target](https://dom.spec.whatwg.org/#concept-pi-target) set to target, [data](https://dom.spec.whatwg.org/#concept-cd-data) set to data, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to [this](https://webidl.spec.whatwg.org/#this).
 
-No check is performed that target contains “`xml`” or “`:`”, or that data contains characters that match the `[Char](https://www.w3.org/TR/xml/#NT-Char)` production.
+No check is performed that target contains "`xml`” or "`:`”, or that data contains characters that match the `[Char](https://www.w3.org/TR/xml/#NT-Char)` production.
 
 ------------------------------------------------------------------------
 
@@ -5524,7 +5524,7 @@ clone = document . [importNode(node \[, deep = false\])](https://dom.spec.whatwg
 
 Returns a copy of node. If deep is true, the copy also includes the node’s [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant).
 
-If node is a [document](https://dom.spec.whatwg.org/#concept-document) or a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), throws a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+If node is a [document](https://dom.spec.whatwg.org/#concept-document) or a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), throws a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 [Document/adoptNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptNode "Document.adoptNode() transfers a node from another document into the method's document. The adopted node and its subtree is removed from its original document (if any), and its ownerDocument is changed to the current document. The node can then be inserted into the current document.")
 
@@ -5548,11 +5548,11 @@ node = document . `[adoptNode(node)](https://dom.spec.whatwg.org/#dom-document-a
 
 Moves node from another [document](https://dom.spec.whatwg.org/#concept-document) and returns it.
 
-If node is a [document](https://dom.spec.whatwg.org/#concept-document), throws a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` or, if node is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), throws a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+If node is a [document](https://dom.spec.whatwg.org/#concept-document), throws a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` or, if node is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), throws a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 The `importNode(node, deep)` method steps are:
 
-1.  If node is a [document](https://dom.spec.whatwg.org/#concept-document) or [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If node is a [document](https://dom.spec.whatwg.org/#concept-document) or [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Return a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of node, with [this](https://webidl.spec.whatwg.org/#this) and the *clone children flag* set if deep is true.
 
 [Specifications](https://dom.spec.whatwg.org/#other-applicable-specifications) may define adopting steps for all or some [nodes](https://dom.spec.whatwg.org/#concept-node). The algorithm is passed node and oldDocument, as indicated in the [adopt](https://dom.spec.whatwg.org/#concept-node-adopt) algorithm.
@@ -5568,13 +5568,13 @@ To adopt a node into a document, run these steps:
         1.  Set inclusiveDescendant’s [node document](https://dom.spec.whatwg.org/#concept-node-document) to document.
         2.  If inclusiveDescendant is an [element](https://dom.spec.whatwg.org/#concept-element), then set the [node document](https://dom.spec.whatwg.org/#concept-node-document) of each [attribute](https://dom.spec.whatwg.org/#concept-attribute) in inclusiveDescendant’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) to document.
 
-    2.  For each inclusiveDescendant in node’s [shadow-including inclusive descendants](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant) that is [custom](https://dom.spec.whatwg.org/#concept-element-custom), [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with inclusiveDescendant, callback name “`adoptedCallback`”, and an argument list containing oldDocument and document.
+    2.  For each inclusiveDescendant in node’s [shadow-including inclusive descendants](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant) that is [custom](https://dom.spec.whatwg.org/#concept-element-custom), [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with inclusiveDescendant, callback name "`adoptedCallback`”, and an argument list containing oldDocument and document.
     3.  For each inclusiveDescendant in node’s [shadow-including inclusive descendants](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant), in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), run the [adopting steps](https://dom.spec.whatwg.org/#concept-node-adopt-ext) with inclusiveDescendant and oldDocument.
 
 The `adoptNode(node)` method steps are:
 
-1.  If node is a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If node is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If node is a [document](https://dom.spec.whatwg.org/#concept-document), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If node is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If node is a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node) whose [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is non-null, then return.
 4.  [Adopt](https://dom.spec.whatwg.org/#concept-node-adopt) node into [this](https://webidl.spec.whatwg.org/#this).
 5.  Return node.
@@ -5601,7 +5601,7 @@ Firefox for Android44+iOS Safari1+Chrome for Android18+Android WebView1+Samsung 
 
 The `createAttribute(localName)` method steps are:
 
-1.  If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then set localName to localName in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
 3.  Return a new [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is localName and [node document](https://dom.spec.whatwg.org/#concept-node-document) is [this](https://webidl.spec.whatwg.org/#this).
 
@@ -5641,112 +5641,112 @@ The `createEvent(interface)` method steps are:
 
     Notes
 
-    “`beforeunloadevent`”
+    "`beforeunloadevent`”
 
     `[BeforeUnloadEvent](https://html.spec.whatwg.org/multipage/browsing-the-web.html#beforeunloadevent)`
 
     [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-    “`compositionevent`”
+    "`compositionevent`”
 
     `[CompositionEvent](https://www.w3.org/TR/uievents/#compositionevent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`customevent`”
+    "`customevent`”
 
     `[CustomEvent](https://dom.spec.whatwg.org/#customevent)`
 
-    “`devicemotionevent`”
+    "`devicemotionevent`”
 
     `[DeviceMotionEvent](https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion)`
 
     [\[DEVICE-ORIENTATION\]](https://dom.spec.whatwg.org/#biblio-device-orientation)
 
-    “`deviceorientationevent`”
+    "`deviceorientationevent`”
 
     `[DeviceOrientationEvent](https://w3c.github.io/deviceorientation/spec-source-orientation.html#devicemotion)`
 
-    “`dragevent`”
+    "`dragevent`”
 
     `[DragEvent](https://html.spec.whatwg.org/multipage/dnd.html#dragevent)`
 
     [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-    “`event`”
+    "`event`”
 
     `[Event](https://dom.spec.whatwg.org/#event)`
 
-    “`events`”
+    "`events`”
 
-    “`focusevent`”
+    "`focusevent`”
 
     `[FocusEvent](https://www.w3.org/TR/uievents/#focusevent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`hashchangeevent`”
+    "`hashchangeevent`”
 
     `[HashChangeEvent](https://html.spec.whatwg.org/multipage/browsing-the-web.html#hashchangeevent)`
 
     [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-    “`htmlevents`”
+    "`htmlevents`”
 
     `[Event](https://dom.spec.whatwg.org/#event)`
 
-    “`keyboardevent`”
+    "`keyboardevent`”
 
     `[KeyboardEvent](https://www.w3.org/TR/uievents/#keyboardevent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`messageevent`”
+    "`messageevent`”
 
     `[MessageEvent](https://html.spec.whatwg.org/multipage/comms.html#messageevent)`
 
     [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-    “`mouseevent`”
+    "`mouseevent`”
 
     `[MouseEvent](https://www.w3.org/TR/uievents/#mouseevent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`mouseevents`”
+    "`mouseevents`”
 
-    “`storageevent`”
+    "`storageevent`”
 
     `[StorageEvent](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent)`
 
     [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-    “`svgevents`”
+    "`svgevents`”
 
     `[Event](https://dom.spec.whatwg.org/#event)`
 
-    “`textevent`”
+    "`textevent`”
 
     `[CompositionEvent](https://www.w3.org/TR/uievents/#compositionevent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`touchevent`”
+    "`touchevent`”
 
     `[TouchEvent](https://w3c.github.io/touch-events/#idl-def-touchevent)`
 
     [\[TOUCH-EVENTS\]](https://dom.spec.whatwg.org/#biblio-touch-events)
 
-    “`uievent`”
+    "`uievent`”
 
     `[UIEvent](https://www.w3.org/TR/uievents/#uievent)`
 
     [\[UIEVENTS\]](https://dom.spec.whatwg.org/#biblio-uievents)
 
-    “`uievents`”
+    "`uievents`”
 
-3.  If constructor is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-4.  If the interface indicated by constructor is not exposed on the [relevant global object](https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global) of [this](https://webidl.spec.whatwg.org/#this), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+3.  If constructor is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+4.  If the interface indicated by constructor is not exposed on the [relevant global object](https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global) of [this](https://webidl.spec.whatwg.org/#this), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     Typically user agents disable support for touch events in some configurations, in which case this clause would be triggered for the interface `[TouchEvent](https://w3c.github.io/touch-events/#idl-def-touchevent)`.
 
@@ -5884,7 +5884,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 `` doctype = document . `[implementation](https://dom.spec.whatwg.org/#dom-document-implementation)` . `[createDocumentType(qualifiedName, publicId, systemId)](https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype)` ``
 
-Returns a [doctype](https://dom.spec.whatwg.org/#concept-doctype), with the given qualifiedName, publicId, and systemId. If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown, and if it does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production, a “`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown.
+Returns a [doctype](https://dom.spec.whatwg.org/#concept-doctype), with the given qualifiedName, publicId, and systemId. If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown, and if it does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production, a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown.
 
 [DOMImplementation/createDocument](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocument "The DOMImplementation.createDocument() method creates and returns an XMLDocument.")
 
@@ -5937,7 +5937,7 @@ The `createDocumentType(qualifiedName, publicId, systemId)` method steps are:
 1.  [Validate](https://dom.spec.whatwg.org/#validate) qualifiedName.
 2.  Return a new [doctype](https://dom.spec.whatwg.org/#concept-doctype), with qualifiedName as its [name](https://dom.spec.whatwg.org/#concept-doctype-name), publicId as its [public ID](https://dom.spec.whatwg.org/#concept-doctype-publicid), and systemId as its [system ID](https://dom.spec.whatwg.org/#concept-doctype-systemid), and with its [node document](https://dom.spec.whatwg.org/#concept-node-document) set to the associated [document](https://dom.spec.whatwg.org/#concept-document) of [this](https://webidl.spec.whatwg.org/#this).
 
-No check is performed that publicId code points match the `[PubidChar](https://www.w3.org/TR/xml/#NT-PubidChar)` production or that systemId does not contain both a ‘`"`’ and a “`'`”.
+No check is performed that publicId code points match the `[PubidChar](https://www.w3.org/TR/xml/#NT-PubidChar)` production or that systemId does not contain both a ‘`"`’ and a "`'`”.
 
 The `createDocument(namespace, qualifiedName, doctype)` method steps are:
 
@@ -5966,8 +5966,8 @@ The `createDocument(namespace, qualifiedName, doctype)` method steps are:
 The `createHTMLDocument(title)` method steps are:
 
 1.  Let doc be a new [document](https://dom.spec.whatwg.org/#concept-document) that is an [HTML document](https://dom.spec.whatwg.org/#html-document).
-2.  Set doc’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) to “`text/html`”.
-3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) a new [doctype](https://dom.spec.whatwg.org/#concept-doctype), with “`html`” as its [name](https://dom.spec.whatwg.org/#concept-doctype-name) and with its [node document](https://dom.spec.whatwg.org/#concept-node-document) set to doc, to doc.
+2.  Set doc’s [content type](https://dom.spec.whatwg.org/#concept-document-content-type) to "`text/html`”.
+3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) a new [doctype](https://dom.spec.whatwg.org/#concept-doctype), with "`html`” as its [name](https://dom.spec.whatwg.org/#concept-doctype-name) and with its [node document](https://dom.spec.whatwg.org/#concept-node-document) set to doc, to doc.
 4.  [Append](https://dom.spec.whatwg.org/#concept-node-append) the result of [creating an element](https://dom.spec.whatwg.org/#concept-create-element) given doc, `[html](https://html.spec.whatwg.org/multipage/semantics.html#the-html-element)`, and the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), to doc.
 5.  [Append](https://dom.spec.whatwg.org/#concept-node-append) the result of [creating an element](https://dom.spec.whatwg.org/#concept-create-element) given doc, `[head](https://html.spec.whatwg.org/multipage/semantics.html#the-head-element)`, and the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), to the `[html](https://html.spec.whatwg.org/multipage/semantics.html#the-html-element)` element created earlier.
 6.  If title is given:
@@ -6095,7 +6095,7 @@ enum `ShadowRootMode` { `"open"`[](https://dom.spec.whatwg.org/#dom-shadowrootmo
 
 `[ShadowRoot](https://dom.spec.whatwg.org/#shadowroot)` [nodes](https://dom.spec.whatwg.org/#concept-node) are simply known as shadow roots.
 
-[Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root) have an associated mode (“`open`” or “`closed`”).
+[Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root) have an associated mode ("`open`” or "`closed`”).
 
 [ShadowRoot/delegatesFocus](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus "The delegatesFocus read-only property of the ShadowRoot interface returns true if the shadow root delegates focus, and false otherwise.")
 
@@ -6121,7 +6121,7 @@ Firefox for Android94+iOS Safari15+Chrome for Android53+Android WebView53+Samsun
 
 [Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root)’s associated [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is never null.
 
-[Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root) have an associated slot assignment (“`manual`” or “`named`”).
+[Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root) have an associated slot assignment ("`manual`” or "`named`”).
 
 A [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [get the parent](https://dom.spec.whatwg.org/#get-the-parent) algorithm, given an event, returns null if event’s [composed flag](https://dom.spec.whatwg.org/#composed-flag) is unset and [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) is the [root](https://dom.spec.whatwg.org/#concept-tree-root) of event’s [path](https://dom.spec.whatwg.org/#event-path)’s first struct’s [invocation target](https://dom.spec.whatwg.org/#event-path-invocation-target); otherwise [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host).
 
@@ -6189,7 +6189,7 @@ A [node](https://dom.spec.whatwg.org/#concept-node) A is closed-shadow-hidden fr
 
 -   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root).
 -   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B.
--   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`closed`” or A’s [root](https://dom.spec.whatwg.org/#concept-tree-root)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
+-   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`” or A’s [root](https://dom.spec.whatwg.org/#concept-tree-root)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
 
 To retarget an object A against an object B, repeat these steps until they return an object:
 
@@ -6241,15 +6241,15 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 \[[CEReactions](https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions)\] [Element](https://dom.spec.whatwg.org/#element)? [insertAdjacentElement](https://dom.spec.whatwg.org/#dom-element-insertadjacentelement)([DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) `where`[](https://dom.spec.whatwg.org/#dom-element-insertadjacentelement-where-element-where), [Element](https://dom.spec.whatwg.org/#element) `element`[](https://dom.spec.whatwg.org/#dom-element-insertadjacentelement-where-element-element)); // legacy [undefined](https://webidl.spec.whatwg.org/#idl-undefined) [insertAdjacentText](https://dom.spec.whatwg.org/#dom-element-insertadjacenttext)([DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) `where`[](https://dom.spec.whatwg.org/#dom-element-insertadjacenttext-where-data-where), [DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) `data`[](https://dom.spec.whatwg.org/#dom-element-insertadjacenttext-where-data-data)); // legacy };
 
-dictionary `ShadowRootInit` { required [ShadowRootMode](https://dom.spec.whatwg.org/#enumdef-shadowrootmode) `mode`; [boolean](https://webidl.spec.whatwg.org/#idl-boolean) `delegatesFocus` = false; [SlotAssignmentMode](https://dom.spec.whatwg.org/#enumdef-slotassignmentmode) `slotAssignment` = “named”; };
+dictionary `ShadowRootInit` { required [ShadowRootMode](https://dom.spec.whatwg.org/#enumdef-shadowrootmode) `mode`; [boolean](https://webidl.spec.whatwg.org/#idl-boolean) `delegatesFocus` = false; [SlotAssignmentMode](https://dom.spec.whatwg.org/#enumdef-slotassignmentmode) `slotAssignment` = "named”; };
 
 `[Element](https://dom.spec.whatwg.org/#element)` [nodes](https://dom.spec.whatwg.org/#concept-node) are simply known as elements.
 
 [Elements](https://dom.spec.whatwg.org/#concept-element) have an associated namespace, namespace prefix, local name, custom element state, custom element definition, `is` value. When an [element](https://dom.spec.whatwg.org/#concept-element) is [created](https://dom.spec.whatwg.org/#concept-create-element), all of these values are initialized.
 
-An [element](https://dom.spec.whatwg.org/#concept-element)’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is one of “`undefined`”, “`failed`”, “`uncustomized`”, “`precustomized`”, or “`custom`”. An [element](https://dom.spec.whatwg.org/#concept-element) whose [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is “`uncustomized`” or “`custom`” is said to be defined. An [element](https://dom.spec.whatwg.org/#concept-element) whose [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is “`custom`” is said to be custom.
+An [element](https://dom.spec.whatwg.org/#concept-element)’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is one of "`undefined`”, "`failed`”, "`uncustomized`”, "`precustomized`”, or "`custom`”. An [element](https://dom.spec.whatwg.org/#concept-element) whose [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is "`uncustomized`” or "`custom`” is said to be defined. An [element](https://dom.spec.whatwg.org/#concept-element) whose [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is "`custom`” is said to be custom.
 
-Whether or not an element is [defined](https://dom.spec.whatwg.org/#concept-element-defined) is used to determine the behavior of the [:defined](https://drafts.csswg.org/selectors-4/#defined-pseudo) pseudo-class. Whether or not an element is [custom](https://dom.spec.whatwg.org/#concept-element-custom) is used to determine the behavior of the [mutation algorithms](https://dom.spec.whatwg.org/#mutation-algorithms). The “`failed`” and “`precustomized`” states are used to ensure that if a [custom element constructor](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-constructor) fails to execute correctly the first time, it is not executed again by an [upgrade](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-upgrade-an-element).
+Whether or not an element is [defined](https://dom.spec.whatwg.org/#concept-element-defined) is used to determine the behavior of the [:defined](https://drafts.csswg.org/selectors-4/#defined-pseudo) pseudo-class. Whether or not an element is [custom](https://dom.spec.whatwg.org/#concept-element-custom) is used to determine the behavior of the [mutation algorithms](https://dom.spec.whatwg.org/#mutation-algorithms). The "`failed`” and "`precustomized`” states are used to ensure that if a [custom element constructor](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-constructor) fails to execute correctly the first time, it is not executed again by an [upgrade](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-upgrade-an-element).
 
 The following code illustrates elements in each of these four states:
 
@@ -6282,7 +6282,7 @@ The following code illustrates elements in each of these four states:
 
 [Elements](https://dom.spec.whatwg.org/#concept-element) also have an associated shadow root (null or a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)). It is null unless otherwise stated. An [element](https://dom.spec.whatwg.org/#concept-element) is a shadow host if its [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root) is non-null.
 
-An [element](https://dom.spec.whatwg.org/#concept-element)’s qualified name is its [local name](https://dom.spec.whatwg.org/#concept-element-local-name) if its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is null; otherwise its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix), followed by “`:`”, followed by its [local name](https://dom.spec.whatwg.org/#concept-element-local-name).
+An [element](https://dom.spec.whatwg.org/#concept-element)’s qualified name is its [local name](https://dom.spec.whatwg.org/#concept-element-local-name) if its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is null; otherwise its [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix), followed by "`:`”, followed by its [local name](https://dom.spec.whatwg.org/#concept-element-local-name).
 
 An [element](https://dom.spec.whatwg.org/#concept-element)’s HTML-uppercased qualified name is the return value of these steps:
 
@@ -6301,7 +6301,7 @@ To create an element, given a document, localName, namespace, and optional prefi
 5.  If definition is non-null, and definition’s [name](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-name) is not equal to its [local name](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-local-name) (i.e., definition represents a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element)), then:
 
     1.  Let interface be the [element interface](https://dom.spec.whatwg.org/#concept-element-interface) for localName and the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace).
-    2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to “`undefined`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to is, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
+    2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to "`undefined`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to is, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
     3.  If the synchronous custom elements flag is set, then run this step while catching any exceptions:
 
         1.  [Upgrade](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-upgrade-an-element) element using definition.
@@ -6309,7 +6309,7 @@ To create an element, given a document, localName, namespace, and optional prefi
         If this step threw an exception, then:
 
         1.  [Report the exception](https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception).
-        2.  Set result’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) to “`failed`”.
+        2.  Set result’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) to "`failed`”.
 
     4.  Otherwise, [enqueue a custom element upgrade reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-upgrade-reaction) given result and definition.
 
@@ -6324,11 +6324,11 @@ To create an element, given a document, localName, namespace, and optional prefi
 
             IDL enforces that result is an `[HTMLElement](https://html.spec.whatwg.org/multipage/dom.html#htmlelement)` object, which all use the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace).
 
-        5.  If result’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) [is not empty](https://infra.spec.whatwg.org/#list-is-empty), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-        6.  If result has [children](https://dom.spec.whatwg.org/#concept-tree-child), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-        7.  If result’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-        8.  If result’s [node document](https://dom.spec.whatwg.org/#concept-node-document) is not document, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-        9.  If result’s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is not equal to localName, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+        5.  If result’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) [is not empty](https://infra.spec.whatwg.org/#list-is-empty), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+        6.  If result has [children](https://dom.spec.whatwg.org/#concept-tree-child), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+        7.  If result’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+        8.  If result’s [node document](https://dom.spec.whatwg.org/#concept-node-document) is not document, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+        9.  If result’s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is not equal to localName, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
         10. Set result’s [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) to prefix.
 
         11. Set result’s [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) to null.
@@ -6336,18 +6336,18 @@ To create an element, given a document, localName, namespace, and optional prefi
         If any of these steps threw an exception, then:
 
         1.  [Report the exception](https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception).
-        2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements the `[HTMLUnknownElement](https://html.spec.whatwg.org/multipage/dom.html#htmlunknownelement)` interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to “`failed`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to null, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
+        2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements the `[HTMLUnknownElement](https://html.spec.whatwg.org/multipage/dom.html#htmlunknownelement)` interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to "`failed`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to null, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
 
     2.  Otherwise:
 
-        1.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements the `[HTMLElement](https://html.spec.whatwg.org/multipage/dom.html#htmlelement)` interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to “`undefined`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to null, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
+        1.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements the `[HTMLElement](https://html.spec.whatwg.org/multipage/dom.html#htmlelement)` interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to "`undefined`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to null, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
         2.  [Enqueue a custom element upgrade reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-upgrade-reaction) given result and definition.
 
 7.  Otherwise:
 
     1.  Let interface be the [element interface](https://dom.spec.whatwg.org/#concept-element-interface) for localName and namespace.
-    2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to namespace, [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to “`uncustomized`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to is, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
-    3.  If namespace is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), and either localName is a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name) or is is non-null, then set result’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) to “`undefined`”.
+    2.  Set result to a new [element](https://dom.spec.whatwg.org/#concept-element) that implements interface, with no attributes, [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) set to namespace, [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) set to prefix, [local name](https://dom.spec.whatwg.org/#concept-element-local-name) set to localName, [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) set to "`uncustomized`”, [custom element definition](https://dom.spec.whatwg.org/#concept-element-custom-element-definition) set to null, [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) set to is, and [node document](https://dom.spec.whatwg.org/#concept-node-document) set to document.
+    3.  If namespace is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), and either localName is a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name) or is is non-null, then set result’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) to "`undefined`”.
 
 8.  Return result.
 
@@ -6359,8 +6359,8 @@ This and [other specifications](https://dom.spec.whatwg.org/#other-applicable-sp
 
 To handle attribute changes for an [attribute](https://dom.spec.whatwg.org/#concept-attribute) attribute with element, oldValue, and newValue, run these steps:
 
-1.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of “`attributes`” for element with attribute’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), attribute’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace), oldValue, « », « », null, and null.
-2.  If element is [custom](https://dom.spec.whatwg.org/#concept-element-custom), then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with element, callback name “`attributeChangedCallback`”, and an argument list containing attribute’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), oldValue, newValue, and attribute’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace).
+1.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of "`attributes`” for element with attribute’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), attribute’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace), oldValue, « », « », null, and null.
+2.  If element is [custom](https://dom.spec.whatwg.org/#concept-element-custom), then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with element, callback name "`attributeChangedCallback`”, and an argument list containing attribute’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), oldValue, newValue, and attribute’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace).
 3.  Run the [attribute change steps](https://dom.spec.whatwg.org/#concept-element-attributes-change-ext) with element, attribute’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), oldValue, newValue, and attribute’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace).
 
 To change an [attribute](https://dom.spec.whatwg.org/#concept-attribute) attribute to value, run these steps:
@@ -6407,7 +6407,7 @@ To get an attribute value given an [element](https://dom.spec.whatwg.org/#concep
 
 To set an attribute given an attr and element, run these steps:
 
-1.  If attr’s [element](https://dom.spec.whatwg.org/#concept-attribute-element) is neither null nor element, [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InUseAttributeError](https://webidl.spec.whatwg.org/#inuseattributeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If attr’s [element](https://dom.spec.whatwg.org/#concept-attribute-element) is neither null nor element, [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InUseAttributeError](https://webidl.spec.whatwg.org/#inuseattributeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Let oldAttr be the result of [getting an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-get-by-namespace) given attr’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace), attr’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), and element.
 3.  If oldAttr is attr, return attr.
 4.  If oldAttr is non-null, then [replace](https://dom.spec.whatwg.org/#concept-element-attributes-replace) oldAttr with attr.
@@ -6667,13 +6667,13 @@ setter
 
 [Set an attribute value](https://dom.spec.whatwg.org/#concept-element-attributes-set-value) for [this](https://webidl.spec.whatwg.org/#this) using name and the given value.
 
-The `id` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the “`id`” content attribute.
+The `id` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the "`id`” content attribute.
 
-The `className` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the “`class`” content attribute.
+The `className` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the "`class`” content attribute.
 
 The `classList` getter steps are to return a `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)` object whose associated [element](https://dom.spec.whatwg.org/#concept-element) is [this](https://webidl.spec.whatwg.org/#this) and whose associated [attribute](https://dom.spec.whatwg.org/#concept-attribute)’s [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is `class`. The [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens) of this particular `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)` object are also known as the [element](https://dom.spec.whatwg.org/#concept-element)’s classes.
 
-The `slot` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the “`slot`” content attribute.
+The `slot` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect) the "`slot`” content attribute.
 
 `id`, `class`, and `slot` are effectively superglobal attributes as they can appear on any element, regardless of that element’s namespace.
 
@@ -6745,7 +6745,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns element’s first [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName, and null if there is no such [attribute](https://dom.spec.whatwg.org/#concept-attribute) otherwise.
 
-\[Element/getAttributeNS\](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNS “The getAttributeNS() method of the Element interface returns the string value of the attribute with the specified namespace and name. If the named attribute does not exist, the value returned will either be null or”" (the empty string); see Notes for details.")
+\[Element/getAttributeNS\](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNS "The getAttributeNS() method of the Element interface returns the string value of the attribute with the specified namespace and name. If the named attribute does not exist, the value returned will either be null or”" (the empty string); see Notes for details.")
 
 In all current engines.
 
@@ -6875,7 +6875,7 @@ Firefox for Android63+iOS Safari12+Chrome for Android69+Android WebView69+Samsun
 
 `element . [toggleAttribute](https://dom.spec.whatwg.org/#dom-element-toggleattribute)(qualifiedName [, force])`
 
-If force is not given, “toggles” qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
+If force is not given, "toggles” qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
 
 Returns true if qualifiedName is now present; otherwise false.
 
@@ -6963,7 +6963,7 @@ The `getAttributeNS(namespace, localName)` method steps are:
 
 The `setAttribute(qualifiedName, value)` method steps are:
 
-1.  If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this) is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and its [node document](https://dom.spec.whatwg.org/#concept-node-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then set qualifiedName to qualifiedName in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
 3.  Let attribute be the first [attribute](https://dom.spec.whatwg.org/#concept-attribute) in [this](https://webidl.spec.whatwg.org/#this)’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName, and null otherwise.
 4.  If attribute is null, create an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is qualifiedName, [value](https://dom.spec.whatwg.org/#concept-attribute-value) is value, and [node document](https://dom.spec.whatwg.org/#concept-node-document) is [this](https://webidl.spec.whatwg.org/#this)’s [node document](https://dom.spec.whatwg.org/#concept-node-document), then [append](https://dom.spec.whatwg.org/#concept-element-attributes-append) this [attribute](https://dom.spec.whatwg.org/#concept-attribute) to [this](https://webidl.spec.whatwg.org/#this), and then return.
@@ -6985,7 +6985,7 @@ The `hasAttribute(qualifiedName)` method steps are:
 
 The `toggleAttribute(qualifiedName, force)` method steps are:
 
-1.  If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production in XML, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this) is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and its [node document](https://dom.spec.whatwg.org/#concept-node-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document), then set qualifiedName to qualifiedName in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
 3.  Let attribute be the first [attribute](https://dom.spec.whatwg.org/#concept-attribute) in [this](https://webidl.spec.whatwg.org/#this)’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName, and null otherwise.
 4.  If attribute is null, then:
@@ -7101,7 +7101,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `removeAttributeNode(attr)` method steps are:
 
-1.  If [this](https://webidl.spec.whatwg.org/#this)’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) does not [contain](https://infra.spec.whatwg.org/#list-contain) attr, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If [this](https://webidl.spec.whatwg.org/#this)’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) does not [contain](https://infra.spec.whatwg.org/#list-contain) attr, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  [Remove](https://dom.spec.whatwg.org/#concept-element-attributes-remove) attr.
 3.  Return attr.
 
@@ -7149,35 +7149,35 @@ Firefox for Android63+iOS Safari10+Chrome for Android35+Android WebView37+Samsun
 
 `` var shadow = element . `[shadowRoot](https://dom.spec.whatwg.org/#dom-element-shadowroot)` ``
 
-Returns element’s [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root), if any, and if [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`open`”, and null otherwise.
+Returns element’s [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root), if any, and if [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`open`”, and null otherwise.
 
 The `attachShadow(init)` method steps are:
 
-1.  If [this](https://webidl.spec.whatwg.org/#this)’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is not the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If [this](https://webidl.spec.whatwg.org/#this)’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is not the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this)’s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is not one of the following:
 
     -   a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
-    -   “`article`”, “`aside`”, “`blockquote`”, “`body`”, “`div`”, “`footer`”, “`h1`”, “`h2`”, “`h3`”, “`h4`”, “`h5`”, “`h6`”, “`header`”, “`main`”, “`nav`”, “`p`”, “`section`”, or “`span`”
+    -   "`article`”, "`aside`”, "`blockquote`”, "`body`”, "`div`”, "`footer`”, "`h1`”, "`h2`”, "`h3`”, "`h4`”, "`h5`”, "`h6`”, "`header`”, "`main`”, "`nav`”, "`p`”, "`section`”, or "`span`”
 
-    then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 3.  If [this](https://webidl.spec.whatwg.org/#this)’s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name), or [this](https://webidl.spec.whatwg.org/#this)’s [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value) is not null, then:
 
     1.  Let definition be the result of [looking up a custom element definition](https://html.spec.whatwg.org/multipage/custom-elements.html#look-up-a-custom-element-definition) given [this](https://webidl.spec.whatwg.org/#this)’s [node document](https://dom.spec.whatwg.org/#concept-node-document), its [namespace](https://dom.spec.whatwg.org/#concept-element-namespace), its [local name](https://dom.spec.whatwg.org/#concept-element-local-name), and its [`is` value](https://dom.spec.whatwg.org/#concept-element-is-value).
-    2.  If definition is not null and definition’s [disable shadow](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-shadow) is true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    2.  If definition is not null and definition’s [disable shadow](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-shadow) is true, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-4.  If [this](https://webidl.spec.whatwg.org/#this) is a [shadow host](https://dom.spec.whatwg.org/#element-shadow-host), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-5.  Let shadow be a new [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [node document](https://dom.spec.whatwg.org/#concept-node-document) is [this](https://webidl.spec.whatwg.org/#this)’s [node document](https://dom.spec.whatwg.org/#concept-node-document), [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [this](https://webidl.spec.whatwg.org/#this), and [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is init\[“`[mode](https://dom.spec.whatwg.org/#dom-shadowrootinit-mode)`”\].
-6.  Set shadow’s [delegates focus](https://dom.spec.whatwg.org/#shadowroot-delegates-focus) to init\[“`[delegatesFocus](https://dom.spec.whatwg.org/#dom-shadowrootinit-delegatesfocus)`”\].
-7.  If [this](https://webidl.spec.whatwg.org/#this)’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is “`precustomized`” or “`custom`”, then set shadow’s [available to element internals](https://dom.spec.whatwg.org/#shadowroot-available-to-element-internals) to true.
-8.  Set shadow’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) to init\[“`[slotAssignment](https://dom.spec.whatwg.org/#dom-shadowrootinit-slotassignment)`”\].
+4.  If [this](https://webidl.spec.whatwg.org/#this) is a [shadow host](https://dom.spec.whatwg.org/#element-shadow-host), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+5.  Let shadow be a new [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [node document](https://dom.spec.whatwg.org/#concept-node-document) is [this](https://webidl.spec.whatwg.org/#this)’s [node document](https://dom.spec.whatwg.org/#concept-node-document), [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [this](https://webidl.spec.whatwg.org/#this), and [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is init\["`[mode](https://dom.spec.whatwg.org/#dom-shadowrootinit-mode)`”\].
+6.  Set shadow’s [delegates focus](https://dom.spec.whatwg.org/#shadowroot-delegates-focus) to init\["`[delegatesFocus](https://dom.spec.whatwg.org/#dom-shadowrootinit-delegatesfocus)`”\].
+7.  If [this](https://webidl.spec.whatwg.org/#this)’s [custom element state](https://dom.spec.whatwg.org/#concept-element-custom-element-state) is "`precustomized`” or "`custom`”, then set shadow’s [available to element internals](https://dom.spec.whatwg.org/#shadowroot-available-to-element-internals) to true.
+8.  Set shadow’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment) to init\["`[slotAssignment](https://dom.spec.whatwg.org/#dom-shadowrootinit-slotassignment)`”\].
 9.  Set [this](https://webidl.spec.whatwg.org/#this)’s [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root) to shadow.
 10. Return shadow.
 
 The `shadowRoot` getter steps are:
 
 1.  Let shadow be [this](https://webidl.spec.whatwg.org/#this)’s [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root).
-2.  If shadow is null or its [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is “`closed`”, then return null.
+2.  If shadow is null or its [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`”, then return null.
 3.  Return shadow.
 
 ------------------------------------------------------------------------
@@ -7229,7 +7229,7 @@ Returns true if matching selectors against element’s [root](https://dom.spec.w
 The `closest(selectors)` method steps are:
 
 1.  Let s be the result of [parse a selector](https://drafts.csswg.org/selectors-4/#parse-a-selector) from selectors. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4)
-2.  If s is failure, [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If s is failure, [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Let elements be [this](https://webidl.spec.whatwg.org/#this)’s [inclusive ancestors](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) that are [elements](https://dom.spec.whatwg.org/#concept-element), in reverse [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
 4.  For each element in elements, if [match a selector against an element](https://drafts.csswg.org/selectors-4/#match-a-selector-against-an-element), using s, element, and [:scope element](https://drafts.csswg.org/selectors-4/#scope-element) [this](https://webidl.spec.whatwg.org/#this), returns success, return element. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4)
 5.  Return null.
@@ -7237,7 +7237,7 @@ The `closest(selectors)` method steps are:
 The `matches(selectors)` and `webkitMatchesSelector(selectors)` method steps are:
 
 1.  Let s be the result of [parse a selector](https://drafts.csswg.org/selectors-4/#parse-a-selector) from selectors. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4)
-2.  If s is failure, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If s is failure, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If the result of [match a selector against an element](https://drafts.csswg.org/selectors-4/#match-a-selector-against-an-element), using s, [this](https://webidl.spec.whatwg.org/#this), and [:scope element](https://drafts.csswg.org/selectors-4/#scope-element) [this](https://webidl.spec.whatwg.org/#this), returns success, then return true; otherwise, return false. [\[SELECTORS4\]](https://dom.spec.whatwg.org/#biblio-selectors4)
 
 ------------------------------------------------------------------------
@@ -7288,21 +7288,21 @@ The `getElementsByClassName(classNames)` method steps are to return the [list of
 
 To insert adjacent, given an [element](https://dom.spec.whatwg.org/#concept-element) element, string where, and a [node](https://dom.spec.whatwg.org/#concept-node) node, run the steps associated with the first [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive) match for where:
 
-“`beforebegin`”
+"`beforebegin`”
 
 If element’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is null, return null.
 
 Return the result of [pre-inserting](https://dom.spec.whatwg.org/#concept-node-pre-insert) node into element’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) before element.
 
-“`afterbegin`”
+"`afterbegin`”
 
 Return the result of [pre-inserting](https://dom.spec.whatwg.org/#concept-node-pre-insert) node into element before element’s [first child](https://dom.spec.whatwg.org/#concept-tree-first-child).
 
-“`beforeend`”
+"`beforeend`”
 
 Return the result of [pre-inserting](https://dom.spec.whatwg.org/#concept-node-pre-insert) node into element before null.
 
-“`afterend`”
+"`afterend`”
 
 If element’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is null, return null.
 
@@ -7310,7 +7310,7 @@ Return the result of [pre-inserting](https://dom.spec.whatwg.org/#concept-node-p
 
 Otherwise
 
-[Throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+[Throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 [Element/insertAdjacentElement](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement "The insertAdjacentElement() method of the Element interface inserts a given element node at a given position relative to the element it is invoked upon.")
 
@@ -7431,13 +7431,13 @@ The `setNamedItem(attr)` and `setNamedItemNS(attr)` method steps are to return t
 The `removeNamedItem(qualifiedName)` method steps are:
 
 1.  Let attr be the result of [removing an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-remove-by-name) given qualifiedName and [element](https://dom.spec.whatwg.org/#concept-namednodemap-element).
-2.  If attr is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If attr is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return attr.
 
 The `removeNamedItemNS(namespace, localName)` method steps are:
 
 1.  Let attr be the result of [removing an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-remove-by-namespace) given namespace, localName, and [element](https://dom.spec.whatwg.org/#concept-namednodemap-element).
-2.  If attr is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If attr is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotFoundError](https://webidl.spec.whatwg.org/#notfounderror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Return attr.
 
 #### 4.9.2. Interface `[Attr](https://dom.spec.whatwg.org/#attr)`[](https://dom.spec.whatwg.org/#interface-attr)
@@ -7472,7 +7472,7 @@ readonly attribute [boolean](https://webidl.spec.whatwg.org/#idl-boolean) [speci
 
 If designed today they would just have a name and value. ☹
 
-An [attribute](https://dom.spec.whatwg.org/#concept-attribute)’s qualified name is its [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) if its [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is null, and its [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix), followed by “`:`”, followed by its [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), otherwise.
+An [attribute](https://dom.spec.whatwg.org/#concept-attribute)’s qualified name is its [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) if its [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix) is null, and its [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix), followed by "`:`”, followed by its [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), otherwise.
 
 User agents could have this as an internal slot as an optimization.
 
@@ -7590,9 +7590,9 @@ Each [node](https://dom.spec.whatwg.org/#concept-node) inheriting from the `[Cha
 To replace data of node node with offset offset, count count, and data data, run these steps:
 
 1.  Let length be node’s [length](https://dom.spec.whatwg.org/#concept-node-length).
-2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If offset plus count is greater than length, then set count to length minus offset.
-4.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of “`characterData`” for node with null, null, node’s [data](https://dom.spec.whatwg.org/#concept-cd-data), « », « », null, and null.
+4.  [Queue a mutation record](https://dom.spec.whatwg.org/#queue-a-mutation-record) of "`characterData`” for node with null, null, node’s [data](https://dom.spec.whatwg.org/#concept-cd-data), « », « », null, and null.
 5.  Insert data into node’s [data](https://dom.spec.whatwg.org/#concept-cd-data) after offset [code units](https://infra.spec.whatwg.org/#code-unit).
 6.  Let delete offset be offset + data’s [length](https://infra.spec.whatwg.org/#string-length).
 7.  Starting from delete offset [code units](https://infra.spec.whatwg.org/#code-unit), remove count [code units](https://infra.spec.whatwg.org/#code-unit) from node’s [data](https://dom.spec.whatwg.org/#concept-cd-data).
@@ -7607,7 +7607,7 @@ To replace data of node node with offset offset, count count, and data data, run
 To substring data with node node, offset offset, and count count, run these steps:
 
 1.  Let length be node’s [length](https://dom.spec.whatwg.org/#concept-node-length).
-2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If offset plus count is greater than length, return a string whose value is the [code units](https://infra.spec.whatwg.org/#code-unit) from the offsetth [code unit](https://infra.spec.whatwg.org/#code-unit) to the end of node’s [data](https://dom.spec.whatwg.org/#concept-cd-data), and then return.
 4.  Return a string whose value is the [code units](https://infra.spec.whatwg.org/#code-unit) from the offsetth [code unit](https://infra.spec.whatwg.org/#code-unit) to the offset+countth [code unit](https://infra.spec.whatwg.org/#code-unit) in node’s [data](https://dom.spec.whatwg.org/#concept-cd-data).
 
@@ -7860,7 +7860,7 @@ The `new Text(data)` constructor steps are to set [this](https://webidl.spec.wha
 To split a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) node with offset offset, run these steps:
 
 1.  Let length be node’s [length](https://dom.spec.whatwg.org/#concept-node-length).
-2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If offset is greater than length, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Let count be length minus offset.
 4.  Let new data be the result of [substringing data](https://dom.spec.whatwg.org/#concept-cd-substring) with node node, offset offset, and count count.
 5.  Let new node be a new `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node), with the same [node document](https://dom.spec.whatwg.org/#concept-node-document) as node. Set new node’s [data](https://dom.spec.whatwg.org/#concept-cd-data) to new data.
@@ -7993,7 +7993,7 @@ The constructor steps are to set [this](https://webidl.spec.whatwg.org/#this)’
 5. Ranges[](https://dom.spec.whatwg.org/#ranges)
 ------------------------------------------------
 
-### 5.1. Introduction to “DOM Ranges”[](https://dom.spec.whatwg.org/#introduction-to-dom-ranges)
+### 5.1. Introduction to "DOM Ranges”[](https://dom.spec.whatwg.org/#introduction-to-dom-ranges)
 
 `[StaticRange](https://dom.spec.whatwg.org/#staticrange)` and `[Range](https://dom.spec.whatwg.org/#range)` objects ([ranges](https://dom.spec.whatwg.org/#concept-range)) represent a sequence of content within a [node tree](https://dom.spec.whatwg.org/#concept-node-tree). Each [range](https://dom.spec.whatwg.org/#concept-range) has a [start](https://dom.spec.whatwg.org/#concept-range-start) and an [end](https://dom.spec.whatwg.org/#concept-range-end) which are [boundary points](https://dom.spec.whatwg.org/#concept-range-bp). A [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) is a [tuple](https://infra.spec.whatwg.org/#tuple) consisting of a [node](https://dom.spec.whatwg.org/#boundary-point-node) and an [offset](https://dom.spec.whatwg.org/#concept-range-bp-offset). So in other words, a [range](https://dom.spec.whatwg.org/#concept-range) represents a piece of content within a [node tree](https://dom.spec.whatwg.org/#concept-node-tree) between two [boundary points](https://dom.spec.whatwg.org/#concept-range-bp).
 
@@ -8006,7 +8006,7 @@ The constructor steps are to set [this](https://webidl.spec.whatwg.org/#this)’
         -   `[Text](https://dom.spec.whatwg.org/#text)`: awesome
     -   `[Text](https://dom.spec.whatwg.org/#text)`: !
 
-In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence “syndata is awes”. Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
+In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence "syndata is awes”. Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
 
     var range = new Range(),
         firstText = p.childNodes[1],
@@ -8422,8 +8422,8 @@ Returns a new [range](https://dom.spec.whatwg.org/#concept-range) object that do
 
 The `new StaticRange(init)` constructor steps are:
 
-1.  If init\[“`[startContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer)`”\] or init\[“`[endContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer)`”\] is a `[DocumentType](https://dom.spec.whatwg.org/#documenttype)` or `[Attr](https://dom.spec.whatwg.org/#attr)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  Set [this](https://webidl.spec.whatwg.org/#this)’s [start](https://dom.spec.whatwg.org/#concept-range-start) to (init\[“`[startContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer)`”\], init\[“`[startOffset](https://dom.spec.whatwg.org/#dom-staticrangeinit-startoffset)`”\]) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (init\[“`[endContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer)`”\], init\[“`[endOffset](https://dom.spec.whatwg.org/#dom-staticrangeinit-endoffset)`”\]).
+1.  If init\["`[startContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer)`”\] or init\["`[endContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer)`”\] is a `[DocumentType](https://dom.spec.whatwg.org/#documenttype)` or `[Attr](https://dom.spec.whatwg.org/#attr)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  Set [this](https://webidl.spec.whatwg.org/#this)’s [start](https://dom.spec.whatwg.org/#concept-range-start) to (init\["`[startContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-startcontainer)`”\], init\["`[startOffset](https://dom.spec.whatwg.org/#dom-staticrangeinit-startoffset)`”\]) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (init\["`[endContainer](https://dom.spec.whatwg.org/#dom-staticrangeinit-endcontainer)`”\], init\["`[endOffset](https://dom.spec.whatwg.org/#dom-staticrangeinit-endoffset)`”\]).
 
 A `[StaticRange](https://dom.spec.whatwg.org/#staticrange)` is valid[](https://dom.spec.whatwg.org/#staticrange-valid) if all of the following are true:
 
@@ -8552,15 +8552,15 @@ The `commonAncestorContainer` getter steps are:
 
 To set the start or end of a range to a [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, offset), run these steps:
 
-1.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Let bp be the [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, offset).
-4.  If these steps were invoked as “set the start”
+4.  If these steps were invoked as "set the start”
 
     1.  If range’s [root](https://dom.spec.whatwg.org/#concept-range-root) is not equal to node’s [root](https://dom.spec.whatwg.org/#concept-tree-root), or if bp is [after](https://dom.spec.whatwg.org/#concept-range-bp-after) the range’s [end](https://dom.spec.whatwg.org/#concept-range-end), set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to bp.
     2.  Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) to bp.
 
-    If these steps were invoked as “set the end”
+    If these steps were invoked as "set the end”
 
     1.  If range’s [root](https://dom.spec.whatwg.org/#concept-range-root) is not equal to node’s [root](https://dom.spec.whatwg.org/#concept-tree-root), or if bp is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) the range’s [start](https://dom.spec.whatwg.org/#concept-range-start), set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) to bp.
     2.  Set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to bp.
@@ -8626,7 +8626,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 The `setStartBefore(node)` method steps are:
 
 1.  Let parent be node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
-2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the start](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index)).
 
 [Range/setStartAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStartAfter "The Range.setStartAfter() method sets the start position of a Range relative to a Node. The parent Node of the start of the Range will be the same as that for the referenceNode.")
@@ -8650,7 +8650,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 The `setStartAfter(node)` method steps are:
 
 1.  Let parent be node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
-2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the start](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index) plus 1).
 
 [Range/setEndBefore](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndBefore "The Range.setEndBefore() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.")
@@ -8674,7 +8674,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 The `setEndBefore(node)` method steps are:
 
 1.  Let parent be node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
-2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the end](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index)).
 
 [Range/setEndAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndAfter "The Range.setEndAfter() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.")
@@ -8698,7 +8698,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 The `setEndAfter(node)` method steps are:
 
 1.  Let parent be node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
-2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the end](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index) plus 1).
 
 [Range/collapse](https://developer.mozilla.org/en-US/docs/Web/API/Range/collapse "The Range.collapse() method collapses the Range to one of its boundary points.")
@@ -8724,7 +8724,7 @@ The `collapse(toStart)` method steps are to, if toStart is true, set [end](https
 To select a [node](https://dom.spec.whatwg.org/#concept-node) node within a [range](https://dom.spec.whatwg.org/#concept-range) range, run these steps:
 
 1.  Let parent be node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
-2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  Let index be node’s [index](https://dom.spec.whatwg.org/#concept-tree-index).
 4.  Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, index).
 5.  Set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, index plus 1).
@@ -8769,7 +8769,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `selectNodeContents(node)` method steps are:
 
-1.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Let length be the [length](https://dom.spec.whatwg.org/#concept-node-length) of node.
 3.  Set [start](https://dom.spec.whatwg.org/#concept-range-start) to the [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, 0).
 4.  Set [end](https://dom.spec.whatwg.org/#concept-range-end) to the [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, length).
@@ -8803,9 +8803,9 @@ The `compareBoundaryPoints(how, sourceRange)` method steps are:
     -   `[END_TO_END](https://dom.spec.whatwg.org/#dom-range-end_to_end)`, and
     -   `[END_TO_START](https://dom.spec.whatwg.org/#dom-range-end_to_start)`,
 
-    then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-2.  If [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-range-root) is not the same as sourceRange’s [root](https://dom.spec.whatwg.org/#concept-range-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[WrongDocumentError](https://webidl.spec.whatwg.org/#wrongdocumenterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-range-root) is not the same as sourceRange’s [root](https://dom.spec.whatwg.org/#concept-range-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[WrongDocumentError](https://webidl.spec.whatwg.org/#wrongdocumenterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If how is:
 
     `[START_TO_START](https://dom.spec.whatwg.org/#dom-range-start_to_start)`:
@@ -8899,7 +8899,7 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
-12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
@@ -8987,7 +8987,7 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
-12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
@@ -9046,7 +9046,7 @@ The `cloneContents()` method steps are to return the result of [cloning the cont
 
 To insert a [node](https://dom.spec.whatwg.org/#concept-node) node into a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run these steps:
 
-1.  If range’s [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is a `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` or `[Comment](https://dom.spec.whatwg.org/#comment)` [node](https://dom.spec.whatwg.org/#concept-node), is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) whose [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is null, or is node, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If range’s [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is a `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` or `[Comment](https://dom.spec.whatwg.org/#comment)` [node](https://dom.spec.whatwg.org/#concept-node), is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) whose [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is null, or is node, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Let referenceNode be null.
 3.  If range’s [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node), set referenceNode to that `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node).
 4.  Otherwise, set referenceNode to the [child](https://dom.spec.whatwg.org/#concept-tree-child) of [start node](https://dom.spec.whatwg.org/#concept-range-start-node) whose [index](https://dom.spec.whatwg.org/#concept-tree-index) is [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset), and null if there is no such [child](https://dom.spec.whatwg.org/#concept-tree-child).
@@ -9100,8 +9100,8 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `surroundContents(newParent)` method steps are:
 
-1.  If a non-`[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in [this](https://webidl.spec.whatwg.org/#this), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If newParent is a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, or `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If a non-`[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in [this](https://webidl.spec.whatwg.org/#this), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If newParent is a `[Document](https://dom.spec.whatwg.org/#document)`, `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`, or `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
     For historical reasons `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [nodes](https://dom.spec.whatwg.org/#concept-node) are not checked here and end up throwing later on as a side effect.
 
@@ -9216,16 +9216,16 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 The `isPointInRange(node, offset)` method steps are:
 
 1.  If node’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is different from [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-range-root), return false.
-2.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-3.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+3.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 4.  If (node, offset) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) [start](https://dom.spec.whatwg.org/#concept-range-start) or [after](https://dom.spec.whatwg.org/#concept-range-bp-after) [end](https://dom.spec.whatwg.org/#concept-range-end), return false.
 5.  Return true.
 
 The `comparePoint(node, offset)` method steps are:
 
-1.  If node’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is different from [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-range-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[WrongDocumentError](https://webidl.spec.whatwg.org/#wrongdocumenterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-3.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If node’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is different from [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-range-root), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[WrongDocumentError](https://webidl.spec.whatwg.org/#wrongdocumenterror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If node is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+3.  If offset is greater than node’s [length](https://dom.spec.whatwg.org/#concept-node-length), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[IndexSizeError](https://webidl.spec.whatwg.org/#indexsizeerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 4.  If (node, offset) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) [start](https://dom.spec.whatwg.org/#concept-range-start), return −1.
 5.  If (node, offset) is [after](https://dom.spec.whatwg.org/#concept-range-bp-after) [end](https://dom.spec.whatwg.org/#concept-range-end), return 1.
 6.  Return 0.
@@ -9285,12 +9285,12 @@ Each `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)` and `[TreeWalke
 
 To filter a [node](https://dom.spec.whatwg.org/#concept-node) node within a `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)` or `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)` object traverser, run these steps:
 
-1.  If traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active) is set, then throw an “`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active) is set, then throw an "`[InvalidStateError](https://webidl.spec.whatwg.org/#invalidstateerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  Let n be node’s `[nodeType](https://dom.spec.whatwg.org/#dom-node-nodetype)` attribute value − 1.
 3.  If the nth bit (where 0 is the least significant bit) of traverser’s [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow) is not set, then return `[FILTER_SKIP](https://dom.spec.whatwg.org/#dom-nodefilter-filter_skip)`.
 4.  If traverser’s [filter](https://dom.spec.whatwg.org/#concept-traversal-filter) is null, then return `[FILTER_ACCEPT](https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept)`.
 5.  Set traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active).
-6.  Let result be the return value of [call a user object’s operation](https://webidl.spec.whatwg.org/#call-a-user-objects-operation) with traverser’s [filter](https://dom.spec.whatwg.org/#concept-traversal-filter), “`acceptNode`”, and « node ». If this throws an exception, then unset traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active) and rethrow the exception.
+6.  Let result be the return value of [call a user object’s operation](https://webidl.spec.whatwg.org/#call-a-user-objects-operation) with traverser’s [filter](https://dom.spec.whatwg.org/#concept-traversal-filter), "`acceptNode`”, and « node ». If this throws an exception, then unset traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active) and rethrow the exception.
 7.  Unset traverser’s [active flag](https://dom.spec.whatwg.org/#concept-traversal-active).
 8.  Return result.
 
@@ -10076,9 +10076,9 @@ Firefox for Android4+iOS Safari6+Chrome for Android18+Android WebView3+Samsung I
 
 Adds all arguments passed, except those already present.
 
-Throws a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
+Throws a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
 
-Throws an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+Throws an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
 
 [DOMTokenList/remove](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove "The remove() method of the DOMTokenList interface removes the specified tokens from the list.")
 
@@ -10102,9 +10102,9 @@ Firefox for Android4+iOS Safari6+Chrome for Android18+Android WebView3+Samsung I
 
 Removes arguments passed, if they are present.
 
-Throws a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
+Throws a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
 
-Throws an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+Throws an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
 
 [DOMTokenList/toggle](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle "The toggle() method of the DOMTokenList interface removes a given token from the list and returns false. If token doesn't exist it's added and the function returns true.")
 
@@ -10126,13 +10126,13 @@ Firefox for Android4+iOS Safari6+Chrome for Android18+Android WebView3+Samsung I
 
 `tokenlist . [toggle(token [, force])](https://dom.spec.whatwg.org/#dom-domtokenlist-toggle)`
 
-If force is not given, “toggles” token, removing it if it’s present and adding it if it’s not present. If force is true, adds token (same as `[add()](https://dom.spec.whatwg.org/#dom-domtokenlist-add)`). If force is false, removes token (same as `[remove()](https://dom.spec.whatwg.org/#dom-domtokenlist-remove)`).
+If force is not given, "toggles” token, removing it if it’s present and adding it if it’s not present. If force is true, adds token (same as `[add()](https://dom.spec.whatwg.org/#dom-domtokenlist-add)`). If force is false, removes token (same as `[remove()](https://dom.spec.whatwg.org/#dom-domtokenlist-remove)`).
 
 Returns true if token is now present; otherwise false.
 
-Throws a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if token is empty.
+Throws a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if token is empty.
 
-Throws an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if token contains any spaces.
+Throws an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if token contains any spaces.
 
 [DOMTokenList/replace](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/replace "The replace() method of the DOMTokenList interface replaces an existing token with a new token. If the first token doesn't exist, replace() returns false immediately, without adding the new token to the token list.")
 
@@ -10158,9 +10158,9 @@ Replaces token with newToken.
 
 Returns true if token was replaced with newToken; otherwise false.
 
-Throws a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
+Throws a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments is the empty string.
 
-Throws an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+Throws an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
 
 [DOMTokenList/supports](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/supports "The supports() method of the DOMTokenList interface returns true if a given token is in the associated attribute's supported tokens. This method is intended to support feature detection.")
 
@@ -10225,8 +10225,8 @@ The `add(tokens…)` method steps are:
 
 1.  [For each](https://infra.spec.whatwg.org/#list-iterate) token in tokens:
 
-    1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-    2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 2.  [For each](https://infra.spec.whatwg.org/#list-iterate) token in tokens, [append](https://infra.spec.whatwg.org/#set-append) token to [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens).
 3.  Run the [update steps](https://dom.spec.whatwg.org/#concept-dtl-update).
@@ -10235,16 +10235,16 @@ The `remove(tokens…)` method steps are:
 
 1.  [For each](https://infra.spec.whatwg.org/#list-iterate) token in tokens:
 
-    1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-    2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+    2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
 2.  For each token in tokens, [remove](https://infra.spec.whatwg.org/#list-remove) token from [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens).
 3.  Run the [update steps](https://dom.spec.whatwg.org/#concept-dtl-update).
 
 The `toggle(token, force)` method steps are:
 
-1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If token is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If token contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens)\[token\] [exists](https://infra.spec.whatwg.org/#list-contain), then:
 
     1.  If force is either not given or is false, then [remove](https://infra.spec.whatwg.org/#list-remove) token from [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens), run the [update steps](https://dom.spec.whatwg.org/#concept-dtl-update) and return false.
@@ -10257,8 +10257,8 @@ The [update steps](https://dom.spec.whatwg.org/#concept-dtl-update) are not alwa
 
 The `replace(token, newToken)` method steps are:
 
-1.  If either token or newToken is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a “`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-2.  If either token or newToken contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an “`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+1.  If either token or newToken is the empty string, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
+2.  If either token or newToken contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`” `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  If [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens) does not [contain](https://infra.spec.whatwg.org/#list-contain) token, then return false.
 4.  [Replace](https://infra.spec.whatwg.org/#set-replace) token in [this](https://webidl.spec.whatwg.org/#this)’s [token set](https://dom.spec.whatwg.org/#concept-dtl-tokens) with newToken.
 5.  Run the [update steps](https://dom.spec.whatwg.org/#concept-dtl-update).

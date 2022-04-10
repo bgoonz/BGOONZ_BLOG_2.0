@@ -106,7 +106,7 @@ p.a = 37;
 console.log(target.a);
 //  37
 //  (The operation has been properly forwarded!)</code></pre>
-<p>Note that while this “no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.</p>
+<p>Note that while this "no-op” works for JavaScript objects, it does not work for native browser objects like DOM Elements.</p>
 <h3 id="validation">Validation</h3>
 <p>With a <code>Proxy</code>, you can easily validate the passed value for an object. This example uses the <a href="proxy/proxy/set"><code>set()</code></a> handler.</p>
 <pre><code>let validator = {
@@ -262,7 +262,7 @@ console.log(products.browsers);
 console.log(products.latestBrowser);
 //  &#39;Chrome&#39;</code></pre>
 <h3 id="finding-an-array-item-object-by-its-property">Finding an array item object by its property</h3>
-<p>This proxy extends an array with some utility features. As you see, you can flexibly “define” properties without using <a href="object/defineproperties"><code>Object.defineProperties()</code></a>. This example can be adapted to find a table row by its cell. In that case, the target will be <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows"><code>table.rows</code></a>.</p>
+<p>This proxy extends an array with some utility features. As you see, you can flexibly "define” properties without using <a href="object/defineproperties"><code>Object.defineProperties()</code></a>. This example can be adapted to find a table row by its cell. In that case, the target will be <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows"><code>table.rows</code></a>.</p>
 <pre><code>let products = new Proxy([
   { name: &#39;Firefox&#39;, type: &#39;browser&#39; },
   { name: &#39;SeaMonkey&#39;, type: &#39;browser&#39; },
@@ -319,7 +319,7 @@ console.log(products.browser);     // [{ name: &#39;Firefox&#39;, type: &#39;bro
 console.log(products.types);       // [&#39;browser&#39;, &#39;mailer&#39;]
 console.log(products.number);      // 3</code></pre>
 <h3 id="a-complete-traps-list-example">A complete <code>traps</code> list example</h3>
-<p>Now in order to create a complete sample <code>traps</code> list, for didactic purposes, we will try to proxify a <em>non-native</em> object that is particularly suited to this type of operation: the <code>docCookies</code> global object created by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework">the “little framework” published on the <code>document.cookie</code> page</a>.</p>
+<p>Now in order to create a complete sample <code>traps</code> list, for didactic purposes, we will try to proxify a <em>non-native</em> object that is particularly suited to this type of operation: the <code>docCookies</code> global object created by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework">the "little framework” published on the <code>document.cookie</code> page</a>.</p>
 <pre><code>/*
   var docCookies = ... get the &quot;docCookies&quot; object here:
   https://developer.mozilla.org/en-US/docs/DOM/document.cookie#A_little_framework.3A_a_complete_cookies_reader.2Fwriter_with_full_unicode_support
@@ -442,7 +442,7 @@ Specification
 <p>8.0</p>
 <h2 id="see-also">See also</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=sClk6aB_CPk">“Proxies are awesome” Brendan Eich presentation at JSConf</a> (<a href="https://www.slideshare.net/BrendanEich/metaprog-5303821">slides</a>)</li>
+<li><a href="https://www.youtube.com/watch?v=sClk6aB_CPk">"Proxies are awesome” Brendan Eich presentation at JSConf</a> (<a href="https://www.slideshare.net/BrendanEich/metaprog-5303821">slides</a>)</li>
 <li><a href="http://wiki.ecmascript.org/doku.php?id=harmony:proxies">ECMAScript Harmony Proxy proposal page</a> and <a href="http://wiki.ecmascript.org/doku.php?id=harmony:proxies_semantics">ECMAScript Harmony proxy semantics page</a></li>
 <li><a href="https://web.archive.org/web/20171007221059/http://soft.vub.ac.be/~tvcutsem/proxies/">Tutorial on proxies</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Old_Proxy_API">SpiderMonkey specific Old Proxy API</a></li>

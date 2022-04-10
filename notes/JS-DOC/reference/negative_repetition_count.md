@@ -1,7 +1,7 @@
 RangeError: repeat count must be non-negative
 =============================================
 
-The JavaScript exception “repeat count must be non-negative” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is a negative number.
+The JavaScript exception "repeat count must be non-negative” occurs when the [`String.prototype.repeat()`](../global_objects/string/repeat) method is used with a `count` argument that is a negative number.
 
 Message
 -------

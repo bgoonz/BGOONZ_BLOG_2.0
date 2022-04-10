@@ -11,7 +11,7 @@ Enter text in keyboard and finish by ctrl-D at beginning of line
 
 sha256sum Some text ^D
 
-echo -n “Hello World” | sha256sum
+echo -n "Hello World” | sha256sum
 
 To verify if a hash (checksum) is correct if a hash-file is provided:
 =====================================================================
@@ -28,13 +28,13 @@ If it does exist it will compute the checksum and compare it with the hash
 provided in the . If they match (good!) it
 ==========================================
 
-will print “filename: OK”.
+will print "filename: OK”.
 ==========================
 
 If they don’t match (warning, you might have been hacked), it will
 ==================================================================
 
-print “filename: FAILED”.
+print "filename: FAILED”.
 =========================
 
 sha256sum –check

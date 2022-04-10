@@ -1,7 +1,7 @@
 SyntaxError: missing ) after condition
 ======================================
 
-The JavaScript exception “missing ) after condition” occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
+The JavaScript exception "missing ) after condition” occurs when there is an error with how an `if` condition is written. It must appear in parenthesis after the `if` keyword.
 
 Message
 -------

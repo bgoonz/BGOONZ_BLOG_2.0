@@ -1,7 +1,7 @@
 TypeError: X.prototype.y called on incompatible type
 ====================================================
 
-The JavaScript exception “called on incompatible target (or object)” occurs when a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
+The JavaScript exception "called on incompatible target (or object)” occurs when a function (on a given object), is called with a `this` not corresponding to the type expected by the function.
 
 Message
 -------

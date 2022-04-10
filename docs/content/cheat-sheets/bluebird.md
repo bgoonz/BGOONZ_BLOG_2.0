@@ -36,7 +36,7 @@ Those marked with `*` are non-standard Promise API that only work with Bluebird 
       ···
     })
 
-{: data-line=“4”}
+{: data-line="4”}
 
 Use [Promise.spread](http://bluebirdjs.com/docs/api/promise.spread.html)
 
@@ -51,7 +51,7 @@ Use [Promise.spread](http://bluebirdjs.com/docs/api/promise.spread.html)
       }
     )
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Use [Promise.join](http://bluebirdjs.com/docs/api/promise.join.html)
 
@@ -71,14 +71,14 @@ Use [Promise.join](http://bluebirdjs.com/docs/api/promise.join.html)
     // succeeds if one succeeds first
     Promise.any(promises).then((results) => {});
 
-{: data-line=“1,8”}
+{: data-line="1,8”}
 
     Promise.map(urls, url => fetch(url))
       .then(···)
 
-{: data-line=“1”}
+{: data-line="1”}
 
-Use [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html) to “promisify” a list of values.
+Use [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html) to "promisify” a list of values.
 
 ### Object
 
@@ -90,7 +90,7 @@ Use [Promise.map](http://bluebirdjs.com/docs/api/promise.map.html) to “promisi
         res.posts;
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 Use [Promise.props](http://bluebirdjs.com/docs/api/promise.props.html).
 
@@ -108,7 +108,7 @@ Use [Promise.props](http://bluebirdjs.com/docs/api/promise.props.html).
 
     getPhotos().then(···)
 
-{: data-line=“2”}
+{: data-line="2”}
 
 Use [Promise.try](http://bluebirdjs.com/docs/api/promise.try.html).
 
@@ -117,7 +117,7 @@ Use [Promise.try](http://bluebirdjs.com/docs/api/promise.try.html).
     var readFile = Promise.promisify(fs.readFile);
     var fs = Promise.promisifyAll(require('fs'));
 
-{: data-line=“2”}
+{: data-line="2”}
 
 See [Promisification](http://bluebirdjs.com/docs/api/promisification.html).
 
@@ -129,7 +129,7 @@ See [Promisification](http://bluebirdjs.com/docs/api/promisification.html).
         return; /* promise */
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See [Promise.method](http://bluebirdjs.com/docs/api/promise.method.html).
 
@@ -140,7 +140,7 @@ See [Promise.method](http://bluebirdjs.com/docs/api/promise.method.html).
         return user;
     });
 
-{: data-line=“1”}
+{: data-line="1”}
 
 See [Promise.coroutine](http://bluebirdjs.com/docs/api/promise.coroutine.html).
 
