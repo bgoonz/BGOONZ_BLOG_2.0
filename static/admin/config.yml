@@ -1,10 +1,31 @@
-# Configuration file for NetlifyCMS visual editor
-# It's here used only for blog posts and docs pages, to ease edits from external contributors
-# for all options, see https://www.netlifycms.org/docs/configuration-options/
-
-publish_mode: editorial_workflow # do not commit directly, fork to a branch first and create a pull request, this is necessary for the open_authoring option
-
 backend:
+<<<<<<< Updated upstream
+  name: git-gateway
+  repo: bgoonz/BGOONZ_BLOG_2.0/
+  branch: master 
+  
+media_folder: "static/images/uploads"
+public_folder: /img
+publish_mode: editorial_workflow
+
+collections:
+  - name: 'blog'
+    label: "Blog" # Used in the UI
+    folder: "src/pages/docs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+=======
+<<<<<<< HEAD
     name: github # external contributions open_authoring option requires the use of github, it does not work with git-gateway (and hence other git platforms) yet (although there are alternatives through Netlify Identity): https://www.netlifycms.org/docs/open-authoring/
     repo: bgoonz/BGOONZ_BLOG_2.0 # EDIT ME: path to the online repository to allow for external contributions, please update this to point to your repo
     branch: master
@@ -106,3 +127,30 @@ collections:
       - { name: id, label: Identifier, widget: string }
       - { name: title, label: Title, widget: string }
       - { name: description, label: Description, widget: markdown, required: false, hint: "Short description, will be shown in page listing (ie, listing all posts with this tag)" }
+=======
+    name: git-gateway
+    repo: bgoonz/BGOONZ_BLOG_2.0/
+    branch: master
+
+media_folder: 'static/images/uploads'
+public_folder: /public
+publish_mode: editorial_workflow
+
+collections:
+    - name: 'blog'
+      label: 'Blog' # Used in the UI
+      folder: 'src/pages/docs' # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: 'index'
+      media_folder: 'images'
+      public_folder: 'public'
+      path: '{{title}}/index'
+      editor:
+          preview: false
+      fields: # The fields for each document, usually in front matter
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+>>>>>>> origin/scrap
+>>>>>>> Stashed changes
