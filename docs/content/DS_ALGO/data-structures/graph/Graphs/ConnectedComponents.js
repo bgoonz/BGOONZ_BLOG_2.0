@@ -48,9 +48,7 @@ class GraphUnweightedUndirectedAdjacencyList {
     }
 }
 
-export {
-    GraphUnweightedUndirectedAdjacencyList
-};
+export { GraphUnweightedUndirectedAdjacencyList };
 
 // Example
 // const graph = new GraphUnweightedUndirectedAdjacencyList()
