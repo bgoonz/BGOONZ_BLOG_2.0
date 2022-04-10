@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Algorithm'
-    description: CodingScripting  Glossary
+    description: 'CodingScripting  Glossary'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -27,6 +27,6 @@ There are also Machine Learning algorithms such as Linear Regression, Logistic R
 
 ## See also
 
-- {{Interwiki("wikipedia", "Algorithm", "Algorithm")}} on Wikipedia
+- {{Interwiki("wikipedia", "Algorithm", "Algorithm"on Wikipedia
 - [Explanations of sorting algorithms](https://www.toptal.com/developers/sorting-algorithms)
 - [Explanations of algorithmic complexity](https://bigocheatsheet.com/)

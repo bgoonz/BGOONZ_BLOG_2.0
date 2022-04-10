@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Alpha'
-    description: Alpha  Alpha Channel  Drawing  Glossary  Graphics  Translucency  Translucent  Transparency  Transparent  WebGL  WebXR  channel  color  pixel
+    description: 'Alpha  Alpha Channel  Drawing  Glossary  Graphics  Translucency  Translucent  Transparency  Transparent  WebGL  WebXR  channel  color  pixel'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -22,7 +22,7 @@ As you can see, the color without an alpha channel completely blocks the backgro
 
 ## See also
 
-- {{interwiki("wikipedia", "Alpha compositing")}} on Wikipedia
-- {{interwiki("wikipedia", "RGBA color model")}} on Wikipedia
-- {{interwiki("wikipedia", "Channel (digital image)")}} on Wikipedia
+- {{interwiki("wikipedia", "Alpha compositing"on Wikipedia
+- {{interwiki("wikipedia", "RGBA color model"on Wikipedia
+- {{interwiki("wikipedia", "Channel (digital image)"on Wikipedia
 - [CSS color](/en-US/docs/Web/CSS/CSS_Color)

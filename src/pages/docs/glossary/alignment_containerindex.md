@@ -5,7 +5,7 @@ weight: 0
 excerpt: 
 seo:
     title: 'Alignment_Container'
-    description: Alignment container  CSS  Glossary  alignment
+    description: 'Alignment container  CSS  Glossary  alignment'
     robots: []
     extra: []
     type: stackbit_page_meta

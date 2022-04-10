@@ -1,14 +1,14 @@
 ---
 title: Abstraction
 slug: Abstraction'
-    description: Abstraction  Coding  CodingScripting  Glossary  Programming Language
+    description: 'Abstraction  Coding  CodingScripting  Glossary  Programming Language'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
 
-Abstraction in {{Glossary("computer programming")}} is a way to reduce complexity and allow efficient design and implementation in complex software systems. It hides the technical complexity of systems behind simpler {{Glossary("API", "APIs")}}.
+Abstraction in computer programming"is a way to reduce complexity and allow efficient design and implementation in complex software systems. It hides the technical complexity of systems behind simpler API", "APIs")}}.
 
 ## Advantages of Data Abstraction
 
@@ -42,4 +42,4 @@ obj.display();
 
 ## See also
 
-- {{interwiki("wikipedia", "Abstraction (computer science)", "Abstraction")}} on Wikipedia
+- {{interwiki("wikipedia", "Abstraction (computer science)", "Abstraction"on Wikipedia
