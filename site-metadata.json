@@ -151,7 +151,7 @@
                 "subnav_links": [
                     {
                         "label": "Resource-Archive-Server",
-                        "url": "https://github.com/bgoonz/Learning-Assets",
+                        "url": "https://lambda-static-assets.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,

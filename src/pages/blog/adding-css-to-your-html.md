@@ -24,7 +24,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 ### Adding CSS To Your HTML
 
-#### For beginners … very picture heavy since CSS is such a visual discipline!
+#### For beginners … very picture heavy since CSS is such a visual discipline
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*3hnCIyXstRSHgYO5-z-51g.png" class="graf-image" /></figure>### Getting CSS Into Your HTML
 
@@ -128,11 +128,11 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*SByLFbio2RGGnFHj.jpg" class="graf-image" /></figure>-   <span id="47ef">Indicated with a `>`.</span>
 -   <span id="eff3">Different from descendants because it only affects the direct children of an element.</span>
 
-#### CSS:
+#### CSS
 
     .menu > .is-active { background-color: #ffe0b2; }
 
-#### HTML:
+#### HTML
 
     <body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>
 
@@ -215,7 +215,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 -   <span id="66b6">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
 -   <span id="9ec3">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
--   <span id="bc57">`The Four Number Calculation`** : listed in increasing order of importance.**</span>
+-   <span id="bc57">`The Four Number Calculation`**: listed in increasing order of importance.**</span>
 
 1.  <span id="c45f">Who has the most IDs? If no one, continue.</span>
 2.  <span id="3aff">Who has the most classes? If no one, continue.</span>
@@ -287,14 +287,14 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 -   <span id="8c59">Text refers to text.</span>
 -   <span id="266d">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
 
-### My Blog:
+### My Blog
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
 
 <em>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Grid Cheat Sheet:
+### Grid Cheat Sheet
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*8cBZz0yj-ND3af2uh7J-dw.png" class="graf-image" /></figure>
 

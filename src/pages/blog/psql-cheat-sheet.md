@@ -15,7 +15,7 @@ tags:
 show_author_bio: true
 cmseditable: true
 ---
-# 💻 PSQL💻 
+# 💻 PSQL💻
 
 > source
 
@@ -257,8 +257,6 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 ```
 
 ### Query analysis
-
-
 
 ```sh
 -- See the query plan for the given query

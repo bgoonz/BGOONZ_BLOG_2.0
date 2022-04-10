@@ -1,9 +1,13 @@
+
+
+
+
 <details>
 
-<summary>  Website Links </summary>
+<summary>  Website Links </summary>   
 
 https://bgoonz-blog.netlify.app/
-https://bgoonz-blog.netlify.app/docs/javascript/
+https://bgoonz-blog.netlify.app/javascript
 https://bgoonz-blog.netlify.app/mailto:bryan.guner@gmail.com
 https://bgoonz-blog.netlify.app/jamstack
 https://bgoonz-blog.netlify.app/docs/
@@ -200,7 +204,7 @@ https://bgoonz-blog.netlify.app/docs
 https://bgoonz-blog.netlify.app/lorem-ipsum
 https://bgoonz-blog.netlify.app/blog/
 https://bgoonz-blog.netlify.app/blog/platform-docs/
-https://blog-w-comments.vercel.app/
+https://bgoonz-blog.netlify.app/blogWcomments/
 https://bgoonz-blog.netlify.app/neural%20networks
 https://bgoonz-blog.netlify.app/angolia
 https://bgoonz-blog.netlify.app/showcase
