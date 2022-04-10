@@ -27,9 +27,9 @@ sections:
             url: /docs/ds-algo/big-o/
             style: secondary
         title: A Quick Guide To Big O
-        image: images/my-back.png
+        image: images/bigo.jpg
         title_url: >-
-          https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
+          https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/
       - content: |
           *Python has a built in help function that let's you see a description
           of the source code without having to navigate to it… "-SickNasty …
@@ -61,7 +61,7 @@ sections:
         actions: []
         type: grid_item
         title: Beginner Guide React
-        image: images/successful-panda.gif
+        image: images/react.gif
       - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
         image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
@@ -69,7 +69,7 @@ sections:
         type: grid_item
         image: images/pleasant-birch.png
         title: Scope & Closure
-      - image_alt: Every idea needs a medium
+      - image_alt: scope and closure
         content: |
           PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
           + Extensions & Resources, Super Simple Intro To HTML,  Understanding
