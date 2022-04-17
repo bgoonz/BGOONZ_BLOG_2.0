@@ -1,13 +1,13 @@
 id: tools
 title: Web Development Tools
-description: >-
-  <!--StartFragment-->
+description: "
 
 
-  ### Comparison Of Popular Front End Tools For Web Development
+
+## # Comparison Of Popular Front End Tools For Web Development
 
 
-  |                                                                                                                                                                                                                                                                                                | **Best for**                       | **Online Description**                  | **Features/Functions**                                                                                                                       | **Price**                                                                                                                 |
+  |                                                                                                                                                                                                                                                                                                | **Best for**                       | **Online Description**                  | **Features/Functions**                                                                                                                       | **Price**                                                                                                                 |
 
   | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 
@@ -24,4 +24,4 @@ description: >-
   | **[CodePen](https://codepen.io/)**  [![CodePen_Logo](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/CodePen_Logo.png)](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/CodePen_Logo.png)                                                                  | Small to large businesses.         | Build, Test, & Discover Front-end code. | Build & Test, Learn & Discover, Share Your Work.                                                                                             | Individuals Free Annual Starts: $8/month Annual Developer: $12/month Annual Super: $26/month Team Plans: $12/month/member |
 
 
-  <!--EndFragment-->
+

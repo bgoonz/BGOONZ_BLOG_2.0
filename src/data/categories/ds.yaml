@@ -1,7 +1,7 @@
 id: ds
 title: Data Structures & Algorithms
-description: >-
-  
+description: "
+
 
   In computer programming terms, an algorithm is a set of well-defined instructions to solve a particular problem. It takes a set of input and produces a desired output. For example,
 
@@ -16,10 +16,10 @@ description: >-
   3. Display the result
 
 
-  - - -
 
 
-  ## Qualities of Good Algorithms
+
+##  Qualities of Good Algorithms
 
 
   * Input and output should be defined precisely.
@@ -33,7 +33,7 @@ description: >-
 
 
 
-  ## What are Data Structures?
+##  What are Data Structures?
 
 
   Data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
@@ -51,10 +51,11 @@ description: >-
   **Note**: Data structure and data types are slightly different. Data structure is the collection of data types arranged in a specific order.
 
 
-  - - -
+--- 
 
 
-  ## Types of Data Structure
+
+##  Types of Data Structure
 
 
   Basically, data structures are divided into two categories:
@@ -68,10 +69,11 @@ description: >-
   Let's learn about each type in detail.
 
 
-  - - -
+--- 
 
 
-  ## Linear data structures
+
+##  Linear data structures
 
 
   In linear data structures, the elements are arranged in sequence one after the other. Since elements are arranged in particular order, they are easy to implement.
@@ -83,7 +85,7 @@ description: >-
   **Popular linear data structures are:**
 
 
-  ### 1. Array Data Structure
+## # 1. Array Data Structure
 
 
   In an array, elements in memory are arranged in continuous memory. All the elements of an array are of the same type. And, the type of elements that can be stored in the form of arrays is determined by the programming language.
