@@ -8,12 +8,11 @@ excerpt: In this tutorial, you'll learn about Python's data structures. You'll
 
 # Common Python Data Structures (Guide) – Real Python
 
-
-
-
 ---
+
 ## Dictionaries, Maps, and Hash Tables
-In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary**  **key**.
+
+In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary** **key**.
 
 Dictionaries are also often called **maps**, **hashmaps**, **lookup tables**, or **associative arrays**. They allow for the efficient lookup, insertion, and deletion of any object associated with a given key.
 
@@ -22,11 +21,6 @@ Phone books make a decent real-world analog for dictionary objects. They allow y
 This analogy breaks down somewhat when it comes to _how_ the information is organized to allow for fast lookups. But the fundamental performance characteristics hold. Dictionaries allow you to quickly find the information associated with a given key.
 
 Dictionaries are one of the most important and frequently used data structures in computer science. So, how does Python handle dictionaries? Let’s take a tour of the dictionary implementations available in core Python and the Python standard library.
-
-
-
-
-
 
 ### `dict`: Your Go-To Dictionary
 
@@ -202,11 +196,6 @@ Performance-wise, it’s very fast to look up an element contained in an array g
 
 Python includes several array-like data structures in its standard library that each have slightly different characteristics. Let’s take a look.
 
-
-
-
-
-
 ### `list`: Mutable Dynamic Arrays[](#list-mutable-dynamic-arrays "Permanent link")
 
 [Lists](https://docs.python.org/3.6/library/stdtypes.html#lists) are a part of the core Python language. Despite their name, Python’s lists are implemented as **dynamic arrays** behind the scenes.
@@ -358,8 +347,6 @@ TypeError: 'str' object doesn't support item deletion
 
 ```
 
-
-
 ### `bytes`: Immutable Arrays of Single Bytes[](#bytes-immutable-arrays-of-single-bytes "Permanent link")
 
 [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes-objects) objects are immutable sequences of single bytes, or integers in the range 0 ≤ _x_ ≤ 255. Conceptually, `bytes` objects are similar to `str` objects, and you can also think of them as immutable arrays of bytes.
@@ -454,13 +441,13 @@ If you’re willing to go beyond the Python standard library, then third-party p
 
 If you want to restrict yourself to the array data structures included with Python, then here are a few guidelines:
 
--   If you need to store arbitrary objects, potentially with mixed data types, then use a `list` or a `tuple`, depending on whether or not you want an immutable data structure.
+- If you need to store arbitrary objects, potentially with mixed data types, then use a `list` or a `tuple`, depending on whether or not you want an immutable data structure.
 
--   If you have numeric (integer or floating-point) data and tight packing and performance is important, then try out `array.array`.
+- If you have numeric (integer or floating-point) data and tight packing and performance is important, then try out `array.array`.
 
--   If you have textual data represented as Unicode characters, then use Python’s built-in `str`. If you need a mutable string-like data structure, then use a `list` of characters.
+- If you have textual data represented as Unicode characters, then use Python’s built-in `str`. If you need a mutable string-like data structure, then use a `list` of characters.
 
--   If you want to store a contiguous block of bytes, then use the immutable `bytes` type or a `bytearray` if you need a mutable data structure.
+- If you want to store a contiguous block of bytes, then use the immutable `bytes` type or a `bytearray` if you need a mutable data structure.
 
 In most cases, I like to start out with a simple `list`. I’ll only specialize later on if performance or storage space becomes an issue. Most of the time, using a general-purpose array data structure like `list` gives you the fastest development speed and the most programming convenience.
 
@@ -479,9 +466,6 @@ Python offers several data types that you can use to implement records, structs,
 **Note:** This tutorial is adapted from the chapter “Common Data Structures in Python” in [_Python Tricks: The Book_](https://realpython.com/products/python-tricks-book/). If you enjoy what you’re reading, then be sure to check out [the rest of the book](https://realpython.com/products/python-tricks-book/).
 
 Alright, let’s get started!
-
-
-
 
 ### `dict`: Simple Data Objects[](#dict-simple-data-objects "Permanent link")
 
