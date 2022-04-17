@@ -1,14 +1,21 @@
 ---
 title: Google Hosted Libraries
 template: docs
+excerpt: The Google Hosted Libraries is a stable, reliable, high-speed, globally
+  available content distribution network for the most popular, open-source
+  JavaScript libraries
 ---
-## The Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries.
-
-> Google works directly with the key stakeholders for each library effort and accepts the latest versions as they are released.
+> #### ***The Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries***
+>
+> > Google works directly with the key stakeholders for each library effort and accepts the latest versions as they are released.
 
 ## Libraries
 
-**To load a hosted library, copy and paste the HTML snippet for that library (shown below) in your web page. For instance, to load jQuery, embed the `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>` snippet in your web page.**
+**To load a hosted library, copy and paste the HTML snippet for that library (shown below) in your web page. For instance, to load jQuery, embed the** 
+
+![jquery](/docs/jquery.jpg "Jquery Logo")
+
+snippet in your web page.
 
 **We recommend that you load libraries from the CDN via HTTPS, even if your own website only uses HTTP. Nowadays, performance is fast, and caching works just the same. The CDN's files are served with [CORS](http://www.w3.org/TR/cors/#access-control-allow-origin-response-header) and [Timing-Allow](http://www.w3.org/TR/resource-timing/#cross-origin-resources) headers and allowed to be cached for 1 year.**
 
@@ -68,7 +75,11 @@ versions:
 
 snippet:
 
-`<script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>`
+
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+```
 
 site:
 
@@ -85,7 +96,7 @@ snippet:
 ```html
 <script type="module">\
   import { IndefiniteObservable } from "https://ajax.googleapis.com/ajax/libs/indefinite-observable/2.0.1/indefinite-observable.bundle.js";\
-</script>`
+</script>
 ```
 
 site:
@@ -114,8 +125,6 @@ site:
 
 [jquery.com](http://jquery.com/)
 
-
-
 note:
 
 3.3.0, 2.1.2, 1.2.5 and 1.2.4 are not hosted due to their short and unstable lives in the wild.
@@ -132,8 +141,6 @@ site:
 
 [jquerymobile.com](http://jquerymobile.com/)
 
-
-
 note:
 
 This library depends on jQuery. You must also load jQuery before loading this module.
@@ -149,8 +156,6 @@ snippet:
 site:
 
 [jqueryui.com](http://jqueryui.com/)
-
-
 
 note:
 
@@ -188,8 +193,6 @@ site:
 
 [modelviewer.dev](https://modelviewer.dev/)
 
-
-
 ### MooTools
 
 snippet:
@@ -199,8 +202,6 @@ snippet:
 site:
 
 [mootools.net](http://mootools.net/)
-
-
 
 note:
 
@@ -216,8 +217,6 @@ site:
 
 <https://github.com/google/myanmar-tools/>
 
-
-
 ### Prototype
 
 snippet:
@@ -227,8 +226,6 @@ snippet:
 site:
 
 [prototypejs.org](http://prototypejs.org/)
-
-
 
 ### script.aculo.us
 
@@ -267,8 +264,6 @@ site:
 
 <https://github.com/google/shaka-player/>
 
-
-
 ### SPF
 
 snippet:
@@ -278,8 +273,6 @@ snippet:
 site:
 
 [youtube.github.io/spfjs](http://youtube.github.io/spfjs/)
-
-
 
 ### SWFObject
 
@@ -291,8 +284,6 @@ site:
 
 [github.com/swfobject/swfobject](https://github.com/swfobject/swfobject)
 
-
-
 ### three.js
 
 snippet:
@@ -302,8 +293,6 @@ snippet:
 site:
 
 [threejs.org](http://threejs.org/)
-
-
 
 ### Web Font Loader
 
