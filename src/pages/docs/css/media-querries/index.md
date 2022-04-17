@@ -1,109 +1,101 @@
 ---
-title: Media Querries
-template: docs
+title: CSS Introduction
+excerpt: CSS is among the core languages of the open web
 ---
+<!--StartFragment-->
 
----
-## [Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax "Permalink to Syntax")
+# CSS
 
-A media query is composed of an optional _media type_ and any number of _media feature_ expressions, which may optionally be combined in various ways using _logical operators_. Media queries are case-insensitive.
+CSS is among the core languages of the **open web** and is standardized across Web browsers according to [W3C specifications](https://w3.org/Style/CSS/#specs). Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.
 
--   [Media types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types) define the broad category of device for which the media query applies: `all`, `print`, `screen`. The type is optional (assumed to be `all`) except when using the `not` or `only` logical operators.
--   [Media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features) describe a specific characteristic of the [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent), output device, or environment: [`any-hover`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover), [`any-pointer`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-pointer), [`aspect-ratio`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio), [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/color), [`color-gamut`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/color-gamut), [`color-index`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/color-index), [`device-aspect-ratio`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-aspect-ratio) Deprecated , [`device-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-height) Deprecated , [`device-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/device-width) Deprecated , [`display-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode), [`forced-colors`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors), [`grid`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/grid), [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/height), [`hover`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover), [`inverted-colors`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/inverted-colors), [`monochrome`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/monochrome), [`orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation), [`overflow-block`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/overflow-block), [`overflow-inline`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/overflow-inline), [`pointer`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer), [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme), [`prefers-contrast`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast), [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion), [`resolution`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution), [`scripting`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting), [`update`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/update-frequency), [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width) For example, the [`hover`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover) feature allows a query to test against whether the device supports hovering over elements. Media feature expressions test for their presence or value, and are entirely optional. Each media feature expression must be surrounded by parentheses.
--   [Logical operators](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#logical_operators) can be used to compose a complex media query: `not`, `and`, and `only`. You can also combine multiple media queries into a single rule by separating them with commas.
+From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to [develop and release recommendations separately per module](https://www.w3.org/Style/CSS/current-work). Instead of versioning the CSS specification, W3C now periodically takes a snapshot of [the latest stable state of the CSS specification](https://www.w3.org/TR/css/).
 
-A media query computes to `true` when the media type (if specified) matches the device on which a document is being displayed _and_ all media feature expressions compute as true. Queries involving unknown media types are always false.
+## [Copy](https://webdevhub.us/docs/css/#key_resources)[Key resources](https://developer.mozilla.org/en-US/docs/Web/CSS#key_resources "Permalink to Key resources")
 
-**Note:** A style sheet with a media query attached to its [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag [will still download](https://scottjehl.github.io/CSS-Download-Tests/) even if the query returns `false`, the download will happen but the priority of downloading will be much lower. Nevertheless, its contents will not apply unless and until the result of the query changes to `true`. You can read why this happens in Tomayac's blog [Why Browser Download Stylesheet with Non-Matching Media Queries](https://medium.com/@tomayac/why-browsers-download-stylesheets-with-non-matching-media-queries-eb61b91b85a2).
+CSS Introduction
 
-Media types describe the general category of a given device. Although websites are commonly designed with screens in mind, you may want to create styles that target special devices such as printers or audio-based screenreaders. For example, this CSS targets printers:
+If you're new to web development, be sure to read our [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) article to learn what CSS is and how to use it.
 
-You can also target multiple devices. For instance, this `@media` rule uses two media queries to target both screen and print devices:
 
-```
-@media screen, print { ... }
-```
 
-See [media type](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types) for a list of all media types. Because they describe devices in only very broad terms, just a few are available; to target more specific attributes, use _media features_ instead.
+[CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 
-Media features describe the specific characteristics of a given [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent), output device, or environment. For instance, you can apply specific styles to widescreen monitors, computers that use mice, or to devices that are being used in low-light conditions. This example applies styles when the user's _primary_ input mechanism (such as a mouse) can hover over elements:
+CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
 
-```
-@media (hover: hover) { ... }
-```
+[CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
 
-Many media features are _range features_, which means they can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints. For example, this CSS will apply styles only if your browser's [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport) width is equal to or narrower than 12450px:
+This module carries on where [CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.
 
-```
-@media (max-width: 12450px) { ... }
-```
+The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like [text styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout).
 
-If you create a media feature query without specifying a value, the nested styles will be used as long as the feature's value is not zero (or `none`, in Level 4). For example, this CSS will apply to any device with a color screen:
+[Styling text](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text)
 
-If a feature doesn't apply to the device on which the browser is running, expressions involving that media feature are always false.
+With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
 
-For more [Media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features) examples, please see the reference page for each specific feature.
+[CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout)
 
-Sometimes you may want to create a media query that depends on multiple conditions. This is where the _logical operators_ come in: `not`, `and`, and `only`. Furthermore, you can combine multiple media queries into a _comma-separated list_; this allows you to apply the same styles in different situations.
+At this point we've already looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in the right place in relation to the viewport, and to each other. We have covered the necessary prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still want to know about.
 
-In the previous example, we've already seen the `and` operator used to group a media _type_ with a media _feature_. The `and` operator can also combine multiple media features into a single media query. The `not` operator, meanwhile, negates a media query, basically reversing its normal meaning. The `only` operator prevents older browsers from applying the styles.
+* The **property** which is an identifier, that is a human-readable *name*, that defines which feature is considered.
+* The **value** which describe how the feature must be handled by the engine. Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.
 
-**Note:** In most cases, the `all` media type is used by default when no other type is specified.
+## [Copy](https://webdevhub.us/docs/css/#css_declarations)[CSS declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declarations "Permalink to CSS declarations")
 
-However, if you use the `not` or `only` operators, you must explicitly specify a media type.
+Setting CSS properties to specific values is the core function of the CSS language. A property and value pair is called a **declaration**, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.
 
-### [Combining multiple types or features](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#combining_multiple_types_or_features "Permalink to Combining multiple types or features")
+Both properties and values are case-insensitive by default in CSS. The pair is separated by a colon, '`:`' (`U+003A COLON`), and white spaces before, between, and after properties and values, but not necessarily inside, are ignored.
 
-The `and` keyword combines a media feature with a media type _or_ other media features. This example combines two media features to restrict styles to landscape-oriented devices with a width of at least 30 ems:
+![css syntax - declaration.png](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax/css_syntax_-_declaration.png)
 
-```
-@media (min-width: 30em) and (orientation: landscape) { ... }
-```
+There are more than [100 different properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) in CSS and a nearly infinite number of different values. Not all pairs of properties and values are allowed and each property defines what are the valid values. When a value is not valid for a given property, the declaration is deemed *invalid* and is wholly ignored by the CSS engine.
 
-To limit the styles to devices with a screen, you can chain the media features to the `screen` media type:
+## [Copy](https://webdevhub.us/docs/css/#css_declaration_blocks)[CSS declaration blocks](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declaration_blocks "Permalink to CSS declaration blocks")
 
-```
-@media screen and (min-width: 30em) and (orientation: landscape) { ... }
-```
+Declarations are grouped in **blocks**, that is in a structure delimited by an opening brace, '`{`' (`U+007B LEFT CURLY BRACKET`), and a closing one, '`}`' (`U+007D RIGHT CURLY BRACKET`). Blocks sometimes can be nested, so opening and closing braces must be matched.
 
-### [Testing for multiple queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#testing_for_multiple_queries "Permalink to Testing for multiple queries")
+![css syntax - block.png](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax/css_syntax_-_block.png)
 
-You can use a comma-separated list to apply styles when the user's device matches any one of various media types, features, or states. For instance, the following rule will apply its styles if the user's device has either a minimum height of 680px _or_ is a screen device in portrait mode:
+Such blocks are naturally called **declaration blocks** and declarations inside them are separated by a semi-colon, '`;`' (`U+003B SEMICOLON`). A declaration block may be empty, that is containing null declaration. White spaces around declarations are ignored. The last declaration of a block doesn't need to be terminated by a semi-colon, though it is often considered *good style* to do it as it prevents forgetting to add it when extending the block with another declaration.
 
-```
-@media (min-height: 680px), screen and (orientation: portrait) { ... }
-```
+A CSS declaration block is visualized in the diagram below.
 
-Taking the above example, if the user had a printer with a page height of 800px, the media statement would return true because the first query would apply. Likewise, if the user were on a smartphone in portrait mode with a viewport height of 480px, the second query would apply and the media statement would still return true.
+![css syntax - declarations block.png](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax/declaration-block.png)
 
-### [Inverting a query's meaning](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#inverting_a_querys_meaning "Permalink to Inverting a query's meaning")
+**Note:** The content of a CSS declaration block, that is a list of semi-colon-separated declarations, without the initial and closing braces, can be put inside an HTML [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-style) attribute.
 
-The `not` keyword inverts the meaning of an entire media query. It will only negate the specific media query it is applied to. (Thus, it will not apply to every media query in a comma-separated list of media queries.) The `not` keyword can't be used to negate an individual feature query, only an entire media query. The `not` is evaluated last in the following query:
+## [Copy](https://webdevhub.us/docs/css/#css_rulesets)[CSS rulesets](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_rulesets "Permalink to CSS rulesets")
 
-```
-@media not all and (monochrome) { ... }
-```
+If style sheets could only apply a declaration to each element of a Web page, they would be pretty useless. The real goal is to apply different declarations to different parts of the document.
 
-... so that the above query is evaluated like this:
+CSS allows this by associating conditions with declarations blocks. Each (valid) declaration block is preceded by one or more comma-separated **[selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)**, which are conditions selecting some elements of the page. A [selector group](https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list) and an associated declarations block, together, are called a **ruleset**, or often a **rule**.
 
-```
-@media not (all and (monochrome)) { ... }
-```
+A CSS ruleset (or rule) is visualized in the diagram below.
 
-... rather than like this:
+![css syntax - ruleset.png](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax/ruleset.png)
 
-```
-@media (not all) and (monochrome) { ... }
-```
+As an element of the page may be matched by several selectors, and therefore by several rules potentially containing a given property several times, with different values, the CSS standard defines which one has precedence over the other and must be applied: this is called the [cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) algorithm.
 
-As another example, the following media query:
+**Note:** It is important to note that even if a ruleset characterized by a group of selectors is a kind of shorthand replacing rulesets with a single selector each, this doesn't apply to the validity of the ruleset itself.
 
-```
-@media not screen and (color), print and (color) { ... }
-```
+This leads to an important consequence: if one single basic selector is invalid, like when using an unknown pseudo-element or pseudo-class, the whole *selector* is invalid and therefore the entire rule is ignored (as invalid too).
 
-... is evaluated like this:
+## [Copy](https://webdevhub.us/docs/css/#css_statements)[CSS statements](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_statements "Permalink to CSS statements")
 
-```
-@media (not (screen and (color))), print and (color) { ... }
-```
+Rulesets are the main building blocks of a style sheet, which often consists of only a big list of them. But there is other information that a Web author wants to convey in the style sheet, like the character set, other external style sheets to import, font face or list counter descriptions and many more. It will use other and specific kinds of statements to do that.
+
+A **statement** is a building block that begins with any non-space characters and ends at the first closing brace or semi-colon (outside a string, non-escaped and not included into another {}, () or \[] pair).
+
+![css syntax - statements Venn diag.png](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax/css_syntax_-_statements_venn_diag.png)
+
+There are two kinds of statements:
+
+* **Rulesets** (or *rules*) that, as seen, associate a collection of CSS declarations to a condition described by a [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+* **At-rules** that start with an at sign, '`@`' (`U+0040 COMMERCIAL AT`), followed by an identifier and then continuing up to the end of the statement, that is up to the next semi-colon (;) outside of a block, or the end of the next block. Each type of [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule), defined by the identifier, may have its own internal syntax, and semantics of course. They are used to convey meta-data information (like [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/@charset) or [`@import`](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)), conditional information (like [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) or [`@document`](https://developer.mozilla.org/en-US/docs/Web/CSS/@document)), or descriptive information (like [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)).
+
+Any statement which isn't a ruleset or an at-rule is invalid and ignored.
+
+### [Copy](https://webdevhub.us/docs/css/#nested_statements)[Nested statements](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#nested_statements "Permalink to Nested statements")
+
+There is another group of statements – the **nested statements**. These are statements that can be used in a specific subset of at-rules – the *conditional group rules*. These statements only apply if a specific condition is matched: the `@media` at-rule content is applied only if the device on which the browser runs matches the expressed condition; the `@document` at-rule content is applied only if the current page matches some conditions, and so on. In CSS1 and CSS2.1, only *rulesets* could be used inside conditional group rules. That was very restrictive and this restriction was lifted in *[CSS Conditionals Level 3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3#Conditionals "This is a link to an unwritten page")*. Now, though still experimental and not supported by every browser, conditional group rules can contain a wider range of content: rulesets but also some, but not all, at-rules.
+
+<!--EndFragment-->
