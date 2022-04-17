@@ -15,7 +15,7 @@ The `Math.floor()` function returns the largest integer less than or equal to a 
 
 ### Parameters
 
-`x`  
+`x`
 A number.
 
 ### Return value
