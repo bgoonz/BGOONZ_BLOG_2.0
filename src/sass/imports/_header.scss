@@ -275,9 +275,9 @@
     }
 
     .submenu {
-        border-top: 1px solid $gray-300;
+        border-top: 2px solid $gray-300;
         display: none;
-        padding-left: 1em;
+        padding-left: 2em;
     }
 
     .menu-item {
@@ -329,7 +329,7 @@
             height: 2.8125em;
             position: absolute;
             right: 0;
-            top: 0;
+            top: 0.02;
         }
 
         &.active {
@@ -348,7 +348,7 @@
 
     .menu-button {
         &>.button:not(.button-icon) {
-            margin-bottom: 1.25em;
+            margin-bottom: 1.5em;
             margin-top: 1.25em;
         }
 
@@ -373,5 +373,5 @@
 
 .palette-navy .button,
 .palette-navy .line-left:after {
-    background: #000000;
+    background: #000000de;
 }
