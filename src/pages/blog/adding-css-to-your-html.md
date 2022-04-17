@@ -4,8 +4,8 @@ template: post
 subtitle: "Html &Css for beginners "
 excerpt: Add css to your html
 date: 2022-04-10T11:11:00.257Z
-image: /blog/c12bc019-3a5f-41a7-bcfe-014c6ef37946.png
-thumb_image: /blog/c12bc019-3a5f-41a7-bcfe-014c6ef37946.png
+image: https://cdn-images-1.medium.com/max/800/1*3hnCIyXstRSHgYO5-z-51g.png
+thumb_image: ""
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
@@ -14,6 +14,9 @@ categories:
 tags:
   - src/data/tags/html.yaml
 show_author_bio: true
+related_posts:
+  - src/pages/blog/adding-css-to-your-html.md
+  - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
 # Adding CSS To Your HTML
@@ -297,9 +300,3 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 ### Grid Cheat Sheet
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*8cBZz0yj-ND3af2uh7J-dw.png" class="graf-image" /></figure>
-
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 22, 2021](https://medium.com/p/3a17ba25ba82).
-
-<a href="https://medium.com/@bryanguner/adding-css-to-your-html-3a17ba25ba82" class="p-canonical">Canonical link</a>
-
-Exported from [Medium](https://medium.com) on August 31, 2021.
