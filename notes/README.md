@@ -1,3 +1,1057 @@
+<div align="center">
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#websitehttpsbgoonz-blognetlifyapp)
+
+# ➤ [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+  
+### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
+
+</div>
+
+---
+
+<div align="center">
+
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
+
+###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
+
+</div>
+<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
+
+![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
+
+---
+
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
+
+---
+  
+<a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
+  
+</div>
+
+# Archives:
+
+<br>
+<br>
+<br>
+<br>
+
+<h1> Text Tools     </h1>
+<br>
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://devtools42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<h1> Ternary Converter   </h1>
+<br>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://ternary42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+
+| ---                                                                                                                                                                                                                                     | ---                                                                                                                                                                                                               | ---                                                                                                                                                                                                                   | ---                                                                                                                                                                                                                                                                                                                                                                                      | ---                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| leonardomso/33-js-concepts*This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a…*github.com                                                                                 | Call stack - MDN Web Docs Glossary: Definitions of Web-related terms MDN*A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its…*developer.mozilla.org | Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more*Web developers or Front end engineers, as that's what we like to be called, nowadays do everything right from acting as…*medium.com   | Understanding the JavaScript call stack*The JavaScript engine (which is found in a hosting environment like the browser), is a single-threaded interpreter…*medium.freecodecamp.org Javascript: What Is The Execution Context? What Is The Call Stack?*What is the Execution Context in Javascript? I bet you don't know the answer. What are the most basic components of a…*web.archive.org | Understanding Execution Context and Execution Stack in Javascript*Understanding execution context and stack to become a better Javascript developer.*blog.bitsrc.io                                                 |
+| JavaScript data types and data structures - JavaScript MDN*Programming languages all have built-in data structures, but these often differ from one language to another. This…*developer.mozilla.org                                         | How numbers are encoded in JavaScript*Edit description*2ality.com                                                                                                                                                      | Here is what you need to know about JavaScript's Number type*Why 0.1+0.2 IS NOT equal to 0.3 and 9007199254740992 IS equal to 9007199254740993*medium.com                                                                  | What Every JavaScript Developer Should Know About Floating Point Numbers*After I gave my talk on JavaScript (really, I was there trying to shamelessly plug my book - Underhanded JavaScript and…*blog.chewxy.com                                                                                                                                                                             | The Secret Life of JavaScript Primitives*You may not know it but, in JavaScript, whenever you interact with string, number or boolean primitives you enter a…*javascriptweblog.wordpress.com                        |
+| JavaScript Reference and Copy Variables Hacker Noon*Each programming language has its own peculiarities (and JavaScript has a lot), and today I'm going to talk about…*hackernoon.com                                                        | JavaScript Primitive vs. Reference Values*Summary: in this tutorial, you will learn the differences between primitive and reference values. In JavaScript, a…*www.javascripttutorial.net                               | JavaScript by reference vs. by value*I'm looking for some good comprehensive reading material on when JavaScript passes something by value and when by…*stackoverflow.com                                                  | JavaScript Interview Prep: Primitive vs. Reference Types*original article In a JavaScript interview, they might ask if you understand the difference between primitive and…*dev.to                                                                                                                                                                                                            | What you need to know about Javascript's Implicit Coercion*Javascript's implicit coercion simply refers to Javascript attempting to coerce an unexpected value type to the…*dev.to                                  |
+| Javascript Coercion Explained*Along with some practical examples*hackernoon.com                                                                                                                                                              | What exactly is Type Coercion in Javascript?*Let's start with a short intro to type systems which I think will help you understand the general idea of type…*stackoverflow.com                                         | https://thedevs.network/*Weak dynamic typing is arguably one of those things everybody likes to pick at about JavaScript. For an elegant dynamic…\*thedevs.network                                                         | getify/You-Dont-Know-JS*A book series on JavaScript. @YDKJS on twitter. Contribute to getify/You-Dont-Know-JS development by creating an…*github.com                                                                                                                                                                                                                                          | JavaScript — Double Equals vs. Triple Equals*Learn equality in JavaScript in 3 minutes*codeburst.io                                                                                                                 |
+| Why Use the Triple-Equals Operator in JavaScript? - Impressive Webs*"Determining whether two variables are equivalent is one of the most important operations in programming." That's…*www.impressivewebs.com                                | What is the difference between == and === in JavaScript?\_On the surface == and === appear to be functionally the same, so why bother typing an extra character? In this video…\_www.oreilly.com                       | Why javascript's typeof always return "object"?*To add in with the others, typeof returns both objects and primitives. There are 5 primitive types in javascript…*stackoverflow.com                                        | Checking Types in Javascript*Have you ever wondered: what is the correct way to check if a Javascript variable is an Array? Do a Google search and…*tobyho.com                                                                                                                                                                                                                                | How to better check data types in javascript - Webbjocke*To check what data type something has in javascript is not always the easiest. The language itself provides an operator…*webbjocke.com                     |
+| A JavaScript Fundamentals Cheat Sheet: Scope, Context, and "this"*Scope Scope refers to where a variable can be accessed within a program. Some variables can be accessed from anywhere…*dev.to                                              | Quick Tip: Function Expressions vs Function Declarations - SitePoint*This article was peer reviewed by Jeff Mott. Thanks to all of SitePoint's peer reviewers for making SitePoint content…*www.sitepoint.com          | JavaScript Function — Declaration vs Expression*Functions are considered as First Class citizen in JavaScript and it is really important to be clear with the concept…*medium.com                                          | Function Declarations vs. Function Expressions*What is Function Statement/Declarations in JavaScript?*medium.com                                                                                                                                                                                                                                                                              | Function Declarations vs. Function Expressions*Lets start with a short quiz. What is alerted in each case?: Question 1: Question 2: Question 3: Question 4: If you…*javascriptweblog.wordpress.com                  |
+| 16. Modules*Edit description*exploringjs.com                                                                                                                                                                                                 | ES modules: A cartoon deep-dive - Mozilla Hacks - the Web developer blog*ES modules bring an official, standardized module system to JavaScript. With the release of Firefox 60 in May, all…*hacks.mozilla.org         | Understanding ES6 Modules - SitePoint*Almost every language has a concept of modules - a way to include functionality declared in one file within another…*www.sitepoint.com                                               | An overview of ES6 Modules in JavaScript*Introduction Until recently if you wanted to take full advantage of modules in JavaScript you needed to make use of…*blog.cloud66.com                                                                                                                                                                                                                | ES6 Modules in Depth*Welcome back to ES6 - "Oh, good. It's not another article about Unicode" - in Depth series. If you've never been around…*ponyfoo.com                                                           |
+| How JavaScript works: Event loop and the rise of Async programming + 5 ways to better coding with…*Welcome to post # 4 of the series dedicated to exploring JavaScript and its building components. In the process of…*blog.sessionstack.com | Tasks, microtasks, queues and schedules*Edit description*jakearchibald.com                                                                                                                                             | Visualising the JavaScript Event Loop with a Pizza Restaurant analogy*Consider a pizza restaurant. There are two types of orders that we currently have from a single customer - one is an…*dev.to                         | ✨♻️ JavaScript Visualized: Event Loop*Oh boi the event loop. It's one of those things that every JavaScript developer has to deal with in one way or another…*dev.to                                                                                                                                                                                                                         | Scheduling: setTimeout and setInterval*Edit description*javascript.info                                                                                                                                             |
+| Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code*Before diving deep into the core of Chrome's V8, first, let's get our fundamentals down. All of our systems consist of…*medium.freecodecamp.org               | Understanding V8's Bytecode*V8 is Google's open source JavaScript engine. Chrome, Node.js, and many other applications use V8. This article…*medium.com                                                                | A Brief History of Google's V8 JavaScript Engine*Javascript has a reputation in developer circles as a terrible language. It's classless, loosely typed, and plagued by…*www.mediacurrent.com                              | JavaScript essentials: why you should know how the engine works*This article is also available in Spanish.*medium.freecodecamp.org                                                                                                                                                                                                                                                            | JavaScript engine fundamentals: Shapes and Inline Caches*This article describes some key fundamentals that are common to all JavaScript engines - and not just V8, the engine…*mathiasbynens.be                     |
+| JavaScript engine fundamentals: optimizing prototypes*This article describes some key fundamentals that are common to all JavaScript engines - and not just V8, the engine…*mathiasbynens.be                                                 | Elements kinds in V8*Note: If you prefer watching a presentation over reading articles, then enjoy the video below! JavaScript objects can…*v8.dev                                                                     | Programming with JS: Bitwise Operations*In this series of articles we take a look at different Computer Science topics from the prism of JavaScript. We've…*hackernoon.com                                                 | Using JavaScript's Bitwise Operators in Real Life*Let's pretend we're machine code programmers!*codeburst.io                                                                                                                                                                                                                                                                                  | JavaScript Bitwise Operators - w3resource*Bitwise operators perform an operation on the bitwise (0,1) representation of their arguments, rather than as decimal…*www.w3resource.com                                 |
+| JavaScript DOM Tutorial with Example*Details JavaScript can access all the elements in a webpage making use of Document Object Model (DOM). In fact, the web…*www.guru99.com                                                                 | What is the DOM?*A reader recently wrote in asking me what the DOM was. They said they've heard it mentioned and alluded to, but aren't…*css-tricks.com                                                                | Traversing the DOM with JavaScript*A good JavaScript developer needs to know how to traverse the DOM-it's the act of selecting an element from another…*zellwk.com                                                         | DOM tree*The backbone of an HTML document is tags. According to the Document Object Model (DOM), every HTML tag is an object…*javascript.info                                                                                                                                                                                                                                                 | How to traverse the DOM in JavaScript*Learn how to navigate your way through the DOM tree.*javascript.plainenglish.io                                                                                               |
+| A Vanilla JS Guide On Mastering the DOM*Note: The contents of this post are intended to be introductory and does not include use of any libraries like jQuery…*dev.to                                                                        | How To Use Classes in JavaScript DigitalOcean*JavaScript is a prototype-based language, and every object in JavaScript has a hidden internal property called…*www.digitalocean.com                                     | Javascript Classes — Under The Hood*Javascript classes are nothing but a syntactic sugar over existing prototype based inheritance and constructor…*medium.com                                                             | ES6 Classes - JavaScript January*Object-Oriented Programming (OOP) can be a great way to organize your projects. Introduced with ES6, the javascript…*www.javascriptjanuary.com                                                                                                                                                                                                               | Practical Ways to Write Better JavaScript*Solid methods of improving your JS. Tagged with javascript, webdev, beginners, react.*dev.to                                                                              |
+| Better JavaScript with ES6, Pt. II: A Deep Dive into Classes*Out with the Old, In with the new Let's be clear about one thing from the start: Under the hood, ES6 classes are not…*scotch.io                                                 | Understand the Factory Design Pattern in plain javascript*The simplest way to understand Factory Design Pattern*medium.com                                                                                             | Factory Functions in JavaScript Aten Design Group*As we move from an age of jQuery plugins and script drop-ins to a world of CommonJS and modular architectures it's…*atendesigngroup.com                                  | The Factory Pattern in JS ES6*I'm trying to get the most out of all the new things in ES6 (ES2015). And I'm writing a new library where I need a…*medium.com                                                                                                                                                                                                                                  | Class vs Factory function: exploring the way forward*ECMAScript 2015 (aka ES6) comes with the class syntax, so now we have two competing patterns for creating objects. In…*medium.freecodecamp.org                 |
+| Prototype in Javascript Codementor*By default every function has a property name as prototype which is EMPTY ( by default). We can add properties and…*www.codementor.io                                                                     | Prototypes in JavaScript*In this post, we will discuss what are prototypes in JavaScript, how they help JavaScript in achieving the concepts of…*betterprogramming.pub                                                 | Prototype in JavaScript: it's quirky, but here's how it works*The following four lines are enough to confuse most JavaScript developers:*medium.freecodecamp.org                                                           | Understanding JavaScript: Prototype and Inheritance*Due to the amazing quantity of libraries, tools and all kinds of things that make your development easier, a lot of…*hackernoon.com                                                                                                                                                                                                       | Understanding Classes (ES5) and Prototypal Inheritance in JavaScript*In a nutshell the above snippet creates a Person class that can have multiple instances. By convention functional…*dev.to                      |
+| \_Master JavaScript Prototypes & \_Inheritance\_\_\ Inheritancecodeburst.io                                                                                                                                                                  | JavaScript's Prototypal Inheritance Explained Using CSS*Prototypal inheritance is arguably the least understood aspect of JavaScript. Well the good news is that if you…*medium.freecodecamp.org                       | Demystifying ES6 Classes And Prototypal Inheritance*In the early history of the JavaScript language, a cloud of animosity formed over the lack of a proper syntax for…*scotch.io                                           | Intro To Prototypal Inheritance - JS*In this article I will try to give an introduction to protypal inheritance. As an "optional" pre-requisite, you can…*dev.to                                                                                                                                                                                                                              | Let's Build Prototypal Inheritance in JS*The idea for this post is pretty simple. I want to some extent build and with that, illustrate how prototypes work in…*dev.to                                              |
+| Understanding Prototypal Inheritance In JavaScript*What Is Object-oriented Programming (OOP) Classical vs Prototypal Inheritance The Prototype Object And The Prototype…*dev.to                                                              | Object.create() - JavaScript MDN*The Object.create() method creates a new object, using an existing object as the prototype of the newly created object…*developer.mozilla.org                                         | Object.assign() - JavaScript MDN*The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It…*developer.mozilla.org                                             | Object.create in JavaScript*The Object.create method is one of the methods to create a new object in JavaScript.*medium.com                                                                                                                                                                                                                                                                   | Javascript Objects A New Way to Create Objects HTML Goodies*There are a lot of ways to create Objects in JavaScript, perhaps even more to integrate inheritance into them. Just…*www.htmlgoodies.com                |
+| JavaScript Object Creation: Patterns and Best Practices - SitePoint*Jeff Mott guides you through a step-by-step approach to JavaScript object creation - from object literals to factory…*www.sitepoint.com                                  | Dealing With Objects in JavaScript With Object.assign, Object.keys and hasOwnProperty …*This post is a sort of grab bag to help you explore a few very useful methods to help you manage your objects in…*alligator.io | Copying Objects in JavaScript DigitalOcean*Objects are the fundamental blocks of JavaScript. An object is a collection of properties, and a property is an…*scotch.io                                                      | JavaScript: Object.assign()*Veja nesse artigo como utilizar o Object.assign() do ECMAScript 6*codeburst.io                                                                                                                                                                                                                                                                                    | How to deep clone a JavaScript object*Copying objects in JavaScript can be tricky. Some ways perform a shallow copy, which is the default behavior in most of…*flaviocopes.com                                      |
+| How to Use Map, Filter, and Reduce in JavaScript*Functional programming has been making quite a splash in the development world these days. And for good reason…*code.tutsplus.com                                                           | JavaScript — Learn to Chain Map, Filter, and Reduce*Learn how to chain map, filter, and reduce in JavaScript*codeburst.io                                                                                              | Understanding map, filter and reduce in Javascript*When working on Javascript projects you inevitably come across situations where you have to do some data manipulation…*hackernoon.com                                   | Functional Programming in JS: map, filter, reduce (Pt. 5)*Note: This is part of the "Javascript and Functional Programming" series on learning functional programming techniques…*hackernoon.com                                                                                                                                                                                              | JavaScript: Map, Filter, Reduce*JavaScript's built-in map, filter, and reduce array methods are invaluable to a modern JavaScript developer. First…*wsvincent.com                                                   |
+| A simple guide to help you understand closures in JavaScript*Closures in JavaScript are one of those concepts that many struggle to get their heads around. In the following…*medium.freecodecamp.org                                        | Understanding JavaScript Closures: A Practical Approach*Learning a new language involves a series of steps, whereas its mastery is a product of patience, practice, mistakes…*scotch.io                                | Understanding JavaScript: Closures*Why learn JavaScript in depth?*hackernoon.com                                                                                                                                           | How to use JavaScript closures with confidence*Using closures will be a piece of (chocolate) cake*hackernoon.com                                                                                                                                                                                                                                                                              | JavaScript Closures by Example*At some point you may have run into a problem when executing functions from within a for loop. The first time it…*howchoo.com                                                        |
+| Higher-Order Functions :: Eloquent JavaScript*Tzu-li and Tzu-ssu were boasting about the size of their latest programs. 'Two-hundred thousand lines,' said Tzu-li…*eloquentjavascript.net                                                    | Higher-Order Functions in JavaScript - SitePoint*Continuing his look at functional programming in JavaScript, M. David Green examines higher-order functions and how…*www.sitepoint.com                                | Higher Order Functions: Using Filter, Map and Reduce for More Maintainable Code*Higher order functions can help you to step up your JavaScript game by making your code more declarative. That is…*medium.freecodecamp.org | First-class and Higher Order Functions: Effective Functional JavaScript*Functions: the killer JavaScript feature we never talk about.*hackernoon.com                                                                                                                                                                                                                                          | Higher Order Functions in JavaScript*Higher-order functions can be intimidating at first, but they're not that hard to learn. A higher-order function is…*www.lullabot.com                                          |
+| ES6 Promises: Patterns and Anti-Patterns*When I first got started with NodeJS a few years ago, I was mortified by what is now affectionately known as "callback…*medium.com                                                                  | A Simple Guide to ES6 Promises*The woods are lovely, dark and deep. But I have promises to keep, and miles to go before I sleep. — Robert Frost*codeburst.io                                                           | The ES6 Promises*A very helpful feature in ES6*codeburst.io                                                                                                                                                                | ES6 Promises in Depth*Promises are a very involved paradigm, so we'll take it slow. Here's a table of contents with the topics we'll cover in…*ponyfoo.com                                                                                                                                                                                                                                    | Javascript Promises: An In-Depth Approach*"Write down the syntax for promises on this sheet of paper", is enough to give nightmares to a lot of junior and even…*codeburst.io                                       |
+| Promises - JavaScript concepts*This is part of a series where I try to explain through each of 33 JS Concepts. This part corresponds to Promises…*dev.to                                                                                     | Javascript Promise 101*Knowing how Promise works in javascript will boost your development skill exponentially. Here I will share: I promise…*dev.to                                                                   | Simplify JavaScript Promises*I love promises. Not from people, but from JavaScript. Tweet Quote I love promises. Not from people, but from…*dev.to                                                                         | The Lowdown on Promises*A quick and concise guide on how Promises work in JavaScript*medium.com                                                                                                                                                                                                                                                                                               | ⭐️🎀 JavaScript Visualized: Promises & Async/Await*Ever had to deal with JS code that just… didn't run the way you expected it to? Maybe it seemed like functions got…*dev.to                                      |
+| How to escape async/await hell*async/await freed us from callback hell, but people have started abusing it — leading to the birth of async/await hell.*medium.freecodecamp.org                                                               | Understanding JavaScript's async await*Let's suppose we had code like the following. Here I'm wrapping an HTTP request in a Promise. The promise fulfills with…*ponyfoo.com                                            | JavaScript Async/Await: Serial, Parallel and Complex Flow - TechBrij*If you have experience on ASP.NET MVC then probably you are familiar with async/await keywords in C#. The same thing is…*techbrij.com                 | From JavaScript Promises to Async/Await: why bother?*In this tutorial, we will cover why we need async/await when we could achieve the same fit with JavaScript Promises, to…*blog.pusher.com                                                                                                                                                                                                 | Flow Control in Modern JS: Callbacks to Promises to Async/Await - SitePoint*JavaScript is regularly claimed to be asynchronous. What does that mean? How does it affect development? How has the…*www.sitepoint.com |
+| Time Complexity Analysis in JavaScript*An algorithm is a self-contained step-by-step set of instructions to solve a problem. It takes time for these steps to…*www.jenniferbland.com                                                         | Algorithms in plain English: time complexity and Big-O notation*Every good developer has time on their mind. They want to give their users more of it, so they can do all those things…*medium.freecodecamp.org        | An Introduction to Big O Notation*Big O notation is a big topic, and its universal importance stems from the fact that it describes the efficiency of…*dev.to                                                              | [Crizstian/data-structure-and-algorithms-with-ES6*Num Type Exercises Description 10.- Graph Data Structure 2 A graph consists of a set of vertices and a set of edges. A…*github.com](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6 "https://github.com/Crizs                                                                                                           |
+
+
+## description: Review
+
+# Review-Of-Previous-Concepts
+
+### Review of Concepts
+
+### Running JS Locally Concepts
+
+- Match the commands `ls`, `cd`, `pwd` to their descriptions
+    - `ls` lists contents of current directory
+    - `cd` changes current directory
+        - `cd ..` takes you up one level
+        - `cd` alone takes you back home
+    - `pwd` returns current directory
+- Given a folder structure diagram, a list of 'cd \(path\)' commands and target files, match the paths to the target files.
+- Use VSCode to create a folder. Within the folder create a .js file containing `console.log('hello new world');` and save it.
+- Use node to execute a JavaScript file in the terminal
+
+### Plain Old JS Object Lesson Concepts
+
+- Label variables as either Primitive vs. Reference
+    - primitives: strings, booleans, numbers, null and undefined
+        - primitives are immutable
+    - refereces: objects \(including arrays\)
+        - references are mutable
+- Identify when to use `.` vs `[]` when accessing values of an object
+    - dot syntax `object.key`
+        - easier to read
+        - easier to write
+        - cannot use variables as keys
+        - keys cannot begin with a number
+    - bracket notation `object["key]`
+        - allows variables as keys
+        - strings that start with numbers can be use as keys
+- Write an object literal with a variable key using interpolation
+
+    - put it in brackets to access the value of the variable, rather than just make the value that string
+
+        ```js
+        let a = 'b';
+        let obj = { a: 'letter_a', [a]: 'letter b' };
+        ```
+
+- Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
+- - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
+- Utilize Object.keys and Object.values in a function
+    - `Object.keys(obj)` returns an array of all the keys in `obj`
+    - `Object.values(obj)` returns an array of the values in `obj`
+- Iterate through an object using a `for in` loop
+
+    ```js
+    let printValues = function (obj) {
+        for (let key in obj) {
+            let value = obj[key];
+            console.log(value);
+        }
+    };
+    ```
+
+- Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+
+    - `...rest` syntax will store all additional arguments in an array
+    - array will be empty if there are no additional arguments
+
+        ```js
+        let myFunction = function (str, ...strs) {
+            console.log('The first string is ' + str);
+            console.log('The rest of the strings are:');
+            strs.forEach(function (str) {
+                console.log(str);
+            });
+        };
+        ```
+
+###
+
+- Use `...spread` syntax for Object literals and Array literals
+
+    ```js
+    let arr1 = ['a', 'b', 'c'];
+    let longer = [...arr1, 'd', 'e']; // ["a", "b", "c", "d", "e"]
+    // without spread syntax, this would give you a nested array
+    let withoutRest = [arr1, 'd', 'e']; // [["a", "b", "c"], "d", "e"]
+    ```
+
+- Destructure an array to reference specific elements
+
+    \`\`\`javascript
+
+    let array = \[35,9\];
+
+    let \[firstEl, secondEl\] = array;
+
+    console.log\(firstEl\); // =&gt; 35
+
+    console.log\(secondEl\); // =&gt; 9
+
+// can also destructure using ... syntax let array = \[35,9,14\]; let \[head, ...tail\] = array; console.log\(head\); // =&gt; 35 console.log\(tail\); // =&gt; \[9, 14\]
+
+```js
+- Destructure an object to reference specific values
+   - if you want to use variable names that don't match the keys, you can use aliasing
+      - `let { oldkeyname: newkeyname } = object`
+   - rule of thumb—only destructure values from objects that are two levels deep
+```js
+let obj = {
+   name: "Wilfred",
+   appearance: ["short", "mustache"],
+   favorites: {
+      color: "mauve",
+      food: "spaghetti squash",
+      number: 3
+   }
+}
+// with variable names that match keys
+let { name, appearance } = obj;
+console.log(name); // "Wilfred"
+console.log(appearance); // ["short", "mustache"]
+
+// with new variable names (aliasing)
+let {name: myName, appearance: myAppearance} = obj;
+
+console.log(myName); // "Wilfred"
+console.log(myAppearance); // ["short", "mustache"]
+
+// in a function call
+let sayHello = function({name}) {
+console.log("Hello, " + name); // "Hello Wilfred"
+}
+
+// nested objects + aliasing
+let { favorites: {color, food: vegetable} } = obj;
+console.log(color, vegetable); //=> mauve spaghetti squash
+```
+
+- Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+
+    ```js
+    //
+    let elementCounts = function (array) {
+        let obj = {};
+        array.forEach(function (el) {
+            if (el in obj) obj[el] += 1;
+            else obj[el] = 1;
+        });
+        return obj;
+    };
+    console.log(elementCounts(['e', 'f', 'g', 'f'])); // => Object {e: 1, f: 2, g: 1}
+    ```
+
+### Callbacks Lesson Concepts
+
+- Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
+    - they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
+    - supports same basic operations as other types \(strings, bools, numbers\)
+    - higher-order functions take functions as arguments or return functions as values
+- Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
+- - what is this referring to?
+- Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
+
+```js
+let greaterCB = function (val, callback1, callback2) {
+    if (callback1(val) > callback2(val)) {
+        return callback1(val);
+    }
+    return callback2(val);
+};
+
+let greaterCB = function (val, callback1, callback2) {
+    if (callback1(val) > callback2(val)) {
+        return callback1(val);
+    }
+    return callback2(val);
+};
+```
+
+// shorter version let greaterCB = function\(val, callback1, callback2\) { return Math.max\(callback1\(val\), callback2\(val\)\); } // even shorter, cause why not let greaterCB = \(val, cb1, cb2\) =&gt; Math.max\(cb1\(val\), cb2\(val\)\);
+
+```js
+- Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#map`.
+```js
+let myMap = function(array, callback) {
+   let newArr = [];
+   for (let i = 0; i < array.length; i ++) {
+      mapped = callback(array[i], i, array);
+      newArr.push(mapped);
+   }
+   return newArr;
+}
+console.log( myMap([16,25,36], Math.sqrt)); // => [4, 5, 6];
+
+let myMapArrow = (array, callback) => {
+   let newArr = [];
+   array.forEach( (ele, ind, array) => {
+      newArr.push(callback(ele, ind, array));
+   })
+   return newArr;
+}
+console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
+```
+
+- Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
+
+    ```js
+    let myFilter = function (array, callback) {
+        let filtered = [];
+        for (let i = 0; i < array.length; i++) {
+            if (callback(array[i])) {
+                filtered.push(array[i], i, array);
+            }
+        }
+    };
+    ```
+
+- Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
+
+    ```js
+    let myEvery = function (array, callback) {
+        for (let i = 0; i < array.length; i++) {
+            if (!callback(array[i], i, array)) {
+                return false;
+            }
+        }
+        return true;
+    };
+    // with arrow function syntax
+    let myEvery = (array, callback) => {
+        for (let i = 0; i < array.length; i++) {
+            if (!callback(array[i])) {
+                return false;
+            }
+        }
+        return true;
+    };
+    ```
+
+### Scope Lesson Concepts
+
+- Identify the difference between `const`, `let`, and `var` declarations
+    - `const` - cannot reassign variable, scoped to block
+    - `let` - can reassign variable, scoped to block
+    - `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
+    - a variable will always evaluate to the value it contains regardless of how it was declared
+- Explain the difference between `const`, `let`, and `var` declarations
+    - `var` is function scoped—so if you declare it anywhere in a function, the declaration \(but not assignment\) is "hoisted"
+        - so it will exist in memory as "undefined" which is bad and unpredictable
+    - `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
+    - `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
+    - block-scoped variables allow new variables with the same name in new scopes
+    - block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
+    - if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
+        - if you assign a value without a declaration, it exists in the global scope \(so then it would be accessible by all outer scopes, so bad\). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
+- Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+    - scope of a program means the set of variables that are available for use within the program
+    - global scope is represented by the `window` object in the browser and the `global` object in Node.js
+        - global variables are available everywhere, and so increase the risk of name collisions
+    - local scope is the set of variables available for use within the function
+        - when we enter a function, we enter a new scope
+        - includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined \(hmm about that last one\)
+    - for blocks \(denoted by curly braces `{}`, as in conditionals or `for` loops\), variables can be block scoped
+    - inner scope does not have access to variables in the outer scope
+        - scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
+        - so an inner scope can access outer scope variables
+        - but an outer scope can never access inner scope variables
+- Define an arrow function
+
+    \`\`\`javascript
+
+    let arrowFunction = \(param1, param2\) =&gt; {
+
+    let sum = param1 + param2;
+
+    return sum;
+
+    }
+
+// with 1 param you can remove parens around parameters let arrowFunction = param =&gt; { param += 1; return param; }
+
+// if your return statement is one line, you can use implied return let arrowFunction = param =&gt; param + 1;
+
+// you don't have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;
+
+\`\`\`
+
+- Given an arrow function, deduce the value of `this` without executing the code
+
+    - arrow functions are automatically bound to the context they were declared in
+    - unlike regular function which use the context they are invoked in \(unless they have been bound using `Function#bind`\)
+    - if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
+    - so you can't use an arrow function to define a method directly
+
+        \`\`\`javascript
+
+        let obj = {
+
+        name: "my object",
+
+        unboundFunc: function \(\) {
+
+        return this.name;
+
+        // this function will be able to be called on different objects
+
+        },
+
+###
+
+boundToGlobal: \(\) =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
+
+```js
+makeFuncBoundToObj: function () {
+    return () => {
+        return this.name;
+    }
+    // this function will return a function that will be bound
+    // to the object where we call the outer method
+    // because the arrow syntax is nested inside one of this
+    // function's methods, it cannot be rebound
+},
+
+makeUnboundFunc: function () {
+    return function () {
+        return this.name;
+    }
+    //this function will return a function that will still be unbound
+},
+
+immediatelyInvokedFunc: function () {
+    return this.name;
+}(), // this property will be set to the return value of this anonymous function,
+// which is invoked during the object definition;
+// basically, it's a way to check the context inside of an object, at this moment
+
+innerObj: {
+    name: "inner object",
+    innerArrowFunc: () =>  {
+        return this.name;
+    } // the context inside a nested object is not the parent, it's still
+    // the global object. entering an object definition doesn't change the context
+},
+
+let otherObj = { name: "my other object" }
+// call unboundFunc on obj, we get "my object" console.log("unboundFunc: ", obj.unboundFunc()); // => "my object" // assign unboundFunc to a variable and call it let newFunc = obj.unboundFunc; // this newFunc will default to being called on global object console.log("newFunc: ",newFunc()); // => undefined // but you could bind it directly to a different object if you wanted console.log("newFunc: ", newFunc.bind(otherObj)()); // "my other object"
+// meanwhile, obj.boundToGlobal will only ever be called on global object console.log("boundToGlobal: ", obj.boundToGlobal()); //=> undefined let newBoundFunc = obj.boundToGlobal; console.log("newBoundFunc: ", newBoundFunc()); // => undefined // even if you try to directly bind to another object, it won't work! console.log("newBoundFunc: ", newBoundFunc.bind(otherObj)()); // => undefined
+// let's make a new function that will always be bound to the context // where we call our function maker let boundFunc = obj.makeFuncBoundToObj();// note that we're invoking, not just assigning console.log("boundFunc: ", boundFunc()); // => "my object" // we can't rebind this function console.log("boundFunc: ", boundFunc.bind(otherObj)()) // =>"my object"
+// but if I call makeFuncBoundToObj on another context // the new bound function is stuck with that other context let boundToOther = obj.makeFuncBoundToObj.bind(otherObj)(); console.log("boundToOther: ", boundToOther()); // => "my other object" console.log("boundToOther: ", boundToOther.bind(obj)()) // "my other object"
+// the return value of my immediately invoked function // shows that the context inside of the object is the // global object, not the object itself // context only changes inside a function that is called // on an object console.log("immediatelyInvokedFunc: ", obj.immediatelyInvokedFunc); // => undefined
+// even though we're inside a nested object, the context is // still the same as it was outside the outer object // in this case, the global object console.log("innerArrowFunc: ", obj.innerObj.innerArrowFunc()); // => undefined
+```
+
+}
+
+```js
+- Implement a closure and explain how the closure effects scope
+   - a closure is "the combination of a function and the lexical environment within which that function was declared"
+      - alternatively, "when an inner function uses or changes variables in an outer function"
+   - closures have access to any variables within their own scope + scope of outer functions + global scope — the set of all these available variables is "lexical environemnt"
+   - closure keeps reference to all variables **even if the outer function has returned**
+      - each function has a private mutable state that cannot be accessed externally
+      - the inner function will maintain a reference to the scope in which it was declared. so it has access to variables that were initialized in any outer scope—even if that scope
+      - if a variable exists in the scope of what could have been accessed by a function (e.g. global scope, outer function, etc), does that variable wind up in the closure even if it never got accessed?
+      - if you change the value of a variable (e.g. i++) you will change the value of that variable in the scope that it was declared in
+
+---
+
+
+```js
+
+
+function createCounter() {
+   // this function starts a counter at 0, then returns a
+   // new function that can access and change that counter
+   //
+   // each new counter you create will have a single internal
+   // state, that can be changed only by calling the function.
+   // you can't access that state from outside of the function,
+   // even though the count variable in question is initialized
+   // by the outer function, and it remains accessible to the
+   // inner function after the outer function returns.
+   let count = 0;
+   return function() {
+      count ++;
+      return count;
+   }
+}
+
+let counter = createCounter();
+console.log(counter()); //=> 1
+console.log(counter()); //=> 2
+// so the closure here comes into play because
+// an inner function is accessing and changing
+// a variable from an outer function
+
+// the closure is the combination of the counter
+// function and the all the variables that existed
+// in the scope that it was declared in. because
+// inner blocks/functions have access to outer
+// scopes, that includes the scope of the outer
+// function.
+
+// so counter variable is a closure, in that
+// it contains the inner count value that was
+// initialized by the outer createCounter() function
+// count has been captured or closed over
+
+// this state is private, so if i run createCounter again
+// i get a totally separate count that doesn't interact
+// with the previous one and each of the new functions
+// will have their own internal state based on the
+// initial declaration in the now-closed outer function
+
+let counter2 = createCounter();
+console.log(counter2()); // => 1
+
+// if i set a new function equal to my existing counter
+// the internal state is shared with the new function
+let counter3 = counter2;
+console.log(counter3());
+```
+
+- Define a method that references `this` on an object literal
+    - when we use `this` in a method it refers to the object that the method is invoked on
+        - it will let you access other pieces of information from within that object, or even other methods
+        - method style invocation - `object.method(args)` \(e.g. built in examples like `Array#push`, or `String#toUpperCase`\)
+    - context is set every time we invoke a function
+    - function style invocation sets the context to the global object no matter what
+    - being inside an object does not make the context that object! you still have to use method-style invocation
+- Utilize the built in `Function#bind` on a callback to maintain the context of this
+
+    - when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
+
+    ```text
+    let cat = {
+    purr: function () {
+    console.log("meow");
+    },
+    purrMore: function () {
+    this.purr();
+    },
+    };
+    let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
+
+    // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
+    boundCat(); // prints "meow"
+    ```
+
+    \`\`
+
+###
+
+###
+
+```js
+   - `bind` can also work with arguments, so you can have a version of a function with particular arguments and a particular context. the first arg will be the context aka the `this` you want it to use. the next arguments will be the functions arguments that you are binding
+      - if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
+- Given a code snippet, identify what `this` refers to
+   - important to recognize the difference between scope and context
+      - scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope (which itself has pointers to new scopes until you reach the global scope. so you can think about a whole given block's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)
+      - context refers to the value of the `this` keyword
+   - the keyword `this` exists in every function and it evaluates to the object that is currently invoking that function
+   - so the context is fairly straightforward when we talk about methods being called on specific objects
+   - you could, however, call an object's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+```js
+let dog = {
+   name: "Bowser",
+   changeName: function () {
+      this.name = "Layla";
+  },
+};
+
+// note this is **not invoked** - we are assigning the function itself
+let change = dog.changeName;
+console.log(change()); // undefined
+
+// our dog still has the same name
+console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
+
+// instead of changing the dog we changed the global name!!!
+console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
+```
+
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+    - could throw an error if it expects this to have some other method or whatever that doesn't exist
+    - you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+
+    ```text
+    let cat = {
+    purr: function () {
+    console.log("meow");
+    },
+    purrMore: function () {
+    this.purr();
+    },
+    };
+    global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
+    ```
+
+we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+
+###
+
+let sayMeow = cat.purrMore; console.log\(sayMeow\(\)\); // TypeError: this.purr is not a function
+
+// we can use the built in Function.bind to ensure our context, our `this`, // is the cat object let boundCat = sayMeow.bind\(cat\);
+
+boundCat\(\); // prints "meow"
+
+```text
+   - `bind` can also work with arguments, so you can have a version of a function with particular arguments and a particular context. the first arg will be the context aka the `this` you want it to use. the next arguments will be the functions arguments that you are binding
+      - if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
+- Given a code snippet, identify what `this` refers to
+   - important to recognize the difference between scope and context
+      - scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope (which itself has pointers to new scopes until you reach the global scope. so you can think about a whole given block's scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it)
+      - context refers to the value of the `this` keyword
+   - the keyword `this` exists in every function and it evaluates to the object that is currently invoking that function
+   - so the context is fairly straightforward when we talk about methods being called on specific objects
+   - you could, however, call an object's method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+```js
+let dog = {
+   name: "Bowser",
+   changeName: function () {
+      this.name = "Layla";
+  },
+};
+
+// note this is **not invoked** - we are assigning the function itself
+let change = dog.changeName;
+console.log(change()); // undefined
+
+// our dog still has the same name
+console.log(dog); // { name: 'Bowser', changeName: [Function: changeName] }
+
+// instead of changing the dog we changed the global name!!!
+console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
+```
+
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+    - could throw an error if it expects this to have some other method or whatever that doesn't exist
+    - you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+
+    \`\`\`javascript
+
+    let cat = {
+
+    purr: function \(\) {
+
+    console.log\("meow"\);
+
+    },
+
+    purrMore: function \(\) {
+
+    this.purr\(\);
+
+    },
+
+    };
+
+global.setTimeout\(cat.purrMore, 5000\); // 5 seconds later: TypeError: this.purr is not a function
+
+\`\`\`
+
+- we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+
+### POJOs
+
+#### 1. Label variables as either Primitive vs. Reference
+
+Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
+
+- Boolean - Primitive
+- Null - Primitive
+- Undefined - Primitive
+- Number - Primitive
+- String - Primitive
+- Array - Reference
+- Object - Reference
+- Function - Reference
+
+#### 2. Identify when to use . vs \[\] when accessing values of an object
+
+```js
+let obj = { one: 1, two: 2 };
+
+// Choose the square brackets property accessor when the property name is determined at
+// runtime, or if the property name is not a valid identifier
+let myKey = 'one';
+console.log(obj[myKey]);
+
+// Choose the dot property accessor when the property name is known ahead of time.
+console.log(obj.two);
+```
+
+#### 3. Write an object literal with a variable key using interpolation
+
+```js
+let keyName = 'two';
+
+// If the key is not known, you can use an alternative `[]` syntax for
+// object initialization only
+let obj2 = { [keyName]: 2 };
+console.log(obj2);
+```
+
+#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
+
+---
+
+
+```js
+
+
+function doesKeyExist(obj, key) {
+    // obj[key] !== undefined
+    // or:
+    return key in obj;
+}
+
+let course = { bootcamp: 'Lambda', course: 'Bootcamp Prep' };
+console.log(doesKeyExist(course, 'course')); // => true
+console.log(doesKeyExist(course, 'name')); // => false
+```
+
+#### 5. Utilize Object.keys and Object.values in a function
+
+---
+
+
+```js
+
+
+function printKeys(object) {
+    return Object.keys(object);
+}
+
+function printValues(object) {
+    return Object.values(object);
+}
+
+console.log(printKeys({ dog: 'Strelka', dog2: 'Belka' }));
+console.log(printValues({ dog: 'Strelka', dog2: 'Belka' }));
+```
+
+#### 6. Iterate through an object using a for in loop
+
+```js
+let player = { name: 'Sergey', skill: 'hockey' };
+
+for (let key in player) {
+    console.log(key, player[key]);
+}
+
+console.log(Object.entries(player));
+```
+
+#### 7. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
+
+---
+
+
+```js
+
+
+function restSum(...otherNums) {
+    let sum = 0;
+    console.log(otherNums);
+    otherNums.forEach(function (num) {
+        sum += num;
+    });
+
+    return sum;
+}
+
+console.log(restSum(3, 5, 6)); // => 14
+console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // => 45
+console.log(restSum(0)); // => 0
+```
+
+#### 8. Use ...spread syntax for Object literals and Array literals
+
+```js
+let numArray = [1, 2, 3];
+let moreNums = [...numArray, 4, 5, 6];
+
+console.log(moreNums);
+
+let shoe = { color: 'red', size: 10 };
+let newShoe = { ...shoe, brand: 'Nike', size: 12 };
+console.log(newShoe);
+newShoe.color = 'black';
+console.log(newShoe);
+
+console.log(shoe);
+```
+
+#### 9. Destructure an array to reference specific elements
+
+```js
+let arr = ['one', 'two', 'three'];
+
+let [first] = arr;
+console.log(first);
+```
+
+#### 10. Destructure an object to reference specific values
+
+```js
+let me = {
+    name: 'Ian',
+    instruments: ['bass', 'synth', 'guitar'],
+    siblings: {
+        brothers: ['Alistair'],
+        sisters: ['Meghan']
+    }
+};
+
+let {
+    name,
+    instruments: musical_instruments,
+    siblings: { sisters }
+} = me;
+
+console.log(name);
+console.log(musical_instruments);
+console.log(sisters);
+```
+
+#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
+
+---
+
+
+```js
+
+
+function charCount(inputString) {
+    let res = inputString.split('').reduce(function (accum, el) {
+        if (el in accum) {
+            accum[el] = accum[el] + 1;
+        } else {
+            accum[el] = 1;
+        }
+        return accum;
+    }, {});
+    return res;
+}
+
+console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
+```
+
+###
+
+### Review of Concepts
+
+#### 1. Identify the difference between const, let, and var declarations
+
+#### 2. Explain the difference between const, let, and var declarations
+
+```js
+var a = 'a';
+```
+
+- `var` is the historical keyword used for variable declaration.
+- `var` declares variables in function scope, or global scope if not inside a function.
+- We consider `var` to be _deprecated_ and it is never used in this course.
+
+```js
+let b = 'b';
+```
+
+- `let` is the keyword we use most often for variable declaration.
+- `let` declares variables in block scope.
+- variables declared with `let` are re-assignable.
+
+```js
+const c = 'c';
+```
+
+- `const` is a specialized form of `let` that can only be used to **initialize** a variable.
+- Except when it is declared, you cannot assign to a `const` variable.
+- `const` scopes variables the same way that `let` does.
+
+#### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+
+Consider this `run` function, inside which `foo` and `bar` have `function scope`. `i` and `baz` are scoped to the block expression.
+
+```js
+// function and block scope in this example
+function run() {
+    var foo = 'Foo';
+    let bar = 'Bar';
+
+    console.log(foo, bar);
+
+    {
+        console.log(foo);
+        let baz = 'Bazz';
+        console.log(baz);
+    }
+
+    console.log(baz); // ReferenceError
+}
+
+run();
+```
+
+Notice that referencing `baz` from outside it's block results in JavaScript throwing a ReferenceError.
+
+Consider this `run` function, inside of which `foo` has `function scope`.
+
+---
+
+
+```js
+
+
+function run() {
+    console.log(foo); // undefined
+    var foo = 'Foo';
+    console.log(foo); // Foo
+}
+
+run();
+```
+
+Consider this `func1` function and it's nested scopes.
+
+```js
+// global scope
+function func1(arg1) {
+    // func1 scope
+
+    return function func2(arg2) {
+        // func2 scope
+
+        return function func3(arg3) {
+            // func3 scope
+
+            console.log(arg1, arg2, arg3);
+        };
+    };
+}
+```
+
+#### 6. Implement a closure and explain how the closure effects scope
+
+```js
+const adder = (arg1) => {
+    return (arg2) => {
+        return arg1 + arg2;
+    };
+};
+
+const func2 = adder(2);
+const result = func2(2);
+console.log(result); // => 4;
+```
+
+#### 4. Define an arrow function
+
+```js
+const returnValue = (val) => val;
+```
+
+This simple construct will create a function that accepts `val` as a parameter, and returns `val` immediately. We do not need to type `return val`, because this is a single-line function.
+
+Identically, we could write
+
+```js
+const returnValue = (val) => {
+    return val;
+};
+```
+
+#### 5. Given an arrow function, deduce the value of `this` without executing the code
+
+---
+
+
+```js
+
+
+function fDAdder(arr) {
+    console.log(this);
+
+    return arr.reduce((acc, ele) => {
+        return acc + ele;
+    });
+}
+
+fDAdder([1, 2, 4, 6]);
+```
+
+If we use a _function declaration_ style function, the `this` variable is set to the `global` object \(i.e. `Object [global]` in Node.JS and `Window` in your browser\).
+
+```js
+const adder = (arr) => {
+    console.log(this);
+    arr.reduce((acc, ele) => (sum += ele));
+};
+adder([1, 2, 4, 6]);
+```
+
+In this example, we use a _fat arrow_ style function. Note that when we declare a funciton like this `this` becomes
+
+#### 7. Define a method that references this on an object literal
+
+```js
+const pokemon = {
+    firstname: 'Pika',
+    lastname: 'Chu',
+    getPokeName: function () {
+        const fullname = `${this.firstname} ${this.lastname}`;
+        return fullname;
+    }
+};
+
+console.log(pokemon.getPokeName());
+```
+
+#### 8. Utilize the built in Function\#bind on a callback to maintain the context of `this`
+
+```js
+const pokemon = {
+    firstname: 'Pika',
+    lastname: 'Chu',
+    getPokeName: function () {
+        const fullname = `${this.firstname} ${this.lastname}`;
+        return fullname;
+    }
+};
+
+const logPokemon = pokemon.getPokename.bind(pokemon);
+
+logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
+```
+
+#### 9. Given a code snippet, identify what `this` refers to
+
+---
+
+
+```js
+
+
+function Person(name) {
+    // this.name = name;
+    // let that = this;
+
+    setTimeout(function () {
+        // console.log(this); // => Window
+        // console.log(that); // => [Function] => Person
+        // this.sayName(); // => no method error
+        that.sayName();
+    }, 1000);
+}
+
+Person.prototype.sayName = function () {
+    console.log(this.name);
+};
+
+const jane = new Person('Jane');
+```
 
 
 
@@ -2961,6 +4015,4 @@ Partial Application and Curry</em>medium.com</a><a href="https://medium.com/java
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 3, 2021](https://medium.com/p/633549469528).
 
 <a href="https://medium.com/@bryanguner/absolutely-everything-you-could-need-to-know-about-how-javascript-works-633549469528" class="p-canonical">Canonical link</a>
-
-August 31, 2021.
 
