@@ -221,18 +221,8 @@ sections:
     image_alt: tools
     image_position: left
     content: |
-      ![Tool Showcase](images/static-server-5bf5ad2d.PNG)Tool Showcase
-      https://bgoonz-blog.netlify.app/docs/tools/
-            <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz-blog.netlify.app/docs/tools/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-            <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscop           
+      <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/"></iframe> 
     actions: []
     type: section_content
     title: Tools Showcase
