@@ -3,27 +3,22 @@ title: Sitemap-April
 template: docs
 excerpt: update
 ---
+
 - [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 
 ---
 
-
 - [https://bgoonz-blog.netlify.app/admin](https://bgoonz-blog.netlify.app/admin)
 
-
 ---
-
-
 
 - [https://bgoonz-blog.netlify.app/blog](https://bgoonz-blog.netlify.app/blog)
 
 ---
 
-
 - [https://bgoonz-blog.netlify.app/docs](https://bgoonz-blog.netlify.app/docs)
 
 ---
-
 
 - [https://bgoonz-blog.netlify.app/interview-questions-js](https://bgoonz-blog.netlify.app/interview-questions-js)
 - [https://bgoonz-blog.netlify.app/privacy-policy](https://bgoonz-blog.netlify.app/privacy-policy)
@@ -222,7 +217,7 @@ excerpt: update
 - [https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList](https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList)
 - [https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger](https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger)
 - [https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray)
-- [https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)](https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi))
+- [https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)](<https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)>)
 - [https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses)
 - [https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion](https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion)
 - [https://bgoonz-blog.netlify.app/docs/netlify-cms/jamstack-templates](https://bgoonz-blog.netlify.app/docs/netlify-cms/jamstack-templates)
@@ -317,4 +312,3 @@ excerpt: update
 - [https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu](https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu)
 - [https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup](https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup)
 - [https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites](https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites)
-
