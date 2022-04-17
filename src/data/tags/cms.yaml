@@ -1,0 +1,46 @@
+id: CMS
+title: Content Managment System
+description: >-
+  <!--StartFragment-->
+
+
+  A content management system, often abbreviated as **CMS**, is software that helps users create, manage, and modify content on a website without the need for specialized technical knowledge.
+
+
+  In simpler language, a content management system is a tool that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
+
+
+  Instead of building your own system for creating web pages, storing images, and other functions, the content management system handles all that basic infrastructure stuff for you so that you can focus on more forward-facing parts of your website.
+
+
+  Beyond websites, you can also find content management systems for other functions – like document management.
+
+
+  * [How Does a Content Management System Work?](https://kinsta.com/knowledgebase/content-management-system/#how-cms-works)
+
+  * [What Are Examples of Popular Content Management Systems?](https://kinsta.com/knowledgebase/content-management-system/#popular-cms)
+
+  * [What Is the Best CMS Platform?](https://kinsta.com/knowledgebase/content-management-system/#best-cms)
+
+  * [How to Build a Website with a Content Management System](https://kinsta.com/knowledgebase/content-management-system/#build-website-cms)
+
+
+  ## How Does a Content Management System Work?[](https://kinsta.com/knowledgebase/content-management-system/#how-cms-works)
+
+
+  To give you an idea of how a content management system works, we’re going to take a whirlwind tour of the WordPress interface ([WordPress](https://kinsta.com/knowledgebase/what-is-wordpress/) is a good example of a content management system).
+
+
+  Let’s start with creating a piece of content. **Without** a content management system, you’d need to write a static [HTML file and upload it to your server](https://kinsta.com/knowledgebase/how-to-upload-html-file-to-wordpress/) (*sounds complicated, right?*).
+
+
+  **With** a content management system like WordPress, you can just write your content in an interface that looks a good bit like Microsoft Word:
+
+
+  ![WordPress editor](https://kinsta.com/wp-content/uploads/2018/03/what-is-a-content-management-system-1.png)
+
+
+  How you create content with the WordPress content management system
+
+
+  <!--EndFragment-->
