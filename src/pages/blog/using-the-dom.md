@@ -18,11 +18,10 @@ related_posts:
   - src/pages/blog/adding-css-to-your-html.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # DOM:
-
-
 
 ## [Example 1: height and width](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#example_1_height_and_width "Permalink to Example 1: height and width")
 
@@ -128,8 +127,8 @@ Copy to Clipboard
 
 ### [Notes](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples#notes "Permalink to Notes")
 
-* A table's [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML "innerHTML") property should never be used to modify a table, although you can use it to write an entire table or the content of a cell.
-* If DOM Core methods [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) and [`Node.appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) are used to create rows and cells, IE requires that they are appended to a [`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody) element, whereas other browsers will allow appending to a [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) element (the rows will be added to the last `<tbody>` element).
-* There are a number of other convenience methods belonging to the [`HTMLTableElement` interface](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#methods) that can be used for creating and modifying tables.
+- A table's [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML "innerHTML") property should never be used to modify a table, although you can use it to write an entire table or the content of a cell.
+- If DOM Core methods [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) and [`Node.appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) are used to create rows and cells, IE requires that they are appended to a [`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody) element, whereas other browsers will allow appending to a [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) element (the rows will be added to the last `<tbody>` element).
+- There are a number of other convenience methods belonging to the [`HTMLTableElement` interface](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#methods) that can be used for creating and modifying tables.
 
 <!--EndFragment-->
