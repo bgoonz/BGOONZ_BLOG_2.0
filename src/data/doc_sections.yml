@@ -20,7 +20,7 @@ sections:
     - interview
     - leetcode
     - overflow
-    - netlify-cms
+    - netlify-cms-jamstack
     - projects
     - python
     - quick-ref
