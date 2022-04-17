@@ -2,6 +2,7 @@
 title: Google Hosted Libraries
 template: docs
 ---
+
 ## The Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries.
 
 > Google works directly with the key stakeholders for each library effort and accepts the latest versions as they are released.
@@ -17,7 +18,8 @@ template: docs
 snippet:
 
 ```html
-<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>`
+<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+`
 ```
 
 site:
@@ -83,9 +85,11 @@ versions:
 snippet:
 
 ```html
-<script type="module">\
-  import { IndefiniteObservable } from "https://ajax.googleapis.com/ajax/libs/indefinite-observable/2.0.1/indefinite-observable.bundle.js";\
-</script>`
+<script type="module">
+  \
+    import { IndefiniteObservable } from "https://ajax.googleapis.com/ajax/libs/indefinite-observable/2.0.1/indefinite-observable.bundle.js";\
+</script>
+`
 ```
 
 site:
@@ -114,8 +118,6 @@ site:
 
 [jquery.com](http://jquery.com/)
 
-
-
 note:
 
 3.3.0, 2.1.2, 1.2.5 and 1.2.4 are not hosted due to their short and unstable lives in the wild.
@@ -131,8 +133,6 @@ snippet:
 site:
 
 [jquerymobile.com](http://jquerymobile.com/)
-
-
 
 note:
 
@@ -150,8 +150,6 @@ site:
 
 [jqueryui.com](http://jqueryui.com/)
 
-
-
 note:
 
 This library depends on jQuery. You must also load jQuery before loading this module. Version 1.8.3 is not hosted due to its short life, and the alias `1.8.3` actually loads 1.8.4.
@@ -160,15 +158,7 @@ This library depends on jQuery. You must also load jQuery before loading this mo
 
 snippet:
 
-`<script type="module">\
-  import {\
-    Draggable,\
-    Point2DSpring,\
-    Tossable,\
-    combineStyleStreams,\
-    getPointerEventStreamsFromElement,\
-  } from "https://ajax.googleapis.com/ajax/libs/material-motion/0.1.0/material-motion.bundle.js";\
-</script>`
+`<script type="module">\ import {\ Draggable,\ Point2DSpring,\ Tossable,\ combineStyleStreams,\ getPointerEventStreamsFromElement,\ } from "https://ajax.googleapis.com/ajax/libs/material-motion/0.1.0/material-motion.bundle.js";\ </script>`
 
 site:
 
@@ -188,8 +178,6 @@ site:
 
 [modelviewer.dev](https://modelviewer.dev/)
 
-
-
 ### MooTools
 
 snippet:
@@ -199,8 +187,6 @@ snippet:
 site:
 
 [mootools.net](http://mootools.net/)
-
-
 
 note:
 
@@ -216,8 +202,6 @@ site:
 
 <https://github.com/google/myanmar-tools/>
 
-
-
 ### Prototype
 
 snippet:
@@ -227,8 +211,6 @@ snippet:
 site:
 
 [prototypejs.org](http://prototypejs.org/)
-
-
 
 ### script.aculo.us
 
@@ -267,8 +249,6 @@ site:
 
 <https://github.com/google/shaka-player/>
 
-
-
 ### SPF
 
 snippet:
@@ -278,8 +258,6 @@ snippet:
 site:
 
 [youtube.github.io/spfjs](http://youtube.github.io/spfjs/)
-
-
 
 ### SWFObject
 
@@ -291,8 +269,6 @@ site:
 
 [github.com/swfobject/swfobject](https://github.com/swfobject/swfobject)
 
-
-
 ### three.js
 
 snippet:
@@ -302,8 +278,6 @@ snippet:
 site:
 
 [threejs.org](http://threejs.org/)
-
-
 
 ### Web Font Loader
 
