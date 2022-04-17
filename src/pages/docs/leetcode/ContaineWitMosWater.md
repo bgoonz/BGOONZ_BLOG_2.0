@@ -1,9 +1,9 @@
 ---
-title: Leetcode
+title: Container With Most Water
 weight: 0
 excerpt: feel free to try the examples
 seo:
-    title: '   '
+    title: ' Container With Most Water  '
     description: Leetcode practice
     robots: []
     extra: []
