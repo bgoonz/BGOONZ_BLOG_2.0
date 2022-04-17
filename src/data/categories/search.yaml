@@ -1,0 +1,144 @@
+id: search
+title: Full Text Search
+description: >-
+  <!--StartFragment-->
+
+
+  Imagine you would type a search term into Google, and you kept waiting and waiting for your results to slowly appear on the screen. You would probably press the refresh button or switch to another website. In the era of fast-paced internet, no one wants to waste their time waiting for a search query.
+
+
+  This scenario is hypothetical because **search engines are nowadays extremely fast**. Within seconds they display your search results after you’ve typed in your search term. To make your experience as a user this smooth, **search engines use so-called search indexes** to return results for a query.
+
+
+  As much as we are used to having fast results on Google and other popular search engines, oftentimes internal site search on a page struggles with offering results as quickly. Without a search index, the search query takes up resources from the server and makes the site slower. That is why a search index is a vital part of any [good site search option](https://www.addsearch.com/product/).
+
+
+  Table of Contents
+
+
+  * [What is a search index?](https://www.addsearch.com/blog/search-index/#What_is_a_search_index "What is a search index?")
+
+  * [How are search indexes made?](https://www.addsearch.com/blog/search-index/#How_are_search_indexes_made "How are search indexes made?")
+
+  * [How are search results returned from an index?](https://www.addsearch.com/blog/search-index/#How_are_search_results_returned_from_an_index "How are search results returned from an index?")
+
+  * [How a Search Index can Improve Your Website](https://www.addsearch.com/blog/search-index/#How_a_Search_Index_can_Improve_Your_Website "How a Search Index can Improve Your Website")
+
+    * [Manage Results and Adjust Ranking](https://www.addsearch.com/blog/search-index/#Manage_Results_and_Adjust_Ranking "Manage Results and Adjust Ranking")
+    * [Personalization](https://www.addsearch.com/blog/search-index/#Personalization "Personalization")
+    * [Search UI and API](https://www.addsearch.com/blog/search-index/#Search_UI_and_API "Search UI and API")
+    * [Analytics](https://www.addsearch.com/blog/search-index/#Analytics "Analytics")
+  * [Conclusion](https://www.addsearch.com/blog/search-index/#Conclusion "Conclusion")
+
+
+  ## What is a search index?
+
+
+  > *A search index helps users quickly find information on a website. It is designed to map search queries to documents or URLs that might appear in the results.*
+
+
+  Sound complicated? Here is a simpler way to describe it:
+
+
+  You might have stumbled upon an index before in a **more traditional medium: books**. Many large (scientific) books have an index to help you discover relevant information in seconds.
+
+
+  You can find an index usually at the end of the book which includes a list of keywords organized alphabetically. Each of the keywords points to the page where you can find useful information regarding the keyword.
+
+
+  As an example, you might have a book about animals with several hundred pages. You want to find information about “cats”. In the index, you would look for the keyword “cat” and read up on the pages that are mentioned (p. 17, 89, 203-205).
+
+
+  **A search index is quite similar to the one in a book.** It allows the user to quickly find useful information using a keyword. Of course, a web search index has many technological advantages to the one in a book and offers great tools to support website visitors in getting what they want faster.
+
+
+  ## How are search indexes made?
+
+
+  Indexes for books are traditionally created by the author(s), editors but also by professionals specialized in indexing, so-called indexers. Through a content analysis of the book, they define keywords and make sure that these point to the most relevant pages in the book.
+
+
+  The software automates the process of indexing. The **search index for websites is created by crawlers** – also known as web crawlers and web spiders. In simple terms, the [crawler](https://www.addsearch.com/product/crawler/) visits the pages of the website and collects the contents from the website. This data is then converted into an index.
+
+
+  Going back to our example, if you search for “cat” on Google, you will be presented with several pages and URLs that are relevant to your keyword “cat”. While a book index is static because the content of a book is not changing, a search index is dynamic since websites are constantly created and updated.
+
+
+  In addition, the number of search terms in a book index is fixed. A **web search tries to include all keywords** and supports queries with combined search terms. For instance, you could look for “cat video” and the search index will offer relevant results.
+
+
+  ## How are search results returned from an index?
+
+
+  When a user types in a search query, the search engine will find documents that include the search query. The results [are returned](https://pdfs.semanticscholar.org/7351/ac0f90b81d82f6ff062037b43d50cdcb44d5.pdf) from the index with a **title**, short **content highlight**, possibly a **picture** and a **reference to the page URL**.
+
+
+  Some CMSes offer native searchers that visit the CMS’ own database. Since the database is not organized as an index, the results will show up slower compared to an index-based site search option.
+
+
+  ## How a Search Index can Improve Your Website
+
+
+  Search engines **collect the content of your website automatically**. Through an algorithm, your search results are prioritized. Some results will be given more weight, so they will show up before other pages on the results page.
+
+
+  When you choose a [site search provider](https://www.addsearch.com/product), you can enhance your search results with different features.
+
+
+  ![](https://www.addsearch.com/wp-content/uploads/2019/04/addsearch-book.svg)
+
+
+  \
+
+  Manage Results and Adjust Ranking
+
+
+  ]
+
+
+  **Site Areas:** With the site area feature you can choose which areas of your web page you want to boost and which content you want to give decreased importance. For instance, you might want your support articles to be shown before any blog articles if your user is more likely to find relevant information in “support”. You can also exclude certain pages from showing up in search results at all, such as landing pages or author pages. This feature affects only the internal site search and not your Google search.
+
+
+  **Pinned Results:** You can pin certain content to appear on the top of the results page. First, you choose a keyword, then you choose the page that should show up first. It is possible to pin several pages and order them accordingly. This feature shows up as a normal result, so your users won’t know that they are looking at a pinned result.
+
+
+  **Promotions:** Similar to a pinned result, a promotion will show up first on the result page. Promotions can be selected for multiple keywords and pages. In addition, you can use several design elements such as background colors to make the promotion visually appealing for your visitor. Promotions can be temporary, for instance for a Christmas special.
+
+
+  ### Personalization
+
+
+  You can [personalize the results](https://www.addsearch.com/product/personalization/) for each website visitors. Through personalization, users can see search results based on their preferences and browsing histories.
+
+
+  All users come to a website with a different purpose and, although they appear to search with the same keyword, the results they expect can differ a lot. For example, if a site visitor who is known to be vegetarian searches for “pasta recipe,” the search results could immediately return details for a vegetarian sauce, while you would recommend a Bolognese to a meat-eater.
+
+
+  **User-specific results** are more relevant and better search results improve the user experience on your website, increase happiness and, as a result, drive conversions. Personalization can be influenced by anything from a certain page view to preferred search settings, account information or purchase history.
+
+
+  AddSearch also provides site owners with guidance on how to set up personalization settings to ensure that the experience satisfies each user’s needs. If you’re interested in this, you can [contact our Sales team](https://www.addsearch.com/product/personalization/?hsCtaTracking=58dc874e-884c-429a-923b-573564f4e47d%7Ce07518f4-af81-4d18-848f-3005d02e4962#leave-info).
+
+
+  ### Search UI and API
+
+
+  If you want to adjust your user interface to a more advanced and personalized design for site search, you can use AddSearch to crawl your site and provide your search index but code your own design. This customized approach is great to [style your search results page](https://www.addsearch.com/product/search-ui/) for your visitor’s unique needs and wants.
+
+
+  One alternative is to provide an indexing API to the crawler. Through this method, results can be constantly updated with new incoming content. This solution makes sense if your website includes live streams or constantly updated content (such as news sites or video platforms).
+
+
+  ### Analytics
+
+
+  With [Analytics](https://www.addsearch.com/product/analytics/) you can see what your users are looking for and give them exactly what they want. You can gain valuable insight into how your users are using search: how often your users search, what they search for, and whether they find it.
+
+
+  With this information, you can create content to give your users exactly what they are asking for. Analytics include information such as your **most popular keywords**, **no click keywords** or keywords that are **not returning any results**. AddSearch supports Google Analytics, Adobe Analytics, and Matomo, so you can integrate all your analytics in one place.
+
+
+  Similar to having an editor for a book that picks up keywords for the index, all of these features offer a personalized “human touch” to make your search results even better.
+
+
+  <!--EndFragment-->
