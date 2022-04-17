@@ -6,7 +6,7 @@ excerpt: "The following example shows the use of
   the `height` and `width` properties alongside images of varying dimensions:"
 date: 2022-04-15T07:01:59.356Z
 image: /blog/ds-whiteboard.webp
-thumb_image: /blog/c12bc019-3a5f-41a7-bcfe-014c6ef37946.png
+thumb_image: /static/images/uploads/blog/dom.png
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
