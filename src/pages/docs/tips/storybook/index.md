@@ -3,6 +3,7 @@ title: Storybook
 template: docs
 excerpt: "Storybook is a great tool for developing and demoing components. "
 ---
+
 # Storybook
 
 [Storybook](https://storybook.js.org/) is a great tool for developing and demoing components. By default, it is based on Webpack and Webpack dev server.
@@ -20,11 +21,11 @@ npm i --save-dev @web/dev-server-storybook
 Add the plugin and set the project type. See below for supported project types.
 
 ```js
-import { storybookPlugin } from '@web/dev-server-storybook';
+import { storybookPlugin } from "@web/dev-server-storybook";
 
 export default {
   // type can be 'web-components' or 'preact'
-  plugins: [storybookPlugin({ type: 'web-components' })],
+  plugins: [storybookPlugin({ type: "web-components" })],
 };
 ```
 
@@ -32,7 +33,7 @@ Add a `.storybook/main.js` file:
 
 ```js
 module.exports = {
-  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ["../stories/**/*.stories.@(js|jsx|ts|tsx)"],
 };
 ```
 
@@ -40,13 +41,13 @@ Add a story: `stories/MyButton.stories.js`:
 
 ```js
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
-const Button = ({ backgroundColor = 'white', text }) => {
+const Button = ({ backgroundColor = "white", text }) => {
   return `
     <button type="button" style="background-color: ${backgroundColor}">
       ${text}
@@ -56,12 +57,12 @@ const Button = ({ backgroundColor = 'white', text }) => {
 
 export const ButtonA = Button.bind({});
 ButtonA.args = {
-  text: 'Button A',
+  text: "Button A",
 };
 
 export const ButtonB = Button.bind({});
 ButtonB.args = {
-  text: 'Button B',
+  text: "Button B",
 };
 ```
 
