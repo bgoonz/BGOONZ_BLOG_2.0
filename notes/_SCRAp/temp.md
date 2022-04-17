@@ -1,9 +1,5 @@
 
-# Common Python Data Structures (Guide) – Real Python
-
-> ## Excerpt
-> In this tutorial, you'll learn about Python's data structures. You'll look at several implementations of abstract data types and learn which implementations are best for your specific use cases.
-
+# Common Python Data Structures
 ---
 ## Dictionaries, Maps, and Hash Tables
 In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary**  **key**.
@@ -15,10 +11,6 @@ Phone books make a decent real-world analog for dictionary objects. They allow y
 This analogy breaks down somewhat when it comes to _how_ the information is organized to allow for fast lookups. But the fundamental performance characteristics hold. Dictionaries allow you to quickly find the information associated with a given key.
 
 Dictionaries are one of the most important and frequently used data structures in computer science. So, how does Python handle dictionaries? Let’s take a tour of the dictionary implementations available in core Python and the Python standard library.
-
-[![](https://img.realpython.net/ad2a5ca1094274284ec09ebe8b23316c)](https://srv.realpython.net/click/30024566830/?c=67692636049&p=58946116052&r=00402)
-
-[Remove ads](https://realpython.com/account/join/)
 
 ### `dict`: Your Go-To Dictionary
 
@@ -108,10 +100,6 @@ This can save you some typing and make your intentions clearer as compared to us
 
 ```
 
-[![](https://img.realpython.net/c34848d05efe728b284c7a87c7fcd5c9)](https://srv.realpython.net/click/33172000876/?c=43772654581&p=58946116052&r=75987)
-
-[Remove ads](https://realpython.com/account/join/)
-
 ### `collections.ChainMap`: Search Multiple Dictionaries as a Single Mapping[](#collectionschainmap-search-multiple-dictionaries-as-a-single-mapping "Permanent link")
 
 The [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap) data structure groups multiple dictionaries into a single mapping. Lookups search the underlying mappings one by one until a key is found. Insertions, updates, and deletions only affect the first mapping added to the chain:
@@ -193,10 +181,6 @@ But not all parking lots are the same. Some parking lots may be restricted to on
 Performance-wise, it’s very fast to look up an element contained in an array given the element’s index. A proper array implementation guarantees a constant _O_(1) access time for this case.
 
 Python includes several array-like data structures in its standard library that each have slightly different characteristics. Let’s take a look.
-
-[![](https://img.realpython.net/681db5178e811f0240f3775742f6b3b9)](https://srv.realpython.net/click/65049834810/?c=9349191308&p=58946116052&r=98792)
-
-[Remove ads](https://realpython.com/account/join/)
 
 ### `list`: Mutable Dynamic Arrays[](#list-mutable-dynamic-arrays "Permanent link")
 
@@ -349,9 +333,7 @@ TypeError: 'str' object doesn't support item deletion
 
 ```
 
-[![](https://img.realpython.net/80e19a8924e33dc994db2b63586bc3fc)](https://srv.realpython.net/click/48903086761/?c=9349191308&p=58946116052&r=44349)
-
-[Remove ads](https://realpython.com/account/join/)
+[80e19a8924e33dc994db2b63586bc3fc)](48903086761/?c=9349191308&p=58946116052&r=44349)
 
 ### `bytes`: Immutable Arrays of Single Bytes[](#bytes-immutable-arrays-of-single-bytes "Permanent link")
 
@@ -473,9 +455,7 @@ Python offers several data types that you can use to implement records, structs,
 
 Alright, let’s get started!
 
-[![](https://img.realpython.net/39d33f31dff9ce5e91d62b0a7b0c7420)](https://srv.realpython.net/click/44043106944/?c=30337084727&p=58946116052&r=55735)
-
-[Remove ads](https://realpython.com/account/join/)
+[39d33f31dff9ce5e91d62b0a7b0c7420)](44043106944/?c=30337084727&p=58946116052&r=55735)
 
 ### `dict`: Simple Data Objects[](#dict-simple-data-objects "Permanent link")
 
