@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 17 10:20:24 2022
+# Make data base, printed on Sun Apr 17 11:50:29 2022
 
 # Variables
 
@@ -101,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-0d7d5b3f-2c93-48d9-9652-a65d1698ef09.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-69af197f-6a2b-425c-8bb3-15ad1ba20197.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -322,7 +322,6 @@ git:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-04-17 09:05:35
 #  File has been updated.
 #  Successfully updated.
@@ -341,12 +340,13 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 51 / storage = 554 B / avg = 10 B
-# current buf: size = 8162 B / used = 554 B / count = 51 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 51 / storage = 549 B / avg = 10 B
+# current buf: size = 8162 B / used = 549 B / count = 51 / avg = 10 B
 
 # strcache performance: lookups = 56 / hit rate = 8%
 # hash-table stats:
+ 
 # Load=51/8192=1%, Rehash=0, Collisions=2/56=4%
-# Finished Make data base on Sun Apr 17 10:20:24 2022
+# Finished Make data base on Sun Apr 17 11:50:29 2022
 
  
