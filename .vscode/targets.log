@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 17 17:40:44 2022
+# Make data base, printed on Sun Apr 17 20:26:25 2022
 
 # Variables
 
@@ -101,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-fe9eecd8-3bd3-43bf-920f-15b2284f849b.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-37917bfe-1dee-4bb3-b299-a0fd58744ff2.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -320,6 +320,7 @@ git:
 	git push -u origin master
 
 # Not a target:
+ 
 makefile:
 #  Implicit rule search has been done.
 #  Last modified 2022-04-17 12:47:47
@@ -346,6 +347,6 @@ makefile:
 # strcache performance: lookups = 55 / hit rate = 9%
 # hash-table stats:
 # Load=50/8192=1%, Rehash=0, Collisions=2/55=4%
-# Finished Make data base on Sun Apr 17 17:40:44 2022
+# Finished Make data base on Sun Apr 17 20:26:25 2022
 
  
