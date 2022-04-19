@@ -23,19 +23,23 @@
         "gatsby-transformer-remark": "2.8.14",
         "gatsby-plugin-disqus": "^1.2.3",
         "js-yaml": "3.12.2",
-        "lodash": "4.17.11",
         "marked": "0.6.1",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
         "node-sass": "4.14.0",
         "node-sass-utils": "1.1.2",
-        "react": "16.5.1",
-        "react-dom": "16.13.1",
-        "react-helmet": "5.2.1",
+        "lodash": "^4.17.15",
+        "lodash-webpack-plugin": "^0.11.4",
+        "netlify-cms-app": "^2.15.19",
+        "node-sass": "^4.14.0",
+        "prop-types": "^15.6.0",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "react-helmet": "^6.0.0",
         "react-html-parser": "2.0.2",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2",
-        "pdfcrowd":"5.4.0"
+        "pdfcrowd": "5.4.0"
     }
 }
