@@ -4,6 +4,7 @@ template: docs
 excerpt: With Advent of Html5 , we have got various option to cache or store
   info on client browse
 ---
+
 <!--StartFragment-->
 
 # Local Storage vs Session Storage vs Cookie
@@ -20,15 +21,15 @@ localStorage is a way to store data on the client’s computer. It allows the sa
 
 **Pros:**
 
-* stores data with no expiration date
-* storage limit is about 5MB
-* data is never transferred to the server
+- stores data with no expiration date
+- storage limit is about 5MB
+- data is never transferred to the server
 
 **Cons:**
 
-* plaintext, hence not secure by design
-* limited to string data, hence need to be serialized
-* can only be read on client-side
+- plaintext, hence not secure by design
+- limited to string data, hence need to be serialized
+- can only be read on client-side
 
 ![](https://miro.medium.com/max/945/1*LpuLoMck-uh1uWAFWNTf1Q.png)
 
@@ -46,11 +47,11 @@ and it will create a key value pair in localstorage store.
 
 ## Session storage
 
-* stores data only for a session, meaning that the data is stored until the browser (or tab) is closed
-* data is never transferred to the server
-* can only be read on client-side
-* storage limit is about 5-10MB
-* *opening multiple tabs/windows with the same URL creates `sessionStorage` for each tab/window*
+- stores data only for a session, meaning that the data is stored until the browser (or tab) is closed
+- data is never transferred to the server
+- can only be read on client-side
+- storage limit is about 5-10MB
+- _opening multiple tabs/windows with the same URL creates `sessionStorage` for each tab/window_
 
 ![](https://miro.medium.com/max/945/1*W4FwtdJDR6bgwr9OoGOg7A.png)
 
@@ -62,10 +63,10 @@ Same as localstorage , we can write key-value pair in session storage as well.
 
 **Cookie**
 
-* Stores data that has to be sent back to the server with subsequent XHR requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side .
-* Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side.
-* Size must be less than 4KB.
-* Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie.
+- Stores data that has to be sent back to the server with subsequent XHR requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side .
+- Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side.
+- Size must be less than 4KB.
+- Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie.
 
 ![](https://miro.medium.com/max/945/1*yWo1Hx03-gRJUSjHgxYlXg.png)
 
