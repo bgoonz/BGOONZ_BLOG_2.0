@@ -51,7 +51,8 @@ class GraphWeightedUndirectedAdjacencyList {
         this.nodes += 1;
     }
     addEdge(node1, node2, weight) {
-        // Function to add an edge (adds the node too if they are not present in the graph)
+        // Function to add an edge (adds the node too if they are not present in the
+        // graph)
         if (!(node1 in this.connections)) {
             this.addNode(node1);
         }

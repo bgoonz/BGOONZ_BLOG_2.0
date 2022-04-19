@@ -8,7 +8,8 @@ class GraphUnweightedUndirectedAdjacencyList {
         this.connections[node] = new Set();
     }
     addEdge(node1, node2) {
-        // Function to add an edge (adds the node too if they are not present in the graph)
+        // Function to add an edge (adds the node too if they are not present in the
+        // graph)
         if (!(node1 in this.connections)) {
             this.addNode(node1);
         }
@@ -19,8 +20,8 @@ class GraphUnweightedUndirectedAdjacencyList {
         this.connections[node2].add(node1);
     }
     DFSComponent(components, node, visited) {
-        // Helper function to populate the visited set with the nodes in each component
-        // adding the first visited node in the component to the array
+        // Helper function to populate the visited set with the nodes in each
+        // component adding the first visited node in the component to the array
         components.push(node);
         const stack = [node];
         // populating the visited set using DFS (Iterative)

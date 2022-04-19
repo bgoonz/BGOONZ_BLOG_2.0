@@ -1,19 +1,11 @@
 /* Number of Islands
 https://dev.to/rattanakchea/amazons-interview-question-count-island-21h6
-Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
-a two dimensional grid map
-each element is going to represent a piece of land
-1 is land,
-0 is water
-output a number which is the number of islands
-Example 1:
-  Input:
-  11110
-  11010
-  11000
-  00000
-  Output: 1
-Example 2:
+Given a 2d grid map of '1's (land) and '0's (water), count the number of
+islands. An island is surrounded by water and is formed by connecting adjacent
+lands horizontally or vertically. You may assume all four edges of the grid are
+all surrounded by water. a two dimensional grid map each element is going to
+represent a piece of land 1 is land, 0 is water output a number which is the
+number of islands Example 1: Input: 11110 11010 11000 00000 Output: 1 Example 2:
   Input:
   11000
   11000

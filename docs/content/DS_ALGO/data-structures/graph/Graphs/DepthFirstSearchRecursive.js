@@ -8,7 +8,8 @@ class GraphUnweightedUndirected {
         this.connections[node] = new Set();
     }
     addEdge(node1, node2) {
-        // Function to add an edge (adds the node too if they are not present in the graph)
+        // Function to add an edge (adds the node too if they are not present in the
+        // graph)
         if (!(node1 in this.connections)) {
             this.addNode(node1);
         }
@@ -19,8 +20,8 @@ class GraphUnweightedUndirected {
         this.connections[node2].add(node1);
     }
     DFSRecursive(node, value, visited = new Set()) {
-        // DFS Function to search if a node with the given value is present in the graph
-        // checking if the searching node has been found
+        // DFS Function to search if a node with the given value is present in the
+        // graph checking if the searching node has been found
         if (node === value) {
             return true;
         }

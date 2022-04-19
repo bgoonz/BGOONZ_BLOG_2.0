@@ -82,8 +82,8 @@ export { solve };
 // // get all solutions
 // const solutions = solve(graph, start)
 // // for s in solutions..
-// ' -> ' + s + ': [' + solutions[s].join(', ') + ']   (dist:' + solutions[s].dist + ')'
-// From '10' to
+// ' -> ' + s + ': [' + solutions[s].join(', ') + ']   (dist:' +
+// solutions[s].dist + ')' From '10' to
 //  -> 2: [7, 5, 4, 2]   (dist:4)
 //  -> 3: [7, 5, 4, 3]   (dist:4)
 //  -> 4: [7, 5, 4]   (dist:3)
