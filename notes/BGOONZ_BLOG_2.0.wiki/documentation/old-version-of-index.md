@@ -105,8 +105,8 @@ sections:
     content: >-
       <iframe class="block-content" width="100%
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      player"  clipboard-write; 
+      allowfullscreen></iframe>
     actions:
       - label: Youtube
         url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
@@ -178,8 +178,8 @@ sections:
     content: |-
       <iframe class="block-content" width="100%   width="800" height="575"
         src="https://code-playground.netlify.app/index.html" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        player"  clipboard-write; 
+        allowfullscreen></iframe>
     actions: []
     type: section_content
   - section_id: features-two-col
@@ -217,8 +217,8 @@ sections:
     content: |
       <iframe class="block-content" width="100%     width="800" height="575"
        src="https://iframeshowcase.netlify.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       player"  clipboard-write; 
+       allowfullscreen></iframe>
     actions:
       - label: Go To Mini Projects Page
         url: 'https://iframeshowcase.netlify.app/'
@@ -235,8 +235,8 @@ sections:
     content: |-
       <iframe class="block-content" width="100%   width="800" height="575"
        src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       player"  clipboard-write; 
+       allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Blog-Archive
@@ -246,8 +246,8 @@ sections:
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        player"  clipboard-write; 
+        allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Nextjs & SanityCMS Blog W Comments
@@ -257,8 +257,8 @@ sections:
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
-       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       player"  clipboard-write; 
+       allowfullscreen></iframe>
     actions: []
     type: section_content
   - title: Contact

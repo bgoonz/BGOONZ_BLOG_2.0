@@ -25,7 +25,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -55,7 +55,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://archive.org/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://archive.org/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -66,7 +66,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://lambda-resources.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://lambda-resources.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -88,7 +88,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://bgoonz.github.io/bass-station/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://bgoonz.github.io/bass-station/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -114,7 +114,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -143,7 +143,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -163,7 +163,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -188,7 +188,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -204,7 +204,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -215,7 +215,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -236,7 +236,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -258,7 +258,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -280,7 +280,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -298,7 +298,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -336,7 +336,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"   clipboard-write;   allowfullscreen></iframe>
 <br>
 <br>
 <br>
