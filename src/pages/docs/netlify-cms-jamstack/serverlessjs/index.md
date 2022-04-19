@@ -7,9 +7,11 @@ excerpt: How does serverless JavaScript work
 # How does serverless JavaScript work? | Service workers and Cloudflare Workers | Cloudflare
 
 > ## Excerpt
+>
 > Serverless JavaScript is used to build serverless architecture at the network edge. Learn what serverless JavaScript is and how it works.
 
 ---
+
 ## What is serverless JavaScript?
 
 Serverless JavaScript is JavaScript code that comprises all or part of an application, is only run when requested, and is not hosted on proprietary servers. It enables developers to build high-performance, low-latency serverless applications (such as [JAMstack applications](https://www.cloudflare.com/learning/performance/what-is-jamstack/)) that run on a network and avoid many issues associated with other serverless applications, such as cold starts.
