@@ -10,6 +10,7 @@ image_position: right
 show_author_bio: false
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # From object to iframe
@@ -65,22 +66,27 @@ Copy to Clipboard
 
 This example includes the basic essentials needed to use an `<iframe>`:
 
-* [`border: none`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+- [`border: none`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 
   If used, the `<iframe>` is displayed without a surrounding border. Otherwise, by default, browsers display the `<iframe>` with a surrounding border (which is generally undesirable).
-* [`allowfullscreen`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allowfullscreen)
+
+- [`allowfullscreen`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allowfullscreen)
 
   If set, the `<iframe>` is able to be placed in fullscreen mode using the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) (somewhat beyond the scope of this article.)
-* [`src`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-src)
+
+- [`src`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-src)
 
   This attribute, as with [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)/[`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img), contains a path pointing to the URL of the document to be embedded.
-* [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-height)
+
+- [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-height)
 
   These attributes specify the width and height you want the iframe to be.
-* Fallback content
+
+- Fallback content
 
   In the same way as other similar elements like [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), you can include fallback content between the opening and closing `<iframe></iframe>` tags that will appear if the browser doesn't support the `<iframe>`. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support `<iframe>`s these days.
-* [`sandbox`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
+
+- [`sandbox`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
 
   This attribute, which works in slightly more modern browsers than the rest of the `<iframe>` features (e.g. IE 10 and above) requests heightened security settings; we'll say more about this in the next section.
 
@@ -117,7 +123,7 @@ HTTPS-enabling your site requires a special security certificate to be installed
 
 #### Always use the `sandbox` attribute
 
-You want to give attackers as little power as you can to do bad things on your website, therefore you should give embedded content *only the permissions needed for doing its job.* Of course, this applies to your own content, too. A container for code where it can be used appropriately — or for testing — but can't cause any harm to the rest of the codebase (either accidental or malicious) is called a [sandbox](https://en.wikipedia.org/wiki/Sandbox_(computer_security)).
+You want to give attackers as little power as you can to do bad things on your website, therefore you should give embedded content *only the permissions needed for doing its job.* Of course, this applies to your own content, too. A container for code where it can be used appropriately — or for testing — but can't cause any harm to the rest of the codebase (either accidental or malicious) is called a [sandbox](<https://en.wikipedia.org/wiki/Sandbox_(computer_security)>).
 
 Unsandboxed content can do way too much (executing JavaScript, submitting forms, popup windows, etc.) By default, you should impose all available restrictions by using the `sandbox` attribute with no parameters, as shown in our previous example.
 
@@ -131,7 +137,7 @@ If absolutely required, you can add permissions back one by one (inside the `sa
 
 **Note:** You can read Frederik Braun's post [On the X-Frame-Options Security Header](https://blog.mozilla.org/security/2013/12/12/on-the-x-frame-options-security-header/) for more background information on this topic. Obviously, it's rather out of scope for a full explanation in this article.
 
-## [The <embed> and <object> elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#the_embed_and_object_elements "Permalink to The \<embed> and \<object> elements")
+## [The <embed> and <object> elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#the_embed_and_object_elements "Permalink to The <embed> and <object> elements")
 
 The [`<embed>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed) and [`<object>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object) elements serve a different function to [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) — these elements are general purpose embedding tools for embedding external content, such as PDFs.
 
