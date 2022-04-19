@@ -1,43 +1,43 @@
 // starting at s
 function solve(graph, s) {
-    const solutions = {};
-    solutions[s] = [];
-    solutions[s].dist = 0;
-    while (true) {
-        let p = null;
-        let neighbor = null;
-        let dist = Infinity;
-        for (const n in solutions) {
-            if (!solutions[n]) {
-                continue;
-            }
-            const ndist = solutions[n].dist;
-            const adj = graph[n];
-            for (const a in adj) {
-                if (solutions[a]) {
-                    continue;
-                }
-                const d = adj[a] + ndist;
-                if (d < dist) {
-                    p = solutions[n];
-                    neighbor = a;
-                    dist = d;
-                }
-            }
+  const solutions = {};
+  solutions[s] = [];
+  solutions[s].dist = 0;
+  while (true) {
+    let p = null;
+    let neighbor = null;
+    let dist = Infinity;
+    for (const n in solutions) {
+      if (!solutions[n]) {
+        continue;
+      }
+      const ndist = solutions[n].dist;
+      const adj = graph[n];
+      for (const a in adj) {
+        if (solutions[a]) {
+          continue;
         }
-        // no more solutions
-        if (dist === Infinity) {
-            break;
+        const d = adj[a] + ndist;
+        if (d < dist) {
+          p = solutions[n];
+          neighbor = a;
+          dist = d;
         }
-        // extend parent's solution path
-        solutions[neighbor] = p.concat(neighbor);
-        // extend parent's cost
-        solutions[neighbor].dist = dist;
+      }
     }
-    return solutions;
+    // no more solutions
+    if (dist === Infinity) {
+      break;
+    }
+    // extend parent's solution path
+    solutions[neighbor] = p.concat(neighbor);
+    // extend parent's cost
+    solutions[neighbor].dist = dist;
+  }
+  return solutions;
 }
 
-export { solve };
+export {solve};
 
 // // create graph
 // const graph = {}
@@ -82,8 +82,8 @@ export { solve };
 // // get all solutions
 // const solutions = solve(graph, start)
 // // for s in solutions..
-// ' -> ' + s + ': [' + solutions[s].join(', ') + ']   (dist:' + solutions[s].dist + ')'
-// From '10' to
+// ' -> ' + s + ': [' + solutions[s].join(', ') + ']   (dist:' +
+// solutions[s].dist + ')' From '10' to
 //  -> 2: [7, 5, 4, 2]   (dist:4)
 //  -> 3: [7, 5, 4, 3]   (dist:4)
 //  -> 4: [7, 5, 4]   (dist:3)
