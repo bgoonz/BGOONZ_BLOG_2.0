@@ -2,7 +2,7 @@ id: ds-algo
 title: "Data Structures & Algorithms "
 description: "\r
 
-#  6 Essential Data Structures Java Programmer should Learn in 2022 |
+  # 6 Essential Data Structures Java Programmer should Learn in 2022 |
   Java67\r
 
   \r
@@ -17,7 +17,7 @@ description: "\r
   ---\r
 
   Hello guys, Data Structure is a building block of programs. It's even said
-  that  **\"Data Structure + Algorithms= Program\"**. That's why a good
+  that  **\"Data Structure + Algorithms= Program\"**. That's why a good
   knowledge of data structure is very important for any programmers, including
   Java developers. Data structure gives you the option to store your data so
   that you can access it based on your requirement. For example, if you want a
@@ -25,15 +25,15 @@ description: "\r
   [HashMap](https://www.java67.com/2013/02/10-examples-of-hashmap-in-java-progr\
   amming-tutorial.html), but that's only possible if you know data structure and
   their implementations in the programming language you are using, and that's
-  what you will learn in this article. \r
+  what you will learn in this article. \r
 
   \r
 
-  Java API provides built-in support for common data structures, essential
+   Java API provides built-in support for common data structures, essential
   for writing programs like an array, linked list, map, set, stack, and queue.
   You don't need to implement these data structures by yourself, you can
   directly use them in your program, thanks to the rich and efficient
-  implementation provided by Java API. \r
+  implementation provided by Java API. \r
 
   \r
 
@@ -49,7 +49,7 @@ description: "\r
   Many of these data structure is part of the hugely popular Java Collection
   Framework, and almost all Java programs maybe, except [hello
   world](http://java67.blogspot.sg/2013/03/helloworld-in-java-how-to-write-comp\
-  ile-example-tutorial.html) make use of Collection in one or another form. \r
+  ile-example-tutorial.html) make use of Collection in one or another form. \r
 
   \r
 
@@ -61,10 +61,10 @@ description: "\r
 
   Btw, if you are a complete beginner in the world of data structure and
   algorithms, then I also suggest you first go through a comprehensive course
-  like [Data Structures and Algorithms: Deep Dive Using
+  like [Data Structures and Algorithms: Deep Dive Using
   Java](https://click.linksynergy.com/fs-bin/click?id=JVFxdTr9V80&subid=0&offer\
   id=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fdata-s\
-  tructures-and-algorithms-deep-dive-using-java%2F) to learn the basics and
+  tructures-and-algorithms-deep-dive-using-java%2F) to learn the basics and
   master it.\r
 
   \r
@@ -75,7 +75,7 @@ description: "\r
 
   \r
 
-##  6 Essential Data Structures for Java Developers\r
+  ## 6 Essential Data Structures for Java Developers\r
 
   \r
 
@@ -103,34 +103,34 @@ description: "\r
 
   \r
 
-## # 1\\. Array\r
+  ### 1\\. Array\r
 
   \r
 
   Java programming language provides built-in support for the array in the
   language itself. It has a special syntax to declare an array like int\\[\\],
   which is an array of primitive int types. You can create an array of both
-  reference types and primitives. \r
+  reference types and primitives. \r
 
   \r
 
   Also, unlike the C programming language, an array in Java is bounded, and
   you will get ArrayIndexOutOfBoundException if you are working with an invalid
-  index. \r
+  index. \r
 
   \r
 
   Array in Java are also homogeneous, you can not store multiple types of
   objects in an array-like you can only store a String in a String\\[\\], if you
-  try to store Integer, you will get ArrayStoreException at runtime. \r
+  try to store Integer, you will get ArrayStoreException at runtime. \r
 
   \r
 
-  You can check further check [**Data Structures and Algorithms: Deep Dive
+  You can check further check [**Data Structures and Algorithms: Deep Dive
   Using
   Java**](https://click.linksynergy.com/fs-bin/click?id=JVFxdTr9V80&subid=0&off\
   erid=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fdata\
-  -structures-and-algorithms-deep-dive-using-java%2F) to learn more about array
+  -structures-and-algorithms-deep-dive-using-java%2F) to learn more about array
   and other essential data structures and algorithms, and more importantly how
   to use them in Java Program.\r
 
@@ -156,14 +156,14 @@ description: "\r
 
   \r
 
-## # 2\\. Linked List\r
+  ### 2\\. Linked List\r
 
   \r
 
   Apart from the array, a linked list is another basic data structure in
   programming. Java provides a doubly-linked list implementation as
   java.util.LinkedList, this class can be used whenever a linked list data
-  structure is needed. \r
+  structure is needed. \r
 
   \r
 
@@ -177,7 +177,7 @@ description: "\r
 
   And, if you are revising Data structure concepts for FAANG interviews then I
   also suggest you join this amazing FAANG interview preparation course by
-  Andrei Negaoi on Udemy. It's called Master the **[Coding Interview: Big Tech
+  Andrei Negaoi on Udemy. It's called Master the **[Coding Interview: Big Tech
   (FAANG)
   Interviews](https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&m\
   url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fmaster-the-coding-interview-big-te\
@@ -195,7 +195,7 @@ description: "\r
 
   \r
 
-## # 3\\. Hash table\r
+  ### 3\\. Hash table\r
 
   \r
 
@@ -207,7 +207,7 @@ description: "\r
   \r
 
   It's also known as map or dictionary data structure, you might have heard
-  about Dictionary in Python, which is the same as Map in Java. \r
+  about Dictionary in Python, which is the same as Map in Java. \r
 
   \r
 
@@ -216,9 +216,9 @@ description: "\r
 
   \r
 
-  You can further check the [**Algorithms and Data Structures - Part 1 and
+  You can further check the [**Algorithms and Data Structures - Part 1 and
   2**](https://pluralsight.pxf.io/c/1193463/424552/7490?u=https%3A%2F%2Fwww.plu\
-  ralsight.com%2Fcourses%2Fads-part1) courses on Pluralsight to learn more about
+  ralsight.com%2Fcourses%2Fads-part1) courses on Pluralsight to learn more about
   the Hash table, map, or dictionary data structure in Java.\r
 
   \r
@@ -231,15 +231,15 @@ description: "\r
 
   \r
 
-## # 4\\. Stack\r
+  ### 4\\. Stack\r
 
   \r
 
   Java API also provides a Stack data structure implemented as
   java.util.Stack. This class extends the legacy Vector class for storing
   elements. Since the stack is a LIFO (Last In, First Out) data structure, it
-  provides a push() method to insert objects and a pop() method to consume
-  elements from the top. \r
+  provides a push() method to insert objects and a pop() method to consume
+  elements from the top. \r
 
   \r
 
@@ -252,7 +252,7 @@ description: "\r
   \r
 
   Btw, if you are refreshing your data structure concepts for Interviews, I
-  also suggest you go through the [**Data Structures in Java: An Interview
+  also suggest you go through the [**Data Structures in Java: An Interview
   Refresher**](https://www.educative.io/collection/5642554087309312/57248228436\
   86912?affiliate_id=5073518643380224) course on Educative to prepare well for
   your interview.\r
@@ -267,7 +267,7 @@ description: "\r
 
   \r
 
-## # 5\\. Queue\r
+  ### 5\\. Queue\r
 
   \r
 
@@ -278,12 +278,12 @@ description: "\r
   [LinkedList](https://www.java67.com/2012/12/difference-between-arraylist-vs-L\
   inkedList-java.html), and
   [PriorityQueue](http://www.java67.com/2015/07/how-to-use-priorityqueue-in-jav\
-  a-example.html). \r
+  a-example.html). \r
 
   \r
 
   Though you can also implement Queue by using LinkedList or array, it's much
-  better to use existing classes, which are tried and tested. \r
+  better to use existing classes, which are tried and tested. \r
 
   \r
 
@@ -305,7 +305,7 @@ description: "\r
 
   \r
 
-## # 6\\. Set\r
+  ### 6\\. Set\r
 
   \r
 
@@ -319,7 +319,7 @@ description: "\r
   \r
 
   Java Collection API provides a couple of implementations of Sets
-  like [HashSet, TreeSet, and
+  like [HashSet, TreeSet, and
   LinkedHashSet](http://javarevisited.blogspot.com/2012/11/difference-between-t\
   reeset-hashset-vs-linkedhashset-java.html), which is more than enough for most
   situations. Those collections, apart from the beginning set, also provide
@@ -328,12 +328,12 @@ description: "\r
   \r
 
   If you want to learn more about advanced data structures in Java, I highly
-  recommend you to join **[Data Structures and Algorithms
+  recommend you to join **[Data Structures and Algorithms
   Specializatio](https://coursera.pxf.io/c/3294490/1164545/14726?u=https%3A%2F%\
   2Fwww.coursera.org%2Fspecializations%2Fdata-structures-algorithms)**n on
   Coursera. This specialization is a collection of 6 amazing Data structure
   courses to teach you graph, string, list, and many more essential and advanced
-  data structures. \r
+  data structures. \r
 
   \r
 
@@ -341,7 +341,7 @@ description: "\r
   puzzles on your phone to brush up and level up your algorithmic skill as well
   100+ coding problems which are often asked by big tech companies. More
   importantly, you get instant feedback on whether your solution is correct or
-  not. \r
+  not. \r
 
   \r
 
@@ -354,7 +354,7 @@ description: "\r
   \r
 
   That's all about some of the most **essential Data Structures for Java
-  developers**.  Apart from these basic data structures, there are a lot more in
+  developers**.  Apart from these basic data structures, there are a lot more in
   the Java collection framework, including concurrent data structures like
   BlockingQueue and ConcurrentHashMap. For a Java developer with any experience
   level, it's good to explore new collection classes introduced in Java 5 and 6
@@ -362,7 +362,7 @@ description: "\r
 
   \r
 
-  Other **Data Structure and Algorithms**  You may like\r
+  Other **Data Structure and Algorithms**  You may like\r
 
   \r
 
@@ -372,7 +372,7 @@ description: "\r
 
   -   5 Books to Learn Data Structure and Algorithms in-depth
   ([books](https://javarevisited.blogspot.com/2015/07/5-data-structure-and-algo\
-  rithm-books-best-must-read.html)) \r
+  rithm-books-best-must-read.html)) \r
 
   -   How to reverse an array in Java?
   ([solution](https://javarevisited.blogspot.com/2015/03/how-to-reverse-array-i\
@@ -453,6 +453,6 @@ description: "\r
 
   **P. S.** - If you are looking for some Free Algorithms courses to improve
   your understanding of Data Structure and Algorithms, then you should also
-  check the **[Data Structures in Java for Beginners](http://bit.ly/2hhloDL)**
+  check the **[Data Structures in Java for Beginners](http://bit.ly/2hhloDL)**
   course on Udemy. It's free and you just need a udemy account to join this
   course."

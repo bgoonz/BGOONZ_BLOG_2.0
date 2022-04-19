@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 17 11:50:29 2022
+# Make data base, printed on Tue Apr 19 07:23:54 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
 # environment
-SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/7ad7f315-830f-43e8-a75a-1b714d3cfb0e
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/5ddcd89b-1d8d-431a-bd08-5e976e3f5c24
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -79,7 +79,7 @@ MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.5/bin:/home/gitpod/.rvm/gems/ruby-2.7.5@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.5/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/workspace/go/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/home/gitpod/.pyenv/shims:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin:/home/gitpod/.nvm/versions/node/v16.13.2/bin
 # environment
-GITPOD_WORKSPACE_ID = bgoonz-bgoonzblog20-n67x6gy48g1
+GITPOD_WORKSPACE_ID = bgoonz-bgoonzblog20-g3k9ofdr2gu
 # environment
 GITPOD_INTERVAL = 30000
 # environment
@@ -101,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-69af197f-6a2b-425c-8bb3-15ad1ba20197.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8fd1faf0-35bf-4df8-b85b-9a4d5c1e1bd0.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -143,7 +143,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = wjqkbk_4-0hrSxCtN4voWTGGom9ch2Ty
+GITPOD_CLI_APITOKEN = O_f69ps6pzGJ33uuSykm3GM_EJCNfbAD
 # automatic
 +F = $(notdir $+)
 # environment
@@ -151,7 +151,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = bgoonz-bgoonzblog20-n67x6gy48g1
+HOSTNAME = bgoonz-bgoonzblog20-g3k9ofdr2gu
 # environment
 GRADLE_USER_HOME = /workspace/.gradle/
 # environment
@@ -251,7 +251,7 @@ PWD = /workspace/BGOONZ_BLOG_2.0
 # environment
 LC_ALL = C
 # environment
-GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"bgoonz/BGOONZ_BLOG_2.0 - master","ref":"master","refType":"branch","revision":"a7e912270b543c914cc2d9edf09f194b2c77f6fd","repository":{"cloneUrl":"https://github.com/bgoonz/BGOONZ_BLOG_2.0.git","host":"github.com","name":"BGOONZ_BLOG_2.0","owner":"bgoonz","private":false},"normalizedContextURL":"https://github.com/bgoonz/BGOONZ_BLOG_2.0","checkoutLocation":"BGOONZ_BLOG_2.0"}
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"bgoonz/BGOONZ_BLOG_2.0 - master","ref":"master","refType":"branch","revision":"b33b17a20cd8dc6f621ce91f4274b3a609f54eca","repository":{"cloneUrl":"https://github.com/bgoonz/BGOONZ_BLOG_2.0.git","host":"github.com","name":"BGOONZ_BLOG_2.0","owner":"bgoonz","private":false},"normalizedContextURL":"https://github.com/bgoonz/BGOONZ_BLOG_2.0","checkoutLocation":"BGOONZ_BLOG_2.0"}
 # environment
 JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
@@ -271,9 +271,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = e0fd65a4-cb3d-4993-958e-340ce9dd3b20
+GITPOD_INSTANCE_ID = 202d474d-a71e-4c12-b2ad-32aaa4a80c56
 # environment
-GITPOD_WORKSPACE_URL = https://bgoonz-bgoonzblog20-n67x6gy48g1.ws-us40.gitpod.io
+GITPOD_WORKSPACE_URL = https://bgoonz-bgoonzblog20-g3k9ofdr2gu.ws-us40.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -293,9 +293,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
 
 # Directories
 
-# . (device 2346, inode 1141148118): 45 files, no impossibilities.
+# . (device 2346, inode 1342715268): 47 files, no impossibilities.
 
-# 45 files, no impossibilities in 1 directories.
+# 47 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -322,7 +322,7 @@ git:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-17 09:05:35
+#  Last modified 2022-04-19 06:12:24.100137766
 #  File has been updated.
 #  Successfully updated.
 
@@ -340,13 +340,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 51 / storage = 549 B / avg = 10 B
-# current buf: size = 8162 B / used = 549 B / count = 51 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 53 / storage = 587 B / avg = 11 B
+# current buf: size = 8162 B / used = 587 B / count = 53 / avg = 11 B
 
-# strcache performance: lookups = 56 / hit rate = 8%
+# strcache performance: lookups = 58 / hit rate = 8%
 # hash-table stats:
- 
-# Load=51/8192=1%, Rehash=0, Collisions=2/56=4%
-# Finished Make data base on Sun Apr 17 11:50:29 2022
+# Load=53/8192=1%, Rehash=0, Collisions=2/58=3%
+# Finished Make data base on Tue Apr 19 07:23:54 2022
 
  

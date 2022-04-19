@@ -1,4 +1,4 @@
-stackbitVersion: 0.4.1
+stackbitVersion: ~0.4.0
 ssgName: gatsby
 ssgVersion: 2.4.0
 nodeVersion: 14
