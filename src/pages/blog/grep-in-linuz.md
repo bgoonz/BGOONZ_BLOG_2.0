@@ -8,7 +8,11 @@ image: https://1.bp.blogspot.com/-Bd6UkevpE9o/X5GNNIc9iwI/AAAAAAAAj6k/ciCEemUfk4
 thumb_image: https://1.bp.blogspot.com/-Bd6UkevpE9o/X5GNNIc9iwI/AAAAAAAAj6k/ciCEemUfk4YMbLbCRdIiX7DZkUTzdskOQCLcBGAsYHQ/w400-h246/grep%2Bcommand%2Bexample%2Bin%2BLinux.png
 image_position: left
 author: src/data/authors/bgoon.yaml
-show_author_bio: false
+categories:
+  - src/data/categories/tools.yaml
+tags:
+  - src/data/tags/linux.yaml
+show_author_bio: true
 cmseditable: true
 ---
 
