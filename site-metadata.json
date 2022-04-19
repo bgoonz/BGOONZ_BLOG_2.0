@@ -176,7 +176,6 @@
             "no_follow": false,
             "type": "action"
           },
-
           {
             "label": "Top Repos",
             "url": "/docs",
@@ -197,7 +196,6 @@
         ],
         "new_window": false
       },
-
       {
         "label": "Projects",
         "url": "docs/projects",
