@@ -18,6 +18,7 @@ related_posts:
   - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 ## What is HTTP?
@@ -58,29 +59,29 @@ Your client application communicated with a server application running somewhere
 
 An HTTP request must have the following:
 
-* An HTTP method (like `GET`)
-* A host URL (like `https://api.spotify.com/`)
-* An endpoint path(like  `v1/artists/{id}/related-artists`)
+- An HTTP method (like `GET`)
+- A host URL (like `https://api.spotify.com/`)
+- An endpoint path(like  `v1/artists/{id}/related-artists`)
 
 A request can also optionally have:
 
-* Body
-* Headers
-* Query strings
-* HTTP version
+- Body
+- Headers
+- Query strings
+- HTTP version
 
 ### The Anatomy of an HTTP Response
 
 A response must have the following:
 
-* Protocol version (like `HTTP/1.1`)
-* Status code (like  `200`)
-* Status text (`OK`)
-* Headers
+- Protocol version (like `HTTP/1.1`)
+- Status code (like  `200`)
+- Status text (`OK`)
+- Headers
 
 A response may also optionally have:
 
-* Body
+- Body
 
 ## HTTP Methods Explained
 
@@ -160,20 +161,20 @@ Every user on GitHub can create gists, retrieve their gists, retrieve all public
 
 A quick Hoppscotch walkthrough:
 
-* There is a drop down menu where you can select the method you want to create a request with.
-* There is a text box where you should paste the URL of of the API endpoint you want to access.
+- There is a drop down menu where you can select the method you want to create a request with.
+- There is a text box where you should paste the URL of of the API endpoint you want to access.
 
 ![Screen-Shot-2022-01-24-at-12.35.33-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.35.33-PM.png)
 
-* There is a Headers section where we will be passing in headers as instructed by the GitHub docs.
+- There is a Headers section where we will be passing in headers as instructed by the GitHub docs.
 
 ![Screen-Shot-2022-01-24-at-12.39.38-PM-1](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.39.38-PM-1.png)
 
-* There is a body area where we will pass in content to our body as instructed by the GitHub docs.
+- There is a body area where we will pass in content to our body as instructed by the GitHub docs.
 
 ![Screen-Shot-2022-01-24-at-12.41.14-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.41.14-PM.png)
 
-* The right column will quickly let you know if your request was successful. If it is green, you successfully made your request, and if it's red there was an error.
+- The right column will quickly let you know if your request was successful. If it is green, you successfully made your request, and if it's red there was an error.
 
 ![Screen-Shot-2022-01-24-at-3.44.56-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-3.44.56-PM.png)
 
@@ -205,7 +206,7 @@ To make this request:
 
 ![Screen-Shot-2022-01-24-at-12.39.38-PM-2](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.39.38-PM-2.png)
 
-4.  Hit send!
+4.  Hit send!
 
 At the bottom, you'll see your response formatted as `JSON`. In order to read this more clearly, copy the response and paste it into an [online JSON formatter](https://jsonformatter.curiousconcept.com/#).
 
@@ -260,7 +261,7 @@ To make this request:
 
 ![Screen-Shot-2022-01-24-at-2.35.57-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-2.35.57-PM.png)
 
-5.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your Github username and pass your personal access token we created in the password field.
+5.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your Github username and pass your personal access token we created in the password field.
 
 After we run this, we get a long response. An easy way to check that your gist was created is to go to your Gists in GitHub.
 
@@ -296,13 +297,13 @@ To make this request:
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
-2.   Select the `PATCH` request method.
+2.  Select the `PATCH` request method.
 
-3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+3.  In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
 
-4.   In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
+4.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
 
-5.   In the Body tab, we'll pass in the updated description and title. Here is the code:
+5.  In the Body tab, we'll pass in the updated description and title. Here is the code:
 
 ```javascript
 
@@ -336,9 +337,9 @@ To make this request:
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
-2.   Select the `DELETE` request method
+2.  Select the `DELETE` request method
 
-3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+3.  In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
 
 If we navigate to our Gists, we see that this one doesn't exist and we successfully deleted the resource.
 
