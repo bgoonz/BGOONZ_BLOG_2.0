@@ -145,10 +145,13 @@ window.removeAnnouncementHandlers = function () {
 // Handle docs navigation menu toggling on small screens
 function docsNavToggleHandler(e) {
   e.preventDefault();
-  //document.body.classList.toggle('docs-menu--opened');
+  // document.body.classList.toggle('docs-menu--opened');
   document
     .getElementsByClassName("docs-content")[0]
-    .classList.toggle("docs-menu--opened"); // can't attach to body since we limit the scope of the docs.scss to the div docs-content (the one just below div with class docs-css), so we add the docs-menu--opened class to it instead of body
+    .classList.toggle("docs-menu--opened"); // can't attach to body since we limit the scope of
+  // the docs.scss to the div docs-content (the one
+  // just below div with class docs-css), so we add
+  // the docs-menu--opened class to it instead of body
 }
 // Handle submenu toggling
 function submenuToggleHandler(e) {
@@ -370,4 +373,4 @@ function anchorForId(id) {
 }
 
 // Syntax Highlighter
-//Prism.highlightAll();
+// Prism.highlightAll();
