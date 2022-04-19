@@ -106,6 +106,8 @@ export default class Blog extends React.Component {
                             } </article>
                         ))
                     } </div>
+<iframe src="https://platform.twitter.com/widgets/tweet_button.html" style="border: 0; width:130px; height:20px;"></iframe>
+
                     <div className="gcse-search"/>
                 </div>
             </Layout>
