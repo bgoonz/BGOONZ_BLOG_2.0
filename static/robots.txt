@@ -1,3 +1,4 @@
 User-Agent: *
 Disallow: 
-Allow: /https://master--trusting-dijkstra-4d3b17.netlify.app/
+Allow: https://bgoonz-blog.netlify.app/
+Sitemap: https://bgoonz-blog.netlify.app/Sitemap.xml
