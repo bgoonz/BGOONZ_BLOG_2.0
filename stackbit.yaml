@@ -395,7 +395,6 @@ models:
               label: Columns
               description: The number of grid items in a row
               options:
-                  - two
                   - three
               default: three
               required: true
