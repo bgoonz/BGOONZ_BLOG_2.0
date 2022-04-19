@@ -1,0 +1,14 @@
+id: Html
+title: HTML
+description: >-
+  [Web browsers](https://en.m.wikipedia.org/wiki/Web_browser "Web
+  browser") receive HTML documents from a [web
+  server](https://en.m.wikipedia.org/wiki/Web_server "Web server") or from local
+  storage and [render](https://en.m.wikipedia.org/wiki/Browser_engine "Browser
+  engine") the documents into multimedia web pages. HTML describes the structure
+  of a [web page](https://en.m.wikipedia.org/wiki/Web_page "Web
+  page") [semantically](https://en.m.wikipedia.org/wiki/Semantic_Web "Semantic
+  Web")and originally included cues for the appearance of the document.
+
+
+  [HTML elements](https://en.m.wikipedia.org/wiki/HTML_element "HTML element") are the building blocks of HTML pages. With HTML constructs, [images](https://en.m.wikipedia.org/wiki/HTML_element#Images_and_objects "HTML element") and other objects such as [interactive forms](https://en.m.wikipedia.org/wiki/Fieldset "Fieldset") may be embedded into the rendered page. HTML provides a means to create [structured documents](https://en.m.wikipedia.org/wiki/Structured_document "Structured document") by denoting structural [semantics](https://en.m.wikipedia.org/wiki/Semantics "Semantics") for text such as headings, paragraphs, lists, [links](https://en.m.wikipedia.org/wiki/Hyperlink "Hyperlink"), quotes and other items. HTML elements are delineated by *tags*, written using [angle brackets](https://en.m.wikipedia.org/wiki/Bracket#Angle_brackets "Bracket"). Tags such as `<img />` and `<input />` directly introduce content into the page. Other tags such as `<p>` surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.

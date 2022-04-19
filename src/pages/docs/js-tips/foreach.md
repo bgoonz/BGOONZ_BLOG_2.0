@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Array.prototype.forEach()
 
 The `forEach()` method executes a provided function once for each array element.

@@ -3,7 +3,7 @@ title: Common Modules
 weight: 0
 excerpt: resources
 seo:
-    title: ''
+    title: 'NodeJS Module System'
     description: >-
         This section is similar to a blog but is more technical in nature and time
         invariant with regard to content.
@@ -12,6 +12,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 ## Modules: CommonJS modules[#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
 

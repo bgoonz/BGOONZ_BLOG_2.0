@@ -2,13 +2,16 @@
  * GLOBAL OBJECTS > OBJECT
  * https:
 //developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
 //---------------------------------------------------------------------------\\
+
 
 // Global object: properties
 Object.length
 // length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1.
 Object.prototype
 // Represents the Object prototype object and allows to add new properties and methods to all objects of type Object.
+
 
 // Methods of the Object constructor
 Object.assign(target, ...sources)
@@ -52,12 +55,15 @@ Object.setPrototypeOf(obj, prototype)
 Object.values(obj)
 // Returns an array containing the values that correspond to all of a given object's own enumerable string properties.
 
+
 // Object instances and Object prototype object (Object.prototype.property or Object.prototype.method())
+
 // Properties
 obj.constructor
 // Specifies the function that creates an object's prototype.
 obj.__proto__
 // Points to the object which was used as prototype when the object was instantiated.
+
 
 // Methods
 obj.hasOwnProperty(prop)
@@ -72,17 +78,21 @@ obj.toString()
 // Returns a string representation of the object.
 object.valueOf()
 // Returns the primitive value of the specified object.
+
 /* *******************************************************************************************
  * GLOBAL OBJECTS > ARRAY
  * https:
 //developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 //---------------------------------------------------------------------------\\
+
 
 // Global object: properties
 Array.length
 // Reflects the number of elements in an array.
 Array.prototype
 // Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
+
 
 // Global object: methods
 Array.from(arrayLike[, mapFn[, thisArg]])
@@ -92,9 +102,11 @@ Array.isArray(obj)
 Array.of(element0[, element1[, ...[, elementN]]])
 // Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
+
 // Instance: properties
 arr.length
 // Reflects the number of elements in an array.
+
 
 // Instance: mutator methods
 arr.copyWithin(target, start, end)
@@ -116,6 +128,7 @@ array.splice(start, deleteCount, item1, item2, ...)
 arr.unshift([element1[, ...[, elementN]]])
 // Adds one or more elements to the front of an array and returns the new length of the array.
 
+
 // Instance: accessor methods
 arr.concat(value1[, value2[, ...[, valueN]]])
 // Returns a new array comprised of this array joined with other array(s) and/or value(s).
@@ -133,6 +146,7 @@ arr.toString()
 // Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
 arr.toLocaleString(locales, options)
 // Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method.
+
 
 // Instance: iteration methods
 arr.entries()

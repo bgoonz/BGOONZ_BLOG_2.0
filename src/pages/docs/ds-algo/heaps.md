@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # What is heap data structure
 
 Heap is one efficient implementation of an abstract data structure called a [priority queue](https://learnersbucket.com/tutorials/data-structures/priority-queue-implementation-in-javascript).
