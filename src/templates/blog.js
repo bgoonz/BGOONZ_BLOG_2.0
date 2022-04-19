@@ -2,11 +2,13 @@ import {graphql} from 'gatsby';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import React from 'react';
+
 import {Layout} from '../components/index';
 import {getPages, Link, toStyleObj, withPrefix} from '../utils';
+
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
-export const query = graphql `
+export const query = graphql`
     query ($url: String) {
         sitePage(path: { eq: $url }) {
             id
@@ -14,33 +16,39 @@ export const query = graphql `
     }
 `;
 export default class Blog extends React.Component {
-    render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
+  render() {
+    let display_posts =
+        _.orderBy(getPages(this.props.pageContext.pages, '/blog'),
+                  'frontmatter.date', 'desc');
         return (
             <Layout {...this.props}>
                 <header className="page-header has-gradient outer">
                     {
                     _.get(this.props, 'pageContext.frontmatter.image', null) && (
                         <div className="bg-img"
-                            style={
-                                toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")
-                            }/>
+                    style =
+                    {
+                      toStyleObj("background-image: url('" +
+                                 withPrefix(_.get(
+                                     this.props,
+                                     'pageContext.frontmatter.image', null)) +
+                                 "')")
+                    } />
                     )
                 }
                     <div className="inner-sm">
                         <h1 className="page-title">
                             {
                             _.get(this.props, 'pageContext.frontmatter.title', null)
-                        }</h1>
-                        {
-                        _.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                            <p className="page-subtitle">
-                                {
-                                _.get(this.props, 'pageContext.frontmatter.subtitle', null)
-                            }</p>
+                        }</h1 >
+                    {
+                      _.get(this.props, 'pageContext.frontmatter.subtitle',
+                            null) &&
+                          (<p className = "page-subtitle">{_.get(
+                              this.props, 'pageContext.frontmatter.subtitle',
+                              null)}</p>
                         )
-                    } </div>
-                </header>
+                    } </div></header>
                 <div className="inner-md outer">
                     <div className="post-feed">
                         {
@@ -58,8 +66,7 @@ export default class Blog extends React.Component {
                                             }
                                             alt={
                                                 _.get(this.props, 'pageContext.frontmatter.thumb_image_alt', null)
-                                            }/>
-                                    </Link>
+                                            }/></Link>
                                 )
                             }
                                 <header className="post-header">
@@ -71,7 +78,7 @@ export default class Blog extends React.Component {
                                             {
                                             moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')
                                         } </time>
-                                    </div>
+                           </div>
                                     <h2 className="post-title line-left">
                                         <Link to={
                                                 withPrefix(_.get(post, 'url', null))
@@ -80,15 +87,11 @@ export default class Blog extends React.Component {
                                             {
                                             _.get(post, 'frontmatter.title', null)
                                         } </Link>
-                                    </h2>
-                                </header>
-                                {
-                                _.get(post, 'frontmatter.excerpt', null) && (
-                                    <React.Fragment>
-                                        <p className="post-excerpt">
-                                            {
-                                            _.get(post, 'frontmatter.excerpt', null)
-                                        }</p>
+                           </h2>
+                                </header>{_.get(post, 'frontmatter.excerpt', null) && (<React
+                                                                                                                             .Fragment>
+                                                                                                                        <p className = "post-excerpt">{_
+                                                                                                                                                           .get(post, 'frontmatter.excerpt', null)}</p>
                                         {
                                         _.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true && _.get(this.props, 'pageContext.frontmatter.more_link_text', null) && (
                                             <p className="read-more">
@@ -99,18 +102,20 @@ export default class Blog extends React.Component {
                                                     {
                                                     _.get(this.props, 'pageContext.frontmatter.more_link_text', null)
                                                 } </Link>
-                                            </p>
+                                                                                                                        </p>
                                         )
-                                    } </React.Fragment>
-                                )
-                            } </article>
+                                    } </React
+                                                                                                                             .Fragment>)}<
+                               /article>
                         ))
                     } </div>
-<iframe src="https://platform.twitter.com/widgets/tweet_button.html" style="border: 0; width:130px; height:20px;"></iframe>
+                           <iframe src =
+                                "https://platform.twitter.com/widgets/tweet_button.html" style =
+                                    "border: 0; width:130px; height:20px;">
+                           </iframe>
 
                     <div className="gcse-search"/>
-                </div>
-            </Layout>
-        );
-    }
+                           </div>
+            </Layout>);
+                    }
 }
