@@ -37,7 +37,7 @@ function solve(graph, s) {
   return solutions;
 }
 
-export {solve};
+export { solve };
 
 // // create graph
 // const graph = {}

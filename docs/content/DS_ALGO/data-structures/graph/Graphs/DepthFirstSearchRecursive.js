@@ -1,6 +1,8 @@
 class GraphUnweightedUndirected {
   // Unweighted Undirected Graph class
-  constructor() { this.connections = {}; }
+  constructor() {
+    this.connections = {};
+  }
   addNode(node) {
     // Function to add a node to the graph (connection represented by set)
     this.connections[node] = new Set();
@@ -37,7 +39,7 @@ class GraphUnweightedUndirected {
   }
 }
 
-export {GraphUnweightedUndirected};
+export { GraphUnweightedUndirected };
 
 // const graph = new GraphUnweightedUndirected()
 // graph.addEdge(1, 2)

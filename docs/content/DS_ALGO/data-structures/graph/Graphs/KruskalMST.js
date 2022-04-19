@@ -72,7 +72,7 @@ class GraphWeightedUndirectedAdjacencyList {
       for (const end of Object.keys(this.connections[start])) {
         if (!seen.has(`${start} ${end}`)) {
           seen.add(`${end} ${start}`);
-          edges.push([ start, end, this.connections[start][end] ]);
+          edges.push([start, end, this.connections[start][end]]);
         }
       }
     }
@@ -97,7 +97,7 @@ class GraphWeightedUndirectedAdjacencyList {
   }
 }
 
-export {GraphWeightedUndirectedAdjacencyList};
+export { GraphWeightedUndirectedAdjacencyList };
 
 // const graph = new GraphWeightedUndirectedAdjacencyList()
 // graph.addEdge(1, 2, 1)

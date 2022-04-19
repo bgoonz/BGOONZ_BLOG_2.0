@@ -1,6 +1,8 @@
 class GraphUnweightedUndirected {
   // Unweighted Undirected Graph class
-  constructor() { this.connections = {}; }
+  constructor() {
+    this.connections = {};
+  }
   addNode(node) {
     // Function to add a node to the graph (connection represented by set)
     this.connections[node] = new Set();
@@ -20,7 +22,7 @@ class GraphUnweightedUndirected {
   DFSIterative(node, value) {
     // DFS Function to search if a node with the given value is present in the
     // graph
-    const stack = [ node ];
+    const stack = [node];
     const visited = new Set();
     while (stack.length > 0) {
       const currNode = stack.pop();
@@ -42,7 +44,7 @@ class GraphUnweightedUndirected {
   }
 }
 
-export {GraphUnweightedUndirected};
+export { GraphUnweightedUndirected };
 
 // Example
 // const graph = new GraphUnweightedUndirected()

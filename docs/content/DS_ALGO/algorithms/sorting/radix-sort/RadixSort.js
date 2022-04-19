@@ -1,4 +1,4 @@
-import Sort from '../Sort';
+import Sort from "../Sort";
 // Using charCode (a = 97, b = 98, etc), we can map characters to buckets from 0
 // - 25
 const BASE_CHAR_CODE = 97;
@@ -12,18 +12,20 @@ export default class RadixSort extends Sort {
   sort(originalArray) {
     // Assumes all elements of array are of the same type
     const isArrayOfNumbers = this.isArrayOfNumbers(originalArray);
-    let sortedArray = [...originalArray ];
+    let sortedArray = [...originalArray];
     const numPasses = this.determineNumPasses(sortedArray);
     for (let currentIndex = 0; currentIndex < numPasses; currentIndex += 1) {
-      const buckets =
-          isArrayOfNumbers
-              ? this.placeElementsInNumberBuckets(sortedArray, currentIndex)
-              : this.placeElementsInCharacterBuckets(sortedArray, currentIndex,
-                                                     numPasses);
+      const buckets = isArrayOfNumbers
+        ? this.placeElementsInNumberBuckets(sortedArray, currentIndex)
+        : this.placeElementsInCharacterBuckets(
+            sortedArray,
+            currentIndex,
+            numPasses
+          );
 
       // Flatten buckets into sortedArray, and repeat at next index
       sortedArray = buckets.reduce((acc, val) => {
-        return [...acc, ...val ];
+        return [...acc, ...val];
       }, []);
     }
     return sortedArray;
@@ -66,8 +68,11 @@ export default class RadixSort extends Sort {
     const buckets = this.createBuckets(ENGLISH_ALPHABET_LENGTH);
     array.forEach((element) => {
       this.callbacks.visitingCallback(element);
-      const currentBucket =
-          this.getCharCodeOfElementAtIndex(element, index, numPasses);
+      const currentBucket = this.getCharCodeOfElementAtIndex(
+        element,
+        index,
+        numPasses
+      );
       buckets[currentBucket].push(element);
     });
     return buckets;
@@ -95,7 +100,9 @@ export default class RadixSort extends Sort {
    * array. For integers, this log10(num), and for strings, this would be the
    * length of the string.
    */
-  determineNumPasses(array) { return this.getLengthOfLongestElement(array); }
+  determineNumPasses(array) {
+    return this.getLengthOfLongestElement(array);
+  }
   /**
    * @param {*[]} array
    * @return {number}
@@ -104,9 +111,9 @@ export default class RadixSort extends Sort {
     if (this.isArrayOfNumbers(array)) {
       return Math.floor(Math.log10(Math.max(...array))) + 1;
     }
-    return array.reduce(
-        (acc, val) => { return val.length > acc ? val.length : acc; },
-        -Infinity);
+    return array.reduce((acc, val) => {
+      return val.length > acc ? val.length : acc;
+    }, -Infinity);
   }
   /**
    * @param {*[]} array
@@ -132,5 +139,7 @@ export default class RadixSort extends Sort {
    * @param {*} element
    * @return {boolean}
    */
-  isNumber(element) { return Number.isInteger(element); }
+  isNumber(element) {
+    return Number.isInteger(element);
+  }
 }

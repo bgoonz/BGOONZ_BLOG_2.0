@@ -1,6 +1,8 @@
 class GraphUnweightedUndirectedAdjacencyList {
   // Unweighted Undirected Graph class
-  constructor() { this.connections = {}; }
+  constructor() {
+    this.connections = {};
+  }
   addNode(node) {
     // Function to add a node to the graph (connection represented by set)
     this.connections[node] = new Set();
@@ -21,7 +23,7 @@ class GraphUnweightedUndirectedAdjacencyList {
     // Helper function to populate the visited set with the nodes in each
     // component adding the first visited node in the component to the array
     components.push(node);
-    const stack = [ node ];
+    const stack = [node];
     // populating the visited set using DFS (Iterative)
     while (stack.length > 0) {
       const curr = stack.pop();
@@ -47,7 +49,7 @@ class GraphUnweightedUndirectedAdjacencyList {
   }
 }
 
-export {GraphUnweightedUndirectedAdjacencyList};
+export { GraphUnweightedUndirectedAdjacencyList };
 
 // Example
 // const graph = new GraphUnweightedUndirectedAdjacencyList()
