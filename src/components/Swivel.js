@@ -1,17 +1,17 @@
 import _ from "lodash";
 import React from "react";
-import { classNames, markdownify, withPrefix } from "../utils";
+
+import {classNames, markdownify, withPrefix} from "../utils";
+
 import CtaButtons from "./CtaButtons";
+
 export default class SectionContent extends React.Component {
   render() {
     let section = _.get(this.props, "section", null);
     return (
       <section
-        id={_.get(section, "section_id", null)}
-        className="block block-text outer"
-      >
-        <div className="outter">
-          <div
+    id = {_.get(section, "section_id", null)} className =
+        "block block-text outer" > <div className = "outter">< div
             className={classNames("inner", {
               "grid-swap":
                 _.get(section, "image", null) &&
@@ -22,7 +22,8 @@ export default class SectionContent extends React.Component {
               <div className="grid-item block-image">
                 <img
                   src={withPrefix(_.get(section, "image", null))}
-                  alt={_.get(section, "image_alt", null)}
+                  alt={
+      _.get(section, "image_alt", null)}
                 />
               </div>
             )}
