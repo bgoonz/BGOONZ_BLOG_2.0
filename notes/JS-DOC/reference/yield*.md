@@ -6,7 +6,7 @@ The `yield*` is used to delegate to another [`generator`](../statements/function
 
      yield* expression;
 
-`expression`  
+`expression`
 The expression which returns an iterable object.
 
 ## Description
@@ -86,7 +86,7 @@ Besides generator objects, `yield*` can also `yield` other kinds of iterables (e
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions-runtime-semantics-evaluation">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions-runtime-semantics-evaluation">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generator-function-definitions-runtime-semantics-evaluation</span></a></td></tr></tbody></table>
@@ -158,5 +158,5 @@ Starting with Firefox 33, the parsing of the `yield` expression has been updated
 - [`function* expression`](function*)
 - [`yield`](yield)
 
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield\*</a>

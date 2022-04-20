@@ -211,11 +211,11 @@ You can use a robots.txt file to block resource files such as unimportant image,
 
 Before you create or edit a robots.txt file, you should know the limits of this URL blocking method. Depending on your goals and situation, you might want to consider other mechanisms to ensure your URLs are not findable on the web.
 
-- **robots.txt directives may not be supported by all search engines.**  
+- **robots.txt directives may not be supported by all search engines.**
   The instructions in robots.txt files cannot enforce crawler behavior to your site; it's up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it's better to use other blocking methods, such as [password-protecting private files on your server](https://developers.google.com/search/docs/advanced/crawling/control-what-you-share).
-- **Different crawlers interpret syntax differently.**  
+- **Different crawlers interpret syntax differently.**
   Although respectable web crawlers follow the directives in a robots.txt file, each crawler might interpret the directives differently. You should know the [proper syntax](https://developers.google.com/search/docs/advanced/robots/robots_txt#syntax) for addressing different web crawlers as some might not understand certain instructions.
-- **A page that's disallowed in robots.txt can still be indexed if linked to from other sites.**  
+- **A page that's disallowed in robots.txt can still be indexed if linked to from other sites.**
   While Google won't crawl or index the content blocked by a robots.txt file, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google search results. To properly prevent your URL from appearing in Google search results, [password-protect the files on your server](https://developers.google.com/search/docs/advanced/crawling/control-what-you-share), [use the `noindex` meta tag or response header](https://developers.google.com/search/docs/advanced/crawling/block-indexing), or remove the page entirely.
 
 ## Create a robots.txt file

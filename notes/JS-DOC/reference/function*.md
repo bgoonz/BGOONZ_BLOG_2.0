@@ -10,13 +10,13 @@ You can also define generator functions using the [`GeneratorFunction`](../globa
        statements
     }
 
-`name`  
+`name`
 The function name.
 
-`param` <span class="badge inline optional">Optional</span>  
+`param` <span class="badge inline optional">Optional</span>
 The name of a formal parameter for the function.
 
-`statements`  
+`statements`
 The statements comprising the body of the function.
 
 ## Description
@@ -27,8 +27,8 @@ Generators in JavaScript -- especially when combined with Promises -- are a very
 
 Calling a generator function does not execute its body immediately; an [iterator](../iteration_protocols#iterator) object for the function is returned instead. When the iterator's `next()` method is called, the generator function's body is executed until the first [`yield`](../operators/yield) expression, which specifies the value to be returned from the iterator or, with [`yield*`](../operators/yield*), delegates to another generator function. The `next()` method returns an object with a `value` property containing the yielded value and a `done` property which indicates whether the generator has yielded its last value, as a boolean. Calling the `next()` method with an argument will resume the generator function execution, replacing the `yield` expression where an execution was paused with the argument from `next()`.
 
-A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.  
-Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.  
+A `return` statement in a generator, when executed, will make the generator finish (i.e. the `done` property of the object returned by it will be set to `true`). If a value is returned, it will be set as the `value` property of the object returned by the generator.
+Much like a `return` statement, an error thrown inside the generator will make the generator finished -- unless caught within the generator's body.
 When a generator is finished, subsequent `next()` calls will not execute any of that generator's code, they will just return an object of this form: `{value: undefined, done: true}`.
 
 ## Examples
@@ -191,7 +191,7 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript)
 <br/>
 
 <span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
@@ -317,5 +317,5 @@ No
   - [Task.js](https://github.com/mozilla/task.js)
   - [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>
