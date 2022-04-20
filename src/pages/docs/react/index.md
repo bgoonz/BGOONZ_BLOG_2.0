@@ -30,19 +30,9 @@ template: docs
 
 # Examples:
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="React Embeds"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"  height="800px" width="1000px"  src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark" ></iframe>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="thirsty-cori-c9qxq"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"  height="800px" width="1000px"  src="https://codesandbox.io/embed/thirsty-cori-c9qxq?fontsize=14&hidenavigation=1&theme=dark" ></iframe>
 
 ### For more resources visit:
 
@@ -54,7 +44,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux:
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     src="https://learning-redux42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     src="https://learning-redux42.netlify.app/" height="800px" width="1000px" scrolling="yes"   ></iframe>
 
 ---
 

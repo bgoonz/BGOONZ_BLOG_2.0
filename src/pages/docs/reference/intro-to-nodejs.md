@@ -100,7 +100,7 @@ Many of those established over time as popular options. Here is a non-comprehens
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
      style="width:100%; height:400px; border:2; border-radius: 15px; overflow:auto;resize:both;"
      title="nodejs-examples"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
@@ -223,7 +223,7 @@ In the above example, we have created `hello-world.js` file and it contains `hel
 
 Since `node` can only execute `.js` files, adding `.js` extension to the file path is optional. If we provide a directory path instead of file path to `node`, Node.js will try to resolve `index.js` file inside that directory.
 
-![](https://miro.medium.com/max/675/1*J1cd4WNICvBUcuDpUfvecA.png)
+![jsfile](https://miro.medium.com/max/675/1*J1cd4WNICvBUcuDpUfvecA.png)
 
 (executing index.js in the current directory with Node)
 
