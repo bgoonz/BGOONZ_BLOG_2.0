@@ -153,11 +153,10 @@ Starting with Firefox 33, the parsing of the `yield` expression has been updated
 
 ## See also
 
--   [The Iterator protocol](../iteration_protocols)
--   [`function*`](../statements/function*)
--   [`function* expression`](function*)
--   [`yield`](yield)
+- [The Iterator protocol](../iteration_protocols)
+- [`function*`](../statements/function*)
+- [`function* expression`](function*)
+- [`yield`](yield)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield\*</a>

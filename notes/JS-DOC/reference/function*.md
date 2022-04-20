@@ -302,21 +302,20 @@ No
 
 ## See also
 
--   [`function*`](../operators/function*) expression
--   [`GeneratorFunction`](../global_objects/generatorfunction) object
--   [Iteration protocols](../iteration_protocols)
--   [`yield`](../operators/yield)
--   [`yield*`](../operators/yield*)
--   [`Function`](../global_objects/function) object
--   [`function`](function) declaration
--   [`function`](../operators/function) expression
--   [Functions and function scope](../functions)
--   Other web resources:
-    -   [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator compiler to ES5
-    -   [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
-    -   [Task.js](https://github.com/mozilla/task.js)
-    -   [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
+- [`function*`](../operators/function*) expression
+- [`GeneratorFunction`](../global_objects/generatorfunction) object
+- [Iteration protocols](../iteration_protocols)
+- [`yield`](../operators/yield)
+- [`yield*`](../operators/yield*)
+- [`Function`](../global_objects/function) object
+- [`function`](function) declaration
+- [`function`](../operators/function) expression
+- [Functions and function scope](../functions)
+- Other web resources:
+  - [Regenerator](https://facebook.github.io/regenerator/) an ES2015 generator compiler to ES5
+  - [Forbes Lindesay: Promises and Generators: control flow utopia -- JSConf EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s)
+  - [Task.js](https://github.com/mozilla/task.js)
+  - [Iterating generators asynchronously](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch4.md#iterating-generators-asynchronously)
 
- 
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function\*</a>
