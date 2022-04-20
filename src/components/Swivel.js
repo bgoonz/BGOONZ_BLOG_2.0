@@ -1,7 +1,10 @@
 import _ from "lodash";
 import React from "react";
+
 import { classNames, markdownify, withPrefix } from "../utils";
+
 import CtaButtons from "./CtaButtons";
+
 export default class SectionContent extends React.Component {
   render() {
     let section = _.get(this.props, "section", null);
@@ -10,6 +13,7 @@ export default class SectionContent extends React.Component {
         id={_.get(section, "section_id", null)}
         className="block block-text outer"
       >
+        {" "}
         <div className="outter">
           <div
             className={classNames("inner", {

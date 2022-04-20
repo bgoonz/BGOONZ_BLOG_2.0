@@ -3,12 +3,12 @@ title: Web Dev Hub Home
 sections:
   - section_id: Intro
     type: section_hero
-    title: 'I am a musician, electrical engineer & web developer'
+    title: "I am a musician, electrical engineer & web developer"
     image: images/cool annimation.gif
     content: "###### **A passionate student of web development from New Jersey U.S.A**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\_[![](https://img.icons8.com/color/96/000000/medium-logo.png)](https://bryanguner.medium.com/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n"
     actions:
       - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
+        url: "https://sidebar-blog.netlify.app/contact/"
         style: secondary
         icon_class: linkedin
         new_window: true
@@ -53,9 +53,9 @@ sections:
             url: /docs/tools
             style: link
         title: Guitar Effects Triggering w DTW
-        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+        title_url: "https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering"
         image: images/panoramic-owl.png
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+      - title_url: "https://bryanguner.medium.com/introductory-react-part-2-cda01615a186"
         image_alt: img of dtw
         content: >
           As I learn to build web applications in React I will blog about it in
@@ -66,7 +66,7 @@ sections:
         type: grid_item
         title: Beginner Guide React
         image: images/successful-panda.gif
-      - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
+      - title_url: "https://dev.to/bgoonz/scope-and-context-in-javascript-5cma"
         image_alt: img of react
         content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
         actions: []
@@ -89,7 +89,7 @@ sections:
     image_position: left
     actions:
       - label: Go To Web Audio Daw
-        url: 'https://mihirbegmusiclab.netlify.app/'
+        url: "https://mihirbegmusiclab.netlify.app/"
         style: primary
         icon_class: dev
         new_window: true
@@ -105,11 +105,11 @@ sections:
     content: >-
       <iframe class="block-content" width="100%
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-      player"  clipboard-write; 
+      player"  clipboard-write;
       allowfullscreen></iframe>
     actions:
       - label: Youtube
-        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+        url: "https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA"
         style: link
         icon_class: youtube
         new_window: true
@@ -120,7 +120,7 @@ sections:
     image_alt: listen to my playlist
     image_position: left
     content: >
-      <iframe class="block-content" width="100%    
+      <iframe class="block-content" width="100%
       src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
       width="100%" height="380" frameBorder="0" allowtransparency="true"
       allow="encrypted-media"></iframe>
@@ -178,7 +178,7 @@ sections:
     content: |-
       <iframe class="block-content" width="100%   width="800" height="575"
         src="https://code-playground.netlify.app/index.html" title="YouTube video
-        player"  clipboard-write; 
+        player"  clipboard-write;
         allowfullscreen></iframe>
     actions: []
     type: section_content
@@ -190,10 +190,10 @@ sections:
       - title: Resume
         actions:
           - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            url: "https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A"
             style: link
           - label: Download PDF
-            url: '#'
+            url: "#"
             style: link
             icon_class: dev
             new_window: false
@@ -217,11 +217,11 @@ sections:
     content: |
       <iframe class="block-content" width="100%     width="800" height="575"
        src="https://iframeshowcase.netlify.app/" title="YouTube video
-       player"  clipboard-write; 
+       player"  clipboard-write;
        allowfullscreen></iframe>
     actions:
       - label: Go To Mini Projects Page
-        url: 'https://iframeshowcase.netlify.app/'
+        url: "https://iframeshowcase.netlify.app/"
         style: primary
         icon_class: dev
         new_window: true
@@ -235,7 +235,7 @@ sections:
     content: |-
       <iframe class="block-content" width="100%   width="800" height="575"
        src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
-       player"  clipboard-write; 
+       player"  clipboard-write;
        allowfullscreen></iframe>
     actions: []
     type: section_content
@@ -246,7 +246,7 @@ sections:
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
-        player"  clipboard-write; 
+        player"  clipboard-write;
         allowfullscreen></iframe>
     actions: []
     type: section_content
@@ -257,7 +257,7 @@ sections:
     content: |-
       <iframe class="block-content" width="100%  width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
-       player"  clipboard-write; 
+       player"  clipboard-write;
        allowfullscreen></iframe>
     actions: []
     type: section_content
@@ -278,29 +278,29 @@ seo:
     my resource sharing and blog site ... centered mostly on web development and
     just a bit of audio production / generally nerdy things I find interesting.
   extra:
-    - name: 'og:type'
+    - name: "og:type"
       value: website
       keyName: property
-    - name: 'og:title'
+    - name: "og:title"
       value: Web-Dev-Hub
       keyName: property
-    - name: 'og:description'
+    - name: "og:description"
       value: >-
         my resource sharing and blog site ... centered mostly on web development
         and just a bit of audio production / generally nerdy things I find
         interesting.
       keyName: property
-    - name: 'og:image'
+    - name: "og:image"
       value: images/code.png
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: "twitter:card"
       value: summary_large_image
-    - name: 'twitter:title'
+    - name: "twitter:title"
       value: Web-Dev-Hub
-    - name: 'twitter:description'
+    - name: "twitter:description"
       value: Web-Dev-Hub
-    - name: 'twitter:image'
+    - name: "twitter:image"
       value: images/4.jpg
       relativeUrl: true
 template: advanced
