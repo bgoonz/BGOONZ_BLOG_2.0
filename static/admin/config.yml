@@ -2,6 +2,8 @@
 # It's here used only for blog posts and docs pages, to ease edits from external contributors
 # for all options, see https://www.netlifycms.org/docs/configuration-options/
 
+site_url: https://bgoonz-blog.netlify.app/
+
 publish_mode: editorial_workflow # do not commit directly, fork to a branch first and create a pull request, this is necessary for the open_authoring option
 
 backend:
