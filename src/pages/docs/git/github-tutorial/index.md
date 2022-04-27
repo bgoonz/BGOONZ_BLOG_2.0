@@ -3,11 +3,12 @@ title: Github Tutorial
 template: docs
 excerpt: To use git we'll be using the terminal.
 ---
+
 <!--StartFragment-->
 
-## Step 1: Create a local git repository 
+## Step 1: Create a local git repository
 
-When creating a new project on your local machine using git, you'll first create a new [repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (or often, 'repo', for short). 
+When creating a new project on your local machine using git, you'll first create a new [repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (or often, 'repo', for short).
 
 To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, [check out this tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) (If you don’t want/ need a short history lesson, skip to step three.)
 
@@ -19,7 +20,7 @@ To begin, open up a terminal and move to where you want to place the project on 
 
 [view raw](https://gist.github.com/cubeton/67a84eb876984f0b5785/raw/d4560016d742865c1fd68d97fcff1feb557d5e19/terminalcd.md)[terminalcd.md ](https://gist.github.com/cubeton/67a84eb876984f0b5785#file-terminalcd-md)hosted with ❤ by [GitHub](https://github.com/)
 
-To initialize a git repository in the root of the folder, run the [git init](http://git-scm.com/docs/git-init) command: 
+To initialize a git repository in the root of the folder, run the [git init](http://git-scm.com/docs/git-init) command:
 
 ```
 
@@ -29,7 +30,7 @@ To initialize a git repository in the root of the folder, run the [git init](ht
 
 ## Step 2: Add a new file to the repo
 
-Go ahead and add a new file to the project, using any text editor you like or running a [touch](http://linux.die.net/man/1/touch) command. \`touch newfile.txt\` just creates and saves a blank file named newfile.txt. 
+Go ahead and add a new file to the project, using any text editor you like or running a [touch](http://linux.die.net/man/1/touch) command. \`touch newfile.txt\` just creates and saves a blank file named newfile.txt.
 
 Once you've added or modified files in a folder containing a git repo, git will notice that  the file exists inside the repo. But, git won't track the file unless you explicitly tell it to. Git only saves/manages changes to files that it *tracks*, so we’ll need to send a command to confirm that yes, we want git to track our new file.
 
@@ -61,15 +62,15 @@ What this basically says is, "Hey, we noticed you created a new file called mnel
 >
 > To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the [git add](http://git-scm.com/docs/git-add) <filename> command (see Step 3 below).
 >
-> Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the [git commit](http://git-scm.com/docs/git-commit) command. 
+> Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the [git commit](http://git-scm.com/docs/git-commit) command.
 >
 > Note: The staging environment, also called 'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.
 
 ## Step 3: Add a file to the staging environment
 
-Add a file to the staging environment using the git add command. 
+Add a file to the staging environment using the git add command.
 
-If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line). 
+If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line).
 
 ```
 
@@ -97,9 +98,9 @@ The message at the end of the commit should be something related to what the com
 
 Now that you've made a new commit, let's try something a little more advanced.
 
-Say you want to make a new feature but are worried about making changes to the main project while developing the feature. This is where [git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) come in. 
+Say you want to make a new feature but are worried about making changes to the main project while developing the feature. This is where [git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) come in.
 
-Branches allow you to move back and forth between 'states' of a project. Official git docs describe branches this way: ‘A branch in Git is simply a lightweight movable pointer to one of these commits.’ For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can [merge](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) your changes from your branch into the primary branch. When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files. 
+Branches allow you to move back and forth between 'states' of a project. Official git docs describe branches this way: ‘A branch in Git is simply a lightweight movable pointer to one of these commits.’ For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can [merge](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) your changes from your branch into the primary branch. When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files.
 
 Let's say you are on the primary branch and want to create a new branch to develop your web page. Here's what you'll do: Run [git checkout -b <my branch name>](http://git-scm.com/docs/git-checkout). This command will automatically create a new branch and then 'check you out' on it, meaning git will move you to that branch, off of the primary branch.
 
@@ -111,7 +112,7 @@ After running the above command, you can use the [git branch](http://git-scm.co
 
 [view raw](https://gist.github.com/cubeton/fa25a25f322a2cd5f405/raw/81033788d288adeffe260bd724ab2699b29e3e35/gitbranch.md)[gitbranch.md ](https://gist.github.com/cubeton/fa25a25f322a2cd5f405#file-gitbranch-md)hosted with ❤ by [GitHub](https://github.com/)
 
-The branch name with the asterisk next to it indicates which branch you're on at that given time. 
+The branch name with the asterisk next to it indicates which branch you're on at that given time.
 
 > #### A note on branch names
 >
@@ -129,7 +130,7 @@ To create a new repo on GitHub, log in and go to the GitHub home page. You can 
 
 ![Git_1](https://product.hubspot.com/hs-fs/hubfs/Git_1.png?width=600&name=Git_1.png)
 
- 
+
 
 After clicking the button, GitHub will ask you to name your repo and provide a brief description:
 
@@ -137,7 +138,7 @@ After clicking the button, GitHub will ask you to name your repo and provide a 
 
 When you're done filling out the information, press the 'Create repository' button to make your new repo.
 
-GitHub will ask if you want to create a new repo from scratch or if you want to add a repo you have created locally. In this case, since we've already created a new repo locally, we want to push that onto GitHub so follow the '....or push an existing repository from the command line' section: 
+GitHub will ask if you want to create a new repo from scratch or if you want to add a repo you have created locally. In this case, since we've already created a new repo locally, we want to push that onto GitHub so follow the '....or push an existing repository from the command line' section:
 
 ```
 
@@ -226,7 +227,5 @@ Now we can use the [git log](http://git-scm.com/docs/git-log) command again to
 ```
 
 [view raw](https://gist.github.com/cubeton/48f55c5a237cd8e1a238/raw/3e31113a073b9bdec16800407d718b631dd0f587/gitlogaftermerge.md)[gitlogaftermerge.md ](https://gist.github.com/cubeton/48f55c5a237cd8e1a238#file-gitlogaftermerge-md)hosted with ❤ by [GitHub](https://github.com/)
-
-
 
 <!--EndFragment-->
