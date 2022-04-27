@@ -6466,10 +6466,10 @@ gatsby-plugin-netlify-cms@6.13.0:
     mini-css-extract-plugin "1.6.2"
     netlify-identity-widget "^1.9.2"
 
-gatsby-plugin-netlify@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-4.2.0.tgz#73f77d94d4a2f958cde8d1e3c4103caeeb592de7"
-  integrity sha512-vIUM4UtRxLGvaUhgHWqZGC8iiUY8vGgBCDePSNBjYyjpH6QD+DtwTYrCB+kRQVm5h7xMlc6MFMOPzRHHDQA8pQ==
+gatsby-plugin-netlify@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-4.3.0.tgz#af91d7ffb34e4d5bf358f4834588d3b6f98c51ea"
+  integrity sha512-l5MDKCSdaxvZwQx96lqF5mWpTcAttf/FPC4q67gfNi2Loro9La5pIkH0AacWJ8KNhB02ha0AEa4Ef++iXqZhxw==
   dependencies:
     "@babel/runtime" "^7.16.7"
     fs-extra "^10.0.0"
