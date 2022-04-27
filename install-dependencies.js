@@ -18,9 +18,11 @@ function npmInstall(cwd) {
 async function install() {
     const base = path.resolve(root);
     const ignoreFolders = ['node_modules'];
-    const deps = (await fs.readdir(base, {
-            withFileTypes: true
-        }))
+    const deps = (
+            await fs.readdir(base, {
+                withFileTypes: true,
+            })
+        )
         .filter((dep) => dep.isDirectory())
         .filter((dep) => !ignoreFolders.includes(dep.name))
         .map((folder) => path.resolve(base, folder.name))
