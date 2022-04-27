@@ -6,7 +6,7 @@ excerpt: To use git we'll be using the terminal.
 
 <!--StartFragment-->
 
-## Step 1: Create a local git repository 
+## Step 1: Create a local git repository
 
 When creating a new project on your local machine using git, you'll first create a new [repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (or often, 'repo', for short).
 
