@@ -18,7 +18,7 @@
         "gatsby": "4.12.1",
         "gatsby-image": "3.11.0",
         "gatsby-plugin-disqus": "1.2.3",
-        "gatsby-plugin-netlify": "4.2.0",
+        "gatsby-plugin-netlify": "4.3.0",
         "gatsby-plugin-netlify-cms": "6.12.1",
         "gatsby-plugin-react-helmet": "5.12.1",
         "gatsby-plugin-sass": "5.12.1",
