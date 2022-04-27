@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Data Structures
 
 <details>

@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # AJAX and APIs - React
 
 > ## Excerpt

@@ -140,7 +140,7 @@ Executing the script above will edit the `poetry.txt` file to contain:
 Or Checkout my personal Resource Site:
 
 **Web-Dev-Resource-Hub**  
-_Edit description_<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor">https://web-dev-resource-hub.netlify.app/</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+_Edit description_<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor">https://web-dev-resource-hub.netlify.app/</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/a55333e35978).
 

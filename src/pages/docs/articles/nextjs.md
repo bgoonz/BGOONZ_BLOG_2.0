@@ -13,7 +13,7 @@ image: images/theme.png
 subtitle: how we introduce modularity into our code in the node ecosystem
 ---
 
-## # Nextjs for everyone — with some basic knowledge of React
+## Nextjs for everyone — with some basic knowledge of React
 
 > ## Excerpt
 >

@@ -520,6 +520,7 @@ console.log([data], [...]);
 
 console.info([data], [...]);
 
+
 ```
 
 > Same as console.log.
@@ -637,6 +638,7 @@ ref();
 >  If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open.
 let module = require('./module.js');
 
+
 ```
 
 > Loads the module module.js in the same directory.
@@ -671,6 +673,8 @@ module.loaded;
 
 >  Whether or not the module is done loading, or is in the process of loading.
 
+
+
 ```js
 
 module.parent;
@@ -680,6 +684,8 @@ module.parent;
 ````
 
 >  The module that required this one.
+
+
 
 ```js
 
@@ -749,6 +755,8 @@ process.stdin;
 process.argv;
 >  An array containing the command line arguments.
 
+
+
 ```js
 
 process.env;
@@ -773,6 +781,8 @@ process.execArgv;
 
 process.arch;
 >  What processor architecture you're running on: 'arm', 'ia32', or 'x64'.
+
+
 
 ```js
 
@@ -828,6 +838,8 @@ process.versions;
 process.chdir(dir);
 >  Changes the current working directory of the process or throws an exception if that fails.
 
+
+
 ```js
 
 process.cwd();
@@ -850,6 +862,8 @@ process.getgid();
 process.setgid(id);
 >  Sets the group identity of the process.
 
+
+
 ```js
 
 process.getuid();
@@ -862,6 +876,8 @@ process.getuid();
 
 process.setuid(id);
 >  Sets the user identity of the process.
+
+
 
 ```js
 
@@ -911,6 +927,8 @@ process.nextTick(callback);
 process.maxTickDepth;
 >  Callbacks passed to process.nextTick will usually be called at the end of the current flow of execution, and are thus approximately as fast as calling a function synchronously.
 
+
+
 ```js
 
 process.umask([mask]);
@@ -941,10 +959,14 @@ process.hrtime();
 >  Node provides a tri-directional popen facility through the child_process module.
  > It is possible to stream data through a child's stdin, stdout, and stderr in a fully non-blocking way.
 
+
+
 ```js
 
 ChildProcess;
 >  Class. ChildProcess is an EventEmitter.
+
+
 
 ```js
 
@@ -954,6 +976,8 @@ child.stdout;
 >  A Readable Stream that represents the child process's stdout
 child.stderr;
 >  A Readable Stream that represents the child process's stderr.
+
+
 
 ```js
 
@@ -971,6 +995,8 @@ child.kill([signal]);
 ````
 
 >  When using child_process.fork() you can write to the child using child.send(message, [sendHandle]) and messages are received by a 'message' event on the child.
+
+
 
 ```js
 
@@ -990,6 +1016,8 @@ child_process.spawn(command, [args], [options]);
 
 child_process.exec(command, [options], callback);
 >  Runs a command in a shell and buffers the output.
+
+
 
 ```js
 
@@ -1017,9 +1045,12 @@ child_process.fork(modulePath, [args], [options]);
 > ---------------------------------------------------------------------------\\
 >  These functions are in the module 'util'. Use require('util') to access them.
 
+
+
 ```js
 
 util.format(format, [...]);
+
 
 ````
 
@@ -1029,6 +1060,8 @@ util.format(format, [...]);
 ````
 ---
 >  A synchronous output function. Will block the process and output string immediately to stderr.
+
+
 
 ```js
 
@@ -1041,6 +1074,7 @@ util.error([...]);
 ```js
 
 util.puts([...]);
+
 
 ```
 
@@ -1059,6 +1093,8 @@ util.print([...]);
 
 >  Output with timestamp on stdout.
 
+
+
 ```js
 
 util.inspect(object, [opts]);
@@ -1072,6 +1108,8 @@ util.inspect(object, [opts]);
 ````
 
 >   Returns true if the given "object" is an Array. false otherwise.
+
+
 
 ```js
 
@@ -1097,6 +1135,8 @@ util.isError(object);
 
 util.promisify(fn)
 >  Takes a function whose last argument is a callback and returns a version that returns promises.
+
+
 
 ```js
 
@@ -1132,9 +1172,12 @@ emitter.addListener(event, listener);
 emitter.on(event, listener);
 >  Same as emitter.addListener().
 
+
+
 ```js
 
 emitter.once(event, listener);
+
 
 ````
 
@@ -1144,6 +1187,8 @@ emitter.once(event, listener);
 
 emitter.removeListener(event, listener);
 >  Remove a listener from the listener array for the specified event.
+
+
 
 ```js
 
@@ -1158,10 +1203,14 @@ emitter.removeAllListeners([event]);
 emitter.setMaxListeners(n);
 >  By default EventEmitters will print a warning if more than 10 listeners are added for a particular event.
 
+
+
 ```js
 
 emitter.listeners(event);
 >  Returns an array of listeners for the specified event.
+
+
 
 ```js
 
@@ -1265,6 +1314,8 @@ readable.unshift(chunk);
  > Examples of writable streams include: http requests on the client, http responses on the server, fs write streams,
 >  zlib streams, crypto streams, tcp sockets, child process stdin, process.stdout, process.stderr.
 
+
+
 ```js
 
 let writer = getWritableStreamSomehow();
@@ -1280,6 +1331,8 @@ writable.write(chunk, [encoding], [callback]);
 writer.once('drain', write);
 >  If a writable.write(chunk) call returns false, then the drain event will indicate when it is appropriate to begin writing more data to the stream.
 
+
+
 ```js
 
 writable.end([chunk], [encoding], [callback]);
@@ -1293,6 +1346,8 @@ writable.end([chunk], [encoding], [callback]);
 
 writer.on('finish', function() {});
 >  When the end() method has been called, and all data has been flushed to the underlying system, this event is emitted.
+
+
 
 ```js
 
@@ -1329,6 +1384,8 @@ writer.on('error', function (src) {});
 >  To use this module do require('fs').
  > All the methods have asynchronous and synchronous forms.
 
+
+
 ```js
 
 fs.rename(oldPath, newPath, callback);
@@ -1361,15 +1418,21 @@ fs.ftruncateSync(fd, len);
 fs.truncate(path, len, callback);
 >  Asynchronous truncate. No arguments other than a possible exception are given to the completion callback.
 
+
+
 ```js
 
 fs.truncateSync(path, len);
 >  Synchronous truncate.
 
+
+
 ```js
 
 fs.chown(path, uid, gid, callback);
 >  Asynchronous chown. No arguments other than a possible exception are given to the completion callback.
+
+
 
 ```js
 
@@ -1472,6 +1535,8 @@ fs.lstatSync(path);
 fs.fstat(fd, callback);
 >  Asynchronous fstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. fstat() is identical to stat(), except that the file to be stat-ed is specified by the file descriptor fd.
 
+
+
 ```js
 
 fs.fstatSync(fd);
@@ -1485,6 +1550,8 @@ fs.fstatSync(fd);
 
 fs.link(srcpath, dstpath, callback);
 >  Asynchronous link. No arguments other than a possible exception are given to the completion callback.
+
+
 
 ```js
 
@@ -1535,14 +1602,19 @@ fs.unlink(path, callback);
 fs.unlinkSync(path);
 >  Synchronous unlink.
 
+
+
 ```js
 
 fs.realpath(path, [cache], callback);
 >  Asynchronous realpath. The callback gets two arguments (err, resolvedPath).
 
+
+
 ```js
 
 fs.realpathSync(path, [cache]);
+
 
 ````
 
@@ -1552,6 +1624,8 @@ fs.realpathSync(path, [cache]);
 
 fs.rmdir(path, callback);
 >  Asynchronous rmdir. No arguments other than a possible exception are given to the completion callback.
+
+
 
 ```js
 
@@ -1731,6 +1805,8 @@ fs.exists(path, callback);
 >  Synchronous version of fs.exists. (should not be used)
 >  fs.Stats: objects returned from fs.stat(), fs.lstat() and fs.fstat() and their synchronous counterparts are of this type.
 
+
+
 ```js
 
 stats.isFile();
@@ -1764,6 +1840,8 @@ fs.createWriteStream(path, [options]);
 path.normalize(p);
 >  Normalize a string path, taking care of '..' and '.' parts.
 
+
+
 ```js
 
 path.join([path1], [path2], [...]);
@@ -1791,9 +1869,12 @@ path.relative(from, to);
 path.dirname(p);
 >  Return the directory name of a path. Similar to the Unix dirname command.
 
+
+
 ```js
 
 path.basename(p, [ext]);
+
 
 ````
 
@@ -1837,6 +1918,8 @@ http.request(options, [callback]);
 ````
 ---
 >  This function allows one to transparently issue requests.
+
+
 
 ```js
 
@@ -1882,6 +1965,8 @@ server.close([callback]);
 
 server.setTimeout(msecs, callback);
 >  Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs.
+
+
 
 ```js
 
@@ -1993,6 +2078,8 @@ request.on('response', function (response) {});
 request.on('socket', function(socket) { });
 >  Emitted after a socket is assigned to this request.
 
+
+
 ```js
 
 request.on('connect', function(response, socket, head) { });
@@ -2030,15 +2117,21 @@ response.writeContinue();
 response.writeHead(statusCode, [reasonPhrase], [headers]);
 >  Sends a response header to the request.
 
+
+
 ```js
 
 response.setTimeout(msecs, callback);
 >  Sets the Socket's timeout value to msecs. If a callback is provided, then it is added as a listener on the 'timeout' event on the response object.
 
+
+
 ```js
 
 response.setHeader(name, value);
 >  Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here if you need to send multiple headers with the same name.
+
+
 
 ```js
 
@@ -2071,15 +2164,21 @@ response.end([data], [encoding]);
 response.statusCode;
 >  When using implicit headers (not calling response.writeHead() explicitly), this property controls the status code that will be sent to the client when the headers get flushed.
 
+
+
 ```js
 
 response.headersSent;
 >  Boolean (read-only). True if headers were sent, false otherwise.
 
+
+
 ```js
 
 response.sendDate;
 >  When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true.
+
+
 
 ```js
 
@@ -2102,6 +2201,8 @@ response.on('finish', function () {});
 
 message.httpVersion;
 >  In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server.
+
+
 
 ```js
 
@@ -2130,9 +2231,12 @@ message.method;
 message.url;
 >  Request URL string. This contains only the URL that is present in the actual HTTP request.
 
+
+
 ```js
 
 message.statusCode;
+
 
 ````
 
@@ -2179,6 +2283,8 @@ url.resolve(from, to);
 */
 > ---------------------------------------------------------------------------\\
 >  This module provides utilities for dealing with query strings. Call require('querystring') to use it.
+
+
 
 ```js
 
@@ -2321,6 +2427,8 @@ os.release();
 os.uptime();
 >  Returns the system uptime in seconds.
 
+
+
 ```js
 
 os.loadavg();
@@ -2422,6 +2530,8 @@ buf.write(string, [offset], [length], [encoding]);
 ---
 >  Decodes and returns a string from buffer data encoded with encoding (defaults to 'utf8') beginning at start (defaults to 0) and ending at end (defaults to buffer.length).
 
+
+
 ```js
 
 buf.toJSON();
@@ -2500,7 +2610,7 @@ React.createElement(type, [props], [...children]);
 
 > Clone and return a new React element using element as the starting point.
 
-> The resulting element will have the original element's props with the new props merged in shallowly.
+> The resulting element will have the original element’s props with the new props merged in shallowly.
 
 ```js
 React.cloneElement(element, [props], [...children]);
@@ -2557,6 +2667,9 @@ React.Children.toArray(children);
 
 ```js
 
+
+
+
 class Component extends React.Component {
 
 ```
@@ -2583,11 +2696,11 @@ this.method = this.method.bind(this);
     active: true,
 ```
 
-> In rare cases, it's okay to initialize state based on props.
+> In rare cases, it’s okay to initialize state based on props.
 
-> This effectively "forks" the props and sets the state with the initial props.
+> This effectively “forks” the props and sets the state with the initial props.
 
-> If you "fork" props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
+> If you “fork” props by using them for state, you might also want to implement componentWillReceiveProps(nextProps)
 > to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
 
 ```js
@@ -2610,8 +2723,6 @@ this.method = this.method.bind(this);
 
 ```jsx
 
-
-
 setState(updater[, callback]) { }
 
 ```
@@ -2632,7 +2743,7 @@ componentWillMount() { }
 
 > If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
 
-> This method is a good place to set up any subscriptions. If you do that, don't forget to unsubscribe in componentWillUnmount().
+> This method is a good place to set up any subscriptions. If you do that, don’t forget to unsubscribe in componentWillUnmount().
 
 ```js
 
@@ -2646,11 +2757,11 @@ componentDidMount() { }
 
 ```js
 
-componentWillReceiveProps(nextProps) { }
+componentWillReceiveProps(nextProps) { }
 
 ```
 
-> Let React know if a component's output is not affected by the current change in state or props.
+> Let React know if a component’s output is not affected by the current change in state or props.
 
 > The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
 
@@ -2676,11 +2787,17 @@ shouldComponentUpdate(nextProps, nextState) { }
 
 > (e.g. dispatch a Redux action) that would trigger an update to a React component before componentWillUpdate() returns.
 
+
+
+
+
  > If you need to update state in response to props changes, use componentWillReceiveProps() instead.
+
+
 
 ```js
 
-componentWillUpdate(nextProps, nextState) { }
+componentWillUpdate(nextProps, nextState) { }
 
 ````
 
@@ -2718,7 +2835,7 @@ componentDidCatch() { }
 
 > This method is required.
 
-> It should be pure, meaning that it does not modify component state, it returns the same result each time it's invoked, and
+> It should be pure, meaning that it does not modify component state, it returns the same result each time it’s invoked, and
 
 ```
 
@@ -2746,21 +2863,31 @@ console.log(this.props);
 
 > The state is user-defined, and it should be a plain JavaScript object.
 
+
+
 ```js
 
-> If you don't use it in render(), it shouldn't be in the state.
+> If you don’t use it in render(), it shouldn’t be in the state.
+
+
 
 ```js
 
 > For example, you can put timer IDs directly on the instance.
 
+
+
 ```js
 
 > Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made.
 
+
+
 ```js
 
 > Treat this.state as if it were immutable.
+
+
 
 ```js
 
@@ -2787,7 +2914,7 @@ Component.defaultProps = {
 component = new Component();
 ```
 
-> By default, when your component's state or props change, your component will re-render.
+> By default, when your component’s state or props change, your component will re-render.
 
 > If your render() method depends on some other data, you can tell React that the component needs re-rendering by calling forceUpdate().
 
@@ -2801,9 +2928,13 @@ component.forceUpdate(callback)
  * The react-dom package provides DOM-specific methods that can be used at the top level of
  * your app and as an escape hatch to get outside of the React model if you need to.
 
+
+
 ```js
 
  * Most of your components should not need to use this module.
+
+
 
 ```js
 
@@ -2820,6 +2951,8 @@ component.forceUpdate(callback)
 
 > to the component (or returns null for stateless components).
 
+
+
 ```js
 
 ReactDOM.render(element, container[, callback])
@@ -2831,6 +2964,8 @@ ReactDOM.render(element, container[, callback])
 ````
 
 > by ReactDOMServer. React will attempt to attach event listeners to the existing markup.
+
+
 
 ```js
 
@@ -2862,6 +2997,8 @@ ReactDOM.unmountComponentAtNode(container);
 
 > using findDOMNode at all.
 
+
+
 ```js
 
 ReactDOM.findDOMNode(component)
@@ -2874,12 +3011,16 @@ ReactDOM.findDOMNode(component)
 
 > the hierarchy of the DOM component.
 
+
+
 ```js
 
 ReactDOM.createPortal(child, container)
 //******************************************************************************
  // * REACTDOMSERVER
  * The ReactDOMServer object enables you to render components to static markup.
+
+
 
 ```js
 
@@ -2898,13 +3039,15 @@ ReactDOM.createPortal(child, container)
 
 > request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 
+
+
 ```js
 
 ReactDOMServer.renderToString(element)
 
 ````
 
-> Similar to renderToString, except this doesn't create extra DOM attributes that React uses
+> Similar to renderToString, except this doesn’t create extra DOM attributes that React uses
 
 ```
 
@@ -2928,13 +3071,15 @@ ReactDOMServer.renderToStaticMarkup(element);
 
 > request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 
+
+
 ```js
 
 ReactDOMServer.renderToNodeStream(element)
 
 ````
 
-> Similar to renderToNodeStream, except this doesn't create extra DOM attributes that React uses
+> Similar to renderToNodeStream, except this doesn’t create extra DOM attributes that React uses
 
 ```
 
@@ -2964,6 +3109,8 @@ MyComponent.propTypes = {
 
 > are all optional.
 
+
+
 ```js
 
 optionalArray: PropTypes.array,
@@ -2981,6 +3128,8 @@ optionalSymbol: PropTypes.symbol,  Anything that can be rendered: numbers, strin
 ````js
 
 optionalNode: PropTypes.node,  A React element.
+
+
 
 ```js
 
@@ -3030,6 +3179,8 @@ requiredAny: PropTypes.any.isRequired,  You can also specify a custom validator.
 
 > won't work inside `oneOfType`.
 
+
+
 ```js
 
 customProp: function(props, propName, componentName) {
@@ -3043,6 +3194,8 @@ customProp: function(props, propName, componentName) {
 
  > It should return an Error object if the validation fails. The validator
 
+
+
 > will be called for each key in the array or object. The first two
 
 ````
@@ -3052,6 +3205,8 @@ customProp: function(props, propName, componentName) {
 ````
 
 > current item's key.
+
+
 
 ```js
 

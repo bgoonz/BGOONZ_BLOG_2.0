@@ -35,6 +35,7 @@ seo:
 template: docs
 ---
 
+
 # Fundamental Data Structures In JavaScript
 
 <br>

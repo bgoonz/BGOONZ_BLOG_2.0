@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 #### Understanding variables <a id="understanding-variables"></a>
 
 Variables are simply declarations that are used to store certain values. For instance, the variable `name` can hold the value of `John Smith.` Several rules need to be considered when declaring variable names. For starters, a variable name cannot begin with a number.

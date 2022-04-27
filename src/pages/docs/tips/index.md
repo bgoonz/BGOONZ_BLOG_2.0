@@ -10,4 +10,5 @@ seo:
 template: docs
 ---
 
+
 ## Lorem ipsum

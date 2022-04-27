@@ -12,6 +12,7 @@ versions of the examples.'
 template: docs
 ---
 
+
 # Rules
 
 This document contains a description of all rules, what they are checking for,

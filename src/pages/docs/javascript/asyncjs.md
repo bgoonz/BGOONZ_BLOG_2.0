@@ -9,6 +9,7 @@ seo:
     extra: []
 template: docs
 ---
+
 # Async functions:
 ## Asynchronous JavaScript
 

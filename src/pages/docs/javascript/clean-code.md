@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # clean-code-javascript
 
 ## Table of Contents
