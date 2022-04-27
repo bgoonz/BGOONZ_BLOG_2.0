@@ -1,6 +1,6 @@
-stackbitVersion: 0.4.0
+stackbitVersion: ~0.3.0
 ssgName: gatsby
-ssgVersion: 2.4.0
+ssgVersion: 2.3.30
 nodeVersion: 14
 buildCommand: npm run build
 publishDir: public
@@ -145,7 +145,7 @@ models:
           type: string
   docs:
     type: page
-    urlPath: "/docs/{slug}"
+    urlPath: '/docs/{slug}'
     label: Documentation Pages
     layout: docs
     folder: docs
@@ -259,7 +259,7 @@ models:
           - stackbit_page_meta
   post:
     type: page
-    urlPath: "/blog/{slug}"
+    urlPath: '/blog/{slug}'
     label: Post
     layout: post
     folder: blog
@@ -309,7 +309,7 @@ models:
       - type: string
         name: section_id
         label: Section ID
-        description: "A unique identifier of the section, must not contain whitespace"
+        description: 'A unique identifier of the section, must not contain whitespace'
   section_content:
     type: object
     label: Content Section
@@ -471,7 +471,7 @@ models:
         name: url
         label: URL
         required: true
-        default: "#"
+        default: '#'
       - type: enum
         name: style
         label: Style
@@ -530,12 +530,12 @@ models:
         name: title
         label: Title
         description: The page title that goes into the <title> tag
-        default: ""
+        default: ''
       - type: string
         name: description
         label: Description
         description: The page description that goes into the <meta name="description"> tag
-        default: ""
+        default: ''
       - type: list
         name: robots
         label: Robots
@@ -563,10 +563,10 @@ models:
           fields:
             - type: string
               name: name
-              default: ""
+              default: ''
             - type: string
               name: value
-              default: ""
+              default: ''
             - type: string
               name: keyName
               default: name
