@@ -18,7 +18,6 @@ related_posts:
 cmseditable: true
 ---
 
-
 The npm registry contains packages, many of which are also Node modules, or contain Node modules. Read on to understand how they differ and how they interact.
 
 ## About packages
@@ -26,6 +25,7 @@ The npm registry contains packages, many of which are also Node modules, or cont
 A **package** is a file or directory that is described by a `package.json` file. A package must contain a `package.json` file in order to be published to the npm registry. For more information on creating a `package.json` file, see "[Creating a package.json file][pkg-json]".
 
 Packages can be unscoped or scoped to a user or organization, and scoped packages can be private or public. For more information, see
+
 - "[About scopes][about-scopes]"
 - "[About private packages][private-pkgs]"
 - "[Package scope, access level, and visibility][pkg-viz]"
@@ -34,13 +34,13 @@ Packages can be unscoped or scoped to a user or organization, and scoped package
 
 A package is any of the following:
 
-* a) A folder containing a program described by a `package.json` file.
-* b) A gzipped tarball containing (a).
-* c) A URL that resolves to (b).
-* d) A `<name>@<version>` that is published on the registry with (c).
-* e) A `<name>@<tag>` that points to (d).
-* f) A `<name>` that has a `latest` tag satisfying (e).
-* g) A `git` url that, when cloned, results in (a).
+- a) A folder containing a program described by a `package.json` file.
+- b) A gzipped tarball containing (a).
+- c) A URL that resolves to (b).
+- d) A `<name>@<version>` that is published on the registry with (c).
+- e) A `<name>@<tag>` that points to (d).
+- f) A `<name>` that has a `latest` tag satisfying (e).
+- g) A `git` url that, when cloned, results in (a).
 
 ### npm package git URL formats
 
@@ -60,8 +60,8 @@ A **module** is any file or directory in the `node_modules` directory that can b
 
 To be loaded by the Node.js `require()` function, a module must be one of the following:
 
-* A folder with a `package.json` file containing a `"main"` field.
-* A JavaScript file.
+- A folder with a `package.json` file containing a `"main"` field.
+- A JavaScript file.
 
 <div class="note">
 
@@ -71,7 +71,7 @@ Since modules are not required to have a `package.json` file, not all modules ar
 </div>
 
 In the context of a Node program, the `module` is also the thing that
-was loaded *from* a file. For example, in the following program:
+was loaded _from_ a file. For example, in the following program:
 
     var req = require('request')
 
