@@ -1,11 +1,11 @@
-
-
 # Workflow syntax for GitHub Actions - GitHub Docs
 
 > ## Excerpt
+>
 > A workflow is a configurable automated process made up of one or more jobs. You must create a YAML file to define your workflow configuration.
 
 ---
+
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#about-yaml-syntax-for-workflows)About YAML syntax for workflows
 
 Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file extension. If you're new to YAML and want to learn more, see "[Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/)."
@@ -40,18 +40,18 @@ If you need to specify activity types or configuration for an event, you must co
 
 ```
 on:
-  
-  
+
+
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
-  
+
   page_build:
   release:
-    types: 
+    types:
       - created
 ```
 
@@ -65,7 +65,7 @@ You can use an array of event `types`. For more information about each event and
 
 on:
   release:
-    
+
     types: [published, created, edited]
 ```
 
@@ -80,18 +80,18 @@ The patterns defined in `branches` and `tags` are evaluated against the Git ref'
 ```
 on:
   push:
-    
-    branches:    
-      
+
+    branches:
+
       - main
-      
+
       - 'mona/octocat'
-      
+
       - 'releases/**'
-    
-    tags:        
-      - v1             
-      - v1.*           
+
+    tags:
+      - v1
+      - v1.*
 ```
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-ignoring-branches-and-tags)Example: Ignoring branches and tags
@@ -101,37 +101,37 @@ Anytime a pattern matches the `branches-ignore` or `tags-ignore` pattern, the wo
 ```
 on:
   push:
-    
+
     branches-ignore:
-      
+
       - 'mona/octocat'
-      
+
       - 'releases/**-alpha'
-    
+
     tags-ignore:
-      - v1.*           
+      - v1.*
 ```
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#excluding-branches-and-tags)Excluding branches and tags
 
 You can use two types of filters to prevent a workflow from running on pushes and pull requests to tags and branches.
 
--   `branches` or `branches-ignore` - You cannot use both the `branches` and `branches-ignore` filters for the same event in a workflow. Use the `branches` filter when you need to filter branches for positive matches and exclude branches. Use the `branches-ignore` filter when you only need to exclude branch names.
--   `tags` or `tags-ignore` - You cannot use both the `tags` and `tags-ignore` filters for the same event in a workflow. Use the `tags` filter when you need to filter tags for positive matches and exclude tags. Use the `tags-ignore` filter when you only need to exclude tag names.
+- `branches` or `branches-ignore` - You cannot use both the `branches` and `branches-ignore` filters for the same event in a workflow. Use the `branches` filter when you need to filter branches for positive matches and exclude branches. Use the `branches-ignore` filter when you only need to exclude branch names.
+- `tags` or `tags-ignore` - You cannot use both the `tags` and `tags-ignore` filters for the same event in a workflow. Use the `tags` filter when you need to filter tags for positive matches and exclude tags. Use the `tags-ignore` filter when you only need to exclude tag names.
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-positive-and-negative-patterns)Example: Using positive and negative patterns
 
 You can exclude `tags` and `branches` using the `!` character. The order that you define patterns matters.
 
--   A matching negative pattern (prefixed with `!`) after a positive match will exclude the Git ref.
--   A matching positive pattern after a negative match will include the Git ref again.
+- A matching negative pattern (prefixed with `!`) after a positive match will exclude the Git ref.
+- A matching positive pattern after a negative match will include the Git ref again.
 
 The following workflow will run on pushes to `releases/10` or `releases/beta/mona`, but not on `releases/10-alpha` or `releases/beta/3-alpha` because the negative pattern `!releases/**-alpha` follows the positive pattern.
 
 ```
 on:
   push:
-    branches:    
+    branches:
       - 'releases/**'
       - '!releases/**-alpha'
 ```
@@ -168,15 +168,15 @@ on:
 
 You can exclude paths using two types of filters. You cannot use both of these filters for the same event in a workflow.
 
--   `paths-ignore` - Use the `paths-ignore` filter when you only need to exclude path names.
--   `paths` - Use the `paths` filter when you need to filter paths for positive matches and exclude paths.
+- `paths-ignore` - Use the `paths-ignore` filter when you only need to exclude path names.
+- `paths` - Use the `paths` filter when you need to filter paths for positive matches and exclude paths.
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-positive-and-negative-patterns-1)Example: Using positive and negative patterns
 
 You can exclude `paths` using the `!` character. The order that you define patterns matters:
 
--   A matching negative pattern (prefixed with `!`) after a positive match will exclude the path.
--   A matching positive pattern after a negative match will include the path again.
+- A matching negative pattern (prefixed with `!`) after a positive match will exclude the path.
+- A matching positive pattern after a negative match will include the path again.
 
 This example runs anytime the `push` event includes a file in the `sub-project` directory or its subdirectories, unless the file is in the `sub-project/docs` directory. For example, a push that changed `sub-project/index.js` or `sub-project/src/index.js` will trigger a workflow run, but a push changing only `sub-project/docs/readme.md` will not.
 
@@ -196,9 +196,9 @@ The filter determines if a workflow should run by evaluating the changed files a
 
 GitHub generates the list of changed files using two-dot diffs for pushes and three-dot diffs for pull requests:
 
--   **Pull requests:** Three-dot diffs are a comparison between the most recent version of the topic branch and the commit where the topic branch was last synced with the base branch.
--   **Pushes to existing branches:** A two-dot diff compares the head and base SHAs directly with each other.
--   **Pushes to new branches:** A two-dot diff against the parent of the ancestor of the deepest commit pushed.
+- **Pull requests:** Three-dot diffs are a comparison between the most recent version of the topic branch and the commit where the topic branch was last synced with the base branch.
+- **Pushes to existing branches:** A two-dot diff compares the head and base SHAs directly with each other.
+- **Pushes to new branches:** A two-dot diff against the parent of the ancestor of the deepest commit pushed.
 
 Diffs are limited to 300 files. If there are files changed that aren't matched in the first 300 files returned by the filter, the workflow will not run. You may need to create more specific filters so that the workflow will run automatically.
 
@@ -227,7 +227,7 @@ on:
         default: 'john-doe'
         required: false
         type: string
-  
+
 jobs:
   print-username:
     runs-on: ubuntu-latest
@@ -254,14 +254,14 @@ In the example below, two outputs are defined for this reusable workflow: `workf
 ```
 on:
   workflow_call:
-    
+
     outputs:
       workflow_output1:
         description: "The first job output"
         value: ${{ jobs.my_job.outputs.job_output1 }}
       workflow_output2:
         description: "The second job output"
-        value: ${{ jobs.my_job.outputs.job_output2 }}  
+        value: ${{ jobs.my_job.outputs.job_output2 }}
 ```
 
 For information on how to reference a job output, see [`jobs.<job_id>.outputs`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs). For more information, see "[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows)."
@@ -283,12 +283,12 @@ on:
       access-token:
         description: 'A token passed from the caller workflow'
         required: false
-  
+
 jobs:
   pass-secret-to-action:
     runs-on: ubuntu-latest
 
-    steps:  
+    steps:
       - name: Pass the received secret to an action
         uses: ./.github/actions/my-action@v1
         with:
@@ -312,11 +312,11 @@ The triggered workflow receives the inputs in the `github.event.inputs` context.
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-3)Example
 
 ```
-on: 
+on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: 'Log level'
         required: true
         default: 'warning' {% ifversion ghec or ghes > 3.3 or ghae-issue-5511 %}
         type: choice
@@ -332,7 +332,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true {% endif %}
-  
+
 jobs:
   print-tag:
     runs-on: ubuntu-latest
@@ -351,7 +351,7 @@ This example triggers the workflow every day at 5:30 and 17:30 UTC:
 ```
 on:
   schedule:
-    
+
     - cron:  '30 5,17 * * *'
 
 ```
@@ -463,7 +463,7 @@ concurrency: ci-${{ github.ref }}
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run)Example: Using concurrency to cancel any in-progress job or run
 
 ```
-concurrency: 
+concurrency:
   group: ${{ github.head_ref }}
   cancel-in-progress: true
 ```
@@ -716,7 +716,7 @@ concurrency: ci-${{ github.ref }}
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run-1)Example: Using concurrency to cancel any in-progress job or run
 
 ```
-concurrency: 
+concurrency:
   group: ${{ github.head_ref }}
   cancel-in-progress: true
 ```
@@ -735,7 +735,7 @@ To use job outputs in a dependent job, you can use the `needs` context. For more
 jobs:
   job1:
     runs-on: ubuntu-latest
-    
+
     outputs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
@@ -870,9 +870,9 @@ Selects an action to run as part of a step in your job. An action is a reusable 
 
 We strongly recommend that you include the version of the action you are using by specifying a Git ref, SHA, or Docker tag number. If you don't specify a version, it could break your workflows or cause unexpected behavior when the action owner publishes an update.
 
--   Using the commit SHA of a released action version is the safest for stability and security.
--   Using the specific major action version allows you to receive critical fixes and security patches while still maintaining compatibility. It also assures that your workflow should still work.
--   Using the default branch of an action may be convenient, but if someone releases a new major version with a breaking change, your workflow could break.
+- Using the commit SHA of a released action version is the safest for stability and security.
+- Using the specific major action version allows you to receive critical fixes and security patches while still maintaining compatibility. It also assures that your workflow should still work.
+- Using the default branch of an action may be convenient, but if someone releases a new major version with a breaking change, your workflow could break.
 
 Some actions require inputs that you must set using the [`with`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepswith) keyword. Review the action's README file to determine the inputs required.
 
@@ -882,13 +882,13 @@ Actions are either JavaScript files or Docker containers. If the action you're u
 
 ```
 steps:
-  
+
   - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
-  
+
   - uses: actions/checkout@v2
-  
+
   - uses: actions/checkout@v2.2.0
-  
+
   - uses: actions/checkout@main
 ```
 
@@ -903,10 +903,10 @@ jobs:
   my_first_job:
     steps:
       - name: My first step
-        
+
         uses: actions/heroku@main
       - name: My second step
-        
+
         uses: actions/aws@v2.0.1
 ```
 
@@ -1011,22 +1011,21 @@ Commands run using non-login shells by default. You can choose a different shell
 
 Each `run` keyword represents a new process and shell in the runner environment. When you provide multi-line commands, each line runs in the same shell. For example:
 
--   A single-line command:
-    
-    ```
-    - name: Install Dependencies
-      run: npm install
-    ```
-    
--   A multi-line command:
-    
-    ```
-    - name: Clean install dependencies and build
-      run: |
-        npm ci
-        npm run build
-    ```
-    
+- A single-line command:
+
+  ```
+  - name: Install Dependencies
+    run: npm install
+  ```
+
+- A multi-line command:
+
+  ```
+  - name: Clean install dependencies and build
+    run: |
+      npm ci
+      npm run build
+  ```
 
 Using the `working-directory` keyword, you can specify the working directory of where to run the command.
 
@@ -1173,20 +1172,22 @@ For information about the software included on GitHub-hosted runners, see "[Spec
 
 For built-in shell keywords, we provide the following defaults that are executed by GitHub-hosted runners. You should use these guidelines when running shell scripts.
 
--   `bash`/`sh`:
-    
-    -   Fail-fast behavior using `set -eo pipefail`: Default for `bash` and built-in `shell`. It is also the default when you don't provide an option on non-Windows platforms.
-    -   You can opt out of fail-fast and take full control by providing a template string to the shell options. For example, `bash {0}`.
-    -   sh-like shells exit with the exit code of the last command executed in a script, which is also the default behavior for actions. The runner will report the status of the step as fail/succeed based on this exit code.
--   `powershell`/`pwsh`
-    
-    -   Fail-fast behavior when possible. For `pwsh` and `powershell` built-in shell, we will prepend `$ErrorActionPreference = 'stop'` to script contents.
-    -   We append `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }` to powershell scripts so action statuses reflect the script's last exit code.
-    -   Users can always opt out by not using the built-in shell, and providing a custom shell option like: `pwsh -File {0}`, or `powershell -Command "& '{0}'"`, depending on need.
--   `cmd`
-    
-    -   There doesn't seem to be a way to fully opt into fail-fast behavior other than writing your script to check each error code and respond accordingly. Because we can't actually provide that behavior by default, you need to write this behavior into your script.
-    -   `cmd.exe` will exit with the error level of the last program it executed, and it will return the error code to the runner. This behavior is internally consistent with the previous `sh` and `pwsh` default behavior and is the `cmd.exe` default, so this behavior remains intact.
+- `bash`/`sh`:
+
+  - Fail-fast behavior using `set -eo pipefail`: Default for `bash` and built-in `shell`. It is also the default when you don't provide an option on non-Windows platforms.
+  - You can opt out of fail-fast and take full control by providing a template string to the shell options. For example, `bash {0}`.
+  - sh-like shells exit with the exit code of the last command executed in a script, which is also the default behavior for actions. The runner will report the status of the step as fail/succeed based on this exit code.
+
+- `powershell`/`pwsh`
+
+  - Fail-fast behavior when possible. For `pwsh` and `powershell` built-in shell, we will prepend `$ErrorActionPreference = 'stop'` to script contents.
+  - We append `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }` to powershell scripts so action statuses reflect the script's last exit code.
+  - Users can always opt out by not using the built-in shell, and providing a custom shell option like: `pwsh -File {0}`, or `powershell -Command "& '{0}'"`, depending on need.
+
+- `cmd`
+
+  - There doesn't seem to be a way to fully opt into fail-fast behavior other than writing your script to check each error code and respond accordingly. Because we can't actually provide that behavior by default, you need to write this behavior into your script.
+  - `cmd.exe` will exit with the error level of the last program it executed, and it will return the error code to the runner. This behavior is internally consistent with the previous `sh` and `pwsh` default behavior and is the `cmd.exe` default, so this behavior remains intact.
 
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepswith)`jobs.<job_id>.steps[*].with`
 
@@ -1205,7 +1206,7 @@ jobs:
         with:
           first_name: Mona
           middle_name: The
-          last_name: Octocat      
+          last_name: Octocat
 ```
 
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepswithargs)`jobs.<job_id>.steps[*].with.args`
@@ -1303,10 +1304,10 @@ strategy:
   matrix:
     node: [10, 12, 14]
 steps:
-  
+
   - uses: actions/setup-node@v2
     with:
-      
+
       node-version: ${{ matrix.node }}
 ```
 
@@ -1316,8 +1317,8 @@ The `setup-node` action is the recommended way to configure a Node.js version wh
 
 You can create a matrix to run workflows on more than one runner operating system. You can also specify more than one matrix configuration. This example creates a matrix of 6 jobs:
 
--   2 operating systems specified in the `os` array
--   3 Node.js versions specified in the `node` array
+- 2 operating systems specified in the `os` array
+- 3 Node.js versions specified in the `node` array
 
 When you define a matrix of operating systems, you must set the value of `runs-on` to the `matrix.os` context property you defined.
 
@@ -1346,8 +1347,8 @@ strategy:
     os: [macos-latest, windows-latest, ubuntu-18.04]
     node: [8, 10, 12, 14]
     include:
-      
-      
+
+
       - os: windows-latest
         node: 8
         npm: 6
@@ -1380,7 +1381,7 @@ strategy:
     os: [macos-latest, windows-latest, ubuntu-18.04]
     node: [8, 10, 12, 14]
     exclude:
-      
+
       - os: macos-latest
         node: 8
 ```
@@ -1537,8 +1538,8 @@ Additional Docker container resource options. For a list of options, see "[`dock
 
 **Note:** If your workflows use Docker container actions or service containers, then you must use a Linux runner:
 
--   If you are using GitHub-hosted runners, you must use an Ubuntu runner.
--   If you are using self-hosted runners, you must use a Linux machine as your runner and Docker must be installed.
+- If you are using GitHub-hosted runners, you must use an Ubuntu runner.
+- If you are using self-hosted runners, you must use a Linux machine as your runner and Docker must be installed.
 
 Used to host service containers for a job in a workflow. Service containers are useful for creating databases or cache services like Redis. The runner automatically creates a Docker network and manages the life cycle of the service containers.
 
@@ -1556,12 +1557,12 @@ This example creates two services: nginx and redis. When you specify the Docker 
 services:
   nginx:
     image: nginx
-    
+
     ports:
       - 8080:80
   redis:
     image: redis
-    
+
     ports:
       - 6379/tcp
 ```
@@ -1680,7 +1681,7 @@ jobs:
   call-workflow:
     uses: octo-org/example-repo/.github/workflows/called-workflow.yml@main
     secrets:
-      access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} 
+      access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
 
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idsecretssecret_id)`jobs.<job_id>.secrets.<secret_id>`
@@ -1693,12 +1694,12 @@ Allowed expression contexts: `github`, `needs`, and `secrets`.
 
 You can use special characters in path, branch, and tag filters.
 
--   `*`: Matches zero or more characters, but does not match the `/` character. For example, `Octo*` matches `Octocat`.
--   `**`: Matches zero or more of any character.
--   `?`: Matches zero or one of the preceding character.
--   `+`: Matches one or more of the preceding character.
--   `[]` Matches one character listed in the brackets or included in ranges. Ranges can only include `a-z`, `A-Z`, and `0-9`. For example, the range`[0-9a-z]` matches any digit or lowercase letter. For example, `[CB]at` matches `Cat` or `Bat` and `[1-2]00` matches `100` and `200`.
--   `!`: At the start of a pattern makes it negate previous positive patterns. It has no special meaning if not the first character.
+- `*`: Matches zero or more characters, but does not match the `/` character. For example, `Octo*` matches `Octocat`.
+- `**`: Matches zero or more of any character.
+- `?`: Matches zero or one of the preceding character.
+- `+`: Matches one or more of the preceding character.
+- `[]` Matches one character listed in the brackets or included in ranges. Ranges can only include `a-z`, `A-Z`, and `0-9`. For example, the range`[0-9a-z]` matches any digit or lowercase letter. For example, `[CB]at` matches `Cat` or `Bat` and `[1-2]00` matches `100` and `200`.
+- `!`: At the start of a pattern makes it negate previous positive patterns. It has no special meaning if not the first character.
 
 The characters `*`, `[`, and `!` are special characters in YAML. If you start a pattern with `*`, `[`, or `!`, you must enclose the pattern in quotes.
 
