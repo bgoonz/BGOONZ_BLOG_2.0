@@ -1,12 +1,12 @@
-
-
 # [SOLVED] - How to add a Google Search Bar to your Website? - 2021 Expertrec
 
 > ## Excerpt
+>
 > Easy steps to add a Google search bar or box to your website✅✅. You need not have any coding knowledge to follow the steps below. This
 
 ---
-Easy steps to add a Google search bar or box to your website. You need not have any coding knowledge to follow the steps below. This method works with all major CMS’s such as WordPress, Ghost, Drupal, Joomla, etc. 
+
+Easy steps to add a Google search bar or box to your website. You need not have any coding knowledge to follow the steps below. This method works with all major CMS’s such as WordPress, Ghost, Drupal, Joomla, etc.
 
 ![How to add a Google Search Bar to your Website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2021/01/How-to-add-a-Google-Search-Bar-to-your-Website-1024x576.png)
 
@@ -19,14 +19,14 @@ If you are on WordPress, it has a default search bar that adds basic search func
 ### Creating a Google custom search using (programmable search engine)
 
 1.  To create a Programmable Search Engine:
-    
+
     1.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don’t have one).
     2.  The **name** of your search engine will be automatically generated based on the URLs you select. You can change this name at any time.
     3.  Select the **language** of your search engine. This defines the language of the buttons and other design elements of your search engine but doesn’t affect the actual search results.
     4.  Click **Create**.
-    
+
     Your basic search engine is ready to use! To see more configuration options, go to the [Control Panel](https://programmablesearchengine.google.com/). Control Panel also has a preview window that allows you to test and fine-tune your search results.
-    
+
 2.  Go to [https://cse.google.co.in/cse/](https://cse.google.co.in/cse/)[![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/google-custom-search-bar.png)](https://blog.expertrec.com/add-search-to-website/)
 3.  Sign in to [Control Panel](https://programmablesearchengine.google.com/create/new) using your Google Account ([get an account](https://www.google.com/accounts/NewAccount) if you don’t have one).
 4.  The **name** of your search engine will be automatically generated based on the URLs you select. You can change this name at any time.
@@ -66,17 +66,17 @@ First of all, you need to enable Image Search in the [Control Panel](https://pr
 
 ### Advantages of adding Google custom search
 
--   Google custom search is free. There are few custom search engines that are free.
--   If you enable ads inside Google custom search, you can make money from AdSense.
+- Google custom search is free. There are few custom search engines that are free.
+- If you enable ads inside Google custom search, you can make money from AdSense.
 
 ### [Disadvantages of using google custom search-](https://blog.expertrec.com/disadvantages-of-using-google-custom-search/)
 
--   Ads- You can lose your website visitors to competitors.
--   No control over what is indexed or when
--   No control of search results
--   No support
--   Minimal UI customization options
--   It can be shut down or changed at any time. Google is known for killing products ruthlessly without considering the user base.
+- Ads- You can lose your website visitors to competitors.
+- No control over what is indexed or when
+- No control of search results
+- No support
+- Minimal UI customization options
+- It can be shut down or changed at any time. Google is known for killing products ruthlessly without considering the user base.
 
 Though this might sound great to have Google search on your website, there is no free lunch.  Google shows ads to cover up for this service.  Now say, your site is about shoes of brand X.  when people search on your site for a shoe you have,  Google shows an ad of your competitor brand Y and **places it above** your site results.  Your visitors are going to believe that you indeed are recommending brand Y yourself.  If you are going to monetize your visitors, then this will drastically reduce your income.
 
@@ -95,12 +95,12 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 5.  Initiate a website crawl. (Now Expertrec crawlers will start crawling your website. This could take some time depending on the size and number of pages on your website).
 6.  Once the crawl completes, you can make changes to your search engine’s look and feel and also to the search engine’s ranking algorithm by using the control panel. There are more advanced features like search weights, promotions, synonyms, and more.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/UI-editor.jpg)
 7.  Go to the code section and add it to your website. You can also email the code to your developer and ask them to add it to their website.
-    -   the code contains two portions ( one within **<script></script>** and another piece of code **<ci-search></ci-search>**).
-    -   The <script></script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
-    -   The <ci-search></ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
+    - the code contains two portions ( one within **<script></script>** and another piece of code **<ci-search></ci-search>**).
+    - The <script></script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
+    - The <ci-search></ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
 8.  It is advisable to make the code changes in a test mode or development website before taking live in your live/ production site.
 9.  As a final step, remove any website cache that you might have.
-10.  Now your site search engine is live. After a few days of search engine usage, you can check out the search analytics to check out what users are searching for and reorganize your content strategy accordingly.
+10. Now your site search engine is live. After a few days of search engine usage, you can check out the search analytics to check out what users are searching for and reorganize your content strategy accordingly.
 
 ## Advantages of Using Expertrec search bar
 
@@ -127,43 +127,42 @@ This plugin replaces your default WordPress search form. However, for some theme
 
 ### **Features**
 
--   Superfast. (Since our search loads from our super-fast servers with super caching technology-enabled, you can expect to deliver a super-fast search experience to your website visitors).
--   Free voice search. (Currently supported only in Chrome browsers).
--   Image search. ( Featured images are automatically captured from every page and are displayed alongside the search results).
--   PDF search. (Contents within the PDF are indexed and displayed inside search results. Users can separately select only PDF results using the filter option)
--   Relevant and better search results. (Our search learns as users interact more and more with the search engine, which leads to better re-ranking ).
--   No Ads. (We promise never to show ads in our search results).
--   Search Filters and Facets. (Our crawler automatically detects categories of blogs and products and creates a filter for users to fine-tune their search results).
--   Custom Search engine rules. (You can define custom search rules to promote or demote search results).
--   Synonyms. ( You can set synonyms by adding in our easy-to-use interface, for example, furniture=sofa, etc.)
--   Complete control over the UI (no coding required).
--   Quick and easy configuration. (no coding required).
--   Fast type ahead auto-complete search suggestions.
--   Advanced word matching and typo correction.
--   The self Learning search algorithm continuously gets better.
--   Highlighting Search term.
--   Responsive – works across all devices (mobile, tablet, desktop, android app).
+- Superfast. (Since our search loads from our super-fast servers with super caching technology-enabled, you can expect to deliver a super-fast search experience to your website visitors).
+- Free voice search. (Currently supported only in Chrome browsers).
+- Image search. ( Featured images are automatically captured from every page and are displayed alongside the search results).
+- PDF search. (Contents within the PDF are indexed and displayed inside search results. Users can separately select only PDF results using the filter option)
+- Relevant and better search results. (Our search learns as users interact more and more with the search engine, which leads to better re-ranking ).
+- No Ads. (We promise never to show ads in our search results).
+- Search Filters and Facets. (Our crawler automatically detects categories of blogs and products and creates a filter for users to fine-tune their search results).
+- Custom Search engine rules. (You can define custom search rules to promote or demote search results).
+- Synonyms. ( You can set synonyms by adding in our easy-to-use interface, for example, furniture=sofa, etc.)
+- Complete control over the UI (no coding required).
+- Quick and easy configuration. (no coding required).
+- Fast type ahead auto-complete search suggestions.
+- Advanced word matching and typo correction.
+- The self Learning search algorithm continuously gets better.
+- Highlighting Search term.
+- Responsive – works across all devices (mobile, tablet, desktop, android app).
 
 [Add a google search bar to your site for $9 per month](https://cse.expertrec.com/?platform=cse)
 
-
-
-
 ---
+
 ---
 
 # How to add custom google search bar inside your web-page? - GeeksforGeeks
 
 > ## Excerpt
+>
 > A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
 
 ---
+
 A search bar is necessary for a good website. Creating your own search engine from scratch might be a difficult task but this task can be skipped with the help of Google. Google has created a website to create a custom search bar, to create your own check the below link.
 
--   https://programmablesearchengine.google.com/about/
-    
-    .
-    
+- https://programmablesearchengine.google.com/about/
+
+  .
 
 **Creating a Custom Search Bar:** On this website, anyone can easily program their search bar by just selecting the sites you want to be searched for. Follow the steps explained below.
 
@@ -171,70 +170,66 @@ A search bar is necessary for a good website. Creating your own search engine fr
 
 **Embedding the Search Bar on a Webpage:** After getting your code you can simply paste it inside your web page to see the working search bar.
 
--   **Example:** You can see that the output screen has a search bar with an option to search which shows the result from the sites or domain you have selected while creating this search bar. Moreover, this search option will automatically change as you change the sites from the control panel. Currently, the search results are been shown in the default manner. Apart from that, you can manipulate the result displaying manner and much more as directed on the below links
-    
-    https://developers.google.com/custom-search/docs/element
-    
-    .  
-    
-    -   HTML
-    
-    ## HTML
-    
-    `<!DOCTYPE html>`
-    
-    `<``html``>`
-    
-     `<``head``>`
-    
-     `<``title``>Custom Search-Bar</``title``>`
-    
-     `<``style``>`
-    
-     `body {`
-    
-     `background-image: linear-gradient(to left, white, green);`
-    
-     `color: lawngreen;`
-    
-     `}`
-    
-     `</``style``>`
-    
-     `</``head``>`
-    
-     `<``body``>`
-    
-     `<``h1` `style``=``"text-align: center;"``>GeeksforGeeks</``h1``>`
-    
-     `<``script` `async` `src``=`
-    
-     `</``script``>`
-    
-     `<``div` `class``=``"gcse-search"``></``div``>`
-    
-     `</``body``>`
-    
-    `</``html``>`
-    
--   **Output:** ![](https://media.geeksforgeeks.org/wp-content/uploads/20200515125003/Screencast-2020-05-15-124903.gif)
+- **Example:** You can see that the output screen has a search bar with an option to search which shows the result from the sites or domain you have selected while creating this search bar. Moreover, this search option will automatically change as you change the sites from the control panel. Currently, the search results are been shown in the default manner. Apart from that, you can manipulate the result displaying manner and much more as directed on the below links
 
+  https://developers.google.com/custom-search/docs/element
 
+  .
 
+  - HTML
 
+  ## HTML
+
+  `<!DOCTYPE html>`
+
+  ` <``html``> `
+
+  ` <``head``> `
+
+  ` <``title``>Custom Search-Bar</``title``> `
+
+  ` <``style``> `
+
+  `body {`
+
+  `background-image: linear-gradient(to left, white, green);`
+
+  `color: lawngreen;`
+
+  `}`
+
+  ` </``style``> `
+
+  ` </``head``> `
+
+  ` <``body``> `
+
+  ` <``h1 ` ` style``=``"text-align: center;"``>GeeksforGeeks</``h1``> `
+
+  ` <``script ` `async` ` src``= `
+
+  ` </``script``> `
+
+  ` <``div ` ` class``=``"gcse-search"``></``div``> `
+
+  ` </``body``> `
+
+  ` </``html``> `
+
+- **Output:** ![](https://media.geeksforgeeks.org/wp-content/uploads/20200515125003/Screencast-2020-05-15-124903.gif)
 
 ---
+
 ---
-
-
-
 
 # Implementing search box  |  Programmable Search Engine
 
 > ## Excerpt
+>
 > Once you've created your Programmable Search Engine, you can add the Programmable Search Element to your site. To do this, you'll need to copy some code and paste it into your site's HTML where you want your search engine to appear.
 
 ---
+
 Once you've created your Programmable Search Engine, you can add the Programmable Search Element to your site. To do this, you'll need to copy some code and paste it into your site's HTML where you want your search engine to appear.
 
 1.  In the [Control Panel](https://programmablesearchengine.google.com/) click the search engine you want to use.
@@ -291,25 +286,18 @@ Note the _q=myQuery_ param in the address bar - this is how the `<div class="gcs
 
 Continue to [Enabling autocomplete](https://developers.google.com/custom-search/docs/tutorial/autocomplete).
 
-
-
-
-
-
----
 ---
 
-
-
-
-
+---
 
 # How to Add a Search Bar in HTML | PageDart
 
 > ## Excerpt
+>
 > We look at how to add a search bar in HTML to your website and search connect it to Google search
 
 ---
+
 In this tutorial, we are going to add a search bar in HTML to your site!
 
 I will walk you through all the components you need to add a search bar in HTML and connect it to Google to search.
@@ -318,11 +306,11 @@ Google will open in a new tab and only show results for your site.
 
 For those in a rush, the complete solution is at the bottom of the page. For those who want the deep dive keep reading!
 
--   [HTML Form](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#html-form)
--   [CSS](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#css)
--   [JavaScript](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#javascript)
--   [Complete Solution](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#complete-solution)
--   [How to Add a Search Bar in HTML, Final Thoughts](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#how-to-add-a-search-bar-in-html-final-thoughts)
+- [HTML Form](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#html-form)
+- [CSS](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#css)
+- [JavaScript](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#javascript)
+- [Complete Solution](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#complete-solution)
+- [How to Add a Search Bar in HTML, Final Thoughts](https://pagedart.com/blog/how-to-add-a-search-bar-in-html/#how-to-add-a-search-bar-in-html-final-thoughts)
 
 Let's start with the HTML that we need to create a form.
 
@@ -330,14 +318,14 @@ Let's start with the HTML that we need to create a form.
 
 The first thing we need to add is the bar itself. This uses a few HTML elements:
 
--   `<form>` - This element is for user input
--   `<input>` - This element has many types the one we will use today is search
--   `<button>` - This element will submit the form and start the search
+- `<form>` - This element is for user input
+- `<input>` - This element has many types the one we will use today is search
+- `<button>` - This element will submit the form and start the search
 
 Here is what the HTML will look like:
 
 ```
-<form id="form"> 
+<form id="form">
   <input type="search" id="query" name="q" placeholder="Search...">
   <button>Search</button>
 </form>
@@ -345,10 +333,10 @@ Here is what the HTML will look like:
 
 The above HTML is all we need to create a search bar. There are a few attributes that we are using on the `<input>` tag. Let's look at these in more detail:
 
--   type - This sets how the input looks on the screen. There are many types such as password, checkbox and radio yet here we are using search
--   id - Setting an ID can make it easy to reference the input box from JavaScript which we will use later
--   name - It is common to use “q” for the search query box name
--   placeholder - This is some text that gives a hint to the user on what the input is for
+- type - This sets how the input looks on the screen. There are many types such as password, checkbox and radio yet here we are using search
+- id - Setting an ID can make it easy to reference the input box from JavaScript which we will use later
+- name - It is common to use “q” for the search query box name
+- placeholder - This is some text that gives a hint to the user on what the input is for
 
 When the HTML displays on the browser it looks like this:
 
@@ -430,7 +418,7 @@ The next CSS rule is a bit strange! It allows us to set the style of the placeho
 ```
 ::placeholder {
   color: #fff;
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 ```
 
@@ -482,10 +470,10 @@ We are going to do a Google search when someone searches in our search bar.
 
 To do this we need to write some code that will:
 
--   Add an event listener to the form so we know when someone presses the search button
--   Get the text value from the query box
--   Build a Google URL that searches a specific site
--   Opens a new tab with Google and the search query
+- Add an event listener to the form so we know when someone presses the search button
+- Get the text value from the query box
+- Build a Google URL that searches a specific site
+- Opens a new tab with Google and the search query
 
 Google allows you to search a specific site if you add `site:` to the query. For example, if you wanted to search PageDart for the term lazy loading you could add this in Google:
 
@@ -547,9 +535,9 @@ Now when you enter a search query and press the search icon a new tab will open 
 
 Now we have covered all the parts of a search bar:
 
--   HTML of the form
--   CSS to add color and design
--   JavaScript to process the form input
+- HTML of the form
+- CSS to add color and design
+- JavaScript to process the form input
 
 You can see a working [codepen](https://codepen.io/pagedart/pen/VwvzEbx) example.
 
@@ -588,7 +576,7 @@ Here is the complete HTML:
 
       ::placeholder {
         color: #fff;
-        opacity: 0.7; 
+        opacity: 0.7;
       }
 
       svg {
@@ -637,11 +625,10 @@ Here is the complete HTML:
 
 You have learned in this tutorial how to add a search bar in HTML. We have covered:
 
--   How to create a small HTML form
--   How to design the form using CSS
--   How to write JavaScript to interact with the form
+- How to create a small HTML form
+- How to design the form using CSS
+- How to write JavaScript to interact with the form
 
 You have also learned how you can use JavaScript to connect the form to Google. Performing a search only on your site.
 
 Using the special site search on Google you can get Google results only for your site.
-
