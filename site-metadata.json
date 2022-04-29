@@ -1,11 +1,10 @@
-ma{
+{
     "palette": "navy",
     "header": {
         "logo_img": "images/home-button.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
-        "nav_links": [
-            {
+        "nav_links": [{
                 "url": "/docs/sitemap",
                 "label": "Navigation",
                 "style": "primary",
@@ -13,8 +12,7 @@ ma{
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Docs",
                         "url": "/docs",
                         "style": "primary",
@@ -66,8 +64,7 @@ ma{
                 "url": "/blog/",
                 "style": "primary",
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Blog-Post-Archive",
                         "url": "https://bgoonz.blogspot.com/",
                         "style": "primary",
@@ -106,8 +103,7 @@ ma{
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Job Boards",
                         "url": "interview/job-boards",
                         "style": "primary",
@@ -149,8 +145,7 @@ ma{
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Resource-Archive-Server",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
@@ -215,8 +210,7 @@ ma{
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Potluck Planner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -364,8 +358,7 @@ ma{
                 "url": "/docs/tools",
                 "style": "primary",
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Github HTML Previewer",
                         "url": "https://githtmlpreview.netlify.app/",
                         "style": "primary",
@@ -444,8 +437,7 @@ ma{
     },
     "footer": {
         "has_social": true,
-        "social_links": [
-            {
+        "social_links": [{
                 "label": "Twitter",
                 "url": "https://twitter.com/bgooonz",
                 "style": "icon",
@@ -494,17 +486,15 @@ ma{
                 "type": "action"
             }
         ],
-        "links": [
-            {
-                "label": "BLM",
-                "url": "https://random-static-html-deploys.netlify.app/blm.html",
-                "style": "primary",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
-            }
-        ],
+        "links": [{
+            "label": "BLM",
+            "url": "https://random-static-html-deploys.netlify.app/blm.html",
+            "style": "primary",
+            "icon_class": "dev",
+            "new_window": false,
+            "no_follow": false,
+            "type": "action"
+        }],
         "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
