@@ -58,4 +58,3 @@ collections:
           - { name: template, label: Template, widget: hidden, default: 'post' }
           - { name: subtitle, label: Subtitle, widget: string, required: false }
           - { name: excerpt, label: Excerpt, widget: string, required: false }
-       
