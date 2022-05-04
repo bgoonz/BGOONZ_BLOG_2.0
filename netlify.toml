@@ -1,6 +1,11 @@
 [build]
+<<<<<<< HEAD
 publish = "public"
 command = "npm run build"
 
   [build.environment]
   NODE_VERSION = "12"
+=======
+  publish = "public"
+  command = "npm run build"
+>>>>>>> 0951c0be15022ef1b1179781caa3e833be1768d0
