@@ -3,7 +3,6 @@ import { ThMenu } from 'styled-icons/typicons';
 import { Close as Cross } from 'styled-icons/material';
 import { mediaQueries } from 'utils/mediaQueries';
 import { Link } from 'gatsby';
-
 // Unable to accommodate expanding search box via overflow-x: scroll;
 // here because of https://stackoverflow.com/a/6433475. Would include
 // potential future SubNavs in vertical scrolling, effectively hiding them.
@@ -39,7 +38,6 @@ export const NavDiv = styled.nav`
         }
     }
 `;
-
 export const NavToggle = styled(Cross).attrs((props) => ({
     as: props.opener && ThMenu,
     size: props.opener ? `1.2em` : `1.6em`
@@ -58,7 +56,6 @@ export const NavToggle = styled(Cross).attrs((props) => ({
         display: none;
     }
 `;
-
 export const NavLink = styled(Link).attrs({
     activeClassName: `active`,
     partiallyActive: true

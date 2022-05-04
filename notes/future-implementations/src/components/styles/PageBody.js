@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const PageBody = styled.main`
     position: relative;
     margin: calc(3em + 3vh) 0;

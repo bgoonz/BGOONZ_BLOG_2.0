@@ -20,15 +20,15 @@ This article breaks down website performance into small tasks.
 
 Each one of the tasks is actionable, we will ask:
 
--   WHY are we improving this aspect of the site
--   WHAT to check on the page
--   HOW to make the improvement
+- WHY are we improving this aspect of the site
+- WHAT to check on the page
+- HOW to make the improvement
 
 We will also categorize the impact of fixing each task so that you get the biggest bang for your buck.
 
--   High - A large increase in site speed
--   Medium - Depending on the structure of your site this will have a significant speed increase
--   Low - Small increase but worth looking at. It all adds up.
+- High - A large increase in site speed
+- Medium - Depending on the structure of your site this will have a significant speed increase
+- Low - Small increase but worth looking at. It all adds up.
 
 There is no fluff here. All the improvements are actionable and you can increase your site speed today!
 
@@ -36,49 +36,49 @@ We only need a single tool to investigate the improvements on your site.
 
 Google Chrome Developer Tools.
 
-To access these tools open Chrome and navigate to your site. Right-click the page and choose the “Inspect” option.
+To access these tools open Chrome and navigate to your site. Right-click the page and choose the "Inspect" option.
 
 You now have developer tools open, let's improve your site!
 
 Here is the checklist of improvements we are going to make:
 
--   [Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#images)
-    -   [Compress Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#compress-images)
-    -   [Crop Images to Correct Aspect Ratio](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#crop-images-to-correct-aspect-ratio)
-    -   [Remove Image Metadata](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-image-metadata)
-    -   [Lazy Load](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#lazy-load)
-    -   [Create Responsive Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#create-responsive-images)
-    -   [Use Vector Graphics](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-vector-graphics)
--   [HTML](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#html)
-    -   [Minify the HTML](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-html)
-    -   [Remove Boolean Attributes](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-boolean-attributes)
-    -   [Remove HTML Comments](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-html-comments)
-    -   [Remove Legacy Tag Attributes](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-legacy-tag-attributes)
-    -   [Minify inline CSS and Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-inline-css-and-javascript)
-    -   [Load CSS Before Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#load-css-before-javascript)
-    -   [Limit iFrames on Page](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#limit-iframes-on-page)
-    -   [Use Pre-load](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-pre-load)
--   [Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#javascript)
-    -   [Minify the Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-javascript)
-    -   [Async Loading](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#async-loading)
-    -   [Bloated Frameworks](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#bloated-frameworks)
-    -   [Latest Version](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#latest-version)
--   [CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#css)
-    -   [Minify the CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-css)
-    -   [Unused CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#unused-css)
-    -   [Above the Fold](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#above-the-fold)
-    -   [Use Preload](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-preload)
-    -   [Remove Inline CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-inline-css)
--   [Fonts](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#fonts)
-    -   [Use WOFF2](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-woff2)
-    -   [Use Pre-connect](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-pre-connect)
--   [Server](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#server)
-    -   [Compression](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#compression)
-    -   [Caching](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#caching)
-    -   [HTTPS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#https)
-    -   [H2](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#h2)
-    -   [Reduce Cookies](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#reduce-cookies)
--   [Frequently Asked Questions](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#frequently-asked-questions)
+- [Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#images)
+  - [Compress Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#compress-images)
+  - [Crop Images to Correct Aspect Ratio](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#crop-images-to-correct-aspect-ratio)
+  - [Remove Image Metadata](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-image-metadata)
+  - [Lazy Load](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#lazy-load)
+  - [Create Responsive Images](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#create-responsive-images)
+  - [Use Vector Graphics](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-vector-graphics)
+- [HTML](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#html)
+  - [Minify the HTML](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-html)
+  - [Remove Boolean Attributes](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-boolean-attributes)
+  - [Remove HTML Comments](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-html-comments)
+  - [Remove Legacy Tag Attributes](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-legacy-tag-attributes)
+  - [Minify inline CSS and Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-inline-css-and-javascript)
+  - [Load CSS Before Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#load-css-before-javascript)
+  - [Limit iFrames on Page](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#limit-iframes-on-page)
+  - [Use Pre-load](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-pre-load)
+- [Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#javascript)
+  - [Minify the Javascript](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-javascript)
+  - [Async Loading](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#async-loading)
+  - [Bloated Frameworks](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#bloated-frameworks)
+  - [Latest Version](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#latest-version)
+- [CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#css)
+  - [Minify the CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#minify-the-css)
+  - [Unused CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#unused-css)
+  - [Above the Fold](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#above-the-fold)
+  - [Use Preload](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-preload)
+  - [Remove Inline CSS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#remove-inline-css)
+- [Fonts](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#fonts)
+  - [Use WOFF2](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-woff2)
+  - [Use Pre-connect](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#use-pre-connect)
+- [Server](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#server)
+  - [Compression](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#compression)
+  - [Caching](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#caching)
+  - [HTTPS](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#https)
+  - [H2](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#h2)
+  - [Reduce Cookies](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#reduce-cookies)
+- [Frequently Asked Questions](https://pagedart.com/blog/30-ways-to-improve-your-website-performance/#frequently-asked-questions)
 
 As you can see we have a lot to get through.
 
@@ -86,9 +86,9 @@ Once you have performed these tasks a few times, it will feel like second nature
 
 At a high level there are three principles we are following:
 
--   Page assets should be as small as possible (Known as Page Weight).
--   Download only the assets we need to show the page (Async Loading).
--   Download assets we need in advance (Pre-loading)
+- Page assets should be as small as possible (Known as Page Weight).
+- Download only the assets we need to show the page (Async Loading).
+- Download assets we need in advance (Pre-loading)
 
 All 30 improvements fall into one or more of these three principles.
 
@@ -144,7 +144,7 @@ By selecting the correct compression type, we can reduce image size by up to 90%
 
 To check if compression could improve the images on your site, use the Dev Tools and select the network tab.
 
-You can filter by “Img” and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It's the resource file size we are looking at.
+You can filter by "Img" and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It's the resource file size we are looking at.
 
 If you see files that are larger than 100kb it's time to try compression.
 
@@ -152,9 +152,9 @@ If you see files that are larger than 100kb it's time to try compression.
 
 Follow these rules when deciding on the type of compression to use:
 
--   If the image is a JPEG and larger than 100kb compress again using JPEG.
--   If the image is a PNG and it has no transparency then use a compressed JPEG.
--   If the image is a PNG is transparent then use WebP and fallback to an optimized PNG.
+- If the image is a JPEG and larger than 100kb compress again using JPEG.
+- If the image is a PNG and it has no transparency then use a compressed JPEG.
+- If the image is a PNG is transparent then use WebP and fallback to an optimized PNG.
 
 A great tool to use for image compression is [Squoosh](https://squoosh.app/).
 
@@ -270,7 +270,7 @@ To support these devices we want to show a nice clear image. We do not want to h
 
 Check to see if there are any picture tags in the HTML. You are then looking for different sources of the same image.
 
-It can help to search for “srcset” in the markup.
+It can help to search for "srcset" in the markup.
 
 #### How
 
@@ -378,9 +378,9 @@ It is safe to remove all these default true values from your HTML.
 
 #### What
 
-To check if your site has this open Dev Tools and click on the “Elements” tab.
+To check if your site has this open Dev Tools and click on the "Elements" tab.
 
-This will show the HTML and you can perform a search for “true”.
+This will show the HTML and you can perform a search for "true".
 
 If you find some you can remove them.
 
@@ -388,7 +388,7 @@ If you find some you can remove them.
 
 Most HTML minifiers will have an option to remove these values.
 
-The [HTML minifier](http://kangax.github.io/html-minifier/) tool we mentioned above has a “Collapse boolean attributes” option. To remove the “true” values check this checkbox.
+The [HTML minifier](http://kangax.github.io/html-minifier/) tool we mentioned above has a "Collapse boolean attributes" option. To remove the "true" values check this checkbox.
 
 Impact: Low
 
@@ -416,7 +416,7 @@ If you find some these are comments and you can remove them.
 
 The [HTML minifier](http://kangax.github.io/html-minifier/) can remove these comments for us.
 
-There is a section in the options called “Remove comments”. Check this to remove all comments from the file.
+There is a section in the options called "Remove comments". Check this to remove all comments from the file.
 
 ### Remove Legacy Tag Attributes
 
@@ -430,7 +430,7 @@ It is important to be aware of these defaults so that you know what to remove.
 
 #### What
 
-In Dev Tools click the “Elements” tab and search for “text/javascript” and “text/css”.
+In Dev Tools click the "Elements" tab and search for "text/javascript" and "text/css".
 
 Which will return results like this:
 
@@ -448,7 +448,7 @@ Replace the above code with:
 
 #### How
 
-Again, using an [HTML minifier](http://kangax.github.io/html-minifier/) there is an option labeled “HTML5”. Check this when minifying and it will remove these attributes.
+Again, using an [HTML minifier](http://kangax.github.io/html-minifier/) there is an option labeled "HTML5". Check this when minifying and it will remove these attributes.
 
 ### Minify inline CSS and Javascript
 
@@ -456,7 +456,7 @@ Impact: Medium (depending on the amount of CSS and Javascript inlined)
 
 #### Why
 
-If the HTML file has Javascript or CSS within the HTML file (called “inline”). For example:
+If the HTML file has Javascript or CSS within the HTML file (called "inline"). For example:
 
 ```
 <style>
@@ -487,13 +487,13 @@ Making the file size smaller.
 
 #### What
 
-In the Dev Tools open the “Network” tab and locate the HTML file and click on the “Response”. Search for the “style” or “script” tag in the HTML, if there is CSS or Javascript written inline.
+In the Dev Tools open the "Network" tab and locate the HTML file and click on the "Response". Search for the "style" or "script" tag in the HTML, if there is CSS or Javascript written inline.
 
 If there is, check to see if it has whitespace and indentations. If it does we can minify it.
 
 #### How
 
-We can use our old friend [HTML minifier](http://kangax.github.io/html-minifier/). Make sure you select the options “Minify CSS” and “Minify Javascript”.
+We can use our old friend [HTML minifier](http://kangax.github.io/html-minifier/). Make sure you select the options "Minify CSS" and "Minify Javascript".
 
 ### Load CSS Before Javascript
 
@@ -514,7 +514,7 @@ Since we need the CSS to show the final page, it is better to load the CSS first
 
 #### What
 
-Search for Script and stylesheet in your HTML. You can view this in the “Network” tab of Chrome Dev Tools, ensure that they are in the correct order.
+Search for Script and stylesheet in your HTML. You can view this in the "Network" tab of Chrome Dev Tools, ensure that they are in the correct order.
 
 #### How
 
@@ -537,11 +537,11 @@ The more iFrames you add, the slower the site will be.
 
 #### What
 
-To locate the iFrames, use Developer tools click the “Elements” tab.
+To locate the iFrames, use Developer tools click the "Elements" tab.
 
 ![iFrames](https://pagedart.com/images/30-ways-to-improve-your-website-performance/iframe.jpg)
 
-This will show the HTML markup from here you can perform a find and search for “iframe”.
+This will show the HTML markup from here you can perform a find and search for "iframe".
 
 #### How
 
@@ -577,7 +577,7 @@ Javascript is becoming a very important aspect of modern web application perform
 
 We must ensure that we keep javascript files small and only load what the page needs when it needs it.
 
-Let’s take a look at some improvements.
+Let's take a look at some improvements.
 
 ### Minify the Javascript
 
@@ -599,8 +599,8 @@ It is common to see sites loading JQuery directly from JQuery.com without adding
 
 The .min version is the minified version of JQuery and can save many KB's:
 
--   The original JQuery file is 273KB.
--   The minified version is 93KB.
+- The original JQuery file is 273KB.
+- The minified version is 93KB.
 
 So check the site to make sure that the minified file is being loaded.
 
@@ -632,7 +632,7 @@ With `defer`, it will download the script and once the HTML has rendered it will
 
 #### What
 
-You can look at the HTML file in the “Elements” tab of the Dev Tools.
+You can look at the HTML file in the "Elements" tab of the Dev Tools.
 
 Look for where the script tags are being loaded.
 
@@ -699,7 +699,7 @@ A good place to visit is [NPM](https://npmjs.com/). On this site, you can search
 
 CSS files can keep growing over time and often it can be difficult to know if certain classes are still in use.
 
-It’s important to review the CSS for this reason.
+It's important to review the CSS for this reason.
 
 ### Minify the CSS
 
@@ -739,11 +739,11 @@ It can be almost impossible to look at a CSS file and figure out if the styles a
 
 A simpler way is to perform a Lighthouse Audit.
 
-To do this in Chrome Developer Tools open the Audit tab and run a “Performance” Audit.
+To do this in Chrome Developer Tools open the Audit tab and run a "Performance" Audit.
 
 ![Lighthouse Audit](https://pagedart.com/images/30-ways-to-improve-your-website-performance/audit.jpg)
 
-This will flag the “Remove unused CSS” opportunity if your site would benefit.
+This will flag the "Remove unused CSS" opportunity if your site would benefit.
 
 #### How
 
@@ -777,7 +777,7 @@ We can also use [UnCSS](https://uncss-online.com/) to extract the CSS needed for
 
 Then add the CSS styles.
 
-Once you hit “UnCSS my styles” you have the critical CSS and you can insert this inline to the HTML.
+Once you hit "UnCSS my styles" you have the critical CSS and you can insert this inline to the HTML.
 
 To do this add the critical CSS to a `<style>` tag in the `<head>` section of your HTML.
 
@@ -825,7 +825,7 @@ Remove this and add it to an external CSS file using preload. This will make the
 
 #### What
 
-Look in the “Network” tab and at the HTML file for any inline CSS.
+Look in the "Network" tab and at the HTML file for any inline CSS.
 
 #### How
 
@@ -886,7 +886,7 @@ Making the initial connection faster.
 
 #### What
 
-To do this on the “Elements” tab search for “preconnect” in the HTML.
+To do this on the "Elements" tab search for "preconnect" in the HTML.
 
 Have a look to see if there are any `<link>` tags that have the DNS domain name of the location of the fonts.
 
@@ -942,21 +942,21 @@ How you turn compression on is specific to your server setup.
 
 Here are a few links to some common servers to get you started:
 
--   [Wordpress](https://wp-rocket.me/)
--   [Express](https://github.com/expressjs/compression)
--   [IIS](https://docs.microsoft.com/en-us/iis/extensions/iis-compression/iis-compression-overview)
--   [NGinX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/)
+- [Wordpress](https://wp-rocket.me/)
+- [Express](https://github.com/expressjs/compression)
+- [IIS](https://docs.microsoft.com/en-us/iis/extensions/iis-compression/iis-compression-overview)
+- [NGinX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/)
 
 Also, remember that you only want to compress text files. So do not add compression to raster images as this may make them slower.
 
 Add compression to the following file types:
 
--   HTML
--   CSS
--   Javascript
--   SVG's
--   JSON
--   XML
+- HTML
+- CSS
+- Javascript
+- SVG's
+- JSON
+- XML
 
 ### Caching
 
@@ -988,9 +988,9 @@ The value is the number of seconds that you should keep the file for before it h
 
 When setting a cache on your server I would stick to the following rules:
 
--   Cache images for a year.
--   Cache CSS and Javascript for a month.
--   Do not cache HTML.
+- Cache images for a year.
+- Cache CSS and Javascript for a month.
+- Do not cache HTML.
 
 ### HTTPS
 
@@ -1008,7 +1008,7 @@ There is also a performance boost if you register your site with the [Google HST
 
 To check if you have HTTPS enabled open Chrome and look for the padlock next to the URL.
 
-If you don’t see it, you may see the “Not Secure” text instead.
+If you don't see it, you may see the "Not Secure" text instead.
 
 ![Not Secure](https://pagedart.com/images/30-ways-to-improve-your-website-performance/not-secure.jpg)
 
@@ -1036,9 +1036,9 @@ This changes the advice on some of the above improvements. Loading many files ca
 
 #### What
 
-To check if the site is using HTTP/2 we can look in the network tab and add the “Protocol” column.
+To check if the site is using HTTP/2 we can look in the network tab and add the "Protocol" column.
 
-This will show “h2” if we have HTTP/2 enabled on the server.
+This will show "h2" if we have HTTP/2 enabled on the server.
 
 #### How
 
@@ -1058,7 +1058,7 @@ Try to keep these cookies to at least below 20.
 
 #### What
 
-To check this have a look at the network tab and click on the headers tab. You need to find the “cookie” header in the request, like this:
+To check this have a look at the network tab and click on the headers tab. You need to find the "cookie" header in the request, like this:
 
 ![Cookies](https://pagedart.com/images/30-ways-to-improve-your-website-performance/cookies.jpg)
 

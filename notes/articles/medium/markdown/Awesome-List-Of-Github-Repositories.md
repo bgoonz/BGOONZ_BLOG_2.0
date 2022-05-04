@@ -647,7 +647,7 @@ Platforms
 -   <span id="5ba8"><a href="https://github.com/inspectit-labs/awesome-inspectit#readme" class="markup--anchor markup--li-anchor" title="https://github.com/inspectit-labs/awesome-inspectit#readme">inspectIT</a> — Open source Java app performance management tool.</span>
 -   <span id="ccc7"><a href="https://github.com/nayafia/awesome-maintainers#readme" class="markup--anchor markup--li-anchor" title="https://github.com/nayafia/awesome-maintainers#readme">Open Source Maintainers</a> — The experience of being an open source maintainer.</span>
 -   <span id="d978"><a href="https://github.com/xxczaki/awesome-calculators#readme" class="markup--anchor markup--li-anchor" title="https://github.com/xxczaki/awesome-calculators#readme">Calculators</a> — Calculators for every platform.</span>
--   <span id="3b1a"><a href="https://github.com/ZYSzys/awesome-captcha#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ZYSzys/awesome-captcha#readme">Captcha</a> — A type of challenge–response test used in computing to determine whether or not the user is human.</span>
+-   <span id="3b1a"><a href="https://github.com/ZYSzys/awesome-captcha#readme" class="markup--anchor markup--li-anchor" title="https://github.com/ZYSzys/awesome-captcha#readme">Captcha</a> — A type of challenge-response test used in computing to determine whether or not the user is human.</span>
 -   <span id="c558"><a href="https://github.com/markusschanta/awesome-jupyter#readme" class="markup--anchor markup--li-anchor" title="https://github.com/markusschanta/awesome-jupyter#readme">Jupyter</a> — Create and share documents that contain code, equations, visualizations and narrative text.</span>
 -   <span id="6bd9"><a href="https://github.com/andrewda/awesome-frc#readme" class="markup--anchor markup--li-anchor" title="https://github.com/andrewda/awesome-frc#readme">FIRST Robotics Competition</a> — International high school robotics championship.</span>
 -   <span id="1663"><a href="https://github.com/humanetech-community/awesome-humane-tech#readme" class="markup--anchor markup--li-anchor" title="https://github.com/humanetech-community/awesome-humane-tech#readme">Humane Technology</a> — Open source projects that help improve society.</span>
@@ -700,4 +700,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/awesome-list-of-github-repositories-f1c433e32b17" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

@@ -2,7 +2,6 @@ import React from 'react';
 import { animated } from 'react-spring';
 import styled from 'styled-components';
 import { Moon, Sun } from 'styled-icons/fa-solid';
-
 export const Box = styled.div`
     cursor: pointer;
     display: grid;
@@ -10,13 +9,11 @@ export const Box = styled.div`
         grid-area: 1/1;
     }
 `;
-
 export const Div = styled(animated.div)`
     svg {
         vertical-align: -0.1em;
     }
 `;
-
 export const Notification = styled.div`
     position: absolute;
     top: calc(100% + 1em);
@@ -34,7 +31,6 @@ export const Notification = styled.div`
         opacity: 1;
     }
 `;
-
 const SunSlashMoon = (props) => (
     <svg {...props} viewBox="0 0 512 512" fill="currentColor">
         <path
@@ -51,7 +47,6 @@ const SunSlashMoon = (props) => (
         />
     </svg>
 );
-
 export const Icons = {
     Sun: (props) => <Sun css="transform: scale(1.05);" {...props} />,
     Moon: (props) => <Moon css="transform: scale(0.95);" {...props} />,

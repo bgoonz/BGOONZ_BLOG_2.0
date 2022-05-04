@@ -304,10 +304,10 @@ You should probably skip this one… seriously it's just for internal use!
 
 <em>How to implement array callback methods in JavaScript</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186"><strong>Beginner's Guide To React Part 2</strong>
+<a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/docs/react/react2/"><strong>Beginner's Guide To React Part 2</strong>
 <br/>
 
-<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…</em><a href="https://bryanguner.medium.com/introductory-react-part-2-cda01615a186" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…</em><a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3"><strong>A Very Quick Guide To Calculating Big O Computational Complexity</strong>
 <br/>
@@ -546,4 +546,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

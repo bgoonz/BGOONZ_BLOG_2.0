@@ -32,13 +32,13 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 -   <span id="2d5b">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
 -   <span id="29cd">`Type Selectors` : Matches by node name.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*GOzh0U_yFtsOo9Hq" class="graf-image" /></figure>-   <span id="e624">`Class Selectors` : Matches by class name.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*GOzh0U_yFtsOo9Hq" class="graf-image" /></figure>- <span id="e624">`Class Selectors` : Matches by class name.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*WMQXdyBA2MeUYoVvY0Kjew.png" class="graf-image" /></figure>-   <span id="8c31">`ID Selectors` : Matches by ID name.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*WMQXdyBA2MeUYoVvY0Kjew.png" class="graf-image" /></figure>- <span id="8c31">`ID Selectors` : Matches by ID name.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*uyRa6tM8Jlg648Rl" class="graf-image" /></figure>-   <span id="d011">`Universal Selectors` : Selects all HTML elements on a page.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*uyRa6tM8Jlg648Rl" class="graf-image" /></figure>- <span id="d011">`Universal Selectors` : Selects all HTML elements on a page.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LfKazZMelOZrcOsp.jpg" class="graf-image" /></figure>-   <span id="e143">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*LfKazZMelOZrcOsp.jpg" class="graf-image" /></figure>- <span id="e143">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
 
 <!-- -->
 
@@ -74,8 +74,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### **Compound Class Selectors**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*iIOiP-ML_k6g0yTxZQyQ4A.png" class="graf-image" /></figure>-   <span id="bcf1">To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.</span>
--   <span id="a54c">TO use a compound class selector just append the classes together when referencing them in the CSS.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*iIOiP-ML_k6g0yTxZQyQ4A.png" class="graf-image" /></figure>- <span id="bcf1">To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.</span>
+- <span id="a54c">TO use a compound class selector just append the classes together when referencing them in the CSS.</span>
 
 <!-- -->
 
@@ -102,13 +102,13 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### `Descendant Selectors`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*YPkGcUc4gf2WtJYdf6Yvmg.png" class="graf-image" /></figure>-   <span id="5e1b">Separated by a space.</span>
--   <span id="5d0b">Selects all descendants of a parent container.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*YPkGcUc4gf2WtJYdf6Yvmg.png" class="graf-image" /></figure>- <span id="5e1b">Separated by a space.</span>
+- <span id="5d0b">Selects all descendants of a parent container.</span>
 
 #### `Direct Child Selectors`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*SByLFbio2RGGnFHj.jpg" class="graf-image" /></figure>-   <span id="47ef">Indicated with a `>`.</span>
--   <span id="eff3">Different from descendants because it only affects the direct children of an element.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*SByLFbio2RGGnFHj.jpg" class="graf-image" /></figure>- <span id="47ef">Indicated with a `>`.</span>
+- <span id="eff3">Different from descendants because it only affects the direct children of an element.</span>
 
 #### CSS:
 
@@ -122,8 +122,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### `Adjacent Sibling Selectors`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*m0yPz3xJPeP3br2C.png" class="graf-image" /></figure>-   <span id="5dca">Uses the `+` symbol.</span>
--   <span id="9063">Used for elements that directly follow one another and who both have the same parent.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*m0yPz3xJPeP3br2C.png" class="graf-image" /></figure>- <span id="5dca">Uses the `+` symbol.</span>
+- <span id="9063">Used for elements that directly follow one another and who both have the same parent.</span>
 
 <!-- -->
 
@@ -139,8 +139,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### **Pseudo-Classes**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*XfxhRpW1_nd02miTi4s_PA.png" alt="courtesy of Pseudo-classes — CSS: Cascading Style Sheets | MDN (mozilla.org)" class="graf-image" /><figcaption>courtesy of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" class="markup--anchor markup--figure-anchor">Pseudo-classes — CSS: Cascading Style Sheets | MDN (mozilla.org)</a></figcaption></figure>-   <span id="0b5c">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
--   <span id="1c1d">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*XfxhRpW1_nd02miTi4s_PA.png" alt="courtesy of Pseudo-classes — CSS: Cascading Style Sheets | MDN (mozilla.org)" class="graf-image" /><figcaption>courtesy of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" class="markup--anchor markup--figure-anchor">Pseudo-classes — CSS: Cascading Style Sheets | MDN (mozilla.org)</a></figcaption></figure>- <span id="0b5c">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
+- <span id="1c1d">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
 
 <!-- -->
 
@@ -156,19 +156,19 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 -   <span id="1aac">`active` : 'push down', when elements are activated.</span>
 -   <span id="587a">`checked` : applies to things like radio buttons or checkbox inputs.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wg0YeoQ2mZKHWXaa.gif" class="graf-image" /></figure>-   <span id="cf58">`disabled` : any disabled element.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*wg0YeoQ2mZKHWXaa.gif" class="graf-image" /></figure>- <span id="cf58">`disabled` : any disabled element.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*KmzLwGMr_FsbHF4u.gif" class="graf-image" /></figure>-   <span id="1b81">`first-child` : first element in a group of children/siblings.</span>
--   <span id="eefb">`focus` : elements that have current focus.</span>
--   <span id="c1da">`hover` : elements that have cursor hovering over it.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*KmzLwGMr_FsbHF4u.gif" class="graf-image" /></figure>- <span id="1b81">`first-child` : first element in a group of children/siblings.</span>
+- <span id="eefb">`focus` : elements that have current focus.</span>
+- <span id="c1da">`hover` : elements that have cursor hovering over it.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*X7-ym7Relt83npDe.gif" class="graf-image" /></figure>-   <span id="128b">`invalid` : any form elements in an invalid state from client-side form validation.</span>
--   <span id="8fe0">`last-child` : last element in a group of children/siblings.</span>
--   <span id="fac8">`not(selector)` : elements that do not match the provided selector.</span>
--   <span id="037a">`required` : form elements that are required.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*X7-ym7Relt83npDe.gif" class="graf-image" /></figure>- <span id="128b">`invalid` : any form elements in an invalid state from client-side form validation.</span>
+- <span id="8fe0">`last-child` : last element in a group of children/siblings.</span>
+- <span id="fac8">`not(selector)` : elements that do not match the provided selector.</span>
+- <span id="037a">`required` : form elements that are required.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Cs9Jf4O0FHQB7Okc.gif" class="graf-image" /></figure>-   <span id="2d63">`valid` : form elements in a valid state.</span>
--   <span id="7eaf">`visited` : anchor tags of which the user has already visited the URL that the href points to.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Cs9Jf4O0FHQB7Okc.gif" class="graf-image" /></figure>- <span id="2d63">`valid` : form elements in a valid state.</span>
+- <span id="7eaf">`visited` : anchor tags of which the user has already visited the URL that the href points to.</span>
 
 #### `Pseudo-Selectors`
 
@@ -229,21 +229,21 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 -   <span id="af08">`font-family` : change the font.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*8298p-Vlu15C-pdw.png" class="graf-image" /></figure>-   <span id="9771">Remember that not all computers have the same fonts on them.</span>
--   <span id="d248">You can import web fonts via an api by using</span>
--   <span id="8578">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
--   <span id="82b1">And then reference it in your font-family.</span>
--   <span id="c651">`font-size` : Changes the size of your font.</span>
--   <span id="a7dc">Keep in mind the two kind of units CSS uses:</span>
--   <span id="c034">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
--   <span id="7221">`Relative` : Em, Rem.</span>
--   <span id="80e1">Em: Calculating the size relative to the previous div (bubbles down)</span>
--   <span id="6c9e">Rem: Calculates relative to the parent element always.</span>
--   <span id="0f35">`font-style` : Used to set a font to italics.</span>
--   <span id="20a3">`font-weight` : Used to make a font bold.</span>
--   <span id="ba17">`text-align` : Used to align your text to the left, center, or right.</span>
--   <span id="e694">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
--   <span id="0777">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*8298p-Vlu15C-pdw.png" class="graf-image" /></figure>- <span id="9771">Remember that not all computers have the same fonts on them.</span>
+- <span id="d248">You can import web fonts via an api by using</span>
+- <span id="8578">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
+- <span id="82b1">And then reference it in your font-family.</span>
+- <span id="c651">`font-size` : Changes the size of your font.</span>
+- <span id="a7dc">Keep in mind the two kind of units CSS uses:</span>
+- <span id="c034">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
+- <span id="7221">`Relative` : Em, Rem.</span>
+- <span id="80e1">Em: Calculating the size relative to the previous div (bubbles down)</span>
+- <span id="6c9e">Rem: Calculates relative to the parent element always.</span>
+- <span id="0f35">`font-style` : Used to set a font to italics.</span>
+- <span id="20a3">`font-weight` : Used to make a font bold.</span>
+- <span id="ba17">`text-align` : Used to align your text to the left, center, or right.</span>
+- <span id="e694">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
+- <span id="0777">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
 
 #### **Background-Images**
 
@@ -284,4 +284,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/adding-css-to-your-html-3a17ba25ba82" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

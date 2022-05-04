@@ -1,0 +1,7 @@
+docky src/components/**/*.js \ # specify the components to parse
+  --watch "src/components/**/*.js","./README.md" \ # watch files
+  --ignore "src/components/**/index.js" \ # ignored files
+  --use-readme=docky src/components/**/*.js \ # specify the components to parse
+  --watch "src/components/**/*.js","./README.md" \ # watch files
+  --ignore "src/components/**/index.js" \ # ignored files
+  --use-readme=true

@@ -1,12 +1,12 @@
-import { graphql } from 'gatsby';
-
-export const query = graphql`
+import {
+    graphql
+} from 'gatsby';
+export const query = graphql `
     fragment sharpSrc on File {
         alt: name
         sharp: childImageSharp {
             fluid(maxWidth: 1500) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG }
         }
         src: publicURL
         dataURI
@@ -17,8 +17,7 @@ export const query = graphql`
             url
             caption
             img {
-                ...sharpSrc
-            }
+                ...sharpSrc }
         }
     }
 `;

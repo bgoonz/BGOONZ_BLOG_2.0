@@ -318,7 +318,7 @@ Python has two primitive loop commands:
 -   <span id="f32d">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
-    A nested loop is a loop inside a loop.</span>
+     A nested loop is a loop inside a loop.</span>
 -   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
@@ -413,8 +413,8 @@ There are many operators in python:
 -   <span id="a1b3">`-`</span>
 -   <span id="f09c">`/`</span>
 -   <span id="cd1e">`*`  
-    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.  
-    Now, we can look at a few more complicated ones:</span>
+     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.  
+     Now, we can look at a few more complicated ones:</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" /></figure>*simpleops.py*
 
@@ -829,4 +829,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/beginners-guide-to-python-e5a59b5bb64d" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

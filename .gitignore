@@ -92,6 +92,7 @@ yarn-error.log
 
 node_modules/
 
-
+.package-lock.json
 *.cache
 *public
+src/pages/docs/tools/Archive.md

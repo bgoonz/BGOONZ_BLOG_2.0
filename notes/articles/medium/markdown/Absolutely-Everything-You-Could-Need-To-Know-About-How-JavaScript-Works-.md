@@ -132,10 +132,10 @@ two values: **true** and **false**.
 
 -   <span id="71d9">**&&** (and) **Truth Table**</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Y4qzqSB0C-9AmtXf.png" class="graf-image" /></figure>-   <span id="c706">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="1e21">**De Morgan's Law** : Common mistake in Boolean logic is incorrectly distributing ! across parentheses.</span>
--   <span id="2e3e">`!(A || B) === !A && !B; !(A && B) === !A || !B;`</span>
--   <span id="350f">In summary, to correctly distribute ! across parentheses we must also flip the operation within.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Y4qzqSB0C-9AmtXf.png" class="graf-image" /></figure>- <span id="c706">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
+- <span id="1e21">**De Morgan's Law** : Common mistake in Boolean logic is incorrectly distributing ! across parentheses.</span>
+- <span id="2e3e">`!(A || B) === !A && !B; !(A && B) === !A || !B;`</span>
+- <span id="350f">In summary, to correctly distribute ! across parentheses we must also flip the operation within.</span>
 
 ### Comparison Operators
 
@@ -171,15 +171,15 @@ in a program.
 -   <span id="e084">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).</span>
 -   <span id="92ec">`let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"`</span>
 -   <span id="f5af">JS variable names can contain any alphanumeric characters,  
-    underscores, or dollar signs (cannot being with a number).</span>
+     underscores, or dollar signs (cannot being with a number).</span>
 -   <span id="5288">If you do not declare a value for a variable, undefined is  
-    automatically set.</span>
+     automatically set.</span>
 -   <span id="5f49">`let bootcamp; console.log(bootcamp); // undefined`</span>
 -   <span id="ea4b">We can change the value of a previously declared variable (let, not  
-    const) by re-assigning it another value.</span>
+     const) by re-assigning it another value.</span>
 -   <span id="ef75">**let** is the updated version of **var**; there are some  
-    differences in terms of hoisting and global/block scope — will be  
-    covered later in the course (common interview question!)</span>
+     differences in terms of hoisting and global/block scope — will be  
+     covered later in the course (common interview question!)</span>
 
 **Assignment Shorthand**
 
@@ -1514,7 +1514,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>TL;DR Prefer map and filter over forEach when you need to copy an array or part of it to a new one. One of the best…</em>gofore.com</a><a href="https://gofore.com/en/why-you-should-replace-foreach/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d"><strong>Simplify your JavaScript – Use .map(), .reduce(), and .filter()</strong>
+<a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d"><strong>Simplify your JavaScript - Use .map(), .reduce(), and .filter()</strong>
 <br/>
 
 <em>If you haven't heard of .map(), .reduce(), and .filter() in JavaScript, you might want to learn to use it!</em>medium.com</a><a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -1554,7 +1554,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>Originally posted on my blog For the last several weeks I've been applying for jobs. Sadly, the startup I was working…</em>dev.to</a><a href="https://dev.to/pickleat/map-filter-and-reduce-2efb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://jstutorial.medium.com/map-filter-and-reduce-animated-7fe391a35a47" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jstutorial.medium.com/map-filter-and-reduce-animated-7fe391a35a47"><strong>Map, Filter and Reduce – Animated</strong>
+<a href="https://jstutorial.medium.com/map-filter-and-reduce-animated-7fe391a35a47" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://jstutorial.medium.com/map-filter-and-reduce-animated-7fe391a35a47"><strong>Map, Filter and Reduce - Animated</strong>
 <br/>
 
 <em>Map, filter and reduce have been around for a long time. They are often seen as part of Functional Programming style.</em>jstutorial.medium.com</a><a href="https://jstutorial.medium.com/map-filter-and-reduce-animated-7fe391a35a47" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -2701,4 +2701,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/absolutely-everything-you-could-need-to-know-about-how-javascript-works-633549469528" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

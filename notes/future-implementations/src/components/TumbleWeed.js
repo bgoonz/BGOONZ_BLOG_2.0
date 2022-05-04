@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
 const TumbleWeedSvg = (props) => (
     <svg {...props} viewBox="0 0 8 8">
         <g fill="#f7d291">
@@ -34,7 +33,6 @@ const TumbleWeedSvg = (props) => (
         </g>
     </svg>
 );
-
 const StyledTumbleWeed = styled(TumbleWeedSvg)`
     animation: tumbleweed linear 5s infinite;
     background: transparent !important;
@@ -69,7 +67,6 @@ const StyledTumbleWeed = styled(TumbleWeedSvg)`
         }
     }
 `;
-
 export const TumbleWeed = (props) => {
     const [paused, setPaused] = useState(false);
     return <StyledTumbleWeed {...props} paused={paused} onClick={() => setPaused(!paused)} />;

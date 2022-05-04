@@ -14,23 +14,23 @@ This list of resources is specifically targeted at Web Developers and Data Scien
 
 > _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"><em>Arthur Samuel</em></a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>-   <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
--   <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
--   <span id="bcc5">\[📖\] <a href="https://www.amazon.com/Hello-Startup-Programmers-Building-Technologies/dp/1491909900" class="markup--anchor markup--li-anchor">Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams</a></span>
--   <span id="e47e">\[📖\] <a href="https://www.howgoogleworks.net/" class="markup--anchor markup--li-anchor">How Google Works</a></span>
--   <span id="0016">\[📖\] <a href="https://www.goodreads.com/book/show/817589.Learn_to_Earn" class="markup--anchor markup--li-anchor">Learn to Earn: A Beginner's Guide to the Basics of Investing and Business</a></span>
--   <span id="62e6">\[📖\] <a href="https://www.goodreads.com/book/show/6732019-rework" class="markup--anchor markup--li-anchor">Rework</a></span>
--   <span id="b657">\[📖\] <a href="https://www.amazon.com/Airbnb-Story-Ordinary-Disrupted-Controversy/dp/0544952669" class="markup--anchor markup--li-anchor">The Airbnb Story</a></span>
--   <span id="ec24">\[📖\] <a href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572" class="markup--anchor markup--li-anchor">The Personal MBA</a></span>
--   <span id="cb38">\[ \] <a href="https://learn.fb.com/skillset/marketing-started" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: get started</a></span>
--   <span id="e348">\[ \] <a href="https://learn.fb.com/skillset/marketing-further" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: go further</a></span>
--   <span id="b2b5">\[ \] <a href="https://analytics.google.com/analytics/academy/course/6" class="markup--anchor markup--li-anchor">Google Analytics for Beginners</a></span>
--   <span id="84ba">\[ \] <a href="https://moz.com/beginners-guide-to-seo" class="markup--anchor markup--li-anchor">Moz: The Beginner's Guide to SEO</a></span>
--   <span id="8bef">\[ \] <a href="https://smart.ly/course/abd47e21-4b59-4ccf-910d-fb1c18b2e9df" class="markup--anchor markup--li-anchor">Smartly: Marketing Fundamentals</a></span>
--   <span id="f8cd">\[ \] <a href="https://teamtreehouse.com/library/seo-basics" class="markup--anchor markup--li-anchor">Treehouse: SEO Basics</a></span>
--   <span id="f656">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-monetization--ud518" class="markup--anchor markup--li-anchor">App Monetization</a></span>
--   <span id="29cb">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-marketing--ud719" class="markup--anchor markup--li-anchor">App Marketing</a></span>
--   <span id="5781">\[🅤\]ꭏ <a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" class="markup--anchor markup--li-anchor">How to Build a Startup</a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*c767tks1CPvxbbb5.png" class="graf-image" /></figure>- <span id="3c14">\[📖\] <a href="https://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446576220" class="markup--anchor markup--li-anchor">Delivering Happiness</a></span>
+- <span id="accd">\[📖\] <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6" class="markup--anchor markup--li-anchor">Good to Great: Why Some Companies Make the Leap…And Others Don't</a></span>
+- <span id="bcc5">\[📖\] <a href="https://www.amazon.com/Hello-Startup-Programmers-Building-Technologies/dp/1491909900" class="markup--anchor markup--li-anchor">Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams</a></span>
+- <span id="e47e">\[📖\] <a href="https://www.howgoogleworks.net/" class="markup--anchor markup--li-anchor">How Google Works</a></span>
+- <span id="0016">\[📖\] <a href="https://www.goodreads.com/book/show/817589.Learn_to_Earn" class="markup--anchor markup--li-anchor">Learn to Earn: A Beginner's Guide to the Basics of Investing and Business</a></span>
+- <span id="62e6">\[📖\] <a href="https://www.goodreads.com/book/show/6732019-rework" class="markup--anchor markup--li-anchor">Rework</a></span>
+- <span id="b657">\[📖\] <a href="https://www.amazon.com/Airbnb-Story-Ordinary-Disrupted-Controversy/dp/0544952669" class="markup--anchor markup--li-anchor">The Airbnb Story</a></span>
+- <span id="ec24">\[📖\] <a href="https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572" class="markup--anchor markup--li-anchor">The Personal MBA</a></span>
+- <span id="cb38">\[ \] <a href="https://learn.fb.com/skillset/marketing-started" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: get started</a></span>
+- <span id="e348">\[ \] <a href="https://learn.fb.com/skillset/marketing-further" class="markup--anchor markup--li-anchor">Facebook: Digital marketing: go further</a></span>
+- <span id="b2b5">\[ \] <a href="https://analytics.google.com/analytics/academy/course/6" class="markup--anchor markup--li-anchor">Google Analytics for Beginners</a></span>
+- <span id="84ba">\[ \] <a href="https://moz.com/beginners-guide-to-seo" class="markup--anchor markup--li-anchor">Moz: The Beginner's Guide to SEO</a></span>
+- <span id="8bef">\[ \] <a href="https://smart.ly/course/abd47e21-4b59-4ccf-910d-fb1c18b2e9df" class="markup--anchor markup--li-anchor">Smartly: Marketing Fundamentals</a></span>
+- <span id="f8cd">\[ \] <a href="https://teamtreehouse.com/library/seo-basics" class="markup--anchor markup--li-anchor">Treehouse: SEO Basics</a></span>
+- <span id="f656">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-monetization--ud518" class="markup--anchor markup--li-anchor">App Monetization</a></span>
+- <span id="29cb">\[🅤\]ꭏ <a href="https://www.udacity.com/course/app-marketing--ud719" class="markup--anchor markup--li-anchor">App Marketing</a></span>
+- <span id="5781">\[🅤\]ꭏ <a href="https://www.udacity.com/course/how-to-build-a-startup--ep245" class="markup--anchor markup--li-anchor">How to Build a Startup</a></span>
 
 ---
 
@@ -246,28 +246,28 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 
 ### Be able to manipulate data with Pandas
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*JLvULIyCErhYRfRDkcBKMw.gif" class="graf-image" /></figure>-   <span id="c8f5">**\[📰\]** <a href="https://jalammar.github.io/visualizing-pandas-pivoting-and-reshaping/" class="markup--anchor markup--li-anchor"><strong>Visualizing Pandas' Pivoting and Reshaping Functions</strong></a></span>
--   <span id="bfe3">**\[📰\]** <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" class="markup--anchor markup--li-anchor"><strong>A Gentle Visual Intro to Data Analysis in Python Using Pandas</strong></a></span>
--   <span id="35ee">**\[📰\]** <a href="https://pbpython.com/groupby-agg.html" class="markup--anchor markup--li-anchor"><strong>Comprehensive Guide to Grouping and Aggregating with Pandas</strong></a></span>
--   <span id="ef61">**\[📰\]** <a href="https://re-thought.com/pandas-value_counts/" class="markup--anchor markup--li-anchor"><strong>8 Python Pandas Value_counts() tricks that make your work more efficient</strong></a></span>
--   <span id="447f">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-foundations" class="markup--anchor markup--li-anchor"><strong>pandas Foundations</strong></a></span>
--   <span id="79c2">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-joins-for-spreadsheet-users" class="markup--anchor markup--li-anchor"><strong>Pandas Joins for Spreadsheet Users</strong></a></span>
--   <span id="f927">**\[💻\]** <a href="https://www.datacamp.com/courses/manipulating-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Manipulating DataFrames with pandas</strong></a></span>
--   <span id="865e">**\[💻\]** <a href="https://www.datacamp.com/courses/merging-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Merging DataFrames with pandas</strong></a></span>
--   <span id="2e8d">**\[💻\]** <a href="https://www.datacamp.com/courses/data-manipulation-with-pandas" class="markup--anchor markup--li-anchor"><strong>Data Manipulation with pandas</strong></a></span>
--   <span id="dec6">**\[💻\]** <a href="https://www.datacamp.com/courses/optimizing-python-code-with-pandas" class="markup--anchor markup--li-anchor"><strong>Optimizing Python Code with pandas</strong></a></span>
--   <span id="b0e7">**\[💻\]** <a href="https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas" class="markup--anchor markup--li-anchor"><strong>Streamlined Data Ingestion with pandas</strong></a></span>
--   <span id="3ced">**\[💻\]** <a href="https://www.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas" class="markup--anchor markup--li-anchor"><strong>Analyzing Marketing Campaigns with pandas</strong></a></span>
--   <span id="e4c7">**\[ \]** <a href="https://www.edx.org/course/implementing-predictive-analytics-spark-microsoft-dat202-3x-2" class="markup--anchor markup--li-anchor"><strong>edX: Implementing Predictive Analytics with Spark in Azure HDInsight</strong></a></span>
--   <span id="aaf0">**\[📰\]** <a href="https://tomaugspurger.github.io/" class="markup--anchor markup--li-anchor"><strong>Modern Pandas</strong></a></span>
--   <span id="230a">**\[ \]** <a href="https://tomaugspurger.github.io/modern-1-intro.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 1)</strong></a></span>
--   <span id="df40">**\[ \]** <a href="https://tomaugspurger.github.io/method-chaining.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 2)</strong></a></span>
--   <span id="0c27">**\[ \]** <a href="https://tomaugspurger.github.io/modern-3-indexes.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 3)</strong></a></span>
--   <span id="9267">**\[ \]** <a href="https://tomaugspurger.github.io/modern-4-performance.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 4)</strong></a></span>
--   <span id="e6d8">**\[ \]** <a href="https://tomaugspurger.github.io/modern-5-tidy.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 5)</strong></a></span>
--   <span id="3e82">**\[ \]** <a href="https://tomaugspurger.github.io/modern-6-visualization.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 6)</strong></a></span>
--   <span id="7081">**\[ \]** <a href="https://tomaugspurger.github.io/modern-7-timeseries.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 7)</strong></a></span>
--   <span id="fa37">**\[ \]** <a href="https://tomaugspurger.github.io/modern-8-scaling.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 8)</strong></a></span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*JLvULIyCErhYRfRDkcBKMw.gif" class="graf-image" /></figure>- <span id="c8f5">**\[📰\]** <a href="https://jalammar.github.io/visualizing-pandas-pivoting-and-reshaping/" class="markup--anchor markup--li-anchor"><strong>Visualizing Pandas' Pivoting and Reshaping Functions</strong></a></span>
+- <span id="bfe3">**\[📰\]** <a href="https://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/" class="markup--anchor markup--li-anchor"><strong>A Gentle Visual Intro to Data Analysis in Python Using Pandas</strong></a></span>
+- <span id="35ee">**\[📰\]** <a href="https://pbpython.com/groupby-agg.html" class="markup--anchor markup--li-anchor"><strong>Comprehensive Guide to Grouping and Aggregating with Pandas</strong></a></span>
+- <span id="ef61">**\[📰\]** <a href="https://re-thought.com/pandas-value_counts/" class="markup--anchor markup--li-anchor"><strong>8 Python Pandas Value_counts() tricks that make your work more efficient</strong></a></span>
+- <span id="447f">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-foundations" class="markup--anchor markup--li-anchor"><strong>pandas Foundations</strong></a></span>
+- <span id="79c2">**\[💻\]** <a href="https://www.datacamp.com/courses/pandas-joins-for-spreadsheet-users" class="markup--anchor markup--li-anchor"><strong>Pandas Joins for Spreadsheet Users</strong></a></span>
+- <span id="f927">**\[💻\]** <a href="https://www.datacamp.com/courses/manipulating-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Manipulating DataFrames with pandas</strong></a></span>
+- <span id="865e">**\[💻\]** <a href="https://www.datacamp.com/courses/merging-dataframes-with-pandas" class="markup--anchor markup--li-anchor"><strong>Merging DataFrames with pandas</strong></a></span>
+- <span id="2e8d">**\[💻\]** <a href="https://www.datacamp.com/courses/data-manipulation-with-pandas" class="markup--anchor markup--li-anchor"><strong>Data Manipulation with pandas</strong></a></span>
+- <span id="dec6">**\[💻\]** <a href="https://www.datacamp.com/courses/optimizing-python-code-with-pandas" class="markup--anchor markup--li-anchor"><strong>Optimizing Python Code with pandas</strong></a></span>
+- <span id="b0e7">**\[💻\]** <a href="https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas" class="markup--anchor markup--li-anchor"><strong>Streamlined Data Ingestion with pandas</strong></a></span>
+- <span id="3ced">**\[💻\]** <a href="https://www.datacamp.com/courses/analyzing-marketing-campaigns-with-pandas" class="markup--anchor markup--li-anchor"><strong>Analyzing Marketing Campaigns with pandas</strong></a></span>
+- <span id="e4c7">**\[ \]** <a href="https://www.edx.org/course/implementing-predictive-analytics-spark-microsoft-dat202-3x-2" class="markup--anchor markup--li-anchor"><strong>edX: Implementing Predictive Analytics with Spark in Azure HDInsight</strong></a></span>
+- <span id="aaf0">**\[📰\]** <a href="https://tomaugspurger.github.io/" class="markup--anchor markup--li-anchor"><strong>Modern Pandas</strong></a></span>
+- <span id="230a">**\[ \]** <a href="https://tomaugspurger.github.io/modern-1-intro.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 1)</strong></a></span>
+- <span id="df40">**\[ \]** <a href="https://tomaugspurger.github.io/method-chaining.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 2)</strong></a></span>
+- <span id="0c27">**\[ \]** <a href="https://tomaugspurger.github.io/modern-3-indexes.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 3)</strong></a></span>
+- <span id="9267">**\[ \]** <a href="https://tomaugspurger.github.io/modern-4-performance.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 4)</strong></a></span>
+- <span id="e6d8">**\[ \]** <a href="https://tomaugspurger.github.io/modern-5-tidy.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 5)</strong></a></span>
+- <span id="3e82">**\[ \]** <a href="https://tomaugspurger.github.io/modern-6-visualization.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 6)</strong></a></span>
+- <span id="7081">**\[ \]** <a href="https://tomaugspurger.github.io/modern-7-timeseries.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 7)</strong></a></span>
+- <span id="fa37">**\[ \]** <a href="https://tomaugspurger.github.io/modern-8-scaling.html" class="markup--anchor markup--li-anchor"><strong>Modern Pandas (Part 8)</strong></a></span>
 
 ### Be able to manipulate data in spreadsheets
 
@@ -384,8 +384,8 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="3663">**\[💻\]** <a href="https://www.datacamp.com/courses/exploratory-data-analysis-in-python" class="markup--anchor markup--li-anchor"><strong>Exploratory Data Analysis in Python</strong></a></span>
 -   <span id="ce8a">**\[ \]** <a href="https://www.edx.org/course/data-science-essentials-microsoft-dat203-1x-5" class="markup--anchor markup--li-anchor"><strong>edX: Data Science Essentials</strong></a></span>
 -   <span id="4b71">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/creating-an-analytical-dataset--ud977" class="markup--anchor markup--li-anchor"><strong>Creating an Analytical Dataset</strong></a></span>
--   <span id="7775">**\[📺 \]** <a href="https://www.youtube.com/watch?v=XpOBSaktb6s" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–04 — Preprocessing</strong></a> **1:07:40**</span>
--   <span id="edac">**\[📺 \]** <a href="https://www.youtube.com/watch?v=FDhyS6Xjxa8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–11 — Model Inspection and Feature Selection</strong></a> **1:15:15**</span>
+-   <span id="7775">**\[📺 \]** <a href="https://www.youtube.com/watch?v=XpOBSaktb6s" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-04 — Preprocessing</strong></a> **1:07:40**</span>
+-   <span id="edac">**\[📺 \]** <a href="https://www.youtube.com/watch?v=FDhyS6Xjxa8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-11 — Model Inspection and Feature Selection</strong></a> **1:15:15**</span>
 
 ### Be able to experiment in a notebook
 
@@ -413,7 +413,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="8a29">**\[💻\]** <a href="https://www.datacamp.com/courses/improving-your-data-visualizations-in-python" class="markup--anchor markup--li-anchor"><strong>Improving Your Data Visualizations in Python</strong></a></span>
 -   <span id="3905">**\[💻\]** <a href="https://www.datacamp.com/courses/visualizing-geospatial-data-in-python" class="markup--anchor markup--li-anchor"><strong>Visualizing Geospatial Data in Python</strong></a></span>
 -   <span id="e5de">**\[💻\]** <a href="https://www.datacamp.com/courses/interactive-data-visualization-with-bokeh" class="markup--anchor markup--li-anchor"><strong>Interactive Data Visualization with Bokeh</strong></a></span>
--   <span id="fc9c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=OW3oco7nlV4" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–02 Visualization and matplotlib</strong></a> **1:07:30**</span>
+-   <span id="fc9c">**\[📺 \]** <a href="https://www.youtube.com/watch?v=OW3oco7nlV4" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-02 Visualization and matplotlib</strong></a> **1:07:30**</span>
 
 ### Be able to model problems mathematically
 
@@ -544,7 +544,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="f64e">**\[ \]** <a href="https://www.youtube.com/watch?v=Dn6b9fCIUpM" class="markup--anchor markup--li-anchor"><strong>Maximum Likelihood For the Normal Distribution, step-by-step!</strong></a> **0:19:50**</span>
 -   <span id="33a4">**\[ \]** <a href="https://www.youtube.com/watch?v=ARfXDSkQf1Y" class="markup--anchor markup--li-anchor"><strong>StatQuest: Odds and Log(Odds), Clearly Explained!!!</strong></a> **0:11:30**</span>
 -   <span id="b303">**\[ \]** <a href="https://www.youtube.com/watch?v=8nm0G-1uJzA" class="markup--anchor markup--li-anchor"><strong>StatQuest: Odds Ratios and Log(Odds Ratios), Clearly Explained!!!</strong></a> **0:16:20**</span>
--   <span id="10fb">**\[ \]** <a href="https://www.youtube.com/watch?v=fU2PuYKsr6M" class="markup--anchor markup--li-anchor"><strong>Live 2020–04–20!!! Expected Values</strong></a> **0:33:00**</span>
+-   <span id="10fb">**\[ \]** <a href="https://www.youtube.com/watch?v=fU2PuYKsr6M" class="markup--anchor markup--li-anchor"><strong>Live 2020-04-20!!! Expected Values</strong></a> **0:33:00**</span>
 -   <span id="76aa">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/eigenvectors-and-eigenvalues--ud104" class="markup--anchor markup--li-anchor"><strong>Eigenvectors and Eigenvalues</strong></a></span>
 -   <span id="be9e">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/linear-algebra-refresher-course--ud953" class="markup--anchor markup--li-anchor"><strong>Linear Algebra Refresher</strong></a></span>
 -   <span id="8ced">**\[🅤\]ꭏ** <a href="https://www.udacity.com/course/statistics--st095" class="markup--anchor markup--li-anchor"><strong>Statistics</strong></a></span>
@@ -640,7 +640,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="9057">**\[📰\]** <a href="https://maxhalford.github.io/blog/online-learning-evaluation/" class="markup--anchor markup--li-anchor"><strong>The correct way to evaluate online machine learning models</strong></a></span>
 -   <span id="5504">**\[📰\]** <a href="https://gibsonbiddle.medium.com/4-proxy-metrics-a82dd30ca810" class="markup--anchor markup--li-anchor"><strong>Proxy Metrics</strong></a></span>
 -   <span id="d95c">**\[📺 \]** <a href="https://youtu.be/YGuVuZpTop0" class="markup--anchor markup--li-anchor"><strong>Accuracy as a Failure</strong></a></span>
--   <span id="0fbd">**\[📺 \]** <a href="https://www.youtube.com/watch?v=trg3YkCsjqE" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–09 — Model Evaluation and Metrics</strong></a> **1:18:23**</span>
+-   <span id="0fbd">**\[📺 \]** <a href="https://www.youtube.com/watch?v=trg3YkCsjqE" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-09 — Model Evaluation and Metrics</strong></a> **1:18:23**</span>
 -   <span id="1a54">**\[📺 \]** <a href="https://www.youtube.com/watch?v=fSytzGwwBVw" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Cross Validation</strong></a> **0:06:04**</span>
 -   <span id="9218">**\[📺 \]** <a href="https://www.youtube.com/watch?v=Kdsp6soqA7o" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: The Confusion Matrix</strong></a> **0:07:12**</span>
 -   <span id="e12b">**\[📺 \]** <a href="https://www.youtube.com/watch?v=vP06aMoz4v8" class="markup--anchor markup--li-anchor"><strong>Machine Learning Fundamentals: Sensitivity and Specificity</strong></a> **0:11:46**</span>
@@ -738,13 +738,13 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="c9ce">**\[ \]** <a href="https://www.youtube.com/watch?v=tMrbN67U9d4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.3 The Dot Product</strong></a> **0:25:17**</span>
 -   <span id="caa0">**\[ \]** <a href="https://www.youtube.com/watch?v=TEWy9vZcxW4" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.4 Batches, Layers, and Objects</strong></a> **0:33:46**</span>
 -   <span id="be9d">**\[ \]** <a href="https://www.youtube.com/watch?v=gmjzbpSVY1A" class="markup--anchor markup--li-anchor"><strong>Neural Networks from Scratch — P.5 Hidden Layer Activation Functions</strong></a> **0:40:05**</span>
--   <span id="9109">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7_YzyMYC2zM" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–03 Supervised learning and model validation</strong></a> **1:12:00**</span>
--   <span id="746d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=-OOsfj5Revo" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–05 — Linear Models for Regression</strong></a> **1:06:54**</span>
--   <span id="acfe">**\[📺 \]** <a href="https://www.youtube.com/watch?v=_dqBhUrq09U" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–06 — Linear Models for Classification</strong></a> **1:07:50**</span>
--   <span id="00d0">**\[📺 \]** <a href="https://www.youtube.com/watch?v=nomd5ylZ2dw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–07 — Decision Trees and Random Forests</strong></a> **1:07:58**</span>
--   <span id="2bc4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yrTW5YTmFjw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–08 — Gradient Boosting</strong></a> **1:02:12**</span>
--   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–18 — Neural Networks</strong></a> **1:19:36**</span>
--   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
+-   <span id="9109">**\[📺 \]** <a href="https://www.youtube.com/watch?v=7_YzyMYC2zM" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-03 Supervised learning and model validation</strong></a> **1:12:00**</span>
+-   <span id="746d">**\[📺 \]** <a href="https://www.youtube.com/watch?v=-OOsfj5Revo" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-05 — Linear Models for Regression</strong></a> **1:06:54**</span>
+-   <span id="acfe">**\[📺 \]** <a href="https://www.youtube.com/watch?v=_dqBhUrq09U" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-06 — Linear Models for Classification</strong></a> **1:07:50**</span>
+-   <span id="00d0">**\[📺 \]** <a href="https://www.youtube.com/watch?v=nomd5ylZ2dw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-07 — Decision Trees and Random Forests</strong></a> **1:07:58**</span>
+-   <span id="2bc4">**\[📺 \]** <a href="https://www.youtube.com/watch?v=yrTW5YTmFjw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-08 — Gradient Boosting</strong></a> **1:02:12**</span>
+-   <span id="acf3">**\[📺 \]** <a href="https://www.youtube.com/watch?v=CRRPLlgYWZw" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-18 — Neural Networks</strong></a> **1:19:36**</span>
+-   <span id="1e1f">**\[📺 \]** <a href="https://www.youtube.com/watch?v=bmBezdqHTAg" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-12 — AutoML (plus some feature selection)</strong></a> **1:25:38**</span>
 
 ---
 
@@ -758,7 +758,7 @@ In an artificial neural network, cells, or nodes, are connected, with each cell 
 -   <span id="9398">**\[📰\]** <a href="https://amaarora.github.io/2020/07/18/label-smoothing.html" class="markup--anchor markup--li-anchor"><strong>Label Smoothing Explained using Microsoft Excel</strong></a></span>
 -   <span id="ec7d">**\[📰\]** <a href="https://www.rossidata.com/DropoutTensorFlowUncertaintyErrorMNIST" class="markup--anchor markup--li-anchor"><strong>Uncertainty Quantification Part 4: Leveraging Dropout in Neural Networks (CNNs)</strong></a></span>
 -   <span id="31cd">**\[📰\]** <a href="https://wandb.ai/authors/class-imbalance/reports/Simple-Ways-to-Tackle-Class-Imbalance--VmlldzoxODA3NTk" class="markup--anchor markup--li-anchor"><strong>Simple Ways to Tackle Class Imbalance</strong></a></span>
--   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020–10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
+-   <span id="c8e2">**\[📺 \]** <a href="https://www.youtube.com/watch?v=w3OPq0V8fr8" class="markup--anchor markup--li-anchor"><strong>AppliedMachine Learning 2020-10 — Calibration, Imbalanced data</strong></a> `1:16:14`</span>
 -   <span id="a96b">**\[📺 \]** <a href="https://youtu.be/GwGTwPcG0YM" class="markup--anchor markup--li-anchor"><strong>Lecture 10: Troubleshooting Deep Neural Networks</strong></a></span>
 
 ---
@@ -951,4 +951,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/everything-you-need-to-become-a-machine-learner-3dd8f14814a1" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+August 31, 2021.

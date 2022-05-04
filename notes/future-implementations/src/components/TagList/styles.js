@@ -8,7 +8,6 @@ import { ColorLens, Web } from 'styled-icons/material';
 import { WeatherSunny } from 'styled-icons/typicons';
 import { mediaQueries } from 'utils/mediaQueries';
 export { Tags as TagsIcon } from 'styled-icons/fa-solid';
-
 export const TagGrid = styled.aside`
     display: grid;
     grid-gap: 1em;
@@ -34,7 +33,6 @@ export const TagGrid = styled.aside`
         }
     }
 `;
-
 export const Tag = styled.button`
     font-size: 1em;
     outline: none;
@@ -55,7 +53,6 @@ export const Tag = styled.button`
         opacity: ${(props) => (props.open ? 1 : 0)};
     }
 `;
-
 export const Toggle = styled(ToggleOff).attrs((props) => ({
     as: props.open && ToggleOn,
     size: `1em`
@@ -66,7 +63,6 @@ export const Toggle = styled(ToggleOff).attrs((props) => ({
         display: none;
     }
 `;
-
 export const tagIcons = {
     All: Grid,
     'Web Dev': Web,

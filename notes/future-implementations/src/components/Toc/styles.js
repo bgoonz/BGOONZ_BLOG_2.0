@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { BookContent } from 'styled-icons/boxicons-regular';
 import { Close as Cross } from 'styled-icons/material';
 import { mediaQueries } from 'utils/mediaQueries';
-
 export const TocDiv = styled.aside`
     background: var(--color-background);
     padding: 0.7em 1.2em;
@@ -37,14 +36,12 @@ export const TocDiv = styled.aside`
         top: 7em;
     }
 `;
-
 export const Title = styled.h2`
     margin: 0;
     padding-bottom: 0.5em;
     display: flex;
     color: var(--color-gray);
 `;
-
 export const TocLink = styled.a`
     cursor: pointer;
     color: ${(p) => (p.active ? `var(--color-c)` : `var(--color-gray)`)};
@@ -52,12 +49,10 @@ export const TocLink = styled.a`
     display: block;
     margin-left: ${(props) => props.depth + `em`};
 `;
-
 export const TocIcon = styled(BookContent)`
     width: 1em;
     margin-right: 0.2em;
 `;
-
 const openerCss = css`
     position: fixed;
     bottom: 2em;
@@ -69,7 +64,6 @@ const openerCss = css`
     border-radius: 0 50% 50% 0;
     transform: translate(${(props) => (props.open ? `-100%` : 0)});
 `;
-
 export const TocToggle = styled(Cross).attrs((props) => ({
     as: props.opener && BookContent,
     size: props.size || `1.6em`
