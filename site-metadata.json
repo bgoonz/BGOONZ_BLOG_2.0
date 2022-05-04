@@ -31,6 +31,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Ds-Algo",
+                        "url": "/docs/ds-algo/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Contact!",
                         "url": "/docs/faq/contact",
                         "style": "primary",
