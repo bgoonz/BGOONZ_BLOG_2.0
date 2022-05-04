@@ -16,8 +16,8 @@ Demystified
 
 **Class Components**
 
--   <span id="3d48">You can write React components using ES2015 Classes:  
-    **Function Component**</span>
+- <span id="3d48">You can write React components using ES2015 Classes:  
+  **Function Component**</span>
 
 <a href="https://gist.github.com/bgoonz/8223ee9f84bbc0fe7ad504efb3dc860d" class="markup--anchor markup--p-anchor">https://gist.github.com/bgoonz/8223ee9f84bbc0fe7ad504efb3dc860d</a>
 
@@ -35,8 +35,8 @@ Demystified
 
     export default Message;
 
--   <span id="59c4">We can access props within a `class component` by using `this.props`</span>
--   <span id="5e06">Keep in mind Class Components are used just like function components.</span>
+- <span id="59c4">We can access props within a `class component` by using `this.props`</span>
+- <span id="5e06">Keep in mind Class Components are used just like function components.</span>
 
 <!-- -->
 
@@ -67,32 +67,32 @@ Demystified
       }
     }
 
--   <span id="7853">If we define a constructor method in our Class Component, we have to define the `super` method with `props` passed through it.</span>
--   <span id="058c">Side Note: Before React used ES2015 Classes, it used `React.createclass` function, if you ever need to use this antiquated method make sure you install a module called `create-react-class`</span>
+- <span id="7853">If we define a constructor method in our Class Component, we have to define the `super` method with `props` passed through it.</span>
+- <span id="058c">Side Note: Before React used ES2015 Classes, it used `React.createclass` function, if you ever need to use this antiquated method make sure you install a module called `create-react-class`</span>
 
 **Stateful components**
 
--   <span id="1ecc">One of the major reasons why you would choose to use a **Class Component** over a Function Component is to add and manage local or internal state to your component.</span>
--   <span id="c4cd">Second of the major reasons is to be able to use a Class Component's lifecycle methods.</span>
+- <span id="1ecc">One of the major reasons why you would choose to use a **Class Component** over a Function Component is to add and manage local or internal state to your component.</span>
+- <span id="c4cd">Second of the major reasons is to be able to use a Class Component's lifecycle methods.</span>
 
 **What is state?**
 
--   <span id="2b2a">Props are data that are provided by the consumer or caller of the component.</span>
--   <span id="d150">Not meant to be changed by a component.</span>
--   <span id="2316">State is data that is `internal` to the component.</span>
--   <span id="cea0">Intended to be updated or mutated.</span>
+- <span id="2b2a">Props are data that are provided by the consumer or caller of the component.</span>
+- <span id="d150">Not meant to be changed by a component.</span>
+- <span id="2316">State is data that is `internal` to the component.</span>
+- <span id="cea0">Intended to be updated or mutated.</span>
 
 **When to use state**
 
--   <span id="0936">_Only Use State when it is absolutely necessary_</span>
--   <span id="2052">If the data never changes, or if it's needed through an entire application use props instead.</span>
--   <span id="04ff">State is more often used when creating components that retrieve data from APIs or render forms.</span>
--   <span id="5a9f">**The general rule of thumb**: If a component doesn't need to use state or Lifecyle methods, it should be prioritized as a `function component`.</span>
--   <span id="412f">Functional:Stateless || Class:Stateful</span>
+- <span id="0936">_Only Use State when it is absolutely necessary_</span>
+- <span id="2052">If the data never changes, or if it's needed through an entire application use props instead.</span>
+- <span id="04ff">State is more often used when creating components that retrieve data from APIs or render forms.</span>
+- <span id="5a9f">**The general rule of thumb**: If a component doesn't need to use state or Lifecyle methods, it should be prioritized as a `function component`.</span>
+- <span id="412f">Functional:Stateless || Class:Stateful</span>
 
 **Initializing state**
 
--   <span id="5783">Use a class constructor method to initialize `this.state` object.</span>
+- <span id="5783">Use a class constructor method to initialize `this.state` object.</span>
 
 #### Application Entry Point
 
@@ -148,12 +148,12 @@ Demystified
 
 **Updating State**
 
--   <span id="e560">Let's say we want to update our state with a new quote.</span>
--   <span id="ead5">We can set up event listeners in React similarly to how we did them before.</span>
--   <span id="b7c7">&lt;button type="button" onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
--   <span id="270b">`onClick` is the event listener.</span>
--   <span id="10c4">`{this.changeQuote}` is the event handler method.</span>
--   <span id="99e8">Our Class Component File should now look like this with the new additions:</span>
+- <span id="e560">Let's say we want to update our state with a new quote.</span>
+- <span id="ead5">We can set up event listeners in React similarly to how we did them before.</span>
+- <span id="b7c7">&lt;button type="button" onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;</span>
+- <span id="270b">`onClick` is the event listener.</span>
+- <span id="10c4">`{this.changeQuote}` is the event handler method.</span>
+- <span id="99e8">Our Class Component File should now look like this with the new additions:</span>
 
 <!-- -->
 
@@ -208,15 +208,15 @@ Demystified
 
 **Don't modify state directly**
 
--   <span id="11e2">It is important to `never` modify your state directly!</span>
--   <span id="d085">ALWAYS use `this.setState` method to update state.</span>
--   <span id="38f9">This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync.</span>
+- <span id="11e2">It is important to `never` modify your state directly!</span>
+- <span id="d085">ALWAYS use `this.setState` method to update state.</span>
+- <span id="38f9">This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync.</span>
 
 **Properly updating state from the previous state**
 
--   <span id="839d">In our current example, the way we have `changeQuote` set up leaves us with occasionally producing the same index twice in a row.</span>
--   <span id="6f45">One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)</span>
--   <span id="f71d">A safe method is to pass an anonymous method to `this.setState` (instead of an object literal)</span>
+- <span id="839d">In our current example, the way we have `changeQuote` set up leaves us with occasionally producing the same index twice in a row.</span>
+- <span id="6f45">One solution is to design a loop but keep in mind that state updates are handled asynchronously in React (your current value is not guaranteed to be the latest)</span>
+- <span id="f71d">A safe method is to pass an anonymous method to `this.setState` (instead of an object literal)</span>
 
 **Previous**
 
@@ -248,11 +248,11 @@ Demystified
 
 **Providing default values for props**
 
--   <span id="05dd">In our current example, we pass in a static array of predefined quotes in our constructor.</span>
--   <span id="29a1">The way it is set up right now leaves our list of quotes unchanged after initialization.</span>
--   <span id="733b">We can make quotes more dynamic by replacing our static array with a `props` argument passed into `super`.</span>
--   <span id="8d26">constructor(props) { super(props); }</span>
--   <span id="e22e">We can now move our quotes array to our application entry point and pass it in as a prop.</span>
+- <span id="05dd">In our current example, we pass in a static array of predefined quotes in our constructor.</span>
+- <span id="29a1">The way it is set up right now leaves our list of quotes unchanged after initialization.</span>
+- <span id="733b">We can make quotes more dynamic by replacing our static array with a `props` argument passed into `super`.</span>
+- <span id="8d26">constructor(props) { super(props); }</span>
+- <span id="e22e">We can now move our quotes array to our application entry point and pass it in as a prop.</span>
 
 #### Application Entry Point
 
@@ -278,7 +278,7 @@ Demystified
       document.getElementById('root');
     )
 
--   <span id="c3f2">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
+- <span id="c3f2">One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!</span>
 
 <!-- -->
 
@@ -294,13 +294,13 @@ Demystified
       ],
     };
 
--   <span id="8909">A good safety net in case the consumer/caller doesn't provide a value for the quotes array.</span>
--   <span id="a254">We can even remove it from our index.js now and an error will not be thrown.</span>
+- <span id="8909">A good safety net in case the consumer/caller doesn't provide a value for the quotes array.</span>
+- <span id="a254">We can even remove it from our index.js now and an error will not be thrown.</span>
 
 ### Handling Events
 
--   <span id="46a0">To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for.  
-    **Example**</span>
+- <span id="46a0">To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for.  
+  **Example**</span>
 
 <!-- -->
 
@@ -320,13 +320,13 @@ Demystified
       }
     }
 
--   <span id="c8ad">Note that when referring the handler method in onClick we're not invoking showAlert simply just passing a reference.</span>
+- <span id="c8ad">Note that when referring the handler method in onClick we're not invoking showAlert simply just passing a reference.</span>
 
 **Preventing default behavior**
 
--   <span id="0497">HTML Elements in the browser often have a lot of default behavior.</span>
--   <span id="c546">I.E. Clicking on an `<a>` element navigates so a resource denoted by `<href>` property.</span>
--   <span id="7f13">Here is an example of where using `e.preventDefault()` could come in handy.</span>
+- <span id="0497">HTML Elements in the browser often have a lot of default behavior.</span>
+- <span id="c546">I.E. Clicking on an `<a>` element navigates so a resource denoted by `<href>` property.</span>
+- <span id="7f13">Here is an example of where using `e.preventDefault()` could come in handy.</span>
 
 <!-- -->
 
@@ -346,9 +346,9 @@ Demystified
         )}
     }
 
--   <span id="6df2">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
--   <span id="e214">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
--   <span id="bafc">`e` : Parameter that references a `Synthetic Event` object type.</span>
+- <span id="6df2">The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.</span>
+- <span id="e214">We can stick an `e.preventDefault()` into the actual method to get around this problem.</span>
+- <span id="bafc">`e` : Parameter that references a `Synthetic Event` object type.</span>
 
 **Using** `this` **in event handlers**
 
@@ -373,8 +373,8 @@ Demystified
 
     export default AlertButton;
 
--   <span id="159a">When we console log `this` we see the AlertButton object.</span>
--   <span id="9158">If we were to write the showAlert method with a regular class method like:</span>
+- <span id="159a">When we console log `this` we see the AlertButton object.</span>
+- <span id="9158">If we were to write the showAlert method with a regular class method like:</span>
 
 <!-- -->
 
@@ -382,7 +382,7 @@ Demystified
       console.log(this);
     }
 
--   <span id="13af">We would get `undefined` =&gt; remember that fat arrow binds to the current context!</span>
+- <span id="13af">We would get `undefined` =&gt; remember that fat arrow binds to the current context!</span>
 
 **Reviewing class methods and the** `this` **keyword**
 
@@ -404,16 +404,16 @@ Demystified
     const displayAgain = Ming.displayName;
     displayAgain(); // => Result in a Type Error: Cannot read property 'name' of undefined.
 
--   <span id="f44c">The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Javascript` was printed out.</span>
--   <span id="5ab3">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it's context)</span>
--   <span id="f151">Remember we can use the `bind` method to rebind context!</span>
--   <span id="a90b">We can refactor to get the second call working like this:</span>
+- <span id="f44c">The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Javascript` was printed out.</span>
+- <span id="5ab3">The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error (it has lost it's context)</span>
+- <span id="f151">Remember we can use the `bind` method to rebind context!</span>
+- <span id="a90b">We can refactor to get the second call working like this:</span>
 
 <!-- -->
 
     const displayAgain = Ming.displayName.bind(Ming); displayAgain(); => //Now Javascript will be printed out.
 
--   <span id="9b5c">To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.</span>
+- <span id="9b5c">To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.</span>
 
 <!-- -->
 
@@ -440,17 +440,17 @@ Demystified
 
     export default AlertButton;
 
--   <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
--   <span id="eb35">It's good to pick one approach and use it consistently, either:</span>
+- <span id="e397">`Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.</span>
+- <span id="eb35">It's good to pick one approach and use it consistently, either:</span>
 
 1.  <span id="e7c9">Class Properties & Arrow Functions</span>
 2.  <span id="f447">Bind Method & This Keyword</span>
 
 **The** `SyntheticEvent` **object**
 
--   <span id="d26e">**Synthetic Event Objects**: Cross Browser wrappers around the browser's native event.</span>
--   <span id="7319">Includes the use of stopPropagation() and preventDefault();</span>
--   <span id="1d15">Attributes of the Synthetic Event Object:</span>
+- <span id="d26e">**Synthetic Event Objects**: Cross Browser wrappers around the browser's native event.</span>
+- <span id="7319">Includes the use of stopPropagation() and preventDefault();</span>
+- <span id="1d15">Attributes of the Synthetic Event Object:</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*OVA083oP8HKuRPyA-Ebpig.png" alt="Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type" class="graf-image" /><figcaption>Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault()boolean isDefaultPrevented()void stopPropagation()boolean isPropagationStopped()void persist()DOMEventTarget targetnumber timeStampstring type</figcaption></figure>-   <span id="42b5">`nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event (rarely used!)</span>
 
@@ -460,21 +460,21 @@ _Exercise being done in a separate file_
 
 **Random Notes**
 
--   <span id="f551">`onChange` : detects when a value of an input element changes.</span>
--   <span id="a180">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
--   <span id="6814">Don't forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
--   <span id="830f">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
+- <span id="f551">`onChange` : detects when a value of an input element changes.</span>
+- <span id="a180">Assigning `onChange` to our input fields makes our component's state update in real time during user input.</span>
+- <span id="6814">Don't forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!</span>
+- <span id="830f">`submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.</span>
 
 #### **Controlled Components**
 
--   <span id="2228">We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`</span>
--   <span id="44e7">Adding an `onChange` event handler to every single input can massively bloat your code.</span>
--   <span id="056c">Try assigning it to it's own method to apply everywhere.</span>
--   <span id="9137">`textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.</span>
+- <span id="2228">We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`</span>
+- <span id="44e7">Adding an `onChange` event handler to every single input can massively bloat your code.</span>
+- <span id="056c">Try assigning it to it's own method to apply everywhere.</span>
+- <span id="9137">`textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.</span>
 
 <!-- -->
 
--   <span id="39ee">We can use validation libraries like `validate` to make our validation functions more complex.</span>
+- <span id="39ee">We can use validation libraries like `validate` to make our validation functions more complex.</span>
 
 <!-- -->
 
@@ -498,9 +498,9 @@ _Exercise being done in a separate file_
 
 **Note About Client-side vs server-side validation**
 
--   <span id="588f">Server-side validation is not optional.</span>
--   <span id="e35c">Tech-savvy users can manipulate client-side validations.</span>
--   <span id="03da">Sometimes the 'best approach' is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
+- <span id="588f">Server-side validation is not optional.</span>
+- <span id="e35c">Tech-savvy users can manipulate client-side validations.</span>
+- <span id="03da">Sometimes the 'best approach' is to skip implementing validations on the client-side and rely completely on the server-side validation.</span>
 
 ### Component Lifecycle
 
@@ -512,10 +512,10 @@ _Exercise being done in a separate file_
 
 **The lifecycle of a React component**
 
--   <span id="b8ed">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
--   <span id="f58a">`componentDidMount` : Method called after your component has been added to the component tree.</span>
--   <span id="adb3">`componentDidUpdate` : Method called after your component has been updated.</span>
--   <span id="d198">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
+- <span id="b8ed">Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.</span>
+- <span id="f58a">`componentDidMount` : Method called after your component has been added to the component tree.</span>
+- <span id="adb3">`componentDidUpdate` : Method called after your component has been updated.</span>
+- <span id="d198">`componentWillUnmount` : Method called just before your component is removed from the component tree.</span>
 
 #### `Mounting`
 
@@ -526,7 +526,7 @@ _Exercise being done in a separate file_
 
 #### `Updating`
 
--   <span id="5493">When component receives new `props`</span>
+- <span id="5493">When component receives new `props`</span>
 
 1.  <span id="3eb5">`render` method is called</span>
 2.  <span id="3c59">React updates the `DOM`</span>
@@ -540,16 +540,16 @@ _Exercise being done in a separate file_
 
 #### `Unmounting`
 
--   <span id="3885">The moment before a class component is removed from the component tree:</span>
--   <span id="b1e8">`componentDidMount` will be called.</span>
+- <span id="3885">The moment before a class component is removed from the component tree:</span>
+- <span id="b1e8">`componentDidMount` will be called.</span>
 
 **Avoiding the legacy lifecycle methods**
 
--   <span id="732f">Occasionally you will encounter some deprecated lifecycle methods:</span>
--   <span id="fb04">UNSAFE_componentWillMount</span>
--   <span id="5f6e">UNSAFE_componentWillReceiveProps</span>
--   <span id="b7aa">UNSAFE_componentWillUpdate</span>
--   <span id="6277">Just know they will be removed soon from React's API…☮️</span>
+- <span id="732f">Occasionally you will encounter some deprecated lifecycle methods:</span>
+- <span id="fb04">UNSAFE_componentWillMount</span>
+- <span id="5f6e">UNSAFE_componentWillReceiveProps</span>
+- <span id="b7aa">UNSAFE_componentWillUpdate</span>
+- <span id="6277">Just know they will be removed soon from React's API…☮️</span>
 
 ---
 

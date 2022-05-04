@@ -108,8 +108,8 @@ If you provide a service that other sites consume such as widgets, embedded cont
 
 While the `SameSite` attribute is widely supported, it has unfortunately not been widely adopted by developers. The open default of sending cookies everywhere means all use cases work but leaves the user vulnerable to CSRF and unintentional information leakage. To encourage developers to state their intent and provide users with a safer experience, the IETF proposal, [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism-00) lays out two key changes:
 
--   Cookies without a `SameSite` attribute will be treated as `SameSite=Lax`.
--   Cookies with `SameSite=None` must also specify `Secure`, meaning they require a secure context.
+- Cookies without a `SameSite` attribute will be treated as `SameSite=Lax`.
+- Cookies with `SameSite=None` must also specify `Secure`, meaning they require a secure context.
 
 Chrome implements this default behavior as of version 84. [Firefox](https://groups.google.com/d/msg/mozilla.dev.platform/nx2uP0CzA9k/BNVPWDHsAQAJ) has them available to test as of Firefox 69 and will make them default behaviors in the future. To test these behaviors in Firefox, open [`about:config`](http://kb.mozillazine.org/About:config) and set `network.cookie.sameSite.laxByDefault`. [Edge](https://groups.google.com/a/chromium.org/d/msg/blink-dev/AknSSyQTGYs/8lMmI5DwEAAJ) also plans to change its default behaviors.
 
