@@ -1,4 +1,4 @@
-# Validation results for https://bgoonz-blog.netlify.app/
+# Validation results for <https://bgoonz-blog.netlify.app/>
 
 > Error: A charset attribute on a meta element found after the first 1024 bytes.
 
