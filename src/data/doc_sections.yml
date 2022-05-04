@@ -17,6 +17,7 @@ sections:
     - interview
     - leetcode
     - overflow
+    - netlify-cms
     - projects
     - python
     - quick-ref
