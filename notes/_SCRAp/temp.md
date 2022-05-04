@@ -1,8 +1,10 @@
-
 # Common Python Data Structures
+
 ---
+
 ## Dictionaries, Maps, and Hash Tables
-In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary**  **key**.
+
+In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary** **key**.
 
 Dictionaries are also often called **maps**, **hashmaps**, **lookup tables**, or **associative arrays**. They allow for the efficient lookup, insertion, and deletion of any object associated with a given key.
 
@@ -429,13 +431,13 @@ If you’re willing to go beyond the Python standard library, then third-party p
 
 If you want to restrict yourself to the array data structures included with Python, then here are a few guidelines:
 
--   If you need to store arbitrary objects, potentially with mixed data types, then use a `list` or a `tuple`, depending on whether or not you want an immutable data structure.
+- If you need to store arbitrary objects, potentially with mixed data types, then use a `list` or a `tuple`, depending on whether or not you want an immutable data structure.
 
--   If you have numeric (integer or floating-point) data and tight packing and performance is important, then try out `array.array`.
+- If you have numeric (integer or floating-point) data and tight packing and performance is important, then try out `array.array`.
 
--   If you have textual data represented as Unicode characters, then use Python’s built-in `str`. If you need a mutable string-like data structure, then use a `list` of characters.
+- If you have textual data represented as Unicode characters, then use Python’s built-in `str`. If you need a mutable string-like data structure, then use a `list` of characters.
 
--   If you want to store a contiguous block of bytes, then use the immutable `bytes` type or a `bytearray` if you need a mutable data structure.
+- If you want to store a contiguous block of bytes, then use the immutable `bytes` type or a `bytearray` if you need a mutable data structure.
 
 In most cases, I like to start out with a simple `list`. I’ll only specialize later on if performance or storage space becomes an issue. Most of the time, using a general-purpose array data structure like `list` gives you the fastest development speed and the most programming convenience.
 

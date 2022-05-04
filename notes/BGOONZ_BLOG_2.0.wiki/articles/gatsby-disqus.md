@@ -20,11 +20,9 @@ $ npm install -S gatsby-plugin-disqus
 
 If you have unanswered questions or would like help with enhancing or debugging the plugin, feel free create an [issue](https://github.com/tterb/gatsby-plugin-disqus/issues/new) or submit a [pull request](https://github.com/tterb/gatsby-plugin-disqus/pulls).
 
-
----
 ---
 
-
+---
 
 # Configure
 
@@ -33,14 +31,14 @@ Add the plugin to your `gatsby-config.js` file with your [Disqus shortname](http
 ```js
 // gatsby-config.js
 module.exports = {
-    plugins: [
-        {
-            resolve: `gatsby-plugin-disqus`,
-            options: {
-                shortname: `your-disqus-shortname`
-            }
-        }
-    ]
+  plugins: [
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `your-disqus-shortname`,
+      },
+    },
+  ],
 };
 ```
 
@@ -55,38 +53,34 @@ All of the following parameters are optional, though providing a `url`, `identif
 | title      | Tells the Disqus service the title of the current page                              |
 | language   | Tells the Disqus service to override the default site language for the current page |
 
-
-
----
 ---
 
-
+---
 
 # Usage
 
 You can use the plugin as shown in this brief example:
 
 ```jsx
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
 const PostTemplate = () => {
-    let disqusConfig = {
-        url: `${config.siteUrl + location.pathname}`,
-        identifier: post.id,
-        title: post.title
-    };
-    return (
-        <>
-            <h1>{post.title}</h1>
-            <CommentCount config={disqusConfig} placeholder={'...'} />
-            /* Post Contents */
-            <Disqus config={disqusConfig} />
-        </>
-    );
+  let disqusConfig = {
+    url: `${config.siteUrl + location.pathname}`,
+    identifier: post.id,
+    title: post.title,
+  };
+  return (
+    <>
+      <h1>{post.title}</h1>
+      <CommentCount config={disqusConfig} placeholder={"..."} />
+      /* Post Contents */
+      <Disqus config={disqusConfig} />
+    </>
+  );
 };
 
 export default PostTemplate;
 ```
 
 While providing a `url`, `identifier`, and `title` are optional, these attributes are recommended as it will prevent threads from being lost in the case that the domain changes or the post is renamed.
-

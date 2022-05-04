@@ -4,7 +4,7 @@
 
 How to install Python 2.7 on Ubuntu 20.04 LTS
 
-Last Updated: January 19, 2021 [Ubuntu](https://www.how2shout.com/linux/category/ubuntu/ 'View all posts in Ubuntu')
+Last Updated: January 19, 2021 [Ubuntu](https://www.how2shout.com/linux/category/ubuntu/ "View all posts in Ubuntu")
 
 As we know Ubuntu 20.04 LTS which is the Long term version of Canonical has dropped the previous version of Python that is 2, to give space to the latest version of Python 3. Therefore, if there is some application that required Python 2.7 then you would not find it on Ubuntu 20.04 by default. However, there is a way to install it using the command line terminal.
 
@@ -43,7 +43,7 @@ As we know Ubuntu 20.04 comes out of the box with Python 3 thus, let's check wha
 
 ls /usr/bin/python\*
 
-[![Check all PHP versions](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Check-all-PHP-versions.jpg 'Check all PHP versions')](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Check-all-PHP-versions.jpg)
+[![Check all PHP versions](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Check-all-PHP-versions.jpg "Check all PHP versions")](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Check-all-PHP-versions.jpg)
 
 ### 5\. Change the Default Python priority
 
@@ -68,7 +68,7 @@ sudo update-alternatives --config python
 
 You will get something like the below screenshot with the choice to set one at the priority. To select, just enter the number given corresponding to each version path under the **Selection** column and hit the **Enter** key.
 
-[![Switch Default Python 2.7 Version Ubuntu 20.04](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Switch-Default-Python-Version.jpg 'Switch Default Python Version')](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Switch-Default-Python-Version.jpg)
+[![Switch Default Python 2.7 Version Ubuntu 20.04](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Switch-Default-Python-Version.jpg "Switch Default Python Version")](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Switch-Default-Python-Version.jpg)
 
 ### 6\. Install Pip 2 on Ubuntu 20.04
 
@@ -85,7 +85,7 @@ sudo python2 get-pip.py
 
 pip2 --version
 
-[![Install python2 and PIP 2 on Ubuntu 20.04](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Install-python2-and-PIP-2-on-Ubuntu-20.04.jpg 'Install python2 and PIP 2 on Ubuntu 20.04')](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Install-python2-and-PIP-2-on-Ubuntu-20.04.jpg)
+[![Install python2 and PIP 2 on Ubuntu 20.04](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Install-python2-and-PIP-2-on-Ubuntu-20.04.jpg "Install python2 and PIP 2 on Ubuntu 20.04")](https://www.how2shout.com/linux/wp-content/uploads/2021/01/Install-python2-and-PIP-2-on-Ubuntu-20.04.jpg)
 
 ### 7\. Uninstall (optional)
 
