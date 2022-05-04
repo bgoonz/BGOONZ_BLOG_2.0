@@ -98,34 +98,13 @@ export default class Footer extends React.Component {
                                             paddingTop: '4px'
                                         }}
                                     >
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            search engine
-                                        </a>
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            by
-                                            <span style={{ color: 'transparent' }}>freefind</span>
-                                        </a>
+                                   
+                                       
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
-                            Save to PDF
-                        </a>
+                       
                     </center>
                     <a aria-current="page" className="site-logo" href="/">
                         <img
