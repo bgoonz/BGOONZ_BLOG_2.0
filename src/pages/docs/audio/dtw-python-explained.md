@@ -10,9 +10,10 @@ seo:
 template: docs
 ---
 
+
 # Dynamic Time Warping Algorithm Explained (Python)
 
-In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is *Dynamic Time Warping (DTW)*. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.
+In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is _Dynamic Time Warping (DTW)_. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.
 
 As part of Walmart Real Estate team, I am working on understanding the energy consumption pattern of different assets like refrigeration units, dehumidifiers, lighting, etc. installed in the retail stores.This will help in improving quality of data collected from IoT sensors, detect and prevent faults in the systems and improve energy consumption forecasting and planning. This analysis involves time series of energy consumption during different times of a day i.e. different days of a week, weeks of a month and months of a year. Time series forecasting often gives bad predictions when there is sudden shift in phase of the energy consumption due to unknown factors. For example if the defrost schedule, items refresh routine for a refrigeration unit, or weather changes suddenly and are not captured to explain the phase shifts of energy consumption, it is important to detect these change points.
 
@@ -58,7 +59,7 @@ Series 2 (Q): 1,7,3,4,1,10,5,4,7,4
 
 ![](https://miro.medium.com/max/630/1*x8-vv9W3cfmdd0mW_1MLTg.png)
 
-*Step 1 :* Empty Cost Matrix Creation
+_Step 1 :_ Empty Cost Matrix Creation
 
 Create an empty cost matrix M with x and y labels as amplitudes of the two series to be compared.
 
@@ -124,7 +125,7 @@ The full table will look like this:
 
 ![](https://miro.medium.com/max/630/1*7pphf0WWYElhtohnQPFPNA.png)
 
-*Step 3:* Warping Path Identification
+_Step 3:_ Warping Path Identification
 
 Identify the warping path starting from top right corner of the matrix and traversing to bottom left. The traversal path is identified based on the neighbour with minimum value.
 
@@ -154,7 +155,7 @@ Let this warping path series be called as d.
 
 d = [15,15,14,13,11,9,8,8,4,4,3,0]
 
-*Step 4:* Final Distance Calculation
+_Step 4:_ Final Distance Calculation
 
 Time normalised distance , D
 
@@ -208,7 +209,7 @@ _Y=y[1], y[2], ..., y[j], ..., y[m]_
 
 The sequences 𝑋 and 𝑌 can be arranged to form an 𝑛-by-𝑚 grid, where each point (𝑖, j) is the alignment between 𝑥[𝑖] and 𝑦[𝑗].
 
-A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the *distance* between them. 𝑊 is a sequence of grid points (𝑖, 𝑗). We will see an example of the warping path later.
+A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the _distance_ between them. 𝑊 is a sequence of grid points (𝑖, 𝑗). We will see an example of the warping path later.
 
 ## Warping Path and DTW distance
 
@@ -228,19 +229,19 @@ where 𝑑 is the Euclidean distance. Then, the overall path cost can be calcula
 
 The warping path is found using a dynamic programming approach to align two sequences. Going through all possible paths is "combinatorically explosive" [1]. Therefore, for efficiency purposes, it's important to limit the number of possible warping paths, and hence the following constraints are outlined:
 
--   Boundary Condition: This constraint ensures that the warping path begins with the start points of both signals and terminates with their endpoints.
+- Boundary Condition: This constraint ensures that the warping path begins with the start points of both signals and terminates with their endpoints.
 
 ![](https://miro.medium.com/max/60/1*SHsmQu2TqpaDyIArn2snzg.png?q=20)
 
 ![](https://miro.medium.com/max/452/1*SHsmQu2TqpaDyIArn2snzg.png)
 
--   Monotonicity condition: This constraint preserves the time-order of points (not going back in time).
+- Monotonicity condition: This constraint preserves the time-order of points (not going back in time).
 
 ![](https://miro.medium.com/max/60/1*RNg2VENGaWoyvGrvyeg61A.png?q=20)
 
 ![](https://miro.medium.com/max/311/1*RNg2VENGaWoyvGrvyeg61A.png)
 
--   Continuity (step size) condition: This constraint limits the path transitions to adjacent points in time (not jumping in time).
+- Continuity (step size) condition: This constraint limits the path transitions to adjacent points in time (not jumping in time).
 
 ![](https://miro.medium.com/max/60/1*lU99pFyomdPeaHuR26bDyA.png?q=20)
 
@@ -248,19 +249,19 @@ The warping path is found using a dynamic programming approach to align two sequ
 
 In addition to the above three constraints, there are other less frequent conditions for an allowable warping path:
 
--   Warping window condition: Allowable points can be restricted to fall within a given warping window of width 𝜔 (a positive integer).
+- Warping window condition: Allowable points can be restricted to fall within a given warping window of width 𝜔 (a positive integer).
 
 ![](https://miro.medium.com/max/60/1*9apgwkXeU3gOHLudFsIosA.png?q=20)
 
 ![](https://miro.medium.com/max/168/1*9apgwkXeU3gOHLudFsIosA.png)
 
--   Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
+- Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
 
 An acceptable warping path has combinations of chess king moves that are:
 
--   Horizontal moves: (𝑖, 𝑗) → (𝑖, 𝑗+1)
--   Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
--   Diagonal moves: (𝑖, 𝑗) → (𝑖+1, 𝑗+1)
+- Horizontal moves: (𝑖, 𝑗) → (𝑖, 𝑗+1)
+- Vertical moves: (𝑖, 𝑗) → (𝑖+1, 𝑗)
+- Diagonal moves: (𝑖, 𝑗) → (𝑖+1, 𝑗+1)
 
 # Implementation
 
@@ -276,18 +277,18 @@ savefig_options = dict(format="png", dpi=300, bbox_inches="tight")# Computation 
 from scipy.spatial.distance import euclidean\
 from fastdtw import fastdtw
 
-Let's define a method to compute the accumulated cost matrix *D* for the warp path. The cost matrix uses the Euclidean distance to calculate the distance between every two points. The methods to compute the Euclidean distance matrix and accumulated cost matrix are defined below:
+Let's define a method to compute the accumulated cost matrix _D_ for the warp path. The cost matrix uses the Euclidean distance to calculate the distance between every two points. The methods to compute the Euclidean distance matrix and accumulated cost matrix are defined below:
 
 # Example 1
 
-In this example, we have two sequences *x* and *y* with different lengths.
+In this example, we have two sequences _x_ and _y_ with different lengths.
 
 # Create two sequences\
 
 x = [3, 1, 2, 2, 1]\
 y = [2, 0, 0, 3, 3, 1, 0]
 
-We cannot calculate the Euclidean distance between *x* and *y* since they don't have equal lengths.
+We cannot calculate the Euclidean distance between _x_ and _y_ since they don't have equal lengths.
 
 ![](https://miro.medium.com/max/60/1*ADzLGLGGq13onO72EO_ZpQ.png?q=20)
 
@@ -301,7 +302,7 @@ Many Python packages calculate the DTW by just providing the sequences and the t
 
 dtw_distance, warp_path = fastdtw(x, y, dist=euclidean)
 
-Note that we are using [SciPy](https://pypi.org/project/scipy/)'s distance function *Euclidean* that we imported earlier. For a better understanding of the warp path, let's first compute the accumulated cost matrix and then visualize the path on a grid. The following code will plot a heatmap of the accumulated cost matrix.
+Note that we are using [SciPy](https://pypi.org/project/scipy/)'s distance function _Euclidean_ that we imported earlier. For a better understanding of the warp path, let's first compute the accumulated cost matrix and then visualize the path on a grid. The following code will plot a heatmap of the accumulated cost matrix.
 
 cost_matrix = compute_accumulated_cost_matrix(x, y)
 
@@ -331,7 +332,7 @@ print(np.flipud(cost_matrix)) # Flipping the cost matrix for easier comparison w
 
 The cost matrix is printed above has similar values to the heatmap.
 
-Now let's plot the two sequences and connect the mapping points. The code to plot the DTW distance between *x* and *y* is given below.
+Now let's plot the two sequences and connect the mapping points. The code to plot the DTW distance between _x_ and _y_ is given below.
 
 Example 1: Python code to plot (and save) the DTW distance between x and y
 
@@ -377,7 +378,7 @@ You can find the Jupyter notebook for this blog post [here](https://github.com/e
 
 [2] Salvador, S. and P. Chan, [FastDTW: Toward accurate dynamic time warping in linear time and space](https://cs.fit.edu/~pkc/papers/tdm04.pdf)(2007), Intelligent Data Analysis
 
-[3] Diego Furtado Silva, *et al.*, [On the effect of endpoints on dynamic time warping](https://core.ac.uk/display/147806669) (2016), SIGKDD Workshop on Mining and Learning from Time Series
+[3] Diego Furtado Silva, _et al._, [On the effect of endpoints on dynamic time warping](https://core.ac.uk/display/147806669) (2016), SIGKDD Workshop on Mining and Learning from Time Series
 
 # Useful Links
 
@@ -443,14 +444,14 @@ DTW overcomes the issue by developing a one-to-many match so that the troughs an
 
 In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules(comes from wiki):
 
--   Every index from the first sequence must be matched with one or more indices from the other sequence and vice versa
--   The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
--   The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
--   The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
+- Every index from the first sequence must be matched with one or more indices from the other sequence and vice versa
+- The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
+- The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
+- The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa, i.e. if `j > i` are indices from the first sequence, then there must not be two indices `l > k` in the other sequence, such that index `i` is matched with index `l` and index `j` is matched with index `k` , and vice versa
 
 The optimal match is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
 
-To summarise is that *head and tail must be positionally matched, no cross-match and no left out.*
+To summarise is that _head and tail must be positionally matched, no cross-match and no left out._
 
 # Implementation
 
@@ -468,7 +469,7 @@ DTW[i, j] := cost + minimum(DTW[i-1, j ],\
  DTW[i , j-1],\
  DTW[i-1, j-1])
 
-Which is saying that the cost of between two arrays with length `i and j` equals *the distance between the tails + the minimum of cost in arrays with length *`*i-1, j*`_ , _`*i, j-1*`_ , and _`*i-1, j-1*`_ ._
+Which is saying that the cost of between two arrays with length `i and j` equals _the distance between the tails + the minimum of cost in arrays with length _`*i-1, j*`_ , _`*i, j-1*`_ , and _`*i-1, j-1*`_ ._
 
 Put it in python would be:
 

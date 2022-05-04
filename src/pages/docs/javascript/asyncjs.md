@@ -1,18 +1,17 @@
 ---
-title: AsynchAsynchronous JavaScript
+title: Asynchronous-JS
 weight: 0
-excerpt: AsynchAsynchronous JavaScript
+excerpt: Let's start with the async keyword. It can be placed before a function
 seo:
-    title: ''
-    description: ''
+    title: 'Asynchronous-JS'
+    description: 'The word "async" before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically.'
     robots: []
     extra: []
 template: docs
 ---
 
-## Asynchronous JavaScript
-
 # Async functions:
+## Asynchronous JavaScript
 
 Let's start with the `async` keyword. It can be placed before a function, like this:
 
@@ -83,7 +82,12 @@ Can't use `await` in regular functions
 
 If we try to use `await` in a non-async function, there would be a syntax error:
 
+---
+
+
 ```js
+
+
 function f() {
     let promise = Promise.resolve(1);
     let result = await promise; // Syntax error
@@ -126,17 +130,16 @@ showAvatar();
 
 Pretty clean and easy to read, right? Much better than before.
 
-````js
+```js
 await` won't work in the top-level code
 
 People who are just starting to use `await` tend to forget the fact that we can't use `await` in top-level code. For example, this will not work:
-
 
 ```js
 // syntax error in top-level code
 let response = await fetch('/article/promise-chaining/user.json');
 let user = await response.json();
-````
+```
 
 But we can wrap it into an anonymous async function, like this:
 
@@ -150,13 +153,12 @@ But we can wrap it into an anonymous async function, like this:
 
 P.S. New feature: starting from V8 engine version 8.9+, top-level await works in [modules](modules).
 
-````js
+```js
 await` accepts "thenables"
 
 Like `promise.then`, `await` allows us to use thenable objects (those with a callable `then` method). The idea is that a third-party object may not be a promise, but promise-compatible: if it supports `.then`, that's enough to use it with `await`.
 
 Here's a demo `Thenable` class; the `await` below accepts its instances:
-
 
 ```js
 class Thenable {
@@ -177,7 +179,7 @@ async function f() {
 }
 
 f();
-````
+```
 
 If `await` gets a non-promise object with `.then`, it calls that method providing the built-in functions `resolve` and `reject` as arguments (just as it does for a regular `Promise` executor). Then `await` waits until one of them is called (in the example above it happens in the line `(*)`) and then proceeds with the result.
 
@@ -303,8 +305,7 @@ Together they provide a great framework to write asynchronous code that is easy 
 
 With `async/await` we rarely need to write `promise.then/catch`, but we still shouldn't forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also `Promise.all` is nice when we are waiting for many tasks simultaneously.
 
-Cleaning up your asynchronous code with `await`
------------------------------------------------
+## Cleaning up your asynchronous code with `await`
 
 REPLs have traditionally had a difficult time allowing you to interact with asynchronous code since they encourage a coding style where you evaluate expressions and use those results in the next field. But if you are using promises or callbacks, this breaks down because these results exist only in the callback, not the next line:
 
@@ -314,25 +315,25 @@ Now we can treat this code as synchronous, despite the fact that the code is sti
 
 Let's look how. It helps to have a more complex example, where we need to do a few asynchronous operations in sequence. You can see how `await`, promises and callbacks achieve the same results, but the `await` style works better in a REPL:
 
--   await
--   promises
--   callbacks
+- await
+- promises
+- callbacks
 
 Here, we use `await` on lines 4 and 8, and the results from each request remain in scope.
 
 Remember, `await` expects a `promise` so you can either write your own or use one of the many libraries that natively supports promises, and npm is full of packages that add promise support to existing libraries. Here are a few of our favorites:
 
--   [fs-promise](https://npm.runkit.com/fs-promise) - promise based filesystem api
--   [request-promise](https://npm.runkit.com/request-promise) - a wrapper around "request" for http stuff
--   [glob-promise](https://npm.runkit.com/glob-promise) - glob style filesystem queries
--   [bluebird](https://npm.runkit.com/bluebird) - general promise library with lots of utilities
+- [fs-promise](https://npm.runkit.com/fs-promise) - promise based filesystem api
+- [request-promise](https://npm.runkit.com/request-promise) - a wrapper around "request" for http stuff
+- [glob-promise](https://npm.runkit.com/glob-promise) - glob style filesystem queries
+- [bluebird](https://npm.runkit.com/bluebird) - general promise library with lots of utilities
 
 ### Further Reading
 
--   [ES7 Async/Await presented at Brookyln.js](http://rossboucher.com/await)
--   [Babel.js](https://babeljs.io/)
--   [ECMAScript's Proposal for async/await](https://github.com/lukehoban/ecmascript-asyncawait/)
--   [ES Meeting Notes discussing on async/await](https://esdiscuss.org/notes/2014-01-30#async-await)
--   [Does async/await Solve a Real Problem?](https://esdiscuss.org/topic/does-async-await-solve-a-real-problem)
--   [The Long Road to async/await in JavaScript](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
--   [async/await: The Hero JavaScript Deserved](https://www.twilio.com/blog/2015/10/asyncawait-the-hero-javascript-deserved.html)
+- [ES7 Async/Await presented at Brookyln.js](http://rossboucher.com/await)
+- [Babel.js](https://babeljs.io/)
+- [ECMAScript's Proposal for async/await](https://github.com/lukehoban/ecmascript-asyncawait/)
+- [ES Meeting Notes discussing on async/await](https://esdiscuss.org/notes/2014-01-30#async-await)
+- [Does async/await Solve a Real Problem?](https://esdiscuss.org/topic/does-async-await-solve-a-real-problem)
+- [The Long Road to async/await in JavaScript](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
+- [async/await: The Hero JavaScript Deserved](https://www.twilio.com/blog/2015/10/asyncawait-the-hero-javascript-deserved.html)

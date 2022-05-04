@@ -26,8 +26,8 @@ seo:
 template: docs
 ---
 
-# _**Resume**_
 
+# _**Resume**_
 
 <div align="center">
 
@@ -36,7 +36,6 @@ template: docs
 ## _551-254-5505 | [bryan.guner@gmail.com](mailto:bryan.guner@gmail.com)_
 
 </div>
-
 
 ## ➤Skills
 
@@ -49,7 +48,6 @@ template: docs
 | Hosting:                | Heroku, Netlify, Vercel, Wordpress, Cloudfare, AWS, Firebase, Digital Ocean                                                |
 | Operating Systems:      | Linux, Windows (WSL), IOS                                                                                                  |
 
-
 ## ➤Projects
 
 **Gatsby** **GraphQL-Blog** **[Live Site |](https://bgoonz-blog.netlify.app/)[GitHub](https://github.com/bgoonz/BGOONZ_BLOG_2.0)**
@@ -61,7 +59,6 @@ _**A**_[_**web development blog**_](https://bgoonz-blog.netlify.app/)_**featurin
 - Implemented 4 Gatsby page models and GraphQL schema to fetch markdown content and feed it into react components.
 - Designed and integrated a set of convenient web-hosted [developer tools](https://bgoonz-blog.netlify.app/docs/tools/) and GUI interfaces.
 - Added interactive content including comments, [video conferencing](https://bgoonz-blog.netlify.app/docs/interact/video-chat/), [data-structure visualization](https://bgoonz-blog.netlify.app/docs/interact/other-sites/), [games](https://bgoonz-blog.netlify.app/docs/interact/) and full text search.
-
 
 **Autonomously Triggered Guitar Effects Platform\*\*** [Live Site](https://bgoonz.github.io/Revamped-Automatic-Guitar-Effect-Triggering/)| [GitHub](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering/tree/master/Triggered-Guitar-Effects-Platform)\*\*
 
@@ -123,7 +120,7 @@ _**An**_[_**app**_](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadma
 
 Six-month immersive software development course with a focus on [full stack web development](https://gist.github.com/bgoonz/17494dab0042a6f70eda7929c08c878f). Over 2000 hours of work invested including class time, homework, and projects.
 
-**B.S.** [**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/) **, TCNJ, Ewing NJ** **2014 – 2019**
+**B.S.** [**Electrical Engineering**](https://electrical-computerengineering.tcnj.edu/) **, TCNJ, Ewing NJ** **2014 - 2019**
 
 [2 **Curriculum link**](https://github.com/bgoonz/random-static-html-page-deploy/blob/master/ElectricalEngineeringCurriculum.pdf)
 
@@ -134,4 +131,3 @@ Six-month immersive software development course with a focus on [full stack web 
 _**References &amp; further work experience available upon request.**_
 
 </div>
-    

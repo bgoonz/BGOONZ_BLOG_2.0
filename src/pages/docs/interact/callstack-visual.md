@@ -10,9 +10,10 @@ seo:
 template: docs
 ---
 
+
 <script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
 
-<iframe height="1000px" width="1400px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light"   frameborder="yes" loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
   Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -27,12 +28,12 @@ template: docs
 
 ## Callstack Visualizer
 
-<iframe src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
 </iframe>
 
 ###### About the Call Stack
 
-**TL;DR** *The **Call Stack** tracks function calls. It is a LIFO stack of frames. Each frame represents a function call.*
+**TL;DR** _The **Call Stack** tracks function calls. It is a LIFO stack of frames. Each frame represents a function call._
 
 ---
 
@@ -42,7 +43,7 @@ When a JavaScript program first starts executing, the **Call Stack** is empty. W
 
 ###### About the Event Loop
 
-**TL;DR** *The **Event Loop** processes Tasks and Microtasks. It places them into the Call Stack for execution one at a time. It also controls when rerendering occurs.*
+**TL;DR** _The **Event Loop** processes Tasks and Microtasks. It places them into the Call Stack for execution one at a time. It also controls when rerendering occurs._
 
 ---
 

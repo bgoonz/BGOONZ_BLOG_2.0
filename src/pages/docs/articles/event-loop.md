@@ -1,14 +1,17 @@
 ---
-title: The Node.js Event Loop
+title: Event Loop
 sections: []
 seo:
-    title: ''
-    description: 'The Event Loop is one of the most important aspects to understand about Node.js'
+    title: 'Event Loop'
+    description: 'The Event Loop is one of the most important aspects to understand about Nodejs'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
+
+
+
 
 ## Introduction
 
@@ -57,18 +60,18 @@ Let's pick an example:
   style="height: 400px; width: 100%; border: 0;">
 </iframe>
 
-<!--```js
-const bar = () => console.log('bar')
+```js
+const bar = () => console.log('bar');
 
-const baz = () => console.log('baz')
+const baz = () => console.log('baz');
 
 const foo = () => {
-  console.log('foo')
-  bar()
-  baz()
-}
+    console.log('foo');
+    bar();
+    baz();
+};
 
-foo()
+foo();
 ```
 
 This code prints
@@ -110,7 +113,8 @@ Take this example:
   style="height: 400px; width: 100%; border: 0;">
 </iframe>
 
-<!--```js
+```js
+
 const bar = () => console.log('bar')
 
 const baz = () => console.log('baz')
@@ -171,21 +175,19 @@ Example:
   style="height: 400px; width: 100%; border: 0;">
 </iframe>
 
-<!--```js
-const bar = () => console.log('bar')
+```js
+const bar = () => console.log('bar');
 
-const baz = () => console.log('baz')
+const baz = () => console.log('baz');
 
 const foo = () => {
-  console.log('foo')
-  setTimeout(bar, 0)
-  new Promise((resolve, reject) =>
-    resolve('should be right after baz, before bar')
-  ).then(resolve => console.log(resolve))
-  baz()
-}
+    console.log('foo');
+    setTimeout(bar, 0);
+    new Promise((resolve, reject) => resolve('should be right after baz, before bar')).then((resolve) => console.log(resolve));
+    baz();
+};
 
-foo()
+foo();
 ```
 
 This prints
@@ -198,3 +200,4 @@ bar
 ```-->
 
 That's a big difference between Promises (and Async/await, which is built on promises) and plain old asynchronous functions through `setTimeout()` or other platform APIs.
+```

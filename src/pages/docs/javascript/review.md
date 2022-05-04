@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Core Concept Review
 
 # Core Concepts
@@ -337,7 +338,12 @@ unction divide(a, b) {
 
 Can be written as this:
 
+---
+
+
 ```js
+
+
 function divide(a, b = 1) {
     return a / b;
 }

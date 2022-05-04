@@ -3,23 +3,24 @@ title: Audio
 weight: 0
 excerpt: Audio Projects and tools / web audio daw
 seo:
-  title: Audio Projects
-  description: A collection of web audio projects
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: Audio Projects
+    description: A collection of web audio projects
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
+
 <br>
 <br>
 <br>
 
-<iframe width="100%" height="500" frameborder="0"
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
 src="https://bgoonz.github.io/extracting-features-from-audio/"></iframe>
 <hr>
 <br>
-<iframe width="100%" height="500" frameborder="0"
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
 src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
 <br>
 <br>

@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 ![](images/0001-76d89ef6.jpg)
 
 # Title
@@ -404,7 +405,7 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-![](images/md-cheat-sheet-42411273.PNG)
+![](images/md-cheat-sheet-42411273.png)
 
 ```no-highlight
 Here's our logo (hover to see the title text):
@@ -442,23 +443,23 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>\`\`\`</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-<pre lang="no-highlight"><code>```javascript
+<pre lang="no-highlight"><code>```js
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-```javascript
+```js
 var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
@@ -675,7 +676,7 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Video Embeds
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
 
 ## Code Blocks
 
@@ -686,7 +687,7 @@ Blocks of code are either fenced by `lines with three back-ticks`, or are indent
       color:red;
     }
 
-```javascript
+```js
 window.$docsify = {
     coverpage: true,
 

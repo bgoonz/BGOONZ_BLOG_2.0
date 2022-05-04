@@ -12,6 +12,7 @@ versions of the examples.'
 template: docs
 ---
 
+
 # Rules
 
 This document contains a description of all rules, what they are checking for,
@@ -69,8 +70,7 @@ Aliases: first-heading-h1, first-header-h1
 
 Parameters: level (number; default 1)
 
-> Note: *MD002 has been deprecated and is disabled by default.*
-> [MD041/first-line-heading](#md041) offers an improved implementation.
+> Note: _MD002 has been deprecated and is disabled by default._ > [MD041/first-line-heading](#md041) offers an improved implementation.
 
 This rule is intended to ensure document headings start at the top level and
 is triggered when the first heading in the document isn't an h1 heading:
@@ -112,10 +112,9 @@ atx) are used in the same document:
 ```markdown
 # ATX style H1
 
-## Closed ATX style H2 ##
+## Closed ATX style H2
 
-Setext style H1
-===============
+# Setext style H1
 ```
 
 Be consistent with the style of heading used in a document:
@@ -130,11 +129,9 @@ The setext_with_atx and setext_with_atx_closed doc styles allow atx-style
 headings of level 3 or more in documents with setext style headings:
 
 ```markdown
-Setext style H1
-===============
+# Setext style H1
 
-Setext style H2
----------------
+## Setext style H2
 
 ### ATX style H3
 ```
@@ -162,18 +159,20 @@ This rule is triggered when the symbols used in the document for unordered
 list items do not match the configured unordered list style:
 
 ```markdown
-* Item 1
-+ Item 2
-- Item 3
+-   Item 1
+
+*   Item 2
+
+-   Item 3
 ```
 
 To fix this issue, use the configured style for list items throughout the
 document:
 
 ```markdown
-* Item 1
-* Item 2
-* Item 3
+-   Item 1
+-   Item 2
+-   Item 3
 ```
 
 The configured list style can be a specific symbol to use (asterisk, plus, dash),
@@ -185,12 +184,12 @@ indent uses asterisk, the middle indent uses plus, and the inner-most indent use
 dash:
 
 ```markdown
-* Item 1
-  + Item 2
-    - Item 3
-  + Item 4
-* Item 4
-  + Item 5
+-   Item 1
+    -   Item 2
+        -   Item 3
+    -   Item 4
+-   Item 4
+    -   Item 5
 ```
 
 Rationale: Consistent formatting makes it easier to understand a document.
@@ -209,31 +208,27 @@ This rule is triggered when list items are parsed as being at the same level,
 but don't have the same indentation:
 
 ```markdown
-* Item 1
-  * Nested Item 1
-  * Nested Item 2
-   * A misaligned item
+-   Item 1
+    -   Nested Item 1
+    -   Nested Item 2
+    -   A misaligned item
 ```
 
 Usually, this rule will be triggered because of a typo. Correct the indentation
 for the list to fix it:
 
 ```markdown
-* Item 1
-  * Nested Item 1
-  * Nested Item 2
-  * Nested Item 3
+-   Item 1
+    -   Nested Item 1
+    -   Nested Item 2
+    -   Nested Item 3
 ```
 
 Sequentially-ordered list markers are usually left-aligned such that all items
 have the same starting column:
 
 ```markdown
-...
-8. Item
-9. Item
-10. Item
-11. Item
+... 8. Item 9. Item 10. Item 11. Item
 ...
 ```
 
@@ -241,11 +236,7 @@ This rule also supports right-alignment of list markers such that all items have
 the same ending column:
 
 ```markdown
-...
- 8. Item
- 9. Item
-10. Item
-11. Item
+... 8. Item 9. Item 10. Item 11. Item
 ...
 ```
 
@@ -267,8 +258,8 @@ line:
 ```markdown
 Some text
 
-  * List item
-  * List item
+-   List item
+-   List item
 ```
 
 To fix, ensure that top-level list items are not indented:
@@ -276,8 +267,8 @@ To fix, ensure that top-level list items are not indented:
 ```markdown
 Some test
 
-* List item
-* List item
+-   List item
+-   List item
 ```
 
 Note: This rule is triggered for the following scenario because the unordered
@@ -287,8 +278,10 @@ instead.
 
 ```markdown
 1. List item
-  - List item
-  - List item
+
+-   List item
+-   List item
+
 1. List item
 ```
 
@@ -316,15 +309,15 @@ number of spaces (default: 2).
 Example:
 
 ```markdown
-* List item
-   * Nested list item indented by 3 spaces
+-   List item
+    -   Nested list item indented by 3 spaces
 ```
 
 Corrected Example:
 
 ```markdown
-* List item
-  * Nested list item indented by 2 spaces
+-   List item
+    -   Nested list item indented by 2 spaces
 ```
 
 Note: This rule applies to a sublist only if its parent lists are all also
@@ -388,9 +381,9 @@ but some parsers require it. Set the `list_item_empty_lines` parameter to `true`
 to allow this (even when `strict` is `true`):
 
 ```markdown
-- list item text
-  [2 spaces]
-  list item text
+-   list item text
+    [2 spaces]
+    list item text
 ```
 
 Rationale: Except when being used to create a line break, trailing whitespace
@@ -419,7 +412,7 @@ Example:
 ```markdown
 Some text
 
-	* hard tab character used to indent the list item
+    * hard tab character used to indent the list item
 ```
 
 <!-- markdownlint-restore -->
@@ -493,7 +486,6 @@ document:
 ```markdown
 Some text here
 
-
 Some more text here
 ```
 
@@ -524,7 +516,7 @@ Aliases: line-length
 
 <!-- markdownlint-disable line-length -->
 
-Parameters: line_length, heading_line_length, code_block_line_length, code_blocks, tables, headings, headers, strict, stern (number; default 80 for *_length, boolean; default true (except strict/stern which default false))
+Parameters: line_length, heading_line_length, code_block_line_length, code_blocks, tables, headings, headers, strict, stern (number; default 80 for \*\_length, boolean; default true (except strict/stern which default false))
 
 <!-- markdownlint-restore -->
 
@@ -576,7 +568,7 @@ Aliases: commands-show-output
 Fixable: Most violations can be fixed by tooling
 
 This rule is triggered when there are code blocks showing shell commands to be
-typed, and *all* of the shell commands are preceded by dollar signs ($):
+typed, and _all_ of the shell commands are preceded by dollar signs ($):
 
 <!-- markdownlint-disable commands-show-output -->
 
@@ -608,7 +600,7 @@ $ cat bar
 baz
 ```
 
-Because some commands do not produce output, it is not a violation if *some*
+Because some commands do not produce output, it is not a violation if _some_
 commands do not have output:
 
 ```markdown
@@ -666,9 +658,9 @@ This rule is triggered when more than one space is used to separate the
 heading text from the hash characters in an atx style heading:
 
 ```markdown
-#  Heading 1
+# Heading 1
 
-##  Heading 2
+## Heading 2
 ```
 
 To fix this, separate the heading text from the hash character by a single
@@ -706,9 +698,9 @@ To fix this, separate the heading text from the hash character by a single
 space:
 
 ```markdown
-# Heading 1 #
+# Heading 1
 
-## Heading 2 ##
+## Heading 2
 ```
 
 Note: this rule will fire if either side of the heading is missing spaces.
@@ -729,18 +721,18 @@ This rule is triggered when more than one space is used to separate the
 heading text from the hash characters in a closed atx style heading:
 
 ```markdown
-#  Heading 1  #
+# Heading 1
 
-##  Heading 2  ##
+## Heading 2
 ```
 
 To fix this, separate the heading text from the hash character by a single
 space:
 
 ```markdown
-# Heading 1 #
+# Heading 1
 
-## Heading 2 ##
+## Heading 2
 ```
 
 Note: this rule will fire if either side of the heading contains multiple
@@ -766,9 +758,11 @@ followed by at least one blank line:
 
 ```markdown
 # Heading 1
+
 Some text
 
 Some more text
+
 ## Heading 2
 ```
 
@@ -810,7 +804,7 @@ This rule is triggered when a heading is indented by one or more spaces:
 ```markdown
 Some text
 
-  # Indented heading
+# Indented heading
 ```
 
 To fix this, ensure that all headings start at the beginning of the line:
@@ -970,8 +964,8 @@ This rule is triggered when blockquotes have more than one space after the
 blockquote (`>`) symbol:
 
 ```markdown
->  This is a blockquote with bad indentation
->  there should only be one.
+> This is a blockquote with bad indentation
+> there should only be one.
 ```
 
 To fix, remove any extraneous space:
@@ -1069,25 +1063,21 @@ Example valid list if the style is configured as 'zero':
 
 ```markdown
 0. Do this.
-0. Do that.
-0. Done.
+1. Do that.
+2. Done.
 ```
 
 Example invalid list for all styles:
 
 ```markdown
 1. Do this.
-3. Done.
+2. Done.
 ```
 
 This rule supports 0-prefixing ordered list items for uniform indentation:
 
 ```markdown
-...
-08. Item
-09. Item
-10. Item
-11. Item
+... 08. Item 09. Item 10. Item 11. Item
 ...
 ```
 
@@ -1097,28 +1087,30 @@ improperly-indented code block (or similar) appears between two list items and
 
 <!-- markdownlint-disable code-fence-style -->
 
-~~~markdown
+```markdown
 1. First list
 
 ```text
 Code block
 ```
+```
 
 1. Second list
-~~~
+
+```
 
 The fix is to indent the code block so it becomes part of the preceding list
 item as intended:
 
-~~~markdown
+```markdown
 1. First list
 
-   ```text
-   Code block
-   ```
+    ```text
+    Code block
+    ```
 
 2. Still first list
-~~~
+```
 
 <!-- markdownlint-restore -->
 
@@ -1143,16 +1135,16 @@ The number of spaces checked for depends on the document style in use, but the
 default is 1 space after any list marker:
 
 ```markdown
-* Foo
-* Bar
-* Baz
+-   Foo
+-   Bar
+-   Baz
 
 1. Foo
 1. Bar
 1. Baz
 
 1. Foo
-   * Bar
+    - Bar
 1. Baz
 ```
 
@@ -1169,19 +1161,19 @@ and unordered lists respectively) if there are multiple paragraphs of content
 inside the list:
 
 ```markdown
-* Foo
-* Bar
-* Baz
+-   Foo
+-   Bar
+-   Baz
 ```
 
 vs.
 
 ```markdown
-*   Foo
+-   Foo
 
     Second paragraph
 
-*   Bar
+-   Bar
 ```
 
 or
@@ -1216,34 +1208,41 @@ Fixable: Most violations can be fixed by tooling
 This rule is triggered when fenced code blocks are either not preceded or not
 followed by a blank line:
 
-````markdown
+```markdown
 Some text
 ```
+
 Code block
+
 ```
 
 ```
+
 Another code block
+
 ```
 Some more text
-````
+```
 
 To fix this, ensure that all fenced code blocks have a blank line both before
 and after (except where the block is at the beginning or end of the document):
 
-````markdown
+```markdown
 Some text
-
 ```
+
 Code block
+
 ```
 
 ```
+
 Another code block
+
 ```
 
 Some more text
-````
+```
 
 Set the `list_items` parameter to `false` to disable this rule for list items.
 Disabling this behavior for lists can be useful if it is necessary to create a
@@ -1267,12 +1266,13 @@ followed by a blank line:
 
 ```markdown
 Some text
-* Some
-* List
+
+-   Some
+-   List
 
 1. Some
 2. List
-Some text
+   Some text
 ```
 
 To fix this, ensure that all lists have a blank line both before and after
@@ -1281,8 +1281,8 @@ To fix this, ensure that all lists have a blank line both before and after
 ```markdown
 Some text
 
-* Some
-* List
+-   Some
+-   List
 
 1. Some
 2. List
@@ -1376,7 +1376,7 @@ Tags: hr
 
 Aliases: hr-style
 
-Parameters: style ("consistent", "---", "***", or other string specifying the
+Parameters: style ("consistent", "---", "\*\*\*", or other string specifying the
 horizontal rule; default "consistent")
 
 This rule is triggered when inconsistent styles of horizontal rules are used
@@ -1384,14 +1384,13 @@ in the document:
 
 ```markdown
 ---
+---
 
-- - -
+---
 
-***
+---
 
-* * *
-
-****
+---
 ```
 
 To fix this, ensure any horizontal rules used in the document are consistent,
@@ -1399,7 +1398,6 @@ or match the given style if the rule is so configured:
 
 ```markdown
 ---
-
 ---
 ```
 
@@ -1474,9 +1472,9 @@ have spaces between the markers and the text:
 ```markdown
 Here is some ** bold ** text.
 
-Here is some * italic * text.
+Here is some _ italic _ text.
 
-Here is some more __ bold __ text.
+Here is some more ** bold ** text.
 
 Here is some more _ italic _ text.
 ```
@@ -1486,9 +1484,9 @@ To fix this, remove the spaces around the emphasis markers:
 ```markdown
 Here is some **bold** text.
 
-Here is some *italic* text.
+Here is some _italic_ text.
 
-Here is some more __bold__ text.
+Here is some more **bold** text.
 
 Here is some more _italic_ text.
 ```
@@ -1574,29 +1572,39 @@ Aliases: fenced-code-language
 This rule is triggered when fenced code blocks are used, but a language isn't
 specified:
 
-````markdown
+```markdown
+
 ```
+
 #!/bin/bash
 echo Hello world
+
 ```
-````
+
+```
 
 To fix this, add a language specifier to the code block:
 
-````markdown
+```markdown
 ```bash
 #!/bin/bash
 echo Hello world
 ```
-````
+```
+
+```
+
+```
 
 To display a code block without syntax highlighting, use:
 
-````markdown
+```markdown
 ```text
 Plain text in a code block
 ```
-````
+```
+
+```
 
 Rationale: Specifying a language improves content rendering by using the
 correct syntax highlighting for code. More information:
@@ -1703,27 +1711,29 @@ To require exactly the following structure:
 
 ```markdown
 # Head
+
 ## Item
+
 ### Detail
 ```
 
 Set the `headings` parameter to:
 
 ```json
-[
-    "# Head",
-    "## Item",
-    "### Detail"
-]
+["# Head", "## Item", "### Detail"]
 ```
 
 To allow optional headings as with the following structure:
 
 ```markdown
 # Head
+
 ## Item
+
 ### Detail (optional)
+
 ## Foot
+
 ### Notes (optional)
 ```
 
@@ -1732,13 +1742,7 @@ special value `"+"` meaning "one or more unspecified headings" and set the
 `headings` parameter to:
 
 ```json
-[
-    "# Head",
-    "## Item",
-    "*",
-    "## Foot",
-    "*"
-]
+["# Head", "## Item", "*", "## Foot", "*"]
 ```
 
 When an error is detected, this rule outputs the line number of the first
@@ -1771,9 +1775,7 @@ For example, the language "JavaScript" is usually written with both the 'J' and
 the proper capitalization, specify the desired letter case in the `names` array:
 
 ```json
-[
-    "JavaScript"
-]
+["JavaScript"]
 ```
 
 Set the `code_blocks` parameter to `false` to disable this rule for code blocks.
@@ -1803,7 +1805,7 @@ Or with reference syntax as:
 
 ...
 
-[ref]: image.jpg "Optional title"
+[ref]: image.jpg 'Optional title'
 ```
 
 Guidance for writing alternate text is available from the [W3C](https://www.w3.org/WAI/alt/),
@@ -1898,20 +1900,24 @@ Parameters: style ("consistent", "tilde", "backtick"; default "consistent")
 This rule is triggered when the symbols used in the document for fenced code
 blocks do not match the configured code fence style:
 
-````markdown
+```markdown
+```ruby
+# Fenced code
+```
+```
+
+```
+
 ```ruby
 # Fenced code
 ```
 
-~~~ruby
-# Fenced code
-~~~
-````
+```
 
 To fix this issue, use the configured code fence style throughout the
 document:
 
-````markdown
+```markdown
 ```ruby
 # Fenced code
 ```
@@ -1919,9 +1925,11 @@ document:
 ```ruby
 # Fenced code
 ```
-````
+
+```
 
 The configured list style can be a specific symbol to use (backtick, tilde), or
 can require that usage be consistent within the document.
 
 Rationale: Consistent formatting makes it easier to understand a document.
+```
