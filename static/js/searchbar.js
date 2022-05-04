@@ -9,4 +9,8 @@
         n.parentNode.insertBefore(e, n);
     }
     "complete" === document.readyState ? e() : window.attachEvent ? window.attachEvent("onload", e) : window.addEventListener("load", e, !1);
+<<<<<<< HEAD
 }();
+=======
+}();
+>>>>>>> 439d86c63fbf2be8b6a6bd3fa984767152f11f12
