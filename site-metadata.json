@@ -82,7 +82,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-
                     {
                         "label": "Blog w Comments",
                         "url": "/blogWcomments/",
@@ -199,7 +198,6 @@
                         "no_follow": false
                     }
                 ],
-
                 "new_window": false
             },
             {
