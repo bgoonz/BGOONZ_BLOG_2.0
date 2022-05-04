@@ -1,4 +1,4 @@
-# Validation results for https://bgoonz-blog.netlify.app/
+# Validation results for <https://bgoonz-blog.netlify.app/>
 
 > Error: A charset attribute on a meta element found after the first 1024 bytes.
 
@@ -335,16 +335,16 @@ Purely decorative images belong in this category. Also, iconic images that are r
 
 If the page would become less understandable if the presence of an image was concealed, the image doesn't belong here. In that case, a textual alternative should be supplied or if the markup generator does not have a textual alternative available (because the user refused to provide it), the `alt` attribute should be omitted by the markup generator.
 
-| Image                                                                    | Location                                                           |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| ![](https://img.icons8.com/color/96/000000/gmail.png)                    | [From line 36, column 10051; to line 36, column 10118](#l36c10118) |
-| ![](https://img.icons8.com/color/96/000000/youtube.png)                  | [From line 36, column 10197; to line 36, column 10266](#l36c10266) |
-| ![](https://img.icons8.com/color/96/000000/instagram-new.png)            | [From line 36, column 10321; to line 36, column 10396](#l36c10396) |
-| ![](https://img.icons8.com/color/96/000000/pinterest--v1.png)            | [From line 36, column 10456; to line 36, column 10531](#l36c10531) |
-| ![](https://img.icons8.com/color/96/000000/linkedin.png)                 | [From line 36, column 10597; to line 36, column 10667](#l36c10667) |
-| ![](https://img.icons8.com/color/96/000000/medium-logo.png)              | [From line 36, column 10714; to line 36, column 10787](#l36c10787) |
-| ![](https://bgoonz-blog.netlify.app/_static/app-assets/neural.png)       | [From line 37, column 6025; to line 37, column 6074](#l37c6074)    |
-| ![](https://bgoonz-blog.netlify.app/_static/app-assets/lambda-demo1.gif) | [From line 37, column 7698; to line 37, column 7753](#l37c7753)    |
+| Image                                                                        | Location                                                           |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| ![gmail](https://img.icons8.com/color/96/000000/gmail.png)                   | [From line 36, column 10051; to line 36, column 10118](#l36c10118) |
+| ![youtube](https://img.icons8.com/color/96/000000/youtube.png)               | [From line 36, column 10197; to line 36, column 10266](#l36c10266) |
+| ![instagram](https://img.icons8.com/color/96/000000/instagram-new.png)       | [From line 36, column 10321; to line 36, column 10396](#l36c10396) |
+| ![pinterest](https://img.icons8.com/color/96/000000/pinterest--v1.png)       | [From line 36, column 10456; to line 36, column 10531](#l36c10531) |
+| ![pinterest](https://img.icons8.com/color/96/000000/pinterest.png)           | [From line 36, column 10597; to line 36, column 10667](#l36c10667) |
+| ![logo](https://img.icons8.com/color/96/000000/medium-logo.png)              | [From line 36, column 10714; to line 36, column 10787](#l36c10787) |
+| ![logo](https://bgoonz-blog.netlify.app/_static/app-assets/neural.png)       | [From line 37, column 6025; to line 37, column 6074](#l37c6074)    |
+| ![logo](https://bgoonz-blog.netlify.app/_static/app-assets/lambda-demo1.gif) | [From line 37, column 7698; to line 37, column 7753](#l37c7753)    |
 
 ### Images with textual alternative
 
