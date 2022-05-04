@@ -1,5 +1,4 @@
-What are data structures
-------------------------
+## What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
 
@@ -7,11 +6,11 @@ Data structures are used in almost all areas of computer science and programmin
 
 Data structures enable us to:
 
--   Manage and utilize large datasets
--   Search for particular data from a database
--   Design algorithms that are tailored towards particular programs
--   Handle multiple requests from users at once
--   Simplify and speed up data processing
+- Manage and utilize large datasets
+- Search for particular data from a database
+- Design algorithms that are tailored towards particular programs
+- Handle multiple requests from users at once
+- Simplify and speed up data processing
 
 Data structures are vital for efficient, real-world problem solving. After all, the way we organize data has a lot of impact on performance and useability. In fact, most top companies require a strong understanding of data structures.
 
@@ -21,8 +20,7 @@ JavaScript has primitive and non-primitive data structures. Primitive data stru
 
 Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.
 
-1\. Array
----------
+## 1\. Array
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
@@ -30,22 +28,21 @@ The most basic of all data structures, an array stores data in memory for later 
 
 Advantages
 
--   Simple to create and use.
--   Foundational building block for complex data structures
+- Simple to create and use.
+- Foundational building block for complex data structures
 
 Disadvantages
 
--   Fixed size
--   Expensive to insert/delete or resequence values
--   Inefficient to sort
+- Fixed size
+- Expensive to insert/delete or resequence values
+- Inefficient to sort
 
 ### Applications
 
--   Basic spreadsheets
--   Within complex structures such as hash tables
+- Basic spreadsheets
+- Within complex structures such as hash tables
 
-2\. Queues
-----------
+## 2\. Queues
 
 Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.
 
@@ -57,22 +54,21 @@ For a visual, consider a single-lane tunnel: the first car to enter is the first
 
 Advantages
 
--   Dynamic size
--   Orders data in the order it was received
--   Low runtime
+- Dynamic size
+- Orders data in the order it was received
+- Low runtime
 
 Disadvantages
 
--   Can only retrieve the oldest element
+- Can only retrieve the oldest element
 
 ### Applications
 
--   Effective as a buffer when receiving frequent data
--   Convenient way to store order-sensitive data such as stored voicemails
--   Ensures the oldest data is processed first
+- Effective as a buffer when receiving frequent data
+- Convenient way to store order-sensitive data such as stored voicemails
+- Ensures the oldest data is processed first
 
-3\. Linked List
----------------
+## 3\. Linked List
 
 Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.
 
@@ -82,21 +78,20 @@ This system allows efficient insertion and removal of items without the need for
 
 Advantages
 
--   Efficient insertion and removal of new elements
--   Less complex than restructuring an array
+- Efficient insertion and removal of new elements
+- Less complex than restructuring an array
 
 Disadvantages
 
--   Uses more memory than arrays
--   Inefficient to retrieve a specific element
--   Inefficient to traverse the list backward
+- Uses more memory than arrays
+- Inefficient to retrieve a specific element
+- Inefficient to traverse the list backward
 
 ### Applications
 
--   Best used when data must be added and removed in quick succession from unknown locations
+- Best used when data must be added and removed in quick succession from unknown locations
 
-4\. Trees
----------
+## 4\. Trees
 
 Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.
 
@@ -117,28 +112,27 @@ This type of tree is defined by four strict rules:
 
 Advantages
 
--   Ideal for storing hierarchical relationships
--   Dynamic size
--   Quick at insert and delete operations
--   In a binary search tree, inserted nodes are sequenced immediately.
--   Binary search trees are efficient at searches; length is only O(height)O(height).
+- Ideal for storing hierarchical relationships
+- Dynamic size
+- Quick at insert and delete operations
+- In a binary search tree, inserted nodes are sequenced immediately.
+- Binary search trees are efficient at searches; length is only O(height)O(height).
 
 Disadvantages
 
--   Slow to rearrange nodes
--   Child nodes hold no information about their parent node
--   Binary search trees are not as fast as the more complicated hash table
--   Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
+- Slow to rearrange nodes
+- Child nodes hold no information about their parent node
+- Binary search trees are not as fast as the more complicated hash table
+- Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
 
 ### Applications
 
--   Storing hierarchical data such as a file location.
--   Binary search trees are excellent for tasks needing searching or ordering of data.
+- Storing hierarchical data such as a file location.
+- Binary search trees are excellent for tasks needing searching or ordering of data.
 
-> *Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter.*
+> _Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter._
 
-5\. Graphs
-----------
+## 5\. Graphs
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
@@ -146,29 +140,28 @@ Graphs are a relation-based data structure helpful for storing web-like relation
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
-*V = {a, b, c, d}*
+_V = {a, b, c, d}_
 
-*E = {ab, ac, bc, cd}*
+_E = {ab, ac, bc, cd}_
 
 While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.
 
 Advantages
 
--   Can quickly convey visuals over text
--   Usable to model a diverse number of subjects so long as they contain a relational structure
+- Can quickly convey visuals over text
+- Usable to model a diverse number of subjects so long as they contain a relational structure
 
 Disadvantages
 
--   At a higher level, text can be time-consuming to convert to an image.
--   It can be difficult to see the existing edges or how many edges a given vertex has connected to it
+- At a higher level, text can be time-consuming to convert to an image.
+- It can be difficult to see the existing edges or how many edges a given vertex has connected to it
 
 ### Applications
 
--   Network representations
--   Modeling social networks, such as Facebook.
+- Network representations
+- Modeling social networks, such as Facebook.
 
-6\. Hash Tables (Map)
----------------------
+## 6\. Hash Tables (Map)
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
@@ -176,25 +169,24 @@ Hash tables are a complex data structure capable of storing large amounts of inf
 
 Advantages
 
--   Key can be in any form, while array's indices must be integers
--   Highly efficient search function
--   Constant number of operations for each search
--   Constant cost for insertion or deletion operations
+- Key can be in any form, while array's indices must be integers
+- Highly efficient search function
+- Constant number of operations for each search
+- Constant cost for insertion or deletion operations
 
 Disadvantages
 
--   Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
--   These errors can be common and often require an overhaul of the hash function.
+- Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
+- These errors can be common and often require an overhaul of the hash function.
 
 ### Applications
 
--   Database storage
--   Address lookups by name
+- Database storage
+- Address lookups by name
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 
-Data structure interview questions
-----------------------------------
+## Data structure interview questions
 
 For many developers and programmers, data structures are most important for [cracking Javascript coding interviews](https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained). Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.
 
@@ -240,17 +232,17 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 function removeEven(arr) {
 
-    var odds = []
+var odds = []
 
-    for (let number of arr) {
+for (let number of arr) {
 
-        if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
+if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
 
-            odds.push(number) //If it isn't even append it to the empty list
+odds.push(number) //If it isn't even append it to the empty list
 
-    }
+}
 
-  return odds // Return the new list
+return odds // Return the new list
 
 }
 
@@ -272,7 +264,7 @@ This approach starts with the first element of the array. If that current elemen
 
 function removeEven(arr) {
 
-    return arr.filter((v => (v % 2) != 0))
+return arr.filter((v => (v % 2) != 0))
 
 }
 
@@ -370,53 +362,53 @@ Stack.js
 
 module.exports = class Stack {
 
-    constructor() {
+constructor() {
 
-        this.items = [];
+this.items = [];
 
-        this.top = null;
+this.top = null;
 
-    }
+}
 
-    getTop() {
+getTop() {
 
-        if (this.items.length == 0)
+if (this.items.length == 0)
 
-            return null;
+return null;
 
-        return this.top;
+return this.top;
 
-    }
+}
 
-    isEmpty() {
+isEmpty() {
 
-        return this.items.length == 0;
+return this.items.length == 0;
 
-    }
+}
 
-    size() {
+size() {
 
-        return this.items.length;
+return this.items.length;
 
-    }
+}
 
-    push(element) {
+push(element) {
 
-        this.items.push(element);
+this.items.push(element);
 
-        this.top = element;
+this.top = element;
 
-    }
+}
 
-    pop() {
+pop() {
 
-        if (this.items.length != 0) {
+if (this.items.length != 0) {
 
-            if (this.items.length == 1) {
+if (this.items.length == 1) {
 
-                this.top = null;
+this.top = null;
 
-                return this.items.pop();
+return this.items.pop();
 
 Run
 
@@ -515,52 +507,52 @@ Queue.js
 
 module.exports = class Queue {
 
-    constructor() {
+constructor() {
 
-        this.items = [];
+this.items = [];
 
-        this.front = null;
+this.front = null;
 
-        this.back = null;
+this.back = null;
 
-    }
+}
 
-    isEmpty() {
+isEmpty() {
 
-        return this.items.length == 0;
+return this.items.length == 0;
 
-    }
+}
 
-    getFront() {
+getFront() {
 
-        if (this.items.length != 0) {
+if (this.items.length != 0) {
 
-            return this.items[0];
+return this.items[0];
 
-        } else
+} else
 
-            return null;
+return null;
 
-    }
+}
 
-    size() {
+size() {
 
-        return this.items.length;
+return this.items.length;
 
-    }
+}
 
-    enqueue(element) {
+enqueue(element) {
 
-        this.items.push(element);
+this.items.push(element);
 
-    }
+}
 
 Run
 
 The key is to generate consecutive binary numbers by appending 0 and 1 to previous binary numbers. To clarify,
 
--   10 and 11 can be generated if 0 and 1 are appended to 1.
--   100 and 101 are generated if 0 and 1 are appended to 10.
+- 10 and 11 can be generated if 0 and 1 are appended to 1.
+- 100 and 101 are generated if 0 and 1 are appended to 10.
 
 Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.
 
@@ -664,63 +656,63 @@ const Node = require('./Node.js');
 
 module.exports = class LinkedList {
 
-  constructor() {
+constructor() {
 
-    this.head = null;
+this.head = null;
 
-  }
+}
 
-  //Insertion At Head  
+//Insertion At Head
 
-  insertAtHead(newData) {
+insertAtHead(newData) {
 
-    let tempNode = new Node(newData);
+let tempNode = new Node(newData);
 
-    tempNode.nextElement = this.head;
+tempNode.nextElement = this.head;
 
-    this.head = tempNode;
+this.head = tempNode;
 
-    return this; //returning the updated list
+return this; //returning the updated list
 
-  }
+}
 
-  isEmpty() {
+isEmpty() {
 
-    return (this.head == null);
+return (this.head == null);
 
-  }
+}
 
-  //function to print the linked list
+//function to print the linked list
 
-  printList() {
+printList() {
 
-    if (this.isEmpty()) {
+if (this.isEmpty()) {
 
-      console.log("Empty List");
+console.log("Empty List");
 
-      return false;
+return false;
 
-    } else {
+} else {
 
-      let temp = this.head;
+let temp = this.head;
 
-      while (temp != null) {
+while (temp != null) {
 
-        process.stdout.write(String(temp.data));
+process.stdout.write(String(temp.data));
 
-        process.stdout.write(" -> ");
+process.stdout.write(" -> ");
 
-        temp = temp.nextElement;
+temp = temp.nextElement;
 
 Run
 
 We use a loop to iterate through the input list. For a `current` node, its link with the `previous` node is reversed. then, `next` stores the next node in the list. Let's break that down by line.
 
--   Line 22- Store the `current` node's `nextElement` in `next`
--   Line 23 - Set `current` node's `nextElement` to `previous`
--   Line 24 - Make the `current` node the new `previous` for the next iteration
--   Line 25 - Use `next` to go to the next node
--   Line 29 - We reset the `head` pointer to point at the last node
+- Line 22- Store the `current` node's `nextElement` in `next`
+- Line 23 - Set `current` node's `nextElement` to `previous`
+- Line 24 - Make the `current` node the new `previous` for the next iteration
+- Line 25 - Use `next` to go to the next node
+- Line 29 - We reset the `head` pointer to point at the last node
 
 Since the list is traversed only once, the algorithm runs in *O(n)*.
 
@@ -820,53 +812,53 @@ const Node = require('./Node.js');
 
 module.exports = class BinarySearchTree {
 
-    constructor(rootValue) {
+constructor(rootValue) {
 
-        this.root = new Node(rootValue);
+this.root = new Node(rootValue);
 
-    }
+}
 
-    insert(currentNode, newValue) {
+insert(currentNode, newValue) {
 
-        if (currentNode === null) {
+if (currentNode === null) {
 
-            currentNode = new Node(newValue);
+currentNode = new Node(newValue);
 
-        } else if (newValue < currentNode.val) {
+} else if (newValue < currentNode.val) {
 
-            currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
+currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
 
-        } else {
+} else {
 
-            currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
+currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
 
-        }
+}
 
-        return currentNode;
+return currentNode;
 
-    }
+}
 
-    insertBST(newValue) {
+insertBST(newValue) {
 
-        if(this.root==null){
+if(this.root==null){
 
-            this.root=new Node(newValue);
+this.root=new Node(newValue);
 
-            return;
+return;
 
-        }
+}
 
-        this.insert(this.root, newValue);
+this.insert(this.root, newValue);
 
-    }
+}
 
-    preOrderPrint(currentNode) {
+preOrderPrint(currentNode) {
 
-        if (currentNode !== null) {
+if (currentNode !== null) {
 
-            console.log(currentNode.val);
+console.log(currentNode.val);
 
-            this.preOrderPrint(currentNode.leftChild);
+this.preOrderPrint(currentNode.leftChild);
 
 Run
 
@@ -974,43 +966,43 @@ const Node = require('./Node.js');
 
 module.exports = class Graph {
 
-  constructor(vertices) {
+constructor(vertices) {
 
-    this.vertices = vertices;
+this.vertices = vertices;
 
-    this.list = [];
+this.list = [];
 
-    var it;
+var it;
 
-    for (it = 0; it < vertices; it++) {
+for (it = 0; it < vertices; it++) {
 
-      let temp = new LinkedList();
+let temp = new LinkedList();
 
-      this.list.push(temp);
+this.list.push(temp);
 
-    }
+}
 
-  }
+}
 
-  addEdge(source, destination) {
+addEdge(source, destination) {
 
-    if (source < this.vertices && destination < this.vertices)
+if (source < this.vertices && destination < this.vertices)
 
-    this.list[source].insertAtHead(destination);
+this.list[source].insertAtHead(destination);
 
-    return this;
+return this;
 
-  }
+}
 
-  printGraph() {
+printGraph() {
 
-    console.log(">>Adjacency List of Directed Graph<<");
+console.log(">>Adjacency List of Directed Graph<<");
 
-    var i;
+var i;
 
-    for (i = 0; i < this.list.length; i++) {
+for (i = 0; i < this.list.length; i++) {
 
-      process.stdout.write("|" + String(i) + "| => ");
+process.stdout.write("|" + String(i) + "| => ");
 
 Run
 
@@ -1090,45 +1082,45 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 
 function minHeapify(heap, index) {
 
-    var left = index * 2;
+var left = index \* 2;
 
-    var right = (index * 2) + 1;
+var right = (index \* 2) + 1;
 
-    var smallest = index;
+var smallest = index;
 
-    if ((heap.length > left) && (heap[smallest] > heap[left])) {
+if ((heap.length > left) && (heap[smallest] > heap[left])) {
 
-        smallest = left
+smallest = left
 
-    }
+}
 
-    if ((heap.length > right) && (heap[smallest] > heap[right]))
+if ((heap.length > right) && (heap[smallest] > heap[right]))
 
-        smallest = right
+smallest = right
 
-    if (smallest != index) {
+if (smallest != index) {
 
-        var tmp = heap[smallest]
+var tmp = heap[smallest]
 
-        heap[smallest] = heap[index]
+heap[smallest] = heap[index]
 
-        heap[index] = tmp
+heap[index] = tmp
 
-        minHeapify(heap, smallest)
+minHeapify(heap, smallest)
 
-    }
+}
 
-    return heap;
+return heap;
 
 }
 
 function convertMax(maxHeap) {
 
-    for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--)
+for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--)
 
-        maxHeap = minHeapify(maxHeap, i)
+maxHeap = minHeapify(maxHeap, i)
 
-    return maxHeap
+return maxHeap
 
 }
 
