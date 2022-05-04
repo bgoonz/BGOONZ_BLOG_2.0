@@ -7,7 +7,12 @@ date: 2022-05-04T19:10:59.235Z
 image: /blog/react2.jpg
 thumb_image: /blog/react2.jpg
 image_position: right
-show_author_bio: false
+author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/js.yaml
+show_author_bio: true
+related_posts:
+  - src/pages/blog/react-semantics.md
 cmseditable: true
 ---
 
