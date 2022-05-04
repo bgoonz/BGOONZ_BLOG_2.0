@@ -1,0 +1,17 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^2.19.38",
+    "gatsby-plugin-disqus": "^1.2.4",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "sprintf-js": "^1.1.2"
+  }
+}

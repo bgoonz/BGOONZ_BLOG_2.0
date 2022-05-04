@@ -207,7 +207,8 @@ export default class Body extends React.Component {
             {this.props.children}
           </main>
           <Footer {...this.props} />
-<div id='tawk_613041ecd6e7610a49b3326a'>Chat</div>
+
+<div id='tawk_613041ecd6e7610a49b3326a'></div>
 
         </div>
       </React.Fragment>
