@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Logs
 logs
 *.log
@@ -33,7 +55,7 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+# node_modules/
 jspm_packages/
 
 # Typescript v1 declaration files
@@ -68,5 +90,9 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Local Netlify folder
-.netlify
+node_modules/
+
+.package-lock.json
+*.cache
+*public
+src/pages/docs/tools/Archive.md
