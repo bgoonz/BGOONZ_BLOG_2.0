@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.

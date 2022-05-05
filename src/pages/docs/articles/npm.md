@@ -15,6 +15,7 @@ seo:
 template: docs
 ---
 
+
 ## Introduction to npm
 
 `npm` is the standard package manager for Node.js.

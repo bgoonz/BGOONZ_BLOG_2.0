@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Objects in JavaScript:
 
 ## Everything else besides primitive data type values is an _object_.

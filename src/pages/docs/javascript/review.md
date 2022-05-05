@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Core Concept Review
 
 # Core Concepts

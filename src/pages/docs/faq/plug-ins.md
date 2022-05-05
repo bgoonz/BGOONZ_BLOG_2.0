@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 <div class="note">
   <strong>Note:</strong> These are the gatsby plugins that power the file system of this website! <strong>See more in the Docs</strong> section.
 </div>

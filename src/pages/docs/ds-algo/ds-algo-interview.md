@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # <a id="asymptotic-notation"></a>Asymptotic Notation
 
 ### <span style="color:red;"> Definition:

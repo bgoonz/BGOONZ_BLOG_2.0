@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 Regular expressions make light work of **single-character delimiters**, which is why it's so easy to remove markup from a string:
 
 ```

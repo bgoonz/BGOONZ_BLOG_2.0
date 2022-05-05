@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Bookmarks
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
@@ -1945,7 +1946,7 @@ template: docs
 -   [✅] [_**Text-Shadow Exposed: Make cool and clever text effects with csstext-shadow ¦kremalicious**_](https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow)
 -   [✅] [_**javascript you could add to any html page - GoogleSearch**_](https://www.google.com/search?sxsrf=ALeKk00GsCpoNdbGMrR03FlrgOrmApOpLw%3A1611975508435&ei=VMsUYJiPGqfG5gKzpp-QCQ&q=javascript+you+could+add+to+any+html+page&oq=javascript+you+could+add+to+any+html+page&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCMgUIIRCrAjoECAAQRzoECCMQJzoFCAAQkQI6BAgAEEM6CwguELEDEIMBEIsDOg4ILhCxAxDHARCjAhCLAzoICAAQsQMQiwM6FAguELEDEIMBEIsDEKgDEJsDEJoDOgcIABBDEIsDOhQILhCxAxCDARCLAxCoAxCaAxCbAzoHCAAQsQMQQzoLCAAQsQMQgwEQiwM6CggAELEDEEMQiwM6AggAOggIABAWEAoQHjoGCAAQFhAeOggIIRAWEB0QHjoFCCEQoAFQwSRY_39g_oEBaAJwBXgAgAGzA4gBoyuSAQo3LjMwLjMuMC4xmAEAoAEBqgEHZ3dzLXdpesgBCLgBAsABAQ&sclient=psy-ab&ved=0ahUKEwiYicTc1MLuAhUno1kKHTPTB5IQ4dUDCA0&uact=5)
 -   [✅] [_**Share Buttons - AddToAny**_](https://www.addtoany.com/buttons/)
--   [✅] [_**Share \"https://goofy-euclid-1cd736.netlify.app/\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
+-   [✅] [_**Share \"https://bgoonzblog20master.gatsbyjs.io/docs/sitemap\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
 -   [✅] [_**How Javascript Implementation Adds Dynamic Interactivity \|Pluralsight**_](https://www.pluralsight.com/guides/how-javascript-implementation-adds-dynamic-interactivity)
 -   [✅] [_**Editing bgoonz/README.md at master ·bgoonz/bgoonz**_](https://github.com/bgoonz/bgoonz/edit/master/README.md)
 -   [✅] [_**Add a \'Like\' Button to Your Blogposts Using This Simple JavaScriptTechnique \| London Academy ofIT**_](https://www.londonacademyofit.co.uk/blog/add-like-button-blogposts-simple-javascript)
@@ -2634,7 +2635,7 @@ template: docs
 -   [✅] [_**Internet Archive: Digital Library of Free & Borrowable Books, Movies,Music & Wayback Machine**_](https://archive.org/)
 -   [✅] [_**Commits ·BrentOzarULTD/BrentOzar.com-Demos**_](https://github.com/BrentOzarULTD/BrentOzar.com-Demos/commits?author=BrentOzar)
 -   [✅] [_**SQL ConstantCare® - Brent OzarUnlimited®**_](https://www.brentozar.com/sql-constantcare/)
--   [✅] [_**Web Development ResourcesSite**_](https://web-dev-hub.com/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+-   [✅] [_**Web Development ResourcesSite**_](https://bgoonz-blog.netlify.app/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
 -   [✅] [_**stack overflow postgres database - GoogleSearch**_](https://www.google.com/search?q=stack+overflow+postgres+database&oq=stack+overflow+postgres+database&aqs=chrome..69i57j69i64l2.6496j0j7&sourceid=chrome&ie=UTF-8)
 -   [✅] [_**stackoverflow-to-postgresql.pdf**_](https://www.bortzmeyer.org/stackoverflow-to-postgresql.pdf)
 -   [✅] [_**Improve database performance with connection pooling - Stack OverflowBlog**_](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)
