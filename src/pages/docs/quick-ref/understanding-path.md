@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ### Understanding PATH
 
 ![](images/pypath.jpeg)

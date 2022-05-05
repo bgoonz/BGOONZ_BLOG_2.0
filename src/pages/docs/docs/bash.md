@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Bash Commands
 
 # Bash Commands That Save Me Time and Frustration

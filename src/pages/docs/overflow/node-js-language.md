@@ -13,6 +13,7 @@ seo:
 template: docs
 ---
 
+
 If you work with JavaScript, or you've ever interacted with a JavaScript project, Node.js or a frontend project, you surely met the package.json file.
 
 What's that for? What should you know about it, and what are some of the cool things you can do with it?

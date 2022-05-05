@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # POJOs
 
 ## 1. Label variables as either Primitive vs. Reference

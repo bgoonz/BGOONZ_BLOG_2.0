@@ -10,4 +10,5 @@ seo:
 template: docs
 ---
 
+
 This section is dedicated to coding walkthroughs:

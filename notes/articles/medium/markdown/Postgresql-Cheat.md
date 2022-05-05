@@ -437,8 +437,8 @@ Output:
 
 Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.
 
--   <span id="4ffd">Lets see browser usage:</span>
--   <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
+- <span id="4ffd">Lets see browser usage:</span>
+- <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
 
 Output:
 
@@ -464,10 +464,10 @@ Output:
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong>
 <br/>
 
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
