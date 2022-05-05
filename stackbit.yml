@@ -377,7 +377,6 @@ models:
               label: Columns
               description: The number of documentation sections in a row
               options:
-                  - two
                   - three
               default: three
               required: true
