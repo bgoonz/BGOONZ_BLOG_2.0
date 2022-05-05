@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## React Class Components Demo
 
 ## React Demo <a id="b2b8"></a>

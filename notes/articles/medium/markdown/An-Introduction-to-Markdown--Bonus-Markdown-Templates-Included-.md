@@ -145,10 +145,10 @@ This text can be embedded into Markdown:
 
     A double line break, breaks out of the list.
 
--   <span id="7904">Item 1</span>
--   <span id="1cf1">Item 2</span>
--   <span id="ded6">Item 3  
-     This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
+- <span id="7904">Item 1</span>
+- <span id="1cf1">Item 2</span>
+- <span id="ded6">Item 3  
+   This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
 
@@ -265,10 +265,10 @@ which gives you:
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong>
 <br/>
 
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/3497ce56de3).
 

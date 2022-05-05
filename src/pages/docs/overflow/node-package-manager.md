@@ -37,6 +37,7 @@ seo:
 template: docs
 ---
 
+
 ## Sorting Algorithms
 
 ### Sorting Algorithms

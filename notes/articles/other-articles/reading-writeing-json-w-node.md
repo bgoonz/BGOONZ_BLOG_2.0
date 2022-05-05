@@ -88,8 +88,8 @@ console.log('This is after the read call');
 
 The code above does exactly what our previous code snippet did (with an extra `console.log` call), but it does so asynchronously. Here are a few of the differences, which you may have noticed:
 
--   `(err, data) => {}`: This is our callback function that is executed once the file is completely read
--   `err`: Since we can't easily use try/catch with asynchronous code, the function instead gives us an `err` object if something goes wrong. It is `null` if there were no errors
+- `(err, data) => {}`: This is our callback function that is executed once the file is completely read
+- `err`: Since we can't easily use try/catch with asynchronous code, the function instead gives us an `err` object if something goes wrong. It is `null` if there were no errors
 
 You may have also noticed that we print a string to the console immediately after calling `readFile`. This is to show you the behavior of asynchronous code. When the above script is executed, you will see that this `console.log` executes _before_ the `readFile` callback function executes. This is because `readFile` does not block code from executing while it reads data from the file system.
 
@@ -126,8 +126,8 @@ It works exactly like the `readFileSync` code we showed above, but it is a globa
 
 However there are a few drawbacks of `require` function:
 
--   Require is synchronous function and is called only once, which means the calls receive a cached result. If the file is updated you can't re-read it using this method
--   Your file must have '.json' extension, so it can't be as flexible. Without the proper extension `require` doesn't treat the file as JSON file.
+- Require is synchronous function and is called only once, which means the calls receive a cached result. If the file is updated you can't re-read it using this method
+- Your file must have '.json' extension, so it can't be as flexible. Without the proper extension `require` doesn't treat the file as JSON file.
 
 ### Writing JSON to a File
 

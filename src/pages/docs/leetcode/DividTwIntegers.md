@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)
 
 ### Problem:
@@ -30,7 +31,7 @@ Output: 3
 
 **Example 2:**
 
-```
+```txt
 Input: dividend = 7, divisor = -3
 Output: -2
 ```

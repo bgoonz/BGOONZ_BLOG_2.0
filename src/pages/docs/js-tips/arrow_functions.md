@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Arrow function expressions
 
 An **arrow function expression** is a compact alternative to a traditional [function expression](../operators/function), but is limited and can't be used in all situations.

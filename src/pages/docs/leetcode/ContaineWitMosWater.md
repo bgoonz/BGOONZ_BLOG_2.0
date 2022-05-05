@@ -1,15 +1,16 @@
 ---
-title: Leetcode
+title: Container With Most Water
 weight: 0
 excerpt: feel free to try the examples
 seo:
-    title: '   '
+    title: ' Container With Most Water  '
     description: Leetcode practice
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
+
 
 ## [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
