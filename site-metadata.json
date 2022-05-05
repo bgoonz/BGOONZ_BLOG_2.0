@@ -82,7 +82,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-
                     {
                         "label": "Blog w Comments",
                         "url": "/blogWcomments/",
@@ -199,27 +198,7 @@
                         "no_follow": false
                     }
                 ],
-
                 "new_window": false
-            },
-            {
-                "label": "Admin",
-                "url": "/docs/archive",
-                "style": "primary",
-                "icon_class": "github",
-                "type": "action_menu",
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [{
-                    "label": "Conribute",
-                    "url": "https://bgoonz-blog.netlify.app/admin/",
-                    "style": "primary",
-                    "icon_class": "dev",
-                    "new_window": false,
-                    "no_follow": false,
-                    "type": "action"
-                }],
-                "new_window": true
             },
             {
                 "label": "Projects",

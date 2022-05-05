@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Querying Data in Components using StaticQuery
 
 ## TABLE OF CONTENTS

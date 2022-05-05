@@ -29,7 +29,7 @@ seo:
           value: images/dtw-slideshow.gif
           relativeUrl: true
 template: post
-thumb_image: images/redu-squarex.jpg
+thumb_image: images/netlifycms.png
 ---
 
 # Add to Your Site | Netlify CMS

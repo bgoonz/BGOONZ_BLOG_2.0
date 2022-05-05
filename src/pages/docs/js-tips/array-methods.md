@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ### Rotate (Array) Problem Walkthrough
 
 ### Explanation for Rotate Right

@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 # Everything You Need to Get Started With VSCode + Extensions & Resources
 
 Commands:
