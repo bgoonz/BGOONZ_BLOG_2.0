@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Dynamic Time Warping Algorithm Explained (Python)
 
 In this world which is getting dominated by Internet of Things (IoT), there is an increasing need to understand signals from devices installed in households, shopping malls, factories and offices. For example, any voice assistant detects, authenticates and interprets commands from humans even if it is slow or fast. Our voice tone tends to be different during different times of the day. In the early morning after we get up from bed, we interact with a slower, heavier and lazier tone compared to other times of the day. These devices treat the signals as time series and compare the peaks, troughs and slopes by taking into account the varying lags and phases in the signals to come up with a similarity score. One of the most common algorithms used to accomplish this is _Dynamic Time Warping (DTW)_. It is a very robust technique to compare two or more Time Series by ignoring any shifts and speed.

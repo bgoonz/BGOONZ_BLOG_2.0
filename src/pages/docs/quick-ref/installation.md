@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 # Basic Web Development Environment Setup
 
 > Windows Subsystem for Linux (WSL) and Ubuntu

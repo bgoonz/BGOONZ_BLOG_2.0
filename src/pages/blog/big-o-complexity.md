@@ -31,15 +31,15 @@ Space Complexity: O(1)
 <https://gist.github.com/eengineergz/e67e56bed7c5a20a54851867ba5efef6>
 
 - The first major sorting algorithm one learns in introductory programming courses.
-- 
+-
 - Gives an intro on how to convert unsorted data into sorted data.
 
 > It's almost never used in production code because:
 
 - _It's not efficient_
-- 
+-
 - _It's not commonly used_
-- 
+-
 - _There is stigma attached to it_
 
 - _Bubbling Up : Term that infers that an item is in motion, moving in some direction, and has some final resting destination._
@@ -49,7 +49,7 @@ Space Complexity: O(1)
 <https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053><https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54>
 
 - _Worst Case & Best Case are always the same because it makes nested loops._
-- 
+-
 - _Double for loops are polynomial time complexity or more specifically in this case Quadratic (Big O) of: O(n²)_
 
 ### Selection Sort
@@ -97,7 +97,7 @@ Space Complexity: O(n)
 Time Complexity: Log Linear O(nlog(n))
 
 - Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); Space Complexity: O(n)
-- 
+-
 - We are linear O(n) time because we are creating subArrays.
 
 ### Example of Merge Sort
@@ -105,7 +105,7 @@ Time Complexity: Log Linear O(nlog(n))
 <https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48><https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64>
 
 - **Merge sort is O(nlog(n)) time.**
-- 
+-
 - _We need a function for merging and a function for sorting._
 
 > Steps:
@@ -125,9 +125,9 @@ Time Complexity: Quadratic O(n^2)
 Space Complexity: O(n)
 
 - Our space complexity is linear O(n) because of the partition arrays we create.
-- 
-- QS is another Divide and Conquer 
-- 
+-
+- QS is another Divide and Conquer
+-
 - Some key ideas to keep in mind:
 
 - It is easy to sort elements of an array relative to a particular target value.
@@ -151,7 +151,7 @@ Space Complexity: O(1)
 <https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751><https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a>
 
 - _Must be conducted on a sorted array._
-- 
+-
 - _Binary search is logarithmic time, not exponential b/c n is cut down by two, not growing._
 
 - _Binary Search is part of Divide and Conquer._

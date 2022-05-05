@@ -1,7 +1,0 @@
-[build]
-publish = "public"
-	functions = "./functions"
-command = "npm run build"
-
-   
-
