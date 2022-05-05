@@ -16,14 +16,15 @@ related_posts:
 cmseditable: true
 ---
 
+
 ## [Handling events](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_events "Permalink to Handling events")
 
 If you've only written vanilla JavaScript before now, you might be used to having a separate JavaScript file, where you query for some DOM nodes and attach listeners to them. For example:
 
 ```jsx
-const btn = document.querySelector("button");
+const btn = document.querySelector('button');
 
-btn.addEventListener("click", () => {
+btn.addEventListener('click', () => {
   alert("hi!");
 });
 ```
