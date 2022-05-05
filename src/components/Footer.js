@@ -4,6 +4,33 @@ import _ from 'lodash';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
 
+const FileUploadForm = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <form name="fileForm" encType="multipart/form-data" data-netlify="true">
+                    <p>
+                        <label>
+                            <span>Name:</span>
+                            <input name="name" type="text"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Add file:</span>
+                            <input name="file" type="file"/>
+                        </label>
+                    </p>
+                    <button>Submit</button>
+                </form>
+                <p className="result"/>
+            </div>
+        );
+    }
+});
+
+
+
 export default class Footer extends React.Component {
     render() {
         return (
@@ -28,7 +55,7 @@ export default class Footer extends React.Component {
                     </div>
                 </div>
 <div id='tawk_613041ecd6e7610a49b3326a'></div>
-
+< FileUploadForm></FileUploadForm>
             </footer>
         );
     }
