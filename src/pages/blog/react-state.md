@@ -31,15 +31,8 @@ btn.addEventListener('click', () => {
 
 In React, we write event handlers directly on the elements in our JSX, like this:
 
-
-
-
-
 ```jsx
-<button
-  type="button"
-  onClick={() => alert("hi!")}
->
+<button type="button" onClick={() => alert("hi!")}>
   Say hi!
 </button>
 ```
@@ -50,8 +43,8 @@ In the above example, we're adding an `onClick` attribute to the `<button>` elem
 
 The `onClick` attribute has special meaning here: it tells React to run a given function when the user clicks on the button. There are a couple of other things to note:
 
--   The camel-cased nature of `onClick` is important — JSX will not recognize `onclick` (again, it is already used in JavaScript for a specific purpose, which is related but different — standard [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) handler properties).
--   All browser events follow this format in JSX – `on`, followed by the name of the event.
+- The camel-cased nature of `onClick` is important — JSX will not recognize `onclick` (again, it is already used in JavaScript for a specific purpose, which is related but different — standard [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) handler properties).
+- All browser events follow this format in JSX – `on`, followed by the name of the event.
 
 Let's apply this to our app, starting in the `Form.js` component.
 
@@ -62,7 +55,7 @@ At the top of the `Form()` component function, create a function named `handleSu
 ```jsx
 function handleSubmit(e) {
   e.preventDefault();
-  alert('Hello, world!');
+  alert("Hello, world!");
 }
 ```
 
@@ -137,9 +130,9 @@ const [name, setName] = useState('Use hooks!');
 
 What's going on in this line of code?
 
--   We are setting the initial `name` value as "Use hooks!".
--   We are defining a function whose job is to modify `name`, called `setName()`.
--   `useState()` returns these two things, so we are using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to capture them both in separate variables.
+- We are setting the initial `name` value as "Use hooks!".
+- We are defining a function whose job is to modify `name`, called `setName()`.
+- `useState()` returns these two things, so we are using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to capture them both in separate variables.
 
 ### [Reading state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#reading_state "Permalink to Reading state")
 
