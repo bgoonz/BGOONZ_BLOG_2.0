@@ -1,11 +1,11 @@
 ---
-title: 
+title:
 weight: 0
-excerpt: 
+excerpt:
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
+  title: ""
+  description: ""
+  robots: []
+  extra: []
 template: docs
 ---

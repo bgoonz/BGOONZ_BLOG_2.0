@@ -199,7 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-
+      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
