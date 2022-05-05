@@ -213,7 +213,7 @@ sections:
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
-      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
+      <iframe sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
