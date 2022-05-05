@@ -2,8 +2,8 @@
 title: Data Structures & Algorithms Resources
 template: post
 subtitle: Links to useful educational resources
-excerpt: "Talk is cheap. Show me the code.  Software is like sex: it’s better
-  when it’s free.  Microsoft isn’t evil, they just make really crappy operating
+excerpt: "Talk is cheap. Show me the code.  Software is like sex: it's better
+  when it's free.  Microsoft isn't evil, they just make really crappy operating
   systems."
 date: 2022-04-09T12:24:38.027Z
 image: /blog/ds-whiteboard.webp
@@ -16,7 +16,6 @@ tags:
 show_author_bio: true
 cmseditable: true
 ---
-
 # Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
@@ -27,15 +26,15 @@ Guess the author of the following quotes:
 
 > _Talk is cheap. Show me the code._
 >
-> _Software is like sex: it’s better when it’s free._
+> _Software is like sex: it's better when it's free._
 >
-> _Microsoft isn’t evil, they just make really crappy operating systems._
+> _Microsoft isn't evil, they just make really crappy operating systems._
 
 ![](https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F)
 
 ## Update: <a id="4129"></a>
 
-### Here’s some more: <a id="42ff"></a>
+### Here's some more: <a id="42ff"></a>
 
 - [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
 - [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
@@ -179,7 +178,7 @@ Guess the author of the following quotes:
 - [Data Structures and Algorithms implementation in Go](https://github.com/floyernick/Data-Structures-and-Algorithms)
 - [Which algorithms/data structures should I “recognize” and know by name?](https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name)
 - [Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
-- [Phil’s Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
+- [Phil's Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
 - [The Periodic Table of Data Structures](https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf) \([HN](https://news.ycombinator.com/item?id=18314555)\)
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) \([HN](https://news.ycombinator.com/item?id=19082943)\)
 - [Data structures to name-drop when you want to sound smart in an interview](http://blog.amynguyen.net/?p=853)
@@ -197,7 +196,7 @@ Guess the author of the following quotes:
 - [Ideal Hash Trees](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
 - [RRB-Trees: Efficient Immutable Vectors](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&rep=rep1&type=pdf)
 - [Some data structures and algorithms written in OCaml](https://github.com/jdan/ocaml-data-structures)
-- [Let’s Invent B\(+\)-Trees](https://shachaf.net/w/b-trees) \([HN](https://news.ycombinator.com/item?id=23001831)\)
+- [Let's Invent B\(+\)-Trees](https://shachaf.net/w/b-trees) \([HN](https://news.ycombinator.com/item?id=23001831)\)
 - [Anna](https://github.com/hydro-project/anna) — Low-latency, cloud-native KVS.
 - [Persistent data structures thanks to recursive type aliases \(2019\)](https://www.aleksandra.codes/persistent-data-structures)
 - [Log-Structured Merge-Trees \(2020\)](https://yetanotherdevblog.com/lsm/)
@@ -206,7 +205,7 @@ Guess the author of the following quotes:
 - [Dense vs. Sparse Indexes \(2020\)](https://yetanotherdevblog.com/dense-vs-sparse-indexes/)
 - [Data Structures and Algorithms Problems](https://www.techiedelight.com/list-of-problems/)
 - [Data Structures & Algorithms I Actually Used Working at Tech Companies \(2020\)](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/) \([Lobsters](https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually)\) \([HN](https://news.ycombinator.com/item?id=23841491)\)
-- [Let’s implement a Bloom Filter \(2020\)](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/) \([HN](https://news.ycombinator.com/item?id=24102617)\)
+- [Let's implement a Bloom Filter \(2020\)](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/) \([HN](https://news.ycombinator.com/item?id=24102617)\)
 - [Data Structures Part 1: Bulk Data \(2019\)](https://ourmachinery.com/post/data-structures-part-1-bulk-data/) \([Lobsters](https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data)\)
 - [Data Structures Explained](https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/)
 - [Introduction to Cache-Oblivious Data Structures \(2018\)](https://rcoh.me/posts/cache-oblivious-datastructures/)

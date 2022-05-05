@@ -3,29 +3,28 @@ sections:
     - about
     - articles
     - audio
-    - archive
     - career
     - community
     - content
     - css
-    - ds-algo
     - docs
-    - e-eng
+    - ds-algo
     - faq
+    - general-structured-data-guidelines
     - git
     - glossary
     - interact
     - javascript
     - js-tips
-    - interview
     - leetcode
-    - overflow
     - netlify-cms
+    - netlify-cms-jamstack
+    - overflow
     - projects
     - python
     - quick-ref
     - react
     - reference
-    - tools
     - tips
+    - tools
     - tutorials
