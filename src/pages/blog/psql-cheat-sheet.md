@@ -9,13 +9,14 @@ thumb_image: /blog/psql-schema.jpg
 image_position: top
 author: src/data/authors/bgoon.yaml
 categories:
-  - src/data/categories/db.yaml
+    - src/data/categories/db.yaml
 tags:
-  - src/data/tags/psql.yaml
+    - src/data/tags/psql.yaml
 show_author_bio: true
 cmseditable: true
 ---
-# 💻 PSQL💻 
+
+# 💻 PSQL💻
 
 > source
 
@@ -257,8 +258,6 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 ```
 
 ### Query analysis
-
-
 
 ```sh
 -- See the query plan for the given query

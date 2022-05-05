@@ -51,7 +51,7 @@ sections:
         title: Guitar Effects Triggering w DTW
         title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
         image: images/dtw-algo.jpg
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+      - title_url: 'https://bgoonz-blog.netlify.app/docs/react/react2/'
         image_alt: img of dtw
         content: |
           As I learn to build web applications in React I will blog about it in
@@ -77,7 +77,7 @@ sections:
         actions: []
         type: grid_item
         title: Web Audio Daw
-        image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
+        image: images/dtw-slideshow.gif
   - title: Current Interests
     section_id: interests
     subtitle: From github repositories to existential questions.
@@ -92,7 +92,7 @@ sections:
           ## &#xA;
         actions: []
         type: grid_item
-        image: images/spectacular-turmeric.png
+        image: images/neural.png
       - title: Convolutional Neural Networks
         title_url: neural networks
         image_alt: neural networks
@@ -168,7 +168,7 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
+          - label: Web Version
             url: '#'
             style: link
             icon_class: dev
@@ -214,16 +214,6 @@ sections:
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
       <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
@@ -231,8 +221,8 @@ sections:
     image_alt: tools
     image_position: left
     content: |
-      ![Tool Showcase](images/static-server-5bf5ad2d.PNG)Tool Showcase
-      https://bgoonz-blog.netlify.app/docs/tools/
+      <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/"></iframe> 
     actions: []
     type: section_content
     title: Tools Showcase
