@@ -1,6 +1,5 @@
 <div align="center">
 
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#websitehttpsbgoonz-blognetlifyapp)
 
 # ➤ [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
@@ -36,7 +35,7 @@
   
 </div>
 
-# Archives:
+# Archives
 
 <br>
 <br>
@@ -84,8 +83,7 @@
 | ES6 Promises: Patterns and Anti-Patterns*When I first got started with NodeJS a few years ago, I was mortified by what is now affectionately known as "callback…*medium.com                                                                  | A Simple Guide to ES6 Promises*The woods are lovely, dark and deep. But I have promises to keep, and miles to go before I sleep. — Robert Frost*codeburst.io                                                           | The ES6 Promises*A very helpful feature in ES6*codeburst.io                                                                                                                                                                | ES6 Promises in Depth*Promises are a very involved paradigm, so we'll take it slow. Here's a table of contents with the topics we'll cover in…*ponyfoo.com                                                                                                                                                                                                                                    | Javascript Promises: An In-Depth Approach*"Write down the syntax for promises on this sheet of paper", is enough to give nightmares to a lot of junior and even…*codeburst.io                                       |
 | Promises - JavaScript concepts*This is part of a series where I try to explain through each of 33 JS Concepts. This part corresponds to Promises…*dev.to                                                                                     | Javascript Promise 101*Knowing how Promise works in javascript will boost your development skill exponentially. Here I will share: I promise…*dev.to                                                                   | Simplify JavaScript Promises*I love promises. Not from people, but from JavaScript. Tweet Quote I love promises. Not from people, but from…*dev.to                                                                         | The Lowdown on Promises*A quick and concise guide on how Promises work in JavaScript*medium.com                                                                                                                                                                                                                                                                                               | ⭐️🎀 JavaScript Visualized: Promises & Async/Await*Ever had to deal with JS code that just… didn't run the way you expected it to? Maybe it seemed like functions got…*dev.to                                      |
 | How to escape async/await hell*async/await freed us from callback hell, but people have started abusing it — leading to the birth of async/await hell.*medium.freecodecamp.org                                                               | Understanding JavaScript's async await*Let's suppose we had code like the following. Here I'm wrapping an HTTP request in a Promise. The promise fulfills with…*ponyfoo.com                                            | JavaScript Async/Await: Serial, Parallel and Complex Flow - TechBrij*If you have experience on ASP.NET MVC then probably you are familiar with async/await keywords in C#. The same thing is…*techbrij.com                 | From JavaScript Promises to Async/Await: why bother?*In this tutorial, we will cover why we need async/await when we could achieve the same fit with JavaScript Promises, to…*blog.pusher.com                                                                                                                                                                                                 | Flow Control in Modern JS: Callbacks to Promises to Async/Await - SitePoint*JavaScript is regularly claimed to be asynchronous. What does that mean? How does it affect development? How has the…*www.sitepoint.com |
-| Time Complexity Analysis in JavaScript*An algorithm is a self-contained step-by-step set of instructions to solve a problem. It takes time for these steps to…*www.jenniferbland.com                                                         | Algorithms in plain English: time complexity and Big-O notation*Every good developer has time on their mind. They want to give their users more of it, so they can do all those things…*medium.freecodecamp.org        | An Introduction to Big O Notation*Big O notation is a big topic, and its universal importance stems from the fact that it describes the efficiency of…*dev.to                                                              | [Crizstian/data-structure-and-algorithms-with-ES6*Num Type Exercises Description 10.- Graph Data Structure 2 A graph consists of a set of vertices and a set of edges. A…*github.com](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6 "https://github.com/Crizs                                                                                                           |
-
+| Time Complexity Analysis in JavaScript*An algorithm is a self-contained step-by-step set of instructions to solve a problem. It takes time for these steps to…*www.jenniferbland.com                                                         | Algorithms in plain English: time complexity and Big-O notation*Every good developer has time on their mind. They want to give their users more of it, so they can do all those things…*medium.freecodecamp.org        | An Introduction to Big O Notation*Big O notation is a big topic, and its universal importance stems from the fact that it describes the efficiency of…*dev.to                                                              | [Crizstian/data-structure-and-algorithms-with-ES6*Num Type Exercises Description 10.- Graph Data Structure 2 A graph consists of a set of vertices and a set of edges. A…*github.com](<https://github.com/Crizstian/data-structure-and-algorithms-with-ES6> "<https://github.com/Crizs>                                                                                                           |
 
 ## description: Review
 
@@ -131,7 +129,7 @@
         ```
 
 - Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
-- - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
+        - - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
 - Utilize Object.keys and Object.values in a function
     - `Object.keys(obj)` returns an array of all the keys in `obj`
     - `Object.values(obj)` returns an array of the values in `obj`
@@ -244,7 +242,7 @@ console.log(color, vegetable); //=> mauve spaghetti squash
     - supports same basic operations as other types \(strings, bools, numbers\)
     - higher-order functions take functions as arguments or return functions as values
 - Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
-- - what is this referring to?
+        - - what is this referring to?
 - Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
 
 ```js
@@ -697,7 +695,6 @@ console.log(obj2);
 
 ---
 
-
 ```js
 
 
@@ -715,7 +712,6 @@ console.log(doesKeyExist(course, 'name')); // => false
 #### 5. Utilize Object.keys and Object.values in a function
 
 ---
-
 
 ```js
 
@@ -747,7 +743,6 @@ console.log(Object.entries(player));
 #### 7. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
 
 ---
-
 
 ```js
 
@@ -820,7 +815,6 @@ console.log(sisters);
 
 ---
 
-
 ```js
 
 
@@ -853,7 +847,7 @@ var a = 'a';
 
 - `var` is the historical keyword used for variable declaration.
 - `var` declares variables in function scope, or global scope if not inside a function.
-- We consider `var` to be _deprecated_ and it is never used in this course.
+- We consider `var` to be *deprecated* and it is never used in this course.
 
 ```js
 let b = 'b';
@@ -900,7 +894,6 @@ Notice that referencing `baz` from outside it's block results in JavaScript thro
 Consider this `run` function, inside of which `foo` has `function scope`.
 
 ---
-
 
 ```js
 
@@ -967,7 +960,6 @@ const returnValue = (val) => {
 
 ---
 
-
 ```js
 
 
@@ -982,7 +974,7 @@ function fDAdder(arr) {
 fDAdder([1, 2, 4, 6]);
 ```
 
-If we use a _function declaration_ style function, the `this` variable is set to the `global` object \(i.e. `Object [global]` in Node.JS and `Window` in your browser\).
+If we use a *function declaration* style function, the `this` variable is set to the `global` object \(i.e. `Object [global]` in Node.JS and `Window` in your browser\).
 
 ```js
 const adder = (arr) => {
@@ -992,7 +984,7 @@ const adder = (arr) => {
 adder([1, 2, 4, 6]);
 ```
 
-In this example, we use a _fat arrow_ style function. Note that when we declare a funciton like this `this` becomes
+In this example, we use a *fat arrow* style function. Note that when we declare a funciton like this `this` becomes
 
 #### 7. Define a method that references this on an object literal
 
@@ -1030,7 +1022,6 @@ logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
 
 ---
 
-
 ```js
 
 
@@ -1052,14 +1043,6 @@ Person.prototype.sayName = function () {
 
 const jane = new Person('Jane');
 ```
-
-
-
-
-
-
-
-
 
 - [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 - [https://bgoonz-blog.netlify.app/admin](https://bgoonz-blog.netlify.app/admin)
@@ -1358,11 +1341,7 @@ const jane = new Person('Jane');
 - [https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup](https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup)
 - [https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites](https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites)
 
-
-
-
-### JS-Guide:
-
+### JS-Guide
 
 ### The Beginner's Guide To JavaScript
 
@@ -1387,11 +1366,11 @@ JS evaluates more complex expressions using the general math order of
 operations aka PEMDAS.
 
 -   <span id="4923">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
--   <span id="e245">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
+-   <span id="e245">*To force a specific order of operation, use the group operator ( ) around a part of the expression.*</span>
 
 **Modulo** : Very useful operation to check divisibility of numbers,  
 check for even & odd, whether a number is prime, and much more!  
-_(Discrete Math concept, circular problems can be solved with modulo)_
+*(Discrete Math concept, circular problems can be solved with modulo)*
 
 -   <span id="9608">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.</span>
 -   <span id="3b00">`console.log(7 % 10); // => 7;`</span>
@@ -1401,7 +1380,7 @@ _(Discrete Math concept, circular problems can be solved with modulo)_
 The **string** data type is a primitive data type that used to represent  
 textual data.
 
--   <span id="792d">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
+-   <span id="792d">can be wrapped by either **single** or **double** quotation marks, *best to choose one and stick with it for consistency*.</span>
 -   <span id="4f91">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.</span>
 
 <!-- -->
@@ -1513,7 +1492,7 @@ over and over. (Think of them as 'subprograms')
 -   <span id="01bb">**Function Declaration** : Process when we first initially write our function.</span>
 -   <span id="963b">Includes three things:</span>
 -   <span id="32df">Name of the function.</span>
--   <span id="7930">A list of _parameters_ ()</span>
+-   <span id="7930">A list of *parameters* ()</span>
 -   <span id="145e">The code to execute {}</span>
 -   <span id="37c0">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
 -   <span id="f3cc">JS evaluates code top down, left to right.</span>
@@ -1526,7 +1505,7 @@ over and over. (Think of them as 'subprograms')
 
 -   <span id="38d3">**Parameters** : Comma separated variables specified as part of a function's declaration.</span>
 -   <span id="ecef">**Arguments** : Values passed to the function when it is invoked.</span>
--   <span id="a836">_If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._</span>
+-   <span id="a836">*If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work.*</span>
 -   <span id="a53a">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ---
@@ -1615,7 +1594,7 @@ Here's a live code editor where you can mess with any of the examples…
 
 ### Dependent on data
 
-> _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
+> *Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity.*
 
 -   <span id="bc8d">**The best-case complexity: when the data looks the best**</span>
 -   <span id="8b06">**The worst-case complexity: when the data looks the worst**</span>
@@ -1967,7 +1946,7 @@ The find() method returns a value of the first element in the array that satisfi
 
 <em>Let's start with a short intro to type systems which I think will help you understand the general idea of type…</em>stackoverflow.com</a><a href="https://stackoverflow.com/questions/19915688/what-exactly-is-type-coercion-in-javascript" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://thedevs.network/>blog/type-coercion-in-javascript-and-why-everyone-gets-it-wrong" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://thedevs.network/blog/type-coercion-in-javascript-and-why-everyone-gets-it-wrong"><strong>https://thedevs.network/</strong>
+<a href="<<<https://thedevs.network/>>>blog/type-coercion-in-javascript-and-why-everyone-gets-it-wrong" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://thedevs.network/blog/type-coercion-in-javascript-and-why-everyone-gets-it-wrong"><strong>https://thedevs.network/</strong>
 <br/>
 
 <em>Weak dynamic typing is arguably one of those things everybody likes to pick at about JavaScript. For an elegant dynamic…</em>thedevs.network</a><a href="https://thedevs.network/blog/type-coercion-in-javascript-and-why-everyone-gets-it-wrong" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -2607,7 +2586,7 @@ The find() method returns a value of the first element in the array that satisfi
 
 <em>Let's see how classes in JS are not what you think they are.</em>medium.com</a><a href="https://medium.com/@parsyval/javascript-prototype-vs-class-a7015d5473b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://codeburst.io/javascript-prototype-cb29d82b8809>" class="markup--anchor markup--p-anchor">https://codeburst.io/javascript-prototype-cb29d82b8809</a>
+<a href="<<<https://codeburst.io/javascript-prototype-cb29d82b8809>>>" class="markup--anchor markup--p-anchor">https://codeburst.io/javascript-prototype-cb29d82b8809</a>
 
 <a href="https://www.codementor.io/sandeepranjan2007/prototype-in-javascipt-knbve0lqo" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.codementor.io/sandeepranjan2007/prototype-in-javascipt-knbve0lqo"><strong>Prototype in Javascript | Codementor</strong>
 <br/>
@@ -2984,10 +2963,10 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>Let's start with an example. This handler is assigned to , but also runs if you click any nested tag like or : Isn't it…</em>javascript.info</a><a href="https://javascript.info/bubbling-and-capturing" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://www.youtube.com/watch?v=Jh_Uzqzz_wM>" class="markup--anchor markup--p-anchor">https://www.youtube.com/watch?v=Jh_Uzqzz_wM</a>
+<a href="<<<https://www.youtube.com/watch?v=Jh_Uzqzz_wM>>>" class="markup--anchor markup--p-anchor">https://www.youtube.com/watch?v=Jh_Uzqzz_wM</a>
 
-<a href="<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures>" class="markup--anchor markup--p-anchor">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</a>  
-<a href="<https://javascript.info/closure>" class="markup--anchor markup--p-anchor">https://javascript.info/closure</a>
+<a href="<<<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures>>>" class="markup--anchor markup--p-anchor">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</a>  
+<a href="<<<https://javascript.info/closure>>>" class="markup--anchor markup--p-anchor">https://javascript.info/closure</a>
 
 <a href="https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8"><strong>I never understood JavaScript closures</strong>
 <br/>
@@ -3004,7 +2983,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>When you're first learning JavaScript, terms like "closures" may make the language appear mystical and hard to…</em>codeburst.io</a><a href="https://codeburst.io/understanding-javascript-closures-da6aab330302" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://codeburst.io/understand-closures-in-javascript-d07852fa51e7>" class="markup--anchor markup--p-anchor">https://codeburst.io/understand-closures-in-javascript-d07852fa51e7</a>
+<a href="<<<https://codeburst.io/understand-closures-in-javascript-d07852fa51e7>>>" class="markup--anchor markup--p-anchor">https://codeburst.io/understand-closures-in-javascript-d07852fa51e7</a>
 
 <a href="https://medium.freecodecamp.org/javascript-closures-simplified-d0d23fa06ba4" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.freecodecamp.org/javascript-closures-simplified-d0d23fa06ba4"><strong>A simple guide to help you understand closures in JavaScript</strong>
 <br/>
@@ -3101,7 +3080,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>I gain more understanding of a topic when I get to talk/write about it... much to my wife's horror as she has zero…</em>dev.to</a><a href="https://dev.to/brandonleboeuf/closure-in-javascript-49n7" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://www.youtube.com/watch?v=1JsJx1x35c0>" class="markup--anchor markup--p-anchor">https://www.youtube.com/watch?v=1JsJx1x35c0</a>
+<a href="<<<https://www.youtube.com/watch?v=1JsJx1x35c0>>>" class="markup--anchor markup--p-anchor">https://www.youtube.com/watch?v=1JsJx1x35c0</a>
 
 <a href="https://eloquentjavascript.net/05_higher_order.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://eloquentjavascript.net/05_higher_order.html"><strong>Higher-Order Functions :: Eloquent JavaScript</strong>
 <br/>
@@ -3618,7 +3597,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>Like many new developers before me, Big O went straight over my head the first time I heard about it. It was a topic…</em>medium.com</a><a href="https://medium.com/@gmedina229/big-o-in-javascript-36ff67766051" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<http://www.bradoncode.com/blog/2012/04/big-o-algorithm-examples-in-javascript.html>" class="markup--anchor markup--p-anchor">http://www.bradoncode.com/blog/2012/04/big-o-algorithm-examples-in-javascript.html</a>
+<a href="<<<http://www.bradoncode.com/blog/2012/04/big-o-algorithm-examples-in-javascript.html>>>" class="markup--anchor markup--p-anchor">http://www.bradoncode.com/blog/2012/04/big-o-algorithm-examples-in-javascript.html</a>
 
 <a href="https://www.jenniferbland.com/time-complexity-analysis-in-javascript/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.jenniferbland.com/time-complexity-analysis-in-javascript/"><strong>Time Complexity Analysis in JavaScript</strong>
 <br/>
@@ -3695,7 +3674,7 @@ Inheritancecodeburst.io</a><a href="https://codeburst.io/master-javascript-proto
 
 <em>Detailed walk thorough of inheritance in JavaScript</em>medium.com</a><a href="https://medium.com/@happymishra66/inheritance-in-javascript-21d2b82ffa6f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="<https://www.sitepoint.com/simple-inheritance-javascript/>" class="markup--anchor markup--p-anchor">https://www.sitepoint.com/simple-inheritance-javascript/</a>
+<a href="<<<https://www.sitepoint.com/simple-inheritance-javascript/>>>" class="markup--anchor markup--p-anchor">https://www.sitepoint.com/simple-inheritance-javascript/</a>
 
 <a href="https://codeburst.io/javascript-inheritance-25fe61ab9f85" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://codeburst.io/javascript-inheritance-25fe61ab9f85"><strong>JavaScript — Inheritance, delegation patterns and Object linking</strong>
 <br/>
@@ -4015,4 +3994,3 @@ Partial Application and Curry</em>medium.com</a><a href="https://medium.com/java
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 3, 2021](https://medium.com/p/633549469528).
 
 <a href="https://medium.com/@bryanguner/absolutely-everything-you-could-need-to-know-about-how-javascript-works-633549469528" class="p-canonical">Canonical link</a>
-

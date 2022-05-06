@@ -13,29 +13,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-iframe {
-    border-radius: 16px;
-    border: 1px solid gold;
-    height: 1100px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    align-self: center;
-    overflow: scroll !important;
-    resize: both !important;
-}
-
-#scrollBtn {
-    position: fixed;
-    top: 30px;
-    right: 10px;
-    width: 80px;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.856);
-    border-radius: 15px;
-}
-
 mark,
 ins {
     background: $yellow-pale;
@@ -76,16 +53,10 @@ pre {
 a {
     color: $color-primary;
     text-decoration: underline;
-    -webkit-transition: color 0.1s ease;
-    transition: color 0.1s ease;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-left: -0.3125em;
-    margin-right: -0.3125em;
-    padding: 0;
-    flex: 1 1 240px;
-    margin: 0 0.3125em 0.9375em;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.125em;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
         color: $gray-600;

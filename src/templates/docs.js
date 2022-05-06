@@ -5,7 +5,6 @@ import React from 'react';
 import DocsMenu from '../components/DocsMenu';
 import { Layout } from '../components/index';
 import { getPages, htmlToReact, Link, withPrefix } from '../utils';
-import '@justinribeiro/code-block';
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`

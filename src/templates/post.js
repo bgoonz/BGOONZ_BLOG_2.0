@@ -45,7 +45,6 @@ export default class Post extends React.Component {
                         <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
                     </div>
                     <Disqus />
-                    <div className="gcse-search"></div>
                 </article>
             </Layout>
         );
