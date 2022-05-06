@@ -199,7 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe class="utterances-frame" title="Comments" scrolling="no" src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=bgoonz%2FBGOONZ_BLOG_2.0&issue-term=url&label=comment&theme=github-light&crossorigin=anonymous&async=&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2Fadmin%2F&origin=https%3A%2F%2Fbgoonz-blog.netlify.app&pathname=admin%2F&title=Content+Manager&description=&og%3Atitle=&session=893b13e5949a24761d07a5a8lPqWXyqXu6NYrAlbw5%2FXWJwhyGoNgw0Nfqt4f6jL%2B%2BhqBSHrR9YC4g4tA5eUQRuWlCEvLGnO9En39ieuEAzoM840RS6pkSo8sL5ViCXQ3IcqQR68vd%2FbOvjEWgU%3D" loading="lazy"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -213,17 +213,7 @@ sections:
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
-      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
+      <iframe sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
@@ -231,8 +221,10 @@ sections:
     image_alt: tools
     image_position: left
     content: |
-      ![Tool Showcase](images/static-server-5bf5ad2d.PNG)Tool Showcase
-      https://bgoonz-blog.netlify.app/docs/tools/
+      <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/"></iframe> 
+      <iframe src="about:blank" frameBorder={0} scrolling="no" width="64px" height="60px" style={{outline: 'none !important', visibility: 'visible !important', resize: 'none !important', boxShadow: 'none !important', overflow: 'visible !important', background: 'none !important', opacity: '1 !important', filter: 'alpha(opacity=100) !important', msFilter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity 1}) !important', MzOpacity: '1 !important', KhtmlOpacity: '1 !important', top: 'auto !important', right: '20px !important', bottom: '20px !important', left: 'auto !important', position: 'fixed !important', border: '0 !important', minHeight: '60px !important', minWidth: '64px !important', maxHeight: '60px !important', maxWidth: '64px !important', padding: '0 !important', margin: '0 !important', MozTransitionProperty: 'none !important', WebkitTransitionProperty: 'none !important', OTransitionProperty: 'none !important', transitionProperty: 'none !important', transform: 'none !important', WebkitTransform: 'none !important', msTransform: 'none !important', width: '64px !important', height: '60px !important', display: 'block !important', zIndex: '1000001 !important', backgroundColor: 'transparent !important', cursor: 'none !important', float: 'none !important', borderRadius: 'unset !important', pointerEvents: 'auto !important', clip: 'auto !important', colorScheme: 'light !important'}} id="epd0c559dbd1651807292197" className title="chat widget" />
+      <div id='tawk_613041ecd6e7610a49b3326a'></div>
     actions: []
     type: section_content
     title: Tools Showcase

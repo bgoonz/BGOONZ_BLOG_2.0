@@ -12,7 +12,7 @@ author: src/data/authors/bgoon.yaml
 categories:
   - src/data/categories/tools.yaml
 tags:
-  - src/data/tags/🖇-🖇-🖇-🖇.yaml
+  - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/adding-css-to-your-html.md

@@ -1,6 +1,3 @@
 [build]
 publish = "public"
-	functions = "./functions"
-command = "npm run build"
-  [[plugins]]
-  package = "@netlify/plugin-gatsby"
+command = "gatsby clean && npm run build"
