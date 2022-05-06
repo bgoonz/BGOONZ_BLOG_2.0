@@ -32,7 +32,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed"  width="1000px" ></iframe>
+<iframe  src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed" height="1000px" width="1000px" ></iframe>
 
 <br>
 <br>
