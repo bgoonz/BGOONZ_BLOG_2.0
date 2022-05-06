@@ -223,7 +223,7 @@ sections:
     content: |
       <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
       <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/"></iframe> 
-      <iframe src="about:blank" frameBorder={0} scrolling="no" width="64px" height="60px" style={{outline: 'none', visibility: 'visible', resize: 'none', boxShadow: 'none', overflow: 'visible', background: 'none', opacity: '1', filter: 'alpha(opacity=100)', msFilter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity 1})', MzOpacity: '1', KhtmlOpacity: '1', top: 'auto', right: '20px', bottom: '20px', left: 'auto', position: 'fixed', border: '0', minHeight: '60px', minWidth: '64px', maxHeight: '60px', maxWidth: '64px', padding: '0', margin: '0', MozTransitionProperty: 'none', WebkitTransitionProperty: 'none', OTransitionProperty: 'none', transitionProperty: 'none', transform: 'none', WebkitTransform: 'none', msTransform: 'none', width: '64px', height: '60px', display: 'block', zIndex: '1000001', backgroundColor: 'transparent', cursor: 'none', float: 'none', borderRadius: 'unset', pointerEvents: 'auto', clip: 'auto', colorScheme: 'light !important'}} id="epd0c559dbd1651807292197" className title="chat widget" />
+      <iframe src="about:blank" frameBorder={0} scrolling="no" width="64px" height="60px"  id="epd0c559dbd1651807292197" className title="chat widget" />
       <div id='tawk_613041ecd6e7610a49b3326a'></div>
     actions: []
     type: section_content
