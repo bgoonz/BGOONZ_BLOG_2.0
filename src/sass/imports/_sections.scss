@@ -102,13 +102,13 @@
     }
 }
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 1201px) {
     .block-text {
         .grid-item {
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-                max-width: 60%;
+                max-width: 50%;
             }
         }
     }
@@ -130,7 +130,7 @@
     }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1001px) {
     .block-image {
         &:not(:only-child) {
             padding-right: 2.5em;
@@ -152,7 +152,7 @@
     .has-gradient {
         border-radius: $border-radius;
         margin-bottom: 1.875em;
-        padding: 3.55em 3vw 1.575em;
+        padding: 3.75em 3vw 1.875em;
     }
 
     .block-header {

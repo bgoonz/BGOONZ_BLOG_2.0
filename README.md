@@ -1,15 +1,16 @@
 <div align="center">
 
+# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#websitehttpsbgoonz-blognetlifyapp)
-
-# ➤ [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
-  
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
 </div>
 
 ---
+
+
+
+
 
 <div align="center">
 
@@ -17,7 +18,7 @@
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
+
 
 </div>
 <div align="center">
@@ -30,6 +31,8 @@
 
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
 
+  
+  
 ---
   
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
@@ -40,144 +43,81 @@
 
 <summary> Bash Commands</summary>
 
+## My Commands
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-commands)
+## # Find
 
-## ➤ My Commands
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-find)
-
-## ➤ # Find
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
-
-# ➤ To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG)
+# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG)
 
 find . -iname "\*.jpg"
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-directories)
-
-# ➤ To find directories
+# To find directories
 
 find . -type d
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files)
-
-# ➤ To find files
+# To find files
 
 find . -type f
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-by-octal-permission)
-
-# ➤ To find files by octal permission
+# To find files by octal permission
 
 find . -type f -perm 777
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-with-setuid-bit-set)
-
-# ➤ To find files with setuid bit set
+# To find files with setuid bit set
 
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-with-extension-txt-and-remove-them)
-
-# ➤ To find files with extension '.txt' and remove them
+# To find files with extension '.txt' and remove them
 
 find ./path/ -name '\*.txt' -exec rm '{}' \;
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-with-extension-txt-and-look-for-a-string-into-them)
-
-# ➤ To find files with extension '.txt' and look for a string into them
+# To find files with extension '.txt' and look for a string into them
 
 find ./path/ -name '\*.txt' | xargs grep 'string'
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size)
-
-# ➤ To find files with size bigger than 5 Mebibyte and sort them by size
+# To find files with size bigger than 5 Mebibyte and sort them by size
 
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-bigger-than-2-megabyte-and-list-them)
-
-# ➤ To find files bigger than 2 Megabyte and list them
+# To find files bigger than 2 Megabyte and list them
 
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-files-modified-more-than-7-days-ago-and-list-file-information)
-
-# ➤ To find files modified more than 7 days ago and list file information
+# To find files modified more than 7 days ago and list file information
 
 find . -type f -mtime +7d -ls
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-symlinks-owned-by-a-user-and-list-file-information)
-
-# ➤ To find symlinks owned by a user and list file information
+# To find symlinks owned by a user and list file information
 
 find . -type l -user <username-or-userid> -ls
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-search-for-and-delete-empty-directories)
-
-# ➤ To search for and delete empty directories
+# To search for and delete empty directories
 
 find . -type d -empty -exec rmdir {} \;
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-search-for-directories-named-build-at-a-max-depth-of-2-directories)
-
-# ➤ To search for directories named build at a max depth of 2 directories
+# To search for directories named build at a max depth of 2 directories
 
 find . -maxdepth 2 -name build -type d
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-search-all-files-who-are-not-in-git-directory)
-
-# ➤ To search all files who are not in .git directory
+# To search all files who are not in .git directory
 
 find . ! -iwholename '_.git_' -type f
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
-
-# ➤ To find all files that have the same node (hard link) as MY_FILE_HERE
+# To find all files that have the same node (hard link) as MY_FILE_HERE
 
 find . -type f -samefile MY_FILE_HERE 2> /dev/null
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
-
-# ➤ To find all files in the current directory and modify their permissions
+# To find all files in the current directory and modify their permissions
 
 find . -type f -exec chmod 644 {} \;
 
+# 1. Remove spaces from file and folder names and then remove numbers from files and folder names
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#1-remove-spaces-from-file-and-folder-names-and-then-remove-numbers-from-files-and-folder-names)
-
-# ➤ 1. Remove spaces from file and folder names and then remove numbers from files and folder names
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-need-to--sudo-apt-install-rename)
-
-## ➤ Description: need to : `sudo apt install rename`
+## Description: need to : `sudo apt install rename`
 
 > Notes: Issue when renaming file without numbers collides with existing file name...
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ # code
+## # code
 
 ```sh
 find . -name "* *" -type d | rename 's/ /_/g'
@@ -196,19 +136,13 @@ for i in *.html; do mv "$i" "${i%-*}.html"; done
 for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 
 ---
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-combine-the-contents-of-every-file-in-the-contaning-directory)
-
-## ➤ Description: combine the contents of every file in the contaning directory.
+## Description: combine the contents of every file in the contaning directory.
 
 > Notes: this includes the contents of the file it's self...
 
+## # code:
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ # code:
-
-
+```js
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -222,22 +156,13 @@ fs.writeFile('output.md', cat, err =>  {
 
 ---
 
+# 2. Download Website Using Wget
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#2-download-website-using-wget)
-
-# ➤ 2. Download Website Using Wget
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes: ==> sudo apt install wget
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -247,22 +172,13 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ---
 
+# 3. Clean Out Messy Git Repo
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#3-clean-out-messy-git-repo)
-
-# ➤ 3. Clean Out Messy Git Repo
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-recursively-removes-git-related-folders-as-well-as-internal-use-files--attributions-in-addition-to-empty-folders)
-
-## ➤ Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
+## Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
 > Notes: To clear up clutter in repositories that only get used on your local machine.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -276,27 +192,15 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ---
 
+# 4. clone all of a user's git repositories
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#4-clone-all-of-a-users-git-repositories)
-
-# ➤ 4. clone all of a user's git repositories
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-clone-all-of-a-user-or-organizations-git-repositories)
-
-## ➤ Description: clone all of a user or organization's git repositories
+## Description: clone all of a user or organization's git repositories
 
 > Notes:
 
+## ## code
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#generalized)
-
-# ➤ Generalized
+# Generalized
 
 ```sh
 
@@ -307,10 +211,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   xargs -L1 git clone
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#clone-all-git-user)
-
-# ➤ Clone all Git User
+# Clone all Git User
 
 ```sh
 CNTX={users}; NAME={bgoonz}; PAGE=1
@@ -321,10 +222,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#clone-all-git-organization)
-
-# ➤ Clone all Git Organization
+# Clone all Git Organization
 
 ```sh
 
@@ -338,20 +236,11 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ---
 
+# 5. Git Workflow
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#5-git-workflow)
+## Description
 
-# ➤ 5. Git Workflow
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 git pull
@@ -392,22 +281,13 @@ git push -u origin preview
 
 ---
 
+# 6. Recursive Unzip In Place
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#6-recursive-unzip-in-place)
-
-# ➤ 6. Recursive Unzip In Place
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-recursively-unzips-folders-and-then-deletes-the-zip-file-by-the-same-name)
-
-## ➤ Description: recursively unzips folders and then deletes the zip file by the same name
+## Description: recursively unzips folders and then deletes the zip file by the same name
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -419,22 +299,13 @@ find . -name "*.zip" -type f -print -delete
 
 ---
 
+# 7. git pull keeping local changes
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#7-git-pull-keeping-local-changes)
-
-# ➤ 7. git pull keeping local changes
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -446,22 +317,13 @@ git stash pop
 
 ---
 
+# 8. Prettier Code Formatter
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#8-prettier-code-formatter)
-
-# ➤ 8. Prettier Code Formatter
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -473,22 +335,13 @@ prettier --write .
 
 ---
 
+# 9. Pandoc
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#9-pandoc)
-
-# ➤ 9. Pandoc
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -502,22 +355,13 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ---
 
+# 10. Gitpod Installs
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#10-gitpod-installs)
-
-# ➤ 10. Gitpod Installs
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo apt install tree
@@ -540,22 +384,13 @@ npm-recursive-install
 
 ---
 
+# 11. Repo Utils Package
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#11-repo-utils-package)
-
-# ➤ 11. Repo Utils Package
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-my-standard-repo-utis-package)
-
-## ➤ Description: my standard repo utis package
+## Description: my standard repo utis package
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 npm i @bgoonz11/repoutils
@@ -564,22 +399,13 @@ npm i @bgoonz11/repoutils
 
 ---
 
+# 12. Unix Tree Package Usage
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#12-unix-tree-package-usage)
-
-# ➤ 12. Unix Tree Package Usage
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 tree -d -I  'node_modules'
@@ -600,22 +426,13 @@ tree -f > README.md
 
 ---
 
+# 13. Find & Replace string in file & folder names recursively
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#13-find--replace-string-in-file--folder-names-recursively)
-
-# ➤ 13. Find & Replace string in file & folder names recursively
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -637,22 +454,13 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ---
 
+# 14. Remove double extensions
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#14-remove-double-extensions)
-
-# ➤ 14. Remove double extensions
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 #!/bin/bash
@@ -688,22 +496,13 @@ done
 
 ---
 
+# 15. Truncate folder names down to 12 characters
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#15-truncate-folder-names-down-to-12-characters)
-
-# ➤ 15. Truncate folder names down to 12 characters
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -713,24 +512,15 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ---
 
+# 16.Appendir.js
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#16appendirjs)
-
-# ➤ 16.Appendir.js
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-combine-the-contents-of-every-file-in-the-contaning-directory)
-
-## ➤ Description: combine the contents of every file in the contaning directory
+## Description: combine the contents of every file in the contaning directory
 
 > Notes: this includes the contents of the file it's self...
 
+## ## code
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
-
-
+```js
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -741,22 +531,13 @@ fs.writeFile('output.md', cat, (err) => {
 
 ---
 
+# 17. Replace space in filename with underscore
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#17-replace-space-in-filename-with-underscore)
-
-# ➤ 17. Replace space in filename with underscore
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-followed-by-replace--with-_-in-directory-name)
-
-## ➤ Description: followed by replace `'#' with '_'` in directory name
+## Description: followed by replace `'#' with '_'` in directory name
 
 > Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 find . -name "* *" -type f | rename 's/_//g'
@@ -767,22 +548,13 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ---
 
+# 18. Filter & delete files by name and extension
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#18-filter--delete-files-by-name-and-extension)
-
-# ➤ 18. Filter & delete files by name and extension
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
@@ -803,15 +575,9 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 ---
 
+# 19. Remove lines containing string
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#19-remove-lines-containing-string)
-
-# ➤ 19. Remove lines containing string
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes: Remove lines not containing `'.js'`
 
@@ -821,10 +587,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -839,15 +602,9 @@ sudo sed -i '/author/d' ./*
 
 ---
 
+# 20. Remove duplicate lines from a text file
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#20-remove-duplicate-lines-from-a-text-file)
-
-# ➤ 20. Remove duplicate lines from a text file
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 > //...syntax of uniq...//
@@ -856,10 +613,7 @@ sudo sed -i '/author/d' ./*
 
 Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo apt install uniq
@@ -869,22 +623,13 @@ uniq -u input.txt output.txt
 
 ---
 
+# 21. Remove lines containing string
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#21-remove-lines-containing-string)
-
-# ➤ 21. Remove lines containing string
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -916,22 +661,13 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ---
 
+# 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#22-zip-directory-excluding-git-and-node_modules-all-the-way-down-linux)
-
-# ➤ 22. Zip directory excluding .git and node_modules all the way down (Linux)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -941,48 +677,24 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
+# usage:
+# - zipdir thedir
+# - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#usage)
-
-# ➤ usage:
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#--zipdir-thedir)
-
-# ➤ - zipdir thedir
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#--zip-thedir--x-anotherexcludedsubdir----important-the-double-quotes-to-prevent-glob-expansion)
-
-# ➤ - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#if-in-windowsgit-bash-add-zip-command-this-way)
-
-# ➤ if in windows/git-bash, add 'zip' command this way:
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpsstackoverflowcoma557496361482990)
-
-# ➤ https://stackoverflow.com/a/55749636/1482990
+# if in windows/git-bash, add 'zip' command this way:
+# https://stackoverflow.com/a/55749636/1482990
 
 ```
 
 ---
 
+# 23. Delete files containing a certain string
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#23-delete-files-containing-a-certain-string)
-
-# ➤ 23. Delete files containing a certain string
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' >  doit.sh
@@ -993,31 +705,19 @@ source doit.sh
 
 ---
 
+# 24
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#24)
-
-# ➤ 24
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
 #!/bin/sh
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#find---grep--i---files)
-
-# ➤ find ./ | grep -i "\.*$" > files
+# find ./ | grep -i "\.*$" > files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$"> files
 listing="files"
 
@@ -1114,15 +814,9 @@ cmd $listing --sort=extension > > $html
 
 ---
 
+# 25. Index of Iframes
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#25-index-of-iframes)
-
-# ➤ 25. Index of Iframes
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-creates-an-indexhtml-file-that-contains-all-the-files-in-the-working-directory-or-any-of-its-sub-folders-as-iframes-instead-of-anchor-tags)
-
-## ➤ Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
+## Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
 
 > Notes: Useful Follow up Code:
 
@@ -1130,19 +824,13 @@ cmd $listing --sort=extension > > $html
 
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
 #!/bin/sh
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#find---grep--i---files)
-
-# ➤ find ./ | grep -i "\.*$" > files
+# find ./ | grep -i "\.*$" > files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$"> files
 listing="files"
 
@@ -1238,22 +926,13 @@ cmd $listing --sort=extension > > $html
 
 ---
 
+# 26. Filter Corrupted Git Repo For Troublesome File
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#26-filter-corrupted-git-repo-for-troublesome-file)
-
-# ➤ 26. Filter Corrupted Git Repo For Troublesome File
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1263,15 +942,9 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_in
 
 ---
 
+# 27. OVERWRITE LOCAL CHANGES
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#27-overwrite-local-changes)
-
-# ➤ 27. OVERWRITE LOCAL CHANGES
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
@@ -1279,45 +952,24 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 > Notes:
 > First, run a fetch to update all origin/<branch> refs to latest:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
 git fetch --all
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#backup-your-current-branch)
-
-# ➤ Backup your current branch:
+# Backup your current branch:
 
 git branch backup-master
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#then-you-have-two-options)
-
-# ➤ Then, you have two options:
+# Then, you have two options:
 
 git reset --hard origin/master
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#or-if-you-are-on-some-other-branch)
-
-# ➤ OR If you are on some other branch:
+# OR If you are on some other branch:
 
 git reset --hard origin/<branch_name>
+# Explanation:
+# git fetch downloads the latest from remote without trying to merge or rebase anything.
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#explanation)
-
-# ➤ Explanation:
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#git-fetch-downloads-the-latest-from-remote-without-trying-to-merge-or-rebase-anything)
-
-# ➤ git fetch downloads the latest from remote without trying to merge or rebase anything.
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#then-the-git-reset-resets-the-master-branch-to-what-you-just-fetched-the---hard-option-changes-all-the-files-in-your-working-tree-to-match-the-files-in-originmaster)
-
-# ➤ Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
+# Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
 git fetch --all
 git reset --hard origin/master
 
@@ -1325,15 +977,9 @@ git reset --hard origin/master
 
 ---
 
+# 28. Remove Submodules
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#28-remove-submodules)
-
-# ➤ 28. Remove Submodules
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-to-remove-a-submodule-you-need-to)
-
-## ➤ Description: To remove a submodule you need to
+## Description: To remove a submodule you need to
 
 > Notes:
 
@@ -1345,10 +991,7 @@ git reset --hard origin/master
 > Commit git commit -m "Removed submodule "
 > Delete the now untracked submodule files rm -rf path_to_submodule
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 git submodule deinit
@@ -1356,22 +999,13 @@ git submodule deinit
 
 ---
 
+# 29. GET GISTS
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#29-get-gists)
-
-# ➤ 29. GET GISTS
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo apt install wget
@@ -1388,22 +1022,13 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ---
 
+# 30. Remove Remote OriginL
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#30-remove-remote-originl)
-
-# ➤ 30. Remove Remote OriginL
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1413,22 +1038,13 @@ git remote remove origin
 
 ---
 
+# 31. just clone .git folder
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#31-just-clone-git-folder)
-
-# ➤ 31. just clone .git folder
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1438,22 +1054,13 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ---
 
+# 32. Undo recent pull request
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#32-undo-recent-pull-request)
-
-# ➤ 32. Undo recent pull request
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1463,28 +1070,16 @@ git reset --hard master@{"10 minutes ago"}
 
 ---
 
+# 33. Lebab
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#33-lebab)
-
-# ➤ 33. Lebab
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-es5----es6)
-
-## ➤ Description: ES5 --> ES6
+## Description: ES5 --> ES6
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#safe)
-
-# ➤ Safe:
+# Safe:
 
  lebab --replace ./ --transform arrow
  lebab --replace ./ --transform arrow-return
@@ -1496,10 +1091,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#all)
-
-# ➤ ALL:
+# ALL:
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1535,22 +1127,13 @@ lebab --replace ./ --transform includes
 
 ---
 
+# 34. Troubleshoot Ubuntu Input/Output Error
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#34-troubleshoot-ubuntu-inputoutput-error)
-
-# ➤ 34. Troubleshoot Ubuntu Input/Output Error
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-open-powershell-as-administrator)
-
-## ➤ Description: Open Powershell as Administrator
+## Description: Open Powershell as Administrator
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```ps1
 
@@ -1562,22 +1145,13 @@ lebab --replace ./ --transform includes
 
 ---
 
+# 35. Export Medium as Markdown
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#35-export-medium-as-markdown)
-
-# ➤ 35. Export Medium as Markdown
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 npm i mediumexporter -g
@@ -1588,22 +1162,13 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ---
 
+# 36. Delete files in violation of a given size range (100MB for git)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#36-delete-files-in-violation-of-a-given-size-range-100mb-for-git)
-
-# ➤ 36. Delete files in violation of a given size range (100MB for git)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1615,22 +1180,13 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ---
 
+# 37. download all links of given file type
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#37-download-all-links-of-given-file-type)
-
-# ➤ 37. download all links of given file type
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1640,22 +1196,13 @@ wget -r -A.pdf https://overapi.com/git
 
 ---
 
+# 38. Kill all node processes
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#38-kill-all-node-processes)
-
-# ➤ 38. Kill all node processes
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 killall -s KILL node
@@ -1664,20 +1211,11 @@ killall -s KILL node
 
 ---
 
+# 39. Remove string from file names recursively
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#39-remove-string-from-file-names-recursively)
+## Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
 
-# ➤ 39. Remove string from file names recursively
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-in-the-example-below-i-am-using-this-command-to-remove-the-string--master-from-all-file-names-in-the-working-directory-and-all-of-its-sub-directories)
-
-## ➤ Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
@@ -1697,22 +1235,13 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ---
 
+# 40. Remove spaces from file and folder names recursively
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#40-remove-spaces-from-file-and-folder-names-recursively)
-
-# ➤ 40. Remove spaces from file and folder names recursively
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-replaces-spaces-in-file-and-folder-names-with-an-_-underscore)
-
-## ➤ Description: replaces spaces in file and folder names with an `_` underscore
+## Description: replaces spaces in file and folder names with an `_` underscore
 
 > Notes: need to run `sudo apt install rename` to use this command
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1722,22 +1251,13 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ---
 
+# 41. Zip Each subdirectories in a given directory into their own zip file
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#41-zip-each-subdirectories-in-a-given-directory-into-their-own-zip-file)
-
-# ➤ 41. Zip Each subdirectories in a given directory into their own zip file
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 for i in */; do zip -r "${i%/}.zip" "$i"; done
@@ -1746,27 +1266,15 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ---
 
+# 90
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#90)
+# 91. Unzip PowerShell
 
-# ➤ 90
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#91-unzip-powershell)
-
-# ➤ 91. Unzip PowerShell
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```ps1
 
@@ -1793,22 +1301,13 @@ foreach ($ZipFile in $ZipFiles) {
 
 ---
 
+# 92. return to bash from zsh
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#92-return-to-bash-from-zsh)
-
-# ➤ 92. return to bash from zsh
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
  sudo apt --purge remove zsh
@@ -1817,22 +1316,13 @@ foreach ($ZipFile in $ZipFiles) {
 
 ---
 
+# 93. Symbolic Link
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#93-symbolic-link)
-
-# ➤ 93. Symbolic Link
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-to-working-directory)
-
-## ➤ Description: to working directory
+## Description: to working directory
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1844,22 +1334,13 @@ ln -s "$(pwd)" ~/Downloads
 
 ---
 
+# 94. auto generate readme
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#94-auto-generate-readme)
-
-# ➤ 94. auto generate readme
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description-rename-existing-readme-to-blueprintmd)
-
-## ➤ Description: rename existing readme to blueprint.md
+## Description: rename existing readme to blueprint.md
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1869,22 +1350,13 @@ npx @appnest/readme generate
 
 ---
 
+# 95. Log into postgres
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#95-log-into-postgres)
-
-# ➤ 95. Log into postgres
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 sudo -u postgres psql
@@ -1892,10 +1364,7 @@ sudo -u postgres psql
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#technologies-used)
-
-## ➤ Technologies Used
+## Technologies Used
 
 | URL                  | <https://bgoonz-blog.netlify.app>                        |
 |----------------------|----------------------------------------------------------|
@@ -1916,22 +1385,13 @@ sudo -u postgres psql
 
 ---
 
+# 96. URL To Subscribe To YouTube Channel
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#96-url-to-subscribe-to-youtube-channel)
-
-# ➤ 96. URL To Subscribe To YouTube Channel
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```txt
 
@@ -1941,15 +1401,9 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 ---
 
+# 97. Embed Repl.it In Medium Post
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#97-embed-replit-in-medium-post)
-
-# ➤ 97. Embed Repl.it In Medium Post
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```txt
 
@@ -1965,22 +1419,13 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ---
 
+# 98
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#98)
-
-# ➤ 98
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#description)
-
-## ➤ Description
+## Description
 
 > Notes:
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-code)
-
-## ➤ ## code
+## ## code
 
 ```sh
 
@@ -1996,10 +1441,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#wiki-nav)
-
-## ➤ Wiki Nav
+## Wiki Nav
 
 - [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 - [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
@@ -2038,10 +1480,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#dependencies)
-
-## ➤ Dependencies
+## Dependencies
 
 <details>
   <summary>Click to expand!</summary>
@@ -2144,10 +1583,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docs-structure)
-
-## ➤ Docs Structure
+## Docs Structure
 
 <details>
 <summary>  Docs Structure  </summary>
@@ -2383,985 +1819,397 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
 
+# SITEMAP
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#sitemap)
+# [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
 
-# ➤ SITEMAP
+## [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
 
+## [**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpsbgoonz-blognetlifyapphttpsbgoonz-blognetlifyapp)
+## [**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
 
-# ➤ [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
+## [**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
 
+## [**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#bloghttpsbgoonz-blognetlifyappblog)
+## [**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
 
-## ➤ [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
+## [**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
 
+## [**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docshttpsbgoonz-blognetlifyappdocs)
+## [**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
 
-## ➤ [**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
+## [**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
 
+## [**🌍⇒blog/flow-control-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#readmehttpsbgoonz-blognetlifyappreadme)
+## [**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
 
-## ➤ [**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
+## [**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
 
+## [**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#reviewhttpsbgoonz-blognetlifyappreview)
+## [**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
 
-## ➤ [**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
+## [**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
 
+## [**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#showcasehttpsbgoonz-blognetlifyappshowcase)
+## [**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
 
-## ➤ [**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
+## [**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
 
+## [**🌍⇒blog/python-resources🗺️**](https://bgoonz-blog.netlify.app/blog/python-resources)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogawesome-graphqlhttpsbgoonz-blognetlifyappblogawesome-graphql)
+## [**🌍⇒blog/web-dev-trends🗺️**](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
 
-## ➤ [**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
+## [**🌍⇒blog/web-scraping🗺️**](https://bgoonz-blog.netlify.app/blog/web-scraping)
 
+## [**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogbig-o-complexityhttpsbgoonz-blognetlifyappblogbig-o-complexity)
+## [**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
 
-## ➤ [**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
+## [**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
 
+## [**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogblog-archivehttpsbgoonz-blognetlifyappblogblog-archive)
+## [**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
 
-## ➤ [**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
+## [**🌍⇒docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/content)
 
+## [**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogblogwcommentshttpsbgoonz-blognetlifyappblogblogwcomments)
+## [**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
 
-## ➤ [**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
+## [**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
 
+## [**🌍⇒docs/interact🗺️**](https://bgoonz-blog.netlify.app/docs/interact)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogdata-structureshttpsbgoonz-blognetlifyappblogdata-structures)
+## [**🌍⇒docs/javascript🗺️**](https://bgoonz-blog.netlify.app/docs/javascript)
 
-## ➤ [**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
+## [**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
 
+## [**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogflow-control-in-pythonhttpsbgoonz-blognetlifyappblogflow-control-in-python)
+## [**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
 
-## ➤ [**🌍⇒blog/flow-control-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
+## [**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
 
+## [**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogfunctions-in-pythonhttpsbgoonz-blognetlifyappblogfunctions-in-python)
+## [**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
 
-## ➤ [**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
+## [**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
 
+## [**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#bloggit-gatewayhttpsbgoonz-blognetlifyappbloggit-gateway)
+## [**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
 
-## ➤ [**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
+## [**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
 
+## [**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#bloginterview-questions-jshttpsbgoonz-blognetlifyappbloginterview-questions-js)
+## [**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
 
-## ➤ [**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
+## [**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
 
+## [**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogmedia-queries-explainedhttpsbgoonz-blognetlifyappblogmedia-queries-explained)
+## [**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
 
-## ➤ [**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
+## [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
 
+## [**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogmy-mediumhttpsbgoonz-blognetlifyappblogmy-medium)
+## [**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
 
-## ➤ [**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
+## [**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
 
+## [**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blognetlify-cmshttpsbgoonz-blognetlifyappblognetlify-cms)
+## [**🌍⇒docs/articles/event-loop🗺️**](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
 
-## ➤ [**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
+## [**🌍⇒docs/articles/fs-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
 
+## [**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogplatform-docshttpsbgoonz-blognetlifyappblogplatform-docs)
+## [**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
 
-## ➤ [**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
+## [**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
 
+## [**🌍⇒docs/articles/intro🗺️**](https://bgoonz-blog.netlify.app/docs/articles/intro)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogpython-for-js-devhttpsbgoonz-blognetlifyappblogpython-for-js-dev)
+## [**🌍⇒docs/articles/media-queries-no-more🗺️**](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
 
-## ➤ [**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
+## [**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
 
+## [**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogpython-resourceshttpsbgoonz-blognetlifyappblogpython-resources)
+## [**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
 
-## ➤ [**🌍⇒blog/python-resources🗺️**](https://bgoonz-blog.netlify.app/blog/python-resources)
+## [**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
 
+## [**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogweb-dev-trendshttpsbgoonz-blognetlifyappblogweb-dev-trends)
+## [**🌍⇒docs/articles/node-env-variables🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
 
-## ➤ [**🌍⇒blog/web-dev-trends🗺️**](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
+## [**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
 
+## [**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blogweb-scrapinghttpsbgoonz-blognetlifyappblogweb-scraping)
+## [**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
 
-## ➤ [**🌍⇒blog/web-scraping🗺️**](https://bgoonz-blog.netlify.app/blog/web-scraping)
+## [**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
 
+## [**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsabouthttpsbgoonz-blognetlifyappdocsabout)
+## [**🌍⇒docs/articles/nodevsbrowser🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
 
-## ➤ [**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
+## [**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
 
+## [**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleshttpsbgoonz-blognetlifyappdocsarticles)
+## [**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
 
-## ➤ [**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
+## [**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
 
+## [**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudiohttpsbgoonz-blognetlifyappdocsaudio)
+## [**🌍⇒docs/articles/semantic🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic)
 
-## ➤ [**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
+## [**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
 
+## [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscareerhttpsbgoonz-blognetlifyappdocscareer)
+## [**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
 
-## ➤ [**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
+## [**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
 
+## [**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscommunityhttpsbgoonz-blognetlifyappdocscommunity)
+## [**🌍⇒docs/articles/webdev-tools🗺️**](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
 
-## ➤ [**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
+## [**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
 
+## [**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontenthttpsbgoonz-blognetlifyappdocscontent)
+## [**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
 
-## ➤ [**🌍⇒docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/content)
+## [**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
 
+## [**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocshttpsbgoonz-blognetlifyappdocsdocs)
+## [**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
 
-## ➤ [**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
+## [**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
 
+## [**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsfaqhttpsbgoonz-blognetlifyappdocsfaq)
+## [**🌍⇒docs/audio/web-audio-api🗺️**](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
 
-## ➤ [**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
+## [**🌍⇒docs/career/confidence🗺️**](https://bgoonz-blog.netlify.app/docs/career/confidence)
 
+## [**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsgalleryhttpsbgoonz-blognetlifyappdocsgallery)
+## [**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
 
-## ➤ [**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
+## [**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
 
+## [**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteracthttpsbgoonz-blognetlifyappdocsinteract)
+## [**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
 
-## ➤ [**🌍⇒docs/interact🗺️**](https://bgoonz-blog.netlify.app/docs/interact)
+## [**🌍⇒docs/content/algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/algo)
 
+## [**🌍⇒docs/content/archive🗺️**](https://bgoonz-blog.netlify.app/docs/content/archive)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascripthttpsbgoonz-blognetlifyappdocsjavascript)
+## [**🌍⇒docs/content/data-structures-algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
 
-## ➤ [**🌍⇒docs/javascript🗺️**](https://bgoonz-blog.netlify.app/docs/javascript)
+## [**🌍⇒docs/content/gatsby-Queries-Mutations🗺️**](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
 
+## [**🌍⇒docs/content/history-api🗺️**](https://bgoonz-blog.netlify.app/docs/content/history-api)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsleetcodehttpsbgoonz-blognetlifyappdocsleetcode)
+## [**🌍⇒docs/content/projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/projects)
 
-## ➤ [**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
+## [**🌍⇒docs/content/recent-projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
 
+## [**🌍⇒docs/content/trouble-shooting🗺️**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsother-contenthttpsbgoonz-blognetlifyappdocsother-content)
+## [**🌍⇒docs/docs/appendix🗺️**](https://bgoonz-blog.netlify.app/docs/docs/appendix)
 
-## ➤ [**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
+## [**🌍⇒docs/docs/bash🗺️**](https://bgoonz-blog.netlify.app/docs/docs/bash)
 
+## [**🌍⇒docs/docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/docs/content)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsprivacy-policyhttpsbgoonz-blognetlifyappdocsprivacy-policy)
+## [**🌍⇒docs/docs/css🗺️**](https://bgoonz-blog.netlify.app/docs/docs/css)
 
-## ➤ [**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
+## [**🌍⇒docs/docs/data-structures-docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
 
+## [**🌍⇒docs/docs/git-reference🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsprojectshttpsbgoonz-blognetlifyappdocsprojects)
+## [**🌍⇒docs/docs/git-repos🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
 
-## ➤ [**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
+## [**🌍⇒docs/docs/html-spec🗺️**](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
 
+## [**🌍⇒docs/docs/markdown🗺️**](https://bgoonz-blog.netlify.app/docs/docs/markdown)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonhttpsbgoonz-blognetlifyappdocspython)
+## [**🌍⇒docs/docs/no-whiteboarding🗺️**](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
 
-## ➤ [**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
+## [**🌍⇒docs/docs/node-docs-complete🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
 
+## [**🌍⇒docs/docs/node-docs-full🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencehttpsbgoonz-blognetlifyappdocsquick-reference)
+## [**🌍⇒docs/docs/regex-in-js🗺️**](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
 
-## ➤ [**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
+## [**🌍⇒docs/docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
 
+## [**🌍⇒docs/faq/contact🗺️**](https://bgoonz-blog.netlify.app/docs/faq/contact)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreacthttpsbgoonz-blognetlifyappdocsreact)
+## [**🌍⇒docs/faq/plug-ins🗺️**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
 
-## ➤ [**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
+## [**🌍⇒docs/interact/callstack-visual🗺️**](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
 
+## [**🌍⇒docs/interact/clock🗺️**](https://bgoonz-blog.netlify.app/docs/interact/clock)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencehttpsbgoonz-blognetlifyappdocsreference)
+## [**🌍⇒docs/interact/jupyter-notebooks🗺️**](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
 
-## ➤ [**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
+## [**🌍⇒docs/interact/other-sites🗺️**](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
 
+## [**🌍⇒docs/interact/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docssearchhttpsbgoonz-blognetlifyappdocssearch)
+## [**🌍⇒docs/javascript/arrow-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
 
-## ➤ [**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
+## [**🌍⇒docs/javascript/await-keyword🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
 
+## [**🌍⇒docs/javascript/bigo🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docssitemaphttpsbgoonz-blognetlifyappdocssitemap)
+## [**🌍⇒docs/javascript/clean-code🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
 
-## ➤ [**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
+## [**🌍⇒docs/javascript/constructor-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
 
+## [**🌍⇒docs/javascript/promises🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/promises)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolshttpsbgoonz-blognetlifyappdocstools)
+## [**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
 
-## ➤ [**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
+## [**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
 
+## [**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstutorialshttpsbgoonz-blognetlifyappdocstutorials)
+## [**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
 
-## ➤ [**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
+## [**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
 
+## [**🌍⇒docs/python/basics🗺️**](https://bgoonz-blog.netlify.app/docs/python/basics)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsabouteng-portfoliohttpsbgoonz-blognetlifyappdocsabouteng-portfolio)
+## [**🌍⇒docs/python/cheat-sheet🗺️**](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
 
-## ➤ [**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
+## [**🌍⇒docs/python/comprehensive-guide🗺️**](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
 
+## [**🌍⇒docs/python/examples🗺️**](https://bgoonz-blog.netlify.app/docs/python/examples)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaboutideas-for-this-websitehttpsbgoonz-blognetlifyappdocsaboutideas-for-this-website)
+## [**🌍⇒docs/python/flow-control🗺️**](https://bgoonz-blog.netlify.app/docs/python/flow-control)
 
-## ➤ [**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
+## [**🌍⇒docs/python/functions🗺️**](https://bgoonz-blog.netlify.app/docs/python/functions)
 
+## [**🌍⇒docs/python/google-sheets-api🗺️**](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaboutintrestshttpsbgoonz-blognetlifyappdocsaboutintrests)
+## [**🌍⇒docs/python/intro-for-js-devs🗺️**](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
 
-## ➤ [**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
+## [**🌍⇒docs/python/python-ds🗺️**](https://bgoonz-blog.netlify.app/docs/python/python-ds)
 
+## [**🌍⇒docs/python/snippets🗺️**](https://bgoonz-blog.netlify.app/docs/python/snippets)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaboutinterviewhttpsbgoonz-blognetlifyappdocsaboutinterview)
+## [**🌍⇒docs/quick-reference/Emmet🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
 
-## ➤ [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
+## [**🌍⇒docs/quick-reference/all-emojis🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
 
+## [**🌍⇒docs/quick-reference/create-react-app🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaboutresumehttpsbgoonz-blognetlifyappdocsaboutresume)
+## [**🌍⇒docs/quick-reference/git-bash🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
 
-## ➤ [**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
+## [**🌍⇒docs/quick-reference/git-tricks🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
 
+## [**🌍⇒docs/quick-reference/google-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesbasic-web-devhttpsbgoonz-blognetlifyappdocsarticlesbasic-web-dev)
+## [**🌍⇒docs/quick-reference/heroku-error-codes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
 
-## ➤ [**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
+## [**🌍⇒docs/quick-reference/installation🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
 
+## [**🌍⇒docs/quick-reference/markdown-dropdowns🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesbuffershttpsbgoonz-blognetlifyappdocsarticlesbuffers)
+## [**🌍⇒docs/quick-reference/minifiction🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
 
-## ➤ [**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
+## [**🌍⇒docs/quick-reference/new-repo-instructions🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
 
+## [**🌍⇒docs/quick-reference/psql-setup🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesdev-dephttpsbgoonz-blognetlifyappdocsarticlesdev-dep)
+## [**🌍⇒docs/quick-reference/pull-request-rubric🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
 
-## ➤ [**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
+## [**🌍⇒docs/quick-reference/quick-links🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
 
+## [**🌍⇒docs/quick-reference/topRepos🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesevent-loophttpsbgoonz-blognetlifyappdocsarticlesevent-loop)
+## [**🌍⇒docs/quick-reference/understanding-path🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
 
-## ➤ [**🌍⇒docs/articles/event-loop🗺️**](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
+## [**🌍⇒docs/quick-reference/vscode-themes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
 
+## [**🌍⇒docs/react/cheatsheet🗺️**](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesfs-modulehttpsbgoonz-blognetlifyappdocsarticlesfs-module)
+## [**🌍⇒docs/react/createReactApp🗺️**](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
 
-## ➤ [**🌍⇒docs/articles/fs-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
+## [**🌍⇒docs/react/demo🗺️**](https://bgoonz-blog.netlify.app/docs/react/demo)
 
+## [**🌍⇒docs/react/jsx🗺️**](https://bgoonz-blog.netlify.app/docs/react/jsx)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleshow-the-web-workshttpsbgoonz-blognetlifyappdocsarticleshow-the-web-works)
+## [**🌍⇒docs/react/react-docs🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-docs)
 
-## ➤ [**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
+## [**🌍⇒docs/react/react-in-depth🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
 
+## [**🌍⇒docs/react/react2🗺️**](https://bgoonz-blog.netlify.app/docs/react/react2)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleshttphttpsbgoonz-blognetlifyappdocsarticleshttp)
+## [**🌍⇒docs/react/render-elements🗺️**](https://bgoonz-blog.netlify.app/docs/react/render-elements)
 
-## ➤ [**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
+## [**🌍⇒docs/reference/awesome-lists🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
 
+## [**🌍⇒docs/reference/awesome-static🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesinstallhttpsbgoonz-blognetlifyappdocsarticlesinstall)
+## [**🌍⇒docs/reference/bookmarks🗺️**](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
 
-## ➤ [**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
+## [**🌍⇒docs/reference/embed-the-web🗺️**](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
 
+## [**🌍⇒docs/reference/github-search🗺️**](https://bgoonz-blog.netlify.app/docs/reference/github-search)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesintrohttpsbgoonz-blognetlifyappdocsarticlesintro)
+## [**🌍⇒docs/reference/how-2-reinstall-npm🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
 
-## ➤ [**🌍⇒docs/articles/intro🗺️**](https://bgoonz-blog.netlify.app/docs/articles/intro)
+## [**🌍⇒docs/reference/how-to-kill-a-process🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
 
+## [**🌍⇒docs/reference/installing-node🗺️**](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesmedia-queries-no-morehttpsbgoonz-blognetlifyappdocsarticlesmedia-queries-no-more)
+## [**🌍⇒docs/reference/intro-to-nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
 
-## ➤ [**🌍⇒docs/articles/media-queries-no-more🗺️**](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
+## [**🌍⇒docs/reference/notes-template🗺️**](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
 
+## [**🌍⇒docs/reference/psql🗺️**](https://bgoonz-blog.netlify.app/docs/reference/psql)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesmodule-exportshttpsbgoonz-blognetlifyappdocsarticlesmodule-exports)
+## [**🌍⇒docs/reference/resources🗺️**](https://bgoonz-blog.netlify.app/docs/reference/resources)
 
-## ➤ [**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
+## [**🌍⇒docs/reference/vscode🗺️**](https://bgoonz-blog.netlify.app/docs/reference/vscode)
 
+## [**🌍⇒docs/reference/web-api's🗺️**](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnextjshttpsbgoonz-blognetlifyappdocsarticlesnextjs)
+## [**🌍⇒docs/tools/data-structures🗺️**](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
 
-## ➤ [**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
+## [**🌍⇒docs/tools/dev-utilities🗺️**](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
 
+## [**🌍⇒docs/tools/google-cloud🗺️**](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-api-expresshttpsbgoonz-blognetlifyappdocsarticlesnode-api-express)
+## [**🌍⇒docs/tools/markdown-html🗺️**](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
 
-## ➤ [**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
+## [**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-cli-argshttpsbgoonz-blognetlifyappdocsarticlesnode-cli-args)
-
-## ➤ [**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-common-moduleshttpsbgoonz-blognetlifyappdocsarticlesnode-common-modules)
-
-## ➤ [**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-env-variableshttpsbgoonz-blognetlifyappdocsarticlesnode-env-variables)
-
-## ➤ [**🌍⇒docs/articles/node-env-variables🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-js-languagehttpsbgoonz-blognetlifyappdocsarticlesnode-js-language)
-
-## ➤ [**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-package-managerhttpsbgoonz-blognetlifyappdocsarticlesnode-package-manager)
-
-## ➤ [**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-replhttpsbgoonz-blognetlifyappdocsarticlesnode-repl)
-
-## ➤ [**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnode-run-clihttpsbgoonz-blognetlifyappdocsarticlesnode-run-cli)
-
-## ➤ [**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnodejshttpsbgoonz-blognetlifyappdocsarticlesnodejs)
-
-## ➤ [**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnodevsbrowserhttpsbgoonz-blognetlifyappdocsarticlesnodevsbrowser)
-
-## ➤ [**🌍⇒docs/articles/nodevsbrowser🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnpmhttpsbgoonz-blognetlifyappdocsarticlesnpm)
-
-## ➤ [**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesnpxhttpsbgoonz-blognetlifyappdocsarticlesnpx)
-
-## ➤ [**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesos-modulehttpsbgoonz-blognetlifyappdocsarticlesos-module)
-
-## ➤ [**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlespackage-lockhttpsbgoonz-blognetlifyappdocsarticlespackage-lock)
-
-## ➤ [**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesreading-fileshttpsbgoonz-blognetlifyappdocsarticlesreading-files)
-
-## ➤ [**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlessemantichttpsbgoonz-blognetlifyappdocsarticlessemantic)
-
-## ➤ [**🌍⇒docs/articles/semantic🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlessemantic-htmlhttpsbgoonz-blognetlifyappdocsarticlessemantic-html)
-
-## ➤ [**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesthe-uniform-resource-locator-urlhttpsbgoonz-blognetlifyappdocsarticlesthe-uniform-resource-locator-url)
-
-## ➤ [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesunderstanding-firebasehttpsbgoonz-blognetlifyappdocsarticlesunderstanding-firebase)
-
-## ➤ [**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesv8httpsbgoonz-blognetlifyappdocsarticlesv8)
-
-## ➤ [**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticlesweb-standards-checklisthttpsbgoonz-blognetlifyappdocsarticlesweb-standards-checklist)
-
-## ➤ [**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleswebdev-toolshttpsbgoonz-blognetlifyappdocsarticleswebdev-tools)
-
-## ➤ [**🌍⇒docs/articles/webdev-tools🗺️**](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleswrite-2-json-with-pythonhttpsbgoonz-blognetlifyappdocsarticleswrite-2-json-with-python)
-
-## ➤ [**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsarticleswriting-fileshttpsbgoonz-blognetlifyappdocsarticleswriting-files)
-
-## ➤ [**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudioaudiohttpsbgoonz-blognetlifyappdocsaudioaudio)
-
-## ➤ [**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudioaudio-feature-extractionhttpsbgoonz-blognetlifyappdocsaudioaudio-feature-extraction)
-
-## ➤ [**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudiodffthttpsbgoonz-blognetlifyappdocsaudiodfft)
-
-## ➤ [**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudiodiscrete-ffthttpsbgoonz-blognetlifyappdocsaudiodiscrete-fft)
-
-## ➤ [**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudiodtw-python-explainedhttpsbgoonz-blognetlifyappdocsaudiodtw-python-explained)
-
-## ➤ [**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudiodynamic-time-warpinghttpsbgoonz-blognetlifyappdocsaudiodynamic-time-warping)
-
-## ➤ [**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsaudioweb-audio-apihttpsbgoonz-blognetlifyappdocsaudioweb-audio-api)
-
-## ➤ [**🌍⇒docs/audio/web-audio-api🗺️**](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscareerconfidencehttpsbgoonz-blognetlifyappdocscareerconfidence)
-
-## ➤ [**🌍⇒docs/career/confidence🗺️**](https://bgoonz-blog.netlify.app/docs/career/confidence)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscareerdev-interviewhttpsbgoonz-blognetlifyappdocscareerdev-interview)
-
-## ➤ [**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscareerinterview-dos-n-dontshttpsbgoonz-blognetlifyappdocscareerinterview-dos-n-donts)
-
-## ➤ [**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscareerjob-boardshttpsbgoonz-blognetlifyappdocscareerjob-boards)
-
-## ➤ [**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscommunityan-open-letter-2-future-developershttpsbgoonz-blognetlifyappdocscommunityan-open-letter-2-future-developers)
-
-## ➤ [**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscommunityvideo-chathttpsbgoonz-blognetlifyappdocscommunityvideo-chat)
-
-## ➤ [**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentalgohttpsbgoonz-blognetlifyappdocscontentalgo)
-
-## ➤ [**🌍⇒docs/content/algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/algo)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentarchivehttpsbgoonz-blognetlifyappdocscontentarchive)
-
-## ➤ [**🌍⇒docs/content/archive🗺️**](https://bgoonz-blog.netlify.app/docs/content/archive)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentdata-structures-algohttpsbgoonz-blognetlifyappdocscontentdata-structures-algo)
-
-## ➤ [**🌍⇒docs/content/data-structures-algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentgatsby-queries-mutationshttpsbgoonz-blognetlifyappdocscontentgatsby-queries-mutations)
-
-## ➤ [**🌍⇒docs/content/gatsby-Queries-Mutations🗺️**](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontenthistory-apihttpsbgoonz-blognetlifyappdocscontenthistory-api)
-
-## ➤ [**🌍⇒docs/content/history-api🗺️**](https://bgoonz-blog.netlify.app/docs/content/history-api)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentprojectshttpsbgoonz-blognetlifyappdocscontentprojects)
-
-## ➤ [**🌍⇒docs/content/projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/projects)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontentrecent-projectshttpsbgoonz-blognetlifyappdocscontentrecent-projects)
-
-## ➤ [**🌍⇒docs/content/recent-projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docscontenttrouble-shootinghttpsbgoonz-blognetlifyappdocscontenttrouble-shooting)
-
-## ➤ [**🌍⇒docs/content/trouble-shooting🗺️**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsappendixhttpsbgoonz-blognetlifyappdocsdocsappendix)
-
-## ➤ [**🌍⇒docs/docs/appendix🗺️**](https://bgoonz-blog.netlify.app/docs/docs/appendix)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsbashhttpsbgoonz-blognetlifyappdocsdocsbash)
-
-## ➤ [**🌍⇒docs/docs/bash🗺️**](https://bgoonz-blog.netlify.app/docs/docs/bash)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocscontenthttpsbgoonz-blognetlifyappdocsdocscontent)
-
-## ➤ [**🌍⇒docs/docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/docs/content)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocscsshttpsbgoonz-blognetlifyappdocsdocscss)
-
-## ➤ [**🌍⇒docs/docs/css🗺️**](https://bgoonz-blog.netlify.app/docs/docs/css)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsdata-structures-docshttpsbgoonz-blognetlifyappdocsdocsdata-structures-docs)
-
-## ➤ [**🌍⇒docs/docs/data-structures-docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsgit-referencehttpsbgoonz-blognetlifyappdocsdocsgit-reference)
-
-## ➤ [**🌍⇒docs/docs/git-reference🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsgit-reposhttpsbgoonz-blognetlifyappdocsdocsgit-repos)
-
-## ➤ [**🌍⇒docs/docs/git-repos🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocshtml-spechttpsbgoonz-blognetlifyappdocsdocshtml-spec)
-
-## ➤ [**🌍⇒docs/docs/html-spec🗺️**](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsmarkdownhttpsbgoonz-blognetlifyappdocsdocsmarkdown)
-
-## ➤ [**🌍⇒docs/docs/markdown🗺️**](https://bgoonz-blog.netlify.app/docs/docs/markdown)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsno-whiteboardinghttpsbgoonz-blognetlifyappdocsdocsno-whiteboarding)
-
-## ➤ [**🌍⇒docs/docs/no-whiteboarding🗺️**](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsnode-docs-completehttpsbgoonz-blognetlifyappdocsdocsnode-docs-complete)
-
-## ➤ [**🌍⇒docs/docs/node-docs-complete🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsnode-docs-fullhttpsbgoonz-blognetlifyappdocsdocsnode-docs-full)
-
-## ➤ [**🌍⇒docs/docs/node-docs-full🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocsregex-in-jshttpsbgoonz-blognetlifyappdocsdocsregex-in-js)
-
-## ➤ [**🌍⇒docs/docs/regex-in-js🗺️**](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsdocssitemaphttpsbgoonz-blognetlifyappdocsdocssitemap)
-
-## ➤ [**🌍⇒docs/docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsfaqcontacthttpsbgoonz-blognetlifyappdocsfaqcontact)
-
-## ➤ [**🌍⇒docs/faq/contact🗺️**](https://bgoonz-blog.netlify.app/docs/faq/contact)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsfaqplug-inshttpsbgoonz-blognetlifyappdocsfaqplug-ins)
-
-## ➤ [**🌍⇒docs/faq/plug-ins🗺️**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteractcallstack-visualhttpsbgoonz-blognetlifyappdocsinteractcallstack-visual)
-
-## ➤ [**🌍⇒docs/interact/callstack-visual🗺️**](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteractclockhttpsbgoonz-blognetlifyappdocsinteractclock)
-
-## ➤ [**🌍⇒docs/interact/clock🗺️**](https://bgoonz-blog.netlify.app/docs/interact/clock)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteractjupyter-notebookshttpsbgoonz-blognetlifyappdocsinteractjupyter-notebooks)
-
-## ➤ [**🌍⇒docs/interact/jupyter-notebooks🗺️**](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteractother-siteshttpsbgoonz-blognetlifyappdocsinteractother-sites)
-
-## ➤ [**🌍⇒docs/interact/other-sites🗺️**](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsinteractvideo-chathttpsbgoonz-blognetlifyappdocsinteractvideo-chat)
-
-## ➤ [**🌍⇒docs/interact/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptarrow-functionshttpsbgoonz-blognetlifyappdocsjavascriptarrow-functions)
-
-## ➤ [**🌍⇒docs/javascript/arrow-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptawait-keywordhttpsbgoonz-blognetlifyappdocsjavascriptawait-keyword)
-
-## ➤ [**🌍⇒docs/javascript/await-keyword🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptbigohttpsbgoonz-blognetlifyappdocsjavascriptbigo)
-
-## ➤ [**🌍⇒docs/javascript/bigo🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptclean-codehttpsbgoonz-blognetlifyappdocsjavascriptclean-code)
-
-## ➤ [**🌍⇒docs/javascript/clean-code🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptconstructor-functionshttpsbgoonz-blognetlifyappdocsjavascriptconstructor-functions)
-
-## ➤ [**🌍⇒docs/javascript/constructor-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptpromiseshttpsbgoonz-blognetlifyappdocsjavascriptpromises)
-
-## ➤ [**🌍⇒docs/javascript/promises🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/promises)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptreviewhttpsbgoonz-blognetlifyappdocsjavascriptreview)
-
-## ➤ [**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsjavascriptthis-is-about-thishttpsbgoonz-blognetlifyappdocsjavascriptthis-is-about-this)
-
-## ➤ [**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsprojectsmedium-linkshttpsbgoonz-blognetlifyappdocsprojectsmedium-links)
-
-## ➤ [**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsprojectsmy-websiteshttpsbgoonz-blognetlifyappdocsprojectsmy-websites)
-
-## ➤ [**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonat-lengthhttpsbgoonz-blognetlifyappdocspythonat-length)
-
-## ➤ [**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonbasicshttpsbgoonz-blognetlifyappdocspythonbasics)
-
-## ➤ [**🌍⇒docs/python/basics🗺️**](https://bgoonz-blog.netlify.app/docs/python/basics)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythoncheat-sheethttpsbgoonz-blognetlifyappdocspythoncheat-sheet)
-
-## ➤ [**🌍⇒docs/python/cheat-sheet🗺️**](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythoncomprehensive-guidehttpsbgoonz-blognetlifyappdocspythoncomprehensive-guide)
-
-## ➤ [**🌍⇒docs/python/comprehensive-guide🗺️**](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonexampleshttpsbgoonz-blognetlifyappdocspythonexamples)
-
-## ➤ [**🌍⇒docs/python/examples🗺️**](https://bgoonz-blog.netlify.app/docs/python/examples)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonflow-controlhttpsbgoonz-blognetlifyappdocspythonflow-control)
-
-## ➤ [**🌍⇒docs/python/flow-control🗺️**](https://bgoonz-blog.netlify.app/docs/python/flow-control)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonfunctionshttpsbgoonz-blognetlifyappdocspythonfunctions)
-
-## ➤ [**🌍⇒docs/python/functions🗺️**](https://bgoonz-blog.netlify.app/docs/python/functions)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythongoogle-sheets-apihttpsbgoonz-blognetlifyappdocspythongoogle-sheets-api)
-
-## ➤ [**🌍⇒docs/python/google-sheets-api🗺️**](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonintro-for-js-devshttpsbgoonz-blognetlifyappdocspythonintro-for-js-devs)
-
-## ➤ [**🌍⇒docs/python/intro-for-js-devs🗺️**](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonpython-dshttpsbgoonz-blognetlifyappdocspythonpython-ds)
-
-## ➤ [**🌍⇒docs/python/python-ds🗺️**](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docspythonsnippetshttpsbgoonz-blognetlifyappdocspythonsnippets)
-
-## ➤ [**🌍⇒docs/python/snippets🗺️**](https://bgoonz-blog.netlify.app/docs/python/snippets)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceemmethttpsbgoonz-blognetlifyappdocsquick-referenceemmet)
-
-## ➤ [**🌍⇒docs/quick-reference/Emmet🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceall-emojishttpsbgoonz-blognetlifyappdocsquick-referenceall-emojis)
-
-## ➤ [**🌍⇒docs/quick-reference/all-emojis🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencecreate-react-apphttpsbgoonz-blognetlifyappdocsquick-referencecreate-react-app)
-
-## ➤ [**🌍⇒docs/quick-reference/create-react-app🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencegit-bashhttpsbgoonz-blognetlifyappdocsquick-referencegit-bash)
-
-## ➤ [**🌍⇒docs/quick-reference/git-bash🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencegit-trickshttpsbgoonz-blognetlifyappdocsquick-referencegit-tricks)
-
-## ➤ [**🌍⇒docs/quick-reference/git-tricks🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencegoogle-firebasehttpsbgoonz-blognetlifyappdocsquick-referencegoogle-firebase)
-
-## ➤ [**🌍⇒docs/quick-reference/google-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceheroku-error-codeshttpsbgoonz-blognetlifyappdocsquick-referenceheroku-error-codes)
-
-## ➤ [**🌍⇒docs/quick-reference/heroku-error-codes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceinstallationhttpsbgoonz-blognetlifyappdocsquick-referenceinstallation)
-
-## ➤ [**🌍⇒docs/quick-reference/installation🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencemarkdown-dropdownshttpsbgoonz-blognetlifyappdocsquick-referencemarkdown-dropdowns)
-
-## ➤ [**🌍⇒docs/quick-reference/markdown-dropdowns🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceminifictionhttpsbgoonz-blognetlifyappdocsquick-referenceminifiction)
-
-## ➤ [**🌍⇒docs/quick-reference/minifiction🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencenew-repo-instructionshttpsbgoonz-blognetlifyappdocsquick-referencenew-repo-instructions)
-
-## ➤ [**🌍⇒docs/quick-reference/new-repo-instructions🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencepsql-setuphttpsbgoonz-blognetlifyappdocsquick-referencepsql-setup)
-
-## ➤ [**🌍⇒docs/quick-reference/psql-setup🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencepull-request-rubrichttpsbgoonz-blognetlifyappdocsquick-referencepull-request-rubric)
-
-## ➤ [**🌍⇒docs/quick-reference/pull-request-rubric🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencequick-linkshttpsbgoonz-blognetlifyappdocsquick-referencequick-links)
-
-## ➤ [**🌍⇒docs/quick-reference/quick-links🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencetopreposhttpsbgoonz-blognetlifyappdocsquick-referencetoprepos)
-
-## ➤ [**🌍⇒docs/quick-reference/topRepos🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referenceunderstanding-pathhttpsbgoonz-blognetlifyappdocsquick-referenceunderstanding-path)
-
-## ➤ [**🌍⇒docs/quick-reference/understanding-path🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsquick-referencevscode-themeshttpsbgoonz-blognetlifyappdocsquick-referencevscode-themes)
-
-## ➤ [**🌍⇒docs/quick-reference/vscode-themes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactcheatsheethttpsbgoonz-blognetlifyappdocsreactcheatsheet)
-
-## ➤ [**🌍⇒docs/react/cheatsheet🗺️**](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactcreatereactapphttpsbgoonz-blognetlifyappdocsreactcreatereactapp)
-
-## ➤ [**🌍⇒docs/react/createReactApp🗺️**](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactdemohttpsbgoonz-blognetlifyappdocsreactdemo)
-
-## ➤ [**🌍⇒docs/react/demo🗺️**](https://bgoonz-blog.netlify.app/docs/react/demo)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactjsxhttpsbgoonz-blognetlifyappdocsreactjsx)
-
-## ➤ [**🌍⇒docs/react/jsx🗺️**](https://bgoonz-blog.netlify.app/docs/react/jsx)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactreact-docshttpsbgoonz-blognetlifyappdocsreactreact-docs)
-
-## ➤ [**🌍⇒docs/react/react-docs🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-docs)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactreact-in-depthhttpsbgoonz-blognetlifyappdocsreactreact-in-depth)
-
-## ➤ [**🌍⇒docs/react/react-in-depth🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactreact2httpsbgoonz-blognetlifyappdocsreactreact2)
-
-## ➤ [**🌍⇒docs/react/react2🗺️**](https://bgoonz-blog.netlify.app/docs/react/react2)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreactrender-elementshttpsbgoonz-blognetlifyappdocsreactrender-elements)
-
-## ➤ [**🌍⇒docs/react/render-elements🗺️**](https://bgoonz-blog.netlify.app/docs/react/render-elements)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceawesome-listshttpsbgoonz-blognetlifyappdocsreferenceawesome-lists)
-
-## ➤ [**🌍⇒docs/reference/awesome-lists🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceawesome-statichttpsbgoonz-blognetlifyappdocsreferenceawesome-static)
-
-## ➤ [**🌍⇒docs/reference/awesome-static🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencebookmarkshttpsbgoonz-blognetlifyappdocsreferencebookmarks)
-
-## ➤ [**🌍⇒docs/reference/bookmarks🗺️**](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceembed-the-webhttpsbgoonz-blognetlifyappdocsreferenceembed-the-web)
-
-## ➤ [**🌍⇒docs/reference/embed-the-web🗺️**](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencegithub-searchhttpsbgoonz-blognetlifyappdocsreferencegithub-search)
-
-## ➤ [**🌍⇒docs/reference/github-search🗺️**](https://bgoonz-blog.netlify.app/docs/reference/github-search)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencehow-2-reinstall-npmhttpsbgoonz-blognetlifyappdocsreferencehow-2-reinstall-npm)
-
-## ➤ [**🌍⇒docs/reference/how-2-reinstall-npm🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencehow-to-kill-a-processhttpsbgoonz-blognetlifyappdocsreferencehow-to-kill-a-process)
-
-## ➤ [**🌍⇒docs/reference/how-to-kill-a-process🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceinstalling-nodehttpsbgoonz-blognetlifyappdocsreferenceinstalling-node)
-
-## ➤ [**🌍⇒docs/reference/installing-node🗺️**](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceintro-to-nodejshttpsbgoonz-blognetlifyappdocsreferenceintro-to-nodejs)
-
-## ➤ [**🌍⇒docs/reference/intro-to-nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencenotes-templatehttpsbgoonz-blognetlifyappdocsreferencenotes-template)
-
-## ➤ [**🌍⇒docs/reference/notes-template🗺️**](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencepsqlhttpsbgoonz-blognetlifyappdocsreferencepsql)
-
-## ➤ [**🌍⇒docs/reference/psql🗺️**](https://bgoonz-blog.netlify.app/docs/reference/psql)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceresourceshttpsbgoonz-blognetlifyappdocsreferenceresources)
-
-## ➤ [**🌍⇒docs/reference/resources🗺️**](https://bgoonz-blog.netlify.app/docs/reference/resources)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferencevscodehttpsbgoonz-blognetlifyappdocsreferencevscode)
-
-## ➤ [**🌍⇒docs/reference/vscode🗺️**](https://bgoonz-blog.netlify.app/docs/reference/vscode)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docsreferenceweb-apishttpsbgoonz-blognetlifyappdocsreferenceweb-apis)
-
-## ➤ [**🌍⇒docs/reference/web-api's🗺️**](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolsdata-structureshttpsbgoonz-blognetlifyappdocstoolsdata-structures)
-
-## ➤ [**🌍⇒docs/tools/data-structures🗺️**](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolsdev-utilitieshttpsbgoonz-blognetlifyappdocstoolsdev-utilities)
-
-## ➤ [**🌍⇒docs/tools/dev-utilities🗺️**](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolsgoogle-cloudhttpsbgoonz-blognetlifyappdocstoolsgoogle-cloud)
-
-## ➤ [**🌍⇒docs/tools/google-cloud🗺️**](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolsmarkdown-htmlhttpsbgoonz-blognetlifyappdocstoolsmarkdown-html)
-
-## ➤ [**🌍⇒docs/tools/markdown-html🗺️**](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstoolsmore-toolshttpsbgoonz-blognetlifyappdocstoolsmore-tools)
-
-## ➤ [**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
-
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#docstutorialsgoogle-lighthouse-clihttpsbgoonz-blognetlifyappdocstutorialsgoogle-lighthouse-cli)
-
-## ➤ [**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
+## [**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
 
 </details>
 
@@ -3377,10 +2225,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-quick-start)
-
-## ➤ 🚀 Quick start
+## 🚀 Quick start
 
 1. **Create a Gatsby site.**
 
@@ -3408,10 +2253,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-whats-inside)
-
-## ➤ 🧐 What's inside?
+## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -3453,10 +2295,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-learning-gatsby)
-
-## ➤ 🎓 Learning Gatsby
+## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
@@ -3464,10 +2303,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 -
 - **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-deploy)
-
-## ➤ 💫 Deploy
+## 💫 Deploy
 
 [![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
 
@@ -3477,10 +2313,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#gatsby-project-structure--gatsby)
-
-# ➤ Gatsby Project Structure | Gatsby
+# Gatsby Project Structure | Gatsby
 
 > ## Excerpt
 >
@@ -3494,10 +2327,7 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 /|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocsreferencegatsby-project-structurefoldersfolders)
-
-## ➤ [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
 
 - **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
 - **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
@@ -3511,29 +2341,20 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 - **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocsreferencegatsby-project-structurefilesfiles)
-
-## ➤ [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
 
 - **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 - **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
 - **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 - **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocsreferencegatsby-project-structuremiscellaneousmiscellaneous)
-
-## ➤ [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
+## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
 
 The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#layout-components--gatsby)
-
-# ➤ Layout Components | Gatsby
+# Layout Components | Gatsby
 
 > ## Excerpt
 >
@@ -3543,24 +2364,15 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 
 In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutinglayout-componentsgatsbys-approach-to-layoutsgatsbys-approach-to-layouts)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby's approach to layouts
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby's approach to layouts
 
 Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutinglayout-componentswhat-are-layout-componentswhat-are-layout-components)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
 
 Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutinglayout-componentshow-to-create-layout-componentshow-to-create-layout-components)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
 
 It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
 
@@ -3570,10 +2382,7 @@ Here is an example of a very basic layout component at `src/components/layout.js
 import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutinglayout-componentshow-to-import-and-add-layout-components-to-pageshow-to-import-and-add-layout-components-to-pages)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
 
 If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
 
@@ -3583,10 +2392,7 @@ import React from "react"import Layout from "../components/layout"export default
 
 Repeat for every page and template that needs this layout.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutinglayout-componentshow-to-prevent-layout-components-from-unmountinghow-to-prevent-layout-components-from-unmounting)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
+## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
 
 As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
 
@@ -3594,10 +2400,7 @@ If you need to set a wrapper component around page components that won't get unm
 
 Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#adding-markdown-pages--gatsby)
-
-# ➤ Adding Markdown Pages | Gatsby
+# Adding Markdown Pages | Gatsby
 
 > ## Excerpt
 >
@@ -3615,24 +2418,15 @@ Here are the steps Gatsby follows for making this happen.
 3. Add a Markdown file
 4. Create a Collection Route component for the Markdown files
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesread-files-into-gatsby-from-the-filesystemread-files-into-gatsby-from-the-filesystem)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
 
 Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesinstallinstall)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
 
 `npm install gatsby-source-filesystem`
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesadd-pluginadd-plugin)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
 
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
 
@@ -3642,24 +2436,15 @@ module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [ 
 
 Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagestransform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remarktransform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
 
 You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesinstall-transformer-plugininstall-transformer-plugin)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
 
 `npm install gatsby-transformer-remark`
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesconfigure-pluginconfigure-plugin)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
 
 Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
 
@@ -3667,17 +2452,11 @@ Add this to `gatsby-config.js` after the previously added `gatsby-source-filesys
 module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
 ```
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesadd-a-markdown-fileadd-a-markdown-file)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)Add a Markdown file
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)Add a Markdown file
 
 Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesfrontmatter-for-metadata-in-markdown-filesfrontmatter-for-metadata-in-markdown-files)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
 
 When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
 
@@ -3689,10 +2468,7 @@ src/markdown-pages/post-1.md
 
 What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagescreate-a-collection-route-for-the-markdown-filescreate-a-collection-route-for-the-markdown-files)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
 
 Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
 
@@ -3716,28 +2492,19 @@ This should get you started on some basic Markdown functionality in your Gatsby 
 
 For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#httpswwwgatsbyjscomdocshow-toroutingadding-markdown-pagesother-tutorialsother-tutorials)
-
-## ➤ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)Other tutorials
+## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)Other tutorials
 
 </details>
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#technoloy)
-
-# ➤ Technoloy
+# Technoloy
 
 ![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#sourcecode)
-
-# ➤ SOURCECODE
+# SOURCECODE
 
 ```
 
@@ -3890,10 +2657,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#source-code)
-
-# ➤ Source Code
+# Source Code
 
 <details>
 <summary>  Folder Structure (src)  </summary>
@@ -4213,10 +2977,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
 <summary>  Click To See Component Sourcecode  </summary>
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#component-structure)
-
-# ➤ Component Structure
+# Component Structure
 
 ```
 .
@@ -4244,7 +3005,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4285,7 +3046,7 @@ export default class ActionLink extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4318,7 +3079,7 @@ export default class CtaButtons extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4390,7 +3151,7 @@ export default class DocsMenu extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4420,7 +3181,7 @@ export default class DocsSubmenu extends React.Component {
 
 ---
 
-
+```js
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -4601,7 +3362,7 @@ export default class Footer extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4738,7 +3499,7 @@ export default class Header extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4778,7 +3539,7 @@ export default class Icon extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -4846,7 +3607,7 @@ export default class Body extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4892,7 +3653,7 @@ export default class SectionContent extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4929,7 +3690,7 @@ export default class SectionCta extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -4993,7 +3754,7 @@ export default class SectionDocs extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -5065,7 +3826,7 @@ export default class SectionGrid extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -5101,7 +3862,7 @@ export default class SectionHero extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 
@@ -5134,7 +3895,7 @@ export default class Submenu extends React.Component {
 }
 ```
 
-
+```js
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -5192,10 +3953,7 @@ export default {
 <details>
 <summary>  Click To See Template Sourcecode  </summary>
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#templates)
-
-# ➤ Templates
+# Templates
 
 ```
 
@@ -5206,7 +3964,7 @@ export default {
 └── post.js
 ```
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -5240,7 +3998,7 @@ export default class Advanced extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -5327,7 +4085,7 @@ export default class Blog extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -5403,7 +4161,7 @@ export default class Docs extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -5452,7 +4210,7 @@ export default class Page extends React.Component {
 
 ---
 
-
+```js
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
