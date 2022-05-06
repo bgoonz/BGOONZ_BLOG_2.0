@@ -21,7 +21,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe sandbox="allow-scripts" src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -33,7 +33,7 @@ template: docs
 
 <br>
 <h1> Google Drive</h1>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
+<iframe sandbox="allow-scripts" src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
 
 <br>
 <br>
@@ -50,7 +50,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://archive.org/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe sandbox="allow-scripts" src="https://archive.org/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -202,7 +202,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe sandbox="allow-scripts" src="https://devtools42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -223,7 +223,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe sandbox="allow-scripts" src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -245,7 +245,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe sandbox="allow-scripts" src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 
 <br>
 <br>
@@ -323,7 +323,7 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"   clipboard-write;   allowfullscreen></iframe>
+<iframe sandbox="allow-scripts" src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"   clipboard-write;   allowfullscreen></iframe>
 <br>
 <br>
 <br>

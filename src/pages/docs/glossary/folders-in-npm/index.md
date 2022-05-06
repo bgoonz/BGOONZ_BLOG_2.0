@@ -4,26 +4,19 @@ template: docs
 excerpt: Folder Structures Used by npm
 ---
 
-# folders 
-
-
-
+# folders
 
 ![npm](https://pbs.twimg.com/profile_images/1285630920263966721/Uk6O1QGC_400x400.jpg)
 
-
 ---
-
-
-
 
 #### [](https://docs.npmjs.com/cli/v6/configuring-npm/folders#tldr)tl;dr
 
--   Local install (default): puts stuff in `./node_modules` of the current package root.
--   Global install (with `-g`): puts stuff in /usr/local or wherever node is installed.
--   Install it **locally** if you're going to `require()` it.
--   Install it **globally** if you're going to run it on the command line.
--   If you need both, then install it in both places, or use `npm link`.
+- Local install (default): puts stuff in `./node_modules` of the current package root.
+- Global install (with `-g`): puts stuff in /usr/local or wherever node is installed.
+- Install it **locally** if you're going to `require()` it.
+- Install it **globally** if you're going to run it on the command line.
+- If you need both, then install it in both places, or use `npm link`.
 
 #### [](https://docs.npmjs.com/cli/v6/configuring-npm/folders#prefix-configuration)prefix Configuration
 

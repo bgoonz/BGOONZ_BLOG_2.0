@@ -32,7 +32,7 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed"  width="1000px" ></iframe>
+<iframe  src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"  id="social-embed" height="1000px" width="1000px" ></iframe>
 
 <br>
 <br>
@@ -120,10 +120,12 @@ template: docs
 
 ---
 
- <iframe class="utterances-frame" title="Comments" scrolling="no" src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=bgoonz%2FBGOONZ_BLOG_2.0&issue-term=url&label=comment&theme=github-light&crossorigin=anonymous&async=&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2Fadmin%2F&origin=https%3A%2F%2Fbgoonz-blog.netlify.app&pathname=admin%2F&title=Content+Manager&description=&og%3Atitle=&session=893b13e5949a24761d07a5a8lPqWXyqXu6NYrAlbw5%2FXWJwhyGoNgw0Nfqt4f6jL%2B%2BhqBSHrR9YC4g4tA5eUQRuWlCEvLGnO9En39ieuEAzoM840RS6pkSo8sL5ViCXQ3IcqQR68vd%2FbOvjEWgU%3D" loading="lazy"></iframe>
 
 <a class="twitter-timeline" href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw">Tweets by bgooonz</a>
 <br>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+
+
+ <iframe class="utterances-frame" title="Comments" scrolling="yes" src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=bgoonz%2FBGOONZ_BLOG_2.0&issue-term=url&label=comment&theme=github-light&crossorigin=anonymous&async=&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2Fadmin%2F&origin=https%3A%2F%2Fbgoonz-blog.netlify.app&pathname=admin%2F&title=Content+Manager&description=&og%3Atitle=&session=893b13e5949a24761d07a5a8lPqWXyqXu6NYrAlbw5%2FXWJwhyGoNgw0Nfqt4f6jL%2B%2BhqBSHrR9YC4g4tA5eUQRuWlCEvLGnO9En39ieuEAzoM840RS6pkSo8sL5ViCXQ3IcqQR68vd%2FbOvjEWgU%3D" loading="lazy"></iframe>
