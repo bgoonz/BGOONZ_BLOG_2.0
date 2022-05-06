@@ -36,6 +36,7 @@ template: docs
 ---
 
 
+
 <h1>   Markdown tools  </h1>
 <hr>
 <br>
@@ -44,7 +45,7 @@ template: docs
 <br>
 <iframe   src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
-<iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
+<iframe sandbox="allow-scripts" src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
 <br>
 <hr>
@@ -55,7 +56,7 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts" src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -97,7 +98,7 @@ template: docs
 <br>
 
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:2px solid gold;">
+<iframe sandbox="allow-scripts" src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:2px solid gold;">
 </iframe>
 
 <br>
@@ -111,7 +112,7 @@ template: docs
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts" src="https://devtools42.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -121,7 +122,7 @@ template: docs
 
 <h1> Ternary Converter   </h1>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts" src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>
@@ -132,7 +133,7 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts" src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
 <hr>

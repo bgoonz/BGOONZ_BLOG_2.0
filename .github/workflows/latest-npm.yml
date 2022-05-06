@@ -33,7 +33,7 @@ jobs:
                     - '0.10'
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v3
             - uses: ljharb/actions/node/run@main
               name: 'nvm install-latest-npm'
               with:

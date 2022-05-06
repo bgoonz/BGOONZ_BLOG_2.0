@@ -26,44 +26,44 @@ React has a few different kinds of components, but we'll start with `React.Compo
 
 ```jsx
 class ShoppingList extends React.Component {
-    render() {
-        return (
-            <div className="shopping-list">
-                <h1>Shopping List for {this.props.name}</h1>
-                <ul>
-                    <li>Instagram</li>
-                    <li>WhatsApp</li>
-                    <li>Oculus</li>
-                </ul>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+    );
+  }
 }
 ```
 
--   _Example usage_: **\<ShoppingList name="Mark" /\>\_**
-    We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
-    Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for "properties"), and returns a hierarchy of views to display via the `render` method.
-    The `render` method returns a _description_ of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX" which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
+- _Example usage_: **\<ShoppingList name="Mark" /\>\_**
+  We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+  Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for "properties"), and returns a hierarchy of views to display via the `render` method.
+  The `render` method returns a _description_ of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX" which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
 
 ```jsx
 React.createElement(
-    'div',
-    { className: 'shopping-list' },
-    React.createElement('h1', null, 'Shopping List for ', this.props.name),
-    React.createElement(
-        'ul',
-        null,
-        React.createElement('li', null, 'Instagram'),
-        React.createElement('li', null, 'WhatsApp'),
-        React.createElement('li', null, 'Oculus')
-    )
+  "div",
+  { className: "shopping-list" },
+  React.createElement("h1", null, "Shopping List for ", this.props.name),
+  React.createElement(
+    "ul",
+    null,
+    React.createElement("li", null, "Instagram"),
+    React.createElement("li", null, "WhatsApp"),
+    React.createElement("li", null, "Oculus")
+  )
 );
 return React.createElement(
-    'div',
-    { className: 'shopping-list' },
-    React.createElement('h1' /* ... h1 children ... */),
-    React.createElement('ul' /* ... ul children ... */)
+  "div",
+  { className: "shopping-list" },
+  React.createElement("h1" /* ... h1 children ... */),
+  React.createElement("ul" /* ... ul children ... */)
 );
 ```
 
@@ -73,9 +73,9 @@ return React.createElement(
 
 ```html
 <div>
-    <p>Paragraph One</p>
-    <p>Paragraph Two</p>
-    <p>Paragraph Three</p>
+  <p>Paragraph One</p>
+  <p>Paragraph Two</p>
+  <p>Paragraph Three</p>
 </div>
 ```
 
@@ -98,11 +98,11 @@ The code editor has a JSX element similar to what you created in the last challe
 
 ```js
 const JSX = (
-    <div>
-        {/* This is a comment */}
-        <h1>This is a block of JSX</h1>
-        <p>Here's a subtitle</p>
-    </div>
+  <div>
+    {/* This is a comment */}
+    <h1>This is a block of JSX</h1>
+    <p>Here's a subtitle</p>
+  </div>
 );
 ```
 
@@ -110,18 +110,18 @@ const JSX = (
 
 > _With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM._ > _ReactDOM offers a simple method to render React elements to the DOM which looks like this:_ > `ReactDOM.render(componentToRender, targetNode)`
 
--   <span id="f724">the first argument is the React element or component that you want to render,</span>
--   <span id="7093">and the second argument is the DOM node that you want to render the component to.</span>
-    > _ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them._ > _key difference in JSX is that you can no longer use the word class to define HTML classes._
--   <span id="aafc">— -&gt; This is because class is a reserved word in JavaScript. Instead, JSX uses className</span>
-    > _the naming convention for all HTML attributes and event references in JSX become camelCase_ > _a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward._
+- <span id="f724">the first argument is the React element or component that you want to render,</span>
+- <span id="7093">and the second argument is the DOM node that you want to render the component to.</span>
+  > _ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them._ > _key difference in JSX is that you can no longer use the word class to define HTML classes._
+- <span id="aafc">— -&gt; This is because class is a reserved word in JavaScript. Instead, JSX uses className</span>
+  > _the naming convention for all HTML attributes and event references in JSX become camelCase_ > _a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward._
 
 ---
 
 ### Apply a class of myDiv to the div provided in the JSX code.
 
--   <span id="9500">The constant JSX should return a div element.</span>
--   <span id="8d42">The div should have a class of myDiv.</span>
+- <span id="9500">The constant JSX should return a div element.</span>
+- <span id="8d42">The div should have a class of myDiv.</span>
 
 ````jsx
 
@@ -171,12 +171,12 @@ const JSX = (
 
 ```jsx
 const JSX = (
-    <div>
-        <h2>Welcome to React!</h2>
-        <br />
-        <p>Be sure to close all tags!</p>
-        <hr />
-    </div>
+  <div>
+    <h2>Welcome to React!</h2>
+    <br />
+    <p>Be sure to close all tags!</p>
+    <hr />
+  </div>
 );
 ```
 
@@ -190,13 +190,13 @@ const JSX = (
 
 #### To create a component with a function, you simply write a JavaScript function that returns either JSX or null
 
--   <span id="b514">React requires your function name to begin with a capital letter.</span>
-    > _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
+- <span id="b514">React requires your function name to begin with a capital letter.</span>
+  > _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
 
 ```jsx
 // After being transpiled, the <div> will have a CSS class of 'customClass'
 const DemoComponent = function () {
-    return <div className="customClass" />;
+  return <div className="customClass" />;
 };
 ```
 
@@ -210,8 +210,8 @@ Note: The text is considered a child of the div element, so you will not be able
 
 ```jsx
 const MyComponent = function () {
-    // Change code below this line
-    // Change code above this line
+  // Change code below this line
+  // Change code above this line
 };
 ```
 
@@ -221,9 +221,9 @@ const MyComponent = function () {
 
 ```jsx
 const MyComponent = function () {
-    // Change code below this line
-    return <div> Some Text </div>;
-    // Change code above this line
+  // Change code below this line
+  return <div> Some Text </div>;
+  // Change code above this line
 };
 ```
 
@@ -235,12 +235,12 @@ const MyComponent = function () {
 
 ```jsx
 class Kitten extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return <h1>Hi</h1>;
-    }
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <h1>Hi</h1>;
+  }
 }
 ```
 
@@ -252,13 +252,13 @@ class Kitten extends React.Component {
 
 ```jsx
 class MyComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        // Change code below this line
-        // Change code above this line
-    }
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    // Change code below this line
+    // Change code above this line
+  }
 }
 ```
 
@@ -268,18 +268,18 @@ class MyComponent extends React.Component {
 
 ```jsx
 class MyComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        // Change code below this line
-        return (
-            <div>
-                <h1>Hello React!</h1>
-            </div>
-        );
-        // Change code above this line
-    }
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    // Change code below this line
+    return (
+      <div>
+        <h1>Hello React!</h1>
+      </div>
+    );
+    // Change code above this line
+  }
 }
 ```
 
@@ -289,15 +289,15 @@ class MyComponent extends React.Component {
 
 > _Imagine you are building an App and have created three components, a Navbar, Dashboard, and Footer._ > _To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX._
 
--   <span id="000b">For example, in the render method you could write:</span>
+- <span id="000b">For example, in the render method you could write:</span>
 
 ```jsx
 return (
-    <App>
-        <Navbar />
-        <Dashboard />
-        <Footer />
-    </App>
+  <App>
+    <Navbar />
+    <Dashboard />
+    <Footer />
+  </App>
 );
 ```
 
@@ -311,30 +311,30 @@ return (
 
 > _In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash._
 
--   <span id="2ed5">Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.</span>
--   <span id="fddd">However, know that this is just a function.</span>
+- <span id="2ed5">Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.</span>
+- <span id="fddd">However, know that this is just a function.</span>
 
 ```jsx
 const ChildComponent = () => {
-    return (
-        <div>
-            <p>I am the child</p>
-        </div>
-    );
+  return (
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
 };
 class ParentComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div>
-                <h1>I am the parent</h1>
-                {/* Change code below this line */}
-                {/* Change code above this line */}
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>I am the parent</h1>
+        {/* Change code below this line */}
+        {/* Change code above this line */}
+      </div>
+    );
+  }
 }
 ```
 
@@ -348,25 +348,25 @@ class ParentComponent extends React.Component {
 
 ```js
 const ChildComponent = () => {
-    return (
-        <div>
-            <p>I am the child</p>
-        </div>
-    );
+  return (
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
 };
 class ParentComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div>
-                <h1>I am the parent</h1>
-                {/* Change code below this line */}
-                {/* Change code above this line */}
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>I am the parent</h1>
+        {/* Change code below this line */}
+        {/* Change code above this line */}
+      </div>
+    );
+  }
 }
 ```
 

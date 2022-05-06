@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 **What we know:**
 
 A top-level `App` component returns `<Button />` from its `render()` method.

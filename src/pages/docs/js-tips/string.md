@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # String
 
 The `String` object is used to represent and manipulate a sequence of characters.

@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Basic Bash Proficiency:
 
 ## Everyday use

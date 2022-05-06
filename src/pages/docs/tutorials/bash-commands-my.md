@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Bash Commands That Save Me Time and Frustration
 
 Here's a list of bash commands that stand between me and insanity.

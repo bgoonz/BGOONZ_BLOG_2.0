@@ -6,14 +6,17 @@ excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
 image: /blog/psql.jpg
 thumb_image: /blog/psql-schema.jpg
-image_position: right
+image_position: top
 author: src/data/authors/bgoon.yaml
 categories:
-  - src/data/categories/git.yaml
+    - src/data/categories/db.yaml
+tags:
+    - src/data/tags/psql.yaml
 show_author_bio: true
 cmseditable: true
 ---
-# 🧘♂ PSQL
+
+# 💻 PSQL💻
 
 > source
 
@@ -21,7 +24,7 @@ cmseditable: true
 
 ### Login to postgresql
 
-```sh
+```plpgsql
 psql -U postgres
 psql -d mydb -U myuser -W
 psql -h myhost -d mydb -U myuser -W
@@ -169,7 +172,7 @@ SELECT prosrc FROM pg_proc WHERE proname = 'procname'
 
 ### Grant examples
 
-```sh
+```plpgsql
 # readonly to all tables for myuser
 grant select on all tables in schema public to myuser;
 # all privileges on table1 and table2 to myuser
@@ -178,7 +181,7 @@ grant all privileges on table1, table2, table3 to myuser;
 
 ### Restore Postgres .dump file
 
-```sh
+```plpgsql
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump
 ```
 
@@ -188,7 +191,7 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb 
 
 Source: <http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it>
 
-```sh
+```plpgsql
 # Postgres 9.6 and above
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
@@ -204,7 +207,7 @@ AND procpid <> pg_backend_pid();
 
 ## Handy Queries
 
-```sh
+```plpgsql
 -- List procedure/function
 SELECT * FROM pg_proc WHERE proname='__procedurename__';
 
@@ -305,7 +308,7 @@ HAVING condition;
 
 ### From Multiple Tables
 
-```sh
+```plpgsql
 -- Inner join t1 and t2
 SELECT c1, c2
 FROM t1
@@ -347,7 +350,7 @@ INNER JOIN t2 B ON condition
 
 ### Using SQL Operators
 
-```sh
+```plpgsql
 -- Combine rows from two queries
 SELECT c1, c2 FROM t1
 UNION [ALL]

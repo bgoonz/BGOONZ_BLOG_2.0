@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 <br>
 <h1>  Python Resources</h1>
 <br>
@@ -944,8 +945,8 @@ sets were killed in favor of set() class.**
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Python Cheat Sheet:
 

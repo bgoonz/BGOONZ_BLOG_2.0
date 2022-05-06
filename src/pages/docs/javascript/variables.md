@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 Variables are declared with the `var` keyword. JavaScript is
 _dynamically typed_ so every variable can hold a value of any data type.
 
