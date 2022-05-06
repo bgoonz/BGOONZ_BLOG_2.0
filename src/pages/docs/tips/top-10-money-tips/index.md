@@ -2,9 +2,10 @@
 title: Top 10 Money Tips
 template: docs
 excerpt: Despite taking math for a majority of my life, I never learned much
-  about financial planning. While I could tell you the base 10 logarithm of
-  1,000, I was not  taught how to set up a good budget.
+    about financial planning. While I could tell you the base 10 logarithm of
+    1,000, I was not  taught how to set up a good budget.
 ---
+
 <!--StartFragment-->
 
 ### 1. Earn a decent living.
@@ -33,7 +34,7 @@ Consider investing any money you're not planning on using for at least three yea
 
 ### 7. Make investing a continuing priority.
 
-Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress. 
+Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress.
 
 ### 8. Have a family conversation to prevent surprises.
 
