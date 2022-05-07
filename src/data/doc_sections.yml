@@ -3,6 +3,7 @@ sections:
     - about
     - articles
     - audio
+    - archive
     - career
     - community
     - content
@@ -12,6 +13,7 @@ sections:
     - faq
     - general-structured-data-guidelines
     - git
+    - glossary
     - interact
     - javascript
     - js-tips
