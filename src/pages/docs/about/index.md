@@ -23,9 +23,6 @@ seo:
 template: docs
 ---
 
-
-
-
 <h1>Hi 👋, I'm Bryan</h1>
   
 <img src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
@@ -35,7 +32,7 @@ template: docs
 
 ### [💻WEBSITE💻](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
 
- [**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
+[**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)<a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner)[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz)
 
@@ -79,23 +76,23 @@ template: docs
 
 <summary>About Me</summary>
 
-- 🔭 Contract Web Development **Duke Energy**
+-   🔭 Contract Web Development **Duke Energy**
 -
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 -
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
 -
-- 🤝 I'm looking for help with [L
+-   🤝 I'm looking for help with [L
 -
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+-   👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
 
-- 💬 Ask me about **Anything:**
+-   💬 Ask me about **Anything:**
 
-- 📫 How to reach me **bryan.guner@gmail.com**
+-   📫 How to reach me **bryan.guner@gmail.com**
 
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
 ### i really like music :headphones
 
@@ -169,9 +166,11 @@ Creating things that change my every day life.
 <br>
 
 ---
+
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
+
 <br>
 <br>
 
@@ -196,19 +195,19 @@ Creating things that change my every day life.
 # ➤ Experience
 
 | **Duke Energy:** Hallandale Beach, FL | March 2020 - Present |
-| --------------------------------------------- | -------------------- |
-| **Front End Web Developer**                   |
-|                                               |
+| ------------------------------------- | -------------------- |
+| **Front End Web Developer**           |
+|                                       |
 
-- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
-- Designed mock-up screens, wireframes, and workflows for intuitive user experience.
-- Migrated existing multi-page user experience into singular page interfaces using React components.
-- Participated in every stage of the design from conception through development and iterative improvement.
-- Produced user stories and internal documentation for future site development and maintenance.
-- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
-- Managed all test deployments using a combination of Digital Ocean and Netlify.
-- Produced unit tests using a combination of Mocha and Chai.
-- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+-   Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+-   Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+-   Migrated existing multi-page user experience into singular page interfaces using React components.
+-   Participated in every stage of the design from conception through development and iterative improvement.
+-   Produced user stories and internal documentation for future site development and maintenance.
+-   Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+-   Managed all test deployments using a combination of Digital Ocean and Netlify.
+-   Produced unit tests using a combination of Mocha and Chai.
+-   Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
 
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
@@ -218,11 +217,11 @@ Creating things that change my every day life.
 | **Product Development Engineer** |
 |                                  |
 
-- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
-- Reorganized internal file server structure.
-- Conducted remote / in person system integration and product demonstrations.
-- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
-- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+-   Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+-   Reorganized internal file server structure.
+-   Conducted remote / in person system integration and product demonstrations.
+-   Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+-   Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
 
 | **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
 | ---------------- | ------------------------------------ |
@@ -234,12 +233,12 @@ Creating things that change my every day life.
 # ➤ Education
 
 | **B.S. Electrical Engineering, TCNJ,** Ewing NJ | 2014 - 2019 |
-| ------------------------------------------------ | ----------- |
+| ----------------------------------------------- | ----------- |
 
 **Capstone Project - Team Lead**
 
-- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
-- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+-   Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+-   Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
 
 | **Environment:** | **C++, Python, MATLAB, PureData** |
 | ---------------- | --------------------------------- |
@@ -250,9 +249,11 @@ Creating things that change my every day life.
 <br>
 
 ---
+
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
+
 <br>
 <br>
 
@@ -312,13 +313,10 @@ Creating things that change my every day life.
 <br>
 <br>
 
-
-
 <br>
 <br>
 
 <div style=" border: 1px solid black">
-
 
 </div>
 <hr>
@@ -337,7 +335,6 @@ Creating things that change my every day life.
 
 <div style=" border: 1px solid black">
 
-
 </div>
 
 # [react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
@@ -345,7 +342,6 @@ Creating things that change my every day life.
 [![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
 
 <div style=" border: 1px solid black">
-
 
 </div>
 
@@ -416,12 +412,9 @@ for i in range(10):
 
 ---
 
-
-
 ## ➤ Github Gists
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
-
 
 ## [Github Gists](https://bgoonzgist.netlify.app/)
 
@@ -497,39 +490,40 @@ RecurseDirs "./"
 
 ```
 
- ---
-### Copy to clipboard jQuerry
- > Language: Javascript/Jquery
+---
 
->In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
+### Copy to clipboard jQuerry
+
+> Language: Javascript/Jquery
+
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
-$(document).ready(function() {
-  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+$(document).ready(function () {
+    $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
 
-  $('code span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim(); //.text();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
+    $('code span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim(); //.text();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
 
-  $('pre span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
-})
-
+    $('pre span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
+});
 ```
 
 ---
@@ -634,10 +628,7 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 
 ---
 
-
 ```js
-
-
 function camelToKebab(value) {
     return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
@@ -649,10 +640,7 @@ function camelToKebab(value) {
 
 ---
 
-
 ```js
-
-
 function camel(str) {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
         if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
@@ -667,10 +655,7 @@ function camel(str) {
 
 ---
 
-
 ```js
-
-
 function addTwoNumbers(l1, l2) {
     let result = new ListNode(0);
     let currentNode = result;
@@ -733,10 +718,7 @@ console.log(isAlphaNumeric('!')); //false
 
 ---
 
-
 ```js
-
-
 function replaceWords(str, before, after) {
     if (/^[A-Z]/.test(before)) {
         after = after[0].toUpperCase() + after.substring(1);
@@ -778,10 +760,7 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ---
 
-
 ```js
-
-
 function longestCommonPrefix(strs) {
     let prefix = '';
     if (strs.length === 0) return prefix;
@@ -801,8 +780,6 @@ function longestCommonPrefix(strs) {
 </details>
 
 <hr>
-
-
 
 [list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
 

@@ -25,7 +25,6 @@ seo:
 template: docs
 ---
 
-
  <div align="center">
 
 # ➤ Connect with me:
@@ -130,21 +129,17 @@ template: docs
 | [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)                          | [Notion](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)    | [AngelList](https://angel.co/u/bryan-guner)       | [StackShare](https://stackshare.io/bryanguner)                            | [Plunk](http://plnkr.co/account/plunks)                                      | [Tealfeed](https://tealfeed.com/bryan_759844)         |
 | [giphy](https://giphy.com/channel/bryanguner)                                                                              | [kofi](https://ko-fi.com/bgoonz)                                                    | [Codewars](https://www.codewars.com/users/bgoonz) | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [Glitch](https://glitch.com/@bgoonz)                                         | [YHYPE](https://yhype.me/github/accounts/bgoonz)      |
 | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)                                    | [Netlify](https://app.netlify.com/user/settings#profile)                            | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)                                       | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured) | [Free Code Camp](https://www.freecodecamp.org/bgoonz) |
-| [wordpress](https://bgoonz-blog.netlify.app/)                                                                                      | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                 | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            | [hashnode](https://hashnode.com/@bgoonz/joinme)                              |
+| [wordpress](https://bgoonz-blog.netlify.app/)                                                                              | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                 | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            | [hashnode](https://hashnode.com/@bgoonz/joinme)                              |
 | [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com) | [Gittee](https://gitee.com/bgoonz)                                                  | [Wakatime](https://wakatime.com/@bgoonz42)        | [Hubpages](https://hubpages.com/@bryanguner)                              | [Gitbook](https://bryan-guner.gitbook.io/web-dev-hub-docs/)                  |                                                       |
 
 </div>
 
 ---
 
-
-
-
 <a class="twitter-timeline" href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw">Tweets by bgooonz</a>
 <br>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-
 
  <iframe class="utterances-frame" title="Comments" scrolling="yes" src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=bgoonz%2FBGOONZ_BLOG_2.0&issue-term=url&label=comment&theme=github-light&crossorigin=anonymous&async=&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2Fadmin%2F&origin=https%3A%2F%2Fbgoonz-blog.netlify.app&pathname=admin%2F&title=Content+Manager&description=&og%3Atitle=&session=893b13e5949a24761d07a5a8lPqWXyqXu6NYrAlbw5%2FXWJwhyGoNgw0Nfqt4f6jL%2B%2BhqBSHrR9YC4g4tA5eUQRuWlCEvLGnO9En39ieuEAzoM840RS6pkSo8sL5ViCXQ3IcqQR68vd%2FbOvjEWgU%3D" loading="lazy"></iframe>
