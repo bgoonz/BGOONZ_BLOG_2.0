@@ -1,7 +1,6 @@
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
-  
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
@@ -19,7 +18,7 @@
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
+
 
 </div>
 <div align="center">
@@ -33,19 +32,7 @@
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
 
   
-  <div class="postman-run-button"
-data-postman-action="collection/fork"
-data-postman-var-1="13232440-257a1592-75e3-4207-a934-752426e6fcf0"
-data-postman-collection-url="entityId=13232440-257a1592-75e3-4207-a934-752426e6fcf0&entityType=collection&workspaceId=7c75453f-5a57-46e0-a7c7-f2e132aa26ab"></div>
-<script type="text/javascript">
-  (function (p,o,s,t,m,a,n) {
-    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
-      (n = o.createElement("script")),
-      (n.id = s+t), (n.async = 1), (n.src = m), n
-    ));
-  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-</script>
+  
 ---
   
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>

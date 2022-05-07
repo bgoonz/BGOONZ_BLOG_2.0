@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: Git and Github
 weight: 0
 excerpt: 
@@ -11,15 +10,3 @@ seo:
 template: docs
 ---
 
-=======
-title: Glossary
-weight: 0
-excerpt: 
-seo:
-    title: 'Glossary'
-    description: ''
-    robots: []
-    extra: []
-template: docs
----
->>>>>>> 6eb94fcf204556089471c9f3de55802de603a493

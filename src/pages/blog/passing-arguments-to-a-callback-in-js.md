@@ -51,8 +51,10 @@ Another method to do this is using the `bind` method. For example:
 
 ```js
 var alertText = function (text) {
-    alert(text);
+  alert(text);
 };
 
-document.getElementById('someelem').addEventListener('click', alertText.bind(this, 'hello'));
+document
+  .getElementById("someelem")
+  .addEventListener("click", alertText.bind(this, "hello"));
 ```

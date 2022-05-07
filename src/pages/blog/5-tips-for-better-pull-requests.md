@@ -10,6 +10,7 @@ image_position: right
 show_author_bio: true
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # 5 tips for better Pull Requests
