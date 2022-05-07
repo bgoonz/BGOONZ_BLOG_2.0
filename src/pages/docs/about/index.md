@@ -23,24 +23,21 @@ seo:
 template: docs
 ---
 
-
-<div align="center">
-
 <h1>Hi 👋, I'm Bryan</h1>
-  
-<img align="center"  src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
-## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
+
+<img src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
+### ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
 
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![hackmd-github-sync-badge](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q/badge)](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
 
 ### [💻WEBSITE💻](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
 
- [**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
+[**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)<a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner)[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz)
 
 <p align="center">
-  
+
 <h4 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h4>
 
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:570; height:420;">
@@ -49,14 +46,14 @@ template: docs
 
 <summary><h3 align="center">Languages and Tools:</h3></summary>
 
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>  
-  
-</details>  
-  
+<p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+
+</details>
+
   </div>
 
 <div align="center">
-  
+
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /><img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Lambda)](https://github.com/bgoonz/Lambda)[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=DS-ALGO-OFFICIAL)](https://github.com/bgoonz/DS-ALGO-OFFICIAL)[![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy)[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=BGOONZ_BLOG_2.0)](https://github.com/bgoonz/BGOONZ_BLOG_2.0)[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&layout=compact&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
@@ -66,9 +63,9 @@ template: docs
 <p align="center">
   <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
   </p>
-  
+
   </div>
-  
+
 [![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz&custom_title=This%20is%20Bryans%20Activity&hide_border=true&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)
 
 <div align="center">
@@ -79,23 +76,23 @@ template: docs
 
 <summary>About Me</summary>
 
-- 🔭 Contract Web Development **Duke Energy**
+-   🔭 Contract Web Development **Duke Energy**
 -
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 -
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
 -
-- 🤝 I'm looking for help with [L
+-   🤝 I'm looking for help with [L
 -
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+-   👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
 
-- 💬 Ask me about **Anything:**
+-   💬 Ask me about **Anything:**
 
-- 📫 How to reach me **bryan.guner@gmail.com**
+-   📫 How to reach me **bryan.guner@gmail.com**
 
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
 ### i really like music :headphones
 
@@ -169,9 +166,11 @@ Creating things that change my every day life.
 <br>
 
 ---
+
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
+
 <br>
 <br>
 
@@ -196,19 +195,19 @@ Creating things that change my every day life.
 # ➤ Experience
 
 | **Duke Energy:** Hallandale Beach, FL | March 2020 - Present |
-| --------------------------------------------- | -------------------- |
-| **Front End Web Developer**                   |
-|                                               |
+| ------------------------------------- | -------------------- |
+| **Front End Web Developer**           |
+|                                       |
 
-- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
-- Designed mock-up screens, wireframes, and workflows for intuitive user experience.
-- Migrated existing multi-page user experience into singular page interfaces using React components.
-- Participated in every stage of the design from conception through development and iterative improvement.
-- Produced user stories and internal documentation for future site development and maintenance.
-- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
-- Managed all test deployments using a combination of Digital Ocean and Netlify.
-- Produced unit tests using a combination of Mocha and Chai.
-- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+-   Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+-   Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+-   Migrated existing multi-page user experience into singular page interfaces using React components.
+-   Participated in every stage of the design from conception through development and iterative improvement.
+-   Produced user stories and internal documentation for future site development and maintenance.
+-   Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+-   Managed all test deployments using a combination of Digital Ocean and Netlify.
+-   Produced unit tests using a combination of Mocha and Chai.
+-   Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
 
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
@@ -218,11 +217,11 @@ Creating things that change my every day life.
 | **Product Development Engineer** |
 |                                  |
 
-- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
-- Reorganized internal file server structure.
-- Conducted remote / in person system integration and product demonstrations.
-- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
-- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+-   Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+-   Reorganized internal file server structure.
+-   Conducted remote / in person system integration and product demonstrations.
+-   Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+-   Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
 
 | **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
 | ---------------- | ------------------------------------ |
@@ -234,12 +233,12 @@ Creating things that change my every day life.
 # ➤ Education
 
 | **B.S. Electrical Engineering, TCNJ,** Ewing NJ | 2014 - 2019 |
-| ------------------------------------------------ | ----------- |
+| ----------------------------------------------- | ----------- |
 
 **Capstone Project - Team Lead**
 
-- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
-- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+-   Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+-   Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
 
 | **Environment:** | **C++, Python, MATLAB, PureData** |
 | ---------------- | --------------------------------- |
@@ -250,9 +249,11 @@ Creating things that change my every day life.
 <br>
 
 ---
+
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
 
 ---
+
 <br>
 <br>
 
@@ -312,13 +313,10 @@ Creating things that change my every day life.
 <br>
 <br>
 
-
-
 <br>
 <br>
 
 <div style=" border: 1px solid black">
-
 
 </div>
 <hr>
@@ -337,7 +335,6 @@ Creating things that change my every day life.
 
 <div style=" border: 1px solid black">
 
-
 </div>
 
 # [react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
@@ -345,7 +342,6 @@ Creating things that change my every day life.
 [![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
 
 <div style=" border: 1px solid black">
-
 
 </div>
 
@@ -416,12 +412,9 @@ for i in range(10):
 
 ---
 
-
-
 ## ➤ Github Gists
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
-
 
 ## [Github Gists](https://bgoonzgist.netlify.app/)
 
@@ -461,13 +454,13 @@ print(quicksort([9,8,7,6,5,4,3,2,1]))
 ---
 
 <details>
-  
+
   <summary>See Older Snippets!</summary>
-  
+
 #### This Week's snippets
-  
+
   ---
-  
+
    >will replace any spaces in file names with an underscore!
 
 ```bash
@@ -497,39 +490,40 @@ RecurseDirs "./"
 
 ```
 
- ---
-### Copy to clipboard jQuerry
- > Language: Javascript/Jquery
+---
 
->In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
+### Copy to clipboard jQuerry
+
+> Language: Javascript/Jquery
+
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
-$(document).ready(function() {
-  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+$(document).ready(function () {
+    $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
 
-  $('code span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim(); //.text();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
+    $('code span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim(); //.text();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
 
-  $('pre span.command-copy').click(function(e) {
-    var text = $(this).parent().text().trim();
-    var copyHex = document.createElement('input');
-    copyHex.value = text
-    document.body.appendChild(copyHex);
-    copyHex.select();
-    document.execCommand('copy');
-    console.log(copyHex.value)
-    document.body.removeChild(copyHex);
-  });
-})
-
+    $('pre span.command-copy').click(function (e) {
+        var text = $(this).parent().text().trim();
+        var copyHex = document.createElement('input');
+        copyHex.value = text;
+        document.body.appendChild(copyHex);
+        copyHex.select();
+        document.execCommand('copy');
+        console.log(copyHex.value);
+        document.body.removeChild(copyHex);
+    });
+});
 ```
 
 ---
@@ -562,7 +556,7 @@ console.log(isAppleDevice);
 ```js
 /*
  function named intersection(firstArr) that takes in an array and
-returns a function. 
+returns a function.
 When the function returned by intersection is invoked
 passing in an array (secondArr) it returns a new array containing the elements
 common to both firstArr and secondArr.
@@ -634,10 +628,7 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 
 ---
 
-
 ```js
-
-
 function camelToKebab(value) {
     return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
@@ -649,10 +640,7 @@ function camelToKebab(value) {
 
 ---
 
-
 ```js
-
-
 function camel(str) {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
         if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
@@ -667,10 +655,7 @@ function camel(str) {
 
 ---
 
-
 ```js
-
-
 function addTwoNumbers(l1, l2) {
     let result = new ListNode(0);
     let currentNode = result;
@@ -733,10 +718,7 @@ console.log(isAlphaNumeric('!')); //false
 
 ---
 
-
 ```js
-
-
 function replaceWords(str, before, after) {
     if (/^[A-Z]/.test(before)) {
         after = after[0].toUpperCase() + after.substring(1);
@@ -778,10 +760,7 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 
 ---
 
-
 ```js
-
-
 function longestCommonPrefix(strs) {
     let prefix = '';
     if (strs.length === 0) return prefix;
@@ -801,8 +780,6 @@ function longestCommonPrefix(strs) {
 </details>
 
 <hr>
-
-
 
 [list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
 

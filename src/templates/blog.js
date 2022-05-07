@@ -1,9 +1,9 @@
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import React from 'react';
-import {Layout} from '../components/index';
-import {getPages, Link, toStyleObj, withPrefix} from '../utils';
+import { Layout } from '../components/index';
+import { getPages, Link, toStyleObj, withPrefix } from '../utils';
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql `
@@ -106,10 +106,10 @@ export default class Blog extends React.Component {
                             } </article>
                         ))
                     } </div>
-<iframe src="https://platform.twitter.com/widgets/tweet_button.html" style="border: 0; width:130px; height:20px;"></iframe>
-
-                    <div className="gcse-search"/>
+                 
                 </div>
+<div className="gcse-search"></div>
+
             </Layout>
         );
     }

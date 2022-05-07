@@ -1,21 +1,22 @@
-
 # The Anatomy of a Search Engine
 
 > ## Excerpt
+>
 > These tasks are becoming increasingly difficult as the Web grows. However,
-hardware performance and cost have improved dramatically to partially offset
-the difficulty. There are, however, several notable exceptions to this
-progress such as disk seek time and operating system robustness. In designing
-Google, we have considered both the rate of growth of the Web and technological
-changes. Google is designed to scale well to extremely large data sets.
-It makes efficient use of storage space to store the index. Its data structures
-are optimized for fast and efficient access (see section 4.2).
-Further, we expect that the cost to index and store text or HTML will eventually
-decline relative to the amount that will be available (see Appendix
-B). This will result in favorable scaling properties for centralized
-systems like Google.
+> hardware performance and cost have improved dramatically to partially offset
+> the difficulty. There are, however, several notable exceptions to this
+> progress such as disk seek time and operating system robustness. In designing
+> Google, we have considered both the rate of growth of the Web and technological
+> changes. Google is designed to scale well to extremely large data sets.
+> It makes efficient use of storage space to store the index. Its data structures
+> are optimized for fast and efficient access (see section 4.2).
+> Further, we expect that the cost to index and store text or HTML will eventually
+> decline relative to the amount that will be available (see Appendix
+> B). This will result in favorable scaling properties for centralized
+> systems like Google.
 
 ---
+
 **Sergey Brin and Lawrence Page**
 
 {sergey, page}@cs.stanford.edu
@@ -24,11 +25,11 @@ Computer Science Department, Stanford University, Stanford, CA 94305
 
 ### Abstract
 
->        In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)  
+> In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)  
 >        To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
 >        Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
-> 
->  **Keywords**: World Wide Web, Search Engines, Information Retrieval, PageRank, Google
+>
+> **Keywords**: World Wide Web, Search Engines, Information Retrieval, PageRank, Google
 
 ## 1\. Introduction
 
@@ -72,9 +73,9 @@ The citation (link) graph of the web is an important resource that has largely g
 Academic citation literature has been applied to the web, largely by counting citations or backlinks to a given page. This gives some approximation of a page's importance or quality. PageRank extends this idea by not counting links from all pages equally, and by normalizing by the number of links on a page. PageRank is defined as follows:
 
 > _We assume page A has pages T1...Tn which point to it (i.e., are citations). The parameter d is a damping factor which can be set between 0 and 1. We usually set d to 0.85. There are more details about d in the next section. Also C(A) is defined as the number of links going out of page A. The PageRank of a page A is given as follows:_
-> 
+>
 > _PR(A) = (1-d) + d (PR(T1)/C(T1) + ... + PR(Tn)/C(Tn))_
-> 
+>
 > _Note that the PageRanks form a probability distribution over web pages, so the sum of all web pages' PageRanks will be one._
 
 PageRank or _PR(A)_ can be calculated using a simple iterative algorithm, and corresponds to the principal eigenvector of the normalized link matrix of the web. Also, a PageRank for 26 million web pages can be computed in a few hours on a medium size workstation. There are many other details which are beyond the scope of this paper.
@@ -117,7 +118,7 @@ First, we will provide a high level discussion of the architecture. Then, there 
 
 Figure 1. High Level Google Architecture
 
-  
+
 
 ### 4.1 Google Architecture Overview
 
@@ -139,7 +140,7 @@ BigFiles are virtual files spanning multiple file systems and are addressable by
 
 #### 4.2.2 Repository
 
-  
+
 
 ![](http://infolab.stanford.edu/~backrub/repos.gif)
 
@@ -167,7 +168,7 @@ Our compact encoding uses two bytes for every hit. There are two types of hits: 
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
 
- 
+
 
 The length of a hit list is stored before the hits themselves. To save space, the length of the hit list is combined with the wordID in the forward index and the docID in the inverted index. This limits it to 8 and 5 bits respectively (there are some tricks which allow 8 bits to be borrowed from the wordID). If the length is longer than would fit in that many bits, an escape code is used in those bits, and the next two bytes contain the actual length.
 
@@ -191,9 +192,9 @@ It turns out that running a crawler which connects to more than half a million s
 
 ### 4.4 Indexing the Web
 
--   **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
--   **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
--   **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
+- **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
+- **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
+- **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
 
 ### 4.5 Searching
 
@@ -206,12 +207,12 @@ The goal of searching is to provide quality search results efficiently. Many of 
 5.  Compute the rank of that document for the query.
 6.  If we are in the short barrels and at the end of any doclist, seek to the start of the doclist in the full barrel for every word and go to step 4.
 7.  If we are not at the end of any doclist go to step 4.
-  
+
 Sort the documents that have matched by rank and return the top k.
 
 Figure 4. Google Query Evaluation
 
- 
+
 
 To put a limit on response time, once a certain number (currently 40,000) of matching documents are found, the searcher automatically goes to step 8 in Figure 4. This means that it is possible that sub-optimal results would be returned. We are currently investigating other ways to solve this problem. In the past, we sorted the hits according to PageRank, which seemed to improve the situation.
 
@@ -227,14 +228,15 @@ The ranking function has many parameters like the type-weights and the type-prox
 
 ## 5 Results and Performance
 
-   The most important measure of a search engine is the quality of its search results. While a complete user evaluation is beyond the scope of this paper, our own experience with Google has shown it to produce better results than the major commercial search engines for most searches. As an example which illustrates the use of PageRank, anchor text, and proximity, Figure 4 shows Google's results for a search on "bill clinton". These results demonstrates some of Google's features. The results are clustered by server. This helps considerably when sifting through result sets. A number of results are from the whitehouse.gov domain which is what one may reasonably expect from such a search. Currently, most major commercial search engines do not return any results from whitehouse.gov, much less the right ones. Notice that there is no title for the first result. This is because it was not crawled. Instead, Google relied on anchor text to determine this was a good answer to the query. Similarly, the fifth result is an email address which, of course, is not crawlable. It is also a result of anchor text.
+The most important measure of a search engine is the quality of its search results. While a complete user evaluation is beyond the scope of this paper, our own experience with Google has shown it to produce better results than the major commercial search engines for most searches. As an example which illustrates the use of PageRank, anchor text, and proximity, Figure 4 shows Google's results for a search on "bill clinton". These results demonstrates some of Google's features. The results are clustered by server. This helps considerably when sifting through result sets. A number of results are from the whitehouse.gov domain which is what one may reasonably expect from such a search. Currently, most major commercial search engines do not return any results from whitehouse.gov, much less the right ones. Notice that there is no title for the first result. This is because it was not crawled. Instead, Google relied on anchor text to determine this was a good answer to the query. Similarly, the fifth result is an email address which, of course, is not crawlable. It is also a result of anchor text.
 
 All of the results are reasonably high quality pages and, at last check, none were broken links. This is largely because they all have high PageRank. The PageRanks are the percentages in red along with bar graphs. Finally, there are no results about a Bill other than Clinton or about a Clinton other than Bill. This is because we place heavy importance on the proximity of word occurrences. Of course a true test of the quality of a search engine would involve an extensive user study or results analysis which we do not have room for here. Instead, we invite the reader to try Google for themselves at [http://google.stanford.edu](http://google.stanford.edu/).
 
 ### 5.1 Storage Requirements
 
-Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.  
-  
+Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.
+
+
 
 Storage Statistics
 
@@ -298,11 +300,11 @@ Number of 404's
 
 1.6 million
 
- 
+
 
 Table 1. Statistics
 
-  
+
 
 ###  5.2 System Performance
 
@@ -312,11 +314,11 @@ It is important for a search engine to crawl and index efficiently. This way inf
 
 Improving the performance of search was not the major focus of our research up to this point. The current version of Google answers most queries in between 1 and 10 seconds. This time is mostly dominated by disk IO over NFS (since disks are spread over a number of machines). Furthermore, Google does not have any optimizations such as query caching, subindices on common terms, and other common optimizations. We intend to speed up Google considerably through distribution and hardware, software, and algorithmic improvements. Our target is to be able to handle several hundred queries per second. Table 2 has some sample query times from the current version of Google. They are repeated to show the speedups resulting from cached IO.
 
- 
+
 
 **Initial Query**
 
-**Same Query Repeated (IO mostly cached)** 
+**Same Query Repeated (IO mostly cached)**
 
 **Query**
 
@@ -368,11 +370,11 @@ search engines
 
 1.16
 
- 
+
 
 Table 2. Search Times
 
-  
+
 
 ## 6 Conclusions
 
@@ -400,33 +402,33 @@ Scott Hassan and Alan Steremberg have been critical to the development of Google
 
 ## References
 
--   Best of the Web 1994 -- Navigators [http://botw.org/1994/awards/navigators.html](http://botw.org/1994/awards/navigators.html)
--   Bill Clinton Joke of the Day: April 14, 1997. [http://www.io.com/~cjburke/clinton/970414.html.](http://www.io.com/~cjburke/clinton/970414.html)
--   Bzip2 Homepage [http://www.muraroa.demon.co.uk/](http://www.muraroa.demon.co.uk/)
--   Google Search Engine [http://google.stanford.edu/](http://google.stanford.edu/)
--   Harvest [http://harvest.transarc.com/](http://harvest.transarc.com/)
--   Mauldin, Michael L. Lycos Design Choices in an Internet Search Service, IEEE Expert Interview [http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm](http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm)
--   The Effect of Cellular Phone Use Upon Driver Attention [http://www.webfirst.com/aaa/text/cell/cell0toc.htm](http://www.webfirst.com/aaa/text/cell/cell0toc.htm)
--   Search Engine Watch [http://www.searchenginewatch.com/](http://www.searchenginewatch.com/)
--   RFC 1950 (zlib) [ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html](ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html)
--   Robots Exclusion Protocol: [http://info.webcrawler.com/mak/projects/robots/exclusion.htm](http://info.webcrawler.com/mak/projects/robots/exclusion.html)
--   Web Growth Summary: [http://www.mit.edu/people/mkgray/net/web-growth-summary.html](http://www.mit.edu/people/mkgray/net/web-growth-summary.html)
--   Yahoo! [http://www.yahoo.com/](http://www.yahoo.com/)
+- Best of the Web 1994 -- Navigators [http://botw.org/1994/awards/navigators.html](http://botw.org/1994/awards/navigators.html)
+- Bill Clinton Joke of the Day: April 14, 1997. [http://www.io.com/~cjburke/clinton/970414.html.](http://www.io.com/~cjburke/clinton/970414.html)
+- Bzip2 Homepage [http://www.muraroa.demon.co.uk/](http://www.muraroa.demon.co.uk/)
+- Google Search Engine [http://google.stanford.edu/](http://google.stanford.edu/)
+- Harvest [http://harvest.transarc.com/](http://harvest.transarc.com/)
+- Mauldin, Michael L. Lycos Design Choices in an Internet Search Service, IEEE Expert Interview [http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm](http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm)
+- The Effect of Cellular Phone Use Upon Driver Attention [http://www.webfirst.com/aaa/text/cell/cell0toc.htm](http://www.webfirst.com/aaa/text/cell/cell0toc.htm)
+- Search Engine Watch [http://www.searchenginewatch.com/](http://www.searchenginewatch.com/)
+- RFC 1950 (zlib) [ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html](ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html)
+- Robots Exclusion Protocol: [http://info.webcrawler.com/mak/projects/robots/exclusion.htm](http://info.webcrawler.com/mak/projects/robots/exclusion.html)
+- Web Growth Summary: [http://www.mit.edu/people/mkgray/net/web-growth-summary.html](http://www.mit.edu/people/mkgray/net/web-growth-summary.html)
+- Yahoo! [http://www.yahoo.com/](http://www.yahoo.com/)
 
--   \[Abiteboul 97\] Serge Abiteboul and Victor Vianu, _Queries and Computation on the Web_. Proceedings of the International Conference on Database Theory. Delphi, Greece 1997.
--   \[Bagdikian 97\] Ben H. Bagdikian. _The Media Monopoly_. 5th Edition. Publisher: Beacon, ISBN: 0807061557
--   \[Chakrabarti 98\] S.Chakrabarti, B.Dom, D.Gibson, J.Kleinberg, P. Raghavan and S. Rajagopalan. _Automatic Resource Compilation by Analyzing Hyperlink Structure and Associated Text._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
--   \[Cho 98\] Junghoo Cho, Hector Garcia-Molina, Lawrence Page. _Efficient Crawling Through URL Ordering._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
--   \[Gravano 94\] Luis Gravano, Hector Garcia-Molina, and A. Tomasic. _The Effectiveness of GlOSS for the Text-Database Discovery Problem._ Proc. of the 1994 ACM SIGMOD International Conference On Management Of Data, 1994.
--   \[Kleinberg 98\] Jon Kleinberg, _Authoritative Sources in a Hyperlinked Environment_, Proc. ACM-SIAM Symposium on Discrete Algorithms, 1998.
--   \[Marchiori 97\] Massimo Marchiori. _The Quest for Correct Information on the Web: Hyper Search Engines._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
--   \[McBryan 94\] Oliver A. McBryan. GENVL and _WWWW: Tools for Taming the Web. First International Conference on the World Wide Web._ CERN, Geneva (Switzerland), May 25-26-27 1994. [http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps](http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps)
--   \[Page 98\] Lawrence Page, Sergey Brin, Rajeev Motwani, Terry Winograd. _The PageRank Citation Ranking: Bringing Order to the Web._ Manuscript in progress. [http://google.stanford.edu/~backrub/pageranksub.ps](http://google.stanford.edu/~backrub/pageranksub.ps)
--   \[Pinkerton 94\] Brian Pinkerton, _Finding What People Want: Experiences with the WebCrawler._ The Second International WWW Conference Chicago, USA, October 17-20, 1994. [http://info.webcrawler.com/bp/WWW94.html](http://info.webcrawler.com/bp/WWW94.html)
--   \[Spertus 97\] Ellen Spertus. _ParaSite: Mining Structural Information on the Web._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
--   \[TREC 96\] _Proceedings of the fifth Text REtrieval Conference (TREC-5)._ Gaithersburg, Maryland, November 20-22, 1996. Publisher: Department of Commerce, National Institute of Standards and Technology. Editors: D. K. Harman and E. M. Voorhees. Full text at: [http://trec.nist.gov/](http://trec.nist.gov/)
--   \[Witten 94\] Ian H Witten, Alistair Moffat, and Timothy C. Bell. _Managing Gigabytes: Compressing and Indexing Documents and Images._ New York: Van Nostrand Reinhold, 1994.
--   \[Weiss 96\] Ron Weiss, Bienvenido Velez, Mark A. Sheldon, Chanathip Manprempre, Peter Szilagyi, Andrzej Duda, and David K. Gifford. _HyPursuit: A Hierarchical Network Search Engine that Exploits Content-Link Hypertext Clustering._ Proceedings of the 7th ACM Conference on Hypertext. New York, 1996.
+- \[Abiteboul 97\] Serge Abiteboul and Victor Vianu, _Queries and Computation on the Web_. Proceedings of the International Conference on Database Theory. Delphi, Greece 1997.
+- \[Bagdikian 97\] Ben H. Bagdikian. _The Media Monopoly_. 5th Edition. Publisher: Beacon, ISBN: 0807061557
+- \[Chakrabarti 98\] S.Chakrabarti, B.Dom, D.Gibson, J.Kleinberg, P. Raghavan and S. Rajagopalan. _Automatic Resource Compilation by Analyzing Hyperlink Structure and Associated Text._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
+- \[Cho 98\] Junghoo Cho, Hector Garcia-Molina, Lawrence Page. _Efficient Crawling Through URL Ordering._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
+- \[Gravano 94\] Luis Gravano, Hector Garcia-Molina, and A. Tomasic. _The Effectiveness of GlOSS for the Text-Database Discovery Problem._ Proc. of the 1994 ACM SIGMOD International Conference On Management Of Data, 1994.
+- \[Kleinberg 98\] Jon Kleinberg, _Authoritative Sources in a Hyperlinked Environment_, Proc. ACM-SIAM Symposium on Discrete Algorithms, 1998.
+- \[Marchiori 97\] Massimo Marchiori. _The Quest for Correct Information on the Web: Hyper Search Engines._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
+- \[McBryan 94\] Oliver A. McBryan. GENVL and _WWWW: Tools for Taming the Web. First International Conference on the World Wide Web._ CERN, Geneva (Switzerland), May 25-26-27 1994. [http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps](http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps)
+- \[Page 98\] Lawrence Page, Sergey Brin, Rajeev Motwani, Terry Winograd. _The PageRank Citation Ranking: Bringing Order to the Web._ Manuscript in progress. [http://google.stanford.edu/~backrub/pageranksub.ps](http://google.stanford.edu/~backrub/pageranksub.ps)
+- \[Pinkerton 94\] Brian Pinkerton, _Finding What People Want: Experiences with the WebCrawler._ The Second International WWW Conference Chicago, USA, October 17-20, 1994. [http://info.webcrawler.com/bp/WWW94.html](http://info.webcrawler.com/bp/WWW94.html)
+- \[Spertus 97\] Ellen Spertus. _ParaSite: Mining Structural Information on the Web._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
+- \[TREC 96\] _Proceedings of the fifth Text REtrieval Conference (TREC-5)._ Gaithersburg, Maryland, November 20-22, 1996. Publisher: Department of Commerce, National Institute of Standards and Technology. Editors: D. K. Harman and E. M. Voorhees. Full text at: [http://trec.nist.gov/](http://trec.nist.gov/)
+- \[Witten 94\] Ian H Witten, Alistair Moffat, and Timothy C. Bell. _Managing Gigabytes: Compressing and Indexing Documents and Images._ New York: Van Nostrand Reinhold, 1994.
+- \[Weiss 96\] Ron Weiss, Bienvenido Velez, Mark A. Sheldon, Chanathip Manprempre, Peter Szilagyi, Andrzej Duda, and David K. Gifford. _HyPursuit: A Hierarchical Network Search Engine that Exploits Content-Link Hypertext Clustering._ Proceedings of the 7th ACM Conference on Hypertext. New York, 1996.
 
 ## Vitae
 
@@ -455,9 +457,6 @@ Of course a distributed systems like G_l_oss \[[Gravano 94](http://infolab.stanf
 
 Because humans can only type or speak a finite amount, and as computers continue improving, text indexing will scale even better than it does now. Of course there could be an infinite amount of machine generated content, but just indexing huge amounts of human generated content seems tremendously useful. So we are optimistic that our centralized web search engine architecture will improve in its ability to cover the pertinent text information over time and that there is a bright future for search.
 
-
-
-
 As we'll see, the trick is to ask the web itself to rank the importance of pages...
 
 Imagine a library containing 25 billion documents but with no centralized organization and no librarians. In addition, anyone may add a document at any time without telling anyone. You may feel sure that one of the documents contained in the collection has a piece of information that is vitally important to you, and, being impatient like most of us, you'd like to find it in a matter of seconds. How would you go about doing it?
@@ -478,19 +477,19 @@ We will assign to each web page _P_ a measure of its importance _I(P)_, called t
 
 Here's how the PageRank is determined. Suppose that page _Pj_ has _lj_ links. If one of those links is to page _Pi_, then _Pj_ will pass on 1/_lj_ of its importance to _Pi_. The importance ranking of _Pi_ is then the sum of all the contributions made by pages linking to it. That is, if we denote the set of pages linking to _Pi_ by _Bi_, then
 
-![\[  I(P_i)=\sum_{P_j\in B_i} \frac{I(P_j)}{l_j}  \] ](https://www.ams.org/featurecolumn/images/december2006/index_1.gif)
+![[  I(P_i)=\sum_{P_j\in B_i} \frac{I(P_j)}{l_j}  ] ](https://www.ams.org/featurecolumn/images/december2006/index_1.gif)
 
 This may remind you of the chicken and the egg: to determine the importance of a page, we first need to know the importance of all the pages linking to it. However, we may recast the problem into one that is more mathematically familiar.
 
 Let's first create a matrix, called the hyperlink matrix, ![$ {\bf H}=[H_{ij}] $ ](https://www.ams.org/featurecolumn/images/december2006/index_2.gif) in which the entry in the _ith_ row and _jth_ column is
 
-![\[  H_{ij}=\left\{\begin{array}{ll}1/l_{j} &  \hbox{if } P_j\in B_i \\ 0 & \hbox{otherwise} \end{array}\right.  \] ](https://www.ams.org/featurecolumn/images/december2006/index_3.gif)
+![[  H_{ij}=\left{\begin{array}{ll}1/l_{j} &  \hbox{if } P_j\in B_i \ 0 & \hbox{otherwise} \end{array}\right.  ] ](https://www.ams.org/featurecolumn/images/december2006/index_3.gif)
 
 Notice that **H** has some special properties. First, its entries are all nonnegative. Also, the sum of the entries in a column is one unless the page corresponding to that column has no links. Matrices in which all the entries are nonnegative and the sum of the entries in every column is one are called _stochastic_; they will play an important role in our story.
 
 We will also form a vector ![$ I=[I(P_i)] $ ](https://www.ams.org/featurecolumn/images/december2006/index_4.gif) whose components are PageRanks--that is, the importance rankings--of all the pages. The condition above defining the PageRank may be expressed as
 
-![\[  I = {\bf H}I  \] ](https://www.ams.org/featurecolumn/images/december2006/index_5.gif)
+![[  I = {\bf H}I  ] ](https://www.ams.org/featurecolumn/images/december2006/index_5.gif)
 
 In other words, the vector _I_ is an eigenvector of the matrix **H** with eigenvalue 1. We also call this a _stationary vector_ of **H**.
 
@@ -516,11 +515,11 @@ There are many ways to find the eigenvectors of a square matrix. However, we are
 
 How does the power method work? We begin by choosing a vector _I 0_ as a candidate for _I_ and then producing a sequence of vectors _I k_ by
 
-![\[  I^{k+1}={\bf H}I^k  \] ](https://www.ams.org/featurecolumn/images/december2006/index_6.gif)
+![[  I^{k+1}={\bf H}I^k  ] ](https://www.ams.org/featurecolumn/images/december2006/index_6.gif)
 
 The method is founded on the following general principle that we will soon investigate.
 
-_**General principle:** The sequence _I k_ will converge to the stationary vector _I_._
+_**General principle:** The sequence \_I k_ will converge to the stationary vector _I_.\_
 
 We will illustrate with the example above.
 
@@ -674,9 +673,9 @@ It is natural to ask what these numbers mean. Of course, there can be no absolut
 
 Three questions naturally come to mind:
 
--   Does the sequence _I k_ always converge?
--   Is the vector to which it converges independent of the initial vector _I 0_?
--   Do the importance rankings contain the information that we want?
+- Does the sequence _I k_ always converge?
+- Is the vector to which it converges independent of the initial vector _I 0_?
+- Do the importance rankings contain the information that we want?
 
 Given the current method, the answer to all three questions is "No!" However, we'll see how to modify our method so that we can answer "yes" to all three.
 
@@ -696,7 +695,7 @@ _I 1_
 
 _I 2_
 
-_I 3\=_I__
+\_I 3\=\_I\_\_
 
 1
 
@@ -722,7 +721,7 @@ Imagine that we surf the web at random; that is, when we find ourselves on a web
 
 As we surf randomly, we will denote by ![$ T_j $ ](https://www.ams.org/featurecolumn/images/december2006/index_8.gif) the fraction of time that we spend on page _Pj_. Then the fraction of the time that we end up on page _Pi_ page coming from _Pj_ is ![$ T_j/l_j $ ](https://www.ams.org/featurecolumn/images/december2006/index_9.gif) . If we end up on _Pi_, we must have come from a page linking to it. This means that
 
-![\[  T_i = \sum_{P_j\in B_i} T_j/l_j  \] ](https://www.ams.org/featurecolumn/images/december2006/index_10.gif)
+![[  T_i = \sum_{P_j\in B_i} T_j/l_j  ] ](https://www.ams.org/featurecolumn/images/december2006/index_10.gif)
 
 where the sum is over all the pages _Pj_ linking to _Pi_. Notice that this is the same equation defining the PageRank rankings and so ![$  I(P_i) = T_i $ ](https://www.ams.org/featurecolumn/images/december2006/index_11.gif) . This allows us to interpret a web page's PageRank as the fraction of time that a random surfer spends on that web page. This may make sense if you have ever surfed around for information about a topic you were unfamiliar with: if you follow links for a while, you find yourself coming back to some pages more often than others. Just as "All roads lead to Rome," these are typically more important pages.
 
@@ -754,21 +753,21 @@ In general, the power method is a technique for finding an eigenvector of a squa
 
 We will assume that the eigenvalues of **S** are ![$ \lambda_j $ ](https://www.ams.org/featurecolumn/images/december2006/index_14.gif) and that
 
-![\[  1 = \lambda_1 > |\lambda_2| \geq |\lambda_3| \geq \ldots \geq |\lambda_n|   \] ](https://www.ams.org/featurecolumn/images/december2006/index_15.gif)
+![[  1 = \lambda_1 > |\lambda_2| \geq |\lambda_3| \geq \ldots \geq |\lambda_n|   ] ](https://www.ams.org/featurecolumn/images/december2006/index_15.gif)
 
 We will also assume that there is a basis _vj_ of eigenvectors for **S** with corresponding eigenvalues ![$ \lambda_j $ ](https://www.ams.org/featurecolumn/images/december2006/index_16.gif) . This assumption is not necessarily true, but with it we may more easily illustrate how the power method works. We may write our initial vector _I 0_ as
 
-![\[  I^0 = c_1v_1+c_2v_2 + \ldots + c_nv_n  \] ](https://www.ams.org/featurecolumn/images/december2006/index_17.gif)
+![[  I^0 = c_1v_1+c_2v_2 + \ldots + c_nv_n  ] ](https://www.ams.org/featurecolumn/images/december2006/index_17.gif)
 
 Then
 
-![ \begin{eqnarray*} I^1={\bf S}I^0 &=&c_1v_1+c_2\lambda_2v_2 + \ldots + c_n\lambda_nv_n \\ I^2={\bf S}I^1 &=&c_1v_1+c_2\lambda_2^2v_2 + \ldots + c_n\lambda_n^2v_n \\ \vdots & & \vdots \\ I^{k}={\bf S}I^{k-1} &=&c_1v_1+c_2\lambda_2^kv_2 + \ldots + c_n\lambda_n^kv_n \\ \end{eqnarray*}  ](https://www.ams.org/featurecolumn/images/december2006/index_18.gif)
+![ \begin{eqnarray*} I^1={\bf S}I^0 &=&c_1v_1+c_2\lambda_2v_2 + \ldots + c_n\lambda_nv_n \ I^2={\bf S}I^1 &=&c_1v_1+c_2\lambda_2^2v_2 + \ldots + c_n\lambda_n^2v_n \ \vdots & & \vdots \ I^{k}={\bf S}I^{k-1} &=&c_1v_1+c_2\lambda_2^kv_2 + \ldots + c_n\lambda_n^kv_n \ \end{eqnarray*}  ](https://www.ams.org/featurecolumn/images/december2006/index_18.gif)
 
 Since the eigenvalues ![$ \lambda_j $ ](https://www.ams.org/featurecolumn/images/december2006/index_19.gif) with ![$ j\geq2 $ ](https://www.ams.org/featurecolumn/images/december2006/index_20.gif) have magnitude smaller than one, it follows that ![$ \lambda_j^k\to0 $ ](https://www.ams.org/featurecolumn/images/december2006/index_21.gif) if ![$ j\geq2 $ ](https://www.ams.org/featurecolumn/images/december2006/index_22.gif) and therefore ![$ I^k\to I=c_1v_1 $ ](https://www.ams.org/featurecolumn/images/december2006/index_23.gif) , an eigenvector corresponding to the eigenvalue 1.
 
 It is important to note here that the rate at which ![$ I^k\to I $ ](https://www.ams.org/featurecolumn/images/december2006/index_24.gif) is determined by ![$ |\lambda_2| $ ](https://www.ams.org/featurecolumn/images/december2006/index_25.gif) . When ![$ |\lambda_2| $ ](https://www.ams.org/featurecolumn/images/december2006/index_26.gif) is relatively close to 0, then ![$ \lambda_2^k\to0 $ ](https://www.ams.org/featurecolumn/images/december2006/index_27.gif) relatively quickly. For instance, consider the matrix
 
-![\[  {\bf S} = \left[\begin{array}{cc}0.65 & 0.35 \\ 0.35 & 0.65 \end{array}\right].   \] ](https://www.ams.org/featurecolumn/images/december2006/index_28.gif)
+![[  {\bf S} = \left[\begin{array}{cc}0.65 & 0.35 \ 0.35 & 0.65 \end{array}\right].   ] ](https://www.ams.org/featurecolumn/images/december2006/index_28.gif)
 
 The eigenvalues of this matrix are ![$ \lambda_1=1 $ ](https://www.ams.org/featurecolumn/images/december2006/index_29.gif) and ![$ \lambda_2=0.3 $ ](https://www.ams.org/featurecolumn/images/december2006/index_30.gif) . In the figure below, we see the vectors _I k_, shown in red, converging to the stationary vector _I_ shown in green.
 
@@ -776,7 +775,7 @@ The eigenvalues of this matrix are ![$ \lambda_1=1 $ ](https://www.ams.org/featu
 
 Now consider the matrix
 
-![\[  {\bf S} = \left[\begin{array}{cc}0.85 & 0.15 \\ 0.15 & 0.85 \end{array}\right].   \] ](https://www.ams.org/featurecolumn/images/december2006/index_31.gif)
+![[  {\bf S} = \left[\begin{array}{cc}0.85 & 0.15 \ 0.15 & 0.85 \end{array}\right].   ] ](https://www.ams.org/featurecolumn/images/december2006/index_31.gif)
 
 Here the eigenvalues are ![$ \lambda_1=1 $ ](https://www.ams.org/featurecolumn/images/december2006/index_32.gif) and ![$ \lambda_2=0.7 $ ](https://www.ams.org/featurecolumn/images/december2006/index_33.gif) . Notice how the vectors _I k_ converge more slowly to the stationary vector _I_ in this example in which the second eigenvalue has a larger magnitude.
 
@@ -890,7 +889,7 @@ Notice that the PageRanks assigned to the first four web pages are zero. However
 
 Links come into this box, but none go out. Just as in the example of the dangling node we discussed above, these pages form an "importance sink" that drains the importance out of the other four pages. This happens when the matrix **S** is _reducible_; that is, **S** can be written in block form as
 
-![\[  S=\left[\begin{array}{cc} * & 0 \\ * & * \end{array}\right].  \] ](https://www.ams.org/featurecolumn/images/december2006/index_39.gif)
+![[  S=\left[\begin{array}{cc} * & 0 \ * & * \end{array}\right].  ] ](https://www.ams.org/featurecolumn/images/december2006/index_39.gif)
 
 Indeed, if the matrix **S** is irreducible, we can guarantee that there is a stationary vector with all positive entries.
 
@@ -904,7 +903,7 @@ To find a new matrix that is both primitive and irreducible, we will modify the 
 
 If we denote by **1** the ![$ n\times n $ ](https://www.ams.org/featurecolumn/images/december2006/index_43.gif) matrix whose entries are all one, we obtain the _Google matrix_:
 
-![\[  {\bf G}=\alpha{\bf S}+ (1-\alpha)\frac{1}{n}{\bf 1}  \] ](https://www.ams.org/featurecolumn/images/december2006/index_44.gif)
+![[  {\bf G}=\alpha{\bf S}+ (1-\alpha)\frac{1}{n}{\bf 1}  ] ](https://www.ams.org/featurecolumn/images/december2006/index_44.gif)
 
 Notice now that **G** is stochastic as it is a combination of stochastic matrices. Furthermore, all the entries of **G** are positive, which implies that **G** is both primitive and irreducible. Therefore, **G** has a unique stationary vector _I_ that may be found using the power method.
 
@@ -918,15 +917,15 @@ What we've described so far looks like a good theory, but remember that we need 
 
 Remember that the stochastic matrix **S** may be written as
 
-![\[  {\bf S}={\bf H} + {\bf A}  \] ](https://www.ams.org/featurecolumn/images/december2006/index_52.gif)
+![[  {\bf S}={\bf H} + {\bf A}  ] ](https://www.ams.org/featurecolumn/images/december2006/index_52.gif)
 
 and therefore the Google matrix has the form
 
-![\[  {\bf G}=\alpha{\bf H} + \alpha{\bf A} + \frac{1-\alpha}{n}{\bf 1}  \] ](https://www.ams.org/featurecolumn/images/december2006/index_53.gif)
+![[  {\bf G}=\alpha{\bf H} + \alpha{\bf A} + \frac{1-\alpha}{n}{\bf 1}  ] ](https://www.ams.org/featurecolumn/images/december2006/index_53.gif)
 
 Therefore,
 
-![\[  {\bf G}I^k=\alpha{\bf H}I^k + \alpha{\bf A}I^k + \frac{1-\alpha}{n}{\bf 1}I^k  \] ](https://www.ams.org/featurecolumn/images/december2006/index_54.gif)
+![[  {\bf G}I^k=\alpha{\bf H}I^k + \alpha{\bf A}I^k + \frac{1-\alpha}{n}{\bf 1}I^k  ] ](https://www.ams.org/featurecolumn/images/december2006/index_54.gif)
 
 Now recall that most of the entries in **H** are zero; on average, only ten entries per column are nonzero. Therefore, evaluating **H**_I k_ requires only ten nonzero terms for each entry in the resulting vector. Also, the rows of **A** are all identical as are the rows of **1**. Therefore, evaluating **A**_I k_ and **1**_I k_ amounts to adding the current importance rankings of the dangling nodes or of all web pages. This only needs to be done once.
 

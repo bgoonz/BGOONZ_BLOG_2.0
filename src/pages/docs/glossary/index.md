@@ -1,11 +1,11 @@
 ---
-title: Glossary
+title: Git and Github
 weight: 0
-excerpt: 
+excerpt:
 seo:
-    title: 'Glossary'
-    description: ''
-    robots: []
+    title: 'Git and Github'
+    description: 'A Quick Guide to Git and Github'
+       robots: []
     extra: []
 template: docs
 ---

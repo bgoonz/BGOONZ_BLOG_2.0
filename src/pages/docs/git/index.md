@@ -5,8 +5,7 @@ excerpt: Why is looking at runtime not a reliable method of calculating time com
 seo:
     title: 'Git and Github'
     description: 'A Quick Guide to Git and Github'
-    robots: []
+       robots: []
     extra: []
 template: docs
 ---
-
