@@ -2,35 +2,15 @@
 title: Event Loop
 sections: []
 seo:
-<<<<<<< HEAD
-    title: ''
-    description: 'The Event Loop is one of the most important aspects to understand about Node.js'
-       robots: []
-=======
     title: 'Event Loop'
     description: 'The Event Loop is one of the most important aspects to understand about Nodejs'
     robots: []
->>>>>>> 8faf8d02a610ea29bfec99ca8bfd6092dd0a3eb4
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
 
 
-
-
-<<<<<<< HEAD
-title: 
-sections: []
-seo:
-    title: ''
-    description: ''
-       robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
-=======
->>>>>>> 8faf8d02a610ea29bfec99ca8bfd6092dd0a3eb4
 ## Introduction
 
 The **Event Loop** is one of the most important aspects to understand about Node.js.
@@ -215,7 +195,6 @@ foo
 baz
 should be right after baz, before bar
 bar
-```-->
-
+```
 That's a big difference between Promises (and Async/await, which is built on promises) and plain old asynchronous functions through `setTimeout()` or other platform APIs.
 ```
