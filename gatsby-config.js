@@ -1,6 +1,6 @@
-const siteMetadata = require('./site-metadata.json')
+const siteMetadata = require(`./site-metadata.json`);
 module.exports = {
-    pathPrefix: '/',
+    pathPrefix: `/`,
     siteMetadata: siteMetadata,
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -16,7 +16,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-disqus`,
             options: {
-                shortname: `webdevhub-1`,
+                shortname: `webdevhub-1`
             }
         },
         {
@@ -31,14 +31,14 @@ module.exports = {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
                 sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`,
-            },
+                pageContextProperty: `menus`
+            }
         },
         {
             resolve: `gatsby-plugin-disqus`,
             options: {
                 shortname: `webdevhub-1`
             }
-        },
+        }
     ]
 };
