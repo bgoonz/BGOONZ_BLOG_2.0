@@ -140,7 +140,7 @@ Now, get some practice using the print function by completing the Try: below.
 
 **Additional Resources**
 
-- <span id="b977"><a href="https://www.w3schools.com/python/ref_func_print.asp" class="markup--anchor markup--li-anchor">https://www.w3schools.com/python/ref_func_print.asp</a></span>
+-   <span id="b977"><a href="https://www.w3schools.com/python/ref_func_print.asp" class="markup--anchor markup--li-anchor">https://www.w3schools.com/python/ref_func_print.asp</a></span>
 
 **Use white space to denote blocks**
 

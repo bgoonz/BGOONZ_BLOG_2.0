@@ -149,7 +149,7 @@ The `debug` function will be invoked twice. Each time the [event](https://dom.sp
 
 ### 2.2. Interface `[Event](https://dom.spec.whatwg.org/#event)`[](https://dom.spec.whatwg.org/#interface-event)
 
-[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event "The Event interface represents an event which takes place in the DOM.")
+[Event](https://developer.mozilla.org/en-US/docs/Web/API/Event 'The Event interface represents an event which takes place in the DOM.')
 
 In all current engines.
 
@@ -226,7 +226,7 @@ The [touch target list](https://dom.spec.whatwg.org/#event-touch-target-list) is
 
 An [event](https://dom.spec.whatwg.org/#concept-event) has an associated path. A [path](https://dom.spec.whatwg.org/#event-path) is a [list](https://infra.spec.whatwg.org/#list) of [structs](https://infra.spec.whatwg.org/#struct). Each [struct](https://infra.spec.whatwg.org/#struct) consists of an invocation target (an `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` object), an invocation-target-in-shadow-tree (a boolean), a shadow-adjusted target (a [potential event target](https://dom.spec.whatwg.org/#potential-event-target)), a (a [potential event target](https://dom.spec.whatwg.org/#potential-event-target)), a touch target list (a [list](https://infra.spec.whatwg.org/#list) of [potential event targets](https://dom.spec.whatwg.org/#potential-event-target)), a root-of-closed-tree (a boolean), and a slot-in-closed-tree (a boolean). A [path](https://dom.spec.whatwg.org/#event-path) is initially the empty list.
 
-[Event/Event](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event "The Event() constructor creates a new Event object. An event created in this way is called a synthetic event, as opposed to an event fired by the browser, and can be dispatched by a script.")
+[Event/Event](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event 'The Event() constructor creates a new Event object. An event created in this way is called a synthetic event, as opposed to an event fired by the browser, and can be dispatched by a script.')
 
 In all current engines.
 
@@ -278,7 +278,7 @@ Node.js14.5.0+
 
 Returns the type of event, e.g. "`click`", "`hashchange`", or "`submit`".
 
-[Event/target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target "The read-only target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event.")
+[Event/target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target 'The read-only target property of the Event interface is a reference to the object onto which the event was dispatched. It is different from Event.currentTarget when the event handler is called during the bubbling or capturing phase of the event.')
 
 In all current engines.
 
@@ -304,7 +304,7 @@ Node.js14.5.0+
 
 Returns the object to which event is [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) (its [target](https://dom.spec.whatwg.org/#event-target)).
 
-[Event/currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget "The currentTarget read-only property of the Event interface identifies the current target for the event, as the event traverses the DOM. It always refers to the element to which the event handler has been attached, as opposed to Event.target, which identifies the element on which the event occurred and which may be its descendant.")
+[Event/currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget 'The currentTarget read-only property of the Event interface identifies the current target for the event, as the event traverses the DOM. It always refers to the element to which the event handler has been attached, as opposed to Event.target, which identifies the element on which the event occurred and which may be its descendant.')
 
 In all current engines.
 
@@ -356,7 +356,7 @@ Node.js14.5.0+
 
 Returns the [invocation target](https://dom.spec.whatwg.org/#event-path-invocation-target) objects of event’s [path](https://dom.spec.whatwg.org/#event-path) (objects on which listeners will be invoked), except for any [nodes](https://dom.spec.whatwg.org/#concept-node) in [shadow trees](https://dom.spec.whatwg.org/#concept-shadow-tree) of which the [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)’s [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`" that are not reachable from event’s `[currentTarget](https://dom.spec.whatwg.org/#dom-event-currenttarget)`.
 
-[Event/eventPhase](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase "The eventPhase read-only property of the Event interface indicates which phase of the event flow is currently being evaluated.")
+[Event/eventPhase](https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase 'The eventPhase read-only property of the Event interface indicates which phase of the event flow is currently being evaluated.')
 
 In all current engines.
 
@@ -382,7 +382,7 @@ Node.js14.5.0+
 
 Returns the [event](https://dom.spec.whatwg.org/#concept-event)’s phase, which is one of `[NONE](https://dom.spec.whatwg.org/#dom-event-none)`, `[CAPTURING_PHASE](https://dom.spec.whatwg.org/#dom-event-capturing_phase)`, `[AT_TARGET](https://dom.spec.whatwg.org/#dom-event-at_target)`, and `[BUBBLING_PHASE](https://dom.spec.whatwg.org/#dom-event-bubbling_phase)`.
 
-[Event/stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation "The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed. If you want to stop those behaviors, see the preventDefault() method. It also does not prevent immediate propagation to other event-handlers. If you want to stop those, see stopImmediatePropagation().")
+[Event/stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation 'The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It does not, however, prevent any default behaviors from occurring; for instance, clicks on links are still processed. If you want to stop those behaviors, see the preventDefault() method. It also does not prevent immediate propagation to other event-handlers. If you want to stop those, see stopImmediatePropagation().')
 
 In all current engines.
 
@@ -408,7 +408,7 @@ Node.js14.5.0+
 
 When [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) in a [tree](https://dom.spec.whatwg.org/#concept-tree), invoking this method prevents event from reaching any objects other than the current object.
 
-[Event/stopImmediatePropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation "The stopImmediatePropagation() method of the Event interface prevents other listeners of the same event from being called.")
+[Event/stopImmediatePropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation 'The stopImmediatePropagation() method of the Event interface prevents other listeners of the same event from being called.')
 
 In all current engines.
 
@@ -434,7 +434,7 @@ Node.js14.5.0+
 
 Invoking this method prevents event from reaching any registered [event listeners](https://dom.spec.whatwg.org/#concept-event-listener) after the current one finishes running and, when [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) in a [tree](https://dom.spec.whatwg.org/#concept-tree), also prevents event from reaching any other objects.
 
-[Event/bubbles](https://developer.mozilla.org/en-US/docs/Web/API/Event/bubbles "The bubbles read-only property of the Event interface indicates whether the event bubbles up through the DOM tree or not.")
+[Event/bubbles](https://developer.mozilla.org/en-US/docs/Web/API/Event/bubbles 'The bubbles read-only property of the Event interface indicates whether the event bubbles up through the DOM tree or not.')
 
 In all current engines.
 
@@ -460,7 +460,7 @@ Node.js14.5.0+
 
 Returns true or false depending on how event was initialized. True if event goes through its [target](https://dom.spec.whatwg.org/#event-target)’s [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) in reverse [tree order](https://dom.spec.whatwg.org/#concept-tree-order); otherwise false.
 
-[Event/cancelable](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelable "The cancelable read-only property of the Event interface indicates whether the event can be canceled, and therefore prevented as if the event never happened.")
+[Event/cancelable](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelable 'The cancelable read-only property of the Event interface indicates whether the event can be canceled, and therefore prevented as if the event never happened.')
 
 In all current engines.
 
@@ -486,7 +486,7 @@ Node.js14.5.0+
 
 Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch), can be canceled by invoking the `[preventDefault()](https://dom.spec.whatwg.org/#dom-event-preventdefault)` method.
 
-[Event/preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault "The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.")
+[Event/preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault 'The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.')
 
 In all current engines.
 
@@ -512,7 +512,7 @@ Node.js14.5.0+
 
 If invoked when the `[cancelable](https://dom.spec.whatwg.org/#dom-event-cancelable)` attribute value is true, and while executing a listener for the event with `[passive](https://dom.spec.whatwg.org/#dom-addeventlisteneroptions-passive)` set to false, signals to the operation that caused event to be [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) that it needs to be canceled.
 
-[Event/defaultPrevented](https://developer.mozilla.org/en-US/docs/Web/API/Event/defaultPrevented "The defaultPrevented read-only property of the Event interface returns a boolean value indicating whether or not the call to Event.preventDefault() canceled the event.")
+[Event/defaultPrevented](https://developer.mozilla.org/en-US/docs/Web/API/Event/defaultPrevented 'The defaultPrevented read-only property of the Event interface returns a boolean value indicating whether or not the call to Event.preventDefault() canceled the event.')
 
 In all current engines.
 
@@ -538,7 +538,7 @@ Node.js14.5.0+
 
 Returns true if `[preventDefault()](https://dom.spec.whatwg.org/#dom-event-preventdefault)` was invoked successfully to indicate cancelation; otherwise false.
 
-[Event/composed](https://developer.mozilla.org/en-US/docs/Web/API/Event/composed "The read-only composed property of the Event interface returns a boolean value which indicates whether or not the event will propagate across the shadow DOM boundary into the standard DOM.")
+[Event/composed](https://developer.mozilla.org/en-US/docs/Web/API/Event/composed 'The read-only composed property of the Event interface returns a boolean value which indicates whether or not the event will propagate across the shadow DOM boundary into the standard DOM.')
 
 In all current engines.
 
@@ -564,7 +564,7 @@ Node.js14.5.0+
 
 Returns true or false depending on how event was initialized. True if event invokes listeners past a `[ShadowRoot](https://dom.spec.whatwg.org/#shadowroot)` [node](https://dom.spec.whatwg.org/#concept-node) that is the [root](https://dom.spec.whatwg.org/#concept-tree-root) of its [target](https://dom.spec.whatwg.org/#event-target); otherwise false.
 
-[Event/isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted "The isTrusted read-only property of the Event interface is a boolean value that is true when the event was generated by a user action, and false when the event was created or modified by a script or dispatched via EventTarget.dispatchEvent().")
+[Event/isTrusted](https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted 'The isTrusted read-only property of the Event interface is a boolean value that is true when the event was generated by a user action, and false when the event was created or modified by a script or dispatched via EventTarget.dispatchEvent().')
 
 In all current engines.
 
@@ -590,7 +590,7 @@ Node.js14.5.0+
 
 Returns true if event was [dispatched](https://dom.spec.whatwg.org/#concept-event-dispatch) by the user agent, and false otherwise.
 
-[Event/timeStamp](https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp "The timeStamp read-only property of the Event interface returns the time (in milliseconds) at which the event was created.")
+[Event/timeStamp](https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp 'The timeStamp read-only property of the Event interface returns the time (in milliseconds) at which the event was created.')
 
 In all current engines.
 
@@ -695,19 +695,19 @@ Initially the attribute must be initialized to `[NONE](https://dom.spec.whatwg.o
 
 Each [event](https://dom.spec.whatwg.org/#concept-event) has the following associated flags that are all initially unset:
 
-- stop propagation flag
-- stop immediate propagation flag
-- canceled flag
-- in passive listener flag
-- composed flag
-- initialized flag
-- dispatch flag
+-   stop propagation flag
+-   stop immediate propagation flag
+-   canceled flag
+-   in passive listener flag
+-   composed flag
+-   initialized flag
+-   dispatch flag
 
 The `stopPropagation()` method steps are to set [this](https://webidl.spec.whatwg.org/#this)’s [stop propagation flag](https://dom.spec.whatwg.org/#stop-propagation-flag).
 
 The `cancelBubble` getter steps are to return true if [this](https://webidl.spec.whatwg.org/#this)’s [stop propagation flag](https://dom.spec.whatwg.org/#stop-propagation-flag) is set; otherwise false.
 
-[Event/cancelBubble](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelBubble "The cancelBubble property of the Event interface is deprecated. Use Event.stopPropagation() instead. Setting its value to true before returning from an event handler prevents propagation of the event. In later implementations, setting this to false does nothing. See Browser compatibility for details.")
+[Event/cancelBubble](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelBubble 'The cancelBubble property of the Event interface is deprecated. Use Event.stopPropagation() instead. Setting its value to true before returning from an event handler prevents propagation of the event. In later implementations, setting this to false does nothing. See Browser compatibility for details.')
 
 In all current engines.
 
@@ -790,7 +790,7 @@ Web developers are strongly encouraged to instead rely on the `[Event](https://d
 
 ### 2.4. Interface `[CustomEvent](https://dom.spec.whatwg.org/#customevent)`[](https://dom.spec.whatwg.org/#interface-customevent)
 
-[CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent "The CustomEvent interface represents events initialized by an application for any purpose.")
+[CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent 'The CustomEvent interface represents events initialized by an application for any purpose.')
 
 In all current engines.
 
@@ -823,7 +823,7 @@ dictionary `CustomEventInit` : [EventInit](https://dom.spec.whatwg.org/#dictdef-
 
 [Events](https://dom.spec.whatwg.org/#concept-event) using the `[CustomEvent](https://dom.spec.whatwg.org/#customevent)` interface can be used to carry custom data.
 
-[CustomEvent/CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent "The CustomEvent() constructor creates a new CustomEvent.")
+[CustomEvent/CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent 'The CustomEvent() constructor creates a new CustomEvent.')
 
 In all current engines.
 
@@ -845,7 +845,7 @@ Firefox for Android14+iOS Safari6+Chrome for Android18+Android WebView37+Samsung
 
 Works analogously to the constructor for `[Event](https://dom.spec.whatwg.org/#event)` except that the eventInitDict argument now allows for setting the `[detail](https://dom.spec.whatwg.org/#dom-customevent-detail)` attribute too.
 
-[CustomEvent/detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail "The detail readonly property of the CustomEvent interface returns any data passed when initializing the event.")
+[CustomEvent/detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail 'The detail readonly property of the CustomEvent interface returns any data passed when initializing the event.')
 
 In all current engines.
 
@@ -923,7 +923,7 @@ The `[CustomEvent](https://dom.spec.whatwg.org/#customevent)` interface can be u
 
 ### 2.7. Interface `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)`[](https://dom.spec.whatwg.org/#interface-eventtarget)
 
-[EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget "The EventTarget interface is implemented by objects that can receive events and may have listeners for them. In other words, any target of events implements the three methods associated with this interface.")
+[EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget 'The EventTarget interface is implemented by objects that can receive events and may have listeners for them. In other words, any target of events implements the three methods associated with this interface.')
 
 In all current engines.
 
@@ -945,7 +945,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Node.js14.5.0+
 
-[EventListener/handleEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventListener/handleEvent "The EventListener method handleEvent() method is called by the user agent when an event is sent to the EventListener, in order to handle events that occur on an observed EventTarget.")
+[EventListener/handleEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventListener/handleEvent 'The EventListener method handleEvent() method is called by the user agent when an event is sent to the EventListener, in order to handle events that occur on an observed EventTarget.')
 
 In all current engines.
 
@@ -963,7 +963,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener "The EventListener interface represents an object that can handle an event dispatched by an EventTarget object.")
+[EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener 'The EventListener interface represents an object that can handle an event dispatched by an EventTarget object.')
 
 In all current engines.
 
@@ -1010,13 +1010,13 @@ Each `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` object has an ass
 
 An event listener can be used to observe a specific [event](https://dom.spec.whatwg.org/#concept-event) and consists of:
 
-- type (a string)
-- callback (null or an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object)
-- capture (a boolean, initially false)
-- passive (a boolean, initially false)
-- once (a boolean, initially false)
-- signal (null or an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object)
-- removed (a boolean for bookkeeping purposes, initially false)
+-   type (a string)
+-   callback (null or an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object)
+-   capture (a boolean, initially false)
+-   passive (a boolean, initially false)
+-   once (a boolean, initially false)
+-   signal (null or an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object)
+-   removed (a boolean for bookkeeping purposes, initially false)
 
 Although [callback](https://dom.spec.whatwg.org/#event-listener-callback) is an `[EventListener](https://dom.spec.whatwg.org/#callbackdef-eventlistener)` object, an [event listener](https://dom.spec.whatwg.org/#concept-event-listener) is a broader concept as can be seen above.
 
@@ -1032,7 +1032,7 @@ Each `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` object that has [
 
 These algorithms only exist for checkbox and radio `[input](https://html.spec.whatwg.org/multipage/input.html#the-input-element)` elements and are not to be used for anything else. [\[HTML\]](https://dom.spec.whatwg.org/#biblio-html)
 
-[EventTarget/EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/EventTarget "The EventTarget() constructor creates a new EventTarget object instance.")
+[EventTarget/EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/EventTarget 'The EventTarget() constructor creates a new EventTarget object instance.')
 
 In all current engines.
 
@@ -1058,7 +1058,7 @@ Node.js15.0.0+
 
 Creates a new `[EventTarget](https://dom.spec.whatwg.org/#eventtarget)` object, which can be used by developers to [dispatch](https://dom.spec.whatwg.org/#concept-event-dispatch) and listen for [events](https://dom.spec.whatwg.org/#concept-event).
 
-[EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener "The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.")
+[EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener 'The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.')
 
 In all current engines.
 
@@ -1096,7 +1096,7 @@ If an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` is passed for op
 
 The [event listener](https://dom.spec.whatwg.org/#concept-event-listener) is appended to target’s [event listener list](https://dom.spec.whatwg.org/#eventtarget-event-listener-list) and is not appended if it has the same [type](https://dom.spec.whatwg.org/#event-listener-type), [callback](https://dom.spec.whatwg.org/#event-listener-callback), and [capture](https://dom.spec.whatwg.org/#event-listener-capture).
 
-[EventTarget/removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener "The removeEventListener() method of the EventTarget interface removes from the target an event listener previously registered with EventTarget.addEventListener(). The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see Matching event listeners for removal.")
+[EventTarget/removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener 'The removeEventListener() method of the EventTarget interface removes from the target an event listener previously registered with EventTarget.addEventListener(). The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see Matching event listeners for removal.')
 
 In all current engines.
 
@@ -1122,7 +1122,7 @@ Node.js14.5.0+
 
 Removes the [event listener](https://dom.spec.whatwg.org/#concept-event-listener) in target’s [event listener list](https://dom.spec.whatwg.org/#eventtarget-event-listener-list) with the same type, callback, and options.
 
-[EventTarget/dispatchEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent "The dispatchEvent() method of the EventTarget sends an Event to the object, (synchronously) invoking the affected EventListeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with dispatchEvent().")
+[EventTarget/dispatchEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent 'The dispatchEvent() method of the EventTarget sends an Event to the object, (synchronously) invoking the affected EventListeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with dispatchEvent().')
 
 In all current engines.
 
@@ -1465,7 +1465,7 @@ APIs that require more granular control could extend both `[AbortController](htt
 
 ### 3.1. Interface `[AbortController](https://dom.spec.whatwg.org/#abortcontroller)`[](https://dom.spec.whatwg.org/#interface-abortcontroller)
 
-[AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController "The AbortController interface represents a controller object that allows you to abort one or more Web requests as and when desired.")
+[AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController 'The AbortController interface represents a controller object that allows you to abort one or more Web requests as and when desired.')
 
 In all current engines.
 
@@ -1496,7 +1496,7 @@ interface `AbortController` {
 [undefined](https://webidl.spec.whatwg.org/#idl-undefined) [abort](https://dom.spec.whatwg.org/#dom-abortcontroller-abort)(optional [any](https://webidl.spec.whatwg.org/#idl-any) `reason`[](https://dom.spec.whatwg.org/#dom-abortcontroller-abort-reason-reason));
 };
 
-[AbortController/AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/AbortController "The AbortController() constructor creates a new AbortController object instance.")
+[AbortController/AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/AbortController 'The AbortController() constructor creates a new AbortController object instance.')
 
 In all current engines.
 
@@ -1518,7 +1518,7 @@ Firefox for Android57+iOS Safari12.2+Chrome for Android66+Android WebView66+Sams
 
 Node.js15.0.0+
 
-[AbortController/abort](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort "The abort() method of the AbortController interface aborts a DOM request before it has completed. This is able to abort fetch requests, the consumption of any response bodies, or streams.")
+[AbortController/abort](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort 'The abort() method of the AbortController interface aborts a DOM request before it has completed. This is able to abort fetch requests, the consumption of any response bodies, or streams.')
 
 In all current engines.
 
@@ -1544,7 +1544,7 @@ Node.js15.0.0+
 
 Returns a new controller whose `[signal](https://dom.spec.whatwg.org/#dom-abortcontroller-signal)` is set to a newly created `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object.
 
-[AbortController/signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal "The signal read-only property of the AbortController interface returns an AbortSignal object instance, which can be used to communicate with/abort a DOM request as desired.")
+[AbortController/signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal 'The signal read-only property of the AbortController interface returns an AbortSignal object instance, which can be used to communicate with/abort a DOM request as desired.')
 
 In all current engines.
 
@@ -1587,7 +1587,7 @@ The `abort(reason)` method steps are to [signal abort](https://dom.spec.whatwg.o
 
 ### 3.2. Interface `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)`[](https://dom.spec.whatwg.org/#interface-AbortSignal)
 
-[AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal "The AbortSignal interface represents a signal object that allows you to communicate with a DOM request (such as a fetch request) and abort it if required via an AbortController object.")
+[AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal 'The AbortSignal interface represents a signal object that allows you to communicate with a DOM request (such as a fetch request) and abort it if required via an AbortController object.')
 
 In all current engines.
 
@@ -1620,7 +1620,7 @@ readonly attribute [any](https://webidl.spec.whatwg.org/#idl-any) [reason](https
 attribute [EventHandler](https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler) [onabort](https://dom.spec.whatwg.org/#dom-abortsignal-onabort);
 };
 
-[AbortSignal/abort](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort "The static AbortSignal.abort() method returns an AbortSignal that is already set as aborted (and which does not trigger an abort event).")
+[AbortSignal/abort](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort 'The static AbortSignal.abort() method returns an AbortSignal that is already set as aborted (and which does not trigger an abort event).')
 
 In all current engines.
 
@@ -1646,7 +1646,7 @@ Node.jsNone
 
 Returns an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` instance whose [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason) is set to reason if not undefined; otherwise to an "`[AbortError](https://webidl.spec.whatwg.org/#aborterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-[AbortSignal/aborted](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/aborted "The aborted read-only property returns a value that indicates whether the DOM requests the signal is communicating with are aborted (true) or not (false).")
+[AbortSignal/aborted](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/aborted 'The aborted read-only property returns a value that indicates whether the DOM requests the signal is communicating with are aborted (true) or not (false).')
 
 In all current engines.
 
@@ -1721,7 +1721,7 @@ signal?.throwIfAborted();
 }
 }
 
-[AbortSignal/abort_event](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort_event "The abort event of the Fetch API is fired when a fetch request is aborted, i.e. using AbortController.abort().")
+[AbortSignal/abort_event](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/abort_event 'The abort event of the Fetch API is fired when a fetch request is aborted, i.e. using AbortController.abort().')
 
 In all current engines.
 
@@ -1743,7 +1743,7 @@ Firefox for Android57+iOS Safari11.3+Chrome for Android66+Android WebView66+Sams
 
 Node.js15.0.0+
 
-[AbortSignal/onabort](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/onabort "The onabort read-only property of the AbortSignal interface is an event handler invoked when an abort event fires, i.e. when the fetch requests the signal is communicating with are aborted.")
+[AbortSignal/onabort](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/onabort 'The onabort read-only property of the AbortSignal interface is an event handler invoked when an abort event fires, i.e. when the fetch requests the signal is communicating with are aborted.')
 
 In all current engines.
 
@@ -1789,10 +1789,10 @@ A followingSignal (an `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)`)
 
 Any web platform API using promises to represent operations that can be aborted must adhere to the following:
 
-- Accept `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` objects through a `signal` dictionary member.
-- Convey that the operation got aborted by rejecting the promise with `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason).
-- Reject immediately if the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` is already [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted), otherwise:
-- Use the [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms) mechanism to observe changes to the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object and do so in a manner that does not lead to clashes with other observers.
+-   Accept `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` objects through a `signal` dictionary member.
+-   Convey that the operation got aborted by rejecting the promise with `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object’s [abort reason](https://dom.spec.whatwg.org/#abortsignal-abort-reason).
+-   Reject immediately if the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` is already [aborted](https://dom.spec.whatwg.org/#abortsignal-aborted), otherwise:
+-   Use the [abort algorithms](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms) mechanism to observe changes to the `[AbortSignal](https://dom.spec.whatwg.org/#abortsignal)` object and do so in a manner that does not lead to clashes with other observers.
 
 APIs not using promises should still adhere to the above as much as possible.
 
@@ -1814,15 +1814,15 @@ To illustrate, consider this HTML document:
 
 It is represented as follows:
 
-- [Document](https://dom.spec.whatwg.org/#concept-document)
-  - [Doctype](https://dom.spec.whatwg.org/#concept-doctype): `html`
-  - `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`\="`e`"
-    - `[Element](https://dom.spec.whatwg.org/#element)`: `head`
-      - `[Element](https://dom.spec.whatwg.org/#element)`: `title`
-        - `[Text](https://dom.spec.whatwg.org/#text)`: Aliens?
-    - `[Text](https://dom.spec.whatwg.org/#text)`: ⏎␣
-    - `[Element](https://dom.spec.whatwg.org/#element)`: `body`
-      - `[Text](https://dom.spec.whatwg.org/#text)`: Why yes.⏎
+-   [Document](https://dom.spec.whatwg.org/#concept-document)
+    -   [Doctype](https://dom.spec.whatwg.org/#concept-doctype): `html`
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `html` `class`\="`e`"
+        -   `[Element](https://dom.spec.whatwg.org/#element)`: `head`
+            -   `[Element](https://dom.spec.whatwg.org/#element)`: `title`
+                -   `[Text](https://dom.spec.whatwg.org/#text)`: Aliens?
+        -   `[Text](https://dom.spec.whatwg.org/#text)`: ⏎␣
+        -   `[Element](https://dom.spec.whatwg.org/#element)`: `body`
+            -   `[Text](https://dom.spec.whatwg.org/#text)`: Why yes.⏎
 
 Note that, due to the magic that is [HTML parsing](https://html.spec.whatwg.org/multipage/parsing.html#html-parser), not all [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace) were turned into `[Text](https://dom.spec.whatwg.org/#text)` [nodes](https://dom.spec.whatwg.org/#concept-node), but the general concept is clear. Markup goes in, a [tree](https://dom.spec.whatwg.org/#concept-tree) of [nodes](https://dom.spec.whatwg.org/#concept-node) comes out.
 
@@ -1894,7 +1894,7 @@ An [element](https://dom.spec.whatwg.org/#concept-element) is connected if its [
 
 ##### 4.2.2.1. Slots[](https://dom.spec.whatwg.org/#shadow-tree-slots)
 
-[Element/slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot "The <slot> HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.")
+[Element/slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot 'The <slot> HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.')
 
 In all current engines.
 
@@ -2143,16 +2143,15 @@ To replace a child with node within a parent, run these steps:
 12. Set removedNodes to « child ».
 13. [Remove](https://dom.spec.whatwg.org/#concept-node-remove) child with the _suppress observers flag_ set.
 
-
     The above can only be false if child is node.
 
-12. Let nodes be node’s [children](https://dom.spec.whatwg.org/#concept-tree-child) if node is a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node); otherwise « node ».
+14. Let nodes be node’s [children](https://dom.spec.whatwg.org/#concept-tree-child) if node is a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node); otherwise « node ».
 
-13. [Insert](https://dom.spec.whatwg.org/#concept-node-insert) node into parent before referenceChild with the _suppress observers flag_ set.
+15. [Insert](https://dom.spec.whatwg.org/#concept-node-insert) node into parent before referenceChild with the _suppress observers flag_ set.
 
-14. [Queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with nodes, removedNodes, previousSibling, and referenceChild.
+16. [Queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with nodes, removedNodes, previousSibling, and referenceChild.
 
-15. Return child.
+17. Return child.
 
 To replace all with a node within a parent, run these steps:
 
@@ -2203,18 +2202,17 @@ To remove a node, with an optional _suppress observers flag_, run these steps:
 
 19. If node is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with node, callback name "`disconnectedCallback`", and an empty argument list.
 
-
     It is intentional for now that [custom](https://dom.spec.whatwg.org/#concept-element-custom) [elements](https://dom.spec.whatwg.org/#concept-element) do not get parent passed. This might change in the future if there is a need.
 
-18. For each [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) descendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), then:
+20. For each [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) descendant of node, in [shadow-including tree order](https://dom.spec.whatwg.org/#concept-shadow-including-tree-order), then:
 
-1.  Run the [removing steps](https://dom.spec.whatwg.org/#concept-node-remove-ext) with descendant.
-1.  If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name "`disconnectedCallback`", and an empty argument list.
-1.  For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
+21. Run the [removing steps](https://dom.spec.whatwg.org/#concept-node-remove-ext) with descendant.
+22. If descendant is [custom](https://dom.spec.whatwg.org/#concept-element-custom) and isParentConnected is true, then [enqueue a custom element callback reaction](https://html.spec.whatwg.org/multipage/custom-elements.html#enqueue-a-custom-element-callback-reaction) with descendant, callback name "`disconnectedCallback`", and an empty argument list.
+23. For each [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) inclusiveAncestor of parent, and then [for each](https://infra.spec.whatwg.org/#list-iterate) registered of inclusiveAncestor’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list), if registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options)\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is true, then [append](https://infra.spec.whatwg.org/#list-append) a new [transient registered observer](https://dom.spec.whatwg.org/#transient-registered-observer) whose [observer](https://dom.spec.whatwg.org/#registered-observer-observer) is registered’s [observer](https://dom.spec.whatwg.org/#registered-observer-observer), [options](https://dom.spec.whatwg.org/#registered-observer-options) is registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options), and [source](https://dom.spec.whatwg.org/#transient-registered-observer-source) is registered to node’s [registered observer list](https://dom.spec.whatwg.org/#registered-observer-list).
 
-1.  If _suppress observers flag_ is unset, then [queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with « », « node », oldPreviousSibling, and oldNextSibling.
+24. If _suppress observers flag_ is unset, then [queue a tree mutation record](https://dom.spec.whatwg.org/#queue-a-tree-mutation-record) for parent with « », « node », oldPreviousSibling, and oldNextSibling.
 
-1.  Run the [children changed steps](https://dom.spec.whatwg.org/#concept-node-children-changed-ext) for parent.
+25. Run the [children changed steps](https://dom.spec.whatwg.org/#concept-node-children-changed-ext) for parent.
 
 #### 4.2.4. Mixin `[NonElementParentNode](https://dom.spec.whatwg.org/#nonelementparentnode)`[](https://dom.spec.whatwg.org/#interface-nonelementparentnode)
 
@@ -2286,7 +2284,7 @@ readonly attribute [unsigned long](https://webidl.spec.whatwg.org/#idl-unsigned-
 [DocumentFragment](https://dom.spec.whatwg.org/#documentfragment) includes [ParentNode](https://dom.spec.whatwg.org/#parentnode);
 [Element](https://dom.spec.whatwg.org/#element) includes [ParentNode](https://dom.spec.whatwg.org/#parentnode);
 
-[Document/children](https://developer.mozilla.org/en-US/docs/Web/API/Document/children "The read-only children property returns a live HTMLCollection which contains all of the child elements of the document upon which it was called.")
+[Document/children](https://developer.mozilla.org/en-US/docs/Web/API/Document/children 'The read-only children property returns a live HTMLCollection which contains all of the child elements of the document upon which it was called.')
 
 In all current engines.
 
@@ -2304,7 +2302,7 @@ Edge (Legacy)16+IENone
 
 Firefox for Android25+iOS Safari9+Chrome for Android29+Android WebView37+Samsung Internet2.0+Opera Mobile16+
 
-[DocumentFragment/children](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/children "The read-only children property returns a live HTMLCollection which contains all of the child elements of the document fragment upon which it was called.")
+[DocumentFragment/children](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/children 'The read-only children property returns a live HTMLCollection which contains all of the child elements of the document fragment upon which it was called.')
 
 In all current engines.
 
@@ -2322,7 +2320,7 @@ Edge (Legacy)16+IENone
 
 Firefox for Android25+iOS Safari9+Chrome for Android29+Android WebView37+Samsung Internet2.0+Opera Mobile16+
 
-[Element/children](https://developer.mozilla.org/en-US/docs/Web/API/Element/children "The read-only children property returns a live HTMLCollection which contains all of the child elements of the element upon which it was called.")
+[Element/children](https://developer.mozilla.org/en-US/docs/Web/API/Element/children 'The read-only children property returns a live HTMLCollection which contains all of the child elements of the element upon which it was called.')
 
 In all current engines.
 
@@ -2460,7 +2458,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView37+Samsung 
 
 Returns the last [child](https://dom.spec.whatwg.org/#concept-tree-child) that is an [element](https://dom.spec.whatwg.org/#concept-element); otherwise null.
 
-[Document/prepend](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend "The Document.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document. DOMString objects are inserted as equivalent Text nodes.")
+[Document/prepend](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend 'The Document.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2478,7 +2476,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[DocumentFragment/prepend](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/prepend "The DocumentFragment.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document fragment. DOMString objects are inserted as equivalent Text nodes.")
+[DocumentFragment/prepend](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/prepend 'The DocumentFragment.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document fragment. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2496,7 +2494,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[Element/prepend](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend "The Element.prepend() method inserts a set of Node objects or DOMString objects before the first child of the Element. DOMString objects are inserted as equivalent Text nodes.")
+[Element/prepend](https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend 'The Element.prepend() method inserts a set of Node objects or DOMString objects before the first child of the Element. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2520,7 +2518,7 @@ Inserts nodes before the [first child](https://dom.spec.whatwg.org/#concept-tree
 
 [Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-[Document/append](https://developer.mozilla.org/en-US/docs/Web/API/Document/append "The Document.append() method inserts a set of Node objects or DOMString objects after the last child of the document. DOMString objects are inserted as equivalent Text nodes.")
+[Document/append](https://developer.mozilla.org/en-US/docs/Web/API/Document/append 'The Document.append() method inserts a set of Node objects or DOMString objects after the last child of the document. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2538,7 +2536,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[DocumentFragment/append](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/append "The DocumentFragment.append() method inserts a set of Node objects or DOMString objects after the last child of the document fragment. DOMString objects are inserted as equivalent Text nodes.")
+[DocumentFragment/append](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/append 'The DocumentFragment.append() method inserts a set of Node objects or DOMString objects after the last child of the document fragment. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2556,7 +2554,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[Element/append](https://developer.mozilla.org/en-US/docs/Web/API/Element/append "The Element.append() method inserts a set of Node objects or DOMString objects after the last child of the Element. DOMString objects are inserted as equivalent Text nodes.")
+[Element/append](https://developer.mozilla.org/en-US/docs/Web/API/Element/append 'The Element.append() method inserts a set of Node objects or DOMString objects after the last child of the Element. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -2580,7 +2578,7 @@ Inserts nodes after the [last child](https://dom.spec.whatwg.org/#concept-tree-l
 
 [Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-[Document/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren "The Document.replaceChildren() method replaces the existing children of a Document with a specified new set of children.")
+[Document/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren 'The Document.replaceChildren() method replaces the existing children of a Document with a specified new set of children.')
 
 In all current engines.
 
@@ -2598,7 +2596,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for Android79+iOS Safari14+Chrome for Android86+Android WebView86+Samsung Internet14.0+Opera Mobile61+
 
-[DocumentFragment/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/replaceChildren "The DocumentFragment.replaceChildren() method replaces the existing children of a DocumentFragment with a specified new set of children. These can be DOMString or Node objects.")
+[DocumentFragment/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/replaceChildren 'The DocumentFragment.replaceChildren() method replaces the existing children of a DocumentFragment with a specified new set of children. These can be DOMString or Node objects.')
 
 In all current engines.
 
@@ -2616,7 +2614,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for Android79+iOS Safari14+Chrome for Android86+Android WebView86+Samsung Internet14.0+Opera Mobile61+
 
-[Element/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren "The Element.replaceChildren() method replaces the existing children of a Node with a specified new set of children. These can be DOMString or Node objects.")
+[Element/replaceChildren](https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren 'The Element.replaceChildren() method replaces the existing children of a Node with a specified new set of children. These can be DOMString or Node objects.')
 
 In all current engines.
 
@@ -2640,7 +2638,7 @@ Replace all [children](https://dom.spec.whatwg.org/#concept-tree-child) of node 
 
 [Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-[Document/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector "The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.")
+[Document/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector 'The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.')
 
 In all current engines.
 
@@ -2716,7 +2714,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile10.1+
 
-[Element/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector "The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.")
+[Element/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector 'The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.')
 
 In all current engines.
 
@@ -2734,7 +2732,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari2+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[Element/querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.")
+[Element/querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll 'The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.')
 
 In all current engines.
 
@@ -2762,7 +2760,7 @@ The `firstElementChild` getter steps are to return the first [child](https://dom
 
 The `lastElementChild` getter steps are to return the last [child](https://dom.spec.whatwg.org/#concept-tree-child) that is an [element](https://dom.spec.whatwg.org/#concept-element); otherwise null.
 
-[Document/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/Document/childElementCount "The Document.childElementCount read-only property returns the number of child elements of the document.")
+[Document/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/Document/childElementCount 'The Document.childElementCount read-only property returns the number of child elements of the document.')
 
 In all current engines.
 
@@ -2780,7 +2778,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android25+iOS Safari9+Chrome for Android29+Android WebView37+Samsung Internet2.0+Opera Mobile16+
 
-[DocumentFragment/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/childElementCount "The Document.childElementCount read-only property returns the number of child elements of a DocumentFragment.")
+[DocumentFragment/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/childElementCount 'The Document.childElementCount read-only property returns the number of child elements of a DocumentFragment.')
 
 In all current engines.
 
@@ -2798,7 +2796,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android25+iOS Safari9+Chrome for Android29+Android WebView37+Samsung Internet2.0+Opera Mobile16+
 
-[Element/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/Element/childElementCount "The Element.childElementCount read-only property returns the number of child elements of this element.")
+[Element/childElementCount](https://developer.mozilla.org/en-US/docs/Web/API/Element/childElementCount 'The Element.childElementCount read-only property returns the number of child elements of this element.')
 
 In all current engines.
 
@@ -3065,7 +3063,7 @@ Inserts nodes just after node, while replacing strings in nodes with equivalent 
 
 [Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-[CharacterData/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/replaceWith "The replaceWith() method of the CharacterData interface replaces this node in the children list of its parent with a set of Node objects or string.")
+[CharacterData/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/replaceWith 'The replaceWith() method of the CharacterData interface replaces this node in the children list of its parent with a set of Node objects or string.')
 
 In all current engines.
 
@@ -3083,7 +3081,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[DocumentType/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/DocumentType/replaceWith "The DocumentType.replaceWith() method replaces the document type with a set of given nodes.")
+[DocumentType/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/DocumentType/replaceWith 'The DocumentType.replaceWith() method replaces the document type with a set of given nodes.')
 
 In all current engines.
 
@@ -3101,7 +3099,7 @@ Edge (Legacy)17+IENone
 
 Firefox for Android49+iOS Safari10+Chrome for Android54+Android WebView54+Samsung Internet6.0+Opera Mobile41+
 
-[Element/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith "The Element.replaceWith() method replaces this Element in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.")
+[Element/replaceWith](https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith 'The Element.replaceWith() method replaces this Element in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.')
 
 In all current engines.
 
@@ -3125,7 +3123,7 @@ Replaces node with nodes, while replacing strings in nodes with equivalent `[Tex
 
 [Throws](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if the constraints of the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) are violated.
 
-[CharacterData/remove](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/remove "The remove() method of the CharacterData removes the text contained in the node.")
+[CharacterData/remove](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/remove 'The remove() method of the CharacterData removes the text contained in the node.')
 
 In all current engines.
 
@@ -3161,7 +3159,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android23+iOS Safari7+Chrome for Android25+Android WebView37+Samsung Internet1.5+Opera Mobile14+
 
-[Element/remove](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove "The Element.remove() method removes the element from the tree it belongs to.")
+[Element/remove](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove 'The Element.remove() method removes the element from the tree it belongs to.')
 
 In all current engines.
 
@@ -3225,7 +3223,7 @@ readonly attribute [HTMLSlotElement](https://html.spec.whatwg.org/multipage/scri
 [Element](https://dom.spec.whatwg.org/#element) includes [Slottable](https://dom.spec.whatwg.org/#slotable);
 [Text](https://dom.spec.whatwg.org/#text) includes [Slottable](https://dom.spec.whatwg.org/#slotable);
 
-[Element/assignedSlot](https://developer.mozilla.org/en-US/docs/Web/API/Element/assignedSlot "The assignedSlot read-only property of the Element interface returns an HTMLSlotElement representing the <slot> element the node is inserted in.")
+[Element/assignedSlot](https://developer.mozilla.org/en-US/docs/Web/API/Element/assignedSlot 'The assignedSlot read-only property of the Element interface returns an HTMLSlotElement representing the <slot> element the node is inserted in.')
 
 In all current engines.
 
@@ -3243,7 +3241,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for Android63+iOS Safari10.3+Chrome for Android53+Android WebView53+Samsung Internet6.0+Opera Mobile41+
 
-[Text/assignedSlot](https://developer.mozilla.org/en-US/docs/Web/API/Text/assignedSlot "The read-only assignedSlot property of the Text interface returns the HTMLSlotElement object associated with the element.")
+[Text/assignedSlot](https://developer.mozilla.org/en-US/docs/Web/API/Text/assignedSlot 'The read-only assignedSlot property of the Text interface returns the HTMLSlotElement object associated with the element.')
 
 In all current engines.
 
@@ -3275,7 +3273,7 @@ The [collection](https://dom.spec.whatwg.org/#concept-collection) then represent
 
 ##### 4.2.10.1. Interface `[NodeList](https://dom.spec.whatwg.org/#nodelist)`[](https://dom.spec.whatwg.org/#interface-nodelist)
 
-[NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList "NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().")
+[NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList 'NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().')
 
 In all current engines.
 
@@ -3302,7 +3300,7 @@ readonly attribute [unsigned long](https://webidl.spec.whatwg.org/#idl-unsigned-
 iterable<[Node](https://dom.spec.whatwg.org/#node)\>;
 };
 
-[NodeList/length](https://developer.mozilla.org/en-US/docs/Web/API/NodeList/length "The NodeList.length property returns the number of items in a NodeList.")
+[NodeList/length](https://developer.mozilla.org/en-US/docs/Web/API/NodeList/length 'The NodeList.length property returns the number of items in a NodeList.')
 
 In all current engines.
 
@@ -3350,7 +3348,7 @@ Returns the [node](https://dom.spec.whatwg.org/#concept-node) with index index f
 
 ##### 4.2.10.2. Interface `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)`[](https://dom.spec.whatwg.org/#interface-htmlcollection)
 
-[HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection "The HTMLCollection interface represents a generic collection (array-like object similar to arguments) of elements (in document order) and offers methods and properties for selecting from the list.")
+[HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection 'The HTMLCollection interface represents a generic collection (array-like object similar to arguments) of elements (in document order) and offers methods and properties for selecting from the list.')
 
 In all current engines.
 
@@ -3379,7 +3377,7 @@ An `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` object is a [
 
 `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` is a historical artifact we cannot rid the web of. While developers are of course welcome to keep using it, new API standard designers ought not to use it (use `sequence<T>` in IDL instead).
 
-[HTMLCollection/length](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/length "The HTMLCollection.length property returns the number of items in a HTMLCollection.")
+[HTMLCollection/length](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/length 'The HTMLCollection.length property returns the number of items in a HTMLCollection.')
 
 In all current engines.
 
@@ -3401,7 +3399,7 @@ collection . `[length](https://dom.spec.whatwg.org/#dom-htmlcollection-length)`
 
 Returns the number of [elements](https://dom.spec.whatwg.org/#concept-element) in the [collection](https://dom.spec.whatwg.org/#concept-collection).
 
-[HTMLCollection/item](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/item "The HTMLCollection method item() returns the node located at the specified offset into the collection.")
+[HTMLCollection/item](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/item 'The HTMLCollection method item() returns the node located at the specified offset into the collection.')
 
 In all current engines.
 
@@ -3447,7 +3445,7 @@ The [supported property names](https://webidl.spec.whatwg.org/#dfn-supported-pro
 
 3.  Return result.
 
-[HTMLCollection/namedItem](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/namedItem "The namedItem() method of the HTMLCollection interface returns the first Element in the collection whose id or name attribute match the specified name, or null if no element matches.")
+[HTMLCollection/namedItem](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection/namedItem 'The namedItem() method of the HTMLCollection interface returns the first Element in the collection whose id or name attribute match the specified name, or null if no element matches.')
 
 In all current engines.
 
@@ -3470,8 +3468,8 @@ The `namedItem(key)`[](https://dom.spec.whatwg.org/#dom-htmlcollection-nameditem
 1.  If key is the empty string, return null.
 2.  Return the first [element](https://dom.spec.whatwg.org/#concept-element) in the [collection](https://dom.spec.whatwg.org/#concept-collection) for which at least one of the following is true:
 
-    - it has an [ID](https://dom.spec.whatwg.org/#concept-id) which is key;
-    - it is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) a [`name` attribute](https://dom.spec.whatwg.org/#concept-named-attribute) whose [value](https://dom.spec.whatwg.org/#concept-attribute-value) is key;
+    -   it has an [ID](https://dom.spec.whatwg.org/#concept-id) which is key;
+    -   it is in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and [has](https://dom.spec.whatwg.org/#concept-element-attribute-has) a [`name` attribute](https://dom.spec.whatwg.org/#concept-named-attribute) whose [value](https://dom.spec.whatwg.org/#concept-attribute-value) is key;
 
     or null if there is no such [element](https://dom.spec.whatwg.org/#concept-element).
 
@@ -3514,7 +3512,7 @@ A transient registered observer is a [registered observer](https://dom.spec.what
 
 #### 4.3.1. Interface `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)`[](https://dom.spec.whatwg.org/#interface-mutationobserver)
 
-[MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver "The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. It is designed as a replacement for the older Mutation Events feature, which was part of the DOM3 Events specification.")
+[MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver 'The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. It is designed as a replacement for the older Mutation Events feature, which was part of the DOM3 Events specification.')
 
 In all current engines.
 
@@ -3557,11 +3555,11 @@ A `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object can
 
 Each `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object has these associated concepts:
 
-- A callback set on creation.
-- A node list (a [list](https://infra.spec.whatwg.org/#list) of [nodes](https://dom.spec.whatwg.org/#concept-node)), which is initially empty.
-- A record queue (a [queue](https://infra.spec.whatwg.org/#queue) of zero or more `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)` objects), which is initially empty.
+-   A callback set on creation.
+-   A node list (a [list](https://infra.spec.whatwg.org/#list) of [nodes](https://dom.spec.whatwg.org/#concept-node)), which is initially empty.
+-   A record queue (a [queue](https://infra.spec.whatwg.org/#queue) of zero or more `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)` objects), which is initially empty.
 
-[MutationObserver/MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver "The DOM MutationObserver() constructor — part of the MutationObserver interface — creates and returns a new observer which invokes a specified callback when DOM events occur.")
+[MutationObserver/MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver 'The DOM MutationObserver() constructor — part of the MutationObserver interface — creates and returns a new observer which invokes a specified callback when DOM events occur.')
 
 In all current engines.
 
@@ -3583,7 +3581,7 @@ Firefox for Android14+iOS Safari7+Chrome for Android26+Android WebView37+Samsung
 
 Constructs a `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object and sets its [callback](https://dom.spec.whatwg.org/#concept-mo-callback) to callback. The callback is invoked with a list of `[MutationRecord](https://dom.spec.whatwg.org/#mutationrecord)` objects as first argument and the constructed `[MutationObserver](https://dom.spec.whatwg.org/#mutationobserver)` object as second argument. It is invoked after [nodes](https://dom.spec.whatwg.org/#concept-node) registered with the `[observe()](https://dom.spec.whatwg.org/#dom-mutationobserver-observe)` method, are mutated.
 
-[MutationObserver/observe](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe "The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.")
+[MutationObserver/observe](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe 'The MutationObserver method observe() configures the MutationObserver callback to begin receiving notifications of changes to the DOM that match the given options.')
 
 In all current engines.
 
@@ -3635,7 +3633,7 @@ Set to true if `[characterData](https://dom.spec.whatwg.org/#dom-mutationobserve
 
 Set to a list of [attribute](https://dom.spec.whatwg.org/#concept-attribute) [local names](https://dom.spec.whatwg.org/#concept-attribute-local-name) (without [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace)) if not all [attribute](https://dom.spec.whatwg.org/#concept-attribute) mutations need to be observed and `[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)` is true or omitted.
 
-[MutationObserver/disconnect](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/disconnect "The MutationObserver method disconnect() tells the observer to stop watching for mutations.")
+[MutationObserver/disconnect](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/disconnect 'The MutationObserver method disconnect() tells the observer to stop watching for mutations.')
 
 In all current engines.
 
@@ -3724,11 +3722,11 @@ To queue a mutation record of type for target with name, namespace, oldValue, ad
     1.  Let options be registered’s [options](https://dom.spec.whatwg.org/#registered-observer-options).
     2.  If none of the following are true
 
-        - node is not target and options\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is false
-        - type is "`attributes`" and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        - type is "`attributes`", options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
-        - type is "`characterData`" and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
-        - type is "`childList`" and options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`"\] is false
+        -   node is not target and options\["`[subtree](https://dom.spec.whatwg.org/#dom-mutationobserverinit-subtree)`"\] is false
+        -   type is "`attributes`" and options\["`[attributes](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributes)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`attributes`", options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] [exists](https://infra.spec.whatwg.org/#map-exists), and options\["`[attributeFilter](https://dom.spec.whatwg.org/#dom-mutationobserverinit-attributefilter)`"\] does not [contain](https://infra.spec.whatwg.org/#list-contain) name or namespace is non-null
+        -   type is "`characterData`" and options\["`[characterData](https://dom.spec.whatwg.org/#dom-mutationobserverinit-characterdata)`"\] either does not [exist](https://infra.spec.whatwg.org/#map-exists) or is false
+        -   type is "`childList`" and options\["`[childList](https://dom.spec.whatwg.org/#dom-mutationobserverinit-childlist)`"\] is false
 
         then:
 
@@ -3823,7 +3821,7 @@ The `type`, `target`, `addedNodes`, `removedNodes`, `previousSibling`, `nextSibl
 
 ### 4.4. Interface `[Node](https://dom.spec.whatwg.org/#node)`[](https://dom.spec.whatwg.org/#interface-node)
 
-[Node](https://developer.mozilla.org/en-US/docs/Web/API/Node "The DOM Node interface is an abstract base class upon which many other DOM API objects are based, thus letting those object types to be used similarly and often interchangeably. As an abstract class, there is no such thing as a plain Node object. All objects that implement Node functionality are based on one of its subclasses. Most notable are Document, Element, and DocumentFragment.")
+[Node](https://developer.mozilla.org/en-US/docs/Web/API/Node 'The DOM Node interface is an abstract base class upon which many other DOM API objects are based, thus letting those object types to be used similarly and often interchangeably. As an abstract class, there is no such thing as a plain Node object. All objects that implement Node functionality are based on one of its subclasses. Most notable are Document, Element, and DocumentFragment.')
 
 In all current engines.
 
@@ -3915,7 +3913,7 @@ Each [node](https://dom.spec.whatwg.org/#concept-node) also has a [registered ob
 
 ---
 
-[Node/nodeType](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType "The read-only nodeType property of a Node element is an integer that identifies what the node is. It distinguishes different kind of nodes from each other, such as elements, text and comments.")
+[Node/nodeType](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 'The read-only nodeType property of a Node element is an integer that identifies what the node is. It distinguishes different kind of nodes from each other, such as elements, text and comments.')
 
 In all current engines.
 
@@ -3973,7 +3971,7 @@ An [exclusive `Text` node](https://dom.spec.whatwg.org/#exclusive-text-node)
 
 `` `[Node](https://dom.spec.whatwg.org/#node)` . `[DOCUMENT_FRAGMENT_NODE](https://dom.spec.whatwg.org/#dom-node-document_fragment_node)` `` (11).
 
-[Node/nodeName](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName "The read-only nodeName property of Node returns the name of the current node as a string.")
+[Node/nodeName](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName 'The read-only nodeName property of Node returns the name of the current node as a string.')
 
 In all current engines.
 
@@ -4109,7 +4107,7 @@ Its [name](https://dom.spec.whatwg.org/#concept-doctype-name).
 
 ---
 
-[Node/baseURI](https://developer.mozilla.org/en-US/docs/Web/API/Node/baseURI "The read-only baseURI property of the Node interface returns the absolute base URL of the document containing the node.")
+[Node/baseURI](https://developer.mozilla.org/en-US/docs/Web/API/Node/baseURI 'The read-only baseURI property of the Node interface returns the absolute base URL of the document containing the node.')
 
 In all current engines.
 
@@ -4135,7 +4133,7 @@ The `baseURI` getter steps are to return [this](https://webidl.spec.whatwg.org/#
 
 ---
 
-[Node/isConnected](https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected "The read-only isConnected property of the Node interface returns a boolean indicating whether the node is connected (directly or indirectly) to the context object, for example the Document object in the case of the normal DOM, or the ShadowRoot in the case of a shadow DOM.")
+[Node/isConnected](https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected 'The read-only isConnected property of the Node interface returns a boolean indicating whether the node is connected (directly or indirectly) to the context object, for example the Document object in the case of the normal DOM, or the ShadowRoot in the case of a shadow DOM.')
 
 In all current engines.
 
@@ -4157,7 +4155,7 @@ Firefox for Android49+iOS Safari10+Chrome for Android51+Android WebView51+Samsun
 
 Returns true if node is [connected](https://dom.spec.whatwg.org/#connected); otherwise false.
 
-[Node/ownerDocument](https://developer.mozilla.org/en-US/docs/Web/API/Node/ownerDocument "The read-only ownerDocument property of the Node interface returns the top-level document object of the node.")
+[Node/ownerDocument](https://developer.mozilla.org/en-US/docs/Web/API/Node/ownerDocument 'The read-only ownerDocument property of the Node interface returns the top-level document object of the node.')
 
 In all current engines.
 
@@ -4205,7 +4203,7 @@ Returns node’s [root](https://dom.spec.whatwg.org/#concept-tree-root).
 
 Returns node’s [shadow-including root](https://dom.spec.whatwg.org/#concept-shadow-including-root).
 
-[Node/parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode "The read-only parentNode property of the Node interface returns the parent of the specified node in the DOM tree.")
+[Node/parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode 'The read-only parentNode property of the Node interface returns the parent of the specified node in the DOM tree.')
 
 In all current engines.
 
@@ -4249,7 +4247,7 @@ Firefox for Android9+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns the [parent element](https://dom.spec.whatwg.org/#parent-element).
 
-[Node/hasChildNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes "The hasChildNodes() method of the Node interface returns a boolean value indicating whether the given Node has child nodes or not.")
+[Node/hasChildNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes 'The hasChildNodes() method of the Node interface returns a boolean value indicating whether the given Node has child nodes or not.')
 
 In all current engines.
 
@@ -4271,7 +4269,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns whether node has [children](https://dom.spec.whatwg.org/#concept-tree-child).
 
-[Node/childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes "The read-only childNodes property of the Node interface returns a live NodeList of child nodes of the given element where the first child node is assigned index 0. Child nodes include elements, text and comments.")
+[Node/childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes 'The read-only childNodes property of the Node interface returns a live NodeList of child nodes of the given element where the first child node is assigned index 0. Child nodes include elements, text and comments.')
 
 In all current engines.
 
@@ -4315,7 +4313,7 @@ Firefox for Android4+iOS Safari7+Chrome for Android18+Android WebView1+Samsung I
 
 Returns the [first child](https://dom.spec.whatwg.org/#concept-tree-first-child).
 
-[Node/lastChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild "The read-only lastChild property of the Node interface returns the last child of the node. If its parent is an element, then the child is generally an element node, a text node, or a comment node. It returns null if there are no child elements.")
+[Node/lastChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild 'The read-only lastChild property of the Node interface returns the last child of the node. If its parent is an element, then the child is generally an element node, a text node, or a comment node. It returns null if there are no child elements.')
 
 In all current engines.
 
@@ -4407,7 +4405,7 @@ The `nextSibling` getter steps are to return [this](https://webidl.spec.whatwg.o
 
 ---
 
-[Node/nodeValue](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue "The nodeValue property of the Node interface returns or sets the value of the current node.")
+[Node/nodeValue](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue 'The nodeValue property of the Node interface returns or sets the value of the current node.')
 
 In all current engines.
 
@@ -4453,7 +4451,7 @@ Otherwise
 
 Do nothing.
 
-[Node/textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent "The textContent property of the Node interface represents the text content of the node and its descendants.")
+[Node/textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent 'The textContent property of the Node interface represents the text content of the node and its descendants.')
 
 In all current engines.
 
@@ -4519,7 +4517,7 @@ Do nothing.
 
 ---
 
-[Node/normalize](https://developer.mozilla.org/en-US/docs/Web/API/Node/normalize "The normalize() method of the Node puts the specified node and all of its sub-tree into a normalized form. In a normalized sub-tree, no text nodes in the sub-tree are empty and there are no adjacent text nodes.")
+[Node/normalize](https://developer.mozilla.org/en-US/docs/Web/API/Node/normalize 'The normalize() method of the Node puts the specified node and all of its sub-tree into a normalized form. In a normalized sub-tree, no text nodes in the sub-tree are empty and there are no adjacent text nodes.')
 
 In all current engines.
 
@@ -4561,7 +4559,7 @@ The `normalize()` method steps are to run these steps for each [descendant](http
 
 ---
 
-[Node/cloneNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode "The cloneNode() method of the Node interface returns a duplicate of the node on which this method was called. Its parameter controls if the subtree contained in a node is also cloned or not.")
+[Node/cloneNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode 'The cloneNode() method of the Node interface returns a duplicate of the node on which this method was called. Its parameter controls if the subtree contained in a node is also cloned or not.')
 
 In all current engines.
 
@@ -4583,7 +4581,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns a copy of node. If deep is true, the copy also includes the node’s [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant).
 
-[Node/isEqualNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode "The isEqualNode() method of the Node interface tests whether two nodes are equal. Two nodes are equal when they have the same type, defining characteristics (for elements, this would be their ID, number of children, and so forth), its attributes match, and so on. The specific set of data points that must match varies depending on the types of the nodes.")
+[Node/isEqualNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode 'The isEqualNode() method of the Node interface tests whether two nodes are equal. Two nodes are equal when they have the same type, defining characteristics (for elements, this would be their ID, number of children, and so forth), its attributes match, and so on. The specific set of data points that must match varies depending on the types of the nodes.')
 
 In all current engines.
 
@@ -4660,42 +4658,42 @@ The `cloneNode(deep)` method steps are:
 
 A [node](https://dom.spec.whatwg.org/#concept-node) A equals a [node](https://dom.spec.whatwg.org/#concept-node) B if all of the following conditions are true:
 
-- A and B [implement](https://webidl.spec.whatwg.org/#implements) the same interfaces.
-- The following are equal, switching on the interface A [implements](https://webidl.spec.whatwg.org/#implements):
+-   A and B [implement](https://webidl.spec.whatwg.org/#implements) the same interfaces.
+-   The following are equal, switching on the interface A [implements](https://webidl.spec.whatwg.org/#implements):
 
-  `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
+    `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
-  Its [name](https://dom.spec.whatwg.org/#concept-doctype-name), [public ID](https://dom.spec.whatwg.org/#concept-doctype-publicid), and [system ID](https://dom.spec.whatwg.org/#concept-doctype-systemid).
+    Its [name](https://dom.spec.whatwg.org/#concept-doctype-name), [public ID](https://dom.spec.whatwg.org/#concept-doctype-publicid), and [system ID](https://dom.spec.whatwg.org/#concept-doctype-systemid).
 
-  `[Element](https://dom.spec.whatwg.org/#element)`
+    `[Element](https://dom.spec.whatwg.org/#element)`
 
-  Its [namespace](https://dom.spec.whatwg.org/#concept-element-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix), [local name](https://dom.spec.whatwg.org/#concept-element-local-name), and its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute)’s [size](https://infra.spec.whatwg.org/#list-size).
+    Its [namespace](https://dom.spec.whatwg.org/#concept-element-namespace), [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix), [local name](https://dom.spec.whatwg.org/#concept-element-local-name), and its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute)’s [size](https://infra.spec.whatwg.org/#list-size).
 
-  `[Attr](https://dom.spec.whatwg.org/#attr)`
+    `[Attr](https://dom.spec.whatwg.org/#attr)`
 
-  Its [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace), [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), and [value](https://dom.spec.whatwg.org/#concept-attribute-value).
+    Its [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace), [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name), and [value](https://dom.spec.whatwg.org/#concept-attribute-value).
 
-  `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)`
+    `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)`
 
-  Its [target](https://dom.spec.whatwg.org/#concept-pi-target) and [data](https://dom.spec.whatwg.org/#concept-cd-data).
+    Its [target](https://dom.spec.whatwg.org/#concept-pi-target) and [data](https://dom.spec.whatwg.org/#concept-cd-data).
 
-  `[Text](https://dom.spec.whatwg.org/#text)`
+    `[Text](https://dom.spec.whatwg.org/#text)`
 
-  `[Comment](https://dom.spec.whatwg.org/#comment)`
+    `[Comment](https://dom.spec.whatwg.org/#comment)`
 
-  Its [data](https://dom.spec.whatwg.org/#concept-cd-data).
+    Its [data](https://dom.spec.whatwg.org/#concept-cd-data).
 
-  Otherwise
+    Otherwise
 
-  —
+    —
 
-- If A is an [element](https://dom.spec.whatwg.org/#concept-element), each [attribute](https://dom.spec.whatwg.org/#concept-attribute) in its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) has an [attribute](https://dom.spec.whatwg.org/#concept-attribute) that [equals](https://dom.spec.whatwg.org/#concept-node-equals) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) in B’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute).
-- A and B have the same number of [children](https://dom.spec.whatwg.org/#concept-tree-child).
-- Each [child](https://dom.spec.whatwg.org/#concept-tree-child) of A [equals](https://dom.spec.whatwg.org/#concept-node-equals) the [child](https://dom.spec.whatwg.org/#concept-tree-child) of B at the identical [index](https://dom.spec.whatwg.org/#concept-tree-index).
+-   If A is an [element](https://dom.spec.whatwg.org/#concept-element), each [attribute](https://dom.spec.whatwg.org/#concept-attribute) in its [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute) has an [attribute](https://dom.spec.whatwg.org/#concept-attribute) that [equals](https://dom.spec.whatwg.org/#concept-node-equals) an [attribute](https://dom.spec.whatwg.org/#concept-attribute) in B’s [attribute list](https://dom.spec.whatwg.org/#concept-element-attribute).
+-   A and B have the same number of [children](https://dom.spec.whatwg.org/#concept-tree-child).
+-   Each [child](https://dom.spec.whatwg.org/#concept-tree-child) of A [equals](https://dom.spec.whatwg.org/#concept-node-equals) the [child](https://dom.spec.whatwg.org/#concept-tree-child) of B at the identical [index](https://dom.spec.whatwg.org/#concept-tree-index).
 
 The `isEqualNode(otherNode)` method steps are to return true if otherNode is non-null and [this](https://webidl.spec.whatwg.org/#this) [equals](https://dom.spec.whatwg.org/#concept-node-equals) otherNode; otherwise false.
 
-[Node/isSameNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/isSameNode "The isSameNode() method of the Node interface is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).")
+[Node/isSameNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/isSameNode 'The isSameNode() method of the Node interface is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).')
 
 In all current engines.
 
@@ -4717,7 +4715,7 @@ The `isSameNode(otherNode)` method steps are to return true if otherNode is [thi
 
 ---
 
-[Node/compareDocumentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Node/compareDocumentPosition "The compareDocumentPosition() method of the Node interface reports the position of its argument node relative to the node on which it is called.")
+[Node/compareDocumentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Node/compareDocumentPosition 'The compareDocumentPosition() method of the Node interface reports the position of its argument node relative to the node on which it is called.')
 
 In all current engines.
 
@@ -4783,12 +4781,12 @@ Returns true if other is an [inclusive descendant](https://dom.spec.whatwg.org/#
 
 These are the constants `[compareDocumentPosition()](https://dom.spec.whatwg.org/#dom-node-comparedocumentposition)` returns as mask:
 
-- `DOCUMENT_POSITION_DISCONNECTED` (1);
-- `DOCUMENT_POSITION_PRECEDING` (2);
-- `DOCUMENT_POSITION_FOLLOWING` (4);
-- `DOCUMENT_POSITION_CONTAINS` (8);
-- `DOCUMENT_POSITION_CONTAINED_BY` (16, 10 in hexadecimal);
-- `DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC` (32, 20 in hexadecimal).
+-   `DOCUMENT_POSITION_DISCONNECTED` (1);
+-   `DOCUMENT_POSITION_PRECEDING` (2);
+-   `DOCUMENT_POSITION_FOLLOWING` (4);
+-   `DOCUMENT_POSITION_CONTAINS` (8);
+-   `DOCUMENT_POSITION_CONTAINED_BY` (16, 10 in hexadecimal);
+-   `DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC` (32, 20 in hexadecimal).
 
 The `compareDocumentPosition(other)` method steps are:
 
@@ -4859,7 +4857,7 @@ Otherwise
 1.  If its [parent element](https://dom.spec.whatwg.org/#parent-element) is null, then return null.
 2.  Return the result of running [locate a namespace](https://dom.spec.whatwg.org/#locate-a-namespace) on its [parent element](https://dom.spec.whatwg.org/#parent-element) using prefix.
 
-[Node/lookupPrefix](https://developer.mozilla.org/en-US/docs/Web/API/Node/lookupPrefix "The lookupPrefix() method of the Node interface returns a String containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the first prefix is returned.")
+[Node/lookupPrefix](https://developer.mozilla.org/en-US/docs/Web/API/Node/lookupPrefix 'The lookupPrefix() method of the Node interface returns a String containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the first prefix is returned.')
 
 In all current engines.
 
@@ -4904,7 +4902,7 @@ The `lookupPrefix(namespace)` method steps are:
 
     Return the result of [locating a namespace prefix](https://dom.spec.whatwg.org/#locate-a-namespace-prefix) for its [parent element](https://dom.spec.whatwg.org/#parent-element), if its [parent element](https://dom.spec.whatwg.org/#parent-element) is non-null; otherwise null.
 
-[Node/lookupNamespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Node/lookupNamespaceURI "The lookupNamespaceURI() method of the Node interface takes a prefix as parameter and returns the namespace URI associated with it on the given node if found (and null if not).")
+[Node/lookupNamespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Node/lookupNamespaceURI 'The lookupNamespaceURI() method of the Node interface takes a prefix as parameter and returns the namespace URI associated with it on the given node if found (and null if not).')
 
 In all current engines.
 
@@ -4927,7 +4925,7 @@ The `lookupNamespaceURI(prefix)` method steps are:
 1.  If prefix is the empty string, then set it to null.
 2.  Return the result of running [locate a namespace](https://dom.spec.whatwg.org/#locate-a-namespace) for [this](https://webidl.spec.whatwg.org/#this) using prefix.
 
-[Node/isDefaultNamespace](https://developer.mozilla.org/en-US/docs/Web/API/Node/isDefaultNamespace "The isDefaultNamespace() method of the Node interface accepts a namespace URI as an argument. It returns a boolean value that is true if the namespace is the default namespace on the given node and false if not.")
+[Node/isDefaultNamespace](https://developer.mozilla.org/en-US/docs/Web/API/Node/isDefaultNamespace 'The isDefaultNamespace() method of the Node interface accepts a namespace URI as an argument. It returns a boolean value that is true if the namespace is the default namespace on the given node and false if not.')
 
 In all current engines.
 
@@ -4953,7 +4951,7 @@ The `isDefaultNamespace(namespace)` method steps are:
 
 ---
 
-[Node/insertBefore](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore "The insertBefore() method of the Node interface inserts a node before a reference node as a child of a specified parent node.")
+[Node/insertBefore](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore 'The insertBefore() method of the Node interface inserts a node before a reference node as a child of a specified parent node.')
 
 In all current engines.
 
@@ -4973,7 +4971,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `insertBefore(node, child)` method steps are to return the result of [pre-inserting](https://dom.spec.whatwg.org/#concept-node-pre-insert) node into [this](https://webidl.spec.whatwg.org/#this) before child.
 
-[Node/appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild "The appendChild() method of the Node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node).")
+[Node/appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild 'The appendChild() method of the Node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node).')
 
 In all current engines.
 
@@ -4993,7 +4991,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `appendChild(node)` method steps are to return the result of [appending](https://dom.spec.whatwg.org/#concept-node-append) node to [this](https://webidl.spec.whatwg.org/#this).
 
-[Node/replaceChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild "The replaceChild() method of the Node element replaces a child node within the given (parent) node.")
+[Node/replaceChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild 'The replaceChild() method of the Node element replaces a child node within the given (parent) node.')
 
 In all current engines.
 
@@ -5013,7 +5011,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `replaceChild(node, child)` method steps are to return the result of [replacing](https://dom.spec.whatwg.org/#concept-node-replace) child with node within [this](https://webidl.spec.whatwg.org/#this).
 
-[Node/removeChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild "The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node.")
+[Node/removeChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild 'The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node.')
 
 In all current engines.
 
@@ -5040,8 +5038,8 @@ The list of elements with qualified name qualifiedName for a [node](https://dom.
 1.  If qualifiedName is U+002A (\*), then return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches only [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element).
 2.  Otherwise, if root’s [node document](https://dom.spec.whatwg.org/#concept-node-document) is an [HTML document](https://dom.spec.whatwg.org/#html-document), return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches the following [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element):
 
-    - Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName, in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
-    - Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is _not_ the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
+    -   Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName, in [ASCII lowercase](https://infra.spec.whatwg.org/#ascii-lowercase).
+    -   Whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is _not_ the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) and whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
 
 3.  Otherwise, return a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` rooted at root, whose filter matches [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName.
 
@@ -5087,7 +5085,7 @@ Edge (Legacy)12+IE4+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[XMLDocument](https://developer.mozilla.org/en-US/docs/Web/API/XMLDocument "The XMLDocument interface represents an XML document. It inherits from the generic Document and does not add any specific methods or properties to it: nevertheless, several algorithms behave differently with the two types of documents.")
+[XMLDocument](https://developer.mozilla.org/en-US/docs/Web/API/XMLDocument 'The XMLDocument interface represents an XML document. It inherits from the generic Document and does not add any specific methods or properties to it: nevertheless, several algorithms behave differently with the two types of documents.')
 
 In all current engines.
 
@@ -5194,7 +5192,7 @@ Firefox for Android20+iOS Safari8+Chrome for Android60+Android WebView60+Samsung
 
 Returns a new [document](https://dom.spec.whatwg.org/#concept-document).
 
-[Document/implementation](https://developer.mozilla.org/en-US/docs/Web/API/Document/implementation "The Document.implementation property returns a DOMImplementation object associated with the current document.")
+[Document/implementation](https://developer.mozilla.org/en-US/docs/Web/API/Document/implementation 'The Document.implementation property returns a DOMImplementation object associated with the current document.')
 
 In all current engines.
 
@@ -5216,7 +5214,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns document’s `[DOMImplementation](https://dom.spec.whatwg.org/#domimplementation)` object.
 
-[Document/URL](https://developer.mozilla.org/en-US/docs/Web/API/Document/URL "The URL read-only property of the Document interface returns the document location as a string.")
+[Document/URL](https://developer.mozilla.org/en-US/docs/Web/API/Document/URL 'The URL read-only property of the Document interface returns the document location as a string.')
 
 In all current engines.
 
@@ -5236,7 +5234,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 `` document . `[URL](https://dom.spec.whatwg.org/#dom-document-url)`  ``
 
-[Document/documentURI](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentURI "The documentURI read-only property of the Document interface returns the document location as a string.")
+[Document/documentURI](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentURI 'The documentURI read-only property of the Document interface returns the document location as a string.')
 
 In all current engines.
 
@@ -5258,7 +5256,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns document’s [URL](https://dom.spec.whatwg.org/#concept-document-url).
 
-[Document/compatMode](https://developer.mozilla.org/en-US/docs/Web/API/Document/compatMode "The Document.compatMode read-only property indicates whether the document is rendered in Quirks mode or Standards mode.")
+[Document/compatMode](https://developer.mozilla.org/en-US/docs/Web/API/Document/compatMode 'The Document.compatMode read-only property indicates whether the document is rendered in Quirks mode or Standards mode.')
 
 In all current engines.
 
@@ -5302,7 +5300,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns document’s [encoding](https://dom.spec.whatwg.org/#concept-document-encoding).
 
-[Document/contentType](https://developer.mozilla.org/en-US/docs/Web/API/Document/contentType "The Document.contentType read-only property returns the MIME type that the document is being rendered as. This may come from HTTP headers or other sources of MIME information, and might be affected by automatic type conversions performed by either the browser or extensions.")
+[Document/contentType](https://developer.mozilla.org/en-US/docs/Web/API/Document/contentType 'The Document.contentType read-only property returns the MIME type that the document is being rendered as. This may come from HTTP headers or other sources of MIME information, and might be affected by automatic type conversions performed by either the browser or extensions.')
 
 In all current engines.
 
@@ -5340,7 +5338,7 @@ The `contentType` getter steps are to return [this](https://webidl.spec.whatwg.o
 
 ---
 
-[Document/doctype](https://developer.mozilla.org/en-US/docs/Web/API/Document/doctype "Returns the Document Type Declaration (DTD) associated with current document. The returned object implements the DocumentType interface. Use DOMImplementation.createDocumentType() to create a DocumentType.")
+[Document/doctype](https://developer.mozilla.org/en-US/docs/Web/API/Document/doctype 'Returns the Document Type Declaration (DTD) associated with current document. The returned object implements the DocumentType interface. Use DOMImplementation.createDocumentType() to create a DocumentType.')
 
 In all current engines.
 
@@ -5362,7 +5360,7 @@ document . `[doctype](https://dom.spec.whatwg.org/#dom-document-doctype)`
 
 Returns the [doctype](https://dom.spec.whatwg.org/#concept-doctype) or null if there is none.
 
-[Document/documentElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement "Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).")
+[Document/documentElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement 'Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).')
 
 In all current engines.
 
@@ -5384,7 +5382,7 @@ document . `[documentElement](https://dom.spec.whatwg.org/#dom-document-document
 
 Returns the [document element](https://dom.spec.whatwg.org/#document-element).
 
-[Document/getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName "The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.")
+[Document/getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName 'The getElementsByTagName method of Document interface returns an HTMLCollection of elements with the given tag name.')
 
 In all current engines.
 
@@ -5408,7 +5406,7 @@ If qualifiedName is "`*`" returns a `[HTMLCollection](https://dom.spec.whatwg.or
 
 Otherwise, returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [qualified name](https://dom.spec.whatwg.org/#concept-element-qualified-name) is qualifiedName. (Matches case-insensitively against [elements](https://dom.spec.whatwg.org/#concept-element) in the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace) within an [HTML document](https://dom.spec.whatwg.org/#html-document).)
 
-[Document/getElementsByTagNameNS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagNameNS "Returns a list of elements with the given tag name belonging to the given namespace. The complete document is searched, including the root node.")
+[Document/getElementsByTagNameNS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagNameNS 'Returns a list of elements with the given tag name belonging to the given namespace. The complete document is searched, including the root node.')
 
 In all current engines.
 
@@ -5436,7 +5434,7 @@ If only localName is "`*`" returns a `[HTMLCollection](https://dom.spec.whatwg.o
 
 Otherwise, returns a `[HTMLCollection](https://dom.spec.whatwg.org/#htmlcollection)` of all [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) [elements](https://dom.spec.whatwg.org/#concept-element) whose [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is namespace and [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is localName.
 
-[Document/getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName "The getElementsByClassName method of Document interface returns an array-like object of all child elements which have all of the given class name(s).")
+[Document/getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName 'The getElementsByClassName method of Document interface returns an array-like object of all child elements which have all of the given class name(s).')
 
 In all current engines.
 
@@ -5456,7 +5454,7 @@ Firefox for Android4+iOS Safari2+Chrome for Android18+Android WebView1+Samsung I
 
 collection = document . `[getElementsByClassName(classNames)](https://dom.spec.whatwg.org/#dom-document-getelementsbyclassname)`
 
-[Element/getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName "The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names.")
+[Element/getElementsByClassName](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName 'The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names.')
 
 In all current engines.
 
@@ -5534,7 +5532,7 @@ If localName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` pro
 
 When supplied, options’s `[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)` can be used to create a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element).
 
-[Document/createElementNS](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElementNS "Creates an element with the specified namespace URI and qualified name.")
+[Document/createElementNS](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElementNS 'Creates an element with the specified namespace URI and qualified name.')
 
 In all current engines.
 
@@ -5560,14 +5558,14 @@ If qualifiedName does not match the `[QName](https://www.w3.org/TR/xml-names/#NT
 
 If one of the following conditions is true a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` will be thrown:
 
-- [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is not null and namespace is the empty string.
-- [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xml`" and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
-- qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`" and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
-- namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`".
+-   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is not null and namespace is the empty string.
+-   [Namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xml`" and namespace is not the [XML namespace](https://infra.spec.whatwg.org/#xml-namespace).
+-   qualifiedName or [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`" and namespace is not the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace).
+-   namespace is the [XMLNS namespace](https://infra.spec.whatwg.org/#xmlns-namespace) and neither qualifiedName nor [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix) is "`xmlns`".
 
 When supplied, options’s `[is](https://dom.spec.whatwg.org/#dom-elementcreationoptions-is)` can be used to create a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element).
 
-[Document/createDocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment "Creates a new empty DocumentFragment into which DOM nodes can be added to build an offscreen DOM tree.")
+[Document/createDocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment 'Creates a new empty DocumentFragment into which DOM nodes can be added to build an offscreen DOM tree.')
 
 In all current engines.
 
@@ -5589,7 +5587,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns a `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node).
 
-[Document/createTextNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode "Creates a new Text node. This method can be used to escape HTML characters.")
+[Document/createTextNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode 'Creates a new Text node. This method can be used to escape HTML characters.')
 
 In all current engines.
 
@@ -5615,7 +5613,7 @@ Returns a `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.wh
 
 Returns a `[CDATASection](https://dom.spec.whatwg.org/#cdatasection)` [node](https://dom.spec.whatwg.org/#concept-node) whose [data](https://dom.spec.whatwg.org/#concept-cd-data) is data.
 
-[Document/createCDATASection](https://developer.mozilla.org/en-US/docs/Web/API/Document/createCDATASection "createCDATASection() creates a new CDATA section node, and returns it.")
+[Document/createCDATASection](https://developer.mozilla.org/en-US/docs/Web/API/Document/createCDATASection 'createCDATASection() creates a new CDATA section node, and returns it.')
 
 In all current engines.
 
@@ -5633,7 +5631,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[Document/createComment](https://developer.mozilla.org/en-US/docs/Web/API/Document/createComment "createComment() creates a new comment node, and returns it.")
+[Document/createComment](https://developer.mozilla.org/en-US/docs/Web/API/Document/createComment 'createComment() creates a new comment node, and returns it.')
 
 In all current engines.
 
@@ -5655,7 +5653,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns a `[Comment](https://dom.spec.whatwg.org/#comment)` [node](https://dom.spec.whatwg.org/#concept-node) whose [data](https://dom.spec.whatwg.org/#concept-cd-data) is data.
 
-[Document/createProcessingInstruction](https://developer.mozilla.org/en-US/docs/Web/API/Document/createProcessingInstruction "createProcessingInstruction() generates a new processing instruction node and returns it.")
+[Document/createProcessingInstruction](https://developer.mozilla.org/en-US/docs/Web/API/Document/createProcessingInstruction 'createProcessingInstruction() generates a new processing instruction node and returns it.')
 
 In all current engines.
 
@@ -5806,7 +5804,7 @@ The `adoptNode(node)` method steps are:
 
 ---
 
-[Document/createAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Document/createAttribute "The Document.createAttribute() method creates a new attribute node, and returns it. The object created a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.")
+[Document/createAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Document/createAttribute 'The Document.createAttribute() method creates a new attribute node, and returns it. The object created a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.')
 
 In all current engines.
 
@@ -5837,7 +5835,7 @@ The `createAttributeNS(namespace, qualifiedName)` method steps are:
 
 ---
 
-[Document/createEvent](https://developer.mozilla.org/en-US/docs/Web/API/Document/createEvent "Creates an event of the type specified. The returned object should be first initialized and can then be passed to EventTarget.dispatchEvent.")
+[Document/createEvent](https://developer.mozilla.org/en-US/docs/Web/API/Document/createEvent 'Creates an event of the type specified. The returned object should be first initialized and can then be passed to EventTarget.dispatchEvent.')
 
 In all current engines.
 
@@ -5986,7 +5984,7 @@ The `createEvent(interface)` method steps are:
 
 ---
 
-[Document/createRange](https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange "The Document.createRange() method returns a new Range object.")
+[Document/createRange](https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange 'The Document.createRange() method returns a new Range object.')
 
 In all current engines.
 
@@ -6010,7 +6008,7 @@ The `[Range()](https://dom.spec.whatwg.org/#dom-range-range)` constructor can be
 
 ---
 
-[Document/createNodeIterator](https://developer.mozilla.org/en-US/docs/Web/API/Document/createNodeIterator "Returns a new NodeIterator object.")
+[Document/createNodeIterator](https://developer.mozilla.org/en-US/docs/Web/API/Document/createNodeIterator 'Returns a new NodeIterator object.')
 
 In all current engines.
 
@@ -6037,7 +6035,7 @@ The `createNodeIterator(root, whatToShow, filter)` method steps are:
 5.  Set iterator’s [filter](https://dom.spec.whatwg.org/#concept-traversal-filter) to filter.
 6.  Return iterator.
 
-[Document/createTreeWalker](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTreeWalker "The Document.createTreeWalker() creator method returns a newly created TreeWalker object.")
+[Document/createTreeWalker](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTreeWalker 'The Document.createTreeWalker() creator method returns a newly created TreeWalker object.')
 
 In all current engines.
 
@@ -6065,7 +6063,7 @@ The `createTreeWalker(root, whatToShow, filter)` method steps are:
 
 #### 4.5.1. Interface `[DOMImplementation](https://dom.spec.whatwg.org/#domimplementation)`[](https://dom.spec.whatwg.org/#interface-domimplementation)
 
-[DOMImplementation](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation "The DOMImplementation interface represents an object providing methods which are not dependent on any particular document. Such an object is returned by the Document.implementation property.")
+[DOMImplementation](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation 'The DOMImplementation interface represents an object providing methods which are not dependent on any particular document. Such an object is returned by the Document.implementation property.')
 
 In all current engines.
 
@@ -6094,7 +6092,7 @@ interface `DOMImplementation` {
 [boolean](https://webidl.spec.whatwg.org/#idl-boolean) [hasFeature](https://dom.spec.whatwg.org/#dom-domimplementation-hasfeature)(); // useless; always returns true
 };
 
-[DOMImplementation/createDocumentType](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType "The DOMImplementation.createDocumentType() method returns a DocumentType object which can either be used with DOMImplementation.createDocument upon document creation or can be put into the document via methods like Node.insertBefore() or Node.replaceChild().")
+[DOMImplementation/createDocumentType](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType 'The DOMImplementation.createDocumentType() method returns a DocumentType object which can either be used with DOMImplementation.createDocument upon document creation or can be put into the document via methods like Node.insertBefore() or Node.replaceChild().')
 
 In all current engines.
 
@@ -6116,7 +6114,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns a [doctype](https://dom.spec.whatwg.org/#concept-doctype), with the given qualifiedName, publicId, and systemId. If qualifiedName does not match the `[Name](https://www.w3.org/TR/xml/#NT-Name)` production, an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown, and if it does not match the `[QName](https://www.w3.org/TR/xml-names/#NT-QName)` production, a "`[NamespaceError](https://webidl.spec.whatwg.org/#namespaceerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` is thrown.
 
-[DOMImplementation/createDocument](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocument "The DOMImplementation.createDocument() method creates and returns an XMLDocument.")
+[DOMImplementation/createDocument](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocument 'The DOMImplementation.createDocument() method creates and returns an XMLDocument.')
 
 In all current engines.
 
@@ -6140,7 +6138,7 @@ Returns an `[XMLDocument](https://dom.spec.whatwg.org/#xmldocument)`, with a [do
 
 This method throws the same exceptions as the `[createElementNS()](https://dom.spec.whatwg.org/#dom-document-createelementns)` method, when invoked with namespace and qualifiedName.
 
-[DOMImplementation/createHTMLDocument](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument "The DOMImplementation.createHTMLDocument() method creates a new HTML Document.")
+[DOMImplementation/createHTMLDocument](https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument 'The DOMImplementation.createHTMLDocument() method creates a new HTML Document.')
 
 In all current engines.
 
@@ -6215,7 +6213,7 @@ The `hasFeature()` method steps are to return true.
 
 ### 4.6. Interface `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`[](https://dom.spec.whatwg.org/#interface-documenttype)
 
-[DocumentType](https://developer.mozilla.org/en-US/docs/Web/API/DocumentType "The DocumentType interface represents a Node containing a doctype.")
+[DocumentType](https://developer.mozilla.org/en-US/docs/Web/API/DocumentType 'The DocumentType interface represents a Node containing a doctype.')
 
 In all current engines.
 
@@ -6254,7 +6252,7 @@ The `systemId` getter steps are to return [this](https://webidl.spec.whatwg.org/
 
 ### 4.7. Interface `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)`[](https://dom.spec.whatwg.org/#interface-documentfragment)
 
-[DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment "The DocumentFragment interface represents a minimal document object that has no parent.")
+[DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment 'The DocumentFragment interface represents a minimal document object that has no parent.')
 
 In all current engines.
 
@@ -6283,7 +6281,7 @@ An object A is a host-including inclusive ancestor of an object B, if either A i
 
 The `[DocumentFragment](https://dom.spec.whatwg.org/#documentfragment)` [node](https://dom.spec.whatwg.org/#concept-node)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) concept is useful for HTML’s `[template](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element)` element and for [shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root), and impacts the [pre-insert](https://dom.spec.whatwg.org/#concept-node-pre-insert) and [replace](https://dom.spec.whatwg.org/#concept-node-replace) algorithms.
 
-[DocumentFragment/DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/DocumentFragment "The DocumentFragment() constructor returns a new, empty DocumentFragment object .")
+[DocumentFragment/DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment/DocumentFragment 'The DocumentFragment() constructor returns a new, empty DocumentFragment object .')
 
 In all current engines.
 
@@ -6343,7 +6341,7 @@ enum `SlotAssignmentMode` { `"manual"`[](https://dom.spec.whatwg.org/#dom-slotas
 
 [Shadow roots](https://dom.spec.whatwg.org/#concept-shadow-root) have an associated mode ("`open`" or "`closed`").
 
-[ShadowRoot/delegatesFocus](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus "The delegatesFocus read-only property of the ShadowRoot interface returns true if the shadow root delegates focus, and false otherwise.")
+[ShadowRoot/delegatesFocus](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus 'The delegatesFocus read-only property of the ShadowRoot interface returns true if the shadow root delegates focus, and false otherwise.')
 
 In all current engines.
 
@@ -6395,7 +6393,7 @@ The `delegatesFocus` getter steps are to return [this](https://webidl.spec.whatw
 
 The `slotAssignment` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [slot assignment](https://dom.spec.whatwg.org/#shadowroot-slot-assignment).
 
-[ShadowRoot/host](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/host "The host read-only property of the ShadowRoot returns a reference to the DOM element the ShadowRoot is attached to.")
+[ShadowRoot/host](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/host 'The host read-only property of the ShadowRoot returns a reference to the DOM element the ShadowRoot is attached to.')
 
 In all current engines.
 
@@ -6433,17 +6431,17 @@ A shadow-including inclusive ancestor is an object or one of its [shadow-includi
 
 A [node](https://dom.spec.whatwg.org/#concept-node) A is closed-shadow-hidden from a [node](https://dom.spec.whatwg.org/#concept-node) B if all of the following conditions are true:
 
-- A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root).
-- A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B.
-- A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`" or A’s [root](https://dom.spec.whatwg.org/#concept-tree-root)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
+-   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root).
+-   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B.
+-   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) whose [mode](https://dom.spec.whatwg.org/#shadowroot-mode) is "`closed`" or A’s [root](https://dom.spec.whatwg.org/#concept-tree-root)’s [host](https://dom.spec.whatwg.org/#concept-documentfragment-host) is [closed-shadow-hidden](https://dom.spec.whatwg.org/#concept-closed-shadow-hidden) from B.
 
 To retarget an object A against an object B, repeat these steps until they return an object:
 
 1.  If one of the following is true
 
-    - A is not a [node](https://dom.spec.whatwg.org/#concept-node)
-    - A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)
-    - B is a [node](https://dom.spec.whatwg.org/#concept-node) and A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B
+    -   A is not a [node](https://dom.spec.whatwg.org/#concept-node)
+    -   A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is not a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)
+    -   B is a [node](https://dom.spec.whatwg.org/#concept-node) and A’s [root](https://dom.spec.whatwg.org/#concept-tree-root) is a [shadow-including inclusive ancestor](https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor) of B
 
     then return A.
 
@@ -6453,7 +6451,7 @@ The [retargeting](https://dom.spec.whatwg.org/#retarget) algorithm is used by [e
 
 ### 4.9. Interface `[Element](https://dom.spec.whatwg.org/#element)`[](https://dom.spec.whatwg.org/#interface-element)
 
-[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element "Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element.")
+[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element 'Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element.')
 
 In all current engines.
 
@@ -6735,7 +6733,7 @@ A [node](https://dom.spec.whatwg.org/#concept-node)’s [parent](https://dom.spe
 
 ---
 
-[Element/namespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Element/namespaceURI "The Element.namespaceURI read-only property returns the namespace URI of the element, or null if the element is not in a namespace.")
+[Element/namespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Element/namespaceURI 'The Element.namespaceURI read-only property returns the namespace URI of the element, or null if the element is not in a namespace.')
 
 In all current engines.
 
@@ -6757,7 +6755,7 @@ namespace = element . `[namespaceURI](https://dom.spec.whatwg.org/#dom-element-n
 
 Returns the [namespace](https://dom.spec.whatwg.org/#concept-element-namespace).
 
-[Element/prefix](https://developer.mozilla.org/en-US/docs/Web/API/Element/prefix "The Element.prefix read-only property returns the namespace prefix of the specified element, or null if no prefix is specified.")
+[Element/prefix](https://developer.mozilla.org/en-US/docs/Web/API/Element/prefix 'The Element.prefix read-only property returns the namespace prefix of the specified element, or null if no prefix is specified.')
 
 In all current engines.
 
@@ -6779,7 +6777,7 @@ prefix = element . `[prefix](https://dom.spec.whatwg.org/#dom-element-prefix)`
 
 Returns the [namespace prefix](https://dom.spec.whatwg.org/#concept-element-namespace-prefix).
 
-[Element/localName](https://developer.mozilla.org/en-US/docs/Web/API/Element/localName "The Element.localName read-only property returns the local part of the qualified name of an element.")
+[Element/localName](https://developer.mozilla.org/en-US/docs/Web/API/Element/localName 'The Element.localName read-only property returns the local part of the qualified name of an element.')
 
 In all current engines.
 
@@ -6855,7 +6853,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android25+Android WebView37+Samsung 
 
 Returns the value of element’s `id` content attribute. Can be set to change it.
 
-[Element/className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className "The className property of the Element interface gets and sets the value of the class attribute of the specified element.")
+[Element/className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className 'The className property of the Element interface gets and sets the value of the class attribute of the specified element.')
 
 In all current engines.
 
@@ -6877,7 +6875,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android25+Android WebView37+Samsung 
 
 Returns the value of element’s `class` content attribute. Can be set to change it.
 
-[Element/classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.")
+[Element/classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList 'The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.')
 
 In all current engines.
 
@@ -6899,7 +6897,7 @@ Firefox for Android4+iOS Safari7+Chrome for Android25+Android WebView4.4+Samsung
 
 Allows for manipulation of element’s `class` content attribute as a set of whitespace-separated tokens through a `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)` object.
 
-[Element/slot](https://developer.mozilla.org/en-US/docs/Web/API/Element/slot "The slot property of the Element interface returns the name of the shadow DOM slot the element is inserted in.")
+[Element/slot](https://developer.mozilla.org/en-US/docs/Web/API/Element/slot 'The slot property of the Element interface returns the name of the shadow DOM slot the element is inserted in.')
 
 In all current engines.
 
@@ -6961,7 +6959,7 @@ The `slot` attribute must [reflect](https://dom.spec.whatwg.org/#concept-reflect
 
 ---
 
-[Element/hasAttributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttributes "The hasAttributes() method of the Element interface returns a boolean value indicating whether the current element has any attributes or not.")
+[Element/hasAttributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttributes 'The hasAttributes() method of the Element interface returns a boolean value indicating whether the current element has any attributes or not.')
 
 In all current engines.
 
@@ -6983,7 +6981,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns true if element has attributes; otherwise false.
 
-[Element/getAttributeNames](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNames "The getAttributeNames() method of the Element interface returns the attribute names of the element as an Array of strings. If the element has no attributes it returns an empty array.")
+[Element/getAttributeNames](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNames 'The getAttributeNames() method of the Element interface returns the attribute names of the element as an Array of strings. If the element has no attributes it returns an empty array.')
 
 In all current engines.
 
@@ -7005,7 +7003,7 @@ Firefox for Android45+iOS Safari10.3+Chrome for Android61+Android WebView61+Sams
 
 Returns the [qualified names](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) of all element’s [attributes](https://dom.spec.whatwg.org/#concept-attribute). Can contain duplicates.
 
-[Element/getAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute "The getAttribute() method of the Element interface returns the value of a specified attribute on the element.")
+[Element/getAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute 'The getAttribute() method of the Element interface returns the value of a specified attribute on the element.')
 
 In all current engines.
 
@@ -7049,7 +7047,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns element’s [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is namespace and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is localName, and null if there is no such [attribute](https://dom.spec.whatwg.org/#concept-attribute) otherwise.
 
-[Element/setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute "Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.")
+[Element/setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute 'Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.')
 
 In all current engines.
 
@@ -7071,7 +7069,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Sets the [value](https://dom.spec.whatwg.org/#concept-attribute-value) of element’s first [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName to value.
 
-[Element/setAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNS "setAttributeNS adds a new attribute or changes the value of an attribute with the given namespace and name.")
+[Element/setAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNS 'setAttributeNS adds a new attribute or changes the value of an attribute with the given namespace and name.')
 
 In all current engines.
 
@@ -7093,7 +7091,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Sets the [value](https://dom.spec.whatwg.org/#concept-attribute-value) of element’s [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is namespace and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is localName to value.
 
-[Element/removeAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute "The Element method removeAttribute() removes the attribute with the specified name from the element.")
+[Element/removeAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute 'The Element method removeAttribute() removes the attribute with the specified name from the element.')
 
 In all current engines.
 
@@ -7115,7 +7113,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Removes element’s first [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName.
 
-[Element/removeAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNS "The removeAttributeNS() method of the Element interface removes the specified attribute from an element.")
+[Element/removeAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNS 'The removeAttributeNS() method of the Element interface removes the specified attribute from an element.')
 
 In all current engines.
 
@@ -7137,7 +7135,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Removes element’s [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace) is namespace and [local name](https://dom.spec.whatwg.org/#concept-attribute-local-name) is localName.
 
-[Element/toggleAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute "The toggleAttribute() method of the Element interface toggles a Boolean attribute (removing it if it is present and adding it if it is not present) on the given element.")
+[Element/toggleAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute 'The toggleAttribute() method of the Element interface toggles a Boolean attribute (removing it if it is present and adding it if it is not present) on the given element.')
 
 In all current engines.
 
@@ -7161,7 +7159,7 @@ If force is not given, "toggles" qualifiedName, removing it if it is present and
 
 Returns true if qualifiedName is now present; otherwise false.
 
-[Element/hasAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute "The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not.")
+[Element/hasAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute 'The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not.')
 
 In all current engines.
 
@@ -7183,7 +7181,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Returns true if element has an [attribute](https://dom.spec.whatwg.org/#concept-attribute) whose [qualified name](https://dom.spec.whatwg.org/#concept-attribute-qualified-name) is qualifiedName; otherwise false.
 
-[Element/hasAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttributeNS "hasAttributeNS returns a boolean value indicating whether the current element has the specified attribute.")
+[Element/hasAttributeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttributeNS 'hasAttributeNS returns a boolean value indicating whether the current element has the specified attribute.')
 
 In all current engines.
 
@@ -7285,7 +7283,7 @@ The `hasAttributeNS(namespace, localName)` method steps are:
 
 ---
 
-[Element/getAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNode "Returns the specified attribute of the specified element, as an Attr node.")
+[Element/getAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNode 'Returns the specified attribute of the specified element, as an Attr node.')
 
 In all current engines.
 
@@ -7305,7 +7303,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `getAttributeNode(qualifiedName)` method steps are to return the result of [getting an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-get-by-name) given qualifiedName and [this](https://webidl.spec.whatwg.org/#this).
 
-[Element/getAttributeNodeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNodeNS "Returns the Attr node for the attribute with the given namespace and name.")
+[Element/getAttributeNodeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttributeNodeNS 'Returns the Attr node for the attribute with the given namespace and name.')
 
 In all current engines.
 
@@ -7325,7 +7323,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `getAttributeNodeNS(namespace, localName)` method steps are to return the result of [getting an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-get-by-namespace) given namespace, localName, and [this](https://webidl.spec.whatwg.org/#this).
 
-[Element/setAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNode "The setAttributeNode() method adds a new Attr node to the specified element.")
+[Element/setAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNode 'The setAttributeNode() method adds a new Attr node to the specified element.')
 
 In all current engines.
 
@@ -7343,7 +7341,7 @@ Edge (Legacy)12+IE6+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[Element/setAttributeNodeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS "setAttributeNodeNS adds a new namespaced attribute node to an element.")
+[Element/setAttributeNodeNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS 'setAttributeNodeNS adds a new namespaced attribute node to an element.')
 
 In all current engines.
 
@@ -7363,7 +7361,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `setAttributeNode(attr)` and `setAttributeNodeNS(attr)` methods steps are to return the result of [setting an attribute](https://dom.spec.whatwg.org/#concept-element-attributes-set) given attr and [this](https://webidl.spec.whatwg.org/#this).
 
-[Element/removeAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNode "The removeAttributeNode() method of the Element object removes the specified attribute from the current element.")
+[Element/removeAttributeNode](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttributeNode 'The removeAttributeNode() method of the Element object removes the specified attribute from the current element.')
 
 In all current engines.
 
@@ -7389,7 +7387,7 @@ The `removeAttributeNode(attr)` method steps are:
 
 ---
 
-[Element/attachShadow](https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow "The Element.attachShadow() method attaches a shadow DOM tree to the specified element and returns a reference to its ShadowRoot.")
+[Element/attachShadow](https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow 'The Element.attachShadow() method attaches a shadow DOM tree to the specified element and returns a reference to its ShadowRoot.')
 
 In all current engines.
 
@@ -7411,7 +7409,7 @@ Firefox for Android63+iOS Safari10+Chrome for Android53+Android WebView53+Samsun
 
 Creates a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root) for element and returns it.
 
-[Element/shadowRoot](https://developer.mozilla.org/en-US/docs/Web/API/Element/shadowRoot "The Element.shadowRoot read-only property represents the shadow root hosted by the element.")
+[Element/shadowRoot](https://developer.mozilla.org/en-US/docs/Web/API/Element/shadowRoot 'The Element.shadowRoot read-only property represents the shadow root hosted by the element.')
 
 In all current engines.
 
@@ -7438,8 +7436,8 @@ The `attachShadow(init)` method steps are:
 1.  If [this](https://webidl.spec.whatwg.org/#this)’s [namespace](https://dom.spec.whatwg.org/#concept-element-namespace) is not the [HTML namespace](https://infra.spec.whatwg.org/#html-namespace), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 2.  If [this](https://webidl.spec.whatwg.org/#this)’s [local name](https://dom.spec.whatwg.org/#concept-element-local-name) is not one of the following:
 
-    - a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
-    - "`article`", "`aside`", "`blockquote`", "`body`", "`div`", "`footer`", "`h1`", "`h2`", "`h3`", "`h4`", "`h5`", "`h6`", "`header`", "`main`", "`nav`", "`p`", "`section`", or "`span`"
+    -   a [valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
+    -   "`article`", "`aside`", "`blockquote`", "`body`", "`div`", "`footer`", "`h1`", "`h2`", "`h3`", "`h4`", "`h5`", "`h6`", "`header`", "`main`", "`nav`", "`p`", "`section`", or "`span`"
 
     then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
@@ -7464,7 +7462,7 @@ The `shadowRoot` getter steps are:
 
 ---
 
-[Element/closest](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest "The closest() method traverses the Element and its parents (heading toward the document root) until it finds a node that matches the provided selector string. Will return itself or the matching ancestor. If no such element exists, it returns null.")
+[Element/closest](https://developer.mozilla.org/en-US/docs/Web/API/Element/closest 'The closest() method traverses the Element and its parents (heading toward the document root) until it finds a node that matches the provided selector string. Will return itself or the matching ancestor. If no such element exists, it returns null.')
 
 In all current engines.
 
@@ -7524,7 +7522,7 @@ The `matches(selectors)` and `webkitMatchesSelector(selectors)` method steps are
 
 ---
 
-[Element/getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName "The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name.")
+[Element/getElementsByTagName](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName 'The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name.')
 
 In all current engines.
 
@@ -7544,7 +7542,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `getElementsByTagName(qualifiedName)` method steps are to return the [list of elements with qualified name qualifiedName](https://dom.spec.whatwg.org/#concept-getelementsbytagname) for [this](https://webidl.spec.whatwg.org/#this).
 
-[Element/getElementsByTagNameNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagNameNS "The Element.getElementsByTagNameNS() method returns a live HTMLCollection of elements with the given tag name belonging to the given namespace. It is similar to Document.getElementsByTagNameNS, except that its search is restricted to descendants of the specified element.")
+[Element/getElementsByTagNameNS](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagNameNS 'The Element.getElementsByTagNameNS() method returns a live HTMLCollection of elements with the given tag name belonging to the given namespace. It is similar to Document.getElementsByTagNameNS, except that its search is restricted to descendants of the specified element.')
 
 In all current engines.
 
@@ -7594,7 +7592,7 @@ Otherwise
 
 [Throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-[Element/insertAdjacentElement](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement "The insertAdjacentElement() method of the Element interface inserts a given element node at a given position relative to the element it is invoked upon.")
+[Element/insertAdjacentElement](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement 'The insertAdjacentElement() method of the Element interface inserts a given element node at a given position relative to the element it is invoked upon.')
 
 In all current engines.
 
@@ -7614,7 +7612,7 @@ Firefox for Android48+iOS Safari1+Chrome for Android18+Android WebView1+Samsung 
 
 The `insertAdjacentElement(where, element)` method steps are to return the result of running [insert adjacent](https://dom.spec.whatwg.org/#insert-adjacent), give [this](https://webidl.spec.whatwg.org/#this), where, and element.
 
-[Element/insertAdjacentText](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText "The insertAdjacentText() method of the Element interface inserts a given text node at a given position relative to the element it is invoked upon.")
+[Element/insertAdjacentText](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentText 'The insertAdjacentText() method of the Element interface inserts a given text node at a given position relative to the element it is invoked upon.')
 
 In all current engines.
 
@@ -7641,7 +7639,7 @@ This method returns nothing because it existed before we had a chance to design 
 
 #### 4.9.1. Interface `[NamedNodeMap](https://dom.spec.whatwg.org/#namednodemap)`[](https://dom.spec.whatwg.org/#interface-namednodemap)
 
-[NamedNodeMap](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap "The NamedNodeMap interface represents a collection of Attr objects. Objects inside a NamedNodeMap are not in any particular order, unlike NodeList, although they may be accessed by an index as in an array.")
+[NamedNodeMap](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap 'The NamedNodeMap interface represents a collection of Attr objects. Objects inside a NamedNodeMap are not in any particular order, unlike NodeList, although they may be accessed by an index as in an array.')
 
 In all current engines.
 
@@ -7697,7 +7695,7 @@ A `[NamedNodeMap](https://dom.spec.whatwg.org/#namednodemap)` object’s [suppor
 
 3.  Return names.
 
-[NamedNodeMap/getNamedItem](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap/getNamedItem "The getNamedItem() method of the NamedNodeMap interface returns the Attr corresponding to the given name, or null if there is no corresponding attribute.")
+[NamedNodeMap/getNamedItem](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap/getNamedItem 'The getNamedItem() method of the NamedNodeMap interface returns the Attr corresponding to the given name, or null if there is no corresponding attribute.')
 
 In all current engines.
 
@@ -7782,7 +7780,7 @@ An `A` attribute is an [attribute](https://dom.spec.whatwg.org/#concept-attribut
 
 ---
 
-[Attr/namespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Attr/namespaceURI "The Attr.namespaceURI read-only property returns the namespace URI of the attribute, or null if the element is not in a namespace.")
+[Attr/namespaceURI](https://developer.mozilla.org/en-US/docs/Web/API/Attr/namespaceURI 'The Attr.namespaceURI read-only property returns the namespace URI of the attribute, or null if the element is not in a namespace.')
 
 In all current engines.
 
@@ -7802,7 +7800,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `namespaceURI` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [namespace](https://dom.spec.whatwg.org/#concept-attribute-namespace).
 
-[Attr/prefix](https://developer.mozilla.org/en-US/docs/Web/API/Attr/prefix "The Attr.prefix read-only property returns the namespace prefix of the specified attribute, or null if no prefix is specified.")
+[Attr/prefix](https://developer.mozilla.org/en-US/docs/Web/API/Attr/prefix 'The Attr.prefix read-only property returns the namespace prefix of the specified attribute, or null if no prefix is specified.')
 
 In all current engines.
 
@@ -7822,7 +7820,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `prefix` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [namespace prefix](https://dom.spec.whatwg.org/#concept-attribute-namespace-prefix).
 
-[Attr/localName](https://developer.mozilla.org/en-US/docs/Web/API/Attr/localName "The Attr.localName read-only property returns the local part of the qualified name of an attribute.")
+[Attr/localName](https://developer.mozilla.org/en-US/docs/Web/API/Attr/localName 'The Attr.localName read-only property returns the local part of the qualified name of an attribute.')
 
 In all current engines.
 
@@ -7940,7 +7938,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `data` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [data](https://dom.spec.whatwg.org/#concept-cd-data). Its setter must [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node [this](https://webidl.spec.whatwg.org/#this), offset 0, count [this](https://webidl.spec.whatwg.org/#this)’s [length](https://dom.spec.whatwg.org/#concept-node-length), and data new value.
 
-[CharacterData/length](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/length "The read-only CharacterData.length property returns the number of characters in the contained data, as a positive integer.")
+[CharacterData/length](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/length 'The read-only CharacterData.length property returns the number of characters in the contained data, as a positive integer.')
 
 In all current engines.
 
@@ -7960,7 +7958,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `length` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [length](https://dom.spec.whatwg.org/#concept-node-length).
 
-[CharacterData/substringData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/substringData "The substringData() method of the CharacterData interface returns a portion of the existing data, starting at the specified index and extending for a given number of characters afterwards.")
+[CharacterData/substringData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/substringData 'The substringData() method of the CharacterData interface returns a portion of the existing data, starting at the specified index and extending for a given number of characters afterwards.')
 
 In all current engines.
 
@@ -8020,7 +8018,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `insertData(offset, data)` method steps are to [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node [this](https://webidl.spec.whatwg.org/#this), offset offset, count 0, and data data.
 
-[CharacterData/deleteData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/deleteData "The deleteData() method of the CharacterData interface removes all or part of the data from this CharacterData node.")
+[CharacterData/deleteData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/deleteData 'The deleteData() method of the CharacterData interface removes all or part of the data from this CharacterData node.')
 
 In all current engines.
 
@@ -8040,7 +8038,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `deleteData(offset, count)` method steps are to [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node [this](https://webidl.spec.whatwg.org/#this), offset offset, count count, and data the empty string.
 
-[CharacterData/replaceData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/replaceData "The replaceData() of the CharacterData interface replace a part of the data inside the node with the string given in paramater.")
+[CharacterData/replaceData](https://developer.mozilla.org/en-US/docs/Web/API/CharacterData/replaceData 'The replaceData() of the CharacterData interface replace a part of the data inside the node with the string given in paramater.')
 
 In all current engines.
 
@@ -8062,7 +8060,7 @@ The `replaceData(offset, count, data)` method steps are to [replace data](https:
 
 ### 4.11. Interface `[Text](https://dom.spec.whatwg.org/#text)`[](https://dom.spec.whatwg.org/#interface-text)
 
-[Text](https://developer.mozilla.org/en-US/docs/Web/API/Text "The Text interface represents a text node in a DOM tree.")
+[Text](https://developer.mozilla.org/en-US/docs/Web/API/Text 'The Text interface represents a text node in a DOM tree.')
 
 In all current engines.
 
@@ -8088,7 +8086,7 @@ interface `Text` : [CharacterData](https://dom.spec.whatwg.org/#characterdata) {
 readonly attribute [DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) [wholeText](https://dom.spec.whatwg.org/#dom-text-wholetext);
 };
 
-[Text/Text](https://developer.mozilla.org/en-US/docs/Web/API/Text/Text "The Text() constructor returns a new Text object with the optional string given in parameter as its textual content.")
+[Text/Text](https://developer.mozilla.org/en-US/docs/Web/API/Text/Text 'The Text() constructor returns a new Text object with the optional string given in parameter as its textual content.')
 
 In all current engines.
 
@@ -8110,7 +8108,7 @@ Firefox for Android24+iOS Safari8+Chrome for Android28+Android WebView37+Samsung
 
 Returns a new `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node) whose [data](https://dom.spec.whatwg.org/#concept-cd-data) is data.
 
-[Text/splitText](https://developer.mozilla.org/en-US/docs/Web/API/Text/splitText "The splitText() method of the Text interface breaks the Text node into two nodes at the specified offset, keeping both nodes in the tree as siblings.")
+[Text/splitText](https://developer.mozilla.org/en-US/docs/Web/API/Text/splitText 'The splitText() method of the Text interface breaks the Text node into two nodes at the specified offset, keeping both nodes in the tree as siblings.')
 
 In all current engines.
 
@@ -8132,7 +8130,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 Splits [data](https://dom.spec.whatwg.org/#concept-cd-data) at the given offset and returns the remainder as `[Text](https://dom.spec.whatwg.org/#text)` [node](https://dom.spec.whatwg.org/#concept-node).
 
-[Text/wholeText](https://developer.mozilla.org/en-US/docs/Web/API/Text/wholeText "The read-only wholeText property of the Text interface returns the full text of all Text nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.")
+[Text/wholeText](https://developer.mozilla.org/en-US/docs/Web/API/Text/wholeText 'The read-only wholeText property of the Text interface returns the full text of all Text nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.')
 
 In all current engines.
 
@@ -8244,7 +8242,7 @@ readonly attribute [DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) [t
 
 `[ProcessingInstruction](https://dom.spec.whatwg.org/#processinginstruction)` [nodes](https://dom.spec.whatwg.org/#concept-node) have an associated target.
 
-[ProcessingInstruction/target](https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction/target "The read-only target property of the ProcessingInstruction interface represent the application to which the ProcessingInstruction is targeted.")
+[ProcessingInstruction/target](https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction/target 'The read-only target property of the ProcessingInstruction interface represent the application to which the ProcessingInstruction is targeted.')
 
 In all current engines.
 
@@ -8264,7 +8262,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `target` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [target](https://dom.spec.whatwg.org/#concept-pi-target).
 
-[Comment](https://developer.mozilla.org/en-US/docs/Web/API/Comment "The Comment interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view.")
+[Comment](https://developer.mozilla.org/en-US/docs/Web/API/Comment 'The Comment interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view.')
 
 In all current engines.
 
@@ -8287,7 +8285,7 @@ interface : [CharacterData](https://dom.spec.whatwg.org/#characterdata) {
 [constructor](https://dom.spec.whatwg.org/#dom-comment-comment)(optional [DOMString](https://webidl.spec.whatwg.org/#idl-DOMString) = "");
 };
 
-[Comment/Comment](https://developer.mozilla.org/en-US/docs/Web/API/Comment/Comment "The Comment() constructor returns a newly created Comment object with the optional string given in parameter as its textual content.")
+[Comment/Comment](https://developer.mozilla.org/en-US/docs/Web/API/Comment/Comment 'The Comment() constructor returns a newly created Comment object with the optional string given in parameter as its textual content.')
 
 In all current engines.
 
@@ -8319,12 +8317,12 @@ The constructor steps are to set [this](https://webidl.spec.whatwg.org/#this)’
 
 [Ranges](https://dom.spec.whatwg.org/#concept-range) are frequently used in editing for selecting and copying content.
 
-- `[Element](https://dom.spec.whatwg.org/#element)`: `p`
-  - `[Element](https://dom.spec.whatwg.org/#element)`: `<img src="insanity-wolf" alt="Little-endian BOM; decode as big-endian!">`
-  - `[Text](https://dom.spec.whatwg.org/#text)`: CSS 2.1 syndata is
-  - `[Element](https://dom.spec.whatwg.org/#element)`: `<em>`
-    - `[Text](https://dom.spec.whatwg.org/#text)`: awesome
-  - `[Text](https://dom.spec.whatwg.org/#text)`: !
+-   `[Element](https://dom.spec.whatwg.org/#element)`: `p`
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `<img src="insanity-wolf" alt="Little-endian BOM; decode as big-endian!">`
+    -   `[Text](https://dom.spec.whatwg.org/#text)`: CSS 2.1 syndata is
+    -   `[Element](https://dom.spec.whatwg.org/#element)`: `<em>`
+        -   `[Text](https://dom.spec.whatwg.org/#text)`: awesome
+    -   `[Text](https://dom.spec.whatwg.org/#text)`: !
 
 In the [node tree](https://dom.spec.whatwg.org/#concept-node-tree) above, a [range](https://dom.spec.whatwg.org/#concept-range) can be used to represent the sequence “syndata is awes”. Assuming p is assigned to the `p` [element](https://dom.spec.whatwg.org/#concept-element), and em to the `em` [element](https://dom.spec.whatwg.org/#concept-element), this would be done as follows:
 
@@ -8368,7 +8366,7 @@ The position of a [boundary point](https://dom.spec.whatwg.org/#concept-range-bp
 
 ### 5.3. Interface `[AbstractRange](https://dom.spec.whatwg.org/#abstractrange)`[](https://dom.spec.whatwg.org/#interface-abstractrange)
 
-[AbstractRange](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange "The AbstractRange abstract interface is the base class upon which all DOM range types are defined. A range is an object that indicates the start and end points of a section of content within the document.")
+[AbstractRange](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange 'The AbstractRange abstract interface is the base class upon which all DOM range types are defined. A range is an object that indicates the start and end points of a section of content within the document.')
 
 In all current engines.
 
@@ -8403,7 +8401,7 @@ For convenience, a [range](https://dom.spec.whatwg.org/#concept-range)’s start
 
 A [range](https://dom.spec.whatwg.org/#concept-range) is collapsed if its [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is its [end node](https://dom.spec.whatwg.org/#concept-range-end-node) and its [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset) is its [end offset](https://dom.spec.whatwg.org/#concept-range-end-offset).
 
-[AbstractRange/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange/startContainer "The read-only startContainer property of the AbstractRange interface returns the start Node for the range.")
+[AbstractRange/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange/startContainer 'The read-only startContainer property of the AbstractRange interface returns the start Node for the range.')
 
 In all current engines.
 
@@ -8421,7 +8419,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for AndroidNoneiOS Safari14.5+Chrome for Android90+Android WebView90+Samsung Internet15.0+Opera Mobile64+
 
-[Range/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/startContainer "The Range.startContainer read-only property returns the Node within which the Range starts. To change the start position of a node, use one of the Range.setStart() methods.")
+[Range/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/startContainer 'The Range.startContainer read-only property returns the Node within which the Range starts. To change the start position of a node, use one of the Range.setStart() methods.')
 
 In all current engines.
 
@@ -8439,7 +8437,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[StaticRange/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/startContainer "The read-only startContainer property of the StaticRange interface returns the start Node for the range.")
+[StaticRange/startContainer](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/startContainer 'The read-only startContainer property of the StaticRange interface returns the start Node for the range.')
 
 In all current engines.
 
@@ -8479,7 +8477,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for AndroidNoneiOS Safari14.5+Chrome for Android90+Android WebView90+Samsung Internet15.0+Opera Mobile64+
 
-[Range/startOffset](https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset "The Range.startOffset read-only property returns a number representing where in the startContainer the Range starts.")
+[Range/startOffset](https://developer.mozilla.org/en-US/docs/Web/API/Range/startOffset 'The Range.startOffset read-only property returns a number representing where in the startContainer the Range starts.')
 
 In all current engines.
 
@@ -8519,7 +8517,7 @@ Firefox for AndroidNoneiOS Safari10.3+Chrome for Android60+Android WebView60+Sam
 
 Returns range’s [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset).
 
-[AbstractRange/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange/endContainer "The endContainer property of the AbstractRange interface returns the Node in which the end of the range is located.")
+[AbstractRange/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/AbstractRange/endContainer 'The endContainer property of the AbstractRange interface returns the Node in which the end of the range is located.')
 
 In all current engines.
 
@@ -8537,7 +8535,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for AndroidNoneiOS Safari14.5+Chrome for Android90+Android WebView90+Samsung Internet15.0+Opera Mobile64+
 
-[Range/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/endContainer "The Range.endContainer read-only property returns the Node within which the Range ends. To change the end position of a node, use the Range.setEnd() method or a similar one.")
+[Range/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/endContainer 'The Range.endContainer read-only property returns the Node within which the Range ends. To change the end position of a node, use the Range.setEnd() method or a similar one.')
 
 In all current engines.
 
@@ -8555,7 +8553,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[StaticRange/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/endContainer "The endContainer property of the StaticRange interface returns the end Node for the range.")
+[StaticRange/endContainer](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/endContainer 'The endContainer property of the StaticRange interface returns the end Node for the range.')
 
 In all current engines.
 
@@ -8595,7 +8593,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for AndroidNoneiOS Safari14.5+Chrome for Android90+Android WebView90+Samsung Internet15.0+Opera Mobile64+
 
-[Range/endOffset](https://developer.mozilla.org/en-US/docs/Web/API/Range/endOffset "The Range.endOffset read-only property returns a number representing where in the Range.endContainer the Range ends.")
+[Range/endOffset](https://developer.mozilla.org/en-US/docs/Web/API/Range/endOffset 'The Range.endOffset read-only property returns a number representing where in the Range.endContainer the Range ends.')
 
 In all current engines.
 
@@ -8653,7 +8651,7 @@ Edge (Legacy)NoneIENone
 
 Firefox for AndroidNoneiOS Safari14.5+Chrome for Android90+Android WebView90+Samsung Internet15.0+Opera Mobile64+
 
-[Range/collapsed](https://developer.mozilla.org/en-US/docs/Web/API/Range/collapsed "The Range.collapsed read-only property returns a boolean flag indicating whether the start and end points of the Range are at the same position. It returns true if the start and end boundary points of the Range are the same point in the DOM, false if not.")
+[Range/collapsed](https://developer.mozilla.org/en-US/docs/Web/API/Range/collapsed 'The Range.collapsed read-only property returns a boolean flag indicating whether the start and end points of the Range are at the same position. It returns true if the start and end boundary points of the Range are the same point in the DOM, false if not.')
 
 In all current engines.
 
@@ -8735,7 +8733,7 @@ interface `StaticRange` : [AbstractRange](https://dom.spec.whatwg.org/#abstractr
 [constructor](https://dom.spec.whatwg.org/#dom-staticrange-staticrange)([StaticRangeInit](https://dom.spec.whatwg.org/#dictdef-staticrangeinit) `init`[](https://dom.spec.whatwg.org/#dom-staticrange-staticrange-init-init));
 };
 
-[StaticRange/StaticRange](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/StaticRange "The StaticRange() constructor creates a new StaticRange object representing a span of content within the DOM.")
+[StaticRange/StaticRange](https://developer.mozilla.org/en-US/docs/Web/API/StaticRange/StaticRange 'The StaticRange() constructor creates a new StaticRange object representing a span of content within the DOM.')
 
 In all current engines.
 
@@ -8764,14 +8762,14 @@ The `new StaticRange(init)` constructor steps are:
 
 A `[StaticRange](https://dom.spec.whatwg.org/#staticrange)` is valid[](https://dom.spec.whatwg.org/#staticrange-valid) if all of the following are true:
 
-- Its [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) are in the same [node tree](https://dom.spec.whatwg.org/#concept-node-tree).
-- Its [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset) is between 0 and its [start node](https://dom.spec.whatwg.org/#concept-range-start-node)’s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
-- Its [end offset](https://dom.spec.whatwg.org/#concept-range-end-offset) is between 0 and its [end node](https://dom.spec.whatwg.org/#concept-range-end-node)’s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
-- Its [start](https://dom.spec.whatwg.org/#concept-range-start) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) or [equal](https://dom.spec.whatwg.org/#concept-range-bp-equal) to its [end](https://dom.spec.whatwg.org/#concept-range-end).
+-   Its [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) are in the same [node tree](https://dom.spec.whatwg.org/#concept-node-tree).
+-   Its [start offset](https://dom.spec.whatwg.org/#concept-range-start-offset) is between 0 and its [start node](https://dom.spec.whatwg.org/#concept-range-start-node)’s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
+-   Its [end offset](https://dom.spec.whatwg.org/#concept-range-end-offset) is between 0 and its [end node](https://dom.spec.whatwg.org/#concept-range-end-node)’s [length](https://dom.spec.whatwg.org/#concept-node-length), inclusive.
+-   Its [start](https://dom.spec.whatwg.org/#concept-range-start) is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) or [equal](https://dom.spec.whatwg.org/#concept-range-bp-equal) to its [end](https://dom.spec.whatwg.org/#concept-range-end).
 
 ### 5.5. Interface `[Range](https://dom.spec.whatwg.org/#range)`[](https://dom.spec.whatwg.org/#interface-range)
 
-[Range](https://developer.mozilla.org/en-US/docs/Web/API/Range "The Range interface represents a fragment of a document that can contain nodes and parts of text nodes.")
+[Range](https://developer.mozilla.org/en-US/docs/Web/API/Range 'The Range interface represents a fragment of a document that can contain nodes and parts of text nodes.')
 
 In all current engines.
 
@@ -8840,19 +8838,19 @@ A [node](https://dom.spec.whatwg.org/#concept-node) is partially contained in a 
 
 Some facts to better understand these definitions:
 
-- The content that one would think of as being within the [live range](https://dom.spec.whatwg.org/#concept-live-range) consists of all [contained](https://dom.spec.whatwg.org/#contained) [nodes](https://dom.spec.whatwg.org/#concept-node), plus possibly some of the contents of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) if those are `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [nodes](https://dom.spec.whatwg.org/#concept-node).
-- The [nodes](https://dom.spec.whatwg.org/#concept-node) that are contained in a [live range](https://dom.spec.whatwg.org/#concept-live-range) will generally not be contiguous, because the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will not always be [contained](https://dom.spec.whatwg.org/#contained).
-- However, the [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) are [contained](https://dom.spec.whatwg.org/#contained), and if two [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) are [contained](https://dom.spec.whatwg.org/#contained), so are any [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) that lie between them.
-- The [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) of a [live range](https://dom.spec.whatwg.org/#concept-live-range) are never [contained](https://dom.spec.whatwg.org/#contained) within it.
-- The first [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) (if there are any) will always be after the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), and the last [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will always be equal to or before the [end node](https://dom.spec.whatwg.org/#concept-range-end-node)’s last [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant).
-- There exists a [partially contained](https://dom.spec.whatwg.org/#partially-contained) [node](https://dom.spec.whatwg.org/#concept-node) if and only if the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) are different.
-- The `[commonAncestorContainer](https://dom.spec.whatwg.org/#dom-range-commonancestorcontainer)` attribute value is neither [contained](https://dom.spec.whatwg.org/#contained) nor [partially contained](https://dom.spec.whatwg.org/#partially-contained).
-- If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be the [start node](https://dom.spec.whatwg.org/#concept-range-start-node). Exactly one of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be [contained](https://dom.spec.whatwg.org/#contained) if and only if it [precedes](https://dom.spec.whatwg.org/#concept-tree-preceding) the [partially contained](https://dom.spec.whatwg.org/#partially-contained) [child](https://dom.spec.whatwg.org/#concept-tree-child). If the [end node](https://dom.spec.whatwg.org/#concept-range-end-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), the opposite holds.
-- If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), nor vice versa, the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be distinct from both of them. Exactly two of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be contained if and only if it lies between those two.
+-   The content that one would think of as being within the [live range](https://dom.spec.whatwg.org/#concept-live-range) consists of all [contained](https://dom.spec.whatwg.org/#contained) [nodes](https://dom.spec.whatwg.org/#concept-node), plus possibly some of the contents of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) if those are `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [nodes](https://dom.spec.whatwg.org/#concept-node).
+-   The [nodes](https://dom.spec.whatwg.org/#concept-node) that are contained in a [live range](https://dom.spec.whatwg.org/#concept-live-range) will generally not be contiguous, because the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will not always be [contained](https://dom.spec.whatwg.org/#contained).
+-   However, the [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) of a [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) are [contained](https://dom.spec.whatwg.org/#contained), and if two [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) are [contained](https://dom.spec.whatwg.org/#contained), so are any [siblings](https://dom.spec.whatwg.org/#concept-tree-sibling) that lie between them.
+-   The [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) of a [live range](https://dom.spec.whatwg.org/#concept-live-range) are never [contained](https://dom.spec.whatwg.org/#contained) within it.
+-   The first [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) (if there are any) will always be after the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), and the last [contained](https://dom.spec.whatwg.org/#contained) [node](https://dom.spec.whatwg.org/#concept-node) will always be equal to or before the [end node](https://dom.spec.whatwg.org/#concept-range-end-node)’s last [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant).
+-   There exists a [partially contained](https://dom.spec.whatwg.org/#partially-contained) [node](https://dom.spec.whatwg.org/#concept-node) if and only if the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) and [end node](https://dom.spec.whatwg.org/#concept-range-end-node) are different.
+-   The `[commonAncestorContainer](https://dom.spec.whatwg.org/#dom-range-commonancestorcontainer)` attribute value is neither [contained](https://dom.spec.whatwg.org/#contained) nor [partially contained](https://dom.spec.whatwg.org/#partially-contained).
+-   If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be the [start node](https://dom.spec.whatwg.org/#concept-range-start-node). Exactly one of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be [contained](https://dom.spec.whatwg.org/#contained) if and only if it [precedes](https://dom.spec.whatwg.org/#concept-tree-preceding) the [partially contained](https://dom.spec.whatwg.org/#partially-contained) [child](https://dom.spec.whatwg.org/#concept-tree-child). If the [end node](https://dom.spec.whatwg.org/#concept-range-end-node) is an [ancestor](https://dom.spec.whatwg.org/#concept-tree-ancestor) of the [start node](https://dom.spec.whatwg.org/#concept-range-start-node), the opposite holds.
+-   If the [start node](https://dom.spec.whatwg.org/#concept-range-start-node) is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of the [end node](https://dom.spec.whatwg.org/#concept-range-end-node), nor vice versa, the common [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) will be distinct from both of them. Exactly two of its [children](https://dom.spec.whatwg.org/#concept-tree-child) will be [partially contained](https://dom.spec.whatwg.org/#partially-contained), and a [child](https://dom.spec.whatwg.org/#concept-tree-child) will be contained if and only if it lies between those two.
 
 ---
 
-[Range/Range](https://developer.mozilla.org/en-US/docs/Web/API/Range/Range "The Range() constructor returns a newly created Range object whose start and end is the global Document object.")
+[Range/Range](https://developer.mozilla.org/en-US/docs/Web/API/Range/Range 'The Range() constructor returns a newly created Range object whose start and end is the global Document object.')
 
 In all current engines.
 
@@ -8878,7 +8876,7 @@ The `new Range()` constructor steps are to set [this](https://webidl.spec.whatwg
 
 ---
 
-[Range/commonAncestorContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/commonAncestorContainer "The Range.commonAncestorContainer read-only property returns the deepest — or furthest down the document tree — Node that contains both boundary points of the Range. This means that if Range.startContainer and Range.endContainer both refer to the same node, this node is the common ancestor container.")
+[Range/commonAncestorContainer](https://developer.mozilla.org/en-US/docs/Web/API/Range/commonAncestorContainer 'The Range.commonAncestorContainer read-only property returns the deepest — or furthest down the document tree — Node that contains both boundary points of the Range. This means that if Range.startContainer and Range.endContainer both refer to the same node, this node is the common ancestor container.')
 
 In all current engines.
 
@@ -8923,7 +8921,7 @@ To set the start or end of a range to a [boundary point](https://dom.spec.whatwg
     1.  If range’s [root](https://dom.spec.whatwg.org/#concept-range-root) is not equal to node’s [root](https://dom.spec.whatwg.org/#concept-tree-root), or if bp is [before](https://dom.spec.whatwg.org/#concept-range-bp-before) the range’s [start](https://dom.spec.whatwg.org/#concept-range-start), set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) to bp.
     2.  Set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to bp.
 
-[Range/setStart](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart "The Range.setStart() method sets the start position of a Range.")
+[Range/setStart](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart 'The Range.setStart() method sets the start position of a Range.')
 
 In all current engines.
 
@@ -8943,7 +8941,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `setStart(node, offset)` method steps are to [set the start](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, offset).
 
-[Range/setEnd](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEnd "The Range.setEnd() method sets the end position of a Range to be located at the given offset into the specified node x.Setting the end point above (higher in the document) than the start point will result in a collapsed range with the start and end points both set to the specified end position.")
+[Range/setEnd](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEnd 'The Range.setEnd() method sets the end position of a Range to be located at the given offset into the specified node x.Setting the end point above (higher in the document) than the start point will result in a collapsed range with the start and end points both set to the specified end position.')
 
 In all current engines.
 
@@ -8963,7 +8961,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `setEnd(node, offset)` method steps are to [set the end](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (node, offset).
 
-[Range/setStartBefore](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStartBefore "The Range.setStartBefore() method sets the start position of a Range relative to another Node. The parent Node of the start of the Range will be the same as that for the referenceNode.")
+[Range/setStartBefore](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStartBefore 'The Range.setStartBefore() method sets the start position of a Range relative to another Node. The parent Node of the start of the Range will be the same as that for the referenceNode.')
 
 In all current engines.
 
@@ -8987,7 +8985,7 @@ The `setStartBefore(node)` method steps are:
 2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the start](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index)).
 
-[Range/setStartAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStartAfter "The Range.setStartAfter() method sets the start position of a Range relative to a Node. The parent Node of the start of the Range will be the same as that for the referenceNode.")
+[Range/setStartAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setStartAfter 'The Range.setStartAfter() method sets the start position of a Range relative to a Node. The parent Node of the start of the Range will be the same as that for the referenceNode.')
 
 In all current engines.
 
@@ -9011,7 +9009,7 @@ The `setStartAfter(node)` method steps are:
 2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the start](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index) plus 1).
 
-[Range/setEndBefore](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndBefore "The Range.setEndBefore() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.")
+[Range/setEndBefore](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndBefore 'The Range.setEndBefore() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.')
 
 In all current engines.
 
@@ -9035,7 +9033,7 @@ The `setEndBefore(node)` method steps are:
 2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the end](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index)).
 
-[Range/setEndAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndAfter "The Range.setEndAfter() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.")
+[Range/setEndAfter](https://developer.mozilla.org/en-US/docs/Web/API/Range/setEndAfter 'The Range.setEndAfter() method sets the end position of a Range relative to another Node. The parent Node of end of the Range will be the same as that for the referenceNode.')
 
 In all current engines.
 
@@ -9059,7 +9057,7 @@ The `setEndAfter(node)` method steps are:
 2.  If parent is null, then [throw](https://webidl.spec.whatwg.org/#dfn-throw) an "`[InvalidNodeTypeError](https://webidl.spec.whatwg.org/#invalidnodetypeerror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 3.  [Set the end](https://dom.spec.whatwg.org/#concept-range-bp-set) of [this](https://webidl.spec.whatwg.org/#this) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, node’s [index](https://dom.spec.whatwg.org/#concept-tree-index) plus 1).
 
-[Range/collapse](https://developer.mozilla.org/en-US/docs/Web/API/Range/collapse "The Range.collapse() method collapses the Range to one of its boundary points.")
+[Range/collapse](https://developer.mozilla.org/en-US/docs/Web/API/Range/collapse 'The Range.collapse() method collapses the Range to one of its boundary points.')
 
 In all current engines.
 
@@ -9087,7 +9085,7 @@ To select a [node](https://dom.spec.whatwg.org/#concept-node) node within a [ran
 4.  Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, index).
 5.  Set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to [boundary point](https://dom.spec.whatwg.org/#concept-range-bp) (parent, index plus 1).
 
-[Range/selectNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/selectNode "The Range.selectNode() method sets the Range to contain the Node and its contents. The parent Node of the start and end of the Range will be the same as the parent of the referenceNode.")
+[Range/selectNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/selectNode 'The Range.selectNode() method sets the Range to contain the Node and its contents. The parent Node of the start and end of the Range will be the same as the parent of the referenceNode.')
 
 In all current engines.
 
@@ -9107,7 +9105,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `selectNode(node)` method steps are to [select](https://dom.spec.whatwg.org/#concept-range-select) node within [this](https://webidl.spec.whatwg.org/#this).
 
-[Range/selectNodeContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/selectNodeContents "The Range.selectNodeContents() method sets the Range to contain the contents of a Node.")
+[Range/selectNodeContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/selectNodeContents 'The Range.selectNodeContents() method sets the Range to contain the contents of a Node.')
 
 In all current engines.
 
@@ -9134,7 +9132,7 @@ The `selectNodeContents(node)` method steps are:
 
 ---
 
-[Range/compareBoundaryPoints](https://developer.mozilla.org/en-US/docs/Web/API/Range/compareBoundaryPoints "The Range.compareBoundaryPoints() method compares the boundary points of the Range with those of another range.")
+[Range/compareBoundaryPoints](https://developer.mozilla.org/en-US/docs/Web/API/Range/compareBoundaryPoints 'The Range.compareBoundaryPoints() method compares the boundary points of the Range with those of another range.')
 
 In all current engines.
 
@@ -9156,10 +9154,10 @@ The `compareBoundaryPoints(how, sourceRange)` method steps are:
 
 1.  If how is not one of
 
-    - `[START_TO_START](https://dom.spec.whatwg.org/#dom-range-start_to_start)`,
-    - `[START_TO_END](https://dom.spec.whatwg.org/#dom-range-start_to_end)`,
-    - `[END_TO_END](https://dom.spec.whatwg.org/#dom-range-end_to_end)`, and
-    - `[END_TO_START](https://dom.spec.whatwg.org/#dom-range-end_to_start)`,
+    -   `[START_TO_START](https://dom.spec.whatwg.org/#dom-range-start_to_start)`,
+    -   `[START_TO_END](https://dom.spec.whatwg.org/#dom-range-start_to_end)`,
+    -   `[END_TO_END](https://dom.spec.whatwg.org/#dom-range-end_to_end)`, and
+    -   `[END_TO_START](https://dom.spec.whatwg.org/#dom-range-end_to_start)`,
 
     then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[NotSupportedError](https://webidl.spec.whatwg.org/#notsupportederror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
@@ -9196,7 +9194,7 @@ The `compareBoundaryPoints(how, sourceRange)` method steps are:
 
     Return 1.
 
-[Range/deleteContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/deleteContents "The Range.deleteContents() method removes the contents of the Range from the Document.")
+[Range/deleteContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/deleteContents 'The Range.deleteContents() method removes the contents of the Range from the Document.')
 
 In all current engines.
 
@@ -9222,11 +9220,13 @@ The `deleteContents()` method steps are:
 4.  Let nodes to remove be a list of all the [nodes](https://dom.spec.whatwg.org/#concept-node) that are [contained](https://dom.spec.whatwg.org/#contained) in [this](https://webidl.spec.whatwg.org/#this), in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), omitting any [node](https://dom.spec.whatwg.org/#concept-node) whose [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is also [contained](https://dom.spec.whatwg.org/#contained) in [this](https://webidl.spec.whatwg.org/#this).
 5.  If original start node is an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, set new node to original start node and new offset to original start offset.
 6.  Otherwise:
+
     1.  Let reference node equal original start node.
     2.  While reference node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) is not null and is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, set reference node to its [parent](https://dom.spec.whatwg.org/#concept-tree-parent).
     3.  Set new node to the [parent](https://dom.spec.whatwg.org/#concept-tree-parent) of reference node, and new offset to one plus the [index](https://dom.spec.whatwg.org/#concept-tree-index) of reference node.
 
         If reference node’s [parent](https://dom.spec.whatwg.org/#concept-tree-parent) were null, it would be the [root](https://dom.spec.whatwg.org/#concept-range-root) of [this](https://webidl.spec.whatwg.org/#this), so would be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, and we could not reach this point.
+
 7.  If original start node is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original start node, offset original start offset, count original start node’s [length](https://dom.spec.whatwg.org/#concept-node-length) minus original start offset, data the empty string.
 8.  For each node in nodes to remove, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order), [remove](https://dom.spec.whatwg.org/#concept-node-remove) node.
 9.  If original end node is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then [replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original end node, offset 0, count original end offset and data the empty string.
@@ -9252,12 +9252,10 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
 9.  Let last partially contained child be null.
 10. If original end node is _not_ an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original start node, set last partially contained child to the last [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range.
 
-
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
 12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
-
 
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
@@ -9271,7 +9269,6 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
 
 18. If first partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
-
     In this case, first partially contained child is original start node.
 
     1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of original start node.
@@ -9279,15 +9276,14 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
     4.  [Replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original start node, offset original start offset, count original start node’s [length](https://dom.spec.whatwg.org/#concept-node-length) minus original start offset, and data the empty string.
 
-16. Otherwise, if first partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
-1.  Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  For each contained child in contained children, [append](https://dom.spec.whatwg.org/#concept-node-append) contained child to fragment.
-1.  If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
+19. Otherwise, if first partially contained child is not null:
+20. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
+21. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+22. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
+23. Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
+24. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+25. For each contained child in contained children, [append](https://dom.spec.whatwg.org/#concept-node-append) contained child to fragment.
+26. If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
     In this case, last partially contained child is original end node.
 
@@ -9296,16 +9292,16 @@ To a [live range](https://dom.spec.whatwg.org/#concept-live-range) range, run th
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
     4.  [Replace data](https://dom.spec.whatwg.org/#concept-cd-replace) with node original end node, offset 0, count original end offset, and data the empty string.
 
-19. Otherwise, if last partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
-1.  Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (new node, new offset).
-1.  Return fragment.
+27. Otherwise, if last partially contained child is not null:
+28. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
+29. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+30. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
+31. Let subfragment be the result of [extracting](https://dom.spec.whatwg.org/#concept-range-extract) subrange.
+32. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+33. Set range’s [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) to (new node, new offset).
+34. Return fragment.
 
-[Range/extractContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents "The Range.extractContents() method moves contents of the Range from the document tree into a DocumentFragment.")
+[Range/extractContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents 'The Range.extractContents() method moves contents of the Range from the document tree into a DocumentFragment.')
 
 In all current engines.
 
@@ -9344,17 +9340,14 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
 9.  Let last partially contained child be null.
 10. If original end node is _not_ an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original start node, set last partially contained child to the last [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that is [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range.
 
-
     These variable assignments do actually always make sense. For instance, if original start node is not an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node, original start node is itself [partially contained](https://dom.spec.whatwg.org/#partially-contained) in range, and so are all its [ancestors](https://dom.spec.whatwg.org/#concept-tree-ancestor) up until a [child](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor. common ancestor cannot be original start node, because it has to be an [inclusive ancestor](https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor) of original end node. The other case is similar. Also, notice that the two [children](https://dom.spec.whatwg.org/#concept-tree-child) will never be equal if both are defined.
 
 11. Let contained children be a list of all [children](https://dom.spec.whatwg.org/#concept-tree-child) of common ancestor that are [contained](https://dom.spec.whatwg.org/#contained) in range, in [tree order](https://dom.spec.whatwg.org/#concept-tree-order).
 12. If any member of contained children is a [doctype](https://dom.spec.whatwg.org/#concept-doctype), then [throw](https://webidl.spec.whatwg.org/#dfn-throw) a "`[HierarchyRequestError](https://webidl.spec.whatwg.org/#hierarchyrequesterror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)`.
 
-
     We do not have to worry about the first or last partially contained node, because a [doctype](https://dom.spec.whatwg.org/#concept-doctype) can never be partially contained. It cannot be a boundary point of a range, and it cannot be the ancestor of anything.
 
 13. If first partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
 
     In this case, first partially contained child is original start node.
 
@@ -9363,16 +9356,15 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
 
 14. Otherwise, if first partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
-1.  Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  For each contained child in contained children:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of contained child with the _clone children flag_ set.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
-
+15. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of first partially contained child.
+16. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+17. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (original start node, original start offset) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (first partially contained child, first partially contained child’s [length](https://dom.spec.whatwg.org/#concept-node-length)).
+18. Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
+19. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+20. For each contained child in contained children:
+21. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of contained child with the _clone children flag_ set.
+22. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+23. If last partially contained child is a `[CharacterData](https://dom.spec.whatwg.org/#characterdata)` [node](https://dom.spec.whatwg.org/#concept-node), then:
 
     In this case, last partially contained child is original end node.
 
@@ -9380,15 +9372,15 @@ To clone the contents of a [live range](https://dom.spec.whatwg.org/#concept-liv
     2.  Set the [data](https://dom.spec.whatwg.org/#concept-cd-data) of clone to the result of [substringing data](https://dom.spec.whatwg.org/#concept-cd-substring) with node original end node, offset 0, and count original end offset.
     3.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
 
-17. Otherwise, if last partially contained child is not null:
-1.  Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
-1.  Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
-1.  Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
-1.  [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
-1.  Return fragment.
+24. Otherwise, if last partially contained child is not null:
+25. Let clone be a [clone](https://dom.spec.whatwg.org/#concept-node-clone) of last partially contained child.
+26. [Append](https://dom.spec.whatwg.org/#concept-node-append) clone to fragment.
+27. Let subrange be a new [live range](https://dom.spec.whatwg.org/#concept-live-range) whose [start](https://dom.spec.whatwg.org/#concept-range-start) is (last partially contained child, 0) and whose [end](https://dom.spec.whatwg.org/#concept-range-end) is (original end node, original end offset).
+28. Let subfragment be the result of [cloning the contents](https://dom.spec.whatwg.org/#concept-range-clone) of subrange.
+29. [Append](https://dom.spec.whatwg.org/#concept-node-append) subfragment to clone.
+30. Return fragment.
 
-[Range/cloneContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/cloneContents "The Range.cloneContents() returns a DocumentFragment copying the objects of type Node included in the Range.")
+[Range/cloneContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/cloneContents 'The Range.cloneContents() returns a DocumentFragment copying the objects of type Node included in the Range.')
 
 In all current engines.
 
@@ -9424,7 +9416,7 @@ To insert a [node](https://dom.spec.whatwg.org/#concept-node) node into a [live 
 12. [Pre-insert](https://dom.spec.whatwg.org/#concept-node-pre-insert) node into parent before referenceNode.
 13. If range is [collapsed](https://dom.spec.whatwg.org/#range-collapsed), then set range’s [end](https://dom.spec.whatwg.org/#concept-range-end) to (parent, newOffset).
 
-[Range/insertNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/insertNode "The Range.insertNode() method inserts a node at the start of the Range.")
+[Range/insertNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/insertNode 'The Range.insertNode() method inserts a node at the start of the Range.')
 
 In all current engines.
 
@@ -9444,7 +9436,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `insertNode(node)` method steps are to [insert](https://dom.spec.whatwg.org/#concept-range-insert) node into [this](https://webidl.spec.whatwg.org/#this).
 
-[Range/surroundContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/surroundContents "The Range.surroundContents() method moves content of the Range into a new node, placing the new node at the start of the specified range.")
+[Range/surroundContents](https://developer.mozilla.org/en-US/docs/Web/API/Range/surroundContents 'The Range.surroundContents() method moves content of the Range into a new node, placing the new node at the start of the specified range.')
 
 In all current engines.
 
@@ -9475,7 +9467,7 @@ The `surroundContents(newParent)` method steps are:
 6.  [Append](https://dom.spec.whatwg.org/#concept-node-append) fragment to newParent.
 7.  [Select](https://dom.spec.whatwg.org/#concept-range-select) newParent within [this](https://webidl.spec.whatwg.org/#this).
 
-[Range/cloneRange](https://developer.mozilla.org/en-US/docs/Web/API/Range/cloneRange "The Range.cloneRange() method returns a Range object with boundary points identical to the cloned Range.")
+[Range/cloneRange](https://developer.mozilla.org/en-US/docs/Web/API/Range/cloneRange 'The Range.cloneRange() method returns a Range object with boundary points identical to the cloned Range.')
 
 In all current engines.
 
@@ -9495,7 +9487,7 @@ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung I
 
 The `cloneRange()` method steps are to return a new [live range](https://dom.spec.whatwg.org/#concept-live-range) with the same [start](https://dom.spec.whatwg.org/#concept-range-start) and [end](https://dom.spec.whatwg.org/#concept-range-end) as [this](https://webidl.spec.whatwg.org/#this).
 
-[Range/detach](https://developer.mozilla.org/en-US/docs/Web/API/Range/detach "The Range.detach() method does nothing. It used to disable the Range object and enable the browser to release associated resources. The method has been kept for compatibility.")
+[Range/detach](https://developer.mozilla.org/en-US/docs/Web/API/Range/detach 'The Range.detach() method does nothing. It used to disable the Range object and enable the browser to release associated resources. The method has been kept for compatibility.')
 
 Firefox1–15Safari1+Chrome1+
 
@@ -9515,7 +9507,7 @@ The `detach()` method steps are to do nothing. Its functionality (disabling a `[
 
 ---
 
-[Range/comparePoint](https://developer.mozilla.org/en-US/docs/Web/API/Range/comparePoint "The Range.comparePoint() method returns -1, 0, or 1 depending on whether the referenceNode is before, the same as, or after the Range.")
+[Range/comparePoint](https://developer.mozilla.org/en-US/docs/Web/API/Range/comparePoint 'The Range.comparePoint() method returns -1, 0, or 1 depending on whether the referenceNode is before, the same as, or after the Range.')
 
 In all current engines.
 
@@ -9537,7 +9529,7 @@ position = range . `[comparePoint(node, offset)](https://dom.spec.whatwg.org/#do
 
 Returns −1 if the point is before the range, 0 if the point is in the range, and 1 if the point is after the range.
 
-[Range/intersectsNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/intersectsNode "The Range.intersectsNode() method returns a boolean indicating whether the given Node intersects the Range.")
+[Range/intersectsNode](https://developer.mozilla.org/en-US/docs/Web/API/Range/intersectsNode 'The Range.intersectsNode() method returns a boolean indicating whether the given Node intersects the Range.')
 
 In all current engines.
 
@@ -9559,7 +9551,7 @@ intersects = range . `[intersectsNode(node)](https://dom.spec.whatwg.org/#dom-ra
 
 Returns whether range intersects node.
 
-[Range/isPointInRange](https://developer.mozilla.org/en-US/docs/Web/API/Range/isPointInRange "The Range.isPointInRange() method returns a boolean indicating whether the given point is in the Range. It returns true if the point (cursor position) at offset within ReferenceNode is within this range.")
+[Range/isPointInRange](https://developer.mozilla.org/en-US/docs/Web/API/Range/isPointInRange 'The Range.isPointInRange() method returns a boolean indicating whether the given point is in the Range. It returns true if the point (cursor position) at offset within ReferenceNode is within this range.')
 
 In all current engines.
 
@@ -9607,7 +9599,7 @@ The `intersectsNode(node)` method steps are:
 
 ---
 
-[Range/toString](https://developer.mozilla.org/en-US/docs/Web/API/Range/toString "The Range.toString() method is a stringifier returning the text of the Range.")
+[Range/toString](https://developer.mozilla.org/en-US/docs/Web/API/Range/toString 'The Range.toString() method is a stringifier returning the text of the Range.')
 
 In all current engines.
 
@@ -9659,7 +9651,7 @@ To filter a [node](https://dom.spec.whatwg.org/#concept-node) node within a `[No
 
 ### 6.1. Interface `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)`[](https://dom.spec.whatwg.org/#interface-nodeiterator)
 
-[NodeIterator](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator "The NodeIterator interface represents an iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order.")
+[NodeIterator](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator 'The NodeIterator interface represents an iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order.')
 
 In all current engines.
 
@@ -9714,7 +9706,7 @@ The `NodeIterator` pre-removing steps given a nodeIterator and toBeRemovedNode, 
 
 ---
 
-[NodeIterator/root](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/root "The NodeIterator.root read-only property represents the Node that is the root of what the NodeIterator traverses.")
+[NodeIterator/root](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/root 'The NodeIterator.root read-only property represents the Node that is the root of what the NodeIterator traverses.')
 
 In all current engines.
 
@@ -9734,7 +9726,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `root` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-traversal-root).
 
-[NodeIterator/referenceNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/referenceNode "The NodeIterator.referenceNode read-only returns the Node to which the iterator is anchored; as new nodes are inserted, the iterator remains anchored to the reference node as specified by this property.")
+[NodeIterator/referenceNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/referenceNode 'The NodeIterator.referenceNode read-only returns the Node to which the iterator is anchored; as new nodes are inserted, the iterator remains anchored to the reference node as specified by this property.')
 
 In all current engines.
 
@@ -9754,7 +9746,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `referenceNode` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [reference](https://dom.spec.whatwg.org/#nodeiterator-reference).
 
-[NodeIterator/pointerBeforeReferenceNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/pointerBeforeReferenceNode "The NodeIterator.pointerBeforeReferenceNode read-only property returns a boolean flag that indicates whether the NodeFilter is anchored before (if this value is true) or after (if this value is false) the anchor node indicated by the NodeIterator.referenceNode property.")
+[NodeIterator/pointerBeforeReferenceNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/pointerBeforeReferenceNode 'The NodeIterator.pointerBeforeReferenceNode read-only property returns a boolean flag that indicates whether the NodeFilter is anchored before (if this value is true) or after (if this value is false) the anchor node indicated by the NodeIterator.referenceNode property.')
 
 In all current engines.
 
@@ -9774,7 +9766,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `pointerBeforeReferenceNode` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [pointer before reference](https://dom.spec.whatwg.org/#nodeiterator-pointer-before-reference).
 
-[NodeIterator/whatToShow](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/whatToShow "The NodeIterator.whatToShow read-only property represents an unsigned integer representing a bitmask signifying what types of nodes should be returned by the NodeIterator.")
+[NodeIterator/whatToShow](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/whatToShow 'The NodeIterator.whatToShow read-only property represents an unsigned integer representing a bitmask signifying what types of nodes should be returned by the NodeIterator.')
 
 In all current engines.
 
@@ -9794,7 +9786,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `whatToShow` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow).
 
-[NodeIterator/filter](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/filter "The NodeIterator.filter read-only method returns a NodeFilter object, that is an object implement an acceptNode(node) method, used to screen nodes.")
+[NodeIterator/filter](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/filter 'The NodeIterator.filter read-only method returns a NodeFilter object, that is an object implement an acceptNode(node) method, used to screen nodes.')
 
 In all current engines.
 
@@ -9841,7 +9833,7 @@ To traverse, given a `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)`
 5.  Set iterator’s [pointer before reference](https://dom.spec.whatwg.org/#nodeiterator-pointer-before-reference) to beforeNode.
 6.  Return node.
 
-[NodeIterator/nextNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/nextNode "The NodeIterator.nextNode() method returns the next node in the set represented by the NodeIterator and advances the position of the iterator within the set. The first call to nextNode() returns the first node in the set.")
+[NodeIterator/nextNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/nextNode 'The NodeIterator.nextNode() method returns the next node in the set represented by the NodeIterator and advances the position of the iterator within the set. The first call to nextNode() returns the first node in the set.')
 
 In all current engines.
 
@@ -9861,7 +9853,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung I
 
 The `nextNode()` method steps are to return the result of [traversing](https://dom.spec.whatwg.org/#concept-nodeiterator-traverse) with [this](https://webidl.spec.whatwg.org/#this) and next.
 
-[NodeIterator/previousNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/previousNode "The NodeIterator.previousNode() method returns the previous node in the set represented by the NodeIterator and moves the position of the iterator backwards within the set.")
+[NodeIterator/previousNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeIterator/previousNode 'The NodeIterator.previousNode() method returns the previous node in the set represented by the NodeIterator and moves the position of the iterator backwards within the set.')
 
 In all current engines.
 
@@ -9885,7 +9877,7 @@ The `detach()` method steps are to do nothing. Its functionality (disabling a `[
 
 ### 6.2. Interface `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)`[](https://dom.spec.whatwg.org/#interface-treewalker)
 
-[TreeWalker](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker "The TreeWalker object represents the nodes of a document subtree and a position within them.")
+[TreeWalker](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker 'The TreeWalker object represents the nodes of a document subtree and a position within them.')
 
 In all current engines.
 
@@ -9925,7 +9917,7 @@ Each `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)` object has an assoc
 
 As mentioned earlier `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)` objects have an associated [root](https://dom.spec.whatwg.org/#concept-traversal-root), [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow), and [filter](https://dom.spec.whatwg.org/#concept-traversal-filter) as well.
 
-[TreeWalker/root](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/root "The TreeWalker.root read-only property returns the node that is the root of what the TreeWalker traverses.")
+[TreeWalker/root](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/root 'The TreeWalker.root read-only property returns the node that is the root of what the TreeWalker traverses.')
 
 In all current engines.
 
@@ -9945,7 +9937,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView3+Samsung I
 
 The `root` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [root](https://dom.spec.whatwg.org/#concept-traversal-root).
 
-[TreeWalker/whatToShow](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/whatToShow "The TreeWalker.whatToShow read-only property returns an unsigned long being a bitmask made of constants describing the types of Node that must to be presented. Non-matching nodes are skipped, but their children may be included, if relevant. The possible values are:")
+[TreeWalker/whatToShow](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/whatToShow 'The TreeWalker.whatToShow read-only property returns an unsigned long being a bitmask made of constants describing the types of Node that must to be presented. Non-matching nodes are skipped, but their children may be included, if relevant. The possible values are:')
 
 In all current engines.
 
@@ -9965,7 +9957,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView3+Samsung I
 
 The `whatToShow` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow).
 
-[TreeWalker/filter](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/filter "The TreeWalker.filter read-only property returns a NodeFilter that is the filtering object associated with the TreeWalker.")
+[TreeWalker/filter](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/filter 'The TreeWalker.filter read-only property returns a NodeFilter that is the filtering object associated with the TreeWalker.')
 
 In all current engines.
 
@@ -9987,7 +9979,7 @@ The `filter` getter steps are to return [this](https://webidl.spec.whatwg.org/#t
 
 The `currentNode` getter steps are to return [this](https://webidl.spec.whatwg.org/#this)’s [current](https://dom.spec.whatwg.org/#treewalker-current).
 
-[TreeWalker/currentNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/currentNode "The TreeWalker.currentNode property represents the Node on which the TreeWalker is currently pointing at.")
+[TreeWalker/currentNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/currentNode 'The TreeWalker.currentNode property represents the Node on which the TreeWalker is currently pointing at.')
 
 In all current engines.
 
@@ -10060,7 +10052,7 @@ To traverse children, given a walker and type, run these steps:
 
 4.  Return null.
 
-[TreeWalker/firstChild](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/firstChild "The TreeWalker.firstChild() method moves the current Node to the first visible child of the current node, and returns the found child. It also moves the current node to this child. If no such child exists, returns null and the current node is not changed.")
+[TreeWalker/firstChild](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/firstChild 'The TreeWalker.firstChild() method moves the current Node to the first visible child of the current node, and returns the found child. It also moves the current node to this child. If no such child exists, returns null and the current node is not changed.')
 
 In all current engines.
 
@@ -10080,7 +10072,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView3+Samsung I
 
 The `firstChild()` method steps are to [traverse children](https://dom.spec.whatwg.org/#concept-traverse-children) with [this](https://webidl.spec.whatwg.org/#this) and first.
 
-[TreeWalker/lastChild](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/lastChild "The TreeWalker.lastChild() method moves the current Node to the last visible child of the current node, and returns the found child. It also moves the current node to this child. If no such child exists, returns null and the current node is not changed.")
+[TreeWalker/lastChild](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/lastChild 'The TreeWalker.lastChild() method moves the current Node to the last visible child of the current node, and returns the found child. It also moves the current node to this child. If no such child exists, returns null and the current node is not changed.')
 
 In all current engines.
 
@@ -10119,7 +10111,7 @@ To traverse siblings, given a walker and type, run these steps:
     4.  If node is null or walker’s [root](https://dom.spec.whatwg.org/#concept-traversal-root), then return null.
     5.  If the return value of [filtering](https://dom.spec.whatwg.org/#concept-node-filter) node within walker is `[FILTER_ACCEPT](https://dom.spec.whatwg.org/#dom-nodefilter-filter_accept)`, then return null.
 
-[TreeWalker/nextSibling](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/nextSibling "The TreeWalker.nextSibling() method moves the current Node to its next sibling, if any, and returns the found sibling. If there is no such node, return null and the current node is not changed.")
+[TreeWalker/nextSibling](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/nextSibling 'The TreeWalker.nextSibling() method moves the current Node to its next sibling, if any, and returns the found sibling. If there is no such node, return null and the current node is not changed.')
 
 In all current engines.
 
@@ -10139,7 +10131,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView3+Samsung I
 
 The `nextSibling()` method steps are to [traverse siblings](https://dom.spec.whatwg.org/#concept-traverse-siblings) with [this](https://webidl.spec.whatwg.org/#this) and next.
 
-[TreeWalker/previousSibling](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/previousSibling "The TreeWalker.previousSibling() method moves the current Node to its previous sibling, if any, and returns the found sibling. If there is no such node, return null and the current node is not changed.")
+[TreeWalker/previousSibling](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/previousSibling 'The TreeWalker.previousSibling() method moves the current Node to its previous sibling, if any, and returns the found sibling. If there is no such node, return null and the current node is not changed.')
 
 In all current engines.
 
@@ -10159,7 +10151,7 @@ Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView3+Samsung I
 
 The `previousSibling()` method steps are to [traverse siblings](https://dom.spec.whatwg.org/#concept-traverse-siblings) with [this](https://webidl.spec.whatwg.org/#this) and previous.
 
-[TreeWalker/previousNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/previousNode "The TreeWalker.previousNode() method moves the current Node to the previous visible node in the document order, and returns the found node. It also moves the current node to this one. If no such node exists,or if it is before that the root node defined at the object construction, returns null and the current node is not changed.")
+[TreeWalker/previousNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/previousNode 'The TreeWalker.previousNode() method moves the current Node to the previous visible node in the document order, and returns the found node. It also moves the current node to this one. If no such node exists,or if it is before that the root node defined at the object construction, returns null and the current node is not changed.')
 
 In all current engines.
 
@@ -10201,7 +10193,7 @@ The `previousNode()` method steps are:
 
 3.  Return null.
 
-[TreeWalker/nextNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/nextNode "The TreeWalker.nextNode() method moves the current Node to the next visible node in the document order, and returns the found node. It also moves the current node to this one. If no such node exists, returns null and the current node is not changed.")
+[TreeWalker/nextNode](https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker/nextNode 'The TreeWalker.nextNode() method moves the current Node to the next visible node in the document order, and returns the found node. It also moves the current node to this one. If no such node exists, returns null and the current node is not changed.')
 
 In all current engines.
 
@@ -10245,7 +10237,7 @@ The `nextNode()` method steps are:
 
 ### 6.3. Interface `[NodeFilter](https://dom.spec.whatwg.org/#callbackdef-nodefilter)`[](https://dom.spec.whatwg.org/#interface-nodefilter)
 
-[NodeFilter](https://developer.mozilla.org/en-US/docs/Web/API/NodeFilter "A NodeFilter interface represents an object used to filter the nodes in a NodeIterator or TreeWalker. A NodeFilter knows nothing about the document or traversing nodes; it only knows how to evaluate a single node against the provided filter.")
+[NodeFilter](https://developer.mozilla.org/en-US/docs/Web/API/NodeFilter 'A NodeFilter interface represents an object used to filter the nodes in a NodeIterator or TreeWalker. A NodeFilter knows nothing about the document or traversing nodes; it only knows how to evaluate a single node against the provided filter.')
 
 In all current engines.
 
@@ -10263,7 +10255,7 @@ Edge (Legacy)12+IE9+
 
 Firefox for Android4+iOS Safari3+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+
 
-[NodeFilter/acceptNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeFilter/acceptNode "The NodeFilter.acceptNode() method returns an unsigned short that will be used to tell if a given Node must be accepted or not by the NodeIterator or TreeWalker iteration algorithm. This method is expected to be written by the user of a NodeFilter. Possible return values are:")
+[NodeFilter/acceptNode](https://developer.mozilla.org/en-US/docs/Web/API/NodeFilter/acceptNode 'The NodeFilter.acceptNode() method returns an unsigned short that will be used to tell if a given Node must be accepted or not by the NodeIterator or TreeWalker iteration algorithm. This method is expected to be written by the user of a NodeFilter. Possible return values are:')
 
 In all current engines.
 
@@ -10310,22 +10302,22 @@ const [unsigned long](https://webidl.spec.whatwg.org/#idl-unsigned-long) `SHOW_N
 
 These constants can be used as [filter](https://dom.spec.whatwg.org/#concept-traversal-filter) return value:
 
-- `FILTER_ACCEPT` (1);
-- `FILTER_REJECT` (2);
-- `FILTER_SKIP` (3).
+-   `FILTER_ACCEPT` (1);
+-   `FILTER_REJECT` (2);
+-   `FILTER_SKIP` (3).
 
 These constants can be used for [whatToShow](https://dom.spec.whatwg.org/#concept-traversal-whattoshow):
 
-- `SHOW_ALL` (4294967295, FFFFFFFF in hexadecimal);
-- `SHOW_ELEMENT` (1);
-- `SHOW_ATTRIBUTE` (2);
-- `SHOW_TEXT` (4);
-- `SHOW_CDATA_SECTION` (8);
-- `SHOW_PROCESSING_INSTRUCTION` (64, 40 in hexadecimal);
-- (128, 80 in hexadecimal);
-- `SHOW_DOCUMENT` (256, 100 in hexadecimal);
-- `SHOW_DOCUMENT_TYPE` (512, 200 in hexadecimal);
-- `SHOW_DOCUMENT_FRAGMENT` (1024, 400 in hexadecimal).
+-   `SHOW_ALL` (4294967295, FFFFFFFF in hexadecimal);
+-   `SHOW_ELEMENT` (1);
+-   `SHOW_ATTRIBUTE` (2);
+-   `SHOW_TEXT` (4);
+-   `SHOW_CDATA_SECTION` (8);
+-   `SHOW_PROCESSING_INSTRUCTION` (64, 40 in hexadecimal);
+-   (128, 80 in hexadecimal);
+-   `SHOW_DOCUMENT` (256, 100 in hexadecimal);
+-   `SHOW_DOCUMENT_TYPE` (512, 200 in hexadecimal);
+-   `SHOW_DOCUMENT_FRAGMENT` (1024, 400 in hexadecimal).
 
 ## 7\. Sets[](https://dom.spec.whatwg.org/#sets)
 
@@ -10333,7 +10325,7 @@ Yes, the name `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)` is an 
 
 ### 7.1. Interface `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)`[](https://dom.spec.whatwg.org/#interface-domtokenlist)
 
-[DOMTokenList](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList "The DOMTokenList interface represents a set of space-separated tokens. Such a set is returned by Element.classList, HTMLLinkElement.relList, HTMLAnchorElement.relList, HTMLAreaElement.relList, HTMLIframeElement.sandbox, or HTMLOutputElement.htmlFor. It is indexed beginning with 0 as with JavaScript Array objects. DOMTokenList is always case-sensitive.")
+[DOMTokenList](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList 'The DOMTokenList interface represents a set of space-separated tokens. Such a set is returned by Element.classList, HTMLLinkElement.relList, HTMLAnchorElement.relList, HTMLAreaElement.relList, HTMLIframeElement.sandbox, or HTMLOutputElement.htmlFor. It is indexed beginning with 0 as with JavaScript Array objects. DOMTokenList is always case-sensitive.')
 
 In all current engines.
 
@@ -10399,7 +10391,7 @@ When a `[DOMTokenList](https://dom.spec.whatwg.org/#domtokenlist)` object is cre
 3.  Let value be the result of [getting an attribute value](https://dom.spec.whatwg.org/#concept-element-attributes-get-value) given element and localName.
 4.  Run the [attribute change steps](https://dom.spec.whatwg.org/#concept-element-attributes-change-ext) for element, localName, value, value, and null.
 
-[DOMTokenList/length](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/length "The length read-only property of the DOMTokenList interface is an integer representing the number of objects stored in the object.")
+[DOMTokenList/length](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/length 'The length read-only property of the DOMTokenList interface is an integer representing the number of objects stored in the object.')
 
 In all current engines.
 
@@ -10421,7 +10413,7 @@ Firefox for Android50+iOS Safari6+Chrome for Android18+Android WebView3+Samsung 
 
 Returns the number of tokens.
 
-[DOMTokenList/item](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/item "The item() method of the DOMTokenList interface returns an item in the list by its index.")
+[DOMTokenList/item](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/item 'The item() method of the DOMTokenList interface returns an item in the list by its index.')
 
 In all current engines.
 
@@ -10445,7 +10437,7 @@ Firefox for Android4+iOS Safari6+Chrome for Android18+Android WebView3+Samsung I
 
 Returns the token with index index.
 
-[DOMTokenList/contains](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains "The contains() method of the DOMTokenList interface returns a boolean value — true if the underlying list contains the given token, otherwise false.")
+[DOMTokenList/contains](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains 'The contains() method of the DOMTokenList interface returns a boolean value — true if the underlying list contains the given token, otherwise false.')
 
 In all current engines.
 
@@ -10467,7 +10459,7 @@ Firefox for Android4+iOS Safari6+Chrome for Android18+Android WebView3+Samsung I
 
 Returns true if token is present; otherwise false.
 
-[DOMTokenList/add](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add "The add() method of the DOMTokenList interface adds the given token to the list.")
+[DOMTokenList/add](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add 'The add() method of the DOMTokenList interface adds the given token to the list.')
 
 In all current engines.
 
@@ -10493,7 +10485,7 @@ Throws a "`[SyntaxError](https://webidl.spec.whatwg.org/#syntaxerror)`" `[DOMExc
 
 Throws an "`[InvalidCharacterError](https://webidl.spec.whatwg.org/#invalidcharactererror)`" `[DOMException](https://webidl.spec.whatwg.org/#idl-DOMException)` if one of the arguments contains any [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
 
-[DOMTokenList/remove](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove "The remove() method of the DOMTokenList interface removes the specified tokens from the list.")
+[DOMTokenList/remove](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove 'The remove() method of the DOMTokenList interface removes the specified tokens from the list.')
 
 In all current engines.
 
@@ -10599,7 +10591,7 @@ Returns true if token is in the associated attribute’s supported tokens. Retur
 
 Throws a `TypeError` if the associated attribute has no supported tokens defined.
 
-[DOMTokenList/value](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value "The value property of the DOMTokenList interface is a stringifier that returns the value of the list as a DOMString, or clears and sets the list to the given value.")
+[DOMTokenList/value](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/value 'The value property of the DOMTokenList interface is a stringifier that returns the value of the list as a DOMString, or clears and sets the list to the given value.')
 
 In all current engines.
 
@@ -10694,7 +10686,7 @@ DOM Level 3 XPath defined an API for evaluating XPath 1.0 expressions. These API
 
 ### 8.1. Interface `[XPathResult](https://dom.spec.whatwg.org/#xpathresult)`[](https://dom.spec.whatwg.org/#interface-xpathresult)
 
-[XPathResult](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult "The XPathResult interface represents the results generated by evaluating an XPath expression within the context of a given node.")
+[XPathResult](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult 'The XPathResult interface represents the results generated by evaluating an XPath expression within the context of a given node.')
 
 In all current engines.
 
@@ -10712,7 +10704,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/booleanValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/booleanValue "The read-only booleanValue property of the XPathResult interface returns the boolean value of a result with XPathResult.resultType being BOOLEAN_TYPE.")
+[XPathResult/booleanValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/booleanValue 'The read-only booleanValue property of the XPathResult interface returns the boolean value of a result with XPathResult.resultType being BOOLEAN_TYPE.')
 
 In all current engines.
 
@@ -10730,7 +10722,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/invalidIteratorState](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/invalidIteratorState "The read-only invalidIteratorState property of the XPathResult interface signifies that the iterator has become invalid. It is true if XPathResult.resultType is UNORDERED_NODE_ITERATOR_TYPE or ORDERED_NODE_ITERATOR_TYPE and the document has been modified since this result was returned.")
+[XPathResult/invalidIteratorState](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/invalidIteratorState 'The read-only invalidIteratorState property of the XPathResult interface signifies that the iterator has become invalid. It is true if XPathResult.resultType is UNORDERED_NODE_ITERATOR_TYPE or ORDERED_NODE_ITERATOR_TYPE and the document has been modified since this result was returned.')
 
 In all current engines.
 
@@ -10748,7 +10740,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile14+
 
-[XPathResult/iterateNext](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/iterateNext "The iterateNext() method of the XPathResult interface iterates over a node set result and returns the next node from it or null if there are no more nodes.")
+[XPathResult/iterateNext](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/iterateNext 'The iterateNext() method of the XPathResult interface iterates over a node set result and returns the next node from it or null if there are no more nodes.')
 
 In all current engines.
 
@@ -10766,7 +10758,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/numberValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/numberValue "The read-only numberValue property of the XPathResult interface returns the numeric value of a result with XPathResult.resultType being NUMBER_TYPE.")
+[XPathResult/numberValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/numberValue 'The read-only numberValue property of the XPathResult interface returns the numeric value of a result with XPathResult.resultType being NUMBER_TYPE.')
 
 In all current engines.
 
@@ -10784,7 +10776,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/resultType](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/resultType "The read-only resultType property of the XPathResult interface represents the type of the result, as defined by the type constants.")
+[XPathResult/resultType](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/resultType 'The read-only resultType property of the XPathResult interface represents the type of the result, as defined by the type constants.')
 
 In all current engines.
 
@@ -10802,7 +10794,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile14+
 
-[XPathResult/singleNodeValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/singleNodeValue "The read-only singleNodeValue property of the XPathResult interface returns a Node value or null in case no node was matched of a result with XPathResult.resultType being ANY_UNORDERED_NODE_TYPE or FIRST_ORDERED_NODE_TYPE.")
+[XPathResult/singleNodeValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/singleNodeValue 'The read-only singleNodeValue property of the XPathResult interface returns a Node value or null in case no node was matched of a result with XPathResult.resultType being ANY_UNORDERED_NODE_TYPE or FIRST_ORDERED_NODE_TYPE.')
 
 In all current engines.
 
@@ -10820,7 +10812,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/snapshotItem](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/snapshotItem "The snapshotItem() method of the XPathResult interface returns an item of the snapshot collection or null in case the index is not within the range of nodes. Unlike the iterator result, the snapshot does not become invalid, but may not correspond to the current document if it is mutated.")
+[XPathResult/snapshotItem](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/snapshotItem 'The snapshotItem() method of the XPathResult interface returns an item of the snapshot collection or null in case the index is not within the range of nodes. Unlike the iterator result, the snapshot does not become invalid, but may not correspond to the current document if it is mutated.')
 
 In all current engines.
 
@@ -10838,7 +10830,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/snapshotLength](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/snapshotLength "The read-only snapshotLength property of the XPathResult interface represents the number of nodes in the result snapshot.")
+[XPathResult/snapshotLength](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/snapshotLength 'The read-only snapshotLength property of the XPathResult interface represents the number of nodes in the result snapshot.')
 
 In all current engines.
 
@@ -10856,7 +10848,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathResult/stringValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/stringValue "The read-only stringValue property of the XPathResult interface returns the string value of a result with XPathResult.resultType being STRING_TYPE.")
+[XPathResult/stringValue](https://developer.mozilla.org/en-US/docs/Web/API/XPathResult/stringValue 'The read-only stringValue property of the XPathResult interface returns the string value of a result with XPathResult.resultType being STRING_TYPE.')
 
 In all current engines.
 
@@ -10901,7 +10893,7 @@ readonly attribute [unsigned long](https://webidl.spec.whatwg.org/#idl-unsigned-
 
 ### 8.2. Interface `[XPathExpression](https://dom.spec.whatwg.org/#xpathexpression)`[](https://dom.spec.whatwg.org/#interface-xpathexpression)
 
-[XPathExpression](https://developer.mozilla.org/en-US/docs/Web/API/XPathExpression "This interface is a compiled XPath expression that can be evaluated on a document or specific node to return information from its DOM tree.")
+[XPathExpression](https://developer.mozilla.org/en-US/docs/Web/API/XPathExpression 'This interface is a compiled XPath expression that can be evaluated on a document or specific node to return information from its DOM tree.')
 
 In all current engines.
 
@@ -10919,7 +10911,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathExpression/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/XPathExpression/evaluate "The evaluate() method of the XPathExpression interface executes an XPath expression on the given node or document and returns an XPathResult.")
+[XPathExpression/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/XPathExpression/evaluate 'The evaluate() method of the XPathExpression interface executes an XPath expression on the given node or document and returns an XPathResult.')
 
 In all current engines.
 
@@ -10945,7 +10937,7 @@ interface `XPathExpression` {
 
 ### 8.3. Mixin `[XPathEvaluatorBase](https://dom.spec.whatwg.org/#xpathevaluatorbase)`[](https://dom.spec.whatwg.org/#mixin-xpathevaluatorbase)
 
-[Document/createExpression](https://developer.mozilla.org/en-US/docs/Web/API/Document/createExpression "This method compiles an XPathExpression which can then be used for (repeated) evaluations.")
+[Document/createExpression](https://developer.mozilla.org/en-US/docs/Web/API/Document/createExpression 'This method compiles an XPathExpression which can then be used for (repeated) evaluations.')
 
 In all current engines.
 
@@ -10963,7 +10955,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathEvaluator/createExpression](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createExpression "This method compiles an XPathExpression which can then be used for (repeated) evaluations of the XPath expression.")
+[XPathEvaluator/createExpression](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createExpression 'This method compiles an XPathExpression which can then be used for (repeated) evaluations of the XPath expression.')
 
 In all current engines.
 
@@ -10981,7 +10973,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[Document/createNSResolver](https://developer.mozilla.org/en-US/docs/Web/API/Document/createNSResolver "Creates an XPathNSResolver which resolves namespaces with respect to the definitions in scope for a specified node.")
+[Document/createNSResolver](https://developer.mozilla.org/en-US/docs/Web/API/Document/createNSResolver 'Creates an XPathNSResolver which resolves namespaces with respect to the definitions in scope for a specified node.')
 
 In all current engines.
 
@@ -10999,7 +10991,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile12.1+
 
-[XPathEvaluator/createNSResolver](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createNSResolver "This method adapts any DOM node to resolve namespaces so that an XPath expression can be easily evaluated relative to the context of the node where it appeared within the document.")
+[XPathEvaluator/createNSResolver](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createNSResolver 'This method adapts any DOM node to resolve namespaces so that an XPath expression can be easily evaluated relative to the context of the node where it appeared within the document.')
 
 In all current engines.
 
@@ -11017,7 +11009,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile12.1+
 
-[Document/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate "Returns an XPathResult based on an XPath expression and other given parameters.")
+[Document/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate 'Returns an XPathResult based on an XPath expression and other given parameters.')
 
 In all current engines.
 
@@ -11035,7 +11027,7 @@ Edge (Legacy)12+IENone
 
 Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile10.1+
 
-[XPathEvaluator/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate "The evaluate() method of the XPathEvaluator interface executes an XPath expression on the given node or document and returns an XPathResult.")
+[XPathEvaluator/evaluate](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate 'The evaluate() method of the XPathEvaluator interface executes an XPath expression on the given node or document and returns an XPathResult.')
 
 In all current engines.
 
@@ -11067,7 +11059,7 @@ interface mixin `XPathEvaluatorBase` {
 
 ### 8.4. Interface `[XPathEvaluator](https://dom.spec.whatwg.org/#xpathevaluator)`[](https://dom.spec.whatwg.org/#interface-xpathevaluator)
 
-[XPathEvaluator](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator "The XPathEvaluator interface allows to compile and evaluate XPath expressions.")
+[XPathEvaluator](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator 'The XPathEvaluator interface allows to compile and evaluate XPath expressions.')
 
 In all current engines.
 
@@ -11119,78 +11111,78 @@ This standard used to contain several interfaces and interface members that have
 
 These interfaces have been removed:
 
-- `DOMConfiguration`[](https://dom.spec.whatwg.org/#domconfiguration)
-- `DOMError`[](https://dom.spec.whatwg.org/#domerror)
-- `DOMErrorHandler`[](https://dom.spec.whatwg.org/#domerrorhandler)
-- `DOMImplementationList`[](https://dom.spec.whatwg.org/#domimplementationlist)
-- `DOMImplementationSource`[](https://dom.spec.whatwg.org/#domimplementationsource)
-- `DOMLocator`[](https://dom.spec.whatwg.org/#domlocator)
-- `DOMObject`[](https://dom.spec.whatwg.org/#domobject)
-- `DOMUserData`[](https://dom.spec.whatwg.org/#domuserdata)
-- `Entity`[](https://dom.spec.whatwg.org/#entity)
-- `EntityReference`[](https://dom.spec.whatwg.org/#entityreference)
-- `MutationEvent`[](https://dom.spec.whatwg.org/#mutationevent)
-- `MutationNameEvent`[](https://dom.spec.whatwg.org/#mutationnameevent)
-- `NameList`[](https://dom.spec.whatwg.org/#namelist)
-- `Notation`[](https://dom.spec.whatwg.org/#notation)
-- `RangeException`[](https://dom.spec.whatwg.org/#rangeexception)
-- `TypeInfo`[](https://dom.spec.whatwg.org/#typeinfo)
-- `UserDataHandler`[](https://dom.spec.whatwg.org/#userdatahandler)
+-   `DOMConfiguration`[](https://dom.spec.whatwg.org/#domconfiguration)
+-   `DOMError`[](https://dom.spec.whatwg.org/#domerror)
+-   `DOMErrorHandler`[](https://dom.spec.whatwg.org/#domerrorhandler)
+-   `DOMImplementationList`[](https://dom.spec.whatwg.org/#domimplementationlist)
+-   `DOMImplementationSource`[](https://dom.spec.whatwg.org/#domimplementationsource)
+-   `DOMLocator`[](https://dom.spec.whatwg.org/#domlocator)
+-   `DOMObject`[](https://dom.spec.whatwg.org/#domobject)
+-   `DOMUserData`[](https://dom.spec.whatwg.org/#domuserdata)
+-   `Entity`[](https://dom.spec.whatwg.org/#entity)
+-   `EntityReference`[](https://dom.spec.whatwg.org/#entityreference)
+-   `MutationEvent`[](https://dom.spec.whatwg.org/#mutationevent)
+-   `MutationNameEvent`[](https://dom.spec.whatwg.org/#mutationnameevent)
+-   `NameList`[](https://dom.spec.whatwg.org/#namelist)
+-   `Notation`[](https://dom.spec.whatwg.org/#notation)
+-   `RangeException`[](https://dom.spec.whatwg.org/#rangeexception)
+-   `TypeInfo`[](https://dom.spec.whatwg.org/#typeinfo)
+-   `UserDataHandler`[](https://dom.spec.whatwg.org/#userdatahandler)
 
 And these interface members have been removed:
 
 `[Attr](https://dom.spec.whatwg.org/#attr)`
 
-- `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-attr-schematypeinfo)
-- `isId`[](https://dom.spec.whatwg.org/#dom-attr-isid)
+-   `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-attr-schematypeinfo)
+-   `isId`[](https://dom.spec.whatwg.org/#dom-attr-isid)
 
 `[Document](https://dom.spec.whatwg.org/#document)`
 
-- `createEntityReference()`[](https://dom.spec.whatwg.org/#dom-document-createentityreference)
-- `xmlEncoding`[](https://dom.spec.whatwg.org/#dom-document-xmlencoding)
-- `xmlStandalone`[](https://dom.spec.whatwg.org/#dom-document-xmlstandalone)
-- `xmlVersion`[](https://dom.spec.whatwg.org/#dom-document-xmlversion)
-- `strictErrorChecking`[](https://dom.spec.whatwg.org/#dom-document-stricterrorchecking)
-- `domConfig`[](https://dom.spec.whatwg.org/#dom-document-domconfig)
-- `normalizeDocument()`[](https://dom.spec.whatwg.org/#dom-document-normalizedocument)
-- `renameNode()`[](https://dom.spec.whatwg.org/#dom-document-renamenode)
+-   `createEntityReference()`[](https://dom.spec.whatwg.org/#dom-document-createentityreference)
+-   `xmlEncoding`[](https://dom.spec.whatwg.org/#dom-document-xmlencoding)
+-   `xmlStandalone`[](https://dom.spec.whatwg.org/#dom-document-xmlstandalone)
+-   `xmlVersion`[](https://dom.spec.whatwg.org/#dom-document-xmlversion)
+-   `strictErrorChecking`[](https://dom.spec.whatwg.org/#dom-document-stricterrorchecking)
+-   `domConfig`[](https://dom.spec.whatwg.org/#dom-document-domconfig)
+-   `normalizeDocument()`[](https://dom.spec.whatwg.org/#dom-document-normalizedocument)
+-   `renameNode()`[](https://dom.spec.whatwg.org/#dom-document-renamenode)
 
 `[DocumentType](https://dom.spec.whatwg.org/#documenttype)`
 
-- `entities`[](https://dom.spec.whatwg.org/#dom-documenttype-entities)
-- `notations`[](https://dom.spec.whatwg.org/#dom-documenttype-notations)
-- `internalSubset`[](https://dom.spec.whatwg.org/#dom-documenttype-internalsubset)
+-   `entities`[](https://dom.spec.whatwg.org/#dom-documenttype-entities)
+-   `notations`[](https://dom.spec.whatwg.org/#dom-documenttype-notations)
+-   `internalSubset`[](https://dom.spec.whatwg.org/#dom-documenttype-internalsubset)
 
 `[DOMImplementation](https://dom.spec.whatwg.org/#domimplementation)`
 
-- `getFeature()`[](https://dom.spec.whatwg.org/#dom-domimplementation-getfeature)
+-   `getFeature()`[](https://dom.spec.whatwg.org/#dom-domimplementation-getfeature)
 
 `[Element](https://dom.spec.whatwg.org/#element)`
 
-- `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-element-schematypeinfo)
-- `setIdAttribute()`[](https://dom.spec.whatwg.org/#dom-element-setidattribute)
-- `setIdAttributeNS()`[](https://dom.spec.whatwg.org/#dom-element-setidattributens)
-- `setIdAttributeNode()`[](https://dom.spec.whatwg.org/#dom-element-setidattributenode)
+-   `schemaTypeInfo`[](https://dom.spec.whatwg.org/#dom-element-schematypeinfo)
+-   `setIdAttribute()`[](https://dom.spec.whatwg.org/#dom-element-setidattribute)
+-   `setIdAttributeNS()`[](https://dom.spec.whatwg.org/#dom-element-setidattributens)
+-   `setIdAttributeNode()`[](https://dom.spec.whatwg.org/#dom-element-setidattributenode)
 
 `[Node](https://dom.spec.whatwg.org/#node)`
 
-- `isSupported`[](https://dom.spec.whatwg.org/#dom-node-issupported)
-- `getFeature()`[](https://dom.spec.whatwg.org/#dom-node-getfeature)
-- `getUserData()`[](https://dom.spec.whatwg.org/#dom-node-getuserdata)
-- `setUserData()`[](https://dom.spec.whatwg.org/#dom-node-setuserdata)
+-   `isSupported`[](https://dom.spec.whatwg.org/#dom-node-issupported)
+-   `getFeature()`[](https://dom.spec.whatwg.org/#dom-node-getfeature)
+-   `getUserData()`[](https://dom.spec.whatwg.org/#dom-node-getuserdata)
+-   `setUserData()`[](https://dom.spec.whatwg.org/#dom-node-setuserdata)
 
 `[NodeIterator](https://dom.spec.whatwg.org/#nodeiterator)`
 
-- `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-nodeiterator-expandentityreferences)
+-   `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-nodeiterator-expandentityreferences)
 
 `[Text](https://dom.spec.whatwg.org/#text)`
 
-- `isElementContentWhitespace`[](https://dom.spec.whatwg.org/#dom-text-iselementcontentwhitespace)
-- `replaceWholeText()`[](https://dom.spec.whatwg.org/#dom-text-replacewholetext)
+-   `isElementContentWhitespace`[](https://dom.spec.whatwg.org/#dom-text-iselementcontentwhitespace)
+-   `replaceWholeText()`[](https://dom.spec.whatwg.org/#dom-text-replacewholetext)
 
 `[TreeWalker](https://dom.spec.whatwg.org/#treewalker)`
 
-- `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-treewalker-expandentityreferences)
+-   `expandEntityReferences`[](https://dom.spec.whatwg.org/#dom-treewalker-expandentityreferences)
 
 ## Acknowledgments[](https://dom.spec.whatwg.org/#acks)
 
