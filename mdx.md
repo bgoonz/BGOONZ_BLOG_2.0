@@ -101,16 +101,16 @@ module.exports = {
 
 `gatsby-plugin-mdx` exposes a configuration API that can be used similarly to any other Gatsby plugin. You can define MDX extensions, layouts, global scope, and more.
 
-| Key                                                                                                                          | Default                                | Description                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | --------------------------------------------------------------------- |
-| [`extensions`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#extensions)                                               | `[".mdx"]`                             | Configure the file extensions that gatsby-plugin-mdx will process     |
-| [`defaultLayouts`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#default-layouts)                                      | `{}`                                   | Set the layout components for MDX source types                        |
-| [`gatsbyRemarkPlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#gatsby-remark-plugins)                           | `[]`                                   | Use Gatsby-specific remark plugins                                    |
-| [`remarkPlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#remark-plugins)                                        | `[]`                                   | Specify remark plugins                                                |
-| [`rehypePlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#rehype-plugins)                                        | `[]`                                   | Specify rehype plugins                                                |
-| [`mediaTypes`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#media-types)                                              | `["text/markdown", "text/x-markdown"]` | Determine which media types are processed by MDX                      |
-| [`shouldBlockNodeFromTransformation`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#shouldblocknodefromtransformation) | `(node) => false`                      | Disable MDX transformation for nodes where this function returns true |
-| [`commonmark`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#commonmark)                                               | `false`                                | Use CommonMark                                                        |
+| Key | Default | Description |
+| --- | --- | --- |
+| [`extensions`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#extensions) | `[".mdx"]` | Configure the file extensions that gatsby-plugin-mdx will process |
+| [`defaultLayouts`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#default-layouts) | `{}` | Set the layout components for MDX source types |
+| [`gatsbyRemarkPlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#gatsby-remark-plugins) | `[]` | Use Gatsby-specific remark plugins |
+| [`remarkPlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#remark-plugins) | `[]` | Specify remark plugins |
+| [`rehypePlugins`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#rehype-plugins) | `[]` | Specify rehype plugins |
+| [`mediaTypes`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#media-types) | `["text/markdown", "text/x-markdown"]` | Determine which media types are processed by MDX |
+| [`shouldBlockNodeFromTransformation`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#shouldblocknodefromtransformation) | `(node) => false` | Disable MDX transformation for nodes where this function returns true |
+| [`commonmark`](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#commonmark) | `false` | Use CommonMark |
 
 #### [](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#extensions)Extensions
 
@@ -437,33 +437,33 @@ export const wrapRootElement = ({ element }) => (
 
 The following components can be customized with the MDXProvider:
 
-| Tag             | Name                                                                 | Syntax                                              |
-| --------------- | -------------------------------------------------------------------- | --------------------------------------------------- |
-| `p`             | [Paragraph](https://github.com/syntax-tree/mdast#paragraph)          |                                                     |
-| `h1`            | [Heading 1](https://github.com/syntax-tree/mdast#heading)            | `#`                                                 |
-| `h2`            | [Heading 2](https://github.com/syntax-tree/mdast#heading)            | `##`                                                |
-| `h3`            | [Heading 3](https://github.com/syntax-tree/mdast#heading)            | `###`                                               |
-| `h4`            | [Heading 4](https://github.com/syntax-tree/mdast#heading)            | `####`                                              |
-| `h5`            | [Heading 5](https://github.com/syntax-tree/mdast#heading)            | `#####`                                             |
-| `h6`            | [Heading 6](https://github.com/syntax-tree/mdast#heading)            | `######`                                            |
-| `thematicBreak` | [Thematic break](https://github.com/syntax-tree/mdast#thematicbreak) | `***`                                               |
-| `blockquote`    | [Blockquote](https://github.com/syntax-tree/mdast#blockquote)        | `>`                                                 |
-| `ul`            | [List](https://github.com/syntax-tree/mdast#list)                    | `-`                                                 |
-| `ol`            | [Ordered list](https://github.com/syntax-tree/mdast#list)            | `1.`                                                |
-| `li`            | [List item](https://github.com/syntax-tree/mdast#listitem)           |                                                     |
-| `table`         | [Table](https://github.com/syntax-tree/mdast#table)                  | \`---                                               |
-| `tr`            | [Table row](https://github.com/syntax-tree/mdast#tablerow)           | \`This                                              |
-| `td`/`th`       | [Table cell](https://github.com/syntax-tree/mdast#tablecell)         |                                                     |
-| `pre`           | [Pre](https://github.com/syntax-tree/mdast#code)                     |                                                     |
-| `code`          | [Code](https://github.com/syntax-tree/mdast#code)                    |                                                     |
-| `em`            | [Emphasis](https://github.com/syntax-tree/mdast#emphasis)            | `_emphasis_`                                        |
-| `strong`        | [Strong](https://github.com/syntax-tree/mdast#strong)                | `**strong**`                                        |
-| `delete`        | [Delete](https://github.com/syntax-tree/mdast#delete)                | `~~strikethrough~~`                                 |
-| `inlineCode`    | [InlineCode](https://github.com/syntax-tree/mdast#inlinecode)        |                                                     |
-| `hr`            | [Break](https://github.com/syntax-tree/mdast#break)                  | `---`                                               |
-| `a`             | [Link](https://github.com/syntax-tree/mdast#link)                    | `<https://mdxjs.com>` or `[MDX](https://mdxjs.com)` |
-| `img`           | [Image](https://github.com/syntax-tree/mdast#image)                  | `![alt](https://mdx-logo.now.sh)`                   |
-|                 |                                                                      |                                                     |
+| Tag | Name | Syntax |
+| --- | --- | --- |
+| `p` | [Paragraph](https://github.com/syntax-tree/mdast#paragraph) |  |
+| `h1` | [Heading 1](https://github.com/syntax-tree/mdast#heading) | `#` |
+| `h2` | [Heading 2](https://github.com/syntax-tree/mdast#heading) | `##` |
+| `h3` | [Heading 3](https://github.com/syntax-tree/mdast#heading) | `###` |
+| `h4` | [Heading 4](https://github.com/syntax-tree/mdast#heading) | `####` |
+| `h5` | [Heading 5](https://github.com/syntax-tree/mdast#heading) | `#####` |
+| `h6` | [Heading 6](https://github.com/syntax-tree/mdast#heading) | `######` |
+| `thematicBreak` | [Thematic break](https://github.com/syntax-tree/mdast#thematicbreak) | `***` |
+| `blockquote` | [Blockquote](https://github.com/syntax-tree/mdast#blockquote) | `>` |
+| `ul` | [List](https://github.com/syntax-tree/mdast#list) | `-` |
+| `ol` | [Ordered list](https://github.com/syntax-tree/mdast#list) | `1.` |
+| `li` | [List item](https://github.com/syntax-tree/mdast#listitem) |  |
+| `table` | [Table](https://github.com/syntax-tree/mdast#table) | \`--- |
+| `tr` | [Table row](https://github.com/syntax-tree/mdast#tablerow) | \`This |
+| `td`/`th` | [Table cell](https://github.com/syntax-tree/mdast#tablecell) |  |
+| `pre` | [Pre](https://github.com/syntax-tree/mdast#code) |  |
+| `code` | [Code](https://github.com/syntax-tree/mdast#code) |  |
+| `em` | [Emphasis](https://github.com/syntax-tree/mdast#emphasis) | `_emphasis_` |
+| `strong` | [Strong](https://github.com/syntax-tree/mdast#strong) | `**strong**` |
+| `delete` | [Delete](https://github.com/syntax-tree/mdast#delete) | `~~strikethrough~~` |
+| `inlineCode` | [InlineCode](https://github.com/syntax-tree/mdast#inlinecode) |  |
+| `hr` | [Break](https://github.com/syntax-tree/mdast#break) | `---` |
+| `a` | [Link](https://github.com/syntax-tree/mdast#link) | `<https://mdxjs.com>` or `[MDX](https://mdxjs.com)` |
+| `img` | [Image](https://github.com/syntax-tree/mdast#image) | `![alt](https://mdx-logo.now.sh)` |
+|  |  |  |
 
 It’s important to define the `components` you pass in a stable way so that the references don’t change if you want to be able to navigate to a hash. That’s why we defined `components` outside of any render functions in these examples.
 
