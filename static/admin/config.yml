@@ -12,8 +12,8 @@ backend:
   branch: master
   open_authoring: true # allow external contributors without having to first give them access to the repository, their edits will be made on their own github repository and create a pull request automatically through the UI
 
-media_folder: /static/images/uploads # where media files such as images will be stored
-public_folder: /images/uploads # url to media files when deployed
+media_folder: /static/images # where media files such as images will be stored
+public_folder: /images # url to media files when deployed
 
 show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
 
@@ -31,7 +31,7 @@ collections:
     slug: "{{title}}/index"
     preview_path: "src/pages/docs/preview/{{slug}}"
     #extension: md
-    media_folder: "{{media_folder}}/docs"
+    media_folder: "{{media_folder}}"
     # adding a nested object will show the collection folder structure, see https://www.netlifycms.org/docs/beta-features/#nested-collections and https://github.com/netlify/netlify-cms/issues/4741#issuecomment-748627801
     summary: "{{title}} (last modified {{commit_date}})" # text displayed as the name of each entry in the UI listing
     nested:
@@ -58,7 +58,7 @@ collections:
     slug: "{{title}}" # filename template, the adequate file extension (e.g., .md) will be automatically added
     preview_path: "src/pages/blog/preview/{{title}}"
     extension: md
-    media_folder: "{{media_folder}}/blog"
+    media_folder: "{{media_folder}}"
     summary: "{{title}} published by {{commit_author}} ({{commit_date}})"
     filter: { field: "cmseditable", value: true } # filter out blog/index.md, the homepage of blog posts, we don't want people to edit that
     fields: # fields for each document, usually in front matter, default type is string
@@ -151,7 +151,7 @@ collections:
     create: true
     slug: "{{id}}"
     extension: yaml
-    media_folder: "{{media_folder}}/blog"
+    media_folder: "{{media_folder}}"
     summary: "{{first_name}} {{last_name}} ({{id}})"
     fields:
       - { name: id, label: Identifier, widget: string }
@@ -165,7 +165,7 @@ collections:
     create: true
     slug: "{{id}}"
     extension: yaml
-    media_folder: "{{media_folder}}/blog"
+    media_folder: "{{media_folder}}"
     fields:
       - { name: id, label: Identifier, widget: string }
       - { name: title, label: Title, widget: string }
@@ -183,7 +183,7 @@ collections:
     create: true
     slug: "{{id}}"
     extension: yaml
-    media_folder: "{{media_folder}}/blog"
+    media_folder: "{{media_folder}}"
     fields:
       - { name: id, label: Identifier, widget: string }
       - { name: title, label: Title, widget: string }
