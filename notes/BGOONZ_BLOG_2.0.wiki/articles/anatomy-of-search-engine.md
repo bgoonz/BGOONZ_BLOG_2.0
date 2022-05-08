@@ -118,8 +118,6 @@ First, we will provide a high level discussion of the architecture. Then, there 
 
 Figure 1. High Level Google Architecture
 
-
-
 ### 4.1 Google Architecture Overview
 
 In this section, we will give a high level overview of how the whole system works as pictured in Figure 1. Further sections will discuss the applications and data structures not mentioned in this section. Most of Google is implemented in C or C++ for efficiency and can run in either Solaris or Linux.
@@ -139,8 +137,6 @@ Google's data structures are optimized so that a large document collection can b
 BigFiles are virtual files spanning multiple file systems and are addressable by 64 bit integers. The allocation among multiple file systems is handled automatically. The BigFiles package also handles allocation and deallocation of file descriptors, since the operating systems do not provide enough for our needs. BigFiles also support rudimentary compression options.
 
 #### 4.2.2 Repository
-
-
 
 ![](http://infolab.stanford.edu/~backrub/repos.gif)
 
@@ -168,8 +164,6 @@ Our compact encoding uses two bytes for every hit. There are two types of hits: 
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
 
-
-
 The length of a hit list is stored before the hits themselves. To save space, the length of the hit list is combined with the wordID in the forward index and the docID in the inverted index. This limits it to 8 and 5 bits respectively (there are some tricks which allow 8 bits to be borrowed from the wordID). If the length is longer than would fit in that many bits, an escape code is used in those bits, and the next two bytes contain the actual length.
 
 #### 4.2.6 Forward Index
@@ -192,9 +186,9 @@ It turns out that running a crawler which connects to more than half a million s
 
 ### 4.4 Indexing the Web
 
-- **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
-- **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
-- **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
+-   **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
+-   **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
+-   **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
 
 ### 4.5 Searching
 
@@ -211,8 +205,6 @@ The goal of searching is to provide quality search results efficiently. Many of 
 Sort the documents that have matched by rank and return the top k.
 
 Figure 4. Google Query Evaluation
-
-
 
 To put a limit on response time, once a certain number (currently 40,000) of matching documents are found, the searcher automatically goes to step 8 in Figure 4. This means that it is possible that sub-optimal results would be returned. We are currently investigating other ways to solve this problem. In the past, we sorted the hits according to PageRank, which seemed to improve the situation.
 
@@ -235,8 +227,6 @@ All of the results are reasonably high quality pages and, at last check, none we
 ### 5.1 Storage Requirements
 
 Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.
-
-
 
 Storage Statistics
 
@@ -300,11 +290,7 @@ Number of 404's
 
 1.6 million
 
-
-
 Table 1. Statistics
-
-
 
 ###  5.2 System Performance
 
@@ -313,8 +299,6 @@ It is important for a search engine to crawl and index efficiently. This way inf
 ### 5.3 Search Performance
 
 Improving the performance of search was not the major focus of our research up to this point. The current version of Google answers most queries in between 1 and 10 seconds. This time is mostly dominated by disk IO over NFS (since disks are spread over a number of machines). Furthermore, Google does not have any optimizations such as query caching, subindices on common terms, and other common optimizations. We intend to speed up Google considerably through distribution and hardware, software, and algorithmic improvements. Our target is to be able to handle several hundred queries per second. Table 2 has some sample query times from the current version of Google. They are repeated to show the speedups resulting from cached IO.
-
-
 
 **Initial Query**
 
@@ -370,11 +354,7 @@ search engines
 
 1.16
 
-
-
 Table 2. Search Times
-
-
 
 ## 6 Conclusions
 
@@ -402,33 +382,33 @@ Scott Hassan and Alan Steremberg have been critical to the development of Google
 
 ## References
 
-- Best of the Web 1994 -- Navigators [http://botw.org/1994/awards/navigators.html](http://botw.org/1994/awards/navigators.html)
-- Bill Clinton Joke of the Day: April 14, 1997. [http://www.io.com/~cjburke/clinton/970414.html.](http://www.io.com/~cjburke/clinton/970414.html)
-- Bzip2 Homepage [http://www.muraroa.demon.co.uk/](http://www.muraroa.demon.co.uk/)
-- Google Search Engine [http://google.stanford.edu/](http://google.stanford.edu/)
-- Harvest [http://harvest.transarc.com/](http://harvest.transarc.com/)
-- Mauldin, Michael L. Lycos Design Choices in an Internet Search Service, IEEE Expert Interview [http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm](http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm)
-- The Effect of Cellular Phone Use Upon Driver Attention [http://www.webfirst.com/aaa/text/cell/cell0toc.htm](http://www.webfirst.com/aaa/text/cell/cell0toc.htm)
-- Search Engine Watch [http://www.searchenginewatch.com/](http://www.searchenginewatch.com/)
-- RFC 1950 (zlib) [ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html](ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html)
-- Robots Exclusion Protocol: [http://info.webcrawler.com/mak/projects/robots/exclusion.htm](http://info.webcrawler.com/mak/projects/robots/exclusion.html)
-- Web Growth Summary: [http://www.mit.edu/people/mkgray/net/web-growth-summary.html](http://www.mit.edu/people/mkgray/net/web-growth-summary.html)
-- Yahoo! [http://www.yahoo.com/](http://www.yahoo.com/)
+-   Best of the Web 1994 -- Navigators [http://botw.org/1994/awards/navigators.html](http://botw.org/1994/awards/navigators.html)
+-   Bill Clinton Joke of the Day: April 14, 1997. [http://www.io.com/~cjburke/clinton/970414.html.](http://www.io.com/~cjburke/clinton/970414.html)
+-   Bzip2 Homepage [http://www.muraroa.demon.co.uk/](http://www.muraroa.demon.co.uk/)
+-   Google Search Engine [http://google.stanford.edu/](http://google.stanford.edu/)
+-   Harvest [http://harvest.transarc.com/](http://harvest.transarc.com/)
+-   Mauldin, Michael L. Lycos Design Choices in an Internet Search Service, IEEE Expert Interview [http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm](http://www.computer.org/pubs/expert/1997/trends/x1008/mauldin.htm)
+-   The Effect of Cellular Phone Use Upon Driver Attention [http://www.webfirst.com/aaa/text/cell/cell0toc.htm](http://www.webfirst.com/aaa/text/cell/cell0toc.htm)
+-   Search Engine Watch [http://www.searchenginewatch.com/](http://www.searchenginewatch.com/)
+-   RFC 1950 (zlib) [ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html](ftp://ftp.uu.net/graphics/png/documents/zlib/zdoc-index.html)
+-   Robots Exclusion Protocol: [http://info.webcrawler.com/mak/projects/robots/exclusion.htm](http://info.webcrawler.com/mak/projects/robots/exclusion.html)
+-   Web Growth Summary: [http://www.mit.edu/people/mkgray/net/web-growth-summary.html](http://www.mit.edu/people/mkgray/net/web-growth-summary.html)
+-   Yahoo! [http://www.yahoo.com/](http://www.yahoo.com/)
 
-- \[Abiteboul 97\] Serge Abiteboul and Victor Vianu, _Queries and Computation on the Web_. Proceedings of the International Conference on Database Theory. Delphi, Greece 1997.
-- \[Bagdikian 97\] Ben H. Bagdikian. _The Media Monopoly_. 5th Edition. Publisher: Beacon, ISBN: 0807061557
-- \[Chakrabarti 98\] S.Chakrabarti, B.Dom, D.Gibson, J.Kleinberg, P. Raghavan and S. Rajagopalan. _Automatic Resource Compilation by Analyzing Hyperlink Structure and Associated Text._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
-- \[Cho 98\] Junghoo Cho, Hector Garcia-Molina, Lawrence Page. _Efficient Crawling Through URL Ordering._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
-- \[Gravano 94\] Luis Gravano, Hector Garcia-Molina, and A. Tomasic. _The Effectiveness of GlOSS for the Text-Database Discovery Problem._ Proc. of the 1994 ACM SIGMOD International Conference On Management Of Data, 1994.
-- \[Kleinberg 98\] Jon Kleinberg, _Authoritative Sources in a Hyperlinked Environment_, Proc. ACM-SIAM Symposium on Discrete Algorithms, 1998.
-- \[Marchiori 97\] Massimo Marchiori. _The Quest for Correct Information on the Web: Hyper Search Engines._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
-- \[McBryan 94\] Oliver A. McBryan. GENVL and _WWWW: Tools for Taming the Web. First International Conference on the World Wide Web._ CERN, Geneva (Switzerland), May 25-26-27 1994. [http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps](http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps)
-- \[Page 98\] Lawrence Page, Sergey Brin, Rajeev Motwani, Terry Winograd. _The PageRank Citation Ranking: Bringing Order to the Web._ Manuscript in progress. [http://google.stanford.edu/~backrub/pageranksub.ps](http://google.stanford.edu/~backrub/pageranksub.ps)
-- \[Pinkerton 94\] Brian Pinkerton, _Finding What People Want: Experiences with the WebCrawler._ The Second International WWW Conference Chicago, USA, October 17-20, 1994. [http://info.webcrawler.com/bp/WWW94.html](http://info.webcrawler.com/bp/WWW94.html)
-- \[Spertus 97\] Ellen Spertus. _ParaSite: Mining Structural Information on the Web._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
-- \[TREC 96\] _Proceedings of the fifth Text REtrieval Conference (TREC-5)._ Gaithersburg, Maryland, November 20-22, 1996. Publisher: Department of Commerce, National Institute of Standards and Technology. Editors: D. K. Harman and E. M. Voorhees. Full text at: [http://trec.nist.gov/](http://trec.nist.gov/)
-- \[Witten 94\] Ian H Witten, Alistair Moffat, and Timothy C. Bell. _Managing Gigabytes: Compressing and Indexing Documents and Images._ New York: Van Nostrand Reinhold, 1994.
-- \[Weiss 96\] Ron Weiss, Bienvenido Velez, Mark A. Sheldon, Chanathip Manprempre, Peter Szilagyi, Andrzej Duda, and David K. Gifford. _HyPursuit: A Hierarchical Network Search Engine that Exploits Content-Link Hypertext Clustering._ Proceedings of the 7th ACM Conference on Hypertext. New York, 1996.
+-   \[Abiteboul 97\] Serge Abiteboul and Victor Vianu, _Queries and Computation on the Web_. Proceedings of the International Conference on Database Theory. Delphi, Greece 1997.
+-   \[Bagdikian 97\] Ben H. Bagdikian. _The Media Monopoly_. 5th Edition. Publisher: Beacon, ISBN: 0807061557
+-   \[Chakrabarti 98\] S.Chakrabarti, B.Dom, D.Gibson, J.Kleinberg, P. Raghavan and S. Rajagopalan. _Automatic Resource Compilation by Analyzing Hyperlink Structure and Associated Text._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
+-   \[Cho 98\] Junghoo Cho, Hector Garcia-Molina, Lawrence Page. _Efficient Crawling Through URL Ordering._ Seventh International Web Conference (WWW 98). Brisbane, Australia, April 14-18, 1998.
+-   \[Gravano 94\] Luis Gravano, Hector Garcia-Molina, and A. Tomasic. _The Effectiveness of GlOSS for the Text-Database Discovery Problem._ Proc. of the 1994 ACM SIGMOD International Conference On Management Of Data, 1994.
+-   \[Kleinberg 98\] Jon Kleinberg, _Authoritative Sources in a Hyperlinked Environment_, Proc. ACM-SIAM Symposium on Discrete Algorithms, 1998.
+-   \[Marchiori 97\] Massimo Marchiori. _The Quest for Correct Information on the Web: Hyper Search Engines._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
+-   \[McBryan 94\] Oliver A. McBryan. GENVL and _WWWW: Tools for Taming the Web. First International Conference on the World Wide Web._ CERN, Geneva (Switzerland), May 25-26-27 1994. [http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps](http://www.cs.colorado.edu/home/mcbryan/mypapers/www94.ps)
+-   \[Page 98\] Lawrence Page, Sergey Brin, Rajeev Motwani, Terry Winograd. _The PageRank Citation Ranking: Bringing Order to the Web._ Manuscript in progress. [http://google.stanford.edu/~backrub/pageranksub.ps](http://google.stanford.edu/~backrub/pageranksub.ps)
+-   \[Pinkerton 94\] Brian Pinkerton, _Finding What People Want: Experiences with the WebCrawler._ The Second International WWW Conference Chicago, USA, October 17-20, 1994. [http://info.webcrawler.com/bp/WWW94.html](http://info.webcrawler.com/bp/WWW94.html)
+-   \[Spertus 97\] Ellen Spertus. _ParaSite: Mining Structural Information on the Web._ The Sixth International WWW Conference (WWW 97). Santa Clara, USA, April 7-11, 1997.
+-   \[TREC 96\] _Proceedings of the fifth Text REtrieval Conference (TREC-5)._ Gaithersburg, Maryland, November 20-22, 1996. Publisher: Department of Commerce, National Institute of Standards and Technology. Editors: D. K. Harman and E. M. Voorhees. Full text at: [http://trec.nist.gov/](http://trec.nist.gov/)
+-   \[Witten 94\] Ian H Witten, Alistair Moffat, and Timothy C. Bell. _Managing Gigabytes: Compressing and Indexing Documents and Images._ New York: Van Nostrand Reinhold, 1994.
+-   \[Weiss 96\] Ron Weiss, Bienvenido Velez, Mark A. Sheldon, Chanathip Manprempre, Peter Szilagyi, Andrzej Duda, and David K. Gifford. _HyPursuit: A Hierarchical Network Search Engine that Exploits Content-Link Hypertext Clustering._ Proceedings of the 7th ACM Conference on Hypertext. New York, 1996.
 
 ## Vitae
 
@@ -673,9 +653,9 @@ It is natural to ask what these numbers mean. Of course, there can be no absolut
 
 Three questions naturally come to mind:
 
-- Does the sequence _I k_ always converge?
-- Is the vector to which it converges independent of the initial vector _I 0_?
-- Do the importance rankings contain the information that we want?
+-   Does the sequence _I k_ always converge?
+-   Is the vector to which it converges independent of the initial vector _I 0_?
+-   Do the importance rankings contain the information that we want?
 
 Given the current method, the answer to all three questions is "No!" However, we'll see how to modify our method so that we can answer "yes" to all three.
 

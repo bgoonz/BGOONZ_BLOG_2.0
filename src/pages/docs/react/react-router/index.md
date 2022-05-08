@@ -3,6 +3,7 @@ title: React Router
 template: docs
 excerpt: " full user interface that maps to the URL"
 ---
+
 ## Main Concepts
 
 This document is a deep dive into the core concepts behind routing as implemented in React Router. It's pretty long, so if you're looking for a more practical guide check out our [quick start tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial).
@@ -25,52 +26,29 @@ But first, some definitions! There are a lot of different ideas around routing f
 
 Here are some words we use a lot when we talk about React Router. The rest of this guide will go into more detail on each one.
 
--   **URL** - The URL in the address bar. A lot of people use the term "URL" and "route" interchangeably, but this is not a route in React Router, it's just a URL.
-    
--   **Location** - This is a React Router specific object that is based on the built-in browser's `window.location` object. It represents "where the user is at". It's mostly an object representation of the URL but has a bit more to it than that.
-    
--   **Location State** - A value that persists with a [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) that isn't encoded in the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url). Much like hash or search params (data encoded in the URL), but stored invisibly in the browser's memory.
-    
--   **History Stack** - As the user navigates, the browser keeps track of each [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) in a stack. If you click and hold the back button in a browser you can see the browser's history stack right there.
-    
--   **Client Side Routing (CSR)** - A plain HTML document can link to other documents and the browser handles the [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack) itself. Client Side Routing enables developers to manipulate the browser history stack without making a document request to the server.
-    
--   **History** - An object that allows React Router to subscribe to changes in the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) as well as providing APIs to manipulate the browser [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack) programmatically.
-    
--   **History Action** - One of `POP`, `PUSH`, or `REPLACE`. Users can arrive at a [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) for one of these three reasons. A push when a new entry is added to the history stack (typically a link click or the programmer forced a navigation). A replace is similar except it replaces the current entry on the stack instead of pushing a new one. Finally, a pop happens when the user clicks the back or forward buttons in the browser chrome.
-    
--   **Segment** - The parts of a [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) or [path pattern](https://reactrouter.com/docs/en/v6/getting-started/concepts#path-pattern) between the `/` characters. For example, "/users/123" has two segments.
-    
--   **Path Pattern** - These look like URLs but can have special characters for matching URLs to routes, like **dynamic segments** (`"/users/:userId"`) or **star segments** (`"/docs/*"`). They aren't URLs, they're patterns that React Router will match.
-    
--   **Dynamic Segment** - A segment of a path pattern that is dynamic, meaning it can match any values in the segment. For example the pattern `/users/:userId` will match URLs like `/users/123`
-    
--   **URL Params** - The parsed values from the URL that matched a [dynamic segment](https://reactrouter.com/docs/en/v6/getting-started/concepts#dynamic-segment).
-    
--   **Router** - Stateful, top-level component that makes all the other components and hooks work.
-    
--   **Route Config** - A tree of **routes objects** that will be ranked and matched (with nesting) against the current location to create a branch of **route matches**.
-    
--   **Route** - An object or Route Element typically with a shape of `{ path, element }` or `<Route path element>`. The `path` is a path pattern. When the path pattern matches the current URL, the element will be rendered.
-    
--   **Route Element** - Or `<Route>`. This element's props are read to create a [route](https://reactrouter.com/docs/en/v6/getting-started/concepts#route) by `<Routes>`, but otherwise does nothing.
-    
--   **Nested Routes** - Because routes can have children and each route defines a portion of the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) through [segments](https://reactrouter.com/docs/en/v6/getting-started/concepts#segment), a single URL can match multiple routes in a nested "branch" of the tree. This enables automatic layout nesting through [outlet](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlet), [relative links](https://reactrouter.com/docs/en/v6/getting-started/concepts#relative-links), and more.
-    
--   **Relative links** - Links that don't start with `/` will inherit the closest route in which they are rendered. This makes it easy to link to deeper URLs without having to know and build up the entire path.
-    
--   **Match** - An object that holds information when a route matches the URL, like the [url params](https://reactrouter.com/docs/en/v6/getting-started/concepts#url-params) and pathname that matched.
-    
--   **Matches** - An array of routes (or branch of the [route config](https://reactrouter.com/docs/en/v6/getting-started/concepts#route-config)) that matches the current [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location). This structure enables [nested routes](https://reactrouter.com/docs/en/v6/getting-started/concepts#nested-routes).
-    
--   **Parent Route** - A route with child routes.
-    
--   **Outlet** - A component that renders the next match in a set of [matches](https://reactrouter.com/docs/en/v6/getting-started/concepts#match).
-    
--   **Index Route** - A child route with no path that renders in the parent's [outlet](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlet) at the parent's [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url).
-    
--   **Layout Route** - A **parent route** without a path, used exclusively for grouping child routes inside a specific layout.
-    
+- **URL** - The URL in the address bar. A lot of people use the term "URL" and "route" interchangeably, but this is not a route in React Router, it's just a URL.
+- **Location** - This is a React Router specific object that is based on the built-in browser's `window.location` object. It represents "where the user is at". It's mostly an object representation of the URL but has a bit more to it than that.
+- **Location State** - A value that persists with a [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) that isn't encoded in the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url). Much like hash or search params (data encoded in the URL), but stored invisibly in the browser's memory.
+- **History Stack** - As the user navigates, the browser keeps track of each [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) in a stack. If you click and hold the back button in a browser you can see the browser's history stack right there.
+- **Client Side Routing (CSR)** - A plain HTML document can link to other documents and the browser handles the [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack) itself. Client Side Routing enables developers to manipulate the browser history stack without making a document request to the server.
+- **History** - An object that allows React Router to subscribe to changes in the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) as well as providing APIs to manipulate the browser [history stack](https://reactrouter.com/docs/en/v6/getting-started/concepts#history-stack) programmatically.
+- **History Action** - One of `POP`, `PUSH`, or `REPLACE`. Users can arrive at a [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) for one of these three reasons. A push when a new entry is added to the history stack (typically a link click or the programmer forced a navigation). A replace is similar except it replaces the current entry on the stack instead of pushing a new one. Finally, a pop happens when the user clicks the back or forward buttons in the browser chrome.
+- **Segment** - The parts of a [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) or [path pattern](https://reactrouter.com/docs/en/v6/getting-started/concepts#path-pattern) between the `/` characters. For example, "/users/123" has two segments.
+- **Path Pattern** - These look like URLs but can have special characters for matching URLs to routes, like **dynamic segments** (`"/users/:userId"`) or **star segments** (`"/docs/*"`). They aren't URLs, they're patterns that React Router will match.
+- **Dynamic Segment** - A segment of a path pattern that is dynamic, meaning it can match any values in the segment. For example the pattern `/users/:userId` will match URLs like `/users/123`
+- **URL Params** - The parsed values from the URL that matched a [dynamic segment](https://reactrouter.com/docs/en/v6/getting-started/concepts#dynamic-segment).
+- **Router** - Stateful, top-level component that makes all the other components and hooks work.
+- **Route Config** - A tree of **routes objects** that will be ranked and matched (with nesting) against the current location to create a branch of **route matches**.
+- **Route** - An object or Route Element typically with a shape of `{ path, element }` or `<Route path element>`. The `path` is a path pattern. When the path pattern matches the current URL, the element will be rendered.
+- **Route Element** - Or `<Route>`. This element's props are read to create a [route](https://reactrouter.com/docs/en/v6/getting-started/concepts#route) by `<Routes>`, but otherwise does nothing.
+- **Nested Routes** - Because routes can have children and each route defines a portion of the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) through [segments](https://reactrouter.com/docs/en/v6/getting-started/concepts#segment), a single URL can match multiple routes in a nested "branch" of the tree. This enables automatic layout nesting through [outlet](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlet), [relative links](https://reactrouter.com/docs/en/v6/getting-started/concepts#relative-links), and more.
+- **Relative links** - Links that don't start with `/` will inherit the closest route in which they are rendered. This makes it easy to link to deeper URLs without having to know and build up the entire path.
+- **Match** - An object that holds information when a route matches the URL, like the [url params](https://reactrouter.com/docs/en/v6/getting-started/concepts#url-params) and pathname that matched.
+- **Matches** - An array of routes (or branch of the [route config](https://reactrouter.com/docs/en/v6/getting-started/concepts#route-config)) that matches the current [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location). This structure enables [nested routes](https://reactrouter.com/docs/en/v6/getting-started/concepts#nested-routes).
+- **Parent Route** - A route with child routes.
+- **Outlet** - A component that renders the next match in a set of [matches](https://reactrouter.com/docs/en/v6/getting-started/concepts#match).
+- **Index Route** - A child route with no path that renders in the parent's [outlet](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlet) at the parent's [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url).
+- **Layout Route** - A **parent route** without a path, used exclusively for grouping child routes inside a specific layout.
 
 ## History and Locations
 
@@ -178,10 +156,10 @@ This is the part of [URL](https://reactrouter.com/docs/en/v6/getting-started/con
 
 People use a lot of different terms for this part of the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url):
 
--   location search
--   search params
--   URL search params
--   query string
+- location search
+- search params
+- URL search params
+- query string
 
 In React Router we call it the "location search". However, location search is a serialized version of [`URLSearchParams`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams). So sometimes we might call it "URL search params" as well.
 
@@ -231,8 +209,8 @@ You can think about `location.state` just like `location.hash` or `location.sear
 
 A couple of great use-cases for location state are:
 
--   Telling the next page where the user came from and branching the UI. The most popular implementation here is showing a record in a modal if the user clicked on an item in a grid view, but if they show up to the URL directly, show the record in its own layout (pinterest, old instagram).
--   Sending a partial record from a list to the next screen so it can render the partial data immediately and then fetching the rest of the data afterward.
+- Telling the next page where the user came from and branching the UI. The most popular implementation here is showing a record in a modal if the user clicked on an item in a grid view, but if they show up to the URL directly, show the record in its own layout (pinterest, old instagram).
+- Sending a partial record from a list to the next screen so it can render the partial data immediately and then fetching the rest of the data afterward.
 
 You set location state in two ways: on `<Link>` or `navigate`:
 
@@ -694,8 +672,8 @@ So, yeah, the semantics of a layout "route" is a bit silly since it has nothing 
 
 When the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url) changes we call that a "navigation". There are two ways to navigate in React Router:
 
--   `<Link>`
--   `navigate`
+- `<Link>`
+- `navigate`
 
 ### Link
 
@@ -703,8 +681,8 @@ This is the primary means of navigation. Rendering a `<Link>` allows the user to
 
 However, links are accessible in that they:
 
--   Still render a `<a href>` so all default accessibility concerns are met (like keyboard, focusability, SEO, etc.)
--   Don't prevent the browser's default behavior if it's a right click or command/control click to "open in new tab"
+- Still render a `<a href>` so all default accessibility concerns are met (like keyboard, focusability, SEO, etc.)
+- Don't prevent the browser's default behavior if it's a right click or command/control click to "open in new tab"
 
 [Nested routes](https://reactrouter.com/docs/en/v6/getting-started/concepts#nested-routes) aren't just about rendering layouts; they also enable "relative links". Consider our `teams` route from before:
 
@@ -772,7 +750,7 @@ let [urlSearchParams] = useSearchParams();
 Let's put it all together from the top!
 
 1.  You render your app:
-    
+
     ```
     ReactDOM.render(
       <BrowserRouter>
@@ -795,23 +773,15 @@ Let's put it all together from the top!
       document.getElementById("root")
     );
     ```
-    
+
 2.  `<BrowserRouter>` creates a [history](https://reactrouter.com/docs/en/v6/getting-started/concepts#history), puts the initial [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) in to state, and subscribes to the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url).
-    
 3.  `<Routes>` recurses it's [child routes](https://reactrouter.com/docs/en/v6/getting-started/concepts#child-route) to build a [route config](https://reactrouter.com/docs/en/v6/getting-started/concepts#route-config), matches those routes against the [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location), creates some route [matches](https://reactrouter.com/docs/en/v6/getting-started/concepts#match), and renders the first match's route element.
-    
 4.  You render an [`<Outlet/>`](https://reactrouter.com/docs/en/v6/getting-started/concepts#outlet) in each [parent route](https://reactrouter.com/docs/en/v6/getting-started/concepts#parent-route).
-    
 5.  The outlets render the next match in the route [matches](https://reactrouter.com/docs/en/v6/getting-started/concepts#match).
-    
 6.  The user clicks a link
-    
 7.  The link calls `navigate()`
-    
 8.  The [history](https://reactrouter.com/docs/en/v6/getting-started/concepts#history) changes the URL and notifies `<BrowserRouter>`.
-    
 9.  `<BrowserRouter>` rerenders, start over at (2)!
-    
 
 That's it! We hope this guide has helped you gain a deeper understanding of the main concepts in React Router.
 
