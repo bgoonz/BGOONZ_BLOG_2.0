@@ -9,14 +9,15 @@ thumb_image: /blog/code_mg4k5cd9s4.png
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
-  - src/data/categories/js.yaml
+    - src/data/categories/js.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/vs-code-extensions.md
+    - src/pages/blog/vs-code-extensions.md
 cmseditable: true
 ---
+
 # Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
