@@ -10,12 +10,12 @@ No matter how experienced a web developer you are, programming is a process of c
 
 Dive into Stack Overflow and GitHub to find the answers to questions you have, or just to scan through the questions other developers are asking. Develop a reading list of industry blogs and magazines. We like these resources:
 
--   [Smashing Magazine](https://www.freelancer.com/community/“https:/www.smashingmagazine.com/“)
--   [CodePen Blog](https://www.freelancer.com/community/“https:/blog.codepen.io/“)
--   [GitHub Blog](https://www.freelancer.com/community/“https:/github.blog/“)
--   [Coding Horror](https://www.freelancer.com/community/“https:/blog.codinghorror.com/“)
--   [CSS Weekly](https://www.freelancer.com/community/“https:/css-weekly.com/“)
--   [Freelancer](https://www.freelancer.com/web-development) (OK, we’re slightly biased)
+- [Smashing Magazine](https://www.freelancer.com/community/“https:/www.smashingmagazine.com/“)
+- [CodePen Blog](https://www.freelancer.com/community/“https:/blog.codepen.io/“)
+- [GitHub Blog](https://www.freelancer.com/community/“https:/github.blog/“)
+- [Coding Horror](https://www.freelancer.com/community/“https:/blog.codinghorror.com/“)
+- [CSS Weekly](https://www.freelancer.com/community/“https:/css-weekly.com/“)
+- [Freelancer](https://www.freelancer.com/web-development) (OK, we’re slightly biased)
 
 ### 2\. Contribute to open-source
 
