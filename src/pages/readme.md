@@ -2094,7 +2094,7 @@ export default class SectionDocs extends React.Component {
                         </div>
                     )}
 
-                    <div className="block-content">
+                    <div className="<iframe ">
                         <div
                             className={classNames('grid', {
                                 'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -2178,7 +2178,7 @@ export default class SectionGrid extends React.Component {
                     )}
 
                     {_.get(section, 'grid_items', null) && (
-                        <div className="block-content">
+                        <div className="<iframe ">
                             <div
                                 className={classNames('grid', {
                                     'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -2263,7 +2263,7 @@ export default class SectionHero extends React.Component {
                         </div>
                     )}
 
-                    {_.get(section, 'content', null) && <div className="block-content">{markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'content', null) && <div className="<iframe ">{markdownify(_.get(section, 'content', null))}</div>}
 
                     {_.get(section, 'actions', null) && (
                         <div className="block-buttons">

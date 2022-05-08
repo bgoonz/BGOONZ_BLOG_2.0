@@ -136,7 +136,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe  class="<iframe " src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -153,7 +153,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe  class="<iframe " src="https://thealgorithms.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -175,7 +175,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe  class="<iframe " src="https://markdown-templates-42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>
@@ -191,7 +191,7 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
+<iframe  class="<iframe " src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" ></iframe>
 <br>
 <br>
 <br>

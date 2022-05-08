@@ -199,7 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
+      <iframe class="<iframe " width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -208,18 +208,18 @@ sections:
     image_position: right
     content: |
       ## Web Dev Utilitiy Tools
-      <iframe class="block-content" width="100%  width="1200px!important"
+      <iframe class="<iframe " width="100%  width="1200px!important"
       height="1000px!important"
         src="https://web-dev-utility-tools-bgoonz.netlify.app/"
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
-      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
+      <iframe src="https://random-static-html-deploys.netlify.app" class="<iframe " width="100%  width="1200px!important" height="1000px!important"></iframe>
+      <iframe class="<iframe " width="100%  width="1200px!important"
       height="1000px!important"
         src="https://cheatsheets-42.netlify.app/"
         clipboard-write;
         encrypted-media; gyroscope; ></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
+      <iframe class="<iframe " width="100%  width="1200px!important"
       height="1000px!important"
         src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
         clipboard-write;
