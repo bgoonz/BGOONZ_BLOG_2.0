@@ -1,7 +1,6 @@
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
-  
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
@@ -19,7 +18,7 @@
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
+
 
 </div>
 <div align="center">
@@ -3714,7 +3713,7 @@ export default class SectionDocs extends React.Component {
                             {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
                         </div>
                     )}
-                    <div className="block-content">
+                    <div className="<iframe ">
                         <div
                             className={classNames('grid', {
                                 'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -3780,7 +3779,7 @@ export default class SectionGrid extends React.Component {
                         </div>
                     )}
                     {_.get(section, 'grid_items', null) && (
-                        <div className="block-content">
+                        <div className="<iframe ">
                             <div
                                 className={classNames('grid', {
                                     'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -3848,7 +3847,7 @@ export default class SectionHero extends React.Component {
                             <h1 className="block-title"> {_.get(section, 'title', null)}</h1>
                         </div>
                     )}
-                    {_.get(section, 'content', null) && <div className="block-content"> {markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'content', null) && <div className="<iframe "> {markdownify(_.get(section, 'content', null))}</div>}
                     {_.get(section, 'actions', null) && (
                         <div className="block-buttons">
                             <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
