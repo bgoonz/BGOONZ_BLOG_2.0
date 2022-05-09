@@ -92,7 +92,7 @@
 
 @media only screen and (min-width: 641px) {
     .block-text {
-        .block-content {
+        .<iframe {
             font-size: 1.125em;
         }
 
@@ -307,7 +307,7 @@
         font-size: 2.25em;
     }
 
-    .block-content {
+    .<iframe {
         font-size: 1.125em;
         line-height: 1.5;
     }
@@ -324,7 +324,7 @@
             font-size: 3em;
         }
 
-        .block-content {
+        .<iframe {
             font-size: 1.25em;
         }
 
