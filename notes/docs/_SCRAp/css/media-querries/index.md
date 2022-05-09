@@ -1,6 +1,7 @@
 ---
 title: CSS Introduction
 excerpt: CSS is among the core languages of the open web
+template: docs
 ---
 
 <!--StartFragment-->
