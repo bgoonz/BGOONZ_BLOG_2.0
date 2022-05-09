@@ -199,7 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -208,12 +208,8 @@ sections:
     image_position: right
     content: |
       ## Web Dev Utilitiy Tools
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px"   src="https://web-dev-utility-tools-bgoonz.netlify.app/" ></iframe>
+      <iframe sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="800px"></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
@@ -221,10 +217,8 @@ sections:
     image_alt: tools
     image_position: left
     content: |
-      <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/"></iframe> 
-      <iframe src="about:blank" frameBorder={0} scrolling="no" width="64px" height="60px"  id="epd0c559dbd1651807292197" className title="chat widget" />
-      <div id='tawk_613041ecd6e7610a49b3326a'></div>
+      <iframe class="block-content" width="100%  width="1200px!important"  height="800px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px"  src="https://cheatsheets-42.netlify.app/"></iframe> 
     actions: []
     type: section_content
     title: Tools Showcase

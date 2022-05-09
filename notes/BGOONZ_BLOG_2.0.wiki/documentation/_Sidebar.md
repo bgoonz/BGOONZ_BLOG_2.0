@@ -133,8 +133,8 @@
 -   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 
-Sitemap:
-========
+# Sitemap:
+
 
 
 ### - [✅] [HOME](https://bgoonz-blog.netlify.app/)

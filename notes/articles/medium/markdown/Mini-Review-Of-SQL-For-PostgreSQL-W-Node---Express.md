@@ -12,11 +12,11 @@ What is a Query?
 
 **What is a Query?**
 
-- <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
-- <span id="e626">`psql -U postgres`</span>
-- <span id="f34d">Let's us access the postgres server as the user 'postgres'</span>
-- <span id="113b">`-U` stands for 'user'.</span>
-- <span id="60c5">`\q` is used to quit postgres at any time.</span>
+-   <span id="2026">`Query` : A question we're asking a database, aiming to get a response back.</span>
+-   <span id="e626">`psql -U postgres`</span>
+-   <span id="f34d">Let's us access the postgres server as the user 'postgres'</span>
+-   <span id="113b">`-U` stands for 'user'.</span>
+-   <span id="60c5">`\q` is used to quit postgres at any time.</span>
 
 <!-- -->
 
@@ -44,22 +44,22 @@ What is a Query?
     ('Leinni', 1, 'Miniature Schnauzer', 25, 'yes' ),
     ('Max', 1.6, 'German Shepherd', 65, 'no');
 
-- <span id="2c10">SQL Data Types listed here:</span>
-- <span id="e3ef">`varchar(n)` : variable length char, n represents the limit.</span>
-- <span id="3af6">`numeric(p, s)` : floating point number, with _p_ digits and _s_ number of places after the decimal point.</span>
-- <span id="2eff">`int` : 4 byte integer.</span>
-- <span id="a736">`boolean` : regular boolean value.</span>
-- <span id="1ff4">`SELECT Query` : Query used to get results back from a table.</span>
-- <span id="d1a2">Syntax `SELECT [columns] FROM [table]`.</span>
-- <span id="d9bb">You can use `SELECT *` to get all rows back in a given table.</span>
-- <span id="96d6">To select multiple columns you could use:</span>
+-   <span id="2c10">SQL Data Types listed here:</span>
+-   <span id="e3ef">`varchar(n)` : variable length char, n represents the limit.</span>
+-   <span id="3af6">`numeric(p, s)` : floating point number, with _p_ digits and _s_ number of places after the decimal point.</span>
+-   <span id="2eff">`int` : 4 byte integer.</span>
+-   <span id="a736">`boolean` : regular boolean value.</span>
+-   <span id="1ff4">`SELECT Query` : Query used to get results back from a table.</span>
+-   <span id="d1a2">Syntax `SELECT [columns] FROM [table]`.</span>
+-   <span id="d9bb">You can use `SELECT *` to get all rows back in a given table.</span>
+-   <span id="96d6">To select multiple columns you could use:</span>
 
 <!-- -->
 
     SELECT name , age_yrs , weight_lbs FROM puppies;
 
-- <span id="9e78">It is recommended to perform queries with multi-line formatting because column selection can become very long.</span>
-- <span id="16a2">Also if you format it like this you can easily comment out certain columns with double dash.</span>
+-   <span id="9e78">It is recommended to perform queries with multi-line formatting because column selection can become very long.</span>
+-   <span id="16a2">Also if you format it like this you can easily comment out certain columns with double dash.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*tj99LLWFAJYMoZIf" class="graf-image" /></figure>
 
@@ -69,21 +69,21 @@ What is a Query?
 
 **Using SELECT and WHERE**
 
-- <span id="43bf">We can filter our information from our SELECT queries by using WHERE.</span>
+-   <span id="43bf">We can filter our information from our SELECT queries by using WHERE.</span>
 
 **WHERE clause for a single value**
 
     SELECT name, breed FROM puppies
       WHERE breed = 'Corgi';
 
-- <span id="d62e">Note that the string must use single quotation marks because PostgreSQL will convert all names to lowercase unless DOUBLE quoted.</span>
+-   <span id="d62e">Note that the string must use single quotation marks because PostgreSQL will convert all names to lowercase unless DOUBLE quoted.</span>
 
 **WHERE clause for a list of values**
 
     SELECT name, breed FROM puppies
       WHERE breed IN ('Corgi', 'Beagle', 'Yorkshire Terrier');
 
-- <span id="94cc">Use the structure WHERE \[col\] IN ('val', 'val2'…)</span>
+-   <span id="94cc">Use the structure WHERE \[col\] IN ('val', 'val2'…)</span>
 
 **WHERE clause for a range of values**
 
@@ -92,7 +92,7 @@ What is a Query?
 
 **ORDER BY**
 
-- <span id="b401">You can use `Order By` to get back your data in a specified way.</span>
+-   <span id="b401">You can use `Order By` to get back your data in a specified way.</span>
 
 <!-- -->
 
@@ -102,7 +102,7 @@ What is a Query?
 
 **LIMIT and OFFSET**
 
-- <span id="3943">You can limit the amount of rows returned by using the LIMIT keyword.</span>
+-   <span id="3943">You can limit the amount of rows returned by using the LIMIT keyword.</span>
 
 <!-- -->
 
@@ -111,7 +111,7 @@ What is a Query?
     ORDER BY age_yrs
     LIMIT 100 OFFSET 100;
 
-- <span id="7340">You can on the OFFSET keyword after LIMIT to retrieve the next 100 after the LIMIT clause.</span>
+-   <span id="7340">You can on the OFFSET keyword after LIMIT to retrieve the next 100 after the LIMIT clause.</span>
 
 **SQL operators**
 
@@ -119,8 +119,8 @@ What is a Query?
       WHERE breed NOT IN ('Miniature Schnauzer', 'Basset Hound', 'Labradoodle')
         AND breed NOT LIKE '%Shepherd';
 
-- <span id="f700">Example of a query with a WHERE clause using several logical operators.</span>
-- <span id="d31c">The % is a wildcard.</span>
+-   <span id="f700">Example of a query with a WHERE clause using several logical operators.</span>
+-   <span id="d31c">The % is a wildcard.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*662qwyPcdX2fxy6Q.png" class="graf-image" /></figure>-   <span id="d0b9">You can also use mathematical operators in WHERE clauses.</span>
 
@@ -140,7 +140,7 @@ What is a Query?
 
 ### Using INSERT
 
-- <span id="8b98">Used to add data into a table.</span>
+-   <span id="8b98">Used to add data into a table.</span>
 
 <!-- -->
 
@@ -155,14 +155,14 @@ What is a Query?
     ('Donna', 'Noble'),
     ('River', 'Song');
 
-- <span id="2291">Note the use of single quotation marks for string values.</span>
-- <span id="810d">DEFAULT can be used in lieu of our SERIAL pseudo type.</span>
-- <span id="94af">You can do multiple insert by first specifying the column names and the adding in the data wrapped in parenthesis seperated by a comma.</span>
+-   <span id="2291">Note the use of single quotation marks for string values.</span>
+-   <span id="810d">DEFAULT can be used in lieu of our SERIAL pseudo type.</span>
+-   <span id="94af">You can do multiple insert by first specifying the column names and the adding in the data wrapped in parenthesis seperated by a comma.</span>
 
 ### Using INNER JOIN
 
-- <span id="8c61">Relationships are key in RD's.</span>
-- <span id="b080">We create table associations through _foreign keys_ and _primary keys_.</span>
+-   <span id="8c61">Relationships are key in RD's.</span>
+-   <span id="b080">We create table associations through _foreign keys_ and _primary keys_.</span>
 
 <!-- -->
 

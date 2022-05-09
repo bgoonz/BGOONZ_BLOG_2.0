@@ -3,17 +3,18 @@ title: Awesome Lists
 weight: 0
 excerpt: this is an awesome list of awesome lists
 seo:
-  title: ""
-  description: ""
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
+
 ## Awesome Lists:
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://search-awesome.vercel.app/" height="800px" width="1000px" scrolling="yes"   ></iframe>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://search-awesome.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen></iframe>
 
 - [**sindresorhus/awesome-nodejs**](https://github.com/sindresorhus/awesome-nodejs)
 - [**bcoe/awesome-cross-platform-nodejs**](https://github.com/bcoe/awesome-cross-platform-nodejs)

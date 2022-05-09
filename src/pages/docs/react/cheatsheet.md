@@ -1,45 +1,47 @@
 ---
-title: "React Cheat Sheets:"
+title: 'React Cheat Sheets:'
 weight: 0
 excerpt: cheat sheet
 seo:
-  title: ""
-  description: ""
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: docs
 ---
+
 
 # React Patterns:
 
 <iframe height="600px" width="1000px" sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/lucid-pateu-ln8ex?fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="react patterns"
-      ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
 ## React Cheat Sheet
 
 ---
-
 ---
 
 <details>
 
-<summary>  See More </summary>
+<summary>  See More </summary>   
 
 ### Components
 
 ```jsx
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 ```
 
 ```jsx
 class Hello extends React.Component {
-  render() {
-    return <div className="message-box">Hello {this.props.name}</div>;
+  render () {
+    return <div className='message-box'>
+      Hello {this.props.name}
+    </div>
   }
 }
 ```
@@ -267,7 +269,7 @@ See: [Component API](https://facebook.github.io/react/docs/component-api.html)
 ### Mounting
 
 | Method                   | Description                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+|--------------------------|------------------------------------------------------------------------------------------------------|
 | `constructor` _(props)_  | Before rendering [#](https://reactjs.org/docs/react-component.html#constructor)                      |
 | `componentWillMount()`   | _Don't use this_ [#](https://reactjs.org/docs/react-component.html#componentwillmount)               |
 | `render()`               | Render [#](https://reactjs.org/docs/react-component.html#render)                                     |
@@ -280,7 +282,7 @@ Set initial the state on `constructor()`. Add DOM event handlers, timers (etc) o
 ### Updating
 
 | Method                                                  | Description                                          |
-| ------------------------------------------------------- | ---------------------------------------------------- |
+|---------------------------------------------------------|------------------------------------------------------|
 | `componentDidUpdate` _(prevProps, prevState, snapshot)_ | Use `setState()` here, but remember to compare props |
 | `shouldComponentUpdate` _(newProps, newState)_          | Skips `render()` if returns false                    |
 | `render()`                                              | Render                                               |
@@ -409,7 +411,7 @@ Also see: [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
 #### Basic Hooks
 
 | Hook                       | Description                               |
-| -------------------------- | ----------------------------------------- |
+|----------------------------|-------------------------------------------|
 | `useState`_(initialState)_ |                                           |
 | `useEffect`_(() => { … })_ |                                           |
 | `useContext`_(MyContext)_  | value returned from `React.createContext` |
@@ -419,7 +421,7 @@ Full details: [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-
 #### Additional Hooks
 
 | Hook                                      | Description                                                                  |
-| ----------------------------------------- | ---------------------------------------------------------------------------- |
+|-------------------------------------------|------------------------------------------------------------------------------|
 | `useReducer`_(reducer, initialArg, init)_ |                                                                              |
 | `useCallback`_(() => { … })_              |                                                                              |
 | `useMemo`_(() => { … })_                  |                                                                              |
@@ -671,13 +673,13 @@ import PropTypes from 'prop-types'
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 | Key   | Description |
-| ----- | ----------- |
+|-------|-------------|
 | `any` | Anything    |
 
 #### Basic
 
 | Key      | Description   |
-| -------- | ------------- |
+|----------|---------------|
 | `string` |               |
 | `number` |               |
 | `func`   | Function      |
@@ -686,21 +688,21 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 #### Enum
 
 | Key                       | Description |
-| ------------------------- | ----------- |
+|---------------------------|-------------|
 | `oneOf`_(any)_            | Enum types  |
 | `oneOfType`_(type array)_ | Union       |
 
 #### Array
 
 | Key            | Description |
-| -------------- | ----------- |
+|----------------|-------------|
 | `array`        |             |
 | `arrayOf`_(…)_ |             |
 
 #### Object
 
 | Key               | Description                          |
-| ----------------- | ------------------------------------ |
+|-------------------|--------------------------------------|
 | `object`          |                                      |
 | `objectOf`_(…)_   | Object with values of a certain type |
 | `instanceOf`_(…)_ | Instance of a class                  |
@@ -709,14 +711,14 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 #### Elements
 
 | Key       | Description   |
-| --------- | ------------- |
+|-----------|---------------|
 | `element` | React element |
 | `node`    | DOM node      |
 
 #### Required
 
 | Key                | Description |
-| ------------------ | ----------- |
+|--------------------|-------------|
 | `(···).isRequired` | Required    |
 
 ### Basic types
@@ -796,8 +798,9 @@ MyCo.propTypes = {
 }
 ```
 
----
 
+
+---
 ---
 
 # React:
@@ -817,24 +820,21 @@ React DOM:
 ### Rendering (ES5)
 
 ```js
-ReactDOM.render(
-  React.createElement(Link, { name: "HackHall.com" }),
-  document.getElementById("menu")
-);
+ReactDOM.render(React.createElement(Link, { name: 'HackHall.com' }), document.getElementById('menu'));
 ```
 
 ### Rendering (ES5+JSX)
 
 ```js
-ReactDOM.render(<Link name="HackHall.com" />, document.getElementById("menu"));
+ReactDOM.render(<Link name="HackHall.com" />, document.getElementById('menu'));
 ```
 
 ## Server-side Rendering
 
 ```js
-var ReactDOMServer = require("react-dom/server");
-ReactDOMServer.renderToString(Link, { name: "HackHall.com" });
-ReactDOMServer.renderToStaticMarkup(Link, { name: "HackHall.com" });
+var ReactDOMServer = require('react-dom/server');
+ReactDOMServer.renderToString(Link, { name: 'HackHall.com' });
+ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
 ```
 
 ## Components
@@ -843,15 +843,10 @@ ReactDOMServer.renderToStaticMarkup(Link, { name: "HackHall.com" });
 
 ```js
 var Link = React.createClass({
-  displayName: "Link",
-  render: function () {
-    return React.createElement(
-      "a",
-      { className: "btn", title: this.props.name },
-      "Click ->",
-      this.props.name
-    );
-  },
+    displayName: 'Link',
+    render: function () {
+        return React.createElement('a', { className: 'btn', title: this.props.name }, 'Click ->', this.props.name);
+    }
 });
 ```
 
@@ -859,13 +854,13 @@ var Link = React.createClass({
 
 ```js
 var Link = React.createClass({
-  render: function () {
-    return (
-      <a className="btn" title={this.props.name}>
-        Click -> this.props.name
-      </a>
-    );
-  },
+    render: function () {
+        return (
+            <a className="btn" title={this.props.name}>
+                Click -> this.props.name
+            </a>
+        );
+    }
 });
 ```
 
@@ -873,13 +868,13 @@ var Link = React.createClass({
 
 ```js
 class Link extends React.Component {
-  render() {
-    return (
-      <a className="btn" title={this.props.name}>
-        Click -> this.props.name
-      </a>
-    );
-  }
+    render() {
+        return (
+            <a className="btn" title={this.props.name}>
+                Click -> this.props.name
+            </a>
+        );
+    }
 }
 ```
 
@@ -891,7 +886,9 @@ class Link extends React.Component {
 
 <details>
 
-<summary>  </summary>
+<summary>  </summary>   
+
+
 
 ```sh
 
@@ -1237,30 +1234,25 @@ ES5:
 
 ```js
 var Link = React.createClass({
-  propTypes: { name: React.PropTypes.string },
-  getDefaultProps: function () {
-    return { initialCount: 0 };
-  },
-  getInitialState: function () {
-    return { count: this.props.initialCount };
-  },
-  tick: function () {
-    this.setState({ count: this.state.count + 1 });
-  },
-  render: function () {
-    return React.createElement(
-      "a",
-      {
-        className: "btn",
-        href: "#",
-        title: this.props.name,
-        onClick: this.tick.bind(this),
-      },
-      "Click ->",
-      this.props.name ? this.props.name : "webapplog.com",
-      " (Clicked: " + this.state.count + ")"
-    );
-  },
+    propTypes: { name: React.PropTypes.string },
+    getDefaultProps: function () {
+        return { initialCount: 0 };
+    },
+    getInitialState: function () {
+        return { count: this.props.initialCount };
+    },
+    tick: function () {
+        this.setState({ count: this.state.count + 1 });
+    },
+    render: function () {
+        return React.createElement(
+            'a',
+            { className: 'btn', href: '#', title: this.props.name, onClick: this.tick.bind(this) },
+            'Click ->',
+            this.props.name ? this.props.name : 'webapplog.com',
+            ' (Clicked: ' + this.state.count + ')'
+        );
+    }
 });
 ```
 
@@ -1268,29 +1260,24 @@ ES5 + JSX:
 
 ```js
 var Link = React.createClass({
-  propTypes: { name: React.PropTypes.string },
-  getDefaultProps: function () {
-    return { initialCount: 0 };
-  },
-  getInitialState: function () {
-    return { count: this.props.initialCount };
-  },
-  tick: function () {
-    this.setState({ count: this.state.count + 1 });
-  },
-  render: function () {
-    return (
-      <a
-        onClick={this.tick.bind(this)}
-        href="#"
-        className="btn"
-        title={this.props.name}
-      >
-        Click -> {this.props.name ? this.props.name : "webapplog.com"}
-        (Clicked: {this.state.count})
-      </a>
-    );
-  },
+    propTypes: { name: React.PropTypes.string },
+    getDefaultProps: function () {
+        return { initialCount: 0 };
+    },
+    getInitialState: function () {
+        return { count: this.props.initialCount };
+    },
+    tick: function () {
+        this.setState({ count: this.state.count + 1 });
+    },
+    render: function () {
+        return (
+            <a onClick={this.tick.bind(this)} href="#" className="btn" title={this.props.name}>
+                Click -> {this.props.name ? this.props.name : 'webapplog.com'}
+                (Clicked: {this.state.count})
+            </a>
+        );
+    }
 });
 ```
 
@@ -1298,26 +1285,21 @@ ES6 + JSX:
 
 ```js
 export class Link extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: props.initialCount };
-  }
-  tick() {
-    this.setState({ count: this.state.count + 1 });
-  }
-  render() {
-    return (
-      <a
-        onClick={this.tick.bind(this)}
-        href="#"
-        className="btn"
-        title={this.props.name}
-      >
-        Click -> {this.props.name ? this.props.name : "webapplog.com"}
-        (Clicked: {this.state.count})
-      </a>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = { count: props.initialCount };
+    }
+    tick() {
+        this.setState({ count: this.state.count + 1 });
+    }
+    render() {
+        return (
+            <a onClick={this.tick.bind(this)} href="#" className="btn" title={this.props.name}>
+                Click -> {this.props.name ? this.props.name : 'webapplog.com'}
+                (Clicked: {this.state.count})
+            </a>
+        );
+    }
 }
 Link.propTypes = { initialCount: React.PropTypes.number };
 Link.defaultProps = { initialCount: 0 };

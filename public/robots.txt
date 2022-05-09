@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: https://bgoonz-blog.netlify.app/
-Sitemap: https://bgoonz-blog.netlify.app/Sitemap.xml

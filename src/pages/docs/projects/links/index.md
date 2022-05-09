@@ -3,9 +3,8 @@ title: Links
 template: docs
 excerpt: Links to my websites
 ---
-
 | https://bgoonz-blog-2-0.pages.dev/blog/platform-docs                                            |
-| ----------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------------------------------------------------|
 | https://bgoonz-blog-2-0.pages.dev/docs                                                          |
 | https://bgoonz-blog-2-0.pages.dev/docs/about                                                    |
 | https://bgoonz-blog-2-0.pages.dev/docs/about/job-search                                         |
