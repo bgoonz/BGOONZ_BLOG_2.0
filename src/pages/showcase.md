@@ -131,7 +131,7 @@ sections:
             type: grid_item
             image: images/energetic-sunflower.png
           - title: Web Audio Workstation
-            title_url: lorem-ipsum
+            title_url: https://mihirbegmusiclab.netlify.app/
             image_alt: image of
             content: |+
                 Made using jQuery and Vanilla JS
@@ -165,7 +165,7 @@ seo:
           value: project showcase
           keyName: property
         - name: 'og:image'
-          value: images/My Post-4ecb169f.png
+          value: images/background.gif
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
@@ -175,7 +175,7 @@ seo:
         - name: 'twitter:description'
           value: This is the showcase page
         - name: 'twitter:image'
-          value: images/5.jpg
+          value: images/redux-state.gif
           relativeUrl: true
     description: >-
         Git HTML PREVIEW, Guitar Effects, Data Structures, Redux, Podcast Blog,

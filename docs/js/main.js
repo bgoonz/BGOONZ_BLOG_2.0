@@ -2,6 +2,7 @@ $('ul li a').bind('click', function () {
     $('ul li a').removeClass('active');
     $(this).addClass('active');
 });
+
 $(document).ready(function () {
     $.fn.waypoint.offset = 200;
     $('article').waypoint(function (event, direction) {
