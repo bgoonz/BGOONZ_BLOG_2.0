@@ -6,12 +6,7 @@
 
 MDX is markdown for the component era. It lets you write JSX embedded inside markdown. It’s a great combination because it allows you to use markdown’s often terse syntax (such as `# heading`) for the little things and JSX for more advanced components.
 
-## [](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#why-mdx)Why 
-
-
-
-
-MDX?
+## [](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#why-mdx)Why MDX?
 
 Before MDX, some of the benefits of writing Markdown were lost when integrating with JSX. Implementations were often template string-based which required lots of escaping and cumbersome syntax.
 

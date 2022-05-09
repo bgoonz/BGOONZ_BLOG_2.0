@@ -31,14 +31,14 @@ Add the plugin to your `gatsby-config.js` file with your [Disqus shortname](http
 ```js
 // gatsby-config.js
 module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `your-disqus-shortname`,
-      },
-    },
-  ],
+    plugins: [
+        {
+            resolve: `gatsby-plugin-disqus`,
+            options: {
+                shortname: `your-disqus-shortname`
+            }
+        }
+    ]
 };
 ```
 
@@ -62,22 +62,22 @@ All of the following parameters are optional, though providing a `url`, `identif
 You can use the plugin as shown in this brief example:
 
 ```jsx
-import { Disqus, CommentCount } from "gatsby-plugin-disqus";
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 const PostTemplate = () => {
-  let disqusConfig = {
-    url: `${config.siteUrl + location.pathname}`,
-    identifier: post.id,
-    title: post.title,
-  };
-  return (
-    <>
-      <h1>{post.title}</h1>
-      <CommentCount config={disqusConfig} placeholder={"..."} />
-      /* Post Contents */
-      <Disqus config={disqusConfig} />
-    </>
-  );
+    let disqusConfig = {
+        url: `${config.siteUrl + location.pathname}`,
+        identifier: post.id,
+        title: post.title
+    };
+    return (
+        <>
+            <h1>{post.title}</h1>
+            <CommentCount config={disqusConfig} placeholder={'...'} />
+            /* Post Contents */
+            <Disqus config={disqusConfig} />
+        </>
+    );
 };
 
 export default PostTemplate;

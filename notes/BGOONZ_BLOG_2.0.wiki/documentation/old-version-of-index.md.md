@@ -103,7 +103,7 @@ sections:
     image_alt: bryan-guner
     image_position: left
     content: >-
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%
       src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
       player"  clipboard-write;
       allowfullscreen></iframe>
@@ -120,7 +120,7 @@ sections:
     image_alt: listen to my playlist
     image_position: left
     content: >
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%
       src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
       width="100%" height="380" frameBorder="0" allowtransparency="true"
       allow="encrypted-media"></iframe>
@@ -176,7 +176,7 @@ sections:
     image_alt: image of
     image_position: left
     content: |-
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%   width="800" height="575"
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%   width="800" height="575"
         src="https://code-playground.netlify.app/index.html" title="YouTube video
         player"  clipboard-write;
         allowfullscreen></iframe>
@@ -215,7 +215,7 @@ sections:
     image_alt: image of
     image_position: left
     content: |
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%     width="800" height="575"
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%     width="800" height="575"
        src="https://iframeshowcase.netlify.app/" title="YouTube video
        player"  clipboard-write;
        allowfullscreen></iframe>
@@ -233,7 +233,7 @@ sections:
     image_alt: image of
     image_position: left
     content: |-
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%   width="800" height="575"
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%   width="800" height="575"
        src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
        player"  clipboard-write;
        allowfullscreen></iframe>
@@ -244,7 +244,7 @@ sections:
     image_alt: lorem-ipsum
     image_position: left
     content: |-
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%  width="800" height="575"
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%  width="800" height="575"
         src="https://bgoonz.blogspot.com/" title="YouTube video
         player"  clipboard-write;
         allowfullscreen></iframe>
@@ -255,7 +255,7 @@ sections:
     image_alt: blog
     image_position: left
     content: |-
-      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="block-content" width="100%  width="800" height="575"
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%  width="800" height="575"
        src="https://blog-w-comments.vercel.app/" title="YouTube video
        player"  clipboard-write;
        allowfullscreen></iframe>
