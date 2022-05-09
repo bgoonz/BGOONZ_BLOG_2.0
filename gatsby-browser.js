@@ -14,7 +14,8 @@ exports.onInitialClientRender = () => {
     window.onGatsbyInitialClientRender();
   }
   if ( 'onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate === 'function' ) {
-    window.onGatsbyRouteUpdate();
+      window.onGatsbyRouteUpdate();
+      
   }
 };
 exports.onRouteUpdate = () => {

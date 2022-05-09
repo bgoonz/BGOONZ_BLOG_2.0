@@ -1,8 +1,8 @@
 ﻿<h2 id="react-hooks-and-other-methods">React Hooks and other methods</h2>
 <p>Despite the wide availability of npm packages, at times, we might need to rely on a few external libraries that require us to import some JS files.</p>
 <p>
-    For features used across the application, we can simply add JS files to <code>head</code> using the <code>&lt;script&gt;</code> tag in our global
-    <code>index.html</code> file.
+    For features used across the application, we can simply add JS files to
+    <code>head</code> using the <code>&lt;script&gt;</code> tag in our global <code>index.html</code> file.
 </p>
 <p>
     However, for the features that are used in specific components, this makes no sense. Since React doesn't support the <code>&lt;script&gt;</code> tag in
@@ -10,10 +10,11 @@
 </p>
 <p>This is the easiest way of loading JS files for a beginner.</p>
 <p>
-    <a href="https://www.npmjs.com/package/react-script-tag">React-script-tag</a> is an npm package that provides a React <code>&lt;script&gt;</code> tag that
-    supports universal rendering. All standard <code>&lt;script&gt;</code>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">attributes</a> like <code>async</code>, <code>src</code>, <code>type</code>, and
-    <code>defer</code> are supported, including <code>onLoad</code> and <code>onError</code> callbacks.
+    <a href="https://www.npmjs.com/package/react-script-tag">React-script-tag</a>
+    is an npm package that provides a React <code>&lt;script&gt;</code> tag that supports universal rendering. All standard <code>&lt;script&gt;</code>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">attributes</a>
+    like <code>async</code>, <code>src</code>, <code>type</code>, and <code>defer</code> are supported, including <code>onLoad</code> and
+    <code>onError</code> callbacks.
 </p>
 <p>
     <strong>import</strong> ScriptTag <strong>from</strong> 'react-script-tag';const Demo = props ⇒ (
@@ -65,8 +66,9 @@
     where we will remove the appended script.
 </p>
 <p>
-    React allows us to build <a href="https://reactjs.org/docs/hooks-custom.html">custom Hooks</a>, which let us extract component logic into reusable
-    functions. The logic to append an external JS file to a component could be stored as a custom Hook as below:
+    React allows us to build
+    <a href="https://reactjs.org/docs/hooks-custom.html">custom Hooks</a>, which let us extract component logic into reusable functions. The logic to append an
+    external JS file to a component could be stored as a custom Hook as below:
 </p>
 <p>Which could be used in components as below:</p>
 <p>

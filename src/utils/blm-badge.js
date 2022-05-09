@@ -158,4 +158,4 @@ MakerBadge.prototype = {
         }
     }
 };
-var BLMBadge = new MakerBadge();
+let BLMBadge = new MakerBadge();
