@@ -199,15 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
-=======
-
->>>>>>> master
-=======
       <iframe class="block-content" width="100%  width="1200px!important" height="800px" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
->>>>>>> d6f047844f6530f888713d8b0e8963cc2f40f62f
     actions: []
     type: section_content
   - title: Latest & Greatest
