@@ -1,0 +1,30 @@
+root_docs_path: /docs
+sections:
+    - about
+    - articles
+    - audio
+    - archive
+    - career
+    - community
+    - content
+    - css
+    - docs
+    - ds-algo
+    - faq
+    - general-structured-data-guidelines
+    - git
+    - glossary
+    - interact
+    - javascript
+    - js-tips
+    - leetcode
+    - netlify-cms-jamstack
+    - overflow
+    - projects
+    - python
+    - quick-ref
+    - react
+    - reference
+    - tips
+    - tools
+    - tutorials
