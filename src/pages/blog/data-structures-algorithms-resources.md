@@ -16,6 +16,7 @@ tags:
 show_author_bio: true
 cmseditable: true
 ---
+
 # Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
