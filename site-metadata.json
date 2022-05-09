@@ -4,8 +4,7 @@
         "logo_img": "images/home-button.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
-        "nav_links": [
-            {
+        "nav_links": [{
                 "url": "/docs/sitemap",
                 "label": "Navigation",
                 "style": "primary",
@@ -13,8 +12,7 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Docs",
                         "url": "/docs",
                         "style": "primary",
@@ -66,8 +64,7 @@
                 "url": "/blog/",
                 "style": "primary",
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Blog-Post-Archive",
                         "url": "https://bgoonz.blogspot.com/",
                         "style": "primary",
@@ -105,8 +102,7 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Job Boards",
                         "url": "docs/career/job-boards",
                         "style": "primary",
@@ -148,8 +144,7 @@
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Resource-Archive-Server",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
@@ -176,7 +171,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-
                     {
                         "label": "Top Repos",
                         "url": "/docs",
@@ -197,7 +191,6 @@
                 ],
                 "new_window": false
             },
-
             {
                 "label": "Projects",
                 "url": "docs/projects",
@@ -206,8 +199,7 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Potluck Planner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -358,8 +350,7 @@
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Write Docs",
                         "url": "https://bgoonz-blog.netlify.app/admin/#/collections/docs",
                         "style": "primary",
@@ -394,8 +385,7 @@
                 "url": "/docs/tools",
                 "style": "primary",
                 "has_subnav": true,
-                "subnav_links": [
-                    {
+                "subnav_links": [{
                         "label": "Github HTML Previewer",
                         "url": "https://githtmlpreview.netlify.app/",
                         "style": "primary",

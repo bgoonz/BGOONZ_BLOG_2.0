@@ -168,7 +168,7 @@ sections:
           - label: View In One Drive
             url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
             style: secondary
-          - label: lorem-ipsum
+          - label: Web Version
             url: '#'
             style: link
             icon_class: dev
@@ -199,7 +199,7 @@ sections:
     image_alt: showcase
     image_position: left
     content: >-
-      <iframe class="utterances-frame" title="Comments" scrolling="no" src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=bgoonz%2FBGOONZ_BLOG_2.0&issue-term=url&label=comment&theme=github-light&crossorigin=anonymous&async=&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2Fadmin%2F&origin=https%3A%2F%2Fbgoonz-blog.netlify.app&pathname=admin%2F&title=Content+Manager&description=&og%3Atitle=&session=893b13e5949a24761d07a5a8lPqWXyqXu6NYrAlbw5%2FXWJwhyGoNgw0Nfqt4f6jL%2B%2BhqBSHrR9YC4g4tA5eUQRuWlCEvLGnO9En39ieuEAzoM840RS6pkSo8sL5ViCXQ3IcqQR68vd%2FbOvjEWgU%3D" loading="lazy"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px" src="https://rss.app/embed/v1/wall/WHCMA322pJEQ58et" frameborder="0"></iframe>
     actions: []
     type: section_content
   - title: Latest & Greatest
@@ -208,22 +208,8 @@ sections:
     image_position: right
     content: |
       ## Web Dev Utilitiy Tools
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important"></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
-      <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-        clipboard-write;
-        encrypted-media; gyroscope; ></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px"   src="https://web-dev-utility-tools-bgoonz.netlify.app/" ></iframe>
+      <iframe sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="800px"></iframe>
     actions: []
     type: section_content
     image: images/cool annimation.gif
@@ -231,8 +217,8 @@ sections:
     image_alt: tools
     image_position: left
     content: |
-      ![Tool Showcase](images/static-server-5bf5ad2d.PNG)Tool Showcase
-      https://bgoonz-blog.netlify.app/docs/tools/
+      <iframe class="block-content" width="100%  width="1200px!important"  height="800px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe>
+      <iframe class="block-content" width="100%  width="1200px!important" height="800px"  src="https://cheatsheets-42.netlify.app/"></iframe> 
     actions: []
     type: section_content
     title: Tools Showcase
