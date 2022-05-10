@@ -5,7 +5,7 @@ subtitle: Basic Web Development Environment Setup
 excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
 date: 2022-05-08T18:10:03.296Z
 image: /blog/vscode.png
-thumb_image: /blog/code_mg4k5cd9s4.png
+thumb_image: /blog/vscode-editor.png
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
