@@ -17,8 +17,8 @@ function toGlobalName(name) {
     .replace(new RegExp(/\s/, 'g'), '')
     .replace(new RegExp(/\w/), s => s.toUpperCase());
 }
-console.log(toGlobalName('fs'));
-const packages = fs.readdirSync(path.resolve(__dirname, '../src/components'));
+
+const packages = fs.readdirSync(path.resolve(__dirname, '../packages'));
 
 const packageExports = {};
 packages.map(name => {

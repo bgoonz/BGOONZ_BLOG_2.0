@@ -40,7 +40,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   skip-ls-check: true
                   skip-install: true
-                  shell-command: 'npm --version'
+                  shell-command: 'npm --14.5.0'
 
     node:
         name: 'nvm install-latest-npm'

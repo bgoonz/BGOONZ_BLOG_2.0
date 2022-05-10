@@ -33,6 +33,13 @@
 
   
   
+  ```bash
+  
+  npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  -f
+  
+  ```
+  
+  
 ---
   
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
