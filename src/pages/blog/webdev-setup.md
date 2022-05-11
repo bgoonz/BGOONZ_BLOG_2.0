@@ -60,13 +60,13 @@ Open an Ubuntu terminal if you don't have one open already.
 
 **Note: if you want git to remember your login credentials type:**
 
-    $ git config --global credential.helper store
+    git config --global credential.helper store
 
 ### Google Chrome
 
 Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
+1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="<http://chrome.google.com>/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
 2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".</span>
 
 ### Node.js
@@ -140,7 +140,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
