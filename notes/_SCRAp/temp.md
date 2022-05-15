@@ -2,18 +2,17 @@
 title: Data Structures In Python
 template: docs
 excerpt: In this tutorial, you'll learn about Python's data structures. You'll
-  look at several implementations of abstract data types and learn which
-  implementations are best for your specific use cases.
+    look at several implementations of abstract data types and learn which
+    implementations are best for your specific use cases.
 ---
 
 # Common Python Data Structures (Guide) – Real Python
 
-
-
-
 ---
+
 ## Dictionaries, Maps, and Hash Tables
-In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary**  **key**.
+
+In Python, **dictionaries(or dicts for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary** **key**.
 
 Dictionaries are also often called **maps**, **hashmaps**, **lookup tables**, or **associative arrays**. They allow for the efficient lookup, insertion, and deletion of any object associated with a given key.
 
@@ -22,11 +21,6 @@ Phone books make a decent real-world analog for dictionary objects. They allow y
 This analogy breaks down somewhat when it comes to _how_ the information is organized to allow for fast lookups. But the fundamental performance characteristics hold. Dictionaries allow you to quickly find the information associated with a given key.
 
 Dictionaries are one of the most important and frequently used data structures in computer science. So, how does Python handle dictionaries? Let’s take a tour of the dictionary implementations available in core Python and the Python standard library.
-
-
-
-
-
 
 ### `dict`: Your Go-To Dictionary
 
@@ -67,7 +61,7 @@ Besides plain `dict` objects, Python’s standard library also includes a number
 
 Let’s take a look at them.
 
-### `collections.OrderedDict`: Remember the Insertion Order of Keys[](#collectionsordereddict-remember-the-insertion-order-of-keys "Permanent link")
+### `collections.OrderedDict`: Remember the Insertion Order of Keys[](#collectionsordereddict-remember-the-insertion-order-of-keys 'Permanent link')
 
 Python includes a specialized `dict` subclass that remembers the insertion order of keys added to it: [`collections.OrderedDict`](https://realpython.com/python-ordereddict/).
 
@@ -94,7 +88,7 @@ odict_keys(['one', 'two', 'three', 'four'])
 
 Until [Python 3.8](https://realpython.com/python38-new-features/), you couldn’t iterate over dictionary items in reverse order using `reversed()`. Only `OrderedDict` instances offered that functionality. Even in Python 3.8, `dict` and `OrderedDict` objects aren’t exactly the same. `OrderedDict` instances have a [`.move_to_end()` method](https://realpython.com/python-data-types/) that is unavailable on plain `dict` instance, as well as a more customizable [`.popitem()` method](https://docs.python.org/3/library/collections.html#collections.OrderedDict.popitem) than the one plain `dict` instances.
 
-### `collections.defaultdict`: Return Default Values for Missing Keys[](#collectionsdefaultdict-return-default-values-for-missing-keys "Permanent link")
+### `collections.defaultdict`: Return Default Values for Missing Keys[](#collectionsdefaultdict-return-default-values-for-missing-keys 'Permanent link')
 
 The [`defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict) class is another dictionary subclass that accepts a callable in its constructor whose return value will be used if a requested key cannot be found.
 
@@ -120,7 +114,7 @@ This can save you some typing and make your intentions clearer as compared to us
 
 [Remove ads](https://realpython.com/account/join/)
 
-### `collections.ChainMap`: Search Multiple Dictionaries as a Single Mapping[](#collectionschainmap-search-multiple-dictionaries-as-a-single-mapping "Permanent link")
+### `collections.ChainMap`: Search Multiple Dictionaries as a Single Mapping[](#collectionschainmap-search-multiple-dictionaries-as-a-single-mapping 'Permanent link')
 
 The [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap) data structure groups multiple dictionaries into a single mapping. Lookups search the underlying mappings one by one until a key is found. Insertions, updates, and deletions only affect the first mapping added to the chain:
 
@@ -146,7 +140,7 @@ KeyError: 'missing'
 
 ```
 
-### `types.MappingProxyType`: A Wrapper for Making Read-Only Dictionaries[](#typesmappingproxytype-a-wrapper-for-making-read-only-dictionaries "Permanent link")
+### `types.MappingProxyType`: A Wrapper for Making Read-Only Dictionaries[](#typesmappingproxytype-a-wrapper-for-making-read-only-dictionaries 'Permanent link')
 
 [`MappingProxyType`](https://docs.python.org/3/library/types.html#types.MappingProxyType) is a wrapper around a standard dictionary that provides a read-only view into the wrapped dictionary’s data. This class was added in Python 3.3 and can be used to create immutable proxy versions of dictionaries.
 
@@ -172,7 +166,7 @@ mappingproxy({'one': 42, 'two': 2})
 
 ```
 
-### Dictionaries in Python: Summary[](#dictionaries-in-python-summary "Permanent link")
+### Dictionaries in Python: Summary[](#dictionaries-in-python-summary 'Permanent link')
 
 All the Python dictionary implementations listed in this tutorial are valid implementations that are built into the Python standard library.
 
@@ -182,7 +176,7 @@ I would recommend that you use one of the other data types listed here only if y
 
 All the implementations are valid options, but your code will be clearer and easier to maintain if it relies on standard Python dictionaries most of the time.
 
-## Array Data Structures[](#array-data-structures "Permanent link")
+## Array Data Structures[](#array-data-structures 'Permanent link')
 
 An **array** is a fundamental data structure available in most programming languages, and it has a wide range of uses across different algorithms.
 
@@ -202,12 +196,7 @@ Performance-wise, it’s very fast to look up an element contained in an array g
 
 Python includes several array-like data structures in its standard library that each have slightly different characteristics. Let’s take a look.
 
-
-
-
-
-
-### `list`: Mutable Dynamic Arrays[](#list-mutable-dynamic-arrays "Permanent link")
+### `list`: Mutable Dynamic Arrays[](#list-mutable-dynamic-arrays 'Permanent link')
 
 [Lists](https://docs.python.org/3.6/library/stdtypes.html#lists) are a part of the core Python language. Despite their name, Python’s lists are implemented as **dynamic arrays** behind the scenes.
 
@@ -242,7 +231,7 @@ This can be a powerful feature, but the downside is that supporting multiple dat
 
 ```
 
-### `tuple`: Immutable Containers[](#tuple-immutable-containers "Permanent link")
+### `tuple`: Immutable Containers[](#tuple-immutable-containers 'Permanent link')
 
 Just like lists, [tuples](https://docs.python.org/3/library/stdtypes.html#tuple) are part of the Python core language. Unlike lists, however, Python’s `tuple` objects are immutable. This means elements can’t be added or removed dynamically—all elements in a tuple must be defined at creation time.
 
@@ -275,7 +264,7 @@ TypeError: 'tuple' object doesn't support item deletion
 
 ```
 
-### `array.array`: Basic Typed Arrays[](#arrayarray-basic-typed-arrays "Permanent link")
+### `array.array`: Basic Typed Arrays[](#arrayarray-basic-typed-arrays 'Permanent link')
 
 Python’s `array` module provides space-efficient storage of basic C-style data types like bytes, 32-bit integers, floating-point numbers, and so on.
 
@@ -316,7 +305,7 @@ TypeError: must be real number, not str
 
 ```
 
-### `str`: Immutable Arrays of Unicode Characters[](#str-immutable-arrays-of-unicode-characters "Permanent link")
+### `str`: Immutable Arrays of Unicode Characters[](#str-immutable-arrays-of-unicode-characters 'Permanent link')
 
 Python 3.x uses [`str`](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str) objects to store textual data as immutable sequences of [Unicode characters](https://realpython.com/python-encodings-guide/). Practically speaking, that means a `str` is an immutable array of characters. Oddly enough, it’s also a [recursive](https://realpython.com/python-thinking-recursively/) data structure—each character in a string is itself a `str` object of length 1.
 
@@ -358,9 +347,7 @@ TypeError: 'str' object doesn't support item deletion
 
 ```
 
-
-
-### `bytes`: Immutable Arrays of Single Bytes[](#bytes-immutable-arrays-of-single-bytes "Permanent link")
+### `bytes`: Immutable Arrays of Single Bytes[](#bytes-immutable-arrays-of-single-bytes 'Permanent link')
 
 [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes-objects) objects are immutable sequences of single bytes, or integers in the range 0 ≤ _x_ ≤ 255. Conceptually, `bytes` objects are similar to `str` objects, and you can also think of them as immutable arrays of bytes.
 
@@ -395,7 +382,7 @@ TypeError: 'bytes' object doesn't support item deletion
 
 ```
 
-### `bytearray`: Mutable Arrays of Single Bytes[](#bytearray-mutable-arrays-of-single-bytes "Permanent link")
+### `bytearray`: Mutable Arrays of Single Bytes[](#bytearray-mutable-arrays-of-single-bytes 'Permanent link')
 
 The [`bytearray`](https://docs.python.org/3.1/library/functions.html#bytearray) type is a mutable sequence of integers in the range 0 ≤ _x_ ≤ 255. The `bytearray` object is closely related to the `bytes` object, with the main difference being that a `bytearray` can be modified freely—you can overwrite elements, remove existing elements, or add new ones. The `bytearray` object will grow and shrink accordingly.
 
@@ -446,7 +433,7 @@ b'\x00\x02\x03*'
 
 ```
 
-### Arrays in Python: Summary[](#arrays-in-python-summary "Permanent link")
+### Arrays in Python: Summary[](#arrays-in-python-summary 'Permanent link')
 
 There are a number of built-in data structures you can choose from when it comes to implementing arrays in Python. In this section, you’ve focused on core language features and data structures included in the standard library.
 
@@ -466,7 +453,7 @@ In most cases, I like to start out with a simple `list`. I’ll only specialize 
 
 I’ve found that this is usually much more important in the beginning than trying to squeeze out every last drop of performance right from the start.
 
-## Records, Structs, and Data Transfer Objects[](#records-structs-and-data-transfer-objects "Permanent link")
+## Records, Structs, and Data Transfer Objects[](#records-structs-and-data-transfer-objects 'Permanent link')
 
 Compared to arrays, **record** data structures provide a fixed number of fields. Each field can have a name and may also have a different type.
 
@@ -480,10 +467,7 @@ Python offers several data types that you can use to implement records, structs,
 
 Alright, let’s get started!
 
-
-
-
-### `dict`: Simple Data Objects[](#dict-simple-data-objects "Permanent link")
+### `dict`: Simple Data Objects[](#dict-simple-data-objects 'Permanent link')
 
 As mentioned [previously](#dictionaries-maps-and-hash-tables), Python dictionaries store an arbitrary number of objects, each identified by a unique key. Dictionaries are also often called **maps** or **associative arrays** and allow for efficient lookup, insertion, and deletion of any object associated with a given key.
 
