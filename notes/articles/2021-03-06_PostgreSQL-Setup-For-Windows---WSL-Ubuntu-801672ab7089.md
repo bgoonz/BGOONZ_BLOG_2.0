@@ -40,10 +40,10 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 <img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
 </figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
-- <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
-- <span id="d4d0">Thanks for the welcome. Next.</span>
-- <span id="1283">Yeah, that's a good place to install it. Next.</span>
-- <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
+-   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
+-   <span id="d4d0">Thanks for the welcome. Next.</span>
+-   <span id="1283">Yeah, that's a good place to install it. Next.</span>
+-   <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" />
@@ -53,9 +53,9 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 ### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it's not worth it.
 
-- <span id="25b7">Sure. 5432. Good to go. Next.</span>
-- <span id="28be">Not even sure what that means. Default! Next.</span>
-- <span id="b378">Yep. Looks good. Next.</span>
+-   <span id="25b7">Sure. 5432. Good to go. Next.</span>
+-   <span id="28be">Not even sure what that means. Default! Next.</span>
+-   <span id="b378">Yep. Looks good. Next.</span>
 
 Insert pop culture reference to pass the time
 
@@ -315,9 +315,6 @@ In the next example, we select all rows from the database table.
 
 **TBC…**
 
-
-
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -340,4 +337,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

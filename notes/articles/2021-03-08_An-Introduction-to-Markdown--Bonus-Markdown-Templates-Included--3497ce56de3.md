@@ -137,6 +137,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
 
     This text can be **embedded** into Markdown:
     <i class="fa fa-refresh fa-spin fa-lg">
+
 </i> Refresh Page
 
 This text can be embedded into Markdown:  
@@ -153,10 +154,10 @@ This text can be embedded into Markdown:
 
     A double line break, breaks out of the list.
 
-- <span id="7904">Item 1</span>
-- <span id="1cf1">Item 2</span>
-- <span id="ded6">Item 3  
-  This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
+-   <span id="7904">Item 1</span>
+-   <span id="1cf1">Item 2</span>
+-   <span id="ded6">Item 3  
+    This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
 
@@ -262,9 +263,6 @@ which gives you:
     This is some text that will not be syntax highlighted
     but shows up in a code box.
 
-
-
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -274,10 +272,8 @@ which gives you:
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-
-
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/3497ce56de3).
 
 <a href="https://medium.com/@bryanguner/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

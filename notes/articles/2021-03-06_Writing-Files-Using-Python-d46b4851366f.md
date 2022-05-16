@@ -146,9 +146,6 @@ Using the same helloworld.txt file from before, running this code will produce t
 
 Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.
 
-
-
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -162,4 +159,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/writing-files-using-python-d46b4851366f" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

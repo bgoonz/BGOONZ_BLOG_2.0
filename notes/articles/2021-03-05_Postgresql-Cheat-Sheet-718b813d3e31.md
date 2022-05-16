@@ -470,8 +470,8 @@ Output:
 
 Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.
 
-- <span id="4ffd">Lets see browser usage:</span>
-- <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
+-   <span id="4ffd">Lets see browser usage:</span>
+-   <span id="261c">`SELECT browser->>'name' AS browser, count(browser) FROM events GROUP BY browser->>'name';`</span>
 
 Output:
 
@@ -494,7 +494,6 @@ Output:
 <img src="https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1" class="graf-image" />
 </figure>
 
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -503,8 +502,6 @@ Output:
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
-
-
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -537,4 +534,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/postgresql-cheat-sheet-718b813d3e31" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.
