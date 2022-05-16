@@ -54,7 +54,6 @@ template: docs
 <br>
 <iframe   src="https://bgoonz.github.io/html-2-md-converter/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
 
-
 <br>
 <hr>
 <br>
@@ -68,8 +67,6 @@ template: docs
 <br>
 <hr>
 <br>
-
-
 
 <hr>
 <br>

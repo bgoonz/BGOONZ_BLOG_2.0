@@ -27,11 +27,11 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 ### Beginners Guide To Python
 
-#### My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
+#### My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters
 
 > Bram Cohen
 
-#### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science.
+#### Article on basic web development setup… it is geared towards web but VSCode is an incredibly versatile editor and this stack really could suit just about anyone working in the field of computer science
 
 <strong>A list of all of my articles to link to future posts</strong>
 <br/>
@@ -50,7 +50,7 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 <em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### Related Articles:
+### Related Articles
 
 <a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong>
 <br/>
@@ -72,9 +72,9 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 <em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-### The Repository & Live Site Behind This Article:
+### The Repository & Live Site Behind This Article
 
-### About Python(Taken From Tutorial Page Of Docs):
+### About Python(Taken From Tutorial Page Of Docs)
 
 <a href="https://docs.python.org/3/tutorial/appetite.html" class="markup--anchor markup--p-anchor">Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</a>
 
@@ -82,7 +82,7 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 -   <span id="48ef">statement grouping is done by indentation instead of beginning and ending brackets;</span>
 -   <span id="f361">no variable or argument declarations are necessary.</span>
 
-### Installing Python:
+### Installing Python
 
 ### Windows
 
@@ -94,18 +94,18 @@ To determine if your Windows computer already has Python 3:
 
 `python --version`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating*'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
 2.  <span id="7c04">If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.</span>
 
-#### i.e.
+#### i.e
 
 > `Python 3.8.0`
 
 **As long as the first number is** `3`, you have Python 3 installed.
 
-> Download Page: <a href="https://www.python.org/downloads/release/python-395/" class="markup--anchor markup--blockquote-anchor">https://www.python.org/downloads/release/python-395/</a>
+> Download Page: <a href="<https://www.python.org/downloads/release/python-395/>" class="markup--anchor markup--blockquote-anchor">https://www.python.org/downloads/release/python-395/</a>
 
-> Download Link: <a href="https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe" class="markup--anchor markup--blockquote-anchor">https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe</a>
+> Download Link: <a href="<https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe>" class="markup--anchor markup--blockquote-anchor">https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe</a>
 
 ---
 
@@ -119,7 +119,7 @@ To determine if your Windows computer already has Python 3:
 -   <span id="6434">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span>
 -   <span id="b76b">`python <filename.py>`</span>
 
-#### By default, the python doesn't require any imports to run a python file.
+#### By default, the python doesn't require any imports to run a python file
 
 ### Create and execute a program
 
@@ -402,7 +402,7 @@ If you look to your left at the console where hello world was just printed, you 
 
 The command line allows you to execute single lines of code at a time. It is often used when trying out a new function or method in the language.
 
-### New: Comments!
+### New: Comments
 
 Another cool thing that you can generally do with all languages, are comments. In python, a comment starts with a `#`. The computer ignores all text starting after the `#`.
 
@@ -410,7 +410,7 @@ Another cool thing that you can generally do with all languages, are comments. I
 
 If you have a huge comment, do **not** comment all the 350 lines, just put `'''` before it, and `'''` at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.
 
-### New: Variables!
+### New: Variables
 
 Unlike many other languages, there is no `var`, `let`, or `const` to declare a variable in python. You simply go `name = 'value'`.
 
@@ -457,7 +457,7 @@ _complexop.py_
 The ones above are to edit the current value of the variable.  
 Sorry to JS users, as there is no `i++;` or anything.
 
-### Fun Fact: The python language was named after Monty Python.
+### Fun Fact: The python language was named after Monty Python
 
 If you really want to know about the others, view <a href="https://www.tutorialspoint.com/python/python_basic_operators.htm" class="markup--anchor markup--p-anchor">Py Operators</a>
 
@@ -550,7 +550,7 @@ _module2.py_
 > Do_ `from random import randint` _to not have to do_ `random.randint()`_, just_ `randint()`_  
 > To import all functions from a module, you could do_ `from random import *`
 
-### New: Loops!
+### New: Loops
 
 Loops allow you to repeat code over and over again. This is useful if you want to print Hi with a delay of one second 100 times.
 
@@ -575,7 +575,7 @@ _loop2.py_
          print(number)
          time.sleep(.1)
 
-<a href="https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn" class="markup--anchor markup--p-anchor">https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn</a>
+<a href="<https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn>" class="markup--anchor markup--p-anchor">https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn</a>
 
 #### `while` Loop
 
@@ -677,7 +677,7 @@ _functions.py_
 
 ---
 
-### Project Based Learning:
+### Project Based Learning
 
 The following is a modified version of a tutorial posted By: <a href="https://replit.com/@InvisibleOne" class="markup--anchor markup--p-anchor">InvisibleOne</a>
 
@@ -838,4 +838,3 @@ Who doesn't love a good dare? Here is a program that can generate random dares. 
     while True:
       if input() == '': #this will trigger if they hit enter
         print("I dare you to " + random.choice(list1) + ' ' + random.choice(list2) + ' in front of '  + random.choice(list3)
-
