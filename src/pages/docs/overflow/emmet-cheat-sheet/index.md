@@ -159,7 +159,7 @@ a[href=https://?google.com data-toggle=something target=_blank]`
 
 ### Numbering
 
-Numbering can be done using `$`  
+Numbering can be done using `$`
 You can use this inside tag or contents.
 
 ---
