@@ -23,6 +23,4 @@ seo:
 template: docs
 ---
 
-
-
-- [april backup](https://backup-april-4-2022--bgoonz-blog.netlify.app/)
+-   [april backup](https://backup-april-4-2022--bgoonz-blog.netlify.app/)
