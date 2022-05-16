@@ -90,7 +90,7 @@
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     .block-text {
         .block-content {
             font-size: 1.125em;
@@ -102,7 +102,7 @@
     }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1401px) {
     .block-text {
         .grid-item {
             &:not(:only-child) {
@@ -130,7 +130,7 @@
     }
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1401px) {
     .block-image {
         &:not(:only-child) {
             padding-right: 2.5em;
@@ -169,13 +169,13 @@
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     .block-title {
         font-size: 2.125em;
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
     .block-cta {
         .has-gradient {
             padding-left: 7%;
@@ -200,7 +200,7 @@
 
 // Grid section
 .block-grid {
-    .block-hero + & {
+    .block-hero+& {
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
@@ -285,7 +285,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .block-grid {
         .grid-item {
             margin-bottom: 4vw;
@@ -312,13 +312,13 @@
         line-height: 1.5;
     }
 
-    & + .block {
+    &+.block {
         margin-top: -5em;
         position: relative;
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     .block-hero {
         .block-title {
             font-size: 3em;
