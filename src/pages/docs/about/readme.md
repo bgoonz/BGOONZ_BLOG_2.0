@@ -3,7 +3,7 @@ title: readme
 weight: 0
 excerpt: readme
 seo:
-    title: ''
+    title: 'Readme For This Website'
     description: 'website documentation'
     robots: []
     extra: []

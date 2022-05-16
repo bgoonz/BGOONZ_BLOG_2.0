@@ -1,3 +1,3 @@
 tasks:
-    - init: npm install --legacy-peer-deps -f
+    - init: npm install && npm run build && make
       command: npm run start
