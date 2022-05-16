@@ -1,6 +1,6 @@
 
-import React from 'react';
 import _ from 'lodash';
+import React from 'react';
 import { classNames, getPage, getPages, Link, pathJoin, withPrefix } from '../utils';
 import DocsSubmenu from './DocsSubmenu';
 export default class DocsMenu extends React.Component {
