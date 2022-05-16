@@ -96,4 +96,3 @@ node_modules/
 *.cache
 *public
 src/pages/docs/tools/Archive.md
-temp2
