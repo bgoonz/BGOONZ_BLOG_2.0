@@ -18111,7 +18111,7 @@ Only Internet Explorer 9 and later, and Firefox 23 and later, appear to fully an
 
 ### Internet Explorer 8 specific notes
 
-Internet Explorer 8 implemented a `Object.defineProperty()` method that could [only be used on DOM objects](https://msdn.microsoft.com/en-us/library/dd229916%28VS.85%29.aspx). A few things need to be noted:
+Internet Explorer 8 implemented a `Object.defineProperty()` method that could [only be used on DOM objects](https://msdn.microsoft.com/library/dd229916%28VS.85%29.aspx). A few things need to be noted:
 
 - Trying to use `Object.defineProperty()` on native objects throws an error.
 - Property attributes must be set to some values. The `configurable`, `enumerable` and `writable` attributes should all be set to `true` for data descriptor and `true` for `configurable`, `false` for `enumerable` for accessor descriptor.(?) Any attempt to provide other value(?) will result in an error being thrown.
@@ -18172,7 +18172,7 @@ Throws [`TypeError`](../global_objects/typeerror) in [`strict mode`](../strict_m
 
 ## Description
 
-Unlike what common belief suggests (perhaps due to other programming languages like [delete in C++](https://docs.microsoft.com/en-us/cpp/cpp/delete-operator-cpp?view=vs-2019)), the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references. See the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page for more details.
+Unlike what common belief suggests (perhaps due to other programming languages like [delete in C++](https://docs.microsoft.com/cpp/cpp/delete-operator-cpp?view=vs-2019)), the `delete` operator has **nothing** to do with directly freeing memory. Memory management is done indirectly via breaking references. See the [memory management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management) page for more details.
 
 The `delete` operator removes a given property from an object. On successful deletion, it will return `true`, else `false` will be returned.
 
@@ -18807,7 +18807,7 @@ There is a deprecated source map syntax in a JavaScript source.
 
 JavaScript sources are often combined and minified to make delivering them from the server more efficient. With [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/), the debugger can map the code being executed to the original source files.
 
-The source map specification changed the syntax due to a conflict with IE whenever it was found in the page after `//@cc_on` was interpreted to turn on conditional compilation in the IE JScript engine. The [conditional compilation comment](https://msdn.microsoft.com/en-us/library/8ka90k2e%28v=vs.94%29.aspx) in IE is a little known feature, but it broke source maps with [jQuery](https://bugs.jquery.com/ticket/13274) and other libraries.
+The source map specification changed the syntax due to a conflict with IE whenever it was found in the page after `//@cc_on` was interpreted to turn on conditional compilation in the IE JScript engine. The [conditional compilation comment](https://msdn.microsoft.com/library/8ka90k2e%28v=vs.94%29.aspx) in IE is a little known feature, but it broke source maps with [jQuery](https://bugs.jquery.com/ticket/13274) and other libraries.
 
 ## Examples
 
@@ -75284,11 +75284,11 @@ The non-standard `stack` property of [`Error`](../error) objects offer a trace o
 
 Each step will be separated by a newline, with the first part of the line being the function name (if not a call from the global scope), then by an at (@) sign, the file location (except when the function is the error constructor as the error is being thrown), a colon, and, if there is a file location, the line number. (Note that the [`Error`](../error) object also possesses the `fileName`, `lineNumber` and `columnNumber` properties for retrieving these from the error thrown (but only the error, and not its trace).)
 
-Note that this is the format used by Firefox. There is no standard formatting. However, Safari 6+ and Opera 12- use a very similar format. Browsers using the V8 JavaScript engine (such as Chrome, Opera 15+, Android Browser) and IE10+, on the other hand, uses a different format (see [the archived MSDN error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)).
+Note that this is the format used by Firefox. There is no standard formatting. However, Safari 6+ and Opera 12- use a very similar format. Browsers using the V8 JavaScript engine (such as Chrome, Opera 15+, Android Browser) and IE10+, on the other hand, uses a different format (see [the archived MSDN error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/library/windows/apps/hh699850.aspx)).
 
 **Argument values in the stack**: Prior to Firefox 14, the function name would be followed by the argument values converted to string in parentheses immediately before the at (`@`) sign. While an object (or array, etc.) would appear in the converted form `"[object Object]"`, and as such could not be evaluated back into the actual objects, scalar values could be retrieved (though it may be — it is still possible in Firefox 14 — easier to use `arguments.callee.caller.arguments`, as could the function name be retrieved by `arguments.callee.caller.name`). `"undefined"` is listed as `"(void 0)"`. Note that if string arguments were passed in with values such as `"@"`, `"("`, `")"` (or if in file names), you could not easily rely on these for breaking the line into its component parts. Thus, in Firefox 14 and later this is less of an issue.
 
-Different browsers set this value at different times. For example, Firefox sets it when creating an [`Error`](../error) object, while PhantomJS sets it only when throwing the [`Error`](../error), and [archived MSDN docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx) also seem to match the PhantomJS implementation.
+Different browsers set this value at different times. For example, Firefox sets it when creating an [`Error`](../error) object, while PhantomJS sets it only when throwing the [`Error`](../error), and [archived MSDN docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/library/windows/apps/hh699850.aspx) also seem to match the PhantomJS implementation.
 
 ## Examples
 
@@ -75429,7 +75429,7 @@ Samsung Internet
 
 - [Components.stack](https://developer.mozilla.org/en-US/docs/Components.stack)
 - External projects: [TraceKit](https://github.com/csnover/TraceKit/) and [javascript-stacktrace](https://github.com/eriwen/javascript-stacktrace)
-- MSDN: [archived error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/en-us/library/windows/apps/hh699850.aspx)
+- MSDN: [archived error.stack docs](https://web.archive.org/web/20140210004225/https://msdn.microsoft.com/library/windows/apps/hh699850.aspx)
 - [Overview of the V8 JavaScript stack trace API](https://github.com/v8/v8/wiki/Stack%20Trace%20API)
 
 Global_Objects/Error/Stack" Global_Objects/Error/Stack</a>

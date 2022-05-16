@@ -57,7 +57,7 @@ Search feature
 - [https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv) 
 - [https://app.netlify.com/user/settings#profile](https://app.netlify.com/user/settings#profile) 
 - [https://aws.amazon.com/](https://aws.amazon.com/)
-- [https://azure.microsoft.com/en-in/](https://azure.microsoft.com/en-in/)
+- [https://azure.microsoft.com/](https://azure.microsoft.com/)
 - [https://babeljs.io/](https://babeljs.io/)
 - [https://bg-portfolio.netlify.app/](https://bg-portfolio.netlify.app/)
 - [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
