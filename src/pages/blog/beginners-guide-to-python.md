@@ -339,7 +339,7 @@ Python has two primitive loop commands:
 -   <span id="fb47">To loop through a set of code a specified number of times, we can use the range() function.</span>
 -   <span id="f32d">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
--   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.  
+-   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
      A nested loop is a loop inside a loop.</span>
 -   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
@@ -434,8 +434,8 @@ There are many operators in python:
 -   <span id="d553">`+`</span>
 -   <span id="a1b3">`-`</span>
 -   <span id="f09c">`/`</span>
--   <span id="cd1e">`*`  
-     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.  
+-   <span id="cd1e">`*`
+     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
      Now, we can look at a few more complicated ones:</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" /></figure>*simpleops.py*
@@ -455,7 +455,7 @@ _complexop.py_
     a *= 2
     a /= 2
 
-The ones above are to edit the current value of the variable.  
+The ones above are to edit the current value of the variable.
 Sorry to JS users, as there is no `i++;` or anything.
 
 ### Fun Fact: The python language was named after Monty Python.
@@ -464,7 +464,7 @@ If you really want to know about the others, view <a href="https://www.tutorials
 
 ### More Things With Strings
 
-Like the title?  
+Like the title?
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
 _quotes.py_
@@ -477,7 +477,7 @@ _slicing.py_
 
 ### String Slicing
 
-You can look at only certain parts of the string by slicing it, using `[num:num]`.  
+You can look at only certain parts of the string by slicing it, using `[num:num]`.
 The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
     x = 'Hello everybody!'
@@ -520,7 +520,7 @@ _inp2.py_
 
     print('Here is what you said: ', input('Type something: '))
 
-Running:  
+Running:
 _inp.py_
 
     Type something:
@@ -547,8 +547,8 @@ _module2.py_
     import random
     print(random.randint(3,5)) # Prints a random number between 3 and 5
 
-> _Pro Tip:  
-> Do_ `from random import randint` _to not have to do_ `random.randint()`_, just_ `randint()`_  
+> _Pro Tip:
+> Do_ `from random import randint` _to not have to do_ `random.randint()`_, just_ `randint()`_
 > To import all functions from a module, you could do_ `from random import *`
 
 ### New: Loops!
@@ -557,7 +557,7 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 
 #### `for` Loop
 
-The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
+The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
 Let's say we wanted to create the example above.
 
 _loop.py_
@@ -638,7 +638,7 @@ _else.py_
 
 ### New: Functions (`def`)
 
-So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.  
+So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.
 It is quite tiring to type:
 
 Characters: 389
@@ -686,7 +686,7 @@ I would cite the original tutorial it's self but at the time of this writing I c
 
 ### 1. Adventure Story
 
-The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.  
+The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.
 First things first, let's import the stuff that we need, like this:
 
     import os   #very useful for clearing the screen
@@ -804,7 +804,7 @@ Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'  
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'
 Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
     message = input("What would you like to save?")
