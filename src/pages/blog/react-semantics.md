@@ -14,6 +14,7 @@ categories:
 show_author_bio: true
 related_posts:
   - src/pages/blog/using-the-dom.md
+  - src/pages/blog/react-semantics.md
 cmseditable: true
 ---
 
