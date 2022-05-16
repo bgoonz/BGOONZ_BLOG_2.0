@@ -4,17 +4,17 @@ template: post
 subtitle: Basic Web Development Environment Setup
 excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
 date: 2022-05-08T18:10:03.296Z
-image: /blog/vscode.png
-thumb_image: /blog/vscode-editor.png
+image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
+thumb_image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
-    - src/data/categories/js.yaml
+  - src/data/categories/js.yaml
 tags:
-    - src/data/tags/links.yaml
+  - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/vs-code-extensions.md
+  - src/pages/blog/vs-code-extensions.md
 cmseditable: true
 ---
 
