@@ -4,7 +4,6 @@ template: docs
 excerpt: Dictionaries, Maps, and Hash Tables
 ---
 
-
 # Common Python Data Structures (Guide) – Real Python
 
 ---
