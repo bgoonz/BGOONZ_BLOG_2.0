@@ -55,6 +55,12 @@ weight: 0
 <br>
 <hr>
 <br>
+
+<h1>  Project Showcase  </h1>
+<br>
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://project-showcase-bgoonz.netlify.app//" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+
 <br>
 <br>
 <h1>  Useful Resource Archive #3   </h1>
