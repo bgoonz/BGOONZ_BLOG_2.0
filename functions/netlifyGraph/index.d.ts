@@ -175,7 +175,18 @@ Use this as an escape hatch if OneGraph does not yet support functionality of th
             /**
              * Perform a search across resources.
              */
-            search: /** No fields, named fragments, or inline fragments found */ Record<string, unknown>;
+            search: {
+                /**
+                 * A list of edges.
+                 */
+                edges: Array</** No fields, named fragments, or inline fragments found */ Record<string, unknown>>;
+            };
+            /**
+             * Lookup a repository owner (ie. either a User or an Organization) by login.
+             */
+            repositoryOwner: {
+                id: string;
+            };
             /**
              * Lookup a given repository by the owner and repository name.
              */

@@ -69,9 +69,15 @@ query ExampleQuery @netlify(id: """9d091d59-0d10-400f-8417-f171e588dfc2""", doc:
         }
       }
     }
-    search(query: "", type: ISSUE)
+    search(query: "", type: ISSUE) {
+      edges {
+        node
+      }
+    }
     resource(url: "")
-    repositoryOwner(login: "")
+    repositoryOwner(login: "") {
+      id
+    }
     repository(name: "", owner: "") {
       autoMergeAllowed
       branchProtectionRules(after: "", before: "", first: 10, last: 10) {
@@ -106,7 +112,13 @@ query ExampleQuery @netlify(id: """9d091d59-0d10-400f-8417-f171e588dfc2""", doc:
                   }
                 }
                 login
-                issues
+                issues {
+                  edges {
+                    node {
+                      id
+                    }
+                  }
+                }
               }
               ... on GitHubBot {
                 id

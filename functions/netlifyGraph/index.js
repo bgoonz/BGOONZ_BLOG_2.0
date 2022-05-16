@@ -111,9 +111,15 @@ const operationsDoc = `query ExampleQuery @netlify(id: """9d091d59-0d10-400f-841
         }
       }
     }
-    search(query: "", type: ISSUE)
+    search(query: "", type: ISSUE) {
+      edges {
+        node
+      }
+    }
     resource(url: "")
-    repositoryOwner(login: "")
+    repositoryOwner(login: "") {
+      id
+    }
     repository(name: "", owner: "") {
       autoMergeAllowed
       branchProtectionRules(after: "", before: "", first: 10, last: 10) {
@@ -148,7 +154,13 @@ const operationsDoc = `query ExampleQuery @netlify(id: """9d091d59-0d10-400f-841
                   }
                 }
                 login
-                issues
+                issues {
+                  edges {
+                    node {
+                      id
+                    }
+                  }
+                }
               }
               ... on GitHubBot {
                 id
