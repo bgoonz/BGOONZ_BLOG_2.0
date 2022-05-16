@@ -3,8 +3,8 @@ title: Dynamic Time Warping Algorithm Explained (Python)
 weight: 0
 excerpt: Dynamic Time Warping Algorithm Explained (Python)
 seo:
-    title: ''
-    description: ''
+    title: 'Dynamic Time Warping Algorithm'
+    description: 'Algorithm explained in python programming language'
     robots: []
     extra: []
 template: docs

@@ -25,6 +25,9 @@ src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
 <br>
 <br>
 <br>
+<h2>Music Theory</h2>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
+src="https://synth-music-theory.netlify.app/"></iframe>
 
 <hr>
 <br>
