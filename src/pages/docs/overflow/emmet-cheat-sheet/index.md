@@ -4,7 +4,6 @@ template: docs
 excerpt: The a toolkit for web-developer
 ---
 
-
 _The a toolkit for web-developers_
 
 ### Introduction
@@ -29,46 +28,33 @@ You can use Emmet in two ways:
 
 ### HTML
 
-
 ---
-
 
 ### Generating HTML 5 DOCTYPE
+
 html:5`
 Will generate
-```html
 
-
-    <!DOCTYPE html>
-    <html lang="en">
+````html
+<!DOCTYPE html>
+<html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Document</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
     </head>
-    <body>
+    <body></body>
+</html>
 
-    </body>
-    </html>
-
----
-
-
-### Child items
-
-Child items are created using `>`
-
-```html
-ul>li>p`
+--- ### Child items Child items are created using `>` ```html ul>li>p`
 
 <ul>
-  <li>
-    <p>
-</p>
-  </li>
+    <li>
+        <p></p>
+    </li>
 </ul>
-```
+````
 
 ### Sibling Items
 
@@ -78,10 +64,8 @@ Sibling items are created using `+`
 html>head+body`
 
 <html>
-  <head>
-</head>
-  <body>
-</body>
+    <head> </head>
+    <body></body>
 </html>
 ```
 
@@ -93,16 +77,11 @@ Items can be multiplied by `*`
 ul>li*5`
 
 <ul>
-  <li>
-</li>
-  <li>
-</li>
-  <li>
-</li>
-  <li>
-</li>
-  <li>
-</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ul>
 ```
 
@@ -114,30 +93,20 @@ Items can be grouped together using `()`
 table>(tr>th*5)+tr>t*5`
 
 <table>
-  <tr>
-    <th>
-</th>
-    <th>
-</th>
-    <th>
-</th>
-    <th>
-</th>
-    <th>
-</th>
-  </tr>
-  <tr>
-    <t>
-</t>
-    <t>
-</t>
-    <t>
-</t>
-    <t>
-</t>
-    <t>
-</t>
-  </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <t> </t>
+        <t> </t>
+        <t> </t>
+        <t> </t>
+        <t> </t>
+    </tr>
 </table>
 ```
 
@@ -145,8 +114,8 @@ table>(tr>th*5)+tr>t*5`
 
 Class and Id in Emmet can be done using `.` and `#`
 
-
 ---
+
 html
 div.heading`
 
@@ -165,14 +134,12 @@ ID and Class can also be combined together ```html div#heading.center`
 
 ---
 
-
 ### Adding Content inside tags
 
 Contents inside tags can be added using `{}`
 
 ```html
-h1{Emmet is awesome}+h2{Every front end developers should use this}+p{This is
-paragraph}*2`
+h1{Emmet is awesome}+h2{Every front end developers should use this}+p{This is paragraph}*2`
 
 <h1>Emmet is awesome</h1>
 <h2>Every front end developers should use this</h2>
@@ -187,8 +154,7 @@ Attributes can be added using `[]`
 ```html
 a[href=https://?google.com data-toggle=something target=_blank]`
 
-<a href="https://?google.com" data-toggle="something" target="_blank">
-</a>
+<a href="https://?google.com" data-toggle="something" target="_blank"> </a>
 ```
 
 ### Numbering
@@ -196,10 +162,10 @@ a[href=https://?google.com data-toggle=something target=_blank]`
 Numbering can be done using `$`  
 You can use this inside tag or contents.
 
-
 ---
+
 html
-h${This is so awesome $}*6`
+h${This is so awesome $}\*6`
 
 <h1>This is so awesome 1</h1>
 <h2>This is so awesome 2</h2>
@@ -216,8 +182,7 @@ Use `@-` to reverse the Numbering ```html img[src=image$$@-.jpg]*5`
 <img src="image02.jpg" alt="" />
 <img src="image01.jpg" alt="" />
 
-To start the numbering from specific number, use this way ```html
-img[src=emmet$@100.jpg]*5`
+To start the numbering from specific number, use this way ```html img[src=emmet$@100.jpg]*5`
 
 <img src="emmet100.jpg" alt="" />
 <img src="emmet101.jpg" alt="" />
@@ -227,13 +192,12 @@ img[src=emmet$@100.jpg]*5`
 
 ---
 
-
 ### Tips
 
-- <span id="b708">Use `:` to expand known abbreviations</span>
-
+-   <span id="b708">Use `:` to expand known abbreviations</span>
 
 ---
+
 html
 input:date`
 
@@ -248,7 +212,7 @@ input:date`
 
 <link rel="stylesheet" href="style.css" />
 
-- <span id="d43e">Building Navbar</span>
+-   <span id="d43e">Building Navbar</span>
 
 ```html .navbar>ul>li*3>a[href=#]{Item $@-}`
 
@@ -268,52 +232,45 @@ input:date`
 
 ---
 
-
 ### CSS
 
 Emmet works surprisingly well with css as well.
 
-- <span id="68eb">`f:l`</span>
-
-
+-   <span id="68eb">`f:l`</span>
 
 ```css
-    float: left;
+float: left;
 ```
+
 You can also use any options n/r/l
 
-- <span id="d9cc">`pos:a­`</span>
+-   <span id="d9cc">`pos:a­`</span>
 
 ```css
-
-    position: absolute;
+position: absolute;
 ```
+
 Also use any options, pos:a/r/f
 
-- <span id="5b67">`d:n/b­/f/­i/ib`</span>
-
+-   <span id="5b67">`d:n/b­/f/­i/ib`</span>
 
 ---
+
 html
 d:ib` display: inline-block; -
 <span id="26f6"
-  >You can use `m` for margin and `p` for padding followed by direction</span
->
 
-```html mr` -&gt; `margin-right` ```html pr` -&gt; `padding-right` -
-<span id="01cc">`@f` will result in</span>
+> You can use `m` for margin and `p` for padding followed by direction</span
 
-
+`` html mr` -&gt; `margin-right`  ``html pr`-&gt;`padding-right` - <span id="01cc">`@f` will result in</span>
 
 ```css
 @font-face { font-family:; src:url(); } You can also use these shorthands
 ```
+
 <figure>
   <img
     src="https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png"
     class="graf-image"
   />
 </figure>
-
-
- 
