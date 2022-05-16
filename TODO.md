@@ -8,4 +8,4 @@
 6.  https://github.com/bgoonz/MainBlogContent
 7.  Gatsby plugin Algolia 
 8.  Add vercel and other backups to readme or internal use page if it exists
-9.  
+9.  [gh pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
