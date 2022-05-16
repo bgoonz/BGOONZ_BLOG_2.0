@@ -37,12 +37,12 @@
             opacity: 0;
             text-align: center;
             text-decoration: none;
-            -webkit-transition: opacity .2s;
-            transition: opacity .2s;
+            -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s;
             width: 1em;
 
             &:before {
-                content: "\0023";
+                content: '\0023';
                 display: inline-block;
             }
 
@@ -66,7 +66,6 @@
 
         h2,
         h3 {
-
             &:hover,
             &:focus {
                 .hash-link {
@@ -120,8 +119,8 @@
         padding: 0.9375em;
         position: relative;
         text-decoration: none;
-        -webkit-transition: border-color .3s ease, color .3s ease;
-        transition: border-color .3s ease, color .3s ease;
+        -webkit-transition: border-color 0.3s ease, color 0.3s ease;
+        transition: border-color 0.3s ease, color 0.3s ease;
 
         &:hover {
             border-color: $color-primary;
@@ -158,7 +157,7 @@
     margin: 0;
     padding: 0;
 
-    &>.docs-menu-item>a {
+    & > .docs-menu-item > a {
         padding: 0.1875em 0;
     }
 
@@ -202,7 +201,7 @@
                 display: block;
             }
 
-            &>.docs-submenu-toggle {
+            & > .docs-submenu-toggle {
                 .icon-angle-right {
                     -webkit-transform: rotate(135deg);
                     transform: rotate(135deg);
@@ -236,7 +235,7 @@
     li {
         margin-bottom: 0.625rem;
 
-        &.active>a {
+        &.active > a {
             color: $color-primary;
         }
     }
@@ -263,7 +262,6 @@
 @media only screen and (min-width: 641px) {
     .post {
         &.type-docs {
-
             .post-title,
             .post-content {
                 padding-left: 7%;

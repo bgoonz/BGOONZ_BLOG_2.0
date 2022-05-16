@@ -149,7 +149,7 @@ pre {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -209,8 +209,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
@@ -233,7 +233,6 @@ img {
     :not(.site-logo) {
         box-shadow: inset 10px 10px 50px #fff;
     }
-
 }
 
 @media only screen and (min-width: 741px) {
