@@ -4,8 +4,8 @@ template: post
 subtitle: GatsbyJS File System Route API
 excerpt: Use the File System Route API when you want to create dynamic pages
 date: 2022-05-16T00:22:26.250Z
-image: /blog/gatsby.png
-thumb_image: /blog/gatsby.png
+image: file-system.jpg
+thumb_image: file-system.jpg
 image_position: right
 author: src/data/authors/backup.yaml
 categories:
