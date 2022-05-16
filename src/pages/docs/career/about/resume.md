@@ -2,27 +2,26 @@
 title: Resume
 weight: 0
 seo:
-    title: Resume
-    description: >-
-        Successfully completed and delivered a platform to digitize a guitar signal
-        and perform filtering before executing frequency & time domain analysis to
-        track a current performance against prerecorded performance.
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Resume
-          keyName: property
-        - name: 'og:description'
-          value: This is the Resume page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Resume
-        - name: 'twitter:description'
-          value: This is the Resume page
+  title: Resume
+  description: Successfully completed and delivered a platform to digitize a
+    guitar signal and perform filtering before executing frequency & time domain
+    analysis to track a current performance against prerecorded performance.
+  extra:
+    - name: og:type
+      value: website
+      keyName: property
+    - name: og:title
+      value: Resume
+      keyName: property
+    - name: og:description
+      value: This is the Resume page
+      keyName: property
+    - name: twitter:card
+      value: summary
+    - name: twitter:title
+      value: Resume
+    - name: twitter:description
+      value: This is the Resume page
 template: docs
 ---
 
@@ -131,3 +130,4 @@ Six-month immersive software development course with a focus on [full stack web 
 _**References &amp; further work experience available upon request.**_
 
 </div>
+<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21738414&authkey=AK-_7RN0U5yPS_U&em=2" width="100%" height="800" frameborder="0" scrolling="yes"></iframe>
