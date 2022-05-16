@@ -10974,7 +10974,7 @@ Otherwise, the value of `options.stdio` is an array where each index corresponds
 
 1.  `'pipe'`: Create a pipe between the child process and the parent process. The parent end of the pipe is exposed to the parent as a property on the `child_process` object as [`subprocess.stdio[fd]`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdio). Pipes created for fds 0, 1, and 2 are also available as [`subprocess.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdin), [`subprocess.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdout) and [`subprocess.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstderr), respectively.
     
-2.  `'overlapped'`: Same as `'pipe'` except that the `FILE_FLAG_OVERLAPPED` flag is set on the handle. This is necessary for overlapped I/O on the child process's stdio handles. See the [docs](https://docs.microsoft.com/en-us/windows/win32/fileio/synchronous-and-asynchronous-i-o) for more details. This is exactly the same as `'pipe'` on non-Windows systems.
+2.  `'overlapped'`: Same as `'pipe'` except that the `FILE_FLAG_OVERLAPPED` flag is set on the handle. This is necessary for overlapped I/O on the child process's stdio handles. See the [docs](https://docs.microsoft.com/windows/win32/fileio/synchronous-and-asynchronous-i-o) for more details. This is exactly the same as `'pipe'` on non-Windows systems.
     
 3.  `'ipc'`: Create an IPC channel for passing messages/file descriptors between parent and child. A [`ChildProcess`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_class-childprocess) may have at most one IPC stdio file descriptor. Setting this option enables the [`subprocess.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesssendmessage-sendhandle-options-callback) method. If the child is a Node.js process, the presence of an IPC channel will enable [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) and [`process.disconnect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processdisconnect) methods, as well as [`'disconnect'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-disconnect) and [`'message'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-message) events within the child.
     
@@ -23916,7 +23916,7 @@ Opens a [<FileHandle>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_cla
 
 Refer to the POSIX [`open(2)`](http://man7.org/linux/man-pages/man2/open.2.html) documentation for more detail.
 
-Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/using-streams).
+Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/using-streams).
 
 #### `fsPromises.opendir(path[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fspromisesopendirpath-options)
 
@@ -25129,7 +25129,7 @@ Asynchronous file open. See the POSIX [`open(2)`](http://man7.org/linux/man-page
 
 The callback gets two arguments `(err, fd)`.
 
-Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/using-streams).
+Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/using-streams).
 
 Functions based on `fs.open()` exhibit this behavior as well: `fs.writeFile()`, `fs.readFile()`, etc.
 
@@ -25651,7 +25651,7 @@ This feature depends on the underlying operating system providing a way to be no
 -   On BSD systems, this uses [`kqueue(2)`](https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2).
 -   On macOS, this uses [`kqueue(2)`](https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2) for files and [`FSEvents`](https://developer.apple.com/documentation/coreservices/file_system_events) for directories.
 -   On SunOS systems (including Solaris and SmartOS), this uses [`event ports`](https://illumos.org/man/port_create).
--   On Windows systems, this feature depends on [`ReadDirectoryChangesW`](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-readdirectorychangesw).
+-   On Windows systems, this feature depends on [`ReadDirectoryChangesW`](https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-readdirectorychangesw).
 -   On AIX systems, this feature depends on [`AHAFS`](https://developer.ibm.com/articles/au-aix_event_infrastructure/), which must be enabled.
 -   On IBM i systems, this feature is not supported.
 
@@ -27589,7 +27589,7 @@ try {
 
 ##### Per-drive working directories on Windows[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_per-drive-working-directories-on-windows)
 
-On Windows, Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example `fs.readdirSync('C:\\')` can potentially return a different result than `fs.readdirSync('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
+On Windows, Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example `fs.readdirSync('C:\\')` can potentially return a different result than `fs.readdirSync('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
 
 #### File descriptors[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-descriptors_1)
 
@@ -38642,7 +38642,7 @@ On POSIX and Windows:
 path.posix.basename('/tmp/myfile.html');
 ```
 
-On Windows Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example, `path.resolve('C:\\')` can potentially return a different result than `path.resolve('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
+On Windows Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example, `path.resolve('C:\\')` can potentially return a different result than `path.resolve('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
 
 ### `path.basename(path[, ext])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathbasenamepath-ext)
 
@@ -39043,7 +39043,7 @@ Added in: v9.0.0
 -   `path` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 -   Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
-On Windows systems only, returns an equivalent [namespace-prefixed path](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#namespaces) for the given `path`. If `path` is not a string, `path` will be returned without modifications.
+On Windows systems only, returns an equivalent [namespace-prefixed path](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#namespaces) for the given `path`. If `path` is not a string, `path` will be returned without modifications.
 
 This method is meaningful only on Windows systems. On POSIX systems, the method is non-operational and always returns `path` without modifications.
 

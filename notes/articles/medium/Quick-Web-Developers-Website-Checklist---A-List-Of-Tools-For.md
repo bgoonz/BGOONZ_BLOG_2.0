@@ -608,10 +608,10 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <em>Keeping URLs as simple, relevant, compelling, and accurate as possible is key to getting both your users and search…</em>moz.com</a><a href="https://moz.com/learn/seo/url" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-<a href="https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference"><strong>URL Rewrite Module Configuration Reference</strong>
+<a href="https://docs.microsoft.com/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.microsoft.com/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference"><strong>URL Rewrite Module Configuration Reference</strong>
 <br/>
 
-<em>by Ruslan Yakushev This article provides an overview of the URL Rewrite Module and explains the configuration concepts…</em>docs.microsoft.com</a><a href="https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>by Ruslan Yakushev This article provides an overview of the URL Rewrite Module and explains the configuration concepts…</em>docs.microsoft.com</a><a href="https://docs.microsoft.com/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://httpd.apache.org/docs/current/mod/mod_rewrite.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://httpd.apache.org/docs/current/mod/mod_rewrite.html"><strong>mod_rewrite - Apache HTTP Server Version 2.4</strong>
 <br/>
@@ -643,10 +643,10 @@ This is hugely beneficial because it lets you determine what the messaging (and 
 
 <em>A web application is designed to look and behave in a way similar to a native application-for example, it is scaled to…</em>developer.apple.com</a><a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-<a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490%28v=vs.85%29" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490(v=vs.85)"><strong>Windows 8 integration (Windows)</strong>
+<a href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490%28v=vs.85%29" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490(v=vs.85)"><strong>Windows 8 integration (Windows)</strong>
 <br/>
 
-<em>This section details the ways in which web developers can take advantage of the tight integration of Windows 8 and…</em>docs.microsoft.com</a><a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490%28v=vs.85%29" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>This section details the ways in which web developers can take advantage of the tight integration of Windows 8 and…</em>docs.microsoft.com</a><a href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh781490%28v=vs.85%29" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
 <a href="https://schema.org/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://schema.org/"><strong>Schema.org - Schema.org</strong>
 <br/>

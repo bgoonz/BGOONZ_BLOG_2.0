@@ -1,10 +1,10 @@
 ---
-title: Web Apis
+title: Web Audio Api
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
+    title: 'Web Audio Api'
+    description: 'This article explains some of the audio theory behind how the features of the Web Audio API work'
     robots: []
     extra: []
 template: docs
@@ -14,10 +14,6 @@ template: docs
 ## Web Audio Api
 
 # Basic concepts behind Web Audio API
-
-This article explains some of the audio theory behind how the features of the Web Audio API work, to help you make informed decisions while designing how audio is routed through your app.
-
-It won't turn you into a master sound engineer, but it will give you enough background to understand why the Web Audio API works like it does.
 
 ## [Audio graphs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_graphs 'Permalink to Audio graphs')
 

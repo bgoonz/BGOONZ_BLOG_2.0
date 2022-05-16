@@ -943,7 +943,7 @@ Here are a few links to some common servers to get you started:
 
 -   [Wordpress](https://wp-rocket.me/)
 -   [Express](https://github.com/expressjs/compression)
--   [IIS](https://docs.microsoft.com/en-us/iis/extensions/iis-compression/iis-compression-overview)
+-   [IIS](https://docs.microsoft.com/iis/extensions/iis-compression/iis-compression-overview)
 -   [NGinX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/)
 
 Also, remember that you only want to compress text files. So do not add compression to raster images as this may make them slower.
