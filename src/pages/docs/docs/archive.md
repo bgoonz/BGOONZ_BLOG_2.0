@@ -26,8 +26,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -38,8 +37,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -67,12 +65,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -89,12 +85,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -115,12 +109,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -140,8 +132,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -157,8 +148,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -179,8 +169,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -208,12 +197,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -229,12 +216,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -251,12 +236,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -273,8 +256,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 <br>
@@ -291,12 +273,10 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+<br><br>
 <br>
 <br>
-<br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
@@ -311,8 +291,7 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
-<br>
+<br><br>
 <br>
 <br>
 
