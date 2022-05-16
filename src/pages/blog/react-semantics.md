@@ -5,7 +5,8 @@ subtitle: Learn React
 excerpt: Below I list the most common terms, and their definitions, used when
   talking about React.
 date: 2022-04-18T20:21:35.309Z
-image: https://webdevhub.us/images/successful-panda.gif
+image: /blog/react.png
+thumb_image: /blog/react.png
 image_position: top
 author: src/data/authors/bgoon.yaml
 categories:
