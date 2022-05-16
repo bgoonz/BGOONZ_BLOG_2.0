@@ -4,8 +4,8 @@ template: post
 subtitle: In React, we write event handlers directly on the elements in our JSX
 excerpt: In React, we write event handlers directly on the elements in our JSX
 date: 2022-05-04T19:10:59.235Z
-image: react.png
-thumb_image: react.gif
+image: /blog/react2.jpg
+thumb_image: /blog/react2.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

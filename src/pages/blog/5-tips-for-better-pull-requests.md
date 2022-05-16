@@ -4,17 +4,10 @@ template: post
 subtitle: 5 tips for better Pull Requests
 excerpt: 5 tips for better Pull Requests
 date: 2022-04-20T01:06:16.962Z
-image: /blog/pull-request.jpg
-thumb_image: /blog/pull-request.jpg
+image: /blog/git.png
+thumb_image: /blog/git.png
 image_position: right
-author: src/data/authors/im.yaml
-categories:
-  - src/data/categories/git.yaml
-tags:
-  - src/data/tags/links.yaml
 show_author_bio: true
-related_posts:
-  - src/pages/blog/webdev-setup.md
 cmseditable: true
 ---
 
