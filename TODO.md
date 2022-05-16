@@ -1,4 +1,4 @@
-# ToDo:
+# To Do:
 
 1.  embed this [tool](https://bgoonz.github.io/html-2-md-converter/)
 2.  Fix broken Links
@@ -7,3 +7,5 @@
 5.  Dark Mode
 6.  https://github.com/bgoonz/MainBlogContent
 7.  Gatsby plugin Algolia 
+8.  Add vercel and other backups to readme or internal use page if it exists
+9.  
