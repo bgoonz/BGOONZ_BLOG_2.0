@@ -4,14 +4,14 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
-image: /blog/psql.jpg
-thumb_image: /blog/psql-schema.jpg
+image: psql-diagram.jpg
+thumb_image: psql-diagram.jpg
 image_position: top
 author: src/data/authors/bgoon.yaml
 categories:
-    - src/data/categories/db.yaml
+  - src/data/categories/db.yaml
 tags:
-    - src/data/tags/psql.yaml
+  - src/data/tags/psql.yaml
 show_author_bio: true
 cmseditable: true
 ---

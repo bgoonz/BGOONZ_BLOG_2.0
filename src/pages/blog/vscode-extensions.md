@@ -10,7 +10,7 @@ author: src/data/authors/bgoon.yaml
 categories:
   - src/data/categories/tools.yaml
 tags:
-  - src/data/tags/links.yaml
+  - src/data/tags/🖇-🖇-🖇-🖇.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/vs-code-extensions.md
