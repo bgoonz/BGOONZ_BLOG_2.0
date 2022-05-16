@@ -13,7 +13,7 @@ author: src/data/authors/bgoon.yaml
 categories:
   - src/data/categories/ds.yaml
 tags:
-  - src/data/tags/🖇-🖇-🖇-🖇.yaml
+  - src/data/tags/links.yaml
 show_author_bio: true
 cmseditable: true
 ---

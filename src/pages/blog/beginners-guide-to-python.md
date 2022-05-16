@@ -11,7 +11,7 @@ author: src/data/authors/im.yaml
 categories:
   - src/data/categories/py.yaml
 tags:
-  - src/data/tags/🖇-🖇-🖇-🖇.yaml
+  - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/webdev-setup.md
