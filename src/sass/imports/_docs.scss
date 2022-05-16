@@ -1,11 +1,13 @@
 .docs-content {
     padding-top: 2.5em;
+    width: 95%;
 }
-
+.post-content {
+    width:1400px;
+}
 .post {
     &.type-docs {
-        margin-bottom: 5.625em;
-        max-width: $container-md;
+        margin-bottom: 3.625em;
 
         h1 {
             font-size: 1.875em;
@@ -79,7 +81,9 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 2.5em 0;
+            padding:0.3em;
+            width: 70vw;
+ 
         }
 
         .post-title {
@@ -89,7 +93,9 @@
         }
 
         .post-content {
-            padding: 0 1.875em;
+            padding: 0.975em;
+            word-wrap: break-word;
+
         }
     }
 }
@@ -107,7 +113,7 @@
     .docs-section-item {
         -ms-flex: 1 1 240px;
         flex: 1 1 240px;
-        margin: 0 0.3125em 0.9375em;
+         margin: 0 0.3125em 0.9375em;
     }
 
     .docs-item-link {
@@ -136,9 +142,9 @@
         color: $gray-700;
         font-size: 1.125em;
         margin: 0;
-        padding-right: 30px;
+        padding-right: 15px;
         text-align: left;
-        width: 100%;
+   
     }
 
     .docs-submenu-toggle {
@@ -154,7 +160,7 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0;
+    margin: 0.5em;
     padding: 0;
 
     & > .docs-menu-item > a {
@@ -185,7 +191,7 @@
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 .docs-menu-item {
@@ -213,6 +219,7 @@
 
 #page-nav {
     display: none;
+  text-overflow: wrap;
 
     .page-nav-title {
         font-size: 1em;
@@ -250,16 +257,14 @@
         }
     }
 
-    .page-nav-inside {
-        display: none;
-
-        &.has-links {
-            display: block;
+    .page-nav-title {
+        &:only-child {
+            display: none;
         }
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 1200px) {
     .post {
         &.type-docs {
             .post-title,
@@ -271,23 +276,22 @@
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
+        width: 1400px;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        overflow: hidden;
+align-content: center;
     }
 
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
-        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -298,13 +302,12 @@
     }
 
     .docs-nav {
-        padding-right: 1.5em;
-        width: 12.5em;
+        width: 8.5em;
     }
 
     #page-nav {
-        padding-left: 1.5em;
-        width: 9.5em;
+        font-size: 12px;
+        margin: 3em;
     }
 
     #docs-nav-toggle {
