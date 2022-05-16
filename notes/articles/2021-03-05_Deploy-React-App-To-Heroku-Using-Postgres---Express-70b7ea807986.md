@@ -171,9 +171,6 @@ If you want to open a connection to the logs to continuously output to your term
 
 The logs may clue you into why you are experiencing errors or different behavior.
 
-
-
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -202,4 +199,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

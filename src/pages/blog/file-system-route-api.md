@@ -4,15 +4,15 @@ template: post
 subtitle: GatsbyJS File System Route API
 excerpt: Use the File System Route API when you want to create dynamic pages
 date: 2022-05-16T00:22:26.250Z
-image: /blog/gatsby.png
-thumb_image: /blog/gatsby.png
+image: file-system.jpg
+thumb_image: file-system.jpg
 image_position: right
 author: src/data/authors/backup.yaml
 categories:
-  - src/data/categories/gatsbyjs.yaml
+    - src/data/categories/gatsbyjs.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/gatsby-cli.md
+    - src/pages/blog/gatsby-cli.md
 cmseditable: true
 ---
 
@@ -30,9 +30,9 @@ Imagine a Gatsby project that sources a `product.yaml` file and multiple Markdow
 
 To create collection routes, use curly braces (`{ }`) in your filenames to signify dynamic URL segments that relate to a field within the node. Here are a few examples:
 
-- `src/pages/products/{Product.name}.js` will generate a route like `/products/burger`
-- `src/pages/products/{Product.fields__sku}.js` will generate a route like `/products/001923`
-- `src/pages/blog/{MarkdownRemark.parent__(File)__name}.js` will generate a route like `/blog/learning-gatsby`
+-   `src/pages/products/{Product.name}.js` will generate a route like `/products/burger`
+-   `src/pages/products/{Product.fields__sku}.js` will generate a route like `/products/001923`
+-   `src/pages/blog/{MarkdownRemark.parent__(File)__name}.js` will generate a route like `/blog/learning-gatsby`
 
 Gatsby creates a page for each node in a collection route. So if you have three markdown files that are blog posts, Gatsby will create the three pages from a collection route. As you add and remove markdown files, Gatsby will add and remove pages.
 
@@ -43,16 +43,16 @@ of adding a source plugin, use GraphiQL to identify the type and field to constr
 
 There are some general syntax requirements when using collection routes:
 
-- Dynamic segments of file paths must start and end with curly braces (`{ }`).
-- Types are case-sensitive (e.g. `MarkdownRemark` or `contentfulMyContentType`). Check GraphiQL for the correct names.
-- Dynamic segments must include both a type and a field e.g. `{Type.field}` or `{BlogPost.slug}`.
+-   Dynamic segments of file paths must start and end with curly braces (`{ }`).
+-   Types are case-sensitive (e.g. `MarkdownRemark` or `contentfulMyContentType`). Check GraphiQL for the correct names.
+-   Dynamic segments must include both a type and a field e.g. `{Type.field}` or `{BlogPost.slug}`.
 
 ### Nested routes
 
 You can use dynamic segments multiple times in a path. For example, you might want to nest product names within its product category. For example:
 
-- `src/pages/products/{Product.category}/{Product.name}.js` will generate a route like `/products/toys/fidget-spinner`
-- `src/pages/products/{Product.category}/{Product.name}/{Product.color}.js` will generate a route like `/products/toys/fidget-spinner/red`
+-   `src/pages/products/{Product.category}/{Product.name}.js` will generate a route like `/products/toys/fidget-spinner`
+-   `src/pages/products/{Product.category}/{Product.name}/{Product.color}.js` will generate a route like `/products/toys/fidget-spinner/red`
 
 ### Field syntax
 
@@ -168,17 +168,17 @@ To address this issue, Gatsby automatically includes a `gatsbyPath` field on eve
 
 There are some general syntax requirements when using the `filePath` argument:
 
-- The path must be an absolute path (starting with a `/`).
-- You must omit the file extension.
-- You must omit the `src/pages` prefix.
-- Your path must not include `index`.
+-   The path must be an absolute path (starting with a `/`).
+-   You must omit the file extension.
+-   You must omit the `src/pages` prefix.
+-   Your path must not include `index`.
 
 #### `gatsbyPath` example
 
 Assume that a `Product` type is used in two pages:
 
-- `src/pages/products/{Product.name}.js`
-- `src/pages/discounts/{Product.name}.js`
+-   `src/pages/products/{Product.name}.js`
+-   `src/pages/discounts/{Product.name}.js`
 
 If you wanted to link to the `products/{Product.name}` and `discounts/{Product.name}` routes from your home page, you would have a component like this:
 
@@ -220,8 +220,8 @@ Use [client-only routes](/docs/how-to/routing/client-only-routes-and-user-authen
 
 You can use square brackets (`[ ]`) in the file path to mark any dynamic segments of the URL. For example, in order to edit a user, you might want a route like `/user/:id` to fetch the data for whatever `id` is passed into the URL.
 
-- `src/pages/users/[id].js` will generate a route like `/users/:id`
-- `src/pages/users/[id]/group/[groupId].js` will generate a route like `/users/:id/group/:groupId`
+-   `src/pages/users/[id].js` will generate a route like `/users/:id`
+-   `src/pages/users/[id]/group/[groupId].js` will generate a route like `/users/:id/group/:groupId`
 
 #### Splat routes
 
@@ -229,8 +229,8 @@ Gatsby also supports _splat_ (or wildcard) routes, which are routes that will ma
 
 As an example, suppose that you are rendering images from [S3](/docs/how-to/previews-deploys-hosting/deploying-to-s3-cloudfront/) and the URL is actually the key to the asset in AWS. Here is how you might create your file:
 
-- `src/pages/image/[...].js` will generate a route like `/image/*`. `*` is accessible in your page's received properties with the key name `*`.
-- `src/pages/image/[...awsKey].js` will generate a route like `/image/*awsKey`. `*awsKey` is accessible in your page's received properties with the key name `awsKey`.
+-   `src/pages/image/[...].js` will generate a route like `/image/*`. `*` is accessible in your page's received properties with the key name `*`.
+-   `src/pages/image/[...awsKey].js` will generate a route like `/image/*awsKey`. `*awsKey` is accessible in your page's received properties with the key name `awsKey`.
 
 ```js:title=src/pages/image/[...].js
 export default function ImagePage({ params }) {
@@ -278,7 +278,7 @@ function AppPage(props) {
 
 Inside a File System Route template you can export an async function called `config`. You can use this function to:
 
-- Mark the page as deferred or not (see [Deferred Static Generation API reference](/docs/reference/rendering-options/deferred-static-generation/))
+-   Mark the page as deferred or not (see [Deferred Static Generation API reference](/docs/reference/rendering-options/deferred-static-generation/))
 
 Inside your template:
 
@@ -308,7 +308,7 @@ The `params` parameter is an object that contains the URL path, see [explanation
 
 The inner function of `config` can return an object with one key:
 
-- `defer`: Boolean of whether the page should be marked as deferred or not
+-   `defer`: Boolean of whether the page should be marked as deferred or not
 
 Read the [Deferred Static Generation guide](/docs/how-to/rendering-options/using-deferred-static-generation/) to see a real-world example.
 
@@ -320,8 +320,8 @@ Have a look at the [route-api example](https://github.com/gatsbyjs/gatsby/tree/m
 
 By using a combination of a collection route with a client-only route, you can create a seamless experience when a user tries to visit a URL from the collection route that doesn’t exist (yet) for the collection item. Consider these two file paths:
 
-- `src/pages/products/{Product.name}.js` (collection route)
-- `src/pages/products/[name].js` (client-only route, fallback)
+-   `src/pages/products/{Product.name}.js` (collection route)
+-   `src/pages/products/[name].js` (client-only route, fallback)
 
 The collection route will create all available product pages at the time of the [build](/docs/glossary/build/). If you're adding a new product you want to link to but only periodically building your site, you'll need a fallback. By using a client-only route as a fallback you then can load the necessary information for the product on the client until you re-built your site.
 
@@ -333,8 +333,8 @@ By placing the template/view for your routes into a reusable component you can d
 
 You want to display product information which is both accessible by name and SKU but has the same design. Create two file paths first:
 
-- `src/pages/products/{Product.name}.js`
-- `src/pages/products/{Product.meta__sku}.js`
+-   `src/pages/products/{Product.name}.js`
+-   `src/pages/products/{Product.meta__sku}.js`
 
 Create a view component at `src/view/product-view.js` that takes in a `product` prop. Use that component in both collection routes, e.g.:
 

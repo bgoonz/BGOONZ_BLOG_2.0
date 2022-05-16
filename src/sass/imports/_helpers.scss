@@ -3,7 +3,7 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
   height: 1px;
-  overflow: hidden;
+  overflow:auto;
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
@@ -16,7 +16,7 @@
   &:after {
     background: $color-primary;
     display: block;
-    content: '';
+    content: "";
     height: 100%;
     left: -1px;
     position: absolute;
@@ -61,7 +61,7 @@
 .has-gradient {
   background: $color-primary;
   background: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
-  background: linear-gradient(to right, $color-secondary, $color-primary);
+  background: linear-gradient(to right,$color-secondary, $color-primary);
   color: #fff;
   position: relative;
 
@@ -79,10 +79,10 @@
       color: inherit !important;
 
       &:hover {
-        opacity: 0.8;
+        opacity: .8;
       }
-      }
-      }
+    }
+  }
 
   .button {
     &:not(.button-secondary) {
@@ -92,10 +92,10 @@
       &:hover,
       &:focus,
       &:active {
-        opacity: 0.85;
+        opacity: .85;
       }
-      }
-      }
+    }
+  }
 
   .button-secondary {
     color: #fff !important;
@@ -108,8 +108,8 @@
 
 // Background image
 .bg-img {
-  -webkit-animation: fadeIn20 0.75s ease-in-out;
-  animation: fadeIn20 0.75s ease-in-out;
+  -webkit-animation: fadeIn20 .75s ease-in-out;
+  animation: fadeIn20 .55s ease-in-out;
   background-position: center;
   background-size: cover;
   bottom: 0;
@@ -123,9 +123,7 @@
 // Grid
 .grid {
   display: -ms-flexbox;
-  // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
   display: flex;
-  border-radius: 5px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -$grid-gap / 2;
@@ -134,7 +132,6 @@
 
 .grid-item {
   box-sizing: border-box;
-  // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;    
   padding-left: $grid-gap / 2;
   padding-right: $grid-gap / 2;
   position: relative;
@@ -178,12 +175,12 @@
 
 @media only screen and (max-width: 600px) {
   .grid {
-    margin-left: -$container-padding / 2;
-    margin-right: -$container-padding / 2;
+    margin-left: -$container-padding / 3;
+    margin-right: -$container-padding /3;
   }
 
   .grid-item {
-    padding-left: $container-padding / 2;
-    padding-right: $container-padding / 2;
+    padding-left: $container-padding / 3;
+    padding-right: $container-padding /3;
   }
 }

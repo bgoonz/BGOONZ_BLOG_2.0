@@ -4,8 +4,8 @@ template: post
 subtitle: a visual guide
 excerpt: The most basic of all data structures, an array s
 date: 2022-04-19T05:30:39.001Z
-image: ""
-thumb_image: https://camo.githubusercontent.com/82cd3953e721f75e55b74c5854d64d3de002098592eba6338aa152f3ad1b4cc6/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34383630343534383739383837333630
+image: ds-algo.png
+thumb_image: ds-algo.png
 image_position: top
 author: src/data/authors/bgoon.yaml
 categories:

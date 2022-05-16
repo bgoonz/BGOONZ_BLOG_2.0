@@ -44,6 +44,11 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 <span class="small">#sec-postfix-decrement-operator</span></a></td></tr></tbody></table>
 
 `Decrement`
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 76d6dc51101acf3d9dde932dc7a18ffb67c9eb9a
 
 2
 
@@ -84,3 +89,7 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a>
+<<<<<<< HEAD
+=======
+>>>>>>> d1e8c5a51 ( update)
+>>>>>>> 76d6dc51101acf3d9dde932dc7a18ffb67c9eb9a

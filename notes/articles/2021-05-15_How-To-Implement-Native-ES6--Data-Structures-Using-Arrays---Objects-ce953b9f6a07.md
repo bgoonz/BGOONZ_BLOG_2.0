@@ -61,4 +61,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

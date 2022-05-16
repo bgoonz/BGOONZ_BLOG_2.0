@@ -20,7 +20,7 @@ A product icon theme for Visual Studio Code
 ### Install
 
 1.  <span id="5f77">Install the icon theme from the <a href="https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons" class="markup--anchor markup--li-anchor">Marketplace</a>
-</span>
+    </span>
 2.  <span id="6411">Open the command palette (`Ctrl/Cmd + Shift + P`) and search for `Preferences: Product Icon Theme`</span>
 3.  <span id="0613">Select `Fluent Icons`</span>
 
@@ -222,4 +222,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/my-favorite-vscode-themes-9bab65af3f0f" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

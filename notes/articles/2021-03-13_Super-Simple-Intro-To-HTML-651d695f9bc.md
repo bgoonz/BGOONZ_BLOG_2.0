@@ -44,9 +44,7 @@ In this instance, the image source (src) and the alt text (alt) are attributes o
 
 1.  <span id="e12a">The vast majority of tags must be **opened** (`<tag>`) and **closed** (`</tag>`) with the element information such as a title or text resting between the tags.</span>
 2.  <span id="c99f">When using multiple tags, the tags must be **closed in the order in which they were opened**. For example:</span>
-3.  <span id="9eb5">`<strong>
-<em>This is really important!</em>
-</strong>`</span>
+3.  <span id="9eb5">`<strong> <em>This is really important!</em> </strong>`</span>
 
 Let's have a look at how CodePen works, firstly, you need to go to their website. After that, you must create an account. After you do that, You will see something like this
 
@@ -103,9 +101,9 @@ The three block level tags every HTML document needs to contain are **&lt;html&g
 2.  <span id="c015">The **&lt;head&gt;&lt;/head&gt;** tag holds meta information such as the page's title and charset.</span>
 3.  <span id="5ca8">Finally, the **&lt;body&gt;&lt;/body&gt;** tag encloses all the content that appears on the page.</span>
 
-- <span id="7864">Paragraphs are enclosed by **_&lt;p&gt;&lt;/p&gt;_**, while blockquotes use the **_&lt;blockquote&gt;&lt;/blockquote&gt;_** tag.</span>
-- <span id="82ad">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
-- <span id="39c6">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
+-   <span id="7864">Paragraphs are enclosed by **_&lt;p&gt;&lt;/p&gt;_**, while blockquotes use the **_&lt;blockquote&gt;&lt;/blockquote&gt;_** tag.</span>
+-   <span id="82ad">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
+-   <span id="39c6">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
 
 1.  <span id="e470">**&lt;ul&gt;**</span>
 2.  <span id="b8c5">**&lt;li&gt;**List item 1**&lt;/li&gt;**</span>
@@ -117,14 +115,14 @@ The three block level tags every HTML document needs to contain are **&lt;html&g
 
 An HTML Document is mainly divided into two parts:
 
-- <span id="0424">**HEAD**: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.</span>
+-   <span id="0424">**HEAD**: This contains the information about the HTML document. For Example, Title of the page, version of HTML, Meta-Data etc.</span>
 
 HTML TAG Specifies an html document. The HTML element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element. Since the element is the first in a document, it is called the root element.
 
 Although this tag can be implied, or not required, with HTML, it is required to be opened and closed in XHTML.
 
-- <span id="83fe">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
-- <span id="9d53">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
+-   <span id="83fe">Divisions are bigger content sections that typically contain several paragraphs, images, sometimes blockquotes, and other smaller elements. We can mark them up using the **_&lt;div&gt;&lt;/div&gt;_** tag. A div element can contain another div tag inside it as well.</span>
+-   <span id="9d53">You may also use **_&lt;ol&gt;&lt;/ol&gt;_** tags for ordered lists and **_&lt;ul&gt;&lt;/ul&gt;_** for unordered ones. Individual list items must be enclosed by the **_&lt;li&gt;&lt;/li&gt;_** tag. For example, this is how a basic unordered list looks like in HTML:</span>
 
 1.  <span id="4097">**&lt;ul&gt;**</span>
 2.  <span id="0103">**&lt;li&gt;**List item 1**&lt;/li&gt;**</span>
@@ -255,4 +253,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/super-simple-intro-to-html-651d695f9bc" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.
