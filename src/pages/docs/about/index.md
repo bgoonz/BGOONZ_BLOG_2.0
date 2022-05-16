@@ -2,26 +2,27 @@
 title: About
 excerpt: Web-Dev-Hub is my personal blogand documentation site
 seo:
-  title: About
-  description: Bryan Guner personal blog about page
-  extra:
-    - name: og:type
-      value: website
-      keyName: property
-    - name: og:title
-      value: About
-      keyName: property
-    - name: og:description
-      value: This is the About page
-      keyName: property
-    - name: twitter:card
-      value: summary
-    - name: twitter:title
-      value: About
-    - name: twitter:description
-      value: This is the About page
+    title: About
+    description: Bryan Guner personal blog about page
+    extra:
+        - name: og:type
+          value: website
+          keyName: property
+        - name: og:title
+          value: About
+          keyName: property
+        - name: og:description
+          value: This is the About page
+          keyName: property
+        - name: twitter:card
+          value: summary
+        - name: twitter:title
+          value: About
+        - name: twitter:description
+          value: This is the About page
 template: docs
 ---
+
 <div align="center">
 
 <h1>Hi 👋, I'm Bryan</h1>
@@ -56,7 +57,6 @@ template: docs
 <br>  
 <br>
 
-  
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /><img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
 
 <br>  
@@ -79,25 +79,24 @@ template: docs
 
 ---
 
-
 ### About Me
 
-- 🔭 Contract Web Development **Duke Energy**
+-   🔭 Contract Web Development **Duke Energy**
 
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
 
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
-- 🤝 I'm looking for help with [L
+-   👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
+-   🤝 I'm looking for help with [L
 
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+-   👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
 
-- 💬 Ask me about **Anything:**
+-   💬 Ask me about **Anything:**
 
-- 📫 How to reach me **bryan.guner@gmail.com**
+-   📫 How to reach me **bryan.guner@gmail.com**
 
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
 ### i really like music :headphones
 
@@ -153,14 +152,12 @@ Creating things that change my every day life.
 
 ---
 
-
-
 ## Resume (Old):
 
 # ➤ Technical Skills
 
 | **Programming\*\*** Languages:\*\* | JavaScript ES-6, NodeJS, React, HTML5, CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python, C++ |
-|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Databases:**                     | PostgreSQL, MongoDB                                                                                   |
 | **Cloud:**                         | Docker, AWS, Google App Engine, Netlify, Digital Ocean, Heroku, Azure Cloud Services                  |
 | **OS:**                            | Linux, Windows (WSL), IOS                                                                             |
@@ -178,15 +175,15 @@ Creating things that change my every day life.
 | **Front End Web Developer**           |
 |                                       |
 
-- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
-- Designed mock-up screens, wireframes, and workflows for intuitive user experience.
-- Migrated existing multi-page user experience into singular page interfaces using React components.
-- Participated in every stage of the design from conception through development and iterative improvement.
-- Produced user stories and internal documentation for future site development and maintenance.
-- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
-- Managed all test deployments using a combination of Digital Ocean and Netlify.
-- Produced unit tests using a combination of Mocha and Chai.
-- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+-   Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+-   Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+-   Migrated existing multi-page user experience into singular page interfaces using React components.
+-   Participated in every stage of the design from conception through development and iterative improvement.
+-   Produced user stories and internal documentation for future site development and maintenance.
+-   Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+-   Managed all test deployments using a combination of Digital Ocean and Netlify.
+-   Produced unit tests using a combination of Mocha and Chai.
+-   Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
 
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
@@ -196,11 +193,11 @@ Creating things that change my every day life.
 | **Product Development Engineer** |
 |                                  |
 
-- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
-- Reorganized internal file server structure.
-- Conducted remote / in person system integration and product demonstrations.
-- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
-- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+-   Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+-   Reorganized internal file server structure.
+-   Conducted remote / in person system integration and product demonstrations.
+-   Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+-   Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
 
 | **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
 | ---------------- | ------------------------------------ |
@@ -216,8 +213,8 @@ Creating things that change my every day life.
 
 **Capstone Project - Team Lead**
 
-- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
-- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+-   Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+-   Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
 
 | **Environment:** | **C++, Python, MATLAB, PureData** |
 | ---------------- | --------------------------------- |
@@ -228,8 +225,6 @@ Creating things that change my every day life.
 <br>
 
 ---
-
-
 
 ---
 
@@ -285,20 +280,14 @@ Creating things that change my every day life.
 
   </tbody>
 
-
-
 <br>
 <br>
 
 <br>
 <br>
-
-
 
 </div>
 <hr>
-
-
 
 <hr>
 
@@ -316,4 +305,3 @@ Creating things that change my every day life.
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker) ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git) ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby) ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)
 
 ![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue) ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
-
