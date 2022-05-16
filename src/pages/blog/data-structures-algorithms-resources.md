@@ -6,8 +6,8 @@ excerpt: "Talk is cheap. Show me the code.  Software is like sex: it's better
   when it's free.  Microsoft isn't evil, they just make really crappy operating
   systems."
 date: 2022-04-09T12:24:38.027Z
-image: ds-whiteboard.webp
-thumb_image: ds-whiteboard.webp
+image: blob:https://bgoonz-blog.netlify.app/3a787f24-9761-44b8-bc40-e2642c05c280
+thumb_image: blob:https://bgoonz-blog.netlify.app/3a787f24-9761-44b8-bc40-e2642c05c280
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
