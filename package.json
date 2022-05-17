@@ -1,7 +1,7 @@
 {
-    "name": "stackbit-libris-theme",
-    "description": "Stackbit Libris Theme",
-    "version": "0.0.1",
+    "name": "bgoonz-blog",
+    "description": "bgoonz-blog",
+    "version": "1.11.1",
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
@@ -16,6 +16,7 @@
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
         "fs-extra": "7.0.1",
+        "gatsby-plugin-disqus": "^1.2.3",
         "babel-eslint": "^8.0.1",
         "eslint": "^4.8.0",
         "eslint-config-fbjs": "^2.0.0",
@@ -76,5 +77,6 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
+
     }
 }

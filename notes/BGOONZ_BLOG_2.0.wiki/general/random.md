@@ -19,4 +19,4 @@ www.algolia.com/interface-demos/2e4a0ba7-4fc8-4ed3-ab24-9b3d53e9b894
     branch: 'master',
     selector: 'div#search',
   });
-</script
+</script>
