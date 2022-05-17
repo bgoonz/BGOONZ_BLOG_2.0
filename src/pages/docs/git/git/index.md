@@ -3,12 +3,13 @@ title: Git and Github
 weight: 0
 excerpt: Why is looking at runtime not a reliable method of calculating time complexity?
 seo:
-  title: Git and Github
-  description: A Quick Guide to Git and Github
-  robots: []
-  extra: []
+    title: Git and Github
+    description: A Quick Guide to Git and Github
+    robots: []
+    extra: []
 template: docs
 ---
+
 # Understanding Git (A Beginners Guide Containing Cheat Sheets & Resources)
 
 Basic Git Work Flow.
@@ -40,9 +41,9 @@ Without version control, team members are subject to redundant tasks, slower tim
 
 According to the latest <a href="https://insights.stackoverflow.com/survey/2017#technology" class="markup--anchor markup--p-anchor">Stack Overflow developer survey</a>, more than 70 percent of developers use Git, making it the most-used VCS in the world. Git is commonly used for both open source and commercial software development, **with significant benefits** for individuals, teams and businesses.
 
-- <span id="0276">Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.</span>
-- <span id="2be5">Developers work in every time zone. With a DVCS like Git, collaboration can happen any time while maintaining source code integrity. Using branches, developers can safely propose changes to production code.</span>
-- <span id="6d54">Businesses using Git can break down communication barriers between teams and keep them focused on doing their best work. Plus, Git makes it possible to align experts across a business to collaborate on major projects.</span>
+-   <span id="0276">Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.</span>
+-   <span id="2be5">Developers work in every time zone. With a DVCS like Git, collaboration can happen any time while maintaining source code integrity. Using branches, developers can safely propose changes to production code.</span>
+-   <span id="6d54">Businesses using Git can break down communication barriers between teams and keep them focused on doing their best work. Plus, Git makes it possible to align experts across a business to collaborate on major projects.</span>
 
 ### Table Of Contents:
 
@@ -51,158 +52,158 @@ According to the latest <a href="https://insights.stackoverflow.com/survey/2017#
 </a>
 
 > <a href="#whats-a-distributed-version-controlsystem" class="markup--anchor markup--blockquote-anchor">
-<strong>
-<em>What's a distributed version control system?</em>
-</strong>
-</a>
+> <strong>
+> <em>What's a distributed version control system?</em>
+> </strong>
+> </a>
 
 > <a href="#why-git" class="markup--anchor markup--blockquote-anchor">
-<em>Why Git?</em>
-</a>
+> <em>Why Git?</em>
+> </a>
 
 > <a href="#whats-a-repository" class="markup--anchor markup--blockquote-anchor">
-<em>What's a repository?</em>
-</a>
+> <em>What's a repository?</em>
+> </a>
 
 > <a href="#git-flow" class="markup--anchor markup--blockquote-anchor">
-<strong>
-<em>Git Flow</em>
-</strong>
-</a>
+> <strong>
+> <em>Git Flow</em>
+> </strong>
+> </a>
 
 > <a href="#cloning-a-repo-and-changing-the-remoteurl" class="markup--anchor markup--blockquote-anchor">
-<em>Cloning a repo and changing the remote url</em>
-</a>
+> <em>Cloning a repo and changing the remote url</em>
+> </a>
 
 > <a href="#1-the-first-step-is-to-clone-therepo" class="markup--anchor markup--blockquote-anchor">
-<em>1. The first step is to clone the repo!</em>
-</a>
+> <em>1. The first step is to clone the repo!</em>
+> </a>
 
 > <a href="#2-sweet-you-have-the-cloned-repo-in-your-preferred-directory-now-lets-make-your-own-repo-on-github-create-a-new-repository" class="markup--anchor markup--blockquote-anchor">
-<em>2. Make your own repo</em>
-</a>_._
+> <em>2. Make your own repo</em>
+> </a>_._
 
 > <a href="#3-next-copy-thegit-link-that-is-on-the-next-page-do-not-do-any-other-steps-on-this-pagethat-is-for-when-you-do-not-clone-arepo" class="markup--anchor markup--blockquote-anchor">
-<em>3. Next, copy the .git link that is on the next page.</em>
-</a>
+> <em>3. Next, copy the .git link that is on the next page.</em>
+> </a>
 
 > <a href="#4-whenver-you-clone-a-repo-it-already-has-agit-directory-with-certain-configurations-set-up-to-be-able-to-push-this-repo-to-your-newly-created-github-repo-we-have-to-change-the-remoteorigin" class="markup--anchor markup--blockquote-anchor">
-<em>4. Whenver you clone a repo</em>
-</a>
+> <em>4. Whenver you clone a repo</em>
+> </a>
 
 > <a href="#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo" class="markup--anchor markup--blockquote-anchor">
-<em>5. Thats its! You can now run</em>
-</a> `git push` <a href="#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo" class="markup--anchor markup--blockquote-anchor">
-<em>and it will push to your newly created repo.</em>
-</a>
+> <em>5. Thats its! You can now run</em>
+> </a> `git push` <a href="#5-thats-its-you-can-now-run-git-push-and-it-will-push-to-your-newly-createdrepo" class="markup--anchor markup--blockquote-anchor">
+> <em>and it will push to your newly created repo.</em>
+> </a>
 
 > <a href="#basic-git-workflow" class="markup--anchor markup--blockquote-anchor">
-<em>Basic Git Work Flow.</em>
-</a>
+> <em>Basic Git Work Flow.</em>
+> </a>
 
 > <a href="#cheat-sheet" class="markup--anchor markup--blockquote-anchor">
-<strong>
-<em>Cheat Sheet:</em>
-</strong>
-</a>
+> <strong>
+> <em>Cheat Sheet:</em>
+> </strong>
+> </a>
 
 > <a href="#my-git-reference-repo" class="markup--anchor markup--blockquote-anchor">
-<em>My Git Reference Repo:</em>
-</a>
+> <em>My Git Reference Repo:</em>
+> </a>
 
 > <a href="#git-basics" class="markup--anchor markup--blockquote-anchor">
-<em>Git basics</em>
-</a>
+> <em>Git basics</em>
+> </a>
 
 > <a href="#a-glance-intogit" class="markup--anchor markup--blockquote-anchor">
-<em>A glance into GIT</em>
-</a>
+> <em>A glance into GIT</em>
+> </a>
 
 > <a href="#tracking-changes-in-a-repository" class="markup--anchor markup--blockquote-anchor">
-<em>Tracking changes in a repository</em>
-</a>
+> <em>Tracking changes in a repository</em>
+> </a>
 
 > <a href="#branches-andworkflow" class="markup--anchor markup--blockquote-anchor">
-<em>Branches and workflow</em>
-</a>
+> <em>Branches and workflow</em>
+> </a>
 
 > <a href="#bringing-it-backtogether" class="markup--anchor markup--blockquote-anchor">
-<em>Bringing it back together</em>
-</a>
+> <em>Bringing it back together</em>
+> </a>
 
 > <a href="#connect-w-github" class="markup--anchor markup--blockquote-anchor">
-<em>Connect-W-Github</em>
-</a>
+> <em>Connect-W-Github</em>
+> </a>
 
 > <a href="#i-%EF%B8%8F-opensource" class="markup--anchor markup--blockquote-anchor">
-<em>I ❤️ Open Source</em>
-</a>
+> <em>I ❤️ Open Source</em>
+> </a>
 
 > <a href="#merging-your-code-ongithub" class="markup--anchor markup--blockquote-anchor">
-<em>Merging your code on GitHub</em>
-</a>
+> <em>Merging your code on GitHub</em>
+> </a>
 
 > <a href="#browsing-your-git-repository" class="markup--anchor markup--blockquote-anchor">
-<em>Browsing Your Git Repository</em>
-</a>
+> <em>Browsing Your Git Repository</em>
+> </a>
 
 > <a href="#seeing-changes-in-realtime" class="markup--anchor markup--blockquote-anchor">
-<em>Seeing changes in real time</em>
-</a>
+> <em>Seeing changes in real time</em>
+> </a>
 
 > <a href="#diff-options" class="markup--anchor markup--blockquote-anchor">
-<em>Diff options</em>
-</a>
+> <em>Diff options</em>
+> </a>
 
 > <a href="#time-travel" class="markup--anchor markup--blockquote-anchor">
-<em>Time travel</em>
-</a>
+> <em>Time travel</em>
+> </a>
 
 > <a href="#why-checkout" class="markup--anchor markup--blockquote-anchor">
-<em>Why checkout?</em>
-</a>
+> <em>Why checkout?</em>
+> </a>
 
 > <a href="#git-do-overs-reset-rebase" class="markup--anchor markup--blockquote-anchor">
-<em>Git ‘Do-Overs': Reset &amp; Rebase</em>
-</a>
+> <em>Git ‘Do-Overs': Reset &amp; Rebase</em>
+> </a>
 
 > <a href="#resetting-thepast" class="markup--anchor markup--blockquote-anchor">
-<em>Resetting the past</em>
-</a>
+> <em>Resetting the past</em>
+> </a>
 
 > <a href="#soft-resets" class="markup--anchor markup--blockquote-anchor">
-<em>Soft resets</em>
-</a>
+> <em>Soft resets</em>
+> </a>
 
 > <a href="#risky-business-mixedresets" class="markup--anchor markup--blockquote-anchor">
-<em>Risky Business: Mixed resets</em>
-</a>
+> <em>Risky Business: Mixed resets</em>
+> </a>
 
 > <a href="#red-alert-hardresets" class="markup--anchor markup--blockquote-anchor">
-<em>Red alert! Hard resets</em>
-</a>
+> <em>Red alert! Hard resets</em>
+> </a>
 
 > <a href="#rebase-alt-time-travel" class="markup--anchor markup--blockquote-anchor">
-<em>Rebase: ‘Alt-time travel'</em>
-</a>
+> <em>Rebase: ‘Alt-time travel'</em>
+> </a>
 
 > <a href="#i-see-you-too-like-to-live-life-dangerously-tell-me-aboutrebase" class="markup--anchor markup--blockquote-anchor">
-<em>I see you too like to live life Dangerously… tell me about Rebase..</em>
-</a>
+> <em>I see you too like to live life Dangerously… tell me about Rebase..</em>
+> </a>
 
 > `working-on-the-header`
 
 > <a href="#golden-rule-ofgit" class="markup--anchor markup--blockquote-anchor">
-<em>"Golden Rule of Git"</em>
-</a>
+> <em>"Golden Rule of Git"</em>
+> </a>
 
 > **How 2's**
 
 > <a href="#troubleshooting-git" class="markup--anchor markup--blockquote-anchor">
-<strong>
-<em>Troubleshooting Git</em>
-</strong>
-</a>
+> <strong>
+> <em>Troubleshooting Git</em>
+> </strong>
+> </a>
 
 > **Further Reading & Resources**
 
@@ -224,7 +225,7 @@ Working in repositories keeps development projects organized and protected. Deve
 
 ### 1. The first step is to clone the repo!
 
-- <span id="b2f6">Navigate to the repo you want to clone and hit the big green code button. Copy the link given.</span>
+-   <span id="b2f6">Navigate to the repo you want to clone and hit the big green code button. Copy the link given.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*63LoanrbOPBIwDC6oFarFA.png" class="graf-image" />
@@ -235,7 +236,7 @@ Working in repositories keeps development projects organized and protected. Deve
 <img src="https://cdn-images-1.medium.com/max/800/1*PRiaHOvU-wvpAYQtIqduGQ.png" class="graf-image" />
 </figure>### 2. Sweet, you have the cloned repo in your preferred directory. Now lets make your own repo. On github, create a new repository.
 
-- <span id="c98b">Default settings are fine. Hit the big green button `Create Repository`</span>
+-   <span id="c98b">Default settings are fine. Hit the big green button `Create Repository`</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*U1qwd0OEBYhcToXYt2i6iA.png" class="graf-image" />
@@ -286,7 +287,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 #### It already has a .git directory with certain configurations set up. To be able to push this repo to your newly created GitHub repo we have to change the remote origin.
 
-- <span id="dda6">To do that, just run this command: (Make sure you are inside the repo you cloned)</span>
+-   <span id="dda6">To do that, just run this command: (Make sure you are inside the repo you cloned)</span>
 
 <!-- -->
 
@@ -300,13 +301,13 @@ OR:
 
 ### Basic Git Work Flow.
 
-- <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
-- <span id="9934">`git add .` - stages modified files to be committed.</span>
-- <span id="6ce0">`git status` - displays files that have been modified</span>
-- <span id="ce65">`git commit -m 'A helpfully commit message'` - commits the changes to your local repo. Get in the habit now of making helpful commit messages</span>
-- <span id="70ec">`git push` - pushes your local commits to your GitHub repo!</span>
-- <span id="4ca3">To pull down changes that your partner pushed to the repo you simply have to run:</span>
-- <span id="3bef">`git pull` - this will fetch the most recent updates!</span>
+-   <span id="23ce">After making changes to a file and you are ready to commit / push to your repo you can run the following commands:</span>
+-   <span id="9934">`git add .` - stages modified files to be committed.</span>
+-   <span id="6ce0">`git status` - displays files that have been modified</span>
+-   <span id="ce65">`git commit -m 'A helpfully commit message'` - commits the changes to your local repo. Get in the habit now of making helpful commit messages</span>
+-   <span id="70ec">`git push` - pushes your local commits to your GitHub repo!</span>
+-   <span id="4ca3">To pull down changes that your partner pushed to the repo you simply have to run:</span>
+-   <span id="3bef">`git pull` - this will fetch the most recent updates!</span>
 
 ### Cheat Sheet:
 
@@ -1132,9 +1133,9 @@ Configuring both the client and the server is unnecessary.
 
 **To configure SSH on the client side**:
 
-- <span id="7ae1">On UNIX, edit `~/.ssh/config` (create the file if it doesn't exist) and add or edit:</span>
-- <span id="542f">`Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`</span>
-- <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to "Connection" and under "Sending of null packets to keep session active", set `Seconds between keepalives (0 to turn off)` to `60`.</span>
+-   <span id="7ae1">On UNIX, edit `~/.ssh/config` (create the file if it doesn't exist) and add or edit:</span>
+-   <span id="542f">`Host your-gitlab-instance-url.com ServerAliveInterval 60 ServerAliveCountMax 5`</span>
+-   <span id="74d7">On Windows, if you are using PuTTY, go to your session properties, then navigate to "Connection" and under "Sending of null packets to keep session active", set `Seconds between keepalives (0 to turn off)` to `60`.</span>
 
 **To configure SSH on the server side**, edit `/etc/ssh/sshd_config` and add:
 
@@ -1241,4 +1242,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.
