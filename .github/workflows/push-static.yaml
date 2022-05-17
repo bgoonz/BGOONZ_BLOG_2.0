@@ -1,4 +1,4 @@
-name: My workflow
+name: static-directory
 
 on: [push]
 
@@ -19,17 +19,17 @@ jobs:
         with:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           repository: bgoonz/blog-static-directory # *** REPLACE WITH YOUR OWN ***
-          path: public-destination
+          path: public
 
       # Now we will copy/replace all files in the cloned destination folder, and finally push the changes:
       - run: |
           git config --global user.name bryan
           git config --global user.email bryan.guner@gmail.com
           # Remove existing files:
-          rm -rf public-destination/*
+          rm -rf public/*
           # Replace with new files:
-          cp -a public/* public-destination/
-          cd public-destination
+          cp -a public/* public/
+          cd public
           git add .
           # git diff-index: to avoid doing the git commit failing if there are no changes to be commit
           git diff-index --quiet HEAD || git commit --message 'Static file updates'
