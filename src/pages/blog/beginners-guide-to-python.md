@@ -4,8 +4,8 @@ template: post
 subtitle: It has simple, clean syntax, object encapsulation, good library support
 excerpt: "Article on basic web development setup… "
 date: 2022-05-11T00:02:02.952Z
-image: python.png
-thumb_image: python.png
+image: https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png
+thumb_image: https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png
 image_position: right
 author: src/data/authors/im.yaml
 categories:
