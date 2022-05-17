@@ -32,4 +32,4 @@ jobs:
           git add .
           # git diff-index: to avoid doing the git commit failing if there are no changes to be commit
           git diff-index --quiet HEAD || git commit --message 'Static file updates'
-          git push https://github.com/bgoonz/blog-static-directory
+          git push https://github.com/bgoonz/blog-static-directory.git
