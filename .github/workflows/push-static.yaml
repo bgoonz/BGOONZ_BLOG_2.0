@@ -26,7 +26,7 @@ jobs:
           git config --global user.name bryan
           git config --global user.email bryan.guner@gmail.com
           # Remove existing files:
-          # rm -rf public/*
+          rm -rf public/*
           # Replace with new files:
           cp -a public/* public/
           cd public
