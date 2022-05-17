@@ -5,10 +5,10 @@ subtitle: Learn React
 excerpt: Below I list the most common terms, and their definitions, used when
   talking about React.
 date: 2022-04-18T20:21:35.309Z
-image: /blog/react.png
-thumb_image: /blog/react.png
+image: images/blog/react.png
+thumb_image: images/blog/react.png
 image_position: top
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
 show_author_bio: true

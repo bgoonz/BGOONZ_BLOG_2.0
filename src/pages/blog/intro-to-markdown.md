@@ -7,7 +7,7 @@ date: 2022-05-16T04:10:35.613Z
 image: https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png
 thumb_image: https://cdn-images-1.medium.com/max/800/0*oy6szzmI0FdRUiTd.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/git.yaml
 tags:

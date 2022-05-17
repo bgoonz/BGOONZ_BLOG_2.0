@@ -7,7 +7,7 @@ date: 2022-05-16T06:08:24.979Z
 image: redux.gif
 thumb_image: redux.gif
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
 tags:

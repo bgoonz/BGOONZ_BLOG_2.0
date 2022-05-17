@@ -3,7 +3,7 @@ title: Date component
 template: post
 date: 2022-04-19T01:30:26.826Z
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
 tags:

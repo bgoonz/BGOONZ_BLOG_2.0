@@ -8,7 +8,7 @@ date: 2022-04-20T06:40:21.724Z
 image: https://i.imgur.com/hXISkxy.png
 thumb_image: https://i.imgur.com/hXISkxy.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/tools.yaml
 tags:

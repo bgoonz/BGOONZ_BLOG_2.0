@@ -7,7 +7,7 @@ date: 2022-04-19T05:30:39.001Z
 image: ds-algo.png
 thumb_image: ds-algo.png
 image_position: top
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/ds.yaml
 tags:

@@ -7,7 +7,7 @@ date: 2022-04-17T08:07:40.104Z
 image: call-stack-first-example.png
 thumb_image: call-stack-first-example.png
 image_position: top
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/js.yaml
 tags:
