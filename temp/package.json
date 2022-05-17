@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/bgoonz/BGOONZ_BLOG_2.0#readme",
   "dependencies": {
+    "child_process": "^1.0.2",
     "gatsby": "^4.14.0",
     "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-offline": "^5.14.0",
