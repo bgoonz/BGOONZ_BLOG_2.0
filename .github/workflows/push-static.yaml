@@ -27,7 +27,7 @@ jobs:
           git config --global user.email bryan.guner@gmail.com
           # Remove existing files:
           # Replace with new files:
-          cp -a public/* public-files/
+          cp -a public/* public-files
           cd public
           git add .
           # git diff-index: to avoid doing the git commit failing if there are no changes to be commit
