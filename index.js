@@ -8,7 +8,7 @@ const getBrowser = () => IS_PRODUCTION ?
 
     // Connect to browserless so we don't run Chrome on the same hardware in production
     puppeteer.connect({
-        browserWSEndpoint: 'wss://chrome.browserless.io?token=YOUR-API-TOKEN'
+        browserWSEndpoint: 'wss://chrome.browserless.io?token=2ed5472c-a1e8-4f7e-b71e-8a6daa8e5898'
     }) :
 
     // Run the browser locally while in development
@@ -21,7 +21,7 @@ app.get('/image', async (req, res) => {
         browser = await getBrowser();
         const page = await browser.newPage();
 
-        await page.goto('http://www.example.com/');
+        await page.goto('https://bgoonz-blog.netlify.app/');
         const screenshot = await page.screenshot();
 
         res.end(screenshot, 'binary');
