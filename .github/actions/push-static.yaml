@@ -1,0 +1,36 @@
+name: My workflow
+
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      #
+      # Insert any of your own steps to generate the static content here (in a directory called `public`)
+      # e.g. npm run build or npm run test covarage
+      #
+
+      # *** BEGIN PUBLISH STATIC SITE STEPS ***
+      # Use the standard checkout action to check out the destination repo to a separate directory
+      # See https://github.com/mifi/github-action-push-static
+      - uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          repository: bgoonz/blog-static-directory # *** REPLACE WITH YOUR OWN ***
+          path: public-destination
+
+      # Now we will copy/replace all files in the cloned destination folder, and finally push the changes:
+      - run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          # Remove existing files:
+          rm -rf public-destination/*
+          # Replace with new files:
+          cp -a public/* public-destination/
+          cd public-destination
+          git add .
+          # git diff-index: to avoid doing the git commit failing if there are no changes to be commit
+          git diff-index --quiet HEAD || git commit --message 'Static file updates'
+          git push https://github.com/bgoonz/blog-static-directory 
