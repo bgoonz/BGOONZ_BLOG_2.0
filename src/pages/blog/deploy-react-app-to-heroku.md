@@ -8,7 +8,7 @@ date: 2022-05-16T02:38:59.629Z
 image: heroku.png
 thumb_image: heroku.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
   - src/data/categories/js.yaml

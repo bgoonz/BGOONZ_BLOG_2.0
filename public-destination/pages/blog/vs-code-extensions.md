@@ -8,7 +8,7 @@ date: 2022-04-10T17:03:30.554Z
 image: vscode.png
 thumb_image: vscode.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/tools.yaml
 tags:

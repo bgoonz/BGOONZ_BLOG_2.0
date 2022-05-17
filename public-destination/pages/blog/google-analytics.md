@@ -2,8 +2,8 @@
 title: google-analytics
 template: post
 date: 2022-05-16T09:54:51.999Z
-image: /blog/analytics.jpg
-thumb_image: /blog/analytics.jpg
+image: images/blog/analytics.jpg
+thumb_image: images/blog/analytics.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

@@ -9,7 +9,7 @@ date: 2022-04-09T12:24:38.027Z
 image: blob:https://bgoonz-blog.netlify.app/3a787f24-9761-44b8-bc40-e2642c05c280
 thumb_image: blob:https://bgoonz-blog.netlify.app/3a787f24-9761-44b8-bc40-e2642c05c280
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/ds.yaml
 tags:

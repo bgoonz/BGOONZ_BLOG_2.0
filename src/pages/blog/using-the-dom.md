@@ -5,10 +5,10 @@ subtitle: Examples of web and XML development
 excerpt: "The following example shows the use of
   the `height` and `width` properties alongside images of varying dimensions:"
 date: 2022-04-15T07:01:59.356Z
-image: /blog/using-the-dom.png
-thumb_image: /blog/using-the-dom.png
+image: images/blog/using-the-dom.png
+thumb_image: images/blog/using-the-dom.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/html.yaml
 tags:

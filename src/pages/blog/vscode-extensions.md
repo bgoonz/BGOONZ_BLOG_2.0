@@ -6,7 +6,7 @@ date: 2022-04-18T06:50:55.010Z
 image: https://i.imgur.com/jpWPKyT.png
 thumb_image: https://i.imgur.com/jpWPKyT.png
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/tools.yaml
 tags:

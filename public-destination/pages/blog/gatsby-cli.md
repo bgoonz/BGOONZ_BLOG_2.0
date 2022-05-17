@@ -8,7 +8,7 @@ date: 2022-05-15T23:44:13.229Z
 image: https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
 thumb_image: https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/js.yaml
   - src/data/categories/search.yaml
