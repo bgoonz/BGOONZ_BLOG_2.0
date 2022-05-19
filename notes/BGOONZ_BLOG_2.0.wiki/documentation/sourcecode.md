@@ -1277,15 +1277,7 @@ export default {
     addScript
 };
 
-```
-
-
-
-
-
-
-
-</details>
+```</details>
 
 
 

@@ -31,48 +31,10 @@ cmseditable: true
 
 ![](/blog/nasa_space_shuttle_challenger.jpg)
 
-
-
-
-
-
-
-
-
 ![](/blog/woodcuts_1.jpg)
 
 ![](/blog/nasa_earth_grid.jpg)
 
 ![earth](/blog/nasa_the_blue_marble-1-.jpg "earth")
 
-![]()
 
-![]()
-
-![]()
-
-![]()
-
-
-
-
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-
-
-![]()
