@@ -4,6 +4,7 @@
     exports,
     (function(e) {
         var t = {};
+
         function r(n) {
             if (t[n]) return t[n].exports;
             var o = (t[n] = {
@@ -70,18 +71,23 @@
             'use strict';
             var n = r(3),
                 o = Object.prototype.toString;
+
             function s(e) {
                 return '[object Array]' === o.call(e);
             }
+
             function i(e) {
                 return void 0 === e;
             }
+
             function a(e) {
                 return null !== e && 'object' == typeof e;
             }
+
             function u(e) {
                 return '[object Function]' === o.call(e);
             }
+
             function c(e, t) {
                 if (null != e)
                     if (('object' != typeof e && (e = [e]), s(e)))
@@ -145,6 +151,7 @@
                 forEach: c,
                 merge: function e() {
                     var t = {};
+
                     function r(r, n) {
                         'object' == typeof t[n] && 'object' == typeof r ? (t[n] = e(t[n], r)) : (t[n] = r);
                     }
@@ -153,6 +160,7 @@
                 },
                 deepMerge: function e() {
                     var t = {};
+
                     function r(r, n) {
                         'object' == typeof t[n] && 'object' == typeof r ? (t[n] = e(t[n], r)) : (t[n] = 'object' == typeof r ? e({}, r) : r);
                     }
@@ -175,6 +183,7 @@
         function(e, _t, r) {
             'use strict';
             var n = r(0);
+
             function o(e) {
                 return encodeURIComponent(e)
                     .replace(/%40/gi, '@')
@@ -238,6 +247,7 @@
                 s = {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 };
+
             function i(e, t) {
                 !n.isUndefined(e) && n.isUndefined(e['Content-Type']) && (e['Content-Type'] = t);
             }
@@ -357,6 +367,7 @@
                     TRACE: !0
                 },
                 f = Object.create(null);
+
             function p(e, t) {
                 a.call(this),
                     (e.headers = e.headers || {}),
@@ -379,6 +390,7 @@
                 }
                 this._performRequest();
             }
+
             function l(e) {
                 var t = {
                         maxRedirects: 21,
@@ -514,6 +526,7 @@
         function(e, t, r) {
             function n(e) {
                 var r;
+
                 function n() {
                     if (n.enabled) {
                         var e = n,
@@ -554,6 +567,7 @@
                     n
                 );
             }
+
             function o() {
                 var e = t.instances.indexOf(this);
                 return -1 !== e && (t.instances.splice(e, 1), !0);
@@ -653,6 +667,7 @@
         },
         function(e, _t, _r) {
             'use strict';
+
             function n(e) {
                 this.message = e;
             }
@@ -697,6 +712,7 @@
                 o = r(3),
                 s = r(19),
                 i = r(14);
+
             function a(e) {
                 var t = new s(e),
                     r = o(s.prototype.request, t);
@@ -724,6 +740,7 @@
                 s = r(20),
                 i = r(21),
                 a = r(14);
+
             function u(e) {
                 (this.defaults = e), (this.interceptors = {
                     request: new s(),
@@ -775,6 +792,7 @@
         function(e, _t, r) {
             'use strict';
             var n = r(0);
+
             function o() {
                 this.handlers = [];
             }
@@ -800,6 +818,7 @@
                 o = r(22),
                 s = r(4),
                 i = r(5);
+
             function a(e) {
                 e.cancelToken && e.cancelToken.throwIfRequested();
             }
@@ -984,6 +1003,7 @@
                     var e,
                         t = /(msie|trident)/i.test(navigator.userAgent),
                         r = document.createElement('a');
+
                     function s(e) {
                         var n = e;
                         if (o(e)) throw new Error('URL contains XSS injection attempt');
@@ -1367,6 +1387,7 @@
                 n = 6e4,
                 o = 36e5,
                 s = 24 * o;
+
             function i(e, t, r) {
                 if (!(e < t)) return e < 1.5 * t ? Math.floor(e / t) + ' ' + r : Math.ceil(e / t) + ' ' + r + 's';
             }
@@ -1469,6 +1490,7 @@
                         198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 214, 215, 220, 221
                     ]);
             } catch (e) {}
+
             function i() {
                 return process.env.DEBUG;
             }
@@ -1519,6 +1541,7 @@
                 o = r(42),
                 s = process.env;
             let i;
+
             function a(e) {
                 return (function(e) {
                     return (
@@ -1598,6 +1621,7 @@
         function(e, _t, r) {
             'use strict';
             var n = r(15);
+
             function o(e) {
                 if ('function' != typeof e) throw new TypeError('executor must be a function.');
                 var t;
@@ -1656,4 +1680,4 @@ function(e, _t, _r) {
     };
 }
 ])
-);
+););
