@@ -15,7 +15,7 @@
 
 ```sh
 #!/bin/bash
-
+revert
 ## SHORTCUTS and HISTORY
 
 
