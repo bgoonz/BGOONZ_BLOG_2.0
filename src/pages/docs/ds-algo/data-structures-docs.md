@@ -14,7 +14,7 @@ template: docs
 
 # **Data Structures** are a specialized means of organizing and storing data in computers in such a way that we can perform operations on the stored data more efficiently. Data structures have a wide and diverse scope of usage across the fields of Computer Science and Software Engineering.Image by author
 
-![](https://miro.medium.com/max/473/1*KpDOKMFAgDWaGTQHL0r70g.png)
+![medium blog image](https://miro.medium.com/max/473/1*KpDOKMFAgDWaGTQHL0r70g.png)
 
 Data structures are being used in almost every program or software system that has been developed. Moreover, data structures come under the fundamentals of Computer Science and Software Engineering. It is a key topic when it comes to Software Engineering interview questions. Hence as developers, we must have good knowledge about data structures.
 
@@ -24,9 +24,9 @@ In this article, I will be briefly explaining 8 commonly used data structures ev
 
 ## 1. Arrays <a id="31ab"></a>
 
-An **array** is a structure of fixed-size, which can hold items of the same data type. It can be an array of integers, an array of floating-point numbers, an array of strings or even an array of arrays \(such as _2-dimensional arrays_\). Arrays are indexed, meaning that random access is possible.![](https://miro.medium.com/max/60/1*pYIKtQYbX8vgCWrwe1YOyg.png?q=20)Fig 1. Visualization of basic Terminology of Arrays \(Image by author\)
+An **array** is a structure of fixed-size, which can hold items of the same data type. It can be an array of integers, an array of floating-point numbers, an array of strings or even an array of arrays \(such as _2-dimensional arrays_\). Arrays are indexed, meaning that random access is possible.![medium blog image](https://miro.medium.com/max/60/1*pYIKtQYbX8vgCWrwe1YOyg.png?q=20)Fig 1. Visualization of basic Terminology of Arrays \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*pYIKtQYbX8vgCWrwe1YOyg.png)
+![medium blog image](https://miro.medium.com/max/473/1*pYIKtQYbX8vgCWrwe1YOyg.png)
 
 ### Array operations <a id="6504"></a>
 
@@ -52,9 +52,9 @@ Let's consider the following terms regarding linked lists. You can get a clear i
 -   The attribute named **head** points to the first element of the linked list.
 -   The last element of the linked list is known as the **tail**.
 
-![](https://miro.medium.com/max/60/1*4fuF6lHXOSmoVNcOV8aaJA.png?q=20)Fig 2. Visualization of basic Terminology of Linked Lists \(Image by author\)
+![medium blog image](https://miro.medium.com/max/60/1*4fuF6lHXOSmoVNcOV8aaJA.png?q=20)Fig 2. Visualization of basic Terminology of Linked Lists \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*4fuF6lHXOSmoVNcOV8aaJA.png)
+![medium blog image](https://miro.medium.com/max/473/1*4fuF6lHXOSmoVNcOV8aaJA.png)
 
 Following are the various types of linked lists available.
 
@@ -77,7 +77,7 @@ Following are the various types of linked lists available.
 
 A **stack** is a **LIFO** \(Last In First Out — the element placed at last can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as "stack" because it resembles a real-world stack — a stack of plates.Image by [congerdesign](https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987)
 
-![](https://miro.medium.com/max/473/1*e4XWkyzxdOreblbPlbOCyw.jpeg)
+![medium blog image](https://miro.medium.com/max/473/1*e4XWkyzxdOreblbPlbOCyw.jpeg)
 
 ### Stack operations <a id="4b54"></a>
 
@@ -86,9 +86,9 @@ Given below are the 2 basic operations that can be performed on a stack. Please 
 -   **Push**: Insert an element on to the top of the stack.
 -   **Pop**: Delete the topmost element and return it.
 
-![](https://miro.medium.com/max/60/1*QMifqahZm4DGQ91GkOhu4g.png?q=20)Fig 3. Visualization of basic Operations of Stacks \(Image by author\)
+![medium blog image](https://miro.medium.com/max/60/1*QMifqahZm4DGQ91GkOhu4g.png?q=20)Fig 3. Visualization of basic Operations of Stacks \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*QMifqahZm4DGQ91GkOhu4g.png)
+![medium blog image](https://miro.medium.com/max/473/1*QMifqahZm4DGQ91GkOhu4g.png)
 
 Furthermore, the following additional functions are provided for a stack in order to check its status.
 
@@ -103,9 +103,9 @@ Furthermore, the following additional functions are provided for a stack in orde
 
 ## 4. Queues <a id="0e94"></a>
 
-A **queue** is a **FIFO** \(First In First Out — the element placed at first can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as "queue" because it resembles a real-world queue — people waiting in a queue.![](https://miro.medium.com/max/60/1*GbtPRh9OWh1jtCtCa9czIg.jpeg?q=20)Image by [Sabine Felidae](https://pixabay.com/users/sheadquarters-5187/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119)
+A **queue** is a **FIFO** \(First In First Out — the element placed at first can be accessed at first\) structure which can be commonly found in many programming languages. This structure is named as "queue" because it resembles a real-world queue — people waiting in a queue.![medium blog image](https://miro.medium.com/max/60/1*GbtPRh9OWh1jtCtCa9czIg.jpeg?q=20)Image by [Sabine Felidae](https://pixabay.com/users/sheadquarters-5187/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119)
 
-![](https://miro.medium.com/max/473/1*GbtPRh9OWh1jtCtCa9czIg.jpeg)
+![medium blog image](https://miro.medium.com/max/473/1*GbtPRh9OWh1jtCtCa9czIg.jpeg)
 
 ### Queue operations <a id="9bcd"></a>
 
@@ -114,7 +114,7 @@ Given below are the 2 basic operations that can be performed on a queue. Please 
 -   **Enqueue**: Insert an element to the end of the queue.
 -   **Dequeue**: Delete the element from the beginning of the queue.
 
-![](https://miro.medium.com/max/60/1*K4-7c0lyUcSGRPmv3_9uqw.png?q=20)Fig 4. Visualization of Basic Operations of Queues \(Image by author\)
+![medium blog image](https://miro.medium.com/max/60/1*K4-7c0lyUcSGRPmv3_9uqw.png?q=20)Fig 4. Visualization of Basic Operations of Queues \(Image by author\)
 
 ![Fig 4. Visualization of Basic Operations of Queues (Image by author)](https://miro.medium.com/max/473/1*K4-7c0lyUcSGRPmv3_9uqw.png)
 
@@ -141,9 +141,9 @@ In direct accessing, a value with key **k** is stored in the slot **k**. Using t
 -   **k:** Key of which the hash value should be determined
 -   **m:** Size of the hash table \(number of slots available\). A prime value that is not close to an exact power of 2 is a good choice for **m**.
 
-![](https://miro.medium.com/max/60/1*xOmBfzMxLLldy1ll4w7esg.png?q=20)Fig 5. Representation of a Hash Function \(Image by author\)
+![medium blog image](https://miro.medium.com/max/60/1*xOmBfzMxLLldy1ll4w7esg.png?q=20)Fig 5. Representation of a Hash Function \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*xOmBfzMxLLldy1ll4w7esg.png)
+![medium blog image](https://miro.medium.com/max/473/1*xOmBfzMxLLldy1ll4w7esg.png)
 
 Consider the hash function **h\(k\) = k % 20**, where the size of the hash table is 20. Given a set of keys, we want to calculate the hash value of each to determine the index where it should go in the hash table. Consider we have the following keys, the hash and the hash table index.
 
@@ -184,9 +184,9 @@ Let **x** be a node in a binary search tree.
 -   If **y** is a node in the **left** subtree of x, then **y.key ≤ x.key**
 -   If **y** is a node in the **right** subtree of x, then **y.key ≥ x.key**
 
-![](https://miro.medium.com/max/60/1*TMn800emvMuqwY3AZpfwCg.png?q=20)Fig 6. Visualization of Basic Terminology of Trees \(Image by author\)
+![medium blog image](https://miro.medium.com/max/60/1*TMn800emvMuqwY3AZpfwCg.png?q=20)Fig 6. Visualization of Basic Terminology of Trees \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*TMn800emvMuqwY3AZpfwCg.png)
+![medium blog image](https://miro.medium.com/max/473/1*TMn800emvMuqwY3AZpfwCg.png)
 
 ### Applications of trees <a id="3ea1"></a>
 
@@ -201,11 +201,11 @@ Check my articles below on 8 useful tree data structures and self-balancing bina
 
 A **Heap** is a special case of a binary tree where the parent nodes are compared to their children with their values and are arranged accordingly.
 
-Let us see how we can represent heaps. Heaps can be represented using trees as well as arrays. Figures 7 and 8 show how we can represent a binary heap using a binary tree and an array.![](https://miro.medium.com/max/60/1*BEq4aj8K7u4LbIaIEtHNmQ.png?q=20)Fig 7. Binary Tree Representation of a Heap \(Image by author\)![](https://miro.medium.com/max/60/1*N7R4banKc1NG5KqdXmJnkA.png?q=20)Fig 8. Array Representation of a Heap \(Image by author\)
+Let us see how we can represent heaps. Heaps can be represented using trees as well as arrays. Figures 7 and 8 show how we can represent a binary heap using a binary tree and an array.![medium blog image](https://miro.medium.com/max/60/1*BEq4aj8K7u4LbIaIEtHNmQ.png?q=20)Fig 7. Binary Tree Representation of a Heap \(Image by author\)![medium blog image](https://miro.medium.com/max/60/1*N7R4banKc1NG5KqdXmJnkA.png?q=20)Fig 8. Array Representation of a Heap \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*N7R4banKc1NG5KqdXmJnkA.png)
+![medium blog image](https://miro.medium.com/max/473/1*N7R4banKc1NG5KqdXmJnkA.png)
 
-![](https://miro.medium.com/max/473/1*BEq4aj8K7u4LbIaIEtHNmQ.png)
+![medium blog image](https://miro.medium.com/max/473/1*BEq4aj8K7u4LbIaIEtHNmQ.png)
 
 Heaps can be of 2 types.
 
@@ -241,9 +241,9 @@ We say that **\(u, v\)** is **incident from** or **leaves** vertex **u** and is 
 
 A graph **G** is said to be an **undirected graph** if all its edges have no direction. It can go in both ways between the two vertices.
 
-If a vertex is not connected to any other node in the graph, it is said to be **isolated**.![](https://miro.medium.com/max/60/1*bgRmFfnYXHYXSv1pbNea0A.png?q=20)Fig 9. Visualization of Terminology of Graphs \(Image by author\)
+If a vertex is not connected to any other node in the graph, it is said to be **isolated**.![medium blog image](https://miro.medium.com/max/60/1*bgRmFfnYXHYXSv1pbNea0A.png?q=20)Fig 9. Visualization of Terminology of Graphs \(Image by author\)
 
-![](https://miro.medium.com/max/473/1*bgRmFfnYXHYXSv1pbNea0A.png)
+![medium blog image](https://miro.medium.com/max/473/1*bgRmFfnYXHYXSv1pbNea0A.png)
 
 You can read more about graph algorithms from my article [10 Graph Algorithms Visually Explained](https://medium.com/@vijinimallawaarachchi/10-graph-algorithms-visually-explained-e57faa1336f3).[10 Graph Algorithms Visually ExplainedA quick introduction to 10 basic graph algorithms with examples and visualisationsmedium.com](https://medium.com/@vijinimallawaarachchi/10-graph-algorithms-visually-explained-e57faa1336f3)
 

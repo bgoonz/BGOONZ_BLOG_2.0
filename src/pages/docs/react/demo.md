@@ -292,7 +292,7 @@ class ClassComponentWithState extends Component {
 export default ClassComponentWithState;
 ```
 
-![](https://miro.medium.com/max/3064/1*6sYhFUNpUkt6xN9kkn4pJQ.png)
+![medium blog image](https://miro.medium.com/max/3064/1*6sYhFUNpUkt6xN9kkn4pJQ.png)
 
 This new syntax is what is often referred to as 'syntactic sugar': under the hood, the React library translates this back into the old constructor code that we first started with, so that the JavaScript remains valid to the JavaScript interpreter.
 
@@ -437,7 +437,7 @@ In our `increment` method we said "I would like to update the `aNumber` property
 
 The same thing happens in our `decrement` method, only we're subtracting instead of adding.
 
-Then the other new concept we're running into here is how to actually call these methods we've added to our class.![](https://miro.medium.com/max/60/1*k8t5QBcMvHDX521sd4pC4g.png?q=20)![](https://miro.medium.com/max/856/1*k8t5QBcMvHDX521sd4pC4g.png)
+Then the other new concept we're running into here is how to actually call these methods we've added to our class.![medium blog image](https://miro.medium.com/max/60/1*k8t5QBcMvHDX521sd4pC4g.png?q=20)![medium blog image](https://miro.medium.com/max/856/1*k8t5QBcMvHDX521sd4pC4g.png)
 
 We added two HTML button tags within our `render` function, then in their respective `onClick` handlers, we specify the method that should be called whenever this button gets clicked. So whenever we click either of the buttons, our state gets updated appropriately and our component will re-render to show the correct value we're expecting.
 
@@ -524,7 +524,7 @@ This is because this method will be used upon submitting a form, and it turns ou
 
 > `event.preventDefault()` will prevent this default form behavior, meaning our form will only do what we want it to do when it is submitted.
 
-![](https://miro.medium.com/max/894/1*RN_y7Bk4tb-LLG8vNqGHHA.png)
+![medium blog image](https://miro.medium.com/max/894/1*RN_y7Bk4tb-LLG8vNqGHHA.png)
 
 Next, we store a reference to `this.state.ingredients` in a variable called `ingredientsList` .
 
@@ -540,9 +540,9 @@ Additionally, we also set the `newIngredient` field back to an empty string in o
 
 Now it's ready to accept more user input!
 
-![](https://miro.medium.com/max/60/1*LXx7WeP_5wFRfYa45snSEA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*LXx7WeP_5wFRfYa45snSEA.png?q=20)
 
-![](https://miro.medium.com/max/478/1*LXx7WeP_5wFRfYa45snSEA.png)
+![medium blog image](https://miro.medium.com/max/478/1*LXx7WeP_5wFRfYa45snSEA.png)
 
 Looking at our render function, first note the `this.state.ingredients.map` call.
 
@@ -556,9 +556,9 @@ The purpose of this form is to allow a user to add new ingredients to the list. 
 
 This means that our `addIngredient` method gets invoked whenever our form is submitted.
 
-Lastly, the input field has an `onChange` handler that invokes our `handleIngredientInput` method whenever there is some sort of change in the input field, namely when a user types into it.![](https://miro.medium.com/max/60/1*S7s9FfaPVlKGyaSwFeId_w.png?q=20)
+Lastly, the input field has an `onChange` handler that invokes our `handleIngredientInput` method whenever there is some sort of change in the input field, namely when a user types into it.![medium blog image](https://miro.medium.com/max/60/1*S7s9FfaPVlKGyaSwFeId_w.png?q=20)
 
-![](https://miro.medium.com/max/816/1*S7s9FfaPVlKGyaSwFeId_w.png)
+![medium blog image](https://miro.medium.com/max/816/1*S7s9FfaPVlKGyaSwFeId_w.png)
 
 Notice that the `value` field in our input tag reads off of `this.state.newIngredient` in order to know what value to display.
 
@@ -630,7 +630,7 @@ Notice that we're using it just as if it were any other HTML tag.
 
 We can see this to be the case if we open up the developer console and inspect these elements.**child-left: parent-right**
 
-![](https://miro.medium.com/max/2602/1*q_XLnJ2h1L5yZjNnSKzj5w.png)
+![medium blog image](https://miro.medium.com/max/2602/1*q_XLnJ2h1L5yZjNnSKzj5w.png)
 
 Note also that we're passing each ingredient as a 'thing' to the ChildComponent component.
 
@@ -686,7 +686,7 @@ Then at the top of the `render` function, it uses a ternary condition to determi
 
 The `handleClick` method is then invoked via an `onClick` handler on the div tag; it does the work of toggling the `this.state.clicked` Boolean.
 
-The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's render function, just like how we did it in this example![](https://miro.medium.com/max/60/0*aqqfHMjBXT8PWYJC?q=20)![](https://miro.medium.com/max/490/0*aqqfHMjBXT8PWYJC)![](https://miro.medium.com/max/1000/0*j9aPKza7Y4htBeQ-.gif)
+The overall structure of React applications can be represented as a hierarchical tree structure, just like how the DOM itself is structure. There is an overarching root component at the top of the hierarchy that every other component sits underneath. Specifying that a component should be a child of some parent component is as simple as throwing it in the parent component's render function, just like how we did it in this example![medium blog image](https://miro.medium.com/max/60/0*aqqfHMjBXT8PWYJC?q=20)![medium blog image](https://miro.medium.com/max/490/0*aqqfHMjBXT8PWYJC)![medium blog image](https://miro.medium.com/max/1000/0*j9aPKza7Y4htBeQ-.gif)
 
 ## **Core Concepts:** <a id="c45d"></a>
 
@@ -704,12 +704,12 @@ The overall structure of React applications can be represented as a hierarchical
 - The components can be reusable
 - Componentized UI is the future of web dev
 
-![](https://miro.medium.com/max/60/1*pFe_v7Ea--vfdmvR3UcunA.png?q=20)![](https://miro.medium.com/max/846/1*pFe_v7Ea--vfdmvR3UcunA.png)
+![medium blog image](https://miro.medium.com/max/60/1*pFe_v7Ea--vfdmvR3UcunA.png?q=20)![medium blog image](https://miro.medium.com/max/846/1*pFe_v7Ea--vfdmvR3UcunA.png)
 
 ## Declarative programming <a id="994b"></a>
 
 In the same way that you use HTML to _declare_ what the user interface should\
-look like, React provides the same mechanism in its \`\` method or the higher-level language known as JSX.![](https://miro.medium.com/max/60/0*MW-A5Dp_v1T0BB1s.png?q=20)![](https://miro.medium.com/max/1338/0*MW-A5Dp_v1T0BB1s.png)React… like HTML is Declarative
+look like, React provides the same mechanism in its \`\` method or the higher-level language known as JSX.![medium blog image](https://miro.medium.com/max/60/0*MW-A5Dp_v1T0BB1s.png?q=20)![medium blog image](https://miro.medium.com/max/1338/0*MW-A5Dp_v1T0BB1s.png)React… like HTML is Declarative
 
 [Declarative programming](https://en.wikipedia.org/wiki/Declarative_programming) is often defined as any style of programming that is not [imperative](https://en.wikipedia.org/wiki/Imperative_programming).
 
@@ -780,7 +780,7 @@ class PercentageStat extends React.PureComponent {
 
 React encourages you to think in terms of reusability as you construct the user\
 interface from elements and components that you create. When you\
-make a list or a button, you can then reuse those components to show different data 'state' in the same UI structure as you have built for different data previously.![](https://miro.medium.com/max/60/0*cBLQ5aBP2qihrT59.jpeg?q=20)![](https://miro.medium.com/max/1885/0*cBLQ5aBP2qihrT59.jpeg)
+make a list or a button, you can then reuse those components to show different data 'state' in the same UI structure as you have built for different data previously.![medium blog image](https://miro.medium.com/max/60/0*cBLQ5aBP2qihrT59.jpeg?q=20)![medium blog image](https://miro.medium.com/max/1885/0*cBLQ5aBP2qihrT59.jpeg)
 
 ### Component-Based <a id="a38d"></a>
 
@@ -800,14 +800,14 @@ Due to the use of a virtual DOM, React handles changes to a Web page more\
 intelligently than just string manipulation. It is constantly monitors the\
 virtual DOM for changes. It very efficiently reconciles changes in the virtual\
 DOM with what it has already produced in the real DOM. This is what\
-makes React one of the speediest front-end libraries available.![](https://miro.medium.com/max/60/0*OdOq6pmpXBJhjj7k.png?q=20)![](https://miro.medium.com/max/810/0*OdOq6pmpXBJhjj7k.png)
+makes React one of the speediest front-end libraries available.![medium blog image](https://miro.medium.com/max/60/0*OdOq6pmpXBJhjj7k.png?q=20)![medium blog image](https://miro.medium.com/max/810/0*OdOq6pmpXBJhjj7k.png)
 
 ### 3. Who uses react? <a id="c395"></a>
 
 - Companies such as Facebook app for android and Instagram
 - [Here](https://facebook.github.io/react-native/showcase.html) is a link to a list of other companies who use react.
 
-![](https://miro.medium.com/max/60/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png?q=20)![](https://miro.medium.com/max/1027/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png)Who uses react
+![medium blog image](https://miro.medium.com/max/60/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png?q=20)![medium blog image](https://miro.medium.com/max/1027/1*Cn9JvaSmkxdLwgXIO9Y8iQ.png)Who uses react
 
 ### 4. Setting up react <a id="ba44"></a>
 

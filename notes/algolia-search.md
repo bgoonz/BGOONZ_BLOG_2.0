@@ -35,7 +35,7 @@ To do so, we create the query as follow
 
 and then add the transformer method which is just mapping the data
 
-```
+```js
 1const settings = { attributesToSnippet: [`excerpt:20`] };2const queries = [3  {4    query: blogQuery,5    transformer: ({ data }) =>6      data.posts.edges.map(({ node: { frontmatter, ...rest } }) => {7        return {8          ...frontmatter,9          ...rest,10        };11      }),12    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,13    settings,14  },15];
 ```
 
@@ -507,7 +507,7 @@ You can also specify `matchFields` per query to check for different fields based
 
 ---
 
-![](https://miro.medium.com/max/1400/1*4gek2a2hKVKa_sEyWoXbrg.png)
+![medium blog image](https://miro.medium.com/max/1400/1*4gek2a2hKVKa_sEyWoXbrg.png)
 
 Photo by [Anthony Martino](https://unsplash.com/@amartino20)
 
@@ -522,7 +522,7 @@ To setup algolia search, first we need to:
 
 After that, we can grab the API keys and put them in our`.env` which we can find them here
 
-![](https://miro.medium.com/max/1300/0*Jkrvjip5cqmavqu3.png)
+![medium blog image](https://miro.medium.com/max/1300/0*Jkrvjip5cqmavqu3.png)
 
 ```
 // .envGATSBY_ALGOLIA_APP_ID="xxxx"GATSBY_ALGOLIA_INDEX_NAME="test"ALGOLIA_API_KEY="xxx"GATSBY_ALGOLIA_SEARCH_KEY="xxx"
@@ -570,11 +570,11 @@ For example, a query for posts and a different one for pages) and the transforme
 
 Once the configuration is done, we can run the project in production mode to send the data to algolia, so that we can test it by running `gatsby build` and it will look like the following
 
-![](https://miro.medium.com/max/1300/0*0-wkuOAboahagf58.png)
+![medium blog image](https://miro.medium.com/max/1300/0*0-wkuOAboahagf58.png)
 
 If you look in the dashboard after the build finished, we should be able to see the data as well
 
-![](https://miro.medium.com/max/1300/0*iEHnWRNlDPVuiJPJ.png)
+![medium blog image](https://miro.medium.com/max/1300/0*iEHnWRNlDPVuiJPJ.png)
 
 Now we can move to the frontend part after configuration and indexing part finished.
 
@@ -598,7 +598,7 @@ The component has two children components, `SearchBox` component as the name imp
 
 The result of the search component will look something like this
 
-![](https://miro.medium.com/max/1300/0*IfRz1pfkJb0PVS__.png)
+![medium blog image](https://miro.medium.com/max/1300/0*IfRz1pfkJb0PVS__.png)
 
 We can replace the HTML we see in the screenshot from the list of posts with the actual hits which is a good spot to do highlighting for the searched keywords etc.
 
@@ -626,7 +626,7 @@ An example of adding the `Highlight` widget
 
 By adding the above, it is going to highlight the attribute title if it matches the search query as you can see below
 
-![](https://miro.medium.com/max/1300/0*1p44LY1vxnS3NTuP.png)
+![medium blog image](https://miro.medium.com/max/1300/0*1p44LY1vxnS3NTuP.png)
 
 As a result, now we have `Search` component that uses algolia `InstantSearch` as a base component.
 

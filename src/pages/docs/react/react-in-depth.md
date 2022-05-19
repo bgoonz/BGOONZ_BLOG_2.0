@@ -62,11 +62,11 @@ template: docs
 
 # Random Things to Remember
 
-![](https://miro.medium.com/max/60/0*LHVHf7SPZ1t0UVAj?q=20)
+![medium blog image](https://miro.medium.com/max/60/0*LHVHf7SPZ1t0UVAj?q=20)
 
-![](https://miro.medium.com/max/630/0*LHVHf7SPZ1t0UVAj)
+![medium blog image](https://miro.medium.com/max/630/0*LHVHf7SPZ1t0UVAj)
 
-![](https://miro.medium.com/max/60/0*wR-lbD4zf45-IHoQ?q=20)![](https://miro.medium.com/max/630/0*wR-lbD4zf45-IHoQ)![](https://miro.medium.com/max/60/0*7EZESKf0XPbncXAY?q=20)![](https://miro.medium.com/max/630/0*7EZESKf0XPbncXAY)
+![medium blog image](https://miro.medium.com/max/60/0*wR-lbD4zf45-IHoQ?q=20)![medium blog image](https://miro.medium.com/max/630/0*wR-lbD4zf45-IHoQ)![medium blog image](https://miro.medium.com/max/60/0*7EZESKf0XPbncXAY?q=20)![medium blog image](https://miro.medium.com/max/630/0*7EZESKf0XPbncXAY)
 
 -   Using () implictly returns components.
 -
@@ -326,7 +326,7 @@ The Diffing Algorithm
 
 -   Re-rendering only to apply the differences following the rules stated in the previous sections.
 
-# Typechecking With PropTypes![](https://miro.medium.com/max/60/0*8ls0PmtREELbf5Wm?q=20)![](https://miro.medium.com/max/630/0*8ls0PmtREELbf5Wm)&#xA;&#xA;&#xA;
+# Typechecking With PropTypes![medium blog image](https://miro.medium.com/max/60/0*8ls0PmtREELbf5Wm?q=20)![medium blog image](https://miro.medium.com/max/630/0*8ls0PmtREELbf5Wm)&#xA;&#xA;&#xA;
 
 -   As your application grows, you can use React's typechecking to catch bugs.
 -
@@ -670,7 +670,7 @@ React Version
 
 -   While we will never actually be creating full apps with just React.createElement => it is the enginer that is running under the hood!
 
-# Introduction to JSX![](https://miro.medium.com/max/60/0*NNxuFMF-sOL8Wvdl?q=20)![](https://miro.medium.com/max/630/0*NNxuFMF-sOL8Wvdl)&#xA;&#xA;
+# Introduction to JSX![medium blog image](https://miro.medium.com/max/60/0*NNxuFMF-sOL8Wvdl?q=20)![medium blog image](https://miro.medium.com/max/630/0*NNxuFMF-sOL8Wvdl)&#xA;&#xA;
 
 -   JSX : Javascript Extension, a new language created by React developers to have an easier way of interacting with the React API. How to use JSX
 -
@@ -854,7 +854,7 @@ Providing default values for props
 -
 -   We can even remove it from our index.js now and an error will not be thrown.
 
-# Handling Events![](https://miro.medium.com/max/1400/0*c24XQBvqBBg0Eztz)![](https://miro.medium.com/max/1400/0*N7KFfhOZZ7UrY8s4)![](https://miro.medium.com/max/60/0*ywV6dO4a4QcGJxK5?q=20)![](https://miro.medium.com/max/630/0*ywV6dO4a4QcGJxK5)![](https://miro.medium.com/max/60/0*Nd73GjTY1PVQtjtQ?q=20)![](https://miro.medium.com/max/630/0*Nd73GjTY1PVQtjtQ)&#xA;&#xA;
+# Handling Events![medium blog image](https://miro.medium.com/max/1400/0*c24XQBvqBBg0Eztz)![medium blog image](https://miro.medium.com/max/1400/0*N7KFfhOZZ7UrY8s4)![medium blog image](https://miro.medium.com/max/60/0*ywV6dO4a4QcGJxK5?q=20)![medium blog image](https://miro.medium.com/max/630/0*ywV6dO4a4QcGJxK5)![medium blog image](https://miro.medium.com/max/60/0*Nd73GjTY1PVQtjtQ?q=20)![medium blog image](https://miro.medium.com/max/630/0*Nd73GjTY1PVQtjtQ)&#xA;&#xA;
 
 -   To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for. Example
 
@@ -1486,7 +1486,7 @@ In this article, you learned how to:
 
 -   Update a browser's URL programmatically by using React Router's history prop.
 
-# React Router Nested Routes![](https://miro.medium.com/max/60/0*233dNJ6vfgAmEVCD?q=20)![](https://miro.medium.com/max/576/0*233dNJ6vfgAmEVCD)![](https://miro.medium.com/max/60/0*TKBUkpbL5aSm5PTQ?q=20)![](https://miro.medium.com/max/630/0*TKBUkpbL5aSm5PTQ)&#xA;&#xA;
+# React Router Nested Routes![medium blog image](https://miro.medium.com/max/60/0*233dNJ6vfgAmEVCD?q=20)![medium blog image](https://miro.medium.com/max/576/0*233dNJ6vfgAmEVCD)![medium blog image](https://miro.medium.com/max/60/0*TKBUkpbL5aSm5PTQ?q=20)![medium blog image](https://miro.medium.com/max/630/0*TKBUkpbL5aSm5PTQ)&#xA;&#xA;
 
 Now you know how to create front-end routes and add navigation with React Router. When initializing Express projects, you declare static routes. Static routes are routes that are declared when an application is initialized. When using React Router in your application's initialization, you can declare dynamic routes. React Router introduces dynamic routing, where your routes are created as your application is rendering. This allows you to create nested routes within components!
 
