@@ -10,9 +10,6 @@ seo:
 template: docs
 ---
 
-
-
-
 ```py
 
 abs()			#Returns the absolute value of a number
