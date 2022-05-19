@@ -55,7 +55,7 @@ The following are a few examples of the most common things you are likely to do 
     This text **is bold**.
     This text *is italic*.
 
-This text is bold.  
+This text is bold.
 This text _is italic_.
 
 ### Header Text
@@ -97,7 +97,7 @@ This line has a paragraph break at the end (empty line after).
 
 Theses two lines should display as a single line because there's no double space at the end.
 
-The following line has a soft break at the end (two spaces at end)  
+The following line has a soft break at the end (two spaces at end)
 This line should be following on the very next line.
 
 ### Links
@@ -158,7 +158,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
 
 </i> Refresh Page
 
-This text can be embedded into Markdown:  
+This text can be embedded into Markdown:
  Refresh Page
 
 ### Unordered Lists
@@ -174,7 +174,7 @@ This text can be embedded into Markdown:
 
 -   <span id="7904">Item 1</span>
 -   <span id="1cf1">Item 2</span>
--   <span id="ded6">Item 3  
+-   <span id="ded6">Item 3
     This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
@@ -191,7 +191,7 @@ A double line break, breaks out of the list.
     If you want lines to break using soft returns use two spaces at the end of a line.
 
 1.  <span id="01d6">Item 1 Item 1 is really something</span>
-2.  <span id="51ea">Item 2  
+2.  <span id="51ea">Item 2
     Item two is really something else</span>
 
 If you want to lines to break using soft returns use to spaces at the end of a line.
