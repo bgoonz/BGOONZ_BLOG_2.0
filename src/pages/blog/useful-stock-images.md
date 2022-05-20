@@ -15,6 +15,9 @@ tags:
 show_author_bio: true
 cmseditable: true
 ---
+
+# Photography
+
 ![bassist](/blog/bassist.gif "bassist gif")
 
 
