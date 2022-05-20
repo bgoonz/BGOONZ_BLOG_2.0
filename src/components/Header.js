@@ -84,9 +84,7 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
-
-                <div>
-                           <>
+  <>
 
                         <div className="sb-search-icon" id="myCustomSearchButtonID">
                             <i className="sb-icon">🔎</i>
@@ -97,7 +95,9 @@ export default class Header extends React.Component {
                             }/>
                         </div>
 
-                    </>
+                    </>b
+                <div>
+                         
 
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
