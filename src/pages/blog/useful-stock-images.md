@@ -4,8 +4,8 @@ template: post
 subtitle: images
 excerpt: from upwork
 date: 2022-05-19T08:39:54.360Z
-image: /blog/code.png
-thumb_image: /blog/code.png
+image: images/blog/code.png
+thumb_image: images/blog/code.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
@@ -15,6 +15,9 @@ tags:
 show_author_bio: true
 cmseditable: true
 ---
+
+# Photography
+
 ![bassist](/blog/bassist.gif "bassist gif")
 
 
@@ -31,48 +34,10 @@ cmseditable: true
 
 ![](/blog/nasa_space_shuttle_challenger.jpg)
 
-
-
-
-
-
-
-
-
 ![](/blog/woodcuts_1.jpg)
 
 ![](/blog/nasa_earth_grid.jpg)
 
 ![earth](/blog/nasa_the_blue_marble-1-.jpg "earth")
 
-![]()
 
-![]()
-
-![]()
-
-![]()
-
-
-
-
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-![]()
-
-
-
-![]()

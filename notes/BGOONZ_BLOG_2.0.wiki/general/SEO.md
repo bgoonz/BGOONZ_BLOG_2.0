@@ -75,15 +75,7 @@ Other (whois,...)
 ---
 ---
 ---
----
-
-
-
-
-
-
-
-Title ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
+---Title ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 11 characters
 
 Web-Dev-Hub
@@ -402,14 +394,6 @@ HTML.
 | H1 | H2 | H3 | H4 | H5 | H6 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) |
 | --- | --- | --- | --- | --- | --- |
 | 3 | 10 | 29 | 1 | 0 | 1 |
-
-
-
-
-
-
-
-
 IMAGES ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
 26
 
@@ -896,14 +880,6 @@ Title: / |
 
 
 
-
-
-
-
-
-
-
-
 OPEN GRAPH (Facebook) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
 | og:type\
@@ -985,22 +961,6 @@ Schema.org (itemtype only) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpn
 | No DATA has been found for Schema.org (itemtype only) |
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/no-logo.png)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)[Click here to check **Schema.org structure** of this page (Google validator)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

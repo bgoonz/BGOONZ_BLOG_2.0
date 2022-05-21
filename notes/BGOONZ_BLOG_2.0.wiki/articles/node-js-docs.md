@@ -155,14 +155,6 @@ assert.deepEqual([[[1, 2, 3]], 4, 5], [[[1, 2, '3']], 4, 5]);
 
 
 
-
-
-
-
-
-
-
-
 ```
 
 To deactivate the colors, use the `NO_COLOR` or `NODE_DISABLE_COLORS` environment variables. This will also deactivate the colors in the REPL. For more on color support in terminal environments, read the tty [`getColorDepth()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tty_writestreamgetcolordepthenv) documentation.
@@ -327,14 +319,6 @@ const callsfunc = tracker.calls(func, 2);
 
 tracker.report();
 
-
-
-
-
-
-
-
-
 ```
 
 #### `tracker.verify()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_trackerverify)
@@ -475,29 +459,13 @@ import assert from 'assert/strict';
 
 assert.deepStrictEqual({ a: 1 }, { a: '1' });
 
-
-
-
-
-
-
-
-
 const date = new Date();
 const object = {};
 const fakeDate = {};
 Object.setPrototypeOf(fakeDate, Date.prototype);
 
 
-assert.deepStrictEqual(object, fakeDate);
-
-
-
-
-
-
-
-assert.deepStrictEqual(date, fakeDate);
+assert.deepStrictEqual(object, fakeDate);assert.deepStrictEqual(date, fakeDate);
 
 
 
@@ -550,15 +518,7 @@ assert.deepStrictEqual(weakMap1, weakMap2);
 
 
 
-assert.deepStrictEqual(weakMap1, weakMap3);
-
-
-
-
-
-
-
-```
+assert.deepStrictEqual(weakMap1, weakMap3);```
 
 If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
 
@@ -1079,15 +1039,7 @@ assert.strictEqual(1, 2);
 assert.strictEqual(1, 1);
 
 
-assert.strictEqual('Hello foobar', 'Hello World!');
-
-
-
-
-
-
-
-const apples = 1;
+assert.strictEqual('Hello foobar', 'Hello World!');const apples = 1;
 const oranges = 2;
 assert.strictEqual(apples, oranges, `apples ${apples} !== oranges ${oranges}`);
 
@@ -1490,15 +1442,7 @@ import { AsyncResource, executionAsyncId } from 'async_hooks';
 
 const asyncResource = new AsyncResource(
   type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false }
-);
-
-
-
-
-
-
-
-asyncResource.runInAsyncScope(fn, thisArg, ...args);
+);asyncResource.runInAsyncScope(fn, thisArg, ...args);
 
 
 asyncResource.emitDestroy();
@@ -1767,14 +1711,6 @@ asyncHook.enable();
 
 
 asyncHook.disable();
-
-
-
-
-
-
-
-
 function init(asyncId, type, triggerAsyncId, resource) { }
 
 
@@ -4057,14 +3993,6 @@ const buf = Buffer.from('buffer');
 for (const value of buf.values()) {
   console.log(value);
 }
-
-
-
-
-
-
-
-
 for (const value of buf) {
   console.log(value);
 }
@@ -9480,14 +9408,6 @@ const dbHandle = myAddon.openDatabase();
 
 
 const queryHandle = myAddon.query(dbHandle, 'Gimme ALL the things!');
-
-
-
-
-
-
-
-
 while (myAddon.queryHasRecords(queryHandle, dbHandle)) {
   
 }
@@ -13502,14 +13422,6 @@ console.log('hello %s', 'world');
 console.error(new Error('Whoops, something bad happened'));
 
 
-
-
-
-
-
-
-
-
 const name = 'Will Robinson';
 console.warn(`Danger ${name}! Danger!`);
 ```
@@ -13759,15 +13671,7 @@ console.table(Symbol());
 console.table(undefined);
 
 
-console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
-
-
-
-
-
-
-
-console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['a']);
+console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['a']);
 
 
 
@@ -13824,14 +13728,6 @@ Prints to `stderr` the string `'Trace: '`, followed by the [`util.format()`](htt
 
 ```
 console.trace('Show me');
-
-
-
-
-
-
-
-
 
 
 
@@ -20302,14 +20198,6 @@ makeFaster();
 
 
 
-
-
-
-
-
-
-
-
 ```
 
 The location information will be one of:
@@ -22274,14 +22162,6 @@ myEmitter.on('event', function thirdListener(...args) {
 console.log(myEmitter.listeners('event'));
 
 myEmitter.emit('event', 1, 2, 3, 4, 5);
-
-
-
-
-
-
-
-
 
 ```
 
@@ -29464,14 +29344,6 @@ Header names are not lowercased, and duplicates are not merged.
 ```
 
 
-
-
-
-
-
-
-
-
 console.log(request.rawHeaders);
 ```
 
@@ -32456,14 +32328,6 @@ The keys and values are in the same list. It is _not_ a list of tuples. So, the 
 Header names are not lowercased, and duplicates are not merged.
 
 ```
-
-
-
-
-
-
-
-
 
 
 console.log(request.rawHeaders);
@@ -41314,15 +41178,7 @@ Returns an object describing the memory usage of the Node.js process measured in
 ```
 import { memoryUsage } from 'process';
 
-console.log(memoryUsage());
-
-
-
-
-
-
-
-```
+console.log(memoryUsage());```
 
 -   `heapTotal` and `heapUsed` refer to V8's memory usage.
 -   `external` refers to the memory usage of C++ objects bound to JavaScript objects managed by V8.
@@ -50751,39 +50607,7 @@ console.log(util.inspect(o, { compact: true, depth: 5, breakLength: 80 }));
 
 
 
-
-
-
-
-
-
-
-
-console.log(util.inspect(o, { compact: false, depth: 5, breakLength: 80 }));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
+console.log(util.inspect(o, { compact: false, depth: 5, breakLength: 80 }));```
 
 The `showHidden` option allows [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries to be inspected. If there are more entries than `maxArrayLength`, there is no guarantee which entries are displayed. That means retrieving the same [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries twice may result in different output. Furthermore, entries with no remaining strong references may be garbage collected at any time.
 
@@ -53057,43 +52881,11 @@ const contextifiedObject = vm.createContext({
 
 
 
-
-
-
-
-
-
-
-
 const bar = new vm.SourceTextModule(`
   import s from 'foo';
   s;
   print(s);
 `, { context: contextifiedObject });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 async function linker(specifier, referencingModule) {
   if (specifier === 'foo') {
     return new vm.SourceTextModule(`
@@ -53107,15 +52899,7 @@ async function linker(specifier, referencingModule) {
   }
   throw new Error(`Unable to resolve dependency: ${specifier}`);
 }
-await bar.link(linker);
-
-
-
-
-
-
-
-await bar.evaluate();
+await bar.link(linker);await bar.evaluate();
 ```
 
 #### `module.dependencySpecifiers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_moduledependencyspecifiers)

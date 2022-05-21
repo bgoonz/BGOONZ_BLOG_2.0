@@ -34,20 +34,6 @@ Search feature
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - [http://plnkr.co/account/plunks](http://plnkr.co/account/plunks) 
 - [https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10](https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10) 
 - [https://a.familypromiseservicetracker.dev/](https://a.familypromiseservicetracker.dev/)

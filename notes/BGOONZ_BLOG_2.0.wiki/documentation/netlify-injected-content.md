@@ -1566,14 +1566,6 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
-
-
-
-
-
-
-
-
 Control the post processing and optimizations Netlify can do for you
 
 ### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)

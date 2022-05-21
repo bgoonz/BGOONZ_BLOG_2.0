@@ -195,4 +195,4 @@ If you want to open a connection to the logs to continuously output to your term
 
 The logs may clue you into why you are experiencing errors or different behavior.
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host 
+#### If you found this guide helpful feel free to checkout my github/gists where I host

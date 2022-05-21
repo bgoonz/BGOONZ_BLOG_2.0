@@ -276,14 +276,6 @@ allowfullscreen="true"></iframe>
 
 <br>
 
-
-
-
-
-
-
-
-
 <br>
 <br>
 

@@ -1,12 +1,16 @@
-import _ from 'lodash';
 import React from 'react';
-import { classNames, Link, withPrefix } from '../utils';
+import _ from 'lodash';
+
+import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
+
 export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
+                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
+
                 <br />
                 <div className="inner">
                     <div className="site-header-inside">
@@ -21,12 +25,14 @@ export default class Header extends React.Component {
                                     </Link>
                                 </p>
                             ) : (
-                                <p className="site-logo">
+                                <p className="site-title">
+                                    {' '}
+                                    WebDevHub
                                     <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
-                                        {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}{' '}
+                                        {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
                                     </Link>
                                 </p>
-                            )}{' '}
+                            )}
                         </div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
@@ -49,7 +55,7 @@ export default class Header extends React.Component {
                                                             'menu-button': _.get(action, 'style', null) !== 'link'
                                                         })}
                                                     >
-                                                        <ActionLink {...this.props} action={action} />{' '}
+                                                        <ActionLink {...this.props} action={action} />
                                                         {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
                                                             <React.Fragment>
                                                                 <button className="submenu-toggle">
@@ -63,10 +69,10 @@ export default class Header extends React.Component {
                                                                     page={this.props.pageContext}
                                                                 />
                                                             </React.Fragment>
-                                                        )}{' '}
+                                                        )}
                                                     </li>
                                                 );
-                                            })}{' '}
+                                            })}
                                         </ul>
                                     </div>
                                 </nav>
@@ -74,24 +80,26 @@ export default class Header extends React.Component {
                                     <span className="screen-reader-text">Close Menu</span>
                                     <span className="icon-menu" aria-hidden="true" />
                                 </button>
-                                <>
-                                    <div className="sb-search-icon" id="myCustomSearchButtonID">
-                                        <i className="sb-icon">🔎</i>
-                                        <p>Search</p>
-
-                                        <style
-                                            dangerouslySetInnerHTML={{
-                                                __html: "\n\t\t@font-face {\n font-family: font-sb;\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784);\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');\n font-weight: 400;\n font-style: normal\n }\n\n #sb-search-example p {\n font-family: sans-serif;\n font-size: 18px;\n line-height: 12px;\n\t margin: 0;\n }\n\n #sb-search-example {\n position: static;\n top: 0;\n width: auto;\n place-content: center;\n display: inline-block;\n box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);\n border: solid 5px white;\n border-radius: 100px;\n flex-shrink: initial;\n flex-grow: initial;\n }\n\n\n #sb-search-example .sb-icon {\n font: normal normal 400 26px font-sb;\n align-items: center;\n padding: 10px;\n speak: none;\n display: inline-block;\n text-decoration: inherit;\n text-align: center;\n text-transform: none;\n cursor: pointer;\n margin: 0;\n }\n\n #sb-search-example .sb-search-icon {\n box-sizing: border-box;\n border: 0px;\n align-items: center;\n background: #007cff;\n color: #fff;\n cursor: pointer;\n display: flex;\n border-radius: 26px;\n padding: 0 20px 0 4px;\n }\n\t"
-                                            }}
-                                        />
-                                    </div>
-                                </>
                             </React.Fragment>
-                        )}{' '}
+                        )}
                     </div>
                 </div>
+  <>
+
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon">🔎</i>
+                            <p>Search</p>
+
+                            <style dangerouslySetInnerHTML={
+                                {__html: "\n\t\t@font-face {\n font-family: font-sb;\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784);\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');\n font-weight: 400;\n font-style: normal\n }\n\n #sb-search-example p {\n font-family: sans-serif;\n font-size: 18px;\n line-height: 12px;\n\t margin: 0;\n }\n\n #sb-search-example {\n position: static;\n top: 0;\n width: auto;\n place-content: center;\n display: inline-block;\n box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);\n border: solid 5px white;\n border-radius: 100px;\n flex-shrink: initial;\n flex-grow: initial;\n }\n\n\n #sb-search-example .sb-icon {\n font: normal normal 400 26px font-sb;\n align-items: center;\n padding: 10px;\n speak: none;\n display: inline-block;\n text-decoration: inherit;\n text-align: center;\n text-transform: none;\n cursor: pointer;\n margin: 0;\n }\n\n #sb-search-example .sb-search-icon {\n box-sizing: border-box;\n border: 0px;\n align-items: center;\n background: #007cff;\n color: #fff;\n cursor: pointer;\n display: flex;\n border-radius: 26px;\n padding: 0 20px 0 4px;\n }\n\t"}
+                            }/>
+                        </div>
+
+                    </>b
                 <div>
-                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" target="_blank" aria-label="View source on Github">
+                         
+
+                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
                             width={40}
@@ -103,7 +111,7 @@ export default class Header extends React.Component {
                                 color: '#fff',
                                 position: 'fixed',
                                 top: '0px',
-                                border: 1,
+                                border: 0,
                                 left: '0px',
                                 transform: 'scale(-1.5, 1.5)'
                             }}

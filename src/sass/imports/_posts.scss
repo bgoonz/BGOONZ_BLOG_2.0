@@ -69,7 +69,7 @@
 
 .post-full {
     .post-content {
-        padding: 1.5em;
+        padding: 2.5em 1.5em;
     }
 
     .post-meta {
@@ -131,7 +131,8 @@
     }
 }
 
-@media only screen and (min-width: 841px) {
+
+@media only screen and (min-width: 641px) {
     .has-gradient {
 
         .page-title,
@@ -161,7 +162,7 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     .post {
         margin-bottom: 4vw;
     }

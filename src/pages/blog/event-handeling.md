@@ -416,12 +416,4 @@ ___
 
 Reinitializes the object, allowing you to change the event properties after construction. Arguments set the corresponding properties.
 
-Returns `undefined`.
-
-
-
-
-
-
-
-<a class="jsbin-embed" href="https://jsbin.com/dizifem/embed?js,console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.8"></script>
+Returns `undefined`.<a class="jsbin-embed" href="https://jsbin.com/dizifem/embed?js,console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.8"></script>
