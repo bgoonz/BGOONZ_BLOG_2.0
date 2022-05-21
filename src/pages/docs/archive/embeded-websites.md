@@ -210,10 +210,24 @@ template: docs
    ></iframe>
 
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
 <br>
 
-<hr>
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <h1>   Family-Promise Application</h1>
@@ -223,7 +237,14 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>

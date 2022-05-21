@@ -18,7 +18,14 @@ template: docs
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
 src="https://bgoonz.github.io/extracting-features-from-audio/"></iframe>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
 src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
@@ -29,7 +36,14 @@ src="https://observablehq.com/embed/@bgoonz/mode-lighting/2?cell=*"></iframe>
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="100%" height="500" frameborder="0"
 src="https://synth-music-theory.netlify.app/"></iframe>
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
     <iframe
       width="100%"
@@ -40,7 +54,14 @@ src="https://synth-music-theory.netlify.app/"></iframe>
 <br>
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
     <iframe
       width="100%"
@@ -52,5 +73,12 @@ src="https://synth-music-theory.netlify.app/"></iframe>
 <br>
 <br>
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>

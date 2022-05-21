@@ -53,7 +53,14 @@ weight: 0
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 
 <h1>  Project Showcase  </h1>
@@ -69,7 +76,14 @@ weight: 0
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://useful-resource-repo3-0.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -79,13 +93,34 @@ weight: 0
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://frontend-iota.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
 <br>
 
-<hr>
+
+<br>
+
+
+
 <br>
 <br>
-<hr>
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <h1>  Project Image Portfolio   </h1>
@@ -94,10 +129,24 @@ weight: 0
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://project-portfolio42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
 <br>
 
-<hr>
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <h1>  Web Audio DAW      </h1>
 <br>
@@ -106,7 +155,14 @@ weight: 0
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -119,7 +175,14 @@ weight: 0
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -133,7 +196,14 @@ weight: 0
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -151,7 +221,14 @@ weight: 0
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -163,7 +240,14 @@ weight: 0
 <br>
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>

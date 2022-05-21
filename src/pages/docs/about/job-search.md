@@ -285,7 +285,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
 - **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Resume**
 
@@ -295,7 +302,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 - **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Heroku** - _Use at your own risk_
 
@@ -304,7 +318,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[Kaffeine](https://kaffeine.herokuapp.com/)**
 - **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Trivia**
 
@@ -315,7 +336,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - ## **Frontend Trivia**
     - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Language Resources**
 
@@ -356,7 +384,14 @@ Most of us are familiar with the concept of six degrees of separation — th
     - [**Web Design Weekly**](https://web-design-weekly.com/)
     - [**Responsive Design Weekly**](https://responsivedesign.is/)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **DS&A**
 
@@ -369,7 +404,14 @@ Most of us are familiar with the concept of six degrees of separation — th
     - O(1) for a "good" table
     - O(n) for a terrible table (lots of collisions, etc.)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **System Design**
 
@@ -377,34 +419,69 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
 - **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Interviewing**
 
 - ### **Mock Interviewing**
     - **[Interviewing.io](https://interviewing.io/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Networking**
 
 - **[MeetUp](https://www.meetup.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Managing and Organizing Job Search**
 
 - **[Notion](notion.so)**
     - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Negotiations**
 
 - **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
 - **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Portfolio Sites**
 
@@ -433,7 +510,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
    of the directory. If the file is located elsewhere, relocate it to the root and adjust
    any relative paths for any imported scripts or style sheets.
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **QA Engineering**
 
@@ -456,13 +540,27 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
     Implementation Specialist
     Technical Account Manager
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Externship**
 
 - **[insidesherpa](https://www.insidesherpa.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Open Source**
 
@@ -472,7 +570,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
 - **[Code Triage](https://www.codetriage.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Volunteer**
 
@@ -482,7 +587,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Catch A Fire](https://www.catchafire.org/)**
 - **[Hackers For Charity](https://www.hackersforcharity.org/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Imposter Syndrome**
 
@@ -490,14 +602,28 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
 - **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Podcasts**
 
 - **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
 - **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Books**
 
@@ -512,7 +638,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **Skienna Algorithm Design Manual**
     - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **QA Questions**
 

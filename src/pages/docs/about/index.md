@@ -296,11 +296,25 @@ Creating things that change my every day life.
 
 
 </div>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
 
 
 
-<hr>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 [list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
 
