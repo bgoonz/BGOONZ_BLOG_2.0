@@ -206,11 +206,7 @@ class BaseLoader {
     const pagePath = (0, _findPath.findPath)(rawPath);
 
     if (this.pageDataDb.has(pagePath)) {
-      const pageData = this.pageDataDb.get(pagePath);
-
-      if (process.env.BUILD_STAGE !== `develop` || !pageData.stale) {
-        return Promise.resolve(pageData);
-      }
+      return Promise.resolve(this.pageDataDb.get(pagePath));
     }
 
     return this.fetchPageDataJson({
@@ -231,10 +227,7 @@ class BaseLoader {
 
     if (this.pageDb.has(pagePath)) {
       const page = this.pageDb.get(pagePath);
-
-      if (process.env.BUILD_STAGE !== `develop` || !page.payload.stale) {
-        return Promise.resolve(page.payload);
-      }
+      return Promise.resolve(page.payload);
     }
 
     if (this.inFlightDb.has(pagePath)) {
@@ -395,13 +388,7 @@ class BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    const pageDataUrl = createPageDataUrl(pagePath);
-    return (0, _prefetch.default)(pageDataUrl, {
-      crossOrigin: `anonymous`,
-      as: `fetch`
-    }).then(() => // This was just prefetched, so will return a response from
-    // the cache instead of making another request to the server
-    this.loadPageDataJson(pagePath));
+    throw new Error(`doPrefetch not implemented`);
   }
 
   hovering(rawPath) {
@@ -472,7 +459,13 @@ class ProdLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    return super.doPrefetch(pagePath).then(result => {
+    const pageDataUrl = createPageDataUrl(pagePath);
+    return (0, _prefetch.default)(pageDataUrl, {
+      crossOrigin: `anonymous`,
+      as: `fetch`
+    }).then(() => // This was just prefetched, so will return a response from
+    // the cache instead of making another request to the server
+    this.loadPageDataJson(pagePath)).then(result => {
       if (result.status !== PageResourceStatus.Success) {
         return Promise.resolve();
       }
@@ -546,9 +539,5 @@ var _default = publicLoader;
 exports.default = _default;
 
 function getStaticQueryResults() {
-  if (instance) {
-    return instance.staticQueryDb;
-  } else {
-    return {};
-  }
+  return instance.staticQueryDb;
 }

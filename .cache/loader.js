@@ -190,10 +190,7 @@ export class BaseLoader {
   loadPageDataJson(rawPath) {
     const pagePath = findPath(rawPath)
     if (this.pageDataDb.has(pagePath)) {
-      const pageData = this.pageDataDb.get(pagePath)
-      if (process.env.BUILD_STAGE !== `develop` || !pageData.stale) {
-        return Promise.resolve(pageData)
-      }
+      return Promise.resolve(this.pageDataDb.get(pagePath))
     }
 
     return this.fetchPageDataJson({ pagePath }).then(pageData => {
@@ -212,9 +209,7 @@ export class BaseLoader {
     const pagePath = findPath(rawPath)
     if (this.pageDb.has(pagePath)) {
       const page = this.pageDb.get(pagePath)
-      if (process.env.BUILD_STAGE !== `develop` || !page.payload.stale) {
-        return Promise.resolve(page.payload)
-      }
+      return Promise.resolve(page.payload)
     }
 
     if (this.inFlightDb.has(pagePath)) {
@@ -374,15 +369,7 @@ export class BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    const pageDataUrl = createPageDataUrl(pagePath)
-    return prefetchHelper(pageDataUrl, {
-      crossOrigin: `anonymous`,
-      as: `fetch`,
-    }).then(() =>
-      // This was just prefetched, so will return a response from
-      // the cache instead of making another request to the server
-      this.loadPageDataJson(pagePath)
-    )
+    throw new Error(`doPrefetch not implemented`)
   }
 
   hovering(rawPath) {
@@ -461,15 +448,27 @@ export class ProdLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    return super.doPrefetch(pagePath).then(result => {
-      if (result.status !== PageResourceStatus.Success) {
-        return Promise.resolve()
-      }
-      const pageData = result.payload
-      const chunkName = pageData.componentChunkName
-      const componentUrls = createComponentUrls(chunkName)
-      return Promise.all(componentUrls.map(prefetchHelper)).then(() => pageData)
+    const pageDataUrl = createPageDataUrl(pagePath)
+    return prefetchHelper(pageDataUrl, {
+      crossOrigin: `anonymous`,
+      as: `fetch`,
     })
+      .then(() =>
+        // This was just prefetched, so will return a response from
+        // the cache instead of making another request to the server
+        this.loadPageDataJson(pagePath)
+      )
+      .then(result => {
+        if (result.status !== PageResourceStatus.Success) {
+          return Promise.resolve()
+        }
+        const pageData = result.payload
+        const chunkName = pageData.componentChunkName
+        const componentUrls = createComponentUrls(chunkName)
+        return Promise.all(componentUrls.map(prefetchHelper)).then(
+          () => pageData
+        )
+      })
   }
 
   loadPageDataJson(rawPath) {
@@ -535,9 +534,5 @@ export const publicLoader = {
 export default publicLoader
 
 export function getStaticQueryResults() {
-  if (instance) {
-    return instance.staticQueryDb
-  } else {
-    return {}
-  }
+  return instance.staticQueryDb
 }

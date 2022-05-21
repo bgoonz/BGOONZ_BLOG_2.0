@@ -47,14 +47,6 @@ class EnsureResources extends React.Component {
       return false
     }
 
-    if (
-      process.env.BUILD_STAGE === `develop` &&
-      nextState.pageResources.stale
-    ) {
-      this.loadResources(nextProps.location.pathname)
-      return false
-    }
-
     // Check if the component or json have changed.
     if (this.state.pageResources !== nextState.pageResources) {
       return true

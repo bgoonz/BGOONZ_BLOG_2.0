@@ -6,6 +6,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 exports.__esModule = true;
 exports.graphql = graphql;
+exports.unstable_collectionGraphql = unstable_collectionGraphql;
 exports.prefetchPathname = exports.useStaticQuery = exports.StaticQuery = exports.StaticQueryContext = void 0;
 
 var _react = _interopRequireDefault(require("react"));
@@ -88,7 +89,7 @@ useStaticQuery(graphql\`${query}\`);
 `);
   }
 
-  if ((_context$query = context[query]) === null || _context$query === void 0 ? void 0 : _context$query.data) {
+  if (context === null || context === void 0 ? void 0 : (_context$query = context[query]) === null || _context$query === void 0 ? void 0 : _context$query.data) {
     return context[query].data;
   } else {
     throw new Error(`The result of this StaticQuery could not be fetched.\n\n` + `This is likely a bug in Gatsby and if refreshing the page does not fix it, ` + `please open an issue in https://github.com/gatsbyjs/gatsby/issues`);
@@ -105,4 +106,9 @@ StaticQuery.propTypes = {
 
 function graphql() {
   throw new Error(`It appears like Gatsby is misconfigured. Gatsby related \`graphql\` calls ` + `are supposed to only be evaluated at compile time, and then compiled away. ` + `Unfortunately, something went wrong and the query was left in the compiled code.\n\n` + `Unless your site has a complex or custom babel/Gatsby configuration this is likely a bug in Gatsby.`);
+}
+
+function unstable_collectionGraphql() {
+  // TODO: Strip this out of the component and throw error if it gets called
+  return null;
 }

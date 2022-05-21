@@ -1,12 +1,13 @@
 import React from "react"
 import { StaticQueryContext } from "gatsby"
 import {
+  getPageQueryData,
   registerPath as socketRegisterPath,
   unregisterPath as socketUnregisterPath,
+  getStaticQueryData,
 } from "./socketIo"
 import PageRenderer from "./page-renderer"
 import normalizePagePath from "./normalize-page-path"
-import loader, { getStaticQueryResults } from "./loader"
 
 if (process.env.NODE_ENV === `production`) {
   throw new Error(
@@ -28,31 +29,25 @@ export class PageQueryStore extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      pageData: null,
+      pageQueryData: getPageQueryData(),
       path: null,
     }
   }
 
   handleMittEvent = () => {
-    this.setState(state => {
-      return {
-        page: state.path
-          ? loader.loadPageSync(normalizePagePath(state.path))
-          : null,
-      }
+    this.setState({
+      pageQueryData: getPageQueryData(),
     })
   }
 
   componentDidMount() {
     socketRegisterPath(getPathFromProps(this.props))
-    ___emitter.on(`pageQueryResult`, this.handleMittEvent)
-    ___emitter.on(`onPostLoadPageResources`, this.handleMittEvent)
+    ___emitter.on(`*`, this.handleMittEvent)
   }
 
   componentWillUnmount() {
     socketUnregisterPath(this.state.path)
-    ___emitter.off(`pageQueryResult`, this.handleMittEvent)
-    ___emitter.off(`onPostLoadPageResources`, this.handleMittEvent)
+    ___emitter.off(`*`, this.handleMittEvent)
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -62,7 +57,6 @@ export class PageQueryStore extends React.Component {
       socketRegisterPath(newPath)
       return {
         path: newPath,
-        page: newPath ? loader.loadPageSync(normalizePagePath(newPath)) : null,
       }
     }
 
@@ -77,17 +71,19 @@ export class PageQueryStore extends React.Component {
     return (
       this.props.location !== nextProps.location ||
       this.state.path !== nextState.path ||
-      this.state.page !== nextState.page
+      this.state.pageQueryData[normalizePagePath(nextState.path)] !==
+        nextState.pageQueryData[normalizePagePath(nextState.path)]
     )
   }
 
   render() {
+    const data = this.state.pageQueryData[getPathFromProps(this.props)]
     // eslint-disable-next-line
-    if (!this.state.page) {
+    if (!data) {
       return <div />
     }
 
-    return <PageRenderer {...this.props} {...this.state.page.json} />
+    return <PageRenderer {...this.props} {...data.result} />
   }
 }
 
@@ -95,24 +91,22 @@ export class StaticQueryStore extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      staticQueryData: { ...getStaticQueryResults() },
+      staticQueryData: getStaticQueryData(),
     }
   }
 
   handleMittEvent = () => {
     this.setState({
-      staticQueryData: { ...getStaticQueryResults() },
+      staticQueryData: getStaticQueryData(),
     })
   }
 
   componentDidMount() {
-    ___emitter.on(`staticQueryResult`, this.handleMittEvent)
-    ___emitter.on(`onPostLoadPageResources`, this.handleMittEvent)
+    ___emitter.on(`*`, this.handleMittEvent)
   }
 
   componentWillUnmount() {
-    ___emitter.off(`staticQueryResult`, this.handleMittEvent)
-    ___emitter.off(`onPostLoadPageResources`, this.handleMittEvent)
+    ___emitter.off(`*`, this.handleMittEvent)
   }
 
   shouldComponentUpdate(nextProps, nextState) {
