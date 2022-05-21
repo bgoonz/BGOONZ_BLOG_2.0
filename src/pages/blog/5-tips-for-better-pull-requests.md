@@ -9,12 +9,12 @@ thumb_image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAACnCAMAAACYVkHVA
 image_position: right
 author: src/data/authors/im.yaml
 categories:
-  - src/data/categories/git.yaml
+    - src/data/categories/git.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/webdev-setup.md
+    - src/pages/blog/webdev-setup.md
 cmseditable: true
 ---
 
