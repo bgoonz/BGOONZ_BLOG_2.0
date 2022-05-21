@@ -3,6 +3,7 @@ title: Higher Order Components
 template: docs
 excerpt: advanced techniques in react
 ---
+
 <!--StartFragment-->
 
 # Higher-Order Components
@@ -43,9 +44,9 @@ Later, you write a component for subscribing to a single blog post, which follow
 
 `CommentList` and `BlogPost` aren’t identical — they call different methods on `DataSource`, and they render different output. But much of their implementation is the same:
 
-* On mount, add a change listener to `DataSource`.
-* Inside the listener, call `setState` whenever the data source changes.
-* On unmount, remove the change listener.
+-   On mount, add a change listener to `DataSource`.
+-   Inside the listener, call `setState` whenever the data source changes.
+-   On unmount, remove the change listener.
 
 You can imagine that in a large app, this same pattern of subscribing to `DataSource` and calling `setState` will occur over and over again. We want an abstraction that allows us to define this logic in a single place and share it across many components. This is where higher-order components excel.
 
