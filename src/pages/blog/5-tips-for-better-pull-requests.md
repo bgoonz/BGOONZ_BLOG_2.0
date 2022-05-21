@@ -4,8 +4,8 @@ template: post
 subtitle: 5 tips for better Pull Requests
 excerpt: 5 tips for better Pull Requests
 date: 2022-04-20T01:06:16.962Z
-image: images/blog/pull-request.jpg
-thumb_image: images/blog/pull-request.jpg
+image: blob:https://bgoonz-blog.netlify.app/d271d4d1-89f2-4c7b-b9ff-d75f47b9889d
+thumb_image: blob:https://bgoonz-blog.netlify.app/d271d4d1-89f2-4c7b-b9ff-d75f47b9889d
 image_position: right
 author: src/data/authors/im.yaml
 categories:
