@@ -1,7 +1,7 @@
 ---
 title: Embedding Media In Html
 template: post
-subtitle: "From object to iframe "
+subtitle: 'From object to iframe '
 excerpt: getting the hang of embedding things into your web pages
 date: 2022-04-19T20:11:27.517Z
 image: blob:https://bgoonz-blog.netlify.app/ce89ffeb-e9be-44e2-9ecc-c64c1027acae
@@ -21,7 +21,7 @@ By now you should really be getting the hang of embedding things into your web p
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Objective:     | To learn how to embed items into web pages using [`<object>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object), [`<embed>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed), and [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), like PDF documents and other webpages.                                                                                                                                                                               |
 
-## [A short history of embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#a_short_history_of_embedding "Permalink to A short history of embedding")
+## [A short history of embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#a_short_history_of_embedding 'Permalink to A short history of embedding')
 
 A long time ago on the Web, it was popular to use **frames** to create websites — small parts of a website stored in individual HTML pages. These were embedded in a master document called a **frameset**, which allowed you to specify the area on the screen that each frame filled, rather like sizing the columns and rows of a table. These were considered the height of coolness in the mid to late 90s, and there was evidence that having a webpage split up into smaller chunks like this was better for download speeds — especially noticeable with network connections being so slow back then. They did however have many problems, which far outweighed any positives as network speeds got faster, so you don't see them being used anymore.
 
@@ -31,7 +31,7 @@ Finally, the [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Ele
 
 With the history lesson out of the way, let's move on and see how to use some of these.
 
-## [Active learning: classic embedding uses](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#active_learning_classic_embedding_uses "Permalink to Active learning: classic embedding uses")
+## [Active learning: classic embedding uses](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#active_learning_classic_embedding_uses 'Permalink to Active learning: classic embedding uses')
 
 In this article we are going to jump straight into an active learning section, to immediately give you a real idea of just what embedding technologies are useful for. The online world is very familiar with [YouTube](https://www.youtube.com/), but many people don't know about some of the sharing facilities it has available. Let's look at how YouTube allows us to embed a video in any page we like using an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
 
@@ -52,7 +52,7 @@ If you make a mistake, you can always reset it using the *Reset* button. If yo
 
 [Active learning classic embedding uses sample](https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies/_sample_.active_learning_classic_embedding_uses.html)
 
-## [iframes in detail](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#iframes_in_detail "Permalink to iframes in detail")
+## [iframes in detail](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#iframes_in_detail 'Permalink to iframes in detail')
 
 So, that was easy and fun, right? [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) elements are designed to allow you to embed other web documents into the current document. This is great for incorporating third-party content into your website that you might not have direct control over and don't want to have to implement your own version of — such as video from online video providers, commenting systems like [Disqus](https://disqus.com/), maps from online map providers, advertising banners, etc. The live editable examples you've been using through this course are implemented using `<iframe>`s.
 
@@ -66,33 +66,33 @@ Copy to Clipboard
 
 This example includes the basic essentials needed to use an `<iframe>`:
 
-- [`border: none`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+-   [`border: none`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 
-  If used, the `<iframe>` is displayed without a surrounding border. Otherwise, by default, browsers display the `<iframe>` with a surrounding border (which is generally undesirable).
+    If used, the `<iframe>` is displayed without a surrounding border. Otherwise, by default, browsers display the `<iframe>` with a surrounding border (which is generally undesirable).
 
-- [`allowfullscreen`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allowfullscreen)
+-   [`allowfullscreen`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-allowfullscreen)
 
-  If set, the `<iframe>` is able to be placed in fullscreen mode using the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) (somewhat beyond the scope of this article.)
+    If set, the `<iframe>` is able to be placed in fullscreen mode using the [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) (somewhat beyond the scope of this article.)
 
-- [`src`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-src)
+-   [`src`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-src)
 
-  This attribute, as with [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)/[`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img), contains a path pointing to the URL of the document to be embedded.
+    This attribute, as with [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)/[`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img), contains a path pointing to the URL of the document to be embedded.
 
-- [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-height)
+-   [`width`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-height)
 
-  These attributes specify the width and height you want the iframe to be.
+    These attributes specify the width and height you want the iframe to be.
 
-- Fallback content
+-   Fallback content
 
-  In the same way as other similar elements like [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), you can include fallback content between the opening and closing `<iframe></iframe>` tags that will appear if the browser doesn't support the `<iframe>`. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support `<iframe>`s these days.
+    In the same way as other similar elements like [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), you can include fallback content between the opening and closing `<iframe></iframe>` tags that will appear if the browser doesn't support the `<iframe>`. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support `<iframe>`s these days.
 
-- [`sandbox`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
+-   [`sandbox`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
 
-  This attribute, which works in slightly more modern browsers than the rest of the `<iframe>` features (e.g. IE 10 and above) requests heightened security settings; we'll say more about this in the next section.
+    This attribute, which works in slightly more modern browsers than the rest of the `<iframe>` features (e.g. IE 10 and above) requests heightened security settings; we'll say more about this in the next section.
 
 **Note:** In order to improve speed, it's a good idea to set the iframe's `src` attribute with JavaScript after the main content is done with loading. This makes your page usable sooner and decreases your official page load time (an important [SEO](https://developer.mozilla.org/en-US/docs/Glossary/SEO) metric.)
 
-### [Security concerns](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#security_concerns "Permalink to Security concerns")
+### [Security concerns](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#security_concerns 'Permalink to Security concerns')
 
 Above we mentioned security concerns — let's go into this in a bit more detail now. We are not expecting you to understand all of this content perfectly the first time; we just want to make you aware of this concern, and provide a reference to come back to as you get more experienced and start considering using `<iframe>`s in your experiments and work. Also, there is no need to be scared and not use `<iframe>`s — you just need to be careful. Read on...
 
@@ -137,7 +137,7 @@ If absolutely required, you can add permissions back one by one (inside the `sa
 
 **Note:** You can read Frederik Braun's post [On the X-Frame-Options Security Header](https://blog.mozilla.org/security/2013/12/12/on-the-x-frame-options-security-header/) for more background information on this topic. Obviously, it's rather out of scope for a full explanation in this article.
 
-## [The <embed> and <object> elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#the_embed_and_object_elements "Permalink to The <embed> and <object> elements")
+## [The <embed> and <object> elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#the_embed_and_object_elements 'Permalink to The <embed> and <object> elements')
 
 The [`<embed>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed) and [`<object>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object) elements serve a different function to [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) — these elements are general purpose embedding tools for embedding external content, such as PDFs.
 
