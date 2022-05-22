@@ -4,8 +4,8 @@ template: post
 subtitle: For Aspiring Frontend Developers
 excerpt: Comprehensive React Cheatsheet included at the bottom of this article!
 date: 2022-05-08T18:44:35.533Z
-image: /blog/react (1).png
-thumb_image: /blog/react (1).png
+image: /blog/react.jpg
+thumb_image: /blog/react.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
