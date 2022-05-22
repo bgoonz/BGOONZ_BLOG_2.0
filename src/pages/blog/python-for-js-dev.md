@@ -39,7 +39,8 @@ thumb_image_alt: python logo
 
 ]\(https://github.com/bgoonz)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://py-prac-42.netlify.app/" width="100%" height="1200px">
+<iframe>
 
 # Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial)
 

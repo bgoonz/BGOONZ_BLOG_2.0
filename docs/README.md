@@ -656,7 +656,8 @@ Now, let's understand the use of this with the help of an example. Suppose you h
       echo '  <meta name="Author" content="Bryan Guner">'
       echo '<link rel="stylesheet" href="./assets/prism.css">'
       echo ' <link rel="stylesheet" href="./assets/style.css">'
-      echo ' <script async defer src="./assets/prism.js"></script>'
+      echo ' <script async defer src="./assets/prism.js">
+</script>'
 
       echo "  <title> directory </title>"
         echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
@@ -712,11 +713,14 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
       echo "<ul>"
 
-      awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+      awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+</li>"}' $listing
 
       # awk '{print "<li>"};
 
-      #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+      #  {print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
       echo ""
 
@@ -762,7 +766,8 @@ Now, let's understand the use of this with the help of an example. Suppose you h
       echo '  <meta name="Author" content="Bryan Guner">'
       echo '<link rel="stylesheet" href="./assets/prism.css">'
       echo ' <link rel="stylesheet" href="./assets/style.css">'
-      echo ' <script async defer src="./assets/prism.js"></script>'
+      echo ' <script async defer src="./assets/prism.js">
+</script>'
 
       echo "  <title> directory </title>"
 
@@ -817,11 +822,13 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
       echo "<ul>"
 
-      awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src=\""$1"\">","</iframe><br>"}' $listing
+      awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src=\""$1"\">","</iframe>
+<br>"}' $listing
 
       # awk '{print "<li>"};
 
-      #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+      #  {print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
       echo ""
 
@@ -1211,7 +1218,66 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ### Technologies Used:
 
-<table><thead><tr class="header"><th>URL</th><th><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app</a></th></tr></thead><tbody><tr class="odd"><td>Miscellaneous</td><td>webpack ; Prism</td></tr><tr class="even"><td>Widgets</td><td>Facebook ; AddThis</td></tr><tr class="odd"><td>Analytics</td><td>Moat ; Google Analytics ; Google Ads Conversion Tracking</td></tr><tr class="even"><td>Comment systems</td><td>Facebook API &amp; REPL.it Database</td></tr><tr class="odd"><td>Security</td><td>Netlify Access</td></tr><tr class="even"><td>Font scripts</td><td>Google Font API</td></tr><tr class="odd"><td>CDN</td><td>Unpkg ; jsDelivr ; jQuery CDN ; Netlify</td></tr><tr class="even"><td>Marketing automation</td><td>MailChimp</td></tr><tr class="odd"><td>Advertising</td><td>Google AdSense</td></tr><tr class="even"><td>Tag managers</td><td>Google Tag Manager</td></tr><tr class="odd"><td>Live chat</td><td>Smartsupp ; LiveChat : Mesibo API</td></tr><tr class="even"><td>JavaScript libraries</td><td>Lodash ; Dojo ; core-js ; jQuery</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>URL</th>
+<th>
+<a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app</a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Miscellaneous</td>
+<td>webpack ; Prism</td>
+</tr>
+<tr class="even">
+<td>Widgets</td>
+<td>Facebook ; AddThis</td>
+</tr>
+<tr class="odd">
+<td>Analytics</td>
+<td>Moat ; Google Analytics ; Google Ads Conversion Tracking</td>
+</tr>
+<tr class="even">
+<td>Comment systems</td>
+<td>Facebook API &amp; REPL.it Database</td>
+</tr>
+<tr class="odd">
+<td>Security</td>
+<td>Netlify Access</td>
+</tr>
+<tr class="even">
+<td>Font scripts</td>
+<td>Google Font API</td>
+</tr>
+<tr class="odd">
+<td>CDN</td>
+<td>Unpkg ; jsDelivr ; jQuery CDN ; Netlify</td>
+</tr>
+<tr class="even">
+<td>Marketing automation</td>
+<td>MailChimp</td>
+</tr>
+<tr class="odd">
+<td>Advertising</td>
+<td>Google AdSense</td>
+</tr>
+<tr class="even">
+<td>Tag managers</td>
+<td>Google Tag Manager</td>
+</tr>
+<tr class="odd">
+<td>Live chat</td>
+<td>Smartsupp ; LiveChat : Mesibo API</td>
+</tr>
+<tr class="even">
+<td>JavaScript libraries</td>
+<td>Lodash ; Dojo ; core-js ; jQuery</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
@@ -3028,7 +3094,8 @@ echo '  </style> '
 
   echo "<ul> "
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe><br>"}' $listing
+  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe>
+<br>"}' $listing
 
   # awk '{print "<li> "};
 
@@ -5444,7 +5511,8 @@ export default class Footer extends React.Component {
                                                 width="100%!important"
                                             >
                                                 {' '}
-                                            </iframe><br>
+                                            </iframe>
+<br>
                                         }
                                     </td>
                                 </tr>

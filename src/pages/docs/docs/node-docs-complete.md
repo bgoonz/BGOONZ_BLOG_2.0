@@ -296,7 +296,9 @@ console.log('%o', Number);
 
 Take this code:
 
-<iframe title="Output to the command line using Node.js" src="https://stackblitz.com/edit/nodejs-dev-0002-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0002-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Output to the command line using Node.js" src="https://stackblitz.com/edit/nodejs-dev-0002-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0002-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 <!--
 
@@ -2474,7 +2476,9 @@ You know the error stack trace you might be familiar with, in the debugger or in
 
 Let's pick an example:
 
-<iframe title="A simple event loop explanation" src="https://stackblitz.com/edit/nodejs-dev-0003-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0003-01 " style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="A simple event loop explanation" src="https://stackblitz.com/edit/nodejs-dev-0003-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0003-01 " style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ```js
 const bar = () => console.log('bar');
@@ -2528,7 +2532,9 @@ The use case of `setTimeout(() => {}, 0)` is to call a function, but execute it 
 
 Take this example:
 
-<iframe title="Queuing function execution" src="https://stackblitz.com/edit/nodejs-dev-0004-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0004-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Queuing function execution" src="https://stackblitz.com/edit/nodejs-dev-0004-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0004-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ````js
 
@@ -2594,7 +2600,9 @@ I find nice the analogy of a rollercoaster ride at an amusement park: the messag
 
 Example:
 
-<iframe title="ECMAScript 2015 Job Queue" src="https://stackblitz.com/edit/nodejs-dev-0005-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0005-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="ECMAScript 2015 Job Queue" src="https://stackblitz.com/edit/nodejs-dev-0005-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0005-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ```js
 const bar = () => console.log('bar');
@@ -2688,7 +2696,9 @@ npm with its simple structure helped the ecosystem of Node.js proliferate, and n
 
 The most common example Hello World of Node.js is a web server:
 
-<iframe title="Hello world web server" src="https://stackblitz.com/edit/nodejs-dev-0001-01?embed=1&file=index.js&zenmode=1" alt="nodejs-dev-0001-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Hello world web server" src="https://stackblitz.com/edit/nodejs-dev-0001-01?embed=1&file=index.js&zenmode=1" alt="nodejs-dev-0001-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ```js
 const http = require('http');
@@ -3093,7 +3103,9 @@ description: 'Promises are one way to deal with asynchronous code in JavaScript,
 
 ## Introduction to promises
 
-<iframe title="Introduction to promises" src="https://stackblitz.com/edit/nodejs-dev-0006-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0006-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Introduction to promises" src="https://stackblitz.com/edit/nodejs-dev-0006-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0006-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 A promise is commonly defined as **a proxy for a value that will eventually become available**.
 
@@ -3237,7 +3249,9 @@ fetch('/todos.json')
     });
 ```
 
-> <code><a href="https://www.npmjs.com/package/node-fetch">node-fetch</a></code> is minimal code for window.fetch compatible API on Node.js runtime.
+> <code>
+<a href="https://www.npmjs.com/package/node-fetch">node-fetch</a>
+</code> is minimal code for window.fetch compatible API on Node.js runtime.
 
 In this example, we call `fetch()` to get a list of TODO items from the `todos.json` file found in the domain root, and we create a chain of promises.
 
@@ -3441,7 +3455,9 @@ const doSomething = async () => {
 
 This is a simple example of async/await used to run a function asynchronously:
 
-<iframe title="Modern Asynchronous JavaScript with Async and Await" src="https://stackblitz.com/edit/nodejs-dev-0007-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0007-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Modern Asynchronous JavaScript with Async and Await" src="https://stackblitz.com/edit/nodejs-dev-0007-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0007-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ```js
 const doSomethingAsync = () => {
@@ -3546,7 +3562,9 @@ getFirstUserData();
 
 Async functions can be chained very easily, and the syntax is much more readable than with plain promises:
 
-<iframe title="Multiple async functions in series" src="https://stackblitz.com/edit/nodejs-dev-0008-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0008-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Multiple async functions in series" src="https://stackblitz.com/edit/nodejs-dev-0008-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0008-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ```js
 const promiseToDoSomething = () => {
@@ -3662,7 +3680,9 @@ description: 'How to build an HTTP server with Node.js'
 
 Here is a sample Hello World HTTP web server:
 
-<iframe title="Build an HTTP Server" src="https://stackblitz.com/edit/nodejs-dev-0009-01?index.js&zenmode=1" alt="nodejs-dev-0009-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe><br>
+<iframe title="Build an HTTP Server" src="https://stackblitz.com/edit/nodejs-dev-0009-01?index.js&zenmode=1" alt="nodejs-dev-0009-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
+</iframe>
+<br>
 
 ````js
 

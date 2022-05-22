@@ -4,8 +4,8 @@ template: post
 subtitle: By default you cannot pass arguments to a callback function
 excerpt: By default you cannot pass arguments to a callback function
 date: 2022-04-17T08:07:40.104Z
-image: call-stack-first-example.png
-thumb_image: call-stack-first-example.png
+image: images/call-stack-first-example.png
+thumb_image: images/call-stack-first-example.png
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:

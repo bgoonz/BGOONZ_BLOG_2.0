@@ -3,8 +3,8 @@ title: VSCode Extensions
 template: post
 subtitle: the most useful vscode extensions I know of
 date: 2022-04-18T06:50:55.010Z
-image: https://i.imgur.com/jpWPKyT.png
-thumb_image: https://i.imgur.com/jpWPKyT.png
+image: images/https://i.imgur.com/jpWPKyT.png
+thumb_image: images/https://i.imgur.com/jpWPKyT.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

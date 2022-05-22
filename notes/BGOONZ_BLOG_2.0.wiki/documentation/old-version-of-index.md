@@ -106,7 +106,9 @@ sections:
           <iframe class="<iframe " width="100%
           src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
           player"  clipboard-write;
-          allowfullscreen></iframe><br>
+          allowfullscreen>
+</iframe>
+<br>
       actions:
           - label: Youtube
             url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
@@ -123,7 +125,9 @@ sections:
           <iframe class="<iframe " width="100%
           src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
           width="100%" height="380" frameBorder="0" allowtransparency="true"
-          allow="encrypted-media"></iframe><br>
+          allow="encrypted-media">
+</iframe>
+<br>
       actions: []
       type: section_content
       title: Spotify
@@ -179,7 +183,9 @@ sections:
           <iframe class="<iframe " width="100%   width="800" height="575"
             src="https://code-playground.netlify.app/index.html" title="YouTube video
             player"  clipboard-write;
-            allowfullscreen></iframe><br>
+            allowfullscreen>
+</iframe>
+<br>
       actions: []
       type: section_content
     - section_id: features-two-col
@@ -218,7 +224,9 @@ sections:
           <iframe class="<iframe " width="100%     width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player"  clipboard-write;
-           allowfullscreen></iframe><br>
+           allowfullscreen>
+</iframe>
+<br>
       actions:
           - label: Go To Mini Projects Page
             url: 'https://iframeshowcase.netlify.app/'
@@ -236,7 +244,9 @@ sections:
           <iframe class="<iframe " width="100%   width="800" height="575"
            src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
            player"  clipboard-write;
-           allowfullscreen></iframe><br>
+           allowfullscreen>
+</iframe>
+<br>
       actions: []
       type: section_content
     - title: Blog-Archive
@@ -247,7 +257,9 @@ sections:
           <iframe class="<iframe " width="100%  width="800" height="575"
             src="https://bgoonz.blogspot.com/" title="YouTube video
             player"  clipboard-write;
-            allowfullscreen></iframe><br>
+            allowfullscreen>
+</iframe>
+<br>
       actions: []
       type: section_content
     - title: Nextjs & SanityCMS Blog W Comments
@@ -258,7 +270,9 @@ sections:
           <iframe class="<iframe " width="100%  width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
            player"  clipboard-write;
-           allowfullscreen></iframe><br>
+           allowfullscreen>
+</iframe>
+<br>
       actions: []
       type: section_content
     - title: Contact

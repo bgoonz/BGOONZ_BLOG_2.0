@@ -5,8 +5,8 @@ subtitle: Learn React
 excerpt: Below I list the most common terms, and their definitions, used when
   talking about React.
 date: 2022-04-18T20:21:35.309Z
-image: blob:https://bgoonz-blog.netlify.app/adcf1a25-c8d4-49c9-b669-4ba7a015af63
-thumb_image: blob:https://bgoonz-blog.netlify.app/adcf1a25-c8d4-49c9-b669-4ba7a015af63
+image: https://bgoonz-blog.netlify.app/adcf1a25-c8d4-49c9-b669-4ba7a015af63
+thumb_image: https://bgoonz-blog.netlify.app/adcf1a25-c8d4-49c9-b669-4ba7a015af63
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
