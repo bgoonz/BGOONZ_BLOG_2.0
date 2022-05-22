@@ -4,8 +4,8 @@ template: post
 subtitle: "Html &Css for beginners "
 excerpt: Add css to your html
 date: 2022-04-10T11:11:00.257Z
-image: https://cdn-images-1.medium.com/max/800/1*3hnCIyXstRSHgYO5-z-51g.png
-thumb_image: ""
+image: images/https://cdn-images-1.medium.com/max/800/1*3hnCIyXstRSHgYO5-z-51g.png
+thumb_image: images/""
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

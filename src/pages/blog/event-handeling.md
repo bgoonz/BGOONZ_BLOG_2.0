@@ -4,8 +4,8 @@ template: post
 subtitle: Event objects are normally created by Script
 excerpt: Event objects are normally created by Script
 date: 2022-04-19T07:12:49.030Z
-image: https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
-thumb_image: https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
+image: images/https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
+thumb_image: images/https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

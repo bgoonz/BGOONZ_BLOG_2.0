@@ -4,8 +4,8 @@ template: post
 subtitle: A reducer is a function that determines changes to an applications state
 excerpt: A reducer is a function that determines changes to an applications state
 date: 2022-05-16T06:08:24.979Z
-image: redux.gif
-thumb_image: redux.gif
+image: images/redux.gif
+thumb_image: images/redux.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
