@@ -11,7 +11,9 @@ seo:
 template: docs
 ---
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0"  title="Testing Playground" style="display: block; width: 100%"></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0"  title="Testing Playground" style="display: block; width: 100%">
+</iframe>
+<br>
 
 # 🧪 React Testing Library
 
@@ -92,7 +94,9 @@ Given the following DOM elements (which can be rendered by React, Vue, Angular, 
 
 ```html
 <body>
-    <div id="app"><label for="username-input">Username</label> <input id="username-input" /></div>
+    <div id="app">
+<label for="username-input">Username</label> <input id="username-input" />
+</div>
 </body>
 ```
 

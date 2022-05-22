@@ -28,25 +28,37 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 ### Resources:
 
-<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad"><strong>Introduction to React for Complete Beginners</strong>
+<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad">
+<strong>Introduction to React for Complete Beginners</strong>
 <br/>
 
-<em>All of the code examples below will be included a second time at the bottom of this article as an embedded gist.</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>All of the code examples below will be included a second time at the bottom of this article as an embedded gist.</em>javascript.plainenglish.io</a>
+<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/docs/react/react2/"><strong>Beginner's Guide To React Part 2</strong>
+<a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/docs/react/react2/">
+<strong>Beginner's Guide To React Part 2</strong>
 <br/>
 
-<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…</em><a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…</em>
+<a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong>
+<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3">
+<strong>bgoonz/React_Notes_V3</strong>
 <br/>
 
-<em>A JavaScript library for building user interfaces Declarative React makes it painless to create interactive UIs. Design…</em>github.com</a><a href="https://github.com/bgoonz/React_Notes_V3" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A JavaScript library for building user interfaces Declarative React makes it painless to create interactive UIs. Design…</em>github.com</a>
+<a href="https://github.com/bgoonz/React_Notes_V3" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://reactjs.org/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://reactjs.org/docs"><strong>Getting Started - React</strong>
+<a href="https://reactjs.org/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://reactjs.org/docs">
+<strong>Getting Started - React</strong>
 <br/>
 
-<em>A JavaScript library for building user interfaces</em>reactjs.org</a><a href="https://reactjs.org/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A JavaScript library for building user interfaces</em>reactjs.org</a>
+<a href="https://reactjs.org/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### Also … here is my brand new blog site… built with react and a static site generator called GatsbyJS!
 
@@ -54,11 +66,17 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--p-anchor">https://bgoonz-blog.netlify.app/</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*t3UQh848ndt4rgr_fDToaw.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*t3UQh848ndt4rgr_fDToaw.png" class="graf-image" />
+</figure>
 
 ---
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Beginning of the Article:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" />
+<figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a>
+</figcaption>
+</figure>### Beginning of the Article:
 
 **Pros**
 
@@ -107,7 +125,12 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **3. Use debugging tools to determine when a component is rendering**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*jf3yl4GKDHpxmPJk.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*hBOo6hfwhKwS5UDM.jpg" class="graf-image" /></figure>#### We use the React DevTools extension as an extension in our Browser DevTools to debug and view when a component is rendering
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*jf3yl4GKDHpxmPJk.gif" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/0*hBOo6hfwhKwS5UDM.jpg" class="graf-image" />
+</figure>#### We use the React DevTools extension as an extension in our Browser DevTools to debug and view when a component is rendering
 
 ### **4. Describe how JSX transforms into actual DOM nodes**
 
@@ -272,14 +295,19 @@ a. Import the react-router-dom package:
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
 <br/>
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### REACT CHEAT SHEET:
 
-_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor">
+<em>plainenglish.io</em>
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 11, 2021](https://medium.com/p/cbaafb31765d).
 

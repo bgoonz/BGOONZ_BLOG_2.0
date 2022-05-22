@@ -344,7 +344,8 @@ echo ' <meta http-equiv="Content-Type" content="text/html">'
 echo ' <meta name="Author" content="Bryan Guner">'
 echo '<link rel="stylesheet" href="./assets/prism.css">'
 echo ' <link rel="stylesheet" href="./assets/style.css">'
-echo ' <script async defer src="./assets/prism.js"></script>'
+echo ' <script async defer src="./assets/prism.js">
+</script>'
 
 echo " <TITLE> directory </TITLE> </head>"
 
@@ -364,11 +365,13 @@ echo ""
 
 echo "<ul>"
 
-awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</li>"}' $listing
+awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</li>"}' $listing
 
 # awk '{print "<li>"}
 
-# {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+# {print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
 echo ""
 
@@ -382,7 +385,8 @@ echo "</html>"
 
 ## cmd $listing --sort=extension >>$html
 
-  <pre><code>
+  <pre>
+<code>
   #!/bin/bash
 # Author: Raman Nv
 
@@ -400,7 +404,8 @@ do
       num=$(($num+1))
 done
   
-</code></pre>
+</code>
+</pre>
 
 ---
 

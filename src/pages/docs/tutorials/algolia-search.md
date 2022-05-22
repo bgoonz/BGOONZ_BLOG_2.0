@@ -17,7 +17,11 @@ template: docs
 
 <details>
 
-<summary> <h5><b>➡️_____Click Here For Dropdown_____➡️</b><u>((⬇️<i>Selecting A Searc Engine (Jamstack Site)</i>⬇️))</u></h5></summary>
+<summary> <h5>
+<b>➡️_____Click Here For Dropdown_____➡️</b>
+<u>((⬇️<i>Selecting A Searc Engine (Jamstack Site)</i>⬇️))</u>
+</h5>
+</summary>
 
 ### Search in the Jamstack World
 

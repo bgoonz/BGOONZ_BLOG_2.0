@@ -3,7 +3,9 @@ title: web-accessibility
 template: docs
 excerpt: "### Plan Heading Structure Early"
 ---
-<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.svg" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org"></a>
+<a href="http://webaim.org/resources/designers/">
+<img src="http://webaim.org/resources/designers/media/designers.svg" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org">
+</a>
 
 
 

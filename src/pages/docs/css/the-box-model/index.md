@@ -50,7 +50,9 @@ The second is a list, which is laid out using `display: flex`. This establishes 
 
 Below this, we have a block-level paragraph, inside which are two `<span>` elements. These elements would normally be `inline`, however, one of the elements has a class of block, and we have set it to `display: block`.
 
-<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/block.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/block.html" loading="lazy">
+</iframe>
+<br>
 
 In the next example, we can see how `inline` elements behave. The `<span>` elements in the first paragraph are inline by default and so do not force line breaks.
 
@@ -60,7 +62,9 @@ Finally, we have two paragraphs both set to `display: inline`. The inline flex c
 
 **In the example, you can change `display: inline` to `display: block` or `display: inline-flex` to `display: flex` to toggle between these display modes.**
 
-<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/inline.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/inline.html" loading="lazy">
+</iframe>
+<br>
 
 You will encounter things like flex layout later in these lessons; the key thing to remember for now is that changing the value of the `display` property can change whether the outer display type of a box is block or inline, which changes the way it displays alongside other elements in the layout.
 
@@ -144,7 +148,9 @@ In the example below, you can see two boxes. Both have a class of `.box`, which 
 
 **Can you change the size of the second box (by adding CSS to the `.alternate` class) to make it match the first box in width and height?**
 
-<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/box-models.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="1100" src="https://mdn.github.io/css-examples/learn/box-model/box-models.html" loading="lazy">
+</iframe>
+<br>
 
 **Note:** You can find a solution for this task [here](https://github.com/mdn/css-examples/blob/main/learn/solutions.md#the-box-model).
 
@@ -173,7 +179,9 @@ We can control all margins of an element at once using the [`margin`](https://de
 
 **In the example below, try changing the margin values to see how the box is pushed around due to the margin creating or removing space (if it is a negative margin) between this element and the containing element.**
 
-<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/margin.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/margin.html" loading="lazy">
+</iframe>
+<br>
 
 #### Margin collapsing
 
@@ -183,7 +191,9 @@ In the example below, we have two paragraphs. The top paragraph has a `margin-bo
 
 **You can test this by setting the `margin-top` of paragraph two to 0. The visible margin between the two paragraphs will not change — it retains the 50 pixels set in the `margin-bottom` of paragraph one. If you set it to -10px, you'll see that the overall margin becomes 40px — it subtracts from the 50px.**
 
-<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/margin-collapse.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/margin-collapse.html" loading="lazy">
+</iframe>
+<br>
 
 There are a number of rules that dictate when margins do and do not collapse. For further information see the detailed page on [mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing). The main thing to remember for now is that margin collapsing is a thing that happens. If you are creating space with margins and don't get the space you expect, this is probably what is happening.
 
@@ -225,7 +235,9 @@ To set the width, style, or color of a single side, you can use one of the more 
 
 In the example below, we have used various shorthands and longhands to create borders. Play around with the different properties to check that you understand how they work. The MDN pages for the border properties give you information about the different styles of border you can choose from.
 
-<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/border.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/border.html" loading="lazy">
+</iframe>
+<br>
 
 ### [Padding](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#padding 'Permalink to Padding')
 
@@ -242,7 +254,9 @@ We can control the padding on all sides of an element using the [`padding`](http
 
 **You can also change the padding on the class `.container,` which will make space between the container and the box. Padding can be changed on any element, and will make space between its border and whatever is inside the element.**
 
-<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/padding.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/padding.html" loading="lazy">
+</iframe>
+<br>
 
 ## [The box model and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_box_model_and_inline_boxes 'Permalink to The box model and inline boxes')
 
@@ -250,7 +264,9 @@ All of the above applies fully to block boxes. Some of the properties can apply 
 
 In the example below, we have a `<span>` inside a paragraph and have applied a `width`, `height`, `margin`, `border`, and `padding` to it. You can see that the width and height are ignored. The vertical margin, padding, and border are respected but they do not change the relationship of other content to our inline box and so the padding and border overlaps other words in the paragraph. Horizontal padding, margins, and borders are respected and will cause other content to move away from the box.
 
-<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-box-model.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-box-model.html" loading="lazy">
+</iframe>
+<br>
 
 ## [Using display: inline-block](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block 'Permalink to Using display: inline-block')
 
@@ -265,7 +281,9 @@ It does not, however, break onto a new line, and will only become larger than it
 
 **In this next example, we have added `display: inline-block` to our `<span>` element. Try changing this to `display: block` or removing the line completely to see the difference in display models.**
 
-<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/inline-block.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="800" src="https://mdn.github.io/css-examples/learn/box-model/inline-block.html" loading="lazy">
+</iframe>
+<br>
 
 Where this can be useful is when you want to give a link a larger hit area by adding `padding`. `<a>` is an inline element like `<span>`; you can use `display: inline-block` to allow padding to be set on it, making it easier for a user to click the link.
 
@@ -273,7 +291,9 @@ You see this fairly frequently in navigation bars. The navigation below is displ
 
 **Add `display: inline-block` to the rule with the `.links-list a` selector, and you will see how it fixes this issue by causing the padding to be respected by other elements.**
 
-<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-block-nav.html" loading="lazy"></iframe><br>
+<iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-block-nav.html" loading="lazy">
+</iframe>
+<br>
 
 ## [Test your skills!](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#test_your_skills! 'Permalink to Test your skills!')
 

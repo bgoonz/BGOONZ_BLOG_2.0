@@ -22,7 +22,8 @@ cmseditable: true
 
 Guess the author of the following quotes:
 
-## Data Structures & Algorithms Resource List Part 1 <a id="60dd"></a>
+## Data Structures & Algorithms Resource List Part 1 <a id="60dd">
+</a>
 
 Guess the author of the following quotes:
 
@@ -34,9 +35,11 @@ Guess the author of the following quotes:
 
 ![](https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F)
 
-## Update: <a id="4129"></a>
+## Update: <a id="4129">
+</a>
 
-### Here's some more: <a id="42ff"></a>
+### Here's some more: <a id="42ff">
+</a>
 
 -   [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
 -   [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
@@ -115,7 +118,8 @@ Guess the author of the following quotes:
 -   [Cryptology Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/Cryptology.md)
 -   [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
 
-## Algorithms: <a id="119a"></a>
+## Algorithms: <a id="119a">
+</a>
 
 -   [100 days of algorithms](https://github.com/coells/100days)
 -   [Algorithms](https://github.com/marcosfede/algorithms) — Solved algorithms and data structures problems in many languages.
@@ -175,7 +179,8 @@ Guess the author of the following quotes:
 
 ![](https://cdn-images-1.medium.com/max/800/0*2fb7io8VD9z8080F.jpg)
 
-## Data Structures: <a id="e5f0"></a>
+## Data Structures: <a id="e5f0">
+</a>
 
 -   [Data Structures and Algorithms implementation in Go](https://github.com/floyernick/Data-Structures-and-Algorithms)
 -   [Which algorithms/data structures should I “recognize” and know by name?](https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name)

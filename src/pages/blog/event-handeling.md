@@ -104,7 +104,53 @@ Type: `String`
 
 The name of the event that occurred. Predefined events types are:
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p>change</p></td><td><p>changing</p></td></tr><tr><td><p>move</p></td><td><p>moving</p></td></tr><tr><td><p>resize</p></td><td><p>resizing</p></td></tr><tr><td><p>show</p></td><td><p>enterKey</p></td></tr><tr><td><p>focus</p></td><td><p>blur</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>change</p>
+</td>
+<td>
+<p>changing</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>move</p>
+</td>
+<td>
+<p>moving</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>resize</p>
+</td>
+<td>
+<p>resizing</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>show</p>
+</td>
+<td>
+<p>enterKey</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>focus</p>
+</td>
+<td>
+<p>blur</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 Additional type names apply specifically to keyboard and mouse events.
 
@@ -124,7 +170,73 @@ ___
 
 `eventObj.initUIEvent(eventName, bubble, isCancelable, view, detail)`
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>eventName</span></code></p></td><td><p>The event name string.</p></td></tr><tr><td><p><code><span>bubble</span></code></p></td><td><p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p></td></tr><tr><td><p><code><span>isCancelable</span></code></p></td><td><p>When true, the event can be cancelled.</p></td></tr><tr><td><p><code><span>view</span></code></p></td><td><p>The container or control object that dispatched the event.</p></td></tr><tr><td><p><code><span>detail</span></code></p></td><td><p>Details of the event, which vary according to the event type. The value is 1 or 2 for the click event, indicating a single or double click.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>eventName</span>
+</code>
+</p>
+</td>
+<td>
+<p>The event name string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>bubble</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>isCancelable</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event can be cancelled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>view</span>
+</code>
+</p>
+</td>
+<td>
+<p>The container or control object that dispatched the event.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>detail</span>
+</code>
+</p>
+</td>
+<td>
+<p>Details of the event, which vary according to the event type. The value is 1 or 2 for the click event, indicating a single or double click.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 Modifies an event before it is dispatched to its targets. Takes effect only if [UIEvent.eventPhase](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#eventobj-eventphase) is `Event.NOT_DISPATCHING`. Ignored at all other phases.
 
@@ -250,7 +362,80 @@ ___
 
 `eventObj.getModifierState(keyIdentifier)`
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>keyIdentifier</span></code></p></td><td><p>A string containing a modifier key identifier, one of:</p><blockquote><div><ul><li><p><code><span>Alt</span></code></p></li><li><p><code><span>CapsLock</span></code></p></li><li><p><code><span>Control</span></code></p></li><li><p><code><span>Meta</span></code></p></li><li><p><code><span>NumLock</span></code></p></li><li><p><code><span>Scroll</span></code></p></li><li><p><code><span>Shift</span></code></p></li></ul></div></blockquote></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>keyIdentifier</span>
+</code>
+</p>
+</td>
+<td>
+<p>A string containing a modifier key identifier, one of:</p>
+<blockquote>
+<div>
+<ul>
+<li>
+<p>
+<code>
+<span>Alt</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>CapsLock</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Control</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Meta</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>NumLock</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Scroll</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Shift</span>
+</code>
+</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 
 Returns true if the given modifier was active when the event occurred, false otherwise.
 
@@ -264,7 +449,101 @@ ___
 
 `eventObj.initKeyboardEvent (eventName, bubble, isCancelable, view, keyID, keyLocation, modifiersList)`
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>eventName</span></code></p></td><td><p>The event name string.</p></td></tr><tr><td><p><code><span>bubble</span></code></p></td><td><p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p></td></tr><tr><td><p><code><span>isCancelable</span></code></p></td><td><p>When true, the event can be cancelled.</p></td></tr><tr><td><p><code><span>view</span></code></p></td><td><p>The container or control object that dispatched the event.</p></td></tr><tr><td><p><code><span>keyID</span></code></p></td><td><p>Sets the <code><span>keyIdentifier</span></code> value.</p></td></tr><tr><td><p><code><span>keyLocation</span></code></p></td><td><p>Sets the <code><span>keyLocation</span></code>. value.</p></td></tr><tr><td><p><code><span>modifiersList</span></code></p></td><td><p>A whitespace-separated string of modifier key names, such as “Control Alt”.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>eventName</span>
+</code>
+</p>
+</td>
+<td>
+<p>The event name string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>bubble</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>isCancelable</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event can be cancelled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>view</span>
+</code>
+</p>
+</td>
+<td>
+<p>The container or control object that dispatched the event.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>keyID</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the <code>
+<span>keyIdentifier</span>
+</code> value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>keyLocation</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the <code>
+<span>keyLocation</span>
+</code>. value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>modifiersList</span>
+</code>
+</p>
+</td>
+<td>
+<p>A whitespace-separated string of modifier key names, such as “Control Alt”.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 Reinitializes the object, allowing you to change the event properties after construction. Arguments set the corresponding properties. Returns `undefined`.
 
@@ -294,7 +573,49 @@ Type: `Number`
 
 Which mouse button changed state.
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>0</span></code></p></td><td><p>The left button of a two- or three-button mouse or the one button on a one-button mouse, used to activate a UI button or select text.</p></td></tr><tr><td><p><code><span>1</span></code></p></td><td><p>The middle button of a three-button mouse, or the mouse wheel.</p></td></tr><tr><td><p><code><span>2</span></code></p></td><td><p>The right button, used to display a context menu, if present.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>0</span>
+</code>
+</p>
+</td>
+<td>
+<p>The left button of a two- or three-button mouse or the one button on a one-button mouse, used to activate a UI button or select text.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>1</span>
+</code>
+</p>
+</td>
+<td>
+<p>The middle button of a three-button mouse, or the mouse wheel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>2</span>
+</code>
+</p>
+</td>
+<td>
+<p>The right button, used to display a context menu, if present.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 Some mice may provide or simulate more buttons, and values higher than 2 represent such buttons.
 
@@ -383,7 +704,80 @@ ___
 
 `eventObj.getModifierState(keyIdentifier)`
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>keyIdentifier</span></code></p></td><td><p>A string containing a modifier key identifier, one of:</p><blockquote><div><ul><li><p><code><span>Alt</span></code></p></li><li><p><code><span>CapsLock</span></code></p></li><li><p><code><span>Control</span></code></p></li><li><p><code><span>Meta</span></code></p></li><li><p><code><span>NumLock</span></code></p></li><li><p><code><span>Scroll</span></code></p></li><li><p><code><span>Shift</span></code></p></li></ul></div></blockquote></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>keyIdentifier</span>
+</code>
+</p>
+</td>
+<td>
+<p>A string containing a modifier key identifier, one of:</p>
+<blockquote>
+<div>
+<ul>
+<li>
+<p>
+<code>
+<span>Alt</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>CapsLock</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Control</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Meta</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>NumLock</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Scroll</span>
+</code>
+</p>
+</li>
+<li>
+<p>
+<code>
+<span>Shift</span>
+</code>
+</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 
 Returns true if the given modifier was active when the event occurred, false otherwise.
 
@@ -412,8 +806,142 @@ ___
 > 
 > ```
 
-<table><colgroup><col> <col></colgroup><tbody><tr><td><p><code><span>eventName</span></code></p></td><td><p>The event name string.</p></td></tr><tr><td><p><code><span>bubble</span></code></p></td><td><p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p></td></tr><tr><td><p><code><span>isCancelable</span></code></p></td><td><p>When true, the event can be cancelled.</p></td></tr><tr><td><p><code><span>view</span></code></p></td><td><p>The container or control object that dispatched the event.</p></td></tr><tr><td><p><code><span>detail</span></code></p></td><td><p>Sets the single-double click value for the <code><span>click</span></code> event.</p></td></tr><tr><td><p><code><span>screenX,</span> <span>screenY</span></code></p></td><td><p>Sets the event coordinates relative to the screen.</p></td></tr><tr><td><p><code><span>clientX,</span> <span>clientY</span></code></p></td><td><p>Sets the event coordinates relative to the target object. The origin is the top left of the control or window, inside any border decorations.</p></td></tr><tr><td><p><code><span>ctrlKey,</span> <span>altKey,</span> <span>metaKey</span></code></p></td><td><p>Sets the modifier key states.</p></td></tr><tr><td><p><code><span>button</span></code></p></td><td><p>Sets the mouse button.</p></td></tr><tr><td><p><code><span>relatedTarget</span></code></p></td><td><p>Optional. Sets the related target, if any, for a <code><span>mouseover</span></code> or <code><span>mouseout</span></code> event.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col> <col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<p>
+<code>
+<span>eventName</span>
+</code>
+</p>
+</td>
+<td>
+<p>The event name string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>bubble</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event should be triggered in ancestors of the target object during the bubbling phase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>isCancelable</span>
+</code>
+</p>
+</td>
+<td>
+<p>When true, the event can be cancelled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>view</span>
+</code>
+</p>
+</td>
+<td>
+<p>The container or control object that dispatched the event.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>detail</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the single-double click value for the <code>
+<span>click</span>
+</code> event.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>screenX,</span> <span>screenY</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the event coordinates relative to the screen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>clientX,</span> <span>clientY</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the event coordinates relative to the target object. The origin is the top left of the control or window, inside any border decorations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>ctrlKey,</span> <span>altKey,</span> <span>metaKey</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the modifier key states.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>button</span>
+</code>
+</p>
+</td>
+<td>
+<p>Sets the mouse button.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<code>
+<span>relatedTarget</span>
+</code>
+</p>
+</td>
+<td>
+<p>Optional. Sets the related target, if any, for a <code>
+<span>mouseover</span>
+</code> or <code>
+<span>mouseout</span>
+</code> event.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 Reinitializes the object, allowing you to change the event properties after construction. Arguments set the corresponding properties.
 
-Returns `undefined`.<a class="jsbin-embed" href="https://jsbin.com/dizifem/embed?js,console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.8"></script>
+Returns `undefined`.<a class="jsbin-embed" href="https://jsbin.com/dizifem/embed?js,console,output">JS Bin on jsbin.com</a>
+<script src="https://static.jsbin.com/js/embed.min.js?4.1.8">
+</script>

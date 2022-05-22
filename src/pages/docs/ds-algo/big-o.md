@@ -14,14 +14,18 @@ template: docs
 
 ![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true"></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true">
+</iframe>
+<br>
 
 -   Why is looking at runtime not a reliable method of calculating time complexity?
 -   Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
 -   How many background processes ran concurrently with our program that was being tested?
 -   We also need to ask if our code remains performant if we increase the size of the input.
 -   The real question we need to answering is: `How does our performance scale?`.
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no"></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no">
+</iframe>
+<br>
 
 ### big 'O' notation
 
