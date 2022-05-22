@@ -1,5 +1,6 @@
 
 import _ from 'lodash';
+import pdf-onclick from '../utils';
 import React from 'react';
 import {htmlToReact} from '../utils';
 import ActionLink from './ActionLink';
@@ -131,7 +132,7 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick={pdf-onclick}>
                             Save to PDF
                         </a>
                     </center>
