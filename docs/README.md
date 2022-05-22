@@ -12,12 +12,12 @@
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/) ⇨  [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/) ⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 ### Repos
 
-- [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
-- [Blog Content](https://github.com/bgoonz/MainBlogContent)
+-   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
+-   [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
@@ -32,14 +32,13 @@
 
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
-  ```bash
-  
-  npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
-  
-  ```
-  
-# Bgoonzblog
+```bash
 
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+```
+
+# Bgoonzblog
 
 Bash Commands
 
@@ -818,7 +817,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
       echo "<ul>"
 
-      awk '{print "<iframe sandbox="allow-scripts"  src=\""$1"\">","</iframe>"}' $listing
+      awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src=\""$1"\">","</iframe><br>"}' $listing
 
       # awk '{print "<li>"};
 
@@ -1300,7 +1299,6 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ---
 
-
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
@@ -1315,12 +1313,12 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/) ⇨  [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/) ⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 ### Repos
 
-- [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
-- [Blog Content](https://github.com/bgoonz/MainBlogContent)
+-   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
+-   [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
@@ -1335,16 +1333,16 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
-  ```bash
-  
-  npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
-  
-  ```
-  
+```bash
+
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+```
+
 ---
-  
+
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
-  
+
 </div>
 
 ---
@@ -2163,11 +2161,7 @@ get in touch! +1 (551) - 254 - 5505
 
 [Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/) [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
 
-
-
 ---
-
-
 
 <details>
 
@@ -2254,7 +2248,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -2282,7 +2276,7 @@ fs.writeFile('output.md', cat, err =>  {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 
@@ -3034,7 +3028,7 @@ echo '  </style> '
 
   echo "<ul> "
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe><br>"}' $listing
 
   # awk '{print "<li> "};
 
@@ -3497,7 +3491,7 @@ sudo -u postgres psql
 ## Technologies Used
 
 | URL                  | <https://bgoonz-blog.netlify.app>                        |
-|----------------------|----------------------------------------------------------|
+| -------------------- | -------------------------------------------------------- |
 | Miscellaneous        | webpack ; Prism                                          |
 | Widgets              | Facebook ; AddThis                                       |
 | Analytics            | Moat ; Google Analytics ; Google Ads Conversion Tracking |
@@ -3573,40 +3567,40 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ## Wiki Nav
 
-- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
-- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
-- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
-- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
-- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
-- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
-- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
-- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
-- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
-- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
-- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
-- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
-- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
-- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
-- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
-- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
-- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
-- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
-- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
-- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
-- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
-- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
-- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
-- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
-- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
-- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
-- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
-- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
-- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
-- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
-- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
-- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
-- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
-- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+-   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+-   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+-   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+-   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+-   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+-   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+-   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+-   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+-   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+-   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+-   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+-   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+-   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+-   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+-   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+-   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+-   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+-   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+-   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+-   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+-   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+-   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+-   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+-   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+-   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+-   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+-   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+-   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+-   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+-   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+-   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+-   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+-   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+-   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
@@ -4429,9 +4423,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 -
-- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+-   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -4459,24 +4453,24 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
 
-- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
-- **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
-- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
-- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
+-   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+-   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+-   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+-   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
-    - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
-- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+-   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
 
-- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
-- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+-   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+-   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+-   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+-   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
 
@@ -5450,7 +5444,7 @@ export default class Footer extends React.Component {
                                                 width="100%!important"
                                             >
                                                 {' '}
-                                            </iframe>
+                                            </iframe><br>
                                         }
                                     </td>
                                 </tr>

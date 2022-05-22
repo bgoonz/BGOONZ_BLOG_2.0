@@ -125,8 +125,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -144,8 +144,8 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />

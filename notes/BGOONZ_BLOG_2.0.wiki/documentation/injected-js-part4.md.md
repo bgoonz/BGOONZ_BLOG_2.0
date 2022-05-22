@@ -51,7 +51,7 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -118,7 +118,7 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />

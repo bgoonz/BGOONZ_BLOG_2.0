@@ -77,8 +77,8 @@
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -144,8 +144,8 @@
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
@@ -941,8 +941,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -1008,8 +1008,8 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
@@ -1749,23 +1749,26 @@ Inject analytics or other scripts into the HTML of your site.---
 
 -   before `</body>`
 
-    spotify
+        spotify
 
-    ```html
-<<<<<<< HEAD
+        ```html
+
+    <<<<<<< HEAD
     <iframe
-        src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-        width="100%"
-        height="80"
-        style="   position: fixed;bottom: 50;right: 50;"
-        frameborder="0"
-        allowtransparency="true"
-        allow="encrypted-media"
-    ></iframe>
-=======
-    <iframe sandbox="allow-scripts"  src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style="   position: fixed;bottom: 50;right: 50;"frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
->>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
-    ```
+            src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+            width="100%"
+            height="80"
+            style="   position: fixed;bottom: 50;right: 50;"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+        ></iframe><br>
+    =======
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style=" position: fixed;bottom: 50;right: 50;"frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+
+    > > > > > > > 542c7467a96c36b4f09baccab0e245389b127892
+
+        ```
 
 ---
 
@@ -1854,50 +1857,53 @@ Inject analytics or other scripts into the HTML of your site.---
 
 -   before `</head>`
 
-    analytics-n-addsense
+        analytics-n-addsense
 
-    ```html
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5S5XXNR');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-<<<<<<< HEAD
+        ```html
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5S5XXNR');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+
+    <<<<<<< HEAD
     <noscript
-        ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
-    ></noscript>
-=======
-    <noscript><iframe sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
->>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
-    <!-- End Google Tag Manager (noscript) -->
+            ><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
+        ></noscript>
+    =======
+    <noscript><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe><br></noscript>
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    > > > > > > > 542c7467a96c36b4f09baccab0e245389b127892
 
-        gtag('config', 'G-4W5MG3DG4T');
-    </script>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        ```
 
 ---
 

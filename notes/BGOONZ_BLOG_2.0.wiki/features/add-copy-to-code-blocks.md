@@ -184,7 +184,7 @@ To avoid potential issues, the Clipboard API can only be used on pages served ov
 <iframe
   src="childpage.html"
   allow="clipboard-read; clipboard-write"
-></iframe>
+></iframe><br>
 
 ```
 

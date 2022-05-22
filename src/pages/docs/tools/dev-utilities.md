@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## General Utilities
 
 <br>
@@ -20,36 +19,29 @@ template: docs
 <h1> Search </h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe><br>
 
 <br>
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-<br>
-<br>
-
 
 <br>
 <br>
 <br>
 <br>
 
-
 <br>
-
-
+<br>
 
 <br>
 <br>
 <br>
 <br>
 
+<br>
+
+<br>
+<br>
+<br>
+<br>
 
 <br>
 <br>
@@ -57,16 +49,14 @@ template: docs
 <h1> Photo Editor   </h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://onlinephotoeditor.goonlinetools.com/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe><br>
 
 <br>
 
-
 <br>
 <br>
 <br>
 <br>
-
 
 <br>
 <br>
@@ -74,26 +64,21 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe><br>
 
 <br>
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-<br>
-
-
 
 <br>
 <br>
 <br>
 <br>
 
+<br>
+
+<br>
+<br>
+<br>
+<br>
 
 <br>
 <br>
@@ -101,16 +86,14 @@ template: docs
 <h1> Text Tools     </h1>
 <br>
 
-<iframe sandbox="allow-scripts"  src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz.github.io/Web_Utility_Tools/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe><br>
 
 <br>
 
-
 <br>
 <br>
 <br>
 <br>
-
 
 <br>
 <br>
@@ -120,16 +103,14 @@ template: docs
 <h1> Ternary Converter   </h1>
 <br>
 
-<iframe height="1000px" width="1200px" scrolling="yes" src="https://ternary42.netlify.app/"     loading="lazy"  allowfullscreen="true"></iframe>
+<iframe height="1000px" width="1200px" scrolling="yes" src="https://ternary42.netlify.app/"     loading="lazy"  allowfullscreen="true"></iframe><br>
 
 <br>
 
-
 <br>
 <br>
 <br>
 <br>
-
 
 <br>
 <br>
@@ -138,4 +119,4 @@ template: docs
   See the Pen <a href="https://codepen.io/bgoonz/pen/zYwLVmb">
   Dashed Border Generator</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+</iframe><br>

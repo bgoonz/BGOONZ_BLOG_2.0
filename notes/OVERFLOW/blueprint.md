@@ -898,7 +898,7 @@ echo '  </style> '
 
   echo "<ul> "
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe><br>"}' $listing
 
   # awk '{print "<li> "};
 
@@ -3314,7 +3314,7 @@ export default class Footer extends React.Component {
                                                 width="100%!important"
                                             >
                                                 {' '}
-                                            </iframe>
+                                            </iframe><br>
                                         }
                                     </td>
                                 </tr>

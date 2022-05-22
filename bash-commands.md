@@ -4,7 +4,6 @@
 
 <summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
-
 ## 99. Cheat Sheet
 
 ### Description
@@ -542,16 +541,9 @@ printf "${Red} This is red \n"
 
 ```
 
-
-
 </details>
 
-
-
 >
-
-
-
 
 #### Find
 
@@ -634,7 +626,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -662,7 +654,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 
@@ -1414,7 +1406,7 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts"  src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src=\""$1"\">","</iframe>"}' $listing
 
   # awk '{print "<li>"};
 
