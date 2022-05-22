@@ -3,7 +3,8 @@ title: The Box Model
 template: docs
 excerpt: In CSS we broadly have two types of boxes
 ---
-## [Block and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes "Permalink to Block and inline boxes")
+
+## [Block and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes 'Permalink to Block and inline boxes')
 
 In CSS we broadly have two types of boxes — **block boxes** and **inline boxes**. These characteristics refer to how the box behaves in terms of page flow and in relation to other boxes on the page. Boxes also have an **inner display type** and an **outer display type**. First, we will explain what we mean by block box and inline box. We will then explain what is meant by an inner and outer display type.
 
@@ -27,7 +28,7 @@ Some HTML elements, such as `<a>`, `<span>`, `<em>` and `<strong>` use `inline` 
 
 The type of box applied to an element is defined by [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property values such as `block` and `inline`, and relates to the **outer** value of `display`.
 
-## [Aside: Inner and outer display types](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#aside_inner_and_outer_display_types "Permalink to Aside: Inner and outer display types")
+## [Aside: Inner and outer display types](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#aside_inner_and_outer_display_types 'Permalink to Aside: Inner and outer display types')
 
 At this point, we'd better also explain **inner** and **outer** display types. As mentioned above, boxes in CSS have an _outer_ display type, which details whether the box is block or inline.
 
@@ -41,7 +42,7 @@ When you move on to learn about CSS Layout in more detail, you will encounter `f
 
 Block and inline layout, however, is the default way that things on the web behave — as we said above, it is sometimes referred to as _normal flow_, because without any other instruction, our boxes lay out as block or inline boxes.
 
-## [Examples of different display types](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#examples_of_different_display_types "Permalink to Examples of different display types")
+## [Examples of different display types](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#examples_of_different_display_types 'Permalink to Examples of different display types')
 
 Let's move on and have a look at some examples. Below we have three different HTML elements, all of which have an outer display type of `block`. The first is a paragraph, which has a border added in CSS. The browser renders this as a block box, so the paragraph begins on a new line, and expands to the full width available to it.
 
@@ -65,11 +66,11 @@ You will encounter things like flex layout later in these lessons; the key thing
 
 In the rest of the lesson, we will concentrate on the outer display type.
 
-## [What is the CSS box model?](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model "Permalink to What is the CSS box model?")
+## [What is the CSS box model?](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model 'Permalink to What is the CSS box model?')
 
 The CSS box model as a whole applies to block boxes. Inline boxes use just _some_ of the behavior defined in the box model. The model defines how the different parts of a box — margin, border, padding, and content — work together to create a box that you can see on a page. To add some additional complexity, there is a standard and an alternate box model.
 
-### [Parts of a box](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#parts_of_a_box "Permalink to Parts of a box")
+### [Parts of a box](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#parts_of_a_box 'Permalink to Parts of a box')
 
 Making up a block box in CSS we have the:
 
@@ -82,7 +83,7 @@ The below diagram shows these layers:
 
 ![Diagram of the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
 
-### [The standard CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_standard_css_box_model "Permalink to The standard CSS box model")
+### [The standard CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_standard_css_box_model 'Permalink to The standard CSS box model')
 
 In the standard box model, if you give a box a `width` and a `height` attribute, this defines the width and height of the _content box_. Any padding and border is then added to that width and height to get the total size taken up by the box. This is shown in the image below.
 
@@ -106,7 +107,7 @@ The _actual_ space taken up by the box will be 410px wide (350 + 25 + 25 + 5 + 5
 
 **Note:** The margin is not counted towards the actual size of the box — sure, it affects the total space that the box will take up on the page, but only the space outside the box. The box's area stops at the border — it does not extend into the margin.
 
-### [The alternative CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model "Permalink to The alternative CSS box model")
+### [The alternative CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model 'Permalink to The alternative CSS box model')
 
 You might think it is rather inconvenient to have to add up the border and padding to get the real size of the box, and you would be right! For this reason, CSS had an alternative box model introduced some time after the standard box model. Using this model, any width is the width of the visible box on the page, therefore the content area width is that width minus the width for the padding and border. The same CSS as used above would give the below result (width = 350px, height = 150px).
 
@@ -137,7 +138,7 @@ Copy to Clipboard
 
 **Note:** An interesting bit of history — Internet Explorer used to default to the alternative box model, with no mechanism available to switch.
 
-## [Playing with box models](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#playing_with_box_models "Permalink to Playing with box models")
+## [Playing with box models](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#playing_with_box_models 'Permalink to Playing with box models')
 
 In the example below, you can see two boxes. Both have a class of `.box`, which gives them the same `width`, `height`, `margin`, `border`, and `padding`. The only difference is that the second box has been set to use the alternative box model.
 
@@ -147,19 +148,19 @@ In the example below, you can see two boxes. Both have a class of `.box`, which 
 
 **Note:** You can find a solution for this task [here](https://github.com/mdn/css-examples/blob/main/learn/solutions.md#the-box-model).
 
-### [Use browser DevTools to view the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#use_browser_devtools_to_view_the_box_model "Permalink to Use browser DevTools to view the box model")
+### [Use browser DevTools to view the box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#use_browser_devtools_to_view_the_box_model 'Permalink to Use browser DevTools to view the box model')
 
 Your [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) can make understanding the box model far easier. If you inspect an element in Firefox's DevTools, you can see the size of the element plus its margin, padding, and border. Inspecting an element in this way is a great way to find out if your box is really the size you think it is!
 
 ![Inspecting the box model of an element using Firefox DevTools](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model-devtools.png)
 
-## [Margins, padding, and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#margins_padding_and_borders "Permalink to Margins, padding, and borders")
+## [Margins, padding, and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#margins_padding_and_borders 'Permalink to Margins, padding, and borders')
 
 You've already seen the [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin), [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding), and [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border) properties at work in the example above. The properties used in that example are **shorthands** and allow us to set all four sides of the box at once. These shorthands also have equivalent longhand properties, which allow control over the different sides of the box individually.
 
 Let's explore these properties in more detail.
 
-### [Margin](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#margin "Permalink to Margin")
+### [Margin](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#margin 'Permalink to Margin')
 
 The margin is an invisible space around your box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of your box can cause it to overlap other things on the page. Whether you are using the standard or alternative box model, the margin is always added after the size of the visible box has been calculated.
 
@@ -186,7 +187,7 @@ In the example below, we have two paragraphs. The top paragraph has a `margin-bo
 
 There are a number of rules that dictate when margins do and do not collapse. For further information see the detailed page on [mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing). The main thing to remember for now is that margin collapsing is a thing that happens. If you are creating space with margins and don't get the space you expect, this is probably what is happening.
 
-### [Borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#borders "Permalink to Borders")
+### [Borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#borders 'Permalink to Borders')
 
 The border is drawn between the margin and the padding of a box. If you are using the standard box model, the size of the border is added to the `width` and `height` of the box. If you are using the alternative box model then the size of the border makes the content box smaller as it takes up some of that available `width` and `height`.
 
@@ -226,7 +227,7 @@ In the example below, we have used various shorthands and longhands to create bo
 
 <iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/border.html" loading="lazy"></iframe>
 
-### [Padding](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#padding "Permalink to Padding")
+### [Padding](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#padding 'Permalink to Padding')
 
 The padding sits between the border and the content area. Unlike margins, you cannot have negative amounts of padding, so the value must be 0 or a positive value. Padding is typically used to push the content away from the border. Any background applied to your element will display behind the padding.
 
@@ -243,7 +244,7 @@ We can control the padding on all sides of an element using the [`padding`](http
 
 <iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/padding.html" loading="lazy"></iframe>
 
-## [The box model and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_box_model_and_inline_boxes "Permalink to The box model and inline boxes")
+## [The box model and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_box_model_and_inline_boxes 'Permalink to The box model and inline boxes')
 
 All of the above applies fully to block boxes. Some of the properties can apply to inline boxes too, such as those created by a `<span>` element.
 
@@ -251,7 +252,7 @@ In the example below, we have a `<span>` inside a paragraph and have applied a `
 
 <iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-box-model.html" loading="lazy"></iframe>
 
-## [Using display: inline-block](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block "Permalink to Using display: inline-block")
+## [Using display: inline-block](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block 'Permalink to Using display: inline-block')
 
 There is a special value of `display`, which provides a middle ground between `inline` and `block`. This is useful for situations where you do not want an item to break onto a new line, but do want it to respect `width` and `height` and avoid the overlapping seen above.
 
@@ -274,11 +275,11 @@ You see this fairly frequently in navigation bars. The navigation below is displ
 
 <iframe width="100%" height="700" src="https://mdn.github.io/css-examples/learn/box-model/inline-block-nav.html" loading="lazy"></iframe>
 
-## [Test your skills!](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#test_your_skills! "Permalink to Test your skills!")
+## [Test your skills!](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#test_your_skills! 'Permalink to Test your skills!')
 
 You've reached the end of this article, but can you remember the most important information? You can find some further tests to verify that you've retained this information before you move on — see [Test your skills: The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks).
 
-## [Summary](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#summary "Permalink to Summary")
+## [Summary](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#summary 'Permalink to Summary')
 
 That's most of what you need to understand about the box model. You may want to return to this lesson in the future if you ever find yourself confused about how big boxes are in your layout.
 
