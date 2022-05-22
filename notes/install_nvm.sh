@@ -7,12 +7,12 @@ nvm_has() {
 }
 
 nvm_default_install_dir() {
-  [ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm"
+  [ -z "${XDG_CONFIG_HOME-}" ] && printf %s "$HOME/.nvm" || printf %s "$XDG_CONFIG_HOME/nvm"
 }
 
 nvm_install_dir() {
   if [ -n "$NVM_DIR" ]; then
-    printf %s "${NVM_DIR}"
+    printf %s "$NVM_DIR"
   else
     nvm_default_install_dir
   fi
@@ -83,7 +83,7 @@ nvm_download() {
                             -e 's/-o /-O /' \
                             -e 's/-C - /-c /')
     # shellcheck disable=SC2086
-    eval wget $ARGS
+    eval wget "$ARGS"
   fi
 }
 
@@ -102,23 +102,23 @@ install_nvm_from_git() {
     # Cloning to $INSTALL_DIR
     echo "=> Downloading nvm from git to '$INSTALL_DIR'"
     command printf '\r=> '
-    mkdir -p "${INSTALL_DIR}"
-    if [ "$(ls -A "${INSTALL_DIR}")" ]; then
-      command git init "${INSTALL_DIR}" || {
+    mkdir -p "$INSTALL_DIR"
+    if [ "$(ls -A "$INSTALL_DIR")" ]; then
+      command git init "$INSTALL_DIR" || {
         echo >&2 'Failed to initialize nvm repo. Please report this!'
         exit 2
       }
-      command git --git-dir="${INSTALL_DIR}/.git" remote add origin "$(nvm_source)" 2> /dev/null \
-        || command git --git-dir="${INSTALL_DIR}/.git" remote set-url origin "$(nvm_source)" || {
+      command git --git-dir="$INSTALL_DIR/.git" remote add origin "$(nvm_source)" 2> /dev/null \
+        || command git --git-dir="$INSTALL_DIR/.git" remote set-url origin "$(nvm_source)" || {
         echo >&2 'Failed to add remote "origin" (or set the URL). Please report this!'
         exit 2
       }
-      command git --git-dir="${INSTALL_DIR}/.git" fetch origin tag "$(nvm_latest_version)" --depth=1 || {
+      command git --git-dir="$INSTALL_DIR/.git" fetch origin tag "$(nvm_latest_version)" --depth=1 || {
         echo >&2 'Failed to fetch origin with tags. Please report this!'
         exit 2
       }
     else
-      command git -c advice.detachedHead=false clone "$(nvm_source)" -b "$(nvm_latest_version)" --depth=1 "${INSTALL_DIR}" || {
+      command git -c advice.detachedHead=false clone "$(nvm_source)" -b "$(nvm_latest_version)" --depth=1 "$INSTALL_DIR" || {
         echo >&2 'Failed to clone nvm repo. Please report this!'
         exit 2
       }
@@ -196,7 +196,7 @@ install_nvm_as_script() {
     echo >&2 "Failed to download '$NVM_BASH_COMPLETION_SOURCE'"
     return 2
   } &
-  for job in $(jobs -p | command sort)
+  for job in "$(jobs -p | command sort)"
   do
     wait "$job" || return $?
   done
@@ -225,8 +225,8 @@ nvm_detect_profile() {
     return
   fi
 
-  if [ -n "${PROFILE}" ] && [ -f "${PROFILE}" ]; then
-    echo "${PROFILE}"
+  if [ -n "$PROFILE" ] && [ -f "$PROFILE" ]; then
+    echo "$PROFILE"
     return
   fi
 
@@ -246,7 +246,7 @@ nvm_detect_profile() {
   if [ -z "$DETECTED_PROFILE" ]; then
     for EACH_PROFILE in ".profile" ".bashrc" ".bash_profile" ".zshrc"
     do
-      if DETECTED_PROFILE="$(nvm_try_profile "${HOME}/${EACH_PROFILE}")"; then
+      if DETECTED_PROFILE="$(nvm_try_profile "$HOME/$EACH_PROFILE")"; then
         break
       fi
     done
@@ -282,7 +282,7 @@ nvm_check_global_modules() {
     wc -l | command tr -d ' '                   # Count entries
   )"
 
-  if [ "${MODULE_COUNT}" != '0' ]; then
+  if [ "$MODULE_COUNT" != '0' ]; then
     # shellcheck disable=SC2016
     echo '=> You currently have modules installed globally with `npm`. These will no'
     # shellcheck disable=SC2016
@@ -305,20 +305,20 @@ nvm_check_global_modules() {
 }
 
 nvm_do_install() {
-  if [ -n "${NVM_DIR-}" ] && ! [ -d "${NVM_DIR}" ]; then
-    if [ -e "${NVM_DIR}" ]; then
-      echo >&2 "File \"${NVM_DIR}\" has the same name as installation directory."
+  if [ -n "${NVM_DIR-}" ] && ! [ -d "$NVM_DIR" ]; then
+    if [ -e "$NVM_DIR" ]; then
+      echo >&2 "File \"$NVM_DIR\" has the same name as installation directory."
       exit 1
     fi
 
-    if [ "${NVM_DIR}" = "$(nvm_default_install_dir)" ]; then
-      mkdir "${NVM_DIR}"
+    if [ "$NVM_DIR" = "$(nvm_default_install_dir)" ]; then
+      mkdir "$NVM_DIR"
     else
-      echo >&2 "You have \$NVM_DIR set to \"${NVM_DIR}\", but that directory does not exist. Check your profile files and environment."
+      echo >&2 "You have \$NVM_DIR set to \"$NVM_DIR\", but that directory does not exist. Check your profile files and environment."
       exit 1
     fi
   fi
-  if [ -z "${METHOD}" ]; then
+  if [ -z "$METHOD" ]; then
     # Autodetect install method
     if nvm_has git; then
       install_nvm_from_git
@@ -328,20 +328,20 @@ nvm_do_install() {
       echo >&2 'You need git, curl, or wget to install nvm'
       exit 1
     fi
-  elif [ "${METHOD}" = 'git' ]; then
+  elif [ "$METHOD" = 'git' ]; then
     if ! nvm_has git; then
       echo >&2 "You need git to install nvm"
       exit 1
     fi
     install_nvm_from_git
-  elif [ "${METHOD}" = 'script' ]; then
+  elif [ "$METHOD" = 'script' ]; then
     if ! nvm_has nvm_download; then
       echo >&2 "You need curl or wget to install nvm"
       exit 1
     fi
     install_nvm_as_script
   else
-    echo >&2 "The environment variable \$METHOD is set to \"${METHOD}\", which is not recognized as a valid installation method."
+    echo >&2 "The environment variable \$METHOD is set to \"$METHOD\", which is not recognized as a valid installation method."
     exit 1
   fi
 
@@ -352,7 +352,7 @@ nvm_do_install() {
   local PROFILE_INSTALL_DIR
   PROFILE_INSTALL_DIR="$(nvm_install_dir | command sed "s:^$HOME:\$HOME:")"
 
-  SOURCE_STR="\\nexport NVM_DIR=\"${PROFILE_INSTALL_DIR}\"\\n[ -s \"\$NVM_DIR/nvm.sh\" ] && \\. \"\$NVM_DIR/nvm.sh\"  # This loads nvm\\n"
+  SOURCE_STR="\\nexport NVM_DIR=\"$PROFILE_INSTALL_DIR\"\\n[ -s \"\$NVM_DIR/nvm.sh\" ] && \\. \"\$NVM_DIR/nvm.sh\"  # This loads nvm\\n"
 
   # shellcheck disable=SC2016
   COMPLETION_STR='[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion\n'
@@ -360,14 +360,14 @@ nvm_do_install() {
 
   if [ -z "${NVM_PROFILE-}" ] ; then
     local TRIED_PROFILE
-    if [ -n "${PROFILE}" ]; then
-      TRIED_PROFILE="${NVM_PROFILE} (as defined in \$PROFILE), "
+    if [ -n "$PROFILE" ]; then
+      TRIED_PROFILE="$NVM_PROFILE (as defined in \$PROFILE), "
     fi
     echo "=> Profile not found. Tried ${TRIED_PROFILE-}~/.bashrc, ~/.bash_profile, ~/.zshrc, and ~/.profile."
     echo "=> Create one of them and run this script again"
     echo "   OR"
     echo "=> Append the following lines to the correct file yourself:"
-    command printf "${SOURCE_STR}"
+    command printf "$SOURCE_STR"
     echo
   else
     if nvm_profile_is_bash_or_zsh "${NVM_PROFILE-}"; then
@@ -375,21 +375,21 @@ nvm_do_install() {
     fi
     if ! command grep -qc '/nvm.sh' "$NVM_PROFILE"; then
       echo "=> Appending nvm source string to $NVM_PROFILE"
-      command printf "${SOURCE_STR}" >> "$NVM_PROFILE"
+      command printf "$SOURCE_STR" >> "$NVM_PROFILE"
     else
-      echo "=> nvm source string already in ${NVM_PROFILE}"
+      echo "=> nvm source string already in $NVM_PROFILE"
     fi
     # shellcheck disable=SC2016
-    if ${BASH_OR_ZSH} && ! command grep -qc '$NVM_DIR/bash_completion' "$NVM_PROFILE"; then
+    if "$BASH_OR_ZSH" && ! command grep -qc '$NVM_DIR/bash_completion' "$NVM_PROFILE"; then
       echo "=> Appending bash_completion source string to $NVM_PROFILE"
       command printf "$COMPLETION_STR" >> "$NVM_PROFILE"
     else
-      echo "=> bash_completion source string already in ${NVM_PROFILE}"
+      echo "=> bash_completion source string already in $NVM_PROFILE"
     fi
   fi
-  if ${BASH_OR_ZSH} && [ -z "${NVM_PROFILE-}" ] ; then
+  if "$BASH_OR_ZSH" && [ -z "${NVM_PROFILE-}" ] ; then
     echo "=> Please also append the following lines to the if you are using bash/zsh shell:"
-    command printf "${COMPLETION_STR}"
+    command printf "$COMPLETION_STR"
   fi
 
   # Source nvm
@@ -403,9 +403,9 @@ nvm_do_install() {
   nvm_reset
 
   echo "=> Close and reopen your terminal to start using nvm or run the following to use it now:"
-  command printf "${SOURCE_STR}"
-  if ${BASH_OR_ZSH} ; then
-    command printf "${COMPLETION_STR}"
+  command printf "$SOURCE_STR"
+  if "$BASH_OR_ZSH" ; then
+    command printf "$COMPLETION_STR"
   fi
 }
 
