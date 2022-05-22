@@ -3,6 +3,7 @@ title: HTTRACK
 template: docs
 excerpt: Httrack is a program that gets information from the Internet
 ---
+
 ## Basics
 
 Httrack is a program that gets information from the Internet, looks for pointers to other information, gets that information, and so forth. If you ask it to, and have enough disk space, it will try to make a copy of the whole Internet on your computer. While this may be the answer to Dilbert's boss when he asks to get a printout of the Internet for some legal document, for most of us, we want to get copies of just the right part of the Internet, and have them nicely organized for our use. This is where httrack does a great job. Here's a simple example:
@@ -185,16 +186,16 @@ Details: User-defined option N
   %[param] param variable in query string
 
 Shortcuts:
---mirror      
+--mirror
 
  For many of you, the manual is now complete, but for
 the rest of us, I will now go through this listing one item at a time
 with examples... I will be here a while...
 
 
- Syntax 
+ Syntax
 
-httrack  [-option] [+] [-] 
+httrack  [-option] [+] [-]
 
  The syntax of httrack is quite simple.  You specify
 the URLs you wish to start the process from (), any options you
@@ -237,121 +238,121 @@ site. Specifically, the defauls are:
  Here's what all of that means:
 
 
-  w *mirror web sites 
+  w *mirror web sites
 
  Automatically go though each URL you download and look
-for links to other URLs inside it, dowloading them as well. 
+for links to other URLs inside it, dowloading them as well.
 
- %f *use proxy for ftp (f0 don't use) 
+ %f *use proxy for ftp (f0 don't use)
 
  If there are and links to ftp URLs (URLs using the
 file transfer protocol (FTP) rather than the hypertext transfer protocol
 HTTP), go through an ftp proxy server to get them.
 
-  cN number of multiple connections (*c8) 
+  cN number of multiple connections (*c8)
 
  Use up to 8 simultaneous downloads so that at any
-gioven time, up to 8 URLs may be underway. 
+gioven time, up to 8 URLs may be underway.
 
-  RN number of retries, in case of timeout or non-fatal errors (*R1) 
+  RN number of retries, in case of timeout or non-fatal errors (*R1)
 
- Retry once if anything goes wrong with a download. 
+ Retry once if anything goes wrong with a download.
 
- %P *extended parsing, attempt to parse all links, even in unknown tags or Javascript (%P0 don't use) 
+ %P *extended parsing, attempt to parse all links, even in unknown tags or Javascript (%P0 don't use)
 
  Try to parse all URLs - even if they are in
 Javascript, Java, tags of unknown types, or anywhere else the program
-can find things. 
+can find things.
 
-  NN  name conversion type (0 *original structure, 1+: see below) 
+  NN  name conversion type (0 *original structure, 1+: see below)
 
  Use the original directory and file structure of the
 web site in your mirror image of the site.
 
-  LN  long names (L1 *long names / L0 8-3 conversion) 
+  LN  long names (L1 *long names / L0 8-3 conversion)
 
  If filenames do not follow the old DOS conventions,
 store them with the same names used on the web site.
 
-  K   keep original links (e.g. http://www.adr/link) (K0 *relative link) 
+  K   keep original links (e.g. http://www.adr/link) (K0 *relative link)
 
  Use relative rather than the original links so that
 URLs within this web site are adjusted to point to the files in the
 mirror.
 
-  o *generate output html file in case of error (404..) (o0 don't generate) 
+  o *generate output html file in case of error (404..) (o0 don't generate)
 
  IF there are errors in downloading, create a file that
 indicates that the URL was not found.  This makes browsing go a lot
 smoother.
 
-  X *purge old files after update (X0 keep delete) 
+  X *purge old files after update (X0 keep delete)
 
  Files not found on the web site that were previously
 there get deleted so that you have an accurate snapshot of the site as
-it is today - losing historical data. 
+it is today - losing historical data.
 
-  bN  accept cookies in cookies.txt (0=do not accept,* 1=accept) 
+  bN  accept cookies in cookies.txt (0=do not accept,* 1=accept)
 
  Accept all cokkies sent to you and return them if
 requested.  This is required for many sites to function.  These cookies
 are only kept relative to the specific site, so you don't have to worry
 about your browser retaining them.
 
-  u check document type if unknown (cgi,asp..) (u0 don't check, * u1 check but /, u2 check always) 
+  u check document type if unknown (cgi,asp..) (u0 don't check, * u1 check but /, u2 check always)
 
  This causes different document types to be analyzed
 differently.
 
-  j *parse Java Classes (j0 don't parse) 
+  j *parse Java Classes (j0 don't parse)
 
  This causes Java class files to be parsed looking for
 URLs.
 
-  sN  follow robots.txt and meta robots tags (0=never,1=sometimes,* 2=always) 
+  sN  follow robots.txt and meta robots tags (0=never,1=sometimes,* 2=always)
 
  This tells the program to follow the wishes of the
-site owner with respect to limiting where robots like this one search. 
+site owner with respect to limiting where robots like this one search.
 
-  C  create/use a cache for updates and retries (C0 no cache,C1 cache is prioritary,* C2 test update before) 
+  C  create/use a cache for updates and retries (C0 no cache,C1 cache is prioritary,* C2 test update before)
 
  If you are downloading a site you have a previous copy
 of, supplemental parameters are transmitted to the server, for example
 the 'If-Modified-Since:' field will be used to see if files are newer
 than the last copy you have.  If they are newer, they will be
-downloaded, otherwise, they will not. 
+downloaded, otherwise, they will not.
 
-  f *log file mode 
+  f *log file mode
 
  This retains a detailed log of any important events
-that took place. 
+that took place.
 
-  I *make an index (I0 don't make) 
+  I *make an index (I0 don't make)
 
  This makes a top-level index.html file so that if you
 image a set of sites, you can have one place to start reviewing the set
-of sites. 
+of sites.
 
-  pN priority mode: (* p3)  *3 save all files 
+  pN priority mode: (* p3)  *3 save all files
 
- This will cause all downloaded files to be saved. 
+ This will cause all downloaded files to be saved.
 
-  D  *can only go down into subdirs 
+  D  *can only go down into subdirs
 
  This prevents the program from going to higher level
 directories than the initial subdirectory, but allows lower-level
-subdirectories of the starting directory to be investigated. 
+subdirectories of the starting directory to be investigated.
 
-  a  *stay on the same address 
+  a  *stay on the same address
 
  This indicates that only the web site(s) where the
 search started are to be collected.  Other sites they point to are not
-to be imaged. 
+to be imaged.
 
-  --mirror       *make a mirror of site(s) (default) 
+  --mirror       *make a mirror of site(s) (default)
 
  This indicates that the program should try to make a
-copy of the site as well as it can. 
+copy of the site as well as it can.
 
 
 
@@ -377,7 +378,7 @@ www.all.net/bob/deeper/).
 
 
 
- A Thorough Going Over 
+ A Thorough Going Over
 
  Now that you have an introduction, it's time for a
 more though coverage.  This is where I go through each of the options
@@ -395,7 +396,7 @@ full of desired information, pages with lists of pointers to other
 sites, URLs of portions of a web site that are of interest (like Bob's
 home pages and subdirectories), and so forth.  Let us say that for today
 we are looking for the definitive colleciton of Internet information on
-shoe sizes from around the world. 
+shoe sizes from around the world.
 
 
 General Options
@@ -453,7 +454,7 @@ they are and store them in the current directory.  This is handy for a
 relatively small collection of information where organization isn't
 important.  With this option, the html files will not even be parsed to
 look for other URLs.  This option is useful for getting isolated files
-(e.g., httrack -g www.mydrivers.com/drivers/windrv32.exe). 
+(e.g., httrack -g www.mydrivers.com/drivers/windrv32.exe).
 
 
  If I start a collection process and it fails for ome
@@ -461,7 +462,7 @@ reason or another - such as me interrupting it because I am running out
 of disk space - or a network outage - then I can restart the process by
 using the -i option:
 
-httrack http://www.shoesizes.com -O /tmp/shoesizes -i 
+httrack http://www.shoesizes.com -O /tmp/shoesizes -i
 
  Finally, I can mirror all links in the first level
 pages of the URLs I specify.  A good example of where to use whis would
@@ -469,12 +470,12 @@ be in a case where I have a page that points to a lot of other sites and
 I want to get the initial information on those sites before mirroring
 them:
 
-httrack http://www.shoesizes.com/othersites.html -O /tmp/shoesizes -Y 
+httrack http://www.shoesizes.com/othersites.html -O /tmp/shoesizes -Y
 
 
 Proxy Options
 
- Many users use a proxy for many of their functions. 
+ Many users use a proxy for many of their functions.
 This is a key component in many firewalls, but it is also commonly used
 for anonymizing access and for exploiting higher speed communications at
 a remote server.
@@ -487,7 +488,7 @@ Proxy options:
  If you are using a standard proxy that doesn't require
 a user ID and password, you would do something like this:
 
-httrack http://www.shoesizes.com -O /tmp/shoesizes -P proxy.www.all.net:8080 
+httrack http://www.shoesizes.com -O /tmp/shoesizes -P proxy.www.all.net:8080
 
  In this case, we have asusmed that proxy.www.all.net is
 the host that does the proxy service and that it uses port 8080 for this
@@ -499,17 +500,17 @@ the same as the options used in your web browser.
 the proxy server.  This is common in corporate environments where only
 authorized users may access the Internet.
 
-httrack http://www.shoesizes.com -O /tmp/shoesizes -P fc:password@proxy.www.all.net:8080 
+httrack http://www.shoesizes.com -O /tmp/shoesizes -P fc:password@proxy.www.all.net:8080
 
  In this case, the user ID 'fc' and the password
 'password' are used on proxy.www.all.net port 8080.  Again, your network or
 firewall administrator can be most helpful in addressing the specifics
-for your environment. 
+for your environment.
 
  FTP normally operates through a proxy server, but for systems
 that have direct connections to the Internet, the following option should help:
 
-httrack ftp://ftp.shoesizes.com -O /tmp/shoesizes -%f0 
+httrack ftp://ftp.shoesizes.com -O /tmp/shoesizes -%f0
 
 
 Limits Options
@@ -530,7 +531,7 @@ Limits options:
  Setting limits provides the means by which you can
 avoid running out of disk space, CPU time, and so forth.  This may be
 particularly helpful for those who accidentally try to image the whole
-Internet. 
+Internet.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -r50
@@ -562,14 +563,14 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -m50000000,100000
 
  In this example, we have set a limit for html files
 as well - at 100,000 bytes.  HTML files are rarely larger than this,
-however, in some cases larger sizes may be needed. 
+however, in some cases larger sizes may be needed.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -M1000000000
 
 
  This option sets the maximum total size - in bytes -
-that can be uploaded from a site - in this case to 1 gigabyte. 
+that can be uploaded from a site - in this case to 1 gigabyte.
 Depending on how much disk space you have, such an option may be
 worthwhile.
 
@@ -580,7 +581,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -E3600
  This sets the maximum runtime for the download
 process.  Of course depending on the speed of your connection it may
 take longer or shorter runtimes to get the same job done, and network
-traffic is also a factor.  3600 seconds corresponds to one hour. 
+traffic is also a factor.  3600 seconds corresponds to one hour.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes A100000000
@@ -632,7 +633,7 @@ Flow control:
   HN host is abandonned if: 0=never, 1=timeout, 2=slow, 3=timeout or slow
 
 
- This example allows up to 128 simultaneous downloads. 
+ This example allows up to 128 simultaneous downloads.
 Note that this is likely to crash remote web servers - or at least fail
 to download many of the files - because of limits on the number of
 simultaneous sessions at many sites.  At busy times of day, you might
@@ -665,7 +666,7 @@ With 128 sockets: 0,93MB/s
  The timeout option causes downloads to time out after
 a non-response from a download attempt.  30 seconds is pretty reasonable
 for many sites.  You might want to increase the number of retries as
-well so that you try again and again after such timeouts. 
+well so that you try again and again after such timeouts.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -%c20
@@ -681,8 +682,8 @@ The default is 10 connections per second.
 httrack http://www.shoesizes.com -O /tmp/shoesizes -T30
 
 
- This example increases the number of retries to 5. 
-This means that if a download fails 5 times, httrack will give up on it. 
+ This example increases the number of retries to 5.
+This means that if a download fails 5 times, httrack will give up on it.
 For relatively unreliable sites - or for busy times of day, this number
 should be higher.
 
@@ -702,7 +703,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -J10
  These three options will cause the download from a
 host to be abandoned if (respectively) (0) never, (1) a timeout is
 reached, (2) slow traffic is detected, (or) (3) a timeout is reached OR
-slow traffic is detected. 
+slow traffic is detected.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -H0
@@ -714,7 +715,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -H3
  Of course these options can be combined to provide a
 powerful set of criteria for when to continue a download and when to
 give it up, how hard to push other sites.  and how much to stress
-infrastructures. 
+infrastructures.
 
 
 Link Following Options
@@ -730,7 +731,7 @@ Links options:
  The links options allow you to control what links are
 followed and what links are not as well as to provide long lists of
 links to investigate.  Any setting other than the default for this
-option forces the engine to use less reliable and more complex parsing. 
+option forces the engine to use less reliable and more complex parsing.
 'Dirty' parsing means that links like 'xsgfd syaze="foo.gif"' will cause
 HTTrack to download foo.gif, even if HTTrack don't know what the "xsgfd
 syaze=" tag actually means! This option is powerful because some links
@@ -738,7 +739,7 @@ might otherwise be missed, but it can cause errors in HTML or javascript.
 
  This will direct the program to NOT search Javascript
 for unknown tag fields (e.g., it will find things like
-foo.location="bar.html"; but will not find things like bar="foo.gif";). 
+foo.location="bar.html"; but will not find things like bar="foo.gif";).
 While I have never had a reason to use this, some users may decide that
 they want to be more conservative in their searches.  As a note,
 javascript imported files (.js) are not currently searched for URLs.
@@ -770,7 +771,7 @@ httrack http://www.shoesizes.com/bob/ -O /tmp/shoesizes -n
 
  This option 'tests' all links - even those forbidden
 (by the robot exclusion protocol) - by using the 'HEAD' protocol to test
-for the presence of a file. 
+for the presence of a file.
 
 
 httrack http://www.shoesizes.com/ -O /tmp/shoesizes -t
@@ -778,7 +779,7 @@ httrack http://www.shoesizes.com/ -O /tmp/shoesizes -t
 
  In this case, we use a file to list the URLs we wish
 to mirror.  This is particularly useful when we have a lot to do and
-don't want to tirelessly type in URLs on command line after command line. 
+don't want to tirelessly type in URLs on command line after command line.
 It's also useful - for example - if you update a set of mirrored sites
 evey evening.  You can set up a command like this to run automatically
 from your cron file.
@@ -788,7 +789,7 @@ httrack -%L linkfile -O /tmp/shoesizes
 
 
  This will update the mirror of your list of sites
-whenever it is run. 
+whenever it is run.
 
 
 httrack -%L linkfile -O /tmp/shoesizes -B --update
@@ -824,7 +825,7 @@ Build options:
 the mirror of a site by using these options.  For example, to retain the
 original structure, the default is used.  This only modifies the
 structure to the extent that select characters (e.g., ~, :, <, >, \, and
-@) are replaced by _ in all pathnames. 
+@) are replaced by _ in all pathnames.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -N0
@@ -890,7 +891,7 @@ Details: Option N
  Long names are normally used (the -L0
 option) but if you are imaging to a DOS file system or want
 accessibility from older versions of DOS and Windows, you can use the
--L1 option to generate these filename sizes. 
+-L1 option to generate these filename sizes.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -L1
@@ -901,7 +902,7 @@ in files.  While this is less useful in being able to view a web site
 froim the mirrored copy, it is vitally important if you want an accurate
 copy of exactly what was on the web site in the first place.  In a
 forensic image, for example, you might want to use this option to
-prevent the program from modifying the data as it is collected. 
+prevent the program from modifying the data as it is collected.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -K
@@ -914,7 +915,7 @@ found.  This is useful for local mirrors not on the Internet or mirrors
 that are on the Internet but that are not supposed to lead users to
 external sites.  A really good use for this is that 'bugging' devices
 placed in web pages to track who is using them and from where will be
-deactivated byt his process. 
+deactivated byt his process.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -x
@@ -924,7 +925,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -x
 files to replace files that were not found even though there were URLs
 pointing to them.  It is useful for saving space as well as eliminating
 unnecessary files in operations where a working web site is not the
-desired result. 
+desired result.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -o0
@@ -999,7 +1000,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -b0
 
  Some documents have known extension types (e.g.,
 html), while others have unknown types (e.g., iuh87Zs) and others may
-have misleading types (e.g., an html file with a 'gif' file extension. 
+have misleading types (e.g., an html file with a 'gif' file extension.
 These options provide for (0) not checking file types, (1) checking all
 file types except directories, and (2) checking all file types including
 directories. Choose from these options:
@@ -1021,7 +1022,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -s2
 
  This follows the robots protocol and meta-tags EXCEPT
 in cases where the filters disagree with the robots protocols or
-meta-tags. 
+meta-tags.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -s1
@@ -1033,7 +1034,7 @@ danger of this includes the fact that automated programs - like games or
 search engines may generate an unlimited number of nearly identical or
 identical outputs that will put us in an infinite loop collecting
 useless data under different names.  The benefit is that we will get all
-the data there is to get. 
+the data there is to get.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -s0
@@ -1068,7 +1069,7 @@ broken), there are three cases:
  1- The connection has been closed by the server, and we
 have received all data (we have received the number of bytes incicated
 by the server).  This is fine because we have successfully received the
-file. 
+file.
 
  2- The connection has been closed by the server, BUT
 the filesize received is different from the server's headers: the
@@ -1101,11 +1102,11 @@ data in several cases.
 httrack http://www.shoesizes.com -O /tmp/shoesizes -%A asp=text/html
 
 
- The most important new feature for some people, maybe. 
+ The most important new feature for some people, maybe.
 This option tells the engine that if a link is en countered, with a
 specific type (.cgi, .asp, or .php3 for example), it MUST assume that
 this link has always the same MIME type, for example the "text/html"
-MIME type.  This is VERY important to speed up many mirrors. 
+MIME type.  This is VERY important to speed up many mirrors.
 
  We have done tests on big HTML files (approx.  150 MB,
 150,000,000 bytes!) with 100,000 links inside.  Such files are being
@@ -1127,7 +1128,7 @@ two lines are identical:
 --assume asp=text/html,php3=text/html,cgi=image/gif
 
 
- The MIME type is the standard well known "MIME" type. 
+ The MIME type is the standard well known "MIME" type.
 Here are the most important ones:
 text/html       Html files, parsed by HTTrack
 image/gif       GIF files
@@ -1159,7 +1160,7 @@ when the link will be reached:
 
  In this case, HTTrack won't check the type, because it
 has learned that "foo" is a known type, or MIME type
-"application/foobar".  Therefore, it will let untouched the "foo" type. 
+"application/foobar".  Therefore, it will let untouched the "foo" type.
 
  A last remark, you can use complex definitions like:
 
@@ -1197,7 +1198,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -F "Mozilla 1.0, Sparc, Solar
 
  On the other side, we may wish to mark each page
 collected with footer information so that we can see from the page where
-it was collected from, when, and under what name it was stored. 
+it was collected from, when, and under what name it was stored.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -%F "Mirrored [from host %s [file %s [at %s]]]"
@@ -1206,7 +1207,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -%F "Mirrored [from host %s [
  This makes a modified copy of the file that may be
 useful in future identification.  While it is not 'pure' in some senses,
 it may (or may not) be considered siilar to a camera that adds time and
-date stamps from a legal perspective. 
+date stamps from a legal perspective.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -%l "fr, en, jp, *"
@@ -1243,7 +1244,7 @@ Log, index, cache
 make the process far more efficient than it would otherwise be.  You can
 choose to (0) go without a cache, (1) do not check remotly if the file
 has been updated or not, just load the cache content, or (2) see what
-works best and use it (the default).  Here is the no cache example. 
+works best and use it (the default).  Here is the no cache example.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -C0
@@ -1268,7 +1269,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -update '%n'
 
 
  If no log is desired, the following option should be
-added. 
+added.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -Q
@@ -1276,7 +1277,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -Q
 
  If no questions should be asked of the user (in a mode
 that would otherwise ask questions), the following option should be
-added. 
+added.
 
 
 
@@ -1291,7 +1292,7 @@ httrack http://www.shoesizes.com -O /tmp/shoesizes -z -Z -v
 
 
  Multiple log files can be created, but by default,
-this option is used to put all logs into a single log file. 
+this option is used to put all logs into a single log file.
 
 
 httrack http://www.shoesizes.com -O /tmp/shoesizes -f2
@@ -1403,7 +1404,7 @@ for example - (1) only html files, (2) only non-html files, (3) all
 files, and (7) get all html files first, then get other files.  This
 last option provides a fast way to get the web pointers so that, for
 example, a time limited collection process will tend to get the most
-important content first. 
+important content first.
 
  In many cases, we only want the files froma given
 directory.  In this case, we specify this option:
@@ -1415,7 +1416,7 @@ httrack http://www.shoesizes.com/bob/ -O /tmp/shoesizes -S
  This option allows the mirror to go only into
 subdirectories of the initial directory on the remote host.  You might
 want to combine it with the  -n  option to get all
-non-html files linked from the pages you find. 
+non-html files linked from the pages you find.
 
 
 httrack http://www.shoesizes.com/bob/ -O /tmp/shoesizes -D -n
@@ -1446,7 +1447,7 @@ httrack http://www.shoesizes.com/bob/ -O /tmp/shoesizes -a
 
  If you want to restrict yourself only to the same
 principal domain (e.g., include sites liks ftp.shoesizes.com), you would
-use this option. 
+use this option.
 
 
 httrack http://www.shoesizes.com/bob/ -O /tmp/shoesizes -d
@@ -1668,12 +1669,12 @@ verification that a link from a file is not pointing to a non-existent
 page.
 
  The spider option does a site test automatically and
-returns errors for broken links. 
+returns errors for broken links.
 
  The skeleton option makes a mirror of html files only.
 
  The update option updates a site to match a remote
-mirror. 
+mirror.
 
  The continue option continues a previously terminated
 mirroring activity. This is useful for all sorts of mirror failures.
@@ -1698,18 +1699,18 @@ continue the mirror. For example,
  The clean option erases cache and log files.
 
  The http10 option forces http/1.0 requests (the same
-as -%h). 
+as -%h).
 
 
 
- Filters 
+ Filters
 
  Filters are normally placed at the end of the command
 line, but can be intermixed with other command line options if desired,
 except that if they are placed between (for example) the '-O' and the
 pathname, your results may be different than you might otherwise
 predict.  There are two sorts of filters, filters that indicate what to
-include (+) and filters that indicate what to exclude (-). 
+include (+) and filters that indicate what to exclude (-).
 
  Starting with the initially specified URLs, the
 default operation mode is to mirror starting from these URLs downward
@@ -1721,7 +1722,7 @@ prevents HTTrack from mirroring the whole site.  If you may want to
 download files are in other parts of the site or pf particular types -
 or to not download files in a particular part of the site or of a
 particular type, you can use filters to specify more precisely what to
-collect and what not to collect. 
+collect and what not to collect.
 
  The syntax for filters is similar to Unix regular
 expressions.  A simple filter can be made by using characters from the
@@ -1741,55 +1742,55 @@ while:
 '-*jpg'
 
 
- would not get any files ending in the jpg extension. 
+ would not get any files ending in the jpg extension.
 You can add more filter lines to restrict or expand the scope as
 desired.  The last rule is checked first, and so on - so that the rules
 are in reverse priority order.  Here's an example:
 
-    
-    
+
+
     +*.gif -image*.gif
-    
+
     Will accept all gif files BUT image1.gif,imageblue.gif,imagery.gif and so on
-    
-    
+
+
     -image*.gif +*.gif
-    
+
     Will accept all gif files, because the second pattern is prioritary (because it is defined AFTER the first one)
-    
-    
+
+
 
  The full syntax for filters follows:
 
-    
-      
+
+
         *
         any characters (the most commonly used)
-      
-      
+
+
         *[file] or *[name]
         any filename or name, e.g. not /,? and ; characters
-      
-      
+
+
         *[path]
         any path (and filename), e.g. not ? and ; characters
-      
-      
+
+
         *[a,z,e,r,t,y]
         any letters among a,z,e,r,t,y
-      
-      
+
+
         *[a-z]
         any letters
-      
-      
+
+
         *[0-9,a,z,e,r,t,y]
         any characters among 0..9 and a,z,e,r,t,y
-      
-      
+
+
         *[]
         no characters must be present after
-      
+
 
   *[< NN]
  size less than NN Kbytes
@@ -1802,56 +1803,56 @@ are in reverse priority order.  Here's an example:
   *[< NN > PP]
  size less than NN Kbytes and more than PP Kbytes
 
-    
+
 
 
  Here are some examples of filters: (that can be
 generated automatically using the interface)
 
-    
-      
-        -www.all.net* 
+
+
+        -www.all.net*
         This will refuse/accept this web site (all links located in it will be rejected)
-      
-      
+
+
         +*.com/*
         This will accept all links that contains .com in them
-      
-      
-        -*cgi-bin* 
+
+
+        -*cgi-bin*
         This will refuse all links that contains cgi-bin in them
-      
-      
-        +*.com/*[path].zip 
+
+
+        +*.com/*[path].zip
         This will accept all zip files in .com addresses
-      
-      
+
+
         -*someweb*/*.tar*
         This will refuse all tar (or tar.gz etc.) files in hosts containing someweb
-      
-      
+
+
         +*/*somepage*
         This will accept all links containing somepage (but not in the address)
-      
-      
+
+
         -*.html
-        This will refuse all html files from anywhere in the world. 
-      
-      
+        This will refuse all html files from anywhere in the world.
+
+
         +*.html*[]
         Accept *.html, but the link must not have any supplemental characters
         at the end(e.g., links with parameters, like www.all.net/index.html?page=10
 will not match this filter)
-      
+
 
   -*.gif*[> 5] -*.zip +*.zip*[< 10]
- refuse all gif files smaller than 5KB, exlude all zip files, EXCEPT zip files smaller than 10KB 
-
-    
+ refuse all gif files smaller than 5KB, exlude all zip files, EXCEPT zip files smaller than 10KB
 
 
 
- User Authentication Protocols 
+
+
+ User Authentication Protocols
 
  Smoe servers require user ID and password information
 in order to gain access.  In this example, the user ID smith with
@@ -1868,7 +1869,7 @@ capability is being provided through th URL capture features
 
 
 
- .httrackrc 
+ .httrackrc
 
  A file called '.httrackrc' can be placed in the
 current directory, or if not found there, in the home directory, to
@@ -1957,7 +1958,7 @@ added by the .httrackrc
 
 
 
- Release Notes 
+ Release Notes
 
  Some things change between releases.  Here are some
 recent changes in httrack that may affect some of these options:
@@ -1995,7 +1996,7 @@ collision forlarge numbers of files.
 
 
 
- Some More Examples 
+ Some More Examples
 
  Here are some examples of special purpose httrack
 command lines that might be useful for your situation.
@@ -2011,7 +2012,7 @@ files, ignores site restrictions for robots, logs as much as it can,
 stays in the principal domain, places debugging headers in the log file,
 
 
-httrack "www.website.com/" -O "/tmp/www.website.com" -R5H0Ko0s0zZd %H -V "md5 \$0" "+*.website.com/*" 
+httrack "www.website.com/" -O "/tmp/www.website.com" -R5H0Ko0s0zZd %H -V "md5 \$0" "+*.website.com/*"
 
 
  Here's an example of a site where I pulled a set of
@@ -2049,52 +2050,52 @@ httrack "http://www.somesite.com/~library/thing/thingmain.htm" -O /tmp/thing -R5
 
 General questions:
 
-Q:  The install is not working on NT without administrator rights! 
+Q:  The install is not working on NT without administrator rights!
 
  A: That's right.  You can, however, install WinHTTrack
 on your own machine, and then copy your WinHTTrack folder from
 your Program Files folder to another machine, in a temporary
 directory (e.g.  C:\temp\)
 
-Q:  Where can I find French/other languages documentation? 
+Q:  Where can I find French/other languages documentation?
 
  A: Windows interface is available on several
 languages, but not yet the documentation!
 
-Q:  Is HTTrack working on NT/2000? 
+Q:  Is HTTrack working on NT/2000?
 
  A: Yes, it should
 
-Q:  What's the difference between HTTrack and WinHTTrack? 
+Q:  What's the difference between HTTrack and WinHTTrack?
 
  A: WinHTTrack is the Windows release of HTTrack (with
 a graphic shell)
 
-Q: Is HTTrack Mac compatible? 
+Q: Is HTTrack Mac compatible?
 
  A: No, because of a lack of time.  But sources are
 available
 
-Q:  Can HTTrack be compiled on all Un*x? 
+Q:  Can HTTrack be compiled on all Un*x?
 
  A: It should.  The Makefile may be modified in
 some cases, however
 
 Q: I use HTTrack for professional purpose.  What
-about restrictions/license fee? 
+about restrictions/license fee?
 
  A: There is no restrictions using HTTrack for
 professional purpose, except if you want to sell a product including
 HTTrack components (parts of the source, or any other component).  See
 the license.txt file for more informations
 
-Q: Is a DLL/library version available? 
+Q: Is a DLL/library version available?
 
  A: Not yet.  But, again, sources are available (see
 license.txt for distribution infos)
 
 Q: Is there a X11/KDE shell available for Linux and
-Un*x? 
+Un*x?
 
  A: No.  Unfortunately, we do not have enough time for
 that - if you want to help us, please write one!
@@ -2103,7 +2104,7 @@ that - if you want to help us, please write one!
 
 Q: Only the first page is caught.  What's wrong?
  A: First, check the hts-err.txt error log file - this can
-give you precious informations. 
+give you precious informations.
 
  The problem can be a website that redirects you to
 another site (for example, www.all.net to public.www.all.net) : in
@@ -2113,7 +2114,7 @@ this case, use filters to accept this site
 (link depth too low, for example)
 
 Q: With WinHTTrack, sometimes the minimize in system
-tray causes a crash! 
+tray causes a crash!
 
  A: This bug sometimes appears in the shell on some
 systems.  If you encounter this problem, avoid minimizing the window!
@@ -2139,22 +2140,22 @@ file - this can give you precious informations
 (form based authentication, for example)
 
 Q: When I use HTTrack, nothing is mirrored (no
-files) What's happening? 
+files) What's happening?
 
- A: First, be sure that the URL typed is correct. 
+ A: First, be sure that the URL typed is correct.
 Then, check if you need to use a proxy server (see proxy options in
 WinHTTrack or the -P proxy:port option in the command line
-program).  The site you want to mirror may only accept certain browsers. 
+program).  The site you want to mirror may only accept certain browsers.
 You can change your "browser identity" with the Browser ID
 option in the OPTION box.  Finally, you can have a look at the
-hts-err.txt (and hts-log.txt) file to see what happened. 
+hts-err.txt (and hts-log.txt) file to see what happened.
 
-Q: There are missing files! What's happening? 
+Q: There are missing files! What's happening?
 
  A: You may want to capture files that are in a
 different folder, or in another web site.  In this case, HTTrack does not
 capture them automatically, you have to ask it to do.  For that, use the
-filters. 
+filters.
 
  Example: You are downloading
 http://www.all.net/foo/ and can not get .jpg images located in
@@ -2165,8 +2166,8 @@ accept all .jpg files from this location
 
  You can, also, accept all files from the /bar folder
 with +www.all.net/bar/*, or only html files with
-+www.all.net/bar/*.html and so on.. 
- 
++www.all.net/bar/*.html and so on..
+
 Q: I'm downloading too many files! What can I do?
 
 
@@ -2177,21 +2178,21 @@ specific filters, like +www.all.net/specificfolder/*.html
 
  If you still have too many files, use filters to avoid
 somes files.  For example, if you have too many files from www.all.net/big/,
-use -www.all.net/big/* to avoid all files from this folder. 
- 
-Q: File types are sometimes changed! Why? 
+use -www.all.net/big/* to avoid all files from this folder.
+
+Q: File types are sometimes changed! Why?
 
  A: By default, HTTrack tries to know the type of
 remote files.  This is useful when links like
 http://www.all.net/foo.cgi?id=1 can be either HTML pages, images or
 anything else.  Locally, foo.cgi will not be recognized as an html page,
 or as an image, by your browser.  HTTrack has to rename the file as
-foo.html or foo.gif so that it can be viewed. 
+foo.html or foo.gif so that it can be viewed.
 
  Sometimes, however, some data files are seen by the
 remote server as html files, or images : in this case HTTrack is being
 fooled..  and rename the file.  You can avoid this by disabling the type
-checking in the option panel. 
+checking in the option panel.
 
 Q: I can not access to several pages (access
 forbidden, or redirect to another location), but I can with my browser,
@@ -2202,7 +2203,7 @@ what's going on?
 once you have logged in certain sites so that you only have to log-in
 once.  For example, after having entered your username in a website, you
 can view pages and articles, and the next time you will go to this site,
-you will not have to re-enter your username/password. 
+you will not have to re-enter your username/password.
 
  To "merge" your personnal cookies to an HTTrack
 project, just copy the cookies.txt file from your Netscape folder (or
@@ -2210,14 +2211,14 @@ the cookies located into the Temporary Internet Files folder for IE)
 into your project folder (or even the HTTrack folder)
 
 Q: Some pages can't be seen, or are displayed
-with errors! 
+with errors!
 
  A: Some pages may include javascript or java files
 that are not recognized.  For example, generated filenames.  There may
 be transfer problems, too (broken pipe, etc.).  But most mirrors do
-work.  We still are working to improve the mirror quality of HTTrack. 
+work.  We still are working to improve the mirror quality of HTTrack.
 
-Q: Some Java applets do not work properly! 
+Q: Some Java applets do not work properly!
 
  A: Java applets may not work in some cases, for
 example if HTTrack failed to detect all included classes or files called
@@ -2228,16 +2229,16 @@ structure when you want to get Java classes)
 
  If there is no way to make some classes work properly,
 you can exclude them with the filters.  They will be available, but only
-online. 
- 
+online.
+
 Q: HTTrack is being idle for a long time without
-transfering.  What's happening? 
+transfering.  What's happening?
 
  A: Maybe you try to reach some very slow sites.  Try a
 lower TimeOut value (see options, or -Txx option in the command
 line program).  Note that you will abandon the entire site (except if
 the option is unchecked) if a timeout happen You can, with the Shell
-version, skip some slow files, too. 
+version, skip some slow files, too.
 
 Q: I want to update a site, but it's taking too much
 time! What's happening?
@@ -2249,15 +2250,15 @@ local site structure, it can takes some time.  Besides, some servers are
 not very smart and always consider that they get newer files, forcing
 HTTrack to reload them, even if no changes have been made!
 
-Q: I am behind a firewall.  What can I do? 
+Q: I am behind a firewall.  What can I do?
 
  A: You need to use a proxy, too.  Ask your
 administrator to know the proxy server's name/port.  Then, use the proxy
 field in HTTrack or use the -P proxy:port option in the command
-line program. 
+line program.
 
 Q: HTTrack has crashed during a mirror, what's
-happening? 
+happening?
 
  A: We are trying to avoid bugs and problems so that
 the program can be as reliable as possible.  But we can not be
@@ -2265,10 +2266,10 @@ infallible.  If you occurs a bug, please check if you have the latest
 release of HTTrack, and send us an email with a detailed description of
 your problem (OS type, addresses concerned, crash description, and
 everything you deem to be necessary).  This may help the other users
-too. 
+too.
 
 Q: I want to update a mirrored project, but HTTrack
-is retransfering all pages.  What's going on? 
+is retransfering all pages.  What's going on?
 
  A: First, HTTrack always rescan all local pages to
 reconstitute the website structure, and it can take some time.  Then, it
@@ -2277,54 +2278,54 @@ most sites, pages are not updated frequently, and the update process is
 fast.  But some sites have dynamically-generated pages that are
 considered as "newer" than the local ones..  even if there are
 identical! Unfortunately, there is no possibility to avoid this problem,
-which is strongly linked with the server abilities. 
+which is strongly linked with the server abilities.
 
-  Questions concerning a mirror: 
+  Questions concerning a mirror:
 
  Q: I want to mirror a Web site,
 but there are some files outside the domain, too.  How to retrieve them?
 
 
  A: If you just want to retrieve files that can be
-reached through links, just activate the 'get file near links' option. 
+reached through links, just activate the 'get file near links' option.
 But if you want to retrieve html pages too, you can both use wildcards
 or explicit addresses ; e.g.  add www.all.net/* to accept all
-files and pages from www.all.net. 
+files and pages from www.all.net.
 
 Q: I have forgotten some URLs of files during a long
-mirror..  Should I redo all? 
+mirror..  Should I redo all?
 
  A: No, if you have kept the 'cache' files (in
-hts-cache), cached files will not be retransfered. 
+hts-cache), cached files will not be retransfered.
 
 Q: I just want to retrieve all ZIP files or other
-files in a web site/in a page.  How do I do it? 
+files in a web site/in a page.  How do I do it?
 
  A: You can use different methods.  You can use the
 'get files near a link' option if files are in a foreign domain.  You
 can use, too, a filter adress: adding +*.zip in the URL list (or
 in the filter list) will accept all ZIP files, even if these files are
-outside the address. 
+outside the address.
 
  Example : httrack www.all.net/someaddress.html
 +*.zip will allow you to retrieve all zip files that are linked on
-the site. 
+the site.
 
 Q: There are ZIP files in a page, but I don't want
-to transfer them.  How do I do it? 
+to transfer them.  How do I do it?
 
  A: Just filter them: add -*.zip in the filter
-list. 
+list.
 
 Q: I don't want to load gif files..  but what may
-happen if I watch the page? 
+happen if I watch the page?
 
  A: If you have filtered gif files (-*.gif),
 links to gif files will be rebuild so that your browser can find them on
-the server. 
+the server.
 
 Q: I get all types of files on a web site, but I
-didn't select them on filters! 
+didn't select them on filters!
 
  A: By default, HTTrack retrieves all types of files on
 authorized links.  To avoid that, define filters like
@@ -2335,17 +2336,17 @@ authorized links.  To avoid that, define filters like
  Example: httrack www.all.net/index.html -*
 +www.all.net/*.htm* +www.all.net/*.gif +www.all.net/*.jpg
 
-Q: When I use filters, I get too many files! 
+Q: When I use filters, I get too many files!
 
  A: You are using too large a filter, for example
 *.html will get ALL html files identified.  If you want to get
 all files on an address, use www.<address>/*.html.  There
-are lots of possibilities using filters. 
+are lots of possibilities using filters.
 
  Example:httrack www.all.net +*.www.all.net/*.htm*
 
 Q: When I use filters, I can't access another
-domain, but I have filtered it! 
+domain, but I have filtered it!
 
  A: You may have done a mistake declaring filters, for
 example +www.all.net/* -*all*  will not work, because
@@ -2353,7 +2354,7 @@ example +www.all.net/* -*all*  will not work, because
 +www.all.net)
 
 Q: Must I add a  '+' or '-' in the filter list
-when I want to use filters? 
+when I want to use filters?
 
  A: YES.  '+' is for accepting links and '-' to avoid
 them.  If you forget it, HTTrack will consider that you want to accept a
@@ -2368,41 +2369,41 @@ Q: I want to find file(s) in a web-site.  How do I do it?
 -* in the filter list) and accept only html files and the file(s)
 you want to retrieve (BUT do not forget to add
 +<website>*.html in the filter list, or pages will not be
-scanned! Add the name of files you want with a */ before ; i.e. 
+scanned! Add the name of files you want with a */ before ; i.e.
 if you want to retrieve file.zip, add */file.zip)
 
  Example:httrack www.all.net +www.all.net/*.htm*
 +thefileiwant.zip
 
 Q: I want to download ftp files/ftp site.  How to
-do? 
+do?
 
  A: First, HTTrack is not the best tool to download
 many ftp files.  Its ftp engine is basic (even if reget are possible)
 and if your purpose is to download a complete site, use a specific
-client. 
+client.
 
  You can download ftp files just by typing the URL,
 such as ftp://ftp.www.all.net/pub/files/file010.zip and list ftp
-directories like ftp://ftp.www.all.net/pub/files/ . 
+directories like ftp://ftp.www.all.net/pub/files/ .
 
  Note: For the filters, use something like
 +ftp://ftp.www.all.net/*
 
 Q: How can I retrieve .asp or .cgi sources instead
-of .html result? 
+of .html result?
 
  A: You can't! For security reasons, web servers do not
-allow that. 
+allow that.
 
 Q: How can I remove these annoying <!--
-Mirrored from...  --> from html files? 
+Mirrored from...  --> from html files?
 
  A: Use the footer option (-&F, or see the WinHTTrack
 options)
 
 Q: Do I have to select between ascii/binary transfer
-mode? 
+mode?
 
  A: No, http files are always transfered as binary
 files.  Ftp files, too (even if ascii mode could be selected)
@@ -2413,30 +2414,30 @@ Q: Can HTTrack perform form-based authentication?
  A: Yes.  See the URL capture abilities (--catchurl for
 command-line release, or in the WinHTTrack interface)
 
-Q: Can I redirect downloads to tar/zip archive? 
+Q: Can I redirect downloads to tar/zip archive?
 
  A: Yes.  See the shell system command option (-V
 option for command-line release)
 
 Q: Can I use username/password authentication on a
-site? 
+site?
 
  A: Yes.  Use user:password@your_url (example:
 http://foo:bar@www.all.net/private/mybox.html)
 
 Q: Can I use username/password authentication for a
-proxy? 
+proxy?
 
  A: Yes.  Use user:password@your_proxy_name as your
 proxy name (example: smith:foo@proxy.mycorp.com)
 
 Q: Can HTTrack generates HP-UX or ISO9660 compatible
-files? 
+files?
 
  A: Yes.  See the build options (-N, or see the
 WinHTTrack options)
 
-Q: If there any SOCKS support? 
+Q: If there any SOCKS support?
 
  A: Not yet!
 
@@ -2447,7 +2448,7 @@ Q: What's this hts-cache directory? Can I remove it?
 directory is used by HTTrack for this purpose.  If you remove it,
 options and URLs will not be available for updating the site
 
-Q: Can I start a mirror from my bookmarks? 
+Q: Can I start a mirror from my bookmarks?
 
  A: Yes.  Drag&Drop your bookmark.html file to the
 WinHTTrack window (or use file://filename for command-line release) and
@@ -2455,7 +2456,7 @@ select bookmark mirroring (mirror all links in pages, -Y) or bookmark
 testing (--testlinks)
 
 Q: I am getting a "pipe broken" error and the mirror
-stops, what should I do? 
+stops, what should I do?
 
  A: Chances are this is a result of downloading too
 many pages at a time.  Remote servers may not allow or be able to handle
