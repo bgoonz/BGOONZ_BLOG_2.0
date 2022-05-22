@@ -1,10 +1,10 @@
 ---
-title: Archive
+title: Docs Archive
 excerpt: >-
     See some interesting Archive developed by the Web-Dev-Hubcommunity to help
     automate parts of your workflow.
 seo:
-    title: Archive
+    title: Docs Archive
     description: >-
         paste to markdown, excel table to markdown, excel to html, cloud storage,
         text manipulation, ternary converter, github html preview, form builder,
@@ -47,7 +47,14 @@ template: docs
 <br>
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 <br>
 <br>
@@ -87,7 +94,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -99,7 +113,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -112,7 +133,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -130,7 +158,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -141,7 +176,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -153,7 +195,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -165,7 +214,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -177,7 +233,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -189,7 +252,14 @@ template: docs
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" src="https://fourm-builder-gui.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 
 <h1> Border Builder </h1>
@@ -199,7 +269,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>
@@ -225,7 +302,14 @@ template: docs
 
 <br>
 <br>
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 <br>
 <br>
 <br>

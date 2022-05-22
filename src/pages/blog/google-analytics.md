@@ -2,103 +2,104 @@
 title: google-analytics
 template: post
 date: 2022-05-16T09:54:51.999Z
-image: images/blog/analytics.jpg
-thumb_image: images/blog/analytics.jpg
+image: blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
+thumb_image: blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/google.yaml
+    - src/data/categories/google.yaml
 tags:
-  - src/data/tags/cms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/event-handeling.md
+    - src/pages/blog/event-handeling.md
 cmseditable: true
 ---
+
 | **Page title and screen class**                         | **Views**       |          |
 | ------------------------------------------------------- | --------------- | -------- |
-| ***7 tips to become a better web developer***           | ***webdevhub*** | ***1***  |
-| ***Awesome NodeJS***                                    | ***webdevhub*** | ***1***  |
-| ***Callstack Visualizer***                              | ***webdevhub*** | ***1***  |
-| ***Cheat Sheets***                                      | ***1***         |          |
-| ***Clock***                                             | ***webdevhub*** | ***1***  |
-| ***Data Structures By Example***                        | ***1***         |          |
-| ***ExpressJS Apis***                                    | ***webdevhub*** | ***1***  |
-| ***FAQ***                                               | ***1***         |          |
-| ***Gatsby Plugins For This Sites Content Model***       | ***1***         |          |
-| ***Git Cheatsheet***                                    | ***1***         |          |
-| ***HTT{ Requests***                                     | ***webdevhub*** | ***1***  |
-| ***Jamstack***                                          | ***webdevhub*** | ***1***  |
-| ***JavaScript Programming Language***                   | ***1***         |          |
-| ***List Of Projects***                                  | ***1***         |          |
-| ***Map and Set***                                       | ***1***         |          |
-| ***Node APIs With Express***                            | ***1***         |          |
-| ***Palindrome Number***                                 | ***1***         |          |
-| ***PostgreSQL Setup***                                  | ***webdevhub*** | ***1***  |
-| ***README***                                            | ***webdevhub*** | ***1***  |
-| ***RECENT PROJECTS***                                   | ***webdevhub*** | ***1***  |
-| ***React***                                             | ***1***         |          |
-| ***React Interview Questions & Answers***               | ***1***         |          |
-| ***Sitemap-April***                                     | ***webdevhub*** | ***1***  |
-| ***Ubuntu***                                            | ***1***         |          |
-| ***Web Design***                                        | ***webdevhub*** | ***1***  |
-| ***npm***                                               | ***1***         |          |
-| ***Archive***                                           | ***2***         |          |
-| ***Developer Resources***                               | ***webdevhub*** | ***2***  |
-| ***Heroku Error Codes***                                | ***webdevhub*** | ***2***  |
-| ***Javascript Interview***                              | ***2***         |          |
-| ***Leetcode Practice***                                 | ***2***         |          |
-| ***NextJS***                                            | ***2***         |          |
-| ***Python Functions***                                  | ***2***         |          |
-| ***Queries and Mutations (Gatsby)***                    | ***webdevhub*** | ***2***  |
-| ***React Intro***                                       | ***2***         |          |
-| ***Regex Tricks***                                      | ***2***         |          |
-| ***Tips***                                              | ***webdevhub*** | ***2***  |
-| ***Data Structures Interview***                         | ***3***         |          |
-| ***Developer Community***                               | ***3***         |          |
-| ***Git and Github***                                    | ***3***         |          |
-| ***Netlify CMS***                                       | ***webdevhub*** | ***3***  |
-| ***Overflow***                                          | ***3***         |          |
-| ***React State***                                       | ***webdevhub*** | ***3***  |
-| ***readme***                                            | ***webdevhub*** | ***3***  |
-| ***using the DOM***                                     | ***webdevhub*** | ***3***  |
-| ***Archive***                                           | ***webdevhub*** | ***4***  |
-| ***Audio Projects***                                    | ***4***         |          |
-| ***Awesome Static Site Resources***                     | ***webdevhub*** | ***4***  |
-| ***Bookmarks***                                         | ***4***         |          |
-| ***General structured data guidelines***                | ***webdevhub*** | ***4***  |
-| ***Learn Css***                                         | ***webdevhub*** | ***4***  |
-| ***PSQl Cheat Sheet***                                  | ***webdevhub*** | ***4***  |
-| ***Platform Docs***                                     | ***4***         |          |
-| ***Python General Notes***                              | ***webdevhub*** | ***4***  |
-| ***Python Practice***                                   | ***4***         |          |
-| ***npx-create-react-app***                              | ***4***         |          |
-| ***python***                                            | ***4***         |          |
-| ***Blog Archive***                                      | ***5***         |          |
-| ***Contact!***                                          | ***webdevhub*** | ***5***  |
-| ***Interactive Examples***                              | ***5***         |          |
-| ***Netlify CMS Reference Sheet***                       | ***webdevhub*** | ***5***  |
-| ***Big-O Notation***                                    | ***6***         |          |
-| ***Job Hunt***                                          | ***6***         |          |
-| ***Projects***                                          | ***6***         |          |
-| ***Reference***                                         | ***webdevhub*** | ***6***  |
-| ***Manage Content***                                    | ***7***         |          |
-| ***Passing Arguments To A Callback In JS***             | ***webdevhub*** | ***7***  |
-| ***CSS***                                               | ***webdevhub*** | ***8***  |
-| ***Documentation***                                     | ***8***         |          |
-| ***Node vs Browser***                                   | ***8***         |          |
-| ***Sitemap***                                           | ***8***         |          |
-| ***Articles***                                          | ***webdevhub*** | ***9***  |
-| ***Showcase***                                          | ***9***         |          |
-| ***Tutorials***                                         | ***11***        |          |
-| ***lorem-ipsum***                                       | ***webdevhub*** | ***14*** |
-| ***How To Reinstall NPM and Node.js On Your System***   | ***webdevhub*** | ***15*** |
-| ***Dynamic Time Warping Algorithm Explained (Python)*** | ***webdevhub*** | ***16*** |
-| ***Job Board***                                         | ***webdevhub*** | ***16*** |
-| ***Data Structures***                                   | ***17***        |          |
-| ***About***                                             | ***18***        |          |
-| ***Tools***                                             | ***41***        |          |
-| ***Web Dev Hub***                                       | ***42***        |          |
-| ***Blog***                                              | ***43***        |          |
-| ***Content Manager***                                   | ***99***        |          |
-| ***Web-Dev-Hub***                                       | ***553***       |          |
+| **_7 tips to become a better web developer_**           | **_webdevhub_** | **_1_**  |
+| **_Awesome NodeJS_**                                    | **_webdevhub_** | **_1_**  |
+| **_Callstack Visualizer_**                              | **_webdevhub_** | **_1_**  |
+| **_Cheat Sheets_**                                      | **_1_**         |          |
+| **_Clock_**                                             | **_webdevhub_** | **_1_**  |
+| **_Data Structures By Example_**                        | **_1_**         |          |
+| **_ExpressJS Apis_**                                    | **_webdevhub_** | **_1_**  |
+| **_FAQ_**                                               | **_1_**         |          |
+| **_Gatsby Plugins For This Sites Content Model_**       | **_1_**         |          |
+| **_Git Cheatsheet_**                                    | **_1_**         |          |
+| **_HTT{ Requests_**                                     | **_webdevhub_** | **_1_**  |
+| **_Jamstack_**                                          | **_webdevhub_** | **_1_**  |
+| **_JavaScript Programming Language_**                   | **_1_**         |          |
+| **_List Of Projects_**                                  | **_1_**         |          |
+| **_Map and Set_**                                       | **_1_**         |          |
+| **_Node APIs With Express_**                            | **_1_**         |          |
+| **_Palindrome Number_**                                 | **_1_**         |          |
+| **_PostgreSQL Setup_**                                  | **_webdevhub_** | **_1_**  |
+| **_README_**                                            | **_webdevhub_** | **_1_**  |
+| **_RECENT PROJECTS_**                                   | **_webdevhub_** | **_1_**  |
+| **_React_**                                             | **_1_**         |          |
+| **_React Interview Questions & Answers_**               | **_1_**         |          |
+| **_Sitemap-April_**                                     | **_webdevhub_** | **_1_**  |
+| **_Ubuntu_**                                            | **_1_**         |          |
+| **_Web Design_**                                        | **_webdevhub_** | **_1_**  |
+| **_npm_**                                               | **_1_**         |          |
+| **_Archive_**                                           | **_2_**         |          |
+| **_Developer Resources_**                               | **_webdevhub_** | **_2_**  |
+| **_Heroku Error Codes_**                                | **_webdevhub_** | **_2_**  |
+| **_Javascript Interview_**                              | **_2_**         |          |
+| **_Leetcode Practice_**                                 | **_2_**         |          |
+| **_NextJS_**                                            | **_2_**         |          |
+| **_Python Functions_**                                  | **_2_**         |          |
+| **_Queries and Mutations (Gatsby)_**                    | **_webdevhub_** | **_2_**  |
+| **_React Intro_**                                       | **_2_**         |          |
+| **_Regex Tricks_**                                      | **_2_**         |          |
+| **_Tips_**                                              | **_webdevhub_** | **_2_**  |
+| **_Data Structures Interview_**                         | **_3_**         |          |
+| **_Developer Community_**                               | **_3_**         |          |
+| **_Git and Github_**                                    | **_3_**         |          |
+| **_Netlify CMS_**                                       | **_webdevhub_** | **_3_**  |
+| **_Overflow_**                                          | **_3_**         |          |
+| **_React State_**                                       | **_webdevhub_** | **_3_**  |
+| **_readme_**                                            | **_webdevhub_** | **_3_**  |
+| **_using the DOM_**                                     | **_webdevhub_** | **_3_**  |
+| **_Archive_**                                           | **_webdevhub_** | **_4_**  |
+| **_Audio Projects_**                                    | **_4_**         |          |
+| **_Awesome Static Site Resources_**                     | **_webdevhub_** | **_4_**  |
+| **_Bookmarks_**                                         | **_4_**         |          |
+| **_General structured data guidelines_**                | **_webdevhub_** | **_4_**  |
+| **_Learn Css_**                                         | **_webdevhub_** | **_4_**  |
+| **_PSQl Cheat Sheet_**                                  | **_webdevhub_** | **_4_**  |
+| **_Platform Docs_**                                     | **_4_**         |          |
+| **_Python General Notes_**                              | **_webdevhub_** | **_4_**  |
+| **_Python Practice_**                                   | **_4_**         |          |
+| **_npx-create-react-app_**                              | **_4_**         |          |
+| **_python_**                                            | **_4_**         |          |
+| **_Blog Archive_**                                      | **_5_**         |          |
+| **_Contact!_**                                          | **_webdevhub_** | **_5_**  |
+| **_Interactive Examples_**                              | **_5_**         |          |
+| **_Netlify CMS Reference Sheet_**                       | **_webdevhub_** | **_5_**  |
+| **_Big-O Notation_**                                    | **_6_**         |          |
+| **_Job Hunt_**                                          | **_6_**         |          |
+| **_Projects_**                                          | **_6_**         |          |
+| **_Reference_**                                         | **_webdevhub_** | **_6_**  |
+| **_Manage Content_**                                    | **_7_**         |          |
+| **_Passing Arguments To A Callback In JS_**             | **_webdevhub_** | **_7_**  |
+| **_CSS_**                                               | **_webdevhub_** | **_8_**  |
+| **_Documentation_**                                     | **_8_**         |          |
+| **_Node vs Browser_**                                   | **_8_**         |          |
+| **_Sitemap_**                                           | **_8_**         |          |
+| **_Articles_**                                          | **_webdevhub_** | **_9_**  |
+| **_Showcase_**                                          | **_9_**         |          |
+| **_Tutorials_**                                         | **_11_**        |          |
+| **_lorem-ipsum_**                                       | **_webdevhub_** | **_14_** |
+| **_How To Reinstall NPM and Node.js On Your System_**   | **_webdevhub_** | **_15_** |
+| **_Dynamic Time Warping Algorithm Explained (Python)_** | **_webdevhub_** | **_16_** |
+| **_Job Board_**                                         | **_webdevhub_** | **_16_** |
+| **_Data Structures_**                                   | **_17_**        |          |
+| **_About_**                                             | **_18_**        |          |
+| **_Tools_**                                             | **_41_**        |          |
+| **_Web Dev Hub_**                                       | **_42_**        |          |
+| **_Blog_**                                              | **_43_**        |          |
+| **_Content Manager_**                                   | **_99_**        |          |
+| **_Web-Dev-Hub_**                                       | **_553_**       |          |

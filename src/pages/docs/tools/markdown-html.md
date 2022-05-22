@@ -3,8 +3,8 @@ title: md and html
 weight: 1
 excerpt: Tools For Markdown & Html
 seo:
-    title: ''
-    description: ''
+    title: 'md and html'
+    description: 'md and html'
     robots: []
     extra: []
     type: stackbit_page_meta

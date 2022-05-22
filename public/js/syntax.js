@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 const langTagColor = [
     {
         lang: `javascript`,
@@ -19,84 +19,101 @@ const langTagColor = [
         lang: `env`,
         tag: `env`,
         color: `#ff89d3`
-    }, {
+    },
+    {
         lang: `python`,
         tag: `py`,
         color: `#61da84`
-    }, {
+    },
+    {
         lang: `py`,
         tag: `py`,
         color: `#61da84`
-    }, {
+    },
+    {
         lang: `graphql`,
         tag: `graphql`,
         color: `#e10098`
-    }, {
+    },
+    {
         lang: `gql`,
         tag: `graphql`,
         color: `#e10098`
-    }, {
+    },
+    {
         lang: `html`,
         tag: `html`,
         color: `#005a9c`
-    }, {
+    },
+    {
         lang: `css`,
         tag: `css`,
         color: `#ff9800`
-    }, {
+    },
+    {
         lang: `shell`,
         tag: `shell`,
         color: `white`
-    }, {
+    },
+    {
         lang: `sh`,
         tag: `sh`,
         color: `white`
-    }, {
+    },
+    {
         lang: `bash`,
         tag: `bash`,
         color: `white`
-    }, {
+    },
+    {
         lang: `yml`,
         tag: `yaml`,
         color: `linen`
-    }, {
+    },
+    {
         lang: `yaml`,
         tag: `yaml`,
         color: `linen`
-    }, {
+    },
+    {
         lang: `markdown`,
         tag: `md`,
         color: `#e6ffed`
-    }, {
+    },
+    {
         lang: `md`,
         tag: `md`,
         color: `#e6ffed`
-    }, {
+    },
+    {
         lang: `mdx`,
         tag: `mdx`,
         color: `#55d179`
-    }, {
+    },
+    {
         lang: `json`,
         tag: `json`,
         color: `#fff`
-    }, {
+    },
+    {
         lang: `diff`,
         tag: `diff`,
         color: `#e8bd36`
-    }, {
+    },
+    {
         lang: `text`,
         tag: `text`,
         color: `gray`
     }
 ];
-const languageTags = langTagColor.map(({lang, tag, color}) => `pre.grvsc-container[data-language="${lang}"]::before {
+const languageTags = langTagColor.map(
+    ({ lang, tag, color }) => `pre.grvsc-container[data-language="${lang}"]::before {
         content: '${tag}';
         background: ${color};
-      }`);
-export default createGlobalStyle `
-  ${
-    languageTags.join(`\n`)
-}
+      }`
+);
+export default createGlobalStyle`
+  ${languageTags.join(`\n`)}
   pre.grvsc-container {
     position: relative;
     background: #050431;
@@ -141,4 +158,3 @@ export default createGlobalStyle `
     font-size: 1.1em;
   }
 `;
-
