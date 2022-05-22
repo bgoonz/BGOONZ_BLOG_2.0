@@ -1,10 +1,10 @@
 ---
-title: Youtube
+title: Personal Interests
 weight: 0
-excerpt: youtube
+excerpt: Personal Interests
 seo:
-    title: ''
-    description: ''
+    title: 'Personal Interests'
+    description: 'Personal Interests'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -17,6 +17,6 @@ template: docs
 
 <iframe width="600" height="515" src="https://www.youtube-nocookie.com/embed/xGZSWvFess8" title="YouTube video player"  clipboard-write;  allowfullscreen></iframe><br>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"></iframe>
 
-<iframe
+
