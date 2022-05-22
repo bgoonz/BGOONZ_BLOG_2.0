@@ -2156,3 +2156,5 @@ Prism.languages.python = {
         '.' === e.content[0] && t.push('dotfile');
     }
 })));
+
+Prism.highlightAll();

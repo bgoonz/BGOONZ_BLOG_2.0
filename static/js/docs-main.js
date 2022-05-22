@@ -273,4 +273,4 @@ function anchorForId(id) {
 }
 
 // Syntax Highlighter
-// Prism.highlightAll();
+Prism.highlightAll();
