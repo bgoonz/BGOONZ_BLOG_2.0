@@ -1,19 +1,12 @@
 ---
 title: README
-
 subtitle: for this website
-
 seo:
-    title: ''
-
+    title: ''    
     description: ''
-
     robots: []
-
     extra: []
-
 template: page
-
 image: images/bgoonzblog20-a6a3bfc3.png
 ---
 
