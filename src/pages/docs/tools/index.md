@@ -50,9 +50,11 @@ template: docs
 <br>
 
 <br>
-<iframe   src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
-<iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
+<iframe sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;">
+</iframe>
 
 <br>
 
@@ -66,7 +68,8 @@ template: docs
 <br>
 <h1> HTML TO Markdown Converter  </h1>
 <br>
-<iframe   src="https://bgoonz.github.io/html-2-md-converter/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://bgoonz.github.io/html-2-md-converter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -83,7 +86,8 @@ template: docs
 <h1> PDF Tools   </h1>
 <br>
 
-<iframe src="https://pdf-tools-xi.vercel.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts"  src="https://pdf-tools-xi.vercel.app/" height="8000px" width="800px" style="" scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -107,37 +111,42 @@ template: docs
 <br>
 <h1>   Number Base Converter  </h1>
 <br>
-<iframe   src="https://number-base-converter-react.vercel.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://number-base-converter-react.vercel.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 <br>
   <h1>  Text Tools </h1>
 <br>
-<iframe   src="https://devtools42.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://devtools42.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 <br>
   <h1>  Other Tools </h1>
 <br>
-<iframe   src="https://bgoonz.github.io/more-tools-textool-template-format/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://bgoonz.github.io/more-tools-textool-template-format/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 <br>
 <h1>  Awesome Search </h1>
-<iframe   src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 <br>
 <br>
 <br>
 <h1>Paste excel to HTML</h1>
 <br>
-<iframe   src="https://pedantic-wing-adbf82.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://pedantic-wing-adbf82.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 <br>
 
 <h1>  Cloud Storage </h1>
 <br>
 
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:2px solid gold;">
+<iframe sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="275px" width="17%" style="zoom:0.69; align-self:center;display:auto;display: block;border:2px solid gold;">
 </iframe>
 
 <br>
@@ -151,14 +160,16 @@ template: docs
 
 <br>
 <br>
-<iframe   src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://resourcerepo2.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 <br>
 <br>
 <br>
 <h1> Text Tools     </h1>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -175,7 +186,8 @@ template: docs
 
 <h1> Ternary Converter   </h1>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts"  src="https://ternary42.netlify.app/" height="8000px" width="800px" style="" scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -193,7 +205,8 @@ template: docs
 <h1>  Github HTML Render from link </h1>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe sandbox="allow-scripts"  src="https://githtmlpreview.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -211,13 +224,15 @@ template: docs
 <h1> Form Builder GUI </h1>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://fourm-builder-gui.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <!-- <br>
 <h1> Border Builder </h1>
 <br>
 
-<iframe  src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="1000px" width="1200px"scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 
@@ -238,7 +253,8 @@ template: docs
 
 <h1>                </h1>
 <br>
-<iframe   src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" loading="lazy"  allowfullscreen="true"></iframe>
+<iframe   src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" loading="lazy"  allowfullscreen="true">
+</iframe>
 
 <br>
 <br>

@@ -27,7 +27,7 @@ template: docs
 
 # React
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21600362&authkey=AC6_5JbdGjSF4mU&em=2" height="800px" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen></iframe>
+<iframe sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21600362&authkey=AC6_5JbdGjSF4mU&em=2" height="800px" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen></iframe>
 
 # Examples
 
