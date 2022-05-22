@@ -15,12 +15,16 @@ template: docs
 <h1>  Python Resources</h1>
 <br>
 
-<iframe class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe><br>
 
 <br>
-<hr>
+
+<br>
+<br>
+<br>
 <br>
 
+<br>
 
 ## My Python Docs:
 
@@ -53,7 +57,7 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
+> _Python has a built in help function that let's you see a description of the source code without having to navigate to it… "-SickNasty … Autor Unknown"_
 
 ---
 
@@ -116,8 +120,8 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
--   <span id="03b4">_“//” : Integer Division._</span>
+-   <span id="8cf4">_"\*\*" : Double asterisk for exponent._</span>
+-   <span id="03b4">_"//" : Integer Division._</span>
 -   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
@@ -142,23 +146,23 @@ No Decimal Point
 
 **Use the** `len()` **function to get the length of a string.**
 
-    print(len(“Spaghetti”)) # => 9
+    print(len("Spaghetti")) # => 9
 
 ### **Python uses** `zero-based indexing`
 
 #### Python allows negative indexing (thank god!)
 
-    print(“Spaghetti”[-1]) # => i
+    print("Spaghetti"[-1]) # => i
 
-    print(“Spaghetti”[-4]) # => e
+    print("Spaghetti"[-4]) # => e
 
 -   <span id="7567">Python let's you use ranges</span>
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
-    print(“Spaghetti”[1:4]) # => pag
-    print(“Spaghetti”[4:-1]) # => hett
-    print(“Spaghetti”[4:4]) # => (empty string)
+    print("Spaghetti"[1:4]) # => pag
+    print("Spaghetti"[4:-1]) # => hett
+    print("Spaghetti"[4:4]) # => (empty string)
 
 -   <span id="1366">The end range is exclusive just like `slice` in JS.</span>
 
@@ -194,7 +198,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     '''.count('the '))                # => 4
 
 -   <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
--   <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
+-   <span id="ed0a">**You can also use "\*" to repeat strings or multiply strings.**</span>
 -   <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
 
 <!-- -->
@@ -203,14 +207,14 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
--   <span id="445b">_Shorthand way to use format function is:  
+-   <span id="445b">_Shorthand way to use format function is:
     _`print(f'Your name is {first_name} {last_name}')`</span>
 
 #### Some useful string methods.
 
 -   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>-   <span id="e95e">There are also many handy testing methods.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>- <span id="e95e">There are also many handy testing methods.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
 
@@ -245,8 +249,8 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
--   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
-    _`print(float("nan"))`</span>
+-   <span id="4605">`NaN` \_does not exist in Python, but you can 'create' it like so:
+-   \_`print(float("nan"))`</span>
 -   <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
 -   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
@@ -550,8 +554,8 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 #### Formatted Strings
 
-> Remember that in Python join() is called on a string with an array/list passed in as the argument.  
-> Python has a very powerful formatting engine.  
+> Remember that in Python join() is called on a string with an array/list passed in as the argument.
+> Python has a very powerful formatting engine.
 > format() is also applied directly to strings.
 
     shopping_list = ['bread','milk','eggs']
@@ -566,7 +570,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
     print('{:%Y-%m-%d %H:%M:%S}'.format(d))
-    '2020–07–04 12:15:58'
+    '2020-07-04 12:15:58'
 
 ### Percentage
 
@@ -591,16 +595,16 @@ You can think of this as roughly equivalent to the slice method called on a Java
     Programming Script : A set of code that runs in a linear fashion.
     The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.
 
-**Python can be used to display html, css, and JS.**  
+**Python can be used to display html, css, and JS.**
 _It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
 #### Sequence : The most basic data structure in Python where the index determines the order.
 
-> List  
-> Tuple  
-> Range  
+> List
+> Tuple
+> Range
 > Collections : Unordered data structures, hashable values.
 
 ---
@@ -647,8 +651,8 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 **Declared using one to three parameters**.
 
-> Start : opt. default 0, first \# in sequence.  
-> Stop : required next number past the last number in the sequence.  
+> Start : opt. default 0, first \# in sequence.
+> Stop : required next number past the last number in the sequence.
 > Step : opt. default 1, difference between each number in the sequence.
 
     range(5) # [0, 1, 2, 3, 4]
@@ -682,11 +686,11 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Common Uses:
 
-> Removing Duplicates  
-> Membership Testing  
+> Removing Duplicates
+> Membership Testing
 > Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
 
-**Standard Set is mutable, Python has a immutable version called frozenset.  
+**Standard Set is mutable, Python has a immutable version called frozenset.
 Sets created by putting comma seperated values inside braces:**
 
     school_bag = {'book','paper','pencil','pencil','book','book','book','eraser'}
@@ -721,7 +725,7 @@ Sets created by putting comma seperated values inside braces:**
 
 #### (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
 
-> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
 > Functions that analyze iterable
 
 **len(iterable) : returns the count of the number of items.**
@@ -730,7 +734,7 @@ Sets created by putting comma seperated values inside braces:**
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-_key optional function which converts an item to a value to be compared.  
+_key optional function which converts an item to a value to be compared.
 min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
@@ -743,7 +747,7 @@ _There is a faster way to concatenate an array of strings into one string, so do
 
 ### Working with dictionaries
 
-**dir(dictionary) : returns the list of keys in the dictionary.  
+**dir(dictionary) : returns the list of keys in the dictionary.
 Working with sets**
 
 **Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
@@ -857,7 +861,7 @@ _Prints Key: color Value: red_
 
 **Looping over string**
 
-    for c in “abcdefg”:
+    for c in "abcdefg":
     print(c)
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
@@ -873,14 +877,14 @@ _keyword args with default values_
     def example(arg_1, arg_2, *args, **kwargs):
     pass
 
-    def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
+    def example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):
     pass
 
 ---
 
 ### **Importing in Python**
 
-**Modules are similar to packages in Node.js**  
+**Modules are similar to packages in Node.js**
 Come in different types:
 
 Built-In,
@@ -895,10 +899,10 @@ Custom.
 
 ### **Terms**
 
-> module : Python code in a separate file.  
-> package : Path to a directory that contains modules.  
-> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.  
-> submodule : Another file in a module's folder.  
+> module : Python code in a separate file.
+> package : Path to a directory that contains modules.
+> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.
+> submodule : Another file in a module's folder.
 > function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
@@ -924,10 +928,10 @@ _Use multiple lines for clarity when importing._
 
 **format() was introduced with P3**
 
-**All strings in P3 are unicode and encoded.  
+**All strings in P3 are unicode and encoded.
 md5 was removed.**
 
-**ConfigParser was renamed to configparser  
+**ConfigParser was renamed to configparser
 sets were killed in favor of set() class.**
 
 #### **print was a statement in P2, but is a function in P3.**
@@ -945,8 +949,8 @@ sets were killed in favor of set() class.**
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Python Cheat Sheet:
 

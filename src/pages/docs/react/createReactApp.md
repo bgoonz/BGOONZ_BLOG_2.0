@@ -23,6 +23,7 @@ seo:
 template: docs
 ---
 
+
 ---
 
 ## description: takes soooo much time!
@@ -46,7 +47,6 @@ npx create-react-app my-app
 y-app
 npm start
 Creating a new React app in /mnt/c/MY-WEB-DEV/10-React-V3/05-installing-nodejs/my-app.
-
 
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...

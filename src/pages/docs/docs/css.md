@@ -13,7 +13,7 @@ template: docs
 
 # Learn CSS
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe><br>
 
 CSS Selectors
 
@@ -178,21 +178,21 @@ Last Read in the browser wins.
 
 -   <span id="d6fc">`font-family` : change the font.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" /></figure>-   <span id="daba">Remember that not all computers have the same fonts on them.</span>
--   <span id="0aa8">You can import web fonts via an api by using</span>
--   <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
--   <span id="d8ff">And then reference it in your font-family.</span>
--   <span id="ee9f">`font-size` : Changes the size of your font.</span>
--   <span id="782e">Keep in mind the two kind of units CSS uses:</span>
--   <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
--   <span id="2884">`Relative` : Em, Rem.</span>
--   <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span>
--   <span id="5a5d">Rem: Calulates relative to the parent element always.</span>
--   <span id="79b0">`font-style` : Used to set a font to italics.</span>
--   <span id="f464">`font-weight` : Used to make a font bold.</span>
--   <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
--   <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
--   <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" /></figure>- <span id="daba">Remember that not all computers have the same fonts on them.</span>
+- <span id="0aa8">You can import web fonts via an api by using</span>
+- <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
+- <span id="d8ff">And then reference it in your font-family.</span>
+- <span id="ee9f">`font-size` : Changes the size of your font.</span>
+- <span id="782e">Keep in mind the two kind of units CSS uses:</span>
+- <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
+- <span id="2884">`Relative` : Em, Rem.</span>
+- <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span>
+- <span id="5a5d">Rem: Calulates relative to the parent element always.</span>
+- <span id="79b0">`font-style` : Used to set a font to italics.</span>
+- <span id="f464">`font-weight` : Used to make a font bold.</span>
+- <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
+- <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
+- <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
 
 **Background-Images**
 
@@ -283,8 +283,8 @@ This bothered many programmers so they created the **border box** to include the
       top: 60px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
--   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>- <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
+- <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
 
 <!-- -->
 
@@ -298,7 +298,7 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*phWx-191VVQ5pRF9" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png" class="graf-image" /></figure>-   <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*phWx-191VVQ5pRF9" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png" class="graf-image" /></figure>- <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
 
 <!-- -->
 
@@ -311,7 +311,7 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" /></figure>-   <span id="528a">Example where the absolute element has it's bottom property modified.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" /></figure>- <span id="528a">Example where the absolute element has it's bottom property modified.</span>
 
 <!-- -->
 
@@ -323,7 +323,7 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" /></figure>-   <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" /></figure>- <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
 
 **Fixed Positioning**
 
@@ -353,7 +353,7 @@ This bothered many programmers so they created the **border box** to include the
 
 -   <span id="e23b">Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>-   <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>- <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
 
 <!-- -->
 
@@ -509,7 +509,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
       font-size: 36px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Z6AbWnbmbFfu-tSM" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif" class="graf-image" /></figure>-   <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Z6AbWnbmbFfu-tSM" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif" class="graf-image" /></figure>- <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
 
 <!-- -->
 
@@ -528,7 +528,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
       transform: rotate(180deg);
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" /></figure>-   <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" /></figure>- <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
 
 ---
 
@@ -584,7 +584,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/938871b4521a).

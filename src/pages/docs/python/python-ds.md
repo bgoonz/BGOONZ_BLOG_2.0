@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## Python Notes
 
 | <https://lambda-6.gitbook.io/python/> | This Gitbook As A Website |
@@ -587,7 +588,7 @@ def foo():
     secretThing()
 ```
 
-> Python has a built in help function that let's you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”
+> Python has a built in help function that let's you see a description of the source code without having to navigate to it… "-SickNasty … Autor Unknown"
 
 ## **Numbers**
 
@@ -650,8 +651,8 @@ print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   _“\*\*” : Double asterisk for exponent._
--   _“//” : Integer Division._
+-   _"\*\*" : Double asterisk for exponent._
+-   _"//" : Integer Division._
 -   **There are no spaces between math operations in Python.**
 -   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing `Math.floor()` in JS.**
 -   **There are no `++` and `-` in Python, the only shorthand operators are:**
@@ -673,7 +674,7 @@ the end of the string!''')
 **Use the `len()` function to get the length of a string.**
 
 ```text
-print(len(“Spaghetti”)) # => 9
+print(len("Spaghetti")) # => 9
 ```
 
 ## **Python uses `zero-based indexing`**
@@ -681,7 +682,7 @@ print(len(“Spaghetti”)) # => 9
 ### **Python allows negative indexing (thank god!)**
 
 ```text
-print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
+print("Spaghetti"[-1]) # => i print("Spaghetti"[-4]) # => e
 ```
 
 -   Python let's you use ranges
@@ -689,9 +690,9 @@ print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)_
 
 ```text
-print(“Spaghetti”[1:4]) # => pag
-print(“Spaghetti”[4:-1]) # => hett
-print(“Spaghetti”[4:4]) # => (empty string)
+print("Spaghetti"[1:4]) # => pag
+print("Spaghetti"[4:-1]) # => hett
+print("Spaghetti"[4:4]) # => (empty string)
 ```
 
 -   The end range is exclusive just like `slice` in JS.
@@ -726,7 +727,7 @@ postpone, and one which we intend to win, and the others, too.
 ```
 
 -   **You can use `+` to concatenate strings, just like in JS.**
--   **You can also use “\*” to repeat strings or multiply strings.**
+-   **You can also use "\*" to repeat strings or multiply strings.**
 -   **Use the `format()` function to use placeholders in a string to input values later on.**
 
 ```text
@@ -1051,7 +1052,7 @@ print('{:,}'.format(1234567890))
 ```text
 d = datetime.datetime(2020, 7, 4, 12, 15, 58)
 print('{:%Y-%m-%d %H:%M:%S}'.format(d))
-'2020–07–04 12:15:58'
+'2020-07-04 12:15:58'
 ```
 
 ## **Percentage**
@@ -1359,7 +1360,7 @@ _Prints Key: color Value: red_
 **Looping over string**
 
 ```text
-for c in “abcdefg”:
+for c in "abcdefg":
 print(c)
 ```
 
@@ -1375,7 +1376,7 @@ _keyword args with default values_
 
 ```text
 def example(arg_1, arg_2, *args, **kwargs):
-passdef example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
+passdef example2(arg_1, arg_2, *args, kw_1="shark", kw_2="blowfish", **kwargs):
 pass
 
 ```
