@@ -3,24 +3,23 @@ title: How to get the file extension
 weight: 0
 excerpt: How to get the file extension
 seo:
-    title: ''
-    description: 'How to get the file extension'
-    robots: []
-    extra: []
+  title: ""
+  description: "How to get the file extension"
+  robots: []
+  extra: []
 template: docs
 ---
-
 
 ### Question: How to get the file extension?
 
 ```js
-var file1 = '50.xsl';
-var file2 = '30.doc';
+var file1 = "50.xsl";
+var file2 = "30.doc";
 getFileExtension(file1); //returs xsl
 getFileExtension(file2); //returs doc
 
 function getFileExtension(filename) {
-    /*TODO*/
+  /*TODO*/
 }
 ```
 
@@ -28,12 +27,9 @@ function getFileExtension(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension1(filename) {
-    return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
+  return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
 ```
 
@@ -41,12 +37,9 @@ function getFileExtension1(filename) {
 
 ---
 
-
 ```js
-
-
 function getFileExtension2(filename) {
-    return filename.split('.').pop();
+  return filename.split(".").pop();
 }
 ```
 
@@ -56,26 +49,23 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 
 ---
 
-
 ```js
-
-
 function getFileExtension3(filename) {
-    return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
+  return filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2);
 }
 
-console.log(getFileExtension3('')); // ''
-console.log(getFileExtension3('filename')); // ''
-console.log(getFileExtension3('filename.txt')); // 'txt'
-console.log(getFileExtension3('.hiddenfile')); // ''
-console.log(getFileExtension3('filename.with.many.dots.ext')); // 'ext'
+console.log(getFileExtension3("")); // ''
+console.log(getFileExtension3("filename")); // ''
+console.log(getFileExtension3("filename.txt")); // 'txt'
+console.log(getFileExtension3(".hiddenfile")); // ''
+console.log(getFileExtension3("filename.with.many.dots.ext")); // 'ext'
 ```
 
 _How does it works?_
 
--   [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
--   The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
--   [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
+- [String.lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) method returns the last occurrence of the specified value (`'.'` in this case). Returns `-1` if the value is not found.
+- The return values of `lastIndexOf` for parameter `'filename'` and `'.hiddenfile'` are `-1` and `0` respectively. [Zero-fill right shift operator (>>>)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29) will transform `-1` to `4294967295` and `-2` to `4294967294`, here is one trick to insure the filename unchanged in those edge cases.
+- [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) extracts file extension from the index that was calculated above. If the index is more than the length of the filename, the result is `""`.
 
 ### Comparison
 

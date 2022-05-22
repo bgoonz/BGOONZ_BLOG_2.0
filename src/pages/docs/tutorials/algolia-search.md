@@ -3,14 +3,13 @@ title: Text Search
 weight: 0
 excerpt:
 seo:
-    title: 'Text Search'
-    description: 'Algolia Search is a powerful text search engine that makes it easy to find the right content in your website.'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: "Text Search"
+  description: "Algolia Search is a powerful text search engine that makes it easy to find the right content in your website."
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
-
 
 # Algolia Full Text Search
 
@@ -40,19 +39,19 @@ While the search-as-a-service market might not be as developed as some other mar
 
 ### > programmable-search-engine-by-google)Programmable Search Engine by Google
 
-![Programmable Search Engine by Google](./../../../../static/images/programmable-search-engine.png 'Programmable Search Engine by Google')
+![Programmable Search Engine by Google](./../../../../static/images/programmable-search-engine.png "Programmable Search Engine by Google")
 
 Google's [Programmable Search Engine](https://programmablesearchengine.google.com/) (previously known as Google Custom Search) is a Google solution for website search functionality. It offers a customizable search box for your website that shows relevant results powered by Google Search.
 
 Features, pros, and cons:
 
--   Easy setup and easy customization of both results output and search box and page design. You can choose if you want users to see only your website results or include other sites.
--   The free plan allows a lot of customization, but it also shows ads.
--   Supports JSON API for REST-based access, but this is a paid-only option.
+- Easy setup and easy customization of both results output and search box and page design. You can choose if you want users to see only your website results or include other sites.
+- The free plan allows a lot of customization, but it also shows ads.
+- Supports JSON API for REST-based access, but this is a paid-only option.
 
 ### > algolia)Algolia
 
-![Algolia](https://bejamas.io/static/159d30d346ce2aa0aea26090311d87e0/f101e/algolia.png 'Algolia')
+![Algolia](https://bejamas.io/static/159d30d346ce2aa0aea26090311d87e0/f101e/algolia.png "Algolia")
 
 [Algolia](https://www.algolia.com/) is one of the most popular search-as-a-service providers in the Jamstack world (and beyond) that helps you deliver what your customers search for every time.
 
@@ -60,17 +59,17 @@ Algolia offers a full suite of APIs to easily integrate tailored and fast search
 
 Features, pros, and cons:
 
--   Free plan for SMEs with analytics.
--   Extensive documentation and guides on top of fantastic customization options.
--   Active community and 24/7 support (for paid plans).
--   AI-powered search with personalization, rules, and merchandising.
--   You can't test your setup based on the hypothetical user's geolocation (when you build a search solution for the US audience while you are in Europe, for example).
+- Free plan for SMEs with analytics.
+- Extensive documentation and guides on top of fantastic customization options.
+- Active community and 24/7 support (for paid plans).
+- AI-powered search with personalization, rules, and merchandising.
+- You can't test your setup based on the hypothetical user's geolocation (when you build a search solution for the US audience while you are in Europe, for example).
 
 Our website search uses Algolia, just look at the 🔎 icon. We use [gatsby-plugin-Algolia](https://github.com/algolia/gatsby-plugin-algolia) to index our content during the build. On the frontend, we use _algoliasearch/lite_ and _react-instantsearch-dom_ which is Algolia react components that can be easily used with Gatsby.
 
 ### > elastic)Elastic
 
-![Elastic](https://bejamas.io/static/291a7e4ebb746994ba3227e5301bcfcb/f101e/elastic.png 'Elastic')
+![Elastic](https://bejamas.io/static/291a7e4ebb746994ba3227e5301bcfcb/f101e/elastic.png "Elastic")
 
 Even if you're only starting to explore the search service market, chances are you have heard of [Elastic](https://www.elastic.co/), a distributed, free and open search and analytics engine.
 
@@ -80,16 +79,16 @@ Elastic offers different plans depending on whether you choose managed or self-m
 
 Features, pros, and cons:
 
--   Wide variety of features + open-source option.
--   Comprehensive data analytics and application performance monitoring.
--   Large, active community and extensive documentation, guides, and training.
--   Elastic search doesn't support multi-language requests and responses.
--   Steep learning curve.
--   The level of support depends on the plan you have.
+- Wide variety of features + open-source option.
+- Comprehensive data analytics and application performance monitoring.
+- Large, active community and extensive documentation, guides, and training.
+- Elastic search doesn't support multi-language requests and responses.
+- Steep learning curve.
+- The level of support depends on the plan you have.
 
 ### > cloudsh)CloudSh
 
-![CloudSh](https://bejamas.io/static/b1bafd64c59ccb00467d4aebbf1b9221/f101e/cloudsh.png 'CloudSh')
+![CloudSh](https://bejamas.io/static/b1bafd64c59ccb00467d4aebbf1b9221/f101e/cloudsh.png "CloudSh")
 
 [CloudSh](https://cloudsh.com/) is another search-as-a-service provider that offers a powerful search engine for your website with only a few lines of JavaScript.
 
@@ -97,13 +96,13 @@ It's perfect for anyone looking for a simple solution for their static website. 
 
 Features, pros, and cons:
 
--   CloudSh has been specially built for static websites and indexes their pages with both on-demand and scheduled basis.
--   Simple to use and integrate with pre-made integration solutions for different static site generators.
--   Analytics and on-demand indexing for all plans.Priority support for all except the Personal (basic) plan.
+- CloudSh has been specially built for static websites and indexes their pages with both on-demand and scheduled basis.
+- Simple to use and integrate with pre-made integration solutions for different static site generators.
+- Analytics and on-demand indexing for all plans.Priority support for all except the Personal (basic) plan.
 
 ### > meilisearch)MeiliSearch
 
-![MeiliSearch](https://bejamas.io/static/3bae2afe922474ea1f451e0b08938909/f101e/meilisearch.png 'MeiliSearch')
+![MeiliSearch](https://bejamas.io/static/3bae2afe922474ea1f451e0b08938909/f101e/meilisearch.png "MeiliSearch")
 
 [Meili Search](https://www.meilisearch.com/) is a blazing-fast open-source search API solution written in Rust. It is built with an idea to completely transform your users' search experience and offer them the best possible performance for instant search.
 
@@ -113,15 +112,15 @@ Meili is an excellent solution, but it lacks some features, such as the analytic
 
 Features, pros, and cons:
 
--   Open-source, free, and available to anyone.
--   Written in Rust. Uses RESTful API.
--   Easy to integrate with extensive customization possibilities (also presets available).
--   Search as-you-type experience, which means that MeiliSearch can return results for almost EVERY keystroke you make.
--   It looks like the great things are yet to come. Needs more features.
+- Open-source, free, and available to anyone.
+- Written in Rust. Uses RESTful API.
+- Easy to integrate with extensive customization possibilities (also presets available).
+- Search as-you-type experience, which means that MeiliSearch can return results for almost EVERY keystroke you make.
+- It looks like the great things are yet to come. Needs more features.
 
 ### Apache Solr
 
-![Apache Solr](https://bejamas.io/static/1c2b3e8c3d68bc06c16bd0b4c3c20caf/f101e/solr.png 'Apache Solr')
+![Apache Solr](https://bejamas.io/static/1c2b3e8c3d68bc06c16bd0b4c3c20caf/f101e/solr.png "Apache Solr")
 
 [Solr](https://lucene.apache.org/solr/) is another top-rated, high-speed search platform from the open-source giant Apache and built on Apache Lucene.
 
@@ -131,10 +130,10 @@ Even though it is used by many of the world's largest websites (like AOL and Bes
 
 Features, pros, and cons:
 
--   Open-source with extensive data management and analytics capabilities.
--   REST API for accessing and validating the data/records.
--   Large, active community and excellent documentation, guides, and training.
--   CPU consumption can be high in some cases.
+- Open-source with extensive data management and analytics capabilities.
+- REST API for accessing and validating the data/records.
+- Large, active community and excellent documentation, guides, and training.
+- CPU consumption can be high in some cases.
 
 ### Js-Search
 
@@ -144,19 +143,19 @@ While this search is fast, an issue is raised because this solution isn't a good
 
 Features, pros, and cons:
 
--   Very simple and free.
--   Great for small websites.
+- Very simple and free.
+- Great for small websites.
 
 ### > typesense)Typesense
 
-![Typesense](https://bejamas.io/static/cd7fc7c7b8707f96a516ae7fc599fd3a/f101e/typesense.png 'Typesense')
+![Typesense](https://bejamas.io/static/cd7fc7c7b8707f96a516ae7fc599fd3a/f101e/typesense.png "Typesense")
 
 [Typesense](https://typesense.org/) is an open-source, typo tolerant search engine, which means it handles your errors while typing fast and out-of-the-box. For now, it has API clients for Javascript, PHP, Python, and Ruby, and implementation is pretty straightforward.
 
 Features, pros, and cons:
 
--   While simple at its core, Typesense has an advanced filtering system if you need fine-grained control of the search results.
--   Simple to set up and update with a new version.
+- While simple at its core, Typesense has an advanced filtering system if you need fine-grained control of the search results.
+- Simple to set up and update with a new version.
 
 ## (**so-which-option-is-the-best**)So, which option is the best?
 
@@ -210,8 +209,8 @@ _**In this tutorial, we're going to explore adding search to a site built with G
 
 **Algolia provides two projects that we'll make use of:**
 
--   [**Gatsby Plugin Algolia**](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
--   [**React InstantSearch**](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
+- [**Gatsby Plugin Algolia**](https://github.com/algolia/gatsby-plugin-algolia) will help us create our indices and make sure they are kept in sync with our content.
+- [**React InstantSearch**](https://github.com/algolia/react-instantsearch) provides a pre-built set of tools for interacting with Algolia's search API for a "search as you type" UI. This project also encompasses the `react-instantsearch-dom` UI tools we'll also use.
 
 ---
 

@@ -3,8 +3,8 @@ title: General Utilities
 weight: 0
 excerpt: General Utilities
 seo:
-    title: ''
-    description: ''
+    title: 'General Utilities'
+    description: 'General Utilities Tools'
     robots: []
     extra: []
     type: stackbit_page_meta
