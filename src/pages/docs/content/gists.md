@@ -15,7 +15,9 @@ template: docs
 
 <h2>Gist Archive</h2>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonzgist.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonzgist.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 
 <br>
 
@@ -138,11 +140,15 @@ RecurseDirs "./"
 
 > Language: Javascript/Jquery
 
-> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
 $(document).ready(function () {
-    $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+    $('code, pre').append('<span class="command-copy" >
+<i class="fa fa-clipboard" aria-hidden="true">
+</i>
+</span>');
     $('code span.command-copy').click(function (e) {
         var text = $(this).parent().text().trim(); //.text();
         var copyHex = document.createElement('input');

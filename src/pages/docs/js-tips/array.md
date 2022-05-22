@@ -246,19 +246,65 @@ To help explain these properties and elements, see this example and then refer t
 
 The properties and elements returned from this match are as follows:
 
-<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code>
+<table>
+<thead>
+<tr class="header">
+<th>Property/Element</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>input</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr class="even"><td><code>index</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The original string against which the regular expression was matched.</td>
+<td>
+<code>"cdbBdbsbz"</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>index</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The zero-based index of the match in the string.</td><td><code>1</code></td></tr><tr class="odd"><td><code>[0]</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The zero-based index of the match in the string.</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>[0]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>"dbBd"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The last matched characters.</td>
+<td>
+<code>"dbBd"</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>[1], ...[n]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB" [2]: "d"</code></td></tr></tbody></table>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td>
+<td>
+<code>[1]: "bB" [2]: "d"</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Constructor
 

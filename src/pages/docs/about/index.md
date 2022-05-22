@@ -26,7 +26,8 @@ template: docs
 
 <h1>Hi 👋, I'm Bryan</h1>
   
-<img align="center"  src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
+<img align="center"  src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" >
+</img>
 
 ## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
 
@@ -57,7 +58,10 @@ template: docs
 <br>
 
   
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /><img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
+<p>
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" />
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" />
+</p>
 
 <br>  
 <br>  
@@ -72,7 +76,29 @@ template: docs
 <br>
 
 <p align="center">
-  <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
+  <a href="mailto:bryan.guner@gmail.com">
+<img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/>
+</a>
+<a href="https://www.facebook.com/bryan.guner/">
+<img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/>
+</a>
+<a href="https://twitter.com/bgooonz">
+<img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/>
+</a>
+<a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos">
+<img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/>
+</a>
+<a href="https://www.instagram.com/bgoonz/?hl=en">
+<img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/>
+</a>
+<a href="https://www.linkedin.com/in/bryan-guner-046199128/">
+<img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/>
+</a>  <a href="https://bryanguner.medium.com/">
+<img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/>
+</a>
+<a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw">
+<img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/>
+</a>
   </p>
 
 </div>
@@ -248,37 +274,51 @@ Creating things that change my every day life.
   </thead>
   <tbody>
     <tr>
-      <td><a href='https://web-dev-resource-hub.netlify.app/'>Web-Dev-Resource-Hub (blog)</a></td>
+      <td>
+<a href='https://web-dev-resource-hub.netlify.app/'>Web-Dev-Resource-Hub (blog)</a>
+</td>
       <td>Html, Css, javascript, Python, jQuery,  React,  FireBase,  AWS S3,  Netlify,  Heroku,  NodeJS,  PostgreSQL,  C++,  Web Audio API</td>
       <td>My blog site contains my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.</td>
     </tr>
        <tr>
-      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Dynamic Guitar Effects Triggering Using A Modified Dynamic Time Warping Algorithm</a></td>
+      <td>
+<a href='https://project-showcase-bgoonz.netlify.app/'>Dynamic Guitar Effects Triggering Using A Modified Dynamic Time Warping Algorithm</a>
+</td>
       <td>C, C++, Python, Java, Pure Data, Matlab</td>
       <td>Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency & time domain analysis to track a current performance against prerecorded performance.Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.</td>
     </tr>
     <tr>
-      <td><a href="https://trusting-dijkstra-4d3b17.netlify.app/">Data Structures & Algorithms Interactive Learning Site</a></td>
+      <td>
+<a href="https://trusting-dijkstra-4d3b17.netlify.app/">Data Structures & Algorithms Interactive Learning Site</a>
+</td>
       <td>HTML, CSS, Javascript,  Python,  Java,  jQuery,  Repl.it-Database API</td>
       <td>A interactive and comprehensive guide and learning tool for DataStructures and Algorithms ... concentrated on JS but with some examples in Python,  C++ and Java as well</td>
     </tr>
     <tr>
-      <td><a href='https://mihirbegmusic.netlify.app/'>MihirBeg.com</a></td>
+      <td>
+<a href='https://mihirbegmusic.netlify.app/'>MihirBeg.com</a>
+</td>
       <td>Html, Css, Javascript,  Bootstrap,  FontAwesome,  jQuery</td>
       <td>A responsive and mobile friendly content promotion site for an Audio Engineer to engage with fans and potential clients</td>
     </tr>
     <tr>
-      <td><a href='https://tetris42.netlify.app/'>Tetris-JS</a></td>
+      <td>
+<a href='https://tetris42.netlify.app/'>Tetris-JS</a>
+</td>
       <td>Html, Css, Javascript</td>
       <td>The classic game of tetris implemented in plain javascipt and styled with a retro-futureistic theme</td>
     </tr>
     <tr>
-      <td><a href="https://githtmlpreview.netlify.app/">Git Html Preview Tool</a></td>
+      <td>
+<a href="https://githtmlpreview.netlify.app/">Git Html Preview Tool</a>
+</td>
       <td>Git,  Javascript,  CSS3,  HTML5,  Bootstrap,  BitBucket</td>
       <td>Loads HTML using CORS proxy,  then process all links,  frames,  scripts and styles,  and load each of them using CORS proxy,  so they can be evaluated by the browser.</td>
     </tr>
     <tr>
-      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Mini Project Showcase</a></td>
+      <td>
+<a href='https://project-showcase-bgoonz.netlify.app/'>Mini Project Showcase</a>
+</td>
       <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
       <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
     </tr>
