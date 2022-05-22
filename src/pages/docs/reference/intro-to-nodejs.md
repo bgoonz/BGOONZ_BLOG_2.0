@@ -3,7 +3,7 @@ title: Intro To NodeJS
 weight: 0
 excerpt: A Node.js app runs in a single process, without creating a new thread for every request.
 seo:
-    title: ''
+    title: 'Intro To NodeJS'
     description: 'Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!'
     robots: []
     extra: []

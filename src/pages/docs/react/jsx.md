@@ -78,7 +78,7 @@ const nav = React.createElement(
 
 ```
 
-You can think of JSX as a shorthand for calling `React.createElement()`.
+You can think of JSX as a shorthand for calling `React.createElement()`.
 
 The idea of mixing HTML and JavaScript in the same file can be a rather contentious topic. Ignore the debate. Use it if you find it helpful. If not, write the React code required to create React nodes. Your choice. My opinion is that JSX provides a concise and familiar syntax for defining a tree structure with attributes that does not require learning a templating language or leaving JavaScript. Both of which are can be a win when building large applications.
 

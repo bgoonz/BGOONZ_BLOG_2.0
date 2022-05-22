@@ -20,7 +20,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -33,7 +33,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -71,7 +71,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
@@ -84,7 +84,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -130,7 +130,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -164,7 +164,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -177,7 +177,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -404,7 +404,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -435,7 +435,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -445,7 +445,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     back to top css
 
@@ -540,7 +540,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     print2pdf
 
@@ -553,7 +553,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     scroll2topsvg
 
@@ -686,7 +686,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     tawk-chat
 
@@ -708,7 +708,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     firebase-cdn
 
@@ -740,7 +740,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     add-this-suggested-pages
 
@@ -751,7 +751,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     auth-firestore-cloud
 
@@ -769,7 +769,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     analytics
 
@@ -787,7 +787,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     search-script
 
@@ -807,7 +807,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     more-meta-tags-open-graph
 
@@ -834,7 +834,7 @@
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     simpleanalytics
 
@@ -845,7 +845,7 @@
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     metaaaa
 
@@ -859,7 +859,7 @@
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -885,7 +885,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -898,7 +898,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -936,7 +936,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
@@ -949,7 +949,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -995,7 +995,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
@@ -1029,7 +1029,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -1042,7 +1042,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     prism
 
@@ -1252,7 +1252,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     prismjs
 
@@ -1271,7 +1271,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -1498,7 +1498,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -1529,7 +1529,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     prism2body
 
@@ -1548,7 +1548,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia
 
@@ -1572,7 +1572,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -1598,7 +1598,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
@@ -1611,7 +1611,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     apple
 
@@ -1621,7 +1621,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     hit counter
 
@@ -1631,7 +1631,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     go-back
 
@@ -1645,7 +1645,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     clock
 
@@ -1656,7 +1656,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     algolia
 
@@ -1677,7 +1677,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia-cdn
 
@@ -1688,7 +1688,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     algolia2
 
@@ -1715,7 +1715,7 @@ Inject analytics or other scripts into the HTML of your site.
 
 Inject analytics or other scripts into the HTML of your site.---
 
--   before `</body>`
+-   before `</body>`
 
     scroll2top
 
@@ -1747,7 +1747,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     spotify
 
@@ -1757,7 +1757,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     scroll2-vanilla
 
@@ -1780,7 +1780,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     blm
 
@@ -1806,7 +1806,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     iframe-style
 
@@ -1828,7 +1828,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     addThis
 
@@ -1841,7 +1841,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     analytics-n-addsense
 
@@ -1875,7 +1875,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     netlify-oauth
 
@@ -1905,7 +1905,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     github-netlify-oauth
 
@@ -1917,7 +1917,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     content-authoring
 
@@ -1927,7 +1927,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</head>`
+-   before `</head>`
 
     Algolia-Search
 
@@ -1947,7 +1947,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
 ---
 
--   before `</body>`
+-   before `</body>`
 
     searcg
 
@@ -1973,7 +1973,7 @@ Inject analytics or other scripts into the HTML of your site.---
 
  ---
 
--   before `</head>`
+-   before `</head>`
 
     algolia-search-cdn
 

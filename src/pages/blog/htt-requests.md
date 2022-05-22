@@ -24,7 +24,7 @@ cmseditable: true
 
 HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
 
-These resources are made available to us via an `API` and we make requests to these APIs via the HTTP protocol. `API` stands for application programming interface. It is the mechanism that allows developers to request resources.
+These resources are made available to us via an `API` and we make requests to these APIs via the HTTP protocol. `API` stands for application programming interface. It is the mechanism that allows developers to request resources.
 
 ### Client-Server Architecture
 
@@ -34,7 +34,7 @@ A client application is the one that a user is actually interacting with, that's
 
 The main reason for this separation is to secure sensitive information. Your entire client application gets downloaded into the browser, and all of the data can be accessed by anyone accessing your web page.
 
-This architecture helps protect things like your API keys, personal data, and more. Now modern tools like [Next.js](https://nextjs.org/) and [Netlify](https://www.netlify.com/) allow developers to run server code in the same app as their client app, without needing a dedicated server application.
+This architecture helps protect things like your API keys, personal data, and more. Now modern tools like [Next.js](https://nextjs.org/) and [Netlify](https://www.netlify.com/) allow developers to run server code in the same app as their client app, without needing a dedicated server application.
 
 ### Client-Server Communication
 
@@ -58,9 +58,9 @@ Your client application communicated with a server application running somewhere
 
 An HTTP request must have the following:
 
-* An HTTP method (like `GET`)
-* A host URL (like `https://api.spotify.com/`)
-* An endpoint path(like  `v1/artists/{id}/related-artists`)
+* An HTTP method (like `GET`)
+* A host URL (like `https://api.spotify.com/`)
+* An endpoint path(like  `v1/artists/{id}/related-artists`)
 
 A request can also optionally have:
 
@@ -73,8 +73,8 @@ A request can also optionally have:
 
 A response must have the following:
 
-* Protocol version (like `HTTP/1.1`)
-* Status code (like  `200`)
+* Protocol version (like `HTTP/1.1`)
+* Status code (like  `200`)
 * Status text (`OK`)
 * Headers
 
@@ -96,67 +96,67 @@ Or what if we wanted to add a new city altogether that, for some reason, doesn�
 
 ### HTTP POST request
 
-We use `POST` to create a new resource. A `POST` request requires a body in which you define the data of the entity to be created.
+We use `POST` to create a new resource. A `POST` request requires a body in which you define the data of the entity to be created.
 
 A successful POST request would be a 200 response code. In our weather app, we could use a POST method to add weather data about a new city.
 
 ### HTTP GET request
 
-We use `GET` to read or retrieve a resource. A successful `GET` returns a response containing the information you requested.
+We use `GET` to read or retrieve a resource. A successful `GET` returns a response containing the information you requested.
 
 In our weather app, we could use a GET to retrieve the current weather for a specific city.
 
 ### HTTP PUT request
 
-We use `PUT` to modify a resource. `PUT` updates the entire resource with data that is passed in the body payload. If there is no resource that matches the request, it will create a new resource.
+We use `PUT` to modify a resource. `PUT` updates the entire resource with data that is passed in the body payload. If there is no resource that matches the request, it will create a new resource.
 
-In our weather app, we could use `PUT` to update all weather data about a specific city.
+In our weather app, we could use `PUT` to update all weather data about a specific city.
 
 ### HTTP PATCH request
 
-We use `PATCH` to modify a part of a resource. With `PATCH`, you only need to pass in the data that you want to update.
+We use `PATCH` to modify a part of a resource. With `PATCH`, you only need to pass in the data that you want to update.
 
-In our weather app, we could use `PATCH` to update the rainfall for a specified day in a specified city.
+In our weather app, we could use `PATCH` to update the rainfall for a specified day in a specified city.
 
 ### HTTP DELETE request
 
-We use `DELETE` to delete a resource. In our weather app, we could use `DELETE` to delete a city we no longer wanted to track for some reason.
+We use `DELETE` to delete a resource. In our weather app, we could use `DELETE` to delete a city we no longer wanted to track for some reason.
 
 ## HTTP Method FAQs
 
 ### What’s the difference between PUT and POST?
 
-`PUT` requests are idempotent, meaning that executing the same `PUT` request will always produce the same result.
+`PUT` requests are idempotent, meaning that executing the same `PUT` request will always produce the same result.
 
-On the other hand, a `POST` will produce different outcomes. If you execute a `POST` request multiple times, you'll create a new resource multiple times despite them having the same data being passed in.
+On the other hand, a `POST` will produce different outcomes. If you execute a `POST` request multiple times, you'll create a new resource multiple times despite them having the same data being passed in.
 
-Using a restaurant analogy, `POST`ing multiple times would create multiple separate orders, whereas multiple `PUT` requests will update the same existing order.
+Using a restaurant analogy, `POST`ing multiple times would create multiple separate orders, whereas multiple `PUT` requests will update the same existing order.
 
 ### What’s the difference between PUT and PATCH?
 
-The key differences are that `PUT` will create a new resource if it cannot find the specified resource. And with `PUT` you need to pass in data to update the entire resource, even if you only want to modify one field.
+The key differences are that `PUT` will create a new resource if it cannot find the specified resource. And with `PUT` you need to pass in data to update the entire resource, even if you only want to modify one field.
 
-With `PATCH`, you can update part of a resource by simply passing in the data of the field to be updated.
+With `PATCH`, you can update part of a resource by simply passing in the data of the field to be updated.
 
 ### What if I just want to update part of my resource? Can I still use PUT?
 
-If you just want to update part of your resource, you still need to send in data for the entire resource when you make a `PUT` request. The better-suited option here would be `PATCH`.
+If you just want to update part of your resource, you still need to send in data for the entire resource when you make a `PUT` request. The better-suited option here would be `PATCH`.
 
 ### Why is a body optional for a request and response?
 
-A body is optional because for some requests, like resource retrievals using the `GET` method, there is nothing to specify in the body of your request. You are requesting all data from the specified endpoint.
+A body is optional because for some requests, like resource retrievals using the `GET` method, there is nothing to specify in the body of your request. You are requesting all data from the specified endpoint.
 
-Similarly, a body is optional for some responses when a status code is sufficient or there is nothing to specify in the body, for example with a `DELETE` operation.
+Similarly, a body is optional for some responses when a status code is sufficient or there is nothing to specify in the body, for example with a `DELETE` operation.
 
 ## HTTP Request Examples
 
-Now that we’ve covered what an HTTP request is, and why we use them, let’s make some requests! We’re going to be playing with the [GitHub Gist API](https://docs.github.com/en/rest/reference/gists).
+Now that we’ve covered what an HTTP request is, and why we use them, let’s make some requests! We’re going to be playing with the [GitHub Gist API](https://docs.github.com/en/rest/reference/gists).
 
 > "Gist is a simple way to share snippets and pastes with others. All Gists are Git repositories, so they are automatically versioned, forkable and usable from Git." (Source: Github)
 
 You will need a GitHub account for this. If you don’t already have one, this is a great opportunity to start one to save your code in the future.
 
-Every user on GitHub can create gists, retrieve their gists, retrieve all public gists, delete a gist, and update a gist, amongst other things. To keep things simple we will use [Hoppscotch](https://hoppscotch.io/), a platform with a nice interface used to quickly and easily make HTTP requests.
+Every user on GitHub can create gists, retrieve their gists, retrieve all public gists, delete a gist, and update a gist, amongst other things. To keep things simple we will use [Hoppscotch](https://hoppscotch.io/), a platform with a nice interface used to quickly and easily make HTTP requests.
 
 A quick Hoppscotch walkthrough:
 
@@ -179,9 +179,9 @@ A quick Hoppscotch walkthrough:
 
 ### How to Make a GET Request
 
-To make a `GET` request to retrieve all of a specific users’ gists, we can use the following method and endpoint: `GET /users/{username}/gists`. The documentation tells us the parameters that we can pass in to make this request.
+To make a `GET` request to retrieve all of a specific users’ gists, we can use the following method and endpoint: `GET /users/{username}/gists`. The documentation tells us the parameters that we can pass in to make this request.
 
-We see that in the path we have to pass in a string with the target user’s username. We also see that we have to pass in a header called accept and set it to `application/vnd.github.v3+json`.
+We see that in the path we have to pass in a string with the target user’s username. We also see that we have to pass in a header called accept and set it to `application/vnd.github.v3+json`.
 
 ![Screen-Shot-2022-01-20-at-2.01.35-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-2.01.35-PM.png)
 
@@ -199,35 +199,35 @@ We're given the endpoint path for this specific operation:
 
 To make this request:
 
-1. Paste in the full URL + path in the input field of Hoppscotch. Be sure to replace `username` with an actual username. If you don't have a GitHub with existing Gists, you can use mine: camiinthisthang.
-2. Select the `GET` request method
-3. In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`
+1. Paste in the full URL + path in the input field of Hoppscotch. Be sure to replace `username` with an actual username. If you don't have a GitHub with existing Gists, you can use mine: camiinthisthang.
+2. Select the `GET` request method
+3. In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`
 
 ![Screen-Shot-2022-01-24-at-12.39.38-PM-2](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.39.38-PM-2.png)
 
-4.  Hit send!
+4.  Hit send!
 
-At the bottom, you'll see your response formatted as `JSON`. In order to read this more clearly, copy the response and paste it into an [online JSON formatter](https://jsonformatter.curiousconcept.com/#).
+At the bottom, you'll see your response formatted as `JSON`. In order to read this more clearly, copy the response and paste it into an [online JSON formatter](https://jsonformatter.curiousconcept.com/#).
 
 In the formatter, you're able to tell that the response is an array of objects. Each object represents one gist, showing us information like the URL, the ID, etc.
 
 ### How to Make a POST Request
 
-Now let's create a resource using the `POST` method. In this context, the new resource would be a new gist.
+Now let's create a resource using the `POST` method. In this context, the new resource would be a new gist.
 
-First we’ll have to create a personal access token. To do that, [go to your settings page](https://github.com/settings/tokens) and hit Generate token.
+First we’ll have to create a personal access token. To do that, [go to your settings page](https://github.com/settings/tokens) and hit Generate token.
 
 Name your token and select the scope “Create Gists”:
 
 ![Screen-Shot-2022-01-20-at-2.59.11-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-2.59.11-PM.png)
 
-Then click the green `Generate token` button at the bottom of the page.
+Then click the green `Generate token` button at the bottom of the page.
 
 ![Screen-Shot-2022-01-20-at-3.28.01-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.28.01-PM.png)
 
 Copy your access code and paste it somewhere you can easily retrieve it.
 
-Now we're ready to make our request! The documentation tells us we should pass in a header, and a `files` object in the body. We can optionally pass in a few other things, including a boolean that dictates if this gist is public or private.
+Now we're ready to make our request! The documentation tells us we should pass in a header, and a `files` object in the body. We can optionally pass in a few other things, including a boolean that dictates if this gist is public or private.
 
 ![Screen-Shot-2022-01-20-at-2.07.23-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-2.07.23-PM.png)
 
@@ -246,11 +246,11 @@ We're given the endpoint path for this specific operation:
 To make this request:
 
 1. Paste the full URL + path into the input field of Hoppscotch.
-2. Select the `POST` request method
-3. In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`
-4. In the Body tab, set the content type to `application/json`. Then start off with an object `{}`.\
+2. Select the `POST` request method
+3. In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`
+4. In the Body tab, set the content type to `application/json`. Then start off with an object `{}`.\
    \
-   Inside of this object, we'll set the public `boolean` to `true`. Then we'll define the property `files`, and the value is another object with a key of the name of your new gist. The value for this should be another object whose key is `content`. The value here should be whatever you want to actually add to the gist.\
+   Inside of this object, we'll set the public `boolean` to `true`. Then we'll define the property `files`, and the value is another object with a key of the name of your new gist. The value for this should be another object whose key is `content`. The value here should be whatever you want to actually add to the gist.\
    \
    Here is the code for you to copy/paste:
 
@@ -260,7 +260,7 @@ To make this request:
 
 ![Screen-Shot-2022-01-24-at-2.35.57-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-2.35.57-PM.png)
 
-5.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your Github username and pass your personal access token we created in the password field.
+5.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your Github username and pass your personal access token we created in the password field.
 
 After we run this, we get a long response. An easy way to check that your gist was created is to go to your Gists in GitHub.
 
@@ -272,7 +272,7 @@ We see that we successfully added a Gist!
 
 ### How to Make a PATCH Request
 
-Let's update the title and description of the Gist we just created. Remember: `PATCH` allows you to update a part of a resource, not the entire resource. Anything that we don’t pass in will remain unchanged.
+Let's update the title and description of the Gist we just created. Remember: `PATCH` allows you to update a part of a resource, not the entire resource. Anything that we don’t pass in will remain unchanged.
 
 We didn’t actually pass a description to our Gist when we created it, so we can patch this and create one.
 
@@ -292,17 +292,17 @@ We're given the endpoint path for this specific operation:
 
 To make this request:
 
-1. Paste in the full URL + path in the input field of Hoppscotch. Get the `Gist ID` of the gist you want to update. You can find the ID by going to the Gist in GitHub and copying the alphanumeric string at the end of the URL.
+1. Paste in the full URL + path in the input field of Hoppscotch. Get the `Gist ID` of the gist you want to update. You can find the ID by going to the Gist in GitHub and copying the alphanumeric string at the end of the URL.
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
-2.   Select the `PATCH` request method.
+2.   Select the `PATCH` request method.
 
-3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
 
-4.   In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
+4.   In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
 
-5.   In the Body tab, we'll pass in the updated description and title. Here is the code:
+5.   In the Body tab, we'll pass in the updated description and title. Here is the code:
 
 ```javascript
 
@@ -332,13 +332,13 @@ We're given the endpoint path for this specific operation:
 
 To make this request:
 
-1. Paste in the full URL + path in the input field of Hoppscotch. Get the `Gist ID` of the gist you want to update. You can find the ID by going to the Gist in GitHub and copying the alphanumeric string at the end of the URL.
+1. Paste in the full URL + path in the input field of Hoppscotch. Get the `Gist ID` of the gist you want to update. You can find the ID by going to the Gist in GitHub and copying the alphanumeric string at the end of the URL.
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
-2.   Select the `DELETE` request method
+2.   Select the `DELETE` request method
 
-3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
 
 If we navigate to our Gists, we see that this one doesn't exist and we successfully deleted the resource.
 

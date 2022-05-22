@@ -5,7 +5,7 @@
 ![Simple Analytics](https://d363qos3mhnap4.cloudfront.net/thumb/qe-d6-88-zj-39-z5/n)[Simple Analytics](https://trends.builtwith.com/analytics/Simple-Analytics)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Simple Analytics Usage Statistics](https://trends.builtwith.com/analytics/Simple-Analytics) - [Download List of All Websites using Simple Analytics](https://trends.builtwith.com/websitelist/Simple-Analytics)
+[Simple Analytics Usage Statistics](https://trends.builtwith.com/analytics/Simple-Analytics) - [Download List of All Websites using Simple Analytics](https://trends.builtwith.com/websitelist/Simple-Analytics)
 
 Pageviews, referrers, top pages, and screen size analytics tracking system.
 
@@ -14,22 +14,22 @@ Pageviews, referrers, top pages, and screen size analytics tracking system.
 ![Global Site Tag](https://dbuflkpcdpfh3.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Global Site Tag](https://trends.builtwith.com/analytics/Global-Site-Tag)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Global Site Tag Usage Statistics](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag](https://trends.builtwith.com/websitelist/Global-Site-Tag)
+[Global Site Tag Usage Statistics](https://trends.builtwith.com/analytics/Global-Site-Tag) - [Download List of All Websites using Global Site Tag](https://trends.builtwith.com/websitelist/Global-Site-Tag)
 
 Google's primary tag for Google Measurement/Conversion Tracking, Adwords and DoubleClick.
 
 ![Google Analytics](https://d2uu9ep1796sii.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Analytics](https://trends.builtwith.com/analytics/Google-Analytics)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Analytics Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics](https://trends.builtwith.com/websitelist/Google-Analytics)
+[Google Analytics Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics) - [Download List of All Websites using Google Analytics](https://trends.builtwith.com/websitelist/Google-Analytics)
 
 Google Analytics offers a host of compelling features and benefits for everyone from senior executives and advertising and marketing professionals to site owners and content developers.
 
-[Application Performance](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking](https://trends.builtwith.com/analytics/visitor-count-tracking)
+[Application Performance](https://trends.builtwith.com/analytics/application-performance) - [Audience Measurement](https://trends.builtwith.com/analytics/audience-measurement) - [Visitor Count Tracking](https://trends.builtwith.com/analytics/visitor-count-tracking)
 
 ##### ![Google Analytics 4](https://deo39crpw7zzn.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Analytics 4](https://trends.builtwith.com/analytics/Google-Analytics-4)
 
-[Google Analytics 4 Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4](https://trends.builtwith.com/websitelist/Google-Analytics-4)
+[Google Analytics 4 Usage Statistics](https://trends.builtwith.com/analytics/Google-Analytics-4) - [Download List of All Websites using Google Analytics 4](https://trends.builtwith.com/websitelist/Google-Analytics-4)
 
 Google Analytics 4 formerly known as App + Web is a new version of Google Analytics that was released in October 2020.
 
@@ -40,14 +40,14 @@ Google Analytics 4 formerly known as App + Web is a new version of Google Analyt
 ![Imgur](https://dbuflkpcdpfh3.cloudfront.net/thumb/7j-jc-12-69-dc-30/n)[Imgur](https://trends.builtwith.com/widgets/Imgur)
 ---------------------------------------------------------------------------------------------------------------------------
 
-[Imgur Usage Statistics](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur](https://trends.builtwith.com/websitelist/Imgur)
+[Imgur Usage Statistics](https://trends.builtwith.com/widgets/Imgur) - [Download List of All Websites using Imgur](https://trends.builtwith.com/websitelist/Imgur)
 
 The page contains content from image sharing website imgur.
 
 ![Google Font API](https://dbuflkpcdpfh3.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Font API](https://trends.builtwith.com/widgets/Google-Font-API)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Font API Usage Statistics](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API](https://trends.builtwith.com/websitelist/Google-Font-API)
+[Google Font API Usage Statistics](https://trends.builtwith.com/widgets/Google-Font-API) - [Download List of All Websites using Google Font API](https://trends.builtwith.com/websitelist/Google-Font-API)
 
 The Google Font API helps you add web fonts to any web page.
 
@@ -56,7 +56,7 @@ The Google Font API helps you add web fonts to any web page.
 ![Google Tag Manager](https://d2uu9ep1796sii.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Tag Manager](https://trends.builtwith.com/widgets/Google-Tag-Manager)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Tag Manager Usage Statistics](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
+[Google Tag Manager Usage Statistics](https://trends.builtwith.com/widgets/Google-Tag-Manager) - [Download List of All Websites using Google Tag Manager](https://trends.builtwith.com/websitelist/Google-Tag-Manager)
 
 Tag management that lets you add and update website tags without changes to underlying website code.
 
@@ -65,7 +65,7 @@ Tag management that lets you add and update website tags without changes to unde
 ![Icons8](https://dbuflkpcdpfh3.cloudfront.net/thumb/qj-44-7q-25-27-46/n)[Icons8](https://trends.builtwith.com/widgets/Icons8)
 ------------------------------------------------------------------------------------------------------------------------------
 
-[Icons8 Usage Statistics](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8](https://trends.builtwith.com/websitelist/Icons8)
+[Icons8 Usage Statistics](https://trends.builtwith.com/widgets/Icons8) - [Download List of All Websites using Icons8](https://trends.builtwith.com/websitelist/Icons8)
 
 Icons, photos and illustrations.
 
@@ -78,21 +78,21 @@ Icons, photos and illustrations.
 ![Firebase](https://deo39crpw7zzn.cloudfront.net/thumb/8j-10-57-77-5q-2c/n)[Firebase](https://trends.builtwith.com/framework/Firebase)
 --------------------------------------------------------------------------------------------------------------------------------------
 
-[Firebase Usage Statistics](https://trends.builtwith.com/framework/Firebase) - [Download List of All Websites using Firebase](https://trends.builtwith.com/websitelist/Firebase)
+[Firebase Usage Statistics](https://trends.builtwith.com/framework/Firebase) - [Download List of All Websites using Firebase](https://trends.builtwith.com/websitelist/Firebase)
 
 A scalable real time backend system for websites.
 
 ![Gatsby JS](https://dbuflkpcdpfh3.cloudfront.net/thumb/qj-9z-d6-dd-ej-c6/n)[Gatsby JS](https://trends.builtwith.com/framework/Gatsby-JS)
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-[Gatsby JS Usage Statistics](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS](https://trends.builtwith.com/websitelist/Gatsby-JS)
+[Gatsby JS Usage Statistics](https://trends.builtwith.com/framework/Gatsby-JS) - [Download List of All Websites using Gatsby JS](https://trends.builtwith.com/websitelist/Gatsby-JS)
 
 Modern website and web apps generator for React.
 
 ![PHP](https://d3c1mi4ekssrlm.cloudfront.net/thumb/37-1z-j4-66-47-qe/n)[PHP](https://trends.builtwith.com/framework/PHP)
 ------------------------------------------------------------------------------------------------------------------------
 
-[PHP Usage Statistics](https://trends.builtwith.com/framework/PHP) - [Download List of All Websites using PHP](https://trends.builtwith.com/websitelist/PHP)
+[PHP Usage Statistics](https://trends.builtwith.com/framework/PHP) - [Download List of All Websites using PHP](https://trends.builtwith.com/websitelist/PHP)
 
 PHP is a widely used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML.
 
@@ -103,21 +103,21 @@ PHP is a widely used general-purpose scripting language that is especially suite
 ![Viewport Meta](https://dbuflkpcdpfh3.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Viewport Meta](https://trends.builtwith.com/mobile/Viewport-Meta)
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Viewport Meta Usage Statistics](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta](https://trends.builtwith.com/websitelist/Viewport-Meta)
+[Viewport Meta Usage Statistics](https://trends.builtwith.com/mobile/Viewport-Meta) - [Download List of All Websites using Viewport Meta](https://trends.builtwith.com/websitelist/Viewport-Meta)
 
 This page uses the viewport meta tag which means the content may be optimized for mobile content.
 
 ![IPhone / Mobile Compatible](https://d3c1mi4ekssrlm.cloudfront.net/thumb/q7-6j-j6-0e-c0-z5/n)[IPhone / Mobile Compatible](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[IPhone / Mobile Compatible Usage Statistics](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
+[IPhone / Mobile Compatible Usage Statistics](https://trends.builtwith.com/mobile/IPhone---Mobile-Compatible) - [Download List of All Websites using IPhone / Mobile Compatible](https://trends.builtwith.com/websitelist/IPhone---Mobile-Compatible)
 
 The website contains code that allows the page to support IPhone / Mobile Content.
 
 ![Apple Mobile Web Clips Icon](https://d3c1mi4ekssrlm.cloudfront.net/thumb/q7-6j-j6-0e-c0-z5/n)[Apple Mobile Web Clips Icon](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Apple Mobile Web Clips Icon Usage Statistics](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
+[Apple Mobile Web Clips Icon Usage Statistics](https://trends.builtwith.com/mobile/Apple-Mobile-Web-Clips-Icon) - [Download List of All Websites using Apple Mobile Web Clips Icon](https://trends.builtwith.com/websitelist/Apple-Mobile-Web-Clips-Icon)
 
 This page contains an icon for iPhone, iPad and iTouch devices.
 
@@ -128,28 +128,28 @@ This page contains an icon for iPhone, iPad and iTouch devices.
 ![AJAX Libraries API](https://dbuflkpcdpfh3.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[AJAX Libraries API](https://trends.builtwith.com/cdn/AJAX-Libraries-API)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[AJAX Libraries API Usage Statistics](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
+[AJAX Libraries API Usage Statistics](https://trends.builtwith.com/cdn/AJAX-Libraries-API) - [Download List of All Websites using AJAX Libraries API](https://trends.builtwith.com/websitelist/AJAX-Libraries-API)
 
 The AJAX Libraries API is a content distribution network and loading architecture for the most popular, open source JavaScript libraries.
 
 ![GStatic Google Static Content](https://d3dpwkknyrpnnn.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[GStatic Google Static Content](https://trends.builtwith.com/cdn/GStatic-Google-Static-Content)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[GStatic Google Static Content Usage Statistics](https://trends.builtwith.com/cdn/GStatic-Google-Static-Content) - [Download List of All Websites using GStatic Google Static Content](https://trends.builtwith.com/websitelist/GStatic-Google-Static-Content)
+[GStatic Google Static Content Usage Statistics](https://trends.builtwith.com/cdn/GStatic-Google-Static-Content) - [Download List of All Websites using GStatic Google Static Content](https://trends.builtwith.com/websitelist/GStatic-Google-Static-Content)
 
 Google has off-loaded static content (Javascript/Images/CSS) to a different domain name in an effort to reduce bandwidth usage and increase network performance for the end user.
 
 ![jsDelivr](https://d3c1mi4ekssrlm.cloudfront.net/thumb/e4-97-7j-d6-79-40/n)[jsDelivr](https://trends.builtwith.com/cdn/jsDelivr)
 ---------------------------------------------------------------------------------------------------------------------------------
 
-[jsDelivr Usage Statistics](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr](https://trends.builtwith.com/websitelist/jsDelivr)
+[jsDelivr Usage Statistics](https://trends.builtwith.com/cdn/jsDelivr) - [Download List of All Websites using jsDelivr](https://trends.builtwith.com/websitelist/jsDelivr)
 
 A free CDN where Javascript developers can host their files. Encompasses MaxCDN, and BootstrapCDN.
 
 ![CloudFront](https://d2uu9ep1796sii.cloudfront.net/thumb/e6-59-87-q5-e8-94/n)[CloudFront](https://trends.builtwith.com/cdn/CloudFront)
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-[CloudFront Usage Statistics](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront](https://trends.builtwith.com/websitelist/CloudFront)
+[CloudFront Usage Statistics](https://trends.builtwith.com/cdn/CloudFront) - [Download List of All Websites using CloudFront](https://trends.builtwith.com/websitelist/CloudFront)
 
 Amazon CloudFront is a web service for content delivery. It integrates with other Amazon Web Services to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no commitments.
 
@@ -160,7 +160,7 @@ Amazon CloudFront is a web service for content delivery. It integrates with othe
 ![Loom](https://dbuflkpcdpfh3.cloudfront.net/thumb/j6-59-98-6z-2d-c9/n)[Loom](https://trends.builtwith.com/media/Loom)
 ----------------------------------------------------------------------------------------------------------------------
 
-[Loom Usage Statistics](https://trends.builtwith.com/media/Loom) - [Download List of All Websites using Loom](https://trends.builtwith.com/websitelist/Loom)
+[Loom Usage Statistics](https://trends.builtwith.com/media/Loom) - [Download List of All Websites using Loom](https://trends.builtwith.com/websitelist/Loom)
 
 Free Screen and video recording software.
 
@@ -171,7 +171,7 @@ Free Screen and video recording software.
 ![Netlify](https://d363qos3mhnap4.cloudfront.net/thumb/77-08-dd-68-d6-jj/n)[Netlify](https://trends.builtwith.com/cms/Netlify)
 ------------------------------------------------------------------------------------------------------------------------------
 
-[Netlify Usage Statistics](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify](https://trends.builtwith.com/websitelist/Netlify)
+[Netlify Usage Statistics](https://trends.builtwith.com/cms/Netlify) - [Download List of All Websites using Netlify](https://trends.builtwith.com/websitelist/Netlify)
 
 Netlify is a platform that automates your code to create web sites.
 
@@ -182,27 +182,27 @@ Netlify is a platform that automates your code to create web sites.
 ![Google Hosted Libraries](https://d363qos3mhnap4.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Hosted Libraries](https://trends.builtwith.com/javascript/Google-Hosted-Libraries)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Hosted Libraries Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
+[Google Hosted Libraries Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-Libraries) - [Download List of All Websites using Google Hosted Libraries](https://trends.builtwith.com/websitelist/Google-Hosted-Libraries)
 
 Google Hosted Libraries is a globally available content distribution network for the most popular, open-source JavaScript libraries.
 
 ##### ![Google Hosted jQuery](https://d2uu9ep1796sii.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Hosted jQuery](https://trends.builtwith.com/javascript/Google-Hosted-jQuery)
 
-[Google Hosted jQuery Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
+[Google Hosted jQuery Usage Statistics](https://trends.builtwith.com/javascript/Google-Hosted-jQuery) - [Download List of All Websites using Google Hosted jQuery](https://trends.builtwith.com/websitelist/Google-Hosted-jQuery)
 
 jQuery hoted at Google.
 
 ![Facebook for Websites](https://d3dpwkknyrpnnn.cloudfront.net/thumb/78-jd-31-5d-34-06/n)[Facebook for Websites](https://trends.builtwith.com/javascript/Facebook-for-Websites)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Facebook for Websites Usage Statistics](https://trends.builtwith.com/javascript/Facebook-for-Websites) - [Download List of All Websites using Facebook for Websites](https://trends.builtwith.com/websitelist/Facebook-for-Websites)
+[Facebook for Websites Usage Statistics](https://trends.builtwith.com/javascript/Facebook-for-Websites) - [Download List of All Websites using Facebook for Websites](https://trends.builtwith.com/websitelist/Facebook-for-Websites)
 
 Allows a user to make a website more sociable and connected with integrations from the hugely popular Facebook website.
 
 ![Facebook SDK](https://d1nywwyphm5jsu.cloudfront.net/thumb/78-jd-31-5d-34-06/n)[Facebook SDK](https://trends.builtwith.com/javascript/Facebook-SDK)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Facebook SDK Usage Statistics](https://trends.builtwith.com/javascript/Facebook-SDK) - [Download List of All Websites using Facebook SDK](https://trends.builtwith.com/websitelist/Facebook-SDK)
+[Facebook SDK Usage Statistics](https://trends.builtwith.com/javascript/Facebook-SDK) - [Download List of All Websites using Facebook SDK](https://trends.builtwith.com/websitelist/Facebook-SDK)
 
 JavaScript SDK enables you to access all of the features of the Graph API via JavaScript, and it provides a rich set of client-side functionality for authentication and sharing. It differs from Facebook Connect.
 
@@ -213,7 +213,7 @@ JavaScript SDK enables you to access all of the features of the Graph API via Ja
 ![Google Adsense](https://d2uu9ep1796sii.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Adsense](https://trends.builtwith.com/ads/Google-Adsense)
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Adsense Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense](https://trends.builtwith.com/websitelist/Google-Adsense)
+[Google Adsense Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense) - [Download List of All Websites using Google Adsense](https://trends.builtwith.com/websitelist/Google-Adsense)
 
 A contextual advertising solution for delivering Google AdWords ads that are relevant to site content pages.
 
@@ -221,7 +221,7 @@ A contextual advertising solution for delivering Google AdWords ads that are rel
 
 ##### ![Google Adsense Asynchronous](https://d2uu9ep1796sii.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Adsense Asynchronous](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous)
 
-[Google Adsense Asynchronous Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
+[Google Adsense Asynchronous Usage Statistics](https://trends.builtwith.com/ads/Google-Adsense-Asynchronous) - [Download List of All Websites using Google Adsense Asynchronous](https://trends.builtwith.com/websitelist/Google-Adsense-Asynchronous)
 
 Fully asynchronous version of the AdSense ad code.
 
@@ -319,7 +319,7 @@ Bootstrap is a toolkit from Twitter designed to kickstart development of webapps
 
 ##### ![Bootstrap 5.1.*](https://dbsikz63q4tyx.cloudfront.net/thumb/57-j1-ec-41-c9-3d/n)[Bootstrap 5.1.*](https://trends.builtwith.com/docinfo/Bootstrap-5.1.*)
 
-[Bootstrap 5.1.* Usage Statistics](https://trends.builtwith.com/docinfo/Bootstrap-5.1.*) - [Download List of All Websites using Bootstrap 5.1.*](https://trends.builtwith.com/websitelist/Bootstrap-5.1.*)
+[Bootstrap 5.1.* Usage Statistics](https://trends.builtwith.com/docinfo/Bootstrap-5.1.*) - [Download List of All Websites using Bootstrap 5.1.*](https://trends.builtwith.com/websitelist/Bootstrap-5.1.*)
 
 Bootstrap Version 5.1.*
 
@@ -365,7 +365,7 @@ This website includes instructions for HSTS loading that would allow it to be su
 ![Google Webmaster](https://d3nsmo0b6ncuv0.cloudfront.net/thumb/5z-6j-53-j0-c4-77/n)[Google Webmaster](https://trends.builtwith.com/Web-Master/Google-Webmaster)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
+[Google Webmaster Usage Statistics](https://trends.builtwith.com/Web-Master/Google-Webmaster) - [Download List of All Websites using Google Webmaster](https://trends.builtwith.com/websitelist/Google-Webmaster)
 
 Webmaster tools provide you with a free and easy way to make your site more Google-friendly.
 
@@ -376,7 +376,7 @@ Webmaster tools provide you with a free and easy way to make your site more Goog
 ![Content Delivery Network](https://deo39crpw7zzn.cloudfront.net/thumb/ee-d6-z4-q2-dz-21/n)[Content Delivery Network](https://trends.builtwith.com/CDN/Content-Delivery-Network)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Content Delivery Network Usage Statistics](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
+[Content Delivery Network Usage Statistics](https://trends.builtwith.com/CDN/Content-Delivery-Network) - [Download List of All Websites using Content Delivery Network](https://trends.builtwith.com/websitelist/Content-Delivery-Network)
 
 This page contains links that give the impression that some of the site contents are stored on a content delivery network.
 
@@ -531,4 +531,4 @@ Get a notification when netlify.app adds new technologies.
 
 ###### Suggest a Technology
 
-Can't find the technology you are looking for? [Send us a su](https://builtwith.com/suggest)
+Can't find the technology you are looking for? [Send us a su](https://builtwith.com/suggest)

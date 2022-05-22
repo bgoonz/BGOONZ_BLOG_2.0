@@ -3,8 +3,8 @@ title: Reference
 weight: 0
 excerpt: helpful reference guides
 seo:
-    title: ''
-    description: ''
+    title: 'helpful reference guides'
+    description: 'helpful reference guides'
     robots: []
     extra: []
 template: docs

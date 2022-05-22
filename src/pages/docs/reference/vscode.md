@@ -1,25 +1,25 @@
 ---
-title: vscode
+title: Getting Started With VSCode
 weight: 0
 seo:
-    title: vscode
-    description: This is the vscode page
+    title: Getting Started With VSCode
+    description: This is the Getting Started With VSCode page
     extra:
         - name: 'og:type'
           value: website
           keyName: property
         - name: 'og:title'
-          value: vscode
+          value: Getting Started With VSCode
           keyName: property
         - name: 'og:description'
-          value: This is the vscode page
+          value: This is the Getting Started With VSCode page
           keyName: property
         - name: 'twitter:card'
           value: summary
         - name: 'twitter:title'
-          value: vscode
+          value: Getting Started With VSCode
         - name: 'twitter:description'
-          value: This is the vscode page
+          value: This is the Getting Started With VSCode page
 template: docs
 ---
 
