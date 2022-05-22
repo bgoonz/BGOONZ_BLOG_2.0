@@ -282,9 +282,7 @@ Framework-specific:
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" class="markup--anchor markup--h3-anchor">markdownlint</a>
 
-> _Linter for_ <a href="https://github.com/DavidAnson/markdownlint" class="markup--anchor markup--blockquote-anchor">
-> <em>markdownlint</em>
-> </a>_._
+> _Linter for_ <a href="https://github.com/DavidAnson/markdownlint" class="markup--anchor markup--blockquote-anchor"> > <em>markdownlint</em> > </a>_._
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" class="markup--anchor markup--h3-anchor">Markdown All in One</a>
 
@@ -494,9 +492,7 @@ These extensions provide slightly different sets of features. While the first on
 <img src="https://cdn-images-1.medium.com/max/800/0*x8F97F4AdSvvtehT.png" class="graf-image" />
 </figure>### <a href="https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github" class="markup--anchor markup--h3-anchor">GitHub</a>
 
-> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ <a href="https://github.com/KnisterPeter/vscode-github/blob/master/README.md" class="markup--anchor markup--blockquote-anchor">
-> <em>README.md</em>
-> </a> _on how to get started with the setup for this extension._
+> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ <a href="https://github.com/KnisterPeter/vscode-github/blob/master/README.md" class="markup--anchor markup--blockquote-anchor"> > <em>README.md</em> > </a> _on how to get started with the setup for this extension._
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor" class="markup--anchor markup--h3-anchor">GitHub Pull Request Monitor</a>
 
@@ -558,9 +554,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode" class="markup--anchor markup--h3-anchor">ngrok for VSCode</a>
 
-> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ <a href="https://ngrok.com/" class="markup--anchor markup--blockquote-anchor">
-> <em>ngrok</em>
-> </a> _from the VSCode command palette_
+> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ <a href="https://ngrok.com/" class="markup--anchor markup--blockquote-anchor"> > <em>ngrok</em> > </a> _from the VSCode command palette_
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif" class="graf-image" />

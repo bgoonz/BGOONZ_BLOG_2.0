@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/reference-type"
-- <a href="reference-type.html"
-- <a href="https://es.javascript.info/reference-type"
-- <a href="https://fr.javascript.info/reference-type"
-- <a href="https://it.javascript.info/reference-type"
-  reference-type"
+-   <a href="https://ar.javascript.info/reference-type"
+-   <a href="reference-type.html"
+-   <a href="https://es.javascript.info/reference-type"
+-   <a href="https://fr.javascript.info/reference-type"
+-   <a href="https://it.javascript.info/reference-type"
+    reference-type"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/reference-type"
-- <a href="
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/reference-type"
+-   <a href="https://ko.javascript.info/reference-type"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/reference-type"
 
 We want to make this open-source project available for people all around the world.
 
@@ -109,9 +109,9 @@ The Reference Type is a “specification type”. We can’t explicitly use it, 
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
-- `base` is the object.
-- `name` is the property name.
-- `strict` is true if `use strict` is in effect.
+-   `base` is the object.
+-   `name` is the property name.
+-   `strict` is true if `use strict` is in effect.
 
 The result of a property access `user.hi` is not a function, but a value of Reference Type. For `user.hi` in strict mode it is:
 
@@ -255,23 +255,23 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
-- <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
-- <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
+-   <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
+-   <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
+-   <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -279,7 +279,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/04-reference-type" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

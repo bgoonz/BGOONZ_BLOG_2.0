@@ -1225,7 +1225,7 @@ export default class Submenu extends React.Component {
 }
 ```
 
-``` js
+````js
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -1286,14 +1286,15 @@ export default {
 
 # Templates
 
-```
+````
 
 ├── advanced.js
 ├── blog.js
 ├── docs.js
 ├── page.js
 └── post.js
-```
+
+````
 
 
 ```js
@@ -1327,10 +1328,9 @@ export default class Advanced extends React.Component {
         );
     }
 }
-```
+````
 
 ---
-
 
 ```js
 import React from 'react';
@@ -1419,7 +1419,6 @@ export default class Blog extends React.Component {
 
 ---
 
-
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1496,7 +1495,6 @@ export default class Docs extends React.Component {
 
 ---
 
-
 ```js
 import React from 'react';
 import _ from 'lodash';
@@ -1546,59 +1544,60 @@ export default class Page extends React.Component {
 
 ---
 
-
 ```js
-import  React from 'react';
+import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 
-import {Layout} from '../components/index';
-import {toStyleObj, withPrefix, htmlToReact} from '../utils';
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, htmlToReact } from '../utils';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
-  query($url: String) {
-    sitePage(path: {eq: $url}) {
-      id
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
     }
-  }
 `;
 
 export default class Post extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-              <article className="post post-full">
-                <header className="post-header has-gradient outer">
-                  {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                  <div className="bg-img" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + '\')')}/>
-                  )}
-                  <div className="inner-sm">
-                    <div className="post-meta">
-                      <time className="published" dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}</time>
+                <article className="post post-full">
+                    <header className="post-header has-gradient outer">
+                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
+                            <div
+                                className="bg-img"
+                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
+                            />
+                        )}
+                        <div className="inner-sm">
+                            <div className="post-meta">
+                                <time
+                                    className="published"
+                                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
+                                >
+                                    {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
+                                </time>
+                            </div>
+                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                <div className="post-subtitle">{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
+                            )}
+                        </div>
+                    </header>
+                    <div className="inner-md outer">
+                        <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
                     </div>
-                    <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                    {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                    <div className="post-subtitle">
-                      {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}
-                    </div>
-                    )}
-                  </div>
-                </header>
-                <div className="inner-md outer">
-                  <div className="post-content">
-                    {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                  </div>
-                </div>
-              </article>
+                </article>
             </Layout>
         );
     }
 }
-
-
 ```
-</details>
 
+</details>

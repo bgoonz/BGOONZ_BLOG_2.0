@@ -53,10 +53,6 @@ Now a user can search your site (or the pages you want indexed), to find all pag
 <meta name="keywords" content="keyword1, keyword2, keyword3 " />
 ```
 
-
-
-
-
 ---
 
 1
@@ -129,17 +125,16 @@ Now a user can search your site (or the pages you want indexed), to find all pag
 
 ```
 
-
 ---
-
-
 
 # How to Design the Perfect Search Bar for Your Website
 
 > ## Excerpt
+>
 > Learn the fundamentals of search bar design to help users find the content they want quickly and easily.
 
 ---
+
 Have you ever landed on a website looking for something, but been unsure where to find it?
 
 You might have skimmed the menus and scrolled down the page a bit, but ultimately you couldn’t find the exact product/post/article you had in mind. Frustrating, right?
@@ -162,7 +157,7 @@ Also, if users land on your homepage with a specific piece of content, category,
 
 If you’re still unsure, you can add a search feature and [track user activity](https://blog.hubspot.com/sales/website-activity) to determine whether your search bar is being utilized (and, if so, whether it’s being used effectively), then decide whether to keep or scrap it.
 
-### [Download Our Free UX Research & Testing Kit](https://blog.hubspot.com/cs/c/?cta_guid=8c4d5bb5-117a-409a-a6ec-1b2cbd38ebf1&signature=AAH58kFaKhCtPr5zv6BhqSi41R3HdIvsyA&pageId=35700119037&placement_guid=6c3ff587-7525-4d62-b870-13a85b7c0868&click=58b3f10e-947f-4fc8-b860-fd207d3d2c00&hsutk=8d2d69975cf15cde180092afb2aa5c4f&canon=https%3A%2F%2Fblog.hubspot.com%2Fwebsite%2Fsearch-bar-design&portal_id=53&redirect_url=APefjpF2iY51UCZP2Szdl2N_Uf31EbNGoqTtgOh66pd4EN3KzJtO9i6cOp4wopsxbaEs1_RTl33kY8Bla3PJwOoPeepY8Ik1p0wzNVr07K-Po2vTWdqxcOiHanP2Sz6Cl6kwEIdeCzOMEPxXS0cYXKnQjXUOt1rxIQ&__hstc=20629287.8d2d69975cf15cde180092afb2aa5c4f.1638298114286.1638298114286.1638298114286.1&__hssc=20629287.1.1638298114286&__hsfp=4046790836&contentType=blog-post "Download Our Free UX Research & Testing Kit")
+### [Download Our Free UX Research & Testing Kit](https://blog.hubspot.com/cs/c/?cta_guid=8c4d5bb5-117a-409a-a6ec-1b2cbd38ebf1&signature=AAH58kFaKhCtPr5zv6BhqSi41R3HdIvsyA&pageId=35700119037&placement_guid=6c3ff587-7525-4d62-b870-13a85b7c0868&click=58b3f10e-947f-4fc8-b860-fd207d3d2c00&hsutk=8d2d69975cf15cde180092afb2aa5c4f&canon=https%3A%2F%2Fblog.hubspot.com%2Fwebsite%2Fsearch-bar-design&portal_id=53&redirect_url=APefjpF2iY51UCZP2Szdl2N_Uf31EbNGoqTtgOh66pd4EN3KzJtO9i6cOp4wopsxbaEs1_RTl33kY8Bla3PJwOoPeepY8Ik1p0wzNVr07K-Po2vTWdqxcOiHanP2Sz6Cl6kwEIdeCzOMEPxXS0cYXKnQjXUOt1rxIQ&__hstc=20629287.8d2d69975cf15cde180092afb2aa5c4f.1638298114286.1638298114286.1638298114286.1&__hssc=20629287.1.1638298114286&__hsfp=4046790836&contentType=blog-post 'Download Our Free UX Research & Testing Kit')
 
 ## Search Bar Design Best Practices
 

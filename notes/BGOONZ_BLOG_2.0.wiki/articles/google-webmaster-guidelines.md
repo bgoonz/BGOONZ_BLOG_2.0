@@ -1,4 +1,4 @@
-# Webmaster Guidelines | Google Search Central  |  Google Developers
+# Webmaster Guidelines | Google Search Central | Google Developers
 
 > ## Excerpt
 >
@@ -92,7 +92,7 @@ If your site violates one or more of these guidelines, then Google may take [man
 
 ---
 
-# Create Crawlable Links | Google Search Central  |  Google Developers
+# Create Crawlable Links | Google Search Central | Google Developers
 
 > ## Excerpt
 >
@@ -133,7 +133,7 @@ Ensure that the URL linked to by your `<a>` tag is an actual web address that Go
 
 ---
 
-# What Is a Sitemap | Google Search Central  |  Google Developers
+# What Is a Sitemap | Google Search Central | Google Developers
 
 > ## Excerpt
 >
@@ -174,7 +174,7 @@ If you decided that you need a sitemap, [learn more about how to create one](htt
 
 ---
 
-# Robots.txt Introduction and Guide | Google Search Central  |  Google Developers
+# Robots.txt Introduction and Guide | Google Search Central | Google Developers
 
 > ## Excerpt
 >
