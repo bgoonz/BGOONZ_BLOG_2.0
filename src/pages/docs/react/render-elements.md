@@ -5,13 +5,12 @@ weight: 0
 
 excerpt: lorem-ipsum
 seo:
-    title: ''    
+    title: ''
     description: ''
     robots: []
     extra: []
 template: docs
 ---
-
 
 # Rendering Elements&#xA;&#xA;
 
