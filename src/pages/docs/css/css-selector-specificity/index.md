@@ -3,17 +3,18 @@ title: CSS Selector Specificity
 template: docs
 excerpt: Specificity is a weight that is applied to a given CSS declaration
 ---
+
 # Specificity
 
 **Specificity** is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#selectors).
 
-## [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#how_is_specificity_calculated "Permalink to How is specificity calculated?")
+## [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#how_is_specificity_calculated 'Permalink to How is specificity calculated?')
 
 Specificity is a weight that is applied to a given CSS declaration, determined by the number of each [selector type](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types) in the matching selector. When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per CSS rules, [directly targeted elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#directly_targeted_elements_vs._inherited_styles) will always take precedence over rules which an element inherits from its ancestor.
 
 **Note:** [Proximity of elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#tree_proximity_ignorance) in the document tree has no effect on the specificity.
 
-### [Selector Types](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types "Permalink to Selector Types")
+### [Selector Types](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types 'Permalink to Selector Types')
 
 The following list of selector types increases by specificity:
 
@@ -27,7 +28,7 @@ For more information, visit: ["Specificity" in "Cascade and inheritance"](https:
 
 Inline styles added to an element (e.g., `style="font-weight: bold;"`) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.
 
-### [The !important exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_!important_exception "Permalink to The !important exception")
+### [The !important exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_!important_exception 'Permalink to The !important exception')
 
 When an `important` rule is used on a style declaration, this declaration overrides any other declarations. Although technically `!important` has nothing to do with specificity, it interacts directly with it. Using `!important,` however, is **bad practice** and should be avoided because it makes debugging more difficult by breaking the natural [cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) in your stylesheets. When two conflicting declarations with the `!important` rule are applied to the same element, the declaration with a greater specificity will be applied.
 
@@ -42,33 +43,33 @@ When an `important` rule is used on a style declaration, this declaration overri
 
 1.  Make better use of the CSS cascade
 2.  Use more specific rules. By indicating one or more elements before the element you're selecting, the rule becomes more specific and gets higher priority:
-    
+
     ```
     <div id="test">
       <span>Text</span>
     </div>
     ```
-    
+
     Copy to Clipboard
-    
+
     ```
     div#test span { color: green; }
     div span { color: blue; }
     span { color: red; }
     ```
-    
+
     Copy to Clipboard
-    
+
     No matter the order, text will be green because that rule is most specific. (Also, the rule for blue overwrites the rule for red, notwithstanding the order of the rules)
+
 3.  As a nonsense special case for (2), duplicate simple selectors to increase specificity when you have nothing more to specify.
-    
+
     ```
     #myId#myId span { color: yellow; }
     .myClass.myClass span { color: orange; }
     ```
-    
+
     Copy to Clipboard
-    
 
 #### How !important can be used:
 
@@ -156,7 +157,7 @@ Including an id as part of an attribute selector instead of as an id selector gi
 -   [https://stackoverflow.com/questions/11178673/how-to-override-important](https://stackoverflow.com/questions/11178673/how-to-override-important)
 -   [https://stackoverflow.com/questions/2042497/when-to-use-important-to-save-the-day-when-working-with-css](https://stackoverflow.com/questions/2042497/when-to-use-important-to-save-the-day-when-working-with-css)
 
-### [The :is() and :not() exceptions](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_is_and_not_exceptions "Permalink to The :is() and :not() exceptions")
+### [The :is() and :not() exceptions](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_is_and_not_exceptions 'Permalink to The :is() and :not() exceptions')
 
 The matches-any pseudo-class [`:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) Experimental and the negation pseudo-class [`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) are _not_ considered a pseudo-class in the specificity calculation. But selectors placed into the pseudo-class count as normal selectors when determining the count of [selector types](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types).
 
@@ -191,7 +192,7 @@ Copy to Clipboard
 
 <iframe class="sample-code-frame" title="The is and not exceptions sample" id="frame_the_is_and_not_exceptions" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_is_and_not_exceptions.html" loading="lazy"></iframe>
 
-### [The :where() exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_where_exception "Permalink to The :where() exception")
+### [The :where() exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_where_exception 'Permalink to The :where() exception')
 
 The specificity-adjustment pseudo-class [`:where()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:where) Experimental always has its specificity replaced with zero.
 
@@ -243,7 +244,7 @@ Copy to Clipboard
 
 <iframe class="sample-code-frame" title="The where exception sample" id="frame_the_where_exception" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_where_exception.html" loading="lazy"></iframe>
 
-### [Form-based specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#form-based_specificity "Permalink to Form-based specificity")
+### [Form-based specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#form-based_specificity 'Permalink to Form-based specificity')
 
 Specificity is based on the form of a selector. In the following case, the selector `*[id="foo"]` counts as an attribute selector for the purpose of determining the selector's specificity, even though it selects an ID.
 
@@ -275,7 +276,7 @@ Copy to Clipboard
 
 This is because it matches the same element but the ID selector has a higher specificity.
 
-### [Tree proximity ignorance](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#tree_proximity_ignorance "Permalink to Tree proximity ignorance")
+### [Tree proximity ignorance](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#tree_proximity_ignorance 'Permalink to Tree proximity ignorance')
 
 The proximity of an element to other elements that are referenced in a given selector has no impact on specificity. The following style declaration ...
 
@@ -309,7 +310,7 @@ Copy to Clipboard
 
 This is because the two declarations have equal [selector type](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types) counts, but the `html h1` selector is declared last.
 
-### [Directly targeted elements vs. inherited styles](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#directly_targeted_elements_vs._inherited_styles "Permalink to Directly targeted elements vs. inherited styles")
+### [Directly targeted elements vs. inherited styles](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#directly_targeted_elements_vs._inherited_styles 'Permalink to Directly targeted elements vs. inherited styles')
 
 Styles for a directly targeted element will always take precedence over inherited styles, regardless of the specificity of the inherited rule. This CSS ...
 
