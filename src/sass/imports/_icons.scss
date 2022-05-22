@@ -1,6 +1,6 @@
 // SVG icons
 .icon {
-  color: inherit;
+  color: transparent;
   fill: currentColor;
   flex-shrink: 0;
   height: 1em;
@@ -13,7 +13,7 @@
 .icon-close {
   background: currentColor;
   border-radius: 1px;
-  color: inherit;
+  color: transparent;
   height: 2px;
   left: 50%;
   margin-top: -1px;
