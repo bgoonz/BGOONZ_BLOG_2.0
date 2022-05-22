@@ -32,7 +32,8 @@ Variables that don't explicitly get assigned an initial value have the value
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 Since ES2015, `let` and `const` can be used in addition to `var`. We will learn
 how they differ from `var` later. For now, lets have a look how `const` differs
@@ -143,7 +144,8 @@ As we will see in the following slides, objects belong to different kinds of
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 ES2015 introduces a 6th primitive data type: _[Symbol][]_. Symbols are _unique_
 and _immutable_ values.

@@ -4,8 +4,8 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
-image: psql-diagram.jpg
-thumb_image: psql-diagram.jpg
+image: images/psql-diagram.jpg
+thumb_image: images/psql-diagram.jpg
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:

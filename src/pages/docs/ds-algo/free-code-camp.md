@@ -1008,11 +1008,15 @@ void postOrder(struct node* root) {
 
 ### Relevant videos on freeCodeCamp YouTube channel
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0"></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0">
+</iframe>
+<br>
 
 ## And Binary Search Tree: Traversal and Height
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid1"></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid1">
+</iframe>
+<br>
 
 ### Following are common types of Binary Trees:
 

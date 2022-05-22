@@ -36,7 +36,9 @@ template: docs
 # Zumzi Video Conference:
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%  width="1000px" height="1400px"
-        src="https://zumzi-chat-messenger.vercel.app/web/login.html"></iframe><br>
+        src="https://zumzi-chat-messenger.vercel.app/web/login.html">
+</iframe>
+<br>
 
 ## Zumzi Live Demo
 
@@ -314,7 +316,8 @@ Ensure that you perform a hard reload so that you have the latest Mesibo Javascr
 
 The easiest way to install Mesibo Javascript SDK is to include following in `<HEAD>` section of your HTML file:
 
-    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
+    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js">
+</script>
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.
 

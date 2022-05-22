@@ -40,7 +40,8 @@ both of which are explained in more detail in the next slides.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2016**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2016**
 
 ES2016 introduces the _[exponentiation operator][pow]_:
 

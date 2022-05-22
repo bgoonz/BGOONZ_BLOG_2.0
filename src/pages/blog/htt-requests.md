@@ -5,8 +5,8 @@ subtitle: What is HTTP
 excerpt: HTTP is a protocol, or a definite set of rules, for accessing resources
   on the web.
 date: 2022-04-20T06:40:21.724Z
-image: https://i.imgur.com/hXISkxy.png
-thumb_image: https://i.imgur.com/hXISkxy.png
+image: images/https://i.imgur.com/hXISkxy.png
+thumb_image: images/https://i.imgur.com/hXISkxy.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

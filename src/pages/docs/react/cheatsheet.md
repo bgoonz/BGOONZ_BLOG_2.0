@@ -17,7 +17,9 @@ template: docs
      title="react patterns"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe><br>
+   >
+</iframe>
+<br>
 
 ## React Cheat Sheet
 
@@ -519,11 +521,13 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 
 ```
 const style = { height: 10 }
-return <div style={style}></div>
+return <div style={style}>
+</div>
 ```
 
 ```
-return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}>
+</div>
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -802,13 +806,15 @@ MyCo.propTypes = {
 
 # React:
 
--   `<script src="https://unpkg.com/react@15/dist/react.js"></script>`
+-   `<script src="https://unpkg.com/react@15/dist/react.js">
+</script>`
 -   `$ npm install react --save`
 -   `$ bower install react --save`
 
 React DOM:
 
--   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>`
+-   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js">
+</script>`
 -   `$ npm install react-dom`
 -   `$ bower install react-dom --save`
 
@@ -943,7 +949,8 @@ React.Children.only(children)
 React.Children.toArray(children)
 
 // The React.Fragment component lets you return multiple elements in a render() method without creating an additional DOM element
-// You can also use it with the shorthand <></> syntax.
+// You can also use it with the shorthand <>
+</> syntax.
 React.Fragment
 
 /* *******************************************************************************************
