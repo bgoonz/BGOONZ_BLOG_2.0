@@ -3,17 +3,18 @@ title: PostgreSQL Setup
 weight: 0
 excerpt: PostgreSQL Setup
 seo:
-  title: ""
-  description: ""
-  robots: []
-  extra: []
-  type: stackbit_page_meta
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
 ---
 
+
 # PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe><br>
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
 If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
 
@@ -49,10 +50,10 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" /></figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
-- <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
-- <span id="d4d0">Thanks for the welcome. Next.</span>
-- <span id="1283">Yeah, that's a good place to install it. Next.</span>
-- <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
+-   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
+-   <span id="d4d0">Thanks for the welcome. Next.</span>
+-   <span id="1283">Yeah, that's a good place to install it. Next.</span>
+-   <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" /></figure>- <span id="e09d">Also, great looking directory. Thanks. Next.</span>
 
@@ -60,9 +61,9 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 ### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it's not worth it.
 
-- <span id="25b7">Sure. 5432. Good to go. Next.</span>
-- <span id="28be">Not even sure what that means. Default! Next.</span>
-- <span id="b378">Yep. Looks good. Next.</span>
+-   <span id="25b7">Sure. 5432. Good to go. Next.</span>
+-   <span id="28be">Not even sure what that means. Default! Next.</span>
+-   <span id="b378">Yep. Looks good. Next.</span>
 
 Insert pop culture reference to pass the time
 
@@ -332,4 +333,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a>
 
-August 6, 2021.
+ August 6, 2021.
