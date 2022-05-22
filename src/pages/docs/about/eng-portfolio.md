@@ -27,7 +27,7 @@ template: docs
 
 # Portfolio
 
-<iframe src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21940107&authkey=ABhIgEQ32UYlvMU" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+<iframe sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21940107&authkey=ABhIgEQ32UYlvMU" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/bold-surf-xfsiq?fontsize=14&hidenavigation=1&theme=dark&view=preview"
 style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
