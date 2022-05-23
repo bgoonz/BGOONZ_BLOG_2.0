@@ -12,9 +12,11 @@ categories:
   - src/data/categories/google.yaml
 tags:
   - src/data/tags/cms.yaml
+  - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/event-handeling.md
+  - src/pages/blog/google-analytics.md
 cmseditable: true
 ---
 
