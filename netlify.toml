@@ -2,11 +2,3 @@
 publish = "public"
 command = "npm run build"
 
-[[plugins]]
-package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ['master', 'develop' ]
-  disabled = false
-  pathPrefix = "/docs"
-  customDomain = "https://bgoonz-blog.netlify.app/"
-  renderJavaScript = true
