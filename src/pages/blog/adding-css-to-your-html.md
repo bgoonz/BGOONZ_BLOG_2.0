@@ -4,19 +4,20 @@ template: post
 subtitle: "Html &Css for beginners "
 excerpt: Add css to your html
 date: 2022-04-10T11:11:00.257Z
-image: /blog/css.webp
-thumb_image: /blog/css.webp
+image: https://imgs.search.brave.com/cehHw-ilYRSegAPhZiwKPGsYmFyN_HiDBO9xjfzxlTM/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9zYWJl/LmlvL2NsYXNzZXMv/Y3NzL2hlcm8ucG5n
+thumb_image: https://imgs.search.brave.com/cehHw-ilYRSegAPhZiwKPGsYmFyN_HiDBO9xjfzxlTM/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9zYWJl/LmlvL2NsYXNzZXMv/Y3NzL2hlcm8ucG5n
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/html.yaml
   - src/data/categories/css.yaml
 tags:
-  - src/data/tags/career-1.yaml
+  - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/adding-css-to-your-html.md
   - src/pages/blog/using-the-dom.md
+  - src/pages/blog/front-end-interview-questions-part-2.md
 cmseditable: true
 ---
 # Adding CSS To Your HTML
