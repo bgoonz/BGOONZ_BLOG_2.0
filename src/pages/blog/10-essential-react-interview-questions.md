@@ -9,11 +9,13 @@ thumb_image: https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/react.yaml
+  - src/data/categories/react.yaml
+tags:
+  - src/data/tags/react.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/react-semantics.md
-    - src/pages/blog/react-state.md
+  - src/pages/blog/react-semantics.md
+  - src/pages/blog/react-state.md
 cmseditable: true
 ---
 
