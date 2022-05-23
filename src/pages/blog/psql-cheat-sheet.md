@@ -9,12 +9,12 @@ thumb_image: /blog/psql.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/db.yaml
+    - src/data/categories/db.yaml
 tags:
-  - src/data/tags/psql.yaml
+    - src/data/tags/psql.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/psql-cheat-sheet.md
+    - src/pages/blog/psql-cheat-sheet.md
 cmseditable: true
 ---
 
@@ -391,6 +391,6 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
-* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-* [PostgreSQL Exercises](https://pgexercises.com)
-* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+-   [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+-   [PostgreSQL Exercises](https://pgexercises.com)
+-   [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
