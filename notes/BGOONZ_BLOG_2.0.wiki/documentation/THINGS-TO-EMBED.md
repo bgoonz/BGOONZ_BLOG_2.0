@@ -1,6 +1,9 @@
 -   [Dev Journal](https://dev-journal42.netlify.app/)
 
-<!--<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>-->
+<!--<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4" data-share-badge-host="https://www.credly.com">
+</div>
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js">
+</script>-->
 
 -   [**Graduation Certificate**](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)
 

@@ -7,7 +7,8 @@ Inject analytics or other scripts into the HTML of your site.---
     scroll2top
 
     ```html
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+</script>
     <script type="text/javascript">
         function hideLoader() {
             $('#loading').hide();
@@ -50,8 +51,10 @@ Inject analytics or other scripts into the HTML of your site.---
         frameborder="0"
         allowtransparency="true"
         allow="encrypted-media"
-    ></iframe
-    ><br />
+    >
+</iframe
+    >
+<br />
     ```
 
 ---
@@ -85,7 +88,8 @@ Inject analytics or other scripts into the HTML of your site.---
     ```html
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -131,10 +135,12 @@ Inject analytics or other scripts into the HTML of your site.---
     addThis
 
     ```html
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
 ---
@@ -144,7 +150,8 @@ Inject analytics or other scripts into the HTML of your site.---
     analytics-n-addsense
 
     ```html
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -161,13 +168,17 @@ Inject analytics or other scripts into the HTML of your site.---
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript
-        ><iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
-    ></noscript>
+        >
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden">
+</iframe
+    >
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -178,7 +189,8 @@ Inject analytics or other scripts into the HTML of your site.---
         gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     ```
 
 ---
@@ -189,11 +201,13 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <!--- This example uses jQuery: -->
-    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js">
+</script>
 
     <!-- Make sure to include Nelify's authentication library -->
     <!-- Also available via npm as netlify-auth-providers -->
-    <script src="https://unpkg.com/netlify-auth-providers"></script>
+    <script src="https://unpkg.com/netlify-auth-providers">
+</script>
 
     <script>
         $(function () {
@@ -219,8 +233,11 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <h1>GitHub Auth Demo:</h1>
-    <p><a href="#" id="login">Authenticate</a></p>
-    <p id="output"></p>
+    <p>
+<a href="#" id="login">Authenticate</a>
+</p>
+    <p id="output">
+</p>
     ```
 
 ---
@@ -230,7 +247,8 @@ Inject analytics or other scripts into the HTML of your site.---
     content-authoring
 
     ```html
-    <script src="https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js">
+</script>
     ```
 
 ---
@@ -241,7 +259,8 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
         algoliasearchNetlify({
             appId: 'BAGY237H21',
@@ -285,5 +304,6 @@ Inject analytics or other scripts into the HTML of your site.---
     algolia-search-cdn
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js">
+</script>
     ```

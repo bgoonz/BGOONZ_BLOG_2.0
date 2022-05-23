@@ -3,22 +3,14 @@ title: Text Search
 weight: 0
 excerpt:
 seo:
-  title: "Text Search"
-  description: "Algolia Search is a powerful text search engine that makes it easy to find the right content in your website."
-  robots: []
-  extra: []
-  type: stackbit_page_meta
-template: docs
----
-
-# Algolia Full Text Search
-
-## Aside: Selecting A Searc Engine
 
 <details>
 
-<summary> <h5><b>➡️_____Click Here For Dropdown_____➡️</b><u>((⬇️<i>Selecting A Searc Engine (Jamstack Site)</i>⬇️))</u></h5></summary>
-
+<summary> <h5>
+<b>➡️_____Click Here For Dropdown_____➡️</b>
+<u>((⬇️<i>Selecting A Searc Engine (Jamstack Site)</i>⬇️))</u>
+</h5>
+</summary>
 ### Search in the Jamstack World
 
 > ## Excerpt

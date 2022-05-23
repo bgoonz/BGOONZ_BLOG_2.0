@@ -7,10 +7,13 @@ www.algolia.com/interface-demos/2e4a0ba7-4fc8-4ed3-ab24-9b3d53e9b894
      title="Nav Bar Examples (forked)"
       ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe><br>
+   >
+</iframe>
+<br>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
 <script type="text/javascript">
   algoliasearchNetlify({
     appId: 'O6OT9G9U8Z',
