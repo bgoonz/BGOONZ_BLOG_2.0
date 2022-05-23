@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
 (function(opts_) {
     /*
     Copyright The Closure Library Authors.
@@ -149,7 +151,7 @@
                         var h = c[f];
                         null != h &&
                             (b || (b = a),
-                                (b +=
+                            (b +=
                                     (b.length > a.length ? '&' : '') +
                                     encodeURIComponent(e) +
                                     '=' +
@@ -182,11 +184,11 @@
             ('explicit' !== a.parsetags ?
                 'complete' === document.readyState ||
                 'interactive' === document.readyState ?
-                (google.search.cse.element.go(), b && b()) :
-                google.setOnLoadCallback(function() {
-                    google.search.cse.element.go();
-                    b && b();
-                }, !0) :
+                    (google.search.cse.element.go(), b && b()) :
+                    google.setOnLoadCallback(function() {
+                        google.search.cse.element.go();
+                        b && b();
+                    }, !0) :
                 b && b());
     };
 
@@ -194,8 +196,8 @@
         return 'function' === typeof a ?
             a :
             'string' === typeof a && 'function' === typeof window[a] ?
-            window[a] :
-            null;
+                window[a] :
+                null;
     }
 
     function M() {
@@ -263,10 +265,10 @@
     }
     var O,
         G = opts_.usqp ?
-        {
-            usqp: opts_.usqp,
-        } :
-        {},
+            {
+                usqp: opts_.usqp,
+            } :
+            {},
         P = opts_.language.toLowerCase();
     O = opts_.cselibVersion ?
         J({
@@ -287,8 +289,8 @@
         U = ((R.ownerDocument && R.ownerDocument.defaultView) || window).document,
         V =
         null === (T = U.querySelector) || void 0 === T ?
-        void 0 :
-        T.call(U, 'script[nonce]');
+            void 0 :
+            T.call(U, 'script[nonce]');
     (S = V ? V.nonce || V.getAttribute('nonce') || '' : '') &&
     R.setAttribute('nonce', S);
     R.type = 'text/javascript';
@@ -298,18 +300,18 @@
         document.getElementsByTagName('head')[0].appendChild(
             N(
                 opts_.cselibVersion ?
-                E(K, {
-                    versionDir: opts_.cselibVersion,
-                    versionSlash: L,
-                    experiment: '',
-                    lang: opts_.language,
-                }) :
-                E(K, {
-                    versionDir: '',
-                    versionSlash: '',
-                    experiment: '',
-                    lang: opts_.language,
-                })
+                    E(K, {
+                        versionDir: opts_.cselibVersion,
+                        versionSlash: L,
+                        experiment: '',
+                        lang: opts_.language,
+                    }) :
+                    E(K, {
+                        versionDir: '',
+                        versionSlash: '',
+                        experiment: '',
+                        lang: opts_.language,
+                    })
             )
         );
         var W,
@@ -336,13 +338,13 @@
         resultSetSize: 'filtered_cse',
         enableOrderBy: true,
         orderByOptions: [{
-                label: 'Relevance',
-                key: '',
-            },
-            {
-                label: 'Date',
-                key: 'date',
-            },
+            label: 'Relevance',
+            key: '',
+        },
+        {
+            label: 'Date',
+            key: 'date',
+        },
         ],
         overlayResults: true,
         numTopRefinements: -1,

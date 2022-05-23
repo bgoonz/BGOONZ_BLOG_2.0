@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable linebreak-style */
 /*
  * reframe.js - Reframe.js: responsive iframes for embedded content
  * @version v2.2.7
@@ -9,8 +11,8 @@
     'object' == typeof exports && 'undefined' != typeof module ?
         (module.exports = t()) :
         'function' == typeof define && define.amd ?
-        define(t) :
-        ((e = e || self).reframe = t());
+            define(t) :
+            ((e = e || self).reframe = t());
 })(this, function() {
     'use strict';
     return function(e, t) {
@@ -40,8 +42,8 @@
                 (a.left = '0'),
                 (a.top = '0'),
                 r.parentNode.insertBefore(f, r),
-                    r.parentNode.removeChild(r),
-                    f.appendChild(r);
+                r.parentNode.removeChild(r),
+                f.appendChild(r);
             }
         }
     };
