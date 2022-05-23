@@ -4,15 +4,21 @@ template: post
 subtitle: In React, we write event handlers directly on the elements in our JSX
 excerpt: In React, we write event handlers directly on the elements in our JSX
 date: 2022-05-04T19:10:59.235Z
-image: images/react.png
-thumb_image: images/react.gif
+image: https://bgoonz-blog.netlify.app/images/react.gif
+thumb_image: https://bgoonz-blog.netlify.app/images/react.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/js.yaml
+  - src/data/categories/git.yaml
+tags:
+  - src/data/tags/react.yaml
+  - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/react-semantics.md
+  - src/pages/blog/10-essential-react-interview-questions.md
+  - src/pages/blog/front-end-interview-questions-part-2.md
 cmseditable: true
 ---
 
