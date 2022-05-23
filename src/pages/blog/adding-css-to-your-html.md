@@ -12,7 +12,7 @@ categories:
   - src/data/categories/html.yaml
   - src/data/categories/css.yaml
 tags:
-  - src/data/tags/html.yaml
+  - src/data/tags/career-1.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/adding-css-to-your-html.md
