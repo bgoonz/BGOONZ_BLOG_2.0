@@ -10,8 +10,8 @@ backend:
     branch: master
     open_authoring: true # allow external contributors without having to first give them access to the repository, their edits will be made on their own github repository and create a pull request automatically through the UI
 
-media_folder: /static/images/uploads # where media files such as images will be stored
-public_folder: /images/uploads # url to media files when deployed
+media_folder: /static/images # where media files such as images will be stored
+public_folder: /images/ # url to media files when deployed
 
 show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
 
