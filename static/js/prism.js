@@ -1,5 +1,6 @@
 /* PrismJS 1.28.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+graphql+markdown+markup-templating+php+pug+python+regex+yaml&plugins=autolinker+show-language+highlight-keywords+toolbar+copy-to-clipboard+download-button+treeview */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+graphql+markdown+markup-templating+php+pug+python+regex+yaml&plugins=autolinker+show-language+highlight-keywords+toolbar+copy-to-clipboard+download-button+treeview
+*/
 var _self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
     Prism = (function (e) {
         var n = /(?:^|\s)lang(?:uage)?-([\w-]+)(?=\s|$)/i,
@@ -23,13 +24,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                         return Object.prototype.toString.call(e).slice(8, -1);
                     },
                     objId: function (e) {
-                        return (
-                            e.__id ||
-                                Object.defineProperty(e, '__id', {
-                                    value: ++t
-                                }),
-                            e.__id
-                        );
+                        return e.__id || Object.defineProperty(e, '__id', { value: ++t }), e.__id;
                     },
                     clone: function e(n, t) {
                         var r, i;
@@ -149,12 +144,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                     a.util.setLanguage(n, i);
                     var o = n.parentElement;
                     o && 'pre' === o.nodeName.toLowerCase() && a.util.setLanguage(o, i);
-                    var s = {
-                        element: n,
-                        language: i,
-                        grammar: l,
-                        code: n.textContent
-                    };
+                    var s = { element: n, language: i, grammar: l, code: n.textContent };
 
                     function u(e) {
                         (s.highlightedCode = e),
@@ -187,11 +177,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                     else u(a.util.encode(s.code));
                 },
                 highlight: function (e, n, t) {
-                    var r = {
-                        code: e,
-                        grammar: n,
-                        language: t
-                    };
+                    var r = { code: e, grammar: n, language: t };
                     if ((a.hooks.run('before-tokenize', r), !r.grammar)) throw new Error('The language "' + r.language + '" has no grammar.');
                     return (r.tokens = a.tokenize(r.code, r.grammar)), a.hooks.run('after-tokenize', r), i.stringify(a.util.encode(r.tokens), r.language);
                 },
@@ -285,10 +271,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                                     M && u(n, w, M),
                                     L > 1)
                                 ) {
-                                    var I = {
-                                        cause: f + ',' + d,
-                                        reach: W
-                                    };
+                                    var I = { cause: f + ',' + d, reach: W };
                                     o(e, n, t, w.prev, A, I), g && I.reach > g.reach && (g.reach = I.reach);
                                 }
                             }
@@ -298,26 +281,14 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
         }
 
         function s() {
-            var e = {
-                    value: null,
-                    prev: null,
-                    next: null
-                },
-                n = {
-                    value: null,
-                    prev: e,
-                    next: null
-                };
+            var e = { value: null, prev: null, next: null },
+                n = { value: null, prev: e, next: null };
             (e.next = n), (this.head = e), (this.tail = n), (this.length = 0);
         }
 
         function u(e, n, t) {
             var r = n.next,
-                a = {
-                    value: t,
-                    prev: n,
-                    next: r
-                };
+                a = { value: t, prev: n, next: r };
             return (n.next = a), (r.prev = a), e.length++, a;
         }
 
@@ -386,14 +357,8 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
     })(_self);
 'undefined' != typeof module && module.exports && (module.exports = Prism), 'undefined' != typeof global && (global.Prism = Prism);
 (Prism.languages.markup = {
-    comment: {
-        pattern: /<!--(?:(?!<!--)[\s\S])*?-->/,
-        greedy: !0
-    },
-    prolog: {
-        pattern: /<\?[\s\S]+?\?>/,
-        greedy: !0
-    },
+    comment: { pattern: /<!--(?:(?!<!--)[\s\S])*?-->/, greedy: !0 },
+    prolog: { pattern: /<\?[\s\S]+?\?>/, greedy: !0 },
     doctype: {
         pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:[^<"'\]]|"[^"]*"|'[^']*'|<(?!!--)|<!--(?:[^-]|-(?!->))*-->)*\]\s*)?>/i,
         greedy: !0,
@@ -404,62 +369,36 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                 greedy: !0,
                 inside: null
             },
-            string: {
-                pattern: /"[^"]*"|'[^']*'/,
-                greedy: !0
-            },
+            string: { pattern: /"[^"]*"|'[^']*'/, greedy: !0 },
             punctuation: /^<!|>$|[[\]]/,
             'doctype-tag': /^DOCTYPE/i,
             name: /[^\s<>'"]+/
         }
     },
-    cdata: {
-        pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i,
-        greedy: !0
-    },
+    cdata: { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, greedy: !0 },
     tag: {
         pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/,
         greedy: !0,
         inside: {
             tag: {
                 pattern: /^<\/?[^\s>\/]+/,
-                inside: {
-                    punctuation: /^<\/?/,
-                    namespace: /^[^\s>\/:]+:/
-                }
+                inside: { punctuation: /^<\/?/, namespace: /^[^\s>\/:]+:/ }
             },
             'special-attr': [],
             'attr-value': {
                 pattern: /=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+)/,
                 inside: {
                     punctuation: [
-                        {
-                            pattern: /^=/,
-                            alias: 'attr-equals'
-                        },
-                        {
-                            pattern: /^(\s*)["']|["']$/,
-                            lookbehind: !0
-                        }
+                        { pattern: /^=/, alias: 'attr-equals' },
+                        { pattern: /^(\s*)["']|["']$/, lookbehind: !0 }
                     ]
                 }
             },
             punctuation: /\/?>/,
-            'attr-name': {
-                pattern: /[^\s>\/]+/,
-                inside: {
-                    namespace: /^[^\s>\/:]+:/
-                }
-            }
+            'attr-name': { pattern: /[^\s>\/]+/, inside: { namespace: /^[^\s>\/:]+:/ } }
         }
     },
-    entity: [
-        {
-            pattern: /&[\da-z]{1,8};/i,
-            alias: 'named-entity'
-        },
-        /&#x?[\da-f]{1,8};/i
-    ]
+    entity: [{ pattern: /&[\da-z]{1,8};/i, alias: 'named-entity' }, /&#x?[\da-f]{1,8};/i]
 }),
     (Prism.languages.markup.tag.inside['attr-value'].inside.entity = Prism.languages.markup.entity),
     (Prism.languages.markup.doctype.inside['internal-subset'].inside = Prism.languages.markup),
@@ -476,15 +415,9 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
             }),
                 (s.cdata = /^<!\[CDATA\[|\]\]>$/i);
             var t = {
-                'included-cdata': {
-                    pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i,
-                    inside: s
-                }
+                'included-cdata': { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, inside: s }
             };
-            t['language-' + e] = {
-                pattern: /[\s\S]+/,
-                inside: Prism.languages[e]
-            };
+            t['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
             var n = {};
             (n[a] = {
                 pattern: RegExp(
@@ -516,13 +449,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                                 alias: [e, 'language-' + e],
                                 inside: Prism.languages[e]
                             },
-                            punctuation: [
-                                {
-                                    pattern: /^=/,
-                                    alias: 'attr-equals'
-                                },
-                                /"|'/
-                            ]
+                            punctuation: [{ pattern: /^=/, alias: 'attr-equals' }, /"|'/]
                         }
                     }
                 }
@@ -561,29 +488,20 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
             inside: {
                 function: /^url/i,
                 punctuation: /^\(|\)$/,
-                string: {
-                    pattern: RegExp('^' + e.source + '$'),
-                    alias: 'url'
-                }
+                string: { pattern: RegExp('^' + e.source + '$'), alias: 'url' }
             }
         },
         selector: {
             pattern: RegExp('(^|[{}\\s])[^{}\\s](?:[^{};"\'\\s]|\\s+(?![\\s{])|' + e.source + ')*(?=\\s*\\{)'),
             lookbehind: !0
         },
-        string: {
-            pattern: e,
-            greedy: !0
-        },
+        string: { pattern: e, greedy: !0 },
         property: {
             pattern: /(^|[^-\w\xA0-\uFFFF])(?!\s)[-_a-z\xA0-\uFFFF](?:(?!\s)[-\w\xA0-\uFFFF])*(?=\s*:)/i,
             lookbehind: !0
         },
         important: /!important\b/i,
-        function: {
-            pattern: /(^|[^-a-z0-9])[-a-z0-9]+(?=\()/i,
-            lookbehind: !0
-        },
+        function: { pattern: /(^|[^-a-z0-9])[-a-z0-9]+(?=\()/i, lookbehind: !0 },
         punctuation: /[(){};:,]/
     }),
         (s.languages.css.atrule.inside.rest = s.languages.css);
@@ -592,27 +510,14 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
 })(Prism);
 Prism.languages.clike = {
     comment: [
-        {
-            pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
-            lookbehind: !0,
-            greedy: !0
-        },
-        {
-            pattern: /(^|[^\\:])\/\/.*/,
-            lookbehind: !0,
-            greedy: !0
-        }
+        { pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0, greedy: !0 },
+        { pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
     ],
-    string: {
-        pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
-        greedy: !0
-    },
+    string: { pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/, greedy: !0 },
     'class-name': {
         pattern: /(\b(?:class|extends|implements|instanceof|interface|new|trait)\s+|\bcatch\s+\()[\w.\\]+/i,
         lookbehind: !0,
-        inside: {
-            punctuation: /[.\\]/
-        }
+        inside: { punctuation: /[.\\]/ }
     },
     keyword: /\b(?:break|catch|continue|do|else|finally|for|function|if|in|instanceof|new|null|return|throw|try|while)\b/,
     boolean: /\b(?:false|true)\b/,
@@ -630,10 +535,7 @@ Prism.languages.clike = {
         }
     ],
     keyword: [
-        {
-            pattern: /((?:^|\})\s*)catch\b/,
-            lookbehind: !0
-        },
+        { pattern: /((?:^|\})\s*)catch\b/, lookbehind: !0 },
         {
             pattern:
                 /(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:['"]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
@@ -699,27 +601,17 @@ Prism.languages.clike = {
         constant: /\b[A-Z](?:[A-Z_]|\dx?)*\b/
     }),
     Prism.languages.insertBefore('javascript', 'string', {
-        hashbang: {
-            pattern: /^#!.*/,
-            greedy: !0,
-            alias: 'comment'
-        },
+        hashbang: { pattern: /^#!.*/, greedy: !0, alias: 'comment' },
         'template-string': {
             pattern: /`(?:\\[\s\S]|\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}|(?!\$\{)[^\\`])*`/,
             greedy: !0,
             inside: {
-                'template-punctuation': {
-                    pattern: /^`|`$/,
-                    alias: 'string'
-                },
+                'template-punctuation': { pattern: /^`|`$/, alias: 'string' },
                 interpolation: {
                     pattern: /((?:^|[^\\])(?:\\{2})*)\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}/,
                     lookbehind: !0,
                     inside: {
-                        'interpolation-punctuation': {
-                            pattern: /^\$\{|\}$/,
-                            alias: 'punctuation'
-                        },
+                        'interpolation-punctuation': { pattern: /^\$\{|\}$/, alias: 'punctuation' },
                         rest: Prism.languages.javascript
                     }
                 },
@@ -761,25 +653,16 @@ Prism.languages.clike = {
             }
         }
     },
-    string: {
-        pattern: /"""(?:[^"]|(?!""")")*"""|"(?:\\.|[^\\"\r\n])*"/,
-        greedy: !0
-    },
+    string: { pattern: /"""(?:[^"]|(?!""")")*"""|"(?:\\.|[^\\"\r\n])*"/, greedy: !0 },
     number: /(?:\B-|\b)\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
     boolean: /\b(?:false|true)\b/,
     variable: /\$[a-z_]\w*/i,
-    directive: {
-        pattern: /@[a-z_]\w*/i,
-        alias: 'function'
-    },
+    directive: { pattern: /@[a-z_]\w*/i, alias: 'function' },
     'attr-name': {
         pattern: /\b[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
         greedy: !0
     },
-    'atom-input': {
-        pattern: /\b[A-Z]\w*Input\b/,
-        alias: 'class-name'
-    },
+    'atom-input': { pattern: /\b[A-Z]\w*Input\b/, alias: 'class-name' },
     scalar: /\b(?:Boolean|Float|ID|Int|String)\b/,
     constant: /\b[A-Z][A-Z_\d]*\b/,
     'class-name': {
@@ -873,10 +756,12 @@ Prism.languages.clike = {
     });
 !(function (n) {
     function e(n) {
-        return (n = n.replace(/<inner>/g, function () {
-            return '(?:\\\\.|[^\\\\\n\r]|(?:\n|\r\n?)(?![\r\n]))';
-        })),
-        RegExp('((?:^|[^\\\\])(?:\\\\{2})*)(?:' + n + ')');
+        return (
+            (n = n.replace(/<inner>/g, function () {
+                return '(?:\\\\.|[^\\\\\n\r]|(?:\n|\r\n?)(?![\r\n]))';
+            })),
+            RegExp('((?:^|[^\\\\])(?:\\\\{2})*)(?:' + n + ')')
+        );
     }
     var t = '(?:\\\\.|``(?:[^`\r\n]|`(?!`))+``|`[^`\r\n]+`|[^\\\\|\r\n`])+',
         a = '\\|?__(?:\\|__)+\\|?(?:(?:\n|\r\n?)|(?![^]))'.replace(/__/g, function () {
@@ -898,10 +783,7 @@ Prism.languages.clike = {
                     }
                 }
             },
-            blockquote: {
-                pattern: /^>(?:[\t ]*>)*/m,
-                alias: 'punctuation'
-            },
+            blockquote: { pattern: /^>(?:[\t ]*>)*/m, alias: 'punctuation' },
             table: {
                 pattern: RegExp('^' + a + i + '(?:' + a + ')*', 'm'),
                 inside: {
@@ -909,19 +791,14 @@ Prism.languages.clike = {
                         pattern: RegExp('^(' + a + i + ')(?:' + a + ')*$'),
                         lookbehind: !0,
                         inside: {
-                            'table-data': {
-                                pattern: RegExp(t),
-                                inside: n.languages.markdown
-                            },
+                            'table-data': { pattern: RegExp(t), inside: n.languages.markdown },
                             punctuation: /\|/
                         }
                     },
                     'table-line': {
                         pattern: RegExp('^(' + a + ')' + i + '$'),
                         lookbehind: !0,
-                        inside: {
-                            punctuation: /\||:?-{3,}:?/
-                        }
+                        inside: { punctuation: /\||:?-{3,}:?/ }
                     },
                     'table-header-row': {
                         pattern: RegExp('^' + a + '$'),
@@ -950,10 +827,7 @@ Prism.languages.clike = {
                             pattern: /^(```.*(?:\n|\r\n?))[\s\S]+?(?=(?:\n|\r\n?)^```$)/m,
                             lookbehind: !0
                         },
-                        'code-language': {
-                            pattern: /^(```).+/,
-                            lookbehind: !0
-                        },
+                        'code-language': { pattern: /^(```).+/, lookbehind: !0 },
                         punctuation: /```/
                     }
                 }
@@ -962,17 +836,13 @@ Prism.languages.clike = {
                 {
                     pattern: /\S.*(?:\n|\r\n?)(?:==+|--+)(?=[ \t]*$)/m,
                     alias: 'important',
-                    inside: {
-                        punctuation: /==+$|--+$/
-                    }
+                    inside: { punctuation: /==+$|--+$/ }
                 },
                 {
                     pattern: /(^\s*)#.+/m,
                     lookbehind: !0,
                     alias: 'important',
-                    inside: {
-                        punctuation: /^#+|#+$/
-                    }
+                    inside: { punctuation: /^#+|#+$/ }
                 }
             ],
             hr: {
@@ -988,10 +858,7 @@ Prism.languages.clike = {
             'url-reference': {
                 pattern: /!?\[[^\]]+\]:[\t ]+(?:\S+|<(?:\\.|[^>\\])+>)(?:[\t ]+(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\)))?/,
                 inside: {
-                    variable: {
-                        pattern: /^(!?\[)[^\]]+/,
-                        lookbehind: !0
-                    },
+                    variable: { pattern: /^(!?\[)[^\]]+/, lookbehind: !0 },
                     string: /(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^)\\])*\))$/,
                     punctuation: /^[\[\]!:]|[<>]/
                 },
@@ -1002,11 +869,7 @@ Prism.languages.clike = {
                 lookbehind: !0,
                 greedy: !0,
                 inside: {
-                    content: {
-                        pattern: /(^..)[\s\S]+(?=..$)/,
-                        lookbehind: !0,
-                        inside: {}
-                    },
+                    content: { pattern: /(^..)[\s\S]+(?=..$)/, lookbehind: !0, inside: {} },
                     punctuation: /\*\*|__/
                 }
             },
@@ -1015,11 +878,7 @@ Prism.languages.clike = {
                 lookbehind: !0,
                 greedy: !0,
                 inside: {
-                    content: {
-                        pattern: /(^.)[\s\S]+(?=.$)/,
-                        lookbehind: !0,
-                        inside: {}
-                    },
+                    content: { pattern: /(^.)[\s\S]+(?=.$)/, lookbehind: !0, inside: {} },
                     punctuation: /[*_]/
                 }
             },
@@ -1048,23 +907,10 @@ Prism.languages.clike = {
                 greedy: !0,
                 inside: {
                     operator: /^!/,
-                    content: {
-                        pattern: /(^\[)[^\]]+(?=\])/,
-                        lookbehind: !0,
-                        inside: {}
-                    },
-                    variable: {
-                        pattern: /(^\][ \t]?\[)[^\]]+(?=\]$)/,
-                        lookbehind: !0
-                    },
-                    url: {
-                        pattern: /(^\]\()[^\s)]+/,
-                        lookbehind: !0
-                    },
-                    string: {
-                        pattern: /(^[ \t]+)"(?:\\.|[^"\\])*"(?=\)$)/,
-                        lookbehind: !0
-                    }
+                    content: { pattern: /(^\[)[^\]]+(?=\])/, lookbehind: !0, inside: {} },
+                    variable: { pattern: /(^\][ \t]?\[)[^\]]+(?=\]$)/, lookbehind: !0 },
+                    url: { pattern: /(^\]\()[^\s)]+/, lookbehind: !0 },
+                    string: { pattern: /(^[ \t]+)"(?:\\.|[^"\\])*"(?=\)$)/, lookbehind: !0 }
                 }
             }
         }),
@@ -1122,12 +968,7 @@ Prism.languages.clike = {
             }
         });
     var r = RegExp(n.languages.markup.tag.pattern.source, 'gi'),
-        o = {
-            amp: '&',
-            lt: '<',
-            gt: '>',
-            quot: '"'
-        },
+        o = { amp: '&', lt: '<', gt: '>', quot: '"' },
         l = String.fromCodePoint || String.fromCharCode;
     n.languages.md = n.languages.markdown;
 })(Prism);
@@ -1187,10 +1028,7 @@ Prism.languages.clike = {
 !(function (e) {
     var a = /\/\*[\s\S]*?\*\/|\/\/.*|#(?!\[).*/,
         t = [
-            {
-                pattern: /\b(?:false|true)\b/i,
-                alias: 'boolean'
-            },
+            { pattern: /\b(?:false|true)\b/i, alias: 'boolean' },
             {
                 pattern: /(::\s*)\b[a-z_]\w*\b(?!\s*\()/i,
                 greedy: !0,
@@ -1208,18 +1046,13 @@ Prism.languages.clike = {
         n = /<?=>|\?\?=?|\.{3}|\??->|[!=]=?=?|::|\*\*=?|--|\+\+|&&|\|\||<<|>>|[?~]|[/^|%*&<>.+-]=?/,
         s = /[{}\[\](),:;]/;
     e.languages.php = {
-        delimiter: {
-            pattern: /\?>$|^<\?(?:php(?=\s)|=)?/i,
-            alias: 'important'
-        },
+        delimiter: { pattern: /\?>$|^<\?(?:php(?=\s)|=)?/i, alias: 'important' },
         comment: a,
         variable: /\$+(?:\w+\b|(?=\{))/,
         package: {
             pattern: /(namespace\s+|use\s+(?:function\s+)?)(?:\\?\b[a-z_]\w*)+\b(?!\\)/i,
             lookbehind: !0,
-            inside: {
-                punctuation: /\\/
-            }
+            inside: { punctuation: /\\/ }
         },
         'class-name-definition': {
             pattern: /(\b(?:class|enum|interface|trait)\s+)\b[a-z_]\w*(?!\\)\b/i,
@@ -1267,10 +1100,7 @@ Prism.languages.clike = {
                 alias: 'static-context',
                 greedy: !0
             },
-            {
-                pattern: /(\byield\s+)from\b/i,
-                lookbehind: !0
-            },
+            { pattern: /(\byield\s+)from\b/i, lookbehind: !0 },
             /\bclass\b/i,
             {
                 pattern:
@@ -1278,50 +1108,34 @@ Prism.languages.clike = {
                 lookbehind: !0
             }
         ],
-        'argument-name': {
-            pattern: /([(,]\s*)\b[a-z_]\w*(?=\s*:(?!:))/i,
-            lookbehind: !0
-        },
+        'argument-name': { pattern: /([(,]\s*)\b[a-z_]\w*(?=\s*:(?!:))/i, lookbehind: !0 },
         'class-name': [
             {
                 pattern: /(\b(?:extends|implements|instanceof|new(?!\s+self|\s+static))\s+|\bcatch\s*\()\b[a-z_]\w*(?!\\)\b/i,
                 greedy: !0,
                 lookbehind: !0
             },
-            {
-                pattern: /(\|\s*)\b[a-z_]\w*(?!\\)\b/i,
-                greedy: !0,
-                lookbehind: !0
-            },
-            {
-                pattern: /\b[a-z_]\w*(?!\\)\b(?=\s*\|)/i,
-                greedy: !0
-            },
+            { pattern: /(\|\s*)\b[a-z_]\w*(?!\\)\b/i, greedy: !0, lookbehind: !0 },
+            { pattern: /\b[a-z_]\w*(?!\\)\b(?=\s*\|)/i, greedy: !0 },
             {
                 pattern: /(\|\s*)(?:\\?\b[a-z_]\w*)+\b/i,
                 alias: 'class-name-fully-qualified',
                 greedy: !0,
                 lookbehind: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /(?:\\?\b[a-z_]\w*)+\b(?=\s*\|)/i,
                 alias: 'class-name-fully-qualified',
                 greedy: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /(\b(?:extends|implements|instanceof|new(?!\s+self\b|\s+static\b))\s+|\bcatch\s*\()(?:\\?\b[a-z_]\w*)+\b(?!\\)/i,
                 alias: 'class-name-fully-qualified',
                 greedy: !0,
                 lookbehind: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /\b[a-z_]\w*(?=\s*\$)/i,
@@ -1332,9 +1146,7 @@ Prism.languages.clike = {
                 pattern: /(?:\\?\b[a-z_]\w*)+(?=\s*\$)/i,
                 alias: ['class-name-fully-qualified', 'type-declaration'],
                 greedy: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /\b[a-z_]\w*(?=\s*::)/i,
@@ -1345,9 +1157,7 @@ Prism.languages.clike = {
                 pattern: /(?:\\?\b[a-z_]\w*)+(?=\s*::)/i,
                 alias: ['class-name-fully-qualified', 'static-context'],
                 greedy: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /([(,?]\s*)[a-z_]\w*(?=\s*\$)/i,
@@ -1360,9 +1170,7 @@ Prism.languages.clike = {
                 alias: ['class-name-fully-qualified', 'type-hint'],
                 greedy: !0,
                 lookbehind: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             },
             {
                 pattern: /(\)\s*:\s*(?:\?\s*)?)\b[a-z_]\w*(?!\\)\b/i,
@@ -1375,23 +1183,16 @@ Prism.languages.clike = {
                 alias: ['class-name-fully-qualified', 'return-type'],
                 greedy: !0,
                 lookbehind: !0,
-                inside: {
-                    punctuation: /\\/
-                }
+                inside: { punctuation: /\\/ }
             }
         ],
         constant: t,
         function: {
             pattern: /(^|[^\\\w])\\?[a-z_](?:[\w\\]*\w)?(?=\s*\()/i,
             lookbehind: !0,
-            inside: {
-                punctuation: /\\/
-            }
+            inside: { punctuation: /\\/ }
         },
-        property: {
-            pattern: /(->\s*)\w+/,
-            lookbehind: !0
-        },
+        property: { pattern: /(->\s*)\w+/, lookbehind: !0 },
         number: i,
         operator: n,
         punctuation: s
@@ -1410,9 +1211,7 @@ Prism.languages.clike = {
                     delimiter: {
                         pattern: /^<<<'[^']+'|[a-z_]\w*;$/i,
                         alias: 'symbol',
-                        inside: {
-                            punctuation: /^<<<'?|[';]$/
-                        }
+                        inside: { punctuation: /^<<<'?|[';]$/ }
                     }
                 }
             },
@@ -1424,9 +1223,7 @@ Prism.languages.clike = {
                     delimiter: {
                         pattern: /^<<<(?:"[^"]+"|[a-z_]\w*)|[a-z_]\w*;$/i,
                         alias: 'symbol',
-                        inside: {
-                            punctuation: /^<<<"?|[";]$/
-                        }
+                        inside: { punctuation: /^<<<"?|[";]$/ }
                     },
                     interpolation: l
                 }
@@ -1445,9 +1242,7 @@ Prism.languages.clike = {
                 pattern: /"(?:\\[\s\S]|[^\\"])*"/,
                 alias: 'double-quoted-string',
                 greedy: !0,
-                inside: {
-                    interpolation: l
-                }
+                inside: { interpolation: l }
             }
         ];
     e.languages.insertBefore('php', 'variable', {
@@ -1475,9 +1270,7 @@ Prism.languages.clike = {
                                 alias: ['class-name', 'class-name-fully-qualified'],
                                 greedy: !0,
                                 lookbehind: !0,
-                                inside: {
-                                    punctuation: /\\/
-                                }
+                                inside: { punctuation: /\\/ }
                             }
                         ],
                         constant: t,
@@ -1486,10 +1279,7 @@ Prism.languages.clike = {
                         punctuation: s
                     }
                 },
-                delimiter: {
-                    pattern: /^#\[|\]$/,
-                    alias: 'punctuation'
-                }
+                delimiter: { pattern: /^#\[|\]$/, alias: 'punctuation' }
             }
         }
     }),
@@ -1520,10 +1310,7 @@ Prism.languages.clike = {
             pattern: /(^([\t ]*)):.+(?:(?:\r?\n|\r(?!\n))(?:\2[\t ].+|\s*?(?=\r?\n|\r)))+/m,
             lookbehind: !0,
             inside: {
-                'filter-name': {
-                    pattern: /^:[\w-]+/,
-                    alias: 'variable'
-                },
+                'filter-name': { pattern: /^:[\w-]+/, alias: 'variable' },
                 text: /\S[\s\S]*/
             }
         },
@@ -1536,20 +1323,14 @@ Prism.languages.clike = {
             lookbehind: !0,
             inside: e.languages.markup
         },
-        doctype: {
-            pattern: /((?:^|\n)[\t ]*)doctype(?: .+)?/,
-            lookbehind: !0
-        },
+        doctype: { pattern: /((?:^|\n)[\t ]*)doctype(?: .+)?/, lookbehind: !0 },
         'flow-control': {
             pattern: /(^[\t ]*)(?:case|default|each|else|if|unless|when|while)\b(?: .+)?/m,
             lookbehind: !0,
             inside: {
                 each: {
                     pattern: /^each .+? in\b/,
-                    inside: {
-                        keyword: /\b(?:each|in)\b/,
-                        punctuation: /,/
-                    }
+                    inside: { keyword: /\b(?:each|in)\b/, punctuation: /,/ }
                 },
                 branch: {
                     pattern: /^(?:case|default|else|if|unless|when|while)\b/,
@@ -1576,10 +1357,7 @@ Prism.languages.clike = {
                 pattern: /(^[\t ]*)\+.+/m,
                 lookbehind: !0,
                 inside: {
-                    name: {
-                        pattern: /^\+\w+/,
-                        alias: 'function'
-                    },
+                    name: { pattern: /^\+\w+/, alias: 'function' },
                     rest: e.languages.javascript
                 }
             }
@@ -1598,10 +1376,7 @@ Prism.languages.clike = {
             lookbehind: !0,
             inside: {
                 attributes: [
-                    {
-                        pattern: /&[^(]+\([^)]+\)/,
-                        inside: e.languages.javascript
-                    },
+                    { pattern: /&[^(]+\([^)]+\)/, inside: e.languages.javascript },
                     {
                         pattern: /\([^)]+\)/,
                         inside: {
@@ -1631,23 +1406,14 @@ Prism.languages.clike = {
     };
     for (
         var t = [
-                {
-                    filter: 'atpl',
-                    language: 'twig'
-                },
-                {
-                    filter: 'coffee',
-                    language: 'coffeescript'
-                },
+                { filter: 'atpl', language: 'twig' },
+                { filter: 'coffee', language: 'coffeescript' },
                 'ejs',
                 'handlebars',
                 'less',
                 'livescript',
                 'markdown',
-                {
-                    filter: 'sass',
-                    language: 'scss'
-                },
+                { filter: 'sass', language: 'scss' },
                 'stylus'
             ],
             n = {},
@@ -1657,13 +1423,7 @@ Prism.languages.clike = {
         a++
     ) {
         var r = t[a];
-        (r =
-            'string' == typeof r
-                ? {
-                      filter: r,
-                      language: r
-                  }
-                : r),
+        (r = 'string' == typeof r ? { filter: r, language: r } : r),
             e.languages[r.language] &&
                 (n['filter-' + r.filter] = {
                     pattern: RegExp(
@@ -1674,10 +1434,7 @@ Prism.languages.clike = {
                     ),
                     lookbehind: !0,
                     inside: {
-                        'filter-name': {
-                            pattern: /^:[\w-]+/,
-                            alias: 'variable'
-                        },
+                        'filter-name': { pattern: /^:[\w-]+/, alias: 'variable' },
                         text: {
                             pattern: /\S[\s\S]*/,
                             alias: [r.language, 'language-' + r.language],
@@ -1689,11 +1446,7 @@ Prism.languages.clike = {
     e.languages.insertBefore('pug', 'filter', n);
 })(Prism);
 (Prism.languages.python = {
-    comment: {
-        pattern: /(^|[^\\])#.*/,
-        lookbehind: !0,
-        greedy: !0
-    },
+    comment: { pattern: /(^|[^\\])#.*/, lookbehind: !0, greedy: !0 },
     'string-interpolation': {
         pattern: /(?:f|fr|rf)(?:("""|''')[\s\S]*?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
         greedy: !0,
@@ -1702,14 +1455,8 @@ Prism.languages.clike = {
                 pattern: /((?:^|[^{])(?:\{\{)*)\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}])+\})+\})+\}/,
                 lookbehind: !0,
                 inside: {
-                    'format-spec': {
-                        pattern: /(:)[^:(){}]+(?=\}$)/,
-                        lookbehind: !0
-                    },
-                    'conversion-option': {
-                        pattern: /![sra](?=[:}]$)/,
-                        alias: 'punctuation'
-                    },
+                    'format-spec': { pattern: /(:)[^:(){}]+(?=\}$)/, lookbehind: !0 },
+                    'conversion-option': { pattern: /![sra](?=[:}]$)/, alias: 'punctuation' },
                     rest: null
                 }
             },
@@ -1725,21 +1472,13 @@ Prism.languages.clike = {
         pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
         greedy: !0
     },
-    function: {
-        pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,
-        lookbehind: !0
-    },
-    'class-name': {
-        pattern: /(\bclass\s+)\w+/i,
-        lookbehind: !0
-    },
+    function: { pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g, lookbehind: !0 },
+    'class-name': { pattern: /(\bclass\s+)\w+/i, lookbehind: !0 },
     decorator: {
         pattern: /(^[\t ]*)@\w+(?:\.\w+)*/m,
         lookbehind: !0,
         alias: ['annotation', 'punctuation'],
-        inside: {
-            punctuation: /\./
-        }
+        inside: { punctuation: /\./ }
     },
     keyword:
         /\b(?:_(?=\s*:)|and|as|assert|async|await|break|case|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|match|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
@@ -1753,10 +1492,7 @@ Prism.languages.clike = {
     (Prism.languages.python['string-interpolation'].inside.interpolation.inside.rest = Prism.languages.python),
     (Prism.languages.py = Prism.languages.python);
 !(function (a) {
-    var e = {
-            pattern: /\\[\\(){}[\]^$+*?|.]/,
-            alias: 'escape'
-        },
+    var e = { pattern: /\\[\\(){}[\]^$+*?|.]/, alias: 'escape' },
         n = /\\(?:x[\da-fA-F]{2}|u[\da-fA-F]{4}|u\{[\da-fA-F]+\}|0[0-7]{0,2}|[123][0-7]{2}|c[a-zA-Z]|.)/,
         t = '(?:[^\\\\-]|' + n.source + ')',
         s = RegExp(t + '-' + t),
@@ -1770,77 +1506,38 @@ Prism.languages.clike = {
             pattern: /((?:^|[^\\])(?:\\\\)*)\[(?:[^\\\]]|\\[\s\S])*\]/,
             lookbehind: !0,
             inside: {
-                'char-class-negation': {
-                    pattern: /(^\[)\^/,
-                    lookbehind: !0,
-                    alias: 'operator'
-                },
-                'char-class-punctuation': {
-                    pattern: /^\[|\]$/,
-                    alias: 'punctuation'
-                },
+                'char-class-negation': { pattern: /(^\[)\^/, lookbehind: !0, alias: 'operator' },
+                'char-class-punctuation': { pattern: /^\[|\]$/, alias: 'punctuation' },
                 range: {
                     pattern: s,
                     inside: {
                         escape: n,
-                        'range-punctuation': {
-                            pattern: /-/,
-                            alias: 'operator'
-                        }
+                        'range-punctuation': { pattern: /-/, alias: 'operator' }
                     }
                 },
                 'special-escape': e,
-                'char-set': {
-                    pattern: /\\[wsd]|\\p\{[^{}]+\}/i,
-                    alias: 'class-name'
-                },
+                'char-set': { pattern: /\\[wsd]|\\p\{[^{}]+\}/i, alias: 'class-name' },
                 escape: n
             }
         },
         'special-escape': e,
-        'char-set': {
-            pattern: /\.|\\[wsd]|\\p\{[^{}]+\}/i,
-            alias: 'class-name'
-        },
+        'char-set': { pattern: /\.|\\[wsd]|\\p\{[^{}]+\}/i, alias: 'class-name' },
         backreference: [
-            {
-                pattern: /\\(?![123][0-7]{2})[1-9]/,
-                alias: 'keyword'
-            },
-            {
-                pattern: /\\k<[^<>']+>/,
-                alias: 'keyword',
-                inside: {
-                    'group-name': i
-                }
-            }
+            { pattern: /\\(?![123][0-7]{2})[1-9]/, alias: 'keyword' },
+            { pattern: /\\k<[^<>']+>/, alias: 'keyword', inside: { 'group-name': i } }
         ],
-        anchor: {
-            pattern: /[$^]|\\[ABbGZz]/,
-            alias: 'function'
-        },
+        anchor: { pattern: /[$^]|\\[ABbGZz]/, alias: 'function' },
         escape: n,
         group: [
             {
                 pattern: /\((?:\?(?:<[^<>']+>|'[^<>']+'|[>:]|<?[=!]|[idmnsuxU]+(?:-[idmnsuxU]+)?:?))?/,
                 alias: 'punctuation',
-                inside: {
-                    'group-name': i
-                }
+                inside: { 'group-name': i }
             },
-            {
-                pattern: /\)/,
-                alias: 'punctuation'
-            }
+            { pattern: /\)/, alias: 'punctuation' }
         ],
-        quantifier: {
-            pattern: /(?:[+*?]|\{\d+(?:,\d*)?\})[?+]?/,
-            alias: 'number'
-        },
-        alternation: {
-            pattern: /\|/,
-            alias: 'keyword'
-        }
+        quantifier: { pattern: /(?:[+*?]|\{\d+(?:,\d*)?\})[?+]?/, alias: 'number' },
+        alternation: { pattern: /\|/, alias: 'keyword' }
     };
 })(Prism);
 !(function (e) {
@@ -1892,11 +1589,7 @@ Prism.languages.clike = {
             greedy: !0,
             alias: 'atrule'
         },
-        directive: {
-            pattern: /(^[ \t]*)%.+/m,
-            lookbehind: !0,
-            alias: 'important'
-        },
+        directive: { pattern: /(^[ \t]*)%.+/m, lookbehind: !0, alias: 'important' },
         datetime: {
             pattern: o(
                 '\\d{4}-\\d\\d?-\\d\\d?(?:[tT]|[ \t]+)\\d\\d?:\\d{2}:\\d{2}(?:\\.\\d*)?(?:[ \t]*(?:Z|[-+]\\d\\d?(?::\\d{2})?))?|\\d{4}-\\d{2}-\\d{2}|\\d\\d?:\\d{2}(?::\\d{2}(?:\\.\\d*)?)?'
@@ -1904,21 +1597,9 @@ Prism.languages.clike = {
             lookbehind: !0,
             alias: 'number'
         },
-        boolean: {
-            pattern: o('false|true', 'i'),
-            lookbehind: !0,
-            alias: 'important'
-        },
-        null: {
-            pattern: o('null|~', 'i'),
-            lookbehind: !0,
-            alias: 'important'
-        },
-        string: {
-            pattern: o(d),
-            lookbehind: !0,
-            greedy: !0
-        },
+        boolean: { pattern: o('false|true', 'i'), lookbehind: !0, alias: 'important' },
+        null: { pattern: o('null|~', 'i'), lookbehind: !0, alias: 'important' },
+        string: { pattern: o(d), lookbehind: !0, greedy: !0 },
         number: {
             pattern: o('[+-]?(?:0x[\\da-f]+|0o[0-7]+|(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:e[+-]?\\d+)?|\\.inf|\\.nan)', 'i'),
             lookbehind: !0
@@ -1942,23 +1623,10 @@ Prism.languages.clike = {
                     (Prism.languages.DFS(r, function (r, a, l) {
                         e.indexOf(l) > -1 &&
                             !Array.isArray(a) &&
-                            (a.pattern ||
-                                (a = this[r] =
-                                    {
-                                        pattern: a
-                                    }),
+                            (a.pattern || (a = this[r] = { pattern: a }),
                             (a.inside = a.inside || {}),
                             'comment' == l && (a.inside['md-link'] = t),
-                            'attr-value' == l
-                                ? Prism.languages.insertBefore(
-                                      'inside',
-                                      'punctuation',
-                                      {
-                                          'url-link': i
-                                      },
-                                      a
-                                  )
-                                : (a.inside['url-link'] = i),
+                            'attr-value' == l ? Prism.languages.insertBefore('inside', 'punctuation', { 'url-link': i }, a) : (a.inside['url-link'] = i),
                             (a.inside['email-link'] = n));
                     }),
                     (r['url-link'] = i),
@@ -2455,29 +2123,12 @@ Prism.languages.clike = {
             pattern: /^.+/m,
             inside: {
                 'entry-line': [
-                    {
-                        pattern: /\|-- |├── /,
-                        alias: 'line-h'
-                    },
-                    {
-                        pattern: /\| {3}|│ {3}/,
-                        alias: 'line-v'
-                    },
-                    {
-                        pattern: /`-- |└── /,
-                        alias: 'line-v-last'
-                    },
-                    {
-                        pattern: / {4}/,
-                        alias: 'line-v-gap'
-                    }
+                    { pattern: /\|-- |├── /, alias: 'line-h' },
+                    { pattern: /\| {3}|│ {3}/, alias: 'line-v' },
+                    { pattern: /`-- |└── /, alias: 'line-v-last' },
+                    { pattern: / {4}/, alias: 'line-v-gap' }
                 ],
-                'entry-name': {
-                    pattern: /.*\S.*/,
-                    inside: {
-                        operator: / -> /
-                    }
-                }
+                'entry-name': { pattern: /.*\S.*/, inside: { operator: / -> / } }
             }
         }
     }),

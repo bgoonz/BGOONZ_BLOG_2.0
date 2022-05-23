@@ -3,6 +3,7 @@ title: Fetch API
 template: docs
 excerpt: So far, we know quite a bit about fetch
 ---
+
 # Fetch API
 
 So far, we know quite a bit about `fetch`.
@@ -90,14 +91,14 @@ Unlike the `referrer` option that allows to set the exact `Referer` value, `refe
 
 Possible values are described in the [Referrer Policy specification](https://w3c.github.io/webappsec-referrer-policy/):
 
-- **`"no-referrer-when-downgrade"`** -- the default value: full `Referer` is always sent, unless we send a request from HTTPS to HTTP (to the less secure protocol).
-- **`"no-referrer"`** -- never send `Referer`.
-- **`"origin"`** -- only send the origin in `Referer`, not the full page URL, e.g. only `http://site.com` instead of `http://site.com/path`.
-- **`"origin-when-cross-origin"`** -- send the full `Referer` to the same origin, but only the origin part for cross-origin requests (as above).
-- **`"same-origin"`** -- send the full `Referer` to the same origin, but no `Referer` for cross-origin requests.
-- **`"strict-origin"`** -- send only the origin, not the `Referer` for HTTPS→HTTP requests.
-- **`"strict-origin-when-cross-origin"`** -- for same-origin send the full `Referer`, for cross-origin send only the origin, unless it's HTTPS→HTTP request, then send nothing.
-- **`"unsafe-url"`** -- always send the full url in `Referer`, even for HTTPS→HTTP requests.
+-   **`"no-referrer-when-downgrade"`** -- the default value: full `Referer` is always sent, unless we send a request from HTTPS to HTTP (to the less secure protocol).
+-   **`"no-referrer"`** -- never send `Referer`.
+-   **`"origin"`** -- only send the origin in `Referer`, not the full page URL, e.g. only `http://site.com` instead of `http://site.com/path`.
+-   **`"origin-when-cross-origin"`** -- send the full `Referer` to the same origin, but only the origin part for cross-origin requests (as above).
+-   **`"same-origin"`** -- send the full `Referer` to the same origin, but no `Referer` for cross-origin requests.
+-   **`"strict-origin"`** -- send only the origin, not the `Referer` for HTTPS→HTTP requests.
+-   **`"strict-origin-when-cross-origin"`** -- for same-origin send the full `Referer`, for cross-origin send only the origin, unless it's HTTPS→HTTP request, then send nothing.
+-   **`"unsafe-url"`** -- always send the full url in `Referer`, even for HTTPS→HTTP requests.
 
 Here's a table with all combinations:
 
@@ -121,9 +122,9 @@ E.g. `Referer: https://javascript.info/admin/secret/paths`.
 If we'd like other websites know only the origin part, not the URL-path, we can set the option:
 
 ```js
-fetch("https://another.com/page", {
-  // ...
-  referrerPolicy: "origin-when-cross-origin", // Referer: https://javascript.info
+fetch('https://another.com/page', {
+    // ...
+    referrerPolicy: 'origin-when-cross-origin' // Referer: https://javascript.info
 });
 ```
 
@@ -222,8 +223,8 @@ Normally, when a document is unloaded, all associated network requests are abort
 
 It has a few limitations:
 
-- We can't send megabytes: the body limit for `keepalive` requests is 64KB.
-  - If we need to gather a lot of statistics about the visit, we should send it out regularly in packets, so that there won't be a lot left for the last `onunload` request.
-  - This limit applies to all `keepalive` requests together. In other words, we can perform multiple `keepalive` requests in parallel, but the sum of their body lengths should not exceed 64KB.
-- We can't handle the server response if the document is unloaded. So in our example `fetch` will succeed due to `keepalive`, but subsequent functions won't work.
-  - In most cases, such as sending out statistics, it's not a problem, as the server just accepts the data and usually sends an empty response to such requests.
+-   We can't send megabytes: the body limit for `keepalive` requests is 64KB.
+    -   If we need to gather a lot of statistics about the visit, we should send it out regularly in packets, so that there won't be a lot left for the last `onunload` request.
+    -   This limit applies to all `keepalive` requests together. In other words, we can perform multiple `keepalive` requests in parallel, but the sum of their body lengths should not exceed 64KB.
+-   We can't handle the server response if the document is unloaded. So in our example `fetch` will succeed due to `keepalive`, but subsequent functions won't work.
+    -   In most cases, such as sending out statistics, it's not a problem, as the server just accepts the data and usually sends an empty response to such requests.
