@@ -1192,8 +1192,7 @@ image: images/green-spruce-4e3a1745.png
     ```html
     <input type="password" onmousedown="enterInput(event)" />
 
-    <p id="feedback">
-</p>
+    <p id="feedback"></p>
 
     <script>
         function enterInput(e) {
@@ -3422,8 +3421,7 @@ Cons
      You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
 
      ```javascript
-     <script type="module" src="welcome-module.js">
-</script>;
+     <script type="module" src="welcome-module.js"></script>;
      console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
      ```
 
@@ -4182,8 +4180,7 @@ Cons
      and this function invoked on page load
 
      ```html
-     <body onload="myFunction()">
-</body>
+     <body onload="myFunction()"></body>
      ```
 
 301. How do you create an infinite loop
@@ -5301,8 +5298,7 @@ Cons
      The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
 
      ```html
-     <body oncontextmenu="return false;">
-</body>
+     <body oncontextmenu="return false;"></body>
      ```
 
 380. What are wrapper objects
@@ -6145,10 +6141,7 @@ function Vehicle(model, color, year, country) {
 - 3: null
 - 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6178,10 +6171,7 @@ c ole.log(foo(), typeof x, typeof y);
 - 3: 1, undefined and number
 - 4: 1, number and number
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -6219,10 +6209,7 @@ m ();
 - 3: A and C
 - 4: A, C and B
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6252,10 +6239,7 @@ c ole.log(0.1 + 0.2 === 0.3);
 - 1: false
 - 2: true
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6283,10 +6267,7 @@ c ole.log(y);
 - 3: ReferenceError
 - 4: 1undefined
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6330,10 +6311,7 @@ c ole.log(foo());
 - 3: Undefined
 - 4: SyntaxError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -6371,10 +6349,7 @@ c ole.log(myChars.length);
 - 3: [empty, 'b', 'c', 'd'], undefined, 4
 - 4: [null, 'b', 'c', 'd'], undefined, 4
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -6406,10 +6381,7 @@ c ole.log(array3);
 - 3: [null × 3], [null × 2, 100], [null × 3]
 - 4: [], [100], []
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6447,10 +6419,7 @@ c ole.log(obj.prop3());
 - 3: 0, { return 1 }, { return 2 }
 - 4: 0, 1, undefined
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6474,10 +6443,7 @@ c ole.log(3 > 2 > 1);
 - 3: SyntaxError, SyntaxError,
 - 4: false, false
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6516,10 +6482,7 @@ p tNumbers(1, 2, 3);
 - 3: SyntaxError: Duplicate parameter name not allowed in this context
 - 4: 1, 2, 1
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6548,10 +6511,7 @@ p tNumbersArrow(1, 2, 3);
 - 3: SyntaxError: Duplicate parameter name not allowed in this context
 - 4: 1, 2, 1
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -6575,10 +6535,7 @@ c ole.log(arrowFunc(1, 2, 3));
 - 3: undefined
 - 4: null
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6616,10 +6573,7 @@ c ole.log(String.prototype.trimLeft.name === 'trimStart');
 - 1: True, False
 - 2: False, True
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6642,10 +6596,7 @@ c ole.log(Math.max());
 - 3: 0
 - 4: -Infinity
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6670,10 +6621,7 @@ c ole.log(10 == [[[[[[[10]]]]]]]);
 - 3: False, False
 - 4: False, True
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6703,10 +6651,7 @@ c ole.log(10 - '10');
 - 3: 1010, 10-10
 - 4: NaN, NaN
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6734,10 +6679,7 @@ if ([0]) {
 - 3: False, I'm True
 - 4: False, I'm False
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6758,10 +6700,7 @@ c ole.log([1, 2] + [3, 4]);
 - 3: SyntaxError
 - 4: 1,23,4
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6788,10 +6727,7 @@ c ole.log(browser);
 - 3: [1, 2, 3, 4], ["F", "i", "r", "e", "o", "x"]
 - 4: {1, 1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6812,10 +6748,7 @@ c ole.log(NaN === NaN);
 - 1: True
 - 2: False
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -6839,10 +6772,7 @@ c ole.log(numbers.indexOf(NaN));
 - 3: SyntaxError
 - 4: -1
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6874,10 +6804,7 @@ c ole.log(a, b);
 - 3: SyntaxError
 - 4: 1, [2, 3, 4]
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -6909,10 +6836,7 @@ c ole.log(func());
 - 3: SyntaxError
 - 4: Promise {\<rejected\>: 10}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -6944,10 +6868,7 @@ c ole.log(func());
 - 3: SyntaxError
 - 4: Promise {\<resolved\>: undefined}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -6991,10 +6912,7 @@ p essArray([1, 2, 3, 4]);
 - 3: 4, 4, 4, 4
 - 4: 4, 3, 2, 1
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7033,10 +6951,7 @@ p ess([1, 2, 3, 5]);
 - 3: Process completed! and 5 5 5 5
 - 4: Process completed! and 1 2 3 5
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7072,10 +6987,7 @@ c ole.log(set);
 - 3: Set(5) {"+0", "-0", NaN, undefined, NaN}
 - 4: Set(4) {"+0", NaN, undefined, NaN}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7107,10 +7019,7 @@ c oe.log(sym1 === sym2, sym3 === sym4);
 - 3: false, true
 - 4: false, false
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -7140,10 +7049,7 @@ c ole.log(sym1);
 - 3: Symbol('one')
 - 4: Symbol
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7180,10 +7086,7 @@ if (!typeof myString === 'number') {
 - 3: It is not a string!, It is a number!
 - 4: It is a string!, It is a number!
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7208,10 +7111,7 @@ c ole.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
 - 3: {"myArray":['one', null,null,null]}, "{ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]"
 - 4: {"myArray":['one', undefined, function(){}, Symbol('')]}, {}
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7249,10 +7149,7 @@ n B();
 - 1: A, A
 - 2: A, B
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7277,10 +7174,7 @@ c ole.log(x, y);
 - 3: 1, [2]
 - 4: SyntaxError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7307,10 +7201,7 @@ c ole.log(y);
 - 3: 10, undefined
 - 4: 30, undefined
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7341,10 +7232,7 @@ a ();
 - 3: undefined
 - 4: 0
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7397,10 +7285,7 @@ c ole.log(name);
 - 3: undefined
 - 4: John
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7431,10 +7316,7 @@ c kType(null);
 - 3: number, number, string, object
 - 4: number, number, number, number
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -7467,10 +7349,7 @@ c ole.log(add('Apple'));
 - 1: ['Orange'], ['Orange', 'Apple']
 - 2: ['Orange'], ['Apple']
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7497,10 +7376,7 @@ g t('Hello', 'John', 'Good morning!');
 - 1: SyntaxError
 - 2: ['Hello', 'John', 'Hello John'], ['Hello', 'John', 'Good morning!']
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7527,10 +7403,7 @@ o r();
 - 1: ReferenceError
 - 2: Inner
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7559,10 +7432,7 @@ m n(1, 2);
 - 3: [3, 4, 5], []
 - 4: [3, 4, 5], [undefined]
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -7588,10 +7458,7 @@ c ole.log(array);
 - 3: []
 - 4: ['key']
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7621,10 +7488,7 @@ c ole.log(myGenObj.next().value);
 - 3: SyntaxError
 - 4: TypeError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7657,10 +7521,7 @@ c ole.log(myGenObj.next());
 - 3: { value: 1, done: false }, { value: 2, done: true }, { value: 3, done: true }
 - 4: { value: 1, done: false }, { value: 2, done: false }, { value: 3, done: true }
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7696,10 +7557,7 @@ for (const value of myGenerator) {
 - 3: 1 and 1
 - 4: 1
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7722,10 +7580,7 @@ c ole.log(num);
 - 1: SyntaxError
 - 2: 38
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7762,10 +7617,7 @@ class Square {
 - 1: 100
 - 2: ReferenceError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7806,10 +7658,7 @@ c ole.log(run());
 - 3: SyntaxError
 - 4: Window, Window
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -7851,10 +7700,7 @@ c ole.log(car.start());
 - 3: BMW car started, BMW vehicle started
 - 4: BMW car started, BMW car started
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 3
@@ -7880,10 +7726,7 @@ c ole.log(USER.age);
 - 3: Uncaught TypeError
 - 4: SyntaxError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7905,10 +7748,7 @@ c ole.log('🙂' === '🙂');
 - 1: false
 - 2: true
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
@@ -7932,10 +7772,7 @@ c ole.log(typeof typeof typeof true);
 - 3: NaN
 - 4: number
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7965,10 +7802,7 @@ if (zero) {
 - 3: NaN
 - 4: SyntaxError
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
@@ -7999,10 +7833,7 @@ c ole.log(msg.name);
 - 3: John
 - 4: Undefined
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 4
@@ -8034,10 +7865,7 @@ let count = 10;
 - 3: 10, 11
 - 4: 10, 10
 
-<details>
-<summary>
-<b>Answer</b>
-</summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 1
