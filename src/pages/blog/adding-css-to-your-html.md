@@ -1,7 +1,7 @@
 ---
 title: Adding CSS to your Html
 template: post
-subtitle: "Html &Css for beginners "
+subtitle: 'Html &Css for beginners '
 excerpt: Add css to your html
 date: 2022-04-10T11:11:00.257Z
 image: /blog/css.webp
@@ -9,16 +9,17 @@ thumb_image: /blog/css.webp
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/html.yaml
-  - src/data/categories/css.yaml
+    - src/data/categories/html.yaml
+    - src/data/categories/css.yaml
 tags:
-  - src/data/tags/career-1.yaml
+    - src/data/tags/career-1.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/adding-css-to-your-html.md
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/adding-css-to-your-html.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
 # Adding CSS To Your HTML
 
 For beginners … very picture heavy since CSS is such a visual discipline!
@@ -44,6 +45,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
         <link rel="stylesheet" href="/styles/site.css" />
       </head>
       <body>
+
 </body>
     </html>
 
@@ -114,6 +116,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 <!-- -->
 
     <div class="box yellow">
+
 </div>
     <div class="box orange">
 </div>
