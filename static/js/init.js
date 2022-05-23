@@ -11,8 +11,8 @@
     'object' == typeof exports && 'undefined' != typeof module
         ? (module.exports = t())
         : 'function' == typeof define && define.amd
-        ? define(t)
-        : ((e = e || self).reframe = t());
+            ? define(t)
+            : ((e = e || self).reframe = t());
 })(this, function () {
     'use strict';
     return function (e, t) {
@@ -29,13 +29,13 @@
                 (s.position = 'relative'), (s.width = '100%'), (s.paddingTop = d + '%');
                 var a = r.style;
                 (a.position = 'absolute'),
-                    (a.width = '100%'),
-                    (a.height = '100%'),
-                    (a.left = '0'),
-                    (a.top = '0'),
-                    r.parentNode.insertBefore(f, r),
-                    r.parentNode.removeChild(r),
-                    f.appendChild(r);
+                (a.width = '100%'),
+                (a.height = '100%'),
+                (a.left = '0'),
+                (a.top = '0'),
+                r.parentNode.insertBefore(f, r),
+                r.parentNode.removeChild(r),
+                f.appendChild(r);
             }
         }
     };

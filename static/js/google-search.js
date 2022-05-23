@@ -1,3 +1,5 @@
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-empty */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
 (function (opts_) {
@@ -61,7 +63,7 @@ SPDX-License-Identifier: Apache-2.0
     };
     var x = function (a) {
             if (a instanceof w && a.constructor === w && a.i === v) return a.h;
-            r("expected object of type Const, got '" + a + "'");
+            r('expected object of type Const, got \'' + a + '\'');
             return 'type_error:Const';
         },
         v = {},
@@ -75,7 +77,7 @@ SPDX-License-Identifier: Apache-2.0
     var A = function (a) {
             if (a instanceof z && a.constructor === z) return a.g;
             var b = typeof a;
-            r("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
+            r('expected object of type TrustedResourceUrl, got \'' + a + '\' of type ' + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
             return 'type_error:TrustedResourceUrl';
         },
         E = function (a, b) {
@@ -146,9 +148,9 @@ SPDX-License-Identifier: Apache-2.0
                 ? 'complete' === document.readyState || 'interactive' === document.readyState
                     ? (google.search.cse.element.go(), b && b())
                     : google.setOnLoadCallback(function () {
-                          google.search.cse.element.go();
-                          b && b();
-                      }, !0)
+                        google.search.cse.element.go();
+                        b && b();
+                    }, !0)
                 : b && b());
     };
 
@@ -227,17 +229,17 @@ SPDX-License-Identifier: Apache-2.0
             N(
                 opts_.cselibVersion
                     ? E(K, {
-                          versionDir: opts_.cselibVersion,
-                          versionSlash: L,
-                          experiment: '',
-                          lang: opts_.language
-                      })
+                        versionDir: opts_.cselibVersion,
+                        versionSlash: L,
+                        experiment: '',
+                        lang: opts_.language
+                    })
                     : E(K, {
-                          versionDir: '',
-                          versionSlash: '',
-                          experiment: '',
-                          lang: opts_.language
-                      })
+                        versionDir: '',
+                        versionSlash: '',
+                        experiment: '',
+                        lang: opts_.language
+                    })
             )
         );
         var W,

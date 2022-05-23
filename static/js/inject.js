@@ -157,7 +157,7 @@
     A = /\..*/,
     T = /::\d+$/,
     C = {};
-    let k = 1;
+        let k = 1;
     const L = {
             mouseenter: 'mouseover',
             mouseleave: 'mouseout'
