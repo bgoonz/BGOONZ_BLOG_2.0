@@ -4,8 +4,8 @@ template: post
 subtitle: images
 excerpt: from upwork
 date: 2022-05-19T08:39:54.360Z
-image: images/blog/code.png
-thumb_image: images/blog/code.png
+image: images/code.png
+thumb_image: images/code.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
