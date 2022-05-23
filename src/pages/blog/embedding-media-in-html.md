@@ -1,11 +1,11 @@
 ---
 title: Embedding Media In Html
 template: post
-subtitle: 'From object to iframe '
+subtitle: "From object to iframe "
 excerpt: getting the hang of embedding things into your web pages
 date: 2022-04-19T20:11:27.517Z
-image: images/blob:https://bgoonz-blog.netlify.app/ce89ffeb-e9be-44e2-9ecc-c64c1027acae
-thumb_image: images/blob:https://bgoonz-blog.netlify.app/ce89ffeb-e9be-44e2-9ecc-c64c1027acae
+image: /blog/embedded-media.png
+thumb_image: /blog/embedded-media.png
 image_position: right
 show_author_bio: false
 cmseditable: true
