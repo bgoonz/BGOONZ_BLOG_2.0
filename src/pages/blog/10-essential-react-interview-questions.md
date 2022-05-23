@@ -4,14 +4,16 @@ template: post
 subtitle: For Aspiring Frontend Developers
 excerpt: Comprehensive React Cheatsheet included at the bottom of this article!
 date: 2022-05-08T18:44:35.533Z
-image: https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj
-thumb_image: https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj
+image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
+  - src/data/categories/js.yaml
 tags:
   - src/data/tags/react.yaml
+  - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/react-semantics.md
