@@ -665,12 +665,7 @@
                     return n === Object.prototype || null === n;
                 }
                 function N(e, n, t) {
-                    Object.defineProperty(e, n, {
-                        enumerable: !1,
-                        writable: !0,
-                        configurable: !0,
-                        value: t
-                    });
+                    Object.defineProperty(e, n, { enumerable: !1, writable: !0, configurable: !0, value: t });
                 }
                 function D(e, n) {
                     var t = 'isMobX' + e;
@@ -791,18 +786,20 @@
                                 for (var t in n) n.hasOwnProperty(t) && (e[t] = n[t]);
                             })(e, n);
                     };
-                /*! *****************************************************************************
+                /*!
+*****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
 License at http://www.apache.org/licenses/LICENSE-2.0
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
 WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
 MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
-***************************************************************************** */ var x = function () {
+***************************************************************************** */
+                var x = function () {
                     return (x =
                         Object.assign ||
                         function (e) {
@@ -1242,11 +1239,7 @@ and limitations under the License.
                             }),
                             (n.prototype.prepareNewValue = function (e) {
                                 if ((ae(this), it(this))) {
-                                    var n = at(this, {
-                                        object: this,
-                                        type: 'update',
-                                        newValue: e
-                                    });
+                                    var n = at(this, { object: this, type: 'update', newValue: e });
                                     if (!n) return Ye.UNCHANGED;
                                     e = n.newValue;
                                 }
@@ -1419,7 +1412,13 @@ and limitations under the License.
                                     var i = t.get();
                                     if (!r || n) {
                                         var M = le();
-                                        e({ type: 'update', object: t, newValue: i, oldValue: o }), Ne(M);
+                                        e({
+                                            type: 'update',
+                                            object: t,
+                                            newValue: i,
+                                            oldValue: o
+                                        }),
+                                            Ne(M);
                                     }
                                     (r = !1), (o = i);
                                 });
@@ -2804,7 +2803,15 @@ and limitations under the License.
                             }),
                             (e.prototype.delete = function (e) {
                                 var n = this;
-                                if ((ae(this._keysAtom), it(this)) && !(r = at(this, { type: 'delete', object: this, name: e }))) return !1;
+                                if (
+                                    (ae(this._keysAtom), it(this)) &&
+                                    !(r = at(this, {
+                                        type: 'delete',
+                                        object: this,
+                                        name: e
+                                    }))
+                                )
+                                    return !1;
                                 if (this._has(e)) {
                                     var t = ut(this),
                                         r = t
@@ -2853,7 +2860,14 @@ and limitations under the License.
                                         t._data.set(e, r), (n = r.value), t._updateHasMapEntry(e, !0), t._keysAtom.reportChanged();
                                     });
                                 var r = ut(this),
-                                    o = r ? { type: 'add', object: this, name: e, newValue: n } : null;
+                                    o = r
+                                        ? {
+                                              type: 'add',
+                                              object: this,
+                                              name: e,
+                                              newValue: n
+                                          }
+                                        : null;
                                 r && ct(this, o);
                             }),
                             (e.prototype.get = function (e) {
@@ -2885,7 +2899,10 @@ and limitations under the License.
                                         var t = n.next(),
                                             r = t.done,
                                             o = t.value;
-                                        return { done: r, value: r ? void 0 : [o, e.get(o)] };
+                                        return {
+                                            done: r,
+                                            value: r ? void 0 : [o, e.get(o)]
+                                        };
                                     }
                                 });
                             }),
@@ -3178,10 +3195,24 @@ and limitations under the License.
                             }),
                             (e.prototype.delete = function (e) {
                                 var n = this;
-                                if (it(this) && !(r = at(this, { type: 'delete', object: this, oldValue: e }))) return !1;
+                                if (
+                                    it(this) &&
+                                    !(r = at(this, {
+                                        type: 'delete',
+                                        object: this,
+                                        oldValue: e
+                                    }))
+                                )
+                                    return !1;
                                 if (this.has(e)) {
                                     var t = ut(this),
-                                        r = t ? { type: 'delete', object: this, oldValue: e } : null;
+                                        r = t
+                                            ? {
+                                                  type: 'delete',
+                                                  object: this,
+                                                  oldValue: e
+                                              }
+                                            : null;
                                     return (
                                         Xn(function () {
                                             n._atom.reportChanged(), n._data.delete(e);
@@ -3216,7 +3247,12 @@ and limitations under the License.
                                     t = Array.from(this._data.values());
                                 return _t({
                                     next: function () {
-                                        return n < t.length ? { value: e.dehanceValue(t[n++]), done: !1 } : { done: !0 };
+                                        return n < t.length
+                                            ? {
+                                                  value: e.dehanceValue(t[n++]),
+                                                  done: !1
+                                              }
+                                            : { done: !0 };
                                     }
                                 });
                             }),
@@ -3583,11 +3619,7 @@ and limitations under the License.
                         "[mobx] MobX 5+ requires Proxy and Symbol objects. If your environment doesn't support Symbol or Proxy objects, please downgrade to MobX 4. For React Native Android, consider upgrading JSCore."
                     );
                 'object' == typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ &&
-                    __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobx({
-                        spy: en,
-                        extras: { getDebugName: Ct },
-                        $mobx: d
-                    });
+                    __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobx({ spy: en, extras: { getDebugName: Ct }, $mobx: d });
             }.call(this, t(3));
     },
     function (e, n, t) {
@@ -3993,7 +4025,9 @@ and limitations under the License.
                                             n = this.context.mobxStores;
                                         if (n) for (var t in n) e[t] = n[t];
                                         for (var r in this.props) L[r] || 'suppressChangedStoreWarning' === r || (e[r] = this.props[r]);
-                                        return { mobxStores: e };
+                                        return {
+                                            mobxStores: e
+                                        };
                                     }
                                 },
                                 {
@@ -4069,12 +4103,7 @@ and limitations under the License.
         function u(e, n) {
             if ('function' != typeof n && null !== n) throw new TypeError('Super expression must either be null or a function, not ' + typeof n);
             (e.prototype = Object.create(n && n.prototype, {
-                constructor: {
-                    value: e,
-                    enumerable: !1,
-                    writable: !0,
-                    configurable: !0
-                }
+                constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 }
             })),
                 n && (Object.setPrototypeOf ? Object.setPrototypeOf(e, n) : (e.__proto__ = n));
         }
@@ -4278,7 +4307,14 @@ and limitations under the License.
                                 n = e.saving,
                                 t = e.text,
                                 r = e.saving_text;
-                            return (0, o.h)('button', { type: 'submit', className: 'btn'.concat(n ? ' saving' : '') }, n ? r || 'Saving' : t || 'Save');
+                            return (0, o.h)(
+                                'button',
+                                {
+                                    type: 'submit',
+                                    className: 'btn'.concat(n ? ' saving' : '')
+                                },
+                                n ? r || 'Saving' : t || 'Save'
+                            );
                         }
                     }
                 ]) && M(n.prototype, t),
@@ -4668,7 +4704,16 @@ and limitations under the License.
         };
         (0, o.observe)(u.default.modal, 'isOpen', function () {
             u.default.settings || u.default.loadSettings(),
-                p(w, y(y({}, x), {}, { display: u.default.modal.isOpen ? 'block !important' : 'none' })),
+                p(
+                    w,
+                    y(
+                        y({}, x),
+                        {},
+                        {
+                            display: u.default.modal.isOpen ? 'block !important' : 'none'
+                        }
+                    )
+                ),
                 u.default.modal.isOpen ? T('open', u.default.modal.page) : T('close');
         }),
             (0, o.observe)(u.default, 'siteURL', function () {
@@ -5136,10 +5181,7 @@ and limitations under the License.
                             key: 'update',
                             value: function (e) {
                                 var n = this;
-                                return this._request('/user', {
-                                    method: 'PUT',
-                                    body: JSON.stringify(e)
-                                }).then(function (e) {
+                                return this._request('/user', { method: 'PUT', body: JSON.stringify(e) }).then(function (e) {
                                     return n._saveUserData(e)._refreshSavedSession();
                                 });
                             }
@@ -5334,10 +5376,7 @@ and limitations under the License.
                     {
                         key: 'listUsers',
                         value: function (e) {
-                            return this.user._request('/admin/users', {
-                                method: 'GET',
-                                audience: e
-                            });
+                            return this.user._request('/admin/users', { method: 'GET', audience: e });
                         }
                     },
                     {
@@ -5350,32 +5389,20 @@ and limitations under the License.
                         key: 'updateUser',
                         value: function (e) {
                             var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                            return this.user._request('/admin/users/'.concat(e.id), {
-                                method: 'PUT',
-                                body: JSON.stringify(n)
-                            });
+                            return this.user._request('/admin/users/'.concat(e.id), { method: 'PUT', body: JSON.stringify(n) });
                         }
                     },
                     {
                         key: 'createUser',
                         value: function (e, n) {
                             var t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-                            return (
-                                (t.email = e),
-                                (t.password = n),
-                                this.user._request('/admin/users', {
-                                    method: 'POST',
-                                    body: JSON.stringify(t)
-                                })
-                            );
+                            return (t.email = e), (t.password = n), this.user._request('/admin/users', { method: 'POST', body: JSON.stringify(t) });
                         }
                     },
                     {
                         key: 'deleteUser',
                         value: function (e) {
-                            return this.user._request('/admin/users/'.concat(e.id), {
-                                method: 'DELETE'
-                            });
+                            return this.user._request('/admin/users/'.concat(e.id), { method: 'DELETE' });
                         }
                     }
                 ]) && r(n.prototype, t),
@@ -5840,7 +5867,10 @@ and limitations under the License.
                                         { className: 'modalContent' },
                                         (0, o.h)(
                                             'button',
-                                            { onclick: this.handleClose, className: 'btn btnClose' },
+                                            {
+                                                onclick: this.handleClose,
+                                                className: 'btn btnClose'
+                                            },
                                             (0, o.h)('span', { className: 'visuallyHidden' }, 'Close')
                                         ),
                                         i &&
@@ -5867,12 +5897,28 @@ and limitations under the License.
                                                     )
                                             ),
                                         n.title &&
-                                            (0, o.h)('div', { className: 'header' }, (0, o.h)('button', { className: 'btn btnHeader active' }, l(n.title))),
+                                            (0, o.h)(
+                                                'div',
+                                                { className: 'header' },
+                                                (0, o.h)(
+                                                    'button',
+                                                    {
+                                                        className: 'btn btnHeader active'
+                                                    },
+                                                    l(n.title)
+                                                )
+                                            ),
                                         a &&
                                             (0, o.h)(
                                                 'div',
                                                 { className: 'header' },
-                                                (0, o.h)('button', { className: 'btn btnHeader active' }, l('site_url_title'))
+                                                (0, o.h)(
+                                                    'button',
+                                                    {
+                                                        className: 'btn btnHeader active'
+                                                    },
+                                                    l('site_url_title')
+                                                )
                                             ),
                                         j && (0, o.h)('div', { className: 'flashMessage error' }, (0, o.h)('span', null, l(j))),
                                         N &&
@@ -6470,10 +6516,7 @@ and limitations under the License.
         }
         function u(e, n) {
             if ('function' != typeof n && null !== n) throw new TypeError('Super expression must either be null or a function');
-            (e.prototype = Object.create(n && n.prototype, {
-                constructor: { value: e, writable: !0, configurable: !0 }
-            })),
-                n && s(e, n);
+            (e.prototype = Object.create(n && n.prototype, { constructor: { value: e, writable: !0, configurable: !0 } })), n && s(e, n);
         }
         function s(e, n) {
             return (s =
@@ -6583,7 +6626,13 @@ and limitations under the License.
                                     { className: 'providersGroup' },
                                     (0, o.h)('hr', { className: 'hr' }),
                                     t.map(function (n) {
-                                        return (0, o.h)(D, { key: n, provider: n, label: e.getLabel(n), onLogin: r, t: i });
+                                        return (0, o.h)(D, {
+                                            key: n,
+                                            provider: n,
+                                            label: e.getLabel(n),
+                                            onLogin: r,
+                                            t: i
+                                        });
                                     })
                                 );
                             }
@@ -7016,7 +7065,9 @@ and limitations under the License.
                                         : n
                                         ? (0, i.h)(
                                               'ul',
-                                              { className: 'netlify-identity-menu' },
+                                              {
+                                                  className: 'netlify-identity-menu'
+                                              },
                                               (0, i.h)(
                                                   'li',
                                                   {
@@ -7024,11 +7075,19 @@ and limitations under the License.
                                                   },
                                                   t('logged_in_as'),
                                                   ' ',
-                                                  (0, i.h)('span', { className: 'netlify-identity-user' }, n.user_metadata.name || n.email)
+                                                  (0, i.h)(
+                                                      'span',
+                                                      {
+                                                          className: 'netlify-identity-user'
+                                                      },
+                                                      n.user_metadata.name || n.email
+                                                  )
                                               ),
                                               (0, i.h)(
                                                   'li',
-                                                  { className: 'netlify-identity-item' },
+                                                  {
+                                                      className: 'netlify-identity-item'
+                                                  },
                                                   (0, i.h)(
                                                       'a',
                                                       {
@@ -7042,10 +7101,14 @@ and limitations under the License.
                                           )
                                         : (0, i.h)(
                                               'ul',
-                                              { className: 'netlify-identity-menu' },
+                                              {
+                                                  className: 'netlify-identity-menu'
+                                              },
                                               (0, i.h)(
                                                   'li',
-                                                  { className: 'netlify-identity-item' },
+                                                  {
+                                                      className: 'netlify-identity-item'
+                                                  },
                                                   (0, i.h)(
                                                       'a',
                                                       {
@@ -7058,7 +7121,9 @@ and limitations under the License.
                                               ),
                                               (0, i.h)(
                                                   'li',
-                                                  { className: 'netlify-identity-item' },
+                                                  {
+                                                      className: 'netlify-identity-item'
+                                                  },
                                                   (0, i.h)(
                                                       'a',
                                                       {

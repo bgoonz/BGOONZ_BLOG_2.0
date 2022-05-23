@@ -45,7 +45,8 @@
     };
 });
 
-/*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+/*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License |
+ * http://github.com/cferdinandi/smooth-scroll */
 window.Element &&
     !Element.prototype.closest &&
     (Element.prototype.closest = function (e) {
@@ -280,7 +281,10 @@ window.Element &&
                                     var t = q.location.hash;
                                     (t = t || ''),
                                         history.replaceState(
-                                            { smoothScroll: JSON.stringify(e), anchor: t || q.pageYOffset },
+                                            {
+                                                smoothScroll: JSON.stringify(e),
+                                                anchor: t || q.pageYOffset
+                                            },
                                             document.title,
                                             t || q.location.href
                                         );
@@ -313,7 +317,8 @@ window.Element &&
         };
     });
 
-/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
+/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License |
+ * http://github.com/cferdinandi/gumshoe */
 Element.prototype.closest ||
     (Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector),
     (Element.prototype.closest = function (t) {
@@ -344,7 +349,15 @@ Element.prototype.closest ||
             : (t.Gumshoe = e(t));
     })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
         'use strict';
-        var e = { navClass: 'active', contentClass: 'active', nested: !1, nestedClass: 'active', offset: 0, reflow: !1, events: !0 },
+        var e = {
+                navClass: 'active',
+                contentClass: 'active',
+                nested: !1,
+                nestedClass: 'active',
+                offset: 0,
+                reflow: !1,
+                events: !0
+            },
             n = function (t, e, n) {
                 if (n.settings.events) {
                     var o = new CustomEvent(t, { bubbles: !0, cancelable: !0, detail: n });
@@ -442,7 +455,11 @@ Element.prototype.closest ||
                                       (o.classList.add(e.navClass),
                                       t.content.classList.add(e.contentClass),
                                       u(o, e),
-                                      n('gumshoeActivate', o, { link: t.nav, content: t.content, settings: e }));
+                                      n('gumshoeActivate', o, {
+                                          link: t.nav,
+                                          content: t.content,
+                                          settings: e
+                                      }));
                               }
                           })(t, m),
                           (f = t))
@@ -595,7 +612,14 @@ Element.prototype.closest ||
                 return (
                     (function (t, e) {
                         if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
-                        (t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } })),
+                        (t.prototype = Object.create(e && e.prototype, {
+                            constructor: {
+                                value: t,
+                                enumerable: !1,
+                                writable: !0,
+                                configurable: !0
+                            }
+                        })),
                             e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
                     })(o, c.default),
                     i(

@@ -2,9 +2,9 @@
 /* eslint-disable no-undef */
 (function (opts_) {
     /*
-    Copyright The Closure Library Authors.
-    SPDX-License-Identifier: Apache-2.0
-   */
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
     var g = this || self,
         k = function (a, b) {
             function d() {}
@@ -107,11 +107,7 @@
                 var d = g.trustedTypes;
                 if (d && d.createPolicy)
                     try {
-                        b = d.createPolicy('goog#html', {
-                            createHTML: l,
-                            createScript: l,
-                            createScriptURL: l
-                        });
+                        b = d.createPolicy('goog#html', { createHTML: l, createScript: l, createScriptURL: l });
                     } catch (e) {
                         g.console && g.console.error(e.message);
                     }
@@ -212,23 +208,9 @@
         return b;
     }
     var O,
-        G = opts_.usqp
-            ? {
-                  usqp: opts_.usqp
-              }
-            : {},
+        G = opts_.usqp ? { usqp: opts_.usqp } : {},
         P = opts_.language.toLowerCase();
-    O = opts_.cselibVersion
-        ? J({
-              versionDir: opts_.cselibVersion,
-              versionSlash: L,
-              lang: P
-          })
-        : J({
-              versionDir: '',
-              versionSlash: '',
-              lang: P
-          });
+    O = opts_.cselibVersion ? J({ versionDir: opts_.cselibVersion, versionSlash: L, lang: P }) : J({ versionDir: '', versionSlash: '', lang: P });
     var Q = window.__gcse.scb,
         R = document.createElement('script');
     R.src = A(O);
@@ -263,11 +245,7 @@
             Y = opts_.theme.toLowerCase(),
             Z = X ? 'v' + X : Y.match(/v2_/g) ? 'v2' : '',
             da = Y.replace('v2_', '');
-        W = E(ba, {
-            versionDir: Z,
-            versionSlash: Z ? L : '',
-            theme: da
-        });
+        W = E(ba, { versionDir: Z, versionSlash: Z ? L : '', theme: da });
         document.getElementsByTagName('head')[0].appendChild(N(W));
     }
 })({
@@ -282,14 +260,8 @@
         resultSetSize: 'filtered_cse',
         enableOrderBy: true,
         orderByOptions: [
-            {
-                label: 'Relevance',
-                key: ''
-            },
-            {
-                label: 'Date',
-                key: 'date'
-            }
+            { label: 'Relevance', key: '' },
+            { label: 'Date', key: 'date' }
         ],
         overlayResults: true,
         numTopRefinements: -1,

@@ -1,8 +1,8 @@
 (function (opts_) {
     /*
 
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
 */
     var g = this || self,
         k = function (a, b) {
@@ -218,15 +218,23 @@
     Q && (R.onload = Q);
     document.getElementsByTagName('head')[0].appendChild(R);
     if (M()) {
-        document
-            .getElementsByTagName('head')[0]
-            .appendChild(
-                N(
-                    opts_.cselibVersion
-                        ? E(K, { versionDir: opts_.cselibVersion, versionSlash: L, experiment: '', lang: opts_.language })
-                        : E(K, { versionDir: '', versionSlash: '', experiment: '', lang: opts_.language })
-                )
-            );
+        document.getElementsByTagName('head')[0].appendChild(
+            N(
+                opts_.cselibVersion
+                    ? E(K, {
+                          versionDir: opts_.cselibVersion,
+                          versionSlash: L,
+                          experiment: '',
+                          lang: opts_.language
+                      })
+                    : E(K, {
+                          versionDir: '',
+                          versionSlash: '',
+                          experiment: '',
+                          lang: opts_.language
+                      })
+            )
+        );
         var W,
             X = opts_.uiOptions.cssThemeVersion || 2,
             Y = opts_.theme.toLowerCase(),
@@ -247,19 +255,11 @@
         resultSetSize: 'filtered_cse',
         enableOrderBy: true,
         orderByOptions: [
-            {
-                label: 'Relevance',
-                key: ''
-            },
-            {
-                label: 'Date',
-                key: 'date'
-            }
+            { label: 'Relevance', key: '' },
+            { label: 'Date', key: 'date' }
         ],
         overlayResults: false,
-        webSearchExtendedRestricts: {
-            filter: 1
-        },
+        webSearchExtendedRestricts: { filter: 1 },
         imageSearchExtendedRestricts: {
             filter: 1,
             sort: 'date',
