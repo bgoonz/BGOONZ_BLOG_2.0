@@ -4,7 +4,8 @@ template: post
 subtitle: What statement about static methods is true
 excerpt: What statement about static methods is true
 date: 2022-05-22T21:56:05.130Z
-image: null
+image: /blog/python.png
+thumb_image: /blog/python.png
 image_position: right
 author: src/data/authors/im.yaml
 categories:
