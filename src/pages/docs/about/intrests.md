@@ -1,15 +1,18 @@
 ---
-title: Personal Interests
+title: Youtube
 weight: 0
-excerpt: Personal Interests
+excerpt: youtube
 seo:
-    title: 'Personal Interests'
-    description: 'Personal Interests'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ""
+  description: ""
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
+
+
+
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/xGZSWvFess8"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
