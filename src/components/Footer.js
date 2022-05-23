@@ -1,6 +1,6 @@
 
 import _ from 'lodash';
-import pdf-onclick from '../utils';
+import { onclick } from '../utils';
 import React from 'react';
 import {htmlToReact} from '../utils';
 import ActionLink from './ActionLink';
