@@ -10,8 +10,8 @@ api.convertUrlToFile("currentUrl", "document.pdf", function(err, fileName) {
 
 
 
-function injectPDF (){
+const onclick = () => {
       let anchor = window.createElement("a");
       anchor.onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"
       anchor.textContent='Save to PDF'
-}
+};
