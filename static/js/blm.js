@@ -2,33 +2,33 @@
 /* eslint-disable linebreak-style */
 function MakerBadge(t) {
     (this.userId = ''),
-    (this.position = 'right'),
-    (this.layout = 1),
-    (this.coffee = !1),
-    (this.customHTML = ''),
-    (this.mounted = !1),
-    (this.imageAlt = ''),
-    (this.theme = ''),
-    (this.title = '#BlackLivesMatter'),
-    (this.message = 'To be silent is to be complicit. Black lives matter.'),
-    (this.pic = ''),
-    (this.promoLink = 'https://minnesotafreedomfund.org/'),
-    (this.promoText = 'Send a donation ' + String.fromCodePoint(8594));
+        (this.position = 'right'),
+        (this.layout = 1),
+        (this.coffee = !1),
+        (this.customHTML = ''),
+        (this.mounted = !1),
+        (this.imageAlt = ''),
+        (this.theme = ''),
+        (this.title = '#BlackLivesMatter'),
+        (this.message = 'To be silent is to be complicit. Black lives matter.'),
+        (this.pic = ''),
+        (this.promoLink = 'https://minnesotafreedomfund.org/'),
+        (this.promoText = 'Send a donation ' + String.fromCodePoint(8594));
 }
 MakerBadge.prototype = {
     constructor: MakerBadge,
     init: function (t, e) {
         t.id && (this.userId = t.id),
-        t.position && (this.position = t.position),
-        t.layout && (this.layout = t.layout),
-        t.promoText && (this.promoText = t.promoText),
-        t.promoLink && (this.promoLink = t.promoLink),
-        t.imageAlt && (this.imageAlt = t.imageAlt),
-        t.theme && (this.theme = t.theme),
-        t.title && (this.title = t.title),
-        t.message && (this.message = t.message),
-        t.customHTML && (this.customHTML = t.customHTML),
-        this.layout &&
+            t.position && (this.position = t.position),
+            t.layout && (this.layout = t.layout),
+            t.promoText && (this.promoText = t.promoText),
+            t.promoLink && (this.promoLink = t.promoLink),
+            t.imageAlt && (this.imageAlt = t.imageAlt),
+            t.theme && (this.theme = t.theme),
+            t.title && (this.title = t.title),
+            t.message && (this.message = t.message),
+            t.customHTML && (this.customHTML = t.customHTML),
+            this.layout &&
                 t.pic &&
                 (this.pic =
                     '<img alt="' +
@@ -36,8 +36,8 @@ MakerBadge.prototype = {
                     '" width="30" style="border-radius:100%" src="' +
                     t.pic +
                     '"/>&nbsp;&nbsp;'),
-        (this.mounted = !0),
-        this.run(e);
+            (this.mounted = !0),
+            this.run(e);
     },
     run: function (t) {
         const e = document.querySelector('html'),
@@ -50,25 +50,25 @@ MakerBadge.prototype = {
             d = document.createElement('a'),
             l = document.createElement('a');
         (l.style = 'display:block;margin: 0.5rem 0;font-size:10px;color:#718096;text-decoration:none;font-weight:400;'),
-        (l.innerHTML = 'Add this to your website'),
-        (l.target = '_blank'),
-        (l.href = 'http://blmbadge.unicornplatform.com');
+            (l.innerHTML = 'Add this to your website'),
+            (l.target = '_blank'),
+            (l.href = 'http://blmbadge.unicornplatform.com');
         const m = document.createElement('div');
         (m.innerHTML = this.customHTML),
-        this.setStyle(),
-        document.getElementsByTagName('head')[0].appendChild(this.style),
-        (o.innerHTML = 'Maker'),
-        (r.innerHTML = 'P'),
-        (r.target = '_blank'),
-        (r.classList = 'ph-btn'),
-        (i.classList = 'maker-badge'),
-        (o.classList = 'maker-badge__btn'),
-        (a.classList = 'maker-badge__content'),
-        (n.classList = 'maker-badge__stats'),
-        (s.style = 'text-align:center;margin:.5rem 0;font-weight:800;'),
-        (o.innerHTML = 'Maker'),
-        i.appendChild(o),
-        i.appendChild(a);
+            this.setStyle(),
+            document.getElementsByTagName('head')[0].appendChild(this.style),
+            (o.innerHTML = 'Maker'),
+            (r.innerHTML = 'P'),
+            (r.target = '_blank'),
+            (r.classList = 'ph-btn'),
+            (i.classList = 'maker-badge'),
+            (o.classList = 'maker-badge__btn'),
+            (a.classList = 'maker-badge__content'),
+            (n.classList = 'maker-badge__stats'),
+            (s.style = 'text-align:center;margin:.5rem 0;font-weight:800;'),
+            (o.innerHTML = 'Maker'),
+            i.appendChild(o),
+            i.appendChild(a);
         let p = 0;
         var b = this,
             g = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png',
@@ -90,33 +90,33 @@ MakerBadge.prototype = {
                 '"/>&nbsp;&nbsp;',
             x = b.title ? b.title : '#BlackLivesMatter';
         1 === b.layout ? (o.innerHTML = u + x) : 2 === b.layout ? (o.innerHTML = u) : (o.innerHTML = u + x),
-        (n.innerHTML = ''),
-        2 === b.layout && (a.innerHTML += '<div style="font-weight:600;font-size:1.125rem;">' + x + '</div>'),
-        (a.innerHTML += '<div style="color:#4a5568;max-width:200px;padding:0.5rem 0px 0;line-height:1.2rem">' + b.message + '</div>'),
-        (n.innerHTML +=
+            (n.innerHTML = ''),
+            2 === b.layout && (a.innerHTML += '<div style="font-weight:600;font-size:1.125rem;">' + x + '</div>'),
+            (a.innerHTML += '<div style="color:#4a5568;max-width:200px;padding:0.5rem 0px 0;line-height:1.2rem">' + b.message + '</div>'),
+            (n.innerHTML +=
                 '<div style="margin-top:0.5rem;"><a style="color:#2B6CB0;text-decoration:underline;font-weight: 600;" target="_blank" href="' +
                 b.promoLink +
                 '">' +
                 b.promoText +
                 '</a></div>'),
-        a.appendChild(n),
-        b.twitter && a.appendChild(d),
-        b.customHTML && a.appendChild(m),
-        a.appendChild(l),
-        e.appendChild(i),
-        (p = i.clientHeight),
-        2 === b.layout ? (i.style.bottom = 'calc(-' + p + 'px + 76px)') : (i.style.bottom = 'calc(-' + p + 'px + 50px)'),
-        i.classList.add('transition'),
-        (i.style.visibility = 'visible'),
-        t && t(),
-        o.addEventListener('click', () => {
-            i.classList.contains('isOpen')
-                ? (2 === b.layout
-                    ? i.setAttribute('style', 'visibility:visible;bottom:calc(-' + p + 'px + 76px)')
-                    : i.setAttribute('style', 'visibility:visible;bottom:calc(-' + p + 'px + 50px)'),
-                i.classList.remove('isOpen'))
-                : (i.setAttribute('style', 'visibility:visible;'), i.classList.add('isOpen'));
-        });
+            a.appendChild(n),
+            b.twitter && a.appendChild(d),
+            b.customHTML && a.appendChild(m),
+            a.appendChild(l),
+            e.appendChild(i),
+            (p = i.clientHeight),
+            2 === b.layout ? (i.style.bottom = 'calc(-' + p + 'px + 76px)') : (i.style.bottom = 'calc(-' + p + 'px + 50px)'),
+            i.classList.add('transition'),
+            (i.style.visibility = 'visible'),
+            t && t(),
+            o.addEventListener('click', () => {
+                i.classList.contains('isOpen')
+                    ? (2 === b.layout
+                          ? i.setAttribute('style', 'visibility:visible;bottom:calc(-' + p + 'px + 76px)')
+                          : i.setAttribute('style', 'visibility:visible;bottom:calc(-' + p + 'px + 50px)'),
+                      i.classList.remove('isOpen'))
+                    : (i.setAttribute('style', 'visibility:visible;'), i.classList.add('isOpen'));
+            });
     },
     setStyle: function () {
         let t = '.isOpen{bottom: 0;}';
