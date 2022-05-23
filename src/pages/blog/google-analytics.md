@@ -2,17 +2,17 @@
 title: google-analytics
 template: post
 date: 2022-05-16T09:54:51.999Z
-image: images/blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
-thumb_image: images/blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
+image: /blog/google-analytics.jpg
+thumb_image: /blog/google-analytics.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/google.yaml
+  - src/data/categories/google.yaml
 tags:
-    - src/data/tags/cms.yaml
+  - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/event-handeling.md
+  - src/pages/blog/event-handeling.md
 cmseditable: true
 ---
 
