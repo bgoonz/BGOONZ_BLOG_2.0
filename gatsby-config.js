@@ -1,3 +1,4 @@
+/* Importing the site-metadata.json file and exporting it as a module. */
 const siteMetadata = require('./site-metadata.json');
 module.exports = {
     pathPrefix: '/',

@@ -1,3 +1,4 @@
+/* Adding the scripts to the head and body of the html. */
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
