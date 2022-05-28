@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
