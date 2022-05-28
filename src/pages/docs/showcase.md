@@ -99,7 +99,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/blog-form.png
+            image: images/-form.png
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
             image_alt: image of

@@ -85,13 +85,10 @@ There are generally two types of tags in HTML:
 
 > i.e.
 
-    
-
 <br>
 <br>
 <br>
 <br>
-
 
     <p> The tag above me is a horizontal line that doesn't need a closing tag </p>
 

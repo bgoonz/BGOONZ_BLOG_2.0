@@ -10,13 +10,15 @@ seo:
 template: docs
 ---
 
-
 ## Git Reference
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonz.github.io/GIT_GUIDE_Bgoonz/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 
 <br>
-<br><br>
+<br>
+<br>
 
 Git is a distributed version control and source code management system.
 
@@ -32,24 +34,24 @@ Version control is a system that records changes to a file(s), over time.
 
 ### Centralized Versioning vs. Distributed Versioning
 
-- Centralized version control focuses on synchronizing, tracking, and backing
-- up files.
-- Distributed version control focuses on sharing changes. Every change has a
+-   Centralized version control focuses on synchronizing, tracking, and backing
+-   up files.
+-   Distributed version control focuses on sharing changes. Every change has a
     unique id.
-- Distributed systems have no defined structure. You could easily have a SVN
+-   Distributed systems have no defined structure. You could easily have a SVN
     style, centralized system, with git.
 
 [Additional Information](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
 ### Why Use Git?
 
-- Can work offline.
-- Collaborating with others is easy!
-- Branching is easy!
-- Branching is fast!
-- Merging is easy!
-- Git is fast.
-- Git is flexible.
+-   Can work offline.
+-   Collaborating with others is easy!
+-   Branching is easy!
+-   Branching is fast!
+-   Merging is easy!
+-   Git is fast.
+-   Git is flexible.
 
 ## Git Architecture
 
@@ -104,15 +106,15 @@ of heads.
 
 ### Stages of Git
 
-- Modified - Changes have been made to a file but file has not been committed
-- to Git Database yet
-- Staged - Marks a modified file to go into your next commit snapshot
-- Committed - Files have been committed to the Git Database
+-   Modified - Changes have been made to a file but file has not been committed
+-   to Git Database yet
+-   Staged - Marks a modified file to go into your next commit snapshot
+-   Committed - Files have been committed to the Git Database
 
 ### Conceptual Resources
 
-- [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-- [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
+-   [Git For Computer Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+-   [Git For Designers](http://hoth.entp.com/output/git_for_designers.html)
 
 ## Commands
 
@@ -589,10 +591,10 @@ $ git rm /pather/to/the/file/HelloWorld.c
 
 ```
 
-- `git checkout`
-- `git reset`
-- `git restore`
-- `git switch`
+-   `git checkout`
+-   `git reset`
+-   `git restore`
+-   `git switch`
 
 I'll throw in one more, the misnamed `git revert`, as well.
 
@@ -614,20 +616,20 @@ The `git switch` command is also new, introduced along with `git restore` in Git
 
 This is the most complicated part, and to really understand it, we need to know the following items:
 
-- Git is really all about _commits_. Commits get stored _in_ the Git repository. The `git push` and `git fetch` commands transfer _commits_---whole commits, as an all-or-nothing deal^1^---to the other Git. You either have all of a commit, or you don't have it. Other commands, such as `git merge` or `git rebase`, all work with _local_ commits. The `pull` command runs `fetch` (to get commits) followed by a second command to work with the commits once they're local.
-- 
-- New commits _add to the repository_. You almost never _remove_ a commit _from_ the repository. Only one of the five commands listed here---checkout, reset, restore, revert, and switch---is capable of removing commits.^2^
-- 
-- Each commit is numbered by its _hash ID_, which is unique to that one particular commit. It's actually computed from what's _in_ the commit, which is how Git makes these numbers work across all Gits eveywhere. This means that what is in the commit is frozen for all time: if you change anything, what you get is a new commit with a new number, and the old commit is still there, with its same old number.
+-   Git is really all about _commits_. Commits get stored _in_ the Git repository. The `git push` and `git fetch` commands transfer _commits_---whole commits, as an all-or-nothing deal^1^---to the other Git. You either have all of a commit, or you don't have it. Other commands, such as `git merge` or `git rebase`, all work with _local_ commits. The `pull` command runs `fetch` (to get commits) followed by a second command to work with the commits once they're local.
+-
+-   New commits _add to the repository_. You almost never _remove_ a commit _from_ the repository. Only one of the five commands listed here---checkout, reset, restore, revert, and switch---is capable of removing commits.^2^
+-
+-   Each commit is numbered by its _hash ID_, which is unique to that one particular commit. It's actually computed from what's _in_ the commit, which is how Git makes these numbers work across all Gits eveywhere. This means that what is in the commit is frozen for all time: if you change anything, what you get is a new commit with a new number, and the old commit is still there, with its same old number.
 
-- Each commit stores two things: a snapshot, and metadata. The metadata include the hash ID(s) of some previous commit(s). This makes commits form backwards-looking chains.
+-   Each commit stores two things: a snapshot, and metadata. The metadata include the hash ID(s) of some previous commit(s). This makes commits form backwards-looking chains.
 
-- A _branch name_ holds the hash ID of one commit. This makes the branch name _find_ that commit, which in turn means two things:
+-   A _branch name_ holds the hash ID of one commit. This makes the branch name _find_ that commit, which in turn means two things:
 
-    - that particular commit is the _tip commit_ of that branch; and
-    - all commits leading up to and including that tip commit are _on_ that branch.
+    -   that particular commit is the _tip commit_ of that branch; and
+    -   all commits leading up to and including that tip commit are _on_ that branch.
 
-- We're also going to talk about Git's _index_ in a moment, and your _working tree_. They're separate from these but worth mentioning early, especially since the index has three names: Git sometimes calls it the _index_, sometimes calls it the _staging area_, and sometimes---rarely these days---calls it the _cache_. All three names refer to the same thing.
+-   We're also going to talk about Git's _index_ in a moment, and your _working tree_. They're separate from these but worth mentioning early, especially since the index has three names: Git sometimes calls it the _index_, sometimes calls it the _staging area_, and sometimes---rarely these days---calls it the _cache_. All three names refer to the same thing.
 
 Everything up through the _branch name_ is, I think, best understood via pictures (at least for most people). If we draw a series of commits, with newer commits towards the right, using `o` for each commit and omitting some commits for space or whatever, we get something like this:
 
@@ -676,7 +678,7 @@ Git automatically updates the _branch name_ to point to the _new commit_, which 
 
 Let's look at each of the various commands now:
 
-- `git checkout`: this is a large and complicated command.
+-   `git checkout`: this is a large and complicated command.
 
     We already saw this one, or at least, _half_ of this one. We used it to pick out a branch name, and therefore a particular commit. This kind of checkout first looks at our current commit, index, and working tree. It makes sure that we have committed all our modified files, or---this part gets a bit complicated---that if we _haven't_ committed all our modified files, switching to that other branch is "safe". If it's _not_ safe, `git checkout` tells you that you can't switch due to having modified files. If it _is_ safe, `git checkout` will switch; if you didn't mean to switch, you can just switch back. (See also [Checkout another branch when there are uncommitted changes on the current branch](https://stackoverflow.com/q/22053757/1256452))
 
@@ -720,11 +722,11 @@ Let's look at each of the various commands now:
 
     If you ran `git add` on some file and thus copied it into Git's index, you need `git checkout HEAD -- *file*` to get it back from the current commit. The copy that's in Git's _index_ is the one you `git add`-ed. So these two forms of `git checkout`, with a commit hash ID (or the name `HEAD`), the optional `--`, and the file name, are the unsafe _clobber my files_ forms.
 
-- `git reset`: this is also a large and complicated command.
+-   `git reset`: this is also a large and complicated command.
 
     There are, depending on how you count, up to about five or six different forms of `git reset`. We'll concentrate on a smaller subset here.
 
-    - `git reset [ --hard | --mixed | --soft ] [ *commit* ]`
+    -   `git reset [ --hard | --mixed | --soft ] [ *commit* ]`
 
         Here, we're asking Git to do several things. First, if we give a _`commit`_ argument, such as `HEAD` or `HEAD~3` or some such, we've picked a particular _commit_ that Git should _reset to_. This is the kind of command that will _remove commits_ by ejecting them off the end of the branch. Of all the commands listed here, this is the only one that removes any commits. One other command---`git commit --amend`---has the effect of ejecting the _last_ commit while putting on a new replacement, but that one is limited to ejecting _one_ commit.
 
@@ -750,15 +752,15 @@ Let's look at each of the various commands now:
 
         The `--hard` part of the `git reset` is how we tell Git what to do with (a) its index and (b) our working tree files. We have three choices here:
 
-        - `--soft` tells Git: _leave both alone_. Git will move the _branch name_ without touching the index or our working tree. If you run `git commit` now, whatever is (still) in the index is what goes into the _new_ commit. If the index matches the snapshot in commit `H`, this gets you a new commit whose _snapshot_ is `H`, but whose _parent_ is `E`, as if commits `F` through `H` had all been collapsed into a single new commit. People usually call this _squashing_.
+        -   `--soft` tells Git: _leave both alone_. Git will move the _branch name_ without touching the index or our working tree. If you run `git commit` now, whatever is (still) in the index is what goes into the _new_ commit. If the index matches the snapshot in commit `H`, this gets you a new commit whose _snapshot_ is `H`, but whose _parent_ is `E`, as if commits `F` through `H` had all been collapsed into a single new commit. People usually call this _squashing_.
 
-        - `--mixed` tells Git: _reset your index, but leave my working tree alone_. Git will move the branch name, then _replace every file that is in the index with the one from the newly selected commit_. But Git will leave all your _working tree_ files alone. This means that as far as Git is concerned, you can start `git add`ing files to make a new commit. Your new commit won't match `H` unless you `git add` _everything_, so this means you could, for instance, build a new intermediate commit, sort of like `E+F` or something, if you wanted.
+        -   `--mixed` tells Git: _reset your index, but leave my working tree alone_. Git will move the branch name, then _replace every file that is in the index with the one from the newly selected commit_. But Git will leave all your _working tree_ files alone. This means that as far as Git is concerned, you can start `git add`ing files to make a new commit. Your new commit won't match `H` unless you `git add` _everything_, so this means you could, for instance, build a new intermediate commit, sort of like `E+F` or something, if you wanted.
 
-        - `--hard` tells Git: _reset your index **and** my working tree._ Git will move the branch name, replace all the files in its index, and replace all the files in your working tree, all as one big thing. It's now as if you never made those three commits at all. You no longer have the files from `F`, or `G`, or `H`: you have the files from commit `E`.
+        -   `--hard` tells Git: _reset your index **and** my working tree._ Git will move the branch name, replace all the files in its index, and replace all the files in your working tree, all as one big thing. It's now as if you never made those three commits at all. You no longer have the files from `F`, or `G`, or `H`: you have the files from commit `E`.
 
         Note that if you leave out the _`commit`_ part of this kind of (hard/soft/mixed) `reset`, Git will use `HEAD`. Since `HEAD` names the _current commit_ (as selected by the current branch name), this leaves the branch name itself unchanged: it still selects the same commit as before. So this is only useful with `--mixed` or `--hard`, because `git reset --soft`, with no commit hash ID, means _don't move the branch name, don't change Git's index, and don't touch my working tree_. Those are the three things this kind of `git reset` can do---move the branch name, change what's in Git's index, and change what's in your working tree---and you just ruled all three out. Git is OK with doing nothing, but why bother?
 
-    - `git reset [ *tree-ish* ] -- *path*`
+    -   `git reset [ *tree-ish* ] -- *path*`
 
         This is the other kind of `git reset` we'll care about here. It's a bit like a mixed reset, in that it means _clobber some of the index copies of files_, but here you specify _which files to clobber_. It's also a bit _unlike_ a mixed reset, because this kind of `git reset` will never move the branch name.
 
@@ -766,7 +768,7 @@ Let's look at each of the various commands now:
 
         There are several other forms of `git reset`. To see what they all mean, consult [the documentation](https://git-scm.com/docs/git-reset).
 
-- `git restore`: this got split off from `git checkout`.
+-   `git restore`: this got split off from `git checkout`.
 
     Basically, this does the same thing as the various forms of `git checkout` and `git reset` that clobber files (in your working tree and/or in Git's index). It's _smarter_ than the old `git checkout`-and-clobber-my-work variant, in that you get to choose where the files come from _and_ where they go, all in the one command line.
 
@@ -778,9 +780,9 @@ Let's look at each of the various commands now:
 
     The new ability---to copy from any arbitrary source, to your working tree, without touching Git's index / staging-area copy---is just that: new. You couldn't do it before. (You could run `git show *commit*:*path* > *path*`, before, but that falls outside our five commands to examine.)
 
-- `git switch`: this just does the "safe half" of `git checkout`. That's really all you need to know. Using `git switch`, without `--force`, Git won't overwrite your unsaved work, even if you make a typo or whatever. The old `git checkout` command could overwrite unsaved work: if your typo turns a branch name into a file name, for instance, well, oops.
-- 
-- `git revert` (I added this for completeness): this makes a _new commit_. The point of the new commit is to _back out_ what someone did in some existing commit. You therefore need to name the existing commit that revert should back out. This command probably should have been named `git backout`.
+-   `git switch`: this just does the "safe half" of `git checkout`. That's really all you need to know. Using `git switch`, without `--force`, Git won't overwrite your unsaved work, even if you make a typo or whatever. The old `git checkout` command could overwrite unsaved work: if your typo turns a branch name into a file name, for instance, well, oops.
+-
+-   `git revert` (I added this for completeness): this makes a _new commit_. The point of the new commit is to _back out_ what someone did in some existing commit. You therefore need to name the existing commit that revert should back out. This command probably should have been named `git backout`.
 
     If you back out the most recent commit, this does revert to the second-most-recent snapshot:
 
@@ -814,28 +816,28 @@ Let's look at each of the various commands now:
 
 ## Further Information
 
-- [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
-- 
-- [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranch
-- 
-- [Udemy Git Tutorial: A Comprehensive Guide](https://blog
-- 
-- [Git Immersion - A Guided tour that walks through the fundamentals of git
-- 
-- [git-scm - Video Tutorials](http://g
-- 
-- [git-scm - Documentation](http://git-scm.com/d
-- 
-- [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
+-   [tryGit - A fun interactive way to learn Git.](http://try.github.io/levels/1/challenges/1)
+-
+-   [Learn Git Branching - the most visual and interactive way to learn Git on the web](http://learngitbranch
+-
+-   [Udemy Git Tutorial: A Comprehensive Guide](https://blog
+-
+-   [Git Immersion - A Guided tour that walks through the fundamentals of git
+-
+-   [git-scm - Video Tutorials](http://g
+-
+-   [git-scm - Documentation](http://git-scm.com/d
+-
+-   [Atlassian Git - Tutorials & Workflows](https://www.atlassian.com/git/)
 
-- [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
+-   [SalesForce Cheat Sheet](http://res.cloudinary.com/hy4kyit2a/image/upload/SF_git_cheatsheet.pdf)
 
-- [GitGuys](http://www.gitguys.com/)
+-   [GitGuys](http://www.gitguys.com/)
 
-- [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
+-   [Git - the simple guide](http://rogerdudler.github.io/git-guide/index.html)
 
-- [Pro Git](http://www.git-scm.com/book/en/v2)
+-   [Pro Git](http://www.git-scm.com/book/en/v2)
 
-- [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+-   [An introduction to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
-- [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
+-   [The New Boston tutorial to Git covering basic commands and workflow](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)

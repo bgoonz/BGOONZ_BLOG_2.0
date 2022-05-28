@@ -924,9 +924,7 @@ Custom.
 
 > module : Python code in a separate file.  
 > package : Path to a directory that contains modules.  
-> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor">
-> <strong>init.py</strong>
-> </a> : Default file for a package.  
+> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"> > <strong>init.py</strong> > </a> : Default file for a package.  
 > submodule : Another file in a module's folder.  
 > function : Function in a module.
 

@@ -14,20 +14,28 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setHeadComponents([]);
     setPostBodyComponents([
         <React.Fragment>
-            <script src={withPrefix('js/addthis.js')} />
-            <script src={withPrefix('js/blm.js')} />
-            <script src={withPrefix('js/inject.js')} />
-            <script src={withPrefix('js/searchbar.js')} />
-            <script src={withPrefix('js/plugins.js')} />
-            <script src={withPrefix('js/main.js')} />
-            <script src={withPrefix('js/misc.js')} />
-            <script src={withPrefix('js/page-load.js')} />
-            <script src={withPrefix('js/page-unload.js')} />
-            <script src={withPrefix('js/prism.js')} />
-            <script src={withPrefix('js/search-create.js')} />
-            <script src={withPrefix('js/algolia.js')} />
             <script src={('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js')} />
-            <script src={withPrefix('js/syntax.js')} />
+            <script src={withprefix('js/algolia.js')} />
+            <script src={withprefix('js/analytics.js')} />
+            <script src={withprefix('js/blm.js')} />
+            <script src={withprefix('js/docs-main.js')} />
+            <script src={withprefix('js/goog-search.js')} />
+            <script src={withprefix('js/google-search.js')} />
+            <script src={withprefix('js/init.js')} />
+            <script src={withprefix('js/inject.js')} />
+            <script src={withprefix('js/main.js')} />
+            <script src={withprefix('js/misc.js')} />
+            <script src={withprefix('js/netlify-identity.js')} />
+            <script src={withprefix('js/page-load.js')} />
+            <script src={withprefix('js/page-unload.js')} />
+            <script src={withprefix('js/plugins.js')} />
+            <script src={withprefix('js/prettier.js')} />
+            <script src={withprefix('js/print-2-pdf.js')} />
+            <script src={withprefix('js/prism.js')} />
+            <script src={withprefix('js/search-create.js')} />
+            <script src={withprefix('js/searchbar.js')} />
+            <script src={withprefix('js/syntax.js')} />
+            <script src={withprefix('js/addthis.js')} />
         </React.Fragment>
     ]);
 };

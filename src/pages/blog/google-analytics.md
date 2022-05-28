@@ -1,18 +1,22 @@
 ---
 title: google-analytics
 template: post
+subtitle: Page title and screen class
+excerpt: 7 tips to become a better web developer
 date: 2022-05-16T09:54:51.999Z
-image: blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
-thumb_image: blob:https://bgoonz-blog.netlify.app/da38d61c-8576-4889-baf3-77ef84cc720e
+image: blob:https://bgoonz-blog.netlify.app/66195eee-f550-43e3-ba79-0de21393ead0
+thumb_image: blob:https://bgoonz-blog.netlify.app/66195eee-f550-43e3-ba79-0de21393ead0
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/google.yaml
+  - src/data/categories/google.yaml
 tags:
-    - src/data/tags/cms.yaml
+  - src/data/tags/cms.yaml
+  - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/event-handeling.md
+  - src/pages/blog/event-handeling.md
+  - src/pages/blog/google-analytics.md
 cmseditable: true
 ---
 

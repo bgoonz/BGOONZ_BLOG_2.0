@@ -206,9 +206,8 @@ https://bgoonz-blog.netlify.app/docs/tools/markdown-html
 https://bgoonz-blog.netlify.app/docs/tutorials/enviorment-setup
 ```
 
-
-
 ## More Links:
+
 ```
 url,tstamp
 https://bgoonz-blog.netlify.app/,2022-01-21T20:50:56.812Z

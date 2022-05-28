@@ -54,7 +54,9 @@ Apart from customizing colors, fonts, or link style in the [Control Panel](https
 
 This allows you to override some of the general settings from the Control Panel. It is especially useful when you want one search box (e.g., one on the homepage) to behave differently than other ones on the site. For example, you can enable or disable the autocomplete feature using attributes. By default, it is set to `true` if autocomplete is enabled in the Control Panel. By switching the value to `false`, you can control how the element behaves.
 
-`<div class="gcse-searchbox"></div> <div class="gcse-searchresults" data-defaultToImageSearch="true"></div>`
+`<div class="gcse-searchbox">
+</div> <div class="gcse-searchresults" data-defaultToImageSearch="true">
+</div>`
 
 ## Customizing Search Results
 
@@ -62,7 +64,8 @@ In a similar way to customizing the search box, you can add additional options t
 
 For example, to change our search engine from webresults-based to image-based, we can utilize the `defaultToImageSearch` attribute.
 
-First of all, you need to enable Image Search in the [Control Panel](https://programmablesearchengine.google.com/) for your search engine. In the **Setup** section, in the **Basics** tab, click the **Image search** option into the “on” position. After that, add the `defaultToImageSearch` attribute to the `<div class="gcse-searchresults"></div>` element on your website.
+First of all, you need to enable Image Search in the [Control Panel](https://programmablesearchengine.google.com/) for your search engine. In the **Setup** section, in the **Basics** tab, click the **Image search** option into the “on” position. After that, add the `defaultToImageSearch` attribute to the `<div class="gcse-searchresults">
+</div>` element on your website.
 
 ### Advantages of adding Google custom search
 
@@ -78,9 +81,9 @@ First of all, you need to enable Image Search in the [Control Panel](https://pro
 -   Minimal UI customization options
 -   It can be shut down or changed at any time. Google is known for killing products ruthlessly without considering the user base.
 
-Though this might sound great to have Google search on your website, there is no free lunch.  Google shows ads to cover up for this service.  Now say, your site is about shoes of brand X.  when people search on your site for a shoe you have,  Google shows an ad of your competitor brand Y and **places it above** your site results.  Your visitors are going to believe that you indeed are recommending brand Y yourself.  If you are going to monetize your visitors, then this will drastically reduce your income.
+Though this might sound great to have Google search on your website, there is no free lunch. Google shows ads to cover up for this service. Now say, your site is about shoes of brand X. when people search on your site for a shoe you have, Google shows an ad of your competitor brand Y and **places it above** your site results. Your visitors are going to believe that you indeed are recommending brand Y yourself. If you are going to monetize your visitors, then this will drastically reduce your income.
 
-Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website.  Method 2 will give an alternative but paid solution to this problem.
+Second, no one likes ads. In my opinion, there is nothing like a “non-intrusive” ad. But, ads are Ads, and they are bad. I wouldn’t like to force my visitors to watch ads while they are searching on my website. Method 2 will give an alternative but paid solution to this problem.
 
 ## Google search bar for your website using Expertrec
 
@@ -95,9 +98,13 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 5.  Initiate a website crawl. (Now Expertrec crawlers will start crawling your website. This could take some time depending on the size and number of pages on your website).
 6.  Once the crawl completes, you can make changes to your search engine’s look and feel and also to the search engine’s ranking algorithm by using the control panel. There are more advanced features like search weights, promotions, synonyms, and more.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/UI-editor.jpg)
 7.  Go to the code section and add it to your website. You can also email the code to your developer and ask them to add it to their website.
-    -   the code contains two portions ( one within **<script></script>** and another piece of code **<ci-search></ci-search>**).
-    -   The <script></script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
-    -   The <ci-search></ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
+    -   the code contains two portions ( one within **<script>
+</script>** and another piece of code **<ci-search>
+</ci-search>**).
+    -   The <script>
+</script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
+    -   The <ci-search>
+</ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
 8.  It is advisable to make the code changes in a test mode or development website before taking live in your live/ production site.
 9.  As a final step, remove any website cache that you might have.
 10. Now your site search engine is live. After a few days of search engine usage, you can check out the search analytics to check out what users are searching for and reorganize your content strategy accordingly.
@@ -109,7 +116,7 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 3.  Real-time support to help you take live your search on your website- You can be sure that search results don’t
 4.  Full control over search results.
 
-Happy searching.  Here is the signup link again [https://cse.expertrec.com?platform=cse](https://cse.expertrec.com/?platform=cse)
+Happy searching. Here is the signup link again [https://cse.expertrec.com?platform=cse](https://cse.expertrec.com/?platform=cse)
 
 ## Google search box using a plugin for WordPress websites
 
@@ -123,7 +130,8 @@ This custom search plugin is highly customizable and lightning-fast. It also add
 
 You can build and configure your own WordPress search user interface with no coding. Please note that this is a paid plugin (plans begin at 9$ per month) and that you may try out a free demo for 14 days. However, you can continue using the voice search feature for free even after the trial period.
 
-This plugin replaces your default WordPress search form. However, for some themes, the default integration might not work. For such cases, you will have to add the code **<ci-search></ci-search>** at the desired location ( for example, in your menu or header or footer). It also adds voice search capability to your WordPress site.
+This plugin replaces your default WordPress search form. However, for some themes, the default integration might not work. For such cases, you will have to add the code **<ci-search>
+</ci-search>** at the desired location ( for example, in your menu or header or footer). It also adds voice search capability to your WordPress site.
 
 ### **Features**
 
@@ -210,7 +218,8 @@ A search bar is necessary for a good website. Creating your own search engine fr
 
     ` </``script``> `
 
-    ` <``div ` ` class``=``"gcse-search"``></``div``> `
+    ` <``div ` ` class``=``"gcse-search"``>
+</``div``> `
 
     ` </``body``> `
 
@@ -222,7 +231,7 @@ A search bar is necessary for a good website. Creating your own search engine fr
 
 ---
 
-# Implementing search box  |  Programmable Search Engine
+# Implementing search box | Programmable Search Engine
 
 > ## Excerpt
 >
@@ -236,12 +245,15 @@ Once you've created your Programmable Search Engine, you can add the Programmabl
 2.  Click **Setup** in the sidebar, and then click the **Basics** tab.
 3.  In the **Details** section, click **Get code**. Copy the code and paste it into your page's HTML source code where you want the Programmable Search Element to appear.
 
-The `<div class="gcse-search"></div>` element is a placeholder - this is where the search element (both search box and search results) will be rendered.
+The `<div class="gcse-search">
+</div>` element is a placeholder - this is where the search element (both search box and search results) will be rendered.
 
-<!-- Insert your own Programmable Search Engine ID here --> <script async src="https://cse.google.com/cse.js?cx=017643444788069204610:4gvhea\_mvga"></script>
+<!-- Insert your own Programmable Search Engine ID here --> <script async src="https://cse.google.com/cse.js?cx=017643444788069204610:4gvhea\_mvga">
+</script>
 
 ```
-<div class="gcse-search"></div>
+<div class="gcse-search">
+</div>
 ```
 
 ## Trying out different layouts
@@ -250,10 +262,16 @@ On many occasions, it makes sense to have a search box appear independently from
 
 To change the layout of your engine go to the **Look and feel** section in the [Control Panel](https://programmablesearchengine.google.com/) and click the **Layout** tab. After selecting and saving the 2-column layout in the Control Panel, you also need to change the HTML code for the Search Element.
 
-<!-- Insert your own Programmable Search Engine ID here --> <script async src="https://cse.google.com/cse.js?cx=017643444788069204610:4gvhea\_mvga"></script>
+<!-- Insert your own Programmable Search Engine ID here --> <script async src="https://cse.google.com/cse.js?cx=017643444788069204610:4gvhea\_mvga">
+</script>
 
 ```
-<div style="border: 1px solid blue;">    Area 1 (for example a sidebar)    <div class="gcse-searchbox"></div></div><div style="border: 1px solid red;">    Area 2 (for example main area of the page)    <div class="gcse-searchresults"></div></div>
+<div style="border: 1px solid blue;">    Area 1 (for example a sidebar)    <div class="gcse-searchbox">
+</div>
+</div>
+<div style="border: 1px solid red;">    Area 2 (for example main area of the page)    <div class="gcse-searchresults">
+</div>
+</div>
 ```
 
 Another interesting layout is the two-page option. It allows you to implement your own search box on one page and render the standard search results on another page using parameters in the address bar.
@@ -261,7 +279,10 @@ Another interesting layout is the two-page option. It allows you to implement yo
 Select and save the **two-page layout** in the Control Panel. On one page, implement a stand-alone search box, changing the `resultsUrl` attribute to point to the url where you want to display the results.
 
 ```
-<script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID"></script><div class="gcse-searchbox-only" data-resultsUrl="YOUR_RESULTS_PAGE_URL"></div>
+<script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID">
+</script>
+<div class="gcse-searchbox-only" data-resultsUrl="YOUR_RESULTS_PAGE_URL">
+</div>
 ```
 
 [Try it](https://jsfiddle.net/gtpqzhac/)
@@ -269,7 +290,10 @@ Select and save the **two-page layout** in the Control Panel. On one page, imple
 To implement a stand-alone search results page, paste the results code snippet into your results page:
 
 ```
-<script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID"></script><div class="gcse-searchresults-only"></div>
+<script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID">
+</script>
+<div class="gcse-searchresults-only">
+</div>
 ```
 
 Now you can trigger search results on this page by passing a "q" argument in the url:
@@ -278,7 +302,8 @@ Now you can trigger search results on this page by passing a "q" argument in the
 https://my-results-page-url.com/?q=myQuery
 ```
 
-Note the _q=myQuery_ param in the address bar - this is how the `<div class="gcse-searchresults-only"></div>` element knows what query results to display.
+Note the _q=myQuery_ param in the address bar - this is how the `<div class="gcse-searchresults-only">
+</div>` element knows what query results to display.
 
 [Try it](https://programmablesearchengine.google.com/docs/element/results-only_url.html?q=test)
 
@@ -432,7 +457,10 @@ To do this I have changed the HTML of the button to now include a `svg`. The `sv
    placeholder="Search..."
    aria-label="Search through site content">
   <button>
-    <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+    <svg viewBox="0 0 1024 1024">
+<path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+</path>
+</svg>
   </button>
 </form>
 ```
@@ -599,7 +627,10 @@ Here is the complete HTML:
     <form role="search" id="form">
       <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
       <button>
-        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        <svg viewBox="0 0 1024 1024">
+<path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+</path>
+</svg>
       </button>
     </form>
     <script>

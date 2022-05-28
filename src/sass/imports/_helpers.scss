@@ -133,9 +133,9 @@
 .grid-item {
     box-sizing: border-box;
     padding-left: $grid-gap / 2;
-    padding-right: $grid-gap / 2;
+    padding-right: $grid-gap / 3;
     position: relative;
-    width: 100%;
+    width: 90%;
 }
 
 .grid-center {

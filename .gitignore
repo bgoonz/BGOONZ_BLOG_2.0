@@ -1,25 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Logs
 logs
 *.log
@@ -93,5 +73,5 @@ yarn-error.log
 node_modules/
 
 
-*.cache
-*public
+# *.cache
+# *public

@@ -4,22 +4,27 @@ template: post
 subtitle: A reducer is a function that determines changes to an applications state
 excerpt: A reducer is a function that determines changes to an applications state
 date: 2022-05-16T06:08:24.979Z
-image: redux.gif
-thumb_image: redux.gif
+image: images/redux.gif
+thumb_image: images/redux.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
+    - src/data/categories/react.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/react-state.md
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/react-state.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
+
+# What is a Redux Reducer?
+
+
 **This tutorial will teach you "how Redux works"**, as well as _why_ these patterns exist. Fair warning though - learning the concepts is different from putting them into practice in actual apps.
 
 **The initial code will be less concise than the way we suggest writing real app code**, but writing it out long-hand is the best way to learn. Once you understand how everything fits together, we'll look at using Redux Toolkit to simplify things. **Redux Toolkit is the recommended way to build production apps with Redux**, and is built on all of the concepts that we will look at throughout this tutorial. Once you understand the core concepts covered here, you'll understand how to use Redux Toolkit more efficiently.
@@ -28,8 +33,8 @@ cmseditable: true
 
 If you're looking to learn more about how Redux is used to write real-world applications, please see:
 
-- [**The "Modern Redux" page in this tutorial**](./part-8-modern-redux.md), which shows how to convert the low-level examples from earlier sections into the modern patterns we do recommend for real-world usage
-- [**The "Redux Essentials" tutorial**](../essentials/part-1-overview-concepts.md), which teaches "how to use Redux, the right way" for real-world apps, using our latest recommended patterns and practices.
+-   [**The "Modern Redux" page in this tutorial**](./part-8-modern-redux.md), which shows how to convert the low-level examples from earlier sections into the modern patterns we do recommend for real-world usage
+-   [**The "Redux Essentials" tutorial**](../essentials/part-1-overview-concepts.md), which teaches "how to use Redux, the right way" for real-world apps, using our latest recommended patterns and practices.
 
 :::
 
@@ -37,11 +42,11 @@ We've tried to keep these explanations beginner-friendly, but we do need to make
 
 :::important Prerequisites
 
-- Familiarity with [HTML & CSS](https://internetingishard.com/).
-- Familiarity with [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
-- Understanding of [the array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
-- Knowledge of React terminology: [JSX](https://reactjs.org/docs/introducing-jsx.html), [State](https://reactjs.org/docs/state-and-lifecycle.html), [Function Components, Props](https://reactjs.org/docs/components-and-props.html), and [Hooks](https://reactjs.org/docs/hooks-intro.html)
-- Knowledge of [asynchronous JavaScript](https://javascript.info/promise-basics) and [making AJAX requests](https://javascript.info/fetch)
+-   Familiarity with [HTML & CSS](https://internetingishard.com/).
+-   Familiarity with [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
+-   Understanding of [the array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
+-   Knowledge of React terminology: [JSX](https://reactjs.org/docs/introducing-jsx.html), [State](https://reactjs.org/docs/state-and-lifecycle.html), [Function Components, Props](https://reactjs.org/docs/components-and-props.html), and [Hooks](https://reactjs.org/docs/hooks-intro.html)
+-   Knowledge of [asynchronous JavaScript](https://javascript.info/promise-basics) and [making AJAX requests](https://javascript.info/fetch)
 
 :::
 
@@ -49,12 +54,12 @@ We've tried to keep these explanations beginner-friendly, but we do need to make
 
 Finally, you should make sure that you have the React and Redux DevTools extensions installed in your browser:
 
-- React DevTools Extension:
-  - [React DevTools Extension for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-  - [React DevTools Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-- Redux DevTools Extension:
-  - [Redux DevTools Extension for Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-  - [Redux DevTools Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
+-   React DevTools Extension:
+    -   [React DevTools Extension for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+    -   [React DevTools Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+-   Redux DevTools Extension:
+    -   [Redux DevTools Extension for Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+    -   [Redux DevTools Extension for Firefox](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
 
 ## What is Redux?
 
@@ -74,10 +79,10 @@ Redux helps you deal with shared state management, but like any tool, it has tra
 
 Redux is more useful when:
 
-- You have large amounts of application state that are needed in many places in the app
-- The app state is updated frequently over time
-- The logic to update that state may be complex
-- The app has a medium or large-sized codebase, and might be worked on by many people
+-   You have large amounts of application state that are needed in many places in the app
+-   The app state is updated frequently over time
+-   The logic to update that state may be complex
+-   The app has a medium or large-sized codebase, and might be worked on by many people
 
 **Not all apps need Redux. Take some time to think about the kind of app you're building, and decide what tools would be best to help solve the problems you're working on.**
 
@@ -85,10 +90,10 @@ Redux is more useful when:
 
 If you're not sure whether Redux is a good choice for your app, these resources give some more guidance:
 
-- **[When (and when not) to reach for Redux](https://changelog.com/posts/when-and-when-not-to-reach-for-redux)**
-- **[The Tao of Redux, Part 1 - Implementation and Intent](https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/)**
-- **[Redux FAQ: When should I use Redux?](../../faq/General.md#when-should-i-use-redux)**
-- **[You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)**
+-   **[When (and when not) to reach for Redux](https://changelog.com/posts/when-and-when-not-to-reach-for-redux)**
+-   **[The Tao of Redux, Part 1 - Implementation and Intent](https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/)**
+-   **[Redux FAQ: When should I use Redux?](../../faq/General.md#when-should-i-use-redux)**
+-   **[You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)**
 
 :::
 
@@ -124,10 +129,10 @@ The center of every Redux application is the **store**. A "store" is a container
 
 A store is a JavaScript object with a few special functions and abilities that make it different than a plain global object:
 
-- You must never directly modify or change the state that is kept inside the Redux store
-- Instead, the only way to cause an update to the state is to create a plain **action** object that describes "something that happened in the application", and then **dispatch** the action to the store to tell it what happened.
-- When an action is dispatched, the store runs the root **reducer** function, and lets it calculate the new state based on the old state and the action
-- Finally, the store notifies **subscribers** that the state has been updated so the UI can be updated with the new data.
+-   You must never directly modify or change the state that is kept inside the Redux store
+-   Instead, the only way to cause an update to the state is to create a plain **action** object that describes "something that happened in the application", and then **dispatch** the action to the store to tell it what happened.
+-   When an action is dispatched, the store runs the root **reducer** function, and lets it calculate the new state based on the old state and the action
+-   Finally, the store notifies **subscribers** that the state has been updated so the UI can be updated with the new data.
 
 ### Redux Core Example App
 
@@ -139,7 +144,9 @@ Let's look at a minimal working example of a Redux app - a small counter applica
   title="redux-fundamentals-core-example"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-></iframe>
+>
+</iframe>
+<br>
 
 Because Redux is a standalone JS library with no dependencies, this example is written by only loading a single script tag for the Redux library, and uses basic JS and HTML for the UI. In practice, Redux is normally used by [installing the Redux packages from NPM](../../introduction/Installation.md), and the UI is created using a library like [React](https://reactjs.org).
 
@@ -158,8 +165,8 @@ We start by defining an initial **state** value to describe the application:
 ```js
 // Define an initial state value for the app
 const initialState = {
-  value: 0
-}
+    value: 0
+};
 ```
 
 For this app, we're going to track a single number with the current value of our counter.
@@ -174,18 +181,18 @@ so we provide the `initialState` as the default value for this reducer:
 // Create a "reducer" function that determines what the new state
 // should be when something happens in the app
 function counterReducer(state = initialState, action) {
-  // Reducers usually look at the type of action that happened
-  // to decide how to update the state
-  switch (action.type) {
-    case 'counter/incremented':
-      return { ...state, value: state.value + 1 }
-    case 'counter/decremented':
-      return { ...state, value: state.value - 1 }
-    default:
-      // If the reducer doesn't care about this action type,
-      // return the existing state unchanged
-      return state
-  }
+    // Reducers usually look at the type of action that happened
+    // to decide how to update the state
+    switch (action.type) {
+        case 'counter/incremented':
+            return { ...state, value: state.value + 1 };
+        case 'counter/decremented':
+            return { ...state, value: state.value - 1 };
+        default:
+            // If the reducer doesn't care about this action type,
+            // return the existing state unchanged
+            return state;
+    }
 }
 ```
 
@@ -209,7 +216,7 @@ calling the Redux library `createStore` API.
 ```js
 // Create a new Redux store with the `createStore` function,
 // and use the `counterReducer` for the update logic
-const store = Redux.createStore(counterReducer)
+const store = Redux.createStore(counterReducer);
 ```
 
 We pass the reducer function to `createStore`, which uses the reducer function
@@ -222,19 +229,19 @@ does something, the app will update its data and then redraw the UI with those v
 
 ```js
 // Our "user interface" is some text in a single HTML element
-const valueEl = document.getElementById('value')
+const valueEl = document.getElementById('value');
 
 // Whenever the store state changes, update the UI by
 // reading the latest store state and showing new data
 function render() {
-  const state = store.getState()
-  valueEl.innerHTML = state.value.toString()
+    const state = store.getState();
+    valueEl.innerHTML = state.value.toString();
 }
 
 // Update the UI with the initial data
-render()
+render();
 // And subscribe to redraw whenever the data changes in the future
-store.subscribe(render)
+store.subscribe(render);
 ```
 
 In this small example, we're only using some basic HTML elements as our UI,
@@ -260,30 +267,26 @@ to update the UI.
 // Handle user inputs by "dispatching" action objects,
 // which should describe "what happened" in the app
 document.getElementById('increment').addEventListener('click', function () {
-  store.dispatch({ type: 'counter/incremented' })
-})
+    store.dispatch({ type: 'counter/incremented' });
+});
 
 document.getElementById('decrement').addEventListener('click', function () {
-  store.dispatch({ type: 'counter/decremented' })
-})
+    store.dispatch({ type: 'counter/decremented' });
+});
 
-document
-  .getElementById('incrementIfOdd')
-  .addEventListener('click', function () {
+document.getElementById('incrementIfOdd').addEventListener('click', function () {
     // We can write logic to decide what to do based on the state
     if (store.getState().value % 2 !== 0) {
-      store.dispatch({ type: 'counter/incremented' })
+        store.dispatch({ type: 'counter/incremented' });
     }
-  })
+});
 
-document
-  .getElementById('incrementAsync')
-  .addEventListener('click', function () {
+document.getElementById('incrementAsync').addEventListener('click', function () {
     // We can also write async logic that interacts with the store
     setTimeout(function () {
-      store.dispatch({ type: 'counter/incremented' })
-    }, 1000)
-  })
+        store.dispatch({ type: 'counter/incremented' });
+    }, 1000);
+});
 ```
 
 Here, we'll dispatch the actions that will make the reducer add 1 or
@@ -297,9 +300,9 @@ after a delay.
 
 We can summarize the flow of data through a Redux app with this diagram. It represents how:
 
-- actions are dispatched in response to a user interaction like a click
-- the store runs the reducer function to calculate a new state
-- the UI reads the new state to display the new values
+-   actions are dispatched in response to a user interaction like a click
+-   the store runs the reducer function to calculate a new state
+-   the UI reads the new state to display the new values
 
 (Don't worry if these pieces aren't quite clear yet! Keep this picture in your mind as you go through the rest of this tutorial, and you'll see how the pieces fit together.)
 
@@ -314,15 +317,13 @@ With that in mind, let's review what we've learned so far:
 
 :::tip Summary
 
-- **Redux is a library for managing global application state**
-  - Redux is typically used with the React-Redux library for integrating Redux and React together
-  - Redux Toolkit is the recommended way to write Redux logic
-- **Redux uses several types of code**
-  - _Actions_ are plain objects with a `type` field, and describe "what happened" in the app
-  - _Reducers_ are functions that calculate a new state value based on previous state + an action
-  - A Redux _store_ runs the root reducer whenever an action is _dispatched_
-
-
+-   **Redux is a library for managing global application state**
+    -   Redux is typically used with the React-Redux library for integrating Redux and React together
+    -   Redux Toolkit is the recommended way to write Redux logic
+-   **Redux uses several types of code**
+    -   _Actions_ are plain objects with a `type` field, and describe "what happened" in the app
+    -   _Reducers_ are functions that calculate a new state value based on previous state + an action
+    -   A Redux _store_ runs the root reducer whenever an action is _dispatched_
 
 ### State Management
 
@@ -330,35 +331,35 @@ Let's start by looking at a small React counter component. It tracks a number in
 
 ```jsx
 function Counter() {
-  // State: a counter value
-  const [counter, setCounter] = useState(0)
+    // State: a counter value
+    const [counter, setCounter] = useState(0);
 
-  // Action: code that causes an update to the state when something happens
-  const increment = () => {
-    setCounter(prevCounter => prevCounter + 1)
-  }
+    // Action: code that causes an update to the state when something happens
+    const increment = () => {
+        setCounter((prevCounter) => prevCounter + 1);
+    };
 
-  // View: the UI definition
-  return (
-    <div>
-      Value: {counter} <button onClick={increment}>Increment</button>
-    </div>
-  )
+    // View: the UI definition
+    return (
+        <div>
+            Value: {counter} <button onClick={increment}>Increment</button>
+        </div>
+    );
 }
 ```
 
 It is a self-contained app with the following parts:
 
-- The **state**, the source of truth that drives our app;
-- The **view**, a declarative description of the UI based on the current state
-- The **actions**, the events that occur in the app based on user input, and trigger updates in the state
+-   The **state**, the source of truth that drives our app;
+-   The **view**, a declarative description of the UI based on the current state
+-   The **actions**, the events that occur in the app based on user input, and trigger updates in the state
 
 This is a small example of **"one-way data flow"**:
 
-- State describes the condition of the app at a specific point in time
-- The UI is rendered based on that state
-- When something happens (such as a user clicking a button), the state is updated based on what occurred
-- The UI re-renders based on the new state
+-   State describes the condition of the app at a specific point in time
+-   The UI is rendered based on that state
+-   When something happens (such as a user clicking a button), the state is updated based on what occurred
+-   The UI re-renders based on the new state
 
 ![One-way data flow](/img/tutorials/essentials/one-way-data-flow.png)
 
@@ -377,14 +378,14 @@ This is the basic idea behind Redux: a single centralized place to contain the g
 JavaScript objects and arrays are all mutable by default. If I create an object, I can change the contents of its fields. If I create an array, I can change the contents as well:
 
 ```js
-const obj = { a: 1, b: 2 }
+const obj = { a: 1, b: 2 };
 // still the same object outside, but the contents have changed
-obj.b = 3
+obj.b = 3;
 
-const arr = ['a', 'b']
+const arr = ['a', 'b'];
 // In the same way, we can change the contents of this array
-arr.push('c')
-arr[1] = 'd'
+arr.push('c');
+arr[1] = 'd';
 ```
 
 This is called _mutating_ the object or array. It's the same object or array reference in memory, but now the contents inside the object have changed.
@@ -395,33 +396,33 @@ We can do this by hand using JavaScript's array / object spread operators, as we
 
 ```js
 const obj = {
-  a: {
-    // To safely update obj.a.c, we have to copy each piece
-    c: 3
-  },
-  b: 2
-}
+    a: {
+        // To safely update obj.a.c, we have to copy each piece
+        c: 3
+    },
+    b: 2
+};
 
 const obj2 = {
-  // copy obj
-  ...obj,
-  // overwrite a
-  a: {
-    // copy obj.a
-    ...obj.a,
-    // overwrite c
-    c: 42
-  }
-}
+    // copy obj
+    ...obj,
+    // overwrite a
+    a: {
+        // copy obj.a
+        ...obj.a,
+        // overwrite c
+        c: 42
+    }
+};
 
-const arr = ['a', 'b']
+const arr = ['a', 'b'];
 // Create a new copy of arr, with "c" appended to the end
-const arr2 = arr.concat('c')
+const arr2 = arr.concat('c');
 
 // or, we can make a copy of the original array:
-const arr3 = arr.slice()
+const arr3 = arr.slice();
 // and mutate the copy:
-arr3.push('c')
+arr3.push('c');
 ```
 
 **Redux expects that all state updates are done immutably**. We'll look at where and how this is important a bit later, as well as some easier ways to write immutable update logic.
@@ -430,8 +431,8 @@ arr3.push('c')
 
 For more info on how immutability works in JavaScript, see:
 
-- [A Visual Guide to References in JavaScript](https://daveceddia.com/javascript-references/)
-- [Immutability in React and Redux: The Complete Guide](https://daveceddia.com/react-redux-immutability-guide/)
+-   [A Visual Guide to References in JavaScript](https://daveceddia.com/javascript-references/)
+-   [Immutability in React and Redux: The Complete Guide](https://daveceddia.com/react-redux-immutability-guide/)
 
 :::
 
@@ -451,9 +452,9 @@ A typical action object might look like this:
 
 ```js
 const addTodoAction = {
-  type: 'todos/todoAdded',
-  payload: 'Buy milk'
-}
+    type: 'todos/todoAdded',
+    payload: 'Buy milk'
+};
 ```
 
 ### Reducers
@@ -468,35 +469,35 @@ A **reducer** is a function that receives the current `state` and an `action` ob
 
 Reducers must _always_ follow some specific rules:
 
-- They should only calculate the new state value based on the `state` and `action` arguments
-- They are not allowed to modify the existing `state`. Instead, they must make _immutable updates_, by copying the existing `state` and making changes to the copied values.
-- They must not do any asynchronous logic, calculate random values, or cause other "side effects"
+-   They should only calculate the new state value based on the `state` and `action` arguments
+-   They are not allowed to modify the existing `state`. Instead, they must make _immutable updates_, by copying the existing `state` and making changes to the copied values.
+-   They must not do any asynchronous logic, calculate random values, or cause other "side effects"
 
 We'll talk more about the rules of reducers later, including why they're important and how to follow them correctly.
 
 The logic inside reducer functions typically follows the same series of steps:
 
-- Check to see if the reducer cares about this action
-  - If so, make a copy of the state, update the copy with new values, and return it
-- Otherwise, return the existing state unchanged
+-   Check to see if the reducer cares about this action
+    -   If so, make a copy of the state, update the copy with new values, and return it
+-   Otherwise, return the existing state unchanged
 
 Here's a small example of a reducer, showing the steps that each reducer should follow:
 
 ```js
-const initialState = { value: 0 }
+const initialState = { value: 0 };
 
 function counterReducer(state = initialState, action) {
-  // Check to see if the reducer cares about this action
-  if (action.type === 'counter/incremented') {
-    // If so, make a copy of `state`
-    return {
-      ...state,
-      // and update the copy with the new value
-      value: state.value + 1
+    // Check to see if the reducer cares about this action
+    if (action.type === 'counter/incremented') {
+        // If so, make a copy of `state`
+        return {
+            ...state,
+            // and update the copy with the new value
+            value: state.value + 1
+        };
     }
-  }
-  // otherwise return the existing state unchanged
-  return state
+    // otherwise return the existing state unchanged
+    return state;
 }
 ```
 
@@ -508,29 +509,29 @@ The [`Array.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
 
 `Array.reduce()` takes a callback function as an argument, which will be called one time for each item in the array. It takes two arguments:
 
-- `previousResult`, the value that your callback returned last time
-- `currentItem`, the current item in the array
+-   `previousResult`, the value that your callback returned last time
+-   `currentItem`, the current item in the array
 
 The first time that the callback runs, there isn't a `previousResult` available, so we need to also pass in an initial value that will be used as the first `previousResult`.
 
 If we wanted to add together an array of numbers to find out what the total is, we could write a reduce callback that looks like this:
 
 ```js
-const numbers = [2, 5, 8]
+const numbers = [2, 5, 8];
 
 const addNumbers = (previousResult, currentItem) => {
-  console.log({ previousResult, currentItem })
-  return previousResult + currentItem
-}
+    console.log({ previousResult, currentItem });
+    return previousResult + currentItem;
+};
 
-const initialValue = 0
+const initialValue = 0;
 
-const total = numbers.reduce(addNumbers, initialValue)
+const total = numbers.reduce(addNumbers, initialValue);
 // {previousResult: 0, currentItem: 2}
 // {previousResult: 2, currentItem: 5}
 // {previousResult: 7, currentItem: 8}
 
-console.log(total)
+console.log(total);
 // 15
 ```
 
@@ -541,16 +542,12 @@ Notice that this `addNumbers` "reduce callback" function doesn't need to keep tr
 If we were to create an array of Redux actions, call `reduce()`, and pass in a reducer function, we'd get a final result the same way:
 
 ```js
-const actions = [
-  { type: 'counter/incremented' },
-  { type: 'counter/incremented' },
-  { type: 'counter/incremented' }
-]
+const actions = [{ type: 'counter/incremented' }, { type: 'counter/incremented' }, { type: 'counter/incremented' }];
 
-const initialState = { value: 0 }
+const initialState = { value: 0 };
 
-const finalResult = actions.reduce(counterReducer, initialState)
-console.log(finalResult)
+const finalResult = actions.reduce(counterReducer, initialState);
+console.log(finalResult);
 // {value: 3}
 ```
 
@@ -565,11 +562,11 @@ The current Redux application state lives in an object called the **store** .
 The store is created by passing in a reducer, and has a method called `getState` that returns the current state value:
 
 ```js
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 
-const store = configureStore({ reducer: counterReducer })
+const store = configureStore({ reducer: counterReducer });
 
-console.log(store.getState())
+console.log(store.getState());
 // {value: 0}
 ```
 
@@ -578,9 +575,9 @@ console.log(store.getState())
 The Redux store has a method called `dispatch`. **The only way to update the state is to call `store.dispatch()` and pass in an action object**. The store will run its reducer function and save the new state value inside, and we can call `getState()` to retrieve the updated value:
 
 ```js
-store.dispatch({ type: 'counter/incremented' })
+store.dispatch({ type: 'counter/incremented' });
 
-console.log(store.getState())
+console.log(store.getState());
 // {value: 1}
 ```
 
@@ -591,10 +588,10 @@ console.log(store.getState())
 **Selectors** are functions that know how to extract specific pieces of information from a store state value. As an application grows bigger, this can help avoid repeating logic as different parts of the app need to read the same data:
 
 ```js
-const selectCounterValue = state => state.value
+const selectCounterValue = (state) => state.value;
 
-const currentValue = selectCounterValue(store.getState())
-console.log(currentValue)
+const currentValue = selectCounterValue(store.getState());
+console.log(currentValue);
 // 2
 ```
 
@@ -628,24 +625,24 @@ To specify how the state tree is updated based on actions, you write **reducer**
 
 Earlier, we talked about "one-way data flow", which describes this sequence of steps to update the app:
 
-- State describes the condition of the app at a specific point in time
-- The UI is rendered based on that state
-- When something happens (such as a user clicking a button), the state is updated based on what occurred
-- The UI re-renders based on the new state
+-   State describes the condition of the app at a specific point in time
+-   The UI is rendered based on that state
+-   When something happens (such as a user clicking a button), the state is updated based on what occurred
+-   The UI re-renders based on the new state
 
 For Redux specifically, we can break these steps into more detail:
 
-- Initial setup:
-  - A Redux store is created using a root reducer function
-  - The store calls the root reducer once, and saves the return value as its initial `state`
-  - When the UI is first rendered, UI components access the current state of the Redux store, and use that data to decide what to render. They also subscribe to any future store updates so they can know if the state has changed.
-- Updates:
-  - Something happens in the app, such as a user clicking a button
-  - The app code dispatches an action to the Redux store, like `dispatch({type: 'counter/incremented'})`
-  - The store runs the reducer function again with the previous `state` and the current `action`, and saves the return value as the new `state`
-  - The store notifies all parts of the UI that are subscribed that the store has been updated
-  - Each UI component that needs data from the store checks to see if the parts of the state they need have changed.
-  - Each component that sees its data has changed forces a re-render with the new data, so it can update what's shown on the screen
+-   Initial setup:
+    -   A Redux store is created using a root reducer function
+    -   The store calls the root reducer once, and saves the return value as its initial `state`
+    -   When the UI is first rendered, UI components access the current state of the Redux store, and use that data to decide what to render. They also subscribe to any future store updates so they can know if the state has changed.
+-   Updates:
+    -   Something happens in the app, such as a user clicking a button
+    -   The app code dispatches an action to the Redux store, like `dispatch({type: 'counter/incremented'})`
+    -   The store runs the reducer function again with the previous `state` and the current `action`, and saves the return value as the new `state`
+    -   The store notifies all parts of the UI that are subscribed that the store has been updated
+    -   Each UI component that needs data from the store checks to see if the parts of the state they need have changed.
+    -   Each component that sees its data has changed forces a re-render with the new data, so it can update what's shown on the screen
 
 Here's what that data flow looks like visually:
 
@@ -655,19 +652,17 @@ Here's what that data flow looks like visually:
 
 :::tip Summary
 
-- **Redux's intent can be summarized in three principles**
-  - Global app state is kept in a single store
-  - The store state is read-only to the rest of the app
-  - Reducer functions are used to update the state in response to actions
-- **Redux uses a "one-way data flow" app structure**
-  - State describes the condition of the app at a point in time, and UI renders based on that state
-  - When something happens in the app:
-    - The UI dispatches an action
-    - The store runs the reducers, and the state is updated based on what occurred
-    - The store notifies the UI that the state has changed
-  - The UI re-renders based on the new state
-
-
+-   **Redux's intent can be summarized in three principles**
+    -   Global app state is kept in a single store
+    -   The store state is read-only to the rest of the app
+    -   Reducer functions are used to update the state in response to actions
+-   **Redux uses a "one-way data flow" app structure**
+    -   State describes the condition of the app at a point in time, and UI renders based on that state
+    -   When something happens in the app:
+        -   The UI dispatches an action
+        -   The store runs the reducers, and the state is updated based on what occurred
+        -   The store notifies the UI that the state has changed
+    -   The UI re-renders based on the new state
 
 ### Project Setup
 
@@ -681,7 +676,9 @@ To get started, you can open and fork this CodeSandbox:
   title="redux-fundamentals-example-app"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-></iframe>
+>
+</iframe>
+<br>
 
 You can also [clone the same project from this Github repo](https://github.com/reduxjs/redux-fundamentals-example-app). After cloning the repo, you can install the tools for the project with `npm install`, and start it with `npm start`.
 
@@ -697,18 +694,18 @@ If you want to know specific details on how to add Redux to a project, see this 
 
 The Redux template for CRA comes with Redux Toolkit and React-Redux already configured. If you're setting up a new project from scratch without that template, follow these steps:
 
-- Add the `@reduxjs/toolkit` and `react-redux` packages
-- Create a Redux store using RTK's `configureStore` API, and pass in at least one reducer function
-- Import the Redux store into your application's entry point file (such as `src/index.js`)
-- Wrap your root React component with the `<Provider>` component from React-Redux, like:
+-   Add the `@reduxjs/toolkit` and `react-redux` packages
+-   Create a Redux store using RTK's `configureStore` API, and pass in at least one reducer function
+-   Import the Redux store into your application's entry point file (such as `src/index.js`)
+-   Wrap your root React component with the `<Provider>` component from React-Redux, like:
 
 ```jsx
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
 ```
 
 </DetailedExplanation>
@@ -719,14 +716,14 @@ This initial project is based on [the standard Create-React-App](https://create-
 
 Let's take a quick look at what the initial project contains:
 
-- `/src`
-  - `index.js`: the entry point file for the application. It renders the main `<App>` component.
-  - `App.js`: the main application component.
-  - `index.css`: styles for the complete application
-  - `/api`
-    - `client.js`: a small AJAX request client that allows us to make GET and POST requests
-    - `server.js`: provides a fake REST API for our data. Our app will fetch data from these fake endpoints later.
-  - `/exampleAddons`: contains some additional Redux addons that we'll use later in the tutorial to show how things work
+-   `/src`
+    -   `index.js`: the entry point file for the application. It renders the main `<App>` component.
+    -   `App.js`: the main application component.
+    -   `index.css`: styles for the complete application
+    -   `/api`
+        -   `client.js`: a small AJAX request client that allows us to make GET and POST requests
+        -   `server.js`: provides a fake REST API for our data. Our app will fetch data from these fake endpoints later.
+    -   `/exampleAddons`: contains some additional Redux addons that we'll use later in the tutorial to show how things work
 
 If you load the app now, you should see a welcome message, but the rest of the app is otherwise empty.
 
@@ -742,17 +739,17 @@ the UI when that data changes, which are all things that happen in a normal appl
 
 Let's start by figuring out the initial business requirements for this application:
 
-- The UI should consist of three main sections:
-  - An input box to let the user type in the text of a new todo item
-  - A list of all the existing todo items
-  - A footer section that shows the number of non-completed todos, and shows filtering options
-- Todo list items should have a checkbox that toggles their "completed" status. We should also be able to add a color-coded
-  category tag for a predefined list of colors, and delete todo items.
-- The counter should pluralize the number of active todos: "0 items", "1 item", "3 items", etc
-- There should be buttons to mark all todos as completed, and to clear all completed todos by removing them
-- There should be two ways to filter the displayed todos in the list:
-  - Filtering based on showing "All", "Active", and "Completed" todos
-  - Filtering based on selecting one or more colors, and showing any todos whose tag that match those colors
+-   The UI should consist of three main sections:
+    -   An input box to let the user type in the text of a new todo item
+    -   A list of all the existing todo items
+    -   A footer section that shows the number of non-completed todos, and shows filtering options
+-   Todo list items should have a checkbox that toggles their "completed" status. We should also be able to add a color-coded
+    category tag for a predefined list of colors, and delete todo items.
+-   The counter should pluralize the number of active todos: "0 items", "1 item", "3 items", etc
+-   There should be buttons to mark all todos as completed, and to clear all completed todos by removing them
+-   There should be two ways to filter the displayed todos in the list:
+    -   Filtering based on showing "All", "Active", and "Completed" todos
+    -   Filtering based on selecting one or more colors, and showing any todos whose tag that match those colors
 
 We'll add some more requirements later on, but this is enough to get us started.
 
@@ -768,23 +765,23 @@ and update.
 
 Conceptually, there are two main aspects of this application:
 
-- The actual list of current todo items
-- The current filtering options
+-   The actual list of current todo items
+-   The current filtering options
 
 We'll also need to keep track of the data the user is typing into the "Add Todo" input box, but that's less important
 and we'll handle that later.
 
 For each todo item, we need to store a few pieces of information:
 
-- The text the user entered
-- The boolean flag saying if it's completed or not
-- A unique ID value
-- A color category, if selected
+-   The text the user entered
+-   The boolean flag saying if it's completed or not
+-   A unique ID value
+-   A color category, if selected
 
 Our filtering behavior can probably be described with some enumerated values:
 
-- Completed status: "All", "Active", and "Completed"
-- Colors: "Red", "Yellow", "Green", "Blue", "Orange", "Purple"
+-   Completed status: "All", "Active", and "Completed"
+-   Colors: "Red", "Yellow", "Green", "Blue", "Orange", "Purple"
 
 Looking at these values, we can also say that the todos are "app state" (the core data that the application works with),
 while the filtering values are "UI state" (state that describes what the app is doing right now). It can be helpful to
@@ -799,29 +796,29 @@ other things into the Redux state - no class instances, built-in JS types like `
 
 Based on this information, we should now be able to describe the kinds of values we need to have inside our Redux state:
 
-- First, we need an array of todo item objects. Each item should have these fields:
-  - `id`: a unique number
-  - `text`: the text the user typed in
-  - `completed`: a boolean flag
-  - `color`: An optional color category
-- Then, we need to describe our filtering options. We need to have:
-  - The current "completed" filter value
-  - An array of the currently selected color categories
+-   First, we need an array of todo item objects. Each item should have these fields:
+    -   `id`: a unique number
+    -   `text`: the text the user typed in
+    -   `completed`: a boolean flag
+    -   `color`: An optional color category
+-   Then, we need to describe our filtering options. We need to have:
+    -   The current "completed" filter value
+    -   An array of the currently selected color categories
 
 So, here's what an example of our app's state might look like:
 
 ```js
 const todoAppState = {
-  todos: [
-    { id: 0, text: 'Learn React', completed: true },
-    { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
-    { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
-  ],
-  filters: {
-    status: 'Active',
-    colors: ['red', 'blue']
-  }
-}
+    todos: [
+        { id: 0, text: 'Learn React', completed: true },
+        { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
+        { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
+    ],
+    filters: {
+        status: 'Active',
+        colors: ['red', 'blue']
+    }
+};
 ```
 
 It's important to note that **it's okay to have other state values outside of Redux!**. This example is small enough so far that we actually do have all our state in the Redux store, but as we'll see later, some data really doesn't need to be kept in Redux (like "is this dropdown open?" or "current value of a form input").
@@ -833,15 +830,15 @@ It's important to note that **it's okay to have other state values outside of Re
 In the same way that we designed the state structure based on the app's requirements, we should also be able to
 come up with a list of some of the actions that describe what's happening:
 
-- Add a new todo entry based on the text the user entered
-- Toggle the completed status of a todo
-- Select a color category for a todo
-- Delete a todo
-- Mark all todos as completed
-- Clear all completed todos
-- Choose a different "completed" filter value
-- Add a new color filter
-- Remove a color filter
+-   Add a new todo entry based on the text the user entered
+-   Toggle the completed status of a todo
+-   Select a color category for a todo
+-   Delete a todo
+-   Mark all todos as completed
+-   Clear all completed todos
+-   Choose a different "completed" filter value
+-   Add a new color filter
+-   Remove a color filter
 
 We normally put any extra data needed to describe what's happening into the `action.payload` field. This could be a
 number, a string, or an object with multiple fields inside.
@@ -853,14 +850,14 @@ readable and clearly describe what's happening - it'll be much easier to underst
 
 Based on that list of things that can happen, we can create a list of actions that our application will use:
 
-- `{type: 'todos/todoAdded', payload: todoText}`
-- `{type: 'todos/todoToggled', payload: todoId}`
-- `{type: 'todos/colorSelected, payload: {todoId, color}}`
-- `{type: 'todos/todoDeleted', payload: todoId}`
-- `{type: 'todos/allCompleted'}`
-- `{type: 'todos/completedCleared'}`
-- `{type: 'filters/statusFilterChanged', payload: filterValue}`
-- `{type: 'filters/colorFilterChanged', payload: {color, changeType}}`
+-   `{type: 'todos/todoAdded', payload: todoText}`
+-   `{type: 'todos/todoToggled', payload: todoId}`
+-   `{type: 'todos/colorSelected, payload: {todoId, color}}`
+-   `{type: 'todos/todoDeleted', payload: todoId}`
+-   `{type: 'todos/allCompleted'}`
+-   `{type: 'todos/completedCleared'}`
+-   `{type: 'filters/statusFilterChanged', payload: filterValue}`
+-   `{type: 'filters/colorFilterChanged', payload: {color, changeType}}`
 
 In this case, the actions primarily have a single extra piece of data, so we can put that directly in the `action.payload` field. We could have split the color filter behavior into two actions, one for "added" and one for "removed", but in this case
 we'll do it as one action with an extra field inside specifically to show that we can have objects as an action payload.
@@ -883,27 +880,27 @@ Every reducer needs some initial state, so we'll add some fake todo entries to g
 
 ```js title="src/reducer.js"
 const initialState = {
-  todos: [
-    { id: 0, text: 'Learn React', completed: true },
-    { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
-    { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
-  ],
-  filters: {
-    status: 'All',
-    colors: []
-  }
-}
+    todos: [
+        { id: 0, text: 'Learn React', completed: true },
+        { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
+        { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
+    ],
+    filters: {
+        status: 'All',
+        colors: []
+    }
+};
 
 // Use the initialState as a default value
 export default function appReducer(state = initialState, action) {
-  // The reducer normally looks at the action type field to decide what happens
-  switch (action.type) {
-    // Do something here based on the different types of actions
-    default:
-      // If this reducer doesn't recognize the action type, or doesn't
-      // care about this specific action, return the existing state unchanged
-      return state
-  }
+    // The reducer normally looks at the action type field to decide what happens
+    switch (action.type) {
+        // Do something here based on the different types of actions
+        default:
+            // If this reducer doesn't recognize the action type, or doesn't
+            // care about this specific action, return the existing state unchanged
+            return state;
+    }
 }
 ```
 
@@ -917,41 +914,41 @@ that didn't change.
 
 ```js title="src/reducer.js"
 function nextTodoId(todos) {
-  const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1)
-  return maxId + 1
+    const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
+    return maxId + 1;
 }
 
 // Use the initialState as a default value
 export default function appReducer(state = initialState, action) {
-  // The reducer normally looks at the action type field to decide what happens
-  switch (action.type) {
-    // Do something here based on the different types of actions
-    // highlight-start
-    case 'todos/todoAdded': {
-      // We need to return a new state object
-      return {
-        // that has all the existing state data
-        ...state,
-        // but has a new array for the `todos` field
-        todos: [
-          // with all of the old todos
-          ...state.todos,
-          // and the new todo object
-          {
-            // Use an auto-incrementing numeric ID for this example
-            id: nextTodoId(state.todos),
-            text: action.payload,
-            completed: false
-          }
-        ]
-      }
+    // The reducer normally looks at the action type field to decide what happens
+    switch (action.type) {
+        // Do something here based on the different types of actions
+        // highlight-start
+        case 'todos/todoAdded': {
+            // We need to return a new state object
+            return {
+                // that has all the existing state data
+                ...state,
+                // but has a new array for the `todos` field
+                todos: [
+                    // with all of the old todos
+                    ...state.todos,
+                    // and the new todo object
+                    {
+                        // Use an auto-incrementing numeric ID for this example
+                        id: nextTodoId(state.todos),
+                        text: action.payload,
+                        completed: false
+                    }
+                ]
+            };
+        }
+        // highlight-end
+        default:
+            // If this reducer doesn't recognize the action type, or doesn't
+            // care about this specific action, return the existing state unchanged
+            return state;
     }
-    // highlight-end
-    default:
-      // If this reducer doesn't recognize the action type, or doesn't
-      // care about this specific action, return the existing state unchanged
-      return state
-  }
 }
 ```
 
@@ -961,20 +958,20 @@ That's... an awful lot of work to add one todo item to the state. Why is all thi
 
 We said earlier that **reducers must _always_ follow some special rules**:
 
-- They should only calculate the new state value based on the `state` and `action` arguments
-- They are not allowed to modify the existing `state`. Instead, they must make _immutable updates_, by copying the existing `state` and making changes to the copied values.
-- They must not do any asynchronous logic or other "side effects"
+-   They should only calculate the new state value based on the `state` and `action` arguments
+-   They are not allowed to modify the existing `state`. Instead, they must make _immutable updates_, by copying the existing `state` and making changes to the copied values.
+-   They must not do any asynchronous logic or other "side effects"
 
 :::tip
 
 **A "side effect" is any change to state or behavior that can be seen outside of returning a value from a function**. Some common kinds of side effects are things like:
 
-- Logging a value to the console
-- Saving a file
-- Setting an async timer
-- Making an AJAX HTTP request
-- Modifying some state that exists outside of a function, or mutating arguments to a function
-- Generating random numbers or unique random IDs (such as `Math.random()` or `Date.now()`)
+-   Logging a value to the console
+-   Saving a file
+-   Setting an async timer
+-   Making an AJAX HTTP request
+-   Modifying some state that exists outside of a function, or mutating arguments to a function
+-   Generating random numbers or unique random IDs (such as `Math.random()` or `Date.now()`)
 
 :::
 
@@ -982,10 +979,10 @@ Any function that follows these rules is also known as a **"pure" function**, ev
 
 But why are these rules important? There's a few different reasons:
 
-- One of the goals of Redux is to make your code predictable. When a function's output is only calculated from the input arguments, it's easier to understand how that code works, and to test it.
-- On the other hand, if a function depends on variables outside itself, or behaves randomly, you never know what will happen when you run it.
-- If a function modifies other values, including its arguments, that can change the way the application works unexpectedly. This can be a common source of bugs, such as "I updated my state, but now my UI isn't updating when it should!"
-- Some of the Redux DevTools capabilities depend on having your reducers follow these rules correctly
+-   One of the goals of Redux is to make your code predictable. When a function's output is only calculated from the input arguments, it's easier to understand how that code works, and to test it.
+-   On the other hand, if a function depends on variables outside itself, or behaves randomly, you never know what will happen when you run it.
+-   If a function modifies other values, including its arguments, that can change the way the application works unexpectedly. This can be a common source of bugs, such as "I updated my state, but now my UI isn't updating when it should!"
+-   Some of the Redux DevTools capabilities depend on having your reducers follow these rules correctly
 
 The rule about "immutable updates" is particularly important, and worth talking about further.
 
@@ -999,18 +996,18 @@ In Redux, **our reducers are _never_ allowed to mutate the original / current st
 
 ```js
 // ❌ Illegal - by default, this will mutate the state!
-state.value = 123
+state.value = 123;
 ```
 
 :::
 
 There are several reasons why you must not mutate state in Redux:
 
-- It causes bugs, such as the UI not updating properly to show the latest values
-- It makes it harder to understand why and how the state has been updated
-- It makes it harder to write tests
-- It breaks the ability to use "time-travel debugging" correctly
-- It goes against the intended spirit and usage patterns for Redux
+-   It causes bugs, such as the UI not updating properly to show the latest values
+-   It makes it harder to understand why and how the state has been updated
+-   It makes it harder to write tests
+-   It breaks the ability to use "time-travel debugging" correctly
+-   It goes against the intended spirit and usage patterns for Redux
 
 So if we can't change the originals, how do we return an updated state?
 
@@ -1021,9 +1018,9 @@ So if we can't change the originals, how do we return an updated state?
 ```js
 // ✅ This is safe, because we made a copy
 return {
-  ...state,
-  value: 123
-}
+    ...state,
+    value: 123
+};
 ```
 
 :::
@@ -1049,45 +1046,45 @@ With that in mind, let's add the reducer logic for a couple more cases. First, t
 
 ```js title="src/reducer.js"
 export default function appReducer(state = initialState, action) {
-  switch (action.type) {
-    case 'todos/todoAdded': {
-      return {
-        ...state,
-        todos: [
-          ...state.todos,
-          {
-            id: nextTodoId(state.todos),
-            text: action.payload,
-            completed: false
-          }
-        ]
-      }
-    }
-    // highlight-start
-    case 'todos/todoToggled': {
-      return {
-        // Again copy the entire state object
-        ...state,
-        // This time, we need to make a copy of the old todos array
-        todos: state.todos.map(todo => {
-          // If this isn't the todo item we're looking for, leave it alone
-          if (todo.id !== action.payload) {
-            return todo
-          }
+    switch (action.type) {
+        case 'todos/todoAdded': {
+            return {
+                ...state,
+                todos: [
+                    ...state.todos,
+                    {
+                        id: nextTodoId(state.todos),
+                        text: action.payload,
+                        completed: false
+                    }
+                ]
+            };
+        }
+        // highlight-start
+        case 'todos/todoToggled': {
+            return {
+                // Again copy the entire state object
+                ...state,
+                // This time, we need to make a copy of the old todos array
+                todos: state.todos.map((todo) => {
+                    // If this isn't the todo item we're looking for, leave it alone
+                    if (todo.id !== action.payload) {
+                        return todo;
+                    }
 
-          // We've found the todo that has to change. Return a copy:
-          return {
-            ...todo,
-            // Flip the completed flag
-            completed: !todo.completed
-          }
-        })
-      }
+                    // We've found the todo that has to change. Return a copy:
+                    return {
+                        ...todo,
+                        // Flip the completed flag
+                        completed: !todo.completed
+                    };
+                })
+            };
+        }
+        // highlight-end
+        default:
+            return state;
     }
-    // highlight-end
-    default:
-      return state
-  }
 }
 ```
 
@@ -1095,53 +1092,53 @@ And since we've been focusing on the todos state, let's add a case to handle the
 
 ```js title="src/reducer.js"
 export default function appReducer(state = initialState, action) {
-  switch (action.type) {
-    case 'todos/todoAdded': {
-      return {
-        ...state,
-        todos: [
-          ...state.todos,
-          {
-            id: nextTodoId(state.todos),
-            text: action.payload,
-            completed: false
-          }
-        ]
-      }
-    }
-    case 'todos/todoToggled': {
-      return {
-        ...state,
-        todos: state.todos.map(todo => {
-          if (todo.id !== action.payload) {
-            return todo
-          }
-
-          return {
-            ...todo,
-            completed: !todo.completed
-          }
-        })
-      }
-    }
-    // highlight-start
-    case 'filters/statusFilterChanged': {
-      return {
-        // Copy the whole state
-        ...state,
-        // Overwrite the filters value
-        filters: {
-          // copy the other filter fields
-          ...state.filters,
-          // And replace the status field with the new value
-          status: action.payload
+    switch (action.type) {
+        case 'todos/todoAdded': {
+            return {
+                ...state,
+                todos: [
+                    ...state.todos,
+                    {
+                        id: nextTodoId(state.todos),
+                        text: action.payload,
+                        completed: false
+                    }
+                ]
+            };
         }
-      }
+        case 'todos/todoToggled': {
+            return {
+                ...state,
+                todos: state.todos.map((todo) => {
+                    if (todo.id !== action.payload) {
+                        return todo;
+                    }
+
+                    return {
+                        ...todo,
+                        completed: !todo.completed
+                    };
+                })
+            };
+        }
+        // highlight-start
+        case 'filters/statusFilterChanged': {
+            return {
+                // Copy the whole state
+                ...state,
+                // Overwrite the filters value
+                filters: {
+                    // copy the other filter fields
+                    ...state.filters,
+                    // And replace the status field with the new value
+                    status: action.payload
+                }
+            };
+        }
+        // highlight-end
+        default:
+            return state;
     }
-    // highlight-end
-    default:
-      return state
-  }
 }
 ```
 
@@ -1167,21 +1164,21 @@ In our project, create a new `features` folder, and then a `todos` folder inside
 
 ```js title="src/features/todos/todosSlice.js"
 const initialState = [
-  { id: 0, text: 'Learn React', completed: true },
-  { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
-  { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
-]
+    { id: 0, text: 'Learn React', completed: true },
+    { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
+    { id: 2, text: 'Build something fun!', completed: false, color: 'blue' }
+];
 
 function nextTodoId(todos) {
-  const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1)
-  return maxId + 1
+    const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
+    return maxId + 1;
 }
 
 export default function todosReducer(state = initialState, action) {
-  switch (action.type) {
-    default:
-      return state
-  }
+    switch (action.type) {
+        default:
+            return state;
+    }
 }
 ```
 
@@ -1193,35 +1190,35 @@ Here's what the updated reducer looks like after we handle those actions:
 
 ```js title="src/features/todos/todosSlice.js"
 export default function todosReducer(state = initialState, action) {
-  switch (action.type) {
-    // highlight-start
-    case 'todos/todoAdded': {
-      // Can return just the new todos array - no extra object around it
-      return [
-        ...state,
-        {
-          id: nextTodoId(state),
-          text: action.payload,
-          completed: false
+    switch (action.type) {
+        // highlight-start
+        case 'todos/todoAdded': {
+            // Can return just the new todos array - no extra object around it
+            return [
+                ...state,
+                {
+                    id: nextTodoId(state),
+                    text: action.payload,
+                    completed: false
+                }
+            ];
         }
-      ]
-    }
-    case 'todos/todoToggled': {
-      return state.map(todo => {
-        if (todo.id !== action.payload) {
-          return todo
-        }
+        case 'todos/todoToggled': {
+            return state.map((todo) => {
+                if (todo.id !== action.payload) {
+                    return todo;
+                }
 
-        return {
-          ...todo,
-          completed: !todo.completed
+                return {
+                    ...todo,
+                    completed: !todo.completed
+                };
+            });
         }
-      })
+        //highlight-end
+        default:
+            return state;
     }
-    //highlight-end
-    default:
-      return state
-  }
 }
 ```
 
@@ -1231,24 +1228,24 @@ Now we can do the same thing for the visibility logic. Create `src/features/filt
 
 ```js title="src/features/filters/filtersSlice.js"
 const initialState = {
-  status: 'All',
-  colors: []
-}
+    status: 'All',
+    colors: []
+};
 
 export default function filtersReducer(state = initialState, action) {
-  switch (action.type) {
-    // highlight-start
-    case 'filters/statusFilterChanged': {
-      return {
-        // Again, one less level of nesting to copy
-        ...state,
-        status: action.payload
-      }
+    switch (action.type) {
+        // highlight-start
+        case 'filters/statusFilterChanged': {
+            return {
+                // Again, one less level of nesting to copy
+                ...state,
+                status: action.payload
+            };
+        }
+        // highlight-end
+        default:
+            return state;
     }
-    // highlight-end
-    default:
-      return state
-  }
 }
 ```
 
@@ -1271,17 +1268,17 @@ We now have two separate slice files, each with its own slice reducer function. 
 Since reducers are normal JS functions, we can import the slice reducers back into `reducer.js`, and write a new root reducer whose only job is to call the other two functions.
 
 ```js title="src/reducer.js"
-import todosReducer from './features/todos/todosSlice'
-import filtersReducer from './features/filters/filtersSlice'
+import todosReducer from './features/todos/todosSlice';
+import filtersReducer from './features/filters/filtersSlice';
 
 export default function rootReducer(state = {}, action) {
-  // always return a new object for the root state
-  return {
-    // the value of `state.todos` is whatever the todos reducer returns
-    todos: todosReducer(state.todos, action),
-    // For both reducers, we only pass in their slice of the state
-    filters: filtersReducer(state.filters, action)
-  }
+    // always return a new object for the root state
+    return {
+        // the value of `state.todos` is whatever the todos reducer returns
+        todos: todosReducer(state.todos, action),
+        // For both reducers, we only pass in their slice of the state
+        filters: filtersReducer(state.filters, action)
+    };
 }
 ```
 
@@ -1306,18 +1303,18 @@ Once that's done, we can import `combineReducers` and use it:
 
 ```js title="src/reducer.js"
 // highlight-next-line
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
-import todosReducer from './features/todos/todosSlice'
-import filtersReducer from './features/filters/filtersSlice'
+import todosReducer from './features/todos/todosSlice';
+import filtersReducer from './features/filters/filtersSlice';
 
 const rootReducer = combineReducers({
-  // Define a top-level state field named `todos`, handled by `todosReducer`
-  todos: todosReducer,
-  filters: filtersReducer
-})
+    // Define a top-level state field named `todos`, handled by `todosReducer`
+    todos: todosReducer,
+    filters: filtersReducer
+});
 
-export default rootReducer
+export default rootReducer;
 ```
 
 `combineReducers` accepts an object where the key names will become the keys in your root state object, and the
@@ -1337,29 +1334,29 @@ Here's the contents of our app so far:
   title="redux-fundamentals-example-app"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+>
+</iframe>
+<br>
 
 :::tip Summary
 
-- **Redux apps use plain JS objects, arrays, and primitives as the state values**
-  - The root state value should be a plain JS object
-  - The state should contain the smallest amount of data needed to make the app work
-  - Classes, Promises, functions, and other non-plain values should _not_ go in the Redux state
-  - Reducers must not create random values like `Math.random()` or `Date.now()`
-  - It's okay to have other state values that are not in the Redux store (like local component state) side-by side with Redux
-- **Actions are plain objects with a `type` field that describe what happened**
-  - The `type` field should be a readable string, and is usually written as `'feature/eventName'`
-  - Actions may contain other values, which are typically stored in the `action.payload` field
-  - Actions should have the smallest amount of data needed to describe what happened
-- **Reducers are functions that look like `(state, action) => newState`**
-  - Reducers must always follow special rules:
-    - Only calculate the new state based on the `state` and `action` arguments
-    - Never mutate the existing `state` - always return a copy
-    - No "side effects" like AJAX calls or async logic
-- **Reducers should be split up to make them easier to read**
-  - Reducers are usually split based on top-level state keys or "slices" of state
-  - Reducers are usually written in "slice" files, organized into "feature" folders
-  - Reducers can be combined together with the Redux `combineReducers` function
-  - The key names given to `combineReducers` define the top-level state object keys
-
-
+-   **Redux apps use plain JS objects, arrays, and primitives as the state values**
+    -   The root state value should be a plain JS object
+    -   The state should contain the smallest amount of data needed to make the app work
+    -   Classes, Promises, functions, and other non-plain values should _not_ go in the Redux state
+    -   Reducers must not create random values like `Math.random()` or `Date.now()`
+    -   It's okay to have other state values that are not in the Redux store (like local component state) side-by side with Redux
+-   **Actions are plain objects with a `type` field that describe what happened**
+    -   The `type` field should be a readable string, and is usually written as `'feature/eventName'`
+    -   Actions may contain other values, which are typically stored in the `action.payload` field
+    -   Actions should have the smallest amount of data needed to describe what happened
+-   **Reducers are functions that look like `(state, action) => newState`**
+    -   Reducers must always follow special rules:
+        -   Only calculate the new state based on the `state` and `action` arguments
+        -   Never mutate the existing `state` - always return a copy
+        -   No "side effects" like AJAX calls or async logic
+-   **Reducers should be split up to make them easier to read**
+    -   Reducers are usually split based on top-level state keys or "slices" of state
+    -   Reducers are usually written in "slice" files, organized into "feature" folders
+    -   Reducers can be combined together with the Redux `combineReducers` function
+    -   The key names given to `combineReducers` define the top-level state object keys
