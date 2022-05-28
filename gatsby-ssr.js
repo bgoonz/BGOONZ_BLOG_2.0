@@ -9,7 +9,7 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 const React = require("react");
-const withPrefix = require("./src/utils/withPrefix").default;
+const withPrefix = require("./src/utils/withPrefix")
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setHeadComponents([]);
     setPostBodyComponents([

@@ -1,7 +1,7 @@
 const { withPrefix: gatsbyWithPrefix } = require("gatsby");
 const _ = require('lodash');
 
-export default function withPrefix(url) {
+export  function withPrefix(url) {
     if (!url) {
         return url;
     }
