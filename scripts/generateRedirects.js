@@ -2,9 +2,7 @@
 // eslint-disable-next-line indent
 
 const resolve = require('path').resolve;
-const {
-    writeFile
-} = require('fs-extra');
+const { writeFile } = require('fs-extra');
 const readFileSync = require('fs').readFileSync;
 const safeLoad = require('js-yaml').safeLoad;
 const path = require('path');
@@ -31,15 +29,11 @@ function writeRedirectsFile(redirects, redirectsFilePath) {
     let vercelRedirects = {};
 
     redirects.forEach((redirect) => {
-        const {
-            fromPath,
-            isPermanent,
-            toPath
-        } = redirect;
+        const { fromPath, isPermanent, toPath } = redirect;
 
         vercelRedirects[fromPath] = {
             destination: toPath,
-            permanent: !!isPermanent,
+            permanent: !!isPermanent
         };
     });
 
@@ -60,7 +54,7 @@ function writeRedirectsFile(redirects, redirectsFilePath) {
         newRedirects.push({
             source: value,
             destination: vercelRedirects[value].destination,
-            permanent: !!vercelRedirects[value].isPermanent,
+            permanent: !!vercelRedirects[value].isPermanent
         })
     );
 
@@ -69,7 +63,7 @@ function writeRedirectsFile(redirects, redirectsFilePath) {
      */
     const newContents = {
         ...oldConfigContent,
-        redirects: [...oldConfigContent.redirects, ...newRedirects],
+        redirects: [...oldConfigContent.redirects, ...newRedirects]
     };
     writeFile(redirectsFilePath, JSON.stringify(newContents, null, 2));
 }
@@ -77,11 +71,10 @@ function writeRedirectsFile(redirects, redirectsFilePath) {
 // versions.yml structure is [{path: string, url: string, ...}, ...]
 writeRedirectsFile(
     versions
-    .filter((version) => version.path && version.url)
-    .map((version) => ({
-
-        fromPath: version.path,
-        toPath: version.url,
-    })),
+        .filter((version) => version.path && version.url)
+        .map((version) => ({
+            fromPath: version.path,
+            toPath: version.url
+        })),
     redirectsFilePath
 );
