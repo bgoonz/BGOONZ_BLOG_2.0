@@ -104,7 +104,7 @@ export default class Body extends React.Component {
 
 
                 </div>
-                <div className="gcse-search" />
+                <div className="gcse-search" id="search" />
             </React.Fragment>
         );
     }
