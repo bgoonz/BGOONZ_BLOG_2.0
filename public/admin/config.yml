@@ -1,0 +1,196 @@
+# Configuration file for NetlifyCMS visual editor
+# It's here used only for blog posts and docs pages, to ease edits from external contributors
+# for all options, see https://www.netlifycms.org/docs/configuration-options/
+
+site_url: https://bgoonz-blog.netlify.app/
+
+publish_mode: editorial_workflow # do not commit directly, fork to a branch first and create a pull request, this is necessary for the open_authoring option
+
+backend:
+  name: github # external contributions open_authoring option requires the use of github, it does not work with git-gateway (and hence other git platforms) yet (although there are alternatives through Netlify Identity): https://www.netlifycms.org/docs/open-authoring/
+  repo: bgoonz/BGOONZ_BLOG_2.0 # EDIT ME: path to the online repository to allow for external contributions, please update this to point to your repo
+  branch: master
+  open_authoring: true # allow external contributors without having to first give them access to the repository, their edits will be made on their own github repository and create a pull request automatically through the UI
+
+media_folder: /static/images/uploads # where media files such as images will be stored
+public_folder: /images/uploads # url to media files when deployed
+
+show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
+
+# site_url: https://your-site.com  # edit and uncomment this line to enable previews
+# display_url: https://your-site.com
+# logo_url: https://your-site.com/images/logo.svg  # custom logo
+# locale: 'en'  # UI language
+
+collections:
+  - name: docs
+    label: Docs
+    folder: src/pages/docs
+    create: true
+    #path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
+    slug: "{{title}}/index"
+    preview_path: "src/pages/docs/preview/{{slug}}"
+    #extension: md
+    media_folder: "{{media_folder}}/docs"
+    # adding a nested object will show the collection folder structure, see https://www.netlifycms.org/docs/beta-features/#nested-collections and https://github.com/netlify/netlify-cms/issues/4741#issuecomment-748627801
+    summary: "{{title}} (last modified {{commit_date}})" # text displayed as the name of each entry in the UI listing
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      #summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: template, label: Template, widget: hidden, default: "docs" }
+      - {
+          name: excerpt,
+          label: Excerpt,
+          widget: string,
+          required: false,
+          hint: A short description of this page,
+        }
+      - { name: body, label: Body, widget: markdown }
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: parent, label: "Parent", index_file: "index" } } # use a widget type parent to get a dropdown selector for the path instead of a string https://github.com/netlify-labs/netlify-cms-widget-parent/blob/main/example/config.yml
+  - name: blog # used in routes, e.g., /admin/collections/blog
+    label: Blog # used in the UI
+    folder: src/pages/blog # relative url where the editable documents are stored
+    create: true # allow users to create new documents in this collection
+    slug: "{{title}}" # filename template, the adequate file extension (e.g., .md) will be automatically added
+    preview_path: "src/pages/blog/preview/{{title}}"
+    extension: md
+    media_folder: "{{media_folder}}/blog"
+    summary: "{{title}} published by {{commit_author}} ({{commit_date}})"
+    filter: { field: "cmseditable", value: true } # filter out blog/index.md, the homepage of blog posts, we don't want people to edit that
+    fields: # fields for each document, usually in front matter, default type is string
+      - { name: title, label: Title, widget: string }
+      - { name: template, label: Template, widget: hidden, default: "post" }
+      - { name: subtitle, label: Subtitle, widget: string, required: false }
+      - { name: excerpt, label: Excerpt, widget: string, required: false }
+      - { name: date, label: Date, widget: date }
+      - {
+          name: image,
+          label: "Cover Image",
+          widget: image,
+          allow_multiple: false,
+          required: false,
+          hint: "Cover image that will display at the top of the post.",
+        }
+      - {
+          name: thumb_image,
+          label: "Thumbnail image",
+          widget: image,
+          allow_multiple: false,
+          required: false,
+          hint: "Thumbnail image for the post in listings, should be the same as the cover image.",
+        } # can't copy another field (eg, image) yet: https://community.netlify.com/t/is-it-possible-to-set-a-dynamic-default-value-for-a-field/20079/3
+      - {
+          name: image_position,
+          label: "Image position",
+          widget: select,
+          options: ["left", "top", "right"],
+          default: "right",
+        }
+      - {
+          name: author,
+          label: Author,
+          widget: relation,
+          collection: blog-authors,
+          value_field: "{{dirname}}/{{filename}}.{{extension}}",
+          search_fields: ["id", "first_name", "last_name"],
+          display_fields: ["first_name", "last_name"],
+          multiple: false,
+          required: false,
+        }
+      - {
+          name: categories,
+          label: Categories,
+          widget: relation,
+          collection: blog-categories,
+          value_field: "{{dirname}}/{{filename}}.{{extension}}",
+          search_fields: ["id", "title"],
+          display_fields: ["title"],
+          multiple: true,
+          required: false,
+        }
+      - {
+          name: tags,
+          label: Tags,
+          widget: relation,
+          collection: blog-tags,
+          value_field: "{{dirname}}/{{filename}}.{{extension}}",
+          search_fields: ["id", "title"],
+          display_fields: ["title"],
+          multiple: true,
+          required: false,
+        }
+      - {
+          name: show_author_bio,
+          label: "Show author's short bio?",
+          widget: boolean,
+          required: false,
+          default: false,
+          hint: "Display author's short bio at the end of the blog post",
+        }
+      - {
+          name: related_posts,
+          label: "Related posts",
+          widget: relation,
+          collection: blog,
+          valueField: "{{dirname}}/{{filename}}.{{extension}}",
+          searchFields: ["title"],
+          displayFields: ["title"],
+          multiple: true,
+          required: false,
+          hint: "Other related posts",
+        }
+      - { name: cmseditable, label: cmseditable, widget: hidden, default: true }
+      - { name: body, label: Body, widget: markdown }
+  - name: blog-authors
+    label: BlogAuthors
+    folder: src/data/authors
+    create: true
+    slug: "{{id}}"
+    extension: yaml
+    media_folder: "{{media_folder}}/blog"
+    summary: "{{first_name}} {{last_name}} ({{id}})"
+    fields:
+      - { name: id, label: Identifier, widget: string }
+      - { name: first_name, label: "First name", widget: string }
+      - { name: last_name, label: "Last name", widget: string, required: false }
+      - { name: photo, label: Photo, widget: image, required: false }
+      - { name: short_bio, label: Short bio, widget: markdown, required: false }
+  - name: blog-categories
+    label: BlogCategories
+    folder: src/data/categories
+    create: true
+    slug: "{{id}}"
+    extension: yaml
+    media_folder: "{{media_folder}}/blog"
+    fields:
+      - { name: id, label: Identifier, widget: string }
+      - { name: title, label: Title, widget: string }
+      - {
+          name: description,
+          label: Description,
+          widget: markdown,
+          required: false,
+          hint: "Short description, will be shown in page listing (ie, listing all posts from this category)",
+        }
+      #- { name: link, label: Listing page URL, widget: string, default: "blog/category/<newcatid>", pattern: ["blog/category/.+", "URL needs to start with `blog/category/`"], hint: "This is the URL of the page that will list all pages for this category." }  # disable to leave empty, there will be no link and no issue but no listing
+  - name: blog-tags
+    label: BlogTags
+    folder: src/data/tags
+    create: true
+    slug: "{{id}}"
+    extension: yaml
+    media_folder: "{{media_folder}}/blog"
+    fields:
+      - { name: id, label: Identifier, widget: string }
+      - { name: title, label: Title, widget: string }
+      - {
+          name: description,
+          label: Description,
+          widget: markdown,
+          required: false,
+          hint: "Short description, will be shown in page listing (ie, listing all posts with this tag)",
+        }
