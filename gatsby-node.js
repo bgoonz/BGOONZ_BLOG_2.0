@@ -1,4 +1,3 @@
-/* Allowing us to import files from the src folder without having to specify the full path. */
 const path = require('path');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
