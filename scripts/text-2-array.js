@@ -18,7 +18,7 @@ fs.readFile( filename, ( err, text ) => {
     // In case of a error throw err. 
     if ( err ) throw err;
 
-  } )
+  } );
 
 
 } );
