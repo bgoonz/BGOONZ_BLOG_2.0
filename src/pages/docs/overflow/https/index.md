@@ -3,6 +3,7 @@ title: HTTPS
 template: docs
 excerpt: The Hypertext Transfer Protocol
 ---
+
 ```
  Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
 
@@ -50,7 +51,7 @@ Status of This Memo
 Fielding & Reschke           Standards Track                    [Page 1]
 ```
 
-___
+---
 
 ```
 
@@ -111,7 +112,7 @@ Copyright Notice
 Fielding & Reschke           Standards Track                    [Page 2]
 ```
 
-___
+---
 
 ```
 
@@ -172,7 +173,7 @@ Table of Contents
 Fielding & Reschke           Standards Track                    [Page 3]
 ```
 
-___
+---
 
 ```
 
@@ -233,7 +234,7 @@ ed            7.1.1. Origination Date ...................................65
 Fielding & Reschke           Standards Track                    [Page 4]
 ```
 
-___
+---
 
 ```
 
@@ -294,7 +295,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                    [Page 5]
 ```
 
-___
+---
 
 ```
 
@@ -355,7 +356,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                    [Page 6]
 ```
 
-___
+---
 
 ```
 
@@ -416,7 +417,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                    [Page 7]
 ```
 
-___
+---
 
 ```
 
@@ -477,7 +478,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                    [Page 8]
 ```
 
-___
+---
 
 ```
 
@@ -538,7 +539,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                    [Page 9]
 ```
 
-___
+---
 
 ```
 
@@ -599,7 +600,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 10]
 ```
 
-___
+---
 
 ```
 
@@ -660,7 +661,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 11]
 ```
 
-___
+---
 
 ```
 
@@ -721,7 +722,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 12]
 ```
 
-___
+---
 
 ```
 
@@ -782,7 +783,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 13]
 ```
 
-___
+---
 
 ```
 
@@ -843,7 +844,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 14]
 ```
 
-___
+---
 
 ```
 
@@ -904,7 +905,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 15]
 ```
 
-___
+---
 
 ```
 
@@ -965,7 +966,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 16]
 ```
 
-___
+---
 
 ```
 
@@ -1026,7 +1027,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 17]
 ```
 
-___
+---
 
 ```
 
@@ -1087,7 +1088,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 18]
 ```
 
-___
+---
 
 ```
 
@@ -1148,7 +1149,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 19]
 ```
 
-___
+---
 
 ```
 
@@ -1209,7 +1210,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 20]
 ```
 
-___
+---
 
 ```
 
@@ -1270,7 +1271,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 21]
 ```
 
-___
+---
 
 ```
 
@@ -1331,7 +1332,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 22]
 ```
 
-___
+---
 
 ```
 
@@ -1392,7 +1393,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 23]
 ```
 
-___
+---
 
 ```
 
@@ -1453,7 +1454,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 24]
 ```
 
-___
+---
 
 ```
 
@@ -1514,7 +1515,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 25]
 ```
 
-___
+---
 
 ```
 
@@ -1575,7 +1576,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 26]
 ```
 
-___
+---
 
 ```
 
@@ -1636,7 +1637,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 27]
 ```
 
-___
+---
 
 ```
 
@@ -1697,7 +1698,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 28]
 ```
 
-___
+---
 
 ```
 
@@ -1758,7 +1759,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 29]
 ```
 
-___
+---
 
 ```
 
@@ -1819,7 +1820,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 30]
 ```
 
-___
+---
 
 ```
 
@@ -1880,7 +1881,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 31]
 ```
 
-___
+---
 
 ```
 
@@ -1941,7 +1942,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 32]
 ```
 
-___
+---
 
 ```
 
@@ -2002,7 +2003,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 33]
 ```
 
-___
+---
 
 ```
 
@@ -2063,7 +2064,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 34]
 ```
 
-___
+---
 
 ```
 
@@ -2124,7 +2125,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 35]
 ```
 
-___
+---
 
 ```
 
@@ -2185,7 +2186,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 36]
 ```
 
-___
+---
 
 ```
 
@@ -2246,7 +2247,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 37]
 ```
 
-___
+---
 
 ```
 
@@ -2307,7 +2308,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 38]
 ```
 
-___
+---
 
 ```
 
@@ -2368,7 +2369,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 39]
 ```
 
-___
+---
 
 ```
 
@@ -2429,7 +2430,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 40]
 ```
 
-___
+---
 
 ```
 
@@ -2490,7 +2491,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 41]
 ```
 
-___
+---
 
 ```
 
@@ -2551,7 +2552,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 42]
 ```
 
-___
+---
 
 ```
 
@@ -2612,7 +2613,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 43]
 ```
 
-___
+---
 
 ```
 
@@ -2673,7 +2674,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 44]
 ```
 
-___
+---
 
 ```
 
@@ -2734,7 +2735,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 45]
 ```
 
-___
+---
 
 ```
 
@@ -2795,7 +2796,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 46]
 ```
 
-___
+---
 
 ```
 
@@ -2856,7 +2857,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 47]
 ```
 
-___
+---
 
 ```
 
@@ -2917,7 +2918,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 48]
 ```
 
-___
+---
 
 ```
 
@@ -2978,7 +2979,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 49]
 ```
 
-___
+---
 
 ```
 
@@ -3039,7 +3040,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 50]
 ```
 
-___
+---
 
 ```
 
@@ -3100,7 +3101,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 51]
 ```
 
-___
+---
 
 ```
 
@@ -3161,7 +3162,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 52]
 ```
 
-___
+---
 
 ```
 
@@ -3222,7 +3223,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 53]
 ```
 
-___
+---
 
 ```
 
@@ -3283,7 +3284,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 54]
 ```
 
-___
+---
 
 ```
 
@@ -3344,7 +3345,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 55]
 ```
 
-___
+---
 
 ```
 
@@ -3405,7 +3406,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 56]
 ```
 
-___
+---
 
 ```
 
@@ -3466,7 +3467,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 57]
 ```
 
-___
+---
 
 ```
 
@@ -3527,7 +3528,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 58]
 ```
 
-___
+---
 
 ```
 
@@ -3588,7 +3589,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 59]
 ```
 
-___
+---
 
 ```
 
@@ -3649,7 +3650,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 60]
 ```
 
-___
+---
 
 ```
 
@@ -3710,7 +3711,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 61]
 ```
 
-___
+---
 
 ```
 
@@ -3771,7 +3772,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 62]
 ```
 
-___
+---
 
 ```
 
@@ -3832,7 +3833,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 63]
 ```
 
-___
+---
 
 ```
 
@@ -3893,7 +3894,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 64]
 ```
 
-___
+---
 
 ```
 
@@ -3954,7 +3955,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 65]
 ```
 
-___
+---
 
 ```
 
@@ -4015,7 +4016,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 66]
 ```
 
-___
+---
 
 ```
 
@@ -4076,7 +4077,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 67]
 ```
 
-___
+---
 
 ```
 
@@ -4137,7 +4138,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 68]
 ```
 
-___
+---
 
 ```
 
@@ -4198,7 +4199,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 69]
 ```
 
-___
+---
 
 ```
 
@@ -4259,7 +4260,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 70]
 ```
 
-___
+---
 
 ```
 
@@ -4320,7 +4321,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 71]
 ```
 
-___
+---
 
 ```
 
@@ -4381,7 +4382,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 72]
 ```
 
-___
+---
 
 ```
 
@@ -4442,7 +4443,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 73]
 ```
 
-___
+---
 
 ```
 
@@ -4503,7 +4504,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 74]
 ```
 
-___
+---
 
 ```
 
@@ -4564,7 +4565,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 75]
 ```
 
-___
+---
 
 ```
 
@@ -4625,7 +4626,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 76]
 ```
 
-___
+---
 
 ```
 
@@ -4686,7 +4687,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 77]
 ```
 
-___
+---
 
 ```
 
@@ -4747,7 +4748,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 78]
 ```
 
-___
+---
 
 ```
 
@@ -4808,7 +4809,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 79]
 ```
 
-___
+---
 
 ```
 
@@ -4869,7 +4870,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 80]
 ```
 
-___
+---
 
 ```
 
@@ -4930,7 +4931,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 81]
 ```
 
-___
+---
 
 ```
 
@@ -4991,7 +4992,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 82]
 ```
 
-___
+---
 
 ```
 
@@ -5052,7 +5053,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 83]
 ```
 
-___
+---
 
 ```
 
@@ -5113,7 +5114,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 84]
 ```
 
-___
+---
 
 ```
 
@@ -5174,7 +5175,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 85]
 ```
 
-___
+---
 
 ```
 
@@ -5235,7 +5236,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 86]
 ```
 
-___
+---
 
 ```
 
@@ -5296,7 +5297,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 87]
 ```
 
-___
+---
 
 ```
 
@@ -5357,7 +5358,7 @@ RFC 7231             HTTP/1.1 Semantics and Content            June 2014
 Fielding & Reschke           Standards Track                   [Page 88]
 ```
 
-___
+---
 
 ```
 
@@ -5418,7 +5419,7 @@ A.2.  Conversion to Canonical Form
 Fielding & Reschke           Standards Track                   [Page 89]
 ```
 
-___
+---
 
 ```
 
