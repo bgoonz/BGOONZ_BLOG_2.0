@@ -2,21 +2,21 @@
 title: Beginners Guide To Python
 template: post
 subtitle: It has simple, clean syntax, object encapsulation, good library support
-excerpt: "Article on basic web development setup… "
+excerpt: 'Article on basic web development setup… '
 date: 2022-05-11T00:02:02.952Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/python-language.jpg?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/python-language.jpg?raw=true
 image_position: right
 author: src/data/authors/im.yaml
 categories:
-  - src/data/categories/py.yaml
+    - src/data/categories/py.yaml
 tags:
-  - src/data/tags/🖇-🖇-🖇-🖇.yaml
+    - src/data/tags/🖇-🖇-🖇-🖇.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/webdev-setup.md
-  - src/pages/blog/beginners-guide-to-python.md
-  - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/webdev-setup.md
+    - src/pages/blog/beginners-guide-to-python.md
+    - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
 
@@ -150,10 +150,10 @@ To determine if your Windows computer already has Python 3:
 
 1.  <span id="d7b7">Open up a terminal/cmd</span>
 2.  <span id="a7a7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a>
-</span>
+    </span>
 3.  <span id="aace">Write the program and save it</span>
 4.  <span id="b439">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a>
-</span>
+    </span>
 
 ### Basic Datatypes
 
@@ -375,7 +375,7 @@ Python has two primitive loop commands:
 -   <span id="f32d">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
-     A nested loop is a loop inside a loop.</span>
+    A nested loop is a loop inside a loop.</span>
 -   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
@@ -470,8 +470,8 @@ There are many operators in python:
 -   <span id="a1b3">`-`</span>
 -   <span id="f09c">`/`</span>
 -   <span id="cd1e">`*`
-     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
-     Now, we can look at a few more complicated ones:</span>
+    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
+    Now, we can look at a few more complicated ones:</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" />
