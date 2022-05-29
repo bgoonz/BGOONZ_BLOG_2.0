@@ -3611,7 +3611,8 @@ navigator.connection.effectiveType;
 
 The [HTML](https://html.spec.whatwg.org/multipage/), [SVG](https://www.w3.org/TR/SVG2/), and [MathML](https://www.w3.org/TR/MathML3/) specifications define very precisely what each element can contain. Many combinations have no semantic meaning, for example an _HTMLElement("audio"_) element nested inside an _HTMLElement("hr"_) element.
 
-In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text"></input>` is invalid HTML.
+In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text">
+</input>` is invalid HTML.
 
 The empty elements in HTML are as follows:
 
@@ -6812,7 +6813,10 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 <section id="Quick_links">
  <ol>
-  <li><strong><a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a></strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
+  <li>
+<strong>
+<a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a>
+</strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
  </ol>
 </section>
 
@@ -11924,10 +11928,16 @@ To make speculative loads of linked scripts, style sheets and images successful,
 
 Speculative tree building fails when `document.write()` changes the tree builder state such that the speculative state after the `</script>` tag no longer holds when all the content inserted by `document.write()` has been parsed. However, only unusual uses of `document.write()` cause trouble. Here are the things to avoid:
 
-- Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div></div>");</script>` is OK.
-- Don't write an unfinished token. `<script>document.write("<div></div");</script>` is bad.
+- Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div>
+</div>");</script>` is OK.
+- Don't write an unfinished token. `<script>document.write("<div>
+</div");</script>` is bad.
 - Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
-- Don't format part of a table. `<table><script>document.write("<tr><td>Hello World!</td></tr>");</script></table>` is bad.
+- Don't format part of a table. `<table>
+<script>document.write("<tr>
+<td>Hello World!</td>
+</tr>");</script>
+</table>` is bad.
 
 ---
 

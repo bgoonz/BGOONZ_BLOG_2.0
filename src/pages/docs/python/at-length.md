@@ -11,7 +11,12 @@ template: docs
 ---
 
 
+<<<<<<< HEAD
 #### Understanding variables <a id="understanding-variables"></a>
+=======
+#### Understanding variables <a id="understanding-variables">
+</a>
+>>>>>>> master
 
 Variables are simply declarations that are used to store certain values. For instance, the variable `name` can hold the value of `John Smith.` Several rules need to be considered when declaring variable names. For starters, a variable name cannot begin with a number.
 
@@ -91,7 +96,12 @@ This data type consists of numbers that have a decimal place. A perfect example 
 Bmi = 45.7
 ```
 
+<<<<<<< HEAD
 #### Understanding lists <a id="understanding-lists"></a>
+=======
+#### Understanding lists <a id="understanding-lists">
+</a>
+>>>>>>> master
 
 Lists allow us to store numerous elements in a particular variable. For instance, we can have a list that stores all the student names in a class. We use `[]` to define a list.
 
@@ -133,7 +143,12 @@ student_marks.remove(90)print(student_marks)
 
 In lists, negative indices allow us to count elements starting from the last one. For instance, the element with an index of `-1` in the above `student_marks` list is `"Guardian Angel"`. The second last element `78` has an index of `-2`.
 
+<<<<<<< HEAD
 #### Understanding functions or methods <a id="understanding-functions-or-methods"></a>
+=======
+#### Understanding functions or methods <a id="understanding-functions-or-methods">
+</a>
+>>>>>>> master
 
 Methods are quite critical in programming. They help store reusable code. This means that a person can call already declared methods rather than writing statements from scratch repeatedly. This saves significant time, that can be invested in other productive activities.
 
@@ -163,7 +178,12 @@ The `return` keyword ensures that the method returns a result after execution.
 def readData(chem, bio):    return chem+bio​def getTotal():    print(readData(90,80)) #calls the readData method​getTotal()
 ```
 
+<<<<<<< HEAD
 #### Understanding loops <a id="understanding-loops"></a>
+=======
+#### Understanding loops <a id="understanding-loops">
+</a>
+>>>>>>> master
 
 Loops are critical because they allow us to iterate through lists, check for different conditions, and continuously execute various statements. The main loops are `for` and `while`.
 
@@ -183,7 +203,12 @@ isChecked = falsewhile isChecked == true:    print('Hallo there')
 
 > Note that the while loop above will be executed indefinitely until isChecked is set to false. You can press ctrl+c to stop the loop.
 
+<<<<<<< HEAD
 #### Classes <a id="classes"></a>
+=======
+#### Classes <a id="classes">
+</a>
+>>>>>>> master
 
 Classes are a vital component of object-oriented programming. When creating a class, you must use the `class` keyword. Other elements are then nested in the class. Here is an example of a Python class.
 
@@ -205,7 +230,12 @@ You can also declare a method in a class and use it later, as shown below.
 class Farmer:  def __init__(self, farmername, produce):    self.farmername = farmername    self.produce = produce​  def printDetails(self): # Method      print(self.farmername, self.produce)​farmer = Farmer("Carry Sminson", "10,000kgs")​farmer.printDetails()
 ```
 
+<<<<<<< HEAD
 ## Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code. <a id="python-syntax-was-made-for-readability-and-easy-editing-for-example-the-python-language-uses-a-and-indented-code-while-javascript-and-others-generally-use-and-indented-code"></a>
+=======
+## Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code. <a id="python-syntax-was-made-for-readability-and-easy-editing-for-example-the-python-language-uses-a-and-indented-code-while-javascript-and-others-generally-use-and-indented-code">
+</a>
+>>>>>>> master
 
 Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
@@ -305,7 +335,12 @@ x = 'hello' # Goodx = "hello" # Goodx = "hello' # ERRORRR!!!
 
 _slicing.py_
 
+<<<<<<< HEAD
 #### String Slicing <a id="string-slicing"></a>
+=======
+#### String Slicing <a id="string-slicing">
+</a>
+>>>>>>> master
 
 You can look at only certain parts of the string by slicing it, using `[num:num]`. The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
@@ -313,7 +348,12 @@ You can look at only certain parts of the string by slicing it, using `[num:num]
 x = 'Hello everybody!'x[1] # 'e'x[-1] # '!'x[5] # ' 'x[1:] # 'ello everybody!'x[:-1] # 'Hello everybod'x[2:-3] # 'llo everyb'
 ```
 
+<<<<<<< HEAD
 #### Methods and Functions <a id="methods-and-functions"></a>
+=======
+#### Methods and Functions <a id="methods-and-functions">
+</a>
+>>>>>>> master
 
 Here is a list of functions/methods we will go over:
 
@@ -462,9 +502,17 @@ _functions.py_
 import randomdef r(t):     print(random.randint(1, 9))     print(t)r('Wow that was interesting.')r('Look at the number above ^')r('All of these have been interesting numbers.')r("these random.randint's are getting annoying to type")r('Hi')r('j')
 ```
 
+<<<<<<< HEAD
 ### Chapter 01 - Getting Ready with Python <a id="chapter-01-getting-ready-with-python"></a>
 
 #### Installing Python 3, And Launching Python Shell <a id="installing-python-3-and-launching-python-shell"></a>
+=======
+### Chapter 01 - Getting Ready with Python <a id="chapter-01-getting-ready-with-python">
+</a>
+
+#### Installing Python 3, And Launching Python Shell <a id="installing-python-3-and-launching-python-shell">
+</a>
+>>>>>>> master
 
 This video should help you get up and running with Python 3
 
@@ -494,7 +542,12 @@ You can execute the code, and the shell would immediately give you output.
 
 Using the the Python Shell is an awesome way to learn Python.
 
+<<<<<<< HEAD
 ### Chapter 02 - Introduction To Python Programming <a id="chapter-02-introduction-to-python-programming"></a>
+=======
+### Chapter 02 - Introduction To Python Programming <a id="chapter-02-introduction-to-python-programming">
+</a>
+>>>>>>> master
 
 Most programmers find programming a lot of fun, and besides, it also gets their work done.
 
@@ -517,7 +570,12 @@ In this step, we:
 -   Were introduced to the concept of problem solving
 -   Understood how good programmers approach problem solving
 
+<<<<<<< HEAD
 #### Step 01: Our First Programming Challenge <a id="step-01-our-first-programming-challenge"></a>
+=======
+#### Step 01: Our First Programming Challenge <a id="step-01-our-first-programming-challenge">
+</a>
+>>>>>>> master
 
 Our first _programming challenge_ aims to do, what every kid does in math class: read out a multiplication table. We now want to give this task to the computer. Here is the statement of our problem:
 
@@ -567,7 +625,12 @@ In this step, we:
 -   Stated our first programming challenge
 -   Identified what programming concepts we need to learn, to solve this challenge
 
+<<<<<<< HEAD
 #### Step 02: Breaking Down _PMT-Challenge_ <a id="step-02-breaking-down-pmt-challenge"></a>
+=======
+#### Step 02: Breaking Down _PMT-Challenge_ <a id="step-02-breaking-down-pmt-challenge">
+</a>
+>>>>>>> master
 
 Typically when we do programming, we have problems. Solving the problem typically need a step-by -step approach. Common sense tells us that to solve a complex problem, we break it into smaller parts, and solve each part one by one. Here is how any good programmer worth her salt, would solve a problem:
 
@@ -592,7 +655,12 @@ In this step, we:
 -   Learned that breaking down a problem into sub-problems is a great help
 -   Found a way to break down the _PMT-Challenge_ problem
 
+<<<<<<< HEAD
 #### Step 03: Introducing Operators And Expressions <a id="step-03-introducing-operators-and-expressions"></a>
+=======
+#### Step 03: Introducing Operators And Expressions <a id="step-03-introducing-operators-and-expressions">
+</a>
+>>>>>>> master
 
 Let's focus on solving the first sub-problem of _PMT-Challenge_, the numeric computation. We want the computer to calculate `5 * 5` for example, and print `25` for us. How do we get it to do that? That's what we would be looking at in this step.
 
@@ -657,7 +725,12 @@ In this step, we:
 -   Understood that Python has a predefined set of operators
 -   Used a few types of basic operators and their operands, to form expressions
 
+<<<<<<< HEAD
 #### Step 04: Programming Exercise IN-PE-01 <a id="step-04-programming-exercise-in-pe-01"></a>
+=======
+#### Step 04: Programming Exercise IN-PE-01 <a id="step-04-programming-exercise-in-pe-01">
+</a>
+>>>>>>> master
 
 At this stage, your smile tells us that you enjoy evaluating Python expressions. What if we tickle your mind a bit, to make sure it hasn't fallen asleep? Here is your first programming exercise.
 
@@ -706,7 +779,12 @@ In this step, we:
     -   Operators
     -   Literals
 
+<<<<<<< HEAD
 #### Step 05: Puzzles On Expressions <a id="step-05-puzzles-on-expressions"></a>
+=======
+#### Step 05: Puzzles On Expressions <a id="step-05-puzzles-on-expressions">
+</a>
+>>>>>>> master
 
 Let's look at a few puzzles related to expressions, in this step. Before that, let's revise some of the terminology we had learned earlier.
 
@@ -783,7 +861,12 @@ In this step, we went about solving a few puzzles about expressions, touching co
 -   Operator Precedence
 -   Using parentheses
 
+<<<<<<< HEAD
 #### Step 06: Printing Text <a id="step-06-printing-text"></a>
+=======
+#### Step 06: Printing Text <a id="step-06-printing-text">
+</a>
+>>>>>>> master
 
 In the previous step, we learned how to use expressions to compute values. In this step, let's see how we can actually print multiplication table entries, that are readable by the user.
 
@@ -862,7 +945,12 @@ In this step, we:
 -   Learned about the `print()` function, that is used to print text in Python.
 -   Found a way to print the text `"5 * 6 = 30"` on the console, by hard-coding values in a string
 
+<<<<<<< HEAD
 #### Step 07: Puzzles On Utility Methods, And Strings <a id="step-07-puzzles-on-utility-methods-and-strings"></a>
+=======
+#### Step 07: Puzzles On Utility Methods, And Strings <a id="step-07-puzzles-on-utility-methods-and-strings">
+</a>
+>>>>>>> master
 
 In the previous step, we learned how to print `5 * 6 = 30`. It was not a perfect solution, because we hard-coded everything. we used an in-built function named `print()`, passed a string to it, and invoked the method.
 
@@ -1001,7 +1089,12 @@ In this step, we:
     -   The role played by whitespace
     -   The escape character, and common escape sequences
 
+<<<<<<< HEAD
 #### Step 08: Formatted Output With print\(\) <a id="step-08-formatted-output-with-print"></a>
+=======
+#### Step 08: Formatted Output With print\(\) <a id="step-08-formatted-output-with-print">
+</a>
+>>>>>>> master
 
 In the previous step, we learned how to print a hard-coded string, such as `"5 * 6 = 30"`.
 
@@ -1075,7 +1168,12 @@ In this step, we:
 -   Looked at the `format()` function, and saw how to call it within `print()`
 -   Observed how we could work only with the indexes of parameters to `format()`, and change the parameters we pass without changing the code
 
+<<<<<<< HEAD
 #### Step 09: Puzzles On format\(\) and print\(\) <a id="step-09-puzzles-on-format-and-print"></a>
+=======
+#### Step 09: Puzzles On format\(\) and print\(\) <a id="step-09-puzzles-on-format-and-print">
+</a>
+>>>>>>> master
 
 In this step, let's look at a few puzzles related to the format, and the print methods.
 
@@ -1130,7 +1228,12 @@ In this step, we:
     -   Are less than the indexes accessed by `print()`
     -   Are of type integer, floating-point or string
 
+<<<<<<< HEAD
 #### Step 10: Introducing Variables <a id="step-10-introducing-variables"></a>
+=======
+#### Step 10: Introducing Variables <a id="step-10-introducing-variables">
+</a>
+>>>>>>> master
 
 We are slowly making progress toward our main goal, which is to print the `5` multiplication table.
 
@@ -1231,7 +1334,12 @@ In this step, we:
 -   Were introduced to variables, or names, in Python
 -   Observed how we could pass in values of variables to the `format()` function
 
+<<<<<<< HEAD
 #### Step 11: Puzzles On Variables <a id="step-11-puzzles-on-variables"></a>
+=======
+#### Step 11: Puzzles On Variables <a id="step-11-puzzles-on-variables">
+</a>
+>>>>>>> master
 
 In the previous step, we were introduced to the concept of variables in Python.
 
@@ -1291,7 +1399,12 @@ In this step, we:
 -   Understood that a variable needs to be defined before it is used
 -   Learned that there are certain rules to be followed while giving names to variables
 
+<<<<<<< HEAD
 #### Step 12: Introducing Assignment <a id="step-12-introducing-assignment"></a>
+=======
+#### Step 12: Introducing Assignment <a id="step-12-introducing-assignment">
+</a>
+>>>>>>> master
 
 In this step, we will look at an important concept in Python, called **assignment**. In previous steps, we created variables, like `i = 5`.
 
@@ -1346,7 +1459,12 @@ In this step, we:
 -   Learned what happens when you assign a value to a variable, which may or may not exist
 -   Discovered that literal constants cannot be placed on the left hand side of the assignment\(`=`\) operator
 
+<<<<<<< HEAD
 #### Step 13: Introducing Formatted Printing <a id="step-13-introducing-formatted-printing"></a>
+=======
+#### Step 13: Introducing Formatted Printing <a id="step-13-introducing-formatted-printing">
+</a>
+>>>>>>> master
 
 Until now, we have been using the `format()` method to format and print values. Let's see a better approach to printing values.
 
@@ -1382,7 +1500,12 @@ Let's get back to the original problem we wanted to solve: printing `5 + 6 + 7 =
 
 You can see how easy it turns out to be!
 
+<<<<<<< HEAD
 #### Step 14: The PMT-Challenge Revisited <a id="step-14-the-pmt-challenge-revisited"></a>
+=======
+#### Step 14: The PMT-Challenge Revisited <a id="step-14-the-pmt-challenge-revisited">
+</a>
+>>>>>>> master
 
 We want to print the `5`-table from `5 * 1 = 5` onward, until we reach to `5 * 10 = 50`. The best solution we have right now, is shown below:
 
@@ -1448,7 +1571,12 @@ Now, how do we get it to print `5 * 1 = 5` to `5 * 10 = 50`?
 
 `print(f"5 * {i} = {5 * i}")` prints a specific multiple of 5.
 
+<<<<<<< HEAD
 #### Step 15: Loops <a id="step-15-loops"></a>
+=======
+#### Step 15: Loops <a id="step-15-loops">
+</a>
+>>>>>>> master
 
 In a previous step, we took a major step in programming. We wrote our first for loop with Python. In this step, let's try a few puzzles to understand the for loop even further.
 
@@ -1521,7 +1649,12 @@ In this step, we:
     -   Indentation
     -   Variations of the `range()` function
 
+<<<<<<< HEAD
 #### Step 16: Programming Exercise PE-BA-02 <a id="step-16-programming-exercise-pe-ba-02"></a>
+=======
+#### Step 16: Programming Exercise PE-BA-02 <a id="step-16-programming-exercise-pe-ba-02">
+</a>
+>>>>>>> master
 
 In the previous step, after initially exploring the Python `for` loop, we looked at a number of puzzles.
 
@@ -1598,7 +1731,12 @@ In this video, we: \* Tried out a few exercises involving the for loop, by playi
 
 -   Used the for loop to simplify the solution to the _PMT-Challenge_ problem.
 
+<<<<<<< HEAD
 #### Step 17: Review: The Basics Of Python <a id="step-17-review-the-basics-of-python"></a>
+=======
+#### Step 17: Review: The Basics Of Python <a id="step-17-review-the-basics-of-python">
+</a>
+>>>>>>> master
 
 It must have been a roller-coaster ride to solve the multiplication table challenge so far. If you're new to programming, there are a wide range of topics and concepts, that you would have learned during this small journey.
 
@@ -1612,7 +1750,12 @@ Let's quickly revise the important concepts we have learned during this small jo
 
 So that, in a nutshell, is what we have learned over the course of our first section.
 
+<<<<<<< HEAD
 ### Chapter 03 - Introducing Methods <a id="chapter-03-introducing-methods"></a>
+=======
+### Chapter 03 - Introducing Methods <a id="chapter-03-introducing-methods">
+</a>
+>>>>>>> master
 
 In the last section, we introduced you to the basics of python. We learned those concepts by applying them to solve the _PMT-Challenge_ problem. The code below is what we ended up with as we solved that chellenge.
 
@@ -1640,7 +1783,12 @@ To be able to do this, we need to create a **method**, or a **function**. Creati
 
 In this section, we take an in-depth look at methods.
 
+<<<<<<< HEAD
 #### Step 01: Defining Your First Method <a id="step-01-defining-your-first-method"></a>
+=======
+#### Step 01: Defining Your First Method <a id="step-01-defining-your-first-method">
+</a>
+>>>>>>> master
 
 Methods are very important building blocks in Python programming. In this step, we will create a simple method that prints `"Hello World"`, twice.
 
@@ -1693,7 +1841,12 @@ In this step, we:
 -   Understood how to define a method, and all its syntax elements
 -   Saw how we can invoke a method we write
 
+<<<<<<< HEAD
 #### Step 02: Programming Exercise PE-MD-01 <a id="step-02-programming-exercise-pe-md-01"></a>
+=======
+#### Step 02: Programming Exercise PE-MD-01 <a id="step-02-programming-exercise-pe-md-01">
+</a>
+>>>>>>> master
 
 We will now leave you with two exercises, based on what we have learned about methods so far.
 
@@ -1747,7 +1900,12 @@ In this step, we:
     -   The way to invoke a method, to run its code
     -   The difference between the two
 
+<<<<<<< HEAD
 #### Step 03: Passing Parameters To Methods <a id="step-03-passing-parameters-to-methods"></a>
+=======
+#### Step 03: Passing Parameters To Methods <a id="step-03-passing-parameters-to-methods">
+</a>
+>>>>>>> master
 
 In the previous step,we created methods. We defined `print_hello_world_twice()`, and this printed `"Hello World"` twice. In this step, let's talk about _method arguments_, or _parameters_.
 
@@ -1835,7 +1993,12 @@ In this step, we:
 -   Understood that the method definition needs to have parameters coded in
 -   Observed that arguments passed during a method call can be accessed inside a methods body
 
+<<<<<<< HEAD
 #### Step 04: Classroom Exercise CE-MD-01 <a id="step-04-classroom-exercise-ce-md-01"></a>
+=======
+#### Step 04: Classroom Exercise CE-MD-01 <a id="step-04-classroom-exercise-ce-md-01">
+</a>
+>>>>>>> master
 
 In this step, Let's look at a few exercises related to the method parameter.
 
@@ -1876,7 +2039,12 @@ How is a parameter different from an argument?
 
 In this step, we looked at a few simple exercises related to passing method arguments
 
+<<<<<<< HEAD
 #### Step 05: Methods With Multiple Parameters <a id="step-05-methods-with-multiple-parameters"></a>
+=======
+#### Step 05: Methods With Multiple Parameters <a id="step-05-methods-with-multiple-parameters">
+</a>
+>>>>>>> master
 
 In this step, let's look at creating a method with multiple parameters.
 
@@ -1944,7 +2112,12 @@ In this step, we:
 -   Learned how you can define default values for those parameters
 -   Observed we could pass default arguments for none, some or all of those parameters
 
+<<<<<<< HEAD
 #### Step 06: Back To Multiplication Table - Using Methods <a id="step-06-back-to-multiplication-table-using-methods"></a>
+=======
+#### Step 06: Back To Multiplication Table - Using Methods <a id="step-06-back-to-multiplication-table-using-methods">
+</a>
+>>>>>>> master
 
 Let's get back to our original goal, of why we needed methods. We wanted to create a multiplication table for a number, and observed that each time we needed to we needed change that number, we were forced to make a change in the code. This is not something we liked, and that's why we started investigating how methods can be used.
 
@@ -1994,7 +2167,12 @@ In this step, we:
 -   Looked at how to enhance this method to make table printing more flexible
 -   Further enhanced that method to accept default arguments while printing a table
 
+<<<<<<< HEAD
 #### Step 07: Indentation Is King <a id="step-07-indentation-is-king"></a>
+=======
+#### Step 07: Indentation Is King <a id="step-07-indentation-is-king">
+</a>
+>>>>>>> master
 
 In Python, indentation denote blocks of code. So if you want to put something in a `for` loop, or outside it, proper indentation would be sufficient. In this step, let's explore indentation in depth. Let's start by creating a simple method.
 
@@ -2038,7 +2216,12 @@ In this step, we:
 
 -   Ran through a few examples to see how indentation works in Python
 
+<<<<<<< HEAD
 #### Step 08: Puzzles on Methods - Named Parameters <a id="step-08-puzzles-on-methods-named-parameters"></a>
+=======
+#### Step 08: Puzzles on Methods - Named Parameters <a id="step-08-puzzles-on-methods-named-parameters">
+</a>
+>>>>>>> master
 
 In this step, let's look at a variety of puzzles related to methods.
 
@@ -2145,7 +2328,12 @@ In this step, we:
 -   Explored the typical naming rules and conventions for methods in Python
 -   Observed that reserved keywords cannot be used to name variables or methods
 
+<<<<<<< HEAD
 #### Step 09: Methods - Return Values <a id="step-09-methods-return-values"></a>
+=======
+#### Step 09: Methods - Return Values <a id="step-09-methods-return-values">
+</a>
+>>>>>>> master
 
 Let's try and understand the importance of return values from a method. We will learn how to return a value from a method.
 
@@ -2204,7 +2392,12 @@ In this step, we:
 -   Learned how to return values from inside a method
 -   Observed how we can store the values returned by a method call
 
+<<<<<<< HEAD
 #### Step 10: Programming Exercise PE-MD-02 <a id="step-10-programming-exercise-pe-md-02"></a>
+=======
+#### Step 10: Programming Exercise PE-MD-02 <a id="step-10-programming-exercise-pe-md-02">
+</a>
+>>>>>>> master
 
 In this step let's look at a couple of exercises about returning values from methods.
 
@@ -2248,7 +2441,12 @@ In this step, we:
 -   Looked at a couple of exercises related to returning values from methods
 -   Observed that returning expressions avoids creating unnecessary variables, and shortens method definitions
 
+<<<<<<< HEAD
 ### Chapter 04 - Introduction To Python Platform <a id="chapter-04-introduction-to-python-platform"></a>
+=======
+### Chapter 04 - Introduction To Python Platform <a id="chapter-04-introduction-to-python-platform">
+</a>
+>>>>>>> master
 
 Until now we had been using Python Shell to execute all our code.
 
@@ -2263,7 +2461,12 @@ Here are a few videos you might want to look at.
 -   ​[Writing and Executing your First Python Script](https://www.youtube.com/watch?v=ORmDD1R7lNc)​
 -   ​[Understanding Python Virtual Machine and bytecode](https://www.youtube.com/watch?v=HE-FC0csG68)​
 
+<<<<<<< HEAD
 #### Step 01 - Writing and Executing Python Shell Programs <a id="step-01-writing-and-executing-python-shell-programs"></a>
+=======
+#### Step 01 - Writing and Executing Python Shell Programs <a id="step-01-writing-and-executing-python-shell-programs">
+</a>
+>>>>>>> master
 
 Here's a recommended video to watch - [Writing and Executing your First Python Script](https://www.youtube.com/watch?v=ORmDD1R7lNc)​
 
@@ -2301,7 +2504,12 @@ In this small step, we tried to create a simple python script, and we ran it fro
 
 As an exercise, try and add a few more methods and try to run those methods as well, as part of this script.
 
+<<<<<<< HEAD
 #### Step 02 - Python virtual machine and bytecode <a id="step-02-python-virtual-machine-and-bytecode"></a>
+=======
+#### Step 02 - Python virtual machine and bytecode <a id="step-02-python-virtual-machine-and-bytecode">
+</a>
+>>>>>>> master
 
 In this step, let's try and understand what's happening in the background.
 
@@ -2330,7 +2538,12 @@ It's very important for you to understand the process. What's happening is you w
 
 The idea behind this quick section, is to give you a little bit of background on what's happening behind the scenes. I'll see you in the next section. Until then, bye-bye!
 
+<<<<<<< HEAD
 ### Chapter 05 - Introduction To VSCode <a id="chapter-05-introduction-to-vscode"></a>
+=======
+### Chapter 05 - Introduction To VSCode <a id="chapter-05-introduction-to-vscode">
+</a>
+>>>>>>> master
 
 Let's start using the IDE VSCode to write our Python Code
 
@@ -2340,7 +2553,12 @@ Here are recommended videos to watch
 -   ​[Write and Execute a Python File with VSCode](https://www.youtube.com/watch?v=Na05tSP21Jg)​
 -   ​[Write Your First Python Program with VSCode](https://www.youtube.com/watch?v=PvYSlWbXuCw)​
 
+<<<<<<< HEAD
 #### Step 01 - Installing and Introduction to VSCode <a id="step-01-installing-and-introduction-to-vscode"></a>
+=======
+#### Step 01 - Installing and Introduction to VSCode <a id="step-01-installing-and-introduction-to-vscode">
+</a>
+>>>>>>> master
 
 In this quick step, we'll help you install VSCode.
 
@@ -2366,7 +2584,12 @@ You're all set to go ahead with the next step in the course.
 
 VSCode is an awesome IDE, and I'm sure you learn a lot about it.
 
+<<<<<<< HEAD
 #### Step 02 - Write and Execute a Python File with VSCode <a id="step-02-write-and-execute-a-python-file-with-vscode"></a>
+=======
+#### Step 02 - Write and Execute a Python File with VSCode <a id="step-02-write-and-execute-a-python-file-with-vscode">
+</a>
+>>>>>>> master
 
 In this step, let's launch up the VSCode IDE, and create our first Python project with a Python script. We want to be able to launch a Python script by the end of this step.
 
@@ -2392,7 +2615,12 @@ You can do a right-click here, and say 'Run hello_world'.
 
 A small window comes up below, which shows the output. It says `'Hello World'`.
 
+<<<<<<< HEAD
 #### Step 03 - Execise - Write Multiplication Table Method with VSCode <a id="step-03-execise-write-multiplication-table-method-with-vscode"></a>
+=======
+#### Step 03 - Execise - Write Multiplication Table Method with VSCode <a id="step-03-execise-write-multiplication-table-method-with-vscode">
+</a>
+>>>>>>> master
 
 Let's start with a simple exercise. We created the multiplication table method in the Python Shell. What we do now, is we'll create the same thing but in a Python file of its own.
 
@@ -2400,11 +2628,21 @@ Here's the video guide for this step:
 
 -   ​[Write Your First Python Program with VSCode](https://www.youtube.com/watch?v=PvYSlWbXuCw)​
 
+<<<<<<< HEAD
 ### Chapter 06 - Introducing Data Types and Conditionals <a id="chapter-06-introducing-data-types-and-conditionals"></a>
 
 Welcome to this section, where we will talk about numeric data types, and conditional program execution. After looking at the numeric and boolean data types, we will turn our attention to executing code, based on logical conditions.
 
 #### Step 01: Numeric Data Types <a id="step-01-numeric-data-types"></a>
+=======
+### Chapter 06 - Introducing Data Types and Conditionals <a id="chapter-06-introducing-data-types-and-conditionals">
+</a>
+
+Welcome to this section, where we will talk about numeric data types, and conditional program execution. After looking at the numeric and boolean data types, we will turn our attention to executing code, based on logical conditions.
+
+#### Step 01: Numeric Data Types <a id="step-01-numeric-data-types">
+</a>
+>>>>>>> master
 
 In previous sections, we created variables of this kind: `number = 5` , `value = 2.5`, etc. The `5` here is an integer, and integers represent numbers, such as `1`, `2`, `6`, `-1` and `-2`. In Python, the `class` for this particular data type is `int`.
 
@@ -2457,7 +2695,12 @@ In this step, we:
 -   Looked at the two basic numeric types: `int` and `float`.
 -   Saw the basic operations you can do among `int`s, among `float`s, and also between `int`s and `float`s.
 
+<<<<<<< HEAD
 #### Step 02: Programming Exercise PE-DT-01 <a id="step-02-programming-exercise-pe-dt-01"></a>
+=======
+#### Step 02: Programming Exercise PE-DT-01 <a id="step-02-programming-exercise-pe-dt-01">
+</a>
+>>>>>>> master
 
 In this step, let's do a simple exercise with numeric values.
 
@@ -2479,7 +2722,12 @@ In this step, we:
 
 -   Wrote a very simple method to do a simple interest calculation
 
+<<<<<<< HEAD
 #### Step 03: Puzzles On Numeric Types <a id="step-03-puzzles-on-numeric-types"></a>
+=======
+#### Step 03: Puzzles On Numeric Types <a id="step-03-puzzles-on-numeric-types">
+</a>
+>>>>>>> master
 
 In this section, we are looking at numeric types. In this specific step, we would be looking at a few puzzles related to values of these types.
 
@@ -2571,7 +2819,12 @@ In this step, we:
 -   Examined the different operators available for use with values of numeric types
 -   Learned about the usage of type conversion functions
 
+<<<<<<< HEAD
 #### Step 04: Introducing Boolean Type <a id="step-04-introducing-boolean-type"></a>
+=======
+#### Step 04: Introducing Boolean Type <a id="step-04-introducing-boolean-type">
+</a>
+>>>>>>> master
 
 We will now shift our attention to the `bool` data type.
 
@@ -2618,7 +2871,12 @@ In this step, we:
 -   Were introduced to the `bool` data type
 -   Learned that `bool` variables are useful handy while testing logical conditions
 
+<<<<<<< HEAD
 #### Step 05: Introducing Conditionals <a id="step-05-introducing-conditionals"></a>
+=======
+#### Step 05: Introducing Conditionals <a id="step-05-introducing-conditionals">
+</a>
+>>>>>>> master
 
 In this step, let's look at `if` statement.
 
@@ -2661,7 +2919,12 @@ In this step, we:
 -   Were introduced to the `if` statement, the simplest Python conditional
 -   Understood how an `if` helps in implementing conditional program logic
 
+<<<<<<< HEAD
 #### Step 06: Classroom Exercise CE-DT-01 <a id="step-06-classroom-exercise-ce-dt-01"></a>
+=======
+#### Step 06: Classroom Exercise CE-DT-01 <a id="step-06-classroom-exercise-ce-dt-01">
+</a>
+>>>>>>> master
 
 In this step, let's look at a couple of exercises with the if statement.
 
@@ -2693,7 +2956,12 @@ In this step, we:
 
 -   Looked at a few exercises related to the if statement, for writing and testing conditions.
 
+<<<<<<< HEAD
 #### Step 07 - Logical Operators - and or not <a id="step-07-logical-operators-and-or-not"></a>
+=======
+#### Step 07 - Logical Operators - and or not <a id="step-07-logical-operators-and-or-not">
+</a>
+>>>>>>> master
 
 In this step, let's look at the different operators that can be used on `bool` values. These operators are called logical operators - `and`, `or` , `not` and `^` \(xor\).
 
@@ -2730,7 +2998,12 @@ In this step, we:
 -   Looked at the logical operators that act on boolean values, such as `and`, `or`, `not` and `^`
 -   Explored each of these operators, finding out when they return `True`, and when `False`.
 
+<<<<<<< HEAD
 #### Step 08: Puzzles On Logical Operators <a id="step-08-puzzles-on-logical-operators"></a>
+=======
+#### Step 08: Puzzles On Logical Operators <a id="step-08-puzzles-on-logical-operators">
+</a>
+>>>>>>> master
 
 In this step, Let's look at a few simple puzzles to look at the logical operators.
 
@@ -2811,7 +3084,12 @@ In this step, we:
 -   Looked at a few puzzles related to the logical operators
 -   Looked at conversion functions such as `bool()` and `int()` to convert between boolean and integer data
 
+<<<<<<< HEAD
 #### Step 09: <a id="step-09"></a>
+=======
+#### Step 09: <a id="step-09">
+</a>
+>>>>>>> master
 
 In this step, let's look at two other important components of an `if` statement: `else` and `elif`. Let's start with `else`.
 
@@ -2850,7 +3128,12 @@ In this step, we:
 -   Looked at two important components of the `if` statement: `else` and `elif`.
 -   Understood that the `elif` clauses and the final `else` clause provide alternative conditions to check, when earlier if conditions are true.
 
+<<<<<<< HEAD
 #### Step 10: Classroom Exercise CE-DT-02 <a id="step-10-classroom-exercise-ce-dt-02"></a>
+=======
+#### Step 10: Classroom Exercise CE-DT-02 <a id="step-10-classroom-exercise-ce-dt-02">
+</a>
+>>>>>>> master
 
 In this step, let's do a simple exercise with `if`, `else` and `elif`.
 
@@ -2930,7 +3213,12 @@ In this step, we:
 -   Learned that `input()` always returns what the user enters, as a string
 -   We can convert the string from `input()`, to the data type we expect by invoking conversion functions
 
+<<<<<<< HEAD
 #### Step 11: Continued - Classroom Exercise CE-DT-02 <a id="step-11-continued-classroom-exercise-ce-dt-02"></a>
+=======
+#### Step 11: Continued - Classroom Exercise CE-DT-02 <a id="step-11-continued-classroom-exercise-ce-dt-02">
+</a>
+>>>>>>> master
 
 **Exercises**
 
@@ -2957,7 +3245,12 @@ In this step, we:
 -   Augmented the Menu Exercise to get all the input from the console, and compute a value from them
 -   Corrected the logic to handle incorrect input
 
+<<<<<<< HEAD
 #### Step 12: Puzzles On Conditionals <a id="step-12-puzzles-on-conditionals"></a>
+=======
+#### Step 12: Puzzles On Conditionals <a id="step-12-puzzles-on-conditionals">
+</a>
+>>>>>>> master
 
 In this step, let's look at a few puzzles related to these `if`, `elif` and `else` clauses.
 
@@ -3038,7 +3331,12 @@ In this step, we:
 -   Looked at a few puzzles related to `if`, `elif` and `else`
 -   Explored the importance of indentation and the different condition clauses inside an `if` statement
 
+<<<<<<< HEAD
 #### Step 01: The Python Type To Denote Text <a id="step-01-the-python-type-to-denote-text"></a>
+=======
+#### Step 01: The Python Type To Denote Text <a id="step-01-the-python-type-to-denote-text">
+</a>
+>>>>>>> master
 
 Let's start looking at another important data type in Python, that's used to represent strings. Not surprisingly, it is in fact named `str`!
 
@@ -3144,7 +3442,12 @@ If you are searching for `'Ello'` with a capital `'E'` ,you'll not be able to fi
     >>> 'Hello World'.find('Ello')    -1    >>> 'Hello World'.find('bello')    -1    >>> 'Hello World'.find('Ello')    -1
 ```
 
+<<<<<<< HEAD
 #### Step 02: Type Conversion Puzzles <a id="step-02-type-conversion-puzzles"></a>
+=======
+#### Step 02: Type Conversion Puzzles <a id="step-02-type-conversion-puzzles">
+</a>
+>>>>>>> master
 
 We'll now try and convert values from one type to another, and try and play around with them.
 
@@ -3190,7 +3493,12 @@ You can also convert string to float.
 
 In this quick step, we looked at converting different types to strings, and converting strings to different types. So we looked at `int`, `bool` and `float` values, and we looked at how to convert them to string, and how to convert strings back to these specific types.
 
+<<<<<<< HEAD
 #### Step 02: Strings Are Immutable <a id="step-02-strings-are-immutable"></a>
+=======
+#### Step 02: Strings Are Immutable <a id="step-02-strings-are-immutable">
+</a>
+>>>>>>> master
 
 In this step, let's learn an important fact about strings in Python.
 
@@ -3242,7 +3550,12 @@ Summary : The original value at location `A` has not changed and cannot be chang
 
 Variables are just names referring to a location. They don't really contain the value. Variables contain a reference to the location that contains the object.
 
+<<<<<<< HEAD
 #### Step 03: Python Has No Separate Character Type <a id="step-03-python-has-no-separate-character-type"></a>
+=======
+#### Step 03: Python Has No Separate Character Type <a id="step-03-python-has-no-separate-character-type">
+</a>
+>>>>>>> master
 
 One of the things that surprises people new to Python, is that there is no character data type in Python.
 
@@ -3276,7 +3589,12 @@ The way you could do that, is by saying: `for ch in message: print(ch)`.
 
 In this short step, we looked at the fact that there is no separate character class, or data type in Python. We also looked at how do we loop over a given string, and print all the characters present inside this string.
 
+<<<<<<< HEAD
 #### Step 04: The `string` `module` <a id="step-04-the-string-module"></a>
+=======
+#### Step 04: The `string` `module` <a id="step-04-the-string-module">
+</a>
+>>>>>>> master
 
 In this step, we will introduce you to the `string` `module`.
 
@@ -3316,7 +3634,12 @@ You can check a text value against any of these
 
 In this step, we explored more exercises involving the `str` module of Python.
 
+<<<<<<< HEAD
 #### Step 05: More Exercises With The `str` Module <a id="step-05-more-exercises-with-the-str-module"></a>
+=======
+#### Step 05: More Exercises With The `str` Module <a id="step-05-more-exercises-with-the-str-module">
+</a>
+>>>>>>> master
 
 Let's start with an Exercise - find if a specific character is a vowel or not.
 
@@ -3360,7 +3683,12 @@ A consonant is an alphabet which is not a vowel, so any alphabet which is not in
     >>> vowel_string = 'aeiou'    >>> char = 'b'    >>> char.isalpha() and char.lower() not in vowel_string    True
 ```
 
+<<<<<<< HEAD
 #### Step 06: More Exercises On Strings <a id="step-06-more-exercises-on-strings"></a>
+=======
+#### Step 06: More Exercises On Strings <a id="step-06-more-exercises-on-strings">
+</a>
+>>>>>>> master
 
 In the step, let's look at a few more puzzles and exercises related to strings. Let's say we have a simple string, `string_example`, and this is contains an English sentence. `'This is a great thing.'`
 
@@ -3423,11 +3751,21 @@ In this step, we explored a few exercises on strings, covering areas such as:
 -   The string multiplication pattern, `*`
 -   The use of the `==` operator to compare strings
 
+<<<<<<< HEAD
 ### Chapter 07 - Introducing Loops <a id="chapter-07-introducing-loops"></a>
 
 Welcome to the section on Loops. In this section, we will look at a variety of loops that are available in Python. We will look mainly at the **`for`** loop, and the **`while`** loop.
 
 #### Step 01: Revisited: The for Loop <a id="step-01-revisited-the-for-loop"></a>
+=======
+### Chapter 07 - Introducing Loops <a id="chapter-07-introducing-loops">
+</a>
+
+Welcome to the section on Loops. In this section, we will look at a variety of loops that are available in Python. We will look mainly at the **`for`** loop, and the **`while`** loop.
+
+#### Step 01: Revisited: The for Loop <a id="step-01-revisited-the-for-loop">
+</a>
+>>>>>>> master
 
 Let's start with revising the basics of the for loop, we have learned in the previous steps.
 
@@ -3471,7 +3809,12 @@ In the call to the `range()` function, the second parameter is exclusive. We are
 
 In this step, we started with discussing and revising basic concepts about the `for` loop
 
+<<<<<<< HEAD
 #### Step 02: Programming Exercise PE-LO-01 <a id="step-02-programming-exercise-pe-lo-01"></a>
+=======
+#### Step 02: Programming Exercise PE-LO-01 <a id="step-02-programming-exercise-pe-lo-01">
+</a>
+>>>>>>> master
 
 Welcome back to this step, where we would do a lot of exercises with the `for` loop.
 
@@ -3534,7 +3877,12 @@ Here is the entire code at one place, for your reference:
 def is_prime(number):    if(number < 2):        return False    for divisor in range(2,number):        if number % divisor == 0:            return False    return Trueprint(is_prime(5));
 ```
 
+<<<<<<< HEAD
 #### Step 03: Continued - Programming Exercise PE-LO-01 <a id="step-03-continued-programming-exercise-pe-lo-01"></a>
+=======
+#### Step 03: Continued - Programming Exercise PE-LO-01 <a id="step-03-continued-programming-exercise-pe-lo-01">
+</a>
+>>>>>>> master
 
 In the previous step, we looked at solving the `is_prime()` exercise. In this step, let's look at an implementation of `sum_up_to_n()`. Here is the entire code for this exercise:
 
@@ -3548,7 +3896,12 @@ In this step, we:
 
 -   Wrote a Python function to compute the sum of all integers, from `1`, up to the input integer `n`.
 
+<<<<<<< HEAD
 #### Step 04: Continued - Programming Exercise PE-LO-01 <a id="step-04-continued-programming-exercise-pe-lo-01"></a>
+=======
+#### Step 04: Continued - Programming Exercise PE-LO-01 <a id="step-04-continued-programming-exercise-pe-lo-01">
+</a>
+>>>>>>> master
 
 Let's focus on the third exercise, `sum_of_divisors`.
 
@@ -3560,7 +3913,12 @@ You want to find out if a number is dividing `15`, and if it's dividing `15`, wi
 def calculate_sum_of_divisors(number):    sum = 0    if(number < 2):        return sum    for divisor in range(1,number+1):        if number % divisor == 0:            sum = sum + divisor    return sumprint(calculate_sum_of_divisors(6))print(calculate_sum_of_divisors(15))
 ```
 
+<<<<<<< HEAD
 #### Step 05: Continued - Programming Exercise PE-LO-01 <a id="step-05-continued-programming-exercise-pe-lo-01"></a>
+=======
+#### Step 05: Continued - Programming Exercise PE-LO-01 <a id="step-05-continued-programming-exercise-pe-lo-01">
+</a>
+>>>>>>> master
 
 In this step, Let's look at the last exercise - `print_a_number_triangle`.
 
@@ -3646,7 +4004,12 @@ In this step, we:
 
 -   Presented a solution to the exercise for printing a number triangle.
 
+<<<<<<< HEAD
 #### Step 06: Introducing The while Loop <a id="step-06-introducing-the-while-loop"></a>
+=======
+#### Step 06: Introducing The while Loop <a id="step-06-introducing-the-while-loop">
+</a>
+>>>>>>> master
 
 Let's look at one of the other loops which is present in Python, called the **`while`** loop.
 
@@ -3707,7 +4070,12 @@ In this video, we:
 -   Understood the importance of a control variable being incremented inside the loop
 -   Observed differences between the working of a `while`, and a `for` loop
 
+<<<<<<< HEAD
 #### Step 07: Programming Exercise PE-LO-02 <a id="step-07-programming-exercise-pe-lo-02"></a>
+=======
+#### Step 07: Programming Exercise PE-LO-02 <a id="step-07-programming-exercise-pe-lo-02">
+</a>
+>>>>>>> master
 
 In the previous step, we were introduced to `while` loop. In this step, let's look at a couple of exercises using the `while` loop.
 
@@ -3738,7 +4106,12 @@ Typically, we use a `for` loop when we know how many times the loop will be exec
 
 If we do not know, how many times a loop will run, `while` is a better option.
 
+<<<<<<< HEAD
 #### Step 08: While Example <a id="step-08-while-example"></a>
+=======
+#### Step 08: While Example <a id="step-08-while-example">
+</a>
+>>>>>>> master
 
 Earlier we used `if` statement to implement a solution for this:
 

@@ -4,6 +4,7 @@ title: Rendering Elements With React
 weight: 0
 
 excerpt: lorem-ipsum
+<<<<<<< HEAD
 
 seo:
     title: ''
@@ -18,6 +19,16 @@ template: docs
 ---
 
 
+=======
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+template: docs
+---
+
+>>>>>>> master
 # Rendering Elements&#xA;&#xA;
 
 Elements are the smallest building blocks of React apps.

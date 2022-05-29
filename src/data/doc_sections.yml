@@ -1,13 +1,22 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 root_docs_path: /docs
 sections:
     - about
     - articles
     - audio
+<<<<<<< HEAD
     - archive
+=======
+>>>>>>> master
     - career
     - community
     - content
     - css
+<<<<<<< HEAD
     - docs
     - ds-algo
     - faq
@@ -19,12 +28,30 @@ sections:
     - js-tips
     - leetcode
     - netlify-cms-jamstack
+=======
+    - ds-algo
+    - docs
+    - faq
+    - git
+    - interact
+    - javascript
+    - js-tips
+    - interview
+    - leetcode
+>>>>>>> master
     - overflow
     - projects
     - python
     - quick-ref
     - react
     - reference
+<<<<<<< HEAD
     - tips
     - tools
     - tutorials
+=======
+    - tools
+    - tips
+    - tutorials
+    - typescript
+>>>>>>> master

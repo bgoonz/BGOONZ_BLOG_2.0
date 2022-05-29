@@ -33,7 +33,11 @@ Consider investing any money you're not planning on using for at least three yea
 
 ### 7. Make investing a continuing priority.
 
+<<<<<<< HEAD
 Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress. 
+=======
+Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress. 
+>>>>>>> master
 
 ### 8. Have a family conversation to prevent surprises.
 
@@ -47,4 +51,8 @@ You need life insurance when others in your life depend on your income for suppo
 
 Just as you go to the doctor every year for a physical, you should sit down annually and go over the items on this list. It's a good time to think about what you want your money to do for you this year, in five years, and in 10 years. You'll be surprised at how good tracking your progress will make you feel!
 
+<<<<<<< HEAD
 <!--EndFragment-->
+=======
+<!--EndFragment-->
+>>>>>>> master

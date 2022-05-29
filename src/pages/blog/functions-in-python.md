@@ -2,7 +2,11 @@
 title: Functions in Python
 subtitle: Functions in Python
 date: '2021-10-14'
+<<<<<<< HEAD
 thumb_image_alt: image of
+=======
+thumb_image_alt: image of pyhton
+>>>>>>> master
 excerpt: wubalubadubdub
 seo:
     title: 'Functions in Python'

@@ -11,11 +11,24 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 <br>
 <br>
 <h1>Leetcode </h1>
 <br>
+<<<<<<< HEAD
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
 
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/old_index.html" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+=======
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://web-dev-collaborative.github.io/Leetcode-JS-PY-MD/old_index.html" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
+>>>>>>> master

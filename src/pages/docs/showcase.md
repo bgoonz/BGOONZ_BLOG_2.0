@@ -99,7 +99,11 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
+<<<<<<< HEAD
             image: images/blog-form.png
+=======
+            image: images/-form.png
+>>>>>>> master
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
             image_alt: image of
@@ -131,8 +135,13 @@ sections:
             type: grid_item
             image: images/energetic-sunflower.png
           - title: Web Audio Workstation
+<<<<<<< HEAD
             title_url: lorem-ipsum
             image_alt: image of
+=======
+            title_url: web audio workstation
+            image_alt: image of web audio workstation
+>>>>>>> master
             content: |+
                 Made using jQuery and Vanilla JS
             actions:
@@ -151,7 +160,11 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
+<<<<<<< HEAD
             image: images/royal-kangaroo.JPG
+=======
+            image: images/mihir.jpg
+>>>>>>> master
 seo:
     title: Showcase
     extra:

@@ -1,5 +1,16 @@
 {
+<<<<<<< HEAD
     "github": {
         "enabled": true
     }
 }
+=======
+
+    "github": {
+
+        "enabled": true
+
+    }
+
+}
+>>>>>>> master

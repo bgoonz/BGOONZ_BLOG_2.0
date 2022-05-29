@@ -5,6 +5,7 @@ subtitle: Learn React
 excerpt: Below I list the most common terms, and their definitions, used when
   talking about React.
 date: 2022-04-18T20:21:35.309Z
+<<<<<<< HEAD
 image: https://webdevhub.us/images/successful-panda.gif
 image_position: top
 author: src/data/authors/bgoon.yaml
@@ -13,6 +14,23 @@ categories:
 show_author_bio: true
 related_posts:
   - src/pages/blog/using-the-dom.md
+=======
+image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+image_position: top
+author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/react.yaml
+  - src/data/categories/js.yaml
+tags:
+  - src/data/tags/react.yaml
+  - src/data/tags/javascript.yaml
+  - src/data/tags/links.yaml
+show_author_bio: true
+related_posts:
+  - src/pages/blog/using-the-dom.md
+  - src/pages/blog/react-semantics.md
+>>>>>>> master
 cmseditable: true
 ---
 

@@ -1,11 +1,22 @@
 ---
+<<<<<<< HEAD
+=======
+
+### Part 
+>>>>>>> master
 title: ExpressJS Apis
 subtitle: node & expressjs Overview
 date: '2021-07-26'
 thumb_image_alt: node and express js
+<<<<<<< HEAD
 excerpt: "## **Overview**  A\_**database schema**\_is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.  A well-designed database schema keeps the data well organized and can help ensure high-quality data.  Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer."
 seo:
     title: ''
+=======
+excerpt: "## **Overview**  A\_**database schema**\_is the shape of our database. It defines what tables well have, which columns should exist within the tables and any restrictions on each column.  A well-designed database schema keeps the data well organized and can help ensure high-quality data.  Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer."
+seo:
+    title: 'ExpressJS Apis'
+>>>>>>> master
     description: ''
     robots: []
     extra: []
@@ -14,11 +25,23 @@ template: post
 thumb_image: images/express.png
 ---
 
+<<<<<<< HEAD
 [SQL Tryit Editor v1.6](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where)
 
 ## A **database is a collection of data organized for easy retrieval and manipulation**
 
 We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related" data, are the oldest and most common type of database in use today.
+=======
+### Part 
+
+
+# A **database is a collection of data organized for easy retrieval and manipulation**
+
+
+[SQL Tryit Editor v1.6](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where)
+
+>We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related" data, are the oldest and most common type of database in use today.
+>>>>>>> master
 
 ### **Data Persistence**
 
@@ -26,25 +49,39 @@ A database is often necessary because our application or code requires data pers
 
 A familiar example of non-persistent data would be JavaScript objects and arrays, which reset each time the code runs.
 
+<<<<<<< HEAD
 ### **Relational Databases**
+=======
+#### **Relational Databases**
+>>>>>>> master
 
 In relational databases, **the data is stored in tabular format grouped into rows and columns** (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.
 
 These kinds of databases are relational because a _relation_ is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
 
+<<<<<<< HEAD
 ### **Tables**
+=======
+#### **Tables**
+>>>>>>> master
 
 ![tables](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e309a41-e107-46f3-81e7-154d732d3dcf/Untitled.png)
 
 **Below are some basic facts about tables:**
 
 - Tables organize data in rows and columns.
+<<<<<<< HEAD
 -
 - Each row in a table represents one distinct record.
 -
 - Each column represents a field or attribute t
 -
 - Fields should have a descriptive name and a data type appropriate for the attribute it represents.
+=======
+-  Each row in a table represents one distinct record.
+-  Each column represents a field or attribute t
+-  Fields should have a descriptive name and a data type appropriate for the attribute it represents.
+>>>>>>> master
 
 - Tables usually have more rows than columns.
 
@@ -52,9 +89,15 @@ These kinds of databases are relational because a _relation_ is a mathematical i
 
 - Foreign keys represent the relationships with other tables.
 
+<<<<<<< HEAD
 ## **Overview**
 
 ### SQL
+=======
+#### **Overview**
+
+#### SQL
+>>>>>>> master
 
 SQL is a standard language, which means that it almost certainly will be supported, no matter how your database is managed. That said, be aware that the SQL language can vary depending on database management tools. This lesson focuses on a set of core commands that never change. Learning the standard commands is an excellent introduction since the knowledge transfers between database products.
 
@@ -65,10 +108,15 @@ It is declarative and concise, which means there is a lot less to learn to use i
 When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we'll end up with the following sub-categories of SQL:
 
 - **Data Definition Language (DDL)**: used to modify database objects. Some examples are: CREATE TABLE, ALTER TABLE, and DROP TABLE.
+<<<<<<< HEAD
 -
 - **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: INSERT, UPDATE, and DELETE.
 -
 - **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is SELECT, and it falls in this category.
+=======
+-  **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: INSERT, UPDATE, and DELETE.
+-  **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is SELECT, and it falls in this category.
+>>>>>>> master
 
 - **Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are GRANT and REVOKE.
 
@@ -76,11 +124,19 @@ When learning SQL, it is helpful to understand that each command is designed for
 
 As a developer, you'll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
+<<<<<<< HEAD
 ## **Overview**
 
 The four SQL operations covered in this section will allow a user to **query**, **insert**, and **modify** a database table.
 
 ### **Query**
+=======
+#### **Overview**
+
+The four SQL operations covered in this section will allow a user to **query**, **insert**, and **modify** a database table.
+
+#### **Query**
+>>>>>>> master
 
 A **query** is a SQL statement used to retrieve data from a database. The command used to write queries is SELECT, and it is one of the most commonly used SQL commands.
 
@@ -98,13 +154,21 @@ We can extend the SELECT command's capabilities using clauses for things like fi
 
 It is possible to query multiple tables in a single query. But, in this section, we only perform queries on a single table. We will cover performing queries on multiple tables in another section.
 
+<<<<<<< HEAD
 ### **Insert**
+=======
+#### **Insert**
+>>>>>>> master
 
 To **insert** new data into a table, we'll use the INSERT command. The basic syntax for an INSERT statement is this:
 
 Using this formula, we can specify which values will be inserted into which fields like so:
 
+<<<<<<< HEAD
 ### **Modify**
+=======
+#### **Modify**
+>>>>>>> master
 
 **Modifying** a database consists of updating and removing records. For these operations, we'll use UPDATE and DELETE commands, respectively.
 
@@ -112,9 +176,15 @@ The basic syntax for an UPDATE statement is:
 
 The basic syntax for a DELETE statement is:
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **Filtering results using WHERE clause**
+=======
+#### **Follow Along**
+
+#### **Filtering results using WHERE clause**
+>>>>>>> master
 
 When querying a database, the default result will be every entry in the given table. However, often, we are looking for a specific record or a set of records that meets certain criteria.
 
@@ -136,7 +206,11 @@ To select a single record, we can use a WHERE statement with a uniquely identify
 
 Other comparison operators also work in WHERE conditions, such as >, <, <=, and >=.
 
+<<<<<<< HEAD
 ### **Ordering results using the ORDER BY clause**
+=======
+#### **Ordering results using the ORDER BY clause**
+>>>>>>> master
 
 Query results are shown in the same order the data was inserted. To control how the data is sorted, we can use the ORDER BY clause. Let's see an example.
 
@@ -148,7 +222,11 @@ In this case, the results are sorted by the department in ascending order first 
 
 Note that the WHERE clause should come after the FROM clause. The ORDER BY clause always goes last.
 
+<<<<<<< HEAD
 ### **Limiting results using the LIMIT clause**
+=======
+#### **Limiting results using the LIMIT clause**
+>>>>>>> master
 
 When we wish to see only a limited number of records, we can use a LIMIT clause.
 
@@ -156,25 +234,41 @@ The following returns the first ten records in the products table:
 
 LIMIT clauses are often used in conjunction with ORDER BY. The following shows us the five cheapest products:
 
+<<<<<<< HEAD
 ### **Inserting data using INSERT**
+=======
+#### **Inserting data using INSERT**
+>>>>>>> master
 
 An insert statement adds a new record to the database. All non-null fields must be listed out in the same order as their values. Some fields, like ids and timestamps, may be auto-generated and do not need to be included in an INSERT statement.
 
 The values in an insert statement must not violate any restrictions and constraints that the database has in place, such as expected datatypes. We will learn more about constraints and schema design in a later section.
 
+<<<<<<< HEAD
 ### **Modifying recording using UPDATE**
+=======
+#### **Modifying recording using UPDATE**
+>>>>>>> master
 
 When modifying a record, we identify a single record or a set of records to update using a WHERE clause. Then we can set the new value(s) in place.
 
 Technically the WHERE clause is not required, but leaving it off would result in every record within the table receiving the update.
 
+<<<<<<< HEAD
 ### **Removing records using DELETE**
+=======
+#### **Removing records using DELETE**
+>>>>>>> master
 
 When removing a record or set of records, we need only identify which record(s) to remove using a WHERE clause:
 
 Once again, the WHERE clause is not required, but leaving it off would remove every record in the table, so it's essential.
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 Raw SQL is a critical baseline skill. However, Node developers generally use an **Object Relational Mapper (ORM)** or **query builder** to write database commands in a backend codebase. Both **ORMs** and **query builders** are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
 
@@ -186,9 +280,15 @@ We could use a query builder to write the same logic in JavaScript:
 
 We will use a **query builder** called [knex.js (Links to an external site.)](https://knexjs.org/).
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **Knex Setup**
+=======
+#### **Follow Along**
+
+#### **Knex Setup**
+>>>>>>> master
 
 To use Knex in a repository, we'll need to add two libraries:
 
@@ -204,7 +304,11 @@ Once Knex is configured, we can import the above config file anywhere in our cod
 
 The db object provides methods that allow us to begin building queries.
 
+<<<<<<< HEAD
 ### **SELECT using Knex**
+=======
+#### **SELECT using Knex**
+>>>>>>> master
 
 In Knex, the equivalent of SELECT \* FROM users is:
 
@@ -220,13 +324,21 @@ This method will resolve to an array containing a single entry like so: \[{ id: 
 
 Using this, we might add a GET endpoint where a specific user:
 
+<<<<<<< HEAD
 ### **INSERT using Knex**
+=======
+#### **INSERT using Knex**
+>>>>>>> master
 
 In Knex, the equivalent of INSERT INTO users (name, age) VALUES ('Eva', 32) is:
 
 The insert method in Knex will resolve to an array containing the newly created id for that user like so: \[3].
 
+<<<<<<< HEAD
 ### **UPDATE using Knex**
+=======
+#### **UPDATE using Knex**
+>>>>>>> master
 
 In knex, the equivalent of UPDATE users SET name='Ava', age=33 WHERE id=3; is:
 
@@ -234,12 +346,17 @@ Note that the where method comes before update, unlike in SQL.
 
 Update will resolve to a count of rows updated.
 
+<<<<<<< HEAD
 ### **DELETE using Knex**
+=======
+#### **DELETE using Knex**
+>>>>>>> master
 
 In Knex, the equivalent of DELETE FROM users WHERE age=33; is:
 
 Once again, the where must come before the del. This method will resolve to a count of records removed.
 
+<<<<<<< HEAD
 # Day #2
 
 ## **Overview**
@@ -249,6 +366,20 @@ SQLlite Studio is an application that allows us to create, open, view, and modif
 ## **Follow Along**
 
 ### **What is a DBMS?**
+=======
+
+---
+
+### Part    2
+
+#### **Overview**
+
+SQLlite Studio is an application that allows us to create, open, view, and modify SQLite databases. To fully understand what SQLite Studio is and how it works, we must also understand the concept of the Database Management Systems (DBMS).
+
+#### **Follow Along**
+
+#### **What is a DBMS?**
+>>>>>>> master
 
 To manage digital databases we use specialized software called **D**ata**B**ase **M**anagement **S**ystems (DBMS). These systems typically run on servers and are managed by **D**ata**B**ase **A**dministrators (DBAs).
 
@@ -258,7 +389,11 @@ Choosing a DBMS determines everything from how you set up your database, to wher
 
 In other words, you can expect SELECT, UPDATE, INSERT, WHERE , and the like to be the same across all DBMSs, but the subtleties of the language may vary.
 
+<<<<<<< HEAD
 ### **What is SQLite?**
+=======
+#### **What is SQLite?**
+>>>>>>> master
 
 **SQLite** is the DBMS, as the name suggests, it is a more lightweight system and thus easier to get set up than some others.
 
@@ -266,7 +401,11 @@ SQLite allows us to store databases as single files. SQLite projects have a .db3
 
 SQLite is _not a database_ (like relational, graph, or document are databases) but rather _a database management system_.
 
+<<<<<<< HEAD
 ### **Opening an existing database in SQLite Studio**
+=======
+#### **Opening an existing database in SQLite Studio**
+>>>>>>> master
 
 One useful visual interface we might use with a SQLite database is called **SQLite Studio**. [Install SQLITE Studio here. (Links to an external site.)](https://sqlitestudio.pl/)
 
@@ -274,7 +413,11 @@ Once installed, we can use SQLite Studio to open any .db3 file from a previous l
 
 For a more detailed look at SQLite Studio, follow along in the video above.
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 A **database schema** is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
 
@@ -282,15 +425,23 @@ A well-designed database schema keeps the data well organized and can help ensur
 
 Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer.
 
+<<<<<<< HEAD
 ## **Follow Along**
+=======
+#### **Follow Along**
+>>>>>>> master
 
 For a look at schema design in SQLite Studio, follow along in the video above.
 
 When designing a single table, we need to ask three things:
 
 - What fields (or columns) are present?
+<<<<<<< HEAD
 -
 - What type of data do we expect for each field?
+=======
+-  What type of data do we expect for each field?
+>>>>>>> master
 
 - Are there other restrictions needed for each column?
 
@@ -298,21 +449,34 @@ Looking at the following schema diagram for an accounts table, we can the answer
 
 [Untitled](https://www.notion.so/9790405dda624818822293a383eec2d2)
 
+<<<<<<< HEAD
 ### **Table Fields**
+=======
+#### **Table Fields**
+>>>>>>> master
 
 Choosing which fields to include in a table is relatively straight forward. What information needs to be tracked regarding this resource? In the real world, this is determined by the intended use of the product or app.
 
 However, this is one requirement every table should satisfy: a **primary key**. A primary key is a way to identify each entry in the database uniquely. It is most often represented as a auto-incrementing integer called id or \[tablename]Id.
 
+<<<<<<< HEAD
 ### **Datatypes**
+=======
+#### **Datatypes**
+>>>>>>> master
 
 Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:
 
 - **Null:** Missing or unknown information.
+<<<<<<< HEAD
 -
 - **Integer:** Whole numbers.
 -
 - **Real:** Any number, including decimals.
+=======
+-  **Integer:** Whole numbers.
+-  **Real:** Any number, including decimals.
+>>>>>>> master
 
 - **Text:** Character data.
 
@@ -320,25 +484,42 @@ Each field must also have a specified datatype. The datatype available depends o
 
 Any data inserted into the table must match the datatypes determined in schema design.
 
+<<<<<<< HEAD
 ### **Constraints**
+=======
+#### **Constraints**
+>>>>>>> master
 
 Beyond datatypes, we may add additional **constraints** on each field. Some examples include:
 
 - **Not Null:** The field cannot be left empty
+<<<<<<< HEAD
 -
 - **Unique:** No two records can have the same value in this field
 -
 - **Primary key:** - Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
+=======
+-  **Unique:** No two records can have the same value in this field
+-  **Primary key:** - Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
+>>>>>>> master
 
 - **Default:** - Sets a default value if none is provided.
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
+<<<<<<< HEAD
 ### **Multi-Table Design**
 
 Another critical component of schema design is to understand how different tables relate to each other. This will be covered in later lesson.
 
 ## **Overview**
+=======
+#### **Multi-Table Design**
+
+Another critical component of schema design is to understand how different tables relate to each other. This will be covered in later lesson.
+
+#### **Overview**
+>>>>>>> master
 
 Knex provides a **schema builder**, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.
 
@@ -346,15 +527,25 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A database migration describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **Knex Cli**
+=======
+#### **Follow Along**
+
+#### **Knex Cli**
+>>>>>>> master
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with npm install -g knex.
 
 This allows you to use Knex commands within any repo that has knex as a local dependency. If you have any issues with this global install, you can use the npx knex command instead.
 
+<<<<<<< HEAD
 ### **Initializing Knex**
+=======
+#### **Initializing Knex**
+>>>>>>> master
 
 To start, add the knex and sqlite3 libraries to your repository.
 
@@ -370,7 +561,11 @@ We'll need to update the location (or desired location) of the database as well 
 
 Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.
 
+<<<<<<< HEAD
 ### **Knex Migrations**
+=======
+#### **Knex Migrations**
+>>>>>>> master
 
 Once our knexfile is set up, we can begin creating **migrations**. Though it's not required, we are going to add an addition option to the config object to specify a directory for the migration files.
 
@@ -394,7 +589,11 @@ knex migrate:latest
 
 Note if the database does not exist, this command will auto-generate one. We can use SQLite Studio to confirm that the accounts table has been created.
 
+<<<<<<< HEAD
 ### **Changes and Rollbacks**
+=======
+#### **Changes and Rollbacks**
+>>>>>>> master
 
 If later down the road, we realize you need to update your schema, you shouldn't edit the migration file. Instead, you will want to create a new migration with the command:
 
@@ -412,7 +611,11 @@ Finally, we are free to rerun that file with knex migrate latest.
 
 **NOTE**: A rollback should not be used to edit an old migration file once that file has accepted into a main branch. However, an entire team may use a rollback to return to a previous version of a database.
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 Knex provides a **schema builder**, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.
 
@@ -420,15 +623,25 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A database migration describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **Knex Cli**
+=======
+#### **Follow Along**
+
+#### **Knex Cli**
+>>>>>>> master
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with npm install -g knex.
 
 This allows you to use Knex commands within any repo that has knex as a local dependency. If you have any issues with this global install, you can use the npx knex command instead.
 
+<<<<<<< HEAD
 ### **Initializing Knex**
+=======
+#### **Initializing Knex**
+>>>>>>> master
 
 To start, add the knex and sqlite3 libraries to your repository.
 
@@ -444,7 +657,11 @@ We'll need to update the location (or desired location) of the database as well 
 
 Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.
 
+<<<<<<< HEAD
 ### **Knex Migrations**
+=======
+#### **Knex Migrations**
+>>>>>>> master
 
 Once our knexfile is set up, we can begin creating **migrations**. Though it's not required, we are going to add an addition option to the config object to specify a directory for the migration files.
 
@@ -468,7 +685,11 @@ knex migrate:latest
 
 Note if the database does not exist, this command will auto-generate one. We can use SQLite Studio to confirm that the accounts table has been created.
 
+<<<<<<< HEAD
 ### **Changes and Rollbacks**
+=======
+#### **Changes and Rollbacks**
+>>>>>>> master
 
 If later down the road, we realize you need to update your schema, you shouldn't edit the migration file. Instead, you will want to create a new migration with the command:
 
@@ -486,11 +707,19 @@ Finally, we are free to rerun that file with knex migrate latest.
 
 **NOTE**: A rollback should not be used to edit an old migration file once that file has accepted into a main branch. However, an entire team may use a rollback to return to a previous version of a database.
 
+<<<<<<< HEAD
 ## **Overview**
 
 Often we want to pre-populate our database with sample data for testing. **Seeds** allow us to add and reset sample data easily.
 
 ## **Follow Along**
+=======
+#### **Overview**
+
+Often we want to pre-populate our database with sample data for testing. **Seeds** allow us to add and reset sample data easily.
+
+#### **Follow Along**
+>>>>>>> master
 
 The Knex command-line tool offers a way to **seed** our database; in other words, pre-populate our tables.
 
@@ -512,6 +741,7 @@ knex seed:run
 
 You can now use SQLite Studio to confirm that the accounts table has two entries.
 
+<<<<<<< HEAD
 # Day #3
 
 ## **Overview**
@@ -519,6 +749,18 @@ You can now use SQLite Studio to confirm that the accounts table has two entries
 **Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
 
 ## **Follow Along**
+=======
+
+---
+
+### Part    3
+
+#### **Overview**
+
+**Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
+
+#### **Follow Along**
+>>>>>>> master
 
 Consider the following farms and ranchers tables.
 
@@ -532,19 +774,29 @@ If we could only see the ranchers table, we would know that John, Jane, and Jen 
 
 Now that we understand the basics of querying data from a single table, let's move on to selecting data from multiple tables using JOIN operations.
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 We can use a JOIN to combine query data from multiple tables using a single SELECT statement.
 
 There are different types of joins; some are listed below:
 
 - inner joins.
+<<<<<<< HEAD
 -
 - outer joins.
 -
 - left joins.
 -
 - right joins.
+=======
+-  outer joins.
+-  left joins.
+-  right joins.
+>>>>>>> master
 
 - cross joins.
 
@@ -554,7 +806,11 @@ There are different types of joins; some are listed below:
 
 Using joins requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
+<<<<<<< HEAD
 This query will return the data from both tables for every instance where the ON condition is true. If there are employees with no value for department_id or where the value stored in the field does not correspond to an existing id in the_ departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
+=======
+This query will return the data from both tables for every instance where the ON condition is true. If there are employees with no value for department_id or where the value stored in the field does not correspond to an existing id in the_departments_table, then that record will NOT be returned. In a similar fashion, any records from the_departments_table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
+>>>>>>> master
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -564,6 +820,7 @@ There are several ways of writing joins, but the one shown here should work on a
 
 The syntax for performing a similar join using Knex is as follows:
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 A good explanation of how the different types of joins can be seen [in this article from w3resource.com (Links to an external site.)](https://www.w3resource.com/sql/joins/sql-joins.php).
@@ -573,11 +830,23 @@ A good explanation of how the different types of joins can be seen [in this arti
 An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.
 
 # How to Join two tables in SQL?
+=======
+#### **Follow Along**
+
+A good explanation of how the different types of joins can be seen [in this article from w3resource.com (Links to an external site.)](https://www.w3resource.com/sql/joins/sql-joins.php).
+
+#### What is SQL Joins?
+
+An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.
+
+#### How to Join two tables in SQL?
+>>>>>>> master
 
 A JOIN works on two or more tables if they have at least one common field and have a relationship between them.
 
 JOIN keeps the base tables (structure and data) unchanged.
 
+<<<<<<< HEAD
 # Join vs. Subquery
 
 - JOINs are faster than a subquery and it is very rare that the opposite.
@@ -589,6 +858,17 @@ JOIN keeps the base tables (structure and data) unchanged.
 - When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
 
 # SQL JOINS: EQUI JOIN and NON EQUI JOIN
+=======
+### Join vs. Subquery
+
+- JOINs are faster than a subquery and it is very rare that the opposite.
+-  In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this pro
+-  A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
+
+- When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
+
+### SQL JOINS: EQUI JOIN and NON EQUI JOIN
+>>>>>>> master
 
 The are two types of SQL JOINS - EQUI JOIN and NON EQUI JOIN
 
@@ -640,11 +920,19 @@ Copy
 
 Output:
 
+<<<<<<< HEAD
 ## **Overview**
 
 While we can write database code directly into our endpoints, best practices dictate that all database logic exists in separate, modular methods. These files containing database access helpers are often called **models**
 
 ## **Follow Along**
+=======
+#### **Overview**
+
+While we can write database code directly into our endpoints, best practices dictate that all database logic exists in separate, modular methods. These files containing database access helpers are often called **models**
+
+#### **Follow Along**
+>>>>>>> master
 
 To handle CRUD operations for a single resource, we would want to create a **model** (or database access file) containing the following methods:
 
@@ -660,16 +948,28 @@ Once all methods are written as desired, we can export them like so:
 
 There should no be knex code in the endpoints themselves.
 
+<<<<<<< HEAD
 # Day #4
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
 
 ## **Overview**
+=======
+
+---
+
+### Part    4
+
+![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
+
+#### **Overview**
+>>>>>>> master
 
 Normalization is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
 With objects, we're used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 **Data normalization** is a deep topic in database design. To begin thinking about it, we'll explore a few basic guidelines and some data examples that violate these rules.
@@ -681,12 +981,27 @@ With objects, we're used to _denormalized_ data, stored with ease of use and spe
 - No fields are repeated.
 -
 - All fields relate directly to the key data.
+=======
+#### **Follow Along**
+
+**Data normalization** is a deep topic in database design. To begin thinking about it, we'll explore a few basic guidelines and some data examples that violate these rules.
+
+#### **Normalization Guidelines**
+
+- Each record has a primary key.
+-  No fields are repeated.
+-  All fields relate directly to the key data.
+>>>>>>> master
 
 - Each field entry contains a single data point.
 
 - There are no redundant entries.
 
+<<<<<<< HEAD
 ### **Denormalized Data**
+=======
+#### **Denormalized Data**
+>>>>>>> master
 
 [Untitled](https://www.notion.so/19a01f68a659470fb85bbe6906fb4bad)
 
@@ -702,7 +1017,11 @@ Now we've solved the multiple fields issue, but we created repeating data (the f
 
 **When these issues begin arising in your schema design, it means that you should separate information into two or more tables.**
 
+<<<<<<< HEAD
 ### **Anomalies**
+=======
+#### **Anomalies**
+>>>>>>> master
 
 Obeying the above guidelines prevent **anomalies** in your database when inserting, updating, or deleting. For example, imagine if the revenue of Beech Ranch changed. With our denormalized schema, it may get updated in some records but not others:
 
@@ -712,27 +1031,45 @@ Similarly, if Beech Ranch shut down, there would be three (if not more) records 
 
 Thus a denormalized table opens the door for contradictory, confusing, and unusable data.
 
+<<<<<<< HEAD
 ## **Challenge**
+=======
+#### **Challenge**
+>>>>>>> master
 
 What issues does the following table have?
 
 [Untitled](https://www.notion.so/2793e8f6b70a47f48f9208779366e69e)
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 There are three types of relationships:
 
 - One to one.
+<<<<<<< HEAD
 -
 - One to many.
+=======
+-  One to many.
+>>>>>>> master
 
 - Many to many.
 
 Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **One to One Relationships**
+=======
+#### **Follow Along**
+
+#### **One to One Relationships**
+>>>>>>> master
 
 Imagine we are storing the financial projections for a series of farms.
 
@@ -751,12 +1088,20 @@ The farm_id is the foreign key that links farms and projections together.
 Notes about one-to-one relationships:
 
 - The foreign key should always have a unique constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.
+<<<<<<< HEAD
 -
 - The foreign key can be in either table. For example, we may have had a projection_id in the farms table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
 
 - You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
 
 ### **One to Many Relationships**
+=======
+-  The foreign key can be in either table. For example, we may have had a projection_id in the farms table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
+
+- You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
+
+#### **One to Many Relationships**
+>>>>>>> master
 
 Now imagine, we are storing the full-time ranchers employed at each farm. In this case, each rancher would only work at one farm however, each farm may have multiple ranchers.
 
@@ -765,8 +1110,12 @@ This is called a **one-to-many** relationship.
 This is the most common type of relationship between entities. Some other examples:
 
 - One customer can have many orders.
+<<<<<<< HEAD
 -
 - One user can have many posts.
+=======
+-  One user can have many posts.
+>>>>>>> master
 
 - One post can have many comments.
 
@@ -778,15 +1127,23 @@ Manage this type of relationship by adding a foreign key on the "many" table of 
 
 In a many-to-many relationship, the foreign key (in this case farm_id) should _not_ be unique.
 
+<<<<<<< HEAD
 ### **Many to Many Relationships**
+=======
+#### **Many to Many Relationships**
+>>>>>>> master
 
 If we want to track animals on a farm as well, we must explore the **many-to-many** relationship. A farm has multiple animals, and multiple of each type of animal is present at multiple different farms.
 
 Some other examples:
 
 - an order can have many products and the same product will appear in many orders.
+<<<<<<< HEAD
 -
 - a book can have more than one author, and an author can write more than one book.
+=======
+-  a book can have more than one author, and an author can write more than one book.
+>>>>>>> master
 
 To model this relationship, we need to introduce an **intermediary table** that holds foreign keys that reference the primary key on the related tables. We now have a farms, animals, and farm_animals table.
 
@@ -798,12 +1155,17 @@ To model this relationship, we need to introduce an **intermediary table** that 
 
 While each foreign key on the intermediary table is not unique, the combinations of keys should be unique.
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+#### **Overview**
+>>>>>>> master
 
 The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
 
 We have to consider the way that delete and updates through our API will impact related data.
 
+<<<<<<< HEAD
 ## **Follow Along**
 
 ### **Foreign Key Setup**
@@ -811,6 +1173,15 @@ We have to consider the way that delete and updates through our API will impact 
 In Knex, foreign key restrictions don't automatically work. Whenever using foreign keys in your schema, add the following code to your knexfile. This will prevent users from entering bad data into a foreign key column.
 
 ### **Migrations**
+=======
+#### **Follow Along**
+
+#### **Foreign Key Setup**
+
+In Knex, foreign key restrictions don't automatically work. Whenever using foreign keys in your schema, add the following code to your knexfile. This will prevent users from entering bad data into a foreign key column.
+
+#### **Migrations**
+>>>>>>> master
 
 Let's look at how we might track our farms and ranchers using Knex. In our migration file's up function, we would want to create two tables:
 
@@ -820,7 +1191,11 @@ In the down function, the opposite is true. We always want to drop a table with 
 
 In the case of a many-to-many relationship, the syntax for creating an intermediary table is identical, except for one additional piece. We need a way to make sure our combination of foreign keys is unique.
 
+<<<<<<< HEAD
 ### **Seeds**
+=======
+#### **Seeds**
+>>>>>>> master
 
 Order is also a concern when seeding. We want to create seeds in the **same** order we created our tables. In other words, don't create a seed with a foreign key, until that reference record exists.
 
@@ -832,7 +1207,11 @@ Run knex seed:make 00-cleanup and npm install knex-cleaner. Inside the cleanup s
 
 This removes all tables (excluding the two tables that track migrations) in the correct order before any seed files run.
 
+<<<<<<< HEAD
 ### **Cascading**
+=======
+#### **Cascading**
+>>>>>>> master
 
 If a user attempt to delete a record that is referenced by another record (such as attempting to delete Morton Ranch when entries in our ranchers table reference that record), by default, the database will block the action. The same thing can happen when updating a record when a foreign key reference.
 

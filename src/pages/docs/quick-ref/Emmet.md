@@ -82,7 +82,12 @@ Child items are created using `>`
 
     <ul>
       <li>
+<<<<<<< HEAD
         <p></p>
+=======
+        <p>
+</p>
+>>>>>>> master
       </li>
     </ul>
 
@@ -93,7 +98,12 @@ Sibling items are created using `+`
 `html>head+body`
 
     <html>
+<<<<<<< HEAD
     <head></head>
+=======
+    <head>
+</head>
+>>>>>>> master
     <body>
 
     </body>
@@ -106,11 +116,24 @@ Items can be multiplied by `*`
 `ul>li*5`
 
     <ul>
+<<<<<<< HEAD
       <li></li>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
+=======
+      <li>
+</li>
+      <li>
+</li>
+      <li>
+</li>
+      <li>
+</li>
+      <li>
+</li>
+>>>>>>> master
     </ul>
 
 ### Grouping
@@ -121,6 +144,7 @@ Items can be grouped together using `()`
 
     <table>
       <tr>
+<<<<<<< HEAD
         <th></th>
         <th></th>
         <th></th>
@@ -133,6 +157,30 @@ Items can be grouped together using `()`
         <t></t>
         <t></t>
         <t></t>
+=======
+        <th>
+</th>
+        <th>
+</th>
+        <th>
+</th>
+        <th>
+</th>
+        <th>
+</th>
+      </tr>
+      <tr>
+        <t>
+</t>
+        <t>
+</t>
+        <t>
+</t>
+        <t>
+</t>
+        <t>
+</t>
+>>>>>>> master
       </tr>
     </table>
 
@@ -142,17 +190,32 @@ Class and Id in Emmet can be done using `.` and `#`
 
 `div.heading`
 
+<<<<<<< HEAD
     <div class="heading"></div>
 
 `div#heading`
 
     <div id="heading"></div>
+=======
+    <div class="heading">
+</div>
+
+`div#heading`
+
+    <div id="heading">
+</div>
+>>>>>>> master
 
 ID and Class can also be combined together
 
 `div#heading.center`
 
+<<<<<<< HEAD
     <div id="heading" class="center"></div>
+=======
+    <div id="heading" class="center">
+</div>
+>>>>>>> master
 
 ### Adding Content inside tags
 
@@ -171,7 +234,12 @@ Attributes can be added using `[]`
 
 `a[href=https://?google.com data-toggle=something target=_blank]`
 
+<<<<<<< HEAD
     <a href="https://?google.com" data-toggle="something" target="_blank"></a>
+=======
+    <a href="https://?google.com" data-toggle="something" target="_blank">
+</a>
+>>>>>>> master
 
 ### Numbering
 
@@ -218,7 +286,12 @@ To start the numbering from specific number, use this way
 
 `form:post`
 
+<<<<<<< HEAD
     <form action="" method="post"></form>
+=======
+    <form action="" method="post">
+</form>
+>>>>>>> master
 
 `link:css`
 
@@ -230,9 +303,21 @@ To start the numbering from specific number, use this way
 
     <div class="navbar">
       <ul>
+<<<<<<< HEAD
         <li><a href="#">Item 3</a></li>
         <li><a href="#">Item 2</a></li>
         <li><a href="#">Item 1</a></li>
+=======
+        <li>
+<a href="#">Item 3</a>
+</li>
+        <li>
+<a href="#">Item 2</a>
+</li>
+        <li>
+<a href="#">Item 1</a>
+</li>
+>>>>>>> master
       </ul>
     </div>
 
@@ -279,6 +364,7 @@ Also use any options, pos:a/r/f
 
 You can also use these shorthands
 
+<<<<<<< HEAD
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
@@ -290,6 +376,29 @@ Or Checkout my personal Resource Site:
 
 <a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png" class="graf-image" />
+</figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
+
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
+
+Or Checkout my personal Resource Site:
+
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap">
+<strong>a/A-Student-Resources</strong>
+<br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
+>>>>>>> master
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/24758e628d37).
 

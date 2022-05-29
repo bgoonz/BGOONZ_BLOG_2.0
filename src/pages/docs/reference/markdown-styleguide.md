@@ -20,7 +20,12 @@ as well as examples of documents that break the rule and corrected
 versions of the examples. Any rule whose heading is ~~struck through~~ is
 deprecated, but still provided for backward-compatibility.
 
+<<<<<<< HEAD
 <a name="md001"></a>
+=======
+<a name="md001">
+</a>
+>>>>>>> master
 
 ## MD001 - Heading levels should only increment by one level at a time
 
@@ -60,7 +65,12 @@ Rationale: Headings represent the structure of a document and can be confusing
 when skipped - especially for accessibility scenarios. More information:
 <https://www.w3.org/WAI/tutorials/page-structure/headings/>.
 
+<<<<<<< HEAD
 <a name="md002"></a>
+=======
+<a name="md002">
+</a>
+>>>>>>> master
 
 ## ~~MD002 - First heading should be a top-level heading~~
 
@@ -95,7 +105,12 @@ cases where an h1 is added externally.
 Rationale: The top-level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
+<<<<<<< HEAD
 <a name="md003"></a>
+=======
+<a name="md003">
+</a>
+>>>>>>> master
 
 ## MD003 - Heading style
 
@@ -142,7 +157,12 @@ that the usage is consistent within the document.
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md004"></a>
+=======
+<a name="md004">
+</a>
+>>>>>>> master
 
 ## MD004 - Unordered list style
 
@@ -194,7 +214,12 @@ dash:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md005"></a>
+=======
+<a name="md005">
+</a>
+>>>>>>> master
 
 ## MD005 - Inconsistent indentation for list items at the same level
 
@@ -242,7 +267,12 @@ the same ending column:
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
+<<<<<<< HEAD
 <a name="md006"></a>
+=======
+<a name="md006">
+</a>
+>>>>>>> master
 
 ## ~~MD006 - Consider starting bulleted lists at the beginning of the line~~
 
@@ -291,7 +321,12 @@ or the tab key is used to indent. Starting a list 1 space in means that the
 indent of the first nested list is less than the indent of the second level (3
 characters if you use 4 space tabs, or 1 character if you use 2 space tabs).
 
+<<<<<<< HEAD
 <a name="md007"></a>
+=======
+<a name="md007">
+</a>
+>>>>>>> master
 
 ## MD007 - Unordered list indentation
 
@@ -338,7 +373,12 @@ and <http://support.markedapp.com/discussions/problems/21-sub-lists-not-indentin
 
 Note: See [Prettier.md](Prettier.md) for compatibility information.
 
+<<<<<<< HEAD
 <a name="md009"></a>
+=======
+<a name="md009">
+</a>
+>>>>>>> master
 
 ## MD009 - Trailing spaces
 
@@ -389,7 +429,12 @@ to allow this (even when `strict` is `true`):
 Rationale: Except when being used to create a line break, trailing whitespace
 has no purpose and does not affect the rendering of content.
 
+<<<<<<< HEAD
 <a name="md010"></a>
+=======
+<a name="md010">
+</a>
+>>>>>>> master
 
 ## MD010 - Hard tabs
 
@@ -435,7 +480,12 @@ parameter to the number x. The default value would be 1.
 Rationale: Hard tabs are often rendered inconsistently by different editors and
 can be harder to work with than spaces.
 
+<<<<<<< HEAD
 <a name="md011"></a>
+=======
+<a name="md011">
+</a>
+>>>>>>> master
 
 ## MD011 - Reversed link syntax
 
@@ -468,7 +518,12 @@ For (example)[^1]
 
 Rationale: Reversed links are not rendered as usable links.
 
+<<<<<<< HEAD
 <a name="md012"></a>
+=======
+<a name="md012">
+</a>
+>>>>>>> master
 
 ## MD012 - Multiple consecutive blank lines
 
@@ -506,7 +561,12 @@ consecutive blank lines.
 Rationale: Except in a code block, blank lines serve no purpose and do not
 affect the rendering of content.
 
+<<<<<<< HEAD
 <a name="md013"></a>
+=======
+<a name="md013">
+</a>
+>>>>>>> master
 
 ## MD013 - Line length
 
@@ -557,7 +617,12 @@ rules. Still, some languages do not lend themselves to short lines.
 Rationale: Extremely long lines can be difficult to work with in some editors.
 More information: <https://cirosantilli.com/markdown-style-guide#line-wrapping>.
 
+<<<<<<< HEAD
 <a name="md014"></a>
+=======
+<a name="md014">
+</a>
+>>>>>>> master
 
 ## MD014 - Dollar signs used before commands without showing output
 
@@ -614,7 +679,12 @@ are omitted when they are not needed. See
 <https://cirosantilli.com/markdown-style-guide#dollar-signs-in-shell-code>
 for more information.
 
+<<<<<<< HEAD
 <a name="md018"></a>
+=======
+<a name="md018">
+</a>
+>>>>>>> master
 
 ## MD018 - No space after hash on atx style heading
 
@@ -644,7 +714,12 @@ space:
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
+<<<<<<< HEAD
 <a name="md019"></a>
+=======
+<a name="md019">
+</a>
+>>>>>>> master
 
 ## MD019 - Multiple spaces after hash on atx style heading
 
@@ -675,7 +750,12 @@ space:
 Rationale: Extra space has no purpose and does not affect the rendering of
 content.
 
+<<<<<<< HEAD
 <a name="md020"></a>
+=======
+<a name="md020">
+</a>
+>>>>>>> master
 
 ## MD020 - No space inside hashes on closed atx style heading
 
@@ -707,7 +787,12 @@ Note: this rule will fire if either side of the heading is missing spaces.
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
+<<<<<<< HEAD
 <a name="md021"></a>
+=======
+<a name="md021">
+</a>
+>>>>>>> master
 
 ## MD021 - Multiple spaces inside hashes on closed atx style heading
 
@@ -741,7 +826,12 @@ spaces.
 Rationale: Extra space has no purpose and does not affect the rendering of
 content.
 
+<<<<<<< HEAD
 <a name="md022"></a>
+=======
+<a name="md022">
+</a>
+>>>>>>> master
 
 ## MD022 - Headings should be surrounded by blank lines
 
@@ -789,7 +879,12 @@ Rationale: Aside from aesthetic reasons, some parsers, including `kramdown`, wil
 not parse headings that don't have a blank line before, and will parse them as
 regular text.
 
+<<<<<<< HEAD
 <a name="md023"></a>
+=======
+<a name="md023">
+</a>
+>>>>>>> master
 
 ## MD023 - Headings must start at the beginning of the line
 
@@ -818,7 +913,12 @@ Some text
 Rationale: Headings that don't start at the beginning of the line will not be
 parsed as headings, and will instead appear as regular text.
 
+<<<<<<< HEAD
 <a name="md024"></a>
+=======
+<a name="md024">
+</a>
+>>>>>>> master
 
 ## MD024 - Multiple headings with the same content
 
@@ -864,7 +964,12 @@ in changelogs):
 Rationale: Some markdown parsers generate anchors for headings based on the
 heading name; headings with the same content can cause problems with that.
 
+<<<<<<< HEAD
 <a name="md025"></a>
+=======
+<a name="md025">
+</a>
+>>>>>>> master
 
 ## MD025 - Multiple top-level headings in the same document
 
@@ -911,7 +1016,12 @@ serves as the title for the document. If this convention is in use, then there
 can not be more than one title for the document, and the entire document
 should be contained within this heading.
 
+<<<<<<< HEAD
 <a name="md026"></a>
+=======
+<a name="md026">
+</a>
+>>>>>>> master
 
 ## MD026 - Trailing punctuation in heading
 
@@ -950,7 +1060,12 @@ like `&copy;`, `&#169;`, and `&#x000A9;` is ignored by this rule.
 Rationale: Headings are not meant to be full sentences. More information:
 <https://cirosantilli.com/markdown-style-guide#punctuation-at-the-end-of-headers>
 
+<<<<<<< HEAD
 <a name="md027"></a>
+=======
+<a name="md027">
+</a>
+>>>>>>> master
 
 ## MD027 - Multiple spaces after blockquote symbol
 
@@ -977,7 +1092,12 @@ To fix, remove any extraneous space:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md028"></a>
+=======
+<a name="md028">
+</a>
+>>>>>>> master
 
 ## MD028 - Blank line inside blockquote
 
@@ -1020,7 +1140,12 @@ Rationale: Some markdown parsers will treat two blockquotes separated by one
 or more blank lines as the same blockquote, while others will treat them as
 separate blockquotes.
 
+<<<<<<< HEAD
 <a name="md029"></a>
+=======
+<a name="md029">
+</a>
+>>>>>>> master
 
 ## MD029 - Ordered list item prefix
 
@@ -1116,7 +1241,12 @@ item as intended:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md030"></a>
+=======
+<a name="md030">
+</a>
+>>>>>>> master
 
 ## MD030 - Spaces after list markers
 
@@ -1193,7 +1323,12 @@ Rationale: Violations of this rule can lead to improperly rendered content.
 
 Note: See [Prettier.md](Prettier.md) for compatibility information.
 
+<<<<<<< HEAD
 <a name="md031"></a>
+=======
+<a name="md031">
+</a>
+>>>>>>> master
 
 ## MD031 - Fenced code blocks should be surrounded by blank lines
 
@@ -1251,7 +1386,12 @@ Disabling this behavior for lists can be useful if it is necessary to create a
 Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse fenced code blocks that don't have blank lines before and after them.
 
+<<<<<<< HEAD
 <a name="md032"></a>
+=======
+<a name="md032">
+</a>
+>>>>>>> master
 
 ## MD032 - Lists should be surrounded by blank lines
 
@@ -1293,7 +1433,12 @@ Some text
 Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse lists that don't have blank lines before and after them.
 
+<<<<<<< HEAD
 <a name="md033"></a>
+=======
+<a name="md033">
+</a>
+>>>>>>> master
 
 ## MD033 - Inline HTML
 
@@ -1321,7 +1466,12 @@ Rationale: Raw HTML is allowed in markdown, but this rule is included for
 those who want their documents to only include "pure" markdown, or for those
 who are rendering markdown documents in something other than HTML.
 
+<<<<<<< HEAD
 <a name="md034"></a>
+=======
+<a name="md034">
+</a>
+>>>>>>> master
 
 ## MD034 - Bare URL used
 
@@ -1368,7 +1518,12 @@ The use of quotes around a bare link will _not_ trigger this rule, either:
 Rationale: Without angle brackets, the URL isn't converted into a link by many
 markdown parsers.
 
+<<<<<<< HEAD
 <a name="md035"></a>
+=======
+<a name="md035">
+</a>
+>>>>>>> master
 
 ## MD035 - Horizontal rule style
 
@@ -1410,7 +1565,12 @@ is allowed.
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md036"></a>
+=======
+<a name="md036">
+</a>
+>>>>>>> master
 
 ## MD036 - Emphasis used instead of a heading
 
@@ -1456,7 +1616,12 @@ Rationale: Using emphasis instead of a heading prevents tools from inferring
 the structure of a document. More information:
 <https://cirosantilli.com/markdown-style-guide#emphasis-vs-headers>.
 
+<<<<<<< HEAD
 <a name="md037"></a>
+=======
+<a name="md037">
+</a>
+>>>>>>> master
 
 ## MD037 - Spaces inside emphasis markers
 
@@ -1496,7 +1661,12 @@ aren't surrounded by spaces. This rule attempts to detect where
 they were surrounded by spaces, but it appears that emphasized text was
 intended by the author.
 
+<<<<<<< HEAD
 <a name="md038"></a>
+=======
+<a name="md038">
+</a>
+>>>>>>> master
 
 ## MD038 - Spaces inside code span elements
 
@@ -1537,7 +1707,12 @@ markers from an embedded backtick:
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
+<<<<<<< HEAD
 <a name="md039"></a>
+=======
+<a name="md039">
+</a>
+>>>>>>> master
 
 ## MD039 - Spaces inside link text
 
@@ -1561,7 +1736,12 @@ To fix this, remove the spaces surrounding the link text:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md040"></a>
+=======
+<a name="md040">
+</a>
+>>>>>>> master
 
 ## MD040 - Fenced code blocks should have a language specified
 
@@ -1610,7 +1790,12 @@ Rationale: Specifying a language improves content rendering by using the
 correct syntax highlighting for code. More information:
 <https://cirosantilli.com/markdown-style-guide#option-code-fenced>.
 
+<<<<<<< HEAD
 <a name="md041"></a>
+=======
+<a name="md041">
+</a>
+>>>>>>> master
 
 ## MD041 - First line in a file should be a top-level heading
 
@@ -1640,7 +1825,13 @@ Because it is common for projects on GitHub to use an image for the heading of
 permitted by this rule. For example:
 
 ```markdown
+<<<<<<< HEAD
 <h1 align="center"><img src="https://placekitten.com/300/150"/></h1>
+=======
+<h1 align="center">
+<img src="https://placekitten.com/300/150"/>
+</h1>
+>>>>>>> master
 
 This is a file with a top-level HTML heading
 ```
@@ -1657,7 +1848,12 @@ To disable the use of front matter by this rule, specify `""` for `front_matter_
 Rationale: The top-level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
+<<<<<<< HEAD
 <a name="md042"></a>
+=======
+<a name="md042">
+</a>
+>>>>>>> master
 
 ## MD042 - No empty links
 
@@ -1691,7 +1887,12 @@ But non-empty fragments will not:
 
 Rationale: Empty links do not lead anywhere and therefore don't function as links.
 
+<<<<<<< HEAD
 <a name="md043"></a>
+=======
+<a name="md043">
+</a>
+>>>>>>> master
 
 ## MD043 - Required heading structure
 
@@ -1754,7 +1955,12 @@ simplicity, a file may use any supported heading style.
 Rationale: Projects may wish to enforce a consistent document structure across
 a set of similar content.
 
+<<<<<<< HEAD
 <a name="md044"></a>
+=======
+<a name="md044">
+</a>
+>>>>>>> master
 
 ## MD044 - Proper names should have the correct capitalization
 
@@ -1782,7 +1988,12 @@ Set the `code_blocks` parameter to `false` to disable this rule for code blocks.
 
 Rationale: Incorrect capitalization of proper names is usually a mistake.
 
+<<<<<<< HEAD
 <a name="md045"></a>
+=======
+<a name="md045">
+</a>
+>>>>>>> master
 
 ## MD045 - Images should have alternate text (alt text)
 
@@ -1815,7 +2026,12 @@ Guidance for writing alternate text is available from the [W3C](https://www.w3.o
 Rationale: Alternate text is important for accessibility and describes the
 content of an image for people who may not be able to see it.
 
+<<<<<<< HEAD
 <a name="md046"></a>
+=======
+<a name="md046">
+</a>
+>>>>>>> master
 
 ## MD046 - Code block style
 
@@ -1854,7 +2070,12 @@ that usage be consistent within the document (`consistent`).
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
+<<<<<<< HEAD
 <a name="md047"></a>
+=======
+<a name="md047">
+</a>
+>>>>>>> master
 
 ## MD047 - Files should end with a single newline character
 
@@ -1887,7 +2108,12 @@ This file ends with a newline.
 Rationale: Some programs have trouble with files that do not end with a newline.
 More information: <https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file>.
 
+<<<<<<< HEAD
 <a name="md048"></a>
+=======
+<a name="md048">
+</a>
+>>>>>>> master
 
 ## MD048 - Code fence style
 

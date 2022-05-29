@@ -1,5 +1,6 @@
 ---
 title: README
+<<<<<<< HEAD
 
 subtitle: for this website
 
@@ -14,6 +15,15 @@ seo:
 
 template: page
 
+=======
+subtitle: for this website
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+template: page
+>>>>>>> master
 image: images/bgoonzblog20-a6a3bfc3.png
 ---
 
@@ -433,6 +443,7 @@ This page contains links that give the impression that some of the site contents
 
 # Sitemap
 
+<<<<<<< HEAD
 - [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)
 
 - [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
@@ -572,11 +583,153 @@ This page contains links that give the impression that some of the site contents
 - [/docs/medium/medium-links/](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
 
 - [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)
+=======
+-   [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)
+
+-   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
+
+-   [/](https://bgoonz-blog.netlify.app/)
+
+-   [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
+
+-   [/blog/](https://bgoonz-blog.netlify.app/blog/)
+
+-   [/review/](https://bgoonz-blog.netlify.app/review/)
+
+-   [/blog/blog-archive/](https://bgoonz-blog.netlify.app/blog/blog-archive/)
+
+-   [/blog/my-medium/](https://bgoonz-blog.netlify.app/blog/my-medium/)
+
+-   [/blog/blogwcomments/](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
+
+-   [/blog/data-structures/](https://bgoonz-blog.netlify.app/blog/data-structures/)
+
+-   [/docs/gallery/](https://bgoonz-blog.netlify.app/docs/gallery/)
+
+-   [/blog/python-for-js-dev/](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+
+-   [/blog/platform-docs/](https://bgoonz-blog.netlify.app/blog/platform-docs/)
+
+-   [/docs/sitemap/](https://bgoonz-blog.netlify.app/docs/sitemap/)
+
+-   [/docs/about/me/](https://bgoonz-blog.netlify.app/docs/about/me/)
+
+-   [/blog/python-resources/](https://bgoonz-blog.netlify.app/blog/python-resources/)
+
+-   [/docs/about/resume/](https://bgoonz-blog.netlify.app/docs/about/resume/)
+
+-   [/docs/](https://preview--bgoonz-b2d7c.stackbit.https://bgoonz-blog.netlify.app/log/web-scraping/)
+
+-   [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)
+
+-   [/docs/articles/algo/](https://bgoonz-blog.netlify.app/docs/articles/algo/)
+
+-   [/docs/articles/install/](https://bgoonz-blog.netlify.app/docs/articles/install/)
+
+-   [/docs/articles/](https://bgoonz-blog.netlify.app/docs/articles/)
+
+-   [/docs/articles/gallery/](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
+
+-   [/docs/articles/intro/](https://bgoonz-blog.netlify.app/docs/articles/intro/)
+
+-   [/docs/articles/basic-web-dev/](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+
+-   [/docs/articles/reading-files/](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
+
+-   [/docs/articles/writing-files/](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
+
+-   [/docs/audio/audio/](https://bgoonz-blog.netlify.app/docs/audio/audio/)
+
+-   [/docs/content/projects/](https://bgoonz-blog.netlify.app/docs/content/projects/)
+
+-   [/docs/audio/terms/](https://bgoonz-blog.netlify.app/docs/audio/terms/)
+
+-   [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)
+
+-   [/docs/community/](https://bgoonz-blog.netlify.app/docs/community/)
+
+-   [/docs/articles/resources/](https://bgoonz-blog.netlify.app/docs/articles/resources/)
+
+-   [/docs/content/](https://bgoonz-blog.netlify.app/docs/content/)
+
+-   [/docs/docs/git-repos/](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
+
+-   [/docs/content/trouble-shooting/](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
+
+-   [/docs/articles/python/](https://bgoonz-blog.netlify.app/docs/articles/python/)
+
+-   [/docs/interact/clock/](https://bgoonz-blog.netlify.app/docs/interact/clock/)
+
+-   [/docs/docs/python/](https://bgoonz-blog.netlify.app/docs/docs/python/)
+
+-   [/docs/interact/jupyter-notebooks/](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
+
+-   [/docs/interact/](https://bgoonz-blog.netlify.app/docs/interact/)
+
+-   [/docs/faq/contact/](https://bgoonz-blog.netlify.app/docs/faq/contact/)
+
+-   [/docs/quick-reference/docs/](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
+
+-   [/docs/interact/other-sites/](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
+
+-   [/docs/quick-reference/new-repo-instructions/](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+
+-   [/docs/quick-reference/Emmet/](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+
+-   [/docs/quick-reference/installation/](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+
+-   [/docs/quick-reference/vscode-themes/](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/)
+
+-   [/docs/react/createReactApp/](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+
+-   [/docs/react/react2/](https://bgoonz-blog.netlify.app/docs/react/react2/)
+
+-   [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+
+-   [/docs/react/](https://bgoonz-blog.netlify.app/docs/react/)
+
+-   [/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)
+
+-   [/docs/tools/notes-template/](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+
+-   [/docs/tools/more-tools/](https://bgoonz-blog.netlify.app/docs/tools/more-tools/)
+
+-   [/docs/tools/plug-ins/](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+
+-   [/docs/articles/node/install/](https://bgoonz-blog.netlify.app/docs/articles/node/install/)
+
+-   [/docs/tools/vscode/](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
+
+-   [/docs/articles/node/intro/](https://bgoonz-blog.netlify.app/docs/articles/node/intro/)
+
+-   [/docs/articles/node/nodejs/](https://bgoonz-blog.netlify.app/docs/articles/node/nodejs/)
+
+-   [/docs/articles/node/nodevsbrowser/](https://bgoonz-blog.netlify.app/docs/articles/node/nodevsbrowser/)
+
+-   [/docs/articles/node/npm/](https://bgoonz-blog.netlify.app/docs/articles/node/npm/)
+
+-   [/docs/articles/node/reading-files/](https://bgoonz-blog.netlify.app/docs/articles/node/reading-files/)
+
+-   [/docs/articles/node/writing-files/](https://bgoonz-blog.netlify.app/docs/articles/node/writing-files/)
+
+-   [/docs/react-in-depth/](https://bgoonz-blog.netlify.app/docs/react-in-depth/)
+
+-   [/docs/articles/article-compilation/](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
+
+-   [/docs/medium/my-websites/](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
+
+-   [/docs/medium/social/](https://bgoonz-blog.netlify.app/docs/medium/social/)
+
+-   [/docs/medium/medium-links/](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
+
+-   [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)
+>>>>>>> master
 
 # Sitemap
 
 ---
 
+<<<<<<< HEAD
 - [/blog/big-o-complexity/](https://bgoonz-blog.netlify.app/blog/big-o-complexity/)
 
 - [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
@@ -776,6 +929,207 @@ This page contains links that give the impression that some of the site contents
 - [/docs/tools/markdown-html/](https://bgoonz-blog.netlify.app/docs/tools/markdown-html/)
 
 - [/docs/quick-reference/psql/](https://bgoonz-blog.netlify.app/docs/quick-reference/psql/)
+=======
+-   [/blog/big-o-complexity/](https://bgoonz-blog.netlify.app/blog/big-o-complexity/)
+
+-   [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
+
+-   [/blog/blog-archive/](https://bgoonz-blog.netlify.app/blog/blog-archive/)
+
+-   [/blog/](https://bgoonz-blog.netlify.app/blog/)
+
+-   [/review/](https://bgoonz-blog.netlify.app/review/)
+
+-   [/blog/data-structures/](https://bgoonz-blog.netlify.app/blog/data-structures/)
+
+-   [/blog/blogwcomments/](https://bgoonz-blog.netlify.app/blog/blogwcomments/)
+
+-   [/blog/platform-docs/](https://bgoonz-blog.netlify.app/blog/platform-docs/)
+
+-   [/blog/python-resources/](https://bgoonz-blog.netlify.app/blog/python-resources/)
+
+-   [/blog/python-for-js-dev/](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+
+-   [/docs/gallery/](https://bgoonz-blog.netlify.app/docs/gallery/)
+
+-   [/blog/my-medium/](https://bgoonz-blog.netlify.app/blog/my-medium/)
+
+-   [/docs/search/](https://bgoonz-blog.netlify.app/docs/search/)
+
+-   [/docs/about/eng-portfolio/](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio/)
+
+-   [/docs/about/intrests/](https://bgoonz-blog.netlify.app/docs/about/intrests/)
+
+-   [/docs/sitemap/](https://bgoonz-blog.netlify.app/docs/sitemap/)
+
+-   [/docs/about/resume/](https://bgoonz-blog.netlify.app/docs/about/resume/)
+
+-   [/blog/web-scraping/](https://bgoonz-blog.netlify.app/blog/web-scraping/)
+
+-   [/docs/about/job-search/](https://bgoonz-blog.netlify.app/docs/about/job-search/)
+
+-   [/docs/](https://bgoonz-blog.netlify.app/docs/)
+
+-   [/docs/articles/buffers/](https://bgoonz-blog.netlify.app/docs/articles/buffers/)
+
+-   [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)
+
+-   [/docs/articles/event-loop/](https://bgoonz-blog.netlify.app/docs/articles/event-loop/)
+
+-   [/docs/articles/dev-dep/](https://bgoonz-blog.netlify.app/docs/articles/dev-dep/)
+
+-   [/docs/articles/](https://bgoonz-blog.netlify.app/docs/articles/)
+
+-   [/docs/articles/install/](https://bgoonz-blog.netlify.app/docs/articles/install/)
+
+-   [/docs/articles/fs-module/](https://bgoonz-blog.netlify.app/docs/articles/fs-module/)
+
+-   [/docs/articles/node-cli-args/](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/)
+
+-   [/docs/articles/module-exports/](https://bgoonz-blog.netlify.app/docs/articles/module-exports/)
+
+-   [/docs/articles/node-env-variables/](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables/)
+
+-   [/docs/articles/intro/](https://bgoonz-blog.netlify.app/docs/articles/intro/)
+
+-   [/docs/articles/node-js-language/](https://bgoonz-blog.netlify.app/docs/articles/node-js-language/)
+
+-   [/docs/articles/basic-web-dev/](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+
+-   [/docs/articles/node-repl/](https://bgoonz-blog.netlify.app/docs/articles/node-repl/)
+
+-   [/docs/articles/node-package-manager/](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager/)
+
+-   [/docs/articles/node-run-cli/](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli/)
+
+-   [/docs/articles/npx/](https://bgoonz-blog.netlify.app/docs/articles/npx/)
+
+-   [/docs/articles/v8/](https://bgoonz-blog.netlify.app/docs/articles/v8/)
+
+-   [/docs/articles/nodevsbrowser/](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser/)
+
+-   [/docs/articles/reading-files/](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
+
+-   [/docs/articles/nodejs/](https://bgoonz-blog.netlify.app/docs/articles/nodejs/)
+
+-   [/docs/articles/npm/](https://bgoonz-blog.netlify.app/docs/articles/npm/)
+
+-   [/docs/articles/semantic/](https://bgoonz-blog.netlify.app/docs/articles/semantic/)
+
+-   [/docs/articles/writing-files/](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
+
+-   [/docs/audio/dynamic-time-warping/](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping/)
+
+-   [/docs/audio/](https://bgoonz-blog.netlify.app/docs/audio/)
+
+-   [/docs/audio/terms/](https://bgoonz-blog.netlify.app/docs/audio/terms/)
+
+-   [/docs/articles/os-module/](https://bgoonz-blog.netlify.app/docs/articles/os-module/)
+
+-   [/docs/community/](https://bgoonz-blog.netlify.app/docs/community/)
+
+-   [/docs/community/video-chat/](https://bgoonz-blog.netlify.app/docs/community/video-chat/)
+
+-   [/docs/content/archive/](https://bgoonz-blog.netlify.app/docs/content/archive/)
+
+-   [/docs/content/data-structures-algo/](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo/)
+
+-   [/docs/content/](https://bgoonz-blog.netlify.app/docs/content/)
+
+-   [/docs/content/notes-template/](https://bgoonz-blog.netlify.app/docs/content/notes-template/)
+
+-   [/docs/content/gatsby-Queries-Mutations/](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations/)
+
+-   [/docs/content/projects/](https://bgoonz-blog.netlify.app/docs/content/projects/)
+
+-   [/docs/content/trouble-shooting/](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/)
+
+-   [/docs/audio/dfft/](https://bgoonz-blog.netlify.app/docs/audio/dfft/)
+
+-   [/docs/content/algo/](https://bgoonz-blog.netlify.app/docs/content/algo/)
+
+-   [/docs/docs/await-keyword/](https://bgoonz-blog.netlify.app/docs/docs/await-keyword/)
+
+-   [/docs/docs/appendix/](https://bgoonz-blog.netlify.app/docs/docs/appendix/)
+
+-   [/docs/docs/algolia/](https://bgoonz-blog.netlify.app/docs/docs/algolia/)
+
+-   [/docs/docs/data-structures-docs/](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs/)
+
+-   [/docs/docs/](https://bgoonz-blog.netlify.app/docs/docs/)
+
+-   [/docs/docs/git-repos/](https://bgoonz-blog.netlify.app/docs/docs/git-repos/)
+
+-   [/docs/docs/sitemap/](https://bgoonz-blog.netlify.app/docs/docs/sitemap/)
+
+-   [/docs/docs/css/](https://bgoonz-blog.netlify.app/docs/docs/css/)
+
+-   [/docs/docs/regex-in-js/](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js/)
+
+-   [/docs/faq/contact/](https://bgoonz-blog.netlify.app/docs/faq/contact/)
+
+-   [/docs/interact/jupyter-notebooks/](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
+
+-   [/docs/interact/clock/](https://bgoonz-blog.netlify.app/docs/interact/clock/)
+
+-   [/docs/interact/](https://bgoonz-blog.netlify.app/docs/interact/)
+
+-   [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)
+
+-   [/docs/interact/video-chat/](https://bgoonz-blog.netlify.app/docs/interact/video-chat/)
+
+-   [/docs/interact/other-sites/](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
+
+-   [/docs/faq/plug-ins/](https://bgoonz-blog.netlify.app/docs/faq/plug-ins/)
+
+-   [/docs/medium/my-websites/](https://bgoonz-blog.netlify.app/docs/medium/my-websites/)
+
+-   [/docs/medium/medium-links/](https://bgoonz-blog.netlify.app/docs/medium/medium-links/)
+
+-   [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)
+
+-   [/docs/quick-reference/create-react-app/](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app/)
+
+-   [/docs/javascript/constructor-functions/](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions/)
+
+-   [/docs/quick-reference/Emmet/](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+
+-   [/docs/python/](https://bgoonz-blog.netlify.app/docs/python/)
+
+-   [/docs/quick-reference/awesome-static/](https://bgoonz-blog.netlify.app/docs/quick-reference/awesome-static/)
+
+-   [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+
+-   [/docs/quick-reference/new-repo-instructions/](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+
+-   [/docs/quick-reference/installation/](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+
+-   [/docs/quick-reference/google-firebase/](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/)
+
+-   [/docs/quick-reference/notes-template/](https://bgoonz-blog.netlify.app/docs/quick-reference/notes-template/)
+
+-   [/docs/quick-reference/heroku-error-codes/](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes/)
+
+-   [/docs/quick-reference/psql-setup/](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup/)
+
+-   [/docs/react/createReactApp/](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+
+-   [/docs/quick-reference/topRepos/](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos/)
+
+-   [/docs/react/react2/](https://bgoonz-blog.netlify.app/docs/react/react2/)
+
+-   [/docs/quick-reference/resources/](https://bgoonz-blog.netlify.app/docs/quick-reference/resources/)
+
+-   [/docs/quick-reference/vscode/](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode/)
+
+-   [/docs/tools/dev-utilities/](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities/)
+
+-   [/docs/tools/data-structures/](https://bgoonz-blog.netlify.app/docs/tools/data-structures/)
+
+-   [/docs/tools/markdown-html/](https://bgoonz-blog.netlify.app/docs/tools/markdown-html/)
+
+-   [/docs/quick-reference/psql/](https://bgoonz-blog.netlify.app/docs/quick-reference/psql/)
+>>>>>>> master
 
 ---
 
@@ -785,6 +1139,7 @@ This page contains links that give the impression that some of the site contents
 
 ##### [stackblitz demo hosted on firebase](https://exploring-firebase-4c023.firebaseapp.com/)
 
+<<<<<<< HEAD
 - [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
 
 - [/repos/](https://bgoonz-blog.netlify.app/repos/)
@@ -920,6 +1275,143 @@ This page contains links that give the impression that some of the site contents
 - [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
 
 - [complete-javascript-reference-guide-64306cd6b0db](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
+=======
+-   [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
+
+-   [/repos/](https://bgoonz-blog.netlify.app/repos/)
+
+-   [/blog/](https://bgoonz-blog.netlify.app/blog/)
+
+-   [/docs/jupyter-notebooks/](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
+
+-   [/docs/portfolio-web/](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
+
+-   [/docs/python/](https://bgoonz-blog.netlify.app/docs/python/)
+
+-   [/docs/About/](https://bgoonz-blog.netlify.app/docs/About/)
+
+-   [/docs/About/resume/](https://bgoonz-blog.netlify.app/docs/About/resume/)
+
+-   [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)
+
+-   [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)
+
+-   [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+
+-   [/docs/quick-reference/Emmet/](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+
+-   [/docs/quick-reference/new-repo-instructions/](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+
+-   [/docs/links/Social/](https://bgoonz-blog.netlify.app/docs/links/Social/)
+
+-   [/docs/links/](https://bgoonz-blog.netlify.app/docs/links/)
+
+-   [/docs/quick-reference/installation/](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+
+-   [/docs/links/my-websites/](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+
+-   [/docs/](https://bgoonz-blog.netlify.app/docs/)
+
+-   [/blog/community/](https://bgoonz-blog.netlify.app/blog/community/)
+
+-   [/blog/python/](https://bgoonz-blog.netlify.app/blog/python/)
+
+-   [/docs/resources/](https://bgoonz-blog.netlify.app/docs/resources/)
+
+-   [/docs/react/createReactApp/](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+
+-   [/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)
+
+-   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
+
+-   [/blog/my-medium/](https://bgoonz-blog.netlify.app/blog/my-medium/)
+
+-   [/docs/tools/default-readme/](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+
+-   [/docs/tools/plug-ins/](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+
+-   [/docs/react/react2/](https://bgoonz-blog.netlify.app/docs/react/react2/)
+
+-   [/docs/tools/notes-template/](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+
+-   [/review/](https://bgoonz-blog.netlify.app/review/)
+
+-   [/docs/articles/basic-web-dev/](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+
+-   [/blog/data-structures/](https://bgoonz-blog.netlify.app/blog/data-structures/)
+
+-   [/docs/About/me/](https://bgoonz-blog.netlify.app/docs/About/me/)
+
+-   [/docs/About/introduction2bg/](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
+
+-   [/docs/react/](https://bgoonz-blog.netlify.app/docs/react/)
+
+-   [/docs/tools/Git-Html-Preview/](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
+
+-   [/gallery/](https://bgoonz-blog.netlify.app/gallery/)
+
+## Blog
+
+-   [introductory-react-part-2](https://bgoonz-blog.netlify.app/docs/react/react2/?source=your_stories_page-------------------------------------)
+
+-   [a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
+
+-   [introduction-to-react-for-complete-beginners](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
+
+-   [scheduling-settimeout-and-setinterval](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
+
+-   [css-animations](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
+
+-   [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
+
+-   [how-to-implement-native-es6-data-structures-using-arrays-objects](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
+
+-   [objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
+
+-   [absolute-beginners-guide-to-javascript-part1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
+
+-   [web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
+
+-   [vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
+
+-   [a-list-of-all-of-my-articles-to-link-to-future-posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
+
+-   [lists-stacks-and-queues-in-javascript](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
+
+-   [web-development-resources-part-3](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
+
+-   [web-development-interview-part-3](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
+
+-   [running-list-of-interesting-articles-tools](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
+
+-   [the-best-cloud-based-code-playgrounds-of-2021-part-1](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
+
+-   [front-end-interview-questions-part-2](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
+
+-   [web-developer-resource-list-part-2](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
+
+-   [http-basics](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
+
+-   [javascript-frameworks-libraries](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
+
+-   [my-take-on-awesome-javascript](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
+
+-   [get-started-with-vscode-extensions](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
+
+-   [my-favorite-vscode-themes](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
+
+-   [object-oriented-programming-in-javascript](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
+
+-   [javascript-rotate-array-problemwalkthrough](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
+
+-   [super-simple-intro-to-html-651d695f9bc](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
+
+-   [everything-you-need-to-know-about-relational-databases-sql-postgresql](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
+
+-   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
+
+-   [complete-javascript-reference-guide-64306cd6b0db](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
+>>>>>>> master
 
 </div>
 
@@ -1019,9 +1511,15 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
+<<<<<<< HEAD
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+=======
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+-   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+>>>>>>> master
 
 ## 💫 Deploy
 
@@ -1335,7 +1833,13 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <details>
 
+<<<<<<< HEAD
   <summary><h1>Click to see React Components (src folder)!</h1></summary>
+=======
+  <summary>
+<h1>Click to see React Components (src folder)!</h1>
+</summary>
+>>>>>>> master
 
 <details>
 
@@ -1692,7 +2196,12 @@ export default class Header extends React.Component {
                             )}
                         </div>
 
+<<<<<<< HEAD
                         <div id="search" className="inner"></div>
+=======
+                        <div id="search" className="inner">
+</div>
+>>>>>>> master
 
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
@@ -1756,8 +2265,11 @@ export default class Header extends React.Component {
                     </div>
                 </div>
 
+<<<<<<< HEAD
           
 
+=======
+>>>>>>> master
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
@@ -1783,20 +2295,35 @@ export default class Header extends React.Component {
                                 transform: 'scale(-1.5, 1.5)'
                             }}
                         >
+<<<<<<< HEAD
                             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+=======
+                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+</path>
+>>>>>>> master
 
                             <path
                                 className="octo-arm"
                                 d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
                                 fill="currentColor"
                                 style={{ transformOrigin: '130px 106px' }}
+<<<<<<< HEAD
                             ></path>
+=======
+                            >
+</path>
+>>>>>>> master
 
                             <path
                                 className="octo-body"
                                 d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
                                 fill="currentColor"
+<<<<<<< HEAD
                             ></path>
+=======
+                            >
+</path>
+>>>>>>> master
                         </svg>
                     </a>
                 </div>
@@ -6408,7 +6935,11 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
+<<<<<<< HEAD
 ```
+=======
+````
+>>>>>>> master
 
 # main.js
 
@@ -6892,7 +7423,11 @@ window.onGatsbyInitialClientRender = function () {
 
 //-----------------------------------------------------------------------
 
+<<<<<<< HEAD
 ```
+=======
+````
+>>>>>>> master
 
 ---
 
@@ -11121,12 +11656,17 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
+=======
+-   #####
+>>>>>>> master
 
     destructured object
 
     See the [documentation for `Node API Helpers` for more details](https://www.gatsbyjs.com/docs/node-api-helpers)
 
+<<<<<<< HEAD
 - ######
 
           `actions` Actions
@@ -11150,6 +11690,31 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
           `reporter` GatsbyReporter
 
           Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
+=======
+-   ######
+
+            `actions` Actions
+
+            See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
+
+-   ######
+
+                `createPage` function
+
+                [Documentation for this action](https://www.gatsbyjs.com/docs/actions/#createPage)
+
+-   ######
+
+            `graphql` function
+
+            : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
+
+-   ######
+
+            `reporter` GatsbyReporter
+
+            Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
+>>>>>>> master
 
 #### Return value
 
@@ -11248,6 +11813,7 @@ Allows adding new fields to types by providing field configs, or adding resolver
 
 Things to note:
 
+<<<<<<< HEAD
 - Overriding field types is disallowed, instead use the `createTypes` action. In case of types added from third-party schemas, where this is not possible, overriding field types is allowed.
 
 - New fields will not be available on `filter` and `sort` input types. Extend types defined with `createTypes` if you need this.
@@ -11263,11 +11829,29 @@ Things to note:
 - It is possible to add fields to the root `Query` type.
 
 - When using the first resolver argument (`source` in the example below, often also called `parent` or `root`), take care of the fact that field resolvers can be called more than once in a query, e.g. when the field is present both in the input filter and in the selection set. This means that foreign-key fields on `source` can be either resolved or not-resolved.
+=======
+-   Overriding field types is disallowed, instead use the `createTypes` action. In case of types added from third-party schemas, where this is not possible, overriding field types is allowed.
+
+-   New fields will not be available on `filter` and `sort` input types. Extend types defined with `createTypes` if you need this.
+
+-   In field configs, types can be referenced as strings.
+
+-   When extending a field with an existing field resolver, the original resolver function is available from `info.originalResolver`.
+
+-   The `createResolvers` API is called as the last step in schema generation. Thus, an intermediate schema is made available on the `intermediateSchema` property. In resolver functions themselves, it is recommended to access the final built schema from `info.schema`.
+
+-   Gatsby's data layer, including all internal query capabilities, is exposed on [`context.nodeModel`](https://www.gatsbyjs.com/docs/node-model/). The node store can be queried directly with `getAllNodes`, `getNodeById` and `getNodesByIds`, while more advanced queries can be composed with `runQuery`. Note that `runQuery` will call field resolvers before querying, so e.g. foreign-key fields will be expanded to full nodes. The other methods on `nodeModel` don't do this.
+
+-   It is possible to add fields to the root `Query` type.
+
+-   When using the first resolver argument (`source` in the example below, often also called `parent` or `root`), take care of the fact that field resolvers can be called more than once in a query, e.g. when the field is present both in the input filter and in the selection set. This means that foreign-key fields on `source` can be either resolved or not-resolved.
+>>>>>>> master
 
 For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-type-definitions).
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11305,6 +11889,45 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
               `ignoreNonexistentTypes` object
 
               Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `intermediateSchema` GraphQLSchema
+
+            Current GraphQL schema
+
+-   ######
+
+            `createResolvers` function
+
+            Add custom resolvers to GraphQL field configs
+
+-   #####
+
+    `$1` object
+
+-   ######
+
+            `resolvers` object
+
+            An object map of GraphQL type names to custom resolver functions
+
+-   ######
+
+            `options` object
+
+            Optional createResolvers options
+
+-   ######
+
+                `ignoreNonexistentTypes` object
+
+                Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
+>>>>>>> master
 
 #### Example
 
@@ -11352,6 +11975,7 @@ This API runs immediately before schema generation. For modifications of the gen
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11371,6 +11995,27 @@ This API runs immediately before schema generation. For modifications of the gen
 - ######
 
               `addThirdPartySchema` object
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `actions` object
+
+-   ######
+
+                `createTypes` object
+
+-   ######
+
+                `createFieldExtension` object
+
+-   ######
+
+                `addThirdPartySchema` object
+>>>>>>> master
 
 #### Example
 
@@ -11424,6 +12069,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11439,6 +12085,23 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
           `actions` object
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `stage` string
+
+            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
+
+-   ######
+
+            `actions` object
+
+-   #####
+>>>>>>> master
 
     `options` object
 
@@ -11466,6 +12129,7 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11475,6 +12139,17 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
           `app` Express
 
           The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `app` Express
+
+            The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
+>>>>>>> master
 
 #### Example
 
@@ -11538,6 +12213,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11575,6 +12251,45 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 - ######
 
           `actions` object
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `stage` string
+
+            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
+
+-   ######
+
+            `getConfig` function
+
+            Returns the current webpack config
+
+-   ######
+
+            `rules` object
+
+            A set of preconfigured webpack config rules
+
+-   ######
+
+            `loaders` object
+
+            A set of preconfigured webpack config loaders
+
+-   ######
+
+            `plugins` object
+
+            A set of preconfigured webpack config plugins
+
+-   ######
+
+            `actions` object
+>>>>>>> master
 
 #### Example
 
@@ -11674,6 +12389,7 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11683,6 +12399,17 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
           `Joi` Joi
 
           The instance of [Joi](https://joi.dev/) to define the schema
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `Joi` Joi
+
+            The instance of [Joi](https://joi.dev/) to define the schema
+>>>>>>> master
 
 #### Example
 
@@ -11736,6 +12463,7 @@ _Note:_ Import GraphQL types from `gatsby/graphql` and don't add the `graphql` p
 
 Many transformer plugins use this to add fields that take arguments.
 
+<<<<<<< HEAD
 - [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) adds an "excerpt" field where the user when writing their query can specify how many characters to prune the markdown source to.
 
 - [`gatsby-transformer-sharp`](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/) exposes many image transformation options as GraphQL fields.
@@ -11751,6 +12479,23 @@ Many transformer plugins use this to add fields that take arguments.
           `type` object
 
           Object containing `name` and `nodes`
+=======
+-   [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) adds an "excerpt" field where the user when writing their query can specify how many characters to prune the markdown source to.
+
+-   [`gatsby-transformer-sharp`](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/) exposes many image transformation options as GraphQL fields.
+
+#### Parameters
+
+-   #####
+
+    destructured object
+
+-   ######
+
+            `type` object
+
+            Object containing `name` and `nodes`
+>>>>>>> master
 
 #### Example
 
@@ -11936,6 +12681,7 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -11983,6 +12729,55 @@ Called after every page Gatsby server renders while building HTML so you can rep
           Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `pathname` string
+
+            The pathname of the page currently being rendered.
+
+-   ######
+
+            `getHeadComponents` ReactNode[]
+
+            Returns the current `headComponents` array.
+
+-   ######
+
+            `replaceHeadComponents` function
+
+            Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+
+-   ######
+
+            `getPreBodyComponents` ReactNode[]
+
+            Returns the current `preBodyComponents` array.
+
+-   ######
+
+            `replacePreBodyComponents` function
+
+            Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+
+-   ######
+
+            `getPostBodyComponents` ReactNode[]
+
+            Returns the current `postBodyComponents` array.
+
+-   ######
+
+            `replacePostBodyComponents` function
+
+            Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
+
+-   #####
+>>>>>>> master
 
     `pluginOptions` object
 
@@ -12042,6 +12837,7 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -12089,6 +12885,55 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
           Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `pathname` string
+
+            The pathname of the page currently being rendered.
+
+-   ######
+
+            `setHeadComponents` function
+
+            Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setHtmlAttributes` function
+
+            Takes an object of props which will spread into the `<html>` component.
+
+-   ######
+
+            `setBodyAttributes` function
+
+            Takes an object of props which will spread into the `<body>` component.
+
+-   ######
+
+            `setPreBodyComponents` function
+
+            Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setPostBodyComponents` function
+
+            Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setBodyProps` function
+
+            Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
+
+-   #####
+>>>>>>> master
 
     `pluginOptions` object
 
@@ -12154,6 +12999,7 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -12213,6 +13059,67 @@ Replace the default server renderer. This is useful for integration with Redux, 
           Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `pathname` string
+
+            The pathname of the page currently being rendered.
+
+-   ######
+
+            `bodyComponent` ReactNode
+
+            The React element to be rendered as the page body
+
+-   ######
+
+            `replaceBodyHTMLString` function
+
+            Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
+
+-   ######
+
+            `setHeadComponents` function
+
+            Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setHtmlAttributes` function
+
+            Takes an object of props which will spread into the `<html>` component.
+
+-   ######
+
+            `setBodyAttributes` function
+
+            Takes an object of props which will spread into the `<body>` component.
+
+-   ######
+
+            `setPreBodyComponents` function
+
+            Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setPostBodyComponents` function
+
+            Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
+
+-   ######
+
+            `setBodyProps` function
+
+            Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
+
+-   #####
+>>>>>>> master
 
     `pluginOptions` object
 
@@ -12258,6 +13165,7 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -12275,6 +13183,25 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
           Props object used by page.
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `element` ReactNode
+
+            The "Page" React Element built by Gatsby.
+
+-   ######
+
+            `props` object
+
+            Props object used by page.
+
+-   #####
+>>>>>>> master
 
     `pluginOptions` object
 
@@ -12326,6 +13253,7 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
 #### Parameters
 
+<<<<<<< HEAD
 - #####
 
     destructured object
@@ -12337,6 +13265,19 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
           The "Root" React Element built by Gatsby.
 
 - #####
+=======
+-   #####
+
+    destructured object
+
+-   ######
+
+            `element` ReactNode
+
+            The "Root" React Element built by Gatsby.
+
+-   #####
+>>>>>>> master
 
     `pluginOptions` object
 

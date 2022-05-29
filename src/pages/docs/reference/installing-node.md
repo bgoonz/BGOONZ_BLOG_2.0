@@ -3,8 +3,13 @@ title: Installing Node
 weight: 0
 excerpt: Installing Node
 seo:
+<<<<<<< HEAD
     title: ''
     description: ''
+=======
+    title: 'Installing Node'
+    description: 'Installing Node'
+>>>>>>> master
     robots: []
     extra: []
 template: docs
