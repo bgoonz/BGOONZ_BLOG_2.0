@@ -1,8 +1,9 @@
 import _ from 'lodash';
 import React from 'react';
+import useScreenQuery from '../hooks/useScreenQuery';
 export default class Icon extends React.Component {
     render() {
-        let icon = _.get(this.props, 'icon', null);
+        let icon = _.get(this.props, 'icon', useScreenQuery);
         return (
             <svg className="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {icon === 'dev' ? (
