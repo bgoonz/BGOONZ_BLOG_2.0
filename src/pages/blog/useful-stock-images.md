@@ -4,8 +4,8 @@ template: post
 subtitle: images
 excerpt: from upwork
 date: 2022-05-19T08:39:54.360Z
-image: /blog/python.png
-thumb_image: /blog/python.png
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/0beuahctjrs_qcqgv.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/0beuahctjrs_qcqgv.jpg?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
