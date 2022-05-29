@@ -10,6 +10,10 @@ iframe {
     z-index: -1 !important;
 }
 
-#sb-search-input-example {
-    z-index: 100;
+#sb-search-input-example{
+        position: static;
+    top: 80px;
+    width: 25%;
+    height: 70px;
+    place-content: center;
 }
