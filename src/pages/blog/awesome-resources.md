@@ -4,8 +4,8 @@ template: post
 subtitle: Table of Contents
 excerpt: Table of Contents
 date: 2022-05-29T14:27:34.209Z
-image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/textools.png?raw=true
-thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/textools.png?raw=true
+image: https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true
+thumb_image: https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
