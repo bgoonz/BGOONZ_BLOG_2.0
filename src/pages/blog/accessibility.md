@@ -3,23 +3,23 @@ title: Accessibility
 template: post
 subtitle: Our products should be accessible to all
 excerpt: Making our products accessible benefits everyone, not just people with
-  disabilities
+    disabilities
 date: 2022-05-29T17:38:20.581Z
 image: https://www.esri.com/arcgis-blog/wp-content/uploads/2020/07/building-web-accessibility-barriers-guidelines-standards_01.jpg
 thumb_image: https://www.esri.com/arcgis-blog/wp-content/uploads/2020/07/building-web-accessibility-barriers-guidelines-standards_01.jpg
 image_position: right
 author: src/data/authors/backup.yaml
 categories:
-  - src/data/categories/css.yaml
-  - src/data/categories/html.yaml
-  - src/data/categories/javascript.yaml
+    - src/data/categories/css.yaml
+    - src/data/categories/html.yaml
+    - src/data/categories/javascript.yaml
 tags:
-  - src/data/tags/career.yaml
-  - src/data/tags/javascript.yaml
+    - src/data/tags/career.yaml
+    - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/awesome-resources.md
-  - src/pages/blog/adding-css-to-your-html.md
+    - src/pages/blog/awesome-resources.md
+    - src/pages/blog/adding-css-to-your-html.md
 cmseditable: true
 ---
 
@@ -31,13 +31,13 @@ Our products should be accessible to all. At minimum, features should comply to 
 
 Making our products accessible benefits everyone, not just people with disabilities. Below are some examples of use cases in which accessibility is important:
 
-- **Visual**: blindness, low vision, color blindness, using a screen reader or related assistive tech for lifestyle reasons (e.g. long car commute), machine readability and screen scraping technologies
+-   **Visual**: blindness, low vision, color blindness, using a screen reader or related assistive tech for lifestyle reasons (e.g. long car commute), machine readability and screen scraping technologies
 
-- **Hearing**: deafness, hearing impairment, speech impairment, using closed captioning or other assistive features for lifestyle reasons (e.g. coworking in a loud coffee shop)
+-   **Hearing**: deafness, hearing impairment, speech impairment, using closed captioning or other assistive features for lifestyle reasons (e.g. coworking in a loud coffee shop)
 
-- **Cognitive**: including short-term memory issues, dyslexia, learning disabilities, trying to work or consume content while distracted or multitasking, etc.
+-   **Cognitive**: including short-term memory issues, dyslexia, learning disabilities, trying to work or consume content while distracted or multitasking, etc.
 
-- **Mobility**: mobility impairments, repetitive stress injuries, power users who love keyboard shortcuts, busy parents holding a sleeping child while trying to operate a computer with one hand, etc.
+-   **Mobility**: mobility impairments, repetitive stress injuries, power users who love keyboard shortcuts, busy parents holding a sleeping child while trying to operate a computer with one hand, etc.
 
 ## General guidelines
 
@@ -61,7 +61,7 @@ Only use a `div` or a `span` to markup up content when there isn't another HTML 
 
 > More on semantic markup:
 >
-> - [Semantic Structure – WebAIM](http://webaim.org/techniques/semanticstructure/)
+> -   [Semantic Structure – WebAIM](http://webaim.org/techniques/semanticstructure/)
 
 ### Keyboard accessibility
 
@@ -71,9 +71,9 @@ Tab order is determined by the order of elements in the DOM, and not by their vi
 
 The `tabindex` attribute should only be used when absolutely necessary.
 
-- `tabindex=0/-1` makes an element focusable, while `tabindex=0` also includes the element in the normal tab order. In both cases, keyboard triggers of the element still require scripting, so where possible, use [interactive content](http://w3c.github.io/html/dom.html#kinds-of-content-interactive-content) instead.
+-   `tabindex=0/-1` makes an element focusable, while `tabindex=0` also includes the element in the normal tab order. In both cases, keyboard triggers of the element still require scripting, so where possible, use [interactive content](http://w3c.github.io/html/dom.html#kinds-of-content-interactive-content) instead.
 
-- `tabindex=1+` takes an element to the very front of the default tab order. When it's applied, the element's visual positioning is no longer indicative of its tab order, and the only way to find out where an element is would be by tabbing through the page. Therefore, unless a page is carefully designed around elements with positive tabindex, it is very error-proned, and thus currently prohibited in github.com.
+-   `tabindex=1+` takes an element to the very front of the default tab order. When it's applied, the element's visual positioning is no longer indicative of its tab order, and the only way to find out where an element is would be by tabbing through the page. Therefore, unless a page is carefully designed around elements with positive tabindex, it is very error-proned, and thus currently prohibited in github.com.
 
 Finally, bear in mind that some assistive technologies have keyboard combinations of their own that will override the combination on the web page, so don't rely on keyboard shortcuts as the only alternative to mouse actions.
 
@@ -93,9 +93,9 @@ Finally, bear in mind that some assistive technologies have keyboard combination
 
 > More on keyboard accessibility:
 >
-> - [Focus Order – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
-> - [Time to revisit accesskey? by Léonie Watson](http://tink.uk/time-to-revisit-accesskey/)
-> - [Flexbox & the keyboard navigation disconnect by Léonie Watson](http://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
+> -   [Focus Order – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
+> -   [Time to revisit accesskey? by Léonie Watson](http://tink.uk/time-to-revisit-accesskey/)
+> -   [Flexbox & the keyboard navigation disconnect by Léonie Watson](http://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
 
 ### Visual accessibility
 
@@ -105,8 +105,8 @@ Instead of relying solely on color to communicate information, always combine co
 
 > More on visual accessibility:
 >
-> - [Use of Color – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
-> - [Contrast – Understanding WCAG 2.0](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+> -   [Use of Color – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
+> -   [Contrast – Understanding WCAG 2.0](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 
 ### Text and labels
 
@@ -120,17 +120,15 @@ Make sure text-based alternative is always available when using icons, images, a
 ```html
 <!-- Don't: "Click here" is not meaningful. -->
 <p>
-  To find out more about GitHub Enterprise pricing,
-  <a href="#url">click here</a>.
+    To find out more about GitHub Enterprise pricing,
+    <a href="#url">click here</a>.
 </p>
 ```
 
 Use `aria-label` when there is no text.
 
 ```html
-<a href="https://help.github.com/"
-  ><%= octicon("question", :"aria-label" => "Help") %></a
->
+<a href="https://help.github.com/"><%= octicon("question", :"aria-label" => "Help") %></a>
 ```
 
 ### Link responsibly
@@ -139,7 +137,7 @@ Navigating from a list of all the links on a given web page is very common for a
 
 > More on link responsibly:
 >
-> - [Link Purpose – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+> -   [Link Purpose – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
 
 ### Dynamic content
 
@@ -147,7 +145,7 @@ When using JavaScript to change the content on the page, always make sure that s
 
 > More on dynamic content:
 >
-> - [ARIA Live Regions – MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)
+> -   [ARIA Live Regions – MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)
 
 ### Focus management
 
@@ -160,24 +158,15 @@ It is common for assistive technology users to jump straight to a form when usin
 ```html
 <!-- Do: Click "Email" label to focus on the input, and help text is read out by screen readers when focusing on the input. -->
 <label for="test_input">Email</label><br />
-<input
-  id="test_input"
-  aria-describedby="test_input_help_good"
-  class="width-full my-1"
-  type="email"
-/>
-<div id="test_input_help_good" class="f6">
-  Please enter an email ending with @github.com.
-</div>
+<input id="test_input" aria-describedby="test_input_help_good" class="width-full my-1" type="email" />
+<div id="test_input_help_good" class="f6">Please enter an email ending with @github.com.</div>
 ```
 
 ```html
 <!-- Don't: Input and label are not associated, and help text is not read out by screen reader when focusing on the input. -->
 <label>Email</label><br />
 <input type="email" class="width-full my-1" />
-<div id="test_input_help_bad" class="f6">
-  Please enter an email ending with @github.com.
-</div>
+<div id="test_input_help_bad" class="f6">Please enter an email ending with @github.com.</div>
 ```
 
 ## Development tools
@@ -190,11 +179,11 @@ We do client side scanning of inaccessible elements in development environment. 
 
 ### External tools
 
-- Google Chrome provides an [Accessibility Developer Tools extension](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb). Once installed, go to Audits tab in developer tools, tick Accessibility. It scans the page for violations and suggests solutions.
+-   Google Chrome provides an [Accessibility Developer Tools extension](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb). Once installed, go to Audits tab in developer tools, tick Accessibility. It scans the page for violations and suggests solutions.
 
-- If you're working on a design that uses color to communicate something, grab the [Chromatic Vision Simulator app](https://itunes.apple.com/tw/app/chromatic-vision-simulator/id389310222?mt=8), this will let you use your iPhone camera to see what a colorblind person would see.
+-   If you're working on a design that uses color to communicate something, grab the [Chromatic Vision Simulator app](https://itunes.apple.com/tw/app/chromatic-vision-simulator/id389310222?mt=8), this will let you use your iPhone camera to see what a colorblind person would see.
 
-- Check out [the Web Accessibility showcase on GitHub](https://github.com/showcases/web-accessibility). GitHubbers are free to add more projects to the showcase.
+-   Check out [the Web Accessibility showcase on GitHub](https://github.com/showcases/web-accessibility). GitHubbers are free to add more projects to the showcase.
 
 ## Manual testing
 
@@ -210,8 +199,8 @@ Keep in mind that behaviors in different screen readers can differ when navigati
 
 1. You can mention these teams when looking for help:
 
-- [@github/accessibility](https://github.com/orgs/github/teams/accessibility): GitHubbers interested in accessibility related topics and work on website accessibility issues.
-- [@github/colorblind](https://github.com/orgs/github/teams/colorblind): GitHubbers who are interested in accessibility for colorblindness.
+-   [@github/accessibility](https://github.com/orgs/github/teams/accessibility): GitHubbers interested in accessibility related topics and work on website accessibility issues.
+-   [@github/colorblind](https://github.com/orgs/github/teams/colorblind): GitHubbers who are interested in accessibility for colorblindness.
 
 2. Go to #accessibility Slack channel to ask questions or discuss accessibility issues.
 3. Check [github/accessibility repository](https://github.com/github/accessibility) for information on events or learning resources.
