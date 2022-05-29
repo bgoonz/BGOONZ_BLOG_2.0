@@ -28,7 +28,7 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode
+    return fileNode;
 }
 
 exports.onCreateNode = ({node, getNode, actions}, options) => {
