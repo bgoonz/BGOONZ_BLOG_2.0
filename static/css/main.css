@@ -1,33 +1,15 @@
 iframe {
+    display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     list-style: none;
     overflow: scroll;
     resize: both;
-    margin: auto;
-    padding: 2em;
-
-}
-
-#sb-search-input-example{
-        position: static;
-    top: 80px;
-    width: 25%;
-    height: 70px;
-    place-content: center;
-}
-
-
-
-
-
-#sb-search-example .sb-icon {
-    font: normal normal 400 26px font-sb;
-    align-items: center;
-    padding: 10px;
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
-    text-transform: none;
-    cursor: pointer;
     margin: 0;
+    padding: 2em;
+    z-index: -1 !important;
+}
+
+#sb-search-input-example {
+    z-index: 100;
 }
