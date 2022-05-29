@@ -9,15 +9,16 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: left
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/js.yaml
+    - src/data/categories/js.yaml
 tags:
-  - src/data/tags/javascript.yaml
-  - src/data/tags/links.yaml
+    - src/data/tags/javascript.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
+
 By default you cannot pass arguments to a callback function. For example:
 
 ```js
@@ -52,10 +53,8 @@ Another method to do this is using the `bind` method. For example:
 
 ```js
 var alertText = function (text) {
-  alert(text);
+    alert(text);
 };
 
-document
-  .getElementById("someelem")
-  .addEventListener("click", alertText.bind(this, "hello"));
+document.getElementById('someelem').addEventListener('click', alertText.bind(this, 'hello'));
 ```
