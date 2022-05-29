@@ -9,14 +9,14 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/google.yaml
+    - src/data/categories/google.yaml
 tags:
-  - src/data/tags/cms.yaml
-  - src/data/tags/resources.yaml
+    - src/data/tags/cms.yaml
+    - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/event-handeling.md
-  - src/pages/blog/google-analytics.md
+    - src/pages/blog/event-handeling.md
+    - src/pages/blog/google-analytics.md
 cmseditable: true
 ---
 
