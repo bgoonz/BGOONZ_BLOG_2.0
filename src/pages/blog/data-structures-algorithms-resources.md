@@ -3,18 +3,20 @@ title: Data Structures & Algorithms Resources
 template: post
 subtitle: Links to useful educational resources
 excerpt: "Talk is cheap. Show me the code.  Software is like sex: it's better
-    when it's free.  Microsoft isn't evil, they just make really crappy operating
-    systems."
+  when it's free.  Microsoft isn't evil, they just make really crappy operating
+  systems."
 date: 2022-04-09T12:24:38.027Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/ds-algo.png?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/ds-algo.png?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/ds.yaml
+  - src/data/categories/ds.yaml
 tags:
-    - src/data/tags/🖇-🖇-🖇-🖇.yaml
+  - src/data/tags/data-structures-algorithms.yaml
 show_author_bio: true
+related_posts:
+  - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
 
