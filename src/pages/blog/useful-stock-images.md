@@ -9,18 +9,14 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/git.yaml
+    - src/data/categories/git.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 cmseditable: true
 ---
 
-
-
-## Images: 
-
-
+## Images:
 
 > 0beuahctjrs_qcqgv.jpg
 
@@ -46,9 +42,10 @@ cmseditable: true
 
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/My%20Post.png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/My%20Post.png?raw=true)
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true](https://raw.githubusercontent.com/
+
 > Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png
-bgoo
-nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)
+> bgoo
+> nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)
 
 > Visual_Studio_Code_logo.png
 
@@ -676,7 +673,7 @@ nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%
 
 > google-cloud%20(2).png
 
-![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-cloud%20(2).png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-cloud%20(2).png?raw=true)
+![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-cloud%20(2).png?raw=true](<https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-cloud%20(2).png?raw=true>)
 
 > google-cloud.png
 
@@ -1168,7 +1165,7 @@ nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%
 
 > react%20(1).png
 
-![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true)
+![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true](<https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true>)
 
 > react-banner.jpg
 
@@ -1304,7 +1301,7 @@ nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%
 
 > sine-wav-bak%20(1).gif
 
-![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/sine-wav-bak%20(1).gif?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/sine-wav-bak%20(1).gif?raw=true)
+![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/sine-wav-bak%20(1).gif?raw=true](<https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/sine-wav-bak%20(1).gif?raw=true>)
 
 > skype.png
 
@@ -1492,7 +1489,7 @@ nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%
 
 > xcode%20(1).png
 
-![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/xcode%20(1).png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/xcode%20(1).png?raw=true)
+![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/xcode%20(1).png?raw=true](<https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/xcode%20(1).png?raw=true>)
 
 > zumzi-video-chat.1.png
 
