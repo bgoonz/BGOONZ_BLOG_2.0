@@ -1043,7 +1043,11 @@ export default class SectionDocs extends React.Component {
                             {_.get(section, 'subtitle', null) && <p className="block-subtitle">{htmlToReact(_.get(section, 'subtitle', null))}</p>}
                         </div>
                     )}
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/sourcecode.md
+                    <div className="<iframe ">
+=======
                     <div className="block-content">
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/BGOONZ_BLOG_2.0.wiki/sourcecode.md
                         <div
                             className={classNames('grid', {
                                 'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -1109,7 +1113,11 @@ export default class SectionGrid extends React.Component {
                         </div>
                     )}
                     {_.get(section, 'grid_items', null) && (
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/sourcecode.md
+                        <div className="<iframe ">
+=======
                         <div className="block-content">
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/BGOONZ_BLOG_2.0.wiki/sourcecode.md
                             <div
                                 className={classNames('grid', {
                                     'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -1177,7 +1185,11 @@ export default class SectionHero extends React.Component {
                             <h1 className="block-title">{_.get(section, 'title', null)}</h1>
                         </div>
                     )}
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/sourcecode.md
+                    {_.get(section, 'content', null) && <div className="<iframe ">{markdownify(_.get(section, 'content', null))}</div>}
+=======
                     {_.get(section, 'content', null) && <div className="block-content">{markdownify(_.get(section, 'content', null))}</div>}
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/BGOONZ_BLOG_2.0.wiki/sourcecode.md
                     {_.get(section, 'actions', null) && (
                         <div className="block-buttons">
                             <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />

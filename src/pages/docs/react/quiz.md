@@ -41,9 +41,13 @@ Let's recap.
 
 **Question:**
 
+<<<<<<< HEAD
+> Does rendering `<Button><Icon /></Button>` guarantee that an `Icon` mounts?
+=======
 > Does rendering `<Button>
 <Icon />
 </Button>` guarantee that an `Icon` mounts?
+>>>>>>> master
 
 It doesn't. Ultimately it's always up to the component to decide what to do with its children. For example, the `Button` implementation could completely ignore them and render something else:
 
@@ -74,9 +78,13 @@ function Button(props) {
 }
 ```
 
+<<<<<<< HEAD
+Ultimately, `children` is not a special prop in any way except for JSX sugar syntax. `<Button><Icon /></Button>` is technically the same as `<Button children={<Icon />} />`, and it's up to the component how to treat its input props.
+=======
 Ultimately, `children` is not a special prop in any way except for JSX sugar syntax. `<Button>
 <Icon />
 </Button>` is technically the same as `<Button children={<Icon />} />`, and it's up to the component how to treat its input props.
+>>>>>>> master
 
 **Question:**
 
@@ -974,8 +982,12 @@ const [count, setCount] = useState(0);
 
 ```js
 const database = [user1:{},user2:{},user3:{}];
+<<<<<<< HEAD
+database.map((user)=><h1>user.data</h1>);
+=======
 database.map((user)=>
 <h1>user.data</h1>);
+>>>>>>> master
 ```
 
 -   [ ] gives a map of all the entries in database

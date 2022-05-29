@@ -1057,6 +1057,10 @@ template: docs
     8.  [13.2.8 Speculative HTML parsing](https://html.spec.whatwg.org/#speculative-html-parsing)
     9.  [13.2.9 Coercing an HTML DOM into an infoset](https://html.spec.whatwg.org/#coercing-an-html-dom-into-an-infoset)
     10. [13.2.10 An introduction to error handling and strange cases in the parser](https://html.spec.whatwg.org/#an-introduction-to-error-handling-and-strange-cases-in-the-parser)
+<<<<<<< HEAD
+    11. [13.2.10.1 Misnested tags: <b><i></b></i>](https://html.spec.whatwg.org/#misnested-tags:-b-i-/b-/i)
+    12. [13.2.10.2 Misnested tags: <b><p></b></p>](https://html.spec.whatwg.org/#misnested-tags:-b-p-/b-/p)
+=======
     11. [13.2.10.1 Misnested tags: <b>
 <i>
 </b>
@@ -1065,6 +1069,7 @@ template: docs
 <p>
 </b>
 </p>](https://html.spec.whatwg.org/#misnested-tags:-b-p-/b-/p)
+>>>>>>> master
     13. [13.2.10.3 Unexpected markup in tables](https://html.spec.whatwg.org/#unexpected-markup-in-tables)
     14. [13.2.10.4 Scripts that modify the page as it is being parsed](https://html.spec.whatwg.org/#scripts-that-modify-the-page-as-it-is-being-parsed)
     15. [13.2.10.5 The execution of scripts that are moving across multiple documents](https://html.spec.whatwg.org/#the-execution-of-scripts-that-are-moving-across-multiple-documents)

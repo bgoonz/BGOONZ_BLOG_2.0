@@ -24,6 +24,10 @@
 - [Good stable point](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/90f70928a145c8a784899baf62efc2a0d5697bf4)
 
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/STABLE_POINTS.md
+
+- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
+=======
 - [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/c3f30229ac3dcd19ff54798227ce065c216e0c11)
 
 - [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
@@ -34,3 +38,4 @@
 
 - [May fix](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/736d38cdcdd3692d6a3bf1d5485ac2b0a3824d02)
 https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/BGOONZ_BLOG_2.0.wiki/STABLE_POINTS.md

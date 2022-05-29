@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
+    "github": {
+        "enabled": true
+    }
+}
+=======
 
     "github": {
 
@@ -7,3 +13,4 @@
     }
 
 }
+>>>>>>> master

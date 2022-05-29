@@ -35,20 +35,34 @@ thumb_image_alt: python logo
 
 # Python Study Guide for a JavaScript Programmer&#xA;
 
+<<<<<<< HEAD
+![](https://miro.medium.com/max/1970/1*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0*Ez_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0*Ez_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0*qHzGRLTOMTf30miT.png)\[
+
+]\(https://github.com/bgoonz)
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+=======
 ![medium blog image](https://miro.medium.com/max/1970/1*3V9VOfPk_hrFdbEAd3j-QQ.png)![medium blog image](https://miro.medium.com/max/52/0*eC4EvZcv6hhH88jX.png?q=20)![medium blog image](https://miro.medium.com/max/647/0*eC4EvZcv6hhH88jX.png)![medium blog image](https://miro.medium.com/max/60/0*Ez_1PZ93N4FfvkRr.png?q=20)![medium blog image](https://miro.medium.com/max/608/0*Ez_1PZ93N4FfvkRr.png)![medium blog image](https://miro.medium.com/max/60/0*eE3E5H0AoqkhqK1z.png?q=20)![medium blog image](https://miro.medium.com/max/1648/0*eE3E5H0AoqkhqK1z.png)![medium blog image](https://miro.medium.com/max/60/0*Q0CMqFd4PozLDFPB.png?q=20)![medium blog image](https://miro.medium.com/max/1638/0*Q0CMqFd4PozLDFPB.png)![medium blog image](https://miro.medium.com/max/3216/0*HQpndNhm1Z_xSoHb.png)![medium blog image](https://miro.medium.com/max/60/0*qHzGRLTOMTf30miT.png?q=20)![medium blog image](https://miro.medium.com/max/1614/0*qHzGRLTOMTf30miT.png)\[
 
 ]\(https://github.com/bgoonz)
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://py-prac-42.netlify.app/" width="100%" height="1200px">
 <iframe>
+>>>>>>> master
 
 # Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial)
 
 # Basics
 
+<<<<<<< HEAD
+- **PEP8** : Python Enhancement Proposals, style-guide for Python.
+-
+- print is the equivalent of console.log.
+=======
 -   **PEP8** : Python Enhancement Proposals, style-guide for Python.
 -
 -   print is the equivalent of console.log.
+>>>>>>> master
 
 > 'print() == console.log()'
 
@@ -58,7 +72,11 @@ thumb_image_alt: python logo
 
 # Numbers
 
+<<<<<<< HEAD
+- Python has three types of numbers:
+=======
 -   Python has three types of numbers:
+>>>>>>> master
 
 1.  **Integer**
 
@@ -84,6 +102,29 @@ No Decimal Point
 
 T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there's another 25 letters that don't get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
+<<<<<<< HEAD
+- **Type Casting** : The process of converting one number to another.
+
+**The arithmetic operators are the same between JS and Python, with two additions:**
+
+- _"\*\*" : Double asterisk for exponent._
+-
+- _"//" : Integer Division._
+-
+- **There are no spaces between math operations in Python.**
+
+- **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+
+- **There are no ++ and -- in Python, the only shorthand operators are:**
+
+# Strings
+
+- Python uses both single and double quotes.
+-
+- You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
+
+- Multiline strings use triple quotes.
+=======
 -   **Type Casting** : The process of converting one number to another.
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
@@ -105,6 +146,7 @@ T\*his is because the letter i is common place as the de facto index for any and
 -   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
 
 -   Multiline strings use triple quotes.
+>>>>>>> master
 
 **Use the len() function to get the length of a string.**
 
@@ -112,6 +154,33 @@ T\*his is because the letter i is common place as the de facto index for any and
 
 ## Python allows negative indexing (thank god!)
 
+<<<<<<< HEAD
+- Python let's you use ranges
+
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)_
+
+- The end range is exclusive just like slice in JS.
+
+<!---->
+
+- The index string function is the equiv. of indexOf() in JS
+
+<!---->
+
+- The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+
+<!---->
+
+- **You can use + to concatenate strings, just like in JS.**
+-
+- **You can also use "\*" to repeat strings or multiply strings.**
+
+- **Use the format() function to use placeholders in a string to input values later on.**
+
+<!---->
+
+- \*Shorthand way to use format function is:
+=======
 -   Python let's you use ranges
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it's methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)_
@@ -137,10 +206,30 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <!---->
 
 -   \*Shorthand way to use format function is:
+>>>>>>> master
     \*print(f'Your name is {first_name} {last_name}')
 
 ## Some useful string methods
 
+<<<<<<< HEAD
+- **Note that in JS join is used on an Array, in Python it is used on String.**
+
+<!---->
+
+- There are also many handy testing methods.
+
+# Variables and Expressions
+
+- **Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.
+-
+- Duck Typing is the fundamental approach of Python.
+
+- Assignment of a value automatically declares a variable.
+
+<!---->
+
+- **_You can chain variable assignments to give multiple var names the same value._**
+=======
 -   **Note that in JS join is used on an Array, in Python it is used on String.**
 
 <!---->
@@ -158,22 +247,55 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <!---->
 
 -   **_You can chain variable assignments to give multiple var names the same value._**
+>>>>>>> master
 
 ## Use with caution as this is highly unreadable
 
 ## The value and type of a variable can be re-assigned at any time
 
+<<<<<<< HEAD
+- \*NaN does not exist in Python, but you can 'create' it like so:
+    **print(float("nan"))\***
+
+- _Python replaces null with none._
+-
+- **\*none is an object** and can be directly assigned to a variable.\*
+=======
 -   \*NaN does not exist in Python, but you can 'create' it like so:
     **print(float("nan"))\***
 
 -   _Python replaces null with none._
 -
 -   **\*none is an object** and can be directly assigned to a variable.\*
+>>>>>>> master
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
 # Boolean Data Type
 
+<<<<<<< HEAD
+- One of the biggest benefits of Python is that it reads more like English than JS does.
+
+<!---->
+
+- By default, Python considers an object to be true UNLESS it is one of the following:
+-
+- Constant None or False
+-
+- Zero of any numeric type.
+
+- Empty Sequence or Collection.
+
+- True and False must be capitalized
+
+# Comparison Operators
+
+- Python uses all the same equality operators as JS.
+-
+- In Python, equality operators are processed from left to right.
+
+- Logical operators are processed in this order:
+=======
 -   One of the biggest benefits of Python is that it reads more like English than JS does.
 
 <!---->
@@ -195,6 +317,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 -   In Python, equality operators are processed from left to right.
 
 -   Logical operators are processed in this order:
+>>>>>>> master
 
 1.  **NOT**
 
@@ -208,7 +331,11 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # Identity vs Equality
 
+<<<<<<< HEAD
+- In the Python community it is better to use is and is not over == or !=
+=======
 -   In the Python community it is better to use is and is not over == or !=
+>>>>>>> master
 
 # If Statements
 
@@ -216,6 +343,69 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 # While Statements
 
+<<<<<<< HEAD
+- Break statement also exists in Python.
+
+<!---->
+
+- As are continue statements
+
+# Try/Except Statements
+
+- Python equivalent to try/catch
+
+<!---->
+
+- You can name an error to give the output more specificity.
+
+<!---->
+
+- You can also use the pass commmand to by pass a certain error.
+
+<!---->
+
+- The pass method won't allow you to bypass every single error so you can chain an exception series like so:
+
+<!---->
+
+- You can use an else statement to end a chain of except statements.
+
+<!---->
+
+- finally is used at the end to clean up all actions under any circumstance.
+
+<!---->
+
+- Using duck typing to check to see if some value is able to use a certain method.
+
+# Pass
+
+- Pass Keyword is required to write the JS equivalent of :
+
+# Functions
+
+- **Function definition includes:**
+-
+- **The def keyword**
+-
+- **The name of the function**
+-
+- **A list of parameters enclosed in parentheses.**
+
+- **A colon at the end of the line.**
+
+- **One tab indentation for the code to run.**
+
+- **You can use default parameters just like in JS**
+
+## **Keep in mind, default parameters must always come after regular parameters.**
+
+- _You can specify arguments by name without destructuring in Python._
+
+<!---->
+
+- The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
+=======
 -   Break statement also exists in Python.
 
 <!---->
@@ -277,6 +467,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <!---->
 
 -   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
+>>>>>>> master
 
 toUpper = lambda s: s.upper()
 

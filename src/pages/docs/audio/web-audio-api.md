@@ -1,10 +1,19 @@
 ---
+<<<<<<< HEAD
+title: Web Apis
+weight: 0
+excerpt: lorem-ipsum
+seo:
+    title: ''
+    description: ''
+=======
 title: Web Audio Api
 weight: 0
 excerpt: lorem-ipsum
 seo:
     title: 'Web Audio Api'
     description: 'This article explains some of the audio theory behind how the features of the Web Audio API work'
+>>>>>>> master
     robots: []
     extra: []
 template: docs
@@ -15,6 +24,13 @@ template: docs
 
 # Basic concepts behind Web Audio API
 
+<<<<<<< HEAD
+This article explains some of the audio theory behind how the features of the Web Audio API work, to help you make informed decisions while designing how audio is routed through your app.
+
+It won't turn you into a master sound engineer, but it will give you enough background to understand why the Web Audio API works like it does.
+
+=======
+>>>>>>> master
 ## [Audio graphs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_graphs 'Permalink to Audio graphs')
 
 The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) involves handling audio operations inside an [audio context](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext), and has been designed to allow **modular routing**. Basic audio operations are performed with **audio nodes**, which are linked together to form an **audio routing graph**. Several sources --- with different types of channel layout --- are supported even within a single context. This modular design provides the flexibility to create complex audio functions with dynamic effects.

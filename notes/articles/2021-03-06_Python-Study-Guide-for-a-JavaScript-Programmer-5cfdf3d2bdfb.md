@@ -1,3 +1,34 @@
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+---
+title: Python
+weight: 0
+excerpt: Python
+seo:
+    title: ''
+    description: ''
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
+
+<br>
+<h1>  Python Resources</h1>
+<br>
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+
+<br>
+<hr>
+<br>
+
+## My Python Docs:
+
+## [My Python Website](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
+
+=======
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 # Python Study Guide for a JavaScript Programmer
 
 A guide to commands in Python from what you know in JavaScript
@@ -6,6 +37,9 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Python Study Guide for a JavaScript Programmer
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png" class="graf-image" /></figure>### Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png" class="graf-image" />
 </figure>### Related Articles:
@@ -50,13 +84,18 @@ A guide to commands in Python from what you know in JavaScript
 ---
 
 ### Applications of Tutorial & Cheat Sheet Respectively (At Bottom Of Tutorial):
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### Basics
 
 -   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
 -   <span id="c0bf">`print` is the equivalent of `console.log`.</span>
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> 'print() == console.log()'
+=======
 > ‘print() == console.log()'
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### `#` is used to make comments in your code.
 
@@ -95,9 +134,13 @@ No Decimal Point
 
 > If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" /></figure>Than I am sure you will find the means to suspend your disbelief.
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" />
 </figure>Than I am sure you will find the means to suspend your disbelief.
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
     print(2.24) # => 2.24
     print(2.) # => 2.0
@@ -139,9 +182,13 @@ No Decimal Point
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" />
 </figure>
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ---
 
@@ -222,13 +269,22 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+-   <span id="445b">_Shorthand way to use format function is:
+=======
 -   <span id="445b">_Shorthand way to use format function is:  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     _`print(f'Your name is {first_name} {last_name}')`</span>
 
 #### Some useful string methods.
 
 -   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>- <span id="e95e">There are also many handy testing methods.</span>
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" />
 </figure>-   <span id="e95e">There are also many handy testing methods.</span>
@@ -236,6 +292,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" />
 </figure>
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ---
 
@@ -268,8 +325,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+-   <span id="4605">`NaN` \_does not exist in Python, but you can 'create' it like so:
+-   \_`print(float("nan"))`</span>
+=======
 -   <span id="4605">`NaN` _does not exist in Python, but you can 'create' it like so:  
     _`print(float("nan"))`</span>
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 -   <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
 -   <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
@@ -281,9 +343,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 -   <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" /></figure># Logical AND
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" />
 </figure># Logical AND
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     print(True and True)    # => True
     print(True and False)   # => False
     print(False and False)  # => False
@@ -320,9 +386,13 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 > **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" />
 </figure>
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ---
 
@@ -577,6 +647,19 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 #### Formatted Strings
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> Remember that in Python join() is called on a string with an array/list passed in as the argument.
+> Python has a very powerful formatting engine.
+> format() is also applied directly to strings.
+
+    shopping_list = ['bread','milk','eggs']
+    print(','.join(shopping_list))
+
+### Comma Thousands Separator
+
+    print('{:,}'.format(1234567890))
+    '1,234,567,890'
+=======
 > Remember that in Python join() is called on a string with an array/list passed in as the argument.  
 > Python has a very powerful formatting engine.  
 > format() is also applied directly to strings.
@@ -588,23 +671,44 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
     print(‘{:,}'.format(1234567890))
     ‘1,234,567,890'
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### Date and Time
 
     d = datetime.datetime(2020, 7, 4, 12, 15, 58)
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print('{:%Y-%m-%d %H:%M:%S}'.format(d))
+    '2020-07-04 12:15:58'
+=======
     print(‘{:%Y-%m-%d %H:%M:%S}'.format(d))
     ‘2020–07–04 12:15:58'
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### Percentage
 
     points = 190
     total = 220
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print('Correct answers: {:.2%}'.format(points/total))
+=======
     print(‘Correct answers: {:.2%}'.format(points/total))
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     Correct answers: 86.36%
 
 ### Data Tables
 
     width=8
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print(' decimal hex binary')
+    print('-'*27)
+    for num in range(1,16):
+    for base in 'dXb':
+    print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')
+    print()
+    Getting Input from the Command Line
+    Python runs synchronously, all programs and processes will stop when listening for a user input.
+    The input function shows a prompt to a user and waits for them to type 'ENTER'.
+=======
     print(‘ decimal hex binary')
     print(‘-'*27)
     for num in range(1,16):
@@ -614,20 +718,31 @@ You can think of this as roughly equivalent to the slice method called on a Java
     Getting Input from the Command Line
     Python runs synchronously, all programs and processes will stop when listening for a user input.
     The input function shows a prompt to a user and waits for them to type ‘ENTER'.
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     Scripts vs Programs
     Programming Script : A set of code that runs in a linear fashion.
     The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI's.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+**Python can be used to display html, css, and JS.**
+=======
 **Python can be used to display html, css, and JS.**  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 _It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
 #### Sequence : The most basic data structure in Python where the index determines the order.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> List
+> Tuple
+> Range
+=======
 > List  
 > Tuple  
 > Range  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 > Collections : Unordered data structures, hashable values.
 
 ---
@@ -643,7 +758,11 @@ _It is common to use Python as an API (Application Programming Interface)_
 ### Lists are the python equivalent of arrays.
 
     empty_list = []
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    departments = ['HR','Development','Sales','Finance','IT','Customer Support']
+=======
     departments = [‘HR','Development','Sales','Finance','IT','Customer Support']
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### You can instantiate
 
@@ -657,16 +776,28 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Instantiated with parentheses
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    time_blocks = ('AM','PM')
+
+#### Sometimes instantiated without
+
+    colors = 'red','blue','green'
+=======
     time_blocks = (‘AM','PM')
 
 #### Sometimes instantiated without
 
     colors = ‘red','blue','green'
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     numbers = 1, 2, 3
 
 #### Tuple() built in can be used to convert other data into a tuple
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    tuple('abc') # returns ('a', 'b', 'c')
+=======
     tuple(‘abc') # returns (‘a', ‘b', ‘c')
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     tuple([1,2,3]) # returns (1, 2, 3)
     # Think of tuples as constant variables.
 
@@ -674,8 +805,13 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 **Declared using one to three parameters**.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> Start : opt. default 0, first \# in sequence.
+> Stop : required next number past the last number in the sequence.
+=======
 > Start : opt. default 0, first \# in sequence.  
 > Stop : required next number past the last number in the sequence.  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 > Step : opt. default 1, difference between each number in the sequence.
 
     range(5) # [0, 1, 2, 3, 4]
@@ -692,9 +828,15 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Mutable.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    a = {'one':1, 'two':2, 'three':3}
+    b = dict(one=1, two=2, three=3)
+    c = dict([('two', 2), ('one', 1), ('three', 3)])
+=======
     a = {‘one':1, ‘two':2, ‘three':3}
     b = dict(one=1, two=2, three=3)
     c = dict([(‘two', 2), (‘one', 1), (‘three', 3)])
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     # a, b, and c are all equal
 
 **_Declared with curly braces of the built in dict()_**
@@ -709,6 +851,16 @@ _It is common to use Python as an API (Application Programming Interface)_
 
 #### Common Uses:
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> Removing Duplicates
+> Membership Testing
+> Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
+
+**Standard Set is mutable, Python has a immutable version called frozenset.
+Sets created by putting comma seperated values inside braces:**
+
+    school_bag = {'book','paper','pencil','pencil','book','book','book','eraser'}
+=======
 > Removing Duplicates  
 > Membership Testing  
 > Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
@@ -717,11 +869,16 @@ _It is common to use Python as an API (Application Programming Interface)_
 Sets created by putting comma seperated values inside braces:**
 
     school_bag = {‘book','paper','pencil','pencil','book','book','book','eraser'}
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     print(school_bag)
 
 #### Also can use set constructor to automatically put it into a set.
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    letters = set('abracadabra')
+=======
     letters = set(‘abracadabra')
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     print(letters)
     #Built-In Functions
     #Functions using iterables
@@ -740,6 +897,17 @@ Sets created by putting comma seperated values inside braces:**
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    quarters = ['First', 'Second', 'Third', 'Fourth']
+    print(enumerate(quarters))
+    print(enumerate(quarters, start=1))
+
+#### (0, 'First'), (1, 'Second'), (2, 'Third'), (3, 'Fourth')
+
+#### (1, 'First'), (2, 'Second'), (3, 'Third'), (4, 'Fourth')
+
+> zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.
+=======
     quarters = [‘First', ‘Second', ‘Third', ‘Fourth']
     print(enumerate(quarters))
     print(enumerate(quarters, start=1))
@@ -749,6 +917,7 @@ Sets created by putting comma seperated values inside braces:**
 #### (1, ‘First'), (2, ‘Second'), (3, ‘Third'), (4, ‘Fourth')
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable.  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 > Functions that analyze iterable
 
 **len(iterable) : returns the count of the number of items.**
@@ -757,7 +926,11 @@ Sets created by putting comma seperated values inside braces:**
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+_key optional function which converts an item to a value to be compared.
+=======
 _key optional function which converts an item to a value to be compared.  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
@@ -770,7 +943,11 @@ _There is a faster way to concatenate an array of strings into one string, so do
 
 ### Working with dictionaries
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+**dir(dictionary) : returns the list of keys in the dictionary.
+=======
 **dir(dictionary) : returns the list of keys in the dictionary.  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 Working with sets**
 
 **Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
@@ -802,7 +979,11 @@ Always Includes:
 
 > 1. The for keyword
 > 2. A variable name
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> 3. The 'in' keyword
+=======
 > 3. The ‘in' keyword
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 > 4. An iterable of some kid
 > 5. A colon
 > 6. On the next line, an indented block of code called the for clause.
@@ -811,16 +992,26 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print('My name is')
+    for i in range(5):
+    print('Carlita Cinco (' + str(i) + ')')
+=======
     print(‘My name is')
     for i in range(5):
     print(‘Carlita Cinco (‘ + str(i) + ‘)')
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
     total = 0
     for num in range(101):
     total += num
     print(total)
     Looping over a list in Python
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    for c in ['a', 'b', 'c']:
+=======
     for c in [‘a', ‘b', ‘c']:
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     print(c)
 
     lst = [0, 1, 2, 3]
@@ -829,15 +1020,25 @@ Always Includes:
 
 **_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+    for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+=======
     supplies = [‘pens', ‘staplers', ‘flame-throwers', ‘binders']
     for i in range(len(supplies)):
     print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 **You can loop and destructure at the same time.**
 
     l = 1, 2], [3, 4], [5, 6
     for a, b in l:
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print(a, ', ', b)
+=======
     print(a, ‘, ‘, b)
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 > Prints 1, 2
 
@@ -847,7 +1048,11 @@ Always Includes:
 
 **You can use values() and keys() to loop over dictionaries.**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    spam = {'color': 'red', 'age': 42}
+=======
     spam = {‘color': ‘red', ‘age': 42}
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
     for v in spam.values():
     print(v)
 
@@ -869,14 +1074,24 @@ _Prints age_
     for i in spam.items():
     print(i)
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+_Prints ('color', 'red')_
+
+_Prints ('age', 42)_
+=======
 _Prints (‘color', ‘red')_
 
 _Prints (‘age', 42)_
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 _Destructuring to values_
 
     for k, v in spam.items():
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+    print('Key: ' + k + ' Value: ' + str(v))
+=======
     print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 _Prints Key: age Value: 42_
 
@@ -907,7 +1122,11 @@ _keyword args with default values_
 
 ### **Importing in Python**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+**Modules are similar to packages in Node.js**
+=======
 **Modules are similar to packages in Node.js**  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 Come in different types:
 
 Built-In,
@@ -922,10 +1141,17 @@ Custom.
 
 ### **Terms**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+> module : Python code in a separate file.
+> package : Path to a directory that contains modules.
+> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.
+> submodule : Another file in a module's folder.
+=======
 > module : Python code in a separate file.  
 > package : Path to a directory that contains modules.  
 > <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"> > <strong>init.py</strong> > </a> : Default file for a package.  
 > submodule : Another file in a module's folder.  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 > function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
@@ -951,10 +1177,17 @@ _Use multiple lines for clarity when importing._
 
 **format() was introduced with P3**
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+**All strings in P3 are unicode and encoded.
+md5 was removed.**
+
+**ConfigParser was renamed to configparser
+=======
 **All strings in P3 are unicode and encoded.  
 md5 was removed.**
 
 **ConfigParser was renamed to configparser  
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 sets were killed in favor of set() class.**
 
 #### **print was a statement in P2, but is a function in P3.**
@@ -963,6 +1196,19 @@ sets were killed in favor of set() class.**
 
 ### Cheat Sheet:
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
+
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+Or Checkout my personal Resource Site:
+
+<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -971,11 +1217,19 @@ sets were killed in favor of set() class.**
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md
 
 ### Python Cheat Sheet:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
+<<<<<<< HEAD:notes/docs/_SCRAp/python/index.md
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
+<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
 <strong>bgoonz's gists</strong>
 <br />
@@ -1006,3 +1260,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="p-canonical">Canonical link</a>
 
 on September 23, 2021.
+>>>>>>> master:notes/articles/2021-03-06_Python-Study-Guide-for-a-JavaScript-Programmer-5cfdf3d2bdfb.md

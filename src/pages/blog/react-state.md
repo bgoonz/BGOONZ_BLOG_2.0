@@ -4,6 +4,21 @@ template: post
 subtitle: In React, we write event handlers directly on the elements in our JSX
 excerpt: In React, we write event handlers directly on the elements in our JSX
 date: 2022-05-04T19:10:59.235Z
+<<<<<<< HEAD
+image: /blog/react2.jpg
+thumb_image: /blog/react2.jpg
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/js.yaml
+show_author_bio: true
+related_posts:
+  - src/pages/blog/react-semantics.md
+cmseditable: true
+---
+
+## [Handling events](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_events "Permalink to Handling events")
+=======
 image: https://bgoonz-blog.netlify.app/images/react.gif
 thumb_image: https://bgoonz-blog.netlify.app/images/react.gif
 image_position: right
@@ -23,22 +38,35 @@ cmseditable: true
 ---
 
 ## [Handling events](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_events 'Permalink to Handling events')
+>>>>>>> master
 
 If you've only written vanilla JavaScript before now, you might be used to having a separate JavaScript file, where you query for some DOM nodes and attach listeners to them. For example:
 
 ```jsx
+<<<<<<< HEAD
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+  alert("hi!");
+=======
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', () => {
     alert('hi!');
+>>>>>>> master
 });
 ```
 
 In React, we write event handlers directly on the elements in our JSX, like this:
 
 ```jsx
+<<<<<<< HEAD
+<button type="button" onClick={() => alert("hi!")}>
+  Say hi!
+=======
 <button type="button" onClick={() => alert('hi!')}>
     Say hi!
+>>>>>>> master
 </button>
 ```
 
@@ -48,19 +76,33 @@ In the above example, we're adding an `onClick` attribute to the `<button>` elem
 
 The `onClick` attribute has special meaning here: it tells React to run a given function when the user clicks on the button. There are a couple of other things to note:
 
+<<<<<<< HEAD
+- The camel-cased nature of `onClick` is important — JSX will not recognize `onclick` (again, it is already used in JavaScript for a specific purpose, which is related but different — standard [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) handler properties).
+- All browser events follow this format in JSX – `on`, followed by the name of the event.
+
+Let's apply this to our app, starting in the `Form.js` component.
+
+### [Handling form submission](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_form_submission "Permalink to Handling form submission")
+=======
 -   The camel-cased nature of `onClick` is important — JSX will not recognize `onclick` (again, it is already used in JavaScript for a specific purpose, which is related but different — standard [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) handler properties).
 -   All browser events follow this format in JSX – `on`, followed by the name of the event.
 
 Let's apply this to our app, starting in the `Form.js` component.
 
 ### [Handling form submission](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_form_submission 'Permalink to Handling form submission')
+>>>>>>> master
 
 At the top of the `Form()` component function, create a function named `handleSubmit()`. This function should [prevent the default behavior of the `submit` event](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#preventing_default_behavior). After that, it should trigger an `alert()`, which can say whatever you'd like. It should end up looking something like this:
 
 ```jsx
 function handleSubmit(e) {
+<<<<<<< HEAD
+  e.preventDefault();
+  alert("Hello, world!");
+=======
     e.preventDefault();
     alert('Hello, world!');
+>>>>>>> master
 }
 ```
 
@@ -72,13 +114,21 @@ To use this function, add an `onSubmit` attribute to the [`<form>`](https://deve
 
 Now if you head back to your browser and click on the "Add" button, your browser will show you an alert dialog with the words "Hello, world!" — or whatever you chose to write there.
 
+<<<<<<< HEAD
+## [Callback props](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#callback_props "Permalink to Callback props")
+=======
 ## [Callback props](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#callback_props 'Permalink to Callback props')
+>>>>>>> master
 
 In React applications, interactivity is rarely confined to just one component: events that happen in one component will affect other parts of the app. When we start giving ourselves the power to make new tasks, things that happen in the `<Form />` component will affect the list rendered in `<App />`.
 
 We want our `handleSubmit()` function to ultimately help us create a new task, so we need a way to pass information from `<Form />` to `<App />`. We can't pass data from child to parent in the same way as we pass data from parent to child using standard props. Instead, we can write a function in `<App />` that will expect some data from our form as an input, then pass that function to `<Form />` as a prop. This function-as-a-prop is called a callback prop. Once we have our callback prop, we can call it inside `<Form />` to send the right data to `<App />`.
 
+<<<<<<< HEAD
+### [Handling form submission via callbacks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_form_submission_via_callbacks "Permalink to Handling form submission via callbacks")
+=======
 ### [Handling form submission via callbacks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#handling_form_submission_via_callbacks 'Permalink to Handling form submission via callbacks')
+>>>>>>> master
 
 Inside the top of our `App()` component function, create a function named `addTask()` which has a single parameter of `name`:
 
@@ -107,7 +157,11 @@ Clicking on the "Add" button in your browser will prove that the `addTask()` cal
 
 **Note:** We decided to name our callback prop `addTask` to make it easy to understand what the prop will do. Another common convention you may well come across in React code is to prefix callback prop names with the word `on`, followed by the name of the event that will cause them to be run. For instance, we could have given our form a prop of `onSubmit` with the value of `addTask`.
 
+<<<<<<< HEAD
+## [State and the `useState` hook](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#state_and_the_usestate_hook "Permalink to State and the useState hook")
+=======
 ## [State and the `useState` hook](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#state_and_the_usestate_hook 'Permalink to State and the useState hook')
+>>>>>>> master
 
 So far, we've used props to pass data through our components and this has served us just fine. Now that we're dealing with user input and data updates, however, we need something more.
 
@@ -135,11 +189,19 @@ const [name, setName] = useState('Use hooks!');
 
 What's going on in this line of code?
 
+<<<<<<< HEAD
+- We are setting the initial `name` value as "Use hooks!".
+- We are defining a function whose job is to modify `name`, called `setName()`.
+- `useState()` returns these two things, so we are using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to capture them both in separate variables.
+
+### [Reading state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#reading_state "Permalink to Reading state")
+=======
 -   We are setting the initial `name` value as "Use hooks!".
 -   We are defining a function whose job is to modify `name`, called `setName()`.
 -   `useState()` returns these two things, so we are using [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to capture them both in separate variables.
 
 ### [Reading state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#reading_state 'Permalink to Reading state')
+>>>>>>> master
 
 You can see the `name` state in action right away. Add a `value` attribute to the form's input, and set its value to `name`. Your browser will render "Use hooks!" inside the input.
 
@@ -160,7 +222,11 @@ Change "Use hooks!" to an empty string once you're done; this is what we want fo
 const [name, setName] = useState('');
 ```
 
+<<<<<<< HEAD
+### [Reading user input](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#reading_user_input "Permalink to Reading user input")
+=======
 ### [Reading user input](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#reading_user_input 'Permalink to Reading user input')
+>>>>>>> master
 
 Before we can change the value of `name`, we need to capture a user's input as they type. For this, we can listen to the `onChange` event. Let's write a `handleChange()` function, and listen for it on the `<input />` tag.
 
@@ -194,7 +260,11 @@ function handleChange(e) {
 }
 ```
 
+<<<<<<< HEAD
+### [Updating state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#updating_state "Permalink to Updating state")
+=======
 ### [Updating state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#updating_state 'Permalink to Updating state')
+>>>>>>> master
 
 Logging isn't enough — we want to actually store the updated state of the name as the input value changes! Change the `console.log()` to `setName()`, as shown below:
 
@@ -261,11 +331,19 @@ export default Form;
 
 **Note:** One thing you'll notice is that you are able to submit empty tasks by just pressing the Add button without entering a task name. Can you think of a way to disallow empty tasks from being added? As a hint, you probably need to add some kind of check into the `handleSubmit()` function.
 
+<<<<<<< HEAD
+## [Putting it all together: Adding a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#putting_it_all_together_adding_a_task "Permalink to Putting it all together: Adding a task")
+
+Now that we've practiced with events, callback props, and hooks we're ready to write functionality that will allow a user to add a new task from their browser.
+
+### [Tasks as state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#tasks_as_state "Permalink to Tasks as state")
+=======
 ## [Putting it all together: Adding a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#putting_it_all_together_adding_a_task 'Permalink to Putting it all together: Adding a task')
 
 Now that we've practiced with events, callback props, and hooks we're ready to write functionality that will allow a user to add a new task from their browser.
 
 ### [Tasks as state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#tasks_as_state 'Permalink to Tasks as state')
+>>>>>>> master
 
 Import `useState` into `App.js`, so that we can store our tasks in state — update your `React` import line to the following:
 
@@ -293,7 +371,11 @@ const taskList = tasks.map(task => (
   );
 ```
 
+<<<<<<< HEAD
+### [Adding a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#adding_a_task "Permalink to Adding a task")
+=======
 ### [Adding a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#adding_a_task 'Permalink to Adding a task')
+>>>>>>> master
 
 We've now got a `setTasks` hook that we can use in our `addTask()` function to update our list of tasks. There's one problem however: we can't just pass the `name` argument of `addTask()` into `setTasks`, because `tasks` is an array of objects and `name` is a string. If we tried to do this, the array would be replaced with the string.
 
@@ -334,7 +416,11 @@ const newTask = { id: "todo-" + nanoid(), name: name, completed: false };
 
 Save everything, and try your app again — now you can add tasks without getting that warning about duplicate IDs.
 
+<<<<<<< HEAD
+## [Detour: counting tasks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#detour_counting_tasks "Permalink to Detour: counting tasks")
+=======
 ## [Detour: counting tasks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#detour_counting_tasks 'Permalink to Detour: counting tasks')
+>>>>>>> master
 
 Now that we can add new tasks, you may notice a problem: our heading reads 3 tasks remaining, no matter how many tasks we have! We can fix this by counting the length of `taskList` and changing the text of our heading accordingly.
 
@@ -357,11 +443,19 @@ Now you can replace the list heading's text content with the `headingText` varia
 <h2 id="list-heading">{headingText}</h2>
 ```
 
+<<<<<<< HEAD
+## [Completing a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#completing_a_task "Permalink to Completing a task")
+
+You might notice that, when you click on a checkbox, it checks and unchecks appropriately. As a feature of HTML, the browser knows how to remember which checkbox inputs are checked or unchecked without our help. This feature hides a problem, however: toggling a checkbox doesn't change the state in our React application. This means that the browser and our app are now out-of-sync. We have to write our own code to put the browser back in sync with our app.
+
+### [Proving the bug](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#proving_the_bug "Permalink to Proving the bug")
+=======
 ## [Completing a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#completing_a_task 'Permalink to Completing a task')
 
 You might notice that, when you click on a checkbox, it checks and unchecks appropriately. As a feature of HTML, the browser knows how to remember which checkbox inputs are checked or unchecked without our help. This feature hides a problem, however: toggling a checkbox doesn't change the state in our React application. This means that the browser and our app are now out-of-sync. We have to write our own code to put the browser back in sync with our app.
 
 ### [Proving the bug](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#proving_the_bug 'Permalink to Proving the bug')
+>>>>>>> master
 
 Before we fix the problem, let's observe it happening.
 
@@ -408,7 +502,11 @@ Object { id: "task-0", name: "Eat", completed: true }
 
 The checkbox unchecks in the browser, but our console tells us that Eat is still completed. We will fix that next!
 
+<<<<<<< HEAD
+### [Synchronizing the browser with our data](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#synchronizing_the_browser_with_our_data "Permalink to Synchronizing the browser with our data")
+=======
 ### [Synchronizing the browser with our data](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#synchronizing_the_browser_with_our_data 'Permalink to Synchronizing the browser with our data')
+>>>>>>> master
 
 Let's revisit our `toggleTaskCompleted()` function in `App.js`. We want it to change the `completed` property of only the task that was toggled, and leave all the others alone. To do this, we'll `map()` over the task list and just change the one we completed.
 
@@ -433,11 +531,19 @@ Here, we define an `updatedTasks` constant that maps over the original `tasks` a
 
 Then we call `setTasks()` with this new array in order to update our state.
 
+<<<<<<< HEAD
+## [Deleting a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#deleting_a_task "Permalink to Deleting a task")
+
+Deleting a task will follow a similar pattern to toggling its completed state: We need to define a function for updating our state, then pass that function into `<Todo />` as a prop and call it when the right event happens.
+
+### [The `deleteTask` callback prop](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#the_deletetask_callback_prop "Permalink to The deleteTask callback prop")
+=======
 ## [Deleting a task](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#deleting_a_task 'Permalink to Deleting a task')
 
 Deleting a task will follow a similar pattern to toggling its completed state: We need to define a function for updating our state, then pass that function into `<Todo />` as a prop and call it when the right event happens.
 
 ### [The `deleteTask` callback prop](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#the_deletetask_callback_prop 'Permalink to The deleteTask callback prop')
+>>>>>>> master
 
 Here we'll start by writing a `deleteTask()` function in your `App` component. Like `toggleTaskCompleted()`, this function will take an `id` parameter, and we will log that `id` to the console to start with. Add the following below `toggleTaskCompleted()`:
 
@@ -478,7 +584,11 @@ Update the "Delete" button inside Todo.js, like so:
 
 Now when you click on any of the "Delete" buttons in the app, your browser console should log the ID of the related task.
 
+<<<<<<< HEAD
+## [Deleting tasks from state and UI](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#deleting_tasks_from_state_and_ui "Permalink to Deleting tasks from state and UI")
+=======
 ## [Deleting tasks from state and UI](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state#deleting_tasks_from_state_and_ui 'Permalink to Deleting tasks from state and UI')
+>>>>>>> master
 
 Now that we know `deleteTask()` is invoked correctly, we can call our `setTasks()` hook in `deleteTask()` to actually delete that task from the app's state as well as visually in the app UI. Since `setTasks()` expects an array as an argument, we should provide it with a new array that copies the existing tasks, _excluding_ the task whose ID matches the one passed into `deleteTask()`.
 
