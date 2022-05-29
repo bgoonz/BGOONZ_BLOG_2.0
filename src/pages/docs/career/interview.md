@@ -8,7 +8,7 @@ seo:
     robots: []
     extra:
         - name: 'og:image'
-          value: images/7-b052e510.jpg
+          value: images/og-image.png
           keyName: property
           relativeUrl: true
 template: docs
