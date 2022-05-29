@@ -3,47 +3,41 @@ module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
     plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-source-data`,
-        `gatsby-transformer-remark`,
+        'gatsby-plugin-react-helmet',
+        'gatsby-source-data',
+        'gatsby-transformer-remark',
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-source-filesystem',
             options: {
-                name: `pages`,
+                name: 'pages',
                 path: `${__dirname}/src/pages`
             }
         },
         {
-            resolve: `gatsby-plugin-disqus`,
+            resolve: 'gatsby-plugin-disqus',
             options: {
-                shortname: `webdevhub-1`,
+                shortname: 'webdevhub-1',
             }
         },
         {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-              plugins: ['gatsby-remark-code-buttons']
-            }
-          },
-        {
-            resolve: `gatsby-plugin-sass`,
+            resolve: 'gatsby-plugin-sass',
             options: {}
         },
         {
-            resolve: `gatsby-remark-page-creator`,
+            resolve: 'gatsby-remark-page-creator',
             options: {}
         },
         {
-            resolve: `@stackbit/gatsby-plugin-menus`,
+            resolve: '@stackbit/gatsby-plugin-menus',
             options: {
-                sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`,
+                sourceUrlPath: 'fields.url',
+                pageContextProperty: 'menus',
             },
         },
         {
-            resolve: `gatsby-plugin-disqus`,
+            resolve: 'gatsby-plugin-disqus',
             options: {
-                shortname: `webdevhub-1`
+                shortname: 'webdevhub-1'
             }
         },
     ]
