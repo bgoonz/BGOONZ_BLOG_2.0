@@ -2,23 +2,24 @@
 title: Code Playgrounds of 2021
 template: post
 subtitle: A plethora of front-end code playgrounds have appeared over the years.
-  They offer a convenient way to experiment with client-side code and…
+    They offer a convenient way to experiment with client-side code and…
 excerpt: A plethora of front-end code playgrounds have appeared over the years.
-  They offer a convenient way to experiment with client-side code and…
+    They offer a convenient way to experiment with client-side code and…
 date: 2022-05-29T01:42:52.008Z
 image: https://cdn-images-1.medium.com/max/800/1*oUZy2IkIQGDbkSVQRGCvKQ.png
 thumb_image: https://cdn-images-1.medium.com/max/800/1*oUZy2IkIQGDbkSVQRGCvKQ.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/content-management.yaml
+    - src/data/categories/content-management.yaml
 tags:
-  - src/data/tags/cms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/embedding-media-in-html.md
+    - src/pages/blog/embedding-media-in-html.md
 cmseditable: true
 ---
+
 # The Best Cloud-Based Code Playgrounds of 2021 (Part 1)
 
 A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with client-side code and…
