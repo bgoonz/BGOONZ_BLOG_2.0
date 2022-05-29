@@ -78,6 +78,20 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
+<>
+<div id="sb-search-example">
+    <div className="sb-search-icon" id="myCustomSearchButtonID">
+        <i className="sb-icon">
+</i>
+        <p>Search</p>
+    </div>
+    <style dangerouslySetInnerHTML={
+        {
+            __html: "\n\t\t@font-face {\n font-family: font-sb;\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784);\n src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');\n font-weight: 400;\n font-style: normal\n }\n\n #sb-search-example p {\n font-family: sans-serif;\n font-size: 18px;\n line-height: 12px;\n\t margin: 0;\n }\n\n #sb-search-example {\n position: static;\n top: 0;\n width: auto;\n place-content: center;\n display: inline-block;\n box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);\n border: solid 5px white;\n border-radius: 100px;\n flex-shrink: initial;\n flex-grow: initial;\n }\n\n\n #sb-search-example .sb-icon {\n font: normal normal 400 26px font-sb;\n align-items: center;\n padding: 10px;\n speak: none;\n display: inline-block;\n text-decoration: inherit;\n text-align: center;\n text-transform: none;\n cursor: pointer;\n margin: 0;\n }\n\n #sb-search-example .sb-search-icon {\n box-sizing: border-box;\n border: 0px;\n align-items: center;\n background: #007cff;\n color: #fff;\n cursor: pointer;\n display: flex;\n border-radius: 26px;\n padding: 0 20px 0 4px;\n }\n\t"
+        }
+    }/>
+</div>
+</>
 
 
                 <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
