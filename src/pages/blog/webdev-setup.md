@@ -4,17 +4,22 @@ template: post
 subtitle: Basic Web Development Environment Setup
 excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
 date: 2022-05-08T18:10:03.296Z
-image: images/https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
-thumb_image: images/https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
+image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
+thumb_image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/js.yaml
+  - src/data/categories/javascript.yaml
 tags:
   - src/data/tags/links.yaml
+  - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/vs-code-extensions.md
+  - src/pages/blog/code-playgrounds-of-2021.md
+  - src/pages/blog/adding-css-to-your-html.md
+  - src/pages/blog/deploy-react-app-to-heroku.md
 cmseditable: true
 ---
 
