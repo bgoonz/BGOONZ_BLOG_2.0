@@ -51,12 +51,14 @@ In other words, `Map` has characteristics of both `Object` and `Array`:
 A new `Map` can be created like this:
 
 ```js
+//
 const map = new Map();
 ```
 
 Which returns an empty `Map`:
 
 ```js
+//
 
 Map(0) {}
 ```
@@ -64,6 +66,7 @@ Map(0) {}
 Another way of creating a `Map` is with initial values. Here's how to create a `Map` with three key-value pairs:
 
 ```js
+//
 const freeCodeCampBlog = new Map([
     ['name', 'freeCodeCamp'],
     ['type', 'blog'],
@@ -74,6 +77,7 @@ const freeCodeCampBlog = new Map([
 Which returns a `Map` with three elements:
 
 ```js
+//
 
 Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"}
 ```
@@ -85,6 +89,7 @@ To add value to a Map, use the `set(key, value)` method.
 The `set(key, value)` method takes two parameters, `key` and `value`, where the key and value can be of any type, a primitive (`boolean`, `string`, `number`, etc.) or an object:
 
 ```js
+//
 js;
 
 const map = new Map();
@@ -97,6 +102,7 @@ map.set('writer', 'Tapas Adhikary');
 Output:
 
 ```js
+//
 
 Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"}
 ```
@@ -104,12 +110,14 @@ Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"
 Please note, if you use the same key to add a value to a `Map` multiple times, it'll always replace the previous value:
 
 ```js
+//
 map.set('writer', 'Someone else!');
 ```
 
 So the output would be:
 
 ```js
+//
 
 Map(3)
 {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Someone else!"}
@@ -120,6 +128,7 @@ Map(3)
 To get a value from a `Map`, use the `get(key)` method:
 
 ```js
+//
 map.get('name');
 ```
 
@@ -128,6 +137,7 @@ map.get('name');
 `Map` keys can be of any type, a primitive, or an object. This is one of the major differences between `Map` and regular JavaScript objects where the key can only be a string:
 
 ```js
+//
 js;
 
 const funMap = new Map();
@@ -144,6 +154,7 @@ console.log(funMap);
 Here is the output:
 
 ```js
+//
 
 Map(3)
 {
@@ -156,6 +167,7 @@ Map(3)
 A regular JavaScript object always treats the key as a string. Even when you pass it a primitive or object, it internally converts the key into a string:
 
 ```js
+//
 js;
 
 const funObj = {};
@@ -175,20 +187,24 @@ JavaScript's `Map` has in-built properties and methods that make it easy to use.
 -   Use the `clear()` method to remove all the elements from the `Map` at once:
 
 ```js
+//
 console.log('size of the map is', map.size);
 ```
 
 ```js
+//
 console.log(map.has('John'));
 
 console.log(map.has('Tapas'));
 ```
 
 ```js
+//
 map.delete('Sam');
 ```
 
 ```js
+//
 map.clear();
 
 map.size;
@@ -201,6 +217,7 @@ The methods `keys()`, `values()` and `entries()` methods return a `MapIterator`,
 First, create a simple `Map`:
 
 ```js
+//
 const ageMap = new Map([
     ['Jack', 20],
     ['Alan', 34],
@@ -214,14 +231,17 @@ const ageMap = new Map([
 -   Get all the entries (key-value pairs):
 
 ```js
+//
 console.log(ageMap.keys());
 ```
 
 ```js
+//
 console.log(ageMap.values());
 ```
 
 ```js
+//
 console.log(ageMap.entries());
 ```
 
@@ -230,6 +250,7 @@ console.log(ageMap.entries());
 You can use either the `forEach` or `for-of` loop to iterate over a `Map`:
 
 ```js
+//
 ageMap.forEach((value, key) => {
     console.log(`${key} is ${value} years old!`);
 });
@@ -242,6 +263,7 @@ for (const [key, value] of ageMap) {
 The output is going to be the same in both cases:
 
 ```js
+//
 
 Jack is 20 years old!
 Alan is 34 years old!
@@ -254,6 +276,7 @@ Sam is 9 years old!
 You may encounter a situation where you need to convert an `object` to a `Map`\-like structure. You can use the method `entries` of `Object` to do that:
 
 ```js
+//
 const address = {
     Tapas: 'Bangalore',
     James: 'Huston',
@@ -268,6 +291,7 @@ const addressMap = new Map(Object.entries(address));
 If you want to do the reverse, you can use the `fromEntries` method:
 
 ```js
+//
 Object.fromEntries(map);
 ```
 
@@ -279,6 +303,7 @@ There are a couple of ways to convert a map into an array:
 -   Using the spread operator:
 
 ```js
+//
 const map = new Map();
 map.set('milk', 200);
 map.set('tea', 300);
@@ -288,6 +313,7 @@ console.log(Array.from(map));
 ```
 
 ```js
+//
 console.log([...map]);
 ```
 
@@ -319,6 +345,7 @@ A `Set` in JavaScript behaves the same way as a mathematical set.
 A new `Set` can be created like this:
 
 ```js
+//
 const set = new Set();
 console.log(set);
 ```
@@ -326,6 +353,7 @@ console.log(set);
 And the output will be an empty `Set`:
 
 ```js
+//
 
 Set(0) {}
 ```
@@ -333,6 +361,7 @@ Set(0) {}
 Here's how to create a `Set` with some initial values:
 
 ```js
+//
 const fruteSet = new Set(['🍉', '🍎', '🍈', '🍏']);
 console.log(fruteSet);
 ```
@@ -340,6 +369,7 @@ console.log(fruteSet);
 Output:
 
 ```js
+//
 
 Set(4) {"🍉", "🍎", "🍈", "🍏"}
 ```
@@ -352,10 +382,12 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 -   Use the `add(element)` method to add an element to the `Set`:
 
 ```js
+//
 set.size;
 ```
 
 ```js
+//
 const saladSet = new Set();
 
 saladSet.add('🍅');
@@ -371,6 +403,7 @@ I love cucumbers! How about adding one more?
 Oh no, I can't - `Set` is a collection of **unique** elements:
 
 ```js
+//
 saladSet.add('🥒');
 console.log(saladSet);
 ```
@@ -381,12 +414,14 @@ The output is the same as before - nothing got added to the `saladSet`.
 -   Use the `delete(element)` method to remove the avocado(🥑) from the `Set`:
 
 ```js
+//
 console.log('Does the salad have a carrot?', saladSet.has('🥕'));
 
 console.log('Does the salad have broccoli?', saladSet.has('🥦'));
 ```
 
 ```js
+//
 saladSet.delete('🥑');
 console.log('I do not like 🥑, remove from the salad:', saladSet);
 ```
@@ -394,6 +429,7 @@ console.log('I do not like 🥑, remove from the salad:', saladSet);
 Now our salad `Set` is as follows:
 
 ```js
+//
 
 Set(3) {"🍅", "🥕", "🥒"}
 ```
@@ -401,6 +437,7 @@ Set(3) {"🍅", "🥕", "🥒"}
 -   Use the `clear()` method to remove all elements from a `Set`:
 
 ```js
+//
 saladSet.clear();
 ```
 
@@ -409,6 +446,7 @@ saladSet.clear();
 `Set` has a method called `values()` which returns a `SetIterator` to get all its values:
 
 ```js
+//
 js;
 
 const houseNos = new Set([360, 567, 101]);
@@ -419,6 +457,7 @@ console.log(houseNos.values());
 Output:
 
 ```js
+//
 
 SetIterator {360, 567, 101}
 ```
@@ -430,12 +469,14 @@ Interestingly, JavaScript tries to make `Set` compatible with `Map`. That's why 
 As `Set` doesn't have keys, the `keys()` method returns a `SetIterator` to retrieve its values:
 
 ```js
+//
 console.log(houseNos.keys());
 ```
 
 With `Map`, the `entries()` method returns an iterator to retrieve key-value pairs. Again there are no keys in a `Set`, so `entries()` returns a `SetIterator` to retrieve the value-value pairs:
 
 ```js
+//
 console.log(houseNos.entries());
 ```
 
@@ -444,6 +485,7 @@ console.log(houseNos.entries());
 We can enumerate over a Set using `forEach` and `for-of` loops:
 
 ```js
+//
 houseNos.forEach((value) => {
     console.log(value);
 });
@@ -456,6 +498,7 @@ for (const value of houseNos) {
 The output of both is:
 
 ```js
+//
 360;
 567;
 101;
@@ -474,6 +517,7 @@ Think of `Set` as an extension of a regular array, just with more muscles. The `
 Converting a `Set` into an array is simple:
 
 ```js
+//
 const arr = [...houseNos];
 console.log(arr);
 ```
@@ -483,6 +527,7 @@ console.log(arr);
 Creating a `Set` is a really easy way to remove duplicate values from an array:
 
 ```js
+//
 js;
 
 const mixedFruit = ['🍉', '🍎', '🍉', '🍈', '🍏', '🍎', '🍈'];
@@ -495,6 +540,7 @@ console.log(mixedFruitSet);
 Output:
 
 ```js
+//
 
 Set(4) {"🍉", "🍎", "🍈", "🍏"}
 ```
@@ -504,6 +550,7 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 A `Set` can have elements of any type, even objects:
 
 ```js
+//
 js;
 
 const person = {
@@ -525,6 +572,7 @@ No surprise here - the `Set` contains one element that is an object.
 Let's change a property of the object and add it to the set again:
 
 ```js
+//
 person.name = 'Bob';
 
 pSet.add(person);
@@ -1100,6 +1148,7 @@ The entry point to a linked list is called the head. The head is a reference to 
 In JavaScript, a linked list looks like this:
 
 ```js
+//
 
 const list = {
     head: {
@@ -1141,6 +1190,7 @@ There are three types of linked lists:
 As stated earlier, a list node contains two items: the data and the pointer to the next node. We can implement a list node in JavaScript as follows:
 
 ```js
+//
 class ListNode {
     constructor(data) {
         this.data = data;
@@ -1619,6 +1669,7 @@ print(dict_)
 This works most of the times. However, there is a better way to do this. A more `pythonic` way. The `defaultdict` is a subclass of the built-in dict class. The `defaultdict` simply assigns the default value that we specify in case of a missing key. So, the two steps:
 
 ```js
+//
 dict_[random_key] = dict_.get(random_key, set());
 dict_[random_key].add('Hello World!');
 ```
@@ -1743,6 +1794,7 @@ The most common example of a Hash Table in JavaScript is the `Object` data type,
 In the following example, the key `Nathan` is paired with the phone number value of `"555-0182"` and the key `Jane` is paired with the value `"315-0322"`:
 
 ```js
+//
 let obj = {
     Nathan: '555-0182',
     Jane: '315-0322'
@@ -1759,6 +1811,7 @@ But JavaScript's `Object` type is a special kind of Hash Table implementation fo
 For example, the `Object` prototype has the `hasOwnProperty()` method which allows you to check if a property is not inherited:
 
 ```js
+//
 const obj = {};
 obj.name = 'Nathan';
 
@@ -1770,6 +1823,7 @@ JavaScript object inherited method call example
 JavaScript doesn't block an attempt to overwrite the `hasOwnProperty()` method, which may cause an error like this:
 
 ```js
+//
 const obj = {};
 obj.name = 'Nathan';
 obj.hasOwnProperty = true;
@@ -1784,6 +1838,7 @@ To handle these shortcomings, JavaScript created another implementation of the H
 Just like `Object`, `Map` allows you to store key-value pairs inside the data structure. Here's an example of `Map` in action:
 
 ```js
+//
 const collection = new Map();
 
 collection.set('Nathan', '555-0182');
@@ -1800,6 +1855,7 @@ Unlike the `Object` type, `Map` requires you to use the `set()` and `get()` meth
 You also can't overwrite `Map` inherited properties. For example, the following code tried to overwrite the `size` property value to `false`:
 
 ```js
+//
 const collection = new Map();
 
 collection.set('Nathan', '555-0182');
@@ -1816,6 +1872,7 @@ As you can see from the code above, you can't add a new entry to the `Map` objec
 The `Map` data structure is also iterable, which means you can loop over the data as follows:
 
 ```js
+//
 const myMap = new Map();
 
 myMap.set('Nathan', '555-0182');
@@ -1843,6 +1900,7 @@ You can implement a Hash Table in JavaScript in three steps:
 Alright, let's start with creating the `HashTable` class. The code below will create a `table` of buckets with the size of `127`:
 
 ```js
+//
 class HashTable {
     constructor() {
         this.table = new Array(127);
@@ -1862,6 +1920,7 @@ Next, you need to create the `hash()` method that will accept a `key` value and 
 A simple way to create the hash would be to sum the ASCII code of the characters in the key using the `charCodeAt()` method as follows. Note that the method is named using `_` to indicate that it's a private class:
 
 ```js
+//
 
 _hash(key) {
   let hash = 0;
@@ -1877,6 +1936,7 @@ But since the `HashTable` class only has 127 buckets, this means that the `_hash
 To ensure that the hash value doesn't exceed the bucket size, you need to use the modulo operator as shown below:
 
 ```js
+//
 
 _hash(key) {
   let hash = 0;
@@ -1954,6 +2014,7 @@ With that, you now have a working `remove()` method. Let's see if the `HashTable
 It's time to test the Hash Table implementation. Here's the full code for the Hash Table implementation again:
 
 ```js
+//
 class HashTable {
     constructor() {
         this.table = new Array(127);
@@ -1998,6 +2059,7 @@ The HashTable implementation in JavaScript
 To test the `HashTable` class, I'm going to create a new instance of the `class` and set some key/value pairs as shown below. The key/value pairs below are just arbitrary number values paired with country names without any special meaning:
 
 ```js
+//
 const ht = new HashTable();
 ht.set('Canada', 300);
 ht.set('France', 100);
@@ -2009,6 +2071,7 @@ Testing HashTable set() method
 Then, let's try to retrieve them using the `get()` method:
 
 ```js
+//
 console.log(ht.get('Canada'));
 console.log(ht.get('France'));
 console.log(ht.get('Spain'));
@@ -2019,6 +2082,7 @@ Testing HashTable get() method
 Finally, let's try to delete one of these values with the `remove()` method:
 
 ```js
+//
 console.log(ht.remove('Spain'));
 console.log(ht.get('Spain'));
 ```
@@ -2028,6 +2092,7 @@ Testing HashTable remove() method
 Alright, all the methods are working as expected. Let's try another insertion with a new `HashTable` instance and retrieve those values:
 
 ```js
+//
 const ht = new HashTable();
 
 ht.set('Spain', 110);
@@ -2050,6 +2115,7 @@ The same `hash` value will cause the index to _collide_, overwriting the previou
 Right now, the data stored in our Hash Table implementation looks as follows:
 
 ```js
+//
 [
     ['Spain', 110],
     ['France', 100]
@@ -2059,6 +2125,7 @@ Right now, the data stored in our Hash Table implementation looks as follows:
 To handle the `index` number collision, you need to store the key/value pair in a second array so that the end result looks as follows:
 
 ```js
+//
 [
     [
         ['Spain', 110],
@@ -2079,6 +2146,7 @@ To create the second array, you need to update the `set()` method so that it wil
 The complete `set()` method code will be as follows:
 
 ```js
+//
 
 set(key, value) {
   const index = this._hash(key);
@@ -2103,6 +2171,7 @@ set(key, value) {
 Next, update the `get()` method so that it will also check the second-level array with a `for` loop and return the right key/value pair:
 
 ```js
+//
 
 get(key) {
   const target = this._hash(key);
@@ -2120,6 +2189,7 @@ get(key) {
 Finally, you need to update the `remove()` method so that it will loop over the second-level array and remove the array with the right `key` value using the `splice()` method:
 
 ```js
+//
 
 remove(key) {
   const index = this._hash(key);
@@ -2143,6 +2213,7 @@ With that, your `HashTable` class will be able to avoid any index number collisi
 As a bonus, let's add a `display()` method that will display all key/value pairs stored in the Hash Table. You just need to use the `forEach()` method to iterate over the table and `map()` the values to a string as shown below:
 
 ```js
+//
 
 display() {
   this.table.forEach((values, index) => {
@@ -2157,6 +2228,7 @@ display() {
 Here's the complete `HashTable` class code again with the collision avoidance applied for your reference:
 
 ```js
+//
 class HashTable {
     constructor() {
         this.table = new Array(127);
@@ -2230,6 +2302,7 @@ Complete HashTable class implementation
 You can test the implementation by creating a new `HashTable` instance and do some insertion and deletion:
 
 ```js
+//
 const ht = new HashTable();
 
 ht.set('France', 111);

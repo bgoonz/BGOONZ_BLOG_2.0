@@ -230,6 +230,7 @@ _Access Search Insertion Deletion_
 O(1) O(n) O(1) O(n)
 
 ```js
+//
 class ArrayADT {
     constructor() {
         this.array = [];
@@ -335,6 +336,7 @@ indexvalue0 … this is the first value, stored at zero position
 3. In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ```js
+//
     // 1. Creating Arrays
     let firstArray = ["a","b","c"];
     let secondArray = ["d","e","f"];
@@ -424,6 +426,7 @@ The main difference is that object's "index" need not be numbers and is not nece
 ![](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
 
 ```js
+//
 // 16. Creating an Object
 
 let newObj = {
@@ -496,6 +499,7 @@ Access Search Insertion Deletion
 Note, here I am storing another object for every hash in my Hash Table.
 
 ```js
+//
 class HashTable {
     constructor(size) {
         this.values = {};
@@ -573,6 +577,7 @@ console.log('length gives 3:', hashTable.length()); // => 3
 Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 ```js
+//
 // 23. Creating a new Set
 let newSet = new Set();
 
@@ -668,6 +673,7 @@ Access Search Insertion Deletion
 ---
 
 ```js
+//
 function Set() {
     this.values = [];
     this.numberOfValues = 0;
@@ -780,6 +786,7 @@ O(n) O(n) O(1) O(1)
 ---
 
 ```js
+//
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -1422,6 +1429,7 @@ Graph
     //below uses the adjacency list representation.
 
 ````js
+//
         function Graph() {
           this.vertices = [];
           this.edges = [];

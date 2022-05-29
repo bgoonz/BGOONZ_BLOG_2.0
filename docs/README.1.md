@@ -118,7 +118,7 @@ find . -type f -exec chmod 644 {} \\;
     find . -name "* *" -type d | rename 's/ /_/g'
     find . -name "* *" -type f | rename 's/ /_/g'
 
-    ```sh
+    ```bash
     find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
     find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -138,14 +138,16 @@ find . -type f -exec chmod 644 {} \\;
 
 
     ```js
-    //APPEND-DIR.js
-    const fs = require('fs');
-    let cat = require('child_process')
-      .execSync('cat *')
-      .toString('UTF-8');
-    fs.writeFile('output.md', cat, err => {
-      if (err) throw err;
-    });
+
+//
+//APPEND-DIR.js
+const fs = require('fs');
+let cat = require('child_process')
+.execSync('cat \*')
+.toString('UTF-8');
+fs.writeFile('output.md', cat, err => {
+if (err) throw err;
+});
 
 ---
 

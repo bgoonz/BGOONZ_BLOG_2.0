@@ -1760,7 +1760,8 @@ To require exactly the following structure:
 
 Set the `headings` parameter to:
 
-```json
+```js
+//on
 ["# Head", "## Item", "### Detail"]
 ```
 
@@ -1782,7 +1783,8 @@ Use the special value `"*"` meaning "zero or more unspecified headings" or the
 special value `"+"` meaning "one or more unspecified headings" and set the
 `headings` parameter to:
 
-```json
+```js
+//on
 ["# Head", "## Item", "*", "## Foot", "*"]
 ```
 
@@ -1816,7 +1818,8 @@ For example, the language "JavaScript" is usually written with both the 'J' and
 'S' capitalized - though sometimes the 's' or 'j' appear in lower-case. To enforce
 the proper capitalization, specify the desired letter case in the `names` array:
 
-```json
+```js
+//on
 ["JavaScript"]
 ```
 
