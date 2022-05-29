@@ -1,6 +1,6 @@
 html {
     font-family: $font-primary;
-    font-size: 100%;
+    font-size: 95%;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll;
+    overflow: scroll!important;
 
 }
 
