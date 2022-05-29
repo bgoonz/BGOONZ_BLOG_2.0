@@ -11,6 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     overflow: scroll!important;
+    
 
 }
 
@@ -25,20 +26,7 @@ a {
     }
 }
 
-#social-embed {
-    // position: absolute !important;
-    // right: 50px !important;
-    bottom: 120px !important;
-    width: 100% !important;
-    width: 1000px !important;
-    box-shadow: inset 0px 5px 3px -10px black,
-        inset 0px -11px 8px -10px black;
-    margin: 0 auto !important;
-    height: 400px !important;
-    overflow: scroll !important;
-    border: 1px dotted black;
-    // z-index: -1;
-}
+
 #scrollBtn {
     position: fixed;
     padding: 10px;
@@ -61,7 +49,7 @@ iframe {
         inset 0px -11px 8px -10px black;
     width: 1000px;
     resize: both !important;
-    overflow: scroll;
+    overflow: scroll!important;
 }
 
 @font-face {
@@ -72,25 +60,8 @@ iframe {
     font-style: normal
 }
 
-#sb-search-example p {
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 12px;
-    margin: 0;
-}
 
-#sb-search-example {
-    position: static;
-    top: 0;
-    width: auto;
-    place-content: center;
-    display: inline-block;
-    box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
-    border: solid 5px white;
-    border-radius: 100px;
-    flex-shrink: initial;
-    flex-grow: initial;
-}
+
 
 
 #sb-search-example .sb-icon {
@@ -109,13 +80,18 @@ iframe {
     box-sizing: border-box;
     border: 0px;
     align-items: center;
-    background: #007cff;
+    background: #011957;
     color: #fff;
-    cursor: pointer;
-    display: flex;
     border-radius: 26px;
 }
-
+#sb-search-input-example {
+    /* position: static; */
+    top: 100px;
+    width: 100%;
+    height: 90px;
+    place-content: center;
+    /* display: flex; */
+}
 h1,
 h2,
 h3,
