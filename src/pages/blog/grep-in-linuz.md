@@ -9,9 +9,9 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: left
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/tools.yaml
+    - src/data/categories/tools.yaml
 tags:
-  - src/data/tags/linux.yaml
+    - src/data/tags/linux.yaml
 show_author_bio: true
 cmseditable: true
 ---
