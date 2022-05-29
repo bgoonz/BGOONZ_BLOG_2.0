@@ -23,7 +23,7 @@ function submenuToggleHandler(e) {
     this.parentNode.classList.toggle('active');
 }
 
-window.addMainNavigationHandlers = function() {
+window.addMainNavigationHandlers = function () {
     const menuToggle = document.querySelectorAll('.menu-toggle');
     if (menuToggle) {
         for (let i = 0; i < menuToggle.length; i++) {
@@ -39,7 +39,7 @@ window.addMainNavigationHandlers = function() {
     }
 };
 
-window.removeMainNavigationHandlers = function() {
+window.removeMainNavigationHandlers = function () {
     // Remove nav related classes on page load
     document.body.classList.remove('menu--opened');
 
@@ -53,16 +53,12 @@ window.removeMainNavigationHandlers = function() {
     const submenuToggle = document.querySelectorAll('.submenu-toggle');
     if (submenuToggle) {
         for (let i = 0; i < submenuToggle.length; i++) {
-            submenuToggle[i].removeEventListener(
-                'click',
-                submenuToggleHandler,
-                false
-            );
+            submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.addDocsNavigationHandlers = function() {
+window.addDocsNavigationHandlers = function () {
     const docsNavToggle = document.getElementById('docs-nav-toggle');
     if (docsNavToggle) {
         docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
@@ -71,16 +67,12 @@ window.addDocsNavigationHandlers = function() {
     const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
     if (docsSubmenuToggle) {
         for (let i = 0; i < docsSubmenuToggle.length; i++) {
-            docsSubmenuToggle[i].addEventListener(
-                'click',
-                submenuToggleHandler,
-                false
-            );
+            docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.removeDocsNavigationHandlers = function() {
+window.removeDocsNavigationHandlers = function () {
     // Remove docs nav related classes on page load
     document.body.classList.remove('docs-menu--opened');
 
@@ -92,16 +84,12 @@ window.removeDocsNavigationHandlers = function() {
     const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
     if (docsSubmenuToggle) {
         for (let i = 0; i < docsSubmenuToggle.length; i++) {
-            docsSubmenuToggle[i].removeEventListener(
-                'click',
-                submenuToggleHandler,
-                false
-            );
+            docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.addPageNavLinks = function() {
+window.addPageNavLinks = function () {
     const pageToc = document.getElementById('page-nav-inside');
     const pageTocContainer = document.getElementById('page-nav-link-container');
 
@@ -110,7 +98,7 @@ window.addPageNavLinks = function() {
 
         // Create in-page navigation
         const headerLinks = getHeaderLinks({
-            root: pageContent,
+            root: pageContent
         });
         if (headerLinks.length > 0) {
             pageToc.classList.add('has-links');
@@ -121,7 +109,7 @@ window.addPageNavLinks = function() {
         let scroll = new SmoothScroll('[data-scroll]');
         let hash = window.decodeURI(location.hash.replace('#', ''));
         if (hash !== '') {
-            window.setTimeout(function() {
+            window.setTimeout(function () {
                 let anchor = document.getElementById(hash);
                 if (anchor) {
                     scroll.animateScroll(anchor);
@@ -134,7 +122,7 @@ window.addPageNavLinks = function() {
         if (pageTocLinks.length > 0) {
             let spy = new Gumshoe('#page-nav-inside a', {
                 nested: true,
-                nestedClass: 'active-parent',
+                nestedClass: 'active-parent'
             });
         }
 
@@ -149,17 +137,14 @@ window.addPageNavLinks = function() {
 
         // Copy link url
         let clipboard = new ClipboardJS('.hash-link', {
-            text: function(trigger) {
-                return (
-                    window.location.href.replace(window.location.hash, '') +
-                    trigger.getAttribute('href')
-                );
-            },
+            text: function (trigger) {
+                return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
+            }
         });
     }
 };
 
-window.removePageNavLinks = function() {
+window.removePageNavLinks = function () {
     const pageToc = document.getElementById('page-nav-inside');
     const pageTocContainer = document.getElementById('page-nav-link-container');
 
@@ -186,10 +171,12 @@ function getElementsByTagNames(root, tagNames) {
 
 function createLinksForHeaderElements(elements) {
     let result = [];
-    let stack = [{
-        level: 0,
-        children: result,
-    }, ];
+    let stack = [
+        {
+            level: 0,
+            children: result
+        }
+    ];
     let re = /^h(\d)$/;
     for (let i = 0; i < elements.length; i++) {
         let element = elements[i];
@@ -202,9 +189,7 @@ function createLinksForHeaderElements(elements) {
         let headerLevel = parseInt(match[1], 10);
         if (!element.id) {
             if (!element.textContent) {
-                console.warn(
-                    'can not create link to element without id and without text content'
-                );
+                console.warn('can not create link to element without id and without text content');
                 continue;
             }
             element.id = element.textContent
@@ -223,7 +208,7 @@ function createLinksForHeaderElements(elements) {
             textContent: element.textContent,
             element: element,
             link: link,
-            children: [],
+            children: []
         };
         if (headerLevel > stack[stack.length - 1].level) {
             stack[stack.length - 1].children.push(obj);
@@ -267,8 +252,7 @@ function anchorForId(id) {
     anchor.setAttribute('class', 'hash-link');
     anchor.setAttribute('data-scroll', '');
     anchor.href = '#' + id;
-    anchor.innerHTML =
-        '<span class="icon-copy" aria-hidden="true"></span><span class="screen-reader-text">Copy</span>';
+    anchor.innerHTML = '<span class="icon-copy" aria-hidden="true"></span><span class="screen-reader-text">Copy</span>';
     return anchor;
 }
 
