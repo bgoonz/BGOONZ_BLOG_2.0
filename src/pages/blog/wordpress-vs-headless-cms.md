@@ -9,13 +9,13 @@ thumb_image: https://img.youtube.com/vi/PPtmowJoe3s/sddefault.jpg
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/content-management.yaml
+    - src/data/categories/content-management.yaml
 tags:
-  - src/data/tags/data-structures-algorithms.yaml
-  - src/data/tags/cms.yaml
+    - src/data/tags/data-structures-algorithms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/code-playgrounds-of-2021.md
+    - src/pages/blog/code-playgrounds-of-2021.md
 cmseditable: true
 ---
 Introduction:
