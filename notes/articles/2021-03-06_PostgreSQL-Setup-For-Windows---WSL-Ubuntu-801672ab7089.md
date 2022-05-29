@@ -27,13 +27,7 @@ If you follow this guide to a tee… you will install PostgreSQL itself on your 
 
 ### PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<<<<<<< HEAD:notes/docs/_SCRAp/tutorials/psql-setup.md
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" /></figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
-=======
-<figure>
-<img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" />
-</figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL ‘allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
->>>>>>> master:notes/articles/2021-03-06_PostgreSQL-Setup-For-Windows---WSL-Ubuntu-801672ab7089.md
 
 ### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
 
@@ -53,7 +47,6 @@ When you read "installation", that means the actual OS that's running on your ma
 
 ### Other Noteworthy Distinctions:
 
-<<<<<<< HEAD:notes/docs/_SCRAp/tutorials/psql-setup.md
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" /></figure>### Installing PostgreSQL 12
 
 To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL's commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
@@ -61,19 +54,6 @@ To install PostgreSQL 12, you need to download the installer from the Internet. 
 Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86-64.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" /></figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
-=======
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" />
-</figure>### Installing PostgreSQL 12
-
-To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL's commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
-
-Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86–64.
-
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
-</figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
->>>>>>> master:notes/articles/2021-03-06_PostgreSQL-Setup-For-Windows---WSL-Ubuntu-801672ab7089.md
 
 -   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
 -   <span id="d4d0">Thanks for the welcome. Next.</span>
