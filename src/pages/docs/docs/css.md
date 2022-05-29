@@ -63,6 +63,7 @@ CSS Selectors
 <!-- -->
 
     <div class="box yellow">
+
 </div>
     <div class="box orange">
 </div>
@@ -656,11 +657,11 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 
 Or Checkout my personal Resource Site:
 
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap">
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
 <strong>a/A-Student-Resources</strong>
 <br />
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/938871b4521a).
