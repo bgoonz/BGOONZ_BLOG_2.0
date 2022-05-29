@@ -79,14 +79,48 @@ export default class Header extends React.Component {
                     </div>
                 </div>
 <>
-<div id="sb-search-example">
-    <div className="sb-search-icon" id="myCustomSearchButtonID">
-        <i className="sb-icon">
-</i>
-        <p>Search</p>
-    </div>
-
-</div>
+<div className="sb-modal sb-animate-bottom" id="sb-modal" style={{top: 'unset'}}>
+        <div className="sb-content">
+          <div className="sb-search">
+            <div className="sb-input">
+              <i className="sb-icon sb-back-icon icon-ic_back">
+                <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2071 6.70711C11.5976 6.31658 11.5976 5.68342 11.2071 5.29289C10.8166 4.90237 10.1834 4.90237 9.79289 5.29289L4.29289 10.7929C3.90237 11.1834 3.90237 11.8166 4.29289 12.2071L9.79289 17.7071C10.1834 18.0976 10.8166 18.0976 11.2071 17.7071C11.5976 17.3166 11.5976 16.6834 11.2071 16.2929L7.41421 12.5H19C19.5523 12.5 20 12.0523 20 11.5C20 10.9477 19.5523 10.5 19 10.5H7.41421L11.2071 6.70711Z" fill="black" />
+                </svg>
+              </i>
+              <input className="sb-search-field" id="sb-search-field" name="Search" placeholder="Search..." type="search" autoComplete="off" />
+              <div className="sb-search-icon">
+                <i className="sb-icon icon-ic_search">
+                  <svg width={26} height={26} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 16C13.7614 16 16 13.7614 16 11C16 8.23858 13.7614 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16ZM3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11C19 12.6671 18.4901 14.215 17.6178 15.4964L21.5607 19.4393C22.1464 20.0251 22.1464 20.9749 21.5607 21.5607C20.9749 22.1464 20.0251 22.1464 19.4393 21.5607L15.4964 17.6178C14.215 18.4901 12.6671 19 11 19C6.58172 19 3 15.4183 3 11Z" fill="black" />
+                  </svg>
+                </i>
+              </div>
+            </div>
+          </div>
+          <div className="sb-results">
+            {/*<div class="sb-divider">
+				<p>Suggestions</p>
+				<div class="sb-line"></div>
+			</div>
+			
+			<div class="sb-results-block sb-suggestions">
+				<div class="sb-results-items">
+					&lt;!&ndash; suggestion template &ndash;&gt;
+				</div>
+			</div>*/}
+            {/*			<div class="sb-divider">*/}
+            {/*				<p>Pages</p>*/}
+            {/*				<div class="sb-line"></div>*/}
+            {/*			</div>*/}
+            <div className="sb-results-block sb-pages sb-card"> {/* sb-card / sb-list*/}
+              <div className="sb-results-items" />
+            </div>
+            <div className="sb-brand sb-hiden"><a href="https://www.searchbar.org"><span>Powered by</span><img alt="" src="https://api.searchbar.org/img/logo.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
 </>
 
 
