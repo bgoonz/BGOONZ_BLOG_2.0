@@ -9,20 +9,21 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: top
 author: src/data/authors/im.yaml
 categories:
-  - src/data/categories/react.yaml
+    - src/data/categories/react.yaml
 tags:
-  - src/data/tags/react.yaml
+    - src/data/tags/react.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
-  - src/pages/blog/deploy-react-app-to-heroku.md
-  - src/pages/blog/adding-css-to-your-html.md
-  - src/pages/blog/react-fragments.md
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/react-state.md
-  - src/pages/blog/passing-arguments-to-a-callback-in-js.md
+    - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/deploy-react-app-to-heroku.md
+    - src/pages/blog/adding-css-to-your-html.md
+    - src/pages/blog/react-fragments.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/react-state.md
+    - src/pages/blog/passing-arguments-to-a-callback-in-js.md
 cmseditable: true
 ---
+
 # JSX In Depth
 
 Fundamentally, JSX just provides syntactic sugar for the `React.createElement(component, props, ...children)` function. The JSX code:
