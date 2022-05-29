@@ -4,6 +4,7 @@
 ## Puppeteer:
 
 ```js
+//
 const puppeteer = require('puppeteer');
 
 (async () => {
@@ -26,6 +27,7 @@ const puppeteer = require('puppeteer');
 # Dark Mode:
 
 ```js
+//
 
 import { useState, useEffect } from 'react';
 

@@ -96,6 +96,7 @@ Below I am creating a React component by invoking the `React.createClass` functi
 As you can see, the `MySelect` component is made up of some styles and an empty React `<div>` node element.
 
 ```js
+//
 const MySelect = React.createClass({ //define MySelect component
     render: function(){
         const mySelectStyle = {
@@ -138,6 +139,7 @@ I'm going to define another component called `<MyOption>` and then use the `<MyO
 Examine the updated JavaScript code below which defines both the `<MySelect>` and `<MyOption>` React components.
 
 ```js
+//
 const MySelect = React.createClass({
     render: function(){
         const mySelectStyle = {
@@ -205,6 +207,7 @@ State is typically found on the top most component which makes up a UI component
 I've updated the code below accordingly to add state to the component. As I am making updates to the code, make sure you read the JavaScript comments which call attention to the changes in the code.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){ //add selected, default state
         return {selected: false}; //this.state.selected = false;
@@ -242,6 +245,7 @@ ReactDOM.render(<MySelect />, document.getElementById('app'));
 With the default state set, next we'll add a callback function called `select` that gets called when a user clicks on an option. Inside of this function we get the text of the option that was selected (via the `event` parameter) and use that to determine how to `setState` on the current component. Notice that I am using `event` details passed to the `select` callback. This pattern should look familiar if you've had any experience with jQuery.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){
         return {selected: false};
@@ -288,6 +292,7 @@ In order for our `<MyOption>` components to gain access to the `select` function
 With that in place we can add `onClick={this.props.select}` to the `<MyOption>` components. Hopefully it's obvious that all we have done is wired up a `click` event that will call the `select` function. React takes care of wiring up the real click handler in the real DOM for you.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){
         return {selected: false};
@@ -342,6 +347,7 @@ While our React UI select component is not as pretty or feature complete as you 
 Before moving on to the role of the virtual DOM I do want to stress that you don't have to use JSX and Babel. You can always bypass these tools and just write straight JavaScript. Below, I'm showing the final state of the code after the JSX has been transformed by Babel. If you choose not to use JSX, then you'll have to write the following code yourself instead of the code I've written throughout this section.
 
 ```js
+//
 const MySelect = React.createClass({
   displayName: 'MySelect',
 
@@ -456,6 +462,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 
 ```js
+//
 
     const JSX = (
       <div>
@@ -504,6 +511,7 @@ The code editor has a JSX element similar to what you created in the last challe
 ### Ans:
 
 ```js
+//
 
  const JSX = (
       <div className="myDiv">
@@ -533,6 +541,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 
 ```js
+//
 
     const JSX = (
       <div>
@@ -545,6 +554,7 @@ The code editor has a JSX element similar to what you created in the last challe
 ### Ans:
 
 ```js
+//
 
  const JSX = (
       <div>
@@ -836,6 +846,7 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 </div>
 
 ```js
+//
 
 const AccordionItem = ({ label, isCollapsed, handleClick, children }) =&gt; {
   return (
@@ -879,6 +890,7 @@ children={props.children}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Accordion defaultIndex=&quot;1&quot; onItemClick={console.log}&gt;
@@ -1041,6 +1053,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) =&gt; {
   const [isShown, setIsShown] = React.useState(isDefaultShown);
@@ -1079,6 +1092,7 @@ role=&quot;alert&quot;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Alert type=&quot;info&quot; message=&quot;This is info&quot; /&gt;,
@@ -1096,6 +1110,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const AutoLink = ({ text }) =&gt; {
   const delimiter =
@@ -1122,6 +1137,7 @@ return word;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;AutoLink text=&quot;foo bar baz http://example.org bar&quot; /&gt;,
@@ -1138,6 +1154,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Callto = ({ phone, children }) =&gt; {
   return &lt;a href={`tel:${phone}`}&gt;{children}&lt;/a&gt;;
@@ -1148,6 +1165,7 @@ const Callto = ({ phone, children }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Callto phone=&quot;+302101234567&quot;&gt;Call me!&lt;/Callto&gt;,
@@ -1196,6 +1214,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Carousel = ({ carouselItems, ...rest }) =&gt; {
   const [active, setActive] = React.useState(0);
@@ -1224,6 +1243,7 @@ className: `carousel-item${activeClass}`,
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Carousel
@@ -1279,6 +1299,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Collapse = ({ collapsed, children }) =&gt; {
   const [isCollapsed, setIsCollapsed] = React.useState(collapsed);
@@ -1304,6 +1325,7 @@ aria-expanded={isCollapsed}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Collapse&gt;
@@ -1324,6 +1346,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const ControlledInput = ({ value, onValueChange, ...rest }) =&gt; {
   return (
@@ -1340,6 +1363,7 @@ const ControlledInput = ({ value, onValueChange, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 const Form = () =&gt; {
   const [value, setValue] = React.useState(&quot;&quot;);
@@ -1370,6 +1394,7 @@ ReactDOM.render(&lt;Form /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) =&gt; {
   const [paused, setPaused] = React.useState(false);
@@ -1416,6 +1441,7 @@ return (
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;CountDown hours={1} minutes={45} /&gt;,
@@ -1432,6 +1458,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const DataList = ({ isOrdered = false, data }) =&gt; {
   const list = data.map((val, i) =&gt; &lt;li key={`${i}_${val}`}&gt;{val}&lt;/li&gt;);
@@ -1443,6 +1470,7 @@ const DataList = ({ isOrdered = false, data }) =&gt; {
 <hr />
 
 ```js
+//
 
 const names = [&quot;John&quot;, &quot;Paul&quot;, &quot;Mary&quot;];
 ReactDOM.render(&lt;DataList data={names} /&gt;, document.getElementById(&quot;root&quot;));
@@ -1461,6 +1489,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const DataTable = ({ data }) =&gt; {
   return (
@@ -1488,6 +1517,7 @@ const DataTable = ({ data }) =&gt; {
 <hr />
 
 ```js
+//
 
 const people = [&quot;John&quot;, &quot;Jesse&quot;];
 ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot;root&quot;));
@@ -1556,6 +1586,7 @@ ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot
 </div>
 
 ```js
+//
 
 const FileDrop = ({ onDrop }) =&gt; {
   const [drag, setDrag] = React.useState(false);
@@ -1623,6 +1654,7 @@ drag ? &quot;filedrop drag&quot; : filename ? &quot;filedrop ready&quot; : &quot
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;FileDrop onDrop={console.log} /&gt;,
@@ -1640,6 +1672,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const LimitedTextarea = ({ rows, cols, value, limit }) =&gt; {
   const [content, setContent] = React.useState(value.slice(0, limit));
@@ -1671,6 +1704,7 @@ value={content}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;LimitedTextarea limit={32} value=&quot;Hello!&quot; /&gt;,
@@ -1690,6 +1724,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const LimitedWordTextarea = ({ rows, cols, value, limit }) =&gt; {
   const [{ content, wordCount }, setContent] = React.useState({
@@ -1736,6 +1771,7 @@ value={content}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;LimitedWordTextarea limit={5} value=&quot;Hello there!&quot; /&gt;,
@@ -1818,6 +1854,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Loader = ({ size }) =&gt; {
   return (
@@ -1841,6 +1878,7 @@ const Loader = ({ size }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -1855,6 +1893,7 @@ ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&q
 </ul>
 
 ```js
+//
 
 const Mailto = ({ email, subject = &quot;&quot;, body = &quot;&quot;, children }) =&gt; {
   let params = subject || body ? &quot;?&quot; : &quot;&quot;;
@@ -1869,6 +1908,7 @@ return &lt;a href={`mailto:${email}${params}`}&gt;{children}&lt;/a&gt;;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Mailto email=&quot;foo@bar.baz&quot; subject=&quot;Hello &amp; Welcome&quot; body=&quot;Hello world!&quot;&gt;
@@ -1893,6 +1933,7 @@ ReactDOM.render(
 </p>
 
 ```js
+//
 
 const MappedTable = ({ data, propertyNames }) =&gt; {
   let filteredData = data.map((v) =&gt;
@@ -1927,6 +1968,7 @@ const MappedTable = ({ data, propertyNames }) =&gt; {
 <hr />
 
 ```js
+//
 
 const people = [
   { name: &quot;John&quot;, surname: &quot;Smith&quot;, age: 42 },
@@ -2177,6 +2219,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Modal = ({ isVisible = false, title, content, footer, onClose }) =&gt; {
   const keydownHandler = ({ key }) =&gt; {
@@ -2214,6 +2257,7 @@ return !isVisible ? null : (
 <hr />
 
 ```js
+//
 
 const App = () =&gt; {
   const [isModal, setModal] = React.useState(false);
@@ -2244,6 +2288,7 @@ ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const MultiselectCheckbox = ({ options, onChange }) =&gt; {
   const [data, setData] = React.useState(options);
@@ -2280,6 +2325,7 @@ onClick={() =&gt; toggle(index)}
 <hr />
 
 ```js
+//
 
 const options = [{ label: &quot;Item One&quot; }, { label: &quot;Item Two&quot; }];
 
@@ -2303,6 +2349,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const PasswordRevealer = ({ value }) =&gt; {
   const [shown, setShown] = React.useState(false);
@@ -2319,6 +2366,7 @@ const PasswordRevealer = ({ value }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -2456,6 +2504,7 @@ ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&q
 </div>
 
 ```js
+//
 
 const RippleButton = ({ children, onClick }) =&gt; {
   const [coords, setCoords] = React.useState({ x: -1, y: -1 });
@@ -2500,6 +2549,7 @@ style={{
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;RippleButton onClick={(e) =&gt; console.log(e)}&gt;Click me&lt;/RippleButton&gt;,
@@ -2518,6 +2568,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Select = ({ values, onValueChange, selectedValue, ...rest }) =&gt; {
   return (
@@ -2540,6 +2591,7 @@ const Select = ({ values, onValueChange, selectedValue, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 const choices = [
   [&quot;grapefruit&quot;, &quot;Grapefruit&quot;],
@@ -2567,6 +2619,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Slider = ({
   min = 0,
@@ -2592,6 +2645,7 @@ const Slider = ({
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Slider onValueChange={(val) =&gt; console.log(val)} /&gt;,
@@ -2625,6 +2679,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Star = ({ marked, starId }) =&gt; {
   return (
@@ -2666,6 +2721,7 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -2743,6 +2799,7 @@ ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;ro
 </div>
 
 ```js
+//
 
 const TabItem = (props) =&gt; &lt;div {...props} /&gt;;
 
@@ -2783,6 +2840,7 @@ key={`tab-content-${props.index}`}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Tabs defaultIndex=&quot;1&quot; onTabClick={console.log}&gt;
@@ -2984,6 +3042,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const TagInput = ({ tags }) =&gt; {
   const [tagData, setTagData] = React.useState(tags);
@@ -3023,6 +3082,7 @@ const TagInput = ({ tags }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;TagInput tags={[&quot;Nodejs&quot;, &quot;MongoDB&quot;]} /&gt;,
@@ -3039,6 +3099,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const TextArea = ({
   cols = 20,
@@ -3063,6 +3124,7 @@ const TextArea = ({
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;TextArea
@@ -3112,6 +3174,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const Toggle = ({ defaultToggled = false }) =&gt; {
   const [isToggleOn, setIsToggleOn] = React.useState(defaultToggled);
@@ -3131,6 +3194,7 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -3232,6 +3296,7 @@ ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 </div>
 
 ```js
+//
 
 const Tooltip = ({ children, text, ...rest }) =&gt; {
   const [show, setShow] = React.useState(false);
@@ -3256,6 +3321,7 @@ onMouseLeave={() =&gt; setShow(false)}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Tooltip text=&quot;Simple tooltip&quot;&gt;
@@ -3395,6 +3461,7 @@ ReactDOM.render(
 </div>
 
 ```js
+//
 
 const TreeView = ({
   data,
@@ -3448,6 +3515,7 @@ className={isToggled ? &quot;tree-element&quot; : &quot;tree-element collapsed&q
 <hr />
 
 ```js
+//
 
 const data = {
   lorem: {
@@ -3486,6 +3554,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const UncontrolledInput = ({ defaultValue, onValueChange, ...rest }) =&gt; {
   return (
@@ -3502,6 +3571,7 @@ const UncontrolledInput = ({ defaultValue, onValueChange, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;UncontrolledInput
@@ -3525,6 +3595,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const useAsync = (fn) =&gt; {
   const initialState = { loading: false, error: null, value: null };
@@ -3559,6 +3630,7 @@ return { ...state, run };
 <hr />
 
 ```js
+//
 
 const RandomImage = (props) =&gt; {
   const imgFetch = useAsync((url) =&gt;
@@ -3601,6 +3673,7 @@ ReactDOM.render(&lt;RandomImage /&gt;, document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useClickInside = (ref, callback) =&gt; {
   const handleClick = (e) =&gt; {
@@ -3621,6 +3694,7 @@ const useClickInside = (ref, callback) =&gt; {
 <hr />
 
 ```js
+//
 
 const ClickBox = ({ onClickInside }) =&gt; {
   const clickRef = React.useRef();
@@ -3659,6 +3733,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useClickOutside = (ref, callback) =&gt; {
   const handleClick = (e) =&gt; {
@@ -3679,6 +3754,7 @@ const useClickOutside = (ref, callback) =&gt; {
 <hr />
 
 ```js
+//
 
 const ClickBox = ({ onClickOutside }) =&gt; {
   const clickRef = React.useRef();
@@ -3716,6 +3792,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useComponentDidMount = (onMountHandler) =&gt; {
   React.useEffect(() =&gt; {
@@ -3728,6 +3805,7 @@ const useComponentDidMount = (onMountHandler) =&gt; {
 <hr />
 
 ```js
+//
 
 const Mounter = () =&gt; {
   useComponentDidMount(() =&gt; console.log(&quot;Component did mount&quot;));
@@ -3747,6 +3825,7 @@ ReactDOM.render(&lt;Mounter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useComponentWillUnmount = (onUnmountHandler) =&gt; {
   React.useEffect(
@@ -3762,6 +3841,7 @@ const useComponentWillUnmount = (onUnmountHandler) =&gt; {
 <hr />
 
 ```js
+//
 
 const Unmounter = () =&gt; {
   useComponentWillUnmount(() =&gt; console.log(&quot;Component will unmount&quot;));
@@ -3784,6 +3864,7 @@ ReactDOM.render(&lt;Unmounter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useCopyToClipboard = (text) =&gt; {
   const copyToClipboard = (str) =&gt; {
@@ -3822,6 +3903,7 @@ return [copied, copy];
 <hr />
 
 ```js
+//
 
 const TextCopy = (props) =&gt; {
   const [copied, copy] = useCopyToClipboard(&quot;Lorem ipsum&quot;);
@@ -3849,6 +3931,7 @@ ReactDOM.render(&lt;TextCopy /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useDebounce = (value, delay) =&gt; {
   const [debouncedValue, setDebouncedValue] = React.useState(value);
@@ -3872,6 +3955,7 @@ return debouncedValue;
 <hr />
 
 ```js
+//
 
 const Counter = () =&gt; {
   const [value, setValue] = React.useState(0);
@@ -3901,6 +3985,7 @@ ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useFetch = (url, options) =&gt; {
   const [response, setResponse] = React.useState(null);
@@ -3927,6 +4012,7 @@ return { response, error };
 <hr />
 
 ```js
+//
 
 const ImageFetch = (props) =&gt; {
   const res = useFetch(&quot;https://dog.ceo/api/breeds/image/random&quot;, {});
@@ -3955,6 +4041,7 @@ ReactDOM.render(&lt;ImageFetch /&gt;, document.getElementById(&quot;root&quot;))
 </ul>
 
 ```js
+//
 
 const useInterval = (callback, delay) =&gt; {
   const savedCallback = React.useRef();
@@ -3979,6 +4066,7 @@ return () =&gt; clearInterval(id);
 <hr />
 
 ```js
+//
 
 const Timer = (props) =&gt; {
   const [seconds, setSeconds] = React.useState(0);
@@ -4003,6 +4091,7 @@ ReactDOM.render(&lt;Timer /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useMediaQuery = (query, whenTrue, whenFalse) =&gt; {
   if (typeof window === &quot;undefined&quot; || typeof window.matchMedia === &quot;undefined&quot;)
@@ -4025,6 +4114,7 @@ return match ? whenTrue : whenFalse;
 <hr />
 
 ```js
+//
 
 const ResponsiveText = () =&gt; {
   const text = useMediaQuery(
@@ -4050,6 +4140,7 @@ ReactDOM.render(&lt;ResponsiveText /&gt;, document.getElementById(&quot;root&quo
 </ul>
 
 ```js
+//
 
 const getOnLineStatus = () =&gt;
   typeof navigator !== &quot;undefined&quot; &amp;&amp; typeof navigator.onLine === &quot;boolean&quot;
@@ -4081,6 +4172,7 @@ return status;
 <hr />
 
 ```js
+//
 
 const StatusIndicator = () =&gt; {
   const isOnline = useNavigatorOnLine();
@@ -4106,6 +4198,7 @@ ReactDOM.render(&lt;StatusIndicator /&gt;, document.getElementById(&quot;root&qu
 </ul>
 
 ```js
+//
 
 const usePersistedState = (name, defaultValue) =&gt; {
   const [value, setValue] = React.useState(defaultValue);
@@ -4146,6 +4239,7 @@ return [value, setValue];
 <hr />
 
 ```js
+//
 
 const MyComponent = ({ name }) =&gt; {
   const [val, setVal] = usePersistedState(name, 10);
@@ -4187,6 +4281,7 @@ ReactDOM.render(&lt;MyApp /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const usePrevious = (value) =&gt; {
   const ref = React.useRef();
@@ -4201,6 +4296,7 @@ const usePrevious = (value) =&gt; {
 <hr />
 
 ```js
+//
 
 const Counter = () =&gt; {
   const [value, setValue] = React.useState(0);
@@ -4231,6 +4327,7 @@ ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const isDOMavailable = !!(
   typeof window !== &quot;undefined&quot; &amp;&amp;
@@ -4270,6 +4367,7 @@ return React.useMemo(
 <hr />
 
 ```js
+//
 
 const SSRChecker = (props) =&gt; {
   let { isBrowser, isServer } = useSSR();
@@ -4291,6 +4389,7 @@ ReactDOM.render(&lt;SSRChecker /&gt;, document.getElementById(&quot;root&quot;))
 </ul>
 
 ```js
+//
 
 const useTimeout = (callback, delay) =&gt; {
   const savedCallback = React.useRef();
@@ -4315,6 +4414,7 @@ return () =&gt; clearTimeout(id);
 <hr />
 
 ```js
+//
 
 const OneSecondTimer = (props) =&gt; {
   const [seconds, setSeconds] = React.useState(0);
@@ -4338,6 +4438,7 @@ ReactDOM.render(&lt;OneSecondTimer /&gt;, document.getElementById(&quot;root&quo
 </ul>
 
 ```js
+//
 
 const useToggler = (initialState) =&gt; {
   const [value, setValue] = React.useState(initialState);
@@ -4352,6 +4453,7 @@ return [value, toggleValue];
 <hr />
 
 ```js
+//
 
 const Switch = () =&gt; {
   const [val, toggleVal] = useToggler(false);
@@ -4370,6 +4472,7 @@ ReactDOM.render(&lt;Switch /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useUnload = (fn) =&gt; {
   const cb = React.useRef(fn);
@@ -4388,6 +4491,7 @@ window.removeEventListener(&quot;beforeunload&quot;, onUnload);
 <hr />
 
 ```js
+//
 
 const App = () =&gt; {
   useUnload((e) =&gt; {

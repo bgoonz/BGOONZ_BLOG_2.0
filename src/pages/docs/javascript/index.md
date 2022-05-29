@@ -19,6 +19,7 @@ template: docs
 <summary>  Cheatsheet </summary>
 
 ```js
+//
 
 // Single-line comments start with two slashes.
 /* Multiline comments start with slash-star,

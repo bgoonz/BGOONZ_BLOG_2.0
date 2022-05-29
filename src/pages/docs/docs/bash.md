@@ -27,9 +27,7 @@ Here's a list of bash commands that stand between me and insanity.
 </figure>
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
 
-> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor">
-<strong>github repository</strong>
-</a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
+> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"> > <strong>github repository</strong> > </a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough">
 <strong>bgoonz/bash-commands-walkthrough</strong>
@@ -318,52 +316,53 @@ The following output from my bash shell corresponds to the directory:
       echo '<link rel="stylesheet" href="./assets/prism.css">'
       echo ' <link rel="stylesheet" href="./assets/style.css">'
       echo ' <script async defer src="./assets/prism.js">
+
 </script>'
-      echo "  <title> directory </title>"
-      echo ""
-      echo '<style>'
-    echo '    a {'
-    echo '      color: black;'
-    echo '    }'
-    echo ''
-    echo '    li {'
-    echo '      border: 1px solid black !important;'
-    echo '      font-size: 20px;'
-    echo '      letter-spacing: 0px;'
-    echo '      font-weight: 700;'
-    echo '      line-height: 16px;'
-    echo '      text-decoration: none !important;'
-    echo '      text-transform: uppercase;'
-    echo '      background: #194ccdaf !important;'
-    echo '      color: black !important;'
-    echo '      border: none;'
-    echo '      cursor: pointer;'
-    echo '      justify-content: center;'
-    echo '      padding: 30px 60px;'
-    echo '      height: 48px;'
-    echo '      text-align: center;'
-    echo '      white-space: normal;'
-    echo '      border-radius: 10px;'
-    echo '      min-width: 45em;'
-    echo '      padding: 1.2em 1em 0;'
-    echo '      box-shadow: 0 0 5px;'
-    echo '      margin: 1em;'
-    echo '      display: grid;'
-    echo '      -webkit-border-radius: 10px;'
-    echo '      -moz-border-radius: 10px;'
-    echo '      -ms-border-radius: 10px;'
-    echo '      -o-border-radius: 10px;'
-    echo '    }'
-    echo '  </style>'
-      echo '</head>'
-      echo '<body>'
-      echo ""
-      # continue with the HTML stuff
-      echo ""
-      echo ""
-      echo "<ul>"
-      awk '{print "<li>
+echo " <title> directory </title>"
+echo ""
+echo '<style>'
+echo ' a {'
+echo ' color: black;'
+echo ' }'
+echo ''
+echo ' li {'
+echo ' border: 1px solid black !important;'
+echo ' font-size: 20px;'
+echo ' letter-spacing: 0px;'
+echo ' font-weight: 700;'
+echo ' line-height: 16px;'
+echo ' text-decoration: none !important;'
+echo ' text-transform: uppercase;'
+echo ' background: #194ccdaf !important;'
+echo ' color: black !important;'
+echo ' border: none;'
+echo ' cursor: pointer;'
+echo ' justify-content: center;'
+echo ' padding: 30px 60px;'
+echo ' height: 48px;'
+echo ' text-align: center;'
+echo ' white-space: normal;'
+echo ' border-radius: 10px;'
+echo ' min-width: 45em;'
+echo ' padding: 1.2em 1em 0;'
+echo ' box-shadow: 0 0 5px;'
+echo ' margin: 1em;'
+echo ' display: grid;'
+echo ' -webkit-border-radius: 10px;'
+echo ' -moz-border-radius: 10px;'
+echo ' -ms-border-radius: 10px;'
+echo ' -o-border-radius: 10px;'
+echo ' }'
+echo ' </style>'
+echo '</head>'
+echo '<body>'
+echo "" # continue with the HTML stuff
+echo ""
+echo ""
+echo "<ul>"
+awk '{print "<li>
 <a href=\""$1"\">",$1,"&nbsp;</a>
+
 </li>"}' $listing
       # awk '{print "<li>"};
       #  {print " <a href=\""$1"\">",$1,"</a>
@@ -629,6 +628,7 @@ _If you want to run any bash script recursively all you have to do is substitue 
      <input type="button" value="Go back!" onclick="history.back()">
     </form>
       </body>
+
 </html>" | tee -a *.html
 
 ---
@@ -710,14 +710,14 @@ August 31, 2021.
 
 ###### code:
 
-```sh
+```bash
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-````sh
+````bash
 
-```sh
+```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -734,6 +734,7 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -755,7 +756,7 @@ fs.writeFile('output.md', cat, err => {
 
 ###### code:
 
-```sh
+```bash
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -771,7 +772,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code:
 
-```sh
+```bash
 
 find . -empty -type d -print -delete
 
@@ -793,7 +794,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # Generalized:
 
-```sh
+```bash
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -804,7 +805,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```sh
+```bash
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -815,7 +816,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 # Clone all Git Organization:
 
-```sh
+```bash
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -833,7 +834,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ###### code:
 
-```sh
+```bash
 git pull
 git init
 git add .
@@ -841,14 +842,14 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```sh
+```bash
 
 git init
 git add .
@@ -856,14 +857,14 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
@@ -880,7 +881,7 @@ git push -u origin preview
 
 ###### code:
 
-```sh
+```bash
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -898,7 +899,7 @@ find . -name "*.zip" -type f -print -delete
 
 ###### code:
 
-```sh
+```bash
 
 git stash
 git pull
@@ -916,7 +917,7 @@ git stash pop
 
 ###### code:
 
-```sh
+```bash
 
 sudo npm i prettier -g
 
@@ -934,7 +935,7 @@ prettier --write .
 
 ###### code:
 
-```sh
+```bash
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -954,7 +955,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ###### code:
 
-```sh
+```bash
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -966,7 +967,7 @@ npm i npm-recursive-install -g
 
 ```
 
-```sh
+```bash
 black .
 
 prettier --write .
@@ -983,7 +984,7 @@ npm-recursive-install
 
 ###### code:
 
-```sh
+```bash
 npm i @bgoonz11/repoutils
 
 ```
@@ -998,7 +999,7 @@ npm i @bgoonz11/repoutils
 
 ###### code:
 
-```sh
+```bash
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -1025,7 +1026,7 @@ tree -f >README.md
 
 ###### code:
 
-```sh
+```bash
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -1053,7 +1054,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ###### code:
 
-```sh
+```bash
 #!/bin/bash
 
 for file in *.md.md
@@ -1069,7 +1070,7 @@ do
 done
 ```
 
-```sh
+```bash
 
 #!/bin/bash
 
@@ -1095,7 +1096,7 @@ done
 
 ###### code:
 
-```sh
+```bash
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -1112,6 +1113,7 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1130,7 +1132,7 @@ fs.writeFile('output.md', cat, (err) => {
 
 ###### code:
 
-```sh
+```bash
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -1147,7 +1149,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ###### code:
 
-```sh
+```bash
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -1172,7 +1174,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```sh
+```bash
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -1180,7 +1182,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ###### code:
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1206,7 +1208,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ###### code:
 
-```sh
+```bash
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -1222,7 +1224,7 @@ uniq -u input.txt output.txt
 
 ###### code:
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1260,7 +1262,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -1287,7 +1289,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ###### code:
 
-```sh
+```bash
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -1304,7 +1306,7 @@ source doit.sh
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -1415,13 +1417,13 @@ cmd $listing --sort=extension >>$html
 
 > Notes: Useful Follow up Code:
 
-```sh
+```bash
 
 ```
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -1532,7 +1534,7 @@ cmd $listing --sort=extension >>$html
 
 ###### code:
 
-```sh
+```bash
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -1552,7 +1554,7 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ###### code:
 
-```sh
+```bash
 
 git fetch --all
 # Backup your current branch:
@@ -1591,7 +1593,7 @@ git reset --hard origin/master
 
 ###### code:
 
-```sh
+```bash
 git submodule deinit
 ```
 
@@ -1605,7 +1607,7 @@ git submodule deinit
 
 ###### code:
 
-```sh
+```bash
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1628,7 +1630,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ###### code:
 
-```sh
+```bash
 
 git remote remove origin
 
@@ -1644,7 +1646,7 @@ git remote remove origin
 
 ###### code:
 
-```sh
+```bash
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1660,7 +1662,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ###### code:
 
-```sh
+```bash
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1676,7 +1678,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ###### code:
 
-```sh
+```bash
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1733,7 +1735,7 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```ps1
+```
 
  wsl.exe --shutdown
 
@@ -1751,7 +1753,7 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```sh
+```bash
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
@@ -1768,7 +1770,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ###### code:
 
-```sh
+```bash
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1786,7 +1788,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ###### code:
 
-```sh
+```bash
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1802,7 +1804,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ###### code:
 
-```sh
+```bash
 killall -s KILL node
 
 ```
@@ -1815,7 +1817,7 @@ killall -s KILL node
 
 ###### code:
 
-```sh
+```bash
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1824,7 +1826,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```sh
+```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1841,7 +1843,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ###### code:
 
-```sh
+```bash
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1857,7 +1859,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ###### code:
 
-```sh
+```bash
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1872,7 +1874,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1886,7 +1888,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1900,7 +1902,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1914,7 +1916,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1928,7 +1930,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1942,7 +1944,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1956,7 +1958,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1970,7 +1972,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1984,7 +1986,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1998,7 +2000,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2012,7 +2014,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2026,7 +2028,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2040,7 +2042,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2054,7 +2056,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2068,7 +2070,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2082,7 +2084,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2096,7 +2098,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2110,7 +2112,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2124,7 +2126,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2138,7 +2140,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2152,7 +2154,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2166,7 +2168,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2180,7 +2182,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2194,7 +2196,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2208,7 +2210,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2222,7 +2224,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2236,7 +2238,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2250,7 +2252,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2264,7 +2266,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2278,7 +2280,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2292,7 +2294,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2306,7 +2308,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2320,7 +2322,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2334,7 +2336,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2348,7 +2350,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2362,7 +2364,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2376,7 +2378,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2390,7 +2392,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2404,7 +2406,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2418,7 +2420,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2432,7 +2434,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2446,7 +2448,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2460,7 +2462,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2474,7 +2476,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2488,7 +2490,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2502,7 +2504,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2516,7 +2518,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2530,7 +2532,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2544,7 +2546,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2558,7 +2560,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```ps1
+```
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -2591,7 +2593,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```bash
  sudo apt --purge remove zsh
 
 ```
@@ -2606,7 +2608,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```bash
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -2624,7 +2626,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ###### code:
 
-```sh
+```bash
 
 npx @appnest/readme generate
 
@@ -2640,7 +2642,7 @@ npx @appnest/readme generate
 
 ###### code:
 
-```sh
+```bash
 sudo -u postgres psql
 ```
 
@@ -2688,7 +2690,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ###### code:
 
-```sh
+```bash
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2706,7 +2708,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ###### code:
 
-```sh
+```bash
 #!/bin/bash
 
 # SHORTCUTS and HISTORY

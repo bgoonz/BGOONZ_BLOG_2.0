@@ -76,6 +76,7 @@ Normally the upstream server is not down (i.e. furnishes no response to the gate
 ## Example
 
 ```js
+//
 class ImplementAbstraction {
     // method to set values of internal members
     set(x, y) {
@@ -495,6 +496,7 @@ Each item in an array has a number attached to it, called a numeric index, that 
 What an array in JavaScript looks like:
 
 ```js
+//
 let myArray = [1, 2, 3, 4];
 let catNamesArray = ['Jacqueline', 'Sophia', 'Autumn'];
 //Arrays in JavaScript can hold different types of data, as shown above.
@@ -612,6 +614,7 @@ Considering the following HTML:
 We can check the reflection between _domxref("HTMLInputElement.placeholder"_) and the attribute using:
 
 ```js
+//
 let input = document.getElementsByTagName('input')[0];
 let attr = input.getAttributeNode('placeholder');
 console.log(attr.value);
@@ -621,6 +624,7 @@ console.log(input.placeholder); //Returns the same value as `attr.value`
 and
 
 ```js
+//
 let input2 = document.getElementsByTagName('input')[0];
 let attr2 = input.getAttributeNode('placeholder');
 console.log(attr2.value); // Returns `Original placeholder`
@@ -725,6 +729,7 @@ Here are the two possible methods.
 
 
 ```js
+//
 
 
 function utf8_to_b64(str) {
@@ -748,6 +753,7 @@ Another possible solution without utilizing the now deprecated 'unescape' and 'e
 
 
 ```js
+//
 
 
 function b64EncodeUnicode(str) {
@@ -765,6 +771,7 @@ b64EncodeUnicode('✓ à la mode'); // "4pyTIMOgIGxhIG1vZGU="
 > **Note:** The following code is also useful to get an [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from a Base64 string and/or viceversa ([see below](#appendix_decode_a_base64_string_to_uint8array_or_arraybuffer)).
 
 ```js
+//
 'use strict';
 
 /*\
@@ -944,6 +951,7 @@ function strToUTF8Arr(sDOMStr) {
 ### Tests
 
 ```js
+//
 /* Tests */
 
 var sMyInput = 'Base 64 \u2014 Mozilla Developer Network';
@@ -966,6 +974,7 @@ alert(sMyOutput);
 These function let us to create also [uint8Arrays](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) or [arrayBuffers](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from Base64-encoded strings:
 
 ```js
+//
 // "Base 64 \u2014 Mozilla Developer Network"
 var myArray = base64DecToArr('QmFzZSA2NCDigJQgTW96aWxsYSBEZXZlbG9wZXIgTmV0d29yaw==');
 
@@ -1128,6 +1137,7 @@ For example, in JavaScript, Boolean conditionals are often used to decide which 
 Below is some JavaScript pseudocode (it's not truly executable code) demonstrating this concept.
 
 ```js
+//
 /* JavaScript if statement */
 if (boolean conditional) {
    // code to execute if the conditional is true
@@ -1448,6 +1458,7 @@ Cache-Control: no-cache
 
 
 ```js
+//
 
 
 function greeting() {
@@ -1523,6 +1534,7 @@ Here is a quick example:
 
 
 ```js
+//
 
 
 function greeting(name) {
@@ -2068,6 +2080,7 @@ In UTF-16 (the encoding system used for JavaScript strings) code units are 16-bi
 For example, sometimes characters with diacritics such as accents are represented using two Unicode code points:
 
 ```js
+//
 const myString = 'ñ';
 myString.length;
 // 2
@@ -2076,6 +2089,7 @@ myString.length;
 Also, since not all of the code points defined by Unicode fit into 16 bits, many Unicode code points are encoded as a pair of UTF-16 code units, which is called a _surrogate pair_:
 
 ```js
+//
 const face = '🥵';
 face.length;
 // 2
@@ -2084,6 +2098,7 @@ face.length;
 The _jsxref("String/codePointAt", "codePointAt()"_) method of the JavaScript _jsxref("String"_) object enables you to retrieve the Unicode code point from its encoded form:
 
 ```js
+//
 const face = '🥵';
 face.codePointAt(0);
 // 129397
@@ -2227,6 +2242,7 @@ Like variables, some constants are bound to identifiers. For example, the identi
 ## Syntax
 
 ```js
+//
 // This is a generic default constructor class Default
 function Default() {
 }
@@ -2243,6 +2259,7 @@ To call the constructor of the class in JavaScript, use a `new` operator to assi
 
 
 ```js
+//
 
 
 function Default() {}
@@ -2990,12 +3007,14 @@ For example, when describing how far an object on the screen moves left-to-right
 Likewise, given the new value of _X_ and its old value, you might compute the delta like this:
 
 ```js
+//
 let deltaX = newX - oldX;
 ```
 
 More commonly, you receive the delta and use it to update a saved previous condition:
 
 ```js
+//
 let newX = oldX + deltaX;
 ```
 
@@ -3567,6 +3586,7 @@ The values of '`slow-2g`', '`2g`', '`3g`', and '`4g`' are determined using obser
 [effectiveType](/en-US/docs/Web/API/NetworkInformation/effectiveType) is a property of the [Network Information API](/en-US/docs/Web/API/Network_Information_API), exposed to JavaScript via the [navigator.connection](/en-US/docs/Web/API/Navigator/connection) object. To see your effective connection type, open the console of the developer tools of a supporting browser and enter the following:
 
 ```js
+//
 navigator.connection.effectiveType;
 ```
 
@@ -3833,6 +3853,7 @@ To display these characters as text, replace them with their corresponding chara
 > Expando properties are properties added to _glossary("DOM"_) nodes with _glossary("JavaScript"_), where those properties are not part of the _glossary("object","object's"_) DOM specification:
 
 ```js
+//
 window.document.foo = 5; // foo is an expando
 ```
 
@@ -3902,6 +3923,7 @@ The following table provides a complete list of JavaScript falsy values:
 Examples of _falsy_ values in JavaScript (which are coerced to false in Boolean contexts, and thus _bypass_ the `if` block):
 
 ```js
+//
 if (false)
 if (null)
 if (undefined)
@@ -3917,6 +3939,7 @@ if ("")
 If the first object is falsy, it returns that object
 
 ```js
+//
 false && 'dog';
 // ↪ false
 
@@ -4077,6 +4100,7 @@ Firewalls can be as simple as a single piece of software, or more complex, like 
 ### JavaScript
 
 ```js
+//
 const foo = function () {
     console.log('foobar');
 };
@@ -4096,6 +4120,7 @@ We assigned an **Anonymous Function** in a _glossary("Variable"_), then we used 
 
 
 ```js
+//
 
 
 function sayHello() {
@@ -4121,6 +4146,7 @@ We are passing our `sayHello()` function as an argument to the `greeting()` func
 
 
 ```js
+//
 
 
 function sayHello() {
@@ -4139,6 +4165,7 @@ Back to our example; Now, we need to invoke `sayHello` function and its returned
 ### 1- Using a variable
 
 ```js
+//
 const sayHello = function () {
     return function () {
         console.log('Hello!');
@@ -4159,6 +4186,7 @@ This way, it returns the `Hello!` message.
 
 
 ```js
+//
 
 
 function sayHello() {
@@ -4635,6 +4663,7 @@ A function name is an _Glossary("identifier"_) included as part of a function de
 An **anonymous function** is a function without a function name. Only function expressions can be anonymous, function declarations must have a name:
 
 ```js
+//
 // When used as a function expression
 (function () {});
 // or using the ECMAScript 2015 arrow notation
@@ -4646,6 +4675,7 @@ The following terms are not used in the ECMAScript language specification, they'
 A **named function** is a function with a function name:
 
 ```js
+//
 // Function declaration
 function foo() {}
 // Named function expression
@@ -4660,6 +4690,7 @@ An **inner function** is a function inside another function (`square` in this ca
 
 
 ```js
+//
 
 
 function addSquares(a, b) {
@@ -4681,6 +4712,7 @@ A **recursive function** is a function that calls itself. See _Glossary("Recursi
 
 
 ```js
+//
 
 
 function loop(x) {
@@ -4697,6 +4729,7 @@ const loop = (x) => {
 An **Immediately Invoked Function Expressions** (_glossary("IIFE"_)) is a function that is called directly after the function is loaded into the browser's compiler. The way to identify an IIFE is by locating the extra left and right parenthesis at the end of the function's definition.
 
 ```js
+//
 // Declared functions can't be called immediately this way
 // Error (https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
 /*
@@ -4858,6 +4891,7 @@ The `window` object is the Global Object in the Browser. Any Global Variables or
 ### Access Global Variables
 
 ```js
+//
 var foo = 'foobar';
 foo === window.foo; // Returns: true
 ```
@@ -4869,6 +4903,7 @@ After defining a Global Variable `foo`, we can access its value directly from th
 The global variable `foo` was stored in the `window` object, like this:
 
 ```js
+//
 foo: 'foobar';
 ```
 
@@ -4878,6 +4913,7 @@ foo: 'foobar';
 
 
 ```js
+//
 
 
 function greeting() {
@@ -4894,6 +4930,7 @@ The example above explains how Global Functions are stored as _properties_ in th
 The global function `greeting` was stored in the `window` object, like this:
 
 ```js
+//
 greeting: function greeting() {
     console.log('Hi!');
 }
@@ -5858,6 +5895,7 @@ Note that doing so can lead to unexpected errors, and is not generally recommend
 One of the advantages of hoisting is that it lets you use a function before you declare it in your code.
 
 ```js
+//
 catName('Tiger');
 
 function catName(name) {
@@ -5874,6 +5912,7 @@ Without hoisting you would _have_ to write the same code like this:
 
 
 ```js
+//
 
 
 function catName(name) {
@@ -5905,6 +5944,7 @@ Here we declare then initialize the value of a `var` after using it.
 The default initialization of the `var` is `undefined`.
 
 ```js
+//
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num; // Declaration
 num = 6; // Initialization
@@ -5914,6 +5954,7 @@ console.log(num); // Returns 6 after the line with initialization is executed.
 The same thing happens if we declare and initialize the variable in the same line.
 
 ```js
+//
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num = 6; // Initialization and declaration.
 console.log(num); // Returns 6 after the line with initialization is executed.
@@ -5923,6 +5964,7 @@ If we forget the declaration altogether (and only initialize the value) the vari
 Trying to read the variable before it is initialized results in `ReferenceError` exception.
 
 ```js
+//
 console.log(num); // Throws ReferenceError exception - the interpreter doesn't know about `num`.
 num = 6; // Initialization
 ```
@@ -5931,6 +5973,7 @@ Note however that initialization also causes declaration (if not already declare
 The code snippet below will work, because even though it isn't hoisted, the variable is initialized and effectively declared before it is used.
 
 ```js
+//
 a = 'Cran'; // Initialize a
 b = 'berry'; // Initialize b
 
@@ -5943,6 +5986,7 @@ Variables declared with `let` and `const` are also hoisted but, unlike `var`, ar
 An exception will be thrown if a variable declared with `let` or `const` is read before it is initialized.
 
 ```js
+//
 console.log(num); // Throws ReferenceError exception as the variable value is uninitialized
 let num = 6; // Initialization
 ```
@@ -6619,6 +6663,7 @@ The IETF is open, run by volunteers, and sponsored by the [Internet Society](htt
 > The name IIFE is promoted by Ben Alman in [his blog](https://web.archive.org/web/20171201033208/http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife).
 
 ```js
+//
 (function () {
     statements;
 })();
@@ -6639,6 +6684,7 @@ again, we could use the IIFE pattern. As we will not reuse the code again, using
 using a function declaration or a function expression.
 
 ```js
+//
 (function () {
     // some initiation code
     let firstVariable;
@@ -6654,6 +6700,7 @@ We would also use IIFE to create private and public variables and methods. For a
 pattern and other use of IIFE, you could see the book Learning JavaScript Design Patterns by Addy Osmani.
 
 ```js
+//
 const makeWithdraw = (balance) =>
     (function (copyBalance) {
         let balance = copyBalance; // This variable is private
@@ -6691,6 +6738,7 @@ Suppose we want to create 2 buttons with the texts Button 0 and Button 1 and we 
 them, we would like them to alert 0 and 1. The following code doesn't work:
 
 ```js
+//
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6706,6 +6754,7 @@ When clicked, both Button 0 and Button 1 alert 2 because `i` is global,
 with the last value 2. To fix this problem before ES6, we could use the IIFE pattern:
 
 ```js
+//
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6724,6 +6773,7 @@ The variable `i` is globally defined.
 Using the statement **let**, we could simply do:
 
 ```js
+//
 for (let i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -7228,6 +7278,7 @@ JPEG compression is composed of three compression techniques applied in successi
 jQuery uses a format, `$(selector).action()` to assign an element(s) to an event. To explain it in detail, `$(selector)` will call jQuery to select `selector` element(s), and assign it to an event _Glossary("API"_) called `.action()`.
 
 ```js
+//
 $(document).ready(function () {
     alert('Hello World!');
     $('#blackBox').hide();
@@ -7237,6 +7288,7 @@ $(document).ready(function () {
 The above code carries out the same function as the following code:
 
 ```js
+//
 window.onload = function () {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7246,6 +7298,7 @@ window.onload = function () {
 Or:
 
 ```js
+//
 window.addEventListener('load', () => {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7482,6 +7535,7 @@ A string literal is zero or more characters enclosed in double (`"`) or single q
 The following are examples of string literals:
 
 ```js
+//
 'foo';
 'bar';
 '1234';
@@ -7496,6 +7550,7 @@ An object literal is a list of zero or more pairs of property names and associat
 The following is an example of an object literal. The first element of the `car` object defines a property, `myCar`, and assigns to it a new string, "`Toyota`"; the second element, the `getCar` property, is immediately assigned the result of invoking the function `carTypes('Honda')`; the third element, the `special` property, uses an existing variable (`sales`).
 
 ```js
+//
 var sales = 'BMW';
 
 function carTypes(name) {
@@ -7548,6 +7603,7 @@ console.log(car.special); // BMW
 ## Example
 
 ```js
+//
 var global = 5; //is a global variable
 
 function fun() {
@@ -7662,6 +7718,7 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
 #### Example:
 
 ```js
+//
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
@@ -7687,6 +7744,7 @@ For the above example, the syntax is as follows:
 #### Example:
 
 ```js
+//
 var i = 0;
 while (i < 5) {
     console.log(i);
@@ -8605,6 +8663,7 @@ In _Glossary("JavaScript"_), `null` is marked as one of the _Glossary("Primitive
 But in certain cases, `null` is not as "primitive" as it first seems! Every Object is derived from `null` value, and therefore `typeof` operator returns `object` for it:
 
 ```js
+//
 typeof null === 'object'; // true
 ```
 
@@ -8916,6 +8975,7 @@ These are not same origin because they use different ports:
 
 
 ```js
+//
 
 
 function FindProxyForURL(url, host) {
@@ -8995,6 +9055,7 @@ Payload is the data that is carried on behalf of an application. It is usually o
 > **Page load time** is the time it takes for a page to load, measured from [navigation start](/en-US/docs/Web/API/PerformanceTiming/navigationStart) to the [start of the load event](/en-US/docs/Web/API/PerformanceTiming/loadEventStart).
 
 ```js
+//
 let time = performance.timing;
 
 let pageloadtime = time.loadEventStart - time.navigationStart;
@@ -9048,6 +9109,7 @@ For example:
 
 
 ```js
+//
 
 
 function example(parameter) {
@@ -9668,6 +9730,7 @@ This example will help you understand that primitive values are **immutable.**
 ### JavaScript
 
 ```js
+//
 // Using a string method doesn't mutate the string
 var bar = 'baz';
 console.log(bar); // baz
@@ -10229,6 +10292,7 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 The following Python code defines a function that takes a number, prints it, and then calls itself again with the number's value -1. It keeps going until the number is equal to 0, in which case it stops.
 
 ```js
+//
 def recurse(x):
    if x > 0:
        print(x)
@@ -10953,6 +11017,7 @@ A **_glossary("function"_)** serves as a **closure** in _glossary("JavaScript"_)
 
 
 ```js
+//
 
 
 function exampleFunction() {
@@ -10967,6 +11032,7 @@ console.log(x); // Causes error
 However, the following code is valid due to the variable being declared outside the function, making it global:
 
 ```js
+//
 var x = 'declared outside function';
 
 exampleFunction();
@@ -12197,12 +12263,14 @@ Methods called on object instances are called _instance methods_.
 In the [Notifications API](/en-US/docs/Web/API/Notifications_API), the _domxref("Notification.requestPermission()"_) method is called on the actual _domxref("Notification"_) constructor itself — it is a static method:
 
 ```js
+//
 let promise = Notification.requestPermission();
 ```
 
 The _domxref("Notification.close()"_) method on the other hand, is an instance method — it is called on an specific notification object instance to close the system notification it represents:
 
 ```js
+//
 let myNotification = new Notification('This is my notification');
 
 myNotification.close();
@@ -12423,6 +12491,7 @@ Symbol can have an optional description, but for debugging purposes only.
 A **Symbol** value represents a unique identifier. For example:
 
 ```js
+//
 // Here are two symbols with the same description:
 let Sym1 = Symbol('Sym');
 let Sym2 = Symbol('Sym');
@@ -12446,6 +12515,7 @@ Most values in JavaScript support implicit conversion to a string. For instance,
 For example:
 
 ```js
+//
 let Sym = Symbol('Sym');
 alert(Sym); // TypeError: Cannot convert a Symbol value to a string
 ```
@@ -12455,6 +12525,7 @@ That's a "language guard" against messing up, because strings and symbols are fu
 If you really want to show a symbol, we need to call `.toString()` on it.
 
 ```js
+//
 let Sym = Symbol('Sym');
 alert(Sym.toString()); // Symbol(Sym), now it works
 ```
@@ -12462,6 +12533,7 @@ alert(Sym.toString()); // Symbol(Sym), now it works
 Or you can use the `symbol.description` property to get its description:
 
 ```js
+//
 let _Sym = Symbol('Sym');
 
 alert(_Sym.description); // Sym
@@ -12488,6 +12560,7 @@ There is a global symbol registry holding all available symbols. The methods tha
 The method `Symbol.for(tokenString)` returns a symbol value from the registry, and `Symbol.keyFor(symbolValue)` returns a token string from the registry; each is the other's inverse, so the following is `true`:
 
 ```js
+//
 Symbol.keyFor(Symbol.for('tokenString')) === 'tokenString'; // true
 ```
 
@@ -13007,6 +13080,7 @@ The _jsxref("Uint8Array"_) is copied (duplicated) in the worker while its buffer
 After transfer any attempt to read or write `uInt8Array` from the main thread will throw, but you can still check the `byteLength` to confirm it is now zero.
 
 ```js
+//
 // Create an 8MB "file" and fill it.
 var uInt8Array = new Uint8Array(1024 * 1024 * 8); // 8MB
 for (var i = 0; i < uInt8Array.length; ++i) {
@@ -13028,6 +13102,7 @@ console.log(uInt8Array.byteLength); // 0
 The code below shows a _domxref("structuredClone()"_) operation where the underlying buffer is copied from the original object to the clone.
 
 ```js
+//
 const original = new Uint8Array(1024);
 const clone = structuredClone(original);
 console.log(original.byteLength); // 1024
@@ -13156,6 +13231,7 @@ _Glossary("JavaScript"_) uses _Glossary("Type_Coercion", "type coercion"_) in Bo
 Examples of _truthy_ values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
 
 ```js
+//
 if (true)
 if ({})
 if ([])
@@ -13176,6 +13252,7 @@ if (-Infinity)
 If the first object is truthy, the [logical AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND) returns the second operand:
 
 ```js
+//
 true && "dog"
 // returns "dog"
 
@@ -13254,6 +13331,7 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 ## Examples
 
 ```js
+//
 const value1 = '5';
 const value2 = 9;
 let sum = value1 + value2;
@@ -13266,6 +13344,7 @@ In the above example, JavaScript has _coerced_ the `9` from a number into a stri
 The compiler could have coerced the `5` into a number and returned a sum of `14`, but it did not. To return this result, you'd have to explicitly convert the `5` to a number using the _jsxref("Global_Objects/Number", "Number()"_) method:
 
 ```js
+//
 sum = Number(value1) + value2;
 ```
 
@@ -13387,6 +13466,7 @@ UDP is suitable for purposes where error checking and correction are either not 
 ## Example
 
 ```js
+//
 var x; //create a variable but assign it no value
 
 console.log("x's value is", x); //logs "x's value is undefined"
@@ -13707,6 +13787,7 @@ The prefixes for properties and methods are lower-case:
 Sample usage:
 
 ```js
+//
 var requestAnimationFrame =
     window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
@@ -14347,6 +14428,7 @@ For example, SDK Libraries for AWS are examples of wrappers.
 Note also that if you wish to allow xml:base, you will need the [xml:base function](/en-US/docs/Archive/Add-ons/Code_snippets/XML/base_function), and the line beginning `var href = ...` should become:
 
 ```js
+//
 var href = getXmlBaseLink(/* XLink sans xml:base */ xinclude.getAttribute('href'), /* Element to query from */ xinclude);
 ```
 
@@ -14354,6 +14436,7 @@ var href = getXmlBaseLink(/* XLink sans xml:base */ xinclude.getAttribute('href'
 
 
 ```js
+//
 
 
 function resolveXIncludes(docu) {

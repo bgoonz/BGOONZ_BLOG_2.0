@@ -56,6 +56,7 @@ The most common example Hello World of Node.js is a web server:
 <br>
 
 ```js
+//
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -93,6 +94,7 @@ The second is used to return data to the caller.
 In this case with:
 
 ```js
+//
 res.statusCode = 200;
 ```
 
@@ -101,12 +103,14 @@ we set the statusCode property to 200, to indicate a successful response.
 We set the Content-Type header:
 
 ```js
+//
 res.setHeader('Content-Type', 'text/plain');
 ```
 
 and we close the response, adding the content as an argument to `end()`:
 
 ```js
+//
 res.end('Hello World\n');
 ```
 
