@@ -107,7 +107,7 @@ hashDirIn(pathB);
 
 > will replace any spaces in file names with an underscore!
 
-```bash
+```console
 
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
   ## TAKING IT A STEP FURTHER:
@@ -141,8 +141,7 @@ RecurseDirs "./"
 
 > Language: Javascript/Jquery
 
-> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-> </script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> > </script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
 //
