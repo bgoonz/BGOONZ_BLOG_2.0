@@ -6,18 +6,18 @@ excerpt: Developers will most likely argue for the rest of eternity about the
     most productive code editor and the best extensions.
 date: 2022-04-10T17:03:30.554Z
 image: /blog/code_mg4k5cd9s4.png
-thumb_image: ""
+thumb_image: ''
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
-  - src/data/categories/tools.yaml
+    - src/data/categories/tools.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/adding-css-to-your-html.md
     - src/pages/blog/adding-css-to-your-html.md
-    - src/pages/blog/intro-to-markdown.md
+      - src/pages/blog/adding-css-to-your-html.md
+      - src/pages/blog/intro-to-markdown.md
 cmseditable: true
 ---
 
