@@ -10,7 +10,7 @@
  */
 const React = require("react");
 const withPrefix = require("./src/utils/withPrefix")
-exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
+exports.onRenderBody = function({setHeadComponents, setPostBodyComponents}) {
     setHeadComponents([]);
     setPostBodyComponents([
         <React.Fragment>
