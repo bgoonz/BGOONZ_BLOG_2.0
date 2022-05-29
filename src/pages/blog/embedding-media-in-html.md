@@ -4,8 +4,8 @@ template: post
 subtitle: "From object to iframe "
 excerpt: getting the hang of embedding things into your web pages
 date: 2022-04-19T20:11:27.517Z
-image: blob:https://bgoonz-blog.netlify.app/82e37c29-fd2d-4df5-ae87-47f6805213f9
-thumb_image: blob:https://bgoonz-blog.netlify.app/82e37c29-fd2d-4df5-ae87-47f6805213f9
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/embedded-media.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/embedded-media.png?raw=true
 image_position: right
 show_author_bio: false
 cmseditable: true
