@@ -1,19 +1,10 @@
 // Fonts
-$font-primary: "Lato",
-Helvetica,
-Arial,
-sans-serif !default;
-$font-monospace: SFMono-Regular,
-Menlo,
-#003f8bd5 Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace !default;
+$font-primary: 'Lato', Helvetica, Arial, sans-serif !default;
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 
 // Colors
 $color-primary: #00c6ff !default;
-$color-secondary: #003f8b !default;
+$color-secondary: #0072ff !default;
 
 $gray-100: #f8f8fa !default;
 $gray-200: #ecedf2 !default;
@@ -33,7 +24,7 @@ $border-radius: 5px;
 $border-radius-sm: 3px;
 
 // Box shadow
-$box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.08);
+$box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.13);
 
 // Container max width
 $container: 1200px !default;
@@ -41,15 +32,23 @@ $container-sm: 680px !default;
 $container-md: 800px !default;
 
 // Container padding
-$container-padding: 2vw !default;
+$container-padding: 3vw !default;
 
 // Grid gap
-$grid-gap: 1.675em !default;
+$grid-gap: 1.875em !default;
 
 // Alternative theme palettes
-$theme-palettes: (green: (primary: #20c86e,
-        secondary: #1ba65b),
-    navy: (primary: #004e92,
-        secondary: #000428),
-    violet: (primary: #8e2de2,
-        secondary: #4a00e0));
+$theme-palettes: (
+    green: (
+        primary: #20c86e,
+        secondary: #1ba65b
+    ),
+    navy: (
+        primary: #1b2024,
+        secondary: #000428
+    ),
+    violet: (
+        primary: #8e2de2,
+        secondary: #4a00e0
+    )
+);
