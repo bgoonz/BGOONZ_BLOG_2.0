@@ -5,8 +5,8 @@ subtitle: "The Gatsby CLI is available via npm "
 excerpt: "The Gatsby command line tool  CLI is the main entry point for getting
   up and running with a Gatsby application "
 date: 2022-05-15T23:44:13.229Z
-image: images/https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
-thumb_image: images/https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/gatsby-cli.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/gatsby-cli.png?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
