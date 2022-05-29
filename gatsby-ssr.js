@@ -8,13 +8,13 @@
 //<script src={withPrefix('js/analytics.js')} /> }
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-const React = require("react");
-const withPrefix = require("./src/utils/withPrefix")
-exports.onRenderBody = function({setHeadComponents, setPostBodyComponents}) {
+const React = require('react');
+const withPrefix = require('./src/utils/withPrefix');
+exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setHeadComponents([]);
     setPostBodyComponents([
         <React.Fragment>
-            <script src={('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js')} />
+            <script src={'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js'} />
             <script src={withprefix('js/algolia.js')} />
             <script src={withprefix('js/analytics.js')} />
             <script src={withprefix('js/blm.js')} />
