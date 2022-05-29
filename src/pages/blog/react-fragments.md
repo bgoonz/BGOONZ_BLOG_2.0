@@ -2,25 +2,25 @@
 title: React Fragments
 template: post
 subtitle: A common pattern in React is for a component to return multiple
-  elements. Fragments let you group a list of children without adding extra
-  nodes to the DOM.
+    elements. Fragments let you group a list of children without adding extra
+    nodes to the DOM.
 excerpt: A common pattern in React is for a component to return multiple
-  elements. Fragments let you group a list of children without adding extra
-  nodes to the DOM.
+    elements. Fragments let you group a list of children without adding extra
+    nodes to the DOM.
 date: 2022-05-28T23:53:29.467Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react.jpg?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react.jpg?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 tags:
-  - src/data/tags/react.yaml
+    - src/data/tags/react.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
-  - src/pages/blog/deploy-react-app-to-heroku.md
-  - src/pages/blog/react-state.md
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/passing-arguments-to-a-callback-in-js.md
+    - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/deploy-react-app-to-heroku.md
+    - src/pages/blog/react-state.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/passing-arguments-to-a-callback-in-js.md
 cmseditable: true
 ---
 A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
@@ -152,4 +152,3 @@ function Glossary(props) {
 
 <iframe height="800" style="width: 100%;" scrolling="no" title="Example: Fragments" src="https://codepen.io/bgoonz/embed/VwQQWyV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
-
