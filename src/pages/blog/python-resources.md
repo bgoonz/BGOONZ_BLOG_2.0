@@ -33,15 +33,6 @@ thumb_image: images/superb-amaranth.png
 thumb_image_alt: python logo
 ---
 
-<<<<<<< HEAD
-# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
-
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
-
-My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
-
-- Bram Cohen
-=======
 # Beginners Guide To Python
 
 
@@ -52,7 +43,6 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
 -   Bram Cohen
->>>>>>> master
 
 Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science.
 
@@ -62,19 +52,11 @@ Article on basic web development setup… it is geared towards web but VSCode is
 
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
-<<<<<<< HEAD
-- the high-level data types allow you to express complex operations in a single statement;
-- 
-- statement grouping is done by indentation instead of beginning and ending brackets;
-
-- no variable or argument declarations are necessary.
-=======
 -   the high-level data types allow you to express complex operations in a single statement;
 -
 -   statement grouping is done by indentation instead of beginning and ending brackets;
 
 -   no variable or argument declarations are necessary.
->>>>>>> master
 
 ### Installing Python:
 
@@ -168,15 +150,6 @@ Instead of using the , in the print function, you can put a + to combine the var
 
 There are many operators in python:
 
-<<<<<<< HEAD
-- \+
-- 
-- \-
-- 
-- /
-
-- \*
-=======
 -   \+
 -
 -   \-
@@ -184,7 +157,6 @@ There are many operators in python:
 -   /
 
 -   \*
->>>>>>> master
     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
     Now, we can look at a few more complicated ones:
 
@@ -219,19 +191,6 @@ The first number stands for how far in you go from the front, and the second sta
 
 Here is a list of functions/methods we will go over:
 
-<<<<<<< HEAD
-- .strip()
-- 
-- len()
-- 
-- .lower()
-- 
-- .upper()
-
-- .replace()
-
-- .split()
-=======
 -   .strip()
 -
 -   len()
@@ -243,7 +202,6 @@ Here is a list of functions/methods we will go over:
 -   .replace()
 
 -   .split()
->>>>>>> master
 
 ### New: Input()
 

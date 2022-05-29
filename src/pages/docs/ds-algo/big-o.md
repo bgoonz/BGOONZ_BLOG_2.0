@@ -10,34 +10,22 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 # A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
 ![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
 
-<<<<<<< HEAD
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true"></iframe>
-=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true">
 </iframe>
 <br>
->>>>>>> master
 
 -   Why is looking at runtime not a reliable method of calculating time complexity?
 -   Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
 -   How many background processes ran concurrently with our program that was being tested?
 -   We also need to ask if our code remains performant if we increase the size of the input.
 -   The real question we need to answering is: `How does our performance scale?`.
-<<<<<<< HEAD
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no"></iframe>
-=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no">
 </iframe>
 <br>
->>>>>>> master
 
 ### big 'O' notation
 
@@ -243,14 +231,7 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 ---
 
-<<<<<<< HEAD
-
 ```js
-
-
-=======
-```js
->>>>>>> master
 function fastFib(n, memo = {}) {
     if (n in memo) return memo[n];
     if (n === 1 || n === 2) return 1;

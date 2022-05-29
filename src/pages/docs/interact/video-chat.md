@@ -33,20 +33,12 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
-
-# Zumzi Video Conference:
-
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%  width="1000px" height="1400px"
-        src="https://zumzi-chat-messenger.vercel.app/web/login.html"></iframe>
-=======
 # Zumzi Video Conference:
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%  width="1000px" height="1400px"
         src="https://zumzi-chat-messenger.vercel.app/web/login.html">
 </iframe>
 <br>
->>>>>>> master
 
 ## Zumzi Live Demo
 
@@ -54,25 +46,6 @@ template: docs
 
 ## Features:
 
-<<<<<<< HEAD
-- Group Voice and Video Call with unlimited members
-- Live Streaming
-- Screen Sharing
-- Fine control over all video & audio parameters and user permissions
-- Supports video streaming at various resolutions: Standard, HD, FHD and 4K
-- Group Chat
-- One-to-One chat
-- Invite Participants
-
-There are two sub-folders:
-
-- **backend** contains the source code for hosting the backend APIs for the app
-- **web** contains the source code for the app which you can directly integrate into your website.
-
-## Apendix
-
-- access token:
-=======
 -   Group Voice and Video Call with unlimited members
 -   Live Streaming
 -   Screen Sharing
@@ -90,98 +63,57 @@ There are two sub-folders:
 ## Apendix
 
 -   access token:
->>>>>>> master
     > An Access Token needs to be generated for every user who needs to access mesibo real-time messaging API. You can generate Access Token for every user of your application on demand and send it to the user. The user will then use this access token to initialize mesibo client-side API..
 
 ---
 
-<<<<<<< HEAD
-- api key
-=======
 -   api key
->>>>>>> master
     > API key is a unique alphanumeric identifier associated with your Mesibo account. You can view, change or regenerate the API key from the Mesibo console.
 
 ---
 
-<<<<<<< HEAD
-- Application Token
-=======
 -   Application Token
->>>>>>> master
     > is a unique alphanumeric identifier with one of your application. You can view and change the app token from the Mesibo Console.
 
 ---
 
-<<<<<<< HEAD
-- Mesibo container
-=======
 -   Mesibo container
->>>>>>> master
     > A container is a runtime instance of mesibo in-premises docker image.
 
 ---
 
-<<<<<<< HEAD
-- MAU
-=======
 -   MAU
->>>>>>> master
     > MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period
 
 ---
 
-<<<<<<< HEAD
-- High-availability clusters
-=======
 -   High-availability clusters
->>>>>>> master
     > (also known as HA clusters or fail-over clusters) are
     > groups of computers that support server applications that can be reliably utilized with a minimum amount of down-time
 
 ---
 
-<<<<<<< HEAD
-- namespace
-=======
 -   namespace
->>>>>>> master
     > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo's isolation model
 
 ---
 
-<<<<<<< HEAD
-- node
-=======
 -   node
->>>>>>> master
     > A \[node]is a physical or virtual machine running an instance of the mesibo.
 
 ---
 
-<<<<<<< HEAD
-- On premises deployment
-=======
 -   On premises deployment
->>>>>>> master
     > Mesibo On-premises deploment allows you to run Mesibo in your own data center or cloud.
 
 ---
 
-<<<<<<< HEAD
-- 1-1 Communication
-=======
 -   1-1 Communication
->>>>>>> master
     > Communication is between two parties; for example, a chat or a call
 
 ---
 
-<<<<<<< HEAD
-- Peer-to-peer
-=======
 -   Peer-to-peer
->>>>>>> master
     (P2P)
     > It is a distributed application architecture that partitions tasks or workloads between peers. Peers are equally privileged, equipotent participants in the application.They are said to form a peer-to-peer network of nodes.
 
@@ -384,12 +316,8 @@ Ensure that you perform a hard reload so that you have the latest Mesibo Javascr
 
 The easiest way to install Mesibo Javascript SDK is to include following in `<HEAD>` section of your HTML file:
 
-<<<<<<< HEAD
-    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
-=======
     <script type="text/javascript" src="https://api.mesibo.com/mesibo.js">
 </script>
->>>>>>> master
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.
 
@@ -405,13 +333,8 @@ Alternatively, you may also use DOM method to load the mesibo JS on demand when 
 
 Due to the browser security model, camera and microphone access require the following:
 
-<<<<<<< HEAD
-- You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
-- You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
-=======
 -   You MUST use a secure URL (`https://`). The `http://` or `file://` URLs will NOT work.
 -   You MUST also use a valid certificate with recognized authority, the self-signed certificate will NOT work.
->>>>>>> master
 
 The browser will not grant the camera and microphone permissions unless your app meets the above requirements. If permissions are not granted, calls and conferencing will not work.
 

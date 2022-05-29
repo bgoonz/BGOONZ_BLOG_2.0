@@ -1,27 +1,5 @@
 ---
 title: Python Quiz
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-weight: 0
-excerpt: Python Quiz
-seo:
-    title: Python Quiz
-    description: Python Quiz cheat sheet for python developers
-    robots: []
-    extra:
-        - name: 'og:image'
-          value: images/py-code.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:title'
-          value: python cheat sheet
-          keyName: name
-          relativeUrl: false
-template: docs
----
-
-
-### zQ1. What is an abstract class?
-=======
 template: post
 subtitle: What statement about static methods is true
 excerpt: What statement about static methods is true
@@ -43,7 +21,6 @@ cmseditable: true
 # Python Quiz
 
 #### zQ1. What is an abstract class?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] An abstract class is the name for any class from which you can instantiate an object.
 -   [ ] Abstract classes must be redefined any time an object is instantiated from them.
@@ -52,11 +29,7 @@ cmseditable: true
 
 [reference](https://www.geeksforgeeks.org/abstract-classes-in-python/)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q2. What happens when you use the build-in function `any()` on a list?
-=======
 #### Q2. What happens when you use the build-in function `any()` on a list?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The `any()` function will randomly return any item from the list.
 -   [ ] \[✅] The `any()` function returns True if any item in the list evaluates to True. Otherwise, it returns False.
@@ -71,22 +44,14 @@ if any([True, False, False, False]) == True:
 >>> Yes, there is True
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q3. What data structure does a binary tree degenerate to if it isn't balanced properly?
-=======
 #### Q3. What data structure does a binary tree degenerate to if it isn't balanced properly?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] linked list
 -   [ ] queue
 -   [ ] set
 -   [ ] OrderedDict
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q4. What statement about static methods is true?
-=======
 #### Q4. What statement about static methods is true?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Static methods are called static because they always return `None`.
 -   [ ] Static methods can be bound to either a class or an instance of a class.
@@ -95,11 +60,7 @@ if any([True, False, False, False]) == True:
 
 [reference](https://www.geeksforgeeks.org/class-method-vs-static-method-python)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q5. What are attributes?
-=======
 #### Q5. What are attributes?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Attributes are long-form version of an `if/else` statement, used when testing for equality between objects.
 -   [ ] \[✅] Attributes are a way to hold data or describe a state for a class or an instance of a class.
@@ -108,11 +69,7 @@ if any([True, False, False, False]) == True:
 
 **Explanation** Attributes defined under the class, arguments goes under the functions. arguments usually refer as parameter, whereas attributes are the constructor of the class or an instance of a class.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q6. What is the term to describe this code?
-=======
 #### Q6. What is the term to describe this code?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 `count, fruit, price = (2, 'apple', 3.5)`
 
@@ -121,11 +78,7 @@ if any([True, False, False, False]) == True:
 -   [ ] `tuple matching`
 -   [ ] `tuple duplication`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q7. What built-in list method would you use to remove items from a list?
-=======
 #### Q7. What built-in list method would you use to remove items from a list?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `.delete()` method
 -   [ ] `pop(my_list)`
@@ -141,33 +94,21 @@ my_list
 >>>[2,3]
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q8. What is one of the most common use of Python's sys library?
-=======
 #### Q8. What is one of the most common use of Python's sys library?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] to capture command-line arguments given at a file's runtime
 -   [ ] to connect various systems, such as connecting a web front end, an API service, a database, and a mobile app
 -   [ ] to take a snapshot of all the packages and libraries in your virtual environment
 -   [ ] to scan the health of your Python ecosystem while inside a virtual environment
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q9. What is the runtime of accessing a value in a dictionary by using its key?
-=======
 #### Q9. What is the runtime of accessing a value in a dictionary by using its key?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] O(n), also called linear time.
 -   [ ] O(log n), also called logarithmic time.
 -   [ ] O(n^2), also called quadratic time.
 -   [ ] \[✅] O(1), also called constant time.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q10. What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?
-=======
 #### Q10. What is the correct syntax for defining a class called Game, if it inherits from a parent class called LogicGame?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] `class Game(LogicGame): pass`
 -   [ ] `def Game(LogicGame): pass`
@@ -176,11 +117,7 @@ my_list
 
 **Explanation:** `The parent class which is inherited is passed as an argument to the child class. Therefore, here the first option is the right answer.`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q11. What is the correct way to write a doctest?
-=======
 #### Q11. What is the correct way to write a doctest?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A
 
@@ -240,11 +177,7 @@ def sum(a, b):
 
 **explanation** - use ''' to start the doc and add output of the cell after >>>
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q12. What built-in Python data type is commonly used to represent a stack?
-=======
 #### Q12. What built-in Python data type is commonly used to represent a stack?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `set`
 -   [ ] \[✅] `list`
@@ -253,11 +186,7 @@ def sum(a, b):
 
 `. You can only build a stack from scratch.`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q13. What would this expression return?
-=======
 #### Q13. What would this expression return?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 college_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']
@@ -269,22 +198,14 @@ return list(enumerate(college_years, 2019))
 -   [ ] `[('Freshman', 'Sophomore', 'Junior', 'Senior'), (2019, 2020, 2021, 2022)]`
 -   [ ] \[✅] `[(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q14. How does `defaultdict` work?
-=======
 #### Q14. How does `defaultdict` work?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `defaultdict` will automatically create a dictionary for you that has keys which are the integers 0-10.
 -   [ ] `defaultdict` forces a dictionary to only accept keys that are of the data type specified when you created the `defaultdict` (such as strings or integers).
 -   [ ] \[✅] If you try to read from a `defaultdict` with a nonexistent key, a new default key-value pair will be created for you instead of throwing a `KeyError`.
 -   [ ] `defaultdict` stores a copy of a dictionary in memory that you can default to if the original gets unintentionally modified.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q15. What is the correct syntax for defining a class called "Game", if it inherits from a parent class called "LogicGame"?
-=======
 #### Q15. What is the correct syntax for defining a class called "Game", if it inherits from a parent class called "LogicGame"?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `class Game.LogicGame(): pass`
 -   [ ] `def Game(LogicGame): pass`
@@ -293,11 +214,7 @@ return list(enumerate(college_years, 2019))
 
 `repeated but labels will be different`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q16. What is the purpose of the "self" keyword when defining or calling instance methods?
-=======
 #### Q16. What is the purpose of the "self" keyword when defining or calling instance methods?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `self` means that no other arguments are required to be passed into the method.
 -   [ ] There is no real purpose for the `self` method; it's just historic computer science jargon that Python keeps to stay consistent with other programming languages.
@@ -316,11 +233,7 @@ instance.password
 >>>'1234'
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q17. Which of these is NOT a characteristic of namedtuples?
-=======
 #### Q17. Which of these is NOT a characteristic of namedtuples?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] You can assign a name to each of the `namedtuple` members and refer to them that way, similarly to how you would access keys in `dictionary`.
 -   [ ] Each member of a namedtuple object can be indexed to directly, just like in a regular `tuple`.
@@ -329,22 +242,14 @@ instance.password
 
 \*\*We need to import it using `from collections import namedtuple` \*\*
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q18. What is an instance method?
-=======
 #### Q18. What is an instance method?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] Instance methods can modify the state of an instance or the state of its parent class.
 -   [ ] Instance methods hold data related to the instance.
 -   [ ] An instance method is any class method that doesn't take any arguments.
 -   [ ] An instance method is a regular function that belongs to a class, but it must return `None`.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q19. Which choice is the most syntactically correct example of the conditional branching?
-=======
 #### Q19. Which choice is the most syntactically correct example of the conditional branching?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -406,55 +311,35 @@ else:
 
 Also see Question 85 for the same question with different answers.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q20. Which statement does NOT describe the object-oriented programming concept of encapsulation?
-=======
 #### Q20. Which statement does NOT describe the object-oriented programming concept of encapsulation?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] It protects the data from outside interference.
 -   [ ] A parent class is encapsulated and no data from the parent class passes on to the child class.
 -   [ ] It keeps data and the methods that can manipulate that data in one place.
 -   [ ] \[✅] It only allows the data to be changed by methods.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q21. What is the purpose of an if/else statement?
-=======
 #### Q21. What is the purpose of an if/else statement?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] It tells the computer which chunk of code to run if the instructions you coded are incorrect.
 -   [ ] It runs one chunk of code if all the imports were successful, and another chunk of code if the imports were not successful.
 -   [ ] \[✅] It executes one chunk of code if a condition is true, but a different chunk of code if the condition is false.
 -   [ ] It tells the computer which chunk of code to run if the is enough memory to handle it, and which chunk of code to run if there is not enough memory to handle it.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q22. What built-in Python data type is best suited for implementing a queue?
-=======
 #### Q22. What built-in Python data type is best suited for implementing a queue?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] dictionary
 -   [ ] set
 -   [ ] None. You can only build a queue from scratch.
 -   [ ] \[✅] list
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q23. What is the correct syntax for instantiating a new object of the type Game?
-=======
 #### Q23. What is the correct syntax for instantiating a new object of the type Game?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `my_game = class.Game()`
 -   [ ] `my_game = class(Game)`
 -   [ ] \[✅] `my_game = Game()`
 -   [ ] `my_game = Game.create()`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q24. What does the built-in `map()` function do?
-=======
 #### Q24. What does the built-in `map()` function do?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] It creates a path from multiple values in an iterable to a single value.
 -   [ ] \[✅] It applies a function to each item in an iterable and returns the value of that function.
@@ -471,77 +356,49 @@ area
 >>> [3.14, 12.57, 28.27]
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q25. If you don't explicitly return a value from a function, what happens?
-=======
 #### Q25. If you don't explicitly return a value from a function, what happens?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The function will return a RuntimeError if you don't return a value.
 -   [ ] \[✅] If the return keyword is absent, the function will return `None`.
 -   [ ] If the return keyword is absent, the function will return `True`.
 -   [ ] The function will enter an infinite loop because it won't know when to stop executing its code.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q26. What is the purpose of the `pass` statement in Python?
-=======
 #### Q26. What is the purpose of the `pass` statement in Python?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] It is used to skip the `yield` statement of a generator and return a value of None.
 -   [ ] \[✅] It is a null operation used mainly as a placeholder in functions, classes, etc.
 -   [ ] It is used to pass control from one statement block to another.
 -   [ ] It is used to skip the rest of a `while` or `for loop` and return to the start of the loop.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q27. What is the term used to describe items that may be passed into a function?
-=======
 #### Q27. What is the term used to describe items that may be passed into a function?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] arguments
 -   [ ] paradigms
 -   [ ] attributes
 -   [ ] decorators
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q28. Which collection type is used to associate values with unique keys?
-=======
 #### Q28. Which collection type is used to associate values with unique keys?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `slot`
 -   [ ] \[✅] `dictionary`
 -   [ ] `queue`
 -   [ ] `sorted list`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q29. When does a for loop stop iterating?
-=======
 #### Q29. When does a for loop stop iterating?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] when it encounters an infinite loop
 -   [ ] when it encounters an if/else statement that contains a break keyword
 -   [ ] \[✅] when it has assessed each item in the iterable it is working on or a break keyword is encountered
 -   [ ] when the runtime for the loop exceeds O(n^2)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q30. Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?
-=======
 #### Q30. Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.
 -   [ ] The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.
 -   [ ] The runtime cannot be determined unless you know how many nodes are in the singly linked list.
 -   [ ] The runtime is O(1) because you can index directly to a node in a singly linked list.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q31. Given the following three list, how would you create a new list that matches the desired output printed below?
-=======
 #### Q31. Given the following three list, how would you create a new list that matches the desired output printed below?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 fruits = ['Apples', 'Oranges', 'Bananas']
@@ -610,11 +467,7 @@ for fruit in fruits:
 return output
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q32. What happens when you use the built-in function all() on a list?
-=======
 #### Q32. What happens when you use the built-in function all() on a list?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The `all()` function returns a Boolean value that answers the question "Are all the items in this list the same?
 -   [ ] The `all()` function returns True if all the items in the list can be converted to strings. Otherwise, it returns False.
@@ -632,11 +485,7 @@ else:
 >>> There is an imposter
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q33. What is the correct syntax for calling an instance method on a class named Game?
-=======
 #### Q33. What is the correct syntax for calling an instance method on a class named Game?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 _(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_
 
@@ -668,55 +517,35 @@ _(Answer format may vary. Game and roll (or dice_roll) should each be called wit
 >>> dice.roll()
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q34. What is the algorithmic paradigm of quick sort?
-=======
 #### Q34. What is the algorithmic paradigm of quick sort?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] backtracking
 -   [ ] dynamic programming
 -   [ ] decrease and conquer
 -   [ ] \[✅] divide and conquer
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q35. What is runtime complexity of the list's built-in `.append()` method?
-=======
 #### Q35. What is runtime complexity of the list's built-in `.append()` method?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] O(1), also called constant time
 -   [ ] O(log n), also called logarithmic time
 -   [ ] O(n^2), also called quadratic time
 -   [ ] O(n), also called linear time
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q36. What is key difference between a `set` and a `list`?
-=======
 #### Q36. What is key difference between a `set` and a `list`?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A set is an ordered collection unique items. A list is an unordered collection of non-unique items.
 -   [ ] Elements can be retrieved from a list but they cannot be retrieved from a set.
 -   [ ] A set is an ordered collection of non-unique items. A list is an unordered collection of unique items.
 -   [ ] \[✅] A set is an unordered collection unique items. A list is an ordered collection of non-unique items.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q37. What is the definition of abstraction as applied to object-oriented Python?
-=======
 #### Q37. What is the definition of abstraction as applied to object-oriented Python?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Abstraction means that a different style of code can be used, since many details are already known to the program behind the scenes.
 -   [ ] \[✅] Abstraction means the implementation is hidden from the user, and only the relevant data or information is shown.
 -   [ ] Abstraction means that the data and the functionality of a class are combined into one entity.
 -   [ ] Abstraction means that a class can inherit from more than one parent class.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q38. What does this function print?
-=======
 #### Q38. What does this function print?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 def print_alpha_nums(abc_list, num_list):
@@ -767,11 +596,7 @@ b 1 2 3
 c 1 2 3
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q39. Correct representation of doctest for function in Python
-=======
 #### Q39. Correct representation of doctest for function in Python
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -825,22 +650,14 @@ def sum(a, b):
 
 **Explanation:** Use """ to start and end the docstring and use >>> to represent the output. If you write this correctly you can also run the doctest using build-in doctest module
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q40. Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?
-=======
 #### Q40. Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] When instantiating an object, the object doesn't inherit any of the parent class's methods.
 -   [ ] When instantiating an object, the object will inherit the methods of whichever parent class has more methods.
 -   [ ] When instantiating an object, the programmer must specify which parent class to inherit methods from.
 -   [ ] \[✅] An instance of the Game class will inherit whatever methods the BoardGame and LogicGame classes have.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q41. What does calling namedtuple on a collection type return?
-=======
 #### Q41. What does calling namedtuple on a collection type return?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] a generic object class with iterable parameter fields
 -   [ ] a generic object class with non-iterable named fields
@@ -857,22 +674,14 @@ area
 >>> [3.14, 12.57, 28.27]
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q42. What symbol(s) do you use to assess equality between two elements?
-=======
 #### Q42. What symbol(s) do you use to assess equality between two elements?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `&&`
 -   [ ] `=`
 -   [ ] \[✅] `==`
 -   [ ] `||`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q43. Review the code below. What is the correct syntax for changing the price to 1.5?
-=======
 #### Q43. Review the code below. What is the correct syntax for changing the price to 1.5?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 fruit_info = {
@@ -887,11 +696,7 @@ fruit_info = {
 -   [ ] `1.5 = fruit_info ['price]`
 -   [ ] `my_list['price'] == 1.5`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q44. What value would be returned by this check for equality?
-=======
 #### Q44. What value would be returned by this check for equality?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 `5 != 6`
 
@@ -902,11 +707,7 @@ fruit_info = {
 
 **Explanation** - `!=` is equivalent to **not equal to** in python
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q45. What does a class's `init()` method do?
-=======
 #### Q45. What does a class's `init()` method do?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The `__init__` method makes classes aware of each other if more than one class is defined in a single code file.
 -   [ ] The`__init__` method is included to preserve backwards compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.
@@ -924,33 +725,21 @@ t1 = test()
 >>> 'I came here without your permission lol'
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q46. What is meant by the phrase "space complexity"?
-=======
 #### Q46. What is meant by the phrase "space complexity"?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `How many microprocessors it would take to run your code in less than one second`
 -   [ ] `How many lines of code are in your code file`
 -   [ ] \[✅] `The amount of space taken up in memory as a function of the input size`
 -   [ ] `How many copies of the code file could fit in 1 GB of memory`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q47. What is the correct syntax for creating a variable that is bound to a dictionary?
-=======
 #### Q47. What is the correct syntax for creating a variable that is bound to a dictionary?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] `fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}`
 -   [ ] `fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()`
 -   [ ] `fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()`
 -   [ ] `fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q48. What is the proper way to write a list comprehension that represents all the keys in this dictionary?
-=======
 #### Q48. What is the proper way to write a list comprehension that represents all the keys in this dictionary?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 `fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`
 
@@ -959,11 +748,7 @@ t1 = test()
 -   [ ] \[✅] `fruit_names = [x for x in fruits.keys()]`
 -   [ ] `fruit_names = x for x in fruits.keys()`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q49. What is the purpose of the `self` keyword when defining or calling methods on an instance of an object?
-=======
 #### Q49. What is the purpose of the `self` keyword when defining or calling methods on an instance of an object?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `self` refers to the class that was inherited from to create the object using `self`.
 -   [ ] There is no real purpose for the `self` method. It's just legacy computer science jargon that Python keeps to stay consistent with other programming languages.
@@ -972,33 +757,21 @@ t1 = test()
 
 **Explanation:** - Try running the example of the Q45 without passing `self` argument inside the `__init__`, you'll understand the reason. You'll get the error like this `__init__() takes 0 positional arguments but 1 was given`, this means that something is going inside even if haven't specified, which is instance itself.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q50. What statement about the class methods is true?
-=======
 #### Q50. What statement about the class methods is true?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A class method is a regular function that belongs to a class, but it must return None.
 -   [ ] \[✅] A class method can modify the state of the class, but they can't directly modify the state of an instance that inherits from that class.
 -   [ ] A class method is similar to a regular function, but a class method doesn't take any arguments.
 -   [ ] A class method hold all of the data for a particular class.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q51. What does it mean for a function to have linear runtime?
-=======
 #### Q51. What does it mean for a function to have linear runtime?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] You did not use very many advanced computer programming concepts in your code.
 -   [ ] The difficulty level your code is written at is not that high.
 -   [ ] It will take your program less than half a second to run.
 -   [ ] \[✅] The amount of time it takes the function to complete grows linearly as the input size increases.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q52. What is the proper way to define a function?
-=======
 #### Q52. What is the proper way to define a function?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `def getMaxNum(list_of_nums): # body of function goes here`
 -   [ ] `func get_max_num(list_of_nums): # body of function goes here`
@@ -1007,22 +780,14 @@ t1 = test()
 
 [explanation for 52 & 53](https://www.python.org/dev/peps/pep-0008/)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q53. According to the PEP 8 coding style guidelines, how should constant values be named in Python?
-=======
 #### Q53. According to the PEP 8 coding style guidelines, how should constant values be named in Python?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] in camel case without using underscores to separate words -- e.g. `maxValue = 255`
 -   [ ] in lowercase with underscores to separate words -- e.g. `max_value = 255`
 -   [ ] \[✅] in all caps with underscores separating words -- e.g. `MAX_VALUE = 255`
 -   [ ] in mixed case without using underscores to separate words -- e.g. `MaxValue = 255`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q54. Describe the functionality of a deque.
-=======
 #### Q54. Describe the functionality of a deque.
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A deque adds items to one side and remove items from the other side.
 -   [ ] A deque adds items to either or both sides, but only removes items from the top.
@@ -1031,22 +796,14 @@ t1 = test()
 
 **Explanation** - `deque` is used to create block chanin and in that there is _first in first out_ approch, which means the last element to enter will be the first to leave.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q55. What is the correct syntax for creating a variable that is bound to a set?
-=======
 #### Q55. What is the correct syntax for creating a variable that is bound to a set?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] `my_set = {0, 'apple', 3.5}`
 -   [ ] `my_set = to_set(0, 'apple', 3.5)`
 -   [ ] `my_set = (0, 'apple', 3.5).to_set()`
 -   [ ] `my_set = (0, 'apple', 3.5).set()`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q56. What is the correct syntax for defining an `__init__()` method that takes no parameters?
-=======
 #### Q56. What is the correct syntax for defining an `__init__()` method that takes no parameters?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -1076,44 +833,28 @@ def __init__(self):
     pass
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q57. Which of the following is TRUE About how numeric data would be organised in a binary Search tree?
-=======
 #### Q57. Which of the following is TRUE About how numeric data would be organised in a binary Search tree?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] For any given Node in a binary Search Tree, the child node to the left is less than the value of the given node and the child node to its right is greater than the given node.
 -   [ ] Binary Search Tree cannot be used to organize and search through numeric data, given the complication that arise with very deep trees.
 -   [ ] The top node of the binary search tree would be an arbitrary number. All the nodes to the left of the top node need to be less than the top node's number, but they don't need to ordered in any particular way.
 -   [ ] The smallest numeric value would go in the top most node. The next highest number would go in its left child node, the the next highest number after that would go in its right child node. This pattern would continue until all numeric values were in their own node.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q58. Why would you use a decorator?
-=======
 #### Q58. Why would you use a decorator?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A decorator is similar to a class and should be used if you are doing functional programming instead of object oriented programming.
 -   [ ] A decorator is a visual indicator to someone reading your code that a portion of your code is critical and should not be changed.
 -   [ ] \[✅] You use the decorator to alter the functionality of a function without having to modify the functions code.
 -   [ ] An import statement is preceded by a decorator, python knows to import the most recent version of whatever package or library is being imported.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q59. When would you use a for loop?
-=======
 #### Q59. When would you use a for loop?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Only in some situations, as loops are used only for certain type of programming.
 -   [ ] \[✅] When you need to check every element in an iterable of known length.
 -   [ ] When you want to minimize the use of strings in your code.
 -   [ ] When you want to run code in one file for a function in another file.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q60. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?
-=======
 #### Q60. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -1144,11 +885,7 @@ def calculate_sales_tax(subtotal):
     pass
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q61. What would happen if you did not alter the state of the element that an algorithm is operating on recursively?
-=======
 #### Q61. What would happen if you did not alter the state of the element that an algorithm is operating on recursively?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] You do not have to alter the state of the element the algorithm is recursing on.
 -   [ ] You would eventually get a KeyError when the recursive portion of the code ran out of items to recurse on.
@@ -1157,11 +894,7 @@ def calculate_sales_tax(subtotal):
 
 [explanation](https://www.python-course.eu/python3_recursive_functions.php#Definition-of-Recursion)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q62. What is the runtime complexity of searching for an item in a binary search tree?
-=======
 #### Q62. What is the runtime complexity of searching for an item in a binary search tree?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The runtime for searching in a binary search tree is O(1) because each node acts as a key, similar to a dictionary.
 -   [ ] The runtime for searching in a binary search tree is O(n!) because every node must be compared to every other node.
@@ -1170,11 +903,7 @@ def calculate_sales_tax(subtotal):
 
 [explanation](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q63. Why would you use `mixin`?
-=======
 #### Q63. Why would you use `mixin`?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] You use a `mixin` to force a function to accept an argument at runtime even if the argument wasn't included in the function's definition.
 -   [ ] You use a `mixin` to allow a decorator to accept keyword arguments.
@@ -1183,22 +912,14 @@ def calculate_sales_tax(subtotal):
 
 [explanation](https://www.youtube.com/watch?v=zVFLBfqV-q0)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q64. What is the runtime complexity of adding an item to a stack and removing an item from a stack?
-=======
 #### Q64. What is the runtime complexity of adding an item to a stack and removing an item from a stack?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Add items to a stack in O(1) time and remove items from a stack on O(n) time.
 -   [ ] \[✅] Add items to a stack in O(1) time and remove items from a stack in O(1) time.
 -   [ ] Add items to a stack in O(n) time and remove items from a stack on O(1) time.
 -   [ ] Add items to a stack in O(n) time and remove items from a stack on O(n) time.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q65. Which statement accurately describes how items are added to and removed from a stack?
-=======
 #### Q65. Which statement accurately describes how items are added to and removed from a stack?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] a stacks adds items to one side and removes items from the other side.
 -   [ ] \[✅] a stacks adds items to the top and removes items from the top.
@@ -1207,22 +928,14 @@ def calculate_sales_tax(subtotal):
 
 **Explanation** Stack uses the _first in first out_ approach
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q66. What is a base case in a recursive function?
-=======
 #### Q66. What is a base case in a recursive function?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] A base case is the condition that allows the algorithm to stop recursing. It is usually a problem that is small enough to solve directly.
 -   [ ] The base case is summary of the overall problem that needs to be solved.
 -   [ ] The base case is passed in as an argument to a function whose body makes use of recursion.
 -   [ ] The base case is similar to a base class, in that it can be inherited by another object.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q67. Why is it considered good practice to open a file from within a Python script by using the `with` keyword?
-=======
 #### Q67. Why is it considered good practice to open a file from within a Python script by using the `with` keyword?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The `with` keyword lets you choose which application to open the file in.
 -   [ ] The `with` keyword acts like a `for` loop, and lets you access each line in the file one by one.
@@ -1231,22 +944,14 @@ def calculate_sales_tax(subtotal):
 
 [explanation](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q68. Why would you use a virtual environment?
-=======
 #### Q68. Why would you use a virtual environment?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] Virtual environments create a "bubble" around your project so that any libraries or packages you install within it don't affect your entire machine.
 -   [ ] Teams with remote employees use virtual environments so they can share code, do code reviews, and collaborate remotely.
 -   [ ] Virtual environments were common in Python 2 because they augmented missing features in the language. Virtual environments are not necessary in Python 3 due to advancements in the language.
 -   [ ] Virtual environments are tied to your GitHub or Bitbucket account, allowing you to access any of your repos virtually from any machine.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q69. What is the correct way to run all the doctests in a given file from the command line?
-=======
 #### Q69. What is the correct way to run all the doctests in a given file from the command line?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] python3 -m doctest <_filename_>
 -   [ ] python3 <_filename_>
@@ -1255,11 +960,7 @@ def calculate_sales_tax(subtotal):
 
 [tutorial video](https://www.youtube.com/watch?v=P8qm0VAbbww&t=180s)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q70. What is a lambda function ?
-=======
 #### Q70. What is a lambda function ?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] any function that makes use of scientific or mathematical constants, often represented by Greek letters in academic writing
 -   [ ] a function that get executed when decorators are used
@@ -1270,55 +971,35 @@ def calculate_sales_tax(subtotal):
 
 **Explanation:** `the lambda notation is basically an anonymous function that can take any number of arguments with only single expression (i.e, cannot be overloaded). It has been introducted in other programming languages, such as C++ and Java. The lambda notation allows programmers to "bypass" function declaration.`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q71. What is the primary difference between lists and tuples?
-=======
 #### Q71. What is the primary difference between lists and tuples?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] You can access a specifc element in a list by indexing to its position, but you cannot access a specific element in a tuple unless you iterate through the tuple
 -   [ ] \[✅] Lists are mutable, meaning you can change the data that is inside them at any time. Tuples are immutable, meaning you cannot change the data that is inside them once you have created the tuple.
 -   [ ] Lists are immutable, meaning you cannot change the data that is inside them once you have created the list. Tuples are mutable, meaning you can change the data that is inside them at any time.
 -   [ ] Lists can hold several data types inside them at once, but tuples can only hold the same data type if multiple elements are present.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q72. Which statement about static method is true?
-=======
 #### Q72. Which statement about static method is true?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Static methods can be bound to either a class or an instance of a class.
 -   [ ] Static methods can access and modify the state of a class or an instance of a class.
 -   [ ] \[✅] Static methods serve mostly as utility or helper methods, since they cannot access or modify a class's state.
 -   [ ] Static methods are called static because they always return None.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q73. What does a generator return?
-=======
 #### Q73. What does a generator return?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] None
 -   [ ] \[✅] An iterable object
 -   [ ] A linked list data structure from a non-empty list
 -   [ ] All the keys of the given dictionary
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q74. What is the difference between class attributes and instance attributes?
-=======
 #### Q74. What is the difference between class attributes and instance attributes?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Instance attributes can be changed, but class attributes cannot be changed
 -   [ ] \[✅] Class attributes are shared by all instances of the class. Instance attributes may be unique to just that instance
 -   [ ] There is no difference between class attributes and instance attributes
 -   [ ] Class attributes belong just to the class, not to instance of that class. Instance attributes are shared among all instances of a class
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q75. What is the correct syntax of creating an instance method?
-=======
 #### Q75. What is the correct syntax of creating an instance method?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -1348,66 +1029,42 @@ def self.get_next_card(self):
   # method body goes here
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q76. What is the correct way to call a function?
-=======
 #### Q76. What is the correct way to call a function?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] get_max_num(\[57, 99, 31, 18])
 -   [ ] call.(get_max_num)
 -   [ ] def get_max_num(\[57, 99, 31, 18])
 -   [ ] call.get_max_num(\[57, 99, 31, 18])
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q77. How is comment created?
-=======
 #### Q77. How is comment created?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `-- This is a comment`
 -   [ ] \[✅] `# This is a comment`
 -   [ ] `/_ This is a comment _\`
 -   [ ] `// This is a comment`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q78. What is the correct syntax for replacing the string apple in the list with the string orange?
-=======
 #### Q78. What is the correct syntax for replacing the string apple in the list with the string orange?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] orange = my_list\[1]
 -   [ ] \[✅] my_list\[1] = 'orange'
 -   [ ] my_list\['orange'] = 1
 -   [ ] my_list\[1] == orange
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q79. What will happen if you use a while loop and forget to include logic that eventually causes the while loop to stop?
-=======
 #### Q79. What will happen if you use a while loop and forget to include logic that eventually causes the while loop to stop?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Nothing will happen; your computer knows when to stop running the code in the while loop.
 -   [ ] You will get a KeyError.
 -   [ ] \[✅] Your code will get stuck in an infinite loop.
 -   [ ] You will get a WhileLoopError.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q80. Describe the functionality of a queue?
-=======
 #### Q80. Describe the functionality of a queue?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] A queue adds items to either end and removes items from either end.
 -   [ ] A queue adds items to the top and removes items from the top.
 -   [ ] A queue adds items to the top, and removes items from anywhere in, a list.
 -   [ ] A queue adds items to the top and removes items from anywhere in the queue.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q81. Which choice is the most syntactically correct example of the conditional branching?
-=======
 #### Q81. Which choice is the most syntactically correct example of the conditional branching?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[✅]
 
@@ -1461,11 +1118,7 @@ else;
 
 This question seems to be an updated version of Question 19.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q82. How does `defaultdict` work?
-=======
 #### Q82. How does `defaultdict` work?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `defaultdict` will automatically create a dictionary for you that has keys which are the integers 0-10.
 -   [ ] `defaultdict` forces a dictionary to only accept keys that are of the types specified when you created the `defaultdict` (such as strings or integers).
@@ -1474,22 +1127,14 @@ This question seems to be an updated version of Question 19.
 
 Updated version of Question 14.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q83. What is the correct syntax for adding a key called `variety` to the `fruit_info` dictionary that has a value of `Red Delicious`?
-=======
 #### Q83. What is the correct syntax for adding a key called `variety` to the `fruit_info` dictionary that has a value of `Red Delicious`?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `fruit_info['variety'] == 'Red Delicious'`
 -   [ ] \[✅] `fruit_info['variety'] = 'Red Delicious'`
 -   [ ] `red_delicious = fruit_info['variety']`
 -   [ ] `red_delicious == fruit_info['variety']`
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q84. When would you use a `while` loop?
-=======
 #### Q84. When would you use a `while` loop?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] when you want to minimize the use of strings in your code
 -   [ ] when you want to run code in one file while code in another file is also running
@@ -1505,11 +1150,7 @@ while i<6:
     i = i + 1
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q85. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?
-=======
 #### Q85. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   \[ ]
 
@@ -1545,11 +1186,7 @@ def __init__(attr1, attr2):
 
 **Explanation**: When instantiating a new object from a given class, the `__init__()` method will take both `attr1` and `attr2`, and set its values to their corresponding object attribute, that's why the need of using `self.attr1 = attr1` instead of `attr1 = attr1`.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q86. What would this recursive function print if it is called with no parameters?
-=======
 #### Q86. What would this recursive function print if it is called with no parameters?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 def count_recursive(n=1):
@@ -1598,22 +1235,14 @@ count_recursive(n + 1)
 3
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q87. In Python, when using sets, you use **\_ to calculate the intersection between two sets and \_** to calculate the union.
-=======
 #### Q87. In Python, when using sets, you use **\_ to calculate the intersection between two sets and \_** to calculate the union.
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] `Intersect;union`
 -   [ ] |; &
 -   [ ] \[✅] &; |
 -   [ ] &&; ||
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q88. What will this code fragment return?
-=======
 #### Q88. What will this code fragment return?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 import numpy as np
@@ -1627,22 +1256,14 @@ np.ones([1,2,3,4,5])
 
 [Reference](https://www.geeksforgeeks.org/numpy-ones-python/)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q89. You encounter a FileNotFoundException while using just the filename in the `open` function. What might be the easiest solution?
-=======
 #### Q89. You encounter a FileNotFoundException while using just the filename in the `open` function. What might be the easiest solution?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] Make sure the file is on the system PATH
 -   [ ] Create a symbolic link to allow better access to the file
 -   [ ] \[✅] Copy the file to the same directory as where the script is running from
 -   [ ] Add the path to the file to the PYTHONPATH environment variable
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q90. what will this command return?
-=======
 #### Q90. what will this command return?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 {x for x in range(100) if x%3 == 0}
@@ -1653,22 +1274,14 @@ np.ones([1,2,3,4,5])
 -   [ ] a list of all the multiples of 3 less then 100
 -   [ ] a set of all the multiples of 3 less then 100 excluding 0
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q91. What does the // operator in Python 3 allow you to do?
-=======
 #### Q91. What does the // operator in Python 3 allow you to do?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] Perform integer division
 -   [ ] Perform operations on exponents
 -   [ ] Find the remainder of a division operation
 -   [ ] Perform floating point division
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q92. This code provides the \_ of the list of numbers
-=======
 #### Q92. This code provides the \_ of the list of numbers
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```python
 num_list = [21,13,19,3,11,5,18]
@@ -1681,33 +1294,21 @@ num_list[len(num_list)//2]
 -   [ ] \[✅] median
 -   [ ] average
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q93. Which statement about the class methods is true?
-=======
 #### Q93. Which statement about the class methods is true?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] A class method holds all of the data for a particular class.
 -   [ ] \[✅] A class method can modify the state of the class, but it cannot directly modify the state of an instance that inherits from that class.
 -   [ ] A class method is a regular function that belongs to a class, but it must return None
 -   [ ] A class method is similar to a regular function, but a class method does not take any arguments.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q94. What file is imported to use dates in python?
-=======
 #### Q94. What file is imported to use dates in python?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] \[✅] datetime
 -   [ ] dateday
 -   [ ] daytime
 -   [ ] timedate
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q95. What is the correct syntax for defining a class called Game?
-=======
 #### Q95. What is the correct syntax for defining a class called Game?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] def Game(): pass
 -   [ ] def Game: pass
@@ -1716,11 +1317,7 @@ num_list[len(num_list)//2]
 
 [reference here](https://docs.python.org/3/tutorial/classes.html)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q96. What does a class's init() method do?
-=======
 #### Q96. What does a class's init() method do?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] The **init** method makes classes aware of each other if more than one class is defined in a single code file.
 -   [ ] The **init** method is included to preserve backward compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.
@@ -1729,22 +1326,14 @@ num_list[len(num_list)//2]
 
 [reference here](https://stackoverflow.com/questions/625083/what-init-and-self-do-in-python)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q97. What is the correct syntax for calling an instance method on a class named Game?
-=======
 #### Q97. What is the correct syntax for calling an instance method on a class named Game?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] my_game = Game(self) self.my_game.roll_dice()
 -   [ ] \[✅] my_game = Game() self.my_game.roll_dice()
 -   [ ] my_game = Game() my_game.roll_dice()
 -   [ ] my_game = Game(self) my_game.roll_dice(self)
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q98. What is the output of this code? (NumPy has been imported as np.)?
-=======
 #### Q98. What is the output of this code? (NumPy has been imported as np.)?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```
 a = np.array([1,2,3,4])
@@ -1756,17 +1345,10 @@ print(a[[False, True, False, False]])
 -   [ ] {2}
 -   [ ] \[0,2,0,0]
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q99. Suppose you have a string variable defined as y="stuff;thing;junk;". What would be the output from this code?
-
-```
-Z = y.split(‘;')
-=======
 #### Q99. Suppose you have a string variable defined as y=”stuff;thing;junk;”. What would be the output from this code?
 
 ```
 Z = y.split(‘;’)
->>>>>>> master:src/pages/blog/python-quiz.md
 len(z)
 ```
 
@@ -1778,16 +1360,6 @@ len(z)
 explanation:
 
 ```
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-y="stuff;thing;junk"
-	len(z) ==> 3
-
-y="stuff;thing;junk;"
-	len(z) ==> 4
-```
-
-### Q100. What is the output of this code?
-=======
 y=”stuff;thing;junk”
 	len(z) ==> 3
 
@@ -1796,7 +1368,6 @@ y=”stuff;thing;junk;”
 ```
 
 #### Q100. What is the output of this code?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 ```
 num_list = [1,2,3,4,5]
@@ -1821,11 +1392,7 @@ num_list.remove(2)
 	[1,3,4,5]
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/python/python-quiz.md
-### Q101. What is the correct syntax for creating an instance method?
-=======
 #### Q101. What is the correct syntax for creating an instance method?
->>>>>>> master:src/pages/blog/python-quiz.md
 
 -   [ ] def get_next_card(): # method body goes here
 -   [ ] def self.get_next_card(): # method body goes here

@@ -1,9 +1,4 @@
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-[Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
----------------------------------------------------------------------------------------------
-=======
 ## [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
 Control the post processing and optimizations Netlify can do for you
 
@@ -11,11 +6,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     gtag-n-firebase
 
@@ -29,16 +20,6 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-=======
     <script src="/__/firebase/8.8.1/firebase-app.js">
 </script>
 
@@ -50,17 +31,12 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
-=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -72,37 +48,24 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     scroll-2-top
 
@@ -148,21 +111,13 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     original-analytics
 
     ```
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -171,27 +126,18 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
-=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -200,21 +146,13 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     goback
 
@@ -222,21 +160,13 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-            echo "<a href='$url'></a>
-=======
             echo "<a href='$url'>
 </a>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     mdn-style
 
@@ -463,11 +393,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     meta
 
@@ -498,11 +424,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     meta
 
@@ -512,11 +434,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     back to top css
 
@@ -611,11 +529,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     scroll2topsvg
 
@@ -667,13 +581,9 @@ Inject analytics or other scripts into the HTML of your site.
 
     <div>
     <a class="top-link hide" href="" id="js-top">
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-=======
         <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
 <path d="M12 6H0l6-6z"/>
 </svg>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
@@ -754,11 +664,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     firebase-cdn
 
@@ -790,22 +696,14 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     analytics
 
     ```
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L"></script>
-=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -817,11 +715,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     more-meta-tags-open-graph
 
@@ -848,34 +742,21 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     simpleanalytics
 
     ```
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-=======
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
 </script>
     <noscript>
 <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
 </noscript>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     metaaaa
 
@@ -886,11 +767,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     algolia-head
 
@@ -913,11 +790,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     fb
 
@@ -944,52 +817,32 @@ Inject analytics or other scripts into the HTML of your site.
         });
       };
     </script>
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-=======
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     stackbit-widget
 
     ```
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326"></script>
-=======
     <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     blm
 
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
-=======
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     <!-- Initialise MakerBadge with options -->
 
@@ -1008,51 +861,31 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     addthis
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-=======
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     add-this
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
-=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
     ```
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     meta
 
@@ -1086,19 +919,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</body>`
-
-    test
-
--   before `</body>`
-=======
 -   before `</body>`
 
     test
 
 -   before `</body>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     search
 
@@ -1121,11 +946,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
--   before `</head>`
-=======
 -   before `</head>`
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/injected-js-part4.md
 
     links-highlight
 
