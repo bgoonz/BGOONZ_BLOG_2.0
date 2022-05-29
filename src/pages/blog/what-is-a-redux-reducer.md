@@ -4,20 +4,20 @@ template: post
 subtitle: A reducer is a function that determines changes to an applications state
 excerpt: A reducer is a function that determines changes to an applications state
 date: 2022-05-16T06:08:24.979Z
-image: images/redux.gif
-thumb_image: images/redux.gif
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/react.yaml
+  - src/data/categories/react.yaml
 tags:
-    - src/data/tags/links.yaml
+  - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/10-essential-react-interview-questions.md
-    - src/pages/blog/react-semantics.md
-    - src/pages/blog/react-state.md
-    - src/pages/blog/using-the-dom.md
+  - src/pages/blog/10-essential-react-interview-questions.md
+  - src/pages/blog/react-semantics.md
+  - src/pages/blog/react-state.md
+  - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
 
