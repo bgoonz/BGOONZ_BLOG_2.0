@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # How to Use JavaScript Collections - Map and Set
 
 > ## Excerpt
@@ -672,9 +671,9 @@ A binary search tree (BST) adds these two characteristics:
 1.  Each node has a maximum of up to two children.
 2.  For each node, the values of its left descendent nodes are less than that of the current node, which in turn is less than the right descendent nodes (if any).
 
-The BST is built on the idea of the [binary search](https://guide.freecodecamp.org/algorithms/search-algorithms/binary-search) algorithm, which allows for fast lookup, insertion and removal of nodes. The way that they are set up means that, on average, each comparison allows the operations to skip about half of the tree, so that each lookup, insertion or deletion takes time proportional to the logarithm of the number of items stored in the tree,  `O(log n)` . However, some times the worst case can happen, when the tree isn't balanced and the time complexity is  `O(n)`  for all three of these functions. That is why self-balancing trees (AVL, red-black, etc.) are a lot more effective than the basic BST.
+The BST is built on the idea of the [binary search](https://guide.freecodecamp.org/algorithms/search-algorithms/binary-search) algorithm, which allows for fast lookup, insertion and removal of nodes. The way that they are set up means that, on average, each comparison allows the operations to skip about half of the tree, so that each lookup, insertion or deletion takes time proportional to the logarithm of the number of items stored in the tree, `O(log n)` . However, some times the worst case can happen, when the tree isn't balanced and the time complexity is `O(n)` for all three of these functions. That is why self-balancing trees (AVL, red-black, etc.) are a lot more effective than the basic BST.
 
-**Worst case scenario example:**  This can happen when you keep adding nodes that are  _always_  larger than the node before (its parent), the same can happen when you always add nodes with values lower than their parents.
+**Worst case scenario example:** This can happen when you keep adding nodes that are _always_ larger than the node before (its parent), the same can happen when you always add nodes with values lower than their parents.
 
 ### Basic operations on a BST
 
@@ -688,7 +687,7 @@ The BST is built on the idea of the [binary search](https://guide.freecodecamp.o
 
 #### Create
 
-Initially an empty tree without any nodes is created. The variable/identifier which must point to the root node is initialized with a  `NULL`  value.
+Initially an empty tree without any nodes is created. The variable/identifier which must point to the root node is initialized with a `NULL` value.
 
 #### Search
 
@@ -714,7 +713,7 @@ There are 3 cases that can happen when you are trying to delete a node. If it ha
 2.  One subtree (one child): You have to make sure that after the node is deleted, its child is then connected to the deleted node's parent.
 3.  Two subtrees (two children): You have to find and replace the node you want to delete with its inorder successor (the leftmost node in the right subtree).
 
-The time complexity for creating a tree is  `O(1)` . The time complexity for searching, inserting or deleting a node depends on the height of the tree  `h` , so the worst case is  `O(h)`  in case of skewed trees.
+The time complexity for creating a tree is `O(1)` . The time complexity for searching, inserting or deleting a node depends on the height of the tree `h` , so the worst case is `O(h)` in case of skewed trees.
 
 #### Predecessor of a node
 
@@ -737,12 +736,12 @@ Successors can be described as the node that would come right after the the curr
 
 **Data structure: BST**
 
--   Worst-case performance:  `O(n)`
--   Best-case performance:  `O(1)`
--   Average performance:  `O(log n)`
--   Worst-case space complexity:  `O(1)`
+-   Worst-case performance: `O(n)`
+-   Best-case performance: `O(1)`
+-   Average performance: `O(log n)`
+-   Worst-case space complexity: `O(1)`
 
-Where  `n`  is the number of nodes in the BST. Worst case is O(n) since BST can be unbalanced.
+Where `n` is the number of nodes in the BST. Worst case is O(n) since BST can be unbalanced.
 
 ### Implementation of BST
 
@@ -1009,11 +1008,15 @@ void postOrder(struct node* root) {
 
 ### Relevant videos on freeCodeCamp YouTube channel
 
-<iframe src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0">
+</iframe>
+<br>
 
 ## And Binary Search Tree: Traversal and Height
 
-<iframe src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid1"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid1">
+</iframe>
+<br>
 
 ### Following are common types of Binary Trees:
 
@@ -1315,7 +1318,7 @@ Before we learn about the types of trees though, there are a few facts about tre
 
 2\. The root node is the part of the tree that all the other parts are built upon.
 
-3\. There are parent nodes connected to other nodes in the direction of the root, and         child nodes connected in the direction away from the root.
+3\. There are parent nodes connected to other nodes in the direction of the root, and child nodes connected in the direction away from the root.
 
 4\. The last nodes of the trees are called leaves
 
@@ -1888,7 +1891,7 @@ Now that you have the `_hash()` method completed, it's time to write the `set()`
 
 ### How to write the set() method
 
-To set the key/value pair in your Hash Table, you need to write a `set()` method that accepts  `(key, value)` as its parameters:
+To set the key/value pair in your Hash Table, you need to write a `set()` method that accepts `(key, value)` as its parameters:
 
 -   The `set()` method will call the `_hash()` method to get the `index` value.
 -   The `[key, value]` pair will be assigned to the `table` at the specified `index`
@@ -2252,7 +2255,7 @@ You've also learned how to implement your own `HashTable` class as well as how t
 
 By using a Hash Table data structure, you will be able to create an associative array with fast search, insertion, and delete operations. 😉
 
-## ******\*\*******Thanks for reading this tutorial******\*\*******
+## **\*\***\*\***\*\***Thanks for reading this tutorial**\*\***\*\***\*\***
 
 If you want to learn more about JavaScript, you may want to check out my site at sebhastian.com, where I have published [over 100 tutorials about programming with JavaScript](https://sebhastian.com/javascript-tutorials/), all using easy-to-understand explanations and code examples.
 

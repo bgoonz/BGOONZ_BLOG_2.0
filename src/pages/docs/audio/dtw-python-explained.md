@@ -19,15 +19,15 @@ As part of Walmart Real Estate team, I am working on understanding the energy co
 
 In the example below, the items refresh routine of a store has shifted by 2 hours on Tuesday leading the shift in peak energy consumption of refrigeration units and this information was not available to us for many such stores.
 
-![](https://miro.medium.com/max/60/1*WEe7LQivzU4YOvDCe0_P_A.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*WEe7LQivzU4YOvDCe0_P_A.png?q=20)
 
-![](https://miro.medium.com/max/630/1*WEe7LQivzU4YOvDCe0_P_A.png)
+![medium blog image](https://miro.medium.com/max/630/1*WEe7LQivzU4YOvDCe0_P_A.png)
 
 The peak at 2 am got shifted to 4 am. DTW when run recursively for consecutive days can identify the cases for which phase shift occurred without much change in shape of signals.
 
-![](https://miro.medium.com/max/52/1*jDuu7XE8XitCTBSythQICw.png?q=20)
+![medium blog image](https://miro.medium.com/max/52/1*jDuu7XE8XitCTBSythQICw.png?q=20)
 
-![](https://miro.medium.com/max/630/1*jDuu7XE8XitCTBSythQICw.png)
+![medium blog image](https://miro.medium.com/max/630/1*jDuu7XE8XitCTBSythQICw.png)
 
 The training data can be restricted to Tuesday onwards to improve the prediction of energy consumption in future in this case as phase shift was detected on Tuesday. The setup improved the predictions substantially ( > 50%) for the stores for which the reason of shift was not known. This was not possible by traditional ways of one to one comparison of signals.
 
@@ -37,15 +37,15 @@ In this blog, I will explain how DTW algorithm works and throw some light on the
 
 Any two time series can be compared using euclidean distance or other similar distances on a one to one basis on time axis. The amplitude of first time series at time T will be compared with amplitude of second time series at time T. This will result into a very poor comparison and similarity score even if the two time series are very similar in shape but out of phase in time.
 
-![](https://miro.medium.com/max/60/1*HQleh0-1HlGsLkVlcaFRLw.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*HQleh0-1HlGsLkVlcaFRLw.png?q=20)
 
-![](https://miro.medium.com/max/630/1*HQleh0-1HlGsLkVlcaFRLw.png)
+![medium blog image](https://miro.medium.com/max/630/1*HQleh0-1HlGsLkVlcaFRLw.png)
 
 DTW compares amplitude of first signal at time T with amplitude of second signal at time T+1 and T-1 or T+2 and T-2. This makes sure it does not give low similarity score for signals with similar shape and different phase.
 
-![](https://miro.medium.com/max/60/1*6Yzt8SiQ-kTRx8pFqDZXkw.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*6Yzt8SiQ-kTRx8pFqDZXkw.png?q=20)
 
-![](https://miro.medium.com/max/630/1*6Yzt8SiQ-kTRx8pFqDZXkw.png)
+![medium blog image](https://miro.medium.com/max/630/1*6Yzt8SiQ-kTRx8pFqDZXkw.png)
 
 3. How it works?
 
@@ -55,17 +55,17 @@ Series 1 (P) : 1,4,5,10,9,3,2,6,8,4
 
 Series 2 (Q): 1,7,3,4,1,10,5,4,7,4
 
-![](https://miro.medium.com/max/60/1*x8-vv9W3cfmdd0mW_1MLTg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*x8-vv9W3cfmdd0mW_1MLTg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*x8-vv9W3cfmdd0mW_1MLTg.png)
+![medium blog image](https://miro.medium.com/max/630/1*x8-vv9W3cfmdd0mW_1MLTg.png)
 
 _Step 1 :_ Empty Cost Matrix Creation
 
 Create an empty cost matrix M with x and y labels as amplitudes of the two series to be compared.
 
-![](https://miro.medium.com/max/60/1*MrjHYFHyeeE3aiBEA-E5cw.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*MrjHYFHyeeE3aiBEA-E5cw.png?q=20)
 
-![](https://miro.medium.com/max/630/1*MrjHYFHyeeE3aiBEA-E5cw.png)
+![medium blog image](https://miro.medium.com/max/630/1*MrjHYFHyeeE3aiBEA-E5cw.png)
 
 _Step 2: Cost Calculation_
 
@@ -81,21 +81,21 @@ i is the iterator for series P
 
 j is the iterator for series Q
 
-![](https://miro.medium.com/max/60/1*hhpagt7BEeFU22X83Q76yQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*hhpagt7BEeFU22X83Q76yQ.png?q=20)
 
-![](https://miro.medium.com/max/630/1*hhpagt7BEeFU22X83Q76yQ.png)
+![medium blog image](https://miro.medium.com/max/630/1*hhpagt7BEeFU22X83Q76yQ.png)
 
 Let us take few examples (11,3 and 8 ) to illustrate the calculation as highlighted in the below table.
 
-![](https://miro.medium.com/max/60/1*bHaMHM9eBfLc6q166iiI9g.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*bHaMHM9eBfLc6q166iiI9g.png?q=20)
 
-![](https://miro.medium.com/max/630/1*bHaMHM9eBfLc6q166iiI9g.png)
+![medium blog image](https://miro.medium.com/max/630/1*bHaMHM9eBfLc6q166iiI9g.png)
 
 for 11,
 
-![](https://miro.medium.com/max/60/1*dzBbhICP6wqwtmW-GGwGmg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*dzBbhICP6wqwtmW-GGwGmg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*dzBbhICP6wqwtmW-GGwGmg.png)
+![medium blog image](https://miro.medium.com/max/630/1*dzBbhICP6wqwtmW-GGwGmg.png)
 
 |10 --4| + min( 5, 12, 5 )
 
@@ -121,9 +121,9 @@ and for 8,
 
 The full table will look like this:
 
-![](https://miro.medium.com/max/60/1*7pphf0WWYElhtohnQPFPNA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*7pphf0WWYElhtohnQPFPNA.png?q=20)
 
-![](https://miro.medium.com/max/630/1*7pphf0WWYElhtohnQPFPNA.png)
+![medium blog image](https://miro.medium.com/max/630/1*7pphf0WWYElhtohnQPFPNA.png)
 
 _Step 3:_ Warping Path Identification
 
@@ -131,25 +131,25 @@ Identify the warping path starting from top right corner of the matrix and trave
 
 In our example it starts with 15 and looks for minimum value i.e. 15 among its neighbours 18, 15 and 18.
 
-![](https://miro.medium.com/max/60/1*p6hJxIcUjOzgpTINBHLdmQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*p6hJxIcUjOzgpTINBHLdmQ.png?q=20)
 
-![](https://miro.medium.com/max/630/1*p6hJxIcUjOzgpTINBHLdmQ.png)
+![medium blog image](https://miro.medium.com/max/630/1*p6hJxIcUjOzgpTINBHLdmQ.png)
 
-![](https://miro.medium.com/max/60/1*RnqvEKdMmWklx5m59YiP3g.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*RnqvEKdMmWklx5m59YiP3g.png?q=20)
 
-![](https://miro.medium.com/max/630/1*RnqvEKdMmWklx5m59YiP3g.png)
+![medium blog image](https://miro.medium.com/max/630/1*RnqvEKdMmWklx5m59YiP3g.png)
 
 The next number in the warping traversal path is 14. This process continues till we reach the bottom or the left axis of the table.
 
-![](https://miro.medium.com/max/60/1*mjtlGiB44Zz2pALmMiYNLQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*mjtlGiB44Zz2pALmMiYNLQ.png?q=20)
 
-![](https://miro.medium.com/max/630/1*mjtlGiB44Zz2pALmMiYNLQ.png)
+![medium blog image](https://miro.medium.com/max/630/1*mjtlGiB44Zz2pALmMiYNLQ.png)
 
 The final path will look like this:
 
-![](https://miro.medium.com/max/60/1*WaC_xFSpJi-2GlF7OG37CA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*WaC_xFSpJi-2GlF7OG37CA.png?q=20)
 
-![](https://miro.medium.com/max/630/1*WaC_xFSpJi-2GlF7OG37CA.png)
+![medium blog image](https://miro.medium.com/max/630/1*WaC_xFSpJi-2GlF7OG37CA.png)
 
 Let this warping path series be called as d.
 
@@ -159,9 +159,9 @@ _Step 4:_ Final Distance Calculation
 
 Time normalised distance , D
 
-![](https://miro.medium.com/max/60/1*6M_cotyKNao7xo03zsMLZQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*6M_cotyKNao7xo03zsMLZQ.png?q=20)
 
-![](https://miro.medium.com/max/385/1*6M_cotyKNao7xo03zsMLZQ.png)
+![medium blog image](https://miro.medium.com/max/385/1*6M_cotyKNao7xo03zsMLZQ.png)
 
 where k is the length of the series d.
 
@@ -175,15 +175,15 @@ D = ( 15 + 15 + 14 + 13 + 11 + 9 + 8 + 8 + 4 + 4 + 3 + 0 ) /12
 
 Let us take another example with two very similar time series with unit time shift difference.
 
-![](https://miro.medium.com/max/60/1*CLSlk3qD0Hil2H4XBBeE3Q.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*CLSlk3qD0Hil2H4XBBeE3Q.png?q=20)
 
-![](https://miro.medium.com/max/630/1*CLSlk3qD0Hil2H4XBBeE3Q.png)
+![medium blog image](https://miro.medium.com/max/630/1*CLSlk3qD0Hil2H4XBBeE3Q.png)
 
 Cost matrix and warping path will look like this.
 
-![](https://miro.medium.com/max/60/1*Wx823zTAqUkrSbX1ivMAlg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*Wx823zTAqUkrSbX1ivMAlg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*Wx823zTAqUkrSbX1ivMAlg.png)
+![medium blog image](https://miro.medium.com/max/630/1*Wx823zTAqUkrSbX1ivMAlg.png)
 
 DTW distance ,D =
 
@@ -215,15 +215,15 @@ A warping path 𝑊 maps the elements of 𝑋 and 𝑌 to minimize the _distance
 
 The Optimal path to (𝑖*𝑘, 𝑗*𝑘) can be computed by:
 
-![](https://miro.medium.com/max/60/1*8hJEJWuxrccwCMuUG_aPbQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*8hJEJWuxrccwCMuUG_aPbQ.png?q=20)
 
-![](https://miro.medium.com/max/630/1*8hJEJWuxrccwCMuUG_aPbQ.png)
+![medium blog image](https://miro.medium.com/max/630/1*8hJEJWuxrccwCMuUG_aPbQ.png)
 
 where 𝑑 is the Euclidean distance. Then, the overall path cost can be calculated as
 
-![](https://miro.medium.com/max/60/1*2OGDOJ-a0zTO_9T1FIGejQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*2OGDOJ-a0zTO_9T1FIGejQ.png?q=20)
 
-![](https://miro.medium.com/max/272/1*2OGDOJ-a0zTO_9T1FIGejQ.png)
+![medium blog image](https://miro.medium.com/max/272/1*2OGDOJ-a0zTO_9T1FIGejQ.png)
 
 # Restrictions on the Warping function
 
@@ -231,29 +231,29 @@ The warping path is found using a dynamic programming approach to align two sequ
 
 - Boundary Condition: This constraint ensures that the warping path begins with the start points of both signals and terminates with their endpoints.
 
-![](https://miro.medium.com/max/60/1*SHsmQu2TqpaDyIArn2snzg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*SHsmQu2TqpaDyIArn2snzg.png?q=20)
 
-![](https://miro.medium.com/max/452/1*SHsmQu2TqpaDyIArn2snzg.png)
+![medium blog image](https://miro.medium.com/max/452/1*SHsmQu2TqpaDyIArn2snzg.png)
 
 - Monotonicity condition: This constraint preserves the time-order of points (not going back in time).
 
-![](https://miro.medium.com/max/60/1*RNg2VENGaWoyvGrvyeg61A.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*RNg2VENGaWoyvGrvyeg61A.png?q=20)
 
-![](https://miro.medium.com/max/311/1*RNg2VENGaWoyvGrvyeg61A.png)
+![medium blog image](https://miro.medium.com/max/311/1*RNg2VENGaWoyvGrvyeg61A.png)
 
 - Continuity (step size) condition: This constraint limits the path transitions to adjacent points in time (not jumping in time).
 
-![](https://miro.medium.com/max/60/1*lU99pFyomdPeaHuR26bDyA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*lU99pFyomdPeaHuR26bDyA.png?q=20)
 
-![](https://miro.medium.com/max/418/1*lU99pFyomdPeaHuR26bDyA.png)
+![medium blog image](https://miro.medium.com/max/418/1*lU99pFyomdPeaHuR26bDyA.png)
 
 In addition to the above three constraints, there are other less frequent conditions for an allowable warping path:
 
 - Warping window condition: Allowable points can be restricted to fall within a given warping window of width 𝜔 (a positive integer).
 
-![](https://miro.medium.com/max/60/1*9apgwkXeU3gOHLudFsIosA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*9apgwkXeU3gOHLudFsIosA.png?q=20)
 
-![](https://miro.medium.com/max/168/1*9apgwkXeU3gOHLudFsIosA.png)
+![medium blog image](https://miro.medium.com/max/168/1*9apgwkXeU3gOHLudFsIosA.png)
 
 - Slope condition: The warping path can be constrained by restricting the slope, and consequently avoiding extreme movements in one direction.
 
@@ -290,9 +290,9 @@ y = [2, 0, 0, 3, 3, 1, 0]
 
 We cannot calculate the Euclidean distance between _x_ and _y_ since they don't have equal lengths.
 
-![](https://miro.medium.com/max/60/1*ADzLGLGGq13onO72EO_ZpQ.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*ADzLGLGGq13onO72EO_ZpQ.png?q=20)
 
-![](https://miro.medium.com/max/630/1*ADzLGLGGq13onO72EO_ZpQ.png)
+![medium blog image](https://miro.medium.com/max/630/1*ADzLGLGGq13onO72EO_ZpQ.png)
 
 Example 1: Euclidean distance between x and y (is it possible? 🤔) (Image by Author)
 
@@ -308,9 +308,9 @@ cost_matrix = compute_accumulated_cost_matrix(x, y)
 
 Example 1: Python code to plot (and save) the heatmap of the accumulated cost matrix
 
-![](https://miro.medium.com/max/54/1*PIKZAwsV15NBvqkh9N1KMg.png?q=20)
+![medium blog image](https://miro.medium.com/max/54/1*PIKZAwsV15NBvqkh9N1KMg.png?q=20)
 
-![](https://miro.medium.com/max/375/1*PIKZAwsV15NBvqkh9N1KMg.png)
+![medium blog image](https://miro.medium.com/max/375/1*PIKZAwsV15NBvqkh9N1KMg.png)
 
 Example 1: Accumulated cost matrix and warping path (Image by Author)
 
@@ -336,9 +336,9 @@ Now let's plot the two sequences and connect the mapping points. The code to plo
 
 Example 1: Python code to plot (and save) the DTW distance between x and y
 
-![](https://miro.medium.com/max/60/1*bF9I-49iVW9b2MvDbRBZxA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*bF9I-49iVW9b2MvDbRBZxA.png?q=20)
 
-![](https://miro.medium.com/max/630/1*bF9I-49iVW9b2MvDbRBZxA.png)
+![medium blog image](https://miro.medium.com/max/630/1*bF9I-49iVW9b2MvDbRBZxA.png)
 
 Example 1: DTW distance between x and y (Image by Author)
 
@@ -354,9 +354,9 @@ distance, warp_path = fastdtw(x1, x2, dist=euclidean)
 
 Example 2: Python code to plot (and save) the DTW distance between x1 and x2
 
-![](https://miro.medium.com/max/60/1*Bzubc5uGFXd_-Sj7W_QFjg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*Bzubc5uGFXd_-Sj7W_QFjg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*Bzubc5uGFXd_-Sj7W_QFjg.png)
+![medium blog image](https://miro.medium.com/max/630/1*Bzubc5uGFXd_-Sj7W_QFjg.png)
 
 Example 2: DTW distance between x1 and x2 (Image by Author)
 
@@ -410,17 +410,17 @@ Yes, in a lot of scenarios DTW is playing a key role.
 
 One use case is to detect the sound pattern of the same kind. Suppose we want to recognise the voice of a person by analysing his sound track, and we are able to collect his sound track of saying `Hello` in one scenario. However, people speak in the same word in different ways, what if he speaks hello in a much slower pace like `Heeeeeeelloooooo` , we will need an algorithm to match up the sound track of different lengths and be able to identify they come from the same person.
 
-![](https://miro.medium.com/max/60/1*gi1TtOqFCsb2M_U7iAUAag.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*gi1TtOqFCsb2M_U7iAUAag.png?q=20)
 
-![](https://miro.medium.com/max/630/1*gi1TtOqFCsb2M_U7iAUAag.png)
+![medium blog image](https://miro.medium.com/max/630/1*gi1TtOqFCsb2M_U7iAUAag.png)
 
 ## Stock Market
 
 In a stock market, people always hope to be able to predict the future, however using general machine learning algorithms can be exhaustive, as most prediction task requires test and training set to have the same dimension of features. However, if you ever speculate in the stock market, you will know that even the same pattern of a stock can have very different length reflection on klines and indicators.
 
-![](https://miro.medium.com/max/60/1*4QUO4Tqm_z-8ydMBGgqmPg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*4QUO4Tqm_z-8ydMBGgqmPg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*4QUO4Tqm_z-8ydMBGgqmPg.png)
+![medium blog image](https://miro.medium.com/max/630/1*4QUO4Tqm_z-8ydMBGgqmPg.png)
 
 # Definition & Idea
 
@@ -432,9 +432,9 @@ _The idea to compare arrays with different length is to build one-to-many and ma
 
 Suppose we have two different arrays red and blue with different length:
 
-![](https://miro.medium.com/max/42/1*uFicSZjqkNBfsyrsJw7J9g.jpeg?q=20)
+![medium blog image](https://miro.medium.com/max/42/1*uFicSZjqkNBfsyrsJw7J9g.jpeg?q=20)
 
-![](https://miro.medium.com/max/612/1*uFicSZjqkNBfsyrsJw7J9g.jpeg)
+![medium blog image](https://miro.medium.com/max/612/1*uFicSZjqkNBfsyrsJw7J9g.jpeg)
 
 Clearly these two series follow the same pattern, but the blue curve is longer than the red. If we apply the one-to-one match, shown in the top, the mapping is not perfectly synced up and the tail of the blue curve is being left out.
 
@@ -457,9 +457,9 @@ To summarise is that _head and tail must be positionally matched, no cross-match
 
 The implementation of the algorithm looks extremely concise:
 
-![](https://miro.medium.com/max/60/1*fGr2Mj7fEB7tEyqAzcp2LA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*fGr2Mj7fEB7tEyqAzcp2LA.png?q=20)
 
-![](https://miro.medium.com/max/630/1*fGr2Mj7fEB7tEyqAzcp2LA.png)
+![medium blog image](https://miro.medium.com/max/630/1*fGr2Mj7fEB7tEyqAzcp2LA.png)
 
 where `DTW[i, j]` is the distance between `s[1:i]` and `t[1:j]` with the best alignment.
 
@@ -475,9 +475,9 @@ Put it in python would be:
 
 Example:
 
-![](https://miro.medium.com/max/60/1*eogOkXkOUzi6Cq7U9BgiLg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*eogOkXkOUzi6Cq7U9BgiLg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*eogOkXkOUzi6Cq7U9BgiLg.png)
+![medium blog image](https://miro.medium.com/max/630/1*eogOkXkOUzi6Cq7U9BgiLg.png)
 
 The distance between `a and b` would be the last element of the matrix, which is 2.
 
@@ -490,17 +490,17 @@ b = [1, 2, 2, 2, 2, 2, 2, 2, ..., 5]
 
 To minimise the distance, the element 2 in array `a` would match all the 2 in array `b` , which causes an array `b` to bent severely. To avoid this, we can add a window constraint to limit the number of elements one can match:
 
-![](https://miro.medium.com/max/60/1*0_xypte7FHDWJuuBexEvHg.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*0_xypte7FHDWJuuBexEvHg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*0_xypte7FHDWJuuBexEvHg.png)
+![medium blog image](https://miro.medium.com/max/630/1*0_xypte7FHDWJuuBexEvHg.png)
 
 The key difference is that now each element is confined to match elements in range `i --- w` and `i + w` . The `w := max(w, abs(n-m))` guarantees all indices can be matched up.
 
 The implementation and example would be:
 
-![](https://miro.medium.com/max/60/1*2K6C-3QrRmbbhpe-jt9UQA.png?q=20)
+![medium blog image](https://miro.medium.com/max/60/1*2K6C-3QrRmbbhpe-jt9UQA.png?q=20)
 
-![](https://miro.medium.com/max/630/1*2K6C-3QrRmbbhpe-jt9UQA.png)
+![medium blog image](https://miro.medium.com/max/630/1*2K6C-3QrRmbbhpe-jt9UQA.png)
 
 # Apply a Package
 

@@ -328,9 +328,16 @@ template: docs
 
 ---
 
+
+
+<details>
+
+<summary> NORWEX </summary>   
+
+
 <br>
 
-### NORWEX {#norwex add_date="1640716651" last_modified="1640717143"}
+### Projects
 
 -   [✅] [_**Clusters \| Atlas: MongoDBAtlas**_](https://cloud.mongodb.com/v2/602ab21c5ea9a66164cb9ea6#clusters)
 -   [✅] [_**sample-react - DigitalOcean AppPlatform**_](https://cloud.digitalocean.com/apps/2dbced50-862f-4cc5-ad63-2d4ce73e7591?i=cf4d7b)
@@ -448,11 +455,25 @@ template: docs
 -   [✅] [_**Abu Sayed -- Best Web, Game, XR \| Developer \| Engineer \|BANGLADESH**_](https://sayed.cyou/#resume)
     <br>
 
+
+
+
+
+</details>
+
 ---
 
 <br>
 
-### RESOURCES {#resources add_date="1640717067" last_modified="1640718980"}### Lambda {#lambda add_date="1640716651" last_modified="1640717406"}
+
+
+
+
+<details>
+
+<summary>RESOURCES  </summary>   
+
+### RESOURCES 
 
 -   [✅] [_**JavaScript Guide**_](http://javascriptguide.herokuapp.com/)
 -   [✅] [_**App Academy Open**_](https://open.appacademy.io/login)
@@ -675,6 +696,10 @@ template: docs
 -   [✅] [_**Error -- Dataflow -- My Project 78672 -- Google CloudPlatform**_](https://console.cloud.google.com/navigation-error;errorUrl=%2Fdataflow%2Fcreatejob%3Ftemplate%3DGCS_Text_to_Cloud_PubSub&jobName%3Dweb-serve&inputFilePattern%3Dgs:%252F%252Fweb-serve%252F*&confirmMsg%3Dtrue&project%3Dstudious-pulsar-298821?project=studious-pulsar-298821)
 -   [✅] [_**gs://potluck - GoogleSearch**_](https://www.google.com/search?q=gs%3A%2F%2Fpotluck&oq=gs%3A%2F%2Fpotluck&aqs=chrome..69i57j69i58.604j0j7&sourceid=chrome&ie=UTF-8)
     <br>
+
+
+
+</details>
 
 ---
 

@@ -163,6 +163,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Web Dev Setup",
+                        "url": "https://bgoonz-blog.netlify.app/blog/webdev-setup/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "OG-Blog",
                         "url": "https://web-dev-resource-hub.netlify.app/",
                         "style": "primary",

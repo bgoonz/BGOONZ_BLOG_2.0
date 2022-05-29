@@ -4,14 +4,14 @@ template: post
 subtitle: An Introduction to Markdown (Bonus Markdown Templates Included)
 excerpt: This topic is meant to give you a very basic overview of how Markdown works,
 date: 2022-05-16T04:10:35.613Z
-image: markdown.png
-thumb_image: markdown.png
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/markdown.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/markdown.png?raw=true
 image_position: right
-author: src/data/authors/bgoon.yaml
+author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/git.yaml
+    - src/data/categories/git.yaml
 tags:
-  - src/data/tags/cms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 cmseditable: true
 ---

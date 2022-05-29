@@ -861,7 +861,7 @@ This page contains links that give the impression that some of the site contents
 
 ## Blog
 
-- [introductory-react-part-2](https://bgoonz-blog.netlify.app/docs/react/react2/?source=your_stories_page-------------------------------------)
+- [introductory-react-part-2](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 
 - [a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 
@@ -2094,7 +2094,7 @@ export default class SectionDocs extends React.Component {
                         </div>
                     )}
 
-                    <div className="<iframe ">
+                    <div className="block-content">
                         <div
                             className={classNames('grid', {
                                 'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -2178,7 +2178,7 @@ export default class SectionGrid extends React.Component {
                     )}
 
                     {_.get(section, 'grid_items', null) && (
-                        <div className="<iframe ">
+                        <div className="block-content">
                             <div
                                 className={classNames('grid', {
                                     'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -2263,7 +2263,7 @@ export default class SectionHero extends React.Component {
                         </div>
                     )}
 
-                    {_.get(section, 'content', null) && <div className="<iframe ">{markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'content', null) && <div className="block-content">{markdownify(_.get(section, 'content', null))}</div>}
 
                     {_.get(section, 'actions', null) && (
                         <div className="block-buttons">
@@ -11914,7 +11914,7 @@ return <Layout {...props}>{element}</Layout>
 
 }
 
-`
+```
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#usage)Usage
 
@@ -12289,8 +12289,8 @@ ReactNode
 Wrapped element
 
 #### Example
-
-```
+ 
+```js
 
 const React = require("react")
 
@@ -12351,8 +12351,8 @@ ReactNode
 Wrapped element
 
 #### Example
-
-```
+ 
+```js
 
 const React = require("react")
 

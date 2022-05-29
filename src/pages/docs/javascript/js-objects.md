@@ -56,7 +56,8 @@ value will always be converted to a **string**.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 ES2015 adds two extensions to object values and object literals:
 

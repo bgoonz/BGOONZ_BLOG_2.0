@@ -128,9 +128,6 @@ Executing the script above will edit the `poetry.txt` file to contain:
 
 #### Refactor:
 
-
-
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -151,4 +148,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/modules-in-javascript-a55333e35978" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

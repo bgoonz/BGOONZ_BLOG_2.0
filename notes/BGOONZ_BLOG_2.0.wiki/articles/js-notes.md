@@ -24,7 +24,8 @@ Variables that don't explicitly get assigned an initial value have the value
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 Since ES2015, `let` and `const` can be used in addition to `var`. We will learn
 how they differ from `var` later. For now, lets have a look how `const` differs
@@ -142,7 +143,8 @@ where the above code tries to access them.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 The big difference between `let`, `const`, and `var` is that `let` and `const`
 are _[block scoped][block scope]_. If we would use `let` instead of `var` in
@@ -991,7 +993,8 @@ value will always be converted to a **string**.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 ES2015 adds two extensions to object values and object literals:
 
@@ -1447,7 +1450,8 @@ notation to access the property values.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 ES2015 introduces [`for/of`][forof] statements for iterating over
 _[iterables][]_:
@@ -5396,7 +5400,9 @@ document.execCommand('copy');
 ##### Playground
 
 <div>
-  <a class="jsbin-embed" href="http://jsbin.com/huhozu/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
+  <a class="jsbin-embed" href="http://jsbin.com/huhozu/embed?js,output">JS Bin on jsbin.com</a>
+<script src="http://static.jsbin.com/js/embed.min.js?3.39.11">
+</script>
 </div>
 
 title: Comma operator in JS
@@ -5468,7 +5474,9 @@ Output:-
 ##### Playground
 
 <div>
-  <a class="jsbin-embed" href="http://jsbin.com/vimogap/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
+  <a class="jsbin-embed" href="http://jsbin.com/vimogap/embed?js,console">JS Bin on jsbin.com</a>
+<script src="http://static.jsbin.com/js/embed.min.js?3.39.11">
+</script>
 </div>
 
 title: Breaking or continuing loop in functional programming
@@ -5553,7 +5561,9 @@ Also there is `.every`, which can be used. We have to return the opposite boolea
 ##### Playground
 
 <div>
-  <a class="jsbin-embed" href="http://jsbin.com/jopeji/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
+  <a class="jsbin-embed" href="http://jsbin.com/jopeji/embed?js,console">JS Bin on jsbin.com</a>
+<script src="http://static.jsbin.com/js/embed.min.js?3.39.11">
+</script>
 </div>
 
 title: ES6, var vs let
@@ -5648,7 +5658,9 @@ for (let i = 0; i < 5; ++i) {
 ### Playground
 
 <div>
-  <a class="jsbin-embed" href="http://jsbin.com/yumaye/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.11"></script>
+  <a class="jsbin-embed" href="http://jsbin.com/yumaye/embed?js,console">JS Bin on jsbin.com</a>
+<script src="http://static.jsbin.com/js/embed.min.js?3.39.11">
+</script>
 </div>
 
 ### More info
@@ -6898,7 +6910,8 @@ list.addEventListener('click', (e) => {
     console.log(e.target);
     // Output: <li class="item">Walk your dog</li>
     console.log(e.currentTarget);
-    // Output: <ul class="todo-list"></ul>
+    // Output: <ul class="todo-list">
+</ul>
 });
 ```
 
@@ -7124,10 +7137,24 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.abs">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Math.abs' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Math.abs' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `abs`
 
@@ -7207,10 +7234,24 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acos">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.acos">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.acos</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.acos</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `acos`
 
@@ -7296,10 +7337,24 @@ For all *x* ≥ 1, we have $\\operatorname{arcosh}(x) = \\ln\\left( {x + \\s
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.acosh</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.acosh</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `acosh`
 
@@ -7379,10 +7434,24 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.add">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.add">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.add</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.add</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `add`
 
@@ -7479,10 +7548,24 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-addition-operator-plus">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-addition-operator-plus">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Addition operator' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Addition operator' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Addition`
 
@@ -7571,10 +7654,24 @@ Error name, defaults to `AggregateError`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-aggregate-error-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-aggregate-error-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-aggregate-error-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `AggregateError`
 
@@ -7817,10 +7914,24 @@ It is possible to change this behavior by handling possible rejections:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.all</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `all`
 
@@ -7903,10 +8014,24 @@ For each outcome object, a `status` string is present. If the status is `fulfill
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.allsettled</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.allsettled</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `allSettled`
 
@@ -8024,10 +8149,24 @@ will output the following HTML:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.anchor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.anchor</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.anchor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `anchor`
 
@@ -8097,7 +8236,43 @@ The old value at the given position (`typedArray[index]`).
 
 The bitwise AND operation only yields 1, if both `a` and `b` are 1. The truth table for the AND operation is:
 
-<table><thead><tr class="header"><th><code>a</code></th><th><code>b</code></th><th><code>a &amp; b</code></th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>0</td></tr><tr class="odd"><td>1</td><td>0</td><td>0</td></tr><tr class="even"><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>a</code>
+</th>
+<th>
+<code>b</code>
+</th>
+<th>
+<code>a &amp; b</code>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
 
@@ -8119,10 +8294,24 @@ For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.and">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.and</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.and</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `and`
 
@@ -8289,10 +8478,24 @@ In this example, we have a function that fetches an image and returns a blob. We
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.any</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `any`
 
@@ -8571,10 +8774,13 @@ You can pass as many arguments as you like to this function. It returns a string
 This example defines a function that creates a string containing HTML for a list. The only formal argument for the function is a string that is "`u`" if the list is to be [unordered (bulleted)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul), or "`o`" if the list is to be [ordered (numbered)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol). The function is defined as follows:
 
     function list(type) {
-      var html = '<' + type + 'l><li>';
+      var html = '<' + type + 'l>
+<li>';
       var args = Array.prototype.slice.call(arguments, 1);
-      html += args.join('</li><li>');
-      html += '</li></' + type + 'l>'; // end list
+      html += args.join('</li>
+<li>');
+      html += '</li>
+</' + type + 'l>'; // end list
       return html;
     }
 
@@ -8583,7 +8789,11 @@ You can pass any number of arguments to this function, and it adds each argument
     let listHTML = list('u', 'One', 'Two', 'Three');
 
     /* listHTML is:
-    "<ul><li>One</li><li>Two</li><li>Three</li></ul>"
+    "<ul>
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>"
     */
 
 ### Rest, default, and destructured parameters
@@ -8643,10 +8853,24 @@ And also:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-arguments-exotic-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `arguments`
 
@@ -8935,19 +9159,65 @@ To help explain these properties and elements, see this example and then refer t
 
 The properties and elements returned from this match are as follows:
 
-<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code> 
+<table>
+<thead>
+<tr class="header">
+<th>Property/Element</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>input</code> 
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr class="even"><td><code>index</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The original string against which the regular expression was matched.</td>
+<td>
+<code>"cdbBdbsbz"</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>index</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The zero-based index of the match in the string.</td><td><code>1</code></td></tr><tr class="odd"><td><code>[0]</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The zero-based index of the match in the string.</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>[0]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>"dbBd"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>The last matched characters.</td>
+<td>
+<code>"dbBd"</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>[1], ...[n]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB" [2]: "d"</code></td></tr></tbody></table>
+<span class="badge inline readonly">Read only </span>
+</td>
+<td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td>
+<td>
+<code>[1]: "bB" [2]: "d"</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Constructor
 
@@ -9236,10 +9506,24 @@ In this example, we create a 8-byte buffer with a [`Int32Array`](int32array) vie
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-arraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-arraybuffer-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-arraybuffer-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `ArrayBuffer`
 
@@ -9825,10 +10109,24 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-arrow-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-arrow-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-arrow-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Arrow_functions`
 
@@ -9932,10 +10230,24 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.asin">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.asin</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.asin</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `asin`
 
@@ -10028,10 +10340,24 @@ Because `asinh()` is a static method of `Math`, you always use it as `Math.asinh
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.asinh">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.asinh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.asinh</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.asinh</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `asinh`
 
@@ -10108,10 +10434,24 @@ The `BigInt.asIntN()` method can be useful to stay in the range of 64-bit arithm
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asintn">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-bigint.asintn">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-bigint.asintn</span></a></td></tr></tbody></table>
+<span class="small">#sec-bigint.asintn</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `asIntN`
 
@@ -10371,10 +10711,24 @@ The properties are overwritten by other objects that have the same properties la
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.assign">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.assign</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.assign</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `assign`
 
@@ -10449,10 +10803,24 @@ The `BigInt.asUintN()` method can be useful to stay in the range of 64-bit arith
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-bigint.asuintn">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-bigint.asuintn</span></a></td></tr></tbody></table>
+<span class="small">#sec-bigint.asuintn</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `asUintN`
 
@@ -10743,10 +11111,24 @@ This highlights the subtle difference between `return foo;` and `return await fo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-async-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-async-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `async_function`
 
@@ -10845,10 +11227,24 @@ Invoking the `AsyncFunction` constructor as a function (without using the `new` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-async-function-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-async-function-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-async-function-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `AsyncFunction`
 
@@ -10941,10 +11337,24 @@ There are currently no built-in JavaScript objects that have the `[Symbol.asyncI
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.asynciterator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.asynciterator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.asynciterator</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.asynciterator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `asyncIterator`
 
@@ -11085,10 +11495,24 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.atan">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.atan</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.atan</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `atan`
 
@@ -11180,10 +11604,24 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atan2">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.atan2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.atan2</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.atan2</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `atan2`
 
@@ -11270,10 +11708,24 @@ For |_x_| &lt; 1, we have $\\operatorname{artanh}(x) = \\frac{1}{2}\\ln\\lef
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.atanh">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.atanh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.atanh</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.atanh</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `atanh`
 
@@ -11425,10 +11877,24 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics-object">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics-object</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics-object</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Atomics`
 
@@ -12414,7 +12880,46 @@ or
 
     var re = new RegExp('pattern', 'flags');
 
-<table><caption>Regular expression flags</caption><thead><tr class="header"><th>Flag</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>g</code></td><td>Global search.</td></tr><tr class="even"><td>i</td><td>Case-insensitive search.</td></tr><tr class="odd"><td>m</td><td>Multi-line search.</td></tr><tr class="even"><td>s</td><td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td></tr><tr class="odd"><td>u</td><td>Unicode; treat pattern as a sequence of Unicode code points</td></tr><tr class="even"><td>y</td><td>Perform a "sticky" search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky"><code>sticky</code></a></td></tr></tbody></table>
+<table>
+<caption>Regular expression flags</caption>
+<thead>
+<tr class="header">
+<th>Flag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>g</code>
+</td>
+<td>Global search.</td>
+</tr>
+<tr class="even">
+<td>i</td>
+<td>Case-insensitive search.</td>
+</tr>
+<tr class="odd">
+<td>m</td>
+<td>Multi-line search.</td>
+</tr>
+<tr class="even">
+<td>s</td>
+<td>Allow <code>.</code> to match newlines (added in ECMAScript 2018)</td>
+</tr>
+<tr class="odd">
+<td>u</td>
+<td>Unicode; treat pattern as a sequence of Unicode code points</td>
+</tr>
+<tr class="even">
+<td>y</td>
+<td>Perform a "sticky" search that matches starting at the current position in the target string. See <a href="../global_objects/regexp/sticky">
+<code>sticky</code>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -12542,10 +13047,24 @@ An [`Intl.Locale`](../locale) object represents a parsed local and options for t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.baseName</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.baseName</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `baseName`
 
@@ -12619,10 +13138,24 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.big">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.big</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.big</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `big`
 
@@ -12907,10 +13440,24 @@ Instead of throwing, `JSON.stringify` now produces a string like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-bigint-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-bigint-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-bigint-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `BigInt`
 
@@ -13251,10 +13798,24 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-typedarray-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `BigInt64Array`
 
@@ -13466,10 +14027,24 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-typedarray-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-typedarray-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-typedarray-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `BigUint64Array`
 
@@ -13823,10 +14398,24 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function.prototype.bind">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function.prototype.bind</span></a></td></tr></tbody></table>
+<span class="small">#sec-function.prototype.bind</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `bind`
 
@@ -13883,7 +14472,37 @@ The operator is applied to each pair of bits, and the result is constructed bitw
 
 The truth table for the AND operation is:
 
-<table><thead><tr class="header"><th>a</th><th>b</th><th>a AND b</th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>0</td></tr><tr class="odd"><td>1</td><td>0</td><td>0</td></tr><tr class="even"><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>a</th>
+<th>b</th>
+<th>a AND b</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
     .    9 (base 10) = 00000000000000000000000000001001 (base 2)
         14 (base 10) = 00000000000000000000000000001110 (base 2)
@@ -13902,10 +14521,24 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-BitwiseANDExpression">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-BitwiseANDExpression</span></a></td></tr></tbody></table>
+<span class="small">#prod-BitwiseANDExpression</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_AND`
 
@@ -13962,10 +14595,24 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_AND_assignment`
 
@@ -14023,7 +14670,24 @@ The operator is applied to each pair of bits, and the result is constructed bitw
 
 The truth table for the `NOT` operation is:
 
-<table><thead><tr class="header"><th>a</th><th>NOT a</th></tr></thead><tbody><tr class="odd"><td>0</td><td>1</td></tr><tr class="even"><td>1</td><td>0</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>a</th>
+<th>NOT a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
      9 (base 10) = 00000000000000000000000000001001 (base 2)
                    --------------------------------
@@ -14043,10 +14707,24 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-bitwise-not-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-bitwise-not-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-bitwise-not-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_NOT`
 
@@ -14103,7 +14781,37 @@ The operator is applied to each pair of bits, and the result is constructed bitw
 
 The truth table for the OR operation is:
 
-<table><thead><tr class="header"><th>a</th><th>b</th><th>a OR b</th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>1</td></tr><tr class="odd"><td>1</td><td>0</td><td>1</td></tr><tr class="even"><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>a</th>
+<th>b</th>
+<th>a OR b</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
     .    9 (base 10) = 00000000000000000000000000001001 (base 2)
         14 (base 10) = 00000000000000000000000000001110 (base 2)
@@ -14124,10 +14832,24 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Bitwise OR expression' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Bitwise OR expression' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_OR`
 
@@ -14186,10 +14908,24 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_OR_assignment`
 
@@ -14248,7 +14984,37 @@ The operator is applied to each pair of bits, and the result is constructed bitw
 
 The truth table for the XOR operation is:
 
-<table><thead><tr class="header"><th>a</th><th>b</th><th>a XOR b</th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>1</td></tr><tr class="odd"><td>1</td><td>0</td><td>1</td></tr><tr class="even"><td>1</td><td>1</td><td>0</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>a</th>
+<th>b</th>
+<th>a XOR b</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
     .    9 (base 10) = 00000000000000000000000000001001 (base 2)
         14 (base 10) = 00000000000000000000000000001110 (base 2)
@@ -14269,10 +15035,24 @@ Bitwise XORing any number `x` with `0` yields `x`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseXORExpression">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-BitwiseXORExpression">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Bitwise XOR expression' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Bitwise XOR expression' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_XOR`
 
@@ -14336,10 +15116,24 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Bitwise_XOR_assignment`
 
@@ -14413,10 +15207,24 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.blink">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.blink">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.blink</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.blink</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `blink`
 
@@ -14526,10 +15334,24 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-block">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-block">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-block</span></a></td></tr></tbody></table>
+<span class="small">#sec-block</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `block`
 
@@ -14602,10 +15424,24 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.bold">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.bold</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.bold</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `bold`
 
@@ -14718,10 +15554,24 @@ Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-boolean-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-boolean-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-boolean-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Boolean`
 
@@ -14973,10 +15823,24 @@ The following code also uses `break` statements with labeled blocks, but generat
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-break-statement">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Break statement' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Break statement' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `break`
 
@@ -15036,10 +15900,24 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-memory-buffer">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-memory-buffer</span></a></td></tr></tbody></table>
+<span class="small">#dom-memory-buffer</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `buffer`
 
@@ -15098,10 +15976,24 @@ The `byteLength` property is an accessor property whose set accessor function is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-sharedarraybuffer.prototype.bytelength">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `byteLength`
 
@@ -15193,10 +16085,24 @@ The `byteOffset` property is an accessor property whose set accessor function is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="#">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-%typedarray%.prototype.byteoffset</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-%typedarray%.prototype.byteoffset</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `byteOffset`
 
@@ -15271,10 +16177,24 @@ no
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-typedarray.bytes_per_element">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-typedarray.bytes_per_element</span></a></td></tr></tbody></table>
+<span class="small">#sec-typedarray.bytes_per_element</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `BYTES_PER_ELEMENT`
 
@@ -15321,7 +16241,141 @@ The `calendar` property returns the part of the `Locale` that indicates the `Loc
 
 ### Unicode calendar keys
 
-<table><caption>Unicode calendar keys</caption><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Calendar key (name)</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>buddhist</code></td><td>Thai Buddhist calendar</td></tr><tr class="even"><td><code>chinese</code></td><td>Traditional Chinese calendar</td></tr><tr class="odd"><td><code>coptic</code></td><td>Coptic calendar</td></tr><tr class="even"><td><code>dangi</code></td><td>Traditional Korean calendar</td></tr><tr class="odd"><td><code>ethioaa</code></td><td>Ethiopic calendar, Amete Alem (epoch approx. 5493 B.C.E)</td></tr><tr class="even"><td><code>ethiopic</code></td><td>Ethiopic calendar, Amete Mihret (epoch approx, 8 C.E.)</td></tr><tr class="odd"><td><code>gregory</code></td><td>Gregorian calendar</td></tr><tr class="even"><td><code>hebrew</code></td><td>Traditional Hebrew calendar</td></tr><tr class="odd"><td><code>indian</code></td><td>Indian calendar</td></tr><tr class="even"><td><code>islamic</code></td><td>Islamic calendar</td></tr><tr class="odd"><td><code>islamic-umalqura</code></td><td>Islamic calendar, Umm al-Qura</td></tr><tr class="even"><td><code>islamic-tbla</code></td><td>Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - astronomical epoch)</td></tr><tr class="odd"><td><code>islamic-civil</code></td><td>Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - civil epoch)</td></tr><tr class="even"><td><code>islamic-rgsa</code></td><td>Islamic calendar, Saudi Arabia sighting</td></tr><tr class="odd"><td><code>iso8601</code></td><td>ISO calendar (Gregorian calendar using the ISO 8601 calendar week rules)</td></tr><tr class="even"><td><code>japanese</code></td><td>Japanese Imperial calendar</td></tr><tr class="odd"><td><code>persian</code></td><td>Persian calendar</td></tr><tr class="even"><td><code>roc</code></td><td>Republic of China calendar</td></tr><tr class="odd"><td><div class="notecard warning"><p><strong>Warning:</strong> The <code>islamicc</code> calendar key has been deprecated. Please use <code>islamic-civil</code>.</p></div><p><code>islamicc</code></p></td><td>Civil (algorithmic) Arabic calendar</td></tr></tbody></table>
+<table>
+<caption>Unicode calendar keys</caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Calendar key (name)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>buddhist</code>
+</td>
+<td>Thai Buddhist calendar</td>
+</tr>
+<tr class="even">
+<td>
+<code>chinese</code>
+</td>
+<td>Traditional Chinese calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<code>coptic</code>
+</td>
+<td>Coptic calendar</td>
+</tr>
+<tr class="even">
+<td>
+<code>dangi</code>
+</td>
+<td>Traditional Korean calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<code>ethioaa</code>
+</td>
+<td>Ethiopic calendar, Amete Alem (epoch approx. 5493 B.C.E)</td>
+</tr>
+<tr class="even">
+<td>
+<code>ethiopic</code>
+</td>
+<td>Ethiopic calendar, Amete Mihret (epoch approx, 8 C.E.)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>gregory</code>
+</td>
+<td>Gregorian calendar</td>
+</tr>
+<tr class="even">
+<td>
+<code>hebrew</code>
+</td>
+<td>Traditional Hebrew calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<code>indian</code>
+</td>
+<td>Indian calendar</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic</code>
+</td>
+<td>Islamic calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<code>islamic-umalqura</code>
+</td>
+<td>Islamic calendar, Umm al-Qura</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic-tbla</code>
+</td>
+<td>Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - astronomical epoch)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>islamic-civil</code>
+</td>
+<td>Islamic calendar, tabular (intercalary years [2,5,7,10,13,16,18,21,24,26,29] - civil epoch)</td>
+</tr>
+<tr class="even">
+<td>
+<code>islamic-rgsa</code>
+</td>
+<td>Islamic calendar, Saudi Arabia sighting</td>
+</tr>
+<tr class="odd">
+<td>
+<code>iso8601</code>
+</td>
+<td>ISO calendar (Gregorian calendar using the ISO 8601 calendar week rules)</td>
+</tr>
+<tr class="even">
+<td>
+<code>japanese</code>
+</td>
+<td>Japanese Imperial calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<code>persian</code>
+</td>
+<td>Persian calendar</td>
+</tr>
+<tr class="even">
+<td>
+<code>roc</code>
+</td>
+<td>Republic of China calendar</td>
+</tr>
+<tr class="odd">
+<td>
+<div class="notecard warning">
+<p>
+<strong>Warning:</strong> The <code>islamicc</code> calendar key has been deprecated. Please use <code>islamic-civil</code>.</p>
+</div>
+<p>
+<code>islamicc</code>
+</p>
+</td>
+<td>Civil (algorithmic) Arabic calendar</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -15341,10 +16395,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.calendar</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.calendar</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `calendar`
 
@@ -15507,10 +16575,24 @@ In the example below, we invoke the `display` function without passing the first
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function.prototype.call">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Function.prototype.call' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Function.prototype.call' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `call`
 
@@ -15707,10 +16789,24 @@ However, in a case like the following, there are not alternatives to `arguments.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-arguments-exotic-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-arguments-exotic-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-arguments-exotic-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `callee`
 
@@ -16150,7 +17246,34 @@ There are 3 values that the `caseFirst` property can have, outlined in the table
 
 ### `caseFirst` values
 
-<table><thead><tr class="header"><th>Value</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>upper</code></td><td>Upper case to be sorted before lower case.</td></tr><tr class="even"><td><code>lower</code></td><td>Lower case to be sorted before upper case.</td></tr><tr class="odd"><td><code>false</code></td><td>No special case ordering.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>upper</code>
+</td>
+<td>Upper case to be sorted before lower case.</td>
+</tr>
+<tr class="even">
+<td>
+<code>lower</code>
+</td>
+<td>Lower case to be sorted before upper case.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>false</code>
+</td>
+<td>No special case ordering.</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -16170,10 +17293,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.caseFirst</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.caseFirst</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `caseFirst`
 
@@ -16349,10 +17486,24 @@ The `catch` method is used for error handling in promise composition. Since it r
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.prototype.catch">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.prototype.catch</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.prototype.catch</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `catch`
 
@@ -16441,10 +17592,24 @@ For all *x* ≥ 0, have $\\sqrt\[3\]{x} = x^{1/3}$ so this can be emulated b
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cbrt">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.cbrt">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.cbrt</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.cbrt</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `cbrt`
 
@@ -16590,10 +17755,24 @@ The following example shows example usage of `Math.ceil()`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.ceil">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.ceil</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.ceil</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `ceil`
 
@@ -16825,10 +18004,24 @@ While the previous example may be more useful for programs that must support non
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.charat">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.charAt' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.charAt' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `charAt`
 
@@ -16985,10 +18178,24 @@ This version might be used in for loops and the like when it is unknown whether 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.charcodeat">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.charcodeat</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.charcodeat</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `charCodeAt`
 
@@ -17095,10 +18302,24 @@ If you want to refer to the current class inside the class body, you can create 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-class-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-class-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `class`
 
@@ -17516,10 +18737,24 @@ If you're experimenting with code in a web browser, such as the Firefox Web Cons
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Class definitions' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Classes`
 
@@ -17886,10 +19121,24 @@ The `clear()` method removes all elements from a `Set` object.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-set.prototype.clear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-set.prototype.clear</span></a></td></tr></tbody></table>
+<span class="small">#sec-set.prototype.clear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `clear`
 
@@ -18062,10 +19311,24 @@ The following polyfill is the most efficient.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.clz32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.clz32</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.clz32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `clz32`
 
@@ -18200,10 +19463,24 @@ The following extends Strings to include the `codePointAt()` function as specifi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.codepointat">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.codepointat">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.codepointat</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.codepointat</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `codePointAt`
 
@@ -18254,7 +19531,104 @@ Below is a table with the available collation types, taken from the [Unicode col
 
 ### Valid collation types
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Collation Type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td>big5han</td><td>Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)</td></tr><tr class="even"><td>compat</td><td>A previous version of the ordering, for compatibility</td></tr><tr class="odd"><td>dict</td><td>Dictionary style ordering (such as in Sinhala)</td></tr><tr class="even"><td><div class="notecard warning"><p><strong>Warning:</strong> The <code>direct</code> collation type has been deprected. Do not use.</p></div><p>direct</p></td><td>Binary code point order (used in Hindi)</td></tr><tr class="odd"><td>ducet</td><td>The default Unicode collation element table order</td></tr><tr class="even"><td>emoji</td><td>Recommended ordering for emoji characters</td></tr><tr class="odd"><td>eor</td><td>European ordering rules</td></tr><tr class="even"><td>gb2312</td><td>Pinyin ordering for Latin, gb2312han charset ordering for CJK characters (used in Chinese)</td></tr><tr class="odd"><td>phonebk</td><td>Phonebook style ordering (such as in German)</td></tr><tr class="even"><td>phonetic</td><td>Phonetic ordering (sorting based on pronunciation)</td></tr><tr class="odd"><td>pinyin</td><td>Pinyin ordering for Latin and for CJK characters (used in Chinese)</td></tr><tr class="even"><td>reformed</td><td>Reformed ordering (such as in Swedish)</td></tr><tr class="odd"><td>search</td><td>Special collation type for string search</td></tr><tr class="even"><td>searchjl</td><td>Special collation type for Korean initial consonant search</td></tr><tr class="odd"><td>standard</td><td>Default ordering for each language</td></tr><tr class="even"><td>stroke</td><td>Pinyin ordering for Latin, stroke order for CJK characters (used in Chinese)</td></tr><tr class="odd"><td>trad</td><td>Traditional style ordering (such as in Spanish)</td></tr><tr class="even"><td>unihan</td><td>Pinyin ordering for Latin, Unihan radical-stroke ordering for CJK characters (used in Chinese)</td></tr><tr class="odd"><td>zhuyin</td><td><p>Pinyin ordering for Latin, zhuyin order for Bopomofo and CJK characters (used in Chinese)</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Collation Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>big5han</td>
+<td>Pinyin ordering for Latin, big5 charset ordering for CJK characters (used in Chinese)</td>
+</tr>
+<tr class="even">
+<td>compat</td>
+<td>A previous version of the ordering, for compatibility</td>
+</tr>
+<tr class="odd">
+<td>dict</td>
+<td>Dictionary style ordering (such as in Sinhala)</td>
+</tr>
+<tr class="even">
+<td>
+<div class="notecard warning">
+<p>
+<strong>Warning:</strong> The <code>direct</code> collation type has been deprected. Do not use.</p>
+</div>
+<p>direct</p>
+</td>
+<td>Binary code point order (used in Hindi)</td>
+</tr>
+<tr class="odd">
+<td>ducet</td>
+<td>The default Unicode collation element table order</td>
+</tr>
+<tr class="even">
+<td>emoji</td>
+<td>Recommended ordering for emoji characters</td>
+</tr>
+<tr class="odd">
+<td>eor</td>
+<td>European ordering rules</td>
+</tr>
+<tr class="even">
+<td>gb2312</td>
+<td>Pinyin ordering for Latin, gb2312han charset ordering for CJK characters (used in Chinese)</td>
+</tr>
+<tr class="odd">
+<td>phonebk</td>
+<td>Phonebook style ordering (such as in German)</td>
+</tr>
+<tr class="even">
+<td>phonetic</td>
+<td>Phonetic ordering (sorting based on pronunciation)</td>
+</tr>
+<tr class="odd">
+<td>pinyin</td>
+<td>Pinyin ordering for Latin and for CJK characters (used in Chinese)</td>
+</tr>
+<tr class="even">
+<td>reformed</td>
+<td>Reformed ordering (such as in Swedish)</td>
+</tr>
+<tr class="odd">
+<td>search</td>
+<td>Special collation type for string search</td>
+</tr>
+<tr class="even">
+<td>searchjl</td>
+<td>Special collation type for Korean initial consonant search</td>
+</tr>
+<tr class="odd">
+<td>standard</td>
+<td>Default ordering for each language</td>
+</tr>
+<tr class="even">
+<td>stroke</td>
+<td>Pinyin ordering for Latin, stroke order for CJK characters (used in Chinese)</td>
+</tr>
+<tr class="odd">
+<td>trad</td>
+<td>Traditional style ordering (such as in Spanish)</td>
+</tr>
+<tr class="even">
+<td>unihan</td>
+<td>Pinyin ordering for Latin, Unihan radical-stroke ordering for CJK characters (used in Chinese)</td>
+</tr>
+<tr class="odd">
+<td>zhuyin</td>
+<td>
+<p>Pinyin ordering for Latin, zhuyin order for Bopomofo and CJK characters (used in Chinese)</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -18276,10 +19650,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.collation</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.collation</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `collation`
 
@@ -18392,10 +19780,24 @@ Note that the results shown in the code above can vary between browsers and brow
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-the-intl-collator-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-the-intl-collator-constructor</span></a></td></tr></tbody></table>
+<span class="small">#sec-the-intl-collator-constructor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Collator`
 
@@ -18588,10 +19990,24 @@ Another example that one could make with comma operator is processing before ret
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-comma-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-comma-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-comma-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Comma_Operator`
 
@@ -18670,10 +20086,24 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.collator.prototype.compare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.collator.prototype.compare</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.collator.prototype.compare</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `compare`
 
@@ -18752,10 +20182,24 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.compareexchange">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.compareexchange">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.compareexchange</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.compareexchange</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `compareExchange`
 
@@ -18824,7 +20268,178 @@ The [`Reflect`](../reflect) object, introduced in ES2015, is a built-in object t
 
 The table below details the differences between the methods available on the `Object` and `Reflect` APIs. Please note that if a method does not exist in an API, it is marked as N/A.
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Method Name</th><th><code>Object</code></th><th><code>Reflect</code></th></tr></thead><tbody><tr class="odd"><td><code>defineProperty()</code></td><td><a href="../object/defineproperty"><code>Object.defineProperty()</code></a> returns the object that was passed to the function. Returns a <code>TypeError</code> if the property was not successfully defined on the object.</td><td><a href="defineproperty"><code>Reflect.defineProperty()</code></a> returns <code>true</code> if the property was defined on the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>defineProperties()</code></td><td><a href="../object/defineproperties"><code>Object.defineProperties()</code></a> returns the objects that were passed to the function. Returns a <code>TypeError</code> if any properties were not successfully defined on the object.</td><td>N/A</td></tr><tr class="odd"><td><code>set()</code></td><td>N/A</td><td><a href="set"><code>Reflect.set()</code></a> returns <code>true</code> if the property was set successfully on the object and <code>false</code> if it was not. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="even"><td><code>get()</code></td><td>N/A</td><td><a href="get"><code>Reflect.get()</code></a> returns the value of the property. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td></tr><tr class="odd"><td><code>deleteProperty()</code></td><td>N/A</td><td><a href="deleteproperty"><code>Reflect.deleteProperty()</code></a> returns <code>true</code> if the property was deleted from the object and <code>false</code> if it was not.</td></tr><tr class="even"><td><code>getOwnPropertyDescriptor()</code></td><td><a href="../object/getownpropertydescriptor"><code>Object.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object argument passed in, and returns <code>undefined</code> if it does not exist. However, if an object is not passed in as the first argument, it will be coerced into an object.</td><td><a href="getownpropertydescriptor"><code>Reflect.getOwnPropertyDescriptor()</code></a> returns a property descriptor of the given property if it exists on the object. Returns <code>undefined</code> if it does not exist, and a <code>TypeError</code> if anything other than an object (a primitive) is passed in as the first argument.</td></tr><tr class="odd"><td><code>getOwnPropertyDescriptors()</code></td><td><a href="../object/getownpropertydescriptors"><code>Object.getOwnPropertyDescriptors()</code></a> returns an object containing a property descriptor of each passed-in object. Returns an empty object if the passed-in object has no owned property descriptors.</td><td>N/A</td></tr><tr class="even"><td><code>getPrototypeOf()</code></td><td><a href="../object/getprototypeof"><code>Object.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties. Throws a <code>TypeError</code> for non-objects in ES5, but coerces non-objects in ES2015.</td><td><a href="getprototypeof"><code>Reflect.getPrototypeOf()</code></a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties, and throws a <code>TypeError</code> for non-objects.</td></tr><tr class="odd"><td><code>setPrototypeOf()</code></td><td><a href="../object/setprototypeof"><code>Object.setPrototypeOf()</code></a> returns the object itself if its prototype was set successfully. Throws a <code>TypeError</code> if the prototype being set was anything other than an <code>Object</code> or <code>null</code>, or if the prototype for the object being modified is non-extensible.</td><td><a href="setprototypeof"><code>Reflect.setPrototypeOf()</code></a> returns <code>true</code> if the prototype was successfully set on the object and <code>false</code> if it wasn't (including if the prototype is non-extensible). Throws a <code>TypeError</code> if the target passed in was not an <code>Object</code>, or if the prototype being set was anything other than an <code>Object</code> or <code>null</code>.</td></tr><tr class="even"><td><code>isExtensible()</code></td><td><a href="../object/isextensible"><code>Object.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> in ES5 if the first argument is not an object (a primitive). In ES2015, it will be coerced into a non-extensible, ordinary object and will return <code>false</code>.</td><td><p><a href="isextensible"><code>Reflect.isExtensible()</code></a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> if the first argument is not an object (a primitive).</p></td></tr><tr class="odd"><td><code>preventExtensions()</code></td><td><p><a href="../object/preventextensions"><code>Object.preventExtensions()</code></a> returns the object that is being made non-extensible. Throws a <code>TypeError</code>in ES5 if the argument is not an object (a primitive). In ES2015, treats the argument as a non-extensible, ordinary object and returns the object itself.</p></td><td><a href="preventextensions"><code>Reflect.preventExtensions()</code></a> returns <code>true</code> if the object has been made non-extensible, and <code>false</code> if it has not. Throws a <code>TypeError</code> if the argument is not an object (a primitive).</td></tr><tr class="even"><td><code>keys()</code></td><td><a href="../object/keys"><code>Object.keys()</code></a> returns an <code>Array</code> of strings that map to the target object's own (enumerable) property keys. Throws a <code>TypeError</code> in ES5 if the target is not an object, but coerces non-object targets into objects in ES2015.</td><td>N/A</td></tr><tr class="odd"><td><code>ownKeys()</code></td><td>N/A</td><td><a href="ownkeys"><code>Reflect.ownKeys()</code></a> returns an <code>Array</code> of property names that map to the target object's own property keys. Throws a <code>TypeError</code> if the target is not an <code>Object</code>.</td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method Name</th>
+<th>
+<code>Object</code>
+</th>
+<th>
+<code>Reflect</code>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>defineProperty()</code>
+</td>
+<td>
+<a href="../object/defineproperty">
+<code>Object.defineProperty()</code>
+</a> returns the object that was passed to the function. Returns a <code>TypeError</code> if the property was not successfully defined on the object.</td>
+<td>
+<a href="defineproperty">
+<code>Reflect.defineProperty()</code>
+</a> returns <code>true</code> if the property was defined on the object and <code>false</code> if it was not.</td>
+</tr>
+<tr class="even">
+<td>
+<code>defineProperties()</code>
+</td>
+<td>
+<a href="../object/defineproperties">
+<code>Object.defineProperties()</code>
+</a> returns the objects that were passed to the function. Returns a <code>TypeError</code> if any properties were not successfully defined on the object.</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>
+<code>set()</code>
+</td>
+<td>N/A</td>
+<td>
+<a href="set">
+<code>Reflect.set()</code>
+</a> returns <code>true</code> if the property was set successfully on the object and <code>false</code> if it was not. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td>
+</tr>
+<tr class="even">
+<td>
+<code>get()</code>
+</td>
+<td>N/A</td>
+<td>
+<a href="get">
+<code>Reflect.get()</code>
+</a> returns the value of the property. Throws a <code>TypeError</code> if the target was not an <code>Object</code>.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>deleteProperty()</code>
+</td>
+<td>N/A</td>
+<td>
+<a href="deleteproperty">
+<code>Reflect.deleteProperty()</code>
+</a> returns <code>true</code> if the property was deleted from the object and <code>false</code> if it was not.</td>
+</tr>
+<tr class="even">
+<td>
+<code>getOwnPropertyDescriptor()</code>
+</td>
+<td>
+<a href="../object/getownpropertydescriptor">
+<code>Object.getOwnPropertyDescriptor()</code>
+</a> returns a property descriptor of the given property if it exists on the object argument passed in, and returns <code>undefined</code> if it does not exist. However, if an object is not passed in as the first argument, it will be coerced into an object.</td>
+<td>
+<a href="getownpropertydescriptor">
+<code>Reflect.getOwnPropertyDescriptor()</code>
+</a> returns a property descriptor of the given property if it exists on the object. Returns <code>undefined</code> if it does not exist, and a <code>TypeError</code> if anything other than an object (a primitive) is passed in as the first argument.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>getOwnPropertyDescriptors()</code>
+</td>
+<td>
+<a href="../object/getownpropertydescriptors">
+<code>Object.getOwnPropertyDescriptors()</code>
+</a> returns an object containing a property descriptor of each passed-in object. Returns an empty object if the passed-in object has no owned property descriptors.</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>
+<code>getPrototypeOf()</code>
+</td>
+<td>
+<a href="../object/getprototypeof">
+<code>Object.getPrototypeOf()</code>
+</a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties. Throws a <code>TypeError</code> for non-objects in ES5, but coerces non-objects in ES2015.</td>
+<td>
+<a href="getprototypeof">
+<code>Reflect.getPrototypeOf()</code>
+</a> returns the prototype of the given object. Returns <code>null</code> if there are no inherited properties, and throws a <code>TypeError</code> for non-objects.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>setPrototypeOf()</code>
+</td>
+<td>
+<a href="../object/setprototypeof">
+<code>Object.setPrototypeOf()</code>
+</a> returns the object itself if its prototype was set successfully. Throws a <code>TypeError</code> if the prototype being set was anything other than an <code>Object</code> or <code>null</code>, or if the prototype for the object being modified is non-extensible.</td>
+<td>
+<a href="setprototypeof">
+<code>Reflect.setPrototypeOf()</code>
+</a> returns <code>true</code> if the prototype was successfully set on the object and <code>false</code> if it wasn't (including if the prototype is non-extensible). Throws a <code>TypeError</code> if the target passed in was not an <code>Object</code>, or if the prototype being set was anything other than an <code>Object</code> or <code>null</code>.</td>
+</tr>
+<tr class="even">
+<td>
+<code>isExtensible()</code>
+</td>
+<td>
+<a href="../object/isextensible">
+<code>Object.isExtensible()</code>
+</a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> in ES5 if the first argument is not an object (a primitive). In ES2015, it will be coerced into a non-extensible, ordinary object and will return <code>false</code>.</td>
+<td>
+<p>
+<a href="isextensible">
+<code>Reflect.isExtensible()</code>
+</a> returns <code>true</code> if the object is extensible, and <code>false</code> if it is not. Throws a <code>TypeError</code> if the first argument is not an object (a primitive).</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>preventExtensions()</code>
+</td>
+<td>
+<p>
+<a href="../object/preventextensions">
+<code>Object.preventExtensions()</code>
+</a> returns the object that is being made non-extensible. Throws a <code>TypeError</code>in ES5 if the argument is not an object (a primitive). In ES2015, treats the argument as a non-extensible, ordinary object and returns the object itself.</p>
+</td>
+<td>
+<a href="preventextensions">
+<code>Reflect.preventExtensions()</code>
+</a> returns <code>true</code> if the object has been made non-extensible, and <code>false</code> if it has not. Throws a <code>TypeError</code> if the argument is not an object (a primitive).</td>
+</tr>
+<tr class="even">
+<td>
+<code>keys()</code>
+</td>
+<td>
+<a href="../object/keys">
+<code>Object.keys()</code>
+</a> returns an <code>Array</code> of strings that map to the target object's own (enumerable) property keys. Throws a <code>TypeError</code> in ES5 if the target is not an object, but coerces non-object targets into objects in ES2015.</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>
+<code>ownKeys()</code>
+</td>
+<td>N/A</td>
+<td>
+<a href="ownkeys">
+<code>Reflect.ownKeys()</code>
+</a> returns an <code>Array</code> of property names that map to the target object's own property keys. Throws a <code>TypeError</code> if the target is not an <code>Object</code>.</td>
+</tr>
+</tbody>
+</table>
 
 © 2005–2021 MDN contributors.  
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
@@ -18872,10 +20487,24 @@ The following example compiles the loaded simple.wasm byte code using the `compi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-compile">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-webassembly-compile</span></a></td></tr></tbody></table>
+<span class="small">#dom-webassembly-compile</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `compile`
 
@@ -18974,13 +20603,33 @@ The following snippet creates a new `CompileError` instance, and logs its detail
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#exceptiondef-compileerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
+<span class="small">#exceptiondef-compileerror</span>
+</a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `CompileError`
 
@@ -19090,10 +20739,24 @@ The resulting module instance is then instantiated using [`WebAssembly.instantia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming">WebAssembly Web API (WebAssembly Web API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-compilestreaming">WebAssembly Web API (WebAssembly Web API) 
 <br/>
 
-<span class="small">#dom-webassembly-compilestreaming</span></a></td></tr></tbody></table>
+<span class="small">#dom-webassembly-compilestreaming</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `compileStreaming`
 
@@ -19218,10 +20881,24 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.concat</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `concat`
 
@@ -19324,10 +21001,24 @@ The ternary operator is right-associative, which means it can be "chained" in th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-conditional-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-conditional-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-conditional-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Conditional_Operator`
 
@@ -19473,10 +21164,24 @@ const also works on objects and arrays.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
+<span class="small">#sec-let-and-const-declarations</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `const`
 
@@ -19633,10 +21338,24 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target` operato
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.construct">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-reflect.construct">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-reflect.construct</span></a></td></tr></tbody></table>
+<span class="small">#sec-reflect.construct</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `construct`
 
@@ -19852,10 +21571,24 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.prototype.constructor">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.prototype.constructor' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.prototype.constructor' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `constructor`
 
@@ -19992,10 +21725,24 @@ Output:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-continue-statement">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-continue-statement">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Continue statement' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Continue statement' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `continue`
 
@@ -20102,10 +21849,24 @@ The `copyWithin` method is a mutable method. It does not alter the length of `th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.copywithin">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.copywithin">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.copywithin</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.copywithin</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `copyWithin`
 
@@ -20175,10 +21936,24 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cos">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.cos">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.cos</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.cos</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `cos`
 
@@ -20267,10 +22042,24 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.cosh">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.cosh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.cosh</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.cosh</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `cosh`
 
@@ -20643,10 +22432,24 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.create</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.create</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `create`
 
@@ -20739,10 +22542,24 @@ We then do a check using `WebAssembly.Module.customSections`, looking to see whe
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-customsections">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-module-customsections">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-module-customsections</span></a></td></tr></tbody></table>
+<span class="small">#dom-module-customsections</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `customSections`
 
@@ -20981,10 +22798,24 @@ Stores an unsigned 64-bit integer (unsigned long long) value at the specified by
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `DataView`
 
@@ -21907,10 +23738,24 @@ In this case, it's important to return only an integer—so a simple division wo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-date-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Date`
 
@@ -23476,10 +25321,24 @@ In basic use without specifying a locale, `DateTimeFormat` uses the default loca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl-datetimeformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl-datetimeformat-constructor</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl-datetimeformat-constructor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `DateTimeFormat`
 
@@ -23713,10 +25572,24 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-debugger-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-debugger-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-debugger-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `debugger`
 
@@ -23797,10 +25670,24 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-decodeuri-encodeduri">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-decodeuri-encodeduri</span></a></td></tr></tbody></table>
+<span class="small">#sec-decodeuri-encodeduri</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `decodeURI`
 
@@ -23891,10 +25778,24 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-decodeuricomponent-encodeduricomponent">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-decodeuricomponent-encodeduricomponent</span></a></td></tr></tbody></table>
+<span class="small">#sec-decodeuricomponent-encodeduricomponent</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `decodeURIComponent`
 
@@ -23964,10 +25865,24 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-decrement-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-postfix-decrement-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-postfix-decrement-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-postfix-decrement-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Decrement`
 
@@ -24191,10 +26106,24 @@ You can use default value assignment with the [destructuring assignment](../oper
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Default_parameters`
 
@@ -24416,10 +26345,24 @@ Assuming a pristine execution environment with all names and properties referrin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.defineproperties">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.defineproperties</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.defineproperties</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `defineProperties`
 
@@ -24862,10 +26805,24 @@ Unlike accessor properties, value properties are always set on the object itself
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.defineproperty">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.defineproperty</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.defineproperty</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `defineProperty`
 
@@ -25161,10 +27118,24 @@ If instead, you want to remove an array element by changing the contents of the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-delete-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-delete-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-delete-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `delete`
 
@@ -25339,10 +27310,24 @@ The following code traps the [`delete`](../../../operators/delete) operator.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-delete-p">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span></a></td></tr></tbody></table>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `deleteProperty`
 
@@ -25822,10 +27807,24 @@ The read-only `description` property is a string returning the optional descript
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.prototype.description">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.prototype.description</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.prototype.description</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `description`
 
@@ -26251,10 +28250,24 @@ When deconstructing an object, if a property is not accessed in itself, it will 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-destructuring-assignment">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-destructuring-assignment</span></a></td></tr></tbody></table>
+<span class="small">#sec-destructuring-assignment</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Destructuring_assignment`
 
@@ -26576,10 +28589,24 @@ To create an `Intl.DisplayNames` for a locale and get the display name for curre
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#intl-displaynames-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#intl-displaynames-objects</span></a></td></tr></tbody></table>
+<span class="small">#intl-displaynames-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `DisplayNames`
 
@@ -26745,10 +28772,24 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Division operator' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Division operator' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Division`
 
@@ -26827,10 +28868,24 @@ In the following example, the `do...while` loop iterates at least once and reite
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-do-while-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-do-while-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-do-while-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `do...while`
 
@@ -26921,10 +28976,24 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.dotAll">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.dotAll</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.dotAll</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `dotAll`
 
@@ -27005,10 +29074,24 @@ The following function returns e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.e">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.e">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.e</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.e</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `E`
 
@@ -27100,10 +29183,24 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-empty-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-empty-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-empty-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Empty`
 
@@ -27213,10 +29310,24 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-encodeuri-uri">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-encodeuri-uri</span></a></td></tr></tbody></table>
+<span class="small">#sec-encodeuri-uri</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `encodeURI`
 
@@ -27357,10 +29468,24 @@ The following example provides the special encoding required within UTF-8 [`Cont
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-encodeuricomponent-uricomponent">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'encodeURIComponent' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'encodeURIComponent' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `encodeURIComponent`
 
@@ -27446,10 +29571,24 @@ This method has been added to the ECMAScript 6 specification and may not be avai
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.endswith">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.endswith</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.endswith</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `endsWith`
 
@@ -27587,10 +29726,24 @@ Using [Array Destructuring](../../operators/destructuring_assignment#array_destr
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.entries">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.entries' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.entries' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `entries`
 
@@ -27676,10 +29829,24 @@ The `EPSILON` property has a value of approximately `2.2204460492503130808472633
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.epsilon">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.epsilon</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.epsilon</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `EPSILON`
 
@@ -27839,10 +30006,24 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-equality-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Equality`
 
@@ -28062,10 +30243,24 @@ See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-error-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-error-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-error-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Error`
 
@@ -28673,10 +30868,24 @@ If you define multiple values then the last value is returned.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-eval-x">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-eval-x</span></a></td></tr></tbody></table>
+<span class="small">#sec-eval-x</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `eval`
 
@@ -28761,10 +30970,24 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-evalerror">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-evalerror">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard-evalerror</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard-evalerror</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `EvalError`
 
@@ -29031,10 +31254,24 @@ The following examples tests the behavior of the `every` method when the array i
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.every</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.every</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `every`
 
@@ -29111,10 +31348,24 @@ The old value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.exchange">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.exchange">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.exchange</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.exchange</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `exchange`
 
@@ -29216,14 +31467,195 @@ Consider the following example:
 
 The following table shows the state of `result` after running this script:
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>[0]</code></td><td>The full string of characters matched</td><td><code>"Quick Brown Fox Jumps"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code></td><td><p>The parenthesized substring matches, if any.</p><p>The number of possible parenthesized substrings is unlimited.</p></td><td><p><code>result[1] === "Brown"</code></p><p><code>result[2] === "Jumps"</code></p></td></tr><tr class="odd"><td><code>index</code></td><td>The 0-based index of the match in the string.</td><td><code>4</code></td></tr><tr class="even"><td><code>indices</code></td><td>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index. 
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property/Index</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>[0]</code>
+</td>
+<td>The full string of characters matched</td>
+<td>
+<code>"Quick Brown Fox Jumps"</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>[1], ...[n]</code>
+</td>
+<td>
+<p>The parenthesized substring matches, if any.</p>
+<p>The number of possible parenthesized substrings is unlimited.</p>
+</td>
+<td>
+<p>
+<code>result[1] === "Brown"</code>
+</p>
+<p>
+<code>result[2] === "Jumps"</code>
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>index</code>
+</td>
+<td>The 0-based index of the match in the string.</td>
+<td>
+<code>4</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>indices</code>
+</td>
+<td>An array where each entry represents a substring match. Each substring match itself is an array where the first entry represents its start index and the second entry its end index. 
 <br/>
 
-The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn't contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td><td><p><code>indices[0] === Array [ 4, 25 ]</code></p><p><code>indices[1] === Array [ 10, 15 ]</code></p><p><code>indices[2] === Array [ 20, 25 ]</code></p><p><code>indices.groups === undefined</code></p><p><code>indices.length === 3</code></p></td></tr><tr class="odd"><td><code>input</code></td><td>The original string that was matched against.</td><td><code>The Quick Brown Fox Jumps Over The Lazy Dog</code></td></tr></tbody></table>
+The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn't contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td>
+<td>
+<p>
+<code>indices[0] === Array [ 4, 25 ]</code>
+</p>
+<p>
+<code>indices[1] === Array [ 10, 15 ]</code>
+</p>
+<p>
+<code>indices[2] === Array [ 20, 25 ]</code>
+</p>
+<p>
+<code>indices.groups === undefined</code>
+</p>
+<p>
+<code>indices.length === 3</code>
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>input</code>
+</td>
+<td>The original string that was matched against.</td>
+<td>
+<code>The Quick Brown Fox Jumps Over The Lazy Dog</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the state of `re` after running this script:
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th>Property/Index</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>lastIndex</code></td><td><p>The index at which to start the next match.</p><p>If <code>g</code> is absent, this will always be <code>0</code>.</p></td><td><code>25</code></td></tr><tr class="even"><td><code>dotAll</code></td><td>Indicates if the <code>s</code> flag was used to let <code>.</code> match newlines.</td><td><code>false</code></td></tr><tr class="odd"><td><code>hasIndices</code></td><td>Indicates if the <code>d</code> flag was used to generate an <code>indices</code> property in the returned value containing start and end indices of the substring matches.</td><td><code>true</code></td></tr><tr class="even"><td><code>ignoreCase</code></td><td>Indicates if the <code>i</code> flag was used to ignore case.</td><td><code>true</code></td></tr><tr class="odd"><td><code>global</code></td><td>Indicates if the <code>g</code> flag was used for a global match.</td><td><code>true</code></td></tr><tr class="even"><td><code>multiline</code></td><td>Indicates if the <code>m</code> flag was used to search across multiple lines.</td><td><code>false</code></td></tr><tr class="odd"><td><code>source</code></td><td>The text of the pattern.</td><td><code>quick\s(brown).+?(jumps)</code></td></tr><tr class="even"><td><code>sticky</code></td><td>Indicates if the <code>y</code> flag was used to match only from the index indicated by the <code>lastIndex</code> property.</td><td><code>false</code></td></tr><tr class="odd"><td><code>unicode</code></td><td>Indicates if the <code>u</code> flag was used to treat the pattern as a sequence of Unicode code points.</td><td><code>false</code></td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property/Index</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>lastIndex</code>
+</td>
+<td>
+<p>The index at which to start the next match.</p>
+<p>If <code>g</code> is absent, this will always be <code>0</code>.</p>
+</td>
+<td>
+<code>25</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>dotAll</code>
+</td>
+<td>Indicates if the <code>s</code> flag was used to let <code>.</code> match newlines.</td>
+<td>
+<code>false</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>hasIndices</code>
+</td>
+<td>Indicates if the <code>d</code> flag was used to generate an <code>indices</code> property in the returned value containing start and end indices of the substring matches.</td>
+<td>
+<code>true</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>ignoreCase</code>
+</td>
+<td>Indicates if the <code>i</code> flag was used to ignore case.</td>
+<td>
+<code>true</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>global</code>
+</td>
+<td>Indicates if the <code>g</code> flag was used for a global match.</td>
+<td>
+<code>true</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>multiline</code>
+</td>
+<td>Indicates if the <code>m</code> flag was used to search across multiple lines.</td>
+<td>
+<code>false</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>source</code>
+</td>
+<td>The text of the pattern.</td>
+<td>
+<code>quick\s(brown).+?(jumps)</code>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>sticky</code>
+</td>
+<td>Indicates if the <code>y</code> flag was used to match only from the index indicated by the <code>lastIndex</code> property.</td>
+<td>
+<code>false</code>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>unicode</code>
+</td>
+<td>Indicates if the <code>u</code> flag was used to treat the pattern as a sequence of Unicode code points.</td>
+<td>
+<code>false</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -29264,10 +31696,24 @@ This will log a message containing `'hello world!'`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-regexp.prototype.exec">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-regexp.prototype.exec</span></a></td></tr></tbody></table>
+<span class="small">#sec-regexp.prototype.exec</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `exec`
 
@@ -29335,10 +31781,24 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.exp">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.exp">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.exp</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.exp</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `exp`
 
@@ -29411,10 +31871,24 @@ Because `expm1()` is a static method of `Math`, you always use it as `Math.expm1
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.expm1">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.expm1">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.expm1</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.expm1</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `expm1`
 
@@ -29509,10 +31983,24 @@ To force the base of an exponentiation expression to be a negative number:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-exp-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-exp-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-exp-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Exponentiation`
 
@@ -29765,10 +32253,24 @@ This is what it would look like using code snippets:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-exports">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-exports</span></a></td></tr></tbody></table>
+<span class="small">#sec-exports</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `export`
 
@@ -29934,10 +32436,24 @@ The `exports[0]` output looks like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-module-exports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-module-exports</span></a></td></tr></tbody></table>
+<span class="small">#dom-module-exports</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `exports`
 
@@ -30028,10 +32544,24 @@ This example extends the built-in [`Date`](../global_objects/date) object. This 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'extends' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'extends' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `extends`
 
@@ -30274,10 +32804,24 @@ This example shows how to create a matrix of all 1, like the _ones()_ function o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.fill">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.prototype.fill' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Array.prototype.fill' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fill`
 
@@ -30554,10 +33098,24 @@ The following examples tests the behavior of the `filter` method when the array 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.filter</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `filter`
 
@@ -30650,10 +33208,24 @@ The `finally()` method is very similar to calling `.then(onFinally, onFinally)` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.prototype.finally">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.prototype.finally</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.prototype.finally</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `finally`
 
@@ -30830,10 +33402,24 @@ The following examples show that nonexistent and deleted elements _are_ visited,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.find">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.find">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.find</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.find</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `find`
 
@@ -30987,10 +33573,24 @@ The following example finds the index of an element in the typed array that is a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="#">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-%typedarray%.prototype.findindex</span></a></td></tr></tbody></table>
+<span class="small">#sec-%typedarray%.prototype.findindex</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `findIndex`
 
@@ -31058,10 +33658,24 @@ The following example uses the `fixed` method to change the formatting of a stri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.fixed">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.fixed</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.fixed</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fixed`
 
@@ -31141,10 +33755,24 @@ Flags in the `flags` property are sorted alphabetically (from left to right, e.g
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.flags">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.flags</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.flags</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `flags`
 
@@ -31301,10 +33929,24 @@ The flat method removes empty slots in arrays:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.flat">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.prototype.flat' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Array.prototype.flat' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `flat`
 
@@ -31451,10 +34093,24 @@ Notice, the output list length can be different from the input list length.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.flatmap">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.flatmap</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.flatmap</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `flatMap`
 
@@ -31642,10 +34298,24 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#table-49</span></a></td></tr></tbody></table>
+<span class="small">#table-49</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Float32Array`
 
@@ -31857,10 +34527,24 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#table-49</span></a></td></tr></tbody></table>
+<span class="small">#table-49</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Float64Array`
 
@@ -32013,10 +34697,24 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.floor">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.floor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.floor</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.floor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `floor`
 
@@ -32103,10 +34801,24 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontcolor">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.fontcolor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.fontcolor</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.fontcolor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fontcolor`
 
@@ -32187,10 +34899,24 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.fontsize">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.fontsize">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.fontsize</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.fontsize</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fontsize`
 
@@ -32430,10 +35156,24 @@ To make `finally` blocks of a sync generator to be always called use appropriate
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
+<span class="small">#sec-for-in-and-for-of-statements</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `for-await...of`
 
@@ -32709,10 +35449,24 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
+<span class="small">#sec-for-in-and-for-of-statements</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `for...in`
 
@@ -33030,10 +35784,24 @@ This loop iterates and logs **values** that `iterable`, as an [iterable object](
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
+<span class="small">#sec-for-in-and-for-of-statements</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `for...of`
 
@@ -33226,10 +35994,24 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-for-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-for-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-for-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `for`
 
@@ -33573,10 +36355,24 @@ The following example is only here for learning purpose. If you want to flatten 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.foreach</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.foreach</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `forEach`
 
@@ -33680,10 +36476,24 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.format">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.datetimeformat.prototype.format</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.datetimeformat.prototype.format</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `format`
 
@@ -33769,10 +36579,24 @@ This method receives two [`Date`](../../date)s and formats the date range in the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.datetimeformat.prototype.formatRange">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.datetimeformat.prototype.formatRange</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.datetimeformat.prototype.formatRange</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `formatRange`
 
@@ -33849,10 +36673,24 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatRangeToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `formatRangeToParts`
 
@@ -34088,10 +36926,24 @@ And `formatToParts`:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `formatToParts`
 
@@ -34330,10 +37182,24 @@ To make an object immutable, recursively freeze each property which is of type o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.freeze">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.freeze</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.freeze</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `freeze`
 
@@ -34503,10 +37369,26 @@ In ES2015, the class syntax allows sub-classing of both built-in and user-define
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th><th>Initial publication</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Initial publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.from">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.from' in that specification.</span></a></td><td>ECMAScript 2015</td></tr></tbody></table>
+<span class="small">The definition of 'Array.from' in that specification.</span>
+</a>
+</td>
+<td>ECMAScript 2015</td>
+</tr>
+</tbody>
+</table>
 
 `from`
 
@@ -34715,7 +37597,8 @@ Because `fromCharCode()` is a static method of [`String`](../string), you always
 
 ### Returning supplementary characters
 
-In UTF-16, the most common characters can be represented by a single 16-bit value (i.e. a code unit). However, this set of characters, known as the Base Multilingual Plane (BMP), is only <sup>1</sup>/<sub>17</sub><sup>th</sup> of the total addressable Unicode code points. The remaining code points, in the range of `65536` (`0x010000`) to `1114111` (`0x10FFFF`) are known as supplementary characters. In UTF-16, supplementary characters are represented by two 16-bit code units, known as surrogates, that were reserved for this purpose. A valid combination of two surrogates used to represent a supplementary character is known as a surrogate pair.
+In UTF-16, the most common characters can be represented by a single 16-bit value (i.e. a code unit). However, this set of characters, known as the Base Multilingual Plane (BMP), is only <sup>1</sup>/<sub>17</sub>
+<sup>th</sup> of the total addressable Unicode code points. The remaining code points, in the range of `65536` (`0x010000`) to `1114111` (`0x10FFFF`) are known as supplementary characters. In UTF-16, supplementary characters are represented by two 16-bit code units, known as surrogates, that were reserved for this purpose. A valid combination of two surrogates used to represent a supplementary character is known as a surrogate pair.
 
 Because `fromCharCode()` only works with 16-bit values (same as the `\u` escape sequence), a surrogate pair is required in order to return a supplementary character. For example, both `String.fromCharCode(0xD83C, 0xDF03)` and `\uD83C\uDF03` return code point `U+1F303` "Night with Stars".
 
@@ -34741,10 +37624,24 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.fromcharcode">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.fromCharCode' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.fromCharCode' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fromCharCode`
 
@@ -34889,10 +37786,24 @@ Invalid input:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.fromcodepoint">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.fromcodepoint</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.fromcodepoint</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fromCodePoint`
 
@@ -34988,10 +37899,24 @@ With `Object.fromEntries`, its reverse method [`Object.entries()`](entries), and
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.fromentries">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.fromentries</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.fromentries</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fromEntries`
 
@@ -35112,10 +38037,24 @@ Supporting older browsers is slower, but also possible:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.fround">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.fround</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.fround</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `fround`
 
@@ -35344,10 +38283,24 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-generator-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-generator-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-generator-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `function*`
 
@@ -35582,10 +38535,24 @@ An anonymous function is created and called:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `function`
 
@@ -36118,10 +39085,24 @@ Note that in the `if` test, a reference to `noFunc` is used—there are no brack
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Functions`
 
@@ -36434,10 +39415,24 @@ With a generator function, values are not evaluated until they are needed. There
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-generator-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-generator-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-generator-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Generator`
 
@@ -36599,10 +39594,24 @@ Invoking the `GeneratorFunction` constructor as a function (without using the `n
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-generatorfunction-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-generatorfunction-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-generatorfunction-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `GeneratorFunction`
 
@@ -36764,10 +39773,24 @@ When using `get` the property will be defined on the instance's prototype, while
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Method definitions' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Method definitions' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `get`
 
@@ -36872,10 +39895,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbigint64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbigint64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getbigint64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getbigint64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getBigInt64`
 
@@ -36951,10 +39988,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getbiguint64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getbiguint64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getbiguint64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getBigUint64`
 
@@ -37023,10 +40074,24 @@ An array containing the canonical locale names.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.getcanonicallocales">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.getcanonicallocales</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.getcanonicallocales</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getCanonicalLocales`
 
@@ -37087,10 +40152,24 @@ The second statement below assigns the value 25 to the variable `day`, based on 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getdate">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getdate</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getdate</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getDate`
 
@@ -37159,10 +40238,24 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getday">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Date.prototype.getDay' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Date.prototype.getDay' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getDay`
 
@@ -37238,10 +40331,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getfloat32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getfloat32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getFloat32`
 
@@ -37316,10 +40423,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getfloat64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getfloat64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getfloat64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getFloat64`
 
@@ -37383,10 +40504,24 @@ The following example assigns the four-digit value of the current year to the va
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getfullyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getfullyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getfullyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getFullYear`
 
@@ -37447,10 +40582,24 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.gethours">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.gethours</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.gethours</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getHours`
 
@@ -37525,10 +40674,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint16">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint16">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getint16</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getint16</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getInt16`
 
@@ -37603,10 +40766,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getint32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getint32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getInt32`
 
@@ -37677,10 +40854,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getint8">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getint8</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getint8</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getInt8`
 
@@ -37738,10 +40929,24 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getmilliseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getmilliseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getmilliseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getMilliseconds`
 
@@ -37801,10 +41006,24 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getminutes">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getminutes">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getminutes</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getminutes</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getMinutes`
 
@@ -37872,10 +41091,24 @@ The second statement below assigns the value 11 to the variable `month`, based o
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getmonth">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getmonth</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getmonth</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getMonth`
 
@@ -38018,10 +41251,24 @@ In ES5, if the first argument to this method is not an object (a primitive), the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.getownpropertydescriptor</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.getownpropertydescriptor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getOwnPropertyDescriptor`
 
@@ -38132,10 +41379,24 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.getownpropertydescriptors">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getOwnPropertyDescriptors`
 
@@ -38281,10 +41542,24 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.getownpropertynames">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.getownpropertynames</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.getownpropertynames</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getOwnPropertyNames`
 
@@ -38367,10 +41642,24 @@ As all objects have no own symbol properties initially, `Object.getOwnPropertySy
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.getownpropertysymbols">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.getownpropertysymbols">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.getownpropertysymbols</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.getownpropertysymbols</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getOwnPropertySymbols`
 
@@ -38502,10 +41791,24 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span></a></td></tr></tbody></table>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getPrototypeOf`
 
@@ -38569,10 +41872,24 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getSeconds`
 
@@ -38749,10 +42066,24 @@ Subtracting two subsequent `getTime()` calls on newly generated [`Date`](../date
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettime">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.gettime">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.gettime</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.gettime</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getTime`
 
@@ -38808,7 +42139,24 @@ The difference, in minutes, between date, as evaluated in the UTC time zone, and
 
 The number of minutes returned by `getTimezoneOffset()` is positive if the local time zone is behind UTC, and negative if the local time zone is ahead of UTC. For example, for UTC+10, `-600` will be returned.
 
-<table><thead><tr class="header"><th>Current time zone</th><th>UTC-8</th><th>UTC</th><th>UTC+3</th></tr></thead><tbody><tr class="odd"><td>Return Value</td><td>480</td><td>0</td><td>-180</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Current time zone</th>
+<th>UTC-8</th>
+<th>UTC</th>
+<th>UTC+3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Return Value</td>
+<td>480</td>
+<td>0</td>
+<td>-180</td>
+</tr>
+</tbody>
+</table>
 
 ### Varied results in Daylight Saving Time (DST) time zones
 
@@ -38835,10 +42183,24 @@ In a time zone that doesn't annually shift in and out of Daylight Saving Time (D
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.gettimezoneoffset">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.gettimezoneoffset</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.gettimezoneoffset</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getTimezoneOffset`
 
@@ -38912,10 +42274,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint16">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getuint16</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getuint16</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUint16`
 
@@ -38990,10 +42366,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getuint32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getuint32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUint32`
 
@@ -39064,10 +42454,24 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint8">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.getuint8">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.getuint8</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.getuint8</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUint8`
 
@@ -39125,10 +42529,24 @@ The following example assigns the day of month of the current date to the variab
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcdate">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcdate">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcdate</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcdate</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCDate`
 
@@ -39187,10 +42605,24 @@ The following example assigns the weekday portion of the current date to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcday">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcday">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcday</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcday</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCDay`
 
@@ -39253,10 +42685,24 @@ The following example assigns the four-digit value of the current year to the va
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcfullyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcfullyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcfullyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcfullyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCFullYear`
 
@@ -39314,10 +42760,24 @@ The following example assigns the hours portion of the current time to the varia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutchours">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutchours</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutchours</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCHours`
 
@@ -39377,10 +42837,24 @@ The following example assigns the milliseconds portion of the current time to th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcmilliseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcmilliseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCMilliseconds`
 
@@ -39438,10 +42912,24 @@ The following example assigns the minutes portion of the current time to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcminutes">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcminutes">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcminutes</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcminutes</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCMinutes`
 
@@ -39499,10 +42987,24 @@ The following example assigns the month portion of the current date to the varia
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmonth">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcmonth">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcmonth</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcmonth</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCMonth`
 
@@ -39560,10 +43062,24 @@ The following example assigns the seconds portion of the current time to the var
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getutcseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getutcseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getutcseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getutcseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getUTCSeconds`
 
@@ -39664,10 +43180,24 @@ The third statement assigns the value 95 to the variable `year`, representing th
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.getyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.getyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.getyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `getYear`
 
@@ -39757,10 +43287,24 @@ The value of the global is then changed, first to `42` using the `Global.value` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-global-global">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-global-global</span></a></td></tr></tbody></table>
+<span class="small">#dom-global-global</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Global`
 
@@ -39859,10 +43403,24 @@ With `globalThis` available, the additional search for the global across environ
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-globalthis">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-globalthis</span></a></td></tr></tbody></table>
+<span class="small">#sec-globalthis</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `globalThis`
 
@@ -39958,10 +43516,24 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-relational-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Greater_than`
 
@@ -40060,10 +43632,24 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-relational-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Greater_than_or_equal`
 
@@ -40137,10 +43723,24 @@ Overriding multiplication and division first, then addition and subtraction to e
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-grouping-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-grouping-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-grouping-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-grouping-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Grouping`
 
@@ -40214,10 +43814,24 @@ Note the return value of `grow()` here is the previous number of WebAssembly pag
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-memory-grow">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-memory-grow</span></a></td></tr></tbody></table>
+<span class="small">#dom-memory-grow</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `grow`
 
@@ -40335,10 +43949,24 @@ The following code violates an invariant.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span></a></td></tr></tbody></table>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `has`
 
@@ -40479,10 +44107,24 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.hasIndices">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.hasIndices</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.hasIndices</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -40607,10 +44249,24 @@ Just in the same manner at which you can check if an object is an instance of a 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.hasinstance">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.hasinstance</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.hasinstance</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `hasInstance`
 
@@ -40741,10 +44397,24 @@ Note that in the last case there are no newly created objects.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.prototype.hasownproperty">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.prototype.hasownproperty</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.prototype.hasownproperty</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `hasOwnProperty`
 
@@ -40794,7 +44464,40 @@ There are 2 main types of time keeping conventions (clocks) used around the worl
 
 ### Valid hour cycle types
 
-<table><thead><tr class="header"><th>Hour cycle type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>h12</code></td><td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td></tr><tr class="even"><td><code>h23</code></td><td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td></tr><tr class="odd"><td><code>h11</code></td><td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td></tr><tr class="even"><td><code>h24</code></td><td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Hour cycle type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>h12</code>
+</td>
+<td>Hour system using 1–12; corresponds to 'h' in patterns. The 12 hour clock, with midnight starting at 12:00 am.</td>
+</tr>
+<tr class="even">
+<td>
+<code>h23</code>
+</td>
+<td>Hour system using 0–23; corresponds to 'H' in patterns. The 24 hour clock, with midnight starting at 0:00.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>h11</code>
+</td>
+<td>Hour system using 0–11; corresponds to 'K' in patterns. The 12 hour clock, with midnight starting at 0:00 am.</td>
+</tr>
+<tr class="even">
+<td>
+<code>h24</code>
+</td>
+<td>Hour system using 1–24; corresponds to 'k' in pattern. The 24 hour clock, with midnight starting at 24:00.</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -40816,10 +44519,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.hourCycle</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.hourCycle</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `hourCycle`
 
@@ -40939,10 +44656,24 @@ A polyfill that avoids underflows and overflows:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.hypot">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.hypot</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.hypot</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `hypot`
 
@@ -41125,10 +44856,24 @@ If you need to use an assignment in a conditional expression, a common practice 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-if-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-if-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-if-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `if...else`
 
@@ -41200,10 +44945,24 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.ignorecase">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.ignorecase">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.ignorecase</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.ignorecase</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `ignoreCase`
 
@@ -41311,7 +45070,13 @@ This should work:
     42 - 13;
     var foo = 'bar';
 
-<span class="message-body-wrapper"><span class="message-flex-body"><span class="devtools-monospace message-body"><span class="objectBox objectBox-string">Some editors and IDEs will notify you or at least use a slightly different highlighting for it, but not all. When something like this happens to your code and you're not able to find the source of the problem, it's often best to just delete the problematic line and retype it.</span></span></span></span>
+<span class="message-body-wrapper">
+<span class="message-flex-body">
+<span class="devtools-monospace message-body">
+<span class="objectBox objectBox-string">Some editors and IDEs will notify you or at least use a slightly different highlighting for it, but not all. When something like this happens to your code and you're not able to find the source of the problem, it's often best to just delete the problematic line and retype it.</span>
+</span>
+</span>
+</span>
 
 ### Forgotten characters
 
@@ -41537,10 +45302,24 @@ This example shows how to load functionality on to a page based on a user action
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-imports">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-imports</span></a></td></tr></tbody></table>
+<span class="small">#sec-imports</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `import`
 
@@ -41670,7 +45449,8 @@ The `import.meta` object is created by the ECMAScript implementation, with a [`n
 
 Given a module `my-module.js`
 
-    <script type="module" src="my-module.js"></script>
+    <script type="module" src="my-module.js">
+</script>
 
 you can access meta information about the module using the `import.meta` object.
 
@@ -41705,13 +45485,33 @@ Such file-specific argument passing may be complementary to that used in the app
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-ImportMeta">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-ImportMeta</span></a></td></tr><tr class="even"><td><a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)
+<span class="small">#prod-ImportMeta</span>
+</a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties">HTML Standard (HTML)
 <br/>
 
-<span class="small">#hostgetimportmetaproperties</span></a></td></tr></tbody></table>
+<span class="small">#hostgetimportmetaproperties</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `import.meta`
 
@@ -41787,10 +45587,24 @@ The output looks like this:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-module-imports">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-module-imports</span></a></td></tr></tbody></table>
+<span class="small">#dom-module-imports</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `imports`
 
@@ -41902,10 +45716,24 @@ However, the following function is more performant because it is likely that bro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.imul">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.imul</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.imul</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `imul`
 
@@ -42030,10 +45858,24 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-relational-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `in`
 
@@ -42212,10 +46054,24 @@ The example below illustrates `includes()` method called on the function's [argu
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.includes">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.includes">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.includes</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.includes</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `includes`
 
@@ -42287,10 +46143,24 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-postfix-increment-operator">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Increment operator' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Increment operator' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Increment`
 
@@ -42798,10 +46668,24 @@ However, if you are more interested in all the little technical bits defined by 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.indexof">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.indexof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.indexof</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.indexof</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `indexOf`
 
@@ -42899,10 +46783,24 @@ To prevent this, and require that different types are considered to be different
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-equality-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Inequality`
 
@@ -42981,10 +46879,24 @@ As defined by the ECMAScript 5 specification, `Infinity` is read-only (implement
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-infinity">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-value-properties-of-the-global-object-infinity</span></a></td></tr></tbody></table>
+<span class="small">#sec-value-properties-of-the-global-object-infinity</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Infinity`
 
@@ -43073,10 +46985,24 @@ This also demonstrates how the `exports` property is used to access exported fun
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#instances">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#instances</span></a></td></tr></tbody></table>
+<span class="small">#instances</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Instance`
 
@@ -43324,10 +47250,24 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Relational Operators' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Relational Operators' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `instanceof`
 
@@ -43479,10 +47419,24 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#dom-webassembly-instantiate</span></a></td></tr></tbody></table>
+<span class="small">#dom-webassembly-instantiate</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `instantiate`
 
@@ -43569,10 +47523,24 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/web-api/#dom-webassembly-instantiatestreaming">WebAssembly Web API (WebAssembly Web API) 
 <br/>
 
-<span class="small">#dom-webassembly-instantiatestreaming</span></a></td></tr></tbody></table>
+<span class="small">#dom-webassembly-instantiatestreaming</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `instantiateStreaming`
 
@@ -43760,10 +47728,24 @@ Returns a new **array iterator object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#table-49">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#table-49</span></a></td></tr></tbody></table>
+<span class="small">#table-49</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Int16Array`
 
@@ -43885,10 +47867,24 @@ When called with a `buffer`, and optionally a `byteOffset` and a `length` argume
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-typedarray-constructors">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-typedarray-constructors</span></a></td></tr></tbody></table>
+<span class="small">#sec-typedarray-constructors</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Int32Array`
 
@@ -44162,10 +48158,24 @@ Returns a new _array iterator_ object that contains the values for each index in
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#table-49">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'TypedArray constructors' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'TypedArray constructors' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Int8Array`
 
@@ -44471,10 +48481,24 @@ You can use `Intl` to format dates and numbers in a form that's conventional for
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#intl-object">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#intl-object</span></a></td></tr></tbody></table>
+<span class="small">#intl-object</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Collator`
 
@@ -45289,10 +49313,24 @@ This is also _not_ the same as being equal according to the [`===`](https://deve
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.is">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.is' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.is' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `is`
 
@@ -45509,10 +49547,24 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.isarray">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.isarray</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.isarray</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isArray`
 
@@ -45614,10 +49666,24 @@ For array-like objects, the default is to not spread. `Symbol.isConcatSpreadable
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.isconcatspreadable">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.isconcatspreadable">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.isconcatspreadable</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.isconcatspreadable</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isConcatSpreadable`
 
@@ -45712,10 +49778,24 @@ If the `target` argument to this method is not an object (a primitive), then it 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-reflect.isextensible">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-reflect.isextensible</span></a></td></tr></tbody></table>
+<span class="small">#sec-reflect.isextensible</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isExtensible`
 
@@ -45797,10 +49877,24 @@ In comparison to the global [`isFinite()`](../isfinite) function, this method do
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.isfinite">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.isfinite</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.isfinite</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isFinite`
 
@@ -45956,10 +50050,24 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.isfrozen">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.isfrozen">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.isFrozen' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.isFrozen' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isFrozen`
 
@@ -46054,10 +50162,24 @@ If the target value is an integer, return `true`, otherwise return `false`. If t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.isinteger">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.isinteger</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.isinteger</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isInteger`
 
@@ -46125,10 +50247,24 @@ A [`Boolean`](../boolean) indicating whether the operation is lock free.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.islockfree">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.islockfree</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.islockfree</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isLockFree`
 
@@ -46266,10 +50402,24 @@ You can use this, for example, to test whether an argument to a function is arit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-isnan-number">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'isNaN' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'isNaN' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isNaN`
 
@@ -46372,10 +50522,24 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.prototype.isprototypeof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.prototype.isprototypeof</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.prototype.isprototypeof</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isPrototypeOf`
 
@@ -46463,10 +50627,24 @@ A [`Boolean`](../boolean) indicating whether or not the given value is a number 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.issafeinteger">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.issafeinteger</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.issafeinteger</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isSafeInteger`
 
@@ -46586,10 +50764,24 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.issealed">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.isSealed' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.isSealed' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isSealed`
 
@@ -46667,10 +50859,24 @@ The value to be checked.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-arraybuffer.isview">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-arraybuffer.isview">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-arraybuffer.isview</span></a></td></tr></tbody></table>
+<span class="small">#sec-arraybuffer.isview</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `isView`
 
@@ -46738,10 +50944,24 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.italics">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.italics">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.italics</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.italics</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `italics`
 
@@ -46791,7 +51011,22 @@ There are two protocols: The [iterable protocol](#the_iterable_protocol) and the
 
 In order to be **iterable**, an object must implement the `@@iterator` method, meaning that the object (or one of the objects up its [prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)) must have a property with a `@@iterator` key which is available via constant [`Symbol.iterator`](global_objects/symbol/iterator):
 
-<table><thead><tr class="header"><th>Property</th><th>Value</th></tr></thead><tbody><tr class="odd"><td><code>[Symbol.iterator]</code></td><td>A zero-argument function that returns an object, conforming to the <a href="#the_iterator_protocol">iterator protocol</a>.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>[Symbol.iterator]</code>
+</td>
+<td>A zero-argument function that returns an object, conforming to the <a href="#the_iterator_protocol">iterator protocol</a>.</td>
+</tr>
+</tbody>
+</table>
 
 Whenever an object needs to be iterated (such as at the beginning of a [`for...of`](statements/for...of) loop), its `@@iterator` method is called with no arguments, and the returned **iterator** is used to obtain the values to be iterated.
 
@@ -46805,7 +51040,42 @@ This function can be an ordinary function, or it can be a generator function, so
 
 An object is an iterator when it implements a `next()` method with the following semantics:
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Property</th><th>Value</th></tr></thead><tbody><tr class="odd"><td><code>next()</code></td><td><p>A zero-argument function that returns an object with at least the following two properties:</p><dl><dt> <code>done</code> (boolean)</dt><dd><p>Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)</p><p>Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.</p></dd><dt><code>value</code></dt><dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.</dd></dl><p>The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a <a href="global_objects/typeerror"><code>TypeError</code></a> (<code>"iterator.next() returned a non-object value"</code>) will be thrown.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>next()</code>
+</td>
+<td>
+<p>A zero-argument function that returns an object with at least the following two properties:</p>
+<dl>
+<dt> <code>done</code> (boolean)</dt>
+<dd>
+<p>Has the value <code>false</code> if the iterator was able to produce the next value in the sequence. (This is equivalent to not specifying the <code>done</code> property altogether.)</p>
+<p>Has the value <code>true</code> if the iterator has completed its sequence. In this case, <code>value</code> optionally specifies the return value of the iterator.</p>
+</dd>
+<dt>
+<code>value</code>
+</dt>
+<dd>Any JavaScript value returned by the iterator. Can be omitted when <code>done</code> is <code>true</code>.</dd>
+</dl>
+<p>The <code>next()</code> method must always return an object with appropriate properties including <code>done</code> and <code>value</code>. If a non-object value gets returned (such as <code>false</code> or <code>undefined</code>), a <a href="global_objects/typeerror">
+<code>TypeError</code>
+</a> (<code>"iterator.next() returned a non-object value"</code>) will be thrown.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 **Note:** It is not possible to know reflectively whether a particular object implements the iterator protocol. However, it is easy to create an object that satisfies _both_ the iterator and iterable protocols (as shown in the example below).
 
@@ -47165,10 +51435,24 @@ If an iterable's `@@iterator` method does not return an iterator object, then it
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.iterator">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Symbol.iterator' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Symbol.iterator' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `iterator`
 
@@ -47258,10 +51542,24 @@ The following example joins array-like object (`arguments`), by calling [`Functi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.join">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.join">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.prototype.join' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Array.prototype.join' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `join`
 
@@ -47409,10 +51707,24 @@ Return a JSON string corresponding to the specified value, optionally including 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-json-object">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-json-object</span></a></td></tr></tbody></table>
+<span class="small">#sec-json-object</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `JSON`
 
@@ -47661,10 +51973,24 @@ A string representing the key for the given symbol if one is found on the global
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.keyfor">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.keyfor</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.keyfor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `keyFor`
 
@@ -47812,10 +52138,24 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.keys">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.keys</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.keys</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `keys`
 
@@ -47998,10 +52338,24 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-labelled-statements">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Labelled statement' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Labelled statement' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `label`
 
@@ -48066,10 +52420,24 @@ While the language subtag must be specified, the [`Locale`](../locale) construct
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.language</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.language</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `language`
 
@@ -48155,10 +52523,24 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-properties-of-regexp-instances">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-properties-of-regexp-instances</span></a></td></tr></tbody></table>
+<span class="small">#sec-properties-of-regexp-instances</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `lastIndex`
 
@@ -48303,10 +52685,24 @@ Again, note that this implementation aims for absolute compatibility with `lastI
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.lastindexof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.lastindexof</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.lastindexof</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `lastIndexOf`
 
@@ -48372,10 +52768,24 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-left-shift-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-left-shift-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-left-shift-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-left-shift-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Left_shift`
 
@@ -48433,10 +52843,24 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Left_shift_assignment`
 
@@ -48561,10 +52985,24 @@ The following example shortens the array `numbers` to a length of 3 if the curre
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-properties-of-array-instances-length">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-properties-of-array-instances-length">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-properties-of-array-instances-length</span></a></td></tr></tbody></table>
+<span class="small">#sec-properties-of-array-instances-length</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `length`
 
@@ -48671,10 +53109,24 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-relational-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-relational-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Less_than`
 
@@ -48773,10 +53225,24 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-relational-operators">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Relational operators' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Relational operators' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Less_than_or_equal`
 
@@ -49053,10 +53519,24 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
+<span class="small">#sec-let-and-const-declarations</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `let`
 
@@ -49140,13 +53620,109 @@ This page describes JavaScript's lexical grammar. The source text of ECMAScript 
 
 Control characters have no visual representation but are used to control the interpretation of the text.
 
-<table><caption>Unicode format-control characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>U+200C</code></td><td>Zero width non-joiner</td><td>&lt;ZWNJ&gt;</td><td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td></tr><tr class="even"><td><code>U+200D</code></td><td>Zero width joiner</td><td>&lt;ZWJ&gt;</td><td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td></tr><tr class="odd"><td><code>U+FEFF</code></td><td>Byte order mark</td><td>&lt;BOM&gt;</td><td>Used at the start of the script to mark it as Unicode and the text's byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td></tr></tbody></table>
+<table>
+<caption>Unicode format-control characters</caption>
+<thead>
+<tr class="header">
+<th>Code point</th>
+<th>Name</th>
+<th>Abbreviation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>U+200C</code>
+</td>
+<td>Zero width non-joiner</td>
+<td>&lt;ZWNJ&gt;</td>
+<td>Placed between characters to prevent being connected into ligatures in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">Wikipedia</a>).</td>
+</tr>
+<tr class="even">
+<td>
+<code>U+200D</code>
+</td>
+<td>Zero width joiner</td>
+<td>&lt;ZWJ&gt;</td>
+<td>Placed between characters that would not normally be connected in order to cause the characters to be rendered using their connected form in certain languages (<a href="https://en.wikipedia.org/wiki/Zero-width_joiner">Wikipedia</a>).</td>
+</tr>
+<tr class="odd">
+<td>
+<code>U+FEFF</code>
+</td>
+<td>Byte order mark</td>
+<td>&lt;BOM&gt;</td>
+<td>Used at the start of the script to mark it as Unicode and the text's byte order (<a href="https://en.wikipedia.org/wiki/Byte_order_mark">Wikipedia</a>).</td>
+</tr>
+</tbody>
+</table>
 
 ## White space
 
 [White space](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace) characters improve the readability of source text and separate tokens from each other. These characters are usually unnecessary for the functionality of the code. [Minification tools](https://en.wikipedia.org/wiki/Minification_%28programming%29) are often used to remove whitespace in order to reduce the amount of data that needs to be transferred.
 
-<table><caption>White space characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+0009</td><td>Character tabulation</td><td>&lt;HT&gt;</td><td>Horizontal tabulation</td><td>\t</td></tr><tr class="even"><td>U+000B</td><td>Line tabulation</td><td>&lt;VT&gt;</td><td>Vertical tabulation</td><td>\v</td></tr><tr class="odd"><td>U+000C</td><td>Form feed</td><td>&lt;FF&gt;</td><td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td><td>\f</td></tr><tr class="even"><td>U+0020</td><td>Space</td><td>&lt;SP&gt;</td><td>Normal space</td><td></td></tr><tr class="odd"><td>U+00A0</td><td>No-break space</td><td>&lt;NBSP&gt;</td><td>Normal space, but no point at which a line may break</td><td></td></tr><tr class="even"><td>Others</td><td>Other Unicode space characters</td><td>&lt;USP&gt;</td><td><a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a></td><td></td></tr></tbody></table>
+<table>
+<caption>White space characters</caption>
+<thead>
+<tr class="header">
+<th>Code point</th>
+<th>Name</th>
+<th>Abbreviation</th>
+<th>Description</th>
+<th>Escape sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>U+0009</td>
+<td>Character tabulation</td>
+<td>&lt;HT&gt;</td>
+<td>Horizontal tabulation</td>
+<td>\t</td>
+</tr>
+<tr class="even">
+<td>U+000B</td>
+<td>Line tabulation</td>
+<td>&lt;VT&gt;</td>
+<td>Vertical tabulation</td>
+<td>\v</td>
+</tr>
+<tr class="odd">
+<td>U+000C</td>
+<td>Form feed</td>
+<td>&lt;FF&gt;</td>
+<td>Page breaking control character (<a href="https://en.wikipedia.org/wiki/Page_break#Form_feed">Wikipedia</a>).</td>
+<td>\f</td>
+</tr>
+<tr class="even">
+<td>U+0020</td>
+<td>Space</td>
+<td>&lt;SP&gt;</td>
+<td>Normal space</td>
+<td>
+</td>
+</tr>
+<tr class="odd">
+<td>U+00A0</td>
+<td>No-break space</td>
+<td>&lt;NBSP&gt;</td>
+<td>Normal space, but no point at which a line may break</td>
+<td>
+</td>
+</tr>
+<tr class="even">
+<td>Others</td>
+<td>Other Unicode space characters</td>
+<td>&lt;USP&gt;</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Space_%28punctuation%29#Spaces_in_Unicode">Spaces in Unicode on Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Line terminators
 
@@ -49154,7 +53730,54 @@ In addition to [white space](https://developer.mozilla.org/en-US/docs/Glossary/W
 
 Only the following Unicode code points are treated as line terminators in ECMAScript, other line breaking characters are treated as white space (for example, Next Line, NEL, U+0085 is considered as white space).
 
-<table><caption>Line terminator characters</caption><thead><tr class="header"><th>Code point</th><th>Name</th><th>Abbreviation</th><th>Description</th><th>Escape sequence</th></tr></thead><tbody><tr class="odd"><td>U+000A</td><td>Line Feed</td><td>&lt;LF&gt;</td><td>New line character in UNIX systems.</td><td>\n</td></tr><tr class="even"><td>U+000D</td><td>Carriage Return</td><td>&lt;CR&gt;</td><td>New line character in Commodore and early Mac systems.</td><td>\r</td></tr><tr class="odd"><td>U+2028</td><td>Line Separator</td><td>&lt;LS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr><tr class="even"><td>U+2029</td><td>Paragraph Separator</td><td>&lt;PS&gt;</td><td><a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a></td><td></td></tr></tbody></table>
+<table>
+<caption>Line terminator characters</caption>
+<thead>
+<tr class="header">
+<th>Code point</th>
+<th>Name</th>
+<th>Abbreviation</th>
+<th>Description</th>
+<th>Escape sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>U+000A</td>
+<td>Line Feed</td>
+<td>&lt;LF&gt;</td>
+<td>New line character in UNIX systems.</td>
+<td>\n</td>
+</tr>
+<tr class="even">
+<td>U+000D</td>
+<td>Carriage Return</td>
+<td>&lt;CR&gt;</td>
+<td>New line character in Commodore and early Mac systems.</td>
+<td>\r</td>
+</tr>
+<tr class="odd">
+<td>U+2028</td>
+<td>Line Separator</td>
+<td>&lt;LS&gt;</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+<tr class="even">
+<td>U+2029</td>
+<td>Paragraph Separator</td>
+<td>&lt;PS&gt;</td>
+<td>
+<a href="https://en.wikipedia.org/wiki/Newline">Wikipedia</a>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Comments
 
@@ -49587,10 +54210,24 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-ecmascript-language-lexical-grammar">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Lexical Grammar' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Lexical Grammar' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `array_literals`
 
@@ -50150,10 +54787,24 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.link">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.link' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.link' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `link`
 
@@ -50246,13 +54897,33 @@ The following snippet creates a new `LinkError` instance, and logs its details t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#exceptiondef-linkerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
+<span class="small">#exceptiondef-linkerror</span>
+</a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `LinkError`
 
@@ -50382,10 +55053,24 @@ The following example shows how to create a List formatter returning formatted p
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#listformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#listformat-objects</span></a></td></tr></tbody></table>
+<span class="small">#listformat-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `ListFormat`
 
@@ -50587,10 +55272,24 @@ The following function returns the natural log of 10:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln10">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.ln10">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.ln10</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.ln10</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `LN10`
 
@@ -50666,10 +55365,24 @@ The following function returns the natural log of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.ln2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.ln2</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.ln2</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `LN2`
 
@@ -50744,10 +55457,24 @@ The value at the given position (`typedArray[index]`).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.load">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.load">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.load</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.load</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `load`
 
@@ -50885,10 +55612,24 @@ The constructor also takes an optional configuration object argument, which can 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#locale-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#locale-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#locale-objects</span></a></td></tr></tbody></table>
+<span class="small">#locale-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Locale`
 
@@ -51396,13 +56137,33 @@ The results provided by `localeCompare()` can be customized using the `options` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.localecompare">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.localecompare">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.localecompare</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma402/#sup-String.prototype.localeCompare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
+<span class="small">#sec-string.prototype.localecompare</span>
+</a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://tc39.es/ecma402/#sup-String.prototype.localeCompare">ECMAScript Internationalization API Specification (ECMAScript Internationalization API)
 <br/>
 
-<span class="small">#sup-String.prototype.localeCompare</span></a></td></tr></tbody></table>
+<span class="small">#sup-String.prototype.localeCompare</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `localeCompare`
 
@@ -51542,10 +56303,24 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `log`
 
@@ -51632,10 +56407,24 @@ This can be emulated with the following function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log10">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log10</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log10</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `log10`
 
@@ -51713,10 +56502,24 @@ The following function returns the base 10 logarithm of e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log10e">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log10e">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log10e</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log10e</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `LOG10E`
 
@@ -51794,10 +56597,24 @@ Because `log1p()` is a static method of `Math`, you always use it as `Math.log1p
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log1p">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log1p">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log1p</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log1p</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `log1p`
 
@@ -51886,10 +56703,24 @@ This Polyfill emulates the `Math.log2` function. Note that it returns imprecise 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log2</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log2</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `log2`
 
@@ -51967,10 +56798,24 @@ The following function returns the base 2 logarithm of e:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.log2e">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.log2e">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.log2e</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.log2e</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `LOG2E`
 
@@ -52106,10 +56951,24 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalANDExpression">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-LogicalANDExpression">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-LogicalANDExpression</span></a></td></tr></tbody></table>
+<span class="small">#prod-LogicalANDExpression</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Logical_AND`
 
@@ -52207,10 +57066,24 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-logical-not-operator">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Logical NOT expression' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Logical NOT expression' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Logical_NOT`
 
@@ -52349,10 +57222,24 @@ is always equal to:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-LogicalORExpression">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-LogicalORExpression">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Logical OR expression' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Logical OR expression' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Logical_OR`
 
@@ -52435,10 +57322,24 @@ Note: Pay attention to the value returned by the API you're checking against. If
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Logical_OR_assignment`
 
@@ -52609,7 +57510,102 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 However, there are important differences that make `Map` preferable in certain cases:
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th></th><th>Map</th><th>Object</th></tr></thead><tbody><tr class="odd"><td>Accidental Keys</td><td>A <code>Map</code> does not contain any keys by default. It only contains what is explicitly put into it.</td><td><p>An <code>Object</code> has a prototype, so it contains default keys that could collide with your own keys if you're not careful.</p><div class="notecard note"><p><strong>Note:</strong> As of ES5, this can be bypassed by using <a href="object/create"><code>Object.create(null)</code></a>, but this is seldom done.</p></div></td></tr><tr class="even"><td>Key Types</td><td>A <code>Map</code>'s keys can be any value (including functions, objects, or any primitive).</td><td>The keys of an <code>Object</code> must be either a <a href="string"><code>String</code></a> or a <a href="symbol"><code>Symbol</code></a>.</td></tr><tr class="odd"><td>Key Order</td><td><p>The keys in <code>Map</code> are ordered in a simple, straightforward way: A <code>Map</code> object iterates entries, keys, and values in the order of entry insertion.</p></td><td><p>Although the keys of an ordinary <code>Object</code> are ordered now, this was not always the case, and the order is complex. As a result, it's best not to rely on property order.</p><p>The order was first defined for own properties only in ECMAScript 2015; ECMAScript 2020 defines order for inherited properties as well. See the <a href="https://tc39.es/ecma262/#sec-ordinaryownpropertykeys">OrdinaryOwnPropertyKeys</a> and <a href="https://tc39.es/ecma262/#sec-enumerate-object-properties">EnumerateObjectProperties</a> abstract specification operations. But note that no single mechanism iterates <strong>all</strong> of an object's properties; the various mechanisms each include different subsets of properties. (<a href="../statements/for...in"><code>for-in</code></a> includes only enumerable string-keyed properties; <a href="object/keys"><code>Object.keys</code></a> includes only own, enumerable, string-keyed properties; <a href="object/getownpropertynames"><code>Object.getOwnPropertyNames</code></a> includes own, string-keyed properties even if non-enumerable; <a href="object/getownpropertysymbols"><code>Object.getOwnPropertySymbols</code></a> does the same for just <code>Symbol</code>-keyed properties, etc.)</p></td></tr><tr class="even"><td><p>Size</p></td><td>The number of items in a <code>Map</code> is easily retrieved from its <a href="map/size"><code>size</code></a> property.</td><td>The number of items in an <code>Object</code> must be determined manually.</td></tr><tr class="odd"><td>Iteration</td><td>A <code>Map</code> is an <a href="../iteration_protocols">iterable</a>, so it can be directly iterated.</td><td><p><code>Object</code> does not implement an <a href="../iteration_protocols#the_iterable_protocol">iteration protocol</a>, and so objects are not directly iterable using the JavaScript <a href="../statements/for...of">for...of</a> statement (by default).</p><div class="notecard note"><p><strong>Note:</strong></p><ul><li>An object can implement the iteration protocol, or you can get an iterable for an object using <a href="object/keys"><code>Object.keys</code></a> or <a href="object/entries"><code>Object.entries</code></a>.</li><li>The <a href="../statements/for...in">for...in</a> statement allows you to iterate over the <em>enumerable</em> properties of an object.</li></ul></div></td></tr><tr class="even"><td>Performance</td><td><p>Performs better in scenarios involving frequent additions and removals of key-value pairs.</p></td><td><p>Not optimized for frequent additions and removals of key-value pairs.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+</th>
+<th>Map</th>
+<th>Object</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accidental Keys</td>
+<td>A <code>Map</code> does not contain any keys by default. It only contains what is explicitly put into it.</td>
+<td>
+<p>An <code>Object</code> has a prototype, so it contains default keys that could collide with your own keys if you're not careful.</p>
+<div class="notecard note">
+<p>
+<strong>Note:</strong> As of ES5, this can be bypassed by using <a href="object/create">
+<code>Object.create(null)</code>
+</a>, but this is seldom done.</p>
+</div>
+</td>
+</tr>
+<tr class="even">
+<td>Key Types</td>
+<td>A <code>Map</code>'s keys can be any value (including functions, objects, or any primitive).</td>
+<td>The keys of an <code>Object</code> must be either a <a href="string">
+<code>String</code>
+</a> or a <a href="symbol">
+<code>Symbol</code>
+</a>.</td>
+</tr>
+<tr class="odd">
+<td>Key Order</td>
+<td>
+<p>The keys in <code>Map</code> are ordered in a simple, straightforward way: A <code>Map</code> object iterates entries, keys, and values in the order of entry insertion.</p>
+</td>
+<td>
+<p>Although the keys of an ordinary <code>Object</code> are ordered now, this was not always the case, and the order is complex. As a result, it's best not to rely on property order.</p>
+<p>The order was first defined for own properties only in ECMAScript 2015; ECMAScript 2020 defines order for inherited properties as well. See the <a href="https://tc39.es/ecma262/#sec-ordinaryownpropertykeys">OrdinaryOwnPropertyKeys</a> and <a href="https://tc39.es/ecma262/#sec-enumerate-object-properties">EnumerateObjectProperties</a> abstract specification operations. But note that no single mechanism iterates <strong>all</strong> of an object's properties; the various mechanisms each include different subsets of properties. (<a href="../statements/for...in">
+<code>for-in</code>
+</a> includes only enumerable string-keyed properties; <a href="object/keys">
+<code>Object.keys</code>
+</a> includes only own, enumerable, string-keyed properties; <a href="object/getownpropertynames">
+<code>Object.getOwnPropertyNames</code>
+</a> includes own, string-keyed properties even if non-enumerable; <a href="object/getownpropertysymbols">
+<code>Object.getOwnPropertySymbols</code>
+</a> does the same for just <code>Symbol</code>-keyed properties, etc.)</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>Size</p>
+</td>
+<td>The number of items in a <code>Map</code> is easily retrieved from its <a href="map/size">
+<code>size</code>
+</a> property.</td>
+<td>The number of items in an <code>Object</code> must be determined manually.</td>
+</tr>
+<tr class="odd">
+<td>Iteration</td>
+<td>A <code>Map</code> is an <a href="../iteration_protocols">iterable</a>, so it can be directly iterated.</td>
+<td>
+<p>
+<code>Object</code> does not implement an <a href="../iteration_protocols#the_iterable_protocol">iteration protocol</a>, and so objects are not directly iterable using the JavaScript <a href="../statements/for...of">for...of</a> statement (by default).</p>
+<div class="notecard note">
+<p>
+<strong>Note:</strong>
+</p>
+<ul>
+<li>An object can implement the iteration protocol, or you can get an iterable for an object using <a href="object/keys">
+<code>Object.keys</code>
+</a> or <a href="object/entries">
+<code>Object.entries</code>
+</a>.</li>
+<li>The <a href="../statements/for...in">for...in</a> statement allows you to iterate over the <em>enumerable</em> properties of an object.</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="even">
+<td>Performance</td>
+<td>
+<p>Performs better in scenarios involving frequent additions and removals of key-value pairs.</p>
+</td>
+<td>
+<p>Not optimized for frequent additions and removals of key-value pairs.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Setting object properties
 
@@ -52849,10 +57845,24 @@ Maps can be merged with Arrays, too:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-map-objects">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Map' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Map' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Map`
 
@@ -53422,10 +58432,24 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.match">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.match' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.match' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `match`
 
@@ -53560,10 +58584,24 @@ Using `matchAll`, you can access capture groups easily:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.matchall">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.matchall</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.matchall</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `matchAll`
 
@@ -53792,10 +58830,24 @@ This can be achieved with a combination of [`Math.random()`](math/random) and [`
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math-object">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Math' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Math' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `E`
 
@@ -54981,10 +60033,24 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.max">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.max</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.max</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `max`
 
@@ -55070,10 +60136,24 @@ This returns 2 because in floating points, the value is actually the decimal tra
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.max_safe_integer">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.max_safe_integer</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.max_safe_integer</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `MAX_SAFE_INTEGER`
 
@@ -55149,10 +60229,24 @@ The following code multiplies two numeric values. If the result is less than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.max_value">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.max_value</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.max_value</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `MAX_VALUE`
 
@@ -55224,10 +60318,24 @@ Sometimes, it is convenient to be able to identify the most likely locale langua
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.maximize</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.maximize</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `maximize`
 
@@ -55322,10 +60430,24 @@ This memory's `buffer` property will return a `SharedArrayBuffer`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#memories">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#memories</span></a></td></tr></tbody></table>
+<span class="small">#memories</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Memory`
 
@@ -55477,10 +60599,24 @@ By default, the `message` property is an empty string, but this behavior can be 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-error.prototype.message">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-error.prototype.message</span></a></td></tr></tbody></table>
+<span class="small">#sec-error.prototype.message</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `message`
 
@@ -55686,10 +60822,24 @@ The shorthand syntax also supports computed property names.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-method-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-method-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-method-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Method_definitions`
 
@@ -55858,10 +61008,24 @@ may be written as this
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.min">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.min</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.min</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `min`
 
@@ -55932,10 +61096,24 @@ Because `MIN_SAFE_INTEGER` is a static property of [`Number`](../number), you al
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.min_safe_integer">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.min_safe_integer</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.min_safe_integer</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `MIN_SAFE_INTEGER`
 
@@ -56011,10 +61189,24 @@ The following code divides two numeric values. If the result is greater than or 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.min_value">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.min_value</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.min_value</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `MIN_VALUE`
 
@@ -56086,10 +61278,24 @@ This method carries out the reverse of [`maximize()`](maximize), removing any la
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.minimize</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.minimize</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `minimize`
 
@@ -56750,10 +61956,24 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#modules">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#modules">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#modules</span></a></td></tr></tbody></table>
+<span class="small">#modules</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Module`
 
@@ -56992,10 +62212,24 @@ You cannot change this property directly.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.multiline">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.multiline">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.multiline</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.multiline</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `multiline`
 
@@ -57090,10 +62324,24 @@ The multiplication operator (`*`) produces the product of the operands.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-multiplicative-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `Multiplication`
 
@@ -57319,10 +62567,24 @@ If a [`Symbol`](../symbol) is used a function name and the symbol has a descript
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function-instances-name">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function-instances-name</span></a></td></tr></tbody></table>
+<span class="small">#sec-function-instances-name</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `name`
 
@@ -57473,10 +62735,24 @@ Additionally, some array methods cannot find `NaN`, while others can.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-value-properties-of-the-global-object-nan">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-value-properties-of-the-global-object-nan</span></a></td></tr></tbody></table>
+<span class="small">#sec-value-properties-of-the-global-object-nan</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `NaN`
 
@@ -57564,10 +62840,24 @@ In the following example, the variable `smallNumber` is assigned a value that is
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.negative_infinity">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.negative_infinity">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.negative_infinity</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.negative_infinity</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `NEGATIVE_INFINITY`
 
@@ -57773,10 +63063,24 @@ Instead of passing a literal string or integer value when creating the new objec
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-new-operator">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-new-operator</span></a></td></tr></tbody></table>
+<span class="small">#sec-new-operator</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `new`
 
@@ -57873,10 +63177,24 @@ Thus from the above example of class `C` and `D`, it seems that `new.target` poi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-built-in-function-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-built-in-function-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-built-in-function-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 `new.target`
 
@@ -58009,10 +63327,24 @@ Note that the first call does not log anything, because the generator was not yi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-generator.prototype.next">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-generator.prototype.next</span></a></td></tr></tbody></table>
+<span class="small">#sec-generator.prototype.next</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -58485,10 +63817,24 @@ As with canonical normalization, you can ask for decomposed or composed compatib
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.normalize">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.normalize</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.normalize</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -58943,10 +64289,24 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.notify">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.notify">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.notify</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.notify</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -59098,10 +64458,24 @@ In Firefox, you can also enable `privacy.resistFingerprinting`, the precision wi
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.now">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.now">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.now</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.now</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -59203,10 +64577,24 @@ When checking for `null` or `undefined`, beware of the [differences between equa
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-null-value">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-null-value</span></a></td></tr></tbody></table>
+<span class="small">#sec-null-value</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -59370,10 +64758,24 @@ The nullish coalescing operator treats `undefined` and `null` as specific values
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-CoalesceExpression">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-CoalesceExpression</span></a></td></tr></tbody></table>
+<span class="small">#prod-CoalesceExpression</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -59597,10 +64999,24 @@ This logs `819199440000`.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-number-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -60451,10 +65867,24 @@ Note that when the currency sign is "accounting", parentheses might be used inst
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl-numberformat-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl-numberformat-constructor</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl-numberformat-constructor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -60717,7 +66147,360 @@ The `Intl.Locale.prototype.numberingSystem` property is an accessor property tha
 
 A numeral system is a system for expressing numbers. The `numberingSystem` property helps to represent the different numeral systems used by various countries, regions, and cultures around the world. As with most internationalization schemas, the numeral systems that can be represented in a `Locale` object by `numberingSystem` are standardized by Unicode. A table of the standard Unicode numeral systems can be seen below.
 
-<table><thead><tr class="header"><th>Value</th><th>Description</th></tr></thead><tbody><tr class="odd"><td>adlm</td><td>Adlam digits</td></tr><tr class="even"><td>ahom</td><td>Ahom digits</td></tr><tr class="odd"><td>arab</td><td>Arabic-Indic digits</td></tr><tr class="even"><td>arabext</td><td>Extended Arabic-Indic digits</td></tr><tr class="odd"><td>armn</td><td>Armenian upper case numerals — algorithmic</td></tr><tr class="even"><td>armnlow</td><td>Armenian lower case numerals — algorithmic</td></tr><tr class="odd"><td>bali</td><td>Balinese digits</td></tr><tr class="even"><td>beng</td><td>Bengali digits</td></tr><tr class="odd"><td>bhks</td><td>Bhaiksuki digits</td></tr><tr class="even"><td>brah</td><td>Brahmi digits</td></tr><tr class="odd"><td>cakm</td><td>Chakma digits</td></tr><tr class="even"><td>cham</td><td>Cham digits</td></tr><tr class="odd"><td>cyrl</td><td>Cyrillic numerals — algorithmic</td></tr><tr class="even"><td>deva</td><td>Devanagari digits</td></tr><tr class="odd"><td>ethi</td><td>Ethiopic numerals — algorithmic</td></tr><tr class="even"><td>finance</td><td>Financial numerals — may be algorithmic</td></tr><tr class="odd"><td>fullwide</td><td>Full width digits</td></tr><tr class="even"><td>geor</td><td>Georgian numerals — algorithmic</td></tr><tr class="odd"><td>gong</td><td>Gunjala Gondi digits</td></tr><tr class="even"><td>gonm</td><td>Masaram Gondi digits</td></tr><tr class="odd"><td>grek</td><td>Greek upper case numerals — algorithmic</td></tr><tr class="even"><td>greklow</td><td>Greek lower case numerals — algorithmic</td></tr><tr class="odd"><td>gujr</td><td>Gujarati digits</td></tr><tr class="even"><td>guru</td><td>Gurmukhi digits</td></tr><tr class="odd"><td>hanidays</td><td>Han-character day-of-month numbering for lunar/other traditional calendars</td></tr><tr class="even"><td>hanidec</td><td>Positional decimal system using Chinese number ideographs as digits</td></tr><tr class="odd"><td>hans</td><td>Simplified Chinese numerals — algorithmic</td></tr><tr class="even"><td>hansfin</td><td>Simplified Chinese financial numerals — algorithmic</td></tr><tr class="odd"><td>hant</td><td>Traditional Chinese numerals — algorithmic</td></tr><tr class="even"><td>hantfin</td><td>Traditional Chinese financial numerals — algorithmic</td></tr><tr class="odd"><td>hebr</td><td>Hebrew numerals — algorithmic</td></tr><tr class="even"><td>hmng</td><td>Pahawh Hmong digits</td></tr><tr class="odd"><td>hmnp</td><td>Nyiakeng Puachue Hmong digits</td></tr><tr class="even"><td>java</td><td>Javanese digits</td></tr><tr class="odd"><td>jpan</td><td>Japanese numerals — algorithmic</td></tr><tr class="even"><td>jpanfin</td><td>Japanese financial numerals — algorithmic</td></tr><tr class="odd"><td>jpanyear</td><td>Japanese first-year Gannen numbering for Japanese calendar</td></tr><tr class="even"><td>kali</td><td>Kayah Li digits</td></tr><tr class="odd"><td>khmr</td><td>Khmer digits</td></tr><tr class="even"><td>knda</td><td>Kannada digits</td></tr><tr class="odd"><td>lana</td><td>Tai Tham Hora (secular) digits</td></tr><tr class="even"><td>lanatham</td><td>Tai Tham (ecclesiastical) digits</td></tr><tr class="odd"><td>laoo</td><td>Lao digits</td></tr><tr class="even"><td>latn</td><td>Latin digits</td></tr><tr class="odd"><td>lepc</td><td>Lepcha digits</td></tr><tr class="even"><td>limb</td><td>Limbu digits</td></tr><tr class="odd"><td>mathbold</td><td>Mathematical bold digits</td></tr><tr class="even"><td>mathdbl</td><td>Mathematical double-struck digits</td></tr><tr class="odd"><td>mathmono</td><td>Mathematical monospace digits</td></tr><tr class="even"><td>mathsanb</td><td>Mathematical sans-serif bold digits</td></tr><tr class="odd"><td>mathsans</td><td>Mathematical sans-serif digits</td></tr><tr class="even"><td>mlym</td><td>Malayalam digits</td></tr><tr class="odd"><td>modi</td><td>Modi digits</td></tr><tr class="even"><td>mong</td><td>Mongolian digits</td></tr><tr class="odd"><td>mroo</td><td>Mro digits</td></tr><tr class="even"><td>mtei</td><td>Meetei Mayek digits</td></tr><tr class="odd"><td>mymr</td><td>Myanmar digits</td></tr><tr class="even"><td>mymrshan</td><td>Myanmar Shan digits</td></tr><tr class="odd"><td>mymrtlng</td><td>Myanmar Tai Laing digits</td></tr><tr class="even"><td>native</td><td>Native digits</td></tr><tr class="odd"><td>newa</td><td>Newa digits</td></tr><tr class="even"><td>nkoo</td><td>N'Ko digits</td></tr><tr class="odd"><td>olck</td><td>Ol Chiki digits</td></tr><tr class="even"><td>orya</td><td>Oriya digits</td></tr><tr class="odd"><td>osma</td><td>Osmanya digits</td></tr><tr class="even"><td>rohg</td><td>Hanifi Rohingya digits</td></tr><tr class="odd"><td>roman</td><td>Roman upper case numerals — algorithmic</td></tr><tr class="even"><td>romanlow</td><td>Roman lowercase numerals — algorithmic</td></tr><tr class="odd"><td>saur</td><td>Saurashtra digits</td></tr><tr class="even"><td>shrd</td><td>Sharada digits</td></tr><tr class="odd"><td>sind</td><td>Khudawadi digits</td></tr><tr class="even"><td>sinh</td><td>Sinhala Lith digits</td></tr><tr class="odd"><td>sora</td><td>Sora_Sompeng digits</td></tr><tr class="even"><td>sund</td><td>Sundanese digits</td></tr><tr class="odd"><td>takr</td><td>Takri digits</td></tr><tr class="even"><td>talu</td><td>New Tai Lue digits</td></tr><tr class="odd"><td>taml</td><td>Tamil numerals — algorithmic</td></tr><tr class="even"><td>tamldec</td><td>Modern Tamil decimal digits</td></tr><tr class="odd"><td>telu</td><td>Telugu digits</td></tr><tr class="even"><td>thai</td><td>Thai digits</td></tr><tr class="odd"><td>tirh</td><td>Tirhuta digits</td></tr><tr class="even"><td>tibt</td><td>Tibetan digits</td></tr><tr class="odd"><td>traditio</td><td>Traditional numerals — may be algorithmic</td></tr><tr class="even"><td>vaii</td><td>Vai digits</td></tr><tr class="odd"><td>wara</td><td>Warang Citi digits</td></tr><tr class="even"><td>wcho</td><td>Wancho digits</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>adlm</td>
+<td>Adlam digits</td>
+</tr>
+<tr class="even">
+<td>ahom</td>
+<td>Ahom digits</td>
+</tr>
+<tr class="odd">
+<td>arab</td>
+<td>Arabic-Indic digits</td>
+</tr>
+<tr class="even">
+<td>arabext</td>
+<td>Extended Arabic-Indic digits</td>
+</tr>
+<tr class="odd">
+<td>armn</td>
+<td>Armenian upper case numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>armnlow</td>
+<td>Armenian lower case numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>bali</td>
+<td>Balinese digits</td>
+</tr>
+<tr class="even">
+<td>beng</td>
+<td>Bengali digits</td>
+</tr>
+<tr class="odd">
+<td>bhks</td>
+<td>Bhaiksuki digits</td>
+</tr>
+<tr class="even">
+<td>brah</td>
+<td>Brahmi digits</td>
+</tr>
+<tr class="odd">
+<td>cakm</td>
+<td>Chakma digits</td>
+</tr>
+<tr class="even">
+<td>cham</td>
+<td>Cham digits</td>
+</tr>
+<tr class="odd">
+<td>cyrl</td>
+<td>Cyrillic numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>deva</td>
+<td>Devanagari digits</td>
+</tr>
+<tr class="odd">
+<td>ethi</td>
+<td>Ethiopic numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>finance</td>
+<td>Financial numerals — may be algorithmic</td>
+</tr>
+<tr class="odd">
+<td>fullwide</td>
+<td>Full width digits</td>
+</tr>
+<tr class="even">
+<td>geor</td>
+<td>Georgian numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>gong</td>
+<td>Gunjala Gondi digits</td>
+</tr>
+<tr class="even">
+<td>gonm</td>
+<td>Masaram Gondi digits</td>
+</tr>
+<tr class="odd">
+<td>grek</td>
+<td>Greek upper case numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>greklow</td>
+<td>Greek lower case numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>gujr</td>
+<td>Gujarati digits</td>
+</tr>
+<tr class="even">
+<td>guru</td>
+<td>Gurmukhi digits</td>
+</tr>
+<tr class="odd">
+<td>hanidays</td>
+<td>Han-character day-of-month numbering for lunar/other traditional calendars</td>
+</tr>
+<tr class="even">
+<td>hanidec</td>
+<td>Positional decimal system using Chinese number ideographs as digits</td>
+</tr>
+<tr class="odd">
+<td>hans</td>
+<td>Simplified Chinese numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>hansfin</td>
+<td>Simplified Chinese financial numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>hant</td>
+<td>Traditional Chinese numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>hantfin</td>
+<td>Traditional Chinese financial numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>hebr</td>
+<td>Hebrew numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>hmng</td>
+<td>Pahawh Hmong digits</td>
+</tr>
+<tr class="odd">
+<td>hmnp</td>
+<td>Nyiakeng Puachue Hmong digits</td>
+</tr>
+<tr class="even">
+<td>java</td>
+<td>Javanese digits</td>
+</tr>
+<tr class="odd">
+<td>jpan</td>
+<td>Japanese numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>jpanfin</td>
+<td>Japanese financial numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>jpanyear</td>
+<td>Japanese first-year Gannen numbering for Japanese calendar</td>
+</tr>
+<tr class="even">
+<td>kali</td>
+<td>Kayah Li digits</td>
+</tr>
+<tr class="odd">
+<td>khmr</td>
+<td>Khmer digits</td>
+</tr>
+<tr class="even">
+<td>knda</td>
+<td>Kannada digits</td>
+</tr>
+<tr class="odd">
+<td>lana</td>
+<td>Tai Tham Hora (secular) digits</td>
+</tr>
+<tr class="even">
+<td>lanatham</td>
+<td>Tai Tham (ecclesiastical) digits</td>
+</tr>
+<tr class="odd">
+<td>laoo</td>
+<td>Lao digits</td>
+</tr>
+<tr class="even">
+<td>latn</td>
+<td>Latin digits</td>
+</tr>
+<tr class="odd">
+<td>lepc</td>
+<td>Lepcha digits</td>
+</tr>
+<tr class="even">
+<td>limb</td>
+<td>Limbu digits</td>
+</tr>
+<tr class="odd">
+<td>mathbold</td>
+<td>Mathematical bold digits</td>
+</tr>
+<tr class="even">
+<td>mathdbl</td>
+<td>Mathematical double-struck digits</td>
+</tr>
+<tr class="odd">
+<td>mathmono</td>
+<td>Mathematical monospace digits</td>
+</tr>
+<tr class="even">
+<td>mathsanb</td>
+<td>Mathematical sans-serif bold digits</td>
+</tr>
+<tr class="odd">
+<td>mathsans</td>
+<td>Mathematical sans-serif digits</td>
+</tr>
+<tr class="even">
+<td>mlym</td>
+<td>Malayalam digits</td>
+</tr>
+<tr class="odd">
+<td>modi</td>
+<td>Modi digits</td>
+</tr>
+<tr class="even">
+<td>mong</td>
+<td>Mongolian digits</td>
+</tr>
+<tr class="odd">
+<td>mroo</td>
+<td>Mro digits</td>
+</tr>
+<tr class="even">
+<td>mtei</td>
+<td>Meetei Mayek digits</td>
+</tr>
+<tr class="odd">
+<td>mymr</td>
+<td>Myanmar digits</td>
+</tr>
+<tr class="even">
+<td>mymrshan</td>
+<td>Myanmar Shan digits</td>
+</tr>
+<tr class="odd">
+<td>mymrtlng</td>
+<td>Myanmar Tai Laing digits</td>
+</tr>
+<tr class="even">
+<td>native</td>
+<td>Native digits</td>
+</tr>
+<tr class="odd">
+<td>newa</td>
+<td>Newa digits</td>
+</tr>
+<tr class="even">
+<td>nkoo</td>
+<td>N'Ko digits</td>
+</tr>
+<tr class="odd">
+<td>olck</td>
+<td>Ol Chiki digits</td>
+</tr>
+<tr class="even">
+<td>orya</td>
+<td>Oriya digits</td>
+</tr>
+<tr class="odd">
+<td>osma</td>
+<td>Osmanya digits</td>
+</tr>
+<tr class="even">
+<td>rohg</td>
+<td>Hanifi Rohingya digits</td>
+</tr>
+<tr class="odd">
+<td>roman</td>
+<td>Roman upper case numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>romanlow</td>
+<td>Roman lowercase numerals — algorithmic</td>
+</tr>
+<tr class="odd">
+<td>saur</td>
+<td>Saurashtra digits</td>
+</tr>
+<tr class="even">
+<td>shrd</td>
+<td>Sharada digits</td>
+</tr>
+<tr class="odd">
+<td>sind</td>
+<td>Khudawadi digits</td>
+</tr>
+<tr class="even">
+<td>sinh</td>
+<td>Sinhala Lith digits</td>
+</tr>
+<tr class="odd">
+<td>sora</td>
+<td>Sora_Sompeng digits</td>
+</tr>
+<tr class="even">
+<td>sund</td>
+<td>Sundanese digits</td>
+</tr>
+<tr class="odd">
+<td>takr</td>
+<td>Takri digits</td>
+</tr>
+<tr class="even">
+<td>talu</td>
+<td>New Tai Lue digits</td>
+</tr>
+<tr class="odd">
+<td>taml</td>
+<td>Tamil numerals — algorithmic</td>
+</tr>
+<tr class="even">
+<td>tamldec</td>
+<td>Modern Tamil decimal digits</td>
+</tr>
+<tr class="odd">
+<td>telu</td>
+<td>Telugu digits</td>
+</tr>
+<tr class="even">
+<td>thai</td>
+<td>Thai digits</td>
+</tr>
+<tr class="odd">
+<td>tirh</td>
+<td>Tirhuta digits</td>
+</tr>
+<tr class="even">
+<td>tibt</td>
+<td>Tibetan digits</td>
+</tr>
+<tr class="odd">
+<td>traditio</td>
+<td>Traditional numerals — may be algorithmic</td>
+</tr>
+<tr class="even">
+<td>vaii</td>
+<td>Vai digits</td>
+</tr>
+<tr class="odd">
+<td>wara</td>
+<td>Warang Citi digits</td>
+</tr>
+<tr class="even">
+<td>wcho</td>
+<td>Wancho digits</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -60737,10 +66520,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.numberingSystem</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.numberingSystem</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -60831,10 +66628,24 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.numeric</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.numeric</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -61148,10 +66959,24 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object-objects">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -62392,10 +68217,24 @@ Property definitions that do not use "colon" notation are not prototype mutation
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object-initializer">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object Initializer' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object Initializer' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -62617,10 +68456,24 @@ Some subtle distinctions between [`Array.of()`](../array/of) and `TypedArray.of(
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="#">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="#">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of '%TypedArray%.of' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of '%TypedArray%.of' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -62711,49 +68564,131 @@ with the expected result that `a` and `b` get the value 5. This is because the a
 
 As another example, the unique exponentiation operator has right-associativity, whereas other arithmetic operators have left-associativity. It is interesting to note that, the order of evaluation is always left-to-right irregardless of associativity and precedence.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td>Code</td><td>Output</td></tr><tr class="even"><td><pre data-language="js"><code>function echo(name, num) {
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Code</td>
+<td>Output</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js">
+<code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
     return num;
 }
 // Notice the division operator (/)
-console.log(echo(&quot;left&quot;, 6) / echo(&quot;right&quot;, 2));</code></pre></td><td><pre data-language="plain"><code>Evaluating the left side
+console.log(echo(&quot;left&quot;, 6) / echo(&quot;right&quot;, 2));</code>
+</pre>
+</td>
+<td>
+<pre data-language="plain">
+<code>Evaluating the left side
 Evaluating the right side
-3</code></pre></td></tr><tr class="odd"><td><pre data-language="js"><code>function echo(name, num) {
+3</code>
+</pre>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<pre data-language="js">
+<code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
     return num;
 }
 // Notice the exponentiation operator (**)
-console.log(echo(&quot;left&quot;, 2) ** echo(&quot;right&quot;, 3));</code></pre></td><td><pre data-language="plain"><code>Evaluating the left side
+console.log(echo(&quot;left&quot;, 2) ** echo(&quot;right&quot;, 3));</code>
+</pre>
+</td>
+<td>
+<pre data-language="plain">
+<code>Evaluating the left side
 Evaluating the right side
-8</code></pre></td></tr></tbody></table>
+8</code>
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
 
 The difference in associativity comes into play when there are multiple operators of the same precedence. With only one operator or operators of different precedences, associativity doesn't affect the output, as seen in the example above. In the example below, observe how associativity affects the output when multiple of the same operator are used.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td>Code</td><td>Output</td></tr><tr class="even"><td><pre data-language="js"><code>function echo(name, num) {
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Code</td>
+<td>Output</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js">
+<code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
     return num;
 }
 // Notice the division operator (/)
-console.log(echo(&quot;left&quot;, 6) / echo(&quot;middle&quot;, 2) / echo(&quot;right&quot;, 3));</code></pre></td><td><pre data-language="plain"><code>Evaluating the left side
+console.log(echo(&quot;left&quot;, 6) / echo(&quot;middle&quot;, 2) / echo(&quot;right&quot;, 3));</code>
+</pre>
+</td>
+<td>
+<pre data-language="plain">
+<code>Evaluating the left side
 Evaluating the middle side
 Evaluating the right side
-1</code></pre></td></tr><tr class="odd"><td><pre data-language="js"><code>function echo(name, num) {
+1</code>
+</pre>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<pre data-language="js">
+<code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
     return num;
 }
 // Notice the exponentiation operator (**)
-console.log(echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3) ** echo(&quot;right&quot;, 2));</code></pre></td><td><pre data-language="plain"><code>Evaluating the left side
+console.log(echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3) ** echo(&quot;right&quot;, 2));</code>
+</pre>
+</td>
+<td>
+<pre data-language="plain">
+<code>Evaluating the left side
 Evaluating the middle side
 Evaluating the right side
-512</code></pre></td></tr><tr class="even"><td><pre data-language="js"><code>function echo(name, num) {
+512</code>
+</pre>
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre data-language="js">
+<code>function echo(name, num) {
     console.log(&quot;Evaluating the &quot; + name + &quot; side&quot;);
     return num;
 }
 // Notice the parentheses around the left and middle exponentiation
-console.log((echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3)) ** echo(&quot;right&quot;, 2));</code></pre></td><td><pre data-language="plain"><code>Evaluating the left side
+console.log((echo(&quot;left&quot;, 2) ** echo(&quot;middle&quot;, 3)) ** echo(&quot;right&quot;, 2));</code>
+</pre>
+</td>
+<td>
+<pre data-language="plain">
+<code>Evaluating the left side
 Evaluating the middle side
 Evaluating the right side
-64</code></pre></td></tr></tbody></table>
+64</code>
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
 
 Looking at the code snippets above, `6 / 3 / 2` is the same as `(6 / 3) / 2` because division is left-associative. Exponentiation, on the other hand, is right-associative, so `2 ** 3 ** 2` is the same as `2 ** (3 ** 2)`. Thus, doing `(2 ** 3) ** 2` changes the order and results in the 64 seen in the table above.
 
@@ -63257,10 +69192,24 @@ The [nullish coalescing operator](nullish_coalescing_operator) may be used after
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-OptionalExpression">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-OptionalExpression</span></a></td></tr></tbody></table>
+<span class="small">#prod-OptionalExpression</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -63366,7 +69315,43 @@ The old value at the given position (`typedArray[index]`).
 
 The bitwise OR operation yields 1, if either `a` or `b` are 1. The truth table for the OR operation is:
 
-<table><thead><tr class="header"><th><code>a</code></th><th><code>b</code></th><th><code>a | b</code></th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>1</td></tr><tr class="odd"><td>1</td><td>0</td><td>1</td></tr><tr class="even"><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>a</code>
+</th>
+<th>
+<code>b</code>
+</th>
+<th>
+<code>a | b</code>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
 
@@ -63388,10 +69373,24 @@ For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.or">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.or</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.or</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -63567,10 +69566,24 @@ The following code violates an invariant.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span></a></td></tr></tbody></table>
+<span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -63675,10 +69688,24 @@ A [`String`](../string) of the specified `targetLength` with the `padString` app
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.padend">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.padend</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.padend</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -63790,10 +69817,24 @@ A [`String`](../string) of the specified `targetLength` with `padString` applied
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.padstart">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.padstart</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.padstart</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -63990,10 +70031,24 @@ Returns `14400000` no matter the local time zone as a time zone GMT (UTC) is pro
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.parse">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.parse</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.parse</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64151,10 +70206,24 @@ The following examples both return `900719925474099300`, losing precision as the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-parsefloat-string">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'parseFloat' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'parseFloat' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64397,10 +70466,24 @@ The radix is coerced to a `Number`:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-parseint-string-radix">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-parseint-string-radix</span></a></td></tr></tbody></table>
+<span class="small">#sec-parseint-string-radix</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64533,10 +70616,24 @@ The following function uses `Math.PI` to calculate the circumference of a circle
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pi">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.pi">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.pi</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.pi</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64734,10 +70831,24 @@ The results can be customized using the `options` argument, which has one proper
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl-pluralrules-constructor">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl-pluralrules-constructor</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl-pluralrules-constructor</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64852,10 +70963,24 @@ The following code creates the `myFish` array-like object containing four elemen
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.pop">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.prototype.pop' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Array.prototype.pop' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -64975,10 +71100,24 @@ In the following example, the variable `bigNumber` is assigned a value that is l
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-number.positive_infinity">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-number.positive_infinity</span></a></td></tr></tbody></table>
+<span class="small">#sec-number.positive_infinity</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -65100,10 +71239,24 @@ Because `pow()` is a static method of `Math`, use it as `Math.pow()`, rather tha
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.pow">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.pow</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.pow</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -65200,7 +71353,44 @@ There was an out of range precision argument in one of these methods:
 
 The allowed range for these methods is usually between 0 and 20 (or 21). However, the ECMAScript specification allows to extend this range.
 
-<table><thead><tr class="header"><th>Method</th><th>Firefox (SpiderMonkey)</th><th>Chrome, Opera (V8)</th></tr></thead><tbody><tr class="odd"><td><a href="../global_objects/number/toexponential"><code>Number.prototype.toExponential()</code></a></td><td>0 to 100</td><td>0 to 20</td></tr><tr class="even"><td><a href="../global_objects/number/tofixed"><code>Number.prototype.toFixed()</code></a></td><td>-20 to 100</td><td>0 to 20</td></tr><tr class="odd"><td><a href="../global_objects/number/toprecision"><code>Number.prototype.toPrecision()</code></a></td><td>1 to 100</td><td>1 to 21</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Firefox (SpiderMonkey)</th>
+<th>Chrome, Opera (V8)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="../global_objects/number/toexponential">
+<code>Number.prototype.toExponential()</code>
+</a>
+</td>
+<td>0 to 100</td>
+<td>0 to 20</td>
+</tr>
+<tr class="even">
+<td>
+<a href="../global_objects/number/tofixed">
+<code>Number.prototype.toFixed()</code>
+</a>
+</td>
+<td>-20 to 100</td>
+<td>0 to 20</td>
+</tr>
+<tr class="odd">
+<td>
+<a href="../global_objects/number/toprecision">
+<code>Number.prototype.toPrecision()</code>
+</a>
+</td>
+<td>1 to 100</td>
+<td>1 to 21</td>
+</tr>
+</tbody>
+</table>
 
 ## Examples
 
@@ -65315,10 +71505,24 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.preventextensions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.preventextensions</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.preventextensions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -65582,10 +71786,24 @@ Private instance methods may be generator, async, or async generator functions. 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/proposal-class-fields/#prod-PrivateIdentifier">Public and private instance fields proposal (Public and private instance fields proposal) 
 <br/>
 
-<span class="small">#prod-PrivateIdentifier</span></a></td></tr></tbody></table>
+<span class="small">#prod-PrivateIdentifier</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -65759,7 +71977,9 @@ To better picture this, we can take a closer look at how the realm might be an i
 To illustrate this a bit further we can take a look at how an `<iframe>` embedded in a document communicates with its host. Since all web APIs are aware of the incumbent settings object, the following will work in all browsers:
 
     <!DOCTYPE html>
-    <iframe></iframe> <!-- we have a realm here -->
+    <iframe>
+</iframe>
+<br> <!-- we have a realm here -->
     <script> // we have a realm here as well
       const bound = frames[0].postMessage.bind(
         frames[0], "some data", "*");
@@ -65773,7 +71993,9 @@ To illustrate this a bit further we can take a look at how an `<iframe>` embedde
 The same concept applies to promises. If we modify the above example a little bit, we get this:
 
     <!DOCTYPE html>
-    <iframe></iframe> <!-- we have a realm here -->
+    <iframe>
+</iframe>
+<br> <!-- we have a realm here -->
     <script> // we have a realm here as well
       const bound = frames[0].postMessage.bind(
         frames[0], "some data", "*");
@@ -65788,7 +72010,9 @@ If we change this so that the `<iframe>` in the document is listening to post me
 
     <!-- y.html -->
     <!DOCTYPE html>
-    <iframe src="x.html"></iframe>
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="x.html">
+</iframe>
+<br>
     <script>
       const bound = frames[0].postMessage.bind(frames[0], "some data", "*");
       Promise.resolve(undefined).then(bound);
@@ -65971,7 +72195,8 @@ By clicking the button several times in a short amount of time, you'll even see 
 #### HTML
 
     <button id="make-promise">Make a promise!</button>
-    <div id="log"></div>
+    <div id="log">
+</div>
 
 #### JavaScript
 
@@ -66023,10 +72248,24 @@ Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -66418,7 +72657,9 @@ There was attempt to access an object for which you have no permission. This is 
     <!DOCTYPE html>
     <html>
       <head>
-        <iframe id="myframe" src="http://www1.w3c-test.org/common/blank.html"></iframe>
+        <iframe id="myframe" src="http://www1.w3c-test.org/common/blank.html">
+</iframe>
+<br>
         <script>
           onload = function() {
             console.log(frames[0].document);
@@ -66426,7 +72667,8 @@ There was attempt to access an object for which you have no permission. This is 
           }
         </script>
       </head>
-      <body></body>
+      <body>
+</body>
     </html>
 
 ## See also
@@ -66538,10 +72780,24 @@ For example, the following syntax is often seen in many scripts.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-property-accessors">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Property Accessors' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Property Accessors' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -66696,10 +72952,24 @@ The following example demonstrates the enumerability of user-defined vs. built-i
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.prototype.propertyisenumerable">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.prototype.propertyisenumerable</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.prototype.propertyisenumerable</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -66858,10 +73128,24 @@ The `__proto__` property is a simple accessor property on [`Object.prototype`](.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-additional-properties-of-the-object.prototype-object">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-additional-properties-of-the-object.prototype-object</span></a></td></tr></tbody></table>
+<span class="small">#sec-additional-properties-of-the-object.prototype-object</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -67330,10 +73614,24 @@ Now in order to create a complete sample `traps` list, for didactic purposes, we
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy-objects">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Proxy' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Proxy' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -67679,10 +73977,24 @@ Getters and setters are special methods that bind to a class property and are ca
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/proposal-class-fields/#prod-FieldDefinition">Public and private instance fields proposal (Public and private instance fields proposal) 
 <br/>
 
-<span class="small">#prod-FieldDefinition</span></a></td></tr></tbody></table>
+<span class="small">#prod-FieldDefinition</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -67836,10 +74148,24 @@ Note that although `obj` is not an array, the method `push` successfully increme
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.push">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.push</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.push</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -68080,10 +74406,24 @@ If the iterable contains one or more non-promise value and/or an already settled
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.race">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.race</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.race</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -68206,10 +74546,24 @@ While the `getRandomInt()` function above is inclusive at the minimum, it's excl
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.random">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Math.random' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Math.random' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -68362,10 +74716,24 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-rangeerror">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -68535,10 +74903,24 @@ In most cases, `String.raw()` is used with template literal. The first syntax me
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.raw">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.raw</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.raw</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -68823,7 +75205,101 @@ Suppose the following use of `reduce()` occurred:
 
 The callback would be invoked four times, with the arguments and return values in each call being as follows:
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr class="even"><td>second call</td><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr class="odd"><td>third call</td><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr class="even"><td>fourth call</td><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>3</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>6</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>6</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` would be that of the last callback invocation (`10`).
 
@@ -68837,7 +75313,119 @@ If you were to provide an `initialValue` as the second argument to `reduce()`, t
         return accumulator + currentValue
     }, 10)
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>second call</td><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr class="odd"><td>third call</td><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr class="even"><td>fourth call</td><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr class="odd"><td>fifth call</td><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>11</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>11</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>13</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>13</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>16</code>
+</td>
+</tr>
+<tr class="odd">
+<td>fifth call</td>
+<td>
+<code>16</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` in this case would be `20`.
 
@@ -69156,10 +75744,24 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -69368,7 +75970,102 @@ Some example run-throughs of the function would look like this:
 
 The callback would be invoked four times, with the arguments and return values in each call being as follows:
 
-<table><thead><tr class="header"><th><code>callback</code></th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>index</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>4</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>7</code></td></tr><tr class="even"><td>second call</td><td><code>7</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>9</code></td></tr><tr class="odd"><td>third call</td><td><code>9</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>fourth call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code>
+</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>index</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>7</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>7</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>9</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>9</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduceRight` would be that of the last callback invocation (`10`).
 
@@ -69378,7 +76075,120 @@ And if you were to provide an `initialValue`, the result would look like this:
       return accumulator + currentValue;
     }, 10);
 
-<table><thead><tr class="header"><th><code>callback</code></th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>index</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>14</code></td></tr><tr class="even"><td>second call</td><td><code>14</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>17</code></td></tr><tr class="odd"><td>third call</td><td><code>17</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>19</code></td></tr><tr class="even"><td>fourth call</td><td><code>19</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr><tr class="odd"><td>fifth call</td><td><code>20</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code>
+</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>index</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>14</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>14</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>17</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>17</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>19</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>19</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+<tr class="odd">
+<td>fifth call</td>
+<td>
+<code>20</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduceRight` this time would be, of course, `20`.
 
@@ -69508,10 +76318,24 @@ See also [Function composition](<https://en.wikipedia.org/wiki/Function_composit
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.reduceright">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.reduceright</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.reduceright</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -69636,10 +76460,24 @@ Stack trace. Inherited from [`Error`](error).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-referenceerror">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -69812,10 +76650,24 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-reflect-object">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-reflect-object</span></a></td></tr></tbody></table>
+<span class="small">#sec-reflect-object</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -70423,10 +77275,24 @@ The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/Java
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-regexp-regular-expression-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-regexp-regular-expression-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-regexp-regular-expression-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -71349,10 +78215,24 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.region</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.region</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -71450,10 +78330,24 @@ The static `Promise.reject` function returns a `Promise` that is rejected. For d
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.reject">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.reject</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.reject</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -71587,10 +78481,24 @@ The following example shows how to create a relative time formatter returning fo
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#relativetimeformat-objects">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#relativetimeformat-objects</span></a></td></tr></tbody></table>
+<span class="small">#relativetimeformat-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -71823,10 +78731,24 @@ Note that while in most languages, '%' is a remainder operator, in some (e.g. [P
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-multiplicative-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-multiplicative-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-multiplicative-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -71982,10 +78904,24 @@ This method has been added to the ECMAScript 2015 specification and may not be a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.repeat">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.repeat' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.repeat' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -72093,7 +79029,54 @@ To perform a global search and replace, include the `g` switch in the regular ex
 
 The replacement string can include the following special replacement patterns:
 
-<table><thead><tr class="header"><th>Pattern</th><th>Inserts</th></tr></thead><tbody><tr class="odd"><td><code>$$</code></td><td>Inserts a <code>"$"</code>.</td></tr><tr class="even"><td><code>$&amp;</code></td><td>Inserts the matched substring.</td></tr><tr class="odd"><td><code>$`</code></td><td>Inserts the portion of the string that precedes the matched substring.</td></tr><tr class="even"><td><code>$'</code></td><td>Inserts the portion of the string that follows the matched substring.</td></tr><tr class="odd"><td><code>$n</code></td><td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp"><code>RegExp</code></a> object. Note that this is <code>1</code>-indexed. If a group <code>n</code> is not present (e.g., if group is 3), it will be replaced as a literal (e.g., <code>$3</code>).</td></tr><tr class="even"><td><code>$&lt;Name&gt;</code></td><td>Where <code>Name</code> is a capturing group name. If the group is not in the match, or not in the regular expression, or if a string was passed as the first argument to <code>replace</code> instead of a regular expression, this resolves to a literal (e.g., <code>$&lt;Name&gt;</code>). Only available in browser versions supporting named capturing groups.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Inserts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>$$</code>
+</td>
+<td>Inserts a <code>"$"</code>.</td>
+</tr>
+<tr class="even">
+<td>
+<code>$&amp;</code>
+</td>
+<td>Inserts the matched substring.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>$`</code>
+</td>
+<td>Inserts the portion of the string that precedes the matched substring.</td>
+</tr>
+<tr class="even">
+<td>
+<code>$'</code>
+</td>
+<td>Inserts the portion of the string that follows the matched substring.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>$n</code>
+</td>
+<td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp">
+<code>RegExp</code>
+</a> object. Note that this is <code>1</code>-indexed. If a group <code>n</code> is not present (e.g., if group is 3), it will be replaced as a literal (e.g., <code>$3</code>).</td>
+</tr>
+<tr class="even">
+<td>
+<code>$&lt;Name&gt;</code>
+</td>
+<td>Where <code>Name</code> is a capturing group name. If the group is not in the match, or not in the regular expression, or if a string was passed as the first argument to <code>replace</code> instead of a regular expression, this resolves to a literal (e.g., <code>$&lt;Name&gt;</code>). Only available in browser versions supporting named capturing groups.</td>
+</tr>
+</tbody>
+</table>
 
 ### Specifying a function as a parameter
 
@@ -72103,7 +79086,48 @@ Note that the function will be invoked multiple times for each full match to be 
 
 The arguments to the function are as follows:
 
-<table><thead><tr class="header"><th>Possible name</th><th>Supplied value</th></tr></thead><tbody><tr class="odd"><td><code>match</code></td><td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td></tr><tr class="even"><td><code>p1, p2, ...</code></td><td>The nth string found by a parenthesized capture group (including named capturing groups), provided the first argument to <code>replace()</code> was a <a href="../regexp"><code>RegExp</code></a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td></tr><tr class="odd"><td><code>offset</code></td><td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td></tr><tr class="even"><td><code>string</code></td><td>The whole string being examined.</td></tr><tr class="odd"><td><code>groups</code></td><td>In browser versions supporting named capturing groups, will be an object whose keys are the used group names, and whose values are the matched portions (<code>undefined</code> if not matched).</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Possible name</th>
+<th>Supplied value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>match</code>
+</td>
+<td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td>
+</tr>
+<tr class="even">
+<td>
+<code>p1, p2, ...</code>
+</td>
+<td>The nth string found by a parenthesized capture group (including named capturing groups), provided the first argument to <code>replace()</code> was a <a href="../regexp">
+<code>RegExp</code>
+</a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>offset</code>
+</td>
+<td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td>
+</tr>
+<tr class="even">
+<td>
+<code>string</code>
+</td>
+<td>The whole string being examined.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>groups</code>
+</td>
+<td>In browser versions supporting named capturing groups, will be an object whose keys are the used group names, and whose values are the matched portions (<code>undefined</code> if not matched).</td>
+</tr>
+</tbody>
+</table>
 
 (The exact number of arguments depends on whether the first argument is a [`RegExp`](../regexp) object—and, if so, how many parenthesized submatches it specifies.)
 
@@ -72190,10 +79214,24 @@ The regular expression `test` checks for any number that ends with `F`. The numb
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.replace">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.replace' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.replace' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -72308,7 +79346,48 @@ This method does not change the calling [`String`](../string) object. It returns
 
 The replacement string can include the following special replacement patterns:
 
-<table><thead><tr class="header"><th>Pattern</th><th>Inserts</th></tr></thead><tbody><tr class="odd"><td><code>$$</code></td><td>Inserts a <code>"$"</code>.</td></tr><tr class="even"><td><code>$&amp;</code></td><td>Inserts the matched substring.</td></tr><tr class="odd"><td><code>$`</code></td><td>Inserts the portion of the string that precedes the matched substring.</td></tr><tr class="even"><td><code>$'</code></td><td>Inserts the portion of the string that follows the matched substring.</td></tr><tr class="odd"><td><code>$n</code></td><td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp"><code>RegExp</code></a> object. Note that this is <code>1</code>-indexed.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Inserts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>$$</code>
+</td>
+<td>Inserts a <code>"$"</code>.</td>
+</tr>
+<tr class="even">
+<td>
+<code>$&amp;</code>
+</td>
+<td>Inserts the matched substring.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>$`</code>
+</td>
+<td>Inserts the portion of the string that precedes the matched substring.</td>
+</tr>
+<tr class="even">
+<td>
+<code>$'</code>
+</td>
+<td>Inserts the portion of the string that follows the matched substring.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>$n</code>
+</td>
+<td>Where <code>n</code> is a positive integer less than 100, inserts the <code>n</code>th parenthesized submatch string, provided the first argument was a <a href="../regexp">
+<code>RegExp</code>
+</a> object. Note that this is <code>1</code>-indexed.</td>
+</tr>
+</tbody>
+</table>
 
 ### Specifying a function as a parameter
 
@@ -72318,7 +79397,42 @@ Note that if the first argument of an `replaceAll()` invocation is a [`RegExp`](
 
 The arguments to the function are as follows:
 
-<table><thead><tr class="header"><th>Possible name</th><th>Supplied value</th></tr></thead><tbody><tr class="odd"><td><code>match</code></td><td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td></tr><tr class="even"><td><code>p1, p2, ...</code></td><td>The nth string found by a parenthesized capture group, provided the first argument to <code>replaceAll()</code> was a <a href="../regexp"><code>RegExp</code></a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td></tr><tr class="odd"><td><code>offset</code></td><td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td></tr><tr class="even"><td><code>string</code></td><td>The whole string being examined.</td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>Possible name</th>
+<th>Supplied value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>match</code>
+</td>
+<td>The matched substring. (Corresponds to <code>$&amp;</code> above.)</td>
+</tr>
+<tr class="even">
+<td>
+<code>p1, p2, ...</code>
+</td>
+<td>The nth string found by a parenthesized capture group, provided the first argument to <code>replaceAll()</code> was a <a href="../regexp">
+<code>RegExp</code>
+</a> object. (Corresponds to <code>$1</code>, <code>$2</code>, etc. above.) For example, if <code>/(\a+)(\b+)/</code>, was given, <code>p1</code> is the match for <code>\a+</code>, and <code>p2</code> for <code>\b+</code>.</td>
+</tr>
+<tr class="odd">
+<td>
+<code>offset</code>
+</td>
+<td>The offset of the matched substring within the whole string being examined. (For example, if the whole string was <code>'abcd'</code>, and the matched substring was <code>'bc'</code>, then this argument will be <code>1</code>.)</td>
+</tr>
+<tr class="even">
+<td>
+<code>string</code>
+</td>
+<td>The whole string being examined.</td>
+</tr>
+</tbody>
+</table>
 
 (The exact number of arguments depends on whether the first argument is a [`RegExp`](../regexp) object—and, if so, how many parenthesized submatches it specifies.)
 
@@ -72343,10 +79457,24 @@ This will work:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.replaceall">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'String.prototype.replaceAll' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'String.prototype.replaceAll' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -72579,10 +79707,24 @@ The inverted order of the logs is due to the fact that the `then` handlers are c
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-promise.resolve">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-promise.resolve</span></a></td></tr></tbody></table>
+<span class="small">#sec-promise.resolve</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -72717,10 +79859,24 @@ The values provided for these properties in the `options` argument or filled in 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -72951,10 +80107,24 @@ To use `Array` methods on the `arguments` object, it must be converted to a real
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-function-definitions</span></a></td></tr></tbody></table>
+<span class="small">#sec-function-definitions</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73186,10 +80356,24 @@ See also the article about [Closures](https://developer.mozilla.org/en-US/docs/W
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-return-statement">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-return-statement</span></a></td></tr></tbody></table>
+<span class="small">#sec-return-statement</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73302,10 +80486,24 @@ The following example creates an array-like object `a`, containing three element
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.reverse">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.reverse</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.reverse</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73424,10 +80622,24 @@ If the `revoke()` function gets called, the proxy becomes unusable: Any trap to 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-proxy.revocable">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-proxy.revocable</span></a></td></tr></tbody></table>
+<span class="small">#sec-proxy.revocable</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73526,10 +80738,24 @@ Likewise, `-9 >> 2` yields `-3`, because the sign is preserved:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#prod-BitwiseORExpression">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#prod-BitwiseORExpression</span></a></td></tr></tbody></table>
+<span class="small">#prod-BitwiseORExpression</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73617,10 +80843,24 @@ The right shift assignment operator (`>>=`) moves the specified amount of bits t
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-assignment-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-assignment-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-assignment-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73722,10 +80962,24 @@ Because `round()` is a static method of `Math`, you always use it as `Math.round
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.round">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.round</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.round</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73854,13 +81108,33 @@ The following snippet creates a new `RuntimeError` instance, and logs its detail
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror">WebAssembly JavaScript Interface (WebAssembly JavaScript Interface) 
 <br/>
 
-<span class="small">#exceptiondef-runtimeerror</span></a></td></tr><tr class="even"><td><a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
+<span class="small">#exceptiondef-runtimeerror</span>
+</a>
+</td>
+</tr>
+<tr class="even">
+<td>
+<a href="https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard">ECMAScript Language Specification (ECMAScript)
 <br/>
 
-<span class="small">#sec-native-error-types-used-in-this-standard</span></a></td></tr></tbody></table>
+<span class="small">#sec-native-error-types-used-in-this-standard</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -73990,10 +81264,24 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-Intl.Locale.prototype.script</span></a></td></tr></tbody></table>
+<span class="small">#sec-Intl.Locale.prototype.script</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -74152,10 +81440,24 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.seal">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Object.seal' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Object.seal' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -74264,10 +81566,24 @@ The following example searches a string with two different regex objects to show
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.search">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.search">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.search</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.search</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -74403,10 +81719,24 @@ This function selects a pluralization category according to the locale and forma
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select">ECMAScript Internationalization API Specification (ECMAScript Internationalization API) 
 <br/>
 
-<span class="small">#sec-intl.pluralrules.prototype.select</span></a></td></tr></tbody></table>
+<span class="small">#sec-intl.pluralrules.prototype.select</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -74715,10 +82045,24 @@ Calls `callbackFn` once for each value present in the `Set` object, in insertion
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-set-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-set-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-set-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75180,10 +82524,24 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbigint64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setbigint64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setbigint64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75289,10 +82647,24 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setbiguint64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setbiguint64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setbiguint64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75399,10 +82771,24 @@ If a negative number is provided for `dayValue`, the date will be set counting b
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setdate">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Date.prototype.setDate' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Date.prototype.setDate' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75507,10 +82893,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setfloat32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setfloat32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75615,10 +83015,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setfloat64">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setfloat64</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setfloat64</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75723,10 +83137,24 @@ If a parameter you specify is outside of the expected range, `setFullYear()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setfullyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setfullyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setfullyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75836,10 +83264,24 @@ If a parameter you specify is outside of the expected range, `setHours()` attemp
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.sethours">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.sethours">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.sethours</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.sethours</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -75944,10 +83386,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint16">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint16">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setint16</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setint16</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76052,10 +83508,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setint32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setint32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76156,10 +83626,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setint8">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setint8</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setint8</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76254,10 +83738,24 @@ If you specify a number outside the expected range, the date information in the 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setmilliseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setmilliseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setmilliseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76362,10 +83860,24 @@ If a parameter you specify is outside of the expected range, `setMinutes()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setminutes">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setminutes</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setminutes</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76473,10 +83985,24 @@ The current day of month will have an impact on the behavior of this method. Con
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setmonth">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setmonth</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setmonth</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76706,10 +84232,24 @@ Using the older [`Object.prototype.__proto__`](proto) property, we can easily de
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-object.setprototypeof">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-object.setprototypeof</span></a></td></tr></tbody></table>
+<span class="small">#sec-object.setprototypeof</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76814,10 +84354,24 @@ If a parameter you specify is outside of the expected range, `setSeconds()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -76913,10 +84467,24 @@ Use the `setTime()` method to help assign a date and time to another [`Date`](..
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.settime">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Date.prototype.setTime' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Date.prototype.setTime' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77021,10 +84589,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint16">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setuint16</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setuint16</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77129,10 +84711,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint32">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setuint32</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setuint32</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77233,10 +84829,24 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-dataview.prototype.setuint8">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-dataview.prototype.setuint8</span></a></td></tr></tbody></table>
+<span class="small">#sec-dataview.prototype.setuint8</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77333,10 +84943,24 @@ If a parameter you specify is outside of the expected range, `setUTCDate()` atte
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcdate">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcdate">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcdate</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcdate</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77441,10 +85065,24 @@ If a parameter you specify is outside of the expected range, `setUTCFullYear()` 
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcfullyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcfullyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcfullyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcfullyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77553,10 +85191,24 @@ If a parameter you specify is outside of the expected range, `setUTCHours()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutchours">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutchours</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutchours</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77651,10 +85303,24 @@ If a parameter you specify is outside of the expected range, `setUTCMilliseconds
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmilliseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcmilliseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcmilliseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77759,10 +85425,24 @@ If a parameter you specify is outside of the expected range, `setUTCMinutes()` a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcminutes">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcminutes</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcminutes</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77863,10 +85543,24 @@ If a parameter you specify is outside of the expected range, `setUTCMonth()` att
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcmonth">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcmonth</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcmonth</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -77967,10 +85661,24 @@ If a parameter you specify is outside of the expected range, `setUTCSeconds()` a
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setutcseconds">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setutcseconds">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setutcseconds</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setutcseconds</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78074,10 +85782,24 @@ The first two lines set the year to 1996. The third sets the year to 2000.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-date.prototype.setyear">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-date.prototype.setyear</span></a></td></tr></tbody></table>
+<span class="small">#sec-date.prototype.setyear</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78243,10 +85965,24 @@ Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArray
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-sharedarraybuffer-objects">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-sharedarraybuffer-objects</span></a></td></tr></tbody></table>
+<span class="small">#sec-sharedarraybuffer-objects</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78582,10 +86318,24 @@ The shift() method is often used in condition inside while loop. In the followin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.shift">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.shift</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.shift</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78694,10 +86444,24 @@ Because `sign()` is a static method of `Math`, you always use it as `Math.sign()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sign">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sign</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sign</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78802,10 +86566,24 @@ Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`,
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sin">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sin</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sin</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -78923,10 +86701,24 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sinh">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sinh</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sinh</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79017,10 +86809,24 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-map.prototype.size">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-map.prototype.size</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-map.prototype.size</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79203,10 +87009,24 @@ Anyway, it can be simplified using [`bind`](../function/bind).
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.slice">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.slice</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.slice</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79310,10 +87130,24 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.small">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.small</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.small</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79538,10 +87372,24 @@ To mimic the function of the `includes()` method, this custom function returns `
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.some">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.some</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.some</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79831,10 +87679,24 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.sort</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -79965,10 +87827,24 @@ Starting with ECMAScript 5, the `source` property no longer returns an empty str
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.source">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.source</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.source</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -80152,10 +88028,24 @@ You might want to return [`Array`](../array) objects in your derived array class
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-symbol.species">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-symbol.species</span></a></td></tr></tbody></table>
+<span class="small">#sec-symbol.species</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -80332,10 +88222,24 @@ If the specified number of elements to insert differs from the number of element
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-array.prototype.splice">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-array.prototype.splice</span></a></td></tr></tbody></table>
+<span class="small">#sec-array.prototype.splice</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -80557,10 +88461,24 @@ It doesn't work if the string contains grapheme clusters, even when using a unic
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.split">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.split</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.split</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81013,10 +88931,24 @@ Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sqrt">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sqrt</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sqrt</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81123,10 +89055,24 @@ The following function returns 1 over the square root of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sqrt1_2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sqrt1_2</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sqrt1_2</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81231,10 +89177,24 @@ The following function returns the square root of 2:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-math.sqrt2">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-math.sqrt2</span></a></td></tr></tbody></table>
+<span class="small">#sec-math.sqrt2</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81518,10 +89478,24 @@ A more robust (fully ES2015 specification compliant), but less performant and co
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.startswith">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.startswith</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.startswith</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81684,10 +89658,24 @@ Static members are not directly accessible using the [`this`](../operators/this)
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-class-definitions">ECMAScript (ECMA-262) 
 <br/>
 
-<span class="small">The definition of 'Class definitions' in that specification.</span></a></td></tr></tbody></table>
+<span class="small">The definition of 'Class definitions' in that specification.</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -81842,10 +89830,24 @@ Examples of correct behavior:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-get-regexp.prototype.sticky">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-get-regexp.prototype.sticky</span></a></td></tr></tbody></table>
+<span class="small">#sec-get-regexp.prototype.sticky</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -82074,10 +90076,24 @@ The value that has been stored.
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-atomics.store">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-atomics.store">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-atomics.store</span></a></td></tr></tbody></table>
+<span class="small">#sec-atomics.store</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -82231,10 +90247,24 @@ The most notable difference between this operator and the [equality](equality) (
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-equality-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -82362,10 +90392,24 @@ Like the strict equality operator, the strict inequality operator will always co
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-equality-operators">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-equality-operators</span></a></td></tr></tbody></table>
+<span class="small">#sec-equality-operators</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Browser compatibility
 
@@ -82889,7 +90933,21 @@ The following example uses string methods to change the formatting of a string:
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript) 
+<table>
+<thead>
+<tr class="header">
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<a href="https://tc39.es/ecma262/#sec-string.prototype.strike">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
-<span class="small">#sec-string.prototype.strike</span></a></td></tr></tbody></table>
+<span class="small">#sec-string.prototype.strike</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>

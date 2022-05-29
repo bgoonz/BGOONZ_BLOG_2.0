@@ -1,0 +1,168 @@
+import { MetaSysProps, MetaLinkProps, DefaultElements, MakeRequest } from '../common-types';
+import { DefinedParameters } from './widget-parameters';
+interface WidgetConfig {
+    /**
+     * Type of the widget used
+     */
+    widgetNamespace?: string;
+    /**
+     * ID of the widget used
+     */
+    widgetId?: string;
+    /**
+     * Instance parameter values
+     */
+    settings?: DefinedParameters;
+}
+export interface Control extends WidgetConfig {
+    /**
+     * ID of the customized field
+     */
+    fieldId: string;
+}
+export interface GroupControl extends WidgetConfig {
+    /**
+     * ID of the customized field group
+     */
+    groupId: string;
+}
+export interface FieldGroupItem {
+    groupId: string;
+    name: string;
+    items: EditorLayoutItem[];
+}
+export interface FieldItem {
+    fieldId: string;
+}
+export declare type EditorLayoutItem = FieldItem | FieldGroupItem;
+export interface Editor {
+    /**
+     * Type of the widget used
+     */
+    widgetNamespace: string;
+    /**
+     * ID of the widget used
+     */
+    widgetId: string;
+    /**
+     * Widget will be enabled if disabled property is missing
+     */
+    disabled?: boolean;
+    /**
+     * Instance parameter values
+     */
+    settings?: DefinedParameters;
+}
+export interface SidebarItem {
+    /**
+     * Type of the widget used
+     */
+    widgetNamespace: string;
+    /**
+     * ID of the widget used
+     */
+    widgetId: string;
+    /**
+     * Widget will be enabled if disabled property is missing
+     */
+    disabled?: boolean;
+    /**
+     * Instance parameter values
+     */
+    settings?: DefinedParameters;
+}
+export declare type EditorInterfaceProps = {
+    sys: MetaSysProps & {
+        space: {
+            sys: MetaLinkProps;
+        };
+        environment: {
+            sys: MetaLinkProps;
+        };
+        contentType: {
+            sys: MetaLinkProps;
+        };
+    };
+    /**
+     * Array of fields and their associated widgetId
+     */
+    controls?: Control[];
+    /**
+     * Array of field groups and their associated widgetId
+     */
+    groupControls?: GroupControl[];
+    /**
+     * Array of editors. Defaults will be used if property is missing.
+     */
+    editors?: Editor[];
+    /**
+     * Legacy singular editor override
+     */
+    editor?: Editor;
+    /**
+     * Array of editor layout field groups
+     */
+    editorLayout?: FieldGroupItem[];
+    /**
+     * Array of sidebar widgets. Defaults will be used if property is missing.
+     */
+    sidebar?: SidebarItem[];
+};
+export interface EditorInterface extends EditorInterfaceProps, DefaultElements<EditorInterfaceProps> {
+    /**
+     * Gets a control for a specific field
+     * @return control object for specific field
+     * ```javascript
+     * const contentful = require('contentful-management')
+     *
+     * const client = contentful.createClient({
+     *   accessToken: '<content_management_api_key>'
+     * })
+     *
+     * client.getSpace('<space_id>')
+     * .then((space) => space.getEnvironment('<environment_id>'))
+     * .then((environment) => environment.getContentType('<contentType_id>'))
+     * .then((contentType) => contentType.getEditorInterface())
+     * .then((editorInterface) => {
+     *  control = editorInterface.getControlForField('<field-id>')
+     *  console.log(control)
+     * })
+     * .catch(console.error)
+     * ```
+     */
+    getControlForField(id: string): null | Control;
+    /**
+     * Sends an update to the server with any changes made to the object's properties
+     * @return Object returned from the server with updated changes.
+     * ```javascript
+     * const contentful = require('contentful-management')
+     *
+     * const client = contentful.createClient({
+     *   accessToken: '<content_management_api_key>'
+     * })
+     *
+     * client.getSpace('<space_id>')
+     * .then((space) => space.getEnvironment('<environment_id>'))
+     * .then((environment) => environment.getContentType('<contentType_id>'))
+     * .then((contentType) => contentType.getEditorInterface())
+     * .then((editorInterface) => {
+     *  editorInterface.controls[0] = { "fieldId": "title", "widgetId": "singleLine"}
+     *  editorInterface.editors = [
+     *    { "widgetId": "custom-widget", "widgetNamespace": "app" }
+     *  ]
+     *  return editorInterface.update()
+     * })
+     * .catch(console.error)
+     * ```
+     */
+    update(): Promise<EditorInterface>;
+}
+/**
+ * @private
+ */
+export declare function wrapEditorInterface(makeRequest: MakeRequest, data: EditorInterfaceProps): EditorInterface;
+/**
+ * @private
+ */
+export declare const wrapEditorInterfaceCollection: (makeRequest: MakeRequest, data: import("../common-types").CollectionProp<EditorInterfaceProps>) => import("../common-types").Collection<EditorInterface, EditorInterfaceProps>;
+export {};

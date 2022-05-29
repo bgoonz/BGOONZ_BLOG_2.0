@@ -1,8 +1,8 @@
-Build config validation --- 1 info
+Build config validation --- 1 info
 
-[ ](https://docs.travis-ci.com/user/build-config-validation/)
+[ ](https://docs.travis-ci.com/user/build-config-validation/)
 
- bgoonz/BGOONZ_BLOG_2.0:.travis.yml@0de6597
+bgoonz/BGOONZ_BLOG_2.0:.travis.yml@0de6597
 
 ```
 language: node_js
@@ -22,7 +22,7 @@ script:
 
 ```
 
- Build Config
+Build Config
 
 ```
 {

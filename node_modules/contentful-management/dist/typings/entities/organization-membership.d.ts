@@ -1,0 +1,69 @@
+import { MetaSysProps, DefaultElements, MetaLinkProps, MakeRequest } from '../common-types';
+export declare type OrganizationMembershipProps = {
+    /**
+     * System metadata
+     */
+    sys: MetaSysProps & {
+        user: {
+            sys: MetaLinkProps;
+        };
+    };
+    /**
+     * Role
+     */
+    role: string;
+    /**
+     * status
+     */
+    status: boolean;
+};
+export interface OrganizationMembership extends OrganizationMembershipProps, DefaultElements<OrganizationMembershipProps> {
+    /**
+     * Sends an update to the server with any changes made to the object's properties
+     * @return Object returned from the server with updated changes.
+     * @example ```javascript
+     * const contentful = require('contentful-management')
+     *
+     * const client = contentful.createClient({
+     *   accessToken: '<content_management_api_key>'
+     * })
+     *
+     * client.getOrganization('organization_id')
+     * .then(org => org.getOrganizationMembership('organizationMembership_id'))
+     * .then((organizationMembership) => {
+     *  organizationMembership.role = 'member';
+     *  organizationMembership.update();
+     * })
+     * .catch(console.error)
+     */
+    update(): Promise<OrganizationMembership>;
+    /**
+     * Deletes this object on the server.
+     * @example```javascript
+     * const contentful = require('contentful-management')
+     *
+     * const client = contentful.createClient({
+     *   accessToken: '<content_management_api_key>'
+     * })
+     *
+     * client.getOrganization('organization_id')
+     * .then(org => org.getOrganizationMembership('organizationMembership_id'))
+     * .then((organizationMembership) => {
+     *  organizationMembership.delete();
+     * })
+     * .catch(console.error)
+     * ```
+     */
+    delete(): Promise<void>;
+}
+/**
+ * @private
+ * @param {function} makeRequest - function to make requests via an adapter
+ * @param {Object} data - Raw organization membership data
+ * @return {OrganizationMembership} Wrapped organization membership data
+ */
+export declare function wrapOrganizationMembership(makeRequest: MakeRequest, data: OrganizationMembershipProps, organizationId: string): OrganizationMembership;
+/**
+ * @private
+ */
+export declare const wrapOrganizationMembershipCollection: (makeRequest: MakeRequest, data: import("../common-types").CollectionProp<OrganizationMembershipProps>, organizationId: string) => import("../common-types").Collection<OrganizationMembership, OrganizationMembershipProps>;

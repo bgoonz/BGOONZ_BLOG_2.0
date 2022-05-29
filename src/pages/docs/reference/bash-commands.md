@@ -23,7 +23,6 @@ seo:
 template: docs
 ---
 
-
 ## My Commands:
 
 #### Find:
@@ -107,7 +106,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````sh
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -135,7 +134,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 
@@ -720,7 +719,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
     echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
@@ -775,11 +775,14 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+  awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+</li>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -833,7 +836,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
 
@@ -887,11 +891,13 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>
+<br>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
