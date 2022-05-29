@@ -1,8 +1,12 @@
 -   ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+=======
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!-- Initialise MakerBadge with options -->
 
@@ -21,22 +25,37 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     addthis
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     gtag-n-firebase
 
@@ -50,6 +69,16 @@
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+=======
     <script src="/__/firebase/8.8.1/firebase-app.js">
 </script>
 
@@ -61,12 +90,17 @@
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -78,24 +112,37 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     scroll-2-top
 
@@ -141,13 +188,21 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     original-analytics
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -156,18 +211,27 @@
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -176,13 +240,21 @@
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     goback
 
@@ -190,13 +262,21 @@
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+            echo "<a href='$url'></a>
+=======
             echo "<a href='$url'>
 </a>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     mdn-style
 
@@ -423,7 +503,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     meta
 
@@ -454,7 +538,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     meta
 
@@ -464,7 +552,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     back to top css
 
@@ -559,7 +651,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     print2pdf
 
@@ -572,7 +668,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     scroll2topsvg
 
@@ -624,9 +724,13 @@
 
     <div>
     <a class="top-link hide" href="" id="js-top">
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+=======
         <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
 <path d="M12 6H0l6-6z"/>
 </svg>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
@@ -707,7 +811,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     tawk-chat
 
@@ -729,7 +837,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     firebase-cdn
 
@@ -761,19 +873,31 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     add-this-suggested-pages
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     auth-firestore-cloud
 
@@ -791,14 +915,22 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     analytics
 
     ```
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L"></script>
+=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -810,14 +942,22 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     search-script
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+=======
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script type="text/javascript">
       algoliasearchNetlify({
         appId: 'O6OT9G9U8Z',
@@ -831,7 +971,11 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     more-meta-tags-open-graph
 
@@ -858,21 +1002,34 @@
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     simpleanalytics
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+=======
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
 </script>
     <noscript>
 <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     metaaaa
 
@@ -881,19 +1038,31 @@
     <meta property="twitter:card" content="summary_large_image">
     ```
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+
+=======
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 ### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)
 
 Inject analytics or other scripts into the HTML of your site.
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     blm
 
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+=======
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!-- Initialise MakerBadge with options -->
 
@@ -912,22 +1081,37 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     addthis
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     gtag-n-firebase
 
@@ -941,6 +1125,16 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+=======
     <script src="/__/firebase/8.8.1/firebase-app.js">
 </script>
 
@@ -952,12 +1146,17 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -969,24 +1168,37 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     scroll-2-top
 
@@ -1032,13 +1244,21 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     original-analytics
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -1047,18 +1267,27 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
     <noscript>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+=======
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -1067,13 +1296,21 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     goback
 
@@ -1081,23 +1318,38 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+            echo "<a href='$url'></a>
+=======
             echo "<a href='$url'>
 </a>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     prism
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script async defer src="./js/prism.js"></script>
+=======
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script async defer src="./js/prism.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <style>
     code[class*="language-"],
     pre[class*="language-"] {
@@ -1299,7 +1551,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     prismjs
 
@@ -1318,7 +1574,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     mdn-style
 
@@ -1545,7 +1805,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     meta
 
@@ -1576,7 +1840,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     prism2body
 
@@ -1595,14 +1863,22 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     algolia
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+=======
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script type="text/javascript">
       algoliasearchNetlify({
         appId: 'O6OT9G9U8Z',
@@ -1614,21 +1890,40 @@ Inject analytics or other scripts into the HTML of your site.
     </script>
     ```
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+
+
+
+
+
+
+
+
+=======
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 Control the post processing and optimizations Netlify can do for you
 
 ### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)
 
 Inject analytics or other scripts into the HTML of your site.
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     blm
 
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+=======
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!-- Initialise MakerBadge with options -->
 
@@ -1647,22 +1942,37 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     addthis
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     apple
 
@@ -1672,11 +1982,18 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     hit counter
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2"></div><script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async></script><br><a href="https://www.freecounterstat.com">page counter</a><noscript><a href="https://www.freecounterstat.com" title="page counter"><img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter"></a></noscript>
+=======
     <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2">
 </div>
 <script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async>
@@ -1688,11 +2005,16 @@ Inject analytics or other scripts into the HTML of your site.
 <img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter">
 </a>
 </noscript>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     go-back
 
@@ -1700,18 +2022,30 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+            echo "<a href='$url'></a>";
+=======
             echo "<a href='$url'>
 </a>";
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
           ?>
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     clock
 
     ```
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;"><p><a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a></p><div id="clock_block_cb6108ec1776002"></div></div>
+    <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+=======
     <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;">
 <p>
 <a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a>
@@ -1721,18 +2055,27 @@ Inject analytics or other scripts into the HTML of your site.
 </div>
     <script type="text/javascript" src="//w.24timezones.com/l.js" async>
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     algolia
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+=======
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -1742,32 +2085,52 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <div id="search"></div>
+=======
     <div id="search">
 </div>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     algolia-cdn
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+=======
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     algolia2
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+=======
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -1777,22 +2140,59 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <div id="search"></div>
+=======
     <div id="search">
 </div>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
     Remove
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+
+
+=======
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 ### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)
 
 Inject analytics or other scripts into the HTML of your site.---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     scroll2top
 
     ```html
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+
+      </script>
+      <script type="text/javascript">
+        function hideLoader() {
+          $( '#loading' ).hide();
+        }
+        $( window ).ready( hideLoader );
+        // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+        setTimeout( hideLoader, 10 * 1000 );
+        $( window ).on( 'beforeunload', function () {
+          $( window ).scrollTop( 0 );
+        } );
+      </script>
+
+      <script>
+        $( window ).scroll( function () {
+          $( "#back" ).stop().animate( {
+            "marginTop": ( $( window ).scrollTop() ) + "px",
+            "marginLeft": ( $( window ).scrollLeft() ) + "px"
+          }, "slow" );
+        } );
+      </script>
+=======
 </script>
     <script type="text/javascript">
         function hideLoader() {
@@ -1819,10 +2219,24 @@ Inject analytics or other scripts into the HTML of your site.---
                 );
         });
     </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+
+    spotify
+
+    ```html
+    <iframe src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style="   position: fixed;bottom: 50;right: 50;"frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    ```
+
+---
+
+-   before `</body>`
+=======
 -   before `</body>`
 
         spotify
@@ -1853,11 +2267,27 @@ Inject analytics or other scripts into the HTML of your site.---
 ---
 
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     scroll2-vanilla
 
     ```html
     <script>
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+            window.addEventListener( 'DOMContentLoaded', ( event ) => {
+              console.log( 'DOM fully loaded and parsed' );
+              const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if ( c > 0 ) {
+                  window.requestAnimationFrame( scrollToTop );
+                  window.scrollTo( 0, c - c / 8 );
+                }
+              };
+              scrollToTop();
+            } );
+
+          </script>
+=======
         window.addEventListener('DOMContentLoaded', (event) => {
             console.log('DOM fully loaded and parsed');
             const scrollToTop = () => {
@@ -1870,23 +2300,43 @@ Inject analytics or other scripts into the HTML of your site.---
             scrollToTop();
         });
     </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     blm
 
     ```html
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+=======
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     <!-- Initialise MakerBadge with options -->
 
     <script>
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+      BLMBadge.init({
+           layout:1,
+           theme:'dark',
+           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+           promoLink : 'https://minnesotafreedomfund.org/',
+           message : 'To be silent is to be complicit. Black lives matter.',
+           title : '#BlackLivesMatter',
+           imageAlt: "Black Lives Matter Badge"
+    })
+=======
         BLMBadge.init({
             layout: 1,
             theme: 'dark',
@@ -1896,18 +2346,35 @@ Inject analytics or other scripts into the HTML of your site.---
             title: '#BlackLivesMatter',
             imageAlt: 'Black Lives Matter Badge'
         });
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     </script>
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+=======
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     iframe-style
 
     ```html
     <style>
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    iframe{
+    overflow-y: scroll!important;
+    overflow-x: scroll!important;
+    border-radius:26px;
+    border: 3px solid gold;
+    height:1100px;
+    width:100%;
+    margin:auto;
+    text-align:center;
+    align-self:center;
+=======
         iframe{
         overflow-y: scroll!important;
         overflow-x: scroll!important;
@@ -1918,26 +2385,75 @@ Inject analytics or other scripts into the HTML of your site.---
         margin:auto;
         text-align:center;
         align-self:center;
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     </style>
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     addThis
 
     ```html
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 </script>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</head>`
+
+    analytics-n-addsense
+
+    ```html
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4W5MG3DG4T');
+    </script>
+
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    ```
+
+---
+
+-   before `</head>`
+=======
 -   before `</head>`
 
         analytics-n-addsense
@@ -2001,11 +2517,75 @@ Inject analytics or other scripts into the HTML of your site.---
 ---
 
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     netlify-oauth
 
     ```html
     <!--- This example uses jQuery: -->
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+      <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+      <!-- Make sure to include Nelify's authentication library -->
+      <!-- Also available via npm as netlify-auth-providers -->
+      <script src="https://unpkg.com/netlify-auth-providers"></script>
+
+      <script>
+        $(function() {
+          $("#login").on("click", function(e) {
+            e.preventDefault();
+            var authenticator = new netlify.default ({});
+            authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
+              if (err) {
+                return $("#output").text("Error Authenticating with GitHub: " + err);
+              }
+              $("#output").text("Authenticated with GitHub. Access Token: " + data.token);
+            });
+          });
+        });
+      </script>
+    ```
+
+---
+
+-   before `</body>`
+
+    github-netlify-oauth
+
+    ```html
+    <h1>GitHub Auth Demo:</h1>
+      <p><a href="#" id="login">Authenticate</a></p>
+      <p id="output"></p>
+    ```
+
+---
+
+-   before `</body>`
+
+    content-authoring
+
+    ```html
+    <script src="https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js"></script>
+    ```
+
+---
+
+-   before `</head>`
+
+    Algolia-Search
+
+    ```html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'BAGY237H21',
+        apiKey: '5f5a2d1bb109c79803ca95250ca3496c',
+        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+        branch: 'master',
+        selector: 'div#search',
+      });
+=======
     <script src="https://code.jquery.com/jquery-1.11.2.js">
 </script>
 
@@ -2027,11 +2607,15 @@ Inject analytics or other scripts into the HTML of your site.---
                 });
             });
         });
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
     </script>
     ```
 
 ---
 
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+-   before `</body>`
+=======
 -   before `</body>`
 
     github-netlify-oauth
@@ -2080,10 +2664,35 @@ Inject analytics or other scripts into the HTML of your site.---
 ---
 
 -   before `</body>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     searcg
 
     ```html
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="search"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    ```
+
+ ---
+
+-   before `</head>`
+=======
     <br />
     <br />
     <br />
@@ -2107,10 +2716,18 @@ Inject analytics or other scripts into the HTML of your site.---
 ---
 
 -   before `</head>`
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
 
     algolia-search-cdn
 
     ```html
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+    ```
+
+
+=======
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js">
 </script>
     ```
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/documentation/netlify-injected-content.md

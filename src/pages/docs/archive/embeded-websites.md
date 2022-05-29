@@ -195,20 +195,39 @@ template: docs
 
 -   [Live Implementation](https://bryan-guner.gitbook.io/lambda-labs/group-1/live-implementation)
 
+<<<<<<< HEAD
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbOwyinWBikQ5jdEpSx5WcI%2FFamily-Promise-Copy"
+=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbOwyinWBikQ5jdEpSx5WcI%2FFamily-Promise-Copy"
+>>>>>>> master
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Family_Promise_embed"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+<<<<<<< HEAD
+   ></iframe>
+
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/family-promise-embed-b434z?autoresize=1&fontsize=12&hidenavigation=1&theme=dark&view=preview"
+=======
    >
 </iframe>
 <br>
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/family-promise-embed-b434z?autoresize=1&fontsize=12&hidenavigation=1&theme=dark&view=preview"
+>>>>>>> master
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Family_Promise_embed"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+<<<<<<< HEAD
+   ></iframe>
+
+<br>
+<hr>
+<br>
+
+<hr>
+=======
    >
 </iframe>
 <br>
@@ -227,16 +246,27 @@ template: docs
 <br>
 <br>
 
+>>>>>>> master
 <br>
 <br>
 <h1>   Family-Promise Application</h1>
 <br>
+<<<<<<< HEAD
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://a.familypromiseservicetracker.dev/dashboard" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://a.familypromiseservicetracker.dev/dashboard" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
+>>>>>>> master
 <br>
 <br>
 <br>
 <br>
+<<<<<<< HEAD
+<hr>
+<br>
+<br>
+<br>
+=======
 <br>
 
 <br>
@@ -247,3 +277,4 @@ template: docs
 <br>
 <br>
 <br>
+>>>>>>> master

@@ -10,8 +10,13 @@ seo:
     robots: []
     extra: []
 template: post
+<<<<<<< HEAD
+thumb_image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
+=======
 thumb_image: images/https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
 image: images/https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/225px-GraphQL_Logo.svg.png
+>>>>>>> master
 ---
 
 ## Table of Contents&#xA;&#xA;

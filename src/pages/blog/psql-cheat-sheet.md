@@ -4,17 +4,27 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
+<<<<<<< HEAD
 image: /blog/psql.jpg
-thumb_image: /blog/psql.jpg
+thumb_image: /blog/psql-schema.jpg
+image_position: top
+author: src/data/authors/bgoon.yaml
+=======
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
+>>>>>>> master
 categories:
-  - src/data/categories/db.yaml
+    - src/data/categories/db.yaml
 tags:
-  - src/data/tags/psql.yaml
+    - src/data/tags/psql.yaml
 show_author_bio: true
+<<<<<<< HEAD
+=======
 related_posts:
-  - src/pages/blog/psql-cheat-sheet.md
+    - src/pages/blog/psql-cheat-sheet.md
+>>>>>>> master
 cmseditable: true
 ---
 
@@ -391,6 +401,12 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
+<<<<<<< HEAD
 * [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
 * [PostgreSQL Exercises](https://pgexercises.com)
 * [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+=======
+-   [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+-   [PostgreSQL Exercises](https://pgexercises.com)
+-   [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+>>>>>>> master

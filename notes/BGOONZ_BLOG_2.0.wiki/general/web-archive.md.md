@@ -5,6 +5,11 @@
      title="Search Archive"
       ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/web-archive.md.md
+   ></iframe>
+
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600"></iframe>
+=======
    >
 </iframe>
 <br>
@@ -12,6 +17,7 @@
 <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
 </iframe>
 <br>
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/web-archive.md.md
 
 Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
 

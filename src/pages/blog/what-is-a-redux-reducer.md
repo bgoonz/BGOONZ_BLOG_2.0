@@ -4,8 +4,8 @@ template: post
 subtitle: A reducer is a function that determines changes to an applications state
 excerpt: A reducer is a function that determines changes to an applications state
 date: 2022-05-16T06:08:24.979Z
-image: images/redux.gif
-thumb_image: images/redux.gif
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
@@ -21,9 +21,7 @@ related_posts:
 cmseditable: true
 ---
 
-
 # What is a Redux Reducer?
-
 
 **This tutorial will teach you "how Redux works"**, as well as _why_ these patterns exist. Fair warning though - learning the concepts is different from putting them into practice in actual apps.
 

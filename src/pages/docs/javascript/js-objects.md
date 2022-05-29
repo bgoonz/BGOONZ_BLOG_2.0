@@ -56,8 +56,12 @@ value will always be converted to a **string**.
 
 <div class="callout secondary">
 
+<<<<<<< HEAD
+<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+=======
 <i class="fa fa-info-circle" aria-hidden="true">
 </i> **ES2015**
+>>>>>>> master
 
 ES2015 adds two extensions to object values and object literals:
 

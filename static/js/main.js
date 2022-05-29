@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-undef */
 window.onGatsbyInitialClientRender = function () {
     /**
      * Main JS file for theme behaviours
@@ -100,7 +98,9 @@ window.onGatsbyInitialClientRender = function () {
             const pageContent = document.querySelector('.type-docs .post-content');
 
             // Create in-page navigation
-            const headerLinks = getHeaderLinks({ root: pageContent });
+            const headerLinks = getHeaderLinks({
+                root: pageContent
+            });
             if (headerLinks.length > 0) {
                 pageToc.classList.add('has-links');
                 renderHeaderLinks(pageTocContainer, headerLinks);
@@ -121,7 +121,10 @@ window.onGatsbyInitialClientRender = function () {
             // Highlight current anchor
             let pageTocLinks = pageTocContainer.getElementsByTagName('a');
             if (pageTocLinks.length > 0) {
-                let spy = new Gumshoe('#page-nav-inside a', { nested: true, nestedClass: 'active-parent' });
+                let spy = new Gumshoe('#page-nav-inside a', {
+                    nested: true,
+                    nestedClass: 'active-parent'
+                });
             }
 
             // Add link to page content headings
@@ -169,7 +172,12 @@ window.onGatsbyInitialClientRender = function () {
 
     function createLinksForHeaderElements(elements) {
         let result = [];
-        let stack = [{ level: 0, children: result }];
+        let stack = [
+            {
+                level: 0,
+                children: result
+            }
+        ];
         let re = /^h(\d)$/;
         for (let i = 0; i < elements.length; i++) {
             let element = elements[i];
@@ -250,5 +258,5 @@ window.onGatsbyInitialClientRender = function () {
     }
 
     // Syntax Highlighter
-    Prism.highlightAll();
+    // Prism.highlightAll();
 };

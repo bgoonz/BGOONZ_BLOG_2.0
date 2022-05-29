@@ -23,6 +23,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 ![](images/0001-76d89ef6.jpg)
 
 # Title
@@ -442,8 +446,12 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>\`\`\`</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
+<<<<<<< HEAD
+<pre lang="no-highlight"><code>```js
+=======
 <pre lang="no-highlight">
 <code>```js
+>>>>>>> master
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -457,8 +465,12 @@ print s
 No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
+<<<<<<< HEAD
+</code></pre>
+=======
 </code>
 </pre>
+>>>>>>> master
 
 ```js
 var s = 'JavaScript syntax highlighting';
@@ -621,10 +633,15 @@ They can't be added directly but you can add an image with a link to the video l
 
 ```no-highlight
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+<<<<<<< HEAD
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+=======
 " target="_blank">
 <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
 </a>
+>>>>>>> master
 ```
 
 Or, in pure Markdown, but losing the image sizing and border:
@@ -679,9 +696,13 @@ Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar
 
 ## Video Embeds
 
+<<<<<<< HEAD
+<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen></iframe>
+=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="560" height="315" src="https://www.youtube.com/embed/8uuFIi-ghPI"  allowfullscreen>
 </iframe>
 <br>
+>>>>>>> master
 
 ## Code Blocks
 
@@ -736,8 +757,14 @@ window.$docsify = {
   </table>
 </div>
 
+<<<<<<< HEAD
+<div class="note"><strong>Note:</strong> Both of the features you used above are parts of the Document Object Model (DOM) API, which allows you to manipulate documents.</div>
+
+<div class="important"><strong>Important:</strong> In this article, try entering the example code lines into your JavaScript console to see what happens. For more details on JavaScript consoles, see Discover browser developer tools.</div>
+=======
 <div class="note">
 <strong>Note:</strong> Both of the features you used above are parts of the Document Object Model (DOM) API, which allows you to manipulate documents.</div>
 
 <div class="important">
 <strong>Important:</strong> In this article, try entering the example code lines into your JavaScript console to see what happens. For more details on JavaScript consoles, see Discover browser developer tools.</div>
+>>>>>>> master

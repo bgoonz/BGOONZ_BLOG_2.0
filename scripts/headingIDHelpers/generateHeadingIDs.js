@@ -2,7 +2,7 @@ const assert = require('assert');
 const fs = require('fs');
 const GithubSlugger = require('github-slugger');
 const walk = require('./walk');
-// eslint-disable 
+// eslint-disable
 let modules;
 
 function stripLinks(line) {
@@ -15,37 +15,21 @@ function addHeaderID(line, slugger) {
         return line;
     }
 
-    const match =
-        /^(#+\s+)(.+?)(\s*\{(?:\/\*|#)([^\}\*\/]+)(?:\*\/)?\}\s*)?$/.exec(line);
+    const match = /^(#+\s+)(.+?)(\s*\{(?:\/\*|#)([^\}\*\/]+)(?:\*\/)?\}\s*)?$/.exec(line);
     const before = match[1] + match[2];
-    const proc = modules
-        .unified()
-        .use(modules.remarkParse)
-        .use(modules.remarkSlug);
+    const proc = modules.unified().use(modules.remarkParse).use(modules.remarkSlug);
     const tree = proc.runSync(proc.parse(before));
     const head = tree.children[0];
-    assert(
-        head && head.type === 'heading',
-        'expected `' +
-        before +
-        '` to be a heading, is it using a normal space after `#`?'
-    );
+    assert(head && head.type === 'heading', 'expected `' + before + '` to be a heading, is it using a normal space after `#`?');
     const autoId = head.data.id;
     const existingId = match[4];
     const id = existingId || autoId;
     // Ignore numbers:
-    const cleanExisting = existingId ?
-        existingId.replace(/-\d+$/, '') :
-        undefined;
+    const cleanExisting = existingId ? existingId.replace(/-\d+$/, '') : undefined;
     const cleanAuto = autoId.replace(/-\d+$/, '');
 
     if (cleanExisting && cleanExisting !== cleanAuto) {
-        console.log(
-            'Note: heading `%s` has a different ID (`%s`) than what GH generates for it: `%s`:',
-            before,
-            existingId,
-            autoId
-        );
+        console.log('Note: heading `%s` has a different ID (`%s`) than what GH generates for it: `%s`:', before, existingId, autoId);
     }
 
     return match[1] + match[2] + ' {/*' + id + '*/}';
@@ -76,11 +60,7 @@ function addHeaderIDs(lines) {
 async function main(paths) {
     paths = paths.length === 0 ? ['src/pages'] : paths;
 
-    const [unifiedMod, remarkParseMod, remarkSlugMod] = await Promise.all([
-        import('unified'),
-        import('remark-parse'),
-        import('remark-slug'),
-    ]);
+    const [unifiedMod, remarkParseMod, remarkSlugMod] = await Promise.all([import('unified'), import('remark-parse'), import('remark-slug')]);
     const unified = unifiedMod.default;
     const remarkParse = remarkParseMod.default;
     const remarkSlug = remarkSlugMod.default;

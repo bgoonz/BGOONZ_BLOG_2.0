@@ -1,7 +1,3 @@
-/* eslint-disable no-prototype-builtins */
-/* eslint-disable no-undef */
-/* eslint-disable no-empty */
-/* eslint-disable linebreak-style */
 var e;
 var t;
 (e = self),
@@ -58,7 +54,10 @@ var t;
                                     props: t,
                                     payload: a
                                 })),
-                                    r({ state: o, prevState: c });
+                                    r({
+                                        state: o,
+                                        prevState: c
+                                    });
                             }
                         };
                     }
@@ -399,7 +398,7 @@ var t;
                     function x(e, t) {
                         return (
                             (r = e),
-                            (null == r ? void 0 : r.execute)
+                            Boolean(null == r ? void 0 : r.execute)
                                 ? B(
                                       B({}, e),
                                       {},
@@ -411,7 +410,10 @@ var t;
                                           }))
                                       }
                                   )
-                                : { items: e, sourceId: t }
+                                : {
+                                      items: e,
+                                      sourceId: t
+                                  }
                         );
                         var r;
                     }
@@ -510,7 +512,10 @@ var t;
                                         JSON.stringify(void 0),
                                         '.\n\nDid you forget to return items?\n\nSee: https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/sources/#param-getitems'
                                     ),
-                                { source: t, items: o }
+                                {
+                                    source: t,
+                                    items: o
+                                }
                             );
                         });
                     }
@@ -538,13 +543,22 @@ var t;
                                             (o += i.items.length), u++;
                                         }
                                         return t.activeItemId - o;
-                                    })({ state: e, collection: t })
+                                    })({
+                                        state: e,
+                                        collection: t
+                                    })
                                 ],
                             n = t.source;
                         return {
                             item: r,
-                            itemInputValue: n.getItemInputValue({ item: r, state: e }),
-                            itemUrl: n.getItemUrl({ item: r, state: e }),
+                            itemInputValue: n.getItemInputValue({
+                                item: r,
+                                state: e
+                            }),
+                            itemUrl: n.getItemUrl({
+                                item: r,
+                                state: e
+                            }),
                             source: n
                         };
                     }
@@ -633,11 +647,25 @@ var t;
                             m = l.setStatus;
                         if ((f(o), d(u.defaultActiveItemId), !o && !1 === u.openOnFocus)) {
                             var v,
-                                h = c.getState().collections.map((e) => M(M({}, e), {}, { items: [] }));
+                                h = c.getState().collections.map((e) =>
+                                    M(
+                                        M({}, e),
+                                        {},
+                                        {
+                                            items: []
+                                        }
+                                    )
+                                );
                             return (
                                 m('idle'),
                                 s(h),
-                                p(null !== (v = n.isOpen) && void 0 !== v ? v : u.shouldPanelOpen({ state: c.getState() })),
+                                p(
+                                    null !== (v = n.isOpen) && void 0 !== v
+                                        ? v
+                                        : u.shouldPanelOpen({
+                                              state: c.getState()
+                                          })
+                                ),
                                 $(h).then(() => Promise.resolve())
                             );
                         }
@@ -726,7 +754,9 @@ var t;
                                 .then((e) => {
                                     var r;
                                     m('idle'), s(e);
-                                    var i = u.shouldPanelOpen({ state: c.getState() });
+                                    var i = u.shouldPanelOpen({
+                                        state: c.getState()
+                                    });
                                     p(null !== (r = n.isOpen) && void 0 !== r ? r : (u.openOnFocus && !o && i) || i);
                                     var f = q(c.getState());
                                     if (null !== c.getState().activeItemId && f) {
@@ -1161,7 +1191,9 @@ var t;
                                                             X(
                                                                 {
                                                                     event: t,
-                                                                    nextState: { isOpen: !1 },
+                                                                    nextState: {
+                                                                        isOpen: !1
+                                                                    },
                                                                     props: r,
                                                                     query: s,
                                                                     refresh: n,
@@ -1286,7 +1318,9 @@ var t;
                                                       ie(
                                                           {
                                                               event: e,
-                                                              nextState: { isOpen: !1 },
+                                                              nextState: {
+                                                                  isOpen: !1
+                                                              },
                                                               props: t,
                                                               query: a,
                                                               refresh: r,
@@ -1437,7 +1471,13 @@ var t;
                     var _e = (e, t) => {
                         switch (t.type) {
                             case 'setActiveItemId':
-                                return ge(ge({}, e), {}, { activeItemId: t.payload });
+                                return ge(
+                                    ge({}, e),
+                                    {},
+                                    {
+                                        activeItemId: t.payload
+                                    }
+                                );
                             case 'setQuery':
                                 return ge(
                                     ge({}, e),
@@ -1448,11 +1488,29 @@ var t;
                                     }
                                 );
                             case 'setCollections':
-                                return ge(ge({}, e), {}, { collections: t.payload });
+                                return ge(
+                                    ge({}, e),
+                                    {},
+                                    {
+                                        collections: t.payload
+                                    }
+                                );
                             case 'setIsOpen':
-                                return ge(ge({}, e), {}, { isOpen: t.payload });
+                                return ge(
+                                    ge({}, e),
+                                    {},
+                                    {
+                                        isOpen: t.payload
+                                    }
+                                );
                             case 'setStatus':
-                                return ge(ge({}, e), {}, { status: t.payload });
+                                return ge(
+                                    ge({}, e),
+                                    {},
+                                    {
+                                        status: t.payload
+                                    }
+                                );
                             case 'setContext':
                                 return ge(
                                     ge({}, e),
@@ -1471,7 +1529,15 @@ var t;
                                             : De(1, e.activeItemId, s(e), t.props.defaultActiveItemId)
                                     }
                                 );
-                                return ge(ge({}, r), {}, { completion: he({ state: r }) });
+                                return ge(
+                                    ge({}, r),
+                                    {},
+                                    {
+                                        completion: he({
+                                            state: r
+                                        })
+                                    }
+                                );
                             case 'ArrowUp':
                                 var n = ge(
                                     ge({}, e),
@@ -1480,7 +1546,15 @@ var t;
                                         activeItemId: De(-1, e.activeItemId, s(e), t.props.defaultActiveItemId)
                                     }
                                 );
-                                return ge(ge({}, n), {}, { completion: he({ state: n }) });
+                                return ge(
+                                    ge({}, n),
+                                    {},
+                                    {
+                                        completion: he({
+                                            state: n
+                                        })
+                                    }
+                                );
                             case 'Escape':
                                 return e.isOpen
                                     ? ge(
@@ -1528,7 +1602,11 @@ var t;
                                     {},
                                     {
                                         activeItemId: t.props.defaultActiveItemId,
-                                        isOpen: (t.props.openOnFocus || Boolean(e.query)) && t.props.shouldPanelOpen({ state: e })
+                                        isOpen:
+                                            (t.props.openOnFocus || Boolean(e.query)) &&
+                                            t.props.shouldPanelOpen({
+                                                state: e
+                                            })
                                     }
                                 );
                             case 'blur':
@@ -1543,7 +1621,13 @@ var t;
                                           }
                                       );
                             case 'mousemove':
-                                return ge(ge({}, e), {}, { activeItemId: t.payload });
+                                return ge(
+                                    ge({}, e),
+                                    {},
+                                    {
+                                        activeItemId: t.payload
+                                    }
+                                );
                             case 'mouseleave':
                                 return ge(
                                     ge({}, e),
@@ -1765,7 +1849,9 @@ var t;
                                         t.dispatch('setContext', e);
                                     }
                                 };
-                            })({ store: n }),
+                            })({
+                                store: n
+                            }),
                             a = le(
                                 Ae(
                                     {
@@ -1781,7 +1867,9 @@ var t;
                                 Ae(
                                     {
                                         event: new Event('input'),
-                                        nextState: { isOpen: n.getState().isOpen },
+                                        nextState: {
+                                            isOpen: n.getState().isOpen
+                                        },
                                         props: r,
                                         query: n.getState().query,
                                         refresh: l,
@@ -1836,11 +1924,21 @@ var t;
                                 }),
                                 environment: r.environment
                             }),
-                            Ae(Ae({ refresh: l }, a), u)
+                            Ae(
+                                Ae(
+                                    {
+                                        refresh: l
+                                    },
+                                    a
+                                ),
+                                u
+                            )
                         );
                     }
                     function Fe(e) {
-                        return { current: e };
+                        return {
+                            current: e
+                        };
                     }
                     function Pe(e, t) {
                         var r = void 0;
@@ -2289,7 +2387,11 @@ var t;
                         if (o) {
                             var S = f('div', {
                                     class: n.detachedSearchButtonIcon,
-                                    children: [je({ environment: u })]
+                                    children: [
+                                        je({
+                                            environment: u
+                                        })
+                                    ]
                                 }),
                                 B = f('div', {
                                     class: n.detachedSearchButtonPlaceholder,
@@ -2434,7 +2536,15 @@ var t;
                                         : 'string' == typeof d || 'number' == typeof d || 'bigint' == typeof d
                                         ? at(null, d, null, null, d)
                                         : Array.isArray(d)
-                                        ? at(ct, { children: d }, null, null, null)
+                                        ? at(
+                                              ct,
+                                              {
+                                                  children: d
+                                              },
+                                              null,
+                                              null,
+                                              null
+                                          )
                                         : d.__b > 0
                                         ? at(d.type, d.props, d.key, null, d.__v)
                                         : d)
@@ -2793,7 +2903,10 @@ var t;
                         return (
                             t.forEach((e) => {
                                 var t = e.split(St);
-                                n.add({ value: t[0], isHighlighted: !0 }),
+                                n.add({
+                                    value: t[0],
+                                    isHighlighted: !0
+                                }),
                                     '' !== t[1] &&
                                         n.add({
                                             value: t[1],
@@ -2842,7 +2955,12 @@ var t;
                             r = e.attribute,
                             n = Array.isArray(r) ? r : [r],
                             u = jt(t, ['_highlightResult'].concat(It(n), ['value']));
-                        return 'string' != typeof u && (u = jt(t, n) || ''), Bt({ highlightedValue: u });
+                        return (
+                            'string' != typeof u && (u = jt(t, n) || ''),
+                            Bt({
+                                highlightedValue: u
+                            })
+                        );
                     }
                     var Nt = {
                             '&amp;': '&',
@@ -2932,7 +3050,21 @@ var t;
                             return t(
                                 r,
                                 {},
-                                ((n = { hit: u, attribute: o }), Wt(xt(n))).map((e, r) => (e.isHighlighted ? t(a, { key: r }, e.value) : e.value))
+                                ((n = {
+                                    hit: u,
+                                    attribute: o
+                                }),
+                                Wt(xt(n))).map((e, r) =>
+                                    e.isHighlighted
+                                        ? t(
+                                              a,
+                                              {
+                                                  key: r
+                                              },
+                                              e.value
+                                          )
+                                        : e.value
+                                )
                             );
                         };
                     }
@@ -2975,7 +3107,12 @@ var t;
                             r = e.attribute,
                             n = Array.isArray(r) ? r : [r],
                             u = jt(t, ['_snippetResult'].concat(Jt(n), ['value']));
-                        return 'string' != typeof u && (u = jt(t, n) || ''), Bt({ highlightedValue: u });
+                        return (
+                            'string' != typeof u && (u = jt(t, n) || ''),
+                            Bt({
+                                highlightedValue: u
+                            })
+                        );
                     }
                     function zt(e) {
                         var t = e.createElement,
@@ -2989,7 +3126,21 @@ var t;
                             return t(
                                 r,
                                 {},
-                                ((n = { hit: u, attribute: o }), Wt($t(n))).map((e, r) => (e.isHighlighted ? t(a, { key: r }, e.value) : e.value))
+                                ((n = {
+                                    hit: u,
+                                    attribute: o
+                                }),
+                                Wt($t(n))).map((e, r) =>
+                                    e.isHighlighted
+                                        ? t(
+                                              a,
+                                              {
+                                                  key: r
+                                              },
+                                              e.value
+                                          )
+                                        : e.value
+                                )
                             );
                         };
                     }
@@ -3004,7 +3155,20 @@ var t;
                             return t(
                                 r,
                                 {},
-                                $t({ hit: n, attribute: u }).map((e, r) => (e.isHighlighted ? t(i, { key: r }, e.value) : e.value))
+                                $t({
+                                    hit: n,
+                                    attribute: u
+                                }).map((e, r) =>
+                                    e.isHighlighted
+                                        ? t(
+                                              i,
+                                              {
+                                                  key: r
+                                              },
+                                              e.value
+                                          )
+                                        : e.value
+                                )
                             );
                         };
                     }
@@ -3134,7 +3298,10 @@ var t;
                         ur = (e, t) => {
                             Pt(e.children, t);
                         },
-                        or = { createElement: it, Fragment: ct };
+                        or = {
+                            createElement: it,
+                            Fragment: ct
+                        };
                     function ir(e) {
                         var t = e.panelPlacement,
                             r = e.container,
@@ -3144,7 +3311,10 @@ var t;
                             i = (u.pageYOffset || u.document.documentElement.scrollTop || u.document.body.scrollTop || 0) + o.top + o.height;
                         switch (t) {
                             case 'start':
-                                return { top: i, left: o.left };
+                                return {
+                                    top: i,
+                                    left: o.left
+                                };
                             case 'end':
                                 return {
                                     top: i,
@@ -3218,7 +3388,12 @@ var t;
                             e
                         );
                     }
-                    var pr = [{ segment: 'autocomplete-js', version: se }];
+                    var pr = [
+                        {
+                            segment: 'autocomplete-js',
+                            version: se
+                        }
+                    ];
                     function fr(e) {
                         return (
                             ((e) => {
@@ -3348,7 +3523,9 @@ var t;
                                         var r = e(),
                                             n = {
                                                 _fn: e,
-                                                _ref: { current: r },
+                                                _ref: {
+                                                    current: r
+                                                },
                                                 get value() {
                                                     return this._ref.current;
                                                 },
@@ -3604,7 +3781,9 @@ var t;
                                             lr(
                                                 {
                                                     state: o,
-                                                    props: t.getInputProps({ inputElement: n.input }),
+                                                    props: t.getInputProps({
+                                                        inputElement: n.input
+                                                    }),
                                                     inputElement: n.input
                                                 },
                                                 r
@@ -3617,7 +3796,9 @@ var t;
                                     Ne(n.loadingIndicator, {
                                         hidden: 'stalled' !== o.status
                                     }),
-                                    Ne(n.clearButton, { hidden: !o.query });
+                                    Ne(n.clearButton, {
+                                        hidden: !o.query
+                                    });
                             })(t),
                                 ((e, t) => {
                                     var r = t.autocomplete,
@@ -3779,7 +3960,14 @@ var t;
                         function A(...args) {
                             var e = args.length > 0 && void 0 !== args[0] ? args[0] : {};
                             u(),
-                                (p.current = hr(m.value.renderer, m.value.core, { initialState: D.current }, e)),
+                                (p.current = hr(
+                                    m.value.renderer,
+                                    m.value.core,
+                                    {
+                                        initialState: D.current
+                                    },
+                                    e
+                                )),
                                 c(),
                                 o(),
                                 h.value.refresh().then(() => {
@@ -3851,7 +4039,9 @@ var t;
                                                 m.value.core.environment.document.querySelectorAll('.aa-Panel--scrollable').forEach((e) => {
                                                     0 !== e.scrollTop && (e.scrollTop = 0);
                                                 }),
-                                            e({ state: r });
+                                            e({
+                                                state: r
+                                            });
                                     }),
                                     () => {
                                         d.current = void 0;
@@ -4082,7 +4272,16 @@ var t;
                                 })
                             );
                         }
-                        return (e) => (r) => Or(Or({ execute: t }, e), r);
+                        return (e) => (r) =>
+                            Or(
+                                Or(
+                                    {
+                                        execute: t
+                                    },
+                                    e
+                                ),
+                                r
+                            );
                     })((e) =>
                         ((e) => {
                             var t = e.searchClient,
@@ -4118,7 +4317,15 @@ var t;
                                     )
                                     .then((e) => e.results)
                             );
-                        })(Ir(Ir({}, e), {}, { userAgents: pr }))
+                        })(
+                            Ir(
+                                Ir({}, e),
+                                {},
+                                {
+                                    userAgents: pr
+                                }
+                            )
+                        )
                     );
                     function Nr(e, t) {
                         var r = Object.keys(e);
@@ -4162,8 +4369,24 @@ var t;
                                     return e.facetHits;
                                 }
                             }),
-                            r = e.queries.map((e) => Tr(Tr({}, e), {}, { type: 'facet' }));
-                        return t(Tr(Tr({}, e), {}, { queries: r }));
+                            r = e.queries.map((e) =>
+                                Tr(
+                                    Tr({}, e),
+                                    {},
+                                    {
+                                        type: 'facet'
+                                    }
+                                )
+                            );
+                        return t(
+                            Tr(
+                                Tr({}, e),
+                                {},
+                                {
+                                    queries: r
+                                }
+                            )
+                        );
                     }
                     var Lr = xr({
                         transformResponse(e) {
@@ -4172,10 +4395,7 @@ var t;
                     });
                 },
                 934: function (e) {
-                    /*! algoliasearch-lite.umd.js | 4.11.0 | ©
-                     * Algolia, inc. |
-                     * https://github.com/algolia/algoliasearch-client-javascript
-                     */
+                    /*! algoliasearch-lite.umd.js | 4.11.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
                     e.exports = (() => {
                         'use strict';
                         function e(e, t, r) {
@@ -4400,7 +4620,12 @@ var t;
                                   };
                         }
                         function c(...args) {
-                            var e = args.length > 0 && void 0 !== args[0] ? args[0] : { serializable: !0 },
+                            var e =
+                                    args.length > 0 && void 0 !== args[0]
+                                        ? args[0]
+                                        : {
+                                              serializable: !0
+                                          },
                                 t = {};
                             return {
                                 get(r, n) {
@@ -4470,13 +4695,24 @@ var t;
                                 }
                             );
                         }
-                        var m = { Read: 1, Write: 2, Any: 3 },
+                        var m = {
+                                Read: 1,
+                                Write: 2,
+                                Any: 3
+                            },
                             v = 1,
                             h = 2,
                             D = 3;
                         function y(e) {
                             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v;
-                            return r(r({}, e), {}, { status: t, lastUpdate: Date.now() });
+                            return r(
+                                r({}, e),
+                                {},
+                                {
+                                    status: t,
+                                    lastUpdate: Date.now()
+                                }
+                            );
                         }
                         function g(e) {
                             return 'string' == typeof e
@@ -4669,7 +4905,11 @@ var t;
                             return e.map((e) => j(e));
                         }
                         function j(e) {
-                            var t = e.request.headers['x-algolia-api-key'] ? { 'x-algolia-api-key': '*****' } : {};
+                            var t = e.request.headers['x-algolia-api-key']
+                                ? {
+                                      'x-algolia-api-key': '*****'
+                                  }
+                                : {};
                             return r(
                                 r({}, e),
                                 {},
@@ -4817,7 +5057,10 @@ var t;
                                         transporter: o,
                                         appId: t,
                                         addAlgoliaAgent(e, t) {
-                                            o.userAgent.add({ segment: e, version: t });
+                                            o.userAgent.add({
+                                                segment: e,
+                                                version: t
+                                            });
                                         },
                                         clearCache() {
                                             return Promise.all([o.requestsCache.clear(), o.responsesCache.clear()]).then(() => {});
@@ -4853,7 +5096,9 @@ var t;
                                     {
                                         method: _,
                                         path: '1/indexes/*/queries',
-                                        data: { requests: u },
+                                        data: {
+                                            requests: u
+                                        },
                                         cacheable: !0
                                     },
                                     n
@@ -4867,7 +5112,9 @@ var t;
                                             a = o.facetQuery,
                                             c = n(o, ['facetName', 'facetQuery']);
                                         return B(e)(t.indexName, {
-                                            methods: { searchForFacetValues: T }
+                                            methods: {
+                                                searchForFacetValues: T
+                                            }
                                         }).searchForFacetValues(i, a, r(r({}, u), c));
                                     })
                                 ),
@@ -4876,7 +5123,10 @@ var t;
                                     {
                                         method: _,
                                         path: p('1/answers/%s/prediction', e.indexName),
-                                        data: { query: t, queryLanguages: r },
+                                        data: {
+                                            query: t,
+                                            queryLanguages: r
+                                        },
                                         cacheable: !0
                                     },
                                     n
@@ -4886,7 +5136,9 @@ var t;
                                     {
                                         method: _,
                                         path: p('1/indexes/%s/query', e.indexName),
-                                        data: { query: t },
+                                        data: {
+                                            query: t
+                                        },
                                         cacheable: !0
                                     },
                                     r
@@ -4896,7 +5148,9 @@ var t;
                                     {
                                         method: _,
                                         path: p('1/indexes/%s/facets/%s/query', e.indexName, t),
-                                        data: { facetQuery: r },
+                                        data: {
+                                            facetQuery: r
+                                        },
                                         cacheable: !0
                                     },
                                     n
@@ -4909,7 +5163,11 @@ var t;
                                 o = {
                                     appId: e,
                                     apiKey: t,
-                                    timeouts: { connect: 1, read: 2, write: 30 },
+                                    timeouts: {
+                                        connect: 1,
+                                        read: 2,
+                                        write: 30
+                                    },
                                     requester: {
                                         send(e) {
                                             return new Promise((t) => {
@@ -4966,7 +5224,9 @@ var t;
                                             }
                                         }),
                                     responsesCache: c(),
-                                    requestsCache: c({ serializable: !1 }),
+                                    requestsCache: c({
+                                        serializable: !1
+                                    }),
                                     hostsCache: a({
                                         caches: [
                                             i({
@@ -5040,7 +5300,9 @@ var t;
                                     s: o,
                                     n() {
                                         return n >= e.length
-                                            ? { done: !0 }
+                                            ? {
+                                                  done: !0
+                                              }
                                             : {
                                                   done: !1,
                                                   value: e[n++]
@@ -5084,7 +5346,10 @@ var t;
                         for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                         return n;
                     }
-                    Object.defineProperty(t, '__esModule', { value: !0 }), (t.algoliasearchNetlify = void 0);
+                    Object.defineProperty(t, '__esModule', {
+                        value: !0
+                    }),
+                        (t.algoliasearchNetlify = void 0);
                     var o = r(369),
                         i = {
                             analytics: !0,
@@ -5126,8 +5391,18 @@ var t;
                             (n.enumerable = n.enumerable || !1), (n.configurable = !0), 'value' in n && (n.writable = !0), Object.defineProperty(e, n.key, n);
                         }
                     }
-                    var u = (this && this.__importDefault) || ((e) => (e && e.__esModule ? e : { default: e }));
-                    Object.defineProperty(t, '__esModule', { value: !0 }), (t.AutocompleteWrapper = void 0);
+                    var u =
+                        (this && this.__importDefault) ||
+                        ((e) =>
+                            e && e.__esModule
+                                ? e
+                                : {
+                                      default: e
+                                  });
+                    Object.defineProperty(t, '__esModule', {
+                        value: !0
+                    }),
+                        (t.AutocompleteWrapper = void 0);
                     var o = r(948),
                         i = u(r(934)),
                         a = r(147),
@@ -5289,13 +5564,18 @@ var t;
                 },
                 744: (e, t, r) => {
                     'use strict';
-                    Object.defineProperty(t, '__esModule', { value: !0 });
+                    Object.defineProperty(t, '__esModule', {
+                        value: !0
+                    });
                     var n = r(756);
                     e.exports = n.algoliasearchNetlify;
                 },
                 920: (e, t, r) => {
                     'use strict';
-                    Object.defineProperty(t, '__esModule', { value: !0 }), (t.templates = void 0);
+                    Object.defineProperty(t, '__esModule', {
+                        value: !0
+                    }),
+                        (t.templates = void 0);
                     var n = r(275);
                     function u(e, t) {
                         var r = [],
@@ -5370,7 +5650,9 @@ var t;
                             return (0, n.jsxs)(
                                 'div',
                                 Object.assign(
-                                    { className: 'aa-powered-by' },
+                                    {
+                                        className: 'aa-powered-by'
+                                    },
                                     {
                                         children: [
                                             'Search by',
@@ -5400,7 +5682,9 @@ var t;
                             return (0, n.jsx)(
                                 'a',
                                 Object.assign(
-                                    { href: e.url },
+                                    {
+                                        href: e.url
+                                    },
                                     {
                                         children: (0, n.jsxs)(
                                             'div',
@@ -5619,7 +5903,15 @@ var t;
                                         : 'string' == typeof y || 'number' == typeof y || 'bigint' == typeof y
                                         ? m(null, y, null, null, y)
                                         : Array.isArray(y)
-                                        ? m(v, { children: y }, null, null, null)
+                                        ? m(
+                                              v,
+                                              {
+                                                  children: y
+                                              },
+                                              null,
+                                              null,
+                                              null
+                                          )
                                         : y.__b > 0
                                         ? m(y.type, y.props, y.key, null, y.__v)
                                         : y)
@@ -5950,17 +6242,31 @@ var t;
             function r(n) {
                 var u = t[n];
                 if (void 0 !== u) return u.exports;
-                var o = (t[n] = { exports: {} });
+                var o = (t[n] = {
+                    exports: {}
+                });
                 return e[n].call(o.exports, o, o.exports, r), o.exports;
             }
             return (
                 (r.d = (e, t) => {
-                    for (var n in t) r.o(t, n) && !r.o(e, n) && Object.defineProperty(e, n, { enumerable: !0, get: t[n] });
+                    for (var n in t)
+                        r.o(t, n) &&
+                            !r.o(e, n) &&
+                            Object.defineProperty(e, n, {
+                                enumerable: !0,
+                                get: t[n]
+                            });
                 }),
                 (r.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
                 (r.r = (e) => {
-                    'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
-                        Object.defineProperty(e, '__esModule', { value: !0 });
+                    'undefined' != typeof Symbol &&
+                        Symbol.toStringTag &&
+                        Object.defineProperty(e, Symbol.toStringTag, {
+                            value: 'Module'
+                        }),
+                        Object.defineProperty(e, '__esModule', {
+                            value: !0
+                        });
                 }),
                 r(864),
                 r(744)

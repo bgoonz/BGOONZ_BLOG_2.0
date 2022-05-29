@@ -20,7 +20,10 @@ related_posts:
   - src/pages/blog/react-state.md
 cmseditable: true
 ---
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 # 10 Essential React Interview Questions For Aspiring Frontend Developers
 
 Comprehensive React Cheatsheet included at the bottom of this article!
@@ -33,6 +36,27 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 ### Resources:
 
+<<<<<<< HEAD
+<a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad"><strong>Introduction to React for Complete Beginners</strong>
+<br/>
+
+<em>All of the code examples below will be included a second time at the bottom of this article as an embedded gist.</em>javascript.plainenglish.io</a><a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/docs/react/react2/"><strong>Beginner's Guide To React Part 2</strong>
+<br/>
+
+<em>As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…</em><a href="https://bgoonz-blog.netlify.app/docs/react/react2/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://github.com/bgoonz/React_Notes_V3" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/React_Notes_V3"><strong>bgoonz/React_Notes_V3</strong>
+<br/>
+
+<em>A JavaScript library for building user interfaces Declarative React makes it painless to create interactive UIs. Design…</em>github.com</a><a href="https://github.com/bgoonz/React_Notes_V3" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://reactjs.org/docs" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://reactjs.org/docs"><strong>Getting Started - React</strong>
+<br/>
+
+<em>A JavaScript library for building user interfaces</em>reactjs.org</a><a href="https://reactjs.org/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
 <a href="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad">
 <strong>Introduction to React for Complete Beginners</strong>
 <br/>
@@ -64,6 +88,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 <em>A JavaScript library for building user interfaces</em>reactjs.org</a>
 <a href="https://reactjs.org/docs" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
+>>>>>>> master
 
 ### Also … here is my brand new blog site… built with react and a static site generator called GatsbyJS!
 
@@ -71,6 +96,13 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--p-anchor">https://bgoonz-blog.netlify.app/</a>
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/1200/1*t3UQh848ndt4rgr_fDToaw.png" class="graf-image" /></figure>
+
+---
+
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*39weCjnVdDf0Kuzj" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure>### Beginning of the Article:
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/1200/1*t3UQh848ndt4rgr_fDToaw.png" class="graf-image" />
 </figure>
@@ -82,6 +114,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 <figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a>
 </figcaption>
 </figure>### Beginning of the Article:
+>>>>>>> master
 
 **Pros**
 
@@ -130,6 +163,13 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 
 ### **3. Use debugging tools to determine when a component is rendering**
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*jf3yl4GKDHpxmPJk.gif" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/0*hBOo6hfwhKwS5UDM.jpg" class="graf-image" /></figure>#### We use the React DevTools extension as an extension in our Browser DevTools to debug and view when a component is rendering
+
+### **4. Describe how JSX transforms into actual DOM nodes**
+
+- <span id="358b">To transfer JSX into DOM nodes, we use the ReactDOM.render method. It takes a React virtual DOM node's changes allows Babel to transpile it and sends the JS changes to commit to the DOM.</span>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*jf3yl4GKDHpxmPJk.gif" class="graf-image" />
 </figure>
@@ -140,6 +180,7 @@ However, it is **not faster** than the actual DOM. You just read that it needs t
 ### **4. Describe how JSX transforms into actual DOM nodes**
 
 -   <span id="358b">To transfer JSX into DOM nodes, we use the ReactDOM.render method. It takes a React virtual DOM node's changes allows Babel to transpile it and sends the JS changes to commit to the DOM.</span>
+>>>>>>> master
 
 ### **5. Use the** `ReactDOM.render` **method to have React render your virtual DOM nodes under an actual DOM node**
 
@@ -157,11 +198,19 @@ Since "virtual DOM" is more of a pattern than a specific technology, people some
 
 No, they are different. The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
 
+<<<<<<< HEAD
+- <span id="8534">To add an event listener to an element, define a method to handle the event and associate that method with the element event you want to listen for:</span>
+
+### **7. Use** `create-react-app` **to initialize a new React app and import required dependencies**
+
+- <span id="6d60">Create the default create-react-application by typing in our terminal</span>
+=======
 -   <span id="8534">To add an event listener to an element, define a method to handle the event and associate that method with the element event you want to listen for:</span>
 
 ### **7. Use** `create-react-app` **to initialize a new React app and import required dependencies**
 
 -   <span id="6d60">Create the default create-react-application by typing in our terminal</span>
+>>>>>>> master
 
 #### <a href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/" class="markup--anchor markup--h4-anchor">Explanation of npm vs npx from Free Code Camp:</a>
 
@@ -179,8 +228,13 @@ npm by itself doesn't run any packages. If you want to run a package using npm, 
 
 When executables are installed via npm packages, npm creates links to them:
 
+<<<<<<< HEAD
+- <span id="7798">**local** installs have links created at the `./node_modules/.bin/` directory</span>
+- <span id="a534">**global** installs have links created from the global `bin/` directory (for example: `/usr/local/bin` on Linux or at `%AppData%/npm` on Windows)</span>
+=======
 -   <span id="7798">**local** installs have links created at the `./node_modules/.bin/` directory</span>
 -   <span id="a534">**global** installs have links created from the global `bin/` directory (for example: `/usr/local/bin` on Linux or at `%AppData%/npm` on Windows)</span>
+>>>>>>> master
 
 To execute a package with npm you either have to type the local path, like this:
 
@@ -240,6 +294,18 @@ Sometimes you just want to use some CLI tools but you don't want to install them
 
 `npx create-react-app <name of app> --use-npm`
 
+<<<<<<< HEAD
+- <span id="e1cb">npx gives us the latest version. `--use-npm` just means to use npm instead of yarn or some other package manager</span>
+
+### **8. Pass props into a React component**
+
+- <span id="9111">`props` is an object that gets passed down from the parent component to the child component. The values can be of any data structure including a function (which is an object)</span>
+
+<!-- -->
+
+- <span id="7a12">You can also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="markup--anchor markup--li-anchor">interpolate values</a> into JSX.</span>
+- <span id="f405">Set a variable to the string, "world", and replace the string of "world" in the NavLinks JSX element with the variable wrapped in curly braces:</span>
+=======
 -   <span id="e1cb">npx gives us the latest version. `--use-npm` just means to use npm instead of yarn or some other package manager</span>
 
 ### **8. Pass props into a React component**
@@ -250,6 +316,7 @@ Sometimes you just want to use some CLI tools but you don't want to install them
 
 -   <span id="7a12">You can also <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" class="markup--anchor markup--li-anchor">interpolate values</a> into JSX.</span>
 -   <span id="f405">Set a variable to the string, "world", and replace the string of "world" in the NavLinks JSX element with the variable wrapped in curly braces:</span>
+>>>>>>> master
 
 > **Accessing props:**
 
@@ -279,7 +346,11 @@ You can also use an <a href="https://developer.mozilla.org/en/docs/Web/JavaScrip
 
 The above two components are equivalent from React's point of view.
 
+<<<<<<< HEAD
+- <span id="99d5">You can pass down **as many props keys as you want**.</span>
+=======
 -   <span id="99d5">You can pass down **as many props keys as you want**.</span>
+>>>>>>> master
 
 ### **9. Destructure props**
 
@@ -300,6 +371,16 @@ a. Import the react-router-dom package:
 
 ### Discover More:
 
+<<<<<<< HEAD
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
+<br/>
+
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+### REACT CHEAT SHEET:
+
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+=======
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
 <strong>Web-Dev-Hub</strong>
 <br/>
@@ -313,6 +394,7 @@ a. Import the react-router-dom package:
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor">
 <em>plainenglish.io</em>
 </a>
+>>>>>>> master
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 11, 2021](https://medium.com/p/cbaafb31765d).
 

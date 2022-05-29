@@ -11,8 +11,12 @@ template: docs
 ---
 
 
+<<<<<<< HEAD
+# <a id="asymptotic-notation"></a>Asymptotic Notation
+=======
 # <a id="asymptotic-notation">
 </a>Asymptotic Notation
+>>>>>>> master
 
 ### <span style="color:red;"> Definition:
 
@@ -55,11 +59,17 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 -   Best Case and Big Omega are generally not helpful since Best Cases are rare in the real world and lower bound might be very different than an upper bound.
 -   Big-O isn't everything. On paper merge sort is faster than quick sort, but in practice quick sort is superior.
 
+<<<<<<< HEAD
+# <a id="data-structures"></a>Data Structures
+
+### <span style="color:red;"> <a id="array"></a> Array
+=======
 # <a id="data-structures">
 </a>Data Structures
 
 ### <span style="color:red;"> <a id="array">
 </a> Array
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -83,8 +93,12 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 -   Optimized Search: Linear array: `O(log n)`, Dynamic array: `O(log n)`
 -   Insertion: Linear array: n/a, Dynamic array: `O(n)`
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="linked-list"></a> Linked List
+=======
 ### <span style="color:red;"> <a id="linked-list">
 </a> Linked List
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -113,8 +127,12 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 -   Prepend: Linked Lists: `O(1)`
 -   Insertion: Linked Lists: `O(n)`
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="hash"></a> Hash Table or Hash Map
+=======
 ### <span style="color:red;"> <a id="hash">
 </a> Hash Table or Hash Map
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -137,8 +155,12 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 -   Search: Hash Tables: `O(1)`
 -   Insertion: Hash Tables: `O(1)`
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="binary-tree"></a> Binary Tree
+=======
 ### <span style="color:red;"> <a id="binary-tree">
 </a> Binary Tree
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -163,11 +185,17 @@ Big-Theta refers to the tight bound of time or space complexity of an algorithm.
 -   Search: Binary Search Tree: `O(log n)`
 -   Insertion: Binary Search Tree: `O(log n)`
 
+<<<<<<< HEAD
+# <a id="algorithms"></a> Algorithms
+
+## <a id="algorithm-basics"></a> Algorithm Basics
+=======
 # <a id="algorithms">
 </a> Algorithms
 
 ## <a id="algorithm-basics">
 </a> Algorithm Basics
+>>>>>>> master
 
 ### <span style="color:red;"> Recursive Algorithms
 
@@ -251,11 +279,17 @@ greedy algorithm (array)
 
 This algorithm never needed to compare all the differences to one another, saving it an entire iteration.
 
+<<<<<<< HEAD
+## <a id="search-algorithms"></a>Search Algorithms
+
+### <span style="color:red;"> <a id="breadth-first-search"></a>Breadth First Search
+=======
 ## <a id="search-algorithms">
 </a>Search Algorithms
 
 ### <span style="color:red;"> <a id="breadth-first-search">
 </a>Breadth First Search
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -278,8 +312,12 @@ This algorithm never needed to compare all the differences to one another, savin
 -   E is number of edges
 -   V is number of vertices
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="depth-first-search"></a>Depth First Search
+=======
 ### <span style="color:red;"> <a id="depth-first-search">
 </a>Depth First Search
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -315,11 +353,17 @@ This algorithm never needed to compare all the differences to one another, savin
 -   Breadth First Search tends to be a looping algorithm.
 -   Depth First Search tends to be a recursive algorithm.
 
+<<<<<<< HEAD
+## <a id="sorting-algorithms"></a>Sorting Algorithms
+
+### <span style="color:red;"> <a id="selection-sort"></a>Selection Sort
+=======
 ## <a id="sorting-algorithms">
 </a>Sorting Algorithms
 
 ### <span style="color:red;"> <a id="selection-sort">
 </a>Selection Sort
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -352,8 +396,12 @@ This algorithm never needed to compare all the differences to one another, savin
 ![#](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
 [(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Selection_sort)
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="insertion-sort"></a>Insertion Sort
+=======
 ### <span style="color:red;"> <a id="insertion-sort">
 </a>Insertion Sort
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -383,8 +431,12 @@ This algorithm never needed to compare all the differences to one another, savin
 ![#](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 [(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Insertion_sort)
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="merge-sort"></a>Merge Sort
+=======
 ### <span style="color:red;"> <a id="merge-sort">
 </a>Merge Sort
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -413,8 +465,12 @@ This algorithm never needed to compare all the differences to one another, savin
 ![#](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/400px-Merge_sort_algorithm_diagram.svg.png)
 [(source: Wikipedia, _Merge Sort_)](https://en.wikipedia.org/wiki/Merge_sort)
 
+<<<<<<< HEAD
+### <span style="color:red;"> <a id="quick-sort"></a>Quicksort
+=======
 ### <span style="color:red;"> <a id="quick-sort">
 </a>Quicksort
+>>>>>>> master
 
 ### <span style="color:red;"> Definition
 
@@ -450,8 +506,12 @@ This algorithm never needed to compare all the differences to one another, savin
 -   Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.
 -   Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.
 
+<<<<<<< HEAD
+## <a id="additional-resources"></a>Additional Resources
+=======
 ## <a id="additional-resources">
 </a>Additional Resources
+>>>>>>> master
 
 [Khan Academy's Algorithm Course](https://www.khanacademy.org/computing/computer-science/algorithms)
 
@@ -568,12 +628,18 @@ The `async` attribute downloads the script during parsing the document but will 
 Note: both attributes must only be used if the script has a `src` attribute (i.e. not an inline script).
 
 ```{.sourceCode .html}
+<<<<<<< HEAD
+<script src="myscript.js"></script>
+<script src="myscript.js" defer></script>
+<script src="myscript.js" async></script>
+=======
 <script src="myscript.js">
 </script>
 <script src="myscript.js" defer>
 </script>
 <script src="myscript.js" async>
 </script>
+>>>>>>> master
 ```
 
 ### <span style="color:red;"> Don't forget:
@@ -680,12 +746,18 @@ Here is an example with the class names on markup:
 
 ```{.sourceCode .html}
 <nav class="navbar">
+<<<<<<< HEAD
+  <a href="/" class="navbar__link navbar__link--active"></a>
+  <a href="/" class="navbar__link"></a>
+  <a href="/" class="navbar__link"></a>
+=======
   <a href="/" class="navbar__link navbar__link--active">
 </a>
   <a href="/" class="navbar__link">
 </a>
   <a href="/" class="navbar__link">
 </a>
+>>>>>>> master
 </nav>
 ```
 
@@ -693,8 +765,12 @@ In this case, `navbar` is the Block, `navbar__link` is an Element that makes no 
 Since Modifiers are verbose, many opt to use `is-*` flags instead as modifiers.
 
 ```{.sourceCode .html}
+<<<<<<< HEAD
+<a href="/" class="navbar__link is-active"></a>
+=======
 <a href="/" class="navbar__link is-active">
 </a>
+>>>>>>> master
 ```
 
 These must be chained to the Element and never alone however, or there will be scope issues.
@@ -1661,12 +1737,18 @@ for (const sortedWord in collectedAnagrams) {
 
 ```{.sourceCode .html}
 <div class="row">
+<<<<<<< HEAD
+  <div class="col-2"></div>
+  <div class="col-7"></div>
+  <div class="col-3"></div>
+=======
   <div class="col-2">
 </div>
   <div class="col-7">
 </div>
   <div class="col-3">
 </div>
+>>>>>>> master
 </div>
 ```
 
@@ -1966,8 +2048,12 @@ A browser is said to "support" a specification if it handles valid documents acc
 In HTML, the attribute name is in all lowercase and is given a string invoking a function defined somewhere:
 
 ```{.sourceCode .html}
+<<<<<<< HEAD
+<button onclick="handleClick()"></button>
+=======
 <button onclick="handleClick()">
 </button>
+>>>>>>> master
 ```
 
 In React, the attribute name is camelCase and are passed the function reference inside curly braces:

@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+title: Netlify CMS Reference Sheet
+subtitle: lorem-ipsum
+date: '2021-09-30'
+thumb_image_alt: image of
+excerpt: lorem-ipsum
+seo:
+    title: ''
+=======
 title: Netlify CMS 
 subtitle: Netlify CMS Reference Sheet
 date: '2021-09-30'
@@ -8,6 +17,7 @@ excerpt: Netlify CMS is an open source content management system for your Git
         intuitive workflows
 seo:
     title: 'Netlify CMS Reference Sheet'
+>>>>>>> master
     description: >-
         Netlify CMS is an open source content management system for your Git
         workflow that enables you to provide editors with a friendly UI and

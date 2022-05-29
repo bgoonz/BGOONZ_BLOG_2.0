@@ -1,56 +1,58 @@
 ---
 title: Gatsby CLI
 template: post
-subtitle: "The Gatsby CLI is available via npm "
-excerpt: "The Gatsby command line tool  CLI is the main entry point for getting
-  up and running with a Gatsby application "
+subtitle: 'The Gatsby CLI is available via npm '
+excerpt: 'The Gatsby command line tool  CLI is the main entry point for getting
+    up and running with a Gatsby application '
 date: 2022-05-15T23:44:13.229Z
-image: images/https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
-thumb_image: images/https://ml.globenewswire.com/Resource/Download/dd088522-d68f-4184-823d-a283f4fbacf1
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/gatsby-cli.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/gatsby-cli.png?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/js.yaml
-  - src/data/categories/search.yaml
-  - src/data/categories/react.yaml
-  - src/data/categories/git.yaml
-  - src/data/categories/html.yaml
+    - src/data/categories/js.yaml
+    - src/data/categories/search.yaml
+    - src/data/categories/react.yaml
+    - src/data/categories/git.yaml
+    - src/data/categories/html.yaml
 tags:
-  - src/data/tags/cms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # Commands (Gatsby CLI)
 
 ## TABLE OF CONTENTS
 
-* [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
-* [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
+-   [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
+-   [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
 
-  * [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
-  * [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
-  * [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
-  * [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
-  * [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
-  * [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
-  * [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
-  * [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
-  * [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
-* [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
+    -   [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
+    -   [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
+    -   [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
+    -   [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
+    -   [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
+    -   [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
+    -   [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
+    -   [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
+    -   [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
+
+-   [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
 
 The Gatsby command line tool (CLI) is the main entry point for getting up and running with a Gatsby application and for using functionality including running a development server and building out your Gatsby application for deployment.
 
-*This page provides similar documentation as the gatsby-cli [README](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-cli/README.md). The [Gatsby cheat sheet](https://www.gatsbyjs.com/docs/cheat-sheet/) has docs for top CLI commands & APIs all ready to print out.*
+_This page provides similar documentation as the gatsby-cli [README](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-cli/README.md). The [Gatsby cheat sheet](https://www.gatsbyjs.com/docs/cheat-sheet/) has docs for top CLI commands & APIs all ready to print out._
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)How to use gatsby-cli
 
 The Gatsby CLI is available via [npm](https://www.npmjs.com/) and is installed globally by running `npm install -g gatsby-cli`.
 
-You can also use the `package.json` script variant of these commands, typically exposed *for you* with most [starters](https://www.gatsbyjs.com/docs/starters/). For example, if you want to make the [`gatsby develop`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop) command available in your application, open up `package.json` and add a script like so:
+You can also use the `package.json` script variant of these commands, typically exposed _for you_ with most [starters](https://www.gatsbyjs.com/docs/starters/). For example, if you want to make the [`gatsby develop`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop) command available in your application, open up `package.json` and add a script like so:
 
 package.json
 
@@ -58,9 +60,9 @@ package.json
 //package.json
 
 {
-  "scripts": {
-    "develop": "gatsby develop"
-  }
+    "scripts": {
+        "develop": "gatsby develop"
+    }
 }
 ```
 
@@ -73,7 +75,7 @@ All the following documentation is available in the tool by running `gatsby --he
 #### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#usage)Usage
 
 ```shell
-gatsby new 
+gatsby new
 ```
 
 The CLI will run an interactive shell asking for these options before creating a Gatsby site for you:
@@ -130,14 +132,14 @@ Note that this will not prompt you to create a custom setup, but only clone the 
 
 ##### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#examples)Examples
 
-* Create a Gatsby site named `my-awesome-site` using the default starter:
+-   Create a Gatsby site named `my-awesome-site` using the default starter:
 
 ```shell
 gatsby new my-awesome-site
 
 ```
 
-* Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
+-   Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
 
 ```shell
 gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-blog
@@ -236,10 +238,10 @@ At the root of a Gatsby site, wipe out the cache (`.cache` folder) and public di
 
 This is useful as a last resort when your local project seems to have issues or content does not seem to be refreshing. Issues this may fix commonly include:
 
-* Stale data, e.g. this file/resource/etc. isn’t appearing
-* GraphQL error, e.g. this GraphQL resource should be present but is not
-* Dependency issues, e.g. invalid version, cryptic errors in console, etc.
-* Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
+-   Stale data, e.g. this file/resource/etc. isn’t appearing
+-   GraphQL error, e.g. this GraphQL resource should be present but is not
+-   Dependency issues, e.g. invalid version, cryptic errors in console, etc.
+-   Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
 
 ### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)`plugin`
 
@@ -307,9 +309,9 @@ config.json
 
 ```json
 {
-  "cli": {
-    "packageManager": "yarn"
-  }
+    "cli": {
+        "packageManager": "yarn"
+    }
 }
 ```
 

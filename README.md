@@ -209,7 +209,7 @@ web. Using Git workflows and modern build tools, pre-rendered content↩ is serv
 
 The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
 
-[Learn More](https://www.allaboutthejersey.com/)
+[NJDEVILS](https://www.allaboutthejersey.com/)
 
 ![nj-devils](/images/njdev-219301cd.jpg)
 
@@ -299,7 +299,7 @@ more tools that I have created or collaborated on.
 
 Reference materials and descriptions of fundamental concepts as well as visua
 
-[Learn More](/docs/career/)
+[Career](/docs/career/)
 
 ### [Community](/docs/community/)
 

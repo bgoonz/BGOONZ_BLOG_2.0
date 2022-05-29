@@ -25,14 +25,25 @@ Introduction to python taught through example problems. Solutions are included i
 
 ### Python Practice Problems
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" />
 </figure>
+>>>>>>> master
 
 ---
 
 #### Here are some other articles for reference if you need them:
 
+<<<<<<< HEAD
+<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong><br />
+<em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong><br />
+<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
 <a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d">
 <strong>Beginners Guide To Python</strong>
 <br />
@@ -46,6 +57,7 @@ Introduction to python taught through example problems. Solutions are included i
 <em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a>
 <a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
+>>>>>>> master
 
 ---
 
@@ -61,12 +73,17 @@ The `datetime` module supplies classes for manipulating dates and times.
 
 While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation.
 
+<<<<<<< HEAD
+<a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html"><strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong><br />
+<em>Only one concrete class, the class, is supplied by the module. The class can represent simple timezones with fixed…</em>docs.python.org</a><a href="https://docs.python.org/3/library/datetime.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+=======
 <a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html">
 <strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong>
 <br />
 <em>Only one concrete class, the class, is supplied by the module. The class can represent simple timezones with fixed…</em>docs.python.org</a>
 <a href="https://docs.python.org/3/library/datetime.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
 </a>
+>>>>>>> master
 
 ### Problem 2
 
@@ -97,12 +114,17 @@ For example, `13` is a divisor of `26` because `26 / 13` has no remainder.)
 
 Take two lists, and write a program that returns a list that contains only the elements that are `common between the lists (without duplicates)`. Make sure your program works on two lists of different sizes.
 
+<<<<<<< HEAD
+<a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html"><strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong><br />
+<em>Source code: Lib/random.py This module implements pseudo-random number generators for various distributions. For…</em>docs.python.org</a><a href="https://docs.python.org/3/library/random.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+=======
 <a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html">
 <strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong>
 <br />
 <em>Source code: Lib/random.py This module implements pseudo-random number generators for various distributions. For…</em>docs.python.org</a>
 <a href="https://docs.python.org/3/library/random.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
 </a>
+>>>>>>> master
 
 Bonus:
 
@@ -130,9 +152,13 @@ Make a two-player `Rock-Paper-Scissors` game.
 **Hint:**  
 Ask for player plays (using input), compare them. Print out a message of congratulations to the winner, and ask if the players want to start a new game.
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*1_4w6u4D7EDi2r4h.png" class="graf-image" /></figure>### Problem 9
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*1_4w6u4D7EDi2r4h.png" class="graf-image" />
 </figure>### Problem 9
+>>>>>>> master
 
 Generate a random number between `1 and 100 (including 1 and 100)`. Ask the user to guess the number, then tell them whether they guessed `too low`, `too high`, or `exactly right`.
 
@@ -150,17 +176,25 @@ Write a program that asks the user how many Fibonacci numbers to generate and th
 **Hint:**  
 The Fibonacci sequence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: `1, 1, 2, 3, 5, 8, 13, …`
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" />
 </figure>
+>>>>>>> master
 
 ---
 
 ### Intermediate Problems:
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*hTU58jGsgkrszi76.gif" class="graf-image" /></figure>
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*hTU58jGsgkrszi76.gif" class="graf-image" />
 </figure>
+>>>>>>> master
 
 ---
 
@@ -197,6 +231,13 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 ### My Blog:
 
+<<<<<<< HEAD
+<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
 <a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/">
 <strong>Web-Dev-Hub</strong>
 <br />
@@ -210,6 +251,7 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 <em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a>
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
+>>>>>>> master
 
 ---
 

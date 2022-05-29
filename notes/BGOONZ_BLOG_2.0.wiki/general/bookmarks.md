@@ -1,9 +1,40 @@
+<<<<<<< HEAD:notes/docs/_SCRAp/community/bookmarks.md
+---
+title: Bookmarks
+weight: 0
+excerpt: Bookmarks
+seo:
+    title: 'Bookmarks'
+    description: 'My chrome bookmars'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
+template: docs
+---
+
+
+=======
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/bookmarks.md
 # Bookmarks
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
+<<<<<<< HEAD:notes/docs/_SCRAp/community/bookmarks.md
+- [Bookmarks](#bookmarks)
+    - [NORWEX](#norwex)
+    - [RESOURCES](#resources)
+    - [a/A](#aa)
+    - [netlify](#netlify)
+    - [PYTHON](#python)
+    - [React-Redux](#react-redux)
+    - [AMAZON](#amazon)
+    - [GITHUB](#github)
+    - [MISC](#misc)
+    - [AMAZINGGGG](#amazingggg)
+    - [free-stuff](#free-stuff)
+=======
 ### Table Of Contents:
 
 -   [Bookmarks](#bookmarks)
@@ -19,6 +50,7 @@
     -   [MISC](#misc)
     -   [AMAZINGGGG](#amazingggg)
     -   [free-stuff](#free-stuff)
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/bookmarks.md
 
 <!-- /code_chunk_output -->
 
@@ -1935,7 +1967,11 @@
 -   [✅] [_**Text-Shadow Exposed: Make cool and clever text effects with csstext-shadow ¦kremalicious**_](https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow)
 -   [✅] [_**javascript you could add to any html page - GoogleSearch**_](https://www.google.com/search?sxsrf=ALeKk00GsCpoNdbGMrR03FlrgOrmApOpLw%3A1611975508435&ei=VMsUYJiPGqfG5gKzpp-QCQ&q=javascript+you+could+add+to+any+html+page&oq=javascript+you+could+add+to+any+html+page&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCMgUIIRCrAjoECAAQRzoECCMQJzoFCAAQkQI6BAgAEEM6CwguELEDEIMBEIsDOg4ILhCxAxDHARCjAhCLAzoICAAQsQMQiwM6FAguELEDEIMBEIsDEKgDEJsDEJoDOgcIABBDEIsDOhQILhCxAxCDARCLAxCoAxCaAxCbAzoHCAAQsQMQQzoLCAAQsQMQgwEQiwM6CggAELEDEEMQiwM6AggAOggIABAWEAoQHjoGCAAQFhAeOggIIRAWEB0QHjoFCCEQoAFQwSRY_39g_oEBaAJwBXgAgAGzA4gBoyuSAQo3LjMwLjMuMC4xmAEAoAEBqgEHZ3dzLXdpesgBCLgBAsABAQ&sclient=psy-ab&ved=0ahUKEwiYicTc1MLuAhUno1kKHTPTB5IQ4dUDCA0&uact=5)
 -   [✅] [_**Share Buttons - AddToAny**_](https://www.addtoany.com/buttons/)
+<<<<<<< HEAD:notes/docs/_SCRAp/community/bookmarks.md
+-   [✅] [_**Share \"https://bgoonzblog20master.gatsbyjs.io/docs/sitemap\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
+=======
 -   [✅] [_**Share \"https://goofy-euclid-1cd736.netlify.app/\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/bookmarks.md
 -   [✅] [_**How Javascript Implementation Adds Dynamic Interactivity \|Pluralsight**_](https://www.pluralsight.com/guides/how-javascript-implementation-adds-dynamic-interactivity)
 -   [✅] [_**Editing bgoonz/README.md at master ·bgoonz/bgoonz**_](https://github.com/bgoonz/bgoonz/edit/master/README.md)
 -   [✅] [_**Add a \'Like\' Button to Your Blogposts Using This Simple JavaScriptTechnique \| London Academy ofIT**_](https://www.londonacademyofit.co.uk/blog/add-like-button-blogposts-simple-javascript)
@@ -2624,7 +2660,11 @@
 -   [✅] [_**Internet Archive: Digital Library of Free & Borrowable Books, Movies,Music & Wayback Machine**_](https://archive.org/)
 -   [✅] [_**Commits ·BrentOzarULTD/BrentOzar.com-Demos**_](https://github.com/BrentOzarULTD/BrentOzar.com-Demos/commits?author=BrentOzar)
 -   [✅] [_**SQL ConstantCare® - Brent OzarUnlimited®**_](https://www.brentozar.com/sql-constantcare/)
+<<<<<<< HEAD:notes/docs/_SCRAp/community/bookmarks.md
+-   [✅] [_**Web Development ResourcesSite**_](https://bgoonz-blog.netlify.app/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+=======
 -   [✅] [_**Web Development ResourcesSite**_](https://web-dev-hub.com/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/bookmarks.md
 -   [✅] [_**stack overflow postgres database - GoogleSearch**_](https://www.google.com/search?q=stack+overflow+postgres+database&oq=stack+overflow+postgres+database&aqs=chrome..69i57j69i64l2.6496j0j7&sourceid=chrome&ie=UTF-8)
 -   [✅] [_**stackoverflow-to-postgresql.pdf**_](https://www.bortzmeyer.org/stackoverflow-to-postgresql.pdf)
 -   [✅] [_**Improve database performance with connection pooling - Stack OverflowBlog**_](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)
@@ -2949,7 +2989,11 @@
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: HashIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-hash/9781098114381/)
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: Block RangeIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-block/9781098114398/)
 -   [✅] [_**Referred memberships -- Medium HelpCenter**_](https://help.medium.com/hc/en-us/articles/4405927192215?source=post_page-----4c5a06ac3507--------------------------------)
+<<<<<<< HEAD:notes/docs/_SCRAp/community/bookmarks.md
+-   [✅] [_**Paste to Markdown**_](https://bgoonz.github.io/paste-2-markdown-web/)
+=======
 -   [✅] [_**Paste to Markdown**_](https://euangoddard.github.io/clipboard2markdown/)
+>>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/bookmarks.md
 -   [✅] [_**Webflow - Bryan\'s SpectacularProject**_](https://webflow.com/design/bryans-spectacular-project-fae067)
 -   [✅] [_**Webflow - Section ScrollInteraction**_](https://preview.webflow.com/preview/section-scroll-interaction?utm_medium=preview_link&utm_source=showcase_slider&utm_content=section-scroll-interaction&preview=c958906377274cc9d25a9c596fb2983d)
 -   [✅] [_**ruby on rails - How to fix: error: \'\<filename\>\' does not have acommit checked out fatal: adding files failed when inputting \"git add.\" in command prompt - StackOverflow**_](https://stackoverflow.com/questions/56873278/how-to-fix-error-filename-does-not-have-a-commit-checked-out-fatal-adding)

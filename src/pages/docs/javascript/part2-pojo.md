@@ -369,9 +369,13 @@ In this example, we use a fat arrow style function. Note that when we declare a 
 
 ### The Complete JavaScript Reference Guide
 
+<<<<<<< HEAD
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*In5wB-29T0Ud_zs3.jpg" class="graf-image" /></figure>### How to learn effectively
+=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*In5wB-29T0Ud_zs3.jpg" class="graf-image" />
 </figure>### How to learn effectively
+>>>>>>> master
 
 **Learning**: The acquisition of skills and the ability to apply them in the future.
 
@@ -4746,8 +4750,12 @@ Thus, if `match()` returns an array a, a\[0\] contains the complete match, a\[1\
 
     fullurl = match[0];
 
+<<<<<<< HEAD
+<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"<http://www.example.com/~david></a>"
+=======
 <a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"<http://www.example.com/~david>
 </a>"
+>>>>>>> master
 
     protocol = match[1];
 
@@ -4777,8 +4785,12 @@ if the regular expression contains named capture groups, then the returned array
 
 `match[0]`
 
+<<<<<<< HEAD
+<a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"<http://www.example.com/~david></a>"
+=======
 <a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">"<http://www.example.com/~david>
 </a>"
+>>>>>>> master
 
 `match.input`
 
@@ -5082,6 +5094,13 @@ Console functions that print their arguments like console.log() have a little-kn
 
     url.href
 
+<<<<<<< HEAD
+<a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">"<https://example.com:8000/path/name></a>?q=term\#fragment"
+
+    url.origin
+
+<a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">"<https://example.com:8000></a>"
+=======
 <a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">"<https://example.com:8000/path/name>
 </a>?q=term\#fragment"
 
@@ -5089,6 +5108,7 @@ Console functions that print their arguments like console.log() have a little-kn
 
 <a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">"<https://example.com:8000>
 </a>"
+>>>>>>> master
 
     url.protocol
 
@@ -5130,8 +5150,12 @@ Add a query parameter
 
     url.toString()
 
+<<<<<<< HEAD
+<a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">"<https://example.com/api/search?q=test></a>"
+=======
 <a href="https://example.com/api/search?q=test" class="markup--anchor markup--p-anchor">"<https://example.com/api/search?q=test>
 </a>"
+>>>>>>> master
 
 One of the important features of the URL class is that it correctly adds punctuation and escapes special characters in URLs when that is needed
 
@@ -5151,8 +5175,12 @@ One of the important features of the URL class is that it correctly adds punctua
 
     url.href
 
+<<<<<<< HEAD
+<a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">"<https://example.com/path%20with%20spaces?q=foo%23bar></a>"
+=======
 <a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">"<https://example.com/path%20with%20spaces?q=foo%23bar>
 </a>"
+>>>>>>> master
 
 Often, however, HTTP requests encode the values of multiple form fields or multiple API parameters into the query portion of a URL. In this format, the query portion of the URL is a question mark followed by one or more name/value pairs, which are separated from one another by ampersands.
 
@@ -5200,8 +5228,12 @@ The value of the searchParams property is a URLSearchParams object.
 
 `url.href`
 
+<<<<<<< HEAD
+<a href="http://example.com/" class="markup--anchor markup--p-anchor">"<http://example.com/></a>?q=term&opts=exact"
+=======
 <a href="http://example.com/" class="markup--anchor markup--p-anchor">"<http://example.com/>
 </a>?q=term&opts=exact"
+>>>>>>> master
 
 ### Timers
 

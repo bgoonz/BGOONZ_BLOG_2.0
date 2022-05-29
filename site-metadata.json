@@ -163,6 +163,8 @@
                         "type": "action"
                     },
                     {
+<<<<<<< HEAD
+=======
                         "label": "Web Dev Setup",
                         "url": "https://bgoonz-blog.netlify.app/blog/webdev-setup/",
                         "style": "primary",
@@ -172,6 +174,7 @@
                         "type": "action"
                     },
                     {
+>>>>>>> master
                         "label": "OG-Blog",
                         "url": "https://web-dev-resource-hub.netlify.app/",
                         "style": "primary",
