@@ -1,5 +1,5 @@
 function injectPDF (){
-      let anchor = window.createElement("a");
+      let anchor = document.createElement("a");
       anchor.onclick=`${if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1}`
       anchor.textContent='Save to PDF'
 }
