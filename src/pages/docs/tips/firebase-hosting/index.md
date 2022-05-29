@@ -2,13 +2,14 @@
 title: Firebase Hosting
 template: docs
 excerpt: Firebase Hosting integrates with serverless computing options,
-  including Cloud Functions for Firebase and Cloud Ru
+    including Cloud Functions for Firebase and Cloud Ru
 ---
+
 <!--StartFragment-->
 
 # Serve dynamic content and host microservices using Firebase Hosting
 
- \[ ]
+\[ ]
 
 Firebase Hosting integrates with serverless computing options, including Cloud Functions for Firebase and Cloud Run. Using Firebase Hosting with these options, you can host microservices by directing HTTPS requests to trigger your functions and containerized apps to run in a managed, secure environment.
 
@@ -20,16 +21,19 @@ Firebase Hosting integrates with serverless computing options, including Cloud F
 
 How can you use serverless computing options with Firebase Hosting?
 
-* **Serve dynamic content** — In addition to serving static content on your Hosting site, you can serve dynamically generated responses from a function or containerized app that is performing server-side logic.
+-   **Serve dynamic content** — In addition to serving static content on your Hosting site, you can serve dynamically generated responses from a function or containerized app that is performing server-side logic.
 
-  For example, you can point a URL pattern (like `/blog/<blog-post-id>`) to a function that uses the URL's blog post ID parameter to retrieve content dynamically from your database.
-* **Build REST APIs** — You can create a microservice API using functions.
+    For example, you can point a URL pattern (like `/blog/<blog-post-id>`) to a function that uses the URL's blog post ID parameter to retrieve content dynamically from your database.
 
-  For instance, functions can handle the sign-in functionality for your website. While your website is hosted at `/`, any request to `/api` is redirected to your microservice API. For an example, check out [this open-source sample](https://github.com/firebase/functions-samples/tree/Node-8/authenticated-json-api).
-* **Cache dynamic content** — You can [configure caching](https://firebase.google.com/docs/hosting/manage-cache) of your dynamic content on a global CDN.
+-   **Build REST APIs** — You can create a microservice API using functions.
 
-  For example, if a function generates new content only periodically, you can speed up your app by caching the generated content for at least a short period of time. You can also potentially reduce execution costs because the content is served from the CDN rather than via a triggered function or containerized app.
-* **Prerender your single-page apps** — You can improve SEO and optimize sharing across various social networks by creating dynamic `meta` tags. To learn more, watch this [video](https://www.youtube.com/watch?v=82tZAPMHfT4) or check out [this open-source sample](https://github.com/firebase/functions-samples/tree/Node-8/isomorphic-react-app).
+    For instance, functions can handle the sign-in functionality for your website. While your website is hosted at `/`, any request to `/api` is redirected to your microservice API. For an example, check out [this open-source sample](https://github.com/firebase/functions-samples/tree/Node-8/authenticated-json-api).
+
+-   **Cache dynamic content** — You can [configure caching](https://firebase.google.com/docs/hosting/manage-cache) of your dynamic content on a global CDN.
+
+    For example, if a function generates new content only periodically, you can speed up your app by caching the generated content for at least a short period of time. You can also potentially reduce execution costs because the content is served from the CDN rather than via a triggered function or containerized app.
+
+-   **Prerender your single-page apps** — You can improve SEO and optimize sharing across various social networks by creating dynamic `meta` tags. To learn more, watch this [video](https://www.youtube.com/watch?v=82tZAPMHfT4) or check out [this open-source sample](https://github.com/firebase/functions-samples/tree/Node-8/isomorphic-react-app).
 
 ## Choosing a serverless option
 
