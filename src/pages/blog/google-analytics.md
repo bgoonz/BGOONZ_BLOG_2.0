@@ -4,19 +4,19 @@ template: post
 subtitle: Page title and screen class
 excerpt: 7 tips to become a better web developer
 date: 2022-05-16T09:54:51.999Z
-image: blob:https://bgoonz-blog.netlify.app/66195eee-f550-43e3-ba79-0de21393ead0
-thumb_image: blob:https://bgoonz-blog.netlify.app/66195eee-f550-43e3-ba79-0de21393ead0
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-analytics.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/google-analytics.jpg?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-    - src/data/categories/google.yaml
+  - src/data/categories/google.yaml
 tags:
-    - src/data/tags/cms.yaml
-    - src/data/tags/resources.yaml
+  - src/data/tags/cms.yaml
+  - src/data/tags/resources.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/event-handeling.md
-    - src/pages/blog/google-analytics.md
+  - src/pages/blog/event-handeling.md
+  - src/pages/blog/google-analytics.md
 cmseditable: true
 ---
 
