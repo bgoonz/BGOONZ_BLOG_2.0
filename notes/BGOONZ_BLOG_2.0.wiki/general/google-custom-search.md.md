@@ -12,16 +12,6 @@ Web pages are often filled with free form text, which is easy for humans to read
 
 1.  [Overview](https://developers.google.com/custom-search/docs/structured_data#overview)
 2.  [Providing Data to Programmable Search Engine](https://developers.google.com/custom-search/docs/structured_data#custom_search)
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-    - [Using PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps)
-    - [Using `<meta>` tags](https://developers.google.com/custom-search/docs/structured_data#metatags)
-    - [Using Page Dates](https://developers.google.com/custom-search/docs/structured_data#page_dates)
-    - [Formatting Dates](https://developers.google.com/custom-search/docs/structured_data#formatting_dates)
-3.  [Providing Data to Rich Snippets](https://developers.google.com/custom-search/docs/structured_data#rich_snippets)
-    - [Using Microformats](https://developers.google.com/custom-search/docs/structured_data#microformats)
-    - [Using Resource Description Framework in Attributes (RDFa)](https://developers.google.com/custom-search/docs/structured_data#rdfa)
-    - [Using Microdata](https://developers.google.com/custom-search/docs/structured_data#microdata)
-=======
     -   [Using PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps)
     -   [Using `<meta>` tags](https://developers.google.com/custom-search/docs/structured_data#metatags)
     -   [Using Page Dates](https://developers.google.com/custom-search/docs/structured_data#page_dates)
@@ -30,7 +20,6 @@ Web pages are often filled with free form text, which is easy for humans to read
     -   [Using Microformats](https://developers.google.com/custom-search/docs/structured_data#microformats)
     -   [Using Resource Description Framework in Attributes (RDFa)](https://developers.google.com/custom-search/docs/structured_data#rdfa)
     -   [Using Microdata](https://developers.google.com/custom-search/docs/structured_data#microdata)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 4.  [Viewing Extracted Structured Data](https://developers.google.com/custom-search/docs/structured_data#preview_tool)
 
 ## Overview
@@ -43,21 +32,12 @@ Structured data formats are rules that standardize the structure and content of 
 
 Programmable Search Engine recognizes the following formats:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- [PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps): invisible blocks of XML that add metadata to pages.
-- [Microformats](https://developers.google.com/custom-search/docs/structured_data#microformats): tags used to mark up visible page content along predefined types.
-- [RDFa](https://developers.google.com/custom-search/docs/structured_data#rdfa): an alternate standard for marking up visible page content along arbitrary types.
-- [Microdata](https://developers.google.com/custom-search/docs/structured_data#microdata): a new HTML5 standard for marking up visible page content.
-- [`<meta>` tags](https://developers.google.com/custom-search/docs/structured_data#metatags): standard HTML tags, a subset of which are parsed by Google.
-- [Page Date](https://developers.google.com/custom-search/docs/structured_data#page_dates): features on a page indicating its date, which Google attempts to parse
-=======
 -   [PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps): invisible blocks of XML that add metadata to pages.
 -   [Microformats](https://developers.google.com/custom-search/docs/structured_data#microformats): tags used to mark up visible page content along predefined types.
 -   [RDFa](https://developers.google.com/custom-search/docs/structured_data#rdfa): an alternate standard for marking up visible page content along arbitrary types.
 -   [Microdata](https://developers.google.com/custom-search/docs/structured_data#microdata): a new HTML5 standard for marking up visible page content.
 -   [`<meta>` tags](https://developers.google.com/custom-search/docs/structured_data#metatags): standard HTML tags, a subset of which are parsed by Google.
 -   [Page Date](https://developers.google.com/custom-search/docs/structured_data#page_dates): features on a page indicating its date, which Google attempts to parse
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 You can use one or a combination of formats that you prefer. Note that unlike Programmable Search Engine, Google Search does not use PageMaps or `<meta>` tags when generating rich snippets. Google Search does consider information such as microformats, microdata, RDFa, and the page date when it is generating snippet, but it has its own algorithm and policies for determining what information gets shown to users. So while structured data you add to your pages can be presented on Programmable Search Engine, it might not be displayed in Google Search results.
 
@@ -103,13 +83,8 @@ Unlike the other structured data formats described below, PageMaps does not requ
 
 Once you create a PageMap, you can submit it to Google using any of the following methods:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- [Add PageMap data directly to your HTML page.](https://developers.google.com/custom-search/docs/structured_data#addtopage) Google will discover the PageMap information when we crawl your site.
-- [Add PageMap data to a Sitemap](https://developers.google.com/custom-search/docs/structured_data#addtositemap), and submit that Sitemap for indexing. This is a good option if you don't want PageMap exposed in the HTML source code of your page.
-=======
 -   [Add PageMap data directly to your HTML page.](https://developers.google.com/custom-search/docs/structured_data#addtopage) Google will discover the PageMap information when we crawl your site.
 -   [Add PageMap data to a Sitemap](https://developers.google.com/custom-search/docs/structured_data#addtositemap), and submit that Sitemap for indexing. This is a good option if you don't want PageMap exposed in the HTML source code of your page.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 ### PageMap tag definitions
 
@@ -208,28 +183,12 @@ or with the [Programmable Search Element](https://developers.google.com/custom-s
 
 ...
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-<div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\></div\>  
-=======
 <div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\>
 </div\>  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 ...
 
 The `<meta>` tags excluded by Google include:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- robots
-- description
-- keywords
-- revisit-after
-- generator
-- verify-v1
-- googlebot
-- google-site-verification
-- mssmarttagspreventparsing
-- no-cache
-=======
 -   robots
 -   description
 -   keywords
@@ -240,7 +199,6 @@ The `<meta>` tags excluded by Google include:
 -   google-site-verification
 -   mssmarttagspreventparsing
 -   no-cache
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 Google attempts to include all other `<meta>` tags, with the caveat that punctuation, special characters and embedded spaces in the `name` field of `<meta>` tags may not be parsed correctly. Programmable Search Engine explicitly supports periods and dashes in `<meta>` tag names. Programmable Search Engine does not explicitly support other special characters within `<meta>` tag names, but some special characters may be accepted correctly if they are [URL encoded](http://en.wikipedia.org/wiki/Percent-encoding).
 
@@ -336,22 +294,15 @@ Google also extracts a variety of structured data from Microformats, RDFa and Mi
 
 The following includes a snippet of plain HTML code.
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-<p><strong>Kevin Grendelzilla</strong></p>  
-=======
 <p>
 <strong>Kevin Grendelzilla</strong>
 </p>  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 <p>Technical writer at Google</p>  
 <p>555 Search Parkway</p>  
 <p>Googlelandia, CA 94043</p>
 
 The following snippet shows the previous HTML code extended with microformats:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-<div **class\="vcard"**\>  <p><strong **class\="fn"**\>Kevin Grendelzilla</strong></p>  <p><span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span></p>  <p><span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span></p>  
-=======
 <div **class\="vcard"**\>  <p>
 <strong **class\="fn"**\>Kevin Grendelzilla</strong>
 </p>  <p>
@@ -359,7 +310,6 @@ The following snippet shows the previous HTML code extended with microformats:
 </p>  <p>
 <span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span>
 </p>  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 </div>
 
 Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:
@@ -440,13 +390,8 @@ Thus, this tool allows you to view not only the structured data markup recognize
 
 Structured data can be used in several Programmable Search Engine features including the following:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- If you want to learn more about using structured data in snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
-- If you want to learn more about changing the order of your results, see [Structured Search](https://developers.google.com/custom-search/docs/structured_search).
-=======
 -   If you want to learn more about using structured data in snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
 -   If you want to learn more about changing the order of your results, see [Structured Search](https://developers.google.com/custom-search/docs/structured_search).
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 ---
 
@@ -504,13 +449,8 @@ Essentially, creating rich snippets involves the following steps:
 
     A presentation layer is a set of code (such as JavaScript, PHP, JSP and ASP) that transforms the raw data into a format that is displayed to the user. In the case of Programmable Search Engine, you can:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-    - Use the [Programmable Search Element](https://developers.google.com/custom-search/docs/element) to transform JSON output for presentation to the user.
-    - Write your own custom presentation layer that transforms JSON data to HTML that is presented to the end user using Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks)
-=======
     -   Use the [Programmable Search Element](https://developers.google.com/custom-search/docs/element) to transform JSON output for presentation to the user.
     -   Write your own custom presentation layer that transforms JSON data to HTML that is presented to the end user using Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 Structured data extraction is documented in more detail in the [Structured Data](https://developers.google.com/custom-search/docs/structured_data) page, and creating a presentation layer with the Programmable Search Element is documented in more detail at the [Programmable Search Element](https://developers.google.com/custom-search/docs/element) page.
 
@@ -520,15 +460,9 @@ Structured data extraction is documented in more detail in the [Structured Data]
 
 Custom Snippets works well with several other Programmable Search Engine features:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- If you want to learn more about changing the order of your results, see [Drilling Deeper into Search Results](https://developers.google.com/custom-search/docs/structured_search).
-- If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
-- If you want to learn more about the Programmable Search Element, see [Programmable Search Element documentation](https://developers.google.com/custom-search/docs/element).
-=======
 -   If you want to learn more about changing the order of your results, see [Drilling Deeper into Search Results](https://developers.google.com/custom-search/docs/structured_search).
 -   If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
 -   If you want to learn more about the Programmable Search Element, see [Programmable Search Element documentation](https://developers.google.com/custom-search/docs/element).
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 ---
 
@@ -547,15 +481,6 @@ To help users get to the right pages on your site, Programmable Search Engine pr
 For **image search**, Google relies on both structured data on your pages and image metadata discovered when crawling your site. We recommend that all webmasters become familiar with our [image publishing guidelines](http://www.google.com/support/webmasters/bin/answer.py?answer=114016).
 
 1.  [Web search](https://developers.google.com/custom-search/docs/structured_search#web)
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-    - [Overview](https://developers.google.com/custom-search/docs/structured_search#overview)
-    - [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#filter_by_attribute)
-    - [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute)
-    - [Bias by Attribute](https://developers.google.com/custom-search/docs/structured_search#bias_by_attribute)
-    - [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range)
-2.  [Image search](https://developers.google.com/custom-search/docs/structured_search#image)
-    - [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#image_filter_attribute)
-=======
     -   [Overview](https://developers.google.com/custom-search/docs/structured_search#overview)
     -   [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#filter_by_attribute)
     -   [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute)
@@ -563,24 +488,16 @@ For **image search**, Google relies on both structured data on your pages and im
     -   [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range)
 2.  [Image search](https://developers.google.com/custom-search/docs/structured_search#image)
     -   [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#image_filter_attribute)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 3.  [Structured Search in the Programmable Search Element](https://developers.google.com/custom-search/docs/structured_search#structured_search_element)
 
 ## Web search
 
 Unlike text, which is a free form sequence of words, structured data is logically organized into a set of objects with a set of attributes. Programmable Search Engine extracts a variety of structured data for use by structured search operators, including dates, authors, ratings and prices; this is the same data available for use in [custom snippets](https://developers.google.com/custom-search/docs/snippets). In addition, Programmable Search Engine supports structured data in any of the following formats:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- **[PageMap:](https://developers.google.com/custom-search/docs/structured_data#pagemaps)** A PageMap explicitly represents structured data as DataObjects with Attributes and values, encoded as an XML block embedded in a web page. Programmable Search Engine makes all well formed PageMap data available for structured search operators; it can also be used in [custom snippets](https://developers.google.com/custom-search/docs/snippets#creating_snippets).
-- **[`meta` tags:](https://developers.google.com/custom-search/docs/structured_data#metags)** Google extracts selected content from `meta` tags of the form `<meta name="_NAME_" content="_VALUE_">`. A `meta` tag of the form `<meta name="pubdate" content="20100101">` can be used with a search operator of the form: `&sort=metatags-pubdate`.
-- **[Page Dates:](https://developers.google.com/custom-search/docs/structured_data#page_dates)** Google estimates the date for a page based the URL, title, byline date and other features. This date can be used with the sort operator using the special structured data type `date`, as in `&sort=date`.
-- **[Rich Snippets Data:](https://developers.google.com/custom-search/docs/structured_data#rich_snippets)** Google also extracts a subset of the data from public standards like Microformats, RDFa and Microdata for use in Programmable Search Engine's structured data operators. For example, to sort pages marked up with the Microformat `hrecipe` standard based on their ratings, use `&sort=recipe-ratingstars`.
-=======
 -   **[PageMap:](https://developers.google.com/custom-search/docs/structured_data#pagemaps)** A PageMap explicitly represents structured data as DataObjects with Attributes and values, encoded as an XML block embedded in a web page. Programmable Search Engine makes all well formed PageMap data available for structured search operators; it can also be used in [custom snippets](https://developers.google.com/custom-search/docs/snippets#creating_snippets).
 -   **[`meta` tags:](https://developers.google.com/custom-search/docs/structured_data#metags)** Google extracts selected content from `meta` tags of the form `<meta name="_NAME_" content="_VALUE_">`. A `meta` tag of the form `<meta name="pubdate" content="20100101">` can be used with a search operator of the form: `&sort=metatags-pubdate`.
 -   **[Page Dates:](https://developers.google.com/custom-search/docs/structured_data#page_dates)** Google estimates the date for a page based the URL, title, byline date and other features. This date can be used with the sort operator using the special structured data type `date`, as in `&sort=date`.
 -   **[Rich Snippets Data:](https://developers.google.com/custom-search/docs/structured_data#rich_snippets)** Google also extracts a subset of the data from public standards like Microformats, RDFa and Microdata for use in Programmable Search Engine's structured data operators. For example, to sort pages marked up with the Microformat `hrecipe` standard based on their ratings, use `&sort=recipe-ratingstars`.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 [More information about providing structured data](https://developers.google.com/custom-search/docs/structured_data).
 
@@ -588,17 +505,10 @@ If your pages include structured data, you can then apply Programmable Search En
 
 Programmable Search Engine supports the following search operators over structured data:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#filter_by_attribute)
-- [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute)
-- [Bias by Attribute](https://developers.google.com/custom-search/docs/structured_search#bias_by_attribute)
-- [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range)
-=======
 -   [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#filter_by_attribute)
 -   [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute)
 -   [Bias by Attribute](https://developers.google.com/custom-search/docs/structured_search#bias_by_attribute)
 -   [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_search#top)
 
@@ -606,15 +516,9 @@ Programmable Search Engine supports the following search operators over structur
 
 Filtering by attribute enables you to select three kinds of results:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- Results with a specific attached DataObject, such as a review
-- Results with a DataObject with a given field, such as a review with a price range.
-- Results with a specific value of a field, such as a review with 5 stars.
-=======
 -   Results with a specific attached DataObject, such as a review
 -   Results with a DataObject with a given field, such as a review with a price range.
 -   Results with a specific value of a field, such as a review with 5 stars.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 To filter by attribute, add a `more:pagemap:_TYPE_-_NAME_:_VALUE_` operator to a search query. This restricts search results to pages which have structured data that exactly matches that type, name and value. (Programmable Search Engine will convert up to 200 attributes per page.) Attributes should not be more than 128 characters long. You can generalize this operator by omitting `VALUE` to match all instances of the named field or omitting `-NAME:VALUE` to match all objects of a given type.
 
@@ -785,19 +689,12 @@ To apply Sort by Attribute over this field, you set the `sort` option in the sea
 
 ...
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-<div class\="gcse-search" sort\_by\="date-sdate:d:s"\></div\>  
-...
-
-Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don't provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
-=======
 <div class\="gcse-search" sort\_by\="date-sdate:d:s"\>
 </div\>  
 ...
 
 Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s">
 </div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don't provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 
 The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to `date-sdate:r:20100825:20100907`. This again uses the combined attribute name `date-sdate`, but instead restricts to the range `r` of specified values `20100825:20100907`. As with the URL parameter, you can omit the upper or lower item of the range in the `sort` option of the Programmable Search Element.
 
@@ -809,12 +706,8 @@ You can also use Filter by Attribute with the Programmable Search Element. For e
 
 ...
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-<div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\></div\>  
-=======
 <div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\>
 </div\>  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
 ...
 
 This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the [Programmable Search Element](https://developers.google.com/custom-search/docs/element).
@@ -825,10 +718,5 @@ This method is relatively inflexible because it adds a restriction to all querie
 
 Structured search features are a powerful set of options that give you a great deal of control over your search application, allowing you to use custom attributes to order and restrict your search results in very powerful ways for your users. Structured search also works well with other Programmable Search Engine features such as custom result snippets. For more information:
 
-<<<<<<< HEAD:notes/docs/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md
-- If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
-- If you want to learn more about using structured data for snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
-=======
 -   If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
 -   If you want to learn more about using structured data for snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/general/google-custom-search.md.md

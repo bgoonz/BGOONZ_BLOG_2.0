@@ -1,29 +1,3 @@
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
----
-title: The Anatomy of a Search Engine
-sections: []
-seo:
-    title: ''
-    description: 'hardware performance and cost have improved dramatically to partially offset
-the difficulty. There are, however, several notable exceptions to this
-progress such as disk seek time and operating system robustness. In designing
-Google, we have considered both the rate of growth of the Web and technological
-changes. Google is designed to scale well to extremely large data sets.
-It makes efficient use of storage space to store the index. Its data structures
-are optimized for fast and efficient access (see section 4.2).
-Further, we expect that the cost to index and store text or HTML will eventually
-decline relative to the amount that will be available (see Appendix
-B). This will result in favorable scaling properties for centralized
-systems like Google.'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
----
-
-
-=======
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 # The Anatomy of a Search Engine
 
 > ## Excerpt
@@ -51,25 +25,15 @@ Computer Science Department, Stanford University, Stanford, CA 94305
 
 ### Abstract
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-> In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)
-> To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.
-> Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
-=======
 > In this paper, we present Google, a prototype of a large-scale search engine which makes heavy use of the structure present in hypertext. Google is designed to crawl and index the Web efficiently and produce much more satisfying search results than existing systems. The prototype with a full text and hyperlink database of at least 24 million pages is available at [http://google.stanford.edu/](http://google.stanford.edu/)  
 >  To engineer a search engine is a challenging task. Search engines index tens to hundreds of millions of web pages involving a comparable number of distinct terms. They answer tens of millions of queries every day. Despite the importance of large-scale search engines on the web, very little academic research has been done on them. Furthermore, due to rapid advance in technology and web proliferation, creating a web search engine today is very different from three years ago. This paper provides an in-depth description of our large-scale web search engine -- the first such detailed public description we know of to date.  
 >  Apart from the problems of scaling traditional search techniques to data of this magnitude, there are new technical challenges involved with using the additional information present in hypertext to produce better search results. This paper addresses this question of how to build a practical large-scale system which can exploit the additional information present in hypertext. Also we look at the problem of how to effectively deal with uncontrolled hypertext collections where anyone can publish anything they want.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 >
 > **Keywords**: World Wide Web, Search Engines, Information Retrieval, PageRank, Google
 
 ## 1\. Introduction
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-_(Note: There are two versions of this paper -- a longer full version and a shorter printed version. The full version is available on the web and the conference CD-ROM.)_
-=======
 _(Note: There are two versions of this paper -- a longer full version and a shorter printed version. The full version is available on the web and the conference CD-ROM.)_  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 The web creates new challenges for information retrieval. The amount of information on the web is growing rapidly, as well as the number of new users inexperienced in the art of web research. People are likely to surf the web using its link graph, often starting with high quality human maintained indices such as [Yahoo!](http://www.yahoo.com/) or with search engines. Human maintained lists cover popular topics effectively but are subjective, expensive to build and maintain, slow to improve, and cannot cover all esoteric topics. Automated search engines that rely on keyword matching usually return too many low quality matches. To make matters worse, some advertisers attempt to gain people's attention by taking measures meant to mislead automated search engines. We have built a large-scale search engine which addresses many of the problems of existing systems. It makes especially heavy use of the additional structure present in hypertext to provide much higher quality search results. We chose our system name, Google, because it is a common spelling of googol, or 10100 and fits well with our goal of building very large-scale search engines.
 
 ### 1.1 Web Search Engines -- Scaling Up: 1994 - 2000
@@ -150,11 +114,7 @@ Another big difference between the web and traditional well controlled collectio
 
 First, we will provide a high level discussion of the architecture. Then, there is some in-depth descriptions of important data structures. Finally, the major applications: crawling, indexing, and searching will be examined in depth.
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-![]()
-=======
 ![](http://infolab.stanford.edu/~backrub/over.gif)
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 
 Figure 1. High Level Google Architecture
 
@@ -226,15 +186,9 @@ It turns out that running a crawler which connects to more than half a million s
 
 ### 4.4 Indexing the Web
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-- **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
-- **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
-- **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
-=======
 -   **Parsing --** Any parser which is designed to run on the entire Web must handle a huge array of possible errors. These range from typos in HTML tags to kilobytes of zeros in the middle of a tag, non-ASCII characters, HTML tags nested hundreds deep, and a great variety of other errors that challenge anyone's imagination to come up with equally creative ones. For maximum speed, instead of using YACC to generate a CFG parser, we use flex to generate a lexical analyzer which we outfit with its own stack. Developing this parser which runs at a reasonable speed and is very robust involved a fair amount of work.
 -   **Indexing** **Documents into Barrels --** After each document is parsed, it is encoded into a number of barrels. Every word is converted into a wordID by using an in-memory hash table -- the lexicon. New additions to the lexicon hash table are logged to a file. Once the words are converted into wordID's, their occurrences in the current document are translated into hit lists and are written into the forward barrels. The main difficulty with parallelization of the indexing phase is that the lexicon needs to be shared. Instead of sharing the lexicon, we took the approach of writing a log of all the extra words that were not in a base lexicon, which we fixed at 14 million words. That way multiple indexers can run in parallel and then the small log file of extra words can be processed by one final indexer.
 -   **Sorting** -- In order to generate the inverted index, the sorter takes each of the forward barrels and sorts it by wordID to produce an inverted barrel for title and anchor hits and a full text inverted barrel. This process happens one barrel at a time, thus requiring little temporary storage. Also, we parallelize the sorting phase to use as many machines as we have simply by running multiple sorters, which can process different buckets at the same time. Since the barrels don't fit into main memory, the sorter further subdivides them into baskets which do fit into memory based on wordID and docID. Then the sorter, loads each basket into memory, sorts it and writes its contents into the short inverted barrel and the full inverted barrel.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 
 ### 4.5 Searching
 
@@ -296,20 +250,12 @@ Lexicon
 
 293 MB
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-Temporary Anchor Data
-=======
 Temporary Anchor Data  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 (not in total)
 
 6.6 GB
 
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-Document Index Incl.
-=======
 Document Index Incl.  
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md
 Variable Width Data
 
 9.7 GB
@@ -429,8 +375,6 @@ Aside from the quality of search, Google is designed to scale. It must be effici
 ### 6.4 A Research Tool
 
 In addition to being a high quality search engine, Google is a research tool. The data Google has collected has already resulted in many other papers submitted to conferences and many more on the way. Recent research such as \[[Abiteboul 97](http://infolab.stanford.edu/~backrub/google.html#ref)\] has shown a number of limitations to queries about the Web that may be answered without having the Web available locally. This means that Google (or a similar system) is not only a valuable research tool but a necessary one for a wide range of applications. We hope Google will be a resource for searchers and researchers all around the world and will spark the next generation of search engine technology.
-<<<<<<< HEAD:notes/docs/_SCRAp/articles/how-search-engines-work.md
-=======
 
 ## 7 Acknowledgments
 
@@ -974,4 +918,3 @@ Of course, the web is continually changing. First, the content of web pages, esp
 Brin and Page introduced Google in 1998, a time when the pace at which the web was growing began to outstrip the ability of current search engines to yield useable results. At that time, most search engines had been developed by businesses who were not interested in publishing the details of how their products worked. In developing Google, Brin and Page wanted to "push more development and understanding into the academic realm." That is, they hoped, first of all, to improve the design of search engines by moving it into a more open, academic environment. In addition, they felt that the usage statistics for their search engine would provide an interesting data set for research. It appears that the federal government, which recently tried to gain some of Google's statistics, feels the same way.
 
 There are other algorithms that use the hyperlink structure of the web to rank the importance of web pages. One notable example is the HITS algorithm, produced by Jon Kleinberg, which forms the basis of the [Teoma search engine.](http://www.ask.com/) In fact, it is interesting to compare the results of searches sent to different search engines as a way to understand why some complain of a Googleopoly.
->>>>>>> master:notes/BGOONZ_BLOG_2.0.wiki/articles/anatomy-of-search-engine.md

@@ -4,11 +4,7 @@ weight: 0
 excerpt: Learn basic Bash. Actually, type man bash and at least skim the whole thing; it's pretty easy to follow and not that long. Alternate shells can be nice, but Bash is powerful and always available (learning *only* zsh, fish, etc., while tempting on your own laptop, restricts you in many situations, such as using existing servers).
 seo:
     title: 'Command Line Basics'
-<<<<<<< HEAD
-    description: ''
-=======
     description: 'This guide is for both beginners and experienced users.'
->>>>>>> master
     robots: []
     extra: []
 template: docs

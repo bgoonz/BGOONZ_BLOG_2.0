@@ -11,20 +11,10 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 <br>
 <h1>  Python Resources</h1>
 <br>
 
-<<<<<<< HEAD
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
-
-<br>
-<hr>
-=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://ds-unit-5-lambda.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
 <br>
@@ -36,7 +26,6 @@ template: docs
 <br>
 <br>
 
->>>>>>> master
 <br>
 
 ## My Python Docs:
@@ -51,13 +40,9 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Python Study Guide for a JavaScript Programmer
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png" class="graf-image" /></figure>### Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*3V9VOfPk_hrFdbEAd3j-QQ.png" class="graf-image" />
 </figure>### Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
->>>>>>> master
 
 ### Basics
 
@@ -103,13 +88,9 @@ No Decimal Point
 
 > If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" /></figure>Than I am sure you will find the means to suspend your disbelief.
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*eC4EvZcv6hhH88jX.png" class="graf-image" />
 </figure>Than I am sure you will find the means to suspend your disbelief.
->>>>>>> master
 
     print(2.24) # => 2.24
     print(2.) # => 2.0
@@ -151,13 +132,9 @@ No Decimal Point
 -   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
 -   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" />
 </figure>
->>>>>>> master
 
 ---
 
@@ -245,11 +222,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 -   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>- <span id="e95e">There are also many handy testing methods.</span>
-
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" />
 </figure>- <span id="e95e">There are also many handy testing methods.</span>
@@ -257,7 +229,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" />
 </figure>
->>>>>>> master
 
 ---
 
@@ -303,13 +274,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 -   <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" /></figure># Logical AND
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" />
 </figure># Logical AND
->>>>>>> master
     print(True and True)    # => True
     print(True and False)   # => False
     print(False and False)  # => False
@@ -346,13 +313,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 > **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" />
 </figure>
->>>>>>> master
 
 ---
 
@@ -954,13 +917,9 @@ Custom.
 
 > module : Python code in a separate file.
 > package : Path to a directory that contains modules.
-<<<<<<< HEAD
-> <a href="http://init.py" class="markup--anchor markup--blockquote-anchor"><strong>init.py</strong></a> : Default file for a package.
-=======
 > <a href="http://init.py" class="markup--anchor markup--blockquote-anchor">
 <strong>init.py</strong>
 </a> : Default file for a package.
->>>>>>> master
 > submodule : Another file in a module's folder.
 > function : Function in a module.
 
@@ -1003,15 +962,6 @@ sets were killed in favor of set() class.**
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<<<<<<< HEAD
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-Or Checkout my personal Resource Site:
-
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-=======
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
 <strong>bgoonz — Overview</strong>
 <br />
@@ -1027,19 +977,11 @@ Or Checkout my personal Resource Site:
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
 <a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
->>>>>>> master
 
 ### Python Cheat Sheet:
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<<<<<<< HEAD
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-=======
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
 <strong>bgoonz's gists</strong>
 <br />
@@ -1053,4 +995,3 @@ Or Checkout my personal Resource Site:
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
->>>>>>> master

@@ -30,7 +30,10 @@ sections:
           - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
             image: images/dtw-slideshow.gif
+            content: >
+                **Modified subsequence dynamic time warping feature detection using
                 pure data implemented in python**
+            actions:
                 - label: Slide Show
                   url: 'https://1drv.ms/p/s!AkGiZ9n9CRDSpY88x407JwfEKNrDxg?e=faHSx9'
                   style: link
@@ -126,10 +129,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/energetic-sunflower.png
+            image: images/zumzi-video-chat.png
           - title: Web Audio Workstation
-            title_url: https://mihirbegmusiclab.netlify.app/
-            image_alt: image of Web Audio Workstation
+            title_url: lorem-ipsum
+            image_alt: image of
             content: |+
                 Made using jQuery and Vanilla JS
             actions:
@@ -148,7 +151,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/royal-kangaroo.JPG
+            image: images/royal-kangaroo.jpg
 seo:
     title: Showcase
     extra:
@@ -172,7 +175,7 @@ seo:
         - name: 'twitter:description'
           value: This is the showcase page
         - name: 'twitter:image'
-          value: images/redux-state.gif
+          value: images/5.jpg
           relativeUrl: true
     description: >-
         Git HTML PREVIEW, Guitar Effects, Data Structures, Redux, Podcast Blog,

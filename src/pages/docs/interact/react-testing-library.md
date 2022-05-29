@@ -11,14 +11,9 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
-
-<iframe src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0"  title="Testing Playground" style="display: block; width: 100%"></iframe>
-=======
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://testing-playground.com/embed/27ea36b9aa7868d05a38787a6bd21518/99c765c3a2ac8895c8dd1b866b663186e1700093?panes=query,result" height="450" width="100%" scrolling="yes" frameBorder="0"  title="Testing Playground" style="display: block; width: 100%">
 </iframe>
 <br>
->>>>>>> master
 
 # 🧪 React Testing Library
 
@@ -63,11 +58,7 @@ const input = screen.getByLabelText('Username');
 Summary Table
 
 | Type of Query         | 0 Matches     | 1 Match        | >1 Matches   | Retry (Async/Await) |
-<<<<<<< HEAD
-|-----------------------|---------------|----------------|--------------|---------------------|
-=======
 | --------------------- | ------------- | -------------- | ------------ | ------------------- |
->>>>>>> master
 | **Single Element**    |               |                |              |                     |
 | `getBy...`            | Throw error   | Return element | Throw error  | No                  |
 | `queryBy...`          | Return `null` | Return element | Throw error  | No                  |
@@ -103,13 +94,9 @@ Given the following DOM elements (which can be rendered by React, Vue, Angular, 
 
 ```html
 <body>
-<<<<<<< HEAD
-    <div id="app"><label for="username-input">Username</label> <input id="username-input" /></div>
-=======
     <div id="app">
 <label for="username-input">Username</label> <input id="username-input" />
 </div>
->>>>>>> master
 </body>
 ```
 
@@ -205,15 +192,8 @@ If you want to prevent that normalization, or provide alternative normalization 
 -   `trim`: Defaults to `true`. Trims leading and trailing whitespace
 -   `collapseWhitespace`: Defaults to `true`. Collapses inner whitespace (newlines, tabs, repeated spaces) into a single space.
 
-<<<<<<< HEAD
-
 ---
 
-
-=======
----
-
->>>>>>> master
 #### Normalization Examples
 
 To perform a match against text without trimming:

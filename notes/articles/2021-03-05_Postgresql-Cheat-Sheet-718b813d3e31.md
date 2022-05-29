@@ -1,17 +1,3 @@
----
-title: Postgresql Cheat Sheet
-weight: 0
-excerpt: Postgresql Cheat Sheet
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
----
-
-
 # Postgresql Cheat Sheet
 
 PostgreSQL commands

@@ -1,6 +1,3 @@
-<<<<<<< HEAD:notes/docs/_SCRAp/temp.md
-# Common Python Data Structures
-=======
 ---
 title: Data Structures In Python
 template: docs
@@ -9,7 +6,6 @@ excerpt: Dictionaries, Maps, and Hash Tables
 
 
 # Common Python Data Structures (Guide) – Real Python
->>>>>>> master:src/pages/docs/python/data-structures-in-python/index.md
 
 ---
 
@@ -113,13 +109,10 @@ This can save you some typing and make your intentions clearer as compared to us
 
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/temp.md
-=======
 [![](https://img.realpython.net/c34848d05efe728b284c7a87c7fcd5c9)](https://srv.realpython.net/click/33172000876/?c=43772654581&p=58946116052&r=75987)
 
 [Remove ads](https://realpython.com/account/join/)
 
->>>>>>> master:src/pages/docs/python/data-structures-in-python/index.md
 ### `collections.ChainMap`: Search Multiple Dictionaries as a Single Mapping[](#collectionschainmap-search-multiple-dictionaries-as-a-single-mapping 'Permanent link')
 
 The [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap) data structure groups multiple dictionaries into a single mapping. Lookups search the underlying mappings one by one until a key is found. Insertions, updates, and deletions only affect the first mapping added to the chain:
@@ -353,11 +346,6 @@ TypeError: 'str' object doesn't support item deletion
 
 ```
 
-<<<<<<< HEAD:notes/docs/_SCRAp/temp.md
-[80e19a8924e33dc994db2b63586bc3fc)](48903086761/?c=9349191308&p=58946116052&r=44349)
-
-=======
->>>>>>> master:src/pages/docs/python/data-structures-in-python/index.md
 ### `bytes`: Immutable Arrays of Single Bytes[](#bytes-immutable-arrays-of-single-bytes 'Permanent link')
 
 [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes-objects) objects are immutable sequences of single bytes, or integers in the range 0 ≤ _x_ ≤ 255. Conceptually, `bytes` objects are similar to `str` objects, and you can also think of them as immutable arrays of bytes.
@@ -478,11 +466,6 @@ Python offers several data types that you can use to implement records, structs,
 
 Alright, let’s get started!
 
-<<<<<<< HEAD:notes/docs/_SCRAp/temp.md
-[39d33f31dff9ce5e91d62b0a7b0c7420)](44043106944/?c=30337084727&p=58946116052&r=55735)
-
-=======
->>>>>>> master:src/pages/docs/python/data-structures-in-python/index.md
 ### `dict`: Simple Data Objects[](#dict-simple-data-objects 'Permanent link')
 
 As mentioned [previously](#dictionaries-maps-and-hash-tables), Python dictionaries store an arbitrary number of objects, each identified by a unique key. Dictionaries are also often called **maps** or **associative arrays** and allow for efficient lookup, insertion, and deletion of any object associated with a given key.

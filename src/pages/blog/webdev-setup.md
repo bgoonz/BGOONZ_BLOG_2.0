@@ -4,19 +4,6 @@ template: post
 subtitle: Basic Web Development Environment Setup
 excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
 date: 2022-05-08T18:10:03.296Z
-<<<<<<< HEAD
-image: /blog/vscode.png
-thumb_image: /blog/code_mg4k5cd9s4.png
-image_position: right
-author: src/data/authors/bgoon.yaml
-categories:
-    - src/data/categories/js.yaml
-tags:
-    - src/data/tags/links.yaml
-show_author_bio: true
-related_posts:
-    - src/pages/blog/vs-code-extensions.md
-=======
 image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
 thumb_image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
 image_position: right
@@ -33,7 +20,6 @@ related_posts:
   - src/pages/blog/code-playgrounds-of-2021.md
   - src/pages/blog/adding-css-to-your-html.md
   - src/pages/blog/deploy-react-app-to-heroku.md
->>>>>>> master
 cmseditable: true
 ---
 
@@ -47,13 +33,9 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 #### Windows Subsystem for Linux (WSL) and Ubuntu
 
-<<<<<<< HEAD
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" /></figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
-=======
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
 </figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
->>>>>>> master
 
 1.  <span id="110a">In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"</span>
 2.  <span id="54fd">Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu</span>
@@ -85,21 +67,13 @@ Open an Ubuntu terminal if you don't have one open already.
 
 **Note: if you want git to remember your login credentials type:**
 
-<<<<<<< HEAD
-    $ git config --global credential.helper store
-=======
     git config --global credential.helper store
->>>>>>> master
 
 ### Google Chrome
 
 Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-<<<<<<< HEAD
-1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
-=======
 1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="<http://chrome.google.com>/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
->>>>>>> master
 2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".</span>
 
 ### Node.js
@@ -173,23 +147,6 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
 
-<<<<<<< HEAD
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
-
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
-
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong>
-<br/>
-
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-Or Checkout my personal Resource Site:
-
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
-<br/>
-
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-=======
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
@@ -211,7 +168,6 @@ Or Checkout my personal Resource Site:
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
 <a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
->>>>>>> master
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [February 27, 2021](https://medium.com/p/9f36c3f15afe).
 

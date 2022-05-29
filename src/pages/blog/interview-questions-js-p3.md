@@ -56,12 +56,8 @@ c ole.log(myGenObj.next().value);
 - 3: SyntaxError
 - 4: TypeError
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -105,12 +101,8 @@ c ole.log(myGenObj.next());
 - 3: { value: 1, done: false }, { value: 2, done: true }, { value: 3, done: true }
 - 4: { value: 1, done: false }, { value: 2, done: false }, { value: 3, done: true }
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -148,12 +140,8 @@ for (const value of myGenerator) {
 - 3: 1 and 1
 - 4: 1
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -181,12 +169,8 @@ c ole.log(num);
 - 1: SyntaxError
 - 2: 38
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -223,12 +207,8 @@ class Square {
 - 1: 100
 - 2: ReferenceError
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -276,12 +256,8 @@ c ole.log(run());
 - 3: SyntaxError
 - 4: Window, Window
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -325,12 +301,8 @@ c ole.log(car.start());
 - 3: BMW car started, BMW vehicle started
 - 4: BMW car started, BMW car started
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -361,12 +333,8 @@ c ole.log(USER.age);
 - 3: Uncaught TypeError
 - 4: SyntaxError
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -393,12 +361,8 @@ c ole.log('🙂' === '🙂');
 - 1: false
 - 2: true
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -427,12 +391,8 @@ c ole.log(typeof typeof typeof true);
 - 3: NaN
 - 4: number
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -467,12 +427,8 @@ if (zero) {
 - 3: NaN
 - 4: SyntaxError
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -505,12 +461,8 @@ c ole.log(msg.name);
 - 3: John
 - 4: Undefined
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 
@@ -546,12 +498,8 @@ let count = 10;
 - 3: 10, 11
 - 4: 10, 10
 
-<<<<<<< HEAD
-<details><summary>Answer</summary>
-=======
 <details>
 <summary>Answer</summary>
->>>>>>> master
 
 <p>
 

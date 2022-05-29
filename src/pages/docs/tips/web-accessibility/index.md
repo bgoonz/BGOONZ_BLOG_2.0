@@ -3,13 +3,9 @@ title: web-accessibility
 template: docs
 excerpt: "### Plan Heading Structure Early"
 ---
-<<<<<<< HEAD
-<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.svg" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org"></a>
-=======
 <a href="http://webaim.org/resources/designers/">
 <img src="http://webaim.org/resources/designers/media/designers.svg" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org">
 </a>
->>>>>>> master
 
 
 
@@ -17,21 +13,6 @@ excerpt: "### Plan Heading Structure Early"
 
 ### Plan Heading Structure Early
 
-<<<<<<< HEAD
-Ensure all content and design fits into a [logical heading structure](https://webaim.org/techniques/semanticstructure/).
-
-### Ensure Logical Reading Order
-
-The [reading order for screen reader users](https://webaim.org/techniques/screenreader/) should align with the visual order.
-
-### Provide Good Contrast
-
-Be especially careful with shades of orange, yellow, and light gray. Check your contrast levels with our [color contrast checker](https://webaim.org/resources/contrastchecker/).
-
-### Use True Text Instead of Images of Text
-
-[True text](https://webaim.org/techniques/images/text_graphic) enlarges better, loads faster, and is easier to translate and customize.
-=======
 Ensure all content and design fits into a [logical heading structure](https://webaim.org/techniques/semanticstructure/).
 
 ### Ensure Logical Reading Order
@@ -45,7 +26,6 @@ Be especially careful with shades of orange, yellow, and light gray. Check your 
 ### Use True Text Instead of Images of Text
 
 [True text](https://webaim.org/techniques/images/text_graphic) enlarges better, loads faster, and is easier to translate and customize.
->>>>>>> master
 
 ### Use Adequate Font Size
 
@@ -57,11 +37,7 @@ Don’t make lines too long or too short.
 
 ### Make Sure Links are Recognizable
 
-<<<<<<< HEAD
-Distinguish [links](https://webaim.org/techniques/hypertext/) from body text using more than just color (e.g., underline).
-=======
 Distinguish [links](https://webaim.org/techniques/hypertext/) from body text using more than just color (e.g., underline).
->>>>>>> master
 
 ### Design Keyboard Focus Indicators
 
@@ -69,19 +45,11 @@ When navigating with the keyboard, the focused item must be visually distinctive
 
 ### Design a "Skip to Main Content" Link
 
-<<<<<<< HEAD
-A keyboard accessible [link for users to skip navigation](https://webaim.org/techniques/skipnav/) should be at the top of the page.
-
-### Ensure Link Text Makes Sense on Its Own
-
-Avoid "Click Here" or other ambiguous [link text](https://webaim.org/techniques/hypertext/) such as "More" or "Continue".
-=======
 A keyboard accessible [link for users to skip navigation](https://webaim.org/techniques/skipnav/) should be at the top of the page.
 
 ### Ensure Link Text Makes Sense on Its Own
 
 Avoid "Click Here" or other ambiguous [link text](https://webaim.org/techniques/hypertext/) such as "More" or "Continue".
->>>>>>> master
 
 ### Design Usable Widgets and Controls
 
@@ -97,8 +65,4 @@ Users may override or may not be able to see differences between colors.
 
 ### Design Accessible Form Controls
 
-<<<<<<< HEAD
-Ensure [form controls](https://webaim.org/techniques/forms/) have descriptive labels, instructions, and error messages.
-=======
 Ensure [form controls](https://webaim.org/techniques/forms/) have descriptive labels, instructions, and error messages.
->>>>>>> master
