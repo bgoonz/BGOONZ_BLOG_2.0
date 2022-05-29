@@ -9,21 +9,19 @@ thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/sta
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
+    - src/data/categories/react.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/react-state.md
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/react-state.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
 
-
 # What is a Redux Reducer?
-
 
 **This tutorial will teach you "how Redux works"**, as well as _why_ these patterns exist. Fair warning though - learning the concepts is different from putting them into practice in actual apps.
 
