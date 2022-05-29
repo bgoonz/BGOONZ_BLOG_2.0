@@ -3,8 +3,8 @@ title: Markdown
 weight: 0
 excerpt: Markdown
 seo:
-    title: ''
-    description: ''
+    title: 'Markdown'
+    description: 'Markdown is a universal doc format that is easy to write and easy to add to a version control system'
     robots: []
     extra: []
 template: docs
@@ -12,6 +12,334 @@ template: docs
 
 
 ## Markdown:
+
+<details>
+
+<summary> Examples Of Markdwon
+</summary>
+
+# Heading
+
+## Sub-heading
+
+> Blockquote
+
+- List item 1
+- List item 2
+- List item 3
+
+1. Ordered list item 1
+2. Ordered list item 2
+3. Ordered list item 3
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\`\`\`
+
+[Link](https://example.com)
+
+![Image](https://placehold.it/100x100)
+
+\`\`\`
+const foo = 'bar';
+\
+
+=======
+
+
+# Markdown
+
+Markdown is a simple and easy to use syntax for creating formatted text. It is a superset of [CommonMark](https://commonmark.org/) and [GitHub Flavored Markdown](https://github.github.com/gfm/).
+
+## Headings
+
+Headings are created with the `#` character.
+
+```
+# Heading
+```
+
+## Sub-Headings
+
+Sub-headings are created with the `##` character.
+
+```
+## Sub-Heading
+```
+
+## Sub-Sub-Headings
+
+Sub-sub-headings are created with the `###` character.
+
+```
+### Sub-Sub-Heading
+```
+
+## Lists
+
+Lists are created with the `*` character.
+
+```
+* List item
+```
+
+## Code
+
+Code is created with the `` character.
+
+```
+`code`
+```
+
+## Links
+
+Links are created with the `[text](url)` format.
+
+```
+[link](https://www.example.com)
+```
+
+## Images
+
+Images are created with the `![alt text](url)` format.
+
+```
+![alt text](https://www.example.com/image.jpg)
+```
+
+## Emphasis
+
+Emphasis is created with the `*` or `_` character.
+
+```
+*emphasized*
+_emphasized_
+```
+
+## Strong
+
+Strong is created with the `**` or `__` character.
+
+```
+**strong**
+__strong__
+```
+
+## Inline Code
+
+Inline code is created with the `\` character.
+
+```
+\`\`\`
+code
+\`\`\`
+```
+
+## Blockquote
+
+Blockquotes are created with the `>` character.
+
+```
+> Blockquote
+```
+
+## Horizontal Rule
+
+Horizontal rules are created with the `---` or `***` character.
+
+```
+---
+***
+```
+
+## Table
+
+Tables are created
+
+=======
+
+# Markdown
+
+Markdown is a simple text formatting syntax that is easy to learn and use.
+
+## Syntax
+
+Here is a simple example of some Markdown:
+
+```
+This is a paragraph.
+
+This is a second paragraph.
+```
+
+Markdown is easy to learn. It is easy to use.
+
+## Examples
+
+Here are some examples of Markdown:
+
+* This is a list item.
+
+* This is a list item.
+
+* This is a list item.
+
+## Lists
+
+Here is a list:
+
+* List item 1
+* List item 2
+
+## Emphasis
+
+Here is some _emphasis_:
+
+Here is some **strong emphasis**:
+
+Here is some `code`.
+
+Here is some `code`.
+
+## Links
+
+Here is a [link](http://www.example.com).
+
+Here is an inline image: ![alt text](http://www.example.com/image.jpg)
+
+Here is an inline image: ![alt text](http://www.example.com/image.jpg)
+
+## Images
+
+Here is an inline image: ![alt text](http://www.example.com/image.jpg)
+
+Here is an inline image: ![alt text](http://www.example.com/image.jpg)
+
+## Blockquotes
+
+Here is a blockquote:
+
+> This is a blockquote.
+
+> This is a second paragraph in the blockquote.
+
+Here is a blockquote with two paragraphs:
+
+> This is a blockquote.
+>
+> This is a second paragraph in the blockquote.
+
+## Code
+
+Here is some code:
+
+```
+This is a code block.
+
+This is a second paragraph in the code block.
+```
+
+## Horizontal Rule
+
+Here is a horizontal rule:
+
+---
+
+## Tables
+
+Here is a table:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |
+
+=======
+
+
+# Markdown
+
+## Syntax
+
+```markdown
+# Header
+
+## Subheader
+
+Text
+
+* Bullet
+* Item
+
+1. Numbered
+2. Item
+
+[Link](https://github.com)
+
+![Image](
+
+
+</details>
+
 
 ## Why markdown?
 

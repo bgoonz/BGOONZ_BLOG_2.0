@@ -1,694 +1,87 @@
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/admin" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/10-essential-react-interview-questions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/300-react-questions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/awesome-graphql" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/beginners-guide-to-python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/big-o-complexity" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/blog-archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/code-playgrounds-of-2021" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/data-structures" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/deploy-react-app-to-heroku" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/embedding-media-in-html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/eslint-rules" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/event-handeling" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/expressjs-apis" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/file-system-route-api" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/flow-control-in-python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/front-end-interview-questions-part-2" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/functions-in-python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/gatsby-cli" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/git-gateway" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/google-analytics" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/grep-in-linuz" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/hoisting" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/htt-requests" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/interview-questions-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/intro-01-data-structures" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/intro-to-markdown" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/jsx-in-depth" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/netlify-cms" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/passing-arguments-to-a-callback-in-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/platform-docs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/python-for-js-dev" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/python-quiz" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/python-resources" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/react-fragments" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/react-semantics" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/react-state" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/useful-stock-images" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/using-the-dom" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/vs-code-extensions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/vscode-extensions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/web-dev-trends" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/web-scraping" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/webdev-setup" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/what-is-a-redux-reducer" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/blog/wordpress-vs-headless-cms" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/eng-portfolio" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/internal-use" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/intrests" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/job-search" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/readme" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/about/resume" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/archive/embeded-websites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/buffers" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/common-modules" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/dev-dep" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/fs-module" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/how-search-engines-work" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/intro" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/nextjs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/node-api-express" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/npm" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/os-module" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/reading-files" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/semantic" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/semantic-html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/url" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/webdev-tools" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/articles/writing-files" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio/dfft" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio/discrete-fft" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/audio/web-audio-api" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/career" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/career/job-boards" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/career/my-websites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/career/projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/community" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers" height="800px" width="1000px"></<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/community/bookmarks" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="ghttps://bgoonz-blog.netlify.app/docs/community/video-chat" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/algo" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/data-structures-in-python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/gists" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/history-api" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/javascript-examples" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/main-projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/native-data-structures-in-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/content/trouble-shooting" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/css" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/css/css-selector-specificity" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/css/media-querries" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/css/the-box-model" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/appendix" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/bash" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/css" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/git-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/git-repos" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/glossary" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/html-tags" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/markdown" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/privacy-policy" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/regex-in-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/docs/sitemap" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/big-o" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/data-structures-docs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-by-example" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/free-code-camp" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/graph" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/heaps" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/ds-algo/tree" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/faq" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/faq/contact" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/faq/plug-ins" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/fetch-api" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/git/git" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/git/git/github-tutorial" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/callstack-visual" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/clock" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/other-sites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/react-testing-library" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/interact/video-chat" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/asynchronous-javascript-and-xml" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/asyncjs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/await-keyword" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/bigo" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/clean-code" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/for-loops" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/javascript-resource-table" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/js-expressions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/js-objects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/promises" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/review" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/snippets" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/javascript/variables" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/abs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/acos" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/acosh" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/addition" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/all" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/allsettled" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/any" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/array" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/array-methods" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/arrow_functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/async_function" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/bad_radix" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/bind" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/classes" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/concat" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/conditional_operator" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/const" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/create" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/date" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/eval" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/every" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/filter" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/for...of" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/foreach" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/import" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/insert-into-array" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/map" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/object" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/reduce" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/regexp" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/sort" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/sorting-strings" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/string" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/this" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/js-tips/var" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/get-started-with-gatsby" height="800px" width="1000px"></<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/jamstack-templates" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/serverlessjs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/emmet-cheat-sheet" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/html-spec" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/http" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/install" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/modules" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/node-cli-args" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/node-js-language" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/node-package-manager" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/node-repl" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/node-run-cli" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/nodejs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/nodevsbrowser" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/overflow/v8" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/privacy-policy" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/links" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/mini-projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/mini-projects2" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/projects/recent" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/at-length" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/cheat-sheet" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/data-structures-in-python" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/examples" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/flow-control" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/google-sheets-api" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/python-ds" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/python-quiz" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/python/snippets" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/all-emojis" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/create-react-app" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/fetch" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-https://bgoonz-blog.netlify.app/docs/quick-ref/general-structured-data-guidelines" height="800px" width="1000px"></<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/git-bash" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/git-tricks" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/google-firebase" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/heroku-error-codes" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/installation" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/markdown-dropdowns" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/minifiction" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/new-repo-instructions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/pull-request-rubric" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/python-builtin-functions" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/quick-links" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/topRepos" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/understanding-path" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/accessibility" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/cheatsheet" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/complete-react" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/createReactApp" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/demo" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/dont-use-index-as-keys" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/higher-order-components" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/jsx" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/quiz" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react-docs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react-in-depth" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react-patterns-by-usecase" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react-router" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react-study-guide" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/react2" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/react/render-elements" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/readme" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/art-of-command-line" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/awesome-lists" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/awesome-nodejs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/awesome-static" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/bash-commands" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/bookmarks" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/embed-the-web" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/github-resources" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/github-search" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/google-cloud" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/installing-node" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/markdown-styleguide" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/notes-template" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/psql" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/resources" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/vscode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/reference/web-api's" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/showcase" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/sitemap" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-https://bgoonz-blog.netlify.app/docs/tips/7-tips-to-become-a-better-web-developer" height="800px" width="1000px"></<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/decrement" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/firebase-hosting" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/httrack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/regex-tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/storybook" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/top-10-money-tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/ubuntu-setup" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tips/web-accessibility" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tools" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tools/dev-utilities" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tools/markdown-html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/bash" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/bash-commands-my" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/get-file-extension" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/tutorials/webdev-review" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/docs/typescript" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/interview-questions-js" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/readme" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://bgoonz-blog.netlify.app/showcase" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
+Why are you doing this?
+
+Why are you fighting this needless war?
+
+He sent his forces, his missiles in the middle of the night.
+These are the troops, hundreds of thousands of them, that had been camped out on the border for months.
+Troops that Putin had insisted were there for a routine military exercise, and that the US and UK intel swore were actually preparing to invade.
+
+Many around the world, including in Ukraine,
+
+thought that this was just the West being dramatic,
+
+stoking the tensions,
+
+but the intel was exactly right.  (clock ticking)  Most of those troops crossed the border last week,  and are now inside the country.**
+- **[_**News Story**_] Russian military vehicles,  including tanks, entering Ukraine.**
+- **[_**News Story**_] The invasion,  the attack that Russia promised would never happen,  has now started.**
+- **[_**News Story**_] The country's being attacked  from all directions.  (tense music)  (jet engine roars)**
+- **Hours  after this invasion started  in the middle of the night on Thursday morning,  Ukraine's President Zelensky appeared on TV,  not just to talk to his people,  but to speak directly to Russians themselves.  (Zelensky speaking in foreign language)  "We share a border of over , kilometers.  And along this border, your troops are stationed,  almost , soldiers.  Your leaders just approved them to make a step towards us,  into the territory of another country.  This step is likely the beginning of a massive war  on the European continent."**
+- **[_**News Story**_] Russia again warned its nuclear forces were  on high alert.**
+- **Several cities were hit in residential areas,  resulting in dozens of civilian deaths.**
+- **This is a war unlike any war the world has ever seen.  It looks like a war from , but it's happening in .  (guns report)  Putin's army is much stronger than Ukraine's,  at least in terms of numbers.  If he really wants to,  he probably is gonna be able to take  over the country's major population centers,  and oust the Ukrainian government.  The US and NATO can't send troops  for fear of starting a clash between two nuclear nations,  something we simply do not do.  It's a red line that no one crosses.  (gun reports)  I wanna tell you exactly why Vladimir Putin  and his army are here.  The story behind this invasion is the story  of this one man's worldview,  but it's also a story of a bet that he took.  A bet that Ukrainians would give up,  lay down their arms, and see the world the way he does.  But if there's anything I have learned in the past week,  it's that even if Putin conquers a big portion  of this country,  something he has the military hardware to do,  even if he does that, he still won't win this war.  In fact, I'm here to argue that he's already lost.**
+- **There are a big explosions taking place in Kiev right now.**
+- **People here are going to be waking up  to a very different country than the one they went  to sleep in.  (civilian speaking in foreign language)**
+- **We are getting these nonstop reports of attacks  and Russian strikes from all across the country.  (man speaking in foreign language)**
+- **Vladimir Putin has already lost this war.  And to understand what I'm talking about,  you have to look at two things.  Number one, what Putin said right before the invasion.  And number two, what actually happened once he invaded.  I wanna show you both.  (keyboard clacking)  So a few days before the invasion,  Putin gets on TV and addresses the nation.  (Putin speaking Russian)  It's this unsurprising hour-long history lecture,  where Putin lays out his grand intricate argument  as to why Ukraine in fact, isn't a real country.  (Putin speaking Russian)  Instead, Ukraine was created by the authors  of the Russian communist revolution  years ago.  And now Ukraine,  this invented country that's just an extension  of Russia itself,  has been hijacked by the US  and Europe who have installed neo-Nazi thugs  to run the show.  Seriously, he said all of this.  You can go watch the hour-long lecture if you want.  According to his story,  the West did this to eventually force Ukraine  into their military alliance called NATO,  which they will use to defeat Russia,  just like, and seriously, he says this,  just like Hitler did  years ago.  But this time, Putin will make sure  that Russia is ready for the invasion.  (Putin speaking Russian)  Oh gosh, there is a lot to unpack here.  The neo-Nazi thug thing, I will get to that in a second,  but the message was clear.  Putin was basically like, "Ukraine,  if you're gonna disavow communist Russia  and all of the things that it gave to you,  you don't deserve the land that you got  from communist Russia.  And in fact, all of this land still belongs to Russia,  and we're gonna take it back."  (Putin speaking Russian)  But this warped historical framing  of who rightfully owns this land isn't quite enough  to justify an invasion.  Maybe in like  or something, but not today.  So Putin needs to really emphasize the villains  in his story.  So he makes a big part of his story,  this idea that you Ukraine, this fake country,  is being run by American-backed, anti-Russian neo-Nazis,  who are holding the Ukrainian people hostage.  (Putin speaking Russian)  Okay, okay, okay.  It's easy to poke fun at the delusion of Vladimir Putin,  but let's talk about the facts here  and what Putin is actually basing this off of,  'cause it really matters for understanding why he went in  and why he's gonna lose.  First, let's just clear up the fact  that Ukraine wasn't invented by Russia.  Kiev, the capital of Ukraine,  was a thriving city long before Moscow was even on the map.  Ukraine has a very old culture,  but what Putin has done is twisted modern history  to make a claim  that Ukraine actually isn't a legitimate country.  And he does this because it's a very key part of his story,  one that supports the second major argument,  which is that Ukraine is run by neo-Nazis who want  to exterminate the Russian-speaking population.  So let's get the facts here.  Within Ukraine, there is indeed a faction  of far-right neo-Nazis who have a political party  and a militia force.  And this militia force has actually joined  the Ukrainian Army in the past eight years  to fight Russia back from annexing any more territory  in the east of the country.  You may have remembered that Russia took over a big part  of Ukraine called Crimea eight years ago.  (guns report)**
+- **Ukrainian forces have set up a perimeter,  but it's clear that we are completely surrounded  by Russian forces.**
+- **Yeah, these neo-Nazi fighters sort  of nationalist guys came up as a resistance to that.  And yet, Putin's got one thing right.  These are not good people.  These are literal neo-Nazi white supremacist soldiers  that commit all sorts of atrocities  and train children in their ideology and fighting tactics.  (trainee screams)  (trainer chants in foreign language)  (trainees chant in foreign language)  So yeah, Putin, I get it, these are bad people.  Neo-Nazis, we don't like them.  But Putin is claiming  that these are the people running the country,  running Ukraine.  When in fact, if you look at the data  from the  election in Ukraine,  you'll see that the country's ultranationalist,  far-right coalition gained barely over % of the vote  and zero seats in the parliament.  They're a small group of extremely fringe far-right fighters  that Putin has latched onto.  Oh, and there's a more obvious bit of data here,  which is that the Ukrainian President is Jewish  and has family who died in the Holocaust.  Ukraine is not run by neo-Nazis.  Listen, to balance my view on this  because I'm in the west and I'm getting all Western media,  I have actually been watching Russian-state TV  to see what the narrative is on their side.  And I can tell you that they actually believe  that the country is run by Nazis.**
+- **It is reminiscent of the practices  and methods of Nazi Germany.**
+- **And we're seeing a full revival of Nazism  and fascism in Ukraine.**
+- **I've tried to dig into this to try  to understand is there more meat on the bone here?  No, there's not.  A fringe group of militiamen  in the far east are what Putin is basing this off of.  Over here in reality land,  Ukraine is a nation of  million people  with its own culture that is thousands of years old.  It is a country where fewer and fewer people like Russia.  In fact, it's a country  that ousted the pro-Russian leader in .  (steady instrumental music)  The people don't want Russia and Putin anymore,  they've moved on,  but all of these facts are explained away very conveniently  by Putin's bigger conspiracy,  which is that it's actually outside forces  that are pulling the strings,  and that the people of Ukraine have been brainwashed  by the West.  And yet, there is one thing  that Putin is absolutely right about.  (Putin speaking Russian)  These two countries are deeply connected through culture  and language and history in exchange.  A war against Ukrainians would not sit well  with the Russian people,  and this explains why Putin needs to frame the war  in a very certain way.  Not an invasion to take over a sovereign nation  of Russia's brothers and sisters,  but rather a rescue effort to save the Ukrainian people  from these aggressive villains  who are really controlling the country.  (Putin speaking Russian)  Okay, I'm about to jump into the maps  and look at how the war is actually playing out  and to help us understand it,  but I really, really want us to keep in mind Putin's story  because it really will make everything click.  So let's just go over it really quickly.  Putin's story is really four things.  Number one, Ukraine really belongs to Russia.  Number two, it has been hijacked by the US and Europe,  i.e. the West.  Number three, the West is controlling Ukraine  with its neo-Nazi puppets.  Also, that the west military alliance, called NATO,  can use Ukraine as a bridge to get to Russia,  who they want to defeat.  And all of this leads to Putin must invade  to free Ukrainians and protect Russia from the West.  That is it.  That is the justification  that Vladimir Putin has been building for years,  if not decades.  (Putin speaking Russian)  Minutes after this second address last week,  where he laid out all of his justifications,  in the middle of the night,  the rockets start flying and the tanks start rolling.  (rockets whooshing)  (guns report) (alarm blaring)  (ordnance booms)  And this is how it started.  What is becoming the most consequential war in Europe  since World War II,  a pretend rescue effort framed as an operation  to denazify the country.  Russia comes in from all sides,  quickly taking over mostly rural areas,  but slowly moving towards the major cities.**
+- **The country's being attacked from all directions.  Some of those Russian troops are heading here  to the capital.**
+>  In addition to tanks and troops taking over land,  Russia also starts firing missiles  that hit targets all throughout the country.**
+- **This has come out of nowhere.  Who resist- **(ground rumbles)  Oh, I tell you what, I just heard a big bang right here.**
+- **The invasion,  the attack that Russia promised would never happen,  has now started.**
+- **[_**News Story**_] People who live in Kiev are sleeping  in underground subway stations.  It's the only place  they feel safe. - Ukrainians fled  to basements, to bomb shelters.**
+- **Some people are adjusting to this new reality  of living in a country now at war.**
+- **Hundreds of thousands fled to the borders west  of the country, looking for safety.**
+- **[_**News Story**_] Others are taking trains to the west  to get out of the country.**
+- **They are fleeing into neighboring countries,  like Moldova, Romania, and Poland.**
+- **[_**News Story**_] At the city's central train station,  a frantic dash,  (civilians speaking in foreign language)  as people try to escape to the west of the country.**
+- **But wait, remember Putin's story.  According to this story, after this initial invasion,  Ukrainians were gonna wake up from their slumber  and welcome him with open arms,  the neo-Nazi president was gonna flee,  and Ukraine would be returned to Russia.  Putin becoming the savior of the Russian motherland.  But that is exactly what didn't happen.**
+- **[_**News Story**_] Outgunned and outnumbered,  Ukrainian soldiers  and civilians alike are mounting a stiff resistance.**
+- **[Translator] I used to teach maths and physics,  but two days ago, the Russian army took control of my town.  So I signed up to fight.**
+- **[_**News Story**_] Every day, Ukrainians are taking  to the streets to fight for their homeland.  (civilian speaking in foreign language)  "Let those Russian shits come here," she says.  "We are ready to greet them."**
+- **We are ready to fight, and fight like hell.**
+- **This is my city, this is my land. I have to protect it.**
+- **[News Anchor] You do not feel they're gonna succeed  in taking out your administration and your government?**
+- **No way,  as they will never take it.**
+- **The response of Ukrainians, both military and civilian,  is where Putin's story starts to crumble.**
+- **The entire world is witnessing the determined  and brave resistance by the Ukrainian army and population.**
+- **I have never seen Ukraine that united.**
+- **And as for the President of Ukraine,  the alleged neo-Nazi, drug addict, thug, puppet of the West,  well, the US actually offered to airlift him  out of the country for his own safety.  Instead of taking the offer, his response was quote,  "The fight is here; I need ammunition, not a ride."  Which by the way,  that quote has been turned into a t-shirt  that you can buy on Amazon.**
+- **Ukrainians are fighting for love of country.  Russians are fighting out of a fear of a dictator.**
+- **In the event of Russia opting for escalation,  Ukraine will defend itself.**
+- **He then sent a video around  (Zelensky speaking in foreign language)  to the country of him in central Kiev,  making it known that he is staying, he is fighting.  So despite being totally outmatched militarily,  Ukrainians are fighting back,  showing that the outcome of a war is as much determined  by the courage and patriotism of the population  as it is by the number of missiles and troops that you have.  (Zelensky speaking in foreign language)  I've been talking to people inside Ukraine,  and seeing this devotion firsthand.  How is morale right now among you  and among the people you're talking to?**
+- **Honestly, extremely high.**
+- **Ukrainians aren't letting this conquest has happen,  and in doing so, they are turning Putin's argument,  his story on its head,  and foiling what appears to be his initial strategy  for wrangling Ukraine back into his sphere of influence.  One Ukrainian I talked to said  that there's a waiting list for the Ukrainian army.**
+- **Our regional defense won't accept any more people  because it's packed.**
+- **[_**News Story**_] The queues are growing.**
+- **And you cannot even get in right now.**
+- **[_**News Story**_] Men volunteering to fight.**
+- **[_**News Story**_] Molotov cocktails for those who want  to fight, but don't have a gun.**
+- **[_**News Story**_] A tweet from the Ukrainian defense ministry,  to prepare Molotov cocktails to throw at the occupiers.**
+- **Well, I'm here in order to protect my family, my country.**
+- **There is an incredible sense of unity here.  The morale is very high.**
+- **Okay, this sounds all positive, and it is,  but this is still war,  and Putin can still conquer a lot of land.  He can take over major cities, install a puppet government,  and be the new ruler of Ukraine.  He has the military to do it,  and he seems to have the tolerance for bloodshed.  He seems to believe in his fantasy story so much  that he's gonna keep up this crusade.  But I'm here to tell you  that Putin has already lost this war.  (rousing music)  I mean, let's play this out so I can show you what I mean.  Let's say Putin keeps going.  He keeps sending troops in and missiles despite all  of this resistance.  He could eventually take over the major population centers,  including the capital Kiev.  All of this with the same goal that he's had the whole time,  which is getting the Ukrainians to give up and realize  that Russia is actually the country they want to align with.  He's also kind of hoping  that maybe the Ukrainian military will come to their senses  and take over the government and negotiate with Putin.  But let's say they never do, they probably won't.  Instead, they keep doing what they've been doing  for the last week.  Resisting, defending, condemning,  and broadcasting all of it to the world on the internet.  So Putin has no choice but to drive the government out  and install a pro-Russian regime.  In order to do this,  he's gonna need a massive military presence  to keep control of these cities and their people.  It's now costing him tens of billions of dollars,  and crippling his economy, which by the way,  is only the size of Texas.  I mean, one of the biggest knocks  on Putin's plan is the sheer size of Ukraine.  Let's zoom out and realize that Ukraine is huge.  It's the biggest country in Europe,  if you don't count Russia,  the giant country that extends into Asia.  Occupying this entire landmass would be basically  impossible for Russia.  So you have a map that maybe looks something like this,  which gives plenty of space for Ukrainians  to gather and mount their resistance,  giving Russia hell for an indefinite period of time.  Meanwhile, back home in Russia,  they've now seen the imagery from the ground.  They now see that Putin's story,  justifying this invasion is total BS.  There's a no Nazis, there's no brainwashing of the people.  Instead, in this scenario,  Russians are thinking of deaths  of our Ukrainian brothers and sisters,  while also destroying the Russian economy.**
+- **Almost every Russian has someone from Ukraine,  either a friend or a relative or a colleague.  This is a war between brother nations.**
+- **Protestors in the streets demonstrating  against Vladimir Putin's invasion of Ukraine.  (crowd clamoring)**
+- **On top of all of that,  the rich Russian business guys who keep Putin in power,  the oligarchs,  they aren't happy  because the entire world has cut Russia off.**
+- **Russian billionaires, moving their yachts,  scrambling their jets,  and shifting their assets to prepare  for a possible crackdown.**
+>  They can't access their financial reserves,  their ability to move money is made much more difficult,  people aren't letting their trade vessels into ports.**
+- **New efforts by US law enforcement  to make Russian oligarchs feel the pain of Putin's war.**
+- **I mean, this is effectively what sanctions do.  So the oligarchs are now like, "Dude, Putin, WTF."  And they put pressure on him to stop this madness.  But even still, Putin has enough power  that he could still dig in his heels  and keep trying to get Ukrainians to come under his rule.  But by this point, Ukrainians are done with Putin.  They see his true colors.  Anyone who was on the fence  before has now witnessed civilians being killed  in Putin's war of choice.  They won't come on his side now.  The upshot here is that there's not really a scenario  where Putin keeps going and gets what he wants.  And that's because the story that he based this invasion  off of is proving to be totally wrong.  All of these assumptions that he predicated his war  on turned out to be the delusions  of a pseudohistory buff stuck in the logic of the Cold War,  not the realities on the ground today.  Add another point to the against-Putin camp.  Meanwhile, Putin's war has united the West  and NATO like never before.  NATO has a new sense of purpose,  a new thing to rally around.  Something they've been looking for  since the end of the Cold War.  And Ukraine, who is currently getting tons of support  and weapons and money and aid  and refugee support from NATO countries,  is now way more likely to sympathize with the West  because now, they've seen the realities  of what Putin has to offer,  which is falsehoods and unprovoked conflict,  all in the name of some ill-defined vision  of former imperial glory.  Nope.**
+- **It's my city, it's my home town,  it's my homeland, it's my country,  and I'm not the one who should leave.  The Russians are the one who should leave.**
+- **Russia is a great nation, full of beautiful culture,  geography, history, and people.  The vast majority  of those people don't want imperial-style expansion and war.  They want to live their lives, to prosper, to connect.  And yet the warped delusional worldview  of one greedy man has cut off their ability to do that.  How is that possible?**
+- **[_**News Story**_] The Russian people have no say  in the behavior of their government  under the Putin dictatorship.**
+- **It's incredibly brave.  People, often young people in Russia,  who are out on the streets,  protesting against what their president is doing.**
+- **This is not the war by the people of Russia.  This is yet another military adventure  by the unaccountable, unelected,  increasingly deranged dictator in the Kremlin  by the name of Vladimir Putin.**
+- **This situation is developing,  and certainly will take paths that no one can predict.  By the time you're watching this,  I'm sure some key development has happened  that I haven't covered here.  But I feel pretty certain when I say  that Putin really doesn't have a path to the victory  that he set out to achieve last week,  when he sent people and weapons across his border  to attack his neighbors.  Ukrainians with their bold courage have proved him wrong.  I know that sounds very poetic and maybe even cliche,  but in this case, it's true.**
+- **So if someone told me a week ago,  I would own an assault rifle, I would not believe.**
+- **So now the world will stand by and support,  as they continue to wage this battle  for the future of their land,  land that belongs to them, not to a Russian dictator.  (protestors chant in foreign language)**
+- **Just for everyone to know, it's our land.  It's our home, we will defend it.**
+- **[_**News Story**_]  Ukrainian border guards-**
+- **[_**News Story**_] They're finally telling  an invading Russian warship, "To go F yourself,"  when asked to surrender.**
+- **And we will win.  Russian ship, go fuck yourself.  (all chanting in foreign language)  (pensive music)**
+- **Okay, before you go,  I want to tell you about two things that are important.  Number one,  I wanna give money to the relief effort in Ukraine.  There's a lot of need right now.  I'm running a fundraiser  where I'm going to match donations up to $,.  Information in the description.  Number two, I need to thank today's sponsor  who made this video possible.  Thank you, Nord VPN, for supporting this video.  A VPN is a useful tool that allows you to connect  to the internet, but through a different country.  It also allows you to surf the internet  without being tracked and to do so more securely.  I use a VPN when I travel and I'm in a different country,  and I need to log into my Gmail.  And so I route my connection through the United States  so that the internet doesn't think I'm someone else trying  to get into my email.  It's just super convenient to use a VPN  when you're in a different country.  I also use a VPN to log on to Netflix  or any other streaming service,  and get access way more content because you can log in  via other countries,  and now you have all of the content  that is available in those countries,  in addition to what's available in your country.  It's just awesome.  I've watched so many things this way.  Oh, and they just added a new feature  that is called Threat Protection, which blocks trackers,  it blocks malicious and intrusive ads,  it blocks harmful websites and malware.  A VPN is just like shield for surfing the internet,  but also like a portal for getting  to different versions of the internet.  It's just such a useful tool, I don't know.  Oh, and you don't have to be a tech person to use this.  It's super easy, it's one click,  or you can even make it automatic, connects.  It doesn't slow your internet down.  It's just a quick,  easy tool that sort of just runs in the background.  Luckily, it's very cheap,  and they're offering viewers  of this channel an exclusive discount at my link,  nordvpn.com/johnnyharris.  If you click that link, it helps support this channel.  It also gets you a great deal on a VPN,  which is actually not very expensive to begin with.  My favorite part about the whole thing is that  if you don't like it or you realize you don't need it  or whatever, you have  days to get all of your money back.  I'm a big fan of Nord VPN,  not only because they make a good product,  but because they support my channel.  I focus on a lot of thorny, difficult topics,  and Nord is way down with that  and they are a supporter of this journalism.  So thank you, Nord VPN, for supporting this channel.  Thank you all for watching.  This is an unfolding situation in Ukraine.  Again, by the time you're watching this,  it's probably in such a different place than it was,  but I'm doing my best to keep up with it.  And I hope this video was helpful to all of you.  Have a good day.**
