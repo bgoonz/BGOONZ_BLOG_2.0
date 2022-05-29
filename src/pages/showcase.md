@@ -129,8 +129,7 @@ sections:
             image: images/energetic-sunflower.png
           - title: Web Audio Workstation
             title_url: https://mihirbegmusiclab.netlify.app/
-
-            image_alt: image of
+            image_alt: image of Web Audio Workstation
             content: |+
                 Made using jQuery and Vanilla JS
             actions:
