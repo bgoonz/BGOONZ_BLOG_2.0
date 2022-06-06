@@ -2,31 +2,31 @@
 title: What Is a Web Developer?
 template: post
 subtitle: A website can have anywhere from a single person to an entire team
-  behind it, but at minimum, it needs a web developer. These people write the
-  code that gets a website working and visible on the world wide web.
+    behind it, but at minimum, it needs a web developer. These people write the
+    code that gets a website working and visible on the world wide web.
 excerpt: A website can have anywhere from a single person to an entire team
-  behind it, but at minimum, it needs a web developer. These people write the
-  code that gets a website working and visible on the world wide web.
+    behind it, but at minimum, it needs a web developer. These people write the
+    code that gets a website working and visible on the world wide web.
 date: 2022-06-06T21:37:03.789Z
 image: /blog/banner.jpg
 thumb_image: /blog/banner.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/html.yaml
-  - src/data/categories/css.yaml
-  - src/data/categories/gatsbyjs.yaml
-  - src/data/categories/google.yaml
-  - src/data/categories/git.yaml
-  - src/data/categories/javascript.yaml
+    - src/data/categories/html.yaml
+    - src/data/categories/css.yaml
+    - src/data/categories/gatsbyjs.yaml
+    - src/data/categories/google.yaml
+    - src/data/categories/git.yaml
+    - src/data/categories/javascript.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/accessibility.md
-  - src/pages/blog/adding-css-to-your-html.md
-  - src/pages/blog/beginners-guide-to-python.md
-  - src/pages/blog/code-playgrounds-of-2021.md
+    - src/pages/blog/accessibility.md
+    - src/pages/blog/adding-css-to-your-html.md
+    - src/pages/blog/beginners-guide-to-python.md
+    - src/pages/blog/code-playgrounds-of-2021.md
 cmseditable: true
 ---
 
