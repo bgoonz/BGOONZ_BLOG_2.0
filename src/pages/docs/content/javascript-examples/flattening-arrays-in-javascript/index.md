@@ -20,24 +20,59 @@ The classical recursive way is based on a function calling itself if the `i` e
 
 This method is the one used in `lodash` for example.
 
-```
-
+```javascript
+function baseFlatten(array, depth, predicate, isStrict, result) {
+  // lots of code here
+  if (depth > 1) {
+    // Recursively flatten arrays (susceptible to call stack limits).
+    baseFlatten(value, depth - 1, predicate, isStrict, result);
+  } else {
+    arrayPush(result, value);
+  }
+  // lots of code here
+}
 ```
 
 Note the original comment in the source code to remind us about recursion limitations in JavaScript.
 
 Then, here is the basic version that you would have probably implemented if you had to.
 
-```
+```javascript
+function flatten(arr) {
+  if(!Array.isArray(arr)) {
+    return [arr];
+  }
 
+  var array = [];
+  for(var i = 0; i < arr.length; i++) {
+    array = array.concat(flatten(arr[i]));
+  }
+  return array;
+}
+
+flatten([1,[2,[3]],[4]]); // => [1,2,3,4]
 ```
 
 ## The iterative way
 
 Now, let’s look at another way of solving that problem. The new idea is to loop through the array and either concatenate the nested arrays to the original array or add the element to a resulting array as shown below.
 
-```
+```javascript
+function flatten(arr) {
+  var array = [];
+  while(arr.length) {
+    var value = arr.shift();
+    if(Array.isArray(value)) {
+      // this line preserve the order
+      arr = value.concat(arr);
+    } else {
+      array.push(value);
+    }
+  }
+  return array;
+}
 
+flatten([1,[2,[3]],[4]]); // => [1,2,3,4]
 ```
 
 # Practice your “outside the box” thinking
