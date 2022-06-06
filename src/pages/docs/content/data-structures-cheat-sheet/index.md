@@ -237,7 +237,7 @@ In-order traversal visit nodes on this order: left, parent, right.
 
 BinarySearchTree.prototype.inOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>* inOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.left); }</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*inOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.left); }</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
 
 Let's use this tree to make the example:
 
@@ -251,7 +251,7 @@ Post-order traversal visit nodes on this order: left, right, parent.
 
 BinarySearchTree.prototype.postOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>* postOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.right); }</span><br><span>  <span>yield</span> node;</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*postOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.right); }</span><br><span>  <span>yield</span> node;</span><br><span>}</span><br></pre></td></tr></tbody></table>
 
 Post-order traversal would print out the following values: `3, 4, 5, 15, 40, 30, 10`.
 
@@ -261,7 +261,7 @@ In-order traversal visit nodes on this order: parent, left, right.
 
 BinarySearchTree.prototype.preOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>* preOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*preOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
 
 Pre-order traversal would print out the following values: `10, 5, 4, 3, 30, 15, 40`. This order of numbers is the same result that we would get if we run the Depth-First Search (DFS).
 
@@ -414,7 +414,7 @@ function double(arr: number[]) {
 }
 ```
 
-### quick note around object, array through BigO lens!
+### quick note around object, array through BigO lens
 
 -   object:
 
@@ -596,10 +596,10 @@ array.sort(cb) will turn all values to _string_ then sort it based on it's _unic
 ['a', 'c', 'b', 'f', 'd'].sort(); // (5) ["a", "b", "c", "d", "f"]
 [1, 10, 6, 8, 2, 3, 5].sort(); //(7) [1, 10, 2, 3, 5, 6, 8]
 
-/*
+/* 
 also receive callback function by two arguments:
-    a: previous number
-    b: next number
+    a: previous number 
+    b: next number 
 
 */
 // if callback return NEGATIVE number a will placed before b
@@ -747,7 +747,7 @@ function mergeSort(arr: number[]): number[] {
 
 ### quick sort
 
-![](./assets/Quicksort.gif)
+![quick sort](./assets/Quicksort.gif)
 
 in following implementation we always assume _first item_ as pivot
 
@@ -2343,7 +2343,7 @@ function charCount(str: string) {
 
 // *** string.chatCodeAt(i: number) Returns the unicode of value on specified location
 
-/*
+/* 
 numeric (0-9) code > 47 && code < 58;
 upper alpha (A-Z) code > 64 && code < 91;
 lower alpha (a-z) code > 96 && code <123;
@@ -2409,7 +2409,7 @@ map.set(false, 'boolean');
 map.set(() => console.log('Function'), 'Function');
 
 console.log(map);
-/*
+/* 
 0: {Object => "Object"}
 1: {Array(1) => "arr"}
 2: {1 => "number"}
@@ -2422,7 +2422,7 @@ for (let [key, value] of map) console.log(key, value);
 
 // map to arr
 const arr = [...map]; // :[ [key, value] ]
-/*
+/* 
 0: (2) [{…}, "Object"]
 1: (2) [Array(1), "arr"]
 2: (2) [1, "number"]
