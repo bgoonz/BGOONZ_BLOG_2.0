@@ -44,9 +44,9 @@ Later, you write a component for subscribing to a single blog post, which follow
 
 `CommentList` and `BlogPost` aren’t identical — they call different methods on `DataSource`, and they render different output. But much of their implementation is the same:
 
-* On mount, add a change listener to `DataSource`.
-* Inside the listener, call `setState` whenever the data source changes.
-* On unmount, remove the change listener.
+-   On mount, add a change listener to `DataSource`.
+-   Inside the listener, call `setState` whenever the data source changes.
+-   On unmount, remove the change listener.
 
 You can imagine that in a large app, this same pattern of subscribing to `DataSource` and calling `setState` will occur over and over again. We want an abstraction that allows us to define this logic in a single place and share it across many components. This is where higher-order components excel.
 
@@ -64,7 +64,7 @@ When `CommentListWithSubscription` and `BlogPostWithSubscription` are rendered, 
 
 ```
 
-Note that a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior. Rather, a HOC *composes* the original component by *wrapping* it in a container component. A HOC is a pure function with zero side-effects.
+Note that a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior. Rather, a HOC _composes_ the original component by _wrapping_ it in a container component. A HOC is a pure function with zero side-effects.
 
 And that’s it! The wrapped component receives all the props of the container, along with a new prop, `data`, which it uses to render its output. The HOC isn’t concerned with how or why the data is used, and the wrapped component isn’t concerned with where the data came from.
 
@@ -80,7 +80,7 @@ Resist the temptation to modify a component’s prototype (or otherwise mutate i
 
 ```
 
-There are a few problems with this. One is that the input component cannot be reused separately from the enhanced component. More crucially, if you apply another HOC to `EnhancedComponent` that *also* mutates `componentDidUpdate`, the first HOC’s functionality will be overridden! This HOC also won’t work with function components, which do not have lifecycle methods.
+There are a few problems with this. One is that the input component cannot be reused separately from the enhanced component. More crucially, if you apply another HOC to `EnhancedComponent` that _also_ mutates `componentDidUpdate`, the first HOC’s functionality will be overridden! This HOC also won’t work with function components, which do not have lifecycle methods.
 
 Mutating HOCs are a leaky abstraction—the consumer must know how they are implemented in order to avoid conflicts with other HOCs.
 
@@ -126,7 +126,7 @@ The most common signature for HOCs looks like this:
 
 ```
 
-*What?!* If you break it apart, it’s easier to see what’s going on.
+_What?!_ If you break it apart, it’s easier to see what’s going on.
 
 ```
 
