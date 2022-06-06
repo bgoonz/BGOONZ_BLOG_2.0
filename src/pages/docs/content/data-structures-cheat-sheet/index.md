@@ -2,8 +2,9 @@
 title: Data Structures Cheat Sheet
 template: docs
 excerpt: Its always good to have a look at worst-case time complexities of
-  common data structure operations frequently.
+    common data structure operations frequently.
 ---
+
 # ![](ds-cheat-sheet-operations.png)
 
 > Its always good to have a look at worst-case time complexities of common data structure operations frequently.
@@ -37,7 +38,7 @@ Linked List is the data structure that comes with a lot of different operational
 
 ---
 
-## [](#Trees-basic-concepts "Trees: basic concepts")Trees: basic concepts
+## [](#Trees-basic-concepts 'Trees: basic concepts')Trees: basic concepts
 
 A tree is a data structure where a node can have zero or more children. Each node contains a **value**. Like graphs, the connection between nodes is called **edges**. A tree is a type of graph, but not all of them are trees (more on that later).
 
@@ -47,16 +48,16 @@ These data structures are called "trees" because the data structure resembles a 
 
 Here are some properties of trees:
 
-- The top-most node is called **root**.
-- A node without children is called **leaf** node or **terminal** node.
-- **Height** (_h_) of the tree is the distance (edge count) between the farthest leaf to the root.
-  - `A` has a height of 3
-  - `I` has a height of 0
-- **Depth** or **level** of a node is the distance between the root and the node in question.
-  - `H` has a depth of 2
-  - `B` has a depth of 1
+-   The top-most node is called **root**.
+-   A node without children is called **leaf** node or **terminal** node.
+-   **Height** (_h_) of the tree is the distance (edge count) between the farthest leaf to the root.
+    -   `A` has a height of 3
+    -   `I` has a height of 0
+-   **Depth** or **level** of a node is the distance between the root and the node in question.
+    -   `H` has a depth of 2
+    -   `B` has a depth of 1
 
-### [](#Implementing-a-simple-tree-data-structure "Implementing a simple tree data structure")Implementing a simple tree data structure
+### [](#Implementing-a-simple-tree-data-structure 'Implementing a simple tree data structure')Implementing a simple tree data structure
 
 As we saw earlier, a tree node is just a data structure that has a value and has links to their descendants.
 
@@ -70,44 +71,44 @@ We can create a tree with 3 descendents as follows:
 
 That's all; we have a tree data structure!
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/simpson2-tree.jpg "Simpson tree data structure")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/simpson2-tree.jpg 'Simpson tree data structure')
 
 The node `abe` is the **root** and `bart`, `lisa` and `maggie` are the **leaf** nodes of the tree. Notice that the tree's node can have a different number of descendants: 0, 1, 3, or any other value.
 
 Tree data structures have many applications such as:
 
-- [Maps](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps)
-- [Sets](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#Sets)
-- Databases
-- Priority Queues
-- Querying an LDAP (Lightweight Directory Access Protocol)
-- Representing the Document Object Model (DOM) for HTML on Websites.
+-   [Maps](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps)
+-   [Sets](https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#Sets)
+-   Databases
+-   Priority Queues
+-   Querying an LDAP (Lightweight Directory Access Protocol)
+-   Representing the Document Object Model (DOM) for HTML on Websites.
 
-## [](#Binary-Trees "Binary Trees")Binary Trees
+## [](#Binary-Trees 'Binary Trees')Binary Trees
 
 Trees nodes can have zero or more children. However, when a tree has at the most two children, then it's called **binary tree**.
 
-### [](#Full-Complete-and-Perfect-binary-trees "Full, Complete and Perfect binary trees")Full, Complete and Perfect binary trees
+### [](#Full-Complete-and-Perfect-binary-trees 'Full, Complete and Perfect binary trees')Full, Complete and Perfect binary trees
 
 Depending on how nodes are arranged in a binary tree, it can be **full**, **complete** and **perfect**:
 
-- **Full binary tree**: each node has exactly 0 or 2 children (but never 1).
-- **Complete binary tree**: when all levels except the last one are **full** with nodes.
-- **Perfect binary tree**: when all the levels (including the last one) are full of nodes.
+-   **Full binary tree**: each node has exactly 0 or 2 children (but never 1).
+-   **Complete binary tree**: when all levels except the last one are **full** with nodes.
+-   **Perfect binary tree**: when all the levels (including the last one) are full of nodes.
 
 Look at these examples:
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg "Full vs. Complete vs. Perfect Binary Tree")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg 'Full vs. Complete vs. Perfect Binary Tree')
 
 These properties are not always mutually exclusive. You can have more than one:
 
-- A perfect tree is **always** complete and full.
-  - Perfect binary trees have precisely 2k\-1 nodes, where _`k`_ is the last level of the tree (starting with 1).
-- A complete tree is **not** always `full`.
-  - Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
-- A full tree is not always complete and perfect.
+-   A perfect tree is **always** complete and full.
+    -   Perfect binary trees have precisely 2k\-1 nodes, where _`k`_ is the last level of the tree (starting with 1).
+-   A complete tree is **not** always `full`.
+    -   Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
+-   A full tree is not always complete and perfect.
 
-## [](#Binary-Search-Tree-BST "Binary Search Tree (BST)")Binary Search Tree (BST)
+## [](#Binary-Search-Tree-BST 'Binary Search Tree (BST)')Binary Search Tree (BST)
 
 Binary Search Trees or BST for short are a particular application of binary trees. BST has at most two nodes (like all binary trees). However, the values are in such a way that the left children value must be less than the parent, and the right children is must be higher.
 
@@ -115,12 +116,12 @@ Binary Search Trees or BST for short are a particular application of binary tree
 
 Let's implement a Binary Search Tree!
 
-### [](#BST-Implementation "BST Implementation")BST Implementation
+### [](#BST-Implementation 'BST Implementation')BST Implementation
 
 BST are very similar to our previous [implementation of a tree](#Implementing-a-simple-tree-data-structure). However, there are some differences:
 
-- Nodes can have at most, only two children: left and right.
-- Nodes values has to be ordered as `left < parent < right`.
+-   Nodes can have at most, only two children: left and right.
+-   Nodes values has to be ordered as `left < parent < right`.
 
 Here's the tree node. Very similar to what we did before, but we added some handy getters and setters for left and right children. Notice that is also keeping a reference to the parent and we update it every time add children.
 
@@ -136,7 +137,7 @@ BinarySearchTree.js linkUrl linkText
 
 Let's implementing insertion.
 
-### [](#BST-Node-Insertion "BST Node Insertion")BST Node Insertion
+### [](#BST-Node-Insertion 'BST Node Insertion')BST Node Insertion
 
 To insert a node in a binary tree, we do the following:
 
@@ -146,7 +147,7 @@ To insert a node in a binary tree, we do the following:
 
 Let's do an illustration how to insert 30, 40, 10, 15, 12, 50:
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst2.gif "Inserting nodes on a Binary Search Tree (BST)")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst2.gif 'Inserting nodes on a Binary Search Tree (BST)')
 
 We can implement insert as follows:
 
@@ -162,7 +163,7 @@ BinarySearchTree.prototype.findNodeAndParent[Full Code](https://github.com/ameji
 
 `findNodeAndParent` goes through the tree searching for the value. It starts at the root (line 2) and then goes left or right based on the value (line 10). If the value already exists, it will return the node `found` and also the parent. In case that the node doesn't exist, we still return the `parent`.
 
-### [](#BST-Node-Deletion "BST Node Deletion")BST Node Deletion
+### [](#BST-Node-Deletion 'BST Node Deletion')BST Node Deletion
 
 We know how to insert and search for value. Now, we are going to implement the delete operation. It's a little trickier than adding, so let's explain it with the following cases:
 
@@ -198,7 +199,7 @@ Deleting the root is very similar to removing nodes with 0, 1, or 2 children tha
 
 Here's an animation of what we discussed.
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-remove.gif "Removing a node with 0, 1, 2 children from a binary search tree")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-remove.gif 'Removing a node with 0, 1, 2 children from a binary search tree')
 
 In the animation, it moves up the left child/subtree and keeps the right child/subtree in place.
 
@@ -210,9 +211,9 @@ BinarySearchTree.prototype.remove[Full Code](https://github.com/amejiarosario/ds
 
 Here are some highlights of the implementation:
 
-- First, we search if the node exists. If it doesn't, we return false and we are done!
-- If the node to remove exists, then combine left and right children into one subtree.
-- Replace node to delete with the combined subtree.
+-   First, we search if the node exists. If it doesn't, we return false and we are done!
+-   If the node to remove exists, then combine left and right children into one subtree.
+-   Replace node to delete with the combined subtree.
 
 The function that combines left into right subtree is the following:
 
@@ -226,7 +227,7 @@ For instance, let's say that we want to combine the following tree and we are ab
 
 Now, and if we make the new subtree the root, then node `30` is no more!
 
-## [](#Binary-Tree-Transversal "Binary Tree Transversal")Binary Tree Transversal
+## [](#Binary-Tree-Transversal 'Binary Tree Transversal')Binary Tree Transversal
 
 There are different ways of traversing a Binary Tree, depending on the order that the nodes are visited: in-order, pre-order, and post-order. Also, we can use them [DFS](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/blog/2018/05/14/Data-Structures-for-Beginners-Graphs-Time-Complexity-tutorial/#Depth-first-search-DFS-Graph-search) and [BFS](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/blog/2018/05/14/Data-Structures-for-Beginners-Graphs-Time-Complexity-tutorial/#Breadth-frirst-search-BFS-Graph-search) that we learned from the [graph post.](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/blog/2018/05/14/Data-Structures-for-Beginners-Graphs-Time-Complexity-tutorial/) Let's go through each one.
 
@@ -280,13 +281,13 @@ BinarySearchTree.prototype.bfs[Full Code](https://github.com/amejiarosario/dsa.j
 
 The BFS order is: `10, 5, 30, 4, 15, 40, 3`
 
-## [](#Balanced-vs-Non-balanced-Trees "Balanced vs. Non-balanced Trees")Balanced vs. Non-balanced Trees
+## [](#Balanced-vs-Non-balanced-Trees 'Balanced vs. Non-balanced Trees')Balanced vs. Non-balanced Trees
 
 So far, we have discussed how to `add`, `remove` and `find` elements. However, we haven't talked about runtimes. Let's think about the worst-case scenarios.
 
 Let's say that we want to add numbers in ascending order.
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-asc.gif "Inserting values in ascending order in a Binary Search Tree")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-asc.gif 'Inserting values in ascending order in a Binary Search Tree')
 
 We will end up with all the nodes on the left side! This unbalanced tree is no better than a LinkedList, so finding an element would take _O(n)_. 😱
 
@@ -296,7 +297,7 @@ We need to find a way to balance the tree!
 
 If the tree was **balanced**, then we could find elements in _O(log n)_ instead of going through each node. Let's talk about what balanced tree means.
 
-![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/balanced-vs-non-balanced-tree.jpg "Balanced vs unbalanced Tree")
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/balanced-vs-non-balanced-tree.jpg 'Balanced vs unbalanced Tree')
 
 If we are searching for `7` in the non-balanced tree, we have to go from 1 to 7. However, in the balanced tree, we visit: `4`, `6`, and `7`. It gets even worse with larger trees. If you have one million nodes, searching for a non-existing element might require to visit all million while on a balanced tree it just requires 20 visits! That's a huge difference!
 
@@ -319,11 +320,11 @@ O(n):
 
 ```javascript
 function addUpToSimple(n: number) {
-  let total = 0;
-  for (let i = 0; i < n; i++) {
-    total += i;
-  }
-  return total;
+    let total = 0;
+    for (let i = 0; i < n; i++) {
+        total += i;
+    }
+    return total;
 }
 ```
 
@@ -331,7 +332,7 @@ O(1):
 
 ```javascript
 function addUpComplex(n: number) {
-  return (n * (n + 1)) / 2;
+    return (n * (n + 1)) / 2;
 }
 ```
 
@@ -339,14 +340,14 @@ O(n): maybe thinking O(2n) but we see big picture! BigONotation doesn't care abo
 
 ```javascript
 function printUpAndDown(n: number) {
-  console.log("Going up");
-  for (let i = 0; i < n; i++) {
-    console.log(i);
-  }
-  console.log("Going down");
-  for (let j = n - 1; j > 0; j--) {
-    console.log(j);
-  }
+    console.log('Going up');
+    for (let i = 0; i < n; i++) {
+        console.log(i);
+    }
+    console.log('Going down');
+    for (let j = n - 1; j > 0; j--) {
+        console.log(j);
+    }
 }
 ```
 
@@ -354,12 +355,12 @@ O(n^2)
 
 ```javascript
 function printAllPairs(n: number) {
-  for (let i = 0; i < n; i++) {
-    console.log(i);
-    for (let j = 0; j < n; j++) {
-      console.log(j);
+    for (let i = 0; i < n; i++) {
+        console.log(i);
+        for (let j = 0; j < n; j++) {
+            console.log(j);
+        }
     }
-  }
 }
 ```
 
@@ -367,9 +368,9 @@ O(n) : cuz as soon as n grows complexity grows too
 
 ```javascript
 function logAtLeastFive(n: number) {
-  for (let i = 0; i <= Math.max(5, n); i++) {
-    console.log(i);
-  }
+    for (let i = 0; i <= Math.max(5, n); i++) {
+        console.log(i);
+    }
 }
 ```
 
@@ -377,9 +378,9 @@ O(1)
 
 ```javascript
 function logAtMostFive(n: number) {
-  for (let i = 0; i <= Math.min(5, n); i++) {
-    console.log(i);
-  }
+    for (let i = 0; i <= Math.min(5, n); i++) {
+        console.log(i);
+    }
 }
 ```
 
@@ -387,17 +388,17 @@ function logAtMostFive(n: number) {
 
 Rules of Thumb
 
-- <==(_**most primitive booleans numbers undefined null are constant space**_)==>.
-- <==(_\*\*strings and reference types like objects an arrays require O(n) space \_n is string length or number of keys_\*\*\_)==>
+-   <==(_**most primitive booleans numbers undefined null are constant space**_)==>.
+-   <==(_\*\*strings and reference types like objects an arrays require O(n) space \_n is string length or number of keys_\*\*\_)==>
 
 O(1)
 
 ```javascript
 function sum(arr: number[]) {
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
-  }
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
 }
 ```
 
@@ -405,48 +406,48 @@ O(n)
 
 ```javascript
 function double(arr: number[]) {
-  const newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    array.push(arr[i] * 2);
-  }
-  return newArr;
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        array.push(arr[i] * 2);
+    }
+    return newArr;
 }
 ```
 
 ### quick note around object, array through BigO lens!
 
-- object:
+-   object:
 
 ```javascript
-const person = { name: "John", age: 22, hobbies: ["reading", "sleeping"] };
+const person = { name: 'John', age: 22, hobbies: ['reading', 'sleeping'] };
 
 Object.keys(person); // ["name", "age", "hobbies"] --->              O(n)
 Object.values(person); // ["John", 22, Array(2)]--->                 O(n)
 Object.entries(person); // [Array(2), Array(2), Array(2)]--->        O(n)
-person.hasOwnProperty("name"); // true --->                          O(1)
+person.hasOwnProperty('name'); // true --->                          O(1)
 ```
 
-- array:
-  **_push() and pop()_ are always faster than _unshift() and shift()_ because inserting or removing element from beginning of an array requires reIndexing all elements**
+-   array:
+    **_push() and pop()_ are always faster than _unshift() and shift()_ because inserting or removing element from beginning of an array requires reIndexing all elements**
 
 ## Common Patterns
 
 ```javascript
 function binarySearch(sortedArr: number[], value: number): number {
-  let min = 0;
-  let max = sortedArr.length - 1;
+    let min = 0;
+    let max = sortedArr.length - 1;
 
-  while (min <= max) {
-    let middle = Math.floor((min + max) / 2);
-    if (sortedArr[middle] < value) {
-      min = middle + 1;
-    } else if (sortedArr[middle] > value) {
-      max = middle - 1;
-    } else {
-      return middle;
+    while (min <= max) {
+        let middle = Math.floor((min + max) / 2);
+        if (sortedArr[middle] < value) {
+            min = middle + 1;
+        } else if (sortedArr[middle] > value) {
+            max = middle - 1;
+        } else {
+            return middle;
+        }
     }
-  }
-  return -1;
+    return -1;
 }
 ```
 
@@ -458,27 +459,27 @@ quick note around callStack
 
 ```javascript
 function wakeUp() {
-  // callStack [wakeUp]
-  takeShower();
-  eatBreakfast();
-  console.log("Ready to go ... ");
+    // callStack [wakeUp]
+    takeShower();
+    eatBreakfast();
+    console.log('Ready to go ... ');
 } // callStack []
 
 function takeShower() {
-  // callStack [takeShower, wakeUp]
-  console.log("taking shower");
+    // callStack [takeShower, wakeUp]
+    console.log('taking shower');
 } // callStack[wakeUp]
 
 function eatBreakfast() {
-  // callStack [eatBreakfast, wakeUp]
-  const meal = cookBreakFast();
-  console.log(`eating ${meal}`);
+    // callStack [eatBreakfast, wakeUp]
+    const meal = cookBreakFast();
+    console.log(`eating ${meal}`);
 } // callStack [wakeUp]
 
 function cookBreakFast() {
-  // callStack [cookBreakFast, eatBreakfast, wakeUp]
-  const meals = ["Cheese", "Protein Shake", "Coffee"];
-  return meals[Math.floor(Math.random() * meals.length)]; // callStack [eatBreakFast, wakeUp]
+    // callStack [cookBreakFast, eatBreakfast, wakeUp]
+    const meals = ['Cheese', 'Protein Shake', 'Coffee'];
+    return meals[Math.floor(Math.random() * meals.length)]; // callStack [eatBreakFast, wakeUp]
 }
 
 wakeUp();
@@ -486,18 +487,18 @@ wakeUp();
 
 two essential part of recursive functions
 
-- **base case : end of the line**
-- **different input : recursive should call by different piece of data**
+-   **base case : end of the line**
+-   **different input : recursive should call by different piece of data**
 
 ```javascript
 function sumRange(num: number) {
-  if (num === 1) return 1;
-  return num + sumRange(num - 1);
+    if (num === 1) return 1;
+    return num + sumRange(num - 1);
 }
 
 function factorial(num: number) {
-  if (num === 1) return 1;
-  return num * factorial(num - 1);
+    if (num === 1) return 1;
+    return num * factorial(num - 1);
 }
 ```
 
@@ -506,39 +507,39 @@ helper method recursion vs pure recursion
 ```javascript
 // helper method recursion approach
 function collectOdd(arr: number[]) {
-  const result = [];
+    const result = [];
 
-  function helper(helperArr: number[]) {
-    if (!helperArr.length) {
-      return;
+    function helper(helperArr: number[]) {
+        if (!helperArr.length) {
+            return;
+        }
+
+        if (helperArr[0] % 2 !== 0) {
+            result.push(helperArr[0]);
+        }
+
+        helper(helperArr.slice(1));
     }
 
-    if (helperArr[0] % 2 !== 0) {
-      result.push(helperArr[0]);
-    }
+    helper(arr);
 
-    helper(helperArr.slice(1));
-  }
-
-  helper(arr);
-
-  return result;
+    return result;
 }
 
 // pure recursion approach
 function collectOdd(arr: number[]): number[] {
-  let result = [];
+    let result = [];
 
-  if (!arr.length) {
+    if (!arr.length) {
+        return result;
+    }
+
+    if (arr[0] % 2 !== 0) {
+        result.push(arr[0]);
+    }
+
+    result = collectOdd(result.concat(arr.slice(1)));
     return result;
-  }
-
-  if (arr[0] % 2 !== 0) {
-    result.push(arr[0]);
-  }
-
-  result = collectOdd(result.concat(arr.slice(1)));
-  return result;
 }
 ```
 
@@ -552,12 +553,12 @@ O(n)
 
 ```javascript
 function linearSearch(arr: number[], value: number): number {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === value) {
-      return i;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i;
+        }
+        return -1;
     }
-    return -1;
-  }
 }
 ```
 
@@ -567,21 +568,21 @@ O(Log n)
 
 ```javascript
 function binarySearch(sortedArr: number[], value: number): number {
-  let left = 0;
-  let right = sortedArr.length - 1;
+    let left = 0;
+    let right = sortedArr.length - 1;
 
-  while (left <= right) {
-    const middle = Math.round((right + left) / 2);
+    while (left <= right) {
+        const middle = Math.round((right + left) / 2);
 
-    if (sortedArr[middle] > value) {
-      right = middle - 1;
-    } else if (sortedArr[middle] < value) {
-      left = middle + 1;
-    } else {
-      return middle;
+        if (sortedArr[middle] > value) {
+            right = middle - 1;
+        } else if (sortedArr[middle] < value) {
+            left = middle + 1;
+        } else {
+            return middle;
+        }
     }
-  }
-  return -1;
+    return -1;
 }
 ```
 
@@ -592,7 +593,7 @@ function binarySearch(sortedArr: number[], value: number): number {
 array.sort(cb) will turn all values to _string_ then sort it based on it's _unicode_
 
 ```javascript
-["a", "c", "b", "f", "d"].sort(); // (5) ["a", "b", "c", "d", "f"]
+['a', 'c', 'b', 'f', 'd'].sort(); // (5) ["a", "b", "c", "d", "f"]
 [1, 10, 6, 8, 2, 3, 5].sort(); //(7) [1, 10, 2, 3, 5, 6, 8]
 
 /* 
@@ -619,33 +620,33 @@ nearlySortedData: O(n)
 
 ```javascript
 function bubbleSort(arr: number[]): number[] {
-  for (let i = 0; i < arr.length; i++) {
-    let noSwap = true;
-    for (let j = 0; j < arr.length - i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        noSwap = false;
-      }
+    for (let i = 0; i < arr.length; i++) {
+        let noSwap = true;
+        for (let j = 0; j < arr.length - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                noSwap = false;
+            }
+        }
+        if (noSwap) break;
     }
-    if (noSwap) break;
-  }
-  return arr;
+    return arr;
 }
 
 // or
 
 function bubbleSort(arr: number[]): number[] {
-  for (let i = arr.length; i > 0; i--) {
-    let noSwap = true;
-    for (let j = 0; j < i - 1; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        noSwap = false;
-      }
+    for (let i = arr.length; i > 0; i--) {
+        let noSwap = true;
+        for (let j = 0; j < i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                noSwap = false;
+            }
+        }
+        if (noSwap) break;
     }
-    if (noSwap) break;
-  }
-  return arr;
+    return arr;
 }
 ```
 
@@ -655,18 +656,18 @@ O(n^2)
 
 ```javascript
 function selectionSort(arr: number[]) {
-  for (let i = 0; i < arr.length; i++) {
-    let min = i;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[min]) {
-        min = j;
-      }
+    for (let i = 0; i < arr.length; i++) {
+        let min = i;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        if (min !== i) {
+            [arr[i], arr[min]] = [arr[min], arr[i]];
+        }
     }
-    if (min !== i) {
-      [arr[i], arr[min]] = [arr[min], arr[i]];
-    }
-  }
-  return arr;
+    return arr;
 }
 ```
 
@@ -677,15 +678,15 @@ nearlySortedData: O(n)
 
 ```javascript
 function insertionSort(arr) {
-  var currentVal;
-  for (let i = 1; i < arr.length; i++) {
-    currentVal = arr[i];
-    for (var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
-      arr[j + 1] = arr[j];
+    var currentVal;
+    for (let i = 1; i < arr.length; i++) {
+        currentVal = arr[i];
+        for (var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
+            arr[j + 1] = arr[j];
+        }
+        arr[j + 1] = currentVal;
     }
-    arr[j + 1] = currentVal;
-  }
-  return arr;
+    return arr;
 }
 ```
 
@@ -706,41 +707,41 @@ O(n Log n)
 ```javascript
 // merge two sorted array
 function merge(arr1: number[], arr2: number[]): number[] {
-  let result = [];
-  let i = 0;
-  let j = 0;
+    let result = [];
+    let i = 0;
+    let j = 0;
 
-  while (i < arr1.length && j < arr2.length) {
-    if (arr1[i] < arr2[j]) {
-      result.push(arr1[i]);
-      i++;
-    } else {
-      result.push(arr2[j]);
-      j++;
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            result.push(arr1[i]);
+            i++;
+        } else {
+            result.push(arr2[j]);
+            j++;
+        }
     }
-  }
 
-  while (i < arr1.length) {
-    result.push(arr1[i]);
-    i++;
-  }
-  while (j < arr2.length) {
-    result.push(arr2[j]);
-    j++;
-  }
+    while (i < arr1.length) {
+        result.push(arr1[i]);
+        i++;
+    }
+    while (j < arr2.length) {
+        result.push(arr2[j]);
+        j++;
+    }
 
-  return result;
+    return result;
 }
 
 function mergeSort(arr: number[]): number[] {
-  if (arr.length <= 1) return arr;
+    if (arr.length <= 1) return arr;
 
-  const middle = Math.floor(arr.length / 2);
+    const middle = Math.floor(arr.length / 2);
 
-  const left = mergeSort(arr.slice(0, middle));
-  const right = mergeSort(arr.slice(middle));
+    const left = mergeSort(arr.slice(0, middle));
+    const right = mergeSort(arr.slice(middle));
 
-  return merge(left, right);
+    return merge(left, right);
 }
 ```
 
@@ -756,29 +757,29 @@ sorted: O(n^2)
 ```javascript
 // place pivot in the right index and return pivot index
 function pivot(arr: number[], start = 0, end = arr.length - 1) {
-  const pivot = arr[start];
-  let pivotIndex = start;
+    const pivot = arr[start];
+    let pivotIndex = start;
 
-  for (let i = start + 1; i < end; i++) {
-    if (arr[i] < pivot) {
-      pivotIndex++;
-      [arr[pivotIndex], arr[i]] = [arr[i], arr[pivotIndex]];
+    for (let i = start + 1; i < end; i++) {
+        if (arr[i] < pivot) {
+            pivotIndex++;
+            [arr[pivotIndex], arr[i]] = [arr[i], arr[pivotIndex]];
+        }
     }
-  }
-  [arr[start], arr[pivotIndex]] = [arr[pivotIndex], arr[start]];
+    [arr[start], arr[pivotIndex]] = [arr[pivotIndex], arr[start]];
 }
 
 function quickSort(arr: number[], start = 0, end = arr.length - 1) {
-  if (left < right) {
-    const pivot = pivot(arr, start, end);
+    if (left < right) {
+        const pivot = pivot(arr, start, end);
 
-    // left
-    quickSort(arr, start, pivotIndex - 1);
-    // right
-    quickSort(arr, pivotIndex + 1, end);
-  }
+        // left
+        quickSort(arr, start, pivotIndex - 1);
+        // right
+        quickSort(arr, pivotIndex + 1, end);
+    }
 
-  return arr;
+    return arr;
 }
 ```
 
@@ -791,33 +792,33 @@ k: average length of those numbers
 ```javascript
 // get the actual number at the given index
 function getDigit(num: number, i: number): number {
-  return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
+    return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
 }
 // get number length
 function digitCount(num: number): number {
-  if (num === 0) return 1;
-  return Math.floor(Math.log10(Math.abs(num))) + 1;
+    if (num === 0) return 1;
+    return Math.floor(Math.log10(Math.abs(num))) + 1;
 }
 
 // return number by most length
 function mostDigits(arr: number[]): number {
-  let maxDigits = 0;
-  for (let i = 0; i < arr.length; i++) {
-    maxDigits = Math.max(maxDigits, digitCount(arr[i]));
-  }
-  return maxDigits;
+    let maxDigits = 0;
+    for (let i = 0; i < arr.length; i++) {
+        maxDigits = Math.max(maxDigits, digitCount(arr[i]));
+    }
+    return maxDigits;
 }
 function radixSort(arr: number[]): number[] {
-  let maxDigitCount = mostDigits(arr);
-  for (let k = 0; k < maxDigitCount; k++) {
-    let digitBuckets = Array.from({ length: 10 }, () => []);
-    for (let j = 0; j < arr.length; j++) {
-      digitBuckets[getDigit(arr[j], k)].push(arr[j]);
-    }
+    let maxDigitCount = mostDigits(arr);
+    for (let k = 0; k < maxDigitCount; k++) {
+        let digitBuckets = Array.from({ length: 10 }, () => []);
+        for (let j = 0; j < arr.length; j++) {
+            digitBuckets[getDigit(arr[j], k)].push(arr[j]);
+        }
 
-    arr = [].concat(...digitBuckets);
-  }
-  return arr;
+        arr = [].concat(...digitBuckets);
+    }
+    return arr;
 }
 ```
 
@@ -1316,18 +1317,18 @@ class Queue {
 
 ### terminology
 
-- root : top node of tree
-- child : a node directly connected to another node when moving away from root
-- parent : the converse notion of a child
-- sibling : a group of nodes with the same parent
-- leaf : a child with no children
-- edge : connection from two node
+-   root : top node of tree
+-   child : a node directly connected to another node when moving away from root
+-   parent : the converse notion of a child
+-   sibling : a group of nodes with the same parent
+-   leaf : a child with no children
+-   edge : connection from two node
 
 ### binary search tree
 
-- every parent node has at most **two** children
-- every node to the **left** of parent node is always **less** than the **parent**
-- every node to the **right** of parent node is always **greater** than the **parent**
+-   every parent node has at most **two** children
+-   every node to the **left** of parent node is always **less** than the **parent**
+-   every node to the **right** of parent node is always **greater** than the **parent**
 
 ```javascript
 class _Node {
@@ -1563,16 +1564,16 @@ inOrder is useful when we want data in order that it's stored in tree.
 
 ### terminology
 
-- a binary heap is as compact as possible (all the children of each node are as full as they can be and left children and filled out first)
-- each parent has at most two children
+-   a binary heap is as compact as possible (all the children of each node are as full as they can be and left children and filled out first)
+-   each parent has at most two children
 
 **Max Binary Heap**:
 
-- **parent** nodes are always greater than **child** nodes but there is no guarantees between sibling
+-   **parent** nodes are always greater than **child** nodes but there is no guarantees between sibling
 
 **Min Binary Heap**:
 
-- **child** nodes are always greater than **parent** nodes but there is no guarantees between sibling
+-   **child** nodes are always greater than **parent** nodes but there is no guarantees between sibling
 
 ### binary heap parent and child relations
 
@@ -1804,8 +1805,8 @@ Hash tables are collection of key-value pairs
 
 There is possibility for handle collisions is hash tables :
 
-- Separate chaining ( e.g. using nested arrays of key values _implemented in following hash tables_ )
-- linear probing ( if index filled place {key, value} in next position )
+-   Separate chaining ( e.g. using nested arrays of key values _implemented in following hash tables_ )
+-   linear probing ( if index filled place {key, value} in next position )
 
 ```javascript
 type El = [string, any];
@@ -1885,16 +1886,16 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 ### terminology
 
-- vertex :node
+-   vertex :node
 
-- edge : connection between nodes
+-   edge : connection between nodes
 
-- directed/ undirected graph:
-  in directed graph there is a direction assigned to vertices an in undirected no direction assigned.
+-   directed/ undirected graph:
+    in directed graph there is a direction assigned to vertices an in undirected no direction assigned.
 
-- weighted/ unweighted graph:
-  in weighted graph there is a weight associated by edges but in unweighted graph no weight assigned to edges
-  ![](./assets/3.-Weithened-Graph.png)
+-   weighted/ unweighted graph:
+    in weighted graph there is a weight associated by edges but in unweighted graph no weight assigned to edges
+    ![](./assets/3.-Weithened-Graph.png)
 
 ### adjacency matrix
 
@@ -1915,14 +1916,14 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 |     Query     |     O(V+E)     |       O(1)       |
 |    Storage    |     O(V+E)     |      O(V^2)      |
 
-- |V| : number of Vertices
-- |E| : number of Edges
+-   |V| : number of Vertices
+-   |E| : number of Edges
 
 <hr/>
 
-- **Adjacency List** take **less space** in sparse graph( when we have a few edges ).
-- **Adjacency List** are **faster to iterate** over edges.
-- **Adjacency Matrix** are **faster to** finding a specific edge.
+-   **Adjacency List** take **less space** in sparse graph( when we have a few edges ).
+-   **Adjacency List** are **faster to iterate** over edges.
+-   **Adjacency Matrix** are **faster to** finding a specific edge.
 
 ### graph(adjacency list)
 
@@ -2256,8 +2257,8 @@ Let's implement it without dynamic programming:without dynamic programming:
 
 ```javascript
 function fib(n: number): number {
-  if (n <= 2) return 1;
-  return fib(n - 1) + fib(n - 2);
+    if (n <= 2) return 1;
+    return fib(n - 1) + fib(n - 2);
 }
 ```
 
@@ -2273,14 +2274,14 @@ O(n)
 
 ```javascript
 function fib(n: number, memo: number[] = []): number {
-  if (memo[n]) return memo[n];
+    if (memo[n]) return memo[n];
 
-  if (n <= 2) return 1;
+    if (n <= 2) return 1;
 
-  const res = fib(n - 1, memo) + fib(n - 2, memo);
-  memo[n] = res;
+    const res = fib(n - 1, memo) + fib(n - 2, memo);
+    memo[n] = res;
 
-  return res;
+    return res;
 }
 fib(10000); // Maximum callStack exceeded
 ```
@@ -2289,17 +2290,17 @@ fib(10000); // Maximum callStack exceeded
 
 ```javascript
 function fib(n: number): number {
-  if (n <= 2) return 1;
+    if (n <= 2) return 1;
 
-  const fibNumbers = [0, 1, 1];
+    const fibNumbers = [0, 1, 1];
 
-  for (let index = 3; index <= n; index++) {
-    fibNumbers[index] = fibNumbers[index - 1] + fibNumbers[index - 2];
-  }
+    for (let index = 3; index <= n; index++) {
+        fibNumbers[index] = fibNumbers[index - 1] + fibNumbers[index - 2];
+    }
 
-  console.log(fibNumbers);
+    console.log(fibNumbers);
 
-  return fibNumbers[n];
+    return fibNumbers[n];
 }
 fib(10000); // Infinity
 ```
@@ -2328,16 +2329,16 @@ str.includes('lo') // true
 ```javascript
 // regex.test(str: number) Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 function charCount(str: string) {
-  const result: { [key: string]: number } = {};
+    const result: { [key: string]: number } = {};
 
-  for (let char of str) {
-    char = char.toLowerCase();
-    if (/[a-z0-9]/.test(char)) {
-      result[char] = ++result[char] || 1;
+    for (let char of str) {
+        char = char.toLowerCase();
+        if (/[a-z0-9]/.test(char)) {
+            result[char] = ++result[char] || 1;
+        }
     }
-  }
 
-  return result;
+    return result;
 }
 
 // *** string.chatCodeAt(i: number) Returns the unicode of value on specified location
@@ -2348,49 +2349,45 @@ upper alpha (A-Z) code > 64 && code < 91;
 lower alpha (a-z) code > 96 && code <123;
 */
 function charCount(str: string) {
-  const result: { [key: string]: number } = {};
+    const result: { [key: string]: number } = {};
 
-  for (let char of str) {
-    if (isAlphaNumeric(char)) {
-      char = char.toLowerCase();
-      result[char] = ++result[char] || 1;
+    for (let char of str) {
+        if (isAlphaNumeric(char)) {
+            char = char.toLowerCase();
+            result[char] = ++result[char] || 1;
+        }
     }
-  }
 
-  return result;
+    return result;
 }
 
 function isAlphaNumeric(char: string) {
-  const code = char.charCodeAt(0);
-  if (
-    !(code > 47 && code < 58) &&
-    !(code > 64 && code < 91) &&
-    !(code > 96 && code < 123)
-  ) {
-    return false;
-  }
-  return true;
+    const code = char.charCodeAt(0);
+    if (!(code > 47 && code < 58) && !(code > 64 && code < 91) && !(code > 96 && code < 123)) {
+        return false;
+    }
+    return true;
 }
 ```
 
 ## Array
 
 ```javascript
-const array = ["hello", "world"];
-arr.find((el) => el === "world"); // world
-arr.findIndex((el) => el === "world"); // 1
+const array = ['hello', 'world'];
+arr.find((el) => el === 'world'); // world
+arr.findIndex((el) => el === 'world'); // 1
 
 [1, 2].includes(1); // true
 
-Array.from({ length: 2 }, () => ["lol"]); // [["lol"], ["lol"]]
+Array.from({ length: 2 }, () => ['lol']); // [["lol"], ["lol"]]
 
-const stack = ["A", "B", "D", "E", "C", "F"];
+const stack = ['A', 'B', 'D', 'E', 'C', 'F'];
 const s = stack.shift();
 const p = stack.pop();
 console.log(s); // "A"
 console.log(p); // "F"
 
-["a", "b"].reverse(); // ['b', 'a']
+['a', 'b'].reverse(); // ['b', 'a']
 ```
 
 ### Object
@@ -2405,11 +2402,11 @@ delete this._adjacencyList.vertex;
 ```javascript
 const map = new Map();
 // store any type of **unique key** of use duplicate key it will override last value
-map.set({ 1: "Object" }, "Object");
-map.set(["arr"], "arr");
-map.set(1, "number");
-map.set(false, "boolean");
-map.set(() => console.log("Function"), "Function");
+map.set({ 1: 'Object' }, 'Object');
+map.set(['arr'], 'arr');
+map.set(1, 'number');
+map.set(false, 'boolean');
+map.set(() => console.log('Function'), 'Function');
 
 console.log(map);
 /* 
