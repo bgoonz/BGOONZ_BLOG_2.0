@@ -22,6 +22,7 @@ The syntax to create a plain object is `{key: value, ...}`, which is called an
 object literal. For example:
 
 ```js
+//
 var obj = {
     foo: 'bar',
     baz: 42
@@ -37,6 +38,7 @@ Here are some more examples of valid and invalid property names in object
 literals:
 
 ```js
+//
 var obj = {
   foo: 0,        // valid, could be variable name
   'bar': 0,      // string literals are always valid
@@ -66,6 +68,7 @@ ES2015 adds two extensions to object values and object literals:
 
 - Object literals can contain _[computed property names][computed properties]_:
     ```js
+//
     var foo = 42;
     var obj = {
         [foo]: 0
@@ -82,6 +85,7 @@ represented as _references_. That means if a variable has an object as a value,
 it really has a reference to that object.
 
 ```js
+//
 var user = {name: 'Tom'}:
 ```
 
@@ -101,6 +105,7 @@ Assigning the value to another variable makes both variables point to the same
 object:
 
 ```js
+//
 var owner = user;
 ```
 
@@ -119,6 +124,7 @@ var owner = user;
 Assigning to `user.name` will therefore also "change" `owner.name`:
 
 ```js
+//
 user.name = 'Joe';
 console.log(user.name, owner.name);
 // Joe, Joe
@@ -141,6 +147,7 @@ variable referring to the new value. The other variable will still refer to the
 same value.
 
 ```js
+//
 owner = { name: 'Kim' };
 ```
 

@@ -635,6 +635,7 @@
       - `let { oldkeyname: newkeyname } = object`
    - rule of thumb—only destructure values from objects that are two levels deep
 ```js
+//
 let obj = {
    name: &quot;Wilfred&quot;,
    appearance: [&quot;short&quot;, &quot;mustache&quot;],
@@ -721,6 +722,7 @@ let greaterCB = function (val, callback1, callback2) {
                         cb1, cb2) =&gt; Math.max(cb1(val), cb2(val));</p>
                     <pre><code class="lang-js">- Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#map`.
 ```js
+//
 let myMap = function(array, callback) {
    let newArr = [];
    for (let i = 0; i &lt; array.length; i ++) {
@@ -944,6 +946,7 @@ let otherObj = { name: &quot;my other object&quot; }
 
 
 ```js
+//
 
 
 function createCounter() {
@@ -1050,6 +1053,7 @@ boundCat(); // prints &quot;meow&quot;
    - so the context is fairly straightforward when we talk about methods being called on specific objects
    - you could, however, call an object&#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
 ```js
+//
 let dog = {
    name: &quot;Bowser&quot;,
    changeName: function () {
@@ -1110,6 +1114,7 @@ console.log(this); // Object [global] {etc, etc, etc,  name: &#39;Layla&#39;}
    - so the context is fairly straightforward when we talk about methods being called on specific objects
    - you could, however, call an object&#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
 ```js
+//
 let dog = {
    name: &quot;Bowser&quot;,
    changeName: function () {

@@ -3,7 +3,7 @@ title: VS Code extensions
 template: post
 subtitle: 10 must-have VS Code extensions for JavaScript developers
 excerpt: Developers will most likely argue for the rest of eternity about the
-  most productive code editor and the best extensions.
+    most productive code editor and the best extensions.
 date: 2022-04-10T17:03:30.554Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/vscode-extensions-list.png?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/vscode-extensions-list.png?raw=true

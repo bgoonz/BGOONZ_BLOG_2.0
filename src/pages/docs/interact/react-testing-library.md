@@ -148,6 +148,7 @@ Given the following HTML:
 _**Will**_\*\* find the div:\*\*
 
 ```js
+//
 // Matching a string:screen.getByText('Hello World')
 // full string matchscreen.getByText('llo Worl', {exact: false})
 // substring matchscreen.getByText('hello world', {exact: false})

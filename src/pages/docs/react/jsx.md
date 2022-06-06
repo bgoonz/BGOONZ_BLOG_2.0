@@ -21,6 +21,7 @@ template: docs
 By using JSX one can write the following JSX/JavaScript code:
 
 ```js
+//
 const nav = (
     <ul id="nav">
       <li>
@@ -43,6 +44,7 @@ const nav = (
 And Babel will transform it into this:
 
 ```js
+//
 const nav = React.createElement(
    "ul",
    { id: "nav" },

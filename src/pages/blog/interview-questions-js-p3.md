@@ -38,6 +38,7 @@ image: images/js-questions-n-answers.png
 
 
 ```js
+//
 
 
 
@@ -81,6 +82,7 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 
 ```js
+//
 
 
 
@@ -121,6 +123,7 @@ A return statement in a generator function will make the generator finish. If a 
 
 
 ```js
+//
 
 const myGenerator = (function* () {
     yield 1;
@@ -160,6 +163,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 
 ```js
+//
 
 const num = 0o38;
 c ole.log(num);
@@ -189,6 +193,7 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 
 
 ```js
+//
 
 const squareObj = new Square(10);
 console.log(squareObj.area);
@@ -233,6 +238,7 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 
 ```js
+//
 
 
 
@@ -276,6 +282,7 @@ When a regular or prototype method is called without a value for **this**, the m
 
 
 ```js
+//
 
 class Vehicle {
     constructor(name) {
@@ -321,6 +328,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 
 ```js
+//
 
 const USER = { age: 30 };
 USER.age = 25;
@@ -353,6 +361,7 @@ Even though we used constant variables, the content of it is an object and the o
 
 
 ```js
+//
 
 c ole.log('🙂' === '🙂');
 
@@ -381,6 +390,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 
 ```js
+//
 
 c ole.log(typeof typeof typeof true);
 
@@ -411,6 +421,7 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 
 ```js
+//
 
 let zero = new Number(0);
 if (zero) {
@@ -449,6 +460,7 @@ Hence the above code block always goes to if section.
 
 
 ```js
+//
 
 let msg = 'Good morning!!';
 msg.name = 'John';
@@ -481,6 +493,7 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 
 
 ```js
+//
 
 let count = 10;
 (function innerFunc() {

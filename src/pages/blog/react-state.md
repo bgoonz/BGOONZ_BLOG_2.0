@@ -26,7 +26,8 @@ cmseditable: true
 
 If you've only written vanilla JavaScript before now, you might be used to having a separate JavaScript file, where you query for some DOM nodes and attach listeners to them. For example:
 
-```jsx
+```js
+//x
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', () => {
@@ -36,7 +37,8 @@ btn.addEventListener('click', () => {
 
 In React, we write event handlers directly on the elements in our JSX, like this:
 
-```jsx
+```js
+//x
 <button type="button" onClick={() => alert('hi!')}>
     Say hi!
 </button>
@@ -57,7 +59,8 @@ Let's apply this to our app, starting in the `Form.js` component.
 
 At the top of the `Form()` component function, create a function named `handleSubmit()`. This function should [prevent the default behavior of the `submit` event](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#preventing_default_behavior). After that, it should trigger an `alert()`, which can say whatever you'd like. It should end up looking something like this:
 
-```jsx
+```js
+//x
 function handleSubmit(e) {
     e.preventDefault();
     alert('Hello, world!');

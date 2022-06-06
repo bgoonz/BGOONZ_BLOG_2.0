@@ -34,6 +34,7 @@ Reassigning a value will either throw an error (in strict mode, see below) or
 is silently ignored:
 
 ```js
+//
 const foo = 42;
 foo = 21; // error or ignored
 ```
@@ -41,6 +42,7 @@ foo = 21; // error or ignored
 `const`s _must_ be initialized with a value:
 
 ```js
+//
 const foo; // error
 foo = 42;
 ```
@@ -104,6 +106,7 @@ considered bad or confusing.
 Strict mode can be enabled for a JavaScript or a function by putting
 
 ```js
+//
 'use strict';
 ```
 
@@ -259,6 +262,7 @@ the content? Please [file an issue on GitHub][jsbasics-issues].
 The **Boolean** data type has two values, `true` and `false`.
 
 ```js
+//
 var foo = true;
 var bar = false;
 ```
@@ -821,6 +825,7 @@ throw a reference error). Instead of saying "the variable is undefined" we
 rather say "the variable is not _declared_" to avoid confusion.
 
 ```js
+//
 var foo;
 console.log(foo); // logs `undefined`
 console.log(bar); // reference error
@@ -974,6 +979,7 @@ Here are some more examples of valid and invalid property names in object
 literals:
 
 ```js
+//
 var obj = {
   foo: 0,        // valid, could be variable name
   'bar': 0,      // string literals are always valid
@@ -1003,6 +1009,7 @@ ES2015 adds two extensions to object values and object literals:
 
 -   Object literals can contain _[computed property names][computed properties]_:
     ```js
+//
     var foo = 42;
     var obj = {
         [foo]: 0
@@ -1019,6 +1026,7 @@ represented as _references_. That means if a variable has an object as a value,
 it really has a reference to that object.
 
 ```js
+//
 var user = {name: 'Tom'}:
 ```
 
@@ -1038,6 +1046,7 @@ Assigning the value to another variable makes both variables point to the same
 object:
 
 ```js
+//
 var owner = user;
 ```
 
@@ -1056,6 +1065,7 @@ var owner = user;
 Assigning to `user.name` will therefore also "change" `owner.name`:
 
 ```js
+//
 user.name = 'Joe';
 console.log(user.name, owner.name);
 // Joe, Joe
@@ -1078,6 +1088,7 @@ variable referring to the new value. The other variable will still refer to the
 same value.
 
 ```js
+//
 owner = { name: 'Kim' };
 ```
 
@@ -1219,6 +1230,7 @@ An object created using literal notation will have the object
 commands:
 
 ```js
+//
 var testObject = {};
 Object.getPrototypeOf(testObject) === Object.prototype; // true
 ```
@@ -1243,6 +1255,7 @@ In order to create an object with an object other than `Object.prototype` as
 prototype, one can use [`Object.create`][object.create]:
 
 ```js
+//
 var a = {};
 var b = Object.create(a);
 Object.getPrototypeOf(b) === a; // true
@@ -1308,6 +1321,7 @@ Consider the following structure:
 These are the results for accessing different properties on A:
 
 ```js
+//
 a.name; // Tom        `a` itself has this property, it shadows `b.name`
 a.age; // 42         `a`'s prototype has this property
 a.height; // 180        `a`'s prototype's prototype has this property
@@ -1321,6 +1335,7 @@ It is defined in `Object.prototype`, which sits at the end of every prototype
 chain.
 
 ```js
+//
 var user = { name: 'Tom' };
 user.toString();
 // "[object Object]"
@@ -1457,6 +1472,7 @@ ES2015 introduces [`for/of`][forof] statements for iterating over
 _[iterables][]_:
 
 ```js
+//
 var arr = [1, 2, 3];
 for (var v of arr) {
     console.log(v);
@@ -2156,6 +2172,7 @@ nodelistToArray.slice(...);
 Or if you are using ES2015 you can use the [spread operator `...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
 ```js
+//
 const nodelist = [...document.querySelectorAll('div')]; // returns a real array
 
 //later on ..
@@ -2552,6 +2569,7 @@ tip-tldr: By default you cannot pass arguments to a callback function, but you c
 By default you cannot pass arguments to a callback function. For example:
 
 ```js
+//
 function callback() {
     console.log('Hi human');
 }
@@ -2562,6 +2580,7 @@ document.getElementById('someelem').addEventListener('click', callback);
 You can take advantage of the closure scope in Javascript to pass arguments to callback functions. Check this example:
 
 ```js
+//
 function callback(a, b) {
     return function () {
         console.log('sum = ', a + b);
@@ -2582,6 +2601,7 @@ So this way the arguments `x` and `y` are in scope of the callback function when
 Another method to do this is using the `bind` method. For example:
 
 ```js
+//
 var alertText = function (text) {
     alert(text);
 };
@@ -2602,6 +2622,7 @@ tip-tldr: In node, you can tell your program to do two different things dependin
 In node, you can tell your program to do two different things depending on whether the code is run from `require('./something.js')` or `node something.js`. This is useful if you want to interact with one of your modules independently.
 
 ```js
+//
 if (!module.parent) {
     // ran with `node something.js`
     app.listen(8088, function () {
@@ -2630,6 +2651,7 @@ Have you ever come across the [double tilde `~~` operator](http://stackoverflow.
 One bitwise shift `~` first truncates `input` to 32 bits, then transforms it into `-(input+1)`. The double bitwise shift therefore transforms the input into `-(-(input + 1)+1)` making it a great tool to round towards zero. For numeric input, it therefore mimics `Math.trunc()`. On failure, `0` is returned, which might come in handy sometimes instead of `Math.trunc()`, which returns `NaN` on failure.
 
 ```js
+//
 // single ~
 console.log(~1337); // -1338
 
@@ -2674,6 +2696,7 @@ In contrast, the very names of the `Math.xyz()` functions clearly communicate th
 Because `~` first does a 32-bit conversion, `~~` results in bogus values around &plusmn;2.15 billion. If you don't properly range-check your input, a user could trigger unexpected behavior when the transformed value ends up being a great distance from the original:
 
 ```js
+//
 a = 2147483647.123; // maximum positive 32-bit integer, plus a bit more
 console.log(~~a); // ->  2147483647     (ok)
 a += 10000; // ->  2147493647.123 (ok)
@@ -2683,12 +2706,14 @@ console.log(~~a); // -> -2147483648     (huh?)
 One particularly vulnerable area involves dealing with Unix epoch timestamps (measured in seconds from 1 Jan 1970 00:00:00 UTC). A quick way to get such values is:
 
 ```js
+//
 epoch_int = ~~(+new Date() / 1000); // Date() epochs in milliseconds, so we scale accordingly
 ```
 
 However, when dealing with timestamps after 19 Jan 2038 03:14:07 UTC (sometimes called the **Y2038 limit**), this breaks horribly:
 
 ```js
+//
 // epoch timestamp for 1 Jan 2040 00:00:00.123 UTC
 epoch = +new Date('2040-01-01') / 1000 + 0.123; // ->  2208988800.123
 
@@ -2706,6 +2731,7 @@ console.log(new Date(epoch_flr * 1000)); // ->  Sun Jan 01 2040 00:00:00 UTC
 Because `~~` transforms every non-number into `0`:
 
 ```js
+//
 console.log(~~[]); // -> 0
 console.log(~~NaN); // -> 0
 console.log(~~null); // -> 0
@@ -2776,6 +2802,7 @@ tip-tldr: When creating functions on an object in Object Oriented Javascript, re
 When creating functions on an object in Object Oriented Javascript, returning the object in the function will enable you to chain functions together.
 
 ```js
+//
 function Person(name) {
     this.name = name;
 
@@ -2870,6 +2897,7 @@ In other words, if you have two references to the same array (`a = [1,2,3]; a2 =
 Think about what this will output:
 
 ```js
+//
 var foo = [1, 2, 3];
 var bar = [1, 2, 3];
 var foo2 = foo;
@@ -2919,6 +2947,7 @@ tip-tldr: The `==` (or `!=`) operator performs an automatic type conversion if n
 The `==` (or `!=`) operator performs an automatic type conversion if needed. The `===` (or `!==`) operator will not perform any conversion. It compares the value and the type, which could be considered faster ([jsPref](http://jsperf.com/strictcompare)) than `==`.
 
 ```js
+//
 [10] ==  10      // is true
 [10] === 10      // is false
 
@@ -2987,6 +3016,7 @@ You may have a big list of names you need to filter in order to remove duplicate
 In our example we are going to use the list of **JavaScript reserved keywords** we can find across the different versions of the language, but as you can notice, there is a lot of duplicated keywords and they are not alphabetically organized. So this is a perfect list ([Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)) of strings to test out this JavaScript tip.
 
 ```js
+//
 var keywords = [
     'do',
     'if',
@@ -3185,6 +3215,7 @@ Since we don't want to change our original list, we are going to use a high orde
 Finally we are going to sort the filtered list using the [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) function which takes a comparison function as the only argument, returning a alphabetically sorted list.
 
 ```js
+//
 var filteredAndSortedKeywords = keywords
     .filter(function (keyword, index) {
         return keywords.lastIndexOf(keyword) === index;
@@ -3197,12 +3228,14 @@ var filteredAndSortedKeywords = keywords
 The **ES6** (ECMAScript 2015) version using [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) looks a little simpler:
 
 ```js
+//
 const filteredAndSortedKeywords = keywords.filter((keyword, index) => keywords.lastIndexOf(keyword) === index).sort((a, b) => (a < b ? -1 : 1));
 ```
 
 And this is the final filtered and sorted list of JavaScript reserved keywords:
 
 ```js
+//
 console.log(filteredAndSortedKeywords);
 
 // ['abstract', 'arguments', 'await', 'boolean', 'break', 'byte', 'case', 'catch', 'char', 'class', 'const', 'continue', 'debugger', 'default', 'delete', 'do', 'double', 'else', 'enum', 'eval', 'export', 'extends', 'false', 'final', 'finally', 'float', 'for', 'function', 'goto', 'if', 'implements', 'import', 'in', 'instanceof', 'int', 'interface', 'let', 'long', 'native', 'new', 'null', 'package', 'private', 'protected', 'public', 'return', 'short', 'static', 'super', 'switch', 'synchronized', 'this', 'throw', 'throws', 'transient', 'true', 'try', 'typeof', 'var', 'void', 'volatile', 'while', 'with', 'yield']
@@ -3223,6 +3256,7 @@ tip-tldr: Short-circuit evaluation says, the second argument is executed or eval
 For the following `test` condition and `isTrue` and `isFalse` function.
 
 ```js
+//
 var test = true;
 var isTrue = function () {
     console.log('Test is true.');
@@ -3235,6 +3269,7 @@ var isFalse = function () {
 Using logical AND - `&&`.
 
 ```js
+//
 // A normal if statement.
 if (test) {
     isTrue(); // Test is true
@@ -3248,6 +3283,7 @@ test && isTrue(); // Test is true
 Using logical OR - `||`.
 
 ```js
+//
 test = false;
 if (!test) {
     isFalse(); // Test is false.
@@ -3259,6 +3295,7 @@ test || isFalse(); // Test is false.
 The logical OR could also be used to set a default value for function argument.
 
 ```js
+//
 function theSameOldFoo(name) {
     name = name || 'Bar';
     console.log("My best friend's name is " + name);
@@ -3271,6 +3308,7 @@ The logical AND could be used to avoid exceptions when using properties of undef
 Example:
 
 ```js
+//
 var dog = {
     bark: function () {
         console.log('Woof Woof');
@@ -3404,6 +3442,7 @@ tip-tldr: Fibonacci sequence is very familiar to everybody. we can write the fol
 Fibonacci sequence is very familiar to everybody. We can write the following function in 20 seconds.
 
 ```js
+//
 var fibonacci = function (n) {
     return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 };
@@ -3412,6 +3451,7 @@ var fibonacci = function (n) {
 It works, but is not efficient. It did lots of duplicate computing works, we can cache its previously computed results to speed it up.
 
 ```js
+//
 var fibonacci = (function () {
     var cache = [0, 1]; // cache the value at the n index
     return function (n) {
@@ -3428,6 +3468,7 @@ var fibonacci = (function () {
 Also, we can define a higher-order function that accepts a function as its argument and returns a memoized version of the function.
 
 ```js
+//
 var memoize = function (func) {
     var cache = {};
     return function () {
@@ -3441,6 +3482,7 @@ fibonacci = memoize(fibonacci);
 And this is an ES6 version of the memoize function.
 
 ```js
+//
 var memoize = function (func) {
     const cache = {};
     return (...args) => {
@@ -3456,6 +3498,7 @@ we can use `memoize()` in many other situations
 -   GCD(Greatest Common Divisor)
 
 ```js
+//
 var gcd = memoize(function (a, b) {
     var t;
     if (a < b) (t = b), (b = a), (a = t);
@@ -3468,6 +3511,7 @@ gcd(27, 183); //=> 3
 -   Factorial calculation
 
 ```js
+//
 var factorial = memoize(function (n) {
     return n <= 1 ? 1 : n * factorial(n - 1);
 });
@@ -3490,6 +3534,7 @@ tip-tldr: Logical operators are a core part of JavaScript, here you can see a a 
 You can convert a [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) or [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value to true boolean with the `!!` operator.
 
 ```js
+//
 !!''; // false
 !!0; // false
 !!null; // false
@@ -3515,12 +3560,14 @@ tip-tldr: Within JavaScript functions, the variable name `arguments` lets you ac
 Within JavaScript functions, the variable name [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) lets you access all of the arguments passed to the function. `arguments` is an _array-like object_; `arguments` can be accessed using array notation, and it has the _length_ property, but it doesn't have many of the built-in methods that arrays have such as `filter` and `map` and `forEach`. Because of this, it is a fairly common practice to convert `arguments` into an array using the following:
 
 ```js
+//
 var args = Array.prototype.slice.call(arguments);
 ```
 
 This calls the `slice` method from the `Array` prototype, passing it `arguments`; the `slice` method returns a shallow copy of `arguments` as a new array object. A common shorthand for this is :
 
 ```js
+//
 var args = [].slice.call(arguments);
 ```
 
@@ -3533,6 +3580,7 @@ Unfortunately, passing `arguments` into any function call will cause the V8 Java
 Instead, if you want an array of the arguments that lets you use you need to resort to this:
 
 ```js
+//
 var args = new Array(arguments.length);
 for (var i = 0; i < args.length; ++i) {
     args[i] = arguments[i];
@@ -3557,6 +3605,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 Take a look in action
 
 ```js
+//
 var myObject = {
 	z: 1,
 	'@': 2,
@@ -3583,6 +3632,7 @@ Each browser have his own rules about the order in objects bebause technically, 
 Using a new ES6 feature called Map. A [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) object iterates its elements in insertion order — a `for...of` loop returns an array of [key, value] for each iteration.
 
 ```js
+//
 var myObject = new Map();
 myObject.set('z', 1);
 myObject.set('@', 2);
@@ -3602,6 +3652,7 @@ Mozilla suggest:
 > So, if you want to simulate an ordered associative array in a cross-browser environment, you are forced to either use two separate arrays (one for the keys and the other for the values), or build an array of single-property objects, etc.
 
 ```js
+//
 // Using two separate arrays
 var objectKeys = [z, @, b, 1, 5];
 for (item in objectKeys) {
@@ -3625,6 +3676,7 @@ Here are two compact code sequences to generate the `N`-element array `[0, 1, ..
 ### Solution 1 (requires ES5)
 
 ```js
+//
 Array.apply(null, { length: N }).map(Function.call, Number);
 ```
 
@@ -3642,12 +3694,14 @@ For a more thorough explanation, go [here](https://github.com/gromgit/jstips-xe/
 It uses `Array.from` [https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
 ```js
+//
 Array.from(new Array(N), (val, index) => index);
 ```
 
 ### Solution 3 (requires ES6)
 
 ```js
+//
 Array.from(Array(N).keys());
 ```
 
@@ -3663,6 +3717,7 @@ Array.from(Array(N).keys());
 If you actually want the sequence [1, 2, ..., N], **Solution 1** becomes:
 
 ```js
+//
 Array.apply(null, { length: N }).map(function (value, index) {
     return index + 1;
 });
@@ -3671,6 +3726,7 @@ Array.apply(null, { length: N }).map(function (value, index) {
 and **Solution 2**:
 
 ```js
+//
 Array.from(new Array(N), (val, index) => index + 1);
 ```
 
@@ -3685,6 +3741,7 @@ tip-tldr: You may run into problems while implementing asynchronous loops.
 Let's try out writing an asynchronous function which prints the value of the loop index every second.
 
 ```js
+//
 for (var i = 0; i < 5; i++) {
     setTimeout(function () {
         console.log(i);
@@ -3695,6 +3752,7 @@ for (var i = 0; i < 5; i++) {
 The output of the above programs turns out to be
 
 ```js
+//
 > 5
 > 5
 > 5
@@ -3711,6 +3769,7 @@ Each timeout refers to the original `i`, not a copy. So the for loop increments 
 Well , this problem seems easy. An immediate solution that strikes is to cache the loop index in a temporary variable.
 
 ```js
+//
 for (var i = 0; i < 5; i++) {
     var temp = i;
     setTimeout(function () {
@@ -3722,6 +3781,7 @@ for (var i = 0; i < 5; i++) {
 But again the output of the above programs turns out to be
 
 ```js
+//
 > 4
 > 4
 > 4
@@ -3732,6 +3792,7 @@ But again the output of the above programs turns out to be
 So , that doesn't work either , because blocks don't create a scope and variables initializers are hoisted to the top of the scope. In fact, the previous block is the same as:
 
 ```js
+//
 var temp;
 for (var i = 0; i < 5; i++) {
     temp = i;
@@ -3746,6 +3807,7 @@ for (var i = 0; i < 5; i++) {
 There are a few different ways to copy `i`. The most common way is creating a closure by declaring a function and passing `i` as an argument. Here we do this as a self-calling function.
 
 ```js
+//
 for (var i = 0; i < 5; i++) {
     (function (num) {
         setTimeout(function () {
@@ -3760,6 +3822,7 @@ In JavaScript, arguments are passed by value to a function. So primitive types l
 Another approach for this would be with using `let`. With ES6 the `let` keyword is useful since it's block scoped unlike `var`
 
 ```js
+//
 for (let i = 0; i < 5; i++) {
     setTimeout(function () {
         console.log(i);
@@ -3901,6 +3964,7 @@ In extension code firstly rootObserver works till targetElement appearance then 
 This useful to develop extensions to complex sites with dynamic content loading.
 
 ```js
+//
 const observeConfig = {
     attributes: true,
     childList: true,
@@ -4089,6 +4153,7 @@ These are the three known ways to merge multidimensional array into a single arr
 Given this array:
 
 ```js
+//
 var myArray = [
     [1, 2],
     [3, 4, 5],
@@ -4099,12 +4164,14 @@ var myArray = [
 We wanna have this result:
 
 ```js
+//
 [1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
 
 ### Solution 1: Using [`concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 
 ```js
+//
 var myNewArray = [].concat.apply([], myArray);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
@@ -4112,6 +4179,7 @@ var myNewArray = [].concat.apply([], myArray);
 ### Solution 2: Using [`reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Flatten_an_array_of_arrays)
 
 ```js
+//
 var myNewArray = myArray.reduce(function (prev, curr) {
     return prev.concat(curr);
 });
@@ -4121,6 +4189,7 @@ var myNewArray = myArray.reduce(function (prev, curr) {
 ### Solution 3:
 
 ```js
+//
 var myNewArray3 = [];
 for (var i = 0; i < myArray.length; ++i) {
     for (var j = 0; j < myArray[i].length; ++j) myNewArray3.push(myArray[i][j]);
@@ -4132,6 +4201,7 @@ console.log(myNewArray3);
 ### Solution 4: Using [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) in ES6
 
 ```js
+//
 var myNewArray4 = [].concat(...myArray);
 console.log(myNewArray4);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -4140,6 +4210,7 @@ console.log(myNewArray4);
 ### Solution 5: Using [`flat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) in ES10
 
 ```js
+//
 var myNewArray5 = myArray.flat();
 console.log(myNewArray5);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -4164,6 +4235,7 @@ It is possible to configure object properties in Javascript for example to set p
 To do so, you need to use the method `defineProperty` of the `Object` prototype like so:
 
 ```js
+//
 var a = {};
 Object.defineProperty(a, 'readonly', {
     value: 15,
@@ -4177,12 +4249,14 @@ console.log(a.readonly); // 15
 The syntax is as follows:
 
 ```js
+//
 Object.defineProperty(dest, propName, options);
 ```
 
 or for multiple definitions:
 
 ```js
+//
 Object.defineProperties(dest, {
     propA: optionsA,
     propB: optionsB //...
@@ -4199,6 +4273,7 @@ where options include the following attributes:
 So in order to create a private constant property, you can define it like so:
 
 ```js
+//
 Object.defineProperty(obj, 'myPrivateProp', {
     value: val,
     enumerable: false,
@@ -4210,6 +4285,7 @@ Object.defineProperty(obj, 'myPrivateProp', {
 Besides configuring properties, `defineProperty` allows us to define _dynamic properties_, thanks to the second parameter being a string. For instance, let's say that I want to create properties according to some external configuration:
 
 ```js
+//
 
 var obj = {
   getTypeFromExternal(): true // illegal in ES5.1
@@ -4226,6 +4302,7 @@ var obj = {
 But that's not all! Advanced properties allows us to create **getters** and **setters**, just like other OOP languages! In that case, one cannot use the `writable`, `enumerable` and `configurable` properties, but instead:
 
 ```js
+//
 function Foobar () {
   var _foo; //  true private property
 
@@ -4244,12 +4321,14 @@ foobar.foo = 20; // _foo = 20
 Aside for the obvious advantage of encapsulation and advanced accessors, you will notice that we didn't "call" the getter, instead we just "get" the property without parentheses! This is awesome! For instance, let's imagine that we have an object with long nested properties, like so:
 
 ```js
+//
 var obj = { a: { b: { c: [{ d: 10 }, { d: 20 }] } } };
 ```
 
 Now instead of doing `a.b.c[0].d` (where one of the properties can resolve to `undefined` and throw an error), we can instead create an alias:
 
 ```js
+//
 Object.defineProperty(obj, 'firstD', {
     get: function () {
         return a && a.b && a.b.c && a.b.c[0] && a.b.c[0].d;
@@ -4397,6 +4476,7 @@ tip-tldr: Freeze the builtin prototypes.
 By overriding the builtin prototypes, external code can cause code to break by rewriting code to expose and change bound arguments. This can be an issue that seriously breaks applications that works by using polyfill es5 methods.
 
 ```js
+//
 // example bind polyfill
 function bind(fn) {
     var prev = Array.prototype.slice.call(arguments, 1);
@@ -4424,6 +4504,7 @@ The above function discards the `prev` array from the bind meaning that any `.co
 By using [Object.freeze](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze), making an object immutable, you prevent any overriding of the builtin object prototypes.
 
 ```js
+//
 (function freezePrototypes() {
     if (typeof Object.freeze !== 'function') {
         throw new Error('Missing Object.freeze');
@@ -4448,6 +4529,7 @@ tip-tldr: Did you know that you can use destructuring in function parameters?
 I am sure many of you are already familiar with the [ES6 Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). Did you know that you can also use it in function parameters?
 
 ```js
+//
 var sayHello = function ({ name, surname }) {
     console.log(`Hello ${name} ${surname}! How are you?`);
 };
@@ -4459,6 +4541,7 @@ sayHello({ name: 'John', surname: 'Smith' });
 This is great for functions which accept an options object. For this use case, you can also add [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) to fill in whatever values the caller leaves out, or if the caller forgets to pass one at all:
 
 ```js
+//
 var sayHello2 = function ({ name = 'Anony', surname = 'Moose' } = {}) {
     console.log(`Hello ${name} ${surname}! How are you?`);
 };
@@ -4467,6 +4550,7 @@ var sayHello2 = function ({ name = 'Anony', surname = 'Moose' } = {}) {
 The `= {}` says that the default object to be destructured for this parameter is `{}`, in case the caller forgets to pass the parameter, or passes one of the wrong type (more on this below).
 
 ```js
+//
 sayHello2();
 // -> Hello Anony Moose! How are you?
 sayHello2({ name: 'Bull' });
@@ -4478,6 +4562,7 @@ sayHello2({ name: 'Bull' });
 With plain destructuring assignment, if the the input parameter can't be matched with the function's specified object arguments, all the unmatched arguments are `undefined`, so you need to add code that handles this properly:
 
 ```js
+//
 var sayHelloTimes = function ({ name, surname }, times) {
     console.log(`Hello ${name} ${surname}! I've seen you ${times} times before.`);
 };
@@ -4491,6 +4576,7 @@ sayHelloTimes(5678);
 Worse, if the parameter to be destructured is missing, an exception is thrown, probably bringing your app to a screeching halt:
 
 ```js
+//
 sayHelloTimes();
 // -> Uncaught TypeError: Cannot match against 'undefined' or 'null'...
 ```
@@ -4500,6 +4586,7 @@ It's conceptually similar to accessing a property of an undefined object, just w
 Destructuring assignment with default parameters hides all the above to a certain extent:
 
 ```js
+//
 var sayHelloTimes2 = function ({ name = 'Anony', surname = 'Moose' } = {}, times) {
     console.log(`Hello ${name} ${surname}! I've seen you ${times} times before.`);
 };
@@ -4515,6 +4602,7 @@ sayHelloTimes2();
 As for `= {}`, it covers the case of a missing _object_, for which individual property defaults won't help at all:
 
 ```js
+//
 var sayHelloTimes2a = function ({ name = 'Anony', surname = 'Moose' }, times) {
     console.log(`Hello ${name} ${surname}! I've seen you ${times} times before.`);
 };
@@ -4544,6 +4632,7 @@ JavaScript is pass-by-value, technically. It is neither pass-by-value nor pass-b
 ### Example 1
 
 ```js
+//
 var me = {
     // 1
     partOf: 'A Team'
@@ -4569,6 +4658,7 @@ When we assigned a new object at #`3`, we are changing this reference value enti
 ### Example 2
 
 ```js
+//
 var me = {
     // 1
     partOf: 'A Team'
@@ -4601,6 +4691,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 The built-in functions [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max) and [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min) find the maximum and minimum value of the arguments, respectively.
 
 ```js
+//
 Math.max(1, 2, 3, 4); // 4
 Math.min(1, 2, 3, 4); // 1
 ```
@@ -4610,6 +4701,7 @@ These functions will not work as-is with arrays of numbers. However, there are s
 [`Function.prototype.apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) allows you to call a function with a given `this` value and an _array_ of arguments.
 
 ```js
+//
 var numbers = [1, 2, 3, 4];
 Math.max.apply(null, numbers); // 4
 Math.min.apply(null, numbers); // 1
@@ -4620,6 +4712,7 @@ Passing the `numbers` array as the second argument of `apply()` results in the f
 A simpler, ES2015 way of accomplishing this is with the new [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator).
 
 ```js
+//
 var numbers = [1, 2, 3, 4];
 Math.max(...numbers); // 4
 Math.min(...numbers); // 1
@@ -4639,6 +4732,7 @@ tip-writer-support: https://www.coinbase.com/loverajoel
 The cross-browser way to check if the document has loaded in pure JavaScript is using [`readyState`](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState).
 
 ```js
+//
 if (document.readyState === 'complete') {
     // The page is fully loaded
 }
@@ -4647,6 +4741,7 @@ if (document.readyState === 'complete') {
 You can detect when the document is ready...
 
 ```js
+//
 let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {
         clearInterval(stateCheck);
@@ -4658,6 +4753,7 @@ let stateCheck = setInterval(() => {
 or with [onreadystatechange](https://developer.mozilla.org/en-US/docs/Web/Events/readystatechange)...
 
 ```js
+//
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         // document ready
@@ -4679,6 +4775,7 @@ Below, different ways to declare variables in JavaScript.
 Comments and console.log should be enough to explain what's happening here:
 
 ```js
+//
 var y,
     x = (y = 1); //== var x; var y; x = y = 1
 console.log('--> 1:', `x = ${x}, y = ${y}`);
@@ -4690,6 +4787,7 @@ console.log('--> 1:', `x = ${x}, y = ${y}`);
 First, we just set two variables. Nothing much here.
 
 ```js
+//
 (() => {
     var x = (y = 2); // == var x; x = y = 2;
     console.log('2.0:', `x = ${x}, y = ${y}`);
@@ -4704,6 +4802,7 @@ console.log('--> 2.1:', `x = ${x}, y = ${y}`);
 As you can see, the code has only changed the global y, as we haven't declared the variable in the closure.
 
 ```js
+//
 (() => {
     var x,
         y = 3; // == var x; var y = 3;
@@ -4719,6 +4818,7 @@ console.log('--> 3.1:', `x = ${x}, y = ${y}`);
 Now we declare both variables through var. Meaning they only live in the context of the closure.
 
 ```js
+//
 (() => {
     var y,
         x = (y = 4); // == var x; var y; x = y = 4
@@ -4734,6 +4834,7 @@ console.log('--> 4.1:', `x = ${x}, y = ${y}`);
 Both variables have been declared using var and only after that we've set their values. As local > global, x and y are local in the closure, meaning the global x and y are untouched.
 
 ```js
+//
 x = 5; // == x = 5
 console.log('--> 5:', `x = ${x}, y = ${y}`);
 
@@ -4874,6 +4975,7 @@ tip-tldr: In Javascript you can easily get the unix timestamp
 We frequently need to calculate with unix timestamp. There are several ways to grab the timestamp. For current unix timestamp easiest and fastest way is
 
 ```js
+//
 const dateTime = Date.now();
 const timestamp = Math.floor(dateTime / 1000);
 ```
@@ -4881,6 +4983,7 @@ const timestamp = Math.floor(dateTime / 1000);
 or
 
 ```js
+//
 const dateTime = new Date().getTime();
 const timestamp = Math.floor(dateTime / 1000);
 ```
@@ -4888,6 +4991,7 @@ const timestamp = Math.floor(dateTime / 1000);
 To get unix timestamp of a specific date pass `YYYY-MM-DD` or `YYYY-MM-DDT00:00:00Z` as parameter of `Date` constructor. For example
 
 ```js
+//
 const dateTime = new Date('2012-06-08').getTime();
 const timestamp = Math.floor(dateTime / 1000);
 ```
@@ -4895,6 +4999,7 @@ const timestamp = Math.floor(dateTime / 1000);
 You can just add a `+` sign also when declaring a `Date` object like below
 
 ```js
+//
 const dateTime = +new Date();
 const timestamp = Math.floor(dateTime / 1000);
 ```
@@ -4902,6 +5007,7 @@ const timestamp = Math.floor(dateTime / 1000);
 or for specific date
 
 ```js
+//
 const dateTime = +new Date('2012-06-08');
 const timestamp = Math.floor(dateTime / 1000);
 ```
@@ -4927,6 +5033,7 @@ tip-tldr: Helpful logging techniques using coercion and conditonal breakpoints.
 If you wanted to log to the console a value each time a function is called, you can use conditional break points to do this. Open up your dev tools, find the function where you'd like to log data to the console and set a breakpoint with the following condition:
 
 ```js
+//
 console.log(data.value) && false;
 ```
 
@@ -4939,6 +5046,7 @@ Here's how you can set a conditional breakpoint in [Edge](https://dev.windows.co
 Have you ever logged a function variable to the console and weren't able to just view the function's code? The quickest way to see the function's code is to coerce it to a string using concatenation with an empty string.
 
 ```js
+//
 console.log(funcVariable + '');
 ```
 
@@ -4963,6 +5071,7 @@ Safer event-handling patterns include the following:
 Use a reference:
 
 ```js
+//
 const handler = function () {
     console.log('Tada!');
 };
@@ -4974,6 +5083,7 @@ element.removeEventListener('click', handler);
 Named function that removes itself:
 
 ```js
+//
 element.addEventListener('click', function click(e) {
     if (someCondition) {
         return e.currentTarget.removeEventListener('click', click);
@@ -4984,6 +5094,7 @@ element.addEventListener('click', function click(e) {
 A better approach:
 
 ```js
+//
 function handleEvent(eventName, { onElement, withCallback, useCapture = false } = {}, thisArg) {
     const element = onElement || document.documentElement;
 
@@ -5026,6 +5137,7 @@ You're going to run into some instances where you'll be using `new` to allocate 
 The `new` operator in JavaScript is an operator that, under reasonable circumstances, returns a new instance of an object. Let's say we have a constructor function:
 
 ```js
+//
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -5045,6 +5157,7 @@ myThing.two; // 2
 Now that you get that example, here's where things get a little bit wonky. Let's say I add something to the constructor function, a little SPICE:
 
 ```js
+//
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -5060,6 +5173,7 @@ Now, what does myThing equal? Is it 5? is it an object? Is it my crippled sense 
 Except the world does know:
 
 ```js
+//
 myThing.one; // 1
 myThing.two; // 2
 ```
@@ -5069,6 +5183,7 @@ Interestingly enough, we never actually see the five that we supposedly 'returne
 Let's return a non-primitive type instead, something like an object.
 
 ```js
+//
 function Thing() {
     this.one = 1;
     this.two = 2;
@@ -5085,6 +5200,7 @@ var myThing = new Thing();
 Let's check it out. A quick console.log reveals all:
 
 ```js
+//
 console.log(myThing);
 /*
   Object {three: 3, four: 4}
@@ -5125,6 +5241,7 @@ function getFileExtension(filename) {
 ### Solution 1: Regular Expression
 
 ```js
+//
 function getFileExtension1(filename) {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined;
 }
@@ -5133,6 +5250,7 @@ function getFileExtension1(filename) {
 ### Solution 2: String `split` method
 
 ```js
+//
 function getFileExtension2(filename) {
     return filename.split('.').pop();
 }
@@ -5143,6 +5261,7 @@ Those two solutions couldnot handle some edge cases, here is another more robust
 ### Solution3: String `slice`, `lastIndexOf` methods
 
 ```js
+//
 function getFileExtension3(filename) {
     return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
 }
@@ -5282,6 +5401,7 @@ categories: - en - javascript
 Sometimes, we need to loop endlessly over an array of items, like a carousel of images or an audio playlist. Here's how to take an array and give it "looping powers":
 
 ```js
+//
 var aList = ['A', 'B', 'C', 'D', 'E'];
 
 function make_looper(arr) {
@@ -5333,6 +5453,7 @@ aList.prev(); // -> D
 Using the `%` ( Modulus ) operator is prettier.The modulus return division's rest ( ` 2 % 5 = 1` and ` 5 % 5 = 0`):
 
 ```js
+//
 var aList = ['A', 'B', 'C', 'D', 'E'];
 
 function make_looper(arr) {
@@ -5393,6 +5514,7 @@ It's easy, the bad thing is that we must add an `<input/>` with the text to be c
 Also, this command that now is [supported](http://caniuse.com/#search=execCommand) by all the latest version of browsers, allows us to execute another system commands like `copy`, `cut`, `paste`, and make changes like fonts color, size, and much more.
 
 ```js
+//
 document.querySelector('#input').select();
 document.execCommand('copy');
 ```
@@ -5421,6 +5543,7 @@ Apart from being just a delimiter, the comma operator allows you to put multiple
 Eg:-
 
 ```js
+//
 for (var i = 0, j = 0; i < 5; i++, j++, j++) {
     console.log('i:' + i + ', j:' + j);
 }
@@ -5429,6 +5552,7 @@ for (var i = 0, j = 0; i < 5; i++, j++, j++) {
 Output:-
 
 ```js
+//
 i:0, j:0
 i:1, j:2
 i:2, j:4
@@ -5441,6 +5565,7 @@ When placed in an expression, it evaluates every expression from left to right a
 Eg:-
 
 ```js
+//
 function a() {
     console.log('a');
     return 'a';
@@ -5462,6 +5587,7 @@ console.log(x); // Outputs "c"
 Output:-
 
 ```js
+//
 'a';
 'b';
 'c';
@@ -5584,6 +5710,7 @@ categories: - en - javascript
 -   The scope of a variable defined with `let` is block scope.
 
 ```js
+//
 function varvslet() {
     console.log(i); // i is undefined due to hoisting
     // console.log(j); // ReferenceError: j is not defined
@@ -5611,6 +5738,7 @@ function varvslet() {
     `let` will not hoist to the entire scope of the block they appear in. By contrast, `var` could hoist as below.
 
 ```js
+//
 {
     console.log(c); // undefined. Due to hoisting
     var c = 2;
@@ -5627,6 +5755,7 @@ function varvslet() {
     `let` in the loop can re-binds it to each iteration of the loop, making sure to re-assign it the value from the end of the previous loop iteration, so it can be used to avoid issue with closures.
 
 ```js
+//
 for (var i = 0; i < 5; ++i) {
     setTimeout(function () {
         console.log(i); // output '5' 5 times
@@ -5637,6 +5766,7 @@ for (var i = 0; i < 5; ++i) {
 After replacing `var` with `let`
 
 ```js
+//
 // print 1, 2, 3, 4, 5
 for (let i = 0; i < 5; ++i) {
     setTimeout(function () {
@@ -5745,6 +5875,7 @@ More than often, we need to bind an object to a function's this object. JS uses 
 ### Bind syntax
 
 ```js
+//
 fun.bind(thisArg[, arg1[, arg2[, ...]]])
 ```
 
@@ -5765,6 +5896,7 @@ A copy of the given function along with the specified `this` value and initial a
 ### Bind method in action in JS
 
 ```js
+//
 const myCar = {
     brand: 'Ford',
     type: 'Sedan',
@@ -5807,6 +5939,7 @@ In case of established websocket connection, server or firewall could timeout an
 Let's have a look on implementation-
 
 ```js
+//
 var timerID = 0;
 function keepAlive() {
     var timeout = 20000;
@@ -6904,6 +7037,7 @@ categories: - en - javascript
 ```
 
 ```js
+//
 const list = document.querySelector('.todo-list');
 
 list.addEventListener('click', (e) => {
@@ -6928,6 +7062,7 @@ categories: - en - javascript
 The spread operator in JavaScript is a useful syntax for adding elements to an array, combining arrays into one larger one, spreading an array inside the arguments of a function, and more.
 
 ```js
+//
 // Concatenating arrays and objects
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5];
@@ -6973,6 +7108,7 @@ categories: - en - javascript
 The `void` operator returns an `undefined` value from an evaluated expression, or in other words; the `void` operator specifies an expression to be evaluated without returning a value. It is commonly used in client-side JavaScript, where the browser should not display the value.
 
 ```js
+//
 function getYear() {
     return 2020;
 }
@@ -7004,6 +7140,7 @@ categories: - en - javascript
 All `Promise` instances accept a method as an argument called the executor. This executor takes two methods as arguments: resolve and reject. Within the executor, if resolve is called, the `Promise` instance becomes fulfilled. If an exception is thrown, reject is called instead, and the `Promise` instance becomes rejected.
 
 ```js
+//
 const executor = (resolve, reject) => {
     setTimeout(() => resolve("I'm done"), 1000);
 };
@@ -7031,6 +7168,7 @@ categories: - en - javascript
 The ternary operator is a shortcut for the `if` statement. It consists of three operands; a question mark, a condition, and an expression to execute if the condition is true, followed by a colon and another expression to execute if it's false.
 
 ```js
+//
 let age = 26;
 
 // condition ? expression if true : expression if false

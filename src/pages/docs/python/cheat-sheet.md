@@ -18,7 +18,6 @@ seo:
 template: docs
 ---
 
-
 ## Lorem ipsum
 
 # Python Cheat Sheet
@@ -1943,7 +1942,7 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
-```shell
+```bashell
 pip install pyperclip
 ```
 
