@@ -36,7 +36,8 @@ template: docs
 
     //
     var object = new Object();
-    ```
+
+    ````
 
         2. **Object's create method:**
 
@@ -46,7 +47,7 @@ template: docs
 
     //
     var object = Object.create(null);
-    ```
+    ````
 
         3. **Object literal syntax:**
 
@@ -56,7 +57,8 @@ template: docs
 
     //
     var object = {};
-    ```
+
+    ````
 
         4. **Function constructor:**
 
@@ -70,7 +72,7 @@ template: docs
     this.age = 21;
     }
     var object = new Person('Sudheer');
-    ```
+    ````
 
         5. **Function constructor with prototype:**
 
@@ -82,7 +84,8 @@ template: docs
     function Person() {}
     Person.prototype.name = 'Sudheer';
     var object = new Person();
-    ```
+
+    ````
 
             This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
 
@@ -135,7 +138,7 @@ template: docs
     var object = new (function () {
     this.name = 'Sudheer';
     })();
-    ```
+    ````
 
 2.  What is a prototype chain
 
@@ -213,7 +216,8 @@ template: docs
 
     //
     JSON.parse(text);
-    ```
+
+    ````
 
         **Stringification:** converting a native object to a string so it can be transmitted across the network
 
@@ -221,7 +225,7 @@ template: docs
 
     //
     JSON.stringify(object);
-    ```
+    ````
 
 5.  What is the purpose of the array slice method
 
@@ -236,9 +240,12 @@ template: docs
     let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
     let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
     let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
+
     ```
 
         **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
+
+    ```
 
 6.  What is the purpose of the array splice method
 
@@ -310,6 +317,9 @@ template: docs
     '0' === false // false
     []==[] or []===[] //false, refer different objects in memory
     {}=={} or {}==={} //false, refer different objects in memory
+
+    ```
+
     ```
 
 10. What are lambda or arrow functions
@@ -327,6 +337,9 @@ template: docs
     //
     const handler = () => console.log('This is a click handler function');
     document.addEventListener('click', handler);
+
+    ```
+
     ```
 
 12. What is a first order function
@@ -337,6 +350,9 @@ template: docs
 
     //
     const firstOrder = () => console.log('I am a first order function!');
+
+    ```
+
     ```
 
 13. What is a higher order function
@@ -349,6 +365,9 @@ template: docs
     const firstOrderFunc = () => console.log('Hello, I am a First order function');
     const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
     higherOrder(firstOrderFunc);
+
+    ```
+
     ```
 
 14. What is a unary function
@@ -361,6 +380,9 @@ template: docs
 
     //
     const unaryFunction = (a) => console.log(a + 10); // Add 10 to the given argument and display the value
+
+    ```
+
     ```
 
 15. What is the currying function
@@ -424,6 +446,9 @@ template: docs
     console.log(counter); // 31
     }
     console.log(counter); // 30 (because the variable in if block won't exist here)
+
+    ```
+
     ```
 
 18. What is the difference between let and var
@@ -452,6 +477,9 @@ template: docs
     console.log(age); //error: age is not defined(due to block scope)
     }
     userDetails('John');
+
+    ```
+
     ```
 
 19. What is the reason to choose the name let as a keyword
@@ -493,6 +521,9 @@ template: docs
     break;
     }
     }
+
+    ```
+
     ```
 
 21. What is the Temporal Dead Zone
@@ -510,6 +541,9 @@ template: docs
     var counter1 = 1;
     let counter2 = 2;
     }
+
+    ```
+
     ```
 
 22. What is IIFE(Immediately Invoked Function Expression)
@@ -522,7 +556,8 @@ template: docs
     (function () {
     // logic here
     })();
-    ```
+
+    ````
 
         The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
 
@@ -534,7 +569,7 @@ template: docs
     console.log(message);
     })();
     console.log(message); //Error: message is not defined
-    ```
+    ````
 
 23. What is the benefit of using modules
 
@@ -570,6 +605,9 @@ template: docs
     const addition = memoizAddition();
     console.log(addition(20)); //output: 40 calculated
     console.log(addition(20)); //output: 40 cached
+
+    ```
+
     ```
 
 25. What is Hoisting
@@ -582,7 +620,8 @@ template: docs
     //
     console.log(message); //output : undefined
     var message = 'The variable Has been hoisted';
-    ```
+
+    ````
 
         The above code looks like as below to the interpreter,
 
@@ -592,7 +631,7 @@ template: docs
     var message;
     console.log(message);
     message = 'The variable Has been hoisted';
-    ```
+    ````
 
 26. What are classes in ES6
 
@@ -651,9 +690,12 @@ template: docs
     var myFunction = Welcome('John');
     myFunction('Welcome '); //Output: Welcome John
     myFunction('Hello Mr.'); //output: Hello Mr.John
+
     ```
 
         As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
+
+    ```
 
 28. What are modules
 
@@ -707,9 +749,12 @@ template: docs
 
     //
     document.cookie = 'username=John';
+
     ```
 
         ![Screenshot](images/cookie.png)
+
+    ```
 
 38. Why do you need a Cookie
 
@@ -728,7 +773,8 @@ template: docs
 
     //
     document.cookie = 'username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC';
-    ```
+
+    ````
 
         1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
 
@@ -736,7 +782,7 @@ template: docs
 
     //
     document.cookie = 'username=John; path=/services';
-    ```
+    ````
 
 40. How do you delete a cookie
 
@@ -747,9 +793,12 @@ template: docs
 
     //
     document.cookie = 'username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;';
+
     ```
 
         **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
+
+    ```
 
 41. What are the differences between cookie, local storage and session storage
 
@@ -776,6 +825,9 @@ template: docs
     //
     localStorage.setItem('logo', document.getElementById('logo').value);
     localStorage.getItem('logo');
+
+    ```
+
     ```
 
 44. What are the methods available on session storage
@@ -807,7 +859,8 @@ template: docs
 
     //
     window.onstorage = functionRef;
-    ```
+
+    ````
 
         Let's take the example usage of onstorage event handler which logs the storage key and it's values
 
@@ -817,7 +870,7 @@ template: docs
     window.onstorage = function (e) {
     console.log('The ' + e.key + ' key has been changed from ' + e.oldValue + ' to ' + e.newValue + '.');
     };
-    ```
+    ````
 
 46. Why do you need web storage
 
@@ -835,6 +888,9 @@ template: docs
     } else {
     // Sorry! No Web Storage support..
     }
+
+    ```
+
     ```
 
 48. How do you check web workers browser support
@@ -849,6 +905,9 @@ template: docs
     } else {
     // Sorry! No Web Worker support..
     }
+
+    ```
+
     ```
 
 49. Give an example of a web worker
@@ -881,7 +940,8 @@ template: docs
     if (typeof w == 'undefined') {
     w = new Worker('counter.js');
     }
-    ```
+
+    ````
 
         and we can receive messages from web worker
 
@@ -891,7 +951,7 @@ template: docs
     w.onmessage = function (event) {
     document.getElementById('message').innerHTML = event.data;
     };
-    ```
+    ````
 
         1. Terminate a Web Worker:
            Web workers will continue to listen for messages (even after the external script is finished) until it is terminated. You can use the terminate() method to terminate listening to the messages.
@@ -900,7 +960,8 @@ template: docs
 
     //
     w.terminate();
-    ```
+
+    ````
 
         1. Reuse the Web Worker: If you set the worker variable to undefined you can reuse the code
 
@@ -908,7 +969,7 @@ template: docs
 
     //
     w = undefined;
-    ```
+    ````
 
 50. What are the restrictions of web workers on DOM
 
@@ -930,7 +991,8 @@ template: docs
     const promise = new Promise(function (resolve, reject) {
     // promise description
     });
-    ```
+
+    ````
 
         The usage of a promise would be as below,
 
@@ -952,6 +1014,8 @@ template: docs
         The action flow of a promise will be as below,
 
         ![Screenshot](images/promises.png)
+
+    ````
 
 52. Why do you need a promise
 
@@ -1028,6 +1092,9 @@ template: docs
     });
     });
     });
+
+    ```
+
     ```
 
 57. What are server-sent events
@@ -1047,6 +1114,9 @@ template: docs
     document.getElementById('output').innerHTML += event.data + '<br>';
     };
     }
+
+    ```
+
     ```
 
 59. How do you check browser support for server-sent events
@@ -1061,6 +1131,9 @@ template: docs
     } else {
     // No server-sent events supported
     }
+
+    ```
+
     ```
 
 60. What are the events available for server sent events
@@ -1124,6 +1197,7 @@ template: docs
     console.log(result); // 6
     return result \* 4;
     });
+
     ```
 
         In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
@@ -1133,6 +1207,8 @@ template: docs
         3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result \* 3.
         4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result \* 4.
 
+    ```
+
 64. What is promise.all
 
         Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
@@ -1141,9 +1217,12 @@ template: docs
 
     //
     Promise.all([Promise1, Promise2, Promise3]) .then(result) => { console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
+
     ```
 
         **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+
+    ```
 
 65. What is the purpose of the race method in promise
 
@@ -1182,7 +1261,8 @@ template: docs
     //
     'use strict';
     x = 3.14; // This will cause an error because x is not declared
-    ```
+
+    ````
 
         and if you declare inside a function, it has local scope
 
@@ -1198,6 +1278,8 @@ template: docs
         }
         ```
 
+    ````
+
 69. What is the purpose of double exclamation
 
         The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
@@ -1209,7 +1291,8 @@ template: docs
     let isIE8 = false;
     isIE8 = !!navigator.userAgent.match(/MSIE 8.0/);
     console.log(isIE8); // returns true or false
-    ```
+
+    ````
 
         If you don't use this expression then it returns the original value.
 
@@ -1217,7 +1300,7 @@ template: docs
 
     //
     console.log(navigator.userAgent.match(/MSIE 8.0/)); // returns either an Array or null
-    ```
+    ````
 
         **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
@@ -1243,6 +1326,9 @@ template: docs
     //
     typeof 'John Abraham'; // Returns "string"
     typeof (1 + 2); // Returns "number"
+
+    ```
+
     ```
 
 72. What is undefined property
@@ -1254,7 +1340,8 @@ template: docs
     //
     var user; // Value is undefined, type is undefined
     console.log(typeof user); //undefined
-    ```
+
+    ````
 
         Any variable can be emptied by setting the value to undefined.
 
@@ -1262,7 +1349,7 @@ template: docs
 
     //
     user = undefined;
-    ```
+    ````
 
 73. What is null value
 
@@ -1274,6 +1361,9 @@ template: docs
     //
     var user = null;
     console.log(typeof user); //object
+
+    ```
+
     ```
 
 74. What is the difference between null and undefined
@@ -1296,6 +1386,9 @@ template: docs
 
     //
     console.log(eval('1 + 2')); // 3
+
+    ```
+
     ```
 
 76. What is the difference between window and document
@@ -1321,9 +1414,12 @@ template: docs
     function goForward() {
     window.history.forward();
     }
+
     ```
 
         **Note:** You can also access history without window prefix.
+
+    ```
 
 78. How do you detect caps lock key turned on or not
 
@@ -1359,6 +1455,9 @@ template: docs
     //
     isNaN('Hello'); //true
     isNaN('100'); //false
+
+    ```
+
     ```
 
 80. What are the differences between undeclared and undefined variables
@@ -1378,6 +1477,9 @@ template: docs
 
     //
     msg = 'Hello'; // var is missing, it becomes global variable
+
+    ```
+
     ```
 
 82. What are the problems with global variables
@@ -1393,6 +1495,9 @@ template: docs
     //
     Math.sqrt(-1);
     parseInt('Hello');
+
+    ```
+
     ```
 
 84. What is the purpose of isFinite function
@@ -1435,6 +1540,9 @@ template: docs
     function submit() {
     document.forms[0].submit();
     }
+
+    ```
+
     ```
 
 89. How do you find operating system details
@@ -1445,6 +1553,9 @@ template: docs
 
     //
     console.log(navigator.platform);
+
+    ```
+
     ```
 
 90. What is the difference between document load and DOMContentLoaded events
@@ -1489,7 +1600,8 @@ template: docs
 
     //
     <input type="text" value="Name:">
-    ```
+
+    ````
 
         You can retrieve the attribute value as below,
 
@@ -1499,7 +1611,7 @@ template: docs
     const input = document.querySelector('input');
     console.log(input.getAttribute('value')); // Good morning
     console.log(input.value); // Good morning
-    ```
+    ````
 
         And after you change the value of the text field to "Good evening", it becomes like
 
@@ -1508,6 +1620,9 @@ template: docs
     //
     console.log(input.getAttribute('value')); // Good morning
     console.log(input.value); // Good evening
+
+    ```
+
     ```
 
 95. What is same-origin policy
@@ -1525,6 +1640,9 @@ template: docs
     <a href="JavaScript:void(0);" onclick="alert('Well done!')">
     Click Me!
     </a>
+
+    ```
+
     ```
 
 97. Is JavaScript a compiled or interpreted language
@@ -1581,9 +1699,12 @@ template: docs
         document.getElementById('link').addEventListener('click', function (event) {
         event.preventDefault();
         });
+
         ```
 
              **Note:** Remember that not all events are cancelable.
+
+        ```
 
 103.    What is the use of stopPropagation method
 
@@ -1633,6 +1754,9 @@ template: docs
         setTimeout(function () {
         console.log('Good morning');
         }, 2000);
+
+        ```
+
         ```
 
 107.    What is the use of setInterval
@@ -1645,6 +1769,9 @@ template: docs
         setInterval(function () {
         console.log('Good morning');
         }, 2000);
+
+        ```
+
         ```
 
 108.    Why is JavaScript treated as Single threaded
@@ -1700,6 +1827,9 @@ template: docs
         var userJSON = { name: 'John', age: 31 };
         var userString = JSON.stringify(user);
         console.log(userString); //"{"name":"John","age":31}"
+
+        ```
+
         ```
 
 114.    How do you parse JSON string
@@ -1712,6 +1842,9 @@ template: docs
         var userString = '{"name":"John","age":31}';
         var userJSON = JSON.parse(userString);
         console.log(userJSON); // {name: "John", age: 31}
+
+        ```
+
         ```
 
 115.    Why do you need JSON
@@ -1738,13 +1871,14 @@ template: docs
         }
         function start() {
         msg =setTimeout(greeting, 3000);
-
+        
              }
-
+        
              function stop() {
                  clearTimeout(msg);
              }
              </script>
+
              ```
 
 118.    What is the purpose of clearInterval method
@@ -1763,13 +1897,14 @@ template: docs
         }
         function start() {
         msg = setInterval(greeting, 3000);
-
+        
              }
-
+        
              function stop() {
                  clearInterval(msg);
              }
              </script>
+
              ```
 
 119.    How do you redirect new page in javascript
@@ -1782,6 +1917,9 @@ template: docs
         function redirect() {
         window.location.href = 'newPage.html';
         }
+
+        ```
+
         ```
 
 120.    How do you check whether a string contains a substring
@@ -1796,7 +1934,8 @@ template: docs
         var mainString = 'hello',
         subString = 'hell';
         mainString.includes(subString);
-        ```
+
+        ````
 
              1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
 
@@ -1806,7 +1945,7 @@ template: docs
         var mainString = 'hello',
         subString = 'hell';
         mainString.indexOf(subString) !== -1;
-        ```
+        ````
 
              1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
 
@@ -1816,6 +1955,9 @@ template: docs
         var mainString = 'hello',
         regex = /hell/;
         regex.test(mainString);
+
+        ```
+
         ```
 
 121.    How do you validate an email in javascript
@@ -1830,9 +1972,12 @@ template: docs
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)\*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
         }
+
         ```
 
              The above regular expression accepts unicode characters.
+
+        ```
 
 122.    How do you get the current url with javascript
 
@@ -1842,6 +1987,9 @@ template: docs
 
         //
         console.log('location.href', window.location.href); // Returns full URL
+
+        ```
+
         ```
 
 123.    What are the various url properties of location object
@@ -1866,6 +2014,9 @@ template: docs
         //
         const urlParams = new URLSearchParams(window.location.search);
         const clientCode = urlParams.get('clientCode');
+
+        ```
+
         ```
 
 125.    How do you check if a key exists in an object
@@ -1878,7 +2029,8 @@ template: docs
 
         //
         'key' in obj;
-        ```
+
+        ````
 
              and If you want to check if a key doesn't exist, remember to use parenthesis,
 
@@ -1886,7 +2038,7 @@ template: docs
 
         //
         !('key' in obj);
-        ```
+        ````
 
              1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
 
@@ -1894,7 +2046,8 @@ template: docs
 
         //
         obj.hasOwnProperty('key'); // true
-        ```
+
+        ````
 
              1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let's compare the properties against undefined to determine the existence of the property.
 
@@ -1908,6 +2061,8 @@ template: docs
              console.log(user.name !== undefined); // true
              console.log(user.nickName !== undefined); // false
              ```
+
+        ````
 
 126.    How do you loop through or enumerate javascript object
 
@@ -1939,7 +2094,8 @@ template: docs
 
         //
         Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
-        ```
+
+        ````
 
              1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
 
@@ -1947,7 +2103,7 @@ template: docs
 
         //
         Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
-        ```
+        ````
 
              1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
 
@@ -1989,6 +2145,9 @@ template: docs
 
         //
         var argsArray = Array.prototype.slice.call(arguments);
+
+        ```
+
         ```
 
 129.    How do you make first letter of the string in an uppercase
@@ -2001,6 +2160,9 @@ template: docs
         function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
         }
+
+        ```
+
         ```
 
 130.    What are the pros and cons of for loop
@@ -2045,6 +2207,9 @@ Cons
         var d2 = new Date(d1);
         console.log(d1.getTime() === d2.getTime()); //True
         console.log(d1 === d2); // False
+
+        ```
+
         ```
 
 133.    How do you check if a string starts with another string
@@ -2056,6 +2221,9 @@ Cons
         //
         'Good morning'.startsWith('Good'); // true
         'Good morning'.startsWith('morning'); // false
+
+        ```
+
         ```
 
 134.    How do you trim a string in javascript
@@ -2066,7 +2234,8 @@ Cons
 
         //
         ' Hello World '.trim(); //Hello World
-        ```
+
+        ````
 
              If your browser(<IE9) doesn't support this method then you can use below polyfill.
 
@@ -2082,7 +2251,7 @@ Cons
         };
         })();
         }
-        ```
+        ````
 
 135.    How do you add a key value pair in javascript
 
@@ -2095,7 +2264,8 @@ Cons
         key1: value1,
         key2: value2
         };
-        ```
+
+        ````
 
              1. **Using dot notation:** This solution is useful when you know the name of the property
 
@@ -2103,7 +2273,7 @@ Cons
 
         //
         object.key3 = 'value3';
-        ```
+        ````
 
              1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
 
@@ -2111,6 +2281,9 @@ Cons
 
         //
         obj['key3'] = 'value3';
+
+        ```
+
         ```
 
 136.    Is the !-- notation represents a special operator
@@ -2130,9 +2303,12 @@ Cons
 
         //
         var a = b || c;
+
         ```
 
              As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
+
+        ```
 
 138.    How do you define multiline strings
 
@@ -2145,9 +2321,12 @@ Cons
         'This is a \
          very lengthy \
          sentence!';
+
         ```
 
              But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
+
+        ```
 
 139.    What is an app shell model
 
@@ -2182,6 +2361,9 @@ Cons
         return num1 + num2 + num3 + num4;
         }
         sum.length; // 4 is the number of parameters expected.
+
+        ```
+
         ```
 
 142.    What is a polyfill
@@ -2201,7 +2383,8 @@ Cons
         }
         text += 'Number: ' + i + '<br>';
         }
-        ```
+
+        ````
 
              The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
@@ -2214,7 +2397,7 @@ Cons
         }
         text += 'Number: ' + i + '<br>';
         }
-        ```
+        ````
 
 144.    What are js labels
 
@@ -2281,6 +2464,9 @@ Cons
         var v5 = [];
         var v6 = /()/;
         var v7 = function () {};
+
+        ```
+
         ```
 
 148.    How do you define JSON arrays
@@ -2295,6 +2481,9 @@ Cons
         {"firstName":"Anna", "lastName":"Smith"},
         {"firstName":"Shane", "lastName":"Warn"}
         ]
+
+        ```
+
         ```
 
 149.    How do you generate random integers
@@ -2306,9 +2495,12 @@ Cons
         //
         Math.floor(Math.random() _ 10) + 1; // returns a random integer from 1 to 10
         Math.floor(Math.random() _ 100) + 1; // returns a random integer from 1 to 100
+
         ```
 
              **Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+
+        ```
 
 150.    Can you write a random integers function to print integers with in a range
 
@@ -2322,6 +2514,9 @@ Cons
         }
         randomInteger(1, 100); // returns a random integer from 1 to 100
         randomInteger(1, 1000); // returns a random integer from 1 to 1000
+
+        ```
+
         ```
 
 151.    What is tree shaking
@@ -2344,7 +2539,8 @@ Cons
 
         //
         /pattern/modifiers;
-        ```
+
+        ````
 
              For example, the regular expression or search pattern with case-insensitive username would be,
 
@@ -2352,7 +2548,7 @@ Cons
 
         //
         /John/i;
-        ```
+        ````
 
 155.    What are the string methods available in Regular expression
 
@@ -2364,7 +2560,8 @@ Cons
         //
         var msg = 'Hello John';
         var n = msg.search(/John/i); // 6
-        ```
+
+        ````
 
              The replace() method is used to return a modified string where the pattern is replaced.
 
@@ -2373,7 +2570,7 @@ Cons
         //
         var msg = 'Hello John';
         var n = msg.replace(/John/i, 'Buttler'); // Hello Buttler
-        ```
+        ````
 
 156.    What are modifiers in regular expression
 
@@ -2393,6 +2590,9 @@ Cons
         var text = 'Learn JS one by one';
         var pattern = /one/g;
         var result = text.match(pattern); // one,one
+
+        ```
+
         ```
 
 157.    What are regular expression patterns
@@ -2425,6 +2625,9 @@ Cons
         var regexp = new RegExp('\\w+');
         console.log(regexp);
         // expected output: /\w+/
+
+        ```
+
         ```
 
 159.    How do you search a string for a pattern
@@ -2436,6 +2639,9 @@ Cons
         //
         var pattern = /you/;
         console.log(pattern.test('How are you?')); //true
+
+        ```
+
         ```
 
 160.    What is the purpose of exec method
@@ -2447,6 +2653,9 @@ Cons
         //
         var pattern = /you/;
         console.log(pattern.exec('How are you?')); //["you", index: 8, input: "How are you?", groups: undefined]
+
+        ```
+
         ```
 
 161.    How do you change the style of a HTML element
@@ -2459,7 +2668,8 @@ Cons
 
         //
         document.getElementById('title').style.fontSize = '30px';
-        ```
+
+        ````
 
              1. **Using ClassName property:** It is easy to modify element class using className property
 
@@ -2467,7 +2677,7 @@ Cons
 
         //
         document.getElementById('title').className = 'custom-title';
-        ```
+        ````
 
 162.    What would be the result of 1+2+'3'
 
@@ -2487,6 +2697,9 @@ Cons
         debugger;
         // code goes here
         }
+
+        ```
+
         ```
 
 164.    What is the purpose of breakpoints in debugging
@@ -2501,6 +2714,9 @@ Cons
 
         //
         var else = "hello"; // Uncaught SyntaxError: Unexpected token else
+
+        ```
+
         ```
 
 166.    How do you detect a mobile browser
@@ -2525,6 +2741,9 @@ Cons
         })(navigator.userAgent || navigator.vendor || window.opera);
         return mobileCheck;
         };
+
+        ```
+
         ```
 
 167.    How do you detect a mobile browser without regexp
@@ -2549,6 +2768,9 @@ Cons
         return false;
         }
         }
+
+        ```
+
         ```
 
 168.    How do you get the image width and height using JS
@@ -2563,6 +2785,9 @@ Cons
         console.log(this.width + 'x' + this.height);
         };
         img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
+
+        ```
+
         ```
 
 169.    How do you make synchronous HTTP request
@@ -2578,6 +2803,9 @@ Cons
         xmlHttpReq.send(null);
         return xmlHttpReq.responseText;
         }
+
+        ```
+
         ```
 
 170.    How do you make asynchronous HTTP request
@@ -2595,6 +2823,9 @@ Cons
         xmlHttp.open('GET', theUrl, true); // true for asynchronous
         xmlHttp.send(null);
         }
+
+        ```
+
         ```
 
 171.    How do you convert date to another timezone in javascript
@@ -2605,6 +2836,9 @@ Cons
 
         //
         console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
+
+        ```
+
         ```
 
 172.    What are the properties used to get size of window
@@ -2628,6 +2862,9 @@ Cons
         //
         var isAuthenticated = false;
         console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'); //Sorry, you are not authenticated
+
+        ```
+
         ```
 
 174.    Can you apply chaining on conditional operator
@@ -2666,7 +2903,8 @@ Cons
 
         //
         window.onload = function ...
-        ```
+
+        ````
 
              1. **document.onload:**
 
@@ -2674,7 +2912,7 @@ Cons
 
         //
         document.onload = function ...
-        ```
+        ````
 
              1. **body onload:**
 
@@ -2693,6 +2931,9 @@ Cons
         //
         new Employee().**proto** === Employee.prototype;
         new Employee().prototype === undefined;
+
+        ```
+
         ```
 
 177.    Give an example where do you really need semicolon
@@ -2725,9 +2966,12 @@ Cons
         })(function () {
         //...
         })();
+
         ```
 
              In this case, we are passing the second function as an argument to the first function and then trying to call the result of the first function call as a function. Hence, the second function will fail with a "... is not a function" error at runtime.
+
+        ```
 
 178.    What is a freeze method
 
@@ -2787,6 +3031,9 @@ Cons
         });
         }
         toTitleCase('good morning john'); // Good Morning John
+
+        ```
+
         ```
 
 183.    How do you detect javascript disabled in the page
@@ -2825,7 +3072,8 @@ Cons
         function f(a, b, ...theArgs) {
         // ...
         }
-        ```
+
+        ````
 
              For example, let's take a sum example to calculate on dynamic number of parameters,
 
@@ -2843,7 +3091,7 @@ Cons
         console.log(fun(1,2,3)); //6
         console.log(fun(1,2,3,4)); //13
         console.log(fun(1,2,3,4,5)); //15
-        ```
+        ````
 
              **Note:** Rest parameter is added in ES2015 or ES6
 
@@ -2858,6 +3106,9 @@ Cons
         //You code goes here
         return;
         }
+
+        ```
+
         ```
 
 187.    What are the bitwise operators available in javascript
@@ -2905,6 +3156,9 @@ Cons
         };
         Object.freeze(object);
         console.log(Object.isFrozen(object));
+
+        ```
+
         ```
 
 190.    How do you determine two values same or not using object
@@ -2917,6 +3171,7 @@ Cons
         Object.is('hello', 'hello'); // true
         Object.is(window, window); // true
         Object.is([], []); // false
+
         ```
 
              Two values are the same if one of the following holds:
@@ -2931,6 +3186,8 @@ Cons
                 both -0
                 both NaN
                 both non-zero and both not NaN and both have the same value.
+
+        ```
 
 191.    What is the purpose of using object is method
 
@@ -2949,7 +3206,8 @@ Cons
 
         //
         Object.assign(target, ...sources);
-        ```
+
+        ````
 
              Let's take example with one source and one target object,
 
@@ -2968,6 +3226,8 @@ Cons
 
              As observed in the above code, there is a common property(`b`) from source to target so it's value has been overwritten.
 
+        ````
+
 193.    What are the applications of assign method
 
         Below are the some of main applications of Object.assign() method,
@@ -2983,7 +3243,8 @@ Cons
 
         //
         var p = new Proxy(target, handler);
-        ```
+
+        ````
 
              Let's take an example of proxy object,
 
@@ -3006,6 +3267,8 @@ Cons
 
              In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
 
+        ````
+
 195.    What is the purpose of seal method
 
              The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
@@ -3021,6 +3284,9 @@ Cons
         console.log(Object.isSealed(object)); // true
         delete object.property; // You cannot delete when sealed
         console.log(object.property); //Welcome to object world
+
+        ```
+
         ```
 
 196.    What are the applications of seal method
@@ -3138,7 +3404,8 @@ Cons
 
         //
         new WeakSet([iterable]);
-        ```
+
+        ````
 
              Let's see the below example to explain it's behavior,
 
@@ -3151,7 +3418,7 @@ Cons
         ws.has(user); // true
         ws.delete(user); // removes user from the set
         ws.has(user); // false, user has been removed
-        ```
+        ````
 
 204.    What are the differences between WeakSet and Set
 
@@ -3184,6 +3451,9 @@ Cons
         weakSetObject.add(secondObject);
         console.log(weakSetObject.has(firstObject)); //true
         weakSetObject.delete(secondObject);
+
+        ```
+
         ```
 
 206.    What is a WeakMap
@@ -3194,7 +3464,8 @@ Cons
 
         //
         new WeakMap([iterable]);
-        ```
+
+        ````
 
              Let's see the below example to explain it's behavior,
 
@@ -3207,7 +3478,7 @@ Cons
         ws.has(user); // true
         ws.delete(user); // removes user from the map
         ws.has(user); // false, user has been removed
-        ```
+        ````
 
 207.    What are the differences between WeakMap and Map
 
@@ -3241,6 +3512,9 @@ Cons
         console.log(weakMapObject.has(firstObject)); //true
         console.log(weakMapObject.get(firstObject)); // John
         weakMapObject.delete(secondObject);
+
+        ```
+
         ```
 
 209.    What is the purpose of uneval
@@ -3253,6 +3527,9 @@ Cons
         var a = 1;
         uneval(a); // returns a String containing 1
         uneval(function user() {}); // returns "(function user(){})"
+
+        ```
+
         ```
 
 210.    How do you encode an URL
@@ -3265,6 +3542,9 @@ Cons
         var uri = 'https://mozilla.org/?x=шеллы';
         var encoded = encodeURI(uri);
         console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+
+        ```
+
         ```
 
 211.    How do you decode an URL
@@ -3283,6 +3563,9 @@ Cons
         // catches a malformed URI
         console.error(e);
         }
+
+        ```
+
         ```
 
 212.    How do you print the contents of web page
@@ -3307,6 +3590,9 @@ Cons
         });
         var greeting = eval(msg);
         greeting(); // returns "Hello, Good morning"
+
+        ```
+
         ```
 
 214.    What is an anonymous function
@@ -3339,6 +3625,9 @@ Cons
         };
         var z = x(5, 10);
         console.log(z); // 50
+
+        ```
+
         ```
 
 215.    What is the precedence order between local and global variables
@@ -3354,6 +3643,9 @@ Cons
         console.log(msg);
         }
         greeting();
+
+        ```
+
         ```
 
 216.    What are javascript accessors
@@ -3377,6 +3669,9 @@ Cons
         console.log(user.lang); // getter access lang as en
         user.lang = 'fr';
         console.log(user.lang); // setter used to set lang as fr
+
+        ```
+
         ```
 
 217.    How do you define property on Object constructor
@@ -3474,9 +3769,12 @@ Cons
         default:
         statementDefault;
         }
+
         ```
 
              The above multi-way branch statement provides an easy way to dispatch execution to different parts of code based on the value of the expression.
+
+        ```
 
 222.    What are the conventions to be followed for the usage of switch case
 
@@ -3510,7 +3808,8 @@ Cons
 
         //
         objectName.property;
-        ```
+
+        ````
 
              1. **Square brackets notation:** It uses square brackets for property access
 
@@ -3518,7 +3817,7 @@ Cons
 
         //
         objectName['property'];
-        ```
+        ````
 
              1. **Expression notation:** It uses expression in the square brackets
 
@@ -3526,6 +3825,9 @@ Cons
 
         //
         objectName[expression];
+
+        ```
+
         ```
 
 225.    What are the function parameter rules
@@ -3544,6 +3846,9 @@ Cons
         console.log(parameter1); // 1
         }
         functionName(1);
+
+        ```
+
         ```
 
 226.    What is an error object
@@ -3558,6 +3863,9 @@ Cons
         } catch (err) {
         console.log(err.name + '<br>' + err.message);
         }
+
+        ```
+
         ```
 
 227.    When you get a syntax error
@@ -3572,6 +3880,9 @@ Cons
         } catch (err) {
         console.log(err.name);
         }
+
+        ```
+
         ```
 
 228.    What are the different error names from error object
@@ -3618,6 +3929,9 @@ Cons
         var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
         console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
         console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
+
+        ```
+
         ```
 
 234.    What is an Iterator
@@ -3643,6 +3957,9 @@ Cons
         console.log(iterator.next()); // { value: 'two', done: false }
         console.log(iterator.next()); // { value: 'three', done: false }
         console.log(iterator.next()); // { value: 'undefined, done: true }
+
+        ```
+
         ```
 
 236.    What is an event loop
@@ -3745,6 +4062,9 @@ Cons
         var months = ['Aug', 'Sep', 'Jan', 'June'];
         months.sort();
         console.log(months); // ["Aug", "Jan", "June", "Sep"]
+
+        ```
+
         ```
 
 243.    What is the purpose of compareFunction while sorting arrays
@@ -3757,6 +4077,9 @@ Cons
         let numbers = [1, 2, 5, 3, 4];
         numbers.sort((a, b) => b - a);
         console.log(numbers); // [5, 4, 3, 2, 1]
+
+        ```
+
         ```
 
 244.    How do you reversing an array
@@ -3770,6 +4093,9 @@ Cons
         numbers.sort((a, b) => b - a);
         numbers.reverse();
         console.log(numbers); // [1, 2, 3, 4 ,5]
+
+        ```
+
         ```
 
 245.    How do you find min and max value in an array
@@ -3834,6 +4160,9 @@ Cons
         //
         // Initialize an array a
         for(int i=0; i < a.length; a[i++] = 0) ;
+
+        ```
+
         ```
 
 248.    How do you get metadata of a module
@@ -3845,7 +4174,11 @@ Cons
         //
         <script type="module" src="welcome-module.js">
         </script>;
+
         console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
+
+        ```
+
         ```
 
 249.    What is a comma operator
@@ -3869,7 +4202,8 @@ Cons
 
         //
         for (var a = 0, b =10; a <= 10; a++, b--)
-        ```
+
+        ````
 
              You can also use the comma operator in a return statement where it processes before returning.
 
@@ -3880,13 +4214,13 @@ Cons
         var a = 1;
         return (a += 10), a; // 11
         }
-        ```
+        ````
 
 251.    What is typescript
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```bash
+        ```console
         npm install -g typescript
         ```
 
@@ -4022,6 +4356,9 @@ Cons
         Object.getPrototypeOf('James'); // TypeError: "James" is not an object
         // ES2015
         Object.getPrototypeOf('James'); // String.prototype
+
+        ```
+
         ```
 
 260.    How do you set prototype of one object to another
@@ -4033,6 +4370,9 @@ Cons
         //
         Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
         Object.setPrototypeOf({}, null);
+
+        ```
+
         ```
 
 261.    How do you check whether an object can be extendable or not
@@ -4044,9 +4384,12 @@ Cons
         //
         const newObject = {};
         console.log(Object.isExtensible(newObject)); //true
+
         ```
 
              **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
+
+        ```
 
 262.    How do you prevent an object to extend
 
@@ -4124,7 +4467,8 @@ Cons
         function greeting() {
         console.log('Hello, welcome to JS world');
         }
-        ```
+
+        ````
 
              And after the code Obfuscation, it would be appeared as below,
 
@@ -4158,7 +4502,7 @@ Cons
         return p;
         })("2 1(){0.3('4, 7 6 5 8')}", 9, 9, 'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'), 0, {})
         );
-        ```
+        ````
 
 267.    Why do you need Obfuscation
 
@@ -4224,6 +4568,9 @@ Cons
         return false;
         }
         }
+
+        ```
+
         ```
 
 273.    How do you perform form validation without javascript
@@ -4258,6 +4605,9 @@ Cons
         document.getElementById('message').innerHTML = 'Entered a valid username';
         }
         }
+
+        ```
+
         ```
 
 275.    What are the available constraint validation DOM properties
@@ -4298,6 +4648,9 @@ Cons
         alert('The mentioned age is not allowed');
         }
         }
+
+        ```
+
         ```
 
 278.    Is enums feature available in javascript
@@ -4308,6 +4661,9 @@ Cons
 
         //
         var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
+
+        ```
+
         ```
 
 279.    What is an enum
@@ -4320,6 +4676,9 @@ Cons
         enum Color {
         RED, GREEN, BLUE
         }
+
+        ```
+
         ```
 
 280.    How do you list all properties of an object
@@ -4356,6 +4715,9 @@ Cons
         console.log(descriptorsObject.a.configurable); //true
         console.log(descriptorsObject.a.enumerable); //true
         console.log(descriptorsObject.a.value); // 1
+
+        ```
+
         ```
 
 282.    What are the attributes provided by a property descriptor
@@ -4377,7 +4739,8 @@ Cons
 
         //
         class ChildClass extends ParentClass { ... }
-        ```
+
+        ````
 
              Let's take an example of Square subclass from Polygon parent class,
 
@@ -4400,6 +4763,8 @@ Cons
              }
              ```
 
+        ````
+
 284.    How do I modify the url without reloading the page
 
              The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
@@ -4408,6 +4773,9 @@ Cons
 
         //
         window.history.pushState('page2', 'Title', '/page2.html');
+
+        ```
+
         ```
 
 285.    How do you check whether an array includes a particular value or not
@@ -4434,7 +4802,8 @@ Cons
         const arrayFirst = [1, 2, 3, 4, 5];
         const arraySecond = [1, 2, 3, 4, 5];
         console.log(arrayFirst.length === arraySecond.length && arrayFirst.every((value, index) => value === arraySecond[index])); // true
-        ```
+
+        ````
 
              If you would like to compare arrays irrespective of order then you should sort them before,
 
@@ -4444,7 +4813,7 @@ Cons
         const arrayFirst = [2, 3, 1, 4, 5];
         const arraySecond = [1, 2, 3, 4, 5];
         console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); //true
-        ```
+        ````
 
 287.    How to get the value from get parameters
 
@@ -4457,6 +4826,9 @@ Cons
         let url = new URL(urlString);
         let parameterZ = url.searchParams.get('z');
         console.log(parameterZ); // 3
+
+        ```
+
         ```
 
 288.    How do you print numbers with commas as thousand separators
@@ -4498,9 +4870,12 @@ Cons
         console.log('This is a second definition');
         }
         func1(); // This is a second definition
+
         ```
 
              It always calls the second function definition. In this case, namespace will solve the name collision problem.
+
+        ```
 
 291.    How do you declare namespace
 
@@ -4523,7 +4898,8 @@ Cons
         }
         namespaceOne.func1(); // This is a first definition
         namespaceTwo.func1(); // This is a second definition
-        ```
+
+        ````
 
              1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
 
@@ -4567,6 +4943,8 @@ Cons
              //myFunction(): ReferenceError: myFunction is not defined.
              ```
 
+        ````
+
 292.    How do you invoke javascript code in an iframe from parent page
 
              Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
@@ -4576,6 +4954,9 @@ Cons
         //
         document.getElementById('targetFrame').contentWindow.targetFunction();
         window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
+
+        ```
+
         ```
 
 293.    How do get the timezone offset from date
@@ -4587,6 +4968,9 @@ Cons
         //
         var offset = new Date().getTimezoneOffset();
         console.log(offset); // -480
+
+        ```
+
         ```
 
 294.    How do you load CSS and JS files dynamically
@@ -4611,6 +4995,9 @@ Cons
         }
         if (typeof fileReference != 'undefined') document.getElementsByTagName('head')[0].appendChild(fileReference);
         }
+
+        ```
+
         ```
 
 295.    What are the different methods to find HTML elements in DOM
@@ -4632,9 +5019,12 @@ Cons
         // It selects the document and apply the function on page load
         alert('Welcome to jQuery world');
         });
+
         ```
 
              **Note:** You can download it from jquery's official site or install it from CDNs, like google.
+
+        ```
 
 297.    What is V8 JavaScript engine
 
@@ -4651,6 +5041,9 @@ Cons
         let age = 50; // age is a number now
         age = 'old'; // age is a string now
         age = true; // age is a boolean
+
+        ```
+
         ```
 
 299.    What is a void operator
@@ -4662,7 +5055,8 @@ Cons
         //
         void expression;
         void expression;
-        ```
+
+        ````
 
              Let's display a message without any redirection or reload
 
@@ -4670,7 +5064,7 @@ Cons
 
         //
         <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
-        ```
+        ````
 
              **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
 
@@ -4684,7 +5078,8 @@ Cons
         function myFunction() {
         window.document.body.style.cursor = 'wait';
         }
-        ```
+
+        ````
 
              and this function invoked on page load
 
@@ -4693,6 +5088,8 @@ Cons
 
         </body>
              ```
+
+        ````
 
 301.    How do you create an infinite loop
 
@@ -4703,6 +5100,9 @@ Cons
         //
         for (;;) {}
         while (true) {}
+
+        ```
+
         ```
 
 302.    Why do you need to avoid with statement
@@ -4714,7 +5114,8 @@ Cons
         //
         a.b.c.greeting = 'welcome';
         a.b.c.age = 32;
-        ```
+
+        ````
 
              Using `with` it turns this into:
 
@@ -4725,7 +5126,7 @@ Cons
         greeting = 'welcome';
         age = 32;
         }
-        ```
+        ````
 
              But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
 
@@ -4776,7 +5177,7 @@ Cons
 
              No, you cannot redeclare let and const variables. If you do, it throws below error
 
-             ```bash
+             ```console
              Uncaught SyntaxError: Identifier 'someVariable' has already been declared
              ```
 
@@ -4793,7 +5194,8 @@ Cons
         }
         myFunc();
         alert(name); // John
-        ```
+
+        ````
 
              The block-scoped multi-declaration throws syntax error,
 
@@ -4811,6 +5213,8 @@ Cons
              alert(name);
              ```
 
+        ````
+
 307.    Is const variable makes the value immutable
 
              No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
@@ -4821,6 +5225,9 @@ Cons
         const userList = [];
         userList.push('John'); // Can mutate even though it can't re-assign
         console.log(userList); // ['John']
+
+        ```
+
         ```
 
 308.    What are default parameters
@@ -4862,7 +5269,8 @@ Cons
 
         //
         var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
-        ```
+
+        ````
 
              In ES5, you need break string like below,
 
@@ -4870,7 +5278,7 @@ Cons
 
         //
         var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
-        ```
+        ````
 
              **Note:** You can use multi-line strings and string interpolation features with template literals.
 
@@ -4882,7 +5290,8 @@ Cons
 
         //
         console.log('This is string sentence 1\n' + 'This is string sentence 2');
-        ```
+
+        ````
 
              Whereas in ES6, You don't need to mention any newline sequence character,
 
@@ -4890,7 +5299,7 @@ Cons
 
         //
         console.log(`This is string sentence 'This is string sentence 2`);
-        ```
+        ````
 
 311.    What are nesting templates
 
@@ -4900,7 +5309,8 @@ Cons
 
         //
         const iconStyles = `icon ${isMobilePlatform() ? '' : `icon-${user.isAuthorized ? 'submit' : 'disabled'}`}`;
-        ```
+
+        ````
 
              You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
 
@@ -4909,7 +5319,7 @@ Cons
         //
         //Without nesting templates
         const iconStyles = `icon ${ isMobilePlatform() ? '' : (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
-        ```
+        ````
 
 312.    What are tagged templates
 
@@ -4959,7 +5369,8 @@ Cons
         //
         var calculationString = String.raw`The sum of numbers is \n${1 + 2 + 3 + 4}!`;
         console.log(calculationString); // The sum of numbers is 10
-        ```
+
+        ````
 
              If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
 
@@ -4970,7 +5381,7 @@ Cons
         console.log(calculationString);
         // The sum of numbers is
         // 10
-        ```
+        ````
 
              Also, the raw property is available on the first argument to the tag function
 
@@ -4980,6 +5391,9 @@ Cons
         function tag(strings) {
         console.log(strings.raw[0]);
         }
+
+        ```
+
         ```
 
 314.    What is destructuring assignment
@@ -5069,6 +5483,9 @@ Cons
         y = 20;
         obj = { x: x, y: y };
         console.log(obj); // {x: 10, y:20}
+
+        ```
+
         ```
 
 318.    What are dynamic imports
@@ -5080,6 +5497,9 @@ Cons
 
         //
         import('./Module').then((Module) => Module.method());
+
+        ```
+
         ```
 
 319.    What are the use cases for dynamic imports
@@ -5095,7 +5515,8 @@ Cons
         import(···)
         .then(···);
         }
-        ```
+
+        ````
 
              1. Compute the module specifier at runtime. For example, you can use it for internationalization.
 
@@ -5103,7 +5524,7 @@ Cons
 
         //
         import(`messages_${getLocale()}.js`).then(···);
-        ```
+        ````
 
              1. Import a module from within a regular script instead a module.
 
@@ -5129,6 +5550,9 @@ Cons
         // You can pre-allocate n bytes
         const bytes = 1024;
         const a = new Int8Array(bytes);
+
+        ```
+
         ```
 
 321.    What are the advantages of module loaders
@@ -5155,7 +5579,8 @@ Cons
         var l10nSV = new Intl.Collator('sv');
         console.log(l10nDE.compare('ä', 'z') === -1); // true
         console.log(l10nSV.compare('ä', 'z') === +1); // true
-        ```
+
+        ````
 
              1. **Sorting:**
 
@@ -5167,7 +5592,7 @@ Cons
         var l10nSV = new Intl.Collator('sv');
         console.log(list.sort(l10nDE.compare)); // [ "a", "ä", "z" ]
         console.log(list.sort(l10nSV.compare)); // [ "a", "z", "ä" ]
-        ```
+        ````
 
 323.    What is for...of statement
 
@@ -5190,10 +5615,13 @@ Cons
 
         //
         [...'John Resig'];
+
         ```
 
              The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
              **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
+
+        ```
 
 325.    Is PostMessage secure
 
@@ -5207,6 +5635,9 @@ Cons
 
         //
         targetWindow.postMessage(message, '\*');
+
+        ```
+
         ```
 
 327.    How do you avoid receiving postMessages from attackers
@@ -5222,6 +5653,9 @@ Cons
         console.log('You received the data from valid sender', message.data);
         }
         });
+
+        ```
+
         ```
 
 328.    Can I avoid using postMessages completely
@@ -5257,6 +5691,9 @@ Cons
 
         //
         console.log(document.getElementById('checkboxname').checked); // true or false
+
+        ```
+
         ```
 
 334.    What is the purpose of double tilde operator
@@ -5271,7 +5708,8 @@ Cons
 
         //
         'ABC'.charCodeAt(0); // returns 65
-        ```
+
+        ````
 
              Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
 
@@ -5279,7 +5717,7 @@ Cons
 
         //
         String.fromCharCode(65, 66, 67); // returns 'ABC'
-        ```
+        ````
 
 336.    What is ArrayBuffer
 
@@ -5290,7 +5728,8 @@ Cons
         //
         let buffer = new ArrayBuffer(16); // create a buffer of length 16
         alert(buffer.byteLength); // 16
-        ```
+
+        ````
 
              To manipulate an ArrayBuffer, we need to use a "view" object.
 
@@ -5299,7 +5738,7 @@ Cons
         //
         //Create a DataView referring to the buffer
         let view = new DataView(buffer);
-        ```
+        ````
 
 337.    What is the output of below string expression
 
@@ -5307,10 +5746,13 @@ Cons
 
         //
         console.log('Welcome to JS world'[0]);
+
         ```
 
              The output of the above expression is "W".
              **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
+
+        ```
 
 338.    What is the purpose of Error object
 
@@ -5320,7 +5762,8 @@ Cons
 
         //
         new Error([message[, fileName[, lineNumber]]])
-        ```
+
+        ````
 
              You can throw user defined exceptions or errors using Error object in try...catch block as below,
 
@@ -5332,7 +5775,7 @@ Cons
         } catch (e) {
         console.log(e.name + ': ' + e.message);
         }
-        ```
+        ````
 
 339.    What is the purpose of EvalError object
 
@@ -5342,7 +5785,8 @@ Cons
 
         //
         new EvalError([message[, fileName[, lineNumber]]])
-        ```
+
+        ````
 
              You can throw EvalError with in try...catch block as below,
 
@@ -5353,7 +5797,7 @@ Cons
         throw new EvalError('Eval function error', 'someFile.js', 100);
         } catch (e) {
         console.log(e.message, e.name, e.fileName); // "Eval function error", "EvalError", "someFile.js"
-        ```
+        ````
 
 340.    What are the list of cases error thrown from non-strict mode to strict mode
 
@@ -5365,7 +5809,8 @@ Cons
 
         //
         var n = 022;
-        ```
+
+        ````
 
              1. Using `with` statement
              2. When you use delete operator on a variable name
@@ -5379,7 +5824,7 @@ Cons
         if (someCondition) {
         function f() {}
         }
-        ```
+        ````
 
              Hence, the errors from above cases are helpful to avoid errors in development/production environments.
 
@@ -5400,6 +5845,9 @@ Cons
         console.log(arguments[2]); // "argument3"
         }
         myFunction('argument1', 'argument2', 'argument3');
+
+        ```
+
         ```
 
 343.    What is the purpose of some method in arrays
@@ -5424,7 +5872,8 @@ Cons
 
         //
         array1.concat(array2, array3, ..., arrayX)
-        ```
+
+        ````
 
              Let's take an example of array's concatenation with veggies and fruits arrays,
 
@@ -5435,7 +5884,7 @@ Cons
         var fruits = ['Apple', 'Orange', 'Pears'];
         var veggiesAndFruits = veggies.concat(fruits);
         console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
-        ```
+        ````
 
 345.    What is the difference between Shallow and Deep copy
 
@@ -5454,7 +5903,8 @@ Cons
         age: 25,
         expertise: 'Software Developer'
         };
-        ```
+
+        ````
 
              to create a duplicate
 
@@ -5462,7 +5912,7 @@ Cons
 
         //
         var empDetailsShallowCopy = empDetails; //Shallow copying!
-        ```
+        ````
 
              if we change some property value in the duplicate one like this:
 
@@ -5470,7 +5920,8 @@ Cons
 
         //
         empDetailsShallowCopy.name = 'Johnson';
-        ```
+
+        ````
 
              The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
 
@@ -5487,7 +5938,7 @@ Cons
         age: 25,
         expertise: 'Software Developer'
         };
-        ```
+        ````
 
              Create a deep copy by using the properties from the original object into new variable
 
@@ -5499,9 +5950,12 @@ Cons
         age: empDetails.age,
         expertise: empDetails.expertise
         };
+
         ```
 
              Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
+
+        ```
 
 346.    How do you create specific number of copies of a string
 
@@ -5512,6 +5966,9 @@ Cons
 
         //
         'Hello'.repeat(4); // 'HelloHelloHelloHello'
+
+        ```
+
         ```
 
 347.    How do you return all matching strings against a regular expression
@@ -5556,9 +6013,12 @@ Cons
 
         //
         console.log(+'Hello');
+
         ```
 
              The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
+
+        ```
 
 350.    Does javascript uses mixins
 
@@ -5614,6 +6074,7 @@ Cons
         },
         perimeter: () => 2 _ Math.PI \* this.radius
         };
+
         ```
 
              console.log(circle.diameter());
@@ -5622,6 +6083,8 @@ Cons
              **Output:**
 
              The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
+
+        ```
 
 354.    How to remove all line breaks from a string
 
@@ -5633,9 +6096,12 @@ Cons
         function remove_linebreaks( var message ) {
         return message.replace( /[\r\n]+/gm, "" );
         }
+
         ```
 
              In the above expression, g and m are for global and multiline flags.
+
+        ```
 
 355.    What is the difference between reflow and repaint
 
@@ -5649,6 +6115,9 @@ Cons
 
         //
         console.log(![]); // false
+
+        ```
+
         ```
 
 357.    What happens if we add two arrays
@@ -5661,6 +6130,9 @@ Cons
         console.log(['a'] + ['b']); // "ab"
         console.log([] + []); // ""
         console.log(![] + []); // "false", because ![] returns false.
+
+        ```
+
         ```
 
 358.    What is the output of prepend additive operator on falsy values
@@ -5675,6 +6147,9 @@ Cons
         console.log(+false); // 0
         console.log(+NaN); // NaN
         console.log(+''); // 0
+
+        ```
+
         ```
 
 359.    How do you create self string using special characters
@@ -5691,7 +6166,8 @@ Cons
 
         //
         (![] + [] === 'false' + !+[]) === 1;
-        ```
+
+        ````
 
              Now the character pattern would be created as below,
 
@@ -5711,6 +6187,8 @@ Cons
              (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
              ```
 
+        ````
+
 360.    How do you remove falsy values from an array
 
              You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
@@ -5720,6 +6198,9 @@ Cons
         //
         const myArray = [false, null, 1, 5, undefined];
         myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
+
+        ```
+
         ```
 
 361.    How do you get unique values of an array
@@ -5730,6 +6211,9 @@ Cons
 
         //
         console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
+
+        ```
+
         ```
 
 362.    What is destructuring aliases
@@ -5742,6 +6226,9 @@ Cons
         const obj = { x: 1 };
         // Grabs obj.x as as { otherName }
         const { x: otherName } = obj;
+
+        ```
+
         ```
 
 363.    How do you map the array values without using map method
@@ -5773,6 +6260,9 @@ Cons
         //
         let cities = ['Singapore', 'Delhi', 'London'];
         cities.length = 0; // cities becomes []
+
+        ```
+
         ```
 
 365.    How do you rounding numbers to certain decimals
@@ -5784,6 +6274,9 @@ Cons
         //
         let pie = 3.141592653;
         pie = pie.toFixed(3); // 3.142
+
+        ```
+
         ```
 
 366.    What is the easiest way to convert an array to an object
@@ -5796,6 +6289,9 @@ Cons
         var fruits = ['banana', 'apple', 'orange', 'watermelon'];
         var fruitsObject = { ...fruits };
         console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
+
+        ```
+
         ```
 
 367.    How do you create an array with some data
@@ -5807,6 +6303,9 @@ Cons
         //
         var newArray = new Array(5).fill('0');
         console.log(newArray); // ["0", "0", "0", "0", "0"]
+
+        ```
+
         ```
 
 368.    What are the placeholders from console object
@@ -5823,6 +6322,9 @@ Cons
         //
         const user = { name: 'John', id: 1, city: 'Delhi' };
         console.log('Hello %s, your details %o are available in the object form', 'John', user); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
+
+        ```
+
         ```
 
 369.    Is it possible to add CSS to console messages
@@ -5833,12 +6335,15 @@ Cons
 
         //
         console.log('%c The text has blue color, with large font and red background', 'color: blue; font-size: x-large; background: red');
+
         ```
 
              The text will be displayed as below,
              ![Screenshot](images/console-css.png)
 
              **Note:** All CSS styles can be applied to console messages.
+
+        ```
 
 370.    What is the purpose of dir method of console object
 
@@ -5849,10 +6354,13 @@ Cons
         //
         const user = { name: 'John', id: 1, city: 'Delhi' };
         console.dir(user);
+
         ```
 
              The user object displayed in JSON representation
              ![Screenshot](images/console-dir.png)
+
+        ```
 
 371.    Is it possible to debug HTML elements in console
 
@@ -5863,11 +6371,14 @@ Cons
         //
         const element = document.getElementsByTagName('body')[0];
         console.log(element);
+
         ```
 
              It prints the HTML element in the console,
 
              ![Screenshot](images/console-html.png)
+
+        ```
 
 372.    How do you display data in a tabular format using console object
 
@@ -5882,12 +6393,15 @@ Cons
         { name: 'Rod', id: 3, city: 'Paris' }
         ];
         console.table(users);
+
         ```
 
              The data visualized in a table format,
 
              ![Screenshot](images/console-table.png)
              **Not:** Remember that `console.table()` is not supported in IE.
+
+        ```
 
 373.    How do you verify that an argument is a Number or not
 
@@ -5899,6 +6413,9 @@ Cons
         function isNumber(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);
         }
+
+        ```
+
         ```
 
 374.    How do you create copy to clipboard button
@@ -5914,6 +6431,9 @@ Cons
         // Copy to the clipboard
         document.execCommand('copy');
         };
+
+        ```
+
         ```
 
 375.    What is the shortcut to get timestamp
@@ -5925,6 +6445,9 @@ Cons
         //
         console.log(+new Date());
         console.log(Date.now());
+
+        ```
+
         ```
 
 376.    How do you flattening multi dimensional arrays
@@ -5936,7 +6459,8 @@ Cons
         //
         const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
         const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-        ```
+
+        ````
 
              But you can make it work with multi-dimensional arrays by recursive calls,
 
@@ -5949,7 +6473,7 @@ Cons
         }
         const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
         const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-        ```
+        ````
 
 377.    What is the easiest multi condition checking
 
@@ -5966,6 +6490,9 @@ Cons
         if (['first', 1, 'second', 2].indexOf(input) !== -1) {
         someFunction();
         }
+
+        ```
+
         ```
 
 378.    How do you capture browser back button
@@ -5978,6 +6505,9 @@ Cons
         window.onbeforeunload = function () {
         alert('You work will be lost');
         };
+
+        ```
+
         ```
 
 379.    How do you disable right click in the web page
@@ -6075,7 +6605,8 @@ Cons
         console.log(speechToText);
         };
         recognition.start();
-        ```
+
+        ````
 
              In this API, browser is going to ask you for permission to use your microphone
 
@@ -6090,7 +6621,7 @@ Cons
         speech.lang = 'en-US';
         window.speechSynthesis.speak(speech);
         }
-        ```
+        ````
 
              The above examples can be tested on chrome(33+) browser's developer console.
              **Note:** This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
@@ -6111,11 +6642,12 @@ Cons
         }
         setTimeout(runMeFirst, 0);
         console.log('Script loaded');
-        ```
+
+        ````
 
              and the output would be in
 
-             ```bash
+             ```console
              Script loaded
              My script is initialized
              ```
@@ -6130,11 +6662,11 @@ Cons
         }
         runMeFirst();
         console.log('Script loaded');
-        ```
+        ````
 
              and the output is,
 
-             ```bash
+             ```console
              My script is initialized
              Script loaded
              ```
@@ -6171,7 +6703,8 @@ Cons
 
         //
         declare var customLibrary;
-        ```
+
+        ````
 
              In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
 
@@ -6179,7 +6712,7 @@ Cons
 
         //
         var customLibrary: any;
-        ```
+        ````
 
 392.    What are the differences between promises and observables
 
@@ -6274,7 +6807,8 @@ Cons
         return new Function('return a;');
         }
         console.log(createFunction()()); // 100
-        ```
+
+        ````
 
              **Function declaration:**
 
@@ -6289,7 +6823,7 @@ Cons
         };
         }
         console.log(createFunction()()); // 200
-        ```
+        ````
 
 403.    What is a Short circuit condition
 
@@ -6301,7 +6835,8 @@ Cons
         if (authenticate) {
         loginToPorta();
         }
-        ```
+
+        ````
 
              Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
 
@@ -6309,7 +6844,7 @@ Cons
 
         //
         authenticate && loginToPorta();
-        ```
+        ````
 
 404.    What is the easiest way to resize an array
 
@@ -6335,6 +6870,9 @@ Cons
         array.length = 0;
         console.log(array.length); // 0
         console.log(array); // []
+
+        ```
+
         ```
 
 405.    What is an observable
@@ -6398,9 +6936,12 @@ Cons
         console.log(data);
         }
         logger();
+
         ```
 
              It is basically syntax sugar over ES2015 promises and generators.
+
+        ```
 
 408.    How do you prevent promises swallowing errors
 
@@ -6438,7 +6979,8 @@ Cons
         .catch(function (error) {
         console.error(error.stack);
         });
-        ```
+
+        ````
 
                  But it is quite difficult to type for each promise chain and verbose too.
 
@@ -6450,7 +6992,7 @@ Cons
         Promise.resolve('promised value').done(function () {
         throw new Error('error');
         });
-        ```
+        ````
 
                  Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
 
@@ -6464,7 +7006,8 @@ Cons
         .done(function (processed) {
         displayData(processed);
         });
-        ```
+
+        ````
 
                  In future, if the processing library API changed to synchronous then you can remove `done` block as below,
 
@@ -6474,7 +7017,7 @@ Cons
         getDataFromHttp().then(function (result) {
         return displayData(processDataAsync(result));
         });
-        ```
+        ````
 
                  and then you forgot to add `done` block to `then` block leads to silent errors.
 
@@ -6487,7 +7030,8 @@ Cons
         Promise.onPossiblyUnhandledRejection(function (error) {
         throw error;
         });
-        ```
+
+        ````
 
                  and discard a rejection, just handle it with an empty catch
 
@@ -6495,7 +7039,7 @@ Cons
 
         //
         Promise.reject('error value').catch(function () {});
-        ```
+        ````
 
 409.    What is deno
 
@@ -6556,6 +7100,9 @@ Cons
         console.log(iterator.next()); // {value: 2, done: false}
         console.log(iterator.next()); // {value: 3, done: false}
         console.log(iterator.next()); // {value: undefined, done: true}
+
+        ```
+
         ```
 
 411.    What is a Proper Tail Call
@@ -6574,7 +7121,8 @@ Cons
         return n \* factorial(n - 1);
         }
         console.log(factorial(5)); //120
-        ```
+
+        ````
 
              But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
 
@@ -6588,7 +7136,7 @@ Cons
         return factorial(n - 1, n \* acc);
         }
         console.log(factorial(5)); //120
-        ```
+        ````
 
              The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
 
@@ -6683,7 +7231,8 @@ Cons
         yield 3;
         }
         const genObj = myGenFunc();
-        ```
+
+        ````
 
              2. **Generator function expressions:**
 
@@ -6696,7 +7245,7 @@ Cons
         yield 3;
         };
         const genObj = myGenFunc();
-        ```
+        ````
 
              3. **Generator method definitions in object literals:**
 
@@ -6711,7 +7260,8 @@ Cons
         }
         };
         const genObj = myObj.myGeneratorMethod();
-        ```
+
+        ````
 
              4. **Generator method definitions in class:**
 
@@ -6727,7 +7277,7 @@ Cons
         }
         const myObject = new MyClass();
         const genObj = myObject.myGeneratorMethod();
-        ```
+        ````
 
              5. **Generator as a computed property:**
 
@@ -6797,7 +7347,8 @@ Cons
         this.age = age;
         }
         }
-        ```
+
+        ````
 
              But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
 
@@ -6806,7 +7357,7 @@ Cons
         //
         Person.staticAge = 30;
         Person.prototype.prototypeAge = 40;
-        ```
+        ````
 
 420.    What is the difference between isNaN and Number.isNaN?
 
@@ -6820,6 +7371,9 @@ Cons
         //
         isNaN('hello'); // true
         Number.isNaN('hello'); // false
+
+        ```
+
         ```
 
 421.    How to invoke an IIFE without any extra brackets?
@@ -6832,7 +7386,8 @@ Cons
         (function (dt) {
         console.log(dt.toLocaleTimeString());
         })(new Date());
-        ```
+
+        ````
 
              Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
@@ -6842,7 +7397,7 @@ Cons
         void (function (dt) {
         console.log(dt.toLocaleTimeString());
         })(new Date());
-        ```
+        ````
 
 422.    Is that possible to use expressions in switch cases?
 
@@ -6863,6 +7418,9 @@ Cons
         return 'unknown';
         }
         })(10);
+
+        ```
+
         ```
 
 423.    What is the easiest way to ignore promise errors?
@@ -6873,6 +7431,9 @@ Cons
 
         //
         await promise.catch((e) => void e);
+
+        ```
+
         ```
 
 424.    How do style the console output using CSS?
@@ -6883,7 +7444,8 @@ Cons
 
         //
         console.log('%cThis is a red text', 'color:red');
-        ```
+
+        ````
 
              It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
 
@@ -6891,7 +7453,7 @@ Cons
 
         //
         console.log('%cThis is a red text with bigger font', 'color:red; font-size:20px');
-        ```
+        ````
 
 425.    What is nullish coalescing operator (??)?
 
@@ -6903,6 +7465,9 @@ Cons
         console.log(null ?? true); // true
         console.log(false ?? true); // false
         console.log(undefined ?? true); // true
+
+        ```
+
         ```
 
 ### Coding Exercise

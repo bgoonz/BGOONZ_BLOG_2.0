@@ -37,7 +37,9 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/syntax.js')} />
             <script src={withPrefix('js/toPlainText.js')} />
             <script src={withPrefix('js/ukraine.js')} />
+
             <script src={'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js'} />
+            <script src={withPrefix('js/syntax.js')} />
         </React.Fragment>
     ]);
 };
