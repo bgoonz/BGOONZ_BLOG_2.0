@@ -1,3 +1,4 @@
+/* It's a header component that renders a logo, a navbar, and a search bar. */
 import _ from 'lodash';
 import React from 'react';
 import { classNames, Link, withPrefix } from '../utils';

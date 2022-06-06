@@ -1,3 +1,4 @@
+/* Exporting all the components in the folder. */
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
