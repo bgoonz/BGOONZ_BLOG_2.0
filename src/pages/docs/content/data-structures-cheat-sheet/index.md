@@ -596,10 +596,10 @@ array.sort(cb) will turn all values to _string_ then sort it based on it's _unic
 ['a', 'c', 'b', 'f', 'd'].sort(); // (5) ["a", "b", "c", "d", "f"]
 [1, 10, 6, 8, 2, 3, 5].sort(); //(7) [1, 10, 2, 3, 5, 6, 8]
 
-/* 
+/*
 also receive callback function by two arguments:
-    a: previous number 
-    b: next number 
+    a: previous number
+    b: next number
 
 */
 // if callback return NEGATIVE number a will placed before b
@@ -2343,7 +2343,7 @@ function charCount(str: string) {
 
 // *** string.chatCodeAt(i: number) Returns the unicode of value on specified location
 
-/* 
+/*
 numeric (0-9) code > 47 && code < 58;
 upper alpha (A-Z) code > 64 && code < 91;
 lower alpha (a-z) code > 96 && code <123;
@@ -2409,7 +2409,7 @@ map.set(false, 'boolean');
 map.set(() => console.log('Function'), 'Function');
 
 console.log(map);
-/* 
+/*
 0: {Object => "Object"}
 1: {Array(1) => "arr"}
 2: {1 => "number"}
@@ -2422,7 +2422,7 @@ for (let [key, value] of map) console.log(key, value);
 
 // map to arr
 const arr = [...map]; // :[ [key, value] ]
-/* 
+/*
 0: (2) [{…}, "Object"]
 1: (2) [Array(1), "arr"]
 2: (2) [1, "number"]
