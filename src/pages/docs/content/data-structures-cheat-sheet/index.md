@@ -33,7 +33,7 @@ In Queue for Enqueue, Dequeue & Peek operations it takes only Constant time.
 
 ![Image for post](https://miro.medium.com/max/3942/1*amq4OYYapQjaN2QXIG5eUw.png)
 
-Here we are considering we are using tails for all single linked lists (Some implementations might not have it).  
+Here we are considering we are using tails for all single linked lists (Some implementations might not have it).
 Linked List is the data structure that comes with a lot of different operational scenarios, we have to think about head & tail usage in every operation we are doing. And operation logic and complexity changes at the head, tail, and middle. Typically insertion at head & tail takes constant time and insertion in middle takes linear time. Search can take linear time. Deletion at the head takes constant time and it can take linear time in remaining scenarios.
 
 ---
@@ -98,7 +98,7 @@ Depending on how nodes are arranged in a binary tree, it can be **full**, **comp
 
 Look at these examples:
 
-![bin tree](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg 'Full vs. Complete vs. Perfect Binary Tree')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg 'Full vs. Complete vs. Perfect Binary Tree')
 
 These properties are not always mutually exclusive. You can have more than one:
 
@@ -108,7 +108,7 @@ These properties are not always mutually exclusive. You can have more than one:
     -   Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
 -   A full tree is not always complete and perfect.
 
-## [bin search](#Binary-Search-Tree-BST 'Binary Search Tree (BST)')Binary Search Tree (BST)
+## [](#Binary-Search-Tree-BST 'Binary Search Tree (BST)')Binary Search Tree (BST)
 
 Binary Search Trees or BST for short are a particular application of binary trees. BST has at most two nodes (like all binary trees). However, the values are in such a way that the left children value must be less than the parent, and the right children is must be higher.
 
