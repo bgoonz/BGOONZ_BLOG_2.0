@@ -3,17 +3,13 @@ title: Archive
 weight: 0
 excerpt: more tools that I have created or collaborated on.
 seo:
-    title: ''
+    title: 'Resource Archive'
     description: 'embeded developer tools and utilities'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
-
-
-
-
 
 <br>
 <br>
@@ -25,24 +21,29 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://resourcerepo2.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://resourcerepo2.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 
 <br>
 <h1> Google Drive</h1>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;">
+</iframe>
+<br>
 
-
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 
@@ -53,7 +54,9 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://archive.org/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://archive.org/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 <br>
 <br>
 <br>
@@ -64,16 +67,20 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://lambda-resources.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://lambda-resources.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -84,16 +91,20 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://bgoonz.github.io/bass-station/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz.github.io/bass-station/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -108,17 +119,8 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br><br>
-<br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <br>
 
 <br>
@@ -127,46 +129,57 @@ template: docs
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <h1>   Speach Recognition api </h1>
 <br>
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://random-static-html-deploys.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
 <br>
 <br>
-
-
-
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://thealgorithms.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
 <br>
 <br>
-
-
-
 
 <br>
 <br>
@@ -178,11 +191,14 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://markdown-templates-42.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -193,7 +209,9 @@ template: docs
 <br>
 <br>
 <br>
-<iframe  class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  class="block-content" src="https://bgoonz.github.io/everything-curl/index.html" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 <br>
 <br>
 <br>
@@ -204,16 +222,20 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://devtools42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -223,16 +245,20 @@ template: docs
 <br>
 <br>
 <br>
-<iframe src="https://ternary42.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://ternary42.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -243,16 +269,20 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://githtmlpreview.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://githtmlpreview.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -263,13 +293,16 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://fourm-builder-gui.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://fourm-builder-gui.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -280,16 +313,20 @@ template: docs
 <br>
 <br>
 
-<iframe  src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://codepen.io/bgoonz/embed/zYwLVmb?default-tab=html%2Cresult" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
@@ -304,7 +341,8 @@ template: docs
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
 <br>
 <br>
 
@@ -315,7 +353,9 @@ template: docs
 <br>
 <br>
 
-<iframe src="https://web-dev-resource-hub.netlify.app/" height="1000px" width="1200px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://web-dev-resource-hub.netlify.app/" height="800px" width="800px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<br>
 <br>
 <br>
 <br>

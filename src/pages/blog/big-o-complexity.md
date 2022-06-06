@@ -46,7 +46,8 @@ Space Complexity: O(1)
 
 - _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
 
-<https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053><https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54>
+<https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053>
+<https://gist.github.com/eengineergz/80934783c628c70ac2a5a48119a82d54>
 
 - _Worst Case & Best Case are always the same because it makes nested loops._
 -
@@ -102,7 +103,8 @@ Time Complexity: Log Linear O(nlog(n))
 
 ### Example of Merge Sort
 
-<https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48><https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64>
+<https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48>
+<https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64>
 
 - **Merge sort is O(nlog(n)) time.**
 -
@@ -148,7 +150,8 @@ Space Complexity: O(1)
 
 > _Min Max Solution_
 
-<https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751><https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a>
+<https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751>
+<https://gist.github.com/eengineergz/bc3f576b9795ccef12a108e36f9f820a>
 
 - _Must be conducted on a sorted array._
 -

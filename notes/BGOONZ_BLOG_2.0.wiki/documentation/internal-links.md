@@ -1,10 +1,6 @@
-
 <details>
 
-
-<summary>  Website Links </summary>   
-
-
+<summary>  Website Links </summary>
 
 https://bgoonz-blog.netlify.app/
 https://bgoonz-blog.netlify.app/admin
@@ -344,7 +340,5 @@ https://bgoonz-blog.netlify.app/interview-questions-js
 https://bgoonz-blog.netlify.app/privacy-policy
 https://bgoonz-blog.netlify.app/readme
 https://bgoonz-blog.netlify.app/showcase
-
-
 
 </details>

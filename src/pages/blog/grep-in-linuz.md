@@ -4,14 +4,14 @@ template: post
 subtitle: command line utility for printing lines that match a pattern
 excerpt: command line utility for printing lines that match a pattern
 date: 2022-04-19T06:21:57.572Z
-image: https://1.bp.blogspot.com/-Bd6UkevpE9o/X5GNNIc9iwI/AAAAAAAAj6k/ciCEemUfk4YMbLbCRdIiX7DZkUTzdskOQCLcBGAsYHQ/w400-h246/grep%2Bcommand%2Bexample%2Bin%2BLinux.png
-thumb_image: https://1.bp.blogspot.com/-Bd6UkevpE9o/X5GNNIc9iwI/AAAAAAAAj6k/ciCEemUfk4YMbLbCRdIiX7DZkUTzdskOQCLcBGAsYHQ/w400-h246/grep%2Bcommand%2Bexample%2Bin%2BLinux.png
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/linux.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/linux.png?raw=true
 image_position: left
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/tools.yaml
+    - src/data/categories/tools.yaml
 tags:
-  - src/data/tags/linux.yaml
+    - src/data/tags/linux.yaml
 show_author_bio: true
 cmseditable: true
 ---
