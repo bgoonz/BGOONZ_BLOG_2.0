@@ -1,3 +1,5 @@
+
+
 root_docs_path: /docs
 sections:
     - about
@@ -7,24 +9,22 @@ sections:
     - community
     - content
     - css
-    - docs
     - ds-algo
+    - docs
     - faq
-    - general-structured-data-guidelines
     - git
-    - glossary
     - interact
     - javascript
     - js-tips
+    - interview
     - leetcode
-    - netlify-cms
-    - netlify-cms-jamstack
     - overflow
     - projects
     - python
     - quick-ref
     - react
     - reference
-    - tips
     - tools
+    - tips
     - tutorials
+    - typescript

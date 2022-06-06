@@ -1,33 +1,15 @@
-<<<<<<< HEAD
 iframe {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  list-style: none;
-  overflow: scroll;
-  resize: both;
-  margin: 0;
-  padding: 2em;
-  z-index: -1 !important;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    overflow: scroll;
+    resize: both;
+    margin: 0;
+    padding: 2em;
+    z-index: -1 !important;
 }
 
 #sb-search-input-example {
-  z-index: 100;
+    z-index: 100;
 }
-=======
-iframe {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  list-style: none;
-  overflow: scroll;
-  resize: both;
-  margin: 0;
-  padding: 2em;
-  z-index: -1 !important;
-}
-
-#sb-search-input-example {
-  z-index: 100;
-}
->>>>>>> eb4e776211cb70e9dd66aac61069ac7a52f1de84
