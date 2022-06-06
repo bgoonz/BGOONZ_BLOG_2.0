@@ -1,9 +1,10 @@
 ---
 title: React Dev Tools Profiler
 template: docs
-excerpt: "DevTools will show a “Profiler” tab for applications that support the
-  new profiling API:"
+excerpt: 'DevTools will show a “Profiler” tab for applications that support the
+    new profiling API:'
 ---
+
 <!--StartFragment-->
 
 ## Profiling an application
@@ -32,8 +33,8 @@ Assuming your application rendered at least once while profiling, DevTools will 
 
 Conceptually, React does work in two phases:
 
-* The **render** phase determines what changes need to be made to e.g. the DOM. During this phase, React calls `render` and then compares the result to the previous render.
-* The **commit** phase is when React applies any changes. (In the case of React DOM, this is when React inserts, updates, and removes DOM nodes.) React also calls lifecycles like `componentDidMount` and `componentDidUpdate` during this phase.
+-   The **render** phase determines what changes need to be made to e.g. the DOM. During this phase, React calls `render` and then compares the result to the previous render.
+-   The **commit** phase is when React applies any changes. (In the case of React DOM, this is when React inserts, updates, and removes DOM nodes.) React also calls lifecycles like `componentDidMount` and `componentDidUpdate` during this phase.
 
 The DevTools profiler groups performance info by commit. Commits are displayed in a bar chart near the top of the profiler:
 
@@ -140,7 +141,5 @@ Sometimes a commit may be so fast that `performance.now()` doesn’t give DevT
 ## [](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html#deep-dive-video)Deep dive video
 
 The following video demonstrates how the React profiler can be used to detect and improve performance bottlenecks in an actual React application.
-
-
 
 <!--EndFragment-->
