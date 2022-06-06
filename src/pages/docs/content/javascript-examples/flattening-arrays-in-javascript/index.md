@@ -2,8 +2,9 @@
 title: Flattening arrays in JavaScript
 template: docs
 excerpt: Flattening arrays may not be an everyday need but, it is still an
-  important need enough to be part of most utility libraries in JavaScript.
+    important need enough to be part of most utility libraries in JavaScript.
 ---
+
 <!--StartFragment-->
 
 # Flattening arrays in JavaScript
