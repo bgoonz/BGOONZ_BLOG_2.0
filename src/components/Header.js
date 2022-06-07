@@ -90,12 +90,20 @@ export default class Header extends React.Component {
                             left: '200px'
                         }
                 }>
-                    <div className="sb-search-icon sb-search sb-input sb-hero" id="myCustomSearchButtonID">
-                        <input className="sb-search-field" name="pesquisa" placeholder="Type your search..." type="search" autoComplete="on" id="myCustomTextInputID"/>
-                        <i className="sb-icon"></i>
+                    <div className="sb-content sb-hero">
+                        <div className="sb-search sb-hero">
+                            <div className="sb-input">
+                                <input className="sb-search-field" name="pesquisa" placeholder="Type your search..." type="search" autoComplete="on" id="myCustomTextInputID"/>
+                                <div className="sb-search-icon" id="myCustomSearchButtonID">
+                                    <i className="sb-icon"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+<div id="search"></div>
                 </div>
             </>
+
             <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                 <svg aria-hidden="true"
                     width={30}
