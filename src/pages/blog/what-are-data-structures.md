@@ -10,8 +10,8 @@ excerpt: Data structures, at a high level, are techniques for storing and
   structures determine how data is collected, the functions we can use to access
   it, and the relationships between data.
 date: 2022-06-07T06:06:13.244Z
-image: https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830
-thumb_image: https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830
+image: https://i.imgur.com/zaS4mm7.png
+thumb_image: https://i.imgur.com/zaS4mm7.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
