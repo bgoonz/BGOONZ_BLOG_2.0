@@ -34,6 +34,7 @@ export default class Body extends React.Component {
                     <meta property="twitter:card" content="summary_large_image"/>
                     <link href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png" rel="apple-touch-icon"/>
                     <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet"/>
+                    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
                     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
                     <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
                     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
@@ -96,7 +97,7 @@ export default class Body extends React.Component {
                 <div id="page" className="site">
                     <Header {...this.props}/>
                     <main id="content" className="site-content">
-                  
+                
                         {
                         this.props.children
                     } </main>
@@ -104,6 +105,8 @@ export default class Body extends React.Component {
 
 
                 </div>
+< div id = "search" > </div>
+
             </React.Fragment>
         );
     }
