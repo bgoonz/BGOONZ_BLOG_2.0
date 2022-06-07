@@ -3,31 +3,31 @@
 root_docs_path: /docs
 sections:
     - about
-    - archive
-    - articles
-    - audio
+    - archive📁
+    - articles🚛
+    - audio🔊
     - career
     - community
-    - content
+    - content📁
     - css
-    - ds-algo
+    - ds-algo🖧
     - docs
     - faq
     - fetch-api
-    - git
+    - git📁
     - interact
     - javascript
     - js-tips
     - interview
     - leetcode
     - netlify-cms-jamstack
-    - overflow
-    - projects
-    - python
+    - overflow🌊
+    - projects📽️
+    - python🐍
     - quick-ref
-    - react
-    - reference
-    - tools
+    - react⚛️
+    - reference📚
+    - tools🧰
     - tips
     - tutorials
-    - typescript
+    - typescript<Ty>
