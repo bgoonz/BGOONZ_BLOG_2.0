@@ -63,11 +63,178 @@ As we saw earlier, a tree node is just a data structure that has a value and has
 
 Here's an example of a tree node:
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></pre></td><td><pre><span><span><span>class</span> <span>TreeNode</span> </span>{</span><br><span>  <span>constructor</span>(value) {</span><br><span>    <span>this</span>.value = value;</span><br><span>    <span>this</span>.descendents = [];</span><br><span>  }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>
+<span>
+<span>class
+</span> <span>TreeNode
+</span>
+</span>{
+</span>
+<br>
+<span>  <span>constructor
+</span>(value) {
+</span>
+<br>
+<span>    <span>this
+</span>.value = value;
+</span>
+<br>
+<span>    <span>this
+</span>.descendents = [];
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 We can create a tree with 3 descendents as follows:
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></pre></td><td><pre><span></span><br><span><span>const</span> abe = <span>new</span> TreeNode(<span>'Abe'</span>);</span><br><span><span>const</span> homer = <span>new</span> TreeNode(<span>'Homer'</span>);</span><br><span><span>const</span> bart = <span>new</span> TreeNode(<span>'Bart'</span>);</span><br><span><span>const</span> lisa = <span>new</span> TreeNode(<span>'Lisa'</span>);</span><br><span><span>const</span> maggie = <span>new</span> TreeNode(<span>'Maggie'</span>);</span><br><span></span><br><span></span><br><span>abe.descendents.push(homer);</span><br><span>homer.descendents.push(bart, lisa, maggie);</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>
+
+</span>
+<br>
+<span>
+<span>const
+</span> abe = <span>new
+</span> TreeNode(<span>'Abe'
+</span>);
+</span>
+<br>
+<span>
+<span>const
+</span> homer = <span>new
+</span> TreeNode(<span>'Homer'
+</span>);
+</span>
+<br>
+<span>
+<span>const
+</span> bart = <span>new
+</span> TreeNode(<span>'Bart'
+</span>);
+</span>
+<br>
+<span>
+<span>const
+</span> lisa = <span>new
+</span> TreeNode(<span>'Lisa'
+</span>);
+</span>
+<br>
+<span>
+<span>const
+</span> maggie = <span>new
+</span> TreeNode(<span>'Maggie'
+</span>);
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>abe.descendents.push(homer);
+</span>
+<br>
+<span>homer.descendents.push(bart, lisa, maggie);
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 That's all; we have a tree data structure!
 
@@ -127,13 +294,376 @@ Here's the tree node. Very similar to what we did before, but we added some hand
 
 TreeNode.js[Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/tree-node.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br></pre></td><td><pre><span><span>const</span> LEFT = <span>0</span>;</span><br><span><span>const</span> RIGHT = <span>1</span>;</span><br><span></span><br><span><span><span>class</span> <span>TreeNode</span> </span>{</span><br><span>  <span>constructor</span>(value) {</span><br><span>    <span>this</span>.value = value;</span><br><span>    <span>this</span>.descendents = [];</span><br><span>    <span>this</span>.parent = <span>null</span>;</span><br><span>  }</span><br><span></span><br><span>  <span>get</span> <span>left</span>() {</span><br><span>    <span>return</span> <span>this</span>.descendents[LEFT];</span><br><span>  }</span><br><span></span><br><span>  <span>set</span> <span>left</span>(<span>node</span>) {</span><br><span>    <span>this</span>.descendents[LEFT] = node;</span><br><span>    <span>if</span> (node) {</span><br><span>      node.parent = <span>this</span>;</span><br><span>    }</span><br><span>  }</span><br><span></span><br><span>  <span>get</span> <span>right</span>() {</span><br><span>    <span>return</span> <span>this</span>.descendents[RIGHT];</span><br><span>  }</span><br><span></span><br><span>  <span>set</span> <span>right</span>(<span>node</span>) {</span><br><span>    <span>this</span>.descendents[RIGHT] = node;</span><br><span>    <span>if</span> (node) {</span><br><span>      node.parent = <span>this</span>;</span><br><span>    }</span><br><span>  }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+<span>13
+</span>
+<br>
+<span>14
+</span>
+<br>
+<span>15
+</span>
+<br>
+<span>16
+</span>
+<br>
+<span>17
+</span>
+<br>
+<span>18
+</span>
+<br>
+<span>19
+</span>
+<br>
+<span>20
+</span>
+<br>
+<span>21
+</span>
+<br>
+<span>22
+</span>
+<br>
+<span>23
+</span>
+<br>
+<span>24
+</span>
+<br>
+<span>25
+</span>
+<br>
+<span>26
+</span>
+<br>
+<span>27
+</span>
+<br>
+<span>28
+</span>
+<br>
+<span>29
+</span>
+<br>
+<span>30
+</span>
+<br>
+<span>31
+</span>
+<br>
+<span>32
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>
+<span>const
+</span> LEFT = <span>0
+</span>;
+</span>
+<br>
+<span>
+<span>const
+</span> RIGHT = <span>1
+</span>;
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>
+<span>
+<span>class
+</span> <span>TreeNode
+</span>
+</span>{
+</span>
+<br>
+<span>  <span>constructor
+</span>(value) {
+</span>
+<br>
+<span>    <span>this
+</span>.value = value;
+</span>
+<br>
+<span>    <span>this
+</span>.descendents = [];
+</span>
+<br>
+<span>    <span>this
+</span>.parent = <span>null
+</span>;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>get
+</span> <span>left
+</span>() {
+</span>
+<br>
+<span>    <span>return
+</span> <span>this
+</span>.descendents[LEFT];
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>set
+</span> <span>left
+</span>(<span>node
+</span>) {
+</span>
+<br>
+<span>    <span>this
+</span>.descendents[LEFT] = node;
+</span>
+<br>
+<span>    <span>if
+</span> (node) {
+</span>
+<br>
+<span>      node.parent = <span>this
+</span>;
+</span>
+<br>
+<span>    }
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>get
+</span> <span>right
+</span>() {
+</span>
+<br>
+<span>    <span>return
+</span> <span>this
+</span>.descendents[RIGHT];
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>set
+</span> <span>right
+</span>(<span>node
+</span>) {
+</span>
+<br>
+<span>    <span>this
+</span>.descendents[RIGHT] = node;
+</span>
+<br>
+<span>    <span>if
+</span> (node) {
+</span>
+<br>
+<span>      node.parent = <span>this
+</span>;
+</span>
+<br>
+<span>    }
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Ok, so far we can add a left and right child. Now, let's do the BST class that enforces the `left < parent < right` rule.
 
 BinarySearchTree.js linkUrl linkText
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></pre></td><td><pre><span></span><br><span><span><span>class</span> <span>BinarySearchTree</span> </span>{</span><br><span>  <span>constructor</span>() {</span><br><span>    <span>this</span>.root = <span>null</span>;</span><br><span>    <span>this</span>.size = <span>0</span>;</span><br><span>  }</span><br><span></span><br><span>  add(value) {  }</span><br><span>  find(value) {  }</span><br><span>  remove(value) {  }</span><br><span>  getMax() {  }</span><br><span>  getMin() {  }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+<span>13
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>
+
+</span>
+<br>
+<span>
+<span>
+<span>class
+</span> <span>BinarySearchTree
+</span>
+</span>{
+</span>
+<br>
+<span>  <span>constructor
+</span>() {
+</span>
+<br>
+<span>    <span>this
+</span>.root = <span>null
+</span>;
+</span>
+<br>
+<span>    <span>this
+</span>.size = <span>0
+</span>;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  add(value) {  }
+</span>
+<br>
+<span>  find(value) {  }
+</span>
+<br>
+<span>  remove(value) {  }
+</span>
+<br>
+<span>  getMax() {  }
+</span>
+<br>
+<span>  getMin() {  }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Let's implementing insertion.
 
@@ -153,13 +683,280 @@ We can implement insert as follows:
 
 BinarySearchTree.prototype.add[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L11)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br></pre></td><td><pre><span>add(value) {</span><br><span>  <span>const</span> newNode = <span>new</span> TreeNode(value);</span><br><span></span><br><span>  <span>if</span> (<span>this</span>.root) {</span><br><span>    <span>const</span> { found, parent } = <span>this</span>.findNodeAndParent(value);</span><br><span>    <span>if</span> (found) { </span><br><span>      found.meta.multiplicity = (found.meta.multiplicity || <span>1</span>) + <span>1</span>;</span><br><span>    } <span>else</span> <span>if</span> (value &lt; parent.value) {</span><br><span>      parent.left = newNode;</span><br><span>    } <span>else</span> {</span><br><span>      parent.right = newNode;</span><br><span>    }</span><br><span>  } <span>else</span> {</span><br><span>    <span>this</span>.root = newNode;</span><br><span>  }</span><br><span></span><br><span>  <span>this</span>.size += <span>1</span>;</span><br><span>  <span>return</span> newNode;</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+<span>13
+</span>
+<br>
+<span>14
+</span>
+<br>
+<span>15
+</span>
+<br>
+<span>16
+</span>
+<br>
+<span>17
+</span>
+<br>
+<span>18
+</span>
+<br>
+<span>19
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>add(value) {
+</span>
+<br>
+<span>  <span>const
+</span> newNode = <span>new
+</span> TreeNode(value);
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>if
+</span> (<span>this
+</span>.root) {
+</span>
+<br>
+<span>    <span>const
+</span> { found, parent } = <span>this
+</span>.findNodeAndParent(value);
+</span>
+<br>
+<span>    <span>if
+</span> (found) {
+</span>
+<br>
+<span>      found.meta.multiplicity = (found.meta.multiplicity || <span>1
+</span>) + <span>1
+</span>;
+</span>
+<br>
+<span>    } <span>else
+</span> <span>if
+</span> (value &lt; parent.value) {
+</span>
+<br>
+<span>      parent.left = newNode;
+</span>
+<br>
+<span>    } <span>else
+</span> {
+</span>
+<br>
+<span>      parent.right = newNode;
+</span>
+<br>
+<span>    }
+</span>
+<br>
+<span>  } <span>else
+</span> {
+</span>
+<br>
+<span>    <span>this
+</span>.root = newNode;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>this
+</span>.size += <span>1
+</span>;
+</span>
+<br>
+<span>  <span>return
+</span> newNode;
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 We are using a helper function called `findNodeAndParent`. If we found that the node already exists in the tree, then we increase the `multiplicity` counter. Let's see how this function is implemented:
 
 BinarySearchTree.prototype.findNodeAndParent[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L44)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></pre></td><td><pre><span>findNodeAndParent(value) {</span><br><span>  <span>let</span> node = <span>this</span>.root;</span><br><span>  <span>let</span> parent;</span><br><span></span><br><span>  <span>while</span> (node) {</span><br><span>    <span>if</span> (node.value === value) {</span><br><span>      <span>break</span>;</span><br><span>    }</span><br><span>    parent = node;</span><br><span>    node = ( value &gt;= node.value) ? node.right : node.left;</span><br><span>  }</span><br><span></span><br><span>  <span>return</span> { <span>found</span>: node, parent };</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+<span>13
+</span>
+<br>
+<span>14
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>findNodeAndParent(value) {
+</span>
+<br>
+<span>  <span>let
+</span> node = <span>this
+</span>.root;
+</span>
+<br>
+<span>  <span>let
+</span> parent;
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>while
+</span> (node) {
+</span>
+<br>
+<span>    <span>if
+</span> (node.value === value) {
+</span>
+<br>
+<span>      <span>break
+</span>;
+</span>
+<br>
+<span>    }
+</span>
+<br>
+<span>    parent = node;
+</span>
+<br>
+<span>    node = ( value &gt;= node.value) ? node.right : node.left;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>return
+</span> { <span>found
+</span>: node, parent };
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 `findNodeAndParent` goes through the tree searching for the value. It starts at the root (line 2) and then goes left or right based on the value (line 10). If the value already exists, it will return the node `found` and also the parent. In case that the node doesn't exist, we still return the `parent`.
 
@@ -169,31 +966,293 @@ We know how to insert and search for value. Now, we are going to implement the d
 
 **Deleting a leaf node (0 children)**
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></pre></td><td><pre><span>    30                             30</span><br><span> /     \         remove(12)     /     \</span><br><span>10      40       ---------&gt;    10      40</span><br><span>  \    /  \                      \    /  \</span><br><span>  15  35   50                    15  35   50</span><br><span>  /</span><br><span>12*</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>    30                             30
+</span>
+<br>
+<span> /     \         remove(12)     /     \
+</span>
+<br>
+<span>10      40       ---------&gt;    10      40
+</span>
+<br>
+<span>  \    /  \                      \    /  \
+</span>
+<br>
+<span>  15  35   50                    15  35   50
+</span>
+<br>
+<span>  /
+</span>
+<br>
+<span>12*
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 We just remove the reference from node's parent (15) to be null.
 
 **Deleting a node with one child.**
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>    30                              30</span><br><span> /     \         remove(10)      /     \</span><br><span>10*     40       ---------&gt;     15      40</span><br><span>  \    /  \                            /  \</span><br><span>  15  35   50                         35   50</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>    30                              30
+</span>
+<br>
+<span> /     \         remove(10)      /     \
+</span>
+<br>
+<span>10*     40       ---------&gt;     15      40
+</span>
+<br>
+<span>  \    /  \                            /  \
+</span>
+<br>
+<span>  15  35   50                         35   50
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 In this case, we go to the parent (30) and replace the child (10), with a child's child (15).
 
 **Deleting a node with two children**
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>    30                              30</span><br><span> /     \         remove(40)      /     \</span><br><span>15      40*      ---------&gt;     15      50</span><br><span>       /  \                            /</span><br><span>      35   50                         35</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>    30                              30
+</span>
+<br>
+<span> /     \         remove(40)      /     \
+</span>
+<br>
+<span>15      40*      ---------&gt;     15      50
+</span>
+<br>
+<span>       /  \                            /
+</span>
+<br>
+<span>      35   50                         35
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 We are removing node 40, that has two children (35 and 50). We replace the parent's (30) child (40) with the child's right child (50). Then we keep the left child (35) in the same place it was before, so we have to make it the left child of 50.
 
 Another way to do it to remove node 40, is to move the left child (35) up and then keep the right child (50) where it was.
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>    30</span><br><span> /     \</span><br><span>15      35</span><br><span>          \</span><br><span>           50</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>    30
+</span>
+<br>
+<span> /     \
+</span>
+<br>
+<span>15      35
+</span>
+<br>
+<span>          \
+</span>
+<br>
+<span>           50
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Either way is ok as long as you keep the binary search tree property: `left < parent < right`.
 
 **Deleting the root.**
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>   30*                            50</span><br><span> /     \       remove(30)      /     \</span><br><span>15      50     ---------&gt;     15      35</span><br><span>       /</span><br><span>      35</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>   30*                            50
+</span>
+<br>
+<span> /     \       remove(30)      /     \
+</span>
+<br>
+<span>15      50     ---------&gt;     15      35
+</span>
+<br>
+<span>       /
+</span>
+<br>
+<span>      35
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Deleting the root is very similar to removing nodes with 0, 1, or 2 children that we discussed earlier. The only difference is that afterward, we need to update the reference of the root of the tree.
 
@@ -207,7 +1266,193 @@ Now that we have a good idea how it should work, let's implement it:
 
 BinarySearchTree.prototype.remove[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L89)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br></pre></td><td><pre><span>remove(value) {</span><br><span>  <span>const</span> nodeToRemove = <span>this</span>.find(value);</span><br><span>  <span>if</span> (!nodeToRemove) <span>return</span> <span>false</span>;</span><br><span></span><br><span>  </span><br><span>  <span>const</span> nodeToRemoveChildren = <span>this</span>.combineLeftIntoRightSubtree(nodeToRemove);</span><br><span></span><br><span>  <span>if</span> (nodeToRemove.meta.multiplicity &amp;&amp; nodeToRemove.meta.multiplicity &gt; <span>1</span>) {</span><br><span>    nodeToRemove.meta.multiplicity -= <span>1</span>; </span><br><span>  } <span>else</span> <span>if</span> (nodeToRemove === <span>this</span>.root) {</span><br><span>    </span><br><span>    <span>this</span>.root = nodeToRemoveChildren;</span><br><span>    <span>this</span>.root.parent = <span>null</span>; </span><br><span>  } <span>else</span> {</span><br><span>    <span>const</span> side = nodeToRemove.isParentLeftChild ? <span>'left'</span> : <span>'right'</span>;</span><br><span>    <span>const</span> { parent } = nodeToRemove; </span><br><span>    </span><br><span>    parent[side] = nodeToRemoveChildren;</span><br><span>  }</span><br><span></span><br><span>  <span>this</span>.size -= <span>1</span>;</span><br><span>  <span>return</span> <span>true</span>;</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+<span>13
+</span>
+<br>
+<span>14
+</span>
+<br>
+<span>15
+</span>
+<br>
+<span>16
+</span>
+<br>
+<span>17
+</span>
+<br>
+<span>18
+</span>
+<br>
+<span>19
+</span>
+<br>
+<span>20
+</span>
+<br>
+<span>21
+</span>
+<br>
+<span>22
+</span>
+<br>
+<span>23
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>remove(value) {
+</span>
+<br>
+<span>  <span>const
+</span> nodeToRemove = <span>this
+</span>.find(value);
+</span>
+<br>
+<span>  <span>if
+</span> (!nodeToRemove) <span>return
+</span> <span>false
+</span>;
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  
+</span>
+<br>
+<span>  <span>const
+</span> nodeToRemoveChildren = <span>this
+</span>.combineLeftIntoRightSubtree(nodeToRemove);
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>if
+</span> (nodeToRemove.meta.multiplicity &amp;&amp; nodeToRemove.meta.multiplicity &gt; <span>1
+</span>) {
+</span>
+<br>
+<span>    nodeToRemove.meta.multiplicity -= <span>1
+</span>;
+</span>
+<br>
+<span>  } <span>else
+</span> <span>if
+</span> (nodeToRemove === <span>this
+</span>.root) {
+</span>
+<br>
+<span>
+</span>
+<br>
+<span>    <span>this
+</span>.root = nodeToRemoveChildren;
+</span>
+<br>
+<span>    <span>this
+</span>.root.parent = <span>null
+</span>;
+</span>
+<br>
+<span>  } <span>else
+</span> {
+</span>
+<br>
+<span>    <span>const
+</span> side = nodeToRemove.isParentLeftChild ? <span>'left'
+</span> : <span>'right'
+</span>;
+</span>
+<br>
+<span>    <span>const
+</span> { parent } = nodeToRemove;
+</span>
+<br>
+<span>
+</span>
+<br>
+<span>    parent[side] = nodeToRemoveChildren;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>this
+</span>.size -= <span>1
+</span>;
+</span>
+<br>
+<span>  <span>return
+</span> <span>true
+</span>;
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Here are some highlights of the implementation:
 
@@ -219,11 +1464,146 @@ The function that combines left into right subtree is the following:
 
 BinarySearchTree.prototype.combineLeftIntoRightSubtree[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js#L89)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></pre></td><td><pre><span>combineLeftIntoRightSubtree(node) {</span><br><span>  <span>if</span> (node.right) {</span><br><span>    <span>const</span> leftmost = <span>this</span>.getLeftmost(node.right);</span><br><span>    leftmost.left = node.left;</span><br><span>    <span>return</span> node.right;</span><br><span>  }</span><br><span>  <span>return</span> node.left;</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>combineLeftIntoRightSubtree(node) {
+</span>
+<br>
+<span>  <span>if
+</span> (node.right) {
+</span>
+<br>
+<span>    <span>const
+</span> leftmost = <span>this
+</span>.getLeftmost(node.right);
+</span>
+<br>
+<span>    leftmost.left = node.left;
+</span>
+<br>
+<span>    <span>return
+</span> node.right;
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>  <span>return
+</span> node.left;
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 For instance, let's say that we want to combine the following tree and we are about to delete node `30`. We want to mix 30's left subtree into the right one. The result is this:
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></pre></td><td><pre><span>   30*                             40</span><br><span> /     \                          /  \</span><br><span>10      40    combine(30)       35   50</span><br><span>  \    /  \   -----------&gt;      /</span><br><span>  15  35   50                  10</span><br><span>                                \</span><br><span>                                 15</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>   30*                             40
+</span>
+<br>
+<span> /     \                          /  \
+</span>
+<br>
+<span>10      40    combine(30)       35   50
+</span>
+<br>
+<span>  \    /  \   -----------&gt;      /
+</span>
+<br>
+<span>  15  35   50                  10
+</span>
+<br>
+<span>                                \
+</span>
+<br>
+<span>                                 15
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Now, and if we make the new subtree the root, then node `30` is no more!
 
@@ -237,11 +1617,131 @@ In-order traversal visit nodes on this order: left, parent, right.
 
 BinarySearchTree.prototype.inOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*inOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.left); }</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.inOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>*inOrderTraversal(node = <span>this
+</span>.root) {
+</span>
+<br>
+<span>  <span>if
+</span> (node.left) { <span>yield
+</span>* <span>this
+</span>.inOrderTraversal(node.left); }
+</span>
+<br>
+<span>  <span>yield
+</span> node;
+</span>
+<br>
+<span>  <span>if
+</span> (node.right) { <span>yield
+</span>* <span>this
+</span>.inOrderTraversal(node.right); }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Let's use this tree to make the example:
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></pre></td><td><pre><span>         10</span><br><span>       /    \</span><br><span>      5      30</span><br><span>    /       /  \</span><br><span>   4       15   40</span><br><span> /</span><br><span>3</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>         10
+</span>
+<br>
+<span>       /    \
+</span>
+<br>
+<span>      5      30
+</span>
+<br>
+<span>    /       /  \
+</span>
+<br>
+<span>   4       15   40
+</span>
+<br>
+<span> /
+</span>
+<br>
+<span>3
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 In-order traversal would print out the following values: `3, 4, 5, 10, 15, 30, 40`. If the tree is a BST, then the nodes will be sorted in ascendent order as in our example.
 
@@ -251,7 +1751,65 @@ Post-order traversal visit nodes on this order: left, right, parent.
 
 BinarySearchTree.prototype.postOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*postOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.postOrderTraversal(node.right); }</span><br><span>  <span>yield</span> node;</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>*postOrderTraversal(node = <span>this
+</span>.root) {
+</span>
+<br>
+<span>  <span>if
+</span> (node.left) { <span>yield
+</span>* <span>this
+</span>.postOrderTraversal(node.left); }
+</span>
+<br>
+<span>  <span>if
+</span> (node.right) { <span>yield
+</span>* <span>this
+</span>.postOrderTraversal(node.right); }
+</span>
+<br>
+<span>  <span>yield
+</span> node;
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Post-order traversal would print out the following values: `3, 4, 5, 15, 40, 30, 10`.
 
@@ -261,13 +1819,174 @@ In-order traversal visit nodes on this order: parent, left, right.
 
 BinarySearchTree.prototype.preOrderTraversal[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>*preOrderTraversal(node = <span>this</span>.root) {</span><br><span>  <span>yield</span> node;</span><br><span>  <span>if</span> (node.left) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.left); }</span><br><span>  <span>if</span> (node.right) { <span>yield</span>* <span>this</span>.preOrderTraversal(node.right); }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>*preOrderTraversal(node = <span>this
+</span>.root) {
+</span>
+<br>
+<span>  <span>yield
+</span> node;
+</span>
+<br>
+<span>  <span>if
+</span> (node.left) { <span>yield
+</span>* <span>this
+</span>.preOrderTraversal(node.left); }
+</span>
+<br>
+<span>  <span>if
+</span> (node.right) { <span>yield
+</span>* <span>this
+</span>.preOrderTraversal(node.right); }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Pre-order traversal would print out the following values: `10, 5, 4, 3, 30, 15, 40`. This order of numbers is the same result that we would get if we run the Depth-First Search (DFS).
 
 BinarySearchTree.prototype.dfs[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></pre></td><td><pre><span>* dfs() {</span><br><span>  <span>const</span> stack = <span>new</span> Stack();</span><br><span></span><br><span>  stack.add(<span>this</span>.root);</span><br><span></span><br><span>  <span>while</span> (!stack.isEmpty()) {</span><br><span>    <span>const</span> node = stack.remove();</span><br><span>    <span>yield</span> node;</span><br><span>    </span><br><span>    node.descendents.reverse().forEach(<span><span>child</span> =&gt;</span> stack.add(child));</span><br><span>  }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+<span>12
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>* dfs() {
+</span>
+<br>
+<span>  <span>const
+</span> stack = <span>new
+</span> Stack();
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  stack.add(<span>this
+</span>.root);
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>while
+</span> (!stack.isEmpty()) {
+</span>
+<br>
+<span>    <span>const
+</span> node = stack.remove();
+</span>
+<br>
+<span>    <span>yield
+</span> node;
+</span>
+<br>
+<span>
+</span>
+<br>
+<span>    node.descendents.reverse().forEach(<span>
+<span>child
+</span> =&gt;
+</span> stack.add(child));
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 If you need a refresher on DFS, we covered in details on [Graph post](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/blog/2018/05/14/Data-Structures-for-Beginners-Graphs-Time-Complexity-tutorial/#Depth-first-search-DFS-Graph-search).
 
@@ -277,7 +1996,104 @@ Similar to DFS, we can implement a BFS by switching the `Stack` by a `Queue`:
 
 BinarySearchTree.prototype.bfs[Full Code](https://github.com/amejiarosario/dsa.js/blob/master/src/data-structures/trees/binary-search-tree.js)
 
-<table><tbody><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></pre></td><td><pre><span>* bfs() {</span><br><span>  <span>const</span> queue = <span>new</span> Queue();</span><br><span></span><br><span>  queue.add(<span>this</span>.root);</span><br><span></span><br><span>  <span>while</span> (!queue.isEmpty()) {</span><br><span>    <span>const</span> node = queue.remove();</span><br><span>    <span>yield</span> node;</span><br><span>    node.descendents.forEach(<span><span>child</span> =&gt;</span> queue.add(child));</span><br><span>  }</span><br><span>}</span><br></pre></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<pre>
+<span>1
+</span>
+<br>
+<span>2
+</span>
+<br>
+<span>3
+</span>
+<br>
+<span>4
+</span>
+<br>
+<span>5
+</span>
+<br>
+<span>6
+</span>
+<br>
+<span>7
+</span>
+<br>
+<span>8
+</span>
+<br>
+<span>9
+</span>
+<br>
+<span>10
+</span>
+<br>
+<span>11
+</span>
+<br>
+
+</pre>
+
+</td>
+<td>
+<pre>
+<span>* bfs() {
+</span>
+<br>
+<span>  <span>const
+</span> queue = <span>new
+</span> Queue();
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  queue.add(<span>this
+</span>.root);
+</span>
+<br>
+<span>
+
+</span>
+<br>
+<span>  <span>while
+</span> (!queue.isEmpty()) {
+</span>
+<br>
+<span>    <span>const
+</span> node = queue.remove();
+</span>
+<br>
+<span>    <span>yield
+</span> node;
+</span>
+<br>
+<span>    node.descendents.forEach(<span>
+<span>child
+</span> =&gt;
+</span> queue.add(child));
+</span>
+<br>
+<span>  }
+</span>
+<br>
+<span>}
+</span>
+<br>
+
+</pre>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 The BFS order is: `10, 5, 30, 4, 15, 40, 3`
 
