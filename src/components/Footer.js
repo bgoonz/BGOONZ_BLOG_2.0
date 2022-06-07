@@ -142,7 +142,7 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-<a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a>
+{/* <a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a> */}
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
@@ -177,6 +177,9 @@ export default class Footer extends React.Component {
                                     </div>
                             )
                         }
+                        
+                <a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {"if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"}> Save to PDF </a>
+
                      </div>
                 </div>
             </footer>

@@ -33,7 +33,6 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/print-2-pdf.js')} />
             <script src={withPrefix('js/prism.js')} />
             <script src={withPrefix('js/searchbar.js')} />
-            <script src={withPrefix('js/search-create.js')} />
             <script src={withPrefix('js/syntax.js')} />
             <script src={withPrefix('js/toPlainText.js')} />
             <script src={withPrefix('js/ukraine.js')} />
