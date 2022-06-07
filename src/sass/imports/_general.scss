@@ -51,9 +51,14 @@ a {
 }
 
 #sb-search-input-example {
-    position: absolute;
-    top: 200px;
-    lef: 200px;
+    position: fixed;
+    top: auto;
+    width: 15%;
+    height: 30px;
+    place-content: center;
+    display: inherit;
+    z-index: 0;
+
 }
 
 iframe {
