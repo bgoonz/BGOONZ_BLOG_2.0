@@ -3,6 +3,7 @@
 root_docs_path: /docs
 sections:
     - about
+    - archive
     - articles
     - audio
     - career
@@ -12,12 +13,14 @@ sections:
     - ds-algo
     - docs
     - faq
+    - fetch-api
     - git
     - interact
     - javascript
     - js-tips
     - interview
     - leetcode
+    - netlify-cms-jamstack
     - overflow
     - projects
     - python
