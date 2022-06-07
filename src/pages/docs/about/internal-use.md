@@ -26,12 +26,13 @@ template: docs
 
 - [april backup](https://backup-april-4-2022--bgoonz-blog.netlify.app/)
 
+| URL                             | Miscellaneous | Widgets | Analytics                           | Comment systems | Security | Font scripts    | CDN                                             | Marketing automation | Advertising |
+|---------------------------------|---------------|---------|-------------------------------------|-----------------|----------|-----------------|-------------------------------------------------|----------------------|-------------|
+| <https://bgoonz-blog.netlify.app> | webpack       | AddThis | Plausible ; Moat ; Google Analytics | Disqus          |          | Google Font API | Cloudflare ; Unpkg ; jsDelivr ; cdnjs ; Netlify |                      | Taboola     |
 
+<https://blog20-preview.netlify.app/>
 
-
-## Images: 
-
-
+## Images
 
 > 0beuahctjrs_qcqgv.jpg
 
@@ -56,7 +57,7 @@ template: docs
 > My%20Post.png
 
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/My%20Post.png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/My%20Post.png?raw=true)
-![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true](https://raw.githubusercontent.com/
+![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true](<https://raw.githubusercontent.com/>
 > Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png
 bgoo
 nz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)
