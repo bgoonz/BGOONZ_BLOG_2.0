@@ -30,6 +30,8 @@ template: docs
 |---------------------------------|---------------|---------|-------------------------------------|-----------------|----------|-----------------|-------------------------------------------------|----------------------|-------------|
 | <https://bgoonz-blog.netlify.app> | webpack       | AddThis | Plausible ; Moat ; Google Analytics | Disqus          |          | Google Font API | Cloudflare ; Unpkg ; jsDelivr ; cdnjs ; Netlify |                      | Taboola     |
 
+<https://blog20-preview.netlify.app/>
+
 ## Images
 
 > 0beuahctjrs_qcqgv.jpg
