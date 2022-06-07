@@ -37,6 +37,7 @@ a {
     border: 1px dotted black;
     // z-index: -1;
 }
+
 #scrollBtn {
     position: fixed;
     padding: 10px;
@@ -48,6 +49,7 @@ a {
     background-color: rgba(0, 10, 69, 0.856);
     border-radius: 10px;
 }
+
 
 iframe {
     overflow-y: scroll;
@@ -183,7 +185,7 @@ pre {
     }
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -243,8 +245,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
     margin-bottom: 0;
 }
 
@@ -261,7 +263,7 @@ hr {
 
 img {
     height: auto;
-    width:auto;
+    width: auto;
     max-width: 100%;
     border-radius: 10px;
 

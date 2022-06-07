@@ -1,3 +1,20 @@
+/* I'm trying to add a link to a PDF conversion service to the footer of my site. 
+
+I've tried a few different approaches, but I'm not sure how to get the link to work. 
+
+I've tried adding the link to the footer.yaml file, but that didn't work. 
+
+I've tried adding the link to the footer.html file, but that didn't work. 
+
+I've tried adding the link to the footer.js file, but that didn't work. 
+
+I've tried adding the link to the footer.jsx file, but that didn't work. 
+
+I've tried adding the link to the footer.jsx file, but that didn't work. 
+
+I've tried adding the link to the footer.jsx file, but that didn't work. 
+
+I've tried adding the link to the */
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -125,7 +142,7 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-<a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a>
+{/* <a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a> */}
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
@@ -160,6 +177,9 @@ export default class Footer extends React.Component {
                                     </div>
                             )
                         }
+                        
+                <a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {"if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"}> Save to PDF </a>
+
                      </div>
                 </div>
             </footer>
