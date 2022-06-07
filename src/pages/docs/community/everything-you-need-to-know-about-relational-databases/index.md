@@ -215,13 +215,13 @@ You can access and query the data using the findByPk, findOne, and findAll metho
     FROM
     friends;
 
-— Selects the first_name column from the friends table (remember whitespace is ignored)  
-SELECT name  
+— Selects the first_name column from the friends table (remember whitespace is ignored)
+SELECT name
 FROM friends;
 
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
-— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
+— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column
  — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
 
     SELECT
@@ -264,7 +264,7 @@ FROM friends;
 -   <span id="b3e7">When a table is already created we can then insert records into it using the INSERT INTO keywords.</span>
 -   <span id="d4d3">We provide the name of the table that we would like to add records to, followed by the VALUES keyword and each record we are adding. Here s an example:</span>
 
-— We are providing the table name, then multiple records to insert  
+— We are providing the table name, then multiple records to insert
  — The values are listed in the order that they are defined on the table
 
     INSERT INTO table_name
@@ -437,10 +437,10 @@ selectAllAirports();
     WHERE UPPER(name) LIKE UPPER($1)
     `;
 
-async function selectAirportsByName(name) {  
-const results = await pool.query(airportsByNameSql, \[ \`%${name}%\` \]);  
-console.log(results.rows);  
-pool.end(); // invoking end() will close our connection to the database  
+async function selectAirportsByName(name) {
+const results = await pool.query(airportsByNameSql, \[ \`%${name}%\` \]);
+console.log(results.rows);
+pool.end(); // invoking end() will close our connection to the database
 }
 
     // Get the airport name from the command line and store it
@@ -1125,9 +1125,9 @@ Include can take an array of models if you need to include more than one.
             include: [Pet, Owner]
         })
 
-Include can also take an object with keys `model` and `include`.  
-This is in case you have nested associations.  
-In this case Owner doesn't have an association with PetType, but  
+Include can also take an object with keys `model` and `include`.
+This is in case you have nested associations.
+In this case Owner doesn't have an association with PetType, but
 Pet does, so we want to include PetType onto the Pet Model.
 
     await Owner.findByPk(1, {
@@ -1139,7 +1139,7 @@ Pet does, so we want to include PetType onto the Pet Model.
 
 ### toJSON method
 
-The confusingly named toJSON() method does **not** return a JSON string but instead  
+The confusingly named toJSON() method does **not** return a JSON string but instead
 returns a POJO for the instance.
 
     // pet is an instance of the Pet class
@@ -1254,12 +1254,12 @@ To delete an item from your table, you will do the same kind of process. Find th
 
 ### Documentation
 
-For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:  
-**Sequelize Data Types:** <a href="https://sequelize.org/v5/manual/data-types.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/data-types.html</em></a>  
-**Validations:** <a href="https://sequelize.org/v5/manual/models-definition.html#validations" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/models-definition.html#validations</em></a>  
-When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is the specific section with the list of operators.  
-**Operators:** <a href="https://sequelize.org/v5/manual/querying.html#operators" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/querying.html#operators</em></a>  
-The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.  
+For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:
+**Sequelize Data Types:** <a href="https://sequelize.org/v5/manual/data-types.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/data-types.html</em></a>
+**Validations:** <a href="https://sequelize.org/v5/manual/models-definition.html#validations" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/models-definition.html#validations</em></a>
+When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is the specific section with the list of operators.
+**Operators:** <a href="https://sequelize.org/v5/manual/querying.html#operators" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/querying.html#operators</em></a>
+The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.
 **Create/Update/Destroy:** <a href="https://sequelize.org/v5/manual/instances.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/instances.html</em></a>
 
 #### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
