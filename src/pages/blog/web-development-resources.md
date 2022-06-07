@@ -2,107 +2,106 @@
 title: Web development resources
 template: post
 subtitle: A list of open source front-end tools and resources for web designers
-  and developers.  Table of contents
+    and developers.  Table of contents
 excerpt: A list of open source front-end tools and resources for web designers
-  and developers.  Table of contents
+    and developers.  Table of contents
 date: 2022-06-07T05:02:27.545Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/web-dev-back.jpg?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/web-dev-back.jpg?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/content-management.yaml
-  - src/data/categories/javascript.yaml
-  - src/data/categories/db.yaml
-  - src/data/categories/ds-algo.yaml
-  - src/data/categories/gatsbyjs.yaml
-  - src/data/categories/css.yaml
-  - src/data/categories/git.yaml
-  - src/data/categories/awesome-lists.yaml
-  - src/data/categories/google.yaml
-  - src/data/categories/html.yaml
+    - src/data/categories/content-management.yaml
+    - src/data/categories/javascript.yaml
+    - src/data/categories/db.yaml
+    - src/data/categories/ds-algo.yaml
+    - src/data/categories/gatsbyjs.yaml
+    - src/data/categories/css.yaml
+    - src/data/categories/git.yaml
+    - src/data/categories/awesome-lists.yaml
+    - src/data/categories/google.yaml
+    - src/data/categories/html.yaml
 tags:
-  - src/data/tags/array.yaml
-  - src/data/tags/aria.yaml
-  - src/data/tags/cms.yaml
-  - src/data/tags/databases.yaml
-  - src/data/tags/javascript.yaml
-  - src/data/tags/data-structures-algorithms.yaml
-  - src/data/tags/career.yaml
-  - src/data/tags/links.yaml
-  - src/data/tags/psql.yaml
-  - src/data/tags/python.yaml
+    - src/data/tags/array.yaml
+    - src/data/tags/aria.yaml
+    - src/data/tags/cms.yaml
+    - src/data/tags/databases.yaml
+    - src/data/tags/javascript.yaml
+    - src/data/tags/data-structures-algorithms.yaml
+    - src/data/tags/career.yaml
+    - src/data/tags/links.yaml
+    - src/data/tags/psql.yaml
+    - src/data/tags/python.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
-  - src/pages/blog/awesome-resources.md
-  - src/pages/blog/accessibility.md
-  - src/pages/blog/code-playgrounds-of-2021.md
-  - src/pages/blog/eslint-rules.md
-  - src/pages/blog/data-structures-algorithms-resources.md
-  - src/pages/blog/embedding-media-in-html.md
-  - src/pages/blog/event-handeling.md
-  - src/pages/blog/gatsby-cli.md
-  - src/pages/blog/file-system-route-api.md
-  - src/pages/blog/google-analytics.md
-  - src/pages/blog/fast-refresh.md
-  - src/pages/blog/everything-you-need-to-get-started-with-vscode.md
-  - src/pages/blog/grep-in-linuz.md
-  - src/pages/blog/google-custom-search.md
-  - src/pages/blog/htt-requests.md
-  - src/pages/blog/beginners-guide-to-python.md
-  - src/pages/blog/front-end-interview-questions-part-2.md
-  - src/pages/blog/deploy-react-app-to-heroku.md
-  - src/pages/blog/adding-css-to-your-html.md
+    - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/awesome-resources.md
+    - src/pages/blog/accessibility.md
+    - src/pages/blog/code-playgrounds-of-2021.md
+    - src/pages/blog/eslint-rules.md
+    - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/embedding-media-in-html.md
+    - src/pages/blog/event-handeling.md
+    - src/pages/blog/gatsby-cli.md
+    - src/pages/blog/file-system-route-api.md
+    - src/pages/blog/google-analytics.md
+    - src/pages/blog/fast-refresh.md
+    - src/pages/blog/everything-you-need-to-get-started-with-vscode.md
+    - src/pages/blog/grep-in-linuz.md
+    - src/pages/blog/google-custom-search.md
+    - src/pages/blog/htt-requests.md
+    - src/pages/blog/beginners-guide-to-python.md
+    - src/pages/blog/front-end-interview-questions-part-2.md
+    - src/pages/blog/deploy-react-app-to-heroku.md
+    - src/pages/blog/adding-css-to-your-html.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # Web development resources
 
-*A list of open source front-end tools and resources for web designers and developers.*
-
-
+_A list of open source front-end tools and resources for web designers and developers._
 
 ## [](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#table-of-contents)Table of contents
 
-* [Wiki](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#wiki)
-* [Frameworks](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#frameworks)
-* [Mobile Web apps frameworks](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#mobile-web-apps-frameworks)
-* [Front-end components](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#front-end-components)
-* [HTML5 themes](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html5-themes)
-* [HTML preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html-preprocessor)
-* [CSS preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-preprocessor)
-* [JavaScript preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-preprocessor)
-* [Sass framework](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#sass-frameworks)
-* [Node.js feature module and bundler](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#nodejs-feature-module-and-bundler)
-* [JavaScript library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-library)
-* [Vanilla JavaScript plugins](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#vanilla-javascript-plugins)
-* [jQuery plugins](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#jquery-plugins)
-* [JavaScript compressor toolkit](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-compressor-toolkit)
-* [CSS library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-library)
-* [SVG, PNG, and Font icons library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#svg-png-and-font-icons-library)
-* [HTML forms](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html-forms)
-* [Web tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#web-tools)
-* [CDN library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#cdn-library)
-* [Browser compatibility wiki](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#browser-compatibility-wiki)
-* [Responsiveness testing tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#responsiveness-testing-tools)
-* [Performance testing tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#performance-testing-tools)
-* [Placeholder](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#placeholder)
-* [Mockup placeholder](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#mockup-placeholder)
-* [Website icons for browsers](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#website-icons-for-browsers)
-* [Free inspirational snippets and tutorials](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#free-inspirational-snippets-and-tutorials)
-* [CSS reference](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-reference)
-* [CSS tutorials](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-tutorials)
-* [Infographics](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#infographics)
-* [Design inspiration](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#design-inspiration)
-* [The type system](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#the-type-system)
-* [Webmaster tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#webmaster-tools)
-* [Package manager](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#package-manager)
-* [Jamstack](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#jamstack)
-* [List of lists of lists](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#list-of-lists-of-lists)
+-   [Wiki](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#wiki)
+-   [Frameworks](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#frameworks)
+-   [Mobile Web apps frameworks](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#mobile-web-apps-frameworks)
+-   [Front-end components](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#front-end-components)
+-   [HTML5 themes](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html5-themes)
+-   [HTML preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html-preprocessor)
+-   [CSS preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-preprocessor)
+-   [JavaScript preprocessor](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-preprocessor)
+-   [Sass framework](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#sass-frameworks)
+-   [Node.js feature module and bundler](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#nodejs-feature-module-and-bundler)
+-   [JavaScript library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-library)
+-   [Vanilla JavaScript plugins](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#vanilla-javascript-plugins)
+-   [jQuery plugins](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#jquery-plugins)
+-   [JavaScript compressor toolkit](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#javascript-compressor-toolkit)
+-   [CSS library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-library)
+-   [SVG, PNG, and Font icons library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#svg-png-and-font-icons-library)
+-   [HTML forms](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#html-forms)
+-   [Web tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#web-tools)
+-   [CDN library](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#cdn-library)
+-   [Browser compatibility wiki](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#browser-compatibility-wiki)
+-   [Responsiveness testing tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#responsiveness-testing-tools)
+-   [Performance testing tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#performance-testing-tools)
+-   [Placeholder](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#placeholder)
+-   [Mockup placeholder](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#mockup-placeholder)
+-   [Website icons for browsers](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#website-icons-for-browsers)
+-   [Free inspirational snippets and tutorials](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#free-inspirational-snippets-and-tutorials)
+-   [CSS reference](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-reference)
+-   [CSS tutorials](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#css-tutorials)
+-   [Infographics](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#infographics)
+-   [Design inspiration](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#design-inspiration)
+-   [The type system](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#the-type-system)
+-   [Webmaster tools](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#webmaster-tools)
+-   [Package manager](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#package-manager)
+-   [Jamstack](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#jamstack)
+-   [List of lists of lists](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#list-of-lists-of-lists)
 
-- - -
+---
 
 ## [](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#wiki)Wiki
 
@@ -271,7 +270,7 @@ cmseditable: true
 | [Modernizr](https://modernizr.com/)                | Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.        |
 | \-                                                 | \-                                                                                                 |
 | [Bliss.js](https://blissfuljs.com/)                | Want to use Vanilla JS but find native APIs a bit unwieldy? Bliss is for you.                      |
-| [Umbrella JS](https://umbrellajs.com/)             | ☔ Lightweight javascript library for DOM manipulation and events.                                  |
+| [Umbrella JS](https://umbrellajs.com/)             | ☔ Lightweight javascript library for DOM manipulation and events.                                 |
 | [Zepto JS](https://zeptojs.com/)                   | Zepto is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API. |
 | [Cash JS](https://github.com/fabiospampinato/cash) | An absurdly small jQuery alternative for modern browsers.                                          |
 | [Chibi JS](https://github.com/kylebarrow/chibi)    | A tiny JavaScript micro-library                                                                    |
@@ -331,7 +330,7 @@ cmseditable: true
 
 | Name                                            | Description                                                                   |
 | ----------------------------------------------- | ----------------------------------------------------------------------------- |
-| [Terser](https://github.com/terser/terser)      | 🗜 JavaScript parser, mangler and compressor toolkit for ES6+                 |
+| [Terser](https://github.com/terser/terser)      | 🗜 JavaScript parser, mangler and compressor toolkit for ES6+                  |
 | [UglifyJS](https://github.com/mishoo/UglifyJS2) | UglifyJS is a JavaScript parser, minifier, compressor and beautifier toolkit. |
 
 **[↥ Back to top](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#table-of-contents)**
@@ -507,7 +506,7 @@ cmseditable: true
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | [Favicon Generator](https://realfavicongenerator.net/)                                                                                                                                                                                                                                    | Online Favicon Generator. For real.                                                                               |
 | [Build My Pinned Site](http://www.buildmypinnedsite.com/)                                                                                                                                                                                                                                 | Online tool to create a custom Windows Start Screen tile for your site in less than a minute.                     |
-| [Pinned site enhancements on Windows](https://msdn.microsoft.com/en-us/library/bg183312(v=vs.85).aspx) / [Creating custom tiles for IE11 websites](https://msdn.microsoft.com/en-us/library/dn455106(v=vs.85).aspx)                                                                       | Setting up live tiles and notifications for Windows                                                               |
+| [Pinned site enhancements on Windows](<https://msdn.microsoft.com/en-us/library/bg183312(v=vs.85).aspx>) / [Creating custom tiles for IE11 websites](<https://msdn.microsoft.com/en-us/library/dn455106(v=vs.85).aspx>)                                                                   | Setting up live tiles and notifications for Windows                                                               |
 | [Configuring Web Applications for Apple](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)                                                                                   | Conceptual information and techniques on creating effective web content for Safari and WebKit using HTML and CSS. |
 | [Installable Web Apps with the Web App Manifest in Chrome for Android](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android?hl=en) / [Manifest File Format](https://developer.chrome.com/extensions/manifest) | Use the web app manifest to control how your web app launches.                                                    |
 
@@ -647,16 +646,16 @@ cmseditable: true
 | Name                                                                                                                     | Description                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [List of software package management systems](https://en.wikipedia.org/wiki/List_of_software_package_management_systems) | This is a list of software package management systems, categorized first by package format (binary, source code, hybrid) and then by operating system family.                      |
-| [APT](https://en.wikipedia.org/wiki/APT_(software))                                                                      | Debian based Linux OS package manager.                                                                                                                                             |
-| [Yum](https://en.wikipedia.org/wiki/Yum_(software))                                                                      | Fedora based Linux OS package manager.                                                                                                                                             |
-| [Homebrew](https://en.wikipedia.org/wiki/Homebrew_(package_manager))                                                     | [Homebrew](https://brew.sh/) is a package management system that simplifies the installation of software on Apple's macOS operating system and Linux.                              |
+| [APT](<https://en.wikipedia.org/wiki/APT_(software)>)                                                                    | Debian based Linux OS package manager.                                                                                                                                             |
+| [Yum](<https://en.wikipedia.org/wiki/Yum_(software)>)                                                                    | Fedora based Linux OS package manager.                                                                                                                                             |
+| [Homebrew](<https://en.wikipedia.org/wiki/Homebrew_(package_manager)>)                                                   | [Homebrew](https://brew.sh/) is a package management system that simplifies the installation of software on Apple's macOS operating system and Linux.                              |
 | [winget](https://en.wikipedia.org/wiki/Windows_Package_Manager)                                                          | The [Windows Package Manager](https://docs.microsoft.com/en-us/windows/package-manager/) (aka winget) is a free and open-source package manager designed for Microsoft Windows 10. |
 | [Chocolatey](https://en.wikipedia.org/wiki/NuGet#Chocolatey)                                                             | [Chocolatey](https://chocolatey.org/) is a machine-level package manager and installer for software packages, built for the Windows platform.                                      |
 | goenv                                                                                                                    | [goenv](https://github.com/syndbg/goenv) aims to be as simple as possible and follow the already established successful version management model of pyenv and rbenv.               |
-| [npm](https://en.wikipedia.org/wiki/Npm_(software))                                                                      | [npm](https://www.npmjs.com/) (originally short for Node Package Manager) is a package manager for the JavaScript programming language.                                            |
+| [npm](<https://en.wikipedia.org/wiki/Npm_(software)>)                                                                    | [npm](https://www.npmjs.com/) (originally short for Node Package Manager) is a package manager for the JavaScript programming language.                                            |
 | nodenv                                                                                                                   | Use [nodenv](https://github.com/nodenv/nodenv) to pick a Node version for your application and guarantee that your development environment matches production.                     |
 | pyenv                                                                                                                    | [pyenv](https://github.com/pyenv/pyenv) lets you easily switch between multiple versions of Python.                                                                                |
-| [yarn](https://en.wikipedia.org/wiki/Npm_(software)#Alternatives)                                                        | [yarn](https://yarnpkg.com/) is a alternative to npm.                                                                                                                              |
+| [yarn](<https://en.wikipedia.org/wiki/Npm_(software)#Alternatives>)                                                      | [yarn](https://yarnpkg.com/) is a alternative to npm.                                                                                                                              |
 | [rvm](https://en.wikipedia.org/wiki/Ruby_Version_Manager)                                                                | [RVM](https://rvm.io/) is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.              |
 | rbenv                                                                                                                    | Use [rbenv](https://github.com/rbenv/rbenv) to pick a Ruby version for your application and guarantee that your development environment matches production.                        |
 
