@@ -61,6 +61,19 @@ a {
 
 }
 
+.aa-InputWrapperSuffx {
+
+
+    visibility: hidden;
+}
+
+.aa-Autocomplete {
+
+
+    visibility: hidden;
+}
+
+
 iframe {
     overflow-y: scroll;
     overflow-x: scroll;
@@ -312,4 +325,7 @@ img {
     h6 {
         font-size: 1.125em;
     }
+}
+}
+}
 }
