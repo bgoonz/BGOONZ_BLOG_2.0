@@ -2,13 +2,13 @@
 title: Web development resources
 template: post
 subtitle: A list of open source front-end tools and resources for web designers
-  and developers.  Table of contents
+  and developers.
 excerpt: A list of open source front-end tools and resources for web designers
   and developers.  Table of contents
 date: 2022-06-07T05:02:27.545Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/web-dev-back.jpg?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/web-dev-back.jpg?raw=true
-image_position: right
+image_position: left
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/content-management.yaml
@@ -60,11 +60,9 @@ cmseditable: true
 
 # Web development resources
 
-*A list of open source front-end tools and resources for web designers and developers.*
-
-
-
-## [](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#table-of-contents)Table of contents
+> *A list of open source front-end tools and resources for web designers and developers.*
+>
+> ## [](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#table-of-contents)Table of contents
 
 * [Wiki](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#wiki)
 * [Frameworks](https://gist.github.com/bgoonz/2882fff81dbc3cae49d2907f838d6b26#frameworks)
