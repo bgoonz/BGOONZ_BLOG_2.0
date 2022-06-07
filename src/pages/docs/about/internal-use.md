@@ -27,7 +27,9 @@ template: docs
 - [april backup](https://backup-april-4-2022--bgoonz-blog.netlify.app/)
 
 
-
+| URL                             | Miscellaneous | Widgets | Analytics                           | Comment systems | Security | Font scripts    | CDN                                             | Marketing automation | Advertising |
+|---------------------------------|---------------|---------|-------------------------------------|-----------------|----------|-----------------|-------------------------------------------------|----------------------|-------------|
+| <https://bgoonz-blog.netlify.app> | webpack       | AddThis | Plausible ; Moat ; Google Analytics | Disqus          |          | Google Font API | Cloudflare ; Unpkg ; jsDelivr ; cdnjs ; Netlify |                      | Taboola     |
 
 ## Images: 
 
