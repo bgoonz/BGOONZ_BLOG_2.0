@@ -7,77 +7,81 @@ show_author_bio: false
 cmseditable: true
 ---
 
-
 Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) and [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)methods of [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp), and with the [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`replaceAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), and [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) methods of [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String). This chapter describes JavaScript regular expressions.
 
-## [Creating a regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#creating_a_regular_expression "Permalink to Creating a regular expression")
+## [Creating a regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#creating_a_regular_expression 'Permalink to Creating a regular expression')
 
 You construct a regular expression in one of two ways:
 
-* Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:
+-   Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:
 
-  ```
+    ```
 
-  ```
+    ```
 
-  Copy to Clipboard
+    Copy to Clipboard
 
-  Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.
-* Or calling the constructor function of the [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) object, as follows:
+    Regular expression literals provide compilation of the regular expression when the script is loaded. If the regular expression remains constant, using this can improve performance.
 
-  ```
+-   Or calling the constructor function of the [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) object, as follows:
 
-  ```
+    ```
 
-  Copy to Clipboard
+    ```
 
-  Using the constructor function provides runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
+    Copy to Clipboard
 
-## [Writing a regular expression pattern](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#writing_a_regular_expression_pattern "Permalink to Writing a regular expression pattern")
+    Using the constructor function provides runtime compilation of the regular expression. Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.
+
+## [Writing a regular expression pattern](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#writing_a_regular_expression_pattern 'Permalink to Writing a regular expression pattern')
 
 A regular expression pattern is composed of simple characters, such as `/abc/`, or a combination of simple and special characters, such as `/ab*c/` or `/Chapter (\d+)\.\d*/`. The last example includes parentheses, which are used as a memory device. The match made with this part of the pattern is remembered for later use, as described in [Using groups](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges#using_groups).
 
 **Note:** If you are already familiar with the forms of a regular expression, you may also read [the cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) for a quick lookup for a specific pattern/construct.
 
-### [Using simple patterns](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_simple_patterns "Permalink to Using simple patterns")
+### [Using simple patterns](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_simple_patterns 'Permalink to Using simple patterns')
 
 Simple patterns are constructed of characters for which you want to find a direct match. For example, the pattern `/abc/` matches character combinations in strings only when the exact sequence `"abc"` occurs (all characters together and in that order). Such a match would succeed in the strings `"Hi, do you know your abc's?"` and `"The latest airplane designs evolved from slabcraft."`. In both cases the match is with the substring `"abc"`. There is no match in the string `"Grab crab"` because while it contains the substring `"ab c"`, it does not contain the exact substring `"abc"`.
 
-### [Using special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters "Permalink to Using special characters")
+### [Using special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters 'Permalink to Using special characters')
 
 When the search for a match requires something more than a direct match, such as finding one or more b's, or finding white space, you can include special characters in the pattern. For example, to match *a single `"a"` followed by zero or more `"b"`s followed by `"c"`*, you'd use the pattern `/ab*c/`: the `*` after `"b"` means "0 or more occurrences of the preceding item." In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
 The following pages provide lists of the different special characters that fit into each category, along with descriptions and examples.
 
-* [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+-   [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
 
-  Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).
-* [Character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
+    Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).
 
-  Distinguish different types of characters. For example, distinguishing between letters and digits.
-* [Groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
+-   [Character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
 
-  Indicate groups and ranges of expression characters.
-* [Quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+    Distinguish different types of characters. For example, distinguishing between letters and digits.
 
-  Indicate numbers of characters or expressions to match.
-* [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+-   [Groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges)
 
-  Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.
+    Indicate groups and ranges of expression characters.
+
+-   [Quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
+
+    Indicate numbers of characters or expressions to match.
+
+-   [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+
+    Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.
 
 If you want to look at all the special characters that can be used in regular expressions in a single table, see the following:
 
 |                                                                                                                              |                                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | `\`, `.`, `\cX`, `\d`, `\D`, `\f`, `\n`, `\r`, `\s`, `\S`, `\t`, `\v`, `\w`, `\W`, `\0`, `\xhh`, `\uhhhh`, `\uhhhhh`, `[\b]` |                                                                                                                                        |
 | `^`, `$`, `x(?=y)`, `x(?!y)`, `(?<=y)x`,`(?<!y)x`, `\b`, `\B`                                                                |                                                                                                                                        |
-| `(x)`, `(?:x)`, `(?<Name>x)`, `x|y`, `[xyz]`, `[^xyz]`, `\Number`                                                            |                                                                                                                                        |
+| `(x)`, `(?:x)`, `(?<Name>x)`, `x                                                                                             | y`, `[xyz]`, `[^xyz]`, `\Number`                                                                                                       |     |
 | `*`, `+`, `?`, `x{n}`, `x{n,}`, `x{n,m}`                                                                                     |                                                                                                                                        |
 | `\p{UnicodeProperty}`,`\P{UnicodeProperty}`                                                                                  | [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes) |
 
 **Note:** [A larger cheatsheet is also available](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet) (only aggregating parts of those individual articles).
 
-### [Escaping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#escaping "Permalink to Escaping")
+### [Escaping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#escaping 'Permalink to Escaping')
 
 If you need to use any of the special characters literally (actually searching for a `"*"`, for instance), you must escape it by putting a backslash in front of it. For instance, to search for `"a"` followed by `"*"` followed by `"b"`, you'd use `/a\*b/` — the backslash "escapes" the `"*"`, making it literal instead of special.
 
@@ -85,7 +89,7 @@ Similarly, if you're writing a regular expression literal and need to match a sl
 
 To match a literal backslash, you need to escape the backslash. For instance, to match the string "C:\" where "C" can be any letter, you'd use `/[A-Z]:\\/` — the first backslash escapes the one after it, so the expression searches for a single literal backslash.
 
-If using the `RegExp` constructor with a string literal, remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level. `/a\*b/` and `new RegExp("a\\*b")`create the same expression, which searches for "a" followed by a literal "*" followed by "b".
+If using the `RegExp` constructor with a string literal, remember that the backslash is an escape in string literals, so to use it in the regular expression, you need to escape it at the string literal level. `/a\*b/` and `new RegExp("a\\*b")`create the same expression, which searches for "a" followed by a literal "\*" followed by "b".
 
 If escape strings are not already part of your pattern you can add them using [`String.replace`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace):
 
@@ -99,11 +103,11 @@ The "g" after the regular expression is an option or flag that performs a global
 
 *Why isn't this built into JavaScript?* There is a [proposal](https://github.com/tc39/proposal-regex-escaping) to add such a function to RegExp.
 
-### [Using parentheses](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_parentheses "Permalink to Using parentheses")
+### [Using parentheses](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_parentheses 'Permalink to Using parentheses')
 
 Parentheses around any part of the regular expression pattern causes that part of the matched substring to be remembered. Once remembered, the substring can be recalled for other use. See [Groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges#using_groups) for more details.
 
-## [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_regular_expressions_in_javascript "Permalink to Using regular expressions in JavaScript")
+## [Using regular expressions in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_regular_expressions_in_javascript 'Permalink to Using regular expressions in JavaScript')
 
 Regular expressions are used with the [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)methods [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) and [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) and with the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)methods [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), and [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split).
 
@@ -175,7 +179,7 @@ Copy to Clipboard
 
 The occurrences of `/d(b+)d/g` in the two statements are different regular expression objects and hence have different values for their `lastIndex` property. If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.
 
-### [Advanced searching with flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags "Permalink to Advanced searching with flags")
+### [Advanced searching with flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags 'Permalink to Advanced searching with flags')
 
 Regular expressions have optional flags that allow for functionality like global searching and case-insensitive searching. These flags can be used separately or together in any order, and are included as part of the regular expression.
 
@@ -267,18 +271,18 @@ Copy to Clipboard
 
 There are a number of other differences between unicode and non-unicode regular expressions that one should be aware of:
 
-* Unicode regular expressions do not support so-called "identity escapes"; that is, patterns where an escaping backslash is not needed and effectively ignored. For example, `/\a/` is a valid regular expression matching the letter 'a', but `/\a/u` is not.
-* Curly brackets need to be escaped when not used as [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers). For example, `/{/` is a valid regular expression matching the curly bracket '{', but `/{/u` is not -- instead, the bracket should be escaped and `/\{/u` should be used instead.
-* The `-` character is interpreted differently within character classes. In particular, for unicode regular expressions, `-` is interpreted as a literal `-` (and not as part of a range) only if it appears at the start or end of a pattern. For example, `/[\w-:]/` is a valid regular expression matching a word character, a `-`, or `:`, but `/\w-:/u` is an invalid regular expression, as `\w` to `:` is not a well-defined range of characters.
+-   Unicode regular expressions do not support so-called "identity escapes"; that is, patterns where an escaping backslash is not needed and effectively ignored. For example, `/\a/` is a valid regular expression matching the letter 'a', but `/\a/u` is not.
+-   Curly brackets need to be escaped when not used as [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers). For example, `/{/` is a valid regular expression matching the curly bracket '{', but `/{/u` is not -- instead, the bracket should be escaped and `/\{/u` should be used instead.
+-   The `-` character is interpreted differently within character classes. In particular, for unicode regular expressions, `-` is interpreted as a literal `-` (and not as part of a range) only if it appears at the start or end of a pattern. For example, `/[\w-:]/` is a valid regular expression matching a word character, a `-`, or `:`, but `/\w-:/u` is an invalid regular expression, as `\w` to `:` is not a well-defined range of characters.
 
-## [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#examples "Permalink to Examples")
+## [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#examples 'Permalink to Examples')
 
 **Note:** Several examples are also available in:
 
-* The reference pages for [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec), [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test), [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-* This guide articles': [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes), [assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions), [groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges), [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers), [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+-   The reference pages for [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec), [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test), [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+-   This guide articles': [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes), [assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions), [groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges), [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers), [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
 
-### [Using special characters to verify input](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters_to_verify_input "Permalink to Using special characters to verify input")
+### [Using special characters to verify input](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters_to_verify_input 'Permalink to Using special characters to verify input')
 
 In the following example, the user is expected to enter a phone number. When the user presses the "Check" button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
 
@@ -312,17 +316,20 @@ Copy to Clipboard
 
 [Using special characters to verify input sample](https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/_sample_.using_special_characters_to_verify_input.html)
 
-## [Tools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#tools "Permalink to Tools")
+## [Tools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#tools 'Permalink to Tools')
 
-* [RegExr](https://regexr.com/)
+-   [RegExr](https://regexr.com/)
 
-  An online tool to learn, build, & test Regular Expressions.
-* [Regex tester](https://regex101.com/)
+    An online tool to learn, build, & test Regular Expressions.
 
-  An online regex builder/debugger
-* [Regex interactive tutorial](https://regexlearn.com/)
+-   [Regex tester](https://regex101.com/)
 
-  An online interactive tutorials, Cheatsheet, & Playground.
-* [Regex visualizer](https://extendsclass.com/regex-tester.html)
+    An online regex builder/debugger
 
-  An online visual regex tester.
+-   [Regex interactive tutorial](https://regexlearn.com/)
+
+    An online interactive tutorials, Cheatsheet, & Playground.
+
+-   [Regex visualizer](https://extendsclass.com/regex-tester.html)
+
+    An online visual regex tester.
