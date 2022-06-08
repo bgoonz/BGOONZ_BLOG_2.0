@@ -69,6 +69,7 @@ export default class Header extends React.Component {
                                                         classNames('menu-item', {
                                                             'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
                                                             current: page_url === action_url,
+<<<<<<< HEAD
                                                             'menu-button': _.get(action, 'style', null) !== 'link'
                                                         })
                                                     } >
@@ -154,6 +155,54 @@ export default class Header extends React.Component {
                                     /div> <
                                     /div> <
                                     /div>
+=======
+                                                            'menu-button': _.get( action, 'style', null ) !== 'link'
+                                                        } ) }
+                                                    >
+                                                        <ActionLink { ...this.props } action={ action } />
+                                                        { _.get( action, 'has_subnav', null ) && _.get( action, 'subnav_links', null ) && (
+                                                            <React.Fragment>
+                                                                <button className="submenu-toggle">
+                                                                    <span className="icon-angle-right" aria-hidden="true" />
+                                                                    <span className="screen-reader-text">Sub-menu</span>
+                                                                </button>
+                                                                <Submenu
+                                                                    { ...this.props }
+                                                                    submenu={ _.get( action, 'subnav_links', null ) }
+                                                                    menu_class={ 'submenu' }
+                                                                    page={ this.props.pageContext }
+                                                                />
+                                                            </React.Fragment>
+                                                        ) }
+                                                    </li>
+                                                );
+                                            } ) }
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <button id="menu-open" className="menu-toggle">
+                                    <span className="screen-reader-text">Close Menu</span>
+                                    <span className="icon-menu" aria-hidden="true" />
+                                </button>
+                            </React.Fragment>
+                        ) }
+                    </div>
+                </div>
+                <>
+                    <div id="sb-search-input-example">
+                        <div className="sb-content sb-hero">
+                            <div className="sb-search sb-hero">
+                                <div className="sb-input">
+                                    <input className="sb-search-field" name="pesquisa" placeholder="Type your search..." type="search" autoComplete="on" id="myCustomTextInputID" />
+                                    <div className="sb-search-icon" id="myCustomSearchButtonID">
+                                        <i className="sb-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                </>
+>>>>>>> 8ec7e88a1 ( update)
 
                                     <
                                     /div> <
