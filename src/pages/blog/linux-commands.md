@@ -9,14 +9,13 @@ thumb_image: https://www.howtogeek.com/wp-content/uploads/2021/09/linux_tux_hero
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/awesome-lists.yaml
+    - src/data/categories/awesome-lists.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts: []
 cmseditable: true
 ---
-
 
 | Command                               | Description                                                                                     |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------- |
