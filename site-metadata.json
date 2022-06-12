@@ -41,7 +41,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/python/python-ds",
+                        "url": "/docs/python",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -82,15 +82,6 @@
                         "no_follow": false,
                         "type": "action"
                     },
-                    {
-                        "label": "Blog w Comments📰",
-                        "url": "/blogWcomments/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
                 ],
                 "new_window": true
             },
@@ -535,5 +526,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/logo-final-touchup.PNG"
+    "favicon": "images/logo.png"
 }
