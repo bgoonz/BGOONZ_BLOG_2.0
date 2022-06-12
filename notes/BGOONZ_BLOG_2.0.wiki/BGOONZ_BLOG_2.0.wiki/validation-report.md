@@ -520,10 +520,3 @@ Used the schema for HTML + SVG 1.1 + MathML 3.0 + RDFa Lite 1.1.
 Used the HTML parser. Externally specified character encoding was UTF-8.
 
 Total execution time 170 milliseconds.
-
-* * *
-
-[About this Service](https://about.validator.nu/) • [Simplified Interface](chrome-extension://html5.validator.nu/)
-
-
-[Source](https://validator.nu/?doc=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&laxtype=yes&showimagereport=yes&showsource=yes&showoutline=yes)
