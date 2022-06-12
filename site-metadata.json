@@ -81,8 +81,7 @@
                         "new_window": true,
                         "no_follow": false,
                         "type": "action"
-                    },
-                   
+                    }
                 ],
                 "new_window": true
             },
