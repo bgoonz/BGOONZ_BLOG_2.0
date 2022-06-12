@@ -10,7 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll !important;
+    overflow: scroll;
 }
 
 a {
@@ -24,19 +24,6 @@ a {
     }
 }
 
-#social-embed {
-    // position: absolute !important;
-    // right: 50px !important;
-    bottom: 120px !important;
-    width: 100% !important;
-    width: 1000px !important;
-    box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;
-    margin: 0 auto !important;
-    height: 400px !important;
-    overflow: scroll !important;
-    border: 1px dotted black;
-    // z-index: -1;
-}
 #scrollBtn {
     position: fixed;
     padding: 10px;
@@ -57,7 +44,7 @@ iframe {
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
-    resize: both !important;
+    resize: both;
     overflow: scroll;
 }
 
@@ -261,7 +248,7 @@ hr {
 
 img {
     height: auto;
-    width:auto;
+    width: auto;
     max-width: 100%;
     border-radius: 10px;
 
