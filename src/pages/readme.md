@@ -933,25 +933,27 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```bash
+ ```console
+
 
     # create a new Gatsby site using the default starter
 
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 
-    ```
+ ```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
-    ```bash
+ ```console
+
 
     cd my-default-starter/
 
     gatsby develop
 
-    ```
+ ```
 
 1. **Open the source code and start editing!**
 
@@ -4139,7 +4141,7 @@ Element.prototype.closest ||
 
 # Prism.js
 
-      ```js
+   ```js
 
 //
 
@@ -6427,7 +6429,7 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
-````
+```
 
 # main.js
 
@@ -6912,7 +6914,7 @@ window.onGatsbyInitialClientRender = function () {
 
 //-----------------------------------------------------------------------
 
-````
+```
 
 ---
 

@@ -201,7 +201,7 @@ template: docs
         });
     };
 
-    ```
+ ```
     </pre>
 
 ##### Gatsby Source Data

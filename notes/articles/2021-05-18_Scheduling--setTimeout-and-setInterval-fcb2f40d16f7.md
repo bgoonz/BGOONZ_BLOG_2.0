@@ -64,7 +64,7 @@ But using strings is not recommended, use arrow functions instead of them, like 
 
     Novice developers sometimes make a mistake by adding brackets `()` after the function:
 
-    ```js
+ ```js
 
 //
 // wrong!
@@ -127,7 +127,7 @@ So if you run the code above and don't dismiss the `alert` window for some time,
 
     One is `setInterval`. The other one is a nested `setTimeout`, like this:
 
-    ```js
+ ```js
 
 //
 /\*_ instead of:
@@ -204,7 +204,7 @@ That's because a new call is planned at the end of the previous one.
 
     When a function is passed in `setInterval/setTimeout`, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
 
-    ```js
+ ```js
 
 //
 // the function stays in memory until the scheduler calls it
@@ -237,7 +237,7 @@ There are also advanced browser-related use cases of a zero-delay timeout, that 
 
     Let's demonstrate what it means with the example below. The `setTimeout` call in it re-schedules itself with zero delay. Each call remembers the real time from the previous one in the `times` array. What do the real delays look like? Let's see:
 
-    ```js
+ ```js
 
 // run
 let start = Date.now();
@@ -252,7 +252,7 @@ let times = [];
 
     // an example of the output:
     // 1,1,1,1,9,15,20,24,30,35,40,45,50,55,59,64,70,75,80,85,90,95,100
-    ```
+ ```
 
     First timers run immediately (just as written in the spec), and then we see `9, 15, 20, 24...`. The 4+ ms obligatory delay between invocations comes into play.
 
