@@ -41,6 +41,7 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/syntax.js')} />
             <script src = {'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'} />
             <script src={'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js'} />
+            <script src={'https://www.googletagmanager.com/gtag/js?id=G-90VG64DEP3'} />
         </React.Fragment>
     ]);
 };
