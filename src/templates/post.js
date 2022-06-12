@@ -1,3 +1,4 @@
+/* A GraphQL query. */
 import { graphql } from 'gatsby';
 import { Disqus } from 'gatsby-plugin-disqus';
 import _ from 'lodash';

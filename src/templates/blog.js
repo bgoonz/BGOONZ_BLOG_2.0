@@ -15,7 +15,7 @@ export const query = graphql `
 `;
 export default class Blog extends React.Component {
     render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
+        const display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
         return (
             <Layout {...this.props}>
                 <header className="page-header has-gradient outer">
