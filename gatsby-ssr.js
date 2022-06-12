@@ -8,8 +8,8 @@
 //<script src={withPrefix('js/analytics.js')} /> }
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-const React = require("react");
-const withPrefix = require("./src/utils/withPrefix").default;
+const React = require('react');
+const withPrefix = require('./src/utils/withPrefix').default;
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setHeadComponents([]);
     setPostBodyComponents([
@@ -30,14 +30,12 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/page-unload.js')} />
             <script src={withPrefix('js/plugins.js')} />
             <script src={withPrefix('js/prettier.js')} />
-            <script src={withPrefix('js/print-2-pdf.js')} />
             <script src={withPrefix('js/prism.js')} />
             <script src={withPrefix('js/searchbar.js')} />
             <script src={withPrefix('js/syntax.js')} />
             <script src={withPrefix('js/toPlainText.js')} />
             <script src={withPrefix('js/ukraine.js')} />
-< script src = {
-'https : // cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'} />
+            <script src={'https : // cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js'} />
             <script src={'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js'} />
             <script src={withPrefix('js/syntax.js')} />
         </React.Fragment>
