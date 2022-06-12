@@ -4,8 +4,8 @@ template: post
 subtitle: A reducer is a function that determines changes to an applications state
 excerpt: A reducer is a function that determines changes to an applications state
 date: 2022-05-16T06:08:24.979Z
-image: redux.gif
-thumb_image: redux.gif
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/redux.gif?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
@@ -20,6 +20,8 @@ related_posts:
     - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
+# What is a Redux Reducer?
 
 **This tutorial will teach you "how Redux works"**, as well as _why_ these patterns exist. Fair warning though - learning the concepts is different from putting them into practice in actual apps.
 
@@ -140,7 +142,9 @@ Let's look at a minimal working example of a Redux app - a small counter applica
   title="redux-fundamentals-core-example"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-></iframe><br>
+>
+</iframe>
+<br>
 
 Because Redux is a standalone JS library with no dependencies, this example is written by only loading a single script tag for the Redux library, and uses basic JS and HTML for the UI. In practice, Redux is normally used by [installing the Redux packages from NPM](../../introduction/Installation.md), and the UI is created using a library like [React](https://reactjs.org).
 
@@ -157,6 +161,7 @@ Let's break this example down into its separate parts to see what's happening.
 We start by defining an initial **state** value to describe the application:
 
 ```js
+//
 // Define an initial state value for the app
 const initialState = {
     value: 0
@@ -172,6 +177,7 @@ Then, we define a **reducer** function. The reducer receives two arguments, the 
 so we provide the `initialState` as the default value for this reducer:
 
 ```js
+//
 // Create a "reducer" function that determines what the new state
 // should be when something happens in the app
 function counterReducer(state = initialState, action) {
@@ -208,6 +214,7 @@ Now that we have a reducer function, we can create a **store** instance by
 calling the Redux library `createStore` API.
 
 ```js
+//
 // Create a new Redux store with the `createStore` function,
 // and use the `counterReducer` for the update logic
 const store = Redux.createStore(counterReducer);
@@ -222,6 +229,7 @@ In any application, the user interface will show existing state on screen. When 
 does something, the app will update its data and then redraw the UI with those values.
 
 ```js
+//
 // Our "user interface" is some text in a single HTML element
 const valueEl = document.getElementById('value');
 
@@ -258,6 +266,7 @@ the store runs the reducer, calculates the updated state, and runs the subscribe
 to update the UI.
 
 ```js
+//
 // Handle user inputs by "dispatching" action objects,
 // which should describe "what happened" in the app
 document.getElementById('increment').addEventListener('click', function () {
@@ -323,7 +332,8 @@ With that in mind, let's review what we've learned so far:
 
 Let's start by looking at a small React counter component. It tracks a number in component state, and increments the number when a button is clicked:
 
-```jsx
+```js
+//x
 function Counter() {
     // State: a counter value
     const [counter, setCounter] = useState(0);
@@ -372,6 +382,7 @@ This is the basic idea behind Redux: a single centralized place to contain the g
 JavaScript objects and arrays are all mutable by default. If I create an object, I can change the contents of its fields. If I create an array, I can change the contents as well:
 
 ```js
+//
 const obj = { a: 1, b: 2 };
 // still the same object outside, but the contents have changed
 obj.b = 3;
@@ -389,6 +400,7 @@ This is called _mutating_ the object or array. It's the same object or array ref
 We can do this by hand using JavaScript's array / object spread operators, as well as array methods that return new copies of the array instead of mutating the original array:
 
 ```js
+//
 const obj = {
     a: {
         // To safely update obj.a.c, we have to copy each piece
@@ -445,6 +457,7 @@ An action object can have other fields with additional information about what ha
 A typical action object might look like this:
 
 ```js
+//
 const addTodoAction = {
     type: 'todos/todoAdded',
     payload: 'Buy milk'
@@ -478,6 +491,7 @@ The logic inside reducer functions typically follows the same series of steps:
 Here's a small example of a reducer, showing the steps that each reducer should follow:
 
 ```js
+//
 const initialState = { value: 0 };
 
 function counterReducer(state = initialState, action) {
@@ -511,6 +525,7 @@ The first time that the callback runs, there isn't a `previousResult` available,
 If we wanted to add together an array of numbers to find out what the total is, we could write a reduce callback that looks like this:
 
 ```js
+//
 const numbers = [2, 5, 8];
 
 const addNumbers = (previousResult, currentItem) => {
@@ -536,6 +551,7 @@ Notice that this `addNumbers` "reduce callback" function doesn't need to keep tr
 If we were to create an array of Redux actions, call `reduce()`, and pass in a reducer function, we'd get a final result the same way:
 
 ```js
+//
 const actions = [{ type: 'counter/incremented' }, { type: 'counter/incremented' }, { type: 'counter/incremented' }];
 
 const initialState = { value: 0 };
@@ -556,6 +572,7 @@ The current Redux application state lives in an object called the **store** .
 The store is created by passing in a reducer, and has a method called `getState` that returns the current state value:
 
 ```js
+//
 import { configureStore } from '@reduxjs/toolkit';
 
 const store = configureStore({ reducer: counterReducer });
@@ -569,6 +586,7 @@ console.log(store.getState());
 The Redux store has a method called `dispatch`. **The only way to update the state is to call `store.dispatch()` and pass in an action object**. The store will run its reducer function and save the new state value inside, and we can call `getState()` to retrieve the updated value:
 
 ```js
+//
 store.dispatch({ type: 'counter/incremented' });
 
 console.log(store.getState());
@@ -582,6 +600,7 @@ console.log(store.getState());
 **Selectors** are functions that know how to extract specific pieces of information from a store state value. As an application grows bigger, this can help avoid repeating logic as different parts of the app need to read the same data:
 
 ```js
+//
 const selectCounterValue = (state) => state.value;
 
 const currentValue = selectCounterValue(store.getState());
@@ -670,7 +689,9 @@ To get started, you can open and fork this CodeSandbox:
   title="redux-fundamentals-example-app"
   allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
   sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-></iframe><br>
+>
+</iframe>
+<br>
 
 You can also [clone the same project from this Github repo](https://github.com/reduxjs/redux-fundamentals-example-app). After cloning the repo, you can install the tools for the project with `npm install`, and start it with `npm start`.
 
@@ -691,7 +712,8 @@ The Redux template for CRA comes with Redux Toolkit and React-Redux already conf
 -   Import the Redux store into your application's entry point file (such as `src/index.js`)
 -   Wrap your root React component with the `<Provider>` component from React-Redux, like:
 
-```jsx
+```js
+//x
 ReactDOM.render(
     <Provider store={store}>
         <App />
@@ -800,6 +822,7 @@ Based on this information, we should now be able to describe the kinds of values
 So, here's what an example of our app's state might look like:
 
 ```js
+//
 const todoAppState = {
     todos: [
         { id: 0, text: 'Learn React', completed: true },
@@ -870,7 +893,8 @@ Let's start by creating a `reducer.js` file in the `src` folder, alongside `inde
 
 Every reducer needs some initial state, so we'll add some fake todo entries to get us started. Then, we can write an outline for the logic inside the reducer function:
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 const initialState = {
     todos: [
         { id: 0, text: 'Learn React', completed: true },
@@ -904,7 +928,8 @@ We first need to check if the current action's type matches that specific string
 Then, we need to return a new object containing _all_ of the state, even for the fields
 that didn't change.
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 function nextTodoId(todos) {
     const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
     return maxId + 1;
@@ -987,6 +1012,7 @@ Earlier, we talked about "mutation" (modifying existing object/array values) and
 In Redux, **our reducers are _never_ allowed to mutate the original / current state values!**
 
 ```js
+//
 // ❌ Illegal - by default, this will mutate the state!
 state.value = 123;
 ```
@@ -1008,6 +1034,7 @@ So if we can't change the originals, how do we return an updated state?
 **Reducers can only make _copies_ of the original values, and then they can mutate the copies.**
 
 ```js
+//
 // ✅ This is safe, because we made a copy
 return {
     ...state,
@@ -1036,7 +1063,8 @@ learn how to use Redux Toolkit to simplify writing immutable update logic in red
 
 With that in mind, let's add the reducer logic for a couple more cases. First, toggling a todo's `completed` field based on its ID:
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 export default function appReducer(state = initialState, action) {
     switch (action.type) {
         case 'todos/todoAdded': {
@@ -1082,7 +1110,8 @@ export default function appReducer(state = initialState, action) {
 
 And since we've been focusing on the todos state, let's add a case to handle the "visibility selection changed" action as well:
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 export default function appReducer(state = initialState, action) {
     switch (action.type) {
         case 'todos/todoAdded': {
@@ -1154,7 +1183,8 @@ Because of that, **the reducer for a specific section of the Redux app state is 
 
 In our project, create a new `features` folder, and then a `todos` folder inside that. Create a new file named `todosSlice.js`, and let's cut and paste the todo-related initial state over into this file:
 
-```js title="src/features/todos/todosSlice.js"
+```js
+// title="src/features/todos/todosSlice.js"
 const initialState = [
     { id: 0, text: 'Learn React', completed: true },
     { id: 1, text: 'Learn Redux', completed: false, color: 'purple' },
@@ -1180,7 +1210,8 @@ This is called **reducer composition**, and it's the fundamental pattern of buil
 
 Here's what the updated reducer looks like after we handle those actions:
 
-```js title="src/features/todos/todosSlice.js"
+```js
+// title="src/features/todos/todosSlice.js"
 export default function todosReducer(state = initialState, action) {
     switch (action.type) {
         // highlight-start
@@ -1218,7 +1249,8 @@ That's a bit shorter and easier to read.
 
 Now we can do the same thing for the visibility logic. Create `src/features/filters/filtersSlice.js`, and let's move all the filter-related code over there:
 
-```js title="src/features/filters/filtersSlice.js"
+```js
+// title="src/features/filters/filtersSlice.js"
 const initialState = {
     status: 'All',
     colors: []
@@ -1259,7 +1291,8 @@ We now have two separate slice files, each with its own slice reducer function. 
 
 Since reducers are normal JS functions, we can import the slice reducers back into `reducer.js`, and write a new root reducer whose only job is to call the other two functions.
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 import todosReducer from './features/todos/todosSlice';
 import filtersReducer from './features/filters/filtersSlice';
 
@@ -1288,12 +1321,14 @@ The Redux core library includes a utility called [`combineReducers`](../../api/c
 **Now that we need `combineReducers`, it's time to actually install the Redux core library**:
 
 ```js
+//
 npm install redux
 ```
 
 Once that's done, we can import `combineReducers` and use it:
 
-```js title="src/reducer.js"
+```js
+// title="src/reducer.js"
 // highlight-next-line
 import { combineReducers } from 'redux';
 
@@ -1326,7 +1361,9 @@ Here's the contents of our app so far:
   title="redux-fundamentals-example-app"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe><br>
+>
+</iframe>
+<br>
 
 :::tip Summary
 

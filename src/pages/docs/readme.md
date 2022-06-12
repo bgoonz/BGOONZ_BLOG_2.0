@@ -926,7 +926,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```shell
+    ```console
 
     # create a new Gatsby site using the default starter
 
@@ -938,7 +938,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-    ```shell
+    ```console
 
     cd my-default-starter/
 
@@ -1328,7 +1328,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <details>
 
-  <summary><h1>Click to see React Components (src folder)!</h1></summary>
+  <summary>
+<h1>Click to see React Components (src folder)!</h1>
+</summary>
 
 <details>
 
@@ -1337,6 +1339,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ## ActionLink
 
 ```js
+//
 
 import React from 'react';
 
@@ -1417,6 +1420,7 @@ button: *.get(action, 'style', null) !== 'link',
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1461,6 +1465,7 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1561,6 +1566,7 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1602,6 +1608,7 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1648,6 +1655,7 @@ export default class Footer extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1808,6 +1816,7 @@ export default class Header extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1858,6 +1867,7 @@ export default class Icon extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -1949,6 +1959,7 @@ export default class Body extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2009,6 +2020,7 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2059,6 +2071,7 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2140,6 +2153,7 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2229,6 +2243,7 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2279,6 +2294,7 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2328,6 +2344,7 @@ export default class Submenu extends React.Component {
 ---
 
 ```js
+//
 import ActionLink from './ActionLink';
 
 import CtaButtons from './CtaButtons';
@@ -2419,6 +2436,7 @@ export default {
 # main.js
 
 ```js
+//
 window.onGatsbyInitialClientRender = function () {
     /**
 
@@ -2789,6 +2807,7 @@ window.onGatsbyInitialClientRender = function () {
 # Page Load JS
 
 ```js
+//
 window.onGatsbyRouteUpdate = function () {
     window.addMainNavigationHandlers();
 
@@ -2805,6 +2824,7 @@ window.onGatsbyRouteUpdate = function () {
 # PageUnload.js
 
 ```js
+//
 window.onGatsbyPreRouteUpdate = function () {
     window.removeMainNavigationHandlers();
 
@@ -2821,6 +2841,7 @@ window.onGatsbyPreRouteUpdate = function () {
 # Plugins.js
 
 ```js
+//
 !(function (e, t) {
     'object' == typeof exports && 'undefined' != typeof module
         ? (module.exports = t())
@@ -4114,6 +4135,8 @@ Element.prototype.closest ||
 # Prism.js
 
       ```js
+
+//
 
       /* PrismJS 1.16.0
 
@@ -6404,6 +6427,7 @@ Prism.languages.markup.tag.addAttribute(
 # main.js
 
 ```js
+//
 
 window.onGatsbyInitialClientRender = function () {
 
@@ -6892,6 +6916,7 @@ window.onGatsbyInitialClientRender = function () {
 # Page Load JS
 
 ```js
+//
 window.onGatsbyRouteUpdate = function () {
     window.addMainNavigationHandlers();
 
@@ -6908,6 +6933,7 @@ window.onGatsbyRouteUpdate = function () {
 # PageUnload.js
 
 ```js
+//
 window.onGatsbyPreRouteUpdate = function () {
     window.removeMainNavigationHandlers();
 
@@ -6924,6 +6950,7 @@ window.onGatsbyPreRouteUpdate = function () {
 # Plugins.js
 
 ```js
+//
 !(function (e, t) {
     'object' == typeof exports && 'undefined' != typeof module
         ? (module.exports = t())
@@ -8217,6 +8244,7 @@ Element.prototype.closest ||
 # Prism.js
 
 ```js
+//
 
 var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
 
@@ -10557,6 +10585,7 @@ Prism.languages.markup.tag.addAttribute(
 ### Index.js
 
 ```js
+//
 import ActionLink from './ActionLink';
 
 import CtaButtons from './CtaButtons';
@@ -10638,6 +10667,7 @@ export default {
 ### Layout.js
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -10729,79 +10759,79 @@ export default class Body extends React.Component {
 ### ActionLink.js
 
 ```js
-
+//
 ```
 
 ### CtaButtons.js
 
 ```js
-
+//
 ```
 
 ### DocsMenu.js
 
 ```js
-
+//
 ```
 
 ### DocsSubmenu.js
 
 ```js
-
+//
 ```
 
 ### Footer.js
 
 ```js
-
+//
 ```
 
 ### Header.js
 
 ```js
-
+//
 ```
 
 ### Icon.js
 
 ```js
-
+//
 ```
 
 ### SectionContent.js
 
 ```js
-
+//
 ```
 
 ### SectionCta.js
 
 ```js
-
+//
 ```
 
 ### SectionDocs.js
 
 ```js
-
+//
 ```
 
 ### SectionGrid.js
 
 ```js
-
+//
 ```
 
 ### SectionHero.js
 
 ```js
-
+//
 ```
 
 ### Submenu.js
 
 ```js
-
+//
 ```
 
 <br>
@@ -10871,6 +10901,7 @@ export default class Body extends React.Component {
 ## Gatsby Browser
 
 ```js
+//
 /**
 
  * Implement Gatsby's Browser APIs in this file.
@@ -10921,6 +10952,7 @@ exports.onPreRouteUpdate = () => {
 ## Gatsby-config
 
 ```js
+//
 const siteMetadata = require('./site-metadata.json');
 
 module.exports = {
@@ -10977,6 +11009,7 @@ module.exports = {
 ## [Gatsby Node](https://www.gatsbyjs.org/docs/node-apis/)
 
 ```js
+//
 /**
 
  * Implement Gatsby's Node APIs in this file.
@@ -10999,6 +11032,7 @@ An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `cre
 > gatsby-node.js
 
 ```js
+//
 
 Copygatsby-node.js: copy code to clipboard`
 
@@ -11073,6 +11107,7 @@ If your plugin performs async operations (disk I/O, database access, calling rem
 // Async/await
 
 ```js
+//
 exports.createPages = async () => {
     // do async work
 
@@ -11153,6 +11188,7 @@ No return value required, but the caller will `await` any promise that's returne
 #### Example
 
 ```js
+//
 const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
@@ -11300,6 +11336,7 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 #### Example
 
 ```js
+//
 exports.createResolvers = ({ createResolvers }) => {
     const resolvers = {
         Author: {
@@ -11366,6 +11403,7 @@ This API runs immediately before schema generation. For modifications of the gen
 #### Example
 
 ```js
+//
 exports.createSchemaCustomization = ({ actions }) => {
     const { createTypes, createFieldExtension } = actions;
 
@@ -11438,6 +11476,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 #### Example
 
 ```js
+//
 exports.onCreateBabelConfig = ({ actions }) => {
     actions.setBabelPlugin({
         name: `babel-plugin-that-i-like`,
@@ -11470,6 +11509,7 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
 #### Example
 
 ```js
+//
 exports.onCreateDevServer = ({ app }) => {
     app.get('/hello', function (req, res) {
         res.send('hello world');
@@ -11494,6 +11534,7 @@ The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-
 #### Example
 
 ```js
+//
 exports.onCreateNode = ({ node, actions }) => {
     const { createNode, createNodeField } = actions;
 
@@ -11570,6 +11611,7 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 #### Example
 
 ```js
+//
 exports.onCreateWebpackConfig = ({ stage, getConfig, rules, loaders, actions }) => {
     actions.setWebpackConfig({
         module: {
@@ -11596,6 +11638,7 @@ Lifecycle executed in each process (one time per process). Used to store actions
 #### Example
 
 ```js
+//
 let createJobV2;
 
 exports.onPluginInit = ({ actions }) => {
@@ -11678,6 +11721,7 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 #### Example
 
 ```js
+//
 exports.pluginOptionsSchema = ({ Joi }) => {
     return Joi.object({
         // Validate that the anonymize option is defined by the user and is a boolean
@@ -11746,6 +11790,7 @@ Many transformer plugins use this to add fields that take arguments.
 #### Example
 
 ```js
+//
 import { GraphQLString } from 'gatsby/graphql';
 
 exports.setFieldsOnGraphQLNodeType = ({ type }) => {
@@ -11790,6 +11835,7 @@ See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/acti
 #### Example
 
 ```js
+//
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { createNode } = actions;
 
@@ -11840,6 +11886,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 ## Gatsby-ssr
 
 ```js
+//
 /**
 
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
@@ -12374,305 +12421,305 @@ exports.wrapRootElement = ({ element }) => {
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```
 
 ###
 
 ```js
-
+//
 ```

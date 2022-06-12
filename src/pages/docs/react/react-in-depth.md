@@ -57,7 +57,8 @@ template: docs
 
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 
-> </iframe><br>
+> </iframe>
+<br>
 
 # Random Things to Remember
 
@@ -1975,8 +1976,17 @@ An in-depth look into the world of React.
 
 #### A deep dive into the world of React.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" /><figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a></figcaption></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*LnugLVhKbiGfSSHr" alt="Photo by Ferenc Almasi on Unsplash" class="graf-image" />
+<figcaption>Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Ferenc Almasi</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor">Unsplash</a>
+</figcaption>
+</figure>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b">
+<strong>ALLOFMYOTHERARTICLES</strong>
+<br />
+bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 ### Random Things to Remember
 
@@ -2059,10 +2069,14 @@ bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of
 -   <span id="9051">`create-react-app` : Extensible command-line tool to help generate standard React applications.</span>
 -   <span id="af96">`Webpack` : In between tool for dealing with the extra build step involved.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" /></figure>- <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*LHVHf7SPZ1t0UVAj" class="graf-image" />
+</figure>- <span id="e0ad">HMR : (Hot Module Replacement) When you make changes to your source code the changes are delivered in real-time.</span>
 - <span id="923a">React Developers created something called `Flux Architecture` to moderate how their web page consumes and modifies data received from back-end API's.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wR-lbD4zf45-IHoQ" class="graf-image" /></figure>- <span id="b16e">Choosing React</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*wR-lbD4zf45-IHoQ" class="graf-image" />
+</figure>- <span id="b16e">Choosing React</span>
 - <span id="eefd">Basically, React is super important to learn and master.</span>
 
 ---
@@ -2158,7 +2172,9 @@ CommonJS (Equivalent)
 
 Importing with ES6 vs CommonJS
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*7EZESKf0XPbncXAY" class="graf-image" /></figure>- <span id="18b1">Import statements in ES6 modules must always be at the top of the file, because all imports must occur before the rest of the file's code runs. ES6</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*7EZESKf0XPbncXAY" class="graf-image" />
+</figure>- <span id="18b1">Import statements in ES6 modules must always be at the top of the file, because all imports must occur before the rest of the file's code runs. ES6</span>
 
 <!-- -->
 
@@ -2228,7 +2244,8 @@ Aliasing imports
 
 Browser support for ES6 Modules
 
--   <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js"></script>`</span>
+-   <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js">
+</script>`</span>
 -   <span id="4f5c">You can get browser support for ES6 modules by adding module into your script tag.</span>
 
 ---
@@ -2755,7 +2772,9 @@ From JavaScript To DOM
 -   <span id="eafa">Each `li` has an `a` element as a child</span>
 -   <span id="84cc">Each `a` has a `text content` child</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*8ls0PmtREELbf5Wm" class="graf-image" /></figure>React.createElement(
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*8ls0PmtREELbf5Wm" class="graf-image" />
+</figure>React.createElement(
       "ul",
       null,
       React.createElement(
@@ -2960,7 +2979,9 @@ JSX Version
 
 -   <span id="b00d">Keep in mind that self closing tags in React must have a `forward slash` to close it.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*NNxuFMF-sOL8Wvdl" class="graf-image" /></figure>- <span id="346d">Properties and Data</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*NNxuFMF-sOL8Wvdl" class="graf-image" />
+</figure>- <span id="346d">Properties and Data</span>
 
 <!-- -->
 
@@ -3096,7 +3117,8 @@ Using a Custom Template `npx create-react-app my-app --template @appacademy/simp
         <title>React App</title>
       </head>
       <body>
-        <div id="root"></div>
+        <div id="root">
+</div>
       </body>
     </html>
 
@@ -3695,7 +3717,9 @@ Note About Client-side vs server-side validation
 
 ### Component Lifecycle
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" /></figure>- <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz" class="graf-image" />
+</figure>- <span id="e1d9">Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.</span>
 
 1.  <span id="8e64">Loading (Mounting)</span>
 2.  <span id="7e94">Updating</span>
@@ -3789,7 +3813,9 @@ Setting up a Consumer
 -   <span id="855a">NOT Component State</span>
 -   <span id="4c1a">Just used for managing Data</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" /></figure>- <span id="04c0">Visual of how an app without React manages it's data.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4" class="graf-image" />
+</figure>- <span id="04c0">Visual of how an app without React manages it's data.</span>
 - <span id="bae2">A lot of prop threading happening.</span>
 - <span id="989f">Data stored in a sep. location — `global data`. The Anatomy of Redux</span>
 - <span id="cd66">`Store`</span>
@@ -3857,9 +3883,13 @@ What is Flux?
 -   <span id="af4f">`Store` : The entire state of the application, responsible for updating the state of your app.</span>
 -   <span id="d7ff">`View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" /></figure>- <span id="af94">Redux</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5" class="graf-image" />
+</figure>- <span id="af94">Redux</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Nd73GjTY1PVQtjtQ" class="graf-image" /></figure>- <span id="dc16">Library that facilitates the implementation of Flux.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Nd73GjTY1PVQtjtQ" class="graf-image" />
+</figure>- <span id="dc16">Library that facilitates the implementation of Flux.</span>
 - <span id="623a">Redux Three Principles</span>
 - <span id="2ac6">`Single Source of Truth`</span>
 - <span id="a2b9">`State is Read-Only`</span>
@@ -4820,7 +4850,9 @@ To create a production build, run the command `npm run build`. The production bu
 
 Now your application is ready to be deployed!
 
-> _For more information about how to deploy a Create React App project into production, see_ <a href="https://facebook.github.io/create-react-app/docs/deployment" class="markup--anchor markup--blockquote-anchor"><em>this page</em></a> _in the official documentation._
+> _For more information about how to deploy a Create React App project into production, see_ <a href="https://facebook.github.io/create-react-app/docs/deployment" class="markup--anchor markup--blockquote-anchor">
+<em>this page</em>
+</a> _in the official documentation._
 
 ### What you learned
 
@@ -4838,26 +4870,48 @@ Now that you've had an introduction to React Router, feel free to explore the of
 
 ### Setting up React Router
 
--   <span id="bfa4"><a href="https://reacttraining.com/react-router/web/guides/quick-start" class="markup--anchor markup--li-anchor">React Router Quick Start</a></span>
--   <span id="b0cb"><a href="https://reacttraining.com/react-router/web/api/HashRouter" class="markup--anchor markup--li-anchor">HashRouter</a></span>
--   <span id="f48b"><a href="https://reacttraining.com/react-router/web/api/BrowserRouter" class="markup--anchor markup--li-anchor">BrowserRouter</a></span>
+-   <span id="bfa4">
+<a href="https://reacttraining.com/react-router/web/guides/quick-start" class="markup--anchor markup--li-anchor">React Router Quick Start</a>
+</span>
+-   <span id="b0cb">
+<a href="https://reacttraining.com/react-router/web/api/HashRouter" class="markup--anchor markup--li-anchor">HashRouter</a>
+</span>
+-   <span id="f48b">
+<a href="https://reacttraining.com/react-router/web/api/BrowserRouter" class="markup--anchor markup--li-anchor">BrowserRouter</a>
+</span>
 
 ### Routes and Links
 
--   <span id="72bd"><a href="https://reacttraining.com/react-router/web/api/Route" class="markup--anchor markup--li-anchor">Route</a></span>
--   <span id="e256"><a href="https://reacttraining.com/react-router/web/api/Link" class="markup--anchor markup--li-anchor">Link</a></span>
--   <span id="1d9d"><a href="https://reacttraining.com/react-router/web/api/NavLink" class="markup--anchor markup--li-anchor">NavLink</a></span>
+-   <span id="72bd">
+<a href="https://reacttraining.com/react-router/web/api/Route" class="markup--anchor markup--li-anchor">Route</a>
+</span>
+-   <span id="e256">
+<a href="https://reacttraining.com/react-router/web/api/Link" class="markup--anchor markup--li-anchor">Link</a>
+</span>
+-   <span id="1d9d">
+<a href="https://reacttraining.com/react-router/web/api/NavLink" class="markup--anchor markup--li-anchor">NavLink</a>
+</span>
 
 ### Switch and Redirect
 
--   <span id="5240"><a href="https://reacttraining.com/react-router/web/api/Switch" class="markup--anchor markup--li-anchor">Switch</a></span>
--   <span id="b405"><a href="https://reacttraining.com/react-router/web/api/Redirect" class="markup--anchor markup--li-anchor">Redirect</a></span>
+-   <span id="5240">
+<a href="https://reacttraining.com/react-router/web/api/Switch" class="markup--anchor markup--li-anchor">Switch</a>
+</span>
+-   <span id="b405">
+<a href="https://reacttraining.com/react-router/web/api/Redirect" class="markup--anchor markup--li-anchor">Redirect</a>
+</span>
 
 ### React Router Params (ownProps)
 
--   <span id="e0d6"><a href="https://reacttraining.com/react-router/web/api/history" class="markup--anchor markup--li-anchor">props.history</a></span>
--   <span id="5f4a"><a href="https://reacttraining.com/react-router/web/api/location" class="markup--anchor markup--li-anchor">props.location</a></span>
--   <span id="bd15"><a href="https://reacttraining.com/react-router/web/api/match" class="markup--anchor markup--li-anchor">props.match</a></span>
+-   <span id="e0d6">
+<a href="https://reacttraining.com/react-router/web/api/history" class="markup--anchor markup--li-anchor">props.history</a>
+</span>
+-   <span id="5f4a">
+<a href="https://reacttraining.com/react-router/web/api/location" class="markup--anchor markup--li-anchor">props.location</a>
+</span>
+-   <span id="bd15">
+<a href="https://reacttraining.com/react-router/web/api/match" class="markup--anchor markup--li-anchor">props.match</a>
+</span>
 
 ---
 
@@ -5230,7 +5284,9 @@ Create React App configures webpack with support for loading images (as well as 
 
 Download any image of off the Web or <a href="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/react-builds/assets/react-builds-cat.png" class="markup--anchor markup--p-anchor">click here</a> to download the below image.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*233dNJ6vfgAmEVCD" class="graf-image" /></figure>Then within the `src` folder add a new folder named `image`. Within that folder add a new component file named `Image.js`. Also add your downloaded image file to the `image` folder (so it's a sibling to the `Image.js` file).
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*233dNJ6vfgAmEVCD" class="graf-image" />
+</figure>Then within the `src` folder add a new folder named `image`. Within that folder add a new component file named `Image.js`. Also add your downloaded image file to the `image` folder (so it's a sibling to the `Image.js` file).
 
 Update the contents of the `Image.js` file to this:
 
@@ -5303,7 +5359,8 @@ Then update the `Image` component to this:
         <div>
           {/* Import result is the URL of your image. */}
           <img src={cat} alt="Cat" />
-          <div className='cat'></div>
+          <div className='cat'>
+</div>
         </div>
       );
     }
@@ -5336,7 +5393,8 @@ The `production` list specifies the browsers to target when creating a productio
 To experiment with this configuration option, let's add a class component to the project. Add a new folder named `class-component` to the `src` folder. Within that folder, add a file named `ClassComponent.js` containing the following code:
 
 
-```jsx
+```js
+//x
 
 
 // ./src/class-component/ClassComponent.js
@@ -5354,7 +5412,8 @@ export default ClassComponent;
 
 Don't forget to update your `App` component to render the new component:
 
-```jsx
+```js
+//x
 // ./src/App.js
 
 import React from 'react';
@@ -5380,7 +5439,8 @@ export default App;
 
 Now run your application using `npm start`. Open your browser's developer tools and view the "Sources" for the current page. Expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and select the `main.chunk.js` file. Press `CMD+F` on macOS or `CTRL+F` on Windows to search the file for "Class Component". Here's what the transpiled code looks like for the `ClassComponent` class:
 
-```jsx
+```js
+//x
 class ClassComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     render() {
         return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
@@ -5407,7 +5467,8 @@ But what if you need to target a version of a browser that doesn't support ES201
 
 Change the `browserslist.development` property in the `package.json` file to this:
 
-```json
+```js
+//on
 {
     "browserslist": {
         "production": [">0.2%", "not dead", "not op_mini all"],
@@ -5418,13 +5479,18 @@ Change the `browserslist.development` property in the `package.json` file to thi
 
 The query `chrome >= 30` specifies that you want to target Chrome version 30 or newer.
 
-> _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor"><em>browserl.ist</em></a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
+> _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor">
+<em>browserl.ist</em>
+</a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
 
 Stop your application if it's currently running. Delete the `./node_modules/.cache` folder and run `npm start` again. Then view the `main.chunk.js` bundle again in the developer tools:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*TKBUkpbL5aSm5PTQ" class="graf-image" /></figure>Now your ES2015 class component is being converted to a constructor function! Here's the transpiled code for reference:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*TKBUkpbL5aSm5PTQ" class="graf-image" />
+</figure>Now your ES2015 class component is being converted to a constructor function! Here's the transpiled code for reference:
 
-```jsx
+```js
+//x
 let ClassComponent = /*#__PURE__*/ (function (_React$Component) {
     Object(
         _Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[
@@ -5494,7 +5560,8 @@ Remember that environment variables need to be prefixed with `REACT_APP_` for Cr
 
     // ./src/App.js
 
-```jsx
+```js
+//x
 import React from 'react';
 import HeadingA from './css-modules/HeadingA';
 import HeadingB from './css-modules/HeadingB';
@@ -5530,7 +5597,8 @@ You can also reference environment variables in your `./public/index.html` file 
         <title>%REACT_APP_TITLE%</title>
     </head>
     <body>
-        <div id="root"></div>
+        <div id="root">
+</div>
     </body>
 </html>
 ```
@@ -5541,7 +5609,8 @@ If you expand the `localhost:3000` &gt; `static` &gt; `js` node on the left and 
 
 Here's a closer look at the relevant `React.createElement` method call:
 
-```jsx
+```js
+//x
 /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
     'h1',
     {
@@ -5570,7 +5639,8 @@ To add React Router to the application, start by installing the `react-router-do
 
 Then update the `App` component to this code:
 
-```jsx
+```js
+//x
 // ./src/App.js
 
 import React from 'react';
@@ -5694,10 +5764,18 @@ Open a browser and browse to the URL `http://localhost:9000/`. You should see yo
 
 Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
--   <span id="58e7"><a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a></span>
--   <span id="3fa9"><a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a></span>
+-   <span id="58e7">
+<a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a>
+</span>
+-   <span id="3fa9">
+<a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a>
+</span>
 
-_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><strong><em>plainenglish.io</em></strong></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor">
+<strong>
+<em>plainenglish.io</em>
+</strong>
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 15, 2021](https://medium.com/p/1965dcde8d4f).
 

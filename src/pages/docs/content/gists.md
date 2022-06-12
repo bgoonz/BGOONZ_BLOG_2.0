@@ -15,7 +15,9 @@ template: docs
 
 <h2>Gist Archive</h2>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonzgist.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://bgoonzgist.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 
 <br>
 
@@ -31,6 +33,7 @@ template: docs
 ## Featured Gists:
 
 ```js
+//
 const Promise = require('bluebird');
 const fs = Promise.promisifyAll(require('fs'));
 const crypto = require('crypto');
@@ -104,7 +107,7 @@ hashDirIn(pathB);
 
 > will replace any spaces in file names with an underscore!
 
-```sh
+```console
 
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
   ## TAKING IT A STEP FURTHER:
@@ -138,11 +141,15 @@ RecurseDirs "./"
 
 > Language: Javascript/Jquery
 
-> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
+> In combination with the script tag : <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> > </script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks.
 
 ```js
+//
 $(document).ready(function () {
-    $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+    $('code, pre').append('<span class="command-copy" >
+<i class="fa fa-clipboard" aria-hidden="true">
+</i>
+</span>');
     $('code span.command-copy').click(function (e) {
         var text = $(this).parent().text().trim(); //.text();
         var copyHex = document.createElement('input');
@@ -172,6 +179,7 @@ $(document).ready(function () {
 ### Append Files in PWD
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -185,6 +193,7 @@ fs.writeFile('output.md', cat, (err) => {
 ### doesUserFrequentStarbucks.js
 
 ```js
+//
 const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
 console.log(isAppleDevice);
 // Result: will return true if user is on an Apple device
@@ -195,6 +204,7 @@ console.log(isAppleDevice);
 ### arr-intersection.js
 
 ```js
+//
 /*
  function named intersection(firstArr) that takes in an array and
 returns a function.
@@ -226,6 +236,7 @@ console.log(fame(['a', 'f', 'z', 'b'])); // returns [ 'f', 'a' ]
 ### arr-of-cum-partial-sums.js
 
 ```js
+//
 /*
 First is recurSum(arr, start) which returns the sum of the elements of arr from the index start till the very end.
 Second is partrecurSum() that recursively concatenates the required sum into an array and when we reach the end of the array, it returns the concatenated array.
@@ -269,6 +280,7 @@ rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
 ---
 
 ```js
+//
 function camelToKebab(value) {
     return value.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
@@ -281,6 +293,7 @@ function camelToKebab(value) {
 ---
 
 ```js
+//
 function camel(str) {
     return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
         if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
@@ -296,6 +309,7 @@ function camel(str) {
 ---
 
 ```js
+//
 function addTwoNumbers(l1, l2) {
     let result = new ListNode(0);
     let currentNode = result;
@@ -325,6 +339,7 @@ function addTwoNumbers(l1, l2) {
 ### fast-is-alpha-numeric.js
 
 ```js
+//
 //Function to test if a character is alpha numeric that is faster than a regular
 //expression in JavaScript
 
@@ -355,6 +370,7 @@ console.log(isAlphaNumeric('!')); //false
 ---
 
 ```js
+//
 function replaceWords(str, before, after) {
     if (/^[A-Z]/.test(before)) {
         after = after[0].toUpperCase() + after.substring(1);
@@ -374,6 +390,7 @@ console.log(replaceWords('His name is Tom', 'Tom', 'john'));
 ### flatten-arr.js
 
 ```js
+//
 /*Simple Function to flatten an array into a single layer */
 const flatten = (array) => array.reduce((accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele), []);
 ```
@@ -383,6 +400,7 @@ const flatten = (array) => array.reduce((accum, ele) => accum.concat(Array.isArr
 ### isWeekDay.js
 
 ```js
+//
 const isWeekday = (date) => date.getDay() % 6 !== 0;
 console.log(isWeekday(new Date(2021, 0, 11)));
 // Result: true (Monday)
@@ -397,6 +415,7 @@ console.log(isWeekday(new Date(2021, 0, 10)));
 ---
 
 ```js
+//
 function longestCommonPrefix(strs) {
     let prefix = '';
     if (strs.length === 0) return prefix;

@@ -210,14 +210,18 @@ excerpt: Family Promise organizes congregations, social service agencies and
      title="Family_Promise_embed"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe><br>
+   >
+</iframe>
+<br>
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/family-promise-embed-b434z?autoresize=1&fontsize=12&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Family_Promise_embed"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe><br>
+   >
+</iframe>
+<br>
 
 <br>
 
@@ -237,7 +241,9 @@ excerpt: Family Promise organizes congregations, social service agencies and
 <br>
 <h1>   Family-Promise Application</h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://a.familypromiseservicetracker.dev/dashboard" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://a.familypromiseservicetracker.dev/dashboard" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 <br>
 <br>
 <br>

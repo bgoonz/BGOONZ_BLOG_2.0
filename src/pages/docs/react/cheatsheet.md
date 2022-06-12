@@ -17,7 +17,9 @@ template: docs
      title="react patterns"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe><br>
+   >
+</iframe>
+<br>
 
 ## React Cheat Sheet
 
@@ -31,12 +33,14 @@ template: docs
 
 ### Components
 
-```jsx
+```js
+//x
 import React from 'react';
 import ReactDOM from 'react-dom';
 ```
 
-```jsx
+```js
+//x
 class Hello extends React.Component {
     render() {
         return <div className="message-box">Hello {this.props.name}</div>;
@@ -519,11 +523,13 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 
 ```
 const style = { height: 10 }
-return <div style={style}></div>
+return <div style={style}>
+</div>
 ```
 
 ```
-return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}>
+</div>
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -802,13 +808,13 @@ MyCo.propTypes = {
 
 # React:
 
--   `<script src="https://unpkg.com/react@15/dist/react.js"></script>`
+-   `<script src="https://unpkg.com/react@15/dist/react.js"> </script>`
 -   `$ npm install react --save`
 -   `$ bower install react --save`
 
 React DOM:
 
--   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>`
+-   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"> </script>`
 -   `$ npm install react-dom`
 -   `$ bower install react-dom --save`
 
@@ -817,18 +823,21 @@ React DOM:
 ### Rendering (ES5)
 
 ```js
+//
 ReactDOM.render(React.createElement(Link, { name: 'HackHall.com' }), document.getElementById('menu'));
 ```
 
 ### Rendering (ES5+JSX)
 
 ```js
+//
 ReactDOM.render(<Link name="HackHall.com" />, document.getElementById('menu'));
 ```
 
 ## Server-side Rendering
 
 ```js
+//
 var ReactDOMServer = require('react-dom/server');
 ReactDOMServer.renderToString(Link, { name: 'HackHall.com' });
 ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
@@ -839,6 +848,7 @@ ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
 ### ES5
 
 ```js
+//
 var Link = React.createClass({
     displayName: 'Link',
     render: function () {
@@ -850,6 +860,7 @@ var Link = React.createClass({
 ### ES5 + JSX
 
 ```js
+//
 var Link = React.createClass({
     render: function () {
         return (
@@ -864,6 +875,7 @@ var Link = React.createClass({
 ### ES6 + JSX
 
 ```js
+//
 class Link extends React.Component {
     render() {
         return (
@@ -885,7 +897,7 @@ class Link extends React.Component {
 
 <summary>  </summary>
 
-```sh
+```console
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
@@ -895,6 +907,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 // notes: don't forget the command lines
 
 ```js
+//
 
 /* *******************************************************************************************
  * REACT
@@ -943,7 +956,8 @@ React.Children.only(children)
 React.Children.toArray(children)
 
 // The React.Fragment component lets you return multiple elements in a render() method without creating an additional DOM element
-// You can also use it with the shorthand <></> syntax.
+// You can also use it with the shorthand <>
+</> syntax.
 React.Fragment
 
 /* *******************************************************************************************
@@ -1228,6 +1242,7 @@ MyComponent.propTypes = {
 ES5:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1254,6 +1269,7 @@ var Link = React.createClass({
 ES5 + JSX:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1279,6 +1295,7 @@ var Link = React.createClass({
 ES6 + JSX:
 
 ```js
+//
 export class Link extends React.Component {
     constructor(props) {
         super(props);
@@ -1357,6 +1374,7 @@ More methods:
 ### Custom Validation
 
 ```js
+//
 propTypes: {
   customProp: function(props, propName, componentName) {
     if (!/regExPattern/.test(props[propName])) {

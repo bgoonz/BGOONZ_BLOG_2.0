@@ -11,12 +11,22 @@ seo:
 template: docs
 ---
 
-\\
+
 
 <br>
 <h1>My DevDocs Deploy</h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://devdecs42.herokuapp.com/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://devdecs42.herokuapp.com/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
+<br>
+
+<br>
+<h1>Personal Docs</h1>
+<br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bryan-guner.gitbook.io/my-docs/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 <br>
 
 -   [/job-hunt/](https://bgoonz-blog.netlify.app/job-hunt/)

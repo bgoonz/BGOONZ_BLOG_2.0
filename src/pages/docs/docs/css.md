@@ -13,7 +13,8 @@ template: docs
 
 # Learn CSS
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe><br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<br>
 
 CSS Selectors
 
@@ -61,9 +62,13 @@ CSS Selectors
 
 <!-- -->
 
-    <div class="box yellow"></div>
-    <div class="box orange"></div>
-    <div class="circle orange"></div>
+    <div class="box yellow">
+
+</div>
+    <div class="box orange">
+</div>
+    <div class="circle orange">
+</div>
 
 -   <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
 -   <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a _descendant selector_.</span>
@@ -151,7 +156,19 @@ Who has the most tags? If no one, continue.
 
 Last Read in the browser wins.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Ub47AaMXuT1m8_T-" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*t0oXzsLPxpMwNbKo.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*2xr0vyHwf6UN905l" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*oq83hQ5qvtT6gDd9.png" class="graf-image" /></figure><style>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Ub47AaMXuT1m8_T-" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*t0oXzsLPxpMwNbKo.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*2xr0vyHwf6UN905l" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*oq83hQ5qvtT6gDd9.png" class="graf-image" />
+</figure>
+<style>
       .box {
         width: 50px;
         height: 50px;
@@ -165,8 +182,10 @@ Last Read in the browser wins.
         border: 1px solid purple;
       }
     </style>
-    <div class="box yellow"></div>
-    <div class="box orange"></div>
+    <div class="box yellow">
+</div>
+    <div class="box orange">
+</div>
 
 -   <span id="1939">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
 
@@ -178,7 +197,12 @@ Last Read in the browser wins.
 
 -   <span id="d6fc">`font-family` : change the font.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" /></figure>- <span id="daba">Remember that not all computers have the same fonts on them.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" />
+</figure>- <span id="daba">Remember that not all computers have the same fonts on them.</span>
 - <span id="0aa8">You can import web fonts via an api by using</span>
 - <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
 - <span id="d8ff">And then reference it in your font-family.</span>
@@ -268,7 +292,12 @@ This bothered many programmers so they created the **border box** to include the
       top: 0;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*mMCUEQ94L4_zxwNc" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*TgjpfTmdczESRAfU.png" class="graf-image" /></figure>**Absolute Positioning**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*mMCUEQ94L4_zxwNc" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*TgjpfTmdczESRAfU.png" class="graf-image" />
+</figure>**Absolute Positioning**
 
 -   <span id="d597">Absolute elements are removed from the normal page flow and other elements around it act like it's not there. (how we can easily achieve some layering)</span>
 -   <span id="eb5b">Here are some examples to illustration absolute positioning:</span>
@@ -283,7 +312,12 @@ This bothered many programmers so they created the **border box** to include the
       top: 60px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" /></figure>- <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Mu1E5D10RQaBpzms" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" />
+</figure>- <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
 - <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
 
 <!-- -->
@@ -298,7 +332,12 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*phWx-191VVQ5pRF9" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png" class="graf-image" /></figure>- <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*phWx-191VVQ5pRF9" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png" class="graf-image" />
+</figure>- <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
 
 <!-- -->
 
@@ -311,7 +350,12 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" /></figure>- <span id="528a">Example where the absolute element has it's bottom property modified.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*HJbtARqC1qmeWTHS" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" />
+</figure>- <span id="528a">Example where the absolute element has it's bottom property modified.</span>
 
 <!-- -->
 
@@ -323,7 +367,12 @@ This bothered many programmers so they created the **border box** to include the
       position: absolute;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" /></figure>- <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*e7H6ImFUmcPGMaoa" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" />
+</figure>- <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
 
 **Fixed Positioning**
 
@@ -338,7 +387,12 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
 -   <span id="9080">A good example are headers in a scrollable list.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*BRVlqobKK0IZtnXq" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*jQQJYWVoQY2eNANS.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*BRVlqobKK0IZtnXq" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*jQQJYWVoQY2eNANS.gif" class="graf-image" />
+</figure>
 
 ---
 
@@ -353,7 +407,12 @@ This bothered many programmers so they created the **border box** to include the
 
 -   <span id="e23b">Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>- <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" />
+</figure>- <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
 
 <!-- -->
 
@@ -509,7 +568,12 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
       font-size: 36px;
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*Z6AbWnbmbFfu-tSM" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif" class="graf-image" /></figure>- <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Z6AbWnbmbFfu-tSM" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif" class="graf-image" />
+</figure>- <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
 
 <!-- -->
 
@@ -528,7 +592,12 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
       transform: rotate(180deg);
     }
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" /></figure>- <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" />
+</figure>- <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
 
 ---
 
@@ -579,12 +648,20 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
+<strong>a/A-Student-Resources</strong>
+<br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/938871b4521a).
