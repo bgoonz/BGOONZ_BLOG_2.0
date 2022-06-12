@@ -1008,14 +1008,14 @@ ES2015 adds two extensions to object values and object literals:
     strings.
 
 -   Object literals can contain _[computed property names][computed properties]_:
-    ```js
+ ```js
 //
     var foo = 42;
     var obj = {
         [foo]: 0
     };
     // creates {42: 0}
-    ```
+ ```
 
 </div>
 
@@ -2014,24 +2014,24 @@ tip-writer-support: https://www.coinbase.com/loverajoel
     (`Boolean(undefined) // false`, `Boolean(null) // false`)
 -   You can know if a variable is [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-    ```javascript
+ ```javascript
     typeof variable === 'undefined';
-    ```
+ ```
 
-````
+```
 - You can check if a variable is [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
 
   ```javascript
   variable === null
-````
+```
 
 -   The **equality** operator considers them equal, but the **identity** doesn't
 
-    ```javascript
+ ```javascript
     null == undefined; // true
 
     null === undefined; // false
-    ```
+ ```
 
 ```
 

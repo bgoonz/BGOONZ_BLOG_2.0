@@ -504,7 +504,7 @@ find . -type f -exec chmod 644 {} \;
 ## Description: need to : `sudo apt install rename`
 > Notes: Issue when renaming file without numbers collides with existing file name...
 ## # code
-````console
+```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 for i in *.html; do mv "$i" "${i%-*}.html"; done
@@ -515,7 +515,7 @@ let cat = require('child_process')
 .execSync('cat *')
 .toString('UTF-8');
 fs.writeFile('output.md', cat, err =>  {
-````
+```
 # 2. Download Website Using Wget
 > Notes: ==> sudo apt install wget
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
@@ -814,13 +814,13 @@ killall -s KILL node
 ## Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
 find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
 find . -type f -exec rename 's/-master//g' {} +
-> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
+> Notes: The same could be done for folder names by changing the_-type f_flag (for file) to a_-type d_flag (for directory)
 find <mydir>  -type d -exec sed -i 's/<string1> /<string2> /g' {} +
 find . -type d -exec rename 's/-master//g' {} +
 # 40. Remove spaces from file and folder names recursively
 ## Description: replaces spaces in file and folder names with an `_` underscore
 > Notes: need to run `sudo apt install rename` to use this command
-find . -name "* *" -type d | rename 's/ /_/g'
+find . -name "**" -type d | rename 's/ /_/g'
 find . -name "**" -type f | rename 's/ /_/g'
 # 41. Zip Each subdirectories in a given directory into their own zip file
 for i in */; do zip -r "${i%/}.zip" "$i"; done
@@ -831,10 +831,10 @@ PARAM (
 [string] $UnzipPath = "./RESULT"
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
-$ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
+$ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include*.ZIP
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
-Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
+Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) *100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
 $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
 $progress++
@@ -877,7 +877,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 > Notes:
 ## ## code
 ```console
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+find . -name*right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 

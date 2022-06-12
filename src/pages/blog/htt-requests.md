@@ -191,7 +191,8 @@ We see that in the path we have to pass in a string with the target user’s use
 
 We're given the URL for this API:
 
-```bash
+```console
+
 
 ```
 
@@ -237,7 +238,8 @@ Now we're ready to make our request! The documentation tells us we should pass i
 
 We're given the URL for this API:
 
-```bash
+```console
+
 
 ```
 
@@ -284,7 +286,8 @@ We didn’t actually pass a description to our Gist when we created it, so we ca
 
 We're given the URL for this API:
 
-```bash
+```console
+
 
 ```
 
@@ -324,7 +327,8 @@ Let's delete the Gist we created. We should pass in the header and the Gist ID.
 
 We're given the URL for this API:
 
-```bash
+```console
+
 
 ```
 

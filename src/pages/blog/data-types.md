@@ -22,17 +22,17 @@ cmseditable: true
 
 1. **Declare a variable**. Let's declare a variable using the `let` keyword:
 
-    ```javascript
+ ```javascript
     let myVariable;
-    ```
+ ```
 
    `myVariable` has now been declared using the `let` keyword. It currently doesn't have a value.
 
 1. **Assign a value**. Store a value in a variable with the `=` operator, followed by the expected value.
 
-    ```javascript
+ ```javascript
     myVariable = 123;
-    ```
+ ```
 
    > Note: the use of `=` in this lesson means we make use of an "assignment operator", used to set a value to a variable. It doesn't denote equality.
 
@@ -40,17 +40,17 @@ cmseditable: true
 
 1. **Refactor**. Replace your code with the following statement.
 
-    ```javascript
+ ```javascript
     let myVariable = 123;
-    ```
+ ```
 
     The above is called an _explicit initialization_ when a variable is declared and is assigned a value at the same time.
 
 1. **Change the variable value**. Change the variable value in the following way:
 
-   ```javascript
+```javascript
    myVariable = 321;
-   ```
+```
 
    Once a variable is declared, you can change its value at any point in your code with the `=` operator and the new value.
 
@@ -70,24 +70,24 @@ Constants are similar to variables, with two exceptions:
 - **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
    - **Simple value**. The following is NOT allowed:
    
-      ```javascript
+   ```javascript
       const PI = 3;
       PI = 4; // not allowed
-      ```
+   ```
  
    - **Object reference is protected**. The following is NOT allowed.
    
-      ```javascript
+   ```javascript
       const obj = { a: 3 };
       obj = { b: 5 } // not allowed
-      ```
+   ```
 
     - **Object value is not protected**. The following IS allowed:
     
-      ```javascript
+   ```javascript
       const obj = { a: 3 };
       obj.a = 5;  // allowed
-      ```
+   ```
 
       Above you are changing the value of the object but not the reference itself, which makes it allowed.
 
