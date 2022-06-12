@@ -98,8 +98,8 @@ If a variable is not found anywhere, that's an error in strict mode. Without use
 -   All functions in JavaScript are closures.
 -   The internal property `[[Environment]]` of a function, refers to the outer lexical environment
 
-### [](https://dev.to/bgoonz/closures-in-javascript-1moc#question-look-at-the-code-below-you-have-a-for-loop-if-you-have-settimeout-inside-it-if-log-the-loop-counter-inside-settimeout-what-will-be-logged)Question: Look at the code below, you have a for loop if you have setTimeout inside it. If log the loop counter inside setTimeout, what will be logged?
-
+### [Question: Look at the code below, you have a for loop if you have setTimeout inside it. If log the loop counter inside setTimeout, what will be logged?
+](https://dev.to/bgoonz/closures-in-javascript-1moc#question-look-at-the-code-below-you-have-a-for-loop-if-you-have-settimeout-inside-it-if-log-the-loop-counter-inside-settimeout-what-will-be-logged)
 ```
 
 ```
