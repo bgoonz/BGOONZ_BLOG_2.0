@@ -9,15 +9,16 @@ thumb_image: https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/datatype
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/javascript.yaml
+    - src/data/categories/javascript.yaml
 tags:
-  - src/data/tags/array.yaml
-  - src/data/tags/data-structures-algorithms.yaml
+    - src/data/tags/array.yaml
+    - src/data/tags/data-structures-algorithms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
+
 ### Task - working with variables
 
 1. **Declare a variable**. Let's declare a variable using the `let` keyword:
@@ -26,7 +27,7 @@ cmseditable: true
     let myVariable;
     ```
 
-   `myVariable` has now been declared using the `let` keyword. It currently doesn't have a value.
+    `myVariable` has now been declared using the `let` keyword. It currently doesn't have a value.
 
 1. **Assign a value**. Store a value in a variable with the `=` operator, followed by the expected value.
 
@@ -34,9 +35,9 @@ cmseditable: true
     myVariable = 123;
     ```
 
-   > Note: the use of `=` in this lesson means we make use of an "assignment operator", used to set a value to a variable. It doesn't denote equality.
+    > Note: the use of `=` in this lesson means we make use of an "assignment operator", used to set a value to a variable. It doesn't denote equality.
 
-   `myVariable` has now been *initialized* with the value 123.
+    `myVariable` has now been _initialized_ with the value 123.
 
 1. **Refactor**. Replace your code with the following statement.
 
@@ -48,13 +49,13 @@ cmseditable: true
 
 1. **Change the variable value**. Change the variable value in the following way:
 
-   ```javascript
-   myVariable = 321;
-   ```
+    ```javascript
+    myVariable = 321;
+    ```
 
-   Once a variable is declared, you can change its value at any point in your code with the `=` operator and the new value.
+    Once a variable is declared, you can change its value at any point in your code with the `=` operator and the new value.
 
-   ✅ Try it! You can write JavaScript right in your browser. Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type `let myVariable = 123`, press return, then type `myVariable`. What happens? Note, you'll learn more about these concepts in subsequent lessons.
+    ✅ Try it! You can write JavaScript right in your browser. Open a browser window and navigate to Developer Tools. In the console, you will find a prompt; type `let myVariable = 123`, press return, then type `myVariable`. What happens? Note, you'll learn more about these concepts in subsequent lessons.
 
 ## Constants
 
@@ -66,32 +67,33 @@ const MY_VARIABLE = 123;
 
 Constants are similar to variables, with two exceptions:
 
-- **Must have a value**. Constants must be initialized, or an error will occur when running code.
-- **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
-   - **Simple value**. The following is NOT allowed:
-   
-      ```javascript
-      const PI = 3;
-      PI = 4; // not allowed
-      ```
- 
-   - **Object reference is protected**. The following is NOT allowed.
-   
-      ```javascript
-      const obj = { a: 3 };
-      obj = { b: 5 } // not allowed
-      ```
+-   **Must have a value**. Constants must be initialized, or an error will occur when running code.
+-   **Reference cannot be changed**. The reference of a constant cannot be changed once initialized, or an error will occur when running code. Let's look at two examples:
 
-    - **Object value is not protected**. The following IS allowed:
-    
-      ```javascript
-      const obj = { a: 3 };
-      obj.a = 5;  // allowed
-      ```
+    -   **Simple value**. The following is NOT allowed:
 
-      Above you are changing the value of the object but not the reference itself, which makes it allowed.
+        ```javascript
+        const PI = 3;
+        PI = 4; // not allowed
+        ```
 
-   > Note, a `const` means the reference is protected from reassignment. The value is not _immutable_ though and can change, especially if it's a complex construct like an object.
+    -   **Object reference is protected**. The following is NOT allowed.
+
+        ```javascript
+        const obj = { a: 3 };
+        obj = { b: 5 }; // not allowed
+        ```
+
+    -   **Object value is not protected**. The following IS allowed:
+
+        ```javascript
+        const obj = { a: 3 };
+        obj.a = 5; // allowed
+        ```
+
+        Above you are changing the value of the object but not the reference itself, which makes it allowed.
+
+    > Note, a `const` means the reference is protected from reassignment. The value is not _immutable_ though and can change, especially if it's a complex construct like an object.
 
 ## Data Types
 
@@ -125,9 +127,9 @@ There are several types of operators to use when performing arithmetic functions
 
 Strings are sets of characters that reside between single or double quotes.
 
-- `'This is a string'`
-- `"This is also a string"`
-- `let myString = 'This is a string value stored in a variable';`
+-   `'This is a string'`
+-   `"This is also a string"`
+-   `let myString = 'This is a string value stored in a variable';`
 
 Remember to use quotes when writing a string, or else JavaScript will assume it's a variable name.
 
@@ -138,25 +140,24 @@ Strings are textual, and will require formatting from time to time.
 To **concatenate** two or more strings, or join them together, use the `+` operator.
 
 ```javascript
-let myString1 = "Hello";
-let myString2 = "World";
+let myString1 = 'Hello';
+let myString2 = 'World';
 
-myString1 + myString2 + "!"; //HelloWorld!
-myString1 + " " + myString2 + "!"; //Hello World!
-myString1 + ", " + myString2 + "!"; //Hello, World!
-
+myString1 + myString2 + '!'; //HelloWorld!
+myString1 + ' ' + myString2 + '!'; //Hello World!
+myString1 + ', ' + myString2 + '!'; //Hello, World!
 ```
 
 ✅ Why does `1 + 1 = 2` in JavaScript, but `'1' + '1' = 11?` Think about it. What about `'1' + 1`?
 
-**Template literals** are another way to format strings, except instead of quotes, the backtick  is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
+**Template literals** are another way to format strings, except instead of quotes, the backtick is used. Anything that is not plain text must be placed inside placeholders `${ }`. This includes any variables that may be strings.
 
 ```javascript
-let myString1 = "Hello";
-let myString2 = "World";
+let myString1 = 'Hello';
+let myString2 = 'World';
 
 `${myString1} ${myString2}!` //Hello World!
-`${myString1}, ${myString2}!` //Hello, World!
+`${myString1}, ${myString2}!`; //Hello, World!
 ```
 
 You can achieve your formatting goals with either method, but template literals will respect any spaces and line breaks.
@@ -167,7 +168,7 @@ You can achieve your formatting goals with either method, but template literals 
 
 Booleans can be only two values: `true` or `false`. Booleans can help make decisions on which lines of code should run when certain conditions are met. In many cases, [operators](#operators) assist with setting the value of a Boolean and you will often notice and write variables being initialized or their values being updated with an operator.
 
-- `let myTrueBool = true`
-- `let myFalseBool = false`
+-   `let myTrueBool = true`
+-   `let myFalseBool = false`
 
 ✅ A variable can be considered 'truthy' if it evaluates to a boolean `true`. Interestingly, in JavaScript, [all values are truthy unless defined as falsy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy).
