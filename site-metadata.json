@@ -350,7 +350,8 @@
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [{
+                "subnav_links": [
+                    {
                         "label": "Write Docs",
                         "url": "https://bgoonz-blog.netlify.app/admin/#/collections/docs",
                         "style": "primary",
@@ -371,6 +372,15 @@
                     {
                         "label": "Webmaster",
                         "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Internal Use",
+                        "url": "https://bgoonz-blog.netlify.app/docs/about/internal-use/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -526,5 +536,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/logo.png"
+    "favicon": "images/main-logo.png"
 }
