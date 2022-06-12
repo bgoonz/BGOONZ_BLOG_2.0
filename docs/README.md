@@ -3,15 +3,16 @@
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
 ## [CHANGELOG](./CHANGELOG.md)
+
 ##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
 
- ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
- ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/)
+⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/)
 
- ⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/)
+⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/)
 
- ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 ### Repos
 
@@ -40,7 +41,7 @@ npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra g
 [![webdevhub logo](https://bgoonz-blog.netlify.app/images/home-button.png)]('https://bgoonz-blog.netlify.app/')
 [vagrent](https://www.vagrantup.com/)
 
- [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
+[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
 
 [![instagram](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![pinterest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
 
@@ -69,7 +70,7 @@ Open Menu
 -   [JavaScript](/javascript)
 -   [Blog](/blog/)
 
- Sub-menu
+Sub-menu
 
 -   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
 
@@ -79,7 +80,7 @@ Open Menu
 
 -   [Job Search](/docs/career/)
 
- Sub-menu
+Sub-menu
 
 -   [Job Boards](/docs/career/job-boards)
 -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
@@ -131,7 +132,7 @@ Open Menu
 
 -   [Admin](https://bgoonz-blog.netlify.app/admin/)
 
- Sub-menu
+Sub-menu
 
 -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
 -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
@@ -151,15 +152,16 @@ Open Menu
 -   [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
 
 -   [Github-Advanced-Search](https://github.com/search/advanced)
-Close Menu
-_🔎_
-Search
+    Close Menu
+    _🔎_
+    Search
 
 # I am a musician, electrical engineer & web developer
+
 **Please note that this website is in development and is often broken!**
 [](https://www.vagrantup.com/)
 
- [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
+[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
 
 [![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
 
@@ -191,99 +193,137 @@ Search
 [Contact](https://sidebar-blog.netlify.app/contact/)
 
 ![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
+
 ### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
 
 Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
 [View Post](/docs/ds-algo/big-o/)
 
 ![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
+
 ### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+
 _Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
 [View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
 
 ![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
+
 ### [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+
 [Learn More](/docs/tools)
 
 ![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
+
 ### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
 
 As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
 
 ![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
+
 ### [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
+
 Scope & Context in JS
 The **scope** of a program in JavaScript is the set of variables that are available for use within the program.
 
 ![scope and closure](https://d33wubrfki0l68.cloudfront.net/bc959e2c76edd99401fa7bc07665db54863f5fd2/97e29/images/dtw-slideshow.gif)
+
 ### Web Audio Daw
+
 PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
 
 -   Extensions & Resources, Super Simple Intro To HTML, Understanding↩ Git... etc....
 
 ## Current Interests
+
 From github repositories to existential questions.
 
 ![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
+
 ### [Angolia](/angolia)
+
 ## Full Text Search
+
 [Full Text Search](https://www.algolia.com/)
 
 ![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
+
 ### [Convolutional Neural Networks](/neural networks)
+
 Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow)
 ![](/_static/app-assets/neural.PNG)
 
 ![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
+
 ### [Jamstack](/jamstack)
+
 ##### Why Jamstack Jamstack is the new standard architecture for the
+
 web. Using Git workflows and modern build tools, pre-rendered content↩ is served to a CDN and made dynamic through APIs and serverless↩ functions. Technologies in the stack include JavaScript frameworks,↩ Static Site Generators, Headless CMSs, and CDNs.
 
 ![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
+
 ### [Asynchronous JavaScript](/docs/)
 
 The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
 [Learn More](https://www.allaboutthejersey.com/)
 
 ![nj-devils](/images/njdev-219301cd.jpg)
+
 ### [NJ Devils](https://www.allaboutthejersey.com/)
 
 # New Jersey Devils Hockey Team
+
 ### (Hockey in general)
+
 ## Team identity
+
 [![devils](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
 The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery) of the [New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers) attempts to distract Brodeur during the [2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs). The playoff series was the fifth to feature the [Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).
 [Learn More](https://www.iter.org/)
 
 ![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
+
 ### [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
 
 # Break Even Nuclear Fusion Candidate
+
 In December, researchers at the Joint European Torus (JET) started↩ conducting fusion experiments with tritium — a rare and radioactive↩ isotope of hydrogen. The facility is a one-tenth-volume mock-up of the↩ US\$22-billion ITER project and has the same doughnut-shaped 'tokamak'↩ design — the world's most developed approach to fusion energy. It is↩ the first time since 1997 that researchers have done experiments in a↩ tokamak with any significant amount of tritium.
+
 ## Resume & Portfolio
 
 ![resume](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
+
 ### [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
+
 [View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
 ![portfolio of websites](https://d33wubrfki0l68.cloudfront.net/4e66fa2888421bd225aa811c156362cc0b7d4ebc/ca806/images/portfolio.jpg)
+
 ### Showcase
 
 ![My Projects](/_static/app-assets/lambda-demo1.gif)My Projects!
 [Learn More](/showcase)
+
 ## Blog-Archive-And-Mini-Projects
 
 ![animated gif](/images/cool annimation.gif)
+
 ## Latest & Greatest
+
 ## Web Dev Utilitiy Tools
+
 ## Tools Showcase
 
 ![medium](https://d33wubrfki0l68.cloudfront.net/e5828552ff6b5743ed241d9c926e60eb925dde97/8dbbf/images/goals.jpg)
+
 ## Web Audio DA
+
 [Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)
 
 ## Quick Links
+
 quick links home
+
 ### [About](/docs/about/)
 
 Web-Dev-Hub is my personal blogand documentation site
@@ -338,7 +378,9 @@ In this section you'll find commonly asked questions regarding the Libris theme.
 [Learn More](/docs/faq/)
 
 ###
+
 Learn More
+
 ### [Interact](/docs/interact/)
 
 Interactive examples and projects
@@ -408,6 +450,7 @@ Walkthroughs of various development activities and skills
 [Learn More](/docs/tutorials/)
 
 ## Contact
+
 get in touch! +1 (551) - 254 - 5505
 [Contact](/docs/faq/contact)
 [index](https://search.freefind.com/siteindex.html?si=14588965)
@@ -420,7 +463,8 @@ get in touch! +1 (551) - 254 - 5505
 @bgoonz on almost every platform [BLM](https://random-static-html-deploys.netlify.app/blm.html)
 [Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
 
- [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
+[GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
+
 <summary> Bash Commands</summary>
 ## My Commands
 ## # Find
@@ -836,6 +880,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
+
 ## Wiki Nav
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
@@ -874,6 +919,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 -   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ## Dependencies
+
 <summary>Click to expand!</summary>
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
@@ -928,10 +974,12 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 `7.12.3`
 [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
 
- ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
- ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
 ## Docs Structure
+
 <summary>  Docs Structure  </summary>
 
 ```
@@ -1139,9 +1187,9 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 
 
-docky ./../src/components/pages/**/*.md \ # specify the components to parse 
-  --watch "./../src/components/**/*.js","./README.md" \ # watch files 
-  --ignore "src/components/**/index.js" \ # ignored files 
+docky ./../src/components/pages/**/*.md \ # specify the components to parse
+  --watch "./../src/components/**/*.js","./README.md" \ # watch files
+  --ignore "src/components/**/index.js" \ # ignored files
   --use-readme=true
 
 
@@ -1539,62 +1587,61 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/)
 
-. Prettier is a tool to help keep the formatting of your code consistent.
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/)
+. Prettier is a tool to help keep the formatting of your code consistent. 5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/)
 
- (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/)
+(if any). These allow customization/extension of default Gatsby settings affecting the browser. 6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/)
 
- for more detail).
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/)
+for more detail). 7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/)
 
- (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/)
+(if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process. 8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/)
 
- (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
-12. **`README.md`**: A text file containing useful reference information about your project.
+(if any). These allow customization of default Gatsby settings affecting server-side rendering. 9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license. 10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).** 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project. 12. **`README.md`**: A text file containing useful reference information about your project.
+
 ## 🎓 Learning Gatsby
+
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/)
 
 . Here are some places to start:
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/)
 
-.\*\* It starts with zero assumptions about your level of ability and walks through every step of the process
--
+## .\*\* It starts with zero assumptions about your level of ability and walks through every step of the process
 
 -   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/)
 
 .\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
 ## 💫 Deploy
+
 [![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
 [![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
+
 <!-- AUTO-GENERATED-CONTENT:END -->
+
 # Gatsby Project Structure | Gatsby
+
 > Inside a Gatsby project, you may see some or all of the following folders and files: Folders /.cache Automatically generated. This folder…
-Inside a Gatsby project, you may see some or all of the following folders and files:
-/|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
+> Inside a Gatsby project, you may see some or all of the following folders and files:
+> /|-- /.cache|-- /plugins|-- /public|-- /src |-- /api |-- /pages |-- /templates |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
+
 ## [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
 
 -   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
 -   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/)
 
- for more detail.
+for more detail.
 
 -   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
 -   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/)
 
- for more detail.
+for more detail.
 
 -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
 -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
 -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/)
 
- for more detail.
+for more detail.
 
 -   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
@@ -1602,48 +1649,65 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 -   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/)
 
- (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+(if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
 -   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/)
 
- for more detail.
+for more detail.
 
 -   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/)
 
- (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+(if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
 -   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
 
- (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+(if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
 ## [Miscellaneous](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
+
 The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
+
 # Layout Components | Gatsby
+
 > In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
-In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
+> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
+
 ## [Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
+
 Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
+
 ## [What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
+
 Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
+
 ## [How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
+
 It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
 Here is an example of a very basic layout component at `src/components/layout.js`:
-import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
+import React from "react"export default function Layout({ children }) { return ( <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}> {children} </div> )}
+
 ## [How to import and add layout components to pages](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)
+
 If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
-import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>       <h1> I'm in a layout!</h1>     </Layout>   );}
+import React from "react"import Layout from "../components/layout"export default function Home() { return ( <Layout> <h1> I'm in a layout!</h1> </Layout> );}
 Repeat for every page and template that needs this layout.
+
 ## [How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
+
 As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
 If you need to set a wrapper component around page components that won't get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
 Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/)
 
 , which implements the `wrapPageElement` APIs for you.
+
 # Adding Markdown Pages | Gatsby
+
 > ## Excerpt
+>
 > Gatsby can use Markdown files to create pages in your site.
 > You add plugins to read and understand folders with Markdown files and from them…
-Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
-Here are the steps Gatsby follows for making this happen.
+> Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
+> Here are the steps Gatsby follows for making this happen.
 
 1. Read files into Gatsby from the filesystem
 2. Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
@@ -1651,44 +1715,62 @@ Here are the steps Gatsby follows for making this happen.
 4. Create a Collection Route component for the Markdown files
 
 ## [Read files into Gatsby from the filesystem](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)
+
 Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
+
 ## [Install](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)
+
 `npm install gatsby-source-filesystem`
+
 ## [Add plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)
+
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
-module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
+module.exports = { siteMetadata: { title: "My Gatsby Site", }, plugins: [ { resolve: `gatsby-source-filesystem`, options: { name: `markdown-pages`, path: `${__dirname}/src/markdown-pages`, }, }, ],}
 Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
+
 ## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+
 You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/)
 
- to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+
 ## [Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
+
 `npm install gatsby-transformer-remark`
+
 ## [Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
+
 Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
-module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
+module.exports = { siteMetadata: { title: "My Gatsby Site", }, plugins: [ { resolve: `gatsby-source-filesystem`, options: { name: `markdown-pages`, path: `${__dirname}/src/markdown-pages`, }, }, `gatsby-transformer-remark`, ],}
+
 ## [Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
+
 Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
+
 ## [Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
+
 When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
 src/markdown-pages/post-1.md
 ---slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
 What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
+
 ## [Create a Collection Route for the Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)
+
 Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
 src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
-import React from "react"import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`query($id: String!) {    markdownRemark(id: { eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
+import React from "react"import { graphql } from "gatsby"export default function Template({ data, }) { const { markdownRemark } = data const { frontmatter, html } = markdownRemark return ( <div className="blog-post-container"> <div className="blog-post"> <h1> {frontmatter.title}</h1> <h2> {frontmatter.date}</h2> <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} /> </div> </div> )}export const pageQuery = graphql`query($id: String!) { markdownRemark(id: { eq: $id }) { html frontmatter { date(formatString: "MMMM DD, YYYY") slug title } } }`
 Two things are important in the file above:
 
 1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
-**Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)
+   \*\*Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)
 
-**
-2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
+\*\* 2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
 Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
 This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
 For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
+
 ## [Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
+
 # Technoloy
 
 ![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
