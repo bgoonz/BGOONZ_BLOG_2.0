@@ -24,9 +24,9 @@ cmseditable: true
 
 <!--StartFragment-->
 
-## What is HTTP?
+# What is HTTP?
 
-HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
+### HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
 
 These resources are made available to us via an `API` and we make requests to these APIs via the HTTP protocol. `API` stands for application programming interface. It is the mechanism that allows developers to request resources.
 
