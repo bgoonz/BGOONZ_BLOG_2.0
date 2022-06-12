@@ -7,21 +7,12 @@ import _ from 'lodash';
 const convertChildren = (children, index) => _.map(children, childNode => convertNodeToElement(childNode, index, _.noop()));
 
 export default function htmlToReact(html) {
-    if (!html) {
-        return null;
-    }
-    return ReactHtmlParser(html, {
+    return !html ? null : ReactHtmlParser(html, {
         transform: (node, index) => {
             if (node.type === 'script') {
-                if (!_.isEmpty(node.children)) {
-                    return (
-                        <ScriptTag key={index} {...node.attribs}>
-                            {convertChildren(node.children, index)}
-                        </ScriptTag>
-                    );
-                } else {
-                    return <ScriptTag key={index} {...node.attribs}/>;
-                }
+                return !_.isEmpty(node.children) ? <ScriptTag key={index} {...node.attribs}>
+                    {convertChildren(node.children, index)}
+                </ScriptTag> : <ScriptTag key={index} {...node.attribs}/>;
             } else if (node.type === 'tag' && node.name === 'a') {
                 const href = node.attribs.href;
                 const props = _.omit(node.attribs, 'href');
