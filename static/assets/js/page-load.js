@@ -1,4 +1,5 @@
-window.onGatsbyRouteUpdate = function () {
+/* eslint-disable no-undef */
+window.onGatsbyRouteUpdate = function() {
     window.addMainNavigationHandlers();
     window.addAnnouncementHandlers();
     window.addVideoEmbedsHandlers();

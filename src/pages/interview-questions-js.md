@@ -4263,6 +4263,10 @@ Cons
 
         **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
 
+
+
+---
+
         ```javascript
         var name = 'John';
         function myFunc() {
