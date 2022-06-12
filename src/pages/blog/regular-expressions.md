@@ -175,7 +175,7 @@ Copy to Clipboard
 
 The occurrences of `/d(b+)d/g` in the two statements are different regular expression objects and hence have different values for their `lastIndex` property. If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.
 
-### [Advanced searching with flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags "Permalink to Advanced searching with flags")
+### [Advanced searching with flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags 'Permalink to Advanced searching with flags')
 
 Regular expressions have optional flags that allow for functionality like global searching and case-insensitive searching. These flags can be used separately or together in any order, and are included as part of the regular expression.
 
@@ -267,18 +267,18 @@ Copy to Clipboard
 
 There are a number of other differences between unicode and non-unicode regular expressions that one should be aware of:
 
-* Unicode regular expressions do not support so-called "identity escapes"; that is, patterns where an escaping backslash is not needed and effectively ignored. For example, `/\a/` is a valid regular expression matching the letter 'a', but `/\a/u` is not.
-* Curly brackets need to be escaped when not used as [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers). For example, `/{/` is a valid regular expression matching the curly bracket '{', but `/{/u` is not -- instead, the bracket should be escaped and `/\{/u` should be used instead.
-* The `-` character is interpreted differently within character classes. In particular, for unicode regular expressions, `-` is interpreted as a literal `-` (and not as part of a range) only if it appears at the start or end of a pattern. For example, `/[\w-:]/` is a valid regular expression matching a word character, a `-`, or `:`, but `/\w-:/u` is an invalid regular expression, as `\w` to `:` is not a well-defined range of characters.
+-   Unicode regular expressions do not support so-called "identity escapes"; that is, patterns where an escaping backslash is not needed and effectively ignored. For example, `/\a/` is a valid regular expression matching the letter 'a', but `/\a/u` is not.
+-   Curly brackets need to be escaped when not used as [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers). For example, `/{/` is a valid regular expression matching the curly bracket '{', but `/{/u` is not -- instead, the bracket should be escaped and `/\{/u` should be used instead.
+-   The `-` character is interpreted differently within character classes. In particular, for unicode regular expressions, `-` is interpreted as a literal `-` (and not as part of a range) only if it appears at the start or end of a pattern. For example, `/[\w-:]/` is a valid regular expression matching a word character, a `-`, or `:`, but `/\w-:/u` is an invalid regular expression, as `\w` to `:` is not a well-defined range of characters.
 
-## [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#examples "Permalink to Examples")
+## [Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#examples 'Permalink to Examples')
 
 **Note:** Several examples are also available in:
 
-* The reference pages for [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec), [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test), [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-* This guide articles': [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes), [assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions), [groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges), [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers), [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
+-   The reference pages for [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec), [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test), [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [`matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll), [`search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+-   This guide articles': [character classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes), [assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions), [groups and ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges), [quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers), [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes)
 
-### [Using special characters to verify input](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters_to_verify_input "Permalink to Using special characters to verify input")
+### [Using special characters to verify input](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#using_special_characters_to_verify_input 'Permalink to Using special characters to verify input')
 
 In the following example, the user is expected to enter a phone number. When the user presses the "Check" button, the script checks the validity of the number. If the number is valid (matches the character sequence specified by the regular expression), the script shows a message thanking the user and confirming the number. If the number is invalid, the script informs the user that the phone number is not valid.
 
@@ -312,17 +312,20 @@ Copy to Clipboard
 
 [Using special characters to verify input sample](https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/_sample_.using_special_characters_to_verify_input.html)
 
-## [Tools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#tools "Permalink to Tools")
+## [Tools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#tools 'Permalink to Tools')
 
-* [RegExr](https://regexr.com/)
+-   [RegExr](https://regexr.com/)
 
-  An online tool to learn, build, & test Regular Expressions.
-* [Regex tester](https://regex101.com/)
+    An online tool to learn, build, & test Regular Expressions.
 
-  An online regex builder/debugger
-* [Regex interactive tutorial](https://regexlearn.com/)
+-   [Regex tester](https://regex101.com/)
 
-  An online interactive tutorials, Cheatsheet, & Playground.
-* [Regex visualizer](https://extendsclass.com/regex-tester.html)
+    An online regex builder/debugger
 
-  An online visual regex tester.
+-   [Regex interactive tutorial](https://regexlearn.com/)
+
+    An online interactive tutorials, Cheatsheet, & Playground.
+
+-   [Regex visualizer](https://extendsclass.com/regex-tester.html)
+
+    An online visual regex tester.
