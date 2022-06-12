@@ -8,8 +8,8 @@
 //<script src={withPrefix('js/analytics.js')} /> }
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-const React = require("react");
-const withPrefix = require("./src/utils/withPrefix").default;
+const React = require('react');
+const withPrefix = require('./src/utils/withPrefix').default;
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setHeadComponents([]);
     setPostBodyComponents([

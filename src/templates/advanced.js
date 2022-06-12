@@ -20,7 +20,7 @@ export default class Advanced extends React.Component {
                     let Component = components[component];
                     return <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />;
                 })}
-<div className="gcse-search" />
+<div className="gcse-search"></div>
 
             </Layout>
         );

@@ -16,8 +16,8 @@ export const query = graphql`
 `;
 export default class Docs extends React.Component {
     render() {
-        const root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
-        const current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
+        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
+        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
         return (
             <Layout {...this.props}>
                 <div className="inner outer">
