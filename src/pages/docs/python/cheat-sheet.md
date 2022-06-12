@@ -1942,7 +1942,7 @@ spam.strip('ampS')
 First, install `pypeerclip` with pip:
 
 ```console
-pip install pyperclip
+```bashl pyperclip
 ```
 
 ```python
@@ -3074,7 +3074,7 @@ with open("filename.yaml") as f:
 Install it with:
 
 ```console
-pip install anyconfig
+```bashl anyconfig
 ```
 
 Usage:
@@ -3480,7 +3480,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 This allows you to easily install Python packages. Often it's enough to write:
 
 ```console
-python setup.py install
+```bashup.py install
 ```
 
 and module will install itself.
