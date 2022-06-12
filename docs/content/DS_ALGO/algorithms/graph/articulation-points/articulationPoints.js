@@ -1,5 +1,4 @@
 import depthFirstSearch from '../depth-first-search/depthFirstSearch';
-
 /**
  * Helper class for visited vertex metadata.
  */
@@ -15,7 +14,6 @@ class VisitMetadata {
         this.independentChildrenCount = 0;
     }
 }
-
 /**
  * Tarjan's algorithm for finding articulation points in graph.
  *
@@ -25,16 +23,12 @@ class VisitMetadata {
 export default function articulationPoints(graph) {
     // Set of vertices we've already visited during DFS.
     const visitedSet = {};
-
     // Set of articulation points.
     const articulationPointsSet = {};
-
     // Time needed to discover to the current vertex.
     let discoveryTime = 0;
-
     // Peek the start vertex for DFS traversal.
     const startVertex = graph.getAllVertices()[0];
-
     const dfsCallbacks = {
         /**
          * @param {GraphVertex} currentVertex
@@ -46,13 +40,11 @@ export default function articulationPoints(graph) {
         }) => {
             // Tick discovery time.
             discoveryTime += 1;
-
             // Put current vertex to visited set.
             visitedSet[currentVertex.getKey()] = new VisitMetadata({
                 discoveryTime,
                 lowDiscoveryTime: discoveryTime
             });
-
             if (previousVertex) {
                 // Update children counter for previous vertex.
                 visitedSet[previousVertex.getKey()].independentChildrenCount += 1;
@@ -70,7 +62,6 @@ export default function articulationPoints(graph) {
                 // Don't do anything for the root vertex if it is already current (not previous one)
                 return;
             }
-
             // Update the low time with the smallest time of adjacent vertices.
             // Get minimum low discovery time from all neighbors.
             /** @param {GraphVertex} neighbor */
@@ -85,7 +76,6 @@ export default function articulationPoints(graph) {
                     const neighborLowTime = visitedSet[neighbor.getKey()].lowDiscoveryTime;
                     return neighborLowTime < lowestDiscoveryTime ? neighborLowTime : lowestDiscoveryTime;
                 }, visitedSet[currentVertex.getKey()].lowDiscoveryTime);
-
             // Detect whether previous vertex is articulation point or not.
             // To do so we need to check two [OR] conditions:
             // 1. Is it a root vertex with at least two independent children.
@@ -98,7 +88,6 @@ export default function articulationPoints(graph) {
             } else {
                 // Get current vertex low discovery time.
                 const currentLowDiscoveryTime = visitedSet[currentVertex.getKey()].lowDiscoveryTime;
-
                 // Compare current vertex low discovery time with parent discovery time. Check if there
                 // are any short path (back edge) exists. If we can't get to current vertex other then
                 // via parent then the parent vertex is articulation point for current one.
@@ -114,10 +103,8 @@ export default function articulationPoints(graph) {
             return !visitedSet[nextVertex.getKey()];
         }
     };
-
     // Do Depth First Search traversal over submitted graph.
     depthFirstSearch(graph, startVertex, dfsCallbacks);
-
     return articulationPointsSet;
 }
 nextVertex
@@ -125,11 +112,8 @@ nextVertex
     return !visitedSet[nextVertex.getKey()];
 }
 };
-
 // Do Depth First Search traversal over submitted graph.
 depthFirstSearch(graph, startVertex, dfsCallbacks);
-
-
 
 
 return articulationPointsSet;

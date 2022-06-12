@@ -12,14 +12,12 @@
  *  Wikipedia: https://en.wikipedia.org/wiki/Bubble_sort
  *  Animated Visual: https://www.toptal.com/developers/sorting-algorithms/bubble-sort
  */
-
 /**
  * Using 2 for loops.
  */
 export function bubbleSort(items) {
     const length = items.length;
     let noSwaps;
-
     for (let i = length; i > 0; i--) {
         // flag for optimization
         noSwaps = true;
@@ -36,16 +34,13 @@ export function bubbleSort(items) {
             break;
         }
     }
-
     return items;
 }
-
 /**
  * Using a while loop and a for loop.
  */
 export function alternativeBubbleSort(arr) {
     let swapped = true;
-
     while (swapped) {
         swapped = false;
         for (let i = 0; i < arr.length - 1; i++) {
@@ -55,6 +50,5 @@ export function alternativeBubbleSort(arr) {
             }
         }
     }
-
     return arr;
 }

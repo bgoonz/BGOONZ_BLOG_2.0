@@ -1,5 +1,4 @@
 import { alternativeBubbleSort, bubbleSort } from '../BubbleSort';
-
 describe('bubbleSort', () => {
     it('should sort arrays correctly', () => {
         expect(bubbleSort([5, 4, 1, 2, 3])).toEqual([1, 2, 3, 4, 5]);
@@ -9,7 +8,6 @@ describe('bubbleSort', () => {
         expect(bubbleSort([5, 6, 7, 8, 9, 4])).toEqual([4, 5, 6, 7, 8, 9]);
     });
 });
-
 describe('alternativeBubbleSort', () => {
     it('should sort arrays correctly', () => {
         expect(alternativeBubbleSort([5, 4, 1, 2, 3])).toEqual([1, 2, 3, 4, 5]);

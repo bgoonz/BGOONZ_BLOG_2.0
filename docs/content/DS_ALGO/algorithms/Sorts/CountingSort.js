@@ -7,7 +7,6 @@
  * Wikipedia: https://en.wikipedia.org/wiki/Counting_sort
  * Animated Visual: https://www.cs.usfca.edu/~galles/visualization/CountingSort.html
  */
-
 export const countingSort = (arr, min, max) => {
     // Create an auxiliary resultant array
     const res = [];
@@ -29,7 +28,6 @@ export const countingSort = (arr, min, max) => {
     }
     return res;
 };
-
 /**
  * Implementation of Counting Sort
  */

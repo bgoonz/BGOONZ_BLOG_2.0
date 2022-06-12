@@ -2,7 +2,6 @@ const pad = (num, padlen) => {
     const pad = new Array(1 + padlen).join(0);
     return (pad + num).slice(-pad.length);
 };
-
 const hexLookup = (bin) => {
     let binary = bin;
     if (binary.length < 4) {
@@ -46,20 +45,15 @@ const hexLookup = (bin) => {
 const binaryToHex = (binaryString) => {
     /*
   Function for convertung Binary to Hex
-
   1. The conversion will start from Least Significant Digit (LSB) to the Most Significant Bit (MSB).
   2. We divide the bits into sections of 4-bits starting from LSB to MSB.
   3. If the MSB get less than 4 bits, then we pad 0s to the front of it.
-
   For Example:
   Binary String = '1001101'
-
   1. Divide it to 2 parts => ['100', '1101']
   2. Pad 0s the MSB so it'll be => ['0100', '1101']
   3. Use the lookup table and merge them, therefore the result is 4D.
-
   */
-
     let result = '';
     binaryString = binaryString.split('');
     for (let i = binaryString.length - 1; i >= 0; i = i - 4) {
@@ -71,5 +65,4 @@ const binaryToHex = (binaryString) => {
     }
     return result.split('').reverse().join('');
 };
-
 export default binaryToHex;

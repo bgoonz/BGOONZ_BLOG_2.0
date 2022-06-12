@@ -8,10 +8,8 @@
     then we do this But apply the algorithm shown below. The
     algorithm shown below gives us the number of the day and
     finally converts it to the name of the day.
-
     Algorithm & Explanation : https://cs.uwaterloo.ca/~alopez-o/math-faq/node73.html
 */
-
 // March is taken as the first month of the year.
 const calcMonthList = {
     1: 11,
@@ -27,7 +25,6 @@ const calcMonthList = {
     11: 9,
     12: 10
 };
-
 // show the week day in a number : Sunday - Saturday => 0 - 6
 const daysNameList = {
     // weeks-day
@@ -39,7 +36,6 @@ const daysNameList = {
     5: 'Friday',
     6: 'Saturday'
 };
-
 const DateToDay = (date) => {
     // firstly, check that input is a string or not.
     if (typeof date !== 'string') {
@@ -61,7 +57,5 @@ const DateToDay = (date) => {
     // return the weekDay name.
     return daysNameList[weekDay];
 };
-
 // Example : DateToDay("18/12/2020") => Friday
-
 export { DateToDay };

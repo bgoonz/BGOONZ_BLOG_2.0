@@ -234,7 +234,6 @@ function introsort(array, compare) {
         }
     })(array, compare);
 }
-
 /**
  * @example Demo run of the sort routine
  * The data is randomly generated
@@ -267,7 +266,6 @@ function demo1() {
         return 'RIGHT:)';
     }
 }
-
 /**
  * @example Demo run of the sort routine
  * using the default compare function and
@@ -299,7 +297,6 @@ function demo2() {
         return 'Comparator Works Fine:)';
     }
 }
-
 export {
     introsort,
     demo1,

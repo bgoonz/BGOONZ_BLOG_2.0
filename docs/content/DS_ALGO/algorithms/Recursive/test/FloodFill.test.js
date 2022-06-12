@@ -1,26 +1,22 @@
 import { breadthFirstSearch, depthFirstSearch } from '../FloodFill';
-
 // some constants
 const black = [0, 0, 0];
 const green = [0, 255, 0];
 const violet = [255, 0, 255];
 const white = [255, 255, 255];
 const orange = [255, 128, 0];
-
 describe('FloodFill', () => {
     it('should calculate the correct colors using breadth-first approach', () => {
         expect(testBreadthFirst([1, 1], green, orange, [1, 1])).toEqual(orange);
         expect(testBreadthFirst([1, 1], green, orange, [0, 1])).toEqual(violet);
         expect(testBreadthFirst([1, 1], green, orange, [6, 4])).toEqual(white);
     });
-
     it('should calculate the correct colors using depth-first approach', () => {
         expect(testDepthFirst([1, 1], green, orange, [1, 1])).toEqual(orange);
         expect(testDepthFirst([1, 1], green, orange, [0, 1])).toEqual(violet);
         expect(testDepthFirst([1, 1], green, orange, [6, 4])).toEqual(white);
     });
 });
-
 /**
  * Utility-function to test the function "breadthFirstSearch".
  *
@@ -35,7 +31,6 @@ function testBreadthFirst(fillLocation, targetColor, replacementColor, testLocat
     breadthFirstSearch(rgbData, fillLocation, targetColor, replacementColor);
     return rgbData[testLocation[0]][testLocation[1]];
 }
-
 /**
  * Utility-function to test the function "depthFirstSearch".
  *
@@ -51,7 +46,6 @@ function testDepthFirst(fillLocation, targetColor, replacementColor, testLocatio
     depthFirstSearch(rgbData, fillLocation, targetColor, replacementColor);
     return rgbData[testLocation[0]][testLocation[1]];
 }
-
 /**
  * Generates the rgbData-matrix for the tests.
  *
@@ -67,7 +61,6 @@ function generateTestRgbData() {
         [green, green, green, violet, violet, violet, violet],
         [violet, violet, violet, violet, violet, violet, violet]
     ];
-
     // transpose layout-matrix so the x-index comes before the y-index
     const transposed = [];
     for (let x = 0; x < layout[0].length; x++) {
@@ -76,6 +69,5 @@ function generateTestRgbData() {
             transposed[x][y] = layout[y][x];
         }
     }
-
     return transposed;
 }

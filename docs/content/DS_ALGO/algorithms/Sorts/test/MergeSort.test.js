@@ -1,5 +1,4 @@
 import { merge, mergeSort } from '../MergeSort';
-
 describe('merge', () => {
     it('should merge arrays correctly', () => {
         expect(merge([5, 4], [1, 2, 3])).toEqual([1, 2, 3, 5, 4]);
@@ -8,12 +7,10 @@ describe('merge', () => {
         expect(merge([], [])).toEqual([]);
     });
 });
-
 describe('MergeSort', () => {
     it('should work for empty arrays', () => {
         expect(mergeSort([])).toEqual([]);
     });
-
     it('should sort arrays correctly', () => {
         expect(mergeSort([5, 4])).toEqual([4, 5]);
         expect(mergeSort([8, 4, 10, 15, 9])).toEqual([4, 8, 9, 10, 15]);

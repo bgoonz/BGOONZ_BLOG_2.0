@@ -1,5 +1,4 @@
 import depthFirstSearch from '../depth-first-search/depthFirstSearch';
-
 /**
  * Helper class for visited vertex metadata.
  */
@@ -12,7 +11,6 @@ class VisitMetadata {
         this.lowDiscoveryTime = lowDiscoveryTime;
     }
 }
-
 /**
  * @param {Graph} graph
  * @return {Object}
@@ -20,16 +18,12 @@ class VisitMetadata {
 export default function graphBridges(graph) {
     // Set of vertices we've already visited during DFS.
     const visitedSet = {};
-
     // Set of bridges.
     const bridges = {};
-
     // Time needed to discover to the current vertex.
     let discoveryTime = 0;
-
     // Peek the start vertex for DFS traversal.
     const startVertex = graph.getAllVertices()[0];
-
     const dfsCallbacks = {
         /**
          * @param {GraphVertex} currentVertex
@@ -39,7 +33,6 @@ export default function graphBridges(graph) {
         }) => {
             // Tick discovery time.
             discoveryTime += 1;
-
             // Put current vertex to visited set.
             visitedSet[currentVertex.getKey()] = new VisitMetadata({
                 discoveryTime,
@@ -58,7 +51,6 @@ export default function graphBridges(graph) {
                 // Don't do anything for the root vertex if it is already current (not previous one).
                 return;
             }
-
             // Check if current node is connected to any early node other then previous one.
             visitedSet[currentVertex.getKey()].lowDiscoveryTime = currentVertex
                 .getNeighbors()
@@ -74,7 +66,6 @@ export default function graphBridges(graph) {
                     },
                     visitedSet[currentVertex.getKey()].lowDiscoveryTime
                 );
-
             // Compare low discovery times. In case if current low discovery time is less than the one
             // in previous vertex then update previous vertex low time.
             const currentLowDiscoveryTime = visitedSet[currentVertex.getKey()].lowDiscoveryTime;
@@ -82,7 +73,6 @@ export default function graphBridges(graph) {
             if (currentLowDiscoveryTime < previousLowDiscoveryTime) {
                 visitedSet[previousVertex.getKey()].lowDiscoveryTime = currentLowDiscoveryTime;
             }
-
             // Compare current vertex low discovery time with parent discovery time. Check if there
             // are any short path (back edge) exists. If we can't get to current vertex other then
             // via parent then the parent vertex is articulation point for current one.
@@ -98,20 +88,16 @@ export default function graphBridges(graph) {
             return !visitedSet[nextVertex.getKey()];
         }
     };
-
     // Do Depth First Search traversal over submitted graph.
     depthFirstSearch(graph, startVertex, dfsCallbacks);
-
     return bridges;
 }
 }) => {
     return !visitedSet[nextVertex.getKey()];
 }
 };
-
 // Do Depth First Search traversal over submitted graph.
 depthFirstSearch(graph, startVertex, dfsCallbacks);
-
 
 return bridges;
 }

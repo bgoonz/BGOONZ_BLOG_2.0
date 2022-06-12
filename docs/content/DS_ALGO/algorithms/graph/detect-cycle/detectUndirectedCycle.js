@@ -1,5 +1,4 @@
 import depthFirstSearch from '../depth-first-search/depthFirstSearch';
-
 /**
  * Detect cycle in undirected graph using Depth First Search.
  *
@@ -7,13 +6,10 @@ import depthFirstSearch from '../depth-first-search/depthFirstSearch';
  */
 export default function detectUndirectedCycle(graph) {
     let cycle = null;
-
     // List of vertices that we have visited.
     const visitedVertices = {};
-
     // List of parents vertices for every visited vertex.
     const parents = {};
-
     // Callbacks for DFS traversing.
     const callbacks = {
         allowTraversal: ({
@@ -24,11 +20,9 @@ export default function detectUndirectedCycle(graph) {
             if (cycle) {
                 return false;
             }
-
             // Don't allow traversal from child back to its parent.
             const currentVertexParent = parents[currentVertex.getKey()];
             const currentVertexParentKey = currentVertexParent ? currentVertexParent.getKey() : null;
-
             return currentVertexParentKey !== nextVertex.getKey();
         },
         enterVertex: ({
@@ -38,16 +32,13 @@ export default function detectUndirectedCycle(graph) {
             if (visitedVertices[currentVertex.getKey()]) {
                 // Compile cycle path based on parents of previous vertices.
                 cycle = {};
-
                 let currentCycleVertex = currentVertex;
                 let previousCycleVertex = previousVertex;
-
                 while (previousCycleVertex.getKey() !== currentVertex.getKey()) {
                     cycle[currentCycleVertex.getKey()] = previousCycleVertex;
                     currentCycleVertex = previousCycleVertex;
                     previousCycleVertex = parents[previousCycleVertex.getKey()];
                 }
-
                 cycle[currentCycleVertex.getKey()] = previousCycleVertex;
             } else {
                 // Add next vertex to visited set.
@@ -56,15 +47,12 @@ export default function detectUndirectedCycle(graph) {
             }
         }
     };
-
     // Start DFS traversing.
     const startVertex = graph.getAllVertices()[0];
     depthFirstSearch(graph, startVertex, callbacks);
-
     return cycle;
 } // Start DFS traversing.
 const startVertex = graph.getAllVertices()[0];
 depthFirstSearch(graph, startVertex, callbacks);
-
 return cycle;
 }

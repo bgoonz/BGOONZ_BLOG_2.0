@@ -9,7 +9,6 @@
         and ‘a‘ has an ASCII value of 97 (65+32). The same applies to other
         characters.
 */
-
 /**
  * LowerCaseConversion takes any case-style string and converts it to the lower case-style string.
  * @param {String} inputString any case style string
@@ -31,5 +30,4 @@ const LowerCaseConversion = (inputString) => {
     // After modification, with the help of the join method, join all the characters and return them.
     return newString.join('');
 };
-
 export { LowerCaseConversion };
