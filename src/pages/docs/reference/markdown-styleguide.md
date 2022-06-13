@@ -12,7 +12,6 @@ versions of the examples.'
 template: docs
 ---
 
-
 # Rules
 
 This document contains a description of all rules, what they are checking for,
@@ -1120,6 +1119,8 @@ Code block
 ```
 ```
 
+```
+
 1. Second list
 
 ```
@@ -1130,9 +1131,9 @@ item as intended:
 ```markdown
 1. First list
 
-    ```text
+ ```text
     Code block
-    ```
+ ```
 
 2. Still first list
 ```
@@ -1622,10 +1623,13 @@ echo Hello world
 To fix this, add a language specifier to the code block:
 
 ```markdown
-```bash
+```console
+
 #!/bin/bash
 echo Hello world
 ```
+```
+
 ```
 
 ```
@@ -1638,6 +1642,7 @@ To display a code block without syntax highlighting, use:
 ```text
 Plain text in a code block
 ```
+
 ```
 
 ```
@@ -1760,8 +1765,9 @@ To require exactly the following structure:
 
 Set the `headings` parameter to:
 
-```json
-["# Head", "## Item", "### Detail"]
+```js
+//on
+['# Head', '## Item', '### Detail'];
 ```
 
 To allow optional headings as with the following structure:
@@ -1782,8 +1788,9 @@ Use the special value `"*"` meaning "zero or more unspecified headings" or the
 special value `"+"` meaning "one or more unspecified headings" and set the
 `headings` parameter to:
 
-```json
-["# Head", "## Item", "*", "## Foot", "*"]
+```js
+//on
+['# Head', '## Item', '*', '## Foot', '*'];
 ```
 
 When an error is detected, this rule outputs the line number of the first
@@ -1816,8 +1823,9 @@ For example, the language "JavaScript" is usually written with both the 'J' and
 'S' capitalized - though sometimes the 's' or 'j' appear in lower-case. To enforce
 the proper capitalization, specify the desired letter case in the `names` array:
 
-```json
-["JavaScript"]
+```js
+//on
+['JavaScript'];
 ```
 
 Set the `code_blocks` parameter to `false` to disable this rule for code blocks.
@@ -1882,9 +1890,9 @@ In the default configuration this rule reports a violation for the following doc
 
     More text.
 
-    ```ruby
+ ```ruby
     # Fenced code
-    ```
+ ```
 
     More text.
 
@@ -1950,6 +1958,8 @@ blocks do not match the configured code fence style:
 ```ruby
 # Fenced code
 ```
+```
+
 ```
 
 ```

@@ -918,8 +918,8 @@ Custom.
 > module : Python code in a separate file.
 > package : Path to a directory that contains modules.
 > <a href="http://init.py" class="markup--anchor markup--blockquote-anchor">
-<strong>init.py</strong>
-</a> : Default file for a package.
+> <strong>init.py</strong>
+> </a> : Default file for a package.
 > submodule : Another file in a module's folder.
 > function : Function in a module.
 
@@ -971,11 +971,11 @@ sets were killed in favor of set() class.**
 
 Or Checkout my personal Resource Site:
 
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap">
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
 <strong>a/A-Student-Resources</strong>
 <br />
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
-<a href="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
 ### Python Cheat Sheet:

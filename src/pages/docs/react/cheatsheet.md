@@ -33,12 +33,14 @@ template: docs
 
 ### Components
 
-```jsx
+```js
+//x
 import React from 'react';
 import ReactDOM from 'react-dom';
 ```
 
-```jsx
+```js
+//x
 class Hello extends React.Component {
     render() {
         return <div className="message-box">Hello {this.props.name}</div>;
@@ -806,15 +808,13 @@ MyCo.propTypes = {
 
 # React:
 
--   `<script src="https://unpkg.com/react@15/dist/react.js">
-</script>`
+-   `<script src="https://unpkg.com/react@15/dist/react.js"> </script>`
 -   `$ npm install react --save`
 -   `$ bower install react --save`
 
 React DOM:
 
--   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js">
-</script>`
+-   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"> </script>`
 -   `$ npm install react-dom`
 -   `$ bower install react-dom --save`
 
@@ -823,18 +823,21 @@ React DOM:
 ### Rendering (ES5)
 
 ```js
+//
 ReactDOM.render(React.createElement(Link, { name: 'HackHall.com' }), document.getElementById('menu'));
 ```
 
 ### Rendering (ES5+JSX)
 
 ```js
+//
 ReactDOM.render(<Link name="HackHall.com" />, document.getElementById('menu'));
 ```
 
 ## Server-side Rendering
 
 ```js
+//
 var ReactDOMServer = require('react-dom/server');
 ReactDOMServer.renderToString(Link, { name: 'HackHall.com' });
 ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
@@ -845,6 +848,7 @@ ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
 ### ES5
 
 ```js
+//
 var Link = React.createClass({
     displayName: 'Link',
     render: function () {
@@ -856,6 +860,7 @@ var Link = React.createClass({
 ### ES5 + JSX
 
 ```js
+//
 var Link = React.createClass({
     render: function () {
         return (
@@ -870,6 +875,7 @@ var Link = React.createClass({
 ### ES6 + JSX
 
 ```js
+//
 class Link extends React.Component {
     render() {
         return (
@@ -891,7 +897,8 @@ class Link extends React.Component {
 
 <summary>  </summary>
 
-```sh
+```console
+
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
@@ -901,6 +908,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 // notes: don't forget the command lines
 
 ```js
+//
 
 /* *******************************************************************************************
  * REACT
@@ -1235,6 +1243,7 @@ MyComponent.propTypes = {
 ES5:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1261,6 +1270,7 @@ var Link = React.createClass({
 ES5 + JSX:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1286,6 +1296,7 @@ var Link = React.createClass({
 ES6 + JSX:
 
 ```js
+//
 export class Link extends React.Component {
     constructor(props) {
         super(props);
@@ -1364,6 +1375,7 @@ More methods:
 ### Custom Validation
 
 ```js
+//
 propTypes: {
   customProp: function(props, propName, componentName) {
     if (!/regExPattern/.test(props[propName])) {

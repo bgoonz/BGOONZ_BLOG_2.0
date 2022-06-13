@@ -19,6 +19,7 @@ Variables can be declared without an initial value.
 Some example declarations:
 
 ```js
+//
 var foo;
 var bar = 42;
 var foo, bar, baz;
@@ -42,6 +43,7 @@ Reassigning a value will either throw an error (in strict mode, see below) or
 is silently ignored:
 
 ```js
+//
 const foo = 42;
 foo = 21; // error or ignored
 ```
@@ -49,6 +51,7 @@ foo = 21; // error or ignored
 `const`s _must_ be initialized with a value:
 
 ```js
+//
 const foo; // error
 foo = 42;
 ```
@@ -67,6 +70,7 @@ result in a syntax error.
 Examples:
 
 ```js
+//
 var π = 3.141;
 var _foo = π;
 var 0_bar = '...'; // Syntax error
@@ -79,6 +83,7 @@ var 0_bar = '...'; // Syntax error
 Trying to _read_ an _undeclared variable_ results in a runtime error:
 
 ```js
+//
 var foo;
 console.log(bar); // ReferenceError: bar is not defined.
 ```
@@ -90,6 +95,7 @@ create an _implicit global variable_ and should thus be avoided:
 
 
 ```js
+//
 
 
 function foo() {
@@ -117,6 +123,7 @@ considered bad or confusing.
 Strict mode can be enabled for a JavaScript or a function by putting
 
 ```js
+//
 'use strict';
 ```
 

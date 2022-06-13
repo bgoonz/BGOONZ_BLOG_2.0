@@ -36,6 +36,7 @@ Once you've refactored your HTML components into React components, you'll want t
 ex.)
 
 ```js
+//
 <!-- Hello world -->
 <div class="awesome" style="border: 1px solid red">
   <label for="name">Enter your name: </label>
@@ -47,7 +48,8 @@ ex.)
 Is equivalent to:
 
 
-```jsx
+```js
+//x
 
 
 let NewComponent = React.createClass({
@@ -82,7 +84,8 @@ _If nothing is being rendered from a component, then React will throw an error._
 Inside of `BasicComponent.js` , first import React at the top of the file. Our most basic of components looks like this:
 
 
-```jsx
+```js
+//x
 
 
 import React from 'react';
@@ -128,6 +131,7 @@ import React, { Component } from 'react';
 Components defined as classes currently provide more features . To define a React component class, you need to extend `React.Component`:
 
 ```js
+//
 class Welcome extends React.Component {
     render() {
         return <h1>Hello, {this.props.name}</h1>;
@@ -161,7 +165,8 @@ If you need to interact with the browser, perform your work in `componentDidMoun
 The export statement at the bottom of the file also stays, completely unchanged. Our class component will thus look like this:
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -210,7 +215,8 @@ Here's what the above component looks like as a functional component:
 Our class component with state will look a lot like the basic class component we just wrote, but with some exceptions:
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -259,7 +265,8 @@ _One very common application of state objects in React components is to render t
 </a>
 
 
-```jsx
+```js
+//x
 
 
 class ClassComponentWithState extends Component {
@@ -287,7 +294,8 @@ We added a key-value pair to our state object inside our constructor.
 **With Reacts newest version, we can actually now add state to a component without explicitly defining a constructor on the class. We can refactor our class component to look like this:**
 
 
-```jsx
+```js
+//x
 
 
 class ClassComponentWithState extends Component {
@@ -321,7 +329,8 @@ A single static number isn't very dynamic at all.
 So now let's walk through how to update component state.
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -467,7 +476,8 @@ Additionally, we want to be able to easily update lists and have React re-render
 We'll see how both of these are done and how they work together within a single component in order to create the behavior of a dynamic list.
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -589,7 +599,8 @@ A single isolated component isn't going to do us much good.
 > Let's start off with the component we just saw, but let's change its name to \`\` .
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -660,7 +671,8 @@ Let's take a look now at the Child Component. It serves two purposes:
 2.  to add the ability for a user to click on it and have it toggle a strikethrough, indicating that the item is 'complete'.
 
 
-```jsx
+```js
+//x
 
 
 import React, { Component } from 'react';
@@ -772,7 +784,8 @@ However, functional components cannot leverage the performance improvements and 
 If you want React to treat a functional component as a pure component, you'll have to convert the functional component to a class component that extends `React.PureComponent`.
 
 
-```jsx
+```js
+//x
 
 
 function PercentageStat({ label, score = 0, total = Math.max(1, score) }) {

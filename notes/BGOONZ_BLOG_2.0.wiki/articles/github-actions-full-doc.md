@@ -1013,19 +1013,19 @@ Each `run` keyword represents a new process and shell in the runner environment.
 
 -   A single-line command:
 
-    ```
+ ```
     - name: Install Dependencies
       run: npm install
-    ```
+ ```
 
 -   A multi-line command:
 
-    ```
+ ```
     - name: Clean install dependencies and build
       run: |
         npm ci
         npm run build
-    ```
+ ```
 
 Using the `working-directory` keyword, you can specify the working directory of where to run the command.
 

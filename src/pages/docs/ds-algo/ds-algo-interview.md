@@ -590,6 +590,7 @@ Note: both attributes must only be used if the script has a `src` attribute (i.e
 ### <span style="color:red;"> What is an `async` function?
 
 ```js
+//
 async function foo() {
   ...
 }
@@ -602,6 +603,7 @@ An `async` function is a function that allows you to pause the function's execut
 Most importantly, `async` functions are able to use the `await` keyword in their function body, which **pauses the function** until the operation after the `await` completes, and allows it to return that operation's result to a variable synchronously.
 
 ```js
+//
 // Normal promises in regular function:
 function foo() {
     promiseCall().then((result) => {
@@ -629,6 +631,7 @@ async function foo() {
 ### <span style="color:red;"> Create a function `batches` that returns the maximum number of whole batches that can be cooked from a recipe.
 
 ```js
+//
 /**
 It accepts two objects as arguments: the first object is the recipe
 for the food, while the second object is the available ingredients.
@@ -651,6 +654,7 @@ Use `Object.keys()` to return the ingredients of the recipe as an array, then us
 Use the spread `...` operator to feed the array of all the ingredient ratios into `Math.min()` to determine the lowest ratio. Passing this entire result into `Math.floor()` rounds down to return the maximum number of whole batches.
 
 ```js
+//
 const batches = (recipe, available) => Math.floor(Math.min(...Object.keys(recipe).map((k) => available[k] / recipe[k] || 0)));
 ```
 
@@ -723,6 +727,7 @@ In these examples, the base time is 1 element = `1ms`.
 ### <span style="color:red;"> O(1)
 
 ```js
+//
 arr[arr.length - 1];
 ```
 
@@ -732,6 +737,7 @@ arr[arr.length - 1];
 ### <span style="color:red;"> O(N)
 
 ```js
+//
 arr.filter(fn);
 ```
 
@@ -741,6 +747,7 @@ arr.filter(fn);
 ### <span style="color:red;"> O([1, N])
 
 ```js
+//
 arr.some(fn);
 ```
 
@@ -750,6 +757,7 @@ arr.some(fn);
 ### <span style="color:red;"> O(NlogN)
 
 ```js
+//
 arr.sort(fn);
 ```
 
@@ -759,6 +767,7 @@ arr.sort(fn);
 ### <span style="color:red;"> O(N\^2)
 
 ```js
+//
 for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
         // ...
@@ -772,6 +781,7 @@ for (let i = 0; i < arr.length; i++) {
 ### <span style="color:red;"> O(N!)
 
 ```js
+//
 const permutations = (arr) => {
     if (arr.length <= 2) return arr.length === 2 ? [arr, [arr[1], arr[0]]] : arr;
     return arr.reduce((acc, item, i) => acc.concat(permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [item, ...val])), []);
@@ -795,6 +805,7 @@ const permutations = (arr) => {
 
 
 ```js
+//
 
 
 function example() {
@@ -809,6 +820,7 @@ boundExample.call({ b: true }); // logs { a: true }
 Return a function that accepts an arbitrary number of arguments by gathering them with the rest `...` operator. From that function, return the result of calling the `fn` with `Function.prototype.apply` to apply the context and the array of arguments to the function.
 
 ```js
+//
 const bind =
     (fn, context) =>
     (...args) =>
@@ -840,6 +852,7 @@ A common technique to force the browser to re-download the file is to append a q
 ### <span style="color:red;"> How can you avoid callback hells?
 
 ```js
+//
 getData(function (a) {
     getMoreData(a, function (b) {
         getMoreData(b, function (c) {
@@ -859,6 +872,7 @@ Refactoring the functions to return promises and using `async/await` is usually 
 The above code can be restructured like so:
 
 ```js
+//
 async function asyncAwaitVersion() {
     const a = await getData();
     const b = await getMoreData(a);
@@ -892,6 +906,7 @@ There are lots of ways to solve the issue of callback hells:
 The callback function is invoked when `setState` has finished and the component gets rendered. Since `setState` is asynchronous, the callback function is used for any post action.
 
 ```js
+//
 setState({ name: 'sudheer' }, () => {
     console.log('The name has updated and component re-rendered');
 });
@@ -913,6 +928,7 @@ setState({ name: 'sudheer' }, () => {
 Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.
 
 ```js
+//
 // Legacy approach using findDOMNode()
 class MyComponent extends Component {
     componentDidMount() {
@@ -952,6 +968,7 @@ As an example, event listeners are asynchronous callbacks that are only executed
 
 
 ```js
+//
 
 
 function onClick() {
@@ -963,6 +980,7 @@ document.addEventListener('click', onClick);
 However, callbacks can also be synchronous. The following `map` function takes a callback function that is invoked synchronously for each iteration of the loop (array element).
 
 ```js
+//
 const map = (arr, callback) => {
     const result = [];
     for (let i = 0; i < arr.length; i++) {
@@ -992,6 +1010,7 @@ map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
 
 
 ```js
+//
 
 
 function GenericBox({ children }) {
@@ -1022,6 +1041,7 @@ function App() {
 React's philosophy in the beginning was to align with the browser DOM API rather than HTML, since that more closely represents how elements are created. Setting a `class` on an element meant using the `className` API:
 
 ```js
+//
 const element = document.createElement('div');
 element.className = 'hello';
 ```
@@ -1029,6 +1049,7 @@ element.className = 'hello';
 Additionally, before ES5, reserved words could not be used in objects:
 
 ```js
+//
 const element = {
     attributes: {
         class: 'hello'
@@ -1040,6 +1061,7 @@ In IE8, this will throw an error.
 In modern environments, destructuring will throw an error if trying to assign to a variable:
 
 ```js
+//
 const { class } = this.props // Error
 const { className } = this.props // All good
 const { class: className } =
@@ -1060,6 +1082,7 @@ However, `class` _can_ be used as a prop without problems, as seen in other libr
 Using the object spread operator `...`, the object's own enumerable properties can be copied into the new object. This creates a shallow clone of the object.
 
 ```js
+//
 const obj = { a: 1, b: 2 };
 const shallowClone = { ...obj };
 ```
@@ -1117,6 +1140,7 @@ Note: this technique does not attempt to test equivalence of data structures oth
 
 
 ```js
+//
 
 
 function isDeepEqual(obj1, obj2, testPrototypes = false) {
@@ -1156,6 +1180,7 @@ function isDeepEqual(obj1, obj2, testPrototypes = false) {
 Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.
 
 ```js
+//
 const { Provider, Consumer } = React.createContext(defaultValue);
 ```
 
@@ -1278,6 +1303,7 @@ Assuming the browser has already determined the set of rules for an element, eac
 Debouncing is a process to add some delay before executing a function. It is commonly used with DOM event listeners to improve the performance of page. It is a technique which allow us to "group" multiple sequential calls in a single one. A raw DOM event listeners can easily trigger 20+ events per second. A debounced function will only be called once the delay has passed.
 
 ```js
+//
 const debounce = (func, delay) => {
     let debounceTimer;
     return function () {
@@ -1344,6 +1370,7 @@ An element is a plain JavaScript object that represents a DOM node or component.
 A component is a function or class. Components can have state and take props as input and return an element tree as output (although they can represent generic containers or wrappers and don't necessarily have to emit DOM). Components can initiate side effects in lifecycle methods (e.g. AJAX requests, DOM mutations, interfacing with 3rd party libraries) and may be expensive to create.
 
 ```js
+//
 const Component = () => 'Hello';
 const componentElement = <Component />;
 const domNodeElement = <div />;
@@ -1385,6 +1412,7 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 Class components become error boundaries if they define either (or both) of the lifecycle methods `static getDerivedStateFromError()` or `componentDidCatch().`
 
 ```js
+//
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
@@ -1431,6 +1459,7 @@ This provides two main benefits:
     Instead of:
 
 ```js
+//
 document.querySelectorAll('button').forEach((button) => {
     button.addEventListener('click', handleButtonClick);
 });
@@ -1439,6 +1468,7 @@ document.querySelectorAll('button').forEach((button) => {
 Event delegation involves using a condition to ensure the child target matches our desired element:
 
 ```js
+//
 document.addEventListener('click', (e) => {
     if (e.target.closest('button')) {
         handleButtonClick();
@@ -1462,6 +1492,7 @@ Event-driven programming is a paradigm that involves building applications that 
 A common example of this is the pattern of elements listening to DOM events such as `click` and `mouseenter`, where a callback function is run when the event occurs.
 
 ```js
+//
 document.addEventListener('click', function (event) {
     // This callback function is run when the user
     // clicks on the document.
@@ -1471,6 +1502,7 @@ document.addEventListener('click', function (event) {
 Without the context of the DOM, the pattern may look like this:
 
 ```js
+//
 const hub = createEventHub();
 hub.on('message', function (data) {
     console.log(`${data.username} said ${data.text}`);
@@ -1509,6 +1541,7 @@ There are two main syntactic categories in JavaScript: expressions and statement
 ### <span style="color:red;"> Statements
 
 ```js
+//
 let x = 0;
 function declaration() {}
 if (true) {
@@ -1518,6 +1551,7 @@ if (true) {
 Statements appear as instructions that do something but don't produce values.
 
 ```js
+//
 // Assign `x` to the absolute value of `y`.
 var x;
 if (y >= 0) {
@@ -1534,6 +1568,7 @@ The only expression in the above code is `y >= 0` which produces a value, either
 Expressions produce a value. They can be passed around to functions because the interpreter replaces them with the value they resolve to.
 
 ```js
+//
 5 + 5; // => 10
 lastCharacter('input'); // => "t"
 true === true; // => true
@@ -1544,6 +1579,7 @@ true === true; // => true
 There is an equivalent version of the set of statements used before as an expression using the conditional operator:
 
 ```js
+//
 // Assign `x` as the absolute value of `y`.
 var x = y >= 0 ? y : -y;
 ```
@@ -1575,6 +1611,7 @@ There are 6 falsy values in JavaScript. They are:
     A value's truthiness can be examined by passing it into the `Boolean` function.
 
 ```js
+//
 Boolean(''); // false
 Boolean([]); // true
 ```
@@ -1582,6 +1619,7 @@ Boolean([]); // true
 There is a shortcut for this using the logical NOT `!` operator. Using `!` once will convert a value to its inverse boolean equivalent (i.e. not false is true), and `!` once more will convert back, thus effectively converting the value to a boolean.
 
 ```js
+//
 !!''; // false
 !![]; // true
 ```
@@ -1600,6 +1638,7 @@ There is a shortcut for this using the logical NOT `!` operator. Using `!` once 
 Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add values into the array, using the sum of the last two values, except for the first two.
 
 ```js
+//
 const fibonacci = (n) => [...Array(n)].reduce((acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i), []);
 ```
 
@@ -1612,12 +1651,14 @@ const fibonacci = (n) => [...Array(n)].reduce((acc, val, i) => acc.concat(i > 1 
 ### <span style="color:red;"> Given an array of words, write a method to output matching sets of anagrams.
 
 ```js
+//
 const words = ['rates', 'rat', 'stare', 'taser', 'tears', 'art', 'tabs', 'tar', 'bats', 'state'];
 ```
 
 ### <span style="color:red;"> Answer
 
 ```js
+//
 const words = ['rates', 'rat', 'stare', 'taser', 'tears', 'art', 'tabs', 'tar', 'bats', 'state'];
 function anagramGroups(wordAry) {
     const groupedWords = {};
@@ -1703,12 +1744,14 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 It evaluates to `false` because JavaScript uses the IEEE 754 standard for Math and it makes use of 64-bit floating numbers. This causes precision errors when doing decimal calculations, in short, due to computers working in Base 2 while decimal is Base 10.
 
 ```js
+//
 0.1 + 0.2; // 0.30000000000000004
 ```
 
 A solution to this problem would be to use a function that determines if two numbers are approximately equal by defining an error margin (epsilon) value that the difference between two values should be less than.
 
 ```js
+//
 const approxEqual = (n1, n2, epsilon = 0.0001) => Math.abs(n1 - n2) < epsilon;
 approxEqual(0.1 + 0.2, 0.3); // true
 ```
@@ -1761,6 +1804,7 @@ Both methods iterate through the elements of an array. `map()` maps each element
 Fragments allow a React component to return multiple elements without a wrapper, by grouping the children without adding extra elements to the DOM. Fragments offer better performance, lower memory usage, a cleaner DOM and can help in dealing with certain CSS mechanisms (e.g. tables, Flexbox and Grid).
 
 ```js
+//
 render() {
   return (
     <React.Fragment>
@@ -1845,6 +1889,7 @@ Unless focus is explicitly managed in the app, a scenario like this may happen:
 A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React's compositional nature. Higher-order components are like **pure components** because they accept any dynamically provided child component, but they won't modify or copy any behavior from their input components.
 
 ```js
+//
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
 
@@ -1857,6 +1902,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ### <span style="color:red;"> What will the console log in this example?
 
 ```js
+//
 var foo = 1;
 var foobar = function () {
     console.log(foo);
@@ -1887,6 +1933,7 @@ However, the value is not hoisted with the declaration.
 The following snippet:
 
 ```js
+//
 console.log(hoist);
 var hoist = 'value';
 ```
@@ -1894,6 +1941,7 @@ var hoist = 'value';
 is equivalent to:
 
 ```js
+//
 var hoist;
 console.log(hoist);
 hoist = 'value';
@@ -1903,6 +1951,7 @@ Therefore logging `hoist` outputs `undefined` to the console, not `"value"`.
 Hoisting also allows you to invoke a function declaration before it appears to be declared in a program.
 
 ```js
+//
 myFunction(); // No error; logs "hello"
 function myFunction() {
     console.log('hello');
@@ -1912,6 +1961,7 @@ function myFunction() {
 But be wary of function expressions that are assigned to a variable:
 
 ```js
+//
 myFunction(); // Error: `myFunction` is not a function
 var myFunction = function () {
     console.log('hello');
@@ -1973,6 +2023,7 @@ In HTML, the attribute name is in all lowercase and is given a string invoking a
 In React, the attribute name is camelCase and are passed the function reference inside curly braces:
 
 ```js
+//
 <button onClick={handleClick} />
 ```
 
@@ -1986,6 +2037,7 @@ In HTML, `false` can be returned to prevent default behavior, whereas in React `
 
 
 ```js
+//
 
 
 function handleClick(e) {
@@ -2071,6 +2123,7 @@ With HTML5, web pages can store data locally within the user's browser. The data
 This technique is very common in JavaScript libraries. It creates a closure around the entire contents of the file which creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries. The function is immediately invoked so that the namespace (library name) is assigned the return value of the function.
 
 ```js
+//
 const myLibrary = (function () {
     var privateVariable = 2;
     return {
@@ -2104,6 +2157,7 @@ These two types of programming can roughly be summarized as:
 ### <span style="color:red;"> Imperative
 
 ```js
+//
 const numbers = [1, 2, 3, 4, 5];
 const numbersDoubled = [];
 for (let i = 0; i < numbers.length; i++) {
@@ -2116,6 +2170,7 @@ We manually loop over the numbers of the array and assign the new index as the n
 ### <span style="color:red;"> Declarative
 
 ```js
+//
 const numbers = [1, 2, 3, 4, 5];
 const numbersDoubled = numbers.map((n) => n * 2);
 ```
@@ -2142,6 +2197,7 @@ For example, this won't work:
 
 
 ```js
+//
 
 
 function App({ messages, isVisible }) {
@@ -2160,6 +2216,7 @@ Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statemen
 
 
 ```js
+//
 
 
 function App({ messages, isVisible }) {
@@ -2185,6 +2242,7 @@ function App({ messages, isVisible }) {
 Keys are a special string attribute that helps React identify which items have been changed, added or removed. They are used when rendering array elements to give them a stable identity. Each element's key must be unique (e.g. IDs from the data or indexes as a last resort).
 
 ```js
+//
 const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
 ```
 
@@ -2283,6 +2341,7 @@ When several components need to share the same data, then it is recommended to l
 ### <span style="color:red;"> Create a function that masks a string of characters with `#` except for the last four (4) characters.
 
 ```js
+//
 mask('123456789'); // "#####6789"
 ```
 
@@ -2292,6 +2351,7 @@ mask('123456789'); // "#####6789"
 > Using `String.prototype.slice()` we can grab the last 4 characters of the string by passing `-4` as an argument. Then, using `String.prototype.padStart()`, we can pad the string to the original length with the repeated mask character.
 
 ```js
+//
 const mask = (str, maskChar = '#') => str.slice(-4).padStart(str.length, maskChar);
 ```
 
@@ -2325,6 +2385,7 @@ Memoization is the process of caching the output of function calls so that subse
 A basic implementation in JavaScript looks like this:
 
 ```js
+//
 const memoize = (fn) => {
     const cache = new Map();
     return (value) => {
@@ -2354,6 +2415,7 @@ const memoize = (fn) => {
 In JavaScript classes, the methods are not bound by default. This means that their `this` context can be changed (in the case of an event handler, to the element that is listening to the event) and will not refer to the component instance. To solve this, `Function.prototype.bind()` can be used to enforce the `this` context as the component instance.
 
 ```js
+//
 constructor(props) {
   super(props);
   this.handleClick = this.handleClick.bind(this);
@@ -2366,6 +2428,7 @@ handleClick() {
 -   The `bind` approach can be verbose and requires defining a `constructor`, so the new public class fields syntax is generally preferred:
 
 ```js
+//
 handleClick = () => {
   console.log('this is:', this);
 }
@@ -2381,6 +2444,7 @@ render() {
 -   You can also use an inline arrow function, because lexical `this` (referring to the component instance) is preserved:
 
 ```js
+//
 <button onClick={(e) => this.handleClick(e)}>Click me</button>
 ```
 
@@ -2421,6 +2485,7 @@ The two terms can be contrasted as:
     All `String.prototype` methods do not have an effect on the original string and return a new string. On the other hand, while some methods of `Array.prototype` do not mutate the original array reference and produce a fresh array, some cause mutations.
 
 ```js
+//
 const myString = 'hello!';
 myString.replace('!', ''); // returns a new string, cannot mutate the original value
 const originalArray = [1, 2, 3];
@@ -2454,6 +2519,7 @@ originalArray.concat(4); // returns a new array, does not mutate the original
 ### <span style="color:red;"> NodeJS often uses a callback pattern where if an error is encountered during execution, this error is passed as the first argument to the callback. What are the advantages of this pattern?
 
 ```js
+//
 fs.readFile(filePath, function (err, data) {
     if (err) {
         // handle the error, the return is important here
@@ -2476,6 +2542,7 @@ Advantages include:
     This practice is also called the _Node.js error convention_, and this kind of callback implementations are called _error-first callbacks_.
 
 ```js
+//
 var isTrue = function (value, callback) {
     if (value === true) {
         callback(null, 'Value was true.');
@@ -2550,6 +2617,7 @@ In JavaScript, two values discretely represent nothing - `undefined` and `null`.
 Often used to store one occurrence of data.
 
 ```js
+//
 const person = {
     name: 'John',
     age: 50,
@@ -2568,6 +2636,7 @@ Often used when you need to create multiple instances of an object, each with th
 
 
 ```js
+//
 
 
 function Person(name, age) {
@@ -2588,6 +2657,7 @@ person2.birthday(); // person2.age === 21
 Creates a new object similar to a constructor, but can store private data using a closure. There is also no need to use `new` before invoking the function or the `this` keyword. Factory functions usually discard the idea of prototypes and keep all properties and methods as own properties of the object.
 
 ```js
+//
 const createPerson = (name, age) => {
     const birthday = () => person.age++;
     const person = { name, age, birthday };
@@ -2602,6 +2672,7 @@ person.birthday(); // person.age === 51
 Sets the prototype of the newly created object.
 
 ```js
+//
 const personProto = {
     birthday() {
         this.age++;
@@ -2615,6 +2686,7 @@ person.birthday(); // person.age === 51
 A second argument can also be supplied to `Object.create()` which acts as a descriptor for the new properties to be defined.
 
 ```js
+//
 Object.create(personProto, {
     age: {
         value: 50,
@@ -2641,6 +2713,7 @@ Parameters are the variable names of the function definition, while arguments ar
 
 
 ```js
+//
 
 
 function myFunction(parameter1, parameter2) {
@@ -2677,6 +2750,7 @@ JavaScript always passes by value. However, with objects, the value is a referen
 You can use an arrow function to wrap around an event handler and pass arguments, which is equivalent to calling `bind`:
 
 ```js
+//
 <button onClick={() => this.handleClick(id)} />
 <button onClick={this.handleClick.bind(this, id)} />
 ```
@@ -2690,6 +2764,7 @@ You can use an arrow function to wrap around an event handler and pass arguments
 ### <span style="color:red;"> Create a function `pipe` that performs left-to-right function composition by returning a function that accepts one argument.
 
 ```js
+//
 const square = (v) => v * v;
 const double = (v) => v * 2;
 const addOne = (v) => v + 1;
@@ -2702,6 +2777,7 @@ res(3); // 19; addOne(double(square(3)))
 Gather all supplied arguments using the rest operator `...` and return a unary function that uses `Array.prototype.reduce()` to run the value through the series of functions before returning the final value.
 
 ```js
+//
 const pipe =
     (...fns) =>
     (x) =>
@@ -2723,6 +2799,7 @@ const pipe =
 Portal are the recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
 ```js
+//
 ReactDOM.createPortal(child, container);
 ```
 
@@ -2742,6 +2819,7 @@ Both increment the variable value by 1. The difference is what they evaluate to.
 The postfix increment operator evaluates to the value _before_ it was incremented.
 
 ```js
+//
 let i = 0;
 i++; // 0
 // i === 1
@@ -2750,6 +2828,7 @@ i++; // 0
 The prefix increment operator evaluates to the value _after_ it was incremented.
 
 ```js
+//
 let i = 0;
 ++i; // 1
 // i === 1
@@ -2783,6 +2862,7 @@ A `Promise` is in one of these states:
 The `Promise` object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. An example can be the following snippet, which after 100ms prints out the result string to the standard output. Also, note the catch, which can be used for error handling. `Promise`s are chainable.
 
 ```js
+//
 new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('result');
@@ -2808,6 +2888,7 @@ When the application is running in development mode, React will automatically ch
 For example, we define `propTypes` for component as below:
 
 ```js
+//
 import PropTypes from "prop-types"
 class User extends React.Component {
   static propTypes = {
@@ -2856,6 +2937,7 @@ A pure function is a function that satisfies these two conditions:
 ### <span style="color:red;"> Pure
 
 ```js
+//
 const a = (x, y) => x + y;
 const b = (arr, value) => arr.concat(value);
 const c = (arr) => [...arr].sort((a, b) => a - b);
@@ -2864,6 +2946,7 @@ const c = (arr) => [...arr].sort((a, b) => a - b);
 ### <span style="color:red;"> Impure
 
 ```js
+//
 const a = (x, y) => x + y + Math.random();
 const b = (arr, value) => (arr.push(value), arr);
 const c = (arr) => arr.sort((a, b) => a - b);
@@ -2886,7 +2969,8 @@ const c = (arr) => arr.sort((a, b) => a - b);
 Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
 
-```jsx
+```js
+//x
 
 
 const tree = (
@@ -2905,6 +2989,7 @@ Recursion is the repeated application of a process. In JavaScript, recursion inv
 For example, you may have a thread of comments returned from a database that exist in a flat array but need to be nested for display in the UI. Each comment is either a top-level comment (no parent) or is a reply to a parent comment. Comments can be a reply of a reply of a reply… we have no knowledge beforehand the number of levels deep a comment may be. This is where recursion can help.
 
 ```js
+//
 const nest = (items, id = null, link = 'parent_id') => items.filter((item) => item[link] === id).map((item) => ({ ...item, children: nest(items, item.id) }));
 const comments = [
     { id: 1, parent_id: null, text: 'First reply to post.' },
@@ -2937,6 +3022,7 @@ In the above example, the base condition is met if `filter()` returns an empty a
 ### <span style="color:red;"> What is the output of the following code?
 
 ```js
+//
 const a = [1, 2, 3];
 const b = [1, 2, 3];
 const c = '1,2,3';
@@ -2970,6 +3056,7 @@ Refs provide a way to access DOM nodes or React elements created in the render m
     Refs are created using `React.createRef()` method and attached to React elements via the `ref` attribute. In order to use refs throughout the component, assign the `ref` to the instance property within the constructor:
 
 ```js
+//
 class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -3038,6 +3125,7 @@ Generally, this concept is used in web applications to manage state. With most a
 
 
 ```js
+//
 
 
 function greet() {
@@ -3114,6 +3202,7 @@ However, there are some cases where they are required. They are not required at 
 1.  The line starts with `[`
 
 ```js
+//
 const previousLine = 3;
 [1, 2, previousLine].map((n) => n * 2);
 ```
@@ -3121,6 +3210,7 @@ const previousLine = 3;
 1.  The line starts with `(`
 
 ```js
+//
 const previousLine = 3;
 (function () {
     // ...
@@ -3143,6 +3233,7 @@ In the above cases, the interpreter does not insert a semicolon after `3`, and t
 Short-circuit evaluation involves logical operations evaluating from left-to-right and stopping early.
 
 ```js
+//
 true || false;
 ```
 
@@ -3150,12 +3241,14 @@ In the above sample using logical OR, JavaScript won't look at the second operan
 This also works for logical AND.
 
 ```js
+//
 false && true;
 ```
 
 This means you can have an expression that throws an error if evaluated, and it won't cause issues.
 
 ```js
+//
 true || nonexistentFunction();
 false && nonexistentFunction();
 ```
@@ -3163,6 +3256,7 @@ false && nonexistentFunction();
 This remains true for multiple operations because of left-to-right evaluation.
 
 ```js
+//
 true || nonexistentFunction() || window.nothing.wouldThrowError;
 true || window.nothing.wouldThrowError;
 true;
@@ -3171,6 +3265,7 @@ true;
 A common use case for this behavior is setting default values. If the first operand is falsy the second operand will be evaluated.
 
 ```js
+//
 const options = {};
 const setting = options.setting || 'default';
 setting; // "default"
@@ -3179,6 +3274,7 @@ setting; // "default"
 Another common use case is only evaluating an expression if the first operand is truthy.
 
 ```js
+//
 // Instead of:
 addEventListener('click', (e) => {
     if (e.target.closest('button')) {
@@ -3223,6 +3319,7 @@ To utilize a spritesheet in CSS, one would use certain properties, such as `back
 A stateful component is a component whose behavior depends on its state. This means that two separate instances of the component if given the same props will not necessarily render the same output, unlike pure function components.
 
 ```js
+//
 // Stateful class component
 class App extends Component {
     constructor(props) {
@@ -3273,6 +3370,7 @@ A stateless component is a component whose behavior does not depend on its state
 Static methods belong to a class and don't act on instances, while instance methods belong to the class prototype which is inherited by all instances of the class and acts on them.
 
 ```js
+//
 Array.isArray; // static method of Array
 Array.prototype.push; // instance method of Array
 ```
@@ -3281,6 +3379,7 @@ In this case, the `Array.isArray` method does not make sense as an instance meth
 Instance methods could technically work as static methods, but provide terser syntax:
 
 ```js
+//
 const arr = [1, 2, 3];
 arr.push(4);
 Array.push(arr, 4);
@@ -3322,6 +3421,7 @@ Here are some common examples of how `this` works:
 Properties set as `this` do not refer to the object.
 
 ```js
+//
 var myObject = {
     property: this,
     regularFunction: function () {
@@ -3348,6 +3448,7 @@ regularFunction(); // NOT myObject; lexical `this`
 `this` refers to the element listening to the event.
 
 ```js
+//
 document.body.addEventListener('click', function () {
     console.log(this); // document.body
 });
@@ -3358,6 +3459,7 @@ document.body.addEventListener('click', function () {
 `this` refers to the newly created object.
 
 ```js
+//
 class Example {
     constructor() {
         console.log(this); // myExample
@@ -3371,6 +3473,7 @@ const myExample = new Example();
 With `call()` and `apply()`, `this` refers to the object passed as the first argument.
 
 ```js
+//
 var myFunction = function () {
     return this;
 };
@@ -3382,6 +3485,7 @@ myFunction.call({ customThis: true }); // { customThis: true }
 Because `this` can change depending on the scope, it can have unexpected values when using regular functions.
 
 ```js
+//
 var obj = {
     arr: [1, 2, 3],
     doubleArr() {
@@ -3411,6 +3515,7 @@ obj.doubleArr(); // Uncaught TypeError: this.double is not a function
 ### <span style="color:red;"> What does the following code evaluate to?
 
 ```js
+//
 typeof typeof 0;
 ```
 
@@ -3495,6 +3600,7 @@ When no keyword exists before a variable assignment, it is either assigning a gl
 Below, by the time the the `setTimeout` callback executes, the loop has already finished and the `i` variable is `10`, so all ten callbacks reference the same variable available in the function scope.
 
 ```js
+//
 for (var i = 0; i < 10; i++) {
     setTimeout(() => {
         // logs `10` ten times
@@ -3523,6 +3629,7 @@ for (var i = 0; i < 10; i++) {
 `let` was introduced in ES2015 and is the new preferred way to declare variables that will be reassigned later. Trying to redeclare a variable again will throw an error. It is block-scoped so that using it in a loop will keep it scoped to the iteration.
 
 ```js
+//
 for (let i = 0; i < 10; i++) {
     setTimeout(() => {
         // logs 0, 1, 2, 3, ...
@@ -3536,6 +3643,7 @@ for (let i = 0; i < 10; i++) {
 `const` was introduced in ES2015 and is the new preferred default way to declare all variables if they won't be reassigned later, even for objects that will be mutated (as long as the reference to the object does not change). It is block-scoped and cannot be reassigned.
 
 ```js
+//
 const myObject = {};
 myObject.prop = 'hello!'; // No error
 myObject = 'hello'; // Error
@@ -3569,6 +3677,7 @@ The virtual DOM (VDOM) is a representation of the real DOM in the form of plain 
 The above markup's virtual DOM representation might look like this:
 
 ```js
+//
 {
   nodeName: "div",
   attributes: { class: "counter" },
@@ -3645,6 +3754,7 @@ For example, a comment system will be at risk if it does not validate or escape 
 # ALL Prior Code:
 
 ```js
+//
 // Normal promises in regular function:
 function foo() {
   promiseCall()

@@ -92,10 +92,11 @@ import './src/styles/custom-code-buttons.scss';
 
 In your Markdown content
 
-````
+```
 ```js
+//
 alert('click to copy 💾');
-````
+```
 
 ```
 
@@ -128,10 +129,11 @@ With `toasterText` config enabled this plugin will inject a custom toaster node:
 
 Don't show button
 
-````
-```js:clipboard=false
+```
+```js
+//:clipboard=false
 alert('will not be copied 💾');
-````
+```
 
 ```
 

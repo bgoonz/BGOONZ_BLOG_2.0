@@ -10,7 +10,7 @@ So far, we know quite a bit about `fetch`.
 
 Let's see the rest of API, to cover all its abilities.
 
-```smart
+```text
 Please note: most of these options are used rarely. You may skip this chapter and still use `fetch` well.
 
 Still, it's good to know what `fetch` can do, so if the need arises, you can return and read the details.
@@ -19,6 +19,7 @@ Still, it's good to know what `fetch` can do, so if the need arises, you can ret
 Here's the full list of all possible `fetch` options with their default values (alternatives in comments):
 
 ```js
+//
 let promise = fetch(url, {
   method: "GET", // POST, PUT, DELETE, etc.
   headers: {
@@ -60,6 +61,7 @@ Usually that header is set automatically and contains the url of the page that m
 To send no referer, set an empty string:
 
 ```js
+//
 fetch('/page', {
 *!*
   referrer: "" // no Referer header
@@ -70,6 +72,7 @@ fetch('/page', {
 To set another url within the current origin:
 
 ```js
+//
 fetch('/page', {
   // assuming we're on https://javascript.info
   // we can set any Referer header, but only within the current origin
@@ -122,6 +125,7 @@ E.g. `Referer: https://javascript.info/admin/secret/paths`.
 If we'd like other websites know only the origin part, not the URL-path, we can set the option:
 
 ```js
+//
 fetch('https://another.com/page', {
     // ...
     referrerPolicy: 'origin-when-cross-origin' // Referer: https://javascript.info
@@ -132,11 +136,11 @@ We can put it to all `fetch` calls, maybe integrate into JavaScript library of o
 
 Its only difference compared to the default behavior is that for requests to another origin `fetch` sends only the origin part of the URL (e.g. `https://javascript.info`, without path). For requests to our origin we still get the full `Referer` (maybe useful for debugging purposes).
 
-```smart header="Referrer policy is not only for `fetch`" Referrer policy, described in the [specification](https://w3c.github.io/webappsec-referrer-policy/), is not just for `fetch`, but more global.
+```text header="Referrer policy is not only for `fetch`" Referrer policy, described in the [specification](https://w3c.github.io/webappsec-referrer-policy/), is not just for `fetch`, but more global.
 
 In particular, it's possible to set the default policy for the whole page using the `Referrer-Policy` HTTP header, or per-link, with `<a rel="noreferrer">`.
 
-````
+```
 
 ## mode
 
@@ -190,10 +194,11 @@ For example, we're downloading a file, and we know that it's SHA-256 checksum is
 We can put it in the `integrity` option, like this:
 
 ```js
+//
 fetch('http://site.com/file', {
   integrity: 'sha256-abcdef'
 });
-````
+```
 
 Then `fetch` will calculate SHA-256 on its own and compare it with our string. In case of a mismatch, an error is triggered.
 
@@ -207,7 +212,8 @@ When the visitor leaves our page -- we'd like to save the data to our server.
 
 We can use the `window.onunload` event for that:
 
-```js run
+```js
+// run
 window.onunload = function() {
   fetch('/analytics', {
     method: 'POST',

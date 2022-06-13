@@ -14,11 +14,14 @@ template: docs
 
 ## Javascript
 
+### Chwat sheet:
+
 <details>
 
-<summary>  Cheatsheet </summary>
+<summary>  **Cheatsheet** </summary>
 
 ```js
+//
 
 // Single-line comments start with two slashes.
 /* Multiline comments start with slash-star,

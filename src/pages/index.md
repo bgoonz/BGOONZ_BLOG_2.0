@@ -92,7 +92,7 @@ sections:
                 ## &#xA;
             actions: []
             type: grid_item
-            image: images/neural.png
+            image: images/algolia.png
           - title: Convolutional Neural Networks
             title_url: neural networks
             image_alt: neural networks

@@ -10,7 +10,6 @@
 }
 
 .has-gradient {
-
     &.page-header,
     &.post-header {
         padding-bottom: 9.5em;
@@ -36,7 +35,7 @@
 
 .post-title {
     a {
-        color: inherit !important;
+        color: inherit;
         text-decoration: none;
     }
 }
@@ -69,7 +68,7 @@
 
 .post-full {
     .post-content {
-        padding: 2.5em 1.5em;
+        padding: 1.5em;
     }
 
     .post-meta {
@@ -131,10 +130,8 @@
     }
 }
 
-
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 841px) {
     .has-gradient {
-
         .page-title,
         .post-title {
             font-size: 3em;
@@ -162,7 +159,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .post {
         margin-bottom: 4vw;
     }

@@ -4,101 +4,92 @@ template: post
 subtitle: Event objects are normally created by Script
 excerpt: Event objects are normally created by Script
 date: 2022-04-19T07:12:49.030Z
-image: images/https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
-thumb_image: images/https://miro.medium.com/max/1400/0*amvxdM3oz4BDUy-V.gif
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/eventloop.gif?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/eventloop.gif?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/git.yaml
-  - src/data/categories/ds.yaml
-  - src/data/categories/js.yaml
+    - src/data/categories/git.yaml
+    - src/data/categories/ds.yaml
+    - src/data/categories/js.yaml
 tags:
-  - src/data/tags/links.yaml
+    - src/data/tags/links.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/passing-arguments-to-a-callback-in-js.md
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/passing-arguments-to-a-callback-in-js.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
 
-
-
-
 -   Event objects are normally created by ScriptUI and passed to your event handler. However, you can simulate a user action by constructing an event object using [ScriptUI.events.createEvent()](https://extendscript.docsforadobe.dev/user-interface-tools/scriptui-class.html#scriptui-events-createevent), and sending it to a target object’s controlobj-dispatchEvent function.
-    
 -   A helper object, [Keyboard state object](https://extendscript.docsforadobe.dev/user-interface-tools/environment.html#environment-keyboard-state), provides global access to the keyboard state during function execution, outside the event-handling framework.
-    
 
-___
+---
 
-## UIEvent base class[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class "Permalink to this headline")
+## UIEvent base class[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class 'Permalink to this headline')
 
 Encapsulates input event information for an event that propagates through a container and control hierarchy. This is a base class for the more specialized [KeyboardEvent object](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object) and [MouseEvent object](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object).
 
-### UIEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-object-properties "Permalink to this headline")
+### UIEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-object-properties 'Permalink to this headline')
 
 Both keyboard and mouse events have these properties.
 
-___
+---
 
-#### bubbles[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#bubbles "Permalink to this headline")
+#### bubbles[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#bubbles 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the event supports the bubbling phase.
 
-___
+---
 
-#### cancelable[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#cancelable "Permalink to this headline")
+#### cancelable[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#cancelable 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the handler can call this object’s [preventDefault()](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#eventobj-preventdefault) method to cancel the default action of the event.
 
-___
+---
 
-#### currentTarget[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#currenttarget "Permalink to this headline")
+#### currentTarget[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#currenttarget 'Permalink to this headline')
 
 Type: `Object`
 
 The element object where the currently executing handler was registered. This could be an ancestor of the target object, if the handler is invoked during the capture or bubbling phase.
 
-___
+---
 
-#### eventPhase[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#eventphase "Permalink to this headline")
+#### eventPhase[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#eventphase 'Permalink to this headline')
 
 Type: `Number`
 
 Current event propagation phase. One of these constants:
 
 -   `Event.NOT_DISPATCHING`
-    
 -   `Event.CAPTURING_PHASE`
-    
 -   `Event.AT_TARGET`
-    
 -   `Event.BUBBLING_PHASE`
-    
 
-___
+---
 
-#### target[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#target "Permalink to this headline")
+#### target[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#target 'Permalink to this headline')
 
 Type: `Object`
 
 The element object where the event occurred.
 
-___
+---
 
-#### timeStamp[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#timestamp "Permalink to this headline")
+#### timeStamp[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#timestamp 'Permalink to this headline')
 
 Type: `Object`
 
 Time the event was initiated. A JavaScript Date object.
 
-___
+---
 
-#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#type "Permalink to this headline")
+#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#type 'Permalink to this headline')
 
 Type: `String`
 
@@ -154,19 +145,19 @@ The name of the event that occurred. Predefined events types are:
 
 Additional type names apply specifically to keyboard and mouse events.
 
-___
+---
 
-#### view[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#view "Permalink to this headline")
+#### view[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#view 'Permalink to this headline')
 
 Type: `Object`
 
 The container or control object that dispatched the event.
 
-___
+---
 
-### UIEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-object-functions "Permalink to this headline")
+### UIEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-object-functions 'Permalink to this headline')
 
-#### initUIEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#inituievent "Permalink to this headline")
+#### initUIEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#inituievent 'Permalink to this headline')
 
 `eventObj.initUIEvent(eventName, bubble, isCancelable, view, detail)`
 
@@ -242,9 +233,9 @@ Modifies an event before it is dispatched to its targets. Takes effect only if [
 
 Returns undefined.
 
-___
+---
 
-#### preventDefault()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#preventdefault "Permalink to this headline")
+#### preventDefault()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#preventdefault 'Permalink to this headline')
 
 `eventObj.preventDefault()`
 
@@ -252,9 +243,9 @@ Cancels the default action of this event, if this event is cancelable (that is, 
 
 Returns `undefined`.
 
-___
+---
 
-#### stopPropagation()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#stoppropagation "Permalink to this headline")
+#### stopPropagation()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#stoppropagation 'Permalink to this headline')
 
 `eventObj.stopPropagation()`
 
@@ -262,103 +253,97 @@ Stops event propagation (bubbling and capturing) after executing the handler or 
 
 Returns `undefined`.
 
-___
+---
 
-## KeyboardEvent object[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object "Permalink to this headline")
+## KeyboardEvent object[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object 'Permalink to this headline')
 
 This type of object is passed to your registered event handler when a keyboard-input event occurs. The properties reflect the keypress and key modifier state at the time the keyboard event was generated. All properties are read-only.
 
-### KeyboardEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object-properties "Permalink to this headline")
+### KeyboardEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object-properties 'Permalink to this headline')
 
 In addition to the properties defined for [UIEvent base class](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class), a keyboard event has these properties. All properties are read-only.
 
-___
+---
 
-#### altKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#altkey "Permalink to this headline")
+#### altKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#altkey 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `ALT` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### ctrlKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#ctrlkey "Permalink to this headline")
+#### ctrlKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#ctrlkey 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `CTRL` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### metaKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#metakey "Permalink to this headline")
+#### metaKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#metakey 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `META` or `COMMAND` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### shiftKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#shiftkey "Permalink to this headline")
+#### shiftKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#shiftkey 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `SHIFT` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### keyIdentifier[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyidentifier "Permalink to this headline")
+#### keyIdentifier[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyidentifier 'Permalink to this headline')
 
 Type: `String`
 
 The key whose keypress generated the event, as a W3C identifier contained in a string; for example, `"U+0044"`. See [W3 Keyset Article](https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/keyset.html).
 
-___
+---
 
-#### keyLocation[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keylocation "Permalink to this headline")
+#### keyLocation[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keylocation 'Permalink to this headline')
 
 Type: `Number`
 
 A constant that identifies where on the keyboard the keypress occurred. One of:
 
 -   `DOM_KEY_LOCATION_STANDARD`
-    
 -   `DOM_KEY_LOCATION_LEFT`
-    
 -   `DOM_KEY_LOCATION_RIGHT`
-    
 -   `DOM_KEY_LOCATION_NUMPAD`
-    
 
-___
+---
 
-#### keyName[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyname "Permalink to this headline")
+#### keyName[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyname 'Permalink to this headline')
 
 Type: `String`
 
 The key whose keypress generated the event, as a simple key name; for example `"A"`.
 
-___
+---
 
-#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id4 "Permalink to this headline")
+#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id4 'Permalink to this headline')
 
 Type: `String`
 
 The name of the event that occurred. Key events types are:
 
 -   `keyup`
-    
 -   `keydown`
-    
 
-___
+---
 
-### KeyboardEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object-functions "Permalink to this headline")
+### KeyboardEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#keyboardevent-object-functions 'Permalink to this headline')
 
 In addition to the functions defined for [UIEvent base class](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class), a keyboard event has these functions.
 
-___
+---
 
-#### getModifierState()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#getmodifierstate "Permalink to this headline")
+#### getModifierState()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#getmodifierstate 'Permalink to this headline')
 
 `eventObj.getModifierState(keyIdentifier)`
 
@@ -443,9 +428,9 @@ Note
 
 If you’re trying to check whether keyboard modifier keys (alt/ctrl/meta/shift) are held down at any time in your script, not just in an event, see [Keyboard state object](https://extendscript.docsforadobe.dev/user-interface-tools/environment.html#environment-keyboard-state).
 
-___
+---
 
-#### initKeyboardEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#initkeyboardevent "Permalink to this headline")
+#### initKeyboardEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#initkeyboardevent 'Permalink to this headline')
 
 `eventObj.initKeyboardEvent (eventName, bubble, isCancelable, view, keyID, keyLocation, modifiersList)`
 
@@ -547,27 +532,27 @@ ___
 
 Reinitializes the object, allowing you to change the event properties after construction. Arguments set the corresponding properties. Returns `undefined`.
 
-___
+---
 
-## MouseEvent object[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object "Permalink to this headline")
+## MouseEvent object[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object 'Permalink to this headline')
 
 This type of object is passed to your registered event handler when a mouse-input event occurs. The properties reflect the button and modifier-key state and pointer position at the time the event was generated. In the case of nested elements, mouse event types are always targeted at the most deeply nested element. Ancestors of the targeted element can use bubbling to obtain notification of mouse events which occur within its descendent elements.
 
-### MouseEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-properties "Permalink to this headline")
+### MouseEvent object properties[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-properties 'Permalink to this headline')
 
 In addition to the properties defined for [UIEvent base class](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class), a mouse event has these properties. All properties are read-only.
 
-___
+---
 
-#### altKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id7 "Permalink to this headline")
+#### altKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id7 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `ALT` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### button[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#button "Permalink to this headline")
+#### button[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#button 'Permalink to this headline')
 
 Type: `Number`
 
@@ -619,88 +604,82 @@ Which mouse button changed state.
 
 Some mice may provide or simulate more buttons, and values higher than 2 represent such buttons.
 
-___
+---
 
-#### clientX and clientY[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#clientx-and-clienty "Permalink to this headline")
+#### clientX and clientY[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#clientx-and-clienty 'Permalink to this headline')
 
 Type: `Number`
 
 The horizontal and vertical coordinates at which the event occurred relative to the target object. The origin is the top left of the control or window, inside any border decorations.
 
-___
+---
 
-#### ctrlKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id8 "Permalink to this headline")
+#### ctrlKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id8 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `CTRL` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### detail[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#detail "Permalink to this headline")
+#### detail[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#detail 'Permalink to this headline')
 
 Type: `Number`
 
 Details of the event, which vary according to the event type. For the `click`, `mousedown`, and `mouseup` events, the value is `1` for a single click, or `2` for a double click.
 
-___
+---
 
-#### metaKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id9 "Permalink to this headline")
+#### metaKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id9 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `META` or `` COMMAND` `` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-___
+---
 
-#### screenX and screenY[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#screenx-and-screeny "Permalink to this headline")
+#### screenX and screenY[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#screenx-and-screeny 'Permalink to this headline')
 
 Type: `Number`
 
 The horizontal and vertical coordinates at which the event occurred relative to the screen.
 
-___
+---
 
-#### shiftKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id10 "Permalink to this headline")
+#### shiftKey[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id10 'Permalink to this headline')
 
 Type: `Boolean`
 
 When true, the `SHIFT` key was active. Value is `undefined` if the `keyIdentifier` is for a modifier key.
 
-___
+---
 
-#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id11 "Permalink to this headline")
+#### type[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#id11 'Permalink to this headline')
 
 Type: `String`
 
 The name of the event that occurred. Mouse events types are:
 
 -   `mousedown`
-    
 -   `mouseup`
-    
 -   `mousemove`
-    
 -   `mouseover`
-    
 -   `mouseout`
-    
 -   `click (detail = 1 for single, 2 for double)`
-    
 
 The sequence of click events is: `mousedown`, `mouseup`, `click`.
 
-___
+---
 
-### MouseEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-functions "Permalink to this headline")
+### MouseEvent object functions[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-functions 'Permalink to this headline')
 
 In addition to the functions defined for [UIEvent base class](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#uievent-base-class), a mouse event has these functions.
 
-___
+---
 
-#### getModifierState()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-getmodifierstate "Permalink to this headline")
+#### getModifierState()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#mouseevent-object-getmodifierstate 'Permalink to this headline')
 
 `eventObj.getModifierState(keyIdentifier)`
 
@@ -781,9 +760,9 @@ ___
 
 Returns true if the given modifier was active when the event occurred, false otherwise.
 
-___
+---
 
-#### initMouseEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#initmouseevent "Permalink to this headline")
+#### initMouseEvent()[¶](https://extendscript.docsforadobe.dev/user-interface-tools/event-handling.html#initmouseevent 'Permalink to this headline')
 
 > ```
 > eventObj.initMouseEvent(
@@ -803,7 +782,7 @@ ___
 >     button,
 >     relatedTarge
 > )
-> 
+>
 > ```
 
 <table>
@@ -943,5 +922,6 @@ ___
 Reinitializes the object, allowing you to change the event properties after construction. Arguments set the corresponding properties.
 
 Returns `undefined`.<a class="jsbin-embed" href="https://jsbin.com/dizifem/embed?js,console,output">JS Bin on jsbin.com</a>
+
 <script src="https://static.jsbin.com/js/embed.min.js?4.1.8">
 </script>

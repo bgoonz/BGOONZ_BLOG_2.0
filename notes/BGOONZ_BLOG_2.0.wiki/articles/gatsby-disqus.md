@@ -8,13 +8,13 @@ The goal of this plugin is to allow users to bring their content to life and cul
 
 ## Install
 
-```sh
+```console
 $ yarn add gatsby-plugin-disqus
 ```
 
 or
 
-```sh
+```console
 $ npm install -S gatsby-plugin-disqus
 ```
 
@@ -29,6 +29,7 @@ If you have unanswered questions or would like help with enhancing or debugging 
 Add the plugin to your `gatsby-config.js` file with your [Disqus shortname](https://help.disqus.com/installation/whats-a-shortname)
 
 ```js
+//
 // gatsby-config.js
 module.exports = {
     plugins: [
@@ -61,7 +62,8 @@ All of the following parameters are optional, though providing a `url`, `identif
 
 You can use the plugin as shown in this brief example:
 
-```jsx
+```js
+//x
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 const PostTemplate = () => {
