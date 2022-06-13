@@ -42,6 +42,7 @@
         "sprintf-js": "1.1.2"
     },
     "devDependencies": {
+        "eslint": "^8.17.0",
         "gatsby-remark-code-buttons": "^2.0.7"
     }
 }

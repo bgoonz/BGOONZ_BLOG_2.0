@@ -118,7 +118,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-````console
+```console
 
 ```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -147,7 +147,7 @@ fs.writeFile('output.md', cat, err =>  {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
@@ -2228,19 +2228,19 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```consoleell
+ ```console
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+ ```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
-    ```consoleell
+ ```console
     cd my-default-starter/
     gatsby develop
-    ```
+ ```
 
 1. **Open the source code and start editing!**
 

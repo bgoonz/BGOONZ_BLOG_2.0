@@ -17,10 +17,9 @@ public_folder: /images/uploads # url to media files when deployed
 
 show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
 
-# site_url: https://your-site.com  # edit and uncomment this line to enable previews
-# display_url: https://your-site.com
-# logo_url: https://your-site.com/images/logo.svg  # custom logo
-# locale: 'en'  # UI language
+display_url: https://bgoonz-blog.netlify.app/
+logo_url: https://bgoonz-blog.netlify.app//images/main-logo.png
+locale: 'en'  # UI language
 
 collections:
     - name: docs

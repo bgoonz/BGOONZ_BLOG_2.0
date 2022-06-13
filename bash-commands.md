@@ -12,58 +12,13 @@
 
 ###### code
 
-```console
+```bash
+
 #!/bin/bash
 revert
 ## SHORTCUTS and HISTORY
 
 
-CTRL+A  # move to beginning of line
-CTRL+B  # moves backward one character
-CTRL+C  # halts the current command
-CTRL+D  # deletes one character backward or logs out of current session, similar to exit
-CTRL+E  # moves to end of line
-CTRL+F  # moves forward one character
-CTRL+G  # aborts the current editing command and ring the terminal bell
-CTRL+H  # deletes one character under cursor (same as DELETE)
-CTRL+J  # same as RETURN
-CTRL+K  # deletes (kill) forward to end of line
-CTRL+L  # clears screen and redisplay the line
-CTRL+M  # same as RETURN
-CTRL+N  # next line in command history
-CTRL+O  # same as RETURN, then displays next line in history file
-CTRL+P  # previous line in command history
-CTRL+Q  # resumes suspended shell output
-CTRL+R  # searches backward
-CTRL+S  # searches forward or suspends shell output
-CTRL+T  # transposes two characters
-CTRL+U  # kills backward from point to the beginning of line
-CTRL+V  # makes the next character typed verbatim
-CTRL+W  # kills the word behind the cursor
-CTRL+X  # lists the possible filename completions of the current word
-CTRL+Y  # retrieves (yank) last item killed
-CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
-
-ALT+B   # moves backward one word
-ALT+D   # deletes next word
-ALT+F   # moves forward one word
-ALT+H   # deletes one character backward
-ALT+T   # transposes two words
-ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
-ALT+U   # capitalizes every character from the current cursor position to the end of the word
-ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
-ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
-ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
-ALT+?   # list possible completions to what is typed
-ALT+^   # expand line to most recent match from history
-
-CTRL+X then (   # start recording a keyboard macro
-CTRL+X then )   # finish recording keyboard macro
-CTRL+X then E   # recall last recorded keyboard macro
-CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands
-
-BACKSPACE  # deletes one character backward
-DELETE     # deletes one character under cursor
 
 history   # shows command line history
 !!        # repeats the last command
@@ -144,7 +99,7 @@ cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directorie
 pwd                           # tells you where you currently are
 cd ~                          # changes to home.
 cd -                        # changes to previous working directory
-
+```
 
 ## SSH, SYSTEM INFO & NETWORK COMMANDS
 
@@ -626,7 +581,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-````console
+```console
 
 ```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -655,7 +610,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
