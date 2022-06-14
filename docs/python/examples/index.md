@@ -1,256 +1,270 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Practice
-========
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Python Practice:
-----------------
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-Python Problems & Solutions For Beginners
-=========================================
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Practice
+
+## Python Practice:
+
+# Python Problems & Solutions For Beginners
 
 Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of this page for you to…
 
-------------------------------------------------------------------------
+---
 
 ### Python Problems & Solutions For Beginners
 
@@ -260,7 +274,7 @@ Introduction to python taught through example problems. Solutions are included i
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 #### Here are some other articles for reference if you need them:
 
@@ -270,11 +284,11 @@ Introduction to python taught through example problems. Solutions are included i
 <a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong><br />
 <em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Here are the problems without solutions for you to practice with:
 
-------------------------------------------------------------------------
+---
 
 ### Problem 1
 
@@ -330,7 +344,7 @@ Ask the user for a string and print out whether this string is a `palindrome` or
 
 > Here’s 5 ways to reverse a string (courtesy of <a href="https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/" class="markup--anchor markup--pullquote-anchor">geeksforgeeks</a>)
 
-------------------------------------------------------------------------
+---
 
 ### Problem 7
 
@@ -365,17 +379,17 @@ The Fibonacci sequence is a sequence of numbers where the next number in the seq
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Intermediate Problems:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*hTU58jGsgkrszi76.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Problem 11
 
-In linear algebra, *a Toeplitz matrix is one in which the elements on any given diagonal from top left to bottom right are identical.*  
+In linear algebra, _a Toeplitz matrix is one in which the elements on any given diagonal from top left to bottom right are identical._  
 Here is an example:
 
     1 2 3 4 8
@@ -412,51 +426,37 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
-Python
-======
+# Python
 
--   Python is an interpreted, high-level and general-purpose, dynamically typed programming language
--   It is also Object oriented, modular oriented and a scripting language.
--   In Python, everything is considered as an Object.
--   A python file has an extension of .py
--   Python follows Indentation to separate code blocks instead of flower brackets({}).
--   We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
+- Python is an interpreted, high-level and general-purpose, dynamically typed programming language
+- It is also Object oriented, modular oriented and a scripting language.
+- In Python, everything is considered as an Object.
+- A python file has an extension of .py
+- Python follows Indentation to separate code blocks instead of flower brackets({}).
+- We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
 
-    `python <filename.py>`
+  `python <filename.py>`
 
 #### By default, the python doesn't require any imports to run a python file.
 
-Create and execute a program
-----------------------------
+## Create and execute a program
 
 1.  Open up a terminal/cmd
 2.  Create the program: nano/cat &gt; nameProgram.py
 3.  Write the program and save it
 4.  python nameProgram.py
 
-  
-
 ### Basic Datatypes
 
 <table><thead><tr class="header"><th>Data Type</th><th>Description</th></tr></thead><tbody><tr class="odd"><td>int</td><td>Integer values [0, 1, -2, 3]</td></tr><tr class="even"><td>float</td><td>Floating point values [0.1, 4.532, -5.092]</td></tr><tr class="odd"><td>char</td><td>Characters [a, b, @, !, `]</td></tr><tr class="even"><td>str</td><td>Strings [abc, AbC, A@B, sd!, `asa]</td></tr><tr class="odd"><td>bool</td><td>Boolean Values [True, False]</td></tr><tr class="even"><td>char</td><td>Characters [a, b, @, !, `]</td></tr><tr class="odd"><td>complex</td><td>Complex numbers [2+3j, 4-1j]</td></tr></tbody></table>
 
-  
-
-Keywords
---------
-
-  
+## Keywords
 
 <table><thead><tr class="header"><th>Keyword</th><th>Description</th></tr></thead><tbody><tr class="odd"><td>break</td><td>used to exit loop and used to exit</td></tr><tr class="even"><td>char</td><td>basic declaration of a type character</td></tr><tr class="odd"><td>const</td><td>prefix declaration meaning variable can not be changed</td></tr><tr class="even"><td>continue</td><td>go to bottom of loop in for, while loops</td></tr><tr class="odd"><td>class</td><td>to define a class</td></tr><tr class="even"><td>def</td><td>to define a function</td></tr><tr class="odd"><td>elif</td><td>shortcut for (else if) used in else if ladder</td></tr><tr class="even"><td>else</td><td>executable statement, part of "if" structure</td></tr><tr class="odd"><td>float</td><td>basic declaration of floating point</td></tr><tr class="even"><td>for</td><td>executable statement, for loop</td></tr><tr class="odd"><td>from</td><td>executable statement, used to import only specific objects from a package</td></tr><tr class="even"><td>if</td><td>executable statement</td></tr><tr class="odd"><td>import</td><td>to import modules</td></tr><tr class="even"><td>pass</td><td>keyword to specify noting is happening in the codeblock, generally used in classes</td></tr><tr class="odd"><td>return</td><td>executable statement with or without a value</td></tr><tr class="even"><td>while</td><td>executable statement, while loop</td></tr></tbody></table>
 
-  
-
-Operators
----------
-
-  
+## Operators
 
 <table><thead><tr class="header"><th>Operator</th><th>Description</th><th></th></tr></thead><tbody><tr class="odd"><td>( )</td><td>grouping parenthesis, function call, tuple declaration</td><td></td></tr><tr class="even"><td>[ ]</td><td>array indexing, also declaring lists etc.</td><td></td></tr><tr class="odd"><td>!</td><td>relational not, complement, ! a yields true or false</td><td></td></tr><tr class="even"><td>~</td><td>bitwise not, ones complement, ~a</td><td></td></tr><tr class="odd"><td>-</td><td>unary minus, - a</td><td></td></tr><tr class="even"><td>+</td><td>unary plus, + a</td><td></td></tr><tr class="odd"><td>*</td><td>multiply, a * b</td><td></td></tr><tr class="even"><td>/</td><td>divide, a / b</td><td></td></tr><tr class="odd"><td>%</td><td>modulo, a % b</td><td></td></tr><tr class="even"><td>+</td><td>add, a + b</td><td></td></tr><tr class="odd"><td>-</td><td>subtract, a - b</td><td></td></tr><tr class="even"><td>&lt;&lt;</td><td>shift left, left operand is shifted left by right operand bits</td><td></td></tr><tr class="odd"><td>&gt;&gt;</td><td>shift right, left operand is shifted right by right operand bits</td><td></td></tr><tr class="even"><td>&lt;</td><td>less than, result is true or false, a %lt; b</td><td></td></tr><tr class="odd"><td>&lt;=</td><td>less than or equal, result is true or false, a &lt;= b</td><td></td></tr><tr class="even"><td>&gt;</td><td>greater than, result is true or false, a &gt; b</td><td></td></tr><tr class="odd"><td>&gt;=</td><td>greater than or equal, result is true or false, a &gt;= b</td><td></td></tr><tr class="even"><td>==</td><td>equal, result is true or false, a == b</td><td></td></tr><tr class="odd"><td>!=</td><td>not equal, result is true or false, a != b</td><td></td></tr><tr class="even"><td>&amp;</td><td>bitwise and, a &amp; b</td><td></td></tr><tr class="odd"><td>^</td><td>bitwise exclusive or XOR, a ^ b</td><td></td></tr><tr class="even"><td>|</td><td>bitwise or, a</td><td>b</td></tr><tr class="odd"><td>&amp;&amp;, and</td><td>relational and, result is true or false, a &lt; b &amp;&amp; c &gt;= d</td><td></td></tr><tr class="even"><td>||, or</td><td>relational or, result is true or false, a &lt; b || c &gt;= d</td><td></td></tr><tr class="odd"><td>=</td><td>store or assignment</td><td></td></tr><tr class="even"><td>+=</td><td>add and store</td><td></td></tr><tr class="odd"><td>-=</td><td>subtract and store</td><td></td></tr><tr class="even"><td>*=</td><td>multiply and store</td><td></td></tr><tr class="odd"><td>/=</td><td>divide and store</td><td></td></tr><tr class="even"><td>%=</td><td>modulo and store</td><td></td></tr><tr class="odd"><td>&lt;&lt;=</td><td>shift left and store</td><td></td></tr><tr class="even"><td>&gt;&gt;=</td><td>shift right and store</td><td></td></tr><tr class="odd"><td>&amp;=</td><td>bitwise and and store</td><td></td></tr><tr class="even"><td>^=</td><td>bitwise exclusive or and store</td><td></td></tr><tr class="odd"><td>|=</td><td>bitwise or and store</td><td></td></tr><tr class="even"><td>,</td><td>separator as in ( y=x,z=++x )</td><td></td></tr></tbody></table>
 
@@ -464,24 +464,24 @@ Operators
 
 ### List
 
--   List is a collection which is ordered and changeable. Allows duplicate members.
--   Lists are created using square brackets:
+- List is a collection which is ordered and changeable. Allows duplicate members.
+- Lists are created using square brackets:
 
 <!-- -->
 
     thislist = ["apple", "banana", "cherry"]
 
--   List items are ordered, changeable, and allow duplicate values.
--   List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
--   The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
--   To determine how many items a list has, use the `len()` function.
--   A list can contain different data types:
+- List items are ordered, changeable, and allow duplicate values.
+- List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+- To determine how many items a list has, use the `len()` function.
+- A list can contain different data types:
 
 <!-- -->
 
     list1 = ["abc", 34, True, 40, "male"]
 
--   It is also possible to use the list() constructor when creating a new list
+- It is also possible to use the list() constructor when creating a new list
 
 <!-- -->
 
@@ -489,33 +489,33 @@ Operators
 
 ### Tuple
 
--   Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
--   A tuple is a collection which is ordered and unchangeable.
--   Tuples are written with round brackets.
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- A tuple is a collection which is ordered and unchangeable.
+- Tuples are written with round brackets.
 
 <!-- -->
 
     thistuple = ("apple", "banana", "cherry")
 
--   Tuple items are ordered, unchangeable, and allow duplicate values.
--   Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
--   When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
--   Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
--   Since tuple are indexed, tuples can have items with the same value:
--   Tuples allow duplicate values:
+- Tuple items are ordered, unchangeable, and allow duplicate values.
+- Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+- When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+- Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+- Since tuple are indexed, tuples can have items with the same value:
+- Tuples allow duplicate values:
 
 <!-- -->
 
     thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 
--   To determine how many items a tuple has, use the `len()`function:
+- To determine how many items a tuple has, use the `len()`function:
 
 <!-- -->
 
     thistuple = ("apple", "banana", "cherry")
     print(len(thistuple))
 
--   To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+- To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
 
 <!-- -->
 
@@ -526,7 +526,7 @@ Operators
     thistuple = ("apple")
     print(type(thistuple))
 
--   It is also possible to use the tuple() constructor to make a tuple.
+- It is also possible to use the tuple() constructor to make a tuple.
 
 <!-- -->
 
@@ -535,19 +535,19 @@ Operators
 
 ### Set
 
--   Set is a collection which is unordered and unindexed. No duplicate members.
--   A set is a collection which is both unordered and unindexed.
+- Set is a collection which is unordered and unindexed. No duplicate members.
+- A set is a collection which is both unordered and unindexed.
 
 <!-- -->
 
     thisset = {"apple", "banana", "cherry"}
 
--   Set items are unordered, unchangeable, and do not allow duplicate values.
--   Unordered means that the items in a set do not have a defined order.
--   Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
--   Sets are unchangeable, meaning that we cannot change the items after the set has been created.
--   Duplicate values will be ignored.
--   To determine how many items a set has, use the `len()` method.
+- Set items are unordered, unchangeable, and do not allow duplicate values.
+- Unordered means that the items in a set do not have a defined order.
+- Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+- Sets are unchangeable, meaning that we cannot change the items after the set has been created.
+- Duplicate values will be ignored.
+- To determine how many items a set has, use the `len()` method.
 
 <!-- -->
 
@@ -555,7 +555,7 @@ Operators
 
     print(len(thisset))
 
--   Set items can be of any data type:
+- Set items can be of any data type:
 
 <!-- -->
 
@@ -564,7 +564,7 @@ Operators
     set3 = {True, False, False}
     set4 = {"abc", 34, True, 40, "male"}
 
--   It is also possible to use the `set()` constructor to make a set.
+- It is also possible to use the `set()` constructor to make a set.
 
 <!-- -->
 
@@ -572,9 +572,9 @@ Operators
 
 ### Dictionary
 
--   Dictionary is a collection which is unordered and changeable. No duplicate members.
--   Dictionaries are used to store data values in key:value pairs.
--   Dictionaries are written with curly brackets, and have keys and values:
+- Dictionary is a collection which is unordered and changeable. No duplicate members.
+- Dictionaries are used to store data values in key:value pairs.
+- Dictionaries are written with curly brackets, and have keys and values:
 
 <!-- -->
 
@@ -584,7 +584,7 @@ Operators
       "year": 1964
     }
 
--   Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+- Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
 
 <!-- -->
 
@@ -595,16 +595,16 @@ Operators
     }
     print(thisdict["brand"])
 
--   Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
--   Dictionaries cannot have two items with the same key.
--   Duplicate values will overwrite existing values.
--   To determine how many items a dictionary has, use the `len()` function.
+- Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+- Dictionaries cannot have two items with the same key.
+- Duplicate values will overwrite existing values.
+- To determine how many items a dictionary has, use the `len()` function.
 
 <!-- -->
 
     print(len(thisdict))
 
--   The values in dictionary items can be of any data type
+- The values in dictionary items can be of any data type
 
 <!-- -->
 
@@ -633,8 +633,8 @@ Python has two primitive loop commands:
 
 #### While loop
 
--   With the `while` loop we can execute a set of statements as long as a condition is true.
--   Example: Print i as long as i is less than 6
+- With the `while` loop we can execute a set of statements as long as a condition is true.
+- Example: Print i as long as i is less than 6
 
 <!-- -->
 
@@ -643,16 +643,16 @@ Python has two primitive loop commands:
       print(i)
       i += 1
 
--   The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
--   With the `break` statement we can stop the loop even if the while condition is true
--   With the continue statement we can stop the current iteration, and continue with the next.
--   With the else statement we can run a block of code once when the condition no longer is true.
+- The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+- With the `break` statement we can stop the loop even if the while condition is true
+- With the continue statement we can stop the current iteration, and continue with the next.
+- With the else statement we can run a block of code once when the condition no longer is true.
 
 #### For loop
 
--   A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
--   This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
--   With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+- A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
 <!-- -->
 
@@ -660,12 +660,12 @@ Python has two primitive loop commands:
     for x in fruits:
       print(x)
 
--   The for loop does not require an indexing variable to set beforehand.
--   To loop through a set of code a specified number of times, we can use the range() function.
--   The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
--   The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
--   The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.
--   The "inner loop" will be executed one time for each iteration of the "outer loop":
+- The for loop does not require an indexing variable to set beforehand.
+- To loop through a set of code a specified number of times, we can use the range() function.
+- The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+- The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
+- The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.
+- The "inner loop" will be executed one time for each iteration of the "outer loop":
 
 <!-- -->
 
@@ -676,7 +676,7 @@ Python has two primitive loop commands:
       for y in fruits:
         print(x, y)
 
--   for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+- for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
 
 <!-- -->
 
@@ -692,9 +692,9 @@ Python has two primitive loop commands:
 
     function_name()
 
--   We need not to specify the return type of the function.
--   Functions by default return `None`
--   We can return any datatype.
+- We need not to specify the return type of the function.
+- Functions by default return `None`
+- We can return any datatype.
 
 <!-- -->
 
@@ -1134,12 +1134,7 @@ Python has two primitive loop commands:
     newPerson = {key.title(): value for key, value in person.items()}
     print(list(newPerson.items()))
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

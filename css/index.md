@@ -1,266 +1,281 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Learn Css
-=========
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Learn CSS
-=========
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Learn Css
+
+# Learn CSS
 
 This is an embedded [Microsoft Office](https://office.com) presentation, powered by [Office](https://office.com/webapps).
 
 CSS Selectors
 
-------------------------------------------------------------------------
+---
 
 ### Learn CSS So That Your Site Doesn’t Look Like Garbage
 
 ### CSS Selectors
 
--   <span id="62c3">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
--   <span id="d60d">`Type Selectors` : Matches by node name.</span>
--   <span id="9826">`Class Selectors` : Matches by class name.</span>
--   <span id="10a7">`ID Selectors` : Matches by ID name.</span>
--   <span id="64c0">`Universal Selectors` : Selects all HTML elements on a page.</span>
--   <span id="9c6b">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
+- <span id="62c3">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
+- <span id="d60d">`Type Selectors` : Matches by node name.</span>
+- <span id="9826">`Class Selectors` : Matches by class name.</span>
+- <span id="10a7">`ID Selectors` : Matches by ID name.</span>
+- <span id="64c0">`Universal Selectors` : Selects all HTML elements on a page.</span>
+- <span id="9c6b">`Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a\[title\] will match all a elements with a title attribute)</span>
 
 <!-- -->
 
@@ -283,13 +298,13 @@ CSS Selectors
 
 **Class Selectors**
 
--   <span id="fddf">Used to select all elements of a certain class denoted with a `.[class name]`</span>
--   <span id="72af">You can assign multiple classes to a DOM element by separating them with a space.</span>
+- <span id="fddf">Used to select all elements of a certain class denoted with a `.[class name]`</span>
+- <span id="72af">You can assign multiple classes to a DOM element by separating them with a space.</span>
 
 **Compound Class Selectors**
 
--   <span id="befd">To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.</span>
--   <span id="e2c8">TO use a compound class selector just append the classes together when referencing them in the CSS.</span>
+- <span id="befd">To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.</span>
+- <span id="e2c8">TO use a compound class selector just append the classes together when referencing them in the CSS.</span>
 
 <!-- -->
 
@@ -297,8 +312,8 @@ CSS Selectors
     <div class="box orange"></div>
     <div class="circle orange"></div>
 
--   <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
--   <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a *descendant selector*.</span>
+- <span id="7dd3">i.e. .box.yellow will select only the first element.</span>
+- <span id="8904">KEEP IN MIND that if you do include a space it will make the selector into a _descendant selector_.</span>
 
 <!-- -->
 
@@ -307,50 +322,50 @@ CSS Selectors
       font-style: italic;
     }
 
--   <span id="a8bc">When we want to target all `h1` tags with the id of `heading`.</span>
+- <span id="a8bc">When we want to target all `h1` tags with the id of `heading`.</span>
 
 **CSS Combinators**
 
--   <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
--   <span id="71a6">Be careful not to use too many of them as they will make your CSS far too complex.</span>
--   <span id="6032">`Descendant Selectors`</span>
--   <span id="6f41">Separated by a space.</span>
--   <span id="3829">Selects all descendants of a parent container.</span>
--   <span id="e90c">`Direct Child Selectors`</span>
--   <span id="52b5">Indicated with a `>`.</span>
--   <span id="ea8e">Different from descendants because it only affects the direct children of an element.</span>
--   <span id="486f">`.menu > .is-active { background-color: #ffe0b2; }`</span>
--   <span id="96f9">`<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`</span>
--   <span id="59ca">Belka would be the only element selected.</span>
--   <span id="0266">`Adjacent Sibling Selectors`</span>
--   <span id="a648">Uses the `+` symbol.</span>
--   <span id="9d79">Used for elements that directly follow one another and who both have the same parent.</span>
--   <span id="4865">`h1 + h2 { font-style: italic; } <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>`</span>
+- <span id="c196">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
+- <span id="71a6">Be careful not to use too many of them as they will make your CSS far too complex.</span>
+- <span id="6032">`Descendant Selectors`</span>
+- <span id="6f41">Separated by a space.</span>
+- <span id="3829">Selects all descendants of a parent container.</span>
+- <span id="e90c">`Direct Child Selectors`</span>
+- <span id="52b5">Indicated with a `>`.</span>
+- <span id="ea8e">Different from descendants because it only affects the direct children of an element.</span>
+- <span id="486f">`.menu > .is-active { background-color: #ffe0b2; }`</span>
+- <span id="96f9">`<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`</span>
+- <span id="59ca">Belka would be the only element selected.</span>
+- <span id="0266">`Adjacent Sibling Selectors`</span>
+- <span id="a648">Uses the `+` symbol.</span>
+- <span id="9d79">Used for elements that directly follow one another and who both have the same parent.</span>
+- <span id="4865">`h1 + h2 { font-style: italic; } <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>`</span>
 
 **Pseudo-Classes**
 
--   <span id="b638">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
--   <span id="0360">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
--   <span id="91ee">`a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`</span>
--   <span id="27ac">Some common pseudo-classes that are frequently used are:</span>
--   <span id="9b2b">`active` : ‘push down’, when ele are activated.</span>
--   <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
--   <span id="58da">`disabled` : any disabled element.</span>
--   <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
--   <span id="40fc">`focus` : elements that have current focus.</span>
--   <span id="ed43">`hover` : elements that have cursor hovering over it.</span>
--   <span id="6fa2">`invalid` : any form elements in an invalid state from client-side form validation.</span>
--   <span id="7811">`last-child` : last element in a group of children/siblings.</span>
--   <span id="1bdf">`not(selector)` : elements that do not match the provided selector.</span>
--   <span id="be5c">`required` : form elements that are required.</span>
--   <span id="43ed">`valid` : form elements in a valid state.</span>
--   <span id="6460">`visited` : anchor tags of whih the user has already been to the URL that the href points to.</span>
+- <span id="b638">`Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.</span>
+- <span id="0360">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
+- <span id="91ee">`a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`</span>
+- <span id="27ac">Some common pseudo-classes that are frequently used are:</span>
+- <span id="9b2b">`active` : ‘push down’, when ele are activated.</span>
+- <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
+- <span id="58da">`disabled` : any disabled element.</span>
+- <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
+- <span id="40fc">`focus` : elements that have current focus.</span>
+- <span id="ed43">`hover` : elements that have cursor hovering over it.</span>
+- <span id="6fa2">`invalid` : any form elements in an invalid state from client-side form validation.</span>
+- <span id="7811">`last-child` : last element in a group of children/siblings.</span>
+- <span id="1bdf">`not(selector)` : elements that do not match the provided selector.</span>
+- <span id="be5c">`required` : form elements that are required.</span>
+- <span id="43ed">`valid` : form elements in a valid state.</span>
+- <span id="6460">`visited` : anchor tags of whih the user has already been to the URL that the href points to.</span>
 
 `Pseudo-Selectors`
 
--   <span id="89e7">Used to create pseudo-elements as children of the elements to which the property applies.</span>
--   <span id="0bef">`::after`</span>
--   <span id="52f9">`::before`</span>
+- <span id="89e7">Used to create pseudo-elements as children of the elements to which the property applies.</span>
+- <span id="0bef">`::after`</span>
+- <span id="52f9">`::before`</span>
 
 <!-- -->
 
@@ -367,13 +382,13 @@ CSS Selectors
     <p>This is the second paragraph</p>
     <p>This is the third paragraph</p>
 
--   <span id="a843">Will add some blue smiley faces before the p tag elements.</span>
+- <span id="a843">Will add some blue smiley faces before the p tag elements.</span>
 
 **CSS Rules**
 
--   <span id="919a">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
--   <span id="555f">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
--   <span id="a1db">`The Four Number Calculation` : listed in increasing order of importance.</span>
+- <span id="919a">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
+- <span id="555f">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
+- <span id="a1db">`The Four Number Calculation` : listed in increasing order of importance.</span>
 
 Who has the most IDs? If no one, continue.
 
@@ -385,45 +400,45 @@ Last Read in the browser wins.
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Ub47AaMXuT1m8_T-" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*t0oXzsLPxpMwNbKo.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*2xr0vyHwf6UN905l" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*oq83hQ5qvtT6gDd9.png" class="graf-image" /></figure>
 
--   <span id="1939">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
+- <span id="1939">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
 
-------------------------------------------------------------------------
+---
 
 ### CSS: Type, Properties, and Imports
 
 **Typography**
 
--   <span id="d6fc">`font-family` : change the font.</span>
+- <span id="d6fc">`font-family` : change the font.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ssVcT1Bd9Edfo6KF" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" /></figure>\- <span id="daba">Remember that not all computers have the same fonts on them.</span> - <span id="0aa8">You can import web fonts via an api by using</span> - <span id="0c5d">\`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');\` and pasting it st the top of your CSS file.</span> - <span id="d8ff">And then reference it in your font-family.</span> - <span id="ee9f">\`font-size\` : Changes the size of your font.</span> - <span id="782e">Keep in mind the two kind of units CSS uses:</span> - <span id="c4f7">\`Absolute\` : \`Pixels\`, Points, Inches, Centimeters.</span> - <span id="2884">\`Relative\` : Em, Rem.</span> - <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span> - <span id="5a5d">Rem: Calulates relative to the parent element always.</span> - <span id="79b0">\`font-style\` : Used to set a font to italics.</span> - <span id="f464">\`font-weight\` : Used to make a font bold.</span> - <span id="3d56">\`text-align\` : Used to align your text to the left, center, or right.</span> - <span id="4cbc">\`text-decoration\` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span> - <span id="1c96">\`text-transform\` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
 
 **Background-Images**
 
--   <span id="13eb">You can use the background-image property to set a background image for an element.</span>
+- <span id="13eb">You can use the background-image property to set a background image for an element.</span>
 
-------------------------------------------------------------------------
+---
 
 ### CSS: Colors, Borders, and Shadows
 
 **Colors**
 
--   <span id="6bed">You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.</span>
--   <span id="38fb">rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.</span>
--   <span id="cb05">**Color** : Property used to change the color of text.</span>
--   <span id="6f05">**Background-Color** : Property to change the backgrounf color of an element.</span>
+- <span id="6bed">You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.</span>
+- <span id="38fb">rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.</span>
+- <span id="cb05">**Color** : Property used to change the color of text.</span>
+- <span id="6f05">**Background-Color** : Property to change the backgrounf color of an element.</span>
 
 **Borders**
 
--   <span id="d922">Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.</span>
+- <span id="d922">Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.</span>
 
 **Shadows**
 
--   <span id="bccb">There are two kinds of shadows in CSS: `box shadows` and `text shadows`.</span>
--   <span id="7fd2">Box refers to HTML elements.</span>
--   <span id="f3a7">Text refers to text.</span>
--   <span id="2a53">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
+- <span id="bccb">There are two kinds of shadows in CSS: `box shadows` and `text shadows`.</span>
+- <span id="7fd2">Box refers to HTML elements.</span>
+- <span id="f3a7">Text refers to text.</span>
+- <span id="2a53">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
 
-------------------------------------------------------------------------
+---
 
 ### The Box Model
 
@@ -445,20 +460,20 @@ This bothered many programmers so they created the **border box** to include the
 
 ### Positioning
 
--   <span id="d380">The `position` property allows us to set the position of elements on a page and is an integral part of creatnig a Web page layout.</span>
--   <span id="1bd6">It accepts five values: `static`, `relative`, `absolute`, `fixed`, `sticky`.</span>
--   <span id="0b53">Every property (minus `static`) is used with: `top`, `right`, `bottom`, and `left` to position an element on a page.</span>
+- <span id="d380">The `position` property allows us to set the position of elements on a page and is an integral part of creatnig a Web page layout.</span>
+- <span id="1bd6">It accepts five values: `static`, `relative`, `absolute`, `fixed`, `sticky`.</span>
+- <span id="0b53">Every property (minus `static`) is used with: `top`, `right`, `bottom`, and `left` to position an element on a page.</span>
 
 **Static Positioning**
 
--   <span id="7aa9">The default position value of page elements.</span>
--   <span id="700a">Most likely will not use static that much.</span>
+- <span id="7aa9">The default position value of page elements.</span>
+- <span id="700a">Most likely will not use static that much.</span>
 
 **Relative Positioning**
 
--   <span id="adc3">Remains in it’s original position in the page flow.</span>
--   <span id="9533">It is positioned *RELATIVE* to the it’s *ORIGINAL PLACE* on the page flow.</span>
--   <span id="8c0b">Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.</span>
+- <span id="adc3">Remains in it’s original position in the page flow.</span>
+- <span id="9533">It is positioned _RELATIVE_ to the it’s _ORIGINAL PLACE_ on the page flow.</span>
+- <span id="8c0b">Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.</span>
 
 <!-- -->
 
@@ -473,8 +488,8 @@ This bothered many programmers so they created the **border box** to include the
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*mMCUEQ94L4_zxwNc" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*TgjpfTmdczESRAfU.png" class="graf-image" /></figure>\*\*Absolute Positioning\*\*
 
--   <span id="d597">Absolute elements are removed from the normal page flow and other elements around it act like it’s not there. (how we can easily achieve some layering)</span>
--   <span id="eb5b">Here are some examples to illustration absolute positioning:</span>
+- <span id="d597">Absolute elements are removed from the normal page flow and other elements around it act like it’s not there. (how we can easily achieve some layering)</span>
+- <span id="eb5b">Here are some examples to illustration absolute positioning:</span>
 
 <!-- -->
 
@@ -523,31 +538,31 @@ This bothered many programmers so they created the **border box** to include the
 
 **Fixed Positioning**
 
--   <span id="fe31">Another positioning that removes it’s element from the page flow, and automatically positions it’s parent as the HTML doc itself.</span>
--   <span id="2388">Fixed also uses top, right, bottom, and left.</span>
--   <span id="3903">Useful for things like nav bars or other features we want to keep visible as the user scrolls.</span>
+- <span id="fe31">Another positioning that removes it’s element from the page flow, and automatically positions it’s parent as the HTML doc itself.</span>
+- <span id="2388">Fixed also uses top, right, bottom, and left.</span>
+- <span id="3903">Useful for things like nav bars or other features we want to keep visible as the user scrolls.</span>
 
 **Sticky Positioning**
 
--   <span id="8ae2">Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any *scrolling* ancestors.</span>
--   <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it’s viewport — then it sticks!</span>
--   <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
--   <span id="9080">A good example are headers in a scrollable list.</span>
+- <span id="8ae2">Remains in it’s original position in the page flow, and it is positioned relative to it’s closest block-level ancestor and any _scrolling_ ancestors.</span>
+- <span id="abe8">Behaves like a relatively positioned element until the point at which you would normally scroll past it’s viewport — then it sticks!</span>
+- <span id="7ac0">It is positioned with top, right, bottom, and left.</span>
+- <span id="9080">A good example are headers in a scrollable list.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BRVlqobKK0IZtnXq" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*jQQJYWVoQY2eNANS.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Flexible Box Model
 
--   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
--   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
--   <span id="2a8e">A very inconvenient aspect of float is the need to *clear* the float.</span>
--   <span id="ba98">To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
+- <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
+- <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
+- <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
+- <span id="ba98">To ‘clear’ a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
 
--   <span id="e23b">Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.</span>
+- <span id="e23b">Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*_SXOQpq3yrywWCcL" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" /></figure>\- <span id="b505">Flexbox layout applies styles to the parent element, and it’s children.</span>
 
@@ -557,28 +572,28 @@ This bothered many programmers so they created the **border box** to include the
       flex-direction: row; /*lets us create either rows or columns*/
     }
 
--   <span id="4898">`flex-flow` can be used to combine wrap and direction.</span>
--   <span id="acdb">`justify-content` used to define the alignment of flex items along the main axis.</span>
--   <span id="68d6">`align-items` used to define the alignment on the Y-axis.</span>
--   <span id="f0d8">`align-content` redistributes extra space on the cross axis.</span>
--   <span id="531c">By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.</span>
--   <span id="39b0">Some other properties we can use on flex items are:</span>
--   <span id="ec38">`flex-grow` : dictates amount of avail. space the item should take up.</span>
--   <span id="0916">`flex-shrink` : defines the ability for a flex item to shrink.</span>
--   <span id="4dda">`flex-basis` : Default size of an element before the remaining space is distributed.</span>
--   <span id="d9f2">`flex` : shorthand for grow, shrink and basis.</span>
--   <span id="f127">`align-self` : Overrides default alignment in the container.</span>
+- <span id="4898">`flex-flow` can be used to combine wrap and direction.</span>
+- <span id="acdb">`justify-content` used to define the alignment of flex items along the main axis.</span>
+- <span id="68d6">`align-items` used to define the alignment on the Y-axis.</span>
+- <span id="f0d8">`align-content` redistributes extra space on the cross axis.</span>
+- <span id="531c">By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.</span>
+- <span id="39b0">Some other properties we can use on flex items are:</span>
+- <span id="ec38">`flex-grow` : dictates amount of avail. space the item should take up.</span>
+- <span id="0916">`flex-shrink` : defines the ability for a flex item to shrink.</span>
+- <span id="4dda">`flex-basis` : Default size of an element before the remaining space is distributed.</span>
+- <span id="d9f2">`flex` : shorthand for grow, shrink and basis.</span>
+- <span id="f127">`align-self` : Overrides default alignment in the container.</span>
 
-------------------------------------------------------------------------
+---
 
 ### Grid Layout
 
--   <span id="cc4f">CSS Grid is a 2d layout system that let’s use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)</span>
+- <span id="cc4f">CSS Grid is a 2d layout system that let’s use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)</span>
 
 **Bootstrap vs CSS Grid**
 
--   <span id="4af2">Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.</span>
--   <span id="e404">Grid applies style to a parent container and it’s child elements.</span>
+- <span id="4af2">Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.</span>
+- <span id="e404">Grid applies style to a parent container and it’s child elements.</span>
 
 <!-- -->
 
@@ -608,12 +623,12 @@ This bothered many programmers so they created the **border box** to include the
       grid-area: footer;
     }
 
--   <span id="26c3">Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.</span>
--   <span id="a117">`Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.</span>
--   <span id="17ae">Combine areas with templates to define how much space an area should take up.</span>
--   <span id="f90a">`Grid Gaps` can be used to create ‘gutters’ between grid item.s</span>
--   <span id="d7c0">The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.</span>
--   <span id="cef6">We can also `implicitly` define grids.</span>
+- <span id="26c3">Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.</span>
+- <span id="a117">`Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.</span>
+- <span id="17ae">Combine areas with templates to define how much space an area should take up.</span>
+- <span id="f90a">`Grid Gaps` can be used to create ‘gutters’ between grid item.s</span>
+- <span id="d7c0">The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.</span>
+- <span id="cef6">We can also `implicitly` define grids.</span>
 
 <!-- -->
 
@@ -625,16 +640,16 @@ This bothered many programmers so they created the **border box** to include the
       grid-auto-rows: 50px;
     }
 
--   <span id="e6d3">Any grid items that aren’t explicity placed are automatically placed or *re-flowed*</span>
+- <span id="e6d3">Any grid items that aren’t explicity placed are automatically placed or _re-flowed_</span>
 
 **Spanning Columns & Rows**
 
--   <span id="98c8">We can use the following properties to take up a specified num of cols and rows.</span>
--   <span id="0208">`grid-column-start`</span>
--   <span id="437a">`grid-column-end`</span>
--   <span id="7d03">`grid-row-start`</span>
--   <span id="0a8e">`grid-row-end`</span>
--   <span id="c62b">All four properties can take any of the following values: the line number, span \#, span name, auto.</span>
+- <span id="98c8">We can use the following properties to take up a specified num of cols and rows.</span>
+- <span id="0208">`grid-column-start`</span>
+- <span id="437a">`grid-column-end`</span>
+- <span id="7d03">`grid-row-start`</span>
+- <span id="0a8e">`grid-row-end`</span>
+- <span id="c62b">All four properties can take any of the following values: the line number, span \#, span name, auto.</span>
 
 <!-- -->
 
@@ -652,18 +667,18 @@ This bothered many programmers so they created the **border box** to include the
 
 **Grid Areas**
 
--   <span id="9dd0">We use the grid areas in conjunction with grid-container property to **define sections of the layout**.</span>
--   <span id="5ec2">We can then assign named sections to individual element’s css rules.</span>
+- <span id="9dd0">We use the grid areas in conjunction with grid-container property to **define sections of the layout**.</span>
+- <span id="5ec2">We can then assign named sections to individual element’s css rules.</span>
 
 **Justify & Align Self**
 
--   <span id="06b0">Justify items and Align Items can be used to align all grid items at once.</span>
--   <span id="53f5">**Justify Self** is used to align self on the row.</span>
--   <span id="f6b1">It can take four values: start, end, center, stretch.</span>
--   <span id="72bb">**Align Self** is used to align self on the column.</span>
--   <span id="d5d4">It can take four values: start, end, center, stretch.</span>
+- <span id="06b0">Justify items and Align Items can be used to align all grid items at once.</span>
+- <span id="53f5">**Justify Self** is used to align self on the row.</span>
+- <span id="f6b1">It can take four values: start, end, center, stretch.</span>
+- <span id="72bb">**Align Self** is used to align self on the column.</span>
+- <span id="d5d4">It can take four values: start, end, center, stretch.</span>
 
-------------------------------------------------------------------------
+---
 
 **CSS Hover Effect and Handling**
 
@@ -683,14 +698,14 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
 
 ### Transitions
 
--   <span id="b5a7">Transitions provide a way to control animation speed when changing CSS properties.</span>
--   <span id="2e1b">**Implicit Transitions** : Animations that involve transitioning between two states.</span>
+- <span id="b5a7">Transitions provide a way to control animation speed when changing CSS properties.</span>
+- <span id="2e1b">**Implicit Transitions** : Animations that involve transitioning between two states.</span>
 
 **Defining Transitions**
 
--   <span id="bbd6">`transition-property` : specifies the name of the CSS property to apply the transition.</span>
--   <span id="6340">`transition-duration` : during of the transition.</span>
--   <span id="7463">`transition-delay` : time before the transition should start.</span>
+- <span id="bbd6">`transition-property` : specifies the name of the CSS property to apply the transition.</span>
+- <span id="6340">`transition-duration` : during of the transition.</span>
+- <span id="7463">`transition-delay` : time before the transition should start.</span>
 
 **Examples** :
 
@@ -722,31 +737,31 @@ There are three members in the overflow family: — `overflow-x` : Apply ho
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*PH5_YmVDFVGqWGjO" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" /></figure>\- <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
 
-------------------------------------------------------------------------
+---
 
 ### BEM Guidelines
 
--   <span id="6474">BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.</span>
--   <span id="6d0c">**BEM** stands for `block`, `element`, `modifier`.</span>
--   <span id="3eb9">**Block**</span>
--   <span id="f6b4">A standalone entity that is meaningful on it’s own.</span>
--   <span id="7e86">Can be nested and interact with one another.</span>
--   <span id="338e">Holistic entities without DOM rep can be blocks.</span>
--   <span id="f2f0">May consist latin letters, digits, and dashes.</span>
--   <span id="3bfb">Any DOM node can be a block if it accepts a class name.</span>
--   <span id="5c9b">**Element**</span>
--   <span id="1b95">Part of a block and has no standalone meaning.</span>
--   <span id="b5cf">Any element that is semantically tied to a block.</span>
--   <span id="10e2">May consist latin letters, digits, and dashes.</span>
--   <span id="9b79">Formed by using two underscores after it’s block name.</span>
--   <span id="e282">Any DOM node within a block can be an element.</span>
--   <span id="a0dc">Element classes should be used independently.</span>
--   <span id="26f1">**Modifier**</span>
--   <span id="6642">A flag on blocks or elements. Use them to change appearance, behavior or state.</span>
--   <span id="6cca">Extra class name to add onto blocks or elements.</span>
--   <span id="745f">Add mods only to the elements they modify.</span>
--   <span id="6416">Modifier names may consist of Latin letters, digits, dashes and underscores.</span>
--   <span id="f940">Written with two dashes.</span>
+- <span id="6474">BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.</span>
+- <span id="6d0c">**BEM** stands for `block`, `element`, `modifier`.</span>
+- <span id="3eb9">**Block**</span>
+- <span id="f6b4">A standalone entity that is meaningful on it’s own.</span>
+- <span id="7e86">Can be nested and interact with one another.</span>
+- <span id="338e">Holistic entities without DOM rep can be blocks.</span>
+- <span id="f2f0">May consist latin letters, digits, and dashes.</span>
+- <span id="3bfb">Any DOM node can be a block if it accepts a class name.</span>
+- <span id="5c9b">**Element**</span>
+- <span id="1b95">Part of a block and has no standalone meaning.</span>
+- <span id="b5cf">Any element that is semantically tied to a block.</span>
+- <span id="10e2">May consist latin letters, digits, and dashes.</span>
+- <span id="9b79">Formed by using two underscores after it’s block name.</span>
+- <span id="e282">Any DOM node within a block can be an element.</span>
+- <span id="a0dc">Element classes should be used independently.</span>
+- <span id="26f1">**Modifier**</span>
+- <span id="6642">A flag on blocks or elements. Use them to change appearance, behavior or state.</span>
+- <span id="6cca">Extra class name to add onto blocks or elements.</span>
+- <span id="745f">Add mods only to the elements they modify.</span>
+- <span id="6416">Modifier names may consist of Latin letters, digits, dashes and underscores.</span>
+- <span id="f940">Written with two dashes.</span>
 
 **BEM Example**
 
@@ -781,12 +796,7 @@ Or Checkout my personal Resource Site:
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/938871b4521a).
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

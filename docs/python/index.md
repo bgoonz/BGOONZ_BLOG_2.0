@@ -1,268 +1,274 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-My Python Docs
-==============
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-  
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-Python Resources
-================
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-  
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
 
-  
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-My Python Docs:
----------------
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
 
-[My Python Website](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
--------------------------------------------------------------------------
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Python Study Guide for a JavaScript Programmer
-==============================================
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# My Python Docs
+
+# Python Resources
+
+## My Python Docs:
+
+## [My Python Website](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
+
+# Python Study Guide for a JavaScript Programmer
 
 A guide to commands in Python from what you know in JavaScript
 
-------------------------------------------------------------------------
+---
 
 ### Python Study Guide for a JavaScript Programmer
 
@@ -270,8 +276,8 @@ A guide to commands in Python from what you know in JavaScript
 
 ### Basics
 
--   <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
--   <span id="c0bf">`print` is the equivalent of `console.log`.</span>
+- <span id="f893">**PEP8** : Python Enhancement Proposals, style-guide for Python.</span>
+- <span id="c0bf">`print` is the equivalent of `console.log`.</span>
 
 > ‘print() == console.log()’
 
@@ -285,15 +291,15 @@ A guide to commands in Python from what you know in JavaScript
         """
         secretThing()
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
-------------------------------------------------------------------------
+---
 
 ### Numbers
 
--   <span id="4060">Python has three types of numbers:</span>
--   <span id="8aef">**Integer**</span>
--   <span id="723f">**Positive and Negative Counting Numbers.**</span>
+- <span id="4060">Python has three types of numbers:</span>
+- <span id="8aef">**Integer**</span>
+- <span id="723f">**Positive and Negative Counting Numbers.**</span>
 
 No Decimal Point
 
@@ -322,7 +328,7 @@ No Decimal Point
 
 > **The** `i` **is switched to a** `j` **in programming.**
 
-<span class="graf-dropCap">T</span>\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\****space*** *when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+<span class="graf-dropCap">T</span>\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\***_space_** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
     print(7j) # => 7j
     print(5.1+7.7j)) # => 5.1+7.7j
@@ -330,7 +336,7 @@ No Decimal Point
     print(complex(17)) # => 17+0j
     print(complex()) # => 0j
 
--   <span id="2579">**Type Casting** : The process of converting one number to another.</span>
+- <span id="2579">**Type Casting** : The process of converting one number to another.</span>
 
 <!-- -->
 
@@ -347,21 +353,21 @@ No Decimal Point
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   <span id="8cf4">*“\*\*” : Double asterisk for exponent.*</span>
--   <span id="03b4">*“//” : Integer Division.*</span>
--   <span id="2ce5">**There are no spaces between math operations in Python.**</span>
--   <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
--   <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
+- <span id="8cf4">_“\*\*” : Double asterisk for exponent._</span>
+- <span id="03b4">_“//” : Integer Division._</span>
+- <span id="2ce5">**There are no spaces between math operations in Python.**</span>
+- <span id="1686">**Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** `Math.floor()` **in JS.**</span>
+- <span id="a6a3">**There are no** `++` **and** `--` **in Python, the only shorthand operators are:**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Strings
 
--   <span id="e98c">Python uses both single and double quotes.</span>
--   <span id="225e">You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`</span>
--   <span id="9f74">Multiline strings use triple quotes.</span>
+- <span id="e98c">Python uses both single and double quotes.</span>
+- <span id="225e">You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`</span>
+- <span id="9f74">Multiline strings use triple quotes.</span>
 
 <!-- -->
 
@@ -383,15 +389,15 @@ No Decimal Point
 
     print(“Spaghetti”[-4]) # => e
 
--   <span id="7567">Python let’s you use ranges</span>
+- <span id="7567">Python let’s you use ranges</span>
 
-You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… *(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type* **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
+You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type_ **\*by textbook definition\*\***, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
     print(“Spaghetti”[1:4]) # => pag
     print(“Spaghetti”[4:-1]) # => hett
     print(“Spaghetti”[4:4]) # => (empty string)
 
--   <span id="1366">The end range is exclusive just like `slice` in JS.</span>
+- <span id="1366">The end range is exclusive just like `slice` in JS.</span>
 
 <!-- -->
 
@@ -403,14 +409,14 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print("Spaghetti"[1:])  # => paghetti
     print("Spaghetti"[-4:])    # => etti
 
--   <span id="c786">The `index` string function is the equiv. of `indexOf()` in JS</span>
+- <span id="c786">The `index` string function is the equiv. of `indexOf()` in JS</span>
 
 <!-- -->
 
     print("Spaghetti".index("h"))    # => 4
     print("Spaghetti".index("t"))    # => 6
 
--   <span id="fbb6">The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.</span>
+- <span id="fbb6">The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.</span>
 
 <!-- -->
 
@@ -424,9 +430,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
     postpone, and one which we intend to win, and the others, too.
     '''.count('the '))                # => 4
 
--   <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
--   <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
--   <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
+- <span id="7816">**You can use** `+` **to concatenate strings, just like in JS.**</span>
+- <span id="ed0a">**You can also use “\*” to repeat strings or multiply strings.**</span>
+- <span id="f95c">**Use the** `format()` **function to use placeholders in a string to input values later on.**</span>
 
 <!-- -->
 
@@ -434,24 +440,24 @@ You can think of this as roughly equivalent to the slice method called on a Java
     last_name = "Bob"
     print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 
--   <span id="445b">*Shorthand way to use format function is:  
-    \_\`print(f'Your name is {first*name} {last\_name}')\`</span>
+- <span id="445b">*Shorthand way to use format function is:  
+  \_\`print(f'Your name is {first*name} {last_name}')\`</span>
 
 #### Some useful string methods.
 
--   <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
+- <span id="118c">**Note that in JS** `join` **is used on an Array, in Python it is used on String.**</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png" class="graf-image" /></figure>\- <span id="e95e">There are also many handy testing methods.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Variables and Expressions
 
--   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
--   <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
--   <span id="5666">Assignment of a value automatically declares a variable.</span>
+- <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.</span>
+- <span id="6e70">Duck Typing is the fundamental approach of Python.</span>
+- <span id="5666">Assignment of a value automatically declares a variable.</span>
 
 <!-- -->
 
@@ -460,7 +466,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(a)         # => 7
     print(b)         # => Marbles
 
--   <span id="f6cf">***You can chain variable assignments to give multiple var names the same value.***</span>
+- <span id="f6cf">**_You can chain variable assignments to give multiple var names the same value._**</span>
 
 #### Use with caution as this is highly unreadable
 
@@ -476,18 +482,18 @@ You can think of this as roughly equivalent to the slice method called on a Java
     a = 'seventeen'
     print(a)         # => seventeen
 
--   <span id="4605">`NaN` \_does not exist in Python, but you can 'create' it like so:  
-    \_`print(float("nan"))`</span>
--   <span id="d150">*Python replaces* `null` *with* `none`*.*</span>
--   <span id="6fa7">`none` ***is an object*** *and can be directly assigned to a variable.*</span>
+- <span id="4605">`NaN` \_does not exist in Python, but you can 'create' it like so:  
+  \_`print(float("nan"))`</span>
+- <span id="d150">_Python replaces_ `null` _with_ `none`_._</span>
+- <span id="6fa7">`none` **_is an object_** _and can be directly assigned to a variable._</span>
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
-------------------------------------------------------------------------
+---
 
 ### Boolean Data Type
 
--   <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
+- <span id="b843">One of the biggest benefits of Python is that it reads more like English than JS does.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png" class="graf-image" /></figure>\# Logical AND print(True and True) \# =&gt; True print(True and False) \# =&gt; False print(False and False) \# =&gt; False
 
@@ -501,22 +507,22 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print(not False and True)   # => True
     print(not True or False)    # => False
 
--   <span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span>
--   <span id="6e0a">Constant `None` or `False`</span>
--   <span id="9552">Zero of any numeric type.</span>
--   <span id="e7ce">Empty Sequence or Collection.</span>
--   <span id="11d6">`True` and `False` must be capitalized</span>
+- <span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span>
+- <span id="6e0a">Constant `None` or `False`</span>
+- <span id="9552">Zero of any numeric type.</span>
+- <span id="e7ce">Empty Sequence or Collection.</span>
+- <span id="11d6">`True` and `False` must be capitalized</span>
 
-------------------------------------------------------------------------
+---
 
 ### Comparison Operators
 
--   <span id="a4fa">Python uses all the same equality operators as JS.</span>
--   <span id="7f98">In Python, equality operators are processed from left to right.</span>
--   <span id="fb68">Logical operators are processed in this order:</span>
--   <span id="bf08">**NOT**</span>
--   <span id="4888">**AND**</span>
--   <span id="2c55">**OR**</span>
+- <span id="a4fa">Python uses all the same equality operators as JS.</span>
+- <span id="7f98">In Python, equality operators are processed from left to right.</span>
+- <span id="fb68">Logical operators are processed in this order:</span>
+- <span id="bf08">**NOT**</span>
+- <span id="4888">**AND**</span>
+- <span id="2c55">**OR**</span>
 
 > Just like in JS, you can use `parentheses` to change the inherent order of operations.
 
@@ -524,7 +530,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Identity vs Equality
 
@@ -538,9 +544,9 @@ You can think of this as roughly equivalent to the slice method called on a Java
     print (2 == 2.0)    # => True
     print (2 is 2.0)    # => False
 
--   <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
+- <span id="c5a5">In the Python community it is better to use `is` and `is not` over `==` or `!=`</span>
 
-------------------------------------------------------------------------
+---
 
 ### If Statements
 
@@ -563,7 +569,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 > Remember the order of `elif` statements matter.
 
-------------------------------------------------------------------------
+---
 
 ### While Statements
 
@@ -572,7 +578,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
       print('Hello, world.')
       spam = spam + 1
 
--   <span id="c7f3">`Break` statement also exists in Python.</span>
+- <span id="c7f3">`Break` statement also exists in Python.</span>
 
 <!-- -->
 
@@ -583,7 +589,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
       if spam >= 5:
         break
 
--   <span id="7a99">As are `continue` statements</span>
+- <span id="7a99">As are `continue` statements</span>
 
 <!-- -->
 
@@ -595,11 +601,11 @@ You can think of this as roughly equivalent to the slice method called on a Java
         continue
       break
 
-------------------------------------------------------------------------
+---
 
 ### Try/Except Statements
 
--   <span id="72ec">Python equivalent to `try/catch`</span>
+- <span id="72ec">Python equivalent to `try/catch`</span>
 
 <!-- -->
 
@@ -623,7 +629,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         a = str(a)
         print(len(a))
 
--   <span id="dcd1">You can name an error to give the output more specificity.</span>
+- <span id="dcd1">You can name an error to give the output more specificity.</span>
 
 <!-- -->
 
@@ -635,7 +641,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         c = None
     print(c)
 
--   <span id="4027">You can also use the `pass` commmand to by pass a certain error.</span>
+- <span id="4027">You can also use the `pass` commmand to by pass a certain error.</span>
 
 <!-- -->
 
@@ -646,7 +652,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     except ZeroDivisionError:
         pass
 
--   <span id="030b">The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:</span>
+- <span id="030b">The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:</span>
 
 <!-- -->
 
@@ -659,7 +665,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     except (TypeError, NameError):
         print("ERROR!")
 
--   <span id="bf45">You can use an `else` statement to end a chain of `except` statements.</span>
+- <span id="bf45">You can use an `else` statement to end a chain of `except` statements.</span>
 
 <!-- -->
 
@@ -680,7 +686,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
             print('found', len(f.readlines()), 'lines')
             f.close()
 
--   <span id="0e91">`finally` is used at the end to clean up all actions under any circumstance.</span>
+- <span id="0e91">`finally` is used at the end to clean up all actions under any circumstance.</span>
 
 <!-- -->
 
@@ -694,7 +700,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
         finally:
             print("Finally...")
 
--   <span id="84ee">Using duck typing to check to see if some value is able to use a certain method.</span>
+- <span id="84ee">Using duck typing to check to see if some value is able to use a certain method.</span>
 
 <!-- -->
 
@@ -708,11 +714,11 @@ You can think of this as roughly equivalent to the slice method called on a Java
     if hasattr(b, '__len__'):
         print(len(b))
 
-------------------------------------------------------------------------
+---
 
 ### Pass
 
--   <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
+- <span id="2b80">Pass Keyword is required to write the JS equivalent of :</span>
 
 <!-- -->
 
@@ -727,17 +733,17 @@ You can think of this as roughly equivalent to the slice method called on a Java
     while True:
       pass
 
-------------------------------------------------------------------------
+---
 
 ### Functions
 
--   <span id="7091">**Function definition includes:**</span>
--   <span id="1f11">**The** `def` **keyword**</span>
--   <span id="ec14">**The name of the function**</span>
--   <span id="7733">**A list of parameters enclosed in parentheses.**</span>
--   <span id="1516">**A colon at the end of the line.**</span>
--   <span id="b2dd">**One tab indentation for the code to run.**</span>
--   <span id="bcef">**You can use default parameters just like in JS**</span>
+- <span id="7091">**Function definition includes:**</span>
+- <span id="1f11">**The** `def` **keyword**</span>
+- <span id="ec14">**The name of the function**</span>
+- <span id="7733">**A list of parameters enclosed in parentheses.**</span>
+- <span id="1516">**A colon at the end of the line.**</span>
+- <span id="b2dd">**One tab indentation for the code to run.**</span>
+- <span id="bcef">**You can use default parameters just like in JS**</span>
 
 <!-- -->
 
@@ -756,7 +762,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     def increment(delta=1, value):
         return delta + value
 
--   <span id="c1aa">*You can specify arguments by name without destructuring in Python.*</span>
+- <span id="c1aa">_You can specify arguments by name without destructuring in Python._</span>
 
 <!-- -->
 
@@ -767,11 +773,11 @@ You can think of this as roughly equivalent to the slice method called on a Java
     # saying has a default value, so use a keyword argument
     greeting("Monica", saying="Hi")
 
--   <span id="54ac">The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.</span>
+- <span id="54ac">The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.</span>
 
 `toUpper = lambda s: s.upper()`
 
-------------------------------------------------------------------------
+---
 
 ### Notes
 
@@ -819,7 +825,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
     The largest difference between scripts and programs is the level of complexity and purpose. Programs typically have many UI’s.
 
 **Python can be used to display html, css, and JS.**  
-*It is common to use Python as an API (Application Programming Interface)*
+_It is common to use Python as an API (Application Programming Interface)_
 
 #### Structured Data
 
@@ -830,7 +836,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 > Range  
 > Collections : Unordered data structures, hashable values.
 
-------------------------------------------------------------------------
+---
 
 #### Dictionaries Sets
 
@@ -838,7 +844,7 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 #### Can be mutable or immutable. Built In Data Types
 
-------------------------------------------------------------------------
+---
 
 ### Lists are the python equivalent of arrays.
 
@@ -897,15 +903,15 @@ You can think of this as roughly equivalent to the slice method called on a Java
     c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
     # a, b, and c are all equal
 
-***Declared with curly braces of the built in dict()***
+**_Declared with curly braces of the built in dict()_**
 
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
 <span class="graf-dropCap">S</span>**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
-> *Always be unique, duplicate items are auto dropped from the set.*
+> _Always be unique, duplicate items are auto dropped from the set._
 
 #### Common Uses:
 
@@ -957,12 +963,12 @@ Sets created by putting comma seperated values inside braces:**
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-*key optional function which converts an item to a value to be compared.  
-min works the same way as max*
+_key optional function which converts an item to a value to be compared.  
+min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
 
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
 **any(iterable) : returns True if any items in the iterable are true.**
 
@@ -994,7 +1000,7 @@ Working with sets**
     print(b — a) # => {4, 6}
     print(a ^ b) # => {1, 3, 4, 6}
 
-------------------------------------------------------------------------
+---
 
 ### **For Statements In python, there is only one for loop.**
 
@@ -1027,7 +1033,7 @@ Always Includes:
     for i in lst:
     print(i)
 
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
     supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
     for i in range(len(supplies)):
@@ -1051,16 +1057,16 @@ Always Includes:
     for v in spam.values():
     print(v)
 
-*Prints red*
+_Prints red_
 
-*Prints 42*
+_Prints 42_
 
     for k in spam.keys():
     print(k)
 
-*Prints color*
+_Prints color_
 
-*Prints age*
+_Prints age_
 
 **For loops can also iterate over both keys and values.**
 
@@ -1069,18 +1075,18 @@ Always Includes:
     for i in spam.items():
     print(i)
 
-*Prints (‘color’, ‘red’)*
+_Prints (‘color’, ‘red’)_
 
-*Prints (‘age’, 42)*
+_Prints (‘age’, 42)_
 
-*Destructuring to values*
+_Destructuring to values_
 
     for k, v in spam.items():
     print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 
-*Prints Key: age Value: 42*
+_Prints Key: age Value: 42_
 
-*Prints Key: color Value: red*
+_Prints Key: color Value: red_
 
 **Looping over string**
 
@@ -1089,11 +1095,11 @@ Always Includes:
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-*formal positional args.*
+_formal positional args._
 
 \*args
 
-*keyword args with default values*
+_keyword args with default values_
 
 \*\*kwargs
 
@@ -1103,7 +1109,7 @@ Always Includes:
     def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
     pass
 
-------------------------------------------------------------------------
+---
 
 ### **Importing in Python**
 
@@ -1118,7 +1124,7 @@ Custom.
 
 **All loaded using import statements.**
 
-------------------------------------------------------------------------
+---
 
 ### **Terms**
 
@@ -1130,9 +1136,9 @@ Custom.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
-*Try to avoid importing with wildcards in Python.*
+_Try to avoid importing with wildcards in Python._
 
-*Use multiple lines for clarity when importing.*
+_Use multiple lines for clarity when importing._
 
     from urllib.request import (
     HTTPDefaultErrorHandler as ErrorHandler,
@@ -1143,7 +1149,7 @@ Custom.
     urlopen,
     )
 
-------------------------------------------------------------------------
+---
 
 ### Watching Out for Python 2
 
@@ -1185,24 +1191,19 @@ Or Checkout my personal Resource Site:
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
--   <a href="/docs/python/basics/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/flow-control/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/google-sheets-api/" class="docs-item-link">google-sheets-api<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/functions/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/intro-for-js-devs/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/examples/" class="docs-item-link">Practice<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/python-ds/" class="docs-item-link">Python General Notes<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/cheat-sheet/" class="docs-item-link">Python Cheat Sheet<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/comprehensive-guide/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/snippets/" class="docs-item-link">Python Snippets<span class="icon-angle-right" data-aria-hidden="true"></span></a>
--   <a href="/docs/python/at-length/" class="docs-item-link">Python at length<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/basics/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/flow-control/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/google-sheets-api/" class="docs-item-link">google-sheets-api<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/functions/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/intro-for-js-devs/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/examples/" class="docs-item-link">Practice<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/python-ds/" class="docs-item-link">Python General Notes<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/cheat-sheet/" class="docs-item-link">Python Cheat Sheet<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/comprehensive-guide/" class="docs-item-link">lorem-ipsum<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/snippets/" class="docs-item-link">Python Snippets<span class="icon-angle-right" data-aria-hidden="true"></span></a>
+- <a href="/docs/python/at-length/" class="docs-item-link">Python at length<span class="icon-angle-right" data-aria-hidden="true"></span></a>
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 
