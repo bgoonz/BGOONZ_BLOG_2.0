@@ -14,23 +14,23 @@ You will want to bookmark this
 
 **What makes an Effective learner?**
 
--   <span id="7504">They are active listeners.</span>
--   <span id="179b">They are engaged with the material.</span>
--   <span id="3193">They are receptive of feedback.</span>
--   <span id="17d8">They are open to difficulty.</span>
+- <span id="7504">They are active listeners.</span>
+- <span id="179b">They are engaged with the material.</span>
+- <span id="3193">They are receptive of feedback.</span>
+- <span id="17d8">They are open to difficulty.</span>
 
 **Why do active learning techniques feel difficult?**
 
--   <span id="7848">It feels difficult because you are constantly receiving feedback, and so you are constantly adapting and perfecting the material.</span>
+- <span id="7848">It feels difficult because you are constantly receiving feedback, and so you are constantly adapting and perfecting the material.</span>
 
 **Desirable Difficulty**
 
--   <span id="67c9">The skills we wish to obtain is often a difficult one.</span>
--   <span id="c939">We want challenging but possible lessons based on current level of skill.</span>
+- <span id="67c9">The skills we wish to obtain is often a difficult one.</span>
+- <span id="c939">We want challenging but possible lessons based on current level of skill.</span>
 
 **Effective learners space their practice**
 
--   <span id="59a4">Consistent effort &gt; cramming =&gt; for **durable knowledge**</span>
+- <span id="59a4">Consistent effort &gt; cramming =&gt; for **durable knowledge**</span>
 
 ---
 
@@ -84,60 +84,60 @@ The **number** data type in JS is used to represent any numerical values, includ
 
 Operators are the symbols that perform particular operations.
 
--   <span id="f533">**+** (addition)</span>
--   <span id="5b9f">**-** (subtraction)</span>
--   <span id="b98b">**asterisk** (multiplication)</span>
--   <span id="9a15">**/** (division)</span>
--   <span id="c752">**%** (modulo)</span>
+- <span id="f533">**+** (addition)</span>
+- <span id="5b9f">**-** (subtraction)</span>
+- <span id="b98b">**asterisk** (multiplication)</span>
+- <span id="9a15">**/** (division)</span>
+- <span id="c752">**%** (modulo)</span>
 
 JS evaluates more complex expressions using the general math order of operations aka PEMDAS.
 
--   <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
--   <span id="9c25">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
+- <span id="b6e3">**PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.</span>
+- <span id="9c25">_To force a specific order of operation, use the group operator ( ) around a part of the expression._</span>
 
 **Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
--   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.  
-     console.log(7 % 10) // =&gt; 7;</span>
+- <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.   
+   console.log(7 % 10) // =&gt; 7;</span>
 
 **The String Data Type**
 
 The **string** data type is a primitive data type that used to represent textual data.
 
--   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
--   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
-     "That's a great string"; (valid)
-    ‘Shakespeare wrote, "To be or not to be"'; (valid)
-    ‘That's a bad string'; (invalid)</span>
--   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
-     \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
--   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
--   <span id="f633">empty strings have a length of zero.</span>
--   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-     console.log("bootcamp"\[0\]); // =&gt; "b"  
-     console.log("bootcamp"\[10\]); // =&gt; "undefined"  
-     console.log("boots"\[1 \* 2\]); // =&gt; "o"  
-     console.log("boots"\["boot".length-1\]); // =&gt; "t"</span>
--   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
--   <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
--   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
-     console.log("bagel".indexOf("b")); // =&gt; 0  
-     console.log("bagel".indexOf("z")); // =&gt; -1</span>
--   <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
--   <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
--   <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
+- <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
+- <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
+   "That's a great string"; (valid)
+  ‘Shakespeare wrote, "To be or not to be"'; (valid)
+  ‘That's a bad string'; (invalid)</span>
+- <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
+   \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
+- <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
+- <span id="f633">empty strings have a length of zero.</span>
+- <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
+   console.log("bootcamp"\[0\]); // =&gt; "b"  
+   console.log("bootcamp"\[10\]); // =&gt; "undefined"  
+   console.log("boots"\[1 \* 2\]); // =&gt; "o"  
+   console.log("boots"\["boot".length-1\]); // =&gt; "t"</span>
+- <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
+- <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
+- <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
+   console.log("bagel".indexOf("b")); // =&gt; 0  
+   console.log("bagel".indexOf("z")); // =&gt; -1</span>
+- <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
+- <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
+- <span id="a275">**concatenate** : word to describe joining strings together into a single string.</span>
 
 **The Boolean Data Type**
 
 The **Boolean** data type is the simplest data type since there are only two values: **true** and **false**.
 
--   <span id="60da">**Logical Operators** (B*oolean Operators*) are used to establish logic in our code.</span>
--   <span id="139b">**!** (not) : reverses a Boolean value.  
-     console.log(!true); // =&gt; false  
-     console.log(!!false); // =&gt; false</span>
--   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
-     console.log(true || !false) // =&gt; stops after it sees "true ||"</span>
+- <span id="60da">**Logical Operators** (B*oolean Operators*) are used to establish logic in our code.</span>
+- <span id="139b">**!** (not) : reverses a Boolean value.  
+   console.log(!true); // =&gt; false  
+   console.log(!!false); // =&gt; false</span>
+- <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
+- <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+   console.log(true || !false) // =&gt; stops after it sees "true ||"</span>
 
 **Comparison Operators**
 
@@ -145,12 +145,12 @@ All comparison operators will result in a boolean output.
 
 **The relative comparators**
 
--   <span id="6fee">**&gt;** (greater than)</span>
--   <span id="0437">**&lt;** (less than)</span>
--   <span id="17ff">**&gt;=** (greater than or equal to)</span>
--   <span id="b2b4">**&lt;=** (less than or equal to)</span>
--   <span id="0c13">**===** (equal to)</span>
--   <span id="b73a">**!==** (not equal to)</span>
+- <span id="6fee">**&gt;** (greater than)</span>
+- <span id="0437">**&lt;** (less than)</span>
+- <span id="17ff">**&gt;=** (greater than or equal to)</span>
+- <span id="b2b4">**&lt;=** (less than or equal to)</span>
+- <span id="0c13">**===** (equal to)</span>
+- <span id="b73a">**!==** (not equal to)</span>
 
 Fun Fact: "a" &lt; "b" is considered valid JS Code because string comparisons are compared lexicographically (meaning dictionary order), so "a" is less than "b" because it appears earlier!
 
@@ -170,15 +170,15 @@ Loose Equality, will return true even if the values are of a different type, due
 
 Variables are used to store information to be referenced and manipulated in a program.
 
--   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).  
-     let bootcamp = "App Academy";  
-     console.log(bootcamp); // "App Academy"</span>
--   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
--   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.  
-     let bootcamp;  
-     console.log(bootcamp); // undefined</span>
--   <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
--   <span id="47ca">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope</span>
+- <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).   
+   let bootcamp = "App Academy";  
+   console.log(bootcamp); // "App Academy"</span>
+- <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
+- <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.   
+   let bootcamp;  
+   console.log(bootcamp); // undefined</span>
+- <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
+- <span id="47ca">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope</span>
 
 **Assignment Shorthand**
 
@@ -188,32 +188,32 @@ let num = 0;
  num /= 4; // same as num = num / 4  
  num \*= 7; // same as num = num \* 7
 
--   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
+- <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
 
 **Functions**
 
 A function is a procedure of code that will run when called. Functions are used so that we do not have to rewrite code to do the same thing over and over. (Think of them as ‘subprograms')
 
--   <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
--   <span id="676f">Includes three things:</span>
--   <span id="80c2">Name of the function.</span>
--   <span id="f3a4">A list of _parameters_ ()</span>
--   <span id="2b0e">The code to execute {}</span>
--   <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
--   <span id="8374">JS evaluates code top down, left to right.</span>
--   <span id="2687">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
--   <span id="0c3a">Every function in JS returns undefined unless otherwise specified.</span>
--   <span id="4207">When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.</span>
--   <span id="e39f">When naming functions in JS always use camelCase and name it something appropriate.</span>
+- <span id="366f">**Function Declaration** : Process when we first initially write our function.</span>
+- <span id="676f">Includes three things:</span>
+- <span id="80c2">Name of the function.</span>
+- <span id="f3a4">A list of _parameters_ ()</span>
+- <span id="2b0e">The code to execute {}</span>
+- <span id="6879">**Function Calls** : We can call upon our function whenever and wherever\* we want. (\*wherever is only after the initial declaration)</span>
+- <span id="8374">JS evaluates code top down, left to right.</span>
+- <span id="2687">When we execute a declared function later on in our program we refer to this as **invoking** our function.</span>
+- <span id="0c3a">Every function in JS returns undefined unless otherwise specified.</span>
+- <span id="4207">When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.</span>
+- <span id="e39f">When naming functions in JS always use camelCase and name it something appropriate.</span>
 
 Greate code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!
 
 **Parameters and Arguments**
 
--   <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function's declaration.</span>
--   <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
--   <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
--   <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
+- <span id="e94e">**Parameters** : Comma seperated variables specified as part of a function's declaration.</span>
+- <span id="6740">**Arguments** : Values passed to the function when it is invoked.</span>
+- <span id="004c">_If the number of arguments passed during a function invocation is different than the number of paramters listed, it will still work._</span>
+- <span id="7da5">However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.</span>
 
 ### Including Comments
 
@@ -221,8 +221,8 @@ Comments are important because they help other people understand what is going o
 
 In JavaScript you have two different options:
 
--   <span id="356d">Single-line comments — To include a comment that is limited to a single line, precede it with `//`</span>
--   <span id="ee3a">Multi-line comments — In case you want to write longer comments between several lines, wrap it in `/*` and `*/` to avoid it from being executed</span>
+- <span id="356d">Single-line comments — To include a comment that is limited to a single line, precede it with `//`</span>
+- <span id="ee3a">Multi-line comments — In case you want to write longer comments between several lines, wrap it in `/*` and `*/` to avoid it from being executed</span>
 
 ### Variables in JavaScript
 
@@ -232,21 +232,21 @@ Variables are stand-in values that you can use to perform operations. You should
 
 You have three different possibilities for declaring a variable in JavaScript, each with their own specialties:
 
--   <span id="4b29">`var` — The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed.</span>
--   <span id="d234">`const` — Can not be reassigned and not accessible before they appear within the code.</span>
--   <span id="0e3b">`let` — Similar to `const`, the `let` variable can be reassigned but not re-declared.</span>
+- <span id="4b29">`var` — The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed.</span>
+- <span id="d234">`const` — Can not be reassigned and not accessible before they appear within the code.</span>
+- <span id="0e3b">`let` — Similar to `const`, the `let` variable can be reassigned but not re-declared.</span>
 
 ### Data Types
 
 Variables can contain different types of values and data types. You use `=` to assign them:
 
--   <span id="b276">Numbers — `var age = 23`</span>
--   <span id="5571">Variables — `var x`</span>
--   <span id="e26c">Text (strings) — `var a = "init"`</span>
--   <span id="1312">Operations — `var b = 1 + 2 + 3`</span>
--   <span id="9880">True or false statements — `var c = true`</span>
--   <span id="335a">Constant numbers — `const PI = 3.14`</span>
--   <span id="7221">Objects — `var name = {firstName:"John", lastName:"Doe"}`</span>
+- <span id="b276">Numbers — `var age = 23`</span>
+- <span id="5571">Variables — `var x`</span>
+- <span id="e26c">Text (strings) — `var a = "init"`</span>
+- <span id="1312">Operations — `var b = 1 + 2 + 3`</span>
+- <span id="9880">True or false statements — `var c = true`</span>
+- <span id="335a">Constant numbers — `const PI = 3.14`</span>
+- <span id="7221">Objects — `var name = {firstName:"John", lastName:"Doe"}`</span>
 
 There are more possibilities. Note that variables are case sensitive. That means `lastname` and `lastName` will be handled as two different variables.
 
@@ -278,20 +278,20 @@ Now you have an array called `fruit` which contains three items that you can use
 
 Once you have created arrays, there are a few things you can do with them:
 
--   <span id="4e4b">`concat()` — Join several arrays into one</span>
--   <span id="5c02">`indexOf()` — Returns the first position at which a given element appears in an array</span>
--   <span id="45cd">`join()` — Combine elements of an array into a single string and return the string</span>
--   <span id="3a4e">`lastIndexOf()` — Gives the last position at which a given element appears in an array</span>
--   <span id="8fbb">`pop()` — Removes the last element of an array</span>
--   <span id="28e4">`push()` — Add a new element at the end</span>
--   <span id="0be2">`reverse()` — Sort elements in a descending order</span>
--   <span id="775e">`shift()` — Remove the first element of an array</span>
--   <span id="1063">`slice()` — Pulls a copy of a portion of an array into a new array</span>
--   <span id="53fd">`sort()` — Sorts elements alphabetically</span>
--   <span id="f551">`splice()` — Adds elements in a specified way and position</span>
--   <span id="c46b">`toString()` — Converts elements to strings</span>
--   <span id="ef66">`unshift()` —Adds a new element to the beginning</span>
--   <span id="4598">`valueOf()` — Returns the primitive value of the specified object</span>
+- <span id="4e4b">`concat()` — Join several arrays into one</span>
+- <span id="5c02">`indexOf()` — Returns the first position at which a given element appears in an array</span>
+- <span id="45cd">`join()` — Combine elements of an array into a single string and return the string</span>
+- <span id="3a4e">`lastIndexOf()` — Gives the last position at which a given element appears in an array</span>
+- <span id="8fbb">`pop()` — Removes the last element of an array</span>
+- <span id="28e4">`push()` — Add a new element at the end</span>
+- <span id="0be2">`reverse()` — Sort elements in a descending order</span>
+- <span id="775e">`shift()` — Remove the first element of an array</span>
+- <span id="1063">`slice()` — Pulls a copy of a portion of an array into a new array</span>
+- <span id="53fd">`sort()` — Sorts elements alphabetically</span>
+- <span id="f551">`splice()` — Adds elements in a specified way and position</span>
+- <span id="c46b">`toString()` — Converts elements to strings</span>
+- <span id="ef66">`unshift()` —Adds a new element to the beginning</span>
+- <span id="4598">`valueOf()` — Returns the primitive value of the specified object</span>
 
 ### Operators
 
@@ -299,42 +299,42 @@ If you have variables, you can use them to perform different kinds of operations
 
 ### Basic Operators
 
--   <span id="5d34">`+` — Addition</span>
--   <span id="5fd9">`-` — Subtraction</span>
--   <span id="3b13">`*` — Multiplication</span>
--   <span id="521a">`/` — Division</span>
--   <span id="cf0f">`(...)` — Grouping operator, operations within brackets are executed earlier than those outside</span>
--   <span id="bb2a">`%` — Modulus (remainder )</span>
--   <span id="e837">`++` — Increment numbers</span>
--   <span id="71ea">`--` — Decrement numbers</span>
+- <span id="5d34">`+` — Addition</span>
+- <span id="5fd9">`-` — Subtraction</span>
+- <span id="3b13">`*` — Multiplication</span>
+- <span id="521a">`/` — Division</span>
+- <span id="cf0f">`(...)` — Grouping operator, operations within brackets are executed earlier than those outside</span>
+- <span id="bb2a">`%` — Modulus (remainder )</span>
+- <span id="e837">`++` — Increment numbers</span>
+- <span id="71ea">`--` — Decrement numbers</span>
 
 ### Comparison Operators
 
--   <span id="a2b0">`==` — Equal to</span>
--   <span id="5105">`===` — Equal value and equal type</span>
--   <span id="c79c">`!=` — Not equal</span>
--   <span id="1f7f">`!==` — Not equal value or not equal type</span>
--   <span id="78c3">`>` — Greater than</span>
--   <span id="d40b">`<` — Less than</span>
--   <span id="081b">`>=` — Greater than or equal to</span>
--   <span id="d065">`<=` — Less than or equal to</span>
--   <span id="174d">`?` — Ternary operator</span>
+- <span id="a2b0">`==` — Equal to</span>
+- <span id="5105">`===` — Equal value and equal type</span>
+- <span id="c79c">`!=` — Not equal</span>
+- <span id="1f7f">`!==` — Not equal value or not equal type</span>
+- <span id="78c3">`>` — Greater than</span>
+- <span id="d40b">`<` — Less than</span>
+- <span id="081b">`>=` — Greater than or equal to</span>
+- <span id="d065">`<=` — Less than or equal to</span>
+- <span id="174d">`?` — Ternary operator</span>
 
 ### Logical Operators
 
--   <span id="cb7b">`&&` — Logical and</span>
--   <span id="b1ee">`||` — Logical or</span>
--   <span id="96d4">`!` — Logical not</span>
+- <span id="cb7b">`&&` — Logical and</span>
+- <span id="b1ee">`||` — Logical or</span>
+- <span id="96d4">`!` — Logical not</span>
 
 ### Bitwise Operators
 
--   <span id="8cf7">`&` — AND statement</span>
--   <span id="02d5">`|` — OR statement</span>
--   <span id="e576">`~` — NOT</span>
--   <span id="9c66">`^` — XOR</span>
--   <span id="b343">`<<` — Left shift</span>
--   <span id="52b1">`>>` — Right shift</span>
--   <span id="1b5c">`>>>` — Zero fill right shift</span>
+- <span id="8cf7">`&` — AND statement</span>
+- <span id="02d5">`|` — OR statement</span>
+- <span id="e576">`~` — NOT</span>
+- <span id="9c66">`^` — XOR</span>
+- <span id="b343">`<<` — Left shift</span>
+- <span id="52b1">`>>` — Right shift</span>
+- <span id="1b5c">`>>>` — Zero fill right shift</span>
 
 ### Functions
 
@@ -352,26 +352,26 @@ As you can see, it consists of the `function` keyword plus a name. The function'
 
 A common application for functions is the output of data. For the output, you have the following options:
 
--   <span id="a7a7">`alert()` — Output data in an alert box in the browser window</span>
--   <span id="0c44">`confirm()` — Opens up a yes/no dialog and returns true/false depending on user click</span>
--   <span id="9690">`console.log()` — Writes information to the browser console, good for debugging purposes</span>
--   <span id="0d4d">`document.write()` — Write directly to the HTML document</span>
--   <span id="16aa">`prompt()` — Creates a dialogue for user input</span>
+- <span id="a7a7">`alert()` — Output data in an alert box in the browser window</span>
+- <span id="0c44">`confirm()` — Opens up a yes/no dialog and returns true/false depending on user click</span>
+- <span id="9690">`console.log()` — Writes information to the browser console, good for debugging purposes</span>
+- <span id="0d4d">`document.write()` — Write directly to the HTML document</span>
+- <span id="16aa">`prompt()` — Creates a dialogue for user input</span>
 
 ### Global Functions
 
 Global functions are functions built into every browser capable of running JavaScript.
 
--   <span id="f4f1">`decodeURI()` — Decodes a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" class="markup--anchor markup--li-anchor">Uniform Resource Identifier (URI)</a> created by `encodeURI` or similar</span>
--   <span id="c203">`decodeURIComponent()` — Decodes a URI component</span>
--   <span id="176a">`encodeURI()` — Encodes a URI into UTF-8</span>
--   <span id="6720">`encodeURIComponent()` — Same but for URI components</span>
--   <span id="e97b">`eval()` — Evaluates JavaScript code represented as a string</span>
--   <span id="390b">`isFinite()` — Determines whether a passed value is a finite number</span>
--   <span id="5d46">`isNaN()` — Determines whether a value is NaN or not</span>
--   <span id="f668">`Number()` —- Returns a number converted from its argument</span>
--   <span id="a5ff">`parseFloat()` — Parses an argument and returns a floating-point number</span>
--   <span id="a666">`parseInt()` — Parses its argument and returns an integer</span>
+- <span id="f4f1">`decodeURI()` — Decodes a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" class="markup--anchor markup--li-anchor">Uniform Resource Identifier (URI)</a> created by `encodeURI` or similar</span>
+- <span id="c203">`decodeURIComponent()` — Decodes a URI component</span>
+- <span id="176a">`encodeURI()` — Encodes a URI into UTF-8</span>
+- <span id="6720">`encodeURIComponent()` — Same but for URI components</span>
+- <span id="e97b">`eval()` — Evaluates JavaScript code represented as a string</span>
+- <span id="390b">`isFinite()` — Determines whether a passed value is a finite number</span>
+- <span id="5d46">`isNaN()` — Determines whether a value is NaN or not</span>
+- <span id="f668">`Number()` —- Returns a number converted from its argument</span>
+- <span id="a5ff">`parseFloat()` — Parses an argument and returns a floating-point number</span>
+- <span id="a666">`parseInt()` — Parses its argument and returns an integer</span>
 
 ### JavaScript Loops
 
@@ -385,11 +385,11 @@ for (before loop; condition **for** loop; execute after loop) {
 
 You have several parameters to create loops:
 
--   <span id="ff62">`for` — The most common way to create a loop in JavaScript</span>
--   <span id="7ad1">`while` — Sets up conditions under which a loop executes</span>
--   <span id="c2f4">`do while` — Similar to the `while` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again</span>
--   <span id="7157">`break` —Used to stop and exit the cycle at certain conditions</span>
--   <span id="f5c0">`continue` — Skip parts of the cycle if certain conditions are met</span>
+- <span id="ff62">`for` — The most common way to create a loop in JavaScript</span>
+- <span id="7ad1">`while` — Sets up conditions under which a loop executes</span>
+- <span id="c2f4">`do while` — Similar to the `while` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again</span>
+- <span id="7157">`break` —Used to stop and exit the cycle at certain conditions</span>
+- <span id="f5c0">`continue` — Skip parts of the cycle if certain conditions are met</span>
 
 ### If — Else Statements
 
@@ -419,39 +419,39 @@ In this case, `John Doe` is the string.
 
 In JavaScript, strings are marked with single or double-quotes. If you want to use quotation marks in a string, you need to use special characters:
 
--   <span id="b4b1">`\'` — Single quote</span>
--   <span id="3b22">`\"` — Double quote</span>
+- <span id="b4b1">`\'` — Single quote</span>
+- <span id="3b22">`\"` — Double quote</span>
 
 Aside from that you also have additional escape characters:
 
--   <span id="b412">`\\` — Backslash</span>
--   <span id="1592">`\b` — Backspace</span>
--   <span id="3a72">`\f` — Form feed</span>
--   <span id="145a">`\n` — New line</span>
--   <span id="1416">`\r` — Carriage return</span>
--   <span id="95d4">`\t` — Horizontal tabulator</span>
--   <span id="d962">`\v` — Vertical tabulator</span>
+- <span id="b412">`\\` — Backslash</span>
+- <span id="1592">`\b` — Backspace</span>
+- <span id="3a72">`\f` — Form feed</span>
+- <span id="145a">`\n` — New line</span>
+- <span id="1416">`\r` — Carriage return</span>
+- <span id="95d4">`\t` — Horizontal tabulator</span>
+- <span id="d962">`\v` — Vertical tabulator</span>
 
 ### String Methods
 
 There are many different ways to work with strings:
 
--   <span id="2021">`charAt()` — Returns a character at a specified position inside a string</span>
--   <span id="d3e5">`charCodeAt()` — Gives you the Unicode of a character at that position</span>
--   <span id="fdd1">`concat()` — Concatenates (joins) two or more strings into one</span>
--   <span id="009c">`fromCharCode()` — Returns a string created from the specified sequence of UTF-16 code units</span>
--   <span id="7ed3">`indexOf()` — Provides the position of the first occurrence of a specified text within a string</span>
--   <span id="2937">`lastIndexOf()` — Same as `indexOf()` but with the last occurrence, searching backward</span>
--   <span id="142d">`match()` — Retrieves the matches of a string against a search pattern</span>
--   <span id="6c18">`replace()` — Find and replace specified text in a string</span>
--   <span id="e279">`search()` — Executes a search for a matching text and returns its position</span>
--   <span id="6bcd">`slice()` — Extracts a section of a string and returns it as a new string</span>
--   <span id="e4ee">`split()` — Splits a string object into an array of strings at a specified position</span>
--   <span id="3a27">`substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters</span>
--   <span id="3d14">`substring()` — Also similar to `slice()` but can't accept negative indices</span>
--   <span id="fa33">`toLowerCase()` — Convert strings to lower case</span>
--   <span id="3485">`toUpperCase()` — Convert strings to upper case</span>
--   <span id="4f96">`valueOf()` — Returns the primitive value (that has no properties or methods) of a string object</span>
+- <span id="2021">`charAt()` — Returns a character at a specified position inside a string</span>
+- <span id="d3e5">`charCodeAt()` — Gives you the Unicode of a character at that position</span>
+- <span id="fdd1">`concat()` — Concatenates (joins) two or more strings into one</span>
+- <span id="009c">`fromCharCode()` — Returns a string created from the specified sequence of UTF-16 code units</span>
+- <span id="7ed3">`indexOf()` — Provides the position of the first occurrence of a specified text within a string</span>
+- <span id="2937">`lastIndexOf()` — Same as `indexOf()` but with the last occurrence, searching backward</span>
+- <span id="142d">`match()` — Retrieves the matches of a string against a search pattern</span>
+- <span id="6c18">`replace()` — Find and replace specified text in a string</span>
+- <span id="e279">`search()` — Executes a search for a matching text and returns its position</span>
+- <span id="6bcd">`slice()` — Extracts a section of a string and returns it as a new string</span>
+- <span id="e4ee">`split()` — Splits a string object into an array of strings at a specified position</span>
+- <span id="3a27">`substr()` — Similar to `slice()` but extracts a substring depending on a specified number of characters</span>
+- <span id="3d14">`substring()` — Also similar to `slice()` but can't accept negative indices</span>
+- <span id="fa33">`toLowerCase()` — Convert strings to lower case</span>
+- <span id="3485">`toUpperCase()` — Convert strings to upper case</span>
+- <span id="4f96">`valueOf()` — Returns the primitive value (that has no properties or methods) of a string object</span>
 
 ### Regular Expression Syntax
 
@@ -459,55 +459,55 @@ Regular expressions are search patterns used to match character combinations in 
 
 ### Pattern Modifiers
 
--   <span id="bb29">`e` — Evaluate replacement</span>
--   <span id="b6b8">`i` — Perform case-insensitive matching</span>
--   <span id="4f50">`g` — Perform global matching</span>
--   <span id="4add">`m` — Perform multiple line matching</span>
--   <span id="a073">`s` — Treat strings as a single line</span>
--   <span id="482b">`x` — Allow comments and whitespace in the pattern</span>
--   <span id="f6ad">`U` — Ungreedy pattern</span>
+- <span id="bb29">`e` — Evaluate replacement</span>
+- <span id="b6b8">`i` — Perform case-insensitive matching</span>
+- <span id="4f50">`g` — Perform global matching</span>
+- <span id="4add">`m` — Perform multiple line matching</span>
+- <span id="a073">`s` — Treat strings as a single line</span>
+- <span id="482b">`x` — Allow comments and whitespace in the pattern</span>
+- <span id="f6ad">`U` — Ungreedy pattern</span>
 
 ### Brackets
 
--   <span id="aae1">`[abc]` — Find any of the characters between the brackets</span>
--   <span id="e048">`[^abc]` — Find any character which is not in the brackets</span>
--   <span id="f9b5">`[0-9]` — Used to find any digit from 0 to 9</span>
--   <span id="ac71">`[A-z]` — Find any character from uppercase A to lowercase z</span>
--   <span id="6fce">`(a|b|c)` — Find any of the alternatives separated with `|`</span>
+- <span id="aae1">`[abc]` — Find any of the characters between the brackets</span>
+- <span id="e048">`[^abc]` — Find any character which is not in the brackets</span>
+- <span id="f9b5">`[0-9]` — Used to find any digit from 0 to 9</span>
+- <span id="ac71">`[A-z]` — Find any character from uppercase A to lowercase z</span>
+- <span id="6fce">`(a|b|c)` — Find any of the alternatives separated with `|`</span>
 
 ### Metacharacters
 
--   <span id="dcd6">`.` — Find a single character, except newline or line terminator</span>
--   <span id="e944">`\w` — Word character</span>
--   <span id="c4bf">`\W` — Non-word character</span>
--   <span id="7b81">`\d` — A digit</span>
--   <span id="a533">`\D` — A non-digit character</span>
--   <span id="1fcc">`\s` — Whitespace character</span>
--   <span id="374c">`\S` — Non-whitespace character</span>
--   <span id="72d0">`\b` — Find a match at the beginning/end of a word</span>
--   <span id="2d38">`\B` — A match not at the beginning/end of a word</span>
--   <span id="859b">`\0` — NUL character</span>
--   <span id="df4d">`\n` — A new line character</span>
--   <span id="5acd">`\f` — Form feed character</span>
--   <span id="833f">`\r` — Carriage return character</span>
--   <span id="4f31">`\t` — Tab character</span>
--   <span id="e618">`\v` — Vertical tab character</span>
--   <span id="dcfc">`\xxx` — The character specified by an octal number xxx</span>
--   <span id="cf5e">`\xdd` — Character specified by a hexadecimal number dd</span>
--   <span id="978f">`\uxxxx` — The Unicode character specified by a hexadecimal number XXXX</span>
+- <span id="dcd6">`.` — Find a single character, except newline or line terminator</span>
+- <span id="e944">`\w` — Word character</span>
+- <span id="c4bf">`\W` — Non-word character</span>
+- <span id="7b81">`\d` — A digit</span>
+- <span id="a533">`\D` — A non-digit character</span>
+- <span id="1fcc">`\s` — Whitespace character</span>
+- <span id="374c">`\S` — Non-whitespace character</span>
+- <span id="72d0">`\b` — Find a match at the beginning/end of a word</span>
+- <span id="2d38">`\B` — A match not at the beginning/end of a word</span>
+- <span id="859b">`\0` — NUL character</span>
+- <span id="df4d">`\n` — A new line character</span>
+- <span id="5acd">`\f` — Form feed character</span>
+- <span id="833f">`\r` — Carriage return character</span>
+- <span id="4f31">`\t` — Tab character</span>
+- <span id="e618">`\v` — Vertical tab character</span>
+- <span id="dcfc">`\xxx` — The character specified by an octal number xxx</span>
+- <span id="cf5e">`\xdd` — Character specified by a hexadecimal number dd</span>
+- <span id="978f">`\uxxxx` — The Unicode character specified by a hexadecimal number XXXX</span>
 
 ### Quantifiers
 
--   <span id="e4cf">`n+` — Matches any string that contains at least one n</span>
--   <span id="be07">`n*` — Any string that contains zero or more occurrences of n</span>
--   <span id="4a93">`n?` — A string that contains zero or one occurrence of n</span>
--   <span id="91f0">`n{X}` — String that contains a sequence of X n's</span>
--   <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n's</span>
--   <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n's</span>
--   <span id="15b3">`n$` — Any string with n at the end of it</span>
--   <span id="5fc9">`^n` — String with n at the beginning of it</span>
--   <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
--   <span id="6ffa">`?!n` — String that is not followed by a specific string ni</span>
+- <span id="e4cf">`n+` — Matches any string that contains at least one n</span>
+- <span id="be07">`n*` — Any string that contains zero or more occurrences of n</span>
+- <span id="4a93">`n?` — A string that contains zero or one occurrence of n</span>
+- <span id="91f0">`n{X}` — String that contains a sequence of X n's</span>
+- <span id="097b">`n{X,Y}` — Strings that contain a sequence of X to Y n's</span>
+- <span id="e9f2">`n{X,}` — Matches any string that contains a sequence of at least X n's</span>
+- <span id="15b3">`n$` — Any string with n at the end of it</span>
+- <span id="5fc9">`^n` — String with n at the beginning of it</span>
+- <span id="2b42">`?=n` — Any string that is followed by a specific string n</span>
+- <span id="6ffa">`?!n` — String that is not followed by a specific string ni</span>
 
 ### Numbers and Math
 
@@ -515,51 +515,51 @@ In JavaScript, you can also work with numbers, constants and perform mathematica
 
 ### Number Properties
 
--   <span id="3554">`MAX_VALUE` — The maximum numeric value representable in JavaScript</span>
--   <span id="c55d">`MIN_VALUE` — Smallest positive numeric value representable in JavaScript</span>
--   <span id="49e0">`NaN` — The "Not-a-Number" value</span>
--   <span id="3024">`NEGATIVE_INFINITY` — The negative Infinity value</span>
--   <span id="0bf4">`POSITIVE_INFINITY` — Positive Infinity value</span>
+- <span id="3554">`MAX_VALUE` — The maximum numeric value representable in JavaScript</span>
+- <span id="c55d">`MIN_VALUE` — Smallest positive numeric value representable in JavaScript</span>
+- <span id="49e0">`NaN` — The "Not-a-Number" value</span>
+- <span id="3024">`NEGATIVE_INFINITY` — The negative Infinity value</span>
+- <span id="0bf4">`POSITIVE_INFINITY` — Positive Infinity value</span>
 
 ### Number Methods
 
--   <span id="9478">`toExponential()` — Returns the string with a rounded number written as exponential notation</span>
--   <span id="2ad0">`toFixed()` — Returns the string of a number with a specified number of decimals</span>
--   <span id="d464">`toPrecision()` — String of a number written with a specified length</span>
--   <span id="2244">`toString()` — Returns a number as a string</span>
--   <span id="bc1e">`valueOf()` — Returns a number as a number</span>
+- <span id="9478">`toExponential()` — Returns the string with a rounded number written as exponential notation</span>
+- <span id="2ad0">`toFixed()` — Returns the string of a number with a specified number of decimals</span>
+- <span id="d464">`toPrecision()` — String of a number written with a specified length</span>
+- <span id="2244">`toString()` — Returns a number as a string</span>
+- <span id="bc1e">`valueOf()` — Returns a number as a number</span>
 
 ### Math Properties
 
--   <span id="9f68">`E` — Euler's number</span>
--   <span id="a4df">`LN2` — The natural logarithm of 2</span>
--   <span id="0f06">`LN10` — Natural logarithm of 10</span>
--   <span id="1a92">`LOG2E` — Base 2 logarithm of E</span>
--   <span id="42e7">`LOG10E` — Base 10 logarithm of E</span>
--   <span id="1fbe">`PI` — The number PI</span>
--   <span id="2a56">`SQRT1_2` — Square root of 1/2</span>
--   <span id="aab4">`SQRT2` — The square root of 2</span>
+- <span id="9f68">`E` — Euler's number</span>
+- <span id="a4df">`LN2` — The natural logarithm of 2</span>
+- <span id="0f06">`LN10` — Natural logarithm of 10</span>
+- <span id="1a92">`LOG2E` — Base 2 logarithm of E</span>
+- <span id="42e7">`LOG10E` — Base 10 logarithm of E</span>
+- <span id="1fbe">`PI` — The number PI</span>
+- <span id="2a56">`SQRT1_2` — Square root of 1/2</span>
+- <span id="aab4">`SQRT2` — The square root of 2</span>
 
 ### Math Methods
 
--   <span id="8836">`abs(x)` — Returns the absolute (positive) value of x</span>
--   <span id="ddb9">`acos(x)` — The arccosine of x, in radians</span>
--   <span id="a0c3">`asin(x)` — Arcsine of x, in radians</span>
--   <span id="c2ca">`atan(x)` — The arctangent of x as a numeric value</span>
--   <span id="8b93">`atan2(y,x)` — Arctangent of the quotient of its arguments</span>
--   <span id="b103">`ceil(x)` — Value of x rounded up to its nearest integer</span>
--   <span id="c68a">`cos(x)` — The cosine of x (x is in radians)</span>
--   <span id="d480">`exp(x)` — Value of Ex</span>
--   <span id="2954">`floor(x)` — The value of x rounded down to its nearest integer</span>
--   <span id="ff4d">`log(x)` — The natural logarithm (base E) of x</span>
--   <span id="b6a9">`max(x,y,z,...,n)` — Returns the number with the highest value</span>
--   <span id="dfb0">`min(x,y,z,...,n)` — Same for the number with the lowest value</span>
--   <span id="a6f1">`pow(x,y)` — X to the power of y</span>
--   <span id="8851">`random()` — Returns a random number between 0 and 1</span>
--   <span id="d32e">`round(x)` — The value of x rounded to its nearest integer</span>
--   <span id="fe9a">`sin(x)` — The sine of x (x is in radians)</span>
--   <span id="c244">`sqrt(x)` — Square root of x</span>
--   <span id="b5ef">`tan(x)` — The tangent of an angle</span>
+- <span id="8836">`abs(x)` — Returns the absolute (positive) value of x</span>
+- <span id="ddb9">`acos(x)` — The arccosine of x, in radians</span>
+- <span id="a0c3">`asin(x)` — Arcsine of x, in radians</span>
+- <span id="c2ca">`atan(x)` — The arctangent of x as a numeric value</span>
+- <span id="8b93">`atan2(y,x)` — Arctangent of the quotient of its arguments</span>
+- <span id="b103">`ceil(x)` — Value of x rounded up to its nearest integer</span>
+- <span id="c68a">`cos(x)` — The cosine of x (x is in radians)</span>
+- <span id="d480">`exp(x)` — Value of Ex</span>
+- <span id="2954">`floor(x)` — The value of x rounded down to its nearest integer</span>
+- <span id="ff4d">`log(x)` — The natural logarithm (base E) of x</span>
+- <span id="b6a9">`max(x,y,z,...,n)` — Returns the number with the highest value</span>
+- <span id="dfb0">`min(x,y,z,...,n)` — Same for the number with the lowest value</span>
+- <span id="a6f1">`pow(x,y)` — X to the power of y</span>
+- <span id="8851">`random()` — Returns a random number between 0 and 1</span>
+- <span id="d32e">`round(x)` — The value of x rounded to its nearest integer</span>
+- <span id="fe9a">`sin(x)` — The sine of x (x is in radians)</span>
+- <span id="c244">`sqrt(x)` — Square root of x</span>
+- <span id="b5ef">`tan(x)` — The tangent of an angle</span>
 
 ### Dealing with Dates in JavaScript
 
@@ -567,35 +567,35 @@ You can also work with and modify dates and time with JavaScript. This is the ne
 
 ### Setting Dates
 
--   <span id="b187">`Date()` — Creates a new date object with the current date and time</span>
--   <span id="42f8">`Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.</span>
--   <span id="4e80">`Date("2017-06-23")` — Date declaration as a string</span>
+- <span id="b187">`Date()` — Creates a new date object with the current date and time</span>
+- <span id="42f8">`Date(2017, 5, 21, 3, 23, 10, 0)` — Create a custom date object. The numbers represent a year, month, day, hour, minutes, seconds, milliseconds. You can omit anything you want except for a year and month.</span>
+- <span id="4e80">`Date("2017-06-23")` — Date declaration as a string</span>
 
 ### Pulling Date and Time Values
 
--   <span id="465e">`getDate()` — Get the day of the month as a number (1-31)</span>
--   <span id="1b08">`getDay()` — The weekday as a number (0-6)</span>
--   <span id="6d9e">`getFullYear()` — Year as a four-digit number (yyyy)</span>
--   <span id="a216">`getHours()` — Get the hour (0-23)</span>
--   <span id="388a">`getMilliseconds()` — The millisecond (0-999)</span>
--   <span id="a97f">`getMinutes()` — Get the minute (0-59)</span>
--   <span id="2427">`getMonth()` — Month as a number (0-11)</span>
--   <span id="b964">`getSeconds()` — Get the second (0-59)</span>
--   <span id="505d">`getTime()` — Get the milliseconds since January 1, 1970</span>
--   <span id="7c14">`getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
--   <span id="d6b6">`parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970</span>
+- <span id="465e">`getDate()` — Get the day of the month as a number (1-31)</span>
+- <span id="1b08">`getDay()` — The weekday as a number (0-6)</span>
+- <span id="6d9e">`getFullYear()` — Year as a four-digit number (yyyy)</span>
+- <span id="a216">`getHours()` — Get the hour (0-23)</span>
+- <span id="388a">`getMilliseconds()` — The millisecond (0-999)</span>
+- <span id="a97f">`getMinutes()` — Get the minute (0-59)</span>
+- <span id="2427">`getMonth()` — Month as a number (0-11)</span>
+- <span id="b964">`getSeconds()` — Get the second (0-59)</span>
+- <span id="505d">`getTime()` — Get the milliseconds since January 1, 1970</span>
+- <span id="7c14">`getUTCDate()` — The day (date) of the month in the specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
+- <span id="d6b6">`parse` — Parses a string representation of a date and returns the number of milliseconds since January 1, 1970</span>
 
 ### Set Part of a Date
 
--   <span id="9a97">`setDate()` — Set the day as a number (1-31)</span>
--   <span id="d4f0">`setFullYear()` — Sets the year (optionally month and day)</span>
--   <span id="1a45">`setHours()` — Set the hour (0-23)</span>
--   <span id="8020">`setMilliseconds()` — Set milliseconds (0-999)</span>
--   <span id="7feb">`setMinutes()` — Sets the minutes (0-59)</span>
--   <span id="d7ca">`setMonth()` — Set the month (0-11)</span>
--   <span id="795d">`setSeconds()` — Sets the seconds (0-59)</span>
--   <span id="1d7f">`setTime()` — Set the time (milliseconds since January 1, 1970)</span>
--   <span id="78e1">`setUTCDate()` — Sets the day of the month for a specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
+- <span id="9a97">`setDate()` — Set the day as a number (1-31)</span>
+- <span id="d4f0">`setFullYear()` — Sets the year (optionally month and day)</span>
+- <span id="1a45">`setHours()` — Set the hour (0-23)</span>
+- <span id="8020">`setMilliseconds()` — Set milliseconds (0-999)</span>
+- <span id="7feb">`setMinutes()` — Sets the minutes (0-59)</span>
+- <span id="d7ca">`setMonth()` — Set the month (0-11)</span>
+- <span id="795d">`setSeconds()` — Sets the seconds (0-59)</span>
+- <span id="1d7f">`setTime()` — Set the time (milliseconds since January 1, 1970)</span>
+- <span id="78e1">`setUTCDate()` — Sets the day of the month for a specified date according to universal time (also available for day, month, full year, hours, minutes etc.)</span>
 
 ### DOM Mode
 
@@ -603,56 +603,56 @@ The DOM is the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" cla
 
 ### Node Properties
 
--   <span id="cfb7">`attributes` — Returns a live collection of all attributes registered to an element</span>
--   <span id="6138">`baseURI` — Provides the absolute base URL of an HTML element</span>
--   <span id="34da">`childNodes` — Gives a collection of an element's child nodes</span>
--   <span id="58ec">`firstChild` — Returns the first child node of an element</span>
--   <span id="2f34">`lastChild` — The last child node of an element</span>
--   <span id="fdea">`nextSibling` — Gives you the next node at the same node tree level</span>
--   <span id="1ca4">`nodeName` —Returns the name of a node</span>
--   <span id="d4ee">`nodeType` — Returns the type of a node</span>
--   <span id="cd22">`nodeValue` — Sets or returns the value of a node</span>
--   <span id="a9a3">`ownerDocument` — The top-level document object for this node</span>
--   <span id="51b4">`parentNode` — Returns the parent node of an element</span>
--   <span id="31ef">`previousSibling` — Returns the node immediately preceding the current one</span>
--   <span id="ec40">`textContent` — Sets or returns the textual content of a node and its descendants</span>
+- <span id="cfb7">`attributes` — Returns a live collection of all attributes registered to an element</span>
+- <span id="6138">`baseURI` — Provides the absolute base URL of an HTML element</span>
+- <span id="34da">`childNodes` — Gives a collection of an element's child nodes</span>
+- <span id="58ec">`firstChild` — Returns the first child node of an element</span>
+- <span id="2f34">`lastChild` — The last child node of an element</span>
+- <span id="fdea">`nextSibling` — Gives you the next node at the same node tree level</span>
+- <span id="1ca4">`nodeName` —Returns the name of a node</span>
+- <span id="d4ee">`nodeType` — Returns the type of a node</span>
+- <span id="cd22">`nodeValue` — Sets or returns the value of a node</span>
+- <span id="a9a3">`ownerDocument` — The top-level document object for this node</span>
+- <span id="51b4">`parentNode` — Returns the parent node of an element</span>
+- <span id="31ef">`previousSibling` — Returns the node immediately preceding the current one</span>
+- <span id="ec40">`textContent` — Sets or returns the textual content of a node and its descendants</span>
 
 ### Node Methods
 
--   <span id="7f05">`appendChild()` — Adds a new child node to an element as the last child node</span>
--   <span id="3b3a">`cloneNode()` — Clones an HTML element</span>
--   <span id="661c">`compareDocumentPosition()` — Compares the document position of two elements</span>
--   <span id="86d2">`getFeature()` — Returns an object which implements the APIs of a specified feature</span>
--   <span id="059c">`hasAttributes()` — Returns true if an element has any attributes, otherwise false</span>
--   <span id="5d0d">`hasChildNodes()` — Returns true if an element has any child nodes, otherwise false</span>
--   <span id="4c86">`insertBefore()` — Inserts a new child node before a specified, existing child node</span>
--   <span id="4b38">`isDefaultNamespace()` — Returns true if a specified namespaceURI is the default, otherwise false</span>
--   <span id="8c4e">`isEqualNode()` — Checks if two elements are equal</span>
--   <span id="2f6a">`isSameNode()` — Checks if two elements are the same node</span>
--   <span id="944e">`isSupported()` — Returns true if a specified feature is supported on the element</span>
--   <span id="b7ef">`lookupNamespaceURI()` — Returns the namespace URI associated with a given node</span>
--   <span id="5f59">`lookupPrefix()` — Returns a DOMString containing the prefix for a given namespace URI if present</span>
--   <span id="6670">`normalize()` — Joins adjacent text nodes and removes empty text nodes in an element</span>
--   <span id="c80a">`removeChild()` — Removes a child node from an element</span>
--   <span id="8108">`replaceChild()` — Replaces a child node in an element</span>
+- <span id="7f05">`appendChild()` — Adds a new child node to an element as the last child node</span>
+- <span id="3b3a">`cloneNode()` — Clones an HTML element</span>
+- <span id="661c">`compareDocumentPosition()` — Compares the document position of two elements</span>
+- <span id="86d2">`getFeature()` — Returns an object which implements the APIs of a specified feature</span>
+- <span id="059c">`hasAttributes()` — Returns true if an element has any attributes, otherwise false</span>
+- <span id="5d0d">`hasChildNodes()` — Returns true if an element has any child nodes, otherwise false</span>
+- <span id="4c86">`insertBefore()` — Inserts a new child node before a specified, existing child node</span>
+- <span id="4b38">`isDefaultNamespace()` — Returns true if a specified namespaceURI is the default, otherwise false</span>
+- <span id="8c4e">`isEqualNode()` — Checks if two elements are equal</span>
+- <span id="2f6a">`isSameNode()` — Checks if two elements are the same node</span>
+- <span id="944e">`isSupported()` — Returns true if a specified feature is supported on the element</span>
+- <span id="b7ef">`lookupNamespaceURI()` — Returns the namespace URI associated with a given node</span>
+- <span id="5f59">`lookupPrefix()` — Returns a DOMString containing the prefix for a given namespace URI if present</span>
+- <span id="6670">`normalize()` — Joins adjacent text nodes and removes empty text nodes in an element</span>
+- <span id="c80a">`removeChild()` — Removes a child node from an element</span>
+- <span id="8108">`replaceChild()` — Replaces a child node in an element</span>
 
 ### Element Methods
 
--   <span id="9530">`getAttribute()` — Returns the specified attribute value of an element node</span>
--   <span id="0dd1">`getAttributeNS()` — Returns string value of the attribute with the specified namespace and name</span>
--   <span id="8a0d">`getAttributeNode()` — Gets the specified attribute node</span>
--   <span id="fc41">`getAttributeNodeNS()` — Returns the attribute node for the attribute with the given namespace and name</span>
--   <span id="2a3e">`getElementsByTagName()` — Provides a collection of all child elements with the specified tag name</span>
--   <span id="11a4">`getElementsByTagNameNS()` — Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace</span>
--   <span id="e2ae">`hasAttribute()` — Returns true if an element has any attributes, otherwise false</span>
--   <span id="17dd">`hasAttributeNS()` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute</span>
--   <span id="f28c">`removeAttribute()` — Removes a specified attribute from an element</span>
--   <span id="8cd0">`removeAttributeNS()` — Removes the specified attribute from an element within a certain namespace</span>
--   <span id="e6c3">`removeAttributeNode()` — Takes away a specified attribute node and returns the removed node</span>
--   <span id="a7b9">`setAttribute()` — Sets or changes the specified attribute to a specified value</span>
--   <span id="bf42">`setAttributeNS()` — Adds a new attribute or changes the value of an attribute with the given namespace and name</span>
--   <span id="2322">`setAttributeNode()` — Sets or changes the specified attribute node</span>
--   <span id="0540">`setAttributeNodeNS()` — Adds a new namespaced attribute node to an element</span>
+- <span id="9530">`getAttribute()` — Returns the specified attribute value of an element node</span>
+- <span id="0dd1">`getAttributeNS()` — Returns string value of the attribute with the specified namespace and name</span>
+- <span id="8a0d">`getAttributeNode()` — Gets the specified attribute node</span>
+- <span id="fc41">`getAttributeNodeNS()` — Returns the attribute node for the attribute with the given namespace and name</span>
+- <span id="2a3e">`getElementsByTagName()` — Provides a collection of all child elements with the specified tag name</span>
+- <span id="11a4">`getElementsByTagNameNS()` — Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace</span>
+- <span id="e2ae">`hasAttribute()` — Returns true if an element has any attributes, otherwise false</span>
+- <span id="17dd">`hasAttributeNS()` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute</span>
+- <span id="f28c">`removeAttribute()` — Removes a specified attribute from an element</span>
+- <span id="8cd0">`removeAttributeNS()` — Removes the specified attribute from an element within a certain namespace</span>
+- <span id="e6c3">`removeAttributeNode()` — Takes away a specified attribute node and returns the removed node</span>
+- <span id="a7b9">`setAttribute()` — Sets or changes the specified attribute to a specified value</span>
+- <span id="bf42">`setAttributeNS()` — Adds a new attribute or changes the value of an attribute with the given namespace and name</span>
+- <span id="2322">`setAttributeNode()` — Sets or changes the specified attribute node</span>
+- <span id="0540">`setAttributeNodeNS()` — Adds a new namespaced attribute node to an element</span>
 
 ### Working with the User Browser
 
@@ -660,62 +660,62 @@ Besides HTML elements, JavaScript is also able to take into account the user bro
 
 ### Window Properties
 
--   <span id="1b1f">`closed` — Checks whether a window has been closed or not and returns true or false</span>
--   <span id="805f">`defaultStatus` — Sets or returns the default text in the status bar of a window</span>
--   <span id="458e">`document` — Returns the document object for the window</span>
--   <span id="93ee">`frames` — Returns all `<iframe>` elements in the current window</span>
--   <span id="c42a">`history` — Provides the History object for the window</span>
--   <span id="3a5d">`innerHeight` — The inner height of a window's content area</span>
--   <span id="c609">`innerWidth` — The inner width of the content area</span>
--   <span id="5167">`length` — Find out the number of `<iframe>` elements in the window</span>
--   <span id="4f05">`location` — Returns the location object for the window</span>
--   <span id="4125">`name` — Sets or returns the name of a window</span>
--   <span id="3d7f">`navigator` — Returns the Navigator object for the window</span>
--   <span id="c601">`opener` — Returns a reference to the window that created the window</span>
--   <span id="734e">`outerHeight` — The outer height of a window, including toolbars/scrollbars</span>
--   <span id="9b0a">`outerWidth` — The outer width of a window, including toolbars/scrollbars</span>
--   <span id="3140">`pageXOffset` — Number of pixels the current document has been scrolled horizontally</span>
--   <span id="0bcc">`pageYOffset` — Number of pixels the document has been scrolled vertically</span>
--   <span id="a2af">`parent` — The parent window of the current window</span>
--   <span id="3634">`screen` — Returns the Screen object for the window</span>
--   <span id="9566">`screenLeft` — The horizontal coordinate of the window (relative to the screen)</span>
--   <span id="1245">`screenTop` — The vertical coordinate of the window</span>
--   <span id="5656">`screenX` — Same as `screenLeft` but needed for some browsers</span>
--   <span id="21e7">`screenY` — Same as `screenTop` but needed for some browsers</span>
--   <span id="d000">`self` — Returns the current window</span>
--   <span id="99af">`status` — Sets or returns the text in the status bar of a window</span>
--   <span id="0a0f">`top` — Returns the topmost browser window</span>
+- <span id="1b1f">`closed` — Checks whether a window has been closed or not and returns true or false</span>
+- <span id="805f">`defaultStatus` — Sets or returns the default text in the status bar of a window</span>
+- <span id="458e">`document` — Returns the document object for the window</span>
+- <span id="93ee">`frames` — Returns all `<iframe>` elements in the current window</span>
+- <span id="c42a">`history` — Provides the History object for the window</span>
+- <span id="3a5d">`innerHeight` — The inner height of a window's content area</span>
+- <span id="c609">`innerWidth` — The inner width of the content area</span>
+- <span id="5167">`length` — Find out the number of `<iframe>` elements in the window</span>
+- <span id="4f05">`location` — Returns the location object for the window</span>
+- <span id="4125">`name` — Sets or returns the name of a window</span>
+- <span id="3d7f">`navigator` — Returns the Navigator object for the window</span>
+- <span id="c601">`opener` — Returns a reference to the window that created the window</span>
+- <span id="734e">`outerHeight` — The outer height of a window, including toolbars/scrollbars</span>
+- <span id="9b0a">`outerWidth` — The outer width of a window, including toolbars/scrollbars</span>
+- <span id="3140">`pageXOffset` — Number of pixels the current document has been scrolled horizontally</span>
+- <span id="0bcc">`pageYOffset` — Number of pixels the document has been scrolled vertically</span>
+- <span id="a2af">`parent` — The parent window of the current window</span>
+- <span id="3634">`screen` — Returns the Screen object for the window</span>
+- <span id="9566">`screenLeft` — The horizontal coordinate of the window (relative to the screen)</span>
+- <span id="1245">`screenTop` — The vertical coordinate of the window</span>
+- <span id="5656">`screenX` — Same as `screenLeft` but needed for some browsers</span>
+- <span id="21e7">`screenY` — Same as `screenTop` but needed for some browsers</span>
+- <span id="d000">`self` — Returns the current window</span>
+- <span id="99af">`status` — Sets or returns the text in the status bar of a window</span>
+- <span id="0a0f">`top` — Returns the topmost browser window</span>
 
 ### Window Methods
 
--   <span id="5715">`alert()` — Displays an alert box with a message and an OK button</span>
--   <span id="4afc">`blur()` — Removes focus from the current window</span>
--   <span id="ef9a">`clearInterval()` — Clears a timer set with `setInterval()`</span>
--   <span id="fa72">`clearTimeout()` — Clears a timer set with `setTimeout()`</span>
--   <span id="7bce">`close()` — Closes the current window</span>
--   <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button</span>
--   <span id="e6f2">`focus()` — Sets focus to the current window</span>
--   <span id="5eb7">`moveBy()` — Moves a window relative to its current position</span>
--   <span id="16b6">`moveTo()` — Moves a window to a specified position</span>
--   <span id="32d8">`open()` — Opens a new browser window</span>
--   <span id="4198">`print()` — Prints the content of the current window</span>
--   <span id="3bec">`prompt()` — Displays a dialogue box that prompts the visitor for input</span>
--   <span id="e16a">`resizeBy()` — Resizes the window by the specified number of pixels</span>
--   <span id="31c8">`resizeTo()` — Resizes the window to a specified width and height</span>
--   <span id="6c44">`scrollBy()` — Scrolls the document by a specified number of pixels</span>
--   <span id="959f">`scrollTo()` — Scrolls the document to specified coordinates</span>
--   <span id="704a">`setInterval()` — Calls a function or evaluates an expression at specified intervals</span>
--   <span id="87c3">`setTimeout()` — Calls a function or evaluates an expression after a specified interval</span>
--   <span id="1cde">`stop()` — Stops the window from loading</span>
+- <span id="5715">`alert()` — Displays an alert box with a message and an OK button</span>
+- <span id="4afc">`blur()` — Removes focus from the current window</span>
+- <span id="ef9a">`clearInterval()` — Clears a timer set with `setInterval()`</span>
+- <span id="fa72">`clearTimeout()` — Clears a timer set with `setTimeout()`</span>
+- <span id="7bce">`close()` — Closes the current window</span>
+- <span id="ccbf">`confirm()` — Displays a dialogue box with a message and an _OK_ and _Cancel_ button</span>
+- <span id="e6f2">`focus()` — Sets focus to the current window</span>
+- <span id="5eb7">`moveBy()` — Moves a window relative to its current position</span>
+- <span id="16b6">`moveTo()` — Moves a window to a specified position</span>
+- <span id="32d8">`open()` — Opens a new browser window</span>
+- <span id="4198">`print()` — Prints the content of the current window</span>
+- <span id="3bec">`prompt()` — Displays a dialogue box that prompts the visitor for input</span>
+- <span id="e16a">`resizeBy()` — Resizes the window by the specified number of pixels</span>
+- <span id="31c8">`resizeTo()` — Resizes the window to a specified width and height</span>
+- <span id="6c44">`scrollBy()` — Scrolls the document by a specified number of pixels</span>
+- <span id="959f">`scrollTo()` — Scrolls the document to specified coordinates</span>
+- <span id="704a">`setInterval()` — Calls a function or evaluates an expression at specified intervals</span>
+- <span id="87c3">`setTimeout()` — Calls a function or evaluates an expression after a specified interval</span>
+- <span id="1cde">`stop()` — Stops the window from loading</span>
 
 ### Screen Properties
 
--   <span id="7e50">`availHeight` — Returns the height of the screen (excluding the Windows Taskbar)</span>
--   <span id="d7ea">`availWidth` — Returns the width of the screen (excluding the Windows Taskbar)</span>
--   <span id="4feb">`colorDepth` — Returns the bit depth of the color palette for displaying images</span>
--   <span id="f2f7">`height` — The total height of the screen</span>
--   <span id="8e22">`pixelDepth` — The color resolution of the screen in bits per pixel</span>
--   <span id="bc5a">`width` — The total width of the screen</span>
+- <span id="7e50">`availHeight` — Returns the height of the screen (excluding the Windows Taskbar)</span>
+- <span id="d7ea">`availWidth` — Returns the width of the screen (excluding the Windows Taskbar)</span>
+- <span id="4feb">`colorDepth` — Returns the bit depth of the color palette for displaying images</span>
+- <span id="f2f7">`height` — The total height of the screen</span>
+- <span id="8e22">`pixelDepth` — The color resolution of the screen in bits per pixel</span>
+- <span id="bc5a">`width` — The total width of the screen</span>
 
 ### JavaScript Events
 
@@ -723,136 +723,136 @@ Events are things that can happen to HTML elements and are performed by the user
 
 ### Mouse
 
--   <span id="9546">`onclick` — The event occurs when the user clicks on an element</span>
--   <span id="9b50">`oncontextmenu` — User right-clicks on an element to open a context menu</span>
--   <span id="147a">`ondblclick` — The user double-clicks on an element</span>
--   <span id="3720">`onmousedown` — User presses a mouse button over an element</span>
--   <span id="a40a">`onmouseenter` — The pointer moves onto an element</span>
--   <span id="345e">`onmouseleave` — Pointer moves out of an element</span>
--   <span id="79b1">`onmousemove` — The pointer is moving while it is over an element</span>
--   <span id="fa70">`onmouseover` — When the pointer is moved onto an element or one of its children</span>
--   <span id="94f8">`onmouseout` — User moves the mouse pointer out of an element or one of its children</span>
--   <span id="486e">`onmouseup` — The user releases a mouse button while over an element</span>
+- <span id="9546">`onclick` — The event occurs when the user clicks on an element</span>
+- <span id="9b50">`oncontextmenu` — User right-clicks on an element to open a context menu</span>
+- <span id="147a">`ondblclick` — The user double-clicks on an element</span>
+- <span id="3720">`onmousedown` — User presses a mouse button over an element</span>
+- <span id="a40a">`onmouseenter` — The pointer moves onto an element</span>
+- <span id="345e">`onmouseleave` — Pointer moves out of an element</span>
+- <span id="79b1">`onmousemove` — The pointer is moving while it is over an element</span>
+- <span id="fa70">`onmouseover` — When the pointer is moved onto an element or one of its children</span>
+- <span id="94f8">`onmouseout` — User moves the mouse pointer out of an element or one of its children</span>
+- <span id="486e">`onmouseup` — The user releases a mouse button while over an element</span>
 
 ### Keyboard
 
--   <span id="6a8f">`onkeydown` — When the user is pressing a key down</span>
--   <span id="0647">`onkeypress` — The moment the user starts pressing a key</span>
--   <span id="ff0f">`onkeyup` — The user releases a key</span>
+- <span id="6a8f">`onkeydown` — When the user is pressing a key down</span>
+- <span id="0647">`onkeypress` — The moment the user starts pressing a key</span>
+- <span id="ff0f">`onkeyup` — The user releases a key</span>
 
 ### Frame
 
--   <span id="9d29">`onabort` — The loading of a media is aborted</span>
--   <span id="baa4">`onbeforeunload` — Event occurs before the document is about to be unloaded</span>
--   <span id="740e">`onerror` — An error occurs while loading an external file</span>
--   <span id="be95">`onhashchange` — There have been changes to the anchor part of a URL</span>
--   <span id="d0fd">`onload` — When an object has loaded</span>
--   <span id="65e5">`onpagehide` — The user navigates away from a webpage</span>
--   <span id="aae6">`onpageshow` — When the user navigates to a webpage</span>
--   <span id="e3dc">`onresize` — The document view is resized</span>
--   <span id="96c8">`onscroll` — An element's scrollbar is being scrolled</span>
--   <span id="f2fa">`onunload` — Event occurs when a page has unloaded</span>
+- <span id="9d29">`onabort` — The loading of a media is aborted</span>
+- <span id="baa4">`onbeforeunload` — Event occurs before the document is about to be unloaded</span>
+- <span id="740e">`onerror` — An error occurs while loading an external file</span>
+- <span id="be95">`onhashchange` — There have been changes to the anchor part of a URL</span>
+- <span id="d0fd">`onload` — When an object has loaded</span>
+- <span id="65e5">`onpagehide` — The user navigates away from a webpage</span>
+- <span id="aae6">`onpageshow` — When the user navigates to a webpage</span>
+- <span id="e3dc">`onresize` — The document view is resized</span>
+- <span id="96c8">`onscroll` — An element's scrollbar is being scrolled</span>
+- <span id="f2fa">`onunload` — Event occurs when a page has unloaded</span>
 
 ### Form
 
--   <span id="731a">`onblur` — When an element loses focus</span>
--   <span id="facf">`onchange` — The content of a form element changes (for `<input>`, `<select>` and `<textarea>`)</span>
--   <span id="7a0a">`onfocus` — An element gets focus</span>
--   <span id="5188">`onfocusin` — When an element is about to get focus</span>
--   <span id="594a">`onfocusout` — The element is about to lose focus</span>
--   <span id="700e">`oninput` — User input on an element</span>
--   <span id="dd0f">`oninvalid` — An element is invalid</span>
--   <span id="6cad">`onreset` — A form is reset</span>
--   <span id="f4f2">`onsearch` — The user writes something in a search field (for `<input="search">`)</span>
--   <span id="32a9">`onselect` — The user selects some text (for `<input>` and `<textarea>`)</span>
--   <span id="3e1d">`onsubmit` — A form is submitted</span>
+- <span id="731a">`onblur` — When an element loses focus</span>
+- <span id="facf">`onchange` — The content of a form element changes (for `<input>`, `<select>` and `<textarea>`)</span>
+- <span id="7a0a">`onfocus` — An element gets focus</span>
+- <span id="5188">`onfocusin` — When an element is about to get focus</span>
+- <span id="594a">`onfocusout` — The element is about to lose focus</span>
+- <span id="700e">`oninput` — User input on an element</span>
+- <span id="dd0f">`oninvalid` — An element is invalid</span>
+- <span id="6cad">`onreset` — A form is reset</span>
+- <span id="f4f2">`onsearch` — The user writes something in a search field (for `<input="search">`)</span>
+- <span id="32a9">`onselect` — The user selects some text (for `<input>` and `<textarea>`)</span>
+- <span id="3e1d">`onsubmit` — A form is submitted</span>
 
 ### Drag
 
--   <span id="912c">`ondrag` — An element is dragged</span>
--   <span id="6897">`ondragend` — The user has finished dragging the element</span>
--   <span id="8225">`ondragenter` — The dragged element enters a drop target</span>
--   <span id="cf37">`ondragleave` — A dragged element leaves the drop target</span>
--   <span id="5bc3">`ondragover` — The dragged element is on top of the drop target</span>
--   <span id="2b0c">`ondragstart` — User starts to drag an element</span>
--   <span id="8e24">`ondrop` — Dragged element is dropped on the drop target</span>
+- <span id="912c">`ondrag` — An element is dragged</span>
+- <span id="6897">`ondragend` — The user has finished dragging the element</span>
+- <span id="8225">`ondragenter` — The dragged element enters a drop target</span>
+- <span id="cf37">`ondragleave` — A dragged element leaves the drop target</span>
+- <span id="5bc3">`ondragover` — The dragged element is on top of the drop target</span>
+- <span id="2b0c">`ondragstart` — User starts to drag an element</span>
+- <span id="8e24">`ondrop` — Dragged element is dropped on the drop target</span>
 
 ### Clipboard
 
--   <span id="c299">`oncopy` — User copies the content of an element</span>
--   <span id="267c">`oncut` — The user cuts an element's content</span>
--   <span id="e33c">`onpaste` — A user pastes the content in an element</span>
+- <span id="c299">`oncopy` — User copies the content of an element</span>
+- <span id="267c">`oncut` — The user cuts an element's content</span>
+- <span id="e33c">`onpaste` — A user pastes the content in an element</span>
 
 ### Media
 
--   <span id="e0ab">`onabort` — Media loading is aborted</span>
--   <span id="0758">`oncanplay` — The browser can start playing media (e.g. a file has buffered enough)</span>
--   <span id="0bc2">`oncanplaythrough` — The browser can play through media without stopping</span>
--   <span id="4c27">`ondurationchange` — The duration of the media changes</span>
--   <span id="aa9a">`onended` — The media has reached its end</span>
--   <span id="25b8">`onerror` — Happens when an error occurs while loading an external file</span>
--   <span id="cdf4">`onloadeddata` — Media data is loaded</span>
--   <span id="edce">`onloadedmetadata` — Metadata (like dimensions and duration) are loaded</span>
--   <span id="7928">`onloadstart` — The browser starts looking for specified media</span>
--   <span id="159c">`onpause` — Media is paused either by the user or automatically</span>
--   <span id="057f">`onplay` — The media has been started or is no longer paused</span>
--   <span id="ce2a">`onplaying` — Media is playing after having been paused or stopped for buffering</span>
--   <span id="2655">`onprogress` — The browser is in the process of downloading the media</span>
--   <span id="a11c">`onratechange` — The playing speed of the media changes</span>
--   <span id="f8bb">`onseeked` — User is finished moving/skipping to a new position in the media</span>
--   <span id="9895">`onseeking` — The user starts moving/skipping</span>
--   <span id="c636">`onstalled` — The browser is trying to load the media but it is not available</span>
--   <span id="6480">`onsuspend` — The browser is intentionally not loading media</span>
--   <span id="f94b">`ontimeupdate` — The playing position has changed (e.g. because of fast forward)</span>
--   <span id="e96b">`onvolumechange` — Media volume has changed (including mute)</span>
--   <span id="9fe8">`onwaiting` — Media paused but expected to resume (for example, buffering)</span>
+- <span id="e0ab">`onabort` — Media loading is aborted</span>
+- <span id="0758">`oncanplay` — The browser can start playing media (e.g. a file has buffered enough)</span>
+- <span id="0bc2">`oncanplaythrough` — The browser can play through media without stopping</span>
+- <span id="4c27">`ondurationchange` — The duration of the media changes</span>
+- <span id="aa9a">`onended` — The media has reached its end</span>
+- <span id="25b8">`onerror` — Happens when an error occurs while loading an external file</span>
+- <span id="cdf4">`onloadeddata` — Media data is loaded</span>
+- <span id="edce">`onloadedmetadata` — Metadata (like dimensions and duration) are loaded</span>
+- <span id="7928">`onloadstart` — The browser starts looking for specified media</span>
+- <span id="159c">`onpause` — Media is paused either by the user or automatically</span>
+- <span id="057f">`onplay` — The media has been started or is no longer paused</span>
+- <span id="ce2a">`onplaying` — Media is playing after having been paused or stopped for buffering</span>
+- <span id="2655">`onprogress` — The browser is in the process of downloading the media</span>
+- <span id="a11c">`onratechange` — The playing speed of the media changes</span>
+- <span id="f8bb">`onseeked` — User is finished moving/skipping to a new position in the media</span>
+- <span id="9895">`onseeking` — The user starts moving/skipping</span>
+- <span id="c636">`onstalled` — The browser is trying to load the media but it is not available</span>
+- <span id="6480">`onsuspend` — The browser is intentionally not loading media</span>
+- <span id="f94b">`ontimeupdate` — The playing position has changed (e.g. because of fast forward)</span>
+- <span id="e96b">`onvolumechange` — Media volume has changed (including mute)</span>
+- <span id="9fe8">`onwaiting` — Media paused but expected to resume (for example, buffering)</span>
 
 ### Animation
 
--   <span id="4497">`animationend` — A CSS animation is complete</span>
--   <span id="fc16">`animationiteration` — CSS animation is repeated</span>
--   <span id="0f40">`animationstart` — CSS animation has started</span>
+- <span id="4497">`animationend` — A CSS animation is complete</span>
+- <span id="fc16">`animationiteration` — CSS animation is repeated</span>
+- <span id="0f40">`animationstart` — CSS animation has started</span>
 
 ### Other
 
--   <span id="614b">`transitionend` — Fired when a CSS transition has completed</span>
--   <span id="5a40">`onmessage` — A message is received through the event source</span>
--   <span id="0dad">`onoffline` — The browser starts to work offline</span>
--   <span id="058e">`ononline` — The browser starts to work online</span>
--   <span id="090a">`onpopstate` — When the window's history changes</span>
--   <span id="d940">`onshow` — A `<menu>` element is shown as a context menu</span>
--   <span id="3062">`onstorage` — A Web Storage area is updated</span>
--   <span id="2681">`ontoggle` — The user opens or closes the `<details>` element</span>
--   <span id="6a40">`onwheel` — Mouse wheel rolls up or down over an element</span>
--   <span id="7178">`ontouchcancel` — Screen-touch is interrupted</span>
--   <span id="bec5">`ontouchend` — User's finger is removed from a touch-screen</span>
--   <span id="3b60">`ontouchmove` — A finger is dragged across the screen</span>
--   <span id="3c0e">`ontouchstart` — A finger is placed on the touch-screen</span>
+- <span id="614b">`transitionend` — Fired when a CSS transition has completed</span>
+- <span id="5a40">`onmessage` — A message is received through the event source</span>
+- <span id="0dad">`onoffline` — The browser starts to work offline</span>
+- <span id="058e">`ononline` — The browser starts to work online</span>
+- <span id="090a">`onpopstate` — When the window's history changes</span>
+- <span id="d940">`onshow` — A `<menu>` element is shown as a context menu</span>
+- <span id="3062">`onstorage` — A Web Storage area is updated</span>
+- <span id="2681">`ontoggle` — The user opens or closes the `<details>` element</span>
+- <span id="6a40">`onwheel` — Mouse wheel rolls up or down over an element</span>
+- <span id="7178">`ontouchcancel` — Screen-touch is interrupted</span>
+- <span id="bec5">`ontouchend` — User's finger is removed from a touch-screen</span>
+- <span id="3b60">`ontouchmove` — A finger is dragged across the screen</span>
+- <span id="3c0e">`ontouchstart` — A finger is placed on the touch-screen</span>
 
 ### Errors
 
 When working with JavaScript, different errors can occur. There are several ways of handling them:
 
--   <span id="54c9">`try` — Lets you define a block of code to test for errors</span>
--   <span id="cb14">`catch` — Set up a block of code to execute in case of an error</span>
--   <span id="6a5b">`throw` — Create custom error messages instead of the standard JavaScript errors</span>
--   <span id="6aea">`finally` — Lets you execute code, after try and catch, regardless of the result</span>
+- <span id="54c9">`try` — Lets you define a block of code to test for errors</span>
+- <span id="cb14">`catch` — Set up a block of code to execute in case of an error</span>
+- <span id="6a5b">`throw` — Create custom error messages instead of the standard JavaScript errors</span>
+- <span id="6aea">`finally` — Lets you execute code, after try and catch, regardless of the result</span>
 
 ### Error Name Values
 
 JavaScript also has a built-in error object. It has two properties:
 
--   <span id="ca3b">`name` — Sets or returns the error name</span>
--   <span id="7047">`message` — Sets or returns an error message in a string from</span>
+- <span id="ca3b">`name` — Sets or returns the error name</span>
+- <span id="7047">`message` — Sets or returns an error message in a string from</span>
 
 The error property can return six different values as its name:
 
--   <span id="b389">`EvalError` — An error has occurred in the `eval()` function</span>
--   <span id="570c">`RangeError` — A number is "out of range"</span>
--   <span id="2352">`ReferenceError` — An illegal reference has occurred</span>
--   <span id="5019">`SyntaxError` — A syntax error has occurred</span>
--   <span id="0527">`TypeError` — A type error has occurred</span>
--   <span id="02a3">`URIError` — An `encodeURI()` error has occurred</span>
+- <span id="b389">`EvalError` — An error has occurred in the `eval()` function</span>
+- <span id="570c">`RangeError` — A number is "out of range"</span>
+- <span id="2352">`ReferenceError` — An illegal reference has occurred</span>
+- <span id="5019">`SyntaxError` — A syntax error has occurred</span>
+- <span id="0527">`TypeError` — A type error has occurred</span>
+- <span id="02a3">`URIError` — An `encodeURI()` error has occurred</span>
 
 ### Explicit Conversions
 
@@ -5674,8 +5674,10 @@ both examples will only work if they are within functions declared async; a `for
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
+
+
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 8, 2021](https://medium.com/p/64306cd6b0db).
 
 <a href="https://medium.com/@bryanguner/complete-javascript-reference-guide-64306cd6b0db" class="p-canonical">Canonical link</a>
 
-on September 23, 2021.
+ on September 23, 2021.
