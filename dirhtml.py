@@ -14,10 +14,10 @@ import sys
 from pathlib import Path
 from urllib.parse import quote
 
-DEFAULT_OUTPUT_FILE = 'sitemap.html'
+DEFAULT_OUTPUT_FILE = 'nav-index.html'
 
 
-def process_dir(top_dir, opts):
+def process_dir(top_dir, opts):  # sourcery skip: low-code-quality
     glob_patt = opts.filter or '*'
 
     path_top_dir: Path
@@ -32,7 +32,7 @@ def process_dir(top_dir, opts):
     try:
         index_file = open(index_path, 'w')
     except Exception as e:
-        print('cannot create file %s %s' % (index_path, e))
+        print(f'cannot create file {index_path} {e}')
         return
 
     index_file.write("""<!DOCTYPE html>
@@ -200,7 +200,7 @@ def process_dir(top_dir, opts):
         }
     }
     </style>
-</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"><link rel="stylesheet" href="./medium.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><style></style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="0" width="0" style="position: absolute;">
     <defs>
@@ -269,12 +269,13 @@ def process_dir(top_dir, opts):
                  """)
 
     # sort dirs first
-    sorted_entries = sorted(path_top_dir.glob(glob_patt), key=lambda p: (p.is_file(), p.name))
+    sorted_entries = sorted(path_top_dir.glob(
+        glob_patt), key=lambda p: (p.is_file(), p.name))
 
     entry: Path
     for entry in sorted_entries:
 
-        # don't include sitemap.html in the file listing
+        # don't include index.html in the file listing
         if entry.name.lower() == opts.output_file.lower():
             continue
 
@@ -283,12 +284,13 @@ def process_dir(top_dir, opts):
 
         # From Python 3.6, os.access() accepts path-like objects
         if (not entry.is_symlink()) and not os.access(str(entry), os.W_OK):
-            print(f"*** WARNING *** entry {entry.absolute()} is not writable! SKIPPING!")
+            print(
+                f"*** WARNING *** entry {entry.absolute()} is not writable! SKIPPING!")
             continue
         if opts.verbose:
             print(f'{entry.absolute()}')
 
-        size_bytes = -1  ## is a folder
+        size_bytes = -1  # is a folder
         size_pretty = '&mdash;'
         last_modified = '-'
         last_modified_human_readable = '-'
@@ -299,7 +301,8 @@ def process_dir(top_dir, opts):
                 size_pretty = pretty_size(size_bytes)
 
             if entry.is_dir() or entry.is_file():
-                last_modified = datetime.datetime.fromtimestamp(entry.stat().st_mtime).replace(microsecond=0)
+                last_modified = datetime.datetime.fromtimestamp(
+                    entry.stat().st_mtime).replace(microsecond=0)
                 last_modified_iso = last_modified.isoformat()
                 last_modified_human_readable = last_modified.strftime("%c")
 
@@ -374,10 +377,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 
     if isinstance(suffix, tuple):
         singular, multiple = suffix
-        if amount == 1:
-            suffix = singular
-        else:
-            suffix = multiple
+        suffix = singular if amount == 1 else multiple
     return str(amount) + suffix
 
 
