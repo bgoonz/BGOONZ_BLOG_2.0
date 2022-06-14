@@ -389,7 +389,7 @@ Arguments can be Positional args or Flags
 
   Additionally, flags can either be:
 
-  - _Required_
+  - *Required*
   - *Optional:* in which case, the default value is used, if the flag is not defined
 
 ### Global flags
