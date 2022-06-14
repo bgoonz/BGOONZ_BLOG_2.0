@@ -18,8 +18,11 @@ related_posts:
   - src/pages/blog/beginners-guide-to-python.md
 cmseditable: true
 ---
-Python setup guide
----
+
+
+
+# Python setup guide
+
 
 
 1. Download latest python from https://www.python.org/downloads
