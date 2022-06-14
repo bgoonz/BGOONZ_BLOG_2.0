@@ -2,6 +2,7 @@
 title: The Complete JavaScript Reference Guide
 template: docs
 ---
+
 # The Complete JavaScript Reference Guide
 
 You will want to bookmark this
