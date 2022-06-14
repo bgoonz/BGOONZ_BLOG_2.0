@@ -1,0 +1,61 @@
+# Configuration file for NetlifyCMS visual editor
+# It's here used only for blog posts and docs pages, to ease edits from external contributors
+# for all options, see https://www.netlifycms.org/docs/configuration-options/
+
+publish_mode: editorial_workflow # do not commit directly, fork to a branch first and create a pull request, this is necessary for the open_authoring option
+
+backend:
+    name: github # external contributions open_authoring option requires the use of github, it does not work with git-gateway (and hence other git platforms) yet (although there are alternatives through Netlify Identity): https://www.netlifycms.org/docs/open-authoring/
+    repo: bgoonz/BGOONZ_BLOG_2.0 # EDIT ME: path to the online repository to allow for external contributions, please update this to point to your repo
+    branch: master
+    open_authoring: true # allow external contributors without having to first give them access to the repository, their edits will be made on their own github repository and create a pull request automatically through the UI
+
+media_folder: /static/images/uploads # where media files such as images will be stored
+public_folder: /images/uploads # url to media files when deployed
+
+show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
+
+# site_url: https://your-site.com  # edit and uncomment this line to enable previews
+# display_url: https://your-site.com
+# logo_url: https://your-site.com/images/logo.svg  # custom logo
+# locale: 'en'  # UI language
+
+collections:
+    - name: docs
+      label: Docs
+      folder: src/pages/docs
+      create: true
+      #path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
+      slug: '{{title}}/index'
+      preview_path: '{{slug}}'
+      #extension: md
+      media_folder: '{{media_folder}}/docs'
+      # adding a nested object will show the collection folder structure, see https://www.netlifycms.org/docs/beta-features/#nested-collections and https://github.com/netlify/netlify-cms/issues/4741#issuecomment-748627801
+      summary: '{{title}} (last modified {{commit_date}})' # text displayed as the name of each entry in the UI listing
+      nested:
+          depth: 100 # max depth to show in the collection tree
+          #summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+      fields:
+          - { name: title, label: Title, widget: string }
+          - { name: template, label: Template, widget: hidden, default: 'docs' }
+          - { name: excerpt, label: Excerpt, widget: string, required: false, hint: A short description of this page }
+          - { name: body, label: Body, widget: markdown }
+      # adding a meta object with a path property allows editing the path of entries
+      # moving an existing entry will move the entire sub tree of the entry to the new location
+      meta: { path: { widget: parent, label: 'Parent', index_file: 'index' } } # use a widget type parent to get a dropdown selector for the path instead of a string https://github.com/netlify-labs/netlify-cms-widget-parent/blob/main/example/config.yml
+    - name: blog # used in routes, e.g., /admin/collections/blog
+      label: Blog # used in the UI
+      folder: src/pages/blog # relative url where the editable documents are stored
+      create: true # allow users to create new documents in this collection
+      slug: '{{title}}' # filename template, the adequate file extension (e.g., .md) will be automatically added
+      preview_path: 'src/pages/blog/preview/{{title}}'
+      extension: md
+      media_folder: '{{media_folder}}/blog'
+      summary: '{{title}} published by {{commit_author}} ({{commit_date}})'
+      filter: { field: 'cmseditable', value: true } # filter out blog/index.md, the homepage of blog posts, we don't want people to edit that
+      fields: # fields for each document, usually in front matter, default type is string
+          - { name: title, label: Title, widget: string }
+          - { name: template, label: Template, widget: hidden, default: 'post' }
+          - { name: subtitle, label: Subtitle, widget: string, required: false }
+          - { name: excerpt, label: Excerpt, widget: string, required: false }
+       

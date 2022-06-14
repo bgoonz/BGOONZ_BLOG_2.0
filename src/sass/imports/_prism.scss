@@ -125,6 +125,7 @@ div.code-toolbar > .toolbar button {
     line-height: normal;
     overflow: visible;
     padding: 0;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -134,7 +135,7 @@ div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
     background: $gray-600;
-    color: $gray-300 !important;
+    color: $gray-300;
     display: block;
     font-size: 0.75em;
     line-height: 1.5;

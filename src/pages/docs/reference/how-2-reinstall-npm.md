@@ -1,14 +1,15 @@
 ---
 title: How To Reinstall NPM and Node.js On Your System
 weight: 0
-excerpt: lorem-ipsum
+excerpt: How To Reinstall NPM and Node.js On Your System
 seo:
-    title: ''
-    description: ''
+    title: 'How To Reinstall NPM and Node.js On Your System'
+    description: 'How To Reinstall NPM and Node.js On Your System'
     robots: []
     extra: []
 template: docs
 ---
+
 
 The Node Package Manager (usually shortened to npm) and Node.js are popular technologies among JavaScript developers. npm is the default package management utility that is installed automatically on your machine when you download and install Node.js.
 
@@ -202,7 +203,7 @@ After completing the reinstallation, you'll avoid any performance issues that of
 
 \---
 
-Node.js is a popular open-source, cross-platform server-side environment for building robust applications. Since a vibrant community of contributors backs it, the platform is continuously updated to introduce new features, security patches, and other performance improvements.    node –version   node -v  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash  command -v nvm  nvm install node  nvm install –lts  nvm install \<version-number>  nvm install 12.18.3  nvm use 12.18.3  nvm lsnvm ls-remotenpm install -g nn \<version-number>n 12.18.3    nn ltsn latestnvm install \<version-number>nvm install 12.18.3nvm use 12.18.3nvm install latestnvm listnvm list availablewget https://nodejs.org/dist/v12.18.3/node-v12.18.3-linux-x64.tar.xzsudo apt-get install xz-utilstar -C /usr/local -strip-components 1 -xJf node-v12.18.3-linux-x64.tar.xzbrew install nodebrew update #ensure Homebrew is up to date firstbrew upgrade nodebrew switch node 12.18.3
+Node.js is a popular open-source, cross-platform server-side environment for building robust applications. Since a vibrant community of contributors backs it, the platform is continuously updated to introduce new features, security patches, and other performance improvements. node -version node -v wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash command -v nvm nvm install node nvm install -lts nvm install \<version-number> nvm install 12.18.3 nvm use 12.18.3 nvm lsnvm ls-remotenpm install -g nn \<version-number>n 12.18.3 nn ltsn latestnvm install \<version-number>nvm install 12.18.3nvm use 12.18.3nvm install latestnvm listnvm list availablewget https://nodejs.org/dist/v12.18.3/node-v12.18.3-linux-x64.tar.xzsudo apt-get install xz-utilstar -C /usr/local -strip-components 1 -xJf node-v12.18.3-linux-x64.tar.xzbrew install nodebrew update #ensure Homebrew is up to date firstbrew upgrade nodebrew switch node 12.18.3
 
 So, updating to the latest Node.js version can help you to make the most of the technology. You can decide to work with the Long-term Supported (LTS) version or the Current version that comes with the latest features.
 
@@ -362,7 +363,7 @@ You can follow the following steps to update it using this method:
 
 -   On the Node.js download page, select either the LTS version or the latest current version.
 
-![](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-mac-windows.png)
+![node-js-mac-windows.png](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-mac-windows.png)
 
 -   Depending on your system, click either the Windows Installer option or the macOS installer option.
 

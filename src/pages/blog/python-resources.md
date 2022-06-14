@@ -33,9 +33,12 @@ thumb_image: images/superb-amaranth.png
 thumb_image_alt: python logo
 ---
 
-# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+# Beginners Guide To Python
 
-<iframe src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+
+
+[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
@@ -50,7 +53,7 @@ Article on basic web development setup… it is geared towards web but VSCode is
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
 -   the high-level data types allow you to express complex operations in a single statement;
-
+-
 -   statement grouping is done by indentation instead of beginning and ending brackets;
 
 -   no variable or argument declarations are necessary.
@@ -69,7 +72,7 @@ To determine if your Windows computer already has Python 3:
 
 python --version
 
-1.  Running python --version may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
+1.  Running python --version may not return a value, or may return an error message stating _'python' is not recognized as an internal or external command, operable program or batch file._ This indicates Python is not installed on your Windows system.
 
 2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed.
 
@@ -113,9 +116,9 @@ Python syntax was made for readability, and easy editing. For example, the pytho
 
 ### First Program
 
-Lets create a [python 3](https://repl.it/languages/python3) repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
+Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
-> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
+> _Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -137,7 +140,7 @@ If you have a huge comment, do **not** comment all the 350 lines, just put ''' b
 
 Unlike many other languages, there is no var, let, or const to declare a variable in python. You simply go name = 'value'.
 
-Remember, there is a difference between integers and strings. *Remember: String = "".* To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
+Remember, there is a difference between integers and strings. _Remember: String = ""._ To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
 
 <https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com>
 
@@ -148,9 +151,9 @@ Instead of using the , in the print function, you can put a + to combine the var
 There are many operators in python:
 
 -   \+
-
+-
 -   \-
-
+-
 -   /
 
 -   \*
@@ -189,11 +192,11 @@ The first number stands for how far in you go from the front, and the second sta
 Here is a list of functions/methods we will go over:
 
 -   .strip()
-
+-
 -   len()
-
+-
 -   .lower()
-
+-
 -   .upper()
 
 -   .replace()
