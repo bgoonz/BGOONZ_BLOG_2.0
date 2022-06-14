@@ -159,7 +159,7 @@ You can also embed plain HTML markup into the page if you like. For example, if 
 </i> Refresh Page
 
 This text can be embedded into Markdown:
-Refresh Page
+ Refresh Page
 
 ### Unordered Lists
 
