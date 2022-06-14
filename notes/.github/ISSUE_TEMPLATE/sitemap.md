@@ -1,0 +1,4 @@
+ISSUE\_TEMPLATE
+===============
+
+<table><thead><tr class="header"><th></th><th>Name</th><th>Size</th><th>Modified</th><th></th></tr></thead><tbody><tr class="odd"><td></td><td><span class="goup">..</span></td><td>—</td><td>—</td><td></td></tr><tr class="even"><td></td><td><span class="name">bug_report.md</span></td><td>843 bytes</td><td>Sat Oct 16 05:41:27 2021</td><td></td></tr><tr class="odd"><td></td><td><span class="name">custom.md</span></td><td>123 bytes</td><td>Sat Oct 16 05:41:27 2021</td><td></td></tr><tr class="even"><td></td><td><span class="name">feature_request.md</span></td><td>594 bytes</td><td>Sat Oct 16 05:41:27 2021</td><td></td></tr></tbody></table>
