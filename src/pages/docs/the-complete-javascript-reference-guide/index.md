@@ -102,7 +102,7 @@ JS evaluates more complex expressions using the general math order of operations
 
 **Modulo** : Very useful operation to check divisibility of numbers, check for even & odd, whether a number is prime, and much more! _(Discrete Math concept, circular problems can be solved with modulo)_
 
--   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.  
+-   <span id="cf5b">Whenever you have a smaller number % a larger number, the answer will just be the initial small number.
      console.log(7 % 10) // =&gt; 7;</span>
 
 **The String Data Type**
@@ -110,23 +110,23 @@ JS evaluates more complex expressions using the general math order of operations
 The **string** data type is a primitive data type that used to represent textual data.
 
 -   <span id="e1b0">can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.</span>
--   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
+-   <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.
      "That's a great string"; (valid)
     ‘Shakespeare wrote, "To be or not to be"'; (valid)
     ‘That's a bad string'; (invalid)</span>
--   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
+-   <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.
      \`This is a temp'l'ate literal ${function}\` // use ${} to invoke functions within.</span>
 -   <span id="7b1a">**.length** : property that can be appended to data to return the length.</span>
 -   <span id="f633">empty strings have a length of zero.</span>
--   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].  
-     console.log("bootcamp"\[0\]); // =&gt; "b"  
-     console.log("bootcamp"\[10\]); // =&gt; "undefined"  
-     console.log("boots"\[1 \* 2\]); // =&gt; "o"  
+-   <span id="0a07">**indices** : indexes of data that begin at 0, can call upon index by using the bracket notation \[ \].
+     console.log("bootcamp"\[0\]); // =&gt; "b"
+     console.log("bootcamp"\[10\]); // =&gt; "undefined"
+     console.log("boots"\[1 \* 2\]); // =&gt; "o"
      console.log("boots"\["boot".length-1\]); // =&gt; "t"</span>
 -   <span id="6482">we can pass expressions through the brackets as well since JS always evaluates expressions first.</span>
 -   <span id="e2f5">The index of the last character of a string is always one less than it's length.</span>
--   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.  
-     console.log("bagel".indexOf("b")); // =&gt; 0  
+-   <span id="2271">**indexOf()** : method used to find the first index of a given character within a string.
+     console.log("bagel".indexOf("b")); // =&gt; 0
      console.log("bagel".indexOf("z")); // =&gt; -1</span>
 -   <span id="8d68">if the character inside the indexOf() search does not exist in the string, the output will be -1.</span>
 -   <span id="d15e">the indexOf() search will return the first instanced index of the the char in the string.</span>
@@ -137,11 +137,11 @@ The **string** data type is a primitive data type that used to represent textual
 The **Boolean** data type is the simplest data type since there are only two values: **true** and **false**.
 
 -   <span id="60da">**Logical Operators** (B*oolean Operators*) are used to establish logic in our code.</span>
--   <span id="139b">**!** (not) : reverses a Boolean value.  
-     console.log(!true); // =&gt; false  
+-   <span id="139b">**!** (not) : reverses a Boolean value.
+     console.log(!true); // =&gt; false
      console.log(!!false); // =&gt; false</span>
 -   <span id="e412">**Logical Order of Operations** : JS will evaluate !, then &&, then ||.</span>
--   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.  
+-   <span id="99ad">**Short-Circuit Evaluation** : Because JS evalutes from left to right, expressions can "short-circuit". For example if we have true on the left of an || logical comparison, it will stop evaluating and yield true instead of wasting resources on processing the rest of the statement.
      console.log(true || !false) // =&gt; stops after it sees "true ||"</span>
 
 **Comparison Operators**
@@ -175,22 +175,22 @@ Loose Equality, will return true even if the values are of a different type, due
 
 Variables are used to store information to be referenced and manipulated in a program.
 
--   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).  
-     let bootcamp = "App Academy";  
+-   <span id="c73d">We initialize a variable by using the **let** keyword and a **=** single equals sign (assignment operator).
+     let bootcamp = "App Academy";
      console.log(bootcamp); // "App Academy"</span>
 -   <span id="7849">JS variable names can contain any alphanumeric characters, underscores, or dollar signs (cannot being with a number).</span>
--   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.  
-     let bootcamp;  
+-   <span id="ad76">If you do not declare a value for a variable, undefined is automatically set.
+     let bootcamp;
      console.log(bootcamp); // undefined</span>
 -   <span id="2188">We can change the value of a previously declared variable (let, not const) by re-assigning it another value.</span>
 -   <span id="47ca">**let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope</span>
 
 **Assignment Shorthand**
 
-let num = 0;  
- num += 10; // same as num = num + 10  
- num -= 2; // same as num = num — 2  
- num /= 4; // same as num = num / 4  
+let num = 0;
+ num += 10; // same as num = num + 10
+ num -= 2; // same as num = num — 2
+ num /= 4; // same as num = num / 4
  num \*= 7; // same as num = num \* 7
 
 -   <span id="9c05">In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.</span>
@@ -1369,9 +1369,9 @@ Literal
 
 `new`
 
-`let o = new Object(); `  
- `let a = new Array(); `  
- `let d = new Date(); `  
+`let o = new Object(); `
+ `let a = new Array(); `
+ `let d = new Date(); `
  `let r = new Map();`
 
 `Object.create`
@@ -1600,12 +1600,12 @@ s == "\[object Object\]"
 
 ←&gt;
 
-`let x = 1, y = 2;`  
+`let x = 1, y = 2;`
  `let o = { x, y };`
 
 ### Computer Property Names
 
-`const PROPERTY_NAME = "p1";`  
+`const PROPERTY_NAME = "p1";`
  `function computePropertyName() { return "p" + 2; }`
 
     let o = {};
@@ -1644,9 +1644,9 @@ The point of Symbols is not security, but to define a safe extension mechanism f
 
 You can copy the properties of an existing object into a new object using the "spread operator" … inside an object literal:
 
-`let position = { x: 0, y: 0 };`  
- `let dimensions = { width: 100, height: 75 };`  
- `let rect = { ...position, ...dimensions };`  
+`let position = { x: 0, y: 0 };`
+ `let dimensions = { width: 100, height: 75 };`
+ `let rect = { ...position, ...dimensions };`
  `rect.x + rect.y + rect.width + rect.height`
 
 ### Shorthand Methods
@@ -1753,7 +1753,7 @@ Array literal syntax allows an optional trailing comma, so `[,,]` has a length o
 
 create a copy of an array — modifying the copy does not change the original
 
-`let original = [1,2,3];`  
+`let original = [1,2,3];`
  `let copy = [...original];`
 
 `let digits = [..."0123456789ABCDEF"];`
@@ -1980,15 +1980,15 @@ FOREACH()
 
 MAP()
 
-`let a = [1, 2, 3];`  
+`let a = [1, 2, 3];`
  `a.map(x => x*x)`
 
 \[1, 4, 9\]
 
 FILTER()
 
-`let a = [5, 4, 3, 2, 1];`  
- `a.filter(x => x < 3) `  
+`let a = [5, 4, 3, 2, 1];`
+ `a.filter(x => x < 3) `
  `a.filter((x,i) => i % 2 === 0)`
 
 \[2, 1\];
@@ -2093,7 +2093,7 @@ When you invoke `reduce()` with no initial value, it uses the first element of t
 
 \[1, 2, 3, 4\]
 
-`let phrases = ["hello world", "the definitive guide"];`  
+`let phrases = ["hello world", "the definitive guide"];`
  `let words = phrases.flatMap(phrase => phrase.split(" "));`
 
 \["hello", "world", "the", "definitive", "guide"\];
@@ -2226,7 +2226,7 @@ Unlike `concat(), splice()` inserts arrays themselves, not the elements of those
 
 ### Array Searching and Sorting Methods
 
-INDEXOF()  
+INDEXOF()
  LASTINDEXOF()
 
 `let a = [0,1,2,1,0];`
@@ -2277,7 +2277,7 @@ Case-insensitive sort
 
 REVERSE()
 
-`let a = [1,2,3];`  
+`let a = [1,2,3];`
  `a.reverse();`
 
 \[3,2,1\]
@@ -3614,8 +3614,8 @@ We don't want to inherit `Range.prototype.constructor`, so we define our own con
 
 `Span` overrides the `toString()` method
 
-`Span.prototype.toString = function() {`  
- `` return `(${this.from}... +${this.to - this.from})`; ``  
+`Span.prototype.toString = function() {`
+ `` return `(${this.from}... +${this.to - this.from})`; ``
  `};`
 
 A robust subclassing mechanism needs to allow classes to invoke the methods and constructor of their superclass, but prior to ES6, JavaScript did not have a simple way to do these things.
@@ -3934,7 +3934,7 @@ Iterate over map:
 
 Map class iterates in insertion order
 
-If you want to iterate just the keys or just the associated values of a map, use the `keys()` and `values()` methods: these return iterable objects that iterate keys and values, in insertion order. (The  
+If you want to iterate just the keys or just the associated values of a map, use the `keys()` and `values()` methods: these return iterable objects that iterate keys and values, in insertion order. (The
  `entries()` method returns an iterable object that iterates key/value pairs, but this is exactly the same as iterating the map directly.)
 
     [...m.keys()]
@@ -4217,7 +4217,7 @@ A related use of parenthesized subexpressions is to allow you to refer back to a
 
 **Pattern**
 
-zero or more characters within single or double quotes. However, it does not  
+zero or more characters within single or double quotes. However, it does not
  require the opening and closing quotes to match
 
     /['"][^'"]*['"]/
@@ -4470,7 +4470,7 @@ The `RegExp()` constructor is useful when a regular expression is being dynamica
 
     let zipcode = new RegExp("\\d{5}", "g");
 
-`let exactMatch = /JavaScript/;`  
+`let exactMatch = /JavaScript/;`
  `let caseInsensitive = new RegExp(exactMatch, "i");`
 
 ### TEST()
@@ -4595,7 +4595,7 @@ The static Date.now() method returns the current time as a timestamp and is help
 
 adds three months and two weeks to the current date:
 
-`let d = new Date();`  
+`let d = new Date();`
  `d.setMonth(d.getMonth() + 3, d.getDate() + 14);`
 
 ### Formatting and Parsing Date Strings
@@ -4880,7 +4880,7 @@ The iterator method of an iterable object does not have a conventional name but 
 
 When you want to iterate though a "partially used" iterator:
 
-`let list = [1,2,3,4,5];`  
+`let list = [1,2,3,4,5];`
  `let iter = list[Symbol.iterator]();`
 
 `let head = iter.next().value;`
@@ -5529,7 +5529,7 @@ it is also perfectly valid to use `.catch()` elsewhere in a Promise chain. If on
 
 If the callback returns normally, then the `.catch()` callback will be skipped, and the return value of the previous callback will become the input to the next .`then()` callback.
 
-Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and  
+Once an error has been passed to a `.catch()` callback, it stops propagating down the Promise chain. A `.catch()` callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and
  the error stops propagating.
 
 Sometimes, in complex network environments, errors can occur more or less at random, and it can be appropriate to handle those errors by simply retrying the asynchronous request.
@@ -5558,7 +5558,7 @@ The returned Promise will be rejected if any of the input Promises are rejected.
 
     .catch(e => console.error(e));
 
-The Promise returned by `Promise.all()` rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, `Promise.allSettled()` takes an array of input  
+The Promise returned by `Promise.all()` rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, `Promise.allSettled()` takes an array of input
  Promises and returns a Promise, just like Promise.all() does. But `Promise.allSettled()` never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to "fulfilled" or "rejected." If the status is "fulfilled", then the object will also have a value property that gives the fulfillment value. And if the status is "rejected", then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.
 
     Promise.allSettled([Promise.resolve(1), Promise.reject(2),3]).then(results => {
