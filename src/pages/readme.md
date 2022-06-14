@@ -103,9 +103,9 @@ Icons, photos and illustrations.
 
 [Image Provider](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+## [Lorem Ipsum](https://trends.builtwith.com/widgets/)
 
-[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
