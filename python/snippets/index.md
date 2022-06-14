@@ -1,258 +1,273 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Python Snippets
-===============
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Python Snippets
-===============
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-------------------------------------------------------------------------
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-------------------------------------------------------------------------
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Python Snippets
+
+# Python Snippets
+
+---
+
+---
 
 ### Calculates the date of `n` days from the given date.
 
--   Use `datetime.timedelta` and the `+` operator to calculate the new `datetime.datetime` value after adding `n` days to `d`.
--   Omit the second argument, `d`, to use a default value of `datetime.today()`.
+- Use `datetime.timedelta` and the `+` operator to calculate the new `datetime.datetime` value after adding `n` days to `d`.
+- Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
 <!-- -->
 
@@ -266,13 +281,13 @@ Python Snippets
     add_days(5, date(2020, 10, 25)) # date(2020, 10, 30)
     add_days(-5, date(2020, 10, 25)) # date(2020, 10, 20)
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if all elements in a list are equal.
 
--   Use `set()` to eliminate duplicate elements and then use `len()` to check if length is `1`.
+- Use `set()` to eliminate duplicate elements and then use `len()` to check if length is `1`.
 
 <!-- -->
 
@@ -282,14 +297,14 @@ Python Snippets
     all_equal([1, 2, 3, 4, 5, 6]) # False
     all_equal([1, 1, 1, 1]) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if all the values in a list are unique.
 
--   Use `set()` on the given list to keep only unique occurrences.
--   Use `len()` to compare the length of the unique values to the original list.
+- Use `set()` on the given list to keep only unique occurrences.
+- Use `len()` to compare the length of the unique values to the original list.
 
 <!-- -->
 
@@ -301,13 +316,13 @@ Python Snippets
     all_unique(x) # True
     all_unique(y) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Generates a list of numbers in the arithmetic progression starting with the given positive integer and up to the specified limit.
 
--   Use `range()` and `list()` with the appropriate start, step and end values.
+- Use `range()` and `list()` with the appropriate start, step and end values.
 
 <!-- -->
 
@@ -316,13 +331,13 @@ Python Snippets
 
     arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the average of two or more numbers.
 
--   Use `sum()` to sum all of the `args` provided, divide by `len()`.
+- Use `sum()` to sum all of the `args` provided, divide by `len()`.
 
 <!-- -->
 
@@ -332,15 +347,15 @@ Python Snippets
     average(*[1, 2, 3]) # 2.0
     average(1, 2, 3) # 2.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the average of a list, after mapping each element to a value using the provided function.
 
--   Use `map()` to map each element to the value returned by `fn`.
--   Use `sum()` to sum all of the mapped values, divide by `len(lst)`.
--   Omit the last argument, `fn`, to use the default identity function.
+- Use `map()` to map each element to the value returned by `fn`.
+- Use `sum()` to sum all of the mapped values, divide by `len(lst)`.
+- Omit the last argument, `fn`, to use the default identity function.
 
 <!-- -->
 
@@ -350,14 +365,14 @@ Python Snippets
     average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n'])
     # 5.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Splits values into two groups, based on the result of the given `filter` list.
 
--   Use a list comprehension and `zip()` to add elements to groups, based on `filter`.
--   If `filter` has a truthy value for any element, add it to the first group, otherwise add it to the second group.
+- Use a list comprehension and `zip()` to add elements to groups, based on `filter`.
+- If `filter` has a truthy value for any element, add it to the first group, otherwise add it to the second group.
 
 <!-- -->
 
@@ -370,14 +385,14 @@ Python Snippets
     bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
     # [ ['beep', 'boop', 'bar'], ['foo'] ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Splits values into two groups, based on the result of the given filtering function.
 
--   Use a list comprehension to add elements to groups, based on the value returned by `fn` for each element.
--   If `fn` returns a truthy value for any element, add it to the first group, otherwise add it to the second group.
+- Use a list comprehension to add elements to groups, based on the value returned by `fn` for each element.
+- If `fn` returns a truthy value for any element, add it to the first group, otherwise add it to the second group.
 
 <!-- -->
 
@@ -390,13 +405,13 @@ Python Snippets
     bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
     # [ ['beep', 'boop', 'bar'], ['foo'] ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the number of ways to choose `k` items from `n` items without repetition and without order.
 
--   Use `math.comb()` to calculate the binomial coefficient.
+- Use `math.comb()` to calculate the binomial coefficient.
 
 <!-- -->
 
@@ -407,13 +422,13 @@ Python Snippets
 
     binomial_coefficient(8, 2) # 28
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the length of a string in bytes.
 
--   Use `str.encode('utf-8')` to encode the given string and return its length.
+- Use `str.encode('utf-8')` to encode the given string and return its length.
 
 <!-- -->
 
@@ -423,15 +438,15 @@ Python Snippets
     byte_size('😀') # 4
     byte_size('Hello World') # 11
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a string to camelcase.
 
--   Use `re.sub()` to replace any `-` or `_` with a space, using the regexp `r"(_|-)+"`.
--   Use `str.title()` to capitalize the first letter of each word and convert the rest to lowercase.
--   Finally, use `str.replace()` to remove spaces between words.
+- Use `re.sub()` to replace any `-` or `_` with a space, using the regexp `r"(_|-)+"`.
+- Use `str.title()` to capitalize the first letter of each word and convert the rest to lowercase.
+- Finally, use `str.replace()` to remove spaces between words.
 
 <!-- -->
 
@@ -448,15 +463,15 @@ Python Snippets
     camel('some-mixed_string with spaces_underscores-and-hyphens')
     # 'someMixedStringWithSpacesUnderscoresAndHyphens'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Capitalizes the first letter of a string.
 
--   Use list slicing and `str.upper()` to capitalize the first letter of the string.
--   Use `str.join()` to combine the capitalized first letter with the rest of the characters.
--   Omit the `lower_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to lowercase.
+- Use list slicing and `str.upper()` to capitalize the first letter of the string.
+- Use `str.join()` to combine the capitalized first letter with the rest of the characters.
+- Omit the `lower_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to lowercase.
 
 <!-- -->
 
@@ -466,13 +481,13 @@ Python Snippets
     capitalize('fooBar') # 'FooBar'
     capitalize('fooBar', True) # 'Foobar'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Capitalizes the first letter of every word in a string.
 
--   Use `str.title()` to capitalize the first letter of every word in the string.
+- Use `str.title()` to capitalize the first letter of every word in the string.
 
 <!-- -->
 
@@ -481,14 +496,14 @@ Python Snippets
 
     capitalize_every_word('hello world!') # 'Hello World!'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Casts the provided value as a list if it's not one.
 
--   Use `isinstance()` to check if the given value is enumerable.
--   Return it by using `list()` or encapsulated in a list accordingly.
+- Use `isinstance()` to check if the given value is enumerable.
+- Return it by using `list()` or encapsulated in a list accordingly.
 
 <!-- -->
 
@@ -499,14 +514,13 @@ Python Snippets
     cast_list([1]) # [1]
     cast_list(('foo', 'bar')) # ['foo', 'bar']
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Converts Celsius to Fahrenheit.
 
--   Follow the conversion formula `F = 1.8 * C + 32`.
+- Follow the conversion formula `F = 1.8 * C + 32`.
 
 <!-- -->
 
@@ -515,13 +529,13 @@ Converts Celsius to Fahrenheit.
 
     celsius_to_fahrenheit(180) # 356.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a function that will invoke a predicate function for the specified property on a given object.
 
--   Return a `lambda` function that takes an object and applies the predicate function, `fn` to the specified property.
+- Return a `lambda` function that takes an object and applies the predicate function, `fn` to the specified property.
 
 <!-- -->
 
@@ -532,15 +546,15 @@ Converts Celsius to Fahrenheit.
     user = {'name': 'Mark', 'age': 18}
     check_age(user) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Chunks a list into smaller lists of a specified size.
 
--   Use `list()` and `range()` to create a list of the desired `size`.
--   Use `map()` on the list and fill it with splices of the given list.
--   Finally, return the created list.
+- Use `list()` and `range()` to create a list of the desired `size`.
+- Use `map()` on the list and fill it with splices of the given list.
+- Finally, return the created list.
 
 <!-- -->
 
@@ -553,16 +567,16 @@ Converts Celsius to Fahrenheit.
 
     chunk([1, 2, 3, 4, 5], 2) # [[1, 2], [3, 4], [5]]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Chunks a list into `n` smaller lists.
 
--   Use `math.ceil()` and `len()` to get the size of each chunk.
--   Use `list()` and `range()` to create a new list of size `n`.
--   Use `map()` to map each element of the new list to a chunk the length of `size`.
--   If the original list can't be split evenly, the final chunk will contain the remaining elements.
+- Use `math.ceil()` and `len()` to get the size of each chunk.
+- Use `list()` and `range()` to create a new list of size `n`.
+- Use `map()` to map each element of the new list to a chunk the length of `size`.
+- If the original list can't be split evenly, the final chunk will contain the remaining elements.
 
 <!-- -->
 
@@ -577,14 +591,14 @@ Converts Celsius to Fahrenheit.
 
     chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) # [[1, 2], [3, 4], [5, 6], [7]]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Clamps `num` within the inclusive range specified by the boundary values.
 
--   If `num` falls within the range (`a`, `b`), return `num`.
--   Otherwise, return the nearest number in the range.
+- If `num` falls within the range (`a`, `b`), return `num`.
+- Otherwise, return the nearest number in the range.
 
 <!-- -->
 
@@ -594,15 +608,15 @@ Converts Celsius to Fahrenheit.
     clamp_number(2, 3, 5) # 3
     clamp_number(1, -1, -5) # -1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Inverts a dictionary with non-unique hashable values.
 
--   Create a `collections.defaultdict` with `list` as the default value for each key.
--   Use `dictionary.items()` in combination with a loop to map the values of the dictionary to keys using `dict.append()`.
--   Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
+- Create a `collections.defaultdict` with `list` as the default value for each key.
+- Use `dictionary.items()` in combination with a loop to map the values of the dictionary to keys using `dict.append()`.
+- Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
 
 <!-- -->
 
@@ -621,15 +635,15 @@ Converts Celsius to Fahrenheit.
     }
     collect_dictionary(ages) # { 10: ['Peter', 'Isabel'], 9: ['Anna'] }
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Combines two or more dictionaries, creating a list of values for each key.
 
--   Create a new `collections.defaultdict` with `list` as the default value for each key and loop over `dicts`.
--   Use `dict.append()` to map the values of the dictionary to keys.
--   Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
+- Create a new `collections.defaultdict` with `list` as the default value for each key and loop over `dicts`.
+- Use `dict.append()` to map the values of the dictionary to keys.
+- Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
 
 <!-- -->
 
@@ -647,13 +661,13 @@ Converts Celsius to Fahrenheit.
 
     combine_values(d1, d2) # {'a': [1, 3], 'b': ['foo', 200], 'c': [400], 'd': [400]}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Removes falsy values from a list.
 
--   Use `filter()` to filter out falsy values (`False`, `None`, `0`, and `""`).
+- Use `filter()` to filter out falsy values (`False`, `None`, `0`, and `""`).
 
 <!-- -->
 
@@ -662,14 +676,14 @@ Converts Celsius to Fahrenheit.
 
     compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Performs right-to-left function composition.
 
--   Use `functools.reduce()` to perform right-to-left function composition.
--   The last (rightmost) function can accept one or more arguments; the remaining functions must be unary.
+- Use `functools.reduce()` to perform right-to-left function composition.
+- The last (rightmost) function can accept one or more arguments; the remaining functions must be unary.
 
 <!-- -->
 
@@ -683,14 +697,14 @@ Converts Celsius to Fahrenheit.
     multiply_and_add_5 = compose(add5, multiply)
     multiply_and_add_5(5, 2) # 15
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Performs left-to-right function composition.
 
--   Use `functools.reduce()` to perform left-to-right function composition.
--   The first (leftmost) function can accept one or more arguments; the remaining functions must be unary.
+- Use `functools.reduce()` to perform left-to-right function composition.
+- The first (leftmost) function can accept one or more arguments; the remaining functions must be unary.
 
 <!-- -->
 
@@ -704,15 +718,15 @@ Converts Celsius to Fahrenheit.
     add_and_square = compose_right(add, square)
     add_and_square(1, 2) # 9
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Groups the elements of a list based on the given function and returns the count of elements in each group.
 
--   Use `collections.defaultdict` to initialize a dictionary.
--   Use `map()` to map the values of the given list using the given function.
--   Iterate over the map and increase the element count each time it occurs.
+- Use `collections.defaultdict` to initialize a dictionary.
+- Use `map()` to map the values of the given list using the given function.
+- Iterate over the map and increase the element count each time it occurs.
 
 <!-- -->
 
@@ -729,13 +743,13 @@ Converts Celsius to Fahrenheit.
     count_by([6.1, 4.2, 6.3], floor) # {6: 2, 4: 1}
     count_by(['one', 'two', 'three'], len) # {3: 2, 5: 1}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Counts the occurrences of a value in a list.
 
--   Use `list.count()` to count the number of occurrences of `val` in `lst`.
+- Use `list.count()` to count the number of occurrences of `val` in `lst`.
 
 <!-- -->
 
@@ -744,14 +758,14 @@ Converts Celsius to Fahrenheit.
 
     count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a list of partial sums.
 
--   Use `itertools.accumulate()` to create the accumulated sum for each element.
--   Use `list()` to convert the result into a list.
+- Use `itertools.accumulate()` to create the accumulated sum for each element.
+- Use `list()` to convert the result into a list.
 
 <!-- -->
 
@@ -762,13 +776,13 @@ Converts Celsius to Fahrenheit.
 
     cumsum(range(0, 15, 3)) # [0, 3, 9, 18, 30]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Curries a function.
 
--   Use `functools.partial()` to return a new partial object which behaves like `fn` with the given arguments, `args`, partially applied.
+- Use `functools.partial()` to return a new partial object which behaves like `fn` with the given arguments, `args`, partially applied.
 
 <!-- -->
 
@@ -781,15 +795,15 @@ Converts Celsius to Fahrenheit.
     add10 = curry(add, 10)
     add10(20) # 30
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a list of dates between `start` (inclusive) and `end` (not inclusive).
 
--   Use `datetime.timedelta.days` to get the days between `start` and `end`.
--   Use `int()` to convert the result to an integer and `range()` to iterate over each day.
--   Use a list comprehension and `datetime.timedelta()` to create a list of `datetime.date` objects.
+- Use `datetime.timedelta.days` to get the days between `start` and `end`.
+- Use `int()` to convert the result to an integer and `range()` to iterate over each day.
+- Use a list comprehension and `datetime.timedelta()` to create a list of `datetime.date` objects.
 
 <!-- -->
 
@@ -803,14 +817,14 @@ Converts Celsius to Fahrenheit.
     daterange(date(2020, 10, 1), date(2020, 10, 5))
     # [date(2020, 10, 1), date(2020, 10, 2), date(2020, 10, 3), date(2020, 10, 4)]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the date of `n` days ago from today.
 
--   Use `datetime.date.today()` to get the current day.
--   Use `datetime.timedelta` to subtract `n` days from today's date.
+- Use `datetime.date.today()` to get the current day.
+- Use `datetime.timedelta` to subtract `n` days from today's date.
 
 <!-- -->
 
@@ -821,13 +835,13 @@ Converts Celsius to Fahrenheit.
 
     days_ago(5) # date(2020, 10, 23)
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the day difference between two dates.
 
--   Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
+- Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
 
 <!-- -->
 
@@ -838,14 +852,14 @@ Converts Celsius to Fahrenheit.
 
     days_diff(date(2020, 10, 25), date(2020, 10, 28)) # 3
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the date of `n` days from today.
 
--   Use `datetime.date.today()` to get the current day.
--   Use `datetime.timedelta` to add `n` days from today's date.
+- Use `datetime.date.today()` to get the current day.
+- Use `datetime.timedelta` to add `n` days from today's date.
 
 <!-- -->
 
@@ -856,15 +870,15 @@ Converts Celsius to Fahrenheit.
 
     days_from_now(5) # date(2020, 11, 02)
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Decapitalizes the first letter of a string.
 
--   Use list slicing and `str.lower()` to decapitalize the first letter of the string.
--   Use `str.join()` to combine the lowercase first letter with the rest of the characters.
--   Omit the `upper_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to uppercase.
+- Use list slicing and `str.lower()` to decapitalize the first letter of the string.
+- Use `str.join()` to combine the lowercase first letter with the rest of the characters.
+- Omit the `upper_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to uppercase.
 
 <!-- -->
 
@@ -874,15 +888,15 @@ Converts Celsius to Fahrenheit.
     decapitalize('FooBar') # 'fooBar'
     decapitalize('FooBar', True) # 'fOOBAR'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Deep flattens a list.
 
--   Use recursion.
--   Use `isinstance()` with `collections.abc.Iterable` to check if an element is iterable.
--   If it is iterable, apply `deep_flatten()` recursively, otherwise return `[lst]`.
+- Use recursion.
+- Use `isinstance()` with `collections.abc.Iterable` to check if an element is iterable.
+- If it is iterable, apply `deep_flatten()` recursively, otherwise return `[lst]`.
 
 <!-- -->
 
@@ -894,13 +908,13 @@ Converts Celsius to Fahrenheit.
 
     deep_flatten([1, [2], [[3], 4], 5]) # [1, 2, 3, 4, 5]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts an angle from degrees to radians.
 
--   Use `math.pi` and the degrees to radians formula to convert the angle from degrees to radians.
+- Use `math.pi` and the degrees to radians formula to convert the angle from degrees to radians.
 
 <!-- -->
 
@@ -911,13 +925,13 @@ Converts Celsius to Fahrenheit.
 
     degrees_to_rads(180) # ~3.1416
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Invokes the provided function after `ms` milliseconds.
 
--   Use `time.sleep()` to delay the execution of `fn` by `ms / 1000` seconds.
+- Use `time.sleep()` to delay the execution of `fn` by `ms / 1000` seconds.
 
 <!-- -->
 
@@ -929,13 +943,13 @@ Converts Celsius to Fahrenheit.
 
     delay(lambda x: print(x), 1000, 'later') # prints 'later' after one second
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a dictionary to a list of tuples.
 
--   Use `dict.items()` and `list()` to get a list of tuples from the given dictionary.
+- Use `dict.items()` and `list()` to get a list of tuples from the given dictionary.
 
 <!-- -->
 
@@ -946,14 +960,14 @@ Converts Celsius to Fahrenheit.
     dict_to_list(d)
     # [('one', 1), ('three', 3), ('five', 5), ('two', 2), ('four', 4)]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the difference between two iterables, without filtering duplicate values.
 
--   Create a `set` from `b`.
--   Use a list comprehension on `a` to only keep values not contained in the previously created set, `_b`.
+- Create a `set` from `b`.
+- Use a list comprehension on `a` to only keep values not contained in the previously created set, `_b`.
 
 <!-- -->
 
@@ -963,14 +977,14 @@ Converts Celsius to Fahrenheit.
 
     difference([1, 2, 3], [1, 2, 4]) # [3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the difference between two lists, after applying the provided function to each list element of both.
 
--   Create a `set`, using `map()` to apply `fn` to each element in `b`.
--   Use a list comprehension in combination with `fn` on `a` to only keep values not contained in the previously created set, `_b`.
+- Create a `set`, using `map()` to apply `fn` to each element in `b`.
+- Use a list comprehension in combination with `fn` on `a` to only keep values not contained in the previously created set, `_b`.
 
 <!-- -->
 
@@ -984,13 +998,13 @@ Converts Celsius to Fahrenheit.
     difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])
     # [ { x: 2 } ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a number to a list of digits.
 
--   Use `map()` combined with `int` on the string representation of `n` and return a list from the result.
+- Use `map()` combined with `int` on the string representation of `n` and return a list from the result.
 
 <!-- -->
 
@@ -999,14 +1013,14 @@ Converts Celsius to Fahrenheit.
 
     digitize(123) # [1, 2, 3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list with `n` elements removed from the left.
 
--   Use slice notation to remove the specified number of elements from the left.
--   Omit the last argument, `n`, to use a default value of `1`.
+- Use slice notation to remove the specified number of elements from the left.
+- Omit the last argument, `n`, to use a default value of `1`.
 
 <!-- -->
 
@@ -1017,14 +1031,14 @@ Converts Celsius to Fahrenheit.
     drop([1, 2, 3], 2) # [3]
     drop([1, 2, 3], 42) # []
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list with `n` elements removed from the right.
 
--   Use slice notation to remove the specified number of elements from the right.
--   Omit the last argument, `n`, to use a default value of `1`.
+- Use slice notation to remove the specified number of elements from the right.
+- Omit the last argument, `n`, to use a default value of `1`.
 
 <!-- -->
 
@@ -1035,13 +1049,13 @@ Converts Celsius to Fahrenheit.
     drop_right([1, 2, 3], 2) # [1]
     drop_right([1, 2, 3], 42) # []
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the provided function returns `True` for every element in the list.
 
--   Use `all()` in combination with `map()` and `fn` to check if `fn` returns `True` for all elements in the list.
+- Use `all()` in combination with `map()` and `fn` to check if `fn` returns `True` for all elements in the list.
 
 <!-- -->
 
@@ -1051,13 +1065,13 @@ Converts Celsius to Fahrenheit.
     every([4, 2, 3], lambda x: x > 1) # True
     every([1, 2, 3]) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns every `nth` element in a list.
 
--   Use slice notation to create a new list that contains every `nth` element of the given list.
+- Use slice notation to create a new list that contains every `nth` element of the given list.
 
 <!-- -->
 
@@ -1066,16 +1080,16 @@ Converts Celsius to Fahrenheit.
 
     every_nth([1, 2, 3, 4, 5, 6], 2) # [ 2, 4, 6 ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the factorial of a number.
 
--   Use recursion.
--   If `num` is less than or equal to `1`, return `1`.
--   Otherwise, return the product of `num` and the factorial of `num - 1`.
--   Throws an exception if `num` is a negative or a floating point number.
+- Use recursion.
+- If `num` is less than or equal to `1`, return `1`.
+- Otherwise, return the product of `num` and the factorial of `num - 1`.
+- Throws an exception if `num` is a negative or a floating point number.
 
 <!-- -->
 
@@ -1086,14 +1100,13 @@ Converts Celsius to Fahrenheit.
 
     factorial(6) # 720
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Converts Fahrenheit to Celsius.
 
--   Follow the conversion formula `C = (F - 32) * 5/9`.
+- Follow the conversion formula `C = (F - 32) * 5/9`.
 
 <!-- -->
 
@@ -1102,14 +1115,14 @@ Converts Fahrenheit to Celsius.
 
     fahrenheit_to_celsius(77) # 25.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Generates a list, containing the Fibonacci sequence, up until the nth term.
 
--   Starting with `0` and `1`, use `list.append()` to add the sum of the last two numbers of the list to the end of the list, until the length of the list reaches `n`.
--   If `n` is less or equal to `0`, return a list containing `0`.
+- Starting with `0` and `1`, use `list.append()` to add the sum of the last two numbers of the list to the end of the list, until the length of the list reaches `n`.
+- If `n` is less or equal to `0`, return a list containing `0`.
 
 <!-- -->
 
@@ -1124,14 +1137,14 @@ Converts Fahrenheit to Celsius.
 
     fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a list with the non-unique values filtered out.
 
--   Use `collections.Counter` to get the count of each value in the list.
--   Use a list comprehension to create a list containing only the unique values.
+- Use `collections.Counter` to get the count of each value in the list.
+- Use a list comprehension to create a list containing only the unique values.
 
 <!-- -->
 
@@ -1142,14 +1155,14 @@ Converts Fahrenheit to Celsius.
 
     filter_non_unique([1, 2, 2, 3, 4, 4, 5]) # [1, 3, 5]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a list with the unique values filtered out.
 
--   Use `collections.Counter` to get the count of each value in the list.
--   Use a list comprehension to create a list containing only the non-unique values.
+- Use `collections.Counter` to get the count of each value in the list.
+- Use a list comprehension to create a list containing only the non-unique values.
 
 <!-- -->
 
@@ -1160,13 +1173,13 @@ Converts Fahrenheit to Celsius.
 
     filter_unique([1, 2, 2, 3, 4, 4, 5]) # [2, 4]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the value of the first element in the given list that satisfies the provided testing function.
 
--   Use a list comprehension and `next()` to return the first element in `lst` for which `fn` returns `True`.
+- Use a list comprehension and `next()` to return the first element in `lst` for which `fn` returns `True`.
 
 <!-- -->
 
@@ -1175,13 +1188,13 @@ Converts Fahrenheit to Celsius.
 
     find([1, 2, 3, 4], lambda n: n % 2 == 1) # 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the index of the first element in the given list that satisfies the provided testing function.
 
--   Use a list comprehension, `enumerate()` and `next()` to return the index of the first element in `lst` for which `fn` returns `True`.
+- Use a list comprehension, `enumerate()` and `next()` to return the index of the first element in `lst` for which `fn` returns `True`.
 
 <!-- -->
 
@@ -1190,13 +1203,13 @@ Converts Fahrenheit to Celsius.
 
     find_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the indexes of all elements in the given list that satisfy the provided testing function.
 
--   Use `enumerate()` and a list comprehension to return the indexes of the all element in `lst` for which `fn` returns `True`.
+- Use `enumerate()` and a list comprehension to return the indexes of the all element in `lst` for which `fn` returns `True`.
 
 <!-- -->
 
@@ -1205,13 +1218,13 @@ Converts Fahrenheit to Celsius.
 
     find_index_of_all([1, 2, 3, 4], lambda n: n % 2 == 1) # [0, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the first key in the provided dictionary that has the given value.
 
--   Use `dictionary.items()` and `next()` to return the first key that has a value equal to `val`.
+- Use `dictionary.items()` and `next()` to return the first key that has a value equal to `val`.
 
 <!-- -->
 
@@ -1225,13 +1238,13 @@ Converts Fahrenheit to Celsius.
     }
     find_key(ages, 11) # 'Isabel'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds all keys in the provided dictionary that have the given value.
 
--   Use `dictionary.items()`, a generator and `list()` to return all keys that have a value equal to `val`.
+- Use `dictionary.items()`, a generator and `list()` to return all keys that have a value equal to `val`.
 
 <!-- -->
 
@@ -1245,13 +1258,13 @@ Converts Fahrenheit to Celsius.
     }
     find_keys(ages, 10) # [ 'Peter', 'Anna' ]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the value of the last element in the given list that satisfies the provided testing function.
 
--   Use a list comprehension and `next()` to return the last element in `lst` for which `fn` returns `True`.
+- Use a list comprehension and `next()` to return the last element in `lst` for which `fn` returns `True`.
 
 <!-- -->
 
@@ -1260,13 +1273,13 @@ Converts Fahrenheit to Celsius.
 
     find_last([1, 2, 3, 4], lambda n: n % 2 == 1) # 3
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the index of the last element in the given list that satisfies the provided testing function.
 
--   Use a list comprehension, `enumerate()` and `next()` to return the index of the last element in `lst` for which `fn` returns `True`.
+- Use a list comprehension, `enumerate()` and `next()` to return the index of the last element in `lst` for which `fn` returns `True`.
 
 <!-- -->
 
@@ -1275,15 +1288,15 @@ Converts Fahrenheit to Celsius.
 
     find_last_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 2
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the items that are parity outliers in a given list.
 
--   Use `collections.Counter` with a list comprehension to count even and odd values in the list.
--   Use `collections.Counter.most_common()` to get the most common parity.
--   Use a list comprehension to find all elements that do not match the most common parity.
+- Use `collections.Counter` with a list comprehension to count even and odd values in the list.
+- Use `collections.Counter.most_common()` to get the most common parity.
+- Use a list comprehension to find all elements that do not match the most common parity.
 
 <!-- -->
 
@@ -1297,13 +1310,13 @@ Converts Fahrenheit to Celsius.
 
     find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Flattens a list of lists once.
 
--   Use a list comprehension to extract each value from sub-lists in order.
+- Use a list comprehension to extract each value from sub-lists in order.
 
 <!-- -->
 
@@ -1312,13 +1325,13 @@ Converts Fahrenheit to Celsius.
 
     flatten([[1, 2, 3, 4], [5, 6, 7, 8]]) # [1, 2, 3, 4, 5, 6, 7, 8]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Executes the provided function once for each list element.
 
--   Use a `for` loop to execute `fn` for each element in `itr`.
+- Use a `for` loop to execute `fn` for each element in `itr`.
 
 <!-- -->
 
@@ -1328,13 +1341,13 @@ Converts Fahrenheit to Celsius.
 
     for_each([1, 2, 3], print) # 1 2 3
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Executes the provided function once for each list element, starting from the list's last element.
 
--   Use a `for` loop in combination with slice notation to execute `fn` for each element in `itr`, starting from the last one.
+- Use a `for` loop in combination with slice notation to execute `fn` for each element in `itr`, starting from the last one.
 
 <!-- -->
 
@@ -1344,14 +1357,14 @@ Converts Fahrenheit to Celsius.
 
     for_each_right([1, 2, 3], print) # 3 2 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a dictionary with the unique values of a list as keys and their frequencies as the values.
 
--   Use `collections.defaultdict()` to store the frequencies of each unique element.
--   Use `dict()` to return a dictionary with the unique elements of the list as keys and their frequencies as the values.
+- Use `collections.defaultdict()` to store the frequencies of each unique element.
+- Use `dict()` to return a dictionary with the unique elements of the list as keys and their frequencies as the values.
 
 <!-- -->
 
@@ -1365,13 +1378,13 @@ Converts Fahrenheit to Celsius.
 
     frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a date from its ISO-8601 representation.
 
--   Use `datetime.datetime.fromisoformat()` to convert the given ISO-8601 date to a `datetime.datetime` object.
+- Use `datetime.datetime.fromisoformat()` to convert the given ISO-8601 date to a `datetime.datetime` object.
 
 <!-- -->
 
@@ -1382,13 +1395,13 @@ Converts Fahrenheit to Celsius.
 
     from_iso_date('2020-10-28T12:30:59.000000') # 2020-10-28 12:30:59
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the greatest common divisor of a list of numbers.
 
--   Use `functools.reduce()` and `math.gcd()` over the given list.
+- Use `functools.reduce()` and `math.gcd()` over the given list.
 
 <!-- -->
 
@@ -1400,17 +1413,17 @@ Converts Fahrenheit to Celsius.
 
     gcd([8, 36, 28]) # 4
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Initializes a list containing the numbers in the specified range where `start` and `end` are inclusive and the ratio between two terms is `step`.
 
 Returns an error if `step` equals `1`.
 
--   Use `range()`, `math.log()` and `math.floor()` and a list comprehension to create a list of the appropriate length, applying the step for each element.
--   Omit the second argument, `start`, to use a default value of `1`.
--   Omit the third argument, `step`, to use a default value of `2`.
+- Use `range()`, `math.log()` and `math.floor()` and a list comprehension to create a list of the appropriate length, applying the step for each element.
+- Omit the second argument, `start`, to use a default value of `1`.
+- Omit the third argument, `step`, to use a default value of `2`.
 
 <!-- -->
 
@@ -1424,14 +1437,14 @@ Returns an error if `step` equals `1`.
     geometric_progression(256, 3) # [3, 6, 12, 24, 48, 96, 192]
     geometric_progression(256, 1, 4) # [1, 4, 16, 64, 256]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Retrieves the value of the nested key indicated by the given selector list from a dictionary or list.
 
--   Use `functools.reduce()` to iterate over the `selectors` list.
--   Apply `operator.getitem()` for each key in `selectors`, retrieving the value to be used as the iteratee for the next iteration.
+- Use `functools.reduce()` to iterate over the `selectors` list.
+- Apply `operator.getitem()` for each key in `selectors`, retrieving the value to be used as the iteratee for the next iteration.
 
 <!-- -->
 
@@ -1453,15 +1466,15 @@ Returns an error if `step` equals `1`.
     get(users, ['freddy', 'name', 'last']) # 'smith'
     get(users, ['freddy', 'postIds', 1]) # 2
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Groups the elements of a list based on the given function.
 
--   Use `collections.defaultdict` to initialize a dictionary.
--   Use `fn` in combination with a `for` loop and `dict.append()` to populate the dictionary.
--   Use `dict()` to convert it to a regular dictionary.
+- Use `collections.defaultdict` to initialize a dictionary.
+- Use `fn` in combination with a `for` loop and `dict.append()` to populate the dictionary.
+- Use `dict()` to convert it to a regular dictionary.
 
 <!-- -->
 
@@ -1478,15 +1491,15 @@ Returns an error if `step` equals `1`.
     group_by([6.1, 4.2, 6.3], floor) # {4: [4.2], 6: [6.1, 6.3]}
     group_by(['one', 'two', 'three'], len) # {3: ['one', 'two'], 5: ['three']}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the Hamming distance between two values.
 
--   Use the XOR operator (`^`) to find the bit difference between the two numbers.
--   Use `bin()` to convert the result to a binary string.
--   Convert the string to a list and use `count()` of `str` class to count and return the number of `1`s in it.
+- Use the XOR operator (`^`) to find the bit difference between the two numbers.
+- Use `bin()` to convert the result to a binary string.
+- Convert the string to a list and use `count()` of `str` class to count and return the number of `1`s in it.
 
 <!-- -->
 
@@ -1495,13 +1508,13 @@ Returns an error if `step` equals `1`.
 
     hamming_distance(2, 3) # 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if there are duplicate values in a flat list.
 
--   Use `set()` on the given list to remove duplicates, compare its length with the length of the list.
+- Use `set()` on the given list to remove duplicates, compare its length with the length of the list.
 
 <!-- -->
 
@@ -1513,15 +1526,15 @@ Returns an error if `step` equals `1`.
     has_duplicates(x) # True
     has_duplicates(y) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if two lists contain the same elements regardless of order.
 
--   Use `set()` on the combination of both lists to find the unique values.
--   Iterate over them with a `for` loop comparing the `count()` of each unique value in each list.
--   Return `False` if the counts do not match for any element, `True` otherwise.
+- Use `set()` on the combination of both lists to find the unique values.
+- Iterate over them with a `for` loop comparing the `count()` of each unique value in each list.
+- Return `False` if the counts do not match for any element, `True` otherwise.
 
 <!-- -->
 
@@ -1533,13 +1546,13 @@ Returns an error if `step` equals `1`.
 
     have_same_contents([1, 2, 4], [2, 4, 1]) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the head of a list.
 
--   Use `lst[0]` to return the first element of the passed list.
+- Use `lst[0]` to return the first element of the passed list.
 
 <!-- -->
 
@@ -1548,14 +1561,14 @@ Returns an error if `step` equals `1`.
 
     head([1, 2, 3]) # 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a hexadecimal color code to a tuple of integers corresponding to its RGB components.
 
--   Use a list comprehension in combination with `int()` and list slice notation to get the RGB components from the hexadecimal string.
--   Use `tuple()` to convert the resulting list to a tuple.
+- Use a list comprehension in combination with `int()` and list slice notation to get the RGB components from the hexadecimal string.
+- Use `tuple()` to convert the resulting list to a tuple.
 
 <!-- -->
 
@@ -1564,14 +1577,14 @@ Returns an error if `step` equals `1`.
 
     hex_to_rgb('FFA501') # (255, 165, 1)
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the given number falls within the given range.
 
--   Use arithmetic comparison to check if the given number is in the specified range.
--   If the second parameter, `end`, is not specified, the range is considered to be from `0` to `start`.
+- Use arithmetic comparison to check if the given number is in the specified range.
+- If the second parameter, `end`, is not specified, the range is considered to be from `0` to `start`.
 
 <!-- -->
 
@@ -1583,14 +1596,14 @@ Returns an error if `step` equals `1`.
     in_range(2, 3, 5) # False
     in_range(3, 2) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if all the elements in `values` are included in `lst`.
 
--   Check if every value in `values` is contained in `lst` using a `for` loop.
--   Return `False` if any one value is not found, `True` otherwise.
+- Check if every value in `values` is contained in `lst` using a `for` loop.
+- Return `False` if any one value is not found, `True` otherwise.
 
 <!-- -->
 
@@ -1603,14 +1616,14 @@ Returns an error if `step` equals `1`.
     includes_all([1, 2, 3, 4], [1, 4]) # True
     includes_all([1, 2, 3, 4], [1, 5]) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if any element in `values` is included in `lst`.
 
--   Check if any value in `values` is contained in `lst` using a `for` loop.
--   Return `True` if any one value is found, `False` otherwise.
+- Check if any value in `values` is contained in `lst` using a `for` loop.
+- Return `True` if any one value is found, `False` otherwise.
 
 <!-- -->
 
@@ -1623,13 +1636,13 @@ Returns an error if `step` equals `1`.
     includes_any([1, 2, 3, 4], [2, 9]) # True
     includes_any([1, 2, 3, 4], [8, 9]) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list of indexes of all the occurrences of an element in a list.
 
--   Use `enumerate()` and a list comprehension to check each element for equality with `value` and adding `i` to the result.
+- Use `enumerate()` and a list comprehension to check each element for equality with `value` and adding `i` to the result.
 
 <!-- -->
 
@@ -1639,13 +1652,13 @@ Returns an error if `step` equals `1`.
     index_of_all([1, 2, 1, 4, 5, 1], 1) # [0, 2, 5]
     index_of_all([1, 2, 3, 4], 6) # []
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns all the elements of a list except the last one.
 
--   Use `lst[:-1]` to return all but the last element of the list.
+- Use `lst[:-1]` to return all but the last element of the list.
 
 <!-- -->
 
@@ -1654,14 +1667,14 @@ Returns an error if `step` equals `1`.
 
     initial([1, 2, 3]) # [1, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Initializes a 2D list of given width and height and value.
 
--   Use a list comprehension and `range()` to generate `h` rows where each is a list with length `h`, initialized with `val`.
--   Omit the last argument, `val`, to set the default value to `None`.
+- Use a list comprehension and `range()` to generate `h` rows where each is a list with length `h`, initialized with `val`.
+- Omit the last argument, `val`, to set the default value to `None`.
 
 <!-- -->
 
@@ -1670,15 +1683,15 @@ Returns an error if `step` equals `1`.
 
     initialize_2d_list(2, 2, 0) # [[0, 0], [0, 0]]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Initializes a list containing the numbers in the specified range where `start` and `end` are inclusive with their common difference `step`.
 
--   Use `list()` and `range()` to generate a list of the appropriate length, filled with the desired values in the given range.
--   Omit `start` to use the default value of `0`.
--   Omit `step` to use the default value of `1`.
+- Use `list()` and `range()` to generate a list of the appropriate length, filled with the desired values in the given range.
+- Omit `start` to use the default value of `0`.
+- Omit `step` to use the default value of `1`.
 
 <!-- -->
 
@@ -1689,14 +1702,14 @@ Returns an error if `step` equals `1`.
     initialize_list_with_range(7, 3) # [3, 4, 5, 6, 7]
     initialize_list_with_range(9, 0, 2) # [0, 2, 4, 6, 8]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Initializes and fills a list with the specified value.
 
--   Use a list comprehension and `range()` to generate a list of length equal to `n`, filled with the desired values.
--   Omit `val` to use the default value of `0`.
+- Use a list comprehension and `range()` to generate a list of length equal to `n`, filled with the desired values.
+- Omit `val` to use the default value of `0`.
 
 <!-- -->
 
@@ -1705,14 +1718,14 @@ Returns an error if `step` equals `1`.
 
     initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list of elements that exist in both lists.
 
--   Create a `set` from `a` and `b`.
--   Use the built-in set operator `&` to only keep values contained in both sets, then transform the `set` back into a `list`.
+- Create a `set` from `a` and `b`.
+- Use the built-in set operator `&` to only keep values contained in both sets, then transform the `set` back into a `list`.
 
 <!-- -->
 
@@ -1722,14 +1735,14 @@ Returns an error if `step` equals `1`.
 
     intersection([1, 2, 3], [4, 3, 2]) # [2, 3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list of elements that exist in both lists, after applying the provided function to each list element of both.
 
--   Create a `set`, using `map()` to apply `fn` to each element in `b`.
--   Use a list comprehension in combination with `fn` on `a` to only keep values contained in both lists.
+- Create a `set`, using `map()` to apply `fn` to each element in `b`.
+- Use a list comprehension in combination with `fn` on `a` to only keep values contained in both lists.
 
 <!-- -->
 
@@ -1741,13 +1754,13 @@ Returns an error if `step` equals `1`.
 
     intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Inverts a dictionary with unique hashable values.
 
--   Use `dictionary.items()` in combination with a list comprehension to create a new dictionary with the values and keys inverted.
+- Use `dictionary.items()` in combination with a list comprehension to create a new dictionary with the values and keys inverted.
 
 <!-- -->
 
@@ -1761,14 +1774,14 @@ Returns an error if `step` equals `1`.
     }
     invert_dictionary(ages) # { 10: 'Peter', 11: 'Isabel', 9: 'Anna' }
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if a string is an anagram of another string (case-insensitive, ignores spaces, punctuation and special characters).
 
--   Use `str.isalnum()` to filter out non-alphanumeric characters, `str.lower()` to transform each character to lowercase.
--   Use `collections.Counter` to count the resulting characters for each string and compare the results.
+- Use `str.isalnum()` to filter out non-alphanumeric characters, `str.lower()` to transform each character to lowercase.
+- Use `collections.Counter` to count the resulting characters for each string and compare the results.
 
 <!-- -->
 
@@ -1783,14 +1796,14 @@ Returns an error if `step` equals `1`.
 
     is_anagram('#anagram', 'Nag a ram!')  # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the elements of the first list are contained in the second one regardless of order.
 
--   Use `count()` to check if any value in `a` has more occurrences than it has in `b`.
--   Return `False` if any such value is found, `True` otherwise.
+- Use `count()` to check if any value in `a` has more occurrences than it has in `b`.
+- Return `False` if any such value is found, `True` otherwise.
 
 <!-- -->
 
@@ -1802,14 +1815,13 @@ Returns an error if `step` equals `1`.
 
     is_contained_in([1, 4], [2, 4, 1]) # True
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Checks if the first numeric argument is divisible by the second one.
 
--   Use the modulo operator (`%`) to check if the remainder is equal to `0`.
+- Use the modulo operator (`%`) to check if the remainder is equal to `0`.
 
 <!-- -->
 
@@ -1818,15 +1830,14 @@ Checks if the first numeric argument is divisible by the second one.
 
     is_divisible(6, 3) # True
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Checks if the given number is even.
 
--   Check whether a number is odd or even using the modulo (`%`) operator.
--   Return `True` if the number is even, `False` if the number is odd.
+- Check whether a number is odd or even using the modulo (`%`) operator.
+- Return `True` if the number is even, `False` if the number is odd.
 
 <!-- -->
 
@@ -1835,15 +1846,14 @@ Checks if the given number is even.
 
     is_even(3) # False
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Checks if the given number is odd.
 
--   Checks whether a number is even or odd using the modulo (`%`) operator.
--   Returns `True` if the number is odd, `False` if the number is even.
+- Checks whether a number is even or odd using the modulo (`%`) operator.
+- Returns `True` if the number is odd, `False` if the number is even.
 
 <!-- -->
 
@@ -1852,15 +1862,15 @@ Checks if the given number is odd.
 
     is_odd(3) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the provided integer is a prime number.
 
--   Return `False` if the number is `0`, `1`, a negative number or a multiple of `2`.
--   Use `all()` and `range()` to check numbers from `3` to the square root of the given number.
--   Return `True` if none divides the given number, `False` otherwise.
+- Return `False` if the number is `0`, `1`, a negative number or a multiple of `2`.
+- Use `all()` and `range()` to check numbers from `3` to the square root of the given number.
+- Return `True` if none divides the given number, `False` otherwise.
 
 <!-- -->
 
@@ -1873,15 +1883,15 @@ Checks if the given number is odd.
 
     is_prime(11) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the given date is a weekday.
 
--   Use `datetime.datetime.weekday()` to get the day of the week as an integer.
--   Check if the day of the week is less than or equal to `4`.
--   Omit the second argument, `d`, to use a default value of `datetime.today()`.
+- Use `datetime.datetime.weekday()` to get the day of the week as an integer.
+- Check if the day of the week is less than or equal to `4`.
+- Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
 <!-- -->
 
@@ -1895,15 +1905,15 @@ Checks if the given number is odd.
     is_weekday(date(2020, 10, 25)) # False
     is_weekday(date(2020, 10, 28)) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the given date is a weekend.
 
--   Use `datetime.datetime.weekday()` to get the day of the week as an integer.
--   Check if the day of the week is greater than `4`.
--   Omit the second argument, `d`, to use a default value of `datetime.today()`.
+- Use `datetime.datetime.weekday()` to get the day of the week as an integer.
+- Check if the day of the week is greater than `4`.
+- Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
 <!-- -->
 
@@ -1917,15 +1927,15 @@ Checks if the given number is odd.
     is_weekend(date(2020, 10, 25)) # True
     is_weekend(date(2020, 10, 28)) # False
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a string to kebab case.
 
--   Use `re.sub()` to replace any `-` or `_` with a space, using the regexp `r"(_|-)+"`.
--   Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
--   Finally, use `str.join()` to combine all word using `-` as the separator.
+- Use `re.sub()` to replace any `-` or `_` with a space, using the regexp `r"(_|-)+"`.
+- Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
+- Finally, use `str.join()` to combine all word using `-` as the separator.
 
 <!-- -->
 
@@ -1943,13 +1953,13 @@ Checks if the given number is odd.
     # 'some-mixed-string-with-spaces-underscores-and-hyphens'
     kebab('AllThe-small Things') # 'all-the-small-things'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the given key exists in a dictionary.
 
--   Use the `in` operator to check if `d` contains `key`.
+- Use the `in` operator to check if `d` contains `key`.
 
 <!-- -->
 
@@ -1959,13 +1969,13 @@ Checks if the given number is odd.
     d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
     key_in_dict(d, 'three') # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the key of the maximum value in a dictionary.
 
--   Use `max()` with the `key` parameter set to `dict.get()` to find and return the key of the maximum value in the given dictionary.
+- Use `max()` with the `key` parameter set to `dict.get()` to find and return the key of the maximum value in the given dictionary.
 
 <!-- -->
 
@@ -1974,13 +1984,13 @@ Checks if the given number is odd.
 
     key_of_max({'a':4, 'b':0, 'c':13}) # c
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the key of the minimum value in a dictionary.
 
--   Use `min()` with the `key` parameter set to `dict.get()` to find and return the key of the minimum value in the given dictionary.
+- Use `min()` with the `key` parameter set to `dict.get()` to find and return the key of the minimum value in the given dictionary.
 
 <!-- -->
 
@@ -1989,14 +1999,14 @@ Checks if the given number is odd.
 
     key_of_min({'a':4, 'b':0, 'c':13}) # b
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a flat list of all the keys in a flat dictionary.
 
--   Use `dict.keys()` to return the keys in the given dictionary.
--   Return a `list()` of the previous result.
+- Use `dict.keys()` to return the keys in the given dictionary.
+- Return a `list()` of the previous result.
 
 <!-- -->
 
@@ -2010,14 +2020,13 @@ Checks if the given number is odd.
     }
     keys_only(ages) # ['Peter', 'Isabel', 'Anna']
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Converts kilometers to miles.
 
--   Follows the conversion formula `mi = km * 0.621371`.
+- Follows the conversion formula `mi = km * 0.621371`.
 
 <!-- -->
 
@@ -2026,13 +2035,13 @@ Converts kilometers to miles.
 
     km_to_miles(8.1) # 5.0331051
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the last element in a list.
 
--   Use `lst[-1]` to return the last element of the passed list.
+- Use `lst[-1]` to return the last element of the passed list.
 
 <!-- -->
 
@@ -2041,13 +2050,13 @@ Converts kilometers to miles.
 
     last([1, 2, 3]) # 3
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the least common multiple of a list of numbers.
 
--   Use `functools.reduce()`, `math.gcd()` and `lcm(x,y) = x * y / gcd(x,y)` over the given list.
+- Use `functools.reduce()`, `math.gcd()` and `lcm(x,y) = x * y / gcd(x,y)` over the given list.
 
 <!-- -->
 
@@ -2060,14 +2069,14 @@ Converts kilometers to miles.
     lcm([12, 7]) # 84
     lcm([1, 3, 4, 5]) # 60
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Takes any number of iterable objects or objects with a length property and returns the longest one.
 
--   Use `max()` with `len()` as the `key` to return the item with the greatest length.
--   If multiple objects have the same length, the first one will be returned.
+- Use `max()` with `len()` as the `key` to return the item with the greatest length.
+- If multiple objects have the same length, the first one will be returned.
 
 <!-- -->
 
@@ -2078,15 +2087,15 @@ Converts kilometers to miles.
     longest_item([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]) # [1, 2, 3, 4, 5]
     longest_item([1, 2, 3], 'foobar') # 'foobar'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Maps the values of a list to a dictionary using a function, where the key-value pairs consist of the original value as the key and the result of the function as the value.
 
--   Use `map()` to apply `fn` to each value of the list.
--   Use `zip()` to pair original values to the values produced by `fn`.
--   Use `dict()` to return an appropriate dictionary.
+- Use `map()` to apply `fn` to each value of the list.
+- Use `zip()` to pair original values to the values produced by `fn`.
+- Use `dict()` to return an appropriate dictionary.
 
 <!-- -->
 
@@ -2095,13 +2104,13 @@ Converts kilometers to miles.
 
     map_dictionary([1, 2, 3], lambda x: x * x) # { 1: 1, 2: 4, 3: 9 }
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Creates a dictionary with the same keys as the provided dictionary and values generated by running the provided function for each value.
 
--   Use `dict.items()` to iterate over the dictionary, assigning the values produced by `fn` to each key of a new dictionary.
+- Use `dict.items()` to iterate over the dictionary, assigning the values produced by `fn` to each key of a new dictionary.
 
 <!-- -->
 
@@ -2114,14 +2123,14 @@ Converts kilometers to miles.
     }
     map_values(users, lambda u : u['age']) # {'fred': 40, 'pebbles': 1}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the maximum value of a list, after mapping each element to a value using the provided function.
 
--   Use `map()` with `fn` to map each element to a value using the provided function.
--   Use `max()` to return the maximum value.
+- Use `map()` with `fn` to map each element to a value using the provided function.
+- Use `max()` to return the maximum value.
 
 <!-- -->
 
@@ -2130,13 +2139,13 @@ Converts kilometers to miles.
 
     max_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 8
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the index of the element with the maximum value in a list.
 
--   Use `max()` and `list.index()` to get the maximum value in the list and return its index.
+- Use `max()` and `list.index()` to get the maximum value in the list and return its index.
 
 <!-- -->
 
@@ -2145,16 +2154,16 @@ Converts kilometers to miles.
 
     max_element_index([5, 8, 9, 7, 10, 3, 0]) # 4
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the `n` maximum elements from the provided list.
 
--   Use `sorted()` to sort the list.
--   Use slice notation to get the specified number of elements.
--   Omit the second argument, `n`, to get a one-element list.
--   If `n` is greater than or equal to the provided list's length, then return the original list (sorted in descending order).
+- Use `sorted()` to sort the list.
+- Use slice notation to get the specified number of elements.
+- Omit the second argument, `n`, to get a one-element list.
+- If `n` is greater than or equal to the provided list's length, then return the original list (sorted in descending order).
 
 <!-- -->
 
@@ -2164,15 +2173,15 @@ Converts kilometers to miles.
     max_n([1, 2, 3]) # [3]
     max_n([1, 2, 3], 2) # [3, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Finds the median of a list of numbers.
 
--   Sort the numbers of the list using `list.sort()`.
--   Find the median, which is either the middle element of the list if the list length is odd or the average of the two middle elements if the list length is even.
--   [`statistics.median()`](https://docs.python.org/3/library/statistics.html#statistics.median) provides similar functionality to this snippet.
+- Sort the numbers of the list using `list.sort()`.
+- Find the median, which is either the middle element of the list if the list length is odd or the average of the two middle elements if the list length is even.
+- [`statistics.median()`](https://docs.python.org/3/library/statistics.html#statistics.median) provides similar functionality to this snippet.
 
 <!-- -->
 
@@ -2186,16 +2195,16 @@ Converts kilometers to miles.
     median([1, 2, 3]) # 2.0
     median([1, 2, 3, 4]) # 2.5
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Merges two or more lists into a list of lists, combining elements from each of the input lists based on their positions.
 
--   Use `max()` combined with a list comprehension to get the length of the longest list in the arguments.
--   Use `range()` in combination with the `max_length` variable to loop as many times as there are elements in the longest list.
--   If a list is shorter than `max_length`, use `fill_value` for the remaining items (defaults to `None`).
--   [`zip()`](https://docs.python.org/3/library/functions.html#zip) and [`itertools.zip_longest()`](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) provide similar functionality to this snippet.
+- Use `max()` combined with a list comprehension to get the length of the longest list in the arguments.
+- Use `range()` in combination with the `max_length` variable to loop as many times as there are elements in the longest list.
+- If a list is shorter than `max_length`, use `fill_value` for the remaining items (defaults to `None`).
+- [`zip()`](https://docs.python.org/3/library/functions.html#zip) and [`itertools.zip_longest()`](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) provide similar functionality to this snippet.
 
 <!-- -->
 
@@ -2213,13 +2222,13 @@ Converts kilometers to miles.
     merge(['a'], [1, 2], [True, False], fill_value = '_')
     # [['a', 1, True], ['_', 2, False]]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Merges two or more dictionaries.
 
--   Create a new `dict` and loop over `dicts`, using `dictionary.update()` to add the key-value pairs from each one to the result.
+- Create a new `dict` and loop over `dicts`, using `dictionary.update()` to add the key-value pairs from each one to the result.
 
 <!-- -->
 
@@ -2239,14 +2248,13 @@ Converts kilometers to miles.
     merge_dictionaries(ages_one, ages_two)
     # { 'Peter': 10, 'Isabel': 11, 'Anna': 9 }
 
-------------------------------------------------------------------------
+---
 
-unlisted: true
---------------
+## unlisted: true
 
 Converts miles to kilometers.
 
--   Follows the conversion formula `km = mi * 1.609344`.
+- Follows the conversion formula `km = mi * 1.609344`.
 
 <!-- -->
 
@@ -2255,14 +2263,14 @@ Converts miles to kilometers.
 
     miles_to_km(5.03) # 8.09500032
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the minimum value of a list, after mapping each element to a value using the provided function.
 
--   Use `map()` with `fn` to map each element to a value using the provided function.
--   Use `min()` to return the minimum value.
+- Use `map()` with `fn` to map each element to a value using the provided function.
+- Use `min()` to return the minimum value.
 
 <!-- -->
 
@@ -2271,13 +2279,13 @@ Converts miles to kilometers.
 
     min_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 2
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the index of the element with the minimum value in a list.
 
--   Use `min()` and `list.index()` to obtain the minimum value in the list and then return its index.
+- Use `min()` and `list.index()` to obtain the minimum value in the list and then return its index.
 
 <!-- -->
 
@@ -2286,16 +2294,16 @@ Converts miles to kilometers.
 
     min_element_index([3, 5, 2, 6, 10, 7, 9]) # 2
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the `n` minimum elements from the provided list.
 
--   Use `sorted()` to sort the list.
--   Use slice notation to get the specified number of elements.
--   Omit the second argument, `n`, to get a one-element list.
--   If `n` is greater than or equal to the provided list's length, then return the original list (sorted in ascending order).
+- Use `sorted()` to sort the list.
+- Use slice notation to get the specified number of elements.
+- Omit the second argument, `n`, to get a one-element list.
+- If `n` is greater than or equal to the provided list's length, then return the original list (sorted in ascending order).
 
 <!-- -->
 
@@ -2305,14 +2313,14 @@ Converts miles to kilometers.
     min_n([1, 2, 3]) # [1]
     min_n([1, 2, 3], 2) # [1, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the month difference between two dates.
 
--   Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
--   Divide by `30` and use `math.ceil()` to get the difference in months (rounded up).
+- Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
+- Divide by `30` and use `math.ceil()` to get the difference in months (rounded up).
 
 <!-- -->
 
@@ -2325,14 +2333,14 @@ Converts miles to kilometers.
 
     months_diff(date(2020, 10, 28), date(2020, 11, 25)) # 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the most frequent element in a list.
 
--   Use `set()` to get the unique values in `lst`.
--   Use `max()` to find the element that has the most appearances.
+- Use `set()` to get the unique values in `lst`.
+- Use `max()` to find the element that has the most appearances.
 
 <!-- -->
 
@@ -2341,13 +2349,13 @@ Converts miles to kilometers.
 
     most_frequent([1, 2, 1, 2, 3, 2, 1, 4, 2]) #2
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Generates a string with the given string value repeated `n` number of times.
 
--   Repeat the string `n` times, using the `*` operator.
+- Repeat the string `n` times, using the `*` operator.
 
 <!-- -->
 
@@ -2356,13 +2364,13 @@ Converts miles to kilometers.
 
     n_times_string('py', 4) #'pypypypy'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the provided function returns `True` for at least one element in the list.
 
--   Use `all()` and `fn` to check if `fn` returns `False` for all the elements in the list.
+- Use `all()` and `fn` to check if `fn` returns `False` for all the elements in the list.
 
 <!-- -->
 
@@ -2372,13 +2380,13 @@ Converts miles to kilometers.
     none([0, 1, 2, 0], lambda x: x >= 2 ) # False
     none([0, 0, 0]) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Maps a number from one range to another range.
 
--   Return `num` mapped between `outMin`-`outMax` from `inMin`-`inMax`.
+- Return `num` mapped between `outMin`-`outMax` from `inMin`-`inMax`.
 
 <!-- -->
 
@@ -2388,13 +2396,13 @@ Converts miles to kilometers.
 
     num_to_range(5, 0, 10, 0, 100) # 50.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Moves the specified amount of elements to the end of the list.
 
--   Use slice notation to get the two slices of the list and combine them before returning.
+- Use slice notation to get the two slices of the list and combine them before returning.
 
 <!-- -->
 
@@ -2404,14 +2412,14 @@ Converts miles to kilometers.
     offset([1, 2, 3, 4, 5], 2) # [3, 4, 5, 1, 2]
     offset([1, 2, 3, 4, 5], -2) # [4, 5, 1, 2, 3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Pads a string on both sides with the specified character, if it's shorter than the specified length.
 
--   Use `str.ljust()` and `str.rjust()` to pad both sides of the given string.
--   Omit the third argument, `char`, to use the whitespace character as the default padding character.
+- Use `str.ljust()` and `str.rjust()` to pad both sides of the given string.
+- Omit the third argument, `char`, to use the whitespace character as the default padding character.
 
 <!-- -->
 
@@ -2424,13 +2432,13 @@ Converts miles to kilometers.
     pad('42', 6, '0') # '004200'
     pad('foobar', 3) # 'foobar'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Pads a given number to the specified length.
 
--   Use `str.zfill()` to pad the number to the specified length, after converting it to a string.
+- Use `str.zfill()` to pad the number to the specified length, after converting it to a string.
 
 <!-- -->
 
@@ -2439,14 +2447,14 @@ Converts miles to kilometers.
 
     pad_number(1234, 6); # '001234'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the given string is a palindrome.
 
--   Use `str.lower()` and `re.sub()` to convert to lowercase and remove non-alphanumeric characters from the given string.
--   Then, compare the new string with its reverse, using slice notation.
+- Use `str.lower()` and `re.sub()` to convert to lowercase and remove non-alphanumeric characters from the given string.
+- Then, compare the new string with its reverse, using slice notation.
 
 <!-- -->
 
@@ -2458,13 +2466,13 @@ Converts miles to kilometers.
 
     palindrome('taco cat') # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a list of dictionaries into a list of values corresponding to the specified `key`.
 
--   Use a list comprehension and `dict.get()` to get the value of `key` for each dictionary in `lst`.
+- Use a list comprehension and `dict.get()` to get the value of `key` for each dictionary in `lst`.
 
 <!-- -->
 
@@ -2479,15 +2487,15 @@ Converts miles to kilometers.
     ]
     pluck(simpsons, 'age') # [8, 36, 34, 10]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the powerset of a given iterable.
 
--   Use `list()` to convert the given value to a list.
--   Use `range()` and `itertools.combinations()` to create a generator that returns all subsets.
--   Use `itertools.chain.from_iterable()` and `list()` to consume the generator and return a list.
+- Use `list()` to convert the given value to a list.
+- Use `range()` and `itertools.combinations()` to create a generator that returns all subsets.
+- Use `itertools.chain.from_iterable()` and `list()` to consume the generator and return a list.
 
 <!-- -->
 
@@ -2499,13 +2507,13 @@ Converts miles to kilometers.
 
     powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts an angle from radians to degrees.
 
--   Use `math.pi` and the radian to degree formula to convert the angle from radians to degrees.
+- Use `math.pi` and the radian to degree formula to convert the angle from radians to degrees.
 
 <!-- -->
 
@@ -2518,13 +2526,13 @@ Converts miles to kilometers.
 
     rads_to_degrees(pi / 2) # 90.0
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Reverses a list or a string.
 
--   Use slice notation to reverse the list or string.
+- Use slice notation to reverse the list or string.
 
 <!-- -->
 
@@ -2534,14 +2542,14 @@ Converts miles to kilometers.
     reverse([1, 2, 3]) # [3, 2, 1]
     reverse('snippet') # 'teppins'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Reverses a number.
 
--   Use `str()` to convert the number to a string, slice notation to reverse it and `str.replace()` to remove the sign.
--   Use `float()` to convert the result to a number and `math.copysign()` to copy the original sign.
+- Use `str()` to convert the number to a string, slice notation to reverse it and `str.replace()` to remove the sign.
+- Use `float()` to convert the result to a number and `math.copysign()` to copy the original sign.
 
 <!-- -->
 
@@ -2555,14 +2563,14 @@ Converts miles to kilometers.
     reverse_number(73.6) # 6.37
     reverse_number(-5.23) # -32.5
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts the values of RGB components to a hexadecimal color code.
 
--   Create a placeholder for a zero-padded hexadecimal value using `'{:02X}'` and copy it three times.
--   Use `str.format()` on the resulting string to replace the placeholders with the given values.
+- Create a placeholder for a zero-padded hexadecimal value using `'{:02X}'` and copy it three times.
+- Use `str.format()` on the resulting string to replace the placeholders with the given values.
 
 <!-- -->
 
@@ -2571,13 +2579,13 @@ Converts miles to kilometers.
 
     rgb_to_hex(255, 165, 1) # 'FFA501'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Moves the specified amount of elements to the start of the list.
 
--   Use slice notation to get the two slices of the list and combine them before returning.
+- Use slice notation to get the two slices of the list and combine them before returning.
 
 <!-- -->
 
@@ -2587,13 +2595,13 @@ Converts miles to kilometers.
     roll([1, 2, 3, 4, 5], 2) # [4, 5, 1, 2, 3]
     roll([1, 2, 3, 4, 5], -2) # [3, 4, 5, 1, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a random element from a list.
 
--   Use `random.choice()` to get a random element from `lst`.
+- Use `random.choice()` to get a random element from `lst`.
 
 <!-- -->
 
@@ -2604,14 +2612,14 @@ Converts miles to kilometers.
 
     sample([3, 7, 9, 11]) # 9
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Randomizes the order of the values of an list, returning a new list.
 
--   Uses the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to reorder the elements of the list.
--   [`random.shuffle`](https://docs.python.org/3/library/random.html#random.shuffle) provides similar functionality to this snippet.
+- Uses the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to reorder the elements of the list.
+- [`random.shuffle`](https://docs.python.org/3/library/random.html#random.shuffle) provides similar functionality to this snippet.
 
 <!-- -->
 
@@ -2630,13 +2638,13 @@ Converts miles to kilometers.
     foo = [1, 2, 3]
     shuffle(foo) # [2, 3, 1], foo = [1, 2, 3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list of elements that exist in both lists.
 
--   Use a list comprehension on `a` to only keep values contained in both lists.
+- Use a list comprehension on `a` to only keep values contained in both lists.
 
 <!-- -->
 
@@ -2645,14 +2653,14 @@ Converts miles to kilometers.
 
     similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a string to a URL-friendly slug.
 
--   Use `str.lower()` and `str.strip()` to normalize the input string.
--   Use `re.sub()` to to replace spaces, dashes and underscores with `-` and remove special characters.
+- Use `str.lower()` and `str.strip()` to normalize the input string.
+- Use `re.sub()` to to replace spaces, dashes and underscores with `-` and remove special characters.
 
 <!-- -->
 
@@ -2667,15 +2675,15 @@ Converts miles to kilometers.
 
     slugify('Hello World!') # 'hello-world'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a string to snake case.
 
--   Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
--   Use `re.sub()` to replace any `-` characters with spaces.
--   Finally, use `str.join()` to combine all words using `-` as the separator.
+- Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
+- Use `re.sub()` to replace any `-` characters with spaces.
+- Finally, use `str.join()` to combine all words using `-` as the separator.
 
 <!-- -->
 
@@ -2693,13 +2701,13 @@ Converts miles to kilometers.
     # 'some_mixed_string_with_spaces_underscores_and_hyphens'
     snake('AllThe-small Things') # 'all_the_small_things'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Checks if the provided function returns `True` for at least one element in the list.
 
--   Use `any()` in combination with `map()` to check if `fn` returns `True` for any element in the list.
+- Use `any()` in combination with `map()` to check if `fn` returns `True` for any element in the list.
 
 <!-- -->
 
@@ -2709,15 +2717,15 @@ Converts miles to kilometers.
     some([0, 1, 2, 0], lambda x: x >= 2 ) # True
     some([0, 0, 1, 0]) # True
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Sorts one list based on another list containing the desired indexes.
 
--   Use `zip()` and `sorted()` to combine and sort the two lists, based on the values of `indexes`.
--   Use a list comprehension to get the first element of each pair from the result.
--   Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the third argument.
+- Use `zip()` and `sorted()` to combine and sort the two lists, based on the values of `indexes`.
+- Use a list comprehension to get the first element of each pair from the result.
+- Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the third argument.
 
 <!-- -->
 
@@ -2731,15 +2739,15 @@ Converts miles to kilometers.
     sort_by_indexes(a, b, True)
     # ['oranges', 'milk', 'jam', 'eggs', 'bread', 'apples']
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Sorts the given dictionary by key.
 
--   Use `dict.items()` to get a list of tuple pairs from `d` and sort it using `sorted()`.
--   Use `dict()` to convert the sorted list back to a dictionary.
--   Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
+- Use `dict.items()` to get a list of tuple pairs from `d` and sort it using `sorted()`.
+- Use `dict()` to convert the sorted list back to a dictionary.
+- Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
 
 <!-- -->
 
@@ -2751,16 +2759,16 @@ Converts miles to kilometers.
     sort_dict_by_key(d, True)
     # {'two': 2, 'three': 3, 'one': 1, 'four': 4, 'five': 5}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Sorts the given dictionary by value.
 
--   Use `dict.items()` to get a list of tuple pairs from `d` and sort it using a lambda function and `sorted()`.
--   Use `dict()` to convert the sorted list back to a dictionary.
--   Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
--   **⚠️ NOTICE:** Dictionary values must be of the same type.
+- Use `dict.items()` to get a list of tuple pairs from `d` and sort it using a lambda function and `sorted()`.
+- Use `dict()` to convert the sorted list back to a dictionary.
+- Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
+- **⚠️ NOTICE:** Dictionary values must be of the same type.
 
 <!-- -->
 
@@ -2772,14 +2780,14 @@ Converts miles to kilometers.
     sort_dict_by_value(d, True)
     # {'five': 5, 'four': 4, 'three': 3, 'two': 2, 'one': 1}
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Splits a multiline string into a list of lines.
 
--   Use `str.split()` and `'\n'` to match line breaks and create a list.
--   [`str.splitlines()`](https://docs.python.org/3/library/stdtypes.html#str.splitlines) provides similar functionality to this snippet.
+- Use `str.split()` and `'\n'` to match line breaks and create a list.
+- [`str.splitlines()`](https://docs.python.org/3/library/stdtypes.html#str.splitlines) provides similar functionality to this snippet.
 
 <!-- -->
 
@@ -2789,13 +2797,13 @@ Converts miles to kilometers.
     split_lines('This\nis a\nmultiline\nstring.\n')
     # ['This', 'is a', 'multiline', 'string.' , '']
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Flattens a list, by spreading its elements into a new list.
 
--   Loop over elements, use `list.extend()` if the element is a list, `list.append()` otherwise.
+- Loop over elements, use `list.extend()` if the element is a list, `list.append()` otherwise.
 
 <!-- -->
 
@@ -2807,14 +2815,14 @@ Converts miles to kilometers.
 
     spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Calculates the sum of a list, after mapping each element to a value using the provided function.
 
--   Use `map()` with `fn` to map each element to a value using the provided function.
--   Use `sum()` to return the sum of the values.
+- Use `map()` with `fn` to map each element to a value using the provided function.
+- Use `sum()` to return the sum of the values.
 
 <!-- -->
 
@@ -2823,16 +2831,16 @@ Converts miles to kilometers.
 
     sum_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 20
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the sum of the powers of all the numbers from `start` to `end` (both inclusive).
 
--   Use `range()` in combination with a list comprehension to create a list of elements in the desired range raised to the given `power`.
--   Use `sum()` to add the values together.
--   Omit the second argument, `power`, to use a default power of `2`.
--   Omit the third argument, `start`, to use a default starting value of `1`.
+- Use `range()` in combination with a list comprehension to create a list of elements in the desired range raised to the given `power`.
+- Use `sum()` to add the values together.
+- Omit the second argument, `power`, to use a default power of `2`.
+- Omit the third argument, `start`, to use a default starting value of `1`.
 
 <!-- -->
 
@@ -2843,14 +2851,14 @@ Converts miles to kilometers.
     sum_of_powers(10, 3) # 3025
     sum_of_powers(10, 3, 5) # 2925
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the symmetric difference between two iterables, without filtering out duplicate values.
 
--   Create a `set` from each list.
--   Use a list comprehension on each of them to only keep values not contained in the previously created set of the other.
+- Create a `set` from each list.
+- Use a list comprehension on each of them to only keep values not contained in the previously created set of the other.
 
 <!-- -->
 
@@ -2861,14 +2869,14 @@ Converts miles to kilometers.
 
     symmetric_difference([1, 2, 3], [1, 2, 4]) # [3, 4]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the symmetric difference between two lists, after applying the provided function to each list element of both.
 
--   Create a `set` by applying `fn` to each element in every list.
--   Use a list comprehension in combination with `fn` on each of them to only keep values not contained in the previously created set of the other.
+- Create a `set` by applying `fn` to each element in every list.
+- Use a list comprehension in combination with `fn` on each of them to only keep values not contained in the previously created set of the other.
 
 <!-- -->
 
@@ -2881,14 +2889,14 @@ Converts miles to kilometers.
 
     symmetric_difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2, 3.4]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns all elements in a list except for the first one.
 
--   Use slice notation to return the last element if the list's length is more than `1`.
--   Otherwise, return the whole list.
+- Use slice notation to return the last element if the list's length is more than `1`.
+- Otherwise, return the whole list.
 
 <!-- -->
 
@@ -2898,13 +2906,13 @@ Converts miles to kilometers.
     tail([1, 2, 3]) # [2, 3]
     tail([1]) # [1]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list with `n` elements removed from the beginning.
 
--   Use slice notation to create a slice of the list with `n` elements taken from the beginning.
+- Use slice notation to create a slice of the list with `n` elements taken from the beginning.
 
 <!-- -->
 
@@ -2914,13 +2922,13 @@ Converts miles to kilometers.
     take([1, 2, 3], 5) # [1, 2, 3]
     take([1, 2, 3], 0) # []
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a list with `n` elements removed from the end.
 
--   Use slice notation to create a slice of the list with `n` elements taken from the end.
+- Use slice notation to create a slice of the list with `n` elements taken from the end.
 
 <!-- -->
 
@@ -2930,13 +2938,13 @@ Converts miles to kilometers.
     take_right([1, 2, 3], 2) # [2, 3]
     take_right([1, 2, 3]) # [3]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the binary representation of the given number.
 
--   Use `bin()` to convert a given decimal number into its binary equivalent.
+- Use `bin()` to convert a given decimal number into its binary equivalent.
 
 <!-- -->
 
@@ -2945,15 +2953,15 @@ Converts miles to kilometers.
 
     to_binary(100) # 0b1100100
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Combines two lists into a dictionary, where the elements of the first one serve as the keys and the elements of the second one serve as the values.
 
 The values of the first list need to be unique and hashable.
 
--   Use `zip()` in combination with `dict()` to combine the values of the two lists into a dictionary.
+- Use `zip()` in combination with `dict()` to combine the values of the two lists into a dictionary.
 
 <!-- -->
 
@@ -2962,13 +2970,13 @@ The values of the first list need to be unique and hashable.
 
     to_dictionary(['a', 'b'], [1, 2]) # { a: 1, b: 2 }
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the hexadecimal representation of the given number.
 
--   Use `hex()` to convert a given decimal number into its hexadecimal equivalent.
+- Use `hex()` to convert a given decimal number into its hexadecimal equivalent.
 
 <!-- -->
 
@@ -2978,13 +2986,13 @@ The values of the first list need to be unique and hashable.
     to_hex(41) # 0x29
     to_hex(332) # 0x14c
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a date to its ISO-8601 representation.
 
--   Use `datetime.datetime.isoformat()` to convert the given `datetime.datetime` object to an ISO-8601 date.
+- Use `datetime.datetime.isoformat()` to convert the given `datetime.datetime` object to an ISO-8601 date.
 
 <!-- -->
 
@@ -2997,17 +3005,17 @@ The values of the first list need to be unique and hashable.
 
     to_iso_date(datetime(2020, 10, 25)) # 2020-10-25T00:00:00
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts an integer to its roman numeral representation.
 
 Accepts value between `1` and `3999` (both inclusive).
 
--   Create a lookup list containing tuples in the form of (roman value, integer).
--   Use a `for` loop to iterate over the values in `lookup`.
--   Use `divmod()` to update `num` with the remainder, adding the roman numeral representation to the result.
+- Create a lookup list containing tuples in the form of (roman value, integer).
+- Use a `for` loop to iterate over the values in `lookup`.
+- Use `divmod()` to update `num` with the remainder, adding the roman numeral representation to the result.
 
 <!-- -->
 
@@ -3037,14 +3045,14 @@ Accepts value between `1` and `3999` (both inclusive).
     to_roman_numeral(11) # 'XI'
     to_roman_numeral(1998) # 'MCMXCVIII'
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Transposes a two-dimensional list.
 
--   Use `*lst` to get the provided list as tuples.
--   Use `zip()` in combination with `list()` to create the transpose of the given two-dimensional list.
+- Use `*lst` to get the provided list as tuples.
+- Use `zip()` in combination with `list()` to create the transpose of the given two-dimensional list.
 
 <!-- -->
 
@@ -3054,15 +3062,15 @@ Accepts value between `1` and `3999` (both inclusive).
     transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
     # [(1, 4, 7, 10), (2, 5, 8, 11), (3, 6, 9, 12)]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Builds a list, using an iterator function and an initial seed value.
 
--   The iterator function accepts one argument (`seed`) and must always return a list with two elements (\[`value`, `nextSeed`\]) or `False` to terminate.
--   Use a generator function, `fn_generator`, that uses a `while` loop to call the iterator function and `yield` the `value` until it returns `False`.
--   Use a list comprehension to return the list that is produced by the generator, using the iterator function.
+- The iterator function accepts one argument (`seed`) and must always return a list with two elements (\[`value`, `nextSeed`\]) or `False` to terminate.
+- Use a generator function, `fn_generator`, that uses a `while` loop to call the iterator function and `yield` the `value` until it returns `False`.
+- Use a list comprehension to return the list that is produced by the generator, using the iterator function.
 
 <!-- -->
 
@@ -3077,13 +3085,13 @@ Accepts value between `1` and `3999` (both inclusive).
     f = lambda n: False if n > 50 else [-n, n + 10]
     unfold(f, 10) # [-10, -20, -30, -40, -50]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns every element that exists in any of the two lists once.
 
--   Create a `set` with all values of `a` and `b` and convert to a `list`.
+- Create a `set` with all values of `a` and `b` and convert to a `list`.
 
 <!-- -->
 
@@ -3092,15 +3100,15 @@ Accepts value between `1` and `3999` (both inclusive).
 
     union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns every element that exists in any of the two lists once, after applying the provided function to each element of both.
 
--   Create a `set` by applying `fn` to each element in `a`.
--   Use a list comprehension in combination with `fn` on `b` to only keep values not contained in the previously created set, `_a`.
--   Finally, create a `set` from the previous result and `a` and transform it into a `list`
+- Create a `set` by applying `fn` to each element in `a`.
+- Use a list comprehension in combination with `fn` on `b` to only keep values not contained in the previously created set, `_a`.
+- Finally, create a `set` from the previous result and `a` and transform it into a `list`
 
 <!-- -->
 
@@ -3112,13 +3120,13 @@ Accepts value between `1` and `3999` (both inclusive).
 
     union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the unique elements in a given list.
 
--   Create a `set` from the list to discard duplicated values, then return a `list` from it.
+- Create a `set` from the list to discard duplicated values, then return a `list` from it.
 
 <!-- -->
 
@@ -3127,14 +3135,14 @@ Accepts value between `1` and `3999` (both inclusive).
 
     unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns a flat list of all the values in a flat dictionary.
 
--   Use `dict.values()` to return the values in the given dictionary.
--   Return a `list()` of the previous result.
+- Use `dict.values()` to return the values in the given dictionary.
+- Return a `list()` of the previous result.
 
 <!-- -->
 
@@ -3148,14 +3156,14 @@ Accepts value between `1` and `3999` (both inclusive).
     }
     values_only(ages) # [10, 11, 9]
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Returns the weighted average of two or more numbers.
 
--   Use `sum()` to sum the products of the numbers by their weight and to sum the weights.
--   Use `zip()` and a list comprehension to iterate over the pairs of values and weights.
+- Use `sum()` to sum the products of the numbers by their weight and to sum the weights.
+- Use `zip()` and a list comprehension to iterate over the pairs of values and weights.
 
 <!-- -->
 
@@ -3164,13 +3172,13 @@ Accepts value between `1` and `3999` (both inclusive).
 
     weighted_average([1, 2, 3], [0.6, 0.2, 0.3]) # 1.72727
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Tests a value, `x`, against a testing function, conditionally applying a function.
 
--   Check if the value of `predicate(x)` is `True` and if so return `when_true(x)`, otherwise return `x`.
+- Check if the value of `predicate(x)` is `True` and if so return `when_true(x)`, otherwise return `x`.
 
 <!-- -->
 
@@ -3181,14 +3189,14 @@ Accepts value between `1` and `3999` (both inclusive).
     double_even_numbers(2) # 4
     double_even_numbers(1) # 1
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
 ### Converts a given string into a list of words.
 
--   Use `re.findall()` with the supplied `pattern` to find all matching substrings.
--   Omit the second argument to use the default regexp, which matches alphanumeric and hyphens.
+- Use `re.findall()` with the supplied `pattern` to find all matching substrings.
+- Omit the second argument to use the default regexp, which matches alphanumeric and hyphens.
 
 <!-- -->
 
@@ -3202,12 +3210,7 @@ Accepts value between `1` and `3999` (both inclusive).
     words('build -q --out one-item', r'\b[a-zA-Z-]+\b')
     # ['build', 'q', 'out', 'one-item']
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

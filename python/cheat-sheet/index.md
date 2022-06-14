@@ -1,255 +1,268 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Python Cheat Sheet
-==================
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Lorem ipsum
------------
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-Python Cheat Sheet
-==================
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Python Basics
--------------
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Python Cheat Sheet
+
+## Lorem ipsum
+
+# Python Cheat Sheet
+
+## Python Basics
 
 ### Math Operators
 
@@ -373,8 +386,7 @@ Float to Integer:
 
     int(7.7) + 1
 
-Flow Control
-------------
+## Flow Control
 
 ### Comparison Operators
 
@@ -436,15 +448,15 @@ And these as well:
 
 There are three Boolean operators: and, or, and not.
 
-The *and* Operator’s *Truth* Table:
+The _and_ Operator’s _Truth_ Table:
 
 <table><thead><tr class="header"><th>Expression</th><th>Evaluates to</th></tr></thead><tbody><tr class="odd"><td>True and True</td><td>True</td></tr><tr class="even"><td>True and False</td><td>False</td></tr><tr class="odd"><td>False and True</td><td>False</td></tr><tr class="even"><td>False and False</td><td>False</td></tr></tbody></table>
 
-The *or* Operator’s *Truth* Table:
+The _or_ Operator’s _Truth_ Table:
 
 <table><thead><tr class="header"><th>Expression</th><th>Evaluates to</th></tr></thead><tbody><tr class="odd"><td>True or True</td><td>True</td></tr><tr class="even"><td>True or False</td><td>True</td></tr><tr class="odd"><td>False or True</td><td>True</td></tr><tr class="even"><td>False or False</td><td>False</td></tr></tbody></table>
 
-The *not* Operator’s *Truth* Table:
+The _not_ Operator’s _Truth_ Table:
 
 <table><thead><tr class="header"><th>Expression</th><th>Evaluates to</th></tr></thead><tbody><tr class="odd"><td>not True</td><td>False</td></tr><tr class="even"><td>not False</td><td>True</td></tr></tbody></table>
 
@@ -536,7 +548,7 @@ When the program execution reaches a continue statement, the program execution i
     for i in range(5):
         print('Jimmy Five Times ({})'.format(str(i)))
 
-The *range()* function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
+The _range()_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
     for i in range(0, 10, 2):
        print(i)
@@ -578,8 +590,7 @@ This allows to specify a statement to execute in case of the full loop has been 
             sys.exit()
         print('You typed {}.'.format(response))
 
-Functions
----------
+## Functions
 
     def hello(name):
         print('Hello {}'.format(name))
@@ -588,8 +599,8 @@ Functions
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
--   The return keyword.
--   The value or expression that the function should return.
+- The return keyword.
+- The value or expression that the function should return.
 
 <!-- -->
 
@@ -636,10 +647,10 @@ Note: never compare to `None` with the `==` operator. Always use `is`.
 
 ### Local and Global Scope
 
--   Code in the global scope cannot use any local variables.
--   However, a local scope can access global variables.
--   Code in a function’s local scope cannot use variables in any other local scope.
--   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+- Code in the global scope cannot use any local variables.
+- However, a local scope can access global variables.
+- Code in a function’s local scope cannot use variables in any other local scope.
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ### The global Statement
 
@@ -660,8 +671,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 3.  Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.
 4.  But if the variable is not used in an assignment statement, it is a global variable.
 
-Exception Handling
-------------------
+## Exception Handling
 
 ### Basic exception handling
 
@@ -691,8 +701,7 @@ Code inside the `finally` section is always executed, no matter if an exception 
     print(spam(12))
     print(spam(0))
 
-Lists
------
+## Lists
 
     ['cat', 'bat', 'rat', 'elephant']
 
@@ -883,8 +892,7 @@ You can use the built-in function `sorted` to return a new list:
     spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
     sorted(spam)
 
-Tuple Data Type
----------------
+## Tuple Data Type
 
     eggs = ('hello', 42, 0.5)
     eggs[0]
@@ -895,8 +903,7 @@ Tuple Data Type
 
 The main way that tuples are different from lists is that tuples, like strings, are immutable.
 
-Converting Types with the list and tuple Functions
---------------------------------------------------
+## Converting Types with the list and tuple Functions
 
     tuple(['cat', 'dog', 5])
 
@@ -904,8 +911,7 @@ Converting Types with the list and tuple Functions
 
     list('hello')
 
-Dictionaries and Structuring Data
----------------------------------
+## Dictionaries and Structuring Data
 
 Example Dictionary:
 
@@ -998,8 +1004,7 @@ Using `setdefault` we could make the same code more shortly:
     z = {**x, **y}
     z
 
-sets
-----
+## sets
 
 From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -1086,7 +1091,7 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
     s2 = {2, 3, 4}
     s1.difference(s2)  # or 's1 - s2'
 
-### set symetric\_difference
+### set symetric_difference
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
@@ -1094,16 +1099,15 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
     s2 = {2, 3, 4}
     s1.symmetric_difference(s2)  # or 's1 ^ s2'
 
-itertools Module
-----------------
+## itertools Module
 
-The *itertools* module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The _itertools_ module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
 > The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
-The *itertools* module comes in the standard library and must be imported.
+The _itertools_ module comes in the standard library and must be imported.
 
 The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
 
@@ -1392,7 +1396,7 @@ Example:
     for each in beta_colors:
        print(each)
 
-### zip\_longest
+### zip_longest
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
@@ -1406,8 +1410,7 @@ Example:
     for each in itertools.zip_longest(colors, data, fillvalue=None):
        print(each)
 
-Comprehensions
---------------
+## Comprehensions
 
 ### List comprehension
 
@@ -1429,8 +1432,7 @@ A List comprehension can be generated from a dictionary:
     c = {'name': 'Pooka', 'first_name': 'Oooka'}
     ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
 
-Manipulating Strings
---------------------
+## Manipulating Strings
 
 ### Escape Characters
 
@@ -1552,11 +1554,11 @@ isupper() and islower():
 
 ### The isX String Methods
 
--   **isalpha()** returns True if the string consists only of letters and is not blank.
--   **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
--   **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
--   **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
--   **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
+- **isalpha()** returns True if the string consists only of letters and is not blank.
+- **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
+- **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
+- **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+- **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
 
 ### The startswith and endswith String Methods
 
@@ -1637,8 +1639,7 @@ First, install `pypeerclip` with pip:
     pyperclip.copy('Hello world!')
     pyperclip.paste()
 
-String Formatting
------------------
+## String Formatting
 
 ### % operator
 
@@ -1707,8 +1708,7 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
     t = Template('Hey $name!')
     t.substitute(name=name)
 
-Regular Expressions
--------------------
+## Regular Expressions
 
 1.  Import the regex module with `import re`.
 2.  Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
@@ -1838,8 +1838,8 @@ In addition to the search() method, Regex objects also have a findall() method. 
 
 To summarize what the findall() method returns, remember the following:
 
--   When called on a regex with no groups, such as \\d-\\d\\d\\d-\\d\\d\\d\\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'\].
--   When called on a regex that has groups, such as (\\d\\d\\d)-d\\d)-(\\d\\ d\\d\\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', ', '9999'), ('212', '555', '0000')\].
+- When called on a regex with no groups, such as \\d-\\d\\d\\d-\\d\\d\\d\\d, the method findall() returns a list of ng matches, such as \['415-555-9999', '212-555-0000'\].
+- When called on a regex that has groups, such as (\\d\\d\\d)-d\\d)-(\\d\\ d\\d\\d), the method findall() returns a list of es of strings (one string for each group), such as \[('415', ', '9999'), ('212', '555', '0000')\].
 
 ### Making Your Own Character Classes
 
@@ -1857,9 +1857,9 @@ By placing a caret character (^) just after the character class’s opening brac
 
 ### The Caret and Dollar Sign Characters
 
--   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
--   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
--   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+- You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+- Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -1963,8 +1963,7 @@ you can spread the regular expression over multiple lines with comments like thi
         (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
         )''', re.VERBOSE)
 
-Handling File and Directory Paths
----------------------------------
+## Handling File and Directory Paths
 
 There are two main modules in Python that deals with path manipulation. One is the `os.path` module and the other is the `pathlib` module. The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 
@@ -2057,8 +2056,8 @@ And all is good :)
 
 There are two ways to specify a file path.
 
--   An absolute path, which always begins with the root folder
--   A relative path, which is relative to the program’s current working directory
+- An absolute path, which always begins with the root folder
+- A relative path, which is relative to the program’s current working directory
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
@@ -2272,9 +2271,9 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 
 ### Permanently Deleting Files and Folders
 
--   Calling os.unlink(path) or Path.unlink() will delete the file at path.
--   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
--   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+- Calling os.unlink(path) or Path.unlink() will delete the file at path.
+- Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
+- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ### Safe Deletes with the send2trash Module
 
@@ -2303,8 +2302,7 @@ You can install this module by running pip install send2trash from a Terminal wi
 
 `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the [official documentation](https://docs.python.org/3/library/pathlib.html) if you want to know more!
 
-Reading and Writing Files
--------------------------
+## Reading and Writing Files
 
 ### The File Reading/Writing Process
 
@@ -2317,7 +2315,7 @@ To read/write to a file in Python, you will want to use the `with` statement, wh
 
     hello_content
 
-Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
+Alternatively, you can use the _readlines()_ method to get a list of string values from the file, one string for each line of text:
 
     with open('sonnet29.txt') as sonnet_file:
         sonnet_file.readlines()
@@ -2411,8 +2409,7 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 
 This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.
 
-JSON, YAML and configuration files
-----------------------------------
+## JSON, YAML and configuration files
 
 ### JSON
 
@@ -2436,8 +2433,8 @@ Compared to JSON, YAML allows a much better humain maintainance and gives abilit
 
 There are two main librairies allowing to access to YAML files:
 
--   [PyYaml](https://pypi.python.org/pypi/PyYAML)
--   [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+- [PyYaml](https://pypi.python.org/pypi/PyYAML)
+- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -2465,16 +2462,15 @@ Usage:
 
     conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 
-Debugging
----------
+## Debugging
 
 ### Raising Exceptions
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
--   The raise keyword
--   A call to the Exception() function
--   A string with a helpful error message passed to the Exception() function
+- The raise keyword
+- A call to the Exception() function
+- A string with a helpful error message passed to the Exception() function
 
 <!-- -->
 
@@ -2505,7 +2501,7 @@ Often it’s the code that calls the function, not the function itself, that kno
 
 ### Getting the Traceback as a String
 
-The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc(). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
+The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
     import traceback
 
@@ -2526,10 +2522,10 @@ The 116 is the return value from the write() method, since 116 characters were w
 
 An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
--   The assert keyword
--   A condition (that is, an expression that evaluates to True or False)
--   A comma
--   A string to display when the condition is False
+- The assert keyword
+- A condition (that is, an expression that evaluates to True or False)
+- A comma
+- A string to display when the condition is False
 
 <!-- -->
 
@@ -2605,8 +2601,7 @@ Instead of displaying the log messages to the screen, you can write them to a te
 
     logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-Lambda Functions
-----------------
+## Lambda Functions
 
 This function:
 
@@ -2615,7 +2610,7 @@ This function:
 
     add(5, 3)
 
-Is equivalent to the *lambda* function:
+Is equivalent to the _lambda_ function:
 
     add = lambda x, y: x + y
     add(5, 3)
@@ -2634,8 +2629,7 @@ Like regular nested functions, lambdas also work as lexical closures:
 
 Note: lambda can only evaluate an expression, like a single line of code.
 
-Ternary Conditional Operator
-----------------------------
+## Ternary Conditional Operator
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
 
@@ -2662,8 +2656,7 @@ The code above is equivalent to:
     else:
         print('adult')
 
-args and kwargs
----------------
+## args and kwargs
 
 The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
@@ -2727,8 +2720,7 @@ If you do not specify \*\* for kwargs
 3.  Keyword arguments with default values make it easy to add new behaviors to a function, especially when the function has existing callers.
 4.  Optional keyword arguments should always be passed by keyword instead of by position.
 
-Context Manager
----------------
+## Context Manager
 
 While Python's context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
 
@@ -2762,8 +2754,7 @@ It is also possible to write a context manager using generator syntax thanks to 
         # 'cm' will have the value that was yielded
         print('Right in the middle with cm = {}'.format(cm))
 
-`__main__` Top-level script environment
----------------------------------------
+## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes. A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
@@ -2799,8 +2790,7 @@ For example we are developing script which is designed to be used as module, we 
 3.  Python files can act as either reusable modules, or as standalone programs.
 4.  if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
-setup.py
---------
+## setup.py
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
@@ -2812,7 +2802,7 @@ This allows you to easily install Python packages. Often it's enough to write:
 
 and module will install itself.
 
-Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
+Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
     from distutils.core import setup
     setup(
@@ -2825,8 +2815,7 @@ Our initial setup.py will also include information about the license and will re
 
 Find more information visit <http://docs.python.org/install/index.html>.
 
-Dataclasses
------------
+## Dataclasses
 
 `Dataclasses` are python classes but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
 
@@ -2888,589 +2877,469 @@ It is mandatory to define the data type in dataclass. However, If you don't want
        name: Any
        value: Any = 42
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
-------------------------------------------------------------------------
+---
 
-PART 2:
-=======
+# PART 2:
 
-Single line comments start with a number symbol.
-================================================
+# Single line comments start with a number symbol.
 
 """ Multiline strings can be written using three "s, and are often used as documentation. """
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 1. Primitive Datatypes and Operators
-------------------------------------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-You have numbers
-================
+# You have numbers
 
 3 \# =&gt; 3
 
-Math is what you would expect
-=============================
+# Math is what you would expect
 
 1 + 1 \# =&gt; 2 8 - 1 \# =&gt; 7 10 \* 2 \# =&gt; 20 35 / 5 \# =&gt; 7.0
 
-Integer division rounds down for both positive and negative numbers.
-====================================================================
+# Integer division rounds down for both positive and negative numbers.
 
 5 // 3 \# =&gt; 1 -5 // 3 \# =&gt; -2 5.0 // 3.0 \# =&gt; 1.0 \# works on floats too -5.0 // 3.0 \# =&gt; -2.0
 
-The result of division is always a float
-========================================
+# The result of division is always a float
 
 10.0 / 3 \# =&gt; 3.3333333333333335
 
-Modulo operation
-================
+# Modulo operation
 
 7 % 3 \# =&gt; 1
 
-Exponentiation (x\*\*y, x to the yth power)
-===========================================
+# Exponentiation (x\*\*y, x to the yth power)
 
 2\*\*3 \# =&gt; 8
 
-Enforce precedence with parentheses
-===================================
+# Enforce precedence with parentheses
 
 (1 + 3) \* 2 \# =&gt; 8
 
-Boolean values are primitives (Note: the capitalization)
-========================================================
+# Boolean values are primitives (Note: the capitalization)
 
 True False
 
-negate with not
-===============
+# negate with not
 
 not True \# =&gt; False not False \# =&gt; True
 
-Boolean Operators
-=================
+# Boolean Operators
 
-Note "and" and "or" are case-sensitive
-======================================
+# Note "and" and "or" are case-sensitive
 
 True and False \# =&gt; False False or True \# =&gt; True
 
-True and False are actually 1 and 0 but with different keywords
-===============================================================
+# True and False are actually 1 and 0 but with different keywords
 
 True + True \# =&gt; 2 True \* 8 \# =&gt; 8 False - 5 \# =&gt; -5
 
-Comparison operators look at the numerical value of True and False
-==================================================================
+# Comparison operators look at the numerical value of True and False
 
 0 == False \# =&gt; True 1 == True \# =&gt; True 2 == True \# =&gt; False -5 != False \# =&gt; True
 
-Using boolean logical operators on ints casts them to booleans for evaluation, but their non-cast value is returned
-===================================================================================================================
+# Using boolean logical operators on ints casts them to booleans for evaluation, but their non-cast value is returned
 
-Don't mix up with bool(ints) and bitwise and/or (&,|)
-=====================================================
+# Don't mix up with bool(ints) and bitwise and/or (&,|)
 
 bool(0) \# =&gt; False bool(4) \# =&gt; True bool(-6) \# =&gt; True 0 and 2 \# =&gt; 0 -5 or 0 \# =&gt; -5
 
-Equality is ==
-==============
+# Equality is ==
 
 1 == 1 \# =&gt; True 2 == 1 \# =&gt; False
 
-Inequality is !=
-================
+# Inequality is !=
 
 1 != 1 \# =&gt; False 2 != 1 \# =&gt; True
 
-More comparisons
-================
+# More comparisons
 
 1 &lt; 10 \# =&gt; True 1 &gt; 10 \# =&gt; False 2 &lt;= 2 \# =&gt; True 2 &gt;= 2 \# =&gt; True
 
-Seeing whether a value is in a range
-====================================
+# Seeing whether a value is in a range
 
 1 &lt; 2 and 2 &lt; 3 \# =&gt; True 2 &lt; 3 and 3 &lt; 2 \# =&gt; False
 
-Chaining makes this look nicer
-==============================
+# Chaining makes this look nicer
 
 1 &lt; 2 &lt; 3 \# =&gt; True 2 &lt; 3 &lt; 2 \# =&gt; False
 
-(is vs. ==) is checks if two variables refer to the same object, but == checks
-==============================================================================
+# (is vs. ==) is checks if two variables refer to the same object, but == checks
 
-if the objects pointed to have the same values.
-===============================================
+# if the objects pointed to have the same values.
 
 a = \[1, 2, 3, 4\] \# Point a at a new list, \[1, 2, 3, 4\] b = a \# Point b at what a is pointing to b is a \# =&gt; True, a and b refer to the same object b == a \# =&gt; True, a's and b's objects are equal b = \[1, 2, 3, 4\] \# Point b at a new list, \[1, 2, 3, 4\] b is a \# =&gt; False, a and b do not refer to the same object b == a \# =&gt; True, a's and b's objects are equal
 
-Strings are created with " or '
-===============================
+# Strings are created with " or '
 
 "This is a string." 'This is also a string.'
 
-Strings can be added too! But try not to do this.
-=================================================
+# Strings can be added too! But try not to do this.
 
 "Hello " + "world!" \# =&gt; "Hello world!"
 
-String literals (but not variables) can be concatenated without using '+'
-=========================================================================
+# String literals (but not variables) can be concatenated without using '+'
 
 "Hello " "world!" \# =&gt; "Hello world!"
 
-A string can be treated like a list of characters
-=================================================
+# A string can be treated like a list of characters
 
 "This is a string"\[0\] \# =&gt; 'T'
 
-You can find the length of a string
-===================================
+# You can find the length of a string
 
 len("This is a string") \# =&gt; 16
 
-.format can be used to format strings, like this:
-=================================================
+# .format can be used to format strings, like this:
 
 "{} can be {}".format("Strings", "interpolated") \# =&gt; "Strings can be interpolated"
 
-You can repeat the formatting arguments to save some typing.
-============================================================
+# You can repeat the formatting arguments to save some typing.
 
 "{0} be nimble, {0} be quick, {0} jump over the {1}".format("Jack", "candle stick")
 
-=&gt; "Jack be nimble, Jack be quick, Jack jump over the candle stick"
-======================================================================
+# =&gt; "Jack be nimble, Jack be quick, Jack jump over the candle stick"
 
-You can use keywords if you don't want to count.
-================================================
+# You can use keywords if you don't want to count.
 
 "{name} wants to eat {food}".format(name="Bob", food="lasagna") \# =&gt; "Bob wants to eat lasagna"
 
-If your Python 3 code also needs to run on Python 2.5 and below, you can also
-=============================================================================
+# If your Python 3 code also needs to run on Python 2.5 and below, you can also
 
-still use the old style of formatting:
-======================================
+# still use the old style of formatting:
 
 "%s can be %s the %s way" % ("Strings", "interpolated", "old") \# =&gt; "Strings can be interpolated the old way"
 
-You can also format using f-strings or formatted string literals (in Python 3.6+)
-=================================================================================
+# You can also format using f-strings or formatted string literals (in Python 3.6+)
 
 name = "Reiko" f"She said her name is {name}." \# =&gt; "She said her name is Reiko"
 
-You can basically put any Python statement inside the braces and it will be output in the string.
-=================================================================================================
+# You can basically put any Python statement inside the braces and it will be output in the string.
 
 f"{name} is {len(name)} characters long." \# =&gt; "Reiko is 5 characters long."
 
-None is an object
-=================
+# None is an object
 
 None \# =&gt; None
 
-Don't use the equality "==" symbol to compare objects to None
-=============================================================
+# Don't use the equality "==" symbol to compare objects to None
 
-Use "is" instead. This checks for equality of object identity.
-==============================================================
+# Use "is" instead. This checks for equality of object identity.
 
 "etc" is None \# =&gt; False None is None \# =&gt; True
 
-None, 0, and empty strings/lists/dicts/tuples all evaluate to False.
-====================================================================
+# None, 0, and empty strings/lists/dicts/tuples all evaluate to False.
 
-All other values are True
-=========================
+# All other values are True
 
 bool(0) \# =&gt; False bool("") \# =&gt; False bool(\[\]) \# =&gt; False bool({}) \# =&gt; False bool(()) \# =&gt; False
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 2. Variables and Collections
-----------------------------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Python has a print function
-===========================
+# Python has a print function
 
 print("I'm Python. Nice to meet you!") \# =&gt; I'm Python. Nice to meet you!
 
-By default the print function also prints out a newline at the end.
-===================================================================
+# By default the print function also prints out a newline at the end.
 
-Use the optional argument end to change the end string.
-=======================================================
+# Use the optional argument end to change the end string.
 
 print("Hello, World", end="!") \# =&gt; Hello, World!
 
-Simple way to get input data from console
-=========================================
+# Simple way to get input data from console
 
 input*string*var = input("Enter some data: ") \# Returns the data as a string
 
-Note: In earlier versions of Python, input() method was named as raw\_input()
-=============================================================================
+# Note: In earlier versions of Python, input() method was named as raw_input()
 
-There are no declarations, only assignments.
-============================================
+# There are no declarations, only assignments.
 
-Convention is to use lower*case*with\_underscores
-=================================================
+# Convention is to use lower*case*with_underscores
 
 some*var = 5 some*var \# =&gt; 5
 
-Accessing a previously unassigned variable is an exception.
-===========================================================
+# Accessing a previously unassigned variable is an exception.
 
-See Control Flow to learn more about exception handling.
-========================================================
+# See Control Flow to learn more about exception handling.
 
 some*unknown*var \# Raises a NameError
 
-if can be used as an expression
-===============================
+# if can be used as an expression
 
-Equivalent of C's '?:' ternary operator
-=======================================
+# Equivalent of C's '?:' ternary operator
 
 "yahoo!" if 3 &gt; 2 else 2 \# =&gt; "yahoo!"
 
-Lists store sequences
-=====================
+# Lists store sequences
 
 li = \[\]
 
-You can start with a prefilled list
-===================================
+# You can start with a prefilled list
 
-other\_li = \[4, 5, 6\]
+other_li = \[4, 5, 6\]
 
-Add stuff to the end of a list with append
-==========================================
+# Add stuff to the end of a list with append
 
 li.append(1) \# li is now \[1\] li.append(2) \# li is now \[1, 2\] li.append(4) \# li is now \[1, 2, 4\] li.append(3) \# li is now \[1, 2, 4, 3\]
 
-Remove from the end with pop
-============================
+# Remove from the end with pop
 
 li.pop() \# =&gt; 3 and li is now \[1, 2, 4\]
 
-Let's put it back
-=================
+# Let's put it back
 
 li.append(3) \# li is now \[1, 2, 4, 3\] again.
 
-Access a list like you would any array
-======================================
+# Access a list like you would any array
 
 li\[0\] \# =&gt; 1
 
-Look at the last element
-========================
+# Look at the last element
 
 li\[-1\] \# =&gt; 3
 
-Looking out of bounds is an IndexError
-======================================
+# Looking out of bounds is an IndexError
 
 li\[4\] \# Raises an IndexError
 
-You can look at ranges with slice syntax.
-=========================================
+# You can look at ranges with slice syntax.
 
-The start index is included, the end index is not
-=================================================
+# The start index is included, the end index is not
 
-(It's a closed/open range for you mathy types.)
-===============================================
+# (It's a closed/open range for you mathy types.)
 
 li\[1:3\] \# Return list from index 1 to 3 =&gt; \[2, 4\] li\[2:\] \# Return list starting from index 2 =&gt; \[4, 3\] li\[:3\] \# Return list from beginning until index 3 =&gt; \[1, 2, 4\] li\[::2\] \# Return list selecting every second entry =&gt; \[1, 4\] li\[::-1\] \# Return list in reverse order =&gt; \[3, 4, 2, 1\]
 
-Use any combination of these to make advanced slices
-====================================================
+# Use any combination of these to make advanced slices
 
-li\[start:end:step\]
-====================
+# li\[start:end:step\]
 
-Make a one layer deep copy using slices
-=======================================
+# Make a one layer deep copy using slices
 
 li2 = li\[:\] \# =&gt; li2 = \[1, 2, 4, 3\] but (li2 is li) will result in false.
 
-Remove arbitrary elements from a list with "del"
-================================================
+# Remove arbitrary elements from a list with "del"
 
 del li\[2\] \# li is now \[1, 2, 3\]
 
-Remove first occurrence of a value
-==================================
+# Remove first occurrence of a value
 
 li.remove(2) \# li is now \[1, 3\] li.remove(2) \# Raises a ValueError as 2 is not in the list
 
-Insert an element at a specific index
-=====================================
+# Insert an element at a specific index
 
 li.insert(1, 2) \# li is now \[1, 2, 3\] again
 
-Get the index of the first item found matching the argument
-===========================================================
+# Get the index of the first item found matching the argument
 
 li.index(2) \# =&gt; 1 li.index(4) \# Raises a ValueError as 4 is not in the list
 
-You can add lists
-=================
+# You can add lists
 
-Note: values for li and for other\_li are not modified.
-=======================================================
+# Note: values for li and for other_li are not modified.
 
-li + other\_li \# =&gt; \[1, 2, 3, 4, 5, 6\]
+li + other_li \# =&gt; \[1, 2, 3, 4, 5, 6\]
 
-Concatenate lists with "extend()"
-=================================
+# Concatenate lists with "extend()"
 
-li.extend(other\_li) \# Now li is \[1, 2, 3, 4, 5, 6\]
+li.extend(other_li) \# Now li is \[1, 2, 3, 4, 5, 6\]
 
-Check for existence in a list with "in"
-=======================================
+# Check for existence in a list with "in"
 
 1 in li \# =&gt; True
 
-Examine the length with "len()"
-===============================
+# Examine the length with "len()"
 
 len(li) \# =&gt; 6
 
-Tuples are like lists but are immutable.
-========================================
+# Tuples are like lists but are immutable.
 
 tup = (1, 2, 3) tup\[0\] \# =&gt; 1 tup\[0\] = 3 \# Raises a TypeError
 
-Note that a tuple of length one has to have a comma after the last element but
-==============================================================================
+# Note that a tuple of length one has to have a comma after the last element but
 
-tuples of other lengths, even zero, do not.
-===========================================
+# tuples of other lengths, even zero, do not.
 
 type((1)) \# =&gt; &lt;class 'int'&gt; type((1,)) \# =&gt; &lt;class 'tuple'&gt; type(()) \# =&gt; &lt;class 'tuple'&gt;
 
-You can do most of the list operations on tuples too
-====================================================
+# You can do most of the list operations on tuples too
 
 len(tup) \# =&gt; 3 tup + (4, 5, 6) \# =&gt; (1, 2, 3, 4, 5, 6) tup\[:2\] \# =&gt; (1, 2) 2 in tup \# =&gt; True
 
-You can unpack tuples (or lists) into variables
-===============================================
+# You can unpack tuples (or lists) into variables
 
 a, b, c = (1, 2, 3) \# a is now 1, b is now 2 and c is now 3
 
-You can also do extended unpacking
-==================================
+# You can also do extended unpacking
 
 a, \*b, c = (1, 2, 3, 4) \# a is now 1, b is now \[2, 3\] and c is now 4
 
-Tuples are created by default if you leave out the parentheses
-==============================================================
+# Tuples are created by default if you leave out the parentheses
 
 d, e, f = 4, 5, 6 \# tuple 4, 5, 6 is unpacked into variables d, e and f
 
-respectively such that d = 4, e = 5 and f = 6
-=============================================
+# respectively such that d = 4, e = 5 and f = 6
 
-Now look how easy it is to swap two values
-==========================================
+# Now look how easy it is to swap two values
 
 e, d = d, e \# d is now 5 and e is now 4
 
-Dictionaries store mappings from keys to values
-===============================================
+# Dictionaries store mappings from keys to values
 
-empty\_dict = {}
+empty_dict = {}
 
-Here is a prefilled dictionary
-==============================
+# Here is a prefilled dictionary
 
-filled\_dict = {"one": 1, "two": 2, "three": 3}
+filled_dict = {"one": 1, "two": 2, "three": 3}
 
-Note keys for dictionaries have to be immutable types. This is to ensure that
-=============================================================================
+# Note keys for dictionaries have to be immutable types. This is to ensure that
 
-the key can be converted to a constant hash value for quick look-ups.
-=====================================================================
+# the key can be converted to a constant hash value for quick look-ups.
 
-Immutable types include ints, floats, strings, tuples.
-======================================================
+# Immutable types include ints, floats, strings, tuples.
 
 invalid*dict = {\[1,2,3\]: "123"} \# =&gt; Raises a TypeError: unhashable type: 'list' valid*dict = {(1,2,3):\[1,2,3\]} \# Values can be of any type, however.
 
-Look up values with \[\]
-========================
+# Look up values with \[\]
 
-filled\_dict\["one"\] \# =&gt; 1
+filled_dict\["one"\] \# =&gt; 1
 
-Get all keys as an iterable with "keys()". We need to wrap the call in list()
-=============================================================================
+# Get all keys as an iterable with "keys()". We need to wrap the call in list()
 
-to turn it into a list. We'll talk about those later. Note - for Python
-=======================================================================
+# to turn it into a list. We'll talk about those later. Note - for Python
 
-versions &lt;3.7, dictionary key ordering is not guaranteed. Your results might
-===============================================================================
+# versions &lt;3.7, dictionary key ordering is not guaranteed. Your results might
 
-not match the example below exactly. However, as of Python 3.7, dictionary
-==========================================================================
+# not match the example below exactly. However, as of Python 3.7, dictionary
 
-items maintain the order at which they are inserted into the dictionary.
-========================================================================
+# items maintain the order at which they are inserted into the dictionary.
 
 list(filled*dict.keys()) \# =&gt; \["three", "two", "one"\] in Python &lt;3.7 list(filled*dict.keys()) \# =&gt; \["one", "two", "three"\] in Python 3.7+
 
-Get all values as an iterable with "values()". Once again we need to wrap it
-============================================================================
+# Get all values as an iterable with "values()". Once again we need to wrap it
 
-in list() to get it out of the iterable. Note - Same as above regarding key
-===========================================================================
+# in list() to get it out of the iterable. Note - Same as above regarding key
 
-ordering.
-=========
+# ordering.
 
 list(filled*dict.values()) \# =&gt; \[3, 2, 1\] in Python &lt;3.7 list(filled*dict.values()) \# =&gt; \[1, 2, 3\] in Python 3.7+
 
-Check for existence of keys in a dictionary with "in"
-=====================================================
+# Check for existence of keys in a dictionary with "in"
 
 "one" in filled*dict \# =&gt; True 1 in filled*dict \# =&gt; False
 
-Looking up a non-existing key is a KeyError
-===========================================
+# Looking up a non-existing key is a KeyError
 
-filled\_dict\["four"\] \# KeyError
+filled_dict\["four"\] \# KeyError
 
-Use "get()" method to avoid the KeyError
-========================================
+# Use "get()" method to avoid the KeyError
 
 filled*dict.get("one") \# =&gt; 1 filled*dict.get("four") \# =&gt; None
 
-The get method supports a default argument when the value is missing
-====================================================================
+# The get method supports a default argument when the value is missing
 
 filled*dict.get("one", 4) \# =&gt; 1 filled*dict.get("four", 4) \# =&gt; 4
 
-"setdefault()" inserts into a dictionary only if the given key isn't present
-============================================================================
+# "setdefault()" inserts into a dictionary only if the given key isn't present
 
 filled*dict.setdefault("five", 5) \# filled*dict\["five"\] is set to 5 filled*dict.setdefault("five", 6) \# filled*dict\["five"\] is still 5
 
-Adding to a dictionary
-======================
+# Adding to a dictionary
 
 filled*dict.update({"four":4}) \# =&gt; {"one": 1, "two": 2, "three": 3, "four": 4} filled*dict\["four"\] = 4 \# another way to add to dict
 
-Remove keys from a dictionary with del
-======================================
+# Remove keys from a dictionary with del
 
-del filled\_dict\["one"\] \# Removes the key "one" from filled dict
+del filled_dict\["one"\] \# Removes the key "one" from filled dict
 
-From Python 3.5 you can also use the additional unpacking options
-=================================================================
+# From Python 3.5 you can also use the additional unpacking options
 
 {'a': 1, \*\*{'b': 2}} \# =&gt; {'a': 1, 'b': 2} {'a': 1, \*\*{'a': 2}} \# =&gt; {'a': 2}
 
-Sets store ... well sets
-========================
+# Sets store ... well sets
 
-empty\_set = set()
+empty_set = set()
 
-Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry.
-=================================================================================
+# Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry.
 
 some*set = {1, 1, 2, 2, 3, 4} \# some*set is now {1, 2, 3, 4}
 
-Similar to keys of a dictionary, elements of a set have to be immutable.
-========================================================================
+# Similar to keys of a dictionary, elements of a set have to be immutable.
 
 invalid*set = {\[1\], 1} \# =&gt; Raises a TypeError: unhashable type: 'list' valid*set = {(1,), 1}
 
-Add one more item to the set
-============================
+# Add one more item to the set
 
 filled*set = some*set filled*set.add(5) \# filled*set is now {1, 2, 3, 4, 5}
 
-Sets do not have duplicate elements
-===================================
+# Sets do not have duplicate elements
 
-filled\_set.add(5) \# it remains as before {1, 2, 3, 4, 5}
+filled_set.add(5) \# it remains as before {1, 2, 3, 4, 5}
 
-Do set intersection with &
-==========================
+# Do set intersection with &
 
-other*set = {3, 4, 5, 6} filled*set & other\_set \# =&gt; {3, 4, 5}
+other*set = {3, 4, 5, 6} filled*set & other_set \# =&gt; {3, 4, 5}
 
-Do set union with |
-===================
+# Do set union with |
 
 filled*set | other*set \# =&gt; {1, 2, 3, 4, 5, 6}
 
-Do set difference with -
-========================
+# Do set difference with -
 
 {1, 2, 3, 4} - {2, 3, 5} \# =&gt; {1, 4}
 
-Do set symmetric difference with ^
-==================================
+# Do set symmetric difference with ^
 
 {1, 2, 3, 4} ^ {2, 3, 5} \# =&gt; {1, 4, 5}
 
-Check if set on the left is a superset of set on the right
-==========================================================
+# Check if set on the left is a superset of set on the right
 
 {1, 2} &gt;= {1, 2, 3} \# =&gt; False
 
-Check if set on the left is a subset of set on the right
-========================================================
+# Check if set on the left is a subset of set on the right
 
 {1, 2} &lt;= {1, 2, 3} \# =&gt; True
 
-Check for existence in a set with in
-====================================
+# Check for existence in a set with in
 
 2 in filled*set \# =&gt; True 10 in filled*set \# =&gt; False
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 3. Control Flow and Iterables
------------------------------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Let's just make a variable
-==========================
+# Let's just make a variable
 
-some\_var = 5
+some_var = 5
 
-Here is an if statement. Indentation is significant in Python!
-==============================================================
+# Here is an if statement. Indentation is significant in Python!
 
-Convention is to use four spaces, not tabs.
-===========================================
+# Convention is to use four spaces, not tabs.
 
-This prints "some\_var is smaller than 10"
-==========================================
+# This prints "some_var is smaller than 10"
 
-if some*var &gt; 10: print("some*var is totally bigger than 10.") elif some*var &lt; 10: \# This elif clause is optional. print("some*var is smaller than 10.") else: \# This is optional too. print("some\_var is indeed 10.")
+if some*var &gt; 10: print("some*var is totally bigger than 10.") elif some*var &lt; 10: \# This elif clause is optional. print("some*var is smaller than 10.") else: \# This is optional too. print("some_var is indeed 10.")
 
 """ For loops iterate over lists prints: dog is a mammal cat is a mammal mouse is a mammal """ for animal in \["dog", "cat", "mouse"\]: \# You can use format() to interpolate formatted strings print("{} is a mammal".format(animal))
 
@@ -3484,272 +3353,221 @@ if some*var &gt; 10: print("some*var is totally bigger than 10.") elif some*var 
 
 """ While loops go until a condition is no longer met. prints: 0 1 2 3 """ x = 0 while x &lt; 4: print(x) x += 1 \# Shorthand for x = x + 1
 
-Handle exceptions with a try/except block
-=========================================
+# Handle exceptions with a try/except block
 
 try: \# Use "raise" to raise an error raise IndexError("This is an index error") except IndexError as e: pass \# Pass is just a no-op. Usually you would do recovery here. except (TypeError, NameError): pass \# Multiple exceptions can be handled together, if required. else: \# Optional clause to the try/except block. Must follow all except blocks print("All good!") \# Runs only if the code in try raises no exceptions finally: \# Execute under all circumstances print("We can clean up resources here")
 
-Instead of try/finally to cleanup resources you can use a with statement
-========================================================================
+# Instead of try/finally to cleanup resources you can use a with statement
 
 with open("myfile.txt") as f: for line in f: print(line)
 
-Writing to a file
-=================
+# Writing to a file
 
 contents = {"aa": 12, "bb": 21} with open("myfile1.txt", "w+") as file: file.write(str(contents)) \# writes a string to a file
 
 with open("myfile2.txt", "w+") as file: file.write(json.dumps(contents)) \# writes an object to a file
 
-Reading from a file
-===================
+# Reading from a file
 
 with open('myfile1.txt', "r+") as file: contents = file.read() \# reads a string from a file print(contents)
 
-print: {"aa": 12, "bb": 21}
-===========================
+# print: {"aa": 12, "bb": 21}
 
 with open('myfile2.txt', "r+") as file: contents = json.load(file) \# reads a json object from a file print(contents)
 
-print: {"aa": 12, "bb": 21}
-===========================
+# print: {"aa": 12, "bb": 21}
 
-Python offers a fundamental abstraction called the Iterable.
-============================================================
+# Python offers a fundamental abstraction called the Iterable.
 
-An iterable is an object that can be treated as a sequence.
-===========================================================
+# An iterable is an object that can be treated as a sequence.
 
-The object returned by the range function, is an iterable.
-==========================================================
+# The object returned by the range function, is an iterable.
 
-filled*dict = {"one": 1, "two": 2, "three": 3} our*iterable = filled*dict.keys() print(our*iterable) \# =&gt; dict\_keys(\['one', 'two', 'three'\]). This is an object that implements our Iterable interface.
+filled*dict = {"one": 1, "two": 2, "three": 3} our*iterable = filled*dict.keys() print(our*iterable) \# =&gt; dict_keys(\['one', 'two', 'three'\]). This is an object that implements our Iterable interface.
 
-We can loop over it.
-====================
+# We can loop over it.
 
-for i in our\_iterable: print(i) \# Prints one, two, three
+for i in our_iterable: print(i) \# Prints one, two, three
 
-However we cannot address elements by index.
-============================================
+# However we cannot address elements by index.
 
-our\_iterable\[1\] \# Raises a TypeError
+our_iterable\[1\] \# Raises a TypeError
 
-An iterable is an object that knows how to create an iterator.
-==============================================================
+# An iterable is an object that knows how to create an iterator.
 
 our*iterator = iter(our*iterable)
 
-Our iterator is an object that can remember the state as we traverse through it.
-================================================================================
+# Our iterator is an object that can remember the state as we traverse through it.
 
-We get the next object with "next()".
-=====================================
+# We get the next object with "next()".
 
-next(our\_iterator) \# =&gt; "one"
+next(our_iterator) \# =&gt; "one"
 
-It maintains state as we iterate.
-=================================
+# It maintains state as we iterate.
 
 next(our*iterator) \# =&gt; "two" next(our*iterator) \# =&gt; "three"
 
-After the iterator has returned all of its data, it raises a StopIteration exception
-====================================================================================
+# After the iterator has returned all of its data, it raises a StopIteration exception
 
-next(our\_iterator) \# Raises StopIteration
+next(our_iterator) \# Raises StopIteration
 
-We can also loop over it, in fact, "for" does this implicitly!
-==============================================================
+# We can also loop over it, in fact, "for" does this implicitly!
 
-our*iterator = iter(our*iterable) for i in our\_iterator: print(i) \# Prints one, two, three
+our*iterator = iter(our*iterable) for i in our_iterator: print(i) \# Prints one, two, three
 
-You can grab all the elements of an iterable or iterator by calling list() on it.
-=================================================================================
+# You can grab all the elements of an iterable or iterator by calling list() on it.
 
 list(our*iterable) \# =&gt; Returns \["one", "two", "three"\] list(our*iterator) \# =&gt; Returns \[\] because state is saved
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 4. Functions
-------------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Use "def" to create new functions
-=================================
+# Use "def" to create new functions
 
 def add(x, y): print("x is {} and y is {}".format(x, y)) return x + y \# Return values with a return statement
 
-Calling functions with parameters
-=================================
+# Calling functions with parameters
 
 add(5, 6) \# =&gt; prints out "x is 5 and y is 6" and returns 11
 
-Another way to call functions is with keyword arguments
-=======================================================
+# Another way to call functions is with keyword arguments
 
 add(y=6, x=5) \# Keyword arguments can arrive in any order.
 
-You can define functions that take a variable number of
-=======================================================
+# You can define functions that take a variable number of
 
-positional arguments
-====================
+# positional arguments
 
 def varargs(\*args): return args
 
 varargs(1, 2, 3) \# =&gt; (1, 2, 3)
 
-You can define functions that take a variable number of
-=======================================================
+# You can define functions that take a variable number of
 
-keyword arguments, as well
-==========================
+# keyword arguments, as well
 
-def keyword\_args(\*\*kwargs): return kwargs
+def keyword_args(\*\*kwargs): return kwargs
 
-Let's call it to see what happens
-=================================
+# Let's call it to see what happens
 
-keyword\_args(big="foot", loch="ness") \# =&gt; {"big": "foot", "loch": "ness"}
+keyword_args(big="foot", loch="ness") \# =&gt; {"big": "foot", "loch": "ness"}
 
-You can do both at once, if you like
-====================================
+# You can do both at once, if you like
 
 def all*the*args(\*args, \*\*kwargs): print(args) print(kwargs) """ all*the*args(1, 2, a=3, b=4) prints: (1, 2) {"a": 3, "b": 4} """
 
-When calling functions, you can do the opposite of args/kwargs!
-===============================================================
+# When calling functions, you can do the opposite of args/kwargs!
 
-Use \* to expand tuples and use \*\* to expand kwargs.
-======================================================
+# Use \* to expand tuples and use \*\* to expand kwargs.
 
-args = (1, 2, 3, 4) kwargs = {"a": 3, "b": 4} all*the*args(*args) \# equivalent to all*the*args(1, 2, 3, 4) all*the*args(\\*\*kwargs) \# equivalent to all*the*args(a=3, b=4) all*the*args(*args, \\*\*kwargs) \# equivalent to all*the*args(1, 2, 3, 4, a=3, b=4)
+args = (1, 2, 3, 4) kwargs = {"a": 3, "b": 4} all*the*args(*args) \# equivalent to all*the*args(1, 2, 3, 4) all*the*args(\\*\*kwargs) \# equivalent to all*the*args(a=3, b=4) all*the*args(_args, \\_\*kwargs) \# equivalent to all*the*args(1, 2, 3, 4, a=3, b=4)
 
-Returning multiple values (with tuple assignments)
-==================================================
+# Returning multiple values (with tuple assignments)
 
 def swap(x, y): return y, x \# Return multiple values as a tuple without the parenthesis. \# (Note: parenthesis have been excluded but can be included)
 
 x = 1 y = 2 x, y = swap(x, y) \# =&gt; x = 2, y = 1
 
-(x, y) = swap(x,y) \# Again parenthesis have been excluded but can be included.
-===============================================================================
+# (x, y) = swap(x,y) \# Again parenthesis have been excluded but can be included.
 
-Function Scope
-==============
+# Function Scope
 
 x = 5
 
-def set\_x(num): \# Local var x not the same as global variable x x = num \# =&gt; 43 print(x) \# =&gt; 43
+def set_x(num): \# Local var x not the same as global variable x x = num \# =&gt; 43 print(x) \# =&gt; 43
 
 def set*global*x(num): global x print(x) \# =&gt; 5 x = num \# global var x is now set to 6 print(x) \# =&gt; 6
 
-set*x(43) set*global\_x(6)
+set*x(43) set*global_x(6)
 
-Python has first class functions
-================================
+# Python has first class functions
 
-def create\_adder(x): def adder(y): return x + y return adder
+def create_adder(x): def adder(y): return x + y return adder
 
-add*10 = create*adder(10) add\_10(3) \# =&gt; 13
+add*10 = create*adder(10) add_10(3) \# =&gt; 13
 
-There are also anonymous functions
-==================================
+# There are also anonymous functions
 
 (lambda x: x &gt; 2)(3) \# =&gt; True (lambda x, y: x \*\* 2 + y \*\* 2)(2, 1) \# =&gt; 5
 
-There are built-in higher order functions
-=========================================
+# There are built-in higher order functions
 
-list(map(add\_10, \[1, 2, 3\])) \# =&gt; \[11, 12, 13\] list(map(max, \[1, 2, 3\], \[4, 2, 1\])) \# =&gt; \[4, 2, 3\]
+list(map(add_10, \[1, 2, 3\])) \# =&gt; \[11, 12, 13\] list(map(max, \[1, 2, 3\], \[4, 2, 1\])) \# =&gt; \[4, 2, 3\]
 
 list(filter(lambda x: x &gt; 5, \[3, 4, 5, 6, 7\])) \# =&gt; \[6, 7\]
 
-We can use list comprehensions for nice maps and filters
-========================================================
+# We can use list comprehensions for nice maps and filters
 
-List comprehension stores the output as a list which can itself be a nested list
-================================================================================
+# List comprehension stores the output as a list which can itself be a nested list
 
-\[add\_10(i) for i in \[1, 2, 3\]\] \# =&gt; \[11, 12, 13\] \[x for x in \[3, 4, 5, 6, 7\] if x &gt; 5\] \# =&gt; \[6, 7\]
+\[add_10(i) for i in \[1, 2, 3\]\] \# =&gt; \[11, 12, 13\] \[x for x in \[3, 4, 5, 6, 7\] if x &gt; 5\] \# =&gt; \[6, 7\]
 
-You can construct set and dict comprehensions as well.
-======================================================
+# You can construct set and dict comprehensions as well.
 
 {x for x in 'abcddeef' if x not in 'abc'} \# =&gt; {'d', 'e', 'f'} {x: x\*\*2 for x in range(5)} \# =&gt; {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 5. Modules
-----------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-You can import modules
-======================
+# You can import modules
 
 import math print(math.sqrt(16)) \# =&gt; 4.0
 
-You can get specific functions from a module
-============================================
+# You can get specific functions from a module
 
 from math import ceil, floor print(ceil(3.7)) \# =&gt; 4.0 print(floor(3.7)) \# =&gt; 3.0
 
-You can import all functions from a module.
-===========================================
+# You can import all functions from a module.
 
-Warning: this is not recommended
-================================
+# Warning: this is not recommended
 
 from math import \*
 
-You can shorten module names
-============================
+# You can shorten module names
 
 import math as m math.sqrt(16) == m.sqrt(16) \# =&gt; True
 
-Python modules are just ordinary Python files. You
-==================================================
+# Python modules are just ordinary Python files. You
 
-can write your own, and import them. The name of the
-====================================================
+# can write your own, and import them. The name of the
 
-module is the same as the name of the file.
-===========================================
+# module is the same as the name of the file.
 
-You can find out which functions and attributes
-===============================================
+# You can find out which functions and attributes
 
-are defined in a module.
-========================
+# are defined in a module.
 
 import math dir(math)
 
-If you have a Python script named math.py in the same
-=====================================================
+# If you have a Python script named math.py in the same
 
-folder as your current script, the file math.py will
-====================================================
+# folder as your current script, the file math.py will
 
-be loaded instead of the built-in Python module.
-================================================
+# be loaded instead of the built-in Python module.
 
-This happens because the local folder has priority
-==================================================
+# This happens because the local folder has priority
 
-over Python's built-in libraries.
-=================================
+# over Python's built-in libraries.
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 6. Classes
-----------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-We use the "class" statement to create a class
-==============================================
+# We use the "class" statement to create a class
 
 class Human:
 
@@ -3805,14 +3623,11 @@ class Human:
     def age(self):
         del self._age
 
-When a Python interpreter reads a source file it executes all its code.
-=======================================================================
+# When a Python interpreter reads a source file it executes all its code.
 
-This **name** check makes sure this code block is only executed when this
-=========================================================================
+# This **name** check makes sure this code block is only executed when this
 
-module is the main program.
-===========================
+# module is the main program.
 
 if **name** == '**main**': \# Instantiate a class i = Human(name="Ian") i.say("hi") \# "Ian: hi" j = Human("Joel") j.say("hello") \# "Joel: hello" \# i and j are instances of type Human, or in other words: they are Human objects
 
@@ -3841,45 +3656,33 @@ if **name** == '**main**': \# Instantiate a class i = Human(name="Ian") i.say("h
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-6.1 Inheritance
----------------
+## 6.1 Inheritance
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Inheritance allows new child classes to be defined that inherit methods and
-===========================================================================
+# Inheritance allows new child classes to be defined that inherit methods and
 
-variables from their parent class.
-==================================
+# variables from their parent class.
 
-Using the Human class defined above as the base or parent class, we can
-=======================================================================
+# Using the Human class defined above as the base or parent class, we can
 
-define a child class, Superhero, which inherits the class variables like
-========================================================================
+# define a child class, Superhero, which inherits the class variables like
 
-"species", "name", and "age", as well as methods, like "sing" and "grunt"
-=========================================================================
+# "species", "name", and "age", as well as methods, like "sing" and "grunt"
 
-from the Human class, but can also have its own unique properties.
-==================================================================
+# from the Human class, but can also have its own unique properties.
 
-To take advantage of modularization by file you could place the classes above in their own files,
-=================================================================================================
+# To take advantage of modularization by file you could place the classes above in their own files,
 
-say, human.py
-=============
+# say, human.py
 
-To import functions from other files use the following format
-=============================================================
+# To import functions from other files use the following format
 
-from "filename-without-extension" import "function-or-class"
-============================================================
+# from "filename-without-extension" import "function-or-class"
 
 from human import Human
 
-Specify the parent class(es) as parameters to the class definition
-==================================================================
+# Specify the parent class(es) as parameters to the class definition
 
 class Superhero(Human):
 
@@ -3954,16 +3757,13 @@ if **name** == '**main**': sup = Superhero(name="Tick")
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-6.2 Multiple Inheritance
-------------------------
+## 6.2 Multiple Inheritance
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Another class definition
-========================
+# Another class definition
 
-bat.py
-======
+# bat.py
 
 class Bat:
 
@@ -3983,16 +3783,13 @@ class Bat:
 
 if **name** == '**main**': b = Bat() print(b.say('hello')) print(b.fly)
 
-And yet another class definition that inherits from Superhero and Bat
-=====================================================================
+# And yet another class definition that inherits from Superhero and Bat
 
-superhero.py
-============
+# superhero.py
 
 from superhero import Superhero from bat import Bat
 
-Define Batman as a child that inherits from both Superhero and Bat
-==================================================================
+# Define Batman as a child that inherits from both Superhero and Bat
 
 class Batman(Superhero, Bat):
 
@@ -4044,67 +3841,52 @@ if **name** == '**main**': sup = Batman()
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 7. Advanced
------------
+
+---
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-Generators help you make lazy code.
-===================================
+# Generators help you make lazy code.
 
-def double\_numbers(iterable): for i in iterable: yield i + i
+def double_numbers(iterable): for i in iterable: yield i + i
 
-Generators are memory-efficient because they only load the data needed to
-=========================================================================
+# Generators are memory-efficient because they only load the data needed to
 
-process the next value in the iterable. This allows them to perform
-===================================================================
+# process the next value in the iterable. This allows them to perform
 
-operations on otherwise prohibitively large value ranges.
-=========================================================
+# operations on otherwise prohibitively large value ranges.
 
-NOTE: `range` replaces `xrange` in Python 3.
-============================================
+# NOTE: `range` replaces `xrange` in Python 3.
 
-for i in double\_numbers(range(1, 900000000)): \# `range` is a generator. print(i) if i &gt;= 30: break
+for i in double_numbers(range(1, 900000000)): \# `range` is a generator. print(i) if i &gt;= 30: break
 
-Just as you can create a list comprehension, you can create generator
-=====================================================================
+# Just as you can create a list comprehension, you can create generator
 
-comprehensions as well.
-=======================
+# comprehensions as well.
 
 values = (-x for x in \[1,2,3,4,5\]) for x in values: print(x) \# prints -1 -2 -3 -4 -5 to console/terminal
 
-You can also cast a generator comprehension directly to a list.
-===============================================================
+# You can also cast a generator comprehension directly to a list.
 
 values = (-x for x in \[1,2,3,4,5\]) gen*to*list = list(values) print(gen*to*list) \# =&gt; \[-1, -2, -3, -4, -5\]
 
-Decorators
-==========
+# Decorators
 
-In this example `beg` wraps `say`. If say\_please is True then it
-=================================================================
+# In this example `beg` wraps `say`. If say_please is True then it
 
-will change the returned message.
-=================================
+# will change the returned message.
 
 from functools import wraps
 
-def beg(target*function): @wraps(target*function) def wrapper(*args, \\*\*kwargs): msg, say*please = target*function(*args, \\*\*kwargs) if say\_please: return "{} {}".format(msg, "Please! I am poor :(") return msg
+def beg(target*function): @wraps(target*function) def wrapper(_args, \\_\*kwargs): msg, say*please = target*function(_args, \\_\*kwargs) if say_please: return "{} {}".format(msg, "Please! I am poor :(") return msg
 
     return wrapper
 
 @beg def say(say*please=False): msg = "Can you buy me a beer?" return msg, say*please
 
-print(say()) \# Can you buy me a beer? print(say(say\_please=True)) \# Can you buy me a beer? Please! I am poor :(
+print(say()) \# Can you buy me a beer? print(say(say_please=True)) \# Can you buy me a beer? Please! I am poor :(
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 
