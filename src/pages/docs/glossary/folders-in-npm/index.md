@@ -4,18 +4,11 @@ template: docs
 excerpt: Folder Structures Used by npm
 ---
 
-# folders 
-
-
-
+# folders
 
 ![npm](https://pbs.twimg.com/profile_images/1285630920263966721/Uk6O1QGC_400x400.jpg)
 
-
 ---
-
-
-
 
 #### [](https://docs.npmjs.com/cli/v6/configuring-npm/folders#tldr)tl;dr
 
