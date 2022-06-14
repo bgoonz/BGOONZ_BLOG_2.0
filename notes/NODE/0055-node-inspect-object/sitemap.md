@@ -1,0 +1,4 @@
+0055-node-inspect-object
+========================
+
+<table><thead><tr class="header"><th></th><th>Name</th><th>Size</th><th>Modified</th><th></th></tr></thead><tbody><tr class="odd"><td></td><td><span class="goup">..</span></td><td>—</td><td>—</td><td></td></tr><tr class="even"><td></td><td><span class="name">console-log-browser-expanded.png</span></td><td>9 KB</td><td>Sat Oct 16 05:39:20 2021</td><td></td></tr><tr class="odd"><td></td><td><span class="name">console-log-browser.png</span></td><td>5 KB</td><td>Sat Oct 16 05:39:20 2021</td><td></td></tr><tr class="even"><td></td><td><span class="name">index.md</span></td><td>1 KB</td><td>Sat Oct 16 05:39:20 2021</td><td></td></tr></tbody></table>
