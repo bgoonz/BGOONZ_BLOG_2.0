@@ -1,41 +1,25 @@
-name: 'Tests: linting'
+name: Lint
 
-on: [pull_request, push]
+on: [push, pull_request]
 
 jobs:
-  eclint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ljharb/actions/node/run@main
-        name: 'npm install && npm run eclint'
+      - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
-          command: 'eclint'
-
-  dockerfile_lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ljharb/actions/node/run@main
-        name: 'npm install && npm run dockerfile_lint'
-        with:
-          node-version: 'lts/*'
-          command: 'dockerfile_lint'
-
-  doctoc:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ljharb/actions/node/run@main
-        name: 'npm install && npm run doctoc'
-        with:
-          node-version: 'lts/*'
-          command: "doctoc:check"
-
-  test_naming:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: check tests filenames
-        run: ./rename_test.sh --check
+          node-version: '14'
+          cache: 'npm'
+      - name: Install npm@8
+        run: npm i -g npm@8
+      - name: Install
+        run: npm ci --prefer-offline
+      - name: Build
+        run: npm run build
+      - name: Alex
+        run: npm run alex
+      - name: Prettier
+        run: npm run prettier -- --list-different
+      - name: Eslint
+        run: npm run eslint -- --max-warnings 0
