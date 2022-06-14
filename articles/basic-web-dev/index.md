@@ -1,357 +1,371 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Web Dev Review
-==============
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-------------------------------------------------------------------------
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-description: Review
--------------------
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Review-Of-Previous-Concepts
-===========================
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Web Dev Review
+
+---
+
+## description: Review
+
+# Review-Of-Previous-Concepts
 
 ### Review of Concepts
 
 ### Running JS Locally Concepts
 
--   Match the commands `ls`, `cd`, `pwd` to their descriptions
+- Match the commands `ls`, `cd`, `pwd` to their descriptions
 
-    -   `ls` lists contents of current directory
-    -   `cd` changes current directory
+  - `ls` lists contents of current directory
+  - `cd` changes current directory
 
-        -   `cd ..` takes you up one level
-        -   `cd` alone takes you back home
+    - `cd ..` takes you up one level
+    - `cd` alone takes you back home
 
-    -   `pwd` returns current directory
+  - `pwd` returns current directory
 
--   Given a folder structure diagram, a list of 'cd (path)' commands and target files, match the paths to the target files.
--   Use VSCode to create a folder. Within the folder create a .js file containing `console.log('hello new world');` and save it.
--   Use node to execute a JavaScript file in the terminal
+- Given a folder structure diagram, a list of 'cd (path)' commands and target files, match the paths to the target files.
+- Use VSCode to create a folder. Within the folder create a .js file containing `console.log('hello new world');` and save it.
+- Use node to execute a JavaScript file in the terminal
 
 ### Plain Old JS Object Lesson Concepts
 
--   Label variables as either Primitive vs. Reference
+- Label variables as either Primitive vs. Reference
 
-    -   primitives: strings, booleans, numbers, null and undefined
+  - primitives: strings, booleans, numbers, null and undefined
 
-        -   primitives are immutable
+    - primitives are immutable
 
-    -   refereces: objects (including arrays)
+  - refereces: objects (including arrays)
 
-        -   references are mutable
+    - references are mutable
 
--   Identify when to use `.` vs `[]` when accessing values of an object
+- Identify when to use `.` vs `[]` when accessing values of an object
 
-    -   dot syntax `object.key`
+  - dot syntax `object.key`
 
-        -   easier to read
-        -   easier to write
-        -   cannot use variables as keys
-        -   keys cannot begin with a number
+    - easier to read
+    - easier to write
+    - cannot use variables as keys
+    - keys cannot begin with a number
 
-    -   bracket notation `object["key]`
+  - bracket notation `object["key]`
 
-        -   allows variables as keys
-        -   strings that start with numbers can be use as keys
+    - allows variables as keys
+    - strings that start with numbers can be use as keys
 
--   Write an object literal with a variable key using interpolation
+- Write an object literal with a variable key using interpolation
 
-    -   put it in brackets to access the value of the variable, rather than just make the value that string
+  - put it in brackets to access the value of the variable, rather than just make the value that string
 
-            let a = 'b';
-            let obj = { a: 'letter_a', [a]: 'letter b' };
+        let a = 'b';
+        let obj = { a: 'letter_a', [a]: 'letter b' };
 
--   Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
+- Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
 
-    -   can also use `(key in object)` syntax interchangeably (returns a boolean)
+  - can also use `(key in object)` syntax interchangeably (returns a boolean)
 
--   Utilize Object.keys and Object.values in a function
+- Utilize Object.keys and Object.values in a function
 
-    -   `Object.keys(obj)` returns an array of all the keys in `obj`
-    -   `Object.values(obj)` returns an array of the values in `obj`
+  - `Object.keys(obj)` returns an array of all the keys in `obj`
+  - `Object.values(obj)` returns an array of the values in `obj`
 
--   Iterate through an object using a `for in` loop
+- Iterate through an object using a `for in` loop
 
-        let printValues = function (obj) {
-            for (let key in obj) {
-                let value = obj[key];
-                console.log(value);
-            }
+      let printValues = function (obj) {
+          for (let key in obj) {
+              let value = obj[key];
+              console.log(value);
+          }
+      };
+
+- Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+
+  - `...rest` syntax will store all additional arguments in an array
+  - array will be empty if there are no additional arguments
+
+        let myFunction = function (str, ...strs) {
+            console.log('The first string is ' + str);
+            console.log('The rest of the strings are:');
+            strs.forEach(function (str) {
+                console.log(str);
+            });
         };
 
--   Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
+###
 
-    -   `...rest` syntax will store all additional arguments in an array
-    -   array will be empty if there are no additional arguments
+- Use `...spread` syntax for Object literals and Array literals
 
-            let myFunction = function (str, ...strs) {
-                console.log('The first string is ' + str);
-                console.log('The rest of the strings are:');
-                strs.forEach(function (str) {
-                    console.log(str);
-                });
-            };
+      let arr1 = ['a', 'b', 'c'];
+      let longer = [...arr1, 'd', 'e']; // ["a", "b", "c", "d", "e"]
+      // without spread syntax, this would give you a nested array
+      let withoutRest = [arr1, 'd', 'e']; // [["a", "b", "c"], "d", "e"]
 
-### 
+- Destructure an array to reference specific elements
 
--   Use `...spread` syntax for Object literals and Array literals
+  \`\`\`javascript
 
-        let arr1 = ['a', 'b', 'c'];
-        let longer = [...arr1, 'd', 'e']; // ["a", "b", "c", "d", "e"]
-        // without spread syntax, this would give you a nested array
-        let withoutRest = [arr1, 'd', 'e']; // [["a", "b", "c"], "d", "e"]
+  let array = \[35,9\];
 
--   Destructure an array to reference specific elements
+  let \[firstEl, secondEl\] = array;
 
-    \`\`\`javascript
+  console.log(firstEl); // =&gt; 35
 
-    let array = \[35,9\];
-
-    let \[firstEl, secondEl\] = array;
-
-    console.log(firstEl); // =&gt; 35
-
-    console.log(secondEl); // =&gt; 9
+  console.log(secondEl); // =&gt; 9
 
 // can also destructure using ... syntax let array = \[35,9,14\]; let \[head, ...tail\] = array; console.log(head); // =&gt; 35 console.log(tail); // =&gt; \[9, 14\]
 
@@ -389,32 +403,32 @@ Review-Of-Previous-Concepts
     let { favorites: {color, food: vegetable} } = obj;
     console.log(color, vegetable); //=> mauve spaghetti squash
 
--   Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
+- Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
-        //
-        let elementCounts = function (array) {
-            let obj = {};
-            array.forEach(function (el) {
-                if (el in obj) obj[el] += 1;
-                else obj[el] = 1;
-            });
-            return obj;
-        };
-        console.log(elementCounts(['e', 'f', 'g', 'f'])); // => Object {e: 1, f: 2, g: 1}
+      //
+      let elementCounts = function (array) {
+          let obj = {};
+          array.forEach(function (el) {
+              if (el in obj) obj[el] += 1;
+              else obj[el] = 1;
+          });
+          return obj;
+      };
+      console.log(elementCounts(['e', 'f', 'g', 'f'])); // => Object {e: 1, f: 2, g: 1}
 
 ### Callbacks Lesson Concepts
 
--   Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
+- Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
 
-    -   they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
-    -   supports same basic operations as other types (strings, bools, numbers)
-    -   higher-order functions take functions as arguments or return functions as values
+  - they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
+  - supports same basic operations as other types (strings, bools, numbers)
+  - higher-order functions take functions as arguments or return functions as values
 
--   Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
+- Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
 
-    -   what is this referring to?
+  - what is this referring to?
 
--   Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
+- Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
 
 <!-- -->
 
@@ -455,90 +469,90 @@ Review-Of-Previous-Concepts
     }
     console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 
--   Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
+- Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
 
-        let myFilter = function (array, callback) {
-            let filtered = [];
-            for (let i = 0; i < array.length; i++) {
-                if (callback(array[i])) {
-                    filtered.push(array[i], i, array);
-                }
-            }
-        };
+      let myFilter = function (array, callback) {
+          let filtered = [];
+          for (let i = 0; i < array.length; i++) {
+              if (callback(array[i])) {
+                  filtered.push(array[i], i, array);
+              }
+          }
+      };
 
--   Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
+- Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
-        let myEvery = function (array, callback) {
-            for (let i = 0; i < array.length; i++) {
-                if (!callback(array[i], i, array)) {
-                    return false;
-                }
-            }
-            return true;
-        };
-        // with arrow function syntax
-        let myEvery = (array, callback) => {
-            for (let i = 0; i < array.length; i++) {
-                if (!callback(array[i])) {
-                    return false;
-                }
-            }
-            return true;
-        };
+      let myEvery = function (array, callback) {
+          for (let i = 0; i < array.length; i++) {
+              if (!callback(array[i], i, array)) {
+                  return false;
+              }
+          }
+          return true;
+      };
+      // with arrow function syntax
+      let myEvery = (array, callback) => {
+          for (let i = 0; i < array.length; i++) {
+              if (!callback(array[i])) {
+                  return false;
+              }
+          }
+          return true;
+      };
 
 ### Scope Lesson Concepts
 
--   Identify the difference between `const`, `let`, and `var` declarations
+- Identify the difference between `const`, `let`, and `var` declarations
 
-    -   `const` - cannot reassign variable, scoped to block
-    -   `let` - can reassign variable, scoped to block
-    -   `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
-    -   a variable will always evaluate to the value it contains regardless of how it was declared
+  - `const` - cannot reassign variable, scoped to block
+  - `let` - can reassign variable, scoped to block
+  - `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
+  - a variable will always evaluate to the value it contains regardless of how it was declared
 
--   Explain the difference between `const`, `let`, and `var` declarations
+- Explain the difference between `const`, `let`, and `var` declarations
 
-    -   `var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"
+  - `var` is function scoped—so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"
 
-        -   so it will exist in memory as "undefined" which is bad and unpredictable
+    - so it will exist in memory as "undefined" which is bad and unpredictable
 
-    -   `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
-    -   `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
-    -   block-scoped variables allow new variables with the same name in new scopes
-    -   block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
-    -   if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
+  - `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
+  - `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
+  - block-scoped variables allow new variables with the same name in new scopes
+  - block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
+  - if you do not use `var` or `let` or `const` when initializing, it will be declared as global—THIS IS BAD
 
-        -   if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
+    - if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
 
--   Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+- Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
-    -   scope of a program means the set of variables that are available for use within the program
-    -   global scope is represented by the `window` object in the browser and the `global` object in Node.js
+  - scope of a program means the set of variables that are available for use within the program
+  - global scope is represented by the `window` object in the browser and the `global` object in Node.js
 
-        -   global variables are available everywhere, and so increase the risk of name collisions
+    - global variables are available everywhere, and so increase the risk of name collisions
 
-    -   local scope is the set of variables available for use within the function
+  - local scope is the set of variables available for use within the function
 
-        -   when we enter a function, we enter a new scope
-        -   includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)
+    - when we enter a function, we enter a new scope
+    - includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)
 
-    -   for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped
-    -   inner scope does not have access to variables in the outer scope
+  - for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped
+  - inner scope does not have access to variables in the outer scope
 
-        -   scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
-        -   so an inner scope can access outer scope variables
-        -   but an outer scope can never access inner scope variables
+    - scope chaining—if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
+    - so an inner scope can access outer scope variables
+    - but an outer scope can never access inner scope variables
 
--   Define an arrow function
+- Define an arrow function
 
-    \`\`\`javascript
+  \`\`\`javascript
 
-    let arrowFunction = (param1, param2) =&gt; {
+  let arrowFunction = (param1, param2) =&gt; {
 
-    let sum = param1 + param2;
+  let sum = param1 + param2;
 
-    return sum;
+  return sum;
 
-    }
+  }
 
 // with 1 param you can remove parens around parameters let arrowFunction = param =&gt; { param += 1; return param; }
 
@@ -548,28 +562,28 @@ Review-Of-Previous-Concepts
 
 \`\`\`
 
--   Given an arrow function, deduce the value of `this` without executing the code
+- Given an arrow function, deduce the value of `this` without executing the code
 
-    -   arrow functions are automatically bound to the context they were declared in
-    -   unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`)
-    -   if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
-    -   so you can't use an arrow function to define a method directly
+  - arrow functions are automatically bound to the context they were declared in
+  - unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`)
+  - if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context
+  - so you can't use an arrow function to define a method directly
 
-        \`\`\`javascript
+    \`\`\`javascript
 
-        let obj = {
+    let obj = {
 
-        name: "my object",
+    name: "my object",
 
-        unboundFunc: function () {
+    unboundFunc: function () {
 
-        return this.name;
+    return this.name;
 
-        // this function will be able to be called on different objects
+    // this function will be able to be called on different objects
 
-        },
+    },
 
-### 
+###
 
 boundToGlobal: () =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
 
@@ -677,42 +691,42 @@ boundToGlobal: () =&gt; { return this.name; // this function, no matter how you 
     let counter3 = counter2;
     console.log(counter3());
 
--   Define a method that references `this` on an object literal
+- Define a method that references `this` on an object literal
 
-    -   when we use `this` in a method it refers to the object that the method is invoked on
+  - when we use `this` in a method it refers to the object that the method is invoked on
 
-        -   it will let you access other pieces of information from within that object, or even other methods
-        -   method style invocation - `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)
+    - it will let you access other pieces of information from within that object, or even other methods
+    - method style invocation - `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)
 
-    -   context is set every time we invoke a function
-    -   function style invocation sets the context to the global object no matter what
-    -   being inside an object does not make the context that object! you still have to use method-style invocation
+  - context is set every time we invoke a function
+  - function style invocation sets the context to the global object no matter what
+  - being inside an object does not make the context that object! you still have to use method-style invocation
 
--   Utilize the built in `Function#bind` on a callback to maintain the context of this
+- Utilize the built in `Function#bind` on a callback to maintain the context of this
 
-    -   when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
+  - when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
 
-    <!-- -->
+  <!-- -->
 
-        let cat = {
-        purr: function () {
-        console.log("meow");
-        },
-        purrMore: function () {
-        this.purr();
-        },
-        };
-        let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
+      let cat = {
+      purr: function () {
+      console.log("meow");
+      },
+      purrMore: function () {
+      this.purr();
+      },
+      };
+      let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
 
 
-        // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
-        boundCat(); // prints "meow"
+      // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
+      boundCat(); // prints "meow"
 
-    \`\`
+  \`\`
 
-### 
+###
 
-### 
+###
 
        - `bind` can also work with arguments, so you can have a version of a function with particular arguments and a particular context. the first arg will be the context aka the `this` you want it to use. the next arguments will be the functions arguments that you are binding
           - if you just want to bind it to those arguments in particular, you can use `null` as the first argument, so the context won't be bound, just the arguments
@@ -741,26 +755,26 @@ boundToGlobal: () =&gt; { return this.name; // this function, no matter how you 
     // instead of changing the dog we changed the global name!!!
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
--   CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
-    -   could throw an error if it expects this to have some other method or whatever that doesn't exist
-    -   you could also overwrite values or assign values to exist in a space where they should not exist
+  - could throw an error if it expects this to have some other method or whatever that doesn't exist
+  - you could also overwrite values or assign values to exist in a space where they should not exist
 
--   if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
-        let cat = {
-        purr: function () {
-        console.log("meow");
-        },
-        purrMore: function () {
-        this.purr();
-        },
-        };
-        global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
+      let cat = {
+      purr: function () {
+      console.log("meow");
+      },
+      purrMore: function () {
+      this.purr();
+      },
+      };
+      global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
-### 
+###
 
 let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
 
@@ -795,36 +809,36 @@ boundCat(); // prints "meow"
     // instead of changing the dog we changed the global name!!!
     console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
--   CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
-    -   could throw an error if it expects this to have some other method or whatever that doesn't exist
-    -   you could also overwrite values or assign values to exist in a space where they should not exist
+  - could throw an error if it expects this to have some other method or whatever that doesn't exist
+  - you could also overwrite values or assign values to exist in a space where they should not exist
 
--   if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
-    \`\`\`javascript
+  \`\`\`javascript
 
-    let cat = {
+  let cat = {
 
-    purr: function () {
+  purr: function () {
 
-    console.log("meow");
+  console.log("meow");
 
-    },
+  },
 
-    purrMore: function () {
+  purrMore: function () {
 
-    this.purr();
+  this.purr();
 
-    },
+  },
 
-    };
+  };
 
 global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
 
 \`\`\`
 
--   we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
+- we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
 ### POJOs
 
@@ -832,14 +846,14 @@ global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr 
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
--   Boolean - Primitive
--   Null - Primitive
--   Undefined - Primitive
--   Number - Primitive
--   String - Primitive
--   Array - Reference
--   Object - Reference
--   Function - Reference
+- Boolean - Primitive
+- Null - Primitive
+- Undefined - Primitive
+- Number - Primitive
+- String - Primitive
+- Array - Reference
+- Object - Reference
+- Function - Reference
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
 
@@ -972,7 +986,7 @@ Javascript considers most data types to be 'primitive', these data types are imm
 
     console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
 
-### 
+###
 
 ### Review of Concepts
 
@@ -982,25 +996,25 @@ Javascript considers most data types to be 'primitive', these data types are imm
 
     var a = 'a';
 
--   `var` is the historical keyword used for variable declaration.
--   `var` declares variables in function scope, or global scope if not inside a function.
--   We consider `var` to be *deprecated* and it is never used in this course.
+- `var` is the historical keyword used for variable declaration.
+- `var` declares variables in function scope, or global scope if not inside a function.
+- We consider `var` to be _deprecated_ and it is never used in this course.
 
 <!-- -->
 
     let b = 'b';
 
--   `let` is the keyword we use most often for variable declaration.
--   `let` declares variables in block scope.
--   variables declared with `let` are re-assignable.
+- `let` is the keyword we use most often for variable declaration.
+- `let` declares variables in block scope.
+- variables declared with `let` are re-assignable.
 
 <!-- -->
 
     const c = 'c';
 
--   `const` is a specialized form of `let` that can only be used to **initialize** a variable.
--   Except when it is declared, you cannot assign to a `const` variable.
--   `const` scopes variables the same way that `let` does.
+- `const` is a specialized form of `let` that can only be used to **initialize** a variable.
+- Except when it is declared, you cannot assign to a `const` variable.
+- `const` scopes variables the same way that `let` does.
 
 #### 3. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -1089,7 +1103,7 @@ Identically, we could write
 
     fDAdder([1, 2, 4, 6]);
 
-If we use a *function declaration* style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node.JS and `Window` in your browser).
+If we use a _function declaration_ style function, the `this` variable is set to the `global` object (i.e. `Object [global]` in Node.JS and `Window` in your browser).
 
     const adder = (arr) => {
         console.log(this);
@@ -1097,7 +1111,7 @@ If we use a *function declaration* style function, the `this` variable is set to
     };
     adder([1, 2, 4, 6]);
 
-In this example, we use a *fat arrow* style function. Note that when we declare a funciton like this `this` becomes
+In this example, we use a _fat arrow_ style function. Note that when we declare a funciton like this `this` becomes
 
 #### 7. Define a method that references this on an object literal
 
@@ -1147,12 +1161,7 @@ In this example, we use a *fat arrow* style function. Note that when we declare 
 
     const jane = new Person('Jane');
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

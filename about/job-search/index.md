@@ -1,253 +1,268 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Job Search
-==========
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Job Boards and The Hunt
-=======================
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Job Search
+
+# Job Boards and The Hunt
 
 I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the…
 
-------------------------------------------------------------------------
+---
 
 ### Job Boards and The Hunt
 
@@ -256,7 +271,7 @@ I can’t imagine the kind of masochism it would take to enjoy the act of postin
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Update(After The Interview):
 
@@ -268,15 +283,15 @@ As a candidate, there are key next steps that you can and should after every int
 
 ‍
 
-*Hi (name),*
+_Hi (name),_
 
-> *Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team.*
+> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team._
 
-> *I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out.*
+> _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out._
 
-> *Thank you for your consideration,*
+> _Thank you for your consideration,_
 
-> *(your name)*
+> _(your name)_
 
 **Follow up**
 
@@ -294,7 +309,7 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 > Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
@@ -326,60 +341,60 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 24. <span id="f209"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a></span>
 25. <span id="5ec4"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### List:
 
 #### General Boards
 
--   <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
--   <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
--   <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
--   <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
--   <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
--   <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
--   <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
--   <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
--   <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
--   <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
+- <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
+- <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
+- <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
+- <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
+- <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
+- <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
+- <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
+- <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
+- <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
+- <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
 
 #### Remote or Relocation Boards:
 
--   <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
--   <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
--   <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
--   <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
--   <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
+- <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
+- <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
+- <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
+- <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
+- <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
 
 #### DS Boards:
 
--   <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
--   <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
--   <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
+- <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
+- <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
+- <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
 
 #### Design Boards
 
--   <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
--   <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
--   <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
+- <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
+- <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
+- <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
 
 #### Software Development
 
--   <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
--   <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
--   <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
--   <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
--   <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
--   <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
--   <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
--   <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
--   <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
--   <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
--   <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
+- <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
+- <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
+- <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
+- <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
+- <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
+- <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
+- <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
+- <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
+- <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
+- <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
+- <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don’t have 15 minutes to make up a job experience every time I want to read a review.**
 
-------------------------------------------------------------------------
+---
 
 > Also here is a repo of compiled job search and interviewing resources:
 
@@ -392,11 +407,11 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 Seek to leverage the connections you have with people you know and companies you want to work with. I know that that’s a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most <a href="https://www.investopedia.com/terms/r/returnoninvestment.asp" class="markup--anchor markup--p-anchor">RO</a>I efficient way to produce a desirable result. (Sorry introverts… 2020 may have been your year but this is our world. 😘)
 
-**If personal connections don’t come through, the next best thing is cold outreach (*best in terms of results…. personally I hate cold calling strangers and I am an extrovert*.)**
+**If personal connections don’t come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
 
 1.  <span id="2139">Before or after submitting an application, **identify 1–3 professionals to reach out to** at the company to express interest in opportunities.</span>
 2.  <span id="fb8b">**Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.</span>
-3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** *OR* **If you have yet to hear back after 3 business days, follow-up.**</span>
+3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** _OR_ **If you have yet to hear back after 3 business days, follow-up.**</span>
 
 Once you send off a message in step two, there are a variety of responses you may receive. Sometimes an individual will forward you along to someone who may be of better assistance, other times your message may be overlooked with no reply, and its possible (best case scenario) your request for a chat becomes an invitation to interview.
 
@@ -406,7 +421,7 @@ I am going to devote a lot of time to this one because it is the largest and mos
 
 LinkedIn now has <a href="https://news.linkedin.com/about-us#Statistics" class="markup--anchor markup--p-anchor">almost 740 million members</a> with over 55 million registered companies. (for comparison 12.3 million people visited Indeed in October, up 19.6 percent. <a href="http://www.monster.com/" class="markup--anchor markup--p-anchor">Monster.com</a> attracted 12.1 million people, and <a href="http://www.careerbuilder.com/" class="markup--anchor markup--p-anchor">CareerBuilder.com</a>attractedd 11.3 million in that same time) and LinkedIn is the most-used social media platform amongst Fortune 500 companies as it provides far more networking capabilities than pure recruitment.
 
-If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you *will* be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
+If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you _will_ be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
 
 Here’s my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
@@ -422,16 +437,16 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 #### Experience Section
 
--   <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
--   <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
--   <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
--   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
--   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
--   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
--   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
--   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
--   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
--   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
+- <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
+- <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
+- <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
+- <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
+- <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
+- <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
+- <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+- <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
+- <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
+- <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
 
 ### Do’s:
 
@@ -439,7 +454,7 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 **Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They’re not just doing this out of the kindness of their hearts, just like you… they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time…treat it like an interview.**
 
-> *To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…* **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
+> _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
 <a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong><br />
 <em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -464,7 +479,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Why it matters*¿*
 
@@ -472,17 +487,17 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you’re effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
-------------------------------------------------------------------------
+---
 
 ### Back to the other Job Board Niches:
 
-***3. Traditional job boards***. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
+**_3. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
-***4. Local-focused sites***. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
+**_4. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
 
-***5. Freelancer websites***. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
+**_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
 
--   <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
+- <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>### Lastly Here’s A Github Profile Guide:
 
@@ -492,213 +507,188 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*5-FYxWj0q8sUvpDoAR3ZLA.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
 <a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-**General**
-===========
+# **General**
 
--   **[How To Break Into Tech - Job Hunting and Interviews by Haseeb Qureshi](https://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/)**
--   **[Mintbean.io - Hackathons and Workshops](https://mintbean.io/)**
--   **[Data on the job search and how to do it!](https://talent.works/category/science-of-the-job-search/)**
--   **[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/inspect/)**
--   **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
--   **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
+- **[How To Break Into Tech - Job Hunting and Interviews by Haseeb Qureshi](https://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/)**
+- **[Mintbean.io - Hackathons and Workshops](https://mintbean.io/)**
+- **[Data on the job search and how to do it!](https://talent.works/category/science-of-the-job-search/)**
+- **[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/inspect/)**
+- **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
+- **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
 
-------------------------------------------------------------------------
+---
 
-**Resume**
-==========
+# **Resume**
 
--   **[Spelling/Grammar mistakes on Resume costs jobs](http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/)**
+- **[Spelling/Grammar mistakes on Resume costs jobs](http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/)**
 
-**Cover Letter**
-================
+# **Cover Letter**
 
--   **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
+- **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
 
-------------------------------------------------------------------------
+---
 
-**Heroku** - *Use at your own risk*
-===================================
+# **Heroku** - _Use at your own risk_
 
--   **[Keep Heroku App Awake For Free Using Google App Script](https://medium.com/@pandachain/keep-free-heroku-app-awake-during-a-specific-period-using-google-app-script-in-2017-63fe37ee9e9f)**
--   **[UptimeRobot](https://uptimerobot.com/)**
--   **[Kaffeine](https://kaffeine.herokuapp.com/)**
--   **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
+- **[Keep Heroku App Awake For Free Using Google App Script](https://medium.com/@pandachain/keep-free-heroku-app-awake-during-a-specific-period-using-google-app-script-in-2017-63fe37ee9e9f)**
+- **[UptimeRobot](https://uptimerobot.com/)**
+- **[Kaffeine](https://kaffeine.herokuapp.com/)**
+- **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
 
-------------------------------------------------------------------------
+---
 
-**Trivia**
-==========
+# **Trivia**
 
--   **JavaScript Trivia**
-    ---------------------
+- ## **JavaScript Trivia**
 
-    -   **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
-    -   **[Front-end trivia](https://www.thatjsdude.com/interview/)**
+  - **[Fullstack Cafe - EVERYTHING](https://www.fullstack.cafe/)**
+  - **[Front-end trivia](https://www.thatjsdude.com/interview/)**
 
--   **Python Trivia**
-    -----------------
+- ## **Python Trivia**
 
--   **Frontend Trivia**
-    -------------------
+- ## **Frontend Trivia**
 
-    -   [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
+  - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
 
-------------------------------------------------------------------------
+---
 
-**Language Resources**
-======================
+# **Language Resources**
 
--   **JavaScript Resources**
-    ------------------------
+- ## **JavaScript Resources**
 
-    -   **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
-    -   **React Native**
+  - **[TypeScript Learning Plan](https://github.com/antonjb/TypeScript-Learning-Plan)**
+  - **React Native**
 
-        -   **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
+    - **[Code With Mosh Enrolled](https://codewithmosh.com/courses/enrolled)**
 
-            -   *satagonia@gmail.com / qqqq1111*
+      - *satagonia@gmail.com / qqqq1111*
 
--   **Python Resources**
-    --------------------
+- ## **Python Resources**
 
-    \-
+  \-
 
--   **HTML5 Resources**
-    -------------------
+- ## **HTML5 Resources**
 
-    -   [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
-    -   [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
-    -   [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
-    -   [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-    -   [**HTML5 Doctor**](http://html5doctor.com/)
-    -   \-
+  - [**HTML5 Cheat Sheet**](https://digital.com/tools/html-cheatsheet/)
+  - [**HTML5 Rocks**](https://www.html5rocks.com/en/resources.html)
+  - [**MDN - HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - [**MDN - HTML5**](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+  - [**HTML5 Doctor**](http://html5doctor.com/)
+  - \-
 
--   **CSS3 Resources**
-    ------------------
+- ## **CSS3 Resources**
 
-    -   [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
-    -   [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
-    -   [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
-    -   [**CSS3.info**](https://www.css3.info/)
-    -   [**CSS Tricks**](https://css-tricks.com/)
+  - [**W3 Schools CSS3 Tutorial**](https://www.w3schools.com/css/)
+  - [**Tutorial Republic - Ultimate Tutorial for Beginners**](https://www.tutorialrepublic.com/css-tutorial/)
+  - [**MDN - CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - [**CSS3.info**](https://www.css3.info/)
+  - [**CSS Tricks**](https://css-tricks.com/)
 
-        -   [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-        -   [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    - [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    - [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-    -   [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
-    -   [**CSS Zen Garden**](http://csszengarden.com/)
-    -   [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
-    -   [**Specifishity**](http://www.specifishity.com/)
-    -   [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
-    -   [**Jen Simmons Labs**](https://labs.jensimmons.com/)
+  - [**Interactive CSS Grid Generator**](https://grid.layoutit.com/)
+  - [**CSS Zen Garden**](http://csszengarden.com/)
+  - [**Flexbox Grid (Package)**](http://flexboxgrid.com/)
+  - [**Specifishity**](http://www.specifishity.com/)
+  - [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
+  - [**Jen Simmons Labs**](https://labs.jensimmons.com/)
 
--   **Miscellaneous Resources**
-    ---------------------------
+- ## **Miscellaneous Resources**
 
-    -   [**CodePen**](https://codepen.io/)
+  - [**CodePen**](https://codepen.io/)
 
-        -   [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
+    - [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
 
-    -   [**Web Design Weekly**](https://web-design-weekly.com/)
-    -   [**Responsive Design Weekly**](https://responsivedesign.is/)
+  - [**Web Design Weekly**](https://web-design-weekly.com/)
+  - [**Responsive Design Weekly**](https://responsivedesign.is/)
 
-------------------------------------------------------------------------
+---
 
-**DS&A**
-========
+# **DS&A**
 
--   **[Leetcode](https://leetcode.com/explore)**
--   **[AlgoExpert](https://www.algoexpert.io/)**
+- **[Leetcode](https://leetcode.com/explore)**
+- **[AlgoExpert](https://www.algoexpert.io/)**
 
-**Hash Tables:**
-----------------
+## **Hash Tables:**
 
--   **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
+- **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
 
-    -   O(1) for a "good" table
-    -   O(n) for a terrible table (lots of collisions, etc.)
+  - O(1) for a "good" table
+  - O(n) for a terrible table (lots of collisions, etc.)
 
-------------------------------------------------------------------------
+---
 
-**System Design**
-=================
+# **System Design**
 
--   **[The Basics](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)**
--   **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
--   **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
+- **[The Basics](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)**
+- **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
+- **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
 
-------------------------------------------------------------------------
+---
 
-**Interviewing**
-================
+# **Interviewing**
 
--   ### **Mock Interviewing**
+- ### **Mock Interviewing**
 
-    -   **[Interviewing.io](https://interviewing.io/)**
+  - **[Interviewing.io](https://interviewing.io/)**
 
-------------------------------------------------------------------------
+---
 
-**Networking**
-==============
+# **Networking**
 
--   **[MeetUp](https://www.meetup.com/)**
+- **[MeetUp](https://www.meetup.com/)**
 
-------------------------------------------------------------------------
+---
 
-**Managing and Organizing Job Search**
-======================================
+# **Managing and Organizing Job Search**
 
--   **[Notion](notion.so)**
+- **[Notion](notion.so)**
 
-    -   Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
+  - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
 
-------------------------------------------------------------------------
+---
 
-**Negotiations**
-================
+# **Negotiations**
 
--   **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
--   **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
+- **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
+- **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
 
-------------------------------------------------------------------------
+---
 
-**Portfolio Sites**
-===================
+# **Portfolio Sites**
 
 Take 25 minutes to choose a template, download it, rename it githubusername.github.io , git init, and push it to a github repo of the same name:
 
-**Template Sources**
---------------------
+## **Template Sources**
 
--   [**Free CSS Templates**](http://www.free-css.com/template-categories/portfolio)
--   [**HTML5 UP**](http://html5up.net/)
--   [**Start Bootstrap**](http://startbootstrap.com/)
--   [**Theme Wagon**](https://themewagon.com/top-html-landing-page-templates/)
--   [**Templatemo**](https://templatemo.com/tag/portfolio)
--   [**One Page Love**](https://onepagelove.com/templates/free-templates)
--   Once you’ve decided on a template, download it to your machine.
--   Rename the folder `{$yourGitHubUserName}.github.io`, (e.g. if my GitHub username were QueenOfTheBeyhive, I would name my repo `QueenOfTheBeyhive.github.io`). This will be important for deployment to GitHub pages later.
--   Make sure to `git init` and set up your remote repository.
--   As always, make sure to read through any provided README for any potentially useful information.
--   Take some time to explore the structure, included elements, and default assets included in the template. Take special note of style sheets and the main HTML file. The main HTML must be called `index.html` and it must be located in the root of the directory. If the file is located elsewhere, relocate it to the root and adjust any relative paths for any imported scripts or style sheets.
+- [**Free CSS Templates**](http://www.free-css.com/template-categories/portfolio)
+- [**HTML5 UP**](http://html5up.net/)
+- [**Start Bootstrap**](http://startbootstrap.com/)
+- [**Theme Wagon**](https://themewagon.com/top-html-landing-page-templates/)
+- [**Templatemo**](https://templatemo.com/tag/portfolio)
+- [**One Page Love**](https://onepagelove.com/templates/free-templates)
+- Once you’ve decided on a template, download it to your machine.
+- Rename the folder `{$yourGitHubUserName}.github.io`, (e.g. if my GitHub username were QueenOfTheBeyhive, I would name my repo `QueenOfTheBeyhive.github.io`). This will be important for deployment to GitHub pages later.
+- Make sure to `git init` and set up your remote repository.
+- As always, make sure to read through any provided README for any potentially useful information.
+- Take some time to explore the structure, included elements, and default assets included in the template. Take special note of style sheets and the main HTML file. The main HTML must be called `index.html` and it must be located in the root of the directory. If the file is located elsewhere, relocate it to the root and adjust any relative paths for any imported scripts or style sheets.
 
-------------------------------------------------------------------------
+---
 
-**QA Engineering**
-==================
+# **QA Engineering**
 
--   **[Full course in 7 day trial](https://teamtreehouse.com/library/introduction-to-qa-engineering)**
--   **[Prep Notes](https://docs.google.com/document/d/1REtlnM0j88iGgIkPmOyeuwf-VdhOSV6U0QkcPEz81Oc/edit)**
+- **[Full course in 7 day trial](https://teamtreehouse.com/library/introduction-to-qa-engineering)**
+- **[Prep Notes](https://docs.google.com/document/d/1REtlnM0j88iGgIkPmOyeuwf-VdhOSV6U0QkcPEz81Oc/edit)**
 
-**Alternative Roles**
-=====================
+# **Alternative Roles**
 
     Data Analyst
     Sales Engineer
@@ -714,98 +704,86 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
     Implementation Specialist
     Technical Account Manager
 
-------------------------------------------------------------------------
+---
 
-**Externship**
-==============
+# **Externship**
 
--   **[insidesherpa](https://www.insidesherpa.com/)**
+- **[insidesherpa](https://www.insidesherpa.com/)**
 
-------------------------------------------------------------------------
+---
 
-**Open Source**
-===============
+# **Open Source**
 
--   **[GitHub's open source guides](https://opensource.guide/)**
--   **[Getting started with open source](https://opensource.com/resources/getting-started-open-source)**
--   **[First timers only](https://www.firsttimersonly.com/)**
--   **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
--   **[Code Triage](https://www.codetriage.com/)**
+- **[GitHub's open source guides](https://opensource.guide/)**
+- **[Getting started with open source](https://opensource.com/resources/getting-started-open-source)**
+- **[First timers only](https://www.firsttimersonly.com/)**
+- **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
+- **[Code Triage](https://www.codetriage.com/)**
 
-------------------------------------------------------------------------
+---
 
-**Volunteer**
-=============
+# **Volunteer**
 
--   **[Code For America](https://www.codeforamerica.org/)**
--   **[Donate Code](https://www.donatecode.com/)**
--   **[Social Coder](https://socialcoder.org/Home/Index)**
--   **[Catch A Fire](https://www.catchafire.org/)**
--   **[Hackers For Charity](https://www.hackersforcharity.org/)**
+- **[Code For America](https://www.codeforamerica.org/)**
+- **[Donate Code](https://www.donatecode.com/)**
+- **[Social Coder](https://socialcoder.org/Home/Index)**
+- **[Catch A Fire](https://www.catchafire.org/)**
+- **[Hackers For Charity](https://www.hackersforcharity.org/)**
 
-------------------------------------------------------------------------
+---
 
-**Imposter Syndrome**
-=====================
+# **Imposter Syndrome**
 
--   **[The Imposter's Advantage - Zain Rizvi](https://www.zainrizvi.io/blog/the-impostors-advantage/)**
--   **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
--   **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
+- **[The Imposter's Advantage - Zain Rizvi](https://www.zainrizvi.io/blog/the-impostors-advantage/)**
+- **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
+- **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
 
-------------------------------------------------------------------------
+---
 
-**Podcasts**
-============
+# **Podcasts**
 
--   **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
--   **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
+- **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
+- **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
 
-------------------------------------------------------------------------
+---
 
-**Books**
-=========
+# **Books**
 
--   **Grokking the Coding Interview**
+- **Grokking the Coding Interview**
 
-    -   [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
-    -   [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
+  - [GitHub Coding Questions](https://github.com/cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions)
+  - [Purchase Course](https://www.educative.io/courses/grokking-the-coding-interview)
 
--   **Grokking the System Design Interview**
+- **Grokking the System Design Interview**
 
-    -   [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
-    -   [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
+  - [Quizzes](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes)
+  - [Purchase Course](https://www.educative.io/courses/grokking-the-system-design-interview)
 
--   **Elements of Programming Interviews (EPI) in Python**
+- **Elements of Programming Interviews (EPI) in Python**
 
-    -   [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
+  - [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
 
--   **Skienna Algorithm Design Manual**
+- **Skienna Algorithm Design Manual**
 
-    -   [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
+  - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
 
-------------------------------------------------------------------------
+---
 
-**QA Questions**
-================
+# **QA Questions**
 
 **10:22:12 From Alexis Kozak to Everyone : Scenario 1**
 
--   It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that’s currently having to maintain a very manual workaround. What do you do?
+- It's 7:00 pm on a Friday, and you receive a message from Dev Ops that they haven't been able to upgrade a live Production environment as planned. There were feature updates in this release that customers have planned marketing campaigns around. It also included a bug fix for one customer that’s currently having to maintain a very manual workaround. What do you do?
 
 **10:24:40 From Alexis Kozak to Everyone : Scenario 2**
 
--   An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn’t right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
+- An application has been configured to send an email every time a patient requests a changed email. The automated email sends something to the old email, acknowledging that they changed their email, and if that isn’t right, to please contact Secular Health Network. When you come into the office one morning, you see that thousands of emails have been generated in the space of two hours. What do you do? How do you find the number of emails sent?
 
 **10:28:11 From Alexis Kozak to Everyone : Scenario 3**
 
--   A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You’ve implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you’re included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you’re told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn’t work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?
+- A customer has requested a change to SSO logic such that only users from a certain region can access SmartExam. You’ve implemented the rule on their demo environments and given them a testing plan that is simple and straightforward. During testing, you’re included in multiple email chains with different parties, as well as some one-off calls and texts messages. Resources seem scattered, but the testing happens. After receiving confirmation from the customer that testing was successful, you’re told the code is good to go into production. However, upon doing some quick checks, you discover that the rule you wrote doesn’t work and would actually prevent any user from logging into SmartExam. The fix is quite simple. What do you do?
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

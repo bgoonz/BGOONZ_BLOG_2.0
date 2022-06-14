@@ -1,256 +1,270 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Bash Commands That Save Me Time and Frustration
-===============================================
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Bash Commands
-=============
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
 
-Bash Commands That Save Me Time and Frustration
-===============================================
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Bash Commands That Save Me Time and Frustration
+
+# Bash Commands
+
+# Bash Commands That Save Me Time and Frustration
 
 Here’s a list of bash commands that stand between me and insanity.
 
-------------------------------------------------------------------------
+---
 
 ### Bash Commands That Save Me Time and Frustration
 
@@ -271,7 +285,7 @@ Here’s a list of bash commands that stand between me and insanity.
 
 ### Getting Started (Advanced Users Skip Section):
 
-------------------------------------------------------------------------
+---
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
@@ -285,8 +299,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" /></figure>Shows all of my files and directories of my Desktop directory.
 
--   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
--   <span id="5cd8">Some useful `ls` command options:-</span>
+- <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
+- <span id="5cd8">Some useful `ls` command options:-</span>
 
 OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
 
@@ -316,7 +330,7 @@ We can create an empty file by typing `touch file_name`. It's going to create a 
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" /></figure>I created a hello.txt file in my current working directory. Again you can use \`ls\` command to see the file is created or not.
 
-Now open your hello.txt file in your text editor and write *Hello Everyone!* into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
 #### ✔ Display the Content of a File ➡ `cat`:
 
@@ -352,13 +366,13 @@ You can rename a file by typing `mv old_file_name new_file_name` & also rename a
 
 To do this, we use the `cp` command.
 
--   <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
+- <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif" class="graf-image" /></figure>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
+- <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
-*The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
+_The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
 
@@ -366,11 +380,11 @@ To do this, we use the `cp` command.
 
 To do this, we use the `rm` command.
 
--   <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
+- <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif" class="graf-image" /></figure>Here I removed my hi.txt file.
 
--   <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
+- <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
@@ -382,7 +396,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-------------------------------------------------------------------------
+---
 
 ### MY COMMANDS:
 
@@ -390,19 +404,19 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 **here is a** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor"><strong>folde</strong></a>**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
-    find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;    
+    find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
     find . -name "*.zip" -type f -print -delete
 
-------------------------------------------------------------------------
+---
 
 ### 2.) Install node modules recursively:
 
-    npm i -g recursive-install  
+    npm i -g recursive-install
 
     npm-recursive-install
 
-------------------------------------------------------------------------
+---
 
 ### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -413,9 +427,9 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
     # -------------------------------------------------------
 
-    # This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files. 
+    # This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
 
-    find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} + 
+    find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
     # -------------------------------------------------------
 
@@ -479,7 +493,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</figcaption></figure>find . \\( -name "\*SECURITY.txt" -o -name "\*RELEASE.txt" -o -name "\*CHANGELOG.txt" -o -name "\*LICENSE.txt" -o -name "\*CONTRIBUTING.txt" -name "\*HISTORY.md" -o -name "\*LICENSE" -o -name "\*SECURITY.md" -o -name "\*RELEASE.md" -o -name "\*CHANGELOG.md" -o -name "\*LICENSE.md" -o -name "\*CODE\_OF\_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \\) -exec rm -rf -- {} +
 
-------------------------------------------------------------------------
+---
 
 ### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -569,7 +583,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -579,7 +593,7 @@ The following output from my bash shell corresponds to the directory:
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -631,7 +645,7 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-***I modified the command slightly to apply only to files called ‘result.md’:***
+**_I modified the command slightly to apply only to files called ‘result.md’:_**
 
 > The result is :
 
@@ -666,7 +680,7 @@ The following output from my bash shell corresponds to the directory:
 <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong><br />
 <em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### 7.) Execute command recursively:
 
@@ -674,7 +688,7 @@ The following output from my bash shell corresponds to the directory:
 
 > **I am essentially removing the recursive action of the find command…**
 
-**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the *find/pandoc* line once in every subfolder of the working directory… is working properly!**
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory… is working properly!**
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>\*\*Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.\*\*
 
@@ -714,7 +728,7 @@ The following output from my bash shell corresponds to the directory:
     }
     RecurseDirs "./"
 
-------------------------------------------------------------------------
+---
 
 ### TBC….
 
@@ -724,13 +738,13 @@ The following output from my bash shell corresponds to the directory:
 
     sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
-------------------------------------------------------------------------
+---
 
-### 10. Recursively Delete node\_modules folders
+### 10. Recursively Delete node_modules folders
 
     find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
-------------------------------------------------------------------------
+---
 
 ### 11. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -757,13 +771,13 @@ The following output from my bash shell corresponds to the directory:
 
     sanitize_dir '/path/to/somewhere'
 
-------------------------------------------------------------------------
+---
 
 ### 12. Start postgresql in terminal
 
     sudo -u postgres psql
 
-------------------------------------------------------------------------
+---
 
 ### 13. Add closing body and script tags to each html file in working directory.
 
@@ -774,7 +788,7 @@ The following output from my bash shell corresponds to the directory:
     </form>
       </body></html>" | tee -a *.html
 
-------------------------------------------------------------------------
+---
 
 ### 14. Batch Download Videos
 
@@ -794,7 +808,7 @@ The following output from my bash shell corresponds to the directory:
           num=$(($num+1))
     done
 
-------------------------------------------------------------------------
+---
 
 ### 15. Change File Extension from ‘.txt’ to .doc for all files in working directory.
 
@@ -806,13 +820,13 @@ The following output from my bash shell corresponds to the directory:
 
     find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
-------------------------------------------------------------------------
+---
 
 ### 17. Copy folder structure including only files of a specific extension into an ouput Folder
 
     find . -name '*.md' | cpio -pdm './../outputFolder'
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
@@ -824,7 +838,7 @@ The following output from my bash shell corresponds to the directory:
 <a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong><br />
 <em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
@@ -832,13 +846,11 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 Exported from [Medium](https://medium.com) on August 31, 2021.
 
-Resources:
-==========
+# Resources:
 
--   [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
+- [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
 
-1. Remove spaces from file and folder names and then remove numbers from files and folder names....
-===================================================================================================
+1. # Remove spaces from file and folder names and then remove numbers from files and folder names....
 
 ### Description: need to : `sudo apt install rename`
 
@@ -846,7 +858,7 @@ Resources:
 
 ###### code:
 
-    find . -name "* *" -type d | rename 's/ /_/g'   
+    find . -name "* *" -type d | rename 's/ /_/g'
     find . -name "* *" -type f | rename 's/ /_/g'
 
     ```sh
@@ -878,10 +890,9 @@ Resources:
       if (err) throw err;
     });
 
-------------------------------------------------------------------------
+---
 
-2. Download Website Using Wget:
-===============================
+2. # Download Website Using Wget:
 
 ### Description:
 
@@ -891,10 +902,9 @@ Resources:
 
     wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
-------------------------------------------------------------------------
+---
 
-3. Clean Out Messy Git Repo:
-============================
+3. # Clean Out Messy Git Repo:
 
 ### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
@@ -902,7 +912,7 @@ Resources:
 
 ###### code:
 
-    find . -empty -type d -print -delete        
+    find . -empty -type d -print -delete
 
 
     find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
@@ -910,10 +920,9 @@ Resources:
 
     find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-------------------------------------------------------------------------
+---
 
-4. clone all of a user's git repositories
-=========================================
+4. # clone all of a user's git repositories
 
 ### Description: clone all of a user or organization's git repositories.
 
@@ -921,8 +930,7 @@ Resources:
 
 ###### code:
 
-Generalized:
-============
+# Generalized:
 
     CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
     curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -930,8 +938,7 @@ Generalized:
       cut -d \" -f 4 |
       xargs -L1 git clone
 
-Clone all Git User
-==================
+# Clone all Git User
 
     CNTX={users}; NAME={bgoonz}; PAGE=1
     curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -939,8 +946,7 @@ Clone all Git User
       cut -d \" -f 4 |
       xargs -L1 git clone
 
-Clone all Git Organization:
-===========================
+# Clone all Git Organization:
 
     CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
     curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -948,10 +954,9 @@ Clone all Git Organization:
       cut -d \" -f 4 |
       xargs -L1 git clone
 
-------------------------------------------------------------------------
+---
 
-5. Git Workflow
-===============
+5. # Git Workflow
 
 ### Description:
 
@@ -983,10 +988,9 @@ Clone all Git Organization:
     git commit -m"update"
     git push -u origin preview
 
-------------------------------------------------------------------------
+---
 
-6. Recursive Unzip In Place
-===========================
+6. # Recursive Unzip In Place
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name.
 
@@ -1000,10 +1004,9 @@ Clone all Git Organization:
 
     find . -name "*.zip" -type f -print -delete
 
-------------------------------------------------------------------------
+---
 
-7. git pull keeping local changes:
-==================================
+7. # git pull keeping local changes:
 
 ### Description:
 
@@ -1015,10 +1018,9 @@ Clone all Git Organization:
     git pull
     git stash pop
 
-------------------------------------------------------------------------
+---
 
-8. Prettier Code Formatter:
-===========================
+8. # Prettier Code Formatter:
 
 ### Description:
 
@@ -1030,10 +1032,9 @@ Clone all Git Organization:
 
     prettier --write .
 
-------------------------------------------------------------------------
+---
 
-9. Pandoc
-=========
+9. # Pandoc
 
 ### Description:
 
@@ -1051,10 +1052,9 @@ Clone all Git Organization:
 
     find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
 
-------------------------------------------------------------------------
+---
 
-10. Gitpod Installs
-===================
+10. # Gitpod Installs
 
 ### Description:
 
@@ -1062,7 +1062,7 @@ Clone all Git Organization:
 
 ###### code:
 
-    sudo apt install tree 
+    sudo apt install tree
     sudo apt install pandoc -y
     sudo apt install rename -y
     sudo apt install black -y
@@ -1076,10 +1076,9 @@ Clone all Git Organization:
     prettier --write .
     npm-recursive-install
 
-------------------------------------------------------------------------
+---
 
-11. Repo Utils Package:
-=======================
+11. # Repo Utils Package:
 
 ### Description: my standard repo utis package
 
@@ -1089,10 +1088,9 @@ Clone all Git Organization:
 
     npm i @bgoonz11/repoutils
 
-------------------------------------------------------------------------
+---
 
-12. Unix Tree Package Usage:
-============================
+12. # Unix Tree Package Usage:
 
 ### Description:
 
@@ -1115,10 +1113,9 @@ Clone all Git Organization:
 
     tree -f >README.md
 
-------------------------------------------------------------------------
+---
 
-13. Find & Replace string in file & folder names recursively..
-==============================================================
+13. # Find & Replace string in file & folder names recursively..
 
 ### Description:
 
@@ -1141,18 +1138,17 @@ Clone all Git Organization:
 
 
 
-    rename 's/\.js\.download$/.js/' *.js\.download 
+    rename 's/\.js\.download$/.js/' *.js\.download
 
 
-    rename 's/\.html\.markdown$/.md/' *.html\.markdown 
+    rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
 
     find . -type d -exec rename 's/es6//g' {} +
 
-------------------------------------------------------------------------
+---
 
-14. Remove double extensions :
-==============================
+14. # Remove double extensions :
 
 ### Description:
 
@@ -1186,10 +1182,9 @@ Clone all Git Organization:
         mv "${file}" "${file%.png}"
     done
 
-------------------------------------------------------------------------
+---
 
-15. Truncate folder names down to 12 characters:
-================================================
+15. # Truncate folder names down to 12 characters:
 
 ### Description:
 
@@ -1199,10 +1194,9 @@ Clone all Git Organization:
 
     for d in ./*; do mv $d ${d:0:12}; done
 
-------------------------------------------------------------------------
+---
 
-16.Appendir.js
-==============
+# 16.Appendir.js
 
 ### Description: combine the contents of every file in the contaning directory.
 
@@ -1219,10 +1213,9 @@ Clone all Git Organization:
       if (err) throw err;
     });
 
-------------------------------------------------------------------------
+---
 
-17. Replace space in filename with underscore
-=============================================
+17. # Replace space in filename with underscore
 
 ### Description: followed by replace `'#' with '_'` in directory name
 
@@ -1232,12 +1225,11 @@ Clone all Git Organization:
 
     find . -name "* *" -type f | rename 's/_//g'
 
-    find . -name "* *" -type d | rename 's/#/_/g'   
+    find . -name "* *" -type d | rename 's/#/_/g'
 
-------------------------------------------------------------------------
+---
 
-18. Filter & delete files by name and extension
-===============================================
+18. # Filter & delete files by name and extension
 
 ### Description:
 
@@ -1259,10 +1251,9 @@ Clone all Git Organization:
 
     find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
-------------------------------------------------------------------------
+---
 
-19. Remove lines containing string:
-===================================
+19. # Remove lines containing string:
 
 ### Description:
 
@@ -1284,10 +1275,9 @@ Clone all Git Organization:
 
     sudo sed -i '/author/d' ./*
 
-------------------------------------------------------------------------
+---
 
-20. Remove duplicate lines from a text file
-===========================================
+20. # Remove duplicate lines from a text file
 
 ### Description:
 
@@ -1300,10 +1290,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
     sudo apt install uniq
     uniq -u input.txt output.txt
 
-------------------------------------------------------------------------
+---
 
-21. Remove lines containing string:
-===================================
+21. # Remove lines containing string:
 
 ### Description:
 
@@ -1339,10 +1328,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
     sudo sed -i '/right\.html/d' ./index.html
     sudo sed -i '/right\.html/d' ./right.html
 
-------------------------------------------------------------------------
+---
 
-22. Zip directory excluding .git and node\_modules all the way down (Linux)
-===========================================================================
+22. # Zip directory excluding .git and node_modules all the way down (Linux)
 
 ### Description:
 
@@ -1356,17 +1344,16 @@ Now, let’s understand the use of this with the help of an example. Suppose you
 
     printf "\nCreated: $1.$TSTAMP.zip\n"
 
-    # usage: 
+    # usage:
     # - zipdir thedir
     # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-    # if in windows/git-bash, add 'zip' command this way: 
+    # if in windows/git-bash, add 'zip' command this way:
     # https://stackoverflow.com/a/55749636/1482990
 
-------------------------------------------------------------------------
+---
 
-23. Delete files containing a certain string:
-=============================================
+23. # Delete files containing a certain string:
 
 ### Description:
 
@@ -1378,10 +1365,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
     vi doit.sh // check for murphy and his law
     source doit.sh
 
-------------------------------------------------------------------------
+---
 
-24.
-===
+24. ===
 
 ### Description:
 
@@ -1485,10 +1471,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
 
     cmd $listing --sort=extension >>$html
 
-------------------------------------------------------------------------
+---
 
-25. Index of Iframes
-====================
+25. # Index of Iframes
 
 ### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags.
 
@@ -1591,10 +1576,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
 
     cmd $listing --sort=extension >>$html
 
-------------------------------------------------------------------------
+---
 
-26. Filter Corrupted Git Repo For Troublesome File:
-===================================================
+26. # Filter Corrupted Git Repo For Troublesome File:
 
 ### Description:
 
@@ -1604,10 +1588,9 @@ Now, let’s understand the use of this with the help of an example. Suppose you
 
     git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-------------------------------------------------------------------------
+---
 
-27. OVERWRITE LOCAL CHANGES:
-============================
+27. # OVERWRITE LOCAL CHANGES:
 
 ### Description:
 
@@ -1634,10 +1617,9 @@ Important: If you have any local changes, they will be lost. With or without --h
     git fetch --all
     git reset --hard origin/master
 
-------------------------------------------------------------------------
+---
 
-28. Remove Submodules:
-======================
+28. # Remove Submodules:
 
 ### Description: To remove a submodule you need to:
 
@@ -1649,10 +1631,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     git submodule deinit
 
-------------------------------------------------------------------------
+---
 
-29. GET GISTS
-=============
+29. # GET GISTS
 
 ### Description:
 
@@ -1674,10 +1655,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
-------------------------------------------------------------------------
+---
 
-30. Remove Remote OriginL
-=========================
+30. # Remove Remote OriginL
 
 ### Description:
 
@@ -1687,10 +1667,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     git remote remove origin
 
-------------------------------------------------------------------------
+---
 
-31. just clone .git folder:
-===========================
+31. # just clone .git folder:
 
 ### Description:
 
@@ -1700,10 +1679,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
-------------------------------------------------------------------------
+---
 
-32. Undo recent pull request:
-=============================
+32. # Undo recent pull request:
 
 ### Description:
 
@@ -1713,10 +1691,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     git reset --hard master@{"10 minutes ago"}
 
-------------------------------------------------------------------------
+---
 
-33. Lebab
-=========
+33. # Lebab
 
 ### Description: ES5 --&gt; ES6
 
@@ -1748,12 +1725,12 @@ Important: If you have any local changes, they will be lost. With or without --h
     lebab --replace ./ --transform arg-rest
     lebab --replace ./ --transform for-each
     lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs 
+    lebab --replace ./ --transform commonjs
     lebab --replace ./ --transform exponent
     lebab --replace ./ --transform multi-var
     lebab --replace ./ --transform template
     lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param 
+    lebab --replace ./ --transform  destruct-param
     lebab --replace ./ --transform includes
     lebab --replace ./ --transform obj-method
     lebab --replace ./ --transform class
@@ -1762,18 +1739,17 @@ Important: If you have any local changes, they will be lost. With or without --h
     lebab --replace ./ --transform arg-rest
     lebab --replace ./ --transform for-each
     lebab --replace ./ --transform for-of
-    lebab --replace ./ --transform commonjs 
+    lebab --replace ./ --transform commonjs
     lebab --replace ./ --transform exponent
     lebab --replace ./ --transform multi-var
     lebab --replace ./ --transform template
     lebab --replace ./ --transform default-param
-    lebab --replace ./ --transform  destruct-param 
+    lebab --replace ./ --transform  destruct-param
     lebab --replace ./ --transform includes
 
-------------------------------------------------------------------------
+---
 
-34. Troubleshoot Ubuntu Input/Output Error
-==========================================
+34. # Troubleshoot Ubuntu Input/Output Error
 
 ### Description: Open Powershell as Administrator...
 
@@ -1785,10 +1761,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
      Get-Service LxssManager | Restart-Service
 
-------------------------------------------------------------------------
+---
 
-35. Export Medium as Markdown
-=============================
+35. # Export Medium as Markdown
 
 ### Description:
 
@@ -1801,10 +1776,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
 
-------------------------------------------------------------------------
+---
 
-36. Delete files in violation of a given size range (100MB for git)
-===================================================================
+36. # Delete files in violation of a given size range (100MB for git)
 
 ### Description:
 
@@ -1819,10 +1793,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     find . -size +98M -a -print -a -exec rm -f {} \;
 
-------------------------------------------------------------------------
+---
 
-37. download all links of given file type
-=========================================
+37. # download all links of given file type
 
 ### Description:
 
@@ -1832,10 +1805,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     wget -r -A.pdf https://overapi.com/git
 
-------------------------------------------------------------------------
+---
 
-38. Kill all node processes
-===========================
+38. # Kill all node processes
 
 ### Description:
 
@@ -1845,10 +1817,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     killall -s KILL node
 
-------------------------------------------------------------------------
+---
 
-39. Remove string from file names recursively
-=============================================
+39. # Remove string from file names recursively
 
 ### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
 
@@ -1861,7 +1832,7 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     find . -type f -exec rename 's/-master//g' {} +
 
-> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
     find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
@@ -1870,10 +1841,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     find . -type d -exec rename 's/-master//g' {} +
 
-------------------------------------------------------------------------
+---
 
-40. Remove spaces from file and folder names recursively
-========================================================
+40. # Remove spaces from file and folder names recursively
 
 ### Description: replaces spaces in file and folder names with an `_` underscore
 
@@ -1881,13 +1851,12 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-    find . -name "* *" -type d | rename 's/ /_/g'   
+    find . -name "* *" -type d | rename 's/ /_/g'
     find . -name "* *" -type f | rename 's/ /_/g'
 
-------------------------------------------------------------------------
+---
 
-41. Zip Each subdirectories in a given directory into their own zip file
-========================================================================
+41. # Zip Each subdirectories in a given directory into their own zip file
 
 ### Description:
 
@@ -1897,21 +1866,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     for i in */; do zip -r "${i%/}.zip" "$i"; done
 
-------------------------------------------------------------------------
+---
 
-42.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-43.
-===
+42. ===
 
 ### Description:
 
@@ -1919,21 +1876,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-44.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-45.
-===
+43. ===
 
 ### Description:
 
@@ -1941,21 +1886,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-46.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-47.
-===
+44. ===
 
 ### Description:
 
@@ -1963,21 +1896,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-48.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-49.
-===
+45. ===
 
 ### Description:
 
@@ -1985,21 +1906,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-50.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-51.
-===
+46. ===
 
 ### Description:
 
@@ -2007,21 +1916,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-52.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-53.
-===
+47. ===
 
 ### Description:
 
@@ -2029,21 +1926,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-54.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-55.
-===
+48. ===
 
 ### Description:
 
@@ -2051,21 +1936,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-56.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-57.
-===
+49. ===
 
 ### Description:
 
@@ -2073,21 +1946,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-58.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-59.
-===
+50. ===
 
 ### Description:
 
@@ -2095,21 +1956,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-60.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-61.
-===
+51. ===
 
 ### Description:
 
@@ -2117,21 +1966,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-62.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-63.
-===
+52. ===
 
 ### Description:
 
@@ -2139,21 +1976,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-64.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-65.
-===
+53. ===
 
 ### Description:
 
@@ -2161,21 +1986,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-66.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-67.
-===
+54. ===
 
 ### Description:
 
@@ -2183,21 +1996,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-68.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-69.
-===
+55. ===
 
 ### Description:
 
@@ -2205,21 +2006,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-70.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-71.
-===
+56. ===
 
 ### Description:
 
@@ -2227,21 +2016,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-72.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-73.
-===
+57. ===
 
 ### Description:
 
@@ -2249,21 +2026,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-74.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-75.
-===
+58. ===
 
 ### Description:
 
@@ -2271,21 +2036,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-76.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-77.
-===
+59. ===
 
 ### Description:
 
@@ -2293,21 +2046,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-78.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-79.
-===
+60. ===
 
 ### Description:
 
@@ -2315,21 +2056,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-80.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-81.
-===
+61. ===
 
 ### Description:
 
@@ -2337,21 +2066,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-82.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-83.
-===
+62. ===
 
 ### Description:
 
@@ -2359,21 +2076,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-84.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-85.
-===
+63. ===
 
 ### Description:
 
@@ -2381,21 +2086,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-86.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-87.
-===
+64. ===
 
 ### Description:
 
@@ -2403,21 +2096,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-88.
-===
-
-### Description:
-
-> Notes:
-
-###### code:
-
-------------------------------------------------------------------------
-
-89.
-===
+65. ===
 
 ### Description:
 
@@ -2425,10 +2106,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-90.
-===
+66. ===
 
 ### Description:
 
@@ -2436,10 +2116,249 @@ Important: If you have any local changes, they will be lost. With or without --h
 
 ###### code:
 
-------------------------------------------------------------------------
+---
 
-91. Unzip PowerShell
-====================
+67. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+68. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+69. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+70. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+71. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+72. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+73. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+74. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+75. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+76. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+77. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+78. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+79. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+80. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+81. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+82. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+83. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+84. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+85. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+86. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+87. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+88. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+89. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+90. ===
+
+### Description:
+
+> Notes:
+
+###### code:
+
+---
+
+91. # Unzip PowerShell
 
 ### Description:
 
@@ -2451,26 +2370,25 @@ Important: If you have any local changes, they will be lost. With or without --h
         [string] $ZipFilesPath = "./",
         [string] $UnzipPath = "./RESULT"
     )
-     
+
     $Shell = New-Object -com Shell.Application
     $Location = $Shell.NameSpace($UnzipPath)
-     
+
     $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
-     
+
     $progress = 1
     foreach ($ZipFile in $ZipFiles) {
         Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
         $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
-     
-     
+
+
         $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
         $progress++
     }
 
-------------------------------------------------------------------------
+---
 
-92. return to bash from zsh
-===========================
+92. # return to bash from zsh
 
 ### Description:
 
@@ -2480,10 +2398,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
      sudo apt --purge remove zsh
 
-------------------------------------------------------------------------
+---
 
-93. Symbolic Link
-=================
+93. # Symbolic Link
 
 ### Description: to working directory
 
@@ -2495,10 +2412,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     ln -s "$(pwd)" ~/Downloads
 
-------------------------------------------------------------------------
+---
 
-94. auto generate readme
-========================
+94. # auto generate readme
 
 ### Description: rename existing readme to blueprint.md
 
@@ -2508,10 +2424,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     npx @appnest/readme generate
 
-------------------------------------------------------------------------
+---
 
-95. Log into postgres:
-======================
+95. # Log into postgres:
 
 ### Description:
 
@@ -2521,10 +2436,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     sudo -u postgres psql
 
-------------------------------------------------------------------------
+---
 
-96. URL To Subscribe To YouTube Channel
-=======================================
+96. # URL To Subscribe To YouTube Channel
 
 ### Description:
 
@@ -2534,10 +2448,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
-------------------------------------------------------------------------
+---
 
-97. Embed Repl.it In Medium Post:
-=================================
+97. # Embed Repl.it In Medium Post:
 
 ###### code:
 
@@ -2551,10 +2464,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-------------------------------------------------------------------------
+---
 
-98.
-===
+98. ===
 
 ### Description:
 
@@ -2567,10 +2479,9 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
-------------------------------------------------------------------------
+---
 
-99. Cheat Sheet
-===============
+99. # Cheat Sheet
 
 ### Description:
 
@@ -2767,7 +2678,7 @@ Important: If you have any local changes, they will be lost. With or without --h
     echo $!                      # prints process ID of the most recently invoked background job
     echo $?                      # displays the exit status of the last command
     read <varname>               # reads a string from the input and assigns it to a variable
-    read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value 
+    read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
     column -t <filename>         # display info in pretty columns (often used with pipe)
     let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
     export VARNAME=value         # defines an environment variable (will be available in subprocesses)
@@ -3064,9 +2975,9 @@ Important: If you have any local changes, they will be lost. With or without --h
     trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
     ##############################################################################
-    # COLORS AND BACKGROUNDS 
+    # COLORS AND BACKGROUNDS
     ##############################################################################
-    # note: \e or \x1B also work instead of \033 
+    # note: \e or \x1B also work instead of \033
     # Reset
     Color_Off='\033[0m' # Text Reset
 
@@ -3123,18 +3034,13 @@ Important: If you have any local changes, they will be lost. With or without --h
 
     # Example of usage
     echo -e "${Green}This is GREEN text${Color_Off} and normal text"
-    echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
+    echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
     # option -e is mandatory, it enable interpretation of backslash escapes
     printf "${Red} This is red \n"
 
-------------------------------------------------------------------------
+---
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

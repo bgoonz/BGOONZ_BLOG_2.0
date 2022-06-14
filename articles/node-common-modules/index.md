@@ -1,249 +1,264 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Common Modules
-==============
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Modules: CommonJS modules[\#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
----------------------------------------------------------------------------------------------------
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Common Modules
+
+## Modules: CommonJS modules[\#](https://nodejs.org/api/modules.html#modules_modules_commonjs_modules)
 
 [Stability: 2](https://nodejs.org/api/documentation.html#documentation_stability_index) - Stable
 
@@ -309,10 +324,10 @@ Packages can depend on one another. In order to install package `foo`, it may b
 
 Because Node.js looks up the `realpath` of any modules it loads (that is, it resolves symlinks) and then [looks for their dependencies in `node_modules` folders](https://nodejs.org/api/modules.html#modules_loading_from_node_modules_folders), this situation can be resolved with the following architecture:
 
--   `/usr/lib/node/foo/1.2.3/`: Contents of the `foo` package, version 1.2.3.
--   `/usr/lib/node/bar/4.3.2/`: Contents of the `bar` package that `foo` depends on.
--   `/usr/lib/node/foo/1.2.3/node_modules/bar`: Symbolic link to `/usr/lib/node/bar/4.3.2/`.
--   `/usr/lib/node/bar/4.3.2/node_modules/*`: Symbolic links to the packages that `bar` depends on.
+- `/usr/lib/node/foo/1.2.3/`: Contents of the `foo` package, version 1.2.3.
+- `/usr/lib/node/bar/4.3.2/`: Contents of the `bar` package that `foo` depends on.
+- `/usr/lib/node/foo/1.2.3/node_modules/bar`: Symbolic link to `/usr/lib/node/bar/4.3.2/`.
+- `/usr/lib/node/bar/4.3.2/node_modules/*`: Symbolic links to the packages that `bar` depends on.
 
 Thus, even if a cycle is encountered, or if there are dependency conflicts, every module will be able to get a version of its dependency that it can use.
 
@@ -349,7 +364,7 @@ LOAD*AS*FILE(X)
 3.  If X.json is a file, parse X.json to a JavaScript Object. STOP
 4.  If X.node is a file, load X.node as binary addon. STOP
 
-LOAD\_INDEX(X)
+LOAD_INDEX(X)
 
 1.  If X/index.js is a file, load X/index.js as JavaScript text. STOP
 2.  If X/index.json is a file, parse X/index.json to a JavaScript object. STOP
@@ -358,7 +373,7 @@ LOAD\_INDEX(X)
 LOAD*AS*DIRECTORY(X)
 
 1.  If X/package.json is a file, a. Parse X/package.json, and look for "main" field. b. If "main" is a falsy value, GOTO 2. c. let M = X + (json main field) d. LOAD*AS*FILE(M) e. LOAD*INDEX(M) f. LOAD*INDEX(X) DEPRECATED g. THROW "not found"
-2.  LOAD\_INDEX(X)
+2.  LOAD_INDEX(X)
 
 LOAD*NODE*MODULES(X, START)
 
@@ -369,7 +384,7 @@ NODE*MODULES*PATHS(START)
 
 1.  let PARTS = path split(START)
 2.  let I = count of PARTS - 1
-3.  let DIRS = \[GLOBAL\_FOLDERS\]
+3.  let DIRS = \[GLOBAL_FOLDERS\]
 4.  while I &gt;= 0, a. if PARTS\[I\] = "node*modules" CONTINUE b. DIR = path join(PARTS\[0 .. I\] + "node*modules") c. DIRS = DIRS + DIR d. let I = I - 1
 5.  return DIRS
 
@@ -402,7 +417,7 @@ LOAD*PACKAGE*SELF(X, DIR)
 RESOLVE*ESM*MATCH(MATCH)
 
 1.  let { RESOLVED, EXACT } = MATCH
-2.  let RESOLVED\_PATH = fileURLToPath(RESOLVED)
+2.  let RESOLVED_PATH = fileURLToPath(RESOLVED)
 3.  If EXACT is true, a. If the file at RESOLVED*PATH exists, load RESOLVED*PATH as its extension format. STOP
 4.  Otherwise, if EXACT is false, a. LOAD*AS*FILE(RESOLVED*PATH) b. LOAD*AS*DIRECTORY(RESOLVED*PATH)
 5.  THROW "not found"
@@ -509,8 +524,8 @@ This is the extent of the awareness of `package.json` files within Node.js.
 
 If there is no [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file present in the directory, or if the [`"main"`](https://nodejs.org/api/packages.html#packages_main) entry is missing or cannot be resolved, then Node.js will attempt to load an `index.js` or `index.node` file out of that directory. For example, if there was no [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file in the previous example, then `require('./some-library')` would attempt to load:
 
--   `./some-library/index.js`
--   `./some-library/index.node`
+- `./some-library/index.js`
+- `./some-library/index.node`
 
 If these attempts fail, then Node.js will report the entire module as missing with the default error:
 
@@ -524,10 +539,10 @@ If it is not found there, then it moves to the parent directory, and so on, unti
 
 For example, if the file at `'/home/ry/projects/foo.js'` called `require('bar.js')`, then Node.js would look in the following locations, in this order:
 
--   `/home/ry/projects/node_modules/bar.js`
--   `/home/ry/node_modules/bar.js`
--   `/home/node_modules/bar.js`
--   `/node_modules/bar.js`
+- `/home/ry/projects/node_modules/bar.js`
+- `/home/ry/node_modules/bar.js`
+- `/home/node_modules/bar.js`
+- `/node_modules/bar.js`
 
 This allows programs to localize their dependencies, so that they do not clash.
 
@@ -543,11 +558,11 @@ On Windows, `NODE_PATH` is delimited by semicolons (`;`) instead of colons.
 
 `NODE_PATH` is still supported, but is less necessary now that the Node.js ecosystem has settled on a convention for locating dependent modules. Sometimes deployments that rely on `NODE_PATH` show surprising behavior when people are unaware that `NODE_PATH` must be set. Sometimes a module's dependencies change, causing a different version (or even a different module) to be loaded as the `NODE_PATH` is searched.
 
-Additionally, Node.js will search in the following list of GLOBAL\_FOLDERS:
+Additionally, Node.js will search in the following list of GLOBAL_FOLDERS:
 
--   1: `$HOME/.node_modules`
--   2: `$HOME/.node_libraries`
--   3: `$PREFIX/lib/node`
+- 1: `$HOME/.node_modules`
+- 2: `$HOME/.node_libraries`
+- 3: `$PREFIX/lib/node`
 
 Where `$HOME` is the user's home directory, and `$PREFIX` is the Node.js configured `node_prefix`.
 
@@ -565,11 +580,11 @@ Before a module's code is executed, Node.js will wrap it with a function wrapper
 
 By doing this, Node.js achieves a few things:
 
--   It keeps top-level variables (defined with `var`, `const` or `let`) scoped to the module rather than the global object.
--   It helps to provide some global-looking variables that are actually specific to the module, such as:
+- It keeps top-level variables (defined with `var`, `const` or `let`) scoped to the module rather than the global object.
+- It helps to provide some global-looking variables that are actually specific to the module, such as:
 
-    -   The `module` and `exports` objects that the implementor can use to export values from the module.
-    -   The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
+  - The `module` and `exports` objects that the implementor can use to export values from the module.
+  - The convenience variables `__filename` and `__dirname`, containing the module's absolute filename and directory path.
 
 ### The module scope[\#](https://nodejs.org/api/modules.html#modules_the_module_scope)
 
@@ -577,7 +592,7 @@ By doing this, Node.js achieves a few things:
 
 Added in: v0.1.27
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The directory name of the current module. This is the same as the [`path.dirname()`](https://nodejs.org/api/path.html#path_path_dirname_path) of the [`__filename`](https://nodejs.org/api/modules.html#modules_filename).
 
@@ -592,7 +607,7 @@ Example: running `node example.js` from `/Users/mjr`
 
 Added in: v0.0.1
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The file name of the current module. This is the current module file's absolute path with symlinks resolved.
 
@@ -611,8 +626,8 @@ Running `node example.js` from `/Users/mjr`
 
 Given two modules: `a` and `b`, where `b` is a dependency of `a` and there is a directory structure of:
 
--   `/Users/mjr/app/a.js`
--   `/Users/mjr/app/node_modules/b/b.js`
+- `/Users/mjr/app/a.js`
+- `/Users/mjr/app/node_modules/b/b.js`
 
 References to `__filename` within `b.js` will return `/Users/mjr/app/node_modules/b/b.js` while references to `__filename` within `a.js` will return `/Users/mjr/app/a.js`.
 
@@ -620,7 +635,7 @@ References to `__filename` within `b.js` will return `/Users/mjr/app/node_m
 
 Added in: v0.1.12
 
--   
+-
 
 A reference to the `module.exports` that is shorter to type. See the section about the [exports shortcut](https://nodejs.org/api/modules.html#modules_exports_shortcut) for details on when to use `exports` and when to use `module.exports`.
 
@@ -628,7 +643,7 @@ A reference to the `module.exports` that is shorter to type. See the section a
 
 Added in: v0.1.16
 
--   [](https://nodejs.org/api/modules.html#modules_the_module_object)
+- [](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 A reference to the current module, see the section about the [`module` object](https://nodejs.org/api/modules.html#modules_the_module_object). In particular, `module.exports` is used for defining what a module exports and makes available through `require()`.
 
@@ -636,8 +651,8 @@ A reference to the current module, see the section about the [`module` object]
 
 Added in: v0.1.13
 
--   `id` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) module name or path
--   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
+- `id` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) module name or path
+- Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
 
 Used to import modules, `JSON`, and local files. Modules can be imported from `node_modules`. Local modules and JSON files can be imported using a relative path (e.g. `./`, `./foo`, `./bar/baz`, `../foo`) that will be resolved against the directory named by [`__dirname`](https://nodejs.org/api/modules.html#modules_dirname) (if defined) or the current working directory. The relative paths of POSIX style are resolved in an OS independent fashion, meaning that the examples above will work on Windows in the same way they would on Unix systems.
 
@@ -655,7 +670,7 @@ Used to import modules, `JSON`, and local files. Modules can be imported from 
 
 Added in: v0.3.0
 
--   
+-
 
 Modules are cached in this object when they are required. By deleting a key value from this object, the next `require` will reload the module. This does not apply to [native addons](https://nodejs.org/api/addons.html), for which reloading will result in an error.
 
@@ -676,7 +691,7 @@ Added in: v0.3.0Deprecated since: v0.10.6
 
 [Stability: 0](https://nodejs.org/api/documentation.html#documentation_stability_index) - Deprecated
 
--   
+-
 
 Instruct `require` on how to handle certain file extensions.
 
@@ -692,7 +707,7 @@ Avoid using `require.extensions`. Use could cause subtle bugs and resolving the
 
 Added in: v0.1.17
 
--   [](https://nodejs.org/api/modules.html#modules_the_module_object)
+- [](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 The `Module` object representing the entry script loaded when the Node.js process launched. See ["Accessing the main module"](https://nodejs.org/api/modules.html#modules_accessing_the_main_module).
 
@@ -719,12 +734,12 @@ In `entry.js` script:
 
 History
 
--   `request` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path to resolve.
--   `options` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+- `request` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path to resolve.
+- `options` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
-    -   `paths` [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL\_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
+  - `paths` [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Paths to resolve module location from. If present, these paths are used instead of the default resolution paths, with the exception of [GLOBAL_FOLDERS](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) like `$HOME/.node_modules`, which are always included. Each of these paths is used as a starting point for the module resolution algorithm, meaning that the `node_modules` hierarchy is checked from this location.
 
--   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 Use the internal `require()` machinery to look up the location of a module, but rather than loading the module, just return the resolved filename.
 
@@ -734,8 +749,8 @@ If the module can not be found, a `MODULE_NOT_FOUND` error is thrown.
 
 Added in: v8.9.0
 
--   `request` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path whose lookup paths are being retrieved.
--   Returns: [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
+- `request` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The module path whose lookup paths are being retrieved.
+- Returns: [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
 
 Returns an array containing the paths searched during resolution of `request` or `null` if the `request` string references a core module, for example `http` or `fs`.
 
@@ -743,7 +758,7 @@ Returns an array containing the paths searched during resolution of `request` 
 
 Added in: v0.1.16
 
--   
+-
 
 In each module, the `module` free variable is a reference to the object representing the current module. For convenience, `module.exports` is also accessible via the `exports` module-global. `module` is not actually a global but rather local to each module.
 
@@ -751,7 +766,7 @@ In each module, the `module` free variable is a reference to the object repres
 
 Added in: v0.1.16
 
--   [&lt;module\[\]&gt;](https://nodejs.org/api/modules.html#modules_the_module_object)
+- [&lt;module\[\]&gt;](https://nodejs.org/api/modules.html#modules_the_module_object)
 
 The module objects required for the first time by this one.
 
@@ -759,7 +774,7 @@ The module objects required for the first time by this one.
 
 Added in: v0.1.16
 
--   
+-
 
 The `module.exports` object is created by the `Module` system. Sometimes this is not acceptable; many want their module to be an instance of some class. To do this, assign the desired export object to `module.exports`. Assigning the desired object to `exports` will simply rebind the local `exports` variable, which is probably not what is desired.
 
@@ -833,7 +848,7 @@ To illustrate the behavior, imagine this hypothetical implementation of `requir
 
 Added in: v0.1.16
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The fully resolved filename of the module.
 
@@ -841,7 +856,7 @@ The fully resolved filename of the module.
 
 Added in: v0.1.16
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The identifier for the module. Typically this is the fully resolved filename.
 
@@ -849,13 +864,13 @@ The identifier for the module. Typically this is the fully resolved filename.
 
 Added in: v15.4.0
 
--   Type: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the module is running during the Node.js preload phase.
+- Type: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the module is running during the Node.js preload phase.
 
 #### `module.loaded`[\#](https://nodejs.org/api/modules.html#modules_module_loaded)
 
 Added in: v0.1.16
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
 
 Whether or not the module is done loading, or is in the process of loading.
 
@@ -865,7 +880,7 @@ Added in: v0.1.16Deprecated since: v14.6.0, v12.19.0
 
 [Stability: 0](https://nodejs.org/api/documentation.html#documentation_stability_index) - Deprecated: Please use [`require.main`](https://nodejs.org/api/modules.html#modules_require_main) and [`module.children`](https://nodejs.org/api/modules.html#modules_module_children) instead.
 
--   [](https://nodejs.org/api/modules.html#modules_the_module_object) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
+- [](https://nodejs.org/api/modules.html#modules_the_module_object) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
 
 The module that first required this one, or `null` if the current module is the entry point of the current process, or `undefined` if the module was loaded by something that is not a CommonJS module (E.G.: REPL or `import`).
 
@@ -873,7 +888,7 @@ The module that first required this one, or `null` if the current module is th
 
 Added in: v11.14.0
 
--   [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The directory name of the module. This is usually the same as the [`path.dirname()`](https://nodejs.org/api/path.html#path_path_dirname_path) of the [`module.id`](https://nodejs.org/api/modules.html#modules_module_id).
 
@@ -881,7 +896,7 @@ The directory name of the module. This is usually the same as the [`path.dirnam
 
 Added in: v0.4.0
 
--   [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- [&lt;string\[\]&gt;](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 The search paths for the module.
 
@@ -889,8 +904,8 @@ The search paths for the module.
 
 Added in: v0.5.1
 
--   `id` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
--   Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
+- `id` [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+- Returns: [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
 
 The `module.require()` method provides a way to load a module as if `require()` was called from the original module.
 
@@ -900,16 +915,11 @@ In order to do this, it is necessary to get a reference to the `module` object
 
 This section was moved to [Modules: `module` core module](https://nodejs.org/api/module.html#module_the_module_object).
 
--   [`module.builtinModules`](https://nodejs.org/api/module.html#module_module_builtinmodules)
--   [`module.createRequire(filename)`](https://nodejs.org/api/module.html#module_module_createrequire_filename)
--   [](https://nodejs.org/api/module.html#module_module_syncbuiltinesmexports)
+- [`module.builtinModules`](https://nodejs.org/api/module.html#module_module_builtinmodules)
+- [`module.createRequire(filename)`](https://nodejs.org/api/module.html#module_module_createrequire_filename)
+- [](https://nodejs.org/api/module.html#module_module_syncbuiltinesmexports)
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

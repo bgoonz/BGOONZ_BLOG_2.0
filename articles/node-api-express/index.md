@@ -1,246 +1,262 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Node APIs With Express
-======================
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Node APIs With Express
 
 ### Overview
 
@@ -301,20 +317,20 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
--   <span id="9c7e">inner joins.</span>
--   <span id="7cd3">outer joins.</span>
--   <span id="96e6">left joins.</span>
--   <span id="0e55">right joins.</span>
--   <span id="d582">cross joins.</span>
--   <span id="6716">non-equality joins.</span>
--   <span id="b7f0">self joins.</span>
+- <span id="9c7e">inner joins.</span>
+- <span id="7cd3">outer joins.</span>
+- <span id="96e6">left joins.</span>
+- <span id="0e55">right joins.</span>
+- <span id="d582">cross joins.</span>
+- <span id="6716">non-equality joins.</span>
+- <span id="b7f0">self joins.</span>
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a *departments* table has an *id* field, and an employee table has a *department*id\_ field, and the values that exist in the *id* column of the *departments* table live in the *department*id\_ field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a *department*id\_ field, and the values that exist in the _id_ column of the _departments_ table live in the *department*id\_ field of the employee table, we can use those fields to join both tables like so:
 
     select * from employees
     join departments on employees.department_id = departments.id
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments *table, then that record will NOT be returned. In a similar fashion, any records from the* departments *table that don't have an employee associated with them will also be omitted from the results. Basically, if the* id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -342,9 +358,9 @@ A good explanation of how the different types of joins can be seen <a href="http
 
 Use <a href="https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top" class="markup--anchor markup--p-anchor">this online tool (Links to an external site.)</a> to write the following queries:
 
--   <span id="9ccf">list the products, including their category name.</span>
--   <span id="b07f">list the products, including the supplier name.</span>
--   <span id="7b08">list the products, including both the category name and supplier name.</span>
+- <span id="9ccf">list the products, including their category name.</span>
+- <span id="b07f">list the products, including the supplier name.</span>
+- <span id="7b08">list the products, including both the category name and supplier name.</span>
 
 ### What is SQL Joins?
 
@@ -358,10 +374,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### Join vs. Subquery
 
--   <span id="eeea">JOINs are faster than a subquery and it is very rare that the opposite.</span>
--   <span id="3b2e">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
--   <span id="84ce">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
--   <span id="3002">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
+- <span id="eeea">JOINs are faster than a subquery and it is very rare that the opposite.</span>
+- <span id="3b2e">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
+- <span id="84ce">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
+- <span id="3002">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -450,58 +466,58 @@ Output:
 
 **JOINS: Relational Databases**
 
--   <span id="74c4"><a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor"><strong>Oracle JOINS</strong></a></span>
--   <span id="f8da"><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor"><strong>MySQL JOINS</strong></a></span>
--   <span id="33a5"><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor"><strong>PostgreSQL JOINS</strong></a></span>
--   <span id="b578"><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor"><strong>SQLite JOINS</strong></a></span>
+- <span id="74c4"><a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor"><strong>Oracle JOINS</strong></a></span>
+- <span id="f8da"><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor"><strong>MySQL JOINS</strong></a></span>
+- <span id="33a5"><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor"><strong>PostgreSQL JOINS</strong></a></span>
+- <span id="b578"><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor"><strong>SQLite JOINS</strong></a></span>
 
 **Key points to remember:**
 
-*Click on the following to get the slides presentation -*
+_Click on the following to get the slides presentation -_
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png" class="graf-image" /></figure>\#\#\#
 
 **Practice SQL Exercises**
 
--   <span id="0765"><a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor"><strong>SQL Exercises, Practice, Solution</strong></a></span>
--   <span id="4cd9"><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></span>
--   <span id="7204"><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></span>
--   <span id="3d4e"><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></span>
--   <span id="7afb"><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></span>
--   <span id="cc71"><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL Formatting query output [10 Exercises]</strong></a></span>
--   <span id="77bf"><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></span>
--   <span id="0bc2"><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></span>
--   <span id="e28a">SQL JOINS</span>
--   <span id="84a2"><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS [29 Exercises]</strong></a></span>
--   <span id="f97b"><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></span>
--   <span id="b33e"></span>
--   <span id="0983">SQL SUBQUERIES</span>
--   <span id="423b"><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></span>
--   <span id="a4d7"><a href="https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES on HR Database [55 Exercises]</strong></a></span>
--   <span id="b63d"></span>
--   <span id="2c29"><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor"><strong>SQL Union[9 Exercises]</strong></a></span>
--   <span id="92c5"><a href="https://www.w3resource.com/sql-exercises/view/sql-view.php" class="markup--anchor markup--li-anchor"><strong>SQL View[16 Exercises]</strong></a></span>
--   <span id="d3e5"><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor"><strong>SQL User Account Management [16 Exercise]</strong></a></span>
--   <span id="e280">Movie Database</span>
--   <span id="5198"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on movie Database [10 Exercises]</strong></a></span>
--   <span id="ddd5"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on movie Database [16 Exercises]</strong></a></span>
--   <span id="5363"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/joins-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS on movie Database [24 Exercises]</strong></a></span>
--   <span id="b248"></span>
--   <span id="d5ba">Soccer Database</span>
--   <span id="a586"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
--   <span id="d585"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/basic-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on soccer Database [29 Exercises]</strong></a></span>
--   <span id="b626"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on soccer Database [33 Exercises]</strong></a></span>
--   <span id="95e1"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS queries on soccer Database [61 Exercises]</strong></a></span>
--   <span id="05ba"></span>
--   <span id="2b7b">Hospital Database</span>
--   <span id="788d"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
--   <span id="0c32"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></span>
--   <span id="228b"></span>
--   <span id="54d4">Employee Database</span>
--   <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
--   <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
--   <span id="cb3e"></span>
--   <span id="b3da">More to come!</span>
+- <span id="0765"><a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor"><strong>SQL Exercises, Practice, Solution</strong></a></span>
+- <span id="4cd9"><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></span>
+- <span id="7204"><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></span>
+- <span id="3d4e"><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></span>
+- <span id="7afb"><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></span>
+- <span id="cc71"><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL Formatting query output [10 Exercises]</strong></a></span>
+- <span id="77bf"><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></span>
+- <span id="0bc2"><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></span>
+- <span id="e28a">SQL JOINS</span>
+- <span id="84a2"><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS [29 Exercises]</strong></a></span>
+- <span id="f97b"><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></span>
+- <span id="b33e"></span>
+- <span id="0983">SQL SUBQUERIES</span>
+- <span id="423b"><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></span>
+- <span id="a4d7"><a href="https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES on HR Database [55 Exercises]</strong></a></span>
+- <span id="b63d"></span>
+- <span id="2c29"><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor"><strong>SQL Union[9 Exercises]</strong></a></span>
+- <span id="92c5"><a href="https://www.w3resource.com/sql-exercises/view/sql-view.php" class="markup--anchor markup--li-anchor"><strong>SQL View[16 Exercises]</strong></a></span>
+- <span id="d3e5"><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor"><strong>SQL User Account Management [16 Exercise]</strong></a></span>
+- <span id="e280">Movie Database</span>
+- <span id="5198"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on movie Database [10 Exercises]</strong></a></span>
+- <span id="ddd5"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on movie Database [16 Exercises]</strong></a></span>
+- <span id="5363"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/joins-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS on movie Database [24 Exercises]</strong></a></span>
+- <span id="b248"></span>
+- <span id="d5ba">Soccer Database</span>
+- <span id="a586"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
+- <span id="d585"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/basic-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on soccer Database [29 Exercises]</strong></a></span>
+- <span id="b626"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on soccer Database [33 Exercises]</strong></a></span>
+- <span id="95e1"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS queries on soccer Database [61 Exercises]</strong></a></span>
+- <span id="05ba"></span>
+- <span id="2b7b">Hospital Database</span>
+- <span id="788d"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
+- <span id="0c32"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></span>
+- <span id="228b"></span>
+- <span id="54d4">Employee Database</span>
+- <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
+- <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
+- <span id="cb3e"></span>
+- <span id="b3da">More to come!</span>
 
 ### Objective 3 — write database access methods
 
@@ -588,7 +604,7 @@ A familiar example of non-persistent data would be JavaScript objects and arrays
 
 In relational databases, **the data is stored in tabular format grouped into rows and columns** (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.
 
-These kinds of databases are relational because a *relation* is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
+These kinds of databases are relational because a _relation_ is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.
 
 ### Tables
 
@@ -618,15 +634,15 @@ It is declarative and concise, which means there is a lot less to learn to use i
 
 When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we’ll end up with the following sub-categories of SQL:
 
--   <span id="aba8">**Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.</span>
--   <span id="4f3f">**Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.</span>
--   <span id="e1f2">**Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.</span>
--   <span id="4474">**Data Control Language (DCL)**: used to manage database security and user’s access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
--   <span id="921b">**Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.</span>
+- <span id="aba8">**Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.</span>
+- <span id="4f3f">**Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.</span>
+- <span id="e1f2">**Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.</span>
+- <span id="4474">**Data Control Language (DCL)**: used to manage database security and user’s access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.</span>
+- <span id="921b">**Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.</span>
 
 As a developer, you’ll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The four SQL operations covered in this section will allow a user to \*\*query\*\*, \*\*insert\*\*, and \*\*modify\*\* a database table.
 
@@ -677,7 +693,7 @@ The basic syntax for a `DELETE` statement is:
 
     delete from <table name> where <condition>;
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# Filtering results using WHERE clause
 
@@ -731,7 +747,7 @@ Some SQL engines also support using field abbreviations when sorting.
 
     select name, salary, department from employees order by 3, 2 desc;
 
-In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the *selection* portion of the query, so `1` would be *name*, `2` would be *salary*, and so on.
+In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the _selection_ portion of the query, so `1` would be _name_, `2` would be _salary_, and so on.
 
 Note that the `WHERE` clause should come after the `FROM` clause. The `ORDER BY` clause always goes last.
 
@@ -782,7 +798,7 @@ When removing a record or set of records, we need only identify which record(s) 
 
 Once again, the `WHERE` clause is not required, but leaving it off would remove every record in the table, so it's essential.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>Raw SQL is a critical baseline skill. However, Node developers generally use an \*\*Object Relational Mapper (ORM)\*\* or \*\*query builder\*\* to write database commands in a backend codebase. Both \*\*ORMs\*\* and \*\*query builders\*\* are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
 
@@ -798,7 +814,7 @@ We could use a query builder to write the same logic in JavaScript:
 
 We will use a **query builder** called <a href="https://knexjs.org/" class="markup--anchor markup--p-anchor">knex.js (Links to an external site.)</a>.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# Knex Setup
 
@@ -907,9 +923,9 @@ In Knex, the equivalent of `DELETE FROM users WHERE age=33;` is:
 
 Once again, the `where` must come before the `del`. This method will resolve to a count of records removed.
 
-------------------------------------------------------------------------
+---
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\#
 
@@ -933,7 +949,7 @@ In other words, you can expect `SELECT`, `UPDATE`, `INSERT`, `WHERE` , and the 
 
 SQLite allows us to store databases as single files. SQLite projects have a `.db3` extension. That is the database.
 
-SQLite is *not a database* (like relational, graph, or document are databases) but rather *a database management system*.
+SQLite is _not a database_ (like relational, graph, or document are databases) but rather _a database management system_.
 
 ### Opening an existing database in SQLite Studio
 
@@ -943,7 +959,7 @@ Once installed, we can use SQLite Studio to open any `.db3` file from a previou
 
 For a more detailed look at SQLite Studio, follow along in the video above.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>A \*\*database schema\*\* is the shape of our database. It defines what tables we’ll have, which columns should exist within the tables and any restrictions on each column.
 
@@ -951,15 +967,15 @@ A well-designed database schema keeps the data well organized and can help ensur
 
 Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>For a look at schema design in SQLite Studio, follow along in the video above.
 
 When designing a single table, we need to ask three things:
 
--   <span id="2e1a">What fields (or columns) are present?</span>
--   <span id="52e7">What type of data do we expect for each field?</span>
--   <span id="8aff">Are there other restrictions needed for each column?</span>
+- <span id="2e1a">What fields (or columns) are present?</span>
+- <span id="52e7">What type of data do we expect for each field?</span>
+- <span id="8aff">Are there other restrictions needed for each column?</span>
 
 Looking at the following schema diagram for an `accounts` table, we can the answer to each other those questions:
 
@@ -975,11 +991,11 @@ However, this is one requirement every table should satisfy: a **primary key**. 
 
 Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:
 
--   <span id="92fb">**Null:** Missing or unknown information.</span>
--   <span id="32ef">**Integer:** Whole numbers.</span>
--   <span id="181d">**Real:** Any number, including decimals.</span>
--   <span id="ebce">**Text:** Character data.</span>
--   <span id="c00e">**Blob:** a large binary object that can be used to store miscellaneous data.</span>
+- <span id="92fb">**Null:** Missing or unknown information.</span>
+- <span id="32ef">**Integer:** Whole numbers.</span>
+- <span id="181d">**Real:** Any number, including decimals.</span>
+- <span id="ebce">**Text:** Character data.</span>
+- <span id="c00e">**Blob:** a large binary object that can be used to store miscellaneous data.</span>
 
 Any data inserted into the table must match the datatypes determined in schema design.
 
@@ -987,16 +1003,16 @@ Any data inserted into the table must match the datatypes determined in schema d
 
 Beyond datatypes, we may add additional **constraints** on each field. Some examples include:
 
--   <span id="14ca">**Not Null:** The field cannot be left empty</span>
--   <span id="b533">**Unique:** No two records can have the same value in this field</span>
--   <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
--   <span id="f116">**Default:** — Sets a default value if none is provided.</span>
+- <span id="14ca">**Not Null:** The field cannot be left empty</span>
+- <span id="b533">**Unique:** No two records can have the same value in this field</span>
+- <span id="f0c4">**Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</span>
+- <span id="f116">**Default:** — Sets a default value if none is provided.</span>
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
-### 
+###
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# Multi-Table Design
 
@@ -1008,7 +1024,7 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# Knex Cli
 
@@ -1151,7 +1167,7 @@ When a schema needs to be updated, a developer must feel confident that the chan
 
 A `database migration` describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# Knex Cli
 
@@ -1340,15 +1356,15 @@ Run the seed files by typing:
 
 You can now use SQLite Studio to confirm that the accounts table has two entries.
 
-------------------------------------------------------------------------
+---
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\# SQL & PostgreSQL
 
 **Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
 
-### 
+###
 
 Consider the following `farms` and `ranchers` tables.
 
@@ -1368,20 +1384,20 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
--   <span id="d886">inner joins.</span>
--   <span id="43f5">outer joins.</span>
--   <span id="882e">left joins.</span>
--   <span id="ad86">right joins.</span>
--   <span id="4d8b">cross joins.</span>
--   <span id="eb21">non-equality joins.</span>
--   <span id="fc6a">self joins.</span>
+- <span id="d886">inner joins.</span>
+- <span id="43f5">outer joins.</span>
+- <span id="882e">left joins.</span>
+- <span id="ad86">right joins.</span>
+- <span id="4d8b">cross joins.</span>
+- <span id="eb21">non-equality joins.</span>
+- <span id="fc6a">self joins.</span>
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a *departments* table has an *id* field, and an employee table has a *department*id\_ field, and the values that exist in the *id* column of the *departments* table live in the *department*id\_ field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a *department*id\_ field, and the values that exist in the _id_ column of the _departments_ table live in the *department*id\_ field of the employee table, we can use those fields to join both tables like so:
 
     select * from employees
     join departments on employees.department_id = departments.id
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments *table, then that record will NOT be returned. In a similar fashion, any records from the* departments *table that don't have an employee associated with them will also be omitted from the results. Basically, if the* id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -1417,10 +1433,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 ### Join vs. Subquery
 
--   <span id="6fdc">JOINs are faster than a subquery and it is very rare that the opposite.</span>
--   <span id="c648">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
--   <span id="d59c">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
--   <span id="08ff">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
+- <span id="6fdc">JOINs are faster than a subquery and it is very rare that the opposite.</span>
+- <span id="c648">In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</span>
+- <span id="d59c">A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</span>
+- <span id="08ff">When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</span>
 
 ### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -1576,17 +1592,17 @@ Once all methods are written as desired, we can export them like so:
 
 There should no be `knex` code in the endpoints themselves.
 
-------------------------------------------------------------------------
+---
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>\#\#\#
 
 `Normalization` is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
-With objects, we’re used to *denormalized* data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
+With objects, we’re used to _denormalized_ data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.
 
-### 
+###
 
 **Data normalization** is a deep topic in database design. To begin thinking about it, we’ll explore a few basic guidelines and some data examples that violate these rules.
 
@@ -1628,13 +1644,13 @@ Similarly, if Beech Ranch shut down, there would be three (if not more) records 
 
 Thus a denormalized table opens the door for contradictory, confusing, and unusable data.
 
-### 
+###
 
 What issues does the following table have?
 
 <a href="https://www.notion.so/2793e8f6b70a47f48f9208779366e69e" class="markup--anchor markup--p-anchor">Untitled</a>
 
-### 
+###
 
 There are three types of relationships:
 
@@ -1646,7 +1662,7 @@ There are three types of relationships:
 
 Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.
 
-### 
+###
 
 ### One to One Relationships
 
@@ -1666,9 +1682,9 @@ The `farm_id` is the foreign key that links `farms` and `projections` together.
 
 Notes about one-to-one relationships:
 
--   <span id="198d">The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.</span>
--   <span id="25c6">The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</span>
--   <span id="960d">You can represent one-to-one data in a single table *without* creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
+- <span id="198d">The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.</span>
+- <span id="25c6">The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</span>
+- <span id="960d">You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</span>
 
 ### One to Many Relationships
 
@@ -1678,9 +1694,9 @@ This is called a **one-to-many** relationship.
 
 This is the most common type of relationship between entities. Some other examples:
 
--   <span id="5627">One `customer` can have many `orders`.</span>
--   <span id="cc42">One `user` can have many `posts`.</span>
--   <span id="dae3">One `post` can have many `comments`.</span>
+- <span id="5627">One `customer` can have many `orders`.</span>
+- <span id="cc42">One `user` can have many `posts`.</span>
+- <span id="dae3">One `post` can have many `comments`.</span>
 
 Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the `farms` and `ranchers` tables.
 
@@ -1688,7 +1704,7 @@ Manage this type of relationship by adding a foreign key on the “many” table
 
 <a href="https://www.notion.so/c95f3d418db94ab4b4532eeba0e4f918" class="markup--anchor markup--p-anchor">Untitled</a>
 
-In a many-to-many relationship, the foreign key (in this case `farm_id`) should *not* be unique.
+In a many-to-many relationship, the foreign key (in this case `farm_id`) should _not_ be unique.
 
 ### Many to Many Relationships
 
@@ -1696,8 +1712,8 @@ If we want to track animals on a farm as well, we must explore the **many-to-man
 
 Some other examples:
 
--   <span id="d757">an `order` can have many `products` and the same `product` will appear in many `orders`.</span>
--   <span id="0256">a `book` can have more than one `author`, and an `author` can write more than one `book`.</span>
+- <span id="d757">an `order` can have many `products` and the same `product` will appear in many `orders`.</span>
+- <span id="0256">a `book` can have more than one `author`, and an `author` can write more than one `book`.</span>
 
 To model this relationship, we need to introduce an **intermediary table** that holds foreign keys that reference the primary key on the related tables. We now have a `farms`, `animals`, and `farm_animals` table.
 
@@ -1709,13 +1725,13 @@ To model this relationship, we need to introduce an **intermediary table** that 
 
 While each foreign key on the intermediary table is not unique, the combinations of keys should be unique.
 
-### 
+###
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
 
 We have to consider the way that `delete` and `updates` through our API will impact related data.
 
-### 
+###
 
 ### Foreign Key Setup
 
@@ -1761,9 +1777,9 @@ Let’s look at how we might track our `farms` and `ranchers` using Knex. In our
         })
     };
 
-Note that the foreign key can only be created *after* the reference table.
+Note that the foreign key can only be created _after_ the reference table.
 
-In the down function, the opposite is true. We always want to drop a table with a foreign key *before* dropping the table it references.
+In the down function, the opposite is true. We always want to drop a table with a foreign key _before_ dropping the table it references.
 
     exports.down = function(knex, Promise) {
       // drop in the opposite order
@@ -1799,7 +1815,7 @@ Order is also a concern when seeding. We want to create seeds in the **same** or
 
 In our example, make sure to write the `01-farms` seed file and then the `02-ranchers` seed file.
 
-However, we run into a problem with truncating our seeds, because we want to truncate `02-ranchers` *before* `01-farms`. A library called `knex-cleaner` provides an easy solution for us.
+However, we run into a problem with truncating our seeds, because we want to truncate `02-ranchers` _before_ `01-farms`. A library called `knex-cleaner` provides an easy solution for us.
 
 Run `knex seed:make 00-cleanup` and `npm install knex-cleaner`. Inside the cleanup seed, use the following code.
 
@@ -1832,12 +1848,7 @@ If we want that to override this default, we can delete or update with **cascade
         .onDelete('CASCADE')
     })
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

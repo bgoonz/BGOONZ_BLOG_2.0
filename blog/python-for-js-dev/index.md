@@ -1,108 +1,106 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 June 03, 2021
 
-Python Resources
-================
+# Python Resources
 
-Python Study Guide for a JavaScript Programmer
-==============================================
+# Python Study Guide for a JavaScript Programmer
 
 ![](https://miro.medium.com/max/1970/1*3V9VOfPk_hrFdbEAd3j-QQ.png)![](https://miro.medium.com/max/52/0*eC4EvZcv6hhH88jX.png?q=20)![](https://miro.medium.com/max/647/0*eC4EvZcv6hhH88jX.png)![](https://miro.medium.com/max/60/0*Ez_1PZ93N4FfvkRr.png?q=20)![](https://miro.medium.com/max/608/0*Ez_1PZ93N4FfvkRr.png)![](https://miro.medium.com/max/60/0*eE3E5H0AoqkhqK1z.png?q=20)![](https://miro.medium.com/max/1648/0*eE3E5H0AoqkhqK1z.png)![](https://miro.medium.com/max/60/0*Q0CMqFd4PozLDFPB.png?q=20)![](https://miro.medium.com/max/1638/0*Q0CMqFd4PozLDFPB.png)![](https://miro.medium.com/max/3216/0*HQpndNhm1Z_xSoHb.png)![](https://miro.medium.com/max/60/0*qHzGRLTOMTf30miT.png?q=20)![](https://miro.medium.com/max/1614/0*qHzGRLTOMTf30miT.png)\[
 
 \](<https://github.com/bgoonz>)
 
-Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
-============================================================================
+# Applications of Tutorial & Cheat Sheet Respectivley (At Bottom Of Tutorial):
 
-Basics
-======
+# Basics
 
--   **PEP8** : Python Enhancement Proposals, style-guide for Python.
--   print is the equivalent of console.log.
+- **PEP8** : Python Enhancement Proposals, style-guide for Python.
+- print is the equivalent of console.log.
 
 > ‘print() == console.log()’
 
-\# is used to make comments in your code.
-=========================================
+# \# is used to make comments in your code.
 
-> *Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”*
+> _Python has a built in help function that let’s you see a description of the source code without having to navigate to it… “-SickNasty … Autor Unknown”_
 
-Numbers
-=======
+# Numbers
 
--   Python has three types of numbers:
--   **Integer**
--   **Positive and Negative Counting Numbers.**
+- Python has three types of numbers:
+- **Integer**
+- **Positive and Negative Counting Numbers.**
 
 No Decimal Point
 
@@ -112,292 +110,252 @@ No Decimal Point
 
 > Consist of a real part and imaginary part.
 
-Boolean is a subtype of integer in Python.🤷‍♂️
-----------------------------------------------
+## Boolean is a subtype of integer in Python.🤷‍♂️
 
 > If you came from a background in JavaScript and learned to accept the premise(s) of the following meme…
 
 > Than I am sure you will find the means to suspend your disbelief.
 
-KEEP IN MIND:
-=============
+# KEEP IN MIND:
 
 > **The i is switched to a j in programming.**
 
-T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \**when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.*
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*_when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
--   **Type Casting** : The process of converting one number to another.
+- **Type Casting** : The process of converting one number to another.
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
--   *“\*\*” : Double asterisk for exponent.*
--   *“//” : Integer Division.*
--   **There are no spaces between math operations in Python.**
--   **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
--   **There are no ++ and -- in Python, the only shorthand operators are:**
+- _“\*\*” : Double asterisk for exponent._
+- _“//” : Integer Division._
+- **There are no spaces between math operations in Python.**
+- **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing Math.floor() in JS.**
+- **There are no ++ and -- in Python, the only shorthand operators are:**
 
-Strings
-=======
+# Strings
 
--   Python uses both single and double quotes.
--   You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
--   Multiline strings use triple quotes.
+- Python uses both single and double quotes.
+- You can escape strings like so 'Jodi asked, "What\\'s up, Sam?"'
+- Multiline strings use triple quotes.
 
 **Use the len() function to get the length of a string.**
 
-**Python uses zero-based indexing**
-===================================
+# **Python uses zero-based indexing**
 
-Python allows negative indexing (thank god!)
---------------------------------------------
+## Python allows negative indexing (thank god!)
 
--   Python let’s you use ranges
+- Python let’s you use ranges
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… \*(mind you that in JS … strings are wrapped in an object (under the hood)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.)\*
 
--   The end range is exclusive just like slice in JS.
+- The end range is exclusive just like slice in JS.
 
 <!-- -->
 
--   The index string function is the equiv. of indexOf() in JS
+- The index string function is the equiv. of indexOf() in JS
 
 <!-- -->
 
--   The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+- The count function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
 <!-- -->
 
--   **You can use + to concatenate strings, just like in JS.**
--   **You can also use “\*” to repeat strings or multiply strings.**
--   **Use the format() function to use placeholders in a string to input values later on.**
+- **You can use + to concatenate strings, just like in JS.**
+- **You can also use “\*” to repeat strings or multiply strings.**
+- **Use the format() function to use placeholders in a string to input values later on.**
 
 <!-- -->
 
--   \*Shorthand way to use format function is: \*print(f'Your name is {first*name} {last*name}')
+- \*Shorthand way to use format function is: \*print(f'Your name is {first*name} {last*name}')
 
-Some useful string methods.
----------------------------
+## Some useful string methods.
 
--   **Note that in JS join is used on an Array, in Python it is used on String.**
-
-<!-- -->
-
--   There are also many handy testing methods.
-
-Variables and Expressions
-=========================
-
--   **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
--   Duck Typing is the fundamental approach of Python.
--   Assignment of a value automatically declares a variable.
+- **Note that in JS join is used on an Array, in Python it is used on String.**
 
 <!-- -->
 
--   ***You can chain variable assignments to give multiple var names the same value.***
+- There are also many handy testing methods.
 
-Use with caution as this is highly unreadable
----------------------------------------------
+# Variables and Expressions
 
-The value and type of a variable can be re-assigned at any time.
-----------------------------------------------------------------
+- **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+- Duck Typing is the fundamental approach of Python.
+- Assignment of a value automatically declares a variable.
 
--   \*NaN does not exist in Python, but you can 'create' it like so: **print(float("nan"))\***
--   *Python replaces null with none.*
--   **\*none is an object** and can be directly assigned to a variable.\*
+<!-- -->
+
+- **_You can chain variable assignments to give multiple var names the same value._**
+
+## Use with caution as this is highly unreadable
+
+## The value and type of a variable can be re-assigned at any time.
+
+- \*NaN does not exist in Python, but you can 'create' it like so: **print(float("nan"))\***
+- _Python replaces null with none._
+- **\*none is an object** and can be directly assigned to a variable.\*
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
-Boolean Data Type
-=================
+# Boolean Data Type
 
--   One of the biggest benefits of Python is that it reads more like English than JS does.
+- One of the biggest benefits of Python is that it reads more like English than JS does.
 
 <!-- -->
 
--   By default, Python considers an object to be true UNLESS it is one of the following:
--   Constant None or False
--   Zero of any numeric type.
--   Empty Sequence or Collection.
--   True and False must be capitalized
+- By default, Python considers an object to be true UNLESS it is one of the following:
+- Constant None or False
+- Zero of any numeric type.
+- Empty Sequence or Collection.
+- True and False must be capitalized
 
-Comparison Operators
-====================
+# Comparison Operators
 
--   Python uses all the same equality operators as JS.
--   In Python, equality operators are processed from left to right.
--   Logical operators are processed in this order:
--   **NOT**
--   **AND**
--   **OR**
+- Python uses all the same equality operators as JS.
+- In Python, equality operators are processed from left to right.
+- Logical operators are processed in this order:
+- **NOT**
+- **AND**
+- **OR**
 
 > Just like in JS, you can use parentheses to change the inherent order of operations.
 >
 > **Short Circuit** : Stopping a program when a true or false has been reached.
 
-Identity vs Equality
-====================
+# Identity vs Equality
 
--   In the Python community it is better to use is and is not over == or !=
+- In the Python community it is better to use is and is not over == or !=
 
-If Statements
-=============
+# If Statements
 
 > Remember the order of elif statements matter.
 
-While Statements
-================
+# While Statements
 
--   Break statement also exists in Python.
-
-<!-- -->
-
--   As are continue statements
-
-Try/Except Statements
-=====================
-
--   Python equivalent to try/catch
+- Break statement also exists in Python.
 
 <!-- -->
 
--   You can name an error to give the output more specificity.
+- As are continue statements
+
+# Try/Except Statements
+
+- Python equivalent to try/catch
 
 <!-- -->
 
--   You can also use the pass commmand to by pass a certain error.
+- You can name an error to give the output more specificity.
 
 <!-- -->
 
--   The pass method won't allow you to bypass every single error so you can chain an exception series like so:
+- You can also use the pass commmand to by pass a certain error.
 
 <!-- -->
 
--   You can use an else statement to end a chain of except statements.
+- The pass method won't allow you to bypass every single error so you can chain an exception series like so:
 
 <!-- -->
 
--   finally is used at the end to clean up all actions under any circumstance.
+- You can use an else statement to end a chain of except statements.
 
 <!-- -->
 
--   Using duck typing to check to see if some value is able to use a certain method.
-
-Pass
-====
-
--   Pass Keyword is required to write the JS equivalent of :
-
-Functions
-=========
-
--   **Function definition includes:**
--   **The def keyword**
--   **The name of the function**
--   **A list of parameters enclosed in parentheses.**
--   **A colon at the end of the line.**
--   **One tab indentation for the code to run.**
--   **You can use default parameters just like in JS**
-
-**Keep in mind, default parameters must always come after regular parameters.**
--------------------------------------------------------------------------------
-
--   *You can specify arguments by name without destructuring in Python.*
+- finally is used at the end to clean up all actions under any circumstance.
 
 <!-- -->
 
--   The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
+- Using duck typing to check to see if some value is able to use a certain method.
+
+# Pass
+
+- Pass Keyword is required to write the JS equivalent of :
+
+# Functions
+
+- **Function definition includes:**
+- **The def keyword**
+- **The name of the function**
+- **A list of parameters enclosed in parentheses.**
+- **A colon at the end of the line.**
+- **One tab indentation for the code to run.**
+- **You can use default parameters just like in JS**
+
+## **Keep in mind, default parameters must always come after regular parameters.**
+
+- _You can specify arguments by name without destructuring in Python._
+
+<!-- -->
+
+- The lambda keyword is used to create anonymous functions and are supposed to be one-liners.
 
 toUpper = lambda s: s.upper()
 
-Notes
-=====
+# Notes
 
-Formatted Strings
------------------
+## Formatted Strings
 
 > Remember that in Python join() is called on a string with an array/list passed in as the argument. Python has a very powerful formatting engine. format() is also applied directly to strings.
 
-Comma Thousands Separator
-=========================
+# Comma Thousands Separator
 
-Date and Time
-=============
+# Date and Time
 
-Percentage
-==========
+# Percentage
 
-Data Tables
-===========
+# Data Tables
 
-**Python can be used to display html, css, and JS.***It is common to use Python as an API (Application Programming Interface)*
+**Python can be used to display html, css, and JS.\***It is common to use Python as an API (Application Programming Interface)\*
 
-Structured Data
----------------
+## Structured Data
 
-Sequence : The most basic data structure in Python where the index determines the order.
-----------------------------------------------------------------------------------------
+## Sequence : The most basic data structure in Python where the index determines the order.
 
 > List Tuple Range Collections : Unordered data structures, hashable values.
 
-Dictionaries Sets
------------------
+## Dictionaries Sets
 
-Iterable : Generic name for a sequence or collection; any object that can be iterated through.
-----------------------------------------------------------------------------------------------
+## Iterable : Generic name for a sequence or collection; any object that can be iterated through.
 
-Can be mutable or immutable. Built In Data Types
-------------------------------------------------
+## Can be mutable or immutable. Built In Data Types
 
-Lists are the python equivalent of arrays.
-==========================================
+# Lists are the python equivalent of arrays.
 
-You can instantiate
-===================
+# You can instantiate
 
-Test if a value is in a list.
------------------------------
+## Test if a value is in a list.
 
-Instantiated with parentheses
------------------------------
+## Instantiated with parentheses
 
-Sometimes instantiated without
-------------------------------
+## Sometimes instantiated without
 
-Tuple() built in can be used to convert other data into a tuple
----------------------------------------------------------------
+## Tuple() built in can be used to convert other data into a tuple
 
-Ranges : A list of numbers which can’t be changed; often used with for loops.
------------------------------------------------------------------------------
+## Ranges : A list of numbers which can’t be changed; often used with for loops.
 
 **Declared using one to three parameters**.
 
 > Start : opt. default 0, first \# in sequence. Stop : required next number past the last number in the sequence. Step : opt. default 1, difference between each number in the sequence.
 
-Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
-----------------------------------------------------------------------------------------------------------------------
+## Dictionaries : Mappable collection where a hashable value is used as a key to ref. an object stored in the dictionary.
 
-Mutable.
---------
+## Mutable.
 
-***Declared with curly braces of the built in dict()***
+**_Declared with curly braces of the built in dict()_**
 
-> *Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal.*
+> _Benefit of dictionaries in Python is that it doesn’t matter how it is defined, if the keys and values are the same the dictionaries are considered equal._
 
 **Use the in operator to see if a key exists in a dictionary.**
 
 S**ets : Unordered collection of distinct objects; objects that need to be hashable.**
 
-> *Always be unique, duplicate items are auto dropped from the set.*
+> _Always be unique, duplicate items are auto dropped from the set._
 
-Common Uses:
-------------
+## Common Uses:
 
 > Removing Duplicates Membership Testing Mathematical Operators: Intersection, Union, Difference, Symmetric Difference.
 
 **Standard Set is mutable, Python has a immutable version called frozenset. Sets created by putting comma seperated values inside braces:**
 
-Also can use set constructor to automatically put it into a set.
-----------------------------------------------------------------
+## Also can use set constructor to automatically put it into a set.
 
 **filter(function, iterable) : creates new iterable of the same type which includes each item for which the function returns true.**
 
@@ -413,11 +371,9 @@ Also can use set constructor to automatically put it into a set.
 
 **enumerate(iterable, start=0) : starts with a sequence and converts it to a series of tuples**
 
-(0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
---------------------------------------------------------
+## (0, ‘First’), (1, ‘Second’), (2, ‘Third’), (3, ‘Fourth’)
 
-(1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
---------------------------------------------------------
+## (1, ‘First’), (2, ‘Second’), (3, ‘Third’), (4, ‘Fourth’)
 
 > zip(\*iterables) : creates a zip object filled with tuples that combine 1 to 1 the items in each provided iterable. Functions that analyze iterable
 
@@ -427,30 +383,27 @@ Also can use set constructor to automatically put it into a set.
 
 **max(iterable, key=None) : returns the largest item in the iterable.**
 
-*key optional function which converts an item to a value to be compared. min works the same way as max*
+_key optional function which converts an item to a value to be compared. min works the same way as max_
 
 **sum(iterable) : used with a list of numbers to generate the total.**
 
-*There is a faster way to concatenate an array of strings into one string, so do not use sum for that.*
+_There is a faster way to concatenate an array of strings into one string, so do not use sum for that._
 
 **any(iterable) : returns True if any items in the iterable are true.**
 
 **all(iterable) : returns True is all items in the iterable are true.**
 
-Working with dictionaries
-=========================
+# Working with dictionaries
 
 **dir(dictionary) : returns the list of keys in the dictionary. Working with sets**
 
 **Union : The pipe | operator or union(\*sets) function can be used to produce a new set which is a combination of all elements in the provided set.**
 
-Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
------------------------------------------------------------------------------------------------------------
+## Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.
 
 **Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
-**For Statements In python, there is only one for loop.**
-=========================================================
+# **For Statements In python, there is only one for loop.**
 
 Always Includes:
 
@@ -460,7 +413,7 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
-***Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.***
+**_Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list._**
 
 **You can loop and destructure at the same time.**
 
@@ -472,42 +425,41 @@ Always Includes:
 
 **You can use values() and keys() to loop over dictionaries.**
 
-*Prints red*
+_Prints red_
 
-*Prints 42*
+_Prints 42_
 
-*Prints color*
+_Prints color_
 
-*Prints age*
+_Prints age_
 
 **For loops can also iterate over both keys and values.**
 
 **Getting tuples**
 
-*Prints (‘color’, ‘red’)*
+_Prints (‘color’, ‘red’)_
 
-*Prints (‘age’, 42)*
+_Prints (‘age’, 42)_
 
-*Destructuring to values*
+_Destructuring to values_
 
-*Prints Key: age Value: 42*
+_Prints Key: age Value: 42_
 
-*Prints Key: color Value: red*
+_Prints Key: color Value: red_
 
 **Looping over string**
 
 **When you order arguments within a function or function call, the args need to occur in a particular order:**
 
-*formal positional args.*
+_formal positional args._
 
 \*args
 
-*keyword args with default values*
+_keyword args with default values_
 
 \*\*kwargs
 
-**Importing in Python**
-=======================
+# **Importing in Python**
 
 **Modules are similar to packages in Node.js** Come in different types:
 
@@ -519,19 +471,17 @@ Custom.
 
 **All loaded using import statements.**
 
-**Terms**
-=========
+# **Terms**
 
 > module : Python code in a separate file. package : Path to a directory that contains modules. [**init.py**](http://init.py/) : Default file for a package. submodule : Another file in a module’s folder. function : Function in a module.
 
 **A module can be any file but it is usually created by placing a special file init.py into a folder. pic**
 
-*Try to avoid importing with wildcards in Python.*
+_Try to avoid importing with wildcards in Python._
 
-*Use multiple lines for clarity when importing.*
+_Use multiple lines for clarity when importing._
 
-Watching Out for Python 2
-=========================
+# Watching Out for Python 2
 
 **Python 3 removed &lt;&gt; and only uses !=**
 
@@ -541,31 +491,21 @@ Watching Out for Python 2
 
 **ConfigParser was renamed to configparser sets were killed in favor of set() class.**
 
-**print was a statement in P2, but is a function in P3.**
----------------------------------------------------------
+## **print was a statement in P2, but is a function in P3.**
 
-Topics revisited (in python syntax)
-===================================
+# Topics revisited (in python syntax)
 
-Cheat Sheet:
-============
+# Cheat Sheet:
 
-If you found this guide helpful feel free to checkout my github/gists where I host similar content:
----------------------------------------------------------------------------------------------------
+## If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
 
-Python Cheat Sheet:
-===================
+# Python Cheat Sheet:
 
-If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
-===================================================================================================
-
-  
-
-  
+# If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 

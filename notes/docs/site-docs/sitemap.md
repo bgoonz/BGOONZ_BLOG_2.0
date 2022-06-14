@@ -1,0 +1,4 @@
+site-docs
+=========
+
+<table><thead><tr class="header"><th></th><th>Name</th><th>Size</th><th>Modified</th><th></th></tr></thead><tbody><tr class="odd"><td></td><td><span class="goup">..</span></td><td>—</td><td>—</td><td></td></tr><tr class="even"><td></td><td><span class="name">Cheat Sheets.html</span></td><td>39 MB</td><td>Sat Oct 16 05:41:27 2021</td><td></td></tr><tr class="odd"><td></td><td><span class="name">bgoonz-blog.netlify.app-20210810T210945.html</span></td><td>812 KB</td><td>Sat Oct 16 05:41:27 2021</td><td></td></tr><tr class="even"><td></td><td><span class="name">blog-lighthouse-report.pdf</span></td><td>1 MB</td><td>Sat Oct 16 05:39:20 2021</td><td></td></tr></tbody></table>

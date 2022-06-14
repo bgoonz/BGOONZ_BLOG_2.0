@@ -1,0 +1,7 @@
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/index.html
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/scrap.js
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/testing/angolia-search.md
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/testing/bash-hacks.md
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/testing/github-api.md
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/testing/nav.md
+-   /mnt/c/MY-WEB-DEV/BLOG\_\_\_\_2.0/BLOG\_2.0/notes/scrap/testing/scrap2/scrap.js

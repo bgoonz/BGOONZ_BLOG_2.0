@@ -1,258 +1,272 @@
 This app works best with JavaScript enabled.
 
-  
-
 [![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/71199c39f8515c2ec6a7db98b837a0f39887ecc3/5558d/images/logo-circle.png)](/)
 
 <span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span>
 
--   <a href="/docs/sitemap" class="button">Navigation</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs" class="button">Docs</a>
-    -   <a href="/showcase" class="button">Showcase</a>
-    -   <a href="/docs/faq/contact" class="button">Contact!</a>
-    -   <a href="/docs/python/python-ds" class="button">Python</a>
+- <a href="/docs/sitemap" class="button">Navigation</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/blog/" class="button">Blog</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
-    -   <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
-    -   <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
-    -   <a href="/blog/platform-docs/" class="button">platform docs</a>
-    -   <a href="/docs/articles/nodejs/" class="button">nodejs</a>
-    -   <a href="/blogWcomments/" class="button">Blog w Comments</a>
+  - <a href="/docs" class="button">Docs</a>
+  - <a href="/showcase" class="button">Showcase</a>
+  - <a href="/docs/faq/contact" class="button">Contact!</a>
+  - <a href="/docs/python/python-ds" class="button">Python</a>
 
--   <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
-    -   <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
-    -   <a href="#" class="button">Bootcamp Resources</a>
-    -   <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
-    -   <a href="/docs/gallery" class="button">Gallery</a>
-    -   <a href="/docs" class="button">Top Repos</a>
+- <a href="/blog/" class="button">Blog</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="/docs/audio/audio" class="button">Audio</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
-    -   <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+  - <a href="https://bgoonz.blogspot.com/" class="button">Blog-Post-Archive</a>
+  - <a href="https://blog-w-comments.vercel.app/" class="button">Top Blog Posts</a>
+  - <a href="/docs/articles/ds-algo-overview/" class="button">ds-algo</a>
+  - <a href="/blog/platform-docs/" class="button">platform docs</a>
+  - <a href="/docs/articles/nodejs/" class="button">nodejs</a>
+  - <a href="/blogWcomments/" class="button">Blog w Comments</a>
 
--   <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
-    -   <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
-    -   <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
-    -   <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
-    -   <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+- <a href="https://github.com/bgoonz/UsefulResourceRepo2.0" class="button">Archive</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
 
--   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
-    -   <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
-    -   <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
-    -   <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
-    -   <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
-    -   <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
-    -   <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+  - <a href="https://bryanguner.medium.com/" class="button">Medium Articles</a>
+  - <a href="https://github.com/bgoonz/Learning-Assets" class="button">Resource-Archive-Server</a>
+  - <a href="#" class="button">Bootcamp Resources</a>
+  - <a href="https://web-dev-resource-hub.netlify.app/" class="button">OG-Blog</a>
+  - <a href="/docs/gallery" class="button">Gallery</a>
+  - <a href="/docs" class="button">Top Repos</a>
 
--   <a href="/docs/tools" class="button">Tools</a>
-    <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
-    -   <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
-    -   <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
-    -   <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
-    -   <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
-    -   <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
-    -   <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
-    -   <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
-    -   <span class="screen-reader-text">Github-Advanced-Search</span>
+- <a href="/docs/audio/audio" class="button">Audio</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="/docs/audio/audio" class="button">DTW-guitar-effects</a>
+  - <a href="/docs/audio/dfft" class="button">Fast Fourier Transform</a>
+
+- <a href="https://project-portfolio42.netlify.app/" class="button">Projects</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://potluck-landing.netlify.app/" class="button">Potluck Planner</a>
+  - <a href="https://meditate42app.netlify.app/" class="button">Meditation App</a>
+  - <a href="https://panoramic-eggplant-452e4.netlify.app/" class="button">WebAudioLab</a>
+  - <a href="https://bgoonz.github.io/searchAwesome/" class="button">SearchAwesome</a>
+  - <a href="https://bg-portfolio.netlify.app/" class="button">Condensed -Portfolio</a>
+
+- <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">External Nav</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+
+  - <a href="https://friendly-panda-b61ab.netlify.app/" class="button">Embeds Blog</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">alt-blogs</a>
+  - <a href="https://bgoonz-games.netlify.app/" class="button">Games</a>
+  - <a href="https://bgoonz-blog-v3-0.netlify.app/" class="button">Blog Backup</a>
+  - <a href="https://bgoonz-cv.netlify.app/" class="button">Cover Letter</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Centric</a>
+  - <a href="https://web-dev-hub.com/" class="button">Wordpress Blog</a>
+  - <a href="https://project-portfolio42.netlify.app/" class="button">Project Portfolio Gallery</a>
+  - <a href="https://bgoonz.github.io/github-stats-website/" class="button">github-stats-website</a>
+
+- <a href="/docs/tools" class="button">Tools</a>
+  <span class="icon-angle-right" aria-hidden="true"></span><span class="screen-reader-text">Sub-menu</span>
+  - <a href="https://githtmlpreview.netlify.app/" class="button">Github HTML Previewer</a>
+  - <a href="https://devtools42.netlify.app/" class="button">Text Tools</a>
+  - <a href="https://ternary42.netlify.app/" class="button">Ternary 2 If Else</a>
+  - <a href="https://determined-dijkstra-ee7390.netlify.app/" class="button">Job Search Resources</a>
+  - <a href="https://github.com/bgoonz/web-dev-setup-checker" class="button">Setup Checker</a>
+  - <a href="https://potluck-landing.netlify.app/" class="button">PotluckPlanner</a>
+  - <a href="https://web-dev-interview-prep-quiz-website.netlify.app/" class="button">WebDev Quizzes</a>
+  - <span class="screen-reader-text">Github-Advanced-Search</span>
 
 <span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span>
 
 Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Docs](/docs/)
--   [About](/docs/about/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Job Search](/docs/about/job-search/)
-    -   [Youtube](/docs/about/intrests/)
-    -   [Resume](/docs/about/resume/)
-    -   [Engineering Portfolio](/docs/about/eng-portfolio/)
-    -   [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
+- [Docs](/docs/)
+- [About](/docs/about/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Articles](/docs/articles/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [The HTTP Protocol](/docs/articles/http/)
-    -   [How The Web Works](/docs/articles/how-the-web-works/)
-    -   [Sorting Algorithms](/docs/articles/node-package-manager/)
-    -   [Introduction to npm](/docs/articles/npm/)
-    -   [Firebase](/docs/articles/understanding-firebase/)
-    -   [The Uniform Resource Locator (URL)](/docs/articles/the-uniform-resource-locator-(url)/)
-    -   [lorem-ipsum](/docs/articles/semantic-html/)
-    -   [Web Standards Checklist](/docs/articles/web-standards-checklist/)
-    -   [Web Developer Tools](/docs/articles/webdev-tools/)
-    -   [where-is-npm-pack](/docs/articles/node-cli-args/)
-    -   [The-package-lock.json-file](/docs/articles/node-repl/)
-    -   [node-cli-args](/docs/articles/node-run-cli/)
-    -   [Node Export Module](/docs/articles/node-env-variables/)
-    -   [npm global or local packages](/docs/articles/v8/)
-    -   [packagejson](/docs/articles/node-js-language/)
-    -   [Common Modules](/docs/articles/node-common-modules/)
-    -   [Node Buffers](/docs/articles/buffers/)
-    -   [Dev Dependencies](/docs/articles/dev-dep/)
-    -   [The Node.js Event Loop](/docs/articles/event-loop/)
-    -   [Web Dev Review](/docs/articles/basic-web-dev/)
-    -   [Fs-Module](/docs/articles/fs-module/)
-    -   [Install](/docs/articles/install/)
-    -   [Intro To Node](/docs/articles/intro/)
-    -   [module-exports](/docs/articles/module-exports/)
-    -   [Javascript and Node](/docs/articles/nodejs/)
-    -   [The npx Node.js Package Runner](/docs/articles/npx/)
-    -   [Node vs Browser](/docs/articles/nodevsbrowser/)
-    -   [Reading Files](/docs/articles/reading-files/)
-    -   [OS-Module](/docs/articles/os-module/)
-    -   [Semantic Versioning](/docs/articles/semantic/)
-    -   [Writing Files](/docs/articles/writing-files/)
-    -   [Node APIs With Express](/docs/articles/node-api-express/)
+  - [Job Search](/docs/about/job-search/)
+  - [Youtube](/docs/about/intrests/)
+  - [Resume](/docs/about/resume/)
+  - [Engineering Portfolio](/docs/about/eng-portfolio/)
+  - [My Hobbies & Interests](/docs/about/hobbies-n-interests/)
 
--   [Audio](/docs/audio/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
-    -   [Audio](/docs/audio/audio/)
-    -   [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
-    -   [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
-    -   [Discrete Fast Fourier Transform](/docs/audio/dfft/)
-    -   [Fast Fourier Transform](/docs/audio/discrete-fft/)
+- [Articles](/docs/articles/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Community](/docs/community/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Video Chat](/docs/community/video-chat/)
+  - [The HTTP Protocol](/docs/articles/http/)
+  - [How The Web Works](/docs/articles/how-the-web-works/)
+  - [Sorting Algorithms](/docs/articles/node-package-manager/)
+  - [Introduction to npm](/docs/articles/npm/)
+  - [Firebase](/docs/articles/understanding-firebase/)
+  - [The Uniform Resource Locator (URL)](</docs/articles/the-uniform-resource-locator-(url)/>)
+  - [lorem-ipsum](/docs/articles/semantic-html/)
+  - [Web Standards Checklist](/docs/articles/web-standards-checklist/)
+  - [Web Developer Tools](/docs/articles/webdev-tools/)
+  - [where-is-npm-pack](/docs/articles/node-cli-args/)
+  - [The-package-lock.json-file](/docs/articles/node-repl/)
+  - [node-cli-args](/docs/articles/node-run-cli/)
+  - [Node Export Module](/docs/articles/node-env-variables/)
+  - [npm global or local packages](/docs/articles/v8/)
+  - [packagejson](/docs/articles/node-js-language/)
+  - [Common Modules](/docs/articles/node-common-modules/)
+  - [Node Buffers](/docs/articles/buffers/)
+  - [Dev Dependencies](/docs/articles/dev-dep/)
+  - [The Node.js Event Loop](/docs/articles/event-loop/)
+  - [Web Dev Review](/docs/articles/basic-web-dev/)
+  - [Fs-Module](/docs/articles/fs-module/)
+  - [Install](/docs/articles/install/)
+  - [Intro To Node](/docs/articles/intro/)
+  - [module-exports](/docs/articles/module-exports/)
+  - [Javascript and Node](/docs/articles/nodejs/)
+  - [The npx Node.js Package Runner](/docs/articles/npx/)
+  - [Node vs Browser](/docs/articles/nodevsbrowser/)
+  - [Reading Files](/docs/articles/reading-files/)
+  - [OS-Module](/docs/articles/os-module/)
+  - [Semantic Versioning](/docs/articles/semantic/)
+  - [Writing Files](/docs/articles/writing-files/)
+  - [Node APIs With Express](/docs/articles/node-api-express/)
 
--   [Content](/docs/content/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [RECENT PROJECTS](/docs/content/data-structures-algo/)
-    -   [History API](/docs/content/history-api/)
-    -   [Trouble Shooting](/docs/content/trouble-shooting/)
-    -   [Projects](/docs/content/projects/)
-    -   [Archive](/docs/content/archive/)
-    -   [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
-    -   [Embeded Websites & Projects](/docs/content/recent-projects/)
-    -   [Algorithms & Data Structures](/docs/content/algo/)
+- [Audio](/docs/audio/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Documentation](/docs/docs/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
-    -   [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
-    -   [Apendix](/docs/docs/appendix/)
-    -   [Await](/docs/docs/await-keyword/)
-    -   [Git Reference](/docs/docs/git-reference/)
-    -   [Data Structures Docs](/docs/docs/data-structures-docs/)
-    -   [Git Repo List](/docs/docs/git-repos/)
-    -   [Markdown](/docs/docs/markdown/)
-    -   [Regular Expressions](/docs/docs/regex-in-js/)
-    -   [Sitemap](/docs/docs/sitemap/)
-    -   [Learn Css](/docs/docs/css/)
-    -   [Useful Snippets](/docs/docs/content/)
-    -   [lorem-ipsum](/docs/docs/no-whiteboarding/)
+  - [Audio Feature Extraction](/docs/audio/audio-feature-extraction/)
+  - [Audio](/docs/audio/audio/)
+  - [dynamic-time-warping](/docs/audio/dynamic-time-warping/)
+  - [Dynamic Time Warping Algorithm Explained (Python)](/docs/audio/dtw-python-explained/)
+  - [Discrete Fast Fourier Transform](/docs/audio/dfft/)
+  - [Fast Fourier Transform](/docs/audio/discrete-fft/)
 
--   [FAQ](/docs/faq/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Plug-ins](/docs/faq/plug-ins/)
-    -   [Contact!](/docs/faq/contact/)
+- [Community](/docs/community/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Javascript](/docs/javascript/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/javascript/clean-code/)
-    -   [Javascript Concepts Review](/docs/javascript/review/)
-    -   [Constructor Functions](/docs/javascript/constructor-functions/)
-    -   [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+  - [Video Chat](/docs/community/video-chat/)
 
--   [Interactive Examples](/docs/interact/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Callstack Visualizer](/docs/interact/callstack-visual/)
-    -   [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
-    -   [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
-    -   [Other Websites](/docs/interact/other-sites/)
-    -   [Clock](/docs/interact/clock/)
+- [Content](/docs/content/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [Medium](/docs/medium/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [My Sites](/docs/medium/my-websites/)
-    -   [Medium](/docs/medium/medium-links/)
+  - [RECENT PROJECTS](/docs/content/data-structures-algo/)
+  - [History API](/docs/content/history-api/)
+  - [Trouble Shooting](/docs/content/trouble-shooting/)
+  - [Projects](/docs/content/projects/)
+  - [Archive](/docs/content/archive/)
+  - [Queries and Mutations (Gatsby)](/docs/content/gatsby-Queries-Mutations/)
+  - [Embeded Websites & Projects](/docs/content/recent-projects/)
+  - [Algorithms & Data Structures](/docs/content/algo/)
 
--   [Quick Reference](/docs/quick-reference/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
-    -   [Git Bash](/docs/quick-reference/git-bash/)
-    -   [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
-    -   [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
-    -   [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
-    -   [Quick Links](/docs/quick-reference/quick-links/)
-    -   [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
-    -   [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
-    -   [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
-    -   [Understanding PATH](/docs/quick-reference/understanding-path/)
-    -   [Developer Resources](/docs/quick-reference/resources/)
-    -   [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
-    -   [Top Repos](/docs/quick-reference/topRepos/)
-    -   [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
-    -   [Installation](/docs/quick-reference/installation/)
-    -   [Awesome Lists](/docs/quick-reference/awesome-lists/)
-    -   [Github Search](/docs/quick-reference/github-search/)
-    -   [new-repo-git](/docs/quick-reference/new-repo-instructions/)
-    -   [Notes Template](/docs/quick-reference/notes-template/)
-    -   [vscode](/docs/quick-reference/vscode/)
-    -   [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
-    -   [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
-    -   [vscode-themes](/docs/quick-reference/vscode-themes/)
+- [Documentation](/docs/docs/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [React](/docs/react/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [React Cheat Sheets:](/docs/react/cheatsheet/)
-    -   [React Class Components Demo](/docs/react/demo/)
-    -   [Introducing JSX](/docs/react/jsx/)
-    -   [Rendering Elements With React](/docs/react/render-elements/)
-    -   [React In Depth](/docs/react/react-in-depth/)
-    -   [Intro To React](/docs/react/react2/)
-    -   [npx-create-react-app](/docs/react/createReactApp/)
-    -   [React Docs](/docs/react/react-docs/)
+  - [lorem-ipsum](/docs/docs/what-does-it-mean-2-render/)
+  - [Bash Commands That Save Me Time and Frustration](/docs/docs/bash/)
+  - [Apendix](/docs/docs/appendix/)
+  - [Await](/docs/docs/await-keyword/)
+  - [Git Reference](/docs/docs/git-reference/)
+  - [Data Structures Docs](/docs/docs/data-structures-docs/)
+  - [Git Repo List](/docs/docs/git-repos/)
+  - [Markdown](/docs/docs/markdown/)
+  - [Regular Expressions](/docs/docs/regex-in-js/)
+  - [Sitemap](/docs/docs/sitemap/)
+  - [Learn Css](/docs/docs/css/)
+  - [Useful Snippets](/docs/docs/content/)
+  - [lorem-ipsum](/docs/docs/no-whiteboarding/)
 
--   [Tools](/docs/tools/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [Data Structures](/docs/tools/data-structures/)
-    -   [General Utilities](/docs/tools/dev-utilities/)
-    -   [more tools](/docs/tools/more-tools/)
-    -   [The google cloud cheat sheet](/docs/tools/cloudstorage/)
-    -   [md and html](/docs/tools/markdown-html/)
+- [FAQ](/docs/faq/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
--   [My Python Docs](/docs/python/)
-    <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
-    -   [lorem-ipsum](/docs/python/basics/)
-    -   [lorem-ipsum](/docs/python/flow-control/)
-    -   [google-sheets-api](/docs/python/google-sheets-api/)
-    -   [lorem-ipsum](/docs/python/functions/)
-    -   [lorem-ipsum](/docs/python/intro-for-js-devs/)
-    -   [Practice](/docs/python/examples/)
-    -   [Python General Notes](/docs/python/python-ds/)
-    -   [Python Cheat Sheet](/docs/python/cheat-sheet/)
-    -   [lorem-ipsum](/docs/python/comprehensive-guide/)
-    -   [Python Snippets](/docs/python/snippets/)
-    -   [Python at length](/docs/python/at-length/)
+  - [Plug-ins](/docs/faq/plug-ins/)
+  - [Contact!](/docs/faq/contact/)
 
-Discrete Fast Fourier Transform
-===============================
+- [Javascript](/docs/javascript/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
 
-Frequency and the fast Fourier transform
-========================================
+  - [lorem-ipsum](/docs/javascript/clean-code/)
+  - [Javascript Concepts Review](/docs/javascript/review/)
+  - [Constructor Functions](/docs/javascript/constructor-functions/)
+  - [A Very Quick Guide To Calculating Big O Computational Complexity](/docs/javascript/bigo/)
+
+- [Interactive Examples](/docs/interact/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Callstack Visualizer](/docs/interact/callstack-visual/)
+  - [Jupyter Notebooks](/docs/interact/jupyter-notebooks/)
+  - [Zumzi Video Conferencing (Mesibo API Backend)](/docs/interact/video-chat/)
+  - [Other Websites](/docs/interact/other-sites/)
+  - [Clock](/docs/interact/clock/)
+
+- [Medium](/docs/medium/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [My Sites](/docs/medium/my-websites/)
+  - [Medium](/docs/medium/medium-links/)
+
+- [Quick Reference](/docs/quick-reference/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [How To Reinstall NPM and Node.js On Your System](/docs/quick-reference/how-2-reinstall-npm/)
+  - [Git Bash](/docs/quick-reference/git-bash/)
+  - [Awesome Static Site Resources](/docs/quick-reference/awesome-static/)
+  - [lorem-ipsum](/docs/quick-reference/markdown-dropdowns/)
+  - [Heroku Error Codes](/docs/quick-reference/heroku-error-codes/)
+  - [Quick Links](/docs/quick-reference/quick-links/)
+  - [Postgresql Cheat Sheet](/docs/quick-reference/psql/)
+  - [PostgreSQL Setup](/docs/quick-reference/psql-setup/)
+  - [Pull Request Template](/docs/quick-reference/pull-request-rubric/)
+  - [Understanding PATH](/docs/quick-reference/understanding-path/)
+  - [Developer Resources](/docs/quick-reference/resources/)
+  - [How To Minify Code For Better Web Performance](/docs/quick-reference/minifiction/)
+  - [Top Repos](/docs/quick-reference/topRepos/)
+  - [Firebase (Firebasics)](/docs/quick-reference/google-firebase/)
+  - [Installation](/docs/quick-reference/installation/)
+  - [Awesome Lists](/docs/quick-reference/awesome-lists/)
+  - [Github Search](/docs/quick-reference/github-search/)
+  - [new-repo-git](/docs/quick-reference/new-repo-instructions/)
+  - [Notes Template](/docs/quick-reference/notes-template/)
+  - [vscode](/docs/quick-reference/vscode/)
+  - [Emmet Cheat Sheet](/docs/quick-reference/Emmet/)
+  - [Getting Started W Create React App](/docs/quick-reference/create-react-app/)
+  - [vscode-themes](/docs/quick-reference/vscode-themes/)
+
+- [React](/docs/react/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [React Cheat Sheets:](/docs/react/cheatsheet/)
+  - [React Class Components Demo](/docs/react/demo/)
+  - [Introducing JSX](/docs/react/jsx/)
+  - [Rendering Elements With React](/docs/react/render-elements/)
+  - [React In Depth](/docs/react/react-in-depth/)
+  - [Intro To React](/docs/react/react2/)
+  - [npx-create-react-app](/docs/react/createReactApp/)
+  - [React Docs](/docs/react/react-docs/)
+
+- [Tools](/docs/tools/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+
+  - [Data Structures](/docs/tools/data-structures/)
+  - [General Utilities](/docs/tools/dev-utilities/)
+  - [more tools](/docs/tools/more-tools/)
+  - [The google cloud cheat sheet](/docs/tools/cloudstorage/)
+  - [md and html](/docs/tools/markdown-html/)
+
+- [My Python Docs](/docs/python/)
+  <span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span>
+  - [lorem-ipsum](/docs/python/basics/)
+  - [lorem-ipsum](/docs/python/flow-control/)
+  - [google-sheets-api](/docs/python/google-sheets-api/)
+  - [lorem-ipsum](/docs/python/functions/)
+  - [lorem-ipsum](/docs/python/intro-for-js-devs/)
+  - [Practice](/docs/python/examples/)
+  - [Python General Notes](/docs/python/python-ds/)
+  - [Python Cheat Sheet](/docs/python/cheat-sheet/)
+  - [lorem-ipsum](/docs/python/comprehensive-guide/)
+  - [Python Snippets](/docs/python/snippets/)
+  - [Python at length](/docs/python/at-length/)
+
+# Discrete Fast Fourier Transform
+
+# Frequency and the fast Fourier transform
 
 > If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.
 >
 > — Nikola Tesla
 
-*This chapter was written in collaboration with SW's father, PW van der Walt.*
+_This chapter was written in collaboration with SW's father, PW van der Walt._
 
-Introducing frequency
----------------------
+## Introducing frequency
 
 We'll start by setting up some plotting styles and importing the usual suspects:
 
@@ -263,7 +277,7 @@ We'll start by setting up some plotting styles and importing the usual suspects:
 
     import numpy as np
 
-The discrete<sup><a href="#fn-discrete" class="footnote-ref">discrete</a></sup> Fourier transform (DFT) is a mathematical technique to convert temporal or spatial data into *frequency domain* data. *Frequency* is a familiar concept, due to its colloquial occurrence in the English language: the lowest notes your headphones can rumble out are around 20 Hertz, whereas middle C on a piano lies around 261.6 Hertz. Hertz (Hz), or oscillations per second, in this case literally refers to the number of times per second at which the membrane inside the headphone moves to-and-fro. That, in turn, creates compressed pulses of air which, upon arrival at your eardrum, induces a vibration at the same frequency. So, if you take a simple periodic function, $\\sin(10 \\times 2 \\pi t)$, you can view it as a wave:
+The discrete<sup><a href="#fn-discrete" class="footnote-ref">discrete</a></sup> Fourier transform (DFT) is a mathematical technique to convert temporal or spatial data into _frequency domain_ data. _Frequency_ is a familiar concept, due to its colloquial occurrence in the English language: the lowest notes your headphones can rumble out are around 20 Hertz, whereas middle C on a piano lies around 261.6 Hertz. Hertz (Hz), or oscillations per second, in this case literally refers to the number of times per second at which the membrane inside the headphone moves to-and-fro. That, in turn, creates compressed pulses of air which, upon arrival at your eardrum, induces a vibration at the same frequency. So, if you take a simple periodic function, $\\sin(10 \\times 2 \\pi t)$, you can view it as a wave:
 
     f = 10  # Frequency, in cycles per second, or Hertz
     f_s = 100  # Sampling rate, or number of measurements per second
@@ -276,7 +290,7 @@ The discrete<sup><a href="#fn-discrete" class="footnote-ref">discrete</a></sup> 
     ax.set_xlabel('Time [s]')
     ax.set_ylabel('Signal amplitude');
 
-Or you can equivalently think of it as a repeating signal of *frequency* 10 Hertz (it repeats once every $1/10$ seconds—a length of time we call its *period*). Although we naturally associate frequency with time, it can equally well be applied to space. E.g., a photo of a textile patterns exhibits high *spatial frequency*, whereas the sky or other smooth objects have low spatial frequency.
+Or you can equivalently think of it as a repeating signal of _frequency_ 10 Hertz (it repeats once every $1/10$ seconds—a length of time we call its _period_). Although we naturally associate frequency with time, it can equally well be applied to space. E.g., a photo of a textile patterns exhibits high _spatial frequency_, whereas the sky or other smooth objects have low spatial frequency.
 
 Let us now examine our sinusoid through application of the discrete Fourier transform:
 
@@ -293,18 +307,17 @@ Let us now examine our sinusoid through application of the discrete Fourier tran
     ax.set_xlim(-f_s / 2, f_s / 2)
     ax.set_ylim(-5, 110)
 
-We see that the output of the FFT is a one-dimensional array of the same shape as the input, containing complex values. All values are zero, except for two entries. Traditionally, we visualize the magnitude of the result as a *stem plot*, in which the height of each stem corresponds to the underlying value.
+We see that the output of the FFT is a one-dimensional array of the same shape as the input, containing complex values. All values are zero, except for two entries. Traditionally, we visualize the magnitude of the result as a _stem plot_, in which the height of each stem corresponds to the underlying value.
 
 (We explain why you see positive and negative frequencies later on in the sidebox titled "Discrete Fourier transforms". You may also refer to that section for a more in-depth overview of the underlying mathematics.)
 
-The Fourier transform takes us from the *time* to the *frequency* domain, and this turns out to have a massive number of applications. The *fast Fourier transform* is an algorithm for computing the discrete Fourier transform; it achieves its high speed by storing and re-using results of computations as it progresses.
+The Fourier transform takes us from the _time_ to the _frequency_ domain, and this turns out to have a massive number of applications. The _fast Fourier transform_ is an algorithm for computing the discrete Fourier transform; it achieves its high speed by storing and re-using results of computations as it progresses.
 
 In this chapter, we examine a few applications of the discrete Fourier transform to demonstrate that the FFT can be applied to multidimensional data (not just 1D measurements) to achieve a variety of goals.
 
-Illustration: a birdsong spectrogram
-------------------------------------
+## Illustration: a birdsong spectrogram
 
-Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a *spectrogram*. You might have seen spectrograms on your music player's equalizer view, or even on an old-school stereo.
+Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a _spectrogram_. You might have seen spectrograms on your music player's equalizer view, or even on an old-school stereo.
 
 ![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.JPG)
 
@@ -339,11 +352,11 @@ Then, calculate the length of the snippet and plot the audio.
     ax.set_xlabel('Time [s]')
     ax.set_ylabel('Amplitude [unknown]');
 
-Well, that's not very satisfying, is it? If I sent this voltage to a speaker, I might hear a bird chirping, but I can't very well imagine how it would sound like in my head. Is there a better way of *seeing* what is going on?
+Well, that's not very satisfying, is it? If I sent this voltage to a speaker, I might hear a bird chirping, but I can't very well imagine how it would sound like in my head. Is there a better way of _seeing_ what is going on?
 
-There is, and it is called the discrete Fourier transform, where discrete refers to the recording consisting of time-spaced sound measurements, in contrast to a continual recording as, e.g., on magnetic tape (remember casettes?). The discrete Fourier transform is often computed using the *fast Fourier transform* (FFT) algorithm, a name informally used to refer to the DFT itself. The DFT tells us which frequencies or "notes" to expect in our signal.
+There is, and it is called the discrete Fourier transform, where discrete refers to the recording consisting of time-spaced sound measurements, in contrast to a continual recording as, e.g., on magnetic tape (remember casettes?). The discrete Fourier transform is often computed using the _fast Fourier transform_ (FFT) algorithm, a name informally used to refer to the DFT itself. The DFT tells us which frequencies or "notes" to expect in our signal.
 
-Of course, a bird sings many notes throughout the song, so we'd also like to know *when* each note occurs. The Fourier transform takes a signal in the time domain (i.e., a set of measurements over time) and turns it into a spectrum—a set of frequencies with corresponding (complex<sup><a href="#fn-complex" class="footnote-ref">complex</a></sup>) values. The spectrum does not contain any information about time! <sup><a href="#fn-time" class="footnote-ref">time</a></sup>
+Of course, a bird sings many notes throughout the song, so we'd also like to know _when_ each note occurs. The Fourier transform takes a signal in the time domain (i.e., a set of measurements over time) and turns it into a spectrum—a set of frequencies with corresponding (complex<sup><a href="#fn-complex" class="footnote-ref">complex</a></sup>) values. The spectrum does not contain any information about time! <sup><a href="#fn-time" class="footnote-ref">time</a></sup>
 
 So, to find both the frequencies and the time at which they were sung, we'll need to be somewhat clever. Our strategy is as follows: take the audio signal, split it into small, overlapping slices, and apply the Fourier transform to each (a technique known as the Short Time Fourier Transform).
 
@@ -409,33 +422,30 @@ SciPy already includes an implementation of this procedure as `scipy.signal.spec
 
 The only differences are that SciPy returns the spectrum magnitude squared (which turns measured voltage into measured energy), and multiplies it by some normalization factors<sup><a href="#fn-scaling" class="footnote-ref">scaling</a></sup>.
 
-History
--------
+## History
 
-Tracing the exact origins of the Fourier transform is tricky. Some related procedures go as far back as Babylonian times, but it was the hot topics of calculating asteroid orbits and solving the heat (flow) equation that led to several breakthroughs in the early 1800s. Whom exactly among Clairaut, Lagrange, Euler, Gauss and D'Alembert we should thank is not exactly clear, but Gauss was the first to describe the fast Fourier transform (an algorithm for computing the discrete Fourier transform, popularized by Cooley and Tukey in 1965). Joseph Fourier, after whom the transform is named, first claimed that *arbitrary* periodic <sup><a href="#fn-periodic" class="footnote-ref">periodic</a></sup> functions can be expressed as a sum of trigonometric functions.
+Tracing the exact origins of the Fourier transform is tricky. Some related procedures go as far back as Babylonian times, but it was the hot topics of calculating asteroid orbits and solving the heat (flow) equation that led to several breakthroughs in the early 1800s. Whom exactly among Clairaut, Lagrange, Euler, Gauss and D'Alembert we should thank is not exactly clear, but Gauss was the first to describe the fast Fourier transform (an algorithm for computing the discrete Fourier transform, popularized by Cooley and Tukey in 1965). Joseph Fourier, after whom the transform is named, first claimed that _arbitrary_ periodic <sup><a href="#fn-periodic" class="footnote-ref">periodic</a></sup> functions can be expressed as a sum of trigonometric functions.
 
-Implementation
---------------
+## Implementation
 
 The discrete Fourier transform functionality in SciPy lives in the \`scipy.fftpack`` module. Among other things, it provides the following DFT-related functionality:
 
--   `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
--   `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
--   `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
--   `fftshift`, `ifftshift`: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
--   `fftfreq`: Return the discrete Fourier transform sample frequencies.
--   `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
+- `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
+- `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
+- `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
+- `fftshift`, `ifftshift`: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
+- `fftfreq`: Return the discrete Fourier transform sample frequencies.
+- `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
 
 This is complemented by the following functions in NumPy:
 
--   `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`, `np.kaiser`: Tapered windowing functions.
+- `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`, `np.kaiser`: Tapered windowing functions.
 
 It is also used to perform fast convolutions of large inputs by `scipy.signal.fftconvolve`.
 
 SciPy wraps the Fortran FFTPACK library—it is not the fastest out there, but unlike packages such as FFTW, it has a permissive free software license.
 
-Choosing the length of the discrete Fourier transform (DFT)
------------------------------------------------------------
+## Choosing the length of the discrete Fourier transform (DFT)
 
 A naive calculation of the DFT takes $\\mathcal{O}\\left(N^2\\right)$ operations <sup><a href="#fn-big_o" class="footnote-ref">big_o</a></sup>. How come? Well, you have $N$ (complex) sinusoids of different frequencies ($2 \\pi f \\times 0, 2 \\pi f \\times 1, 2 \\pi f \\times 3, ..., 2 \\pi f \\times (N - 1)$), and you want to see how strongly your signal corresponds to each. Starting with the first, you take the dot product with the signal (which, in itself, entails $N$ multiplication operations). Repeating this operation $N$ times, once for each sinusoid, then gives $N^2$ operations.
 
@@ -483,8 +493,7 @@ Let us illustrate:
 
 The intuition is that, for smooth input lengths, the FFT can be broken up into many small pieces. After performing the FFT on the first piece, those results can be reused in subsequent computations. This explains why we chose a length of 1024 for our audio slices earlier—it has a smoothness of only 2, resulting in the optimal "radix-2 Cooley-Tukey" algorithm, which computes the FFT using only $(N/2) \\log\_2 N = 5120$ complex multiplications, instead of $N^2 = 1048576$. Choosing $N = 2^m$ always ensures a maximally smooth $N$ (and, thus, the fastest FFT).
 
-More discrete Fourier transform concepts
-----------------------------------------
+## More discrete Fourier transform concepts
 
 Next, we present a couple of common concepts worth knowing before operating heavy Fourier transform machinery, whereafter we tackle another real-world problem: analyzing target detection in radar data.
 
@@ -530,7 +539,7 @@ Sometimes, it is convenient to view the spectrum organized slightly differently,
 >
 > $$ X*{k}=\\sum*{n=0}^{N-1}x\_{n}e^{-j2\\pi kn/N},;k=0,1,\\ldots, N-1. $$
 >
-> With the numbers $X*{k}$ known, the inverse DFT \_exactly* recovers the sample values $x\_{n}$ through the summation
+> With the numbers $X*{k}$ known, the inverse DFT \_exactly\* recovers the sample values $x\_{n}$ through the summation
 >
 > $$x*{n}=\\frac{1}{N}\\sum*{k=0}^{N-1}X\_{k}e^{j2\\pi kn/N}.$$
 >
@@ -538,19 +547,19 @@ Sometimes, it is convenient to view the spectrum organized slightly differently,
 >
 > $$x(t)=\\sum*{n=-\\infty}^{\\infty}c*{n}e^{jn\\omega\_{0}t},$$
 >
-> the DFT is a *finite* series with $N$ terms defined at the equally spaced discrete instances of the *angle* $(\\omega*{0}t*{n})=2\\pi\\frac{k}{N}$ in the interval $\[0,2\\pi)$, i.e. *including* $0$ and *excluding* $2\\pi$. This automatically normalizes the DFT so that time does not appear explicitly in the forward or inverse transform.
+> the DFT is a _finite_ series with $N$ terms defined at the equally spaced discrete instances of the _angle_ $(\\omega*{0}t*{n})=2\\pi\\frac{k}{N}$ in the interval $\[0,2\\pi)$, i.e. _including_ $0$ and _excluding_ $2\\pi$. This automatically normalizes the DFT so that time does not appear explicitly in the forward or inverse transform.
 >
-> If the original function $x(t)$ is limited in frequency to less than half of the sampling frequency (the so-called *Nyquist frequency*), interpolation between sample values produced by the inverse DFT will usually give a faithful reconstruction of $x(t)$. If $x(t)$ is *not* limited as such, the inverse DFT can, in general, not be used to reconstruct $x(t)$ by interpolation. Note that this limit does not imply that there are *no* methods that can do such a reconstruction—see, e.g., compressed sensing, or finite rate of innovation sampling.
+> If the original function $x(t)$ is limited in frequency to less than half of the sampling frequency (the so-called _Nyquist frequency_), interpolation between sample values produced by the inverse DFT will usually give a faithful reconstruction of $x(t)$. If $x(t)$ is _not_ limited as such, the inverse DFT can, in general, not be used to reconstruct $x(t)$ by interpolation. Note that this limit does not imply that there are _no_ methods that can do such a reconstruction—see, e.g., compressed sensing, or finite rate of innovation sampling.
 >
 > The function $e^{j2\\pi k/N}=\\left(e^{j2\\pi/N}\\right)^{k}=w^{k}$ takes on discrete values between $0$ and $2\\pi\\frac{N-1}{N}$ on the unit circle in the complex plane. The function $e^{j2\\pi kn/N}=w^{kn}$ encircles the origin $n\\frac{N-1}{N}$ times, thus generating harmonics of the fundamental sinusoid for which $n=1$.
 >
-> The way in which we defined the DFT leads to a few subtleties when $n&gt;\\frac{N}{2}$, for even $N$ <sup><a href="#fn-odd_n" class="footnote-ref">odd_n</a></sup>. The function $e^{j2\\pi kn/N}$ is plotted for increasing values of $k$ in the figure below, for the cases $n=1$ to $n=N-1$ for $N=16$. When $k$ increases from $k$ to $k+1$, the angle increases by $\\frac{2\\pi n}{N}$. When $n=1$, the step is $\\frac{2\\pi}{N}$. When $n=N-1$, the angle increases by $2\\pi\\frac{N-1}{N}=2\\pi-\\frac{2\\pi}{N}$. Since $2\\pi$ is precisely once around the circle, the step equates to $-\\frac{2\\pi}{N}$, i.e. in the direction of a negative frequency. The components up to $N/2$ represent *positive* frequency components, those above $N/2$ up to $N-1$ represent *negative* frequencies. The angle increment for the component $N/2$ for $N$ even advances precisely halfway around the circle for each increment in $k$ and can therefore be interpreted as either a positive or a negative frequency. This component of the DFT represents the Nyquist Frequency, i.e. half of the sampling frequency, and is useful to orientate oneself when looking at DFT graphics.
+> The way in which we defined the DFT leads to a few subtleties when $n&gt;\\frac{N}{2}$, for even $N$ <sup><a href="#fn-odd_n" class="footnote-ref">odd_n</a></sup>. The function $e^{j2\\pi kn/N}$ is plotted for increasing values of $k$ in the figure below, for the cases $n=1$ to $n=N-1$ for $N=16$. When $k$ increases from $k$ to $k+1$, the angle increases by $\\frac{2\\pi n}{N}$. When $n=1$, the step is $\\frac{2\\pi}{N}$. When $n=N-1$, the angle increases by $2\\pi\\frac{N-1}{N}=2\\pi-\\frac{2\\pi}{N}$. Since $2\\pi$ is precisely once around the circle, the step equates to $-\\frac{2\\pi}{N}$, i.e. in the direction of a negative frequency. The components up to $N/2$ represent _positive_ frequency components, those above $N/2$ up to $N-1$ represent _negative_ frequencies. The angle increment for the component $N/2$ for $N$ even advances precisely halfway around the circle for each increment in $k$ and can therefore be interpreted as either a positive or a negative frequency. This component of the DFT represents the Nyquist Frequency, i.e. half of the sampling frequency, and is useful to orientate oneself when looking at DFT graphics.
 >
 > The FFT in turn is simply a special and highly efficient algorithm for calculating the DFT. Whereas a straightforward calculation of the DFT takes of the order of $N^{2}$ calculations to compute, the FFT algorithm requires of the order $N\\log N$ calculations. The FFT was the key to the wide-spread use of the DFT in real-time applications and was included in a list of the top $10$ algorithms of the $20^{th}$ century by the IEEE journal Computing in Science & Engineering in the year $2000$.
 >
 > ![Unit circle samples](../figures/unit_circle_samples.png)
 
-Let's examine the frequency components in a noisy image. Note that, while a static image has no time-varying component, its values do vary across *space*. The DFT applies equally to either case.
+Let's examine the frequency components in a noisy image. Note that, while a static image has no time-varying component, its values do vary across _space_. The DFT applies equally to either case.
 
 First, load and display the image:
 
@@ -654,7 +663,7 @@ We only measure the signal for a short time, labeled $T\_{eff}$. The Fourier tra
 
 Instead of the expected two lines, the peaks are spread out in the spectrum.
 
-We can counter this effect by a process called *windowing*. The original function is multiplied with a window function such as the Kaiser window $K(N,\\beta)$. Here we visualize it for $\\beta$ ranging from 0 to 100:
+We can counter this effect by a process called _windowing_. The original function is multiplied with a window function such as the Kaiser window $K(N,\\beta)$. Here we visualize it for $\\beta$ ranging from 0 to 100:
 
     f, ax = plt.subplots()
 
@@ -692,8 +701,7 @@ The effect of windowing our previous example is noticeable:
     ax1.plot(fftpack.fftfreq(len(t)), np.abs(X_win))
     ax1.set_ylim(0, 190);
 
-Real-world Application: Analyzing Radar Data
---------------------------------------------
+## Real-world Application: Analyzing Radar Data
 
 Linearly modulated FMCW (Frequency-Modulated Continuous-Wave) radars make extensive use of the FFT algorithm for signal processing and provide examples of various applications of the FFT. We will use actual data from an FMCW radar to demonstrate one such an application: target detection.
 
@@ -717,9 +725,9 @@ We are particularly interested in the first, since that gives us some indication
 
 To summarize, we should note that:
 
--   The data that reaches the computer consists of $N$ samples sampled (from the multiplied, filtered signal) at a sample frequency of $f\_{s}$.
--   The **amplitude** of the returned signal varies depending on the **strength of the reflection** (i.e., is a property of the target object and the distance between the target and the radar).
--   The **frequency measured** is an indication of the **distance** of the target object from the radar.
+- The data that reaches the computer consists of $N$ samples sampled (from the multiplied, filtered signal) at a sample frequency of $f\_{s}$.
+- The **amplitude** of the returned signal varies depending on the **strength of the reflection** (i.e., is a property of the target object and the distance between the target and the radar).
+- The **frequency measured** is an indication of the **distance** of the target object from the radar.
 
 ![The frequency relationships in an FMCW radar with linear frequency modulation](../figures/FMCW_waveform.png)
 
@@ -729,11 +737,11 @@ Recall that the radar is increasing its frequency as it transmits at a rate of $
 
 Combining the above observations, we can calculate the amount of time it would take the signal to travel to, bounce off, and return from a target that is distance $R$ away:
 
-$$ t\_R = 2R / v $$
+$$ t_R = 2R / v $$
 
 Therefore, the change in frequency for a target at range $R$ will be:
 
-$$ f\_{d}= t\_R S = \\frac{2RS}{v}$$
+$$ f\_{d}= t_R S = \\frac{2RS}{v}$$
 
     pi = np.pi
 
@@ -814,20 +822,20 @@ The real-world radar data is read from a NumPy-format `.npz` file (a light-weigh
 
     v_actual = v_actual * (2.5 / 8192)
 
-Since `.npz`-files can store multiple variables, we have to select the one we want: `data['scan']`. That returns a *structured NumPy array* with the following fields:
+Since `.npz`-files can store multiple variables, we have to select the one we want: `data['scan']`. That returns a _structured NumPy array_ with the following fields:
 
--   **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
--   **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
--   **position**
+- **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
+- **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
+- **position**
 
-    -   **az** : 32-bit float (`np.float32`)
-    -   **el** : 32-bit float (`np.float32`)
-    -   **region\_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
-    -   **region\_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
-    -   **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
-    -   **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
+  - **az** : 32-bit float (`np.float32`)
+  - **el** : 32-bit float (`np.float32`)
+  - **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
+  - **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
+  - **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
+  - **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
 
-While it is true that NumPy arrays are *homogeneous* (i.e., all the elements inside are the same), it does not mean that those elements cannot be compound elements, as is the case here.
+While it is true that NumPy arrays are _homogeneous_ (i.e., all the elements inside are the same), it does not mean that those elements cannot be compound elements, as is the case here.
 
 An individual field is accessed using dictionary syntax:
 
@@ -837,7 +845,7 @@ To summarize what we've seen so far: the shown measurements ($v*\\mathrm{sim}$ a
 
 ### Signal properties in the frequency domain
 
-First, we take the FFTs of our three signals (synthetic single target, synthetic multi-target, and real) and then display the positive frequency components (i.e., components $0$ to $N/2$). These are called the *range traces* in radar terminology.
+First, we take the FFTs of our three signals (synthetic single target, synthetic multi-target, and real) and then display the positive frequency components (i.e., components $0$ to $N/2$). These are called the _range traces_ in radar terminology.
 
     fig, axes = plt.subplots(3, 1, sharex=True, figsize=(4.8, 2.4))
 
@@ -877,7 +885,7 @@ To get useful information from the plot, we must determine the range! Again, we 
 
 $$R*{n}=\\frac{nv}{2B*{eff}}$$
 
-In radar terminology, each DFT component is known as a *range bin*.
+In radar terminology, each DFT component is known as a _range bin_.
 
 This equation also defines the range resolution of the radar: targets will only be distinguishable if they are separated by more than two range bins, i.e.
 
@@ -920,11 +928,11 @@ This result is quite satisfying—but the dynamic range is so large that we coul
     ax2.set_xlim(0, len(V_actual) // 2)
     ax2.set_xlabel('range')
 
-The observable dynamic range is much improved in these plots. For instance, in the real radar signal the *noise floor* of the radar has become visible (i.e., the level where electronic noise in the system starts to limit the radar's ability to detect a target).
+The observable dynamic range is much improved in these plots. For instance, in the real radar signal the _noise floor_ of the radar has become visible (i.e., the level where electronic noise in the system starts to limit the radar's ability to detect a target).
 
 ### Windowing, applied
 
-We're getting there, but in the spectrum of the simulated signal, we still cannot distinguish the peaks at 154 and 159 meters. Who knows what we're missing in the real-world signal! To sharpen the peaks, we'll return to our toolbox and make use of *windowing*.
+We're getting there, but in the spectrum of the simulated signal, we still cannot distinguish the peaks at 154 and 159 meters. Who knows what we're missing in the real-world signal! To sharpen the peaks, we'll return to our toolbox and make use of _windowing_.
 
 Here are the signals used thus far in this example, windowed with a Kaiser window with $\\beta=6.1$:
 
@@ -1077,21 +1085,21 @@ The examples above show just one of the uses of the FFT in radar. There are many
 
 On the Fourier transform:
 
--   A. Papoulis, *The Fourier Integral and Its Applications*, McGraw-Hill, 1960.
--   Ronald A. Bracewell, *The Fourier Transform and Its Applications*, McGraw-Hill, 1986.
+- A. Papoulis, _The Fourier Integral and Its Applications_, McGraw-Hill, 1960.
+- Ronald A. Bracewell, _The Fourier Transform and Its Applications_, McGraw-Hill, 1986.
 
 On radar signal processing:
 
--   Mark A. Richards, *Principles of Modern Radar: Basic Principles*, SciTech, 2010
--   Mark A. Richards, *Fundamentals of Radar Signal Processing*, McGraw-Hill, 2014.
+- Mark A. Richards, _Principles of Modern Radar: Basic Principles_, SciTech, 2010
+- Mark A. Richards, _Fundamentals of Radar Signal Processing_, McGraw-Hill, 2014.
 
 **Exercise:** The FFT is often used to speed up image convolution (convolution is the application of a moving filter mask). Convolve an image with `np.ones((5, 5))`, using a) numpy's `np.convolve` and b) `np.fft.fft2`. Confirm that the results are identical.
 
 Hints:
 
--   The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where `X` and `Y` are the FFTs of x and y respectively.
--   In order to multiply `X` and `Y`, they have to be the same size. Use `np.pad` to extend `x` and `y` with zeros (toward the right and bottom) *before* taking their FFT.
--   You may see some edge effects. These can be removed by increasing the padding size, so that both `x` and `y` have dimensions `shape(x) + shape(y) - 1`.
+- The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where `X` and `Y` are the FFTs of x and y respectively.
+- In order to multiply `X` and `Y`, they have to be the same size. Use `np.pad` to extend `x` and `y` with zeros (toward the right and bottom) _before_ taking their FFT.
+- You may see some edge effects. These can be removed by increasing the padding size, so that both `x` and `y` have dimensions `shape(x) + shape(y) - 1`.
 
 **Solution:**
 
@@ -1114,7 +1122,7 @@ Hints:
 
     print('Results are equal?', np.allclose(zz, z))
 
-------------------------------------------------------------------------
+---
 
 1.  The discrete Fourier transform operates on sampled data, in contrast to the standard Fourier transform which is defined for continuous functions.
 
@@ -1132,7 +1140,7 @@ Hints:
 
     <a href="#fnref-scaling" class="footnote-backref">↩</a>
 
-5.  The period can, in fact, also be infinite! The general continuous Fourier transform provides for this possibility. Discrete Fourier transforms are generally defined over a finite interval, and this is implicitly the period of the time domain function that is transformed. In other words, if you do the inverse discrete Fourier transform, you *always* get a periodic signal out.
+5.  The period can, in fact, also be infinite! The general continuous Fourier transform provides for this possibility. Discrete Fourier transforms are generally defined over a finite interval, and this is implicitly the period of the time domain function that is transformed. In other words, if you do the inverse discrete Fourier transform, you _always_ get a periodic signal out.
 
     <a href="#fnref-periodic" class="footnote-backref">↩</a>
 
@@ -1152,12 +1160,7 @@ Hints:
 
     <a href="#fnref-choosing_a_window" class="footnote-backref">↩</a>
 
-Jump to Section
----------------
-
-  
-
-  
+## Jump to Section
 
 <table><colgroup><col style="width: 100%" /></colgroup><tbody><tr class="odd"><td><table><tbody><tr class="odd"><td style="text-align: left;"><a href="https://search.freefind.com/siteindex.html?si=14588965">index</a></td><td style="text-align: center;"><a href="https://search.freefind.com/find.html?si=14588965&amp;m=0&amp;p=0">sitemap</a></td><td style="text-align: right;"><a href="https://search.freefind.com/find.html?si=14588965&amp;pid=a">advanced</a></td></tr></tbody></table></td></tr><tr class="even"><td><a href="https://www.freefind.com">search engine</a><a href="https://www.freefind.com">by<span style="color:transparent">freefind</span></a></td></tr></tbody></table>
 
