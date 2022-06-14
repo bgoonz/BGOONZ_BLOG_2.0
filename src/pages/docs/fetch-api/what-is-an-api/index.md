@@ -3,6 +3,7 @@ title: What is an API?
 template: docs
 excerpt: An API is the middleman of most modern applications
 ---
+
 <!--StartFragment-->
 
 ## What is an API?
@@ -27,8 +28,8 @@ Every API is comprised of 3 main components: (1) The functions/methods that you 
 
 The API methods of a web application depend entirely on the purpose/business of the website:
 
-* If you are building the API for a product like Uber, some of your methods will be: Sign up, Request a trip, Rate a driver, Cancel a trip, etc.
-* If you are building an API for something like AirBnB, some of your methods will be: Book listing, Search for listing, Cancel trip, etc.
+-   If you are building the API for a product like Uber, some of your methods will be: Sign up, Request a trip, Rate a driver, Cancel a trip, etc.
+-   If you are building an API for something like AirBnB, some of your methods will be: Book listing, Search for listing, Cancel trip, etc.
 
 ## [](https://content.breatheco.de/en/lesson/understanding-rest-apis#the-rest-standard)The REST standard
 
@@ -47,11 +48,11 @@ REST works over HTTP – that means that everything is text based. It uses the f
 
 The [HTTP status codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) provide metadata in the response to the state of the requested resources. They are part of what makes the Web a platform for building distributed systems. They are divided into the following categories:
 
-* `1xx` – Metadata
-* `2xx` – Everything is fine
-* `3xx` – Redirection
-* `4xx` – Client did something wrong
-* `5xx` – Server did something wrong
+-   `1xx` – Metadata
+-   `2xx` – Everything is fine
+-   `3xx` – Redirection
+-   `4xx` – Client did something wrong
+-   `5xx` – Server did something wrong
 
 ### [](https://content.breatheco.de/en/lesson/understanding-rest-apis#uris-uniform-resource-identifiers)URIs (Uniform Resource Identifiers)
 
@@ -63,24 +64,24 @@ Clients should not be coupled to particular resource URIs as they can be changed
 
 Here are some Twitter API URI’s:
 
-* [GET /direct_messages/](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events.html)
-* [GET /favorites/list](https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-favorites-list)
-* [POST /direct_messages/new](https://developer.twitter.com/en/docs/api-reference-index)
-* [DELETE /direct*messages/welcome*messages/destroy](https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-destroy-id.html)
+-   [GET /direct_messages/](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/list-events.html)
+-   [GET /favorites/list](https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/get-favorites-list)
+-   [POST /direct_messages/new](https://developer.twitter.com/en/docs/api-reference-index)
+-   [DELETE /direct*messages/welcome*messages/destroy](https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-destroy-id.html)
 
 ### [](https://content.breatheco.de/en/lesson/understanding-rest-apis#resources)Resources
 
 A resource is an abstract representation of an object that can be invoked using Create, Read, Update or Delete with your API, for example:
 
-* If you are building the API of an e-learning application, resources could include: a student, a course, a class, a topic, a teacher.
-* If you are building an e-Commerce API, they could be: Product, Category, Order, Client, Purchase, etc.
+-   If you are building the API of an e-learning application, resources could include: a student, a course, a class, a topic, a teacher.
+-   If you are building an e-Commerce API, they could be: Product, Category, Order, Client, Purchase, etc.
 
 Resources represent the documents being transferred across the network to get work done. Resources should be named as nouns, as they represent concepts in the domain of a particular system and are identified using URIs.
 
 Further reading:
 
-* [ReadTheDocs](https://restful-api-design.readthedocs.io/en/latest/resources.html)
-* [RESTfulAPI.net](https://restfulapi.net/)
+-   [ReadTheDocs](https://restful-api-design.readthedocs.io/en/latest/resources.html)
+-   [RESTfulAPI.net](https://restfulapi.net/)
 
 ### [](https://content.breatheco.de/en/lesson/understanding-rest-apis#public-apis)Public API's
 
