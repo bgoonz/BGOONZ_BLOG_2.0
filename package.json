@@ -7,7 +7,8 @@
         "develop": "gatsby develop",
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
-        "serve": "gatsby serve"
+        "serve": "gatsby serve",
+        "dockey": "docky .\/..\/src\/components\/**\/*.md --watch \".\/..\/src\/components\/**\/*.js\",\".\/README.md\" --ignore \".\/..\/src\/components\/index.js\"  --use-readme=true"
     },
     "dependencies": {
         "@babel/core": "^7.18.5",
