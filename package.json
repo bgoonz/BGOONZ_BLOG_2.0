@@ -29,7 +29,7 @@
         "marked": "0.6.1",
         "moment": "^2.29.3",
         "moment-strftime": "0.5.0",
-        "node-sass": "4.14.0",
+        "node-sass": "7.0.0",
         "node-sass-utils": "1.1.2",
         "prism": "^4.1.2",
         "prismjs": "^1.28.0",
