@@ -41,9 +41,9 @@ npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra g
 [![webdevhub logo](https://bgoonz-blog.netlify.app/images/home-button.png)]('https://bgoonz-blog.netlify.app/')
 [vagrent](https://www.vagrantup.com/)
 
-[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
+[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)
 
-[![instagram](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![pinterest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
+[![instagram](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![pinterest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
 
 [webpack](https://webpack.js.org/)
 
@@ -156,14 +156,14 @@ Sub-menu
     _🔎_
     Search
 
-# I am a musician, electrical engineer & web developer
+## I am a musician, electrical engineer & web developer
 
 **Please note that this website is in development and is often broken!**
 [](https://www.vagrantup.com/)
 
-[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
+[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)
 
-[![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
+[![insta](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![pintrest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
 
 [](https://webpack.js.org/)
 
@@ -1199,7 +1199,7 @@ docky ./../src/components/pages/**/*.md \ # specify the components to parse
 
 ```
 
-# SITEMAP
+## SITEMAP
 
 -   [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 
