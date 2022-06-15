@@ -1,4 +1,4 @@
-**//====================================Remove remote origin
+\*\*//====================================Remove remote origin
 git remote remove origin
 
 //=================================================\\
@@ -10,7 +10,7 @@ git remote remove origin
 </details>
 
 Trim folder names or file names
-rename 's/^(.{10}).*/$1/'*
+rename 's/^(.{10})._/$1/'_
 
 //=================================================\\
 
@@ -18,7 +18,7 @@ rename 's/^(.{10}).*/$1/'*
 
 find . -empty -type d -print -delete
 
-                   OR                       find . -depth -exec rmdir {} \;  
+                   OR                       find . -depth -exec rmdir {} \;
 
 fdupes -r -f . | grep -v '^$' | xargs rm -v
 
@@ -34,9 +34,9 @@ find . -empty -type d -print -delete
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-find . -name '__MACOSX' -type d -prune -exec rm -rf '{}' +
+find . -name '\_\_MACOSX' -type d -prune -exec rm -rf '{}' +
 
 find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
 
@@ -48,35 +48,35 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 4.)Recursive-unzip:()===>
 
-find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
+find . -name "\*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
-find . -name "*.zip" -type f -print -delete
+find . -name "\*.zip" -type f -print -delete
 
 //===============================Remove lines of file contaning a string============================\\
 
-sudo sed -i '/authors/d' ./*.md
-sudo sed -i '/Mirrored from/d' ./*.html
-sudo sed -i '/This is Squarespace/d' ./*.html
-sudo sed -i '/authors/d' ./*.md
+sudo sed -i '/authors/d' ./_.md
+sudo sed -i '/Mirrored from/d' ./_.html
+sudo sed -i '/This is Squarespace/d' ./_.html
+sudo sed -i '/authors/d' ./_.md
 sudo sed -i '/assets/d' ./index.html
 
 //====================================--To find a pattern and remove the line containing the pattern below command can be used=======================\\
 
-find . -name "*" -type f | xargs sed -i -e '/Mirrored from/d'
+find . -name "\*" -type f | xargs sed -i -e '/Mirrored from/d'
 
-find . -name "*" -type f | xargs sed -i -e '/tip-number/d'
-find . -name "*" -type f | xargs sed -i -e '/tip-username/d'
-find . -name "*" -type f | xargs sed -i -e '/tip-tldr/d'
-find . -name "*" -type f | xargs sed -i -e '/categories:/d'
+find . -name "_" -type f | xargs sed -i -e '/tip-number/d'
+find . -name "_" -type f | xargs sed -i -e '/tip-username/d'
+find . -name "_" -type f | xargs sed -i -e '/tip-tldr/d'
+find . -name "_" -type f | xargs sed -i -e '/categories:/d'
 
-find . -name '*' -type f | xargs sed -i -e '/Author/d'
-find . -name "*" -type f | xargs sed -i -e '/author/d'
+find . -name '_' -type f | xargs sed -i -e '/Author/d'
+find . -name "_" -type f | xargs sed -i -e '/author/d'
 
 //=====================================================\\
 
 npm i --legacy-peer-deps
 
-//====================--Flatten (denest)  all sub folders into one folder contaning files.============================\\
+//====================--Flatten (denest) all sub folders into one folder contaning files.============================\\
 
 find ./ -mindepth 1 -type f -exec mv -t ./ --backup=t '{}' +
 
@@ -92,35 +92,35 @@ curl -s https://api.github.com/users/sokra/repos | grep \"clone_url\" | awk '{pr
 
 //==============================Make on a timer============================\\
 
- while sleep 25; do make; done
+while sleep 25; do make; done
 
- while sleep 25; do git add . && git commit -m "update good" && git push -u origin master ; done
+while sleep 25; do git add . && git commit -m "update good" && git push -u origin master ; done
 
 while sleep 25; do git push ; done
 
- while sleep 25; do prettier --write .; done
+while sleep 25; do prettier --write .; done
 
- while sleep 25; do black .; done
+while sleep 25; do black .; done
 
- while sleep 25; do find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +; done
+while sleep 25; do find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +; done
 
- while sleep 205; do find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +; done
+while sleep 205; do find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +; done
 
 //=====================================================\\
 
-git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/\_index.html' HEAD
 
 //==============================-COMBINE ALL FILES OF A CERTAIN TYPE============================\\
 
-for f in *.md; do cat "${f}"; echo; done > ./../Combined_____-_____Doc.md
+for f in \*.md; do cat "${f}"; echo; done > ./../Combined**\_**-**\_**Doc.md
 
-for f in *.js; do cat "${f}"; echo; done > Combined_____-_____Doc.md
+for f in \*.js; do cat "${f}"; echo; done > Combined**\_**-**\_**Doc.md
 
-for f in *.js; do cat "${f}"; echo; done > ./../Combined_____-_____Doc.md
+for f in \*.js; do cat "${f}"; echo; done > ./../Combined**\_**-**\_**Doc.md
 
-for f in *.jsx; do cat "${f}"; echo; done > Combined_____-_____Doc.md
+for f in \*.jsx; do cat "${f}"; echo; done > Combined**\_**-**\_**Doc.md
 
-for f in *.py; do cat "${f}"; echo; done > Combined_____-_____Doc.md
+for f in \*.py; do cat "${f}"; echo; done > Combined**\_**-**\_**Doc.md
 
 //====================================WGET DOWNLOAD WEBSITE---======================\\
 
@@ -136,41 +136,41 @@ wget -r -A.pdf <https://ocw.mit.edu/courses/electrical-engineering-and-computer-
 
 //===============================Make file extensions lowercase==================================\\
 
-find . -name '*.*' -exec sh -c '
-  a=$(echo "$0" | sed -r "s/([^.]*)\$/\L\1/");
+find . -name '_._' -exec sh -c '
+a=$(echo "$0" | sed -r "s/([^.]*)\$/\L\1/");
   [ "$a" != "$0" ] && mv "$0" "$a" ' {} \;
 
 //=========================================\\
 
-sudo sed -i '/authors/d' ./*.md
+sudo sed -i '/authors/d' ./\*.md
 
-find . -type f -exec sed -i '/authors/d' ./*. {} \;
+find . -type f -exec sed -i '/authors/d' ./\*. {} \;
 
 //====================--Delete files with certain string in name=================================\\
 
-find -type f -name '*text*' -delete
+find -type f -name '_text_' -delete
 
-find -type d -name '*Learning-Path*' -delete
+find -type d -name '_Learning-Path_' -delete
 
 //==============================-ZIP
 
-Install node modules recursevly (  npm i -g recursive-install  ):
+Install node modules recursevly ( npm i -g recursive-install ):
 
 npm-recursive-install
 
 //==============================--PANDOC=======================\\
 
-find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
+find ./ -iname "\*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
-find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
+find ./ -iname "\*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
 
-find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
+find ./ -iname "\*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
 
-find . -name '*.rst' -exec pandoc {} -f rst -t markdown -o {}.md \;
+find . -name '\*.rst' -exec pandoc {} -f rst -t markdown -o {}.md \;
 
-find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.pdf"' {} \;
+find ./ -iname "\*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.pdf"' {} \;
 
-for /R %a in (*.htm*) do pandoc "%a" -f html -t latex -s -o "%~pa%~na.pdf"
+for /R %a in (_.htm_) do pandoc "%a" -f html -t latex -s -o "%~pa%~na.pdf"
 
 find . -name 'sitemap.html' -type f -prune -exec rm -rf '{}' +
 
@@ -228,7 +228,7 @@ sed '/^.\{1000\}./d' bookmarks.md > bookmarks-short.md
 
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
-find . -name '*.html' -type d -prune -exec rm -rf '{}' +
+find . -name '\*.html' -type d -prune -exec rm -rf '{}' +
 
 find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
 
@@ -242,25 +242,25 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 //===============================-delete files contaning certain numbers======-caution-dangerous============================\\
 
-find . -name '*.zip' -type f -prune -exec rm --*[12345]*'{}' +
-find . -name '*.png' -type f -prune -exec rm -- *[123456789]* '{}' +
+find . -name '_.zip' -type f -prune -exec rm --_[12345]_'{}' +
+find . -name '_.png' -type f -prune -exec rm -- _[123456789]_ '{}' +
 
-find . -name '*.png' -type f -prune -exec rm --*[45]* '{}' +
+find . -name '_.png' -type f -prune -exec rm --_[45]\* '{}' +
 
 //====================================Delete files smaller thatn 2k=================================\\
 
-find . -name "*.js" -type 'f' -size -2k -delete
+find . -name "\*.js" -type 'f' -size -2k -delete
 
-find . -name "*.py" -type 'f' -size -2k -delete
+find . -name "\*.py" -type 'f' -size -2k -delete
 
-find . -name "*.md" -type 'f' -size -2k -delete
+find . -name "\*.md" -type 'f' -size -2k -delete
 
-find . -name "*.html" -type 'f' -size -2k -delete
+find . -name "\*.html" -type 'f' -size -2k -delete
 
 //====================================Remove Spaces In File/Folder Names=================================\\
 
-find . -name "**" -type d | rename 's/ /_/g'
-find . -name "* *" -type f | rename 's/ /_/g'
+find . -name "\*_" -type d | rename 's/ /\_/g'
+find . -name "_ \*" -type f | rename 's/ /\_/g'
 
 # !/bin/bash
 
@@ -272,36 +272,36 @@ for f in $(find $dir * -type f) ; do
   mv "$f" "`echo $f | sed 's/^[0-9]*\W*//'`";
 done
 
-find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
+find $dir -type f | sed 's|\(._/\)[^a-z]_\([A-Z].\*\)|mv \"&\" \"\1\2\"|' | sh
 
-find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
+find $dir -type d | sed 's|\(._/\)[^a-z]_\([A-Z].\*\)|mv \"&\" \"\1\2\"|' | sh
 
-for i in *.html; do mv "$i" "${i%-*}.html"; done
+for i in _.html; do mv "$i" "${i%-_}.html"; done
 
-for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
+for i in _._; do mv "$i" "${i%-_}.${i##_.}"; done
 
 //==============================Find and replace file names========================\\
 
-find . -name "**" -type f | rename 's/sitemap/index/g'
+find . -name "\*\*" -type f | rename 's/sitemap/index/g'
 
 //===============================--Truncate folder names down to 12 char===========================\\
 
-for d in ./*; do mv $d ${d:0:12}; done
+for d in ./\*; do mv $d ${d:0:12}; done
 
 //==============================Remove double extensions :===========================\\
 
 # !/bin/bash
 
-for file in *.html.html
+for file in \*.html.html
 do
-    mv "${file}" "${file%.html}"
+mv "${file}" "${file%.html}"
 done
 
 # !/bin/ksh
 
 for i in '.'
 do
-   echo mv "${i}" "${i##????}"
+echo mv "${i}" "${i##????}"
 done
 
 //==============================FIND AND REPLACE IN STRING/FOLDER NAMES============================\\
@@ -333,28 +333,28 @@ find . -type d -exec rename 's/-main//g' {} +
 
 find . -type f -exec rename 's/\.js/\.jsx/g' {} +
 
-rename 's/\.js\.download$/.js/' *.js\.download
+rename 's/\.js\.download$/.js/' \*.js\.download
 
-rename 's/\.html\.markdown$/.md/' *.html\.markdown
+rename 's/\.html\.markdown$/.md/' \*.html\.markdown
 
 find . -type d -exec rename 's/es6//g' {} +
 
-for d in *.; do
-    tmp=`echo $f | sed -r 's//^(.{5}).*(\..*)$/$1$2/'`
+for d in _.; do
+tmp=`echo $f | sed -r 's//^(.{5})._(\..\*)$/$1$2/'`
     mv -b ./"$f" ./"$tmp"
 done
 
 rawFileName=$(basename "$1")
-filename="${rawFileName%.*}"
-ext="${rawFileName##*.}"
+filename="${rawFileName%._}"
+ext="${rawFileName##_.}"
 
-if [[ ${#filename} < 9 ]]; then
-    echo ${filename:0:8}.${ext}
+if [[${#filename} < 9]]; then
+echo ${filename:0:8}.${ext}
 else
-    echo $1
+echo $1
 fi
 
-rename 's/^(.{10}).*/$1/'*
+rename 's/^(.{10})._/$1/'_
 
 //============================================\\
 
@@ -362,50 +362,50 @@ Remove double extensions :
 
 # !/bin/bash
 
-for file in *.html.html
+for file in \*.html.html
 do
-    mv "${file}" "${file%.html}"
+mv "${file}" "${file%.html}"
 done
 
 # !/bin/bash
 
-for file in *.html.png
+for file in \*.html.png
 do
-    mv "${file}" "${file%.png}"
+mv "${file}" "${file%.png}"
 done
 
-for file in *.jpg.jpg
+for file in \*.jpg.jpg
 do
-    mv "${file}" "${file%.png}"
-done
-
-# !/bin/bash
-
-for file in *.md.md
-do
-    mv "${file}" "${file%.md}"
+mv "${file}" "${file%.png}"
 done
 
 # !/bin/bash
 
-for file in *.html.png
+for file in \*.md.md
 do
-    mv "${file}" "${file%.png}"
-done
-
-for file in *.jpg.jpg
-do
-    mv "${file}" "${file%.png}"
+mv "${file}" "${file%.md}"
 done
 
 # !/bin/bash
 
-for file in *.md.md
+for file in \*.html.png
 do
-    mv "${file}" "${file%.md}"
+mv "${file}" "${file%.png}"
 done
 
-find . -type f -exec  ' {} +
+for file in \*.jpg.jpg
+do
+mv "${file}" "${file%.png}"
+done
+
+# !/bin/bash
+
+for file in \*.md.md
+do
+mv "${file}" "${file%.md}"
+done
+
+find . -type f -exec ' {} +
 
 # !/bin/bash
 
@@ -413,17 +413,17 @@ num=1
 length=16
 for file in '.'
 do
-    newname=$file
+newname=$file
     until [[ ! -f $newname ]]
     do
         (( sublen = length - ${#num} ))
         printf -v newname '%.*s%d' "$sublen" "$file" "$num"
-        (( num++ ))
-    done
-    mv "$file" "$newname"
+(( num++ ))
+done
+mv "$file" "$newname"
 done
 
-sed 's/\/.*\/.*\/.*\/\(.*\)/~\/\1/g' *
+sed 's/\/._\/._\/._\/\(._\)/~\/\1/g' \*
 
 //=====================================================\\
 
@@ -435,7 +435,7 @@ while sleep 120; do git init && git add . && git commit -m "update" && git push 
 
 OR:
 
- while sleep 25; do make; done
+while sleep 25; do make; done
 
 //=====================================================\\
 
@@ -497,95 +497,95 @@ CLONE ALL:
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={users}; NAME={NHQ}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={users}; NAME={NHQ}; PAGE=2
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={users}; NAME={NHQ}; PAGE=3
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={w3c}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={Archive-42}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={octokit}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={FreeCodeCamp-Solutions}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={netlify-templates}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={circlecell}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={orgs}; NAME={circlecell}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 CNTX={users}; NAME={decagondev}; PAGE=1
 curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
+grep -e 'git_url\*' |
+cut -d \" -f 4 |
+xargs -L1 git clone
 
 //=================================================\\
 
-tree -d -I  'node_modules'
+tree -d -I 'node_modules'
 
-tree  -I  'node_modules'
+tree -I 'node_modules'
 
-tree -f  -I  'node_modules' >TREE.md
+tree -f -I 'node_modules' >TREE.md
 
-tree -f -L 2  >README.md
+tree -f -L 2 >README.md
 
-tree -f   -L 3  -I 'node_modules' >listing-path.md
+tree -f -L 3 -I 'node_modules' >listing-path.md
 
-tree -f  -I  'node_modules' -d >TREE.md
+tree -f -I 'node_modules' -d >TREE.md
 
 tree -f >README.md
 
@@ -594,18 +594,18 @@ tree -f ~/
 
 //=====================================================\\
 
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+find . -name \*right.html -type f -exec sed -i 's/target="\_parent"//g' {} +
 
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+find . -name \*right.html -type f -exec sed -i 's/target="\_parent"//g' {} +
 
 //=================================================\\
 
 sudo npm i prettier -g
 
 prettier --write .
-prettier --write \"./**/*.{js,jsx,py,md,html,css}\"
+prettier --write \"./\*_/_.{js,jsx,py,md,html,css}\"
 
-"pretty": "prettier --write \"./**/*.{js,jsx,py,md,html,css}\""
+"pretty": "prettier --write \"./\*_/_.{js,jsx,py,md,html,css}\""
 
 Format Python:
 
@@ -613,13 +613,13 @@ black .
 
 //==============================Remove lines contaning string:=============================\\
 
-sudo sed -i '/desktop-assets/d' ./*.md
+sudo sed -i '/desktop-assets/d' ./\*.md
 
-sudo sed -i '/githubusercontent/d' ./*sandbox.md
+sudo sed -i '/githubusercontent/d' ./\*sandbox.md
 
-sudo sed -i '/tip-tldrt/d' ./*scrap2.md
+sudo sed -i '/tip-tldrt/d' ./\*scrap2.md
 
-sudo sed -i '/github\.com/d' ./*out.md
+sudo sed -i '/github\.com/d' ./\*out.md
 
 sudo sed -i '/New folder/d' ./bookmarks.md
 
@@ -686,15 +686,15 @@ npm i lebab -g
 
 safe:
 
- lebab --replace ./ --transform arrow
- lebab --replace ./ --transform arrow-return
- lebab --replace ./ --transform for-of
- lebab --replace ./ --transform for-each
- lebab --replace ./ --transform arg-rest
- lebab --replace ./ --transform arg-spread
- lebab --replace ./ --transform obj-method
- lebab --replace ./ --transform obj-shorthand
- lebab --replace ./ --transform multi-var
+lebab --replace ./ --transform arrow
+lebab --replace ./ --transform arrow-return
+lebab --replace ./ --transform for-of
+lebab --replace ./ --transform for-each
+lebab --replace ./ --transform arg-rest
+lebab --replace ./ --transform arg-spread
+lebab --replace ./ --transform obj-method
+lebab --replace ./ --transform obj-shorthand
+lebab --replace ./ --transform multi-var
 
 ALL:
 
@@ -711,7 +711,7 @@ lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param
+lebab --replace ./ --transform destruct-param
 lebab --replace ./ --transform includes
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -725,20 +725,20 @@ lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param
+lebab --replace ./ --transform destruct-param
 lebab --replace ./ --transform includes
 
 //==============================--Trouble Shooting=======================\\
 
 input/Output error
 
- wsl.exe --shutdown
+wsl.exe --shutdown
 
- Get-Service LxssManager | Restart-Service
+Get-Service LxssManager | Restart-Service
 
 //==========================--When you only clone .git folder============================\\
 
- git restore --source=HEAD :/
+git restore --source=HEAD :/
 
 //=================================================\\
 
@@ -768,39 +768,40 @@ ln -s "$(pwd)" ~/Downloads
 //===========================================\\
 
 return to bash from zsh
- sudo apt --purge remove zsh
+sudo apt --purge remove zsh
 
 //==========================Unzip PowerShell UNZIP:
 PARAM (
-    [string] $ZipFilesPath = "./",
-    [string] $UnzipPath = "./RESULT"
+[string] $ZipFilesPath = "./",
+[string] $UnzipPath = "./RESULT"
 )
 
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
 
-$ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
+$ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include \*.ZIP
 
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
-    Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
-    $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
+    Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) \* 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
+$ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
+
 }
 
-cat w07_data-structures-and-algorithms.md* | codedown javascript > code.js
+cat w07_data-structures-and-algorithms.md\* | codedown javascript > code.js
 
 cat js-snippets.md*| codedown js > code.js
 cat interview Questions.md* | codedown javascript > code.js
-cat README.md* | codedown js > code.js
+cat README.md\* | codedown js > code.js
 
-cat w08_getting-to-know-the-network.html* | codedown javascript > code.js
+cat w08_getting-to-know-the-network.html\* | codedown javascript > code.js
 
-cat *.html | codedown javascript > code.js
+cat \*.html | codedown javascript > code.js
 
-cat *.markdown | codedown javascript > code.js
+cat \*.markdown | codedown javascript > code.js
 
 //===============================auto generate readme============================\\
 
@@ -812,7 +813,7 @@ npx @appnest/readme generate
 
 npm i -g mdt-docs-generator
 
-RENAME README.md     ===> README_RAW.md
+RENAME README.md ===> README_RAW.md
 
 mdt-docs
 
@@ -826,7 +827,7 @@ mediumexporter <https://medium.com/codex/fundamental-data-structures-in-javascri
 
 find . -size +386b -a -size -390b -exec rm -f {} \;
 
-find . -size +2000b  -exec rm -f {} \;
+find . -size +2000b -exec rm -f {} \;
 
 //=================================================\\
 
@@ -848,7 +849,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 //=====================================================\\
 
-INSTEAD OF GIT PUSH _F :git reset --hard upstream/master
+INSTEAD OF GIT PUSH \_F :git reset --hard upstream/master
 
 4895
 
@@ -857,21 +858,21 @@ To display the current branch you're on, without the other branches listed, you 
 git rev-parse --abbrev-ref HEAD
 
 TRIM ALL(USE WITH CAUTION):
-find . -depth -exec rmdir {} \;  
+find . -depth -exec rmdir {} \;
 find . -empty -type f -print -delete
 find . -empty -type d -print -delete
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
 //=====================================================\\
 
 Replace spaces in filenames with underscores
 
- for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+for file in \*; do mv "$file" `echo $file | tr ' ' '_'` ; done
 
 //=====================================================\\
 
@@ -885,7 +886,7 @@ git rm --cached 2-content/awesome-resources/Cumulative-Resource-List-master
 
 //=====================================================\\
 
-wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla  <https://bryan-guner.gitbook.io/python/>
+wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla <https://bryan-guner.gitbook.io/python/>
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla <https://www.notion.so/webdevhub42/72b1342736094af4bd0992bad4dd2267?v=7f80269e29ee4a79a8227187cbf69c39>
 
@@ -897,28 +898,28 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla <https://blog.archive.org/developers/>
 
-find . -name "*right.md" -type f -print -delete
+find . -name "\*right.md" -type f -print -delete
 
-find . -name "*right.html" -type f -print -delete
+find . -name "\*right.html" -type f -print -delete
 
-find . -name "*left.html" -type f -print -delete
+find . -name "\*left.html" -type f -print -delete
 
-find . -name "*analytics.js" -type f -print -delete
+find . -name "\*analytics.js" -type f -print -delete
 
-find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
+find . -name "\*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
-find . -name "*desktop.ini" -type f -print -delete
+find . -name "\*desktop.ini" -type f -print -delete
 
-find . -name "*.zip" -type f -print -delete
+find . -name "\*.zip" -type f -print -delete
 
-find ./ -type f -name *.tar.gz -exec tar -xf {} \;
+find ./ -type f -name \*.tar.gz -exec tar -xf {} \;
 
 git remote remove origin
 
-find . -name "*.gz" -type f -print -delete
+find . -name "\*.gz" -type f -print -delete
 dac9ba0
 
-find . -name "*.tgz" -type f -print -delete
+find . -name "\*.tgz" -type f -print -delete
 
 //=================================================\\
 
@@ -957,9 +958,8 @@ echo "Commits to push: $n"
 
 # push each batch
 
-for i in $(seq $n -$BATCH_SIZE 1); do
-    # get the hash of the commit to push
-    h=$(git log --first-parent --reverse --format=format:%H --skip $i -n1)
+for i in $(seq $n -$BATCH_SIZE 1); do # get the hash of the commit to push
+h=$(git log --first-parent --reverse --format=format:%H --skip $i -n1)
     echo "Pushing $h..."
     git push $REMOTE $h:refs/heads/$BRANCH --force
 done
@@ -971,6 +971,7 @@ git push $REMOTE HEAD:refs/heads/$BRANCH
 //=================================================\\
 
 PRISM:
+
 <script async defer src="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/misc/web-dev-utils/personal-utilities/prism/prism.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/prism.css">
 
@@ -984,7 +985,7 @@ Get-ChildItem $folderPath -recurse | %{
 
     if($_.Name -match "^*.`.zip$")
     {
-        $parent="$(Split-Path $_.FullName -Parent)";    
+        $parent="$(Split-Path $_.FullName -Parent)";
         write-host "Extracting $($_.FullName) to $parent"
 
         $arguments=@("e", "`"$($_.FullName)`"", "-o`"$($parent)`"");
@@ -996,97 +997,98 @@ Get-ChildItem $folderPath -recurse | %{
             rmdir -Path $_.FullName -Force
         }
     }
+
 }
 
 //=================================================\\
 
 //===============================--Concat all files of same type recursively============================\\
 
-find /path/to/directory/ -name *.csv -exec cat {} + > merged.file
+find /path/to/directory/ -name \*.csv -exec cat {} + > merged.file
 
-find './' -name *.html -print0 | xargs -0 -I file cat file > merged.file.html
+find './' -name \*.html -print0 | xargs -0 -I file cat file > merged.file.html
 
-find './' -name *.py -print0 | xargs -0 -I file cat file > merged.file.md
+find './' -name \*.py -print0 | xargs -0 -I file cat file > merged.file.md
 
-find './' -name *.md -print0 | xargs -0 -I file cat file > merged.file.md
+find './' -name \*.md -print0 | xargs -0 -I file cat file > merged.file.md
 
-pandoc *.md > final.md
+pandoc \*.md > final.md
 
-pandoc *.py > final.md
+pandoc \*.py > final.md
 
-find . -name *.html -exec cat {} + > merged.file.html
+find . -name \*.html -exec cat {} + > merged.file.html
 
-find . -name *.md -exec cat {} + > merged.file.md
+find . -name \*.md -exec cat {} + > merged.file.md
 
-find . -name *.md -exec cat {} + > merged.file.md
+find . -name \*.md -exec cat {} + > merged.file.md
 
-find . -name *.html -exec cat {} + > merged.file.html
+find . -name \*.html -exec cat {} + > merged.file.html
 
-for f in *.html; do cat "${f}"; echo; done > output.html
+for f in \*.html; do cat "${f}"; echo; done > output.html
 
-for f in *.py; do cat "${f}"; echo; done > output.md
+for f in \*.py; do cat "${f}"; echo; done > output.md
 
-for f in *.md; do cat "${f}"; echo; done > output.md
+for f in \*.md; do cat "${f}"; echo; done > output.md
 
-for f in *.js; do cat "${f}"; echo; done > output.js
+for f in \*.js; do cat "${f}"; echo; done > output.js
 
 //============================================\\
 
-find . -type f -exec  sed -i '/Mirrored from/d' ./*.html {} \;
+find . -type f -exec sed -i '/Mirrored from/d' ./\*.html {} \;
 
-find . -type f -exec  sed -i '/Created by HTTrack/d' ./*.html {} \;
+find . -type f -exec sed -i '/Created by HTTrack/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/#/' ./*quandstack.py {} \;
+find . -type f -exec sed -i '/#/' ./\*quandstack.py {} \;
 
-find . -type f -exec sed -i '/Created on/d' ./*.py {} \;
+find . -type f -exec sed -i '/Created on/d' ./\*.py {} \;
 
 find . -type f -exec sed -i '/path/d' ./scrap.md {} \;
 
-sudo sed -i '/description/d' *.html
+sudo sed -i '/description/d' \*.html
 
 sudo sed -i '/WEEK-/d' README.html
 
-sudo sed -i '/\/\/ Date   :/d' *.js
+sudo sed -i '/\/\/ Date :/d' \*.js
 
-find . -type f -exec sed -i '/Created by/d' ./*.html {} \;
+find . -type f -exec sed -i '/Created by/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/Mirrored from/d' ./*.md {} \;
+find . -type f -exec sed -i '/Mirrored from/d' ./\*.md {} \;
 
-find . -type f -exec sed -i '/image004/d' ./*.html {} \;
+find . -type f -exec sed -i '/image004/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/:::/d' ./*.md {} \;
+find . -type f -exec sed -i '/:::/d' ./\*.md {} \;
 
-find . -type f -exec sed -i '/authors/d' ./*. {} \;
+find . -type f -exec sed -i '/authors/d' ./\*. {} \;
 
-find . -type f -exec sed -i '/section:/d' ./*. {} \;
+find . -type f -exec sed -i '/section:/d' ./\*. {} \;
 
-find . -type f -exec sed -i '/ Created by <span class=\x27author\x27>/d' ./*.html {} \;
+find . -type f -exec sed -i '/ Created by <span class=\x27author\x27>/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/<p>Document generated by Confluence on/d' ./*.html {} \;
+find . -type f -exec sed -i '/<p>Document generated by Confluence on/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/<div id="footer-logo"><a href="http:\/\/www\.atlassian\.com\/">Atlassian<\/a><\/div>/d' ./*.html {} \;
+find . -type f -exec sed -i '/<div id="footer-logo"><a href="http:\/\/www\.atlassian\.com\/">Atlassian<\/a><\/div>/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/miguelgrinberg/d' ./*.html {} \;
+find . -type f -exec sed -i '/miguelgrinberg/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/Mirrored from/d' ./*.html {} \;
+find . -type f -exec sed -i '/Mirrored from/d' ./\*.html {} \;
 
-find . -type f -exec sed -i '/Author/d' ./*.html {} \;
+find . -type f -exec sed -i '/Author/d' ./\*.html {} \;
 
-find -type f -name '*\-fr*' -delete
-find -type f -name '*\-ja*' -delete
-find -type f -name '*\-es*' -delete
-find -type f -name '*\-de*' -delete
-find -type f -name '*\-ru*' -delete
-find -type f -name '*\-id*' -delete
-find -type f -name '*\-pt*' -delete
-find -type f -name '*\-zh*' -delete
-find -type f -name '*\-fr*' -delete
-find -type f -name '*\-fr*' -delete
-find -type f -name '*\-fr*' -delete
+find -type f -name '_\-fr_' -delete
+find -type f -name '_\-ja_' -delete
+find -type f -name '_\-es_' -delete
+find -type f -name '_\-de_' -delete
+find -type f -name '_\-ru_' -delete
+find -type f -name '_\-id_' -delete
+find -type f -name '_\-pt_' -delete
+find -type f -name '_\-zh_' -delete
+find -type f -name '_\-fr_' -delete
+find -type f -name '_\-fr_' -delete
+find -type f -name '_\-fr_' -delete
 
 find . -type f -exec sed -i '/class="column-list"/d' ./index.html {} \;
 
-find . -type f -exec sed -i '/Added by HTTrack/d' ./*.html {} \;
+find . -type f -exec sed -i '/Added by HTTrack/d' ./\*.html {} \;
 
 //=====================Git Workflow=========================\\
 
@@ -1108,7 +1110,7 @@ wget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-
 
 wget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --adjust-extension -O -e robots=off <https://web.dev>
 
-find . -name "*.xml" -type f -print
+find . -name "\*.xml" -type f -print
 
 s
 find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
@@ -1174,26 +1176,26 @@ find . -type f -exec mv '{}' '{}'.jpg \;
 find . -type f -exec mv '{}' '{}'.html \;
 find . -type f -exec mv '{}' '{}'.md \;
 
-for f in * ; do
-  mv "$f" "$f.md"
+for f in \* ; do
+mv "$f" "$f.md"
 done
 
 //================delete lines contaning specific string:=================================\\
 
-find . -type f -a \( -name "*.html" -o -name "*.js" -o -name "*.css" -o -name "*.md" -o -name "*.php" \) -a -exec sed -i  '/MIT/d' '{}' +
+find . -type f -a \( -name "_.html" -o -name "_.js" -o -name "_.css" -o -name "_.md" -o -name "\*.php" \) -a -exec sed -i '/MIT/d' '{}' +
 
-find . -type f  -a -exec sed -i  '/author/d' '{}' +
+find . -type f -a -exec sed -i '/author/d' '{}' +
 
-find . -type f  -a -exec sed -i  '/login/d' '{}' +
+find . -type f -a -exec sed -i '/login/d' '{}' +
 
-find . -type f -a \( -name "*.html"  -o -name "*.md" \) -a -exec sed -i  '/[Source]/d' '{}' +
+find . -type f -a \( -name "_.html" -o -name "_.md" \) -a -exec sed -i '/[Source]/d' '{}' +
 
 //=================================================\\
 
-sudo sed -i '/Author/d' ./*.html
+sudo sed -i '/Author/d' ./_.html
 Remove lines of file contaning a string
-sudo sed -i '/Mirrored from/d' ./*.html
-sudo sed -i '/This is Squarespace/d' ./*.html
+sudo sed -i '/Mirrored from/d' ./_.html
+sudo sed -i '/This is Squarespace/d' ./\*.html
 sudo sed -i '/\.git/d' ./index.html
 sudo sed -i '/assets/d' ./index.html
 
@@ -1207,11 +1209,11 @@ find . -name "ds-stripped.js" -type f | xargs sed -i -e '/ \/\//d'
 find . -name "links.md" -type f | xargs sed -i -e '/\.html/!d'
 
 REMOVE ALL JS COMMENTS:
-find . -name "ds-stripped.js" -type f | xargs sed '/\/\*.*\*\// d; /\/\*/,/\*\// d'
+find . -name "ds-stripped.js" -type f | xargs sed '/\/\*.\*\*\// d; /\/\*/,/\*\// d'
 
-sed '/\/\*.*\*\// d; /\/\*/,/\*\// d'
+sed '/\/\*.\*\*\// d; /\/\*/,/\*\// d'
 
-find . -name "*" -type f | xargs sed -i -e '/desktop-assets/d'
+find . -name "\*" -type f | xargs sed -i -e '/desktop-assets/d'
 
 //=================================================\\
 
@@ -1228,23 +1230,23 @@ NF&&f{ print s"/"$0 }'>listing.md
 
 sed -n -e '/<script>/,/<\/script>/p' getting-there.html >out.js
 
-sed -n -e '/<script>/,/<\/script>/p' *.html >out.js
+sed -n -e '/<script>/,/<\/script>/p' \*.html >out.js
 
-find . -type f -exec sed -n -e '/<script>/,/<\/script>/p' *.html >out.js ./* {} \;
+find . -type f -exec sed -n -e '/<script>/,/<\/script>/p' _.html >out.js ./_ {} \;
 
-sed -n -e '/<script>/,/<\/script>/p' *.html >out.js
+sed -n -e '/<script>/,/<\/script>/p' \*.html >out.js
 
-sed -n -e '/<script>/,/<\/script>/p' *.html >out.js
+sed -n -e '/<script>/,/<\/script>/p' \*.html >out.js
 
-find . -type f -exec sed -n -e '/<code class="sourceCode javascript">/,/<\/code>/p' *.html >out.html ./* {} \;
+find . -type f -exec sed -n -e '/<code class="sourceCode javascript">/,/<\/code>/p' _.html >out.html ./_ {} \;
 
-find . -type f -exec sed -n -e '/```js/,/```/p' *.html >out.js ./* {} \;
+find . -type f -exec sed -n -e '/`js/,/`/p' _.html >out.js ./_ {} \;
 
 sed -i 's/<script>//g' out.js
 sed -i 's/<\/script>//g' out.js
 
-.*\./<script*
-(?<=<script)(.*)(?=<\/script>)
+._\./<script_
+(?<=<script)(.\*)(?=<\/script>)
 
 //=====================================================\\
 
@@ -1262,9 +1264,9 @@ find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +
 
 //=====================================================\\
 
-git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_Resource-Hub-Mark_II/azagent/vstsagent.tar.gz' HEAD
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/\_Resource-Hub-Mark_II/azagent/vstsagent.tar.gz' HEAD
 
-git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/\_index.html' HEAD
 
 //=================================================\\
 
@@ -1280,50 +1282,50 @@ Recursivley Create numbered folders:
 n=1;
 max=50;
 while [ "$n" -le "$max" ]; do
-  mkdir "s$n"
+mkdir "s$n"
   n=`expr "$n" + 1`;
 done
 
 //=================================================\\
 
 Command Line: Rename all files in current directory to a certain file extension:
-forfiles /S /M */C "cmd /c rename @file @fname.js"
-forfiles /S /M* /C "cmd /c rename @file @fname.html"
+forfiles /S /M _/C "cmd /c rename @file @fname.js"
+forfiles /S /M_ /C "cmd /c rename @file @fname.html"
 
-forfiles /S /M * /C "cmd /c rename @file @fname.md"
+forfiles /S /M \* /C "cmd /c rename @file @fname.md"
 
-forfiles /S /M * /C "cmd /c rename @file @fname.java"
+forfiles /S /M \* /C "cmd /c rename @file @fname.java"
 
 //=================================================\\
 
-The following command would rename all *.txt files to*.doc.
+The following command would rename all _.txt files to_.doc.
 
-$ rename 's/\.txt$/.doc/' *.txt
+$ rename 's/\.txt$/.doc/' \*.txt
 
-rename 's/\.txt$/.js/' *.txt
+rename 's/\.txt$/.js/' \*.txt
 
 $ rename 's/\.example$/.sql/' *.example
-rename 's/\.js\.download$/.js/'*.js\.download  
+rename 's/\.js\.download$/.js/'\*.js\.download
 
-find . -name "*.htm" -exec rename 's/\.htm$/.html/' '{}' +
+find . -name "\*.htm" -exec rename 's/\.htm$/.html/' '{}' +
 
-find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
+find . -name "\*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
-echo "</body></html>" | tee -a *.html
+echo "</body></html>" | tee -a \*.html
 
-rename 's/\.html\.tmp$/.html/' *.html\.tmp
+rename 's/\.html\.tmp$/.html/' \*.html\.tmp
 
 //=================================================\\
 
-find ./ -iname "*.md" -type f -exec sh -c 'pandoc  --standalone  "${0}" -o "${0%.md}.html"' {} \;
+find ./ -iname "\*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
 //===============================--From html >md below========================\\
 
 pandoc --wrap=none --from html --to markdown_strict
 
-find ./ -iname "*.html" -type f -exec sh -c 'pandoc "${0}" -o "${0%.html}.md"' {} \;
+find ./ -iname "\*.html" -type f -exec sh -c 'pandoc "${0}" -o "${0%.html}.md"' {} \;
 
-find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
+find ./ -iname "\*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
 
 //=====================================================\\
 
@@ -1345,7 +1347,7 @@ NF&&f{ print s"/"$0 }'
 
 //====================-for only html-files============================\\
 
-find ./ | grep -i "\.html*$"
+find ./ | grep -i "\.html\*$"
 
 //=====================================================\\
 
@@ -1353,25 +1355,25 @@ find ./ | grep -i "\.html*$"
 
 //=================================================\\
 
-forfiles /S /M *.File /C "cmd /c rename @file @fname.js"
+forfiles /S /M \*.File /C "cmd /c rename @file @fname.js"
 
 //=================================================\\
 
 Recreate folder structure with only specific file types
 
-find . -type f -name '*.md' | cpio -p -d -v './markdown-folder'
+find . -type f -name '\*.md' | cpio -p -d -v './markdown-folder'
 
-find . -type f -name '*.md' | cpio -p -d -v './../markdown-folder'
+find . -type f -name '\*.md' | cpio -p -d -v './../markdown-folder'
 
-find . -type f -name '*.md' | cpio -p -d -v './..'
+find . -type f -name '\*.md' | cpio -p -d -v './..'
 
-find . -type f -name '*.png' | cpio -p -d -v './_ext'
+find . -type f -name '\*.png' | cpio -p -d -v './\_ext'
 
-find . -name '*.README.md' | cpio -pdm './extension-readme'
+find . -name '\*.README.md' | cpio -pdm './extension-readme'
 
-find . -name '*.md' | cpio -pdm './../Markdown'
+find . -name '\*.md' | cpio -pdm './../Markdown'
 
-find . -name '*.git' | cpio -pdm './GIT-FOLDERS'
+find . -name '\*.git' | cpio -pdm './GIT-FOLDERS'
 
 //=====================================================\\
 
@@ -1379,8 +1381,8 @@ find . -name '*.git' | cpio -pdm './GIT-FOLDERS'
 
 //=================================================\\
 
-8.)  Command Prompt: code --list-extensions
-for /F "tokens=*" %A in (extensions.list) do code --install-extension %A
+8.) Command Prompt: code --list-extensions
+for /F "tokens=\*" %A in (extensions.list) do code --install-extension %A
 
 //=================================================\\
 
@@ -1392,7 +1394,7 @@ ln -s /mnt/c/0-a-A-October
 10.)
 sudo apt update
 sudo apt upgrade
-git config --global user.name  bryan
+git config --global user.name bryan
 git config --global user.email bryan.guner@gmail.com
 sudo apt update
 sudo apt install build-essential
@@ -1431,110 +1433,110 @@ sudo service postgresql restart
 //===========================================\\
 
 sed -e '/.git/ {
- $!N
- d
- }'index.html
+$!N
+d
+}'index.html
 
 wget \
-     --recursive \ # Download the whole site.
-     --page-requisites \ # Get all assets/elements (CSS/JS/images).
-     --adjust-extension \ # Save files with .html on the end.
-     --span-hosts \ # Include necessary assets from offsite as well.
-     --convert-links \ # Update links to still work in the static version.
-     --restrict-file-names=windows \ # Modify filenames to work in Windows as well.
-     --domains yoursite.com \ # Do not follow links outside this domain.
-     --no-parent \ # Don't follow links outside the directory you pass in.
- <https://bryan-guner.gitbook.io/python/>
+ --recursive \ # Download the whole site.
+--page-requisites \ # Get all assets/elements (CSS/JS/images).
+--adjust-extension \ # Save files with .html on the end.
+--span-hosts \ # Include necessary assets from offsite as well.
+--convert-links \ # Update links to still work in the static version.
+--restrict-file-names=windows \ # Modify filenames to work in Windows as well.
+--domains yoursite.com \ # Do not follow links outside this domain.
+--no-parent \ # Don't follow links outside the directory you pass in.
+<https://bryan-guner.gitbook.io/python/>
 
 wget \
-     --recursive \
-     --no-clobber \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains website.org \
-     --no-parent \
-      <https://soybean-tulip-em56.squarespace.com/config/pages>
+ --recursive \
+ --no-clobber \
+ --page-requisites \
+ --html-extension \
+ --convert-links \
+ --restrict-file-names=windows \
+ --domains website.org \
+ --no-parent \
+ <https://soybean-tulip-em56.squarespace.com/config/pages>
 
 wget \
-     --recursive \
-     --no-clobber \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains website.org \
-     --no-parent \
+ --recursive \
+ --no-clobber \
+ --page-requisites \
+ --html-extension \
+ --convert-links \
+ --restrict-file-names=windows \
+ --domains website.org \
+ --no-parent \
 <https://cheatography.com/davechild/cheat-sheets/regular-expressions/>
 <https://ankiweb.net/decks/>
 
 //====================================================\\
 
- cat * > ./merged-file.html
+cat \* > ./merged-file.html
 
-find . -type f -exec 'pandoc -s *.docx -t markdown -o example35.md' {} \;
+find . -type f -exec 'pandoc -s \*.docx -t markdown -o example35.md' {} \;
 
-pandoc -s *.docx -t markdown -o example35.md
+pandoc -s \*.docx -t markdown -o example35.md
 
-pandoc -s *.docx > output.md
+pandoc -s \*.docx > output.md
 
-pandoc -s *.py > output.md
+pandoc -s \*.py > output.md
 
 Copy file structure without the files:
 
-rsync -a -f"+ */" -f"-*" './'/ './structure/'/
-rsync -a -f"+ */" -f"-*" ./ ./../folder/
+rsync -a -f"+ _/" -f"-_" './'/ './structure/'/
+rsync -a -f"+ _/" -f"-_" ./ ./../folder/
 
-rsync -a -f"+ */" -f"-*" source/ destination/
+rsync -a -f"+ _/" -f"-_" source/ destination/
 
 //====================================================\\
 
 Remove Script tags and their content:
 
-find ./ -iname "*.html" -type f -exec sh -c 'sed "/<script/,/<\/script>/d"*.html' {} \; >testOut.html
+find ./ -iname "_.html" -type f -exec sh -c 'sed "/<script/,/<\/script>/d"_.html' {} \; >testOut.html
 
 //================================================\\
 
-cat *.html > node-mod-readme.html
+cat \*.html > node-mod-readme.html
 
 //================================================\\
 
 Powershell remove numbers and dashes from file names:
 
-Dir | Rename-Item –NewName { $*.name –replace " ","*" }
+Dir | Rename-Item –NewName { $_.name –replace " ","_" }
 
-Dir | Rename-Item –NewName { $_.name –replace "1","" }
+Dir | Rename-Item –NewName { $\_.name –replace "1","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "2","" }
+Dir | Rename-Item –NewName { $\_.name –replace "2","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "3","" }
+Dir | Rename-Item –NewName { $\_.name –replace "3","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "4","" }
+Dir | Rename-Item –NewName { $\_.name –replace "4","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "5","" }
+Dir | Rename-Item –NewName { $\_.name –replace "5","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "6","" }
+Dir | Rename-Item –NewName { $\_.name –replace "6","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "7","" }
+Dir | Rename-Item –NewName { $\_.name –replace "7","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "8","" }
+Dir | Rename-Item –NewName { $\_.name –replace "8","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "9","" }
+Dir | Rename-Item –NewName { $\_.name –replace "9","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "9","" }
+Dir | Rename-Item –NewName { $\_.name –replace "9","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "-","" }
+Dir | Rename-Item –NewName { $\_.name –replace "-","" }
 
-Dir | Rename-Item –NewName { $_.name –replace "0","" }
+Dir | Rename-Item –NewName { $\_.name –replace "0","" }
 
 //================================================\\
 
 # !/bin/sh
 
-# find ./ | grep -i "\.*$" >files
+# find ./ | grep -i "\.\*$" >files
 
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
+find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.\*$">files
 listing="files"
 
 out=""
@@ -1544,82 +1546,82 @@ out="basename $out.html"
 html="index.html"
 cmd() {
 
-  echo '  <!DOCTYPE html>'
-  echo '<html>'
-  echo '<head>'
+echo ' <!DOCTYPE html>'
+echo '<html>'
+echo '<head>'
 
-  echo '  <meta http-equiv="Content-Type" content="text/html">'
+echo ' <meta http-equiv="Content-Type" content="text/html">'
 
-  echo '  <meta name="Author" content="Bryan Guner">'
-  echo '<link rel="stylesheet" href="./assets/prism.css">'
-  echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+echo ' <meta name="Author" content="Bryan Guner">'
+echo '<link rel="stylesheet" href="./assets/prism.css">'
+echo ' <link rel="stylesheet" href="./assets/style.css">'
+echo ' <script async defer src="./assets/prism.js"></script>'
 
-  echo "  <title> directory </title>"
+echo " <title> directory </title>"
 
-  echo ""
-  echo '<style>'
+echo ""
+echo '<style>'
 
-echo '    a {'
-echo '      color: black;'
-echo '    }'
+echo ' a {'
+echo ' color: black;'
+echo ' }'
 echo ''
-echo '    li {'
-echo '      border: 1px solid black !important;'
-echo '      font-size: 20px;'
-echo '      letter-spacing: 0px;'
-echo '      font-weight: 700;'
-echo '      line-height: 16px;'
-echo '      text-decoration: none !important;'
-echo '      text-transform: uppercase;'
-echo '      background: #194ccdaf !important;'
-echo '      color: black !important;'
-echo '      border: none;'
-echo '      cursor: pointer;'
-echo '      justify-content: center;'
-echo '      padding: 30px 60px;'
-echo '      height: 48px;'
-echo '      text-align: center;'
-echo '      white-space: normal;'
-echo '      border-radius: 10px;'
-echo '      min-width: 45em;'
-echo '      padding: 1.2em 1em 0;'
-echo '      box-shadow: 0 0 5px;'
-echo '      margin: 1em;'
-echo '      display: grid;'
-echo '      -webkit-border-radius: 10px;'
-echo '      -moz-border-radius: 10px;'
-echo '      -ms-border-radius: 10px;'
-echo '      -o-border-radius: 10px;'
-echo '    }'
-echo '  </style>'
-  echo '</head>'
+echo ' li {'
+echo ' border: 1px solid black !important;'
+echo ' font-size: 20px;'
+echo ' letter-spacing: 0px;'
+echo ' font-weight: 700;'
+echo ' line-height: 16px;'
+echo ' text-decoration: none !important;'
+echo ' text-transform: uppercase;'
+echo ' background: #194ccdaf !important;'
+echo ' color: black !important;'
+echo ' border: none;'
+echo ' cursor: pointer;'
+echo ' justify-content: center;'
+echo ' padding: 30px 60px;'
+echo ' height: 48px;'
+echo ' text-align: center;'
+echo ' white-space: normal;'
+echo ' border-radius: 10px;'
+echo ' min-width: 45em;'
+echo ' padding: 1.2em 1em 0;'
+echo ' box-shadow: 0 0 5px;'
+echo ' margin: 1em;'
+echo ' display: grid;'
+echo ' -webkit-border-radius: 10px;'
+echo ' -moz-border-radius: 10px;'
+echo ' -ms-border-radius: 10px;'
+echo ' -o-border-radius: 10px;'
+echo ' }'
+echo ' </style>'
+echo '</head>'
 
-  echo '<body>'
+echo '<body>'
 
-  echo ""
+echo ""
 
 # continue with the HTML stuff
 
-  echo ""
+echo ""
 
-  echo ""
+echo ""
 
-  echo "<ul>"
+echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
 
 # awk '{print "<li>"}
 
 # {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
-  echo ""
+echo ""
 
-  echo "</ul>"
+echo "</ul>"
 
-  echo "</body>"
+echo "</body>"
 
-  echo "</html>"
+echo "</html>"
 
 }
 
@@ -1668,9 +1670,9 @@ sudo sed -i '/\.vue/d' ./index.html
 
 # !/bin/sh
 
-# find ./ | grep -i "\.*$" >files
+# find ./ | grep -i "\.\*$" >files
 
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
+find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.\*$">files
 listing="files"
 
 out=""
@@ -1680,82 +1682,82 @@ out="basename $out.html"
 html="sitemap.html"
 cmd() {
 
-  echo '  <!DOCTYPE html>'
-  echo '<html>'
-  echo '<head>'
+echo ' <!DOCTYPE html>'
+echo '<html>'
+echo '<head>'
 
-  echo '  <meta http-equiv="Content-Type" content="text/html">'
+echo ' <meta http-equiv="Content-Type" content="text/html">'
 
-  echo '  <meta name="Author" content="Bryan Guner">'
-  echo '<link rel="stylesheet" href="./assets/prism.css">'
-  echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+echo ' <meta name="Author" content="Bryan Guner">'
+echo '<link rel="stylesheet" href="./assets/prism.css">'
+echo ' <link rel="stylesheet" href="./assets/style.css">'
+echo ' <script async defer src="./assets/prism.js"></script>'
 
-  echo "  <title> directory </title>"
+echo " <title> directory </title>"
 
-  echo ""
-  echo '<style>'
+echo ""
+echo '<style>'
 
-echo '    a {'
-echo '      color: black;'
-echo '    }'
+echo ' a {'
+echo ' color: black;'
+echo ' }'
 echo ''
-echo '    li {'
-echo '      border: 1px solid black !important;'
-echo '      font-size: 20px;'
-echo '      letter-spacing: 0px;'
-echo '      font-weight: 700;'
-echo '      line-height: 16px;'
-echo '      text-decoration: none !important;'
-echo '      text-transform: uppercase;'
-echo '      background: #194ccdaf !important;'
-echo '      color: black !important;'
-echo '      border: none;'
-echo '      cursor: pointer;'
-echo '      justify-content: center;'
-echo '      padding: 30px 60px;'
-echo '      height: 48px;'
-echo '      text-align: center;'
-echo '      white-space: normal;'
-echo '      border-radius: 10px;'
-echo '      min-width: 45em;'
-echo '      padding: 1.2em 1em 0;'
-echo '      box-shadow: 0 0 5px;'
-echo '      margin: 1em;'
-echo '      display: grid;'
-echo '      -webkit-border-radius: 10px;'
-echo '      -moz-border-radius: 10px;'
-echo '      -ms-border-radius: 10px;'
-echo '      -o-border-radius: 10px;'
-echo '    }'
-echo '  </style>'
-  echo '</head>'
+echo ' li {'
+echo ' border: 1px solid black !important;'
+echo ' font-size: 20px;'
+echo ' letter-spacing: 0px;'
+echo ' font-weight: 700;'
+echo ' line-height: 16px;'
+echo ' text-decoration: none !important;'
+echo ' text-transform: uppercase;'
+echo ' background: #194ccdaf !important;'
+echo ' color: black !important;'
+echo ' border: none;'
+echo ' cursor: pointer;'
+echo ' justify-content: center;'
+echo ' padding: 30px 60px;'
+echo ' height: 48px;'
+echo ' text-align: center;'
+echo ' white-space: normal;'
+echo ' border-radius: 10px;'
+echo ' min-width: 45em;'
+echo ' padding: 1.2em 1em 0;'
+echo ' box-shadow: 0 0 5px;'
+echo ' margin: 1em;'
+echo ' display: grid;'
+echo ' -webkit-border-radius: 10px;'
+echo ' -moz-border-radius: 10px;'
+echo ' -ms-border-radius: 10px;'
+echo ' -o-border-radius: 10px;'
+echo ' }'
+echo ' </style>'
+echo '</head>'
 
-  echo '<body>'
+echo '<body>'
 
-  echo ""
+echo ""
 
 # continue with the HTML stuff
 
-  echo ""
+echo ""
 
-  echo ""
+echo ""
 
-  echo "<ul>"
+echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
 
 # awk '{print "<li>"}
 
 # {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
-  echo ""
+echo ""
 
-  echo "</ul>"
+echo "</ul>"
 
-  echo "</body>"
+echo "</body>"
 
-  echo "</html>"
+echo "</html>"
 
 }
 
@@ -1765,11 +1767,11 @@ cmd $listing --sort=extension >>$html
 
 function RecurseDirs ()
 {
-    oldIFS=$IFS
+oldIFS=$IFS
     IFS=$'\n'
-    for f in "$@"
-    do
-  
+for f in "$@"
+do
+
 # YOUR CODE HERE
 
         if [[ -d "${f}" ]]; then
@@ -1779,6 +1781,7 @@ function RecurseDirs ()
         fi
     done
     IFS=$oldIFS
+
 }
 RecurseDirs "./"
 
@@ -1790,8 +1793,8 @@ RecurseDirs "./"
 link="#insert url here#"
 # links were a set of strings with just the index of the video as the variable
 
-num=3  
-# first video was numbered 3 - weird.  
+num=3
+# first video was numbered 3 - weird.
 
 ext=".mp4"
 
@@ -1800,18 +1803,18 @@ do
       wget $link$num$ext -P ~/Downloads/
       num=$(($num+1))
 done
-  
+
 </code></pre>
 
 //=====================================================\\
 
 print a dummy text file in each folder
 
-for x in "./"/*/; do
-  (cd "$x"
-   files=(*)
-   printf '%s\n' "${files[@]}" > deleteme.txt
-  )
+for x in "./"/_/; do
+(cd "$x"
+files=(_)
+printf '%s\n' "${files[@]}" > deleteme.txt
+)
 done
 
 //====================================================\\
@@ -1822,16 +1825,16 @@ wget -r -A.pdf <https://overapi.com/git>
 
 wget -r -A.pdf <https://www.analog.com/en/education/education-library/scientist_engineers_guide.html#Foundations>
 
-wget -r -A.pdf  <https://norwex.biz/en_US/?gclid=EAIaIQobChMIgOLa0ILN8gIVmozICh2IyQpbEAAYASAAEgIIdvD_BwE>
+wget -r -A.pdf <https://norwex.biz/en_US/?gclid=EAIaIQobChMIgOLa0ILN8gIVmozICh2IyQpbEAAYASAAEgIIdvD_BwE>
 
 wget -r -A.html <https://bgoonz-blog-v3-0.netlify.app/>
 
 //================================================\\
 
-for file in *.
+for file in \*.
 do
 
-sudo sed -i '/Copyright/d' ./*.html
+sudo sed -i '/Copyright/d' ./\*.html
 
 done
 
@@ -1857,9 +1860,9 @@ sudo sed -i '/chrome-extension/d' bookmarks_12_28_21.md
 
 sudo sed -i '/raw_url/!d' gist.md
 
-sudo sed -i '/slug/d' ./Combined_____-_____Doc.md
+sudo sed -i '/slug/d' ./Combined**\_**-**\_**Doc.md
 
- sed -i '/starga/d' links.md
+sed -i '/starga/d' links.md
 
 sudo sed -i '/\.html/!d' files.md
 
@@ -1877,11 +1880,11 @@ sudo sed -i '/CODE-MIRROR/d' ./resources.html
 
 sudo sed -i '/!\[\](/d' ./lecture-notes.md
 
- sed -i '/githubuserconte/d' links.md
+sed -i '/githubuserconte/d' links.md
 
 sudo sed -i '/\.html/d' ./index.html
 
-sudo sed -i '/Exported from/d' ./*.html
+sudo sed -i '/Exported from/d' ./\*.html
 
 sudo sed -i '/src="data:image/d' ./everyonescodepens.html
 
@@ -1890,7 +1893,7 @@ sudo sed -i '/src="data:image/d' ./everyonescodepens.html
 # Reinstall all npm packages
 
 npm i npm-reinstall
- reinstall
+reinstall
 
 //=====================================================\\
 
@@ -1914,7 +1917,7 @@ style="width: 300px;position: relative;display: flex;margin:auto;"
     </svg></a>
 1865
 
-git pull -s recursive -X ours  <https://github.com/Web-Dev-Collaborative/archive-backup.git>
+git pull -s recursive -X ours <https://github.com/Web-Dev-Collaborative/archive-backup.git>
 git pull -s recursive -X ours <https://github.com/bgoonz/Lambda.git>
 git pull -s recursive -X theirs url
 
@@ -1934,9 +1937,10 @@ git reset --hard origin/main
 
 Add text to the first line of every file of a certain extension in a given folder.
 
-for f in *.js; do printf '%s\n' 0a '//====================================' . x | ex "$f"; done
+for f in \*.js; do printf '%s\n' 0a '//====================================' . x | ex "$f"; done
 
-for f in *.html; do printf '%s\n' 0a '<!DOCTYPE html>
+for f in \*.html; do printf '%s\n' 0a '<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1947,7 +1951,8 @@ for f in *.html; do printf '%s\n' 0a '<!DOCTYPE html>
 
 <https://raw.githubusercontent.com/bgoonz/styling-templates/master/bootstrap3/assets/css/bootstrap.min.css>
 
-for f in *.html; do printf '%s\n' 0a '<!DOCTYPE html>
+for f in \*.html; do printf '%s\n' 0a '<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1961,7 +1966,7 @@ echo "</body></html>" | tee -a*.html
 
 //===================================--How to add to end of file:==================================\\
 
-echo "</body></html>" | tee -a *.html
+echo "</body></html>" | tee -a \*.html
 
 //=====================================================\\
 
@@ -1969,7 +1974,7 @@ echo "</body></html>" | tee -a *.html
 
 Input Output error
 
-wsl.exe --shutdown          then         Get-Service LxssManager | Restart-Service
+wsl.exe --shutdown then Get-Service LxssManager | Restart-Service
 
 //=====================================================\\
 
@@ -1994,33 +1999,33 @@ find . -type f -exec rename 's/\~/\-/' {} \;
 
 I use this one-liner to remove invalid characters in subtitle files:
 
-for f in *.srt; do nf=$(echo "$f" |sed -e 's/[^A-Za-z0-9.-]/./g;s/\.\.\././g;s/\.\././g'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
-Only process*.srt files( *could be used in place of*.srt to process every file)
+for f in _.srt; do nf=$(echo "$f" |sed -e 's/[^a-za-z0-9.-]/./g;s/\.\.\././g;s/\.\././g'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
+Only process_.srt files( _could be used in place of_.srt to process every file)
 Removes all other characters except for letters A-Za-z, numbers 0-9, periods ".", and dash's "-"
 Removes possible double or triple periods
 Checks to see if the file name needs changing
 If true, it renames the file with the mv command, then outputs the changes it made with the echo command
 It works to normalize directory names of movies:
 
-for f in */; do nf=$(echo "$f" |sed -e 's/[^A-Za-z0-9.]/./g' -e 's/\.\.\././g' -e 's/\.\././g' -e 's/\.*$//'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
+for f in _/; do nf=$(echo "$f" |sed -e 's/[^a-za-z0-9.]/./g' -e 's/\.\.\././g' -e 's/\.\././g' -e 's/\._$//'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
 
-for f in */; do nf=$(echo "$f" |sed -e 's/[^A-Za-z0-9.-]/./g;s/\.\.\././g;s/\.\././g'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
+for f in \*/; do nf=$(echo "$f" |sed -e 's/[^a-za-z0-9.-]/./g;s/\.\.\././g;s/\.\././g'); test "$f" != "$nf" && mv "$f" "$nf" && echo "$nf"; done
 
 //=====================================================\\
 
 To remove any number of trailing spaces from file names you can use rename (prename) :
 
-rename  's/ *$//'*
+rename 's/ _$//'_
 
-find ./ -type f -exec rename  's/ *$//'*' {} \;
+find ./ -type f -exec rename 's/ _$//'_' {} \;
 
-find ./ -type d -exec rename  's/ *$//'* {} \;
+find ./ -type d -exec rename 's/ _$//'_ {} \;
 
 //=====================================================\\
 
 //===============================-Get tripple backtick code blocks----==================\\
 
-sed -n '/^```/,/^```/ p' < input.file
+sed -n '/^`/,/^`/ p' < input.file
 
 //====================================================\\
 
@@ -2035,11 +2040,11 @@ find . -name right.html -type f -exec cp rm -rf {} \;
 
 Recursivley remove folders by name.
 
-find . -type f -exec sed -i '/Mirrored from/d' ./* {} \;
+find . -type f -exec sed -i '/Mirrored from/d' ./\* {} \;
 
-find . -type f -exec sed -i '/Exported from /d' ./* {} \;
+find . -type f -exec sed -i '/Exported from /d' ./\* {} \;
 
-find . -type f -exec sed -i '/define/d' ./* {} \;
+find . -type f -exec sed -i '/define/d' ./\* {} \;
 
 //================================================\\
 
@@ -2048,19 +2053,19 @@ find . -type f -exec sed -i '/define/d' ./* {} \;
 set -e
 
 if [ $# -eq 0 ]; then
-    dir="."
+dir="."
 else
-    dir="$1"
+dir="$1"
 fi
 
 if [ ! -d "$dir" ]; then
-    echo "not a dir: $dir"
-    exit 1
+echo "not a dir: $dir"
+exit 1
 fi
 
 if [ ! -d "$dir/.git" ]; then
-    echo "not a git repo: $dir"
-    exit 1
+echo "not a git repo: $dir"
+exit 1
 fi
 
 cd "$dir"
@@ -2070,50 +2075,50 @@ files=$(find .git/refs -type f)
 for f in $files; do
     id=$(cat "$f")
     if ! git rev-parse --quiet "$id" \
-    >/dev/null 2>&1; then
-    continue
-    fi
-    if ! git rev-parse --quiet --verify "$id^{commit}" \
+ >/dev/null 2>&1; then
+continue
+fi
+if ! git rev-parse --quiet --verify "$id^{commit}" \
     >/dev/null 2>&1; then
     echo "Removing ref $f with missing commit $id"
     rm "$f"
-    fi
+fi
 done
 
 if [ ! -f .git/packed-refs ]; then
-    exit 0
+exit 0
 fi
 
 packfiles=$(cat .git/packed-refs \
-    | grep -v '#' \
-    | awk '{print $2}')
+ | grep -v '#' \
+ | awk '{print $2}')
 
 for f in $packfiles; do
     if ! git rev-parse --quiet --verify "$f" \
-    >/dev/null 2>&1; then
-    continue
-    fi
-    id=$(git rev-parse "$f")
-    if ! git rev-parse --quiet --verify "$id" \
+ >/dev/null 2>&1; then
+continue
+fi
+id=$(git rev-parse "$f")
+if ! git rev-parse --quiet --verify "$id" \
     >/dev/null 2>&1; then
     continue
     fi
     if ! git rev-parse --quiet --verify "$id^{commit}" \
-    >/dev/null 2>&1; then
-    echo "Removing packed ref $f with missing commit $id"
-    git update-ref -d $f
-    fi
+ >/dev/null 2>&1; then
+echo "Removing packed ref $f with missing commit $id"
+git update-ref -d $f
+fi
 done
 
-find . -name "**" -type f | rename 's/.png.html.png/.png/g'
+find . -name "\*\*" -type f | rename 's/.png.html.png/.png/g'
 
 //=========================Index of Iframes===========================\\
 
 # !/bin/sh
 
-# find ./ | grep -i "\.*$" >files
+# find ./ | grep -i "\.\*$" >files
 
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
+find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.\*$">files
 listing="files"
 
 out=""
@@ -2123,82 +2128,82 @@ out="basename $out.html"
 html="index.html"
 cmd() {
 
-  echo '  <!DOCTYPE html>'
-  echo '<html>'
-  echo '<head>'
+echo ' <!DOCTYPE html>'
+echo '<html>'
+echo '<head>'
 
-  echo '  <meta http-equiv="Content-Type" content="text/html">'
+echo ' <meta http-equiv="Content-Type" content="text/html">'
 
-  echo '  <meta name="Author" content="Bryan Guner">'
-  echo '<link rel="stylesheet" href="./assets/prism.css">'
-  echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+echo ' <meta name="Author" content="Bryan Guner">'
+echo '<link rel="stylesheet" href="./assets/prism.css">'
+echo ' <link rel="stylesheet" href="./assets/style.css">'
+echo ' <script async defer src="./assets/prism.js"></script>'
 
-  echo "  <title> directory </title>"
+echo " <title> directory </title>"
 
-  echo ""
-  echo '<style>'
+echo ""
+echo '<style>'
 
-echo '    a {'
-echo '      color: black;'
-echo '    }'
+echo ' a {'
+echo ' color: black;'
+echo ' }'
 echo ''
-echo '    li {'
-echo '      border: 1px solid black !important;'
-echo '      font-size: 20px;'
-echo '      letter-spacing: 0px;'
-echo '      font-weight: 700;'
-echo '      line-height: 16px;'
-echo '      text-decoration: none !important;'
-echo '      text-transform: uppercase;'
-echo '      background: #194ccdaf !important;'
-echo '      color: black !important;'
-echo '      border: none;'
-echo '      cursor: pointer;'
-echo '      justify-content: center;'
-echo '      padding: 30px 60px;'
-echo '      height: 48px;'
-echo '      text-align: center;'
-echo '      white-space: normal;'
-echo '      border-radius: 10px;'
-echo '      min-width: 45em;'
-echo '      padding: 1.2em 1em 0;'
-echo '      box-shadow: 0 0 5px;'
-echo '      margin: 1em;'
-echo '      display: grid;'
-echo '      -webkit-border-radius: 10px;'
-echo '      -moz-border-radius: 10px;'
-echo '      -ms-border-radius: 10px;'
-echo '      -o-border-radius: 10px;'
-echo '    }'
-echo '  </style>'
-  echo '</head>'
+echo ' li {'
+echo ' border: 1px solid black !important;'
+echo ' font-size: 20px;'
+echo ' letter-spacing: 0px;'
+echo ' font-weight: 700;'
+echo ' line-height: 16px;'
+echo ' text-decoration: none !important;'
+echo ' text-transform: uppercase;'
+echo ' background: #194ccdaf !important;'
+echo ' color: black !important;'
+echo ' border: none;'
+echo ' cursor: pointer;'
+echo ' justify-content: center;'
+echo ' padding: 30px 60px;'
+echo ' height: 48px;'
+echo ' text-align: center;'
+echo ' white-space: normal;'
+echo ' border-radius: 10px;'
+echo ' min-width: 45em;'
+echo ' padding: 1.2em 1em 0;'
+echo ' box-shadow: 0 0 5px;'
+echo ' margin: 1em;'
+echo ' display: grid;'
+echo ' -webkit-border-radius: 10px;'
+echo ' -moz-border-radius: 10px;'
+echo ' -ms-border-radius: 10px;'
+echo ' -o-border-radius: 10px;'
+echo ' }'
+echo ' </style>'
+echo '</head>'
 
-  echo '<body>'
+echo '<body>'
 
-  echo ""
+echo ""
 
 # continue with the HTML stuff
 
-  echo ""
+echo ""
 
-  echo ""
+echo ""
 
-  echo "<ul>"
+echo "<ul>"
 
-  awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
+awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
 
 # awk '{print "<li>"}
 
 # {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
-  echo ""
+echo ""
 
-  echo "</ul>"
+echo "</ul>"
 
-  echo "</body>"
+echo "</body>"
 
-  echo "</html>"
+echo "</html>"
 
 }
 
@@ -2210,14 +2215,14 @@ convert .ipynb to html
 
 function RecurseDirs ()
 {
-    oldIFS=$IFS
+oldIFS=$IFS
     IFS=$'\n'
-    for f in "$@"
-    do
-  
+for f in "$@"
+do
+
 # YOUR CODE HERE
 
-for f in *.md; do cat "${f}"; echo; done > ./../Combined_____-_____Doc.md
+for f in \*.md; do cat "${f}"; echo; done > ./../Combined**\_**-**\_**Doc.md
 
         if [[ -d "${f}" ]]; then
             cd "${f}"
@@ -2226,6 +2231,7 @@ for f in *.md; do cat "${f}"; echo; done > ./../Combined_____-_____Doc.md
         fi
     done
     IFS=$oldIFS
+
 }
 RecurseDirs "./"
 
@@ -2276,37 +2282,37 @@ git remote add origin <https://bgoonz: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@g
 
 //====================================--Produce Documentation=============================\\
 
-docky src/**/*.js \   --watch "src/components/**/*.js","./README.md" \   --ignore "src/components/**/index.js" \ ignored files  --use-readme=false
+docky src/**/\*.js \ --watch "src/components/**/\*.js","./README.md" \ --ignore "src/components/\*\*/index.js" \ ignored files --use-readme=false
 
 //=========================================\\
 
 # !/bin/bash
 
-files=(*.js)
+files=(\*.js)
 folder=1
 count=0
 
 if [ ! -d "folder$folder" ]; then
-   mkdir "folder$folder"
+mkdir "folder$folder"
 fi
 
 for i in "${files[@]}"
 do
    mv "$i" "folder$folder"
    let count=$count+1
-   if [ "$count" == "20000" ]; then
-      let count=0
-      let folder=$folder+1
+if [ "$count" == "20000" ]; then
+let count=0
+let folder=$folder+1
       if [ ! -d "folder$folder" ]; then
-        mkdir "folder$folder"
-      fi
-   fi
+mkdir "folder$folder"
+fi
+fi
 done
 
 for i in `seq -f '%03g' 1 200`; do
-    FOLDER=patient0$i
-    mkdir -p Leet/$FOLDER    # creates folder if missing
-    find . -regex ".*${i}$" -type f -exec mv -i {} leet/$FOLDER/ \; #
+FOLDER=patient0$i
+    mkdir -p Leet/$FOLDER # creates folder if missing
+find . -regex ".\*${i}$" -type f -exec mv -i {} leet/$FOLDER/ \; #
 done
 
 //================================================\\
@@ -2341,6 +2347,7 @@ The base URL is <https://cdn.jsdelivr.net/gh/{username}/{repo}/>, where you repl
 The base URL is <https://cdn.jsdelivr.net/gh/{username}/{repo}/>, where you replace {username} with the GitHub username and {repo} with the repository name for the project.
 Append that URL with the path to the file you want to access in the project. For example, for this repo: the style file is located in the root directory. You'd use this.
 html `
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/gitbook-style-full.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/code-highlight.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/table-of-contents.css">
