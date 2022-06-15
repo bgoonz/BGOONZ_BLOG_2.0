@@ -40,7 +40,7 @@
         "react-helmet": "5.2.1",
         "react-html-parser": "2.0.2",
         "react-script-tag": "1.1.2",
-        "rehype-react": "3.0.2",
+        "rehype-react": "3.0.3",
         "sprintf-js": "1.1.2",
         "tsutils": "^3.21.0",
         "typescript": "^4.7.3",
