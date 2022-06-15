@@ -13,6 +13,17 @@ body {
     overflow: scroll;
 }
 
+.github-corner {
+    z-index: 100000;
+    fill: 'black';
+    color: '#fff';
+    position: 'fixed';
+    top: '0px';
+    border: 1;
+    left: '0px';
+    transform: 'scale(-1.5, 1.5)';
+}
+
 a {
     color: $color-primary;
     text-decoration: underline;
