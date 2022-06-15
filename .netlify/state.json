@@ -1,0 +1,11 @@
+{
+	"siteId": "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
+	"oneGraphSessionId": "937b1344-1df2-48d0-8935-3e68ba16a9b2",
+	"oneGraphEnabledServices": [
+		"GITHUB",
+		"NPM",
+		"SALESFORCE",
+		"SPOTIFY",
+		"STRIPE"
+	]
+}
