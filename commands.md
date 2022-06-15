@@ -858,7 +858,7 @@ To display the current branch you're on, without the other branches listed, you 
 git rev-parse --abbrev-ref HEAD
 
 TRIM ALL(USE WITH CAUTION):
-find . -depth -exec rmdir {} \;  
+find . -depth -exec rmdir {} \;
 find . -empty -type f -print -delete
 find . -empty -type d -print -delete
 
@@ -1793,8 +1793,8 @@ RecurseDirs "./"
 link="#insert url here#"
 # links were a set of strings with just the index of the video as the variable
 
-num=3  
-# first video was numbered 3 - weird.  
+num=3
+# first video was numbered 3 - weird.
 
 ext=".mp4"
 
@@ -1803,7 +1803,7 @@ do
       wget $link$num$ext -P ~/Downloads/
       num=$(($num+1))
 done
-  
+
 </code></pre>
 
 //=====================================================\\
