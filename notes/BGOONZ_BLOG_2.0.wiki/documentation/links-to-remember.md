@@ -17,12 +17,15 @@
 -   [rotate pages](https://random-static-html-deploys.netlify.app/rotate.html)
 -   [More widgets](https://webdevhub-1.disqus.com/)
 ![validation-screenshot](https://i.imgur.com/Gnel8uY.png)
-<script async src="//jsfiddle.net/bgoonz/xdo0ygf2/embed/result/"></script>
+<script async src="//jsfiddle.net/bgoonz/xdo0ygf2/embed/result/">
+</script>
 
 -   [web archive feed](https://archive.org/services/collection-rss.php?collection=books&query=%28%28openlibrary_edition%3A%2A%20OR%20sponsor%3AGoogle%20OR%20collection%3Adigitallibraryindia%29%20AND%20mediatype%3Atexts%20AND%20-repub_state%3A%28%27-2%27%20OR%20%27-1%27%20OR%200%20OR%2010%20OR%2011%20OR%2012%20OR%2013%20OR%2018%29%29%20AND%20-mediatype%3Acollection)
 -   [Blog starter](https://github.com/Portfolio-Projects42/BLOG2.oStarter)
 
-<iframe src="https://trinket.io/embed/python/40e4c71864" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://trinket.io/embed/python/40e4c71864" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+<br>
 
 Search feature
 
@@ -31,7 +34,8 @@ Search feature
   Search Box</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js">
+</script>
 
 -   [http://plnkr.co/account/plunks](http://plnkr.co/account/plunks)
 -   [https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10](https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10)
@@ -42,7 +46,7 @@ Search feature
 -   [https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)
 -   [https://app.netlify.com/user/settings#profile](https://app.netlify.com/user/settings#profile)
 -   [https://aws.amazon.com/](https://aws.amazon.com/)
--   [https://azure.microsoft.com/en-in/](https://azure.microsoft.com/en-in/)
+-   [https://azure.microsoft.com/](https://azure.microsoft.com/)
 -   [https://babeljs.io/](https://babeljs.io/)
 -   [https://bg-portfolio.netlify.app/](https://bg-portfolio.netlify.app/)
 -   [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)

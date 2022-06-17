@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 
 ### Problem:
@@ -62,7 +63,8 @@ for (int i = 0; i < len; i++) {
 
 The result array can only be shorter. That is why we can build the array in-place with the new length.
 
-```javascript
+```js
+//
 /**
  * @param {number[]} nums
  * @return {number}

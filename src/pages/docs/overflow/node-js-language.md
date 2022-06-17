@@ -13,6 +13,7 @@ seo:
 template: docs
 ---
 
+
 If you work with JavaScript, or you've ever interacted with a JavaScript project, Node.js or a frontend project, you surely met the package.json file.
 
 What's that for? What should you know about it, and what are some of the cool things you can do with it?
@@ -33,27 +34,27 @@ It defines a name property, which tells the name of the app, or package, that's 
 
 Here's a much more complex example, which was extracted from a sample Vue.js application:
 
-there are *lots* of things going on here:
+there are _lots_ of things going on here:
 
--   version indicates the current version
+- version indicates the current version
+- 
+- name sets the application/package name
+- 
+- description is a brief description of the app/package
+- 
+- main set the entry point for the application
+- 
+- private if set to true prevents the app/package to be accidentally
+- 
+- scripts defines a set of node scripts you can run
 
--   name sets the application/package name
+- dependencies sets a list of npm packages installed as dependencies
 
--   description is a brief description of the app/package
+- devDependencies sets a list of npm packages installed as development dependencies
 
--   main set the entry point for the application
+- engines sets which versions of Node.js this package/app works on
 
--   private if set to true prevents the app/package to be accidentally published on npm
-
--   scripts defines a set of node scripts you can run
-
--   dependencies sets a list of npm packages installed as dependencies
-
--   devDependencies sets a list of npm packages installed as development dependencies
-
--   engines sets which versions of Node.js this package/app works on
-
--   browserslist is used to tell which browsers (and their versions) you want to support
+- browserslist is used to tell which browsers (and their versions) you want to support
 
 All those properties are used by either npm or other tools that we can use.
 
@@ -230,12 +231,12 @@ You can combine most of the versions in ranges, like this: 1.0.0 || >=1.1.0 <1.2
 # Cheat Sheet:
 
 ```js
+//
 
 /* *******************************************************************************************
  * SYNOPSIS
  * http://nodejs.org/api/synopsis.html
  * ******************************************************************************************* */
-
 
 var http = require('http');
 
@@ -248,12 +249,10 @@ http.createServer(function (request, response) {
 
 console.log('Server running at http://127.0.0.1:8124/');
 
-
 /* *******************************************************************************************
  * GLOBAL OBJECTS
  * http://nodejs.org/api/globals.html
  * ******************************************************************************************* */
-
 
 // In browsers, the top-level scope is the global scope.
 // That means that in browsers if you're in the global scope var something will define a global variable.
@@ -266,12 +265,10 @@ exports;     // A reference to the module.exports that is shorter to type.
 process;     // The process object is a global object and can be accessed from anywhere. It is an instance of EventEmitter.
 Buffer;      // The Buffer class is a global type for dealing with binary data directly.
 
-
 /* *******************************************************************************************
  * CONSOLE
  * http://nodejs.org/api/console.html
  * ******************************************************************************************* */
-
 
 console.log([data], [...]);             // Prints to stdout with newline.
 console.info([data], [...]);            // Same as console.log.
@@ -283,12 +280,10 @@ console.timeEnd(label);                 // Finish timer, record output.
 console.trace(label);                   // Print a stack trace to stderr of the current position.
 console.assert(expression, [message]);  // Same as assert.ok() where if the expression evaluates as false throw an AssertionError with message.
 
-
 /* *******************************************************************************************
  * TIMERS
  * http://nodejs.org/api/timers.html
  * ******************************************************************************************* */
-
 
 setTimeout(callback, delay, [arg], [...]);   // To schedule execution of a one-time callback after delay milliseconds. Optionally you can also pass arguments to the callback.
 clearTimeout(t);                             // Stop a timer that was previously created with setTimeout().
@@ -300,12 +295,10 @@ clearImmediate(immediateObject);             // Stop a timer that was previously
 unref();  // Allow you to create a timer that is active but if it is the only item left in the event loop, node won't keep the program running.
 ref();    // If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open.
 
-
 /* *******************************************************************************************
  * MODULES
  * http://nodejs.org/api/modules.html
  * ******************************************************************************************* */
-
 
 var module = require('./module.js');    // Loads the module module.js in the same directory.
 module.require('./another_module.js');  // load another_module as if require() was called from the module itself.
@@ -331,12 +324,10 @@ module.exports = function(width) {
   };
 }
 
-
 /* *******************************************************************************************
  * PROCESS
  * http://nodejs.org/api/process.html
  * ******************************************************************************************* */
-
 
 process.on('exit', function(code) {});              // Emitted when the process is about to exit
 process.on('uncaughtException', function(err) {});  // Emitted when an exception bubbles all the way back to the event loop. (should not be used)
@@ -378,12 +369,10 @@ process.umask([mask]);                // Sets or reads the process's file mode c
 process.uptime();                     // Number of seconds Node has been running.
 process.hrtime();                     // Returns the current high-resolution real time in a [seconds, nanoseconds] tuple Array.
 
-
 /* *******************************************************************************************
  * CHILD PROCESS
  * http://nodejs.org/api/child_process.html
  * ******************************************************************************************* */
-
 
 // Node provides a tri-directional popen facility through the child_process module.
 // It is possible to stream data through a child's stdin, stdout, and stderr in a fully non-blocking way.
@@ -403,12 +392,10 @@ child_process.exec(command, [options], callback);             // Runs a command 
 child_process.execFile(file, [args], [options], [callback]);  // Runs a command in a shell and buffers the output.
 child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in.
 
-
 /* *******************************************************************************************
  * UTIL
  * http://nodejs.org/api/util.html
  * ******************************************************************************************* */
-
 
 // These functions are in the module 'util'. Use require('util') to access them.
 
@@ -427,12 +414,10 @@ util.promisify(fn)             // Takes a function whose last argument is a call
 
 util.inherits(constructor, superConstructor);  // Inherit the prototype methods from one constructor into another.
 
-
 /* *******************************************************************************************
  * EVENTS
  * http://nodejs.org/api/events.html
  * ******************************************************************************************* */
-
 
 // All objects which emit events are instances of events.EventEmitter. You can access this module by doing: require("events");
 // To access the EventEmitter class, require('events').EventEmitter.
@@ -449,12 +434,10 @@ emitter.emit(event, [arg1], [arg2], [...]);  // Execute each of the listeners in
 
 EventEmitter.listenerCount(emitter, event);  // Return the number of listeners for a given event.
 
-
 /* *******************************************************************************************
  * STREAM
  * http://nodejs.org/api/stream.html
  * ******************************************************************************************* */
-
 
 // A stream is an abstract interface implemented by various objects in Node. For example a request to an HTTP server is a stream, as is stdout.
 // Streams are readable, writable, or both. All streams are instances of EventEmitter.
@@ -484,7 +467,6 @@ readable.pipe(destination, [options]);    // This method pulls all the data out 
 readable.unpipe([destination]);           // This method will remove the hooks set up for a previous pipe() call. If the destination is not specified, then all pipes are removed.
 readable.unshift(chunk);                  // This is useful in certain cases where a stream is being consumed by a parser, which needs to "un-consume" some data that it has optimistically pulled out of the source, so that the stream can be passed on to some other party.
 
-
 // The Writable stream interface is an abstraction for a destination that you are writing data to.
 // Examples of writable streams include: http requests on the client, http responses on the server, fs write streams,
 // zlib streams, crypto streams, tcp sockets, child process stdin, process.stdout, process.stderr.
@@ -500,19 +482,16 @@ writer.on('pipe', function(src) {});            // This is emitted whenever the 
 writer.on('unpipe', function(src) {});          // This is emitted whenever the unpipe() method is called on a readable stream, removing this writable from its set of destinations.
 writer.on('error', function(src) {});           // Emitted if there was an error when writing or piping data.
 
-
 // Duplex streams are streams that implement both the Readable and Writable interfaces. See above for usage.
 // Examples of Duplex streams include: tcp sockets, zlib streams, crypto streams.
 
 // Transform streams are Duplex streams where the output is in some way computed from the input. They implement both the Readable and Writable interfaces. See above for usage.
 // Examples of Transform streams include: zlib streams, crypto streams.
 
-
 /* *******************************************************************************************
  * FILE SYSTEM
  * http://nodejs.org/api/fs.html
  * ******************************************************************************************* */
-
 
 // To use this module do require('fs').
 // All the methods have asynchronous and synchronous forms.
@@ -602,12 +581,10 @@ stats.isSocket()
 fs.createReadStream(path, [options]);   // Returns a new ReadStream object.
 fs.createWriteStream(path, [options]);  // Returns a new WriteStream object.
 
-
 /* *******************************************************************************************
  * PATH
  * http://nodejs.org/api/fs.html
  * ******************************************************************************************* */
-
 
 // Use require('path') to use this module.
 // This module contains utilities for handling and transforming file paths.
@@ -625,12 +602,10 @@ path.extname(p);                      // Return the extension of the path, from 
 path.sep;                             // The platform-specific file separator. '\\' or '/'.
 path.delimiter;                       // The platform-specific path delimiter, ';' or ':'.
 
-
 /* *******************************************************************************************
  * HTTP
  * http://nodejs.org/api/http.html
  * ******************************************************************************************* */
-
 
 // To use the HTTP server and client one must require('http').
 
@@ -696,12 +671,10 @@ message.socket;                         // The net.Socket object associated with
 
 message.setTimeout(msecs, callback);    // Calls message.connection.setTimeout(msecs, callback).
 
-
 /* *******************************************************************************************
  * URL
  * http://nodejs.org/api/url.html
  * ******************************************************************************************* */
-
 
 // This module has utilities for URL resolution and parsing. Call require('url') to use it.
 
@@ -709,24 +682,20 @@ url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);  // Take a URL strin
 url.format(urlObj);                                          // Take a parsed URL object, and return a formatted URL string.
 url.resolve(from, to);                                       // Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 
-
 /* *******************************************************************************************
  * QUERY STRING
  * http://nodejs.org/api/querystring.html
  * ******************************************************************************************* */
-
 
 // This module provides utilities for dealing with query strings. Call require('querystring') to use it.
 
 querystring.stringify(obj, [sep], [eq]);         // Serialize an object to a query string. Optionally override the default separator ('&') and assignment ('=') characters.
 querystring.parse(str, [sep], [eq], [options]);  // Deserialize a query string to an object. Optionally override the default separator ('&') and assignment ('=') characters.
 
-
 /* *******************************************************************************************
  * ASSERT
  * http://nodejs.org/api/assert.html
  * ******************************************************************************************* */
-
 
 // This module is used for writing unit tests for your applications, you can access it with require('assert').
 
@@ -742,12 +711,10 @@ assert.throws(block, [error], [message]);             // Expects block to throw 
 assert.doesNotThrow(block, [message]);                // Expects block not to throw an error, see assert.throws for details.
 assert.ifError(value);                                // Tests if value is not a false value, throws if it is a true value. Useful when testing the first argument, error in callbacks.
 
-
 /* *******************************************************************************************
  * OS
  * http://nodejs.org/api/os.html
  * ******************************************************************************************* */
-
 
 // Provides a few basic operating-system related utility functions.
 // Use require('os') to access this module.
@@ -767,12 +734,10 @@ os.cpus();               // Returns an array of objects containing information a
 os.networkInterfaces();  // Get a list of network interfaces.
 os.EOL;                  // A constant defining the appropriate End-of-line marker for the operating system.
 
-
 /* *******************************************************************************************
  * BUFFER
  * http://nodejs.org/api/buffer.html
  * ******************************************************************************************* */
-
 
 // Buffer is used to dealing with binary data
 // Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap
@@ -796,7 +761,5 @@ buf[index];                                                         // Get and s
 buf.length;                                                         // The size of the buffer in bytes, Note that this is not necessarily the size of the contents
 
 buffer.INSPECT_MAX_BYTES;                                           // How many bytes will be returned when buffer.inspect() is called. This can be overridden by user modules.
-
-
 
 ```

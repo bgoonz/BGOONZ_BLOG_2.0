@@ -3,13 +3,12 @@ title: What are data structures
 weight: 0
 excerpt: Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
 seo:
-  title: ' What are data structures'
-  description: 'Data structures are used in almost all areas of computer science and programming, from operating systems to basic vanilla code to artificial intelligence.'
-  robots: []
-  extra: []
+    title: ' What are data structures'
+    description: 'Data structures are used in almost all areas of computer science and programming, from operating systems to basic vanilla code to artificial intelligence.'
+    robots: []
+    extra: []
 template: docs
 ---
-
 
 
 # What are data structures
@@ -115,7 +114,7 @@ Nodes with linked child nodes are called internal nodes while those without chil
 
 These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360)
+![height of tree](https://www.educative.io/api/page/6094484883374080/image/download/4860454879887360)
 
 This type of tree is defined by four strict rules:
 
@@ -154,9 +153,9 @@ Graphs are a relation-based data structure helpful for storing web-like relation
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
-_V = {a, b, c, d}_
+`V = {a, b, c, d}`
 
-_E = {ab, ac, bc, cd}_
+`E = {ab, ac, bc, cd}`
 
 While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.
 
@@ -179,7 +178,7 @@ Disadvantages
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
+![key value pair](https://www.educative.io/api/page/6094484883374080/image/download/6745911163092992) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
 
 Advantages
 
@@ -200,19 +199,11 @@ Disadvantages
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 
-
-
-
 ## Data structure interview questions
-
 
 <details>
 
-<summary> 🔥See Interview Questions </summary>   
-
-
-
-
+<summary> 🔥See Interview Questions </summary>
 
 For many developers and programmers, data structures are most important for [cracking Javascript coding interviews](https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained). Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.
 
@@ -224,7 +215,7 @@ Problem statement: Implement a function `removeEven(arr)`, which takes an array 
 
 Input: An array of random integers
 
-```
+```txt
 [1,2,4,5,10,6,3]
 ```
 
@@ -238,26 +229,35 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 #### Solution #1: Doing it "by hand"
 
-```js
-function removeEven( arr ) {
-  const odds = [];
-  for ( let number of arr ) {
-    if ( number % 2 != 0 )
-      // Check if the item in the list is NOT even ('%' is the modulus symbol!)
-      odds.push( number ); //If it isn't even append it to the empty list
-  }
-  return odds; // Return the new list
-}
-let example = removeEven( [ 3, 2, 41, 3, 34 ] );
-console.log( 'EXAMPLE:', example ); //EXAMPLE: [ 3, 41, 3 ]
+---
 
+```js
+//
+
+
+function removeEven(arr) {
+    const odds = [];
+    for (let number of arr) {
+        if (number % 2 != 0)
+            // Check if the item in the list is NOT even ('%' is the modulus symbol!)
+            odds.push(number); //If it isn't even append it to the empty list
+    }
+    return odds; // Return the new list
+}
+let example = removeEven([3, 2, 41, 3, 34]);
+console.log('EXAMPLE:', example); //EXAMPLE: [ 3, 41, 3 ]
 ```
 
 This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
 
 #### Solution #2: Using filter() and lambda function
 
+---
+
 ```js
+//
+
+
 function removeEven(arr) {
     return arr.filter((v) => v % 2 != 0);
 }
@@ -276,6 +276,7 @@ Problem statement: Implement the `isBalanced()` function to take a string contai
 Input: A string consisting solely of `(`, `)`, `{`, `}`, `[` and `]`
 
 ```js
+//
 exp = '{[({})]}';
 ```
 
@@ -292,6 +293,7 @@ index.js
 Stack.js
 
 ```js
+//
 
 "use strict";
 module.exports = class Stack {
@@ -320,7 +322,6 @@ module.exports = class Stack {
             this.top = null;
             return this.items.pop();
 
-
 ```
 
 ---
@@ -339,12 +340,14 @@ Problem statement: Implement a function `findBin(n)`, which will generate binary
 Input: A positive integer n
 
 ```js
+//
 n = 3;
 ```
 
 Output: Returns binary numbers in the form of strings from `1` up to `n`
 
 ```js
+//
 result = ['1', '10', '11'];
 ```
 
@@ -355,6 +358,7 @@ index.js
 Queue.js
 
 ```js
+//
 
 "use strict";
 module.exports = class Queue {
@@ -378,7 +382,6 @@ module.exports = class Queue {
     enqueue( element ) {
         this.items.push( element );
     }
-
 
 ```
 
@@ -406,12 +409,14 @@ Problem statement: Write the `reverse` function to take a singly linked list and
 Input: a singly linked list
 
 ```js
+//
 LinkedList = 0->1->2->3-4
 ```
 
 Output: a reverse linked list
 
 ```js
+//
 LinkedList = 4->3->2->1->0
 ```
 
@@ -424,7 +429,7 @@ LinkedList.js
 Node.js
 
 ```js
-
+//
 
 "use strict";
 const Node = require( './Node.js' );
@@ -454,7 +459,6 @@ module.exports = class LinkedList {
             process.stdout.write( " -> " );
             temp = temp.nextElement;
 
-
 ```
 
 ---
@@ -476,6 +480,7 @@ Problem statement: Use the `findMin(root)` function to find the minimum value in
 Input: a root node for a binary search tree
 
 ```js
+//
 bst = {    6 -> 4,9    4 -> 2,5    9 -> 8,12    12 -> 10,14}where parent -> leftChild,rightChild
 ```
 
@@ -498,39 +503,37 @@ BinarySearchTree.js
 Node.js
 
 ```js
-
-"use strict";
-const Node = require( './Node.js' );
+//
+'use strict';
+const Node = require('./Node.js');
 module.exports = class BinarySearchTree {
-    constructor ( rootValue ) {
-        this.root = new Node( rootValue );
+    constructor(rootValue) {
+        this.root = new Node(rootValue);
     }
-    insert( currentNode, newValue ) {
-        if ( currentNode === null ) {
-            currentNode = new Node( newValue );
-        } else if ( newValue < currentNode.val ) {
-            currentNode.leftChild = this.insert( currentNode.leftChild, newValue );
+    insert(currentNode, newValue) {
+        if (currentNode === null) {
+            currentNode = new Node(newValue);
+        } else if (newValue < currentNode.val) {
+            currentNode.leftChild = this.insert(currentNode.leftChild, newValue);
         } else {
-            currentNode.rightChild = this.insert( currentNode.rightChild, newValue );
+            currentNode.rightChild = this.insert(currentNode.rightChild, newValue);
         }
         return currentNode;
     }
-    insertBST( newValue ) {
-        if ( this.root == null ) {
-            this.root = new Node( newValue );
+    insertBST(newValue) {
+        if (this.root == null) {
+            this.root = new Node(newValue);
             return;
         }
-        this.insert( this.root, newValue );
+        this.insert(this.root, newValue);
     }
-    preOrderPrint( currentNode ) {
-        if ( currentNode !== null ) {
-            console.log( currentNode.val );
-            this.preOrderPrint( currentNode.leftChild );
+    preOrderPrint(currentNode) {
+        if (currentNode !== null) {
+            console.log(currentNode.val);
+            this.preOrderPrint(currentNode.leftChild);
         }
     }
-}
-
-
+};
 ```
 
 ---
@@ -550,10 +553,9 @@ Input: A graph, a source, and a destination
 Output: A graph with the edge between the source and the destination removed.
 
 ```js
+//
 removeEdge(graph, 2, 3);
 ```
-
-
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6038590984290304)
 
@@ -570,32 +572,31 @@ LinkedList.js
 Node.js
 
 ```js
-const LinkedList = require( './LinkedList.js' );
-const Node = require( './Node.js' );
+//
+const LinkedList = require('./LinkedList.js');
+const Node = require('./Node.js');
 module.exports = class Graph {
-  constructor( vertices ) {
-    this.vertices = vertices;
-    this.list = [];
-    let it;
-    for ( it = 0; it < vertices; it++ ) {
-      let temp = new LinkedList();
-      this.list.push( temp );
+    constructor(vertices) {
+        this.vertices = vertices;
+        this.list = [];
+        let it;
+        for (it = 0; it < vertices; it++) {
+            let temp = new LinkedList();
+            this.list.push(temp);
+        }
     }
-  }
-  addEdge( source, destination ) {
-    if ( source < this.vertices && destination < this.vertices )
-      this.list[ source ].insertAtHead( destination );
-    return this;
-  }
-  printGraph() {
-    console.log( ">>Adjacency List of Directed Graph<<" );
-    let i;
-    for ( i = 0; i < this.list.length; i++ ) {
-      process.stdout.write( `|${String( i )}| => ` );
+    addEdge(source, destination) {
+        if (source < this.vertices && destination < this.vertices) this.list[source].insertAtHead(destination);
+        return this;
     }
-  }
-}
-
+    printGraph() {
+        console.log('>>Adjacency List of Directed Graph<<');
+        let i;
+        for (i = 0; i < this.list.length; i++) {
+            process.stdout.write(`|${String(i)}| => `);
+        }
+    }
+};
 ```
 
 ---
@@ -609,42 +610,51 @@ Problem statement: Implement the function `convertMax(maxHeap)` to convert a bin
 Input: a Max-Heap
 
 ```js
+//
 maxHeap = [9, 4, 7, 1, -2, 6, 5];
 ```
 
 Output: returns the converted array
 
 ```js
+//
 result = [-2, 1, 5, 9, 4, 6, 7];
 ```
 
 To solve this problem, we must min heapify all parent nodes. Take a look.
 
+---
+
 ```js
+//
 
-function minHeapify( heap, index ) {
-  const left = index * 2;
-  const right = ( index * 2 ) + 1;
-  let smallest = index;
-  if ( ( heap.length > left ) && ( heap[ smallest ] > heap[ left ] ) ) {
-    smallest = left
-  }
-  if ( ( heap.length > right ) && ( heap[ smallest ] > heap[ right ] ) )
-    smallest = right;
-  if ( smallest != index ) {
-    const tmp = heap[ smallest ];
-    heap[ smallest ] = heap[ index ]
-    heap[ index ] = tmp
-    minHeapify( heap, smallest )
-  }
-  return heap;
+
+function minHeapify(heap, index) {
+    const left = index * 2;
+    const right = index * 2 + 1;
+    let smallest = index;
+    if (heap.length > left && heap[smallest] > heap[left]) {
+        smallest = left;
+    }
+    if (heap.length > right && heap[smallest] > heap[right]) smallest = right;
+    if (smallest != index) {
+        const tmp = heap[smallest];
+        heap[smallest] = heap[index];
+        heap[index] = tmp;
+        minHeapify(heap, smallest);
+    }
+    return heap;
 }
-
 ```
 
 ---
 
+---
+
 ```js
+//
+
+
 function convertMax(maxHeap) {
     for (var i = Math.floor(maxHeap.length / 2); i > -1; i--) maxHeap = minHeapify(maxHeap, i);
 
@@ -659,6 +669,5 @@ console.log(convertMax(maxHeap));
 ---
 
 We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes _O(nlog(n))O(nlog(n))_ time.
-
 
 </details>

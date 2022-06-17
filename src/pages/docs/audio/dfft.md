@@ -29,6 +29,7 @@ seo:
 template: docs
 ---
 
+
 # Frequency and the fast Fourier transform
 
 > If you want to find the secrets of the universe, think in terms of energy,
@@ -139,7 +140,7 @@ of goals.
 Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a _spectrogram_.
 You might have seen spectrograms on your music player's equalizer view, or even on an old-school stereo.
 
-![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.JPG)
+![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.jpg)
 
 Listen to the following snippet of nightingale birdsong (released under CC BY 4.0 at
 http://www.orangefreesounds.com/nightingale-sound/):
@@ -372,17 +373,17 @@ The discrete Fourier transform functionality in SciPy lives in the
 `scipy.fftpack`` module. Among other things, it provides the
 following DFT-related functionality:
 
--   `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using
-    the Fast Fourier Transform algorithm in 1, 2, or `n` dimensions.
--   `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
--   `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
--   `fftshift`, `ifftshift`: Shift the zero-frequency component to the center of the spectrum and back, respectively (more about that soon).
--   `fftfreq`: Return the discrete Fourier transform sample frequencies.
--   `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
+- `fft`, `fft2`, `fftn`: Compute the discrete Fourier transform using
+- the Fast Fourier Transform algorithm in 1, 2, or `n` dim
+- `ifft`, `ifft2`, `ifftn`: Compute the inverse of the DFT
+- `dct`, `idct`, `dst`, `idst`: Compute the cosine and sine transforms, and their inverses.
+- `fftshift`, `ifftshift`: Shift the zero-frequency component to the c
+- `fftfreq`: Return the discrete Fourier transform sample frequencies.
+- `rfft`: Compute the DFT of a real sequence, exploiting the symmetry of the resulting spectrum for increased performance. Also used by `fft` internally when applicable.
 
 This is complemented by the following functions in NumPy:
 
--   `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`,
+- `np.hanning`, `np.hamming`, `np.bartlett`, `np.blackman`,
     `np.kaiser`: Tapered windowing functions.
 
 It is also used to perform fast convolutions of large inputs by
@@ -441,7 +442,6 @@ lengths = range(250, 260)
 # Calculate the smoothness for all input lengths
 smoothness = [max(factorint(i).keys()) for i in lengths]
 
-
 exec_times = []
 for i in lengths:
     z = np.random.random(i)
@@ -458,7 +458,6 @@ for i in lengths:
 
     # For each input length, remember the *minimum* execution time
     exec_times.append(min(times))
-
 
 f, (ax0, ax1) = plt.subplots(2, 1, sharex=True)
 ax0.stem(lengths, np.array(exec_times) * 10**6)
@@ -947,13 +946,13 @@ discards any high frequencies).
 
 To summarize, we should note that:
 
--   The data that reaches the computer consists of $N$ samples sampled
+- The data that reaches the computer consists of $N$ samples sampled
     (from the multiplied, filtered signal) at a sample frequency of
     $f_{s}$.
--   The **amplitude** of the returned signal varies depending on the
+- The **amplitude** of the returned signal varies depending on the
     **strength of the reflection** (i.e., is a property of the target
     object and the distance between the target and the radar).
--   The **frequency measured** is an indication of the **distance** of the
+- The **frequency measured** is an indication of the **distance** of the
     target object from the radar.
 
 <!--
@@ -1000,7 +999,6 @@ $$B_{eff}=f_{max}-f_{1}=ST_{eff}.$$
 
 We will see that the range resolution of the radar is determined by
 the effective bandwidth.
-
 
 Returning to Fig. [fig: block-diagram], the signal produced by the
 receiver at the input to the Analog to Digital Converter (ADC) when
@@ -1152,16 +1150,16 @@ Since `.npz`-files can store multiple variables, we have to select
 the one we want: `data['scan']`. That returns a
 _structured NumPy array_ with the following fields:
 
--   **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
--   **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
--   **position**
+- **time** : unsigned 64-bit (8 byte) integer (`np.uint64`)
+- **size** : unsigned 32-bit (4 byte) integer (`np.uint32`)
+- **position**
 
-    -   **az** : 32-bit float (`np.float32`)
-    -   **el** : 32-bit float (`np.float32`)
-    -   **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
-    -   **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
-    -   **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
-    -   **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
+    - **az** : 32-bit float (`np.float32`)
+    - **el** : 32-bit float (`np.float32`)
+    - **region_type** : unsigned 8-bit (1 byte) integer (`np.uint8`)
+    - **region_ID** : unsigned 16-bit (2 byte) integer (`np.uint16`)
+    - **gain** : unsigned 8-bit (1 byte) integer (`np.uin8`)
+    - **samples** : 2048 unsigned 16-bit (2 byte) integers (`np.uint16`)
 
 While it is true that NumPy arrays are _homogeneous_ (i.e., all the
 elements inside are the same), it does not mean that those elements
@@ -1280,7 +1278,6 @@ c = 3e8  # Approximately the speed of light and of
 
 fig, (ax0, ax1, ax2) = plt.subplots(3, 1)
 
-
 def dB(y):
     "Calculate the log ratio of y / max(y) in decibel."
 
@@ -1289,12 +1286,10 @@ def dB(y):
 
     return 20 * np.log10(y)
 
-
 def log_plot_normalized(x, y, ylabel, ax):
     ax.plot(x, dB(y))
     ax.set_ylabel(ylabel)
     ax.grid()
-
 
 rng = np.arange(N // 2) * c / 2 / Beff
 
@@ -1571,16 +1566,16 @@ should be well equipped to use it!
 
 On the Fourier transform:
 
--   A. Papoulis, _The Fourier Integral and Its Applications_,
-    McGraw-Hill, 1960.
--   Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
+- A. Papoulis, _The Fourier Integral and Its Applications_,
+- McGraw-Hill, 1960.
+- Ronald A. Bracewell, _The Fourier Transform and Its Applications_,
     McGraw-Hill, 1986.
 
 On radar signal processing:
 
--   Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
-    SciTech, 2010
--   Mark A. Richards, _Fundamentals of Radar Signal Processing_,
+- Mark A. Richards, _Principles of Modern Radar: Basic Principles_,
+- SciTech, 2010
+- Mark A. Richards, _Fundamentals of Radar Signal Processing_,
     McGraw-Hill, 2014.
 
 <!-- exercise begin -->
@@ -1592,12 +1587,12 @@ b) `np.fft.fft2`. Confirm that the results are identical.
 
 Hints:
 
--   The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
-    `X` and `Y` are the FFTs of x and y respectively.
--   In order to multiply `X` and `Y`, they have to be the same size.
+- The convolution of `x` and `y` is equivalent to `ifft2(X * Y)`, where
+- `X` and `Y` are the FFTs of x and y respectively.
+- In order to multiply `X` and `Y`, they have to be the same size.
     Use `np.pad` to extend `x` and `y` with zeros (toward the right and
     bottom) _before_ taking their FFT.
--   You may see some edge effects. These can be removed by increasing
+- You may see some edge effects. These can be removed by increasing
     the padding size, so that both `x` and `y` have dimensions
     `shape(x) + shape(y) - 1`.
 

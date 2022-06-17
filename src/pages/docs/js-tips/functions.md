@@ -1,15 +1,16 @@
 ---
-title:
+title: JS Functions
 weight: 0
 excerpt: Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
 seo:
-    title: ''
+    title: 'Functions'
     description: 'Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Functions
 
@@ -217,10 +218,10 @@ The rest parameter syntax allows representing an indefinite number of arguments 
 
 You can refer to a function's arguments within the function by using the `arguments` object. See [arguments](functions/arguments).
 
--   `arguments`: An array-like object containing the arguments passed to the currently executing function.
--   `arguments.callee` : The currently executing function.
--   `arguments.caller` : The function that invoked the currently executing function.
--   `arguments.length`: The number of arguments passed to the function.
+- `arguments`: An array-like object containing the arguments passed to the currently executing function.
+- `arguments.callee` : The currently executing function.
+- `arguments.caller` : The function that invoked the currently executing function.
+- `arguments.length`: The number of arguments passed to the function.
 
 ## Defining method functions
 
@@ -347,8 +348,8 @@ It should be noted, however, that function expressions and function declarations
 
 A function declaration is very easily (and often unintentionally) turned into a function expression. A function declaration ceases to be one when it either:
 
--   becomes part of an expression
--   is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
+- becomes part of an expression
+- is no longer a "source element" of a function or the script itself. A "source element" is a non-nested statement in the script or a function body:
 
 <!-- -->
 
@@ -471,4 +472,3 @@ You can determine whether a function exists by using the `typeof` operator. In t
      }
 
 Note that in the `if` test, a reference to `noFunc` is used—there are no brackets "()" after the function name so the actual function is not called.
-

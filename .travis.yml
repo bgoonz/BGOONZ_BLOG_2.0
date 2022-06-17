@@ -1,8 +1,14 @@
 language: node_js
 dist: xenial
 node_js:
-  - "14"
+    - '6'
+    - '8'
+    - '10'
+    - '12'
+    - '14'
+    - '16'
 script:
-  - cd .
-  - npm i
-  - npm run start
+    - cd test/support/express3 && npm install
+    - cd ../express4 && npm install
+    - cd ../../..
+    - npm test

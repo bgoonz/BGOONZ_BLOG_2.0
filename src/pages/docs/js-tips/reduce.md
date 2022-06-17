@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.reduce()
+title: Array.reduce()
 weight: 0
 excerpt: Javascript articles  and docs
 seo:
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Array.prototype.reduce()
 
@@ -110,7 +111,101 @@ Suppose the following use of `reduce()` occurred:
 
 The callback would be invoked four times, with the arguments and return values in each call being as follows:
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr class="even"><td>second call</td><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr class="odd"><td>third call</td><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr class="even"><td>fourth call</td><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>3</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>6</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>6</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` would be that of the last callback invocation (`10`).
 
@@ -124,7 +219,119 @@ If you were to provide an `initialValue` as the second argument to `reduce()`, t
         return accumulator + currentValue
     }, 10)
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>second call</td><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr class="odd"><td>third call</td><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr class="even"><td>fourth call</td><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr class="odd"><td>fifth call</td><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>11</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>11</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>13</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>13</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>16</code>
+</td>
+</tr>
+<tr class="odd">
+<td>fifth call</td>
+<td>
+<code>16</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` in this case would be `20`.
 
@@ -440,72 +647,3 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
     [1, 2, , 3].mapUsingReduce(
       (currentValue, index, array) => currentValue + index + array.length
     ) // [5, 7, , 10]
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.reduce">ECMAScript (ECMA-262)
-<br/>
-
-<span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span></a></td></tr></tbody></table>
-
-## Browser compatibility
-
-Desktop
-
-Mobile
-
-Chrome
-
-Edge
-
-Firefox
-
-Internet Explorer
-
-Opera
-
-Safari
-
-WebView Android
-
-Chrome Android
-
-Firefox for Android
-
-Opera Android
-
-Safari on IOS
-
-Samsung Internet
-
-`Reduce`
-
-3
-
-12
-
-3
-
-9
-
-10.5
-
-5
-
-≤37
-
-18
-
-4
-
-14
-
-4
-
-1.0
-
-## See also
-
--   [`Array.prototype.reduceRight()`](reduceright)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>

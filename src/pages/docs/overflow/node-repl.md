@@ -42,7 +42,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 
 Start simple and enter
 
-```console
+```bash
 > console.log('test')
 test
 undefined
@@ -94,12 +94,14 @@ The REPL knows when you are typing a multi-line statement without the need to in
 For example if you start typing an iteration like this:
 
 ```js
+//
 [1, 2, 3].forEach(num => {
 ```
 
 and you press `enter`, the REPL will go to a new line that starts with 3 dots, indicating you can now continue to work on that block.
 
 ```js
+//
 ... console.log(num)
 ... })
 ```

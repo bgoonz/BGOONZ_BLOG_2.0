@@ -23,9 +23,9 @@ image: images/bgoonzblog20-a6a3bfc3.png
 
 <div align="center">
 
-![](https://komarev.com/ghpvc/?username=bgoonz)
+![profile views](https://komarev.com/ghpvc/?username=bgoonz)
 
-# [WEBSITE](https://bgoonz-blog.netlify.app/)
+## [<b>WEBSITE</b>](https://bgoonz-blog.netlify.app/)
 
 # Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4)
 
@@ -425,13 +425,7 @@ This page contains links that give the impression that some of the site contents
 
     └── ./tools/plug-ins.md
 
-
-
 7 directories, 29 files
-
-
-
-
 
 ```
 
@@ -939,7 +933,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```shell
+    ```bash
 
     # create a new Gatsby site using the default starter
 
@@ -951,7 +945,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-    ```shell
+    ```bash
 
     cd my-default-starter/
 
@@ -1044,8 +1038,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 # Codebase
 
 ```
-
-
 
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
@@ -1331,17 +1323,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
     └── ./utils/withPrefix.js
 
-
-
 21 directories, 119 files
 
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
-
-
-
-
-
-
 
 ```
 
@@ -1357,21 +1341,18 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
   <summary>ActionLink!</summary>
 
-##ActionLink
+## ActionLink
 
 ```js
+//
 
 import React from 'react';
 
 import _ from 'lodash';
 
-
-
 import { Link, withPrefix, classNames } from '../utils';
 
 import Icon from './Icon';
-
-
 
 export default class ActionLink extends React.Component {
 
@@ -1380,8 +1361,6 @@ render() {
 let action = \_.get(this.props, 'action', null);
 
 return (
-
-
 
 <Link
 
@@ -1433,8 +1412,6 @@ button: *.get(action, 'style', null) !== 'link',
 
 }
 
-
-
 ```
 
 ---
@@ -1448,6 +1425,7 @@ button: *.get(action, 'style', null) !== 'link',
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1492,6 +1470,7 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1592,6 +1571,7 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1633,6 +1613,7 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1679,6 +1660,7 @@ export default class Footer extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1780,8 +1762,6 @@ export default class Header extends React.Component {
                     </div>
                 </div>
 
-                <div id="search" className="inner"></div>
-
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
@@ -1841,6 +1821,7 @@ export default class Header extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -1891,6 +1872,7 @@ export default class Icon extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -1982,6 +1964,7 @@ export default class Body extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2042,6 +2025,7 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2092,6 +2076,7 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2173,6 +2158,7 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2262,6 +2248,7 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2312,6 +2299,7 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import _ from 'lodash';
@@ -2361,6 +2349,7 @@ export default class Submenu extends React.Component {
 ---
 
 ```js
+//
 import ActionLink from './ActionLink';
 
 import CtaButtons from './CtaButtons';
@@ -2452,6 +2441,7 @@ export default {
 # main.js
 
 ```js
+//
 window.onGatsbyInitialClientRender = function () {
     /**
 
@@ -2822,6 +2812,7 @@ window.onGatsbyInitialClientRender = function () {
 # Page Load JS
 
 ```js
+//
 window.onGatsbyRouteUpdate = function () {
     window.addMainNavigationHandlers();
 
@@ -2838,6 +2829,7 @@ window.onGatsbyRouteUpdate = function () {
 # PageUnload.js
 
 ```js
+//
 window.onGatsbyPreRouteUpdate = function () {
     window.removeMainNavigationHandlers();
 
@@ -2854,6 +2846,7 @@ window.onGatsbyPreRouteUpdate = function () {
 # Plugins.js
 
 ```js
+//
 !(function (e, t) {
     'object' == typeof exports && 'undefined' != typeof module
         ? (module.exports = t())
@@ -4148,6 +4141,8 @@ Element.prototype.closest ||
 
       ```js
 
+//
+
       /* PrismJS 1.16.0
 
 <https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=toolbar+copy-to-clipboard> \_/
@@ -4266,7 +4261,7 @@ return n;
 
 insertBefore: function (n, e, a, t) {
 
-var r = (t = t || C.languages)[n],
+var r = [t = t || C.languages](n),
 
 i = {};
 
@@ -4458,7 +4453,7 @@ m = c.alias;
 
 if (f && !c.pattern.global) {
 
-var p = c.pattern.toString().match(/[imuy]\_$/)[0];
+var p = c.pattern.toString().match[/[imuy]\_$/](0);
 
 c.pattern = RegExp(c.pattern.source, p + 'g');
 
@@ -4756,7 +4751,7 @@ pattern: /=\s\*(?:"[^"]_"|'[^']_'|[^\s'">=]+)/i,
 
 inside: {
 
-punctuation: [/^=/, { pattern: /^(\s\*)["']|["']$/, lookbehind: !0 }]
+punctuation: [/^=/, { pattern: /^[\s\*]("')|["']$/, lookbehind: !0 }]
 
                 }
 
@@ -6024,7 +6019,7 @@ greedy: !0,
 
 inside: {
 
-'internal-subset': { pattern: /(^[^\[]\*\[)[\s\S]+(?=\]>$)/, lookbehind: !0, greedy: !0, inside: null },
+'internal-subset': { pattern: /[^[^\[]\*\[](\s\S)+(?=\]>$)/, lookbehind: !0, greedy: !0, inside: null },
 
 string: { pattern: /"[^"]_"|'[^']_'/, greedy: !0 },
 
@@ -6082,7 +6077,7 @@ value: function (a, e) {
 
 var s = {};
 
-(s['language-' + e] = { pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i, lookbehind: !0, inside: Prism.languages[e] }),
+[s['language-' + e] = { pattern: /(^<!\[CDATA\[](\s\S)+?(?=\]\]>$)/i, lookbehind: !0, inside: Prism.languages[e] }),
 
                 (s.cdata = /^<!\[CDATA\[|\]\]>$/i);
 
@@ -6286,7 +6281,7 @@ punctuation: /[{}[\];(),.:]/
 
 Prism.languages.clike['class-name'],
 
-{ pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$A-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
+{ pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$A-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
 
 ],
 
@@ -6344,7 +6339,7 @@ pattern:
 
 pattern:
 
-/#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)\s_=>))/,
+/#?[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
 
 alias: 'function'
 
@@ -6354,7 +6349,7 @@ parameter: [
 
 {
 
-pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
+pattern: /[function(?:\s+(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
 
 lookbehind: !0,
 
@@ -6364,7 +6359,7 @@ inside: Prism.languages.javascript
 
 {
 
-pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_(?=\s_=>)/i,
+pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$a-z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
 
 lookbehind: !0,
 
@@ -6378,7 +6373,7 @@ inside: Prism.languages.javascript
 
 pattern:
 
-/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))[?:(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
 
 lookbehind: !0,
 
@@ -6434,13 +6429,10 @@ Prism.languages.markup.tag.addAttribute(
 
 ````
 
-
-
 # main.js
 
-
-
 ```js
+//
 
 window.onGatsbyInitialClientRender = function () {
 
@@ -6456,8 +6448,6 @@ window.onGatsbyInitialClientRender = function () {
 
     reframe(videoEmbeds.join(','));
 
-
-
     // Handle main navigation menu toggling on small screens
 
     function menuToggleHandler(e) {
@@ -6467,8 +6457,6 @@ window.onGatsbyInitialClientRender = function () {
         document.body.classList.toggle('menu--opened');
 
     }
-
-
 
     // Handle docs navigation menu toggling on small screens
 
@@ -6480,8 +6468,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     // Handle submenu toggling
 
     function submenuToggleHandler(e) {
@@ -6491,8 +6477,6 @@ window.onGatsbyInitialClientRender = function () {
         this.parentNode.classList.toggle('active');
 
     }
-
-
 
     window.addMainNavigationHandlers = function () {
 
@@ -6508,8 +6492,6 @@ window.onGatsbyInitialClientRender = function () {
 
         }
 
-
-
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
         if (submenuToggle) {
@@ -6524,15 +6506,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removeMainNavigationHandlers = function () {
 
         // Remove nav related classes on page load
 
         document.body.classList.remove('menu--opened');
-
-
 
         const menuToggle = document.querySelectorAll('.menu-toggle');
 
@@ -6545,8 +6523,6 @@ window.onGatsbyInitialClientRender = function () {
             }
 
         }
-
-
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
@@ -6562,8 +6538,6 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.addDocsNavigationHandlers = function () {
 
         const docsNavToggle = document.getElementById('docs-nav-toggle');
@@ -6573,8 +6547,6 @@ window.onGatsbyInitialClientRender = function () {
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
 
         }
-
-
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
@@ -6590,15 +6562,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removeDocsNavigationHandlers = function () {
 
         // Remove docs nav related classes on page load
 
         document.body.classList.remove('docs-menu--opened');
-
-
 
         const docsNavToggle = document.getElementById('docs-nav-toggle');
 
@@ -6607,8 +6575,6 @@ window.onGatsbyInitialClientRender = function () {
             docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
 
         }
-
-
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
@@ -6624,21 +6590,15 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.addPageNavLinks = function () {
 
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
-
-
         if (pageToc && pageTocContainer) {
 
             const pageContent = document.querySelector('.type-docs .post-content');
-
-
 
             // Create in-page navigation
 
@@ -6655,8 +6615,6 @@ window.onGatsbyInitialClientRender = function () {
                 renderHeaderLinks(pageTocContainer, headerLinks);
 
             }
-
-
 
             // Scroll to anchors
 
@@ -6680,8 +6638,6 @@ window.onGatsbyInitialClientRender = function () {
 
             }
 
-
-
             // Highlight current anchor
 
             let pageTocLinks = pageTocContainer.getElementsByTagName('a');
@@ -6697,8 +6653,6 @@ window.onGatsbyInitialClientRender = function () {
                 });
 
             }
-
-
 
             // Add link to page content headings
 
@@ -6716,8 +6670,6 @@ window.onGatsbyInitialClientRender = function () {
 
             }
 
-
-
             // Copy link url
 
             let clipboard = new ClipboardJS('.hash-link', {
@@ -6734,15 +6686,11 @@ window.onGatsbyInitialClientRender = function () {
 
     };
 
-
-
     window.removePageNavLinks = function () {
 
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
-
-
 
         if (pageToc && pageTocContainer) {
 
@@ -6757,8 +6705,6 @@ window.onGatsbyInitialClientRender = function () {
         }
 
     };
-
-
 
     function getElementsByTagNames(root, tagNames) {
 
@@ -6783,8 +6729,6 @@ window.onGatsbyInitialClientRender = function () {
         return elements;
 
     }
-
-
 
     function createLinksForHeaderElements(elements) {
 
@@ -6894,8 +6838,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     function getHeaderLinks(options = {}) {
 
         let tagNames = options.tagNames || ['h2', 'h3'];
@@ -6907,8 +6849,6 @@ window.onGatsbyInitialClientRender = function () {
         return createLinksForHeaderElements(headerElements);
 
     }
-
-
 
     function renderHeaderLinks(element, links) {
 
@@ -6940,8 +6880,6 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     function anchorForId(id) {
 
         let anchor = document.createElement('a');
@@ -6958,15 +6896,11 @@ window.onGatsbyInitialClientRender = function () {
 
     }
 
-
-
     // Syntax Highlighter
 
     // Prism.highlightAll();
 
 };
-
-
 
 //-----------------------------------------------------------------------
 
@@ -6987,6 +6921,7 @@ window.onGatsbyInitialClientRender = function () {
 # Page Load JS
 
 ```js
+//
 window.onGatsbyRouteUpdate = function () {
     window.addMainNavigationHandlers();
 
@@ -7003,6 +6938,7 @@ window.onGatsbyRouteUpdate = function () {
 # PageUnload.js
 
 ```js
+//
 window.onGatsbyPreRouteUpdate = function () {
     window.removeMainNavigationHandlers();
 
@@ -7019,6 +6955,7 @@ window.onGatsbyPreRouteUpdate = function () {
 # Plugins.js
 
 ```js
+//
 !(function (e, t) {
     'object' == typeof exports && 'undefined' != typeof module
         ? (module.exports = t())
@@ -8312,8 +8249,7 @@ Element.prototype.closest ||
 # Prism.js
 
 ```js
-
-
+//
 
 var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
 
@@ -10595,13 +10531,9 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
-
-
 ```
 
 ```
-
-
 
 <details>
 
@@ -10658,6 +10590,7 @@ Prism.languages.markup.tag.addAttribute(
 ### Index.js
 
 ```js
+//
 import ActionLink from './ActionLink';
 
 import CtaButtons from './CtaButtons';
@@ -10739,6 +10672,7 @@ export default {
 ### Layout.js
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -10830,79 +10764,79 @@ export default class Body extends React.Component {
 ### ActionLink.js
 
 ```js
-
+//
 ```
 
 ### CtaButtons.js
 
 ```js
-
+//
 ```
 
 ### DocsMenu.js
 
 ```js
-
+//
 ```
 
 ### DocsSubmenu.js
 
 ```js
-
+//
 ```
 
 ### Footer.js
 
 ```js
-
+//
 ```
 
 ### Header.js
 
 ```js
-
+//
 ```
 
 ### Icon.js
 
 ```js
-
+//
 ```
 
 ### SectionContent.js
 
 ```js
-
+//
 ```
 
 ### SectionCta.js
 
 ```js
-
+//
 ```
 
 ### SectionDocs.js
 
 ```js
-
+//
 ```
 
 ### SectionGrid.js
 
 ```js
-
+//
 ```
 
 ### SectionHero.js
 
 ```js
-
+//
 ```
 
 ### Submenu.js
 
 ```js
-
+//
 ```
 
 <br>
@@ -10972,6 +10906,7 @@ export default class Body extends React.Component {
 ## Gatsby Browser
 
 ```js
+//
 /**
 
  * Implement Gatsby's Browser APIs in this file.
@@ -11022,6 +10957,7 @@ exports.onPreRouteUpdate = () => {
 ## Gatsby-config
 
 ```js
+//
 const siteMetadata = require('./site-metadata.json');
 
 module.exports = {
@@ -11078,6 +11014,7 @@ module.exports = {
 ## [Gatsby Node](https://www.gatsbyjs.org/docs/node-apis/)
 
 ```js
+//
 /**
 
  * Implement Gatsby's Node APIs in this file.
@@ -11100,134 +11037,71 @@ An example gatsby-node.js file that implements two APIs, `onPostBuild`, and `cre
 > gatsby-node.js
 
 ```js
+//
 
 Copygatsby-node.js: copy code to clipboard`
 
-
-
 const path =  require(`path`)
-
-
 
 // Log out information after a build is done
 
-
-
 exports.onPostBuild  =  ({ reporter })  =>  {
-
-
 
  reporter.info(`Your Gatsby site has been built!`)
 
-
-
 }
-
-
 
 // Create blog pages dynamically
 
-
-
 exports.createPages  =  async  ({ graphql, actions })  =>  {
-
-
 
   const  { createPage }  = actions
 
-
-
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-
-
 
   const result =  await  graphql(`
 
-
-
  query {
-
-
 
  allSamplePages {
 
-
-
  edges {
-
-
 
  node {
 
-
-
  slug
-
-
 
  title
 
-
+ }
 
  }
 
-
-
  }
 
-
-
  }
-
-
-
- }
-
-
 
   `)
 
-
-
  result.data.allSamplePages.edges.forEach(edge  =>  {
-
-
 
   createPage({
 
-
-
  path:  `${edge.node.slug}`,
-
-
 
  component: blogPostTemplate,
 
-
-
  context:  {
-
-
 
  title: edge.node.title,
 
-
-
   },
 
-
-
   })
 
-
-
   })
-
-
 
 }
-
-
 
 ```
 
@@ -11238,6 +11112,7 @@ If your plugin performs async operations (disk I/O, database access, calling rem
 // Async/await
 
 ```js
+//
 exports.createPages = async () => {
     // do async work
 
@@ -11285,27 +11160,27 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
 
 -   ######
 
-          `actions` Actions
+            `actions` Actions
 
-          See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
-
--   ######
-
-              `createPage` function
-
-              [Documentation for this action](https://www.gatsbyjs.com/docs/actions/#createPage)
+            See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
 
 -   ######
 
-          `graphql` function
+                `createPage` function
 
-          : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
+                [Documentation for this action](https://www.gatsbyjs.com/docs/actions/#createPage)
 
 -   ######
 
-          `reporter` GatsbyReporter
+            `graphql` function
 
-          Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
+            : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
+
+-   ######
+
+            `reporter` GatsbyReporter
+
+            Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
 
 #### Return value
 
@@ -11318,6 +11193,7 @@ No return value required, but the caller will `await` any promise that's returne
 #### Example
 
 ```js
+//
 const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
@@ -11430,15 +11306,15 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
 -   ######
 
-          `intermediateSchema` GraphQLSchema
+            `intermediateSchema` GraphQLSchema
 
-          Current GraphQL schema
+            Current GraphQL schema
 
 -   ######
 
-          `createResolvers` function
+            `createResolvers` function
 
-          Add custom resolvers to GraphQL field configs
+            Add custom resolvers to GraphQL field configs
 
 -   #####
 
@@ -11446,25 +11322,26 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
 -   ######
 
-          `resolvers` object
+            `resolvers` object
 
-          An object map of GraphQL type names to custom resolver functions
-
--   ######
-
-          `options` object
-
-          Optional createResolvers options
+            An object map of GraphQL type names to custom resolver functions
 
 -   ######
 
-              `ignoreNonexistentTypes` object
+            `options` object
 
-              Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
+            Optional createResolvers options
+
+-   ######
+
+                `ignoreNonexistentTypes` object
+
+                Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
 
 #### Example
 
 ```js
+//
 exports.createResolvers = ({ createResolvers }) => {
     const resolvers = {
         Author: {
@@ -11514,23 +11391,24 @@ This API runs immediately before schema generation. For modifications of the gen
 
 -   ######
 
-          `actions` object
+            `actions` object
 
 -   ######
 
-              `createTypes` object
+                `createTypes` object
 
 -   ######
 
-              `createFieldExtension` object
+                `createFieldExtension` object
 
 -   ######
 
-              `addThirdPartySchema` object
+                `addThirdPartySchema` object
 
 #### Example
 
 ```js
+//
 exports.createSchemaCustomization = ({ actions }) => {
     const { createTypes, createFieldExtension } = actions;
 
@@ -11586,13 +11464,13 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 
 -   ######
 
-          `stage` string
+            `stage` string
 
-          The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
+            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
 
 -   ######
 
-          `actions` object
+            `actions` object
 
 -   #####
 
@@ -11603,6 +11481,7 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 #### Example
 
 ```js
+//
 exports.onCreateBabelConfig = ({ actions }) => {
     actions.setBabelPlugin({
         name: `babel-plugin-that-i-like`,
@@ -11628,13 +11507,14 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
 
 -   ######
 
-          `app` Express
+            `app` Express
 
-          The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
+            The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
 
 #### Example
 
 ```js
+//
 exports.onCreateDevServer = ({ app }) => {
     app.get('/hello', function (req, res) {
         res.send('hello world');
@@ -11659,6 +11539,7 @@ The [Creating a Source Plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-
 #### Example
 
 ```js
+//
 exports.onCreateNode = ({ node, actions }) => {
     const { createNode, createNodeField } = actions;
 
@@ -11700,41 +11581,42 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 
 -   ######
 
-          `stage` string
+            `stage` string
 
-          The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
-
--   ######
-
-          `getConfig` function
-
-          Returns the current webpack config
+            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
 
 -   ######
 
-          `rules` object
+            `getConfig` function
 
-          A set of preconfigured webpack config rules
-
--   ######
-
-          `loaders` object
-
-          A set of preconfigured webpack config loaders
+            Returns the current webpack config
 
 -   ######
 
-          `plugins` object
+            `rules` object
 
-          A set of preconfigured webpack config plugins
+            A set of preconfigured webpack config rules
 
 -   ######
 
-          `actions` object
+            `loaders` object
+
+            A set of preconfigured webpack config loaders
+
+-   ######
+
+            `plugins` object
+
+            A set of preconfigured webpack config plugins
+
+-   ######
+
+            `actions` object
 
 #### Example
 
 ```js
+//
 exports.onCreateWebpackConfig = ({ stage, getConfig, rules, loaders, actions }) => {
     actions.setWebpackConfig({
         module: {
@@ -11761,6 +11643,7 @@ Lifecycle executed in each process (one time per process). Used to store actions
 #### Example
 
 ```js
+//
 let createJobV2;
 
 exports.onPluginInit = ({ actions }) => {
@@ -11836,13 +11719,14 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
 -   ######
 
-          `Joi` Joi
+            `Joi` Joi
 
-          The instance of [Joi](https://joi.dev/) to define the schema
+            The instance of [Joi](https://joi.dev/) to define the schema
 
 #### Example
 
 ```js
+//
 exports.pluginOptionsSchema = ({ Joi }) => {
     return Joi.object({
         // Validate that the anonymize option is defined by the user and is a boolean
@@ -11904,13 +11788,14 @@ Many transformer plugins use this to add fields that take arguments.
 
 -   ######
 
-          `type` object
+            `type` object
 
-          Object containing `name` and `nodes`
+            Object containing `name` and `nodes`
 
 #### Example
 
 ```js
+//
 import { GraphQLString } from 'gatsby/graphql';
 
 exports.setFieldsOnGraphQLNodeType = ({ type }) => {
@@ -11955,6 +11840,7 @@ See also the documentation for [`createNode`](https://www.gatsbyjs.com/docs/acti
 #### Example
 
 ```js
+//
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { createNode } = actions;
 
@@ -12005,6 +11891,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 ## Gatsby-ssr
 
 ```js
+//
 /**
 
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
@@ -12070,7 +11957,7 @@ return <Layout {...props}>{element}</Layout>
 
 }
 
-`
+```
 
 ## [](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#usage)Usage
 
@@ -12092,53 +11979,53 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 #### Parameters
 
--   #####
+- #####
 
     destructured object
 
--   ######
+- ######
 
           `pathname` string
 
           The pathname of the page currently being rendered.
 
--   ######
+- ######
 
           `getHeadComponents` ReactNode[]
 
           Returns the current `headComponents` array.
 
--   ######
+- ######
 
           `replaceHeadComponents` function
 
           Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
--   ######
+- ######
 
           `getPreBodyComponents` ReactNode[]
 
           Returns the current `preBodyComponents` array.
 
--   ######
+- ######
 
           `replacePreBodyComponents` function
 
           Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
--   ######
+- ######
 
           `getPostBodyComponents` ReactNode[]
 
           Returns the current `postBodyComponents` array.
 
--   ######
+- ######
 
           `replacePostBodyComponents` function
 
           Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
--   #####
+- #####
 
     `pluginOptions` object
 
@@ -12152,9 +12039,9 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
 exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
 
-  const headComponents = getHeadComponents()
+const headComponents = getHeadComponents()
 
-  headComponents.sort((x, y) => {
+headComponents.sort((x, y) => {
 
     if (x.key === 'TypographyStyle') {
 
@@ -12168,9 +12055,9 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
 
     return 0
 
-  })
+})
 
-  replaceHeadComponents(headComponents)
+replaceHeadComponents(headComponents)
 
 }
 
@@ -12198,53 +12085,53 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
 #### Parameters
 
--   #####
+- #####
 
     destructured object
 
--   ######
+- ######
 
           `pathname` string
 
           The pathname of the page currently being rendered.
 
--   ######
+- ######
 
           `setHeadComponents` function
 
           Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setHtmlAttributes` function
 
           Takes an object of props which will spread into the `<html>` component.
 
--   ######
+- ######
 
           `setBodyAttributes` function
 
           Takes an object of props which will spread into the `<body>` component.
 
--   ######
+- ######
 
           `setPreBodyComponents` function
 
           Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setPostBodyComponents` function
 
           Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setBodyProps` function
 
           Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
--   #####
+- #####
 
     `pluginOptions` object
 
@@ -12258,15 +12145,11 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
 const React = require("react")
 
-
-
 const HtmlAttributes = {
 
-  lang: "en"
+lang: "en"
 
 }
-
-
 
 const HeadComponents = [
 
@@ -12274,15 +12157,11 @@ const HeadComponents = [
 
 ]
 
-
-
 const BodyAttributes = {
 
   "data-theme": "dark"
 
 }
-
-
 
 exports.onRenderBody = ({
 
@@ -12318,65 +12197,65 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
 #### Parameters
 
--   #####
+- #####
 
     destructured object
 
--   ######
+- ######
 
           `pathname` string
 
           The pathname of the page currently being rendered.
 
--   ######
+- ######
 
           `bodyComponent` ReactNode
 
           The React element to be rendered as the page body
 
--   ######
+- ######
 
           `replaceBodyHTMLString` function
 
           Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
 
--   ######
+- ######
 
           `setHeadComponents` function
 
           Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setHtmlAttributes` function
 
           Takes an object of props which will spread into the `<html>` component.
 
--   ######
+- ######
 
           `setBodyAttributes` function
 
           Takes an object of props which will spread into the `<body>` component.
 
--   ######
+- ######
 
           `setPreBodyComponents` function
 
           Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setPostBodyComponents` function
 
           Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
 
--   ######
+- ######
 
           `setBodyProps` function
 
           Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
--   #####
+- #####
 
     `pluginOptions` object
 
@@ -12392,15 +12271,11 @@ const { renderToString } = require("react-dom/server")
 
 const inline = require("glamor-inline")
 
-
-
 exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 
   const bodyHTML = renderToString(bodyComponent)
 
   const inlinedHTML = inline(bodyHTML)
-
-
 
   replaceBodyHTMLString(inlinedHTML)
 
@@ -12426,23 +12301,23 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
 #### Parameters
 
--   #####
+- #####
 
     destructured object
 
--   ######
+- ######
 
           `element` ReactNode
 
           The "Page" React Element built by Gatsby.
 
--   ######
+- ######
 
           `props` object
 
           Props object used by page.
 
--   #####
+- #####
 
     `pluginOptions` object
 
@@ -12458,13 +12333,12 @@ Wrapped element
 
 #### Example
 
-```
+```js
+//
 
 const React = require("react")
 
 const Layout = require("./src/components/layout").default
-
-
 
 exports.wrapPageElement = ({ element, props }) => {
 
@@ -12496,17 +12370,17 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
 #### Parameters
 
--   #####
+- #####
 
     destructured object
 
--   ######
+- ######
 
           `element` ReactNode
 
           The "Root" React Element built by Gatsby.
 
--   #####
+- #####
 
     `pluginOptions` object
 
@@ -12522,19 +12396,16 @@ Wrapped element
 
 #### Example
 
-```
+```js
+//
 
 const React = require("react")
 
 const { Provider } = require("react-redux")
 
-
-
 const createStore = require("./src/state/createStore")
 
 const store = createStore()
-
-
 
 exports.wrapRootElement = ({ element }) => {
 
@@ -12557,305 +12428,356 @@ exports.wrapRootElement = ({ element }) => {
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```
 
 ###
 
 ```js
+//
 
 ```

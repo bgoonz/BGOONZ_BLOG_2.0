@@ -1,7 +1,7 @@
 ---
-title:  Addition (+)
+title: Addition (+)
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: ' Addition (+)'
     description: ''

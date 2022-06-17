@@ -1,7 +1,7 @@
 ---
-title:  Math.acos()
+title: Math.acos()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: ' Math.acos()'
     description: ''
@@ -10,6 +10,8 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
+
 # Math.acos()
 
 The `Math.acos()` function returns the arccosine (in radians) of a number, that is

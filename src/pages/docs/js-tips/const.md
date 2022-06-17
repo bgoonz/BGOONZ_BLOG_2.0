@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # const
 
 Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment, and it can't be redeclared.
@@ -113,50 +114,3 @@ const also works on objects and arrays.
     // However, assigning a new array to the variable throws an error
     // Uncaught TypeError: Assignment to constant variable.
     MY_ARRAY = ['B'];
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-let-and-const-declarations">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-let-and-const-declarations</span></a></td></tr></tbody></table>
-
-`const`
-
-21
-
-12
-
-36
-
-\["Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.", "Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`."\]
-
-11
-
-9
-
-5.1
-
-≤37
-
-25
-
-36
-
-\["Prior to Firefox 13, `const` is implemented, but re-assignment is not failing.", "Prior to Firefox 46, a `TypeError` was thrown on redeclaration instead of a `SyntaxError`."\]
-
-10.1
-
-6
-
-1.5
-
-## See also
-
--   [`var`](var)
--   [`let`](let)
--   [Constants in the JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#constants)
-
-© 2005-2021 MDN contributors.
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const</a>

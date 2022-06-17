@@ -3,12 +3,13 @@ title: HTML Elements
 weight: 0
 excerpt: HTML Elements
 seo:
-  title: 'HTML Elements'
-  description: 'HTML Elements mdn docs'
-  robots: []
-  extra: []
+    title: 'HTML Elements'
+    description: 'HTML Elements mdn docs'
+    robots: []
+    extra: []
 template: docs
 ---
+
 
 HTML Elements
 
@@ -73,7 +74,14 @@ HTML Elements
     2. [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
     3. [`<header>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
     4. ~~[`<hgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)~~
-    5. [`<hr>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)
+    5. [`
+
+<br>
+<br>
+<br>
+<br>
+
+`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)
     6. [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html)
 8. I
     1. [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
