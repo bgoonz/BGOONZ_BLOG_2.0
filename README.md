@@ -3163,7 +3163,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
 ```
-consoleell
+console
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 
@@ -3174,7 +3174,7 @@ consoleell
     Navigate into your new site's directory and start it up.
 
 ```
-consoleell
+console
     cd my-default-starter/
     gatsby develop
 
