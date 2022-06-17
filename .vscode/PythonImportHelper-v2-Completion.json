@@ -1,0 +1,38 @@
+[
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "dr",
+        "kind": 5,
+        "importPath": "notes.articles.NODE.rename",
+        "description": "notes.articles.NODE.rename",
+        "peekOfCode": "dr = sys.argv[1]\nfor root, dirs, files in os.walk('./'):\n    for f in files:\n        shutil.move(root+\"/\"+f, root+\"/\"+root.split(\"/\")[-1]+f)",
+        "detail": "notes.articles.NODE.rename",
+        "documentation": {}
+    }
+]
