@@ -111,7 +111,101 @@ Suppose the following use of `reduce()` occurred:
 
 The callback would be invoked four times, with the arguments and return values in each call being as follows:
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr class="even"><td>second call</td><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr class="odd"><td>third call</td><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr class="even"><td>fourth call</td><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>3</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>6</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>6</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` would be that of the last callback invocation (`10`).
 
@@ -125,7 +219,119 @@ If you were to provide an `initialValue` as the second argument to `reduce()`, t
         return accumulator + currentValue
     }, 10)
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>second call</td><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr class="odd"><td>third call</td><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr class="even"><td>fourth call</td><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr class="odd"><td>fifth call</td><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>11</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>11</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>13</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>13</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>16</code>
+</td>
+</tr>
+<tr class="odd">
+<td>fifth call</td>
+<td>
+<code>16</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` in this case would be `20`.
 

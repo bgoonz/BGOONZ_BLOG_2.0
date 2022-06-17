@@ -1,11 +1,11 @@
-
-
 # Workflow syntax for GitHub Actions - GitHub Docs
 
 > ## Excerpt
+>
 > A workflow is a configurable automated process made up of one or more jobs. You must create a YAML file to define your workflow configuration.
 
 ---
+
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#about-yaml-syntax-for-workflows)About YAML syntax for workflows
 
 Workflow files use YAML syntax, and must have either a `.yml` or `.yaml` file extension. If you're new to YAML and want to learn more, see "[Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/)."
@@ -40,18 +40,18 @@ If you need to specify activity types or configuration for an event, you must co
 
 ```
 on:
-  
-  
+
+
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
-  
+
   page_build:
   release:
-    types: 
+    types:
       - created
 ```
 
@@ -65,7 +65,7 @@ You can use an array of event `types`. For more information about each event and
 
 on:
   release:
-    
+
     types: [published, created, edited]
 ```
 
@@ -80,18 +80,18 @@ The patterns defined in `branches` and `tags` are evaluated against the Git ref'
 ```
 on:
   push:
-    
-    branches:    
-      
+
+    branches:
+
       - main
-      
+
       - 'mona/octocat'
-      
+
       - 'releases/**'
-    
-    tags:        
-      - v1             
-      - v1.*           
+
+    tags:
+      - v1
+      - v1.*
 ```
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-ignoring-branches-and-tags)Example: Ignoring branches and tags
@@ -101,15 +101,15 @@ Anytime a pattern matches the `branches-ignore` or `tags-ignore` pattern, the wo
 ```
 on:
   push:
-    
+
     branches-ignore:
-      
+
       - 'mona/octocat'
-      
+
       - 'releases/**-alpha'
-    
+
     tags-ignore:
-      - v1.*           
+      - v1.*
 ```
 
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#excluding-branches-and-tags)Excluding branches and tags
@@ -131,7 +131,7 @@ The following workflow will run on pushes to `releases/10` or `releases/beta/mon
 ```
 on:
   push:
-    branches:    
+    branches:
       - 'releases/**'
       - '!releases/**-alpha'
 ```
@@ -227,7 +227,7 @@ on:
         default: 'john-doe'
         required: false
         type: string
-  
+
 jobs:
   print-username:
     runs-on: ubuntu-latest
@@ -254,14 +254,14 @@ In the example below, two outputs are defined for this reusable workflow: `workf
 ```
 on:
   workflow_call:
-    
+
     outputs:
       workflow_output1:
         description: "The first job output"
         value: ${{ jobs.my_job.outputs.job_output1 }}
       workflow_output2:
         description: "The second job output"
-        value: ${{ jobs.my_job.outputs.job_output2 }}  
+        value: ${{ jobs.my_job.outputs.job_output2 }}
 ```
 
 For information on how to reference a job output, see [`jobs.<job_id>.outputs`](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idoutputs). For more information, see "[Reusing workflows](https://docs.github.com/en/actions/learn-github-actions/reusing-workflows)."
@@ -283,12 +283,12 @@ on:
       access-token:
         description: 'A token passed from the caller workflow'
         required: false
-  
+
 jobs:
   pass-secret-to-action:
     runs-on: ubuntu-latest
 
-    steps:  
+    steps:
       - name: Pass the received secret to an action
         uses: ./.github/actions/my-action@v1
         with:
@@ -312,11 +312,11 @@ The triggered workflow receives the inputs in the `github.event.inputs` context.
 ### [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-3)Example
 
 ```
-on: 
+on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: 'Log level'
         required: true
         default: 'warning' {% ifversion ghec or ghes > 3.3 or ghae-issue-5511 %}
         type: choice
@@ -332,7 +332,7 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true {% endif %}
-  
+
 jobs:
   print-tag:
     runs-on: ubuntu-latest
@@ -351,7 +351,7 @@ This example triggers the workflow every day at 5:30 and 17:30 UTC:
 ```
 on:
   schedule:
-    
+
     - cron:  '30 5,17 * * *'
 
 ```
@@ -463,7 +463,7 @@ concurrency: ci-${{ github.ref }}
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run)Example: Using concurrency to cancel any in-progress job or run
 
 ```
-concurrency: 
+concurrency:
   group: ${{ github.head_ref }}
   cancel-in-progress: true
 ```
@@ -716,7 +716,7 @@ concurrency: ci-${{ github.ref }}
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run-1)Example: Using concurrency to cancel any in-progress job or run
 
 ```
-concurrency: 
+concurrency:
   group: ${{ github.head_ref }}
   cancel-in-progress: true
 ```
@@ -735,7 +735,7 @@ To use job outputs in a dependent job, you can use the `needs` context. For more
 jobs:
   job1:
     runs-on: ubuntu-latest
-    
+
     outputs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
@@ -882,13 +882,13 @@ Actions are either JavaScript files or Docker containers. If the action you're u
 
 ```
 steps:
-  
+
   - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
-  
+
   - uses: actions/checkout@v2
-  
+
   - uses: actions/checkout@v2.2.0
-  
+
   - uses: actions/checkout@main
 ```
 
@@ -903,10 +903,10 @@ jobs:
   my_first_job:
     steps:
       - name: My first step
-        
+
         uses: actions/heroku@main
       - name: My second step
-        
+
         uses: actions/aws@v2.0.1
 ```
 
@@ -1012,21 +1012,20 @@ Commands run using non-login shells by default. You can choose a different shell
 Each `run` keyword represents a new process and shell in the runner environment. When you provide multi-line commands, each line runs in the same shell. For example:
 
 -   A single-line command:
-    
+
     ```
     - name: Install Dependencies
       run: npm install
     ```
-    
+
 -   A multi-line command:
-    
+
     ```
     - name: Clean install dependencies and build
       run: |
         npm ci
         npm run build
     ```
-    
 
 Using the `working-directory` keyword, you can specify the working directory of where to run the command.
 
@@ -1174,17 +1173,19 @@ For information about the software included on GitHub-hosted runners, see "[Spec
 For built-in shell keywords, we provide the following defaults that are executed by GitHub-hosted runners. You should use these guidelines when running shell scripts.
 
 -   `bash`/`sh`:
-    
+
     -   Fail-fast behavior using `set -eo pipefail`: Default for `bash` and built-in `shell`. It is also the default when you don't provide an option on non-Windows platforms.
     -   You can opt out of fail-fast and take full control by providing a template string to the shell options. For example, `bash {0}`.
     -   sh-like shells exit with the exit code of the last command executed in a script, which is also the default behavior for actions. The runner will report the status of the step as fail/succeed based on this exit code.
+
 -   `powershell`/`pwsh`
-    
+
     -   Fail-fast behavior when possible. For `pwsh` and `powershell` built-in shell, we will prepend `$ErrorActionPreference = 'stop'` to script contents.
     -   We append `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }` to powershell scripts so action statuses reflect the script's last exit code.
     -   Users can always opt out by not using the built-in shell, and providing a custom shell option like: `pwsh -File {0}`, or `powershell -Command "& '{0}'"`, depending on need.
+
 -   `cmd`
-    
+
     -   There doesn't seem to be a way to fully opt into fail-fast behavior other than writing your script to check each error code and respond accordingly. Because we can't actually provide that behavior by default, you need to write this behavior into your script.
     -   `cmd.exe` will exit with the error level of the last program it executed, and it will return the error code to the runner. This behavior is internally consistent with the previous `sh` and `pwsh` default behavior and is the `cmd.exe` default, so this behavior remains intact.
 
@@ -1205,7 +1206,7 @@ jobs:
         with:
           first_name: Mona
           middle_name: The
-          last_name: Octocat      
+          last_name: Octocat
 ```
 
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepswithargs)`jobs.<job_id>.steps[*].with.args`
@@ -1303,10 +1304,10 @@ strategy:
   matrix:
     node: [10, 12, 14]
 steps:
-  
+
   - uses: actions/setup-node@v2
     with:
-      
+
       node-version: ${{ matrix.node }}
 ```
 
@@ -1346,8 +1347,8 @@ strategy:
     os: [macos-latest, windows-latest, ubuntu-18.04]
     node: [8, 10, 12, 14]
     include:
-      
-      
+
+
       - os: windows-latest
         node: 8
         npm: 6
@@ -1380,7 +1381,7 @@ strategy:
     os: [macos-latest, windows-latest, ubuntu-18.04]
     node: [8, 10, 12, 14]
     exclude:
-      
+
       - os: macos-latest
         node: 8
 ```
@@ -1556,12 +1557,12 @@ This example creates two services: nginx and redis. When you specify the Docker 
 services:
   nginx:
     image: nginx
-    
+
     ports:
       - 8080:80
   redis:
     image: redis
-    
+
     ports:
       - 6379/tcp
 ```
@@ -1680,7 +1681,7 @@ jobs:
   call-workflow:
     uses: octo-org/example-repo/.github/workflows/called-workflow.yml@main
     secrets:
-      access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} 
+      access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
 
 ## [](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_idsecretssecret_id)`jobs.<job_id>.secrets.<secret_id>`

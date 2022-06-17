@@ -49,15 +49,18 @@ template: docs
 
 <br>
 <br>
-<br><br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
 <details>
 
-<summary> 📰📰 BLOG 📰📰 </h6></summary>
+<summary> 📰📰 BLOG 📰📰 </h6>
+</summary>
 
 ##### [**<ins>Blog Article List</ins>**](https://bgoonz-blog.netlify.app/blog)
 

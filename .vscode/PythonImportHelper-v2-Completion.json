@@ -1,53 +1,38 @@
 [
     {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "shutil",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "flask",
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
         "documentation": {}
     },
     {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "os",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "flask",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "sys",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "flask",
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
         "documentation": {}
     },
     {
-        "label": "form",
-        "kind": 2,
-        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "peekOfCode": "def form():\n    return render_template(\"form.html\")\n@app.route(\"/hello\", methods=[\"GET\", \"POST\"])\ndef hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":\n    app.run()",
-        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "documentation": {}
-    },
-    {
-        "label": "hello",
-        "kind": 2,
-        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "peekOfCode": "def hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":\n    app.run()",
-        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "documentation": {}
-    },
-    {
-        "label": "app",
+        "label": "dr",
         "kind": 5,
-        "importPath": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "description": "docs.content.learning-area.html.forms.sending-form-data.python-example",
-        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\", methods=[\"GET\", \"POST\"])\ndef form():\n    return render_template(\"form.html\")\n@app.route(\"/hello\", methods=[\"GET\", \"POST\"])\ndef hello():\n    return render_template(\"greeting.html\",\n                           say=request.form[\"say\"],\n                           to=request.form[\"to\"])\nif __name__ == \"__main__\":",
-        "detail": "docs.content.learning-area.html.forms.sending-form-data.python-example",
+        "importPath": "notes.articles.NODE.rename",
+        "description": "notes.articles.NODE.rename",
+        "peekOfCode": "dr = sys.argv[1]\nfor root, dirs, files in os.walk('./'):\n    for f in files:\n        shutil.move(root+\"/\"+f, root+\"/\"+root.split(\"/\")[-1]+f)",
+        "detail": "notes.articles.NODE.rename",
         "documentation": {}
     }
 ]
