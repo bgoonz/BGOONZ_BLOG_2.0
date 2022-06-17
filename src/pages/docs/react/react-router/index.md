@@ -751,7 +751,7 @@ Let's put it all together from the top!
 
 1.  You render your app:
 
-    ```
+ ```
     ReactDOM.render(
       <BrowserRouter>
         <Routes>
@@ -772,7 +772,7 @@ Let's put it all together from the top!
       </BrowserRouter>,
       document.getElementById("root")
     );
-    ```
+ ```
 
 2.  `<BrowserRouter>` creates a [history](https://reactrouter.com/docs/en/v6/getting-started/concepts#history), puts the initial [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location) in to state, and subscribes to the [URL](https://reactrouter.com/docs/en/v6/getting-started/concepts#url).
 3.  `<Routes>` recurses it's [child routes](https://reactrouter.com/docs/en/v6/getting-started/concepts#child-route) to build a [route config](https://reactrouter.com/docs/en/v6/getting-started/concepts#route-config), matches those routes against the [location](https://reactrouter.com/docs/en/v6/getting-started/concepts#location), creates some route [matches](https://reactrouter.com/docs/en/v6/getting-started/concepts#match), and renders the first match's route element.
