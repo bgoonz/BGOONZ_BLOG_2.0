@@ -16,8 +16,5 @@ thumb_image: images/dense-js-code.jpg
 
 ## Blog Archive
 
- <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  width="100%" height="100%" src="https://bgoonz.blogspot.com/"
-            clipboard-write;
-            allowfullscreen>
-</iframe>
+ <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" s    style="z-index:10; overflow:scroll;resize:both;"  width="100%" height="100%" src="https://bgoonz.blogspot.com/" ></iframe>
 <br>
