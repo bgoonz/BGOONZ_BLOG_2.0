@@ -4,6 +4,34 @@ template: docs
 excerpt: 'The Node.js process.nextTick function interacts with the event loop in a special way'
 ---
 
+
+
+find . -name "*.md" -type f | rename 's/0//g'
+
+find . -name "*.md" -type f | rename 's/1//g'
+find . -name "*.md" -type f | rename 's/2//g'
+find . -name "*.md" -type f | rename 's/3//g'
+find . -name "*.md" -type f | rename 's/4//g'
+find . -name "*.md" -type f | rename 's/5//g'
+find . -name "*.md" -type f | rename 's/6//g'
+find . -name "*.md" -type f | rename 's/7//g'
+find . -name "*.md" -type f | rename 's/8//g'
+find . -name "*.md" -type f | rename 's/9//g'
+
+
+
+
+find . -name "*.md" -type f | rename 's/0//‘* {} +
+find . -type d -exec rename ’s/1//g’ {} +
+find . -type d -exec rename ’s/2//g’ {} +
+find . -type d -exec rename ’s/3//g’ {} +
+find . -type d -exec rename ’s/4//g’ {} +
+find . -type d -exec rename ’s/5//g’ {} +
+find . -type d -exec rename ’s/6//g’ {} +
+find . -type d -exec rename ’s/7//g’ {} +
+find . -type d -exec rename ’s/8//g’ {} +
+find . -type d -exec rename ’s/9//g’ {} +
+
 As you try to understand the Node.js event loop, one important part of it is `process.nextTick()`.
 
 Every time the event loop takes a full trip, we call it a tick.
