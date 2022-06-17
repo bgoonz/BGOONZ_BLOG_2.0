@@ -1,0 +1,5 @@
+{
+  "evenBetterToml.schema.associations": {
+    ".*netlify\\.toml": "./.netlify/netlify.toml.schema.json"
+  }
+}
