@@ -42,7 +42,5 @@
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
     },
-    "devDependencies": {
-        "gatsby-remark-code-buttons": "^2.0.7"
-    }
+
 }
