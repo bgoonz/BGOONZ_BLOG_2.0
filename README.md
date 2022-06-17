@@ -565,8 +565,6 @@ helpful reference guides
 
 ### [Tips](/docs/tips/)
 
-lorem-ipsum
-
 [Learn More](/docs/tips/)
 
 ### [Tools](/docs/tools/)
@@ -971,8 +969,6 @@ helpful reference guides
 [Learn More](/docs/reference/)
 
 ### [Tips](/docs/tips/)
-
-lorem-ipsum
 
 [Learn More](/docs/tips/)
 

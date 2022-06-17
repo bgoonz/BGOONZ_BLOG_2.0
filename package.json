@@ -1,7 +1,7 @@
 {
     "name": "bgoonzblog2",
     "description": "bgoonzblog2",
-    "version": "1.4.3",
+    "version": "1.4.5",
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
@@ -23,8 +23,9 @@
         "gatsby-remark-prismjs": "^6.15.0",
         "gatsby-remark-prismjs-copy-button": "^0.3.1",
         "gatsby-source-filesystem": "2.3.10",
-        "gatsby-transformer-remark": "^2.8.14",
-        "js-yaml": "3.12.2",
+        "gatsby-transformer-remark": "^5.16.0",
+        "graphql": "^14.7.0",
+        "js-yaml": "^4.1.0",
         "lodash": "^4.17.21",
         "marked": "0.6.1",
         "moment": "^2.29.3",
@@ -40,9 +41,5 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
-    },
-    "devDependencies": {
-        "eslint": "^8.17.0",
-        "gatsby-remark-code-buttons": "^2.0.7"
     }
 }
