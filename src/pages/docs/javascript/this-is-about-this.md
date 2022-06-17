@@ -33,6 +33,7 @@ Given the following function:
 
 
 ```js
+//
 
 
 function foo() {
@@ -43,6 +44,7 @@ function foo() {
 these would be the values of `this` if called in those specific ways:
 
 ```js
+//
 // "normal call": global object / window in browsers
 //                undefined in strict mode
 foo();
@@ -64,6 +66,7 @@ In general, the `this` references the object of which the function is a property
 Suppose you have an object called `counter` that has a method `next()`. When you call the `next()` method, you can access the `this` object.
 
 ```js
+//
 let counter = {
   count: 0,
   next: function () {
@@ -77,6 +80,7 @@ counter.next();Code language: JavaScript (javascript)
 Inside the `next()` function, the `this` references the `counter` object. See the following method call:
 
 ```js
+//
 counter.next();Code language: CSS (css)
 ```
 
@@ -89,12 +93,14 @@ In the global context, the `this` references the [global object](https://www.jav
 This behavior is consistent in both strict and non-strict modes. Here's the output on the web browser:
 
 ```js
+//
 console.log(this === window); // trueCode language: JavaScript (javascript)
 ```
 
 If you assign a property to `this` object in the global context, JavaScript will add the property to the global object as shown in the following example:
 
 ```js
+//
 this.color= 'Red';
 console.log(window.color); // 'Red'Code language: JavaScript (javascript)
 ```
@@ -118,6 +124,7 @@ In the non-strict mode, the `this` references the global object when the functio
 
 
 ```js
+//
 
 
 function show() {
@@ -132,12 +139,14 @@ When you call the `show()` function, the `this` references the [global object](h
 Calling the `show()` function is the same as:
 
 ```js
+//
 window.show();Code language: JavaScript (javascript)
 ```
 
 In the strict mode, JavaScript sets the `this` inside a function to `undefined`. For example:
 
 ```js
+//
 "use strict";
 
 function show() {
@@ -155,6 +164,7 @@ Note that the strict mode has been available since ECMAScript 5.1. The `strict` 
 
 
 ```js
+//
 
 
 function show() {
@@ -173,6 +183,7 @@ show();Code language: JavaScript (javascript)
 Output:
 
 ```js
+//
 true
 trueCode language: JavaScript (javascript)
 ```
@@ -184,6 +195,7 @@ In the `display()` inner function, the `this` also set to `undefined` as shown i
 When you call a method of an object, JavaScript sets `this` to the object that owns the method. See the following `car` object:
 
 ```js
+//
 let car = {
     brand: 'Honda',
     getBrand: function () {
@@ -199,12 +211,14 @@ In this example, the `this` object in the `getBrand()` method references the `ca
 Since a method is a property of an object which is a value, you can store it in a variable.
 
 ```js
+//
 let brand = car.getBrand;Code language: JavaScript (javascript)
 ```
 
 And then call the method via the variable
 
 ```js
+//
 console.log(brand()); // undefinedCode language: JavaScript (javascript)
 ```
 
@@ -213,6 +227,7 @@ You get `undefined` instead of `"Honda"` because when you call a method without 
 To fix this issue, you use the `[bind()](https://www.javascripttutorial.net/javascript-bind/)` method of the `Function.prototype` object. The `bind()` method creates a new function whose the `this` keyword is set to a specified value.
 
 ```js
+//
 let brand = car.getBrand.bind(car);
 console.log(brand()); // Honda
 Code language: JavaScript (javascript)
@@ -221,6 +236,7 @@ Code language: JavaScript (javascript)
 In this example, when you call the `brand()` method, the `this` keyword is bound to the `car` object. For example:
 
 ```js
+//
 let car = {
     brand: 'Honda',
     getBrand: function () {
@@ -239,6 +255,7 @@ console.log(brand());Code language: JavaScript (javascript)
 Output:
 
 ```js
+//
 Harley Davidson
 ```
 
@@ -254,6 +271,7 @@ The following example declares a `Car` function, then invokes it as a constructo
 
 
 ```js
+//
 
 
 function Car(brand) {
@@ -275,6 +293,7 @@ JavaScript creates a new object and sets `this` to the newly created object. Thi
 Now, you can invoke the `Car()` as a function or as a constructor. If you omit the `new` keyword as follows:
 
 ```js
+//
 var bmw = Car('BMW');
 console.log(bmw.brand);
 // => TypeError: Cannot read property 'brand' of undefinedCode language: JavaScript (javascript)
@@ -288,6 +307,7 @@ To make sure that the `Car()` function is always invoked using constructor invoc
 
 
 ```js
+//
 
 
 function Car(brand) {
@@ -306,6 +326,7 @@ You can modify the `Car()` function that uses the `new.target` metaproperty as f
 
 
 ```js
+//
 
 
 function Car(brand) {
@@ -326,6 +347,7 @@ The `Function` type has two methods: `[call()](https://www.javascripttutorial.ne
 
 
 ```js
+//
 
 
 function getBrand(prefix) {
@@ -346,6 +368,7 @@ getBrand.call(audi, "It's an ");Code language: JavaScript (javascript)
 Output:
 
 ```js
+//
 It's a Honda
 It's an AudiCode language: PHP (php)
 ```
@@ -355,6 +378,7 @@ In this example, we called the `getBrand()` function indirectly using the `call(
 The `apply()` method is similar to the `call()` method except that its second argument is an array of arguments.
 
 ```js
+//
 getBrand.apply(honda, ["It's a "]); // "It's a Honda"
 getBrand.apply(audi, ["It's an "]); // "It's a Audi"Code language: JavaScript (javascript)
 ```
@@ -366,6 +390,7 @@ getBrand.apply(audi, ["It's an "]); // "It's a Audi"Code language: JavaScript (j
 It means the arrow function does not create its own [execution context](https://www.javascripttutorial.net/javascript-execution-context/) but inherits the `this` from the outer function where the arrow function is defined. See the following example:
 
 ```js
+//
 let getThis = () => this;
 console.log(getThis() === window); // trueCode language: JavaScript (javascript)
 ```
@@ -378,6 +403,7 @@ Since an arrow function does not create its own execution context, defining a me
 
 
 ```js
+//
 
 
 function Car() {

@@ -163,6 +163,15 @@
                         "type": "action"
                     },
                     {
+                        "label": "Web Dev Setup",
+                        "url": "https://bgoonz-blog.netlify.app/blog/webdev-setup/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "OG-Blog",
                         "url": "https://web-dev-resource-hub.netlify.app/",
                         "style": "primary",
@@ -190,35 +199,6 @@
                     }
                 ],
                 "new_window": false
-            },
-            {
-                "label": "Admin",
-                "url": "https://bgoonz-blog.netlify.app/admin/",
-                "style": "primary",
-                "icon_class": "github",
-                "type": "action_menu",
-                "no_follow": false,
-                "has_subnav": true,
-                "subnav_links": [{
-                        "label": "Write Docs",
-                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/docs",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Write Blog",
-                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    }
-                ],
-                "new_window": true
             },
             {
                 "label": "Projects",

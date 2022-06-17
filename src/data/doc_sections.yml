@@ -1,20 +1,22 @@
 root_docs_path: /docs
 sections:
     - about
+    - archive
     - articles
     - audio
-    - archive
     - career
     - community
     - content
     - css
     - docs
     - ds-algo
+    - ds-algo🖧
     - faq
-    - general-structured-data-guidelines
-    - git
-    - glossary
+    - fetch-api
+    - git📁
+    - index.md
     - interact
+    - interview
     - javascript
     - js-tips
     - leetcode
@@ -28,3 +30,4 @@ sections:
     - tips
     - tools
     - tutorials
+    - typescript<Ty>
