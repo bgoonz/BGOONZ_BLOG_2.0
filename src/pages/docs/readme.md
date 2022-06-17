@@ -96,9 +96,9 @@ Icons, photos and illustrations.
 
 [Image Provider](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+## [Lorem Ipsum](https://trends.builtwith.com/widgets/)
 
-[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
@@ -926,25 +926,27 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```bash
+ ```console
+
 
     # create a new Gatsby site using the default starter
 
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 
-    ```
+ ```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
-    ```bash
+ ```console
+
 
     cd my-default-starter/
 
     gatsby develop
 
-    ```
+ ```
 
 1. **Open the source code and start editing!**
 
@@ -4134,7 +4136,7 @@ Element.prototype.closest ||
 
 # Prism.js
 
-      ```js
+   ```js
 
 //
 
@@ -6422,7 +6424,7 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
-````
+```
 
 # main.js
 
@@ -6907,7 +6909,7 @@ window.onGatsbyInitialClientRender = function () {
 
 //-----------------------------------------------------------------------
 
-````
+```
 
 ---
 

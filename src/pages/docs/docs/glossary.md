@@ -1,10 +1,10 @@
 ---
-title: lorem-ipsum
+title: HTTPS Error Codes
 weight: 0
-excerpt: lorem-ipsum
+excerpt: HTTPS Error Codes
 seo:
-    title: ''
-    description: ''
+    title: 'HTTPS Error Codes'
+    description: ' can act as a gateway or proxy (go-between) between a client (like your Web browser) and another'
     robots: []
     extra: []
 template: docs
@@ -43,7 +43,7 @@ template: docs
 
 > An _Glossary("HTTP"_) error code meaning "Bad Gateway".
 
-A _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
+ _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
 
 Normally the upstream server is not down (i.e. furnishes no response to the gateway/proxy), but does not understand the same data-exchange protocol as the gateway/proxy. Internet _Glossary("Protocol", "protocols"_) are quite explicit, and so a 502 usually means that one or both machines were incorrectly or incompletely programmed.
 
@@ -10460,7 +10460,8 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
-```bash
+```console
+
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10689,7 +10690,8 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
-```bash
+```console
+
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10764,7 +10766,8 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 A basic command looks like this:
 
-```bash
+```console
+
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10776,7 +10779,8 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 
 You can also make a connection over SSH using the `-e` option as shown:
 
-```bash
+```console
+
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 
