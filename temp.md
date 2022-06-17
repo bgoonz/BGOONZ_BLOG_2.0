@@ -20,3 +20,15 @@ git checkout renovate/node-sass-4.x
 git merge master
 
 git push -u origin renovate/node-sass-4.x
+
+If you want to do this and revert the master to the previous commit:
+
+git checkout master~4a98420          # Checkout previous commit on master
+git checkout -b new_master       # Create branch for new master
+git branch -D master             # Delete old master
+git branch -mv new_master master # Make new_master master
+Alternatively:
+
+git reset --hard master~1        # Reset current branch to one commit ago on master
+
+4a98420
