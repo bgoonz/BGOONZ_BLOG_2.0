@@ -1,12 +1,12 @@
 root_docs_path: /docs
 sections:
     - about
-    - archive📁
-    - articles🚛
-    - audio🔊
+    - archive
+    - articles
+    - audio
     - career
     - community
-    - content📁
+    - content
     - css
     - docs
     - ds-algo
@@ -21,13 +21,13 @@ sections:
     - js-tips
     - leetcode
     - netlify-cms-jamstack
-    - overflow🌊
-    - projects📽️
-    - python🐍
+    - overflow
+    - projects
+    - python
     - quick-ref
-    - react⚛️
-    - reference📚
+    - react
+    - reference
     - tips
-    - tools🧰
+    - tools
     - tutorials
     - typescript<Ty>

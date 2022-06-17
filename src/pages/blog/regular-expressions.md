@@ -1,9 +1,20 @@
 ---
 title: Regular Expressions
 template: post
+subtitle: Regular expressions are patterns used to match character combinations in string
+excerpt: Regular expressions are patterns used to match character combinations in string
 date: 2022-06-08T05:18:45.419Z
+image: https://content.breatheco.de/static/ae425479a8857181ef8dbee4f6e6651f/0a47e/39f93d0d-248e-4e94-b402-b744c4b06a4d.png
+thumb_image: https://content.breatheco.de/static/ae425479a8857181ef8dbee4f6e6651f/0a47e/39f93d0d-248e-4e94-b402-b744c4b06a4d.png
 image_position: right
-show_author_bio: false
+author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/content-management.yaml
+tags:
+  - src/data/tags/cms.yaml
+show_author_bio: true
+related_posts:
+  - src/pages/blog/code-playgrounds-of-2021.md
 cmseditable: true
 ---
 
