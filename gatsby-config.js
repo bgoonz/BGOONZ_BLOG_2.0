@@ -16,17 +16,7 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                plugins: ['gatsby-remark-prismjs'],
-            },
-        },
-        {
-            resolve: 'gatsby-remark-code-buttons',
-            options: {
-
-                // Optional toaster text. Defaults to ''.
-                toasterText: 'customToasterText',
-                // Optional toaster duration. Defaults to 3500.
-                toasterDuration: 5000
+                plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
             },
         },
         {

@@ -565,7 +565,6 @@ helpful reference guides
 
 ### [Tips](/docs/tips/)
 
-
 [Learn More](/docs/tips/)
 
 ### [Tools](/docs/tools/)
@@ -970,8 +969,6 @@ helpful reference guides
 [Learn More](/docs/reference/)
 
 ### [Tips](/docs/tips/)
-
-
 
 [Learn More](/docs/tips/)
 
