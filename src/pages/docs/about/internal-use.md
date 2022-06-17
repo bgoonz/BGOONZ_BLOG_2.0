@@ -43,6 +43,16 @@ template: docs
 - https://blog20-preview.netlify.app/
 - 
 
+
+Site Name:  bgoonz-blog
+Site Url:   https://bgoonz-blog.netlify.app
+Site Repo:  https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Site Id:    a1b7ee1a-11a7-4bd2-a341-2260656e216f
+Admin URL:  https://app.netlify.com/sites/bgoonz-blog
+
+
+
+
 ### Repos
 
 #### [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)

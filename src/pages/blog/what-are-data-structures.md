@@ -2,27 +2,28 @@
 title: What are data structures
 template: post
 subtitle: Data structures, at a high level, are techniques for storing and
-  organizing data that make it easier to modify, navigate, and access. Data
-  structures determine how data is collected, the functions we can use to access
-  it, and the relationships between data.
+    organizing data that make it easier to modify, navigate, and access. Data
+    structures determine how data is collected, the functions we can use to access
+    it, and the relationships between data.
 excerpt: Data structures, at a high level, are techniques for storing and
-  organizing data that make it easier to modify, navigate, and access. Data
-  structures determine how data is collected, the functions we can use to access
-  it, and the relationships between data.
+    organizing data that make it easier to modify, navigate, and access. Data
+    structures determine how data is collected, the functions we can use to access
+    it, and the relationships between data.
 date: 2022-06-07T06:06:13.244Z
 image: https://i.imgur.com/zaS4mm7.png
 thumb_image: https://i.imgur.com/zaS4mm7.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/ds-algo.yaml
+    - src/data/categories/ds-algo.yaml
 tags:
-  - src/data/tags/data-structures-algorithms.yaml
+    - src/data/tags/data-structures-algorithms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 ## What are data structures
@@ -33,11 +34,11 @@ Data structures are used in almost all areas of computer science and programmin
 
 Data structures enable us to:
 
-* Manage and utilize large datasets
-* Search for particular data from a database
-* Design algorithms that are tailored towards particular programs
-* Handle multiple requests from users at once
-* Simplify and speed up data processing
+-   Manage and utilize large datasets
+-   Search for particular data from a database
+-   Design algorithms that are tailored towards particular programs
+-   Handle multiple requests from users at once
+-   Simplify and speed up data processing
 
 Data structures are vital for efficient, real-world problem solving. After all, the way we organize data has a lot of impact on performance and useability. In fact, most top companies require a strong understanding of data structures.
 
@@ -55,19 +56,19 @@ The most basic of all data structures, an array stores data in memory for later 
 
 Advantages
 
-* Simple to create and use.
-* Foundational building block for complex data structures
+-   Simple to create and use.
+-   Foundational building block for complex data structures
 
 Disadvantages
 
-* Fixed size
-* Expensive to insert/delete or resequence values
-* Inefficient to sort
+-   Fixed size
+-   Expensive to insert/delete or resequence values
+-   Inefficient to sort
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications)Applications
 
-* Basic spreadsheets
-* Within complex structures such as hash tables
+-   Basic spreadsheets
+-   Within complex structures such as hash tables
 
 ## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#2-queues)2. Queues
 
@@ -81,19 +82,19 @@ For a visual, consider a single-lane tunnel: the first car to enter is the first
 
 Advantages
 
-* Dynamic size
-* Orders data in the order it was received
-* Low runtime
+-   Dynamic size
+-   Orders data in the order it was received
+-   Low runtime
 
 Disadvantages
 
-* Can only retrieve the oldest element
+-   Can only retrieve the oldest element
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-1)Applications
 
-* Effective as a buffer when receiving frequent data
-* Convenient way to store order-sensitive data such as stored voicemails
-* Ensures the oldest data is processed first
+-   Effective as a buffer when receiving frequent data
+-   Convenient way to store order-sensitive data such as stored voicemails
+-   Ensures the oldest data is processed first
 
 ## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#3-linked-list)3. Linked List
 
@@ -105,18 +106,18 @@ This system allows efficient insertion and removal of items without the need for
 
 Advantages
 
-* Efficient insertion and removal of new elements
-* Less complex than restructuring an array
+-   Efficient insertion and removal of new elements
+-   Less complex than restructuring an array
 
 Disadvantages
 
-* Uses more memory than arrays
-* Inefficient to retrieve a specific element
-* Inefficient to traverse the list backward
+-   Uses more memory than arrays
+-   Inefficient to retrieve a specific element
+-   Inefficient to traverse the list backward
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-2)Applications
 
-* Best used when data must be added and removed in quick succession from unknown locations
+-   Best used when data must be added and removed in quick succession from unknown locations
 
 ## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#4-trees)4. Trees
 
@@ -139,25 +140,25 @@ This type of tree is defined by four strict rules:
 
 Advantages
 
-* Ideal for storing hierarchical relationships
-* Dynamic size
-* Quick at insert and delete operations
-* In a binary search tree, inserted nodes are sequenced immediately.
-* Binary search trees are efficient at searches; length is only O(height)O(height).
+-   Ideal for storing hierarchical relationships
+-   Dynamic size
+-   Quick at insert and delete operations
+-   In a binary search tree, inserted nodes are sequenced immediately.
+-   Binary search trees are efficient at searches; length is only O(height)O(height).
 
 Disadvantages
 
-* Slow to rearrange nodes
-* Child nodes hold no information about their parent node
-* Binary search trees are not as fast as the more complicated hash table
-* Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
+-   Slow to rearrange nodes
+-   Child nodes hold no information about their parent node
+-   Binary search trees are not as fast as the more complicated hash table
+-   Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-3)Applications
 
-* Storing hierarchical data such as a file location.
-* Binary search trees are excellent for tasks needing searching or ordering of data.
+-   Storing hierarchical data such as a file location.
+-   Binary search trees are excellent for tasks needing searching or ordering of data.
 
-> *Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter.*
+> _Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter._
 
 ## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#5-graphs)5. Graphs
 
@@ -167,26 +168,26 @@ Graphs are a relation-based data structure helpful for storing web-like relation
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
-*V = {a, b, c, d}*
+_V = {a, b, c, d}_
 
-*E = {ab, ac, bc, cd}*
+_E = {ab, ac, bc, cd}_
 
 While hard to visualize at first, this structure is invaluable in conveying relationship charts in textual form, anything from circuitry to train networks.
 
 Advantages
 
-* Can quickly convey visuals over text
-* Usable to model a diverse number of subjects so long as they contain a relational structure
+-   Can quickly convey visuals over text
+-   Usable to model a diverse number of subjects so long as they contain a relational structure
 
 Disadvantages
 
-* At a higher level, text can be time-consuming to convert to an image.
-* It can be difficult to see the existing edges or how many edges a given vertex has connected to it
+-   At a higher level, text can be time-consuming to convert to an image.
+-   It can be difficult to see the existing edges or how many edges a given vertex has connected to it
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-4)Applications
 
-* Network representations
-* Modeling social networks, such as Facebook.
+-   Network representations
+-   Modeling social networks, such as Facebook.
 
 ## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#6-hash-tables-map)6. Hash Tables (Map)
 
@@ -196,20 +197,20 @@ Hash tables are a complex data structure capable of storing large amounts of inf
 
 Advantages
 
-* Key can be in any form, while array's indices must be integers
-* Highly efficient search function
-* Constant number of operations for each search
-* Constant cost for insertion or deletion operations
+-   Key can be in any form, while array's indices must be integers
+-   Highly efficient search function
+-   Constant number of operations for each search
+-   Constant cost for insertion or deletion operations
 
 Disadvantages
 
-* Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
-* These errors can be common and often require an overhaul of the hash function.
+-   Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
+-   These errors can be common and often require an overhaul of the hash function.
 
 ### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-5)Applications
 
-* Database storage
-* Address lookups by name
+-   Database storage
+-   Address lookups by name
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 

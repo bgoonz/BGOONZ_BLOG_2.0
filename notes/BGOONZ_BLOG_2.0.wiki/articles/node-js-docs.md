@@ -68,14 +68,14 @@ Now, create an empty project folder called `projects`, then navigate into it.
 
 Linux and Mac:
 
-```console
+```
 $ mkdir ~/projects
 $ cd ~/projects
 ```
 
 Windows CMD:
 
-```console
+```
 > mkdir %USERPROFILE%\projects
 > cd %USERPROFILE%\projects
 ```
@@ -454,7 +454,7 @@ Tests for deep equality between the `actual` and `expected` parameters. "Deep" e
 -   Recursion stops when both sides differ or both sides encounter a circular reference.
 -   [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) comparison does not rely on their values. See below for further details.
 
-```
+````
 import assert from 'assert/strict';
 
 
@@ -531,7 +531,7 @@ If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.1
 
 Expects the `string` input not to match the regular expression.
 
-```
+````
 
 import assert from 'assert/strict';
 
@@ -4890,7 +4890,7 @@ Local<Context> context) {
 
 }
 
-```
+````
 
 Another option is to use the macro `NODE_MODULE_INIT()`, which will also construct a context-aware addon. Unlike `NODE_MODULE()`, which is used to construct an addon around a given addon initializer function, `NODE_MODULE_INIT()` serves as the declaration of such an initializer to be followed by a function body.
 
@@ -4906,11 +4906,11 @@ The context-aware addon can be structured to avoid global static data by perform
 
 -   Define a class which will hold per-addon-instance data and which has a static member of the form
 
- ```
+    ```
     static void DeleteInstance(void* data) {
 
     }
- ```
+    ```
 
 -   Heap-allocate an instance of this class in the addon initializer. This can be accomplished using the `new` keyword.
 -   Call `node::AddEnvironmentCleanupHook()`, passing it the above-created instance and a pointer to `DeleteInstance()`. This will ensure the instance is deleted when the environment is torn down.
@@ -4921,7 +4921,7 @@ This will ensure that the per-addon-instance data reaches each binding that can 
 
 The following example illustrates the implementation of a context-aware addon:
 
-```
+````
 
 #include <node.h>
 
@@ -6045,7 +6045,7 @@ napi_throw_error(env, ...);
 return;
 }
 
-```
+````
 
 The end result is that the addon only uses the exported C APIs. As a result, it still gets the benefits of the ABI stability provided by the C API.
 
@@ -6059,29 +6059,29 @@ Although Node-API provides an ABI stability guarantee, other parts of Node.js do
 
 -   the Node.js C++ APIs available via any of
 
- ```
+    ```
     #include <node.h>
     #include <node_buffer.h>
     #include <node_version.h>
     #include <node_object_wrap.h>
- ```
+    ```
 
 -   the libuv APIs which are also included with Node.js and available via
 
- ```
+    ```
     #include <uv.h>
- ```
+    ```
 
 -   the V8 API available via
 
- ```
+    ```
     #include <v8.h>
- ```
+    ```
 
 
 Thus, for an addon to remain ABI-compatible across Node.js major versions, it must use Node-API exclusively by restricting itself to using
 
-```
+````
 
 #include <node_api.h>
 
@@ -17197,7 +17197,7 @@ console.log(key1.toString('hex'));
 const key2 = scryptSync('password', 'salt', 64, { N: 1024 });
 console.log(key2.toString('hex'));
 
-```
+````
 
 #### `crypto.secureHeapUsed()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptosecureheapused)
 
@@ -17347,12 +17347,12 @@ When passing strings to cryptographic APIs, consider the following factors.
 
 -   Similarly, when converting random or pseudorandom byte sequences to UTF-8 strings, subsequences that do not represent valid code points may be replaced by the Unicode replacement character (`U+FFFD`). The byte representation of the resulting Unicode string may, therefore, not be equal to the byte sequence that the string was created from.
 
- ```
+    ```
     const original = [0xc0, 0xaf];
     const bytesAsString = Buffer.from(original).toString('utf8');
     const stringAsBytes = Buffer.from(bytesAsString, 'utf8');
     console.log(stringAsBytes);
- ```
+    ```
 
     The outputs of ciphers, hash functions, signature algorithms, and key derivation functions are pseudorandom byte sequences and should not be used as Unicode strings.
 
@@ -17396,7 +17396,7 @@ CCM is one of the supported [AEAD algorithms](https://en.wikipedia.org/wiki/Auth
 -   As CCM processes the whole message at once, `update()` must be called exactly once.
 -   Even though calling `update()` is sufficient to encrypt/decrypt the message, applications _must_ call `final()` to compute or verify the authentication tag.
 
-```
+````
 
 import { Buffer } from 'buffer';
 const {
@@ -20747,7 +20747,7 @@ const n = m + z;
 
 }
 
-```
+````
 
 Any use of the JavaScript `throw` mechanism will raise an exception that _must_ be handled using `try…catch` or the Node.js process will exit immediately.
 
@@ -20757,7 +20757,7 @@ Errors that occur within _Asynchronous APIs_ may be reported in multiple ways:
 
 -   Most asynchronous methods that accept a `callback` function will accept an `Error` object passed as the first argument to that function. If that first argument is not `null` and is an instance of `Error`, then an error occurred that should be handled.
 
- ```
+    ```
     const fs = require('fs');
     fs.readFile('a file that does not exist', (err, data) => {
       if (err) {
@@ -20766,11 +20766,11 @@ Errors that occur within _Asynchronous APIs_ may be reported in multiple ways:
       }
 
     });
- ```
+    ```
 
 -   When an asynchronous method is called on an object that is an [`EventEmitter`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter), errors can be routed to that object's `'error'` event.
 
- ```
+    ```
     const net = require('net');
     const connection = net.connect('localhost');
 
@@ -20783,7 +20783,7 @@ Errors that occur within _Asynchronous APIs_ may be reported in multiple ways:
     });
 
     connection.pipe(process.stdout);
- ```
+    ```
 
 -   A handful of typically asynchronous methods in the Node.js API may still use the `throw` mechanism to raise exceptions that must be handled using `try…catch`. There is no comprehensive list of such methods; please refer to the documentation of each method to determine the appropriate error handling mechanism required.
 
@@ -20792,7 +20792,7 @@ The use of the `'error'` event mechanism is most common for [stream-based](https
 
 For _all_ [`EventEmitter`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) objects, if an `'error'` event handler is not provided, the error will be thrown, causing the Node.js process to report an uncaught exception and crash unless either: The [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html) module is used appropriately or a handler has been registered for the [`'uncaughtException'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-uncaughtexception) event.
 
-```
+````
 
 const EventEmitter = require('events');
 const ee = new EventEmitter();
@@ -34772,7 +34772,7 @@ console.log(english.format(january));
 
 console.log(spanish.format(january));
 
-```
+````
 
 This mode provides a balance between features and binary size.
 
@@ -34782,15 +34782,15 @@ If the `small-icu` option is used, one can still provide additional locale data 
 
 -   The [`NODE_ICU_DATA`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_node_icu_datafile) environment variable:
 
- ```
+    ```
     env NODE_ICU_DATA=/some/directory node
- ```
+    ```
 
 -   The [`--icu-data-dir`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--icu-data-dirfile) CLI parameter:
 
- ```
+    ```
     node --icu-data-dir=/some/directory
- ```
+    ```
 
 
 (If both are specified, the `--icu-data-dir` CLI parameter takes precedence.)
@@ -34807,7 +34807,7 @@ This option makes the resulting binary link against ICU statically and include a
 
 To verify that ICU is enabled at all (`system-icu`, `small-icu`, or `full-icu`), simply checking the existence of `Intl` should suffice:
 
-```
+````
 
 const hasICU = typeof Intl === 'object';
 
@@ -37412,7 +37412,7 @@ A [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_n
 }
 }
 
-```
+````
 
 This can be done if both the CommonJS and ES module versions of the package are equivalent, for example because one is the transpiled output of the other; and the package’s management of state is carefully isolated (or the package is stateless).
 
@@ -37422,28 +37422,28 @@ Aside from writing a stateless package (if JavaScript’s `Math` were a package,
 
 1.  If possible, contain all state within an instantiated object. JavaScript’s `Date`, for example, needs to be instantiated to contain state; if it were a package, it would be used like this:
 
- ```
+    ```
     import Date from 'date';
     const someDate = new Date();
- ```
+    ```
 
     The `new` keyword isn’t required; a package’s function can return a new object, or modify a passed-in object, to keep the state external to the package.
 
 2.  Isolate the state in one or more CommonJS files that are shared between the CommonJS and ES module versions of the package. For example, if the CommonJS and ES module entry points are `index.cjs` and `index.mjs`, respectively:
 
- ```
+    ```
 
     const state = require('./state.cjs');
     module.exports.state = state;
- ```
+    ```
 
- ```
+    ```
 
     import state from './state.cjs';
     export {
       state
     };
- ```
+    ```
 
     Even if `pkg` is used via both `require` and `import` in an application (for example, via `import` in application code and via `require` by a dependency) each reference of `pkg` will contain the same state; and modifying that state from either module system will apply to both.
 
@@ -37460,7 +37460,7 @@ Even with isolated state, there is still the cost of possible extra code executi
 
 As with the previous approach, a variant of this approach not requiring conditional exports for consumers could be to add an export, e.g. `"./module"`, to point to an all-ES module-syntax version of the package:
 
-```
+````
 
 {
 "type": "module",
@@ -44536,7 +44536,7 @@ This use of the [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html
 
 -   Uncaught exceptions only emit the [`'uncaughtException'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-uncaughtexception) event in the standalone REPL. Adding a listener for this event in a REPL within another Node.js program results in [`ERR_INVALID_REPL_INPUT`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_repl_input).
 
- ```
+    ```
     const r = repl.start();
 
     r.write('process.on("uncaughtException", () => console.log("Foobar"));\n');
@@ -44545,7 +44545,7 @@ This use of the [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html
 
 
     r.close();
- ```
+    ```
 
 -   Trying to use [`process.setUncaughtExceptionCaptureCallback()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsetuncaughtexceptioncapturecallbackfn) throws an [`ERR_DOMAIN_CANNOT_SET_UNCAUGHT_EXCEPTION_CAPTURE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_domain_cannot_set_uncaught_exception_capture) error.
 
@@ -52033,7 +52033,7 @@ console.log(util.inspect(util, { showHidden: true, depth: null }));
 
 The following example highlights the effect of the `compact` option:
 
-```
+````
 const util = require('util');
 
 const o = {
@@ -52052,7 +52052,7 @@ console.log(util.inspect(o, { compact: false, depth: 5, breakLength: 80 }));```
 
 The `showHidden` option allows [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries to be inspected. If there are more entries than `maxArrayLength`, there is no guarantee which entries are displayed. That means retrieving the same [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries twice may result in different output. Furthermore, entries with no remaining strong references may be garbage collected at any time.
 
-```
+````
 
 const { inspect } = require('util');
 
@@ -54497,7 +54497,7 @@ throw new Error(`Unable to resolve dependency: ${specifier}`);
 }
 await bar.link(linker);await bar.evaluate();
 
-```
+````
 
 #### `module.dependencySpecifiers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_moduledependencyspecifiers)
 
@@ -54543,17 +54543,17 @@ The identifier of the current module, as set in the constructor.
 -   `linker` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
     -   `specifier` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The specifier of the requested module:
 
- ```
+        ```
         import foo from 'foo';
- ```
+        ```
 
     -   `extra` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
         -   `assert` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) The data from the assertion:
 
-     ```
+            ```
             import foo from 'foo' assert { name: 'value' };
-     ```
+            ```
 
             Per ECMA-262, hosts are expected to ignore assertions that they do not support, as opposed to, for example, triggering an error if an unsupported assertion is present.
     -   `referencingModule` [<vm.Module>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmmodule) The `Module` object `link()` is called on.
@@ -54642,7 +54642,7 @@ Creates a new `SourceTextModule` instance.
 
 Properties assigned to the `import.meta` object that are objects may allow the module to access information outside the specified `context`. Use `vm.runInContext()` to create objects in a specific context.
 
-```
+````
 
 import vm from 'vm';
 
