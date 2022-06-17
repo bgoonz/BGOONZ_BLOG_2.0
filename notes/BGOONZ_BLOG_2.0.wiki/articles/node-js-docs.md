@@ -7326,8 +7326,8 @@ Added in: v10.2.0 N-API version: 3
 
 ```
 
-NODE_EXTERN napi_status napi_add_env_cleanup_hook(napi_env env,
-void (_fun)(void_ arg),
+NODE*EXTERN napi_status napi_add_env_cleanup_hook(napi_env env,
+void (\_fun)(void* arg),
 void\* arg);
 
 ```
@@ -7348,8 +7348,8 @@ Added in: v10.2.0 N-API version: 3
 
 ```
 
-NAPI_EXTERN napi_status napi_remove_env_cleanup_hook(napi_env env,
-void (_fun)(void_ arg),
+NAPI*EXTERN napi_status napi_remove_env_cleanup_hook(napi_env env,
+void (\_fun)(void* arg),
 void\* arg);
 
 ```
@@ -7669,10 +7669,10 @@ Added in: v8.0.0 N-API version: 1
 
 ```
 
-napi_status napi_create_arraybuffer(napi_env env,
+napi*status napi_create_arraybuffer(napi_env env,
 size_t byte_length,
-void\*_ data,
-napi_value_ result)
+void\** data,
+napi*value* result)
 
 ```
 
@@ -7693,10 +7693,10 @@ Added in: v8.0.0 N-API version: 1
 
 ```
 
-napi_status napi_create_buffer(napi_env env,
+napi*status napi_create_buffer(napi_env env,
 size_t size,
-void\*_ data,
-napi_value_ result)
+void\** data,
+napi*value* result)
 
 ```
 
@@ -8207,10 +8207,10 @@ Added in: v8.0.0 N-API version: 1
 
 ```
 
-napi_status napi_get_arraybuffer_info(napi_env env,
+napi*status napi_get_arraybuffer_info(napi_env env,
 napi_value arraybuffer,
-void\*_ data,
-size_t_ byte_length)
+void\** data,
+size*t* byte_length)
 
 ```
 
@@ -8231,10 +8231,10 @@ Added in: v8.0.0 N-API version: 1
 
 ```
 
-napi_status napi_get_buffer_info(napi_env env,
+napi*status napi_get_buffer_info(napi_env env,
 napi_value value,
-void\*_ data,
-size_t_ length)
+void\** data,
+size*t* length)
 
 ```
 
@@ -8273,12 +8273,12 @@ Added in: v8.0.0 N-API version: 1
 
 ```
 
-napi_status napi_get_typedarray_info(napi_env env,
+napi*status napi_get_typedarray_info(napi_env env,
 napi_value typedarray,
 napi_typedarray_type* type,
 size_t* length,
-void\*_ data,
-napi_value_ arraybuffer,
+void\** data,
+napi*value* arraybuffer,
 size_t\* byte_offset)
 
 ```
@@ -49324,6 +49324,7 @@ This function is only called if the certificate passed all other checks, such as
 ### `tls.connect(options[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsconnectoptions-callback)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
     -   `enableTrace`: See [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener)
     -   `host` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Host the client should connect to. **Default:** `'localhost'`.
     -   `port` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Port the client should connect to.
@@ -49348,6 +49349,7 @@ This function is only called if the certificate passed all other checks, such as
     -   `onread` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If the `socket` option is missing, incoming data is stored in a single `buffer` and passed to the supplied `callback` when data arrives on the socket, otherwise the option is ignored. See the `onread` option of [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) for details.
     -   ...: [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) options that are used if the `secureContext` option is missing, otherwise they are ignored.
     -   ...: Any [`socket.connect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectoptions-connectlistener) option not already listed.
+
 -   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.TLSSocket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlstlssocket)
 
@@ -49496,6 +49498,7 @@ where `secureSocket` has the same API as `pair.cleartext`.
 ### `tls.createServer([options][, secureConnectionListener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
     -   `ALPNProtocols`: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<Buffer\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) An array of strings, `Buffer`s or `TypedArray`s or `DataView`s, or a single `Buffer` or `TypedArray` or `DataView` containing the supported ALPN protocols. `Buffer`s should have the format `[len][name][len][name]...` e.g. `0x05hello0x05world`, where the first byte is the length of the next protocol name. Passing an array is usually much simpler, e.g. `['hello', 'world']`. (Protocols should be ordered by their priority.)
     -   `clientCertEngine` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Name of an OpenSSL engine which can provide the client certificate.
     -   `enableTrace` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true`, [`tls.TLSSocket.enableTrace()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlssocketenabletrace) will be called on new connections. Tracing can be enabled after the secure connection is established, but this option must be used to trace the secure connection setup. **Default:** `false`.
@@ -49516,6 +49519,7 @@ where `secureSocket` has the same API as `pair.cleartext`.
     -   `pskIdentityHint` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) optional hint to send to a client to help with selecting the identity during TLS-PSK negotiation. Will be ignored in TLS 1.3. Upon failing to set pskIdentityHint `'tlsClientError'` will be emitted with `'ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED'` code.
     -   ...: Any [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) option can be provided. For servers, the identity options (`pfx`, `key`/`cert` or `pskCallback`) are usually required.
     -   ...: Any [`net.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateserveroptions-connectionlistener) option can be provided.
+
 -   `secureConnectionListener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.Server>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlsserver)
 
@@ -54490,7 +54494,7 @@ print: console.log,
 const bar = new vm.SourceTextModule(` import s from 'foo'; s; print(s);`, { context: contextifiedObject });
 async function linker(specifier, referencingModule) {
 if (specifier === 'foo') {
-return new vm.SourceTextModule(` // The "secret" variable refers to the global variable we added to // "contextifiedObject" when creating the context. export default secret; `, { context: referencingModule.context });
+return new vm.SourceTextModule(`// The "secret" variable refers to the global variable we added to // "contextifiedObject" when creating the context. export default secret;`, { context: referencingModule.context });
 
 }
 throw new Error(`Unable to resolve dependency: ${specifier}`);

@@ -55,6 +55,7 @@ Apart from customizing colors, fonts, or link style in the [Control Panel](https
 This allows you to override some of the general settings from the Control Panel. It is especially useful when you want one search box (e.g., one on the homepage) to behave differently than other ones on the site. For example, you can enable or disable the autocomplete feature using attributes. By default, it is set to `true` if autocomplete is enabled in the Control Panel. By switching the value to `false`, you can control how the element behaves.
 
 `<div class="gcse-searchbox">
+
 </div> <div class="gcse-searchresults" data-defaultToImageSearch="true">
 </div>`
 
@@ -65,6 +66,7 @@ In a similar way to customizing the search box, you can add additional options t
 For example, to change our search engine from webresults-based to image-based, we can utilize the `defaultToImageSearch` attribute.
 
 First of all, you need to enable Image Search in the [Control Panel](https://programmablesearchengine.google.com/) for your search engine. In the **Setup** section, in the **Basics** tab, click the **Image search** option into the “on” position. After that, add the `defaultToImageSearch` attribute to the `<div class="gcse-searchresults">
+
 </div>` element on your website.
 
 ### Advantages of adding Google custom search
@@ -97,14 +99,11 @@ Before starting to make a custom search engine using Expertrec, make sure that i
 4.  Enter your sitemap URL. ( if you don’t have a sitemap, you can skip this step as well).
 5.  Initiate a website crawl. (Now Expertrec crawlers will start crawling your website. This could take some time depending on the size and number of pages on your website).
 6.  Once the crawl completes, you can make changes to your search engine’s look and feel and also to the search engine’s ranking algorithm by using the control panel. There are more advanced features like search weights, promotions, synonyms, and more.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/UI-editor.jpg)
-7.  Go to the code section and add it to your website. You can also email the code to your developer and ask them to add it to their website.
-    -   the code contains two portions ( one within **<script>
-</script>** and another piece of code **<ci-search>
-</ci-search>**).
-    -   The <script>
-</script> is just the JavaScript component and can be added using Google tag manager or using the code editor.
-    -   The <ci-search>
-</ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
+7.  Go to the code section and add it to your website. You can also email the code to your developer and ask them to add it to their website. - the code contains two portions ( one within **<script>
+    </script>** and another piece of code **<ci-search>
+    </ci-search>**). - The <script>
+    </script> is just the JavaScript component and can be added using Google tag manager or using the code editor. - The <ci-search>
+    </ci-search> code adds the search box to your website. The place where you add this code determines the location of the search box.![add google search to website](https://cdn-bbeoo.nitrocdn.com/qmCVQYRCWGzHArsQEaxlonBAyCtBBIUq/assets/static/optimized/rev-5e70179/wp-content/uploads/2018/03/expertrec-cse-code.png)
 8.  It is advisable to make the code changes in a test mode or development website before taking live in your live/ production site.
 9.  As a final step, remove any website cache that you might have.
 10. Now your site search engine is live. After a few days of search engine usage, you can check out the search analytics to check out what users are searching for and reorganize your content strategy accordingly.
@@ -180,50 +179,51 @@ A search bar is necessary for a good website. Creating your own search engine fr
 
 -   **Example:** You can see that the output screen has a search bar with an option to search which shows the result from the sites or domain you have selected while creating this search bar. Moreover, this search option will automatically change as you change the sites from the control panel. Currently, the search results are been shown in the default manner. Apart from that, you can manipulate the result displaying manner and much more as directed on the below links
 
-    https://developers.google.com/custom-search/docs/element
+        https://developers.google.com/custom-search/docs/element
 
-    .
+        .
 
-    -   HTML
+        -   HTML
 
-    ## HTML
+        ## HTML
 
-    `<!DOCTYPE html>`
+        `<!DOCTYPE html>`
 
-    ` <``html``> `
+        ` <``html``> `
 
-    ` <``head``> `
+        ` <``head``> `
 
-    ` <``title``>Custom Search-Bar</``title``> `
+        ` <``title``>Custom Search-Bar</``title``> `
 
-    ` <``style``> `
+        ` <``style``> `
 
-    `body {`
+        `body {`
 
-    `background-image: linear-gradient(to left, white, green);`
+        `background-image: linear-gradient(to left, white, green);`
 
-    `color: lawngreen;`
+        `color: lawngreen;`
 
-    `}`
+        `}`
 
-    ` </``style``> `
+        ` </``style``> `
 
-    ` </``head``> `
+        ` </``head``> `
 
-    ` <``body``> `
+        ` <``body``> `
 
-    ` <``h1 ` ` style``=``"text-align: center;"``>GeeksforGeeks</``h1``> `
+        ` <``h1 ` ` style``=``"text-align: center;"``>GeeksforGeeks</``h1``> `
 
-    ` <``script ` `async` ` src``= `
+        ` <``script ` `async` ` src``= `
 
-    ` </``script``> `
+        ` </``script``> `
 
-    ` <``div ` ` class``=``"gcse-search"``>
-</``div``> `
+        ` <``div ` ` class``=``"gcse-search"``>
 
-    ` </``body``> `
+    </`div`> `
 
-    ` </``html``> `
+        ` </``body``> `
+
+        ` </``html``> `
 
 -   **Output:** ![](https://media.geeksforgeeks.org/wp-content/uploads/20200515125003/Screencast-2020-05-15-124903.gif)
 
@@ -246,6 +246,7 @@ Once you've created your Programmable Search Engine, you can add the Programmabl
 3.  In the **Details** section, click **Get code**. Copy the code and paste it into your page's HTML source code where you want the Programmable Search Element to appear.
 
 The `<div class="gcse-search">
+
 </div>` element is a placeholder - this is where the search element (both search box and search results) will be rendered.
 
 <!-- Insert your own Programmable Search Engine ID here --> <script async src="https://cse.google.com/cse.js?cx=017643444788069204610:4gvhea\_mvga">
@@ -303,6 +304,7 @@ https://my-results-page-url.com/?q=myQuery
 ```
 
 Note the _q=myQuery_ param in the address bar - this is how the `<div class="gcse-searchresults-only">
+
 </div>` element knows what query results to display.
 
 [Try it](https://programmablesearchengine.google.com/docs/element/results-only_url.html?q=test)
