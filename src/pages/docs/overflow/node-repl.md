@@ -16,12 +16,14 @@ excerpt: >-
 The `node` command is the one we use to run our Node.js scripts:
 
 ```console
+
 node script.js
 ```
 
 If we omit the filename, we use it in REPL mode:
 
 ```console
+
 node
 ```
 
@@ -30,6 +32,7 @@ node
 If you try it now in your terminal, this is what happens:
 
 ```console
+
 ❯ node
 >
 ```
@@ -43,6 +46,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 Start simple and enter
 
 ```console
+
 > console.log('test')
 test
 undefined

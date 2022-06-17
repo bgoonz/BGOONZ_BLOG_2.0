@@ -3,10 +3,10 @@ title: Web Development Tools
 subtitle: In 2021
 date: '2021-09-30'
 thumb_image_alt: image of
-excerpt: lorem-ipsum
+excerpt: tools for developers
 seo:
-    title: ''
-    description: ''
+    title: 'Web Development Tools'
+    description: 'Web Development Tools'
     robots: []
     extra: []
 template: post
