@@ -4,16 +4,14 @@
         "es6": true
     },
     "extends": "eslint:recommended",
-    "parser": "babel-eslint",
     "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": true
+        "ecmaVersion": 2018
     },
     "rules": {
-        "indent": ["warning", 4],
-        "linebreak-style": ["warning", "unix"],
-        "quotes": ["warning", "single"],
-        "semi": ["warning", "always"],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
         "no-unused-vars": 0
     }
 }
