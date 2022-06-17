@@ -26,10 +26,6 @@ cmseditable: true
 
 #### A set of questions you should use before handing off your application to the client.
 
-
-
-
-
 ![](https://cdn-images-1.medium.com/max/800/0*QD7rah374uFotVYN.jpg)
 
 First off… download this developer checklist extension for chrome that literally evaluates the checkpoints on any webpage you activate it on.. it also provides advice and html validation so that you can improve your site and it’s SEO rankings!
@@ -38,12 +34,6 @@ First off… download this developer checklist extension for chrome that literal
 *Analyses any web page for violations of best practices*chrome.google.com](https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US "https\://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US")[](https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp?hl=en-US)
 
 #### Here it is in action :
-
-
-
-
-
-
 
 ![](https://cdn-images-1.medium.com/max/800/1*Qh8BZUzF7nRISPrwDTz05Q.png)
 
@@ -307,20 +297,6 @@ Historically, this has meant using the following semantic tags:
 * ul/ol (unordered and ordered Lists)
 
 You can also go above and beyond with some new [HTML5 semantic tags](https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide):
-
-* <article>
-* <aside>
-* <details>
-* <figcaption>
-* <figure>
-* <footer>
-* <header>
-* <main>
-* <mark>
-* <nav>
-* <section>
-* <summary>
-* <time>
 
 These tags are important because they let you identify the content that’s most relevant to users. In short: making it easy for search engines makes it easier for users to find you.
 
@@ -852,8 +828,7 @@ Except as otherwise noted, the content of this page is licensed under the [Crea
 [**audreyfeldroy/favicon-cheat-sheet**\
 *A painfully obsessive cheat sheet to favicon sizes/types. Compiled from: For the main favicon itself, it's best for…*github.com](https://github.com/audreyr/favicon-cheat-sheet "https\://github.com/audreyr/favicon-cheat-sheet")[](https://github.com/audreyr/favicon-cheat-sheet)
 
-[**URL Structure \[2021 SEO]**\
-*Keeping URLs as simple, relevant, compelling, and accurate as possible is key to getting both your users and search…*moz.com](https://moz.com/learn/seo/url "https\://moz.com/learn/seo/url")[](https://moz.com/learn/seo/url)
+\[\*\*URL Structure [2021 SEO]*Keeping URLs as simple, relevant, compelling, and accurate as possible is key to getting both your users and search…*moz.com](https://moz.com/learn/seo/url "https://moz.com/learn/seo/url")[](https://moz.com/learn/seo/url)
 
 [**URL Rewrite Module Configuration Reference**\
 *by Ruslan Yakushev This article provides an overview of the URL Rewrite Module and explains the configuration concepts…*docs.microsoft.com](https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference "https\://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference")[](https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/url-rewrite-module-configuration-reference)
