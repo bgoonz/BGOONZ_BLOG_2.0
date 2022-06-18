@@ -5,6 +5,7 @@ module.exports = {
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-source-data',
+
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -15,7 +16,7 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
+                plugins: ['gatsby-remark-prismjs'],
             },
         },
         {
