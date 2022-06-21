@@ -1,6 +1,7 @@
 ---
 title: React Cheat Sheet
 template: docs
+excerpt: declarative and flexible JavaScript library for building UI
 ---
 ````javascript
 /* *******************************************************************************************
