@@ -36,6 +36,7 @@ To do so, we create the query as follow
 and then add the transformer method which is just mapping the data
 
 ```js
+//
 1const settings = { attributesToSnippet: [`excerpt:20`] };2const queries = [3  {4    query: blogQuery,5    transformer: ({ data }) =>6      data.posts.edges.map(({ node: { frontmatter, ...rest } }) => {7        return {8          ...frontmatter,9          ...rest,10        };11      }),12    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,13    settings,14  },15];
 ```
 

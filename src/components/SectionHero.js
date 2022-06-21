@@ -1,6 +1,5 @@
 import React from 'react';
 import _ from 'lodash';
-
 import {toStyleObj, withPrefix, markdownify} from '../utils';
 import CtaButtons from './CtaButtons';
 

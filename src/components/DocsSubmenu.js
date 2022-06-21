@@ -1,3 +1,4 @@
+/* This class renders a list of links to child pages of the current page. */
 import React from 'react';
 import _ from 'lodash';
 

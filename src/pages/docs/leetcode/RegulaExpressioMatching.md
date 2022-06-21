@@ -86,6 +86,7 @@ Output: false
 Cheating with real RegExp matching.
 
 ```js
+//
 /**
  * @param {string} s
  * @param {string} p
@@ -104,6 +105,7 @@ let isMatch = function (s, p) {
 Let f(i, j) be the matching result of s[0...i) and p[0...j).
 
 ```js
+//
 f(0, j) =
     j == 0 || // empty
     p[j-1] == '*' && f(i, j-2) // matches 0 time, which matches empty string
@@ -121,6 +123,7 @@ f(i, j) =
 ```
 
 ```js
+//
 /**
  * @param {string} s
  * @param {string} p

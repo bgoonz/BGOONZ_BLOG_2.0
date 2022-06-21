@@ -183,7 +183,8 @@ or with the [Programmable Search Element](https://developers.google.com/custom-s
 
 ...
 
-<div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\></div\>  
+<div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\>
+</div\>  
 ...
 
 The `<meta>` tags excluded by Google include:
@@ -293,14 +294,22 @@ Google also extracts a variety of structured data from Microformats, RDFa and Mi
 
 The following includes a snippet of plain HTML code.
 
-<p><strong>Kevin Grendelzilla</strong></p>  
+<p>
+<strong>Kevin Grendelzilla</strong>
+</p>  
 <p>Technical writer at Google</p>  
 <p>555 Search Parkway</p>  
 <p>Googlelandia, CA 94043</p>
 
 The following snippet shows the previous HTML code extended with microformats:
 
-<div **class\="vcard"**\>  <p><strong **class\="fn"**\>Kevin Grendelzilla</strong></p>  <p><span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span></p>  <p><span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span></p>  
+<div **class\="vcard"**\>  <p>
+<strong **class\="fn"**\>Kevin Grendelzilla</strong>
+</p>  <p>
+<span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span>
+</p>  <p>
+<span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span>
+</p>  
 </div>
 
 Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:
@@ -680,10 +689,13 @@ To apply Sort by Attribute over this field, you set the `sort` option in the sea
 
 ...
 
-<div class\="gcse-search" sort\_by\="date-sdate:d:s"\></div\>  
+<div class\="gcse-search" sort\_by\="date-sdate:d:s"\>
+</div\>  
 ...
 
-Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
+Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s">
+
+</div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
 
 The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to `date-sdate:r:20100825:20100907`. This again uses the combined attribute name `date-sdate`, but instead restricts to the range `r` of specified values `20100825:20100907`. As with the URL parameter, you can omit the upper or lower item of the range in the `sort` option of the Programmable Search Element.
 
@@ -695,7 +707,8 @@ You can also use Filter by Attribute with the Programmable Search Element. For e
 
 ...
 
-<div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\></div\>  
+<div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\>
+</div\>  
 ...
 
 This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the [Programmable Search Element](https://developers.google.com/custom-search/docs/element).

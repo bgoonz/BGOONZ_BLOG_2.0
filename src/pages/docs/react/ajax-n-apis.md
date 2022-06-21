@@ -34,6 +34,7 @@ The component below demonstrates how to make an AJAX call in `componentDidMount`
 The example API returns a JSON object like this:
 
 ```js
+//
 {
   "items": [
     { "id": 1, "name": "Apples",  "price": "$2" },
@@ -43,6 +44,7 @@ The example API returns a JSON object like this:
 ```
 
 ```js
+//
 class MyComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -100,6 +102,7 @@ Here is the equivalent with [Hooks](https://reactjs.org/docs/hooks-intro.html):
 
 
 ```js
+//
 
 
 function MyComponent() {

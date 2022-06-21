@@ -41,7 +41,7 @@
                     },
                     {
                         "label": "Python",
-                        "url": "/docs/python/python-ds",
+                        "url": "/docs/python",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -60,7 +60,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Blog",
+                "label": "Blog📰",
                 "url": "/blog/",
                 "style": "primary",
                 "has_subnav": true,
@@ -74,20 +74,11 @@
                         "type": "action"
                     },
                     {
-                        "label": "Top Blog Posts",
+                        "label": "Top Blog Posts📰",
                         "url": "https://blog-w-comments.vercel.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Blog w Comments",
-                        "url": "/blogWcomments/",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -103,7 +94,7 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [{
-                        "label": "Job Boards",
+                        "label": "Job Boards💰",
                         "url": "docs/career/job-boards",
                         "style": "primary",
                         "icon_class": "dev",
@@ -111,7 +102,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "Do's and Don'ts of interviews",
+                        "label": "Do's and Don'ts of interviews✅🚯",
                         "url": "interview/dos-and-donts",
                         "style": "primary",
                         "icon_class": "dev",
@@ -119,7 +110,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "Career-Tips",
+                        "label": "Career-Tips🎓",
                         "url": "https://bgoonz-blog.netlify.app/docs/career/",
                         "style": "primary",
                         "icon_class": "dev",
@@ -127,7 +118,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "Interview Questions",
+                        "label": "Interview Questions❓",
                         "url": "docs/interview/interview-questions",
                         "style": "primary",
                         "icon_class": "dev",
@@ -145,7 +136,7 @@
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [{
-                        "label": "Resource-Archive-Server",
+                        "label": "Resource-Archive-Server📂",
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
                         "icon_class": "dev",
@@ -154,7 +145,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Bootcamp Resources",
+                        "label": "Bootcamp Resources🥾🏕",
                         "url": "https://lambda-resources.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
@@ -182,7 +173,7 @@
                     },
                     {
                         "label": "Top Repos",
-                        "url": "/docs",
+                        "url": "/docs/docs/git-repos/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -535,5 +526,5 @@
     },
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app/",
-    "favicon": "images/logo-final-touchup.PNG"
+    "favicon": "images/logo.png"
 }

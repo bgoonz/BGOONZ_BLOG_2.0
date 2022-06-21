@@ -36,7 +36,9 @@ template: docs
     // after the route has been fully configured, we then export it so it can be required where needed
     module.exports = router; // standard convention dictates that this is the last line on the file
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Objective 1 — explain the role of a foreign key
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Objective 1 — explain the role of a foreign key
 
 ### Overview
 
@@ -172,7 +174,9 @@ In order to perform a JOIN query, the required information we need are:
 
 **Pictorial Presentation of SQL Joins:**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*bbwqJEpV2a9WZG-t.gif" class="graf-image" /></figure>**Example:**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*bbwqJEpV2a9WZG-t.gif" class="graf-image" />
+</figure>**Example:**
 
 **Sample table: company**
 
@@ -219,61 +223,162 @@ Output:
 
 **JOINS: Relational Databases**
 
-- <span id="74c4"><a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor"><strong>Oracle JOINS</strong></a></span>
-- <span id="f8da"><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor"><strong>MySQL JOINS</strong></a></span>
-- <span id="33a5"><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor"><strong>PostgreSQL JOINS</strong></a></span>
-- <span id="b578"><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor"><strong>SQLite JOINS</strong></a></span>
+- <span id="74c4">
+<a href="https://www.w3resource.com/oracle/joins/index.php" class="markup--anchor markup--li-anchor">
+<strong>Oracle JOINS</strong>
+</a>
+</span>
+- <span id="f8da">
+<a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php" class="markup--anchor markup--li-anchor">
+<strong>MySQL JOINS</strong>
+</a>
+</span>
+- <span id="33a5">
+<a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php" class="markup--anchor markup--li-anchor">
+<strong>PostgreSQL JOINS</strong>
+</a>
+</span>
+- <span id="b578">
+<a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php" class="markup--anchor markup--li-anchor">
+<strong>SQLite JOINS</strong>
+</a>
+</span>
 
 **Key points to remember:**
 
 _Click on the following to get the slides presentation -_
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png" class="graf-image" /></figure>###
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png" class="graf-image" />
+</figure>###
 
 **Practice SQL Exercises**
 
-- <span id="0765"><a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor"><strong>SQL Exercises, Practice, Solution</strong></a></span>
-- <span id="4cd9"><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></span>
-- <span id="7204"><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></span>
-- <span id="3d4e"><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></span>
-- <span id="7afb"><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></span>
-- <span id="cc71"><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL Formatting query output [10 Exercises]</strong></a></span>
-- <span id="77bf"><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></span>
-- <span id="0bc2"><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></span>
+- <span id="0765">
+<a href="https://www.w3resource.com/sql-exercises/index.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Exercises, Practice, Solution</strong>
+</a>
+</span>
+- <span id="4cd9">
+<a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Retrieve data from tables [33 Exercises]</strong>
+</a>
+</span>
+- <span id="7204">
+<a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Boolean and Relational operators [12 Exercises]</strong>
+</a>
+</span>
+- <span id="3d4e">
+<a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Wildcard and Special operators [22 Exercises]</strong>
+</a>
+</span>
+- <span id="7afb">
+<a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Aggregate Functions [25 Exercises]</strong>
+</a>
+</span>
+- <span id="cc71">
+<a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Formatting query output [10 Exercises]</strong>
+</a>
+</span>
+- <span id="77bf">
+<a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Quering on Multiple Tables [7 Exercises]</strong>
+</a>
+</span>
+- <span id="0bc2">
+<a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php" class="markup--anchor markup--li-anchor">
+<strong>FILTERING and SORTING on HR Database [38 Exercises]</strong>
+</a>
+</span>
 - <span id="e28a">SQL JOINS</span>
-- <span id="84a2"><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS [29 Exercises]</strong></a></span>
-- <span id="f97b"><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></span>
+- <span id="84a2">
+<a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php" class="markup--anchor markup--li-anchor">
+<strong>SQL JOINS [29 Exercises]</strong>
+</a>
+</span>
+- <span id="f97b">
+<a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php" class="markup--anchor markup--li-anchor">
+<strong>SQL JOINS on HR Database [27 Exercises]</strong>
+</a>
+</span>
 - <span id="b33e">  
 - </span>
 - <span id="0983">SQL SUBQUERIES</span>
-- <span id="423b"><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></span>
-- <span id="a4d7"><a href="https
+- <span id="423b">
+<a href="https://www.w3resource.com/sql-exercises/subqueries/index.php" class="markup--anchor markup--li-anchor">
+<strong>SQL SUBQUERIES [39 Exercises]</strong>
+</a>
+</span>
+- <span id="a4d7">
+<a href="https
 - <span id="b63d">  
 - </span>
-- <span id="2c29"><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor"><strong>SQL Union[9 Exercises]</strong></a></span>
-- <span id="92c5"><a href="https://www.
-- <span id="d3e5"><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor"><strong>SQL User Account Management [16 Exercise]</strong></a></span>
+- <span id="2c29">
+<a href="https://www.w3resource.com/sql-exercises/union/sql-union.php" class="markup--anchor markup--li-anchor">
+<strong>SQL Union[9 Exercises]</strong>
+</a>
+</span>
+- <span id="92c5">
+<a href="https://www.
+- <span id="d3e5">
+<a href="https://www.w3resource.com/sql-exercises/sql-user-management.php" class="markup--anchor markup--li-anchor">
+<strong>SQL User Account Management [16 Exercise]</strong>
+</a>
+</span>
 - <span id="e280">Movie Database</span>
-- <span id="5198"><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on movie Database [10 Exercises]</strong></a
-- <span id="ddd5"><a href="https
-- <span id="5363"><a href="https://www.w
+- <span id="5198">
+<a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php" class="markup--anchor markup--li-anchor">
+<strong>BASIC queries on movie Database [10 Exercises]</strong>
+</a
+- <span id="ddd5">
+<a href="https
+- <span id="5363">
+<a href="https://www.w
 - <span id="b248">  
 - </span>
 - <span id="d5ba">Soccer Database</span>
-- <span id="a586"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
-- <span id="d585"><a href="https
-- <span id="b626"><a href="https://www.w3r
-- <span id="95e1"><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor"><strong>JOINS
+- <span id="a586">
+<a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" class="markup--anchor markup--li-anchor">
+<strong>Introduction</strong>
+</a>
+</span>
+- <span id="d585">
+<a href="https
+- <span id="b626">
+<a href="https://www.w3r
+- <span id="95e1">
+<a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php" class="markup--anchor markup--li-anchor">
+<strong>JOINS
 - <span id="05ba">  
 - </span>
 - <span id="2b7b">Hospital Database</span>
-- <span id="788d"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>Introduction</strong></a></span>
-- <span id="0c32"><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></span>
+- <span id="788d">
+<a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php" class="markup--anchor markup--li-anchor">
+<strong>Introduction</strong>
+</a>
+</span>
+- <span id="0c32">
+<a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php" class="markup--anchor markup--li-anchor">
+<strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong>
+</a>
+</span>
 - <span id="228b">  
 - </span>
 - <span id="54d4">Employee Database</span>
-- <span id="c6fb"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></span>
-- <span id="0419"><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></span>
+- <span id="c6fb">
+<a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php" class="markup--anchor markup--li-anchor">
+<strong>BASIC queries on employee Database [115 Exercises]</strong>
+</a>
+</span>
+- <span id="0419">
+<a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php" class="markup--anchor markup--li-anchor">
+<strong>SUBQUERIES on employee Database [77 Exercises]</strong>
+</a>
+</span>
 - <span id="cb3e">  
     </span>
 - <span id="b3da">More to come!</span>
@@ -349,9 +454,13 @@ Once all methods are written as desired, we can export them like so:
 
 There should no be `knex` code in the endpoints themselves.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### A database is a collection of data organized for easy retrieval and manipulation.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### A database is a collection of data organized for easy retrieval and manipulation.
 
 We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store "related" data, are the oldest and most common type of database in use today.
 
@@ -385,7 +494,12 @@ These kinds of databases are relational because a _relation_ is a mathematical i
 
 > Foreign keys represent the relationships with other tables.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*7ZPYzWNRcs2PBL6p.jpg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### SQL:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*7ZPYzWNRcs2PBL6p.jpg" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### SQL:
 
 SQL is a standard language, which means that it almost certainly will be supported, no matter how your database is managed. That said, be aware that the SQL language can vary depending on database management tools. This lesson focuses on a set of core commands that never change. Learning the standard commands is an excellent introduction since the knowledge transfers between database products.
 
@@ -405,7 +519,9 @@ As a developer, you'll need to get familiar with DDL and become proficient using
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The four SQL operations covered in this section will allow a user to **query**, **insert**, and **modify** a database table.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>The four SQL operations covered in this section will allow a user to **query**, **insert**, and **modify** a database table.
 
 ### Query
 
@@ -456,7 +572,9 @@ The basic syntax for a `DELETE` statement is:
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Filtering results using WHERE clause
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Filtering results using WHERE clause
 
 When querying a database, the default result will be every entry in the given table. However, often, we are looking for a specific record or a set of records that meets certain criteria.
 
@@ -561,7 +679,9 @@ Once again, the `WHERE` clause is not required, but leaving it off would remove 
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>Raw SQL is a critical baseline skill. However, Node developers generally use an **Object Relational Mapper (ORM)** or **query builder** to write database commands in a backend codebase. Both **ORMs** and **query builders** are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>Raw SQL is a critical baseline skill. However, Node developers generally use an **Object Relational Mapper (ORM)** or **query builder** to write database commands in a backend codebase. Both **ORMs** and **query builders** are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
 
 For example, instead of a raw SQL `SELECT`:
 
@@ -577,7 +697,9 @@ We will use a **query builder** called <a href="https://knexjs.org/" class="mark
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Setup
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Knex Setup
 
 To use Knex in a repository, we'll need to add two libraries:
 
@@ -688,7 +810,9 @@ Once again, the `where` must come before the `del`. This method will resolve to 
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>###
 
 ### Here's a small project you can practice with.
 
@@ -722,7 +846,9 @@ For a more detailed look at SQLite Studio, follow along in the video above.
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>A **database schema** is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>A **database schema** is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
 
 A well-designed database schema keeps the data well organized and can help ensure high-quality data.
 
@@ -730,7 +856,9 @@ Note that while schema design is usually left to Database Administrators (DBAs),
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>For a look at schema design in SQLite Studio, follow along in the video above.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>For a look at schema design in SQLite Studio, follow along in the video above.
 
 When designing a single table, we need to ask three things:
 
@@ -775,7 +903,9 @@ As with data types, any data that does not satisfy the schema constraints will b
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Multi-Table Design
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Multi-Table Design
 
 Another critical component of schema design is to understand how different tables relate to each other. This will be covered in later lesson.
 
@@ -787,7 +917,9 @@ A `database migration` describes changes made to the structure of a database. Mi
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Cli
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Knex Cli
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with `npm install -g knex`.
 
@@ -930,7 +1062,9 @@ A `database migration` describes changes made to the structure of a database. Mi
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### Knex Cli
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### Knex Cli
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with `npm install -g knex`.
 
@@ -1121,7 +1255,9 @@ You can now use SQLite Studio to confirm that the accounts table has two entries
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>### SQL & PostgreSQL
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>### SQL & PostgreSQL
 
 **Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
 
@@ -1239,7 +1375,9 @@ In order to perform a JOIN query, the required information we need are:
 
 **Pictorial Presentation of SQL Joins:**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*2DcsnJXF_FOGhUtL.gif" class="graf-image" /></figure>**Example:**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*2DcsnJXF_FOGhUtL.gif" class="graf-image" />
+</figure>**Example:**
 
 **Sample table: company**
 
@@ -1357,7 +1495,9 @@ There should no be `knex` code in the endpoints themselves.
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>###
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>###
 
 `Normalization` is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
@@ -1488,7 +1628,9 @@ While each foreign key on the intermediary table is not unique, the combinations
 
 ###
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" /></figure>The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
+</figure>The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
 
 We have to consider the way that `delete` and `updates` through our API will impact related data.
 

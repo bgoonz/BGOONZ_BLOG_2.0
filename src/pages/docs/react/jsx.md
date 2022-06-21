@@ -21,12 +21,21 @@ template: docs
 By using JSX one can write the following JSX/JavaScript code:
 
 ```js
+//
 const nav = (
     <ul id="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li>
+<a href="#">Home</a>
+</li>
+      <li>
+<a href="#">About</a>
+</li>
+      <li>
+<a href="#">Clients</a>
+</li>
+      <li>
+<a href="#">Contact Us</a>
+</li>
     </ul>
 );
 
@@ -35,6 +44,7 @@ const nav = (
 And Babel will transform it into this:
 
 ```js
+//
 const nav = React.createElement(
    "ul",
    { id: "nav" },
