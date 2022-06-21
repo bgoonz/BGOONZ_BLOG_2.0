@@ -24,49 +24,12 @@ template: docs
 ---
 
 
-# [**⇨WEBSITE🗺️⇦**](https://bgoonz-blog.netlify.app/)
-
-### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
-
-#### [Repo-Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
-
-</div>
-
----
-
-#### [CHANGELOG](./CHANGELOG.md)
-
-<div align="center">
-
-##### [**⇨Cloudfare-Backup⇦**](https://bgoonz-blog-2-0.pages.dev/) 🌎 [**⇨ search⇦**](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) 🌎 [**⇨ Backup Repo Deploy⇦**](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) 🌎 [**⇨ Github pages⇦**](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) 🌎 [**⇨ Go To Site Wiki⇦**](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) 🌎 [**⇨ Gatsby Cloud Version⇦**](https://bgoonzblog20master.gtsb.io/) 🌎 [**⇨ Vercel Version⇦**](https://bgoonz-blog-2-0.vercel.app/) 🌎 [**⇨ Cloudfare-Domain⇦**](www.webdevhub.us) 🌎 [**⇨ gh-pages⇦**](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
-
-- https://blog20-preview.netlify.app/
-- 
-
-
-Site Name:  bgoonz-blog
-Site Url:   https://bgoonz-blog.netlify.app
-Site Repo:  https://github.com/bgoonz/BGOONZ_BLOG_2.0
-Site Id:    a1b7ee1a-11a7-4bd2-a341-2260656e216f
-Admin URL:  https://app.netlify.com/sites/bgoonz-blog
-
-
-
-
-### Repos
-
-#### [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
-#### [Blog Content](https://github.com/bgoonz/MainBlogContent)
-
-###### [**⇨Privacy policy⇦**](https://codepen.io/bgoonz/pen/LYLJZrW)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
-
-![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
-
----
-
 - [april backup](https://backup-april-4-2022--bgoonz-blog.netlify.app/)
+
+
+
+
+## Images: 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: HTTPS Error Codes
+title: lorem-ipsum
 weight: 0
-excerpt: HTTPS Error Codes
+excerpt: lorem-ipsum
 seo:
-    title: 'HTTPS Error Codes'
-    description: ' can act as a gateway or proxy (go-between) between a client (like your Web browser) and another'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
@@ -43,7 +43,7 @@ template: docs
 
 > An _Glossary("HTTP"_) error code meaning "Bad Gateway".
 
- _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
+A _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
 
 Normally the upstream server is not down (i.e. furnishes no response to the gateway/proxy), but does not understand the same data-exchange protocol as the gateway/proxy. Internet _Glossary("Protocol", "protocols"_) are quite explicit, and so a 502 usually means that one or both machines were incorrectly or incompletely programmed.
 

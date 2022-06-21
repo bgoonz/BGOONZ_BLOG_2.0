@@ -3,7 +3,6 @@ title: Higher Order Components
 template: docs
 excerpt: advanced techniques in react
 ---
-
 <!--StartFragment-->
 
 # Higher-Order Components

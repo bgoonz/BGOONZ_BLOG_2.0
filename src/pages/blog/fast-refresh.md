@@ -2,21 +2,21 @@
 title: Fast Refresh
 template: post
 subtitle: Fast Refresh is a React Native feature that allows you to get
-  near-instant feedback for changes in your React components.
+    near-instant feedback for changes in your React components.
 excerpt: Fast Refresh is a React Native feature that allows you to get
-  near-instant feedback for changes in your React components.
-date: 2022-06-06T17:42:17.258Z
+    near-instant feedback for changes in your React components.
+date: 2022-05-29T17:42:17.258Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
+    - src/data/categories/react.yaml
 tags:
-  - src/data/tags/react.yaml
+    - src/data/tags/react.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/10-essential-react-interview-questions.md
+    - src/pages/blog/10-essential-react-interview-questions.md
 cmseditable: true
 ---
 
