@@ -1,6 +1,6 @@
 'use strict';
 
-!(function() {
+!(function () {
     var t =
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTQzZmFlY2I2NjkwNWMyZGJkMGVmZCIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTY0MjM0ODUyNiwiZXhwIjoxNDI1Njc0ODUyNn0.VD7Lxgh5cWuOzOhV9KH51TZVdPVXvsIJgRUx-oacfVM';
 
@@ -14,8 +14,6 @@
     'complete' === document.readyState ? e() : window.attachEvent ? window.attachEvent('onload', e) : window.addEventListener('load', e, !1);
 })();
 //---------------------------------Search---------------------------------
-
-
 
 window.dataLayer = window.dataLayer || [];
 

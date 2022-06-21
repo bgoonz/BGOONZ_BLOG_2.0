@@ -1,4 +1,3 @@
-
 <script src={withPrefix('algolia.js')} />
 <script src={withPrefix('analytics.js')} />
 <script src={withPrefix('blm.js')} />
