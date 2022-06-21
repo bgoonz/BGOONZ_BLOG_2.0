@@ -1008,7 +1008,14 @@ ES2015 adds two extensions to object values and object literals:
     strings.
 
 -   Object literals can contain _[computed property names][computed properties]_:
-    `js // var foo = 42; var obj = { [foo]: 0 }; // creates {42: 0} `
+    ```js
+//
+    var foo = 42;
+    var obj = {
+        [foo]: 0
+    };
+    // creates {42: 0}
+    ```
 
 </div>
 
@@ -7282,7 +7289,6 @@ Passing an empty object, an array with more than one member, a non-numeric strin
 
 <span class="small">The definition of 'Math.abs' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -7380,7 +7386,6 @@ For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan)
 
 <span class="small">#sec-math.acos</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -7484,7 +7489,6 @@ For all *x* ≥ 1, we have $\\operatorname{arcosh}(x) = \\ln\\left( {x + \\s
 
 <span class="small">#sec-math.acosh</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -7582,7 +7586,6 @@ The old value at the given position (`typedArray[index]`).
 
 <span class="small">#sec-atomics.add</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -7697,7 +7700,6 @@ The addition operator (`+`) produces the sum of numeric operands or string conca
 
 <span class="small">The definition of 'Addition operator' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -7804,7 +7806,6 @@ Error name, defaults to `AggregateError`.
 
 <span class="small">#sec-aggregate-error-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8065,7 +8066,6 @@ It is possible to change this behavior by handling possible rejections:
 
 <span class="small">#sec-promise.all</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8166,7 +8166,6 @@ For each outcome object, a `status` string is present. If the status is `fulfill
 
 <span class="small">#sec-promise.allsettled</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8302,7 +8301,6 @@ will output the following HTML:
 
 <span class="small">#sec-string.prototype.anchor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8448,7 +8446,6 @@ For example, a bitwise AND of `5 & 1` results in `0001` which is 1 in decimal.
 
 <span class="small">#sec-atomics.and</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8633,7 +8630,6 @@ In this example, we have a function that fetches an image and returns a blob. We
 
 <span class="small">#sec-promise.any</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -8917,7 +8913,6 @@ This example defines a function that creates a string containing HTML for a list
 
     function list(type) {
       var html = '<' + type + 'l>
-
 <li>';
       var args = Array.prototype.slice.call(arguments, 1);
       html += args.join('</li>
@@ -8933,7 +8928,6 @@ You can pass any number of arguments to this function, and it adds each argument
 
     /* listHTML is:
     "<ul>
-
 <li>One</li>
 <li>Two</li>
 <li>Three</li>
@@ -9011,7 +9005,6 @@ And also:
 
 <span class="small">#sec-arguments-exotic-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -9319,7 +9312,6 @@ The properties and elements returned from this match are as follows:
 <br/>
 
 <span class="badge inline readonly">Read only </span>
-
 </td>
 <td>The original string against which the regular expression was matched.</td>
 <td>
@@ -9332,7 +9324,6 @@ The properties and elements returned from this match are as follows:
 <br/>
 
 <span class="badge inline readonly">Read only </span>
-
 </td>
 <td>The zero-based index of the match in the string.</td>
 <td>
@@ -9345,7 +9336,6 @@ The properties and elements returned from this match are as follows:
 <br/>
 
 <span class="badge inline readonly">Read only </span>
-
 </td>
 <td>The last matched characters.</td>
 <td>
@@ -9358,7 +9348,6 @@ The properties and elements returned from this match are as follows:
 <br/>
 
 <span class="badge inline readonly">Read only </span>
-
 </td>
 <td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td>
 <td>
@@ -9669,7 +9658,6 @@ In this example, we create a 8-byte buffer with a [`Int32Array`](int32array) vie
 
 <span class="small">#sec-arraybuffer-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10273,7 +10261,6 @@ Although the arrow in an arrow function is not an operator, arrow functions have
 
 <span class="small">#sec-arrow-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10395,7 +10382,6 @@ For values less than -1 or greater than 1, `Math.asin()` returns [`NaN`](../nan)
 
 <span class="small">#sec-math.asin</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10506,7 +10492,6 @@ Because `asinh()` is a static method of `Math`, you always use it as `Math.asinh
 
 <span class="small">#sec-math.asinh</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10601,7 +10586,6 @@ The `BigInt.asIntN()` method can be useful to stay in the range of 64-bit arithm
 
 <span class="small">#sec-bigint.asintn</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10879,7 +10863,6 @@ The properties are overwritten by other objects that have the same properties la
 
 <span class="small">#sec-object.assign</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -10972,7 +10955,6 @@ The `BigInt.asUintN()` method can be useful to stay in the range of 64-bit arith
 
 <span class="small">#sec-bigint.asuintn</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11281,7 +11263,6 @@ This highlights the subtle difference between `return foo;` and `return await fo
 
 <span class="small">#sec-async-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11398,7 +11379,6 @@ Invoking the `AsyncFunction` constructor as a function (without using the `new` 
 
 <span class="small">#sec-async-function-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11509,7 +11489,6 @@ There are currently no built-in JavaScript objects that have the `[Symbol.asyncI
 
 <span class="small">#sec-symbol.asynciterator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11668,7 +11647,6 @@ Note that you may want to avoid using **±**`Infinity` for stylistic reasons. In
 
 <span class="small">#sec-math.atan</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11778,7 +11756,6 @@ Because `atan2()` is a static method of `Math`, you always use it as `Math.atan2
 
 <span class="small">#sec-math.atan2</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -11883,7 +11860,6 @@ For |_x_| &lt; 1, we have $\\operatorname{artanh}(x) = \\frac{1}{2}\\ln\\lef
 
 <span class="small">#sec-math.atanh</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -12053,7 +12029,6 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 <span class="small">#sec-atomics-object</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -13224,7 +13199,6 @@ An [`Intl.Locale`](../locale) object represents a parsed local and options for t
 
 <span class="small">#sec-Intl.Locale.prototype.baseName</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -13316,7 +13290,6 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 <span class="small">#sec-string.prototype.big</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -13619,7 +13592,6 @@ Instead of throwing, `JSON.stringify` now produces a string like this:
 
 <span class="small">#sec-bigint-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -13978,7 +13950,6 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 <span class="small">#sec-typedarray-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -14208,7 +14179,6 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 <span class="small">#sec-typedarray-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -14580,7 +14550,6 @@ If you choose to use this partial implementation, **you must not rely on those c
 
 <span class="small">#sec-function.prototype.bind</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -14704,7 +14673,6 @@ Bitwise ANDing any number `x` with `0` yields `0`.
 
 <span class="small">#prod-BitwiseANDExpression</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -14779,7 +14747,6 @@ The bitwise AND assignment operator (`&=`) uses the binary representation of bot
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -14892,7 +14859,6 @@ Note that due to using 32-bit representation for numbers both `~-1` and `~429496
 
 <span class="small">#sec-bitwise-not-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15018,7 +14984,6 @@ Bitwise ORing any number `x` with `0` yields `x`.
 
 <span class="small">The definition of 'Bitwise OR expression' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15095,7 +15060,6 @@ The bitwise OR assignment operator (`|=`) uses the binary representation of both
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15223,7 +15187,6 @@ Bitwise XORing any number `x` with `0` yields `x`.
 
 <span class="small">The definition of 'Bitwise XOR expression' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15305,7 +15268,6 @@ The bitwise XOR assignment operator (`^=`) uses the binary representation of bot
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15397,7 +15359,6 @@ The following example uses string methods to change the formatting of a string:
 
 <span class="small">#sec-string.prototype.blink</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15525,7 +15486,6 @@ In [strict mode](../strict_mode), starting with ES2015, functions inside blocks 
 
 <span class="small">#sec-block</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15616,7 +15576,6 @@ The following example uses string methods to change the formatting of a string:
 
 <span class="small">#sec-string.prototype.bold</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -15747,7 +15706,6 @@ Returns the primitive value of the [`Boolean`](boolean) object. Overrides the [`
 
 <span class="small">#sec-boolean-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16017,7 +15975,6 @@ The following code also uses `break` statements with labeled blocks, but generat
 
 <span class="small">The definition of 'Break statement' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16095,7 +16052,6 @@ The following example (see [memory.html](https://github.com/mdn/webassembly-exam
 
 <span class="small">#dom-memory-buffer</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16172,7 +16128,6 @@ The `byteLength` property is an accessor property whose set accessor function is
 
 <span class="small">#sec-get-sharedarraybuffer.prototype.bytelength</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16282,7 +16237,6 @@ The `byteOffset` property is an accessor property whose set accessor function is
 
 <span class="small">#sec-get-%typedarray%.prototype.byteoffset</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16375,7 +16329,6 @@ no
 
 <span class="small">#sec-typedarray.bytes_per_element</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16594,7 +16547,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.calendar</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16775,7 +16727,6 @@ In the example below, we invoke the `display` function without passing the first
 
 <span class="small">The definition of 'Function.prototype.call' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -16990,7 +16941,6 @@ However, in a case like the following, there are not alternatives to `arguments.
 
 <span class="small">#sec-arguments-exotic-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -17495,7 +17445,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.caseFirst</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -17689,7 +17638,6 @@ The `catch` method is used for error handling in promise composition. Since it r
 
 <span class="small">#sec-promise.prototype.catch</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -17796,7 +17744,6 @@ For all *x* ≥ 0, have $\\sqrt\[3\]{x} = x^{1/3}$ so this can be emulated b
 
 <span class="small">#sec-math.cbrt</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -17960,7 +17907,6 @@ The following example shows example usage of `Math.ceil()`.
 
 <span class="small">#sec-math.ceil</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -18210,7 +18156,6 @@ While the previous example may be more useful for programs that must support non
 
 <span class="small">The definition of 'String.prototype.charAt' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -18385,7 +18330,6 @@ This version might be used in for loops and the like when it is unknown whether 
 
 <span class="small">#sec-string.prototype.charcodeat</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -18510,7 +18454,6 @@ If you want to refer to the current class inside the class body, you can create 
 
 <span class="small">#sec-class-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -18946,7 +18889,6 @@ If you're experimenting with code in a web browser, such as the Firefox Web Cons
 
 <span class="small">The definition of 'Class definitions' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -19331,7 +19273,6 @@ The `clear()` method removes all elements from a `Set` object.
 
 <span class="small">#sec-set.prototype.clear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -19522,7 +19463,6 @@ The following polyfill is the most efficient.
 
 <span class="small">#sec-math.clz32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -19675,7 +19615,6 @@ The following extends Strings to include the `codePointAt()` function as specifi
 
 <span class="small">#sec-string.prototype.codepointat</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -19863,7 +19802,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.collation</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -19994,7 +19932,6 @@ Note that the results shown in the code above can vary between browsers and brow
 
 <span class="small">#sec-the-intl-collator-constructor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20205,7 +20142,6 @@ Another example that one could make with comma operator is processing before ret
 
 <span class="small">#sec-comma-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20302,7 +20238,6 @@ Use the `compare` getter function for finding matching strings in arrays:
 
 <span class="small">#sec-intl.collator.prototype.compare</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20399,7 +20334,6 @@ The old value at the given position (`typedArray[index]`).
 
 <span class="small">#sec-atomics.compareexchange</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20705,7 +20639,6 @@ The following example compiles the loaded simple.wasm byte code using the `compi
 
 <span class="small">#dom-webassembly-compile</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20822,7 +20755,6 @@ The following snippet creates a new `CompileError` instance, and logs its detail
 
 <span class="small">#exceptiondef-compileerror</span>
 </a>
-
 </td>
 </tr>
 <tr class="even">
@@ -20832,7 +20764,6 @@ The following snippet creates a new `CompileError` instance, and logs its detail
 
 <span class="small">#sec-native-error-types-used-in-this-standard</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -20960,7 +20891,6 @@ The resulting module instance is then instantiated using [`WebAssembly.instantia
 
 <span class="small">#dom-webassembly-compilestreaming</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21103,7 +21033,6 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
 <span class="small">#sec-array.prototype.concat</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21224,7 +21153,6 @@ The ternary operator is right-associative, which means it can be "chained" in th
 
 <span class="small">#sec-conditional-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21388,7 +21316,6 @@ const also works on objects and arrays.
 
 <span class="small">#sec-let-and-const-declarations</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21563,7 +21490,6 @@ When invoking `Reflect.construct()`, on the other hand, the `new.target` operato
 
 <span class="small">#sec-reflect.construct</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21797,7 +21723,6 @@ or assign parent constructor identifier to a separate property on the Child cons
 
 <span class="small">The definition of 'Object.prototype.constructor' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -21952,7 +21877,6 @@ Output:
 
 <span class="small">The definition of 'Continue statement' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -22077,7 +22001,6 @@ The `copyWithin` method is a mutable method. It does not alter the length of `th
 
 <span class="small">#sec-array.prototype.copywithin</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -22165,7 +22088,6 @@ Because `cos()` is a static method of `Math`, you always use it as `Math.cos()`,
 
 <span class="small">#sec-math.cos</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -22272,7 +22194,6 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 <span class="small">#sec-math.cosh</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -22663,7 +22584,6 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 
 <span class="small">#sec-object.create</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -22774,7 +22694,6 @@ We then do a check using `WebAssembly.Module.customSections`, looking to see whe
 
 <span class="small">#dom-module-customsections</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -23031,7 +22950,6 @@ Stores an unsigned 64-bit integer (unsigned long long) value at the specified by
 
 <span class="small">#sec-dataview-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -23972,7 +23890,6 @@ In this case, it's important to return only an integer—so a simple division wo
 
 <span class="small">#sec-date-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -25556,7 +25473,6 @@ In basic use without specifying a locale, `DateTimeFormat` uses the default loca
 
 <span class="small">#sec-intl-datetimeformat-constructor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -25808,7 +25724,6 @@ When the debugger is invoked, execution is paused at the `debugger` statement. I
 
 <span class="small">#sec-debugger-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -25907,7 +25822,6 @@ Replaces each escape sequence in the encoded URI with the character that it repr
 
 <span class="small">#sec-decodeuri-encodeduri</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -26016,7 +25930,6 @@ decodeURIComponent cannot be used directly to parse query parameters from a URL.
 
 <span class="small">#sec-decodeuricomponent-encodeduricomponent</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -26104,7 +26017,6 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 
 <span class="small">#sec-postfix-decrement-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -26346,7 +26258,6 @@ You can use default value assignment with the [destructuring assignment](../oper
 
 <span class="small">#sec-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -26586,7 +26497,6 @@ Assuming a pristine execution environment with all names and properties referrin
 
 <span class="small">#sec-object.defineproperties</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -27047,7 +26957,6 @@ Unlike accessor properties, value properties are always set on the object itself
 
 <span class="small">#sec-object.defineproperty</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -27361,7 +27270,6 @@ If instead, you want to remove an array element by changing the contents of the 
 
 <span class="small">#sec-delete-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -27554,7 +27462,6 @@ The following code traps the [`delete`](../../../operators/delete) operator.
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-delete-p</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -28052,7 +27959,6 @@ The read-only `description` property is a string returning the optional descript
 
 <span class="small">#sec-symbol.prototype.description</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -28496,7 +28402,6 @@ When deconstructing an object, if a property is not accessed in itself, it will 
 
 <span class="small">#sec-destructuring-assignment</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -28836,7 +28741,6 @@ To create an `Intl.DisplayNames` for a locale and get the display name for curre
 
 <span class="small">#intl-displaynames-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29020,7 +28924,6 @@ The division operator (`/`) produces the quotient of its operands where the left
 
 <span class="small">The definition of 'Division operator' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29117,7 +29020,6 @@ In the following example, the `do...while` loop iterates at least once and reite
 
 <span class="small">#sec-do-while-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29226,7 +29128,6 @@ You cannot change this property directly.
 
 <span class="small">#sec-get-regexp.prototype.dotAll</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29325,7 +29226,6 @@ The following function returns e:
 
 <span class="small">#sec-math.e</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29435,7 +29335,6 @@ If `three` is `true`, nothing will happen, `four` does not matter, and also the 
 
 <span class="small">#sec-empty-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29563,7 +29462,6 @@ If one wishes to follow the more recent [RFC3986](https://datatracker.ietf.org/d
 
 <span class="small">#sec-encodeuri-uri</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29722,7 +29620,6 @@ The following example provides the special encoding required within UTF-8 [`Cont
 
 <span class="small">The definition of 'encodeURIComponent' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29826,7 +29723,6 @@ This method has been added to the ECMAScript 6 specification and may not be avai
 
 <span class="small">#sec-string.prototype.endswith</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -29982,7 +29878,6 @@ Using [Array Destructuring](../../operators/destructuring_assignment#array_destr
 
 <span class="small">The definition of 'Object.entries' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -30086,7 +29981,6 @@ The `EPSILON` property has a value of approximately `2.2204460492503130808472633
 
 <span class="small">#sec-number.epsilon</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -30264,7 +30158,6 @@ Note that strings constructed using `new String()` are objects. If you compare o
 
 <span class="small">#sec-equality-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -30502,7 +30395,6 @@ See ["What's a good way to extend Error in JavaScript?"](https://stackoverflow.c
 
 <span class="small">#sec-error-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -31128,7 +31020,6 @@ If you define multiple values then the last value is returned.
 
 <span class="small">#sec-eval-x</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -31231,7 +31122,6 @@ Stack trace. Inherited from [`Error`](error).
 
 <span class="small">#sec-native-error-types-used-in-this-standard-evalerror</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -31516,7 +31406,6 @@ The following examples tests the behavior of the `every` method when the array i
 
 <span class="small">#sec-array.prototype.every</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -31611,7 +31500,6 @@ The old value at the given position (`typedArray[index]`).
 
 <span class="small">#sec-atomics.exchange</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -31774,7 +31662,6 @@ The following table shows the state of `result` after running this script:
 <br/>
 
 The <code>indices</code> array additionally has a <code>groups</code> property which holds an object of all named capturing groups. The keys are the names of the capturing groups and each value is an array with the first item being the start entry and the second entry being the end index of the capturing group. If the regular expression doesn't contain any capturing groups, <code>groups</code> is <code>undefined</code>.</td>
-
 <td>
 <p>
 <code>indices[0] === Array [ 4, 25 ]</code>
@@ -31961,7 +31848,6 @@ This will log a message containing `'hello world!'`.
 
 <span class="small">#sec-regexp.prototype.exec</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32047,7 +31933,6 @@ Because `exp()` is a static method of `Math`, you always use it as `Math.exp()`,
 
 <span class="small">#sec-math.exp</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32138,7 +32023,6 @@ Because `expm1()` is a static method of `Math`, you always use it as `Math.expm1
 
 <span class="small">#sec-math.expm1</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32251,7 +32135,6 @@ To force the base of an exponentiation expression to be a negative number:
 
 <span class="small">#sec-exp-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32522,7 +32405,6 @@ This is what it would look like using code snippets:
 
 <span class="small">#sec-exports</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32706,7 +32588,6 @@ The `exports[0]` output looks like this:
 
 <span class="small">#dom-module-exports</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -32815,7 +32696,6 @@ This example extends the built-in [`Date`](../global_objects/date) object. This 
 
 <span class="small">The definition of 'extends' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33076,7 +32956,6 @@ This example shows how to create a matrix of all 1, like the _ones()_ function o
 
 <span class="small">The definition of 'Array.prototype.fill' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33371,7 +33250,6 @@ The following examples tests the behavior of the `filter` method when the array 
 
 <span class="small">#sec-array.prototype.filter</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33482,7 +33360,6 @@ The `finally()` method is very similar to calling `.then(onFinally, onFinally)` 
 
 <span class="small">#sec-promise.prototype.finally</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33677,7 +33554,6 @@ The following examples show that nonexistent and deleted elements _are_ visited,
 
 <span class="small">#sec-array.prototype.find</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33849,7 +33725,6 @@ The following example finds the index of an element in the typed array that is a
 
 <span class="small">#sec-%typedarray%.prototype.findindex</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -33935,7 +33810,6 @@ The following example uses the `fixed` method to change the formatting of a stri
 
 <span class="small">#sec-string.prototype.fixed</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34033,7 +33907,6 @@ Flags in the `flags` property are sorted alphabetically (from left to right, e.g
 
 <span class="small">#sec-get-regexp.prototype.flags</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34208,7 +34081,6 @@ The flat method removes empty slots in arrays:
 
 <span class="small">The definition of 'Array.prototype.flat' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34373,7 +34245,6 @@ Notice, the output list length can be different from the input list length.
 
 <span class="small">#sec-array.prototype.flatmap</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34579,7 +34450,6 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 <span class="small">#table-49</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34809,7 +34679,6 @@ Returns a new `Array Iterator` object that contains the values for each index in
 
 <span class="small">#table-49</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -34980,7 +34849,6 @@ Because `floor()` is a static method of `Math`, you always use it as `Math.floor
 
 <span class="small">#sec-math.floor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -35085,7 +34953,6 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 <span class="small">#sec-string.prototype.fontcolor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -35184,7 +35051,6 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 <span class="small">#sec-string.prototype.fontsize</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -35442,7 +35308,6 @@ To make `finally` blocks of a sync generator to be always called use appropriate
 
 <span class="small">#sec-for-in-and-for-of-statements</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -35736,7 +35601,6 @@ The following function illustrates the use of [`hasOwnProperty()`](../global_obj
 
 <span class="small">#sec-for-in-and-for-of-statements</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36072,7 +35936,6 @@ This loop iterates and logs **values** that `iterable`, as an [iterable object](
 
 <span class="small">#sec-for-in-and-for-of-statements</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36283,7 +36146,6 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 <span class="small">#sec-for-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36645,7 +36507,6 @@ The following example is only here for learning purpose. If you want to flatten 
 
 <span class="small">#sec-array.prototype.foreach</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36767,7 +36628,6 @@ For this reason you cannot expect to be able to compare the results of `format()
 
 <span class="small">#sec-intl.datetimeformat.prototype.format</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36871,7 +36731,6 @@ This method receives two [`Date`](../../date)s and formats the date range in the
 
 <span class="small">#sec-intl.datetimeformat.prototype.formatRange</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -36966,7 +36825,6 @@ This method receives two [`Date`](../../date)s and returns an [`Array`](../../ar
 
 <span class="small">#sec-Intl.DateTimeFormat.prototype.formatRangeToParts</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -37220,7 +37078,6 @@ And `formatToParts`:
 
 <span class="small">#sec-Intl.DateTimeFormat.prototype.formatToParts</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -37477,7 +37334,6 @@ To make an object immutable, recursively freeze each property which is of type o
 
 <span class="small">#sec-object.freeze</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -37666,7 +37522,6 @@ In ES2015, the class syntax allows sub-classing of both built-in and user-define
 
 <span class="small">The definition of 'Array.from' in that specification.</span>
 </a>
-
 </td>
 <td>ECMAScript 2015</td>
 </tr>
@@ -37921,7 +37776,6 @@ Supplementary characters, in UTF-16, require two code units (i.e. a surrogate pa
 
 <span class="small">The definition of 'String.fromCharCode' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -38084,7 +37938,6 @@ Invalid input:
 
 <span class="small">#sec-string.fromcodepoint</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -38198,7 +38051,6 @@ With `Object.fromEntries`, its reverse method [`Object.entries()`](entries), and
 
 <span class="small">#sec-object.fromentries</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -38337,7 +38189,6 @@ Supporting older browsers is slower, but also possible:
 
 <span class="small">#sec-math.fround</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -38584,7 +38435,6 @@ When a generator is finished, subsequent `next()` calls will not execute any of 
 
 <span class="small">#sec-generator-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -38837,7 +38687,6 @@ An anonymous function is created and called:
 
 <span class="small">#sec-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -39388,7 +39237,6 @@ Note that in the `if` test, a reference to `noFunc` is used—there are no brack
 
 <span class="small">#sec-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -39719,7 +39567,6 @@ With a generator function, values are not evaluated until they are needed. There
 
 <span class="small">#sec-generator-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -39899,7 +39746,6 @@ Invoking the `GeneratorFunction` constructor as a function (without using the `n
 
 <span class="small">#sec-generatorfunction-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40079,7 +39925,6 @@ When using `get` the property will be defined on the instance's prototype, while
 
 <span class="small">The definition of 'Method definitions' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40202,7 +40047,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getbigint64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40296,7 +40140,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getbiguint64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40383,7 +40226,6 @@ An array containing the canonical locale names.
 
 <span class="small">#sec-intl.getcanonicallocales</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40462,7 +40304,6 @@ The second statement below assigns the value 25 to the variable `day`, based on 
 
 <span class="small">#sec-date.prototype.getdate</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40549,7 +40390,6 @@ The second statement below assigns the value 1 to `weekday`, based on the value 
 
 <span class="small">The definition of 'Date.prototype.getDay' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40643,7 +40483,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getfloat32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40736,7 +40575,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getfloat64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40818,7 +40656,6 @@ The following example assigns the four-digit value of the current year to the va
 
 <span class="small">#sec-date.prototype.getfullyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40897,7 +40734,6 @@ The second statement below assigns the value 23 to the variable `hours`, based o
 
 <span class="small">#sec-date.prototype.gethours</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -40990,7 +40826,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getint16</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41083,7 +40918,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getint32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41172,7 +41006,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getint8</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41248,7 +41081,6 @@ The following example assigns the milliseconds portion of the current time to th
 
 <span class="small">#sec-date.prototype.getmilliseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41326,7 +41158,6 @@ The second statement below assigns the value 15 to the variable `minutes`, based
 
 <span class="small">#sec-date.prototype.getminutes</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41412,7 +41243,6 @@ The second statement below assigns the value 11 to the variable `month`, based o
 
 <span class="small">#sec-date.prototype.getmonth</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41573,7 +41403,6 @@ In ES5, if the first argument to this method is not an object (a primitive), the
 
 <span class="small">#sec-object.getownpropertydescriptor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41702,7 +41531,6 @@ A typical way of creating a subclass is to define the subclass, set its prototyp
 
 <span class="small">The definition of 'Object.getOwnPropertyDescriptors' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41866,7 +41694,6 @@ This uses the [`Array.prototype.filter()`](../array/filter) function to remove t
 
 <span class="small">#sec-object.getownpropertynames</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -41967,7 +41794,6 @@ As all objects have no own symbol properties initially, `Object.getOwnPropertySy
 
 <span class="small">#sec-object.getownpropertysymbols</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42117,7 +41943,6 @@ If the following invariants are violated, the proxy will throw a [`TypeError`](.
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42199,7 +42024,6 @@ The second statement below assigns the value 30 to the variable `seconds`, based
 
 <span class="small">#sec-date.prototype.getseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42394,7 +42218,6 @@ Subtracting two subsequent `getTime()` calls on newly generated [`Date`](../date
 
 <span class="small">#sec-date.prototype.gettime</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42512,7 +42335,6 @@ In a time zone that doesn't annually shift in and out of Daylight Saving Time (D
 
 <span class="small">#sec-date.prototype.gettimezoneoffset</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42604,7 +42426,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getuint16</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42697,7 +42518,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getuint32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42786,7 +42606,6 @@ There is no alignment constraint; multi-byte values may be fetched from any offs
 
 <span class="small">#sec-dataview.prototype.getuint8</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42862,7 +42681,6 @@ The following example assigns the day of month of the current date to the variab
 
 <span class="small">#sec-date.prototype.getutcdate</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -42939,7 +42757,6 @@ The following example assigns the weekday portion of the current date to the var
 
 <span class="small">#sec-date.prototype.getutcday</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43020,7 +42837,6 @@ The following example assigns the four-digit value of the current year to the va
 
 <span class="small">#sec-date.prototype.getutcfullyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43096,7 +42912,6 @@ The following example assigns the hours portion of the current time to the varia
 
 <span class="small">#sec-date.prototype.getutchours</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43174,7 +42989,6 @@ The following example assigns the milliseconds portion of the current time to th
 
 <span class="small">#sec-date.prototype.getutcmilliseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43250,7 +43064,6 @@ The following example assigns the minutes portion of the current time to the var
 
 <span class="small">#sec-date.prototype.getutcminutes</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43326,7 +43139,6 @@ The following example assigns the month portion of the current date to the varia
 
 <span class="small">#sec-date.prototype.getutcmonth</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43402,7 +43214,6 @@ The following example assigns the seconds portion of the current time to the var
 
 <span class="small">#sec-date.prototype.getutcseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43521,7 +43332,6 @@ The third statement assigns the value 95 to the variable `year`, representing th
 
 <span class="small">#sec-date.prototype.getyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43629,7 +43439,6 @@ The value of the global is then changed, first to `42` using the `Global.value` 
 
 <span class="small">#dom-global-global</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43746,7 +43555,6 @@ With `globalThis` available, the additional search for the global across environ
 
 <span class="small">#sec-globalthis</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43860,7 +43668,6 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 <span class="small">#sec-relational-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -43977,7 +43784,6 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 <span class="small">#sec-relational-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44069,7 +43875,6 @@ Overriding multiplication and division first, then addition and subtraction to e
 
 <span class="small">#sec-grouping-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44161,7 +43966,6 @@ Note the return value of `grow()` here is the previous number of WebAssembly pag
 
 <span class="small">#dom-memory-grow</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44297,7 +44101,6 @@ The following code violates an invariant.
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44456,7 +44259,6 @@ You cannot change this property directly.
 
 <span class="small">#sec-get-regexp.prototype.hasIndices</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44599,7 +44401,6 @@ Just in the same manner at which you can check if an object is an instance of a 
 
 <span class="small">#sec-symbol.hasinstance</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44748,7 +44549,6 @@ Note that in the last case there are no newly created objects.
 
 <span class="small">#sec-object.prototype.hasownproperty</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -44871,7 +44671,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.hourCycle</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45009,7 +44808,6 @@ A polyfill that avoids underflows and overflows:
 
 <span class="small">#sec-math.hypot</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45210,7 +45008,6 @@ If you need to use an assignment in a conditional expression, a common practice 
 
 <span class="small">#sec-if-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45300,7 +45097,6 @@ You cannot change this property directly.
 
 <span class="small">#sec-get-regexp.prototype.ignorecase</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45658,7 +45454,6 @@ This example shows how to load functionality on to a page based on a user action
 
 <span class="small">#sec-imports</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45793,7 +45588,6 @@ The `import.meta` object is created by the ECMAScript implementation, with a [`n
 Given a module `my-module.js`
 
     <script type="module" src="my-module.js">
-
 </script>
 
 you can access meta information about the module using the `import.meta` object.
@@ -45843,7 +45637,6 @@ Such file-specific argument passing may be complementary to that used in the app
 
 <span class="small">#prod-ImportMeta</span>
 </a>
-
 </td>
 </tr>
 <tr class="even">
@@ -45853,7 +45646,6 @@ Such file-specific argument passing may be complementary to that used in the app
 
 <span class="small">#hostgetimportmetaproperties</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -45947,7 +45739,6 @@ The output looks like this:
 
 <span class="small">#dom-module-imports</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -46077,7 +45868,6 @@ However, the following function is more performant because it is likely that bro
 
 <span class="small">#sec-math.imul</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -46220,7 +46010,6 @@ The `in` operator returns `true` for properties in the prototype chain. (If you 
 
 <span class="small">#sec-relational-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -46417,7 +46206,6 @@ The example below illustrates `includes()` method called on the function's [argu
 
 <span class="small">#sec-array.prototype.includes</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -46507,7 +46295,6 @@ If used prefix, with operator before operand (for example, `++x`), the increment
 
 <span class="small">The definition of 'Increment operator' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47033,7 +46820,6 @@ However, if you are more interested in all the little technical bits defined by 
 
 <span class="small">#sec-array.prototype.indexof</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47149,7 +46935,6 @@ To prevent this, and require that different types are considered to be different
 
 <span class="small">#sec-equality-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47246,7 +47031,6 @@ As defined by the ECMAScript 5 specification, `Infinity` is read-only (implement
 
 <span class="small">#sec-value-properties-of-the-global-object-infinity</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47353,7 +47137,6 @@ This also demonstrates how the `exports` property is used to access exported fun
 
 <span class="small">#instances</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47619,7 +47402,6 @@ This will always be `false`. (`!mycar` will be evaluated before `instanceof`, so
 
 <span class="small">The definition of 'Relational Operators' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47789,7 +47571,6 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 <span class="small">#dom-webassembly-instantiate</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -47894,7 +47675,6 @@ The `ResultObject`'s instance member is then accessed, and the contained exporte
 
 <span class="small">#dom-webassembly-instantiatestreaming</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -48100,7 +47880,6 @@ Returns a new **array iterator object that contains the values for each index in
 
 <span class="small">#table-49</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -48240,7 +48019,6 @@ When called with a `buffer`, and optionally a `byteOffset` and a `length` argume
 
 <span class="small">#sec-typedarray-constructors</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -48532,7 +48310,6 @@ Returns a new _array iterator_ object that contains the values for each index in
 
 <span class="small">The definition of 'TypedArray constructors' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -48856,7 +48633,6 @@ You can use `Intl` to format dates and numbers in a form that's conventional for
 
 <span class="small">#intl-object</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -49689,7 +49465,6 @@ This is also _not_ the same as being equal according to the [`===`](https://deve
 
 <span class="small">The definition of 'Object.is' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -49924,7 +49699,6 @@ When checking for `Array` instance, `Array.isArray` is preferred over `instanceo
 
 <span class="small">#sec-array.isarray</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50044,7 +49818,6 @@ For array-like objects, the default is to not spread. `Symbol.isConcatSpreadable
 
 <span class="small">#sec-symbol.isconcatspreadable</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50157,7 +49930,6 @@ If the `target` argument to this method is not an object (a primitive), then it 
 
 <span class="small">#sec-reflect.isextensible</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50257,7 +50029,6 @@ In comparison to the global [`isFinite()`](../isfinite) function, this method do
 
 <span class="small">#sec-number.isfinite</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50431,7 +50202,6 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 <span class="small">The definition of 'Object.isFrozen' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50544,7 +50314,6 @@ If the target value is an integer, return `true`, otherwise return `false`. If t
 
 <span class="small">#sec-number.isinteger</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50630,7 +50399,6 @@ A [`Boolean`](../boolean) indicating whether the operation is lock free.
 
 <span class="small">#sec-atomics.islockfree</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50786,7 +50554,6 @@ You can use this, for example, to test whether an argument to a function is arit
 
 <span class="small">The definition of 'isNaN' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -50907,7 +50674,6 @@ For example, to execute some code that's only safe to run if a `baz` object has 
 
 <span class="small">#sec-object.prototype.isprototypeof</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51013,7 +50779,6 @@ A [`Boolean`](../boolean) indicating whether or not the given value is a number 
 
 <span class="small">#sec-number.issafeinteger</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51151,7 +50916,6 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 <span class="small">The definition of 'Object.isSealed' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51247,7 +51011,6 @@ The value to be checked.
 
 <span class="small">#sec-arraybuffer.isview</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51333,7 +51096,6 @@ The following example uses string methods to change the formatting of a string:
 
 <span class="small">#sec-string.prototype.italics</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51825,7 +51587,6 @@ If an iterable's `@@iterator` method does not return an iterator object, then it
 
 <span class="small">The definition of 'Symbol.iterator' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -51933,7 +51694,6 @@ The following example joins array-like object (`arguments`), by calling [`Functi
 
 <span class="small">The definition of 'Array.prototype.join' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52099,7 +51859,6 @@ Return a JSON string corresponding to the specified value, optionally including 
 
 <span class="small">#sec-json-object</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52366,7 +52125,6 @@ A string representing the key for the given symbol if one is found on the global
 
 <span class="small">#sec-symbol.keyfor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52532,7 +52290,6 @@ For a simple Browser Polyfill, see [Javascript - Object.keys Browser Compatibili
 
 <span class="small">#sec-object.keys</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52733,7 +52490,6 @@ In [strict mode](../strict_mode) code, however, this will throw a [`SyntaxError`
 
 <span class="small">The definition of 'Labelled statement' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52816,7 +52572,6 @@ While the language subtag must be specified, the [`Locale`](../locale) construct
 
 <span class="small">#sec-Intl.Locale.prototype.language</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -52920,7 +52675,6 @@ Returns `["", undefined]`, an empty array whose zeroth element is the match stri
 
 <span class="small">#sec-properties-of-regexp-instances</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53083,7 +52837,6 @@ Again, note that this implementation aims for absolute compatibility with `lastI
 
 <span class="small">#sec-array.prototype.lastindexof</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53167,7 +52920,6 @@ So e.g.: `9 << 3` translates to: `9 * (2 ** 3) = 9 * (8) = 72`.
 
 <span class="small">#sec-left-shift-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53243,7 +52995,6 @@ The left shift assignment operator (`<<=`) moves the specified amount of bits to
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53386,7 +53137,6 @@ The following example shortens the array `numbers` to a length of 3 if the curre
 
 <span class="small">#sec-properties-of-array-instances-length</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53511,7 +53261,6 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 <span class="small">#sec-relational-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53628,7 +53377,6 @@ The operands are compared using the [Abstract Relational Comparison](https://tc3
 
 <span class="small">The definition of 'Relational operators' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -53923,7 +53671,6 @@ However, this combination of `var` and `let` declaration below is a [`SyntaxErro
 
 <span class="small">#sec-let-and-const-declarations</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -54615,7 +54362,6 @@ Here `++` is not treated as a [postfix operator](https://developer.mozilla.org/e
 
 <span class="small">The definition of 'Lexical Grammar' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55193,7 +54939,6 @@ The following example displays the word "MDN" as a hypertext link that returns t
 
 <span class="small">The definition of 'String.prototype.link' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55304,7 +55049,6 @@ The following snippet creates a new `LinkError` instance, and logs its details t
 
 <span class="small">#exceptiondef-linkerror</span>
 </a>
-
 </td>
 </tr>
 <tr class="even">
@@ -55314,7 +55058,6 @@ The following snippet creates a new `LinkError` instance, and logs its details t
 
 <span class="small">#sec-native-error-types-used-in-this-standard</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55462,7 +55205,6 @@ The following example shows how to create a List formatter returning formatted p
 
 <span class="small">#listformat-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55682,7 +55424,6 @@ The following function returns the natural log of 10:
 
 <span class="small">#sec-math.ln10</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55776,7 +55517,6 @@ The following function returns the natural log of 2:
 
 <span class="small">#sec-math.ln2</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -55869,7 +55609,6 @@ The value at the given position (`typedArray[index]`).
 
 <span class="small">#sec-atomics.load</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -56025,7 +55764,6 @@ The constructor also takes an optional configuration object argument, which can 
 
 <span class="small">#locale-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -56551,7 +56289,6 @@ The results provided by `localeCompare()` can be customized using the `options` 
 
 <span class="small">#sec-string.prototype.localecompare</span>
 </a>
-
 </td>
 </tr>
 <tr class="even">
@@ -56561,7 +56298,6 @@ The results provided by `localeCompare()` can be customized using the `options` 
 
 <span class="small">#sup-String.prototype.localeCompare</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -56719,7 +56455,6 @@ If you run `getBaseLog(10, 1000)` it returns `2.9999999999999996` due to floatin
 
 <span class="small">#sec-math.log</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -56824,7 +56559,6 @@ This can be emulated with the following function:
 
 <span class="small">#sec-math.log10</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -56920,7 +56654,6 @@ The following function returns the base 10 logarithm of e:
 
 <span class="small">#sec-math.log10e</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57016,7 +56749,6 @@ Because `log1p()` is a static method of `Math`, you always use it as `Math.log1p
 
 <span class="small">#sec-math.log1p</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57123,7 +56855,6 @@ This Polyfill emulates the `Math.log2` function. Note that it returns imprecise 
 
 <span class="small">#sec-math.log2</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57219,7 +56950,6 @@ The following function returns the base 2 logarithm of e:
 
 <span class="small">#sec-math.log2e</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57373,7 +57103,6 @@ is always equal to:
 
 <span class="small">#prod-LogicalANDExpression</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57489,7 +57218,6 @@ is always equal to:
 
 <span class="small">The definition of 'Logical NOT expression' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57646,7 +57374,6 @@ is always equal to:
 
 <span class="small">The definition of 'Logical OR expression' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -57747,7 +57474,6 @@ Note: Pay attention to the value returned by the API you're checking against. If
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -58271,7 +57997,6 @@ Maps can be merged with Arrays, too:
 
 <span class="small">The definition of 'Map' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -58859,7 +58584,6 @@ If it is a positive number with a positive sign, `RegExp()` will ignore the posi
 
 <span class="small">The definition of 'String.prototype.match' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -59012,7 +58736,6 @@ Using `matchAll`, you can access capture groups easily:
 
 <span class="small">#sec-string.prototype.matchall</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -59259,7 +58982,6 @@ This can be achieved with a combination of [`Math.random()`](math/random) and [`
 
 <span class="small">The definition of 'Math' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -60463,7 +60185,6 @@ However, both spread (`...`) and `apply` will either fail or return the wrong re
 
 <span class="small">#sec-math.max</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -60567,7 +60288,6 @@ This returns 2 because in floating points, the value is actually the decimal tra
 
 <span class="small">#sec-number.max_safe_integer</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -60661,7 +60381,6 @@ The following code multiplies two numeric values. If the result is less than or 
 
 <span class="small">#sec-number.max_value</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -60751,7 +60470,6 @@ Sometimes, it is convenient to be able to identify the most likely locale langua
 
 <span class="small">#sec-Intl.Locale.prototype.maximize</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -60864,7 +60582,6 @@ This memory's `buffer` property will return a `SharedArrayBuffer`.
 
 <span class="small">#memories</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61034,7 +60751,6 @@ By default, the `message` property is an empty string, but this behavior can be 
 
 <span class="small">#sec-error.prototype.message</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61258,7 +60974,6 @@ The shorthand syntax also supports computed property names.
 
 <span class="small">#sec-method-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61445,7 +61160,6 @@ may be written as this
 
 <span class="small">#sec-math.min</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61534,7 +61248,6 @@ Because `MIN_SAFE_INTEGER` is a static property of [`Number`](../number), you al
 
 <span class="small">#sec-number.min_safe_integer</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61628,7 +61341,6 @@ The following code divides two numeric values. If the result is greater than or 
 
 <span class="small">#sec-number.min_value</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -61718,7 +61430,6 @@ This method carries out the reverse of [`maximize()`](maximize), removing any la
 
 <span class="small">#sec-Intl.Locale.prototype.minimize</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -62397,7 +62108,6 @@ In the worker (see `wasm_worker.js`) we define an import object for the module t
 
 <span class="small">#modules</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -62654,7 +62364,6 @@ You cannot change this property directly.
 
 <span class="small">#sec-get-regexp.prototype.multiline</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -62767,7 +62476,6 @@ The multiplication operator (`*`) produces the product of the operands.
 
 <span class="small">#sec-multiplicative-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63011,7 +62719,6 @@ If a [`Symbol`](../symbol) is used a function name and the symbol has a descript
 
 <span class="small">#sec-function-instances-name</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63180,7 +62887,6 @@ Additionally, some array methods cannot find `NaN`, while others can.
 
 <span class="small">#sec-value-properties-of-the-global-object-nan</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63286,7 +62992,6 @@ In the following example, the variable `smallNumber` is assigned a value that is
 
 <span class="small">#sec-number.negative_infinity</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63510,7 +63215,6 @@ Instead of passing a literal string or integer value when creating the new objec
 
 <span class="small">#sec-new-operator</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63625,7 +63329,6 @@ Thus from the above example of class `C` and `D`, it seems that `new.target` poi
 
 <span class="small">#sec-built-in-function-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -63776,7 +63479,6 @@ Note that the first call does not log anything, because the generator was not yi
 
 <span class="small">#sec-generator.prototype.next</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -64267,7 +63969,6 @@ As with canonical normalization, you can ask for decomposed or composed compatib
 
 <span class="small">#sec-string.prototype.normalize</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -64740,7 +64441,6 @@ A writing thread stores a new value and notifies the waiting thread once it has 
 
 <span class="small">#sec-atomics.notify</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -64910,7 +64610,6 @@ In Firefox, you can also enable `privacy.resistFingerprinting`, the precision wi
 
 <span class="small">#sec-date.now</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -65030,7 +64729,6 @@ When checking for `null` or `undefined`, beware of the [differences between equa
 
 <span class="small">#sec-null-value</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -65212,7 +64910,6 @@ The nullish coalescing operator treats `undefined` and `null` as specific values
 
 <span class="small">#prod-CoalesceExpression</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -65454,7 +65151,6 @@ This logs `819199440000`.
 
 <span class="small">#sec-number-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -66323,7 +66019,6 @@ Note that when the currency sign is "accounting", parentheses might be used inst
 
 <span class="small">#sec-intl-numberformat-constructor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -66977,7 +66672,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.numberingSystem</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -67086,7 +66780,6 @@ The [`Intl.Locale`](locale) constructor has an optional configuration object arg
 
 <span class="small">#sec-Intl.Locale.prototype.numeric</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -67418,7 +67111,6 @@ Since JavaScript doesn't exactly have sub-class objects, prototype is a useful w
 
 <span class="small">The definition of 'Object' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -68677,7 +68369,6 @@ Property definitions that do not use "colon" notation are not prototype mutation
 
 <span class="small">The definition of 'Object Initializer' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -68917,7 +68608,6 @@ Some subtle distinctions between [`Array.of()`](../array/of) and `TypedArray.of(
 
 <span class="small">The definition of '%TypedArray%.of' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -69654,7 +69344,6 @@ The [nullish coalescing operator](nullish_coalescing_operator) may be used after
 
 <span class="small">#prod-OptionalExpression</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -69836,7 +69525,6 @@ For example, a bitwise OR of `5 | 1` results in `0101` which is 5 in decimal.
 
 <span class="small">#sec-atomics.or</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70030,7 +69718,6 @@ The following code violates an invariant.
 
 <span class="small">#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70153,7 +69840,6 @@ A [`String`](../string) of the specified `targetLength` with the `padString` app
 
 <span class="small">#sec-string.prototype.padend</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70283,7 +69969,6 @@ A [`String`](../string) of the specified `targetLength` with `padString` applied
 
 <span class="small">#sec-string.prototype.padstart</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70498,7 +70183,6 @@ Returns `14400000` no matter the local time zone as a time zone GMT (UTC) is pro
 
 <span class="small">#sec-date.parse</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70674,7 +70358,6 @@ The following examples both return `900719925474099300`, losing precision as the
 
 <span class="small">The definition of 'parseFloat' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -70935,7 +70618,6 @@ The radix is coerced to a `Number`:
 
 <span class="small">#sec-parseint-string-radix</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71086,7 +70768,6 @@ The following function uses `Math.PI` to calculate the circumference of a circle
 
 <span class="small">#sec-math.pi</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71302,7 +70983,6 @@ The results can be customized using the `options` argument, which has one proper
 
 <span class="small">#sec-intl-pluralrules-constructor</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71435,7 +71115,6 @@ The following code creates the `myFish` array-like object containing four elemen
 
 <span class="small">The definition of 'Array.prototype.pop' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71573,7 +71252,6 @@ In the following example, the variable `bigNumber` is assigned a value that is l
 
 <span class="small">#sec-number.positive_infinity</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71713,7 +71391,6 @@ Because `pow()` is a static method of `Math`, use it as `Math.pow()`, rather tha
 
 <span class="small">#sec-math.pow</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -71980,7 +71657,6 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 <span class="small">#sec-object.preventextensions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -72262,7 +71938,6 @@ Private instance methods may be generator, async, or async generator functions. 
 
 <span class="small">#prod-PrivateIdentifier</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -72441,7 +72116,6 @@ To illustrate this a bit further we can take a look at how an `<iframe>` embedde
 
     <!DOCTYPE html>
     <iframe>
-
 </iframe>
 <br> <!-- we have a realm here -->
     <script> // we have a realm here as well
@@ -72458,7 +72132,6 @@ The same concept applies to promises. If we modify the above example a little bi
 
     <!DOCTYPE html>
     <iframe>
-
 </iframe>
 <br> <!-- we have a realm here -->
     <script> // we have a realm here as well
@@ -72476,7 +72149,6 @@ If we change this so that the `<iframe>` in the document is listening to post me
     <!-- y.html -->
     <!DOCTYPE html>
     <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="x.html">
-
 </iframe>
 <br>
     <script>
@@ -72662,7 +72334,6 @@ By clicking the button several times in a short amount of time, you'll even see 
 
     <button id="make-promise">Make a promise!</button>
     <div id="log">
-
 </div>
 
 #### JavaScript
@@ -72729,7 +72400,6 @@ Another simple example using `Promise` and [`XMLHttpRequest`](https://developer.
 
 <span class="small">#sec-promise-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -73126,7 +72796,6 @@ There was attempt to access an object for which you have no permission. This is 
     <html>
       <head>
         <iframe id="myframe" src="http://www1.w3c-test.org/common/blank.html">
-
 </iframe>
 <br>
         <script>
@@ -73263,7 +72932,6 @@ For example, the following syntax is often seen in many scripts.
 
 <span class="small">The definition of 'Property Accessors' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -73436,7 +73104,6 @@ The following example demonstrates the enumerability of user-defined vs. built-i
 
 <span class="small">#sec-object.prototype.propertyisenumerable</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -73613,7 +73280,6 @@ The `__proto__` property is a simple accessor property on [`Object.prototype`](.
 
 <span class="small">#sec-additional-properties-of-the-object.prototype-object</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -74100,7 +73766,6 @@ Now in order to create a complete sample `traps` list, for didactic purposes, we
 
 <span class="small">The definition of 'Proxy' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -74464,7 +74129,6 @@ Getters and setters are special methods that bind to a class property and are ca
 
 <span class="small">#prod-FieldDefinition</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -74636,7 +74300,6 @@ Note that although `obj` is not an array, the method `push` successfully increme
 
 <span class="small">#sec-array.prototype.push</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -74895,7 +74558,6 @@ If the iterable contains one or more non-promise value and/or an already settled
 
 <span class="small">#sec-promise.race</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -75036,7 +74698,6 @@ While the `getRandomInt()` function above is inclusive at the minimum, it's excl
 
 <span class="small">The definition of 'Math.random' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -75207,7 +74868,6 @@ Stack trace. Inherited from [`Error`](error).
 
 <span class="small">#sec-native-error-types-used-in-this-standard-rangeerror</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -75395,7 +75055,6 @@ In most cases, `String.raw()` is used with template literal. The first syntax me
 
 <span class="small">#sec-string.raw</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -76237,7 +75896,6 @@ Using [`Array.filter()`](filter) then [`Array.map()`](map) traverses the array t
 
 <span class="small">The definition of 'Array.prototype.reduce()' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -76812,7 +76470,6 @@ See also [Function composition](<https://en.wikipedia.org/wiki/Function_composit
 
 <span class="small">#sec-array.prototype.reduceright</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -76955,7 +76612,6 @@ Stack trace. Inherited from [`Error`](error).
 
 <span class="small">#sec-native-error-types-used-in-this-standard-referenceerror</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -77146,7 +76802,6 @@ A function that sets the prototype of an object. Returns a [`Boolean`](boolean) 
 
 <span class="small">#sec-reflect-object</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -77772,7 +77427,6 @@ The [Unicode property escapes](https://developer.mozilla.org/en-US/docs/Web/Java
 
 <span class="small">#sec-regexp-regular-expression-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -78713,7 +78367,6 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 <span class="small">#sec-Intl.Locale.prototype.region</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -78829,7 +78482,6 @@ The static `Promise.reject` function returns a `Promise` that is rejected. For d
 
 <span class="small">#sec-promise.reject</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -78981,7 +78633,6 @@ The following example shows how to create a relative time formatter returning fo
 
 <span class="small">#relativetimeformat-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -79232,7 +78883,6 @@ Note that while in most languages, '%' is a remainder operator, in some (e.g. [P
 
 <span class="small">#sec-multiplicative-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -79406,7 +79056,6 @@ This method has been added to the ECMAScript 2015 specification and may not be a
 
 <span class="small">The definition of 'String.prototype.repeat' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -79717,7 +79366,6 @@ The regular expression `test` checks for any number that ends with `F`. The numb
 
 <span class="small">The definition of 'String.prototype.replace' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -79961,7 +79609,6 @@ This will work:
 
 <span class="small">The definition of 'String.prototype.replaceAll' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -80212,7 +79859,6 @@ The inverted order of the logs is due to the fact that the `then` handlers are c
 
 <span class="small">#sec-promise.resolve</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -80365,7 +80011,6 @@ The values provided for these properties in the `options` argument or filled in 
 
 <span class="small">#sec-intl.numberformat.prototype.resolvedoptions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -80614,7 +80259,6 @@ To use `Array` methods on the `arguments` object, it must be converted to a real
 
 <span class="small">#sec-function-definitions</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -80864,7 +80508,6 @@ See also the article about [Closures](https://developer.mozilla.org/en-US/docs/W
 
 <span class="small">#sec-return-statement</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -80995,7 +80638,6 @@ The following example creates an array-like object `a`, containing three element
 
 <span class="small">#sec-array.prototype.reverse</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81132,7 +80774,6 @@ If the `revoke()` function gets called, the proxy becomes unusable: Any trap to 
 
 <span class="small">#sec-proxy.revocable</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81249,7 +80890,6 @@ Likewise, `-9 >> 2` yields `-3`, because the sign is preserved:
 
 <span class="small">#prod-BitwiseORExpression</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81355,7 +80995,6 @@ The right shift assignment operator (`>>=`) moves the specified amount of bits t
 
 <span class="small">#sec-assignment-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81475,7 +81114,6 @@ Because `round()` is a static method of `Math`, you always use it as `Math.round
 
 <span class="small">#sec-math.round</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81622,7 +81260,6 @@ The following snippet creates a new `RuntimeError` instance, and logs its detail
 
 <span class="small">#exceptiondef-runtimeerror</span>
 </a>
-
 </td>
 </tr>
 <tr class="even">
@@ -81632,7 +81269,6 @@ The following snippet creates a new `RuntimeError` instance, and logs its detail
 
 <span class="small">#sec-native-error-types-used-in-this-standard</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81780,7 +81416,6 @@ The [`Locale`](locale) constructor takes a configuration object, which can be us
 
 <span class="small">#sec-Intl.Locale.prototype.script</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -81957,7 +81592,6 @@ In ES5, if the argument to this method is not an object (a primitive), then it w
 
 <span class="small">The definition of 'Object.seal' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -82084,7 +81718,6 @@ The following example searches a string with two different regex objects to show
 
 <span class="small">#sec-string.prototype.search</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -82238,7 +81871,6 @@ This function selects a pluralization category according to the locale and forma
 
 <span class="small">#sec-intl.pluralrules.prototype.select</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -82565,7 +82197,6 @@ Calls `callbackFn` once for each value present in the `Set` object, in insertion
 
 <span class="small">#sec-set-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83045,7 +82676,6 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 <span class="small">#sec-dataview.prototype.setbigint64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83169,7 +82799,6 @@ Thrown if the `byteOffset` is set such that it would store beyond the end of the
 
 <span class="small">#sec-dataview.prototype.setbiguint64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83294,7 +82923,6 @@ If a negative number is provided for `dayValue`, the date will be set counting b
 
 <span class="small">The definition of 'Date.prototype.setDate' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83417,7 +83045,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setfloat32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83540,7 +83167,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setfloat64</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83663,7 +83289,6 @@ If a parameter you specify is outside of the expected range, `setFullYear()` att
 
 <span class="small">#sec-date.prototype.setfullyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83791,7 +83416,6 @@ If a parameter you specify is outside of the expected range, `setHours()` attemp
 
 <span class="small">#sec-date.prototype.sethours</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -83914,7 +83538,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setint16</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84037,7 +83660,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setint32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84156,7 +83778,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setint8</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84269,7 +83890,6 @@ If you specify a number outside the expected range, the date information in the 
 
 <span class="small">#sec-date.prototype.setmilliseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84392,7 +84012,6 @@ If a parameter you specify is outside of the expected range, `setMinutes()` atte
 
 <span class="small">#sec-date.prototype.setminutes</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84518,7 +84137,6 @@ The current day of month will have an impact on the behavior of this method. Con
 
 <span class="small">#sec-date.prototype.setmonth</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84766,7 +84384,6 @@ Using the older [`Object.prototype.__proto__`](proto) property, we can easily de
 
 <span class="small">#sec-object.setprototypeof</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -84889,7 +84506,6 @@ If a parameter you specify is outside of the expected range, `setSeconds()` atte
 
 <span class="small">#sec-date.prototype.setseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85003,7 +84619,6 @@ Use the `setTime()` method to help assign a date and time to another [`Date`](..
 
 <span class="small">The definition of 'Date.prototype.setTime' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85126,7 +84741,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setuint16</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85249,7 +84863,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setuint32</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85368,7 +84981,6 @@ Thrown if the `byteOffset` is set such as it would store beyond the end of the v
 
 <span class="small">#sec-dataview.prototype.setuint8</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85483,7 +85095,6 @@ If a parameter you specify is outside of the expected range, `setUTCDate()` atte
 
 <span class="small">#sec-date.prototype.setutcdate</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85606,7 +85217,6 @@ If a parameter you specify is outside of the expected range, `setUTCFullYear()` 
 
 <span class="small">#sec-date.prototype.setutcfullyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85733,7 +85343,6 @@ If a parameter you specify is outside of the expected range, `setUTCHours()` att
 
 <span class="small">#sec-date.prototype.setutchours</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85846,7 +85455,6 @@ If a parameter you specify is outside of the expected range, `setUTCMilliseconds
 
 <span class="small">#sec-date.prototype.setutcmilliseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -85969,7 +85577,6 @@ If a parameter you specify is outside of the expected range, `setUTCMinutes()` a
 
 <span class="small">#sec-date.prototype.setutcminutes</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86088,7 +85695,6 @@ If a parameter you specify is outside of the expected range, `setUTCMonth()` att
 
 <span class="small">#sec-date.prototype.setutcmonth</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86207,7 +85813,6 @@ If a parameter you specify is outside of the expected range, `setUTCSeconds()` a
 
 <span class="small">#sec-date.prototype.setutcseconds</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86329,7 +85934,6 @@ The first two lines set the year to 1996. The third sets the year to 2000.
 
 <span class="small">#sec-date.prototype.setyear</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86513,7 +86117,6 @@ Returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArray
 
 <span class="small">#sec-sharedarraybuffer-objects</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86867,7 +86470,6 @@ The shift() method is often used in condition inside while loop. In the followin
 
 <span class="small">#sec-array.prototype.shift</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -86994,7 +86596,6 @@ Because `sign()` is a static method of `Math`, you always use it as `Math.sign()
 
 <span class="small">#sec-math.sign</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87117,7 +86718,6 @@ Because `sin()` is a static method of `Math`, you always use it as `Math.sin()`,
 
 <span class="small">#sec-math.sin</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87253,7 +86853,6 @@ or using only one call to the [`Math.exp()`](exp) function:
 
 <span class="small">#sec-math.sinh</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87362,7 +86961,6 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 <span class="small">#sec-get-map.prototype.size</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87563,7 +87161,6 @@ Anyway, it can be simplified using [`bind`](../function/bind).
 
 <span class="small">#sec-array.prototype.slice</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87685,7 +87282,6 @@ With the [`element.style`](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 <span class="small">#sec-string.prototype.small</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -87928,7 +87524,6 @@ To mimic the function of the `includes()` method, this custom function returns `
 
 <span class="small">#sec-array.prototype.some</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -88236,7 +87831,6 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
 
 <span class="small">#sec-array.prototype.sort</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -88385,7 +87979,6 @@ Starting with ECMAScript 5, the `source` property no longer returns an empty str
 
 <span class="small">#sec-get-regexp.prototype.source</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -88587,7 +88180,6 @@ You might want to return [`Array`](../array) objects in your derived array class
 
 <span class="small">#sec-symbol.species</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -88782,7 +88374,6 @@ If the specified number of elements to insert differs from the number of element
 
 <span class="small">#sec-array.prototype.splice</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -89022,7 +88613,6 @@ It doesn't work if the string contains grapheme clusters, even when using a unic
 
 <span class="small">#sec-string.prototype.split</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -89493,7 +89083,6 @@ Because `sqrt()` is a static method of `Math`, you always use it as `Math.sqrt()
 
 <span class="small">#sec-math.sqrt</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -89618,7 +89207,6 @@ The following function returns 1 over the square root of 2:
 
 <span class="small">#sec-math.sqrt1_2</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -89741,7 +89329,6 @@ The following function returns the square root of 2:
 
 <span class="small">#sec-math.sqrt2</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90043,7 +89630,6 @@ A more robust (fully ES2015 specification compliant), but less performant and co
 
 <span class="small">#sec-string.prototype.startswith</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90224,7 +89810,6 @@ Static members are not directly accessible using the [`this`](../operators/this)
 
 <span class="small">The definition of 'Class definitions' in that specification.</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90397,7 +89982,6 @@ Examples of correct behavior:
 
 <span class="small">#sec-get-regexp.prototype.sticky</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90644,7 +90228,6 @@ The value that has been stored.
 
 <span class="small">#sec-atomics.store</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90816,7 +90399,6 @@ The most notable difference between this operator and the [equality](equality) (
 
 <span class="small">#sec-equality-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -90962,7 +90544,6 @@ Like the strict equality operator, the strict inequality operator will always co
 
 <span class="small">#sec-equality-operators</span>
 </a>
-
 </td>
 </tr>
 </tbody>
@@ -91504,7 +91085,6 @@ The following example uses string methods to change the formatting of a string:
 
 <span class="small">#sec-string.prototype.strike</span>
 </a>
-
 </td>
 </tr>
 </tbody>
