@@ -1,7 +1,7 @@
 {
     "name": "bgoonz-blog",
     "description": "bgoonz-blog",
-    "version": "1.11.1",
+    "version": "1.11.5",
     "license": "MIT",
     "scripts": {
         "develop": "gatsby develop",
@@ -16,6 +16,7 @@
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
+        "docky": "^1.5.4",
         "fs-extra": "7.0.1",
         "gatsby": "^2.0.0",
         "gatsby-plugin-disqus": "^1.2.3",
@@ -23,6 +24,7 @@
         "gatsby-plugin-react-helmet": "3.3.3",
         "gatsby-plugin-sass": "2.8.0",
         "gatsby-plugin-typescript": "2.4.4",
+        "gatsby-remark-code-buttons": "^2.0.7",
         "gatsby-source-filesystem": "2.3.10",
         "gatsby-transformer-remark": "2.8.14",
         "js-yaml": "3.12.2",
