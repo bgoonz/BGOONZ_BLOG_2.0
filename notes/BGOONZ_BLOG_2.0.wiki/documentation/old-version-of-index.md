@@ -32,9 +32,9 @@ sections:
             title_url: >-
                 https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
           - content: >
-                *Python has a built in help function that let’s you see a description
-                of the source code without having to navigate to it… “-SickNasty …
-                Autor Unknown”  .*
+                *Python has a built in help function that let's you see a description
+                of the source code without having to navigate to it… "-SickNasty …
+                Autor Unknown"  .*
             actions:
                 - label: View Posts
                   url: >-
@@ -55,7 +55,7 @@ sections:
             title: Guitar Effects Triggering w DTW
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
             image: images/panoramic-owl.png
-          - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+          - title_url: 'https://bgoonz-blog.netlify.app/docs/react/react2/'
             image_alt: img of dtw
             content: >
                 As I learn to build web applications in React I will blog about it in
@@ -103,10 +103,7 @@ sections:
       image_alt: bryan-guner
       image_position: left
       content: >-
-          <iframe class="<iframe " width="100%
-          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-          player"  clipboard-write;
-          allowfullscreen>
+          <iframe width="860" height="515" src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <br>
       actions:
@@ -122,7 +119,7 @@ sections:
       image_alt: listen to my playlist
       image_position: left
       content: >
-          <iframe class="<iframe " width="100%
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%
           src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
           width="100%" height="380" frameBorder="0" allowtransparency="true"
           allow="encrypted-media">
@@ -147,18 +144,18 @@ sections:
                 ## &#xA;
             actions: []
             type: grid_item
-            image: images/spectacular-turmeric.png
+            image: images/neural.png
           - title: Convolutional Neural Networks
             title_url: neural networks
             image_alt: neural networks
             content: >+
                 Artificial neural networks, usually simply called neural networks, are
                 computing systems vaguely inspired by the biological [neural
-                networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
+                networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.png)
 
             actions: []
             type: grid_item
-            image: images/neural.PNG
+            image: images/neural.png
           - title: Jamstack
             title_url: jamstack
             image_alt: jamstack
@@ -177,10 +174,10 @@ sections:
       type: section_grid
     - title: Code Playground(s)
       section_id: code-playground
-      image_alt: lorem-ipsum
+      image_alt: image of
       image_position: left
       content: |-
-          <iframe class="<iframe " width="100%   width="800" height="575"
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%   width="800" height="575"
             src="https://code-playground.netlify.app/index.html" title="YouTube video
             player"  clipboard-write;
             allowfullscreen>
@@ -205,7 +202,7 @@ sections:
                   new_window: false
                   no_follow: false
                   type: action
-            image: images/resume.JPG
+            image: images/resume.jpg
             title_url: >-
                 https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
           - title: Showcase
@@ -218,10 +215,10 @@ sections:
             image: images/My Post.png
     - title: Mini Projects
       section_id: Mini Projects
-      image_alt: lorem-ipsum
+      image_alt: image of
       image_position: left
       content: |
-          <iframe class="<iframe " width="100%     width="800" height="575"
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%     width="800" height="575"
            src="https://iframeshowcase.netlify.app/" title="YouTube video
            player"  clipboard-write;
            allowfullscreen>
@@ -238,10 +235,10 @@ sections:
       type: section_content
     - title: Mini Projects
       section_id: lorem-ipsum
-      image_alt: lorem-ipsum
+      image_alt: image of
       image_position: left
       content: |-
-          <iframe class="<iframe " width="100%   width="800" height="575"
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%   width="800" height="575"
            src="https://random-list-of-embedable-content.vercel.app/" title="YouTube video
            player"  clipboard-write;
            allowfullscreen>
@@ -254,7 +251,7 @@ sections:
       image_alt: lorem-ipsum
       image_position: left
       content: |-
-          <iframe class="<iframe " width="100%  width="800" height="575"
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%  width="800" height="575"
             src="https://bgoonz.blogspot.com/" title="YouTube video
             player"  clipboard-write;
             allowfullscreen>
@@ -267,7 +264,7 @@ sections:
       image_alt: blog
       image_position: left
       content: |-
-          <iframe class="<iframe " width="100%  width="800" height="575"
+          <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);class="<iframe " width="100%  width="800" height="575"
            src="https://blog-w-comments.vercel.app/" title="YouTube video
            player"  clipboard-write;
            allowfullscreen>

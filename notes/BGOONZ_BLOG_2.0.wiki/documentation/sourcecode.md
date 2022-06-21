@@ -1,6 +1,7 @@
-# Source Code:
+# Source Code
 
 <details>
+
 <summary> Folder Structure (src)  </summary>
 
 ```
@@ -318,7 +319,7 @@
 <details>
 <summary> Click To See Component Sourcecode  </summary>
 
-# Component Structure:
+# Component Structure
 
 ```
 .
@@ -540,13 +541,11 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div id="search">
-</div>
                 <div>
                     <center>
                         <br />
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-                        <div id="search"> {Script} </div>
+
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
@@ -699,8 +698,6 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                <div id="search">
-</div>
             </footer>
         );
     }
@@ -1248,7 +1245,7 @@ export default class Submenu extends React.Component {
 }
 ```
 
-````js
+```js
 //
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
@@ -1300,30 +1297,26 @@ export default {
     Layout,
     addScript
 };
+```
 
-```</details>
-
-
+</details>
 
 <details>
 <summary> Click To See Template Sourcecode  </summary>
 
 # Templates
 
-````
+```
 
 ├── advanced.js
 ├── blog.js
 ├── docs.js
 ├── page.js
 └── post.js
-
-````
-
+```
 
 ```js
 //
-
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1353,7 +1346,7 @@ export default class Advanced extends React.Component {
         );
     }
 }
-````
+```
 
 ---
 
