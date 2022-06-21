@@ -624,19 +624,6 @@ find . -type f -exec chmod 644 {} \;
 ```console
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
-
-
-
-find . -name "* *" -type f | rename 's/0//g'
-find . -name "* *" -type f | rename 's/1//g'
-find . -name "* *" -type f | rename 's/2//g'
-find . -name "* *" -type f | rename 's/3//g'
-find . -name "* *" -type f | rename 's/4//g'
-find . -name "* *" -type f | rename 's/5//g'
-find . -name "* *" -type f | rename 's/6//g'
-find . -name "* *" -type f | rename 's/7//g'
-find . -name "* *" -type f | rename 's/8//g'
-find . -name "* *" -type f | rename 's/9//g'
 ```
 
 ````console

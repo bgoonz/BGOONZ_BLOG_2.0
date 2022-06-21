@@ -1,4 +1,3 @@
-/* It's a React component that renders a button or a link. */
 import React from 'react';
 import _ from 'lodash';
 
