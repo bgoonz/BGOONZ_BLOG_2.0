@@ -33,7 +33,7 @@ Consider investing any money you're not planning on using for at least three yea
 
 ### 7. Make investing a continuing priority.
 
-Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress. 
+Timing the market rarely works. What does is investing regularly, first in tax-advantaged accounts (retirement accounts, 529 college savings accounts, health savings accounts) and then in discretionary ones. Then every year, assess your progress. 
 
 ### 8. Have a family conversation to prevent surprises.
 

@@ -1808,7 +1808,9 @@ To illustrate, consider this HTML document:
 
 <!DOCTYPE html>
 <html class\=e\>
- <head\><title\>Aliens?</title\></head\>
+ <head\>
+<title\>Aliens?</title\>
+</head\>
  <body\>Why yes.</body\>
 </html\>
 
@@ -6544,20 +6546,28 @@ The following code illustrates elements in each of these four states:
 </script>
 
 <!-- "undefined" (not defined, not custom) -->
-<sw-han></sw-han>
-<p is="sw-luke"></p>
-<p is="asdf"></p>
+<sw-han>
+</sw-han>
+<p is="sw-luke">
+</p>
+<p is="asdf">
+</p>
 
 <!-- "failed" (not defined, not custom) -->
-<sw-kylo></sw-kylo>
+<sw-kylo>
+</sw-kylo>
 
 <!-- "uncustomized" (defined, not custom) -->
-<p></p>
-<asdf></asdf>
+<p>
+</p>
+<asdf>
+</asdf>
 
 <!-- "custom" (defined, custom) -->
-<sw-rey></sw-rey>
-<p is="sw-finn"></p>
+<sw-rey>
+</sw-rey>
+<p is="sw-finn">
+</p>
 ```
 
 [Elements](https://dom.spec.whatwg.org/#concept-element) also have an associated shadow root (null or a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)). It is null unless otherwise stated. An [element](https://dom.spec.whatwg.org/#concept-element) is a shadow host if its [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root) is non-null.
