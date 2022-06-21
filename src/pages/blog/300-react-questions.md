@@ -1,9 +1,9 @@
 ---
 title: React Interview Questions & Answers
-subtitle: React Interview Questions & Answers
+subtitle: lorem-ipsum
 date: '2021-11-24'
 thumb_image_alt: image of
-excerpt: React Interview Questions & Answers
+excerpt: lorem-ipsum
 seo:
     title: 'React Interview Questions & Answers'
     description: ''

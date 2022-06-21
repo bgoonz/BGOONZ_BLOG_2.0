@@ -1428,7 +1428,7 @@ Graph
 
     //below uses the adjacency list representation.
 
-```js
+````js
 //
         function Graph() {
           this.vertices = [];
@@ -1547,7 +1547,7 @@ Graph
             return (vertex + ' -> ' + this.edges[vertex].join(', ')).trim();
           }, this).join(' | '));
         };
- ```
+        ```
         let graph = new Graph();
         graph.addVertex(1);
         graph.addVertex(2);
@@ -1586,4 +1586,4 @@ Graph
         console.log('graph size (number of vertices):', graph.size()); // => 5
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
-```
+````

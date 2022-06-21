@@ -124,7 +124,6 @@ Create an empty Git repository. The Git repository's settings, stored
 information, and more is stored in a directory (a folder) named ".git".
 
 ```console
-
 $ git init
 ```
 
@@ -134,7 +133,6 @@ To configure settings. Whether it be for the repository, the system itself,
 or global configurations ( global config file is `~/.gitconfig` ).
 
 ```console
-
 # Print & Set Some Basic Config Variables (Global)
  git config --global user.email "bryan.guner@gmail.com"
  git config --global user.name "bryan"
@@ -148,7 +146,6 @@ To give you quick access to an extremely detailed guide of each command. Or to
 just give you a quick reminder of some semantics.
 
 ```console
-
 # Quickly check available commands
 $ git help
 
@@ -172,7 +169,6 @@ To intentionally untrack file(s) & folder(s) from git. Typically meant for
 private & temp files which would otherwise be shared in the repository.
 
 ```console
-
 $ echo "temp/" >> .gitignore
 $ echo "private_key" >> .gitignore
 ```
@@ -183,7 +179,6 @@ To show differences between the index file (basically your working copy/repo)
 and the current HEAD commit.
 
 ```console
-
 # Will display the branch, untracked files, changes and other differences
 $ git status
 
@@ -197,7 +192,6 @@ To add files to the staging area/index. If you do not `git add` new files to
 the staging area/index, they will not be included in commits!
 
 ```console
-
 # add a file in your current working directory
 $ git add HelloWorld.java
 
@@ -220,7 +214,6 @@ Manage your branches. You can view, edit, create, delete branches using this
 command.
 
 ```console
-
 # list existing branches & remotes
 $ git branch -a
 
@@ -243,7 +236,6 @@ $ git branch myBranchName --edit-description
 Manage your tags
 
 ```console
-
 # List tags
 $ git tag
 
@@ -271,7 +263,6 @@ Updates all files in the working tree to match the version in the index, or
 specified tree.
 
 ```console
-
 # Checkout a repo - defaults to master branch
 $ git checkout
 
@@ -291,7 +282,6 @@ remote-tracking branches for each branch in the cloned repo, which allows you
 to push to a remote branch.
 
 ```console
-
 # Clone learnxinyminutes-docs
 $ git clone https://github.com/adambard/learnxinyminutes-docs.git
 
@@ -308,7 +298,6 @@ Stores the current contents of the index in a new "commit." This commit
 contains the changes made and a message created by the user.
 
 ```console
-
 # commit with a message
 $ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
 
@@ -328,7 +317,6 @@ $ git commit --amend -m "Correct message"
 Shows differences between a file in the working directory, index and commits.
 
 ```console
-
 # Show difference between your working dir and the index
 $ git diff
 
@@ -346,7 +334,6 @@ Allows you to quickly search a repository.
 Optional Configurations:
 
 ```console
-
 # Thanks to Travis Jeffery for these
 # Set line numbers to be shown in grep search results
 $ git config --global grep.lineNumber true
@@ -356,7 +343,6 @@ $ git config --global alias.g "grep --break --heading --line-number"
 ```
 
 ```console
-
 # Search for "variableName" in all java files
 $ git grep 'variableName' -- '*.java'
 
@@ -372,7 +358,6 @@ Google is your friend; for more examples
 Display commits to the repository.
 
 ```console
-
 # Show all commits
 $ git log
 
@@ -391,7 +376,6 @@ $ git log --graph
 "Merge" in changes from external commits into the current branch.
 
 ```console
-
 # Merge the specified branch into the current.
 $ git merge branchName
 
@@ -404,7 +388,6 @@ $ git merge --no-ff branchName
 Rename or move a file
 
 ```console
-
 # Renaming a file
 $ git mv HelloWorld.c HelloNewWorld.c
 
@@ -421,7 +404,6 @@ $ git mv -f myFile existingFile
 Pulls from a repository and merges it with another branch.
 
 ```console
-
 # Update your local repo, by merging in new changes
 # from the remote "origin" and "master" branch.
 # git pull <remote> <branch>
@@ -442,7 +424,6 @@ $ git pull origin master --rebase
 Push and merge changes from a branch to a remote & branch.
 
 ```console
-
 # Push and merge changes from a local repo to a
 # remote named "origin" and "master" branch.
 # git push <remote> <branch>
@@ -469,7 +450,6 @@ are not able to run `git pull`. Instead, you can run `git stash` to save your
 changes onto a stack!
 
 ```console
-
 $ git stash
 Saved working directory and index state \
   "WIP on master: 049d078 added the index file"
@@ -480,7 +460,6 @@ Saved working directory and index state \
 Now you can pull!
 
 ```console
-
 git pull
 ```
 
@@ -489,7 +468,6 @@ git pull
 Now check that everything is OK
 
 ```console
-
 $ git status
 # On branch master
 nothing to commit, working directory clean
@@ -500,7 +478,6 @@ Since the "hunks" are stored in a Last-In-First-Out stack, our most recent
 change will be at top.
 
 ```console
-
 $ git stash list
 stash@{0}: WIP on master: 049d078 added the index file
 stash@{1}: WIP on master: c264051 Revert "added file_size"
@@ -510,7 +487,6 @@ stash@{2}: WIP on master: 21d80a5 added number to log
 Now let's apply our dirty changes back by popping them off the stack.
 
 ```console
-
 $ git stash pop
 # On branch master
 # Changes not staged for commit:
@@ -534,7 +510,6 @@ another branch.
 _Do not rebase commits that you have pushed to a public repo_.
 
 ```console
-
 # Rebase experimentBranch onto master
 # git rebase <basebranch> <topicbranch>
 $ git rebase master experimentBranch
@@ -549,7 +524,6 @@ pulls, commits, adds, and more. It's a great command but also dangerous if you
 don't know what you are doing.
 
 ```console
-
 # Reset the staging area, to match the latest commit (leaves dir unchanged)
 $ git reset
 
@@ -600,7 +574,6 @@ restores the state of a project to a previous point. Revert will add a new
 commit which is the inverse of the specified commit, thus reverting it.
 
 ```console
-
 # Revert a specified commit
 $ git revert <commit>
 ```
@@ -610,7 +583,6 @@ $ git revert <commit>
 The opposite of git add, git rm removes files from the current working tree.
 
 ```console
-
 # remove HelloWorld.c
 $ git rm HelloWorld.c
 
@@ -714,33 +686,33 @@ Let's look at each of the various commands now:
 
     To get this---to _wipe out_ your changes to, say, `README.md`---you can run:
 
- ```
+    ```
     git checkout -- README.md
 
- ```
+    ```
 
     The `--` part here is optional. It's a good idea to use it, because it tells Git that the part that comes after `--` is a _file name_, not a _branch name_.
 
     Suppose you have a _branch_ named `hello` _and_ a _file_ named `hello`. What does:
 
- ```
+    ```
     git checkout hello
 
- ```
+    ```
 
     mean? Are we asking Git to clobber the _file_ `hello` to remove the changes we made, or are we asking Git to check out the _branch_ `hello`? To make this unambiguous, you have to write either:
 
- ```
+    ```
     git checkout -- hello        (clobber the file)
 
- ```
+    ```
 
     or:
 
- ```
+    ```
     git checkout hello --      (get the branch)
 
- ```
+    ```
 
     This case, where there are branches and files or directories with the same name, is a particularly insidious one. It has bitten real users. It's _why_ `git switch` exists now. The `git switch` command _never means clobber my files_. It only means _do the safe kind of `git checkout`._
 
@@ -760,19 +732,19 @@ Let's look at each of the various commands now:
 
         Let's show this as a drawing. Suppose we have:
 
- ```
+        ```
         ...--E--F--G--H   <-- branch
 
- ```
+        ```
 
         That is, this branch, named `branch`, ends with four commits whose hash IDs we'll call `E`, `F`, `G`, and `H` in that order. The name `branch` currently stores the hash ID of the last of these commits, `H`. If we use `git reset --hard HEAD~3`, we're telling Git to eject the _last three commits_. The result is:
 
- ```
+        ```
                F--G--H   ???
               /
         ...--E   <-- branch
 
- ```
+        ```
 
         The name `branch` now selects commit `E`, not commit `H`. If we did not write down (on paper, on a whiteboard, in a file) the hash IDs of the last three commits, they've just become somewhat hard to find. Git does gives a way to find them again, for a while, but mostly they just seem to be _gone_.
 
@@ -814,31 +786,31 @@ Let's look at each of the various commands now:
 
     If you back out the most recent commit, this does revert to the second-most-recent snapshot:
 
- ```
+    ```
       ...--G--H   <-- branch
 
- ```
+    ```
 
     becomes:
 
- ```
+    ```
       ...--G--H--Ħ   <-- branch
 
- ```
+    ```
 
     where commit `Ħ` (H-bar) "undoes" commit `H` and therefore leaves us with the same _files_ as commit `G`. But we don't have to undo the _most recent_ commit. We could take:
 
- ```
+    ```
       ...--E--F--G--H   <-- branch
 
- ```
+    ```
 
     and add a commit `Ǝ` that undoes `E` to get:
 
- ```
+    ```
       ...--E--F--G--H--Ǝ   <-- branch
 
- ```
+    ```
 
     which may not match the source snapshot of any previous commit!
 

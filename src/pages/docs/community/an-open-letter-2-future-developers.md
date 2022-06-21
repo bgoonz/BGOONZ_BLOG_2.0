@@ -1,10 +1,10 @@
 ---
-title: Open API
+title: New Developers
 weight: 0
-excerpt: Open API
+excerpt: lorem-ipsum
 seo:
-    title: 'Open API'
-    description: 'Essentially the allure of these is the amount of time that is saved and the resulting efficiency in getting a project rolled out faster'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs

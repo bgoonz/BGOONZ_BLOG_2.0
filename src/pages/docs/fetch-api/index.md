@@ -140,7 +140,7 @@ Its only difference compared to the default behavior is that for requests to ano
 
 In particular, it's possible to set the default policy for the whole page using the `Referrer-Policy` HTTP header, or per-link, with `<a rel="noreferrer">`.
 
-```
+````
 
 ## mode
 
@@ -198,7 +198,7 @@ We can put it in the `integrity` option, like this:
 fetch('http://site.com/file', {
   integrity: 'sha256-abcdef'
 });
-```
+````
 
 Then `fetch` will calculate SHA-256 on its own and compare it with our string. In case of a mismatch, an error is triggered.
 
