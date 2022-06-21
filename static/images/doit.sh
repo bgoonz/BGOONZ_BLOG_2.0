@@ -1,1 +1,0 @@
-rm ./iconifier-readme.txt

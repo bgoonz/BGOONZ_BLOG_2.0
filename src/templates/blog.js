@@ -1,9 +1,9 @@
-import { graphql } from 'gatsby';
+import {graphql} from 'gatsby';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import React from 'react';
-import { Layout } from '../components/index';
-import { getPages, Link, toStyleObj, withPrefix } from '../utils';
+import {Layout} from '../components/index';
+import {getPages, Link, toStyleObj, withPrefix} from '../utils';
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql `
@@ -106,11 +106,11 @@ export default class Blog extends React.Component {
                             } </article>
                         ))
                     } </div>
-                 
                 </div>
-<div className="gcse-search"></div>
-
-            </Layout>
+                <div className="gcse-search">
+</div>
+        <div className="fb-like" data-href="https://bgoonz-blog.netlify.app/" data-width="40" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+    </Layout>
         );
     }
 }
