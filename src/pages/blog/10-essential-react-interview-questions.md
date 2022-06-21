@@ -9,15 +9,15 @@ thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.g
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
-  - src/data/categories/js.yaml
+    - src/data/categories/react.yaml
+    - src/data/categories/js.yaml
 tags:
-  - src/data/tags/react.yaml
-  - src/data/tags/javascript.yaml
+    - src/data/tags/react.yaml
+    - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/react-state.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/react-state.md
 cmseditable: true
 ---
 
@@ -314,8 +314,8 @@ _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup
 <em>plainenglish.io</em>
 </a>
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 11, 2021](https://medium.com/p/cbaafb31765d).
+on [June 11, 2021](https://medium.com/p/cbaafb31765d).
 
-<a href="https://medium.com/@bryanguner/react-md-cbaafb31765d" class="p-canonical">Canonical link</a>
+react-md-cbaafb31765d"
 
 August 31, 2021.

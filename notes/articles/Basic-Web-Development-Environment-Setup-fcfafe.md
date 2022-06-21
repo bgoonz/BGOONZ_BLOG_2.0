@@ -12,24 +12,24 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
-</figure>Test if you have Ubuntu installed by typing “Ubuntu” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads **“Ubuntu 20.04 LTS”** with “App” under it, then you have it installed.
+</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
 
 ‌
 
-1.  <span id="110a">In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”</span>
-2.  <span id="54fd">Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu</span>
+1.  <span id="110a">In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"</span>
+2.  <span id="54fd">Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu</span>
 3.  <span id="a018">In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`</span>
 4.  <span id="6269">Restart your computer</span>
-5.  <span id="6dd9">In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”</span>
-6.  <span id="eb4e">Click “Microsoft Store”</span>
-7.  <span id="74c1">Click the “Search” button in the upper-right corner of the window</span>
-8.  <span id="9d35">Type in “Ubuntu”</span>
-9.  <span id="4205">Click “Run Linux on Windows (Get the apps)”</span>
-10. <span id="1799">Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’</span>
-11. <span id="edec">Click “Install”</span>
-12. <span id="2935">After it downloads, click “Launch”</span>
-13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose “Pin to taskbar”</span>
-14. <span id="669c">When prompted to “Enter new UNIX username”, type your first name with no spaces</span>
+5.  <span id="6dd9">In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"</span>
+6.  <span id="eb4e">Click "Microsoft Store"</span>
+7.  <span id="74c1">Click the "Search" button in the upper-right corner of the window</span>
+8.  <span id="9d35">Type in "Ubuntu"</span>
+9.  <span id="4205">Click "Run Linux on Windows (Get the apps)"</span>
+10. <span id="1799">Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu'</span>
+11. <span id="edec">Click "Install"</span>
+12. <span id="2935">After it downloads, click "Launch"</span>
+13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"</span>
+14. <span id="669c">When prompted to "Enter new UNIX username", type your first name with no spaces</span>
 15. <span id="e9c1">When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</span>
 16. <span id="4217">Confirm your installation by typing the command `whoami ‘as in who-am-i'`followed by Enter at the prompt (it should print your first name)</span>
 17. <span id="48fe">You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)</span>
@@ -37,9 +37,9 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ### Git
 
-Git comes with Ubuntu, so there’s nothing to install. However, you should configure it using the following instructions.
+Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
 
-‌Open an Ubuntu terminal if you don’t have one open already.
+‌Open an Ubuntu terminal if you don't have one open already.
 
 1.  <span id="8cfe">You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.</span>
 2.  <span id="0e0d">You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.</span>
@@ -52,12 +52,12 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 
 ### Google Chrome
 
-Test if you have Chrome installed by typing “Chrome” in the search box in the bottom app bar that reads “Type here to search”. If you see a search result that reads “Chrome” with “App” under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
 ‌
 
-1.  <span id="578c">Open Microsoft Edge, the blue “e” in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.</span>
-2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.</span>
+1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="http://chrome.google.com/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
+2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".</span>
 
 ### Node.js
 
@@ -138,9 +138,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
-
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
 <strong>bgoonz - Overview</strong>
@@ -162,4 +160,4 @@ on [February 27, 2021](https://medium.com/p/9f36c3f15afe).
 
 basic-web-development-environment-setup-9f36c3f15afe"
 
-Exported from [Medium](https://medium.com) on August 31, 2021.
+on September 23, 2021.

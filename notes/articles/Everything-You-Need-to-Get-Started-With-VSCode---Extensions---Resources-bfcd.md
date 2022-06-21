@@ -1,28 +1,3 @@
----
-title: Getting Started With VSCode
-weight: 0
-seo:
-    title: Getting Started With VSCode
-    description: This is the Getting Started With VSCode page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: Getting Started With VSCode
-          keyName: property
-        - name: 'og:description'
-          value: This is the Getting Started With VSCode page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: Getting Started With VSCode
-        - name: 'twitter:description'
-          value: This is the Getting Started With VSCode page
-template: docs
----
-
 # Everything You Need to Get Started With VSCode + Extensions & Resources
 
 Commands:
@@ -64,27 +39,27 @@ Commands:
 <img src="https://cdn-images-1.medium.com/max/800/0*BByhnDoVQdRPdO4F.gif" class="graf-image" />
 </figure>### Command palette
 
-`⇧⌘P` Show all commands `⌘P` Show files
+`⇧⌘P`Show all commands`⌘P`Show files
 
 ### Sidebars
 
-`⌘B` Toggle sidebar `⇧⌘E` Explorer `⇧⌘F` Search `⇧⌘D` Debug `⇧⌘X` Extensions `⇧^G` Git (SCM)
+`⌘B`Toggle sidebar`⇧⌘E`Explorer`⇧⌘F`Search`⇧⌘D`Debug`⇧⌘X`Extensions`⇧^G`Git (SCM)
 
 ### Search
 
-`⌘F` Find `⌥⌘F` Replace `⇧⌘F` Find in files `⇧⌘H` Replace in files
+`⌘F`Find`⌥⌘F`Replace`⇧⌘F`Find in files`⇧⌘H`Replace in files
 
 ### Panel
 
-`⌘J` Toggle panel `⇧⌘M` Problems `⇧⌘U` Output `⇧⌘Y` Debug console` ` ^` ``Terminal
+`⌘J`Toggle panel`⇧⌘M`Problems`⇧⌘U`Output`⇧⌘Y`Debug console`` ^` ``Terminal
 
 ### View
 
-`⌘k` `z` Zen mode `⌘k` `u` Close unmodified `⌘k` `w` Close all
+`⌘k` `z`Zen mode`⌘k` `u`Close unmodified`⌘k` `w`Close all
 
 ### Debug
 
-`F5` Start `⇧F5` Stop `⇧⌘F5` Restart `^F5` Start without debugging `F9` Toggle breakpoint `F10` Step over `F11` Step into `⇧F11` Step out `⇧⌘D` Debug sidebar `⇧⌘Y` Debug panel
+`F5`Start`⇧F5`Stop`⇧⌘F5`Restart`^F5`Start without debugging`F9`Toggle breakpoint`F10`Step over`F11`Step into`⇧F11`Step out`⇧⌘D`Debug sidebar`⇧⌘Y`Debug panel
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/1200/0*llpkl5jsIMhWMucR.png" class="graf-image" />
@@ -96,7 +71,7 @@ Commands:
 
 Here is a selection of common features for editing code. If the keyboard shortcuts aren't comfortable for you, consider installing a <a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Keymaps&amp;sortBy=Downloads" class="markup--anchor markup--p-anchor">keymap extension</a> for your old editor.
 
-Tip: You can see recommended keymap extensions in the Extensions view with Ctrl+K Ctrl+M which filters the search to `@recommended:keymaps` .
+Tip: You can see recommended keymap extensions in the Extensions view with Ctrl+K Ctrl+M which filters the search to `@recommended:keymaps`.
 
 ### Multi cursor selection
 
@@ -170,7 +145,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
     <a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft's tutorial on using VSCode for remote C/C++ development</a>
     </span>
 
-### C\#, ASP . NET and . NET Core
+### C\#, ASP .NET and .NET Core
 
 > <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp" class="markup--anchor markup--blockquote-anchor">C#</a> — C\# extension by <a href="https://www.microsoft.com/" class="markup--anchor markup--blockquote-anchor">Microsoft</a>, read <a href="https://code.visualstudio.com/docs/languages/csharp" class="markup--anchor markup--blockquote-anchor">official documentation</a> for the details
 
@@ -182,7 +157,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 > <a href="https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer" class="markup--anchor markup--blockquote-anchor">VSCode Solution Explorer</a>
 
-> <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer" class="markup--anchor markup--blockquote-anchor">. NET Core Test Explorer</a>
+> <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer" class="markup--anchor markup--blockquote-anchor">.NET Core Test Explorer</a>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*ZG5W4_VVBv89zO_g.gif" class="graf-image" />
@@ -198,15 +173,14 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif" class="graf-image" />
-</figure>- <span id="7261">
+</figure>-   <span id="7261">
 <a href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint" class="markup--anchor markup--li-anchor">stylelint</a> — Lint CSS/SCSS.</span>
-
 -   <span id="e8d5">
-    <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer" class="markup--anchor markup--li-anchor">Autoprefixer</a> Parse CSS, SCSS, LESS and add vendor prefixes automatically.</span>
+<a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer" class="markup--anchor markup--li-anchor">Autoprefixer</a> Parse CSS,SCSS, LESS and add vendor prefixes automatically.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif" class="graf-image" />
-</figure>- <span id="b1b1">
+</figure>-   <span id="b1b1">
 <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" class="markup--anchor markup--li-anchor">Intellisense for CSS class names</a> — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React's className attribute.</span>
 
 <figure>
@@ -260,7 +234,7 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 <img src="https://cdn-images-1.medium.com/max/800/0*i7CZbSbHqsWqEM4w.gif" class="graf-image" />
 </figure>See the difference between these two <a href="https://github.com/michaelgmcd/vscode-language-babel/issues/1" class="markup--anchor markup--p-anchor">here</a>
 
-> <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin" class="markup--anchor markup--blockquote-anchor">tslint</a> — TSLint for Visual Studio Code (with `"tslint.jsEnable": true` ).
+> <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin" class="markup--anchor markup--blockquote-anchor">tslint</a> — TSLint for Visual Studio Code (with `"tslint.jsEnable": true`).
 
 > <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" class="markup--anchor markup--blockquote-anchor">eslint</a> — Linter for <a href="https://eslint.org/" class="markup--anchor markup--blockquote-anchor">eslint</a>.
 
@@ -348,17 +322,17 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif" class="graf-image" />
-</figure>- <span id="bf66">
+</figure>-   <span id="bf66">
 <a href="https://marketplace.visualstudio.com/items?itemName=ahinkle.laravel-model-snippets" class="markup--anchor markup--li-anchor">Laravel Model Snippets</a> — Quickly get models up and running with Laravel Model Snippets.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif" class="graf-image" />
-</figure>- <span id="fa58">
+</figure>-   <span id="fa58">
 <a href="https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan" class="markup--anchor markup--li-anchor">Laravel Artisan</a> — Laravel Artisan commands within Visual Studio Code</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif" class="graf-image" />
-</figure>- <span id="1e4d">
+</figure>-   <span id="1e4d">
 <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv" class="markup--anchor markup--li-anchor">DotENV</a> — Support for dotenv file syntax</span>
 
 <figure>
@@ -374,21 +348,20 @@ These extensions provide slightly different sets of features. While the first on
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif" class="graf-image" />
-</figure>- <span id="f3f0">
+</figure>-   <span id="f3f0">
 <a href="https://marketplace.visualstudio.com/items?itemName=ikappas.composer" class="markup--anchor markup--li-anchor">Composer</a>
 </span>
-
 -   <span id="e5ba">
-    <a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug" class="markup--anchor markup--li-anchor">PHP Debug</a> — XDebug extension for Visual Studio Code</span>
+<a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug" class="markup--anchor markup--li-anchor">PHP Debug</a> — XDebug extension for Visual Studio Code</span>
 -   <span id="6a3c">
-    <a href="https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker" class="markup--anchor markup--li-anchor">PHP DocBlocker</a>
-    </span>
+<a href="https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker" class="markup--anchor markup--li-anchor">PHP DocBlocker</a>
+</span>
 -   <span id="a4ca">
-    <a href="https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer" class="markup--anchor markup--li-anchor">php cs fixer</a> — PHP CS Fixer extension for VS Code, php formatter, php code beautify tool</span>
+<a href="https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer" class="markup--anchor markup--li-anchor">php cs fixer</a> — PHP CS Fixer extension for VS Code, php formatter, php code beautify tool</span>
 -   <span id="30f1">
-    <a href="https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs" class="markup--anchor markup--li-anchor">phpcs</a> — PHP CodeSniffer for Visual Studio Code</span>
+<a href="https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs" class="markup--anchor markup--li-anchor">phpcs</a> — PHP CodeSniffer for Visual Studio Code</span>
 -   <span id="d82e">
-    <a href="https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt" class="markup--anchor markup--li-anchor">phpfmt</a> — phpfmt for Visual Studio Code</span>
+<a href="https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt" class="markup--anchor markup--li-anchor">phpfmt</a> — phpfmt for Visual Studio Code</span>
 
 ---
 
@@ -705,7 +678,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=wwm.better-align" class="markup--anchor markup--h3-anchor">Better Align</a>
 
-> _Align your code by colon(:), assignment(=, +=, -=, \*=, /=) and arrow(=&gt; ). It has additional support for comma-first coding style and trailing comment._
+> _Align your code by colon(:), assignment(=,+=,-=,\*=,/=) and arrow(=&gt;). It has additional support for comma-first coding style and trailing comment._
 
 > _And it doesn't require you to select what to be aligned, the extension will figure it out by itself._
 
@@ -962,15 +935,17 @@ Themesbryanguner.medium.com</a>
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-### Or Checkout my personal Resource Site:
+### Discover More:
 
-<a href="https://web-dev-resource-hub.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://web-dev-resource-hub.netlify.app/">
-<strong>Web-Dev-Resource-Hub</strong>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
 <br />
-<em>Edit description</em>web-dev-resource-hub.netlify.app</a>
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 on [March 18, 2021](https://medium.com/p/b9f4c8d91931).
 
 everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931"
 
-May 23, 2021.
+on September 23, 2021.

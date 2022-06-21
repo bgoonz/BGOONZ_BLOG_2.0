@@ -339,8 +339,8 @@ Or Checkout my personal Resource Site:
 <a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/24758e628d37).
+on [March 6, 2021](https://medium.com/p/24758e628d37).
 
-<a href="https://medium.com/@bryanguner/emmet-cheat-sheet-24758e628d37" class="p-canonical">Canonical link</a>
+emmet-cheat-sheet-24758e628d37"
 
 May 23, 2021.

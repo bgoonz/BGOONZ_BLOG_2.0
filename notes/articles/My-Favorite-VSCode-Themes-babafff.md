@@ -1,30 +1,3 @@
----
-title: vscode-themes
-excerpt: >-
-    To make it easy to write documentation in plain Markdown, most vscode-themes
-    are styled using Markdown elements with few additional CSS classes.
-seo:
-    title: vscode-themes
-    description: This is the vscode-themes page
-    extra:
-        - name: 'og:type'
-          value: website
-          keyName: property
-        - name: 'og:title'
-          value: vscode-themes
-          keyName: property
-        - name: 'og:description'
-          value: This is the vscode-themes page
-          keyName: property
-        - name: 'twitter:card'
-          value: summary
-        - name: 'twitter:title'
-          value: vscode-themes
-        - name: 'twitter:description'
-          value: This is the vscode-themes page
-template: docs
----
-
 # My Favorite VSCode Themes
 
 Themes
@@ -249,4 +222,4 @@ on [March 18, 2021](https://medium.com/p/9bab65af3f0f).
 
 my-favorite-vscode-themes-9bab65af3f0f"
 
-August 6, 2021.
+on September 23, 2021.

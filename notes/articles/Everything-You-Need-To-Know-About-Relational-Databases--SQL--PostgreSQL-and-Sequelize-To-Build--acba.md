@@ -1,10 +1,3 @@
----
-title: Everything You Need To Know About Relational Databases
-template: docs
-excerpt: For Front end developers who like myself struggle with making the jump
-    to fullstack.
----
-
 # Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build…
 
 For Front end developers who like myself struggle with making the jump to fullstack.
@@ -15,21 +8,29 @@ For Front end developers who like myself struggle with making the jump to fullst
 
 ### **Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg" class="graf-image" /></figure>**For Front end developers who like myself struggle with making the jump to fullstack.**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg" class="graf-image" />
+</figure>**For Front end developers who like myself struggle with making the jump to fullstack.**
 
 You can access and query the data using the findByPk, findOne, and findAll methods.
 
 **Terminology:**
 
--   <span id="c63a"><a href="https://nodejs.org/en/" class="markup--anchor markup--li-anchor">NodeJS</a> We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.</span>
--   <span id="11a6"><a href="https://expressjs.com/" class="markup--anchor markup--li-anchor">Express</a> As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.</span>
--   <span id="5808"><a href="https://www.postgresql.org/docs/9.5/static/index.html" class="markup--anchor markup--li-anchor">PostgreSQL</a> This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!</span>
+-   <span id="c63a">
+    <a href="https://nodejs.org/en/" class="markup--anchor markup--li-anchor">NodeJS</a> We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.</span>
+-   <span id="11a6">
+    <a href="https://expressjs.com/" class="markup--anchor markup--li-anchor">Express</a> As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.</span>
+-   <span id="5808">
+    <a href="https://www.postgresql.org/docs/9.5/static/index.html" class="markup--anchor markup--li-anchor">PostgreSQL</a> This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!</span>
 
-<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"><strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong><br />
+<a href="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="markup--anchor markup--p-anchor" title="https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089">
+<strong>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</strong>
+<br />
 <em>If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will</em> bryanguner.medium.com</a>
 
 -   <span id="bb49">However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend <a href="https://www.elephantsql.com/" class="markup--anchor markup--li-anchor">ElephantSQL</a>. I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.</span>
--   <span id="539a"><a href="http://docs.sequelizejs.com/en/latest/" class="markup--anchor markup--li-anchor">Sequelize</a> In addition, we re going to use Sequelize, which is a database <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" class="markup--anchor markup--li-anchor">ORM</a> that will interface with the Postgres database for us.</span>
+-   <span id="539a">
+    <a href="http://docs.sequelizejs.com/en/latest/" class="markup--anchor markup--li-anchor">Sequelize</a> In addition, we re going to use Sequelize, which is a database <a href="https://en.wikipedia.org/wiki/Object-relational_mapping" class="markup--anchor markup--li-anchor">ORM</a> that will interface with the Postgres database for us.</span>
 
 **RDBMS and Database Entities**
 
@@ -92,7 +93,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 **Create a user for the relational database management system**
 
 -   <span id="f4dc">Within psql, we can create a user with the CREATE USER {username} {WITH options} command.</span>
--   <span id="7eda">The most common options we ll want to use are WITH PASSWORD ‘mypassword’ to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.</span>
+-   <span id="7eda">The most common options we ll want to use are WITH PASSWORD ‘mypassword' to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.</span>
 
 **Create a database in the database management system**
 
@@ -221,7 +222,7 @@ FROM friends;
 
 -   <span id="ef22">Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.</span>
 
-— Notice here we are indicating that we want the “name” field from the “friends” table as well as the “name” field from the “puppies” table. We indicate the table name by table.column  
+— Notice here we are indicating that we want the "name" field from the "friends" table as well as the "name" field from the "puppies" table. We indicate the table name by table.column  
  — We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
 
     SELECT
@@ -238,7 +239,7 @@ FROM friends;
 -   <span id="70eb">WHERE {column} = {value} provides an exact comparison</span>
 -   <span id="79bf">WHERE {column} IN ({value1}, {value2}, {value3}, etc.) matches any provided value in the IN statement. We can make this more complex by having a subquery inside of the parentheses, having our column match any values within the returned results.</span>
 -   <span id="150e">WHERE {column} BETWEEN {value1} AND {value2} can check for matches between two values (numeric ranges)</span>
--   <span id="9077">WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE ‘%Shepherd’, which will match any breed that ends in Shepherd</span>
+-   <span id="9077">WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE ‘%Shepherd', which will match any breed that ends in Shepherd</span>
 -   <span id="4a87">The NOT operator can also be used for negation in the checks.</span>
 -   <span id="db35">Mathematical operators can be used when performing calculations or comparisons within a query as well, such as</span>
 
@@ -279,16 +280,16 @@ FROM friends;
 
     INSERT INTO friends (id, first_name, last_name)
     VALUES
-    (DEFAULT, ‘Amy’, ‘Pond’);
+    (DEFAULT, ‘Amy', ‘Pond');
 
 — Alternatively, we can leave it out completely, since the default value will be used if none is provided
 
     INSERT INTO friends (first_name, last_name)
     VALUES
-    (‘Rose’, ‘Tyler’),
-    (‘Martha’, ‘Jones’),
-    (‘Donna’, ‘Noble’),
-    (‘River’, ‘Song’);
+    (‘Rose', ‘Tyler'),
+    (‘Martha', ‘Jones'),
+    (‘Donna', ‘Noble'),
+    (‘River', ‘Song');
 
 **How to use an UPDATE statement to update data in a table**
 
@@ -302,7 +303,7 @@ FROM friends;
     UPDATE
     pets
     SET
-    (name, breed) = (‘Floofy’, ‘Fluffy Dog Breed’) WHERE id = 4;
+    (name, breed) = (‘Floofy', ‘Fluffy Dog Breed') WHERE id = 4;
 
 **How to use a DELETE statement to remove data from a table**
 
@@ -315,7 +316,7 @@ FROM friends;
     DELETE FROM
     pets
     WHERE
-    name IN (‘Floofy’, ‘Doggo’) OR id = 3;
+    name IN (‘Floofy', ‘Doggo') OR id = 3;
 
 **How to use a seed file to populate data in a database**
 
@@ -349,20 +350,20 @@ FROM friends;
 
     BEGIN;
     UPDATE accounts SET balance = balance — 100.00
-    WHERE name = ‘Alice’;
+    WHERE name = ‘Alice';
     UPDATE branches SET balance = balance — 100.00
-    WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Alice’);
+    WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Alice');
     UPDATE accounts SET balance = balance + 100.00
-    WHERE name = ‘Bob’;
+    WHERE name = ‘Bob';
     UPDATE branches SET balance = balance + 100.00
-    WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Bob’);
+    WHERE name = (SELECT branch_name FROM accounts WHERE name = ‘Bob');
     COMMIT;
 
     BEGIN;
     EXPLAIN ANALYZE
     UPDATE cities
-    SET city = ‘New York City’
-    WHERE city = ‘New York’;
+    SET city = ‘New York City'
+    WHERE city = ‘New York';
     ROLLBACK;
 
 **How to apply indexes to tables to improve performance**
@@ -399,11 +400,11 @@ FROM friends;
 
 <!-- -->
 
-    const { Pool } = require(‘pg’);
+    const { Pool } = require(‘pg');
 
 // If we need to specify a username, password, or database, we can do so when we create a Pool instance, otherwise the default values for logging in to psql are used:
 
-    const pool = new Pool({ username: ‘<<username>>’, password: ‘<<password>>’, database: ‘<<database>>’})
+    const pool = new Pool({ username: ‘<<username>>', password: ‘<<password>>', database: ‘<<database>>'})
 
 -   <span id="a267">The query method on the Pool instance will allow us to execute a SQL query on our database. We can pass in a string that represents the query we want to run</span>
 
@@ -444,7 +445,7 @@ pool.end(); // invoking end() will close our connection to the database
 }
 
     // Get the airport name from the command line and store it
-    // in the variable “name”. Pass that value to the
+    // in the variable "name". Pass that value to the
     // selectAirportsByName function.
     const name = process.argv[2];
     // console.log(name);
@@ -462,7 +463,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="8052">npx sequelize-cli init</span>
 -   <span id="d03e">Create a database user with credentials we will use for the project</span>
 -   <span id="bbc8">psql</span>
--   <span id="caca">CREATE USER example_user WITH PASSWORD ‘badpassword’</span>
+-   <span id="caca">CREATE USER example_user WITH PASSWORD ‘badpassword'</span>
 -   <span id="72ab">Here we can also create databases since we are already in postgres</span>
 
 <!-- -->
@@ -474,36 +475,36 @@ pool.end(); // invoking end() will close our connection to the database
     CREATE DATABASE example_app_production WITH OWNER example_user
 
 -   <span id="ae27">If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:</span>
--   <span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD ‘badpassword’ CREATEDB</span>
+-   <span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD ‘badpassword' CREATEDB</span>
 -   <span id="45ac">In terminal: npx sequelize-cli db:create</span>
 -   <span id="cff2">Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):</span>
 
 <!-- -->
 
     {
-    “development”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_development”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "development": {
+    "username": "sequelize_recipe_box_app",
+    "password": "HfKfK79k",
+    "database": "recipe_box_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "sequelize"
     },
-    “test”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_test”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "test": {
+    "username": "sequelize_recipe_box_app",
+    "password": "HfKfK79k",
+    "database": "recipe_box_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "sequelize"
     },
-    “production”: {
-    “username”: “sequelize_recipe_box_app”,
-    “password”: “HfKfK79k”,
-    “database”: “recipe_box_production”,
-    “host”: “127.0.0.1”,
-    “dialect”: “postgres”,
-    “seederStorage”: “sequelize”
+    "production": {
+    "username": "sequelize_recipe_box_app",
+    "password": "HfKfK79k",
+    "database": "recipe_box_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "sequelize"
     }
     }
 
@@ -515,10 +516,10 @@ pool.end(); // invoking end() will close our connection to the database
 
 <!-- -->
 
-    npx sequelize-cli model:generate — name Cat — attributes “firstName:string,specialSkill:string”
+    npx sequelize-cli model:generate — name Cat — attributes "firstName:string,specialSkill:string"
 
 -   <span id="bc91">Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.</span>
--   <span id="4d04">Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: ‘Categories’ }.</span>
+-   <span id="4d04">Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: ‘Categories' }.</span>
 -   <span id="ca79">After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands to actually create the table.</span>
 
 <!-- -->
@@ -559,8 +560,8 @@ pool.end(); // invoking end() will close our connection to the database
 
 -   <span id="94ef">Another key part of the model file is setting up our associations. We can use the belongsTo, hasMany, and belongsToMany methods to set up model-level associations. Doing so is what creates the helpful functionality like addOwner that we saw in the pets example, a function that automatically generates the SQL necessary to create a petOwner record and supplies the appropriate petId and ownerId.</span>
 -   <span id="e5fc">In a one-to-many association, we need to have a belongsTo association on the many side, and a hasMany association on the one side:</span>
--   <span id="21c2">Instruction.belongsTo(models.Recipe, { foreignKey: ‘recipeId’ });</span>
--   <span id="6e6b">Recipe.hasMany(models.Instruction, { foreignKey: ‘recipeId’ });</span>
+-   <span id="21c2">Instruction.belongsTo(models.Recipe, { foreignKey: ‘recipeId' });</span>
+-   <span id="6e6b">Recipe.hasMany(models.Instruction, { foreignKey: ‘recipeId' });</span>
 -   <span id="7d6a">In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a columnMapping object to show the association more clearly:</span>
 
 <!-- -->
@@ -571,13 +572,13 @@ pool.end(); // invoking end() will close our connection to the database
 
     const columnMapping = {
 
-    through: ‘PetOwner’,
+    through: ‘PetOwner',
 
     // joins table
 
-    otherKey: ‘petId’,
+    otherKey: ‘petId',
 
-    // key that connects to other table we have a many association with foreignKey: ‘ownerId’
+    // key that connects to other table we have a many association with foreignKey: ‘ownerId'
 
     // our foreign key in the joins table
 
@@ -589,15 +590,15 @@ pool.end(); // invoking end() will close our connection to the database
 
     // To connect this Pet to an Owner through the PetOwner
 
-    const columnMapping = { through: ‘PetOwner’,
+    const columnMapping = { through: ‘PetOwner',
 
     // joins table
 
-    otherKey: ‘ownerId’,
+    otherKey: ‘ownerId',
 
     // key that connects to other table we have a many association with
 
-    foreignKey: ‘petId’
+    foreignKey: ‘petId'
 
     // our foreign key in the joins table
 
@@ -634,13 +635,13 @@ pool.end(); // invoking end() will close our connection to the database
 
     // If we want to specify what to remove:
     down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete(‘<<TableName>>’, {
+    return queryInterface.bulkDelete(‘<<TableName>>', {
     field1: [value1a, value1b, value1c], //…etc.
     });
     };
     // If we want to remove everything from the table:
     down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete(‘<<TableName>>’, null, {});
+    return queryInterface.bulkDelete(‘<<TableName>>', null, {});
     };
 
 -   <span id="c9e3">Running npx sequelize-cli db:seed:all will run all of our seeder files.</span>
@@ -679,7 +680,7 @@ pool.end(); // invoking end() will close our connection to the database
 -   <span id="606a">When we have a reference to an instance of a model, we can delete that record by using destroy</span>
 -   <span id="be30">const cat = await Cat.findByPk(1); // Remove the Markov record. await cat.destroy();</span>
 -   <span id="0b7f">We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all records that match that query</span>
--   <span id="5f9f">await Cat.destroy({ where: { specialSkill: ‘jumping’ } });</span>
+-   <span id="5f9f">await Cat.destroy({ where: { specialSkill: ‘jumping' } });</span>
 
 **How to query using Sequelize**
 
@@ -700,7 +701,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 <!-- -->
 
-    const cats = await Cat.findAll({ where: { firstName: “Markov” } }); console.log(JSON.stringify(cats, null, 2));
+    const cats = await Cat.findAll({ where: { firstName: "Markov" } }); console.log(JSON.stringify(cats, null, 2));
 
 **OR in the WHERE clause**
 
@@ -708,7 +709,7 @@ pool.end(); // invoking end() will close our connection to the database
 
 { where: { field: \[value1, value2\] } =&gt; WHERE field IN (value1, value2)
 
-    const cats = await Cat.findAll({ where: { firstName: [“Markov”, “Curie”] } });const cats = await Cat.findAll({
+    const cats = await Cat.findAll({ where: { firstName: ["Markov", "Curie"] } });const cats = await Cat.findAll({
         where: {
             firstName: "Markov",
             age: 4
@@ -726,7 +727,7 @@ pool.end(); // invoking end() will close our connection to the database
 ### Sequelize Op operator
 
 -   <span id="dd6a">By requiring Op from the sequelize library we can provide more advanced comparison operators</span>
--   <span id="0a01">const { Op } = require(“sequelize”);</span>
+-   <span id="0a01">const { Op } = require("sequelize");</span>
 -   <span id="8936">Op.ne: Not equal operator</span>
 
 <!-- -->
@@ -783,7 +784,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 -   <span id="4ee4">Just like the where clause, we can pass an order key to specify we want our results ordered</span>
 -   <span id="46a6">The key order points to an array with the fields that we want to order by</span>
 -   <span id="ba7f">By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)</span>
--   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\[“age”, “DESC”\], “firstName”\], }); console.log(JSON.stringify(cats, null, 2));</span>
+-   <span id="f9f9">const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: \[\["age", "DESC"\], "firstName"\], }); console.log(JSON.stringify(cats, null, 2));</span>
 
 <!-- -->
 
@@ -818,7 +819,7 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 
 <!-- -->
 
-    // finds the oldest cat const cat = await Cat.findOne({ order: [[“age”, “DESC”]], }); console.log(JSON.stringify(cat, null, 2));
+    // finds the oldest cat const cat = await Cat.findOne({ order: [["age", "DESC"]], }); console.log(JSON.stringify(cat, null, 2));
 
 -   <span id="3bc7">**Querying with Associations**</span>
 
@@ -1180,7 +1181,12 @@ returns a POJO for the instance.
     [Op.notIRegexp]: '^[h|a|t]' // !~* '^[h|a|t]' (PG only)
     [Op.like]: { [Op.any]: ['cat', 'hat']}
 
-<figure><img src="https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png" class="graf-image" />
+</figure>
 
 ### Accessing the Data
 
@@ -1228,7 +1234,7 @@ If you only want to find one where there is chicken in the ingredients list, you
 
 You have two options when you want to create a row in a table (where you are saving one record into the table). You can either `.build` the row and then `.save` it, or you can `.create` it. Either way it does the same thing. Here are some examples:
 
-Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
+Let's say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:
 
     const newRecipe = await Recipe.build({ title: 'Chicken Noodle Soup' });
 
@@ -1255,30 +1261,48 @@ To delete an item from your table, you will do the same kind of process. Find th
 ### Documentation
 
 For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:  
-**Sequelize Data Types:** <a href="https://sequelize.org/v5/manual/data-types.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/data-types.html</em></a>  
-**Validations:** <a href="https://sequelize.org/v5/manual/models-definition.html#validations" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/models-definition.html#validations</em></a>  
+**Sequelize Data Types:** <a href="https://sequelize.org/v5/manual/data-types.html" class="markup--anchor markup--p-anchor">
+<em>https://sequelize.org/v5/manual/data-types.html</em>
+</a>  
+**Validations:** <a href="https://sequelize.org/v5/manual/models-definition.html#validations" class="markup--anchor markup--p-anchor">
+<em>https://sequelize.org/v5/manual/models-definition.html#validations</em>
+</a>  
 When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is the specific section with the list of operators.  
-**Operators:** <a href="https://sequelize.org/v5/manual/querying.html#operators" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/querying.html#operators</em></a>  
+**Operators:** <a href="https://sequelize.org/v5/manual/querying.html#operators" class="markup--anchor markup--p-anchor">
+<em>https://sequelize.org/v5/manual/querying.html#operators</em>
+</a>  
 The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.  
-**Create/Update/Destroy:** <a href="https://sequelize.org/v5/manual/instances.html" class="markup--anchor markup--p-anchor"><em>https://sequelize.org/v5/manual/instances.html</em></a>
+**Create/Update/Destroy:** <a href="https://sequelize.org/v5/manual/instances.html" class="markup--anchor markup--p-anchor">
+<em>https://sequelize.org/v5/manual/instances.html</em>
+</a>
 
-#### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
+<strong>bgoonz's gists</strong>
+<br />
+<em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a>
+<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br />
-<em>There are tons of learning material on the Web The Front-End Checklist is an exhaustive list of all elements you need…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Or Checkout my personal Resource Site:
 
 (Under construction… may be broken at any time)
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/">
+<strong>a/A-Student-Resources</strong>
+<br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
+<a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 on [March 13, 2021](https://medium.com/p/8acb68284a98).
 
 everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98"
 
-Exported from [Medium](https://medium.com) on September 23, 2021.
+on September 23, 2021.
