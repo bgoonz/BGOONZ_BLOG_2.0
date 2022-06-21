@@ -10,30 +10,32 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll;
-}
-
-.github-corner {
-    z-index: 100000;
-    fill: 'black';
-    color: '#fff';
-    position: 'fixed';
-    top: '0px';
-    border: 1;
-    left: '0px';
-    transform: 'scale(-1.5, 1.5)';
+    overflow: scroll !important;
 }
 
 a {
     color: $color-primary;
     text-decoration: underline;
-    -webkit-transition: color 0.2s ease;
-    transition: color 0.2s ease-out;
-    text-decoration: underline;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.4s ease-out;
 
     &:hover {
         color: $gray-600;
     }
+}
+
+#social-embed {
+    // position: absolute !important;
+    // right: 50px !important;
+    bottom: 120px !important;
+    width: 100% !important;
+    width: 1000px !important;
+    box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;
+    margin: 0 auto !important;
+    height: 400px !important;
+    overflow: scroll !important;
+    border: 1px dotted black;
+    // z-index: -1;
 }
 
 #scrollBtn {
@@ -48,6 +50,12 @@ a {
     border-radius: 10px;
 }
 
+#sb-search-input-example {
+    position: absolute;
+    top: 200px;
+    lef: 200px;
+}
+
 iframe {
     overflow-y: scroll;
     overflow-x: scroll;
@@ -56,18 +64,26 @@ iframe {
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
-    resize: both;
+    resize: both !important;
     overflow: scroll;
 }
 
-
+@font-face {
+    font-family: font-sb;
+    src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
+    src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'),
+        url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'),
+        url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
 #sb-search-example p {
     font-family: sans-serif;
     font-size: 18px;
     line-height: 12px;
     margin: 0;
-    z-index: -1;
+    z-index: 900;
 }
 
 #sb-search-example {
@@ -75,17 +91,18 @@ iframe {
     top: 100px;
     width: 20%;
     place-content: center;
+    z-index: 900;
     box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
     border: solid 5px white;
     border-radius: 100px;
-    z-index: -1;
+    z-index: 900;
 }
 
 #sb-search-example .sb-icon {
     font: normal normal 400 26px;
     align-items: center;
     padding: 10px;
-    z-index: -1;
+    z-index: 900;
     text-transform: none;
     cursor: pointer;
     margin: 0;
@@ -96,62 +113,8 @@ iframe {
     background: #007cff;
     color: #fff;
     cursor: pointer;
-    z-index: -1;
+    z-index: 900;
     border-radius: 26px;
-}
-
-@font-face {
-    font-family: font-sb;
-    src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
-    src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
-#sb-search-example p {
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 12px;
-    margin: 0;
-}
-
-#sb-search-example {
-    position: static;
-    top: 0;
-    width: auto;
-    place-content: center;
-    display: inline-block;
-    box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
-    border: solid 5px white;
-    border-radius: 100px;
-    flex-shrink: initial;
-    flex-grow: initial;
-}
-
-
-#sb-search-example .sb-icon {
-    font: normal normal 400 26px font-sb;
-    align-items: center;
-    padding: 10px;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
-    text-transform: none;
-    cursor: pointer;
-    margin: 0;
-}
-
-#sb-search-example .sb-search-icon {
-    box-sizing: border-box;
-    border: 0px;
-    align-items: center;
-    background: #007cff;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    border-radius: 26px;
-    padding: 0 20px 0 4px;
 }
 
 h1,

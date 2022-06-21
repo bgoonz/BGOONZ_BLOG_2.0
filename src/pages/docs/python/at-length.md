@@ -637,9 +637,9 @@ There are a wide range of other operators in Python:
 -   `5 + 6` gives a result of `11`.
 -   `5 - 6` leads to `-1`.
 
- ```python
+    ```python
     >>> 5 + 611>>> 5 - 6-1
- ```
+    ```
 
 `10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
 
@@ -1691,9 +1691,9 @@ The syntax to create a method in Python is straightforward:
 -   Add a pair of parenthesis: `()`.
 -   This is followed by a colon `:` \(similar to what we used in a `for` loop\).
 
- ```python
+    ```python
     >>> def print_hello_world_twice():...     print("Hello World")...     print("Hello World")...
- ```
+    ```
 
 All statements in a method should be indented. The two `print("Hello World")` are indented. So, they are part of the method body.
 
@@ -4644,12 +4644,12 @@ There are a wide range of other operators in Python:
 -   `5 + 6` gives a result of `11`.
 -   `5 - 6` leads to `-1`.
 
- ```python
+    ```python
     >>> 5 + 6
     11
     >>> 5 - 6
     -1
- ```
+    ```
 
 `10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
 
@@ -6090,12 +6090,12 @@ The syntax to create a method in Python is straightforward:
 -   Add a pair of parenthesis: `()`.
 -   This is followed by a colon `:` \(similar to what we used in a `for` loop\).
 
- ```python
+    ```python
     >>> def print_hello_world_twice():
     ...     print("Hello World")
     ...     print("Hello World")
     ...
- ```
+    ```
 
 All statements in a method should be indented. The two `print("Hello World")` are indented. So, they are part of the method body.
 

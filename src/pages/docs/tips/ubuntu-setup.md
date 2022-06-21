@@ -15,7 +15,6 @@ template: docs
 
 ```console
 
-
 sudo apt update -y
 
 
