@@ -1,3 +1,4 @@
+/* This class is a React component that renders a link to a URL, with optional styling and attributes. */
 import React from 'react';
 import _ from 'lodash';
 
