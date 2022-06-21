@@ -10,8 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll!important;
-
+    overflow: scroll !important;
 }
 
 a {
@@ -31,14 +30,14 @@ a {
     bottom: 120px !important;
     width: 100% !important;
     width: 1000px !important;
-    box-shadow: inset 0px 5px 3px -10px black,
-        inset 0px -11px 8px -10px black;
+    box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;
     margin: 0 auto !important;
     height: 400px !important;
     overflow: scroll !important;
     border: 1px dotted black;
     // z-index: -1;
 }
+
 #scrollBtn {
     position: fixed;
     padding: 10px;
@@ -47,8 +46,14 @@ a {
     width: 80px;
     color: #fff;
     font-weight: 700;
-    background-color: rgba(0,10,69,.856);
+    background-color: rgba(0, 10, 69, 0.856);
     border-radius: 10px;
+}
+
+#sb-search-input-example {
+    position: absolute;
+    top: 200px;
+    lef: 200px;
 }
 
 iframe {
@@ -57,8 +62,7 @@ iframe {
     border-radius: 12px;
     border: 1px dotted black;
     height: 1200px;
-    box-shadow: inset 0px 4px 4px -10px black,
-        inset 0px -11px 8px -10px black;
+    box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
     resize: both !important;
     overflow: scroll;
@@ -67,9 +71,11 @@ iframe {
 @font-face {
     font-family: font-sb;
     src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
-    src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');
+    src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'),
+        url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'),
+        url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 #sb-search-example p {
@@ -77,42 +83,37 @@ iframe {
     font-size: 18px;
     line-height: 12px;
     margin: 0;
+    z-index: 900;
 }
 
 #sb-search-example {
     position: static;
-    top: 0;
-    width: auto;
+    top: 100px;
+    width: 20%;
     place-content: center;
-    display: inline-block;
+    z-index: 900;
     box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
     border: solid 5px white;
     border-radius: 100px;
-    flex-shrink: initial;
-    flex-grow: initial;
+    z-index: 900;
 }
 
-
 #sb-search-example .sb-icon {
-    font: normal normal 400 26px font-sb;
+    font: normal normal 400 26px;
     align-items: center;
     padding: 10px;
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
+    z-index: 900;
     text-transform: none;
     cursor: pointer;
     margin: 0;
 }
 
 #sb-search-example .sb-search-icon {
-    box-sizing: border-box;
     border: 0px;
-    align-items: center;
     background: #007cff;
     color: #fff;
     cursor: pointer;
-    display: flex;
+    z-index: 900;
     border-radius: 26px;
 }
 
@@ -267,16 +268,16 @@ hr {
 
 img {
     height: auto;
+    width: auto;
     max-width: 100%;
     border-radius: 10px;
 
     :not(.site-logo) {
         box-shadow: inset 10px 10px 50px #fff;
     }
-
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 641px) {
     blockquote {
         font-size: 1.5em;
         line-height: 1.3;

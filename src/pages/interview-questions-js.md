@@ -3457,7 +3457,7 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```bash
+        ```console
         npm install -g typescript
         ```
 
@@ -4257,7 +4257,7 @@ Cons
 
         No, you cannot redeclare let and const variables. If you do, it throws below error
 
-        ```bash
+        ```console
         Uncaught SyntaxError: Identifier 'someVariable' has already been declared
         ```
 
@@ -5211,12 +5211,15 @@ Cons
         { name: 'Rod', id: 3, city: 'Paris' }
         ];
         console.table(users);
+
         ```
 
              The data visualized in a table format,
 
              ![Screenshot](images/console-table.png)
              **Not:** Remember that `console.table()` is not supported in IE.
+
+        ```
 
 373.    How do you verify that an argument is a Number or not
 
@@ -5418,7 +5421,7 @@ Cons
 
         and the output would be in
 
-        ```bash
+        ```console
         Script loaded
         My script is initialized
         ```
@@ -5435,7 +5438,7 @@ Cons
 
         and the output is,
 
-        ```bash
+        ```console
         My script is initialized
         Script loaded
         ```
@@ -6062,7 +6065,8 @@ Cons
         (function (dt) {
         console.log(dt.toLocaleTimeString());
         })(new Date());
-        ```
+
+        ````
 
              Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
@@ -6072,7 +6076,7 @@ Cons
         void (function (dt) {
         console.log(dt.toLocaleTimeString());
         })(new Date());
-        ```
+        ````
 
 422.    Is that possible to use expressions in switch cases?
 
@@ -6104,6 +6108,9 @@ Cons
 
         //
         await promise.catch((e) => void e);
+
+        ```
+
         ```
 
 424.    How do style the console output using CSS?
@@ -6114,7 +6121,8 @@ Cons
 
         //
         console.log('%cThis is a red text', 'color:red');
-        ```
+
+        ````
 
              It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
 
@@ -6122,7 +6130,7 @@ Cons
 
         //
         console.log('%cThis is a red text with bigger font', 'color:red; font-size:20px');
-        ```
+        ````
 
 425.    What is nullish coalescing operator (??)?
 
@@ -6134,6 +6142,9 @@ Cons
         console.log(null ?? true); // true
         console.log(false ?? true); // false
         console.log(undefined ?? true); // true
+
+        ```
+
         ```
 
 ### Coding Exercise
