@@ -8,13 +8,13 @@ The goal of this plugin is to allow users to bring their content to life and cul
 
 ## Install
 
-```console
+```bash
 $ yarn add gatsby-plugin-disqus
 ```
 
 or
 
-```console
+```bash
 $ npm install -S gatsby-plugin-disqus
 ```
 
