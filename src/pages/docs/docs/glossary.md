@@ -139,9 +139,9 @@ Browsers convert markup into an internal representation called the _[DOM tree](/
 There are four things in an accessibility tree object:
 
 -   **name**
--   -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
+            -   -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
 -   **description**
--   -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
+            -   -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
 -   **role**
     -   : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
 -   **state**
@@ -310,7 +310,7 @@ For _cssxref("justify-self"_) and _cssxref("align-self"_), the alignment subject
 For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mode of the box is also used. The definition of the alignment subject depends on the layout mode being used.
 
 -   Block containers (including table cells)
--   -   : The entire content of the block as a single unit.
+            -   -   : The entire content of the block as a single unit.
 -   Multicol containers
     -   : The column boxes, with any spacing inserted between column boxes added to the relevant column gaps.
 -   Flex containers
@@ -425,7 +425,7 @@ Please note that the start URL is not necessarily the value of the start_url mem
 
 #### See also
 
--   _Interwiki("wikipedia", "Parameter_(computer*programming)", "Difference between Parameter and Argument"*) on Wikipedia
+-   _Interwiki("wikipedia", "Parameter_(computer_programming)", "Difference between Parameter and Argument"_) on Wikipedia
 -   The _jsxref("Functions/arguments","arguments"_) object in _glossary("JavaScript"_)
 
 ---
@@ -1546,7 +1546,7 @@ Note, however, that callbacks are often used to continue code execution after an
 
 #### See also
 
--   _interwiki("wikipedia", "Callback_(computer*programming)", "Callback"*) on Wikipedia
+-   _interwiki("wikipedia", "Callback_(computer_programming)", "Callback"_) on Wikipedia
 
 ---
 
@@ -1674,7 +1674,7 @@ These elements provide text entry fields or boxes and therefore make use of the 
 -   [`<input type="password">`](/en-US/docs/Web/HTML/Element/input/password)
 -   [`<input type="search">`](/en-US/docs/Web/HTML/Element/input/search)
 -   [`<input type="date">`](/en-US/docs/Web/HTML/Element/input/date), [`<input type="time">`](/en-US/docs/Web/HTML/Element/input/time), [`<input type="datetime">`](/en-US/docs/Web/HTML/Element/input/datetime), and [`<input type="datetime-local">`](/en-US/docs/Web/HTML/Element/input/datetime-local)
--   [`<input type="number">`](/en-US/docs/Web/HTML/Element/input/number)[, ](/en-US/docs/Web/HTML/Element/input/number)[`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range)
+-   [`<input type="number">`](/en-US/docs/Web/HTML/Element/input/number)[,](/en-US/docs/Web/HTML/Element/input/number)[`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range)
 -   [`<input type="email">`](/en-US/docs/Web/HTML/Element/input/email), [`<input type="tel">`](/en-US/docs/Web/HTML/Element/input/tel), and [`<input type="url">`](/en-US/docs/Web/HTML/Element/input/url)
 -   _HTMLElement("textarea"_)
 -   Any element with its _htmlattrxref("contenteditable"_) attribute set
@@ -1739,7 +1739,7 @@ For details on certification in _glossary("Cryptography"_), please refer to _glo
 
 #### See also
 
--   _Interwiki("wikipedia", "Professional_certification_(computer*technology)#Information_systems_security", "Certification"*) on Wikipedia
+-   _Interwiki("wikipedia", "Professional_certification_(computer_technology)#Information_systems_security", "Certification"_) on Wikipedia
 
 ---
 
@@ -1995,7 +1995,7 @@ Clickjacking can be prevented by implementing a [Content Security Policy (frame-
 
 #### See also
 
--   _Interwiki("wikipedia", "Closure_%28computer*programming%29", "Closure"*) on Wikipedia
+-   _Interwiki("wikipedia", "Closure_%28computer_programming%29", "Closure"_) on Wikipedia
 -   [Closure](/en-US/docs/Web/JavaScript/Closures) on MDN
 
 ---
@@ -2217,7 +2217,7 @@ Like variables, some constants are bound to identifiers. For example, the identi
 
 #### See also
 
--   _Interwiki("wikipedia", "Constant_(computer*programming)", "Constant"*) on Wikipedia
+-   _Interwiki("wikipedia", "Constant_(computer_programming)", "Constant"_) on Wikipedia
 
 ---
 
@@ -2260,7 +2260,7 @@ var defaultReference = new Default();
 
 #### See also
 
--   _Interwiki("wikipedia", "Constructor_%28object-oriented*programming%29", "Constructor"*) on Wikipedia
+-   _Interwiki("wikipedia", "Constructor_%28object-oriented_programming%29", "Constructor"_) on Wikipedia
 -   [The constructor in object oriented programming for JavaScript](/en-US/docs/Learn/JavaScript/Objects#the_constructor) on MDN
 -   [New operator in JavaScript](/en-US/docs/Web/JavaScript/Reference/Operators/new) on MDN
 
@@ -2456,13 +2456,13 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 ### CORS headers
 
 -   _HTTPHeader("Access-Control-Allow-Origin"_)
--   -   : Indicates whether the response can be shared.
+            -   -   : Indicates whether the response can be shared.
 -   _HTTPHeader("Access-Control-Allow-Credentials"_)
--   -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
+            -   -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
 -   _HTTPHeader("Access-Control-Allow-Headers"_)
--   -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
+            -   -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
 -   _HTTPHeader("Access-Control-Allow-Methods"_)
--   -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
+            -   -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
 -   _HTTPHeader("Access-Control-Expose-Headers"_)
     -   : Indicates which headers can be exposed as part of the response by listing their names.
 -   _HTTPHeader("Access-Control-Max-Age"_)
@@ -3860,11 +3860,11 @@ The term may also be applied to properties added to objects without respecting t
 > In [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment), a fallback alignment is specified in order to deal with cases where the requested alignment cannot be fulfilled. For example, if you specify `justify-content: space-between` there must be more than one [alignment subject](/en-US/docs/Glossary/Alignment_Subject). If there is not, the fallback alignment is used. This is specified per alignment method, as detailed below.
 
 -   First baseline
--   -   : `start`
+            -   -   : `start`
 -   Last baseline
--   -   : `safe end`
+            -   -   : `safe end`
 -   Baseline
--   -   : `start`
+            -   -   : `start`
 -   Space-between
     -   : `flex-start` (start)
 -   Space-around
@@ -3903,7 +3903,7 @@ The following table provides a complete list of JavaScript falsy values:
 | `""`, `''`, ` `` `        | Empty [string](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) value.                                                                                                                                             |
 | _Glossary("null"_)        | [null](/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) — the absence of any value.                                                                                                                                  |
 | _Glossary("undefined"_)   | [undefined](/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) — the primitive value.                                                                                                                             |
-| _Glossary("NaN"_)         | [NaN ](/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)— not a number.                                                                                                                                                |
+| _Glossary("NaN"_)         | [NaN](/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)— not a number.                                                                                                                                                |
 | _domxref("document.all"_) | Objects are falsy if and only if they have the [\[\[IsHTMLDDA\]\]](https://tc39.es/ecma262/#sec-IsHTMLDDA-internal-slot) internal slot.That slot only exists in _domxref("document.all"_) and cannot be set using JavaScript. |
 
 ## Examples
@@ -4238,7 +4238,7 @@ _The First Contentful Paint_ time stamp is when the browser first rendered any t
 
 It is the length of time, in milliseconds, between the first user interaction on a web page and the browser's response to that interaction. Scrolling and zooming are not included in this metric.
 
-The time between when content is painted to the page and when all the functionality becomes responsive to human interaction often varies based on the size and complexity of the JavaScript needing to be downloaded, parsed, and executed on the main thread, and on the device speed or lack thereof (think low end mobile devices). The longer the delay, the worse the user experience. Reducing site initialization time and eliminating[ long tasks](/en-US/docs/Web/API/Long_Tasks_API) can help eliminate first input delays.
+The time between when content is painted to the page and when all the functionality becomes responsive to human interaction often varies based on the size and complexity of the JavaScript needing to be downloaded, parsed, and executed on the main thread, and on the device speed or lack thereof (think low end mobile devices). The longer the delay, the worse the user experience. Reducing site initialization time and eliminating[long tasks](/en-US/docs/Web/API/Long_Tasks_API) can help eliminate first input delays.
 
 #### See also
 
@@ -4539,7 +4539,7 @@ Forks are often seen in free and open source software development. This is now a
 
 #### See also
 
--   _interwiki("wikipedia", "Fork_(software*development)","Fork"*) on Wikipedia
+-   _interwiki("wikipedia", "Fork_(software_development)","Fork"_) on Wikipedia
 -   [How to fork a GitHub repo](https://help.github.com/articles/fork-a-repo/) (fork as in a Git context)
 -   _Glossary("Fork"_) (Glossary)
 -   Various "well-known" forks
@@ -4579,7 +4579,7 @@ Movies generally have a frame rate of 24 fps. They are able to have fewer frames
 
 ---
 
-> A fragmentainer is defined in the[ CSS Fragmentation Specification](https://www.w3.org/TR/css-break-3/) as follows:
+> A fragmentainer is defined in the[CSS Fragmentation Specification](https://www.w3.org/TR/css-break-3/) as follows:
 
 > A box—such as a page box, column box, or region—that contains a portion (or all) of a fragmented flow. Fragmentainers can be pre-defined, or generated as needed. When breakable content would overflow a fragmentainer in the block dimension, it breaks into the next container in its fragmentation context instead.
 
@@ -4876,7 +4876,7 @@ foo === window.foo; // Returns: true
 
 After defining a Global Variable `foo`, we can access its value directly from the `window` object, by using the variable name `foo` as a property name of the Global Object `window.foo`.
 
-#### Explanation:
+#### Explanation
 
 The global variable `foo` was stored in the `window` object, like this:
 
@@ -4901,7 +4901,7 @@ window.greeting(); // It is the same as the normal invoking: greeting();
 
 The example above explains how Global Functions are stored as _properties_ in the `window` object. We created a Global Function called `greeting`, then invoked it using the `window` object.
 
-#### Explanation:
+#### Explanation
 
 The global function `greeting` was stored in the `window` object, like this:
 
@@ -7195,7 +7195,7 @@ Programs are _glossary("Compile", "compiled"_) only once ahead of time into a pr
 
 JavaScript (or "JS") is a programming language used most often for dynamic client-side scripts on webpages, but it is also often used on the _Glossary("Server","server"_)-side, using a runtime such as [Node.js](https://nodejs.org/).
 
-JavaScript **should not** be confused with the _interwiki("wikipedia", "Java_(programming*language)", "Java programming language"*). Although _"Java"_ and _"JavaScript"_ are trademarks (or registered trademarks) of Oracle in the U.S. and other countries, the two programming languages are significantly different in their syntax, semantics, and use cases.
+JavaScript **should not** be confused with the _interwiki("wikipedia", "Java_(programming_language)", "Java programming language"_). Although_Java"__and_vaScript"_ are trademarks (or registered trademarks) of Oracle in the U.S. and other countries, the two programming languages are significantly different in their syntax, semantics, and use cases.
 
 JavaScript is primarily used in the browser, enabling developers to manipulate webpage content through the _Glossary("DOM"_), manipulate data with _Glossary("AJAX"_) and _Glossary("IndexedDB"_), draw graphics with _Glossary("canvas"_), interact with the device running the browser through various _Glossary("API","APIs"_), and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of _Glossary("API","APIs"_) available in browsers.
 
@@ -7679,7 +7679,7 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
 
 ### For loop
 
-#### Syntax:
+#### Syntax
 
     for (statement 1; statement 2; statement 3){
      execute code block
@@ -7689,7 +7689,7 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
 -   Statement 2 defines the condition needed to execute the code block.
 -   Statement 3 is executed every time the code block is run.
 
-#### Example:
+#### Example
 
 ```js
 //
@@ -7707,7 +7707,7 @@ For the above example, the syntax is as follows:
 
 ### While loop
 
-#### Syntax:
+#### Syntax
 
     while (condition){
      execute code block
@@ -7715,7 +7715,7 @@ For the above example, the syntax is as follows:
 
 -   The code block will continue to loop as long as the condition is true.
 
-#### Example:
+#### Example
 
 ```js
 //
@@ -7916,7 +7916,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 ## Types of markup language
 
 -   **Presentational Markup:**
--   -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
+            -   -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
 -   **Procedural Markup:**
     -   : Combined with text to provide instructions on text processing to programs. This text is visibly manipulated by the author.
 -   **Descriptive Markup:**
@@ -8087,7 +8087,7 @@ In server-side web application frameworks, the term is often more specifically u
 
 #### See also
 
--   _Interwiki("wikipedia", "Middleware_(distributed*applications)", "Middleware*(distributed*applications)"*) on Wikipedia
+-   _Interwiki("wikipedia", "Middleware_(distributed_applications)", "Middleware_(distributed_applications)"_) on Wikipedia
 -   _Interwiki("wikipedia", "Middleware", "Middleware"_) on Wikipedia
 
 ---
@@ -8129,7 +8129,7 @@ See also [MIME-Type](/en-US/docs/Glossary/MIME_type)
 
 #### See also
 
--   [MIME ](https://en.wikipedia.org/wiki/MIME)on Wikipedia
+-   [MIME](https://en.wikipedia.org/wiki/MIME)on Wikipedia
 
 ---
 
@@ -8615,7 +8615,7 @@ Another use of the word is when talking about _Glossary("Node.js"_)
 
 ---
 
-> Normative is a word commonly used in software _Glossary("specification", "specifications"_) to denote sections that are standardized and must be followed as a rule. Specifications might also contain sections that are marked as \__Glossary("non-normative"_)_ or \_informative_, which means those are provided there for the purpose of helping the reader understand the specifications better or to showcase an example or best practice, which need not be followed as a rule.
+> Normative is a word commonly used in software _Glossary("specification", "specifications"_) to denote sections that are standardized and must be followed as a rule. Specifications might also contain sections that are marked as \__Glossary("non-normative"_)_or \_informative_, which means those are provided there for the purpose of helping the reader understand the specifications better or to showcase an example or best practice, which need not be followed as a rule.
 
 #### See also
 
@@ -9100,7 +9100,7 @@ Note the difference between _parameters_ and _arguments_:
 Two kinds of parameters:
 
 -   input parameters
--   -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
+            -   -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
 -   output/return parameters
     -   : primarily return multiple values from a function, but not recommended since they cause confusion
 
@@ -9393,7 +9393,7 @@ Display resolution is expressed in the unit of pixels. eg: A "800 x 600" pixel r
 
 #### See also
 
--   [Pixel ](https://en.wikipedia.org/wiki/Pixel)on Wikipedia
+-   [Pixel](https://en.wikipedia.org/wiki/Pixel)on Wikipedia
 
 ---
 
@@ -9463,7 +9463,7 @@ Plugins should not be confused with browser extensions, which unlike plugins are
 
 #### See also
 
--   [PNG ](https://en.wikipedia.org/wiki/Portable_Network_Graphics)on Wikipedia
+-   [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)on Wikipedia
 
 ---
 
@@ -10172,9 +10172,9 @@ There is limited browser and server support for QUIC today.
 > **RAIL**, an acronym for **Response, Animation, Idle, and Load**, is a performance model originated by the Google Chrome team in 2015, focused on user experience and performance within the browser. The performance mantra of RAIL is "Focus on the user; the end goal isn't to make your site perform fast on any specific device, it's to make users happy." There are 4 stages of interaction: page load, idle, response to input, and scrolling and animation. In acronym order, the main tenets are:
 
 -   **Response**
--   -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
+            -   -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
 -   **Animation**
--   -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
+            -   -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
 -   **Idle**
     -   : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
 -   **Load**
@@ -10359,7 +10359,7 @@ Regular expressions are implemented in various languages, but the best-known imp
 #### See also
 
 -   _Interwiki("wikipedia", "Web browser engine"_) on Wikipedia
--   [Venkatraman.R - Behind Browsers (Part 1, Basics) ](https://medium.com/@ramsunvtech/behind-browser-basics-part-1-b733e9f3c0e6)
+-   [Venkatraman.R - Behind Browsers (Part 1, Basics)](https://medium.com/@ramsunvtech/behind-browser-basics-part-1-b733e9f3c0e6)
 
 ---
 
@@ -10722,7 +10722,7 @@ In the above example, the average round trip time is shown on the final line as 
 > There are three definitions for **routers** on the web:
 
 1.  For the network layer, the router is a networking device that decides data _Glossary('Packet'_)s directions. They are distributed by retailers allowing user interaction to the internet.
-2.  For a _Glossary('SPA', 'Single-page application' _) in the application layer, a router is a library that decides what web page is presented by a given _Glossary('URL'_). This middleware module is used for all URL functions, as these are given a path to a file that is rendered to open the next page.
+2.  For a _Glossary('SPA', 'Single-page application'_) in the application layer, a router is a library that decides what web page is presented by a given _Glossary('URL'_). This middleware module is used for all URL functions, as these are given a path to a file that is rendered to open the next page.
 3.  In the implementation of an _Glossary('API'_) in a service layer, a router is a software component that parses a request and directs or routes the request to various handlers within a program. The router code usually accepts a response from the handler and facilitates its return to the requester.
 
 #### See also
@@ -11433,7 +11433,7 @@ Search engines give some guidelines for SEO, but big search engines keep result 
 SEO methods fall into three broad classes:
 
 -   technical
--   -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
+            -   -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
 -   copywriting
     -   : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
 -   popularity
@@ -11967,6 +11967,7 @@ To make speculative loads of linked scripts, style sheets and images successful,
 Speculative tree building fails when `document.write()` changes the tree builder state such that the speculative state after the `</script>` tag no longer holds when all the content inserted by `document.write()` has been parsed. However, only unusual uses of `document.write()` cause trouble. Here are the things to avoid:
 
 -   Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div>
+
 </div>");</script>` is OK.
 -   Don't write an unfinished token. `<script>document.write("<div> </div");</script>` is bad.
 -   Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
@@ -12068,7 +12069,7 @@ So due to (1) each single quote (') in the input string is replaced with double 
 #### See also
 
 -   _Interwiki("wikipedia", "SQL injection"_) on Wikipedia
--   [Explanation of SQL injection ](https://www.owasp.org/index.php/SQL_Injection)on OWASP (Open Web Application Security Project)
+-   [Explanation of SQL injection](https://www.owasp.org/index.php/SQL_Injection)on OWASP (Open Web Application Security Project)
 
 ---
 
@@ -12168,7 +12169,7 @@ Looking at the final state, you can discern something about the series of inputs
 There are two types of basic state machines:
 
 -   deterministic finite state machine
--   -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
+            -   -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
 -   non-deterministic finite state machine
     -   : Given some state, an input can lead to more than one different state.
 
@@ -12368,7 +12369,7 @@ In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "prim
 > In _Glossary("CSS"_), there are three categories of sources for style changes. These categories are called **style origins**. They are the **user agent origin**, **user origin**, and the **author origin**.
 
 -   User-agent origin
--   -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
+            -   -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
 -   User origin
     -   : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
 -   Author origin
@@ -12921,7 +12922,7 @@ TTFB is the time it takes between the start of the request and the start of the 
 
 TTI, proposed by the Web Incubator Community Group in 2018, is intended to provide a metric that describes when a page or application contains useful content and the main thread is idle and free to respond to user interactions, including having event handlers registered.
 
-#### Caveat:
+#### Caveat
 
 TTI is derived by leveraging information from the _domxref("Long Tasks API"_). Although available in some performance monitoring tools, TTI is not a part of any official web specification at the time of writing.
 
@@ -12951,11 +12952,11 @@ Here org is the TLD; mozilla.org is the second-level domain name; and developer 
 _Glossary("IANA"_) today distinguishes the following groups of top-level domains:
 
 -   country-code top-level domains (ccTLD)
--   -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
+            -   -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
 -   internationalized country code top-level domains (IDN ccTLD)
--   -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
+            -   -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
 -   generic top-level domains (gTLD)
--   -   : Top-level domains with three or more characters.
+            -   -   : Top-level domains with three or more characters.
 -   unsponsored top-level domains
     -   : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
 -   sponsored top-level domains (sTLD)
@@ -13297,7 +13298,7 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 
 ---
 
-> Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). \__Glossary("Type conversion"_)_ is similar to \_type coercion_ because they both convert values from one data type to another with one key difference — _type coercion_ is implicit whereas _type conversion_ can be either implicit _or_ explicit.
+> Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). \__Glossary("Type conversion"_)_is similar to \_type coercion_ because they both convert values from one data type to another with one key difference — _type coercion_ is implicit whereas _type conversion_ can be either implicit _or_ explicit.
 
 ## Examples
 
@@ -14115,7 +14116,7 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 #### See also
 
--   [WebM ](https://en.wikipedia.org/wiki/WebM)on Wikipedia
+-   [WebM](https://en.wikipedia.org/wiki/WebM)on Wikipedia
 
 ---
 
@@ -14133,7 +14134,7 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 #### See also
 
--   [WebP ](https://en.wikipedia.org/wiki/WebP)on Wikipedia
+-   [WebP](https://en.wikipedia.org/wiki/WebP)on Wikipedia
 
 ---
 
@@ -14155,7 +14156,7 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 WebRTC consists mainly of these parts:
 
 -   _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
--   -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a
+            -   -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a
 -   _domxref("RTCPeerConnection"_)
     -   : An interface to configure video chat or voice calls.
 -   _domxref("RTCDataChannel"_)
