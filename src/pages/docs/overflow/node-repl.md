@@ -2,8 +2,8 @@
 title: The-package-lock.json-file
 weight: 0
 seo:
-    title: ''
-    description: ''
+    title: 'The-package-lock.json-file'
+    description: 'The-package-lock.json-file documentation'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -12,6 +12,9 @@ excerpt: >-
     The package-lock.json file is automatically generated when installing node
     packages
 ---
+
+
+
 
 The `node` command is the one we use to run our Node.js scripts:
 
@@ -102,8 +105,8 @@ and you press `enter`, the REPL will go to a new line that starts with 3 dots, i
 
 ```js
 //
-... console.log(num)
-... })
+ console.log(num)
+ })
 ```
 
 If you type `.break` at the end of a line, the multiline mode will stop and the statement will not be executed.
