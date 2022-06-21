@@ -3,25 +3,26 @@ title: Deploy React App To Heroku
 template: post
 subtitle: Deploy React App To Heroku Using Postgres & Express
 excerpt: Heroku is an web application that makes deploying applications easy for
-  a beginner.
+    a beginner.
 date: 2022-05-16T02:38:59.629Z
-image: /blog/psql-postgres.png
-thumb_image: /blog/psql-postgres.png
-image_position: right
-author: src/data/authors/bgoon.yaml
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/heroku.png?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/heroku.png?raw=true
+image_position: top
+author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
-  - src/data/categories/js.yaml
-  - src/data/categories/git.yaml
+    - src/data/categories/react.yaml
+    - src/data/categories/js.yaml
+    - src/data/categories/git.yaml
 tags:
-  - src/data/tags/cms.yaml
+    - src/data/tags/cms.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/react-state.md
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/react-state.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
 # Deploy React App To Heroku Using Postgres & Express
 
 Heroku is an web application that makes deploying applications easy for a beginner.
@@ -195,4 +196,4 @@ If you want to open a connection to the logs to continuously output to your term
 
 The logs may clue you into why you are experiencing errors or different behavior.
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host 
+#### If you found this guide helpful feel free to checkout my github/gists where I host

@@ -394,4 +394,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/web-development-interview-part-3-826ae81a9107" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.

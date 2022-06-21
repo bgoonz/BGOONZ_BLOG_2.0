@@ -7,291 +7,291 @@
 .
 ├── Combined_____-_____Doc.md
 ├── components
-│   ├── ActionLink.js
-│   ├── CtaButtons.js
-│   ├── DarkToggle
-│   │   ├── index.js
-│   │   └── styles.js
-│   ├── DocsMenu.js
-│   ├── DocsSubmenu.js
-│   ├── Footer.js
-│   ├── Header.js
-│   ├── Icon.js
-│   ├── Layout.js
-│   ├── SectionContent.js
-│   ├── SectionCta.js
-│   ├── SectionDocs.js
-│   ├── SectionGrid.js
-│   ├── SectionHero.js
-│   ├── Submenu.js
-│   ├── global.css
-│   └── index.js
+│   ├── ActionLink.js
+│   ├── CtaButtons.js
+│   ├── DarkToggle
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── DocsMenu.js
+│   ├── DocsSubmenu.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Icon.js
+│   ├── Layout.js
+│   ├── SectionContent.js
+│   ├── SectionCta.js
+│   ├── SectionDocs.js
+│   ├── SectionGrid.js
+│   ├── SectionHero.js
+│   ├── Submenu.js
+│   ├── global.css
+│   └── index.js
 ├── data
-│   └── doc_sections.yml
+│   └── doc_sections.yml
 ├── hooks
-│   ├── addScript.js
-│   ├── index.js
-│   ├── useDarkMode.js
-│   ├── useEventListener.js
-│   ├── useMediaQuery.js
-│   ├── useOnClickOutside.js
-│   ├── useQueryParam.js
-│   ├── useSize.js
-│   └── useStorage.js
+│   ├── addScript.js
+│   ├── index.js
+│   ├── useDarkMode.js
+│   ├── useEventListener.js
+│   ├── useMediaQuery.js
+│   ├── useOnClickOutside.js
+│   ├── useQueryParam.js
+│   ├── useSize.js
+│   └── useStorage.js
 ├── html.js
 ├── pages
-│   ├── blog
-│   │   ├── 300-react-questions.md
-│   │   ├── awesome-graphql.md
-│   │   ├── big-o-complexity.md
-│   │   ├── blog-archive.md
-│   │   ├── blogwcomments.md
-│   │   ├── data-structures.md
-│   │   ├── flow-control-in-python.md
-│   │   ├── functions-in-python.md
-│   │   ├── git-gateway.md
-│   │   ├── index.md
-│   │   ├── interview-questions-js.md
-│   │   ├── netlify-cms.md
-│   │   ├── platform-docs.md
-│   │   ├── python-for-js-dev.md
-│   │   ├── python-resources.md
-│   │   ├── web-dev-trends.md
-│   │   └── web-scraping.md
-│   ├── docs
-│   │   ├── about
-│   │   │   ├── eng-portfolio.md
-│   │   │   ├── ideas-for-this-website.md
-│   │   │   ├── index.md
-│   │   │   ├── intrests.md
-│   │   │   ├── job-search.md
-│   │   │   └── resume.md
-│   │   ├── articles
-│   │   │   ├── basic-web-dev.md
-│   │   │   ├── buffers.md
-│   │   │   ├── dev-dep.md
-│   │   │   ├── event-loop.md
-│   │   │   ├── fs-module.md
-│   │   │   ├── how-the-web-works.md
-│   │   │   ├── http.md
-│   │   │   ├── index.md
-│   │   │   ├── install.md
-│   │   │   ├── intro.md
-│   │   │   ├── modules.md
-│   │   │   ├── nextjs.md
-│   │   │   ├── node-api-express.md
-│   │   │   ├── node-cli-args.md
-│   │   │   ├── node-common-modules.md
-│   │   │   ├── node-env-variables.md
-│   │   │   ├── node-js-language.md
-│   │   │   ├── node-package-manager.md
-│   │   │   ├── node-repl.md
-│   │   │   ├── node-run-cli.md
-│   │   │   ├── nodejs.md
-│   │   │   ├── nodevsbrowser.md
-│   │   │   ├── npm.md
-│   │   │   ├── npx.md
-│   │   │   ├── os-module.md
-│   │   │   ├── reading-files.md
-│   │   │   ├── semantic-html.md
-│   │   │   ├── semantic.md
-│   │   │   ├── the-uniform-resource-locator-(url).md
-│   │   │   ├── understanding-firebase.md
-│   │   │   ├── v8.md
-│   │   │   ├── web-standards-checklist.md
-│   │   │   ├── webdev-tools.md
-│   │   │   └── writing-files.md
-│   │   ├── audio
-│   │   │   ├── audio-feature-extraction.md
-│   │   │   ├── audio.md
-│   │   │   ├── dfft.md
-│   │   │   ├── discrete-fft.md
-│   │   │   ├── dtw-python-explained.md
-│   │   │   ├── dynamic-time-warping.md
-│   │   │   ├── index.md
-│   │   │   └── web-audio-api.md
-│   │   ├── career
-│   │   │   ├── dev-interview.md
-│   │   │   ├── index.md
-│   │   │   ├── interview-dos-n-donts.md
-│   │   │   └── job-boards.md
-│   │   ├── community
-│   │   │   ├── an-open-letter-2-future-developers.md
-│   │   │   ├── index.md
-│   │   │   └── video-chat.md
-│   │   ├── content
-│   │   │   ├── algo.md
-│   │   │   ├── archive.md
-│   │   │   ├── gatsby-Queries-Mutations.md
-│   │   │   ├── history-api.md
-│   │   │   ├── index.md
-│   │   │   ├── main-projects.md
-│   │   │   └── trouble-shooting.md
-│   │   ├── data-structures
-│   │   │   └── index.md
-│   │   ├── docs
-│   │   │   ├── appendix.md
-│   │   │   ├── art-of-command-line.md
-│   │   │   ├── bash.md
-│   │   │   ├── content.md
-│   │   │   ├── css.md
-│   │   │   ├── data-structures-docs.md
-│   │   │   ├── es-6-features.md
-│   │   │   ├── git-reference.md
-│   │   │   ├── git-repos.md
-│   │   │   ├── html-spec.md
-│   │   │   ├── index.md
-│   │   │   ├── markdown.md
-│   │   │   ├── no-whiteboarding.md
-│   │   │   ├── node-docs-complete.md
-│   │   │   ├── node-docs-full.md
-│   │   │   ├── regex-in-js.md
-│   │   │   └── sitemap.md
-│   │   ├── faq
-│   │   │   ├── contact.md
-│   │   │   ├── index.md
-│   │   │   └── plug-ins.md
-│   │   ├── gists.md
-│   │   ├── index.md
-│   │   ├── interact
-│   │   │   ├── callstack-visual.md
-│   │   │   ├── clock.md
-│   │   │   ├── index.md
-│   │   │   ├── jupyter-notebooks.md
-│   │   │   ├── other-sites.md
-│   │   │   └── video-chat.md
-│   │   ├── interview
-│   │   │   ├── index.md
-│   │   │   ├── job-search-nav.md
-│   │   │   └── review-concepts.md
-│   │   ├── javascript
-│   │   │   ├── arrow-functions.md
-│   │   │   ├── asyncjs.md
-│   │   │   ├── await-keyword.md
-│   │   │   ├── bigo.md
-│   │   │   ├── clean-code.md
-│   │   │   ├── constructor-functions.md
-│   │   │   ├── index.md
-│   │   │   ├── promises.md
-│   │   │   ├── review.md
-│   │   │   └── this-is-about-this.md
-│   │   ├── leetcode
-│   │   │   └── index.md
-│   │   ├── privacy-policy.md
-│   │   ├── projects
-│   │   │   ├── embeded-websites.md
-│   │   │   ├── index.md
-│   │   │   ├── list-of-projects.md
-│   │   │   ├── mini-projects.md
-│   │   │   └── my-websites.md
-│   │   ├── python
-│   │   │   ├── at-length.md
-│   │   │   ├── cheat-sheet.md
-│   │   │   ├── comprehensive-guide.md
-│   │   │   ├── examples.md
-│   │   │   ├── flow-control.md
-│   │   │   ├── functions.md
-│   │   │   ├── google-sheets-api.md
-│   │   │   ├── index.md
-│   │   │   ├── intro-for-js-devs.md
-│   │   │   ├── python-ds.md
-│   │   │   └── snippets.md
-│   │   ├── quick-reference
-│   │   │   ├── Emmet.md
-│   │   │   ├── all-emojis.md
-│   │   │   ├── create-react-app.md
-│   │   │   ├── git-bash.md
-│   │   │   ├── git-tricks.md
-│   │   │   ├── google-firebase.md
-│   │   │   ├── heroku-error-codes.md
-│   │   │   ├── index.md
-│   │   │   ├── installation.md
-│   │   │   ├── markdown-dropdowns.md
-│   │   │   ├── minifiction.md
-│   │   │   ├── new-repo-instructions.md
-│   │   │   ├── psql-setup.md
-│   │   │   ├── pull-request-rubric.md
-│   │   │   ├── quick-links.md
-│   │   │   ├── topRepos.md
-│   │   │   ├── understanding-path.md
-│   │   │   └── vscode-themes.md
-│   │   ├── react
-│   │   │   ├── ajax-n-apis.md
-│   │   │   ├── cheatsheet.md
-│   │   │   ├── createReactApp.md
-│   │   │   ├── demo.md
-│   │   │   ├── dont-use-index-as-keys.md
-│   │   │   ├── index.md
-│   │   │   ├── jsx.md
-│   │   │   ├── react-docs.md
-│   │   │   ├── react-in-depth.md
-│   │   │   ├── react2.md
-│   │   │   └── render-elements.md
-│   │   ├── reference
-│   │   │   ├── awesome-lists.md
-│   │   │   ├── awesome-static.md
-│   │   │   ├── bash-commands.md
-│   │   │   ├── bookmarks.md
-│   │   │   ├── embed-the-web.md
-│   │   │   ├── github-search.md
-│   │   │   ├── google-cloud.md
-│   │   │   ├── how-2-reinstall-npm.md
-│   │   │   ├── how-to-kill-a-process.md
-│   │   │   ├── index.md
-│   │   │   ├── installing-node.md
-│   │   │   ├── intro-to-nodejs.md
-│   │   │   ├── notes-template.md
-│   │   │   ├── psql.md
-│   │   │   ├── resources.md
-│   │   │   ├── vscode.md
-│   │   │   └── web-api's.md
-│   │   ├── search.md
-│   │   ├── sitemap.md
-│   │   ├── tips
-│   │   │   ├── array-methods.md
-│   │   │   ├── index.md
-│   │   │   └── insert-into-array.md
-│   │   ├── tools
-│   │   │   ├── Archive.md
-│   │   │   ├── data-structures.md
-│   │   │   ├── dev-utilities.md
-│   │   │   ├── index.md
-│   │   │   └── markdown-html.md
-│   │   └── tutorials
-│   │       ├── enviorment-setup.md
-│   │       └── index.md
-│   ├── index.md
-│   ├── privacy-policy.md
-│   ├── readme.md
-│   └── showcase.md
+│   ├── blog
+│   │   ├── 300-react-questions.md
+│   │   ├── awesome-graphql.md
+│   │   ├── big-o-complexity.md
+│   │   ├── blog-archive.md
+│   │   ├── blogwcomments.md
+│   │   ├── data-structures.md
+│   │   ├── flow-control-in-python.md
+│   │   ├── functions-in-python.md
+│   │   ├── git-gateway.md
+│   │   ├── index.md
+│   │   ├── interview-questions-js.md
+│   │   ├── netlify-cms.md
+│   │   ├── platform-docs.md
+│   │   ├── python-for-js-dev.md
+│   │   ├── python-resources.md
+│   │   ├── web-dev-trends.md
+│   │   └── web-scraping.md
+│   ├── docs
+│   │   ├── about
+│   │   │   ├── eng-portfolio.md
+│   │   │   ├── ideas-for-this-website.md
+│   │   │   ├── index.md
+│   │   │   ├── intrests.md
+│   │   │   ├── job-search.md
+│   │   │   └── resume.md
+│   │   ├── articles
+│   │   │   ├── basic-web-dev.md
+│   │   │   ├── buffers.md
+│   │   │   ├── dev-dep.md
+│   │   │   ├── event-loop.md
+│   │   │   ├── fs-module.md
+│   │   │   ├── how-the-web-works.md
+│   │   │   ├── http.md
+│   │   │   ├── index.md
+│   │   │   ├── install.md
+│   │   │   ├── intro.md
+│   │   │   ├── modules.md
+│   │   │   ├── nextjs.md
+│   │   │   ├── node-api-express.md
+│   │   │   ├── node-cli-args.md
+│   │   │   ├── node-common-modules.md
+│   │   │   ├── node-env-variables.md
+│   │   │   ├── node-js-language.md
+│   │   │   ├── node-package-manager.md
+│   │   │   ├── node-repl.md
+│   │   │   ├── node-run-cli.md
+│   │   │   ├── nodejs.md
+│   │   │   ├── nodevsbrowser.md
+│   │   │   ├── npm.md
+│   │   │   ├── npx.md
+│   │   │   ├── os-module.md
+│   │   │   ├── reading-files.md
+│   │   │   ├── semantic-html.md
+│   │   │   ├── semantic.md
+│   │   │   ├── the-uniform-resource-locator-(url).md
+│   │   │   ├── understanding-firebase.md
+│   │   │   ├── v8.md
+│   │   │   ├── web-standards-checklist.md
+│   │   │   ├── webdev-tools.md
+│   │   │   └── writing-files.md
+│   │   ├── audio
+│   │   │   ├── audio-feature-extraction.md
+│   │   │   ├── audio.md
+│   │   │   ├── dfft.md
+│   │   │   ├── discrete-fft.md
+│   │   │   ├── dtw-python-explained.md
+│   │   │   ├── dynamic-time-warping.md
+│   │   │   ├── index.md
+│   │   │   └── web-audio-api.md
+│   │   ├── career
+│   │   │   ├── dev-interview.md
+│   │   │   ├── index.md
+│   │   │   ├── interview-dos-n-donts.md
+│   │   │   └── job-boards.md
+│   │   ├── community
+│   │   │   ├── an-open-letter-2-future-developers.md
+│   │   │   ├── index.md
+│   │   │   └── video-chat.md
+│   │   ├── content
+│   │   │   ├── algo.md
+│   │   │   ├── archive.md
+│   │   │   ├── gatsby-Queries-Mutations.md
+│   │   │   ├── history-api.md
+│   │   │   ├── index.md
+│   │   │   ├── main-projects.md
+│   │   │   └── trouble-shooting.md
+│   │   ├── data-structures
+│   │   │   └── index.md
+│   │   ├── docs
+│   │   │   ├── appendix.md
+│   │   │   ├── art-of-command-line.md
+│   │   │   ├── bash.md
+│   │   │   ├── content.md
+│   │   │   ├── css.md
+│   │   │   ├── data-structures-docs.md
+│   │   │   ├── es-6-features.md
+│   │   │   ├── git-reference.md
+│   │   │   ├── git-repos.md
+│   │   │   ├── html-spec.md
+│   │   │   ├── index.md
+│   │   │   ├── markdown.md
+│   │   │   ├── no-whiteboarding.md
+│   │   │   ├── node-docs-complete.md
+│   │   │   ├── node-docs-full.md
+│   │   │   ├── regex-in-js.md
+│   │   │   └── sitemap.md
+│   │   ├── faq
+│   │   │   ├── contact.md
+│   │   │   ├── index.md
+│   │   │   └── plug-ins.md
+│   │   ├── gists.md
+│   │   ├── index.md
+│   │   ├── interact
+│   │   │   ├── callstack-visual.md
+│   │   │   ├── clock.md
+│   │   │   ├── index.md
+│   │   │   ├── jupyter-notebooks.md
+│   │   │   ├── other-sites.md
+│   │   │   └── video-chat.md
+│   │   ├── interview
+│   │   │   ├── index.md
+│   │   │   ├── job-search-nav.md
+│   │   │   └── review-concepts.md
+│   │   ├── javascript
+│   │   │   ├── arrow-functions.md
+│   │   │   ├── asyncjs.md
+│   │   │   ├── await-keyword.md
+│   │   │   ├── bigo.md
+│   │   │   ├── clean-code.md
+│   │   │   ├── constructor-functions.md
+│   │   │   ├── index.md
+│   │   │   ├── promises.md
+│   │   │   ├── review.md
+│   │   │   └── this-is-about-this.md
+│   │   ├── leetcode
+│   │   │   └── index.md
+│   │   ├── privacy-policy.md
+│   │   ├── projects
+│   │   │   ├── embeded-websites.md
+│   │   │   ├── index.md
+│   │   │   ├── list-of-projects.md
+│   │   │   ├── mini-projects.md
+│   │   │   └── my-websites.md
+│   │   ├── python
+│   │   │   ├── at-length.md
+│   │   │   ├── cheat-sheet.md
+│   │   │   ├── comprehensive-guide.md
+│   │   │   ├── examples.md
+│   │   │   ├── flow-control.md
+│   │   │   ├── functions.md
+│   │   │   ├── google-sheets-api.md
+│   │   │   ├── index.md
+│   │   │   ├── intro-for-js-devs.md
+│   │   │   ├── python-ds.md
+│   │   │   └── snippets.md
+│   │   ├── quick-reference
+│   │   │   ├── Emmet.md
+│   │   │   ├── all-emojis.md
+│   │   │   ├── create-react-app.md
+│   │   │   ├── git-bash.md
+│   │   │   ├── git-tricks.md
+│   │   │   ├── google-firebase.md
+│   │   │   ├── heroku-error-codes.md
+│   │   │   ├── index.md
+│   │   │   ├── installation.md
+│   │   │   ├── markdown-dropdowns.md
+│   │   │   ├── minifiction.md
+│   │   │   ├── new-repo-instructions.md
+│   │   │   ├── psql-setup.md
+│   │   │   ├── pull-request-rubric.md
+│   │   │   ├── quick-links.md
+│   │   │   ├── topRepos.md
+│   │   │   ├── understanding-path.md
+│   │   │   └── vscode-themes.md
+│   │   ├── react
+│   │   │   ├── ajax-n-apis.md
+│   │   │   ├── cheatsheet.md
+│   │   │   ├── createReactApp.md
+│   │   │   ├── demo.md
+│   │   │   ├── dont-use-index-as-keys.md
+│   │   │   ├── index.md
+│   │   │   ├── jsx.md
+│   │   │   ├── react-docs.md
+│   │   │   ├── react-in-depth.md
+│   │   │   ├── react2.md
+│   │   │   └── render-elements.md
+│   │   ├── reference
+│   │   │   ├── awesome-lists.md
+│   │   │   ├── awesome-static.md
+│   │   │   ├── bash-commands.md
+│   │   │   ├── bookmarks.md
+│   │   │   ├── embed-the-web.md
+│   │   │   ├── github-search.md
+│   │   │   ├── google-cloud.md
+│   │   │   ├── how-2-reinstall-npm.md
+│   │   │   ├── how-to-kill-a-process.md
+│   │   │   ├── index.md
+│   │   │   ├── installing-node.md
+│   │   │   ├── intro-to-nodejs.md
+│   │   │   ├── notes-template.md
+│   │   │   ├── psql.md
+│   │   │   ├── resources.md
+│   │   │   ├── vscode.md
+│   │   │   └── web-api's.md
+│   │   ├── search.md
+│   │   ├── sitemap.md
+│   │   ├── tips
+│   │   │   ├── array-methods.md
+│   │   │   ├── index.md
+│   │   │   └── insert-into-array.md
+│   │   ├── tools
+│   │   │   ├── Archive.md
+│   │   │   ├── data-structures.md
+│   │   │   ├── dev-utilities.md
+│   │   │   ├── index.md
+│   │   │   └── markdown-html.md
+│   │   └── tutorials
+│   │       ├── enviorment-setup.md
+│   │       └── index.md
+│   ├── index.md
+│   ├── privacy-policy.md
+│   ├── readme.md
+│   └── showcase.md
 ├── sass
-│   ├── imports
-│   │   ├── _animations.scss
-│   │   ├── _buttons.scss
-│   │   ├── _docs.scss
-│   │   ├── _footer.scss
-│   │   ├── _forms.scss
-│   │   ├── _functions.scss
-│   │   ├── _general.scss
-│   │   ├── _header.scss
-│   │   ├── _helpers.scss
-│   │   ├── _icons.scss
-│   │   ├── _palettes.scss
-│   │   ├── _posts.scss
-│   │   ├── _prism.scss
-│   │   ├── _reset.scss
-│   │   ├── _sections.scss
-│   │   ├── _structure.scss
-│   │   ├── _tables.scss
-│   │   └── _variables.scss
-│   └── main.scss
+│   ├── imports
+│   │   ├── _animations.scss
+│   │   ├── _buttons.scss
+│   │   ├── _docs.scss
+│   │   ├── _footer.scss
+│   │   ├── _forms.scss
+│   │   ├── _functions.scss
+│   │   ├── _general.scss
+│   │   ├── _header.scss
+│   │   ├── _helpers.scss
+│   │   ├── _icons.scss
+│   │   ├── _palettes.scss
+│   │   ├── _posts.scss
+│   │   ├── _prism.scss
+│   │   ├── _reset.scss
+│   │   ├── _sections.scss
+│   │   ├── _structure.scss
+│   │   ├── _tables.scss
+│   │   └── _variables.scss
+│   └── main.scss
 ├── templates
-│   ├── advanced.js
-│   ├── blog.js
-│   ├── docs.js
-│   ├── page.js
-│   ├── post.js
-│   └── templates.md
+│   ├── advanced.js
+│   ├── blog.js
+│   ├── docs.js
+│   ├── page.js
+│   ├── post.js
+│   └── templates.md
 └── utils
     ├── attribute.js
     ├── blm-badge.js
@@ -325,8 +325,8 @@
 ├── ActionLink.js
 ├── CtaButtons.js
 ├── DarkToggle
-│   ├── index.js
-│   └── styles.js
+│   ├── index.js
+│   └── styles.js
 ├── DocsMenu.js
 ├── DocsSubmenu.js
 ├── Footer.js
@@ -347,6 +347,7 @@
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -388,6 +389,7 @@ export default class ActionLink extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -421,6 +423,7 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -493,6 +496,7 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -523,6 +527,7 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
+//
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -535,7 +540,8 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div id="search"></div>
+                <div id="search">
+</div>
                 <div>
                     <center>
                         <br />
@@ -658,7 +664,9 @@ export default class Footer extends React.Component {
                                                 frameborder="0"
                                                 id="social-embed"
                                                 width="100%!important"
-                                            ></iframe>
+                                            >
+</iframe>
+<br>
                                         }
                                     </td>
                                 </tr>
@@ -671,7 +679,8 @@ export default class Footer extends React.Component {
                 </div>
 
                 <div className="inner">
-                    <div id="search" className="inner"></div>
+                    <div id="search" className="inner">
+</div>
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
@@ -690,7 +699,8 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
-                <div id="search"></div>
+                <div id="search">
+</div>
             </footer>
         );
     }
@@ -700,6 +710,7 @@ export default class Footer extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -736,7 +747,8 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-                        <div id="search" className="inner"></div>
+                        <div id="search" className="inner">
+</div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
@@ -806,18 +818,21 @@ export default class Header extends React.Component {
                                 transform: 'scale(-1.5, 1.5)'
                             }}
                         >
-                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+</path>
                             <path
                                 className="octo-arm"
                                 d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
                                 fill="currentColor"
                                 style={{ transformOrigin: '130px 106px' }}
-                            ></path>
+                            >
+</path>
                             <path
                                 className="octo-body"
                                 d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
                                 fill="currentColor"
-                            ></path>
+                            >
+</path>
                         </svg>
                     </a>
                 </div>
@@ -830,6 +845,7 @@ export default class Header extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -870,6 +886,7 @@ export default class Icon extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -938,6 +955,7 @@ export default class Body extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -984,6 +1002,7 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1021,6 +1040,7 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1085,6 +1105,7 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1157,6 +1178,7 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1193,6 +1215,7 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1225,7 +1248,8 @@ export default class Submenu extends React.Component {
 }
 ```
 
-``` js
+````js
+//
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -1277,15 +1301,7 @@ export default {
     addScript
 };
 
-```
-
-
-
-
-
-
-
-</details>
+```</details>
 
 
 
@@ -1294,17 +1310,19 @@ export default {
 
 # Templates
 
-```
+````
 
 ├── advanced.js
 ├── blog.js
 ├── docs.js
 ├── page.js
 └── post.js
-```
+
+````
 
 
 ```js
+//
 
 import React from 'react';
 import _ from 'lodash';
@@ -1335,12 +1353,12 @@ export default class Advanced extends React.Component {
         );
     }
 }
-```
+````
 
 ---
 
-
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -1427,8 +1445,8 @@ export default class Blog extends React.Component {
 
 ---
 
-
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1504,8 +1522,8 @@ export default class Docs extends React.Component {
 
 ---
 
-
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1554,59 +1572,61 @@ export default class Page extends React.Component {
 
 ---
 
-
 ```js
-import  React from 'react';
+//
+import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 
-import {Layout} from '../components/index';
-import {toStyleObj, withPrefix, htmlToReact} from '../utils';
+import { Layout } from '../components/index';
+import { toStyleObj, withPrefix, htmlToReact } from '../utils';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
-  query($url: String) {
-    sitePage(path: {eq: $url}) {
-      id
+    query ($url: String) {
+        sitePage(path: { eq: $url }) {
+            id
+        }
     }
-  }
 `;
 
 export default class Post extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-              <article className="post post-full">
-                <header className="post-header has-gradient outer">
-                  {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                  <div className="bg-img" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + '\')')}/>
-                  )}
-                  <div className="inner-sm">
-                    <div className="post-meta">
-                      <time className="published" dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}</time>
+                <article className="post post-full">
+                    <header className="post-header has-gradient outer">
+                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
+                            <div
+                                className="bg-img"
+                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
+                            />
+                        )}
+                        <div className="inner-sm">
+                            <div className="post-meta">
+                                <time
+                                    className="published"
+                                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
+                                >
+                                    {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
+                                </time>
+                            </div>
+                            <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+                                <div className="post-subtitle">{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
+                            )}
+                        </div>
+                    </header>
+                    <div className="inner-md outer">
+                        <div className="post-content">{htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
                     </div>
-                    <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                    {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                    <div className="post-subtitle">
-                      {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}
-                    </div>
-                    )}
-                  </div>
-                </header>
-                <div className="inner-md outer">
-                  <div className="post-content">
-                    {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                  </div>
-                </div>
-              </article>
+                </article>
             </Layout>
         );
     }
 }
-
-
 ```
-</details>
 
+</details>

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Bash Commands
 
 # Bash Commands That Save Me Time and Frustration
@@ -23,18 +22,27 @@ Here's a list of bash commands that stand between me and insanity.
 
 #### Here's a list of bash commands that stand between me and insanity.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg" class="graf-image" />
+</figure>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--p-anchor">https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b</a>
 
-> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"><strong>github repository</strong></a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
+> **This article will be accompanied by the following** <a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--pullquote-anchor"> > <strong>github repository</strong> > </a> **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough"><strong>bgoonz/bash-commands-walkthrough</strong><br />
-<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br />
+<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 > The <a href="https://github.com/bgoonz/bash-commands-walkthrough#readme" class="markup--anchor markup--pullquote-anchor">readme</a> for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
 **I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you're like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif" class="graf-image" />
+</figure>
 
 ### Here's a Cheatsheet:
 
@@ -46,16 +54,20 @@ Here's a list of bash commands that stand between me and insanity.
 
 On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" /></figure>It shows that I'm working on my Desktop directory.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif" class="graf-image" />
+</figure>It shows that I'm working on my Desktop directory.
 
 #### ✔ Display List of Files ➡ `ls`:
 
 To see the list of files and directories in the current directory use `ls` command in your CLI.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" /></figure>Shows all of my files and directories of my Desktop directory.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif" class="graf-image" />
+</figure>Shows all of my files and directories of my Desktop directory.
 
-- <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
-- <span id="5cd8">Some useful `ls` command options:-</span>
+-   <span id="20cb">To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.</span>
+-   <span id="5cd8">Some useful `ls` command options:-</span>
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -63,7 +75,9 @@ OptionDescriptionls -alist all files including hidden file starting with '.'ls -
 
 We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif" class="graf-image" /></figure>Use `ls` command to see the directory is created or not.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif" class="graf-image" />
+</figure>Use `ls` command to see the directory is created or not.
 
 I created a cli-practice directory in my working directory i.e. Desktop directory.
 
@@ -71,7 +85,9 @@ I created a cli-practice directory in my working directory i.e. Desktop director
 
 It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" /></figure>Can use `pwd` command to confirm your directory name.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif" class="graf-image" />
+</figure>Can use `pwd` command to confirm your directory name.
 
 Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
@@ -83,7 +99,9 @@ We have seen `cd` command to change directory but if we want to move back or wan
 
 We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" /></figure>I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif" class="graf-image" />
+</figure>I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
 Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
@@ -91,7 +109,9 @@ Now open your hello.txt file in your text editor and write _Hello Everyone!_ int
 
 We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif" class="graf-image" /></figure>Shows the content of my hello.txt file.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif" class="graf-image" />
+</figure>Shows the content of my hello.txt file.
 
 #### ✔ Move Files & Directories ➡ `mv`:
 
@@ -105,9 +125,13 @@ Before using this command, we are going to create two more directories and anoth
 
 `mkdir html css touch bye.txt`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*piaAQz_MQpzo7DPH.gif" class="graf-image" /></figure>Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*piaAQz_MQpzo7DPH.gif" class="graf-image" />
+</figure>Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif" class="graf-image" /></figure>Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif" class="graf-image" />
+</figure>Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
 #### ✔ Rename Files & Directories ➡ `mv`:
 
@@ -115,33 +139,43 @@ Before using this command, we are going to create two more directories and anoth
 
 You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif" class="graf-image" /></figure>Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif" class="graf-image" />
+</figure>Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
 #### ✔ Copy Files & Directories ➡ `cp`:
 
 To do this, we use the `cp` command.
 
-- <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
+-   <span id="62fa">You can copy a file by entering `cp file_to_copy new_file_name`.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif" class="graf-image" /></figure>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif" class="graf-image" />
+</figure>Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-- <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
+-   <span id="9bfc">You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.</span>
 
 _The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" /></figure>Here I copied all of the files from the folder to folder-copy.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif" class="graf-image" />
+</figure>Here I copied all of the files from the folder to folder-copy.
 
 #### ✔ Remove Files & Directories ➡ `rm`:
 
 To do this, we use the `rm` command.
 
-- <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
+-   <span id="487a">To remove a file, you can use the command like `rm file_to_remove`.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif" class="graf-image" /></figure>Here I removed my hi.txt file.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif" class="graf-image" />
+</figure>Here I removed my hi.txt file.
 
-- <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
+-   <span id="0e9a">To remove a directory, use the command like `rm -r directory_to_remove`.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" /></figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif" class="graf-image" />
+</figure>I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
 #### ✔ Clear Screen ➡ `clear`:
 
@@ -157,7 +191,9 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 ### 1.) Recursively unzip zip files and then delete the archives when finished:
 
-**here is a** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor"><strong>folde</strong></a>**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
+**here is a** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor">
+<strong>folde</strong>
+</a>**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
     find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -196,13 +232,21 @@ The Home directory is represented by `~`. The Home directory refers to the base 
 
 The following output from my bash shell corresponds to the directory:
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>bgoonz/bash-commands-walkthrough</strong><br />
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br />
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 #### which was created by running the aforementioned commands in in a perfect copy of this directory:
 
-<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong><br />
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/DS-ALGO-OFFICIAL">
+<strong>bgoonz/DS-ALGO-OFFICIAL</strong>
+<br />
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a>
+<a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 > **…..below is the terminal output for the following commands:**
 
@@ -246,7 +290,10 @@ The following output from my bash shell corresponds to the directory:
 
 ### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" /><figcaption>!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!</figcaption></figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U" alt="!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!" class="graf-image" />
+<figcaption>!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!</figcaption>
+</figure>find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
 ---
 
@@ -268,53 +315,58 @@ The following output from my bash shell corresponds to the directory:
       echo '  <meta name="Author" content="Bryan Guner">'
       echo '<link rel="stylesheet" href="./assets/prism.css">'
       echo ' <link rel="stylesheet" href="./assets/style.css">'
-      echo ' <script async defer src="./assets/prism.js"></script>'
-      echo "  <title> directory </title>"
-      echo ""
-      echo '<style>'
-    echo '    a {'
-    echo '      color: black;'
-    echo '    }'
-    echo ''
-    echo '    li {'
-    echo '      border: 1px solid black !important;'
-    echo '      font-size: 20px;'
-    echo '      letter-spacing: 0px;'
-    echo '      font-weight: 700;'
-    echo '      line-height: 16px;'
-    echo '      text-decoration: none !important;'
-    echo '      text-transform: uppercase;'
-    echo '      background: #194ccdaf !important;'
-    echo '      color: black !important;'
-    echo '      border: none;'
-    echo '      cursor: pointer;'
-    echo '      justify-content: center;'
-    echo '      padding: 30px 60px;'
-    echo '      height: 48px;'
-    echo '      text-align: center;'
-    echo '      white-space: normal;'
-    echo '      border-radius: 10px;'
-    echo '      min-width: 45em;'
-    echo '      padding: 1.2em 1em 0;'
-    echo '      box-shadow: 0 0 5px;'
-    echo '      margin: 1em;'
-    echo '      display: grid;'
-    echo '      -webkit-border-radius: 10px;'
-    echo '      -moz-border-radius: 10px;'
-    echo '      -ms-border-radius: 10px;'
-    echo '      -o-border-radius: 10px;'
-    echo '    }'
-    echo '  </style>'
-      echo '</head>'
-      echo '<body>'
-      echo ""
-      # continue with the HTML stuff
-      echo ""
-      echo ""
-      echo "<ul>"
-      awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+      echo ' <script async defer src="./assets/prism.js">
+
+</script>'
+echo " <title> directory </title>"
+echo ""
+echo '<style>'
+echo ' a {'
+echo ' color: black;'
+echo ' }'
+echo ''
+echo ' li {'
+echo ' border: 1px solid black !important;'
+echo ' font-size: 20px;'
+echo ' letter-spacing: 0px;'
+echo ' font-weight: 700;'
+echo ' line-height: 16px;'
+echo ' text-decoration: none !important;'
+echo ' text-transform: uppercase;'
+echo ' background: #194ccdaf !important;'
+echo ' color: black !important;'
+echo ' border: none;'
+echo ' cursor: pointer;'
+echo ' justify-content: center;'
+echo ' padding: 30px 60px;'
+echo ' height: 48px;'
+echo ' text-align: center;'
+echo ' white-space: normal;'
+echo ' border-radius: 10px;'
+echo ' min-width: 45em;'
+echo ' padding: 1.2em 1em 0;'
+echo ' box-shadow: 0 0 5px;'
+echo ' margin: 1em;'
+echo ' display: grid;'
+echo ' -webkit-border-radius: 10px;'
+echo ' -moz-border-radius: 10px;'
+echo ' -ms-border-radius: 10px;'
+echo ' -o-border-radius: 10px;'
+echo ' }'
+echo ' </style>'
+echo '</head>'
+echo '<body>'
+echo "" # continue with the HTML stuff
+echo ""
+echo ""
+echo "<ul>"
+awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+
+</li>"}' $listing
       # awk '{print "<li>"};
-      #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+      #  {print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
       echo ""
       echo "</ul>"
       echo "</body>"
@@ -326,17 +378,29 @@ The following output from my bash shell corresponds to the directory:
 
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
-<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/side-projects-42/DS-Bash-Examples-Deploy"><strong>side-projects-42/DS-Bash-Examples-Deploy</strong><br />
-<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/side-projects-42/DS-Bash-Examples-Deploy">
+<strong>side-projects-42/DS-Bash-Examples-Deploy</strong>
+<br />
+<em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a>
+<a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png" class="graf-image" /></figure>#### The result is a index.html file that contains a list of links to each file in the directory:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png" class="graf-image" />
+</figure>#### The result is a index.html file that contains a list of links to each file in the directory:
 
 > here is a link to and photo of the resulting html file:
 
-<a href="https://quirky-meninsky-4181b5.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://quirky-meninsky-4181b5.netlify.app/"><strong>index.html</strong><br />
-<em>CONTENT/DS-n-Algos/</em>quirky-meninsky-4181b5.netlify.app</a><a href="https://quirky-meninsky-4181b5.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://quirky-meninsky-4181b5.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://quirky-meninsky-4181b5.netlify.app/">
+<strong>index.html</strong>
+<br />
+<em>CONTENT/DS-n-Algos/</em>quirky-meninsky-4181b5.netlify.app</a>
+<a href="https://quirky-meninsky-4181b5.netlify.app/" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png" class="graf-image" />
+</figure>
 
 ---
 
@@ -346,7 +410,9 @@ The following output from my bash shell corresponds to the directory:
 
 > The result is stored in <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf" class="markup--anchor markup--blockquote-anchor">this directory:</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png" class="graf-image" />
+</figure>
 
 ---
 
@@ -430,12 +496,18 @@ The following output from my bash shell corresponds to the directory:
 
     Posted Thursday, April 22, 2021 by Teon Brooks
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" />
+</figure>
 
 **the test.txt and result.md files can be found here:**
 
-<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong><br />
-<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text">
+<strong>bgoonz/bash-commands-walkthrough</strong>
+<br />
+<em>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</em>github.com</a>
+<a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ---
 
@@ -447,19 +519,27 @@ The following output from my bash shell corresponds to the directory:
 
 **That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the _find/pandoc_ line once in every subfolder of the working directory… is working properly!**
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" /></figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png" class="graf-image" />
+</figure>**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
-**The results of said operation can be found in the** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run" class="markup--anchor markup--p-anchor"><strong>following directory</strong></a>
+**The results of said operation can be found in the** <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run" class="markup--anchor markup--p-anchor">
+<strong>following directory</strong>
+</a>
 
 #### In Action:
 
 🢃 Below 🢃
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif" class="graf-image" />
+</figure>
 
 #### The final result is:
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png" class="graf-image" />
+</figure>
 
 _If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder._
 
@@ -547,7 +627,9 @@ _If you want to run any bash script recursively all you have to do is substitue 
     doneecho "<form>
      <input type="button" value="Go back!" onclick="history.back()">
     </form>
-      </body></html>" | tee -a *.html
+      </body>
+
+</html>" | tee -a *.html
 
 ---
 
@@ -591,13 +673,22 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
+<br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### Part 2 of this series:
 
-<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong><br />
-<em>Continued!!!medium.com</em></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682">
+<strong>Medium</strong>
+<br />
+<em>Continued!!!medium.com</em>
+</a>
+<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 ---
 
@@ -605,11 +696,11 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a" class="p-canonical">Canonical link</a>
 
- August 31, 2021.
+August 31, 2021.
 
 # Resources:
 
-- [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
+-   [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
 
 # 1. Remove spaces from file and folder names and then remove numbers from files and folder names....
 
@@ -619,14 +710,14 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 ###### code:
 
-```sh
+```bash
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````bash
 
-```sh
+```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -643,6 +734,7 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -652,7 +744,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 
@@ -664,7 +756,7 @@ fs.writeFile('output.md', cat, err => {
 
 ###### code:
 
-```sh
+```bash
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -680,7 +772,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code:
 
-```sh
+```bash
 
 find . -empty -type d -print -delete
 
@@ -702,7 +794,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # Generalized:
 
-```sh
+```bash
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -713,7 +805,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```sh
+```bash
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -724,7 +816,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 # Clone all Git Organization:
 
-```sh
+```bash
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -742,7 +834,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ###### code:
 
-```sh
+```bash
 git pull
 git init
 git add .
@@ -750,14 +842,14 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```sh
+```bash
 
 git init
 git add .
@@ -765,14 +857,14 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
@@ -789,7 +881,7 @@ git push -u origin preview
 
 ###### code:
 
-```sh
+```bash
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -807,7 +899,7 @@ find . -name "*.zip" -type f -print -delete
 
 ###### code:
 
-```sh
+```bash
 
 git stash
 git pull
@@ -825,7 +917,7 @@ git stash pop
 
 ###### code:
 
-```sh
+```bash
 
 sudo npm i prettier -g
 
@@ -843,7 +935,7 @@ prettier --write .
 
 ###### code:
 
-```sh
+```bash
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -863,7 +955,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ###### code:
 
-```sh
+```bash
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -875,7 +967,7 @@ npm i npm-recursive-install -g
 
 ```
 
-```sh
+```bash
 black .
 
 prettier --write .
@@ -892,7 +984,7 @@ npm-recursive-install
 
 ###### code:
 
-```sh
+```bash
 npm i @bgoonz11/repoutils
 
 ```
@@ -907,7 +999,7 @@ npm i @bgoonz11/repoutils
 
 ###### code:
 
-```sh
+```bash
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -934,7 +1026,7 @@ tree -f >README.md
 
 ###### code:
 
-```sh
+```bash
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -962,7 +1054,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ###### code:
 
-```sh
+```bash
 #!/bin/bash
 
 for file in *.md.md
@@ -978,7 +1070,7 @@ do
 done
 ```
 
-```sh
+```bash
 
 #!/bin/bash
 
@@ -1004,7 +1096,7 @@ done
 
 ###### code:
 
-```sh
+```bash
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -1021,6 +1113,7 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1039,7 +1132,7 @@ fs.writeFile('output.md', cat, (err) => {
 
 ###### code:
 
-```sh
+```bash
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -1056,7 +1149,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ###### code:
 
-```sh
+```bash
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -1081,7 +1174,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```sh
+```bash
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -1089,7 +1182,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ###### code:
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1115,7 +1208,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ###### code:
 
-```sh
+```bash
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -1131,7 +1224,7 @@ uniq -u input.txt output.txt
 
 ###### code:
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1169,7 +1262,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -1196,7 +1289,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ###### code:
 
-```sh
+```bash
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -1213,7 +1306,7 @@ source doit.sh
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -1237,7 +1330,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
     echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
@@ -1292,11 +1386,14 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+  awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+</li>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1320,13 +1417,13 @@ cmd $listing --sort=extension >>$html
 
 > Notes: Useful Follow up Code:
 
-```sh
+```bash
 
 ```
 
 ###### code:
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -1350,7 +1447,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
 
@@ -1404,11 +1502,13 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>
+<br>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1434,7 +1534,7 @@ cmd $listing --sort=extension >>$html
 
 ###### code:
 
-```sh
+```bash
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -1454,7 +1554,7 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ###### code:
 
-```sh
+```bash
 
 git fetch --all
 # Backup your current branch:
@@ -1493,7 +1593,7 @@ git reset --hard origin/master
 
 ###### code:
 
-```sh
+```bash
 git submodule deinit
 ```
 
@@ -1507,7 +1607,7 @@ git submodule deinit
 
 ###### code:
 
-```sh
+```bash
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1530,7 +1630,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ###### code:
 
-```sh
+```bash
 
 git remote remove origin
 
@@ -1546,7 +1646,7 @@ git remote remove origin
 
 ###### code:
 
-```sh
+```bash
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1562,7 +1662,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ###### code:
 
-```sh
+```bash
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1578,7 +1678,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ###### code:
 
-```sh
+```bash
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1635,7 +1735,7 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```ps1
+```
 
  wsl.exe --shutdown
 
@@ -1653,7 +1753,7 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```sh
+```bash
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
@@ -1670,7 +1770,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ###### code:
 
-```sh
+```bash
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1688,7 +1788,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ###### code:
 
-```sh
+```bash
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1704,7 +1804,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ###### code:
 
-```sh
+```bash
 killall -s KILL node
 
 ```
@@ -1717,7 +1817,7 @@ killall -s KILL node
 
 ###### code:
 
-```sh
+```bash
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1726,7 +1826,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```sh
+```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1743,7 +1843,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ###### code:
 
-```sh
+```bash
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1759,7 +1859,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ###### code:
 
-```sh
+```bash
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1774,7 +1874,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1788,7 +1888,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1802,7 +1902,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1816,7 +1916,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1830,7 +1930,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1844,7 +1944,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1858,7 +1958,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1872,7 +1972,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1886,7 +1986,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1900,7 +2000,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1914,7 +2014,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1928,7 +2028,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1942,7 +2042,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1956,7 +2056,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1970,7 +2070,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1984,7 +2084,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -1998,7 +2098,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2012,7 +2112,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2026,7 +2126,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2040,7 +2140,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2054,7 +2154,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2068,7 +2168,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2082,7 +2182,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2096,7 +2196,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2110,7 +2210,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2124,7 +2224,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2138,7 +2238,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2152,7 +2252,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2166,7 +2266,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2180,7 +2280,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2194,7 +2294,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2208,7 +2308,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2222,7 +2322,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2236,7 +2336,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2250,7 +2350,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2264,7 +2364,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2278,7 +2378,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2292,7 +2392,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2306,7 +2406,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2320,7 +2420,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2334,7 +2434,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2348,7 +2448,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2362,7 +2462,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2376,7 +2476,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2390,7 +2490,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2404,7 +2504,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2418,7 +2518,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2432,7 +2532,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2446,7 +2546,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```sh
+```bash
 
 ```
 
@@ -2460,7 +2560,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```ps1
+```
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -2493,7 +2593,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```bash
  sudo apt --purge remove zsh
 
 ```
@@ -2508,7 +2608,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```bash
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -2526,7 +2626,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ###### code:
 
-```sh
+```bash
 
 npx @appnest/readme generate
 
@@ -2542,7 +2642,7 @@ npx @appnest/readme generate
 
 ###### code:
 
-```sh
+```bash
 sudo -u postgres psql
 ```
 
@@ -2590,7 +2690,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ###### code:
 
-```sh
+```bash
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2608,7 +2708,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ###### code:
 
-```sh
+```bash
 #!/bin/bash
 
 # SHORTCUTS and HISTORY

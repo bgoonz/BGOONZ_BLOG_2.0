@@ -1,12 +1,12 @@
 ## Introduction:
 
-- _What is a Content Management System (CMS)?_
+-   _What is a Content Management System (CMS)?_
 
 A content management system, or CMS, is a software program that allows users to create and maintain websites without having to write them from the ground up or even knowing how to code.
 
 A content management system (CMS) allows you to generate, manage, change, and publish material using a user-friendly interface. Rather than coding, you may change the look and functionality of your site by downloading or purchasing templates and plugins. You can have several users collaborating in the same tool's backend, among other things.
 
-- _Evolution of CMS: The new scaffolding_
+-   _Evolution of CMS: The new scaffolding_
 
 Like all good things, CMS's emerged in their final form after a lot of evolution throughout the years.
 
@@ -62,63 +62,63 @@ Some conventional CMS solutions have a "headless API" that lets you deliver cont
 
 ### The Advantage of the Headless CMS Architecture
 
-- Multi Channel Content Delivery
+-   Multi Channel Content Delivery
 
 A single content source, such as a product description for an online product, can automatically adapt to its publishing environment and present itself optimally for its destination.
 
-- More Secure
+-   More Secure
 
 Because it is distinct from the frontend, headless content provides a far less exposed region of a possible assault.
 
-- Faster Editing Experiences
+-   Faster Editing Experiences
 
 In a headless CMS, the separation of code and content makes life easier for content writers and editors, who can ignore the code and focus solely on the material they are responsible for.
 
-- Compatibility
+-   Compatibility
 
 API-delivered content is easier to integrate, edit, and disseminate, cutting down on time to develop content-driven experiences like websites and applications.
 
-- Rapid Content Deployment (via API)
+-   Rapid Content Deployment (via API)
 
 Most headless CMS-s use an API-first approach that allows developers to stream in content quickly. You may easily scale or deploy additional channels within a couple of hours.
 
 Find out how to create GraphQL APIs here​.
 
-![Create APIs with Hasura to save 30%+ app dev costs](https://cdn.sanity.io/images/ay6gmb6r/production/3c59f37c1399b5e98fd9b34c040a8b3c93fed2dd-2853x813.png?w=729&fm=webp&fit=max&auto=format "Create APIs with Hasura to save 30%+ app dev costs")[
+![Create APIs with Hasura to save 30%+ app dev costs](https://cdn.sanity.io/images/ay6gmb6r/production/3c59f37c1399b5e98fd9b34c040a8b3c93fed2dd-2853x813.png?w=729&fm=webp&fit=max&auto=format 'Create APIs with Hasura to save 30%+ app dev costs')[
 
 ](https://www.solutelabs.com/blog/hasura-api-development)
 
-- Scalability
+-   Scalability
 
 Instead of implementing multiple, parallel content management system instances, e.g., to support web and mobile channels, a single headless CMS instance can serve unlimited digital channels.
 
-- Flexibility
+-   Flexibility
 
 Developers, meanwhile, can use all the latest tools and frameworks to bring content experiences to life on any modern platform without being locked into a proprietary language or other limitations of a particular content management system.
 
-- Modular Content
+-   Modular Content
 
 Since the content in your headless CMS isn't tied to any particular front-end display, it becomes modular, allowing it to be handled and delivered across any applicable touchpoint without having to be duplicated or restructured.
 
-- Choice of media (Video, Audio)
+-   Choice of media (Video, Audio)
 
 Headless CMS isn't just about textual content anymore. It now integrates other forms of media like audio and video.
 
 ### The Challenges of Using a Headless CMS
 
-- Rigid presentation
+-   Rigid presentation
 
 Your medium is fixed with a second-screen experience; unlike websites, which allow you to customize zones and resize and rearrange dynamic information, a fixed medium (such as a mobile app container or kiosk) is limited to presenting dynamic content in a defined zone. This means you can add and remove information, but you won't be able to change the positioning or presentation much beyond that.
 
-- Expensive development
+-   Expensive development
 
 Because a headless CMS lacks a frontend, a development team would require hours to create one, which may be costly and time-consuming.
 
-- Formatting challenges
+-   Formatting challenges
 
 To adapt to managing various systems, a headless CMS team would need to extend its knowledge substantially.
 
-- Content Reorganization
+-   Content Reorganization
 
 Because this architecture does not include notions such as sitemaps and pages, content editors may need to adapt to the unique content structure on the website or other channels.
 
@@ -154,41 +154,41 @@ Applications include:
 
 ### Advantages of WordPress
 
-- Ease of Installation
+-   Ease of Installation
 
 The installation procedure for WordPress is straightforward and quick, making it a pleasure to get started. All you have to do now is create your web pages and upload your database. If you're using FTP, just create a database, upload WordPress, and install it to get going.
 
-- Easy Media Management
+-   Easy Media Management
 
 To enrich the content on your WordPress website, you may quickly add images, videos, and other media components. It has a drag-and-drop mechanism that lets you quickly drag and drop media content into the uploader to have it posted. You can also use image editing features if necessary.
 
-- Responsive Design
+-   Responsive Design
 
 Because mobile has become the most effective method of getting traffic for company websites, they must be responsive to attract potential customers via the mobile channel. WordPress has a responsive design that assures that your website is optimized well on various devices without requiring you to put in extra effort to create separate web pages for each one.
 
-- Ease of Use
+-   Ease of Use
 
 The most appealing characteristic of WordPress is its simplicity. Because the program has an intuitive interface, anyone can become a professional while playing around with it. It has an integrated dashboard that allows users to create new pages, articles, or categories, modify themes and settings, and much more. Because the open-source platform is free, it is a cost-effective alternative.
 
-- Lots of Theme Options
+-   Lots of Theme Options
 
 Themes determine a site's appearance and navigation. WordPress offers a variety of theme choices that may be modified to meet specific company needs. Users may download themes based on their needs and experiment to create attractive websites that reflect their company's brand with a similar online presence.
 
-- Availability of Plugins
+-   Availability of Plugins
 
 This platform's bedrock is made up of plugins. Users may modify the site and add the required features and functions by using plugins. Installing a plugin is all that is needed to add a new feature to the site. Surprisingly, there are many of them, and most of them are either free or reasonably priced.
 
-- E-commerce-friendly
+-   E-commerce-friendly
 
 WooCommerce, a free WordPress eCommerce plugin, allows you to create visually beautiful and feature-rich e-commerce stores. WooCommerce is a sophisticated e-commerce system that integrates easily with WordPress and provides shop owners and developers total flexibility over how to sell their products online.
 
-- Minimum Coding Required
+-   Minimum Coding Required
 
 The necessity for coding is reduced to a minimum with WordPress since the CMS comes with various user-friendly features that allow you to do a lot without putting in a lot of effort. Content management, draft creation, post revision, media insertion, and publication planning may all be done with little to no code.
 
 ### Challenges of WordPress
 
-- Additional Features Require Lots of Plugins
+-   Additional Features Require Lots of Plugins
 
 When you buy a design template, you usually get entirely created website pages that need to be customized with your branded content.
 
@@ -198,7 +198,7 @@ If you want to embed your Instagram feed on your website, for instance, you'll n
 
 The plugins would have to be installed, managed, and updated by your agency. This is tough to handle and seldom happens with agencies.
 
-- The Updates Keep Pouring In
+-   The Updates Keep Pouring In
 
 Remember that things are continuously evolving in the digital era to enrich and enhance the user experience.
 
@@ -206,7 +206,7 @@ Your firm would have to keep checking your website's dashboard to determine whet
 
 Remember that with all technological improvements, there will be bugs and mistakes. Your site may encounter faulty links or even crash.
 
-- Slow-Loading Pages
+-   Slow-Loading Pages
 
 WordPress is still a sluggish platform due to all of the additional plugins, oversaturated databases, and codebases.
 
@@ -214,7 +214,7 @@ However, those aren't the only factors that might cause your website to load slo
 
 Your website's page speed is critical. You want a quick-loading website so that your visitors don't get frustrated and leave, which might cost you sales because they won't see what you have to offer.
 
-- Poor SEO Ranking
+-   Poor SEO Ranking
 
 WordPress only includes a few SEO tools in its packages, which are insufficient to help you rank in Google.
 
@@ -222,7 +222,7 @@ If you want to get the most out of your SEO efforts, you'll need more powerful t
 
 Furthermore, you will want a third-party targeting thousands of relevant keywords rather than just a few, which can be a hassle.
 
-- Your Website Might Go Down Without Notice
+-   Your Website Might Go Down Without Notice
 
 Websites might go down for a variety of reasons and without warning.
 
@@ -230,7 +230,7 @@ You might not know your site is unavailable if you aren't paying closely. It mig
 
 Then you'll have to pay a company to assist you in getting it back up, which is another expenditure you don't want to incur.
 
-- Flimsy Security
+-   Flimsy Security
 
 Your website, like anything else on the internet, is vulnerable to being hacked and spammed.
 
@@ -314,12 +314,12 @@ Websites are no longer considered independent platforms. Between social media, a
 
 Multi-channel publishing is a time-saving strategy used by large internet enterprises. Here are a few instances of what you might be able to do:
 
-- Add items to your website as well as online merchants such as Amazon and eBay.
-- Provide material to your partners' websites.
-- Send a message to your email subscribers informing them of a new post.
-- When you publish recent blog articles or pages, you may immediately share them on social networking.
-- Save and organize material in preparation for actual printing.
-- Use the Internet of Things to your advantage (smart devices).
+-   Add items to your website as well as online merchants such as Amazon and eBay.
+-   Provide material to your partners' websites.
+-   Send a message to your email subscribers informing them of a new post.
+-   When you publish recent blog articles or pages, you may immediately share them on social networking.
+-   Save and organize material in preparation for actual printing.
+-   Use the Internet of Things to your advantage (smart devices).
 
 The REST API, which links your WordPress back end to other apps, allows you to do all of this. An API is just an interface, similar to a controller that you can configure to govern how your server handles data. Now that WordPress is decoupled from its front end, you may use this controller to govern what platforms your site links to and what it does with your data.
 
@@ -341,8 +341,8 @@ Please remember that because Gutenberg is developed using React, you can integra
 
 Let's take a look at one specific headless option: You may leverage an existing eCommerce platform, such as Shopify, to create a complete flow that handles the whole checkout process, or you can use Shopify's headless option.
 
-- Because your design will rely mainly on Shopify's templates and out-of-the-box capabilities in the first scenario, modifying the checkout procedure will be doable but restricted.
-- In the latter instance, you may design your checkout flow as you want, and Shopify will only handle the money transaction.
+-   Because your design will rely mainly on Shopify's templates and out-of-the-box capabilities in the first scenario, modifying the checkout procedure will be doable but restricted.
+-   In the latter instance, you may design your checkout flow as you want, and Shopify will only handle the money transaction.
 
 The main difference is that with the headless option, you'll have to create every view your user sees. If it seems like a pain with no benefit, a headless solution is probably not for you.
 
@@ -360,51 +360,51 @@ There are many popular headless CMS's in the market right now, like Magnolia, Ag
 
 Sanity Studio is a headless real-time CMS built with JavaScript and React that you may modify.
 
-- It has efficient editing and a quick UI for complex fields.
+-   It has efficient editing and a quick UI for complex fields.
 
-- It works on tiny screens and is responsive.
+-   It works on tiny screens and is responsive.
 
-- Customizable input components and plug-in architecture
+-   Customizable input components and plug-in architecture
 
-- Personalize your look with your images.
+-   Personalize your look with your images.
 
-- JavaScript could be used to provide field validations, arrange documents, and establish starting values in an advanced block editor for structured content.
+-   JavaScript could be used to provide field validations, arrange documents, and establish starting values in an advanced block editor for structured content.
 
 #### Reasons to opt for Sanity.
 
-- _Easy to get started with_
+-   _Easy to get started with_
 
 Sanity.io is easy to get started by simply installing the CLI from npm and creating a new project. Sanity's starter projects, on the other hand, will help you get started in seconds with a pre-configured Sanity Studio and a functioning front-end with a variety of frameworks to pick from, all deployed to Netlify and with source code on GitHub.
 
-- _Better APIs_
+-   _Better APIs_
 
 The main advantage of a headless CMS is its API-first design, which allows you to access content via APIs.
 
 For reading, writing, querying, and patching documents, Sanity provides two robust APIs:
 
-- The live, uncached API in api.sanity.io.
+-   The live, uncached API in api.sanity.io.
 
-- The CDN-distributed, cached API in apicdn.sanity.io.
+-   The CDN-distributed, cached API in apicdn.sanity.io.
 
 To query your material, Sanity now supports the use of GROQ and GraphQL APIs. The platform's Data Store is hosted in the cloud and may be reached through the Sanity API, either through Sanity's client libraries or directly over the HTTP API.
 
-- _Better editing tools_
+-   _Better editing tools_
 
 Sanity's editor, often known as the Sanity Studio, is an open-source program that lets you build content models using basic JavaScript. Sanity Studio is a single-page React.js app that you may edit or expand with your React.js components. Its sophisticated capabilities allow you to change your editors' processes.
 
 Sanity Studio includes fundamental features such as Block Content, Structure Builder, and a Dashboard plugin in addition to customization.
 
-- _Headless content models that are easy to use_
+-   _Headless content models that are easy to use_
 
 Although fundamental JavaScript expertise is required to get started with Sanity, it is not difficult to locate someone knowledgeable with the popular online programming language. Content writers, graphic and interaction designers, and technology specialists may cooperate on the information architecture using Sanity. Front-end developers can save time by using APIs to access content fields immediately.
 
-- _Mature Tech Stack_
+-   _Mature Tech Stack_
 
 Because Sanity is a cloud-hosted CMS with a real-time content studio, all data is instantaneously synchronized. PostgreSQL, ElasticSearch, and JavaScript, and lightning-fast React form the foundation of the system. It saves logical object structures rather than HTML, XML, or rich text in the database. For example, you don't have to read HTML if you want Alexa to read from your text fields. Sanity comes with well-maintained JavaScript, HTML, and PHP clients, allowing you to get up and running quickly with your preferred front-end architecture.
 
 #### Some Cool Projects Powered by Sanity
 
-- _Agnes_
+-   _Agnes_
 
 A sophisticated rental real estate site developed with Gatsby, Sanity, and Shopify features a headless Shopify shop that gets listing data through API.
 
@@ -414,7 +414,7 @@ The Sanity Studio is designed to handle many building and development sites whil
 
 Homepage editing environment
 
-- _Jamstack Explorers_
+-   _Jamstack Explorers_
 
 Jamstack Explorers is a free learning tool built by the Netlify team to help you navigate the incredible Jamstack ecosystem.
 
@@ -424,7 +424,7 @@ The project features a user login feature that allows users to keep track of the
 
 ![Youtube Play](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCI+PGxpbmVhckdyYWRpZW50IGlkPSJQZ0JfVUhhMjloMFRwRlZfbW9KSTlhIiB4MT0iOS44MTYiIHgyPSI0MS4yNDYiIHkxPSI5Ljg3MSIgeTI9IjQxLjMwMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y0NGY1YSIvPjxzdG9wIG9mZnNldD0iLjQ0MyIgc3RvcC1jb2xvcj0iI2VlM2Q0YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U1MjAzMCIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNQZ0JfVUhhMjloMFRwRlZfbW9KSTlhKSIgZD0iTTQ1LjAxMiwzNC41NmMtMC40MzksMi4yNC0yLjMwNCwzLjk0Ny00LjYwOCw0LjI2N0MzNi43ODMsMzkuMzYsMzAuNzQ4LDQwLDIzLjk0NSw0MAljLTYuNjkzLDAtMTIuNzI4LTAuNjQtMTYuNDU5LTEuMTczYy0yLjMwNC0wLjMyLTQuMTctMi4wMjctNC42MDgtNC4yNjdDMi40MzksMzIuMTA3LDIsMjguNDgsMiwyNHMwLjQzOS04LjEwNywwLjg3OC0xMC41NgljMC40MzktMi4yNCwyLjMwNC0zLjk0Nyw0LjYwOC00LjI2N0MxMS4xMDcsOC42NCwxNy4xNDIsOCwyMy45NDUsOHMxMi43MjgsMC42NCwxNi40NTksMS4xNzNjMi4zMDQsMC4zMiw0LjE3LDIuMDI3LDQuNjA4LDQuMjY3CUM0NS40NTEsMTUuODkzLDQ2LDE5LjUyLDQ2LDI0QzQ1Ljg5LDI4LjQ4LDQ1LjQ1MSwzMi4xMDcsNDUuMDEyLDM0LjU2eiIvPjxwYXRoIGQ9Ik0zMi4zNTIsMjIuNDRsLTExLjQzNi03LjYyNGMtMC41NzctMC4zODUtMS4zMTQtMC40MjEtMS45MjUtMC4wOTNDMTguMzgsMTUuMDUsMTgsMTUuNjgzLDE4LDE2LjM3Ngl2MTUuMjQ4YzAsMC42OTMsMC4zOCwxLjMyNywwLjk5MSwxLjY1NGMwLjI3OCwwLjE0OSwwLjU4MSwwLjIyMiwwLjg4NCwwLjIyMmMwLjM2NCwwLDAuNzI2LTAuMTA2LDEuMDQtMC4zMTVsMTEuNDM2LTcuNjI0CWMwLjUyMy0wLjM0OSwwLjgzNS0wLjkzMiwwLjgzNS0xLjU2QzMzLjE4NywyMy4zNzIsMzIuODc0LDIyLjc4OSwzMi4zNTIsMjIuNDR6IiBvcGFjaXR5PSIuMDUiLz48cGF0aCBkPSJNMjAuNjgxLDE1LjIzN2wxMC43OSw3LjE5NGMwLjY4OSwwLjQ5NSwxLjE1MywwLjkzOCwxLjE1MywxLjUxM2MwLDAuNTc1LTAuMjI0LDAuOTc2LTAuNzE1LDEuMzM0CWMtMC4zNzEsMC4yNy0xMS4wNDUsNy4zNjQtMTEuMDQ1LDcuMzY0Yy0wLjkwMSwwLjYwNC0yLjM2NCwwLjQ3Ni0yLjM2NC0xLjQ5OVYxNi43NDRDMTguNSwxNC43MzksMjAuMDg0LDE0LjgzOSwyMC42ODEsMTUuMjM3eiIgb3BhY2l0eT0iLjA3Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5LDMxLjU2OFYxNi40MzNjMC0wLjc0MywwLjgyOC0xLjE4NywxLjQ0Ny0wLjc3NGwxMS4zNTIsNy41NjhjMC41NTMsMC4zNjgsMC41NTMsMS4xOCwwLDEuNTQ5CWwtMTEuMzUyLDcuNTY4QzE5LjgyOCwzMi43NTUsMTksMzIuMzEyLDE5LDMxLjU2OHoiLz48L3N2Zz4=)![video](https://img.youtube.com/vi/PPtmowJoe3s/sddefault.jpg)
 
-- _Figma_
+-   _Figma_
 
 Figma is a web-based graphics editing and UI design application. It may be used for various graphic design tasks, including wireframing websites, building mobile app interfaces, prototyping designs, and creating social media posts.
 
@@ -436,7 +436,7 @@ Arcade, an online sandbox where you can mix and match all of the library's eleme
 
 Sanity also offers a fully-featured Figma library comprising all of the components, icons, font styles, and effects included in the project if you want to prototype your Sanity UI experiences with design tools.
 
-- _Middlesbrough Town Centre App_
+-   _Middlesbrough Town Centre App_
 
 The app was built using Flutter, Sanity, and Figma to help a small town in the UK called Middlesbrough.
 

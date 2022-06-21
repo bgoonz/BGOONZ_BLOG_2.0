@@ -25,6 +25,7 @@ Backward compatibility can be ensured using attribute `nomodule` on the [`<scrip
 ## Syntax
 
 ```js
+//
     import defaultExport from "module-name";
     import * as name from "module-name";
     import { export1 } from "module-name";

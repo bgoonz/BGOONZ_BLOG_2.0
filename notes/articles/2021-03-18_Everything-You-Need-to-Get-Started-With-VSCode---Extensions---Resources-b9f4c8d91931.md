@@ -141,9 +141,9 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 #### More
 
-- <span id="4dd9">
-<a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft's tutorial on using VSCode for remote C/C++ development</a>
-</span>
+-   <span id="4dd9">
+    <a href="https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/" class="markup--anchor markup--li-anchor">Microsoft's tutorial on using VSCode for remote C/C++ development</a>
+    </span>
 
 ### C\#, ASP .NET and .NET Core
 
@@ -187,48 +187,48 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 <img src="https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif" class="graf-image" />
 </figure>### Groovy
 
-- <span id="e453">
-<a href="https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint" class="markup--anchor markup--li-anchor">VsCode Groovy Lint</a> — Groovy lint, format, prettify and auto-fix</span>
+-   <span id="e453">
+    <a href="https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint" class="markup--anchor markup--li-anchor">VsCode Groovy Lint</a> — Groovy lint, format, prettify and auto-fix</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*jmi5_-erJj7WOMq7.gif" class="graf-image" />
 </figure>### Haskell
 
-- <span id="66eb">
-<a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter" class="markup--anchor markup--li-anchor">haskell-linter</a>
-</span>
-- <span id="fd71">
-<a href="https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server" class="markup--anchor markup--li-anchor">Haskell IDE engine</a> — provides <a href="https://github.com/haskell/haskell-ide-engine" class="markup--anchor markup--li-anchor">language server</a> for stack and cabal projects.</span>
-- <span id="cbfe">
-<a href="https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell" class="markup--anchor markup--li-anchor">autocomplate-shell</a>
-</span>
+-   <span id="66eb">
+    <a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter" class="markup--anchor markup--li-anchor">haskell-linter</a>
+    </span>
+-   <span id="fd71">
+    <a href="https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server" class="markup--anchor markup--li-anchor">Haskell IDE engine</a> — provides <a href="https://github.com/haskell/haskell-ide-engine" class="markup--anchor markup--li-anchor">language server</a> for stack and cabal projects.</span>
+-   <span id="cbfe">
+    <a href="https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell" class="markup--anchor markup--li-anchor">autocomplate-shell</a>
+    </span>
 
 ---
 
 ### Java
 
-- <span id="cf71">
-<a href="https://marketplace.visualstudio.com/items?itemName=redhat.java" class="markup--anchor markup--li-anchor">Language Support for Java(TM) by Red Hat</a>
-</span>
-- <span id="d93f">
-<a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug" class="markup--anchor markup--li-anchor">Debugger for Java</a>
-</span>
-- <span id="3c8c">
-<a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven" class="markup--anchor markup--li-anchor">Maven for Java</a>
-</span>
-- <span id="2d5c">
-<a href="https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok" class="markup--anchor markup--li-anchor">Lombok</a>
-</span>
+-   <span id="cf71">
+    <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java" class="markup--anchor markup--li-anchor">Language Support for Java(TM) by Red Hat</a>
+    </span>
+-   <span id="d93f">
+    <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug" class="markup--anchor markup--li-anchor">Debugger for Java</a>
+    </span>
+-   <span id="3c8c">
+    <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven" class="markup--anchor markup--li-anchor">Maven for Java</a>
+    </span>
+-   <span id="2d5c">
+    <a href="https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok" class="markup--anchor markup--li-anchor">Lombok</a>
+    </span>
 
 ---
 
 ### JavaScript
 
-- <span id="8516">
-<a href="https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel" class="markup--anchor markup--li-anchor">Babel JavaScript</a>
-</span>
-- <span id="aa22">
-<a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode" class="markup--anchor markup--li-anchor">Visual Studio IntelliCode</a> — This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.</span>
+-   <span id="8516">
+    <a href="https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel" class="markup--anchor markup--li-anchor">Babel JavaScript</a>
+    </span>
+-   <span id="aa22">
+    <a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode" class="markup--anchor markup--li-anchor">Visual Studio IntelliCode</a> — This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*i7CZbSbHqsWqEM4w.gif" class="graf-image" />
@@ -264,17 +264,17 @@ Framework-specific:
 
 ### Facebook Flow
 
-- <span id="155f">
-<a href="https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode" class="markup--anchor markup--li-anchor">Flow Language Support</a> — provides all the functionality you would expect — linting, intellisense, type tooltips and click-to-definition</span>
-- <span id="ac2f">
-<a href="https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide" class="markup--anchor markup--li-anchor">vscode-flow-ide</a> — an alternative Flowtype extension for Visual Studio Code</span>
+-   <span id="155f">
+    <a href="https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode" class="markup--anchor markup--li-anchor">Flow Language Support</a> — provides all the functionality you would expect — linting, intellisense, type tooltips and click-to-definition</span>
+-   <span id="ac2f">
+    <a href="https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide" class="markup--anchor markup--li-anchor">vscode-flow-ide</a> — an alternative Flowtype extension for Visual Studio Code</span>
 
 ### TypeScript
 
-- <span id="8883">
-<a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint" class="markup--anchor markup--li-anchor">tslint</a> — TSLint for Visual Studio Code</span>
-- <span id="9665">
-<a href="https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero" class="markup--anchor markup--li-anchor">TypeScript Hero</a> — Code outline view of your open TS, sort and organize your imports.</span>
+-   <span id="8883">
+    <a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint" class="markup--anchor markup--li-anchor">tslint</a> — TSLint for Visual Studio Code</span>
+-   <span id="9665">
+    <a href="https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero" class="markup--anchor markup--li-anchor">TypeScript Hero</a> — Code outline view of your open TS, sort and organize your imports.</span>
 
 ---
 
@@ -282,9 +282,7 @@ Framework-specific:
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" class="markup--anchor markup--h3-anchor">markdownlint</a>
 
-> _Linter for_ <a href="https://github.com/DavidAnson/markdownlint" class="markup--anchor markup--blockquote-anchor">
-<em>markdownlint</em>
-</a>_._
+> _Linter for_ <a href="https://github.com/DavidAnson/markdownlint" class="markup--anchor markup--blockquote-anchor"> > <em>markdownlint</em> > </a>_._
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" class="markup--anchor markup--h3-anchor">Markdown All in One</a>
 
@@ -308,19 +306,19 @@ Framework-specific:
 
 These extensions provide slightly different sets of features. While the first one offers better autocompletion support, the second one seems to have more features overall.
 
-- <span id="94df">
-<a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client" class="markup--anchor markup--li-anchor">PHP Intelephense</a>
-</span>
-- <span id="b2b4">
-<a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense" class="markup--anchor markup--li-anchor">PHP IntelliSense</a>
-</span>
+-   <span id="94df">
+    <a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client" class="markup--anchor markup--li-anchor">PHP Intelephense</a>
+    </span>
+-   <span id="b2b4">
+    <a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense" class="markup--anchor markup--li-anchor">PHP IntelliSense</a>
+    </span>
 
 ### Laravel
 
-- <span id="687e">
-<a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets" class="markup--anchor markup--li-anchor">Laravel 5 Snippets</a> — Laravel 5 snippets for Visual Studio Code</span>
-- <span id="42ab">
-<a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade" class="markup--anchor markup--li-anchor">Laravel Blade Snippets</a> — Laravel blade snippets and syntax highlight support</span>
+-   <span id="687e">
+    <a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets" class="markup--anchor markup--li-anchor">Laravel 5 Snippets</a> — Laravel 5 snippets for Visual Studio Code</span>
+-   <span id="42ab">
+    <a href="https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade" class="markup--anchor markup--li-anchor">Laravel Blade Snippets</a> — Laravel blade snippets and syntax highlight support</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif" class="graf-image" />
@@ -345,8 +343,8 @@ These extensions provide slightly different sets of features. While the first on
 
 ### Other extensions
 
-- <span id="8443">
-<a href="https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php" class="markup--anchor markup--li-anchor">Format HTML in PHP</a> — Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.</span>
+-   <span id="8443">
+    <a href="https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php" class="markup--anchor markup--li-anchor">Format HTML in PHP</a> — Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif" class="graf-image" />
@@ -369,13 +367,13 @@ These extensions provide slightly different sets of features. While the first on
 
 ### Python
 
-- <span id="0136">
-<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" class="markup--anchor markup--li-anchor">Python</a> — Linting, Debugging (multi threaded, web apps), Intellisense, auto-completion, code formatting, snippets, unit testing, and more.</span>
+-   <span id="0136">
+    <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" class="markup--anchor markup--li-anchor">Python</a> — Linting, Debugging (multi threaded, web apps), Intellisense, auto-completion, code formatting, snippets, unit testing, and more.</span>
 
 ### TensorFlow
 
-- <span id="402b">
-<a href="https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets" class="markup--anchor markup--li-anchor">TensorFlow Snippets</a> — This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.</span>
+-   <span id="402b">
+    <a href="https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets" class="markup--anchor markup--li-anchor">TensorFlow Snippets</a> — This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*stmhgQ3sGvJBTvf2.gif" class="graf-image" />
@@ -385,8 +383,8 @@ These extensions provide slightly different sets of features. While the first on
 
 ### Rust
 
-- <span id="cec4">
-<a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust" class="markup--anchor markup--li-anchor">Rust</a> — Linting, auto-completion, code formatting, snippets and more</span>
+-   <span id="cec4">
+    <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust" class="markup--anchor markup--li-anchor">Rust</a> — Linting, auto-completion, code formatting, snippets and more</span>
 
 ---
 
@@ -494,9 +492,7 @@ These extensions provide slightly different sets of features. While the first on
 <img src="https://cdn-images-1.medium.com/max/800/0*x8F97F4AdSvvtehT.png" class="graf-image" />
 </figure>### <a href="https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github" class="markup--anchor markup--h3-anchor">GitHub</a>
 
-> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ <a href="https://github.com/KnisterPeter/vscode-github/blob/master/README.md" class="markup--anchor markup--blockquote-anchor">
-<em>README.md</em>
-</a> _on how to get started with the setup for this extension._
+> _Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the_ <a href="https://github.com/KnisterPeter/vscode-github/blob/master/README.md" class="markup--anchor markup--blockquote-anchor"> > <em>README.md</em> > </a> _on how to get started with the setup for this extension._
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor" class="markup--anchor markup--h3-anchor">GitHub Pull Request Monitor</a>
 
@@ -558,9 +554,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### <a href="https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode" class="markup--anchor markup--h3-anchor">ngrok for VSCode</a>
 
-> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ <a href="https://ngrok.com/" class="markup--anchor markup--blockquote-anchor">
-<em>ngrok</em>
-</a> _from the VSCode command palette_
+> _ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control_ <a href="https://ngrok.com/" class="markup--anchor markup--blockquote-anchor"> > <em>ngrok</em> > </a> _from the VSCode command palette_
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif" class="graf-image" />
@@ -954,4 +948,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931" class="p-canonical">Canonical link</a>
 
- on September 23, 2021.
+on September 23, 2021.
