@@ -4,8 +4,8 @@ template: post
 subtitle: It has simple, clean syntax, object encapsulation, good library support
 excerpt: 'Article on basic web development setup… '
 date: 2022-05-11T00:02:02.952Z
-image: https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png
-thumb_image: https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/python-language.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/python-language.jpg?raw=true
 image_position: right
 author: src/data/authors/im.yaml
 categories:
@@ -37,41 +37,63 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 <strong>A list of all of my articles to link to future posts</strong>
 <br/>
 
-<em>You should probably skip this one… seriously it's just for internal use!</em><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>You should probably skip this one… seriously it's just for internal use!</em>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d"><strong>PYTHON</strong>
+<a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d">
+<strong>PYTHON</strong>
 <br/>
 
-<em>Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a><a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Keywords: \*\*\*and del for is raise assert elif from lambda return break else global not try class except if or while…</em>golden-lobe-519.notion.site</a>
+<a href="https://golden-lobe-519.notion.site/PYTHON-cb857bd3fa4b4940928842a94dce856d" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*per3wJrNyChrgJtUBySo1Q.png" class="graf-image" />
+</figure>
 
-<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe"><strong>Basic Web Development Environment Setup</strong>
+<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe">
+<strong>Basic Web Development Environment Setup</strong>
 <br/>
 
-<em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Windows Subsystem for Linux (WSL) and Ubuntu</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### Related Articles:
 
-<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f"><strong>Python Problems &amp; Solutions For Beginners</strong>
+<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f">
+<strong>Python Problems &amp; Solutions For Beginners</strong>
 <br/>
 
-<em>Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Introduction to python taught through example problems. Solutions are included in embedded repl.it at the bottom of…</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/beginner-python-problems-solutions-dd631e9c3a9f" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12"><strong>Notes I Wish I Had When I Started Learning Python</strong>
+<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12">
+<strong>Notes I Wish I Had When I Started Learning Python</strong>
 <br/>
 
-<em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a><a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Plus resources for learning data structures and algorithms in python at the bottom of this article!</em>medium.com</a>
+<a href="https://medium.com/webdevhub/notes-i-wish-i-had-when-i-started-learning-python-16ce4244be12" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971"><strong>Getting Comfortable With Python:</strong>
+<a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971">
+<strong>Getting Comfortable With Python:</strong>
 <br/>
 
-<em>An introduction by example</em><a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>An introduction by example</em>
+<a href="https://bryanguner.medium.com/getting-comfortable-with-python-1371581a4971" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb">
+<strong>Python Study Guide for a JavaScript Programmer</strong>
 <br/>
 
-<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### The Repository & Live Site Behind This Article:
 
@@ -95,7 +117,9 @@ To determine if your Windows computer already has Python 3:
 
 `python --version`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" /></figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*59V2ZNbyJfsdGR2N20PM7w.png" class="graf-image" />
+</figure>1.  <span id="e87f">Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.</span>
 2.  <span id="7c04">If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.</span>
 
 #### i.e.
@@ -125,17 +149,28 @@ To determine if your Windows computer already has Python 3:
 ### Create and execute a program
 
 1.  <span id="d7b7">Open up a terminal/cmd</span>
-2.  <span id="a7a7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a></span>
+2.  <span id="a7a7">Create the program: nano/cat &gt; <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a>
+    </span>
 3.  <span id="aace">Write the program and save it</span>
-4.  <span id="b439">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a></span>
+4.  <span id="b439">python <a href="http://nameprogram.py/" class="markup--anchor markup--li-anchor">nameProgram.py</a>
+    </span>
 
 ### Basic Datatypes
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*LDLNGnpgmyeWojLU_mKKJw.png" class="graf-image" /></figure>### Keywords
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*LDLNGnpgmyeWojLU_mKKJw.png" class="graf-image" />
+</figure>### Keywords
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*rMzTksSg1jUZm2ECvvzO_g.png" class="graf-image" /></figure>### Operators
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*rMzTksSg1jUZm2ECvvzO_g.png" class="graf-image" />
+</figure>### Operators
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*3ud99ZpJ20AhhApKhjvlqQ.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*_Chk6-fWKs-i52q2Zx0ZTw.png" class="graf-image" /></figure>### Basic Data Structures
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*3ud99ZpJ20AhhApKhjvlqQ.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*_Chk6-fWKs-i52q2Zx0ZTw.png" class="graf-image" />
+</figure>### Basic Data Structures
 
 ### List
 
@@ -340,7 +375,7 @@ Python has two primitive loop commands:
 -   <span id="f32d">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span>
 -   <span id="b8d4">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span>
 -   <span id="cca5">The else keyword in a for loop specifies a block of code to be executed when the loop is finished.
-     A nested loop is a loop inside a loop.</span>
+    A nested loop is a loop inside a loop.</span>
 -   <span id="acbb">The "inner loop" will be executed one time for each iteration of the "outer loop":</span>
 
 <!-- -->
@@ -435,10 +470,12 @@ There are many operators in python:
 -   <span id="a1b3">`-`</span>
 -   <span id="f09c">`/`</span>
 -   <span id="cd1e">`*`
-     These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
-     Now, we can look at a few more complicated ones:</span>
+    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.
+    Now, we can look at a few more complicated ones:</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" /></figure>*simpleops.py*
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="graf-image" />
+</figure>*simpleops.py*
 
     x = 4
     a = x + 1
@@ -499,10 +536,13 @@ Here is a list of functions/methods we will go over:
 -   <span id="a06d">`.replace()`</span>
 -   <span id="57b6">`.split()`</span>
 
-<a href="https://trinket.io/python3/2b693977e7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://trinket.io/python3/2b693977e7"><strong>Put Python Anywhere on the Web</strong>
+<a href="https://trinket.io/python3/2b693977e7" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://trinket.io/python3/2b693977e7">
+<strong>Put Python Anywhere on the Web</strong>
 <br/>
 
-<em>Python in the browser. No installation required.</em>trinket.io</a><a href="https://trinket.io/python3/2b693977e7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<em>Python in the browser. No installation required.</em>trinket.io</a>
+<a href="https://trinket.io/python3/2b693977e7" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 ### New: Input()
 

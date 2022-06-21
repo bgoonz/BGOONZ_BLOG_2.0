@@ -12,19 +12,13 @@ Part 1:
 <img src="https://cdn-images-1.medium.com/max/800/0*aApX3S2n_lUCFNYk.jpg" class="graf-image" />
 </figure>*This list of resources is specifically targeted at Web Developers and Data Scientists…. so do with it what you will…*
 
-> _This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--blockquote-anchor">
-> <em>sindresorhus</em>
-> </a>
+> _This list borrows heavily from multiple lists created by :_ <a href="https://github.com/sindresorhus" class="markup--anchor markup--blockquote-anchor"> > <em>sindresorhus</em> > </a>
 
 <span class="graf-dropCap">M</span>achine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
 
-> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor">
-> <em>Boris Katz</em>
-> </a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
+> _The goal of AI is to create computer models that exhibit "intelligent behaviors" like humans, according to_ <a href="https://www.csail.mit.edu/person/boris-katz" class="markup--anchor markup--blockquote-anchor"> > <em>Boris Katz</em> > </a>_, a principal research scientist and head of the InfoLab Group at CSAIL. This means machines that can recognize a visual scene, understand a text written in natural language, or perform an action in the physical world._
 
-> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor">
-> <em>Arthur Samuel</em>
-> </a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
+> _Machine learning is one way to use AI. It was defined in the 1950s by AI pioneer_ <a href="https://en.wikipedia.org/wiki/Arthur_Samuel" class="markup--anchor markup--blockquote-anchor"> > <em>Arthur Samuel</em> > </a> _as "the field of study that gives computers the ability to learn without explicitly being programmed."_
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*BaIm4BXgHJN8EJFI.png" class="graf-image" />

@@ -4,12 +4,15 @@ template: post
 subtitle: GatsbyJS File System Route API
 excerpt: Use the File System Route API when you want to create dynamic pages
 date: 2022-05-16T00:22:26.250Z
-image: file-system.jpg
-thumb_image: file-system.jpg
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/file-system.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/file-system.jpg?raw=true
 image_position: right
 author: src/data/authors/backup.yaml
 categories:
     - src/data/categories/gatsbyjs.yaml
+tags:
+    - src/data/tags/javascript.yaml
+    - src/data/tags/react.yaml
 show_author_bio: true
 related_posts:
     - src/pages/blog/gatsby-cli.md
@@ -62,7 +65,7 @@ Using `.` you signify that you want to access a field on a node of a type.
 
 `src/pages/products/{Product.name}.js` generates the following query:
 
-```graphql
+```javascript
 allProduct {
   nodes {
     id # Gatsby always queries for id
@@ -77,7 +80,7 @@ Using `__` (double underscore) you signify that you want to access a nested fiel
 
 `src/pages/products/{Product.fields__sku}.js` generates the following query:
 
-```graphql
+```javascript
 allProduct {
   nodes {
     id # Gatsby always queries for id
@@ -90,7 +93,7 @@ allProduct {
 
 You can nest as deep as necessary, e.g. `src/pages/products/{Product.fields__date__createdAt}.js` generates the following query:
 
-```graphql
+```javascript
 allProduct {
   nodes {
     id # Gatsby always queries for id
@@ -131,12 +134,12 @@ Both are also passed as variables to the component's GraphQL query so you can qu
 
 For example:
 
-```js:title=src/pages/products/{Product.name}.js
-import React from "react"
-import { graphql } from "gatsby"
+```javascript
+import React from 'react';
+import { graphql } from 'gatsby';
 
 export default function Component(props) {
-  return props.data.fields.sku + props.params.name // highlight-line
+    return props.data.fields.sku + props.params.name; // highlight-line
 }
 
 // This is the page query that connects the data to the actual component. Here you can query for any and all fields
@@ -144,14 +147,14 @@ export default function Component(props) {
 // to connect to this GraphQL query.
 
 export const query = graphql`
-  query($id: String) {
-    product(id: { eq: $id }) {
-      fields {
-        sku
-      }
+    query ($id: String) {
+        product(id: { eq: $id }) {
+            fields {
+                sku
+            }
+        }
     }
-  }
-`
+`;
 ```
 
 For the page `src/pages/{Product.name}/{Product.coupon}.js` you'd have `props.params.name` and `props.params.coupon` available inside `{Product.coupon}.js`.
@@ -182,21 +185,20 @@ Assume that a `Product` type is used in two pages:
 
 If you wanted to link to the `products/{Product.name}` and `discounts/{Product.name}` routes from your home page, you would have a component like this:
 
-```js:title=src/pages/index.js
-import React from "react"
-import { Link, graphql } from "gatsby"
+```javascript
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
 export default function HomePage(props) {
-  return (
-    <ul>
-      {props.data.allProduct.map(product => (
-        <li key={product.name}>
-          <Link to={product.productPath}>{product.name}</Link> (
-          <Link to={product.discountPath}>Discount</Link>) // highlight-line
-        </li>
-      ))}
-    </ul>
-  )
+    return (
+        <ul>
+            {props.data.allProduct.map((product) => (
+                <li key={product.name}>
+                    <Link to={product.productPath}>{product.name}</Link> (<Link to={product.discountPath}>Discount</Link>) // highlight-line
+                </li>
+            ))}
+        </ul>
+    );
 }
 
 export const query = graphql`
@@ -207,7 +209,7 @@ export const query = graphql`
       discountPath: gatsbyPath(filePath: "/discounts/{Product.name}") // highlight-line
     }
   }
-`
+`;
 ```
 
 By using [aliasing](/docs/graphql-reference/#aliasing) you can use `gatsbyPath` multiple times.
@@ -232,21 +234,21 @@ As an example, suppose that you are rendering images from [S3](/docs/how-to/prev
 -   `src/pages/image/[...].js` will generate a route like `/image/*`. `*` is accessible in your page's received properties with the key name `*`.
 -   `src/pages/image/[...awsKey].js` will generate a route like `/image/*awsKey`. `*awsKey` is accessible in your page's received properties with the key name `awsKey`.
 
-```js:title=src/pages/image/[...].js
+```javascript
 export default function ImagePage({ params }) {
-  const param = params[`*`]
+    const param = params[`*`];
 
-  // When visiting a route like `image/hello/world`,
-  // the value of `param` is `hello/world`.
+    // When visiting a route like `image/hello/world`,
+    // the value of `param` is `hello/world`.
 }
 ```
 
-```js:title=src/pages/image/[...awsKey].js
+```javascript
 export default function ImagePage({ params }) {
-  const param = params[`awsKey`]
+    const param = params[`awsKey`];
 
-  // When visiting a route like `image/hello/world`,
-  // the value of `param` is `hello/world`.
+    // When visiting a route like `image/hello/world`,
+    // the value of `param` is `hello/world`.
 }
 ```
 
@@ -256,19 +258,21 @@ Splat routes may not live in the same directory as regular client only routes.
 
 The dynamic segment of the file name (the part between the square brackets) will be filled in and provided to your components on a `props.params` object. For example:
 
-```js:title=src/pages/users/[name].js
+```js
+//
+//title=src/pages/users/[name].js
 function UserPage(props) {
   const name = props.params.name
 }
 ```
 
-```js:title=src/pages/image/[...awsKey].js
+```javascript
 function ProductsPage(props) {
-  const splat = props.params.awsKey
+    const splat = props.params.awsKey;
 }
 ```
 
-```js:title=src/pages/image/[...].js
+```javascript
 function AppPage(props) {
   const splat = props.params[‘*’]
 }
@@ -282,23 +286,23 @@ Inside a File System Route template you can export an async function called `con
 
 Inside your template:
 
-```jsx:title=src/pages/{Product.name}.jsx
-import { graphql } from "gatsby"
+```javascript
+import { graphql } from 'gatsby';
 
 // The rest of your page, including imports, page component & page query etc.
 
 export async function config() {
-  const { data } = graphql`
+    const { data } = graphql`
     {
       # Your GraphQL query
     }
-  `
+  `;
 
-  return ({ params }) => {
-    return {
-      defer: params.name === data.someValue.name,
-    }
-  }
+    return ({ params }) => {
+        return {
+            defer: params.name === data.someValue.name
+        };
+    };
 }
 ```
 
@@ -338,32 +342,32 @@ You want to display product information which is both accessible by name and SKU
 
 Create a view component at `src/view/product-view.js` that takes in a `product` prop. Use that component in both collection routes, e.g.:
 
-```js:title=src/pages/products/{Product.name}.js
-import React from "react"
-import { graphql } from "gatsby"
-import ProductView from "../../views/product-view"
+```javascript
+import React from 'react';
+import { graphql } from 'gatsby';
+import ProductView from '../../views/product-view';
 
 function Product(props) {
-  const { product } = props.data
-  return <ProductView product={product} />
+    const { product } = props.data;
+    return <ProductView product={product} />;
 }
 
-export default Product
+export default Product;
 
 export const query = graphql`
-  query($id: String!) {
-    product(id: { eq: $id }) {
-      name
-      description
-      appearance
-      meta {
-        createdAt
-        id
-        sku
-      }
+    query ($id: String!) {
+        product(id: { eq: $id }) {
+            name
+            description
+            appearance
+            meta {
+                createdAt
+                id
+                sku
+            }
+        }
     }
-  }
-`
+`;
 ```
 
 You can copy the same code to the `src/pages/products/{Product.meta__sku}.js` file.

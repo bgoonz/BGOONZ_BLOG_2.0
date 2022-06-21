@@ -1,8 +1,0 @@
-{
-  "schema": [
-    "//workspace/BGOONZ_BLOG_2.0/functions/netlifyGraph/netlifyGraphSchema.graphql"
-  ],
-  "schemaPath": [
-    "//workspace/BGOONZ_BLOG_2.0/functions/netlifyGraph/netlifyGraphSchema.graphql"
-  ]
-}

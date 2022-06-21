@@ -85,7 +85,11 @@ There are generally two types of tags in HTML:
 
 > i.e.
 
-    <hr>
+<br>
+<br>
+<br>
+<br>
+
     <p> The tag above me is a horizontal line that doesn't need a closing tag </p>
 
 HTML tags have two main types: **block-level** and **inline tags**.

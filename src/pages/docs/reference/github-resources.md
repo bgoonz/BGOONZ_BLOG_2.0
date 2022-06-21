@@ -10,82 +10,81 @@ seo:
 template: docs
 ---
 
-
 # Github Resources:
 
-- [Github Resources:](#github-resources)
-  - [GitHub](#github)
-    - [Ignore Whitespace](#ignore-whitespace)
-    - [Adjust Tab Space](#adjust-tab-space)
-    - [Commit History by Author](#commit-history-by-author)
-    - [Cloning a Repository](#cloning-a-repository)
-    - [Branch](#branch)
-      - [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
-      - [Comparing Branches](#comparing-branches)
-      - [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
-    - [Gists](#gists)
-    - [Git.io](#gitio)
-    - [Keyboard Shortcuts](#keyboard-shortcuts)
-    - [Line Highlighting in Repositories](#line-highlighting-in-repositories)
-    - [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
-    - [Cross-Link Issues](#cross-link-issues)
-    - [Locking Conversations](#locking-conversations)
-    - [CI Status on Pull Requests](#ci-status-on-pull-requests)
-    - [Filters](#filters)
-    - [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
-    - [Emojis](#emojis)
-    - [Images/GIFs](#imagesgifs)
-      - [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
-    - [Quick Quoting](#quick-quoting)
-    - [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
-    - [Quick Licensing](#quick-licensing)
-    - [Task Lists](#task-lists)
-      - [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
-    - [Relative Links](#relative-links)
-    - [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
-    - [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
-    - [Rendering Tabular Data](#rendering-tabular-data)
-    - [Rendering PDF](#rendering-pdf)
-    - [Revert a Pull Request](#revert-a-pull-request)
-    - [Diffs](#diffs)
-      - [Rendered Prose Diffs](#rendered-prose-diffs)
-      - [Diffable Maps](#diffable-maps)
-      - [Expanding Context in Diffs](#expanding-context-in-diffs)
-      - [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
-      - [Rendering and diffing images](#rendering-and-diffing-images)
-    - [Hub](#hub)
-    - [Contribution Guidelines](#contribution-guidelines)
-      - [CONTRIBUTING File](#contributing-file)
-      - [ISSUE_TEMPLATE file](#issue_template-file)
-      - [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
-    - [Octicons](#octicons)
-    - [GitHub Student Developer Pack](#github-student-developer-pack)
-    - [GitHub Resources](#github-resources-1)
-      - [GitHub Talks](#github-talks)
-    - [SSH keys](#ssh-keys)
-    - [Profile Image](#profile-image)
-    - [Repository Templates](#repository-templates)
-  - [Git](#git)
-    - [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
-    - [Previous Branch](#previous-branch)
-    - [Stripspace](#stripspace)
-    - [Checking out Pull Requests](#checking-out-pull-requests)
-    - [Empty Commits](#empty-commits)
-    - [Styled Git Status](#styled-git-status)
-    - [Styled Git Log](#styled-git-log)
-    - [Git Query](#git-query)
-    - [Git Grep](#git-grep)
-    - [Merged Branches](#merged-branches)
-    - [Fixup and Autosquash](#fixup-and-autosquash)
-    - [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
-    - [Git Configurations](#git-configurations)
-      - [Aliases](#aliases)
-      - [Auto-Correct](#auto-correct)
-      - [Color](#color)
-    - [Git Resources](#git-resources)
-      - [Git Books](#git-books)
-      - [Git Videos](#git-videos)
-      - [Git Articles](#git-articles)
+-   [Github Resources:](#github-resources)
+    -   [GitHub](#github)
+        -   [Ignore Whitespace](#ignore-whitespace)
+        -   [Adjust Tab Space](#adjust-tab-space)
+        -   [Commit History by Author](#commit-history-by-author)
+        -   [Cloning a Repository](#cloning-a-repository)
+        -   [Branch](#branch)
+            -   [Compare all Branches to Another Branch](#compare-all-branches-to-another-branch)
+            -   [Comparing Branches](#comparing-branches)
+            -   [Compare Branches across Forked Repositories](#compare-branches-across-forked-repositories)
+        -   [Gists](#gists)
+        -   [Git.io](#gitio)
+        -   [Keyboard Shortcuts](#keyboard-shortcuts)
+        -   [Line Highlighting in Repositories](#line-highlighting-in-repositories)
+        -   [Closing Issues via Commit Messages](#closing-issues-via-commit-messages)
+        -   [Cross-Link Issues](#cross-link-issues)
+        -   [Locking Conversations](#locking-conversations)
+        -   [CI Status on Pull Requests](#ci-status-on-pull-requests)
+        -   [Filters](#filters)
+        -   [Syntax Highlighting in Markdown Files](#syntax-highlighting-in-markdown-files)
+        -   [Emojis](#emojis)
+        -   [Images/GIFs](#imagesgifs)
+            -   [Embedding Images in GitHub Wiki](#embedding-images-in-github-wiki)
+        -   [Quick Quoting](#quick-quoting)
+        -   [Pasting Clipboard Image to Comments](#pasting-clipboard-image-to-comments)
+        -   [Quick Licensing](#quick-licensing)
+        -   [Task Lists](#task-lists)
+            -   [Task Lists in Markdown Documents](#task-lists-in-markdown-documents)
+        -   [Relative Links](#relative-links)
+        -   [Metadata and Plugin Support for GitHub Pages](#metadata-and-plugin-support-for-github-pages)
+        -   [Viewing YAML Metadata in your Documents](#viewing-yaml-metadata-in-your-documents)
+        -   [Rendering Tabular Data](#rendering-tabular-data)
+        -   [Rendering PDF](#rendering-pdf)
+        -   [Revert a Pull Request](#revert-a-pull-request)
+        -   [Diffs](#diffs)
+            -   [Rendered Prose Diffs](#rendered-prose-diffs)
+            -   [Diffable Maps](#diffable-maps)
+            -   [Expanding Context in Diffs](#expanding-context-in-diffs)
+            -   [Diff or Patch of Pull Request](#diff-or-patch-of-pull-request)
+            -   [Rendering and diffing images](#rendering-and-diffing-images)
+        -   [Hub](#hub)
+        -   [Contribution Guidelines](#contribution-guidelines)
+            -   [CONTRIBUTING File](#contributing-file)
+            -   [ISSUE_TEMPLATE file](#issue_template-file)
+            -   [PULL_REQUEST_TEMPLATE file](#pull_request_template-file)
+        -   [Octicons](#octicons)
+        -   [GitHub Student Developer Pack](#github-student-developer-pack)
+        -   [GitHub Resources](#github-resources-1)
+            -   [GitHub Talks](#github-talks)
+        -   [SSH keys](#ssh-keys)
+        -   [Profile Image](#profile-image)
+        -   [Repository Templates](#repository-templates)
+    -   [Git](#git)
+        -   [Remove All Deleted Files from the Working Tree](#remove-all-deleted-files-from-the-working-tree)
+        -   [Previous Branch](#previous-branch)
+        -   [Stripspace](#stripspace)
+        -   [Checking out Pull Requests](#checking-out-pull-requests)
+        -   [Empty Commits](#empty-commits)
+        -   [Styled Git Status](#styled-git-status)
+        -   [Styled Git Log](#styled-git-log)
+        -   [Git Query](#git-query)
+        -   [Git Grep](#git-grep)
+        -   [Merged Branches](#merged-branches)
+        -   [Fixup and Autosquash](#fixup-and-autosquash)
+        -   [Web Server for Browsing Local Repositories](#web-server-for-browsing-local-repositories)
+        -   [Git Configurations](#git-configurations)
+            -   [Aliases](#aliases)
+            -   [Auto-Correct](#auto-correct)
+            -   [Color](#color)
+        -   [Git Resources](#git-resources)
+            -   [Git Books](#git-books)
+            -   [Git Videos](#git-videos)
+            -   [Git Articles](#git-articles)
 
 ## GitHub
 
@@ -125,7 +124,8 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 When cloning a repository the `.git` can be left off the end.
 
-```bash
+```console
+
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
@@ -211,7 +211,8 @@ Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiim
 
 Gists can be treated as a repository so they can be cloned like any other:
 
-```bash
+```console
+
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
@@ -219,7 +220,8 @@ $ git clone https://gist.github.com/tiimgreen/10545817
 
 This means you also can modify and push updates to Gists:
 
-```bash
+```console
+
 $ git commit
 $ git push
 Username for 'https://gist.github.com':
@@ -237,7 +239,8 @@ However, Gists do not support directories. All files need to be added to the rep
 
 You can also use it via pure HTTP using Curl:
 
-```bash
+```console
+
 $ curl -i http://git.io -F "url=https://github.com/..."
 HTTP/1.1 201 Created
 Location: http://git.io/abc123
@@ -253,11 +256,11 @@ Location: https://github.com/...
 
 When on a repository page, keyboard shortcuts allow you to navigate easily.
 
-- Pressing `t` will bring up a file explorer.
-- Pressing `w` will bring up the branch selector.
-- Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the "All GitHub" option changes the field to search all of GitHub.
-- Pressing `l` will edit labels on existing Issues.
-- Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
+-   Pressing `t` will bring up a file explorer.
+-   Pressing `w` will bring up the branch selector.
+-   Pressing `s` will focus the search field for the current repository. Pressing ↓ to select the "All GitHub" option changes the field to search all of GitHub.
+-   Pressing `l` will edit labels on existing Issues.
+-   Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
 
 To see all of the shortcuts for the current page press `?`:
 
@@ -281,7 +284,8 @@ https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L
 
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the repository's default branch.
 
-```bash
+```console
+
 $ git commit -m "Fix screwup, fixes #12"
 ```
 
@@ -354,12 +358,12 @@ Pull requests with only successful statuses:
 
 For example, to syntax highlight Ruby code in your Markdown files write:
 
-    ```ruby
+ ```ruby
     require 'tabbit'
     table = Tabbit.new('Name', 'Email')
     table.add_row('Tim Green', 'tiimgreen@gmail.com')
     puts table.to_s
-    ```
+ ```
 
 This will produce:
 
@@ -493,13 +497,13 @@ In full Markdown documents **read-only** checklists can now be added using the f
   - [ ] Phobos
 ```
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth
-- - [x] Moon
-- [x] Mars
-    - [ ] Deimos
-    - [ ] Phobos
+-   [ ] Mercury
+-   [x] Venus
+-   [x] Earth
+-   -   [x] Moon
+-   [x] Mars
+    -   [ ] Deimos
+    -   [ ] Phobos
 
 [_Read more about task lists in markdown documents._](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 
@@ -634,7 +638,8 @@ GitHub can display several common image formats, including PNG, JPG, GIF, and PS
 
 This allows you to do things like:
 
-```bash
+```console
+
 $ hub clone tiimgreen/toc
 ```
 
@@ -749,13 +754,15 @@ Changing to a template repository will give a new URL endpoint which can be shar
 
 When you delete a lot of files using `/bin/rm` you can use the following command to remove them from the working tree and from the index, eliminating the need to remove each one individually:
 
-```bash
+```console
+
 $ git rm $(git ls-files -d)
 ```
 
 For example:
 
-```bash
+```console
+
 $ git status
 On branch master
 Changes not staged for commit:
@@ -777,7 +784,8 @@ Changes to be committed:
 
 To move to the previous branch in Git:
 
-```bash
+```console
+
 $ git checkout -
 # Switched to branch 'master'
 
@@ -794,13 +802,14 @@ $ git checkout -
 
 Git Stripspace:
 
-- Strips trailing whitespace
-- Collapses newlines
-- Adds newline to end of file
+-   Strips trailing whitespace
+-   Collapses newlines
+-   Adds newline to end of file
 
 A file must be passed when calling the command, e.g.:
 
-```bash
+```console
+
 $ git stripspace < README.md
 ```
 
@@ -812,13 +821,15 @@ Pull Requests are special branches on the GitHub repository which can be retriev
 
 Retrieve a specific Pull Request and store it temporarily in `FETCH_HEAD` for quickly `diff`-ing or `merge`-ing:
 
-```bash
+```console
+
 $ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 Acquire all Pull Request branches as local remote branches by refspec:
 
-```bash
+```console
+
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
@@ -839,23 +850,27 @@ Or setup the remote to fetch Pull Requests automatically by adding these corresp
 
 For Fork-based Pull Request contributions, it's useful to `checkout` a remote branch representing the Pull Request and create a local branch from it:
 
-```bash
+```console
+
 $ git checkout pr/42 pr-42
 ```
 
 Or should you work on more repositories, you can globally configure fetching pull requests in the global git config instead.
 
-```bash
+```console
+
 git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
 ```
 
 This way, you can use the following short commands in all your repositories:
 
-```bash
+```console
+
 git fetch origin
 ```
 
-```bash
+```console
+
 git checkout pr/42
 ```
 
@@ -865,22 +880,24 @@ git checkout pr/42
 
 Commits can be pushed with no code changes by adding `--allow-empty`:
 
-```bash
+```console
+
 $ git commit -m "Big-ass commit" --allow-empty
 ```
 
 Some use-cases for this (that make sense), include:
 
-- Annotating the start of a new bulk of work or a new feature.
-- Documenting when you make changes to the project that aren't code related.
-- Communicating with people using your repository.
-- The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
+-   Annotating the start of a new bulk of work or a new feature.
+-   Documenting when you make changes to the project that aren't code related.
+-   Communicating with people using your repository.
+-   The first commit of a repository: `git commit -m "Initial commit" --allow-empty`.
 
 ### Styled Git Status
 
 Running:
 
-```bash
+```console
+
 $ git status
 ```
 
@@ -890,7 +907,8 @@ produces:
 
 By adding `-sb`:
 
-```bash
+```console
+
 $ git status -sb
 ```
 
@@ -904,7 +922,8 @@ this is produced:
 
 Running:
 
-```bash
+```console
+
 $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
@@ -922,13 +941,15 @@ _This can be aliased using the instructions found [here](https://github.com/tiim
 
 A Git query allows you to search all your previous commit messages and find the most recent one matching the query.
 
-```bash
+```console
+
 $ git show :/query
 ```
 
 where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
-```bash
+```console
+
 $ git show :/typo
 ```
 
@@ -942,7 +963,8 @@ Git Grep will return a list of lines matching a pattern.
 
 Running:
 
-```bash
+```console
+
 $ git grep aliases
 ```
 
@@ -954,12 +976,13 @@ _Press `q` to quit._
 
 You can also use multiple flags for more advanced search. For example:
 
-- `-e` The next parameter is the pattern (e.g., regex)
-- `--and`, `--or` and `--not` Combine multiple patterns.
+-   `-e` The next parameter is the pattern (e.g., regex)
+-   `--and`, `--or` and `--not` Combine multiple patterns.
 
 Use it like this:
 
-```bash
+```console
+
  $ git grep -e pattern --and -e anotherpattern
 ```
 
@@ -969,7 +992,8 @@ Use it like this:
 
 Running:
 
-```bash
+```console
+
 $ git branch --merged
 ```
 
@@ -977,7 +1001,8 @@ will give you a list of all branches that have been merged into your current bra
 
 Conversely:
 
-```bash
+```console
+
 $ git branch --no-merged
 ```
 
@@ -989,7 +1014,8 @@ will give you a list of branches that have not been merged into your current bra
 
 If there is something wrong with a previous commit (can be one or more from HEAD), for example `abcde`, run the following command after you've amended the problem:
 
-```bash
+```console
+
 $ git commit --fixup=abcde
 $ git rebase abcde^ --autosquash -i
 ```
@@ -1001,7 +1027,8 @@ $ git rebase abcde^ --autosquash -i
 
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
 
-```bash
+```console
+
 $ git instaweb
 ```
 
@@ -1034,19 +1061,22 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 
 ...or type in the command-line:
 
-```bash
+```console
+
 $ git config --global alias.new_alias git_function
 ```
 
 For example:
 
-```bash
+```console
+
 $ git config --global alias.cm commit
 ```
 
 For an alias with multiple functions use quotes:
 
-```bash
+```console
+
 $ git config --global alias.ac 'add -A . && commit'
 ```
 
@@ -1072,7 +1102,8 @@ Git gives suggestions for misspelled commands and if auto-correct is enabled the
 
 For example, if you type `git comit` you will get this:
 
-```bash
+```console
+
 $ git comit -m "Message"
 # git: 'comit' is not a git command. See 'git --help'.
 
@@ -1082,13 +1113,15 @@ $ git comit -m "Message"
 
 Auto-correct can be enabled like this (with a 1.5 second delay):
 
-```bash
+```console
+
 $ git config --global help.autocorrect 15
 ```
 
 So now the command `git comit` will be auto-corrected to `git commit` like this:
 
-```bash
+```console
+
 $ git comit -m "Message"
 # WARNING: You called a Git command named 'comit', which does not exist.
 # Continuing under the assumption that you meant 'commit'
@@ -1101,7 +1134,8 @@ The delay before git will rerun the command is so the user has time to abort.
 
 To add more color to your Git output:
 
-```bash
+```console
+
 $ git config --global color.ui 1
 ```
 

@@ -23,7 +23,6 @@ seo:
 template: docs
 ---
 
-
 ## My Commands:
 
 #### Find:
@@ -102,14 +101,17 @@ find . -type f -exec chmod 644 {} \;
 
 ###### code:
 
-```sh
+```console
+
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+```console
 
-```sh
+
+```console
+
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -126,6 +128,7 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -147,7 +150,8 @@ fs.writeFile('output.md', cat, err => {
 
 ###### code:
 
-```sh
+```console
+
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -163,7 +167,8 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code:
 
-```sh
+```console
+
 
 find . -empty -type d -print -delete
 
@@ -185,7 +190,8 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # Generalized:
 
-```sh
+```console
+
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -196,7 +202,8 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```sh
+```console
+
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -207,7 +214,8 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 # Clone all Git Organization:
 
-```sh
+```console
+
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -225,7 +233,8 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ###### code:
 
-```sh
+```console
+
 git pull
 git init
 git add .
@@ -233,14 +242,16 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```sh
+```console
+
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```sh
+```console
+
 
 git init
 git add .
@@ -248,14 +259,16 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```sh
+```console
+
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```sh
+```console
+
 git init
 git add .
 git commit -m"update"
@@ -272,7 +285,8 @@ git push -u origin preview
 
 ###### code:
 
-```sh
+```console
+
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -290,7 +304,8 @@ find . -name "*.zip" -type f -print -delete
 
 ###### code:
 
-```sh
+```console
+
 
 git stash
 git pull
@@ -308,7 +323,8 @@ git stash pop
 
 ###### code:
 
-```sh
+```console
+
 
 sudo npm i prettier -g
 
@@ -326,7 +342,8 @@ prettier --write .
 
 ###### code:
 
-```sh
+```console
+
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -346,7 +363,8 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ###### code:
 
-```sh
+```console
+
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -358,7 +376,8 @@ npm i npm-recursive-install -g
 
 ```
 
-```sh
+```console
+
 black .
 
 prettier --write .
@@ -375,7 +394,8 @@ npm-recursive-install
 
 ###### code:
 
-```sh
+```console
+
 npm i @bgoonz11/repoutils
 
 ```
@@ -390,7 +410,8 @@ npm i @bgoonz11/repoutils
 
 ###### code:
 
-```sh
+```console
+
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -417,7 +438,8 @@ tree -f >README.md
 
 ###### code:
 
-```sh
+```console
+
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -445,7 +467,8 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ###### code:
 
-```sh
+```console
+
 #!/bin/bash
 
 for file in *.md.md
@@ -461,7 +484,8 @@ do
 done
 ```
 
-```sh
+```console
+
 
 #!/bin/bash
 
@@ -487,7 +511,8 @@ done
 
 ###### code:
 
-```sh
+```console
+
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -504,6 +529,7 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code:
 
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -522,7 +548,8 @@ fs.writeFile('output.md', cat, (err) => {
 
 ###### code:
 
-```sh
+```console
+
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -539,7 +566,8 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ###### code:
 
-```sh
+```console
+
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -564,7 +592,8 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```sh
+```console
+
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -572,7 +601,8 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ###### code:
 
-```sh
+```console
+
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -598,7 +628,8 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ###### code:
 
-```sh
+```console
+
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -614,7 +645,8 @@ uniq -u input.txt output.txt
 
 ###### code:
 
-```sh
+```console
+
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -652,7 +684,8 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ###### code:
 
-```sh
+```console
+
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -679,7 +712,8 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ###### code:
 
-```sh
+```console
+
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -696,7 +730,8 @@ source doit.sh
 
 ###### code:
 
-```sh
+```console
+
 
 #!/bin/sh
 
@@ -720,7 +755,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
     echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
@@ -775,11 +811,14 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+  awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+</li>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -803,13 +842,15 @@ cmd $listing --sort=extension >>$html
 
 > Notes: Useful Follow up Code:
 
-```sh
+```console
+
 
 ```
 
 ###### code:
 
-```sh
+```console
+
 
 #!/bin/sh
 
@@ -833,7 +874,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
 
@@ -887,11 +929,13 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>
+<br>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -917,7 +961,8 @@ cmd $listing --sort=extension >>$html
 
 ###### code:
 
-```sh
+```console
+
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -937,7 +982,8 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ###### code:
 
-```sh
+```console
+
 
 git fetch --all
 # Backup your current branch:
@@ -976,7 +1022,8 @@ git reset --hard origin/master
 
 ###### code:
 
-```sh
+```console
+
 git submodule deinit
 ```
 
@@ -990,7 +1037,8 @@ git submodule deinit
 
 ###### code:
 
-```sh
+```console
+
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1013,7 +1061,8 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ###### code:
 
-```sh
+```console
+
 
 git remote remove origin
 
@@ -1029,7 +1078,8 @@ git remote remove origin
 
 ###### code:
 
-```sh
+```console
+
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1045,7 +1095,8 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ###### code:
 
-```sh
+```console
+
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1061,7 +1112,8 @@ git reset --hard master@{"10 minutes ago"}
 
 ###### code:
 
-```sh
+```console
+
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1118,7 +1170,7 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```ps1
+```
 
  wsl.exe --shutdown
 
@@ -1136,7 +1188,8 @@ lebab --replace ./ --transform includes
 
 ###### code:
 
-```sh
+```console
+
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
@@ -1153,7 +1206,8 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ###### code:
 
-```sh
+```console
+
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1171,7 +1225,8 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ###### code:
 
-```sh
+```console
+
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1187,7 +1242,8 @@ wget -r -A.pdf https://overapi.com/git
 
 ###### code:
 
-```sh
+```console
+
 killall -s KILL node
 
 ```
@@ -1200,7 +1256,8 @@ killall -s KILL node
 
 ###### code:
 
-```sh
+```console
+
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1209,7 +1266,8 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```sh
+```console
+
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1226,7 +1284,8 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ###### code:
 
-```sh
+```console
+
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1242,7 +1301,8 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ###### code:
 
-```sh
+```console
+
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1355,7 +1415,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code:
 
-```ps1
+```
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -1388,7 +1448,8 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```console
+
  sudo apt --purge remove zsh
 
 ```
@@ -1403,7 +1464,8 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code:
 
-```sh
+```console
+
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -1421,7 +1483,8 @@ ln -s "$(pwd)" ~/Downloads
 
 ###### code:
 
-```sh
+```console
+
 
 npx @appnest/readme generate
 
@@ -1437,7 +1500,8 @@ npx @appnest/readme generate
 
 ###### code:
 
-```sh
+```console
+
 sudo -u postgres psql
 ```
 
@@ -1485,7 +1549,8 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ###### code:
 
-```sh
+```console
+
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -1503,7 +1568,8 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ###### code:
 
-```sh
+```console
+
 #!/bin/bash
 
 # SHORTCUTS and HISTORY
