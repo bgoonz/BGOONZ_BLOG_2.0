@@ -8,7 +8,7 @@
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
         "serve": "gatsby serve",
-        "installdockey": "npm i docky --location=global"
+        "prettydock": "npm i docky --location=global && npm i prettier --location=global"
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
@@ -39,5 +39,8 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1"
     }
 }
