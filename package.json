@@ -15,7 +15,7 @@
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
         "fs-extra": "7.0.1",
-        "gatsby": "2.25.4",
+        "gatsby": "^2.0.0",
         "gatsby-plugin-disqus": "^1.2.3",
         "gatsby-plugin-react-helmet": "3.3.3",
         "gatsby-plugin-sass": "2.8.0",
@@ -23,13 +23,13 @@
         "gatsby-remark-prismjs": "^6.15.0",
         "gatsby-remark-prismjs-copy-button": "^0.3.1",
         "gatsby-source-filesystem": "2.3.10",
-        "gatsby-transformer-remark": "^2.8.14",
-        "js-yaml": "3.12.2",
+        "gatsby-transformer-remark": "^5.16.0",
+        "js-yaml": "^4.1.0",
         "lodash": "^4.17.21",
-        "marked": "0.6.1",
+        "marked": "^4.0.16",
         "moment": "^2.29.3",
         "moment-strftime": "0.5.0",
-        "node-sass": "4.14.0",
+        "node-sass": "^7.0.1",
         "node-sass-utils": "1.1.2",
         "prism": "^4.1.2",
         "prismjs": "^1.28.0",
@@ -42,6 +42,7 @@
         "sprintf-js": "1.1.2"
     },
     "devDependencies": {
+        "eslint": "^8.17.0",
         "gatsby-remark-code-buttons": "^2.0.7"
     }
 }

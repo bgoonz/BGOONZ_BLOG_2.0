@@ -24,9 +24,9 @@ cmseditable: true
 
 <!--StartFragment-->
 
-## What is HTTP?
+# What is HTTP?
 
-HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
+### HTTP is a protocol, or a definite set of rules, for accessing resources on the web. Resources could mean anything from HTML files to data from a database, photos, text, and so on.
 
 These resources are made available to us via an `API` and we make requests to these APIs via the HTTP protocol. `API` stands for application programming interface. It is the mechanism that allows developers to request resources.
 
@@ -193,6 +193,7 @@ We're given the URL for this API:
 
 ```console
 
+
 ```
 
 We're given the endpoint path for this specific operation:
@@ -238,6 +239,7 @@ Now we're ready to make our request! The documentation tells us we should pass i
 We're given the URL for this API:
 
 ```console
+
 
 ```
 
@@ -286,6 +288,7 @@ We're given the URL for this API:
 
 ```console
 
+
 ```
 
 We're given the endpoint path for this specific operation:
@@ -325,6 +328,7 @@ Let's delete the Gist we created. We should pass in the header and the Gist ID.
 We're given the URL for this API:
 
 ```console
+
 
 ```
 

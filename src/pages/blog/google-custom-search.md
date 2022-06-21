@@ -65,4 +65,4 @@ Add the following includes to the header of your HTML file (or Solodev Shortcode
 
 With just a few lines of code you have provided site visitors the ability to search your entire site using the power of Google (and the help of Solodev) - Enjoy!
 
-[Source](https://www.solodev.com/blog/web-design/adding-google-custom-search-to-your-website.stml)
+

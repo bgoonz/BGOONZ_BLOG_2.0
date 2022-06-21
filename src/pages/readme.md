@@ -103,9 +103,9 @@ Icons, photos and illustrations.
 
 [Image Provider](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum](https://trends.builtwith.com/widgets/Lorem-Ipsum)
+## [Lorem Ipsum](https://trends.builtwith.com/widgets/)
 
-[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
@@ -933,25 +933,27 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```console
+ ```console
+
 
     # create a new Gatsby site using the default starter
 
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 
-    ```
+ ```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
-    ```console
+ ```console
+
 
     cd my-default-starter/
 
     gatsby develop
 
-    ```
+ ```
 
 1. **Open the source code and start editing!**
 
@@ -4139,7 +4141,7 @@ Element.prototype.closest ||
 
 # Prism.js
 
-      ```js
+   ```js
 
 //
 
@@ -6281,7 +6283,7 @@ punctuation: /[{}[\];(),.:]/
 
 Prism.languages.clike['class-name'],
 
-{ pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$A-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
+{ pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$A-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
 
 ],
 
@@ -6339,7 +6341,7 @@ pattern:
 
 pattern:
 
-/#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
+/#?[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
 
 alias: 'function'
 
@@ -6349,7 +6351,7 @@ parameter: [
 
 {
 
-pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
+pattern: /[function(?:\s+(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
 
 lookbehind: !0,
 
@@ -6359,7 +6361,7 @@ inside: Prism.languages.javascript
 
 {
 
-pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
+pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$a-z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
 
 lookbehind: !0,
 
@@ -6373,7 +6375,7 @@ inside: Prism.languages.javascript
 
 pattern:
 
-/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))[?:(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
 
 lookbehind: !0,
 
@@ -6427,7 +6429,7 @@ Prism.languages.markup.tag.addAttribute(
 
 (Prism.languages.js = Prism.languages.javascript);
 
-````
+```
 
 # main.js
 
@@ -6912,7 +6914,7 @@ window.onGatsbyInitialClientRender = function () {
 
 //-----------------------------------------------------------------------
 
-````
+```
 
 ---
 
@@ -12332,7 +12334,7 @@ ReactNode
 Wrapped element
 
 #### Example
- 
+
 ```js
 //
 
@@ -12395,7 +12397,7 @@ ReactNode
 Wrapped element
 
 #### Example
- 
+
 ```js
 //
 
