@@ -1,7 +1,8 @@
 -   ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -25,10 +26,12 @@
     addthis
 
     ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -47,19 +50,23 @@
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-app.js">
+</script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-analytics.js">
+</script>
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/init.js">
+</script>
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -77,8 +84,12 @@
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -135,7 +146,8 @@
     original-analytics
 
     ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -144,13 +156,18 @@
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -159,7 +176,8 @@
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     ```
 
     Remove
@@ -172,7 +190,8 @@
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'></a>
+            echo "<a href='$url'>
+</a>
     ```
 
     Remove
@@ -605,7 +624,9 @@
 
     <div>
     <a class="top-link hide" href="" id="js-top">
-        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+<path d="M12 6H0l6-6z"/>
+</svg>
     </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
@@ -746,7 +767,8 @@
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -775,7 +797,8 @@
 
     ```
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -793,7 +816,8 @@
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
       algoliasearchNetlify({
         appId: 'O6OT9G9U8Z',
@@ -839,8 +863,11 @@
     simpleanalytics
 
     ```
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
+</script>
+    <noscript>
+<img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+</noscript>
     ```
 
     Remove
@@ -865,7 +892,8 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -889,10 +917,12 @@ Inject analytics or other scripts into the HTML of your site.
     addthis
 
     ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -911,19 +941,23 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-app.js">
+</script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-analytics.js">
+</script>
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/init.js">
+</script>
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -941,8 +975,12 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -999,7 +1037,8 @@ Inject analytics or other scripts into the HTML of your site.
     original-analytics
 
     ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -1008,13 +1047,18 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -1023,7 +1067,8 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     ```
 
     Remove
@@ -1036,7 +1081,8 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'></a>
+            echo "<a href='$url'>
+</a>
     ```
 
     Remove
@@ -1046,10 +1092,12 @@ Inject analytics or other scripts into the HTML of your site.
     prism
 
     ```
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script async defer src="./js/prism.js"></script>
+    <script async defer src="./js/prism.js">
+</script>
     <style>
     code[class*="language-"],
     pre[class*="language-"] {
@@ -1553,7 +1601,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
       algoliasearchNetlify({
         appId: 'O6OT9G9U8Z',
@@ -1578,7 +1627,8 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -1602,10 +1652,12 @@ Inject analytics or other scripts into the HTML of your site.
     addthis
 
     ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -1625,7 +1677,17 @@ Inject analytics or other scripts into the HTML of your site.
     hit counter
 
     ```
-    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2"></div><script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async></script><br><a href="https://www.freecounterstat.com">page counter</a><noscript><a href="https://www.freecounterstat.com" title="page counter"><img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter"></a></noscript>
+    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2">
+</div>
+<script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async>
+</script>
+<br>
+<a href="https://www.freecounterstat.com">page counter</a>
+<noscript>
+<a href="https://www.freecounterstat.com" title="page counter">
+<img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter">
+</a>
+</noscript>
     ```
 
     Remove
@@ -1638,7 +1700,8 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'></a>";
+            echo "<a href='$url'>
+</a>";
           ?>
     ```
 
@@ -1649,8 +1712,15 @@ Inject analytics or other scripts into the HTML of your site.
     clock
 
     ```
-    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;"><p><a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a></p><div id="clock_block_cb6108ec1776002"></div></div>
-    <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;">
+<p>
+<a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a>
+</p>
+<div id="clock_block_cb6108ec1776002">
+</div>
+</div>
+    <script type="text/javascript" src="//w.24timezones.com/l.js" async>
+</script>
     ```
 
     Remove
@@ -1661,7 +1731,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -1671,7 +1742,8 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
-    <div id="search"></div>
+    <div id="search">
+</div>
     ```
 
     Remove
@@ -1682,7 +1754,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     ```
 
     Remove
@@ -1693,7 +1766,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -1703,7 +1777,8 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
-    <div id="search"></div>
+    <div id="search">
+</div>
     ```
 
     Remove
@@ -1717,7 +1792,8 @@ Inject analytics or other scripts into the HTML of your site.---
     scroll2top
 
     ```html
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+</script>
     <script type="text/javascript">
         function hideLoader() {
             $('#loading').hide();
@@ -1749,19 +1825,30 @@ Inject analytics or other scripts into the HTML of your site.---
 
 -   before `</body>`
 
-    spotify
+        spotify
 
-    ```html
+        ```html
+
+    <<<<<<< HEAD
     <iframe
-        src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-        width="100%"
-        height="80"
-        style="   position: fixed;bottom: 50;right: 50;"
-        frameborder="0"
-        allowtransparency="true"
-        allow="encrypted-media"
-    ></iframe>
-    ```
+            src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+            width="100%"
+            height="80"
+            style="   position: fixed;bottom: 50;right: 50;"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+        >
+</iframe>
+<br>
+    =======
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0" width="100%" height="80" style=" position: fixed;bottom: 50;right: 50;"frameBorder="0" allowtransparency="true" allow="encrypted-media">
+</iframe>
+<br>
+
+    > > > > > > > 542c7467a96c36b4f09baccab0e245389b127892
+
+        ```
 
 ---
 
@@ -1794,7 +1881,8 @@ Inject analytics or other scripts into the HTML of your site.---
     ```html
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -1840,55 +1928,75 @@ Inject analytics or other scripts into the HTML of your site.---
     addThis
 
     ```html
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
 ---
 
 -   before `</head>`
 
-    analytics-n-addsense
+        analytics-n-addsense
 
-    ```html
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5S5XXNR');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
+        ```html
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5S5XXNR');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+
+    <<<<<<< HEAD
     <noscript
-        ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden"></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+            >
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR" height="0" width="0" style="display:none;visibility:hidden">
+</iframe
+        >
+</noscript>
+    =======
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    > > > > > > > 542c7467a96c36b4f09baccab0e245389b127892
 
-        gtag('config', 'G-4W5MG3DG4T');
-    </script>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+        ```
 
 ---
 
@@ -1898,11 +2006,13 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <!--- This example uses jQuery: -->
-    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js">
+</script>
 
     <!-- Make sure to include Nelify's authentication library -->
     <!-- Also available via npm as netlify-auth-providers -->
-    <script src="https://unpkg.com/netlify-auth-providers"></script>
+    <script src="https://unpkg.com/netlify-auth-providers">
+</script>
 
     <script>
         $(function () {
@@ -1928,8 +2038,11 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <h1>GitHub Auth Demo:</h1>
-    <p><a href="#" id="login">Authenticate</a></p>
-    <p id="output"></p>
+    <p>
+<a href="#" id="login">Authenticate</a>
+</p>
+    <p id="output">
+</p>
     ```
 
 ---
@@ -1939,7 +2052,8 @@ Inject analytics or other scripts into the HTML of your site.---
     content-authoring
 
     ```html
-    <script src="https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/netlify-cms@beta/dist/netlify-cms.js">
+</script>
     ```
 
 ---
@@ -1950,7 +2064,8 @@ Inject analytics or other scripts into the HTML of your site.---
 
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
         algoliasearchNetlify({
             appId: 'BAGY237H21',
@@ -1976,7 +2091,8 @@ Inject analytics or other scripts into the HTML of your site.---
     <br />
     <br />
 
-    <div id="search"></div>
+    <div id="search">
+</div>
     <br />
     <br />
     <br />
@@ -1995,5 +2111,6 @@ Inject analytics or other scripts into the HTML of your site.---
     algolia-search-cdn
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js">
+</script>
     ```

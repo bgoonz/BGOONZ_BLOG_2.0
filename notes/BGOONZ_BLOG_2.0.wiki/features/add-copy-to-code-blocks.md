@@ -94,6 +94,7 @@ In your Markdown content
 
 ````
 ```js
+//
 alert('click to copy 💾');
 ````
 
@@ -129,7 +130,8 @@ With `toasterText` config enabled this plugin will inject a custom toaster node:
 Don't show button
 
 ````
-```js:clipboard=false
+```js
+//:clipboard=false
 alert('will not be copied 💾');
 ````
 
@@ -184,7 +186,9 @@ To avoid potential issues, the Clipboard API can only be used on pages served ov
 <iframe
   src="childpage.html"
   allow="clipboard-read; clipboard-write"
-></iframe>
+>
+</iframe>
+<br>
 
 ```
 
@@ -253,7 +257,8 @@ The text paste button is very similar except it defines a `data-paste` attribute
 
 ```
 
-<textarea id="pastehere"></textarea>
+<textarea id="pastehere">
+</textarea>
 <button data-paste="#pastehere">paste</button>
 
 ```
@@ -316,7 +321,8 @@ This works in a similar way to the text demonstration, in that copy and paste bu
 </button>
 
 <!-- paste into DOM -->
-<div id="imagelist"></div>
+<div id="imagelist">
+</div>
 
 <button data-pasteblob="#imagelist">
   paste image

@@ -285,7 +285,8 @@ export default class Blog extends React.Component {
       <Layout {...this.props}>
         <div className="outer">
           <div className="inner">
-            <Search indexName="Posts"></Search>
+            <Search indexName="Posts">
+</Search>
           </div>
         </div>
       </Layout>

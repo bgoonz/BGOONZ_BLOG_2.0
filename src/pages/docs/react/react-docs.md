@@ -44,7 +44,6 @@ seo:
 template: docs
 ---
 
-
 # React:
 
 ![React Lifecycles](https://i.imgur.com/3fhEosP.png)
@@ -54,6 +53,7 @@ template: docs
 ## The smallest React example looks like this:
 
 ```js
+//
 ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById('root'));
 ```
 
@@ -67,7 +67,6 @@ Click the link above to open an online editor. Feel free to make some changes, a
 
 ---
 
-
 ## How to Read This Guide
 
 In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
@@ -80,7 +79,6 @@ Every chapter in this guide builds on the knowledge introduced in earlier chapte
 
 ---
 
-
 ## Knowledge Level Assumptions
 
 React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
@@ -89,12 +87,12 @@ React is a JavaScript library, and so we'll assume you have a basic understandin
 
 ---
 
-
 ## **Introducing JSX**
 
 ## Consider this variable declaration:
 
 ```js
+//
 const element = <h1>Hello, world!</h1>;
 ```
 
@@ -105,7 +103,6 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 JSX produces React "elements". We will explore rendering them to the DOM in the [next section](https://reactjs.org/docs/rendering-elements.html). Below, you can find the basics of JSX necessary to get you started.
 
 ---
-
 
 ## Why JSX?
 
@@ -122,6 +119,7 @@ With that out of the way, let's get started!
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
 ```js
+//
 const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 ReactDOM.render(element, document.getElementById('root'));
@@ -133,10 +131,8 @@ In the example below, we embed the result of calling a JavaScript function, `for
 
 ---
 
-
 ```js
-
-
+//
 function formatName(user) {
     return user.firstName + ' ' + user.lastName;
 }
@@ -159,7 +155,6 @@ We split JSX over multiple lines for readability. While it isn't required, when 
 
 ---
 
-
 ## JSX is an Expression Too
 
 After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
@@ -168,10 +163,8 @@ This means that you can use JSX inside of `if` statements and `for` loops, assig
 
 ---
 
-
 ```js
-
-
+//
 function getGreeting(user) {
     if (user) {
         return <h1>Hello, {formatName(user)}!</h1>;
@@ -185,13 +178,17 @@ function getGreeting(user) {
 You may use quotes to specify string literals as attributes:
 
 ```js
-const element = <div tabIndex="0"></div>;
+//
+const element = <div tabIndex="0">
+</div>;
 ```
 
 You may also use curly braces to embed a JavaScript expression in an attribute:
 
 ```js
-const element = <img src={user.avatarUrl}></img>;
+//
+const element = <img src={user.avatarUrl}>
+</img>;
 ```
 
 Don't put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.
@@ -200,18 +197,19 @@ Don't put quotes around curly braces when embedding a JavaScript expression in a
 
 ---
 
-
 ## Specifying Children with JSX
 
 If a tag is empty, you may close it immediately with `/>`, like XML:
 
 ```js
+//
 const element = <img src={user.avatarUrl} />;
 ```
 
 JSX tags may contain children:
 
 ```js
+//
 const element = (
     <div>
         <h1>Hello!</h1>
@@ -225,6 +223,7 @@ const element = (
 It is safe to embed user input in JSX:
 
 ```js
+//
 const title = response.potentiallyMaliciousInput;
 // This is safe:
 const element = <h1>{title}</h1>;
@@ -234,7 +233,6 @@ By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/whic
 
 ---
 
-
 ## JSX Represents Objects
 
 Babel compiles JSX down to `React.createElement()` calls.
@@ -242,16 +240,19 @@ Babel compiles JSX down to `React.createElement()` calls.
 These two examples are identical:
 
 ```js
+//
 const element = <h1 className="greeting">Hello, world!</h1>;
 ```
 
 ```js
+//
 const element = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
 ```
 
 `React.createElement()` performs a few checks to help you write bug-free code but essentially it creates an object like this:
 
 ```js
+//
 // Note: this structure is simplified
 const element = {
     type: 'h1',
@@ -270,7 +271,6 @@ We will explore rendering React elements to the DOM in the [next section](https:
 
 ---
 
-
 ## **Rendering Elements**
 
 ## Elements are the smallest building blocks of React apps.
@@ -285,13 +285,14 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 ---
 
-
 ## Rendering an Element into the DOM
 
 Let's say there is a `<div>` somewhere in your HTML file:
 
 ```js
-<div id="root"></div>
+//
+<div id="root">
+</div>
 ```
 
 We call this a "root" DOM node because everything inside it will be managed by React DOM.
@@ -301,6 +302,7 @@ Applications built with just React usually have a single root DOM node. If you a
 To render a React element into a root DOM node, pass both to `[ReactDOM.render()](<https://reactjs.org/docs/react-dom.html#render>)`:
 
 ```js
+//
 const element = <h1>Hello, world</h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
@@ -313,7 +315,6 @@ It displays "Hello, world" on the page.
 
 ---
 
-
 ## Updating the Rendered Element
 
 React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
@@ -324,10 +325,8 @@ Consider this ticking clock example:
 
 ---
 
-
 ```js
-
-
+//
 function tick() {
     const element = (
         <div>
@@ -351,7 +350,6 @@ It calls `[ReactDOM.render()](<https://reactjs.org/docs/react-dom.html#render>)`
 
 ---
 
-
 ## React Only Updates What's Necessary
 
 React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
@@ -366,7 +364,6 @@ In our experience, thinking about how the UI should look at any given moment, ra
 
 ---
 
-
 ## **Components and Props**
 
 ## Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](https://reactjs.org/docs/react-component.html).
@@ -375,17 +372,14 @@ Conceptually, components are like JavaScript functions. They accept arbitrary in
 
 ---
 
-
 ## Function and Class Components
 
 The simplest way to define a component is to write a JavaScript function:
 
 ---
 
-
 ```js
-
-
+//
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -396,6 +390,7 @@ This function is a valid React component because it accepts a single "props" (wh
 You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) to define a component:
 
 ```js
+//
 class Welcome extends React.Component {
     render() {
         return <h1>Hello, {this.props.name}</h1>;
@@ -409,18 +404,19 @@ Function and Class components both have some additional features that we will di
 
 ---
 
-
 ## Rendering a Component
 
 Previously, we only encountered React elements that represent DOM tags:
 
 ```js
+//
 const element = <div />;
 ```
 
 However, elements can also represent user-defined components:
 
 ```js
+//
 const element = <Welcome name="Sara" />;
 ```
 
@@ -430,10 +426,8 @@ For example, this code renders "Hello, Sara" on the page:
 
 ---
 
-
 ```js
-
-
+//
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -457,7 +451,6 @@ Let's recap what happens in this example:
 
 ---
 
-
 ## Composing Components
 
 Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
@@ -466,10 +459,8 @@ For example, we can create an `App` component that renders `Welcome` many times:
 
 ---
 
-
 ```js
-
-
+//
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
@@ -494,7 +485,6 @@ Typically, new React apps have a single `App` component at the very top. However
 
 ---
 
-
 ## Extracting Components
 
 Don't be afraid to split components into smaller components.
@@ -503,10 +493,8 @@ For example, consider this `Comment` component:
 
 ---
 
-
 ```js
-
-
+//
 function Comment(props) {
     return (
         <div className="Comment">
@@ -533,10 +521,8 @@ First, we will extract `Avatar`:
 
 ---
 
-
 ```js
-
-
+//
 function Avatar(props) {
     return <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name} />;
 }
@@ -550,10 +536,8 @@ We can now simplify `Comment` a tiny bit:
 
 ---
 
-
 ```js
-
-
+//
 function Comment(props) {
     return (
         <div className="Comment">
@@ -575,10 +559,8 @@ This lets us simplify `Comment` even further:
 
 ---
 
-
 ```js
-
-
+//
 function Comment(props) {
     return (
         <div className="Comment">
@@ -600,17 +582,14 @@ Extracting components might seem like grunt work at first, but having a palette 
 
 ---
 
-
 ## Props are Read-Only
 
 Whether you declare a component [as a function or a class](https://reactjs.org/docs/components-and-props.html#function-and-class-components), it must never modify its own props. Consider this `sum` function:
 
 ---
 
-
 ```js
-
-
+//
 function sum(a, b) {
     return a + b;
 }
@@ -622,8 +601,8 @@ In contrast, this function is impure because it changes its own input:
 
 ---
 
-
-```js
+````js
+//
 
 
 function withdraw(account, amount) {
@@ -631,6 +610,7 @@ function withdraw(account, amount) {
 }
 
 ```js
+//
 
 React is pretty flexible but it has a single strict rule:
 
@@ -650,6 +630,7 @@ Consider the ticking clock example from [one of the previous sections](https://r
 
 
 ```js
+//
 
 
 function tick() {
@@ -659,7 +640,7 @@ function tick() {
 
 setInterval(tick, 1000);
 
-```
+````
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)**
 
@@ -669,10 +650,8 @@ We can start by encapsulating how the clock looks:
 
 ---
 
-
 ```js
-
-
+//
 function Clock(props) {
     return (
         <div>
@@ -698,6 +677,7 @@ However, it misses a crucial requirement: the fact that the `Clock` sets up a ti
 Ideally we want to write this once and have the `Clock` update itself:
 
 ```js
+//
 ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
@@ -706,7 +686,6 @@ To implement this, we need to add "state" to the `Clock` component.
 State is similar to props, but it is private and fully controlled by the component.
 
 ---
-
 
 ## Converting a Function to a Class
 
@@ -719,6 +698,7 @@ You can convert a function component like `Clock` to a class in five steps:
 5.  Delete the remaining empty function declaration.
 
 ```js
+//
 class Clock extends React.Component {
     render() {
         return (
@@ -741,7 +721,6 @@ The `render` method will be called each time an update happens, but as long as w
 
 ---
 
-
 ## Adding Local State to a Class
 
 We will move the `date` from props to state in three steps:
@@ -749,6 +728,7 @@ We will move the `date` from props to state in three steps:
 1.  Replace `this.props.date` with `this.state.date` in the `render()` method:
 
 ```js
+//
 class Clock extends React.Component {
     render() {
         return (
@@ -764,6 +744,7 @@ class Clock extends React.Component {
 1.  Add a [class constructor](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes#Constructor) that assigns the initial `this.state`:
 
 ```js
+//
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -784,6 +765,7 @@ class Clock extends React.Component {
 Note how we pass `props` to the base constructor:
 
 ```js
+//
  constructor(props) {
     super(props);    this.state = {date: new Date()};
   }
@@ -795,6 +777,7 @@ Class components should always call the base constructor with `props`.
 1.  Remove the `date` prop from the `<Clock />` element:
 
 ```js
+//
 ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
@@ -803,6 +786,7 @@ We will later add the timer code back to the component itself.
 The result looks like this:
 
 ```js
+//
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -825,12 +809,12 @@ ReactDOM.render(<Clock />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010)<https://codepen.io/bgoonz/pen/oNwgZbV?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/KgQpJd?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/KgQpJd?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Next, we'll make the `Clock` set up its own timer and update itself every second.
 
 ---
-
 
 ## Adding Lifecycle Methods to a Class
 
@@ -843,6 +827,7 @@ We also want to [clear that timer](https://developer.mozilla.org/en-US/docs/Web/
 We can declare special methods on the component class to run some code when a component mounts and unmounts:
 
 ```js
+//
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -867,6 +852,7 @@ These methods are called "lifecycle methods".
 The `componentDidMount()` method runs after the component output has been rendered to the DOM. This is a good place to set up a timer:
 
 ```js
+//
   componentDidMount() {
     this.timerID = setInterval(      () => this.tick(),      1000    );  }
 
@@ -879,6 +865,7 @@ While `this.props` is set up by React itself and `this.state` has a special mean
 We will tear down the timer in the `componentWillUnmount()` lifecycle method:
 
 ```js
+//
   componentWillUnmount() {
     clearInterval(this.timerID);  }
 
@@ -889,6 +876,7 @@ Finally, we will implement a method called `tick()` that the `Clock` component w
 It will use `this.setState()` to schedule updates to the component local state:
 
 ```js
+//
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -921,7 +909,8 @@ ReactDOM.render(<Clock />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/amqdNA?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/amqdNA?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Now the clock ticks every second.
 
@@ -935,19 +924,18 @@ Let's quickly recap what's going on and the order in which the methods are calle
 
 ---
 
-
 ## Using State Correctly
 
 There are three things you should know about `setState()`.
 
 ---
 
-
 ## Do Not Modify State Directly
 
 For example, this will not re-render a component:
 
 ```js
+//
 // Wrong
 this.state.comment = 'Hello';
 ```
@@ -955,6 +943,7 @@ this.state.comment = 'Hello';
 Instead, use `setState()`:
 
 ```js
+//
 // Correct
 this.setState({ comment: 'Hello' });
 ```
@@ -962,7 +951,6 @@ this.setState({ comment: 'Hello' });
 The only place where you can assign `this.state` is the constructor.
 
 ---
-
 
 ## State Updates May Be Asynchronous
 
@@ -973,6 +961,7 @@ Because `this.props` and `this.state` may be updated asynchronously, you should 
 For example, this code may fail to update the counter:
 
 ```js
+//
 // Wrong
 this.setState({
     counter: this.state.counter + this.props.increment
@@ -982,6 +971,7 @@ this.setState({
 To fix it, use a second form of `setState()` that accepts a function rather than an object. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
 
 ```js
+//
 // Correct
 this.setState((state, props) => ({
     counter: state.counter + props.increment
@@ -991,6 +981,7 @@ this.setState((state, props) => ({
 We used an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) above, but it also works with regular functions:
 
 ```js
+//
 // Correct
 this.setState(function (state, props) {
     return {
@@ -1006,6 +997,7 @@ When you call `setState()`, React merges the object you provide into the current
 For example, your state may contain several independent variables:
 
 ```js
+//
   constructor(props) {
     super(props);
     this.state = {
@@ -1017,6 +1009,7 @@ For example, your state may contain several independent variables:
 Then you can update them independently with separate `setState()` calls:
 
 ```js
+//
   componentDidMount() {
     fetchPosts().then(response => {
       this.setState({
@@ -1035,7 +1028,6 @@ The merging is shallow, so `this.setState({comments})` leaves `this.state.posts`
 
 ---
 
-
 ## The Data Flows Down
 
 Neither parent nor child components can know if a certain component is stateful or stateless, and they shouldn't care whether it is defined as a function or a class.
@@ -1045,6 +1037,7 @@ This is why state is often called local or encapsulated. It is not accessible to
 A component may choose to pass its state down as props to its child components:
 
 ```js
+//
 <FormattedDate date={this.state.date} />
 ```
 
@@ -1052,10 +1045,8 @@ The `FormattedDate` component would receive the `date` in its props and wouldn't
 
 ---
 
-
 ```js
-
-
+//
 function FormattedDate(props) {
     return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
 }
@@ -1065,7 +1056,8 @@ function FormattedDate(props) {
 
 [](https://codepen.io/bgoonz/pen/GREgWEp?editors=0010)<https://codepen.io/bgoonz/pen/GREgWEp?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/zKRqNB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/zKRqNB?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 This is commonly called a "top-down" or "unidirectional" data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components "below" them in the tree.
 
@@ -1075,10 +1067,8 @@ To show that all components are truly isolated, we can create an `App` component
 
 ---
 
-
 ```js
-
-
+//
 function App() {
     return (
         <div>
@@ -1095,14 +1085,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010)<https://codepen.io/bgoonz/pen/YzQPZQK?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/vXdGmd?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Each `Clock` sets up its own timer and updates independently.
 
 In React apps, whether a component is stateful or stateless is considered an implementation detail of the component that may change over time. You can use stateless components inside stateful components, and vice versa.
 
 ---
-
 
 ## **Handling Events**
 
@@ -1114,18 +1104,21 @@ In React apps, whether a component is stateful or stateless is considered an imp
 For example, the HTML:
 
 ```js
+//
 <button onclick="activateLasers()">Activate Lasers</button>
 ```
 
 is slightly different in React:
 
 ```js
+//
 <button onClick={activateLasers}> Activate Lasers</button>
 ```
 
 Another difference is that you cannot return `false` to prevent default behavior in React. You must call `preventDefault` explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, you can write:
 
 ```js
+//
 <form onsubmit="console.log('You clicked submit.'); return false">
     <button type="submit">Submit</button>
 </form>
@@ -1135,10 +1128,8 @@ In React, this could instead be:
 
 ---
 
-
 ```js
-
-
+//
 function Form() {
     function handleSubmit(e) {
         e.preventDefault();
@@ -1161,6 +1152,7 @@ When using React, you generally don't need to call `addEventListener` to add lis
 When you define a component using an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes), a common pattern is for an event handler to be a method on the class. For example, this `Toggle` component renders a button that lets the user toggle between "ON" and "OFF" states:
 
 ```js
+//
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -1184,7 +1176,8 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/xEmzGg?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/xEmzGg?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
 
@@ -1193,6 +1186,7 @@ This is not React-specific behavior; it is a part of [how functions work in Java
 If calling `bind` annoys you, there are two ways you can get around this. If you are using the experimental [public class fields syntax](https://babeljs.io/docs/plugins/transform-class-properties/), you can use class fields to correctly bind callbacks:
 
 ```js
+//
 class LoggingButton extends React.Component {
   // This syntax ensures `this` is bound within handleClick.  // Warning: this is *experimental* syntax.  handleClick = () => {    console.log('this is:', this);  }render() {
     return (
@@ -1208,6 +1202,7 @@ This syntax is enabled by default in [Create React App](https://github.com/faceb
 If you aren't using class fields syntax, you can use an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in the callback:
 
 ```js
+//
 class LoggingButton extends React.Component {
   handleClick() {
     console.log('this is:', this);
@@ -1225,19 +1220,18 @@ The problem with this syntax is that a different callback is created each time t
 
 ---
 
-
 ## Passing Arguments to Event Handlers
 
 Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
 
-`<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button><button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>`
+`<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
+<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>`
 
 The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and `[Function.prototype.bind](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind>)` respectively.
 
 In both cases, the `e` argument representing the React event will be passed as a second argument after the ID. With an arrow function, we have to pass it explicitly, but with `bind` any further arguments are automatically forwarded.
 
 ---
-
 
 ## **Conditional Rendering**
 
@@ -1249,10 +1243,8 @@ Consider these two components:
 
 ---
 
-
 ```js
-
-
+//
 function UserGreeting(props) {
     return <h1>Welcome back!</h1>;
 }
@@ -1266,10 +1258,8 @@ We'll create a `Greeting` component that displays either of these components dep
 
 ---
 
-
 ```js
-
-
+//
 function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
@@ -1288,12 +1278,12 @@ ReactDOM.render(
 
 [](https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011)<https://codepen.io/bgoonz/pen/mdwyWmJ?editors=0011>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZpVxNq?editors=0011" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZpVxNq?editors=0011" height="900px" width="100%"> </iframe>
+<br>
 
 This example renders a different greeting depending on the value of `isLoggedIn` prop.
 
 ---
-
 
 ## Element Variables
 
@@ -1303,10 +1293,8 @@ Consider these two new components representing Logout and Login buttons:
 
 ---
 
-
 ```js
-
-
+//
 function LoginButton(props) {
     return <button onClick={props.onClick}>Login</button>;
 }
@@ -1321,6 +1309,7 @@ In the example below, we will create a [stateful component](https://reactjs.org/
 It will render either `<LoginButton />` or `<LogoutButton />` depending on its current state. It will also render a `<Greeting />` from the previous example:
 
 ```js
+//
 class LoginControl extends React.Component {
     constructor(props) {
         super(props);
@@ -1359,12 +1348,12 @@ ReactDOM.render(<LoginControl />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/QKzAgB?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
 
 ---
-
 
 ## Inline If with Logical && Operator
 
@@ -1372,10 +1361,8 @@ You may [embed expressions in JSX](https://reactjs.org/docs/introducing-jsx.html
 
 ---
 
-
 ```js
-
-
+//
 function Mailbox(props) {
     const unreadMessages = props.unreadMessages;
     return (
@@ -1394,7 +1381,8 @@ ReactDOM.render(<Mailbox unreadMessages={messages} />, document.getElementById('
 
 [](https://codepen.io/bgoonz/pen/VwWYppo?editors=0010)<https://codepen.io/bgoonz/pen/VwWYppo?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ozJddz?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
 
@@ -1403,6 +1391,7 @@ Therefore, if the condition is `true`, the element right after `&&` will appear 
 Note that returning a falsy expression will still cause the element after `&&` to be skipped but will return the falsy expression. In the example below, `<div>0</div>` will be returned by the render method.
 
 ```js
+//
 render() {
   const count = 0;  return (
     <div>      { count && <h1>Messages: {count}</h1>}    </div>);
@@ -1417,6 +1406,7 @@ Another method for conditionally rendering elements inline is to use the JavaScr
 In the example below, we use it to conditionally render a small block of text.
 
 ```js
+//
 render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
@@ -1428,6 +1418,7 @@ render() {
 It can also be used for larger expressions although it is less obvious what's going on:
 
 ```js
+//
 render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
@@ -1441,7 +1432,6 @@ Just like in JavaScript, it is up to you to choose an appropriate style based on
 
 ---
 
-
 ## Preventing Component from Rendering
 
 In rare cases you might want a component to hide itself even though it was rendered by another component. To do this return `null` instead of its render output.
@@ -1450,10 +1440,8 @@ In the example below, the `<WarningBanner />` is rendered depending on the value
 
 ---
 
-
 ```js
-
-
+//
 function WarningBanner(props) {
     if (!props.warn) {
         return null;
@@ -1492,12 +1480,12 @@ ReactDOM.render(<Page />, document.getElementById('root'));
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/Xjoqwm?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/Xjoqwm?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/Xjoqwm?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Returning `null` from a component's `render` method does not affect the firing of the component's lifecycle methods. For instance `componentDidUpdate` will still be called.
 
 ---
-
 
 ## **Lists and Keys**
 
@@ -1506,6 +1494,7 @@ Returning `null` from a component's `render` method does not affect the firing o
 Given the code below, we use the `[map()](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map>)` function to take an array of `numbers` and double their values. We assign the new array returned by `map()` to the variable `doubled` and log it:
 
 ```js
+//
 const numbers = [1, 2, 3, 4, 5];
 const doubled = numbers.map((number) => number * 2);
 console.log(doubled);
@@ -1517,7 +1506,6 @@ In React, transforming arrays into lists of [elements](https://reactjs.org/docs/
 
 ---
 
-
 ## Rendering Multiple Components
 
 You can build collections of elements and [include them in JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) using curly braces `{}`.
@@ -1525,6 +1513,7 @@ You can build collections of elements and [include them in JSX](https://reactjs.
 Below, we loop through the `numbers` array using the JavaScript `[map()](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map>)` function. We return a `<li>` element for each item. Finally, we assign the resulting array of elements to `listItems`:
 
 ```js
+//
 const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) => <li>{number}</li>);
 ```
@@ -1532,6 +1521,7 @@ const listItems = numbers.map((number) => <li>{number}</li>);
 We include the entire `listItems` array inside a `<ul>` element, and [render it to the DOM](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom):
 
 ```js
+//
 ReactDOM.render(<ul>{listItems}</ul>, document.getElementById('root'));
 ```
 
@@ -1539,12 +1529,12 @@ ReactDOM.render(<ul>{listItems}</ul>, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/eYRmvvr?editors=0011)<https://codepen.io/bgoonz/pen/eYRmvvr?editors=0011>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/GjPyQr?editors=0011" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/GjPyQr?editors=0011" height="900px" width="100%"> </iframe>
+<br>
 
 This code displays a bullet list of numbers between 1 and 5.
 
 ---
-
 
 ## Basic List Component
 
@@ -1554,10 +1544,8 @@ We can refactor the previous example into a component that accepts an array of `
 
 ---
 
-
 ```js
-
-
+//
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li>{number}</li>);
@@ -1574,10 +1562,8 @@ Let's assign a `key` to our list items inside `numbers.map()` and fix the missin
 
 ---
 
-
 ```js
-
-
+//
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
@@ -1592,13 +1578,15 @@ ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'
 
 [](https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011)<https://codepen.io/bgoonz/pen/yLXyMMP?editors=0011>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jrXYRR?editors=0011" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jrXYRR?editors=0011" height="900px" width="100%"> </iframe>
+<br>
 
 ## Keys
 
 Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
 
 ```js
+//
 const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
 ```
@@ -1606,12 +1594,14 @@ const listItems = numbers.map((number) => <li key={number.toString()}> {number}<
 The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often you would use IDs from your data as keys:
 
 ```js
+//
 const todoItems = todos.map((todo) => <li key={todo.id}> {todo.text}</li>);
 ```
 
 When you don't have stable IDs for rendered items, you may use the item index as a key as a last resort:
 
 ```js
+//
 const todoItems = todos.map((todo, index) =>
   // Only do this if items have no stable IDs  <li key={index}>    {todo.text}
   </li>);
@@ -1624,7 +1614,6 @@ Here is an [in-depth explanation about why keys are necessary](https://reactjs.o
 
 ---
 
-
 ## Extracting Components with Keys
 
 Keys only make sense in the context of the surrounding array.
@@ -1635,8 +1624,8 @@ For example, if you [extract](https://reactjs.org/docs/components-and-props.html
 
 ---
 
-
 ```js
+//
 
 
 function ListItem(props) {
@@ -1667,8 +1656,8 @@ ReactDOM.render(
 
 ---
 
-
 ```js
+//
 
 
 function ListItem(props) {
@@ -1693,12 +1682,12 @@ ReactDOM.render(
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOGM?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOGM?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 A good rule of thumb is that elements inside the `map()` call need keys.
 
 ---
-
 
 ## Keys Must Only Be Unique Among Siblings
 
@@ -1706,10 +1695,8 @@ Keys used within arrays should be unique among their siblings. However, they don
 
 ---
 
-
 ```js
-
-
+//
 function Blog(props) {
     const sidebar = (
         <ul>
@@ -1744,11 +1731,13 @@ ReactDOM.render(<Blog posts={posts} />, document.getElementById('root'));
 
 [](https://codepen.io/bgoonz/pen/mdwyWWy?editors=0010)<https://codepen.io/bgoonz/pen/mdwyWWy?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/NRZYGN?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/NRZYGN?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Keys serve as a hint to React but they don't get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
 
 ```js
+//
 const content = posts.map((post) => <Post key={post.id} id={post.id} title={post.title} />);
 ```
 
@@ -1756,17 +1745,14 @@ With the example above, the `Post` component can read `props.id`, but not `props
 
 ---
 
-
 ## Embedding map() in JSX
 
 In the examples above we declared a separate `listItems` variable and included it in JSX:
 
 ---
 
-
 ```js
-
-
+//
 function NumberList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) => <ListItem key={number.toString()} value={number} />);
@@ -1778,10 +1764,8 @@ JSX allows [embedding any expression](https://reactjs.org/docs/introducing-jsx.h
 
 ---
 
-
 ```js
-
-
+//
 function NumberList(props) {
     const numbers = props.numbers;
     return (
@@ -1799,18 +1783,19 @@ function NumberList(props) {
 
 [](https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010)<https://codepen.io/bgoonz/pen/JjJoWEw?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/BLvYrB?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/BLvYrB?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Sometimes this results in clearer code, but this style can also be abused. Like in JavaScript, it is up to you to decide whether it is worth extracting a variable for readability. Keep in mind that if the `map()` body is too nested, it might be a good time to [extract a component](https://reactjs.org/docs/components-and-props.html#extracting-components).
 
 ---
-
 
 ## **Forms**
 
 ## HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
 
 ```js
+//
 <form>
     <label>
         Name:
@@ -1824,7 +1809,6 @@ This form has the default HTML form behavior of browsing to a new page when the 
 
 ---
 
-
 ## Controlled Components
 
 In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with `[setState()](<https://reactjs.org/docs/react-component.html#setstate>)`.
@@ -1834,6 +1818,7 @@ We can combine the two by making the React state be the "single source of truth"
 For example, if we want to make the previous example log the name when it is submitted, we can write the form as a controlled component:
 
 ```js
+//
 class NameForm extends React.Component {
     constructor(props) {
         super(props);
@@ -1869,7 +1854,8 @@ class NameForm extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/rNwayjv?editors=0010)<https://codepen.io/bgoonz/pen/rNwayjv?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/VmmPgp?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/VmmPgp?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
 
@@ -1877,18 +1863,19 @@ With a controlled component, the input's value is always driven by the React sta
 
 ---
 
-
 ## The textarea Tag
 
 In HTML, a `<textarea>` element defines its text by its children:
 
 ```js
+//
 <textarea>Hello there, this is some text in a text area</textarea>
 ```
 
 In React, a `<textarea>` uses a `value` attribute instead. This way, a form using a `<textarea>` can be written very similarly to a form that uses a single-line input:
 
 ```js
+//
 class EssayForm extends React.Component {
     constructor(props) {
         super(props);
@@ -1924,16 +1911,21 @@ Notice that `this.state.value` is initialized in the constructor, so that the te
 
 ---
 
-
 ## The select Tag
 
 In HTML, `<select>` creates a drop-down list. For example, this HTML creates a drop-down list of flavors:
 
-`<select><option value="grapefruit">Grapefruit</option><option value="lime">Lime</option><option selected value="coconut">Coconut</option><option value="mango">Mango</option></select>`
+`<select>
+<option value="grapefruit">Grapefruit</option>
+<option value="lime">Lime</option>
+<option selected value="coconut">Coconut</option>
+<option value="mango">Mango</option>
+</select>`
 
 Note that the Coconut option is initially selected, because of the `selected` attribute. React, instead of using this `selected` attribute, uses a `value` attribute on the root `select` tag. This is more convenient in a controlled component because you only need to update it in one place. For example:
 
 ```js
+//
 class FlavorForm extends React.Component {
     constructor(props) {
         super(props);
@@ -1972,7 +1964,8 @@ class FlavorForm extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/JbbEzX?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/JbbEzX?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
 
@@ -1988,7 +1981,6 @@ Because its value is read-only, it is an **uncontrolled** component in React. It
 
 ---
 
-
 ## Handling Multiple Inputs
 
 When you need to handle multiple controlled `input` elements, you can add a `name` attribute to each element and let the handler function choose what to do based on the value of `event.target.name`.
@@ -1996,6 +1988,7 @@ When you need to handle multiple controlled `input` elements, you can add a `nam
 For example:
 
 ```js
+//
 class Reservation extends React.Component {
     constructor(props) {
         super(props);
@@ -2037,11 +2030,13 @@ class Reservation extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/wgedvV?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/wgedvV?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/wgedvV?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
 
 ```js
+//
 this.setState({
     [name]: value
 });
@@ -2050,6 +2045,7 @@ this.setState({
 It is equivalent to this ES5 code:
 
 ```js
+//
 var partialState = {};
 partialState[name] = value;
 this.setState(partialState);
@@ -2059,7 +2055,6 @@ Also, since `setState()` automatically [merges a partial state into the current 
 
 ---
 
-
 ## Controlled Input Null Value
 
 Specifying the value prop on a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) prevents the user from changing the input unless you desire so. If you've specified a `value` but the input is still editable, you may have accidentally set `value` to `undefined` or `null`.
@@ -2067,6 +2062,7 @@ Specifying the value prop on a [controlled component](https://reactjs.org/docs/f
 The following code demonstrates this. (The input is locked at first but becomes editable after a short delay.)
 
 ```js
+//
 ReactDOM.render(<input value="hi" />, mountNode);
 
 setTimeout(function () {
@@ -2080,13 +2076,11 @@ It can sometimes be tedious to use controlled components, because you need to wr
 
 ---
 
-
 ## Fully-Fledged Solutions
 
 If you're looking for a complete solution including validation, keeping track of the visited fields, and handling form submission, [Formik](https://jaredpalmer.com/formik) is one of the popular choices. However, it is built on the same principles of controlled components and managing state --- so don't neglect to learn them.
 
 ---
-
 
 ## **Lifting State Up**
 
@@ -2098,10 +2092,8 @@ We will start with a component called `BoilingVerdict`. It accepts the `celsius`
 
 ---
 
-
 ```js
-
-
+//
 function BoilingVerdict(props) {
     if (props.celsius >= 100) {
         return <p>The water would boil.</p>;
@@ -2115,6 +2107,7 @@ Next, we will create a component called `Calculator`. It renders an `<input>` th
 Additionally, it renders the `BoilingVerdict` for the current input value.
 
 ```js
+//
 class Calculator extends React.Component {
     constructor(props) {
         super(props);
@@ -2144,7 +2137,8 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010)<https://codepen.io/bgoonz/pen/zYzxZoL?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOBm?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/ZXeOBm?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 ## Adding a Second Input
 
@@ -2153,6 +2147,7 @@ Our new requirement is that, in addition to a Celsius input, we provide a Fahren
 We can start by extracting a `TemperatureInput` component from `Calculator`. We will add a new `scale` prop to it that can either be `"c"` or `"f"`:
 
 ```js
+//
 const scaleNames = { c: 'Celsius', f: 'Fahrenheit' };
 class TemperatureInput extends React.Component {
     constructor(props) {
@@ -2181,6 +2176,7 @@ class TemperatureInput extends React.Component {
 We can now change the `Calculator` to render two separate temperature inputs:
 
 ```js
+//
 class Calculator extends React.Component {
     render() {
         return (
@@ -2197,7 +2193,8 @@ class Calculator extends React.Component {
 
 [](https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010)<https://codepen.io/bgoonz/pen/QWgwpGv?editors=0010>
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/jGBryx?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 We have two inputs now, but when you enter the temperature in one of them, the other doesn't update. This contradicts our requirement: we want to keep them in sync.
 
@@ -2205,17 +2202,14 @@ We also can't display the `BoilingVerdict` from `Calculator`. The `Calculator` d
 
 ---
 
-
 ## Writing Conversion Functions
 
 First, we will write two functions to convert from Celsius to Fahrenheit and back:
 
 ---
 
-
 ```js
-
-
+//
 function toCelsius(fahrenheit) {
     return ((fahrenheit - 32) * 5) / 9;
 }
@@ -2231,10 +2225,8 @@ It returns an empty string on an invalid `temperature`, and it keeps the output 
 
 ---
 
-
 ```js
-
-
+//
 function tryConvert(temperature, convert) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) {
@@ -2250,12 +2242,12 @@ For example, `tryConvert('abc', toCelsius)` returns an empty string, and `tryCon
 
 ---
 
-
 ## Lifting State Up
 
 Currently, both `TemperatureInput` components independently keep their values in the local state:
 
 ```js
+//
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
@@ -2281,6 +2273,7 @@ Let's see how this works step by step.
 First, we will replace `this.state.temperature` with `this.props.temperature` in the `TemperatureInput` component. For now, let's pretend `this.props.temperature` already exists, although we will need to pass it from the `Calculator` in the future:
 
 ```js
+//
   render() {
     // Before: const temperature = this.state.temperature;
     const temperature = this.props.temperature;    // ...
@@ -2294,6 +2287,7 @@ In React, this is usually solved by making a component "controlled". Just like t
 Now, when the `TemperatureInput` wants to update its temperature, it calls `this.props.onTemperatureChange`:
 
 ```js
+//
   handleChange(e) {
     // Before: this.setState({temperature: e.target.value});
     this.props.onTemperatureChange(e.target.value);    // ...
@@ -2307,6 +2301,7 @@ The `onTemperatureChange` prop will be provided together with the `temperature` 
 Before diving into the changes in the `Calculator`, let's recap our changes to the `TemperatureInput` component. We have removed the local state from it, and instead of reading `this.state.temperature`, we now read `this.props.temperature`. Instead of calling `this.setState()` when we want to make a change, we now call `this.props.onTemperatureChange()`, which will be provided by the `Calculator`:
 
 ```js
+//
 class TemperatureInput extends React.Component {
     constructor(props) {
         super(props);
@@ -2337,6 +2332,7 @@ We will store the current input's `temperature` and `scale` in its local state. 
 For example, if we enter 37 into the Celsius input, the state of the `Calculator` component will be:
 
 ```js
+//
 {
   temperature: '37',
   scale: 'c'
@@ -2347,6 +2343,7 @@ For example, if we enter 37 into the Celsius input, the state of the `Calculator
 If we later edit the Fahrenheit field to be 212, the state of the `Calculator` will be:
 
 ```js
+//
 {
   temperature: '212',
   scale: 'f'
@@ -2359,6 +2356,7 @@ We could have stored the value of both inputs but it turns out to be unnecessary
 The inputs stay in sync because their values are computed from the same state:
 
 ```js
+//
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
@@ -2382,7 +2380,8 @@ class Calculator extends React.Component {
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/WZpxpz?editors=0010)**
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/gaearon/pen/WZpxpz?editors=0010" height="900px" width="100%"> </iframe>
+<br>
 
 Now, no matter which input you edit, `this.state.temperature` and `this.state.scale` in the `Calculator` get updated. One of the inputs gets the value as is, so any user input is preserved, and the other input value is always recalculated based on it.
 
@@ -2400,7 +2399,6 @@ Let's recap what happens when you edit an input:
 Every update goes through the same steps so the inputs stay in sync.
 
 ---
-
 
 ## Lessons Learned
 
@@ -2422,7 +2420,6 @@ In this section, we will consider a few problems where developers new to React o
 
 ---
 
-
 ## Containment
 
 Some components don't know their children ahead of time. This is especially common for components like `Sidebar` or `Dialog` that represent generic "boxes".
@@ -2431,10 +2428,8 @@ We recommend that such components use the special `children` prop to pass childr
 
 ---
 
-
 ```js
-
-
+//
 function FancyBorder(props) {
     return <div className={'FancyBorder FancyBorder-' + props.color}> {props.children} </div>;
 }
@@ -2444,10 +2439,8 @@ This lets other components pass arbitrary children to them by nesting the JSX:
 
 ---
 
-
 ```js
-
-
+//
 function WelcomeDialog() {
     return (
         <FancyBorder color="blue">
@@ -2466,8 +2459,8 @@ While this is less common, sometimes you might need multiple "holes" in a compon
 
 ---
 
-
 ```js
+//
 
 
 function SplitPane(props) {
@@ -2490,7 +2483,6 @@ React elements like `<Contacts />` and `<Chat />` are just objects, so you can p
 
 ---
 
-
 ## Specialization
 
 Sometimes we think about components as being "special cases" of other components. For example, we might say that a `WelcomeDialog` is a special case of `Dialog`.
@@ -2499,10 +2491,8 @@ In React, this is also achieved by composition, where a more "specific" componen
 
 ---
 
-
 ```js
-
-
+//
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
@@ -2523,10 +2513,8 @@ Composition works equally well for components defined as classes:
 
 ---
 
-
 ```js
-
-
+//
 function Dialog(props) {
     return (
         <FancyBorder color="blue">
@@ -2575,7 +2563,6 @@ If you want to reuse non-UI functionality between components, we suggest extract
 
 ---
 
-
 ## **Thinking in React**
 
 ## React is, in our opinion, the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram.
@@ -2583,7 +2570,6 @@ If you want to reuse non-UI functionality between components, we suggest extract
 One of the many great parts of React is how it makes you think about apps as you build them. In this document, we'll walk you through the thought process of building a searchable product data table using React.
 
 ---
-
 
 ## Start With A Mock
 
@@ -2594,6 +2580,7 @@ Imagine that we already have a JSON API and a mock from our designer. The mock l
 Our JSON API returns some data that looks like this:
 
 ```js
+//
 [
     { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
     { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
@@ -2647,7 +2634,6 @@ At the end of this step, you'll have a library of reusable components that rende
 Refer to the [React docs](https://reactjs.org/docs/) if you need help executing this step.
 
 ---
-
 
 ## A Brief Interlude: Props vs State
 
@@ -2706,7 +2692,6 @@ You can start seeing how your application will behave: set `filterText` to `"bal
 
 ---
 
-
 ## Step 5: Add Inverse Data Flow
 
 See the Pen [Thinking In React: Step 5](https://codepen.io/gaearon/pen/LzWZvb) on [CodePen](https://codepen.io/).
@@ -2720,7 +2705,6 @@ If you try to type or check the box in the current version of the example, you'l
 Let's think about what we want to happen. We want to make sure that whenever the user changes the form, we update the state to reflect the user input. Since components should only update their own state, `FilterableProductTable` will pass callbacks to `SearchBar` that will fire whenever the state should be updated. We can use the `onChange` event on the inputs to be notified of it. The callbacks passed by `FilterableProductTable` will call `setState()`, and the app will be updated.
 
 ---
-
 
 ## And That's It
 

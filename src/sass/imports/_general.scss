@@ -1,6 +1,6 @@
 html {
     font-family: $font-primary;
-    font-size: 100%;
+    font-size: 95%;
 }
 
 body {
@@ -10,8 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll;
-
+    overflow: scroll !important;
 }
 
 a {
@@ -31,13 +30,23 @@ a {
     bottom: 120px !important;
     width: 100% !important;
     width: 1000px !important;
-    box-shadow: inset 0px 5px 3px -10px black,
-        inset 0px -11px 8px -10px black;
+    box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;
     margin: 0 auto !important;
     height: 400px !important;
     overflow: scroll !important;
     border: 1px dotted black;
     // z-index: -1;
+}
+#scrollBtn {
+    position: fixed;
+    padding: 10px;
+    top: 50px;
+    right: 10px;
+    width: 80px;
+    color: #fff;
+    font-weight: 700;
+    background-color: rgba(0, 10, 69, 0.856);
+    border-radius: 10px;
 }
 
 iframe {
@@ -46,29 +55,59 @@ iframe {
     border-radius: 12px;
     border: 1px dotted black;
     height: 1200px;
-    box-shadow: inset 0px 4px 4px -10px black,
-        inset 0px -11px 8px -10px black;
+    box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
     resize: both !important;
     overflow: scroll;
 }
 
-code {
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
+@font-face {
+    font-family: font-sb;
+    src: url(https://api.searchbar.org/fonts/sb.eot?39450784);
+    src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'),
+        url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'),
+        url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');
+    font-weight: 400;
+    font-style: normal;
 }
 
-pre {
-    -webkit-box-shadow: 0 1px 4px rgba(155, 155, 155, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(124, 124, 124, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(184, 137, 137, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
+#sb-search-example p {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 12px;
+    margin: 0;
+    z-index: 900;
+}
+
+#sb-search-example {
+    position: static;
+    top: 100px;
+    width: 20%;
+    place-content: center;
+    z-index: 900;
+    box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
+    border: solid 5px white;
+    border-radius: 100px;
+    z-index: 900;
+}
+
+#sb-search-example .sb-icon {
+    font: normal normal 400 26px;
+    align-items: center;
+    padding: 10px;
+    z-index: 900;
+    text-transform: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+#sb-search-example .sb-search-icon {
+    border: 0px;
+    background: #007cff;
+    color: #fff;
+    cursor: pointer;
+    z-index: 900;
+    border-radius: 26px;
 }
 
 h1,
@@ -144,7 +183,7 @@ pre {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -204,8 +243,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
@@ -222,16 +261,16 @@ hr {
 
 img {
     height: auto;
+    width:auto;
     max-width: 100%;
     border-radius: 10px;
 
     :not(.site-logo) {
         box-shadow: inset 10px 10px 50px #fff;
     }
-
 }
 
-@media only screen and (min-width: 741px) {
+@media only screen and (min-width: 641px) {
     blockquote {
         font-size: 1.5em;
         line-height: 1.3;

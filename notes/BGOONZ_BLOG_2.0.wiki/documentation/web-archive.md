@@ -1,13 +1,29 @@
 # Developers
 
-<iframe src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+<<<<<<< HEAD
+
+# <iframe style="resize:both; overflow:scroll;" sandbox="allow-scripts" src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+>>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Search Archive"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+   >
+</iframe>
+<br>
 
-<iframe src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600"></iframe>
+<<<<<<< HEAD
+
+# <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
+</iframe>
+<br>
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
+</iframe>
+<br>
+>>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
 
 Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
 

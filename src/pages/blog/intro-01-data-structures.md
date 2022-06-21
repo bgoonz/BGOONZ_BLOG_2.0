@@ -4,17 +4,17 @@ template: post
 subtitle: a visual guide
 excerpt: The most basic of all data structures, an array s
 date: 2022-04-19T05:30:39.001Z
-image: https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830
-thumb_image: https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/data-struc2.gif?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/data-struc2.gif?raw=true
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/ds.yaml
+    - src/data/categories/ds.yaml
 tags:
-  - src/data/tags/ds-algo.yaml
+    - src/data/tags/ds-algo.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/data-structures-algorithms-resources.md
+    - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
 
@@ -28,19 +28,19 @@ The most basic of all data structures, an array stores data in memory for later 
 
 Advantages
 
-- Simple to create and use.
-- Foundational building block for complex data structures
+-   Simple to create and use.
+-   Foundational building block for complex data structures
 
 Disadvantages
 
-- Fixed size
-- Expensive to insert/delete or resequence values
-- Inefficient to sort
+-   Fixed size
+-   Expensive to insert/delete or resequence values
+-   Inefficient to sort
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications)Applications
 
-- Basic spreadsheets
-- Within complex structures such as hash tables
+-   Basic spreadsheets
+-   Within complex structures such as hash tables
 
 \
 \
@@ -57,19 +57,19 @@ For a visual, consider a single-lane tunnel: the first car to enter is the first
 
 Advantages
 
-- Dynamic size
-- Orders data in the order it was received
-- Low runtime
+-   Dynamic size
+-   Orders data in the order it was received
+-   Low runtime
 
 Disadvantages
 
-- Can only retrieve the oldest element
+-   Can only retrieve the oldest element
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications-1)Applications
 
-- Effective as a buffer when receiving frequent data
-- Convenient way to store order-sensitive data such as stored voicemails
-- Ensures the oldest data is processed first
+-   Effective as a buffer when receiving frequent data
+-   Convenient way to store order-sensitive data such as stored voicemails
+-   Ensures the oldest data is processed first
 
 \
 \
@@ -84,18 +84,18 @@ This system allows efficient insertion and removal of items without the need for
 
 Advantages
 
-- Efficient insertion and removal of new elements
-- Less complex than restructuring an array
+-   Efficient insertion and removal of new elements
+-   Less complex than restructuring an array
 
 Disadvantages
 
-- Uses more memory than arrays
-- Inefficient to retrieve a specific element
-- Inefficient to traverse the list backward
+-   Uses more memory than arrays
+-   Inefficient to retrieve a specific element
+-   Inefficient to traverse the list backward
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications-2)Applications
 
-- Best used when data must be added and removed in quick succession from unknown locations
+-   Best used when data must be added and removed in quick succession from unknown locations
 
 \
 \
@@ -121,25 +121,25 @@ This type of tree is defined by four strict rules:
 
 Advantages
 
-- Ideal for storing hierarchical relationships
-- Dynamic size
-- Quick at insert and delete operations
-- In a binary search tree, inserted nodes are sequenced immediately.
-- Binary search trees are efficient at searches; length is only O(height)O(height).
+-   Ideal for storing hierarchical relationships
+-   Dynamic size
+-   Quick at insert and delete operations
+-   In a binary search tree, inserted nodes are sequenced immediately.
+-   Binary search trees are efficient at searches; length is only O(height)O(height).
 
 Disadvantages
 
-- Slow to rearrange nodes
-- Child nodes hold no information about their parent node
-- Binary search trees are not as fast as the more complicated hash table
-- Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
+-   Slow to rearrange nodes
+-   Child nodes hold no information about their parent node
+-   Binary search trees are not as fast as the more complicated hash table
+-   Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications-3)Applications
 
-- Storing hierarchical data such as a file location.
-- Binary search trees are excellent for tasks needing searching or ordering of data.
+-   Storing hierarchical data such as a file location.
+-   Binary search trees are excellent for tasks needing searching or ordering of data.
 
-> **\*Enjoying the article?** Scroll down to\* *[sign up](https://www.educative.io/blog/blog-newsletter-annoucement)* *for our free, bi-monthly newsletter.*
+> **\*Enjoying the article?** Scroll down to\* _[sign up](https://www.educative.io/blog/blog-newsletter-annoucement)_ _for our free, bi-monthly newsletter._
 
 \
 
@@ -159,18 +159,18 @@ While hard to visualize at first, this structure is invaluable in conveying rela
 
 Advantages
 
-- Can quickly convey visuals over text
-- Usable to model a diverse number of subjects so long as they contain a relational structure
+-   Can quickly convey visuals over text
+-   Usable to model a diverse number of subjects so long as they contain a relational structure
 
 Disadvantages
 
-- At a higher level, text can be time-consuming to convert to an image.
-- It can be difficult to see the existing edges or how many edges a given vertex has connected to it
+-   At a higher level, text can be time-consuming to convert to an image.
+-   It can be difficult to see the existing edges or how many edges a given vertex has connected to it
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications-4)Applications
 
-- Network representations
-- Modeling social networks, such as Facebook.
+-   Network representations
+-   Modeling social networks, such as Facebook.
 
 \
 
@@ -182,20 +182,20 @@ Hash tables are a complex data structure capable of storing large amounts of inf
 
 Advantages
 
-- Key can be in any form, while array’s indices must be integers
-- Highly efficient search function
-- Constant number of operations for each search
-- Constant cost for insertion or deletion operations
+-   Key can be in any form, while array’s indices must be integers
+-   Highly efficient search function
+-   Constant number of operations for each search
+-   Constant cost for insertion or deletion operations
 
 Disadvantages
 
-- Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
-- These errors can be common and often require an overhaul of the hash function.
+-   Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
+-   These errors can be common and often require an overhaul of the hash function.
 
 #### [](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/blob/master/useful-downloads.md#applications-5)Applications
 
-- Database storage
-- Address lookups by name
+-   Database storage
+-   Address lookups by name
 
 Each hash table can be very different, from the types of the keys and values, to the way their hash functions work. Due to these differences and the multi-layered aspects of a hash table, it is nearly impossible to encapsulate so generally.
 
@@ -234,7 +234,7 @@ There are two ways you could solve this coding problem in an interview. Let’s 
 
 123456789function removeEven(arr) { var odds = \[] for (let number of arr) { if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!) odds.push(number) //If it isn't even append it to the empty list } return odds // Return the new list}console.log(removeEven(\[3, 2, 41, 3, 34]))Run
 
-This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in *O(n)O(n).*
+This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
 
 \
 
@@ -273,7 +273,7 @@ This process will iterate over the string one character at a time. We can determ
 1. The stack is empty.
 2. The top element in the stack is not the right type.
 
-If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is *O(n)*.
+If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is _O(n)_.
 
 \
 
@@ -299,18 +299,18 @@ index.jsQueue.js12345678910111213141516171819202122232425262728293031"use strict
 
 The key is to generate consecutive binary numbers by appending 0 and 1 to previous binary numbers. To clarify,
 
-- 10 and 11 can be generated if 0 and 1 are appended to 1.
-- 100 and 101 are generated if 0 and 1 are appended to 10.
+-   10 and 11 can be generated if 0 and 1 are appended to 1.
+-   100 and 101 are generated if 0 and 1 are appended to 10.
 
 Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.
 
-Since a queue follows the *First-In First-Out* property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
+Since a queue follows the _First-In First-Out_ property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
 
 Look at the code above. On line 7, `1` is enqueued. To generate the sequence of binary numbers, a number is dequeued and stored in the array `result`. On lines 11-12, we append `0` and `1` to produce the next numbers.
 
 Those new numbers are also enqueued at lines 14-15. The queue will take integer values, so it converts the string to an integer as it is enqueued.
 
-The time complexity of this solution is in *O(n)O(n)* since constant-time operations are executed for n times.
+The time complexity of this solution is in _O(n)O(n)_ since constant-time operations are executed for n times.
 
 \
 
@@ -336,13 +336,13 @@ index.jsLinkedList.jsNode.js1234567891011121314151617181920212223242526272829303
 
 We use a loop to iterate through the input list. For a `current` node, its link with the `previous` node is reversed. then, `next` stores the next node in the list. Let’s break that down by line.
 
-- Line 22- Store the `current` node’s `nextElement` in `next`
-- Line 23 - Set `current` node’s `nextElement` to `previous`
-- Line 24 - Make the `current` node the new `previous` for the next iteration
-- Line 25 - Use `next` to go to the next node
-- Line 29 - We reset the `head` pointer to point at the last node
+-   Line 22- Store the `current` node’s `nextElement` in `next`
+-   Line 23 - Set `current` node’s `nextElement` to `previous`
+-   Line 24 - Make the `current` node the new `previous` for the next iteration
+-   Line 25 - Use `next` to go to the next node
+-   Line 29 - We reset the `head` pointer to point at the last node
 
-Since the list is traversed only once, the algorithm runs in *O(n)*.
+Since the list is traversed only once, the algorithm runs in _O(n)_.
 
 \
 
@@ -416,6 +416,6 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 
 123456789101112131415161718192021222324252627function minHeapify(heap, index) { var left = index \* 2; var right = (index \* 2) + 1; var smallest = index; if ((heap.length > left) && (heap\[smallest] > heap\[left])) { smallest = left } if ((heap.length > right) && (heap\[smallest] > heap\[right])) smallest = right if (smallest != index) { var tmp = heap\[smallest] heap\[smallest] = heap\[index] heap\[index] = tmp minHeapify(heap, smallest) } return heap;}function convertMax(maxHeap) { for (var i = Math.floor((maxHeap.length) / 2); i > -1; i--) maxHeap = minHeapify(maxHeap, i) return maxHeap}var maxHeap = \[9,4,7,1,-2,6,5]console.log(convertMax(maxHeap))Run
 
-We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes *O(nlog(n))O(nlog(n))* time.
+We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes _O(nlog(n))O(nlog(n))_ time.
 
 <!--EndFragment-->

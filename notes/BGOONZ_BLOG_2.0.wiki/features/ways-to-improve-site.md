@@ -435,7 +435,8 @@ In Dev Tools click the “Elements” tab and search for “text/javascript” a
 Which will return results like this:
 
 ```
-<script type="text/javascript"></script>
+<script type="text/javascript">
+</script>
 ```
 
 This would tell the browser that we were going to load a script tag and run Javascript.
@@ -504,7 +505,8 @@ Impact: High
 When a webpage is loading it loads in sequential order. So if you have the following markup:
 
 ```
-<script src="cats.js"></script>
+<script src="cats.js">
+</script>
 <link rel="stylesheet" href="cats.css"/>
 ```
 
@@ -522,7 +524,8 @@ Reorder the tags so that all required CSS loads before the javascript:
 
 ```
 <link rel="stylesheet" href="cats.css"/>
-<script src="cats.js"></script>
+<script src="cats.js">
+</script>
 ```
 
 ### Limit iFrames on Page
@@ -651,8 +654,10 @@ Sometimes you need one file to load before another. If you use the `async` attri
 If you use `defer` then they will execute in order.
 
 ```
-<script defer src="JS/jquery-3.1.1.min.js"></script>
-<script defer src="JS/my.js"></script>
+<script defer src="JS/jquery-3.1.1.min.js">
+</script>
+<script defer src="JS/my.js">
+</script>
 ```
 
 ### Bloated Frameworks
