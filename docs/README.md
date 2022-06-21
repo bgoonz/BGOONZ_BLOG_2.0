@@ -1724,7 +1724,7 @@ Use the Gatsby CLI to create a new site, specifying the default starter.
 gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 1. **Start developing.**
 Navigate into your new site's directory and start it up.
-```console
+```consoleell
 cd my-default-starter/
 gatsby develop
 1. **Open the source code and start editing!**
