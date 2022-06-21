@@ -71,12 +71,12 @@
     h4,
     h5,
     h6 {
-        color: inherit !important;
+        color: inherit;
     }
 
     a {
         &:not(.button) {
-            color: inherit !important;
+            color: inherit;
 
             &:hover {
                 opacity: 0.8;
@@ -98,56 +98,12 @@
     }
 
     .button-secondary {
-        color: #fff !important;
+        color: #fff;
     }
 
     .inner-sm {
         position: relative;
-
-        <<<<<<< HEAD h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: inherit;
-        }
-
-        a {
-            &:not(.button) {
-                color: inherit;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-
-        .button {
-            &:not(.button-secondary) {
-                background-color: #fff;
-                color: $color-primary;
-
-                &:hover,
-                &:focus,
-                &:active {
-                    opacity: 0.85;
-                }
-            }
-        }
-
-        .button-secondary {
-            color: #fff;
-        }
-
-        .inner-sm {
-            position: relative;
-        }
-
-        =======
     }
-
-    >>>>>>>parent of b1bde79b1 (update)
 }
 
 // Background image
@@ -166,7 +122,7 @@
 
 // Grid
 .grid {
-    <<<<<<< HEAD display: -ms-flexbox;
+    display: -ms-flexbox;
     // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto ;
     display: flex;
     border-radius: 5px;
@@ -174,25 +130,15 @@
     flex-wrap: wrap;
     margin-left: -$grid-gap / 2;
     margin-right: -$grid-gap / 2;
-    =======display: -ms-flexbox;
-    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
-    display: flex;
-    border-radius: 5px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -$grid-gap / 2;
-    margin-right: -$grid-gap / 2;
-    >>>>>>>parent of b1bde79b1 (update)
 }
 
 .grid-item {
-    box-sizing: border-box;
-    <<<<<<< HEAD // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
-    ======= // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;    
-    >>>>>>>parent of b1bde79b1 (update) padding-left: $grid-gap / 2;
-    padding-right: $grid-gap / 2;
-    position: relative;
-    width: 100%;
+  box-sizing: border-box;
+  // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
+  padding-left: $grid-gap / 2;
+  padding-right: $grid-gap / 2;
+  position: relative;
+  width: 100%;
 }
 
 .grid-center {
