@@ -4,7 +4,7 @@ weight: 0
 excerpt:
 seo:
     title: 'Date'
-    description: ''
+    description: 'Date object'
     robots: []
     extra: []
     type: stackbit_page_meta
