@@ -1,4 +1,3 @@
-/* This is the code for the server. */
 const express = require('express');
 const puppeteer = require('puppeteer');
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
