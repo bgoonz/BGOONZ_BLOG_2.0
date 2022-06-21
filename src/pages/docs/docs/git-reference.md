@@ -686,33 +686,33 @@ Let's look at each of the various commands now:
 
     To get this---to _wipe out_ your changes to, say, `README.md`---you can run:
 
-    ```
+ ```
     git checkout -- README.md
 
-    ```
+ ```
 
     The `--` part here is optional. It's a good idea to use it, because it tells Git that the part that comes after `--` is a _file name_, not a _branch name_.
 
     Suppose you have a _branch_ named `hello` _and_ a _file_ named `hello`. What does:
 
-    ```
+ ```
     git checkout hello
 
-    ```
+ ```
 
     mean? Are we asking Git to clobber the _file_ `hello` to remove the changes we made, or are we asking Git to check out the _branch_ `hello`? To make this unambiguous, you have to write either:
 
-    ```
+ ```
     git checkout -- hello        (clobber the file)
 
-    ```
+ ```
 
     or:
 
-    ```
+ ```
     git checkout hello --      (get the branch)
 
-    ```
+ ```
 
     This case, where there are branches and files or directories with the same name, is a particularly insidious one. It has bitten real users. It's _why_ `git switch` exists now. The `git switch` command _never means clobber my files_. It only means _do the safe kind of `git checkout`._
 
@@ -732,19 +732,19 @@ Let's look at each of the various commands now:
 
         Let's show this as a drawing. Suppose we have:
 
-        ```
+ ```
         ...--E--F--G--H   <-- branch
 
-        ```
+ ```
 
         That is, this branch, named `branch`, ends with four commits whose hash IDs we'll call `E`, `F`, `G`, and `H` in that order. The name `branch` currently stores the hash ID of the last of these commits, `H`. If we use `git reset --hard HEAD~3`, we're telling Git to eject the _last three commits_. The result is:
 
-        ```
+ ```
                F--G--H   ???
               /
         ...--E   <-- branch
 
-        ```
+ ```
 
         The name `branch` now selects commit `E`, not commit `H`. If we did not write down (on paper, on a whiteboard, in a file) the hash IDs of the last three commits, they've just become somewhat hard to find. Git does gives a way to find them again, for a while, but mostly they just seem to be _gone_.
 
@@ -786,31 +786,31 @@ Let's look at each of the various commands now:
 
     If you back out the most recent commit, this does revert to the second-most-recent snapshot:
 
-    ```
+ ```
       ...--G--H   <-- branch
 
-    ```
+ ```
 
     becomes:
 
-    ```
+ ```
       ...--G--H--Ħ   <-- branch
 
-    ```
+ ```
 
     where commit `Ħ` (H-bar) "undoes" commit `H` and therefore leaves us with the same _files_ as commit `G`. But we don't have to undo the _most recent_ commit. We could take:
 
-    ```
+ ```
       ...--E--F--G--H   <-- branch
 
-    ```
+ ```
 
     and add a commit `Ǝ` that undoes `E` to get:
 
-    ```
+ ```
       ...--E--F--G--H--Ǝ   <-- branch
 
-    ```
+ ```
 
     which may not match the source snapshot of any previous commit!
 

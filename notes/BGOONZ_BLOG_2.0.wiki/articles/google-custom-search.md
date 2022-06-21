@@ -694,6 +694,7 @@ To apply Sort by Attribute over this field, you set the `sort` option in the sea
 ...
 
 Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s">
+
 </div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
 
 The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to `date-sdate:r:20100825:20100907`. This again uses the combined attribute name `date-sdate`, but instead restricts to the range `r` of specified values `20100825:20100907`. As with the URL parameter, you can omit the upper or lower item of the range in the `sort` option of the Programmable Search Element.
