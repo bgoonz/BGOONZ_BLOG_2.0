@@ -20,11 +20,6 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-remark-code-buttons',
-
-
-        },
-        {
             resolve: 'gatsby-plugin-disqus',
             options: {
                 shortname: 'webdevhub-1',
