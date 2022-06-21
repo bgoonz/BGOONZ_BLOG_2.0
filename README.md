@@ -1,28 +1,33 @@
-<div align="center">
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+## Getting Started
+# [**⇨WEBSITE🗺️⇦**](https://bgoonz-blog.netlify.app/)
 
-### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
+First, run the development server:
+
+#### [Repo-Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+ 
+#### [Latest Workin:](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/0fc1923e5fe4c8f8ea1a9bca69e12b63f093898d)
 
 </div>
 
 ---
 
-## [CHANGELOG](./CHANGELOG.md)
+#### [CHANGELOG](./CHANGELOG.md)
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/) ⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+##### [**⇨Cloudfare-Backup⇦**](https://bgoonz-blog-2-0.pages.dev/) 🌎 [**⇨ search⇦**](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) 🌎 [**⇨ Backup Repo Deploy⇦**](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) 🌎 [**⇨ Github pages⇦**](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) 🌎 [**⇨ Go To Site Wiki⇦**](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) 🌎 [**⇨ Gatsby Cloud Version⇦**](https://bgoonzblog20master.gtsb.io/) 🌎 [**⇨ Vercel Version⇦**](https://bgoonz-blog-2-0.vercel.app/) 🌎 [**⇨ Cloudfare-Domain⇦**](www.webdevhub.us) 🌎 [**⇨ gh-pages⇦**](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+
+ [stackbitv2-notworkinginstackbit](https://stackbit-clone.netlify.app/)
+ [backup-20-blog](https://bgoonzblog20-backup.netlify.app/)
 
 ### Repos
 
--   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
--   [Blog Content](https://github.com/bgoonz/MainBlogContent)
+   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
+   [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
-###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
-
-</div>
-<div align="center">
+###### [**⇨Privacy policy⇦**](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
 
@@ -37,6 +42,154 @@
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
 ```
+
+---
+
+## [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+
+Control the post processing and optimizations Netlify can do for you
+
+### [Snippet injection](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#snippet-injection)
+
+Inject analytics or other scripts into the HTML of your site.
+
+-   **before** `</body>`
+
+    goback
+
+```html
+    <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+          <?php
+            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+            echo "<a href='$url'></a>
+
+```
+
+---
+
+-   **before** `</body>`
+
+    addthis
+
+```html
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+
+```
+
+---
+
+-   **before** `</body>`
+
+    mobil-qr
+
+```html
+    <a  href="https://bgoonzblog20master.gatsbyjs.io/"><img src="https://qrickit.com/api/qr.php?d=https%3A%2F%2Fbgoonzblog20master.gatsbyjs.io%2F&addtext=Click+For+Mobil+Version&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=25&t=p&e=h" style="position: fixed;bottom: 100px;right:20px;"></a>
+
+```
+
+---
+
+-   **before** `</head>`
+
+    ukraine
+
+```html
+    <script id="help-ukraine-win" async="true" src="https://helpukrainewinwidget.org/cdn/widget.js?type=four&position=middle-right&layout=main"></script>
+
+```
+
+---
+
+-   **before** `</head>`
+
+    google analytics tag
+
+```html
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-90VG64DEP3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-90VG64DEP3');
+    </script>
+
+```
+
+---
+
+-   **before** `</head>`
+
+    algolia
+
+```
+html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'N6ETRP7SGS',
+        apiKey: '4481f47882b21c3b05de5780fe166222',
+        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+        branch: 'master',
+        selector: 'div#search',
+      });
+    </script>
+
+```
+
+---
+
+-   **before** `</body>`
+
+    pdf2
+
+```html
+    <a href="//pdfcrowd.com/url_to_pdf/?"
+       onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+       Save to PDF
+    </a>
+
+```
+
+---
+
+-   **before** `</head>`
+
+    algolia
+
+```html
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '949NYEDSIQ',
+        apiKey: '4481f47882b21c3b05de5780fe166222',
+        siteId: '865c330e-e1e9-40b8-8420-bf603640b0fe',
+        branch: 'master',
+        selector: 'div#search',
+      });
+    </script>
+
+```
+
+---
+
+-   **before** `</body>`
+
+    fb-sdk
+
+```html
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=951130702132399&autoLogAppEvents=1" nonce="C29xl8PQ"></script>
+
+```
+
+---
+
+[Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
+
+Add snippet
 
 ---
 
@@ -414,8 +567,6 @@ helpful reference guides
 [Learn More](/docs/reference/)
 
 ### [Tips](/docs/tips/)
-
-lorem-ipsum
 
 [Learn More](/docs/tips/)
 
@@ -822,8 +973,6 @@ helpful reference guides
 
 ### [Tips](/docs/tips/)
 
-lorem-ipsum
-
 [Learn More](/docs/tips/)
 
 ### [Tools](/docs/tools/)
@@ -947,7 +1096,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-````console
+```console
 
 ```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -976,7 +1125,7 @@ fs.writeFile('output.md', cat, err =>  {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
@@ -3016,19 +3165,23 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```consoleell
+```
+console
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+
+```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
-    ```consoleell
+```
+console
     cd my-default-starter/
     gatsby develop
-    ```
+
+```
 
 1. **Open the source code and start editing!**
 
@@ -3215,7 +3368,7 @@ Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gat
 
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
 
-```
+```js
 module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
 ```
 
@@ -3247,7 +3400,8 @@ When you create a Markdown file, you can include a set of key/value pairs that c
 
 src/markdown-pages/post-1.md
 
-```
+```console
+
 ---slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
 ```
 
@@ -3259,7 +3413,7 @@ Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following c
 
 src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
 
-```
+```js
 import React from "react"import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: { eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
 ```
 
@@ -4329,746 +4483,25 @@ export default class Icon extends React.Component {
 }
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```js
-//
-import React from 'react';
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-import { Helmet } from 'react-helmet';
-import _ from 'lodash';
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-import { withPrefix, attribute } from '../utils';
-import '../sass/main.scss';
-import Header from './Header';
-import Footer from './Footer';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
-export default class Body extends React.Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Helmet>
-                    <title>
-                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
-                    </title>
-                    <meta charSet="utf-8" />
-                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
-                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
-                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
-                        <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')} />
-                    )}
-                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
-                        let key_name = _.get(meta, 'keyName', null) || 'name';
-                        return _.get(meta, 'relativeUrl', null) ? (
-                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
-                                (() => {
-                                    let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
-                                    let rel_url = withPrefix(_.get(meta, 'value', null));
-                                    let full_url = domain + rel_url;
-                                    return <meta key={meta_idx} {...attribute(key_name, _.get(meta, 'name', null))} content={full_url} />;
-                                })()
-                        ) : (
-                            <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
-                        );
-                    })}
-                    <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
-                        <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
-                    )}
-                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
-                </Helmet>
-                <div id="page" className="site">
-                    <Header {...this.props} />
-                    {/* INSERT SEARCH BAR HERE */}
-                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" />  */}
-                    <main id="content" className="site-content">
-                        {this.props.children}
-                    </main>
-                    <Footer {...this.props} />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-```
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
----
+## Learn More
 
-```js
-//
-import React from 'react';
-import _ from 'lodash';
+To learn more about Next.js, take a look at the following resources:
 
-import { classNames, withPrefix, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-export default class SectionContent extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-text outer">
-                <div className="outter">
-                    <div
-                        className={classNames('inner', {
-                            'grid-swap': _.get(section, 'image', null) && _.get(section, 'image_position', null) === 'right'
-                        })}
-                    >
-                        {_.get(section, 'image', null) && (
-                            <div className="grid-item block-image">
-                                <img src={withPrefix(_.get(section, 'image', null))} alt={_.get(section, 'image_alt', null)} />
-                            </div>
-                        )}
-                        <div>
-                            {_.get(section, 'title', null) && (
-                                <div className="block-header">
-                                    <h2 className="block-title"> {_.get(section, 'title', null)}</h2>
-                                </div>
-                            )}
-                            {_.get(section, 'content', null) && <div className="outer"> {markdownify(_.get(section, 'content', null))}</div>}
-                            {_.get(section, 'actions', null) && (
-                                <div className="block-buttons">
-                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-```js
-//
-import React from 'react';
-import _ from 'lodash';
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-import { htmlToReact } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionCta extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-cta outer">
-                <div className="inner">
-                    <div className="has-gradient">
-                        <div className="grid grid-middle grid-center">
-                            {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                                <div className="grid-item block-header">
-                                    {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                                    {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                                </div>
-                            )}
-                            {_.get(section, 'actions', null) && (
-                                <div className="grid-item block-buttons">
-                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames, htmlToReact, pathJoin, getPage, Link, withPrefix } from '../utils';
-
-export default class SectionDocs extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section
-                id={_.get(section, 'section_id', null)}
-                className={classNames('block', 'block-grid', 'outer', {
-                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
-                })}
-            >
-                <div className="inner">
-                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                        <div className="block-header inner-sm">
-                            {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                            {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                        </div>
-                    )}
-                    <div className="<iframe ">
-                        <div
-                            className={classNames('grid', {
-                                'grid-col-2': _.get(section, 'col_number', null) === 'two',
-                                'grid-col-3': _.get(section, 'col_number', null) === 'three'
-                            })}
-                        >
-                            {_.map(_.get(this.props, 'pageContext.site.data.doc_sections.sections', null), (doc_section, doc_section_idx) => {
-                                let doc_section_path = pathJoin(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), doc_section);
-                                let doc_section_page = getPage(this.props.pageContext.pages, doc_section_path);
-                                return (
-                                    <div key={doc_section_idx} className="grid-item">
-                                        <div className="grid-item-inside">
-                                            <h3 className="grid-item-title line-left">
-                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}>
-                                                    {_.get(doc_section_page, 'frontmatter.title', null)}
-                                                </Link>
-                                            </h3>
-                                            {_.get(doc_section_page, 'frontmatter.excerpt', null) && (
-                                                <div className="grid-item-content">
-                                                    <p> {htmlToReact(_.get(doc_section_page, 'frontmatter.excerpt', null))}</p>
-                                                </div>
-                                            )}
-                                            <div className="grid-item-buttons">
-                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}> Learn More</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames, htmlToReact, withPrefix, Link, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionGrid extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section
-                id={_.get(section, 'section_id', null)}
-                className={classNames('block', 'block-grid', 'outer', {
-                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
-                })}
-            >
-                <div className="inner">
-                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                        <div className="block-header inner-sm">
-                            {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                            {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                        </div>
-                    )}
-                    {_.get(section, 'grid_items', null) && (
-                        <div className="<iframe ">
-                            <div
-                                className={classNames('grid', {
-                                    'grid-col-2': _.get(section, 'col_number', null) === 'two',
-                                    'grid-col-3': _.get(section, 'col_number', null) === 'three'
-                                })}
-                            >
-                                {_.map(_.get(section, 'grid_items', null), (item, item_idx) => (
-                                    <div key={item_idx} className="grid-item">
-                                        <div className="grid-item-inside">
-                                            {_.get(item, 'image', null) && (
-                                                <div className="grid-item-image">
-                                                    <img src={withPrefix(_.get(item, 'image', null))} alt={_.get(item, 'image_alt', null)} />
-                                                </div>
-                                            )}
-                                            {_.get(item, 'title', null) && (
-                                                <h3 className="grid-item-title line-left">
-                                                    {_.get(item, 'title_url', null) ? (
-                                                        <Link to={withPrefix(_.get(item, 'title_url', null))}> {_.get(item, 'title', null)}</Link>
-                                                    ) : (
-                                                        _.get(item, 'title', null)
-                                                    )}
-                                                </h3>
-                                            )}
-                                            {_.get(item, 'content', null) && (
-                                                <div className="grid-item-content"> {markdownify(_.get(item, 'content', null))}</div>
-                                            )}
-                                            {_.get(item, 'actions', null) && (
-                                                <div className="grid-item-buttons">
-                                                    <CtaButtons {...this.props} actions={_.get(item, 'actions', null)} />
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-
-import { toStyleObj, withPrefix, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionHero extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-hero has-gradient outer">
-                {_.get(section, 'image', null) && (
-                    <div className="bg-img" style={toStyleObj("background-image: url('" + withPrefix(_.get(section, 'image', null)) + "')")} />
-                )}
-                <div className="inner-sm">
-                    {_.get(section, 'title', null) && (
-                        <div className="block-header">
-                            <h1 className="block-title"> {_.get(section, 'title', null)}</h1>
-                        </div>
-                    )}
-                    {_.get(section, 'content', null) && <div className="<iframe "> {markdownify(_.get(section, 'content', null))}</div>}
-                    {_.get(section, 'actions', null) && (
-                        <div className="block-buttons">
-                            <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                        </div>
-                    )}
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames } from '../utils';
-import ActionLink from './ActionLink';
-
-export default class Submenu extends React.Component {
-    render() {
-        let page = _.get(this.props, 'page', null);
-        return (
-            <ul className={_.get(this.props, 'menu_class', null)}>
-                {_.map(_.get(this.props, 'submenu', null), (action, action_idx) => {
-                    let page_url = _.trim(_.get(page, 'url', null), '/');
-                    let action_url = _.trim(_.get(action, 'url', null), '/');
-                    return (
-                        <li
-                            key={action_idx}
-                            className={classNames('menu-item', {
-                                current: page_url === action_url,
-                                'menu-button': _.get(action, 'style', null) !== 'link'
-                            })}
-                        >
-                            <ActionLink {...this.props} action={action} />
-                        </li>
-                    );
-                })}
-            </ul>
-        );
-    }
-}
-```
-
-```js
-//
-import ActionLink from './ActionLink';
-import CtaButtons from './CtaButtons';
-import DocsMenu from './DocsMenu';
-import DocsSubmenu from './DocsSubmenu';
-import Footer from './Footer';
-import Header from './Header';
-import Icon from './Icon';
-import SectionContent from './SectionContent';
-import SectionCta from './SectionCta';
-import SectionDocs from './SectionDocs';
-import SectionGrid from './SectionGrid';
-import SectionHero from './SectionHero';
-import Submenu from './Submenu';
-import Layout from './Layout';
-import addScript from './../hooks/addScript';
-export {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
-    Footer,
-    Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    addScript,
-    Layout
-};
-
-export default {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
-    Footer,
-    Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    Layout,
-    addScript
-};
-```
-
-</details>
-
-<details>
-<summary>  Click To See Template Sourcecode  </summary>
-
-# Templates
-
-```
-
-├── advanced.js
-├── blog.js
-├── docs.js
-├── page.js
-└── post.js
-```
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import components, { Layout } from '../components/index';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Advanced extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-                    let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-                    let Component = components[component];
-                    return <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />;
-                })}
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-import moment from 'moment-strftime';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, getPages, Link } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Blog extends React.Component {
-    render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
-        return (
-            <Layout {...this.props}>
-                <header className="page-header has-gradient outer">
-                    {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                        <div
-                            className="bg-img"
-                            style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                        />
-                    )}
-                    <div className="inner-sm">
-                        <h1 className="page-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                        {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                            <p className="page-subtitle"> {_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
-                        )}
-                    </div>
-                </header>
-                <div className="inner-md outer">
-                    <div className="post-feed">
-                        {_.map(display_posts, (post, post_idx) => (
-                            <article key={post_idx} className="post">
-                                {_.get(post, 'frontmatter.thumb_image', null) && (
-                                    <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                        <img
-                                            src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))}
-                                            alt={_.get(this.props, 'pageContext.frontmatter.thumb_image_alt', null)}
-                                        />
-                                    </Link>
-                                )}
-                                <header className="post-header">
-                                    <div className="post-meta">
-                                        <time className="published" dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>
-                                            {moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}
-                                        </time>
-                                    </div>
-                                    <h2 className="post-title line-left">
-                                        <Link to={withPrefix(_.get(post, 'url', null))} rel="bookmark">
-                                            {_.get(post, 'frontmatter.title', null)}
-                                        </Link>
-                                    </h2>
-                                </header>
-                                {_.get(post, 'frontmatter.excerpt', null) && (
-                                    <React.Fragment>
-                                        <p className="post-excerpt"> {_.get(post, 'frontmatter.excerpt', null)}</p>
-                                        {_.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true &&
-                                            _.get(this.props, 'pageContext.frontmatter.more_link_text', null) && (
-                                                <p className="read-more">
-                                                    <Link className="read-more-link" to={withPrefix(_.get(post, 'url', null))}>
-                                                        {_.get(this.props, 'pageContext.frontmatter.more_link_text', null)}
-                                                    </Link>
-                                                </p>
-                                            )}
-                                    </React.Fragment>
-                                )}
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import DocsMenu from '../components/DocsMenu';
-import { htmlToReact, getPages, Link, withPrefix } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Docs extends React.Component {
-    render() {
-        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
-        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
-        return (
-            <Layout {...this.props}>
-                <div className="inner outer">
-                    <div className="docs-content">
-                        <DocsMenu {...this.props} page={this.props.pageContext} site={this.props.pageContext.site} />
-                        <article className="post type-docs">
-                            <div className="post-inside">
-                                <header className="post-header">
-                                    <h1 className="post-title line-left"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                                </header>
-                                <div className="post-content">
-                                    {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                                    {root_docs_path !== current_page_url &&
-                                        (() => {
-                                            let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
-                                            let child_count = _.size(child_pages);
-                                            let has_children = child_count > 0 ? true : false;
-                                            return (
-                                                <React.Fragment>
-                                                    {has_children && (
-                                                        <ul id="docs-section-items" className="docs-section-items">
-                                                            {_.map(child_pages, (child_page, child_page_idx) => (
-                                                                <li key={child_page_idx} className="docs-section-item">
-                                                                    <Link to={withPrefix(_.get(child_page, 'url', null))} className="docs-item-link">
-                                                                        {_.get(child_page, 'frontmatter.title', null)}
-                                                                        <span className="icon-angle-right" aria-hidden="true" />
-                                                                    </Link>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-                                                </React.Fragment>
-                                            );
-                                        })()}
-                                </div>
-                            </div>
-                        </article>
-                        <nav id="page-nav" className="page-nav">
-                            <div id="page-nav-inside" className="page-nav-inside sticky">
-                                <h2 className="page-nav-title"> Jump to Section</h2>
-                                <div id="page-nav-link-container" />
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, htmlToReact } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Page extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                <article className="post post-full">
-                    <header className="post-header has-gradient outer">
-                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                            <div
-                                className="bg-img"
-                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                            />
-                        )}
-                        <div className="inner-sm">
-                            <h1 className="post-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                                <div className="post-subtitle"> {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
-                            )}
-                        </div>
-                    </header>
-                    <div className="inner-md outer">
-                        <div className="post-content"> {htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
-                    </div>
-                </article>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-//
-import React from 'react';
-import _ from 'lodash';
-import moment from 'moment-strftime';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, htmlToReact } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Post extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                <article className="post post-full">
-                    <header className="post-header has-gradient outer">
-                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                            <div
-                                className="bg-img"
-                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                            />
-                        )}
-                        <div className="inner-sm">
-                            <div className="post-meta">
-                                <time
-                                    className="published"
-                                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
-                                >
-                                    {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
-                                </time>
-                            </div>
-                            <h1 className="post-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                                <div className="post-subtitle"> {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
-                            )}
-                        </div>
-                    </header>
-                    <div className="inner-md outer">
-                        <div className="post-content"> {htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
-                    </div>
-                </article>
-            </Layout>
-        );
-    }
-}
-```
-
-</details>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -3,6 +3,7 @@
 root_docs_path: /docs
 sections:
     - about
+    - archive
     - articles
     - audio
     - career
@@ -18,13 +19,14 @@ sections:
     - js-tips
     - interview
     - leetcode
+    - netlify-cms-jamstack
     - overflow
     - projects
     - python
     - quick-ref
     - react
     - reference
-    - tools
     - tips
+    - tools
     - tutorials
     - typescript

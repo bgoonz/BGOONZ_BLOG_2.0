@@ -36,6 +36,7 @@ There are many things that `npm` does.
 If a project has a `package.json` file, by running
 
 ```console
+
 npm install
 ```
 
@@ -46,6 +47,7 @@ it will install everything the project needs, in the `node_modules` folder, crea
 You can also install a specific package by running
 
 ```console
+
 npm install <package-name>
 ```
 
@@ -61,6 +63,7 @@ The difference is mainly that devDependencies are usually development tools, lik
 Updating is also made easy, by running
 
 ```console
+
 npm update
 ```
 
@@ -69,6 +72,7 @@ npm update
 You can specify a single package to update as well:
 
 ```console
+
 npm update <package-name>
 ```
 
@@ -89,6 +93,7 @@ In all those cases, versioning helps a lot, and `npm` follows the semantic versi
 The package.json file supports a format for specifying command line tasks that can be run by using
 
 ```console
+
 npm run <task-name>
 ```
 
@@ -120,6 +125,7 @@ It's very common to use this feature to run Webpack:
 So instead of typing those long commands, which are easy to forget or mistype, you can run
 
 ```console
+
 $ npm run watch
 $ npm run dev
 $ npm run prod

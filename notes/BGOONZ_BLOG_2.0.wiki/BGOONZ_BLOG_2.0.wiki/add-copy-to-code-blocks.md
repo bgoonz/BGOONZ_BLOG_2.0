@@ -1,12 +1,10 @@
-gatsby-remark-code-buttons
-==========================
+# gatsby-remark-code-buttons
 
 Add buttons to **markdown** code snippets.
 
 > This plugin doesn't support MDX. Example of [MDX copy button](https://github.com/gatsbyjs/gatsby/pull/15834).
 
-[](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#install)Install
--------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#install)Install
 
 ```
 npm install gatsby-remark-code-buttons --save-dev
@@ -14,8 +12,7 @@ npm install gatsby-remark-code-buttons --save-dev
 
 ![](https://media.giphy.com/media/hoHRea4IdkDBrsE4Bu/source.gif)
 
-[](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#how-to-use)How to use
--------------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#how-to-use)How to use
 
 in your `gatsby-config.js`
 
@@ -30,8 +27,7 @@ plugins: [
 ]
 ```
 
-[](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#options)Options
--------------------------------------------------------------------------------
+## [](https://www.gatsbyjs.com/plugins/gatsby-remark-code-buttons/#options)Options
 
 ```
 plugins: [
@@ -96,16 +92,18 @@ import './src/styles/custom-code-buttons.scss';
 
 In your Markdown content
 
-```
+````
 ```js
 //
 alert('click to copy 💾');
-```
+````
+
 ```
 
 This plugin will parse the Markdown AST, pluck the button, and then "clean" the code snippet language for further processing. With the default config options this plugin will create the following structure, injecting a custom `div`:
 
 ```
+
 <div
   class="gatsby-code-button-container"
   data-toaster-id=""
@@ -131,11 +129,12 @@ With `toasterText` config enabled this plugin will inject a custom toaster nod
 
 Don't show button
 
-```
+````
 ```js
 //:clipboard=false
 alert('will not be copied 💾');
-```
+````
+
 ```
 
 
@@ -191,6 +190,7 @@ Accessing the clipboard programmatically raises several security concerns:
 To avoid potential issues, the Clipboard API can only be used on pages served over HTTPS (`localhost` is also permitted). When running in an iframe, the parent page must also grant `clipboard-read` and/or `clipboard-write` permissions:
 
 ```
+
 <iframe
   src="childpage.html"
   allow="clipboard-read; clipboard-write"
@@ -210,9 +210,10 @@ Clipboard API Feature Detection
 The Clipboard API is available when `navigator.clipboard` returns a truthy result. For example:
 
 ```
+
 if (navigator.clipboard) {
 
-  console.log('Clipboard API available');
+console.log('Clipboard API available');
 
 }
 
@@ -226,6 +227,7 @@ Copy and Paste Text
 Copying and pasting text will be a useful option in most applications. The API is refreshingly simple:
 
 ```
+
 // copy text TO the clipboard
 await navigator.clipboard.writeText('This text is now in the clipboard');
 
@@ -248,6 +250,7 @@ This example implements text copying when a `data-copy` attribute is added any
 Optionally, you can set a custom success message in a `data-done` attribute:
 
 ```
+
 <button data-copy="#mysection" data-done="section copied">
   copy text from #mysection
 </button>
@@ -259,6 +262,7 @@ The button is only shown when `navigator.clipboard.writeText()` is supported. 
 The text paste button is very similar except it defines a `data-paste` attribute which must point to a DOM node:
 
 ```
+
 <textarea id="pastehere"></textarea>
 <button data-paste="#pastehere">paste</button>
 
@@ -272,12 +276,13 @@ The Clipboard API's [`readText()`](https://developer.mozilla.org/Web/API/Clipbo
 Copying requires blob data typically returned by a [`fetch()`](https://developer.mozilla.org/Web/API/Fetch_API) or [`canvas.toBlob()`](https://developer.mozilla.org/Web/API/HTMLCanvasElement/toBlob) method. This is passed to a [`ClipboardItem`](https://developer.mozilla.org/Web/API/ClipboardItem) constructor so it can be written to the clipboard:
 
 ```
+
 const
-  image = await fetch('myimage.png'),
-  blob = await image.blob();
+image = await fetch('myimage.png'),
+blob = await image.blob();
 
 await navigator.clipboard.write([
-  new ClipboardItem({ [blob.type]: blob })
+new ClipboardItem({ [blob.type]: blob })
 ]);
 
 ```
@@ -285,11 +290,12 @@ await navigator.clipboard.write([
 Pasting is more complex because multiple `ClipboardItem` objects can be returned with differing content types. It's therefore necessary to iterate through each type until a useful format is found. For example:
 
 ```
+
 const clipboardItems = await navigator.clipboard.read();
 
 for (const clipboardItem of clipboardItems) {
 
-  for (const type of clipboardItem.types) {
+for (const type of clipboardItem.types) {
 
     if (type === 'image/png') {
 
@@ -298,7 +304,7 @@ for (const clipboardItem of clipboardItems) {
 
     }
 
-  }
+}
 
 }
 
@@ -311,6 +317,7 @@ The code can be [downloaded from GitHub](https://github.com/sitepoint-editors/c
 This works in a similar way to the text demonstration, in that copy and paste buttons must point to DOM elements using a CSS selector in `data-copyblob` and `data-pasteblob` attributes. For example:
 
 ```
+
 <!-- copy image -->
 <img id="myimage" src="myimage.png" alt="any image" />
 
@@ -337,24 +344,25 @@ The `cut`, `copy`, and `paste` events fire whenever the user initiates a cli
 The following function forces all cut or copied text to be uppercase. Note that `e.preventDefault()` stops the default cut/copy action which would override it:
 
 ```
+
 body.addEventListener('cut', cutCopyHandler);
 body.addEventListener('copy', cutCopyHandler);
 
 // cut or copy event handler
 function cutCopyHandler(e) {
 
-  const selection = document.getSelection();
+const selection = document.getSelection();
 
-  // send uppercase text to clipboard
-  e.clipboardData.setData(
-    'text/plain',
-    selection.toString().toUpperCase()
-  );
+// send uppercase text to clipboard
+e.clipboardData.setData(
+'text/plain',
+selection.toString().toUpperCase()
+);
 
-  if (e.type === 'cut') selection.deleteFromDocument();
+if (e.type === 'cut') selection.deleteFromDocument();
 
-  // stop default cut/copy
-  e.preventDefault();
+// stop default cut/copy
+e.preventDefault();
 
 }
 
@@ -363,18 +371,22 @@ function cutCopyHandler(e) {
 The following code attaches a paste handler to a specific `<textarea>` field. The function clears the existing content and prefixes the text `"pasted:"`:
 
 ```
+
 document.getElementById('field1').addEventListener('paste', pasteEvent);
 
 // paste event handler
 function pasteEvent(e) {
 
-  // add 'pasted:' to pasted text
-  const paste = 'pasted:\n' +
-    (e.clipboardData || window.clipboardData).getData('text');
+// add 'pasted:' to pasted text
+const paste = 'pasted:\n' +
+(e.clipboardData || window.clipboardData).getData('text');
 
-  e.target.value = paste;
+e.target.value = paste;
 
-  // stop default paste
-  e.preventDefault();
+// stop default paste
+e.preventDefault();
 }
+
+```
+
 ```
