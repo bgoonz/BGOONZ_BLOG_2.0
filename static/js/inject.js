@@ -1315,7 +1315,7 @@
             c('focustrap', t, wt),
             t
         );
-    }
+    };
 }
 const Et = {
         backdrop: !0,

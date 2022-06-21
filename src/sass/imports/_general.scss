@@ -10,7 +10,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll !important;
+    overflow: scroll;
 }
 
 a {
@@ -22,20 +22,6 @@ a {
     &:hover {
         color: $gray-600;
     }
-}
-
-#social-embed {
-    // position: absolute !important;
-    // right: 50px !important;
-    bottom: 120px !important;
-    width: 100% !important;
-    width: 1000px !important;
-    box-shadow: inset 0px 5px 3px -10px black, inset 0px -11px 8px -10px black;
-    margin: 0 auto !important;
-    height: 400px !important;
-    overflow: scroll !important;
-    border: 1px dotted black;
-    // z-index: -1;
 }
 
 #scrollBtn {
@@ -50,12 +36,6 @@ a {
     border-radius: 10px;
 }
 
-#sb-search-input-example {
-    position: absolute;
-    top: 200px;
-    lef: 200px;
-}
-
 iframe {
     overflow-y: scroll;
     overflow-x: scroll;
@@ -64,7 +44,7 @@ iframe {
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
-    resize: both !important;
+    resize: both;
     overflow: scroll;
 }
 
@@ -83,7 +63,7 @@ iframe {
     font-size: 18px;
     line-height: 12px;
     margin: 0;
-    z-index: 900;
+    z-index: -1;
 }
 
 #sb-search-example {
@@ -91,18 +71,18 @@ iframe {
     top: 100px;
     width: 20%;
     place-content: center;
-    z-index: 900;
+    z-index: -1;
     box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
     border: solid 5px white;
     border-radius: 100px;
-    z-index: 900;
+    z-index: -1;
 }
 
 #sb-search-example .sb-icon {
     font: normal normal 400 26px;
     align-items: center;
     padding: 10px;
-    z-index: 900;
+    z-index: -1;
     text-transform: none;
     cursor: pointer;
     margin: 0;
@@ -113,7 +93,7 @@ iframe {
     background: #007cff;
     color: #fff;
     cursor: pointer;
-    z-index: 900;
+    z-index: -1;
     border-radius: 26px;
 }
 
@@ -190,7 +170,7 @@ pre {
     }
 }
 
-:not(pre)>code {
+:not(pre) > code {
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -250,8 +230,8 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
