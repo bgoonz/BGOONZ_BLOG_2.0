@@ -13,7 +13,7 @@ template: docs
 
 # Fresh Ubuntu Setup:
 
-```console
+```bash
 
 sudo apt update -y
 

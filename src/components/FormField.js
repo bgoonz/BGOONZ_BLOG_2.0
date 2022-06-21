@@ -1,3 +1,4 @@
+/* It's a React component that renders a form field based on the props passed to it. */
 import _ from 'lodash';
 import React from 'react';
 
