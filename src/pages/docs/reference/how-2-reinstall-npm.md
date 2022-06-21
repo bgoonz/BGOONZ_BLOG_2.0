@@ -1,10 +1,10 @@
 ---
 title: How To Reinstall NPM and Node.js On Your System
 weight: 0
-excerpt: lorem-ipsum
+excerpt: How To Reinstall NPM and Node.js On Your System
 seo:
-    title: ''
-    description: ''
+    title: 'How To Reinstall NPM and Node.js On Your System'
+    description: 'How To Reinstall NPM and Node.js On Your System'
     robots: []
     extra: []
 template: docs

@@ -10,26 +10,29 @@ seo:
 template: docs
 ---
 
+<script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/">
+</script>
 
-<script async src="//jsfiddle.net/bgoonz/tu3Lw57r/embed/result/dark/"></script>
-
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light"   frameborder="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="800px" width="1000px" scrolling="yes" title="Linear vs Binary Search" src="https://codepen.io/bgoonz/embed/MWbZoOa?default-tab=result&editable=true&theme-id=light"   frameborder="yes" loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/MWbZoOa">
   Linear vs Binary Search</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+<br>
 
 <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="result" data-slug-hash="GRNPEdY" data-editable="true" data-user="bgoonz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/bgoonz/pen/GRNPEdY">
   Data Structures Viz</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js">
+</script>
 
 ## Callstack Visualizer
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://visualize-callstack-qdvyu8oyc-visualize42.vercel.app/" height="900px" width="100%">
 </iframe>
+<br>
 
 ###### About the Call Stack
 

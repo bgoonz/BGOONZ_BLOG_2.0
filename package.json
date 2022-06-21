@@ -7,7 +7,8 @@
         "develop": "gatsby develop",
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
-        "serve": "gatsby serve"
+        "serve": "gatsby serve",
+        "installdockey": "npm i docky --location=global"
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
@@ -29,7 +30,7 @@
         "marked": "0.6.1",
         "moment": "2.23.0",
         "moment-strftime": "0.5.0",
-        "node-sass": "4.14.0",
+        "node-sass": "^4.14.0",
         "node-sass-utils": "1.1.2",
         "react": "16.5.1",
         "react-dom": "^16.13.1",
