@@ -169,8 +169,8 @@ Or Checkout my personal Resource Site:
 <a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [February 27, 2021](https://medium.com/p/9f36c3f15afe).
+on [February 27, 2021](https://medium.com/p/9f36c3f15afe).
 
-<a href="https://medium.com/@bryanguner/basic-web-development-environment-setup-9f36c3f15afe" class="p-canonical">Canonical link</a>
+basic-web-development-environment-setup-9f36c3f15afe"
 
 August 6, 2021.

@@ -1,20 +1,4 @@
----
-title: Learn Css
-weight: 0
-excerpt: Learn Css
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
----
-
-# Learn CSS
-
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21634693&amp;authkey=AAQrdzlmcaPgMGA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-<br>
+# Learn CSS So That Your Site Doesn't Look Like Garbage
 
 CSS Selectors
 
@@ -106,7 +90,7 @@ CSS Selectors
 -   <span id="0360">Format is a `Selector:Pseudo-Class Name` or `A:B`</span>
 -   <span id="91ee">`a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`</span>
 -   <span id="27ac">Some common pseudo-classes that are frequently used are:</span>
--   <span id="9b2b">`active` : 'push down', when ele are activated.</span>
+-   <span id="9b2b">`active` : ‘push down', when ele are activated.</span>
 -   <span id="5b2f">`checked` : applies to things like radio buttons or checkbox inputs.</span>
 -   <span id="58da">`disabled` : any disabled element.</span>
 -   <span id="d3bd">`first-child` : first element in a group of children/siblings.</span>
@@ -202,21 +186,21 @@ Last Read in the browser wins.
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*WmqUyKiumM8RCJQo.png" class="graf-image" />
-</figure>- <span id="daba">Remember that not all computers have the same fonts on them.</span>
-- <span id="0aa8">You can import web fonts via an api by using</span>
-- <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
-- <span id="d8ff">And then reference it in your font-family.</span>
-- <span id="ee9f">`font-size` : Changes the size of your font.</span>
-- <span id="782e">Keep in mind the two kind of units CSS uses:</span>
-- <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
-- <span id="2884">`Relative` : Em, Rem.</span>
-- <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span>
-- <span id="5a5d">Rem: Calulates relative to the parent element always.</span>
-- <span id="79b0">`font-style` : Used to set a font to italics.</span>
-- <span id="f464">`font-weight` : Used to make a font bold.</span>
-- <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
-- <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
-- <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
+</figure>-   <span id="daba">Remember that not all computers have the same fonts on them.</span>
+-   <span id="0aa8">You can import web fonts via an api by using</span>
+-   <span id="0c5d">`@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');` and pasting it st the top of your CSS file.</span>
+-   <span id="d8ff">And then reference it in your font-family.</span>
+-   <span id="ee9f">`font-size` : Changes the size of your font.</span>
+-   <span id="782e">Keep in mind the two kind of units CSS uses:</span>
+-   <span id="c4f7">`Absolute` : `Pixels`, Points, Inches, Centimeters.</span>
+-   <span id="2884">`Relative` : Em, Rem.</span>
+-   <span id="f9b5">Em: Calulating the size relative to the previous div (bubbles down)</span>
+-   <span id="5a5d">Rem: Calulates relative to the parent element always.</span>
+-   <span id="79b0">`font-style` : Used to set a font to italics.</span>
+-   <span id="f464">`font-weight` : Used to make a font bold.</span>
+-   <span id="3d56">`text-align` : Used to align your text to the left, center, or right.</span>
+-   <span id="4cbc">`text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy!</span>
+-   <span id="1c96">`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.</span>
 
 **Background-Images**
 
@@ -317,8 +301,8 @@ This bothered many programmers so they created the **border box** to include the
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*6jvV-NnX5HS5PuVT.png" class="graf-image" />
-</figure>- <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
-- <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
+</figure>-   <span id="adb4">Note that the container ele has a relative positioning — this is so that any changes made to the absolute positioned children will be positioned from it's top-left corner.</span>
+-   <span id="be4f">Note that because we removed the pink from the normal page flow, the container has now shifted the blue box to where the pink box should have been — which is why it is now layered beneath the pink.</span>
 
 <!-- -->
 
@@ -337,7 +321,7 @@ This bothered many programmers so they created the **border box** to include the
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*o_T8meZgQSu7kxfs.png" class="graf-image" />
-</figure>- <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
+</figure>-   <span id="9e42">As you can see here, since we have also taken the blue box out of the normal page flow by declaring it as absoutely positioned it now overlaps over the pink box.</span>
 
 <!-- -->
 
@@ -355,7 +339,7 @@ This bothered many programmers so they created the **border box** to include the
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*rRNttTlXfnhqERYU.png" class="graf-image" />
-</figure>- <span id="528a">Example where the absolute element has it's bottom property modified.</span>
+</figure>-   <span id="528a">Example where the absolute element has it's bottom property modified.</span>
 
 <!-- -->
 
@@ -372,7 +356,7 @@ This bothered many programmers so they created the **border box** to include the
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Al6ILt84EC0bhjnK.png" class="graf-image" />
-</figure>- <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
+</figure>-   <span id="f676">If we removed the container's relative position. Our absolute unit would look for the nearest parent which would be the document itself.</span>
 
 **Fixed Positioning**
 
@@ -401,7 +385,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="46aa">Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.</span>
 -   <span id="ebb3">Float was used back in the day to display position of elements in a container.</span>
 -   <span id="2a8e">A very inconvenient aspect of float is the need to _clear_ the float.</span>
--   <span id="ba98">To 'clear' a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
+-   <span id="ba98">To ‘clear' a float we need to set up a ghost div to properly align — this is already sounds so inefficient.</span>
 
 **Using Flexbox**
 
@@ -412,7 +396,7 @@ This bothered many programmers so they created the **border box** to include the
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*IBJIWQ7Z_23eERWn.png" class="graf-image" />
-</figure>- <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
+</figure>-   <span id="b505">Flexbox layout applies styles to the parent element, and it's children.</span>
 
 <!-- -->
 
@@ -476,7 +460,7 @@ This bothered many programmers so they created the **border box** to include the
 -   <span id="26c3">Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.</span>
 -   <span id="a117">`Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.</span>
 -   <span id="17ae">Combine areas with templates to define how much space an area should take up.</span>
--   <span id="f90a">`Grid Gaps` can be used to create 'gutters' between grid item.s</span>
+-   <span id="f90a">`Grid Gaps` can be used to create ‘gutters' between grid item.s</span>
 -   <span id="d7c0">The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.</span>
 -   <span id="cef6">We can also `implicitly` define grids.</span>
 
@@ -573,7 +557,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*_6nSuCOR34-6ET7n.gif" class="graf-image" />
-</figure>- <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
+</figure>-   <span id="e6c9">After a delay of two seconds, a four second transition begins where the font size goes from 36px to 14px.</span>
 
 <!-- -->
 
@@ -597,7 +581,7 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 </figure>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*Ya7xiy0AqJaJ9RPq.gif" class="graf-image" />
-</figure>- <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
+</figure>-   <span id="c336">When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.</span>
 
 ---
 
@@ -644,8 +628,6 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
     .form__submit--disabled {
     }
 
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
-
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
@@ -655,13 +637,8 @@ There are three members in the overflow family: — `overflow-x` : Apply hor
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-Or Checkout my personal Resource Site:
-
-<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
-<strong>a/A-Student-Resources</strong>
-<br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
-<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
-</a>
-
 on [March 6, 2021](https://medium.com/p/938871b4521a).
+
+learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a"
+
+on September 23, 2021.

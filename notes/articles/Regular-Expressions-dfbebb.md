@@ -1,16 +1,3 @@
----
-title: Regular Expressions
-weight: 0
-excerpt: Regular Expressions
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
----
-
 # Regular Expressions
 
 description:
@@ -373,17 +360,8 @@ The `Change` event activated when the user presses Enter sets the value of `RegE
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-Or Checkout my personal Resource Site:
-
-<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
-<strong>a/A-Student-Resources</strong>
-<br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
-<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
-</a>
-
 on [March 6, 2021](https://medium.com/p/4d8fb3eb146b).
 
 regular-expressions-4d8fb3eb146b"
 
-August 17, 2021.
+on September 23, 2021.

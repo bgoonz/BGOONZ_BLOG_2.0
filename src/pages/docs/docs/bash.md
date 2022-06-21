@@ -682,19 +682,19 @@ _If you want to run any bash script recursively all you have to do is substitue 
 
 ### Part 2 of this series:
 
-<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682">
+life-saving-bash-scripts-part-2-b40c8ee22682" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682">
 <strong>Medium</strong>
 <br />
 <em>Continued!!!medium.com</em>
 </a>
-<a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+life-saving-bash-scripts-part-2-b40c8ee22682" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
 </a>
 
 ---
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
+on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
-<a href="https://medium.com/@bryanguner/bash-commands-that-save-time-920fb6ab9d0a" class="p-canonical">Canonical link</a>
+bash-commands-that-save-time-920fb6ab9d0a"
 
 August 31, 2021.
 

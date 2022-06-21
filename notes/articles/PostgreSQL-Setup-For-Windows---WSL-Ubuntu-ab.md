@@ -1,20 +1,4 @@
----
-title: PostgreSQL Setup
-weight: 0
-excerpt: PostgreSQL Setup
-seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
-template: docs
----
-
 # PostgreSQL Setup For Windows & WSL/Ubuntu
-
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-<br>
 
 If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
 
@@ -24,7 +8,7 @@ If you follow this guide to a tee… you will install PostgreSQL itself on your 
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" />
-</figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
+</figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL ‘allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
 
 ### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
 
@@ -50,7 +34,7 @@ When you read "installation", that means the actual OS that's running on your ma
 
 To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL's commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
 
-Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86-64.
+Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86–64.
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
@@ -63,7 +47,7 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" />
-</figure>- <span id="e09d">Also, great looking directory. Thanks. Next.</span>
+</figure>-   <span id="e09d">Also, great looking directory. Thanks. Next.</span>
 
 ### Oooh! A password! I'll enter **\*\*\*\***. I sure won't forget that because, if I do, I'll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!**
 
@@ -184,7 +168,7 @@ In our examples we also use the Ramda library. See Ramda tutorial for more infor
 
 First, we install node-postgres.
 
-$ node -v
+$ node -v  
 v14.2
 
 $ npm init -y
@@ -203,15 +187,15 @@ cars.sql
 
 DROP TABLE IF EXISTS cars;
 
-CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);
-INSERT INTO cars(name, price) VALUES('Audi', 52642);
-INSERT INTO cars(name, price) VALUES('Mercedes', 57127);
-INSERT INTO cars(name, price) VALUES('Skoda', 9000);
-INSERT INTO cars(name, price) VALUES('Volvo', 29000);
-INSERT INTO cars(name, price) VALUES('Bentley', 350000);
-INSERT INTO cars(name, price) VALUES('Citroen', 21000);
-INSERT INTO cars(name, price) VALUES('Hummer', 41400);
-INSERT INTO cars(name, price) VALUES('Volkswagen', 21600);
+CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT);  
+INSERT INTO cars(name, price) VALUES(‘Audi', 52642);  
+INSERT INTO cars(name, price) VALUES(‘Mercedes', 57127);  
+INSERT INTO cars(name, price) VALUES(‘Skoda', 9000);  
+INSERT INTO cars(name, price) VALUES(‘Volvo', 29000);  
+INSERT INTO cars(name, price) VALUES(‘Bentley', 350000);  
+INSERT INTO cars(name, price) VALUES(‘Citroen', 21000);  
+INSERT INTO cars(name, price) VALUES(‘Hummer', 41400);  
+INSERT INTO cars(name, price) VALUES(‘Volkswagen', 21600);
 
 In some of the examples, we use this `cars` table.
 
@@ -221,12 +205,12 @@ In the first example, we connect to the PostgreSQL database and return a simple 
 
 first.js
 
-    const pg = require('pg');
-    const R = require('ramda');
-    const cs = 'postgres://postgres:s$cret@localhost:5432/ydb';
+    const pg = require(‘pg');
+    const R = require(‘ramda');
+    const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb';
     const client = new pg.Client(cs);
     client.connect();
-    client.query('SELECT 1 + 4').then(res => {
+    client.query(‘SELECT 1 + 4').then(res => {
 
     const result = R.head(R.values(R.head(res.rows)))
 
@@ -235,12 +219,12 @@ first.js
 
 The example connects to the database and issues a SELECT statement.
 
-    const pg = require('pg');
-    const R = require('ramda');
+    const pg = require(‘pg');
+    const R = require(‘ramda');
 
 We include the `pg` and `ramda` modules.
 
-    const cs = 'postgres://postgres:s$cret@localhost:5432/ydb';
+    const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb';
 
 This is the PostgreSQL connection string. It is used to build a connection to the database.
 
@@ -249,7 +233,7 @@ This is the PostgreSQL connection string. It is used to build a connection to th
 
 A client is created. We connect to the database with `connect()`.
 
-    client.query('SELECT 1 + 4').then(res => {
+    client.query(‘SELECT 1 + 4').then(res => {
 
     const result = R.head(R.values(R.head(res.rows)));
 
@@ -270,15 +254,15 @@ In the following example, we get the columns names of a database.
 
 > column_names.js
 
-    const pg = require('pg');
+    const pg = require(‘pg');
 
-    const cs = 'postgres://postgres:s$cret@localhost:5432/ydb';
+    const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb';
 
     const client = new pg.Client(cs);
 
     client.connect();
 
-    client.query('SELECT * FROM cars').then(res => {
+    client.query(‘SELECT * FROM cars').then(res => {
 
     const fields = res.fields.map(field => field.name);
 
@@ -293,7 +277,7 @@ In the following example, we get the columns names of a database.
 The column names are retrieved with `res.fields` attribute. We also use the `catch` clause to output potential errors.
 
     node column_names.js
-    'id', 'name', 'price'′id′,′name′,′price′
+    ‘id', ‘name', ‘price'′id′,′name′,′price′
 
 The output shows three column names of the `cars` table.
 
@@ -303,16 +287,16 @@ In the next example, we select all rows from the database table.
 
 > all_rows.js
 
-    const pg = require('pg');
-    const R = require('ramda');
+    const pg = require(‘pg');
+    const R = require(‘ramda');
 
-    const cs = 'postgres://postgres:s$cret@localhost:5432/ydb';
+    const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb';
 
     const client = new pg.Client(cs);
 
     client.connect();
 
-    client.query('SELECT * FROM cars').then(res => {
+    client.query(‘SELECT * FROM cars').then(res => {
 
     const data = res.rows;
 
@@ -330,8 +314,6 @@ In the next example, we select all rows from the database table.
     });
 
 **TBC…**
-
-#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
@@ -355,4 +337,4 @@ on [March 6, 2021](https://medium.com/p/801672ab7089).
 
 postgresql-setup-for-windows-wsl-ubuntu-801672ab7089"
 
-August 6, 2021.
+on September 23, 2021.

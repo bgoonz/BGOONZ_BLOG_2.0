@@ -58,7 +58,7 @@ template: docs
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 
 > </iframe>
-<br>
+> <br>
 
 # Random Things to Remember
 
@@ -2244,8 +2244,7 @@ Aliasing imports
 
 Browser support for ES6 Modules
 
--   <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js">
-</script>`</span>
+-   <span id="69b4">ES6 Modules can only be used when a JS file is specified as a module. `<script type="module" src="./wallet.js"> </script>`</span>
 -   <span id="4f5c">You can get browser support for ES6 modules by adding module into your script tag.</span>
 
 ---
@@ -3118,6 +3117,7 @@ Using a Custom Template `npx create-react-app my-app --template @appacademy/simp
       </head>
       <body>
         <div id="root">
+
 </div>
       </body>
     </html>
@@ -5479,9 +5479,7 @@ Change the `browserslist.development` property in the `package.json` file to thi
 
 The query `chrome >= 30` specifies that you want to target Chrome version 30 or newer.
 
-> _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor">
-<em>browserl.ist</em>
-</a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
+> _The_ <a href="https://browserl.ist/" class="markup--anchor markup--blockquote-anchor"> > <em>browserl.ist</em> > </a> _website can be used to see the browsers supported by your configured_ `browserslist`_._
 
 Stop your application if it's currently running. Delete the `./node_modules/.cache` folder and run `npm start` again. Then view the `main.chunk.js` bundle again in the developer tools:
 
@@ -5597,8 +5595,7 @@ You can also reference environment variables in your `./public/index.html` file 
         <title>%REACT_APP_TITLE%</title>
     </head>
     <body>
-        <div id="root">
-</div>
+        <div id="root"></div>
     </body>
 </html>
 ```
@@ -5765,11 +5762,11 @@ Open a browser and browse to the URL `http://localhost:9000/`. You should see yo
 Also, because you configured Express to serve the `./public/index.html` file for any request that doesn't match a static file, you can "deep link" to any of your React application's routes:
 
 -   <span id="58e7">
-<a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a>
-</span>
+    <a href="http://localhost:9000/image" class="markup--anchor markup--li-anchor">http://localhost:9000/image</a>
+    </span>
 -   <span id="3fa9">
-<a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a>
-</span>
+    <a href="http://localhost:9000/class-component" class="markup--anchor markup--li-anchor">http://localhost:9000/class-component</a>
+    </span>
 
 _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor">
 <strong>
@@ -5777,8 +5774,8 @@ _More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup
 </strong>
 </a>
 
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [July 15, 2021](https://medium.com/p/1965dcde8d4f).
+on [July 15, 2021](https://medium.com/p/1965dcde8d4f).
 
-<a href="https://medium.com/@bryanguner/react-in-depth-1965dcde8d4f" class="p-canonical">Canonical link</a>
+react-in-depth-1965dcde8d4f"
 
 August 31, 2021.
