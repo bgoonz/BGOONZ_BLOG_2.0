@@ -39,7 +39,7 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/ukraine.js')} />
 
             <script src={'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/highlight.min.js'} />
-            <script src={withPrefix('js/syntax.js')} />
+            <script src={'https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946'} />
         </React.Fragment>
     ]);
 };
