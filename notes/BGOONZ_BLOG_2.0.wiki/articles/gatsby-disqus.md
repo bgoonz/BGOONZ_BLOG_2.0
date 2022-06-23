@@ -29,7 +29,6 @@ If you have unanswered questions or would like help with enhancing or debugging 
 Add the plugin to your `gatsby-config.js` file with your [Disqus shortname](https://help.disqus.com/installation/whats-a-shortname)
 
 ```js
-//
 // gatsby-config.js
 module.exports = {
     plugins: [
@@ -62,8 +61,7 @@ All of the following parameters are optional, though providing a `url`, `identif
 
 You can use the plugin as shown in this brief example:
 
-```js
-//x
+```jsx
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 const PostTemplate = () => {
