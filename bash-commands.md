@@ -4,6 +4,7 @@
 
 <summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
+
 ## 99. Cheat Sheet
 
 ### Description
@@ -541,9 +542,16 @@ printf "${Red} This is red \n"
 
 ```
 
+
+
 </details>
 
+
+
 >
+
+
+
 
 #### Find
 
@@ -645,7 +653,6 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -655,7 +662,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
@@ -1024,7 +1031,6 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1639,7 +1645,7 @@ lebab --replace ./ --transform includes
 
 ###### code
 
-```
+```ps1
 
  wsl.exe --shutdown
 
@@ -1876,7 +1882,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code
 
-```
+```ps1
 
 PARAM (
     [string] $ZipFilesPath = "./",
