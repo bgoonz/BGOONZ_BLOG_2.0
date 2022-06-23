@@ -1568,8 +1568,7 @@ find . -type f -exec sed -n -e '/<code class="sourceCode javascript">/,/<\/code>
 
 
 
-find . -type f -exec sed -n -e '/```js
-///,/```/p' *.html >out.js ./* {} \;
+find . -type f -exec sed -n -e '/```js/,/```/p' *.html >out.js ./* {} \;
 
 
 sed -i 's/<script>//g' out.js

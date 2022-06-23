@@ -10,7 +10,7 @@
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
@@ -137,7 +137,6 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ## # code:
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -516,7 +515,6 @@ for d in ./*; do mv $d ${d:0:12}; done
 ## ## code
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1132,7 +1130,7 @@ lebab --replace ./ --transform includes
 
 ## ## code
 
-```
+```ps1
 
  wsl.exe --shutdown
 
@@ -1273,7 +1271,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ## ## code
 
-```
+```ps1
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -3003,7 +3001,6 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3045,7 +3042,6 @@ export default class ActionLink extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3079,7 +3075,6 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3152,7 +3147,6 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3183,7 +3177,6 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
-//
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -3366,7 +3359,6 @@ export default class Footer extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3504,7 +3496,6 @@ export default class Header extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3545,7 +3536,6 @@ export default class Icon extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -3614,7 +3604,6 @@ export default class Body extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3661,7 +3650,6 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3699,7 +3687,6 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3764,7 +3751,6 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3837,7 +3823,6 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3874,7 +3859,6 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3908,7 +3892,6 @@ export default class Submenu extends React.Component {
 ```
 
 ```js
-//
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -3978,7 +3961,6 @@ export default {
 ```
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -4013,7 +3995,6 @@ export default class Advanced extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -4101,7 +4082,6 @@ export default class Blog extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -4178,7 +4158,6 @@ export default class Docs extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -4228,7 +4207,6 @@ export default class Page extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
