@@ -65,11 +65,10 @@ But using strings is not recommended, use arrow functions instead of them, like 
     Novice developers sometimes make a mistake by adding brackets `()` after the function:
 
     ```js
-
-//
-// wrong!
-setTimeout(sayHi(), 1000);
-``` That doesn't work, because`setTimeout`expects a reference to a function. And here`sayHi()`runs the function, and the *result of its execution* is passed to`setTimeout`. In our case the result of `sayHi()`is`undefined` (the function returns nothing), so nothing is scheduled.
+    // wrong!
+    setTimeout(sayHi(), 1000);
+    ```
+    That doesn't work, because `setTimeout` expects a reference to a function. And here `sayHi()` runs the function, and the *result of its execution* is passed to `setTimeout`. In our case the result of `sayHi()` is `undefined` (the function returns nothing), so nothing is scheduled.
 
 ### Canceling with clearTimeout
 
@@ -128,11 +127,9 @@ So if you run the code above and don't dismiss the `alert` window for some time,
     One is `setInterval`. The other one is a nested `setTimeout`, like this:
 
     ```js
-
-//
-/\*_ instead of:
-let timerId = setInterval(() => alert('tick'), 2000);
-_/
+    /** instead of:
+    let timerId = setInterval(() => alert('tick'), 2000);
+    */
 
     let timerId = setTimeout(function tick() {
       alert('tick');
@@ -205,11 +202,9 @@ That's because a new call is planned at the end of the previous one.
     When a function is passed in `setInterval/setTimeout`, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
 
     ```js
-
-//
-// the function stays in memory until the scheduler calls it
-setTimeout(function() {...}, 100);
-```
+    // the function stays in memory until the scheduler calls it
+    setTimeout(function() {...}, 100);
+    ```
 
     For `setInterval` the function stays in memory until `clearInterval` is called.
 
@@ -237,11 +232,9 @@ There are also advanced browser-related use cases of a zero-delay timeout, that 
 
     Let's demonstrate what it means with the example below. The `setTimeout` call in it re-schedules itself with zero delay. Each call remembers the real time from the previous one in the `times` array. What do the real delays look like? Let's see:
 
-    ```js
-
-// run
-let start = Date.now();
-let times = [];
+    ```js run
+    let start = Date.now();
+    let times = [];
 
     setTimeout(function run() {
       times.push(Date.now() - start); // remember delay from the previous call

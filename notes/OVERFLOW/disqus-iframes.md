@@ -1846,931 +1846,931 @@ https://bgoonz-blog.netlify.app/readme/?:%5B%5E%7B%7D;%22%27%5D%7C%27%20+%20t" h
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/300-react-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/300-react-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/adding-css-to-your-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/adding-css-to-your-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/awesome-graphql/
-https://bgoonzblog20master.gtsb.io/blog" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/awesome-graphql/
+https://bgoonzblog20master.gatsbyjs.io/blog" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="data-structures-algorithms-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/flow-control-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/flow-control-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/functions-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/functions-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/grep-in-linuz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/grep-in-linuz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/intro-to-markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/intro-to-markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/platform-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/platform-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/web-dev-trends/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/web-dev-trends/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/eng-portfolio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/eng-portfolio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/internal-use/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/internal-use/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/README/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/README/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/about/youtube/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/about/youtube/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/archive/about/intrests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/archive/about/intrests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/archive/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/archive/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/basic-web-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/basic-web-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/buffers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/buffers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/dev-dep/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/dev-dep/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/event-loop/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/event-loop/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/how-search-engines-work/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/how-search-engines-work/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/how-the-web-works/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/how-the-web-works/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/nextjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/nextjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/node-env-variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/node-env-variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/os-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/os-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/reading-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/reading-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/semantic-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/semantic-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/semantic/
-https://bgoonzblog20master.gtsb.io/docs/articles" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/semantic/
+https://bgoonzblog20master.gatsbyjs.io/docs/articles" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="the-uniform-resource-locator-(url)/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/url/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/url/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/web-standards-checklist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/web-standards-checklist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/webdev-tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/webdev-tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/articles/writing-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/articles/writing-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/audio-feature-extraction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/audio-feature-extraction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/dfft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/dfft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/discrete-fft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/discrete-fft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/dynamic-time-warping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/dynamic-time-warping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/audio/web-audio-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/audio/web-audio-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/interview-dos-n-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/interview-dos-n-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/job-boards/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/job-boards/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/js-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/js-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/career/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/career/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/community/
-https://bgoonzblog20master.gtsb.io/docs/community" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/community/
+https://bgoonzblog20master.gatsbyjs.io/docs/community" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="an-open-letter-2-future-developers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/community/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/community/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/community/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/community/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/gatsby-Queries-Mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/gatsby-Queries-Mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/history-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/history-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/content/trouble-shooting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/content/trouble-shooting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/data-structures/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/data-structures/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/appendix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/appendix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/es-6-features/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/es-6-features/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/git-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/git-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/git-repos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/git-repos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/html-tags/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/html-tags/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/no-whiteboarding/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/no-whiteboarding/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/node-docs-complete/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/node-docs-complete/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/node-docs-full/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/node-docs-full/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/ds-by-example/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/ds-by-example/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/ds-overview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/ds-overview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/free-code-camp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/free-code-camp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/graph/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/graph/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/heaps/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/heaps/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/ds-algo/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/ds-algo/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/faq/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/faq/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/faq/contact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/faq/contact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/faq/plug-ins/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/faq/plug-ins/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/git/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/git/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/glossary/mathfloor/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/glossary/mathfloor/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/callstack-visual/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/callstack-visual/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/clock/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/clock/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/jupyter-notebooks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/jupyter-notebooks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/other-sites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/other-sites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interact/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interact/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interview/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interview/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interview/job-search-nav/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interview/job-search-nav/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interview/review-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interview/review-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/interview/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/interview/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/arrow-functions/
-https://bgoonzblog20master.gtsb.io/docs/javascript" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/arrow-functions/
+https://bgoonzblog20master.gatsbyjs.io/docs/javascript" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="asynchronous-javascript-and-xml/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/asyncjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/asyncjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/await-keyword/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/await-keyword/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/bigo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/bigo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/clean-code/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/clean-code/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/constructor-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/constructor-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/cs-basics-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/cs-basics-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/for-loops/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/for-loops/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/js-objects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/js-objects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/javascript/review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/javascript/review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/abs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/abs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/acos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/acos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/acosh/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/acosh/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/addition/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/addition/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/allsettled/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/allsettled/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/any/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/any/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/arrow_functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/arrow_functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/async_function/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/async_function/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/bad_radix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/bad_radix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/bind/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/bind/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/classes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/classes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/concat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/concat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/conditional_operator/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/conditional_operator/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/const/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/const/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/create/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/create/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/date/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/date/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/filter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/filter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/import/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/import/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/map/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/map/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/object/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/object/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/reduce/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/reduce/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/regexp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/regexp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/sort/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/sort/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/string/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/string/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/js-tips/var/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/js-tips/var/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/
-https://bgoonzblog20master.gtsb.io/docs/leetcode/004" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/
+https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/004" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Median_of_Two_Sorted_Arrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/009._Palindrome_Number/
-https://bgoonzblog20master.gtsb.io/docs/leetcode/010" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/009._Palindrome_Number/
+https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/010" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Regular_Expression_Matching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/013._Roman_to_Integer/
-https://bgoonzblog20master.gtsb.io/docs/leetcode/019" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/013._Roman_to_Integer/
+https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/019" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Remove_Nth_Node_From_End_of_List/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/029._Divide_Two_Integers/
-https://bgoonzblog20master.gtsb.io/docs/leetcode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/029._Divide_Two_Integers/
+https://bgoonzblog20master.gatsbyjs.io/docs/leetcode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="LetteCombinationoPhonNumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/NexPermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/NexPermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/PalindromNumber/
-https://bgoonzblog20master.gtsb.io/docs/leetcode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/PalindromNumber/
+https://bgoonzblog20master.gatsbyjs.io/docs/leetcode" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="RemovDuplicatefroSorteArray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/RomatInteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/RomatInteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/ValiParentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/ValiParentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/leetcode/ZigZaConversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/leetcode/ZigZaConversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/netlify-cms-jamstack/
-https://bgoonzblog20master.gtsb.io/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms-jamstack/
+https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="get-started-with-gatsby/
-https://bgoonzblog20master.gtsb.io/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/netlify-cms-jamstack/serverlessjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms-jamstack/serverlessjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/netlify-cms/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/netlify-cms/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/overflow/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/overflow/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/mini-projects2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/mini-projects2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/projects/recent/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/projects/recent/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/at-length/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/at-length/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/comprehensive-guide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/comprehensive-guide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/examples/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/examples/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/flow-control/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/flow-control/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/google-sheets-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/google-sheets-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/intro-for-js-devs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/intro-for-js-devs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/python-ds/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/python-ds/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/python-quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/python-quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/python/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/python/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/fetch/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/fetch/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/psql-setup/
-https://bgoonzblog20master.gtsb.io/docs/quick-ref" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/psql-setup/
+https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="python-builtin-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-ref/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-ref/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/google-firebase/
-https://bgoonzblog20master.gtsb.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/google-firebase/
+https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="heroku-error-codes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/installation/
-https://bgoonzblog20master.gtsb.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/installation/
+https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="new-repo-instructions/
-https://bgoonzblog20master.gtsb.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="pull-request-rubric/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/topRepos/
-https://bgoonzblog20master.gtsb.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/topRepos/
+https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="understanding-path/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/quick-reference/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/quick-reference/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/complete-react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/complete-react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/createReactApp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/createReactApp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/demo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/demo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/dont-use-index-as-keys/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/dont-use-index-as-keys/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/jsx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/jsx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/react-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/react-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/react-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/react-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/react-patterns-by-usecase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/react-patterns-by-usecase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/react2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/react2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/react/render-elements/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/react/render-elements/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/awesome-lists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/awesome-lists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/awesome-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/awesome-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/awesome-static/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/awesome-static/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/bash-commands/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/bash-commands/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/embed-the-web/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/embed-the-web/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/github-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/github-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/github-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/github-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/google-cloud/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/google-cloud/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/how-2-reinstall-npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/how-2-reinstall-npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/how-to-kill-a-process/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/how-to-kill-a-process/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/installing-node/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/installing-node/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/intro-to-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/intro-to-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/markdown-styleguide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/markdown-styleguide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/notes-template/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/notes-template/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/psql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/psql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/vscode/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/vscode/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/reference/web-api%27s/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/reference/web-api%27s/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/sitemap" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/
-https://bgoonzblog20master.gtsb.io/docs/tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/
+https://bgoonzblog20master.gatsbyjs.io/docs/tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="7-tips-to-become-a-better-web-developer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/decrement/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/decrement/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/regex-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/regex-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/storybook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/storybook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tips/web-accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tips/web-accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/all-stripped/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/all-stripped/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/Archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/Archive" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/dev-utilities/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/dev-utilities/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/embeds-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/embeds-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tools/markdown-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tools/markdown-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/algolia-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/algolia-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/bash-commands-my/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/bash-commands-my/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/enviorment-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/enviorment-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/get-file-extension/
-https://bgoonzblog20master.gtsb.io/docs/tutorials" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/get-file-extension/
+https://bgoonzblog20master.gatsbyjs.io/docs/tutorials" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="how-to-use-google-sheets-as-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gtsb.io/docs/tutorials/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master.gatsbyjs.io/docs/tutorials/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonzblog20master" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
