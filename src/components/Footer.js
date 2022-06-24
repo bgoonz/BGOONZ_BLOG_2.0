@@ -1,20 +1,3 @@
-/* I'm trying to add a link to a PDF conversion service to the footer of my site. 
-
-I've tried a few different approaches, but I'm not sure how to get the link to work. 
-
-I've tried adding the link to the footer.yaml file, but that didn't work. 
-
-I've tried adding the link to the footer.html file, but that didn't work. 
-
-I've tried adding the link to the footer.js file, but that didn't work. 
-
-I've tried adding the link to the footer.jsx file, but that didn't work. 
-
-I've tried adding the link to the footer.jsx file, but that didn't work. 
-
-I've tried adding the link to the footer.jsx file, but that didn't work. 
-
-I've tried adding the link to the */
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
