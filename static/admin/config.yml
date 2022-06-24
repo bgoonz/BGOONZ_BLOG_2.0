@@ -163,7 +163,14 @@ collections:
                 required: false,
                 hint: 'Short description, will be shown in page listing (ie, listing all posts from this category)'
             }
-          - { name: link, label: Listing page URL, widget: string, default: "blog/category/<newcatid>", pattern: ["blog/category/.+", "URL needs to start with `blog/category/`"], hint: "This is the URL of the page that will list all pages for this category." }  # disable to leave empty, there will be no link and no issue but no listing
+          - {
+                name: link,
+                label: Listing page URL,
+                widget: string,
+                default: 'blog/category/<newcatid>',
+                pattern: ['blog/category/.+', 'URL needs to start with `blog/category/`'],
+                hint: 'This is the URL of the page that will list all pages for this category.'
+            } # disable to leave empty, there will be no link and no issue but no listing
     - name: blog-tags
       label: BlogTags
       folder: src/data/tags
