@@ -367,7 +367,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Default Statcounter code for 2
-    https://bgoonz-blog.netlify.app/ -->
+    https://syntax-highlight.netlify.app/ -->
     <script type="text/javascript">
     var sc_project=12702211;
     var sc_invisible=0;
@@ -2947,11 +2947,11 @@ Inject analytics or other scripts into the HTML of your site.
   <meta data-react-helmet="true" property="og:type" content="website">
   <meta data-react-helmet="true" property="og:title" content="Web-Dev-Hub">
   <meta data-react-helmet="true" property="og:description" content="The preview of the Web-Dev-Hub">
-  <meta data-react-helmet="true" property="og:image" content="https://bgoonz-blog.netlify.app/images/4.jpg">
+  <meta data-react-helmet="true" property="og:image" content="https://syntax-highlight.netlify.app/images/4.jpg">
   <meta data-react-helmet="true" name="twitter:card" content="summary_large_image">
   <meta data-react-helmet="true" name="twitter:title" content="Web-Dev-Hub">
   <meta data-react-helmet="true" name="twitter:description" content="The preview of the Web-Dev-Hub">
-  <meta data-react-helmet="true" name="twitter:image" content="https://bgoonz-blog.netlify.app/images/4.jpg">
+  <meta data-react-helmet="true" name="twitter:image" content="https://syntax-highlight.netlify.app/images/4.jpg">
   <link as="script" rel="preload" href="/webpack-runtime-45751f54f7424d040e60.js">
   <link as="script" rel="preload" href="/framework-acf2edd04f295a3bec1d.js">
   <link as="script" rel="preload" href="/app-3c57265fe85c14101a0f.js">
@@ -8609,19 +8609,19 @@ Inject analytics or other scripts into the HTML of your site.
     <meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="og:url" content="https://syntax-highlight.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web-Dev-Hub">
     <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta property="og:image" content="https://syntax-highlight.netlify.app/images/code.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="bgoonz-blog.netlify.app">
-    <meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="twitter:url" content="https://syntax-highlight.netlify.app/">
     <meta name="twitter:title" content="Web-Dev-Hub">
     <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta name="twitter:image" content="https://syntax-highlight.netlify.app/images/code.png">
     ```
 
     Remove
@@ -10491,19 +10491,19 @@ Inject analytics or other scripts into the HTML of your site.
     <meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="og:url" content="https://syntax-highlight.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web-Dev-Hub">
     <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta property="og:image" content="https://syntax-highlight.netlify.app/images/code.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="bgoonz-blog.netlify.app">
-    <meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="twitter:url" content="https://syntax-highlight.netlify.app/">
     <meta name="twitter:title" content="Web-Dev-Hub">
     <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta name="twitter:image" content="https://syntax-highlight.netlify.app/images/code.png">
     ```
 
     Remove

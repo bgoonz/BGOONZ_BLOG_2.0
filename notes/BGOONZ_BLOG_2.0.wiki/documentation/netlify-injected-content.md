@@ -841,19 +841,19 @@
     <meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="og:url" content="https://syntax-highlight.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web-Dev-Hub">
     <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta property="og:image" content="https://syntax-highlight.netlify.app/images/code.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="bgoonz-blog.netlify.app">
-    <meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="twitter:url" content="https://syntax-highlight.netlify.app/">
     <meta name="twitter:title" content="Web-Dev-Hub">
     <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta name="twitter:image" content="https://syntax-highlight.netlify.app/images/code.png">
     ```
 
     Remove

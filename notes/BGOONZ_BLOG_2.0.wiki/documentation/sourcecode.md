@@ -1,7 +1,6 @@
-# Source Code
+# Source Code:
 
 <details>
-
 <summary> Folder Structure (src)  </summary>
 
 ```
@@ -319,7 +318,7 @@
 <details>
 <summary> Click To See Component Sourcecode  </summary>
 
-# Component Structure
+# Component Structure:
 
 ```
 .
@@ -348,6 +347,7 @@
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -389,6 +389,7 @@ export default class ActionLink extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -422,6 +423,7 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -494,6 +496,7 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -524,6 +527,7 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
+//
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -536,11 +540,13 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
+                <div id="search">
+</div>
                 <div>
                     <center>
                         <br />
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-
+                        <div id="search"> {Script} </div>
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
@@ -693,6 +699,8 @@ export default class Footer extends React.Component {
                         )}{' '}
                     </div>
                 </div>
+                <div id="search">
+</div>
             </footer>
         );
     }
@@ -702,6 +710,7 @@ export default class Footer extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -836,6 +845,7 @@ export default class Header extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -876,6 +886,7 @@ export default class Icon extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -944,6 +955,7 @@ export default class Body extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -990,6 +1002,7 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1027,6 +1040,7 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1091,6 +1105,7 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1163,6 +1178,7 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1199,6 +1215,7 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 
@@ -1231,7 +1248,7 @@ export default class Submenu extends React.Component {
 }
 ```
 
-```js
+````js
 //
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
@@ -1283,26 +1300,30 @@ export default {
     Layout,
     addScript
 };
-```
 
-</details>
+```</details>
+
+
 
 <details>
 <summary> Click To See Template Sourcecode  </summary>
 
 # Templates
 
-```
+````
 
 ├── advanced.js
 ├── blog.js
 ├── docs.js
 ├── page.js
 └── post.js
-```
+
+````
+
 
 ```js
 //
+
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1332,11 +1353,12 @@ export default class Advanced extends React.Component {
         );
     }
 }
-```
+````
 
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -1424,6 +1446,7 @@ export default class Blog extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1500,6 +1523,7 @@ export default class Docs extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -1549,6 +1573,7 @@ export default class Page extends React.Component {
 ---
 
 ```js
+//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';

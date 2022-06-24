@@ -1,6 +1,7 @@
 # [full text search example](https://github.com/side-projects-42/stackbit-gatsby-theme-diy-libris/blob/master/src/components/SearchBar.js)
 
 ```js
+//
 import React from 'react';
 
 import { Link } from 'gatsby';

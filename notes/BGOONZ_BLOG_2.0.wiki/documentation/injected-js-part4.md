@@ -55,7 +55,7 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
@@ -127,7 +127,7 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 <br>
@@ -417,7 +417,7 @@ Inject analytics or other scripts into the HTML of your site.
       <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner">
       <meta name="twitter:description" content="The new home of my blog resource sharing website.">
       <link
-        href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png"
+        href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
         rel="apple-touch-icon">
       <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
     ```
@@ -725,19 +725,19 @@ Inject analytics or other scripts into the HTML of your site.
     <meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="og:url" content="https://syntax-highlight.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web-Dev-Hub">
     <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta property="og:image" content="https://syntax-highlight.netlify.app/images/code.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="bgoonz-blog.netlify.app">
-    <meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="twitter:url" content="https://syntax-highlight.netlify.app/">
     <meta name="twitter:title" content="Web-Dev-Hub">
     <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
-    <meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+    <meta name="twitter:image" content="https://syntax-highlight.netlify.app/images/code.png">
     ```
 
     Remove
@@ -911,7 +911,7 @@ Inject analytics or other scripts into the HTML of your site.
       <meta name="twitter:description" content="The new home of my blog resource sharing website.">
     <meta property="twitter:card" content="summary_large_image">
       <link
-        href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png"
+        href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
         rel="apple-touch-icon">
       <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
     <meta property="og:image" content="https://mugshotbot.com/m/DROicc16">
