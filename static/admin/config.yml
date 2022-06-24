@@ -2,7 +2,7 @@
 # It's here used only for blog posts and docs pages, to ease edits from external contributors
 # for all options, see https://www.netlifycms.org/docs/configuration-options/
 
-site_url: https://bgoonz-blog.netlify.app/
+site_url: https://syntax-highlight.netlify.app/
 
 publish_mode: editorial_workflow # do not commit directly, fork to a branch first and create a pull request, this is necessary for the open_authoring option
 
@@ -17,10 +17,10 @@ public_folder: /images/uploads # url to media files when deployed
 
 show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
 
-# site_url: https://your-site.com  # edit and uncomment this line to enable previews
-# display_url: https://your-site.com
-# logo_url: https://your-site.com/images/logo.svg  # custom logo
-# locale: 'en'  # UI language
+
+display_url: https://bgoonz-blog.netlify.app/
+logo_url: https://bgoonz-blog.netlify.app//images/logo.svg  # custom logo
+locale: 'en'  # UI language
 
 collections:
     - name: docs

@@ -22,7 +22,7 @@ app.get('/image', async (req, res) => {
         browser = await getBrowser();
         const page = await browser.newPage();
 
-        await page.goto('https://bgoonz-blog.netlify.app/');
+        await page.goto('https://syntax-highlight.netlify.app/');
         const screenshot = await page.screenshot();
 
         res.end(screenshot, 'binary');

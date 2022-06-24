@@ -1,6 +1,9 @@
 
+
 ## Getting Started
 # [**⇨WEBSITE🗺️⇦**](https://syntax-highlight.netlify.app/)
+
+
 
 </div>
 
@@ -452,6 +455,8 @@ get in touch! +1 (551) - 254 - 5505
 [Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/) [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
 
 ---
+
+
 
 <details>
 

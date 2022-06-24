@@ -56,8 +56,7 @@ You can also use the `package.json` script variant of these commands, typically 
 
 package.json
 
-```js
-//on
+```json
 //package.json
 
 {
@@ -308,8 +307,7 @@ In it you’re going to see something like this.
 
 config.json
 
-```js
-//on
+```json
 {
     "cli": {
         "packageManager": "yarn"

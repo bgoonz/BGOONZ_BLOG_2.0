@@ -1,31 +1,29 @@
-root_docs_path: /docs
-sections:
     - about
+    - archive
     - articles
     - audio
     - career
     - community
-    - content📁
+    - content
     - css
     - docs
     - ds-algo
-    - ds-algo🖧
     - faq
     - fetch-api
-    - git📁
-    - index.md
+    - git
     - interact
-    - interview
     - javascript
     - js-tips
     - leetcode
+    - netlify-cms-jamstack
     - overflow
     - projects
     - python
     - quick-ref
     - react
     - reference
-    - tools
     - tips
+    - tools
     - tutorials
     - typescript
+    - 

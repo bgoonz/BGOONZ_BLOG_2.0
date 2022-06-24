@@ -18,7 +18,6 @@ Understanding [hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 ---
 
 ```js
-//
 
 
 function doTheThing() {
