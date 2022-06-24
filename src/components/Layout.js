@@ -1,3 +1,4 @@
+/* The Body class is a React component that renders the page's body */
 import _ from "lodash";
 import React from "react";
 import {Helmet} from "react-helmet";

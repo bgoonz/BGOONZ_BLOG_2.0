@@ -4048,7 +4048,7 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```bash
+        ```console
         npm install -g typescript
         ```
 
@@ -5254,7 +5254,7 @@ Cons
 
 229. What are the various statements in error handling
 
-             ```bash
+             ```console
              Uncaught SyntaxError: Identifier 'someVariable' has already been declared
              ```
 
@@ -7116,7 +7116,7 @@ Cons
      (![] + [] === 'false' + !+[]) === 1;
      ```
 
-             ```bash
+             ```console
              Script loaded
              My script is initialized
              ```
@@ -7139,7 +7139,7 @@ Cons
 
      You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
 
-             ```bash
+             ```console
              My script is initialized
              Script loaded
              ```

@@ -61,6 +61,8 @@ template: docs
 > Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png
 
 
+> Visual_Studio_Code_logo.png
+
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Visual_Studio_Code_logo.png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Visual_Studio_Code_logo.png?raw=true)
 
 > algolia.png
