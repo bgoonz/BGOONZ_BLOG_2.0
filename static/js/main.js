@@ -146,7 +146,7 @@ window.addPageNavLinks = function() {
       }
     });
   }
-}
+};
 
 window.removePageNavLinks = function() {
   const pageToc = document.getElementById('page-nav-inside');
@@ -158,7 +158,7 @@ window.removePageNavLinks = function() {
       pageTocContainer.removeChild(pageTocContainer.firstChild);
     }
   }
-}
+};
 
 function getElementsByTagNames(root, tagNames) {
   let elements = [];
