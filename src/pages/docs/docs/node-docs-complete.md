@@ -2600,7 +2600,7 @@ Take this example:
 </iframe>
 <br>
 
-````js
+```js
 //
 
 const bar = () => console.log('bar')
@@ -2631,7 +2631,7 @@ baz
 
 bar
 
-````
+```
 
 When this code runs, first foo() is called. Inside foo() we first call setTimeout, passing `bar` as an argument, and we instruct it to run immediately as fast as it can, passing 0 as the timer. Then we call baz().
 
@@ -2690,7 +2690,7 @@ foo();
 
 This prints
 
-````txt
+```txt
 
 foo
 
@@ -2723,7 +2723,7 @@ When we pass a function to `process.nextTick()`, we instruct the engine to invok
 process.nextTick(() => {
     //do something
 });
-````
+```
 
 The event loop is busy processing the current function code.
 
@@ -3580,7 +3580,7 @@ console.log('After');
 
 The above code will print the following to the browser console:
 
-````
+```
 
 Before
 
@@ -3605,7 +3605,7 @@ const aFunction = async () => {
 };
 
 aFunction().then(alert); // This will alert 'test'
-````
+```
 
 and it's the same as:
 
@@ -3698,7 +3698,7 @@ watchOverSomeoneWatchingSomeoneDoingSomething().then((res) => {
 
 Will print:
 
-````
+```
 
 I did something and I watched and I watched as well
 
@@ -3727,7 +3727,7 @@ You initialize that using
 const EventEmitter = require('events');
 
 const eventEmitter = new EventEmitter();
-````
+```
 
 This object exposes, among many others, the `on` and `emit` methods.
 
@@ -3795,7 +3795,7 @@ Here is a sample Hello World HTTP web server:
 </iframe>
 <br>
 
-````js
+```js
 //
 
 const http = require('http')
@@ -3837,7 +3837,7 @@ In this case with
 ```js
 //
 res.statusCode = 200;
-````
+```
 
 we set the statusCode property to 200, to indicate a successful response.
 
