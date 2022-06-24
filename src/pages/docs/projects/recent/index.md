@@ -76,19 +76,19 @@ excerpt: recent projects and websites
 
 ---
 
- <iframe src="https://syntax-highlight.netlify.app/" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
+ <iframe src="https://bgoonz-blog.netlify.app//" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
 
 ---
 
 ---
 
- <iframe src="https://syntax-highlight.netlify.app/blog/" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
+ <iframe src="https://bgoonz-blog.netlify.app//blog/" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
 
 ---
 
 ---
 
- <iframe src="https://syntax-highlight.netlify.app/blog/data-structures/" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
+ <iframe src="https://bgoonz-blog.netlify.app//blog/data-structures/" style="width:1000px; height:1200px;" loading="lazy" allowtransparency="true" allowfullscreen></iframe>
 
 ---
 
