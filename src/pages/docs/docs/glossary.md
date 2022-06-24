@@ -7856,7 +7856,7 @@ Should you choose `row` or `row-reverse` then your main axis will run along the 
 
 Choose `column` or `column-reverse` and your main axis will run top to bottom of the page in the block direction.
 
-![](basics2.png)
+![alt-text](basics2.png)
 
 On the main axis you can control the sizing of flex items by adding any available space to the items themselves, by way of `flex` properties on the items. Or, you can control the space between and around items by using the `justify-content` property.
 
@@ -11520,7 +11520,7 @@ For example:
 
 Most authentication occurs only at the start of a _glossary("TCP"_) session. In TCP session hijacking, an attacker gains access by taking over a TCP session between two machines in mid session.
 
-![](session_hijacking_3.jpg)
+![alt-text](session_hijacking_3.jpg)
 
 ### Session hijacking occurs because
 
@@ -12009,11 +12009,11 @@ The calculation calculates what percent of the page is visually complete at ever
 
 SQL injection can gain unauthorized access to a database or to retrieve information directly from the database. Many data breaches are due to SQL injection.
 
-[![](sql_inj_xss.gif)](https://www.acunetix.com/wp-content/uploads/2010/09/sql_inj_xss.gif)
+[![alt-text](sql_inj_xss.gif)](https://www.acunetix.com/wp-content/uploads/2010/09/sql_inj_xss.gif)
 
 ## How It Works
 
-![](updates_loginscreen.png)
+![alt-text](updates_loginscreen.png)
 
 After entering username and password, behind the GUI the SQL queries work as follows:
 
@@ -12170,13 +12170,13 @@ There are two types of basic state machines:
 
 _Figure 1: Deterministic Finite State Machine_
 
-![](statemachine1.png)
+![alt-text](statemachine1.png)
 
 In _Figure 1_, the state begins in State 1; the state changes to State 2 given input 'X', or to State 3 given input 'Y'.
 
 _Figure 2: Non-Deterministic Finite State Machine_
 
-[![](statemachine2.png)](http://postimg.org/image/mpq3nz82h/)
+[![alt-text](statemachine2.png)](http://postimg.org/image/mpq3nz82h/)
 
 In _Figure 2_, given input 'X', the state can persist or change to State 2.
 

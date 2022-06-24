@@ -353,12 +353,12 @@ Pull requests with only successful statuses:
 
 For example, to syntax highlight Ruby code in your Markdown files write:
 
-    ```ruby
+ ```ruby
     require 'tabbit'
     table = Tabbit.new('Name', 'Email')
     table.add_row('Tim Green', 'tiimgreen@gmail.com')
     puts table.to_s
-    ```
+ ```
 
 This will produce:
 
