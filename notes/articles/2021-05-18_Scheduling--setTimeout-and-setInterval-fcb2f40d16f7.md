@@ -209,8 +209,7 @@ That's because a new call is planned at the end of the previous one.
 //
 // the function stays in memory until the scheduler calls it
 setTimeout(function() {...}, 100);
-
-````
+```
 
     For `setInterval` the function stays in memory until `clearInterval` is called.
 
@@ -290,4 +289,3 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/scheduling-settimeout-and-setinterval-fcb2f40d16f7" class="p-canonical">Canonical link</a>
 
 on September 23, 2021.
-````
