@@ -17,10 +17,9 @@ public_folder: /images/uploads # url to media files when deployed
 
 show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-links/
 
-
 display_url: https://bgoonz-blog.netlify.app/
-logo_url: https://bgoonz-blog.netlify.app//images/main-logo.png  # custom logo
-locale: 'en'  # UI language
+logo_url: https://bgoonz-blog.netlify.app//images/main-logo.png # custom logo
+locale: 'en' # UI language
 
 collections:
     - name: docs
@@ -28,9 +27,9 @@ collections:
       folder: src/pages/docs
       create: true
       #path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
-      slug: '{{title}}/index'
-      preview_path: 'src/pages/docs/preview/{{slug}}'
-      #extension: md
+      slug: '{{title}}/{{title}}'
+      preview_path: 'src/pages/doc/{{slug}}'
+      extension: md
       media_folder: '{{media_folder}}/docs'
       # adding a nested object will show the collection folder structure, see https://www.netlifycms.org/docs/beta-features/#nested-collections and https://github.com/netlify/netlify-cms/issues/4741#issuecomment-748627801
       summary: '{{title}} (last modified {{commit_date}})' # text displayed as the name of each entry in the UI listing
@@ -164,7 +163,7 @@ collections:
                 required: false,
                 hint: 'Short description, will be shown in page listing (ie, listing all posts from this category)'
             }
-          #- { name: link, label: Listing page URL, widget: string, default: "blog/category/<newcatid>", pattern: ["blog/category/.+", "URL needs to start with `blog/category/`"], hint: "This is the URL of the page that will list all pages for this category." }  # disable to leave empty, there will be no link and no issue but no listing
+          - { name: link, label: Listing page URL, widget: string, default: "blog/category/<newcatid>", pattern: ["blog/category/.+", "URL needs to start with `blog/category/`"], hint: "This is the URL of the page that will list all pages for this category." }  # disable to leave empty, there will be no link and no issue but no listing
     - name: blog-tags
       label: BlogTags
       folder: src/data/tags
