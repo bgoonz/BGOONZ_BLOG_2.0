@@ -2,7 +2,7 @@
     padding-top: 3.75em;
 
     &:not(.block-hero) {
-        background: white;
+        background: $gray-100;
     }
 
     &:last-child {
@@ -19,7 +19,6 @@
 }
 
 .block-title {
-    align-self: center;
     margin: 0;
 }
 
@@ -103,19 +102,21 @@
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1201px) {
     .block-text {
         .grid-item {
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-                max-width: 90%;
+                max-width: 50%;
             }
         }
     }
 
     .block-body {
         &:not(:only-child) {
+            text-align: left;
+
             .block-buttons {
                 -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -132,14 +133,14 @@
 @media only screen and (min-width: 1001px) {
     .block-image {
         &:not(:only-child) {
-            padding-right: 0.5em;
+            padding-right: 2.5em;
         }
     }
 
     .grid-swap {
         .block-image {
             &:not(:only-child) {
-                padding-left: 0.5em;
+                padding-left: 2.5em;
                 padding-right: 0.9375em;
             }
         }
@@ -189,17 +190,17 @@
         }
 
         .block-buttons {
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+            -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
             margin-top: 0;
-            max-width: 50%;
+            max-width: 33.333%;
         }
     }
 }
 
 // Grid section
 .block-grid {
-    .block-hero + & {
+    .block-hero+& {
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
@@ -216,8 +217,6 @@
     }
 
     .grid-item {
-        text-align: center;
-
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -278,7 +277,7 @@
         &:not(.button) {
             &:after {
                 font-size: 1.125em;
-                content: '\2192';
+                content: "\2192";
                 line-height: 1.5;
                 margin-left: 5px;
             }
@@ -313,7 +312,7 @@
         line-height: 1.5;
     }
 
-    & + .block {
+    &+.block {
         margin-top: -5em;
         position: relative;
     }

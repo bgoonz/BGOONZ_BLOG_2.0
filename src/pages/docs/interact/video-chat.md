@@ -1,7 +1,7 @@
 ---
 title: Zumzi Video Conferencing (Mesibo API Backend)
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Video chat front end app
 seo:
     title: 'Zumzi Video Conference:'
     description: |-
@@ -35,10 +35,10 @@ template: docs
 
 # Zumzi Video Conference:
 
-<iframe class="block-content" width="100%  width="800" height="575"
-        src="https://zumzi-chat-messenger.vercel.app/web/login.html" title="YouTube video
-        player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%  width="1000px" height="1400px"
+        src="https://zumzi-chat-messenger.vercel.app/web/login.html">
+</iframe>
+<br>
 
 ## Zumzi Live Demo
 
@@ -94,7 +94,7 @@ There are two sub-folders:
 ---
 
 -   namespace
-    > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo’s isolation model
+    > in mesibo is refer to a mesibo feature that isolates users and groups of an application from another application. Users can only interact with users and groups of the same application that are part of the same namespace. Namespaces are an important part of Mesibo's isolation model
 
 ---
 
@@ -119,51 +119,52 @@ There are two sub-folders:
 
 ---
 
-![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
+![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.png?raw=true)
 
+```
 [.](.)<br>
-├── [./backend](./backend)<br>
-│   ├── [./backend/activation.php](./backend/activation.php)<br>
-│   ├── [./backend/api_functions.php](./backend/api_functions.php)<br>
-│   ├── [./backend/api.php](./backend/api.php)<br>
-│   ├── [./backend/captcha.php](./backend/captcha.php)<br>
-│   ├── [./backend/config.php](./backend/config.php)<br>
-│   ├── [./backend/consts.php](./backend/consts.php)<br>
-│   ├── [./backend/db.sql](./backend/db.sql)<br>
-│   ├── [./backend/errorhandler.php](./backend/errorhandler.php)<br>
-│   ├── [./backend/httpheaders.php](./backend/httpheaders.php)<br>
-│   ├── [./backend/image.php](./backend/image.php)<br>
-│   ├── [./backend/json.php](./backend/json.php)<br>
-│   ├── [./backend/mesiboapi.php](./backend/mesiboapi.php)<br>
-│   ├── [./backend/mesibohelper.php](./backend/mesibohelper.php)<br>
-│   ├── [./backend/mysqldb.php](./backend/mysqldb.php)<br>
-│   ├── [./backend/mysql-wrapper.php](./backend/mysql-wrapper.php)<br>
-│   ├── [./backend/README.md](./backend/README.md)<br>
-│   ├── [./backend/upload.php](./backend/upload.php)<br>
-│   └── [./backend/utility.php](./backend/utility.php)<br>
-├── [./glossary_files](./glossary_files)<br>
-│   ├── [./glossary_files/559862854355634.js](./glossary_files/559862854355634.js)<br>
-│   ├── [./glossary_files/analytics.js](./glossary_files/analytics.js)<br>
-│   ├── [./glossary_files/archive.js](./glossary_files/archive.js)<br>
-│   ├── [./glossary_files/bootstrap.min.css](./glossary_files/bootstrap.min.css)<br>
-│   ├── [./glossary_files/bootstrap.min.js](./glossary_files/bootstrap.min.js)<br>
-│   ├── [./glossary_files/buttons.js](./glossary_files/buttons.js)<br>
-│   ├── [./glossary_files/collections_tocs.js](./glossary_files/collections_tocs.js)<br>
-│   ├── [./glossary_files/css.css](./glossary_files/css.css)<br>
-│   ├── [./glossary_files/docs.js](./glossary_files/docs.js)<br>
-│   ├── [./glossary_files/fbevents.js](./glossary_files/fbevents.js)<br>
-│   ├── [./glossary_files/font-awesome.min.css](./glossary_files/font-awesome.min.css)<br>
-│   ├── [./glossary_files/github.css](./glossary_files/github.css)<br>
-│   ├── [./glossary_files/glossary.js](./glossary_files/glossary.js)<br>
-│   ├── [./glossary_files/jquery.js](./glossary_files/jquery.js)<br>
-│   ├── [./glossary_files/menu.js](./glossary_files/menu.js)<br>
-│   ├── [./glossary_files/mesibo-logo.svg](./glossary_files/mesibo-logo.svg)<br>
-│   ├── [./glossary_files/mesibo-logo-white.png](./glossary_files/mesibo-logo-white.png)<br>
-│   ├── [./glossary_files/metadata.js](./glossary_files/metadata.js)<br>
-│   ├── [./glossary_files/perldoc.css](./glossary_files/perldoc.css)<br>
-│   ├── [./glossary_files/stickyfill.min.js](./glossary_files/stickyfill.min.js)<br>
-│   ├── [./glossary_files/style.css](./glossary_files/style.css)<br>
-│   └── [./glossary_files/toc.js](./glossary_files/toc.js)<br>
+├── [./backend](./backend)
+│ ├── [./backend/activation.php](./backend/activation.php)
+│ ├── [./backend/api_functions.php](./backend/api_functions.php)
+│ ├── [./backend/api.php](./backend/api.php)
+│ ├── [./backend/captcha.php](./backend/captcha.php)
+│ ├── [./backend/config.php](./backend/config.php)
+│ ├── [./backend/consts.php](./backend/consts.php)
+│ ├── [./backend/db.sql](./backend/db.sql)
+│ ├── [./backend/errorhandler.php](./backend/errorhandler.php)
+│ ├── [./backend/httpheaders.php](./backend/httpheaders.php)
+│ ├── [./backend/image.php](./backend/image.php)
+│ ├── [./backend/json.php](./backend/json.php)
+│ ├── [./backend/mesiboapi.php](./backend/mesiboapi.php)
+│ ├── [./backend/mesibohelper.php](./backend/mesibohelper.php)
+│ ├── [./backend/mysqldb.php](./backend/mysqldb.php)
+│ ├── [./backend/mysql-wrapper.php](./backend/mysql-wrapper.php)
+│ ├── [./backend/README.md](./backend/README.md)
+│ ├── [./backend/upload.php](./backend/upload.php)
+│ └── [./backend/utility.php](./backend/utility.php)
+├── [./glossary_files](./glossary_files)
+│ ├── [./glossary_files/559862854355634.js](./glossary_files/559862854355634.js)
+│ ├── [./glossary_files/analytics.js](./glossary_files/analytics.js)
+│ ├── [./glossary_files/archive.js](./glossary_files/archive.js)
+│ ├── [./glossary_files/bootstrap.min.css](./glossary_files/bootstrap.min.css)
+│ ├── [./glossary_files/bootstrap.min.js](./glossary_files/bootstrap.min.js)
+│ ├── [./glossary_files/buttons.js](./glossary_files/buttons.js)
+│ ├── [./glossary_files/collections_tocs.js](./glossary_files/collections_tocs.js)
+│ ├── [./glossary_files/css.css](./glossary_files/css.css)
+│ ├── [./glossary_files/docs.js](./glossary_files/docs.js)
+│ ├── [./glossary_files/fbevents.js](./glossary_files/fbevents.js)
+│ ├── [./glossary_files/font-awesome.min.css](./glossary_files/font-awesome.min.css)
+│ ├── [./glossary_files/github.css](./glossary_files/github.css)
+│ ├── [./glossary_files/glossary.js](./glossary_files/glossary.js)
+│ ├── [./glossary_files/jquery.js](./glossary_files/jquery.js)
+│ ├── [./glossary_files/menu.js](./glossary_files/menu.js)
+│ ├── [./glossary_files/mesibo-logo.svg](./glossary_files/mesibo-logo.svg)
+│ ├── [./glossary_files/mesibo-logo-white.png](./glossary_files/mesibo-logo-white.png)
+│ ├── [./glossary_files/metadata.js](./glossary_files/metadata.js)
+│ ├── [./glossary_files/perldoc.css](./glossary_files/perldoc.css)
+│ ├── [./glossary_files/stickyfill.min.js](./glossary_files/stickyfill.min.js)
+│ ├── [./glossary_files/style.css](./glossary_files/style.css)
+│ └── [./glossary_files/toc.js](./glossary_files/toc.js)<br>
 ├── [./glossary.html](./glossary.html)<br>
 ├── [./index.html](./index.html)<br>
 ├── [./package-lock.json](./package-lock.json)<br>
@@ -171,51 +172,52 @@ There are two sub-folders:
 ├── [./scrap.md](./scrap.md)<br>
 ├── [./tree.md](./tree.md)<br>
 ├── [./TREE.md](./TREE.md)<br>
-├── [./web](./web)<br>
-│   ├── [./web/assets](./web/assets)<br>
-│   │   ├── [./web/assets/audio](./web/assets/audio)<br>
-│   │   │   ├── [./web/assets/audio/join.mp3](./web/assets/audio/join.mp3)<br>
-│   │   │   └── [./web/assets/audio/join.ogg](./web/assets/audio/join.ogg)<br>
-│   │   ├── [./web/assets/fonts](./web/assets/fonts)<br>
-│   │   │   └── [./web/assets/fonts/font-awesome](./web/assets/fonts/font-awesome)<br>
-│   │   │   └── [./web/assets/fonts/font-awesome/css](./web/assets/fonts/font-awesome/css)<br>
-│   │   │   └── [./web/assets/fonts/font-awesome/css/font-awesome.css](./web/assets/fonts/font-awesome/css/font-awesome.css)<br>
-│   │   ├── [./web/assets/images](./web/assets/images)<br>
-│   │   │   ├── [./web/assets/images/blank-white.jpg](./web/assets/images/blank-white.jpg)<br>
-│   │   │   ├── [./web/assets/images/file](./web/assets/images/file)<br>
-│   │   │   │   └── [./web/assets/images/file/default_file_icon.jpg](./web/assets/images/file/default_file_icon.jpg)<br>
-│   │   │   ├── [./web/assets/images/mesibo-logo-m.png](./web/assets/images/mesibo-logo-m.png)<br>
-│   │   │   ├── [./web/assets/images/mesibo-logo.png](./web/assets/images/mesibo-logo.png)<br>
-│   │   │   ├── [./web/assets/images/profile](./web/assets/images/profile)<br>
-│   │   │   │   ├── [./web/assets/images/profile/default-group-icon.jpg](./web/assets/images/profile/default-group-icon.jpg)<br>
-│   │   │   │   └── [./web/assets/images/profile/default-profile-icon.jpg](./web/assets/images/profile/default-profile-icon.jpg)<br>
-│   │   │   └── [./web/assets/images/social.png](./web/assets/images/social.png)<br>
-│   │   └── [./web/assets/scripts](./web/assets/scripts)<br>
-│   │   └── [./web/assets/scripts/platform.js](./web/assets/scripts/platform.js)<br>
-│   ├── [./web/index.html](./web/index.html)<br>
-│   ├── [./web/listing.md](./web/listing.md)<br>
-│   ├── [./web/login.html](./web/login.html)<br>
-│   ├── [./web/mesibo](./web/mesibo)<br>
-│   │   ├── [./web/mesibo/app.js](./web/mesibo/app.js)<br>
-│   │   ├── [./web/mesibo/calls.js](./web/mesibo/calls.js)<br>
-│   │   ├── [./web/mesibo/config.js](./web/mesibo/config.js)<br>
-│   │   ├── [./web/mesibo/files.js](./web/mesibo/files.js)<br>
-│   │   ├── [./web/mesibo/notify.js](./web/mesibo/notify.js)<br>
-│   │   └── [./web/mesibo/utils.js](./web/mesibo/utils.js)<br>
-│   ├── [./web/README.md](./web/README.md)<br>
-│   ├── [./web/scripts](./web/scripts)<br>
-│   │   ├── [./web/scripts/app-utils.js](./web/scripts/app-utils.js)<br>
-│   │   ├── [./web/scripts/controller.js](./web/scripts/controller.js)<br>
-│   │   └── [./web/scripts/login.js](./web/scripts/login.js)<br>
-│   ├── [./web/styles](./web/styles)<br>
-│   │   ├── [./web/styles/live.css](./web/styles/live.css)<br>
-│   │   ├── [./web/styles/mesibolive.css](./web/styles/mesibolive.css)<br>
-│   │   ├── [./web/styles/popup.css](./web/styles/popup.css)<br>
-│   │   └── [./web/styles/popupdesign.css](./web/styles/popupdesign.css)<br>
-│   └── [./web/vendor](./web/vendor)<br>
-│   ├── [./web/vendor/bootstrap.min.css](./web/vendor/bootstrap.min.css)<br>
-│   └── [./web/vendor/bootstrap.min.js](./web/vendor/bootstrap.min.js)<br>
-└── [./zumzi-video-chat.PNG](./zumzi-video-chat.PNG)<br>
+├── [./web](./web)
+│ ├── [./web/assets](./web/assets)
+│ │ ├── [./web/assets/audio](./web/assets/audio)
+│ │ │ ├── [./web/assets/audio/join.mp3](./web/assets/audio/join.mp3)
+│ │ │ └── [./web/assets/audio/join.ogg](./web/assets/audio/join.ogg)
+│ │ ├── [./web/assets/fonts](./web/assets/fonts)
+│ │ │ └── [./web/assets/fonts/font-awesome](./web/assets/fonts/font-awesome)
+│ │ │ └── [./web/assets/fonts/font-awesome/css](./web/assets/fonts/font-awesome/css)
+│ │ │ └── [./web/assets/fonts/font-awesome/css/font-awesome.css](./web/assets/fonts/font-awesome/css/font-awesome.css)
+│ │ ├── [./web/assets/images](./web/assets/images)
+│ │ │ ├── [./web/assets/images/blank-white.jpg](./web/assets/images/blank-white.jpg)
+│ │ │ ├── [./web/assets/images/file](./web/assets/images/file)
+│ │ │ │ └── [./web/assets/images/file/default_file_icon.jpg](./web/assets/images/file/default_file_icon.jpg)
+│ │ │ ├── [./web/assets/images/mesibo-logo-m.png](./web/assets/images/mesibo-logo-m.png)
+│ │ │ ├── [./web/assets/images/mesibo-logo.png](./web/assets/images/mesibo-logo.png)
+│ │ │ ├── [./web/assets/images/profile](./web/assets/images/profile)
+│ │ │ │ ├── [./web/assets/images/profile/default-group-icon.jpg](./web/assets/images/profile/default-group-icon.jpg)
+│ │ │ │ └── [./web/assets/images/profile/default-profile-icon.jpg](./web/assets/images/profile/default-profile-icon.jpg)
+│ │ │ └── [./web/assets/images/social.png](./web/assets/images/social.png)
+│ │ └── [./web/assets/scripts](./web/assets/scripts)
+│ │ └── [./web/assets/scripts/platform.js](./web/assets/scripts/platform.js)
+│ ├── [./web/index.html](./web/index.html)
+│ ├── [./web/listing.md](./web/listing.md)
+│ ├── [./web/login.html](./web/login.html)
+│ ├── [./web/mesibo](./web/mesibo)
+│ │ ├── [./web/mesibo/app.js](./web/mesibo/app.js)
+│ │ ├── [./web/mesibo/calls.js](./web/mesibo/calls.js)
+│ │ ├── [./web/mesibo/config.js](./web/mesibo/config.js)
+│ │ ├── [./web/mesibo/files.js](./web/mesibo/files.js)
+│ │ ├── [./web/mesibo/notify.js](./web/mesibo/notify.js)
+│ │ └── [./web/mesibo/utils.js](./web/mesibo/utils.js)
+│ ├── [./web/README.md](./web/README.md)
+│ ├── [./web/scripts](./web/scripts)
+│ │ ├── [./web/scripts/app-utils.js](./web/scripts/app-utils.js)
+│ │ ├── [./web/scripts/controller.js](./web/scripts/controller.js)
+│ │ └── [./web/scripts/login.js](./web/scripts/login.js)
+│ ├── [./web/styles](./web/styles)
+│ │ ├── [./web/styles/live.css](./web/styles/live.css)
+│ │ ├── [./web/styles/mesibolive.css](./web/styles/mesibolive.css)
+│ │ ├── [./web/styles/popup.css](./web/styles/popup.css)
+│ │ └── [./web/styles/popupdesign.css](./web/styles/popupdesign.css)
+│ └── [./web/vendor](./web/vendor)
+│ ├── [./web/vendor/bootstrap.min.css](./web/vendor/bootstrap.min.css)
+│ └── [./web/vendor/bootstrap.min.js](./web/vendor/bootstrap.min.js)<br>
+└── [./zumzi-video-chat.png](./zumzi-video-chat.png)<br>
+```
 
 ## Messenger
 
@@ -227,7 +229,8 @@ Refer to the [Get-Started Guide](https://mesibo.com/documentation/tutorials/get-
 
 To open messenger demo launch `messenger.html`
 
-```javascript
+```js
+//
 const MESIBO_ACCESS_TOKEN = 'xxxxxxx';
 const MESIBO_APP_ID = 'xxxx';
 const MESIBO_API_URL = 'https://app.mesibo.com/api.php';
@@ -278,7 +281,8 @@ You can provide a list of local contacts that will be loaded as a list of availa
 
 To launch popup demo you can configure the following for setting the displayed user avatar and destination user(to which all messages will be sent) in `config.js` and launch `popup.html`
 
-```javascript
+```js
+//
 const POPUP_DISPLAY_NAME = 'xxxx';
 const POPUP_DISPLAY_PICTURE = 'images/profile/default-profile-icon.jpg';
 const POPUP_DESTINATION_USER = 'xxxx';
@@ -314,7 +318,8 @@ Ensure that you perform a hard reload so that you have the latest Mesibo Javascr
 
 The easiest way to install Mesibo Javascript SDK is to include following in `<HEAD>` section of your HTML file:
 
-    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
+    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js">
+</script>
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.
 
@@ -337,7 +342,7 @@ The browser will not grant the camera and microphone permissions unless your app
 
 These restrictions are by the browsers and NOT by the mesibo. Refer Security section in the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia#security) for more information.
 
-### That’s All!
+### That's All!
 
 You can now begin developing features with mesibo.
 

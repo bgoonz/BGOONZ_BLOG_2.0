@@ -1,18 +1,14 @@
 ---
 title: Tutorials
 weight: 0
-excerpt: 'Coding '
+excerpt: Walkthroughs of various development activities and skills
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: 'Tutorials'
+    description: 'This section is dedicated to coding walkthroughs'
+    robots: []
+    extra: []
 template: docs
 ---
 
-## Lorem ipsum
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
--   Lorem ipsum
--   dolor sit amet
+This section is dedicated to coding walkthroughs:
