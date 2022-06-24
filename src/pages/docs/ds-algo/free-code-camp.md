@@ -3,10 +3,10 @@ title: Map and Set
 weight: 0
 excerpt: Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
 seo:
-  title: "Map and Set"
-  description: "How to Use JavaScript Collections"
-  robots: []
-  extra: []
+    title: 'Map and Set'
+    description: 'How to Use JavaScript Collections'
+    robots: []
+    extra: []
 template: docs
 ---
 
@@ -30,10 +30,10 @@ Until ES6 (ECMAScript 2015), JavaScript `objects` and `arrays` were the most imp
 
 However, there were a few shortcomings,
 
-- Object keys can only be of type `string`.
-- Objects don't maintain the order of the elements inserted into them.
-- Objects lack some useful methods, which makes them difficult to use in some situations. For example, you can't compute the size (`length`) of an object easily. Also, enumerating an object is not that straightforward.
-- Arrays are collections of elements that allow duplicates. Supporting arrays that only have distinct elements requires extra logic and code.
+-   Object keys can only be of type `string`.
+-   Objects don't maintain the order of the elements inserted into them.
+-   Objects lack some useful methods, which makes them difficult to use in some situations. For example, you can't compute the size (`length`) of an object easily. Also, enumerating an object is not that straightforward.
+-   Arrays are collections of elements that allow duplicates. Supporting arrays that only have distinct elements requires extra logic and code.
 
 With the introduction of ES6, we got two new data structures that address the shortcomings mentioned above: `Map` and `Set`. In this article, we will look at both closely and understand how to use them in different situations.
 
@@ -43,20 +43,22 @@ With the introduction of ES6, we got two new data structures that address the sh
 
 In other words, `Map` has characteristics of both `Object` and `Array`:
 
-- Like an object, it supports the key-value pair structure.
-- Like an array, it remembers the insertion order.
+-   Like an object, it supports the key-value pair structure.
+-   Like an array, it remembers the insertion order.
 
 ### **How to Create and Initialize a Map in JavaScript**
 
 A new `Map` can be created like this:
 
 ```js
+//
 const map = new Map();
 ```
 
 Which returns an empty `Map`:
 
 ```js
+//
 
 Map(0) {}
 ```
@@ -64,16 +66,18 @@ Map(0) {}
 Another way of creating a `Map` is with initial values. Here's how to create a `Map` with three key-value pairs:
 
 ```js
+//
 const freeCodeCampBlog = new Map([
-  ["name", "freeCodeCamp"],
-  ["type", "blog"],
-  ["writer", "Tapas Adhikary"],
+    ['name', 'freeCodeCamp'],
+    ['type', 'blog'],
+    ['writer', 'Tapas Adhikary']
 ]);
 ```
 
 Which returns a `Map` with three elements:
 
 ```js
+//
 
 Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"}
 ```
@@ -85,18 +89,20 @@ To add value to a Map, use the `set(key, value)` method.
 The `set(key, value)` method takes two parameters, `key` and `value`, where the key and value can be of any type, a primitive (`boolean`, `string`, `number`, etc.) or an object:
 
 ```js
+//
 js;
 
 const map = new Map();
 
-map.set("name", "freeCodeCamp");
-map.set("type", "blog");
-map.set("writer", "Tapas Adhikary");
+map.set('name', 'freeCodeCamp');
+map.set('type', 'blog');
+map.set('writer', 'Tapas Adhikary');
 ```
 
 Output:
 
 ```js
+//
 
 Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"}
 ```
@@ -104,12 +110,14 @@ Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"
 Please note, if you use the same key to add a value to a `Map` multiple times, it'll always replace the previous value:
 
 ```js
-map.set("writer", "Someone else!");
+//
+map.set('writer', 'Someone else!');
 ```
 
 So the output would be:
 
 ```js
+//
 
 Map(3)
 {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Someone else!"}
@@ -120,7 +128,8 @@ Map(3)
 To get a value from a `Map`, use the `get(key)` method:
 
 ```js
-map.get("name");
+//
+map.get('name');
 ```
 
 ### **All About Map Keys in JavaScript**
@@ -128,14 +137,15 @@ map.get("name");
 `Map` keys can be of any type, a primitive, or an object. This is one of the major differences between `Map` and regular JavaScript objects where the key can only be a string:
 
 ```js
+//
 js;
 
 const funMap = new Map();
 
-funMap.set(360, "My House Number");
-funMap.set(true, "I write blogs!");
+funMap.set(360, 'My House Number');
+funMap.set(true, 'I write blogs!');
 
-let obj = { name: "tapas" };
+let obj = { name: 'tapas' };
 funMap.set(obj, true);
 
 console.log(funMap);
@@ -144,6 +154,7 @@ console.log(funMap);
 Here is the output:
 
 ```js
+//
 
 Map(3)
 {
@@ -156,39 +167,44 @@ Map(3)
 A regular JavaScript object always treats the key as a string. Even when you pass it a primitive or object, it internally converts the key into a string:
 
 ```js
+//
 js;
 
 const funObj = {};
 
-funObj[360] = "My House Number";
+funObj[360] = 'My House Number';
 
-console.log(funObj[360] === funObj["360"]);
+console.log(funObj[360] === funObj['360']);
 ```
 
 ### **Map Properties and Methods in JavaScript**
 
 JavaScript's `Map` has in-built properties and methods that make it easy to use. Here are some of the common ones:
 
-- Use the `size` property to know how many elements are in a `Map`:
-- Search an element with the `has(key)` method:
-- Remove an element with the `delete(key)` method:
-- Use the `clear()` method to remove all the elements from the `Map` at once:
+-   Use the `size` property to know how many elements are in a `Map`:
+-   Search an element with the `has(key)` method:
+-   Remove an element with the `delete(key)` method:
+-   Use the `clear()` method to remove all the elements from the `Map` at once:
 
 ```js
-console.log("size of the map is", map.size);
+//
+console.log('size of the map is', map.size);
 ```
 
 ```js
-console.log(map.has("John"));
+//
+console.log(map.has('John'));
 
-console.log(map.has("Tapas"));
+console.log(map.has('Tapas'));
 ```
 
 ```js
-map.delete("Sam");
+//
+map.delete('Sam');
 ```
 
 ```js
+//
 map.clear();
 
 map.size;
@@ -201,27 +217,31 @@ The methods `keys()`, `values()` and `entries()` methods return a `MapIterator`,
 First, create a simple `Map`:
 
 ```js
+//
 const ageMap = new Map([
-  ["Jack", 20],
-  ["Alan", 34],
-  ["Bill", 10],
-  ["Sam", 9],
+    ['Jack', 20],
+    ['Alan', 34],
+    ['Bill', 10],
+    ['Sam', 9]
 ]);
 ```
 
-- Get all the keys:
-- Get all the values:
-- Get all the entries (key-value pairs):
+-   Get all the keys:
+-   Get all the values:
+-   Get all the entries (key-value pairs):
 
 ```js
+//
 console.log(ageMap.keys());
 ```
 
 ```js
+//
 console.log(ageMap.values());
 ```
 
 ```js
+//
 console.log(ageMap.entries());
 ```
 
@@ -230,18 +250,20 @@ console.log(ageMap.entries());
 You can use either the `forEach` or `for-of` loop to iterate over a `Map`:
 
 ```js
+//
 ageMap.forEach((value, key) => {
-  console.log(`${key} is ${value} years old!`);
+    console.log(`${key} is ${value} years old!`);
 });
 
 for (const [key, value] of ageMap) {
-  console.log(`${key} is ${value} years old!`);
+    console.log(`${key} is ${value} years old!`);
 }
 ```
 
 The output is going to be the same in both cases:
 
 ```js
+//
 
 Jack is 20 years old!
 Alan is 34 years old!
@@ -254,10 +276,11 @@ Sam is 9 years old!
 You may encounter a situation where you need to convert an `object` to a `Map`\-like structure. You can use the method `entries` of `Object` to do that:
 
 ```js
+//
 const address = {
-  Tapas: "Bangalore",
-  James: "Huston",
-  Selva: "Srilanka",
+    Tapas: 'Bangalore',
+    James: 'Huston',
+    Selva: 'Srilanka'
 };
 
 const addressMap = new Map(Object.entries(address));
@@ -268,6 +291,7 @@ const addressMap = new Map(Object.entries(address));
 If you want to do the reverse, you can use the `fromEntries` method:
 
 ```js
+//
 Object.fromEntries(map);
 ```
 
@@ -275,19 +299,21 @@ Object.fromEntries(map);
 
 There are a couple of ways to convert a map into an array:
 
-- Using `Array.from(map)`:
-- Using the spread operator:
+-   Using `Array.from(map)`:
+-   Using the spread operator:
 
 ```js
+//
 const map = new Map();
-map.set("milk", 200);
-map.set("tea", 300);
-map.set("coffee", 500);
+map.set('milk', 200);
+map.set('tea', 300);
+map.set('coffee', 500);
 
 console.log(Array.from(map));
 ```
 
 ```js
+//
 console.log([...map]);
 ```
 
@@ -299,14 +325,14 @@ The similarity with objects ends here though. As you've seen, `Map` is different
 
 Use `Map` when:
 
-- Your needs are not that simple. You may want to create keys that are non-strings. Storing an object as a key is a very powerful approach. `Map` gives you this ability by default.
-- You need a data structure where elements can be ordered. Regular objects do not maintain the order of their entries.
-- You are looking for flexibility without relying on an external library like lodash. You may end up using a library like lodash because we do not find methods like has(), values(), delete(), or a property like size with a regular object. Map makes this easy for you by providing all these methods by default.
+-   Your needs are not that simple. You may want to create keys that are non-strings. Storing an object as a key is a very powerful approach. `Map` gives you this ability by default.
+-   You need a data structure where elements can be ordered. Regular objects do not maintain the order of their entries.
+-   You are looking for flexibility without relying on an external library like lodash. You may end up using a library like lodash because we do not find methods like has(), values(), delete(), or a property like size with a regular object. Map makes this easy for you by providing all these methods by default.
 
 Use an object when:
 
-- You do not have any of the needs listed above.
-- You rely on `JSON.parse()` as a `Map` cannot be parsed with it.
+-   You do not have any of the needs listed above.
+-   You rely on `JSON.parse()` as a `Map` cannot be parsed with it.
 
 ## Set in JavaScript
 
@@ -319,6 +345,7 @@ A `Set` in JavaScript behaves the same way as a mathematical set.
 A new `Set` can be created like this:
 
 ```js
+//
 const set = new Set();
 console.log(set);
 ```
@@ -326,6 +353,7 @@ console.log(set);
 And the output will be an empty `Set`:
 
 ```js
+//
 
 Set(0) {}
 ```
@@ -333,13 +361,15 @@ Set(0) {}
 Here's how to create a `Set` with some initial values:
 
 ```js
-const fruteSet = new Set(["🍉", "🍎", "🍈", "🍏"]);
+//
+const fruteSet = new Set(['🍉', '🍎', '🍈', '🍏']);
 console.log(fruteSet);
 ```
 
 Output:
 
 ```js
+//
 
 Set(4) {"🍉", "🍎", "🍈", "🍏"}
 ```
@@ -348,20 +378,22 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 
 `Set` has methods to add an element to it, delete elements from it, check if an element exists in it, and to clear it completely:
 
-- Use the `size` property to know the size of the `Set`. It returns the number of elements in it:
-- Use the `add(element)` method to add an element to the `Set`:
+-   Use the `size` property to know the size of the `Set`. It returns the number of elements in it:
+-   Use the `add(element)` method to add an element to the `Set`:
 
 ```js
+//
 set.size;
 ```
 
 ```js
+//
 const saladSet = new Set();
 
-saladSet.add("🍅");
-saladSet.add("🥑");
-saladSet.add("🥕");
-saladSet.add("🥒");
+saladSet.add('🍅');
+saladSet.add('🥑');
+saladSet.add('🥕');
+saladSet.add('🥒');
 
 console.log(saladSet);
 ```
@@ -371,36 +403,41 @@ I love cucumbers! How about adding one more?
 Oh no, I can't - `Set` is a collection of **unique** elements:
 
 ```js
-saladSet.add("🥒");
+//
+saladSet.add('🥒');
 console.log(saladSet);
 ```
 
 The output is the same as before - nothing got added to the `saladSet`.
 
-- Use the `has(element)` method to search if we have a carrot (🥕) or broccoli (🥦) in the `Set`:
-- Use the `delete(element)` method to remove the avocado(🥑) from the `Set`:
+-   Use the `has(element)` method to search if we have a carrot (🥕) or broccoli (🥦) in the `Set`:
+-   Use the `delete(element)` method to remove the avocado(🥑) from the `Set`:
 
 ```js
-console.log("Does the salad have a carrot?", saladSet.has("🥕"));
+//
+console.log('Does the salad have a carrot?', saladSet.has('🥕'));
 
-console.log("Does the salad have broccoli?", saladSet.has("🥦"));
+console.log('Does the salad have broccoli?', saladSet.has('🥦'));
 ```
 
 ```js
-saladSet.delete("🥑");
-console.log("I do not like 🥑, remove from the salad:", saladSet);
+//
+saladSet.delete('🥑');
+console.log('I do not like 🥑, remove from the salad:', saladSet);
 ```
 
 Now our salad `Set` is as follows:
 
 ```js
+//
 
 Set(3) {"🍅", "🥕", "🥒"}
 ```
 
-- Use the `clear()` method to remove all elements from a `Set`:
+-   Use the `clear()` method to remove all elements from a `Set`:
 
 ```js
+//
 saladSet.clear();
 ```
 
@@ -409,6 +446,7 @@ saladSet.clear();
 `Set` has a method called `values()` which returns a `SetIterator` to get all its values:
 
 ```js
+//
 js;
 
 const houseNos = new Set([360, 567, 101]);
@@ -419,6 +457,7 @@ console.log(houseNos.values());
 Output:
 
 ```js
+//
 
 SetIterator {360, 567, 101}
 ```
@@ -430,12 +469,14 @@ Interestingly, JavaScript tries to make `Set` compatible with `Map`. That's why 
 As `Set` doesn't have keys, the `keys()` method returns a `SetIterator` to retrieve its values:
 
 ```js
+//
 console.log(houseNos.keys());
 ```
 
 With `Map`, the `entries()` method returns an iterator to retrieve key-value pairs. Again there are no keys in a `Set`, so `entries()` returns a `SetIterator` to retrieve the value-value pairs:
 
 ```js
+//
 console.log(houseNos.entries());
 ```
 
@@ -444,18 +485,20 @@ console.log(houseNos.entries());
 We can enumerate over a Set using `forEach` and `for-of` loops:
 
 ```js
+//
 houseNos.forEach((value) => {
-  console.log(value);
+    console.log(value);
 });
 
 for (const value of houseNos) {
-  console.log(value);
+    console.log(value);
 }
 ```
 
 The output of both is:
 
 ```js
+//
 360;
 567;
 101;
@@ -474,6 +517,7 @@ Think of `Set` as an extension of a regular array, just with more muscles. The `
 Converting a `Set` into an array is simple:
 
 ```js
+//
 const arr = [...houseNos];
 console.log(arr);
 ```
@@ -483,9 +527,10 @@ console.log(arr);
 Creating a `Set` is a really easy way to remove duplicate values from an array:
 
 ```js
+//
 js;
 
-const mixedFruit = ["🍉", "🍎", "🍉", "🍈", "🍏", "🍎", "🍈"];
+const mixedFruit = ['🍉', '🍎', '🍉', '🍈', '🍏', '🍎', '🍈'];
 
 const mixedFruitSet = new Set(mixedFruit);
 
@@ -495,6 +540,7 @@ console.log(mixedFruitSet);
 Output:
 
 ```js
+//
 
 Set(4) {"🍉", "🍎", "🍈", "🍏"}
 ```
@@ -504,11 +550,12 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 A `Set` can have elements of any type, even objects:
 
 ```js
+//
 js;
 
 const person = {
-  name: "Alex",
-  age: 32,
+    name: 'Alex',
+    age: 32
 };
 
 const pSet = new Set();
@@ -525,7 +572,8 @@ No surprise here - the `Set` contains one element that is an object.
 Let's change a property of the object and add it to the set again:
 
 ```js
-person.name = "Bob";
+//
+person.name = 'Bob';
 
 pSet.add(person);
 console.log(pSet);
@@ -549,8 +597,8 @@ Here is a GitHub repository to find all the source code used in this article. If
 
 You may also like some of my other articles:
 
-- [My Favorite JavaScript Tips and Tricks](https://blog.greenroots.info/my-favorite-javascript-tips-and-tricks-ckd60i4cq011em8s16uobcelc)
-- [JavaScript equality and similarity with ==, === and Object.is()](https://blog.greenroots.info/javascript-equality-comparison-with-and-objectis-ckdpt2ryk01vel9s186ft8cwl)
+-   [My Favorite JavaScript Tips and Tricks](https://blog.greenroots.info/my-favorite-javascript-tips-and-tricks-ckd60i4cq011em8s16uobcelc)
+-   [JavaScript equality and similarity with ==, === and Object.is()](https://blog.greenroots.info/javascript-equality-comparison-with-and-objectis-ckdpt2ryk01vel9s186ft8cwl)
 
 If this article was useful, please share it so others can read it as well. You can @ me on Twitter ([@tapasadhikary](https://twitter.com/tapasadhikary)) with comments, or feel free to follow me.
 
@@ -582,31 +630,31 @@ Here are a few book recommendations - along with some other resources at the end
 
 _Data Structures in JavaScript_
 
-- Free book which covers Data Structures in JavaScript (you can find the [GitBook](https://www.gitbook.com/book/pmary/data-structure-in-javascript/details) here).
+-   Free book which covers Data Structures in JavaScript (you can find the [GitBook](https://www.gitbook.com/book/pmary/data-structure-in-javascript/details) here).
 
 _Learning JavaScript Data Structures and Algorithms - Second Edition,_ by Loiane Groner
 
-- Covers object oriented programming, prototypal inheritance, sorting & searching algorithms, quicksort, mergesort, binary search trees and advanced algorithm concepts
+-   Covers object oriented programming, prototypal inheritance, sorting & searching algorithms, quicksort, mergesort, binary search trees and advanced algorithm concepts
 
 _Data Structures and Algorithms with JavaScript: Bringing classic computing approaches to the Web_ by Michael McMillan
 
-- Covers recursion, sorting and searching algorithms, linked lists and binary search trees.
+-   Covers recursion, sorting and searching algorithms, linked lists and binary search trees.
 
 _Data Structures_ by Seymour Lipschutz
 
-- A machine and language agnostic book which explains data structures in a clear and straightforward way. Includes examples, diagrams, and pseudo-code.
+-   A machine and language agnostic book which explains data structures in a clear and straightforward way. Includes examples, diagrams, and pseudo-code.
 
 _Introduction to Algorithms_ by Thomas H Cormen et al
 
-- Another language agnostic book, contains examples in pseudo-code. Appropriate for both teaching and professional environments. Each chapter covers an algorithm - you don't have to read the whole book straight through from beginning to end.
+-   Another language agnostic book, contains examples in pseudo-code. Appropriate for both teaching and professional environments. Each chapter covers an algorithm - you don't have to read the whole book straight through from beginning to end.
 
 _Data Structures in C_, by Noel Kalicharan
 
-- Covers the basics and makes data structures seem easier than other books manage to do. Teaches introductory concepts like linked lists, stacks, sorting, binary trees, and searching. Great beginner's book, but useful to more advanced students as well.
+-   Covers the basics and makes data structures seem easier than other books manage to do. Teaches introductory concepts like linked lists, stacks, sorting, binary trees, and searching. Great beginner's book, but useful to more advanced students as well.
 
 _Algorithms in C_, by Robert Sedgewick
 
-- Focuses on implementations of algorithms in C in areas of sorting, searching, string processing, graph, geometric, and mathematical algorithms. Discusses why certain algorithms are more effective than others. Numerous figures throughout the book help illustrate how these algorithms work.
+-   Focuses on implementations of algorithms in C in areas of sorting, searching, string processing, graph, geometric, and mathematical algorithms. Discusses why certain algorithms are more effective than others. Numerous figures throughout the book help illustrate how these algorithms work.
 
 Please feel free to add more that you have found useful!
 
@@ -677,13 +725,13 @@ The BST is built on the idea of the [binary search](https://guide.freecodecamp.o
 
 ### Basic operations on a BST
 
-- Create: creates an empty tree.
-- Insert: insert a node in the tree.
-- Search: Searches for a node in the tree.
-- Delete: deletes a node from the tree.
-- Inorder: in-order traversal of the tree.
-- Preorder: pre-order traversal of the tree.
-- Postorder: post-order traversal of the tree.
+-   Create: creates an empty tree.
+-   Insert: insert a node in the tree.
+-   Search: Searches for a node in the tree.
+-   Delete: deletes a node from the tree.
+-   Inorder: in-order traversal of the tree.
+-   Preorder: pre-order traversal of the tree.
+-   Postorder: post-order traversal of the tree.
 
 #### Create
 
@@ -725,21 +773,21 @@ Successors can be described as the node that would come right after the the curr
 
 ### Special types of BT
 
-- Heap
-- Red-black tree
-- B-tree
-- Splay tree
-- N-ary tree
-- Trie (Radix tree)
+-   Heap
+-   Red-black tree
+-   B-tree
+-   Splay tree
+-   N-ary tree
+-   Trie (Radix tree)
 
 ### Runtime
 
 **Data structure: BST**
 
-- Worst-case performance: `O(n)`
-- Best-case performance: `O(1)`
-- Average performance: `O(log n)`
-- Worst-case space complexity: `O(1)`
+-   Worst-case performance: `O(n)`
+-   Best-case performance: `O(1)`
+-   Average performance: `O(log n)`
+-   Worst-case space complexity: `O(1)`
 
 Where `n` is the number of nodes in the BST. Worst case is O(n) since BST can be unbalanced.
 
@@ -877,8 +925,8 @@ void deleteNode(struct node* root, int data){
 
 Binary search trees (BSTs) also give us quick access to predecessors and successors. Predecessors can be described as the node that would come right before the node you are currently at.
 
-- To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
-- To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
+-   To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
+-   To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
 
 ### Let's look at a couple of procedures operating on trees.
 
@@ -886,9 +934,9 @@ Since trees are recursively defined, it's very common to write routines that ope
 
 So for instance, if we want to calculate the height of a tree, that is the height of a root node, We can go ahead and recursively do that, going through the tree. So we can say:
 
-- For instance, if we have a nil tree, then its height is a 0.
-- Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
-- So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
+-   For instance, if we have a nil tree, then its height is a 0.
+-   Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
+-   So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
 
 #### Height(tree) algorithm
 
@@ -924,8 +972,8 @@ int maxDepth(struct node* node)
 
 We could also look at calculating the size of a tree that is the number of nodes.
 
-- Again, if we have a nil tree, we have zero nodes.
-- Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
+-   Again, if we have a nil tree, we have zero nodes.
+-   Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
 
 #### Size(tree) algorithm
 
@@ -1008,11 +1056,15 @@ void postOrder(struct node* root) {
 
 ### Relevant videos on freeCodeCamp YouTube channel
 
-<iframe sandbox="allow-scripts" src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" autoplay; allowfullscreen="" name="fitvid0"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/5cU1ILGy6dM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0">
+</iframe>
+<br>
 
 ## And Binary Search Tree: Traversal and Height
 
-<iframe sandbox="allow-scripts" src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" autoplay; allowfullscreen="" name="fitvid1"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.youtube.com/embed/Aagf3RyK3Lw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid1">
+</iframe>
+<br>
 
 ### Following are common types of Binary Trees:
 
@@ -1096,6 +1148,7 @@ The entry point to a linked list is called the head. The head is a reference to 
 In JavaScript, a linked list looks like this:
 
 ```js
+//
 
 const list = {
     head: {
@@ -1117,31 +1170,32 @@ const list = {
 
 ## An advantage of Linked Lists
 
-- Nodes can easily be removed or added from a linked list without reorganizing the entire data structure. This is one advantage it has over arrays.
+-   Nodes can easily be removed or added from a linked list without reorganizing the entire data structure. This is one advantage it has over arrays.
 
 ## Disadvantages of Linked Lists
 
-- Search operations are slow in linked lists. Unlike arrays, random access of data elements is not allowed. Nodes are accessed sequentially starting from the first node.
-- It uses more memory than arrays because of the storage of the pointers.
+-   Search operations are slow in linked lists. Unlike arrays, random access of data elements is not allowed. Nodes are accessed sequentially starting from the first node.
+-   It uses more memory than arrays because of the storage of the pointers.
 
 ## Types of Linked Lists
 
 There are three types of linked lists:
 
-- **Singly Linked Lists**: Each node contains only one pointer to the next node. This is what we have been talking about so far.
-- **Doubly Linked Lists**: Each node contains two pointers, a pointer to the next node and a pointer to the previous node.
-- **Circular Linked Lists**: Circular linked lists are a variation of a linked list in which the last node points to the first node or any other node before it, thereby forming a loop.
+-   **Singly Linked Lists**: Each node contains only one pointer to the next node. This is what we have been talking about so far.
+-   **Doubly Linked Lists**: Each node contains two pointers, a pointer to the next node and a pointer to the previous node.
+-   **Circular Linked Lists**: Circular linked lists are a variation of a linked list in which the last node points to the first node or any other node before it, thereby forming a loop.
 
 ## Implementing a List Node in JavaScript
 
 As stated earlier, a list node contains two items: the data and the pointer to the next node. We can implement a list node in JavaScript as follows:
 
 ```js
+//
 class ListNode {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
-  }
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
 }
 ```
 
@@ -1615,8 +1669,9 @@ print(dict_)
 This works most of the times. However, there is a better way to do this. A more `pythonic` way. The `defaultdict` is a subclass of the built-in dict class. The `defaultdict` simply assigns the default value that we specify in case of a missing key. So, the two steps:
 
 ```js
+//
 dict_[random_key] = dict_.get(random_key, set());
-dict_[random_key].add("Hello World!");
+dict_[random_key].add('Hello World!');
 ```
 
 can now be combined into one single step. For e.g.
@@ -1739,9 +1794,10 @@ The most common example of a Hash Table in JavaScript is the `Object` data type,
 In the following example, the key `Nathan` is paired with the phone number value of `"555-0182"` and the key `Jane` is paired with the value `"315-0322"`:
 
 ```js
+//
 let obj = {
-  Nathan: "555-0182",
-  Jane: "315-0322",
+    Nathan: '555-0182',
+    Jane: '315-0322'
 };
 ```
 
@@ -1749,16 +1805,17 @@ JavaScript object is an example of Hash Table implementation
 
 But JavaScript's `Object` type is a special kind of Hash Table implementation for two reasons:
 
-- It has properties added by the `Object` class. Keys you input may conflict and overwrite default properties inherited from the class.
-- The size of the Hash Table is not tracked. You need to manually count how many properties are defined by the programmer instead of inherited from the prototype.
+-   It has properties added by the `Object` class. Keys you input may conflict and overwrite default properties inherited from the class.
+-   The size of the Hash Table is not tracked. You need to manually count how many properties are defined by the programmer instead of inherited from the prototype.
 
 For example, the `Object` prototype has the `hasOwnProperty()` method which allows you to check if a property is not inherited:
 
 ```js
+//
 const obj = {};
-obj.name = "Nathan";
+obj.name = 'Nathan';
 
-console.log(obj.hasOwnProperty("name"));
+console.log(obj.hasOwnProperty('name'));
 ```
 
 JavaScript object inherited method call example
@@ -1766,11 +1823,12 @@ JavaScript object inherited method call example
 JavaScript doesn't block an attempt to overwrite the `hasOwnProperty()` method, which may cause an error like this:
 
 ```js
+//
 const obj = {};
-obj.name = "Nathan";
+obj.name = 'Nathan';
 obj.hasOwnProperty = true;
 
-console.log(obj.hasOwnProperty("name"));
+console.log(obj.hasOwnProperty('name'));
 ```
 
 JavaScript object inherited property gets overwritten
@@ -1780,12 +1838,13 @@ To handle these shortcomings, JavaScript created another implementation of the H
 Just like `Object`, `Map` allows you to store key-value pairs inside the data structure. Here's an example of `Map` in action:
 
 ```js
+//
 const collection = new Map();
 
-collection.set("Nathan", "555-0182");
-collection.set("Jane", "555-0182");
+collection.set('Nathan', '555-0182');
+collection.set('Jane', '555-0182');
 
-console.log(collection.get("Nathan"));
+console.log(collection.get('Nathan'));
 console.log(collection.size);
 ```
 
@@ -1796,12 +1855,13 @@ Unlike the `Object` type, `Map` requires you to use the `set()` and `get()` meth
 You also can't overwrite `Map` inherited properties. For example, the following code tried to overwrite the `size` property value to `false`:
 
 ```js
+//
 const collection = new Map();
 
-collection.set("Nathan", "555-0182");
-collection["size"] = false;
+collection.set('Nathan', '555-0182');
+collection['size'] = false;
 
-console.log(collection.get("size"));
+console.log(collection.get('size'));
 console.log(collection.size);
 ```
 
@@ -1812,13 +1872,14 @@ As you can see from the code above, you can't add a new entry to the `Map` objec
 The `Map` data structure is also iterable, which means you can loop over the data as follows:
 
 ```js
+//
 const myMap = new Map();
 
-myMap.set("Nathan", "555-0182");
-myMap.set("Jane", "315-0322");
+myMap.set('Nathan', '555-0182');
+myMap.set('Jane', '315-0322');
 
 for (let [key, value] of myMap) {
-  console.log(`${key} = ${value}`);
+    console.log(`${key} = ${value}`);
 }
 ```
 
@@ -1832,18 +1893,19 @@ Although JavaScript already has two Hash Table implementations, writing your own
 
 You can implement a Hash Table in JavaScript in three steps:
 
-- Create a `HashTable` class with `table` and `size` initial properties
-- Add a `hash()` function to transform keys into indices
-- Add the `set()` and `get()` methods for adding and retrieving key/value pairs from the table.
+-   Create a `HashTable` class with `table` and `size` initial properties
+-   Add a `hash()` function to transform keys into indices
+-   Add the `set()` and `get()` methods for adding and retrieving key/value pairs from the table.
 
 Alright, let's start with creating the `HashTable` class. The code below will create a `table` of buckets with the size of `127`:
 
 ```js
+//
 class HashTable {
-  constructor() {
-    this.table = new Array(127);
-    this.size = 0;
-  }
+    constructor() {
+        this.table = new Array(127);
+        this.size = 0;
+    }
 }
 ```
 
@@ -1858,6 +1920,7 @@ Next, you need to create the `hash()` method that will accept a `key` value and 
 A simple way to create the hash would be to sum the ASCII code of the characters in the key using the `charCodeAt()` method as follows. Note that the method is named using `_` to indicate that it's a private class:
 
 ```js
+//
 
 _hash(key) {
   let hash = 0;
@@ -1873,6 +1936,7 @@ But since the `HashTable` class only has 127 buckets, this means that the `_hash
 To ensure that the hash value doesn't exceed the bucket size, you need to use the modulo operator as shown below:
 
 ```js
+//
 
 _hash(key) {
   let hash = 0;
@@ -1889,9 +1953,9 @@ Now that you have the `_hash()` method completed, it's time to write the `set()`
 
 To set the key/value pair in your Hash Table, you need to write a `set()` method that accepts `(key, value)` as its parameters:
 
-- The `set()` method will call the `_hash()` method to get the `index` value.
-- The `[key, value]` pair will be assigned to the `table` at the specified `index`
-- Then, the `size` property will be incremented by one
+-   The `set()` method will call the `_hash()` method to get the `index` value.
+-   The `[key, value]` pair will be assigned to the `table` at the specified `index`
+-   Then, the `size` property will be incremented by one
 
 ```
 set(key, value) {
@@ -1907,8 +1971,8 @@ Now that the `set()` method is complete, let's write the `get()` method to retri
 
 To get a certain value from the Hash Table, you need to write a `get()` method that accepts a `key` value as its parameter:
 
-- The method will call the `_hash()` method to once again retrieve the table `index`
-- Return the value stored at `table[index]`
+-   The method will call the `_hash()` method to once again retrieve the table `index`
+-   Return the value stored at `table[index]`
 
 ```
 get(key) {
@@ -1925,9 +1989,9 @@ So far so good. Let's add another method to delete key/value pair from the Hash 
 
 To delete a key/value pair from the Hash Table, you need to write a `remove()` method that accepts a `key` value as its parameter:
 
-- Retrieve the right `index` using the `_hash()` method
-- Check if the `table[index]` has a truthy value and the `length` property is greater than zero. Assign the `undefined` value to the right `index` and decrement the `size` property by one if it is.
-- If not, simply return `false`
+-   Retrieve the right `index` using the `_hash()` method
+-   Check if the `table[index]` has a truthy value and the `length` property is greater than zero. Assign the `undefined` value to the right `index` and decrement the `size` property by one if it is.
+-   If not, simply return `false`
 
 ```
 remove(key) {
@@ -1950,42 +2014,43 @@ With that, you now have a working `remove()` method. Let's see if the `HashTable
 It's time to test the Hash Table implementation. Here's the full code for the Hash Table implementation again:
 
 ```js
+//
 class HashTable {
-  constructor() {
-    this.table = new Array(127);
-    this.size = 0;
-  }
-
-  _hash(key) {
-    let hash = 0;
-    for (let i = 0; i < key.length; i++) {
-      hash += key.charCodeAt(i);
+    constructor() {
+        this.table = new Array(127);
+        this.size = 0;
     }
-    return hash % this.table.length;
-  }
 
-  set(key, value) {
-    const index = this._hash(key);
-    this.table[index] = [key, value];
-    this.size++;
-  }
-
-  get(key) {
-    const target = this._hash(key);
-    return this.table[target];
-  }
-
-  remove(key) {
-    const index = this._hash(key);
-
-    if (this.table[index] && this.table[index].length) {
-      this.table[index] = [];
-      this.size--;
-      return true;
-    } else {
-      return false;
+    _hash(key) {
+        let hash = 0;
+        for (let i = 0; i < key.length; i++) {
+            hash += key.charCodeAt(i);
+        }
+        return hash % this.table.length;
     }
-  }
+
+    set(key, value) {
+        const index = this._hash(key);
+        this.table[index] = [key, value];
+        this.size++;
+    }
+
+    get(key) {
+        const target = this._hash(key);
+        return this.table[target];
+    }
+
+    remove(key) {
+        const index = this._hash(key);
+
+        if (this.table[index] && this.table[index].length) {
+            this.table[index] = [];
+            this.size--;
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 ```
 
@@ -1994,10 +2059,11 @@ The HashTable implementation in JavaScript
 To test the `HashTable` class, I'm going to create a new instance of the `class` and set some key/value pairs as shown below. The key/value pairs below are just arbitrary number values paired with country names without any special meaning:
 
 ```js
+//
 const ht = new HashTable();
-ht.set("Canada", 300);
-ht.set("France", 100);
-ht.set("Spain", 110);
+ht.set('Canada', 300);
+ht.set('France', 100);
+ht.set('Spain', 110);
 ```
 
 Testing HashTable set() method
@@ -2005,9 +2071,10 @@ Testing HashTable set() method
 Then, let's try to retrieve them using the `get()` method:
 
 ```js
-console.log(ht.get("Canada"));
-console.log(ht.get("France"));
-console.log(ht.get("Spain"));
+//
+console.log(ht.get('Canada'));
+console.log(ht.get('France'));
+console.log(ht.get('Spain'));
 ```
 
 Testing HashTable get() method
@@ -2015,8 +2082,9 @@ Testing HashTable get() method
 Finally, let's try to delete one of these values with the `remove()` method:
 
 ```js
-console.log(ht.remove("Spain"));
-console.log(ht.get("Spain"));
+//
+console.log(ht.remove('Spain'));
+console.log(ht.get('Spain'));
 ```
 
 Testing HashTable remove() method
@@ -2024,13 +2092,14 @@ Testing HashTable remove() method
 Alright, all the methods are working as expected. Let's try another insertion with a new `HashTable` instance and retrieve those values:
 
 ```js
+//
 const ht = new HashTable();
 
-ht.set("Spain", 110);
-ht.set("ǻ", 192);
+ht.set('Spain', 110);
+ht.set('ǻ', 192);
 
-console.log(ht.get("Spain"));
-console.log(ht.get("ǻ"));
+console.log(ht.get('Spain'));
+console.log(ht.get('ǻ'));
 ```
 
 Hash Table index collision
@@ -2046,35 +2115,38 @@ The same `hash` value will cause the index to _collide_, overwriting the previou
 Right now, the data stored in our Hash Table implementation looks as follows:
 
 ```js
+//
 [
-  ["Spain", 110],
-  ["France", 100],
+    ['Spain', 110],
+    ['France', 100]
 ];
 ```
 
 To handle the `index` number collision, you need to store the key/value pair in a second array so that the end result looks as follows:
 
 ```js
+//
 [
-  [
-    ["Spain", 110],
-    ["ǻ", 192],
-  ],
-  [["France", 100]],
+    [
+        ['Spain', 110],
+        ['ǻ', 192]
+    ],
+    [['France', 100]]
 ];
 ```
 
 To create the second array, you need to update the `set()` method so that it will:
 
-- Look to the `table[index]` and loop over the array values.
-- If the key at one of the arrays is equal to the `key` passed to the method, replace the value at index `1` and stop any further execution with the `return` statement.
-- If no matching `key` is found, push a new array of key and value to the second array.
-- Else, initialize a new array and push the key/value pair to the specified `index`
-- Whenever a `push()` method is called, increment the `size` property by one.
+-   Look to the `table[index]` and loop over the array values.
+-   If the key at one of the arrays is equal to the `key` passed to the method, replace the value at index `1` and stop any further execution with the `return` statement.
+-   If no matching `key` is found, push a new array of key and value to the second array.
+-   Else, initialize a new array and push the key/value pair to the specified `index`
+-   Whenever a `push()` method is called, increment the `size` property by one.
 
 The complete `set()` method code will be as follows:
 
 ```js
+//
 
 set(key, value) {
   const index = this._hash(key);
@@ -2099,6 +2171,7 @@ set(key, value) {
 Next, update the `get()` method so that it will also check the second-level array with a `for` loop and return the right key/value pair:
 
 ```js
+//
 
 get(key) {
   const target = this._hash(key);
@@ -2116,6 +2189,7 @@ get(key) {
 Finally, you need to update the `remove()` method so that it will loop over the second-level array and remove the array with the right `key` value using the `splice()` method:
 
 ```js
+//
 
 remove(key) {
   const index = this._hash(key);
@@ -2139,6 +2213,7 @@ With that, your `HashTable` class will be able to avoid any index number collisi
 As a bonus, let's add a `display()` method that will display all key/value pairs stored in the Hash Table. You just need to use the `forEach()` method to iterate over the table and `map()` the values to a string as shown below:
 
 ```js
+//
 
 display() {
   this.table.forEach((values, index) => {
@@ -2153,73 +2228,72 @@ display() {
 Here's the complete `HashTable` class code again with the collision avoidance applied for your reference:
 
 ```js
+//
 class HashTable {
-  constructor() {
-    this.table = new Array(127);
-    this.size = 0;
-  }
-
-  _hash(key) {
-    let hash = 0;
-    for (let i = 0; i < key.length; i++) {
-      hash += key.charCodeAt(i);
+    constructor() {
+        this.table = new Array(127);
+        this.size = 0;
     }
-    return hash % this.table.length;
-  }
 
-  set(key, value) {
-    const index = this._hash(key);
-    if (this.table[index]) {
-      for (let i = 0; i < this.table[index].length; i++) {
-        if (this.table[index][i][0] === key) {
-          this.table[index][i][1] = value;
-          return;
+    _hash(key) {
+        let hash = 0;
+        for (let i = 0; i < key.length; i++) {
+            hash += key.charCodeAt(i);
         }
-      }
-      this.table[index].push([key, value]);
-    } else {
-      this.table[index] = [];
-      this.table[index].push([key, value]);
+        return hash % this.table.length;
     }
-    this.size++;
-  }
 
-  get(key) {
-    const index = this._hash(key);
-    if (this.table[index]) {
-      for (let i = 0; i < this.table.length; i++) {
-        if (this.table[index][i][0] === key) {
-          return this.table[index][i][1];
+    set(key, value) {
+        const index = this._hash(key);
+        if (this.table[index]) {
+            for (let i = 0; i < this.table[index].length; i++) {
+                if (this.table[index][i][0] === key) {
+                    this.table[index][i][1] = value;
+                    return;
+                }
+            }
+            this.table[index].push([key, value]);
+        } else {
+            this.table[index] = [];
+            this.table[index].push([key, value]);
         }
-      }
+        this.size++;
     }
-    return undefined;
-  }
 
-  remove(key) {
-    const index = this._hash(key);
-
-    if (this.table[index] && this.table[index].length) {
-      for (let i = 0; i < this.table.length; i++) {
-        if (this.table[index][i][0] === key) {
-          this.table[index].splice(i, 1);
-          this.size--;
-          return true;
+    get(key) {
+        const index = this._hash(key);
+        if (this.table[index]) {
+            for (let i = 0; i < this.table.length; i++) {
+                if (this.table[index][i][0] === key) {
+                    return this.table[index][i][1];
+                }
+            }
         }
-      }
-    } else {
-      return false;
+        return undefined;
     }
-  }
 
-  display() {
-    this.table.forEach((values, index) => {
-      const chainedValues = values.map(
-        ([key, value]) => `[ ${key}: ${value} ]`
-      );
-      console.log(`${index}: ${chainedValues}`);
-    });
-  }
+    remove(key) {
+        const index = this._hash(key);
+
+        if (this.table[index] && this.table[index].length) {
+            for (let i = 0; i < this.table.length; i++) {
+                if (this.table[index][i][0] === key) {
+                    this.table[index].splice(i, 1);
+                    this.size--;
+                    return true;
+                }
+            }
+        } else {
+            return false;
+        }
+    }
+
+    display() {
+        this.table.forEach((values, index) => {
+            const chainedValues = values.map(([key, value]) => `[ ${key}: ${value} ]`);
+            console.log(`${index}: ${chainedValues}`);
+        });
+    }
 }
 ```
 
@@ -2228,16 +2302,17 @@ Complete HashTable class implementation
 You can test the implementation by creating a new `HashTable` instance and do some insertion and deletion:
 
 ```js
+//
 const ht = new HashTable();
 
-ht.set("France", 111);
-ht.set("Spain", 150);
-ht.set("ǻ", 192);
+ht.set('France', 111);
+ht.set('Spain', 150);
+ht.set('ǻ', 192);
 
 ht.display();
 
 console.log(ht.size);
-ht.remove("Spain");
+ht.remove('Spain');
 ht.display();
 ```
 
@@ -2298,10 +2373,10 @@ However, some times the worst case can happen, when the tree isn't balanced and 
 
 ## **Basic operations on a BST**
 
-- Create: creates an empty tree.
-- Insert: insert a node in the tree.
-- Search: Searches for a node in the tree.
-- Delete: deletes a node from the tree.
+-   Create: creates an empty tree.
+-   Insert: insert a node in the tree.
+-   Search: Searches for a node in the tree.
+-   Delete: deletes a node from the tree.
 
 ### Create
 
@@ -2335,21 +2410,21 @@ Successors can be described as the node that would come right after the node you
 
 ## **Special types of BT**
 
-- Heap
-- Red-black tree
-- B-tree
-- Splay tree
-- N-ary tree
-- Trie (Radix tree)
+-   Heap
+-   Red-black tree
+-   B-tree
+-   Splay tree
+-   N-ary tree
+-   Trie (Radix tree)
 
 ## Runtime
 
 ### \***\*Data structure: Array\*\***
 
-- Worst-case performance: `O(log n)`
-- Best-case performance: `O(1)`
-- Average performance: `O(log n)`
-- Worst-case space complexity: `O(1)`
+-   Worst-case performance: `O(log n)`
+-   Best-case performance: `O(1)`
+-   Average performance: `O(log n)`
+-   Worst-case space complexity: `O(1)`
 
 Where `n` is the number of nodes in the BST.
 
@@ -2447,8 +2522,8 @@ void insert(int data) {
 
 Binary search trees (BSTs) also give us quick access to predecessors and successors. Predecessors can be described as the node that would come right before the node you are currently at.
 
-- To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
-- To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
+-   To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
+-   To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
 
 ## Let's look at a couple of procedures operating on trees.
 
@@ -2456,8 +2531,8 @@ Since trees are recursively defined, it's very common to write routines that ope
 
 So for instance, if we want to calculate the height of a tree, that is the height of a root node, We can go ahead and recursively do that, going through the tree. So we can say:
 
-- For instance, if we have a nil tree, then its height is a 0.
-- Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
+-   For instance, if we have a nil tree, then its height is a 0.
+-   Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
 
 So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
 
@@ -2495,7 +2570,7 @@ int maxDepth(struct node* node)
 
 We could also look at calculating the size of a tree that is the number of nodes.
 
-- Again, if we have a nil tree, we have zero nodes.
+-   Again, if we have a nil tree, we have zero nodes.
 
 Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
 
@@ -2521,8 +2596,8 @@ int treeSize(struct node* node)
 
 ### **Relevant videos on freeCodeCamp YouTube channel**
 
-- [Binary Search Tree](https://youtu.be/5cU1ILGy6dM)
-- [Binary Search Tree: Traversal and Height](https://youtu.be/Aagf3RyK3Lw)
+-   [Binary Search Tree](https://youtu.be/5cU1ILGy6dM)
+-   [Binary Search Tree: Traversal and Height](https://youtu.be/Aagf3RyK3Lw)
 
 ## Following are common types of Binary Trees:
 
@@ -2586,16 +2661,16 @@ Each data structure comes with working source code to help solidify your underst
 
 You will learn about these data structures:
 
-- Static and dynamic arrays
-- Singly and doubly linked lists
-- Stacks
-- Queues
-- Heaps/Priority Queues
-- Binary Trees/Binary Search Trees
-- Union find/Disjoint Set
-- Hash tables
-- Fenwick trees
-- AVL trees
+-   Static and dynamic arrays
+-   Singly and doubly linked lists
+-   Stacks
+-   Queues
+-   Heaps/Priority Queues
+-   Binary Trees/Binary Search Trees
+-   Union find/Disjoint Set
+-   Hash tables
+-   Fenwick trees
+-   AVL trees
 
 You can watch the [full video on the freeCodeCamp.org YouTube channel](https://www.youtube.com/watch?v=RBSGKlAvoiM) (8 hour watch). As always, it's free, and there are no ads to interrupt you.
 
@@ -2682,17 +2757,17 @@ To add a new element to the list.
 
 Insertion at the beginning:
 
-- Create a new node with given data.
-- Point new node's `next` to old `head`.
-- Point `head` to this new node.
+-   Create a new node with given data.
+-   Point new node's `next` to old `head`.
+-   Point `head` to this new node.
 
 Insertion in the middle/end.
 
 Insertion after node X.
 
-- Create a new node with given data.
-- Point new node's `next` to old X's `next`.
-- Point X's `next` to this new node.
+-   Create a new node with given data.
+-   Point new node's `next` to old X's `next`.
+-   Point X's `next` to this new node.
 
 \***\*Time Complexity: O(1)\*\***
 
@@ -2702,17 +2777,17 @@ To delete existing element from the list.
 
 Deletion at the beginning
 
-- Get the node pointed by `head` as Temp.
-- Point `head` to Temp's `next`.
-- Free memory used by Temp node.
+-   Get the node pointed by `head` as Temp.
+-   Point `head` to Temp's `next`.
+-   Free memory used by Temp node.
 
 Deletion in the middle/end.
 
 Deletion after node X.
 
-- Get the node pointed by `X` as Temp.
-- Point X's `next` to Temp's `next`.
-- Free memory used by Temp node.
+-   Get the node pointed by `X` as Temp.
+-   Point X's `next` to Temp's `next`.
+-   Free memory used by Temp node.
 
 \***\*Time Complexity: O(1)\*\***
 
@@ -2722,9 +2797,9 @@ To travel across the list.
 
 Traversal
 
-- Get the node pointed by `head` as Current.
-- Check if Current is not null and display it.
-- Point Current to Current's `next` and move to above step.
+-   Get the node pointed by `head` as Current.
+-   Check if Current is not null and display it.
+-   Point Current to Current's `next` and move to above step.
 
 \***\*Time Complexity: O(n) // Here n is size of link-list\*\***
 

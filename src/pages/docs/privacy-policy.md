@@ -13,39 +13,39 @@ template: docs
 
     PRIVACY NOTICE
 
-- Note: Visit our website at <https://bgoonz-blog.netlify.app/>
+- Visit our website at <https://bgoonz-blog.netlify.app/>
 
 <!---->
 
--  Note:  Use our Facebook application — <https://bgoonz-blog.netlify.app/>
+- Use our Facebook application — <https://bgoonz-blog.netlify.app/>
 
 <!---->
 
--  Note:  Engage with us in other related ways ― including any sales, marketing, or events
+- Engage with us in other related ways ― including any sales, marketing, or events
 
 <!---->
 
-- Important:  "**Website**," we are referring to any website of ours that references or links to this policy
+- "**Website**," we are referring to any website of ours that references or links to this policy
 
 <!---->
 
--  Important: "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
+- "**App**," we are referring to any application of ours that references or links to this policy, including any listed above
 
 <!---->
 
--  Important: "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
+- "**Services**," we are referring to our Website, App, and other related services, including any sales, marketing, or events
 
 <!---->
 
-- Important: **To facilitate account creation and logon process.** If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.
+- **To facilitate account creation and logon process.** If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.
 
 <!---->
 
-- Important: **To post testimonials.** We post testimonials on our Services that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at \_\_\_\_\_\_\_\_\_\_ and be sure to include your name, testimonial location, and contact information.
+- **To post testimonials.** We post testimonials on our Services that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at \_\_\_\_\_\_\_\_\_\_ and be sure to include your name, testimonial location, and contact information.
 
 <!---->
 
-- Note: **Request feedback. **We may use your information to request feedback and to contact you about your use of our Services.
+- **Request feedback.**  We may use your information to request feedback and to contact you about your use of our Services.
 
 <!---->
 
@@ -53,15 +53,15 @@ template: docs
 
 <!---->
 
-- **To manage user accounts. **We may use your information for the purposes of managing our account and keeping it in working order.
+- **To manage user accounts.**  We may use your information for the purposes of managing our account and keeping it in working order.
 
 <!---->
 
-- **To send administrative information to you. **We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
+- **To send administrative information to you.**  We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
 
 <!---->
 
-- **To protect our Services. **We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
+- **To protect our Services.**  We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
 
 <!---->
 
@@ -69,9 +69,9 @@ template: docs
 
 <!---->
 
-- **To respond to legal requests and prevent harm. **If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+- **To respond to legal requests and prevent harm.**  If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
 - 
-- **Fulfill and manage your orders. **We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
+- **Fulfill and manage your orders.** We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
 - 
 - **Administer prize draws and competitions.** We may use your information to administer prize draws and competitions when you elect to participate in our competitions.
 

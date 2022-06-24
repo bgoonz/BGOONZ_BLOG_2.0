@@ -7,9 +7,6 @@ export default class Footer extends React.Component {
         return (
             <footer id="colophon" className="site-footer outer">
                 <div>
-                    <center>
-                        <br />
-                        <br />
                         <table cellPadding={0}
                             cellSpacing={0}
                             border={0}>
@@ -21,7 +18,6 @@ export default class Footer extends React.Component {
                                             fontSize: '7.5pt'
                                         }
                                     }>
-                                        <center>
                                             <table width="95%"
                                                 cellPadding={0}
                                                 cellSpacing={0}
@@ -70,7 +66,6 @@ export default class Footer extends React.Component {
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </center>
                                         <form style={
                                             {
                                                 margin: '0px',
@@ -130,13 +125,7 @@ export default class Footer extends React.Component {
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
-                            Save to PDF
-                        </a>
-                    </center>
-                    <a aria-current="page" className="site-logo" href="/">
-                        <img src="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png" alt="webdevhub logo" />
-                    </a>
+<a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a>
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
@@ -157,7 +146,7 @@ export default class Footer extends React.Component {
                                         action={action}></ActionLink>
                                 ))
                             }
-                            {' '} </p>
+                          </p>
                         {
                             _.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
                                 <div className="social-links">
@@ -168,10 +157,10 @@ export default class Footer extends React.Component {
                                                 action={action} />;
                                         })
                                     }
-                                    {' '} </div>
+                                    </div>
                             )
                         }
-                        {' '} </div>
+                     </div>
                 </div>
             </footer>
         );

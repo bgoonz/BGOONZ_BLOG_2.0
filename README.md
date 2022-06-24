@@ -1,24 +1,26 @@
-<div align="center">
 
-# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
 
-### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
+## Getting Started
+# [**⇨WEBSITE🗺️⇦**](https://bgoonz-blog.netlify.app/)
+
+
 
 </div>
 
 ---
 
-
-
-
+## [CHANGELOG](./CHANGELOG.md)
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/) ⇨  [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+
+### Repos
+
+- [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
+- [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
-
-
 
 </div>
 <div align="center">
@@ -29,15 +31,433 @@
 
 ---
 
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
-  
-  
+```bash
+
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+```
+
 ---
   
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
   
 </div>
+
+---
+
+[![webdevhub logo](https://bgoonz-blog.netlify.app/images/home-button.png)]('https://bgoonz-blog.netlify.app/')
+
+Open Menu
+
+-   [Navigation](/docs/sitemap) Sub-menu
+    -   [Docs](/docs)
+    -   [Showcase](/showcase)
+    -   [Contact!](/docs/faq/contact)
+    -   [Python](/docs/python/python-ds)
+    -   [JavaScript](/javascript)
+-   [Blog](/blog/) Sub-menu
+    -   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
+    -   [Top Blog Posts](https://blog-w-comments.vercel.app/)
+    -   [Blog w Comments](/blogWcomments/)
+-   [Job Search](/docs/career/) Sub-menu
+    -   [Job Boards](/docs/career/job-boards)
+    -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
+    -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
+    -   [Interview Questions](/docs/interview/interview-questions)
+-   [Archive](/docs/archive) Sub-menu
+    -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
+    -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
+    -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
+    -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
+    -   [Top Repos](/docs)
+    -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
+-   [Projects](/docs/projects) Sub-menu
+    -   [Potluck Planner](https://potluck-landing.netlify.app/)
+    -   [Meditation App](https://meditate42app.netlify.app/)
+    -   [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
+    -   [SearchAwesome](https://search-awesome.vercel.app/)
+    -   [Condensed -Portfolio](https://bg-portfolio.netlify.app/)
+    -   [Family Promise Tracker](https://a.familypromiseservicetracker.dev/)
+    -   [DTW-Guitar-FX-Automation](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+    -   [Embeds Blog](https://bgoonz-blog-v3-0.netlify.app/embeds/)
+    -   [alt-blogs](https://bgoonz-blog-v3-0.netlify.app/)
+    -   [Games](https://bgoonz-games.netlify.app/)
+    -   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
+    -   [Cover Letter](https://bgoonz-cv.netlify.app/)
+    -   [Project Centric](https://project-portfolio42.netlify.app/)
+    -   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
+    -   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
+    -   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
+-   [Admin](https://bgoonz-blog.netlify.app/admin/) Sub-menu
+    -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
+    -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+    -   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+-   [Tools](/docs/tools) Sub-menu
+    -   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
+    -   [Text Tools](https://devtools42.netlify.app/)
+    -   [Ternary 2 If Else](https://ternary42.netlify.app/)
+    -   [Web Dev Utility Tools](/hps://web-dev-utility-tools-bgoonz.netlify.app/)
+    -   [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)
+    -   [PotluckPlanner](https://potluck-landing.netlify.app/)
+    -   [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
+    -   [Github-Advanced-Search](https://github.com/search/advanced)
+
+Close Menu
+
+_🔎_
+
+Search
+
+# I am a musician, electrical engineer & web developer
+
+**Please note that this website is in development and is often broken!**
+
+[](https://www.vagrantup.com/) [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
+
+[](https://webpack.js.org/)[](https://www.adobe.com/products/xd.html)
+
+[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)
+
+[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz&custom_title=This%20is%20Bryans%20Activity&hide_border=true&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)
+
+![Jokes](https://readme-jokes.vercel.app/api)
+
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript) ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
+
+![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC) ![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql)
+
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat&logo=gitlab)
+
+![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
+
+[Contact](https://sidebar-blog.netlify.app/contact/)
+
+![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
+
+### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
+
+Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
+
+[View Post](/docs/ds-algo/big-o/)
+
+![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
+
+### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+
+_Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
+
+[View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+
+![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
+
+### [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+
+[Learn More](/docs/tools)
+
+![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
+
+### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
+
+As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
+
+![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
+
+### [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
+
+Scope & Context in JS
+
+The **scope** of a program in JavaScript is the set of variables that are available for use within the program.
+
+![scope and closure](https://d33wubrfki0l68.cloudfront.net/bc959e2c76edd99401fa7bc07665db54863f5fd2/97e29/images/dtw-slideshow.gif)
+
+### Web Audio Daw
+
+PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
+
+-   Extensions & Resources, Super Simple Intro To HTML, Understanding↩ Git... etc....
+
+## Current Interests
+
+From github repositories to existential questions.
+
+![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
+
+### [Angolia](/angolia)
+
+## Full Text Search
+
+[Full Text Search](https://www.algolia.com/)
+
+![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
+
+### [Convolutional Neural Networks](/neural networks)
+
+Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow) ![](/_static/app-assets/neural.PNG)
+
+![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
+
+### [Jamstack](/jamstack)
+
+##### Why Jamstack Jamstack is the new standard architecture for the
+
+web. Using Git workflows and modern build tools, pre-rendered content↩ is served to a CDN and made dynamic through APIs and serverless↩ functions. Technologies in the stack include JavaScript frameworks,↩ Static Site Generators, Headless CMSs, and CDNs.
+
+![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
+
+### [Asynchronous JavaScript](/docs/)
+
+The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
+
+[NJDEVILS](https://www.allaboutthejersey.com/)
+
+![nj-devils](/images/njdev-219301cd.jpg)
+
+### [NJ Devils](https://www.allaboutthejersey.com/)
+
+# New Jersey Devils Hockey Team
+
+### (Hockey in general)
+
+## Team identity
+
+[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
+
+The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery) of the [New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers) attempts to distract Brodeur during the [2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs). The playoff series was the fifth to feature the [Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).
+
+[Learn More](https://www.iter.org/)
+
+![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
+
+### [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
+
+# Break Even Nuclear Fusion Candidate
+
+In December, researchers at the Joint European Torus (JET) started↩ conducting fusion experiments with tritium — a rare and radioactive↩ isotope of hydrogen. The facility is a one-tenth-volume mock-up of the↩ US\$22-billion ITER project and has the same doughnut-shaped 'tokamak'↩ design — the world's most developed approach to fusion energy. It is↩ the first time since 1997 that researchers have done experiments in a↩ tokamak with any significant amount of tritium.
+
+## Resume & Portfolio
+
+![](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
+
+### [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
+
+[View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
+
+![portfolio of websites](https://d33wubrfki0l68.cloudfront.net/4e66fa2888421bd225aa811c156362cc0b7d4ebc/ca806/images/portfolio.jpg)
+
+### Showcase
+
+![My Projects](/_static/app-assets/lambda-demo1.gif)My Projects!
+
+[Learn More](/showcase)
+
+## Blog-Archive-And-Mini-Projects
+
+![animated gif](/images/cool annimation.gif)
+
+## Latest & Greatest
+
+## Web Dev Utilitiy Tools
+
+## Tools Showcase
+
+![medium](https://d33wubrfki0l68.cloudfront.net/e5828552ff6b5743ed241d9c926e60eb925dde97/8dbbf/images/goals.jpg)
+
+## Web Audio DA
+
+[Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)
+
+## Quick Links
+
+quick links home
+
+### [About](/docs/about/)
+
+Web-Dev-Hub is my personal blogand documentation site
+
+[Learn More](/docs/about/)
+
+### [Articles](/docs/articles/)
+
+my web development articles
+
+[Learn More](/docs/articles/)
+
+### [Audio](/docs/audio/)
+
+Audio Projects and tools / web audio daw
+
+[Learn More](/docs/audio/)
+
+### [Archive](/docs/archive/)
+
+more tools that I have created or collaborated on.
+
+[Learn More](/docs/archive/)
+
+### [Career](/docs/career/)
+
+Reference materials and descriptions of fundamental concepts as well as visua
+
+[Career](/docs/career/)
+
+### [Community](/docs/community/)
+
+We'd love it if you participate in the Libris community. Find out how to get connected.
+
+[Learn More](/docs/community/)
+
+### [Content](/docs/content/)
+
+In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
+
+[Learn More](/docs/content/)
+
+### [CSS](/docs/css/)
+
+[Learn More](/docs/css/)
+
+### [Docs](/docs/docs/)
+
+Documentation
+
+[Learn More](/docs/docs/)
+
+### [Data Structures](/docs/ds-algo/)
+
+In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
+
+[Learn More](/docs/ds-algo/)
+
+### [FAQ](/docs/faq/)
+
+In this section you'll find commonly asked questions regarding the Libris theme. If you have questions, don't hesitate to ask us directly.
+
+[Learn More](/docs/faq/)
+
+###
+
+Learn More
+
+###
+
+Learn More
+
+###
+
+Learn More
+
+### [Interact](/docs/interact/)
+
+Interactive examples and projects
+
+[Learn More](/docs/interact/)
+
+### [Javascript](/docs/javascript/)
+
+Javascript articles and docs
+
+[Learn More](/docs/javascript/)
+
+### [JS-Quick-Tips](/docs/js-tips/)
+
+Javascript articles and docs
+
+[Learn More](/docs/js-tips/)
+
+### [Leetcode](/docs/leetcode/)
+
+feel free to try the examples
+
+[Learn More](/docs/leetcode/)
+
+### [Netlify CMS](/docs/netlify-cms-jamstack/)
+
+etlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows.
+
+[Learn More](/docs/netlify-cms-jamstack/)
+
+### [Overflow](/docs/overflow/)
+
+feel free to try the examples
+
+[Learn More](/docs/overflow/)
+
+### [Projects](/docs/projects/)
+
+We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get connected.
+
+[Learn More](/docs/projects/)
+
+### [Python](/docs/python/)
+
+Python
+
+[Learn More](/docs/python/)
+
+### [QuickRef](/docs/quick-ref/)
+
+In this section you'll find basic information about Web-Dev-Hub and how to use it.
+
+[Learn More](/docs/quick-ref/)
+
+### [React](/docs/react/)
+
+To make it easy to write documentation in plain Markdown, most React are styled using Markdown elements with few additional CSS classes.
+
+[Learn More](/docs/react/)
+
+### [Reference](/docs/reference/)
+
+helpful reference guides
+
+[Learn More](/docs/reference/)
+
+### [Tips](/docs/tips/)
+
+lorem-ipsum
+
+[Learn More](/docs/tips/)
+
+### [Tools](/docs/tools/)
+
+See some interesting tools developed by the Web-Dev-Hubcommunity to help automate parts of your workflow.
+
+[Learn More](/docs/tools/)
+
+### [Tutorials](/docs/tutorials/)
+
+Walkthroughs of various development activities and skills
+
+[Learn More](/docs/tutorials/)
+
+## Contact
+
+get in touch! +1 (551) - 254 - 5505
+
+[Contact](/docs/faq/contact)
+
+[index](https://search.freefind.com/siteindex.html?si=14588965)
+
+[sitemap](https://search.freefind.com/find.html?si=14588965&m=0&p=0)
+
+[advanced](https://search.freefind.com/find.html?si=14588965&pid=a)
+
+[search engine](https://www.freefind.com) [byfreefind](https://www.freefind.com)
+
+[Save to PDF](//pdfcrowd.com/url_to_pdf/?)
+
+[![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png)](/)
+
+@bgoonz on almost every platform [BLM](https://random-static-html-deploys.netlify.app/blm.html)
+
+[Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/) [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
+
+
+---
+
+
 
 <details>
 
@@ -119,14 +539,14 @@ find . -type f -exec chmod 644 {} \;
 
 ## # code
 
-```sh
+```bash
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````bash
 
-```sh
+```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -164,7 +584,7 @@ fs.writeFile('output.md', cat, err =>  {
 
 ## ## code
 
-```sh
+```bash
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -180,7 +600,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ## ## code
 
-```sh
+```bash
 
 find . -empty -type d -print -delete
 
@@ -202,7 +622,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # Generalized
 
-```sh
+```bash
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -213,7 +633,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```sh
+```bash
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -224,7 +644,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 # Clone all Git Organization
 
-```sh
+```bash
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -242,7 +662,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ## ## code
 
-```sh
+```bash
 git pull
 git init
 git add .
@@ -250,14 +670,14 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```sh
+```bash
 
 git init
 git add .
@@ -265,14 +685,14 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```sh
+```bash
 git init
 git add .
 git commit -m"update"
@@ -289,7 +709,7 @@ git push -u origin preview
 
 ## ## code
 
-```sh
+```bash
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -307,7 +727,7 @@ find . -name "*.zip" -type f -print -delete
 
 ## ## code
 
-```sh
+```bash
 
 git stash
 git pull
@@ -325,7 +745,7 @@ git stash pop
 
 ## ## code
 
-```sh
+```bash
 
 sudo npm i prettier -g
 
@@ -343,7 +763,7 @@ prettier --write .
 
 ## ## code
 
-```sh
+```bash
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -363,7 +783,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ## ## code
 
-```sh
+```bash
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -375,7 +795,7 @@ npm i npm-recursive-install -g
 
 ```
 
-```sh
+```bash
 black .
 
 prettier --write .
@@ -392,7 +812,7 @@ npm-recursive-install
 
 ## ## code
 
-```sh
+```bash
 npm i @bgoonz11/repoutils
 
 ```
@@ -407,7 +827,7 @@ npm i @bgoonz11/repoutils
 
 ## ## code
 
-```sh
+```bash
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -434,7 +854,7 @@ tree -f > README.md
 
 ## ## code
 
-```sh
+```bash
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -462,7 +882,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ## ## code
 
-```sh
+```bash
 #!/bin/bash
 
 for file in *.md.md
@@ -478,7 +898,7 @@ do
 done
 ```
 
-```sh
+```bash
 
 #!/bin/bash
 
@@ -504,7 +924,7 @@ done
 
 ## ## code
 
-```sh
+```bash
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -539,7 +959,7 @@ fs.writeFile('output.md', cat, (err) => {
 
 ## ## code
 
-```sh
+```bash
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -556,7 +976,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ## ## code
 
-```sh
+```bash
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -581,7 +1001,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```sh
+```bash
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -589,7 +1009,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ## ## code
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -615,7 +1035,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ## ## code
 
-```sh
+```bash
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -631,7 +1051,7 @@ uniq -u input.txt output.txt
 
 ## ## code
 
-```sh
+```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -669,7 +1089,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ## ## code
 
-```sh
+```bash
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -696,7 +1116,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ## ## code
 
-```sh
+```bash
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' >  doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -713,7 +1133,7 @@ source doit.sh
 
 ## ## code
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -820,13 +1240,13 @@ cmd $listing --sort=extension > > $html
 
 > Notes: Useful Follow up Code:
 
-```sh
+```bash
 
 ```
 
 ## ## code
 
-```sh
+```bash
 
 #!/bin/sh
 
@@ -934,7 +1354,7 @@ cmd $listing --sort=extension > > $html
 
 ## ## code
 
-```sh
+```bash
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -954,7 +1374,7 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ## ## code
 
-```sh
+```bash
 
 git fetch --all
 # Backup your current branch:
@@ -993,7 +1413,7 @@ git reset --hard origin/master
 
 ## ## code
 
-```sh
+```bash
 git submodule deinit
 ```
 
@@ -1007,7 +1427,7 @@ git submodule deinit
 
 ## ## code
 
-```sh
+```bash
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1030,7 +1450,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ## ## code
 
-```sh
+```bash
 
 git remote remove origin
 
@@ -1046,7 +1466,7 @@ git remote remove origin
 
 ## ## code
 
-```sh
+```bash
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1062,7 +1482,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ## ## code
 
-```sh
+```bash
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1078,7 +1498,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ## ## code
 
-```sh
+```bash
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1153,7 +1573,7 @@ lebab --replace ./ --transform includes
 
 ## ## code
 
-```sh
+```bash
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 > ds.md
@@ -1170,7 +1590,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ## ## code
 
-```sh
+```bash
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1188,7 +1608,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ## ## code
 
-```sh
+```bash
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1204,7 +1624,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ## ## code
 
-```sh
+```bash
 killall -s KILL node
 
 ```
@@ -1217,7 +1637,7 @@ killall -s KILL node
 
 ## ## code
 
-```sh
+```bash
 find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1226,7 +1646,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```sh
+```bash
 find <mydir>  -type d -exec sed -i 's/<string1> /<string2> /g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1243,7 +1663,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ## ## code
 
-```sh
+```bash
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1259,7 +1679,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ## ## code
 
-```sh
+```bash
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1293,7 +1713,7 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
+    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
     $progress++
 }
 
@@ -1309,7 +1729,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ## ## code
 
-```sh
+```bash
  sudo apt --purge remove zsh
 
 ```
@@ -1324,7 +1744,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ## ## code
 
-```sh
+```bash
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -1342,7 +1762,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ## ## code
 
-```sh
+```bash
 
 npx @appnest/readme generate
 
@@ -1358,7 +1778,7 @@ npx @appnest/readme generate
 
 ## ## code
 
-```sh
+```bash
 sudo -u postgres psql
 ```
 
@@ -1427,7 +1847,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ## ## code
 
-```sh
+```bash
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2231,7 +2651,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```shell
+    ```bashell
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
@@ -2240,7 +2660,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Navigate into your new site's directory and start it up.
 
-    ```shell
+    ```bashell
     cd my-default-starter/
     gatsby develop
     ```
@@ -3537,733 +3957,25 @@ export default class Icon extends React.Component {
 }
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```js
-import React from 'react';
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-import { Helmet } from 'react-helmet';
-import _ from 'lodash';
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-import { withPrefix, attribute } from '../utils';
-import '../sass/main.scss';
-import Header from './Header';
-import Footer from './Footer';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
-export default class Body extends React.Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Helmet>
-                    <title>
-                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
-                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
-                    </title>
-                    <meta charSet="utf-8" />
-                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
-                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
-                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
-                        <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')} />
-                    )}
-                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
-                        let key_name = _.get(meta, 'keyName', null) || 'name';
-                        return _.get(meta, 'relativeUrl', null) ? (
-                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
-                                (() => {
-                                    let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
-                                    let rel_url = withPrefix(_.get(meta, 'value', null));
-                                    let full_url = domain + rel_url;
-                                    return <meta key={meta_idx} {...attribute(key_name, _.get(meta, 'name', null))} content={full_url} />;
-                                })()
-                        ) : (
-                            <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
-                        );
-                    })}
-                    <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
-                        <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
-                    )}
-                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
-                </Helmet>
-                <div id="page" className="site">
-                    <Header {...this.props} />
-                    {/* INSERT SEARCH BAR HERE */}
-                    {/* <div className="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width={100} data-layout="standard" data-action="like" data-size="small" data-share="true" />  */}
-                    <main id="content" className="site-content">
-                        {this.props.children}
-                    </main>
-                    <Footer {...this.props} />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-```
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
----
+## Learn More
 
-```js
-import React from 'react';
-import _ from 'lodash';
+To learn more about Next.js, take a look at the following resources:
 
-import { classNames, withPrefix, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-export default class SectionContent extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-text outer">
-                <div className="outter">
-                    <div
-                        className={classNames('inner', {
-                            'grid-swap': _.get(section, 'image', null) && _.get(section, 'image_position', null) === 'right'
-                        })}
-                    >
-                        {_.get(section, 'image', null) && (
-                            <div className="grid-item block-image">
-                                <img src={withPrefix(_.get(section, 'image', null))} alt={_.get(section, 'image_alt', null)} />
-                            </div>
-                        )}
-                        <div>
-                            {_.get(section, 'title', null) && (
-                                <div className="block-header">
-                                    <h2 className="block-title"> {_.get(section, 'title', null)}</h2>
-                                </div>
-                            )}
-                            {_.get(section, 'content', null) && <div className="outer"> {markdownify(_.get(section, 'content', null))}</div>}
-                            {_.get(section, 'actions', null) && (
-                                <div className="block-buttons">
-                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-```js
-import React from 'react';
-import _ from 'lodash';
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-import { htmlToReact } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionCta extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-cta outer">
-                <div className="inner">
-                    <div className="has-gradient">
-                        <div className="grid grid-middle grid-center">
-                            {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                                <div className="grid-item block-header">
-                                    {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                                    {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                                </div>
-                            )}
-                            {_.get(section, 'actions', null) && (
-                                <div className="grid-item block-buttons">
-                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames, htmlToReact, pathJoin, getPage, Link, withPrefix } from '../utils';
-
-export default class SectionDocs extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section
-                id={_.get(section, 'section_id', null)}
-                className={classNames('block', 'block-grid', 'outer', {
-                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
-                })}
-            >
-                <div className="inner">
-                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                        <div className="block-header inner-sm">
-                            {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                            {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                        </div>
-                    )}
-                    <div className="block-content">
-                        <div
-                            className={classNames('grid', {
-                                'grid-col-2': _.get(section, 'col_number', null) === 'two',
-                                'grid-col-3': _.get(section, 'col_number', null) === 'three'
-                            })}
-                        >
-                            {_.map(_.get(this.props, 'pageContext.site.data.doc_sections.sections', null), (doc_section, doc_section_idx) => {
-                                let doc_section_path = pathJoin(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), doc_section);
-                                let doc_section_page = getPage(this.props.pageContext.pages, doc_section_path);
-                                return (
-                                    <div key={doc_section_idx} className="grid-item">
-                                        <div className="grid-item-inside">
-                                            <h3 className="grid-item-title line-left">
-                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}>
-                                                    {_.get(doc_section_page, 'frontmatter.title', null)}
-                                                </Link>
-                                            </h3>
-                                            {_.get(doc_section_page, 'frontmatter.excerpt', null) && (
-                                                <div className="grid-item-content">
-                                                    <p> {htmlToReact(_.get(doc_section_page, 'frontmatter.excerpt', null))}</p>
-                                                </div>
-                                            )}
-                                            <div className="grid-item-buttons">
-                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}> Learn More</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames, htmlToReact, withPrefix, Link, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionGrid extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section
-                id={_.get(section, 'section_id', null)}
-                className={classNames('block', 'block-grid', 'outer', {
-                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
-                })}
-            >
-                <div className="inner">
-                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
-                        <div className="block-header inner-sm">
-                            {_.get(section, 'title', null) && <h2 className="block-title"> {_.get(section, 'title', null)}</h2>}
-                            {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
-                        </div>
-                    )}
-                    {_.get(section, 'grid_items', null) && (
-                        <div className="block-content">
-                            <div
-                                className={classNames('grid', {
-                                    'grid-col-2': _.get(section, 'col_number', null) === 'two',
-                                    'grid-col-3': _.get(section, 'col_number', null) === 'three'
-                                })}
-                            >
-                                {_.map(_.get(section, 'grid_items', null), (item, item_idx) => (
-                                    <div key={item_idx} className="grid-item">
-                                        <div className="grid-item-inside">
-                                            {_.get(item, 'image', null) && (
-                                                <div className="grid-item-image">
-                                                    <img src={withPrefix(_.get(item, 'image', null))} alt={_.get(item, 'image_alt', null)} />
-                                                </div>
-                                            )}
-                                            {_.get(item, 'title', null) && (
-                                                <h3 className="grid-item-title line-left">
-                                                    {_.get(item, 'title_url', null) ? (
-                                                        <Link to={withPrefix(_.get(item, 'title_url', null))}> {_.get(item, 'title', null)}</Link>
-                                                    ) : (
-                                                        _.get(item, 'title', null)
-                                                    )}
-                                                </h3>
-                                            )}
-                                            {_.get(item, 'content', null) && (
-                                                <div className="grid-item-content"> {markdownify(_.get(item, 'content', null))}</div>
-                                            )}
-                                            {_.get(item, 'actions', null) && (
-                                                <div className="grid-item-buttons">
-                                                    <CtaButtons {...this.props} actions={_.get(item, 'actions', null)} />
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-
-import { toStyleObj, withPrefix, markdownify } from '../utils';
-import CtaButtons from './CtaButtons';
-
-export default class SectionHero extends React.Component {
-    render() {
-        let section = _.get(this.props, 'section', null);
-        return (
-            <section id={_.get(section, 'section_id', null)} className="block block-hero has-gradient outer">
-                {_.get(section, 'image', null) && (
-                    <div className="bg-img" style={toStyleObj("background-image: url('" + withPrefix(_.get(section, 'image', null)) + "')")} />
-                )}
-                <div className="inner-sm">
-                    {_.get(section, 'title', null) && (
-                        <div className="block-header">
-                            <h1 className="block-title"> {_.get(section, 'title', null)}</h1>
-                        </div>
-                    )}
-                    {_.get(section, 'content', null) && <div className="block-content"> {markdownify(_.get(section, 'content', null))}</div>}
-                    {_.get(section, 'actions', null) && (
-                        <div className="block-buttons">
-                            <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
-                        </div>
-                    )}
-                </div>
-            </section>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-
-import { classNames } from '../utils';
-import ActionLink from './ActionLink';
-
-export default class Submenu extends React.Component {
-    render() {
-        let page = _.get(this.props, 'page', null);
-        return (
-            <ul className={_.get(this.props, 'menu_class', null)}>
-                {_.map(_.get(this.props, 'submenu', null), (action, action_idx) => {
-                    let page_url = _.trim(_.get(page, 'url', null), '/');
-                    let action_url = _.trim(_.get(action, 'url', null), '/');
-                    return (
-                        <li
-                            key={action_idx}
-                            className={classNames('menu-item', {
-                                current: page_url === action_url,
-                                'menu-button': _.get(action, 'style', null) !== 'link'
-                            })}
-                        >
-                            <ActionLink {...this.props} action={action} />
-                        </li>
-                    );
-                })}
-            </ul>
-        );
-    }
-}
-```
-
-```js
-import ActionLink from './ActionLink';
-import CtaButtons from './CtaButtons';
-import DocsMenu from './DocsMenu';
-import DocsSubmenu from './DocsSubmenu';
-import Footer from './Footer';
-import Header from './Header';
-import Icon from './Icon';
-import SectionContent from './SectionContent';
-import SectionCta from './SectionCta';
-import SectionDocs from './SectionDocs';
-import SectionGrid from './SectionGrid';
-import SectionHero from './SectionHero';
-import Submenu from './Submenu';
-import Layout from './Layout';
-import addScript from './../hooks/addScript';
-export {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
-    Footer,
-    Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    addScript,
-    Layout
-};
-
-export default {
-    ActionLink,
-    CtaButtons,
-    DocsMenu,
-    DocsSubmenu,
-    Footer,
-    Header,
-    Icon,
-    SectionContent,
-    SectionCta,
-    SectionDocs,
-    SectionGrid,
-    SectionHero,
-    Submenu,
-    Layout,
-    addScript
-};
-```
-
-</details>
-
-<details>
-<summary>  Click To See Template Sourcecode  </summary>
-
-# Templates
-
-```
-
-├── advanced.js
-├── blog.js
-├── docs.js
-├── page.js
-└── post.js
-```
-
-```js
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import components, { Layout } from '../components/index';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Advanced extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-                    let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-                    let Component = components[component];
-                    return <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />;
-                })}
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-import moment from 'moment-strftime';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, getPages, Link } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Blog extends React.Component {
-    render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
-        return (
-            <Layout {...this.props}>
-                <header className="page-header has-gradient outer">
-                    {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                        <div
-                            className="bg-img"
-                            style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                        />
-                    )}
-                    <div className="inner-sm">
-                        <h1 className="page-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                        {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                            <p className="page-subtitle"> {_.get(this.props, 'pageContext.frontmatter.subtitle', null)}</p>
-                        )}
-                    </div>
-                </header>
-                <div className="inner-md outer">
-                    <div className="post-feed">
-                        {_.map(display_posts, (post, post_idx) => (
-                            <article key={post_idx} className="post">
-                                {_.get(post, 'frontmatter.thumb_image', null) && (
-                                    <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                                        <img
-                                            src={withPrefix(_.get(post, 'frontmatter.thumb_image', null))}
-                                            alt={_.get(this.props, 'pageContext.frontmatter.thumb_image_alt', null)}
-                                        />
-                                    </Link>
-                                )}
-                                <header className="post-header">
-                                    <div className="post-meta">
-                                        <time className="published" dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>
-                                            {moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}
-                                        </time>
-                                    </div>
-                                    <h2 className="post-title line-left">
-                                        <Link to={withPrefix(_.get(post, 'url', null))} rel="bookmark">
-                                            {_.get(post, 'frontmatter.title', null)}
-                                        </Link>
-                                    </h2>
-                                </header>
-                                {_.get(post, 'frontmatter.excerpt', null) && (
-                                    <React.Fragment>
-                                        <p className="post-excerpt"> {_.get(post, 'frontmatter.excerpt', null)}</p>
-                                        {_.get(this.props, 'pageContext.frontmatter.has_more_link', null) === true &&
-                                            _.get(this.props, 'pageContext.frontmatter.more_link_text', null) && (
-                                                <p className="read-more">
-                                                    <Link className="read-more-link" to={withPrefix(_.get(post, 'url', null))}>
-                                                        {_.get(this.props, 'pageContext.frontmatter.more_link_text', null)}
-                                                    </Link>
-                                                </p>
-                                            )}
-                                    </React.Fragment>
-                                )}
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import DocsMenu from '../components/DocsMenu';
-import { htmlToReact, getPages, Link, withPrefix } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Docs extends React.Component {
-    render() {
-        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
-        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
-        return (
-            <Layout {...this.props}>
-                <div className="inner outer">
-                    <div className="docs-content">
-                        <DocsMenu {...this.props} page={this.props.pageContext} site={this.props.pageContext.site} />
-                        <article className="post type-docs">
-                            <div className="post-inside">
-                                <header className="post-header">
-                                    <h1 className="post-title line-left"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                                </header>
-                                <div className="post-content">
-                                    {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                                    {root_docs_path !== current_page_url &&
-                                        (() => {
-                                            let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
-                                            let child_count = _.size(child_pages);
-                                            let has_children = child_count > 0 ? true : false;
-                                            return (
-                                                <React.Fragment>
-                                                    {has_children && (
-                                                        <ul id="docs-section-items" className="docs-section-items">
-                                                            {_.map(child_pages, (child_page, child_page_idx) => (
-                                                                <li key={child_page_idx} className="docs-section-item">
-                                                                    <Link to={withPrefix(_.get(child_page, 'url', null))} className="docs-item-link">
-                                                                        {_.get(child_page, 'frontmatter.title', null)}
-                                                                        <span className="icon-angle-right" aria-hidden="true" />
-                                                                    </Link>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-                                                </React.Fragment>
-                                            );
-                                        })()}
-                                </div>
-                            </div>
-                        </article>
-                        <nav id="page-nav" className="page-nav">
-                            <div id="page-nav-inside" className="page-nav-inside sticky">
-                                <h2 className="page-nav-title"> Jump to Section</h2>
-                                <div id="page-nav-link-container" />
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, htmlToReact } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Page extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                <article className="post post-full">
-                    <header className="post-header has-gradient outer">
-                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                            <div
-                                className="bg-img"
-                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                            />
-                        )}
-                        <div className="inner-sm">
-                            <h1 className="post-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                                <div className="post-subtitle"> {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
-                            )}
-                        </div>
-                    </header>
-                    <div className="inner-md outer">
-                        <div className="post-content"> {htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
-                    </div>
-                </article>
-            </Layout>
-        );
-    }
-}
-```
-
----
-
-```js
-import React from 'react';
-import _ from 'lodash';
-import moment from 'moment-strftime';
-import { graphql } from 'gatsby';
-
-import { Layout } from '../components/index';
-import { toStyleObj, withPrefix, htmlToReact } from '../utils';
-
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
-export const query = graphql`
-    query ($url: String) {
-        sitePage(path: { eq: $url }) {
-            id
-        }
-    }
-`;
-
-export default class Post extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-                <article className="post post-full">
-                    <header className="post-header has-gradient outer">
-                        {_.get(this.props, 'pageContext.frontmatter.image', null) && (
-                            <div
-                                className="bg-img"
-                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
-                            />
-                        )}
-                        <div className="inner-sm">
-                            <div className="post-meta">
-                                <time
-                                    className="published"
-                                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}
-                                >
-                                    {moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%B %d, %Y')}
-                                </time>
-                            </div>
-                            <h1 className="post-title"> {_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                                <div className="post-subtitle"> {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}</div>
-                            )}
-                        </div>
-                    </header>
-                    <div className="inner-md outer">
-                        <div className="post-content"> {htmlToReact(_.get(this.props, 'pageContext.html', null))}</div>
-                    </div>
-                </article>
-            </Layout>
-        );
-    }
-}
-```
-
-</details>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
