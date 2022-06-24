@@ -120,7 +120,7 @@
                     },
                     {
                         "label": "Career-Tips🎓",
-                        "url": "https://bgoonz-blog.netlify.app/docs/career/",
+                        "url": "https://syntax-highlight.netlify.app/docs/career/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -164,7 +164,7 @@
                     },
                     {
                         "label": "Web Dev Setup",
-                        "url": "https://bgoonz-blog.netlify.app/blog/webdev-setup/",
+                        "url": "https://syntax-highlight.netlify.app/blog/webdev-setup/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -324,7 +324,7 @@
                     },
                     {
                         "label": "Wordpress Blog",
-                        "url": "https://bgoonz-blog.netlify.app/",
+                        "url": "https://syntax-highlight.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -353,7 +353,7 @@
             },
             {
                 "label": "Admin",
-                "url": "https://bgoonz-blog.netlify.app/admin/",
+                "url": "https://syntax-highlight.netlify.app/admin/",
                 "style": "primary",
                 "icon_class": "github",
                 "type": "action_menu",
@@ -361,7 +361,7 @@
                 "has_subnav": true,
                 "subnav_links": [{
                         "label": "Write Docs",
-                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/docs",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/docs",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -370,7 +370,7 @@
                     },
                     {
                         "label": "Write Blog",
-                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/blog/new",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -379,7 +379,7 @@
                     },
                     {
                         "label": "Webmaster",
-                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/blog/new",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -534,6 +534,6 @@
         "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
-    "domain": "https://bgoonz-blog.netlify.app/",
+    "domain": "https://syntax-highlight.netlify.app/",
     "favicon": "images/logo-final-touchup.PNG"
 }

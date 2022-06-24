@@ -3,7 +3,7 @@
     background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
     padding-bottom: 5em;
     padding-top: 5em;
-    color: white;
+    color: white !important;
     border: 4px solid black;
 }
 
@@ -43,7 +43,7 @@
     text-align: center;
 
     .copyright,
-    > a {
+    >a {
         margin: 0 4px 0.2em 0;
     }
 }

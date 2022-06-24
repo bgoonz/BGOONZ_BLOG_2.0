@@ -29,7 +29,7 @@ sections:
             title: A Quick Guide To Big O
             image: images/bigo.jpg
             title_url: >-
-                https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/
+                https://syntax-highlight.netlify.app/docs/ds-algo/big-o/
           - content: |
                 *Python has a built in help function that let's you see a description
                 of the source code without having to navigate to it… "-SickNasty …
@@ -37,11 +37,11 @@ sections:
             actions:
                 - label: View Posts
                   url: >-
-                      https://bgoonz-blog.netlify.app/docs/python/python-ds
+                      https://syntax-highlight.netlify.app/docs/python/python-ds
                   style: secondary
             image_alt: python
             title: Python Guide
-            title_url: 'https://bgoonz-blog.netlify.app/docs/python/python-ds'
+            title_url: 'https://syntax-highlight.netlify.app/docs/python/python-ds'
             image: images/python-language.jpg
           - content: |
             actions:
@@ -51,7 +51,7 @@ sections:
             title: Guitar Effects Triggering w DTW
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
             image: images/dtw-algo.jpg
-          - title_url: 'https://bgoonz-blog.netlify.app/docs/react/react2/'
+          - title_url: 'https://syntax-highlight.netlify.app/docs/react/react2/'
             image_alt: img of dtw
             content: |
                 As I learn to build web applications in React I will blog about it in
