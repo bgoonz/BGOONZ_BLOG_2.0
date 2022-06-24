@@ -4,54 +4,9 @@ template: docs
 excerpt: An Array data structure, or simply an Array, is a data structure
   consisting of a collection of elements (values or variables)
 ---
-Fundamental Data Structures In JavaScript
+## **Fundamental Data Structures In JavaScript**
 
-Here's a website I created to practice data structures!\
-[**directory**\
-_Edit description_ds-algo-official-c3dw6uapg-bgoonz.vercel.app](https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/)
 
-Here's the repo that the website is built on:\
-[**bgoonz/DS-ALGO-OFFICIAL**\
-\*Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…\*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
-
-## Resources (article content below):
-
-* [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
-* [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
-* [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
-* [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
-* [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
-* [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-* [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
-* [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
-* [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
-* [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
-* [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
-* [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
-* [LeetCode](https://leetcode.com/)
-* [InterviewBit](https://www.interviewbit.com/)
-* [Codility](https://codility.com/)
-* [HackerRank](https://www.hackerrank.com/)
-* [Project Euler](https://projecteuler.net/)
-* [Spoj](https://spoj.com/)
-* [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
-* [HackerEarth](https://www.hackerearth.com/)
-* [Top Coder](https://www.topcoder.com/)
-* [CodeChef](https://www.codechef.com/)
-* [Codewars](https://www.codewars.com/)
-* [CodeSignal](https://codesignal.com/)
-* [CodeKata](http://codekata.com/)
-* [Firecode](https://www.firecode.io/)
-* [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
-* [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
-* [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
-* [EDU](https://codeforces.com/edu/course/2) Advanced course.
-* [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
-* [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
-* [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
-* [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
-* [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
-* Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
 
 > *The space complexity represents the memory consumption of a data structure. As for most of the things in life, you can't have it all, so it is with the data structures. You will generally need to trade some time for space or the other way around.*
 >
@@ -79,7 +34,7 @@ Arrays are among the oldest and most important data structures and are used by e
 
 O(1) O(n) O(1) O(n)
 
-```js
+```javascript
 class ArrayADT {
     constructor() {
         this.array = [];
@@ -276,7 +231,7 @@ The main difference is that object's "index" need not be numbers and is not nece
 
 ![alt-text](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
 
-```js
+```javascript
 // 16. Creating an Object
 
 let newObj = {
@@ -330,7 +285,7 @@ newObj.helloWorld();
 
 ![alt-text](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
 
-![alt-text](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
+![hash](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO "hash")
 
 > *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
 
@@ -346,7 +301,7 @@ Access Search Insertion Deletion
 
 Note, here I am storing another object for every hash in my Hash Table.
 
-```js
+```javascript
 class HashTable {
     constructor( size ) {
         this.values = {};
@@ -425,7 +380,7 @@ length gives 3: 3
 
 Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
-```js
+```javascript
 // 23. Creating a new Set
 let newSet = new Set();
 
@@ -503,7 +458,7 @@ console.log(symmetricDifference(setA, setC));   // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC));            // => Set [1, 2]
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
+![SET](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG "set")
 
 > *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
 
@@ -517,7 +472,7 @@ Access Search Insertion Deletion
 
 > *The code*
 
-```js
+```javascript
 function Set() {
       this.values = [];
       this.numberOfValues = 0;
@@ -610,7 +565,7 @@ function Set() {
     console.log('set3 length gives 3:', set3.length()); // => 3
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
+![linked-list](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif "linked-list")
 
 > *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
 
@@ -623,7 +578,7 @@ O(n) O(n) O(1) O(1)
 
 > *The code*
 
-```js
+```javascript
 function Node(data) {
   this.data = data;
   this.next = null;
@@ -741,7 +696,7 @@ singlyLinkedList.traverse(function(node) { console.log(node.data); }); // => 12 
 console.log('length is 7:', singlyLinkedList.length()); // => 7
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
+![linked-list](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif "linked-list")
 
 > *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
 
@@ -754,7 +709,7 @@ O(n) O(n) O(1) O(1)
 
 > *The code*
 
-```js
+```javascript
 class Node {
     constructor(data) {
         this.data = data;
@@ -948,7 +903,7 @@ length is 7: 7
 */
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
+![stack](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif "stack")
 
 > *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
 
@@ -961,7 +916,7 @@ O(n) O(n) O(1) O(1)
 
 > *The code*
 
-```js
+```javascript
 function Stack() {
   this.stack = [];
 }
@@ -999,7 +954,7 @@ console.log('peek is undefined:', stack.peek()); // => undefined
 console.log('pop is undefined:', stack.pop()); // => undefined
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
+![queue](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif "queue")
 
 > *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
 
@@ -1012,7 +967,7 @@ O(n) O(n) O(1) O(n)
 
 > *The code*
 
-```js
+```javascript
 function Queue() {
   this.queue = [];
 }
@@ -1050,7 +1005,7 @@ console.log('peek is undefined:', queue.peek()); // => undefined
 console.log('dequeue is undefined:', queue.dequeue()); // => undefined
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
+![bst](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n "bst")
 
 > *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
 
@@ -1060,11 +1015,11 @@ Access Search Insertion Deletion\
 O(n) O(n) O(n) O(n)\
 To get a full overview of the time and space complexity of the Tree data structure, have a look to this excellent Big O cheat sheet.
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
+![bigo](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png "bigo")
 
 > *The code*
 
-```js
+```javascript
 function Node(data) {
   this.data = data;
   this.children = [];
@@ -1224,9 +1179,7 @@ tree.remove('cfo');
 tree.print(); // => ceo | cto | dev1 dev2 dev3
 ```
 
-
-
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
+![tree](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif "tree")
 
 > *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references. From Wikipedia*
 
@@ -1249,7 +1202,7 @@ Graph
 
 > *The code*
 
-````js
+````javascript
 //below uses the adjacency list representation.
 
     function Graph() {
@@ -1409,3 +1362,50 @@ Graph
     console.log('graph relations (number of edges):', graph.relations()); // => 4
     console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
 ````
+
+Here's a website I created to practice data structures!\
+[**directory**\
+_Edit description_ds-algo-official-c3dw6uapg-bgoonz.vercel.app](https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/)
+
+Here's the repo that the website is built on:\
+[**bgoonz/DS-ALGO-OFFICIAL**\
+\*Navigation ####Author:Bryan Guner Big O notation is the language we use for talking about how long an algorithm takes…\*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+
+## Resources (article content below):
+
+* [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
+* [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
+* [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
+* [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
+* [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
+* [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+* [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
+* [Introduction to Algorithms](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+* [Competitive Programming 3](http://www.sso.sy/sites/default/files/competitive%20programming%203_1.pdf) by Steven Halim and Felix Halim
+* [Competitive Programmers Hand Book](https://cses.fi/book/book.pdf) Beginner friendly hand book for competitive programmers.
+* [Data Structures and Algorithms Made Easy](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Data%20Structures%20and%20Algorithms%20-%20Narasimha%20Karumanchi.pdf) by Narasimha Karumanchi
+* [Learning Algorithms Through Programming and Puzzle Solving](https://github.com/Amchuz/My-Data-Structures-and-Algorithms-Resources/raw/master/Books/Learning%20Algorithms%20Through%20Programming%20and%20Puzzle%20Solving.pdf) by Alexander Kulikov and Pavel Pevzner
+* [LeetCode](https://leetcode.com/)
+* [InterviewBit](https://www.interviewbit.com/)
+* [Codility](https://codility.com/)
+* [HackerRank](https://www.hackerrank.com/)
+* [Project Euler](https://projecteuler.net/)
+* [Spoj](https://spoj.com/)
+* [Google Code Jam practice problems](https://code.google.com/codejam/contests.html)
+* [HackerEarth](https://www.hackerearth.com/)
+* [Top Coder](https://www.topcoder.com/)
+* [CodeChef](https://www.codechef.com/)
+* [Codewars](https://www.codewars.com/)
+* [CodeSignal](https://codesignal.com/)
+* [CodeKata](http://codekata.com/)
+* [Firecode](https://www.firecode.io/)
+* [Master the Coding Interview: Big Tech (FAANG) Interviews](https://academy.zerotomastery.io/p/master-the-coding-interview-faang-interview-prep) Course by Andrei and his team.
+* [Common Python Data Structures](https://realpython.com/python-data-structures) Data structures are the fundamental constructs around which you build your programs. Each data structure provides a particular way of organizing data so it can be accessed efficiently, depending on your use case. Python ships with an extensive set of data structures in its standard library.
+* [Fork CPP](https://www.geeksforgeeks.org/fork-cpp-course-structure) A good course for beginners.
+* [EDU](https://codeforces.com/edu/course/2) Advanced course.
+* [C++ For Programmers](https://www.udacity.com/course/c-for-programmers--ud210) Learn features and constructs for C++.
+* [GeeksForGeeks — A CS portal for geeks](http://www.geeksforgeeks.org/)
+* [Learneroo — Algorithms](https://www.learneroo.com/subjects/8)
+* [Top Coder tutorials](http://www.topcoder.com/tc?d1=tutorials&d2=alg_index&module=Static)
+* [Infoarena training path](http://www.infoarena.ro/training-path) (RO)
+* Steven & Felix Halim — [Increasing the Lower Bound of Programming Contests](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=118) (UVA Online Judge)
