@@ -207,12 +207,11 @@ sections:
       image_position: right
       content: |
           ## Web Dev Utilitiy Tools
-          <iframe class="block-content" width="100%  width="1200px!important"
-          height="1000px!important"
+          <iframe class="block-content" width="100%  width="1200px"
+          height="1000px"
             src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-            clipboard-write;
-            encrypted-media; gyroscope; ></iframe>
-          <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important" ></iframe>
+            ></iframe><br><br>
+          <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px" height="1000px" ></iframe>
       actions: []
       type: section_content
       image: images/cool annimation.gif
@@ -220,8 +219,8 @@ sections:
       image_alt: tools
       image_position: left
       content: |
-          <iframe class="block-content" width="100%  width="1200px!important"  height="1000px!important" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/" ></iframe>
-          <iframe class="block-content" width="100%  width="1200px!important" height="1000px!important"  src="https://cheatsheets-42.netlify.app/" ></iframe>
+          <iframe class="block-content" width="100%  width="1200px"  height="1000px" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/" ></iframe><br><br>
+          <iframe class="block-content" width="100%  width="1200px" height="1000px"  src="https://cheatsheets-42.netlify.app/" ></iframe>
       actions: []
       type: section_content
       title: Tools Showcase
