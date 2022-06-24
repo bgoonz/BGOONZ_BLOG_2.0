@@ -35,7 +35,7 @@ psql -U myuser -h myhost "dbname=mydb sslmode=require" # ssl connection
 
 ### Default Admin Login
 
-```console
+```bash
 sudo -u postgres psql -U postgres
 sudo -u postgres psql
 ```
@@ -44,7 +44,7 @@ sudo -u postgres psql
 
 ### Determine system tables
 
-```console
+```bash
 select * from pg_tables where tableowner = 'postgres';
 ```
 
@@ -60,7 +60,7 @@ select * from pg_tables where tableowner = 'postgres';
 
 ### Reset a user password as admin
 
-```console
+```bash
 alter user usertochange with password 'new_passwd';
 ```
 
@@ -72,25 +72,25 @@ alter user usertochange with password 'new_passwd';
 
 ### Load data into postgresql
 
-```console
+```bash
 psql -W -U username -H hostname < file.sql
 ```
 
 ### Dump (Backup) Data into file
 
-```console
+```bash
 pg_dump -W -U username -h hostname database_name > file.sql
 ```
 
 ### Increment a sequence
 
-```console
+```bash
 SELECT nextval('my_id_seq');
 ```
 
 ### Create new user
 
-```console
+```bash
 CREATE USER lemmy WITH PASSWORD 'myPassword';
 # or
 
@@ -99,19 +99,19 @@ sudo -u postgres createuser lemmy -W
 
 ### Change user password
 
-```console
+```bash
 ALTER USER Postgres WITH PASSWORD 'mypass';
 ```
 
 ### Grant user createdb privilege
 
-```console
+```bash
 ALTER USER myuser WITH createdb;
 ```
 
 ### Create a superuser user
 
-```console
+```bash
 create user mysuper with password '1234' SUPERUSER
 # or even better
 create user mysuper with password '1234' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION;
@@ -121,7 +121,7 @@ sudo -u postgres createuser lemmy -W -s
 
 ### Upgrade an existing user to superuser
 
-```console
+```bash
 alter user mysuper with superuser;
 # or even better
 alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
@@ -131,19 +131,19 @@ alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
 ### Change Database Owner
 
-```console
+```bash
 alter database database_name owner to new_owner;
 ```
 
 ### Copy a database
 
-```console
+```bash
 CREATE DATABASE newdb WITH TEMPLATE originaldb;
 ```
 
 ### View Database Connections
 
-```console
+```bash
 SELECT * FROM pg_stat_activity;
 ```
 
@@ -151,14 +151,14 @@ SELECT * FROM pg_stat_activity;
 
 ### Show run-time parameters
 
-```console
+```bash
 show all;
 select * from pg_settings;
 ```
 
 ### Show the block size setting
 
-```console
+```bash
 # show block_size;
  block_size
 ------------
@@ -168,7 +168,7 @@ select * from pg_settings;
 
 ### Show stored procedure source
 
-```console
+```bash
 SELECT prosrc FROM pg_proc WHERE proname = 'procname'
 ```
 
@@ -261,7 +261,7 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
-```console
+```bash
 -- See the query plan for the given query
 EXPLAIN __query__
 
@@ -276,7 +276,7 @@ ANALYZE [__table__]
 
 ### From a Single Table
 
-```console
+```bash
 -- Query data in columns c1, c2 from a table
 SELECT c1, c2 FROM t;
 

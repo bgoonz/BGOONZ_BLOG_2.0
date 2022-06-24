@@ -504,7 +504,7 @@ find . -type f -exec chmod 644 {} \;
 ## Description: need to : `sudo apt install rename`
 > Notes: Issue when renaming file without numbers collides with existing file name...
 ## # code
-````console
+````bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 for i in *.html; do mv "$i" "${i%-*}.html"; done
@@ -876,7 +876,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 ## Description
 > Notes:
 ## ## code
-```console
+```bash
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
