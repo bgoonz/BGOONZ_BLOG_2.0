@@ -54,6 +54,9 @@ module.exports = {
             }
         },
         {
+            resolve: "gatsby-plugin-no-sourcemaps",
+        },
+        {
             resolve: 'gatsby-plugin-sass',
             options: {}
         },
