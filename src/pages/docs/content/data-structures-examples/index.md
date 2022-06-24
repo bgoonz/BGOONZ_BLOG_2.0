@@ -67,7 +67,7 @@ Here's the repo that the website is built on:\
 
 The complexity is usually expressed with the Big O notation. The wikipedia page about this subject is pretty complex but you can find here a good summary of the different complexity for the most famous data structures and sorting algorithms.
 
-![](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
 
 An Array data structure, or simply an Array, is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. The simplest type of data structure is a linear array, also called one-dimensional array. From Wikipedia
 
@@ -183,7 +183,7 @@ length is 4: 6
  */
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
+![alt-text](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
 
 indexvalue0 … this is the first value, stored at zero position
 
@@ -274,7 +274,7 @@ I also visualize an object as a table.
 
 The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
-![](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
+![alt-text](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
 
 ```js
 // 16. Creating an Object
@@ -328,9 +328,9 @@ newObj.helloWorld = function(){
 newObj.helloWorld();
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
 
-![](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
+![alt-text](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
 
 > *A Hash Table (Hash Map) is a data structure used to implement an associative array, a structure that can map keys to values. A Hash Table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. From Wikipedia*
 
@@ -503,7 +503,7 @@ console.log(symmetricDifference(setA, setC));   // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC));            // => Set [1, 2]
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
 
 > *A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set. From Wikipedia*
 
@@ -610,7 +610,7 @@ function Set() {
     console.log('set3 length gives 3:', set3.length()); // => 3
 ```
 
-![](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
+![alt-text](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
 
 > *A Singly Linked List is a linear collection of data elements, called nodes pointing to the next node by means of pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.*
 
@@ -741,7 +741,7 @@ singlyLinkedList.traverse(function(node) { console.log(node.data); }); // => 12 
 console.log('length is 7:', singlyLinkedList.length()); // => 7
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
 
 > *A Doubly Linked List is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes. From Wikipedia*
 
@@ -948,7 +948,7 @@ length is 7: 7
 */
 ```
 
-![](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
+![alt-text](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
 
 > *A Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a Stack gives rise to its alternative name, LIFO (for last in, first out). From Wikipedia*
 
@@ -999,7 +999,7 @@ console.log('peek is undefined:', stack.peek()); // => undefined
 console.log('pop is undefined:', stack.pop()); // => undefined
 ```
 
-![](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
+![alt-text](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
 
 > *A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.*
 
@@ -1050,7 +1050,7 @@ console.log('peek is undefined:', queue.peek()); // => undefined
 console.log('dequeue is undefined:', queue.dequeue()); // => undefined
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
 
 > *A Tree is a widely used data structure that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node. A tree data structure can be defined recursively as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root node. From Wikipedia*
 
@@ -1060,7 +1060,7 @@ Access Search Insertion Deletion\
 O(n) O(n) O(n) O(n)\
 To get a full overview of the time and space complexity of the Tree data structure, have a look to this excellent Big O cheat sheet.
 
-![](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
+![alt-text](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
 
 > *The code*
 
@@ -1226,7 +1226,7 @@ tree.print(); // => ceo | cto | dev1 dev2 dev3
 
 
 
-![](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
+![alt-text](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
 
 > *A Graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected Graph or a set of ordered pairs for a directed Graph. These pairs are known as edges, arcs, or lines for an undirected Graph and as arrows, directed edges, directed arcs, or directed lines for a directed Graph. The vertices may be part of the Graph structure, or may be external entities represented by integer indices or references. From Wikipedia*
 

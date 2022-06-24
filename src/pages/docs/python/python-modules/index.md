@@ -441,7 +441,7 @@ In fact function definitions are also ‘statements’ that are ‘executed’; 
 -   [modules](https://docs.python.org/3/py-modindex.html 'Python Module Index') |
 -   [next](https://bgoonz-docs-collection-69gqwqgppf5gg9-5500.githubpreview.dev/python/tutorial/inputoutput.html '7. Input and Output') |
 -   [previous](https://bgoonz-docs-collection-69gqwqgppf5gg9-5500.githubpreview.dev/python/tutorial/datastructures.html '5. Data Structures') |
--   ![](https://bgoonz-docs-collection-69gqwqgppf5gg9-5500.githubpreview.dev/python/_static/py.png)
+-   ![alt-text](https://bgoonz-docs-collection-69gqwqgppf5gg9-5500.githubpreview.dev/python/_static/py.png)
 -   [Python](https://www.python.org/) »
 -   [3.9.5 Documentation](https://docs.python.org/3/index.html) »
 -   [The Python Tutorial](https://bgoonz-docs-collection-69gqwqgppf5gg9-5500.githubpreview.dev/python/tutorial/index.html) »
