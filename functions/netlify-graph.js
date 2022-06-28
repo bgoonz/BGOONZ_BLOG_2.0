@@ -1,3 +1,4 @@
+/* It's a function that is being exported from the netlifyGraph file. */
 import {
     fetchExampleQuery
 } from '../netlifyGraph' // make sure this is the path to your netlify/functions dir
@@ -29,4 +30,5 @@ return {
     headers: {
         "Content-Type": "application/json"
     }
+}
 }
