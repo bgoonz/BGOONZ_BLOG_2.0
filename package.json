@@ -9,7 +9,7 @@
         "build": "gatsby build --prefix-paths",
         "serve": "gatsby serve",
         "prettydock": "npm i docky --location=global && npm i prettier --location=global",
-        "docky": "docky src/pages/docs/*.md   --watch 'src/pages/*.md','./README.md'  --ignore 'src/components/index.js'   --use-readme=true",
+        "docky": "docky src/pages/docs/*.md   --watch 'src/pages/*.js','./README.md'    --use-readme=true",
         "pretty": "prettier --write ./static && prettier --write ./docs && prettier --write ./notes",
         "git": "git add . && git commit -m 'update' && git pull && git push"
     },
@@ -46,7 +46,8 @@
         "react-html-parser": "2.0.2",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
-        "sprintf-js": "1.1.2"
+        "sprintf-js": "1.1.2",
+        "web-dev-utils": "^1.0.4"
     },
     "devDependencies": {
         "prettier": "^2.7.1"
