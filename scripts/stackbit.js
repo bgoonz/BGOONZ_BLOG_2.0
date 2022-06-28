@@ -2,27 +2,27 @@
 const urlSlug = require('url-slug');
 const {getThemeKey, getRepoName} = require('./utils');
 const ora = require('ora');
-const spinner = ora('Loading')
-const allowedSsg = []
-const allowedCms = []
+const spinner = ora('Loading');
+const allowedSsg = [];
+const allowedCms = [];
 
 const generateStackbit = (frontmatter) => {
-    const themeKey = getThemeKey(frontmatter.github)
+    const themeKey = getThemeKey(frontmatter.github);
 
-    spinner.text = `${frontmatter.file}`
+    spinner.text = `${frontmatter.file}`;
 
     let stackbitData = {
         theme_key: themeKey
     };
 
-    const ssgArray = frontmatter.ssg || []
-    const cmsArray = frontmatter.cms || []
+    const ssgArray = frontmatter.ssg || [];
+    const cmsArray = frontmatter.cms || [];
 
     if (ssgArray.some(ssg => allowedSsg.includes(urlSlug(ssg))) && cmsArray.some(cms => allowedCms.includes(urlSlug(cms)))) {
         if (ssgArray.length > 1) {
-            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}`
+            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}`;
         } else {
-            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}&ssg=${urlSlug(ssgArray)}`
+            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}&ssg=${urlSlug(ssgArray)}`;
         }
     } else {
       stackbitData.createUrl = null;
@@ -60,16 +60,16 @@ const generateStackbit = (frontmatter) => {
     manualDisabled.forEach(url => {
         if (url === frontmatter.github) {
             if (stackbitData.createUrl) {
-                delete stackbitData.createUrl
+                delete stackbitData.createUrl;
             }
         }
-    })
-    const manualEnabled = ['https://github.com/stackbit-themes/minimal-nextjs-theme']
+    });
+    const manualEnabled = ['https://github.com/stackbit-themes/minimal-nextjs-theme'];
     manualEnabled.forEach(url => {
         if (url === frontmatter.github) {
-            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}&ssg=${urlSlug(frontmatter.ssg)}&cms=${urlSlug(frontmatter.cms)}`
+            stackbitData.createUrl = `https://app.stackbit.com/create?theme=${frontmatter.github}&ssg=${urlSlug(frontmatter.ssg)}&cms=${urlSlug(frontmatter.cms)}`;
         }
-    })
+    });
     if (stackbitData.createUrl) {
         return stackbitData;
     }
@@ -80,7 +80,7 @@ const generateStackbit = (frontmatter) => {
 const generateStackbitData = (markdownData) => {
     spinner.start("Fetching Stackbit Data");
     const stackbitData = markdownData.map(theme => {
-        return generateStackbit(theme)
+        return generateStackbit(theme);
     }).filter(stackbit => stackbit.createUrl);
     spinner.succeed("Success - Fetching Stackbit Data");
     return stackbitData;
@@ -88,4 +88,4 @@ const generateStackbitData = (markdownData) => {
 
 module.exports = {
     generateStackbitData
-}
+};

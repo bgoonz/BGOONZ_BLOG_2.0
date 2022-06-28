@@ -4,27 +4,27 @@ const allSettled = require('promise.allsettled');
 const rateLimit = require('axios-rate-limit');
 const isBefore = require('date-fns/isBefore');
 const parseISO = require('date-fns/parseISO');
-const formatDistanceToNow = require('date-fns/formatDistanceToNow')
+const formatDistanceToNow = require('date-fns/formatDistanceToNow');
 const ora = require('ora');
 const {errorLog} = require('./errors');
 const {getThemeKey, getRepoName} = require('./utils');
-const {updateFrontmatter} = require('./markdown')
+const {updateFrontmatter} = require('./markdown');
 const config = require('./config');
 
 if (!process.env.GITHUB_TOKEN) {
     throw new Error(
         'Cannot access Github API - environment variable "GITHUB_TOKEN" is missing'
-    )
+    );
 }
 
 const token = process.env.GITHUB_TOKEN;
-const axiosLimit = rateLimit(axios.create(), {maxRequests: 2, perMilliseconds: 200})
-const spinner = ora('Loading')
+const axiosLimit = rateLimit(axios.create(), {maxRequests: 2, perMilliseconds: 200});
+const spinner = ora('Loading');
 
 const fetchRepoData = async (frontmatter) => {
 
-    const themeKey = getThemeKey(frontmatter.github)
-    const repoName = getRepoName(frontmatter.github)
+    const themeKey = getThemeKey(frontmatter.github);
+    const repoName = getRepoName(frontmatter.github);
 
     try {
         const res = await axiosLimit.get(
@@ -33,17 +33,17 @@ const fetchRepoData = async (frontmatter) => {
                 headers: {
                     Authorization: `Token ${token}`,
                 },
-            })
-        spinner.text = `${frontmatter.file} => ${res.data.html_url} - ${res.status}`
+            });
+        spinner.text = `${frontmatter.file} => ${res.data.html_url} - ${res.status}`;
         const lastCommit = await fetchBranchData(repoName, res.data.default_branch);
         updateFrontmatter(frontmatter.file, {
             stale: isBefore(parseISO(lastCommit), config.staleBeforeDate)
-        })
+        });
         if (frontmatter.disabled) {
             updateFrontmatter(frontmatter.file, {
                 disabled: false,
                 disabled_reason: ""
-            })
+            });
         }
 
         return {
@@ -68,23 +68,23 @@ const fetchRepoData = async (frontmatter) => {
                 thumbnail: `https://www.jamstackthemes.dev/images/theme/thumbnail/${themeKey}.jpg`,
                 screenshot: `https://www.jamstackthemes.dev/images/theme/thumbnail/2x/${themeKey}-2x.jpg`
             }
-        }
+        };
     } catch (err) {
         let error = "Github repo not found";
         updateFrontmatter(frontmatter.file, {
             disabled: true,
             disabled_reason: error
-        })
-        spinner.text = `${frontmatter.file} => ${error}`
+        });
+        spinner.text = `${frontmatter.file} => ${error}`;
         errorLog.push({
             theme_key: themeKey,
             file: frontmatter.file,
             repoUrl: frontmatter.github,
             error
-        })
-        throw err
+        });
+        throw err;
     }
-}
+};
 
 const fetchBranchData = (repo, branch) => {
     return axiosLimit.get(
@@ -96,18 +96,18 @@ const fetchBranchData = (repo, branch) => {
         }).then((res) => {
         const lastCommit = res.data.commit.commit.author.date;
         const lastCommitToNow = formatDistanceToNow(parseISO(lastCommit));
-        spinner.text = `${repo} => last commit to branch '${branch}' ${lastCommitToNow}`
+        spinner.text = `${repo} => last commit to branch '${branch}' ${lastCommitToNow}`;
         return lastCommit;
     }).catch((err) => {
-        throw err
+        throw err;
     });
-}
+};
 
 const generateGithubData = async (markdownData, themesJsonData) => {
     spinner.start("Fetching Github Data");
     const initalThemes = config.themesJsonData;
-    const update = await allSettled(markdownData.map(frontmatter => fetchRepoData(frontmatter)))
-    const updatedThemesArray = update.filter(res => res.status === 'fulfilled').map(res => res.value)
+    const update = await allSettled(markdownData.map(frontmatter => fetchRepoData(frontmatter)));
+    const updatedThemesArray = update.filter(res => res.status === 'fulfilled').map(res => res.value);
     const mergedThemesMap = updatedThemesArray.reduce((accumulator, theme) => {
         if (theme === undefined) {
             // TODO find root cause
@@ -116,7 +116,7 @@ const generateGithubData = async (markdownData, themesJsonData) => {
                 ...accumulator
             };
         }
-        const themeKey = getThemeKey(theme.github_url)
+        const themeKey = getThemeKey(theme.github_url);
         return {
             ...accumulator,
             [themeKey]: theme
@@ -124,9 +124,9 @@ const generateGithubData = async (markdownData, themesJsonData) => {
     }, initalThemes);
 
     spinner.succeed("Success - Fetching Github Data");
-    return mergedThemesMap
-}
+    return mergedThemesMap;
+};
 
 module.exports = {
     generateGithubData
-}
+};
