@@ -19,9 +19,9 @@
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
 
-![video](https://youtu.be/OGCcq1_Tbzk)
 
-[![DemoE](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
+
+[![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
 
 
 ---
