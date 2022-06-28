@@ -4,149 +4,149 @@ template: docs
 excerpt: update
 ---
 
-- [](https://bgoonz-blog.netlify.app/)
+- [](https://bgoonzblog20.netlify.app/)
 
 ---
 
-- [admin](https://bgoonz-blog.netlify.app/admin)
+- [admin](https://bgoonzblog20.netlify.app/admin)
 
 ---
 
-- [blog](https://bgoonz-blog.netlify.app/blog)
+- [blog](https://bgoonzblog20.netlify.app/blog)
 
 ---
 
-- [docs](https://bgoonz-blog.netlify.app/docs)
+- [docs](https://bgoonzblog20.netlify.app/docs)
 
 ---
 
-- [🔒privacy-policy](https://bgoonz-blog.netlify.app/privacy-policy)
+- [🔒privacy-policy](https://bgoonzblog20.netlify.app/privacy-policy)
 
 ---
 
-- [🔎readme](https://bgoonz-blog.netlify.app/readme)
+- [🔎readme](https://bgoonzblog20.netlify.app/readme)
 
 ---
 
-- [🌎showcase](https://bgoonz-blog.netlify.app/showcase)
+- [🌎showcase](https://bgoonzblog20.netlify.app/showcase)
 
 ---
 
 
 ---
 
-- [📚about](https://bgoonz-blog.netlify.app/docs/about)
+- [📚about](https://bgoonzblog20.netlify.app/docs/about)
 
 ---
 
-- [📚archive](https://bgoonz-blog.netlify.app/docs/archive)
+- [📚archive](https://bgoonzblog20.netlify.app/docs/archive)
 
 ---
 
-- [📚articles](https://bgoonz-blog.netlify.app/docs/articles)
+- [📚articles](https://bgoonzblog20.netlify.app/docs/articles)
 
 ---
 
-- [📚audio](https://bgoonz-blog.netlify.app/docs/audio)
+- [📚audio](https://bgoonzblog20.netlify.app/docs/audio)
 
 ---
 
-- [📚career](https://bgoonz-blog.netlify.app/docs/career)
+- [📚career](https://bgoonzblog20.netlify.app/docs/career)
 
 ---
 
-- [📚community](https://bgoonz-blog.netlify.app/docs/community)
+- [📚community](https://bgoonzblog20.netlify.app/docs/community)
 
 ---
 
-- [📚content](https://bgoonz-blog.netlify.app/docs/content)
+- [📚content](https://bgoonzblog20.netlify.app/docs/content)
 
 ---
 
-- [📚css](https://bgoonz-blog.netlify.app/docs/css)
+- [📚css](https://bgoonzblog20.netlify.app/docs/css)
 
 ---
 
-- [📚docs](https://bgoonz-blog.netlify.app/docs/docs)
+- [📚docs](https://bgoonzblog20.netlify.app/docs/docs)
 
 ---
 
-- [📚ds-algo](https://bgoonz-blog.netlify.app/docs/ds-algo)
+- [📚ds-algo](https://bgoonzblog20.netlify.app/docs/ds-algo)
 
 ---
 
-- [📚faq](https://bgoonz-blog.netlify.app/docs/faq)
+- [📚faq](https://bgoonzblog20.netlify.app/docs/faq)
 
 ---
 
-- [📚git](https://bgoonz-blog.netlify.app/docs/git)
+- [📚git](https://bgoonzblog20.netlify.app/docs/git)
 
 ---
 
-- [📚glossary](https://bgoonz-blog.netlify.app/docs/glossary)
+- [📚glossary](https://bgoonzblog20.netlify.app/docs/glossary)
 
 ---
 
-- [📚interact](https://bgoonz-blog.netlify.app/docs/interact)
+- [📚interact](https://bgoonzblog20.netlify.app/docs/interact)
 
 ---
 
-- [📚javascript](https://bgoonz-blog.netlify.app/docs/javascript)
+- [📚javascript](https://bgoonzblog20.netlify.app/docs/javascript)
 
 ---
 
-- [📚js-tips](https://bgoonz-blog.netlify.app/docs/js-tips)
+- [📚js-tips](https://bgoonzblog20.netlify.app/docs/js-tips)
 
 ---
 
-- [📚leetcode](https://bgoonz-blog.netlify.app/docs/leetcode)
+- [📚leetcode](https://bgoonzblog20.netlify.app/docs/leetcode)
 
 ---
 
-- [📚netlify-cms](https://bgoonz-blog.netlify.app/docs/netlify-cms)
+- [📚netlify-cms](https://bgoonzblog20.netlify.app/docs/netlify-cms)
 
 ---
 
-- [📚overflow](https://bgoonz-blog.netlify.app/docs/overflow)
+- [📚overflow](https://bgoonzblog20.netlify.app/docs/overflow)
 
 ---
 
-- [📚privacy-policy](https://bgoonz-blog.netlify.app/docs/privacy-policy)
+- [📚privacy-policy](https://bgoonzblog20.netlify.app/docs/privacy-policy)
 
 ---
 
-- [📚projects](https://bgoonz-blog.netlify.app/docs/projects)
+- [📚projects](https://bgoonzblog20.netlify.app/docs/projects)
 
 ---
 
-- [📚python](https://bgoonz-blog.netlify.app/docs/python)
+- [📚python](https://bgoonzblog20.netlify.app/docs/python)
 
 ---
 
-- [📚quick-ref](https://bgoonz-blog.netlify.app/docs/quick-ref)
+- [📚quick-ref](https://bgoonzblog20.netlify.app/docs/quick-ref)
 
 ---
 
-- [📚react](https://bgoonz-blog.netlify.app/docs/react)
+- [📚react](https://bgoonzblog20.netlify.app/docs/react)
 
 ---
 
-- [📚reference](https://bgoonz-blog.netlify.app/docs/reference)
+- [📚reference](https://bgoonzblog20.netlify.app/docs/reference)
 
 ---
 
-- [📚sitemap](https://bgoonz-blog.netlify.app/docs/sitemap)
+- [📚sitemap](https://bgoonzblog20.netlify.app/docs/sitemap)
 
 ---
 
-- [📚tips](https://bgoonz-blog.netlify.app/docs/tips)
+- [📚tips](https://bgoonzblog20.netlify.app/docs/tips)
 
 ---
 
-- [📚tools](https://bgoonz-blog.netlify.app/docs/tools)
+- [📚tools](https://bgoonzblog20.netlify.app/docs/tools)
 
 ---
 
-- [📚tutorials](https://bgoonz-blog.netlify.app/docs/tutorials)
+- [📚tutorials](https://bgoonzblog20.netlify.app/docs/tutorials)
 
 ---

@@ -695,7 +695,7 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 ### Discover More
 
 [**Web-Dev-Hub**\
-*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonzblog20.netlify.app/ 'https://bgoonzblog20.netlify.app/')[](https://bgoonzblog20.netlify.app/)
 
 ### Part 2 of this series
 

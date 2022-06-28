@@ -406,7 +406,7 @@ Traversy media is a youtube channel created by Brad Traversy. **His youtube chan
 
 I am currently building myself a new blog site… I sometimes develop it locally in vscode… but there's no doubt that it took something very similar to it's present form in a GUI!
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--p-anchor">https://bgoonz-blog.netlify.app/</a>
+<a href="https://bgoonzblog20.netlify.app/" class="markup--anchor markup--p-anchor">https://bgoonzblog20.netlify.app/</a>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*vewSClaL-mtlJ1VPU77ZqQ.jpeg" class="graf-image" /></figure>Stackbit takes all the tools you'd need for a site's stack (theme, static site generator, CMS, and deployment) and quickly bundles them together for you. It offers options in each category, so you can mix and match the tools in your stack that best suit your needs.
 

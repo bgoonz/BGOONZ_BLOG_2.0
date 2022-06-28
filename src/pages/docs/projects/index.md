@@ -180,7 +180,7 @@ weight: 0
 - [https://bg-portfolio.netlify.app/](https://bg-portfolio.netlify.app/)
 - [https://bg-resume.netlify.app/](https://bg-resume.netlify.app/)
 - [https://bgoonz-blog-v3-0.netlify.app/](https://bgoonz-blog-v3-0.netlify.app/)
-- [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
+- [https://bgoonzblog20.netlify.app/](https://bgoonzblog20.netlify.app/)
 - [https://bgoonz-bookmarks.netlify.app/](https://bgoonz-bookmarks.netlify.app/)
 - [https://bgoonz-cv.netlify.app/](https://bgoonz-cv.netlify.app/)
 - [https://bgoonz-games.netlify.app/](https://bgoonz-games.netlify.app/)

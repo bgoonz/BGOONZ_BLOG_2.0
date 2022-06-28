@@ -829,7 +829,7 @@ function fibonacci(n) {\
 ### Or Checkout my personal Resource Site:
 
 [**Web-Dev-Hub**\
-*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonzblog20.netlify.app/ 'https://bgoonzblog20.netlify.app/')[](https://bgoonzblog20.netlify.app/)
 
 ![](https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png)
 
