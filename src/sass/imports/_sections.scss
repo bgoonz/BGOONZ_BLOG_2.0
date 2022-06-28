@@ -200,7 +200,7 @@
 
 // Grid section
 .block-grid {
-    .block-hero + & {
+    .block-hero+& {
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
@@ -257,7 +257,7 @@
     }
 
     a {
-        color: inherit;
+        color: inherit !important;
         text-decoration: none;
     }
 }
@@ -277,7 +277,7 @@
         &:not(.button) {
             &:after {
                 font-size: 1.125em;
-                content: '\2192';
+                content: "\2192";
                 line-height: 1.5;
                 margin-left: 5px;
             }
@@ -312,7 +312,7 @@
         line-height: 1.5;
     }
 
-    & + .block {
+    &+.block {
         margin-top: -5em;
         position: relative;
     }
