@@ -24,7 +24,7 @@ exports.onRenderBody = function({
              <script src={withPrefix('js/blm.js')}/>
              <script src={withPrefix('js/goog-search.js')}/>
              <script src={withPrefix('js/main.js')}/>
-             <script src={withPrefix('js/netlify-identity.js')}/>
+   
              <script src={withPrefix('js/page-load.js')}/>
              <script src={withPrefix('js/page-unload.js')}/>
              <script src={withPrefix('js/plugins.js')}/>
