@@ -32,8 +32,13 @@ seo:
 template: docs
 weight: 0
 ---
+<br>
+<h1> Embeds </h1>
+<br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz-blog-v3-0.netlify.app/embeds/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
 
-https://bgoonz-blog-v3-0.netlify.app/embeds/
 
 <br>
 <h1>  Links: </h1>
