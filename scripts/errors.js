@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-let errorLog = []
+let errorLog = [];
 
 module.exports = {
     errorLog
-}
+};
