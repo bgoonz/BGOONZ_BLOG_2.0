@@ -168,6 +168,7 @@ BLMBadge.init({
     title: '#BlackLivesMatter',
     imageAlt: 'Black Lives Matter Badge'
 });
+
 function MakerBadge(t) {
     (this.userId = ''),
         (this.position = 'right'),
