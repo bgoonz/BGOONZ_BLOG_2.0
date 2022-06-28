@@ -28,7 +28,7 @@ Here you can see in just the first frame of my blog site 5 different embedded wi
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>### 3.) Play.ht Medium Article To Voice-Audio Transcription:
 
--   <span id="66fb">→ <a href="https://play.ht/" class="markup--anchor markup--li-anchor">Link</a></span>
+- <span id="66fb">→ <a href="https://play.ht/" class="markup--anchor markup--li-anchor">Link</a></span>
 
 #### Play.ht offers the following services:
 
@@ -49,7 +49,7 @@ Here you can see in just the first frame of my blog site 5 different embedded wi
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>### 8.) SlideShare:
 
--   <span id="cd54"><a href="https://www.slideshare.net/" class="markup--anchor markup--li-anchor">link</a></span>
+- <span id="cd54"><a href="https://www.slideshare.net/" class="markup--anchor markup--li-anchor">link</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/1*zost4Lf7pDfZdMf7b_hH4w.png" class="graf-image" /></figure>### 9.)Google Forms/Quizzes :
 
@@ -73,4 +73,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/all-the-things-you-can-embed-in-a-medium-article-b03a85c65d86" class="p-canonical">Canonical link</a>
 
-August 31, 2021.
+ August 31, 2021.

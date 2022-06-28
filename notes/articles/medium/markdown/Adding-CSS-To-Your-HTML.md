@@ -23,14 +23,14 @@ For beginners … very picture heavy since CSS is such a visual discipline!
       <body></body>
     </html>
 
--   <span id="36f1">_To connect your CSS sheet to your HTML page, use the link tag like so._</span>
--   <span id="f743">Many developers use External pre-written CSS stylesheets for consistent design.</span>
--   <span id="af3f">You can connect multiple stylesheets.</span>
+- <span id="36f1">_To connect your CSS sheet to your HTML page, use the link tag like so._</span>
+- <span id="f743">Many developers use External pre-written CSS stylesheets for consistent design.</span>
+- <span id="af3f">You can connect multiple stylesheets.</span>
 
 ### CSS Selectors
 
--   <span id="2d5b">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
--   <span id="29cd">`Type Selectors` : Matches by node name.</span>
+- <span id="2d5b">`CSS Selector` : Applies styles to a specific DOM element(s), there are various types:</span>
+- <span id="29cd">`Type Selectors` : Matches by node name.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*GOzh0U_yFtsOo9Hq" class="graf-image" /></figure>- <span id="e624">`Class Selectors` : Matches by class name.</span>
 
@@ -69,8 +69,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### **Class Selectors**
 
--   <span id="45c5">Used to select all elements of a certain class denoted with a `.[class name]`</span>
--   <span id="f9e4">You can assign multiple classes to a DOM element by separating them with a space.</span>
+- <span id="45c5">Used to select all elements of a certain class denoted with a `.[class name]`</span>
+- <span id="f9e4">You can assign multiple classes to a DOM element by separating them with a space.</span>
 
 #### **Compound Class Selectors**
 
@@ -83,8 +83,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
     <div class="box orange"></div>
     <div class="circle orange"></div>
 
--   <span id="e8ca">i.e. .box.yellow will select only the first element.</span>
--   <span id="34a4">**KEEP IN MIND** that if you do include a space it will make the selector into a _descendant selector_.</span>
+- <span id="e8ca">i.e. .box.yellow will select only the first element.</span>
+- <span id="34a4">**KEEP IN MIND** that if you do include a space it will make the selector into a _descendant selector_.</span>
 
 <!-- -->
 
@@ -93,12 +93,12 @@ For beginners … very picture heavy since CSS is such a visual discipline!
       font-style: italic;
     }
 
--   <span id="b382">When we want to target all `h1` tags with the id of `heading`.</span>
+- <span id="b382">When we want to target all `h1` tags with the id of `heading`.</span>
 
 #### **CSS Combinators**
 
--   <span id="383a">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
--   <span id="2805">Be careful not to use too many of them as they will make your CSS far too complex.</span>
+- <span id="383a">CSS Combinators are used to combine other selectors into more complex or targeted selectors — they are very powerful!</span>
+- <span id="2805">Be careful not to use too many of them as they will make your CSS far too complex.</span>
 
 #### `Descendant Selectors`
 
@@ -118,7 +118,7 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
     <body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>
 
--   <span id="b452">Belka would be the only element selected.</span>
+- <span id="b452">Belka would be the only element selected.</span>
 
 #### `Adjacent Sibling Selectors`
 
@@ -153,8 +153,8 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 > Some common pseudo-classes that are frequently used are:
 
--   <span id="1aac">`active` : 'push down', when elements are activated.</span>
--   <span id="587a">`checked` : applies to things like radio buttons or checkbox inputs.</span>
+- <span id="1aac">`active` : 'push down', when elements are activated.</span>
+- <span id="587a">`checked` : applies to things like radio buttons or checkbox inputs.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*wg0YeoQ2mZKHWXaa.gif" class="graf-image" /></figure>- <span id="cf58">`disabled` : any disabled element.</span>
 
@@ -172,9 +172,9 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### `Pseudo-Selectors`
 
--   <span id="571c">Used to create pseudo-elements as children of the elements to which the property applies.</span>
--   <span id="8995">`::after`</span>
--   <span id="9e9b">`::before`</span>
+- <span id="571c">Used to create pseudo-elements as children of the elements to which the property applies.</span>
+- <span id="8995">`::after`</span>
+- <span id="9e9b">`::before`</span>
 
 <!-- -->
 
@@ -191,13 +191,13 @@ For beginners … very picture heavy since CSS is such a visual discipline!
     <p>This is the second paragraph</p>
     <p>This is the third paragraph</p>
 
--   <span id="22c4">Will add some blue smiley faces before the p tag elements.</span>
+- <span id="22c4">Will add some blue smiley faces before the p tag elements.</span>
 
 #### **CSS Rules**
 
--   <span id="66b6">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
--   <span id="9ec3">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
--   <span id="bc57">`The Four Number Calculation`** : listed in increasing order of importance.**</span>
+- <span id="66b6">`CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties</span>
+- <span id="9ec3">`CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.</span>
+- <span id="bc57">`The Four Number Calculation`** : listed in increasing order of importance.**</span>
 
 1.  <span id="c45f">Who has the most IDs? If no one, continue.</span>
 2.  <span id="3aff">Who has the most classes? If no one, continue.</span>
@@ -221,13 +221,13 @@ For beginners … very picture heavy since CSS is such a visual discipline!
     <div class="box yellow"></div>
     <div class="box orange"></div>
 
--   <span id="2b20">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
+- <span id="2b20">Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.</span>
 
 ### CSS: Type, Properties, and Imports
 
 #### **Typography**
 
--   <span id="af08">`font-family` : change the font.</span>
+- <span id="af08">`font-family` : change the font.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*8298p-Vlu15C-pdw.png" class="graf-image" /></figure>- <span id="9771">Remember that not all computers have the same fonts on them.</span>
 - <span id="d248">You can import web fonts via an api by using</span>
@@ -247,34 +247,34 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 #### **Background-Images**
 
--   <span id="a7cc">You can use the background-image property to set a background image for an element.</span>
+- <span id="a7cc">You can use the background-image property to set a background image for an element.</span>
 
 ### CSS: Colors, Borders, and Shadows
 
 #### **Colors**
 
--   <span id="6887">You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.</span>
--   <span id="1d78">rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.</span>
--   <span id="a422">**Color** : Property used to change the color of text.</span>
--   <span id="6bcb">**Background-Color** : Property to change the backgrounf color of an element.</span>
+- <span id="6887">You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.</span>
+- <span id="1d78">rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.</span>
+- <span id="a422">**Color** : Property used to change the color of text.</span>
+- <span id="6bcb">**Background-Color** : Property to change the backgrounf color of an element.</span>
 
 #### **Borders**
 
--   <span id="cce0">Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.</span>
+- <span id="cce0">Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.</span>
 
 #### **Shadows**
 
--   <span id="6391">There are two kinds of shadows in CSS: `box shadows` and `text shadows`.</span>
--   <span id="7fc1">Box refers to HTML elements.</span>
--   <span id="8c59">Text refers to text.</span>
--   <span id="266d">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
+- <span id="6391">There are two kinds of shadows in CSS: `box shadows` and `text shadows`.</span>
+- <span id="7fc1">Box refers to HTML elements.</span>
+- <span id="8c59">Text refers to text.</span>
+- <span id="266d">Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.</span>
 
 ### My Blog:
 
-<a href="https://bgoonzblog20.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20.netlify.app/"><strong>Web-Dev-Hub</strong>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
 
-<em>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonzblog20.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ### Grid Cheat Sheet:
 
@@ -284,4 +284,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/adding-css-to-your-html-3a17ba25ba82" class="p-canonical">Canonical link</a>
 
-August 31, 2021.
+ August 31, 2021.

@@ -388,13 +388,13 @@ Breadth-first search is often compared with **depth-first search**.
 
 Advantages:
 
--   <span id="123c">A BFS will find the **shortest path** between the starting point and</span>
+- <span id="123c">A BFS will find the **shortest path** between the starting point and</span>
 
 any other reachable node. A depth-first search will not necessarily find the shortest path.
 
 Disadvantages
 
--   <span id="a412">A BFS on a binary tree _generally_ requires more memory than a DFS.</span>
+- <span id="a412">A BFS on a binary tree _generally_ requires more memory than a DFS.</span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*1ptw-98Yjj1scRX6" class="graf-image" /></figure>### Binary Search Tree
 
@@ -439,9 +439,9 @@ Why only up to 2^{h-1}?
 
 Notice that we **started counting our levels at 0.**
 
--   <span id="7500">So if we have h levels in total,</span>
--   <span id="6752">the last level is actually the "h-1"-th level.</span>
--   <span id="da3a">That means the number of nodes on the last level is 2^{h-1}.</span>
+- <span id="7500">So if we have h levels in total,</span>
+- <span id="6752">the last level is actually the "h-1"-th level.</span>
+- <span id="da3a">That means the number of nodes on the last level is 2^{h-1}.</span>
 
 But we can simplify.
 
@@ -449,8 +449,8 @@ But we can simplify.
 
 **so we can just take the number of nodes on the last level, multiply it by 2, and subtract 1 to get the number of nodes overall**.
 
--   <span id="d63d">We know the number of nodes on the last level is 2^{h-1},</span>
--   <span id="1c97">So:</span>
+- <span id="d63d">We know the number of nodes on the last level is 2^{h-1},</span>
+- <span id="1c97">So:</span>
 
 **n = 2^{h-1} \* 2-1  
 n = 2^{h-1} \* 2¹ — 1  
@@ -499,11 +499,11 @@ To understand binary, let's take a closer look at how decimal numbers work. Take
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*BHTYqymE77CnzKpP" class="graf-image" /></figure>Notice how the *places* in base 10 (ones place, tens place, hundreds place, etc.) are *sequential powers of 10*:
 
--   <span id="8102">10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.</span>
+- <span id="8102">10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.</span>
 
 **The places in _binary_ (base 2) are sequential powers of _2_:**
 
--   <span id="1ddc">2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.</span>
+- <span id="1ddc">2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.</span>
 
 So let's take that same "101" but this time let's read it as a _binary_ number:
 
@@ -511,13 +511,13 @@ So let's take that same "101" but this time let's read it as a _binary_ number:
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*bCIyxai2cNhILyxr" class="graf-image" /></figure>### Discover More:
 
-<a href="https://bgoonzblog20.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20.netlify.app/"><strong>Web-Dev-Hub</strong>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
 
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonzblog20.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [June 4, 2021](https://medium.com/p/660256c2e4e3).
 
 <a href="https://medium.com/@bryanguner/data-structures-under-the-hood-660256c2e4e3" class="p-canonical">Canonical link</a>
 
-August 31, 2021.
+ August 31, 2021.

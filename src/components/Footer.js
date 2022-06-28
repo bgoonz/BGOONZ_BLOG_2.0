@@ -2,6 +2,8 @@ import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
+
+
 export default class Footer extends React.Component {
     render() {
         return (
@@ -9,6 +11,7 @@ export default class Footer extends React.Component {
                 <div>
                     <center>
                         <br />
+                        
                         <br />
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
@@ -17,8 +20,7 @@ export default class Footer extends React.Component {
                                         style={{
                                             fontFamily: 'Arial, Helvetica, sans-serif',
                                             fontSize: '7.5pt'
-                                        }}
-                                    >
+                                        }}  >
                                         <center>
                                             <table
                                                 width="95%"
@@ -77,8 +79,7 @@ export default class Footer extends React.Component {
                                             action="https://search.freefind.com/find.html"
                                             method="get"
                                             acceptCharset="utf-8"
-                                            target="_self"
-                                        >
+                                            target="_self"  >
                                             <input type="hidden" name="si" defaultValue={14588965} />
                                             <input type="hidden" name="pid" defaultValue="r" />
                                             <input type="hidden" name="n" defaultValue={0} />
@@ -96,34 +97,34 @@ export default class Footer extends React.Component {
                                             fontFamily: 'Arial, Helvetica, sans-serif',
                                             fontSize: '7.5pt',
                                             paddingTop: '4px'
-                                        }}
-                                    >
-                                        <a
-                                            style={{
+                                        }}  >
+                                        <a style={{
                                                 textDecoration: 'none',
                                                 color: 'transparent'
                                             }}
                                             href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
+                                            rel="nofollow"  >
                                             search engine
                                         </a>
-                                        <a
-                                            style={{
+                                        <a style={{
                                                 textDecoration: 'none',
                                                 color: 'transparent'
                                             }}
                                             href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
+                                            rel="nofollow"  >
                                             by
                                             <span style={{ color: 'transparent' }}>freefind</span>
                                         </a>
+
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
+                        <a
+                            className="save2PDF"
+                            href="//pdfcrowd.com/url_to_pdf/?"
+                            onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"
+                        >
                             Save to PDF
                         </a>
                     </center>
