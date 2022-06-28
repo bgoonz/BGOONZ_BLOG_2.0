@@ -56778,3 +56778,1626 @@ import {
   text,
 } from 'node:stream/consumers';
 ```
+
+##### `streamConsumers.arrayBuffer(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumersarraybufferstream)
+
+Added in: v16.7.0
+
+-   `stream` [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) | [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) | [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface)
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Fulfills with an `ArrayBuffer` containing the full contents of the stream.
+
+##### `streamConsumers.blob(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumersblobstream)
+
+Added in: v16.7.0
+
+-   `stream` [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) | [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) | [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface)
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Fulfills with a [<Blob>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-blob) containing the full contents of the stream.
+
+##### `streamConsumers.buffer(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumersbufferstream)
+
+Added in: v16.7.0
+
+-   `stream` [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) | [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) | [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface)
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Fulfills with a [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) containing the full contents of the stream.
+
+##### `streamConsumers.json(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumersjsonstream)
+
+Added in: v16.7.0
+
+-   `stream` [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) | [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) | [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface)
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Fulfills with the contents of the stream parsed as a UTF-8 encoded string that is then passed through `JSON.parse()`.
+
+##### `streamConsumers.text(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumerstextstream)
+
+Added in: v16.7.0
+
+-   `stream` [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) | [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) | [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface)
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Fulfills with the contents of the stream parsed as a UTF-8 encoded string.
+
+## Worker threads[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_worker-threads)
+
+**Source Code:** [lib/worker\_threads.js](https://github.com/nodejs/node/blob/v16.13.1/lib/worker_threads.js)
+
+The `worker_threads` module enables the use of threads that execute JavaScript in parallel. To access it:
+
+```
+const worker = require('worker_threads');
+```
+
+Workers (threads) are useful for performing CPU-intensive JavaScript operations. They do not help much with I/O-intensive work. The Node.js built-in asynchronous I/O operations are more efficient than Workers can be.
+
+Unlike `child_process` or `cluster`, `worker_threads` can share memory. They do so by transferring `ArrayBuffer` instances or sharing `SharedArrayBuffer` instances.
+
+```
+const {
+  Worker, isMainThread, parentPort, workerData
+} = require('worker_threads');
+
+if (isMainThread) {
+  module.exports = function parseJSAsync(script) {
+    return new Promise((resolve, reject) => {
+      const worker = new Worker(__filename, {
+        workerData: script
+      });
+      worker.on('message', resolve);
+      worker.on('error', reject);
+      worker.on('exit', (code) => {
+        if (code !== 0)
+          reject(new Error(`Worker stopped with exit code ${code}`));
+      });
+    });
+  };
+} else {
+  const { parse } = require('some-js-parsing-library');
+  const script = workerData;
+  parentPort.postMessage(parse(script));
+}
+```
+
+The above example spawns a Worker thread for each `parse()` call. In actual practice, use a pool of Workers for these kinds of tasks. Otherwise, the overhead of creating Workers would likely exceed their benefit.
+
+When implementing a worker pool, use the [`AsyncResource`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_class-asyncresource) API to inform diagnostic tools (e.g. to provide asynchronous stack traces) about the correlation between tasks and their outcomes. See ["Using `AsyncResource` for a `Worker` thread pool"](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_using-asyncresource-for-a-worker-thread-pool) in the `async_hooks` documentation for an example implementation.
+
+Worker threads inherit non-process-specific options by default. Refer to [`Worker constructor options`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options) to know how to customize worker thread options, specifically `argv` and `execArgv` options.
+
+### `worker.getEnvironmentData(key)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workergetenvironmentdatakey)
+
+Added in: v15.12.0
+
+-   `key` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Any arbitrary, cloneable JavaScript value that can be used as a [<Map>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) key.
+-   Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
+
+Within a worker thread, `worker.getEnvironmentData()` returns a clone of data passed to the spawning thread's `worker.setEnvironmentData()`. Every new `Worker` receives its own copy of the environment data automatically.
+
+```
+const {
+  Worker,
+  isMainThread,
+  setEnvironmentData,
+  getEnvironmentData,
+} = require('worker_threads');
+
+if (isMainThread) {
+  setEnvironmentData('Hello', 'World!');
+  const worker = new Worker(__filename);
+} else {
+  console.log(getEnvironmentData('Hello'));  
+}
+```
+
+### `worker.isMainThread`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerismainthread)
+
+Added in: v10.5.0
+
+-   [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+
+Is `true` if this code is not running inside of a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) thread.
+
+```
+const { Worker, isMainThread } = require('worker_threads');
+
+if (isMainThread) {
+  
+  new Worker(__filename);
+} else {
+  console.log('Inside Worker!');
+  console.log(isMainThread);  
+}
+```
+
+### `worker.markAsUntransferable(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workermarkasuntransferableobject)
+
+Added in: v14.5.0, v12.19.0
+
+Mark an object as not transferable. If `object` occurs in the transfer list of a [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist) call, it is ignored.
+
+In particular, this makes sense for objects that can be cloned, rather than transferred, and which are used by other objects on the sending side. For example, Node.js marks the `ArrayBuffer`s it uses for its [`Buffer` pool](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) with this.
+
+This operation cannot be undone.
+
+```
+const { MessageChannel, markAsUntransferable } = require('worker_threads');
+
+const pooledBuffer = new ArrayBuffer(8);
+const typedArray1 = new Uint8Array(pooledBuffer);
+const typedArray2 = new Float64Array(pooledBuffer);
+
+markAsUntransferable(pooledBuffer);
+
+const { port1 } = new MessageChannel();
+port1.postMessage(typedArray1, [ typedArray1.buffer ]);
+
+
+
+
+
+console.log(typedArray1);
+console.log(typedArray2);
+```
+
+There is no equivalent to this API in browsers.
+
+### `worker.moveMessagePortToContext(port, contextifiedSandbox)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workermovemessageporttocontextport-contextifiedsandbox)
+
+Added in: v11.13.0
+
+-   `port` [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) The message port to transfer.
+    
+-   `contextifiedSandbox` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) A [contextified](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) object as returned by the `vm.createContext()` method.
+    
+-   Returns: [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)
+    
+
+Transfer a `MessagePort` to a different [`vm`](https://nodejs.org/dist/v16.13.1/docs/api/vm.html) Context. The original `port` object is rendered unusable, and the returned `MessagePort` instance takes its place.
+
+The returned `MessagePort` is an object in the target context and inherits from its global `Object` class. Objects passed to the [`port.onmessage()`](https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/onmessage) listener are also created in the target context and inherit from its global `Object` class.
+
+However, the created `MessagePort` no longer inherits from [`EventTarget`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget), and only [`port.onmessage()`](https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/onmessage) can be used to receive events using it.
+
+### `worker.parentPort`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerparentport)
+
+Added in: v10.5.0
+
+-   [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)
+
+If this thread is a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker), this is a [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) allowing communication with the parent thread. Messages sent using `parentPort.postMessage()` are available in the parent thread using `worker.on('message')`, and messages sent from the parent thread using `worker.postMessage()` are available in this thread using `parentPort.on('message')`.
+
+```
+const { Worker, isMainThread, parentPort } = require('worker_threads');
+
+if (isMainThread) {
+  const worker = new Worker(__filename);
+  worker.once('message', (message) => {
+    console.log(message);  
+  });
+  worker.postMessage('Hello, world!');
+} else {
+  
+  parentPort.once('message', (message) => {
+    parentPort.postMessage(message);
+  });
+}
+```
+
+### `worker.receiveMessageOnPort(port)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerreceivemessageonportport)
+
+-   `port` [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) | [<BroadcastChannel>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-broadcastchannel-extends-eventtarget)
+    
+-   Returns: [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
+    
+
+Receive a single message from a given `MessagePort`. If no message is available, `undefined` is returned, otherwise an object with a single `message` property that contains the message payload, corresponding to the oldest message in the `MessagePort`’s queue.
+
+```
+const { MessageChannel, receiveMessageOnPort } = require('worker_threads');
+const { port1, port2 } = new MessageChannel();
+port1.postMessage({ hello: 'world' });
+
+console.log(receiveMessageOnPort(port2));
+
+console.log(receiveMessageOnPort(port2));
+```
+
+When this function is used, no `'message'` event is emitted and the `onmessage` listener is not invoked.
+
+### `worker.resourceLimits`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerresourcelimits)
+
+Added in: v13.2.0, v12.16.0
+
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+    -   `maxYoungGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `maxOldGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `codeRangeSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `stackSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+Provides the set of JS engine resource constraints inside this Worker thread. If the `resourceLimits` option was passed to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, this matches its values.
+
+If this is used in the main thread, its value is an empty object.
+
+### `worker.SHARE_ENV`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workershare_env)
+
+Added in: v11.14.0
+
+-   [<symbol>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
+
+A special value that can be passed as the `env` option of the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, to indicate that the current thread and the Worker thread should share read and write access to the same set of environment variables.
+
+```
+const { Worker, SHARE_ENV } = require('worker_threads');
+new Worker('process.env.SET_IN_WORKER = "foo"', { eval: true, env: SHARE_ENV })
+  .on('exit', () => {
+    console.log(process.env.SET_IN_WORKER);  
+  });
+```
+
+### `worker.setEnvironmentData(key[, value])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workersetenvironmentdatakey-value)
+
+Added in: v15.12.0
+
+-   `key` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Any arbitrary, cloneable JavaScript value that can be used as a [<Map>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) key.
+-   `value` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Any arbitrary, cloneable JavaScript value that will be cloned and passed automatically to all new `Worker` instances. If `value` is passed as `undefined`, any previously set value for the `key` will be deleted.
+
+The `worker.setEnvironmentData()` API sets the content of `worker.getEnvironmentData()` in the current thread and all new `Worker` instances spawned from the current context.
+
+### `worker.threadId`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerthreadid)
+
+Added in: v10.5.0
+
+-   [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+An integer identifier for the current thread. On the corresponding worker object (if there is any), it is available as [`worker.threadId`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerthreadid_1). This value is unique for each [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) instance inside a single process.
+
+### `worker.workerData`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerworkerdata)
+
+Added in: v10.5.0
+
+An arbitrary JavaScript value that contains a clone of the data passed to this thread’s `Worker` constructor.
+
+The data is cloned as if using [`postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist), according to the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
+
+```
+const { Worker, isMainThread, workerData } = require('worker_threads');
+
+if (isMainThread) {
+  const worker = new Worker(__filename, { workerData: 'Hello, world!' });
+} else {
+  console.log(workerData);  
+}
+```
+
+### Class: `BroadcastChannel extends EventTarget`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-broadcastchannel-extends-eventtarget)
+
+Added in: v15.4.0
+
+Instances of `BroadcastChannel` allow asynchronous one-to-many communication with all other `BroadcastChannel` instances bound to the same channel name.
+
+```
+'use strict';
+
+const {
+  isMainThread,
+  BroadcastChannel,
+  Worker
+} = require('worker_threads');
+
+const bc = new BroadcastChannel('hello');
+
+if (isMainThread) {
+  let c = 0;
+  bc.onmessage = (event) => {
+    console.log(event.data);
+    if (++c === 10) bc.close();
+  };
+  for (let n = 0; n < 10; n++)
+    new Worker(__filename);
+} else {
+  bc.postMessage('hello from every worker');
+  bc.close();
+}
+```
+
+#### `new BroadcastChannel(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-broadcastchannelname)
+
+Added in: v15.4.0
+
+-   `name` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) The name of the channel to connect to. Any JavaScript value that can be converted to a string using `` `${name}` `` is permitted.
+
+#### `broadcastChannel.close()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelclose)
+
+Added in: v15.4.0
+
+Closes the `BroadcastChannel` connection.
+
+#### `broadcastChannel.onmessage`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelonmessage)
+
+Added in: v15.4.0
+
+-   Type: [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Invoked with a single `MessageEvent` argument when a message is received.
+
+#### `broadcastChannel.onmessageerror`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelonmessageerror)
+
+Added in: v15.4.0
+
+-   Type: [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) Invoked with a received message cannot be deserialized.
+
+#### `broadcastChannel.postMessage(message)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelpostmessagemessage)
+
+Added in: v15.4.0
+
+-   `message` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Any cloneable JavaScript value.
+
+#### `broadcastChannel.ref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelref)
+
+Added in: v15.4.0
+
+Opposite of `unref()`. Calling `ref()` on a previously `unref()`ed BroadcastChannel does _not_ let the program exit if it's the only active handle left (the default behavior). If the port is `ref()`ed, calling `ref()` again has no effect.
+
+#### `broadcastChannel.unref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_broadcastchannelunref)
+
+Added in: v15.4.0
+
+Calling `unref()` on a BroadcastChannel allows the thread to exit if this is the only active handle in the event system. If the BroadcastChannel is already `unref()`ed calling `unref()` again has no effect.
+
+### Class: `MessageChannel`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messagechannel)
+
+Added in: v10.5.0
+
+Instances of the `worker.MessageChannel` class represent an asynchronous, two-way communications channel. The `MessageChannel` has no methods of its own. `new MessageChannel()` yields an object with `port1` and `port2` properties, which refer to linked [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) instances.
+
+```
+const { MessageChannel } = require('worker_threads');
+
+const { port1, port2 } = new MessageChannel();
+port1.on('message', (message) => console.log('received', message));
+port2.postMessage({ foo: 'bar' });
+```
+
+### Class: `MessagePort`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)
+
+-   Extends: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget)
+
+Instances of the `worker.MessagePort` class represent one end of an asynchronous, two-way communications channel. It can be used to transfer structured data, memory regions and other `MessagePort`s between different [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker)s.
+
+This implementation matches [browser `MessagePort`](https://developer.mozilla.org/en-US/docs/Web/API/MessagePort)s.
+
+#### Event: `'close'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-close)
+
+Added in: v10.5.0
+
+The `'close'` event is emitted once either side of the channel has been disconnected.
+
+```
+const { MessageChannel } = require('worker_threads');
+const { port1, port2 } = new MessageChannel();
+
+
+
+
+port2.on('message', (message) => console.log(message));
+port2.on('close', () => console.log('closed!'));
+
+port1.postMessage('foobar');
+port1.close();
+```
+
+#### Event: `'message'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message)
+
+Added in: v10.5.0
+
+-   `value` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) The transmitted value
+
+The `'message'` event is emitted for any incoming message, containing the cloned input of [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist).
+
+Listeners on this event receive a clone of the `value` parameter as passed to `postMessage()` and no further arguments.
+
+#### Event: `'messageerror'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-messageerror)
+
+Added in: v14.5.0, v12.19.0
+
+-   `error` [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) An Error object
+
+The `'messageerror'` event is emitted when deserializing a message failed.
+
+Currently, this event is emitted when there is an error occurring while instantiating the posted JS object on the receiving end. Such situations are rare, but can happen, for instance, when certain Node.js API objects are received in a `vm.Context` (where Node.js APIs are currently unavailable).
+
+#### `port.close()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portclose)
+
+Added in: v10.5.0
+
+Disables further sending of messages on either side of the connection. This method can be called when no further communication will happen over this `MessagePort`.
+
+The [`'close'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-close) is emitted on both `MessagePort` instances that are part of the channel.
+
+#### `port.postMessage(value[, transferList])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist)
+
+-   `value` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
+-   `transferList` [<Object\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+Sends a JavaScript value to the receiving side of this channel. `value` is transferred in a way which is compatible with the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
+
+In particular, the significant differences to `JSON` are:
+
+-   `value` may contain circular references.
+-   `value` may contain instances of builtin JS types such as `RegExp`s, `BigInt`s, `Map`s, `Set`s, etc.
+-   `value` may contain typed arrays, both using `ArrayBuffer`s and `SharedArrayBuffer`s.
+-   `value` may contain [`WebAssembly.Module`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module) instances.
+-   `value` may not contain native (C++-backed) objects other than:
+    -   [<CryptoKey>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_class-cryptokey)s,
+    -   [<FileHandle>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-filehandle)s,
+    -   [<Histogram>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_class-histogram)s,
+    -   [<KeyObject>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-keyobject)s,
+    -   [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)s,
+    -   [<net.BlockList>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netblocklist)s,
+    -   [<net.SocketAddress>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocketaddress)es,
+    -   [<X509Certificate>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-x509certificate)s.
+
+```
+const { MessageChannel } = require('worker_threads');
+const { port1, port2 } = new MessageChannel();
+
+port1.on('message', (message) => console.log(message));
+
+const circularData = {};
+circularData.foo = circularData;
+
+port2.postMessage(circularData);
+```
+
+`transferList` may be a list of [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) and [`FileHandle`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-filehandle) objects. After transferring, they are not usable on the sending side of the channel anymore (even if they are not contained in `value`). Unlike with [child processes](https://nodejs.org/dist/v16.13.1/docs/api/child_process.html), transferring handles such as network sockets is currently not supported.
+
+If `value` contains [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) instances, those are accessible from either thread. They cannot be listed in `transferList`.
+
+`value` may still contain `ArrayBuffer` instances that are not in `transferList`; in that case, the underlying memory is copied rather than moved.
+
+```
+const { MessageChannel } = require('worker_threads');
+const { port1, port2 } = new MessageChannel();
+
+port1.on('message', (message) => console.log(message));
+
+const uint8Array = new Uint8Array([ 1, 2, 3, 4 ]);
+
+port2.postMessage(uint8Array);
+
+port2.postMessage(uint8Array, [ uint8Array.buffer ]);
+
+
+
+const sharedUint8Array = new Uint8Array(new SharedArrayBuffer(4));
+port2.postMessage(sharedUint8Array);
+
+
+
+
+const otherChannel = new MessageChannel();
+port2.postMessage({ port: otherChannel.port1 }, [ otherChannel.port1 ]);
+```
+
+The message object is cloned immediately, and can be modified after posting without having side effects.
+
+For more information on the serialization and deserialization mechanisms behind this API, see the [serialization API of the `v8` module](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serialization-api).
+
+##### Considerations when transferring TypedArrays and Buffers[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_considerations-when-transferring-typedarrays-and-buffers)
+
+All `TypedArray` and `Buffer` instances are views over an underlying `ArrayBuffer`. That is, it is the `ArrayBuffer` that actually stores the raw data while the `TypedArray` and `Buffer` objects provide a way of viewing and manipulating the data. It is possible and common for multiple views to be created over the same `ArrayBuffer` instance. Great care must be taken when using a transfer list to transfer an `ArrayBuffer` as doing so causes all `TypedArray` and `Buffer` instances that share that same `ArrayBuffer` to become unusable.
+
+```
+const ab = new ArrayBuffer(10);
+
+const u1 = new Uint8Array(ab);
+const u2 = new Uint16Array(ab);
+
+console.log(u2.length);  
+
+port.postMessage(u1, [u1.buffer]);
+
+console.log(u2.length);  
+```
+
+For `Buffer` instances, specifically, whether the underlying `ArrayBuffer` can be transferred or cloned depends entirely on how instances were created, which often cannot be reliably determined.
+
+An `ArrayBuffer` can be marked with [`markAsUntransferable()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workermarkasuntransferableobject) to indicate that it should always be cloned and never transferred.
+
+Depending on how a `Buffer` instance was created, it may or may not own its underlying `ArrayBuffer`. An `ArrayBuffer` must not be transferred unless it is known that the `Buffer` instance owns it. In particular, for `Buffer`s created from the internal `Buffer` pool (using, for instance `Buffer.from()` or `Buffer.allocUnsafe()`), transferring them is not possible and they are always cloned, which sends a copy of the entire `Buffer` pool. This behavior may come with unintended higher memory usage and possible security concerns.
+
+See [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) for more details on `Buffer` pooling.
+
+The `ArrayBuffer`s for `Buffer` instances created using `Buffer.alloc()` or `Buffer.allocUnsafeSlow()` can always be transferred but doing so renders all other existing views of those `ArrayBuffer`s unusable.
+
+##### Considerations when cloning objects with prototypes, classes, and accessors[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_considerations-when-cloning-objects-with-prototypes-classes-and-accessors)
+
+Because object cloning uses the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm), non-enumerable properties, property accessors, and object prototypes are not preserved. In particular, [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html) objects will be read as plain [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)s on the receiving side, and instances of JavaScript classes will be cloned as plain JavaScript objects.
+
+```
+const b = Symbol('b');
+
+class Foo {
+  #a = 1;
+  constructor() {
+    this[b] = 2;
+    this.c = 3;
+  }
+
+  get d() { return 4; }
+}
+
+const { port1, port2 } = new MessageChannel();
+
+port1.onmessage = ({ data }) => console.log(data);
+
+port2.postMessage(new Foo());
+
+```
+
+This limitation extends to many built-in objects, such as the global `URL` object:
+
+```
+const { port1, port2 } = new MessageChannel();
+
+port1.onmessage = ({ data }) => console.log(data);
+
+port2.postMessage(new URL('https://example.org'));
+
+```
+
+#### `port.ref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portref)
+
+Added in: v10.5.0
+
+Opposite of `unref()`. Calling `ref()` on a previously `unref()`ed port does _not_ let the program exit if it's the only active handle left (the default behavior). If the port is `ref()`ed, calling `ref()` again has no effect.
+
+If listeners are attached or removed using `.on('message')`, the port is `ref()`ed and `unref()`ed automatically depending on whether listeners for the event exist.
+
+#### `port.start()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portstart)
+
+Added in: v10.5.0
+
+Starts receiving messages on this `MessagePort`. When using this port as an event emitter, this is called automatically once `'message'` listeners are attached.
+
+This method exists for parity with the Web `MessagePort` API. In Node.js, it is only useful for ignoring messages when no event listener is present. Node.js also diverges in its handling of `.onmessage`. Setting it automatically calls `.start()`, but unsetting it lets messages queue up until a new handler is set or the port is discarded.
+
+#### `port.unref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portunref)
+
+Added in: v10.5.0
+
+Calling `unref()` on a port allows the thread to exit if this is the only active handle in the event system. If the port is already `unref()`ed calling `unref()` again has no effect.
+
+If listeners are attached or removed using `.on('message')`, the port is `ref()`ed and `unref()`ed automatically depending on whether listeners for the event exist.
+
+### Class: `Worker`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker)
+
+Added in: v10.5.0
+
+-   Extends: [<EventEmitter>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter)
+
+The `Worker` class represents an independent JavaScript execution thread. Most Node.js APIs are available inside of it.
+
+Notable differences inside a Worker environment are:
+
+-   The [`process.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdin), [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) and [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr) may be redirected by the parent thread.
+-   The [`require('worker_threads').isMainThread`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerismainthread) property is set to `false`.
+-   The [`require('worker_threads').parentPort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerparentport) message port is available.
+-   [`process.exit()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode) does not stop the whole program, just the single thread, and [`process.abort()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processabort) is not available.
+-   [`process.chdir()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processchdirdirectory) and `process` methods that set group or user ids are not available.
+-   [`process.env`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processenv) is a copy of the parent thread's environment variables, unless otherwise specified. Changes to one copy are not visible in other threads, and are not visible to native add-ons (unless [`worker.SHARE_ENV`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workershare_env) is passed as the `env` option to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor).
+-   [`process.title`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processtitle) cannot be modified.
+-   Signals are not delivered through [`process.on('...')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_signal-events).
+-   Execution may stop at any point as a result of [`worker.terminate()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerterminate) being invoked.
+-   IPC channels from parent processes are not accessible.
+-   The [`trace_events`](https://nodejs.org/dist/v16.13.1/docs/api/tracing.html) module is not supported.
+-   Native add-ons can only be loaded from multiple threads if they fulfill [certain conditions](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_worker-support).
+
+Creating `Worker` instances inside of other `Worker`s is possible.
+
+Like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and the [`cluster` module](https://nodejs.org/dist/v16.13.1/docs/api/cluster.html), two-way communication can be achieved through inter-thread message passing. Internally, a `Worker` has a built-in pair of [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)s that are already associated with each other when the `Worker` is created. While the `MessagePort` object on the parent side is not directly exposed, its functionalities are exposed through [`worker.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerpostmessagevalue-transferlist) and the [`worker.on('message')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message_1) event on the `Worker` object for the parent thread.
+
+To create custom messaging channels (which is encouraged over using the default global channel because it facilitates separation of concerns), users can create a `MessageChannel` object on either thread and pass one of the `MessagePort`s on that `MessageChannel` to the other thread through a pre-existing channel, such as the global one.
+
+See [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist) for more information on how messages are passed, and what kind of JavaScript values can be successfully transported through the thread barrier.
+
+```
+const assert = require('assert');
+const {
+  Worker, MessageChannel, MessagePort, isMainThread, parentPort
+} = require('worker_threads');
+if (isMainThread) {
+  const worker = new Worker(__filename);
+  const subChannel = new MessageChannel();
+  worker.postMessage({ hereIsYourPort: subChannel.port1 }, [subChannel.port1]);
+  subChannel.port2.on('message', (value) => {
+    console.log('received:', value);
+  });
+} else {
+  parentPort.once('message', (value) => {
+    assert(value.hereIsYourPort instanceof MessagePort);
+    value.hereIsYourPort.postMessage('the worker is sending this');
+    value.hereIsYourPort.close();
+  });
+}
+```
+
+#### `new Worker(filename[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options)
+
+-   `filename` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) The path to the Worker’s main script or module. Must be either an absolute path or a relative path (i.e. relative to the current working directory) starting with `./` or `../`, or a WHATWG `URL` object using `file:` or `data:` protocol. When using a [`data:` URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs), the data is interpreted based on MIME type using the [ECMAScript module loader](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_data-imports). If `options.eval` is `true`, this is a string containing JavaScript code rather than a path.
+-   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+    -   `argv` [<any\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) List of arguments which would be stringified and appended to `process.argv` in the worker. This is mostly similar to the `workerData` but the values are available on the global `process.argv` as if they were passed as CLI options to the script.
+    -   `env` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If set, specifies the initial value of `process.env` inside the Worker thread. As a special value, [`worker.SHARE_ENV`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workershare_env) may be used to specify that the parent thread and the child thread should share their environment variables; in that case, changes to one thread’s `process.env` object affect the other thread as well. **Default:** `process.env`.
+    -   `eval` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true` and the first argument is a `string`, interpret the first argument to the constructor as a script that is executed once the worker is online.
+    -   `execArgv` [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) List of node CLI options passed to the worker. V8 options (such as `--max-old-space-size`) and options that affect the process (such as `--title`) are not supported. If set, this is provided as [`process.execArgv`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexecargv) inside the worker. By default, options are inherited from the parent thread.
+    -   `stdin` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If this is set to `true`, then `worker.stdin` provides a writable stream whose contents appear as `process.stdin` inside the Worker. By default, no data is provided.
+    -   `stdout` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If this is set to `true`, then `worker.stdout` is not automatically piped through to `process.stdout` in the parent.
+    -   `stderr` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If this is set to `true`, then `worker.stderr` is not automatically piped through to `process.stderr` in the parent.
+    -   `workerData` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) Any JavaScript value that is cloned and made available as [`require('worker_threads').workerData`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerworkerdata). The cloning occurs as described in the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm), and an error is thrown if the object cannot be cloned (e.g. because it contains `function`s).
+    -   `trackUnmanagedFds` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If this is set to `true`, then the Worker tracks raw file descriptors managed through [`fs.open()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopenpath-flags-mode-callback) and [`fs.close()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsclosefd-callback), and closes them when the Worker exits, similar to other resources like network sockets or file descriptors managed through the [`FileHandle`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-filehandle) API. This option is automatically inherited by all nested `Worker`s. **Default:** `true`.
+    -   `transferList` [<Object\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If one or more `MessagePort`\-like objects are passed in `workerData`, a `transferList` is required for those items or [`ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_missing_message_port_in_transfer_list) is thrown. See [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist) for more information.
+    -   `resourceLimits` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) An optional set of resource limits for the new JS engine instance. Reaching these limits leads to termination of the `Worker` instance. These limits only affect the JS engine, and no external data, including no `ArrayBuffer`s. Even if these limits are set, the process may still abort if it encounters a global out-of-memory situation.
+        -   `maxOldGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The maximum size of the main heap in MB.
+        -   `maxYoungGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The maximum size of a heap space for recently created objects.
+        -   `codeRangeSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The size of a pre-allocated memory range used for generated code.
+        -   `stackSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The default maximum stack size for the thread. Small values may lead to unusable Worker instances. **Default:** `4`.
+
+#### Event: `'error'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-error)
+
+Added in: v10.5.0
+
+-   `err` [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+
+The `'error'` event is emitted if the worker thread throws an uncaught exception. In that case, the worker is terminated.
+
+#### Event: `'exit'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit)
+
+Added in: v10.5.0
+
+-   `exitCode` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+The `'exit'` event is emitted once the worker has stopped. If the worker exited by calling [`process.exit()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode), the `exitCode` parameter is the passed exit code. If the worker was terminated, the `exitCode` parameter is `1`.
+
+This is the final event emitted by any `Worker` instance.
+
+#### Event: `'message'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message_1)
+
+Added in: v10.5.0
+
+-   `value` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) The transmitted value
+
+The `'message'` event is emitted when the worker thread has invoked [`require('worker_threads').parentPort.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerpostmessagevalue-transferlist). See the [`port.on('message')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message) event for more details.
+
+All messages sent from the worker thread are emitted before the [`'exit'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit) is emitted on the `Worker` object.
+
+#### Event: `'messageerror'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-messageerror_1)
+
+Added in: v14.5.0, v12.19.0
+
+-   `error` [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) An Error object
+
+The `'messageerror'` event is emitted when deserializing a message failed.
+
+#### Event: `'online'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-online)
+
+Added in: v10.5.0
+
+The `'online'` event is emitted when the worker thread has started executing JavaScript code.
+
+#### `worker.getHeapSnapshot()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workergetheapsnapshot)
+
+Added in: v13.9.0, v12.17.0
+
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) A promise for a Readable Stream containing a V8 heap snapshot
+
+Returns a readable stream for a V8 snapshot of the current state of the Worker. See [`v8.getHeapSnapshot()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8getheapsnapshot) for more details.
+
+If the Worker thread is no longer running, which may occur before the [`'exit'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit) is emitted, the returned `Promise` is rejected immediately with an [`ERR_WORKER_NOT_RUNNING`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_worker_not_running) error.
+
+#### `worker.performance`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerperformance)
+
+Added in: v15.1.0, v12.22.0
+
+An object that can be used to query performance information from a worker instance. Similar to [`perf_hooks.performance`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_perf_hooksperformance).
+
+##### `performance.eventLoopUtilization([utilization1[, utilization2]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_performanceeventlooputilizationutilization1-utilization2)
+
+Added in: v15.1.0, v12.22.0
+
+-   `utilization1` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) The result of a previous call to `eventLoopUtilization()`.
+-   `utilization2` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) The result of a previous call to `eventLoopUtilization()` prior to `utilization1`.
+-   Returns [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+    -   `idle` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `active` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `utilization` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+The same call as [`perf_hooks` `eventLoopUtilization()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_performanceeventlooputilizationutilization1-utilization2), except the values of the worker instance are returned.
+
+One difference is that, unlike the main thread, bootstrapping within a worker is done within the event loop. So the event loop utilization is immediately available once the worker's script begins execution.
+
+An `idle` time that does not increase does not indicate that the worker is stuck in bootstrap. The following examples shows how the worker's entire lifetime never accumulates any `idle` time, but is still be able to process messages.
+
+```
+const { Worker, isMainThread, parentPort } = require('worker_threads');
+
+if (isMainThread) {
+  const worker = new Worker(__filename);
+  setInterval(() => {
+    worker.postMessage('hi');
+    console.log(worker.performance.eventLoopUtilization());
+  }, 100).unref();
+  return;
+}
+
+parentPort.on('message', () => console.log('msg')).unref();
+(function r(n) {
+  if (--n < 0) return;
+  const t = Date.now();
+  while (Date.now() - t < 300);
+  setImmediate(r, n);
+})(10);
+```
+
+The event loop utilization of a worker is available only after the [`'online'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-online) emitted, and if called before this, or after the [`'exit'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit), then all properties have the value of `0`.
+
+#### `worker.postMessage(value[, transferList])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerpostmessagevalue-transferlist)
+
+Added in: v10.5.0
+
+-   `value` [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
+-   `transferList` [<Object\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+Send a message to the worker that is received via [`require('worker_threads').parentPort.on('message')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message). See [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist) for more details.
+
+#### `worker.ref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerref)
+
+Added in: v10.5.0
+
+Opposite of `unref()`, calling `ref()` on a previously `unref()`ed worker does _not_ let the program exit if it's the only active handle left (the default behavior). If the worker is `ref()`ed, calling `ref()` again has no effect.
+
+#### `worker.resourceLimits`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerresourcelimits_1)
+
+Added in: v13.2.0, v12.16.0
+
+-   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+    -   `maxYoungGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `maxOldGenerationSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `codeRangeSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+    -   `stackSizeMb` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+Provides the set of JS engine resource constraints for this Worker thread. If the `resourceLimits` option was passed to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, this matches its values.
+
+If the worker has stopped, the return value is an empty object.
+
+#### `worker.stderr`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerstderr)
+
+Added in: v10.5.0
+
+-   [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable)
+
+This is a readable stream which contains data written to [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr) inside the worker thread. If `stderr: true` was not passed to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, then data is piped to the parent thread's [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr) stream.
+
+#### `worker.stdin`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerstdin)
+
+Added in: v10.5.0
+
+-   [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [<stream.Writable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamwritable)
+
+If `stdin: true` was passed to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, this is a writable stream. The data written to this stream will be made available in the worker thread as [`process.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdin).
+
+#### `worker.stdout`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerstdout)
+
+Added in: v10.5.0
+
+-   [<stream.Readable>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable)
+
+This is a readable stream which contains data written to [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) inside the worker thread. If `stdout: true` was not passed to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, then data is piped to the parent thread's [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) stream.
+
+#### `worker.terminate()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerterminate)
+
+-   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+Stop all JavaScript execution in the worker thread as soon as possible. Returns a Promise for the exit code that is fulfilled when the [`'exit'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit) is emitted.
+
+#### `worker.threadId`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerthreadid_1)
+
+Added in: v10.5.0
+
+-   [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+An integer identifier for the referenced thread. Inside the worker thread, it is available as [`require('worker_threads').threadId`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerthreadid). This value is unique for each `Worker` instance inside a single process.
+
+#### `worker.unref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerunref)
+
+Added in: v10.5.0
+
+Calling `unref()` on a worker allows the thread to exit if this is the only active handle in the event system. If the worker is already `unref()`ed calling `unref()` again has no effect.
+
+### Notes[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_notes)
+
+#### Synchronous blocking of stdio[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_synchronous-blocking-of-stdio)
+
+`Worker`s utilize message passing via [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) to implement interactions with `stdio`. This means that `stdio` output originating from a `Worker` can get blocked by synchronous code on the receiving end that is blocking the Node.js event loop.
+
+```
+import {
+  Worker,
+  isMainThread,
+} from 'worker_threads';
+
+if (isMainThread) {
+  new Worker(new URL(import.meta.url));
+  for (let n = 0; n < 1e10; n++) {}
+} else {
+  
+  console.log('foo');
+}
+```
+
+#### Launching worker threads from preload scripts[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_launching-worker-threads-from-preload-scripts)
+
+Take care when launching worker threads from preload scripts (scripts loaded and run using the `-r` command line flag). Unless the `execArgv` option is explicitly set, new Worker threads automatically inherit the command line flags from the running process and will preload the same preload scripts as the main thread. If the preload script unconditionally launches a worker thread, every thread spawned will spawn another until the application crashes.
+
+## Zlib[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlib)
+
+**Source Code:** [lib/zlib.js](https://github.com/nodejs/node/blob/v16.13.1/lib/zlib.js)
+
+The `zlib` module provides compression functionality implemented using Gzip, Deflate/Inflate, and Brotli.
+
+To access it:
+
+```
+const zlib = require('zlib');
+```
+
+Compression and decompression are built around the Node.js [Streams API](https://nodejs.org/dist/v16.13.1/docs/api/stream.html).
+
+Compressing or decompressing a stream (such as a file) can be accomplished by piping the source stream through a `zlib` `Transform` stream into a destination stream:
+
+```
+const { createGzip } = require('zlib');
+const { pipeline } = require('stream');
+const {
+  createReadStream,
+  createWriteStream
+} = require('fs');
+
+const gzip = createGzip();
+const source = createReadStream('input.txt');
+const destination = createWriteStream('input.txt.gz');
+
+pipeline(source, gzip, destination, (err) => {
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
+});
+
+
+
+const { promisify } = require('util');
+const pipe = promisify(pipeline);
+
+async function do_gzip(input, output) {
+  const gzip = createGzip();
+  const source = createReadStream(input);
+  const destination = createWriteStream(output);
+  await pipe(source, gzip, destination);
+}
+
+do_gzip('input.txt', 'input.txt.gz')
+  .catch((err) => {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  });
+```
+
+It is also possible to compress or decompress data in a single step:
+
+```
+const { deflate, unzip } = require('zlib');
+
+const input = '.................................';
+deflate(input, (err, buffer) => {
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
+  console.log(buffer.toString('base64'));
+});
+
+const buffer = Buffer.from('eJzT0yMAAGTvBe8=', 'base64');
+unzip(buffer, (err, buffer) => {
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
+  console.log(buffer.toString());
+});
+
+
+
+const { promisify } = require('util');
+const do_unzip = promisify(unzip);
+
+do_unzip(buffer)
+  .then((buf) => console.log(buf.toString()))
+  .catch((err) => {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  });
+```
+
+### Threadpool usage and performance considerations[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_threadpool-usage-and-performance-considerations)
+
+All `zlib` APIs, except those that are explicitly synchronous, use the Node.js internal threadpool. This can lead to surprising effects and performance limitations in some applications.
+
+Creating and using a large number of zlib objects simultaneously can cause significant memory fragmentation.
+
+```
+const zlib = require('zlib');
+
+const payload = Buffer.from('This is some data');
+
+
+for (let i = 0; i < 30000; ++i) {
+  zlib.deflate(payload, (err, buffer) => {});
+}
+```
+
+In the preceding example, 30,000 deflate instances are created concurrently. Because of how some operating systems handle memory allocation and deallocation, this may lead to to significant memory fragmentation.
+
+It is strongly recommended that the results of compression operations be cached to avoid duplication of effort.
+
+### Compressing HTTP requests and responses[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_compressing-http-requests-and-responses)
+
+The `zlib` module can be used to implement support for the `gzip`, `deflate` and `br` content-encoding mechanisms defined by [HTTP](https://tools.ietf.org/html/rfc7230#section-4.2).
+
+The HTTP [`Accept-Encoding`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3) header is used within an http request to identify the compression encodings accepted by the client. The [`Content-Encoding`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11) header is used to identify the compression encodings actually applied to a message.
+
+The examples given below are drastically simplified to show the basic concept. Using `zlib` encoding can be expensive, and the results ought to be cached. See [Memory usage tuning](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_memory-usage-tuning) for more information on the speed/memory/compression tradeoffs involved in `zlib` usage.
+
+```
+
+const zlib = require('zlib');
+const http = require('http');
+const fs = require('fs');
+const { pipeline } = require('stream');
+
+const request = http.get({ host: 'example.com',
+                           path: '/',
+                           port: 80,
+                           headers: { 'Accept-Encoding': 'br,gzip,deflate' } });
+request.on('response', (response) => {
+  const output = fs.createWriteStream('example.com_index.html');
+
+  const onError = (err) => {
+    if (err) {
+      console.error('An error occurred:', err);
+      process.exitCode = 1;
+    }
+  };
+
+  switch (response.headers['content-encoding']) {
+    case 'br':
+      pipeline(response, zlib.createBrotliDecompress(), output, onError);
+      break;
+    
+    case 'gzip':
+      pipeline(response, zlib.createGunzip(), output, onError);
+      break;
+    case 'deflate':
+      pipeline(response, zlib.createInflate(), output, onError);
+      break;
+    default:
+      pipeline(response, output, onError);
+      break;
+  }
+});
+```
+
+```
+
+
+
+const zlib = require('zlib');
+const http = require('http');
+const fs = require('fs');
+const { pipeline } = require('stream');
+
+http.createServer((request, response) => {
+  const raw = fs.createReadStream('index.html');
+  
+  response.setHeader('Vary', 'Accept-Encoding');
+  let acceptEncoding = request.headers['accept-encoding'];
+  if (!acceptEncoding) {
+    acceptEncoding = '';
+  }
+
+  const onError = (err) => {
+    if (err) {
+      
+      
+      
+      
+      
+      response.end();
+      console.error('An error occurred:', err);
+    }
+  };
+
+  
+  
+  if (/\bdeflate\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'deflate' });
+    pipeline(raw, zlib.createDeflate(), response, onError);
+  } else if (/\bgzip\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'gzip' });
+    pipeline(raw, zlib.createGzip(), response, onError);
+  } else if (/\bbr\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'br' });
+    pipeline(raw, zlib.createBrotliCompress(), response, onError);
+  } else {
+    response.writeHead(200, {});
+    pipeline(raw, response, onError);
+  }
+}).listen(1337);
+```
+
+By default, the `zlib` methods will throw an error when decompressing truncated data. However, if it is known that the data is incomplete, or the desire is to inspect only the beginning of a compressed file, it is possible to suppress the default error handling by changing the flushing method that is used to decompress the last chunk of input data:
+
+```
+
+const buffer = Buffer.from('eJzT0yMA', 'base64');
+
+zlib.unzip(
+  buffer,
+  
+  { finishFlush: zlib.constants.Z_SYNC_FLUSH },
+  (err, buffer) => {
+    if (err) {
+      console.error('An error occurred:', err);
+      process.exitCode = 1;
+    }
+    console.log(buffer.toString());
+  });
+```
+
+This will not change the behavior in other error-throwing situations, e.g. when the input data has an invalid format. Using this method, it will not be possible to determine whether the input ended prematurely or lacks the integrity checks, making it necessary to manually check that the decompressed result is valid.
+
+### Memory usage tuning[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_memory-usage-tuning)
+
+#### For zlib-based streams[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_for-zlib-based-streams)
+
+From `zlib/zconf.h`, modified for Node.js usage:
+
+The memory requirements for deflate are (in bytes):
+
+```
+(1 << (windowBits + 2)) + (1 << (memLevel + 9))
+```
+
+That is: 128K for `windowBits` = 15 + 128K for `memLevel` = 8 (default values) plus a few kilobytes for small objects.
+
+For example, to reduce the default memory requirements from 256K to 128K, the options should be set to:
+
+```
+const options = { windowBits: 14, memLevel: 7 };
+```
+
+This will, however, generally degrade compression.
+
+The memory requirements for inflate are (in bytes) `1 << windowBits`. That is, 32K for `windowBits` = 15 (default value) plus a few kilobytes for small objects.
+
+This is in addition to a single internal output slab buffer of size `chunkSize`, which defaults to 16K.
+
+The speed of `zlib` compression is affected most dramatically by the `level` setting. A higher level will result in better compression, but will take longer to complete. A lower level will result in less compression, but will be much faster.
+
+In general, greater memory usage options will mean that Node.js has to make fewer calls to `zlib` because it will be able to process more data on each `write` operation. So, this is another factor that affects the speed, at the cost of memory usage.
+
+#### For Brotli-based streams[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_for-brotli-based-streams)
+
+There are equivalents to the zlib options for Brotli-based streams, although these options have different ranges than the zlib ones:
+
+-   zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
+-   zlib’s `windowBits` option matches Brotli’s `BROTLI_PARAM_LGWIN` option.
+
+See [below](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_brotli-constants) for more details on Brotli-specific options.
+
+### Flushing[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_flushing)
+
+Calling [`.flush()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibflushkind-callback) on a compression stream will make `zlib` return as much output as currently possible. This may come at the cost of degraded compression quality, but can be useful when data needs to be available as soon as possible.
+
+In the following example, `flush()` is used to write a compressed partial HTTP response to the client:
+
+```
+const zlib = require('zlib');
+const http = require('http');
+const { pipeline } = require('stream');
+
+http.createServer((request, response) => {
+  
+  response.writeHead(200, { 'content-encoding': 'gzip' });
+  const output = zlib.createGzip();
+  let i;
+
+  pipeline(output, response, (err) => {
+    if (err) {
+      
+      
+      
+      
+      
+      clearInterval(i);
+      response.end();
+      console.error('An error occurred:', err);
+    }
+  });
+
+  i = setInterval(() => {
+    output.write(`The current time is ${Date()}\n`, () => {
+      
+      
+      
+      
+      output.flush();
+    });
+  }, 1000);
+}).listen(1337);
+```
+
+### Constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_constants)
+
+Added in: v0.5.8
+
+#### zlib constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlib-constants)
+
+All of the constants defined in `zlib.h` are also defined on `require('zlib').constants`. In the normal course of operations, it will not be necessary to use these constants. They are documented so that their presence is not surprising. This section is taken almost directly from the [zlib documentation](https://zlib.net/manual.html#Constants).
+
+Previously, the constants were available directly from `require('zlib')`, for instance `zlib.Z_NO_FLUSH`. Accessing the constants directly from the module is currently still possible but is deprecated.
+
+Allowed flush values.
+
+-   `zlib.constants.Z_NO_FLUSH`
+-   `zlib.constants.Z_PARTIAL_FLUSH`
+-   `zlib.constants.Z_SYNC_FLUSH`
+-   `zlib.constants.Z_FULL_FLUSH`
+-   `zlib.constants.Z_FINISH`
+-   `zlib.constants.Z_BLOCK`
+-   `zlib.constants.Z_TREES`
+
+Return codes for the compression/decompression functions. Negative values are errors, positive values are used for special but normal events.
+
+-   `zlib.constants.Z_OK`
+-   `zlib.constants.Z_STREAM_END`
+-   `zlib.constants.Z_NEED_DICT`
+-   `zlib.constants.Z_ERRNO`
+-   `zlib.constants.Z_STREAM_ERROR`
+-   `zlib.constants.Z_DATA_ERROR`
+-   `zlib.constants.Z_MEM_ERROR`
+-   `zlib.constants.Z_BUF_ERROR`
+-   `zlib.constants.Z_VERSION_ERROR`
+
+Compression levels.
+
+-   `zlib.constants.Z_NO_COMPRESSION`
+-   `zlib.constants.Z_BEST_SPEED`
+-   `zlib.constants.Z_BEST_COMPRESSION`
+-   `zlib.constants.Z_DEFAULT_COMPRESSION`
+
+Compression strategy.
+
+-   `zlib.constants.Z_FILTERED`
+-   `zlib.constants.Z_HUFFMAN_ONLY`
+-   `zlib.constants.Z_RLE`
+-   `zlib.constants.Z_FIXED`
+-   `zlib.constants.Z_DEFAULT_STRATEGY`
+
+#### Brotli constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_brotli-constants)
+
+Added in: v11.7.0, v10.16.0
+
+There are several options and other constants available for Brotli-based streams:
+
+##### Flush operations[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_flush-operations)
+
+The following values are valid flush operations for Brotli-based streams:
+
+-   `zlib.constants.BROTLI_OPERATION_PROCESS` (default for all operations)
+-   `zlib.constants.BROTLI_OPERATION_FLUSH` (default when calling `.flush()`)
+-   `zlib.constants.BROTLI_OPERATION_FINISH` (default for the last chunk)
+-   `zlib.constants.BROTLI_OPERATION_EMIT_METADATA`
+    -   This particular operation may be hard to use in a Node.js context, as the streaming layer makes it hard to know which data will end up in this frame. Also, there is currently no way to consume this data through the Node.js API.
+
+##### Compressor options[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_compressor-options)
+
+There are several options that can be set on Brotli encoders, affecting compression efficiency and speed. Both the keys and the values can be accessed as properties of the `zlib.constants` object.
+
+The most important options are:
+
+-   `BROTLI_PARAM_MODE`
+    -   `BROTLI_MODE_GENERIC` (default)
+    -   `BROTLI_MODE_TEXT`, adjusted for UTF-8 text
+    -   `BROTLI_MODE_FONT`, adjusted for WOFF 2.0 fonts
+-   `BROTLI_PARAM_QUALITY`
+    -   Ranges from `BROTLI_MIN_QUALITY` to `BROTLI_MAX_QUALITY`, with a default of `BROTLI_DEFAULT_QUALITY`.
+-   `BROTLI_PARAM_SIZE_HINT`
+    -   Integer value representing the expected input size; defaults to `0` for an unknown input size.
+
+The following flags can be set for advanced control over the compression algorithm and memory usage tuning:
+
+-   `BROTLI_PARAM_LGWIN`
+    -   Ranges from `BROTLI_MIN_WINDOW_BITS` to `BROTLI_MAX_WINDOW_BITS`, with a default of `BROTLI_DEFAULT_WINDOW`, or up to `BROTLI_LARGE_MAX_WINDOW_BITS` if the `BROTLI_PARAM_LARGE_WINDOW` flag is set.
+-   `BROTLI_PARAM_LGBLOCK`
+    -   Ranges from `BROTLI_MIN_INPUT_BLOCK_BITS` to `BROTLI_MAX_INPUT_BLOCK_BITS`.
+-   `BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING`
+    -   Boolean flag that decreases compression ratio in favour of decompression speed.
+-   `BROTLI_PARAM_LARGE_WINDOW`
+    -   Boolean flag enabling “Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+-   `BROTLI_PARAM_NPOSTFIX`
+    -   Ranges from `0` to `BROTLI_MAX_NPOSTFIX`.
+-   `BROTLI_PARAM_NDIRECT`
+    -   Ranges from `0` to `15 << NPOSTFIX` in steps of `1 << NPOSTFIX`.
+
+##### Decompressor options[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_decompressor-options)
+
+These advanced options are available for controlling decompression:
+
+-   `BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION`
+    -   Boolean flag that affects internal memory allocation patterns.
+-   `BROTLI_DECODER_PARAM_LARGE_WINDOW`
+    -   Boolean flag enabling “Large Window Brotli” mode (not compatible with the Brotli format as standardized in [RFC 7932](https://www.rfc-editor.org/rfc/rfc7932.txt)).
+
+### Class: `Options`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Each zlib-based class takes an `options` object. No options are required.
+
+Some options are only relevant when compressing and are ignored by the decompression classes.
+
+-   `flush` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `zlib.constants.Z_NO_FLUSH`
+-   `finishFlush` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `zlib.constants.Z_FINISH`
+-   `chunkSize` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `16 * 1024`
+-   `windowBits` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+-   `level` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) (compression only)
+-   `memLevel` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) (compression only)
+-   `strategy` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) (compression only)
+-   `dictionary` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) (deflate/inflate only, empty dictionary by default)
+-   `info` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) (If `true`, returns an object with `buffer` and `engine`.)
+-   `maxOutputLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Limits output size when using [convenience methods](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_convenience-methods). **Default:** [`buffer.kMaxLength`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufferkmaxlength)
+
+See the [`deflateInit2` and `inflateInit2`](https://zlib.net/manual.html#Advanced) documentation for more information.
+
+### Class: `BrotliOptions`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+
+Each Brotli-based class takes an `options` object. All options are optional.
+
+-   `flush` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `zlib.constants.BROTLI_OPERATION_PROCESS`
+-   `finishFlush` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `zlib.constants.BROTLI_OPERATION_FINISH`
+-   `chunkSize` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) **Default:** `16 * 1024`
+-   `params` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) Key-value object containing indexed [Brotli parameters](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_brotli-constants).
+-   `maxOutputLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Limits output size when using [convenience methods](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_convenience-methods). **Default:** [`buffer.kMaxLength`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufferkmaxlength)
+
+For example:
+
+```
+const stream = zlib.createBrotliCompress({
+  chunkSize: 32 * 1024,
+  params: {
+    [zlib.constants.BROTLI_PARAM_MODE]: zlib.constants.BROTLI_MODE_TEXT,
+    [zlib.constants.BROTLI_PARAM_QUALITY]: 4,
+    [zlib.constants.BROTLI_PARAM_SIZE_HINT]: fs.statSync(inputFile).size
+  }
+});
+```
+
+### Class: `zlib.BrotliCompress`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlicompress)
+
+Added in: v11.7.0, v10.16.0
+
+Compress data using the Brotli algorithm.
+
+### Class: `zlib.BrotliDecompress`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlidecompress)
+
+Added in: v11.7.0, v10.16.0
+
+Decompress data using the Brotli algorithm.
+
+### Class: `zlib.Deflate`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflate)
+
+Added in: v0.5.8
+
+Compress data using deflate.
+
+### Class: `zlib.DeflateRaw`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflateraw)
+
+Added in: v0.5.8
+
+Compress data using deflate, and do not append a `zlib` header.
+
+### Class: `zlib.Gunzip`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgunzip)
+
+Decompress a gzip stream.
+
+### Class: `zlib.Gzip`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgzip)
+
+Added in: v0.5.8
+
+Compress data using gzip.
+
+### Class: `zlib.Inflate`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflate)
+
+Decompress a deflate stream.
+
+### Class: `zlib.InflateRaw`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflateraw)
+
+Decompress a raw deflate stream.
+
+### Class: `zlib.Unzip`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibunzip)
+
+Added in: v0.5.8
+
+Decompress either a Gzip- or Deflate-compressed stream by auto-detecting the header.
+
+### Class: `zlib.ZlibBase`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibzlibbase)
+
+Not exported by the `zlib` module. It is documented here because it is the base class of the compressor/decompressor classes.
+
+This class inherits from [`stream.Transform`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamtransform), allowing `zlib` objects to be used in pipes and similar stream operations.
+
+#### `zlib.bytesRead`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbytesread)
+
+Added in: v8.1.0Deprecated since: v10.0.0
+
+-   [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+Deprecated alias for [`zlib.bytesWritten`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbyteswritten). This original name was chosen because it also made sense to interpret the value as the number of bytes read by the engine, but is inconsistent with other streams in Node.js that expose values under these names.
+
+#### `zlib.bytesWritten`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbyteswritten)
+
+Added in: v10.0.0
+
+-   [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+
+The `zlib.bytesWritten` property specifies the number of bytes written to the engine, before the bytes are processed (compressed or decompressed, as appropriate for the derived class).
+
+#### `zlib.close([callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibclosecallback)
+
+Added in: v0.9.4
+
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+Close the underlying handle.
+
+#### `zlib.flush([kind, ]callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibflushkind-callback)
+
+Added in: v0.5.8
+
+-   `kind` **Default:** `zlib.constants.Z_FULL_FLUSH` for zlib-based streams, `zlib.constants.BROTLI_OPERATION_FLUSH` for Brotli-based streams.
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+Flush pending data. Don't call this frivolously, premature flushes negatively impact the effectiveness of the compression algorithm.
+
+Calling this only flushes data from the internal `zlib` state, and does not perform flushing of any kind on the streams level. Rather, it behaves like a normal call to `.write()`, i.e. it will be queued up behind other pending writes and will only produce output when data is being read from the stream.
+
+#### `zlib.params(level, strategy, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibparamslevel-strategy-callback)
+
+Added in: v0.11.4
+
+-   `level` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+-   `strategy` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+This function is only available for zlib-based streams, i.e. not Brotli.
+
+Dynamically update the compression level and compression strategy. Only applicable to deflate algorithm.
+
+#### `zlib.reset()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibreset)
+
+Added in: v0.7.0
+
+Reset the compressor/decompressor to factory defaults. Only applicable to the inflate and deflate algorithms.
+
+### `zlib.constants`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibconstants)
+
+Added in: v7.0.0
+
+Provides an object enumerating Zlib-related constants.
+
+### `zlib.createBrotliCompress([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreatebrotlicompressoptions)
+
+Added in: v11.7.0, v10.16.0
+
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+
+Creates and returns a new [`BrotliCompress`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlicompress) object.
+
+### `zlib.createBrotliDecompress([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreatebrotlidecompressoptions)
+
+Added in: v11.7.0, v10.16.0
+
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+
+Creates and returns a new [`BrotliDecompress`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlidecompress) object.
+
+### `zlib.createDeflate([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreatedeflateoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`Deflate`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflate) object.
+
+### `zlib.createDeflateRaw([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreatedeflaterawoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`DeflateRaw`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflateraw) object.
+
+An upgrade of zlib from 1.2.8 to 1.2.11 changed behavior when `windowBits` is set to 8 for raw deflate streams. zlib would automatically set `windowBits` to 9 if was initially set to 8. Newer versions of zlib will throw an exception, so Node.js restored the original behavior of upgrading a value of 8 to 9, since passing `windowBits = 9` to zlib actually results in a compressed stream that effectively uses an 8-bit window only.
+
+### `zlib.createGunzip([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreategunzipoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`Gunzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgunzip) object.
+
+### `zlib.createGzip([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreategzipoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`Gzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgzip) object. See [example](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlib).
+
+### `zlib.createInflate([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreateinflateoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`Inflate`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflate) object.
+
+### `zlib.createInflateRaw([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreateinflaterawoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`InflateRaw`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflateraw) object.
+
+### `zlib.createUnzip([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibcreateunzipoptions)
+
+Added in: v0.5.8
+
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Creates and returns a new [`Unzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibunzip) object.
+
+### Convenience methods[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_convenience-methods)
+
+All of these take a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer), [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray), [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView), [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) or string as the first argument, an optional second argument to supply options to the `zlib` classes and will call the supplied callback with `callback(error, result)`.
+
+Every method has a `*Sync` counterpart, which accept the same arguments, but without a callback.
+
+#### `zlib.brotliCompress(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbrotlicompressbuffer-options-callback)
+
+Added in: v11.7.0, v10.16.0
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.brotliCompressSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbrotlicompresssyncbuffer-options)
+
+Added in: v11.7.0, v10.16.0
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+
+Compress a chunk of data with [`BrotliCompress`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlicompress).
+
+#### `zlib.brotliDecompress(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbrotlidecompressbuffer-options-callback)
+
+Added in: v11.7.0, v10.16.0
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.brotliDecompressSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibbrotlidecompresssyncbuffer-options)
+
+Added in: v11.7.0, v10.16.0
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<brotli options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-brotlioptions)
+
+Decompress a chunk of data with [`BrotliDecompress`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlidecompress).
+
+#### `zlib.deflate(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibdeflatebuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.deflateSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibdeflatesyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Compress a chunk of data with [`Deflate`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflate).
+
+#### `zlib.deflateRaw(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibdeflaterawbuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.deflateRawSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibdeflaterawsyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Compress a chunk of data with [`DeflateRaw`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibdeflateraw).
+
+#### `zlib.gunzip(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibgunzipbuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.gunzipSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibgunzipsyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Decompress a chunk of data with [`Gunzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgunzip).
+
+#### `zlib.gzip(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibgzipbuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.gzipSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibgzipsyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Compress a chunk of data with [`Gzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibgzip).
+
+#### `zlib.inflate(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibinflatebuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.inflateSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibinflatesyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Decompress a chunk of data with [`Inflate`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflate).
+
+#### `zlib.inflateRaw(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibinflaterawbuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.inflateRawSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibinflaterawsyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Decompress a chunk of data with [`InflateRaw`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibinflateraw).
+
+#### `zlib.unzip(buffer[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibunzipbuffer-options-callback)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+-   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+
+#### `zlib.unzipSync(buffer[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zlibunzipsyncbuffer-options)
+
+-   `buffer` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+-   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
+
+Decompress a chunk of data with [`Unzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibunzip).
