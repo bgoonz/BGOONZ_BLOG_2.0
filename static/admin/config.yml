@@ -19,7 +19,7 @@ show_preview_links: true # see https://www.netlifycms.org/docs/deploy-preview-li
 
 
 display_url: https://bgoonz-blog.netlify.app/
-logo_url: https://bgoonz-blog.netlify.app//images/logo.svg  # custom logo
+logo_url: https://bgoonz-blog.netlify.app//images/main-logo.png  # custom logo
 locale: 'en'  # UI language
 
 collections:

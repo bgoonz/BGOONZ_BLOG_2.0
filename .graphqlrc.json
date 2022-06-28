@@ -1,8 +1,0 @@
-{
-  "schema": [
-    "./functions/netlifyGraph/netlifyGraphSchema.graphql"
-  ],
-  "schemaPath": [
-    "./functions/netlifyGraph/netlifyGraphSchema.graphql"
-  ]
-}

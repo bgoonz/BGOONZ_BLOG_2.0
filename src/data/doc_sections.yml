@@ -1,10 +1,10 @@
 root_docs_path: /docs
 sections:
-    - about🌐
-    - articles🗞️
-    - audio𝆕🔊
-    - career🎓
-    - community🧑‍🤝‍🧑
+    - about
+    - articles
+    - audio
+    - career
+    - community
     - content📁
     - cheatsheet📰
     - css🖥️
@@ -26,5 +26,6 @@ sections:
     - react
     - reference
     - tools
+    - tips
     - tutorials
     - typescript
