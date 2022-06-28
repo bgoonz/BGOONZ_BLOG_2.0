@@ -87,7 +87,7 @@ export default class Footer extends React.Component {
                             </tr>
                         </tbody>
                     </table>
-                    <a href="https://pdfcrowd.com/url_to_pdf/?" onclick={`${!this.p ? (href += '&url=' + encodeURIComponent(location.href)) : (this.p = 1)}`}>  Save to PDF </a>
+                    {/* <a href="https://pdfcrowd.com/url_to_pdf/?" onclick={`${!this.p ? (href += '&url=' + encodeURIComponent(location.href)) : (this.p = 1)}`}>  Save to PDF </a> */}
                 </div>
                 <div className="inner">
                     <div id="search" className="inner"></div>
