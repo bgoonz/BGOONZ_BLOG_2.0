@@ -20,11 +20,9 @@ $ npm install -S gatsby-plugin-disqus
 
 If you have unanswered questions or would like help with enhancing or debugging the plugin, feel free create an [issue](https://github.com/tterb/gatsby-plugin-disqus/issues/new) or submit a [pull request](https://github.com/tterb/gatsby-plugin-disqus/pulls).
 
-
----
 ---
 
-
+---
 
 # Configure
 
@@ -55,12 +53,9 @@ All of the following parameters are optional, though providing a `url`, `identif
 | title      | Tells the Disqus service the title of the current page                              |
 | language   | Tells the Disqus service to override the default site language for the current page |
 
-
-
----
 ---
 
-
+---
 
 # Usage
 
@@ -89,4 +84,3 @@ export default PostTemplate;
 ```
 
 While providing a `url`, `identifier`, and `title` are optional, these attributes are recommended as it will prevent threads from being lost in the case that the domain changes or the post is renamed.
-
