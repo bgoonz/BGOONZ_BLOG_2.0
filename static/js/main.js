@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 window.onGatsbyInitialClientRender = function () {
     /**
      * Main JS file for theme behaviours

@@ -33,9 +33,7 @@ template: docs
 weight: 0
 ---
 
-
 https://bgoonz-blog-v3-0.netlify.app/embeds/
-
 
 <br>
 <h1>  Links: </h1>
@@ -244,7 +242,6 @@ https://bgoonz-blog-v3-0.netlify.app/embeds/
 <br>
 <br>
 <br>
-
 
 <br>
 <h1>  Useful Snippets </h1>
