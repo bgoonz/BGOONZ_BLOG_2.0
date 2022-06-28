@@ -1,5 +1,5 @@
 ---
-title: Interview Resources
+title: Interview Resources List
 template: post
 subtitle: Table of Contents
 excerpt: Table of Contents

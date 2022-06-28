@@ -1,14 +1,14 @@
 ---
-title: Tips
+title: CheatSheet
 weight: 0
-excerpt: This is the Tips & Tricks Page
+excerpt: This is the CheatSheet & Tricks Page
 seo:
-    title: 'Tips & Tricks'
-    description: 'This is the Tips & Tricks Page'
+    title: 'CheatSheet'
+    description: 'This is the CheatSheet & Tricks Page'
     robots: []
     extra: []
 template: docs
 ---
 
 
-## Tips & Tricks
+## CheatSheet & Tricks
