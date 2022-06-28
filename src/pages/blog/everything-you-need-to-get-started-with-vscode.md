@@ -31,20 +31,20 @@ Commands:
 
 #### Every extension or tool you could possibly need
 
-![](https://cdn-images-1.medium.com/max/1200/1*gcp0kkiWQY6qd1Y4qEcqxw.png)
+![alt-text](https://cdn-images-1.medium.com/max/1200/1*gcp0kkiWQY6qd1Y4qEcqxw.png)
 
 ### Here’s a rudimentary static site I made that goes into more detail on the extensions I use…
 
 [**VSCodeExtensions**\
 5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18 "https\://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18")[](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
 
-### Here’s the repo it was deployed from:
+### Here’s the repo it was deployed from
 
 <https://github.com/bgoonz/vscode-Extension-readmes>
 
 - - -
 
-### Commands:
+### Commands
 
 > Command Palette
 >
@@ -52,7 +52,7 @@ Commands:
 >
 > Keyboard Shortcut: **Ctrl+Shift+P**
 
-![](https://cdn-images-1.medium.com/max/800/0*BByhnDoVQdRPdO4F.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*BByhnDoVQdRPdO4F.gif)
 
 ### Command palette
 
@@ -78,11 +78,11 @@ Commands:
 
 `F5` Start `⇧F5` Stop `⇧⌘F5` Restart `^F5` Start without debugging `F9` Toggle breakpoint `F10` Step over `F11` Step into `⇧F11` Step out `⇧⌘D` Debug sidebar `⇧⌘Y` Debug panel
 
-![](https://cdn-images-1.medium.com/max/1200/0*llpkl5jsIMhWMucR.png)
+![alt-text](https://cdn-images-1.medium.com/max/1200/0*llpkl5jsIMhWMucR.png)
 
 - - -
 
-### Tips-N-Tricks:
+### Tips-N-Tricks
 
 Here is a selection of common features for editing code. If the keyboard shortcuts aren’t comfortable for you, consider installing a [keymap extension](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Downloads) for your old editor.
 
@@ -96,29 +96,29 @@ To set cursors above or below the current position use:
 
 Keyboard Shortcut: Ctrl+Alt+Up or Ctrl+Alt+Down
 
-![](https://cdn-images-1.medium.com/max/800/0*Le_oEOiYnEBmFfig.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Le_oEOiYnEBmFfig.gif)
 
 You can add additional cursors to all occurrences of the current selection with Ctrl+Shift+L.
 
-![](https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*WcrfwIln6NIG3zNW.gif)
 
 *Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the* `editor.multiCursorModifier` *[setting](https://code.visualstudio.com/docs/getstarted/settings) . See* *[Multi-cursor Modifier](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier)* *for details.*
 
 If you do not want to add all occurrences of the current selection, you can use Ctrl+D instead. This only selects the next occurrence after the one you selected so you can add selections one by one.
 
-![](https://cdn-images-1.medium.com/max/800/0*09EveaKtpZEKFEpO.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*09EveaKtpZEKFEpO.gif)
 
 ### Column (box) selection
 
 You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while you drag your mouse. A separate cursor will be added to the end of each selected line.
 
-![](https://cdn-images-1.medium.com/max/800/0*LrsOBXP4MVqr7aes.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*LrsOBXP4MVqr7aes.gif)
 
 You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection) to trigger column selection.
 
 - - -
 
-### Extensions:
+### Extensions
 
 #### [AutoHotkey Plus](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-autohotkey-plus)
 
@@ -128,13 +128,13 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 > *A debugger extension for Bash scripts based on* `bashdb`
 
-![](https://cdn-images-1.medium.com/max/800/0*8j2gGGs0WHcuFIwY.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*8j2gGGs0WHcuFIwY.gif)
 
 ### [Shellman](https://marketplace.visualstudio.com/items?itemName=Remisa.shellman)
 
 > *Bash script snippets extension*
 
-![](https://cdn-images-1.medium.com/max/800/0*wyimtX27gWygAeOb.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*wyimtX27gWygAeOb.gif)
 
 ### C++
 
@@ -168,7 +168,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 >
 > [. NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
 
-![](https://cdn-images-1.medium.com/max/800/0*ZG5W4_VVBv89zO_g.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*ZG5W4_VVBv89zO_g.gif)
 
 - - -
 
@@ -178,22 +178,22 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 > *Peek or Jump to a CSS definition directly from HTML, just like in Brackets!*
 
-![](https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*MN4pNqxDw4FyRk8g.gif)
 
 * [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) — Lint CSS/SCSS.
 * [Autoprefixer](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer) Parse CSS, SCSS, LESS and add vendor prefixes automatically.
 
-![](https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*edXaUlo7z9TRDQnC.gif)
 
 * [Intellisense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) — Provides CSS class name completion for the HTML class attribute based on the CSS files in your workspace. Also supports React’s className attribute.
 
-![](https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*AHJJrCMfkLWLHLH4.gif)
 
 ### Groovy
 
 * [VsCode Groovy Lint](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint) — Groovy lint, format, prettify and auto-fix
 
-![](https://cdn-images-1.medium.com/max/800/0*jmi5_-erJj7WOMq7.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*jmi5_-erJj7WOMq7.gif)
 
 ### Haskell
 
@@ -217,7 +217,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 * [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) — This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.
 
-![](https://cdn-images-1.medium.com/max/800/0*i7CZbSbHqsWqEM4w.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*i7CZbSbHqsWqEM4w.gif)
 
 See the difference between these two [here](https://github.com/michaelgmcd/vscode-language-babel/issues/1)
 
@@ -239,7 +239,7 @@ Framework-specific:
 
 #### [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) — Toolkit for Vue.js
 
-![](https://cdn-images-1.medium.com/max/800/0*F7J_vW0ISbVMTXIZ.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*F7J_vW0ISbVMTXIZ.png)
 
 - - -
 
@@ -269,13 +269,13 @@ Framework-specific:
 
 > *All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)*
 
-![](https://cdn-images-1.medium.com/max/800/0*8oVrYuZ9kLRNSuBs.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*8oVrYuZ9kLRNSuBs.gif)
 
 ### [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
 
 > *Adds emoji syntax support to VS Code’s built-in Markdown preview*
 
-![](https://cdn-images-1.medium.com/max/800/0*rckUMIIZ9Jh7UE5q.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*rckUMIIZ9Jh7UE5q.png)
 
 - - -
 
@@ -293,19 +293,19 @@ These extensions provide slightly different sets of features. While the first on
 * [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) — Laravel 5 snippets for Visual Studio Code
 * [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) — Laravel blade snippets and syntax highlight support
 
-![](https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*f4hMFe1l7NpJTG8v.gif)
 
 * [Laravel Model Snippets](https://marketplace.visualstudio.com/items?itemName=ahinkle.laravel-model-snippets) — Quickly get models up and running with Laravel Model Snippets.
 
-![](https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*1xydH2CgYGDSMZtB.gif)
 
 * [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan) — Laravel Artisan commands within Visual Studio Code
 
-![](https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*rzK952c4UgikNNPR.gif)
 
 * [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) — Support for dotenv file syntax
 
-![](https://cdn-images-1.medium.com/max/800/0*fSAaqpXfBx1Sgztf.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*fSAaqpXfBx1Sgztf.png)
 
 - - -
 
@@ -313,7 +313,7 @@ These extensions provide slightly different sets of features. While the first on
 
 * [Format HTML in PHP](https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php) — Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.
 
-![](https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*6gF0K20iKes7I9ZF.gif)
 
 * [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer)
 * [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) — XDebug extension for Visual Studio Code
@@ -332,7 +332,7 @@ These extensions provide slightly different sets of features. While the first on
 
 * [TensorFlow Snippets](https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets) — This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.
 
-![](https://cdn-images-1.medium.com/max/800/0*stmhgQ3sGvJBTvf2.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*stmhgQ3sGvJBTvf2.gif)
 
 - - -
 
@@ -348,19 +348,19 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources.*
 
-![](https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*p8bvCI9DXF44m4z3.png)
 
 ### [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 
 > *Browse your database inside the vs code editor*
 
-![](https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*VWvSU6Hbf20Kfc_P.gif)
 
 ### [Azure IoT Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
 
 > *Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub*
 
-![](https://cdn-images-1.medium.com/max/800/0*AobtCd80fICrbQPI.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*AobtCd80fICrbQPI.png)
 
 ### [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 
@@ -370,19 +370,19 @@ These extensions provide slightly different sets of features. While the first on
 
 > *An extension for big projects or monorepos that colors your tab/titlebar based on the current package*
 
-![](https://cdn-images-1.medium.com/max/800/0*SEp-hgfDLlubNRyc.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*SEp-hgfDLlubNRyc.gif)
 
 ### [Create tests](https://marketplace.visualstudio.com/items?itemName=hardikmodha.create-tests)
 
 > *An extension to quickly generate test files.*
 
-![](https://cdn-images-1.medium.com/max/800/0*DLZLYmrBiui0YOBt.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*DLZLYmrBiui0YOBt.gif)
 
 ### [Deploy](https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-deploy)
 
 > *Commands for upload or copy files of a workspace to a destination.*
 
-![](https://cdn-images-1.medium.com/max/800/0*lLasjzlmWnBwdbAT.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*lLasjzlmWnBwdbAT.gif)
 
 ### [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
 
@@ -392,25 +392,25 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Show language diagnostics inline (errors/warnings/…).*
 
-![](https://cdn-images-1.medium.com/max/800/0*1tJJkV0p2Ka_W06r.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*1tJJkV0p2Ka_W06r.gif)
 
 ### [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 > *Provides Javascript and React/Redux snippets in ES7*
 
-![](https://cdn-images-1.medium.com/max/800/0*W3N0kbgEumWYa-m4.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*W3N0kbgEumWYa-m4.png)
 
 ### [Gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)
 
 > *Generating .gitignore files made easy*
 
-![](https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*sfddghz8B1D362UB.gif)
 
 ### [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
 
 > *Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It’s like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples.*
 
-![](https://cdn-images-1.medium.com/max/800/0*1MiBQ0u4Z8TPNaG9.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*1MiBQ0u4Z8TPNaG9.gif)
 
 ### [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
@@ -424,23 +424,23 @@ These extensions provide slightly different sets of features. While the first on
 
 > *GoTo current file’s online link in browser and Copy the link in clipboard.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Acgfn2rmhinuIPjk.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Acgfn2rmhinuIPjk.gif)
 
 ### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 > *Provides Git CodeLens information (most recent commit, # of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions.*
 
-![](https://cdn-images-1.medium.com/max/800/0*MZu4GV7SOCW88UQQ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*MZu4GV7SOCW88UQQ.gif)
 
 ### [Git Indicators](https://marketplace.visualstudio.com/items?itemName=lamartire.git-indicators)
 
 > *Atom-like git indicators on active panel*
 
-![](https://cdn-images-1.medium.com/max/800/0*vitZrD9ZU0_eWckU.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*vitZrD9ZU0_eWckU.png)
 
-![](https://cdn-images-1.medium.com/max/800/0*0BHxQOLMx09FFuWZ.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*0BHxQOLMx09FFuWZ.png)
 
-![](https://cdn-images-1.medium.com/max/800/0*x8F97F4AdSvvtehT.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*x8F97F4AdSvvtehT.png)
 
 ### [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
 
@@ -450,7 +450,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *This extension uses the GitHub api to monitor the state of your pull requests and let you know when it’s time to merge or if someone requested changes.*
 
-![](https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*TOq5OERkgQNETGPK.png)
 
 ### [GitLab Workflow](https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow)
 
@@ -460,7 +460,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Run gradle tasks in VS Code.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Vx-3DIT22BJpEnJr.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Vx-3DIT22BJpEnJr.gif)
 
 ### [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)
 
@@ -474,23 +474,23 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Bringing the power of Jira and Bitbucket to VS Code — With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!*
 
-![](https://cdn-images-1.medium.com/max/800/0*T6iuH2VnPYj93YqW.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*T6iuH2VnPYj93YqW.gif)
 
 ### [JS Parameter Annotations](https://marketplace.visualstudio.com/items?itemName=lannonbr.vscode-js-annotations)
 
 > *Provides annotations on function calls in JS/TS files to provide parameter names to arguments.*
 
-![](https://cdn-images-1.medium.com/max/800/0*zHffPsYWln4dxhus.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*zHffPsYWln4dxhus.png)
 
 ### [Jumpy](https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy)
 
 > *Provides fast cursor movement, inspired by Atom’s package of the same name.*
 
-![](https://cdn-images-1.medium.com/max/800/0*uPOceUJ4eMjCP_Qt.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*uPOceUJ4eMjCP_Qt.gif)
 
 ### [Kanban](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban)
 
-![](https://cdn-images-1.medium.com/max/800/0*SzUG3UU1fl5ub7bA.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*SzUG3UU1fl5ub7bA.gif)
 
 *Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support.*
 
@@ -498,7 +498,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Launch a development local Server with live reload feature for static & dynamic pages.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Oj5zPrWwMbCBViBi.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Oj5zPrWwMbCBViBi.gif)
 
 ### [Multiple clipboards](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 
@@ -508,55 +508,55 @@ These extensions provide slightly different sets of features. While the first on
 
 > *ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control* *[ngrok](https://ngrok.com/)* *from the VSCode command palette*
 
-![](https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*IX15MuJrEVBcTd0F.gif)
 
 ### [Instant Markdown](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-instant-markdown)
 
 > *Simply, edit markdown documents in vscode and instantly preview it in your browser as you type.*
 
-![](https://cdn-images-1.medium.com/max/800/0*jBw9vP9cAtvv2IcV.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*jBw9vP9cAtvv2IcV.gif)
 
 ### [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
 > *Visual Studio Code plugin that autocompletes npm modules in import statements.*
 
-![](https://cdn-images-1.medium.com/max/800/0*iVJamJugt_b7-VsV.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*iVJamJugt_b7-VsV.gif)
 
 ### [Parameter Hints](https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints)
 
 > *Provides parameter hints on function calls in JS/TS/PHP files.*
 
-![](https://cdn-images-1.medium.com/max/800/0*BSj8-Qt7xtVTsl1Z.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*BSj8-Qt7xtVTsl1Z.png)
 
 ### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
 
 > *Compare (diff) text selections within a file, across different files, or to the clipboard*
 
-![](https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*KHki85jdv1hZeY3V.gif)
 
 ### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
 > *Infer the structure of JSON and paste is as types in many programming languages*
 
-![](https://cdn-images-1.medium.com/max/800/0*K2GCRMGsYjpsK8OX.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*K2GCRMGsYjpsK8OX.gif)
 
 ### [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 > *Visual Studio Code plugin that autocompletes filenames*
 
-![](https://cdn-images-1.medium.com/max/800/0*xwxU_1ffZvZ6DeoO.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*xwxU_1ffZvZ6DeoO.gif)
 
 ### [Power Tools](https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools)
 
 > *Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions*
 
-![](https://cdn-images-1.medium.com/max/800/0*Cb7J6-PYsXsnjqSN.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Cb7J6-PYsXsnjqSN.gif)
 
 ### [PrintCode](https://marketplace.visualstudio.com/items?itemName=nobuhito.printcode)
 
 > *PrintCode converts the code being edited into an HTML file, displays it by browser and prints it.*
 
-![](https://cdn-images-1.medium.com/max/800/0*2spvNSEEHM-ETd_F.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*2spvNSEEHM-ETd_F.gif)
 
 ### [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
@@ -566,19 +566,19 @@ These extensions provide slightly different sets of features. While the first on
 
 > *VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly.*
 
-![](https://cdn-images-1.medium.com/max/800/0*PxOoARROhi1rf63R.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*PxOoARROhi1rf63R.gif)
 
 ### [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 
 > *Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL.*
 
-![](https://cdn-images-1.medium.com/max/800/0*XAb9jlOfGWlEaCEM.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*XAb9jlOfGWlEaCEM.png)
 
 ### [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 > *Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code’s full feature set.*
 
-![](https://cdn-images-1.medium.com/max/800/0*b6XEPh9PJzeWDB_z.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*b6XEPh9PJzeWDB_z.gif)
 
 ### [Remote VSCode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode)
 
@@ -588,37 +588,37 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Allows you to send HTTP request and view the response in Visual Studio Code directly.*
 
-![](https://cdn-images-1.medium.com/max/800/0*zGne78bniDbTXzyf.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*zGne78bniDbTXzyf.gif)
 
 ### [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
 > *Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist*
 
-![](https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*ilH91MRgGnMF6C8c.gif)
 
 ### [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools)
 
 > *All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Pfp4noD5OeQRbmsZ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Pfp4noD5OeQRbmsZ.gif)
 
 ### [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
 > *Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags.*
 
-![](https://cdn-images-1.medium.com/max/800/0*6utz502-rPCa0Xcg.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*6utz502-rPCa0Xcg.gif)
 
 ### [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
 
 > *Cycle between single, double and backtick quotes*
 
-![](https://cdn-images-1.medium.com/max/800/0*7kZFpggvGAVkvoYa)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*7kZFpggvGAVkvoYa)
 
 ### [Typescript Destructure](https://marketplace.visualstudio.com/items?itemName=tusaeff.vscode-typescript-destructure-plugin)
 
 > *TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring*
 
-![](https://cdn-images-1.medium.com/max/800/0*sEi0imXK2Yx69m7H.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*sEi0imXK2Yx69m7H.gif)
 
 ### [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
@@ -630,23 +630,23 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
 
-> *Align your code by colon(:), assignment(=, +=, -=, *=, /=) and arrow(=> ). It has additional support for comma-first coding style and trailing comment.*
+> *Align your code by colon(:), assignment(=, +=, -=,*=, /=) and arrow(=> ). It has additional support for comma-first coding style and trailing comment.*
 >
 > *And it doesn’t require you to select what to be aligned, the extension will figure it out by itself.*
 
-![](https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*5maDjvvH57MAks1l.gif)
 
 ### [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
 > *Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text*
 
-![](https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*h6Q6HLQ8jfHLnPlJ.gif)
 
 ### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
 > *Auto rename paired HTML/XML tags*
 
-![](https://cdn-images-1.medium.com/max/800/0*uRKX2-umhSQzlESv.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*uRKX2-umhSQzlESv.gif)
 
 ### [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
@@ -660,7 +660,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Transform quotes of ECMAScript string literals*
 
-![](https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*W1Z1fIvOGgPclFMJ.gif)
 
 ### [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
@@ -670,13 +670,13 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Sorts lines of text in specific order*
 
-![](https://cdn-images-1.medium.com/max/800/0*a4wPhA7VjJqkp3lu.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*a4wPhA7VjJqkp3lu.gif)
 
 ### [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
 
 > *A simple yet powerful extension to add wrapper templates around your code blocks.*
 
-![](https://cdn-images-1.medium.com/max/800/0*lyjRgfSrvdmhGFXd.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*lyjRgfSrvdmhGFXd.gif)
 
 ### [Wrap Selection](https://marketplace.visualstudio.com/items?itemName=konstantin.wrapSelection)
 
@@ -690,7 +690,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use.*
 
-![](https://cdn-images-1.medium.com/max/800/0*m3nU-5UxgUxX4-eJ.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*m3nU-5UxgUxX4-eJ.png)
 
 ### [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
@@ -700,19 +700,19 @@ These extensions provide slightly different sets of features. While the first on
 
 > *shell script & Dockerfile & dotenv format*
 
-![](https://cdn-images-1.medium.com/max/800/0*TThlkfK1KgQm5AKU.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*TThlkfK1KgQm5AKU.gif)
 
 ### [Vscode Google Translate](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate)
 
 > *Quickly translate selected text right in your code*
 
-![](https://cdn-images-1.medium.com/max/800/0*JF8NuxAFDxXiTn_u.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*JF8NuxAFDxXiTn_u.gif)
 
 ### Explorer Icons
 
 ### [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
-![](https://cdn-images-1.medium.com/max/800/0*67ZZ9mhoISPk_lM4.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*67ZZ9mhoISPk_lM4.png)
 
 ### Uncategorized
 
@@ -722,49 +722,49 @@ These extensions provide slightly different sets of features. While the first on
 >
 > ***FYI:… I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT… I SUSPECT THAT’S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION.***
 
-![](https://cdn-images-1.medium.com/max/800/0*Oilwsi7EKGpCZb46.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Oilwsi7EKGpCZb46.gif)
 
 ### [CodeRoad](https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad)
 
 > *Play interactive tutorials in your favorite editor.*
 
-![](https://cdn-images-1.medium.com/max/800/0*iV8P93QMmWdYfnrQ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*iV8P93QMmWdYfnrQ.gif)
 
 ### [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 > *Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, C# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script*
 
-![](https://cdn-images-1.medium.com/max/800/0*hMsM_IEyBklQXchd.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*hMsM_IEyBklQXchd.gif)
 
 ### [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
 
 > *Automatic time reports by project and other programming metrics right in VS Code.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Uo1BYexJenprpgLa)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Uo1BYexJenprpgLa)
 
 ### [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
 > *Highlight web colors in your editor*
 
-![](https://cdn-images-1.medium.com/max/800/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/1*ZwE7OHKR5opvDCJJOw9KeQ.png)
 
 ### [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
 > *Syntax highlighting for the VS Code Output Panel and log files*
 
-![](https://cdn-images-1.medium.com/max/800/0*9DpzVZ9cUNp2TMyD.jpg)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*9DpzVZ9cUNp2TMyD.jpg)
 
 ### [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
 
 > *Dash integration in Visual Studio Code*
 
-![](https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/1*sqGllC-pgXNaEBfB-cxG9Q.png)
 
 ### [Edit with Shell Command](https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell)
 
 > *Leverage your favourite shell commands to edit text*
 
-![](https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*2wW31HJ1nUCjORZe.gif)
 
 ### [Editor Config for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
@@ -774,7 +774,7 @@ These extensions provide slightly different sets of features. While the first on
 
 > *Auto-sync your work to remote FTP server*
 
-![](https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*-viKhwxpeYQdWHRE.gif)
 
 ### [Highlight JSX/HTML tags](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 
@@ -784,19 +784,19 @@ These extensions provide slightly different sets of features. While the first on
 
 > *A simple extension to make indentation more readable.*
 
-![](https://cdn-images-1.medium.com/max/800/0*GK_yEd-50SU3yc_y.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*GK_yEd-50SU3yc_y.png)
 
 ### [Password Generator](https://marketplace.visualstudio.com/items?itemName=ftonato.password-generator)
 
 > *Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today.*
 
-![](https://cdn-images-1.medium.com/max/800/0*qPJAZk9-NcYgsx7H.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*qPJAZk9-NcYgsx7H.gif)
 
 ### [PlatformIO](https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio)
 
 > *An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible.*
 
-![](https://cdn-images-1.medium.com/max/800/0*RywVt_vikqB-5urO.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*RywVt_vikqB-5urO.gif)
 
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
@@ -804,15 +804,15 @@ These extensions provide slightly different sets of features. While the first on
 >
 > ***Note: Polacode no longer works as of the most recent update… go for Polacode2020 or CodeSnap…***
 
-![](https://cdn-images-1.medium.com/max/800/0*Io4fPojDRrDf5CmW.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Io4fPojDRrDf5CmW.gif)
 
 ### [Quokka](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 
-#### This one is super cool!
+#### This one is super cool
 
 > *Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting.*
 
-![](https://cdn-images-1.medium.com/max/800/0*Q9kp8EWZHTD0Hfru.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*Q9kp8EWZHTD0Hfru.gif)
 
 ### [Slack](https://marketplace.visualstudio.com/items?itemName=sozercan.slack)
 
@@ -820,7 +820,7 @@ These extensions provide slightly different sets of features. While the first on
 
 Personally I found this extension to slow down my editor in addition to confliction with other extensions: (I have over 200 as of this writing)….. **yes I have been made fully aware that I have a problem and need to get help**
 
-![](https://cdn-images-1.medium.com/max/800/0*9-xxjXzdPCh_46kZ.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*9-xxjXzdPCh_46kZ.gif)
 
 ### [Spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)
 
@@ -828,13 +828,13 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 > *Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys.*
 
-![](https://cdn-images-1.medium.com/max/800/0*IqsxXiGpZQWbQbfD.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*IqsxXiGpZQWbQbfD.gif)
 
 ### [SVG](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
 > *A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG.*
 
-![](https://cdn-images-1.medium.com/max/800/0*SC6zCXGaBnM_LkgC.png)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*SC6zCXGaBnM_LkgC.png)
 
 ### [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
@@ -844,7 +844,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 > *Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor’s search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy.*
 
-![](https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*YDreVyGNjZmqj_KC.gif)
 
 ### [ESDOC MDN](https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn)
 
@@ -852,11 +852,11 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 > *Quickly bring up helpful MDN documentation in the editor*
 
-![](https://cdn-images-1.medium.com/max/800/0*xiUfWBsz8x8beY70.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*xiUfWBsz8x8beY70.gif)
 
-![](https://cdn-images-1.medium.com/max/800/0*mMBU6d1iCkt5VHq2.gif)
+![alt-text](https://cdn-images-1.medium.com/max/800/0*mMBU6d1iCkt5VHq2.gif)
 
-### Themes:
+### Themes
 
 In the interest of not making the reader scroll endlessly as I often do… I’ve made a separate post for that here. If you’ve made it this far, I thank you!
 

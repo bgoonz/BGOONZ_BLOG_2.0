@@ -96,9 +96,9 @@ Icons, photos and illustrations.
 
 [Image Provider](https://trends.builtwith.com/widgets/image-provider)
 
-## [Lorem Ipsum](https://trends.builtwith.com/widgets/)
+## [Lorem Ipsum](https://trends.builtwith.com/widgets/Lorem-Ipsum)
 
-[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/)
+[Lorem Ipsum Usage Statistics](https://trends.builtwith.com/widgets/Lorem-Ipsum) - [Download List of All Websites using Lorem Ipsum](https://trends.builtwith.com/websitelist/Lorem-Ipsum)
 
 This website contains the phrase 'lorem ipsum' which means it may have placeholder text.
 
@@ -926,27 +926,25 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
- ```console
+```bash
 
+   # create a new Gatsby site using the default starter
 
-    # create a new Gatsby site using the default starter
+   gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
 
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-
- ```
+```
 
 1. **Start developing.**
 
     Navigate into your new site's directory and start it up.
 
- ```console
+```bash
 
+   cd my-default-starter/
 
-    cd my-default-starter/
+   gatsby develop
 
-    gatsby develop
-
- ```
+```
 
 1. **Open the source code and start editing!**
 
@@ -4136,7 +4134,7 @@ Element.prototype.closest ||
 
 # Prism.js
 
-   ```js
+```js
 
 //
 
@@ -6278,7 +6276,7 @@ punctuation: /[{}[\];(),.:]/
 
 Prism.languages.clike['class-name'],
 
-{ pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$A-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
+{ pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$A-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
 
 ],
 
@@ -6336,7 +6334,7 @@ pattern:
 
 pattern:
 
-/#?[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
+/#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
 
 alias: 'function'
 
@@ -6346,7 +6344,7 @@ parameter: [
 
 {
 
-pattern: /[function(?:\s+(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
+pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
 
 lookbehind: !0,
 
@@ -6356,7 +6354,7 @@ inside: Prism.languages.javascript
 
 {
 
-pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$a-z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
+pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
 
 lookbehind: !0,
 
@@ -6370,7 +6368,7 @@ inside: Prism.languages.javascript
 
 pattern:
 
-/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))[?:(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
 
 lookbehind: !0,
 
@@ -6432,7 +6430,6 @@ Prism.languages.markup.tag.addAttribute(
 //
 
 window.onGatsbyInitialClientRender = function () {
-
     /**
 
      * Main JS file for theme behaviours
@@ -6448,63 +6445,46 @@ window.onGatsbyInitialClientRender = function () {
     // Handle main navigation menu toggling on small screens
 
     function menuToggleHandler(e) {
-
         e.preventDefault();
 
         document.body.classList.toggle('menu--opened');
-
     }
 
     // Handle docs navigation menu toggling on small screens
 
     function docsNavToggleHandler(e) {
-
         e.preventDefault();
 
         document.body.classList.toggle('docs-menu--opened');
-
     }
 
     // Handle submenu toggling
 
     function submenuToggleHandler(e) {
-
         e.preventDefault();
 
         this.parentNode.classList.toggle('active');
-
     }
 
     window.addMainNavigationHandlers = function () {
-
         const menuToggle = document.querySelectorAll('.menu-toggle');
 
         if (menuToggle) {
-
             for (let i = 0; i < menuToggle.length; i++) {
-
                 menuToggle[i].addEventListener('click', menuToggleHandler, false);
-
             }
-
         }
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
         if (submenuToggle) {
-
             for (let i = 0; i < submenuToggle.length; i++) {
-
                 submenuToggle[i].addEventListener('click', submenuToggleHandler, false);
-
             }
-
         }
-
     };
 
     window.removeMainNavigationHandlers = function () {
-
         // Remove nav related classes on page load
 
         document.body.classList.remove('menu--opened');
@@ -6512,55 +6492,37 @@ window.onGatsbyInitialClientRender = function () {
         const menuToggle = document.querySelectorAll('.menu-toggle');
 
         if (menuToggle) {
-
             for (let i = 0; i < menuToggle.length; i++) {
-
                 menuToggle[i].removeEventListener('click', menuToggleHandler, false);
-
             }
-
         }
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
 
         if (submenuToggle) {
-
             for (let i = 0; i < submenuToggle.length; i++) {
-
                 submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
-
             }
-
         }
-
     };
 
     window.addDocsNavigationHandlers = function () {
-
         const docsNavToggle = document.getElementById('docs-nav-toggle');
 
         if (docsNavToggle) {
-
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
-
         }
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
         if (docsSubmenuToggle) {
-
             for (let i = 0; i < docsSubmenuToggle.length; i++) {
-
                 docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
-
             }
-
         }
-
     };
 
     window.removeDocsNavigationHandlers = function () {
-
         // Remove docs nav related classes on page load
 
         document.body.classList.remove('docs-menu--opened');
@@ -6568,49 +6530,36 @@ window.onGatsbyInitialClientRender = function () {
         const docsNavToggle = document.getElementById('docs-nav-toggle');
 
         if (docsNavToggle) {
-
             docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
-
         }
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
 
         if (docsSubmenuToggle) {
-
             for (let i = 0; i < docsSubmenuToggle.length; i++) {
-
                 docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
-
             }
-
         }
-
     };
 
     window.addPageNavLinks = function () {
-
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
         if (pageToc && pageTocContainer) {
-
             const pageContent = document.querySelector('.type-docs .post-content');
 
             // Create in-page navigation
 
             const headerLinks = getHeaderLinks({
-
                 root: pageContent
-
             });
 
             if (headerLinks.length > 0) {
-
                 pageToc.classList.add('has-links');
 
                 renderHeaderLinks(pageTocContainer, headerLinks);
-
             }
 
             // Scroll to anchors
@@ -6620,19 +6569,13 @@ window.onGatsbyInitialClientRender = function () {
             let hash = window.decodeURI(location.hash.replace('#', ''));
 
             if (hash !== '') {
-
                 window.setTimeout(function () {
-
                     let anchor = document.getElementById(hash);
 
                     if (anchor) {
-
                         scroll.animateScroll(anchor);
-
                     }
-
                 }, 0);
-
             }
 
             // Highlight current anchor
@@ -6640,15 +6583,11 @@ window.onGatsbyInitialClientRender = function () {
             let pageTocLinks = pageTocContainer.getElementsByTagName('a');
 
             if (pageTocLinks.length > 0) {
-
                 let spy = new Gumshoe('#page-nav-inside a', {
-
                     nested: true,
 
                     nestedClass: 'active-parent'
-
                 });
-
             }
 
             // Add link to page content headings
@@ -6656,97 +6595,69 @@ window.onGatsbyInitialClientRender = function () {
             let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
 
             for (let i = 0; i < pageHeadings.length; i++) {
-
                 let heading = pageHeadings[i];
 
                 if (typeof heading.id !== 'undefined' && heading.id !== '') {
-
                     heading.insertBefore(anchorForId(heading.id), heading.firstChild);
-
                 }
-
             }
 
             // Copy link url
 
             let clipboard = new ClipboardJS('.hash-link', {
-
                 text: function (trigger) {
-
                     return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
-
                 }
-
             });
-
         }
-
     };
 
     window.removePageNavLinks = function () {
-
         const pageToc = document.getElementById('page-nav-inside');
 
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
         if (pageToc && pageTocContainer) {
-
             pageToc.classList.remove('has-links');
 
             while (pageTocContainer.firstChild) {
-
                 pageTocContainer.removeChild(pageTocContainer.firstChild);
-
             }
-
         }
-
     };
 
     function getElementsByTagNames(root, tagNames) {
-
         let elements = [];
 
         for (let i = 0; i < root.children.length; i++) {
-
             let element = root.children[i];
 
             let tagName = element.nodeName.toLowerCase();
 
             if (tagNames.includes(tagName)) {
-
                 elements.push(element);
-
             }
 
             elements = elements.concat(getElementsByTagNames(element, tagNames));
-
         }
 
         return elements;
-
     }
 
     function createLinksForHeaderElements(elements) {
-
         let result = [];
 
         let stack = [
-
             {
-
                 level: 0,
 
                 children: result
-
             }
-
         ];
 
         let re = /^h(\d)$/;
 
         for (let i = 0; i < elements.length; i++) {
-
             let element = elements[i];
 
             let tagName = element.nodeName.toLowerCase();
@@ -6754,23 +6665,18 @@ window.onGatsbyInitialClientRender = function () {
             let match = re.exec(tagName);
 
             if (!match) {
-
                 console.warn('can not create links to non header element');
 
                 continue;
-
             }
 
             let headerLevel = parseInt(match[1], 10);
 
             if (!element.id) {
-
                 if (!element.textContent) {
-
                     console.warn('can not create link to element without id and without text content');
 
                     continue;
-
                 }
 
                 element.id = element.textContent
@@ -6782,7 +6688,6 @@ window.onGatsbyInitialClientRender = function () {
                     .replace(/^_/, '')
 
                     .replace(/_$/, '');
-
             }
 
             let link = document.createElement('a');
@@ -6794,7 +6699,6 @@ window.onGatsbyInitialClientRender = function () {
             link.appendChild(document.createTextNode(element.textContent));
 
             let obj = {
-
                 id: element.id,
 
                 level: headerLevel,
@@ -6806,37 +6710,27 @@ window.onGatsbyInitialClientRender = function () {
                 link: link,
 
                 children: []
-
             };
 
             if (headerLevel > stack[stack.length - 1].level) {
-
                 stack[stack.length - 1].children.push(obj);
 
                 stack.push(obj);
-
             } else {
-
                 while (headerLevel <= stack[stack.length - 1].level && stack.length > 1) {
-
                     stack.pop();
-
                 }
 
                 stack[stack.length - 1].children.push(obj);
 
                 stack.push(obj);
-
             }
-
         }
 
         return result;
-
     }
 
     function getHeaderLinks(options = {}) {
-
         let tagNames = options.tagNames || ['h2', 'h3'];
 
         let root = options.root || document.body;
@@ -6844,41 +6738,31 @@ window.onGatsbyInitialClientRender = function () {
         let headerElements = getElementsByTagNames(root, tagNames);
 
         return createLinksForHeaderElements(headerElements);
-
     }
 
     function renderHeaderLinks(element, links) {
-
         if (links.length === 0) {
-
             return;
-
         }
 
         let ulElm = document.createElement('ul');
 
         for (let i = 0; i < links.length; i++) {
-
             let liElm = document.createElement('li');
 
             liElm.append(links[i].link);
 
             if (links[i].children.length > 0) {
-
                 renderHeaderLinks(liElm, links[i].children);
-
             }
 
             ulElm.appendChild(liElm);
-
         }
 
         element.appendChild(ulElm);
-
     }
 
     function anchorForId(id) {
-
         let anchor = document.createElement('a');
 
         anchor.setAttribute('class', 'hash-link');
@@ -6890,13 +6774,11 @@ window.onGatsbyInitialClientRender = function () {
         anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
 
         return anchor;
-
     }
 
     // Syntax Highlighter
 
     // Prism.highlightAll();
-
 };
 
 //-----------------------------------------------------------------------
@@ -6908,7 +6790,6 @@ window.onGatsbyInitialClientRender = function () {
 //-----------------------------------------------------------------------
 
 //-----------------------------------------------------------------------
-
 ```
 
 ---
@@ -11155,19 +11036,27 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
 
     See the [documentation for `Node API Helpers` for more details](https://www.gatsbyjs.com/docs/node-api-helpers)
 
--   ###### `actions` Actions
+-   ######
+
+            `actions` Actions
 
             See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
 
--   ######   `createPage` function
+-   ######
+
+                `createPage` function
 
                 [Documentation for this action](https://www.gatsbyjs.com/docs/actions/#createPage)
 
--   ###### `graphql` function
+-   ######
+
+            `graphql` function
 
             : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
 
--   ###### `reporter` GatsbyReporter
+-   ######
+
+            `reporter` GatsbyReporter
 
             Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
 
@@ -11293,11 +11182,15 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
     destructured object
 
--   ###### `intermediateSchema` GraphQLSchema
+-   ######
+
+            `intermediateSchema` GraphQLSchema
 
             Current GraphQL schema
 
--   ###### `createResolvers` function
+-   ######
+
+            `createResolvers` function
 
             Add custom resolvers to GraphQL field configs
 
@@ -11305,15 +11198,21 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
     `$1` object
 
--   ###### `resolvers` object
+-   ######
+
+            `resolvers` object
 
             An object map of GraphQL type names to custom resolver functions
 
--   ###### `options` object
+-   ######
+
+            `options` object
 
             Optional createResolvers options
 
--   ######   `ignoreNonexistentTypes` object
+-   ######
+
+                `ignoreNonexistentTypes` object
 
                 Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
 
@@ -11368,13 +11267,21 @@ This API runs immediately before schema generation. For modifications of the gen
 
     destructured object
 
--   ###### `actions` object
+-   ######
 
--   ######   `createTypes` object
+            `actions` object
 
--   ######   `createFieldExtension` object
+-   ######
 
--   ######   `addThirdPartySchema` object
+                `createTypes` object
+
+-   ######
+
+                `createFieldExtension` object
+
+-   ######
+
+                `addThirdPartySchema` object
 
 #### Example
 
@@ -11433,11 +11340,15 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 
     destructured object
 
--   ###### `stage` string
+-   ######
+
+            `stage` string
 
             The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
 
--   ###### `actions` object
+-   ######
+
+            `actions` object
 
 -   #####
 
@@ -11472,7 +11383,9 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
 
     destructured object
 
--   ###### `app` Express
+-   ######
+
+            `app` Express
 
             The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
 
@@ -11544,27 +11457,39 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 
     destructured object
 
--   ###### `stage` string
+-   ######
+
+            `stage` string
 
             The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
 
--   ###### `getConfig` function
+-   ######
+
+            `getConfig` function
 
             Returns the current webpack config
 
--   ###### `rules` object
+-   ######
+
+            `rules` object
 
             A set of preconfigured webpack config rules
 
--   ###### `loaders` object
+-   ######
+
+            `loaders` object
 
             A set of preconfigured webpack config loaders
 
--   ###### `plugins` object
+-   ######
+
+            `plugins` object
 
             A set of preconfigured webpack config plugins
 
--   ###### `actions` object
+-   ######
+
+            `actions` object
 
 #### Example
 
@@ -11670,7 +11595,9 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
     destructured object
 
--   ###### `Joi` Joi
+-   ######
+
+            `Joi` Joi
 
             The instance of [Joi](https://joi.dev/) to define the schema
 
@@ -11737,7 +11664,9 @@ Many transformer plugins use this to add fields that take arguments.
 
     destructured object
 
--   ###### `type` object
+-   ######
+
+            `type` object
 
             Object containing `name` and `nodes`
 
@@ -11932,31 +11861,45 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
     destructured object
 
--   ###### `pathname` string
+-   ######
+
+            `pathname` string
 
             The pathname of the page currently being rendered.
 
--   ###### `getHeadComponents` ReactNode[]
+-   ######
+
+            `getHeadComponents` ReactNode[]
 
             Returns the current `headComponents` array.
 
--   ###### `replaceHeadComponents` function
+-   ######
+
+            `replaceHeadComponents` function
 
             Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
--   ###### `getPreBodyComponents` ReactNode[]
+-   ######
+
+            `getPreBodyComponents` ReactNode[]
 
             Returns the current `preBodyComponents` array.
 
--   ###### `replacePreBodyComponents` function
+-   ######
+
+            `replacePreBodyComponents` function
 
             Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
--   ###### `getPostBodyComponents` ReactNode[]
+-   ######
+
+            `getPostBodyComponents` ReactNode[]
 
             Returns the current `postBodyComponents` array.
 
--   ###### `replacePostBodyComponents` function
+-   ######
+
+            `replacePostBodyComponents` function
 
             Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
@@ -12024,31 +11967,45 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
     destructured object
 
--   ###### `pathname` string
+-   ######
+
+            `pathname` string
 
             The pathname of the page currently being rendered.
 
--   ###### `setHeadComponents` function
+-   ######
+
+            `setHeadComponents` function
 
             Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
--   ###### `setHtmlAttributes` function
+-   ######
+
+            `setHtmlAttributes` function
 
             Takes an object of props which will spread into the `<html>` component.
 
--   ###### `setBodyAttributes` function
+-   ######
+
+            `setBodyAttributes` function
 
             Takes an object of props which will spread into the `<body>` component.
 
--   ###### `setPreBodyComponents` function
+-   ######
+
+            `setPreBodyComponents` function
 
             Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
 
--   ###### `setPostBodyComponents` function
+-   ######
+
+            `setPostBodyComponents` function
 
             Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
 
--   ###### `setBodyProps` function
+-   ######
+
+            `setBodyProps` function
 
             Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
@@ -12122,39 +12079,57 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
     destructured object
 
--   ###### `pathname` string
+-   ######
+
+            `pathname` string
 
             The pathname of the page currently being rendered.
 
--   ###### `bodyComponent` ReactNode
+-   ######
+
+            `bodyComponent` ReactNode
 
             The React element to be rendered as the page body
 
--   ###### `replaceBodyHTMLString` function
+-   ######
+
+            `replaceBodyHTMLString` function
 
             Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
 
--   ###### `setHeadComponents` function
+-   ######
+
+            `setHeadComponents` function
 
             Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
 
--   ###### `setHtmlAttributes` function
+-   ######
+
+            `setHtmlAttributes` function
 
             Takes an object of props which will spread into the `<html>` component.
 
--   ###### `setBodyAttributes` function
+-   ######
+
+            `setBodyAttributes` function
 
             Takes an object of props which will spread into the `<body>` component.
 
--   ###### `setPreBodyComponents` function
+-   ######
+
+            `setPreBodyComponents` function
 
             Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
 
--   ###### `setPostBodyComponents` function
+-   ######
+
+            `setPostBodyComponents` function
 
             Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
 
--   ###### `setBodyProps` function
+-   ######
+
+            `setBodyProps` function
 
             Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
@@ -12208,11 +12183,15 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
     destructured object
 
--   ###### `element` ReactNode
+-   ######
+
+            `element` ReactNode
 
             The "Page" React Element built by Gatsby.
 
--   ###### `props` object
+-   ######
+
+            `props` object
 
             Props object used by page.
 
@@ -12272,7 +12251,9 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
     destructured object
 
--   ###### `element` ReactNode
+-   ######
+
+            `element` ReactNode
 
             The "Root" React Element built by Gatsby.
 
