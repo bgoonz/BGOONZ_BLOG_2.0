@@ -4,7 +4,7 @@
 
 ---
 
-### [CHANGELOG](./CHANGELOG.md)
+# [CHANGELOG](./CHANGELOG.md)
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
 [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
-###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+#### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 </div>
 <div align="center">
@@ -31,6 +31,16 @@
 ```bash
 
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+
+git checkout 307a5cd        # check out the commit that you want to reset to 
+git checkout -b fixy        # create a branch named fixy to do the work
+git merge -s ours master    # merge master's history without changing any files
+git checkout master         # switch back to master
+git merge fixy              # and merge in the fixed branch
+git push                    # done, no need to force push!
+
+
 
 ```
 
@@ -50,29 +60,29 @@ npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra g
 
 ---
 
--   [Navigation](/docs/sitemap) Sub-menu
+-   [Navigation](/docs/sitemap)
     -   [Docs](/docs)
     -   [Showcase](/showcase)
     -   [Contact!](/docs/faq/contact)
     -   [Python](/docs/python/python-ds)
     -   [JavaScript](/javascript)
--   [Blog](/blog/) Sub-menu
+-   [Blog](/blog/)
     -   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
     -   [Top Blog Posts](https://blog-w-comments.vercel.app/)
     -   [Blog w Comments](/blogWcomments/)
--   [Job Search](/docs/career/) Sub-menu
+-   [Job Search](/docs/career/)
     -   [Job Boards](/docs/career/job-boards)
     -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
     -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
     -   [Interview Questions](/docs/interview/interview-questions)
--   [Archive](/docs/archive) Sub-menu
+-   [Archive](/docs/archive)
     -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
     -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
     -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
     -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
     -   [Top Repos](/docs)
     -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
--   [Projects](/docs/projects) Sub-menu
+-   [Projects](/docs/projects)
     -   [Potluck Planner](https://potluck-landing.netlify.app/)
     -   [Meditation App](https://meditate42app.netlify.app/)
     -   [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
@@ -113,9 +123,9 @@ Search
 
 **Please note that this website is in development and is often broken!**
 
-[](https://www.vagrantup.com/) [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
+[vagrant](https://www.vagrantup.com/) [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)[![insta](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![pintrest](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
 
-[](https://webpack.js.org/)[](https://www.adobe.com/products/xd.html)
+[webpacl](https://webpack.js.org/)[xd](https://www.adobe.com/products/xd.html)
 
 [![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)
 
@@ -133,7 +143,7 @@ Search
 
 [Contact](https://sidebar-blog.netlify.app/contact/)
 
-![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
+![bigo](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
 
 ### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
 
@@ -149,9 +159,9 @@ _Python has a built in help function that let's you see a description↩ of the 
 
 [View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
 
-![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
+![dtw](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
 
-### [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+# [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
 
 [Learn More](/docs/tools)
 
@@ -163,7 +173,7 @@ As I learn to build web applications in React I will blog about it in↩ this se
 
 ![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
 
-### [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
+# [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
 
 Scope & Context in JS
 
@@ -183,7 +193,7 @@ From github repositories to existential questions.
 
 ![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
 
-### [Angolia](/angolia)
+# [Angolia](/angolia)
 
 ## Full Text Search
 
@@ -191,13 +201,13 @@ From github repositories to existential questions.
 
 ![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
 
-### [Convolutional Neural Networks](/neural networks)
+# [Convolutional Neural Networks](/neural networks)
 
 Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow) ![](/_static/app-assets/neural.PNG)
 
 ![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
 
-### [Jamstack](/jamstack)
+# [Jamstack](/jamstack)
 
 ##### Why Jamstack Jamstack is the new standard architecture for the
 
@@ -205,7 +215,7 @@ web. Using Git workflows and modern build tools, pre-rendered content↩ is serv
 
 ![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
 
-### [Asynchronous JavaScript](/docs/)
+# [Asynchronous JavaScript](/docs/)
 
 The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
 
@@ -213,15 +223,15 @@ The term **asynchronous** refers to two or more objects or events **not** existi
 
 ![nj-devils](/images/njdev-219301cd.jpg)
 
-### [NJ Devils](https://www.allaboutthejersey.com/)
+# [NJ Devils](https://www.allaboutthejersey.com/)
 
-# New Jersey Devils Hockey Team
+## New Jersey Devils Hockey Team
 
 ### (Hockey in general)
 
 ## Team identity
 
-[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
+[![devils](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
 
 The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery) of the [New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers) attempts to distract Brodeur during the [2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs). The playoff series was the fifth to feature the [Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).
 
@@ -229,7 +239,7 @@ The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 
 
 ![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
 
-### [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
+# [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
 
 # Break Even Nuclear Fusion Candidate
 
@@ -237,9 +247,9 @@ In December, researchers at the Joint European Torus (JET) started↩ conducting
 
 ## Resume & Portfolio
 
-![](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
+![resume](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
 
-### [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
+# [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
 
 [View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
@@ -271,65 +281,65 @@ In December, researchers at the Joint European Torus (JET) started↩ conducting
 
 quick links home
 
-### [About](/docs/about/)
+# [About](/docs/about/)
 
 Web-Dev-Hub is my personal blogand documentation site
 
 [Learn More](/docs/about/)
 
-### [Articles](/docs/articles/)
+# [Articles](/docs/articles/)
 
 my web development articles
 
 [Learn More](/docs/articles/)
 
-### [Audio](/docs/audio/)
+# [Audio](/docs/audio/)
 
 Audio Projects and tools / web audio daw
 
 [Learn More](/docs/audio/)
 
-### [Archive](/docs/archive/)
+# [Archive](/docs/archive/)
 
 more tools that I have created or collaborated on.
 
 [Learn More](/docs/archive/)
 
-### [Career](/docs/career/)
+# [Career](/docs/career/)
 
 Reference materials and descriptions of fundamental concepts as well as visua
 
 [Career](/docs/career/)
 
-### [Community](/docs/community/)
+# [Community](/docs/community/)
 
 We'd love it if you participate in the Libris community. Find out how to get connected.
 
 [Learn More](/docs/community/)
 
-### [Content](/docs/content/)
+# [Content](/docs/content/)
 
 In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
 
 [Learn More](/docs/content/)
 
-### [CSS](/docs/css/)
+# [CSS](/docs/css/)
 
 [Learn More](/docs/css/)
 
-### [Docs](/docs/docs/)
+# [Docs](/docs/docs/)
 
 Documentation
 
 [Learn More](/docs/docs/)
 
-### [Data Structures](/docs/ds-algo/)
+# [Data Structures](/docs/ds-algo/)
 
 In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
 
 [Learn More](/docs/ds-algo/)
 
-### [FAQ](/docs/faq/)
+# [FAQ](/docs/faq/)
 
 In this section you'll find commonly asked questions regarding the Libris theme. If you have questions, don't hesitate to ask us directly.
 
@@ -347,85 +357,85 @@ Learn More
 
 Learn More
 
-### [Interact](/docs/interact/)
+# [Interact](/docs/interact/)
 
 Interactive examples and projects
 
 [Learn More](/docs/interact/)
 
-### [Javascript](/docs/javascript/)
+# [Javascript](/docs/javascript/)
 
 Javascript articles and docs
 
 [Learn More](/docs/javascript/)
 
-### [JS-Quick-Tips](/docs/js-tips/)
+# [JS-Quick-Tips](/docs/js-tips/)
 
 Javascript articles and docs
 
 [Learn More](/docs/js-tips/)
 
-### [Leetcode](/docs/leetcode/)
+# [Leetcode](/docs/leetcode/)
 
 feel free to try the examples
 
 [Learn More](/docs/leetcode/)
 
-### [Netlify CMS](/docs/netlify-cms-jamstack/)
+# [Netlify CMS](/docs/netlify-cms-jamstack/)
 
 etlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows.
 
 [Learn More](/docs/netlify-cms-jamstack/)
 
-### [Overflow](/docs/overflow/)
+# [Overflow](/docs/overflow/)
 
 feel free to try the examples
 
 [Learn More](/docs/overflow/)
 
-### [Projects](/docs/projects/)
+# [Projects](/docs/projects/)
 
 We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get connected.
 
 [Learn More](/docs/projects/)
 
-### [Python](/docs/python/)
+# [Python](/docs/python/)
 
 Python
 
 [Learn More](/docs/python/)
 
-### [QuickRef](/docs/quick-ref/)
+# [QuickRef](/docs/quick-ref/)
 
 In this section you'll find basic information about Web-Dev-Hub and how to use it.
 
 [Learn More](/docs/quick-ref/)
 
-### [React](/docs/react/)
+# [React](/docs/react/)
 
 To make it easy to write documentation in plain Markdown, most React are styled using Markdown elements with few additional CSS classes.
 
 [Learn More](/docs/react/)
 
-### [Reference](/docs/reference/)
+# [Reference](/docs/reference/)
 
 helpful reference guides
 
 [Learn More](/docs/reference/)
 
-### [Tips](/docs/tips/)
+# [Tips](/docs/tips/)
 
 lorem-ipsum
 
 [Learn More](/docs/tips/)
 
-### [Tools](/docs/tools/)
+# [Tools](/docs/tools/)
 
 See some interesting tools developed by the Web-Dev-Hubcommunity to help automate parts of your workflow.
 
 [Learn More](/docs/tools/)
 
-### [Tutorials](/docs/tutorials/)
+# [Tutorials](/docs/tutorials/)
 
 Walkthroughs of various development activities and skills
 
@@ -457,83 +467,628 @@ get in touch! +1 (551) - 254 - 5505
 
 <details>
 
-<summary> Bash Commands</summary>
+<summary> Bash Commands</summary># My Commands
 
-## My Commands
+<details>
 
-## # Find
+<summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
-# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG)
+## 99. Cheat Sheet
+
+### Description
+
+> Notes:
+
+###### code
+
+```bash
+#!/bin/bash
+revert
+## SHORTCUTS and HISTORY
+
+
+CTRL+A  # move to beginning of line
+CTRL+B  # moves backward one character
+CTRL+C  # halts the current command
+CTRL+D  # deletes one character backward or logs out of current session, similar to exit
+CTRL+E  # moves to end of line
+CTRL+F  # moves forward one character
+CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+H  # deletes one character under cursor (same as DELETE)
+CTRL+J  # same as RETURN
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+L  # clears screen and redisplay the line
+CTRL+M  # same as RETURN
+CTRL+N  # next line in command history
+CTRL+O  # same as RETURN, then displays next line in history file
+CTRL+P  # previous line in command history
+CTRL+Q  # resumes suspended shell output
+CTRL+R  # searches backward
+CTRL+S  # searches forward or suspends shell output
+CTRL+T  # transposes two characters
+CTRL+U  # kills backward from point to the beginning of line
+CTRL+V  # makes the next character typed verbatim
+CTRL+W  # kills the word behind the cursor
+CTRL+X  # lists the possible filename completions of the current word
+CTRL+Y  # retrieves (yank) last item killed
+CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
+
+ALT+B   # moves backward one word
+ALT+D   # deletes next word
+ALT+F   # moves forward one word
+ALT+H   # deletes one character backward
+ALT+T   # transposes two words
+ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
+ALT+U   # capitalizes every character from the current cursor position to the end of the word
+ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
+ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
+ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
+ALT+?   # list possible completions to what is typed
+ALT+^   # expand line to most recent match from history
+
+CTRL+X then (   # start recording a keyboard macro
+CTRL+X then )   # finish recording keyboard macro
+CTRL+X then E   # recall last recorded keyboard macro
+CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands
+
+BACKSPACE  # deletes one character backward
+DELETE     # deletes one character under cursor
+
+history   # shows command line history
+!!        # repeats the last command
+!<n>      # refers to command line 'n'
+!<string> # refers to command starting with 'string'
+
+exit      # logs out of current session
+
+
+## BASH BASICS
+
+
+env                 # displays all environment variables
+
+echo $SHELL         # displays the shell you're using
+echo $BASH_VERSION  # displays bash version
+
+bash                # if you want to use bash (type exit to go back to your previously opened shell)
+whereis bash        # locates the binary, source and manual-page for a command
+which bash          # finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)
+
+clear               # clears content on window (hide displayed lines)
+
+
+## FILE COMMANDS
+
+
+ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
+ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
+ls -a                         # lists all files in 'long format', including hidden files (name beginning with '.')
+ln -s <filename> <link>       # creates symbolic link to file
+readlink <filename>           # shows where a symbolic links points to
+tree                          # show directories and subdirectories in easilly readable file tree
+mc                            # terminal file explorer (alternative to ncdu)
+touch <filename>              # creates or updates (edit) your file
+mktemp -t <filename>            # make a temp file in /tmp/ which is deleted at next boot (-d to make directory)
+cat <filename>                # prints file raw content (will not be interpreted)
+any_command > <filename>      # '>' is used to perform redirections, it will set any_command's stdout to file instead of "real stdout" (generally /dev/stdout)
+more <filename>               # shows the first part of a file (move with space and type q to quit)
+head <filename>               # outputs the first lines of file (default: 10 lines)
+tail <filename>               # outputs the last lines of file (useful with -f option) (default: 10 lines)
+vim <filename>                # opens a file in VIM (VI iMproved) text editor, will create it if it doesn't exist
+mv <filename1> <dest>         # moves a file to destination, behavior will change based on 'dest' type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))
+cp <filename1> <dest>         # copies a file
+rm <filename>                 # removes a file
+find . -name <name> <type>    # searches for a file or a directory in the current directory and all its sub-directories by its name
+diff <filename1> <filename2>  # compares files, and shows where they differ
+wc <filename>                 # tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations
+sort <filename>               # sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.
+sort -t -k <filename>         # sorts the contents on specific sort key field starting from 1, using the field separator t.
+rev                           # reverse string characters (hello becomes olleh)
+chmod -options <filename>     # lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)
+gzip <filename>               # compresses files using gzip algorithm
+gunzip <filename>             # uncompresses files compressed by gzip
+gzcat <filename>              # lets you look at gzipped file without actually having to gunzip it
+lpr <filename>                # prints the file
+lpq                           # checks out the printer queue
+lprm <jobnumber>              # removes something from the printer queue
+genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
+dvips <filename>              # prints .dvi files (i.e. files produced by LaTeX)
+grep <pattern> <filenames>    # looks for the string in the files
+grep -r <pattern> <dir>       # search recursively for pattern in directory
+head -n file_name | tail +n   # Print nth line from file.
+head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
+
+
+## DIRECTORY COMMANDS
+
+
+mkdir <dirname>               # makes a new directory
+rmdir <dirname>               # remove an empty directory
+rmdir -rf <dirname>           # remove a non-empty directory
+mv <dir1> <dir2>              # rename a directory from <dir1> to <dir2>
+cd                            # changes to home
+cd ..                         # changes to the parent directory
+cd <dirname>                  # changes directory
+cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
+pwd                           # tells you where you currently are
+cd ~                          # changes to home.
+cd -                        # changes to previous working directory
+
+
+## SSH, SYSTEM INFO & NETWORK COMMANDS
+
+
+ssh user@host            # connects to host as user
+ssh -p <port> user@host  # connects to host on specified port as user
+ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
+
+whoami                   # returns your username
+passwd                   # lets you change your password
+quota -v                 # shows what your disk quota is
+date                     # shows the current date and time
+cal                      # shows the month's calendar
+uptime                   # shows current uptime
+w                        # displays whois online
+finger <user>            # displays information about user
+uname -a                 # shows kernel information
+man <command>            # shows the manual for specified command
+df                       # shows disk usage
+du <filename>            # shows the disk usage of the files and directories in filename (du -s give only a total)
+last <yourUsername>      # lists your last logins
+ps -u yourusername       # lists your processes
+kill <PID>               # kills the processes with the ID you gave
+killall <processname>    # kill all processes with the name
+top                      # displays your currently active processes
+lsof                     # lists open files
+bg                       # lists stopped or background jobs ; resume a stopped job in the background
+fg                       # brings the most recent job in the foreground
+fg <job>                 # brings job to the foreground
+
+ping <host>              # pings host and outputs results
+whois <domain>           # gets whois information for domain
+dig <domain>             # gets DNS information for domain
+dig -x <host>            # reverses lookup host
+wget <file>              # downloads file
+
+time <command>             # report time consumed by command execution
+
+
+## VARIABLES
+
+
+varname=value                # defines a variable
+varname=value command        # defines a variable to be in the environment of a particular subprocess
+echo $varname                # checks a variable's value
+echo $$                      # prints process ID of the current shell
+echo $!                      # prints process ID of the most recently invoked background job
+echo $?                      # displays the exit status of the last command
+read <varname>               # reads a string from the input and assigns it to a variable
+read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
+column -t <filename>         # display info in pretty columns (often used with pipe)
+let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
+export VARNAME=value         # defines an environment variable (will be available in subprocesses)
+
+array[0]=valA                # how to define an array
+array[1]=valB
+array[2]=valC
+array=([2]=valC [0]=valA [1]=valB)  # another way
+array=(valA valB valC)              # and another
+
+${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
+${#array[i]}                 # to find out the length of any element in the array
+${#array[@]}                 # to find out how many values there are in the array
+
+declare -a                   # the variables are treated as arrays
+declare -f                   # uses function names only
+declare -F                   # displays function names without definitions
+declare -i                   # the variables are treated as integers
+declare -r                   # makes the variables read-only
+declare -x                   # marks the variables for export via the environment
+
+${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
+${varname:word}              # if varname exists and isn't null, return its value; otherwise return word
+${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
+${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
+${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
+${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+
+${variable#pattern}          # if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest
+${variable##pattern}         # if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest
+${variable%pattern}          # if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest
+${variable%%pattern}         # if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest
+${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
+${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
+
+${#varname}                  # returns the length of the value of the variable as a character string
+
+*(patternlist)               # matches zero or more occurrences of the given patterns
++(patternlist)               # matches one or more occurrences of the given patterns
+?(patternlist)               # matches zero or one occurrence of the given patterns
+@(patternlist)               # matches exactly one of the given patterns
+!(patternlist)               # matches anything except one of the given patterns
+
+$(UNIX command)              # command substitution: runs the command and returns standard output
+
+
+## FUNCTIONS
+
+
+## The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
+## $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
+
+function functname() {
+  shell commands
+}
+
+unset -f functname  # deletes a function definition
+declare -f          # displays all defined functions in your login session
+
+
+## FLOW CONTROLS
+
+
+statement1 && statement2  # and operator
+statement1 || statement2  # or operator
+
+-a                        # and operator inside a test conditional expression
+-o                        # or operator inside a test conditional expression
+
+## STRINGS
+
+str1 == str2               # str1 matches str2
+str1 != str2               # str1 does not match str2
+str1 < str2                # str1 is less than str2 (alphabetically)
+str1 > str2                # str1 is greater than str2 (alphabetically)
+str1 \> str2               # str1 is sorted after str2
+str1 \< str2               # str1 is sorted before str2
+-n str1                    # str1 is not null (has length greater than 0)
+-z str1                    # str1 is null (has length 0)
+
+## FILES
+
+-a file                   # file exists or its compilation is successful
+-d file                   # file exists and is a directory
+-e file                   # file exists; same -a
+-f file                   # file exists and is a regular file (i.e., not a directory or other special type of file)
+-r file                   # you have read permission
+-s file                   # file exists and is not empty
+-w file                   # your have write permission
+-x file                   # you have execute permission on file, or directory search permission if it is a directory
+-N file                   # file was modified since it was last read
+-O file                   # you own file
+-G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
+file1 -nt file2           # file1 is newer than file2
+file1 -ot file2           # file1 is older than file2
+
+## NUMBERS
+
+-lt                       # less than
+-le                       # less than or equal
+-eq                       # equal
+-ge                       # greater than or equal
+-gt                       # greater than
+-ne                       # not equal
+
+if condition
+then
+  statements
+[elif condition
+  then statements...]
+[else
+  statements]
+fi
+
+for x in {1..10}
+do
+  statements
+done
+
+for name [in list]
+do
+  statements that can use $name
+done
+
+for (( initialisation ; ending condition ; update ))
+do
+  statements...
+done
+
+case expression in
+  pattern1 )
+    statements ;;
+  pattern2 )
+    statements ;;
+esac
+
+select name [in list]
+do
+  statements that can use $name
+done
+
+while condition; do
+  statements
+done
+
+until condition; do
+  statements
+done
+
+
+## COMMAND-LINE PROCESSING CYCLE
+
+
+## The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
+## There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+
+command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
+builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
+enable   # enables and disables shell built-ins
+
+eval     # takes arguments and run them through the command-line processing steps all over again
+
+
+## INPUT/OUTPUT REDIRECTORS
+
+
+cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
+< file     # takes standard input from file
+> file     # directs standard output to file
+>> file    # directs standard output to file; append to file if it already exists
+>|file     # forces standard output to file even if noclobber is set
+n>|file    # forces output to file from file descriptor n even if noclobber is set
+<> file    # uses file as both standard input and standard output
+n<>file    # uses file as both input and output for file descriptor n
+n>file     # directs file descriptor n to file
+n<file     # takes file descriptor n from file
+n>>file    # directs file description n to file; append to file if it already exists
+n>&        # duplicates standard output to file descriptor n
+n<&        # duplicates standard input from file descriptor n
+n>&m       # file descriptor n is made to be a copy of the output file descriptor
+n<&m       # file descriptor n is made to be a copy of the input file descriptor
+&>file     # directs standard output and standard error to file
+<&-      # closes the standard input
+>&-      # closes the standard output
+n>&-     # closes the ouput from file descriptor n
+n<&-     # closes the input from file descripor n
+
+|tee <file># output command to both terminal and a file (-a to append to file)
+
+
+## PROCESS HANDLING
+
+
+## To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
+## This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
+## Of course, to interrupt a job, type CTRL+C.
+
+myCommand &  # runs job in the background and prompts back the shell
+
+jobs         # lists all jobs (use with -l to see associated PID)
+
+fg           # brings a background job into the foreground
+fg %+        # brings most recently invoked background job
+fg %-      # brings second most recently invoked background job
+fg %N        # brings job number N
+fg %string   # brings job whose command begins with string
+fg %?string  # brings job whose command contains string
+
+kill -l               # returns a list of all signals on the system, by name and number
+kill PID              # terminates process with specified PID
+kill -s SIGKILL 4500  # sends a signal to force or terminate the process
+kill -15 913          # Ending PID 913 process with signal 15 (TERM)
+kill %1               # Where %1 is the number of job as read from 'jobs' command.
+
+ps           # prints a line of information about the current running login shell and any processes running under it
+ps -a        # selects all processes with a tty except session leaders
+
+trap cmd sig1 sig2  # executes a command when a signal is received by the script
+trap "" sig1 sig2   # ignores that signals
+trap - sig1 sig2    # resets the action taken when the signal is received to the default
+
+disown <PID|JID>    # removes the process from the list of jobs
+
+wait                # waits until all background jobs have finished
+sleep <number>      # wait # of seconds before continuing
+
+pv                  # display progress bar for data handling commands. often used with pipe like |pv
+yes                 # give yes response everytime an input is requested from script/process
+
+
+## TIPS & TRICKS
+
+
+## set an alias
+cd; nano .bash_profile
+> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
+
+## to quickly go to a specific directory
+cd; nano .bashrc
+> shopt -s cdable_vars
+> export websites="/Users/mac/Documents/websites"
+
+source .bashrc
+cd $websites
+
+
+## DEBUGGING SHELL PROGRAMS
+
+
+bash -n scriptname  # don't run commands; check for syntax errors only
+set -o noexec       # alternative (set option in script)
+
+bash -v scriptname  # echo commands before running them
+set -o verbose      # alternative (set option in script)
+
+bash -x scriptname  # echo commands after command-line processing
+set -o xtrace       # alternative (set option in script)
+
+trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
+
+function errtrap {
+  es=$?
+  echo "ERROR line $1: Command exited with status $es."
+}
+
+trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exits with non-zero status
+
+function dbgtrap {
+  echo "badvar is $badvar"
+}
+
+trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
+## ...section of code in which the problem occurs...
+trap - DEBUG  # turn off the DEBUG trap
+
+function returntrap {
+  echo "A return occurred"
+}
+
+trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
+
+
+## COLORS AND BACKGROUNDS
+
+## note: \e or \x1B also work instead of \033
+## Reset
+Color_Off='\033[0m' # Text Reset
+
+## Regular Colors
+Black='\033[0;30m'  # Black
+Red='\033[0;31m'    # Red
+Green='\033[0;32m'  # Green
+Yellow='\033[0;33m' # Yellow
+Blue='\033[0;34m'   # Blue
+Purple='\033[0;35m' # Purple
+Cyan='\033[0;36m'   # Cyan
+White='\033[0;97m'  # White
+
+## Additional colors
+LGrey='\033[0;37m'  # Ligth Gray
+DGrey='\033[0;90m'  # Dark Gray
+LRed='\033[0;91m'   # Ligth Red
+LGreen='\033[0;92m' # Ligth Green
+LYellow='\033[0;93m'# Ligth Yellow
+LBlue='\033[0;94m'  # Ligth Blue
+LPurple='\033[0;95m'# Light Purple
+LCyan='\033[0;96m'  # Ligth Cyan
+
+## Bold
+BBlack='\033[1;30m' # Black
+BRed='\033[1;31m'   # Red
+BGreen='\033[1;32m' # Green
+BYellow='\033[1;33m'# Yellow
+BBlue='\033[1;34m'  # Blue
+BPurple='\033[1;35m'# Purple
+BCyan='\033[1;36m'  # Cyan
+BWhite='\033[1;37m' # White
+
+## Underline
+UBlack='\033[4;30m' # Black
+URed='\033[4;31m'   # Red
+UGreen='\033[4;32m' # Green
+UYellow='\033[4;33m'# Yellow
+UBlue='\033[4;34m'  # Blue
+UPurple='\033[4;35m'# Purple
+UCyan='\033[4;36m'  # Cyan
+UWhite='\033[4;37m' # White
+
+## Background
+On_Black='\033[40m' # Black
+On_Red='\033[41m'   # Red
+On_Green='\033[42m' # Green
+On_Yellow='\033[43m'# Yellow
+On_Blue='\033[44m'  # Blue
+On_Purple='\033[45m'# Purple
+On_Cyan='\033[46m'  # Cyan
+On_White='\033[47m' # White
+
+## Example of usage
+echo -e "${Green}This is GREEN text${Color_Off} and normal text"
+echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
+## option -e is mandatory, it enable interpretation of backslash escapes
+printf "${Red} This is red \n"
+
+```
+
+</details>
+
+>
+
+#### Find
+
+## To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
 
 find . -iname "\*.jpg"
 
-# To find directories
+## To find directories
 
 find . -type d
 
-# To find files
+## To find files
 
 find . -type f
 
-# To find files by octal permission
+## To find files by octal permission
 
 find . -type f -perm 777
 
-# To find files with setuid bit set
+## To find files with setuid bit set
 
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
-# To find files with extension '.txt' and remove them
+## To find files with extension '.txt' and remove them
 
 find ./path/ -name '\*.txt' -exec rm '{}' \;
 
-# To find files with extension '.txt' and look for a string into them
+## To find files with extension '.txt' and look for a string into them
 
 find ./path/ -name '\*.txt' | xargs grep 'string'
 
-# To find files with size bigger than 5 Mebibyte and sort them by size
+## To find files with size bigger than 5 Mebibyte and sort them by size
 
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 
-# To find files bigger than 2 Megabyte and list them
+## To find files bigger than 2 Megabyte and list them
 
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 
-# To find files modified more than 7 days ago and list file information
+## To find files modified more than 7 days ago and list file information
 
 find . -type f -mtime +7d -ls
 
-# To find symlinks owned by a user and list file information
+## To find symlinks owned by a user and list file information
 
 find . -type l -user <username-or-userid> -ls
 
-# To search for and delete empty directories
+## To search for and delete empty directories
 
 find . -type d -empty -exec rmdir {} \;
 
-# To search for directories named build at a max depth of 2 directories
+## To search for directories named build at a max depth of 2 directories
 
 find . -maxdepth 2 -name build -type d
 
-# To search all files who are not in .git directory
+## To search all files who are not in .git directory
 
 find . ! -iwholename '_.git_' -type f
 
-# To find all files that have the same node (hard link) as MY_FILE_HERE
+## To find all files that have the same node (hard link) as MY_FILE_HERE
 
-find . -type f -samefile MY_FILE_HERE 2> /dev/null
+find . -type f -samefile MY_FILE_HERE 2>/dev/null
 
-# To find all files in the current directory and modify their permissions
+## To find all files in the current directory and modify their permissions
 
 find . -type f -exec chmod 644 {} \;
 
-# 1. Remove spaces from file and folder names and then remove numbers from files and folder names
+---
 
-## Description: need to : `sudo apt install rename`
+## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
+
+### Description: need to : `sudo apt install rename`
 
 > Notes: Issue when renaming file without numbers collides with existing file name...
 
-## # code
+###### code
 
 ```bash
 find . -name "* *" -type d | rename 's/ /_/g'
@@ -552,11 +1107,11 @@ for i in *.html; do mv "$i" "${i%-*}.html"; done
 for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 
 ---
-## Description: combine the contents of every file in the contaning directory.
+### Description: combine the contents of every file in the contaning directory.
 
-> Notes: this includes the contents of the file it's self...
+>Notes: this includes the contents of the file it's self...
 
-## # code:
+###### code:
 
 ```js
 //APPEND-DIR.js
@@ -564,7 +1119,7 @@ const fs = require('fs');
 let cat = require('child_process')
   .execSync('cat *')
   .toString('UTF-8');
-fs.writeFile('output.md', cat, err =>  {
+fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
@@ -572,13 +1127,13 @@ fs.writeFile('output.md', cat, err =>  {
 
 ---
 
-# 2. Download Website Using Wget
+## 2. Download Website Using Wget
 
-## Description
+### Description
 
 > Notes: ==> sudo apt install wget
 
-## ## code
+###### code
 
 ```bash
 
@@ -588,13 +1143,13 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ---
 
-# 3. Clean Out Messy Git Repo
+## 3. Clean Out Messy Git Repo
 
-## Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
+### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
 > Notes: To clear up clutter in repositories that only get used on your local machine.
 
-## ## code
+###### code
 
 ```bash
 
@@ -608,15 +1163,15 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ---
 
-# 4. clone all of a user's git repositories
+## 4. clone all of a user's git repositories
 
-## Description: clone all of a user or organization's git repositories
+### Description: clone all of a user or organization's git repositories
 
 > Notes:
 
-## ## code
+###### code
 
-# Generalized
+## Generalized
 
 ```bash
 
@@ -627,7 +1182,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   xargs -L1 git clone
 ```
 
-# Clone all Git User
+## Clone all Git User
 
 ```bash
 CNTX={users}; NAME={bgoonz}; PAGE=1
@@ -638,7 +1193,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ```
 
-# Clone all Git Organization
+## Clone all Git Organization
 
 ```bash
 
@@ -652,11 +1207,11 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ---
 
-# 5. Git Workflow
+## 5. Git Workflow
 
-## Description
+### Description
 
-## ## code
+###### code
 
 ```bash
 git pull
@@ -697,13 +1252,13 @@ git push -u origin preview
 
 ---
 
-# 6. Recursive Unzip In Place
+## 6. Recursive Unzip In Place
 
-## Description: recursively unzips folders and then deletes the zip file by the same name
+### Description: recursively unzips folders and then deletes the zip file by the same name
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -715,13 +1270,13 @@ find . -name "*.zip" -type f -print -delete
 
 ---
 
-# 7. git pull keeping local changes
+## 7. git pull keeping local changes
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -733,13 +1288,13 @@ git stash pop
 
 ---
 
-# 8. Prettier Code Formatter
+## 8. Prettier Code Formatter
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -751,13 +1306,13 @@ prettier --write .
 
 ---
 
-# 9. Pandoc
+## 9. Pandoc
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -771,13 +1326,13 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ---
 
-# 10. Gitpod Installs
+## 10. Gitpod Installs
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 sudo apt install tree
@@ -800,13 +1355,13 @@ npm-recursive-install
 
 ---
 
-# 11. Repo Utils Package
+## 11. Repo Utils Package
 
-## Description: my standard repo utis package
+### Description: my standard repo utis package
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 npm i @bgoonz11/repoutils
@@ -815,40 +1370,40 @@ npm i @bgoonz11/repoutils
 
 ---
 
-# 12. Unix Tree Package Usage
+## 12. Unix Tree Package Usage
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
 
-tree -f  -I  'node_modules' > TREE.md
+tree -f  -I  'node_modules' >TREE.md
 
-tree -f -L 2  > README.md
+tree -f -L 2  >README.md
 
-tree -f  -I  'node_modules' > listing-path.md
+tree -f  -I  'node_modules' >listing-path.md
 
-tree -f  -I  'node_modules' -d > TREE.md
+tree -f  -I  'node_modules' -d >TREE.md
 
-tree -f > README.md
+tree -f >README.md
 
 ```
 
 ---
 
-# 13. Find & Replace string in file & folder names recursively
+## 13. Find & Replace string in file & folder names recursively
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -870,13 +1425,13 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ---
 
-# 14. Remove double extensions
+## 14. Remove double extensions
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 #!/bin/bash
@@ -912,13 +1467,13 @@ done
 
 ---
 
-# 15. Truncate folder names down to 12 characters
+## 15. Truncate folder names down to 12 characters
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -928,13 +1483,13 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ---
 
-# 16.Appendir.js
+## 16.Appendir.js
 
-## Description: combine the contents of every file in the contaning directory
+### Description: combine the contents of every file in the contaning directory
 
 > Notes: this includes the contents of the file it's self...
 
-## ## code
+###### code
 
 ```js
 //APPEND-DIR.js
@@ -947,13 +1502,13 @@ fs.writeFile('output.md', cat, (err) => {
 
 ---
 
-# 17. Replace space in filename with underscore
+## 17. Replace space in filename with underscore
 
-## Description: followed by replace `'#' with '_'` in directory name
+### Description: followed by replace `'#' with '_'` in directory name
 
 > Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 
-## ## code
+###### code
 
 ```bash
 find . -name "* *" -type f | rename 's/_//g'
@@ -964,13 +1519,13 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ---
 
-# 18. Filter & delete files by name and extension
+## 18. Filter & delete files by name and extension
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
@@ -991,9 +1546,9 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 ---
 
-# 19. Remove lines containing string
+## 19. Remove lines containing string
 
-## Description
+### Description
 
 > Notes: Remove lines not containing `'.js'`
 
@@ -1003,7 +1558,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ```
 
-## ## code
+###### code
 
 ```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -1018,9 +1573,9 @@ sudo sed -i '/author/d' ./*
 
 ---
 
-# 20. Remove duplicate lines from a text file
+## 20. Remove duplicate lines from a text file
 
-## Description
+### Description
 
 > Notes:
 > //...syntax of uniq...//
@@ -1029,7 +1584,7 @@ sudo sed -i '/author/d' ./*
 
 Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
-## ## code
+###### code
 
 ```bash
 sudo apt install uniq
@@ -1039,13 +1594,13 @@ uniq -u input.txt output.txt
 
 ---
 
-# 21. Remove lines containing string
+## 21. Remove lines containing string
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
@@ -1077,13 +1632,13 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ---
 
-# 22. Zip directory excluding .git and node_modules all the way down (Linux)
+## 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1093,27 +1648,27 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-# usage:
-# - zipdir thedir
-# - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
+## usage:
+## - zipdir thedir
+## - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add 'zip' command this way:
-# https://stackoverflow.com/a/55749636/1482990
+## if in windows/git-bash, add 'zip' command this way:
+## https://stackoverflow.com/a/55749636/1482990
 
 ```
 
 ---
 
-# 23. Delete files containing a certain string
+## 23. Delete files containing a certain string
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
-find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' >  doit.sh
+find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
 
@@ -1121,20 +1676,20 @@ source doit.sh
 
 ---
 
-# 24
+## 24
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
 #!/bin/sh
 
-# find ./ | grep -i "\.*$" > files
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$"> files
+## find ./ | grep -i "\.*$" >files
+find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
 
 out=""
@@ -1144,22 +1699,22 @@ out="basename $out.html"
 html="sitemap.html"
 cmd() {
 
-  echo '  <!DOCTYPE html> '
-  echo '<html> '
-  echo '<head> '
+  echo '  <!DOCTYPE html>'
+  echo '<html>'
+  echo '<head>'
 
-  echo '  <meta http-equiv="Content-Type" content="text/html"> '
+  echo '  <meta http-equiv="Content-Type" content="text/html">'
 
-  echo '  <meta name="Author" content="Bryan Guner"> '
-  echo '<link rel="stylesheet" href="./assets/prism.css"> '
-  echo ' <link rel="stylesheet" href="./assets/style.css"> '
-  echo ' <script async defer src="./assets/prism.js"> </script> '
+  echo '  <meta name="Author" content="Bryan Guner">'
+  echo '<link rel="stylesheet" href="./assets/prism.css">'
+  echo ' <link rel="stylesheet" href="./assets/style.css">'
+  echo ' <script async defer src="./assets/prism.js"></script>'
 
-  echo "  <title>  directory </title> "
-    echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css"> '
-  echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> '
+  echo "  <title> directory </title>"
+    echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
+  echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css">'
   echo ""
-  echo '<style> '
+  echo '<style>'
 
 echo '    a {'
 echo '      color: black;'
@@ -1193,10 +1748,10 @@ echo '      -moz-border-radius: 10px;'
 echo '      -ms-border-radius: 10px;'
 echo '      -o-border-radius: 10px;'
 echo '    }'
-echo '  </style> '
-  echo '</head> '
+echo '  </style>'
+  echo '</head>'
 
-  echo '<body> '
+  echo '<body>'
 
   echo ""
 
@@ -1206,33 +1761,33 @@ echo '  </style> '
 
   echo ""
 
-  echo "<ul> "
+  echo "<ul>"
 
-  awk '{print "<li> <a href=\""$1"\"> ",$1,"&nbsp;</a> </li> "}' $listing
+  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
 
-  # awk '{print "<li> "};
+  # awk '{print "<li>"};
 
-  #  {print " <a href=\""$1"\"> ",$1,"</a> </li> &nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
-  echo "</ul> "
+  echo "</ul>"
 
-  echo "</body> "
+  echo "</body>"
 
-  echo "</html> "
+  echo "</html>"
 
 }
 
-cmd $listing --sort=extension > > $html
+cmd $listing --sort=extension >>$html
 
 ```
 
 ---
 
-# 25. Index of Iframes
+## 25. Index of Iframes
 
-## Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
+### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
 
 > Notes: Useful Follow up Code:
 
@@ -1240,14 +1795,14 @@ cmd $listing --sort=extension > > $html
 
 ```
 
-## ## code
+###### code
 
 ```bash
 
 #!/bin/sh
 
-# find ./ | grep -i "\.*$" > files
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$"> files
+## find ./ | grep -i "\.*$" >files
+find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
 
 out=""
@@ -1257,21 +1812,21 @@ out="basename $out.html"
 html="index.html"
 cmd() {
 
-  echo '  <!DOCTYPE html> '
-  echo '<html> '
-  echo '<head> '
+  echo '  <!DOCTYPE html>'
+  echo '<html>'
+  echo '<head>'
 
-  echo '  <meta http-equiv="Content-Type" content="text/html"> '
+  echo '  <meta http-equiv="Content-Type" content="text/html">'
 
-  echo '  <meta name="Author" content="Bryan Guner"> '
-  echo '<link rel="stylesheet" href="./assets/prism.css"> '
-  echo ' <link rel="stylesheet" href="./assets/style.css"> '
-  echo ' <script async defer src="./assets/prism.js"> </script> '
+  echo '  <meta name="Author" content="Bryan Guner">'
+  echo '<link rel="stylesheet" href="./assets/prism.css">'
+  echo ' <link rel="stylesheet" href="./assets/style.css">'
+  echo ' <script async defer src="./assets/prism.js"></script>'
 
-  echo "  <title>  directory </title> "
+  echo "  <title> directory </title>"
 
   echo ""
-  echo '<style> '
+  echo '<style>'
 
 echo '    a {'
 echo '      color: black;'
@@ -1305,10 +1860,10 @@ echo '      -moz-border-radius: 10px;'
 echo '      -ms-border-radius: 10px;'
 echo '      -o-border-radius: 10px;'
 echo '    }'
-echo '  </style> '
-  echo '</head> '
+echo '  </style>'
+  echo '</head>'
 
-  echo '<body> '
+  echo '<body>'
 
   echo ""
 
@@ -1318,37 +1873,37 @@ echo '  </style> '
 
   echo ""
 
-  echo "<ul> "
+  echo "<ul>"
 
-  awk '{print "<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
 
-  # awk '{print "<li> "};
+  # awk '{print "<li>"};
 
-  #  {print " <a href=\""$1"\"> ",$1,"</a> </li> &nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
-  echo "</ul> "
+  echo "</ul>"
 
-  echo "</body> "
+  echo "</body>"
 
-  echo "</html> "
+  echo "</html>"
 
 }
 
-cmd $listing --sort=extension > > $html
+cmd $listing --sort=extension >>$html
 
 ```
 
 ---
 
-# 26. Filter Corrupted Git Repo For Troublesome File
+## 26. Filter Corrupted Git Repo For Troublesome File
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1358,9 +1913,9 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_in
 
 ---
 
-# 27. OVERWRITE LOCAL CHANGES
+## 27. OVERWRITE LOCAL CHANGES
 
-## Description
+### Description
 
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
@@ -1368,24 +1923,24 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 > Notes:
 > First, run a fetch to update all origin/<branch> refs to latest:
 
-## ## code
+###### code
 
 ```bash
 
 git fetch --all
-# Backup your current branch:
+## Backup your current branch:
 
 git branch backup-master
-# Then, you have two options:
+## Then, you have two options:
 
 git reset --hard origin/master
-# OR If you are on some other branch:
+## OR If you are on some other branch:
 
 git reset --hard origin/<branch_name>
-# Explanation:
-# git fetch downloads the latest from remote without trying to merge or rebase anything.
+## Explanation:
+## git fetch downloads the latest from remote without trying to merge or rebase anything.
 
-# Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
+## Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
 git fetch --all
 git reset --hard origin/master
 
@@ -1393,9 +1948,9 @@ git reset --hard origin/master
 
 ---
 
-# 28. Remove Submodules
+## 28. Remove Submodules
 
-## Description: To remove a submodule you need to
+### Description: To remove a submodule you need to
 
 > Notes:
 
@@ -1407,7 +1962,7 @@ git reset --hard origin/master
 > Commit git commit -m "Removed submodule "
 > Delete the now untracked submodule files rm -rf path_to_submodule
 
-## ## code
+###### code
 
 ```bash
 git submodule deinit
@@ -1415,13 +1970,13 @@ git submodule deinit
 
 ---
 
-# 29. GET GISTS
+## 29. GET GISTS
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 sudo apt install wget
@@ -1438,13 +1993,13 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ---
 
-# 30. Remove Remote OriginL
+## 30. Remove Remote OriginL
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1454,13 +2009,13 @@ git remote remove origin
 
 ---
 
-# 31. just clone .git folder
+## 31. just clone .git folder
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1470,13 +2025,13 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ---
 
-# 32. Undo recent pull request
+## 32. Undo recent pull request
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1486,16 +2041,16 @@ git reset --hard master@{"10 minutes ago"}
 
 ---
 
-# 33. Lebab
+## 33. Lebab
 
-## Description: ES5 --> ES6
+### Description: ES5 --> ES6
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
-# Safe:
+## Safe:
 
  lebab --replace ./ --transform arrow
  lebab --replace ./ --transform arrow-return
@@ -1507,7 +2062,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-# ALL:
+## ALL:
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1543,13 +2098,13 @@ lebab --replace ./ --transform includes
 
 ---
 
-# 34. Troubleshoot Ubuntu Input/Output Error
+## 34. Troubleshoot Ubuntu Input/Output Error
 
-## Description: Open Powershell as Administrator
+### Description: Open Powershell as Administrator
 
 > Notes:
 
-## ## code
+###### code
 
 ```ps1
 
@@ -1561,30 +2116,30 @@ lebab --replace ./ --transform includes
 
 ---
 
-# 35. Export Medium as Markdown
+## 35. Export Medium as Markdown
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 npm i mediumexporter -g
 
-mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 > ds.md
+mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
 
 ```
 
 ---
 
-# 36. Delete files in violation of a given size range (100MB for git)
+## 36. Delete files in violation of a given size range (100MB for git)
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1596,13 +2151,13 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ---
 
-# 37. download all links of given file type
+## 37. download all links of given file type
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1612,13 +2167,13 @@ wget -r -A.pdf https://overapi.com/git
 
 ---
 
-# 38. Kill all node processes
+## 38. Kill all node processes
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 killall -s KILL node
@@ -1627,14 +2182,14 @@ killall -s KILL node
 
 ---
 
-# 39. Remove string from file names recursively
+## 39. Remove string from file names recursively
 
-## Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
+### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
 
-## ## code
+###### code
 
 ```bash
-find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
+find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
 
@@ -1643,7 +2198,7 @@ find . -type f -exec rename 's/-master//g' {} +
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
 ```bash
-find <mydir>  -type d -exec sed -i 's/<string1> /<string2> /g' {} +
+find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
 
@@ -1651,13 +2206,13 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ---
 
-# 40. Remove spaces from file and folder names recursively
+## 40. Remove spaces from file and folder names recursively
 
-## Description: replaces spaces in file and folder names with an `_` underscore
+### Description: replaces spaces in file and folder names with an `_` underscore
 
 > Notes: need to run `sudo apt install rename` to use this command
 
-## ## code
+###### code
 
 ```bash
 
@@ -1667,13 +2222,13 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ---
 
-# 41. Zip Each subdirectories in a given directory into their own zip file
+## 41. Zip Each subdirectories in a given directory into their own zip file
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 for i in */; do zip -r "${i%/}.zip" "$i"; done
@@ -1682,15 +2237,13 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ---
 
-# 90
+## 91. Unzip PowerShell
 
-# 91. Unzip PowerShell
-
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```ps1
 
@@ -1717,13 +2270,13 @@ foreach ($ZipFile in $ZipFiles) {
 
 ---
 
-# 92. return to bash from zsh
+## 92. return to bash from zsh
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
  sudo apt --purge remove zsh
@@ -1732,13 +2285,13 @@ foreach ($ZipFile in $ZipFiles) {
 
 ---
 
-# 93. Symbolic Link
+## 93. Symbolic Link
 
-## Description: to working directory
+### Description: to working directory
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1750,13 +2303,13 @@ ln -s "$(pwd)" ~/Downloads
 
 ---
 
-# 94. auto generate readme
+## 94. auto generate readme
 
-## Description: rename existing readme to blueprint.md
+### Description: rename existing readme to blueprint.md
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1766,13 +2319,13 @@ npx @appnest/readme generate
 
 ---
 
-# 95. Log into postgres
+## 95. Log into postgres
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 sudo -u postgres psql
@@ -1780,7 +2333,7 @@ sudo -u postgres psql
 
 ---
 
-## Technologies Used
+## 96. URL To Subscribe To YouTube Channel
 
 | URL                  | <https://bgoonz-blog.netlify.app>                        |
 | -------------------- | -------------------------------------------------------- |
@@ -1807,7 +2360,7 @@ sudo -u postgres psql
 
 > Notes:
 
-## ## code
+###### code
 
 ```txt
 
@@ -1817,9 +2370,9 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 ---
 
-# 97. Embed Repl.it In Medium Post
+## 97. Embed Repl.it In Medium Post
 
-## ## code
+###### code
 
 ```txt
 
@@ -1835,13 +2388,13 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ---
 
-# 98
+## 98
 
-## Description
+### Description
 
 > Notes:
 
-## ## code
+###### code
 
 ```bash
 
@@ -1850,6 +2403,8 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
+
+---
 
 </details>
 
@@ -2743,7 +3298,7 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 /|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
 ```
 
-## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
+ [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
 
 -   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
 -   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
@@ -2757,22 +3312,23 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 -   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
-## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
+ [Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
 
 -   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 -   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
 -   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 -   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
+ [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
+ [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
 
 The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
 
 ---
 
-# Layout Components | Gatsby
+#### Layout Components | Gatsby
 
-> ## Excerpt
+## Excerpt
 >
 > In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
 
@@ -2780,15 +3336,15 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 
 In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)Gatsby's approach to layouts
+ [Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
 
 Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)What are layout components?
+ [What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
 
 Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)How to create layout components
+ [How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
 
 It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
 
@@ -2798,7 +3354,7 @@ Here is an example of a very basic layout component at `src/components/layout.js
 import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
 ```
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
+ [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
 
 If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
 
@@ -2808,7 +3364,7 @@ import React from "react"import Layout from "../components/layout"export default
 
 Repeat for every page and template that needs this layout.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)How to prevent layout components from unmounting
+ [How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
 
 As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
 
@@ -2834,15 +3390,15 @@ Here are the steps Gatsby follows for making this happen.
 3. Add a Markdown file
 4. Create a Collection Route component for the Markdown files
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
 
 Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
 
 `npm install gatsby-source-filesystem`
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
+ [Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
 
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
 
@@ -2852,15 +3408,15 @@ module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [ 
 
 Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
 
 You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
 
 `npm install gatsby-transformer-remark`
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
 
 Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
 
@@ -2868,11 +3424,11 @@ Add this to `gatsby-config.js` after the previously added `gatsby-source-filesys
 module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
 ```
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)Add a Markdown file
+ [Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
 
 Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)Frontmatter for metadata in Markdown files
+ [Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
 
 When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
 
@@ -2884,7 +3440,7 @@ src/markdown-pages/post-1.md
 
 What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
+ [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
 
 Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
 
@@ -2908,7 +3464,7 @@ This should get you started on some basic Markdown functionality in your Gatsby 
 
 For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
 
-## [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)Other tutorials
+ [Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
 
 </details>
 
