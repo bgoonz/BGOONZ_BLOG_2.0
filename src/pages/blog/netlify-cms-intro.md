@@ -4,7 +4,7 @@ date: '2021-05-23'
 image: images/dtw-slideshow.gif
 seo:
     title: Platform Docs
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    description: 'You can adapt Netlify CMS to a wide variety of projects'
     extra:
         - name: 'og:type'
           value: article
@@ -13,7 +13,7 @@ seo:
           value: Platform Docs
           keyName: property
         - name: 'og:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+          value: 'Netlify CMS content managment, This tutorial guides you through the steps for adding Netlify CMS to a site'
           keyName: property
         - name: 'og:image'
           value: images/dtw-slideshow.gif
@@ -24,7 +24,7 @@ seo:
         - name: 'twitter:title'
           value: Platform Docs
         - name: 'twitter:description'
-          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+          value: 'Netlify CMS content managment, This tutorial guides you through the steps for adding Netlify CMS to a site'
         - name: 'twitter:image'
           value: images/dtw-slideshow.gif
           relativeUrl: true
@@ -40,7 +40,7 @@ You can adapt Netlify CMS to a wide variety of projects. It works with any conte
 
 This tutorial guides you through the steps for adding Netlify CMS to a site that's built with a common [static site generator](https://www.staticgen.com/), like Jekyll, Hugo, Hexo, or Gatsby. Alternatively, you can [start from a template](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/start-with-a-template) or dive right into [configuration options](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options).
 
-## [](#app-file-structure)App File Structure
+## [App File Structure](#app-file-structure)
 
 A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here's the static file location for a few of the most popular static site generators:
 
@@ -86,7 +86,7 @@ In the code above the `script` is loaded from the `unpkg` CDN. Should there be a
 
 The second file, `admin/config.yml`, is the heart of your Netlify CMS installation, and a bit more complex. The [Configuration](#configuration) section covers the details.
 
-### [](#installing-with-npm)Installing with npm
+### [Installing with npm](#installing-with-npm)
 
 You can also use Netlify CMS as an npm module. Wherever you import Netlify CMS, it automatically runs, taking over the current page. Make sure the script that imports it only runs on your CMS page. First install the package and save it to your project:
 
@@ -100,11 +100,11 @@ Then import it (assuming your project has tooling for imports):
 
     CMS.registerPreviewTemplate('my-template', MyTemplate)
 
-## [](#configuration)Configuration
+## [Configuration](#configuration)
 
 Configuration is different for every site, so we'll break it down into parts. Add all the code snippets in this section to your `admin/config.yml` file.
 
-### [](#backend)Backend
+### [Backend](#backend)
 
 We're using [Netlify](https://www.netlify.com/) for our hosting and authentication in this tutorial, so backend configuration is fairly straightforward.
 
@@ -118,7 +118,7 @@ _(For Bitbucket repositories, use the [Bitbucket backend](chrome-extension://cje
 
 The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We'll get to the details of that in the [Authentication section](#authentication) below.) If you leave out the `branch` declaration, it defaults to `master`.
 
-### [](#editorial-workflow)Editorial Workflow
+### [Editorial Workflow](#editorial-workflow)
 
 **Note:** Editorial workflow works with GitHub repositories, and support for GitLab and Bitbucket is [in beta](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/beta-features/#gitlab-and-bitbucket-editorial-workflow-support).
 
@@ -126,7 +126,7 @@ By default, saving a post in the CMS interface pushes a commit directly to the p
 
     publish_mode: editorial_workflow
 
-### [](#media-and-public-folders)Media and Public Folders
+### [Media and Public Folders](#media-and-public-folders)
 
 Netlify CMS allows users to upload images directly within the editor. For this to work, the CMS needs to know where to save them. If you already have an `images` folder in your project, you could use its path, possibly creating an `uploads` sub-folder, for example:
 
@@ -143,7 +143,7 @@ The configuration above adds a new setting, `public_folder`. While `media_folder
 
 _If `public_folder` is not set, Netlify CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included._
 
-### [](#collections)Collections
+### [Collections](#collections)
 
 Collections define the structure for the different content types on your static site. Since every site is different, the `collections` settings differ greatly from one site to the next.
 
@@ -232,10 +232,10 @@ As described above, the `widget` property specifies a built-in or custom UI widg
 
 Based on this example, you can go through the post types in your site and add the appropriate settings to your Netlify CMS `config.yml` file. Each post type should be listed as a separate node under the `collections` field. See the [Collections reference doc](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/configuration-options/#collections) for more configuration options.
 
-### [](#filter)Filter
+### [Filter](#filter)
 
 The entries for any collection can be filtered based on the value of a single field. The example collection below only shows post entries with the value `en` in the `language` field.
-
+```yml
     collections:
       - name: "posts"
         label: "Post"
@@ -245,16 +245,16 @@ The entries for any collection can be filtered based on the value of a single fi
           value: en
         fields:
           - {label: "Language", name: "language"}
-
-## [](#authentication)Authentication
+```
+## [Authentication](#authentication)
 
 Now that you have your Netlify CMS files in place and configured, all that's left is to enable authentication. We're using the [Netlify](https://www.netlify.com/) platform here because it's one of the quickest ways to get started, but you can learn about other authentication options in the [Backends](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/docs/backends-overview) doc.
 
-### [](#setup-on-netlify)Setup on Netlify
+### [Setup on Netlify](#setup-on-netlify)
 
 Netlify offers a built-in authentication service called Identity. In order to use it, connect your site repo with Netlify. Netlify has published a general [Step-by-Step Guide](https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/) for this, along with detailed guides for many popular static site generators, including [Jekyll](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/), [Hugo](https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-victor-hugo-on-netlify/), [Hexo](https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-hexo-on-netlify/), [Middleman](https://www.netlify.com/blog/2015/10/01/a-step-by-step-guide-middleman-on-netlify/), [Gatsby](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/), and more.
 
-### [](#enable-identity-and-git-gateway)Enable Identity and Git Gateway
+### [Enable Identity and Git Gateway](#enable-identity-and-git-gateway)
 
 Netlify's Identity and Git Gateway services allow you to manage CMS admin users for your site without requiring them to have an account with your Git host or commit access on your repo. From your site dashboard on Netlify:
 
@@ -263,7 +263,7 @@ Netlify's Identity and Git Gateway services allow you to manage CMS admin users 
 3.  If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under **External providers**.
 4.  Scroll down to **Services > ay**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
 
-### [](#add-the-netlify-identity-widget)Add the Netlify Identity Widget
+### [Add the Netlify Identity Widget](#add-the-netlify-identity-widget)
 
 With the backend set to handle authentication, now you need a frontend interface to connect to it. The open source Netlify Identity Widget is a drop-in widget made for just this purpose. To include the widget in your site, add the following script tag in two places:
 
@@ -273,7 +273,7 @@ With the backend set to handle authentication, now you need a frontend interface
 Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site's main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a "partial" or "include" template. If you can find where the site stylesheet is linked, that's probably the right place. Alternatively, you can include the script in your site using Netlify's [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
 
 When a user logs in with the Netlify Identity widget, an access token directs to the site homepage. In order to complete the login and get back to the CMS, redirect the user back to the `/admin/` path. To do this, add the following script before the closing `body` tag of your site's main index page:
-
+```html
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -285,10 +285,10 @@ When a user logs in with the Netlify Identity widget, an access token directs to
         });
       }
     </script>
-
+```
 Note: This example script requires modern JavaScript and does not work on IE11. For legacy browser support, use function expressions (`function () {}`) in place of the arrow functions (`() => {}`), or use a transpiler such as [Babel](https://babeljs.io/).
 
-## [](#accessing-the-cms)Accessing the CMS
+## [Accessing the CMS](#accessing-the-cms)
 
 Your site CMS is now fully configured and ready for login!
 
@@ -297,7 +297,3 @@ If you set your registration preference to "Invite only," invite yourself (and a
 If you left your site registration open, or for return visits after confirming an email invitation, access your site's CMS at `yoursite.com/admin/`.
 
 **Note:** No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
-
-Happy posting!
-
-[Source](https://www.netlifycms.org/docs/add-to-your-site/)
