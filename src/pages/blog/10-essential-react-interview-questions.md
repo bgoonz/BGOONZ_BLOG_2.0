@@ -9,15 +9,15 @@ thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.g
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/react.yaml
-  - src/data/categories/js.yaml
+    - src/data/categories/react.yaml
+    - src/data/categories/js.yaml
 tags:
-  - src/data/tags/react.yaml
-  - src/data/tags/javascript.yaml
+    - src/data/tags/react.yaml
+    - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
-  - src/pages/blog/react-semantics.md
-  - src/pages/blog/react-state.md
+    - src/pages/blog/react-semantics.md
+    - src/pages/blog/react-state.md
 cmseditable: true
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: Open API
+title: New Developers
 weight: 0
-excerpt: Open API
+excerpt: lorem-ipsum
 seo:
-    title: 'Open API'
-    description: 'Essentially the allure of these is the amount of time that is saved and the resulting efficiency in getting a project rolled out faster'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
@@ -41,7 +41,7 @@ Best of all, frontend frameworks resolve any issues with browser compatibility a
 
 Start learning for free!
 
-[![](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
+[![alt-text](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
 
 ## 3\. Popular frameworks
 

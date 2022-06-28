@@ -51,11 +51,11 @@ template: docs
 
     - put it in brackets to access the value of the variable, rather than just make the value that string
 
- ```js
+  ```js
 //
         let a = 'b';
         let obj = { a: 'letter_a', [a]: 'letter b' };
- ```
+  ```
 
 - Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
 - - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
@@ -79,7 +79,7 @@ template: docs
     - `...rest` syntax will store all additional arguments in an array
     - array will be empty if there are no additional arguments
 
- ```js
+  ```js
 //
         let myFunction = function (str, ...strs) {
             console.log('The first string is ' + str);
@@ -88,7 +88,7 @@ template: docs
                 console.log(str);
             });
         };
- ```
+  ```
 
 ###
 

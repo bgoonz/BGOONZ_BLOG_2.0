@@ -2,8 +2,8 @@
 title: The-package-lock.json-file
 weight: 0
 seo:
-    title: 'The-package-lock.json-file'
-    description: 'The-package-lock.json-file documentation'
+    title: ''
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -13,20 +13,15 @@ excerpt: >-
     packages
 ---
 
-
-
-
 The `node` command is the one we use to run our Node.js scripts:
 
 ```console
-
 node script.js
 ```
 
 If we omit the filename, we use it in REPL mode:
 
 ```console
-
 node
 ```
 
@@ -35,7 +30,6 @@ node
 If you try it now in your terminal, this is what happens:
 
 ```console
-
 ❯ node
 >
 ```
@@ -49,7 +43,6 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 Start simple and enter
 
 ```console
-
 > console.log('test')
 test
 undefined
@@ -109,8 +102,8 @@ and you press `enter`, the REPL will go to a new line that starts with 3 dots, i
 
 ```js
 //
- console.log(num)
- })
+... console.log(num)
+... })
 ```
 
 If you type `.break` at the end of a line, the multiline mode will stop and the statement will not be executed.

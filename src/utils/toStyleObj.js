@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from "lodash";
 
 export default function toStyleObj(styleAttr) {
     return styleAttr.split(';').reduce((accumulator, pair) => {

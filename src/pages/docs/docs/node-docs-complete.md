@@ -20,7 +20,6 @@ The `node` command is the one we use to run our Node.js scripts:
 
 ```console
 
-
 node script.js
 
 ```
@@ -28,7 +27,6 @@ node script.js
 If we omit the filename, we use it in REPL mode:
 
 ```console
-
 
 node
 
@@ -39,7 +37,6 @@ node
 If you try it now in your terminal, this is what happens:
 
 ```console
-
 
 ❯ node
 
@@ -56,7 +53,6 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 Start simple and enter
 
 ```console
-
 
 > console.log('test')
 
@@ -146,7 +142,6 @@ You can pass any number of arguments when invoking a Node.js application using
 
 ```console
 
-
 node app.js
 
 ```
@@ -157,7 +152,6 @@ For example:
 
 ```console
 
-
 node app.js joe
 
 ```
@@ -165,7 +159,6 @@ node app.js joe
 or
 
 ```console
-
 
 node app.js name=joe
 
@@ -203,7 +196,6 @@ If you have one argument without an index name, like this:
 
 ```console
 
-
 node app.js joe
 
 ```
@@ -221,14 +213,13 @@ In this case:
 
 ```console
 
-
 node app.js name=joe
 
 ```
 
 `args[0]` is `name=joe`, and you need to
 
-parse it. The best way to do so is by using the [`minimist`](images/https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
+parse it. The best way to do so is by using the [`minimist`](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
 
 ```js
 //
@@ -237,10 +228,9 @@ const args = require('minimist')(process.argv.slice(2));
 args['name']; //joe
 ```
 
-Install the required `minimist` package using `npm` (lesson about the package manager comes [later on](images/https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)).
+Install the required `minimist` package using `npm` (lesson about the package manager comes [later on](https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)).
 
 ```console
-
 
 npm install minimist
 
@@ -249,7 +239,6 @@ npm install minimist
 This time you need to use double dashes before each argument name:
 
 ```console
-
 
 node app.js --name=joe
 
@@ -261,7 +250,7 @@ description: 'How to print to the command line console using Node.js, from the b
 
 ## Basic output using the console module
 
-Node.js provides a [`console` module](images/https://nodejs.org/api/console.html) which provides tons of very useful ways to interact with the command line.
+Node.js provides a [`console` module](https://nodejs.org/api/console.html) which provides tons of very useful ways to interact with the command line.
 
 It is basically the same as the `console` object you find in the browser.
 
@@ -420,7 +409,6 @@ This will print the stack trace. This is what's printed if we try this in the No
 
 ```console
 
-
 Trace
 
     at function2 (repl:1:33)
@@ -476,7 +464,7 @@ It will not appear in the console, but it will appear in the error log.
 
 ## Color the output
 
-You can color the output of your text in the console by using [escape sequences](images/https://gist.github.com/iamnewton/8754917). An escape sequence is a set of characters that identifies a color.
+You can color the output of your text in the console by using [escape sequences](https://gist.github.com/iamnewton/8754917). An escape sequence is a set of characters that identifies a color.
 
 Example:
 
@@ -487,7 +475,7 @@ console.log('\x1b[33m%s\x1b[0m', 'hi!');
 
 You can try that in the Node.js REPL, and it will print `hi!` in yellow.
 
-However, this is the low-level way to do this. The simplest way to go about coloring the console output is by using a library. [Chalk](images/https://github.com/chalk/chalk) is such a library, and in addition to coloring it also helps with other styling facilities, like making text bold, italic or underlined.
+However, this is the low-level way to do this. The simplest way to go about coloring the console output is by using a library. [Chalk](https://github.com/chalk/chalk) is such a library, and in addition to coloring it also helps with other styling facilities, like making text bold, italic or underlined.
 
 You install it with `npm install chalk`, then you can use it:
 
@@ -504,7 +492,7 @@ Check the project link posted above for more usage examples.
 
 ## Create a progress bar
 
-[Progress](images/https://www.npmjs.com/package/progress) is an awesome package to create a progress bar in the console. Install it using `npm install progress`
+[Progress](https://www.npmjs.com/package/progress) is an awesome package to create a progress bar in the console. Install it using `npm install progress`
 
 This snippet creates a 10-step progress bar, and every 100ms one step is completed. When the bar completes we clear the interval:
 
@@ -529,7 +517,7 @@ description: 'How to make a Node.js CLI program interactive using the built-in r
 
 How to make a Node.js CLI program interactive?
 
-Node.js since version 7 provides the [`readline` module](images/https://nodejs.org/api/readline.html) to perform exactly this: get input from a readable stream such as the `process.stdin` stream, which during the execution of a Node.js program is the terminal input, one line at a time.
+Node.js since version 7 provides the [`readline` module](https://nodejs.org/api/readline.html) to perform exactly this: get input from a readable stream such as the `process.stdin` stream, which during the execution of a Node.js program is the terminal input, one line at a time.
 
 ```js
 //
@@ -556,9 +544,9 @@ In this callback function, we close the readline interface.
 
 If you need to require a password, it's best not to echo it back, but instead show a `*` symbol.
 
-The simplest way is to use the [`readline-sync` package](images/https://www.npmjs.com/package/readline-sync) which is very similar in terms of the API and handles this out of the box.
+The simplest way is to use the [`readline-sync` package](https://www.npmjs.com/package/readline-sync) which is very similar in terms of the API and handles this out of the box.
 
-A more complete and abstract solution is provided by the [Inquirer.js package](images/https://github.com/SBoudrias/Inquirer.js).
+A more complete and abstract solution is provided by the [Inquirer.js package](https://github.com/SBoudrias/Inquirer.js).
 
 You can install it using `npm install inquirer`, and then you can replicate the above code like this:
 
@@ -606,7 +594,7 @@ In this file, functionality must be exposed before it can be imported by other f
 
 Any other object or variable defined in the file by default is private and not exposed to the outer world.
 
-This is what the `module.exports` API offered by the [`module` system](images/https://nodejs.org/api/modules.html) allows us to do.
+This is what the `module.exports` API offered by the [`module` system](https://nodejs.org/api/modules.html) allows us to do.
 
 When you assign an object or a function as a new `exports` property, that is the thing that's being exposed, and as such, it can be imported in other parts of your app, or in other apps as well.
 
@@ -694,7 +682,7 @@ It started as a way to download and manage dependencies of Node.js packages, but
 
 There are many things that `npm` does.
 
-> [**Yarn**](images/https://yarnpkg.com/en/) and [**pnpm**](images/https://pnpm.js.org/) are alternatives to npm cli. You can check them out as well.
+> [**Yarn**](https://yarnpkg.com/en/) and [**pnpm**](https://pnpm.js.org/) are alternatives to npm cli. You can check them out as well.
 
 ## Downloads
 
@@ -705,7 +693,6 @@ There are many things that `npm` does.
 If a project has a `package.json` file, by running
 
 ```console
-
 
 npm install
 
@@ -718,7 +705,6 @@ it will install everything the project needs, in the `node_modules` folder, crea
 You can also install a specific package by running
 
 ```console
-
 
 npm install <package-name>
 
@@ -746,14 +732,13 @@ Shorthands of the flags can also be used:
 
 The difference between _devDependencies_ and _dependencies_ is that the former contains development tools, like a testing library, while the latter is bundled with the app in production.
 
-As for the _optionalDependencies_ the difference is that build failure of the dependency will not cause installation to fail. But it is your program's responsibility to handle the lack of the dependency. Read more about [optional dependencies](images/https://docs.npmjs.com/cli/v7/configuring-npm/package-json#optionaldependencies).
+As for the _optionalDependencies_ the difference is that build failure of the dependency will not cause installation to fail. But it is your program's responsibility to handle the lack of the dependency. Read more about [optional dependencies](https://docs.npmjs.com/cli/v7/configuring-npm/package-json#optionaldependencies).
 
 ### Updating packages
 
 Updating is also made easy, by running
 
 ```console
-
 
 npm update
 
@@ -764,7 +749,6 @@ npm update
 You can specify a single package to update as well:
 
 ```console
-
 
 npm update <package-name>
 
@@ -787,7 +771,6 @@ In all those cases, versioning helps a lot, and `npm` follows the semantic versi
 The package.json file supports a format for specifying command line tasks that can be run by using
 
 ```console
-
 
 npm run <task-name>
 
@@ -825,7 +808,6 @@ So instead of typing those long commands, which are easy to forget or mistype, y
 
 ```console
 
-
 $ npm run watch
 
 $ npm run dev
@@ -848,7 +830,6 @@ By default, when you type an `npm install` command, like:
 
 ```console
 
-
 npm install lodash
 
 ```
@@ -860,7 +841,6 @@ As this happens, `npm` also adds the `lodash` entry in the `dependencies` proper
 A global installation is performed using the `-g` flag:
 
 ```console
-
 
 npm install -g lodash
 
@@ -890,7 +870,6 @@ Say you install `lodash`, the popular JavaScript utility library, using
 
 ```console
 
-
 npm install lodash
 
 ```
@@ -908,7 +887,7 @@ What if your package is an executable?
 
 In this case, it will put the executable file under the `node_modules/.bin/` folder.
 
-One easy way to demonstrate this is [cowsay](images/https://www.npmjs.com/package/cowsay).
+One easy way to demonstrate this is [cowsay](https://www.npmjs.com/package/cowsay).
 
 The cowsay package provides a command line program that can be executed to make a cow say something (and other animals as well 🦊).
 
@@ -925,7 +904,6 @@ How do you execute those?
 You can of course type `./node_modules/.bin/cowsay` to run it, and it works, but `npx`, included in the recent versions of `npm` (since 5.2), is a much better option. You just run:
 
 ```console
-
 
 npx cowsay
 
@@ -1440,7 +1418,6 @@ When you install a package using npm or yarn:
 
 ```console
 
-
 npm install <PACKAGENAME>
 
 yarn add <PACKAGENAME>
@@ -1471,7 +1448,6 @@ They differ from `dependencies` because they are meant to be installed only on a
 When you install a package using npm or yarn:
 
 ```console
-
 
 npm install --save-dev <PACKAGENAME>
 
@@ -1538,9 +1514,9 @@ Example:
 
 ```
 
-This configuration means you want to support the last 2 major versions of all browsers with at least 1% of usage (from the [CanIUse.com](images/https://caniuse.com) stats), except IE8 and lower.
+This configuration means you want to support the last 2 major versions of all browsers with at least 1% of usage (from the [CanIUse.com](https://caniuse.com) stats), except IE8 and lower.
 
-([see more](images/https://www.npmjs.com/package/browserslist))
+([see more](https://www.npmjs.com/package/browserslist))
 
 ### Command-specific properties
 
@@ -1554,7 +1530,7 @@ You have seen in the description above version numbers like these: `~3.0.0` or `
 
 That symbol specifies which updates your package accepts, from that dependency.
 
-Given that using semver (semantic versioning) all versions have 3 digits, the first being the major release, the second the minor release and the third is the patch release, you have these "[Rules](images/https://nodejs.dev/learn/semantic-versioning-using-npm/)".
+Given that using semver (semantic versioning) all versions have 3 digits, the first being the major release, the second the minor release and the third is the patch release, you have these "[Rules](https://nodejs.dev/learn/semantic-versioning-using-npm/)".
 
 You can combine most of the versions in ranges, like this: `1.0.0 || >=1.1.0 <1.2.0`, to either use 1.0.0 or one release from 1.1.0 up, but lower than 1.2.0.
 
@@ -1787,19 +1763,19 @@ They are added in alphabetical order into the file, and each one has a `version`
 
 # Computer Networking & Socket Programming
 
-Socket programming is the development of programs for [Computer Networking](images/https://en.wikipedia.org/wiki/Computer_network). Networking applications are loosely based off of the top most layers of the conceptual 7-layer model called the [OSI Model](images/https://en.wikipedia.org/wiki/OSI_model). The layers most relevant to socket programmers is layer 4, the [Transport layer](images/https://en.wikipedia.org/wiki/Transport_layer), and layer 7, the [Application layer](images/https://en.wikipedia.org/wiki/Application_layer). Specific protocols are implemented at each layer, and are instrumental for the functionality of the internet.
+Socket programming is the development of programs for [Computer Networking](https://en.wikipedia.org/wiki/Computer_network). Networking applications are loosely based off of the top most layers of the conceptual 7-layer model called the [OSI Model](https://en.wikipedia.org/wiki/OSI_model). The layers most relevant to socket programmers is layer 4, the [Transport layer](https://en.wikipedia.org/wiki/Transport_layer), and layer 7, the [Application layer](https://en.wikipedia.org/wiki/Application_layer). Specific protocols are implemented at each layer, and are instrumental for the functionality of the internet.
 
-Node.js exposes extensive API's for implementing these protocols so developers can create socket programming applications. The most common example is the `http` module. [HTTP](images/https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) exists on the Application layer of the OSI Model; if you want to learn more about the `http` module, read the Node.js [http documentation](images/https://nodejs.org/api/http.html) or the Nodejs.dev [guide](images/https://nodejs.dev/the-nodejs-http-module). Another socket programming Node.js module is the `dgram` module for [UDP](images/https://en.wikipedia.org/wiki/User_Datagram_Protocol) communication. UDP exists on the Transport layer; for more information about this technology read the Node.js [dgram documentaion](images/https://nodejs.org/api/dgram.html). More importantly, the `net` module, which this guide is all about, provides an extensive API for a stream-based TCP server. [TCP](images/https://en.wikipedia.org/wiki/Transmission_Control_Protocol) exists on the Transport layer of the OSI Model and is what HTTP is implemented on top of.
+Node.js exposes extensive API's for implementing these protocols so developers can create socket programming applications. The most common example is the `http` module. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) exists on the Application layer of the OSI Model; if you want to learn more about the `http` module, read the Node.js [http documentation](https://nodejs.org/api/http.html) or the Nodejs.dev [guide](https://nodejs.dev/the-nodejs-http-module). Another socket programming Node.js module is the `dgram` module for [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) communication. UDP exists on the Transport layer; for more information about this technology read the Node.js [dgram documentaion](https://nodejs.org/api/dgram.html). More importantly, the `net` module, which this guide is all about, provides an extensive API for a stream-based TCP server. [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) exists on the Transport layer of the OSI Model and is what HTTP is implemented on top of.
 
 > TCP is a reliable, ordered, and error-checked delivery of a stream of bytes between applications communicating via an internet protocol (IP) network.
 
 >
 
-> ~ [Wikipedia](images/https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+> ~ [Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 
 ## Net Module - Getting Started
 
-The key part of the `net` module is the `net.Socket` class. A socket instance in Node.js is both a [duplex stream](images/https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and an [event emitter](images/https://nodejs.org/api/events.html#events_class_eventemitter). This means it is readable, writable, and can utilize the event loop. Sockets can be created by the user and by Node.js, and they are the programmatic object for communicating. Sockets must connect to a `net.Server` class instance; a socket connection to a server is often referred to as a _client connection_. Every socket connection is considered "private" in the sense that the only entities with access to the connection is the server and the client. A server instance **can** have multiple client connections, but will maintain separate communication streams with each connection.
+The key part of the `net` module is the `net.Socket` class. A socket instance in Node.js is both a [duplex stream](https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and an [event emitter](https://nodejs.org/api/events.html#events_class_eventemitter). This means it is readable, writable, and can utilize the event loop. Sockets can be created by the user and by Node.js, and they are the programmatic object for communicating. Sockets must connect to a `net.Server` class instance; a socket connection to a server is often referred to as a _client connection_. Every socket connection is considered "private" in the sense that the only entities with access to the connection is the server and the client. A server instance **can** have multiple client connections, but will maintain separate communication streams with each connection.
 
 Lets look at the simplest example of a TCP server, an echo server. An _echo server_ is one which returns the same message sent to it.
 
@@ -1853,7 +1829,6 @@ With this server running, connect to it using your system's command-line TCP int
 In another terminal connect to the running TCP server:
 
 ```console
-
 
 telnet localhost 8124
 
@@ -1927,9 +1902,9 @@ The second example introduces an additional event listener `'end'`. This is very
 
 ## Conclusion
 
-Fantastic work! With these two examples you should have what you need to get started building your own TCP communication networks. This guide only brushes the surface of socket programming applications, but the most important take away here is that Node.js implements TCP socket connections as [duplex streams](images/https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and [event emitters](images/https://nodejs.org/api/events.html#events_class_eventemitter). Understanding those two concepts will benefit your overall understanding of the `net` module.
+Fantastic work! With these two examples you should have what you need to get started building your own TCP communication networks. This guide only brushes the surface of socket programming applications, but the most important take away here is that Node.js implements TCP socket connections as [duplex streams](https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and [event emitters](https://nodejs.org/api/events.html#events_class_eventemitter). Understanding those two concepts will benefit your overall understanding of the `net` module.
 
-For more capabilities of the `net` module read the Node.js [net documentation](images/https://nodejs.org/api/net.html).
+For more capabilities of the `net` module read the Node.js [net documentation](https://nodejs.org/api/net.html).
 
 To learn more, try completing the following challenges:
 
@@ -1959,7 +1934,6 @@ To see the version of all installed npm packages, including their dependencies:
 
 ```console
 
-
 npm list
 
 ```
@@ -1967,7 +1941,6 @@ npm list
 For example:
 
 ```console
-
 
 ❯ npm list
 
@@ -2003,7 +1976,6 @@ To get only your top-level packages (basically, the ones you told npm to install
 
 ```console
 
-
 ❯ npm list --depth=0
 
 /Users/joe/dev/node/cowsay
@@ -2016,7 +1988,6 @@ You can get the version of a specific package by specifying its name:
 
 ```console
 
-
 ❯ npm list cowsay
 
 /Users/joe/dev/node/cowsay
@@ -2028,7 +1999,6 @@ You can get the version of a specific package by specifying its name:
 This also works for dependencies of packages you installed:
 
 ```console
-
 
 ❯ npm list minimist
 
@@ -2046,7 +2016,6 @@ If you want to see what's the latest available version of the package on the npm
 
 ```console
 
-
 ❯ npm view cowsay version
 
 1.3.1
@@ -2061,7 +2030,6 @@ You can install an old version of an npm package using the `@` syntax:
 
 ```console
 
-
 npm install <package>@<version>
 
 ```
@@ -2069,7 +2037,6 @@ npm install <package>@<version>
 Example:
 
 ```console
-
 
 npm install cowsay
 
@@ -2081,7 +2048,6 @@ Install version 1.2.0 with:
 
 ```console
 
-
 npm install cowsay@1.2.0
 
 ```
@@ -2090,7 +2056,6 @@ The same can be done with global packages:
 
 ```console
 
-
 npm install -g webpack@4.16.4
 
 ```
@@ -2098,7 +2063,6 @@ npm install -g webpack@4.16.4
 You might also be interested in listing all the previous versions of a package. You can do it with `npm view <package> versions`:
 
 ```console
-
 
 ❯ npm view cowsay versions
 
@@ -2148,7 +2112,7 @@ When you install a package using `npm install <packagename>`, the latest availab
 
 npm calculates the dependencies and installs the latest available version of those as well.
 
-Let's say you install [`cowsay`](images/https://www.npmjs.com/package/cowsay), a cool command line tool that lets you make a cow say _things_.
+Let's say you install [`cowsay`](https://www.npmjs.com/package/cowsay), a cool command line tool that lets you make a cow say _things_.
 
 When you `npm install cowsay`, this entry is added to the `package.json` file:
 
@@ -2202,14 +2166,13 @@ To discover new releases of the packages, you run `npm outdated`.
 
 Here's the list of a few outdated packages in one repository that wasn't updated for quite a while:
 
-![](images/outdated-packages.png)
+![alt-text](images/outdated-packages.png)
 
 Some of those updates are major releases. Running `npm update` won't update the version of those. Major releases are never updated in this way because they (by definition) introduce breaking changes, and `npm` wants to save you trouble.
 
 To update all packages to a new major version, install the `npm-check-updates` package globally:
 
 ```console
-
 
 npm install -g npm-check-updates
 
@@ -2218,7 +2181,6 @@ npm install -g npm-check-updates
 then run it:
 
 ```console
-
 
 ncu -u
 
@@ -2230,7 +2192,6 @@ You are now ready to run the update:
 
 ```console
 
-
 npm update
 
 ```
@@ -2238,7 +2199,6 @@ npm update
 If you just downloaded the project without the `node_modules` dependencies and you want to install the shiny new versions first, just run
 
 ```console
-
 
 npm install
 
@@ -2328,7 +2288,6 @@ To uninstall a package you have previously installed **locally** (using `npm ins
 
 ```console
 
-
 npm uninstall <package-name>
 
 ```
@@ -2343,7 +2302,6 @@ If the package is installed **globally**, you need to add the `-g` / `--global` 
 
 ```console
 
-
 npm uninstall -g <package-name>
 
 ```
@@ -2351,7 +2309,6 @@ npm uninstall -g <package-name>
 for example:
 
 ```console
-
 
 npm uninstall -g webpack
 
@@ -2414,7 +2371,6 @@ You probably have some packages installed globally already on your system. You c
 
 ```console
 
-
 npm list -g --depth 0
 
 ```
@@ -2443,7 +2399,7 @@ description: 'npx is a very cool way to run Node.js code, and provides many usef
 
 `npx` is a very powerful command that's been available in **npm** starting version 5.2, released in July 2017.
 
-> If you don't want to install npm, you can [install npx as a standalone package](images/https://www.npmjs.com/package/npx)
+> If you don't want to install npm, you can [install npx as a standalone package](https://www.npmjs.com/package/npx)
 
 `npx` lets you run code built with Node.js and published through the npm registry.
 
@@ -2471,7 +2427,6 @@ A typical demonstration of using `npx` is through the `cowsay` command. `cowsay`
 
 ```console
 
-
  _______
 
 < Hello >
@@ -2496,7 +2451,6 @@ This only works if you have the `cowsay` command globally installed from npm pre
 
 ```console
 
-
 npx cowsay "Hello"
 
 ```
@@ -2515,10 +2469,9 @@ and many more.
 
 ## Run some code using a different Node.js version
 
-Use the `@` to specify the version, and combine that with the [`node` npm package](images/https://www.npmjs.com/package/node):
+Use the `@` to specify the version, and combine that with the [`node` npm package](https://www.npmjs.com/package/node):
 
 ```console
-
 
 npx node@10 -v #v10.18.1
 
@@ -2535,7 +2488,6 @@ This helps to avoid tools like `nvm` or the other Node.js version management too
 You can run code that sits in a GitHub gist, for example:
 
 ```console
-
 
 npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
 
@@ -2672,7 +2624,6 @@ foo()
 This code prints, maybe surprisingly:
 
 ```console
-
 
 foo
 
@@ -2839,15 +2790,15 @@ server.listen(port, hostname, () => {
 
 To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->
 
-This code first includes the Node.js [`http` module](images/https://nodejs.org/api/http.html).
+This code first includes the Node.js [`http` module](https://nodejs.org/api/http.html).
 
-Node.js has a fantastic [standard library](images/https://nodejs.org/api/), including first-class support for networking.
+Node.js has a fantastic [standard library](https://nodejs.org/api/), including first-class support for networking.
 
 The `createServer()` method of `http` creates a new HTTP server and returns it.
 
 The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.
 
-Whenever a new request is received, the [`request` event](images/https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](images/https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](images/https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
+Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 Those 2 objects are essential to handle the HTTP call.
 
@@ -2884,39 +2835,39 @@ Node.js is a low-level platform. In order to make things easy and exciting for d
 
 Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:
 
--   [**AdonisJS**](images/https://adonisjs.com/): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
+-   [**AdonisJS**](https://adonisjs.com/): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
 -
--   [**Egg.js**](images/https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
+-   [**Egg.js**](https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
 -
--   [**Express**](images/https://expressjs.com/): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
+-   [**Express**](https://expressjs.com/): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
 -
--   [**Fastify**](images/https://fastify.io/): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js we
+-   [**Fastify**](https://fastify.io/): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js we
 -
--   [**FeatherJS**](images/https://feathersjs.com/): Feathers is a lightweight web-framework for creating real-time applications an
+-   [**FeatherJS**](https://feathersjs.com/): Feathers is a lightweight web-framework for creating real-time applications an
 -
--   [**Gatsby**](images/https://www.gatsbyjs.com/): A [React](images/https://reactjs.org/)-based, [GraphQL](images/https://graphql.org/)
+-   [**Gatsby**](https://www.gatsbyjs.com/): A [React](https://reactjs.org/)-based, [GraphQL](https://graphql.org/)
 -
--   [**hapi**](images/https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
+-   [**hapi**](https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
 -
 -   [**koa**](images/http://koajs.com/): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatibl
 -
--   [**Loopback.io**](images/https://loopback.io/): Makes it easy to build modern applications that require complex integrations.
+-   [**Loopback.io**](https://loopback.io/): Makes it easy to build modern applications that require complex integrations.
 
--   [**Meteor**](images/https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](images/https://reactjs.org/), [Vue](images/https://vuejs.org/), and [Angular](images/https://angular.io). Can be used to create mobile apps as well.
+-   [**Meteor**](https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Angular](https://angular.io). Can be used to create mobile apps as well.
 
--   [**Micro**](images/https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
+-   [**Micro**](https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
 
--   [**NestJS**](images/https://nestjs.com/): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
+-   [**NestJS**](https://nestjs.com/): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
 
--   [**Next.js**](images/https://nextjs.org/): [React](images/https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+-   [**Next.js**](https://nextjs.org/): [React](https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
 
--   [**Nx**](images/https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](images/https://reactjs.org/), [Angular](images/https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
+-   [**Nx**](https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org/), [Angular](https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
 
--   [**Sapper**](images/https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
+-   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 
--   [**Socket.io**](images/https://socket.io/): A real-time communication engine to build network applications.
+-   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
 
--   [**Strapi**](images/https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+-   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
 # 'Understanding setImmediate()'
 
@@ -3003,7 +2954,6 @@ This code will print
 
 ```console
 
-
 before
 
 after
@@ -3012,7 +2962,7 @@ after
 
 This is especially useful to avoid blocking the CPU on intensive tasks and let other functions be executed while performing a heavy calculation, by queuing functions in the scheduler.
 
-> Some browsers (IE and Edge) implement a `setImmediate()` method that does this same exact functionality, but it's not standard and [unavailable on other browsers](images/https://caniuse.com/#feat=setimmediate). But it's a standard function in Node.js.
+> Some browsers (IE and Edge) implement a `setImmediate()` method that does this same exact functionality, but it's not standard and [unavailable on other browsers](https://caniuse.com/#feat=setimmediate). But it's a standard function in Node.js.
 
 ## `setInterval()`
 
@@ -3084,7 +3034,7 @@ to achieve this scenario:
 
 ![Recursive setTimeout](images/recursive-settimeout.png)
 
-`setTimeout` and `setInterval` are available in Node.js, through the [Timers module](images/https://nodejs.org/api/timers.html).
+`setTimeout` and `setInterval` are available in Node.js, through the [Timers module](https://nodejs.org/api/timers.html).
 
 Node.js also provides `setImmediate()`, which is equivalent to using `setTimeout(() => {}, 0)`, mostly used to work with the Node.js Event Loop.
 
@@ -3321,7 +3271,7 @@ getFile('/etc/passwd')
     .catch((err) => console.error(err));
 ```
 
-> In recent versions of Node.js, you won't have to do this manual conversion for a lot of the API. There is a promisifying function available in the [util module](images/https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original) that will do this for you, given that the function you're promisifying has the correct signature.
+> In recent versions of Node.js, you won't have to do this manual conversion for a lot of the API. There is a promisifying function available in the [util module](https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original) that will do this for you, given that the function you're promisifying has the correct signature.
 
 ---
 
@@ -3396,7 +3346,7 @@ fetch('/todos.json')
 
 In this example, we call `fetch()` to get a list of TODO items from the `todos.json` file found in the domain root, and we create a chain of promises.
 
-Running `fetch()` returns a [response](images/https://fetch.spec.whatwg.org/#concept-response), which has many properties, and within those we reference:
+Running `fetch()` returns a [response](https://fetch.spec.whatwg.org/#concept-response), which has many properties, and within those we reference:
 
 -   `status`, a numeric value representing the HTTP status code
 -
@@ -3766,7 +3716,7 @@ description: 'How to work with custom events in Node.js'
 
 If you worked with JavaScript in the browser, you know how much of the interaction of the user is handled through events: mouse clicks, keyboard button presses, reacting to mouse movements, and so on.
 
-On the backend side, Node.js offers us the option to build a similar system using the [`events` module](images/https://nodejs.org/api/events.html).
+On the backend side, Node.js offers us the option to build a similar system using the [`events` module](https://nodejs.org/api/events.html).
 
 This module, in particular, offers the `EventEmitter` class, which we'll use to handle our events.
 
@@ -3870,13 +3820,13 @@ server.listen(port, () => {
 
 ```-->
 
-Let's analyze it briefly. We include the [`http` module](images/https://nodejs.org/api/http.html).
+Let's analyze it briefly. We include the [`http` module](https://nodejs.org/api/http.html).
 
 We use the module to create an HTTP server.
 
 The server is set to listen on the specified port, `3000`. When the server is ready, the `listen` callback function is called.
 
-The callback function we pass is the one that's going to be executed upon every request that comes in. Whenever a new request is received, the [`request` event](images/https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](images/https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](images/https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
+The callback function we pass is the one that's going to be executed upon every request that comes in. Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 `request` provides the request details. Through it, we access the request headers and request data.
 
@@ -3995,7 +3945,7 @@ description: 'Find out how to make an HTTP POST request using Node.js'
 
 There are many ways to perform an HTTP POST request in Node.js, depending on the abstraction level you want to use.
 
-The simplest way to perform an HTTP request using Node.js is to use the [Axios library](images/https://github.com/axios/axios):
+The simplest way to perform an HTTP request using Node.js is to use the [Axios library](https://github.com/axios/axios):
 
 ```js
 //
@@ -4664,14 +4614,13 @@ fs.rm(dir, { recursive: true, force: true }, (err) => {
 });
 ```
 
-Or you can install and make use of the [`fs-extra`](images/https://www.npmjs.com/package/fs-extra) module, which is very popular and well maintained. It's a drop-in replacement of the `fs` module, which provides more features on top of it.
+Or you can install and make use of the [`fs-extra`](https://www.npmjs.com/package/fs-extra) module, which is very popular and well maintained. It's a drop-in replacement of the `fs` module, which provides more features on top of it.
 
 In this case the `remove()` method is what you want.
 
 Install it using
 
 ```console
-
 
 npm install fs-extra
 
@@ -4805,7 +4754,7 @@ For example:
 
 This makes a huge difference in your application flow.
 
-> Node.js 10 includes [experimental support](images/https://nodejs.org/api/fs.html#fs_fs_promises_api) for a promise based API
+> Node.js 10 includes [experimental support](https://nodejs.org/api/fs.html#fs_fs_promises_api) for a promise based API
 
 For example let's examine the `fs.rename()` method. The asynchronous API is used with a callback:
 
@@ -5109,7 +5058,7 @@ Example:
 
 ## `os.endianness()`
 
-Return `BE` or `LE` depending if Node.js was compiled with [Big Endian or Little Endian](images/https://en.wikipedia.org/wiki/Endianness).
+Return `BE` or `LE` depending if Node.js was compiled with [Big Endian or Little Endian](https://en.wikipedia.org/wiki/Endianness).
 
 ## `os.freemem()`
 
@@ -5459,17 +5408,17 @@ With those concepts in mind, you are well on your road to become a proficient Ja
 
 The following concepts are also key to understand asynchronous programming, which is one fundamental part of Node.js:
 
--   [Asynchronous programming and callbacks](images/https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
+-   [Asynchronous programming and callbacks](https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
 -
--   [Timers](images/https://nodejs.dev/learn/discover-javascript-timers)
+-   [Timers](https://nodejs.dev/learn/discover-javascript-timers)
 -
 -   [Promises]
 -
--   [Async and Await](images/https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
+-   [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
 
 -   Closures
 
--   [The Event Loop](images/https://nodejs.dev/learn/the-nodejs-event-loop)
+-   [The Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
 
 # 'The Node.js http module'
 
@@ -5855,7 +5804,7 @@ It represents a fixed-size chunk of memory (can't be resized) allocated outside 
 
 You can think of a buffer like an array of integers, which each represent a byte of data.
 
-It is implemented by the Node.js [Buffer class](images/https://nodejs.org/api/buffer.html).
+It is implemented by the Node.js [Buffer class](https://nodejs.org/api/buffer.html).
 
 ## Why do we need a buffer?
 
@@ -5865,20 +5814,20 @@ Buffers in Node.js are not related to the concept of buffering data. That is wha
 
 ## How to create a buffer
 
-A buffer is created using the [`Buffer.from()`](images/https://nodejs.org/api/buffer.html#buffer_buffer_from_buffer_alloc_and_buffer_allocunsafe), [`Buffer.alloc()`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_alloc_size_fill_encoding), and [`Buffer.allocUnsafe()`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_allocunsafe_size) methods.
+A buffer is created using the [`Buffer.from()`](https://nodejs.org/api/buffer.html#buffer_buffer_from_buffer_alloc_and_buffer_allocunsafe), [`Buffer.alloc()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_alloc_size_fill_encoding), and [`Buffer.allocUnsafe()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_allocunsafe_size) methods.
 
 ```js
 //
 const buf = Buffer.from('Hey!');
 ```
 
--   [`Buffer.from(array)`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_array)
+-   [`Buffer.from(array)`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_array)
 -
--   [`Buffer.from(arrayBuffer[, byteOffset[, length]])`](images/https://nodejs.org/api/buffer.html#buffer_class
+-   [`Buffer.from(arrayBuffer[, byteOffset[, length]])`](https://nodejs.org/api/buffer.html#buffer_class
 -
--   [`Buffer.from(buffer)`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_buffer)
+-   [`Buffer.from(buffer)`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_buffer)
 
--   [`Buffer.from(string[, encoding])`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_string_encoding)
+-   [`Buffer.from(string[, encoding])`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_string_encoding)
 
 You can also just initialize the buffer passing the size. This creates a 1KB buffer:
 
@@ -6034,9 +5983,9 @@ For example, in the traditional way, when you tell the program to read a file, t
 
 Using streams you read it piece by piece, processing its content without keeping it all in memory.
 
-The Node.js [`stream` module](images/https://nodejs.org/api/stream.html) provides the foundation upon which all streaming APIs are built.
+The Node.js [`stream` module](https://nodejs.org/api/stream.html) provides the foundation upon which all streaming APIs are built.
 
-All streams are instances of [EventEmitter](images/https://nodejs.org/api/events.html#events_class_eventemitter)
+All streams are instances of [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter)
 
 ## Why streams
 
@@ -6154,7 +6103,7 @@ There are four classes of streams:
 
 ## How to create a readable stream
 
-We get the Readable stream from the [`stream` module](images/https://nodejs.org/api/stream.html), and we initialize it and implement the `readable._read()` method.
+We get the Readable stream from the [`stream` module](https://nodejs.org/api/stream.html), and we initialize it and implement the `readable._read()` method.
 
 First create a stream object:
 
@@ -6299,7 +6248,7 @@ writableStream.end();
 
 ## How to create a transform stream
 
-We get the Transform stream from the [`stream` module](images/https://nodejs.org/api/stream.html), and we initialize it and implement the `transform._transform()` method.
+We get the Transform stream from the [`stream` module](https://nodejs.org/api/stream.html), and we initialize it and implement the `transform._transform()` method.
 
 First create a transform stream object:
 
@@ -6342,7 +6291,6 @@ This is usually done by executing the command
 
 ```console
 
-
 export NODE_ENV=production
 
 ```
@@ -6352,7 +6300,6 @@ in the shell, but it's better to put it in your shell configuration file (e.g. `
 You can also apply the environment variable by prepending it to your application initialization command:
 
 ```console
-
 
 NODE_ENV=production node app.js
 
@@ -6435,7 +6382,7 @@ In Node.js, we don't throw strings, we just throw Error objects.
 
 ## Error objects
 
-An error object is an object that is either an instance of the Error object, or extends the Error class, provided in the [Error core module](images/https://nodejs.org/api/errors.html):
+An error object is an object that is either an instance of the Error object, or extends the Error class, provided in the [Error core module](https://nodejs.org/api/errors.html):
 
 ```js
 //
@@ -6565,11 +6512,11 @@ description: 'Logging objects in Node.js'
 
 When you type `console.log()` into a JavaScript program that runs in the browser, that is going to create a nice entry in the Browser Console:
 
-![](images/console-log-browser.png)
+![alt-text](images/console-log-browser.png)
 
 Once you click the arrow, the log is expanded, and you can clearly see the object properties:
 
-![](images/console-log-browser-expanded.png)
+![alt-text](images/console-log-browser-expanded.png)
 
 In Node.js, the same happens.
 
@@ -6711,7 +6658,6 @@ First thing to do is to install TypeScript in our project:
 
 ```console
 
-
 npm i -D typescript
 
 ```
@@ -6721,7 +6667,6 @@ Now we can compile it to JavaScript using `tsc` command in the terminal. Let's d
 Assuming that our file is named `example.ts`, the command would look like:
 
 ```console
-
 
 tsc example.ts
 
@@ -6793,7 +6738,7 @@ As you can see TypeScript successfully prevents us from shipping code that could
 
 ## More about TypeScript
 
-TypeScript offers a whole lot of other great mechanisms like interfaces, classes, utility types and so on. Also, on bigger projects you can declare your TypeScript compiler configuration in a separate file and granularly adjust how it works, how strict it is and where it stores compiled files for example. You can read more about all this awesome stuff in [the official TypeScript docs](images/https://www.typescriptlang.org/docs).
+TypeScript offers a whole lot of other great mechanisms like interfaces, classes, utility types and so on. Also, on bigger projects you can declare your TypeScript compiler configuration in a separate file and granularly adjust how it works, how strict it is and where it stores compiled files for example. You can read more about all this awesome stuff in [the official TypeScript docs](https://www.typescriptlang.org/docs).
 
 Some of the other benefits of TypeScript that are worth mentioning are that it can be adopted progressively, it helps making code more readable and understandable and it allows developers to use modern language features while shipping code for older Node.js versions.
 
@@ -6803,15 +6748,15 @@ TypeScript is well-established in the Node.js world and used by many companies, 
 
 Some of the notable examples of open-source projects using TypeScript are:
 
--   [NestJS](images/https://nestjs.com/) - robust and fully-featured framework that makes creating scalable and well-architected systems easy and pleasant
+-   [NestJS](https://nestjs.com/) - robust and fully-featured framework that makes creating scalable and well-architected systems easy and pleasant
 -
--   [TypeORM](images/https://typeorm.io/#/) - great ORM influenced by other well-known tools from other languages like Hibernate, Doctrine or Entity Framewor
+-   [TypeORM](https://typeorm.io/#/) - great ORM influenced by other well-known tools from other languages like Hibernate, Doctrine or Entity Framewor
 -
--   [Prisma](images/https://prisma.io/) - next-generation ORM featuring a declarative data model, generated migrations and fully type-safe database queries
+-   [Prisma](https://prisma.io/) - next-generation ORM featuring a declarative data model, generated migrations and fully type-safe database queries
 
--   [RxJS](images/https://rxjs.dev/) - widely used library for reactive programming
+-   [RxJS](https://rxjs.dev/) - widely used library for reactive programming
 
--   [AdonisJS](images/https://adonisjs.com) - A fully featured web framework with Node.js
+-   [AdonisJS](https://adonisjs.com) - A fully featured web framework with Node.js
 
 And many, many more great projects... Maybe even your next one!
 
@@ -6865,21 +6810,21 @@ The Node.js ecosystem is huge and thanks to V8 which also powers desktop apps, w
 
 Other browsers have their own JavaScript engine:
 
--   Firefox has [**SpiderMonkey**](images/https://spidermonkey.dev)
+-   Firefox has [**SpiderMonkey**](https://spidermonkey.dev)
 -
--   Safari has [**JavaScriptCore**](images/https://developer.apple.com/documentation/javascriptcore) (also called Nitro)
+-   Safari has [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) (also called Nitro)
 
--   Edge was originally based on [**Chakra**](images/https://github.com/Microsoft/ChakraCore) but has more recently been [rebuilt using Chromium](images/https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium) and the V8 engine.
+-   Edge was originally based on [**Chakra**](https://github.com/Microsoft/ChakraCore) but has more recently been [rebuilt using Chromium](https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium) and the V8 engine.
 
 and many others exist as well.
 
-All those engines implement the [ECMA ES-262 standard](images/https://www.ecma-international.org/publications/standards/Ecma-262.htm), also called ECMAScript, the standard used by JavaScript.
+All those engines implement the [ECMA ES-262 standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm), also called ECMAScript, the standard used by JavaScript.
 
 ## The quest for performance
 
 V8 is written in C++, and it's continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.
 
-In this V8 introduction, we will ignore the implementation details of V8: they can be found on more authoritative sites (e.g. the [V8 official site](images/https://v8.dev/)), and they change over time, often radically.
+In this V8 introduction, we will ignore the implementation details of V8: they can be found on more authoritative sites (e.g. the [V8 official site](https://v8.dev/)), and they change over time, often radically.
 
 V8 is always evolving, just like the other JavaScript engines around, to speed up the Web and the Node.js ecosystem.
 
@@ -6909,7 +6854,6 @@ If your main Node.js application file is `app.js`, you can call it by typing:
 
 ```console
 
-
 node app.js
 
 ```
@@ -6918,7 +6862,6 @@ Above, you are explicitly telling the shell to run your script with `node`. You 
 
 ```console
 
-
 #!/usr/bin/node
 
 ```
@@ -6926,7 +6869,6 @@ Above, you are explicitly telling the shell to run your script with `node`. You 
 Above, we are explicitly giving the absolute path of interpreter. Not all operating systems have `node` in the bin folder, but all should have `env`. You can tell the OS to run `env` with node as parameter:
 
 ```console
-
 
 #!/usr/bin/env node
 
@@ -6937,7 +6879,6 @@ Above, we are explicitly giving the absolute path of interpreter. Not all operat
 To use a shebang, your file should have executable permission. You can give `app.js` the executable permission by running:
 
 ```console
-
 
 chmod u+x app.js
 
@@ -7050,7 +6991,6 @@ The below code runs `app.js` and set `USER_ID` and `USER_KEY`.
 
 ```console
 
-
 USER_ID=239482 USER_KEY=foobar node app.js
 
 ```
@@ -7070,10 +7010,9 @@ process.env.USER_KEY; // "foobar"
 
 In the same way you can access any custom environment variable you set.
 
-If you have multiple environment variables in your node project, you can also create an `.env` file in the root directory of your project, and then use the [dotenv](images/https://www.npmjs.com/package/dotenv) package to load them during runtime.
+If you have multiple environment variables in your node project, you can also create an `.env` file in the root directory of your project, and then use the [dotenv](https://www.npmjs.com/package/dotenv) package to load them during runtime.
 
 ```console
-
 
 # .env file
 
@@ -7143,13 +7082,13 @@ Object [WebAssembly] {
 
 There are multiple methods available to generate WebAssembly binary files including:
 
--   Writing WebAssembly (`.wat`) by hand and converting to binary format using tools such as [wabt](images/https://github.com/webassembly/wabt)
+-   Writing WebAssembly (`.wat`) by hand and converting to binary format using tools such as [wabt](https://github.com/webassembly/wabt)
 -
--   Using [emscripten](images/https://emscripten.org/) with a C/C++ application
+-   Using [emscripten](https://emscripten.org/) with a C/C++ application
 -
--   Using [wasm-pack](images/https://rustwasm.github.io/wasm-pack/book/) with a Rust application
+-   Using [wasm-pack](https://rustwasm.github.io/wasm-pack/book/) with a Rust application
 
--   Using [AssemblyScript](images/https://www.assemblyscript.org/) if you prefer a TypeScript-like experience
+-   Using [AssemblyScript](https://www.assemblyscript.org/) if you prefer a TypeScript-like experience
 
 > Some of these tools generate not only the binary file, but the JavaScript "glue" code and corresponding HTML files to run in the browser.
 
@@ -7178,12 +7117,12 @@ WebAssembly.instantiate(wasmBuffer).then((wasmModule) => {
 
 ## Interacting with the OS
 
-WebAssembly modules cannot directly access OS functionality on its own. A third-party tool [Wasmtime](images/https://docs.wasmtime.dev/) can be used to access this functionality. `Wasmtime` utilizes the [WASI](images/https://wasi.dev/) API to access the OS functionality.
+WebAssembly modules cannot directly access OS functionality on its own. A third-party tool [Wasmtime](https://docs.wasmtime.dev/) can be used to access this functionality. `Wasmtime` utilizes the [WASI](https://wasi.dev/) API to access the OS functionality.
 
 ## Resources
 
--   [General WebAssembly Information](images/https://webassembly.org/)
+-   [General WebAssembly Information](https://webassembly.org/)
 -
--   [MDN Docs](images/https://developer.mozilla.org/en-US/docs/WebAssembly)
+-   [MDN Docs](https://developer.mozilla.org/en-US/docs/WebAssembly)
 
--   [Write WebAssembly by hand](images/https://webassembly.github.io/spec/core/text/index.html)
+-   [Write WebAssembly by hand](https://webassembly.github.io/spec/core/text/index.html)
