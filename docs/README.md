@@ -1,4 +1,6 @@
-# Bgoonz Blog Readme
+# Bgoonz Blog Readme:
+
+<div align="centered">
 
 ### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
@@ -23,7 +25,7 @@
 
 [![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
 
-
+</div>
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
