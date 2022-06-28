@@ -38,16 +38,16 @@ Search
 <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
 
 1.  <a href="index.html" class="breadcrumbs__link">
-<span class="breadcrumbs__hidden-text">Tutorial</span>
-</a>
+    <span class="breadcrumbs__hidden-text">Tutorial</span>
+    </a>
 2.  <span id="breadcrumb-1">
-<a href="js.html" The JavaScript language</span>
-</a>
-</span>
+    <a href="js.html" The JavaScript language</span>
+    </a>
+    </span>
 3.  <span id="breadcrumb-2">
-<a href="js-misc.html" Miscellaneous</span>
-</a>
-</span>
+    <a href="js-misc.html" Miscellaneous</span>
+    </a>
+    </span>
 
 30th April 2021
 

@@ -1,10 +1,11 @@
-
 # Providing Structured Data  |  Programmable Search Engine
 
 > ## Excerpt
+>
 > This page shows you how to add the structured data that search operators depend on.
 
 ---
+
 This page shows you how to add the structured data that search operators depend on.
 
 Web pages are often filled with free form text, which is easy for humans to read but more difficult for computers to understand. Some web pages have information with greater structure that is easy to read, such as a page date embedded in the URL or title of the page, or machine-readable fields embedded in the HTML code. Google extracts a variety of structured data from web pages. This page describes the structured data types Google extracts that are available for use in [Custom Snippets](https://developers.google.com/custom-search/docs/snippets) and [Structured Search](https://developers.google.com/custom-search/docs/structured_search).
@@ -56,7 +57,7 @@ hreview\-aggregate
   item hcard  
     fn \= Pizza My Heartrating  
     average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
-count \= 12  
+count \= 12
 
 Programmable Search Engine uses a subset of the information available for Google Search; this subset is shown at the bottom of the testing tool page:
 
@@ -140,7 +141,7 @@ Here's an example of PageMap data for a webpage about badminton:
         <Attribute name="height" value="167" />  
      </DataObject>  
   </PageMap>  
-  -->  </head> ...</html>  
+  -->  </head> ...</html>
 
 ### Add PageMap data to a Sitemap
 
@@ -148,16 +149,17 @@ If you don't want to include PageMap data in the HTML of your pages, you can add
 
 Here's an example of a Sitemap that includes PageMap information for two URLs: http://www.example.com/foo and http://www.example.com/bar.
 
-<?xml version\="1.0" encoding\="UTF-8"?>  
-<urlset xmlns\="http://www.sitemaps.org/schemas/sitemap/0.9"\>  <url>  <loc>http://www.example.com/foo</loc>  <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\>  <DataObject type\="document" id\="hibachi"\>  <Attribute name\="name"\>Dragon</Attribute>  <Attribute name\="review"\>3.5</Attribute>  </DataObject>  </PageMap>  </url>  <url>  <loc>http://www.example.com/bar</loc>  <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\>  <DataObject type\="document" id\="biggreenegg"\>  <Attribute name\="name"\>Ribs</Attribute>  <Attribute name\="review"\>4.0</Attribute>  </DataObject>  </PageMap>  </url>  
-</urlset>  
+<?xml version\="1.0" encoding\="UTF-8"?>
+
+<urlset xmlns\="http://www.sitemaps.org/schemas/sitemap/0.9"\> <url> <loc>http://www.example.com/foo</loc> <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\> <DataObject type\="document" id\="hibachi"\> <Attribute name\="name"\>Dragon</Attribute> <Attribute name\="review"\>3.5</Attribute> </DataObject> </PageMap> </url> <url> <loc>http://www.example.com/bar</loc> <PageMap xmlns\="http://www.google.com/schemas/sitemap-pagemap/1.0"\> <DataObject type\="document" id\="biggreenegg"\> <Attribute name\="name"\>Ribs</Attribute> <Attribute name\="review"\>4.0</Attribute> </DataObject> </PageMap> </url>  
+</urlset>
 
 ### Parsing PageMap data
 
 Using the Programmable Search Element, custom attributes are returned in the richSnippet property of each result, can can be used with Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks).
 
-<r n\="1"\>  <u> http://www.xyz.com/business/vending\_machine.html </u> ... <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> ... <s>The European vending machine industry has annual sales of about #33  
- billion, much of it coming from factories and offices.</s> ... <PageMap>  <DataObject type\="image"\>  <Attribute name\="image\_src" value\="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg"/>  </DataObject>  <DataObject type\="publication"\>  <Attribute name\="author" value\="John Tagliabue"/>  <Attribute name\="date" value\="March 14, 2009"/>  <Attribute name\="category" value\="Business/World Business"/>  </DataObject>  </PageMap> ...</r>
+<r n\="1"\> <u> http://www.xyz.com/business/vending\_machine.html </u> ... <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> ... <s>The European vending machine industry has annual sales of about #33  
+ billion, much of it coming from factories and offices.</s> ... <PageMap> <DataObject type\="image"\> <Attribute name\="image_src" value\="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg"/> </DataObject> <DataObject type\="publication"\> <Attribute name\="author" value\="John Tagliabue"/> <Attribute name\="date" value\="March 14, 2009"/> <Attribute name\="category" value\="Business/World Business"/> </DataObject> </PageMap> ...</r>
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
@@ -167,21 +169,22 @@ While PageMaps allow you to precisely specify the data you want for each page, s
 
 While we explicitly exclude common tags that are usually inserted programmatically by web authoring tools, such as `robots`, `description`, and `keywords`, rarer tags specific to your site will be extracted and put into a special data object of type `metatags`, which can be used with all of Custom Search's structured data features. For example, a `<meta>` tag of the form:
 
-<meta name\="pubdate" content\="20100101"\>  
+<meta name\="pubdate" content\="20100101"\>
 
 creates a PageMap DataObject which is returned in XML results like this:
 
-<r n\="1"\> ... <PageMap>  <DataObject type\="metatags"\>  <Attribute name\="pubdate" value\="20100101"/>  </DataObject>  </PageMap> ...</r>
+<r n\="1"\> ... <PageMap> <DataObject type\="metatags"\> <Attribute name\="pubdate" value\="20100101"/> </DataObject> </PageMap> ...</r>
 
 The data in this automatically created PageMap can be used anywhere you can use data from a PageMap explicitly included in your page's content. For instance, it can be used with structured search operators like [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute):
 
-https://www.google.com/cse?cx=12345:example&q=oil+spill**&sort=metatags-pubdate**  
+https://www.google.com/cse?cx=12345:example&q=oil+spill**&sort=metatags-pubdate**
 
 or with the [Programmable Search Element](https://developers.google.com/custom-search/docs/structured_search#structured_search_element):
 
-...  
+...
+
 <div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\></div\>  
-...  
+...
 
 The `<meta>` tags excluded by Google include:
 
@@ -293,7 +296,7 @@ The following includes a snippet of plain HTML code.
 <p><strong>Kevin Grendelzilla</strong></p>  
 <p>Technical writer at Google</p>  
 <p>555 Search Parkway</p>  
-<p>Googlelandia, CA 94043</p>  
+<p>Googlelandia, CA 94043</p>
 
 The following snippet shows the previous HTML code extended with microformats:
 
@@ -302,7 +305,7 @@ The following snippet shows the previous HTML code extended with microformats:
 
 Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:
 
-<r n\="1"\> ... <PageMap>  <DataObject type\="person"\>  <Attribute name\="location" value\="Googlelandia"/>  <Attribute name\="role" value\="Technical Writer"/>  </DataObject>  </PageMap> ...</r>
+<r n\="1"\> ... <PageMap> <DataObject type\="person"\> <Attribute name\="location" value\="Googlelandia"/> <Attribute name\="role" value\="Technical Writer"/> </DataObject> </PageMap> ...</r>
 
 To see what Google extracts for a page, use the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) in Google's Search Console site. The data Google extracts from pages is continually being extended, so check back periodically to see if the data you want has been made available. In the meantime, if you need custom data that does not correspond to a defined microformat, you can use [PageMaps](https://developers.google.com/custom-search/docs/structured_data#pagemaps).
 
@@ -364,7 +367,7 @@ From a page with this markup, Google extracts the following data for use in rich
 hcard  
   fn \= Godzilla Gigantis n  
     family\-name \= Gigantis given\-name \= Godzilla adr  
-    locality \= Tokyo title \= Senior Giant Monster 
+    locality \= Tokyo title \= Senior Giant Monster
 
 Programmable Search Engine extracts the following subset of that data for use in structured search:
 
@@ -381,16 +384,16 @@ Structured data can be used in several Programmable Search Engine features inclu
 -   If you want to learn more about using structured data in snippets, see [Customizing Your Result Snippets](https://developers.google.com/custom-search/docs/snippets).
 -   If you want to learn more about changing the order of your results, see [Structured Search](https://developers.google.com/custom-search/docs/structured_search).
 
-
-
 ---
 
 # Customizing Results Snippets  |  Programmable Search Engine
 
 > ## Excerpt
+>
 > This page describes how to customize the result snippets for your own website. To render your customized snippets, you must add structured data to your webpages.
 
 ---
+
 This page describes how to customize the result snippets for your own website. To render your customized snippets, you must add structured data to your webpages.
 
 1.  [Overview](https://developers.google.com/custom-search/docs/snippets#overview)
@@ -426,17 +429,17 @@ The following figures demonstrate various ways you can customize the snippets in
 Essentially, creating rich snippets involves the following steps:
 
 1.  Provide [structured data](https://developers.google.com/custom-search/docs/structured_data) in your webpages.
-    
+
     When Programmable Search Engine is indexing your webpages, it recognizes and preserves the metadata.
-    
+
 2.  Fetch that structured data in the search results for your Programmable Search Engine.
-    
+
     The Programmable Search Engine server can return the search results, along with the structured data in JSON format.
-    
+
 3.  Create a presentation layer to transform the structured data into formatted HTML.
-    
+
     A presentation layer is a set of code (such as JavaScript, PHP, JSP and ASP) that transforms the raw data into a format that is displayed to the user. In the case of Programmable Search Engine, you can:
-    
+
     -   Use the [Programmable Search Element](https://developers.google.com/custom-search/docs/element) to transform JSON output for presentation to the user.
     -   Write your own custom presentation layer that transforms JSON data to HTML that is presented to the end user using Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks)
 
@@ -451,14 +454,17 @@ Custom Snippets works well with several other Programmable Search Engine feature
 -   If you want to learn more about changing the order of your results, see [Drilling Deeper into Search Results](https://developers.google.com/custom-search/docs/structured_search).
 -   If you want to learn more about what structured data Google supports, see [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data).
 -   If you want to learn more about the Programmable Search Element, see [Programmable Search Element documentation](https://developers.google.com/custom-search/docs/element).
+
 ---
 
 # Filtering and sorting search results  |  Programmable Search Engine
 
 > ## Excerpt
+>
 > To help users get to the right pages on your site, Programmable Search Engine provides structured search operators that enable you to drill down into subsets of search results based on structured data found in your pages or the metadata associated with the images on your sites.
 
 ---
+
 ## Overview
 
 To help users get to the right pages on your site, Programmable Search Engine provides structured search operators that enable you to drill down into subsets of search results based on [structured data](https://developers.google.com/custom-search/docs/structured_data) found in your pages or the metadata associated with the images on your sites.
@@ -509,7 +515,7 @@ To filter by attribute, add a `more:pagemap:_TYPE_-_NAME_:_VALUE_` operator to a
 
 To see how the complete operator is constructed from structured data, recall the example we used earlier:
 
-\[halloween **more:pagemap:document\-author:lisamorton**\]  
+\[halloween **more:pagemap:document\-author:lisamorton**\]
 
 Breaking down the `more:pagemap:document-author:lisamorton` restriction in more detail, the `more:` operator is what Programmable Search Engine uses for refinement labels, the `pagemap:` part of the refinement tells us to refine results by specific attributes in the indexed PageMaps, and the remaining elements of the operator—`document-author` and `lisamorton`—specify the content the restriction drills down into. Recall the PageMap from the example:
 
@@ -526,7 +532,7 @@ The `document-author:` qualifier of the operator tells us to look for the DataOb
 
 When filtering by Attribute, you can create more complex filters (and shorter commands) by using a compact query. For instance, you could add the following PageMap for a URL:
 
- <pagemap>  <DataObject type\="document"\>  <Attribute name\="keywords"\>horror</Attribute>  <Attribute name\="keywords"\>fiction</Attribute>  <Attribute name\="keywords"\>Irish</Attribute>  </DataObject>  </pagemap>  </page>
+<pagemap> <DataObject type\="document"\> <Attribute name\="keywords"\>horror</Attribute> <Attribute name\="keywords"\>fiction</Attribute> <Attribute name\="keywords"\>Irish</Attribute> </DataObject> </pagemap> </page>
 
 To retrieve results for the query "Irish AND fiction", use the following:
 
@@ -556,25 +562,25 @@ Attribute values which contain spaces, punctuation, or special characters are al
 
 The following restriction would find all pages with `product-description` attributes about "search":
 
-\[more:pagemap:product\-description:search\]  
+\[more:pagemap:product\-description:search\]
 
 To drill down more deeply, you can add other restrictions; for example, to get only pages that describe products of search engine, add the restrictions:
 
-\[more:pagemap:product\-description:search **more:pagemap:product\-description:engine**\]  
+\[more:pagemap:product\-description:search **more:pagemap:product\-description:engine**\]
 
 The ordering of the `more:pagemap:` restrictions is not significant; tokens are extracted from an attribute value into an unordered set.
 
 These restrictions are combined by default with an AND; however, you could also combine them with an [OR operator](http://www.google.com/support/websearch/bin/answer.py?answer=136861) to get results that match either restrict. For example, the following is a search that would match content from either about search or game:
 
-\[more:pagemap:product\-description:search **OR** more:pagemap:product\-description:game\]  
+\[more:pagemap:product\-description:search **OR** more:pagemap:product\-description:game\]
 
 One exception to tokenization is for attribute values which are URLs. Since tokens from URLs have marginal usefulness, we do not generate any token from attribute values which are valid URL.
 
-In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens "President" and "Obama" frequently appear next to each other, Programmable Search Engine may create the supertoken "president\_obama". As a result, `[more:pagemap:leaders-name:president_obama]` will return the same results as `[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]`.
+In certain cases—for example, when short tokens are frequently found together, Programmable Search Engine may combine them to create supertokens. For example, if the tokens "President" and "Obama" frequently appear next to each other, Programmable Search Engine may create the supertoken "president_obama". As a result, `[more:pagemap:leaders-name:president_obama]` will return the same results as `[more:pagemap:leaders-name:president **AND** more:pagemap:leaders-name:obama]`.
 
 Another principal exception to tokenization based on punctuation is the forward slash '/' when it separates numbers. Attribute values of the form 'NUMBER/NUMBER' or 'NUMBER/NUMBER/NUMBER' are treated as single contiguous tokens; for example, '3.5/5.0' and '[09/23/2006](https://programmablesearchengine.googleblog.com//2009/10/three-birthday-candles-for-custom.html)' are treated as single tokens. For example, to search on an Attribute with a value of '2006/09/23', use the restrict:
 
-\[more:pagemap:birth\-date:2006/09/23\]  
+\[more:pagemap:birth\-date:2006/09/23\]
 
 Joining based on slashes only works when the forward slash is between numbers without spaces; spaces between the slash and the number will result in the creation of separate tokens. Furthermore, numbers joined by slashes must match exactly; the Filter by Attribute operator does not interpret these values as fractions or dates. Programmable Search Engine's other structured search operators, such as [Sort by Attribute](https://developers.google.com/custom-search/docs/structured_search#sort_by_attribute) and [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range), do interpret these numbers as fractions and dates; see the documentation on [Providing Structured Data](https://developers.google.com/custom-search/docs/structured_data) for more details.
 
@@ -586,11 +592,11 @@ Sometimes it isn't enough to limit a search to a specific type of results; for e
 
 In its simplest form, you specify a structured data type based on a Data Object type and Attribute name in a PageMap and add it to the request URL as `&sort=_TYPE_-_NAME_`. For example, to sort by date on a page that represents its data as type `date` and name `sdate`, use the following syntax:
 
-https://www.google.com/cse?cx=000525776413497593842:aooj-2z\_jjm&q=comic+con**&sort=date-sdate**  
+https://www.google.com/cse?cx=000525776413497593842:aooj-2z\_jjm&q=comic+con**&sort=date-sdate**
 
 This by default performs a hard sort in descending order - that is, search results are ordered strictly by the date, with the most recent dates (that translate to the largest numbers) ordered first. If you want to change the sort ordering to ascending, append an `:a` to the field (or append a `:d` to explicitly specify descending). For example, to show the oldest results first, you could use a restriction of the form:
 
-https://www.google.com/cse?cx=000525776413497593842:aooj-2z\_jjm&q=comic+con**&sort=date-sdate:a**  
+https://www.google.com/cse?cx=000525776413497593842:aooj-2z\_jjm&q=comic+con**&sort=date-sdate:a**
 
 Sorted results from your engine are presented based on the value those pages have in their PageMaps for that DataObject and Attribute. Pages which lack PageMaps, that DataObject type or a parsable value for that Attribute will not show up in a hard sort. In the examples above, pages without a `date-sdate` attribute will not show up in the results. Hard sorting cannot be combined with the Bias by Attribute feature described in the next section, but it can be combined with [Filter by Attribute](https://developers.google.com/custom-search/docs/structured_search#filter_by_attribute) and [Restrict to Range](https://developers.google.com/custom-search/docs/structured_search#restrict_to_range).
 
@@ -600,11 +606,11 @@ Sorted results from your engine are presented based on the value those pages hav
 
 Sometimes you do not want to exclude results which do not have a value; for example you wanted to search for Lebanese cuisine; a variety of different restaurants might match, from pure Lebanese (most relevant) to Greek (least relevant). For this case you can use strong or weak biasing, which will strongly or weakly promote results which have your value but will not exclude results which lack it. You specify a strong or weak bias by appending a second value after the sorting direction: `&sort=_TYPE_-_NAME_:_DIRECTION_:_STRENGTH_`, either `:s` for strong bias or `:w` for weak bias (and `:h` for hard sort, though adding `:h` is optional as it is the default). For example, adding a strong bias would ensure that the best rated Mediterranean restaurants would outperform the worst rated Mediterranean restaurants, but make it unlikely that they would outrank an exact match on a Lebanese restaurant:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-rating:d:s**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-rating:d:s**
 
 Multiple biases can be combined using the comma operator:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-rating:d:s,review-pricerange:d:w**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-rating:d:s,review-pricerange:d:w**
 
 The ordering of the biases does not matter. However, hard sort cannot be combined with any other sort as it enforces a strict ordering. The last sort operator you specify in the list will override all previous sort and bias operators.
 
@@ -614,25 +620,25 @@ The ordering of the biases does not matter. However, hard sort cannot be combine
 
 To include results between a range of values or above or below a value, use a range restriction. Range restricts are specified by an `:r` appended to the attribute name, followed by the upper and lower bound on the attribute values: `&sort=_TYPE_-_NAME_:r:_LOWER_:_UPPER_`. For example, to include only reviews written between March and April 2009, you could specify a range restriction of:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-date:r:20090301:20090430**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-date:r:20090301:20090430**
 
 For the Restrict to Range operator, Google supports numbers in float format and dates in [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) `YYYYMMDD` without dashes.
 
 You do not need to specify either an upper or a lower bound: for example, to specify only dates before 2009, you could write:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-date:r::20091231**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=review-date:r::20091231**
 
 To include only ratings over 3 stars, use the following:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars:r:3.0**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars:r:3.0**
 
 Ranges are inclusive, and can be combined with the comma operator with each other or with either one sort or one or more bias criteria. Note that combining a range restrict with both a sort and bias criteria will result in only a sort over items with values in the range. For example, to sort by rating only items with three or more stars, use the following:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars,rating-stars:r:3.0**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars,rating-stars:r:3.0**
 
 You can sort over one criterian and restrict by range over another. For example, to sort by rating only items reviewed in the month of October, use the following:
 
-https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars,review-date:r:20101001:20101031**  
+https://www.google.com/cse?cx=12345:example&q=lebanese+restaurant**&sort=rating-stars,review-date:r:20101001:20101031**
 
 ## Image search
 
@@ -656,27 +662,26 @@ For example, SignOnSanDiego.com, a California news portal, uses the Programmable
 
 To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a "strong" weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:
 
-<!--  
-  <PageMap>  
-    <DataObject type="date">  
-      <Attribute name="displaydate" value="Wednesday, August 25, 2010"/>  
-      <Attribute name="sdate" value="20100825"/>  
+<!--
+  <PageMap>
+    <DataObject type="date">
+      <Attribute name="displaydate" value="Wednesday, August 25, 2010"/>
+      <Attribute name="sdate" value="20100825"/>
     </DataObject>
 
-    <DataObject type="thumbnail">  
-      <Attribute name="src" value="http://media.signonsandiego.com/img/photos/2010/08/25/635a63e9-f4a1-45aa-835a-ebee666b82e0news.ap.org\_t100.jpg"/>  
-      <Attribute name="width" value="100"/>  
-    </DataObject>  
-  </PageMap>  
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="http://media.signonsandiego.com/img/photos/2010/08/25/635a63e9-f4a1-45aa-835a-ebee666b82e0news.ap.org\_t100.jpg"/>
+      <Attribute name="width" value="100"/>
+    </DataObject>
+  </PageMap>
   -->
-
-  
 
 To apply Sort by Attribute over this field, you set the `sort` option in the search code for the Programmable Search Element as shown below:
 
-...  
+...
+
 <div class\="gcse-search" sort\_by\="date-sdate:d:s"\></div\>  
-...  
+...
 
 Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
 
@@ -688,9 +693,10 @@ Please refer to [this page](https://developers.google.com/custom-search/docs/ele
 
 You can also use Filter by Attribute with the Programmable Search Element. For example, take our [earlier example](https://developers.google.com/custom-search/docs/structured_search#tokenization) with pages that had `linked-blog` attributes; to create a custom search control that only returned pages that linked to use the following code to inject a `more:pagemap:linked-blog:blogspot` operator into every query:
 
-...  
+...
+
 <div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\></div\>  
-...  
+...
 
 This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the [Programmable Search Element](https://developers.google.com/custom-search/docs/element).
 
