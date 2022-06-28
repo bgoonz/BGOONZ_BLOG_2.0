@@ -33,9 +33,7 @@ template: docs
 weight: 0
 ---
 
-
 https://bgoonz-blog-v3-0.netlify.app/embeds/
-
 
 <br>
 <h1>  Links: </h1>
@@ -245,7 +243,6 @@ https://bgoonz-blog-v3-0.netlify.app/embeds/
 <br>
 <br>
 
-
 <br>
 <h1>  Useful Snippets </h1>
 <br>
@@ -280,7 +277,7 @@ https://bgoonz-blog-v3-0.netlify.app/embeds/
 -   [https://bg-portfolio.netlify.app/](https://bg-portfolio.netlify.app/)
 -   [https://bg-resume.netlify.app/](https://bg-resume.netlify.app/)
 -   [https://bgoonz-blog-v3-0.netlify.app/](https://bgoonz-blog-v3-0.netlify.app/)
--   [https://syntax-highlight.netlify.app/](https://syntax-highlight.netlify.app/)
+-   [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
 -   [https://bgoonz-bookmarks.netlify.app/](https://bgoonz-bookmarks.netlify.app/)
 -   [https://bgoonz-cv.netlify.app/](https://bgoonz-cv.netlify.app/)
 -   [https://bgoonz-games.netlify.app/](https://bgoonz-games.netlify.app/)
