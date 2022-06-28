@@ -24,7 +24,7 @@ collections:
       label: Docs
       folder: src/pages/docs
       create: true
-      path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
+      path: '/' # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
       slug: '{{title}}/index'
       preview_path: 'src/pages/docs/preview/{{slug}}'
       extension: md
@@ -144,24 +144,6 @@ collections:
           - { name: last_name, label: 'Last name', widget: string, required: false }
           - { name: photo, label: Photo, widget: image, required: false }
           - { name: short_bio, label: Short bio, widget: markdown, required: false }
-    - name: blog-categories
-      label: BlogCategories
-      folder: src/data/categories
-      create: true
-      slug: '{{id}}'
-      extension: yaml
-      media_folder: '{{media_folder}}/blog'
-      fields:
-          - { name: id, label: Identifier, widget: string }
-          - { name: title, label: Title, widget: string }
-          - {
-                name: description,
-                label: Description,
-                widget: markdown,
-                required: false,
-                hint: 'Short description, will be shown in page listing (ie, listing all posts from this category)'
-            }
-          - { name: link, label: Listing page URL, widget: string, default: "blog/category/<newcatid>", pattern: ["blog/category/.+", "URL needs to start with `blog/category/`"], hint: "This is the URL of the page that will list all pages for this category." }  # disable to leave empty, there will be no link and no issue but no listing
     - name: blog-tags
       label: BlogTags
       folder: src/data/tags
