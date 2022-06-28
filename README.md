@@ -1,10 +1,9 @@
 # [**⇨WEBSITE🗺️⇦**](https://bgoonz-blog.netlify.app/)
 
-</div>
 
----
 
-# [CHANGELOG](./CHANGELOG.md)
+
+## [CHANGELOG](./CHANGELOG.md)
 
 <div align="center">
 
@@ -75,7 +74,7 @@ cmseditable: true
 
 ---
 
-# Basic Web Development Environment Setup
+## Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
 
@@ -201,7 +200,36 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 </details>
 
+
+
 ---
+### Documentation Commands:
+
+documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
+documentation build src/components/Footer.js  -f md> ./notes/Footer.md
+documentation build src/components/Header.js  -f md> ./notes/Header.md
+documentation build src/components/index.js  -f md> ./notes/index.md
+documentation build src/components/SectionContent.js  -f md> ./notes/SectionContent.md
+documentation build src/components/SectionDocs.js  -f md> ./notes/SectionDocs.md
+documentation build src/components/SectionHero.js  -f md> ./notes/SectionHero.md
+documentation build src/components/CtaButtons.js  -f md> ./notes/CtaButtons.md
+documentation build src/components/DocsSubmenu.js  -f md> ./notes/DocsSubmenu.md
+documentation build src/components/FormField.js  -f md> ./notes/FormField.md
+documentation build src/components/Icon.js  -f md> ./notes/Icon.md
+documentation build src/components/Layout.js  -f md> ./notes/Layout.md
+documentation build src/components/SectionCta.js  -f md> ./notes/SectionCta.md
+documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
+documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
+documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
+
+
+
+
+---
+
+## Blog Content:
+
+
 
 -   [Navigation](/docs/sitemap)
     -   [Docs](/docs)
@@ -262,7 +290,7 @@ _🔎_
 
 Search
 
-# I am a musician, electrical engineer & web developer
+## I am a musician, electrical engineer & web developer
 
 **Please note that this website is in development and is often broken!**
 
@@ -304,7 +332,7 @@ _Python has a built in help function that let's you see a description↩ of the 
 
 ![dtw](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
 
-# [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+## [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
 
 [Learn More](/docs/tools)
 
@@ -316,7 +344,7 @@ As I learn to build web applications in React I will blog about it in↩ this se
 
 ![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
 
-# [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
+## [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
 
 Scope & Context in JS
 
@@ -336,7 +364,7 @@ From github repositories to existential questions.
 
 ![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
 
-# [Angolia](/angolia)
+## [Angolia](/angolia)
 
 ## Full Text Search
 
@@ -344,13 +372,13 @@ From github repositories to existential questions.
 
 ![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
 
-# [Convolutional Neural Networks](/neural networks)
+## [Convolutional Neural Networks](/neural networks)
 
 Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow) ![](/_static/app-assets/neural.PNG)
 
 ![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
 
-# [Jamstack](/jamstack)
+## [Jamstack](/jamstack)
 
 ##### Why Jamstack Jamstack is the new standard architecture for the
 
@@ -358,7 +386,7 @@ web. Using Git workflows and modern build tools, pre-rendered content↩ is serv
 
 ![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
 
-# [Asynchronous JavaScript](/docs/)
+## [Asynchronous JavaScript](/docs/)
 
 The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
 
@@ -366,7 +394,7 @@ The term **asynchronous** refers to two or more objects or events **not** existi
 
 ![nj-devils](/images/njdev-219301cd.jpg)
 
-# [NJ Devils](https://www.allaboutthejersey.com/)
+## [NJ Devils](https://www.allaboutthejersey.com/)
 
 ## New Jersey Devils Hockey Team
 
@@ -382,9 +410,9 @@ The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 
 
 ![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
 
-# [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
+## [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
 
-# Break Even Nuclear Fusion Candidate
+## Break Even Nuclear Fusion Candidate
 
 In December, researchers at the Joint European Torus (JET) started↩ conducting fusion experiments with tritium — a rare and radioactive↩ isotope of hydrogen. The facility is a one-tenth-volume mock-up of the↩ US\$22-billion ITER project and has the same doughnut-shaped 'tokamak'↩ design — the world's most developed approach to fusion energy. It is↩ the first time since 1997 that researchers have done experiments in a↩ tokamak with any significant amount of tritium.
 
@@ -392,7 +420,7 @@ In December, researchers at the Joint European Torus (JET) started↩ conducting
 
 ![resume](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
 
-# [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
+## [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
 
 [View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
@@ -424,65 +452,65 @@ In December, researchers at the Joint European Torus (JET) started↩ conducting
 
 quick links home
 
-# [About](/docs/about/)
+## [About](/docs/about/)
 
 Web-Dev-Hub is my personal blogand documentation site
 
 [Learn More](/docs/about/)
 
-# [Articles](/docs/articles/)
+## [Articles](/docs/articles/)
 
 my web development articles
 
 [Learn More](/docs/articles/)
 
-# [Audio](/docs/audio/)
+## [Audio](/docs/audio/)
 
 Audio Projects and tools / web audio daw
 
 [Learn More](/docs/audio/)
 
-# [Archive](/docs/archive/)
+## [Archive](/docs/archive/)
 
 more tools that I have created or collaborated on.
 
 [Learn More](/docs/archive/)
 
-# [Career](/docs/career/)
+## [Career](/docs/career/)
 
 Reference materials and descriptions of fundamental concepts as well as visua
 
 [Career](/docs/career/)
 
-# [Community](/docs/community/)
+## [Community](/docs/community/)
 
 We'd love it if you participate in the Libris community. Find out how to get connected.
 
 [Learn More](/docs/community/)
 
-# [Content](/docs/content/)
+## [Content](/docs/content/)
 
 In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
 
 [Learn More](/docs/content/)
 
-# [CSS](/docs/css/)
+## [CSS](/docs/css/)
 
 [Learn More](/docs/css/)
 
-# [Docs](/docs/docs/)
+## [Docs](/docs/docs/)
 
 Documentation
 
 [Learn More](/docs/docs/)
 
-# [Data Structures](/docs/ds-algo/)
+## [Data Structures](/docs/ds-algo/)
 
 In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
 
 [Learn More](/docs/ds-algo/)
 
-# [FAQ](/docs/faq/)
+## [FAQ](/docs/faq/)
 
 In this section you'll find commonly asked questions regarding the Libris theme. If you have questions, don't hesitate to ask us directly.
 
@@ -500,85 +528,85 @@ Learn More
 
 Learn More
 
-# [Interact](/docs/interact/)
+## [Interact](/docs/interact/)
 
 Interactive examples and projects
 
 [Learn More](/docs/interact/)
 
-# [Javascript](/docs/javascript/)
+## [Javascript](/docs/javascript/)
 
 Javascript articles and docs
 
 [Learn More](/docs/javascript/)
 
-# [JS-Quick-Tips](/docs/js-tips/)
+## [JS-Quick-Tips](/docs/js-tips/)
 
 Javascript articles and docs
 
 [Learn More](/docs/js-tips/)
 
-# [Leetcode](/docs/leetcode/)
+## [Leetcode](/docs/leetcode/)
 
 feel free to try the examples
 
 [Learn More](/docs/leetcode/)
 
-# [Netlify CMS](/docs/netlify-cms-jamstack/)
+## [Netlify CMS](/docs/netlify-cms-jamstack/)
 
 etlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows.
 
 [Learn More](/docs/netlify-cms-jamstack/)
 
-# [Overflow](/docs/overflow/)
+## [Overflow](/docs/overflow/)
 
 feel free to try the examples
 
 [Learn More](/docs/overflow/)
 
-# [Projects](/docs/projects/)
+## [Projects](/docs/projects/)
 
 We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get connected.
 
 [Learn More](/docs/projects/)
 
-# [Python](/docs/python/)
+## [Python](/docs/python/)
 
 Python
 
 [Learn More](/docs/python/)
 
-# [QuickRef](/docs/quick-ref/)
+## [QuickRef](/docs/quick-ref/)
 
 In this section you'll find basic information about Web-Dev-Hub and how to use it.
 
 [Learn More](/docs/quick-ref/)
 
-# [React](/docs/react/)
+## [React](/docs/react/)
 
 To make it easy to write documentation in plain Markdown, most React are styled using Markdown elements with few additional CSS classes.
 
 [Learn More](/docs/react/)
 
-# [Reference](/docs/reference/)
+## [Reference](/docs/reference/)
 
 helpful reference guides
 
 [Learn More](/docs/reference/)
 
-# [Tips](/docs/tips/)
+## [Tips](/docs/tips/)
 
 lorem-ipsum
 
 [Learn More](/docs/tips/)
 
-# [Tools](/docs/tools/)
+## [Tools](/docs/tools/)
 
 See some interesting tools developed by the Web-Dev-Hubcommunity to help automate parts of your workflow.
 
 [Learn More](/docs/tools/)
 
-# [Tutorials](/docs/tutorials/)
+## [Tutorials](/docs/tutorials/)
 
 Walkthroughs of various development activities and skills
 
@@ -2497,7 +2525,7 @@ sudo -u postgres psql
 
 ---
 
-# 96. URL To Subscribe To YouTube Channel
+## 96. URL To Subscribe To YouTube Channel
 
 ## Description
 
@@ -2933,397 +2961,397 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
 
-# SITEMAP
+## SITEMAP
 
-# [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
+### [🌍⇒https://bgoonz-blog.netlify.app/🗺️](https://bgoonz-blog.netlify.app/)
 
-## [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
+### [🌍⇒blog🗺️](https://bgoonz-blog.netlify.app/blog)
 
-## [**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
+### [🌍⇒docs🗺️](https://bgoonz-blog.netlify.app/docs)
 
-## [**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
+### [🌍⇒readme🗺️](https://bgoonz-blog.netlify.app/readme)
 
-## [**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
+### [🌍⇒review🗺️](https://bgoonz-blog.netlify.app/review)
 
-## [**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
+### [🌍⇒showcase🗺️](https://bgoonz-blog.netlify.app/showcase)
 
-## [**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
+### [🌍⇒blog/awesome-graphql🗺️](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
 
-## [**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
+### [🌍⇒blog/big-o-complexity🗺️](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
 
-## [**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
+### [🌍⇒blog/blog-archive🗺️](https://bgoonz-blog.netlify.app/blog/blog-archive)
 
-## [**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
+### [🌍⇒blog/blogwcomments🗺️](https://bgoonz-blog.netlify.app/blog/blogwcomments)
 
-## [**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
+### [🌍⇒blog/data-structures🗺️](https://bgoonz-blog.netlify.app/blog/data-structures)
 
-## [**🌍⇒blog/flow-control-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
+### [🌍⇒blog/flow-control-in-python🗺️](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
 
-## [**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
+### [🌍⇒blog/functions-in-python🗺️](https://bgoonz-blog.netlify.app/blog/functions-in-python)
 
-## [**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
+### [🌍⇒blog/git-gateway🗺️](https://bgoonz-blog.netlify.app/blog/git-gateway)
 
-## [**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
+### [🌍⇒blog/interview-questions-js🗺️](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
 
-## [**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
+### [🌍⇒blog/media-queries-explained🗺️](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
 
-## [**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
+### [🌍⇒blog/my-medium🗺️](https://bgoonz-blog.netlify.app/blog/my-medium)
 
-## [**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
+### [🌍⇒blog/netlify-cms🗺️](https://bgoonz-blog.netlify.app/blog/netlify-cms)
 
-## [**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
+### [🌍⇒blog/platform-docs🗺️](https://bgoonz-blog.netlify.app/blog/platform-docs)
 
-## [**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
+### [🌍⇒blog/python-for-js-dev🗺️](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
 
-## [**🌍⇒blog/python-resources🗺️**](https://bgoonz-blog.netlify.app/blog/python-resources)
+### [🌍⇒blog/python-resources🗺️](https://bgoonz-blog.netlify.app/blog/python-resources)
 
-## [**🌍⇒blog/web-dev-trends🗺️**](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
+### [🌍⇒blog/web-dev-trends🗺️](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
 
-## [**🌍⇒blog/web-scraping🗺️**](https://bgoonz-blog.netlify.app/blog/web-scraping)
+### [🌍⇒blog/web-scraping🗺️](https://bgoonz-blog.netlify.app/blog/web-scraping)
 
-## [**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
+### [🌍⇒docs/about🗺️](https://bgoonz-blog.netlify.app/docs/about)
 
-## [**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
+### [🌍⇒docs/articles🗺️](https://bgoonz-blog.netlify.app/docs/articles)
 
-## [**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
+### [🌍⇒docs/audio🗺️](https://bgoonz-blog.netlify.app/docs/audio)
 
-## [**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
+### [🌍⇒docs/career🗺️](https://bgoonz-blog.netlify.app/docs/career)
 
-## [**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
+### [🌍⇒docs/community🗺️](https://bgoonz-blog.netlify.app/docs/community)
 
-## [**🌍⇒docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/content)
+### [🌍⇒docs/content🗺️](https://bgoonz-blog.netlify.app/docs/content)
 
-## [**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
+### [🌍⇒docs/docs🗺️](https://bgoonz-blog.netlify.app/docs/docs)
 
-## [**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
+### [🌍⇒docs/faq🗺️](https://bgoonz-blog.netlify.app/docs/faq)
 
-## [**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
+### [🌍⇒docs/gallery🗺️](https://bgoonz-blog.netlify.app/docs/gallery)
 
-## [**🌍⇒docs/interact🗺️**](https://bgoonz-blog.netlify.app/docs/interact)
+### [🌍⇒docs/interact🗺️](https://bgoonz-blog.netlify.app/docs/interact)
 
-## [**🌍⇒docs/javascript🗺️**](https://bgoonz-blog.netlify.app/docs/javascript)
+### [🌍⇒docs/javascript🗺️](https://bgoonz-blog.netlify.app/docs/javascript)
 
-## [**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
+### [🌍⇒docs/leetcode🗺️](https://bgoonz-blog.netlify.app/docs/leetcode)
 
-## [**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
+### [🌍⇒docs/other-content🗺️](https://bgoonz-blog.netlify.app/docs/other-content)
 
-## [**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
+### [🌍⇒docs/privacy-policy🗺️](https://bgoonz-blog.netlify.app/docs/privacy-policy)
 
-## [**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
+### [🌍⇒docs/projects🗺️](https://bgoonz-blog.netlify.app/docs/projects)
 
-## [**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
+### [🌍⇒docs/python🗺️](https://bgoonz-blog.netlify.app/docs/python)
 
-## [**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
+### [🌍⇒docs/quick-reference🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference)
 
-## [**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
+### [🌍⇒docs/react🗺️](https://bgoonz-blog.netlify.app/docs/react)
 
-## [**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
+### [🌍⇒docs/reference🗺️](https://bgoonz-blog.netlify.app/docs/reference)
 
-## [**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
+### [🌍⇒docs/search🗺️](https://bgoonz-blog.netlify.app/docs/search)
 
-## [**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
+### [🌍⇒docs/sitemap🗺️](https://bgoonz-blog.netlify.app/docs/sitemap)
 
-## [**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
+### [🌍⇒docs/tools🗺️](https://bgoonz-blog.netlify.app/docs/tools)
 
-## [**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
+### [🌍⇒docs/tutorials🗺️](https://bgoonz-blog.netlify.app/docs/tutorials)
 
-## [**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
+### [🌍⇒docs/about/eng-portfolio🗺️](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
 
-## [**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
+### [🌍⇒docs/about/ideas-for-this-website🗺️](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
 
-## [**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
+### [🌍⇒docs/about/intrests🗺️](https://bgoonz-blog.netlify.app/docs/about/intrests)
 
-## [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
+### [🌍⇒docs/about/interview🗺️](https://bgoonz-blog.netlify.app/docs/about/interview)
 
-## [**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
+### [🌍⇒docs/about/resume🗺️](https://bgoonz-blog.netlify.app/docs/about/resume)
 
-## [**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
+### [🌍⇒docs/articles/basic-web-dev🗺️](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
 
-## [**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
+### [🌍⇒docs/articles/buffers🗺️](https://bgoonz-blog.netlify.app/docs/articles/buffers)
 
-## [**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
+### [🌍⇒docs/articles/dev-dep🗺️](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
 
-## [**🌍⇒docs/articles/event-loop🗺️**](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
+### [🌍⇒docs/articles/event-loop🗺️](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
 
-## [**🌍⇒docs/articles/fs-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
+### [🌍⇒docs/articles/fs-module🗺️](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
 
-## [**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
+### [🌍⇒docs/articles/how-the-web-works🗺️](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
 
-## [**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
+### [🌍⇒docs/articles/http🗺️](https://bgoonz-blog.netlify.app/docs/articles/http)
 
-## [**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
+### [🌍⇒docs/articles/install🗺️](https://bgoonz-blog.netlify.app/docs/articles/install)
 
-## [**🌍⇒docs/articles/intro🗺️**](https://bgoonz-blog.netlify.app/docs/articles/intro)
+### [🌍⇒docs/articles/intro🗺️](https://bgoonz-blog.netlify.app/docs/articles/intro)
 
-## [**🌍⇒docs/articles/media-queries-no-more🗺️**](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
+### [🌍⇒docs/articles/media-queries-no-more🗺️](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
 
-## [**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
+### [🌍⇒docs/articles/module-exports🗺️](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
 
-## [**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
+### [🌍⇒docs/articles/nextjs🗺️](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
 
-## [**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
+### [🌍⇒docs/articles/node-api-express🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
 
-## [**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
+### [🌍⇒docs/articles/node-cli-args🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
 
-## [**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
+### [🌍⇒docs/articles/node-common-modules🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
 
-## [**🌍⇒docs/articles/node-env-variables🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
+### [🌍⇒docs/articles/node-env-variables🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
 
-## [**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
+### [🌍⇒docs/articles/node-js-language🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
 
-## [**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
+### [🌍⇒docs/articles/node-package-manager🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
 
-## [**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
+### [🌍⇒docs/articles/node-repl🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
 
-## [**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
+### [🌍⇒docs/articles/node-run-cli🗺️](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
 
-## [**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
+### [🌍⇒docs/articles/nodejs🗺️](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
 
-## [**🌍⇒docs/articles/nodevsbrowser🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
+### [🌍⇒docs/articles/nodevsbrowser🗺️](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
 
-## [**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
+### [🌍⇒docs/articles/npm🗺️](https://bgoonz-blog.netlify.app/docs/articles/npm)
 
-## [**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
+### [🌍⇒docs/articles/npx🗺️](https://bgoonz-blog.netlify.app/docs/articles/npx)
 
-## [**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
+### [🌍⇒docs/articles/os-module🗺️](https://bgoonz-blog.netlify.app/docs/articles/os-module)
 
-## [**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
+### [🌍⇒docs/articles/package-lock🗺️](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
 
-## [**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
+### [🌍⇒docs/articles/reading-files🗺️](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
 
-## [**🌍⇒docs/articles/semantic🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic)
+### [🌍⇒docs/articles/semantic🗺️](https://bgoonz-blog.netlify.app/docs/articles/semantic)
 
-## [**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
+### [🌍⇒docs/articles/semantic-html🗺️](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
 
-## [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
+### [🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
 
-## [**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
+### [🌍⇒docs/articles/understanding-firebase🗺️](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
 
-## [**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
+### [🌍⇒docs/articles/v8🗺️](https://bgoonz-blog.netlify.app/docs/articles/v8)
 
-## [**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
+### [🌍⇒docs/articles/web-standards-checklist🗺️](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
 
-## [**🌍⇒docs/articles/webdev-tools🗺️**](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
+### [🌍⇒docs/articles/webdev-tools🗺️](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
 
-## [**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
+### [🌍⇒docs/articles/write-2-json-with-python🗺️](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
 
-## [**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
+### [🌍⇒docs/articles/writing-files🗺️](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
 
-## [**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
+### [🌍⇒docs/audio/audio🗺️](https://bgoonz-blog.netlify.app/docs/audio/audio)
 
-## [**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
+### [🌍⇒docs/audio/audio-feature-extraction🗺️](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
 
-## [**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
+### [🌍⇒docs/audio/dfft🗺️](https://bgoonz-blog.netlify.app/docs/audio/dfft)
 
-## [**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
+### [🌍⇒docs/audio/discrete-fft🗺️](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
 
-## [**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
+### [🌍⇒docs/audio/dtw-python-explained🗺️](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
 
-## [**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
+### [🌍⇒docs/audio/dynamic-time-warping🗺️](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
 
-## [**🌍⇒docs/audio/web-audio-api🗺️**](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
+### [🌍⇒docs/audio/web-audio-api🗺️](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
 
-## [**🌍⇒docs/career/confidence🗺️**](https://bgoonz-blog.netlify.app/docs/career/confidence)
+### [🌍⇒docs/career/confidence🗺️](https://bgoonz-blog.netlify.app/docs/career/confidence)
 
-## [**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
+### [🌍⇒docs/career/dev-interview🗺️](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
 
-## [**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
+### [🌍⇒docs/career/interview-dos-n-donts🗺️](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
 
-## [**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
+### [🌍⇒docs/career/job-boards🗺️](https://bgoonz-blog.netlify.app/docs/career/job-boards)
 
-## [**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
+### [🌍⇒docs/community/an-open-letter-2-future-developers🗺️](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
 
-## [**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
+### [🌍⇒docs/community/video-chat🗺️](https://bgoonz-blog.netlify.app/docs/community/video-chat)
 
-## [**🌍⇒docs/content/algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/algo)
+### [🌍⇒docs/content/algo🗺️](https://bgoonz-blog.netlify.app/docs/content/algo)
 
-## [**🌍⇒docs/content/archive🗺️**](https://bgoonz-blog.netlify.app/docs/content/archive)
+### [🌍⇒docs/content/archive🗺️](https://bgoonz-blog.netlify.app/docs/content/archive)
 
-## [**🌍⇒docs/content/data-structures-algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
+### [🌍⇒docs/content/data-structures-algo🗺️](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
 
-## [**🌍⇒docs/content/gatsby-Queries-Mutations🗺️**](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
+### [🌍⇒docs/content/gatsby-Queries-Mutations🗺️](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
 
-## [**🌍⇒docs/content/history-api🗺️**](https://bgoonz-blog.netlify.app/docs/content/history-api)
+### [🌍⇒docs/content/history-api🗺️](https://bgoonz-blog.netlify.app/docs/content/history-api)
 
-## [**🌍⇒docs/content/projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/projects)
+### [🌍⇒docs/content/projects🗺️](https://bgoonz-blog.netlify.app/docs/content/projects)
 
-## [**🌍⇒docs/content/recent-projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
+### [🌍⇒docs/content/recent-projects🗺️](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
 
-## [**🌍⇒docs/content/trouble-shooting🗺️**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
+### [🌍⇒docs/content/trouble-shooting🗺️](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
 
-## [**🌍⇒docs/docs/appendix🗺️**](https://bgoonz-blog.netlify.app/docs/docs/appendix)
+### [🌍⇒docs/docs/appendix🗺️](https://bgoonz-blog.netlify.app/docs/docs/appendix)
 
-## [**🌍⇒docs/docs/bash🗺️**](https://bgoonz-blog.netlify.app/docs/docs/bash)
+### [🌍⇒docs/docs/bash🗺️](https://bgoonz-blog.netlify.app/docs/docs/bash)
 
-## [**🌍⇒docs/docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/docs/content)
+### [🌍⇒docs/docs/content🗺️](https://bgoonz-blog.netlify.app/docs/docs/content)
 
-## [**🌍⇒docs/docs/css🗺️**](https://bgoonz-blog.netlify.app/docs/docs/css)
+### [🌍⇒docs/docs/css🗺️](https://bgoonz-blog.netlify.app/docs/docs/css)
 
-## [**🌍⇒docs/docs/data-structures-docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
+### [🌍⇒docs/docs/data-structures-docs🗺️](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
 
-## [**🌍⇒docs/docs/git-reference🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
+### [🌍⇒docs/docs/git-reference🗺️](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
 
-## [**🌍⇒docs/docs/git-repos🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
+### [🌍⇒docs/docs/git-repos🗺️](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
 
-## [**🌍⇒docs/docs/html-spec🗺️**](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
+### [🌍⇒docs/docs/html-spec🗺️](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
 
-## [**🌍⇒docs/docs/markdown🗺️**](https://bgoonz-blog.netlify.app/docs/docs/markdown)
+### [🌍⇒docs/docs/markdown🗺️](https://bgoonz-blog.netlify.app/docs/docs/markdown)
 
-## [**🌍⇒docs/docs/no-whiteboarding🗺️**](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
+### [🌍⇒docs/docs/no-whiteboarding🗺️](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
 
-## [**🌍⇒docs/docs/node-docs-complete🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
+### [🌍⇒docs/docs/node-docs-complete🗺️](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
 
-## [**🌍⇒docs/docs/node-docs-full🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
+### [🌍⇒docs/docs/node-docs-full🗺️](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
 
-## [**🌍⇒docs/docs/regex-in-js🗺️**](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
+### [🌍⇒docs/docs/regex-in-js🗺️](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
 
-## [**🌍⇒docs/docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
+### [🌍⇒docs/docs/sitemap🗺️](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
 
-## [**🌍⇒docs/faq/contact🗺️**](https://bgoonz-blog.netlify.app/docs/faq/contact)
+### [🌍⇒docs/faq/contact🗺️](https://bgoonz-blog.netlify.app/docs/faq/contact)
 
-## [**🌍⇒docs/faq/plug-ins🗺️**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
+### [🌍⇒docs/faq/plug-ins🗺️](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
 
-## [**🌍⇒docs/interact/callstack-visual🗺️**](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
+### [🌍⇒docs/interact/callstack-visual🗺️](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
 
-## [**🌍⇒docs/interact/clock🗺️**](https://bgoonz-blog.netlify.app/docs/interact/clock)
+### [🌍⇒docs/interact/clock🗺️](https://bgoonz-blog.netlify.app/docs/interact/clock)
 
-## [**🌍⇒docs/interact/jupyter-notebooks🗺️**](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
+### [🌍⇒docs/interact/jupyter-notebooks🗺️](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
 
-## [**🌍⇒docs/interact/other-sites🗺️**](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
+### [🌍⇒docs/interact/other-sites🗺️](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
 
-## [**🌍⇒docs/interact/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
+### [🌍⇒docs/interact/video-chat🗺️](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
 
-## [**🌍⇒docs/javascript/arrow-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
+### [🌍⇒docs/javascript/arrow-functions🗺️](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
 
-## [**🌍⇒docs/javascript/await-keyword🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
+### [🌍⇒docs/javascript/await-keyword🗺️](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
 
-## [**🌍⇒docs/javascript/bigo🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
+### [🌍⇒docs/javascript/bigo🗺️](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
 
-## [**🌍⇒docs/javascript/clean-code🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
+### [🌍⇒docs/javascript/clean-code🗺️](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
 
-## [**🌍⇒docs/javascript/constructor-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
+### [🌍⇒docs/javascript/constructor-functions🗺️](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
 
-## [**🌍⇒docs/javascript/promises🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/promises)
+### [🌍⇒docs/javascript/promises🗺️](https://bgoonz-blog.netlify.app/docs/javascript/promises)
 
-## [**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
+### [🌍⇒docs/javascript/review🗺️](https://bgoonz-blog.netlify.app/docs/javascript/review)
 
-## [**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
+### [🌍⇒docs/javascript/this-is-about-this🗺️](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
 
-## [**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
+### [🌍⇒docs/projects/medium-links🗺️](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
 
-## [**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
+### [🌍⇒docs/projects/my-websites🗺️](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
 
-## [**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
+### [🌍⇒docs/python/at-length🗺️](https://bgoonz-blog.netlify.app/docs/python/at-length)
 
-## [**🌍⇒docs/python/basics🗺️**](https://bgoonz-blog.netlify.app/docs/python/basics)
+### [🌍⇒docs/python/basics🗺️](https://bgoonz-blog.netlify.app/docs/python/basics)
 
-## [**🌍⇒docs/python/cheat-sheet🗺️**](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
+### [🌍⇒docs/python/cheat-sheet🗺️](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
 
-## [**🌍⇒docs/python/comprehensive-guide🗺️**](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
+### [🌍⇒docs/python/comprehensive-guide🗺️](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
 
-## [**🌍⇒docs/python/examples🗺️**](https://bgoonz-blog.netlify.app/docs/python/examples)
+### [🌍⇒docs/python/examples🗺️](https://bgoonz-blog.netlify.app/docs/python/examples)
 
-## [**🌍⇒docs/python/flow-control🗺️**](https://bgoonz-blog.netlify.app/docs/python/flow-control)
+### [🌍⇒docs/python/flow-control🗺️](https://bgoonz-blog.netlify.app/docs/python/flow-control)
 
-## [**🌍⇒docs/python/functions🗺️**](https://bgoonz-blog.netlify.app/docs/python/functions)
+### [🌍⇒docs/python/functions🗺️](https://bgoonz-blog.netlify.app/docs/python/functions)
 
-## [**🌍⇒docs/python/google-sheets-api🗺️**](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
+### [🌍⇒docs/python/google-sheets-api🗺️](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
 
-## [**🌍⇒docs/python/intro-for-js-devs🗺️**](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
+### [🌍⇒docs/python/intro-for-js-devs🗺️](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
 
-## [**🌍⇒docs/python/python-ds🗺️**](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+### [🌍⇒docs/python/python-ds🗺️](https://bgoonz-blog.netlify.app/docs/python/python-ds)
 
-## [**🌍⇒docs/python/snippets🗺️**](https://bgoonz-blog.netlify.app/docs/python/snippets)
+### [🌍⇒docs/python/snippets🗺️](https://bgoonz-blog.netlify.app/docs/python/snippets)
 
-## [**🌍⇒docs/quick-reference/Emmet🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
+### [🌍⇒docs/quick-reference/Emmet🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
 
-## [**🌍⇒docs/quick-reference/all-emojis🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
+### [🌍⇒docs/quick-reference/all-emojis🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
 
-## [**🌍⇒docs/quick-reference/create-react-app🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
+### [🌍⇒docs/quick-reference/create-react-app🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
 
-## [**🌍⇒docs/quick-reference/git-bash🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
+### [🌍⇒docs/quick-reference/git-bash🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
 
-## [**🌍⇒docs/quick-reference/git-tricks🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
+### [🌍⇒docs/quick-reference/git-tricks🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
 
-## [**🌍⇒docs/quick-reference/google-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
+### [🌍⇒docs/quick-reference/google-firebase🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
 
-## [**🌍⇒docs/quick-reference/heroku-error-codes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
+### [🌍⇒docs/quick-reference/heroku-error-codes🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
 
-## [**🌍⇒docs/quick-reference/installation🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
+### [🌍⇒docs/quick-reference/installation🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
 
-## [**🌍⇒docs/quick-reference/markdown-dropdowns🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
+### [🌍⇒docs/quick-reference/markdown-dropdowns🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
 
-## [**🌍⇒docs/quick-reference/minifiction🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
+### [🌍⇒docs/quick-reference/minifiction🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
 
-## [**🌍⇒docs/quick-reference/new-repo-instructions🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
+### [🌍⇒docs/quick-reference/new-repo-instructions🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
 
-## [**🌍⇒docs/quick-reference/psql-setup🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
+### [🌍⇒docs/quick-reference/psql-setup🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
 
-## [**🌍⇒docs/quick-reference/pull-request-rubric🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
+### [🌍⇒docs/quick-reference/pull-request-rubric🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
 
-## [**🌍⇒docs/quick-reference/quick-links🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
+### [🌍⇒docs/quick-reference/quick-links🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
 
-## [**🌍⇒docs/quick-reference/topRepos🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
+### [🌍⇒docs/quick-reference/topRepos🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
 
-## [**🌍⇒docs/quick-reference/understanding-path🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
+### [🌍⇒docs/quick-reference/understanding-path🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
 
-## [**🌍⇒docs/quick-reference/vscode-themes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
+### [🌍⇒docs/quick-reference/vscode-themes🗺️](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
 
-## [**🌍⇒docs/react/cheatsheet🗺️**](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
+### [🌍⇒docs/react/cheatsheet🗺️](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
 
-## [**🌍⇒docs/react/createReactApp🗺️**](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
+### [🌍⇒docs/react/createReactApp🗺️](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
 
-## [**🌍⇒docs/react/demo🗺️**](https://bgoonz-blog.netlify.app/docs/react/demo)
+### [🌍⇒docs/react/demo🗺️](https://bgoonz-blog.netlify.app/docs/react/demo)
 
-## [**🌍⇒docs/react/jsx🗺️**](https://bgoonz-blog.netlify.app/docs/react/jsx)
+### [🌍⇒docs/react/jsx🗺️](https://bgoonz-blog.netlify.app/docs/react/jsx)
 
-## [**🌍⇒docs/react/react-docs🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-docs)
+### [🌍⇒docs/react/react-docs🗺️](https://bgoonz-blog.netlify.app/docs/react/react-docs)
 
-## [**🌍⇒docs/react/react-in-depth🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
+### [🌍⇒docs/react/react-in-depth🗺️](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
 
-## [**🌍⇒docs/react/react2🗺️**](https://bgoonz-blog.netlify.app/docs/react/react2)
+### [🌍⇒docs/react/react2🗺️](https://bgoonz-blog.netlify.app/docs/react/react2)
 
-## [**🌍⇒docs/react/render-elements🗺️**](https://bgoonz-blog.netlify.app/docs/react/render-elements)
+### [🌍⇒docs/react/render-elements🗺️](https://bgoonz-blog.netlify.app/docs/react/render-elements)
 
-## [**🌍⇒docs/reference/awesome-lists🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
+### [🌍⇒docs/reference/awesome-lists🗺️](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
 
-## [**🌍⇒docs/reference/awesome-static🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
+### [🌍⇒docs/reference/awesome-static🗺️](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
 
-## [**🌍⇒docs/reference/bookmarks🗺️**](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
+### [🌍⇒docs/reference/bookmarks🗺️](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
 
-## [**🌍⇒docs/reference/embed-the-web🗺️**](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
+### [🌍⇒docs/reference/embed-the-web🗺️](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
 
-## [**🌍⇒docs/reference/github-search🗺️**](https://bgoonz-blog.netlify.app/docs/reference/github-search)
+### [🌍⇒docs/reference/github-search🗺️](https://bgoonz-blog.netlify.app/docs/reference/github-search)
 
-## [**🌍⇒docs/reference/how-2-reinstall-npm🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
+### [🌍⇒docs/reference/how-2-reinstall-npm🗺️](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
 
-## [**🌍⇒docs/reference/how-to-kill-a-process🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
+### [🌍⇒docs/reference/how-to-kill-a-process🗺️](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
 
-## [**🌍⇒docs/reference/installing-node🗺️**](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
+### [🌍⇒docs/reference/installing-node🗺️](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
 
-## [**🌍⇒docs/reference/intro-to-nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
+### [🌍⇒docs/reference/intro-to-nodejs🗺️](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
 
-## [**🌍⇒docs/reference/notes-template🗺️**](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
+### [🌍⇒docs/reference/notes-template🗺️](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
 
-## [**🌍⇒docs/reference/psql🗺️**](https://bgoonz-blog.netlify.app/docs/reference/psql)
+### [🌍⇒docs/reference/psql🗺️](https://bgoonz-blog.netlify.app/docs/reference/psql)
 
-## [**🌍⇒docs/reference/resources🗺️**](https://bgoonz-blog.netlify.app/docs/reference/resources)
+### [🌍⇒docs/reference/resources🗺️](https://bgoonz-blog.netlify.app/docs/reference/resources)
 
-## [**🌍⇒docs/reference/vscode🗺️**](https://bgoonz-blog.netlify.app/docs/reference/vscode)
+### [🌍⇒docs/reference/vscode🗺️](https://bgoonz-blog.netlify.app/docs/reference/vscode)
 
-## [**🌍⇒docs/reference/web-api's🗺️**](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
+### [🌍⇒docs/reference/web-api's🗺️](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
 
-## [**🌍⇒docs/tools/data-structures🗺️**](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
+### [🌍⇒docs/tools/data-structures🗺️](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
 
-## [**🌍⇒docs/tools/dev-utilities🗺️**](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
+### [🌍⇒docs/tools/dev-utilities🗺️](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
 
-## [**🌍⇒docs/tools/google-cloud🗺️**](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
+### [🌍⇒docs/tools/google-cloud🗺️](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
 
-## [**🌍⇒docs/tools/markdown-html🗺️**](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
+### [🌍⇒docs/tools/markdown-html🗺️](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
 
-## [**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
+### [🌍⇒docs/tools/more-tools🗺️](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
 
-## [**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
+### [🌍⇒docs/tutorials/google-lighthouse-cli🗺️](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
 
 </details>
 
@@ -3427,7 +3455,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ---
 
-# Gatsby Project Structure | Gatsby
+## Gatsby Project Structure | Gatsby
 
 > ## Excerpt
 >
@@ -3438,7 +3466,20 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Inside a Gatsby project, you may see some or all of the following folders and files:
 
 ```
-/|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
+/|
+-- /.cache
+|-- /plugins
+|-- /public
+|-- /src    
+|-- /api    
+|-- /pages    
+|-- /templates    
+|-- html.js
+|-- /static
+|-- gatsby-config.js
+|-- gatsby-node.js
+|-- gatsby-ssr.js
+|-- gatsby-browser.js
 ```
 
 [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
@@ -3515,7 +3556,7 @@ If you need to set a wrapper component around page components that won't get unm
 
 Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
 
-# Adding Markdown Pages | Gatsby
+## Adding Markdown Pages | Gatsby
 
 > ## Excerpt
 >
@@ -3546,25 +3587,44 @@ Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gat
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
 
 ```
-module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },  ],}
+module.exports = {  siteMetadata: {
+    title: "My Gatsby Site",  },  
+plugins: [    { 
+     resolve: `gatsby-source-filesystem`,      
+options: {
+        name: `markdown-pages`,      
+  path: `${__dirname}/src/markdown-pages`,      
+},  
+  },  
+],}
 ```
 
 Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
 
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+[Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
 
 You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
 
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+[Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
 
 `npm install gatsby-transformer-remark`
 
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+[Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
 
 Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
 
 ```
-module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
+module.exports = {  siteMetadata: {
+    title: "My Gatsby Site",  },  
+plugins: [    { 
+     resolve: `gatsby-source-filesystem`,      
+options: {
+        name: `markdown-pages`,      
+  path: `${__dirname}/src/markdown-pages`,      
+},  
+  },  
+  `gatsby-transformer-remark`,  ],
+}
 ```
 
 [Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
@@ -3590,7 +3650,9 @@ Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following c
 src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
 
 ```
-import React from "react"import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: { eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
+import React from "react"
+import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
+ eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
 ```
 
 Two things are important in the file above:
@@ -3613,13 +3675,13 @@ For more information, have a look in the working example `using-markdown-pages`.
 
 ---
 
-# Technoloy
+## Technoloy
 
 ![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
 
 ---
 
-# SOURCECODE
+## SOURCECODE
 
 ```
 
@@ -3772,7 +3834,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 ---
 
-# Source Code
+## Source Code
 
 <details>
 <summary>  Folder Structure (src)  </summary>
@@ -4092,7 +4154,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
 <summary>  Click To See Component Sourcecode  </summary>
 
-# Component Structure
+## Component Structure
 
 ```
 .
@@ -4123,6 +4185,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ```js
 import React from 'react';
 import _ from 'lodash';
+
 
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
@@ -4160,10 +4223,86 @@ export default class ActionLink extends React.Component {
 ```
 
 ---
+### Table of Contents
+
+-   [getPage][1]
+    -   [Parameters][2]
+-   [getPageByFilePath][3]
+    -   [Parameters][4]
+-   [getPages][5]
+    -   [Parameters][6]
+    -   [Examples][7]
+
+## getPage
+
+Get the page at the provided `urlPath`.
+
+### Parameters
+
+-   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+-   `urlPath` **[string][9]** The url path to find the page by
+
+Returns **[Object][10]**
+
+## getPageByFilePath
+
+Get the page at the provided `filePath`.
+
+### Parameters
+
+-   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+-   `filePath` **[string][9]** The file path to find the page by
+
+Returns **[Object][10]**
+
+## getPages
+
+Get all the pages located under the provided `urlPath`, not including the
+index page. I.e.: All pages having their URLs start with `urlPath` excluding
+the page having its URL equal to `urlPath`.
+
+### Parameters
+
+-   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+-   `urlPath` **[string][9]** The url path to filter pages by
+
+### Examples
+
+```javascript
+pages => [
+  {url: '/'},
+  {url: '/about'},
+  {url: '/posts'},
+  {url: '/posts/hello'},
+  {url: '/posts/world'}
+]
+
+getPages(pages, /posts')
+=> [
+  {url: '/posts/hello'},
+  {url: '/posts/world'}
+]
+```
+
+Returns **[Array][8]**
+
+[1]: #getpage
+[2]: #parameters
+[3]: #getpagebyfilepath
+[4]: #parameters-1
+[5]: #getpages
+[6]: #parameters-2
+[7]: #examples
+[8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
 
 ```js
 import React from 'react';
 import _ from 'lodash';
+
 
 import { Link, withPrefix, classNames } from '../utils';
 
@@ -4197,6 +4336,7 @@ export default class CtaButtons extends React.Component {
 ```js
 import React from 'react';
 import _ from 'lodash';
+
 
 import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
 import DocsSubmenu from './DocsSubmenu';
@@ -4270,6 +4410,7 @@ export default class DocsMenu extends React.Component {
 import React from 'react';
 import _ from 'lodash';
 
+
 import { classNames, Link, withPrefix } from '../utils';
 
 export default class DocsSubmenu extends React.Component {
@@ -4299,6 +4440,7 @@ export default class DocsSubmenu extends React.Component {
 ```js
 import _ from 'lodash';
 import React from 'react';
+
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
 import addScript from './../hooks/addScript';
@@ -4481,6 +4623,7 @@ export default class Footer extends React.Component {
 import React from 'react';
 import _ from 'lodash';
 
+
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
@@ -4651,26 +4794,3 @@ export default class Icon extends React.Component {
     }
 }
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
