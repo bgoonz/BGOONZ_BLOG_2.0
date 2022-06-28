@@ -125,16 +125,12 @@ Mixins:
 #### Tooltip
 
 ```html
-<span
-  data-toggle="tooltip"
-  title="tooltip"
-  data-placement="left|top|bottom|right"
-></span>
+<span data-toggle="tooltip" title="tooltip" data-placement="left|top|bottom|right"></span>
 ```
 
 ```js
 $(function () {
-  $('[data-toogle~="tooltip"]').tooltip();
+    $('[data-toogle~="tooltip"]').tooltip();
 });
 ```
 
