@@ -292,10 +292,20 @@ For beginners … very picture heavy since CSS is such a visual discipline!
 
 ### My Blog
 
+<<<<<<< HEAD
 <a href="https://bgoonzblog20.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
 
 <em>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonzblog20.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
+<br/>
+
+<em>my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Grid Cheat Sheet
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # 30 Ways To Improve Your Website Performance | PageDart
 
@@ -5,6 +6,16 @@
 > 30 ways to improve your website performance with actionable improvements and no fluff explanation
 
 ---
+=======
+# 30 Ways To Improve Your Website Performance | PageDart
+
+> ## Excerpt
+>
+> 30 ways to improve your website performance with actionable improvements and no fluff explanation
+
+---
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 It can be daunting when trying to improve website performance.
 
 Where do you start?
@@ -434,7 +445,12 @@ In Dev Tools click the “Elements” tab and search for “text/javascript” a
 Which will return results like this:
 
 ```
+<<<<<<< HEAD
 <script type="text/javascript"></script>
+=======
+<script type="text/javascript">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ```
 
 This would tell the browser that we were going to load a script tag and run Javascript.
@@ -503,7 +519,12 @@ Impact: High
 When a webpage is loading it loads in sequential order. So if you have the following markup:
 
 ```
+<<<<<<< HEAD
 <script src="cats.js"></script>
+=======
+<script src="cats.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 <link rel="stylesheet" href="cats.css"/>
 ```
 
@@ -521,7 +542,12 @@ Reorder the tags so that all required CSS loads before the javascript:
 
 ```
 <link rel="stylesheet" href="cats.css"/>
+<<<<<<< HEAD
 <script src="cats.js"></script>
+=======
+<script src="cats.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ```
 
 ### Limit iFrames on Page
@@ -650,8 +676,15 @@ Sometimes you need one file to load before another. If you use the `async` attri
 If you use `defer` then they will execute in order.
 
 ```
+<<<<<<< HEAD
 <script defer src="JS/jquery-3.1.1.min.js"></script>
 <script defer src="JS/my.js"></script>
+=======
+<script defer src="JS/jquery-3.1.1.min.js">
+</script>
+<script defer src="JS/my.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ```
 
 ### Bloated Frameworks
@@ -943,7 +976,11 @@ Here are a few links to some common servers to get you started:
 
 -   [Wordpress](https://wp-rocket.me/)
 -   [Express](https://github.com/expressjs/compression)
+<<<<<<< HEAD
 -   [IIS](https://docs.microsoft.com/en-us/iis/extensions/iis-compression/iis-compression-overview)
+=======
+-   [IIS](https://docs.microsoft.com/iis/extensions/iis-compression/iis-compression-overview)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 -   [NGinX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/)
 
 Also, remember that you only want to compress text files. So do not add compression to raster images as this may make them slower.

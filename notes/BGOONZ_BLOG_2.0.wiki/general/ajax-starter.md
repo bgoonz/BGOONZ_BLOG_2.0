@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 > ## Excerpt
 > Asynchronous JavaScript and XML, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most importantly the XMLHttpRequest object.
@@ -5,12 +6,26 @@
 
 ---
 ## [Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#getting_started "Permalink to Getting Started")
+=======
+> ## Excerpt
+>
+> Asynchronous JavaScript and XML, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most importantly the XMLHttpRequest object.
+> When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
+
+---
+
+## [Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#getting_started 'Permalink to Getting Started')
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 **Asynchronous JavaScript and XML**, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
 
 Although X in Ajax stands for XML, [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the Ajax model.
 
+<<<<<<< HEAD
 ## [Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#documentation "Permalink to Documentation")
+=======
+## [Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#documentation 'Permalink to Documentation')
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 [Getting Started](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)
 
@@ -61,4 +76,8 @@ The `FileReader` API lets web applications asynchronously read the contents of f
 
 The [XMLHttpRequest](https://xhr.spec.whatwg.org/) specification adds HTML parsing support to [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), which originally supported only XML parsing. This feature allows Web apps to obtain an HTML resource as a parsed DOM using `XMLHttpRequest`.
 
+<<<<<<< HEAD
 ## [See also](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#see_also "Permalink to See also")
+=======
+## [See also](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#see_also 'Permalink to See also')
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727

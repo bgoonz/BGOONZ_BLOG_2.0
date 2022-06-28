@@ -1071,10 +1071,19 @@ The default value of `http.postBuffer`, 1 MiB, is applied if the setting is not 
 
 ### Or Checkout my personal Resource Site:
 
+<<<<<<< HEAD:notes/articles/medium/markdown/Understanding-Git--A-Beginners-Guide-Containing-Cheat-Sheets---Resources-.md
 <a href="https://bgoonzblog20.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20.netlify.app/"><strong>Web-Dev-Hub</strong>
 <br/>
 
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonzblog20.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+=======
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
+<br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727:src/pages/docs/git/git/index.md
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 12, 2021](https://medium.com/p/b50c9c01a107).
 

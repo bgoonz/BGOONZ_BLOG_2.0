@@ -21,6 +21,7 @@ template: docs
 
 ## Lorem ipsum
 
+
 # Python Cheat Sheet
 
 ## Python Basics

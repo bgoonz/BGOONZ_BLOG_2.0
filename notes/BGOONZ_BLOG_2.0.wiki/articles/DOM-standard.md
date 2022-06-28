@@ -1808,7 +1808,13 @@ To illustrate, consider this HTML document:
 
 <!DOCTYPE html>
 <html class\=e\>
+<<<<<<< HEAD
  <head\><title\>Aliens?</title\></head\>
+=======
+ <head\>
+<title\>Aliens?</title\>
+</head\>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
  <body\>Why yes.</body\>
 </html\>
 
@@ -6544,6 +6550,7 @@ The following code illustrates elements in each of these four states:
 </script>
 
 <!-- "undefined" (not defined, not custom) -->
+<<<<<<< HEAD
 <sw-han></sw-han>
 <p is="sw-luke"></p>
 <p is="asdf"></p>
@@ -6558,6 +6565,30 @@ The following code illustrates elements in each of these four states:
 <!-- "custom" (defined, custom) -->
 <sw-rey></sw-rey>
 <p is="sw-finn"></p>
+=======
+<sw-han>
+</sw-han>
+<p is="sw-luke">
+</p>
+<p is="asdf">
+</p>
+
+<!-- "failed" (not defined, not custom) -->
+<sw-kylo>
+</sw-kylo>
+
+<!-- "uncustomized" (defined, not custom) -->
+<p>
+</p>
+<asdf>
+</asdf>
+
+<!-- "custom" (defined, custom) -->
+<sw-rey>
+</sw-rey>
+<p is="sw-finn">
+</p>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ```
 
 [Elements](https://dom.spec.whatwg.org/#concept-element) also have an associated shadow root (null or a [shadow root](https://dom.spec.whatwg.org/#concept-shadow-root)). It is null unless otherwise stated. An [element](https://dom.spec.whatwg.org/#concept-element) is a shadow host if its [shadow root](https://dom.spec.whatwg.org/#concept-element-shadow-root) is non-null.

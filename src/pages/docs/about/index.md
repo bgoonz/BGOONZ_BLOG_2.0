@@ -5,6 +5,7 @@ seo:
     title: About
     description: Bryan Guner personal blog about page
     extra:
+<<<<<<< HEAD
         - name: 'og:type'
           value: website
           keyName: property
@@ -19,11 +20,30 @@ seo:
         - name: 'twitter:title'
           value: About
         - name: 'twitter:description'
+=======
+        - name: og:type
+          value: website
+          keyName: property
+        - name: og:title
+          value: About
+          keyName: property
+        - name: og:description
+          value: This is the About page
+          keyName: property
+        - name: twitter:card
+          value: summary
+        - name: twitter:title
+          value: About
+        - name: twitter:description
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
           value: This is the About page
 template: docs
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 <div align="center">
 
 <h1>Hi 👋, I'm Bryan</h1>
@@ -31,13 +51,31 @@ template: docs
 <img align="center"  src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img>
 ## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
 
+<<<<<<< HEAD
 ![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![hackmd-github-sync-badge](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q/badge)](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
 
 ### [💻WEBSITE💻](https://bgoonzblog20.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
+=======
+## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
+
+![Profile views](https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true 'profile image')
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
  [**📁DOWNLOAD RESUME📁**](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
 
+<<<<<<< HEAD
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonzblog20.netlify.app/)](https://bgoonzblog20.netlify.app/)<a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://bgoonzblog20.netlify.app/)](https://bgoonzblog20.netlify.app/)[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner)[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz)
+=======
+[![hackmd-github-sync-badge](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q/badge)](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)
+
+[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
+
+# [💻WEBSITE💻](https://bgoonz-blog.netlify.app/) ⇄ [Portfolio](https://bg-portfolio.netlify.app/) ⇄ [Recent Work](https://bgoonz.github.io/github-stats-website/) ⇄ [MY DOCS📚](https://bryan-guner.gitbook.io/my-docs/)
+
+## **[📁DOWNLOAD RESUME📁](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)**
+
+[![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)<a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner)[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 <p align="center">
   
@@ -75,10 +113,15 @@ template: docs
 </div>
 <p><a href="https://www.buymeacoffee.com/bgoonz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="bgoonz" /></a></p><br><br>
 
+<<<<<<< HEAD
 <details>
+=======
+---
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 <summary>About Me</summary>
 
+<<<<<<< HEAD
 - 🔭 Contract Web Development **Duke Energy**
 -
 - 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
@@ -96,6 +139,17 @@ template: docs
 - 📫 How to reach me **bryan.guner@gmail.com**
 
 - ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+=======
+-   🔭 Contract Web Development **Duke Energy**
+-   🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+-   👯 I'm looking to collaborate on \[Any web audio or open source educational tools.](<https://goofy-e>
+-   🤝 I'm looking for help with [L
+-   👨‍💻 All of my projects are available at <https://bgoonz.github.io/>
+-   📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+-   💬 Ask me about **Anything:**
+-   📫 How to reach me **bryan.guner@gmail.com**
+-   ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### i really like music :headphones
 
@@ -149,7 +203,11 @@ Creating things that change my every day life.
 
 > Mahatma Gandhi
 
+<<<<<<< HEAD
 | | ## Portfolio:
+=======
+---
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 # [netlify](https://portfolio42.netlify.app/) |
 
@@ -200,6 +258,7 @@ Creating things that change my every day life.
 | **Front End Web Developer**                   |
 |                                               |
 
+<<<<<<< HEAD
 - Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
 - Designed mock-up screens, wireframes, and workflows for intuitive user experience.
 - Migrated existing multi-page user experience into singular page interfaces using React components.
@@ -209,6 +268,17 @@ Creating things that change my every day life.
 - Managed all test deployments using a combination of Digital Ocean and Netlify.
 - Produced unit tests using a combination of Mocha and Chai.
 - Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+=======
+-   Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+-   Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+-   Migrated existing multi-page user experience into singular page interfaces using React components.
+-   Participated in every stage of the design from conception through development and iterative improvement.
+-   Produced user stories and internal documentation for future site development and maintenance.
+-   Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+-   Managed all test deployments using a combination of Digital Ocean and Netlify.
+-   Produced unit tests using a combination of Mocha and Chai.
+-   Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
@@ -218,11 +288,19 @@ Creating things that change my every day life.
 | **Product Development Engineer** |
 |                                  |
 
+<<<<<<< HEAD
 - Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
 - Reorganized internal file server structure.
 - Conducted remote / in person system integration and product demonstrations.
 - Presided over internal and end user software trainings in addition to producing the corresponding documentation.
 - Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+=======
+-   Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+-   Reorganized internal file server structure.
+-   Conducted remote / in person system integration and product demonstrations.
+-   Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+-   Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 | **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
 | ---------------- | ------------------------------------ |
@@ -238,8 +316,13 @@ Creating things that change my every day life.
 
 **Capstone Project - Team Lead**
 
+<<<<<<< HEAD
 - Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
 - Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+=======
+-   Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+-   Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 | **Environment:** | **C++, Python, MATLAB, PureData** |
 | ---------------- | --------------------------------- |
@@ -250,7 +333,12 @@ Creating things that change my every day life.
 <br>
 
 ---
+<<<<<<< HEAD
 <center><h4>|-------------------------------🔥🔥🔥🔥🔥🔥🔥--------------------------------|</h4></center>
+=======
+
+---
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ---
 <br>

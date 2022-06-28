@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Webmaster Guidelines | Google Search Central  |  Google Developers
+=======
+# Webmaster Guidelines | Google Search Central | Google Developers
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -6,7 +10,13 @@
 
 ---
 
+<<<<<<< HEAD
 <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=yFxNda5Z4eE&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
+=======
+<iframe    clipboard-write;  title="YouTube video player" width="1000" height="800" src="https://www.youtube.com/embed/yFxNda5Z4eE?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=yFxNda5Z4eE&amp;enablejsapi=1&amp;widgetid=1" id="widget2">
+</iframe>
+<br>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Following the [General guidelines](https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en&_ga=2.47561892.2010395531.1639933504-972587081.1639933504&visit_id=1639931578542-8725338968151920159&rd=1#general) will help Google find, index, and rank your site.
 
@@ -56,7 +66,13 @@ These quality guidelines cover the most common forms of deceptive or manipulativ
 
 If you believe that another site is abusing Google's quality guidelines, please let us know by [filing a spam report](https://www.google.com/webmasters/tools/spamreport). Google prefers developing scalable and automated solutions to problems, and will use the report for further improving our spam detection systems.
 
+<<<<<<< HEAD
 <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/2oPj5_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=2oPj5_9WxpA&amp;enablejsapi=1&amp;widgetid=3" id="widget4"></iframe>
+=======
+<iframe    clipboard-write;  title="YouTube video player" width="1000" height="800" src="https://www.youtube.com/embed/2oPj5_9WxpA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=2oPj5_9WxpA&amp;enablejsapi=1&amp;widgetid=3" id="widget4">
+</iframe>
+<br>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Basic principles
 
@@ -92,7 +108,11 @@ If your site violates one or more of these guidelines, then Google may take [man
 
 ---
 
+<<<<<<< HEAD
 # Create Crawlable Links | Google Search Central  |  Google Developers
+=======
+# Create Crawlable Links | Google Search Central | Google Developers
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -133,7 +153,11 @@ Ensure that the URL linked to by your `<a>` tag is an actual web address that Go
 
 ---
 
+<<<<<<< HEAD
 # What Is a Sitemap | Google Search Central  |  Google Developers
+=======
+# What Is a Sitemap | Google Search Central | Google Developers
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -141,7 +165,13 @@ Ensure that the URL linked to by your `<a>` tag is an actual web address that Go
 
 ---
 
+<<<<<<< HEAD
 <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="640" height="360" src="https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=JlamLfyFjTA&amp;enablejsapi=1&amp;widgetid=1" id="widget2" data-title="YouTube video player"></iframe>
+=======
+<iframe    clipboard-write;  width="1000" height="800" src="https://www.youtube.com/embed/JlamLfyFjTA?origin=https%3A%2F%2Fdevelopers.google.com&amp;showinfo=0&amp;video-id=JlamLfyFjTA&amp;enablejsapi=1&amp;widgetid=1" id="widget2" data-title="YouTube video player">
+</iframe>
+<br>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 A _sitemap_ is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently. A sitemap tells Google which pages and files you think are important in your site, and also provides valuable information about these files. For example, when the page was last updated and any alternate language versions of the page.
 
@@ -174,7 +204,11 @@ If you decided that you need a sitemap, [learn more about how to create one](htt
 
 ---
 
+<<<<<<< HEAD
 # Robots.txt Introduction and Guide | Google Search Central  |  Google Developers
+=======
+# Robots.txt Introduction and Guide | Google Search Central | Google Developers
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -211,11 +245,19 @@ You can use a robots.txt file to block resource files such as unimportant image,
 
 Before you create or edit a robots.txt file, you should know the limits of this URL blocking method. Depending on your goals and situation, you might want to consider other mechanisms to ensure your URLs are not findable on the web.
 
+<<<<<<< HEAD
 -   **robots.txt directives may not be supported by all search engines.**  
     The instructions in robots.txt files cannot enforce crawler behavior to your site; it's up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it's better to use other blocking methods, such as [password-protecting private files on your server](https://developers.google.com/search/docs/advanced/crawling/control-what-you-share).
 -   **Different crawlers interpret syntax differently.**  
     Although respectable web crawlers follow the directives in a robots.txt file, each crawler might interpret the directives differently. You should know the [proper syntax](https://developers.google.com/search/docs/advanced/robots/robots_txt#syntax) for addressing different web crawlers as some might not understand certain instructions.
 -   **A page that's disallowed in robots.txt can still be indexed if linked to from other sites.**  
+=======
+-   **robots.txt directives may not be supported by all search engines.**
+    The instructions in robots.txt files cannot enforce crawler behavior to your site; it's up to the crawler to obey them. While Googlebot and other respectable web crawlers obey the instructions in a robots.txt file, other crawlers might not. Therefore, if you want to keep information secure from web crawlers, it's better to use other blocking methods, such as [password-protecting private files on your server](https://developers.google.com/search/docs/advanced/crawling/control-what-you-share).
+-   **Different crawlers interpret syntax differently.**
+    Although respectable web crawlers follow the directives in a robots.txt file, each crawler might interpret the directives differently. You should know the [proper syntax](https://developers.google.com/search/docs/advanced/robots/robots_txt#syntax) for addressing different web crawlers as some might not understand certain instructions.
+-   **A page that's disallowed in robots.txt can still be indexed if linked to from other sites.**
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     While Google won't crawl or index the content blocked by a robots.txt file, we might still find and index a disallowed URL if it is linked from other places on the web. As a result, the URL address and, potentially, other publicly available information such as anchor text in links to the page can still appear in Google search results. To properly prevent your URL from appearing in Google search results, [password-protect the files on your server](https://developers.google.com/search/docs/advanced/crawling/control-what-you-share), [use the `noindex` meta tag or response header](https://developers.google.com/search/docs/advanced/crawling/block-indexing), or remove the page entirely.
 
 ## Create a robots.txt file

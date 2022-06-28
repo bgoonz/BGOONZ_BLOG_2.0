@@ -3,11 +3,23 @@
 <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Search Archive"
+<<<<<<< HEAD
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
 <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600"></iframe>
+=======
+      ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   >
+</iframe>
+<br>
+
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
+</iframe>
+<br>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
 

@@ -1,11 +1,23 @@
+<<<<<<< HEAD
 Developers
 ==========
 
 <iframe src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+=======
+# Developers
+
+<<<<<<< HEAD
+
+# <iframe style="resize:both; overflow:scroll;" sandbox="allow-scripts" src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://codesandbox.io/embed/great-chaplygin-sxcyx?fontsize=14&hidenavigation=1&theme=dark"
+>>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Search Archive"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+<<<<<<< HEAD
    ></iframe>
 
 
@@ -22,6 +34,28 @@ Internet Archive encourages developers to add media to archive.org as well as to
 We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress.  If you have feedback, please email us at <info@archive.org>.
 
 You may also want to see  [community-maintained API information](https://archive.readme.io/) for archive.org.
+=======
+   >
+</iframe>
+<br>
+
+<<<<<<< HEAD
+
+# <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
+</iframe>
+<br>
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://archive.org/advancedsearch.php" comp-type="feed" width="400" height="600">
+</iframe>
+<br>
+>>>>>>> 542c7467a96c36b4f09baccab0e245389b127892
+
+Internet Archive encourages developers to add media to archive.org as well as to consume and repurpose metadata and media.
+
+We are gathering some existing documentation on this page to help you interact with us more efficiently, but this is definitely a work in progress. If you have feedback, please email us at <info@archive.org>.
+
+You may also want to see [community-maintained API information](https://archive.readme.io/) for archive.org.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 **General**\
 [Overview of how items are structured](http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/)
@@ -39,7 +73,11 @@ You may also want to see  [community-maintained API information](https://archi
 [Metadata read and write APIs](http://blog.archive.org/2013/07/04/metadata-api/)
 
 **Search & Discovery**\
+<<<<<<< HEAD
 [Search API](https://archive.org/advancedsearch.php#raw) to return JSON, RSS, XML, CSV\
+=======
+[Search API](https://archive.org/advancedsearch.php#raw) to return JSON, RSS, XML, CSV\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 [RSS feeds](https://archive.org/help/rss.php)
 
 **Wayback Machine**\
@@ -48,9 +86,18 @@ You may also want to see  [community-maintained API information](https://archi
 **Books**\
 [Book reader](https://openlibrary.org/dev/docs/bookreader)\
 [Using URLs to refer to book pages\
+<<<<<<< HEAD
 ](https://openlibrary.org/dev/docs/bookurls)[Bookserver](https://archive.org/bookserver) for discovery of epubs\
 [Open Library](https://openlibrary.org/dev/docs) developer docs
 
 **More**\
 [Python wrapper](https://github.com/jjjake/ia-wrapper) for working with various archive.org APIs\
 [Media derivatives](https://archive.org/help/derivatives.php) for uploaded items
+=======
+](https://openlibrary.org/dev/docs/bookurls)[Bookserver](https://archive.org/bookserver) for discovery of epubs\
+[Open Library](https://openlibrary.org/dev/docs) developer docs
+
+**More**\
+[Python wrapper](https://github.com/jjjake/ia-wrapper) for working with various archive.org APIs\
+[Media derivatives](https://archive.org/help/derivatives.php) for uploaded items
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727

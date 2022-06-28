@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Providing Structured Data  |  Programmable Search Engine
+=======
+# Providing Structured Data | Programmable Search Engine
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -54,9 +58,15 @@ The following snippet shows the previous HTML code extended with a format called
 The [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets?view=cse&url=http://www.urbanspoon.com/r/6/765421/restaurant/Pizza-My-Heart-Santa-Cruz) shows the information Google Search extracts from this page:
 
 hreview\-aggregate  
+<<<<<<< HEAD
   item hcard  
     fn \= Pizza My Heartrating  
     average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
+=======
+ item hcard  
+ fn \= Pizza My Heartrating  
+ average (normalized to 5.0 scale) \= 4.5 average \= 88%pricerange \= Under $10 per entree  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 count \= 12
 
 Programmable Search Engine uses a subset of the information available for Google Search; this subset is shown at the bottom of the testing tool page:
@@ -121,6 +131,7 @@ Each DataObject contains one or more attributes.
 Here's an example of PageMap data for a webpage about badminton:
 
 <html>  <head> ... <!--  
+<<<<<<< HEAD
   <PageMap>  
      <DataObject type="document">  
         <Attribute name="title">The Biomechanics of a Badminton  
@@ -142,6 +153,29 @@ Here's an example of PageMap data for a webpage about badminton:
      </DataObject>  
   </PageMap>  
   -->  </head> ...</html>
+=======
+  <PageMap>  
+     <DataObject type="document">  
+        <Attribute name="title">The Biomechanics of a Badminton  
+        Smash</Attribute>  
+        <Attribute name="author">Avelino T. Lim</Attribute>  
+        <Attribute name="description">The smash is the most  
+        explosive and aggressive stroke in Badminton. Elite athletes can  
+        generate shuttlecock velocities of up to 370 km/h. To perform the  
+        stroke, one must understand the biomechanics involved, from the body  
+        positioning to the wrist flexion. </Attribute>  
+        <Attribute name="page\_count">25</Attribute>  
+        <Attribute name="rating">4.5</Attribute>  
+        <Attribute name="last\_update">05/05/2009</Attribute>  
+     </DataObject>  
+     <DataObject type="thumbnail">  
+        <Attribute name="src" value="http://www.example.com/papers/sic.png" />  
+        <Attribute name="width" value="627" />  
+        <Attribute name="height" value="167" />  
+     </DataObject>  
+  </PageMap>  
+  -->  </head> ...</html>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Add PageMap data to a Sitemap
 
@@ -159,7 +193,11 @@ Here's an example of a Sitemap that includes PageMap information for two URLs: h
 Using the Programmable Search Element, custom attributes are returned in the richSnippet property of each result, can can be used with Search Element [Callbacks](https://developers.google.com/custom-search/docs/element#search-time-callbacks).
 
 <r n\="1"\> <u> http://www.xyz.com/business/vending\_machine.html </u> ... <t> In Italy, a Vending Machine Even Makes the <b>Pizza</b> </t> ... <s>The European vending machine industry has annual sales of about #33  
+<<<<<<< HEAD
  billion, much of it coming from factories and offices.</s> ... <PageMap> <DataObject type\="image"\> <Attribute name\="image_src" value\="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg"/> </DataObject> <DataObject type\="publication"\> <Attribute name\="author" value\="John Tagliabue"/> <Attribute name\="date" value\="March 14, 2009"/> <Attribute name\="category" value\="Business/World Business"/> </DataObject> </PageMap> ...</r>
+=======
+ billion, much of it coming from factories and offices.</s> ... <PageMap> <DataObject type\="image"\> <Attribute name\="image_src" value\="http://www.nytimes.com/images/2009/03/14/business/14vend.751.jpg"/> </DataObject> <DataObject type\="publication"\> <Attribute name\="author" value\="John Tagliabue"/> <Attribute name\="date" value\="March 14, 2009"/> <Attribute name\="category" value\="Business/World Business"/> </DataObject> </PageMap> ...</r>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 [Back to top](https://developers.google.com/custom-search/docs/structured_data#top)
 
@@ -183,7 +221,12 @@ or with the [Programmable Search Element](https://developers.google.com/custom-s
 
 ...
 
+<<<<<<< HEAD
 <div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\></div\>  
+=======
+<div class\="gcse-search" sort\_by\="metatags-pubdate:d:s"\>
+</div\>  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ...
 
 The `<meta>` tags excluded by Google include:
@@ -293,14 +336,30 @@ Google also extracts a variety of structured data from Microformats, RDFa and Mi
 
 The following includes a snippet of plain HTML code.
 
+<<<<<<< HEAD
 <p><strong>Kevin Grendelzilla</strong></p>  
+=======
+<p>
+<strong>Kevin Grendelzilla</strong>
+</p>  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 <p>Technical writer at Google</p>  
 <p>555 Search Parkway</p>  
 <p>Googlelandia, CA 94043</p>
 
 The following snippet shows the previous HTML code extended with microformats:
 
+<<<<<<< HEAD
 <div **class\="vcard"**\>  <p><strong **class\="fn"**\>Kevin Grendelzilla</strong></p>  <p><span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span></p>  <p><span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span></p>  
+=======
+<div **class\="vcard"**\>  <p>
+<strong **class\="fn"**\>Kevin Grendelzilla</strong>
+</p>  <p>
+<span **class\="title"**\>Technical writer</span> at <span **class\="org"**\>Google</span>
+</p>  <p>
+<span **class\="adr"**\>  <span **class\="street-address"**\>555 Search Parkway</span>  <span **class\="locality"**\>Googlelandia</span>, <span **class\="region"**\>CA</span>  <span **class\="postcode"**\>94043</span>  </span>
+</p>  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 </div>
 
 Google extracts a subset of this data, normalized and reorganized to correspond to how it would be displayed in rich snippets. This subset would be returned in XML results like this:
@@ -340,7 +399,11 @@ Like RDFa and Microformats, Microdata's attributes help you specify that your co
 The following is the same HTML marked up with microdata. Note that in this example we use a property 'nickname' that is not yet officially part of schema.org. Custom Search is a good way to explore possible schema.org extensions locally before proposing them to the wider community.
 
 <div itemscope itemtype\="http://schema.org/Person"\> My name is <span itemprop\="name"\>Bob Smith</span> but people call me <span itemprop\="nickname"\>Smithy</span>.  
+<<<<<<< HEAD
   Here is my home page: <a href\="http://www.example.com" itemprop\="url"\>www.example.com</a> I live in Albuquerque, NM and work as an <span itemprop\="title"\>engineer</span> at <span itemprop\="affiliation"\>ACME Corp</span>.  
+=======
+  Here is my home page: <a href\="http://www.example.com" itemprop\="url"\>www.example.com</a> I live in Albuquerque, NM and work as an <span itemprop\="title"\>engineer</span> at <span itemprop\="affiliation"\>ACME Corp</span>.  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 </div>
 
 The first line of this example includes a HTML `div` tag with an `itemscope` attribute that indicates that `div` contains a microdata item. The `itemtype="http://schema.org/Person"` attribute on the same tag tells us this is a person. Each property of the person item is identified with the `itemprop` attribute; for example, `itemprop="name"` on the `span` tag describes the person's name. Note that you are not limited to `span` and `div`; the `itemprop="url"` tag is attached to an `a` (anchor) tag.
@@ -365,9 +428,15 @@ Once you have found a page with structured data, you can view that page's source
 From a page with this markup, Google extracts the following data for use in rich snippets:
 
 hcard  
+<<<<<<< HEAD
   fn \= Godzilla Gigantis n  
     family\-name \= Gigantis given\-name \= Godzilla adr  
     locality \= Tokyo title \= Senior Giant Monster
+=======
+ fn \= Godzilla Gigantis n  
+ family\-name \= Gigantis given\-name \= Godzilla adr  
+ locality \= Tokyo title \= Senior Giant Monster
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Programmable Search Engine extracts the following subset of that data for use in structured search:
 
@@ -386,7 +455,11 @@ Structured data can be used in several Programmable Search Engine features inclu
 
 ---
 
+<<<<<<< HEAD
 # Customizing Results Snippets  |  Programmable Search Engine
+=======
+# Customizing Results Snippets | Programmable Search Engine
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -457,7 +530,11 @@ Custom Snippets works well with several other Programmable Search Engine feature
 
 ---
 
+<<<<<<< HEAD
 # Filtering and sorting search results  |  Programmable Search Engine
+=======
+# Filtering and sorting search results | Programmable Search Engine
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 > ## Excerpt
 >
@@ -663,6 +740,7 @@ For example, SignOnSanDiego.com, a California news portal, uses the Programmable
 To ensure readers see not only the most relevant, but also timely news, SignOnSanDiego uses the Bias by Attribute with a "strong" weight towards recent publication dates. SignOnSanDiego implements these date attributes with PageMaps; one used by SignOnSanDiego looks like this:
 
 <!--
+<<<<<<< HEAD
   <PageMap>
     <DataObject type="date">
       <Attribute name="displaydate" value="Wednesday, August 25, 2010"/>
@@ -675,15 +753,39 @@ To ensure readers see not only the most relevant, but also timely news, SignOnSa
     </DataObject>
   </PageMap>
   -->
+=======
+  <PageMap>
+    <DataObject type="date">
+      <Attribute name="displaydate" value="Wednesday, August 25, 2010"/>
+      <Attribute name="sdate" value="20100825"/>
+    </DataObject>
+
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="http://media.signonsandiego.com/img/photos/2010/08/25/635a63e9-f4a1-45aa-835a-ebee666b82e0news.ap.org\_t100.jpg"/>
+      <Attribute name="width" value="100"/>
+    </DataObject>
+  </PageMap>
+  -->
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 To apply Sort by Attribute over this field, you set the `sort` option in the search code for the Programmable Search Element as shown below:
 
 ...
 
+<<<<<<< HEAD
 <div class\="gcse-search" sort\_by\="date-sdate:d:s"\></div\>  
 ...
 
 Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s"></div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
+=======
+<div class\="gcse-search" sort\_by\="date-sdate:d:s"\>
+</div\>  
+...
+
+Just like the URL `&sort=` parameter described above, the sort option in the Programmable Search Element `<div class="gcse-search" sort_by="date-sdate:d:s">
+
+</div>` takes a combined attribute name, like `date-sdate`, and several optional parameters separated by colons. In this case, SignOnSanDiego specified sorting in descending order `d` using the strong bias `s` flavor of the operator. If you don’t provide qualifiers, the default is to use a descending order with a hard sort, just as it is in the URL operator case.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 The sort option also enables the Restrict by Range feature. For example a site like SignOnSanDiego might enable users to search for articles published between August 25 and September 9 in 2010. To implement this, you can set the sort options to `date-sdate:r:20100825:20100907`. This again uses the combined attribute name `date-sdate`, but instead restricts to the range `r` of specified values `20100825:20100907`. As with the URL parameter, you can omit the upper or lower item of the range in the `sort` option of the Programmable Search Element.
 
@@ -695,7 +797,12 @@ You can also use Filter by Attribute with the Programmable Search Element. For e
 
 ...
 
+<<<<<<< HEAD
 <div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\></div\>  
+=======
+<div class\="gcse-search" webSearchQueryAddition\="more:pagemap:linked-blog:blogspot"\>
+</div\>  
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ...
 
 This method is relatively inflexible because it adds a restriction to all queries issued from this control. To see other options, consult the documentation on the [Programmable Search Element](https://developers.google.com/custom-search/docs/element).

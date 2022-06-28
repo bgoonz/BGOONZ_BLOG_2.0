@@ -24,18 +24,31 @@ A computer bought in the last few years with modest specifications should be abl
 
 The minimum hardware I recommend is:
 
+<<<<<<< HEAD
 - 1.6 GHz or faster processor;
 - At least 1 GB of RAM;
 - At least 200MB Disk Space.
+=======
+-   1.6 GHz or faster processor;
+-   At least 1 GB of RAM;
+-   At least 200MB Disk Space.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Operating Systems
 
 VS Code has been tested on the following Operating Systems:
 
+<<<<<<< HEAD
 - OS X Yosemite and later.
 - Windows 7 (with .NET Framework 4.5.2), 8.0, 8.1 and 10 (32-bit and 64-bit).
 - Linux (Debian): Ubuntu Desktop 14.04, Debian 7.
 - Linux (Red Hat): Red Hat Enterprise Linux 7, CentOS 7, Fedora 23.
+=======
+-   OS X Yosemite and later.
+-   Windows 7 (with .NET Framework 4.5.2), 8.0, 8.1 and 10 (32-bit and 64-bit).
+-   Linux (Debian): Ubuntu Desktop 14.04, Debian 7.
+-   Linux (Red Hat): Red Hat Enterprise Linux 7, CentOS 7, Fedora 23.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Unofficial community builds for Raspberry Pi and Chromebooks
 
@@ -203,11 +216,19 @@ Too many extensions use the `*` Activation Event.
 
 This is how I would grade the scope definition of some of the extensions I have used:
 
+<<<<<<< HEAD
 - **The Good**: [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments).
 - **The Bad**:
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): It would be better to only target the languages it supports.
   - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one): It is active when a markdown file is open, or the workspace contains a README.md. The latter seems unnecessary to me.
 - **The Ugly**: All extensions with the `*` _Activation Event_ mentioned above.
+=======
+-   **The Good**: [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments).
+-   **The Bad**:
+    -   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): It would be better to only target the languages it supports.
+    -   [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one): It is active when a markdown file is open, or the workspace contains a README.md. The latter seems unnecessary to me.
+-   **The Ugly**: All extensions with the `*` _Activation Event_ mentioned above.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ## What impact can bundling have on an extension's performance?
 
@@ -255,6 +276,7 @@ I am focusing on extensions that I have used myself here. I don't want to specul
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) is the most popular static analysis tool for JavaScript and TypeScript. It highlights problems in the editor with red squiggly lines.
 
+<<<<<<< HEAD
 - **Author**: Microsoft.
 - **Number of installs**: 11 million.
 - **Marketplace Rating:** 4.3/5 (156).
@@ -266,6 +288,19 @@ I am focusing on extensions that I have used myself here. I don't want to specul
 - **Test suite**: Appears to be very basic. Just a minor test of glob patterns.
 - **Actively maintained**: Yes.
 - **Alternative extensions:** [JS Hint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint), [TS Lint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin).
+=======
+-   **Author**: Microsoft.
+-   **Number of installs**: 11 million.
+-   **Marketplace Rating:** 4.3/5 (156).
+-   **Core features**: Reporting syntax problems. Ability to automatically fix some problems.
+-   **Activation Events**: On startup (`*`). It may be changed to `onStartupFinished` in the next release. See [this open issue](https://github.com/microsoft/vscode-eslint/issues/1068) for explanation of why this choice was made.
+-   **Are resources optimized**: Yes.
+-   **File size**: 133KB.
+-   **Activation time on my system**: 39ms.
+-   **Test suite**: Appears to be very basic. Just a minor test of glob patterns.
+-   **Actively maintained**: Yes.
+-   **Alternative extensions:** [JS Hint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint), [TS Lint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin).
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ESLint is a solid extension. The performance is excellent.
 
@@ -279,6 +314,7 @@ It is actively maintained. It does not have a significant test suite.
 
 [Prettier](https://prettier.io/) is an opinionated code formatter. It currently supports the following languages: JavaScript, TypeScript, Flow, JSX, JSON, CSS, SCSS, Less, HTML, Vue, Angular, GraphQL, Markdown, YAML.
 
+<<<<<<< HEAD
 - **Author**: Prettier.
 - **Number of installs**: 8.5 million.
 - **Marketplace Rating:** 3.8/5 (204).
@@ -290,6 +326,19 @@ It is actively maintained. It does not have a significant test suite.
 - **Test suite**: Yes. Coverage looks decent.
 - **Actively maintained**: Yes.
 - **Alternative extensions:** [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify).
+=======
+-   **Author**: Prettier.
+-   **Number of installs**: 8.5 million.
+-   **Marketplace Rating:** 3.8/5 (204).
+-   **Core features**: Formatting code.
+-   **Activation Events**: `onStartupFinished`.
+-   **Are resources optimized**: Yes.
+-   **File size**: 2.1MB.
+-   **Activation time on my system**: 286ms.
+-   **Test suite**: Yes. Coverage looks decent.
+-   **Actively maintained**: Yes.
+-   **Alternative extensions:** [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify).
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Prettier does a great job at simplifying code formatting.
 
@@ -303,6 +352,7 @@ The activation scope is very wide. It would be preferable to target the supporte
 
 [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) launches a local development server to give a live preview of your HTML and SVG files.
 
+<<<<<<< HEAD
 - **Author**: Retwick Dey.
 - **Number of installs**: 7.5 million.
 - **Marketplace Rating:** 4.5/5 (269).
@@ -314,6 +364,19 @@ The activation scope is very wide. It would be preferable to target the supporte
 - **Test suite**: Yes. Basic tests.
 - **Actively maintained**: No. Last commit was a year ago. The author of the extension is looking for a new maintainer.
 - **Alternative extensions:** I haven't found one!
+=======
+-   **Author**: Retwick Dey.
+-   **Number of installs**: 7.5 million.
+-   **Marketplace Rating:** 4.5/5 (269).
+-   **Core features**: HTML and SVG live preview.
+-   **Activation Events**: On startup (`*`).
+-   **Are resources optimized**: No.
+-   **File size**: 2.5MB.
+-   **Activation time on my system**: 2513ms.
+-   **Test suite**: Yes. Basic tests.
+-   **Actively maintained**: No. Last commit was a year ago. The author of the extension is looking for a new maintainer.
+-   **Alternative extensions:** I haven't found one!
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 When it works, it is a convenient extension to use.
 
@@ -327,6 +390,7 @@ I would recommend becoming the maintainer and whipping it into shape. Or finding
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) helps visualize code authorship and explore Git repositories.
 
+<<<<<<< HEAD
 - **Author**: Eric Amodio.
 - **Number of installs**: 6.5 million.
 - **Marketplace Rating:** 4.86/5 (387)
@@ -338,6 +402,19 @@ I would recommend becoming the maintainer and whipping it into shape. Or finding
 - **Test suite**: No.
 - **Actively maintained**: Yes, but recent activity is low. Last commit was 4 months ago.
 - **Alternative extensions:** None.
+=======
+-   **Author**: Eric Amodio.
+-   **Number of installs**: 6.5 million.
+-   **Marketplace Rating:** 4.86/5 (387)
+-   **Core features**: Visualization of code authorship at a glance. Rich sidebar views of git repos.
+-   **Activation Events**: On startup (`*`).
+-   **Are resources optimized**: Yes.
+-   **File size**: 1.5MB.
+-   **Activation time on my system**: 35ms.
+-   **Test suite**: No.
+-   **Actively maintained**: Yes, but recent activity is low. Last commit was 4 months ago.
+-   **Alternative extensions:** None.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 GitLens is a good idea and can be helpful for gaining insights into a codebase.
 
@@ -355,6 +432,7 @@ There has been a lull in activity recently. I don't know if that is a temporary 
 
 Vue language support.
 
+<<<<<<< HEAD
 - **Author**: Pine Wu.
 - **Number of installs**: 5.6 million.
 - **Marketplace Rating:** 4.5/5 (117)
@@ -366,6 +444,19 @@ Vue language support.
 - **Test suite**: Yes.
 - **Actively maintained**: Yes.
 - **Alternative extensions:** No obvious alternative. Formatting can be done with Prettier.
+=======
+-   **Author**: Pine Wu.
+-   **Number of installs**: 5.6 million.
+-   **Marketplace Rating:** 4.5/5 (117)
+-   **Core features**: Syntax highlighting. Intellisense. Code Formatting.
+-   **Activation Events**: `onLanguage: vue`.
+-   **Are resources optimized**: No.
+-   **File size**: 70.6 MB.
+-   **Activation time on my system**: 252ms. However, the "Finish Activate" stat is 3943ms!
+-   **Test suite**: Yes.
+-   **Actively maintained**: Yes.
+-   **Alternative extensions:** No obvious alternative. Formatting can be done with Prettier.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Vetur is the go-to extension for developing Vue apps in VS Code.
 
@@ -383,6 +474,7 @@ The Developers are working on bundling the extension at the moment in [this issu
 
 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) synchronize settings using GitHub Gist.
 
+<<<<<<< HEAD
 - **Author**: Shan Khan.
 - **Number of installs**: 2 million.
 - **Marketplace Rating:** 4.61/5 (638)
@@ -394,6 +486,19 @@ The Developers are working on bundling the extension at the moment in [this issu
 - **Test suite**: Yes.
 - **Actively maintained**: No. Last commit was 1 year ago.
 - **Alternative extensions:** This is a [built-in feature in VS Code](https://code.visualstudio.com/docs/editor/settings-sync).
+=======
+-   **Author**: Shan Khan.
+-   **Number of installs**: 2 million.
+-   **Marketplace Rating:** 4.61/5 (638)
+-   **Core features**: Sync settings.
+-   **Activation Events**: On startup (`*`).
+-   **Are resources optimized**: Yes.
+-   **File size**: 1.2 MB.
+-   **Activation time on my system**: 2513ms.
+-   **Test suite**: Yes.
+-   **Actively maintained**: No. Last commit was 1 year ago.
+-   **Alternative extensions:** This is a [built-in feature in VS Code](https://code.visualstudio.com/docs/editor/settings-sync).
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 This was a standout extension. Syncing your complete editor setup across machines is super useful.
 
@@ -409,6 +514,7 @@ My guess is that the built-in feature will do a better job eventually as it has 
 
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) fulfills a lot of your markdown needs.
 
+<<<<<<< HEAD
 - **Author**: Yu Zhang.
 - **Number of installs**: 1.7 million.
 - **Marketplace Rating:** 4.8/5 (90)
@@ -420,6 +526,19 @@ My guess is that the built-in feature will do a better job eventually as it has 
 - **Test suite**: Yes.
 - **Actively maintained**: Yes.
 - **Alternative extensions:** [Marky Markdown](https://marketplace.visualstudio.com/items?itemName=robole.marky-markdown).
+=======
+-   **Author**: Yu Zhang.
+-   **Number of installs**: 1.7 million.
+-   **Marketplace Rating:** 4.8/5 (90)
+-   **Core features**: Toggle-style editing. Table of contents.
+-   **Activation Events**: `onLanguage: markdown`, `onCommand: markdown.extension.printToHtmlBatch`, `workspaceContains: README.md`.
+-   **Are resources optimized**: Yes.
+-   **File size**: 4.1 MB.
+-   **Activation time on my system**: 195ms.
+-   **Test suite**: Yes.
+-   **Actively maintained**: Yes.
+-   **Alternative extensions:** [Marky Markdown](https://marketplace.visualstudio.com/items?itemName=robole.marky-markdown).
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 It is a solid extension and the performance is excellent.
 
@@ -447,6 +566,7 @@ VS Code automatically restores the project state from the previous session. This
 
 You can disable some of the restore settings to speed up the loading time:
 
+<<<<<<< HEAD
 - `Workbench › Editor: Restore View State`: Enabled by default.
 - `Files: Restore Undo Stack`: Enabled by default.
 - `Workbench: Startup Editor`: Controls which editor is shown at startup. The default is `welcome page`. You can set this to `none` to prevent any editor appearing on startup.
@@ -458,6 +578,19 @@ You can disable some of the restore settings to speed up the loading time:
 - **CodeLens**: `Editor: CodeLens`. Enabled by default.
 - **Format on Save**: `Editor: Format On Save`. Disabled by default.
 - **Format on Paste**: `Editor: Format On Paste`. Disabled by default.
+=======
+-   `Workbench › Editor: Restore View State`: Enabled by default.
+-   `Files: Restore Undo Stack`: Enabled by default.
+-   `Workbench: Startup Editor`: Controls which editor is shown at startup. The default is `welcome page`. You can set this to `none` to prevent any editor appearing on startup.
+
+### Disable expensive features that impact editing performance
+
+-   **Minimap**: `Editor › Minimap: Enabled`. Enabled by default.
+-   **Word wrap**: `Editor: Word Wrap`. Disabled by default.
+-   **CodeLens**: `Editor: CodeLens`. Enabled by default.
+-   **Format on Save**: `Editor: Format On Save`. Disabled by default.
+-   **Format on Paste**: `Editor: Format On Paste`. Disabled by default.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Disable extensions for a workspace
 
@@ -503,11 +636,19 @@ code --disable-gpu
 
 To set this permanently, do the following:
 
+<<<<<<< HEAD
 - Open the Command Palette (Ctrl+Shift+P).
 - Run the **Preferences: Configure Runtime Arguments** command.
 - This command will open a `argv.json` file to configure runtime arguments. You might see some default arguments there already.
 - Add `"disable-hardware-acceleration": true`.
 - Restart VS Code.
+=======
+-   Open the Command Palette (Ctrl+Shift+P).
+-   Run the **Preferences: Configure Runtime Arguments** command.
+-   This command will open a `argv.json` file to configure runtime arguments. You might see some default arguments there already.
+-   Add `"disable-hardware-acceleration": true`.
+-   Restart VS Code.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### Installation appears to be corrupt with \[Unsupported\] message
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # SEO Report for [https://bgoonzblog20.netlify.app/](https://bgoonzblog20.netlify.app/)
+=======
+# SEO Report for [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ### But first:
 
@@ -6,6 +10,7 @@
 
 [![](https://www.google.com/s2/favicons?domain=https://search.google.com/test/mobile-friendly)](https://search.google.com/test/mobile-friendly?referer=seo-extension.com&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Is your page is **Mobile Friendly ?**](https://search.google.com/test/mobile-friendly?referer=seo-extension.com&url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
 
+<<<<<<< HEAD
 [![](https://www.google.com/s2/favicons?domain=http://gtmetrix.com/)](http://gtmetrix.com/?url=https://bgoonzblog20.netlify.app/)[Analyze **Performance** with **GTmetrix**](http://gtmetrix.com/?url=https://bgoonzblog20.netlify.app/)
 
 [![](https://www.google.com/s2/favicons?domain=http://developers.google.com)](http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Analyze **Performance** with **PageSpeed** (Google tool)](http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
@@ -17,6 +22,19 @@
 [![](https://www.google.com/s2/favicons?domain=https://www.facebook.com/)](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Check **Open Graph** properties with **Facebook** Sharing Debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-wmtips.png)](http://www.wmtips.com/tools/keyword-density-analyzer/?&url=https://bgoonzblog20.netlify.app/)[Analyze **Keyword density** with WMtips](http://www.wmtips.com/tools/keyword-density-analyzer/?&url=https://bgoonzblog20.netlify.app/)
+=======
+[![](https://www.google.com/s2/favicons?domain=http://gtmetrix.com/)](http://gtmetrix.com/?url=https://bgoonz-blog.netlify.app/)[Analyze **Performance** with **GTmetrix**](http://gtmetrix.com/?url=https://bgoonz-blog.netlify.app/)
+
+[![](https://www.google.com/s2/favicons?domain=http://developers.google.com)](http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Analyze **Performance** with **PageSpeed** (Google tool)](http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
+
+[![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/w3c-ico.png)](http://validator.w3.org/check?uri=https://bgoonz-blog.netlify.app/)[Validate **HTML, XHTML,...**](http://validator.w3.org/check?uri=https://bgoonz-blog.netlify.app/)
+
+[![](https://www.google.com/s2/favicons?domain=http://jigsaw.w3.org)](http://jigsaw.w3.org/css-validator/validator?uri=https://bgoonz-blog.netlify.app/)[Validate **CSS**](http://jigsaw.w3.org/css-validator/validator?uri=https://bgoonz-blog.netlify.app/)
+
+[![](https://www.google.com/s2/favicons?domain=https://www.facebook.com/)](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)[Check **Open Graph** properties with **Facebook** Sharing Debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fbgoonz-blog.netlify.app%2F)
+
+[![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-wmtips.png)](http://www.wmtips.com/tools/keyword-density-analyzer/?&url=https://bgoonz-blog.netlify.app/)[Analyze **Keyword density** with WMtips](http://www.wmtips.com/tools/keyword-density-analyzer/?&url=https://bgoonz-blog.netlify.app/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 [![](https://www.google.com/s2/favicons?domain=https://www.google.be/)](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)[Check **Microdata, Microformats** and **RDFa**](https://search.google.com/test/rich-results?url=https%3A%2F%2Fbgoonz-blog.netlify.app%2F&user_agent=1)
 
@@ -24,13 +42,21 @@
 
 SEO
 
+<<<<<<< HEAD
 [![](https://www.google.com/s2/favicons?domain=http://gtmetrix.com/)](http://gtmetrix.com/?url=https://bgoonzblog20.netlify.app/)[GTmetrix](http://gtmetrix.com/?url=https://bgoonzblog20.netlify.app/)
+=======
+[![](https://www.google.com/s2/favicons?domain=http://gtmetrix.com/)](http://gtmetrix.com/?url=https://bgoonz-blog.netlify.app/)[GTmetrix](http://gtmetrix.com/?url=https://bgoonz-blog.netlify.app/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-alexa.png)](http://www.alexa.com/siteinfo/bgoonz-blog.netlify.app)[Alexa](http://www.alexa.com/siteinfo/bgoonz-blog.netlify.app)
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-majestic.png)](http://www.majesticseo.com/reports/site-explorer/summary/bgoonz-blog.netlify.app)[Majestic.com](http://www.majesticseo.com/reports/site-explorer/summary/bgoonz-blog.netlify.app)
 
+<<<<<<< HEAD
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-wmtips.png)](http://www.wmtips.com/tools/info/?url=https://bgoonzblog20.netlify.app/)[WMtips.com - Info (whois, ...)](http://www.wmtips.com/tools/info/?url=https://bgoonzblog20.netlify.app/)
+=======
+[![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/seo-wmtips.png)](http://www.wmtips.com/tools/info/?url=https://bgoonz-blog.netlify.app/)[WMtips.com - Info (whois, ...)](http://www.wmtips.com/tools/info/?url=https://bgoonz-blog.netlify.app/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 [![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/tools/metricspot.png)](http://www.metricspot.com/)[MetricSpot](http://www.metricspot.com/)
 
@@ -97,7 +123,11 @@ HTML, Meta Tags, Metadata
 
 URL ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
+<<<<<<< HEAD
 https://bgoonzblog20.netlify.app/
+=======
+https://bgoonz-blog.netlify.app/
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Canonical ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
@@ -125,14 +155,24 @@ Lang attribut of HTML element is missing.
 
 ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/ga-icon-na.png) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
 
+<<<<<<< HEAD
 [Robots.txt](https://bgoonzblog20.netlify.app/robots.txt) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | [Sitemap.xml](https://bgoonzblog20.netlify.app/sitemap.xml) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
+=======
+[Robots.txt](https://bgoonz-blog.netlify.app/robots.txt) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png) | [Sitemap.xml](https://bgoonz-blog.netlify.app/sitemap.xml) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ---
 
 ALL LINKS\
+<<<<<<< HEAD
 APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonzblog20.netlify.app/logo-circle.png "apple-touch-icon")\
 APPLE-TOUCH-ICON : [logo-canvas.png](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png "apple-touch-icon")\
 ICON : [webdevhublogo2.png](https://bgoonzblog20.netlify.app/images/webdevhublogo2.png "icon")\
+=======
+APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'apple-touch-icon')\
+APPLE-TOUCH-ICON : [logo-canvas.png](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png 'apple-touch-icon')\
+ICON : [webdevhublogo2.png](https://bgoonz-blog.netlify.app/images/webdevhublogo2.png 'icon')\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 PRECONNECT : https://fonts.gstatic.com\
 PREFETCH : component---src-templates-advanced-js-c66268766ef5c957450f.js\
 PREFETCH : component---src-templates-blog-js-36eb4fae1add87ca6010.js\
@@ -164,7 +204,11 @@ PRELOAD : integrator.js\
 PRELOAD : page-data.json\
 PRELOAD : styles-7d4153d260c0197f0043.js\
 PRELOAD : webpack-runtime-7059fe0afa2407e27b1a.js\
+<<<<<<< HEAD
 SHORTCUT ICON : [favicon.ico](https://bgoonzblog20.netlify.app/favicon.ico "shortcut icon")\
+=======
+SHORTCUT ICON : [favicon.ico](https://bgoonz-blog.netlify.app/favicon.ico 'shortcut icon')\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 STYLESHEET : [default.min.css](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css)\
 STYLESHEET : [algoliasearchNetlify.css](https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css)\
 STYLESHEET : [bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css)\
@@ -202,14 +246,24 @@ HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOm
 HTTP-EQUIV (ORIGIN-TRIAL) : Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 OG:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
+<<<<<<< HEAD
 OG:IMAGE : [code.png](https://bgoonzblog20.netlify.app/images/code.png "code.png")\
 OG:IMAGE : [code.png](https://bgoonzblog20.netlify.app/images/code.png "code.png")\
 OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 "DROicc16")\
+=======
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
+OG:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
+OG:IMAGE : [DROicc16](https://mugshotbot.com/m/DROicc16 'DROicc16')\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 OG:TITLE : Web-Dev-Hub\
 OG:TITLE : Web-Dev-Hub\
 OG:TYPE : website\
 OG:TYPE : website\
+<<<<<<< HEAD
 OG:URL : <https://bgoonzblog20.netlify.app/>\
+=======
+OG:URL : <https://bgoonz-blog.netlify.app/>\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 TWITTER:CARD : summary\
 TWITTER:CARD : summary_large_image\
 TWITTER:CARD : summary_large_image\
@@ -219,14 +273,24 @@ TWITTER:DESCRIPTION : The new home of my blog resource sharing website.\
 TWITTER:DESCRIPTION : Web-Dev-Hub\
 TWITTER:DESCRIPTION : my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.\
 TWITTER:DOMAIN : bgoonz-blog.netlify.app\
+<<<<<<< HEAD
 TWITTER:IMAGE : [4.jpg](https://bgoonzblog20.netlify.app/images/4.jpg "4.jpg")\
 TWITTER:IMAGE : [code.png](https://bgoonzblog20.netlify.app/images/code.png "code.png")\
 TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonzblog20.netlify.app/logo-circle.png "logo-circle.png")\
+=======
+TWITTER:IMAGE : [4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg '4.jpg')\
+TWITTER:IMAGE : [code.png](https://bgoonz-blog.netlify.app/images/code.png 'code.png')\
+TWITTER:IMAGE:SRC : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'logo-circle.png')\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 TWITTER:SITE : @bgoonz\
 TWITTER:TITLE : Web Development Resource Hub Bryan Guner\
 TWITTER:TITLE : Web-Dev-Hub\
 TWITTER:TITLE : Web-Dev-Hub\
+<<<<<<< HEAD
 TWITTER:URL : <https://bgoonzblog20.netlify.app/>\
+=======
+TWITTER:URL : <https://bgoonz-blog.netlify.app/>\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 VIEWPORT : width=device-width, initial-scale=1.0, shrink-to-fit=no\
 VIEWPORT : width=device-width, initial-scale=1.0\
 VIEWPORT : width=device-width, initial-scale=1\
@@ -236,9 +300,15 @@ VIEWPORT : width=device-width, initialScale=1.0
 
 ALL SCRIPTS\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js) jquery.min.js](https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js)\
+<<<<<<< HEAD
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonzblog20.netlify.app/__/firebase/8.8.1/firebase-analytics.js) firebase-analytics.js](https://bgoonzblog20.netlify.app/__/firebase/8.8.1/firebase-analytics.js)\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonzblog20.netlify.app/__/firebase/8.8.1/firebase-app.js) firebase-app.js](https://bgoonzblog20.netlify.app/__/firebase/8.8.1/firebase-app.js)\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonzblog20.netlify.app/__/firebase/init.js) init.js](https://bgoonzblog20.netlify.app/__/firebase/init.js)\
+=======
+SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonz-blog.netlify.app/__/firebase/8.8.1/firebase-analytics.js) firebase-analytics.js](https://bgoonz-blog.netlify.app/__/firebase/8.8.1/firebase-analytics.js)\
+SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonz-blog.netlify.app/__/firebase/8.8.1/firebase-app.js) firebase-app.js](https://bgoonz-blog.netlify.app/__/firebase/8.8.1/firebase-app.js)\
+SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://bgoonz-blog.netlify.app/__/firebase/init.js) init.js](https://bgoonz-blog.netlify.app/__/firebase/init.js)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js) highlight.min.js](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js)\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://connect.facebook.net/en_US/sdk.js?hash=6a602f346aa883611e40755bcd565715) sdk.js](https://connect.facebook.net/en_US/sdk.js?hash=6a602f346aa883611e40755bcd565715)\
 SCRIPT : [![](https://www.google.com/s2/favicons?domain=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js) adsbygoogle.js](https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js)\
@@ -282,7 +352,11 @@ NOOPENER : [Job Search Resources](https://determined-dijkstra-ee7390.netlify.app
 NOOPENER : [Ternary 2 If Else](https://ternary42.netlify.app/)\
 NOOPENER : [Text Tools](https://devtools42.netlify.app/)\
 NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
+<<<<<<< HEAD
 NOOPENER : [Wordpress Blog](https://bgoonzblog20.netlify.app/)\
+=======
+NOOPENER : [Wordpress Blog](https://bgoonz-blog.netlify.app/)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
 NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
 NOOPENER : [SearchAwesome](https://search-awesome.vercel.app/)\
@@ -293,12 +367,21 @@ NOOPENER : [Projects](https://project-portfolio42.netlify.app/)\
 NOOPENER : [OG-Blog](https://web-dev-resource-hub.netlify.app/)\
 NOOPENER : [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)\
 NOOPENER : [Archive](https://github.com/bgoonz/UsefulResourceRepo2.0)\
+<<<<<<< HEAD
 NOOPENER : [nodejs](https://bgoonzblog20.netlify.app/docs/articles/nodejs/)\
 NOOPENER : [platform docs](https://bgoonzblog20.netlify.app/blog/platform-docs/)\
 NOOPENER : [ds-algo](https://bgoonzblog20.netlify.app/docs/articles/ds-algo-overview/)\
 NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
 NOOPENER : [Blog](https://bgoonzblog20.netlify.app/blog/)\
 NOOPENER : [Python](https://bgoonzblog20.netlify.app/docs/python/python-ds)
+=======
+NOOPENER : [nodejs](https://bgoonz-blog.netlify.app/docs/articles/nodejs/)\
+NOOPENER : [platform docs](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
+NOOPENER : [ds-algo](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-overview/)\
+NOOPENER : [Blog-Post-Archive](https://bgoonz.blogspot.com/)\
+NOOPENER : [Blog](https://bgoonz-blog.netlify.app/blog/)\
+NOOPENER : [Python](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 HTML.
 
@@ -475,7 +558,11 @@ Title: /\
 ALT: neural networks\
 Title: /\
  |
+<<<<<<< HEAD
 | [neural.png](https://bgoonzblog20.netlify.app/_static/app-assets/neural.png)\
+=======
+| [neural.png](https://bgoonz-blog.netlify.app/_static/app-assets/neural.png)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ALT: /\
 Title: /\
  |
@@ -503,11 +590,19 @@ Title: /\
 ALT: /\
 Title: /\
  |
+<<<<<<< HEAD
 | [My Post.png](https://bgoonzblog20.netlify.app/images/My%20Post.png)\
 ALT: /\
 Title: /\
  |
 | [lambda-demo1.gif](https://bgoonzblog20.netlify.app/_static/app-assets/lambda-demo1.gif)\
+=======
+| [My Post.png](https://bgoonz-blog.netlify.app/images/My%20Post.png)\
+ALT: /\
+Title: /\
+ |
+| [lambda-demo1.gif](https://bgoonz-blog.netlify.app/_static/app-assets/lambda-demo1.gif)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ALT: /\
 Title: /\
  |
@@ -542,12 +637,17 @@ Title: /\
 Title: /\
  |
 | We found 3 more occurence(s) of this link. |
+<<<<<<< HEAD
 | [/](https://bgoonzblog20.netlify.app/)\
+=======
+| [/](https://bgoonz-blog.netlify.app/)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 Title: /\
  |
 | [//pdfcrowd.com/url_to_pdf/?](https://pdfcrowd.com/url_to_pdf/?)\
 Title: /\
  |
+<<<<<<< HEAD
 | [/angolia](https://bgoonzblog20.netlify.app/angolia)\
 Title: /\
  |
@@ -555,11 +655,21 @@ Title: /\
 Title: /\
  |
 | [/blog/platform-docs/](https://bgoonzblog20.netlify.app/blog/platform-docs/)\
+=======
+| [/angolia](https://bgoonz-blog.netlify.app/angolia)\
+Title: /\
+ |
+| [/blog/](https://bgoonz-blog.netlify.app/blog/)\
+Title: /\
+ |
+| [/blog/platform-docs/](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 Title: /\
  |
 | [/blogWcomments/](https://blog-w-comments.vercel.app/)\
 Title: /\
  |
+<<<<<<< HEAD
 | [/docs](https://bgoonzblog20.netlify.app/docs)\
 Title: /\
  |
@@ -664,6 +774,112 @@ Title: /\
 Title: /\
  |
 | [/showcase](https://bgoonzblog20.netlify.app/showcase)\
+=======
+| [/docs](https://bgoonz-blog.netlify.app/docs)\
+Title: /\
+ |
+| We found 3 more occurence(s) of this link. |
+| [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/articles/](https://bgoonz-blog.netlify.app/docs/articles/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/articles/ds-algo-overview/](https://bgoonz-blog.netlify.app/docs/articles/ds-algo-overview/)\
+Title: /\
+ |
+| [/docs/articles/nodejs/](https://bgoonz-blog.netlify.app/docs/articles/nodejs/)\
+Title: /\
+ |
+| [/docs/audio/](https://bgoonz-blog.netlify.app/docs/audio/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/audio/audio](https://bgoonz-blog.netlify.app/docs/audio/audio)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/audio/dfft](https://bgoonz-blog.netlify.app/docs/audio/dfft)\
+Title: /\
+ |
+| [/docs/community/](https://bgoonz-blog.netlify.app/docs/community/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/content/](https://bgoonz-blog.netlify.app/docs/content/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/docs/](https://bgoonz-blog.netlify.app/docs/docs/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/faq/contact](https://bgoonz-blog.netlify.app/docs/faq/contact)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/gallery](https://bgoonz-blog.netlify.app/docs/gallery)\
+Title: /\
+ |
+| [/docs/interact/](https://bgoonz-blog.netlify.app/docs/interact/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/javascript/](https://bgoonz-blog.netlify.app/docs/javascript/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/medium/](https://bgoonz-blog.netlify.app/docs/medium/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/python/](https://bgoonz-blog.netlify.app/docs/python/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/python/python-ds](https://bgoonz-blog.netlify.app/docs/python/python-ds)\
+Title: /\
+ |
+| [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/react/](https://bgoonz-blog.netlify.app/docs/react/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/sitemap](https://bgoonz-blog.netlify.app/docs/sitemap)\
+Title: /\
+ |
+| [/docs/tools](https://bgoonz-blog.netlify.app/docs/tools)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/jamstack](https://bgoonz-blog.netlify.app/jamstack)\
+Title: /\
+ |
+| [/lorem-ipsum](https://bgoonz-blog.netlify.app/lorem-ipsum)\
+Title: /\
+ |
+| We found 2 more occurence(s) of this link. |
+| [/mailto:bryan.guner@gmail.com](https://bgoonz-blog.netlify.app/mailto:bryan.guner@gmail.com)\
+Title: /\
+ |
+| [/neural networks](https://bgoonz-blog.netlify.app/neural%20networks)\
+Title: /\
+ |
+| [/showcase](https://bgoonz-blog.netlify.app/showcase)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 Title: /\
  |
 | We found 2 more occurence(s) of this link. |
@@ -708,7 +924,11 @@ Title: /\
 | <https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://bgoonzblog20.netlify.app/docs/react/react2/>\
+=======
+| <https://bgoonz-blog.netlify.app/docs/react/react2/>\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 Title: /\
  |
 | <https://determined-dijkstra-ee7390.netlify.app/>\
@@ -822,7 +1042,11 @@ Title: /\
 | <https://twitter.com/bgooonz>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://bgoonzblog20.netlify.app/>\
+=======
+| <https://bgoonz-blog.netlify.app/>\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 Title: /\
  |
 | <https://web-dev-interview-prep-quiz-website.netlify.app/>\
@@ -884,11 +1108,19 @@ Web-Dev-Hub |
 | og:description\
 my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting. |
 | og:image\
+<<<<<<< HEAD
 [![](https://bgoonzblog20.netlify.app/images/code.png)](https://bgoonzblog20.netlify.app/images/code.png)\
 [code.png](https://bgoonzblog20.netlify.app/images/code.png)\
  |
 | og:url\
 https://bgoonzblog20.netlify.app/ |
+=======
+[![](https://bgoonz-blog.netlify.app/images/code.png)](https://bgoonz-blog.netlify.app/images/code.png)\
+[code.png](https://bgoonz-blog.netlify.app/images/code.png)\
+ |
+| og:url\
+https://bgoonz-blog.netlify.app/ |
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 | og:type\
 website |
 | og:title\
@@ -896,8 +1128,13 @@ Web-Dev-Hub |
 | og:description\
 my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting. |
 | og:image\
+<<<<<<< HEAD
 [![](https://bgoonzblog20.netlify.app/images/code.png)](https://bgoonzblog20.netlify.app/images/code.png)\
 [code.png](https://bgoonzblog20.netlify.app/images/code.png)\
+=======
+[![](https://bgoonz-blog.netlify.app/images/code.png)](https://bgoonz-blog.netlify.app/images/code.png)\
+[code.png](https://bgoonz-blog.netlify.app/images/code.png)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
  |
 | og:image\
 [![](https://mugshotbot.com/m/DROicc16)](https://mugshotbot.com/m/DROicc16)\
@@ -913,8 +1150,13 @@ Web-Dev-Hub |
 | twitter:description\
 Web-Dev-Hub |
 | twitter:image\
+<<<<<<< HEAD
 [![](https://bgoonzblog20.netlify.app/images/4.jpg)](https://bgoonzblog20.netlify.app/images/4.jpg)\
 [4.jpg](https://bgoonzblog20.netlify.app/images/4.jpg)\
+=======
+[![](https://bgoonz-blog.netlify.app/images/4.jpg)](https://bgoonz-blog.netlify.app/images/4.jpg)\
+[4.jpg](https://bgoonz-blog.netlify.app/images/4.jpg)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
  |
 | twitter:card\
 summary |
@@ -923,8 +1165,13 @@ summary |
 | twitter:creator\
 @bgoonz |
 | twitter:image:src\
+<<<<<<< HEAD
 [![](https://bgoonzblog20.netlify.app/logo-circle.png)](https://bgoonzblog20.netlify.app/logo-circle.png)\
 [logo-circle.png](https://bgoonzblog20.netlify.app/logo-circle.png)\
+=======
+[![](https://bgoonz-blog.netlify.app/logo-circle.png)](https://bgoonz-blog.netlify.app/logo-circle.png)\
+[logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
  |
 | twitter:title\
 Web Development Resource Hub Bryan Guner |
@@ -935,14 +1182,23 @@ summary_large_image |
 | twitter:domain\
 bgoonz-blog.netlify.app |
 | twitter:url\
+<<<<<<< HEAD
 https://bgoonzblog20.netlify.app/ |
+=======
+https://bgoonz-blog.netlify.app/ |
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 | twitter:title\
 Web-Dev-Hub |
 | twitter:description\
 my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting. |
 | twitter:image\
+<<<<<<< HEAD
 [![](https://bgoonzblog20.netlify.app/images/code.png)](https://bgoonzblog20.netlify.app/images/code.png)\
 [code.png](https://bgoonzblog20.netlify.app/images/code.png)\
+=======
+[![](https://bgoonz-blog.netlify.app/images/code.png)](https://bgoonz-blog.netlify.app/images/code.png)\
+[code.png](https://bgoonz-blog.netlify.app/images/code.png)\
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
  |
 | twitter:card\
 summary_large_image |

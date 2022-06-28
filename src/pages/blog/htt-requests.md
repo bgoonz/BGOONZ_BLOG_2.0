@@ -3,21 +3,31 @@ title: HTT{ Requests
 template: post
 subtitle: What is HTTP
 excerpt: HTTP is a protocol, or a definite set of rules, for accessing resources
-  on the web.
+    on the web.
 date: 2022-04-20T06:40:21.724Z
 image: https://i.imgur.com/hXISkxy.png
 thumb_image: https://i.imgur.com/hXISkxy.png
 image_position: right
 author: src/data/authors/bgoon.yaml
 categories:
+<<<<<<< HEAD
   - src/data/categories/tools.yaml
 tags:
   - src/data/tags/links.yaml
+=======
+    - src/data/categories/html.yaml
+    - src/data/categories/google.yaml
+    - src/data/categories/git.yaml
+tags:
+    - src/data/tags/links.yaml
+    - src/data/tags/resources.yaml
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 show_author_bio: true
 related_posts:
-  - src/pages/blog/using-the-dom.md
+    - src/pages/blog/using-the-dom.md
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 ## What is HTTP?
@@ -58,29 +68,42 @@ Your client application communicated with a server application running somewhere
 
 An HTTP request must have the following:
 
+<<<<<<< HEAD
 * An HTTP method (like `GET`)
 * A host URL (like `https://api.spotify.com/`)
 * An endpoint path(like  `v1/artists/{id}/related-artists`)
+=======
+-   An HTTP method (like `GET`)
+-   A host URL (like `https://api.spotify.com/`)
+-   An endpoint path(like `v1/artists/{id}/related-artists`)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 A request can also optionally have:
 
-* Body
-* Headers
-* Query strings
-* HTTP version
+-   Body
+-   Headers
+-   Query strings
+-   HTTP version
 
 ### The Anatomy of an HTTP Response
 
 A response must have the following:
 
+<<<<<<< HEAD
 * Protocol version (like `HTTP/1.1`)
 * Status code (like  `200`)
 * Status text (`OK`)
 * Headers
+=======
+-   Protocol version (like `HTTP/1.1`)
+-   Status code (like `200`)
+-   Status text (`OK`)
+-   Headers
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 A response may also optionally have:
 
-* Body
+-   Body
 
 ## HTTP Methods Explained
 
@@ -160,20 +183,20 @@ Every user on GitHub can create gists, retrieve their gists, retrieve all public
 
 A quick Hoppscotch walkthrough:
 
-* There is a drop down menu where you can select the method you want to create a request with.
-* There is a text box where you should paste the URL of of the API endpoint you want to access.
+-   There is a drop down menu where you can select the method you want to create a request with.
+-   There is a text box where you should paste the URL of of the API endpoint you want to access.
 
 ![Screen-Shot-2022-01-24-at-12.35.33-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.35.33-PM.png)
 
-* There is a Headers section where we will be passing in headers as instructed by the GitHub docs.
+-   There is a Headers section where we will be passing in headers as instructed by the GitHub docs.
 
 ![Screen-Shot-2022-01-24-at-12.39.38-PM-1](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.39.38-PM-1.png)
 
-* There is a body area where we will pass in content to our body as instructed by the GitHub docs.
+-   There is a body area where we will pass in content to our body as instructed by the GitHub docs.
 
 ![Screen-Shot-2022-01-24-at-12.41.14-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-12.41.14-PM.png)
 
-* The right column will quickly let you know if your request was successful. If it is green, you successfully made your request, and if it's red there was an error.
+-   The right column will quickly let you know if your request was successful. If it is green, you successfully made your request, and if it's red there was an error.
 
 ![Screen-Shot-2022-01-24-at-3.44.56-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-24-at-3.44.56-PM.png)
 
@@ -296,6 +319,7 @@ To make this request:
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
+<<<<<<< HEAD
 2.   Select the `PATCH` request method.
 
 3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
@@ -303,6 +327,15 @@ To make this request:
 4.   In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
 
 5.   In the Body tab, we'll pass in the updated description and title. Here is the code:
+=======
+2.  Select the `PATCH` request method.
+
+3.  In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+
+4.  In the Authorization tab, set the authorization type to `Basic Auth`. Type in your GitHub username and pass your personal access token we created in the password field.
+
+5.  In the Body tab, we'll pass in the updated description and title. Here is the code:
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ```javascript
 
@@ -336,9 +369,15 @@ To make this request:
 
 ![Screen-Shot-2022-01-20-at-3.50.13-PM](https://www.freecodecamp.org/news/content/images/2022/01/Screen-Shot-2022-01-20-at-3.50.13-PM.png)
 
+<<<<<<< HEAD
 2.   Select the `DELETE` request method
 
 3.   In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+=======
+2.  Select the `DELETE` request method
+
+3.  In the Headers tab, set accept as a header and set the value to `application/vnd.github.v3+json`.
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 If we navigate to our Gists, we see that this one doesn't exist and we successfully deleted the resource.
 

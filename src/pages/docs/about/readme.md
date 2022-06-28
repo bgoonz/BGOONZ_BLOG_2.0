@@ -11,10 +11,14 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
 
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonzblog20.netlify.app/)
+=======
+# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 

@@ -1,5 +1,6 @@
 https://app.stackbit.com/studio/609b2d7c71a5dd0016f36326?previewToken=9eb306c2-4cbd-475e-b37f-21e2876c6752
 
+<<<<<<< HEAD
 
 
 Netlify-acess-token: crR4Wt8UZ1G59pwyU51Ez_L4G_v7rRbEUobEoVgbQiI
@@ -12,6 +13,12 @@ Netlify-acess-token: crR4Wt8UZ1G59pwyU51Ez_L4G_v7rRbEUobEoVgbQiI
 old package.json:
 
 
+=======
+Netlify-acess-token: crR4Wt8UZ1G59pwyU51Ez_L4G_v7rRbEUobEoVgbQiI
+
+old package.json:
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ```
 {
     "name": "bgoonzblog",
@@ -55,4 +62,8 @@ old package.json:
         "sprintf-js": "1.1.2"
     }
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727

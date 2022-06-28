@@ -119,6 +119,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
+<<<<<<< HEAD:notes/articles/medium/markdown/Basic-Web-Development-Environment.md
 
 #### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
@@ -141,3 +142,5 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/basic-web-development-environment-setup-9f36c3f15afe" class="p-canonical">Canonical link</a>
 
 August 6, 2021.
+=======
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727:src/pages/blog/webdev-setup.md

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "files.exclude": {
         "**/.git": false
     },
@@ -7,3 +8,12 @@
     "python.pythonPath": "/bin/python3",
     "liveServer.settings.port": 5501
 }
+=======
+<<<<<<< HEAD
+    "docwriter.style": "JSDoc"
+}
+=======
+      "makefile.extensionOutputFolder": "./.vscode"
+}
+>>>>>>> 9ea7661897a3ed46abf375d7cac8d77a135e3eff
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727

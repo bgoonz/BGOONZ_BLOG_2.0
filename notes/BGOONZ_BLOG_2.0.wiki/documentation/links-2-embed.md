@@ -1,11 +1,17 @@
 # Links:
 
+<<<<<<< HEAD
 
 <details>
 
 <summary> Links  </summary>   
 
 
+=======
+<details>
+
+<summary> Links  </summary>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 https://bgoonz-cv.netlify.app/
 
@@ -109,15 +115,21 @@ https://www.searchbar.org/
 
 https://dev.to/bgoonz"
 
+<<<<<<< HEAD
 
 </details>
 
 
 
+=======
+</details>
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ---
 
 # Old:
 
+<<<<<<< HEAD
 
 
 <details>
@@ -129,12 +141,21 @@ https://dev.to/bgoonz"
 https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
 
 
+=======
+<details>
+
+<summary> Old links  </summary>
+
+https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 https://sanity-signup.netlify.app/
 
 <br>
 
 https://random-static-html-deploys.netlify.app/embeds-showcase.html
 
+<<<<<<< HEAD
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
 
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
@@ -149,6 +170,23 @@ https://random-static-html-deploys.netlify.app/embeds-showcase.html
 <summary> Links  </summary>   
 
 
+=======
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;">
+</iframe>
+<br>
+
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;">
+</iframe>
+<br>
+
+-   [cheat sheets](https://cheatsheets-42.netlify.app/)
+
+-   [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-h# Links:
+
+<details>
+
+<summary> Links  </summary>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 https://bgoonz-cv.netlify.app/
 
@@ -252,15 +290,21 @@ https://www.searchbar.org/
 
 https://dev.to/bgoonz"
 
+<<<<<<< HEAD
 
 </details>
 
 
 
+=======
+</details>
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 ---
 
 # Old:
 
+<<<<<<< HEAD
 
 
 <details>
@@ -272,12 +316,21 @@ https://dev.to/bgoonz"
 https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
 
 
+=======
+<details>
+
+<summary> Old links  </summary>
+
+https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
+
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 https://sanity-signup.netlify.app/
 
 <br>
 
 https://random-static-html-deploys.netlify.app/embeds-showcase.html
 
+<<<<<<< HEAD
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;"></iframe>
 
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
@@ -287,6 +340,19 @@ https://random-static-html-deploys.netlify.app/embeds-showcase.html
 - [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-html/)
 
 
+=======
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#list" style="width:100%; height:600px; border:0;">
+</iframe>
+<br>
+
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;">
+</iframe>
+<br>
+
+-   [cheat sheets](https://cheatsheets-42.netlify.app/)
+
+-   [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-html/)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 
@@ -295,8 +361,11 @@ https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 </details>
 tml/)
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 
 <br>

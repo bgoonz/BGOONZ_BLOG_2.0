@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
 ---------------------------------------------------------------------------------------------
+=======
+## [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 Control the post processing and optimizations Netlify can do for you
 
@@ -7,7 +11,11 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     gtag-n-firebase
 
@@ -21,6 +29,7 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<<<<<<< HEAD
     <script src="/__/firebase/8.8.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -29,11 +38,29 @@ Inject analytics or other scripts into the HTML of your site.
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+=======
+    <script src="/__/firebase/8.8.1/firebase-app.js">
+</script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.8.1/firebase-analytics.js">
+</script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+=======
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -45,20 +72,37 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     scroll-2-top
 
@@ -104,12 +148,21 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     original-analytics
 
     ```
+<<<<<<< HEAD
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -118,13 +171,27 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
+<<<<<<< HEAD
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
+    <noscript>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+=======
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -133,12 +200,21 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
+<<<<<<< HEAD
     <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+=======
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     goback
 
@@ -146,12 +222,21 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+<<<<<<< HEAD
             echo "<a href='$url'></a>
+=======
+            echo "<a href='$url'>
+</a>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     mdn-style
 
@@ -378,7 +463,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     meta
 
@@ -409,7 +498,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     meta
 
@@ -419,7 +512,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     back to top css
 
@@ -514,7 +611,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     scroll2topsvg
 
@@ -566,7 +667,13 @@ Inject analytics or other scripts into the HTML of your site.
 
     <div>
     <a class="top-link hide" href="" id="js-top">
+<<<<<<< HEAD
         <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+=======
+        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+<path d="M12 6H0l6-6z"/>
+</svg>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
@@ -647,7 +754,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     firebase-cdn
 
@@ -679,13 +790,22 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     analytics
 
     ```
     <!-- Global site tag (gtag.js) - Google Analytics -->
+<<<<<<< HEAD
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L"></script>
+=======
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -697,7 +817,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     more-meta-tags-open-graph
 
@@ -707,35 +831,66 @@ Inject analytics or other scripts into the HTML of your site.
     <meta name="description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
 
     <!-- Facebook Meta Tags -->
+<<<<<<< HEAD
     <meta property="og:url" content="https://bgoonzblog20.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web-Dev-Hub">
     <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
     <meta property="og:image" content="https://bgoonzblog20.netlify.app/images/code.png">
+=======
+    <meta property="og:url" content="https://bgoonz-blog.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web-Dev-Hub">
+    <meta property="og:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
+    <meta property="og:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="bgoonz-blog.netlify.app">
+<<<<<<< HEAD
     <meta property="twitter:url" content="https://bgoonzblog20.netlify.app/">
     <meta name="twitter:title" content="Web-Dev-Hub">
     <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
     <meta name="twitter:image" content="https://bgoonzblog20.netlify.app/images/code.png">
+=======
+    <meta property="twitter:url" content="https://bgoonz-blog.netlify.app/">
+    <meta name="twitter:title" content="Web-Dev-Hub">
+    <meta name="twitter:description" content="my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.">
+    <meta name="twitter:image" content="https://bgoonz-blog.netlify.app/images/code.png">
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     simpleanalytics
 
     ```
+<<<<<<< HEAD
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+=======
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
+</script>
+    <noscript>
+<img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+</noscript>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     metaaaa
 
@@ -746,7 +901,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     algolia-head
 
@@ -769,7 +928,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     fb
 
@@ -796,29 +959,52 @@ Inject analytics or other scripts into the HTML of your site.
         });
       };
     </script>
+<<<<<<< HEAD
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+=======
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     stackbit-widget
 
     ```
+<<<<<<< HEAD
     <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326"></script>
+=======
+    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     blm
 
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
+<<<<<<< HEAD
     <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+=======
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     <!-- Initialise MakerBadge with options -->
 
@@ -837,29 +1023,51 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     addthis
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<<<<<<< HEAD
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
+=======
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     add-this
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<<<<<<< HEAD
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+=======
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
     ```
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     meta
 
@@ -893,11 +1101,19 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</body>`
 
     test
 
 -   before `</body>`
+=======
+-   before `</body>`
+
+    test
+
+-   before `</body>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     search
 
@@ -920,7 +1136,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
+<<<<<<< HEAD
 -   before `</head>`
+=======
+-   before `</head>`
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
     links-highlight
 

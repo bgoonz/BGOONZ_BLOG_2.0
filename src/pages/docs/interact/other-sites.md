@@ -61,7 +61,13 @@ template: docs
 <h1>   Wordpress Site </h1>
 <br>
 
+<<<<<<< HEAD
 <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="  https://bgoonzblog20.netlify.app/  " height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" ></iframe>
+=======
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="  https://bgoonz-blog.netlify.app/  " height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
+<br>
+>>>>>>> 753e72a7925cf49c15a0c1cd1abf20c3ac47c727
 
 <br>
 <br>
