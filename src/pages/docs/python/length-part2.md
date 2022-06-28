@@ -12,6 +12,11 @@ template: docs
 
 
 
+    
+    []: # Language: markdown
+    []: # Path: src\pages\docs\python\length-part3.md
+
+
 **Classes**
 
 Classes are a vital component of object-oriented programming. When creating a class, you must use the `class` keyword. Other elements are then nested in the class. Here is an example of a Python class.

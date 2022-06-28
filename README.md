@@ -33,7 +33,7 @@
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
 
-git checkout 307a5cd        # check out the commit that you want to reset to 
+git checkout 307a5cd        # check out the commit that you want to reset to
 git checkout -b fixy        # create a branch named fixy to do the work
 git merge -s ours master    # merge master's history without changing any files
 git checkout master         # switch back to master
@@ -55,6 +55,149 @@ git push                    # done, no need to force push!
 <details>
 
 <summary>Web Dev Setup</summary>
+
+---
+
+title: WebDev Setup
+template: post
+subtitle: Basic Web Development Environment Setup
+excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
+date: 2022-05-08T18:10:03.296Z
+image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
+thumb_image: https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
+tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
+show_author_bio: true
+related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
+cmseditable: true
+
+---
+
+# Basic Web Development Environment Setup
+
+Windows Subsystem for Linux (WSL) and Ubuntu
+
+---
+
+### Basic Web Development Environment Setup
+
+#### Windows Subsystem for Linux (WSL) and Ubuntu
+
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
+</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
+
+1.  <span id="110a">In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"</span>
+2.  <span id="54fd">Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu</span>
+3.  <span id="a018">In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`</span>
+4.  <span id="6269">Restart your computer</span>
+5.  <span id="6dd9">In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"</span>
+6.  <span id="eb4e">Click "Microsoft Store"</span>
+7.  <span id="74c1">Click the "Search" button in the upper-right corner of the window</span>
+8.  <span id="9d35">Type in "Ubuntu"</span>
+9.  <span id="4205">Click "Run Linux on Windows (Get the apps)"</span>
+10. <span id="1799">Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'</span>
+11. <span id="edec">Click "Install"</span>
+12. <span id="2935">After it downloads, click "Launch"</span>
+13. <span id="a859">If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"</span>
+14. <span id="669c">When prompted to "Enter new UNIX username", type your first name with no spaces</span>
+15. <span id="e9c1">When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)</span>
+16. <span id="4217">Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)</span>
+17. <span id="48fe">You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)</span>
+18. <span id="d12f">You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)</span>
+
+### Git
+
+Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
+
+Open an Ubuntu terminal if you don't have one open already.
+
+1.  <span id="8cfe">You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.</span>
+2.  <span id="0e0d">You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.</span>
+
+**Note: if you want git to remember your login credentials type:**
+
+    git config --global credential.helper store
+
+### Google Chrome
+
+Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+
+1.  <span id="578c">Open Microsoft Edge, the blue "e" in the task bar, and type in <a href="<http://chrome.google.com>/" class="markup--anchor markup--li-anchor">http://chrome.google.com</a>. Click the "Download Chrome" button. Click the "Accept and Install" button after reading the terms of service. Click "Save" in the "What do you want to do with ChromeSetup.exe" dialog at the bottom of the window. When you have the option to "Run" it, do so. Answer the questions as you'd like. Set it as the default browser.</span>
+2.  <span id="40db">Right-click on the Chrome icon in the task bar and choose "Pin to taskbar".</span>
+
+### Node.js
+
+Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
+
+1.  <span id="9098">In the Ubuntu terminal, type `sudo apt update` and press Enter</span>
+2.  <span id="806b">In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter</span>
+3.  <span id="5f3a">In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter</span>
+4.  <span id="2abd">In the Ubuntu terminal, type `. ./.bashrc` and press Enter</span>
+5.  <span id="3c16">In the Ubuntu terminal, type `nvm install --lts` and press Enter</span>
+6.  <span id="d567">Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!</span>
+
+### Unzip
+
+You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
+
+In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
+
+Mocha.js
+
+Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
+
+### Python 3
+
+Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
+
+### Note about WSL
+
+As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
+
+### Some other common instillations
+
+    # Installing build essentials
+    sudo apt-get install -y build-essential libssl-dev
+    # Nodejs and NVM
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    source ~/.profile
+    sudo nvm install 7.10.0
+    sudo nvm use 7.10.0
+    node -v
+    #nodemon
+    sudo npm install -g nodemon
+    sudo npm install -g loopback-cli
+    # Forever to run nodejs scripts forever
+    sudo npm install forever -g
+    # Git - a version control system
+    sudo apt-get update
+    sudo apt-get install -y git xclip
+    # Grunt - an automated task runner
+    sudo npm install -g grunt-cli
+    # Bower - a dependency manager
+    sudo npm install -g bower
+    # Yeoman - for generators
+    sudo npm install -g yo
+    # maven
+    sudo apt-get install maven -y
+    # Gulp - an automated task runner
+    sudo npm install -g gulp-cli
+    # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
+    sudo npm install -g generator-angular-fullstack
+    # Vim, Curl, Python - Some random useful stuff
+    sudo apt-get install -y vim curl python-software-properties
+    sudo apt-get install -y python-dev, python-pip
+    sudo apt-get install -y libkrb5-dev
+    # Installing JDK and JRE
+    sudo apt-get install -y default-jre
+    sudo apt-get install -y default-jdk
+    # Archive Extractors
+    sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+    # FileZilla - a FTP client
+    sudo apt-get install -y filezilla
 
 </details>
 
@@ -3298,7 +3441,7 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 /|-- /.cache|-- /plugins|-- /public|-- /src    |-- /api    |-- /pages    |-- /templates    |-- html.js|-- /static|-- gatsby-config.js|-- gatsby-node.js|-- gatsby-ssr.js|-- gatsby-browser.js
 ```
 
- [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
+[Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
 
 -   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
 -   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
@@ -3312,15 +3455,15 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 -   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
- [Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
+[Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
 
 -   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 -   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
 -   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 -   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
- [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
- [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
+[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
+[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
 
 The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
 
@@ -3329,22 +3472,22 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 #### Layout Components | Gatsby
 
 ## Excerpt
->
+
 > In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
 
 ---
 
 In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
 
- [Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
+[Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
 
 Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
 
- [What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
+[What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
 
 Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
 
- [How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
+[How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
 
 It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
 
@@ -3354,7 +3497,7 @@ Here is an example of a very basic layout component at `src/components/layout.js
 import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
 ```
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
+[](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
 
 If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
 
@@ -3364,7 +3507,7 @@ import React from "react"import Layout from "../components/layout"export default
 
 Repeat for every page and template that needs this layout.
 
- [How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
+[How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
 
 As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
 
@@ -3390,15 +3533,15 @@ Here are the steps Gatsby follows for making this happen.
 3. Add a Markdown file
 4. Create a Collection Route component for the Markdown files
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
 
 Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
 
 `npm install gatsby-source-filesystem`
 
- [Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
+[Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
 
 Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
 
@@ -3408,15 +3551,15 @@ module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [ 
 
 Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`
 
 You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)Install transformer plugin
 
 `npm install gatsby-transformer-remark`
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)Configure plugin
 
 Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
 
@@ -3424,11 +3567,11 @@ Add this to `gatsby-config.js` after the previously added `gatsby-source-filesys
 module.exports = {  siteMetadata: {    title: "My Gatsby Site",  },  plugins: [    {      resolve: `gatsby-source-filesystem`,      options: {        name: `markdown-pages`,        path: `${__dirname}/src/markdown-pages`,      },    },    `gatsby-transformer-remark`,  ],}
 ```
 
- [Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
+[Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
 
 Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
 
- [Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
+[Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
 
 When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
 
@@ -3440,7 +3583,7 @@ src/markdown-pages/post-1.md
 
 What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
 
- [](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
+[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
 
 Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
 
@@ -3464,7 +3607,7 @@ This should get you started on some basic Markdown functionality in your Gatsby 
 
 For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
 
- [Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
+[Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
 
 </details>
 
