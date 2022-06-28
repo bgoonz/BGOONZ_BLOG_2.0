@@ -118,8 +118,6 @@ First, we will provide a high level discussion of the architecture. Then, there 
 
 Figure 1. High Level Google Architecture
 
-
-
 ### 4.1 Google Architecture Overview
 
 In this section, we will give a high level overview of how the whole system works as pictured in Figure 1. Further sections will discuss the applications and data structures not mentioned in this section. Most of Google is implemented in C or C++ for efficiency and can run in either Solaris or Linux.
@@ -139,8 +137,6 @@ Google's data structures are optimized so that a large document collection can b
 BigFiles are virtual files spanning multiple file systems and are addressable by 64 bit integers. The allocation among multiple file systems is handled automatically. The BigFiles package also handles allocation and deallocation of file descriptors, since the operating systems do not provide enough for our needs. BigFiles also support rudimentary compression options.
 
 #### 4.2.2 Repository
-
-
 
 ![](http://infolab.stanford.edu/~backrub/repos.gif)
 
@@ -167,8 +163,6 @@ Our compact encoding uses two bytes for every hit. There are two types of hits: 
 ![](http://infolab.stanford.edu/~backrub/barrels.gif)
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
-
-
 
 The length of a hit list is stored before the hits themselves. To save space, the length of the hit list is combined with the wordID in the forward index and the docID in the inverted index. This limits it to 8 and 5 bits respectively (there are some tricks which allow 8 bits to be borrowed from the wordID). If the length is longer than would fit in that many bits, an escape code is used in those bits, and the next two bytes contain the actual length.
 
@@ -212,8 +206,6 @@ Sort the documents that have matched by rank and return the top k.
 
 Figure 4. Google Query Evaluation
 
-
-
 To put a limit on response time, once a certain number (currently 40,000) of matching documents are found, the searcher automatically goes to step 8 in Figure 4. This means that it is possible that sub-optimal results would be returned. We are currently investigating other ways to solve this problem. In the past, we sorted the hits according to PageRank, which seemed to improve the situation.
 
 #### 4.5.1 The Ranking System
@@ -235,8 +227,6 @@ All of the results are reasonably high quality pages and, at last check, none we
 ### 5.1 Storage Requirements
 
 Aside from search quality, Google is designed to scale cost effectively to the size of the Web as it grows. One aspect of this is to use storage efficiently. Table 1 has a breakdown of some statistics and storage requirements of Google. Due to compression the total size of the repository is about 53 GB, just over one third of the total data it stores. At current disk prices this makes the repository a relatively cheap source of useful data. More importantly, the total of all the data used by the search engine requires a comparable amount of storage, about 55 GB. Furthermore, most queries can be answered using just the short inverted index. With better encoding and compression of the Document Index, a high quality web search engine may fit onto a 7GB drive of a new PC.
-
-
 
 Storage Statistics
 
@@ -300,11 +290,7 @@ Number of 404's
 
 1.6 million
 
-
-
 Table 1. Statistics
-
-
 
 ###  5.2 System Performance
 
@@ -313,8 +299,6 @@ It is important for a search engine to crawl and index efficiently. This way inf
 ### 5.3 Search Performance
 
 Improving the performance of search was not the major focus of our research up to this point. The current version of Google answers most queries in between 1 and 10 seconds. This time is mostly dominated by disk IO over NFS (since disks are spread over a number of machines). Furthermore, Google does not have any optimizations such as query caching, subindices on common terms, and other common optimizations. We intend to speed up Google considerably through distribution and hardware, software, and algorithmic improvements. Our target is to be able to handle several hundred queries per second. Table 2 has some sample query times from the current version of Google. They are repeated to show the speedups resulting from cached IO.
-
-
 
 **Initial Query**
 
@@ -370,11 +354,7 @@ search engines
 
 1.16
 
-
-
 Table 2. Search Times
-
-
 
 ## 6 Conclusions
 

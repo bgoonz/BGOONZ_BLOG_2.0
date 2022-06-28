@@ -34,10 +34,7 @@ export default class Body extends React.Component {
                     <meta name="twitter:image:src" content="/logo-circle.png" />
                     <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner" />
                     <meta property="twitter:card" content="summary_large_image" />
-                    <link
-                        href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png"
-                        rel="apple-touch-icon"
-                    />
+                    <link href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png" rel="apple-touch-icon" />
                     <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" />
                     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
