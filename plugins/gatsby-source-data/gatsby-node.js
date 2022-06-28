@@ -22,7 +22,7 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
         pluginOptions.path = 'src/data';
     }
     if (!path.isAbsolute(pluginOptions.path)) {
-        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path)
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
     }
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
     const dataPath = pluginOptions.path;
@@ -102,6 +102,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         });
     });
     return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {})
+        return _.reduce(results, (data, res) => _.merge(data, res), {});
     });
 }
