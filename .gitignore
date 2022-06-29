@@ -72,7 +72,6 @@ yarn-error.log
 node_modules/
 
 
-*.cache
 
 
 package.lock.json
