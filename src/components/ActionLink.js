@@ -5,6 +5,16 @@ import _ from 'lodash';
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
 
+/**
+ * It returns a link to the action's URL, with the appropriate class names, and the label or icon as
+ * the link text
+ * @returns A Link component with the following props:
+ *   - to: the url of the action
+ *   - target: '_blank' if the action is set to open in a new window
+ *   - rel: 'noopener' if the action is set to open in a new window, 'nofollow' if the action is set to
+ * have no follow
+ *   - className:
+ */
 function ActionLink({ action }) {
   return <Link to={withPrefix(_.get(action, 'url', null))}
     {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
@@ -20,6 +30,7 @@ function ActionLink({ action }) {
 }
 
 export default class ActionLink extends React.Component {
+   /* Rendering the ActionLink component. */
     render() {
         const action = _.get(this.props, 'action', null);
         return (
