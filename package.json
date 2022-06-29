@@ -50,6 +50,7 @@
         "web-dev-utils": "^1.0.4"
     },
     "devDependencies": {
+        "gatsby-plugin-netlify": "^5.0.0",
         "prettier": "^2.7.1"
     }
 }
