@@ -17,13 +17,6 @@ text = {
     '"resolution_width"': "1440",
     '"package_name"': '"com.okcupid.okcupid"',
     '"d44bcbfb-873454-4917-9e02-2066d6605d9f"': '{"language"',
-    
-    
-    
-    
-    
-    
-    
     '"country"': '"US"}',
     '"now"': "1.515384841291E9",
     '{"extras"': '{"sessions"',
