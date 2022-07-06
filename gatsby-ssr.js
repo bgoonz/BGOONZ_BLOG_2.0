@@ -26,7 +26,7 @@ exports.onRenderBody = function({
              <script src={withPrefix('js/page-unload.js')}/>
              <script src={withPrefix('js/plugins.js')}/>
              <script src={withPrefix('js/prism.js')}/>
-             <script src={`https://static.cloudflareinsights.com/beacon.min.js`}
+             <script src={`https://static.cloudflareinsights.com/beacon.min.js`.toString()}/>
              <script src={withPrefix('js/syntax.js')}/>
              <script src={withPrefix('js/ukraine.js')}/>
         </React.Fragment>
