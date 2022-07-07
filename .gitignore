@@ -52,11 +52,12 @@ typings/
 *.tgz
 
 # dotenv environment variables file
+.env
 
 
 # gatsby files
-# .cache/
-# public
+.cache/
+public
 
 # Mac files
 .DS_Store
@@ -73,3 +74,6 @@ node_modules/
 
 *.cache
 
+*public/
+
+package.lock.json

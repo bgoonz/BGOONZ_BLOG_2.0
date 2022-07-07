@@ -1,14 +1,15 @@
 ---
-title: lorem-ipsum
+title: Comprehensive Python Guide
 weight: 0
-excerpt: lorem-ipsum
+excerpt:  Code in the global scope cannot use any local variables.
 seo:
-    title: ''
-    description: ''
+    title: 'Comprehensive Python Guide'
+    description: ' Code in the global scope cannot use any local variables.'
     robots: []
     extra: []
 template: docs
 ---
+
 
 ## Comprehensive Python Guide
 
