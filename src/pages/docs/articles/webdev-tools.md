@@ -3,8 +3,8 @@ title: Web Developer Tools
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
+    title: 'Web Developer Tools'
+    description: Web Developer Tools''
     robots: []
     extra: []
 template: docs
