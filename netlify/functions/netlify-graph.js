@@ -20,6 +20,7 @@ exports.handler = async function(event, context) {
         }
     }
 }
+console.log(exports);
 accessToken: event.netlifyGraphToken
 })
 
@@ -29,5 +30,4 @@ return {
     headers: {
         "Content-Type": "application/json"
     }
-}
 }
