@@ -37,7 +37,7 @@ Non-primitive data structures are not defined by the programming language but ra
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280)
+![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280)
 
 Advantages
 
@@ -61,7 +61,7 @@ Queues are conceptually similar to stacks; both are sequential structures, but q
 
 As a result, queues can be thought of as a FIFO (First In, First Out) version of stacks. These are helpful as a buffer for requests, storing each request in the order it was received until it can be processed.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160)
+![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160)
 
 For a visual, consider a single-lane tunnel: the first car to enter is the first car to exit. If other cars should wish to exit, but the first stops, all cars will have to wait for the first to exit before they can proceed.
 
@@ -87,7 +87,7 @@ Linked lists are a data structure which, unlike the previous three, does not use
 
 This system allows efficient insertion and removal of items without the need for reorganization.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160)
+![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160)
 
 Advantages
 
@@ -149,7 +149,7 @@ Disadvantages
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
-![](https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680)
+![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680)
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
@@ -544,7 +544,7 @@ Problem statement: Implement the removeEdge function to take a source and a dest
 
 Input: A graph, a source, and a destination
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
+![alt-text](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6576135669284864)
 

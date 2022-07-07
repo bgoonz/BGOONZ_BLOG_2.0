@@ -12,7 +12,7 @@ template: docs
 
 # Reference:
 
--   [SITEMAP🗺🟈]\(https://syntax-highlight.netlify.app/docs/sitemap/)
+-   [SITEMAP🗺🟈]\(https://bgoonz-blog.netlify.app/docs/sitemap/)
 
 # Bookmarks:
 

@@ -258,7 +258,7 @@ Splat routes may not live in the same directory as regular client only routes.
 
 The dynamic segment of the file name (the part between the square brackets) will be filled in and provided to your components on a `props.params` object. For example:
 
-```js:title=src/pages/users/[name].js
+```js
 function UserPage(props) {
   const name = props.params.name
 }

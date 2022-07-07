@@ -2,6 +2,14 @@
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
+ * 
+ *              <script src={withPrefix('js/blm.js')}/>
+             <script src={withPrefix('js/goog-search.js')}/>
+ *              <script src={withPrefix('js/algolia.js')}/>
+             <script src={withPrefix('js/analytics.js')}/>
+ *              <script src={withPrefix('js/prettier.js')}/>
+ *              <script src={withPrefix('js/searchbar.js')}/>
+             <script src={withPrefix('js/search-create.js')}/>
  */
 
 const React = require("react");
@@ -16,28 +24,24 @@ exports.onRenderBody = function({
 
     ]);
 
-    setPostBodyComponents([ <
-        React.Fragment >
-        <
-        script src = {
-            withPrefix('js/plugins.js')
-        }
-        /> <
-        script src = {
-            withPrefix('js/main.js')
-        }
-        /> <
-        script src = {
-            withPrefix('js/page-load.js')
-        }
-        /> <
-        script src = {
-            withPrefix('js/page-unload.js')
-        }
-        />
 
-        <
-        /React.Fragment>
+    setPostBodyComponents([
+        <React.Fragment>
+
+
+             <script src={withPrefix('js/main.js')}/>
+   
+             <script src={withPrefix('js/page-load.js')}/>
+             <script src={withPrefix('js/page-unload.js')}/>
+             <script src={withPrefix('js/plugins.js')}/>
+
+             <script src={withPrefix('js/prism.js')}/>
+
+             <script src={withPrefix('js/syntax.js')}/>
+             <script src={withPrefix('js/ukraine.js')}/>
+            
+        </React.Fragment>
+
     ]);
 
 };
