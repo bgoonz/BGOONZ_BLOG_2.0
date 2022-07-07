@@ -41,7 +41,7 @@ Best of all, frontend frameworks resolve any issues with browser compatibility a
 
 Start learning for free!
 
-[![](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
+[![alt-text](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
 
 ## 3\. Popular frameworks
 
