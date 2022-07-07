@@ -29,7 +29,7 @@ EMMET
 
 ---
 
-### Emmet Cheat Sheet
+### Emmet Cheat Sheet
 
 ### EMMET
 
@@ -54,7 +54,7 @@ You can use Emmet in two ways:
 
 ### HTML
 
-### Generating HTML 5 DOCTYPE
+### Generating HTML 5 DOCTYPE
 
 `html:5`
 
@@ -135,9 +135,9 @@ Items can be grouped together using `()`
       </tr>
     </table>
 
-### Class and ID
+### Class and ID
 
-Class and Id in Emmet can be done using  `.` and `#`
+Class and Id in Emmet can be done using  `.` and `#`
 
 `div.heading`
 
@@ -153,7 +153,7 @@ ID and Class can also be combined together
 
     <div id="heading" class="center"></div>
 
-### Adding Content inside tags
+### Adding Content inside tags
 
 Contents inside tags can be added using `{}`
 
@@ -164,7 +164,7 @@ Contents inside tags can be added using `{}`
     <p>This is paragraph</p>
     <p>This is paragraph</p>
 
-### Attributes inside HTML tags
+### Attributes inside HTML tags
 
 Attributes can be added using `[]`
 
@@ -209,7 +209,7 @@ To start the numbering from specific number, use this way
 
 ### Tips
 
--   <span id="b708">Use `:` to expand known abbreviations</span>
+-   <span id="b708">Use `:` to expand known abbreviations</span>
 
 `input:date`
 
@@ -278,9 +278,9 @@ Also use any options, pos:a/r/f
 
 You can also use these shorthands
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+<figure><img src="https://cdn-images-1.medium.com/max/800/1*h8hsUrJNyVRLYqBQP63DCA.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

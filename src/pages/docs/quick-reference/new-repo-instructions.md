@@ -1,6 +1,6 @@
 ---
 title: new-repo-git
-weight: 2
+weight: 0
 seo:
     title: new-repo-git
     description: This is the new-repo-git page

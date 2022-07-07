@@ -1,33 +1,55 @@
 const siteMetadata = require('./site-metadata.json');
-
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
     plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-source-data`,
-        `gatsby-transformer-remark`,
+        'gatsby-plugin-react-helmet',
+        'gatsby-source-data',
+        'gatsby-transformer-remark',
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-source-filesystem',
             options: {
-                name: `pages`,
+                name: 'pages',
                 path: `${__dirname}/src/pages`
             }
         },
         {
-            resolve: `gatsby-plugin-sass`,
-            options: {}
-        },
-        {
-            resolve: `gatsby-remark-page-creator`,
-            options: {}
-        },
-        {
-            resolve: `@stackbit/gatsby-plugin-menus`,
+            resolve: 'gatsby-transformer-remark',
             options: {
-                sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`
+                plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
+            },
+        },
+        {
+            resolve: 'gatsby-remark-code-buttons',
+
+
+        },
+        {
+            resolve: 'gatsby-plugin-disqus',
+            options: {
+                shortname: 'webdevhub-1',
             }
-        }
+        },
+        {
+            resolve: 'gatsby-plugin-sass',
+            options: {}
+        },
+        {
+            resolve: 'gatsby-remark-page-creator',
+            options: {}
+        },
+        {
+            resolve: '@stackbit/gatsby-plugin-menus',
+            options: {
+                sourceUrlPath: 'fields.url',
+                pageContextProperty: 'menus',
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-disqus',
+            options: {
+                shortname: 'webdevhub-1'
+            }
+        },
     ]
 };
