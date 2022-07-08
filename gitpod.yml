@@ -1,0 +1,28 @@
+# fullstack frontend .gitpod.yml
+# multi-repo
+additionalRepositories:
+  - url: https://github.com/bgoonz/BGOONZ_BLOG_2.0/
+    checkoutLocation: https://github.com/bgoonz/BGOONZ_BLOG_2.0/
+
+tasks:
+  - name: frontend
+    init: |
+      npm install
+      npm run build
+    command: |
+      # Configure the backend API
+        npm run dev
+
+  - name: content
+    before: |
+      cd ../content
+    init: |
+      npm install
+    command: |
+      npm start
+
+vscode:
+    extensions:
+        - dbaeumer.vscode-eslint@2.1.5:9Wg0Glx/TwD8ElFBg+FKcQ==
+        - esbenp.prettier-vscode@5.0.0:qca7d0cHbKkrkb5rvNlpcg==
+        - flowtype.flow-for-vscode@1.5.0:AwOT6wgHTF43loZQCAUMLA==
