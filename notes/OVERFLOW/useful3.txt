@@ -1,0 +1,469 @@
+<!doctype html>
+<!--[if gt IE 9]><!-->
+<html class="no-js " lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Meta -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Site Meta -->
+  <title>WebDev Resource Hub</title>
+  <meta name="keywords"
+    content="In,  instanceof,  Static,  finally,  arguments,  public,  Do,  else,  Const,  Function,  class*,  return,  let*,  Catch,  Eval,  For,  if,  This,  try,  Break,  debugger,  Yield,  extends*,  enum*,  Continue,  export*,  null,  switch,  private,  New,  throw,  while,  Case,  await*,  Delete,  super*,  default,  Void,  Var,  protected,  Package,  Interface,  False,  typeof,  implements,  With,  import*,  True,  Applications, Artificial Intelligence, Based, Business Development, CASE Tools, Circuit, Client-Server, Code Development, Computer Architecture, Computer Engineering, Computer Graphics, Computer Hardware, Computer Interface, Computer Modeling, Computer Operating Systems, Computer Programming Languages, Computer Science, Computer Simulation/Modeling, Computer Software, Computer Storage & Retrieval, Computer Systems Analysis, Computer Theory, Computer Vision, Computer/Data/Network Security, Cybernetics, Data, Database, Design, Digital Computers/Computing, Discrete Mathematics, End-User, Ethics/Values in Science and, Technology, Expert Systems, Files, Functional, Global, GUI, Hardware, Information Technology (IT), Installation, Internet, Java, Local Area Network (LAN), Management Information Systems, (MIS), Microsoft Certified Systems, Engineer (MCSE), Modifications, Network, Online, Parallel Algorithms, Parallel Programming, Pattern recognition, PCs, Performance, Peripherals, Printers, Program Management, Program Verification, Project, Real Time, Relational Database, Reports, Scripts, Software, Software Engineering, SQL, Structured Design, System Design, System Performance, System Requirements, Technology, Test, Tools, Topologies, Troubleshoot, Wide Area Network (WAN), Windows, Tape Drive, Technical Specifications, Terminals, Upgrade, VSAM, Workstation, UNIX, User Manual, Analytical Thinking, Attention to Detail, Dependability, Initiative, Achievement/Effort, Adaptability/Flexibility, Independence, Integrity, Persistence, Cooperation">
+  <meta name="description" content="Resource-sharing-hub">
+  <meta name="author" content="Bryan Guner">
+  <!-- Site Icons -->
+  <script async src="https://kit.fontawesome.com/145ae317bb.js" crossorigin="anonymous"></script>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Meta -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Site Meta -->
+  <title>WEB-DEV-Resources</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Site Icons -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+  <!-- Custom & Default Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./youtube.js"></script>
+  <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+  <!--
+                                    jQuery Files -->
+  <script async defer src="js/jquery.min.js"></script>
+  <script async defer src="js/bootstrap.min.js"></script>
+  <script async defer src="js/carousel.js"></script>
+  <script async defer src="js/animate.js"></script>
+  <script async defer src="js/custom.js"></script>
+  <!-- VIDEO BG PLUGINS -->
+  <script async defer src="js/videobg.js"></script>
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script async src="./../javascripts/sentry.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-74W6FHPF29"></script>
+<script async >
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-74W6FHPF29');
+</script>
+<script async defer src="./js/main-jquery.js"></script>
+
+</head>
+<!-------------------------END-OF-HEADER-------------------------->
+
+<body>
+  <!-- LOADER -->
+  <div id="preloader">
+    <img class="preloader" src="images/loader.gif" alt="">
+  </div><!-- end loader -->
+  <!-- END LOADER -->
+  <div id="wrapper">
+    <div class="fullscreen-bg" height="fullscreen" ;>
+      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="./images/ezgif.com-gif-maker.mp4" type="video/mp4">
+      </video>
+    </div>
+    <header class="header">
+      <div class="topbar clearfix">
+        <div class="container">
+          <div class="row-fluid">
+            <div class="col-md-6 col-sm-6 text-left">
+              <p>
+                <strong><i class="fa fa-phone"></i></strong> +551-254-5505 &nbsp;&nbsp;
+                <strong><i class="fa fa-envelope"></i></strong> <a class="btn"
+                  href=" https://mail.google.com/mail/u/0/h/ ">bryan.guner@gmail.com</a>
+              </p>
+            </div><!-- end left -->
+            <div class="col-md-6 col-sm-6 hidden-xs text-right">
+              <div class="social">
+                <a class="linkedin" href="https://www.linkedin.com/in/bryan-guner-046199128/" data-tooltip="tooltip"
+                  data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                <a class="github" href="https://github.com/bgoonz" data-tooltip="tooltip" data-placement="bottom"
+                  title="github"><i class="fa fa-github"></i></a>
+                <a class="pinterest" href="https://www.pinterest.com/bryanguner" data-tooltip="tooltip"
+                  data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+              </div><!-- end social -->
+            </div><!-- end left -->
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end topbar -->
+      <div class="container">
+        <nav class="navbar navbar-default yamm">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="logo-normal">
+
+              <a class="navbar-brand" href="./../0-assets/planning/documentation/portfolio/tree-diagram.html"><img
+                  src="./../0-assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="btn" href="./index.html">HOME-hit-Refresh</a></li>
+              <li><a class="btn" href="./blog.html">Blog</a></li>
+              <li><a class="btn" href="./resources.html">Resources-Directory</a></li>
+              <li><a class="btn" href="./other-pages/sandbox.html">SandBox</a></li>
+              <li class="dropdown yamm-fw yamm-half"><a class="btn" href="#" data-toggle="dropdown"
+                  class="dropdown-toggle active">Weeks <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="yamm-content clearfix">
+                      <div class="row-fluid">
+                        <div class="col-md-6 col-sm-6">
+                          <h4>Course Pages</h4>
+                          <ul>
+                            <li><a href="./other-pages/weeks/week-1.html">week 01</a></li>
+                            <li><a href="./other-pages/weeks/week-2.html">week 02</a></li>
+                            <li><a href="./other-pages/weeks/week-3.html">week 03</a></li>
+                            <li><a href="./other-pages/weeks/week-4.html">week 04</a></li>
+                            <li><a href="./other-pages/weeks/week-5.html">week 05</a></li>
+                            <li><a href="./other-pages/weeks/week-6.html">week 06</a></li>
+                            <li><a href="./other-pages/weeks/week-7.html">week 07</a></li>
+                            <li><a href="./other-pages/weeks/week-8.html">week 08</a></li>
+                            <li><a href="./other-pages/weeks/week-9.html">week 09</a></li>
+                            <li><a href="./other-pages/weeks/week-10.html">week 10</a></li>
+                            <li><a href="./other-pages/weeks/week-11.html">week 11</a></li>
+                            <li><a href="./other-pages/weeks/week-12.html">week 12</a></li>
+                            <li><a href="./other-pages/weeks/week-13.html">week 13</a></li>
+                            <li><a href="./other-pages/weeks/week-14.html">week 14</a></li>
+                            <li><a href="./other-pages/weeks/week-15.html">week 15</a></li>
+                            <li><a href="./other-pages/weeks/week-16.html">week 16</a></li>
+                            <li><a href="./other-pages/weeks/week-17.html">week 17</a></li>
+                            <li><a href="./other-pages/weeks/week-18.html">week 18</a></li>
+                            <li><a href="./other-pages/weeks/week-19.html">week 19</a></li>
+                            <li><a href="./other-pages/weeks/week-20.html">week 20</a></li>
+                            <li><a href="./other-pages/weeks/week-21.html">week 21</a></li>
+                            <li><a href="./other-pages/weeks/week-22.html">week 22</a></li>
+                            <li><a href="./other-pages/weeks/week-23.html">week 23</a></li>
+                            <li><a href="./other-pages/weeks/week-24.html">week 24</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <div class="menu-widget text-center">
+                            <div class="image-wrap entry">
+                              <img src="upload/course_01.pgj" alt="" class="img-responsive">
+                              <div class="magnifier">
+                                <a class="btn" href="#" title=""><i class="flaticon-add"></i></a>
+                              </div>
+                            </div><!-- end image-wrap -->
+                            <h5><a class="btn"
+                                href="./../2-content/core-content/node-npm/npm-reademe-comp/index.html">npm-quicksheet</a>
+                            </h5>
+                          </div><!-- end widget -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="btn" href="page-contact.html">Contact</a></li>
+              <li><a class="btn" href="./../index.html">Back To Landing Page</a></li>
+          
+            </ul>
+          </div>
+        </nav><!-- end navbar -->
+      </div><!-- end container -->
+    </header>
+    <section id="home" class="video-section js-height-full">
+      <div class="overlay"></div>
+      <div class="home-text-wrapper relative container">
+        <div class="home-message">
+          <p>Web Dev Student Resources</p>
+          <p><small>This site is a constant work in progress... and my very well be pretty broken at any given point in
+              time</small></p>
+          <div class="btn-wrapper">
+            <div class="text-center">
+            </div>
+          </div><!-- end row -->
+        </div>
+      </div>
+      <div class="slider-bottom">
+      </div>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 hidden-sm hidden-xs">
+            <div class="custom-module">
+              <img src="images/fullstack.PNG" alt="" class="img-responsive wow slideInLeft">
+            </div><!-- end module -->
+          </div><!-- end col -->
+          <div class="col-md-8">
+            <div class="custom-module p40l">
+              <h2>My goal is to create an interactive library of resources and projects </h2>
+              <hr class="invis">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 first">
+                  <p>
+                  </p>
+                </div><!-- end col-lg-4 -->
+              </div><!-- end module -->
+            </div><!-- end col -->
+          </div><!-- end row -->
+        </div><!-- end container -->
+        <!--------------------------------------------------------------------------------------------------------------->
+        <section class="section gb">
+          <div class="container">
+            <div class="section-title text-center">
+              <!-- <h3>Topic Overviews</h3>
+              <p> this is where I will accumulate blog posts about web development that are out of the scope of what I
+                am currently learning!</p> -->
+            </div><!-- end title -->
+            <!-----------------------------------------------1------------------------------------------------------------>
+            <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
+              <!--------------------------------------------------------------------------->
+              <div class="caro-item">
+                <div class="course-box">
+                  <div class="image-wrap entry">
+                    <img src="upload/matrix-250.gif" alt="" class="img-responsive">
+                    <div class="magnifier">
+                      <a> <i class="flaticon-add"></i></a>
+                    </div>
+                  </div><!-- end image-wrap -->
+                  <div class="course-details">
+                    <h4>
+                      <small>general comp-sci</small>
+                      <a class="btn"
+                        href="./other-pages/blog-posts/9-thigs-you-should-know-about/What every computer science major should know.html"
+                        title="">Click
+                        Here!!</a>
+                    </h4>
+                    <p>9-things every developer should know</p>
+                  </div><!-- end details -->
+                  <div class="course-footer clearfix">
+                    <div class="pull-left">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                    <div class="pull-right">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                  </div><!-- end footer -->
+                </div><!-- end box -->
+              </div><!-- end col --->
+              <!-----------------------------------------------2------------------------------------------------------------>
+              <div class="caro-item">
+                <div class="course-box">
+                  <div class="image-wrap entry">
+                    <img src="upload/best-prac-250.gif" alt="" class="img-responsive">
+                    <div class="magnifier">
+                      <a class="btn" href="#" title=""><i class="flaticon-add"></i></a>
+                    </div>
+                  </div><!-- end image-wrap -->
+                  <div class="course-details">
+                    <h4>
+                      <small>Javascript</small>
+                      <a class="btn"
+                        href="./other-pages/blog-posts/best-prac-extension-guide/js-tools-and-best-prac.html"
+                        title="">Click
+                        Here!!</a>
+                    </h4>
+                    <p>JS Best Practice & Tools</p>
+                  </div><!-- end details -->
+                  <div class="course-footer clearfix">
+                    <div class="pull-left">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                    <div class="pull-right">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                  </div><!-- end footer -->
+                </div><!-- end box -->
+              </div><!-- end col -->
+              <!-----------------------------------------------3------------------------------------------------------------>
+              <div class="caro-item">
+                <div class="course-box">
+                  <div class="image-wrap entry">
+                    <img src="./other-pages/blog-posts/best-prac-extension-guide/Design-Principles/final-html.JPG"
+                      alt="" class="img-responsive">
+                    <div class="magnifier">
+                      <a class="btn" href="./../other-pages/blog-post" title=""><i class="flaticon-add"></i></a>
+                    </div>
+                  </div><!-- end image-wrap -->
+                  <div class="course-details">
+                    <h4>
+                      <small>HTML</small>
+                      <a class="btn"
+                        href="./other-pages/blog-posts/best-prac-extension-guide/Design-Principles/HTML-Design-Principles.html"
+                        title="">Click Here!!</a>
+                    </h4>
+                    <p>Solid HTML Design Principles</p>
+                  </div><!-- end details -->
+                  <div class="course-footer clearfix">
+                    <div class="pull-left">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                    <div class="pull-right">
+                      <ul class="list-inline">
+                      </ul>
+                    </div><!-- end left -->
+                  </div><!-- end footer -->
+                </div><!-- end box -->
+              </div><!-- end col -->
+
+           
+            <!-----------------------------------------------end----------------------------------------------------------->
+            <hr class="invis">
+            <div class="section-button text-center">
+            
+            </div>
+          </div><!-- end container -->
+        </div>
+     </section>
+      
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <section class="section db p120">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="tagline-message text-center">
+                  <div class="footer">
+                    <h1>week-overview</h1>
+                    <iframe width="100%" height="500px"
+                      src="./../2-content/core-content/USEFUL/objectives-combinepdf.pdf"> </iframe>
+                  </div>
+                  <div>
+                  </div>
+                  <h3>
+                    The spirit behind making this site:
+                  </h3>
+                  <span id="myId"></span>
+                  <br />
+                  <br />
+                  <pre id="myCode"></pre>
+
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------------------White Space------------------------------------------------------>
+        <p>
+        <p>
+        <p>
+        <p>
+        <p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+        </p>
+        </p>
+        </p>
+        </p>
+        <!--------------------------------------------White Space------------------------------------------------------>
+     
+        <!--------------------------------------------White Space------------------------------------------------------>
+        <p>
+        <p>
+        <p>
+        <p>
+        <p>
+          <br>
+          <br>
+            <footer class="footer-area section_gap">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-2 col-md-6 single-footer-widget footer-text m-0 text-white">
+                    <h4>Navigate</h4>
+                    <ul>
+                      <li><a href="#">Link City</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 single-footer-widget footer-text m-0 text-white">
+                    <h4>Resources</h4>
+                    <ul>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 single-footer-widget footer-text m-0 text-white">
+                    <h4>Tools</h4>
+                    <ul>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6 single-footer-widget footer-text m-0 text-white">
+                    <h4>Resources</h4>
+                    <ul>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                      <li><a href="#">PLACEHOLDER</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 single-footer-widget footer-text m-0 text-white">
+                    <h4></h4>
+                    <p></p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                    </div>
+                  </div>
+                </div>
+
+  <!--------------------------------------------White Space------------------------------------------------------>
+<!-- 
+
+
+              </div>
+            </footer>
+          <br>
+          <br>
+          <br>
+        </p>
+        </p>
+        </p>
+        </p>
+        </p>
+        <!--------------------------------------------White Space------------------------------------------------------>
+       
+
+
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>
