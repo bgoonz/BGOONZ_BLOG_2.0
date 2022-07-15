@@ -10,6 +10,28 @@ a,
 a:visited,
 a:focus {
   text-decoration: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+[align="center"] {
+  display: block;
+  text-align: center;
+  margin: auto; }
+
+code, kbd, pre, samp {
+  max-width: 800px;
+  font-size: 14px; }
+
+code {
+  border-radius: 4px; }
+
+h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eee; }
+
+blockquote {
   text-decoration: inherit; }
 
 img {
@@ -48,6 +70,17 @@ blockquote {
 ::after,
 ::before {
 
+  box-sizing: border-box; }
+
+input[type="search"] {
+  padding: 1em;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box; }
+
+
 header {
   width: 100%;
   background: #2E8CFF;
@@ -82,6 +115,7 @@ header {
         margin-left: 0.75em; }
 
 main {
+
   box-sizing: border-box; }
 
 input[type="search"] {
@@ -107,7 +141,8 @@ header {
     display: flex;
     flex-direction: row;
 }
-main aside {
+main aside { 
+
   box-sizing: border-box; }
 
 input[type="search"] {
@@ -155,12 +190,18 @@ main {
   display: flex;
   flex-direction: row; }
   main aside {
+
+  display: flex;
+  flex-direction: row; }
+  main aside {
+
     min-width: 260px;
     border-right: 1px solid #eee;
     position: fixed;
     top: 0;
     width: 260px;
     height: 100vh;
+
     margin: 0;
     display: block; }
 
@@ -190,7 +231,7 @@ table tbody td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   line-height: 1.65;
   color: #666666; }
-table td > strong {
+table td > strong (
     box-shadow: 2px 0 16px 0 rgba(0, 0, 0, 0.05); }
     main aside footer {
       position: absolute;
@@ -308,8 +349,6 @@ table tbody td {
   line-height: 1.65;
   color: #666666; }
 table td > strong {
-    color: black;
-}
     box-shadow: 2px 0 16px 0 rgba(0, 0, 0, 0.05); }
     main aside footer {
       position: absolute;
@@ -428,5 +467,7 @@ table tbody td {
   color: #666666; }
 table td > strong {
   color: black; }
+
+
 
 /*# sourceMappingURL=main.css.map */

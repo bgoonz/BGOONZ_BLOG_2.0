@@ -62,7 +62,15 @@ export default class Docs extends React.Component {
                             </div>
                         </nav>
                     </div>
-                    <Disqus />
+                    <Disqus config={
+            /* Replace PAGE_URL with your post's canonical URL variable */
+            url: 'PAGE_URL',
+            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+            identifier: 'PAGE_IDENTIFIER',
+            /* Replace PAGE_TITLE with the title of the page */
+            title: 'PAGE_TITLE',
+        }>
+</Disqus>
                     <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1"></div>
                 </div>
             </Layout>
