@@ -2,7 +2,7 @@
 title: Semantic Versioning
 sections: []
 seo:
-    title: ''
+    title: 'Semantic Versioning'
     description: Semantic Versioning using npm
     robots: []
     extra: []

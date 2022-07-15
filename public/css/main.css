@@ -1,0 +1,15 @@
+iframe {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    overflow: scroll;
+    resize: both;
+    margin: 0;
+    padding: 2em;
+    z-index: -1 !important;
+}
+
+#sb-search-input-example {
+    z-index: 100;
+}
