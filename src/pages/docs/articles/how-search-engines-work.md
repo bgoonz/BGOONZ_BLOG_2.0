@@ -2,7 +2,7 @@
 title: The Anatomy of a Search Engine
 sections: []
 seo:
-    title: ''
+    title: 'The Anatomy of a Search Engine'
     description: 'hardware performance and cost have improved dramatically to partially offset
 the difficulty. There are, however, several notable exceptions to this
 progress such as disk seek time and operating system robustness. In designing
@@ -137,7 +137,6 @@ Another big difference between the web and traditional well controlled collectio
 
 First, we will provide a high level discussion of the architecture. Then, there is some in-depth descriptions of important data structures. Finally, the major applications: crawling, indexing, and searching will be examined in depth.
 
-![]()
 
 Figure 1. High Level Google Architecture
 
@@ -161,7 +160,7 @@ BigFiles are virtual files spanning multiple file systems and are addressable by
 
 #### 4.2.2 Repository
 
-![](http://infolab.stanford.edu/~backrub/repos.gif)
+![alt-text](http://infolab.stanford.edu/~backrub/repos.gif)
 
 Figure 2. Repository Data Structure
 
@@ -183,7 +182,7 @@ A hit list corresponds to a list of occurrences of a particular word in a partic
 
 Our compact encoding uses two bytes for every hit. There are two types of hits: fancy hits and plain hits. Fancy hits include hits occurring in a URL, title, anchor text, or meta tag. Plain hits include everything else. A plain hit consists of a capitalization bit, font size, and 12 bits of word position in a document (all positions higher than 4095 are labeled 4096). Font size is represented relative to the rest of the document using three bits (only 7 values are actually used because 111 is the flag that signals a fancy hit). A fancy hit consists of a capitalization bit, the font size set to 7 to indicate it is a fancy hit, 4 bits to encode the type of fancy hit, and 8 bits of position. For anchor hits, the 8 bits of position are split into 4 bits for position in anchor and 4 bits for a hash of the docID the anchor occurs in. This gives us some limited phrase searching as long as there are not that many anchors for a particular word. We expect to update the way that anchor hits are stored to allow for greater resolution in the position and docIDhash fields. We use font size relative to the rest of the document because when searching, you do not want to rank otherwise identical documents differently just because one of the documents is in a larger font.
 
-![](http://infolab.stanford.edu/~backrub/barrels.gif)
+![alt-text](http://infolab.stanford.edu/~backrub/barrels.gif)
 
 Figure 3. Forward and Reverse Indexes and the Lexicon
 

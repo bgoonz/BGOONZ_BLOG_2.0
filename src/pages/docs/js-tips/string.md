@@ -100,16 +100,100 @@ A `String` object can always be converted to its primitive counterpart with the 
 
 Special characters can be encoded using escape sequences:
 
-<table><thead><tr class="header"><th>Escape sequence</th><th>Unicode code point</th></tr></thead><tbody><tr class="odd"><td><code>\0</code></td><td>null character (U+0000 NULL)</td></tr><tr class="even"><td><code>\'</code></td><td>single quote (U+0027 APOSTROPHE)</td></tr><tr class="odd"><td><code>\"</code></td><td>double quote (U+0022 QUOTATION MARK)</td></tr><tr class="even"><td><code>\\</code></td><td>backslash (U+005C REVERSE SOLIDUS)</td></tr><tr class="odd"><td><code>\n</code></td><td>newline (U+000A LINE FEED; LF)</td></tr><tr class="even"><td><code>\r</code></td><td>carriage return (U+000D CARRIAGE RETURN; CR)</td></tr><tr class="odd"><td><code>\v</code></td><td>vertical tab (U+000B LINE TABULATION)</td></tr><tr class="even"><td><code>\t</code></td><td>tab (U+0009 CHARACTER TABULATION)</td></tr><tr class="odd"><td><code>\b</code></td><td>backspace (U+0008 BACKSPACE)</td></tr><tr class="even"><td><code>\f</code></td><td>form feed (U+000C FORM FEED)</td></tr><tr class="odd"><td><code>\uXXXX</code>
+<table>
+<thead>
+<tr class="header">
+<th>Escape sequence</th>
+<th>Unicode code point</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<code>\0</code>
+</td>
+<td>null character (U+0000 NULL)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\'</code>
+</td>
+<td>single quote (U+0027 APOSTROPHE)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\"</code>
+</td>
+<td>double quote (U+0022 QUOTATION MARK)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\\</code>
+</td>
+<td>backslash (U+005C REVERSE SOLIDUS)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\n</code>
+</td>
+<td>newline (U+000A LINE FEED; LF)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\r</code>
+</td>
+<td>carriage return (U+000D CARRIAGE RETURN; CR)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\v</code>
+</td>
+<td>vertical tab (U+000B LINE TABULATION)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\t</code>
+</td>
+<td>tab (U+0009 CHARACTER TABULATION)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\b</code>
+</td>
+<td>backspace (U+0008 BACKSPACE)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\f</code>
+</td>
+<td>form feed (U+000C FORM FEED)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\uXXXX</code>
 <br/>
 
-…where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>-<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td></tr><tr class="even"><td><code>\u{X}</code>…<code>\u{XXXXXX}</code>
+…where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>-<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td>
+<td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td>
+</tr>
+<tr class="even">
+<td>
+<code>\u{X}</code>…<code>\u{XXXXXX}</code>
 <br/>
 
-…where <code>X</code>…<code>XXXXXX</code> is 1-6 hex digits in the range <code>0</code>-<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+10FFFF</code> (the entirety of Unicode)</td></tr><tr class="odd"><td><code>\xXX</code>
+…where <code>X</code>…<code>XXXXXX</code> is 1-6 hex digits in the range <code>0</code>-<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"</td>
+<td>Unicode code point between <code>U+0000</code> and <code>U+10FFFF</code> (the entirety of Unicode)</td>
+</tr>
+<tr class="odd">
+<td>
+<code>\xXX</code>
 <br/>
 
-…where <code>XX</code> is exactly 2 hex digits in the range <code>00</code>-<code>FF</code>; e.g., <code>\x0A</code> is the same as <code>\n</code> (LINE FEED); <code>\x21</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks; equivalent to ISO-8859-1)</td></tr></tbody></table>
+…where <code>XX</code> is exactly 2 hex digits in the range <code>00</code>-<code>FF</code>; e.g., <code>\x0A</code> is the same as <code>\n</code> (LINE FEED); <code>\x21</code> is "<code>!</code>"</td>
+<td>Unicode code point between <code>U+0000</code> and <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks; equivalent to ISO-8859-1)</td>
+</tr>
+</tbody>
+</table>
 
 ### Long literal strings
 

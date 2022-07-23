@@ -15,7 +15,7 @@ template: docs
 
 ### Explanation for Rotate Right
 
-![](https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png)
+![alt-text](https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png)
 
 ### Question
 
@@ -126,6 +126,7 @@ for (var i = 0; i < num; i++) {
 **Step 3.**\
 We need to put some executable code within our for loop to be run during every cycle.
 ```js
+//
 let rotateRight = function (array, num) {
 let result = array.slice(0);
 for (var i = 0; i < num; i++) {
@@ -166,6 +167,7 @@ return result;
 
 ### End Result
 ```js
+//
 let rotateRight = function (array, num) {
 let result = array.slice(0);
 for (let i = 0; i < num; i++) {

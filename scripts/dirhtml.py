@@ -17,7 +17,7 @@ from urllib.parse import quote
 DEFAULT_OUTPUT_FILE = 'nav-index.html'
 
 
-def process_dir(top_dir, opts):
+def process_dir(top_dir, opts):  # sourcery skip: low-code-quality
     glob_patt = opts.filter or '*'
 
     path_top_dir: Path
@@ -32,7 +32,7 @@ def process_dir(top_dir, opts):
     try:
         index_file = open(index_path, 'w')
     except Exception as e:
-        print('cannot create file %s %s' % (index_path, e))
+        print(f'cannot create file {index_path} {e}')
         return
 
     index_file.write("""<!DOCTYPE html>
@@ -377,10 +377,7 @@ def pretty_size(bytes, units=UNITS_MAPPING):
 
     if isinstance(suffix, tuple):
         singular, multiple = suffix
-        if amount == 1:
-            suffix = singular
-        else:
-            suffix = multiple
+        suffix = singular if amount == 1 else multiple
     return str(amount) + suffix
 
 

@@ -42,7 +42,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 
 Start simple and enter
 
-```console
+```bash
 > console.log('test')
 test
 undefined
@@ -81,25 +81,27 @@ If after some code you type `_`, that is going to print the result of the last o
 
 The REPL has some special commands, all starting with a dot `.`. They are
 
-- `.help`: shows the dot commands help
-- `.editor`: enables editor mode, to write multiline JavaScript code with ease. Once you are in this mode, enter ctrl-D to run the code you wrote.
-- `.break`: when inputting a multi-line expression, entering the .break command will abort further input. Same as pressing ctrl-C.
-- `.clear`: resets the REPL context to an empty object and clears any multi-line expression currently being input.
-- `.load`: loads a JavaScript file, relative to the current working directory
-- `.save`: saves all you entered in the REPL session to a file (specify the filename)
-- `.exit`: exits the repl (same as pressing ctrl-C two times)
+-   `.help`: shows the dot commands help
+-   `.editor`: enables editor mode, to write multiline JavaScript code with ease. Once you are in this mode, enter ctrl-D to run the code you wrote.
+-   `.break`: when inputting a multi-line expression, entering the .break command will abort further input. Same as pressing ctrl-C.
+-   `.clear`: resets the REPL context to an empty object and clears any multi-line expression currently being input.
+-   `.load`: loads a JavaScript file, relative to the current working directory
+-   `.save`: saves all you entered in the REPL session to a file (specify the filename)
+-   `.exit`: exits the repl (same as pressing ctrl-C two times)
 
 The REPL knows when you are typing a multi-line statement without the need to invoke `.editor`.
 
 For example if you start typing an iteration like this:
 
 ```js
+//
 [1, 2, 3].forEach(num => {
 ```
 
 and you press `enter`, the REPL will go to a new line that starts with 3 dots, indicating you can now continue to work on that block.
 
 ```js
+//
 ... console.log(num)
 ... })
 ```
