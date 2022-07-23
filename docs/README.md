@@ -20,7 +20,14 @@
 
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+---
 
+### Sucessfull Deploys:
+
+https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/7d96f29c46b68121c63780a4959925f4039b290e
+
+
+---
 
 
 [![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
