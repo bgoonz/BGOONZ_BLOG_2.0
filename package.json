@@ -1,19 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "next-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "^12.1.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
-=======
     "name": "bgoonz-blog",
     "description": "bgoonz-blog",
     "version": "1.11.5",
@@ -68,5 +53,4 @@
     "devDependencies": {
         "prettier": "^2.7.1"
     }
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 }
