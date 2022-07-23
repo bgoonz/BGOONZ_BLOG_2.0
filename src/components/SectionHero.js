@@ -1,7 +1,5 @@
-/* It renders a section with a background image, a title, some content, and a set of buttons */
 import React from 'react';
 import _ from 'lodash';
-
 import {toStyleObj, withPrefix, markdownify} from '../utils';
 import CtaButtons from './CtaButtons';
 
