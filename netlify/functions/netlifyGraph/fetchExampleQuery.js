@@ -40,7 +40,7 @@ exports.verifySignature = (input) => {
     return true;
 };
 
-const operationsDoc = `query ExampleQuery @netlify(id: """9d091d59-0d10-400f-8417-f171e588dfc2""", doc: """An example query to start with.""") {
+const operationsDoc = `query ExampleQuery @netlify(id: "z", doc: """An example query to start with.""") {
   me(
     auths: {brexAuth: "", airtableApiKey: "", clearbitAuth: "", crunchbaseUserKey: "", cloudflareUserAuth: {key: "", email: ""}, dribbbleOAuthToken: "", dropboxOAuthToken: "", facebookOAuthToken: "", firebaseOAuthToken: "", gitHubOAuthToken: "", gmailOAuthToken: "", googleCalendarOAuthToken: "", gongAuth: {basic: {accessKeySecret: "", accessKey: ""}, oauthToken: ""}, googleComputeOAuthToken: "", googleMapsKey: "", googleDocsOAuthToken: "", googleOAuthToken: "", intercomOAuthToken: "", hubspotOAuthToken: "", googleSearchConsoleOAuthToken: "", zendeskAPITokenAuth: {token: "", email: "", subdomain: ""}, zeitOAuthToken: "", youtubeOAuthToken: "", wordpressBearerToken: "", upsAPIAuth: {accessToken: "", password: "", username: ""}, stripeOAuthToken: "", spotifyOAuthToken: "", slackOAuthToken: "", productHuntOAuthToken: "", openCollective: {apiKey: ""}, onegraphToken: "", graphCmsToken: "", googleTranslateOAuthToken: ""}
   ) {
