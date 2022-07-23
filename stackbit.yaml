@@ -1,7 +1,7 @@
-stackbitVersion: 0.4.0
+stackbitVersion: ~0.3.0
 ssgName: gatsby
 ssgVersion: 2.3.30
-nodeVersion: 14.5.0
+nodeVersion: 14
 buildCommand: npm run build
 publishDir: public
 staticDir: static
@@ -10,52 +10,42 @@ dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
 logicFields:
-    - doc_sections.root_docs_path
-    - doc_sections.sections
-    - docs.weight
+  - doc_sections.root_docs_path
+  - doc_sections.sections
+  - docs.weight
 models:
-    config:
-        type: config
-        label: Site Configuration
-        fields:
-            - type: string
-              name: title
-              label: Title
-              description: Site title
-              required: true
-            - type: string
-              name: domain
-              label: Domain
-              description: >-
-                  The domain of your site, including the protocol, e.g.
-                  https://mysite.com/
-            - type: image
-              name: favicon
-              label: Favicon
-              description: A square icon that represents your website
-            - type: enum
-              name: palette
-              label: Color Palette
-              description: The color palette of the site
-              options:
-                  - blue
-                  - green
-                  - navy
-                  - violet
-              default: blue
-              required: true
-            - type: model
-              name: header
-              label: Header Configuration
-              models:
-                  - header
-            - type: model
-              name: footer
-              label: Footer Configuration
-              models:
-                  - footer
-    header:
-        type: object
+  config:
+    type: config
+    label: Site Configuration
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: Site title
+        required: true
+      - type: string
+        name: domain
+        label: Domain
+        description: >-
+          The domain of your site, including the protocol, e.g.
+          https://mysite.com/
+      - type: image
+        name: favicon
+        label: Favicon
+        description: A square icon that represents your website
+      - type: enum
+        name: palette
+        label: Color Palette
+        description: The color palette of the site
+        options:
+          - blue
+          - green
+          - navy
+          - violet
+        default: blue
+        required: true
+      - type: model
+        name: header
         label: Header Configuration
         labelField: title
         fields:
