@@ -16,7 +16,7 @@ thumb_image: images/neural.png
 image: images/my-back-0b8b3eaf.png
 ---
 
-### Sorting Algorithms![](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)![](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)![](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)![](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)![](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)![](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)![](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)![](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)![](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)![](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)&#xA;&#xA;
+### Sorting Algorithms![alt-text](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)![alt-text](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)![alt-text](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)![alt-text](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)![alt-text](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)![alt-text](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)![alt-text](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)![alt-text](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)![alt-text](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)![alt-text](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)&#xA;&#xA;
 
 ### Bubble Sort
 

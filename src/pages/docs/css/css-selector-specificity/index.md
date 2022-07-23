@@ -44,19 +44,19 @@ When an `important` rule is used on a style declaration, this declaration overri
 1.  Make better use of the CSS cascade
 2.  Use more specific rules. By indicating one or more elements before the element you're selecting, the rule becomes more specific and gets higher priority:
 
-    ```
+ ```
     <div id="test">
       <span>Text</span>
     </div>
-    ```
+ ```
 
     Copy to Clipboard
 
-    ```
+ ```
     div#test span { color: green; }
     div span { color: blue; }
     span { color: red; }
-    ```
+ ```
 
     Copy to Clipboard
 
@@ -64,10 +64,10 @@ When an `important` rule is used on a style declaration, this declaration overri
 
 3.  As a nonsense special case for (2), duplicate simple selectors to increase specificity when you have nothing more to specify.
 
-    ```
+ ```
     #myId#myId span { color: yellow; }
     .myClass.myClass span { color: orange; }
-    ```
+ ```
 
     Copy to Clipboard
 
