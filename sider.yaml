@@ -1,0 +1,16 @@
+# This is a YAML file. See <https://yaml.org>.
+linter:
+  rubocop:
+    config: "lint_yml/.myrubocop.yml"
+
+  eslint:
+    root_dir: "./src"
+    npm_install: false
+    config: "frontend/.eslintrc"
+
+  stylelint:
+    root_dir: "./src/scss"
+    glob: "**/*.{css,scss}"
+
+ignore:
+  - "images/**"

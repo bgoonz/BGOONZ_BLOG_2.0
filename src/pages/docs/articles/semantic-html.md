@@ -10,13 +10,14 @@ seo:
 template: docs
 ---
 
+
 Three different aspects of web site production:
 
--   Content -- the text, images, etc. What the user wants to read.
+- Content -- the text, images, etc. What the user wants to read.
+- 
+- Style -- how the content is arranged on the page, fonts, colours, page style.
 
--   Style -- how the content is arranged on the page, fonts, colours, page style.
-
--   Behaviour -- how users interact with the site, data processing, dynamic page elements.
+- Behaviour -- how users interact with the site, data processing, dynamic page elements.
 
 Since each requires different skills, a good (software) design would seperate them.
 
@@ -38,7 +39,7 @@ As the industry developed though, the task of type-setter became more mechanical
 
 This team based approach to document production means that each person can develop their own expertise and to a certain extent, doesn't need to worry about what the people later in the chain will do. The author doesn't worry about how to place figures or images in the page, just that they will be there; the designer doesn't need to be concerned about kerning and the use of em-spaces in type-setting; the type-setter isn't an expert in the content of the text. All can work together to produce a superior printed document.
 
-The world of document production worked like this for a long time until the invention of the personal computer and *Desktop Publishing* software. Suddenly, authors became designers and type-setters through easy to use computer software. They could choose fonts, set margins, force hyphenation and make minute decisions about the layout and look and feel of each page. Not surprisingly, this becomes a significant distraction from the task of creating content, but it also means that the expertise of the specialist designer or type-setter isn't used any more. This might lead to more productivity as the production process is compressed, but it doesn't usually lead to more readable, better presented documents; many of the early self-produced documents were an unsightly mix of fonts, colours and sizes.
+The world of document production worked like this for a long time until the invention of the personal computer and _Desktop Publishing_ software. Suddenly, authors became designers and type-setters through easy to use computer software. They could choose fonts, set margins, force hyphenation and make minute decisions about the layout and look and feel of each page. Not surprisingly, this becomes a significant distraction from the task of creating content, but it also means that the expertise of the specialist designer or type-setter isn't used any more. This might lead to more productivity as the production process is compressed, but it doesn't usually lead to more readable, better presented documents; many of the early self-produced documents were an unsightly mix of fonts, colours and sizes.
 
 If we fast-forward to the software tools we have today for document production, it's interesting to note that the expertise of the designer and typesetter has crept back in to the process. Rather than being involved in the production of every document, these people are now able to write stylesheets and templates as well as contribute to the algorithms used in the software to lay out the text on a page. Most companies will have a standard document template that is used for reports or letters, this has usually been designed by a professional and all the author needs to do is enter the text in the right place. Stylesheets in word processors mean that there will be a consistency of font use throughout the document and importantly, that the decisions on which fonts and how they are used doesn't need to be made by the author.
 
@@ -58,11 +59,11 @@ All of these additions to HTML and the mis-use of existing tags meant that a lan
 
 The current suite of web languages understood by your browser (HTML, CSS and Javascript) each serve different roles in the web development process:
 
--   HTML - Content
+- HTML - Content
+- 
+- CSS - Style
 
--   CSS - Style
-
--   Javascript - Behaviour
+- Javascript - Behaviour
 
 The third of these - Javascript and Behaviour - refer to the way that Javascript can be used to change the way that the user interacts with the page. This doesn't really have an analogue in the print document production world but it's an important aspect of modern web content production. It fits into this framework because the behavioural changes that Javascript can introduce should not be the concern of the content author or the visual designer (though both might have opinions on what they'd like to see).
 
@@ -70,9 +71,9 @@ It is useful to think of these three aspects of web design as independent things
 
 ## The Separation of Concerns
 
-From a Computer Science/Software Engineering point of view there is a very important principle called the [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) (SoC) that is illustrated perfectly by the way that the various web languages have evolved. The SoC principle is about partitioning the work that we do in software development into parts that can be considered separately. This is achieved by *modularisation* within a software project and is helped by things like classes and interface descriptions between modules
+From a Computer Science/Software Engineering point of view there is a very important principle called the [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) (SoC) that is illustrated perfectly by the way that the various web languages have evolved. The SoC principle is about partitioning the work that we do in software development into parts that can be considered separately. This is achieved by _modularisation_ within a software project and is helped by things like classes and interface descriptions between modules
 
--   in fact these things have been developed to support SoC.
+- in fact these things have been developed to support SoC.
 
 The SoC principle allows us to develop large complex software by allowing us to concentrate on different aspects of the solution. It could be that we do that alone, spending time on one aspect and then another, or as a team with different people assigned to different aspects. Either way, being able to work on part of the problem makes it manageable and improves the overall quality of the solution.
 
@@ -80,7 +81,7 @@ In web development, the separation of concerns is supported by the different lan
 
 ## Semantic HTML Markup
 
-One corollary of this kind of thinking is that each component that we use should be used as it was designed and according to it's role in the overall picture. In particular for HTML this implies that the markup we use should encode only the *structure* of the document rather than aspects of the *appearance* which is properly dealt with using CSS. Further, this means that we should use markup in a way that imparts useful *meaning* to the document structure. This is generally known as using *Semantic HTML* ([Wikipedia](http://en.wikipedia.org/wiki/Semantic_HTML), [POSH](http://microformats.org/wiki/posh) on Microformats.org) and is the current best practice in HTML authoring.
+One corollary of this kind of thinking is that each component that we use should be used as it was designed and according to it's role in the overall picture. In particular for HTML this implies that the markup we use should encode only the _structure_ of the document rather than aspects of the _appearance_ which is properly dealt with using CSS. Further, this means that we should use markup in a way that imparts useful _meaning_ to the document structure. This is generally known as using _Semantic HTML_ ([Wikipedia](http://en.wikipedia.org/wiki/Semantic_HTML), [POSH](http://microformats.org/wiki/posh) on Microformats.org) and is the current best practice in HTML authoring.
 
 To clarify this point we can look at some examples. Writing semantic HTML means using the HTML tags as they were designed to be used - to convey the meaning of a particular document structure or textual element. So a good example is when we want to encode the main heading in a page I would use the H1 tag:
 
@@ -102,7 +103,7 @@ A final example might be the description of a staff member in an online director
 
 Some authors are put off the description list because of the default style that is associated with it which puts the DT and DD parts on different lines. However, changing this is very easy with CSS so it really should be used for information that is structured in this way.
 
-Using the right semantic markup *adds* information to the text that can be used by the designer to enhance the communicative power of the web page. Using a consistent style for headings makes it easier for a reader to see the structure of a page and understand it. Similarly, I can use inline tags for things like *emphasis* (EM), Abbrv. (abbreviations, ABBR), “a quotation” (Q) or **a strongly emphasised point** (STRONG). Each of these has a default style (or in some cases like ABBR, is just the same as the default text style) but can be re-styled by the designer to achieve a particular look and feel. If these elements are used consistently throughout a text, the overall readability of the text can be greatly improved.
+Using the right semantic markup _adds_ information to the text that can be used by the designer to enhance the communicative power of the web page. Using a consistent style for headings makes it easier for a reader to see the structure of a page and understand it. Similarly, I can use inline tags for things like _emphasis_ (EM), Abbrv. (abbreviations, ABBR), "a quotation" (Q) or **a strongly emphasised point** (STRONG). Each of these has a default style (or in some cases like ABBR, is just the same as the default text style) but can be re-styled by the designer to achieve a particular look and feel. If these elements are used consistently throughout a text, the overall readability of the text can be greatly improved.
 
 Another motivation for using semantic markup is for users who cannot read via a normal web browser. Blind people make use software that reads out the content of a web page; if the page uses the appropriate semantic markup then the software can make use of this to present the content more appropriately to the user. This might include using the headings to provide a summary of the page or the emphasis tags to generate an appropriate intonation pattern. You might also think about the difference in reading out a list vs. a table of data - that might be a useful way of choosing between the two for a particular part of your page.
 
@@ -110,11 +111,11 @@ Another motivation for using semantic markup is for users who cannot read via a 
 
 1.  Find an appropriate HTML tag to mark up the following items:
 
-    -   the name of a book that you are citing in an essay
+    - the name of a book that you are citing in an essay
 
-    -   a fragment of computer code, eg. a bit of Python
+    - a fragment of computer code, eg. a bit of Python
 
-    -   an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
+    - an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
 
 ## Extending the Semantics of HTML
 
@@ -140,31 +141,31 @@ Rather than being a chapter that will teach you the HTML language this will be a
 
 Most people will know some HTML by now (assuming you've been studying computing for a while or have a general interest in the web). My task here is not to teach you HTML or act as a reference for the language, there are plenty of resources around that will do this. Some examples are:
 
--   [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
-
--   [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
+- [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
+- 
+- [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
 
 ## About HTML
 
-HTML is a *markup language*, which is a formal language used to add encode structured documents, often by mixing formal elements and plain text. Another example is the LaTeX language used to typeset scientific and technical documents. Here's a fragment of LaTeX that shows the use of commands preceded by a backslash character and curly braces to enclose text:
+HTML is a _markup language_, which is a formal language used to add encode structured documents, often by mixing formal elements and plain text. Another example is the LaTeX language used to typeset scientific and technical documents. Here's a fragment of LaTeX that shows the use of commands preceded by a backslash character and curly braces to enclose text:
 
 These commands are interpreted by the LaTeX system which uses then to produce nicely typeset PDF output. Markup can also be used to identify regions of text for analysis. Here's an example from a language corpus used to study human interaction:
 
-In this example, special character sequences are used to mark things like speaker turns, pauses, phrases and overlapping speech. This markup can be used to help analyse the language and find examples of certain linguistic phenomena (for example, find me examples of *'you know'* and show me what the next person says in response).
+In this example, special character sequences are used to mark things like speaker turns, pauses, phrases and overlapping speech. This markup can be used to help analyse the language and find examples of certain linguistic phenomena (for example, find me examples of _'you know'_ and show me what the next person says in response).
 
-HTML is the *Hypertext* Markup Language, meaning that it is designed to encode hypertext documents - that is, documents containing links to other documents on the World Wide Web. In fact, the hyperlink is just a small part of HTML and much more interesting are all the other parts of the language that allows us to produce useful documents for the web.
+HTML is the _Hypertext_ Markup Language, meaning that it is designed to encode hypertext documents - that is, documents containing links to other documents on the World Wide Web. In fact, the hyperlink is just a small part of HTML and much more interesting are all the other parts of the language that allows us to produce useful documents for the web.
 
 HTML is based on an earlier standard called SGML (Standard Generalised Markup language) which had a successor called XML (eXtensible Markup Language). SGML and XML are both languages for defining markup languages, that is they define the syntax of a markup language but allow you to develop your own language for a specific purpose. The syntax is the angle brackets containing start and end tags \<p> and \</p> that you will be familiar with (and a number of other rules). SGML and XML based languages all use this same syntax but allow the language designer to make up their own tags and define how they should be used together. HTML was designed originally by Tim Berners-Lee and later by the W3C as a language to encode pages of content for the web.
 
-Importantly, HTML is a *markup language* not a *programming language*. The job of a markup language is to record the structure of a document; that structure can then be interpreted by a program to generate some output. A programming language contains instructions that will be executed (or interpreted) to carry out some action or compute some result.
+Importantly, HTML is a _markup language_ not a _programming language_. The job of a markup language is to record the structure of a document; that structure can then be interpreted by a program to generate some output. A programming language contains instructions that will be executed (or interpreted) to carry out some action or compute some result.
 
 ## Versions of HTML
 
 The first version of HTML was developed by Tim Berners-Lee as part of his World Wide Web project along with the HTTP protocol and the URL syntax. At first it was a very simple language for encoding articles and so had tags for headings, paragraphs, lists etc. Later, the language evolved to encompas new features in the browser such as the ability to display images, tables and modify the font that text was displayed in. The evolution of HTML has been quite gradual and at times part of intense competition between browser vendors (look up the [Browser Wars](http://en.wikipedia.org/wiki/Browser_wars) to get the full story). The Internet Engineering Task Force (IETF) and later the World Wide Web Consortium (W3C) tried to standardise the language but it took some time for industry practice to align with the W3C standards. Luckily now we are in a period of relative stability where the standards process aligns well with what the major browsers are able to understand.
 
-A version of HTML is defined by a Document Type Definintion (DTD) - a formal definition of the allowed tags and attributes and the allowed structure of an HTML document. The DTD says that you can have a \<p> tag and that it can contain a \<strong> tag but that a \<li> has to be inside a \<ul> or \<ol> tag and so on. If a document conforms to the DTD (follows the rules) we say that it is *valid*, if it contains errors such as having an unknown tag or a tag in the wrong place it is invalid.
+A version of HTML is defined by a Document Type Definintion (DTD) - a formal definition of the allowed tags and attributes and the allowed structure of an HTML document. The DTD says that you can have a \<p> tag and that it can contain a \<strong> tag but that a \<li> has to be inside a \<ul> or \<ol> tag and so on. If a document conforms to the DTD (follows the rules) we say that it is _valid_, if it contains errors such as having an unknown tag or a tag in the wrong place it is invalid.
 
-Early versions of HTML were subject to a lot of change and it wasn't until HTML version 4.0.1, released in 1999 that there was a bit of stability in the language and consensus about what should be included and what should be left out. Before then, HTML had grown to contain a lot of *visual* markup that had been developed by the browser vendors (Netscape and Microsoft) to try to make their browser look better than the competition. An example is the \<font> tag introduced by Microsoft (and copied by Netscape) which could change the font used to render some text. By the time HTML 4.01 was published, Cascading Style Sheets (CSS) were becoming more widely adopted and the use of markup that explicitly referred to the visual appearance of the content was discouraged.
+Early versions of HTML were subject to a lot of change and it wasn't until HTML version 4.0.1, released in 1999 that there was a bit of stability in the language and consensus about what should be included and what should be left out. Before then, HTML had grown to contain a lot of _visual_ markup that had been developed by the browser vendors (Netscape and Microsoft) to try to make their browser look better than the competition. An example is the \<font> tag introduced by Microsoft (and copied by Netscape) which could change the font used to render some text. By the time HTML 4.01 was published, Cascading Style Sheets (CSS) were becoming more widely adopted and the use of markup that explicitly referred to the visual appearance of the content was discouraged.
 
 HTML 4.0.1 is still the latest version of the official W3C standard although there have been a large number of changes implemented by the browser vendors since the time it was released.
 

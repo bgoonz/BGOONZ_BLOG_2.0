@@ -36,7 +36,7 @@ We only need a single tool to investigate the improvements on your site.
 
 Google Chrome Developer Tools.
 
-To access these tools open Chrome and navigate to your site. Right-click the page and choose the “Inspect” option.
+To access these tools open Chrome and navigate to your site. Right-click the page and choose the "Inspect" option.
 
 You now have developer tools open, let's improve your site!
 
@@ -144,7 +144,7 @@ By selecting the correct compression type, we can reduce image size by up to 90%
 
 To check if compression could improve the images on your site, use the Dev Tools and select the network tab.
 
-You can filter by “Img” and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It's the resource file size we are looking at.
+You can filter by "Img" and it will show you the images downloaded. In the size column, it will show the resource file size and the downloaded file size. It's the resource file size we are looking at.
 
 If you see files that are larger than 100kb it's time to try compression.
 
@@ -270,7 +270,7 @@ To support these devices we want to show a nice clear image. We do not want to h
 
 Check to see if there are any picture tags in the HTML. You are then looking for different sources of the same image.
 
-It can help to search for “srcset” in the markup.
+It can help to search for "srcset" in the markup.
 
 #### How
 
@@ -378,9 +378,9 @@ It is safe to remove all these default true values from your HTML.
 
 #### What
 
-To check if your site has this open Dev Tools and click on the “Elements” tab.
+To check if your site has this open Dev Tools and click on the "Elements" tab.
 
-This will show the HTML and you can perform a search for “true”.
+This will show the HTML and you can perform a search for "true".
 
 If you find some you can remove them.
 
@@ -388,7 +388,7 @@ If you find some you can remove them.
 
 Most HTML minifiers will have an option to remove these values.
 
-The [HTML minifier](http://kangax.github.io/html-minifier/) tool we mentioned above has a “Collapse boolean attributes” option. To remove the “true” values check this checkbox.
+The [HTML minifier](http://kangax.github.io/html-minifier/) tool we mentioned above has a "Collapse boolean attributes" option. To remove the "true" values check this checkbox.
 
 Impact: Low
 
@@ -416,7 +416,7 @@ If you find some these are comments and you can remove them.
 
 The [HTML minifier](http://kangax.github.io/html-minifier/) can remove these comments for us.
 
-There is a section in the options called “Remove comments”. Check this to remove all comments from the file.
+There is a section in the options called "Remove comments". Check this to remove all comments from the file.
 
 ### Remove Legacy Tag Attributes
 
@@ -430,12 +430,13 @@ It is important to be aware of these defaults so that you know what to remove.
 
 #### What
 
-In Dev Tools click the “Elements” tab and search for “text/javascript” and “text/css”.
+In Dev Tools click the "Elements" tab and search for "text/javascript" and "text/css".
 
 Which will return results like this:
 
 ```
-<script type="text/javascript"></script>
+<script type="text/javascript">
+</script>
 ```
 
 This would tell the browser that we were going to load a script tag and run Javascript.
@@ -448,7 +449,7 @@ Replace the above code with:
 
 #### How
 
-Again, using an [HTML minifier](http://kangax.github.io/html-minifier/) there is an option labeled “HTML5”. Check this when minifying and it will remove these attributes.
+Again, using an [HTML minifier](http://kangax.github.io/html-minifier/) there is an option labeled "HTML5". Check this when minifying and it will remove these attributes.
 
 ### Minify inline CSS and Javascript
 
@@ -456,7 +457,7 @@ Impact: Medium (depending on the amount of CSS and Javascript inlined)
 
 #### Why
 
-If the HTML file has Javascript or CSS within the HTML file (called “inline”). For example:
+If the HTML file has Javascript or CSS within the HTML file (called "inline"). For example:
 
 ```
 <style>
@@ -487,13 +488,13 @@ Making the file size smaller.
 
 #### What
 
-In the Dev Tools open the “Network” tab and locate the HTML file and click on the “Response”. Search for the “style” or “script” tag in the HTML, if there is CSS or Javascript written inline.
+In the Dev Tools open the "Network" tab and locate the HTML file and click on the "Response". Search for the "style" or "script" tag in the HTML, if there is CSS or Javascript written inline.
 
 If there is, check to see if it has whitespace and indentations. If it does we can minify it.
 
 #### How
 
-We can use our old friend [HTML minifier](http://kangax.github.io/html-minifier/). Make sure you select the options “Minify CSS” and “Minify Javascript”.
+We can use our old friend [HTML minifier](http://kangax.github.io/html-minifier/). Make sure you select the options "Minify CSS" and "Minify Javascript".
 
 ### Load CSS Before Javascript
 
@@ -504,7 +505,8 @@ Impact: High
 When a webpage is loading it loads in sequential order. So if you have the following markup:
 
 ```
-<script src="cats.js"></script>
+<script src="cats.js">
+</script>
 <link rel="stylesheet" href="cats.css"/>
 ```
 
@@ -514,7 +516,7 @@ Since we need the CSS to show the final page, it is better to load the CSS first
 
 #### What
 
-Search for Script and stylesheet in your HTML. You can view this in the “Network” tab of Chrome Dev Tools, ensure that they are in the correct order.
+Search for Script and stylesheet in your HTML. You can view this in the "Network" tab of Chrome Dev Tools, ensure that they are in the correct order.
 
 #### How
 
@@ -522,7 +524,8 @@ Reorder the tags so that all required CSS loads before the javascript:
 
 ```
 <link rel="stylesheet" href="cats.css"/>
-<script src="cats.js"></script>
+<script src="cats.js">
+</script>
 ```
 
 ### Limit iFrames on Page
@@ -537,11 +540,11 @@ The more iFrames you add, the slower the site will be.
 
 #### What
 
-To locate the iFrames, use Developer tools click the “Elements” tab.
+To locate the iFrames, use Developer tools click the "Elements" tab.
 
 ![iFrames](https://pagedart.com/images/30-ways-to-improve-your-website-performance/iframe.jpg)
 
-This will show the HTML markup from here you can perform a find and search for “iframe”.
+This will show the HTML markup from here you can perform a find and search for "iframe".
 
 #### How
 
@@ -577,7 +580,7 @@ Javascript is becoming a very important aspect of modern web application perform
 
 We must ensure that we keep javascript files small and only load what the page needs when it needs it.
 
-Let’s take a look at some improvements.
+Let's take a look at some improvements.
 
 ### Minify the Javascript
 
@@ -632,7 +635,7 @@ With `defer`, it will download the script and once the HTML has rendered it will
 
 #### What
 
-You can look at the HTML file in the “Elements” tab of the Dev Tools.
+You can look at the HTML file in the "Elements" tab of the Dev Tools.
 
 Look for where the script tags are being loaded.
 
@@ -651,8 +654,10 @@ Sometimes you need one file to load before another. If you use the `async` attri
 If you use `defer` then they will execute in order.
 
 ```
-<script defer src="JS/jquery-3.1.1.min.js"></script>
-<script defer src="JS/my.js"></script>
+<script defer src="JS/jquery-3.1.1.min.js">
+</script>
+<script defer src="JS/my.js">
+</script>
 ```
 
 ### Bloated Frameworks
@@ -699,7 +704,7 @@ A good place to visit is [NPM](https://npmjs.com/). On this site, you can search
 
 CSS files can keep growing over time and often it can be difficult to know if certain classes are still in use.
 
-It’s important to review the CSS for this reason.
+It's important to review the CSS for this reason.
 
 ### Minify the CSS
 
@@ -739,11 +744,11 @@ It can be almost impossible to look at a CSS file and figure out if the styles a
 
 A simpler way is to perform a Lighthouse Audit.
 
-To do this in Chrome Developer Tools open the Audit tab and run a “Performance” Audit.
+To do this in Chrome Developer Tools open the Audit tab and run a "Performance" Audit.
 
 ![Lighthouse Audit](https://pagedart.com/images/30-ways-to-improve-your-website-performance/audit.jpg)
 
-This will flag the “Remove unused CSS” opportunity if your site would benefit.
+This will flag the "Remove unused CSS" opportunity if your site would benefit.
 
 #### How
 
@@ -777,7 +782,7 @@ We can also use [UnCSS](https://uncss-online.com/) to extract the CSS needed for
 
 Then add the CSS styles.
 
-Once you hit “UnCSS my styles” you have the critical CSS and you can insert this inline to the HTML.
+Once you hit "UnCSS my styles" you have the critical CSS and you can insert this inline to the HTML.
 
 To do this add the critical CSS to a `<style>` tag in the `<head>` section of your HTML.
 
@@ -825,7 +830,7 @@ Remove this and add it to an external CSS file using preload. This will make the
 
 #### What
 
-Look in the “Network” tab and at the HTML file for any inline CSS.
+Look in the "Network" tab and at the HTML file for any inline CSS.
 
 #### How
 
@@ -886,7 +891,7 @@ Making the initial connection faster.
 
 #### What
 
-To do this on the “Elements” tab search for “preconnect” in the HTML.
+To do this on the "Elements" tab search for "preconnect" in the HTML.
 
 Have a look to see if there are any `<link>` tags that have the DNS domain name of the location of the fonts.
 
@@ -944,7 +949,7 @@ Here are a few links to some common servers to get you started:
 
 -   [Wordpress](https://wp-rocket.me/)
 -   [Express](https://github.com/expressjs/compression)
--   [IIS](https://docs.microsoft.com/en-us/iis/extensions/iis-compression/iis-compression-overview)
+-   [IIS](https://docs.microsoft.com/iis/extensions/iis-compression/iis-compression-overview)
 -   [NGinX](https://docs.nginx.com/nginx/admin-guide/web-server/compression/)
 
 Also, remember that you only want to compress text files. So do not add compression to raster images as this may make them slower.
@@ -1008,7 +1013,7 @@ There is also a performance boost if you register your site with the [Google HST
 
 To check if you have HTTPS enabled open Chrome and look for the padlock next to the URL.
 
-If you don’t see it, you may see the “Not Secure” text instead.
+If you don't see it, you may see the "Not Secure" text instead.
 
 ![Not Secure](https://pagedart.com/images/30-ways-to-improve-your-website-performance/not-secure.jpg)
 
@@ -1036,9 +1041,9 @@ This changes the advice on some of the above improvements. Loading many files ca
 
 #### What
 
-To check if the site is using HTTP/2 we can look in the network tab and add the “Protocol” column.
+To check if the site is using HTTP/2 we can look in the network tab and add the "Protocol" column.
 
-This will show “h2” if we have HTTP/2 enabled on the server.
+This will show "h2" if we have HTTP/2 enabled on the server.
 
 #### How
 
@@ -1058,7 +1063,7 @@ Try to keep these cookies to at least below 20.
 
 #### What
 
-To check this have a look at the network tab and click on the headers tab. You need to find the “cookie” header in the request, like this:
+To check this have a look at the network tab and click on the headers tab. You need to find the "cookie" header in the request, like this:
 
 ![Cookies](https://pagedart.com/images/30-ways-to-improve-your-website-performance/cookies.jpg)
 
