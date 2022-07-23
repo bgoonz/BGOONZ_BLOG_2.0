@@ -26,6 +26,10 @@
 
 https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/7d96f29c46b68121c63780a4959925f4039b290e
 
+https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/6dfa99e5feb38828b28f5ad21a50f2d517e56247
+
+
+
 
 ---
 
