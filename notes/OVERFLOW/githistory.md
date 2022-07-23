@@ -310,7 +310,7 @@ hi
 c3c681777 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 364 files changed, 1209 insertions(+), 1209 deletions(-)
 
-Merge branch 'master' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'master' of https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0
 a41090f64 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 
 main-projects.md: added
@@ -321,7 +321,7 @@ bash-intro.md: added
 5aae32300 by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (3 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-Merge branch 'preview' of https://github.com/bgoonz/BGOONZ_BLOG_2.0 into preview
+Merge branch 'preview' of https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0 into preview
 db9888093 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 
 .env: removed
@@ -883,13 +883,13 @@ hi
 4172ce972 by bgoonz <bryan.guner@gmail.con>, Mon Jan 17 2022 (7 days ago)
 2 files changed, 25074 insertions(+), 27 deletions(-)
 
-Merge branch 'master' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'master' of https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0
 937e49815 by Bryan Guner <bryan.guner@gmail.com>, Mon Jan 17 2022 (7 days ago)
 
 Merge remote-tracking branch 'origin/preview'
 93d277a41 by Stackbit <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 
-Merge branch 'preview' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'preview' of https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0
 13e53a3bc by Bryan Guner <bryan.guner@gmail.com>, Mon Jan 17 2022 (7 days ago)
 
 scrap.md: changed

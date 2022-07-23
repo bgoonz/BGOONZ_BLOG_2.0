@@ -77,7 +77,7 @@ https://github.com/bgoonz/Learning-Assets
 https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering
 https://github.com/bgoonz/web-dev-setup-checker
 https://github.com/search/advanced
-https://github.com/bgoonz/BGOONZ_BLOG_2.0
+https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0
 https://github.com/bgoonz
 https://www.instagram.com/bgoonz/?hl=en
 https://www.linkedin.com/in/bryan-guner-046199128/
@@ -213,7 +213,7 @@ https://github.com/bgoonz/Learning-Assets
 https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering
 https://github.com/bgoonz/web-dev-setup-checker
 https://github.com/search/advanced
-https://github.com/bgoonz/BGOONZ_BLOG_2.0
+https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0
 https://github.com/bgoonz
 https://www.instagram.com/bgoonz/?hl=en
 https://www.linkedin.com/in/bryan-guner-046199128/

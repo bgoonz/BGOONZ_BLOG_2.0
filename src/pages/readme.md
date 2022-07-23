@@ -39,7 +39,7 @@ image: images/bgoonzblog20-a6a3bfc3.png
 
 [![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
 
-![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
+![Demo](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
 
 # Homepage
 
@@ -1763,7 +1763,7 @@ export default class Header extends React.Component {
                 </div>
 
                 <div>
-                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+                    <a className="github-corner" href="https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
                             width={80}

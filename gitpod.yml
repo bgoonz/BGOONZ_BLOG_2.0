@@ -1,8 +1,8 @@
 # fullstack frontend .gitpod.yml
 # multi-repo
 additionalRepositories:
-  - url: https://github.com/bgoonz/BGOONZ_BLOG_2.0/
-    checkoutLocation: https://github.com/bgoonz/BGOONZ_BLOG_2.0/
+  - url: https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/
+    checkoutLocation: https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/
 
 tasks:
   - name: frontend

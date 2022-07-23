@@ -47,7 +47,7 @@ JavaScript has primitive and non-primitive data structures. Primitive data stru
 
 Non-primitive data structures are not defined by the programming language but rather by the programmer. These include linear data structures, static data structures, and dynamic data structures, like queue and linked lists.
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#1-array)1. Array
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#1-array)1. Array
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
@@ -64,12 +64,12 @@ Disadvantages
 * Expensive to insert/delete or resequence values
 * Inefficient to sort
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications)Applications
 
 * Basic spreadsheets
 * Within complex structures such as hash tables
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#2-queues)2. Queues
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#2-queues)2. Queues
 
 Queues are conceptually similar to stacks; both are sequential structures, but queues process elements in the order they were entered rather than the most recent element.
 
@@ -89,13 +89,13 @@ Disadvantages
 
 * Can only retrieve the oldest element
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-1)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-1)Applications
 
 * Effective as a buffer when receiving frequent data
 * Convenient way to store order-sensitive data such as stored voicemails
 * Ensures the oldest data is processed first
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#3-linked-list)3. Linked List
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#3-linked-list)3. Linked List
 
 Linked lists are a data structure which, unlike the previous three, does not use physical placement of data in memory. This means that, rather than indexes or positions, linked lists use a referencing system: elements are stored in nodes that contain a pointer to the next node, repeating until all nodes are linked.
 
@@ -114,11 +114,11 @@ Disadvantages
 * Inefficient to retrieve a specific element
 * Inefficient to traverse the list backward
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-2)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-2)Applications
 
 * Best used when data must be added and removed in quick succession from unknown locations
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#4-trees)4. Trees
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#4-trees)4. Trees
 
 Trees are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, nodes contain both elements of data and pointers marking its relation to immediate nodes.
 
@@ -152,14 +152,14 @@ Disadvantages
 * Binary search trees are not as fast as the more complicated hash table
 * Binary search trees can degenerate into linear search (scanning all elements) if not implemented with balanced subtrees.
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-3)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-3)Applications
 
 * Storing hierarchical data such as a file location.
 * Binary search trees are excellent for tasks needing searching or ordering of data.
 
 > *Enjoying the article? Scroll down to [sign up](https://www.educative.io/blog/blog-newsletter-annoucement) for our free, bi-monthly newsletter.*
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#5-graphs)5. Graphs
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#5-graphs)5. Graphs
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
@@ -183,12 +183,12 @@ Disadvantages
 * At a higher level, text can be time-consuming to convert to an image.
 * It can be difficult to see the existing edges or how many edges a given vertex has connected to it
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-4)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-4)Applications
 
 * Network representations
 * Modeling social networks, such as Facebook.
 
-## [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#6-hash-tables-map)6. Hash Tables (Map)
+## [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#6-hash-tables-map)6. Hash Tables (Map)
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
@@ -206,7 +206,7 @@ Disadvantages
 * Collisions: an error caused when two keys convert to the same hash code or two hash codes point to the same value.
 * These errors can be common and often require an overhaul of the hash function.
 
-### [](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-5)Applications
+### [](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki/Data-Structures#applications-5)Applications
 
 * Database storage
 * Address lookups by name

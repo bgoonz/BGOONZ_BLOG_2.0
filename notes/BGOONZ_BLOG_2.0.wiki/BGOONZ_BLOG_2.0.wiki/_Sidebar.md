@@ -3,12 +3,12 @@
 ---
 # Wiki Navigation
 
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+-   [Home](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki)
     
-    -   [BRYAN GUNER BLOG & DOCUMENTATION SITE](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki#bryan-guner-blog--documentation-site)
-    -   [Web3 Storage API Token](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki#web3-storage-api-token)
-    -   [Notion Page: notion](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki#notion-page-notion)
-    -   [WEBSITE ~~~ Vercel Backup ~~~ Digital Ocean Backup ~~~ Gatsby Cloud Deploy](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki#website--vercel-backup--digital-ocean-backup--gatsby-cloud-deploy)
+    -   [BRYAN GUNER BLOG & DOCUMENTATION SITE](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki#bryan-guner-blog--documentation-site)
+    -   [Web3 Storage API Token](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki#web3-storage-api-token)
+    -   [Notion Page: notion](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki#notion-page-notion)
+    -   [WEBSITE ~~~ Vercel Backup ~~~ Digital Ocean Backup ~~~ Gatsby Cloud Deploy](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0/wiki#website--vercel-backup--digital-ocean-backup--gatsby-cloud-deploy)
     
 
 - [_Footer.md](./_Footer.md)
