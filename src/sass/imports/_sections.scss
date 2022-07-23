@@ -102,30 +102,6 @@
     }
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 801px) {
-  .block-text {
-    .grid-item {
-      &:not(:only-child) {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-    }
-  }
-
-  .block-body {
-    &:not(:only-child) {
-      text-align: left;
-
-      .block-buttons {
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-
-        a {
-          margin-left: 0;
-          margin-right: 0.75em;
-=======
 @media only screen and (min-width: 1201px) {
     .block-text {
         .grid-item {
@@ -150,7 +126,6 @@
                     margin-right: 0.75em;
                 }
             }
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
         }
     }
 }
@@ -225,18 +200,11 @@
 
 // Grid section
 .block-grid {
-<<<<<<< HEAD
-  .block-hero + & {
-    &:not(.has-header) {
-      background: 0;
-      padding-top: 0;
-=======
     .block-hero+& {
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
         }
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
     }
 
     .block-header {
@@ -327,29 +295,7 @@
 
 // Hero section
 .block-hero {
-<<<<<<< HEAD
-  padding-bottom: 7.5em;
-  position: relative;
-  text-align: center;
-
-  .block-header {
-    margin-bottom: 0.75em;
-  }
-
-  .block-title {
-    font-size: 2.25em;
-  }
-
-  .block-content {
-    font-size: 1.125em;
-    line-height: 1.5;
-  }
-
-  & + .block {
-    margin-top: -5em;
-=======
     padding-bottom: 7.5em;
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
     position: relative;
     text-align: center;
 

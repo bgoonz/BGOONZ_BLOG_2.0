@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: Es6 Features
-subtitle: ECMAScript 2015 was the second major revision to JavaScript.
-date: '2022-01-16'
-thumb_image_alt: es6
-excerpt: lorem-ipsum
-seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
-=======
 title: React Interview Questions & Answers
 subtitle: lorem-ipsum
 date: '2021-11-24'
@@ -21,7 +9,6 @@ seo:
     description: ''
     robots: []
     extra: []
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 template: post
 thumb_image: images/es6.jpg
 ---

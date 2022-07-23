@@ -3,11 +3,11 @@ title: PostgreSQL Setup
 weight: 0
 excerpt: PostgreSQL Setup
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ""
+  description: ""
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
@@ -56,10 +56,10 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 <img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
 </figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
--   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
--   <span id="d4d0">Thanks for the welcome. Next.</span>
--   <span id="1283">Yeah, that's a good place to install it. Next.</span>
--   <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
+- <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
+- <span id="d4d0">Thanks for the welcome. Next.</span>
+- <span id="1283">Yeah, that's a good place to install it. Next.</span>
+- <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" />
@@ -69,9 +69,9 @@ Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloa
 
 ### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it's not worth it.
 
--   <span id="25b7">Sure. 5432. Good to go. Next.</span>
--   <span id="28be">Not even sure what that means. Default! Next.</span>
--   <span id="b378">Yep. Looks good. Next.</span>
+- <span id="25b7">Sure. 5432. Good to go. Next.</span>
+- <span id="28be">Not even sure what that means. Default! Next.</span>
+- <span id="b378">Yep. Looks good. Next.</span>
 
 Insert pop culture reference to pass the time
 
@@ -344,11 +344,11 @@ In the next example, we select all rows from the database table.
 
 Or Checkout my personal Resource Site:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<a href="https://syntax-highlight.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://syntax-highlight.netlify.app/">
 <strong>Stackbit Web-Dev-HubTheme</strong>
 <br />
 <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
-<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+<a href="https://syntax-highlight.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/801672ab7089).

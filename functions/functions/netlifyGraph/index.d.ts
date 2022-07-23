@@ -122,12 +122,14 @@ export type ExampleQuery = {
                 /**
                  * List of OneGraphNodes that are linked from this node.
                  */
-                nodes: Array<{
-                    /**
-                     * The id of the object.
-                     */
-                    oneGraphId: string;
-                }>;
+                nodes: Array<
+                    {
+                        /**
+                         * The id of the object.
+                         */
+                        oneGraphId: string;
+                    }
+                >;
             };
         };
         gitHub: {

@@ -1386,11 +1386,4 @@ han.greeting().then(console.log);
 
 ```
 
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 </details>

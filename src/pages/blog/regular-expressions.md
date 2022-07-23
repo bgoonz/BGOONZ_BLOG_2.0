@@ -1,20 +1,9 @@
 ---
 title: Regular Expressions
 template: post
-subtitle: Creating a regular expression
-excerpt: You construct a regular expression in one of two ways
 date: 2022-06-08T05:18:45.419Z
-image: https://www.computerhope.com/jargon/r/regular-expression.gif
-thumb_image: https://www.computerhope.com/jargon/r/regular-expression.gif
 image_position: right
-author: src/data/authors/im.yaml
-categories:
-  - src/data/categories/awesome-lists.yaml
-tags:
-  - src/data/tags/career.yaml
-show_author_bio: true
-related_posts:
-  - src/pages/blog/awesome-resources.md
+show_author_bio: false
 cmseditable: true
 ---
 

@@ -11,7 +11,7 @@ seo:
 template: docs
 ---
 
-# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+# [⇨WEBSITE🗺️⇦](https://syntax-highlight.netlify.app/)
 
 ##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 

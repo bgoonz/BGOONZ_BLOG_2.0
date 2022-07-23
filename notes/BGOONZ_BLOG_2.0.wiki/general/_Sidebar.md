@@ -99,134 +99,134 @@
 
 ---
 
-### - [✅] [HOME](https://bgoonz-blog.netlify.app/)
+### - [✅] [HOME](https://syntax-highlight.netlify.app/)
 
 ---
 
-### - [✅] [showcase](https://bgoonz-blog.netlify.app/showcase/)
+### - [✅] [showcase](https://syntax-highlight.netlify.app/showcase/)
 
 ---
 
-### - [✅] [blog](https://bgoonz-blog.netlify.app/blog/)
+### - [✅] [blog](https://syntax-highlight.netlify.app/blog/)
 
-### - [✅] [blog/data-structures](https://bgoonz-blog.netlify.app/blog/data-structures/)
+### - [✅] [blog/data-structures](https://syntax-highlight.netlify.app/blog/data-structures/)
 
-### - [✅] [blog/my-medium](https://bgoonz-blog.netlify.app/blog/my-medium/)
+### - [✅] [blog/my-medium](https://syntax-highlight.netlify.app/blog/my-medium/)
 
-### - [✅] [blog/python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev/)
+### - [✅] [blog/python-for-js-dev](https://syntax-highlight.netlify.app/blog/python-for-js-dev/)
 
-### - [✅] [blog/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources/)
-
----
-
-### - [✅] [docs](https://bgoonz-blog.netlify.app/docs/)
-
-### - [✅] [docs/sitemap](https://bgoonz-blog.netlify.app/docs/sitemap/)
+### - [✅] [blog/python-resources](https://syntax-highlight.netlify.app/blog/python-resources/)
 
 ---
 
----
+### - [✅] [docs](https://syntax-highlight.netlify.app/docs/)
 
-### - [✅] [docs/about](https://bgoonz-blog.netlify.app/docs/about/)
-
-### - [✅] [docs/about/me](https://bgoonz-blog.netlify.app/docs/about/me/)
-
-### - [✅] [docs/about/node/install](https://bgoonz-blog.netlify.app/docs/about/node/install/)
-
-### - [✅] [docs/about/node/intro](https://bgoonz-blog.netlify.app/docs/about/node/intro/)
-
-### - [✅] [docs/about/node/nodejs](https://bgoonz-blog.netlify.app/docs/about/node/nodejs/)
-
-### - [✅] [docs/about/node/nodevsbrowser](https://bgoonz-blog.netlify.app/docs/about/node/nodevsbrowser/)
-
-### - [✅] [docs/about/node/reading-files](https://bgoonz-blog.netlify.app/docs/about/node/reading-files/)
-
-### - [✅] [docs/about/node/writing-files](https://bgoonz-blog.netlify.app/docs/about/node/writing-files/)
-
-### - [✅] [docs/about/resume](https://bgoonz-blog.netlify.app/docs/about/resume/)
+### - [✅] [docs/sitemap](https://syntax-highlight.netlify.app/docs/sitemap/)
 
 ---
 
-### - [✅] [docs/articles](https://bgoonz-blog.netlify.app/docs/articles/)
+---
 
-### - [✅] [docs/articles/algo](https://bgoonz-blog.netlify.app/docs/articles/algo/)
+### - [✅] [docs/about](https://syntax-highlight.netlify.app/docs/about/)
 
-### - [✅] [docs/articles/article-compilation](https://bgoonz-blog.netlify.app/docs/articles/article-compilation/)
+### - [✅] [docs/about/me](https://syntax-highlight.netlify.app/docs/about/me/)
 
-### - [✅] [docs/articles/basic-web-dev](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+### - [✅] [docs/about/node/install](https://syntax-highlight.netlify.app/docs/about/node/install/)
 
-### - [✅] [docs/articles/gallery](https://bgoonz-blog.netlify.app/docs/articles/gallery/)
+### - [✅] [docs/about/node/intro](https://syntax-highlight.netlify.app/docs/about/node/intro/)
 
-### - [✅] [docs/articles/install](https://bgoonz-blog.netlify.app/docs/articles/install/)
+### - [✅] [docs/about/node/nodejs](https://syntax-highlight.netlify.app/docs/about/node/nodejs/)
 
-### - [✅] [docs/articles/intro](https://bgoonz-blog.netlify.app/docs/articles/intro/)
+### - [✅] [docs/about/node/nodevsbrowser](https://syntax-highlight.netlify.app/docs/about/node/nodevsbrowser/)
 
-### - [✅] [docs/articles/python](https://bgoonz-blog.netlify.app/docs/articles/python/)
+### - [✅] [docs/about/node/reading-files](https://syntax-highlight.netlify.app/docs/about/node/reading-files/)
 
-### - [✅] [docs/articles/reading-files](https://bgoonz-blog.netlify.app/docs/articles/reading-files/)
+### - [✅] [docs/about/node/writing-files](https://syntax-highlight.netlify.app/docs/about/node/writing-files/)
 
-### - [✅] [docs/articles/resources](https://bgoonz-blog.netlify.app/docs/articles/resources/)
-
-### - [✅] [docs/articles/ten-jamstack-apis-to-checkout](https://bgoonz-blog.netlify.app/docs/articles/ten-jamstack-apis-to-checkout/)
-
-### - [✅] [docs/articles/writing-files](https://bgoonz-blog.netlify.app/docs/articles/writing-files/)
+### - [✅] [docs/about/resume](https://syntax-highlight.netlify.app/docs/about/resume/)
 
 ---
 
-### - [✅] [docs/faq](https://bgoonz-blog.netlify.app/docs/faq/)
+### - [✅] [docs/articles](https://syntax-highlight.netlify.app/docs/articles/)
 
-### - [✅] [docs/faq/contact](https://bgoonz-blog.netlify.app/docs/faq/contact/)
+### - [✅] [docs/articles/algo](https://syntax-highlight.netlify.app/docs/articles/algo/)
 
----
+### - [✅] [docs/articles/article-compilation](https://syntax-highlight.netlify.app/docs/articles/article-compilation/)
 
-### - [✅] [docs/interact](https://bgoonz-blog.netlify.app/docs/interact/)
+### - [✅] [docs/articles/basic-web-dev](https://syntax-highlight.netlify.app/docs/articles/basic-web-dev/)
 
-### - [✅] [docs/interact/clock](https://bgoonz-blog.netlify.app/docs/interact/clock/)
+### - [✅] [docs/articles/gallery](https://syntax-highlight.netlify.app/docs/articles/gallery/)
 
-### - [✅] [docs/interact/jupyter-notebooks](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/)
+### - [✅] [docs/articles/install](https://syntax-highlight.netlify.app/docs/articles/install/)
 
----
+### - [✅] [docs/articles/intro](https://syntax-highlight.netlify.app/docs/articles/intro/)
 
-### - [✅] [docs/links/Social](https://bgoonz-blog.netlify.app/docs/links/Social/)
+### - [✅] [docs/articles/python](https://syntax-highlight.netlify.app/docs/articles/python/)
 
-### - [✅] [docs/links](https://bgoonz-blog.netlify.app/docs/links/)
+### - [✅] [docs/articles/reading-files](https://syntax-highlight.netlify.app/docs/articles/reading-files/)
 
-### - [✅] [docs/links/medium-links](https://bgoonz-blog.netlify.app/docs/links/medium-links/)
+### - [✅] [docs/articles/resources](https://syntax-highlight.netlify.app/docs/articles/resources/)
 
-### - [✅] [docs/links/my-websites](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+### - [✅] [docs/articles/ten-jamstack-apis-to-checkout](https://syntax-highlight.netlify.app/docs/articles/ten-jamstack-apis-to-checkout/)
 
----
-
-### - [✅] [docs/quick-reference/Emmet](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
-
-### - [✅] [docs/quick-reference](https://bgoonz-blog.netlify.app/docs/quick-reference/)
-
-### - [✅] [docs/quick-reference/docs](https://bgoonz-blog.netlify.app/docs/quick-reference/docs/)
-
-### - [✅] [docs/quick-reference/installation](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
-
-### - [✅] [docs/quick-reference/new-repo-instructions](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+### - [✅] [docs/articles/writing-files](https://syntax-highlight.netlify.app/docs/articles/writing-files/)
 
 ---
 
-### - [✅] [docs/react](https://bgoonz-blog.netlify.app/docs/react/)
+### - [✅] [docs/faq](https://syntax-highlight.netlify.app/docs/faq/)
 
-### - [✅] [docs/react/createReactApp](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
-
-### - [✅] [docs/react/react2](https://bgoonz-blog.netlify.app/docs/react/react2/)
+### - [✅] [docs/faq/contact](https://syntax-highlight.netlify.app/docs/faq/contact/)
 
 ---
 
-### - [✅] [docs/tools](https://bgoonz-blog.netlify.app/docs/tools/)
+### - [✅] [docs/interact](https://syntax-highlight.netlify.app/docs/interact/)
 
-### - [✅] [docs/tools/default-readme](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+### - [✅] [docs/interact/clock](https://syntax-highlight.netlify.app/docs/interact/clock/)
 
-### - [✅] [docs/tools/notes-template](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
-
-### - [✅] [docs/tools/plug-ins](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
-
-### - [✅] [docs/tools/vscode](https://bgoonz-blog.netlify.app/docs/tools/vscode/)
+### - [✅] [docs/interact/jupyter-notebooks](https://syntax-highlight.netlify.app/docs/interact/jupyter-notebooks/)
 
 ---
 
-### - [✅] [notes-template](https://bgoonz-blog.netlify.app/notes-template/)
+### - [✅] [docs/links/Social](https://syntax-highlight.netlify.app/docs/links/Social/)
+
+### - [✅] [docs/links](https://syntax-highlight.netlify.app/docs/links/)
+
+### - [✅] [docs/links/medium-links](https://syntax-highlight.netlify.app/docs/links/medium-links/)
+
+### - [✅] [docs/links/my-websites](https://syntax-highlight.netlify.app/docs/links/my-websites/)
+
+---
+
+### - [✅] [docs/quick-reference/Emmet](https://syntax-highlight.netlify.app/docs/quick-reference/Emmet/)
+
+### - [✅] [docs/quick-reference](https://syntax-highlight.netlify.app/docs/quick-reference/)
+
+### - [✅] [docs/quick-reference/docs](https://syntax-highlight.netlify.app/docs/quick-reference/docs/)
+
+### - [✅] [docs/quick-reference/installation](https://syntax-highlight.netlify.app/docs/quick-reference/installation/)
+
+### - [✅] [docs/quick-reference/new-repo-instructions](https://syntax-highlight.netlify.app/docs/quick-reference/new-repo-instructions/)
+
+---
+
+### - [✅] [docs/react](https://syntax-highlight.netlify.app/docs/react/)
+
+### - [✅] [docs/react/createReactApp](https://syntax-highlight.netlify.app/docs/react/createReactApp/)
+
+### - [✅] [docs/react/react2](https://syntax-highlight.netlify.app/docs/react/react2/)
+
+---
+
+### - [✅] [docs/tools](https://syntax-highlight.netlify.app/docs/tools/)
+
+### - [✅] [docs/tools/default-readme](https://syntax-highlight.netlify.app/docs/tools/default-readme/)
+
+### - [✅] [docs/tools/notes-template](https://syntax-highlight.netlify.app/docs/tools/notes-template/)
+
+### - [✅] [docs/tools/plug-ins](https://syntax-highlight.netlify.app/docs/tools/plug-ins/)
+
+### - [✅] [docs/tools/vscode](https://syntax-highlight.netlify.app/docs/tools/vscode/)
+
+---
+
+### - [✅] [notes-template](https://syntax-highlight.netlify.app/notes-template/)

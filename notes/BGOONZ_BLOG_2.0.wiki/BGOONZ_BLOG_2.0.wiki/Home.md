@@ -10,7 +10,7 @@
 
 # Notion Page: [notion](https://www.notion.so/webdevhub42/Bgoonz-Blog-2-0-a82c419db97b4224bb1e4fdec981cbfb)
 
-##### [WEBSITE](https://bgoonz-blog.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gtsb.io/)
+##### [WEBSITE](https://syntax-highlight.netlify.app/) ~~~ [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/) ~~~ [Digital Ocean Backup](https://bgoonz-blog-2-0-gfvz5.ondigitalocean.app/) ~~~ [Gatsby Cloud Deploy](https://bgoonzblog20master.gtsb.io/)
 
 -   [\_Footer.md](./_Footer.md)
 -   [\_Sidebar.md](./_Sidebar.md)

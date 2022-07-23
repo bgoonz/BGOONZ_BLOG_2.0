@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import {Helmet} from 'react-helmet';
-import _ from 'lodash';
-
-import {withPrefix, attribute} from '../utils';
-import '../sass/main.scss';
-import Header from './Header';
-import Footer from './Footer';
-
-=======
 import _ from "lodash";
 import React from "react";
 import {Helmet} from "react-helmet";
@@ -16,50 +5,11 @@ import "../sass/main.scss";
 import {attribute, withPrefix} from "../utils";
 import Footer from "./Footer";
 import Header from "./Header";
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 export default class Body extends React.Component {
     render() {
         return (
             <React.Fragment>
                 <Helmet>
-<<<<<<< HEAD
-                    <title>{_.get(this.props, 'pageContext.frontmatter.seo.title', null) ? (_.get(this.props, 'pageContext.frontmatter.seo.title', null)) : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}</title>
-                    <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
-                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
-                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
-                    <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')}/>
-                    )}
-                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
-                        let key_name = _.get(meta, 'keyName', null) || 'name';
-                        return (
-                          _.get(meta, 'relativeUrl', null) ? (
-                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) && ((() => {
-                                let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
-                                let rel_url = withPrefix(_.get(meta, 'value', null));
-                                let full_url = domain + rel_url;
-                                return (
-                                  <meta key={meta_idx} {...(attribute(key_name, _.get(meta, 'name', null)))} content={full_url}/>
-                                );
-                            })())
-                          ) : 
-                            <meta key={meta_idx + '.1'} {...(attribute(key_name, _.get(meta, 'name', null)))} content={_.get(meta, 'value', null)}/>
-                        )
-                    })}
-                    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
-                    <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))}/>
-                    )}
-                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
-                </Helmet>
-                <div id="page" className="site">
-                  <Header {...this.props} />
-                  <main id="content" className="site-content">
-                    {this.props.children}
-                  </main>
-                  <Footer {...this.props} />
-=======
                     <title> {
                         _.get(this.props, "pageContext.frontmatter.seo.title", null) ? _.get(this.props, "pageContext.frontmatter.seo.title", null) : _.get(this.props, "pageContext.frontmatter.title", null) + " | " + _.get(this.props, "pageContext.site.siteMetadata.title", null)
                     } </title>
@@ -67,7 +17,6 @@ export default class Body extends React.Component {
                     <meta name="viewport" content="width=device-width, initialScale=1.0"/>
                     <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU"/>
                     <meta charset="UTF-8"/>
-                    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
                     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="apple-touch-icon" href="logo-circle.png"/>
@@ -154,7 +103,6 @@ export default class Body extends React.Component {
                     <Footer {...this.props}/>
 
 
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
                 </div>
             </React.Fragment>
         );

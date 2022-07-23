@@ -280,1507 +280,1507 @@ https://bgoonz-blog-2-0-kq4uvfsvz-bgoonz.vercel.app/docs/data-structures" height
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/_static/app-assets/lambda-demo1.gif" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/_static/app-assets/lambda-demo1.gif" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/_static/app-assets/neural.PNG" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/_static/app-assets/neural.PNG" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/5-tips-for-better-pull-requests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/5-tips-for-better-pull-requests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/300-react-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/300-react-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/adding-css-to-your-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/awesome-graphql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/awesome-graphql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/big-o-complexity/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/big-o-complexity/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/blog-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/blog-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/blogwcomments/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/blogwcomments/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/data-structures-algorithms-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/date-component/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/date-component/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/deploy-react-app-to-heroku/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/deploy-react-app-to-heroku/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/embedding-media-in-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/embedding-media-in-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/event-handeling/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/event-handeling/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/expressjs-apis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/expressjs-apis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/file-system-route-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/file-system-route-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/flow-control-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/flow-control-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/functions-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/functions-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/gatsby-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/gatsby-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/git-gateway/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/git-gateway/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/google-analytics/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/google-analytics/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/grep-in-linuz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/grep-in-linuz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/hoisting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/hoisting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/htt-requests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/htt-requests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/interview-questions-js-p2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/interview-questions-js-p3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/intro-01-data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/intro-01-data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/intro-to-markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/intro-to-markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/js-closure/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/js-closure/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/passing-arguments-to-a-callback-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/passing-arguments-to-a-callback-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/platform-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/platform-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/psql-cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/python-for-js-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/python-for-js-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/python-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/python-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/react-semantics/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/react-semantics/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/react-state/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/react-state/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/using-the-dom/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/using-the-dom/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/vs-code-extensions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/vs-code-extensions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/vscode-extensions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/vscode-extensions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/web-dev-trends/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/web-dev-trends/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/webdev-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/webdev-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/blog/what-is-a-redux-reducer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/blog/what-is-a-redux-reducer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/eng-portfolio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/eng-portfolio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/internal-use/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/internal-use/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/intrests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/intrests/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/resume/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/about/youtube/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/about/youtube/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/basic-web-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/buffers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/buffers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/dev-dep/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/dev-dep/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/event-loop/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/event-loop/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/fs-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/fs-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/how-search-engines-work/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/how-search-engines-work/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/how-the-web-works/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/nextjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/nextjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-api-express/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-api-express/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-common-modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-env-variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-env-variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/npx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/npx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/os-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/os-module/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/reading-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/reading-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/semantic-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/semantic-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/semantic/
-https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/semantic/
+https://syntax-highlight.netlify.app/docs/articles/the-uniform-resource-locator" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="(url)/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/url/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/url/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/web-standards-checklist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/webdev-tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/webdev-tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/articles/writing-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/articles/writing-files/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/audio-feature-extraction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/audio/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/dfft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/dfft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/discrete-fft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/discrete-fft/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/dtw-python-explained/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/dynamic-time-warping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/audio/web-audio-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/audio/web-audio-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/blog/python-for-js-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/blog/python-for-js-dev/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/blog/web-scraping/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/interview-dos-n-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/job-boards/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/job-boards/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/job-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/js-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/js-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/web-interview2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/web-interview2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/web-interview3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/web-interview3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/web-interview4/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/web-interview4/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/career/wed-dev-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/career/wed-dev-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/community/
-https://bgoonz-blog.netlify.app/docs/community" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/community/
+https://syntax-highlight.netlify.app/docs/community" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="an-open-letter-2-future-developers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/community/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/community/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/community/github-profiles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/community/github-profiles/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/community/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/community/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/bash-intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/bash-intro/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/gatsby-Queries-Mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/gatsby-queries-mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/gatsby-queries-mutations/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/github-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/github-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/history-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/history-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/native-data-structures-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/native-data-structures-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/netlify/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/netlify/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/content/trouble-shooting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/content/trouble-shooting/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/css/css-positioning/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/css/css-positioning/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/css/media-querries/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/css/media-querries/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/data-structures/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/data-structures/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/data-structures/data-structures-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/data-structures/data-structures-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/data-structures/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/data-structures/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/data-structures/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/data-structures/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/appendix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/appendix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/art-of-command-line/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/art-of-command-line/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/css/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/es-6-features/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/es-6-features/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/git-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/git-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/git-repos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/git-repos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/html-tags/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/html-tags/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/jamstack/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/markdown/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/no-whiteboarding/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/node-docs-complete/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/node-docs-full/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/node-docs-full/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/regex-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/regex-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/docs/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/docs/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/big-o/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/data-structures-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/ds-algo-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-by-example/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/ds-by-example/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/ds-overview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/free-code-camp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/free-code-camp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/graph/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/graph/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/heaps/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/heaps/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/ds-algo/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/ds-algo/tree/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/faq/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/faq/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/faq/contact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/faq/contact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/faq/plug-ins/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/faq/plug-ins/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/general-structured-data-guidelines/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/general-structured-data-guidelines/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/gists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/git/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/git/git-cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/git/github-tutorial/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/glossary/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/glossary/folders-in-npm/
-https://bgoonz-blog.netlify.app/docs/glossary" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/glossary/folders-in-npm/
+https://syntax-highlight.netlify.app/docs/glossary" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="local-storage-vs-session-storage-vs-cookie/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/glossary/mathfloor/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/glossary/mathfloor/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/google-hosted-libraries/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/google-hosted-libraries/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/callstack-visual/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/callstack-visual/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/clock/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/clock/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/jupyter-notebooks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/other-sites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/other-sites" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/other-sites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/other-sites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/react-testing-library/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/react-testing-library/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/video-chat" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/video-chat" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interact/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interact/video-chat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/dev-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/dos-and-donts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/interview-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/interview-questions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/job-search-nav/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/job-search-nav/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/previous-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/previous-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/review-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/review-concepts/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/web-interview/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/web-interview2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/web-interview2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/web-interview3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/web-interview3/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/interview/web-interview4/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/interview/web-interview4/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/arrow-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/asyncjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/asyncjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/await-keyword/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/await-keyword/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/bigo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/bigo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/clean-code/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/clean-code/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/constructor-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/cs-basics-in-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/for-loops/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/for-loops/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/js-expressions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/js-expressions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/js-objects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/js-objects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/part2-pojo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/promises/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/promises/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/this-is-about-this/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/javascript/variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/javascript/variables/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/abs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/abs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/acos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/acos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/acosh/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/acosh/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/addition/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/addition/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/allsettled/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/allsettled/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/any/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/any/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/arrow_functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/arrow_functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/async_function/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/async_function/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/bad_radix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/bad_radix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/bind/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/bind/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/classes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/classes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/concat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/concat/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/conditional_operator/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/conditional_operator/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/const/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/const/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/create/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/create/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/date/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/date/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/eval/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/eval/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/every/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/every/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/filter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/filter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/for...of/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/for...of/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/foreach/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/foreach/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/import/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/import/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/map/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/map/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/object/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/object/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/reduce/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/reduce/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/regexp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/regexp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/sort/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/sort/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/string/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/string/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/this/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/this/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/js-tips/var/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/js-tips/var/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/
-https://bgoonz-blog.netlify.app/docs/leetcode/004" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/
+https://syntax-highlight.netlify.app/docs/leetcode/004" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Median_of_Two_Sorted_Arrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/006._ZigZag_Conversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/006._ZigZag_Conversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/008.String_to_Integer(atoi)/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/008.String_to_Integer(atoi)/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/009._Palindrome_Number/
-https://bgoonz-blog.netlify.app/docs/leetcode/010" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/009._Palindrome_Number/
+https://syntax-highlight.netlify.app/docs/leetcode/010" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Regular_Expression_Matching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/011._Container_With_Most_Water/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/011._Container_With_Most_Water/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/012._Integer_to_Roman/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/012._Integer_to_Roman/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/013._Roman_to_Integer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/013._Roman_to_Integer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/014._Longest_Common_Prefix/
-https://bgoonz-blog.netlify.app/docs/leetcode/017" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/014._Longest_Common_Prefix/
+https://syntax-highlight.netlify.app/docs/leetcode/017" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Letter_Combinations_of_a_Phone_Number/
-https://bgoonz-blog.netlify.app/docs/leetcode/019" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+https://syntax-highlight.netlify.app/docs/leetcode/019" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Remove_Nth_Node_From_End_of_List/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/020._Valid_Parentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/020._Valid_Parentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/022._Generate_Parentheses/
-https://bgoonz-blog.netlify.app/docs/leetcode/026" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/022._Generate_Parentheses/
+https://syntax-highlight.netlify.app/docs/leetcode/026" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Remove_Duplicates_from_Sorted_Array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/029._Divide_Two_Integers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/029._Divide_Two_Integers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/031._Next_Permutation/
-https://bgoonz-blog.netlify.app/docs/leetcode/033" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/031._Next_Permutation/
+https://syntax-highlight.netlify.app/docs/leetcode/033" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="_Search_in_Rotated_Sorted_Array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/ContaineWitMosWater/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/containewitmoswater/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/containewitmoswater/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/DividTwIntegers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/dividtwintegers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/dividtwintegers/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/first-100/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/first-100/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/GeneratParentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/generatparentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/generatparentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/LetteCombinationoPhonNumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/lettecombinationophonnumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/lettecombinationophonnumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/LongesCommoPrefix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/longescommoprefix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/longescommoprefix/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/MediaoTwSorteArrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/mediaotwsortearrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/mediaotwsortearrays/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/NexPermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/nexpermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/nexpermutation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/PalindromNumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/palindromnumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/palindromnumber/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/RegulaExpressioMatching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/regulaexpressiomatching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/regulaexpressiomatching/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/removduplicatefrosortearray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/removduplicatefrosortearray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/RemovNtNodFroEnoList/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/removntnodfroenolist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/removntnodfroenolist/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/RomatInteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/romatinteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/romatinteger/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/SearciRotateSorteArray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/searcirotatesortearray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/searcirotatesortearray/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/valiparentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/valiparentheses/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/ZigZaConversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/leetcode/zigzaconversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/leetcode/zigzaconversion/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/
-https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/netlify-cms-jamstack/
+https://syntax-highlight.netlify.app/docs/netlify-cms-jamstack" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="get-started-with-gatsby/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/netlify-cms-jamstack/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/serverlessjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/netlify-cms-jamstack/serverlessjs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/netlify-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/netlify-cms/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/netlify-cms/jamstack-templates/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/emmet-cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/emmet-cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/html-spec/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/http/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/install/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/modules/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/node-cli-args/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/node-js-language/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/node-package-manager/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/node-repl/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/node-run-cli/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/nodevsbrowser/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/understanding-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/overflow/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/overflow/v8/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/privacy-policy/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/archive/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/embeded-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/list-of-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/main-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/mini-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/mini-projects/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/mini-projects2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/mini-projects2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/my-websites/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/projects/recent/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/projects/recent/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/at-length/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/at-length/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/cheat-sheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/comprehensive-guide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/data-structures-in-python/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/examples/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/examples/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/flow-control/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/flow-control/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/google-sheets-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/google-sheets-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/install-python-ubuntu/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/install-python-ubuntu/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/intro-for-js-devs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/python-ds/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/python-ds/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/python-quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/python-quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/python/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/python/snippets/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/all-emojis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/all-emojis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/fetch/
-https://bgoonz-blog.netlify.app/docs/quick-ref" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/fetch/
+https://syntax-highlight.netlify.app/docs/quick-ref" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="general-structured-data-guidelines/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/heroku-error-codes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/heroku-error-codes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/minifiction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/minifiction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/new-repo-instructions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/new-repo-instructions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/pull-request-rubric/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/pull-request-rubric/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/python-builtin-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/python-builtin-functions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/toprepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/toprepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/understanding-path/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/understanding-path/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-ref/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/all-emojis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/create-react-app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/Emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/emmet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/git-bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/git-tricks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/google-firebase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/heroku-error-codes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/installation/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/markdown-dropdowns/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/minifiction/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/new-repo-instructions/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/pull-request-rubric/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/quick-links/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/topRepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/toprepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/toprepos/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/understanding-path/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/quick-reference/vscode-themes/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/ajax-n-apis/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/cheatsheet/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/complete-react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/complete-react/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/createReactApp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/createReactApp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/createreactapp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/createreactapp/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/demo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/demo/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/dont-use-index-as-keys/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/dont-use-index-as-keys/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/jsx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/jsx/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/quiz/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react-docs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react-in-depth/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react-patterns-by-usecase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react-patterns-by-usecase/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react-router/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react-router/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react-w-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react-w-api/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/react2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/react2/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/react/render-elements/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/react/render-elements/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/art-of-command-line/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/art-of-command-line/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/awesome-lists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/awesome-lists/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/awesome-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/awesome-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/awesome-static/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/awesome-static/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/bash-commands/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/bash-commands/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/bookmarks/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/embed-the-web/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/embed-the-web/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/github-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/github-resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/github-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/github-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/google-cloud/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/google-cloud/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/how-2-reinstall-npm/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/how-to-kill-a-process/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/installing-node/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/installing-node/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/intro-to-nodejs/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/markdown-styleguide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/markdown-styleguide/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/notes-template/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/notes-template/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/psql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/psql/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/resources/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/vscode/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/vscode/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/reference/web-api's/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/reference/web-api's/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/sitemap-april/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/sitemap-april/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/sitemap/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/
-https://bgoonz-blog.netlify.app/docs/tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/
+https://syntax-highlight.netlify.app/docs/tips" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="7-tips-to-become-a-better-web-developer/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/array-methods/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/decrement/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/decrement/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/insert-into-array/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/regex-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/regex-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/sorting-strings/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/storybook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/storybook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/top-10-money-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/top-10-money-tips/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tips/web-accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tips/web-accessibility/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/all-stripped/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/all-stripped/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/all/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/data-structures/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/dev-utilities/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/dev-utilities/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/embeds-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/embeds-archive/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tools/markdown-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tools/markdown-html/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/algolia-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/algolia-search/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/bash-commands-my/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/bash-commands-my/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/bash/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/effect-hook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/effect-hook/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/enviorment-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/enviorment-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/get-file-extension/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/get-file-extension/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu/
-https://bgoonz-blog.netlify.app/docs/tutorials" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/how-2-ubuntu/
+https://syntax-highlight.netlify.app/docs/tutorials" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="how-to-use-google-sheets-as-cms/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/psql-setup/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/react-class-2-func/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/react-class-2-func/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/docs/tutorials/webdev-review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/docs/tutorials/webdev-review/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/interview-questions-js/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/privacy-policy/
-https://bgoonz-blog.netlify.app/readme/?😦?!%5Cs)%5B%5Cw%5CxA0-%5CuFFFF%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/privacy-policy/
+https://syntax-highlight.netlify.app/readme/?😦?!%5Cs)%5B%5Cw%5CxA0-%5CuFFFF%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-<br>]<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="(https://bgoonz-blog.netlify.app/readme/?:(?!%5Cs)%5B
-https://bgoonz-blog.netlify.app/readme/?😦?!%5Cs)%5B%5Cw%5Cxa0-%5Cuffff%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<br>]<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="(https://syntax-highlight.netlify.app/readme/?:(?!%5Cs)%5B
+https://syntax-highlight.netlify.app/readme/?😦?!%5Cs)%5B%5Cw%5Cxa0-%5Cuffff%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-<br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="link](https://bgoonz-blog.netlify.app/readme/?:(?!%5Cs)%5B" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<br>/<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="link](https://syntax-highlight.netlify.app/readme/?:(?!%5Cs)%5B" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5B%5CdA-Fa-f%5D(?:_%5B%5CdA-Fa-f%5D)
-https://bgoonz-blog.netlify.app/readme/?:%5B%5Cda-fa-f%5D(?:_%5B%5Cda-fa-f%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5B%5CdA-Fa-f%5D(?:_%5B%5CdA-Fa-f%5D)
+https://syntax-highlight.netlify.app/readme/?:%5B%5Cda-fa-f%5D(?:_%5B%5Cda-fa-f%5D" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>)<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="/link
-https://bgoonz-blog.netlify.app/readme/?:%5B%5E%7B%7D;%22%27%5D%7C%27%20+%20t" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+https://syntax-highlight.netlify.app/readme/?:%5B%5E%7B%7D;%22%27%5D%7C%27%20+%20t" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="source%20+
-https://bgoonz-blog.netlify.app/readme/?:%5B%5E%7B%7D;%22%27%5D%7C%27%20+%20t" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+https://syntax-highlight.netlify.app/readme/?:%5B%5E%7B%7D;%22%27%5D%7C%27%20+%20t" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>.<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="source%20+/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5B0-7%5D(?:_%5B0-7%5D)" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5B0-7%5D(?:_%5B0-7%5D)" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5B0-7%5D(?:_%5B0-7%5D)/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5B0-7%5D(?:_%5B0-7%5D)/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5B01%5D(?:_%5B01%5D)" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5B01%5D(?:_%5B01%5D)" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5B01%5D(?:_%5B01%5D)/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5B01%5D(?:_%5B01%5D)/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5BA-Z_%5D%7C%5Cdx" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5BA-Z_%5D%7C%5Cdx" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?:%5Ba-z_%5D%7C%5Cdx/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?:%5Ba-z_%5D%7C%5Cdx/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?!%5D%3E" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?!%5D%3E" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/?!%5D%3E/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/?!%5D%3E/link" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify.app/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://syntax-highlight.netlify.app/readme/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz-blog.netlify" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">

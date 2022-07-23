@@ -1,47 +1,38 @@
 .site {
-<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 110vh;
   position: relative;
-=======
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 110vh;
-    position: relative;
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 }
 
 .site-content {
-    box-sizing: border-box;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    width: 100%;
+  box-sizing: border-box;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .outer {
-    padding-left: $container-padding;
-    padding-right: $container-padding;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
 }
 
 .inner {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container;
 }
 
 .inner-md {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $container-md;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-md;
 }
 
 .inner-sm {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $container-sm;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-sm;
 }

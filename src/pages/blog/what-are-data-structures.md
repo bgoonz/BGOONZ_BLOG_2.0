@@ -51,7 +51,7 @@ Non-primitive data structures are not defined by the programming language but r
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
-![alt-text](https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830)
+![](https://camo.githubusercontent.com/ab40ae120edb6f03676fd5bd971feb1f59801ee43d90464c5f3c0ac7f5dc4c25/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f35313633353033373435373631323830)
 
 Advantages
 
@@ -75,7 +75,7 @@ Queues are conceptually similar to stacks; both are sequential structures, but q
 
 As a result, queues can be thought of as a FIFO (First In, First Out) version of stacks. These are helpful as a buffer for requests, storing each request in the order it was received until it can be processed.
 
-![alt-text](https://camo.githubusercontent.com/0e19efa8b7251690191848de4d8538c36f7619aa1a69b46a306b16b19274edb0/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34363038323536343133353332313630)
+![](https://camo.githubusercontent.com/0e19efa8b7251690191848de4d8538c36f7619aa1a69b46a306b16b19274edb0/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34363038323536343133353332313630)
 
 For a visual, consider a single-lane tunnel: the first car to enter is the first car to exit. If other cars should wish to exit, but the first stops, all cars will have to wait for the first to exit before they can proceed.
 
@@ -101,7 +101,7 @@ Linked lists are a data structure which, unlike the previous three, does not use
 
 This system allows efficient insertion and removal of items without the need for reorganization.
 
-![alt-text](https://camo.githubusercontent.com/c5b4f3b037de92da7118b3bbf05e9485a28507729cf9d9cffc2c17f37189971f/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34353336323436353035333038313630)
+![](https://camo.githubusercontent.com/c5b4f3b037de92da7118b3bbf05e9485a28507729cf9d9cffc2c17f37189971f/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34353336323436353035333038313630)
 
 Advantages
 
@@ -128,7 +128,7 @@ Nodes with linked child nodes are called internal nodes while those without chil
 
 These search operations are highly efficient, as its search duration is dependent not on the number of nodes but on the number of levels down the tree.
 
-![alt-text](https://camo.githubusercontent.com/82cd3953e721f75e55b74c5854d64d3de002098592eba6338aa152f3ad1b4cc6/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34383630343534383739383837333630)
+![](https://camo.githubusercontent.com/82cd3953e721f75e55b74c5854d64d3de002098592eba6338aa152f3ad1b4cc6/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34383630343534383739383837333630)
 
 This type of tree is defined by four strict rules:
 
@@ -163,7 +163,7 @@ Disadvantages
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
-![alt-text](https://camo.githubusercontent.com/615c0612c32e8d319d2c79e596885e4aceb6ce7dc64ac235ede92637fac589f9/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34393132363931303737343437363830)
+![](https://camo.githubusercontent.com/615c0612c32e8d319d2c79e596885e4aceb6ce7dc64ac235ede92637fac589f9/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f34393132363931303737343437363830)
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
@@ -192,7 +192,7 @@ Disadvantages
 
 Hash tables are a complex data structure capable of storing large amounts of information and retrieving specific elements efficiently. This data structure relies on the concept of key/value pairs, where the "key" is a searched string and the "value" is the data paired with that key.
 
-![alt-text](https://camo.githubusercontent.com/ed02956a5f707a017dc59966166c26835374fa0b48a9b6d0aaec06367d4dae10/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f36373435393131313633303932393932) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
+![](https://camo.githubusercontent.com/ed02956a5f707a017dc59966166c26835374fa0b48a9b6d0aaec06367d4dae10/68747470733a2f2f7777772e6564756361746976652e696f2f6170692f706167652f363039343438343838333337343038302f696d6167652f646f776e6c6f61642f36373435393131313633303932393932) Each searched key is converted from its string form into a numerical value, called a hash, using a predefined hash function. This hash then points to a storage bucket -- a smaller subgroup within the table. It then searches the bucket for the originally entered key and returns the value associated with that key.
 
 Advantages
 

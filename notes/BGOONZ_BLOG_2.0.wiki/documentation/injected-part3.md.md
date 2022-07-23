@@ -201,17 +201,6 @@ Set up outgoing webhooks to notify other services about deploys for your site. [
 
 Add notification
 
-<<<<<<< HEAD
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
-
-    Options
-
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy succeeds
-
-    Options
-
--   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
-=======
 -   Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy starts
 
     Options
@@ -221,7 +210,6 @@ Add notification
     Options
 
 -   Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy fails
->>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
     Options
 

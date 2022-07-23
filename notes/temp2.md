@@ -1,4 +1,4 @@
-[![webdevhub logo](https://bgoonz-blog.netlify.app/images/home-button.png)]('https://bgoonz-blog.netlify.app/')
+[![webdevhub logo](https://syntax-highlight.netlify.app/images/home-button.png)]('https://syntax-highlight.netlify.app/')
 
 Open Menu
 
@@ -15,12 +15,12 @@ Open Menu
 -   [Job Search](/docs/career/) Sub-menu
     -   [Job Boards](/docs/career/job-boards)
     -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
-    -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
+    -   [Career-Tips](https://syntax-highlight.netlify.app/docs/career/)
     -   [Interview Questions](/docs/interview/interview-questions)
 -   [Archive](/docs/archive) Sub-menu
     -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
     -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
-    -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
+    -   [Web Dev Setup](https://syntax-highlight.netlify.app/blog/webdev-setup/)
     -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
     -   [Top Repos](/docs)
     -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
@@ -38,13 +38,13 @@ Open Menu
     -   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
     -   [Cover Letter](https://bgoonz-cv.netlify.app/)
     -   [Project Centric](https://project-portfolio42.netlify.app/)
-    -   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
+    -   [Wordpress Blog](https://syntax-highlight.netlify.app/)
     -   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
     -   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
--   [Admin](https://bgoonz-blog.netlify.app/admin/) Sub-menu
-    -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
-    -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
-    -   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+-   [Admin](https://syntax-highlight.netlify.app/admin/) Sub-menu
+    -   [Write Docs](https://syntax-highlight.netlify.app/admin/#/collections/docs)
+    -   [Write Blog](https://syntax-highlight.netlify.app/admin/#/collections/blog/new)
+    -   [Webmaster](https://syntax-highlight.netlify.app/admin/#/collections/blog/new)
 -   [Tools](/docs/tools) Sub-menu
     -   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
     -   [Text Tools](https://devtools42.netlify.app/)
@@ -87,7 +87,7 @@ Search
 
 ![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
 
-### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
+### [A Quick Guide To Big O](https://syntax-highlight.netlify.app/docs/ds-algo/big-o/)
 
 Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
 
@@ -95,11 +95,11 @@ Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at 
 
 ![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
 
-### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+### [Python Guide](https://syntax-highlight.netlify.app/docs/python/python-ds)
 
 _Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
 
-[View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+[View Posts](https://syntax-highlight.netlify.app/docs/python/python-ds)
 
 ![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
 
@@ -109,7 +109,7 @@ _Python has a built in help function that let's you see a description↩ of the 
 
 ![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
 
-### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
+### [Beginner Guide React](https://syntax-highlight.netlify.app/docs/react/react2/)
 
 As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
 
@@ -422,12 +422,12 @@ Open Menu
 -   [Job Search](/docs/career/) Sub-menu
     -   [Job Boards](/docs/career/job-boards)
     -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
-    -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
+    -   [Career-Tips](https://syntax-highlight.netlify.app/docs/career/)
     -   [Interview Questions](/docs/interview/interview-questions)
 -   [Archive](/docs/archive) Sub-menu
     -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
     -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
-    -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
+    -   [Web Dev Setup](https://syntax-highlight.netlify.app/blog/webdev-setup/)
     -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
     -   [Top Repos](/docs)
     -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
@@ -445,13 +445,13 @@ Open Menu
     -   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
     -   [Cover Letter](https://bgoonz-cv.netlify.app/)
     -   [Project Centric](https://project-portfolio42.netlify.app/)
-    -   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
+    -   [Wordpress Blog](https://syntax-highlight.netlify.app/)
     -   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
     -   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
--   [Admin](https://bgoonz-blog.netlify.app/admin/) Sub-menu
-    -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
-    -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
-    -   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+-   [Admin](https://syntax-highlight.netlify.app/admin/) Sub-menu
+    -   [Write Docs](https://syntax-highlight.netlify.app/admin/#/collections/docs)
+    -   [Write Blog](https://syntax-highlight.netlify.app/admin/#/collections/blog/new)
+    -   [Webmaster](https://syntax-highlight.netlify.app/admin/#/collections/blog/new)
 -   [Tools](/docs/tools) Sub-menu
     -   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
     -   [Text Tools](https://devtools42.netlify.app/)
@@ -494,7 +494,7 @@ Search
 
 ![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
 
-### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
+### [A Quick Guide To Big O](https://syntax-highlight.netlify.app/docs/ds-algo/big-o/)
 
 Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
 
@@ -502,11 +502,11 @@ Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at 
 
 ![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
 
-### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+### [Python Guide](https://syntax-highlight.netlify.app/docs/python/python-ds)
 
 _Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
 
-[View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+[View Posts](https://syntax-highlight.netlify.app/docs/python/python-ds)
 
 ![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
 
@@ -516,7 +516,7 @@ _Python has a built in help function that let's you see a description↩ of the 
 
 ![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
 
-### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
+### [Beginner Guide React](https://syntax-highlight.netlify.app/docs/react/react2/)
 
 As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
 

@@ -158,7 +158,7 @@
                         ["xpath=//a[contains(text(),'Awesome GraphQL | webdevhub')]", "xpath:link"],
                         ["xpath=//div[@id='___gcse_0']/div/div/div/div[5]/div[2]/div[2]/div/div/div[3]/div/div/div/a", "xpath:idRelative"],
                         [
-                            "xpath=//a[contains(@href, 'https://www.google.com/url?client=internal-element-cse&cx=54896af6e2f16ea45&q=https://bgoonz-blog.netlify.app/blog/awesome-graphql/&sa=U&ved=2ahUKEwiZ8JSHgeT3AhUqp3IEHR3hBYQQFnoECAEQAg&usg=AOvVaw1hyg_T_6dVRqgO7WmPLmnm')]",
+                            "xpath=//a[contains(@href, 'https://www.google.com/url?client=internal-element-cse&cx=54896af6e2f16ea45&q=https://syntax-highlight.netlify.app/blog/awesome-graphql/&sa=U&ved=2ahUKEwiZ8JSHgeT3AhUqp3IEHR3hBYQQFnoECAEQAg&usg=AOvVaw1hyg_T_6dVRqgO7WmPLmnm')]",
                             "xpath:href"
                         ],
                         ["xpath=//div[3]/div/div/div/a", "xpath:position"],
@@ -406,6 +406,6 @@
             "tests": ["5bd82bfb-2df6-4348-9bc6-018754ba7a06"]
         }
     ],
-    "urls": ["https://bgoonz-blog.netlify.app/"],
+    "urls": ["https://syntax-highlight.netlify.app/"],
     "plugins": []
 }
