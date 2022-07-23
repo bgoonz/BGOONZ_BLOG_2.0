@@ -1,3 +1,4 @@
+/* Removing the event listeners from the previous page. */
 /*
  * reframe.js - Reframe.js: responsive iframes for embedded content
  * @version v3.0.2
@@ -13,6 +14,7 @@
         : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).reframe = t());
 })(this, function () {
     'use strict';
+
     function t() {
         for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
         for (var i = Array(e), o = 0, t = 0; t < n; t++) for (var r = arguments[t], f = 0, d = r.length; f < d; f++, o++) i[o] = r[f];
@@ -59,8 +61,13 @@ window.Element &&
     }),
     (function () {
         if ('function' == typeof window.CustomEvent) return;
+
         function e(e, t) {
-            t = t || { bubbles: !1, cancelable: !1, detail: void 0 };
+            t = t || {
+                bubbles: !1,
+                cancelable: !1,
+                detail: void 0
+            };
             var n = document.createEvent('CustomEvent');
             return n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), n;
         }
@@ -151,7 +158,13 @@ window.Element &&
             },
             H = function (e, t, n, o) {
                 if (t.emitEvents && 'function' == typeof q.CustomEvent) {
-                    var a = new CustomEvent(e, { bubbles: !0, detail: { anchor: n, toggle: o } });
+                    var a = new CustomEvent(e, {
+                        bubbles: !0,
+                        detail: {
+                            anchor: n,
+                            toggle: o
+                        }
+                    });
                     document.dispatchEvent(a);
                 }
             };
@@ -246,7 +259,10 @@ window.Element &&
                                 (history.pushState &&
                                     h.updateURL &&
                                     history.pushState(
-                                        { smoothScroll: JSON.stringify(h), anchor: f.id },
+                                        {
+                                            smoothScroll: JSON.stringify(h),
+                                            anchor: f.id
+                                        },
                                         document.title,
                                         f === document.documentElement ? '#top' : '#' + f.id
                                     )),
@@ -280,7 +296,10 @@ window.Element &&
                                     var t = q.location.hash;
                                     (t = t || ''),
                                         history.replaceState(
-                                            { smoothScroll: JSON.stringify(e), anchor: t || q.pageYOffset },
+                                            {
+                                                smoothScroll: JSON.stringify(e),
+                                                anchor: t || q.pageYOffset
+                                            },
                                             document.title,
                                             t || q.location.href
                                         );
@@ -292,7 +311,10 @@ window.Element &&
                 n = function (e) {
                     if (null !== history.state && history.state.smoothScroll && history.state.smoothScroll === JSON.stringify(A)) {
                         var t = history.state.anchor;
-                        ('string' == typeof t && t && !(t = document.querySelector(r(history.state.anchor)))) || M.animateScroll(t, null, { updateURL: !1 });
+                        ('string' == typeof t && t && !(t = document.querySelector(r(history.state.anchor)))) ||
+                            M.animateScroll(t, null, {
+                                updateURL: !1
+                            });
                     }
                 };
             M.destroy = function () {
@@ -327,8 +349,13 @@ Element.prototype.closest ||
     })),
     (function () {
         if ('function' == typeof window.CustomEvent) return !1;
+
         function t(t, e) {
-            e = e || { bubbles: !1, cancelable: !1, detail: void 0 };
+            e = e || {
+                bubbles: !1,
+                cancelable: !1,
+                detail: void 0
+            };
             var n = document.createEvent('CustomEvent');
             return n.initCustomEvent(t, e.bubbles, e.cancelable, e.detail), n;
         }
@@ -344,10 +371,22 @@ Element.prototype.closest ||
             : (t.Gumshoe = e(t));
     })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
         'use strict';
-        var e = { navClass: 'active', contentClass: 'active', nested: !1, nestedClass: 'active', offset: 0, reflow: !1, events: !0 },
+        var e = {
+                navClass: 'active',
+                contentClass: 'active',
+                nested: !1,
+                nestedClass: 'active',
+                offset: 0,
+                reflow: !1,
+                events: !0
+            },
             n = function (t, e, n) {
                 if (n.settings.events) {
-                    var o = new CustomEvent(t, { bubbles: !0, cancelable: !0, detail: n });
+                    var o = new CustomEvent(t, {
+                        bubbles: !0,
+                        cancelable: !0,
+                        detail: n
+                    });
                     e.dispatchEvent(o);
                 }
             },
@@ -405,7 +444,11 @@ Element.prototype.closest ||
                         (o.classList.remove(e.navClass),
                         t.content.classList.remove(e.contentClass),
                         l(o, e),
-                        n('gumshoeDeactivate', o, { link: t.nav, content: t.content, settings: e }));
+                        n('gumshoeDeactivate', o, {
+                            link: t.nav,
+                            content: t.content,
+                            settings: e
+                        }));
                 }
             },
             u = function (t, e) {
@@ -426,7 +469,11 @@ Element.prototype.closest ||
                     (l = []),
                     Array.prototype.forEach.call(r, function (t) {
                         var e = document.getElementById(decodeURIComponent(t.hash.substr(1)));
-                        e && l.push({ nav: t, content: e });
+                        e &&
+                            l.push({
+                                nav: t,
+                                content: e
+                            });
                     }),
                     s(l);
             }),
@@ -442,7 +489,11 @@ Element.prototype.closest ||
                                       (o.classList.add(e.navClass),
                                       t.content.classList.add(e.contentClass),
                                       u(o, e),
-                                      n('gumshoeActivate', o, { link: t.nav, content: t.content, settings: e }));
+                                      n('gumshoeActivate', o, {
+                                          link: t.nav,
+                                          content: t.content,
+                                          settings: e
+                                      }));
                               }
                           })(t, m),
                           (f = t))
@@ -506,26 +557,48 @@ Element.prototype.closest ||
 })(this, function () {
     return (function (n) {
         var o = {};
+
         function r(t) {
             if (o[t]) return o[t].exports;
-            var e = (o[t] = { i: t, l: !1, exports: {} });
+            var e = (o[t] = {
+                i: t,
+                l: !1,
+                exports: {}
+            });
             return n[t].call(e.exports, e, e.exports, r), (e.l = !0), e.exports;
         }
         return (
             (r.m = n),
             (r.c = o),
             (r.d = function (t, e, n) {
-                r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
+                r.o(t, e) ||
+                    Object.defineProperty(t, e, {
+                        enumerable: !0,
+                        get: n
+                    });
             }),
             (r.r = function (t) {
-                'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' }),
-                    Object.defineProperty(t, '__esModule', { value: !0 });
+                'undefined' != typeof Symbol &&
+                    Symbol.toStringTag &&
+                    Object.defineProperty(t, Symbol.toStringTag, {
+                        value: 'Module'
+                    }),
+                    Object.defineProperty(t, '__esModule', {
+                        value: !0
+                    });
             }),
             (r.t = function (e, t) {
                 if ((1 & t && (e = r(e)), 8 & t)) return e;
                 if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
                 var n = Object.create(null);
-                if ((r.r(n), Object.defineProperty(n, 'default', { enumerable: !0, value: e }), 2 & t && 'string' != typeof e))
+                if (
+                    (r.r(n),
+                    Object.defineProperty(n, 'default', {
+                        enumerable: !0,
+                        value: e
+                    }),
+                    2 & t && 'string' != typeof e)
+                )
                     for (var o in e)
                         r.d(
                             n,
@@ -578,8 +651,13 @@ Element.prototype.closest ||
                 a = o(n(1)),
                 c = o(n(3)),
                 u = o(n(4));
+
             function o(t) {
-                return t && t.__esModule ? t : { default: t };
+                return t && t.__esModule
+                    ? t
+                    : {
+                          default: t
+                      };
             }
             var l = (function (t) {
                 function o(t, e) {
@@ -595,7 +673,14 @@ Element.prototype.closest ||
                 return (
                     (function (t, e) {
                         if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
-                        (t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } })),
+                        (t.prototype = Object.create(e && e.prototype, {
+                            constructor: {
+                                value: t,
+                                enumerable: !1,
+                                writable: !0,
+                                configurable: !0
+                            }
+                        })),
                             e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
                     })(o, c.default),
                     i(
@@ -681,6 +766,7 @@ Element.prototype.closest ||
                     o
                 );
             })();
+
             function s(t, e) {
                 var n = 'data-clipboard-' + t;
                 if (e.hasAttribute(n)) return e.getAttribute(n);
@@ -710,7 +796,12 @@ Element.prototype.closest ||
                     };
                 })(),
                 a = n(2),
-                c = (o = a) && o.__esModule ? o : { default: o };
+                c =
+                    (o = a) && o.__esModule
+                        ? o
+                        : {
+                              default: o
+                          };
             var u = (function () {
                 function e(t) {
                     !(function (t, e) {
@@ -874,10 +965,17 @@ Element.prototype.closest ||
             (n.prototype = {
                 on: function (t, e, n) {
                     var o = this.e || (this.e = {});
-                    return (o[t] || (o[t] = [])).push({ fn: e, ctx: n }), this;
+                    return (
+                        (o[t] || (o[t] = [])).push({
+                            fn: e,
+                            ctx: n
+                        }),
+                        this
+                    );
                 },
                 once: function (t, e, n) {
                     var o = this;
+
                     function r() {
                         o.off(t, r), e.apply(n, arguments);
                     }
@@ -954,6 +1052,7 @@ Element.prototype.closest ||
         },
         function (t, e, n) {
             var a = n(7);
+
             function i(t, e, n, o, r) {
                 var i = function (e, n, t, o) {
                     return function (t) {
