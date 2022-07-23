@@ -44,19 +44,19 @@ When an `important` rule is used on a style declaration, this declaration overri
 1.  Make better use of the CSS cascade
 2.  Use more specific rules. By indicating one or more elements before the element you're selecting, the rule becomes more specific and gets higher priority:
 
-    ```
+ ```
     <div id="test">
       <span>Text</span>
     </div>
-    ```
+ ```
 
     Copy to Clipboard
 
-    ```
+ ```
     div#test span { color: green; }
     div span { color: blue; }
     span { color: red; }
-    ```
+ ```
 
     Copy to Clipboard
 
@@ -64,10 +64,10 @@ When an `important` rule is used on a style declaration, this declaration overri
 
 3.  As a nonsense special case for (2), duplicate simple selectors to increase specificity when you have nothing more to specify.
 
-    ```
+ ```
     #myId#myId span { color: yellow; }
     .myClass.myClass span { color: orange; }
-    ```
+ ```
 
     Copy to Clipboard
 
@@ -190,7 +190,9 @@ Copy to Clipboard
 
 ... appears on the screen like this:
 
-<iframe class="sample-code-frame" title="The is and not exceptions sample" id="frame_the_is_and_not_exceptions" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_is_and_not_exceptions.html" loading="lazy"></iframe>
+<iframe class="sample-code-frame" title="The is and not exceptions sample" id="frame_the_is_and_not_exceptions" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_is_and_not_exceptions.html" loading="lazy">
+</iframe>
+<br>
 
 ### [The :where() exception](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_where_exception 'Permalink to The :where() exception')
 
@@ -225,7 +227,9 @@ Copy to Clipboard
 
 ```
 <div id="no-where-support">
-⚠️ Your browser doesn't support the <code><a href="https://developer.mozilla.org/docs/Web/CSS/:where" target="_top">:where()</a></code> pseudo-class.
+⚠️ Your browser doesn't support the <code>
+<a href="https://developer.mozilla.org/docs/Web/CSS/:where" target="_top">:where()</a>
+</code> pseudo-class.
 </div>
 ```
 
@@ -242,7 +246,9 @@ Copy to Clipboard
 
 ... appears on the screen like this:
 
-<iframe class="sample-code-frame" title="The where exception sample" id="frame_the_where_exception" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_where_exception.html" loading="lazy"></iframe>
+<iframe class="sample-code-frame" title="The where exception sample" id="frame_the_where_exception" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.the_where_exception.html" loading="lazy">
+</iframe>
+<br>
 
 ### [Form-based specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#form-based_specificity 'Permalink to Form-based specificity')
 
@@ -272,7 +278,9 @@ Copy to Clipboard
 
 ... end up looking like this:
 
-<iframe class="sample-code-frame" title="Form-based specificity sample" id="frame_form-based_specificity" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.form-based_specificity.html" loading="lazy"></iframe>
+<iframe class="sample-code-frame" title="Form-based specificity sample" id="frame_form-based_specificity" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.form-based_specificity.html" loading="lazy">
+</iframe>
+<br>
 
 This is because it matches the same element but the ID selector has a higher specificity.
 
@@ -306,7 +314,9 @@ Copy to Clipboard
 
 ... will render as:
 
-<iframe class="sample-code-frame" title="Tree proximity ignorance sample" id="frame_tree_proximity_ignorance" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.tree_proximity_ignorance.html" loading="lazy"></iframe>
+<iframe class="sample-code-frame" title="Tree proximity ignorance sample" id="frame_tree_proximity_ignorance" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.tree_proximity_ignorance.html" loading="lazy">
+</iframe>
+<br>
 
 This is because the two declarations have equal [selector type](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#selector_types) counts, but the `html h1` selector is declared last.
 
@@ -340,6 +350,8 @@ Copy to Clipboard
 
 ... will also render as:
 
-<iframe class="sample-code-frame" title="Directly targeted elements vs. inherited styles sample" id="frame_directly_targeted_elements_vs._inherited_styles" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.directly_targeted_elements_vs._inherited_styles.html" loading="lazy"></iframe>
+<iframe class="sample-code-frame" title="Directly targeted elements vs. inherited styles sample" id="frame_directly_targeted_elements_vs._inherited_styles" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/Specificity/_sample_.directly_targeted_elements_vs._inherited_styles.html" loading="lazy">
+</iframe>
+<br>
 
 This is because the `h1` selector targets the element specifically, but the green selector is only inherited from its parent.

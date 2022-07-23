@@ -231,6 +231,7 @@ You can combine most of the versions in ranges, like this: 1.0.0 || >=1.1.0 <1.2
 # Cheat Sheet:
 
 ```js
+//
 
 /* *******************************************************************************************
  * SYNOPSIS

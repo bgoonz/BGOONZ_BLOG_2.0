@@ -39,16 +39,13 @@ exports.handler = async (event) => {
  * the code to `ExampleQuery.js`) with these helpers:
  */
 
-/**
 async function fetchExampleQuery(params) {
-  const {} = params || {};
-  const resp = await fetch(`/.netlify/functions/ExampleQuery?`,
-    {
-      method: "GET"
+    const {} = params || {};
+    const resp = await fetch(`/.netlify/functions/ExampleQuery?`, {
+        method: 'GET'
     });
 
     const text = await resp.text();
 
     return JSON.parse(text);
 }
-*/
