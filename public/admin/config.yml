@@ -26,7 +26,7 @@ collections:
       label: Docs
       folder: src/pages/docs
       create: true
-      path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
+      path: '/' # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
       slug: '/{{title}}'
       preview_path: 'src/pages/docs/{{slug}}'
       extension: md
