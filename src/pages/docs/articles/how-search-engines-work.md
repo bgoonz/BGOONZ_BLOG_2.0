@@ -2,7 +2,7 @@
 title: The Anatomy of a Search Engine
 sections: []
 seo:
-    title: 'The Anatomy of a Search Engine'
+    title: ''
     description: 'hardware performance and cost have improved dramatically to partially offset
 the difficulty. There are, however, several notable exceptions to this
 progress such as disk seek time and operating system robustness. In designing

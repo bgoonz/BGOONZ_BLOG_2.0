@@ -1,4 +1,3 @@
-/* It's a styled component that is used to style the code blocks. */
 import { createGlobalStyle } from 'styled-components';
 const langTagColor = [
     {
