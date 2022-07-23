@@ -13,7 +13,8 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -37,10 +38,12 @@ Inject analytics or other scripts into the HTML of your site.
     addthis
 
     ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -59,19 +62,23 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-app.js">
+</script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-analytics.js">
+</script>
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/init.js">
+</script>
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -89,8 +96,12 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
@@ -147,7 +158,8 @@ Inject analytics or other scripts into the HTML of your site.
     original-analytics
 
     ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -156,13 +168,18 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+<br>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -171,7 +188,8 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
     ```
 
     Remove
@@ -184,7 +202,8 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'></a>
+            echo "<a href='$url'>
+</a>
     ```
 
     Remove
@@ -440,7 +459,7 @@ Inject analytics or other scripts into the HTML of your site.
       <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner">
       <meta name="twitter:description" content="The new home of my blog resource sharing website.">
       <link
-        href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png"
+        href="https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png"
         rel="apple-touch-icon">
       <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet">
     ```
@@ -504,9 +523,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!--[if lte IE 8]>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js">
+</script>
     <![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js">
+</script>
     <script>
       hbspt.forms.create({
     	region: "na1",
@@ -524,7 +545,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20684171.js"></script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20684171.js">
+</script>
     <!-- End of HubSpot Embed Code -->
     ```
 
@@ -535,7 +557,10 @@ Inject analytics or other scripts into the HTML of your site.
     typeform
 
     ```
-    <div data-tf-popover="zL20wTbS" data-tf-custom-icon="https://images.typeform.com/images/bDK2t34aaS3Z" data-tf-button-color="#00183E" data-tf-notification-days="7" data-tf-chat style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    <div data-tf-popover="zL20wTbS" data-tf-custom-icon="https://images.typeform.com/images/bDK2t34aaS3Z" data-tf-button-color="#00183E" data-tf-notification-days="7" data-tf-chat style="all:unset;">
+</div>
+<script src="//embed.typeform.com/next/embed.js">
+</script>
     ```
 
     Remove

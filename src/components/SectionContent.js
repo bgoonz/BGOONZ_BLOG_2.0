@@ -1,9 +1,12 @@
-import React from 'react';
 import _ from 'lodash';
+<<<<<<< HEAD
 
 import {classNames, withPrefix, markdownify} from '../utils';
+=======
+import React from 'react';
+import { classNames, markdownify, withPrefix } from '../utils';
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 import CtaButtons from './CtaButtons';
-
 export default class SectionContent extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);

@@ -3,7 +3,7 @@ title: Intro To NodeJS
 weight: 0
 excerpt: A Node.js app runs in a single process, without creating a new thread for every request.
 seo:
-    title: ''
+    title: 'Intro To NodeJS'
     description: 'Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!'
     robots: []
     extra: []
@@ -96,12 +96,14 @@ Many of those established over time as popular options. Here is a non-comprehens
 
 # Extended Version:
 
-<iframe src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor"
      style="width:100%; height:400px; border:2; border-radius: 15px; overflow:auto;resize:both;"
      title="nodejs-examples"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+   >
+</iframe>
+<br>
 
 # Introduction to JavaScript
 
@@ -111,7 +113,7 @@ JavaScript is a dynamically typed language which means a variable can hold any d
 
 JavaScript is interactive, which means you can directly feed JavaScript code to the interpreter and it will be executed immediately. You can try this by opening [DevTools](https://developers.google.com/web/tools/chrome-devtools/) in the browser (_in Chrome, press _`*command** + **option** + **i*`) or right-click anywhere on the page and click inspect. Then go to the console tab, here you can type any valid JavaScript code and press enter to run it. Use `shift + enter` to add a new-line in your code.
 
-![](https://miro.medium.com/max/675/1*iSdHW-r4lmJ41vrpm_0lxQ.png)
+![medium blog image](https://miro.medium.com/max/675/1*iSdHW-r4lmJ41vrpm_0lxQ.png)
 
 (interacting with JavaScript interpreter)
 
@@ -145,9 +147,9 @@ These Web APIs sometimes do their job in separate thread allowing other JavaScri
 
 For example, `[setTimeout(callback, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp)` function is not part of ECMAScript specification, it is provided by the browser to perform an asynchronous operation. The `callback` function is executed in the main JavaScript thread once `delay` milliseconds has elapsed.
 
-![](https://miro.medium.com/max/20/1*Lyq6NipNFEgLwjXs0-BDgA.png?q=20)
+![medium blog image](https://miro.medium.com/max/20/1*Lyq6NipNFEgLwjXs0-BDgA.png?q=20)
 
-![](https://miro.medium.com/max/473/1*Lyq6NipNFEgLwjXs0-BDgA.png)
+![medium blog image](https://miro.medium.com/max/473/1*Lyq6NipNFEgLwjXs0-BDgA.png)
 
 (an oversimplification of how JavaScript runs in a browser)
 
@@ -155,9 +157,9 @@ So far we know that JavaScript is essential in a browser. But if you think about
 
 The concept of server-side JavaScript comes from this simple idea. You can take any JavaScript engine, wrap inside an application that gives a clean interface to take the user's JavaScript code and execute it in the JavaScript engine. You can also provide APIs to perform operations like File System IO, Networking, etc. which do not run on JavaScript engine.
 
-![](https://miro.medium.com/max/20/1*i1b-kgRTc9KPvHjvBifoyA.png?q=20)
+![medium blog image](https://miro.medium.com/max/20/1*i1b-kgRTc9KPvHjvBifoyA.png?q=20)
 
-![](https://miro.medium.com/max/473/1*i1b-kgRTc9KPvHjvBifoyA.png)
+![medium blog image](https://miro.medium.com/max/473/1*i1b-kgRTc9KPvHjvBifoyA.png)
 
 (an oversimplification of how JavaScript runs on a server)
 
@@ -171,7 +173,7 @@ Sometimes, Node.js is also called simply Node or node.
 
 Node.js is a framework that contains the V8 JavaScript engine, the standard library of packages, and some binaries. In reality, it is more complex than that as explained in the below diagram (_follow the link for more details_).
 
-![](https://miro.medium.com/max/405/1*iTdvBPVxYZdJZQKsP3yILw.jpeg)
+![medium blog image](https://miro.medium.com/max/405/1*iTdvBPVxYZdJZQKsP3yILw.jpeg)
 
 (Source: [Stackoverflow](https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture))
 
@@ -194,7 +196,7 @@ You should install Node.js from their official website at [nodejs.org](https://n
 
 When you install Node.js, you get `node` and `npm` binaries added to your path. That means, now you can use `node` and `npm` command. We will talk about `npm` later, but for now, let's focus on the `node`.
 
-![](https://miro.medium.com/max/459/1*jjZ-5MLgkPDNd-6j6x52rQ.png)
+![medium blog image](https://miro.medium.com/max/459/1*jjZ-5MLgkPDNd-6j6x52rQ.png)
 
 Using `-v` or `--version` flag, we can check the version of the Node installed. The latest node will have the latest V8 engine, hence latest JavaScript features. If you need the flexibility to change Node version at any given time, in that case, you should not install Node.js using above method. Instead, you should use Node Version Manager or [NVM](https://github.com/nvm-sh/nvm).
 
@@ -202,9 +204,9 @@ Using `-v` or `--version` flag, we can check the version of the Node installed. 
 
 Like we saw in DevTools of the browser, using the simple command `node` will open a JavaScript interpreter in the terminal. This way we can run some simple JavaScript code to amuse yourself.
 
-![](https://miro.medium.com/max/20/1*yfvMB7k2KBIylz_ISFUL-Q.png?q=20)
+![medium blog image](https://miro.medium.com/max/20/1*yfvMB7k2KBIylz_ISFUL-Q.png?q=20)
 
-![](https://miro.medium.com/max/459/1*yfvMB7k2KBIylz_ISFUL-Q.png)
+![medium blog image](https://miro.medium.com/max/459/1*yfvMB7k2KBIylz_ISFUL-Q.png)
 
 (node interpreter)
 
@@ -214,7 +216,7 @@ Now that we have a good understanding of what Node.js is and how JavaScript engi
 
 Using an interpreter we can perform some basic arithmetics and other basic stuff. But most of the time, your actual JavaScript code will be in a `.js` file. Instead of giving one line at a time to the interpreter, we need to give whole file content at once. We can do that by using `node /path/to/file.js` command.
 
-![](https://miro.medium.com/max/675/1*UdmQcaaaqcGtbzgWUFtE2A.png)
+![medium blog image](https://miro.medium.com/max/675/1*UdmQcaaaqcGtbzgWUFtE2A.png)
 
 ([hello-world.js](https://github.com/course-one/node-js-introduction/blob/master/hello-world.js))
 
@@ -222,7 +224,7 @@ In the above example, we have created `hello-world.js` file and it contains `hel
 
 Since `node` can only execute `.js` files, adding `.js` extension to the file path is optional. If we provide a directory path instead of file path to `node`, Node.js will try to resolve `index.js` file inside that directory.
 
-![](https://miro.medium.com/max/675/1*J1cd4WNICvBUcuDpUfvecA.png)
+![medium blog image](https://miro.medium.com/max/675/1*J1cd4WNICvBUcuDpUfvecA.png)
 
 (executing index.js in the current directory with Node)
 
@@ -348,7 +350,7 @@ This continues until the last directory in the file system is reached. If it doe
 
 Let's create `node_modules` directory in our project and clone `lib` directory there. From `src/compute.js`, we will call the `add` function as before.
 
-![](https://miro.medium.com/max/675/1*o2PkxJ468fIvuQaZojV-sw.png)
+![medium blog image](https://miro.medium.com/max/675/1*o2PkxJ468fIvuQaZojV-sw.png)
 
 ([package introduction](https://github.com/course-one/node-js-introduction/tree/master/lib))
 
@@ -372,7 +374,7 @@ When we have a remote package in our project, it is called as a dependency since
 
 This file is essential for NPM. To create this file using `npm`, use `npm init` command. This command will ask you some question to fill project-specific data in `package.json` and eventually create `package.json` file. You can bypass the questions using `-y` flag.
 
-![](https://miro.medium.com/max/675/1*QIqW9G-YXcvQAs0xl0zh2A.png)
+![medium blog image](https://miro.medium.com/max/675/1*QIqW9G-YXcvQAs0xl0zh2A.png)
 
 (Initializing [package.json](https://github.com/course-one/node-js-introduction/blob/master/package.json))
 
@@ -390,7 +392,7 @@ This command will do the following things.
 
 Let's actually install `lodash` package and see how `node_modules` and `package.json` file looks like after the install.
 
-![](https://miro.medium.com/max/675/1*xPtGu4bjhl4YJlH9PvwH9A.png)
+![medium blog image](https://miro.medium.com/max/675/1*xPtGu4bjhl4YJlH9PvwH9A.png)
 
 (npm install -- save lodash)
 
@@ -424,7 +426,7 @@ These packages do not exist on disk like `lodash`. They are compiled into low-le
 
 According to the above project structure, we have `hello-world.txt` file which contains `Hello World!` text. Using `fs-example.js`, we want to read the text in the file and log in to the console.
 
-![](https://miro.medium.com/max/675/1*78ejxNXflo4CGZ18gRXPhQ.png)
+![medium blog image](https://miro.medium.com/max/675/1*78ejxNXflo4CGZ18gRXPhQ.png)
 
 (Sample `fs` and `path` module introduction)
 
@@ -448,7 +450,7 @@ Notice the console log. The first `-end-of-the-program-` statement got printed a
 
 Node.js can also perform synchronous (blocking) operations. For example, using `[fs.readFileSync](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)`, we can block the JavaScript thread until the file is read. This way, we can make sure, JavaScript code run sequentially.
 
-![](https://miro.medium.com/max/675/1*FmUCo0e0Cs_QKxEGZ509nQ.png)
+![medium blog image](https://miro.medium.com/max/675/1*FmUCo0e0Cs_QKxEGZ509nQ.png)
 
 ([Reading a file synchronously](https://github.com/course-one/node-js-introduction/blob/master/fs-example.js))
 
@@ -464,13 +466,13 @@ npm install --save express
 
 Then we will import this package and create a basic HTTP server inside `server.js` file. We will follow their [startup documentation](https://github.com/expressjs/express).
 
-![](https://miro.medium.com/max/675/1*6yP5kysrs9UIKk8RYnR0AQ.png)
+![medium blog image](https://miro.medium.com/max/675/1*6yP5kysrs9UIKk8RYnR0AQ.png)
 
 ([Sample express HTTP server](https://github.com/course-one/node-js-introduction/blob/master/server.js))
 
 When we executed `server.js` file with `node`, ExpressJS will lock the Node process as we want the server to be running forever. Now that server is running on the port `9000`, we can open the browser and access URL `<http://localhost:9000/>` which will execute the `.get` callback.
 
-![](https://miro.medium.com/max/473/1*evvJp-ynknMqnUTbW4dssw.png)
+![medium blog image](https://miro.medium.com/max/473/1*evvJp-ynknMqnUTbW4dssw.png)
 
 `(<http://localhost:9000/>)`
 
@@ -488,7 +490,7 @@ Node.js provides a built-in `[child_process](https://nodejs.org/api/child_proces
 
 Let's create a `echo.js` file that executes `echo Hello World!` Bash command.
 
-![](https://miro.medium.com/max/675/1*NGwvmLnmj436x2EXbWAJvg.png)
+![medium blog image](https://miro.medium.com/max/675/1*NGwvmLnmj436x2EXbWAJvg.png)
 
 ([child_process example](https://github.com/course-one/node-js-introduction/blob/master/echo.js))
 

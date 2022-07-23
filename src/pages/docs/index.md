@@ -27,39 +27,29 @@ weight: 900
 excerpt: docs quick reference
 ---
 
-# Go To Sitemap: [Go Now -->](./docs/sitemap/)
+# Go To [SITEMAP -->](./docs/sitemap/)
 
 ---
 
-<div id="search"></div>
+# Docs
 
-# Actual Docs:
+<h1>Search Blog</h1>
 
-<br>
-<br>
-
-       <div id="search" />
-<br>
-               <div id="search" className="inner"></div>
-<br>
-<h1>  Docs</h1>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://random-list-of-embedable-content.vercel.app/blog-search.html#gsc.tab=0" height="1000px" width="1200px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
 <br>
 
-<iframe class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+---
 
-<br>
-<hr>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://docs42.netlify.app/#C:/MY-WEB-DEV/__NEW_GIT/DOCS/docs-collection" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
 <br>
 
 <h1>Gitpod Docs</h1>
-<br>
 
-<iframe class="inner" src="https://archive-42.github.io/my-docs-gitpod-html/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
-
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="inner" src="https://archive-42.github.io/my-docs-gitpod-html/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+</iframe>
 <br>
-<hr>
-<br>
-
 
 ---
 

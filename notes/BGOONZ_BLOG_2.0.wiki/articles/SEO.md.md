@@ -131,8 +131,13 @@ Lang attribut of HTML element is missing.
 
 ALL LINKS\
 APPLE-TOUCH-ICON : [logo-circle.png](https://bgoonz-blog.netlify.app/logo-circle.png 'apple-touch-icon')\
+<<<<<<< HEAD
 APPLE-TOUCH-ICON : [logo-canvas.png](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png 'apple-touch-icon')\
 ICON : [webdevhublogo2.PNG](https://bgoonz-blog.netlify.app/images/webdevhublogo2.PNG 'icon')\
+=======
+APPLE-TOUCH-ICON : [logo-canvas.png](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/favicon.png 'apple-touch-icon')\
+ICON : [webdevhublogo2.png](https://bgoonz-blog.netlify.app/images/webdevhublogo2.png 'icon')\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 PRECONNECT : https://fonts.gstatic.com\
 PREFETCH : component---src-templates-advanced-js-c66268766ef5c957450f.js\
 PREFETCH : component---src-templates-blog-js-36eb4fae1add87ca6010.js\
@@ -262,7 +267,11 @@ TEXT/JAVASCRIPT : [![](https://www.google.com/s2/favicons?domain=https://www.sma
 
 ---
 
+<<<<<<< HEAD
 XFN / Rel attr. (Xhtml Friends Network)  ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
+=======
+XFN / Rel attr. (Xhtml Friends Network) ![](chrome-extension://bjogjfinolnhfhkbipphpdlldadpnmhc/img/help-icon-i.png)\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 NOFOLLOW: [byfreefind](https://www.freefind.com/)\
 NOFOLLOW: [search engine](https://www.freefind.com/)\
 NOOPENER : [dev.to](https://dev.to/bgoonz)\
@@ -282,10 +291,17 @@ NOOPENER : [Job Search Resources](https://determined-dijkstra-ee7390.netlify.app
 NOOPENER : [Ternary 2 If Else](https://ternary42.netlify.app/)\
 NOOPENER : [Text Tools](https://devtools42.netlify.app/)\
 NOOPENER : [Github HTML Previewer](https://githtmlpreview.netlify.app/)\
+<<<<<<< HEAD
 NOOPENER : [Wordpress Blog](https://web-dev-hub.com/)\
 NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
 NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
 NOOPENER : [SearchAwesome](https://bgoonz.github.io/searchAwesome/)\
+=======
+NOOPENER : [Wordpress Blog](https://bgoonz-blog.netlify.app/)\
+NOOPENER : [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)\
+NOOPENER : [Condensed -Portfolio](https://bg-portfolio.netlify.app/)\
+NOOPENER : [SearchAwesome](https://search-awesome.vercel.app/)\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 NOOPENER : [WebAudioLab](https://panoramic-eggplant-452e4.netlify.app/)\
 NOOPENER : [Meditation App](https://meditate42app.netlify.app/)\
 NOOPENER : [Potluck Planner](https://potluck-landing.netlify.app/)\
@@ -467,7 +483,11 @@ Title: /\
 ALT: Every idea needs a medium\
 Title: /\
  |
+<<<<<<< HEAD
 | [spectacular-turmeric.png](https://d33wubrfki0l68.cloudfront.net/beba3d8052852cedc7fd41d9d05b4dffd4ea1136/d32f7/images/spectacular-turmeric.png)\
+=======
+| [neural.png](https://d33wubrfki0l68.cloudfront.net/beba3d8052852cedc7fd41d9d05b4dffd4ea1136/d32f7/images/neural.png)\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 ALT: angolia\
 Title: /\
  |
@@ -475,7 +495,11 @@ Title: /\
 ALT: neural networks\
 Title: /\
  |
+<<<<<<< HEAD
 | [neural.PNG](https://bgoonz-blog.netlify.app/_static/app-assets/neural.PNG)\
+=======
+| [neural.png](https://bgoonz-blog.netlify.app/_static/app-assets/neural.png)\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 ALT: /\
 Title: /\
  |
@@ -557,7 +581,11 @@ Title: /\
 | [/blog/platform-docs/](https://bgoonz-blog.netlify.app/blog/platform-docs/)\
 Title: /\
  |
+<<<<<<< HEAD
 | [/blogWcomments/](https://bgoonz-blog.netlify.app/blogWcomments/)\
+=======
+| [/blogWcomments/](https://blog-w-comments.vercel.app/)\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 Title: /\
  |
 | [/docs](https://bgoonz-blog.netlify.app/docs)\
@@ -695,7 +723,11 @@ Title: /\
 | <https://bgoonz.github.io/github-stats-website/>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://bgoonz.github.io/searchAwesome/>\
+=======
+| <https://search-awesome.vercel.app/>\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 Title: /\
  |
 | <https://blog-w-comments.vercel.app/>\
@@ -708,7 +740,11 @@ Title: /\
 | <https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://bryanguner.medium.com/introductory-react-part-2-cda01615a186>\
+=======
+| <https://bgoonz-blog.netlify.app/docs/react/react2/>\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 Title: /\
  |
 | <https://determined-dijkstra-ee7390.netlify.app/>\
@@ -738,7 +774,11 @@ Title: /\
 | <https://en.wikipedia.org/wiki/Sean_Avery>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://friendly-panda-b61ab.netlify.app/>\
+=======
+| <https://bgoonz-blog-v3-0.netlify.app/embeds/>\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 Title: /\
  |
 | <https://githtmlpreview.netlify.app/>\
@@ -822,7 +862,11 @@ Title: /\
 | <https://twitter.com/bgooonz>\
 Title: /\
  |
+<<<<<<< HEAD
 | <https://web-dev-hub.com/>\
+=======
+| <https://bgoonz-blog.netlify.app/>\
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 Title: /\
  |
 | <https://web-dev-interview-prep-quiz-website.netlify.app/>\

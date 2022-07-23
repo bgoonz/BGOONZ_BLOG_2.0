@@ -6,21 +6,25 @@ sections:
     - career
     - community
     - content
+    - cheatsheet
     - css
-    - data-structures
     - docs
+    - ds-algo🖧
     - faq
+    - fetch-api
+    - git
+    - index.md
     - interact
-    - javascript
     - interview
+    - javascript
+    - js-tips
     - leetcode
+    - overflow
     - projects
     - python
-    - quick-reference
+    - quick-ref
     - react
     - reference
     - tools
-    - tips
     - tutorials
-
-
+    - typescript

@@ -212,14 +212,15 @@ There are two ways you could solve this coding problem in an interview. Let's di
 
 #### Solution #1: Doing it "by hand"
 
-1
+function removeEven(arr) {
 
-2
+var odds = []
 
-3
+for (let number of arr) {
 
-4
+if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
 
+<<<<<<< HEAD
 5
 
 6
@@ -238,6 +239,8 @@ for (let number of arr) {
 
 if (number % 2 != 0) // Check if the item in the list is NOT even ('%' is the modulus symbol!)
 
+=======
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 odds.push(number) //If it isn't even append it to the empty list
 
 }
@@ -250,12 +253,17 @@ console.log(removeEven([3, 2, 41, 3, 34]))
 
 Run
 
+<<<<<<< HEAD
 This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in *O(n)O(n).*
+=======
+This approach starts with the first element of the array. If that current element is not even, it pushes this element into a new array. If it is even, it will move to the next element, repeating until it reaches the end of the array. In regards to time complexity, since the entire array has to be iterated over, this solution is in _O(n)O(n)._
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
 #### Solution #2: Using filter() and lambda function
 
-1
+function removeEven(arr) {
 
+<<<<<<< HEAD
 2
 
 3
@@ -264,6 +272,8 @@ This approach starts with the first element of the array. If that current elemen
 
 function removeEven(arr) {
 
+=======
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 return arr.filter((v => (v % 2) != 0))
 
 }
@@ -295,24 +305,6 @@ To solve this problem, we can simply use a stack of characters. Look below at th
 index.js
 
 Stack.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -417,7 +409,11 @@ This process will iterate over the string one character at a time. We can determ
 1.  The stack is empty.
 2.  The top element in the stack is not the right type.
 
+<<<<<<< HEAD
 If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is *O(n)*.
+=======
+If either of these conditions is true, we return `False`. If the parenthesis is an opening parenthesis, it is pushed into the stack. If by the end all are balanced, the stack will be empty. If it is not empty, we return `False`. Since we traverse the string exp only once, the time complexity is _O(n)_.
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
 ### Queue: Generate Binary Numbers from 1 to n
 
@@ -440,24 +436,6 @@ The easiest way to solve this problem is using a queue to generate new numbers f
 index.js
 
 Queue.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -556,13 +534,21 @@ The key is to generate consecutive binary numbers by appending 0 and 1 to previo
 
 Once we generate a binary number, it is then enqueued to a queue so that new binary numbers can be generated if we append 0 and 1 when that number will be enqueued.
 
+<<<<<<< HEAD
 Since a queue follows the *First-In First-Out* property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
+=======
+Since a queue follows the _First-In First-Out_ property, the enqueued binary numbers are dequeued so that the resulting array is mathematically correct.
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
 Look at the code above. On line 7, `1` is enqueued. To generate the sequence of binary numbers, a number is dequeued and stored in the array `result`. On lines 11-12, we append `0` and `1` to produce the next numbers.
 
 Those new numbers are also enqueued at lines 14-15. The queue will take integer values, so it converts the string to an integer as it is enqueued.
 
+<<<<<<< HEAD
 The time complexity of this solution is in *O(n)O(n)* since constant-time operations are executed for n times.
+=======
+The time complexity of this solution is in _O(n)O(n)_ since constant-time operations are executed for n times.
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
 ### Linked List: Reverse a linked list
 
@@ -587,24 +573,6 @@ index.js
 LinkedList.js
 
 Node.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -714,7 +682,11 @@ We use a loop to iterate through the input list. For a `current` node, its link 
 -   Line 25 - Use `next` to go to the next node
 -   Line 29 - We reset the `head` pointer to point at the last node
 
+<<<<<<< HEAD
 Since the list is traversed only once, the algorithm runs in *O(n)*.
+=======
+Since the list is traversed only once, the algorithm runs in _O(n)_.
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
 ### Tree: Find the Minimum Value in a Binary Search Tree
 
@@ -743,24 +715,6 @@ index.js
 BinarySearchTree.js
 
 Node.js
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
 
 10
 
@@ -896,24 +850,6 @@ LinkedList.js
 
 Node.js
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
 10
 
 11
@@ -1026,24 +962,6 @@ result = [-2,1,5,9,4,6,7]
 
 To solve this problem, we must min heapify all parent nodes. Take a look.
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
 10
 
 11
@@ -1130,4 +1048,8 @@ console.log(convertMax(maxHeap))
 
 Run
 
+<<<<<<< HEAD
 We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes *O(nlog(n))O(nlog(n))* time.
+=======
+We consider `maxHeap` to be a regular array and reorder it to accurately represent a min-heap. You can see this done in the code above. The `convertMax()` function then restores the heap property on all nodes from the lowest parent node by calling the `minHeapify()` function. In regards to time complexity, this solution takes _O(nlog(n))O(nlog(n))_ time.
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d

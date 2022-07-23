@@ -1,8 +1,12 @@
-import React from 'react';
 import _ from 'lodash';
+<<<<<<< HEAD
 
 import {classNames, htmlToReact, pathJoin, getPage, Link, withPrefix} from '../utils';
 
+=======
+import React from 'react';
+import { classNames, getPage, htmlToReact, Link, pathJoin, withPrefix } from '../utils';
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 export default class SectionDocs extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);

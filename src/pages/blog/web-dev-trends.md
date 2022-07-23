@@ -2,18 +2,18 @@
 title: Web Development Tools
 subtitle: In 2021
 date: '2021-09-30'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: image of
 excerpt: lorem-ipsum
 seo:
-  title: ''
-  description: ''
-  robots: []
-  extra: []
+    title: ''
+    description: ''
+    robots: []
+    extra: []
 template: post
 thumb_image: images/webdev.png
 ---
 
-**1. AI Chatbots**![](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
+**1. AI Chatbots**![alt-text](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
 
 Artificial Intelligence (AI) refers to the intelligence displayed by machines. It is primarily used to replace human intelligence.
 

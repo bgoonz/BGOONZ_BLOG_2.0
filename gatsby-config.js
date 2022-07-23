@@ -16,21 +16,63 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
+<<<<<<< HEAD
                 plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
+=======
+                plugins: ['gatsby-remark-prismjs'],
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
             },
         },
         {
             resolve: 'gatsby-remark-code-buttons',
+<<<<<<< HEAD
 
 
         },
         {
             resolve: 'gatsby-plugin-disqus',
             options: {
+=======
+            options: {
+                // Optional button container class name. Defaults
+                // to 'gatsby-code-button-container'.
+                buttonContainerClass: 'customButtonContainerClass',
+                // Optional button class name. Defaults to 'gatsby-code-button'.
+                buttonClass: 'customButtonClass',
+                // Optional button text. Defaults to ''.
+                buttonText: 'customButtonText',
+                // Optional svg icon class name. Defaults to 'gatsby-code-button-icon'.
+                svgIconClass: 'customSvgIconClass',
+                // Optional svg icon. Defaults to svg string and can be
+                // replaced with any other valid svg. Use custom classes
+                // in the svg string and skip `iconClass` option.
+                svgIcon: 'customSvgIcon',
+                // Optional tooltip text. Defaults to ''.
+                tooltipText: 'customTooltipText',
+                // Optional toaster class name. Defaults to ''.
+                toasterClass: 'customToasterClass',
+                // Optional toaster text class name. Defaults to ''.
+                toasterTextClass: 'customToasterTextClass',
+                // Optional toaster text. Defaults to ''.
+                toasterText: 'customToasterText',
+                // Optional toaster duration. Defaults to 3500.
+                toasterDuration: 5000
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-disqus',
+            options: {
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
                 shortname: 'webdevhub-1',
             }
         },
         {
+<<<<<<< HEAD
+=======
+            resolve: 'gatsby-plugin-no-sourcemaps',
+        },
+        {
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
             resolve: 'gatsby-plugin-sass',
             options: {}
         },

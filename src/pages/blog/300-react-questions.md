@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Es6 Features
 subtitle: ECMAScript 2015 was the second major revision to JavaScript.
 date: '2022-01-16'
@@ -9,20 +10,31 @@ seo:
   description: ''
   robots: []
   extra: []
+=======
+title: React Interview Questions & Answers
+subtitle: lorem-ipsum
+date: '2021-11-24'
+thumb_image_alt: image of
+excerpt: lorem-ipsum
+seo:
+    title: 'React Interview Questions & Answers'
+    description: ''
+    robots: []
+    extra: []
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 template: post
 thumb_image: images/es6.jpg
 ---
 
 ## React Interview Questions & Answers
 
-<iframe width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-
-
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True">
+</iframe>
+<br>
 
 <details>
 
-<summary> Questions Table  </summary>   
-
+<summary> Questions Table  </summary>
 
 #### Table of Contents
 
@@ -2416,11 +2428,4 @@ thumb_image: images/es6.jpg
 </tbody>
 </table>
 
-
-
-
 </details>
-
-
-
-

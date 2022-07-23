@@ -3,26 +3,29 @@ title: Index as a key is an anti-pattern
 weight: 0
 excerpt: So many times I have seen developers use the index of an item as its key when they render a list.
 seo:
-  title: 'Lists and Keys'
-  description: 'Let me explain, a _key_ is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the _key_ is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.'
-  robots: []
-  extra: []
+    title: 'Lists and Keys'
+    description: 'Let me explain, a _key_ is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the _key_ is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.'
+    robots: []
+    extra: []
 template: docs
 ---
+
+
 ## > ## Excerpt
-> 
+
+>
 
 ---
 
-
-
-# Lists and Keys – React
+# Lists and Keys - React
 
 > ## Excerpt
+>
 > A JavaScript library for building user interfaces
 
 ---
-First, let’s review how you transform lists in JavaScript.
+
+First, let's review how you transform lists in JavaScript.
 
 Given the code below, we use the [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) function to take an array of `numbers` and double their values. We assign the new array returned by `map()` to the variable `doubled` and log it:
 
@@ -77,9 +80,9 @@ ReactDOM.render(
 );
 ```
 
-When you run this code, you’ll be given a warning that a key should be provided for list items. A “key” is a special string attribute you need to include when creating lists of elements. We’ll discuss why it’s important in the next section.
+When you run this code, you'll be given a warning that a key should be provided for list items. A "key" is a special string attribute you need to include when creating lists of elements. We'll discuss why it's important in the next section.
 
-Let’s assign a `key` to our list items inside `numbers.map()` and fix the missing key issue.
+Let's assign a `key` to our list items inside `numbers.map()` and fix the missing key issue.
 
 ```
 function NumberList(props) {
@@ -123,7 +126,7 @@ const todoItems = todos.map((todo) =>
 );
 ```
 
-When you don’t have stable IDs for rendered items, you may use the item index as a key as a last resort:
+When you don't have stable IDs for rendered items, you may use the item index as a key as a last resort:
 
 ```
 const todoItems = todos.map((todo, index) =>
@@ -132,9 +135,9 @@ const todoItems = todos.map((todo, index) =>
 );
 ```
 
-We don’t recommend using indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state. Check out Robin Pokorny’s article for an [in-depth explanation on the negative impacts of using an index as a key](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318). If you choose not to assign an explicit key to list items then React will default to using indexes as keys.
+We don't recommend using indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state. Check out Robin Pokorny's article for an [in-depth explanation on the negative impacts of using an index as a key](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318). If you choose not to assign an explicit key to list items then React will default to using indexes as keys.
 
-Here is an [in-depth explanation about why keys are necessary](https://reactjs.org/docs/reconciliation.html#recursing-on-children) if you’re interested in learning more.
+Here is an [in-depth explanation about why keys are necessary](https://reactjs.org/docs/reconciliation.html#recursing-on-children) if you're interested in learning more.
 
 Keys only make sense in the context of the surrounding array.
 
@@ -199,7 +202,7 @@ A good rule of thumb is that elements inside the `map()` call need keys.
 
 ### [](https://reactjs.org/docs/lists-and-keys.html#keys-must-only-be-unique-among-siblings)Keys Must Only Be Unique Among Siblings
 
-Keys used within arrays should be unique among their siblings. However, they don’t need to be globally unique. We can use the same keys when we produce two different arrays:
+Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
 
 ```
 function Blog(props) {
@@ -233,7 +236,7 @@ ReactDOM.render(
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/NRZYGN?editors=0010)
 
-Keys serve as a hint to React but they don’t get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
+Keys serve as a hint to React but they don't get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
 
 ```
 const content = posts.map((post) =>
@@ -278,25 +281,25 @@ Sometimes this results in clearer code, but this style can also be abused. Like 
 So many times I have seen developers use the _index_ of an item as its _key_ when they render a list.
 
 todos.map((todo, index) => (  
-    <Todo {...todo} key={index} />  
-  ));  
+ <Todo {...todo} key={index} />  
+ ));  
 }
 
-It looks elegant and it does get rid of the warning (which was the ‘real’ issue, right?). What is the danger here?
+It looks elegant and it does get rid of the warning (which was the ‘real' issue, right?). What is the danger here?
 
 > It may break your application and display wrong data!
 
 Let me explain, a _key_ is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the _key_ is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.
 
-![](https://miro.medium.com/max/27/1*9N62zUlyJcQet8kr7e_FVg.png?q=20)
+![medium blog image](https://miro.medium.com/max/27/1*9N62zUlyJcQet8kr7e_FVg.png?q=20)
 
-![](https://miro.medium.com/max/630/1*9N62zUlyJcQet8kr7e_FVg.png)
+![medium blog image](https://miro.medium.com/max/630/1*9N62zUlyJcQet8kr7e_FVg.png)
 
 Stephen describes the problem he run into on [egghead.io](https://egghead.io/forums/lesson-discussion/topics/break-up-components-into-smaller-pieces-using-functional-components#post-6310)
 
 To demonstrate the potential danger I created [a simple example](https://jsbin.com/wohima/edit?output) ([with source](http://jsbin.com/wohima/edit?js,output)).
 
-![](https://miro.medium.com/max/630/1*GFYGPdDFLYcLFzx-E-GEcw.jpeg)
+![medium blog image](https://miro.medium.com/max/630/1*GFYGPdDFLYcLFzx-E-GEcw.jpeg)
 
 Screenshot of the example showing the danger of using the index as key.
 
@@ -307,19 +310,19 @@ It turns out, when nothing is passed React uses the _index_ as _key_ because it 
 Each such item should have a _permanent_ and _unique_ property. Ideally, it should be assigned when the item is created. Of course, I am speaking about an _id_. Then we can use it the following way:
 
 {  
-  todos.map((todo) => (  
-    <Todo {...todo} key={todo.id} />  
-  ));  
+ todos.map((todo) => (  
+ <Todo {...todo} key={todo.id} />  
+ ));  
 }
 
 > **Note:** First look at the existing properties of the items. It is possible they already have something that can be used as an _id_.
 
-One way to do so it to just move the numbering one step up in the abstraction. Using a global index makes sure any two items would have different _id_s.
+One way to do so it to just move the numbering one step up in the abstraction. Using a global index makes sure any two items would have different \_id_s.
 
 let todoCounter = 1;const createNewTodo = (text) => ({  
-  completed: false,  
-  id: todoCounter++,  
-  text  
+ completed: false,  
+ id: todoCounter++,  
+ text  
 }
 
 ## Much better
@@ -327,9 +330,9 @@ let todoCounter = 1;const createNewTodo = (text) => ({
 A production solution should use a more robust approach that would handle a distributed creation of items. For such, I recommend [nanoid](https://github.com/ai/nanoid/). It quickly generates short non-sequential url-friendly unique ids. The code could look like the following:
 
 import { nanoid } from 'nanoid';const createNewTodo = (text) => ({  
-  completed: false,  
-  id: nanoid(),  
-  text  
+ completed: false,  
+ id: nanoid(),  
+ text  
 }
 
 > **TL;DR:** Generate a unique _id_ for every item and use it as _key_ when rendering the list.
@@ -342,7 +345,7 @@ It is true that sometimes generating new ids is redundant and may be avoided. Fo
 
 To help you decide, I put together three conditions which these examples have in common:
 
-1.  the list and items are static–they are not computed and do not change;
+1.  the list and items are static-they are not computed and do not change;
 2.  the items in the list have no ids;
 3.  the list is _never_ reordered or filtered.
 

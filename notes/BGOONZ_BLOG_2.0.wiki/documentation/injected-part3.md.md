@@ -13,7 +13,8 @@ Inject analytics or other scripts into the HTML of your site.
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+</script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -37,10 +38,12 @@ Inject analytics or other scripts into the HTML of your site.
     addthis
 
     ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+</script>
     ```
 
     Remove
@@ -60,7 +63,17 @@ Inject analytics or other scripts into the HTML of your site.
     hit counter
 
     ```
-    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2"></div><script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async></script><br><a href="https://www.freecounterstat.com">page counter</a><noscript><a href="https://www.freecounterstat.com" title="page counter"><img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter"></a></noscript>
+    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2">
+</div>
+<script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async>
+</script>
+<br>
+<a href="https://www.freecounterstat.com">page counter</a>
+<noscript>
+<a href="https://www.freecounterstat.com" title="page counter">
+<img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter">
+</a>
+</noscript>
     ```
 
     Remove
@@ -73,7 +86,8 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'></a>";
+            echo "<a href='$url'>
+</a>";
           ?>
     ```
 
@@ -84,8 +98,15 @@ Inject analytics or other scripts into the HTML of your site.
     clock
 
     ```
-    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;"><p><a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a></p><div id="clock_block_cb6108ec1776002"></div></div>
-    <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;">
+<p>
+<a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a>
+</p>
+<div id="clock_block_cb6108ec1776002">
+</div>
+</div>
+    <script type="text/javascript" src="//w.24timezones.com/l.js" async>
+</script>
     ```
 
     Remove
@@ -96,7 +117,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -106,7 +128,7 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
-    <div id="search"></div>
+
     ```
 
     Remove
@@ -117,7 +139,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     ```
 
     Remove
@@ -128,7 +151,8 @@ Inject analytics or other scripts into the HTML of your site.
 
     ```
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+</script>
     <script type="text/javascript">
           algoliasearchNetlify({
             appId: "BAGY237H21",
@@ -138,7 +162,7 @@ Inject analytics or other scripts into the HTML of your site.
             selector: "div#search",
              });
         </script>
-    <div id="search"></div>
+
     ```
 
     Remove
@@ -177,6 +201,7 @@ Set up outgoing webhooks to notify other services about deploys for your site. [
 
 Add notification
 
+<<<<<<< HEAD
 -   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy starts
 
     Options
@@ -186,6 +211,17 @@ Add notification
     Options
 
 -   Post to https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify when deploy fails
+=======
+-   Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy starts
+
+    Options
+
+-   Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy succeeds
+
+    Options
+
+-   Post to <https://api.stackbit.com/project/609b2d7c71a5dd0016f36326/webhook/netlify> when deploy fails
+>>>>>>> b7125f1492d9a7af3a4bbfce41456b8babde644d
 
     Options
 
