@@ -47,6 +47,7 @@
         "react-html-parser": "2.0.2",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
+        "slugify": "^1.6.5",
         "sprintf-js": "1.1.2",
         "web-dev-utils": "^1.0.4"
     },
