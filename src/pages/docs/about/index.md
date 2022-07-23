@@ -42,6 +42,17 @@ template: docs
   
 <h4 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h4>
 
+
+
+
+
+
+
+<details>
+
+<summary>  See More </summary>   
+
+
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:570; height:420;">
 
 <details>
@@ -821,3 +832,5 @@ function longestCommonPrefix(strs) {
 </details>
 
 </center>
+
+</details>

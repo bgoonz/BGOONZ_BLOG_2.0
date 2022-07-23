@@ -17,7 +17,7 @@ export default class Page extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-                <article className="post post-full">
+                <article className="post post-full" itemtype="https://schema.org/WebPage">
                     <header className="post-header has-gradient outer">
                         {_.get(this.props, 'pageContext.frontmatter.image', null) && (
                             <div
