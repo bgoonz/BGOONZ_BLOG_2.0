@@ -106,8 +106,8 @@ export default class Blog extends React.Component {
                             } </article>
                         ))
                     } </div>
-                    <div className="gcse-search"/>
                 </div>
+                <div className="gcse-search"></div>
             </Layout>
         );
     }
