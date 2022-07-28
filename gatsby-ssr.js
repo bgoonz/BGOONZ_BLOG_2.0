@@ -23,6 +23,7 @@ exports.onRenderBody = function({
         <React.Fragment>
              <script src={withPrefix('js/main.js')}/>
              <script src={withPrefix('js/page-load.js')}/>
+             <script src={withPrefix('js/search-create.js')}/>
              <script src={withPrefix('js/page-unload.js')}/>
              <script src={withPrefix('js/plugins.js')}/>
              <script src={withPrefix('js/prism.js')}/>
