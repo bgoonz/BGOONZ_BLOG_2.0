@@ -1,3 +1,0 @@
-Pick a color:
-
-Submit

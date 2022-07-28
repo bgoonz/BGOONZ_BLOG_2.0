@@ -1,1 +1,0 @@
--- Please choose one or more -- Dog Cat Hamster Parrot Macaw Albatross

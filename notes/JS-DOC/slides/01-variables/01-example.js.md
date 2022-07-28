@@ -1,3 +1,0 @@
-// Create variable
-
-// log(foo);

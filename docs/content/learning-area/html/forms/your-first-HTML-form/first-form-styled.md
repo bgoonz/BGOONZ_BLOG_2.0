@@ -1,4 +1,0 @@
--   Name:
--   E-mail:
--   Message:
--   Send your message

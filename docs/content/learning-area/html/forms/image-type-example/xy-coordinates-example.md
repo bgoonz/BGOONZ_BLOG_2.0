@@ -1,1 +1,0 @@
-Choose your favourite color

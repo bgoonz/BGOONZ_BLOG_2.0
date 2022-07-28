@@ -1,3 +1,0 @@
--   User ID
--   Password
--   

@@ -1,1 +1,0 @@
-Rounded corners are groovy!

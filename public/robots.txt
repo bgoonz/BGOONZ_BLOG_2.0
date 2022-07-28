@@ -1,3 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: /https://master--trusting-dijkstra-4d3b17.netlify.app/

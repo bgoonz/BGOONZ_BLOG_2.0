@@ -1,5 +1,0 @@
--   [Home](#)
--   [Pizza](#)
--   [Music](#)
--   [Wombats](#)
--   [Finland](#)
