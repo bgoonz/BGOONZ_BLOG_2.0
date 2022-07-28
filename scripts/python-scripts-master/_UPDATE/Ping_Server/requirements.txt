@@ -1,3 +1,0 @@
-Telethon
-twilio
-requests
