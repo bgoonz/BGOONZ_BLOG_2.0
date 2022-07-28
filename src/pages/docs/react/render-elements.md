@@ -4,19 +4,13 @@ title: Rendering Elements With React
 weight: 0
 
 excerpt: lorem-ipsum
-
 seo:
     title: ''
-
     description: ''
-
     robots: []
-
     extra: []
-
 template: docs
 ---
-
 
 # Rendering Elements&#xA;&#xA;
 
@@ -74,7 +68,7 @@ React DOM compares the element and its children to the previous one, and only ap
 
 You can verify by inspecting the [last example](https://reactjs.org/redirect-to-codepen/rendering-elements/update-rendered-element) with the browser tools:
 
-![](https://reactjs.org/c158617ed7cc0eac8f58330e49e48224/granular-dom-updates.gif)
+![alt-text](https://reactjs.org/c158617ed7cc0eac8f58330e49e48224/granular-dom-updates.gif)
 
 Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
 

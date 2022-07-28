@@ -32,7 +32,102 @@ A `Map` object iterates its elements in insertion order — a [`for...of`](../st
 
 However, there are important differences that make `Map` preferable in certain cases:
 
-<table><colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" /></colgroup><thead><tr class="header"><th></th><th>Map</th><th>Object</th></tr></thead><tbody><tr class="odd"><td>Accidental Keys</td><td>A <code>Map</code> does not contain any keys by default. It only contains what is explicitly put into it.</td><td><p>An <code>Object</code> has a prototype, so it contains default keys that could collide with your own keys if you're not careful.</p><div class="notecard note"><p><strong>Note:</strong> As of ES5, this can be bypassed by using <a href="object/create"><code>Object.create(null)</code></a>, but this is seldom done.</p></div></td></tr><tr class="even"><td>Key Types</td><td>A <code>Map</code>'s keys can be any value (including functions, objects, or any primitive).</td><td>The keys of an <code>Object</code> must be either a <a href="string"><code>String</code></a> or a <a href="symbol"><code>Symbol</code></a>.</td></tr><tr class="odd"><td>Key Order</td><td><p>The keys in <code>Map</code> are ordered in a simple, straightforward way: A <code>Map</code> object iterates entries, keys, and values in the order of entry insertion.</p></td><td><p>Although the keys of an ordinary <code>Object</code> are ordered now, this was not always the case, and the order is complex. As a result, it's best not to rely on property order.</p><p>The order was first defined for own properties only in ECMAScript 2015; ECMAScript 2020 defines order for inherited properties as well. See the <a href="https://tc39.es/ecma262/#sec-ordinaryownpropertykeys">OrdinaryOwnPropertyKeys</a> and <a href="https://tc39.es/ecma262/#sec-enumerate-object-properties">EnumerateObjectProperties</a> abstract specification operations. But note that no single mechanism iterates <strong>all</strong> of an object's properties; the various mechanisms each include different subsets of properties. (<a href="../statements/for...in"><code>for-in</code></a> includes only enumerable string-keyed properties; <a href="object/keys"><code>Object.keys</code></a> includes only own, enumerable, string-keyed properties; <a href="object/getownpropertynames"><code>Object.getOwnPropertyNames</code></a> includes own, string-keyed properties even if non-enumerable; <a href="object/getownpropertysymbols"><code>Object.getOwnPropertySymbols</code></a> does the same for just <code>Symbol</code>-keyed properties, etc.)</p></td></tr><tr class="even"><td><p>Size</p></td><td>The number of items in a <code>Map</code> is easily retrieved from its <a href="map/size"><code>size</code></a> property.</td><td>The number of items in an <code>Object</code> must be determined manually.</td></tr><tr class="odd"><td>Iteration</td><td>A <code>Map</code> is an <a href="../iteration_protocols">iterable</a>, so it can be directly iterated.</td><td><p><code>Object</code> does not implement an <a href="../iteration_protocols#the_iterable_protocol">iteration protocol</a>, and so objects are not directly iterable using the JavaScript <a href="../statements/for...of">for...of</a> statement (by default).</p><div class="notecard note"><p><strong>Note:</strong></p><ul><li>An object can implement the iteration protocol, or you can get an iterable for an object using <a href="object/keys"><code>Object.keys</code></a> or <a href="object/entries"><code>Object.entries</code></a>.</li><li>The <a href="../statements/for...in">for...in</a> statement allows you to iterate over the <em>enumerable</em> properties of an object.</li></ul></div></td></tr><tr class="even"><td>Performance</td><td><p>Performs better in scenarios involving frequent additions and removals of key-value pairs.</p></td><td><p>Not optimized for frequent additions and removals of key-value pairs.</p></td></tr></tbody></table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+</th>
+<th>Map</th>
+<th>Object</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accidental Keys</td>
+<td>A <code>Map</code> does not contain any keys by default. It only contains what is explicitly put into it.</td>
+<td>
+<p>An <code>Object</code> has a prototype, so it contains default keys that could collide with your own keys if you're not careful.</p>
+<div class="notecard note">
+<p>
+<strong>Note:</strong> As of ES5, this can be bypassed by using <a href="object/create">
+<code>Object.create(null)</code>
+</a>, but this is seldom done.</p>
+</div>
+</td>
+</tr>
+<tr class="even">
+<td>Key Types</td>
+<td>A <code>Map</code>'s keys can be any value (including functions, objects, or any primitive).</td>
+<td>The keys of an <code>Object</code> must be either a <a href="string">
+<code>String</code>
+</a> or a <a href="symbol">
+<code>Symbol</code>
+</a>.</td>
+</tr>
+<tr class="odd">
+<td>Key Order</td>
+<td>
+<p>The keys in <code>Map</code> are ordered in a simple, straightforward way: A <code>Map</code> object iterates entries, keys, and values in the order of entry insertion.</p>
+</td>
+<td>
+<p>Although the keys of an ordinary <code>Object</code> are ordered now, this was not always the case, and the order is complex. As a result, it's best not to rely on property order.</p>
+<p>The order was first defined for own properties only in ECMAScript 2015; ECMAScript 2020 defines order for inherited properties as well. See the <a href="https://tc39.es/ecma262/#sec-ordinaryownpropertykeys">OrdinaryOwnPropertyKeys</a> and <a href="https://tc39.es/ecma262/#sec-enumerate-object-properties">EnumerateObjectProperties</a> abstract specification operations. But note that no single mechanism iterates <strong>all</strong> of an object's properties; the various mechanisms each include different subsets of properties. (<a href="../statements/for...in">
+<code>for-in</code>
+</a> includes only enumerable string-keyed properties; <a href="object/keys">
+<code>Object.keys</code>
+</a> includes only own, enumerable, string-keyed properties; <a href="object/getownpropertynames">
+<code>Object.getOwnPropertyNames</code>
+</a> includes own, string-keyed properties even if non-enumerable; <a href="object/getownpropertysymbols">
+<code>Object.getOwnPropertySymbols</code>
+</a> does the same for just <code>Symbol</code>-keyed properties, etc.)</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>Size</p>
+</td>
+<td>The number of items in a <code>Map</code> is easily retrieved from its <a href="map/size">
+<code>size</code>
+</a> property.</td>
+<td>The number of items in an <code>Object</code> must be determined manually.</td>
+</tr>
+<tr class="odd">
+<td>Iteration</td>
+<td>A <code>Map</code> is an <a href="../iteration_protocols">iterable</a>, so it can be directly iterated.</td>
+<td>
+<p>
+<code>Object</code> does not implement an <a href="../iteration_protocols#the_iterable_protocol">iteration protocol</a>, and so objects are not directly iterable using the JavaScript <a href="../statements/for...of">for...of</a> statement (by default).</p>
+<div class="notecard note">
+<p>
+<strong>Note:</strong>
+</p>
+<ul>
+<li>An object can implement the iteration protocol, or you can get an iterable for an object using <a href="object/keys">
+<code>Object.keys</code>
+</a> or <a href="object/entries">
+<code>Object.entries</code>
+</a>.</li>
+<li>The <a href="../statements/for...in">for...in</a> statement allows you to iterate over the <em>enumerable</em> properties of an object.</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr class="even">
+<td>Performance</td>
+<td>
+<p>Performs better in scenarios involving frequent additions and removals of key-value pairs.</p>
+</td>
+<td>
+<p>Not optimized for frequent additions and removals of key-value pairs.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Setting object properties
 

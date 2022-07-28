@@ -1,6 +1,5 @@
 [build]
 publish = "public"
-	functions = "./functions"
 command = "npm run build"
-  [[plugins]]
-  package = "@netlify/plugin-gatsby"
+[build.environment]
+  NODE_OPTIONS = "--max_old_space_size=8192"

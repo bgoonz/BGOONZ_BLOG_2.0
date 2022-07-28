@@ -11,7 +11,90 @@ template: docs
 ---
 
 
-# Introducing JSX&#xA;&#xA;
+# Introducing JSX
+
+
+###### JSX is an XML/HTML-like syntax used by React that extends ECMAScript so that XML/HTML-like text can co-exist with JavaScript/React code. The syntax is intended to be used by preprocessors (i.e., transpilers like Babel) to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.
+
+**Basically, by using JSX you can write concise HTML/XML-like structures (e.g., DOM like tree structures) in the same file as you write JavaScript code, then Babel will transform these expressions into actual JavaScript code. Unlike the past, instead of putting JavaScript into HTML, JSX allows us to put HTML into JavaScript.**
+
+By using JSX one can write the following JSX/JavaScript code:
+
+```js
+//
+const nav = (
+    <ul id="nav">
+      <li>
+<a href="#">Home</a>
+</li>
+      <li>
+<a href="#">About</a>
+</li>
+      <li>
+<a href="#">Clients</a>
+</li>
+      <li>
+<a href="#">Contact Us</a>
+</li>
+    </ul>
+);
+
+```
+
+And Babel will transform it into this:
+
+```js
+//
+const nav = React.createElement(
+   "ul",
+   { id: "nav" },
+   React.createElement(
+      "li",
+      null,
+      React.createElement(
+         "a",
+         { href: "#" },
+         "Home"
+      )
+   ),
+   React.createElement(
+      "li",
+      null,
+      React.createElement(
+         "a",
+         { href: "#" },
+         "About"
+      )
+   ),
+   React.createElement(
+      "li",
+      null,
+      React.createElement(
+         "a",
+         { href: "#" },
+         "Clients"
+      )
+   ),
+   React.createElement(
+      "li",
+      null,
+      React.createElement(
+         "a",
+         { href: "#" },
+         "Contact Us"
+      )
+   )
+);
+
+```
+
+You can think of JSX as a shorthand for calling `React.createElement()`.
+
+The idea of mixing HTML and JavaScript in the same file can be a rather contentious topic. Ignore the debate. Use it if you find it helpful. If not, write the React code required to create React nodes. Your choice. My opinion is that JSX provides a concise and familiar syntax for defining a tree structure with attributes that does not require learning a templating language or leaving JavaScript. Both of which are can be a win when building large applications.
+
+It should be obvious but JSX is easier to read and write over large pyramids of JavaScript function calls or object literals (e.g., contrast the two code samples in this section). Additionally the React team clearly believes JSX is better suited for defining UI's than a traditional templating (e.g., Handlebars) solution:
+
+> markup and the code that generates it are intimately tied together. Additionally, display logic is often very complex and using template languages to express it becomes cumbersome. We've found that the best solution for this problem is to generate HTML and component trees directly from the JavaScript code such that you can use all of the expressive power of a real programming language to build UIs.
 
 Consider this variable declaration:
 

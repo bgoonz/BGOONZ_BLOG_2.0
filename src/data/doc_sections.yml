@@ -3,29 +3,28 @@ sections:
     - about
     - articles
     - audio
-    - archive
     - career
     - community
     - content
+    - cheatsheet
     - css
-    - ds-algo
     - docs
-    - e-eng
+    - ds-algo🖧
     - faq
+    - fetch-api
     - git
-    - glossary
+    - index.md
     - interact
+    - interview
     - javascript
     - js-tips
-    - interview
     - leetcode
     - overflow
-    - netlify-cms
     - projects
     - python
     - quick-ref
     - react
     - reference
     - tools
-    - tips
     - tutorials
+    - typescript

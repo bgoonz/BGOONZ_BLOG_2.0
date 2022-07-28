@@ -1,7 +1,10 @@
-import _ from 'lodash';
+/* This class is a React component that renders a link to a URL, with optional styling and attributes. */
 import React from 'react';
-import { classNames, Link, withPrefix } from '../utils';
+import _ from 'lodash';
+
+import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
+
 export default class ActionLink extends React.Component {
     render() {
         let action = _.get(this.props, 'action', null);
