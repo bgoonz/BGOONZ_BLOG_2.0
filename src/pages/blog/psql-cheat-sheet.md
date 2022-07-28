@@ -4,20 +4,17 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
-image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
-thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
-image_position: right
-author: src/data/authors/bgoonz.yaml
+image: /blog/psql.jpg
+thumb_image: /blog/psql-schema.jpg
+image_position: top
+author: src/data/authors/bgoon.yaml
 categories:
   - src/data/categories/db.yaml
 tags:
   - src/data/tags/psql.yaml
 show_author_bio: true
-related_posts:
-    - src/pages/blog/psql-cheat-sheet.md
 cmseditable: true
 ---
-
 # 💻 PSQL💻
 
 > source
@@ -26,7 +23,7 @@ cmseditable: true
 
 ### Login to postgresql
 
-```sql
+```plpgsql
 psql -U postgres
 psql -d mydb -U myuser -W
 psql -h myhost -d mydb -U myuser -W
@@ -35,7 +32,7 @@ psql -U myuser -h myhost "dbname=mydb sslmode=require" # ssl connection
 
 ### Default Admin Login
 
-```bash
+```sh
 sudo -u postgres psql -U postgres
 sudo -u postgres psql
 ```
@@ -44,7 +41,7 @@ sudo -u postgres psql
 
 ### Determine system tables
 
-```bash
+```sh
 select * from pg_tables where tableowner = 'postgres';
 ```
 
@@ -60,7 +57,7 @@ select * from pg_tables where tableowner = 'postgres';
 
 ### Reset a user password as admin
 
-```bash
+```sh
 alter user usertochange with password 'new_passwd';
 ```
 
@@ -72,25 +69,25 @@ alter user usertochange with password 'new_passwd';
 
 ### Load data into postgresql
 
-```bash
+```sh
 psql -W -U username -H hostname < file.sql
 ```
 
 ### Dump (Backup) Data into file
 
-```bash
+```sh
 pg_dump -W -U username -h hostname database_name > file.sql
 ```
 
 ### Increment a sequence
 
-```bash
+```sh
 SELECT nextval('my_id_seq');
 ```
 
 ### Create new user
 
-```bash
+```sh
 CREATE USER lemmy WITH PASSWORD 'myPassword';
 # or
 
@@ -99,19 +96,19 @@ sudo -u postgres createuser lemmy -W
 
 ### Change user password
 
-```bash
+```sh
 ALTER USER Postgres WITH PASSWORD 'mypass';
 ```
 
 ### Grant user createdb privilege
 
-```bash
+```sh
 ALTER USER myuser WITH createdb;
 ```
 
 ### Create a superuser user
 
-```bash
+```sh
 create user mysuper with password '1234' SUPERUSER
 # or even better
 create user mysuper with password '1234' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION;
@@ -121,7 +118,7 @@ sudo -u postgres createuser lemmy -W -s
 
 ### Upgrade an existing user to superuser
 
-```bash
+```sh
 alter user mysuper with superuser;
 # or even better
 alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
@@ -131,19 +128,19 @@ alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
 ### Change Database Owner
 
-```bash
+```sh
 alter database database_name owner to new_owner;
 ```
 
 ### Copy a database
 
-```bash
+```sh
 CREATE DATABASE newdb WITH TEMPLATE originaldb;
 ```
 
 ### View Database Connections
 
-```bash
+```sh
 SELECT * FROM pg_stat_activity;
 ```
 
@@ -151,14 +148,14 @@ SELECT * FROM pg_stat_activity;
 
 ### Show run-time parameters
 
-```bash
+```sh
 show all;
 select * from pg_settings;
 ```
 
 ### Show the block size setting
 
-```bash
+```sh
 # show block_size;
  block_size
 ------------
@@ -168,13 +165,13 @@ select * from pg_settings;
 
 ### Show stored procedure source
 
-```bash
+```sh
 SELECT prosrc FROM pg_proc WHERE proname = 'procname'
 ```
 
 ### Grant examples
 
-```sql
+```plpgsql
 # readonly to all tables for myuser
 grant select on all tables in schema public to myuser;
 # all privileges on table1 and table2 to myuser
@@ -183,7 +180,7 @@ grant all privileges on table1, table2, table3 to myuser;
 
 ### Restore Postgres .dump file
 
-```sql
+```plpgsql
 pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump
 ```
 
@@ -193,7 +190,7 @@ pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb 
 
 Source: <http://stackoverflow.com/questions/5408156/how-to-drop-a-postgresql-database-if-there-are-active-connections-to-it>
 
-```sql
+```plpgsql
 # Postgres 9.6 and above
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
@@ -209,7 +206,7 @@ AND procpid <> pg_backend_pid();
 
 ## Handy Queries
 
-```sql
+```plpgsql
 -- List procedure/function
 SELECT * FROM pg_proc WHERE proname='__procedurename__';
 
@@ -261,7 +258,7 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
-```bash
+```sh
 -- See the query plan for the given query
 EXPLAIN __query__
 
@@ -276,7 +273,7 @@ ANALYZE [__table__]
 
 ### From a Single Table
 
-```bash
+```sh
 -- Query data in columns c1, c2 from a table
 SELECT c1, c2 FROM t;
 
@@ -310,7 +307,7 @@ HAVING condition;
 
 ### From Multiple Tables
 
-```sql
+```plpgsql
 -- Inner join t1 and t2
 SELECT c1, c2
 FROM t1
@@ -352,7 +349,7 @@ INNER JOIN t2 B ON condition
 
 ### Using SQL Operators
 
-```sql
+```plpgsql
 -- Combine rows from two queries
 SELECT c1, c2 FROM t1
 UNION [ALL]
@@ -391,6 +388,6 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
-- [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-- [PostgreSQL Exercises](https://pgexercises.com)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+* [PostgreSQL Exercises](https://pgexercises.com)
+* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
