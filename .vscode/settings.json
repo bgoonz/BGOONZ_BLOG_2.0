@@ -1,0 +1,13 @@
+{
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "docwriter.style": "JSDoc"
+}
+=======
+      "makefile.extensionOutputFolder": "./.vscode"
+}
+>>>>>>> 9ea7661897a3ed46abf375d7cac8d77a135e3eff
+=======
+      "makefile.extensionOutputFolder": "./.vscode"
+}
+>>>>>>> 6dfa99e5feb38828b28f5ad21a50f2d517e56247
