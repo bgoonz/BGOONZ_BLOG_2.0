@@ -21,7 +21,8 @@ exports.handler = async function(event, context) {
     }
 }
 accessToken: event.netlifyGraphToken
-})
+
+
 
 return {
     statusCode: errors ? 500 : 200,
@@ -30,4 +31,4 @@ return {
         "Content-Type": "application/json"
     }
 }
-}
+//# sourceMappingURL=netlify-graph.js.map

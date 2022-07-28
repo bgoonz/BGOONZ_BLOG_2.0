@@ -174,7 +174,7 @@ const httpFetch = (siteId, options) => {
         'Content-Length': reqBody.length
     };
 
-    const timeoutMs = 30 _000;
+    const timeoutMs = 30;
 
     const reqOptions = {
         method: 'POST',
