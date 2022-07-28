@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Promise.any()
 
 `Promise.any()` takes an iterable of [`Promise`](../promise) objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise. If no promises in the iterable fulfill (if all of the given promises are rejected), then the returned promise is rejected with an [`AggregateError`](../aggregateerror), a new subclass of [`Error`](../error) that groups together individual errors. Essentially, this method is the opposite of [`Promise.all()`](all).

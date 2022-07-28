@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # for
 
 The **for statement** creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a [block statement](block)) to be executed in the loop.
@@ -51,6 +52,7 @@ All three expressions in the head of the `for` loop are optional.
 For example, in the `initialization` block it is not required to initialize variables:
 
 ```js
+//
 var i = 0;
 for (; i < 9; i++) {
     console.log(i);
@@ -61,6 +63,7 @@ for (; i < 9; i++) {
 Like the `initialization` block, the `condition` block is also optional. If you are omitting this expression, you must make sure to break the loop in the body in order to not create an infinite loop.
 
 ```js
+//
 for (let i = 0; ; i++) {
     console.log(i);
     if (i > 3) break;
@@ -71,6 +74,7 @@ for (let i = 0; ; i++) {
 You can also omit all three blocks. Again, make sure to use a [`break`](break) statement to end the loop and also modify (increase) a variable, so that the condition for the break statement is true at some point.
 
 ```js
+//
 var i = 0;
 
 for (;;) {
@@ -88,6 +92,7 @@ The following `for` cycle calculates the offset position of a node in the `final
 
 
 ```js
+//
 
 
 function showOffsetPos(sId) {
@@ -171,6 +176,7 @@ It may be most practically used for debugging purposes, being an easy way to che
 The `for...in` loop below iterates over all of the object's enumerable, non-Symbol properties and logs a string of the property names and their values.
 
 ```js
+//
 var obj = { a: 1, b: 2, c: 3 };
 
 for (const prop in obj) {
@@ -188,6 +194,7 @@ for (const prop in obj) {
 The following function illustrates the use of [`hasOwnProperty()`](../global_objects/object/hasownproperty): the inherited properties are not displayed.
 
 ```js
+//
 var triangle = { a: 1, b: 2, c: 3 };
 
 function ColoredTriangle() {
@@ -237,6 +244,7 @@ Object whose iterable properties are to be iterated over.
 You can also iterate over an object that explicitly implements async iterable protocol:
 
 ```js
+//
 const asyncIterable = {
     [Symbol.asyncIterator]() {
         return {
@@ -268,6 +276,7 @@ const asyncIterable = {
 Since the return values of async generators conform to the async iterable protocol, they can be looped using `for await...of`.
 
 ```js
+//
 async function* asyncGenerator() {
     let i = 0;
     while (i < 3) {
@@ -290,6 +299,7 @@ For a more concrete example of iterating over an async generator using `for awai
 This example first creates an async iterable for a stream of data, then uses it to find the size of the response from the API.
 
 ```js
+//
 async function* streamAsyncIterable(stream) {
     const reader = stream.getReader();
     try {
@@ -330,6 +340,7 @@ getResponseSize('https://jsonplaceholder.typicode.com/photos');
 
 
 ```js
+//
 
 
 function* generator() {
@@ -369,6 +380,7 @@ for (let numOrPromise of generator()) {
 
 
 ```js
+//
 
 
 function* generatorWithRejectedPromises() {
@@ -419,6 +431,7 @@ try {
 To make `finally` blocks of a sync generator to be always called use appropriate form of the loop, `for await...of` for the async generator and `for...of` for the sync one and await yielded promises explicitly inside the loop.
 
 ```js
+//
 (async function () {
     try {
         for (let numOrPromise of generatorWithRejectedPromises()) {
