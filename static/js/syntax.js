@@ -1,7 +1,8 @@
 /* It's a styled component that is used to style the code blocks. */
-import { createGlobalStyle } from 'styled-components';
-const langTagColor = [
-    {
+import {
+    createGlobalStyle
+} from 'styled-components';
+const langTagColor = [{
         lang: `javascript`,
         tag: `js`,
         color: `#f7df1e`
@@ -108,12 +109,16 @@ const langTagColor = [
     }
 ];
 const languageTags = langTagColor.map(
-    ({ lang, tag, color }) => `pre.grvsc-container[data-language="${lang}"]::before {
+    ({
+        lang,
+        tag,
+        color
+    }) => `pre.grvsc-container[data-language="${lang}"]::before {
         content: '${tag}';
         background: ${color};
       }`
 );
-export default createGlobalStyle`
+export default createGlobalStyle `
   ${languageTags.join(`\n`)}
   pre.grvsc-container {
     position: relative;
