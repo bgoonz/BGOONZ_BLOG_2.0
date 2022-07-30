@@ -1,5 +1,9 @@
+
 [build]
-publish = "public"
-command = "npm run build"
+  publish = "public"
+  command = "npm run build"
+  functions = "lambda"
 [build.environment]
-  NODE_OPTIONS = "--max_old_space_size=8192"
+  NODE_VERSION = "12.22.3"
+  YARN_VERSION = "1.22.4"
+  YARN_FLAGS = "--no-ignore-optional"

@@ -1,6 +1,5 @@
 import _ from 'lodash';
 import React from 'react';
-
 export default class Icon extends React.Component {
     render() {
         let icon = _.get(this.props, 'icon', null);
