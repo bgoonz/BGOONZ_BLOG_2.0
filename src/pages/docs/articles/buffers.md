@@ -50,7 +50,6 @@ A simple visualization of a buffer is when you are watching a YouTube video and 
 A buffer is created using the [`Buffer.from()`](https://nodejs.org/api/buffer.html#buffer_buffer_from_buffer_alloc_and_buffer_allocunsafe), [`Buffer.alloc()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_alloc_size_fill_encoding), and [`Buffer.allocUnsafe()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_allocunsafe_size) methods.
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 ```
 
@@ -62,7 +61,6 @@ const buf = Buffer.from('Hey!');
 You can also just initialize the buffer passing the size. This creates a 1KB buffer:
 
 ```js
-//
 const buf = Buffer.alloc(1024);
 //or
 const buf = Buffer.allocUnsafe(1024);
@@ -79,7 +77,6 @@ Older data, if present in the memory, can be accessed or leaked when the `Buffer
 A buffer, being an array of bytes, can be accessed like an array:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 console.log(buf[0]); //72
 console.log(buf[1]); //101
@@ -91,7 +88,6 @@ Those numbers are the Unicode Code that identifies the character in the buffer p
 You can print the full content of the buffer using the `toString()` method:
 
 ```js
-//
 console.log(buf.toString());
 ```
 
@@ -102,7 +98,6 @@ console.log(buf.toString());
 Use the `length` property:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 console.log(buf.length);
 ```
@@ -110,7 +105,6 @@ console.log(buf.length);
 ### Iterate over the contents of a buffer
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 for (const item of buf) {
     console.log(item); //72 101 121 33
@@ -122,7 +116,6 @@ for (const item of buf) {
 You can write to a buffer a whole string of data by using the `write()` method:
 
 ```js
-//
 const buf = Buffer.alloc(4);
 buf.write('Hey!');
 ```
@@ -130,7 +123,6 @@ buf.write('Hey!');
 Just like you can access a buffer with an array syntax, you can also set the contents of the buffer in the same way:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 buf[1] = 111; //o
 console.log(buf.toString()); //Hoy!
@@ -141,7 +133,6 @@ console.log(buf.toString()); //Hoy!
 Copying a buffer is possible using the `copy()` method:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 let bufcopy = Buffer.alloc(4); //allocate 4 bytes
 buf.copy(bufcopy);
@@ -150,7 +141,6 @@ buf.copy(bufcopy);
 By default you copy the whole buffer. 3 more parameters let you define the starting position, the ending position, and the new buffer length:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 let bufcopy = Buffer.alloc(2); //allocate 2 bytes
 buf.copy(bufcopy, 0, 0, 2);
@@ -164,7 +154,6 @@ If you want to create a partial visualization of a buffer, you can create a slic
 Use the `slice()` method to create it. The first parameter is the starting position, and you can specify an optional second parameter with the end position:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 buf.slice(0).toString(); //Hey!
 const slice = buf.slice(0, 2);

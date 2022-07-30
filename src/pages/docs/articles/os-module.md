@@ -14,7 +14,6 @@ template: docs
 # This module provides many functions that you can use to retrieve information from the underlying operating system and the computer the program runs on, and interact with it.
 
 ```js
-//
 const os = require('os');
 ```
 
@@ -41,7 +40,6 @@ Return information on the CPUs available on your system.
 Example:
 
 ```js
-//
 [
     {
         model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
@@ -83,7 +81,6 @@ Return the path to the home directory of the current user.
 Example:
 
 ```js
-//
 '/Users/joe';
 ```
 
@@ -100,7 +97,6 @@ It only returns a meaningful value on Linux and macOS.
 Example:
 
 ```js
-//
 [3.68798828125, 4.00244140625, 11.1181640625];
 ```
 
@@ -111,7 +107,6 @@ Returns the details of the network interfaces available on your system.
 Example:
 
 ```js
-//
 { lo0:
    [ { address: '127.0.0.1',
        netmask: '255.0.0.0',
