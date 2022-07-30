@@ -204,7 +204,6 @@ If the index of any element in the array is `i`, the element in the index `2i+1`
 Thus we can create the binary heap using an array rather than using a tree.
 
 ```js
-//
 function BinaryHeap(){
   let list = [];
   
@@ -510,7 +509,6 @@ ___
 ## Binary heap with Min-Heap
 
 ```js
-//
 function BinaryHeap(){
   let list = [];
   
@@ -608,7 +606,6 @@ function BinaryHeap(){
 ```
 
 ```js
-//
 Input:
 const heap = new BinaryHeap();
 heap.insert(3);
@@ -636,7 +633,6 @@ ___
 ## Class based implementation of binary heap in javascript
 
 ```js
-//
 class BinaryHeap{
   constructor(){
     this.list = [];
