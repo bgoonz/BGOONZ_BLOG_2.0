@@ -1,48 +1,48 @@
     const makeid = length => {
-        let text = ""
-        const possible = "ABCDEFGHIJKLMNPQRSTUVWXYZ0123456789"
+        let text = "";
+        const possible = "ABCDEFGHIJKLMNPQRSTUVWXYZ0123456789";
         for (let i = 0; i < length; i += 1) {
-            text += possible.charAt(Math.floor(Math.random() * possible.length))
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
         }
-        return text
-    }
+        return text;
+    };
 
     const buildMetadataFromHeaders = headers => {
-        const responseMetadata = {}
+        const responseMetadata = {};
         Array.from(headers).forEach(([key, value]) => {
-            responseMetadata[key.replace(/-/g, "_")] = value
-        })
-        return responseMetadata
-    }
+            responseMetadata[key.replace(/-/g, "_")] = value;
+        });
+        return responseMetadata;
+    };
 
-    const WORKER_ID = makeid(6)
+    const WORKER_ID = makeid(6);
 
     async function handleRequest(event) {
         const {
             request
         } = event;
-        const rMeth = request.method
-        const rUrl = request.url
-        const uAgent = request.headers.get("user-agent")
-        const rHost = request.headers.get("host")
-        const cfRay = request.headers.get("cf-ray")
-        const cIP = request.headers.get("cf-connecting-ip")
-        const rCf = request.cf
+        const rMeth = request.method;
+        const rUrl = request.url;
+        const uAgent = request.headers.get("user-agent");
+        const rHost = request.headers.get("host");
+        const cfRay = request.headers.get("cf-ray");
+        const cIP = request.headers.get("cf-connecting-ip");
+        const rCf = request.cf;
 
-        const requestMetadata = buildMetadataFromHeaders(request.headers)
+        const requestMetadata = buildMetadataFromHeaders(request.headers);
 
-        const sourceKey = "40138754-d2db-45f6-aaf3-0df5ff2803d4"
-        const apiKey = "j1gcjTVjARrc"
+        const sourceKey = "40138754-d2db-45f6-aaf3-0df5ff2803d4";
+        const apiKey = "j1gcjTVjARrc";
 
-        const t1 = Date.now()
-        const response = await fetch(request)
-        const originTimeMs = Date.now() - t1
+        const t1 = Date.now();
+        const response = await fetch(request);
+        const originTimeMs = Date.now() - t1;
 
-        const statusCode = response.status
+        const statusCode = response.status;
 
-        const responseMetadata = buildMetadataFromHeaders(response.headers)
+        const responseMetadata = buildMetadataFromHeaders(response.headers);
 
-        const logEntry = `${rMeth} | ${statusCode} | ${cIP} | ${cfRay} | ${rUrl} | ${uAgent}`
+        const logEntry = `${rMeth} | ${statusCode} | ${cIP} | ${cfRay} | ${rUrl} | ${uAgent}`;
 
         const logflareEventBody = {
             source: sourceKey,
@@ -63,7 +63,7 @@
                     worker_id: WORKER_ID,
                 },
             },
-        }
+        };
 
         const init = {
             method: "POST",
@@ -73,15 +73,15 @@
                 "User-Agent": `Cloudflare Worker via ${rHost}`
             },
             body: JSON.stringify(logflareEventBody),
-        }
+        };
 
-        event.waitUntil(fetch("https://api.logflare.app/api/logs", init))
+        event.waitUntil(fetch("https://api.logflare.app/api/logs", init));
 
-        return response
+        return response;
     }
 
     addEventListener("fetch", event => {
-        event.passThroughOnException()
+        event.passThroughOnException();
 
-        event.respondWith(handleRequest(event))
-    })
+        event.respondWith(handleRequest(event));
+    });
