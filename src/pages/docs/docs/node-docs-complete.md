@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # How to use the Node.js REPL
 
 description: "REPL stands for Read-Evaluate-Print-Loop, and it's a great way to explore the Node.js features in a quick way"
@@ -52,7 +53,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 
 Start simple and enter
 
-```bash
+```console
 
 > console.log('test')
 
@@ -96,26 +97,25 @@ If after some code you type `_`, that is going to print the result of the last o
 
 The REPL has some special commands, all starting with a dot `.`. They are
 
--   `.help`: shows the dot commands help
--
--   `.editor`: enables editor mode, to write multiline JavaScript code with ease. Once you are in this mode, enter ctrl-D to run the c
--
--   `.break`: when inputting a multi-line expression, entering the .break command
--
--   `.clear`: resets the REPL context to an empty object and clears any multi-line expression currently being input.
+- `.help`: shows the dot commands help
+- 
+- `.editor`: enables editor mode, to write multiline JavaScript code with ease. Once you are in this mode, enter ctrl-D to run the c
+- 
+- `.break`: when inputting a multi-line expression, entering the .break command
+- 
+- `.clear`: resets the REPL context to an empty object and clears any multi-line expression currently being input.
 
--   `.load`: loads a JavaScript file, relative to the current working directory
+- `.load`: loads a JavaScript file, relative to the current working directory
 
--   `.save`: saves all you entered in the REPL session to a file (specify the filename)
+- `.save`: saves all you entered in the REPL session to a file (specify the filename)
 
--   `.exit`: exits the repl (same as pressing ctrl-C two times)
+- `.exit`: exits the repl (same as pressing ctrl-C two times)
 
 The REPL knows when you are typing a multi-line statement without the need to invoke `.editor`.
 
 For example if you start typing an iteration like this:
 
 ```js
-//
 
 [1, 2, 3].forEach(num => {
 
@@ -124,7 +124,6 @@ For example if you start typing an iteration like this:
 and you press `enter`, the REPL will go to a new line that starts with 3 dots, indicating you can now continue to work on that block.
 
 ```js
-//
 
 ... console.log(num)
 
@@ -179,7 +178,6 @@ All the additional arguments are present from the third position going forward.
 You can iterate over all the arguments (including the node path and the file path) using a loop:
 
 ```js
-//
 process.argv.forEach((val, index) => {
     console.log(`${index}: ${val}`);
 });
@@ -188,7 +186,6 @@ process.argv.forEach((val, index) => {
 You can get only the additional arguments by creating a new array that excludes the first 2 params:
 
 ```js
-//
 const args = process.argv.slice(2);
 ```
 
@@ -203,7 +200,6 @@ node app.js joe
 you can access it using
 
 ```js
-//
 const args = process.argv.slice(2);
 
 args[0];
@@ -219,16 +215,15 @@ node app.js name=joe
 
 `args[0]` is `name=joe`, and you need to
 
-parse it. The best way to do so is by using the [`minimist`](https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
+parse it. The best way to do so is by using the [`minimist`](images/https://www.npmjs.com/package/minimist) library, which helps dealing with arguments:
 
 ```js
-//
 const args = require('minimist')(process.argv.slice(2));
 
 args['name']; //joe
 ```
 
-Install the required `minimist` package using `npm` (lesson about the package manager comes [later on](https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)).
+Install the required `minimist` package using `npm` (lesson about the package manager comes [later on](images/https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)).
 
 ```bash
 
@@ -250,7 +245,7 @@ description: 'How to print to the command line console using Node.js, from the b
 
 ## Basic output using the console module
 
-Node.js provides a [`console` module](https://nodejs.org/api/console.html) which provides tons of very useful ways to interact with the command line.
+Node.js provides a [`console` module](images/https://nodejs.org/api/console.html) which provides tons of very useful ways to interact with the command line.
 
 It is basically the same as the `console` object you find in the browser.
 
@@ -261,7 +256,6 @@ If you pass an object, it will render it as a string.
 You can pass multiple variables to `console.log`, for example:
 
 ```js
-//
 const x = 'x';
 
 const y = 'y';
@@ -276,22 +270,20 @@ We can also format pretty phrases by passing variables and a format specifier.
 For example:
 
 ```js
-//
 console.log('My %s has %d years', 'cat', 2);
 ```
 
--   `%s` format a variable as a string
--
--   `%d` format a variable as a number
--
--   `%i` format a variable as its integer part only
+- `%s` format a variable as a string
+- 
+- `%d` format a variable as a number
+- 
+- `%i` format a variable as its integer part only
 
--   `%o` format a variable as an object
+- `%o` format a variable as an object
 
 Example:
 
 ```js
-//
 console.log('%o', Number);
 ```
 
@@ -305,14 +297,11 @@ console.log('%o', Number);
 
 Take this code:
 
-<iframe title="Output to the command line using Node.js" src="https://stackblitz.com/edit/nodejs-dev-0002-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0002-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Output to the command line using Node.js" src="https://stackblitz.com/edit/nodejs-dev-0002-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0002-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 <!--
 
 ```js
-//
 
 const x = 1
 
@@ -347,7 +336,6 @@ What happens is that `console.count()` will count the number of times a string i
 You can just count apples and oranges:
 
 ```js
-//
 const oranges = ['orange', 'orange'];
 
 const apples = ['just one apple'];
@@ -368,7 +356,6 @@ The console.countReset() method resets counter used with console.count().
 We will use the apples and orange example to demonstrate this.
 
 ```js
-//
 const oranges = ['orange', 'orange'];
 
 const apples = ['just one apple'];
@@ -397,7 +384,6 @@ There might be cases where it's useful to print the call stack trace of a functi
 You can do so using `console.trace()`:
 
 ```js
-//
 const function2 = () => console.trace();
 
 const function1 = () => function2();
@@ -438,7 +424,6 @@ Trace
 You can easily calculate how much time a function takes to run, using `time()` and `timeEnd()`
 
 ```js
-//
 const doSomething = () => console.log('test');
 
 const measureDoingSomething = () => {
@@ -464,23 +449,21 @@ It will not appear in the console, but it will appear in the error log.
 
 ## Color the output
 
-You can color the output of your text in the console by using [escape sequences](https://gist.github.com/iamnewton/8754917). An escape sequence is a set of characters that identifies a color.
+You can color the output of your text in the console by using [escape sequences](images/https://gist.github.com/iamnewton/8754917). An escape sequence is a set of characters that identifies a color.
 
 Example:
 
 ```js
-//
 console.log('\x1b[33m%s\x1b[0m', 'hi!');
 ```
 
 You can try that in the Node.js REPL, and it will print `hi!` in yellow.
 
-However, this is the low-level way to do this. The simplest way to go about coloring the console output is by using a library. [Chalk](https://github.com/chalk/chalk) is such a library, and in addition to coloring it also helps with other styling facilities, like making text bold, italic or underlined.
+However, this is the low-level way to do this. The simplest way to go about coloring the console output is by using a library. [Chalk](images/https://github.com/chalk/chalk) is such a library, and in addition to coloring it also helps with other styling facilities, like making text bold, italic or underlined.
 
 You install it with `npm install chalk`, then you can use it:
 
 ```js
-//
 const chalk = require('chalk');
 
 console.log(chalk.yellow('hi!'));
@@ -492,12 +475,11 @@ Check the project link posted above for more usage examples.
 
 ## Create a progress bar
 
-[Progress](https://www.npmjs.com/package/progress) is an awesome package to create a progress bar in the console. Install it using `npm install progress`
+[Progress](images/https://www.npmjs.com/package/progress) is an awesome package to create a progress bar in the console. Install it using `npm install progress`
 
 This snippet creates a 10-step progress bar, and every 100ms one step is completed. When the bar completes we clear the interval:
 
 ```js
-//
 const ProgressBar = require('progress');
 
 const bar = new ProgressBar(':bar', { total: 10 });
@@ -517,10 +499,9 @@ description: 'How to make a Node.js CLI program interactive using the built-in r
 
 How to make a Node.js CLI program interactive?
 
-Node.js since version 7 provides the [`readline` module](https://nodejs.org/api/readline.html) to perform exactly this: get input from a readable stream such as the `process.stdin` stream, which during the execution of a Node.js program is the terminal input, one line at a time.
+Node.js since version 7 provides the [`readline` module](images/https://nodejs.org/api/readline.html) to perform exactly this: get input from a readable stream such as the `process.stdin` stream, which during the execution of a Node.js program is the terminal input, one line at a time.
 
 ```js
-//
 const readline = require('readline').createInterface({
     input: process.stdin,
 
@@ -544,14 +525,13 @@ In this callback function, we close the readline interface.
 
 If you need to require a password, it's best not to echo it back, but instead show a `*` symbol.
 
-The simplest way is to use the [`readline-sync` package](https://www.npmjs.com/package/readline-sync) which is very similar in terms of the API and handles this out of the box.
+The simplest way is to use the [`readline-sync` package](images/https://www.npmjs.com/package/readline-sync) which is very similar in terms of the API and handles this out of the box.
 
-A more complete and abstract solution is provided by the [Inquirer.js package](https://github.com/SBoudrias/Inquirer.js).
+A more complete and abstract solution is provided by the [Inquirer.js package](images/https://github.com/SBoudrias/Inquirer.js).
 
 You can install it using `npm install inquirer`, and then you can replicate the above code like this:
 
 ```js
-//
 const inquirer = require('inquirer');
 
 var questions = [
@@ -584,7 +564,6 @@ A Node.js file can import functionality exposed by other Node.js files.
 When you want to import something you use
 
 ```js
-//
 const library = require('./library');
 ```
 
@@ -594,7 +573,7 @@ In this file, functionality must be exposed before it can be imported by other f
 
 Any other object or variable defined in the file by default is private and not exposed to the outer world.
 
-This is what the `module.exports` API offered by the [`module` system](https://nodejs.org/api/modules.html) allows us to do.
+This is what the `module.exports` API offered by the [`module` system](images/https://nodejs.org/api/modules.html) allows us to do.
 
 When you assign an object or a function as a new `exports` property, that is the thing that's being exposed, and as such, it can be imported in other parts of your app, or in other apps as well.
 
@@ -603,7 +582,6 @@ You can do so in 2 ways.
 The first is to assign an object to `module.exports`, which is an object provided out of the box by the module system, and this will make your file export _just that object_:
 
 ```js
-//
 // car.js
 
 const car = {
@@ -616,7 +594,6 @@ module.exports = car;
 ```
 
 ```js
-//
 // index.js
 
 const car = require('./car');
@@ -625,7 +602,6 @@ const car = require('./car');
 The second way is to add the exported object as a property of `exports`. This way allows you to export multiple objects, functions or data:
 
 ```js
-//
 const car = {
     brand: 'Ford',
 
@@ -638,7 +614,6 @@ exports.car = car;
 or directly
 
 ```js
-//
 exports.car = {
     brand: 'Ford',
 
@@ -649,7 +624,6 @@ exports.car = {
 And in the other file, you'll use it by referencing a property of your import:
 
 ```js
-//
 const items = require('./items');
 
 const car = items.car;
@@ -658,7 +632,6 @@ const car = items.car;
 or
 
 ```js
-//
 const car = require('./items').car;
 ```
 
@@ -682,7 +655,7 @@ It started as a way to download and manage dependencies of Node.js packages, but
 
 There are many things that `npm` does.
 
-> [**Yarn**](https://yarnpkg.com/en/) and [**pnpm**](https://pnpm.js.org/) are alternatives to npm cli. You can check them out as well.
+> [**Yarn**](images/https://yarnpkg.com/en/) and [**pnpm**](images/https://pnpm.js.org/) are alternatives to npm cli. You can check them out as well.
 
 ## Downloads
 
@@ -714,31 +687,31 @@ Furthermore, since npm 5, this command adds `<package-name>` to the `package.jso
 
 Often you'll see more flags added to this command:
 
--   `--save-dev` installs and adds the entry to the `package.json` file _devDependencies_
--
--   `--no-save` installs but does not add the entry to the `package.json` file _dependencies_
--
--   `--save-optional` installs and adds the entry to the `package.json` file _optionalDependencies_
+- `--save-dev` installs and adds the entry to the `package.json` file _devDependencies_
+- 
+- `--no-save` installs but does not add the entry to the `package.json` file _dependencies_
+- 
+- `--save-optional` installs and adds the entry to the `package.json` file _optionalDependencies_
 
--   `--no-optional` will prevent optional dependencies from being installed
+- `--no-optional` will prevent optional dependencies from being installed
 
 Shorthands of the flags can also be used:
 
--   -S: --save
--
--   -D: --save-dev
+- -S: --save
+- 
+- -D: --save-dev
 
--   -O: --save-optional
+- -O: --save-optional
 
 The difference between _devDependencies_ and _dependencies_ is that the former contains development tools, like a testing library, while the latter is bundled with the app in production.
 
-As for the _optionalDependencies_ the difference is that build failure of the dependency will not cause installation to fail. But it is your program's responsibility to handle the lack of the dependency. Read more about [optional dependencies](https://docs.npmjs.com/cli/v7/configuring-npm/package-json#optionaldependencies).
+As for the _optionalDependencies_ the difference is that build failure of the dependency will not cause installation to fail. But it is your program's responsibility to handle the lack of the dependency. Read more about [optional dependencies](images/https://docs.npmjs.com/cli/v7/configuring-npm/package-json#optionaldependencies).
 
 ### Updating packages
 
 Updating is also made easy, by running
 
-```bash
+```console
 
 npm update
 
@@ -748,7 +721,7 @@ npm update
 
 You can specify a single package to update as well:
 
-```bash
+```console
 
 npm update <package-name>
 
@@ -770,7 +743,7 @@ In all those cases, versioning helps a lot, and `npm` follows the semantic versi
 
 The package.json file supports a format for specifying command line tasks that can be run by using
 
-```bash
+```console
 
 npm run <task-name>
 
@@ -778,8 +751,7 @@ npm run <task-name>
 
 For example:
 
-```js
-//on
+```json
 {
     "scripts": {
         "start-dev": "node lib/server-development",
@@ -791,8 +763,7 @@ For example:
 
 It's very common to use this feature to run Webpack:
 
-```js
-//on
+```json
 {
     "scripts": {
         "watch": "webpack --watch --progress --colors --config webpack.conf.js",
@@ -806,7 +777,7 @@ It's very common to use this feature to run Webpack:
 
 So instead of typing those long commands, which are easy to forget or mistype, you can run
 
-```bash
+```console
 
 $ npm run watch
 
@@ -822,9 +793,9 @@ description: 'How to find out where npm installs the packages'
 
 When you install a package using `npm` you can perform 2 types of installation:
 
--   a local install
--
--   a global install
+- a local install
+- 
+- a global install
 
 By default, when you type an `npm install` command, like:
 
@@ -879,7 +850,6 @@ This is going to install the package in the local `node_modules` folder.
 To use it in your code, you just need to import it into your program using `require`:
 
 ```js
-//
 const _ = require('lodash');
 ```
 
@@ -887,7 +857,7 @@ What if your package is an executable?
 
 In this case, it will put the executable file under the `node_modules/.bin/` folder.
 
-One easy way to demonstrate this is [cowsay](https://www.npmjs.com/package/cowsay).
+One easy way to demonstrate this is [cowsay](images/https://www.npmjs.com/package/cowsay).
 
 The cowsay package provides a command line program that can be executed to make a cow say something (and other animals as well 🦊).
 
@@ -927,10 +897,8 @@ The `package.json` file is kind of a manifest for your project. It can do a lot 
 
 Here's an example package.json file:
 
-```js
-//on
-{
-}
+```json
+{}
 ```
 
 It's empty! There are no fixed requirements of what should be in a `package.json` file, for an application. The only requirement is that it respects the JSON format, otherwise it cannot be read by programs that try to access its properties programmatically.
@@ -939,8 +907,7 @@ If you're building a Node.js package that you want to distribute over `npm` thin
 
 This is another package.json:
 
-```js
-//on
+```json
 {
     "name": "test-project"
 }
@@ -950,8 +917,7 @@ It defines a `name` property, which tells the name of the app, or package, that'
 
 Here's a much more complex example, which was extracted from a sample Vue.js application:
 
-```js
-//on
+```json
 {
     "name": "test-project",
 
@@ -1093,25 +1059,25 @@ Here's a much more complex example, which was extracted from a sample Vue.js app
 
 there are _lots_ of things going on here:
 
--   `version` indicates the current version
--
--   `name` sets the application/package name
--
--   `description` is a brief description of the app/package
--
--   `main` sets the entry point for the application
--
--   `private` if set to `true` prevents the app/package to be accidental
--
--   `scripts` defines a set of node scripts you can run
+- `version` indicates the current version
+- 
+- `name` sets the application/package name
+- 
+- `description` is a brief description of the app/package
+- 
+- `main` sets the entry point for the application
+- 
+- `private` if set to `true` prevents the app/package to be accidental
+- 
+- `scripts` defines a set of node scripts you can run
 
--   `dependencies` sets a list of `npm` packages installed as dependencies
+- `dependencies` sets a list of `npm` packages installed as dependencies
 
--   `devDependencies` sets a list of `npm` packages installed as development dependencies
+- `devDependencies` sets a list of `npm` packages installed as development dependencies
 
--   `engines` sets which versions of Node.js this package/app works on
+- `engines` sets which versions of Node.js this package/app works on
 
--   `browserslist` is used to tell which browsers (and their versions) you want to support
+- `browserslist` is used to tell which browsers (and their versions) you want to support
 
 All those properties are used by either `npm` or other tools that we can use.
 
@@ -1125,8 +1091,7 @@ Sets the package name.
 
 Example:
 
-```js
-//on
+```json
 
 "name": "test-project"
 
@@ -1144,8 +1109,7 @@ Lists the package author name
 
 Example:
 
-```js
-//on
+```json
 {
     "author": "Joe <joe@whatever.com> (https://whatever.com)"
 }
@@ -1153,8 +1117,7 @@ Example:
 
 Can also be used with this format:
 
-```js
-//on
+```json
 {
     "author": {
         "name": "Joe",
@@ -1172,8 +1135,7 @@ As well as the author, the project can have one or more contributors. This prope
 
 Example:
 
-```js
-//on
+```json
 {
     "contributors": ["Joe <joe@whatever.com> (https://whatever.com)"]
 }
@@ -1181,8 +1143,7 @@ Example:
 
 Can also be used with this format:
 
-```js
-//on
+```json
 {
     "contributors": [
         {
@@ -1202,8 +1163,7 @@ Links to the package issue tracker, most likely a GitHub issues page
 
 Example:
 
-```js
-//on
+```json
 {
     "bugs": "https://github.com/whatever/package/issues"
 }
@@ -1215,8 +1175,7 @@ Sets the package homepage
 
 Example:
 
-```js
-//on
+```json
 {
     "homepage": "https://whatever.com/package"
 }
@@ -1228,8 +1187,7 @@ Indicates the current version of the package.
 
 Example:
 
-```js
-//on
+```json
 
 "version": "1.0.0"
 
@@ -1247,8 +1205,7 @@ Indicates the license of the package.
 
 Example:
 
-```js
-//on
+```json
 
 "license": "MIT"
 
@@ -1260,8 +1217,7 @@ This property contains an array of keywords that associate with what your packag
 
 Example:
 
-```js
-//on
+```json
 
 "keywords": [
 
@@ -1283,8 +1239,7 @@ This property contains a brief description of the package
 
 Example:
 
-```js
-//on
+```json
 
 "description": "A package to work with strings"
 
@@ -1298,8 +1253,7 @@ This property specifies where this package repository is located.
 
 Example:
 
-```js
-//on
+```json
 
 "repository": "github:whatever/testing",
 
@@ -1307,15 +1261,13 @@ Example:
 
 Notice the `github` prefix. There are other popular services baked in:
 
-```js
-//on
+```json
 
 "repository": "gitlab:whatever/testing",
 
 ```
 
-```js
-//on
+```json
 
 "repository": "bitbucket:whatever/testing",
 
@@ -1323,8 +1275,7 @@ Notice the `github` prefix. There are other popular services baked in:
 
 You can explicitly set the version control system:
 
-```js
-//on
+```json
 
 "repository": {
 
@@ -1338,8 +1289,7 @@ You can explicitly set the version control system:
 
 You can use different version control systems:
 
-```js
-//on
+```json
 
 "repository": {
 
@@ -1359,8 +1309,7 @@ When you import this package in an application, that's where the application wil
 
 Example:
 
-```js
-//on
+```json
 
 "main": "src/main.js"
 
@@ -1372,8 +1321,7 @@ if set to `true` prevents the app/package to be accidentally published on `npm`
 
 Example:
 
-```js
-//on
+```json
 
 "private": true
 
@@ -1385,8 +1333,7 @@ Defines a set of node scripts you can run
 
 Example:
 
-```js
-//on
+```json
 
 "scripts": {
 
@@ -1428,8 +1375,7 @@ that package is automatically inserted in this list.
 
 Example:
 
-```js
-//on
+```json
 
 "dependencies": {
 
@@ -1459,8 +1405,7 @@ that package is automatically inserted in this list.
 
 Example:
 
-```js
-//on
+```json
 
 "devDependencies": {
 
@@ -1478,8 +1423,7 @@ Sets which versions of Node.js and other commands this package/app work on
 
 Example:
 
-```js
-//on
+```json
 
 "engines": {
 
@@ -1499,8 +1443,7 @@ Is used to tell which browsers (and their versions) you want to support. It's re
 
 Example:
 
-```js
-//on
+```json
 
 "browserslist": [
 
@@ -1514,9 +1457,9 @@ Example:
 
 ```
 
-This configuration means you want to support the last 2 major versions of all browsers with at least 1% of usage (from the [CanIUse.com](https://caniuse.com) stats), except IE8 and lower.
+This configuration means you want to support the last 2 major versions of all browsers with at least 1% of usage (from the [CanIUse.com](images/https://caniuse.com) stats), except IE8 and lower.
 
-([see more](https://www.npmjs.com/package/browserslist))
+([see more](images/https://www.npmjs.com/package/browserslist))
 
 ### Command-specific properties
 
@@ -1530,7 +1473,7 @@ You have seen in the description above version numbers like these: `~3.0.0` or `
 
 That symbol specifies which updates your package accepts, from that dependency.
 
-Given that using semver (semantic versioning) all versions have 3 digits, the first being the major release, the second the minor release and the third is the patch release, you have these "[Rules](https://nodejs.dev/learn/semantic-versioning-using-npm/)".
+Given that using semver (semantic versioning) all versions have 3 digits, the first being the major release, the second the minor release and the third is the patch release, you have these "[Rules](images/https://nodejs.dev/learn/semantic-versioning-using-npm/)".
 
 You can combine most of the versions in ranges, like this: `1.0.0 || >=1.1.0 <1.2.0`, to either use 1.0.0 or one release from 1.1.0 up, but lower than 1.2.0.
 
@@ -1548,11 +1491,11 @@ The goal of `package-lock.json` file is to keep track of the exact version of ev
 
 This solves a very specific problem that `package.json` left unsolved. In package.json you can set which versions you want to upgrade to (patch or minor), using the **semver** notation, for example:
 
--   if you write `~0.13.0`, you want to only update patch releases: `0.13.1` is ok, but `0.14.0` is not.
--
--   if you write `^0.13.0`, you want to get updates that do not change the leftmost non-zero number: `0.13.1`, `0.13.2` and so on. If you write `^1.13.0`, you will get patch and minor releases: `1.13.1`, `1.14.0` and so on up to `2.0.0` but not `2.0.0`.
+- if you write `~0.13.0`, you want to only update patch releases: `0.13.1` is ok, but `0.14.0` is not.
+- 
+- if you write `^0.13.0`, you want to get updates that do not change the leftmost non-zero number: `0.13.1`, `0.13.2` and so on. If you write `^1.13.0`, you will get patch and minor releases: `1.13.1`, `1.14.0` and so on up to `2.0.0` but not `2.0.0`.
 
--   if you write `0.13.0`, that is the exact version that will be used, always
+- if you write `0.13.0`, that is the exact version that will be used, always
 
 You don't commit to Git your node_modules folder, which is generally huge, and when you try to replicate the project on another machine by using the `npm install` command, if you specified the `~` syntax and a patch release of a package has been released, that one is going to be installed. Same for `^` and minor releases.
 
@@ -1574,8 +1517,7 @@ The dependencies versions will be updated in the `package-lock.json` file when y
 
 This is an example structure of a `package-lock.json` file we get when we run `npm install cowsay` in an empty folder:
 
-```js
-//on
+```json
 
 {
 
@@ -1739,48 +1681,47 @@ is-fullwidth-code-point-2.0.0.tgz",
 
 We installed `cowsay`, which depends on
 
--   `get-stdin`
--
--   `optimist`
--
--   `string-width`
+- `get-stdin`
+- 
+- `optimist`
+- 
+- `string-width`
 
--   `strip-eof`
+- `strip-eof`
 
 In turn, those packages require other packages, as we can see from the `requires` property that some have:
 
--   `ansi-regex`
--
--   `is-fullwidt
--
--   `minimist`
+- `ansi-regex`
+- 
+- `is-fullwidt
+- 
+- `minimist`
 
--   `wordwrap`
+- `wordwrap`
 
--   `strip-eof`
+- `strip-eof`
 
 They are added in alphabetical order into the file, and each one has a `version` field, a `resolved` field that points to the package location, and an `integrity` string that we can use to verify the package.
 
 # Computer Networking & Socket Programming
 
-Socket programming is the development of programs for [Computer Networking](https://en.wikipedia.org/wiki/Computer_network). Networking applications are loosely based off of the top most layers of the conceptual 7-layer model called the [OSI Model](https://en.wikipedia.org/wiki/OSI_model). The layers most relevant to socket programmers is layer 4, the [Transport layer](https://en.wikipedia.org/wiki/Transport_layer), and layer 7, the [Application layer](https://en.wikipedia.org/wiki/Application_layer). Specific protocols are implemented at each layer, and are instrumental for the functionality of the internet.
+Socket programming is the development of programs for [Computer Networking](images/https://en.wikipedia.org/wiki/Computer_network). Networking applications are loosely based off of the top most layers of the conceptual 7-layer model called the [OSI Model](images/https://en.wikipedia.org/wiki/OSI_model). The layers most relevant to socket programmers is layer 4, the [Transport layer](images/https://en.wikipedia.org/wiki/Transport_layer), and layer 7, the [Application layer](images/https://en.wikipedia.org/wiki/Application_layer). Specific protocols are implemented at each layer, and are instrumental for the functionality of the internet.
 
-Node.js exposes extensive API's for implementing these protocols so developers can create socket programming applications. The most common example is the `http` module. [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) exists on the Application layer of the OSI Model; if you want to learn more about the `http` module, read the Node.js [http documentation](https://nodejs.org/api/http.html) or the Nodejs.dev [guide](https://nodejs.dev/the-nodejs-http-module). Another socket programming Node.js module is the `dgram` module for [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) communication. UDP exists on the Transport layer; for more information about this technology read the Node.js [dgram documentaion](https://nodejs.org/api/dgram.html). More importantly, the `net` module, which this guide is all about, provides an extensive API for a stream-based TCP server. [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) exists on the Transport layer of the OSI Model and is what HTTP is implemented on top of.
+Node.js exposes extensive API's for implementing these protocols so developers can create socket programming applications. The most common example is the `http` module. [HTTP](images/https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) exists on the Application layer of the OSI Model; if you want to learn more about the `http` module, read the Node.js [http documentation](images/https://nodejs.org/api/http.html) or the Nodejs.dev [guide](images/https://nodejs.dev/the-nodejs-http-module). Another socket programming Node.js module is the `dgram` module for [UDP](images/https://en.wikipedia.org/wiki/User_Datagram_Protocol) communication. UDP exists on the Transport layer; for more information about this technology read the Node.js [dgram documentaion](images/https://nodejs.org/api/dgram.html). More importantly, the `net` module, which this guide is all about, provides an extensive API for a stream-based TCP server. [TCP](images/https://en.wikipedia.org/wiki/Transmission_Control_Protocol) exists on the Transport layer of the OSI Model and is what HTTP is implemented on top of.
 
 > TCP is a reliable, ordered, and error-checked delivery of a stream of bytes between applications communicating via an internet protocol (IP) network.
 
 >
 
-> ~ [Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+> ~ [Wikipedia](images/https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 
 ## Net Module - Getting Started
 
-The key part of the `net` module is the `net.Socket` class. A socket instance in Node.js is both a [duplex stream](https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and an [event emitter](https://nodejs.org/api/events.html#events_class_eventemitter). This means it is readable, writable, and can utilize the event loop. Sockets can be created by the user and by Node.js, and they are the programmatic object for communicating. Sockets must connect to a `net.Server` class instance; a socket connection to a server is often referred to as a _client connection_. Every socket connection is considered "private" in the sense that the only entities with access to the connection is the server and the client. A server instance **can** have multiple client connections, but will maintain separate communication streams with each connection.
+The key part of the `net` module is the `net.Socket` class. A socket instance in Node.js is both a [duplex stream](images/https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and an [event emitter](images/https://nodejs.org/api/events.html#events_class_eventemitter). This means it is readable, writable, and can utilize the event loop. Sockets can be created by the user and by Node.js, and they are the programmatic object for communicating. Sockets must connect to a `net.Server` class instance; a socket connection to a server is often referred to as a _client connection_. Every socket connection is considered "private" in the sense that the only entities with access to the connection is the server and the client. A server instance **can** have multiple client connections, but will maintain separate communication streams with each connection.
 
 Lets look at the simplest example of a TCP server, an echo server. An _echo server_ is one which returns the same message sent to it.
 
 ```js
-//
 const net = require('net');
 
 // Create a TCP server using the `net.createServer()` method
@@ -1847,7 +1788,6 @@ Great work! You have succesfully implemented your first TCP server-client connec
 Before starting, open two terminals and startup the Node.js repl (you can also use two files called `server.js` and `client.js` respectively). In the following example, we will create a TCP server and a connection to that server using the `net` module. By doing so, the interactivity is not the same as the previous echo example. In fact, without using other core Node.js modules, this example is completely non-interactive. The client code will disconnect itself at the end of its execution.
 
 ```js
-//
 // In the first repl, create and start a server
 
 const net = require('net');
@@ -1874,7 +1814,6 @@ server.listen(8124, 'localhost', () => {
 ```
 
 ```js
-//
 // In the second repl, create and connect a client
 
 const net = require('net');
@@ -1902,29 +1841,29 @@ The second example introduces an additional event listener `'end'`. This is very
 
 ## Conclusion
 
-Fantastic work! With these two examples you should have what you need to get started building your own TCP communication networks. This guide only brushes the surface of socket programming applications, but the most important take away here is that Node.js implements TCP socket connections as [duplex streams](https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and [event emitters](https://nodejs.org/api/events.html#events_class_eventemitter). Understanding those two concepts will benefit your overall understanding of the `net` module.
+Fantastic work! With these two examples you should have what you need to get started building your own TCP communication networks. This guide only brushes the surface of socket programming applications, but the most important take away here is that Node.js implements TCP socket connections as [duplex streams](images/https://nodejs.org/api/stream.html#stream_duplex_and_transform_streams) and [event emitters](images/https://nodejs.org/api/events.html#events_class_eventemitter). Understanding those two concepts will benefit your overall understanding of the `net` module.
 
-For more capabilities of the `net` module read the Node.js [net documentation](https://nodejs.org/api/net.html).
+For more capabilities of the `net` module read the Node.js [net documentation](images/https://nodejs.org/api/net.html).
 
 To learn more, try completing the following challenges:
 
--   Using `readline` or `stream` modules, create an interactive client connection script
+- Using `readline` or `stream` modules, create an interactive client connection script
 
-    -   this can build on the second example provided in this guide
+    - this can build on the second example provided in this guide
 
--   Create a group-chat TCP server
+- Create a group-chat TCP server
 
-    -   hint: you can hold multiple client connections in an array
+    - hint: you can hold multiple client connections in an array
 
-    -   use multiple arrays for a multi-channel chat server
+    - use multiple arrays for a multi-channel chat server
 
-    -   for an extra challenge try to implement a basic user-store for authentication of user accounts
+    - for an extra challenge try to implement a basic user-store for authentication of user accounts
 
--   Create a mini CRUD database server using an idiomatic chat-command interface
+- Create a mini CRUD database server using an idiomatic chat-command interface
 
-    -   The chat-command interface could use keywords such as `create`, `read`, `update`, and `delete` so the client can send instructions to the server
+    - The chat-command interface could use keywords such as `create`, `read`, `update`, and `delete` so the client can send instructions to the server
 
-    -   Data can be persisted between sessions using `fs` to read and write data to files
+    - Data can be persisted between sessions using `fs` to read and write data to files
 
 # Find the installed version of an npm package
 
@@ -2112,12 +2051,11 @@ When you install a package using `npm install <packagename>`, the latest availab
 
 npm calculates the dependencies and installs the latest available version of those as well.
 
-Let's say you install [`cowsay`](https://www.npmjs.com/package/cowsay), a cool command line tool that lets you make a cow say _things_.
+Let's say you install [`cowsay`](images/https://www.npmjs.com/package/cowsay), a cool command line tool that lets you make a cow say _things_.
 
 When you `npm install cowsay`, this entry is added to the `package.json` file:
 
-```js
-//on
+```json
 {
     "dependencies": {
         "cowsay": "^1.3.1"
@@ -2127,8 +2065,7 @@ When you `npm install cowsay`, this entry is added to the `package.json` file:
 
 and this is an extract of `package-lock.json`, where we removed the nested dependencies for clarity:
 
-```js
-//on
+```json
 {
     "requires": true,
 
@@ -2166,7 +2103,7 @@ To discover new releases of the packages, you run `npm outdated`.
 
 Here's the list of a few outdated packages in one repository that wasn't updated for quite a while:
 
-![alt-text](images/outdated-packages.png)
+![](images/outdated-packages.png)
 
 Some of those updates are major releases. Running `npm update` won't update the version of those. Major releases are never updated in this way because they (by definition) introduce breaking changes, and `npm` wants to save you trouble.
 
@@ -2212,19 +2149,19 @@ If there's one great thing in Node.js packages, it's that they all agreed on usi
 
 The Semantic Versioning concept is simple: all versions have 3 digits: `x.y.z`.
 
--   the first digit is the major version
--
--   the second digit is the minor version
+- the first digit is the major version
+- 
+- the second digit is the minor version
 
--   the third digit is the patch version
+- the third digit is the patch version
 
 When you make a new release, you don't just up a number as you please, but you have rules:
 
--   you up the major version when you make incompatible API changes
--
--   you up the minor version when you add functionality in a backward-compatible manner
+- you up the major version when you make incompatible API changes
+- 
+- you up the minor version when you add functionality in a backward-compatible manner
 
--   you up the patch version when you make backward-compatible bug fixes
+- you up the patch version when you make backward-compatible bug fixes
 
 The convention is adopted all across programming languages, and it is very important that every `npm` package adheres to it, because the whole system depends on that.
 
@@ -2234,51 +2171,51 @@ Because `npm` set some rules we can use in the `package.json` file to choose whi
 
 The rules use those symbols:
 
--   `^`
--
--   `~`
--
--   `>`
--
--   `>=`
--
--   `<`
+- `^`
+- 
+- `~`
+- 
+- `>`
+- 
+- `>=`
+- 
+- `<`
 
--   `<=`
+- `<=`
 
--   `=`
+- `=`
 
--   `-`
+- `-`
 
--   `||`
+- `||`
 
 Let's see those rules in detail:
 
--   `^`: It will only do updates that do not change the leftmost non-zero number i.e there can be changes in minor version or patch version but not in major version. If you write `^13.1.0`, when running `npm update`, it can update to `13.2.0`, `13.3.0` even `13.3.1`, `13.3.2` and so on, but not to `14.0.0` or above.
--
--   `~`: if you write `~0.13.0` when running `npm update` it can
--
--   `>`: you accept any version higher than the one you specify
--
--   `>=`: you accept any version equal t
--
--   `<=`: you accept any version equal or lower to the one you specify
+- `^`: It will only do updates that do not change the leftmost non-zero number i.e there can be changes in minor version or patch version but not in major version. If you write `^13.1.0`, when running `npm update`, it can update to `13.2.0`, `13.3.0` even `13.3.1`, `13.3.2` and so on, but not to `14.0.0` or above.
+- 
+- `~`: if you write `~0.13.0` when running `npm update` it can 
+- 
+- `>`: you accept any version higher than the one you specify
+- 
+- `>=`: you accept any version equal t
+- 
+- `<=`: you accept any version equal or lower to the one you specify
 
--   `<`: you accept any version lower than the one you specify
+- `<`: you accept any version lower than the one you specify
 
--   `=`: you accept that exact version
+- `=`: you accept that exact version
 
--   `-`: you accept a range of versions. Example: `2.1.0 - 2.6.2`
+- `-`: you accept a range of versions. Example: `2.1.0 - 2.6.2`
 
--   `||`: you combine sets. Example: `< 2.1 || > 2.6`
+- `||`: you combine sets. Example: `< 2.1 || > 2.6`
 
 You can combine some of those notations, for example use `1.0.0 || >=1.1.0 <1.2.0` to either use 1.0.0 or one release from 1.1.0 up, but lower than 1.2.0.
 
 There are other rules, too:
 
--   no symbol: you accept only that specific version you specify (`1.2.1`)
--
--   `latest`: you want to use the latest version available
+- no symbol: you accept only that specific version you specify (`1.2.1`)
+- 
+- `latest`: you want to use the latest version available
 
 # Uninstalling npm packages
 
@@ -2322,14 +2259,13 @@ description: 'When is a package best installed globally? Why?'
 
 The main difference between local and global packages is this:
 
--   **local packages** are installed in the directory where you run `npm install <package-name>`, and they are put in the `node_modules` folder under this directory
--
--   **global packages** are all put in a single place in your system (exactly where depends on your setup), regardless of where you run `npm install -g <package-name>`
+- **local packages** are installed in the directory where you run `npm install <package-name>`, and they are put in the `node_modules` folder under this directory
+- 
+- **global packages** are all put in a single place in your system (exactly where depends on your setup), regardless of where you run `npm install -g <package-name>`
 
 In your code you can only require local packages:
 
 ```js
-//
 require('package-name');
 ```
 
@@ -2349,23 +2285,23 @@ You can also install executable commands locally and run them using npx, but som
 
 Great examples of popular global packages which you might know are
 
--   `npm`
--
--   `create-rea
--
--   `vue-cli`
--
--   `grunt-cli`
--
--   `mocha`
+- `npm`
+- 
+- `create-rea
+- 
+- `vue-cli`
+- 
+- `grunt-cli`
+- 
+- `mocha`
 
--   `react-native-cli`
+- `react-native-cli`
 
--   `gatsby-cli`
+- `gatsby-cli`
 
--   `forever`
+- `forever`
 
--   `nodemon`
+- `nodemon`
 
 You probably have some packages installed globally already on your system. You can see them by running
 
@@ -2399,7 +2335,7 @@ description: 'npx is a very cool way to run Node.js code, and provides many usef
 
 `npx` is a very powerful command that's been available in **npm** starting version 5.2, released in July 2017.
 
-> If you don't want to install npm, you can [install npx as a standalone package](https://www.npmjs.com/package/npx)
+> If you don't want to install npm, you can [install npx as a standalone package](images/https://www.npmjs.com/package/npx)
 
 `npx` lets you run code built with Node.js and published through the npm registry.
 
@@ -2425,7 +2361,7 @@ A typical demonstration of using `npx` is through the `cowsay` command. `cowsay`
 
 `cowsay "Hello"` will print
 
-```bash
+```console
 
  _______
 
@@ -2461,15 +2397,15 @@ Now, this is a funny useless command.
 
 Other scenarios include:
 
--   running the `vue` CLI tool to create new applications and run them: `npx @vue/cli create my-vue-app`
--
--   creating a new React app using `create-react-app`: `npx create-react-app my-react-app`
+- running the `vue` CLI tool to create new applications and run them: `npx @vue/cli create my-vue-app`
+- 
+- creating a new React app using `create-react-app`: `npx create-react-app my-react-app`
 
 and many more.
 
 ## Run some code using a different Node.js version
 
-Use the `@` to specify the version, and combine that with the [`node` npm package](https://www.npmjs.com/package/node):
+Use the `@` to specify the version, and combine that with the [`node` npm package](images/https://www.npmjs.com/package/node):
 
 ```bash
 
@@ -2539,12 +2475,9 @@ You know the error stack trace you might be familiar with, in the debugger or in
 
 Let's pick an example:
 
-<iframe title="A simple event loop explanation" src="https://stackblitz.com/edit/nodejs-dev-0003-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0003-01 " style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="A simple event loop explanation" src="https://stackblitz.com/edit/nodejs-dev-0003-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0003-01 " style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 const bar = () => console.log('bar');
 
 const baz = () => console.log('baz');
@@ -2596,12 +2529,9 @@ The use case of `setTimeout(() => {}, 0)` is to call a function, but execute it 
 
 Take this example:
 
-<iframe title="Queuing function execution" src="https://stackblitz.com/edit/nodejs-dev-0004-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0004-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Queuing function execution" src="https://stackblitz.com/edit/nodejs-dev-0004-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0004-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 
 const bar = () => console.log('bar')
 
@@ -2665,12 +2595,9 @@ I find nice the analogy of a rollercoaster ride at an amusement park: the messag
 
 Example:
 
-<iframe title="ECMAScript 2015 Job Queue" src="https://stackblitz.com/edit/nodejs-dev-0005-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0005-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="ECMAScript 2015 Job Queue" src="https://stackblitz.com/edit/nodejs-dev-0005-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0005-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 const bar = () => console.log('bar');
 
 const baz = () => console.log('baz');
@@ -2719,7 +2646,6 @@ Every time the event loop takes a full trip, we call it a tick.
 When we pass a function to `process.nextTick()`, we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts:
 
 ```js
-//
 process.nextTick(() => {
     //do something
 });
@@ -2763,12 +2689,9 @@ npm with its simple structure helped the ecosystem of Node.js proliferate, and n
 
 The most common example Hello World of Node.js is a web server:
 
-<iframe title="Hello world web server" src="https://stackblitz.com/edit/nodejs-dev-0001-01?embed=1&file=index.js&zenmode=1" alt="nodejs-dev-0001-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Hello world web server" src="https://stackblitz.com/edit/nodejs-dev-0001-01?embed=1&file=index.js&zenmode=1" alt="nodejs-dev-0001-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -2790,15 +2713,15 @@ server.listen(port, hostname, () => {
 
 To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->
 
-This code first includes the Node.js [`http` module](https://nodejs.org/api/http.html).
+This code first includes the Node.js [`http` module](images/https://nodejs.org/api/http.html).
 
-Node.js has a fantastic [standard library](https://nodejs.org/api/), including first-class support for networking.
+Node.js has a fantastic [standard library](images/https://nodejs.org/api/), including first-class support for networking.
 
 The `createServer()` method of `http` creates a new HTTP server and returns it.
 
 The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.
 
-Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
+Whenever a new request is received, the [`request` event](images/https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](images/https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](images/https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 Those 2 objects are essential to handle the HTTP call.
 
@@ -2809,7 +2732,6 @@ The second is used to return data to the caller.
 In this case with:
 
 ```js
-//
 res.statusCode = 200;
 ```
 
@@ -2818,14 +2740,12 @@ we set the statusCode property to 200, to indicate a successful response.
 We set the Content-Type header:
 
 ```js
-//
 res.setHeader('Content-Type', 'text/plain');
 ```
 
 and we close the response, adding the content as an argument to `end()`:
 
 ```js
-//
 res.end('Hello World\n');
 ```
 
@@ -2835,39 +2755,39 @@ Node.js is a low-level platform. In order to make things easy and exciting for d
 
 Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:
 
--   [**AdonisJS**](https://adonisjs.com/): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
--
--   [**Egg.js**](https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
--
--   [**Express**](https://expressjs.com/): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
--
--   [**Fastify**](https://fastify.io/): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js we
--
--   [**FeatherJS**](https://feathersjs.com/): Feathers is a lightweight web-framework for creating real-time applications an
--
--   [**Gatsby**](https://www.gatsbyjs.com/): A [React](https://reactjs.org/)-based, [GraphQL](https://graphql.org/)
--
--   [**hapi**](https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
--
--   [**koa**](images/http://koajs.com/): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatibl
--
--   [**Loopback.io**](https://loopback.io/): Makes it easy to build modern applications that require complex integrations.
+- [**AdonisJS**](images/https://adonisjs.com/): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
+- 
+- [**Egg.js**](images/https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
+- 
+- [**Express**](images/https://expressjs.com/): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
+- 
+- [**Fastify**](images/https://fastify.io/): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js we
+- 
+- [**FeatherJS**](images/https://feathersjs.com/): Feathers is a lightweight web-framework for creating real-time applications an
+- 
+- [**Gatsby**](images/https://www.gatsbyjs.com/): A [React](images/https://reactjs.org/)-based, [GraphQL](images/https://graphql.org/) 
+- 
+- [**hapi**](images/https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
+- 
+- [**koa**](images/http://koajs.com/): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatibl
+- 
+- [**Loopback.io**](images/https://loopback.io/): Makes it easy to build modern applications that require complex integrations.
 
--   [**Meteor**](https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Angular](https://angular.io). Can be used to create mobile apps as well.
+- [**Meteor**](images/https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](images/https://reactjs.org/), [Vue](images/https://vuejs.org/), and [Angular](images/https://angular.io). Can be used to create mobile apps as well.
 
--   [**Micro**](https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
+- [**Micro**](images/https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
 
--   [**NestJS**](https://nestjs.com/): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
+- [**NestJS**](images/https://nestjs.com/): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
 
--   [**Next.js**](https://nextjs.org/): [React](https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+- [**Next.js**](images/https://nextjs.org/): [React](images/https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
 
--   [**Nx**](https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org/), [Angular](https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
+- [**Nx**](images/https://nx.dev/): A toolkit for full-stack monorepo development using NestJS, Express, [React](images/https://reactjs.org/), [Angular](images/https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
 
--   [**Sapper**](https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
+- [**Sapper**](images/https://sapper.svelte.dev/): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
 
--   [**Socket.io**](https://socket.io/): A real-time communication engine to build network applications.
+- [**Socket.io**](images/https://socket.io/): A real-time communication engine to build network applications.
 
--   [**Strapi**](https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+- [**Strapi**](images/https://strapi.io/): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
 # 'Understanding setImmediate()'
 
@@ -2876,7 +2796,6 @@ description: 'The Node.js setImmediate function interacts with the event loop in
 When you want to execute some piece of code asynchronously, but as soon as possible, one option is to use the `setImmediate()` function provided by Node.js:
 
 ```js
-//
 setImmediate(() => {
     //run something
 });
@@ -2901,7 +2820,6 @@ When writing JavaScript code, you might want to delay the execution of a functio
 This is the job of `setTimeout`. You specify a callback function to execute later, and a value expressing how later you want it to run, in milliseconds:
 
 ```js
-//
 setTimeout(() => {
     // runs after 2 seconds
 }, 2000);
@@ -2914,7 +2832,6 @@ setTimeout(() => {
 This syntax defines a new function. You can call whatever other function you want in there, or you can pass an existing function name, and a set of parameters:
 
 ```js
-//
 const myFunction = (firstParam, secondParam) => {
     // do something
 };
@@ -2927,7 +2844,6 @@ setTimeout(myFunction, 2000, firstParam, secondParam);
 `setTimeout` returns the timer id. This is generally not used, but you can store this id, and clear it if you want to delete this scheduled function execution:
 
 ```js
-//
 const id = setTimeout(() => {
     // should run after 2 seconds
 }, 2000);
@@ -2942,7 +2858,6 @@ clearTimeout(id);
 If you specify the timeout delay to `0`, the callback function will be executed as soon as possible, but after the current function execution:
 
 ```js
-//
 setTimeout(() => {
     console.log('after ');
 }, 0);
@@ -2962,14 +2877,13 @@ after
 
 This is especially useful to avoid blocking the CPU on intensive tasks and let other functions be executed while performing a heavy calculation, by queuing functions in the scheduler.
 
-> Some browsers (IE and Edge) implement a `setImmediate()` method that does this same exact functionality, but it's not standard and [unavailable on other browsers](https://caniuse.com/#feat=setimmediate). But it's a standard function in Node.js.
+> Some browsers (IE and Edge) implement a `setImmediate()` method that does this same exact functionality, but it's not standard and [unavailable on other browsers](images/https://caniuse.com/#feat=setimmediate). But it's a standard function in Node.js.
 
 ## `setInterval()`
 
 `setInterval` is a function similar to `setTimeout`, with a difference: instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds):
 
 ```js
-//
 setInterval(() => {
     // runs every 2 seconds
 }, 2000);
@@ -2978,7 +2892,6 @@ setInterval(() => {
 The function above runs every 2 seconds unless you tell it to stop, using `clearInterval`, passing it the interval id that `setInterval` returned:
 
 ```js
-//
 const id = setInterval(() => {
     // runs every 2 seconds
 }, 2000);
@@ -2989,7 +2902,6 @@ clearInterval(id);
 It's common to call `clearInterval` inside the setInterval callback function, to let it auto-determine if it should run again or stop. For example this code runs something unless App.somethingIWait has the value `arrived`:
 
 ```js
-//
 const interval = setInterval(() => {
     if (App.somethingIWait === 'arrived') {
         clearInterval(interval);
@@ -3020,7 +2932,6 @@ And maybe one long execution overlaps the next one:
 To avoid this, you can schedule a recursive setTimeout to be called when the callback function finishes:
 
 ```js
-//
 const myFunction = () => {
     // do something
 
@@ -3034,7 +2945,7 @@ to achieve this scenario:
 
 ![Recursive setTimeout](images/recursive-settimeout.png)
 
-`setTimeout` and `setInterval` are available in Node.js, through the [Timers module](https://nodejs.org/api/timers.html).
+`setTimeout` and `setInterval` are available in Node.js, through the [Timers module](images/https://nodejs.org/api/timers.html).
 
 Node.js also provides `setImmediate()`, which is equivalent to using `setTimeout(() => {}, 0)`, mostly used to work with the Node.js Event Loop.
 
@@ -3063,7 +2974,6 @@ JavaScript is **synchronous** by default and is single threaded. This means that
 Lines of code are executed in series, one after another, for example:
 
 ```js
-//
 const a = 1;
 
 const b = 2;
@@ -3086,7 +2996,6 @@ More recently, Node.js introduced a non-blocking I/O environment to extend this 
 You can't know when a user is going to click a button. So, you **define an event handler for the click event**. This event handler accepts a function, which will be called when the event is triggered:
 
 ```js
-//
 document.getElementById('button').addEventListener('click', () => {
     //item clicked
 });
@@ -3099,7 +3008,6 @@ A callback is a simple function that's passed as a value to another function, an
 It's common to wrap all your client code in a `load` event listener on the `window` object, which runs the callback function only when the page is ready:
 
 ```js
-//
 window.addEventListener('load', () => {
     //window loaded
     //do what you want
@@ -3111,7 +3019,6 @@ Callbacks are used everywhere, not just in DOM events.
 One common example is by using timers:
 
 ```js
-//
 setTimeout(() => {
     // runs after 2 seconds
 }, 2000);
@@ -3120,7 +3027,6 @@ setTimeout(() => {
 XHR requests also accept a callback, in this example by assigning a function to a property that will be called when a particular event occurs (in this case, the state of the request changes):
 
 ```js
-//
 const xhr = new XMLHttpRequest();
 
 xhr.onreadystatechange = () => {
@@ -3141,7 +3047,6 @@ How do you handle errors with callbacks? One very common strategy is to use what
 If there is no error, the object is `null`. If there is an error, it contains some description of the error and other information.
 
 ```js
-//
 fs.readFile('/file.json', (err, data) => {
     if (err) {
         //handle error
@@ -3164,7 +3069,6 @@ Callbacks are great for simple cases!
 However every callback adds a level of nesting, and when you have lots of callbacks, the code starts to be complicated very quickly:
 
 ```js
-//
 window.addEventListener('load', () => {
     document.getElementById('button').addEventListener('click', () => {
         setTimeout(() => {
@@ -3190,9 +3094,7 @@ description: 'Promises are one way to deal with asynchronous code in JavaScript,
 
 ## Introduction to promises
 
-<iframe title="Introduction to promises" src="https://stackblitz.com/edit/nodejs-dev-0006-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0006-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Introduction to promises" src="https://stackblitz.com/edit/nodejs-dev-0006-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0006-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 A promise is commonly defined as **a proxy for a value that will eventually become available**.
 
@@ -3212,11 +3114,11 @@ The created promise will eventually end in a **resolved state**, or in a **rejec
 
 In addition to your own code and libraries code, promises are used by standard modern Web APIs such as:
 
--   the Battery API
--
--   the Fetch API
+- the Battery API
+- 
+- the Fetch API
 
--   Service Workers
+- Service Workers
 
 It's unlikely that in modern JavaScript you'll find yourself _not_ using promises, so let's start diving right into them.
 
@@ -3227,7 +3129,6 @@ It's unlikely that in modern JavaScript you'll find yourself _not_ using promise
 The Promise API exposes a Promise constructor, which you initialize using `new Promise()`:
 
 ```js
-//
 let done = true;
 
 const isItDoneYet = new Promise((resolve, reject) => {
@@ -3248,7 +3149,6 @@ As you can see, the promise checks the `done` global constant, and if that's tru
 A more common example you may come across is a technique called **Promisifying**. This technique is a way to be able to use a classic JavaScript function that takes a callback, and have it return a promise:
 
 ```js
-//
 const fs = require('fs');
 
 const getFile = (fileName) => {
@@ -3271,7 +3171,7 @@ getFile('/etc/passwd')
     .catch((err) => console.error(err));
 ```
 
-> In recent versions of Node.js, you won't have to do this manual conversion for a lot of the API. There is a promisifying function available in the [util module](https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original) that will do this for you, given that the function you're promisifying has the correct signature.
+> In recent versions of Node.js, you won't have to do this manual conversion for a lot of the API. There is a promisifying function available in the [util module](images/https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original) that will do this for you, given that the function you're promisifying has the correct signature.
 
 ---
 
@@ -3280,7 +3180,6 @@ getFile('/etc/passwd')
 Now let's see how the promise can be _consumed_ or used.
 
 ```js
-//
 const isItDoneYet = new Promise(/* ... as above ... */);
 
 //...
@@ -3313,7 +3212,6 @@ The Fetch API is a promise-based mechanism, and calling `fetch()` is equivalent 
 ### Example of chaining promises
 
 ```js
-//
 const status = (response) => {
     if (response.status >= 200 && response.status < 300) {
         return Promise.resolve(response);
@@ -3340,17 +3238,15 @@ fetch('/todos.json')
     });
 ```
 
-> <code>
-> <a href="https://www.npmjs.com/package/node-fetch">node-fetch</a>
-> </code> is minimal code for window.fetch compatible API on Node.js runtime.
+> <code><a href="https://www.npmjs.com/package/node-fetch">node-fetch</a></code> is minimal code for window.fetch compatible API on Node.js runtime.
 
 In this example, we call `fetch()` to get a list of TODO items from the `todos.json` file found in the domain root, and we create a chain of promises.
 
-Running `fetch()` returns a [response](https://fetch.spec.whatwg.org/#concept-response), which has many properties, and within those we reference:
+Running `fetch()` returns a [response](images/https://fetch.spec.whatwg.org/#concept-response), which has many properties, and within those we reference:
 
--   `status`, a numeric value representing the HTTP status code
--
--   `statusText`, a status message, which is `OK` if the request succeeded
+- `status`, a numeric value representing the HTTP status code
+- 
+- `statusText`, a status message, which is `OK` if the request succeeded
 
 `response` also has a `json()` method, which returns a promise that will resolve with the content of the body processed and transformed into JSON.
 
@@ -3363,7 +3259,6 @@ If that succeeds instead, it calls the `json()` function we defined. Since the p
 In this case, we return the data JSON processed, so the third promise receives the JSON directly:
 
 ```js
-//
 
 .then((data) => {
 
@@ -3382,7 +3277,6 @@ and we simply log it to the console.
 When anything in the chain of promises fails and raises an error or rejects the promise, the control goes to the nearest `catch()` statement down the chain.
 
 ```js
-//
 new Promise((resolve, reject) => {
     throw new Error('Error');
 }).catch((err) => {
@@ -3403,7 +3297,6 @@ new Promise((resolve, reject) => {
 If inside the `catch()` you raise an error, you can append a second `catch()` to handle it, and so on.
 
 ```js
-//
 new Promise((resolve, reject) => {
     throw new Error('Error');
 })
@@ -3428,7 +3321,6 @@ If you need to synchronize different promises, `Promise.all()` helps you define 
 Example:
 
 ```js
-//
 const f1 = fetch('/something.json');
 
 const f2 = fetch('/something2.json');
@@ -3447,7 +3339,6 @@ Promise.all([f1, f2])
 The ES2015 destructuring assignment syntax allows you to also do
 
 ```js
-//
 Promise.all([f1, f2]).then(([res1, res2]) => {
     console.log('Results', res1, res2);
 });
@@ -3462,7 +3353,6 @@ You are not limited to using `fetch` of course, **any promise can be used in thi
 Example:
 
 ```js
-//
 const first = new Promise((resolve, reject) => {
     setTimeout(resolve, 500, 'first');
 });
@@ -3483,7 +3373,6 @@ Promise.race([first, second]).then((result) => {
 Example:
 
 ```js
-//
 const first = new Promise((resolve, reject) => {
     setTimeout(reject, 500, 'first');
 });
@@ -3534,7 +3423,6 @@ They make the code look like it's synchronous, but it's asynchronous and non-blo
 An async function returns a promise, like in this example:
 
 ```js
-//
 const doSomethingAsync = () => {
     return new Promise((resolve) => {
         setTimeout(() => resolve('I did something'), 3000);
@@ -3545,7 +3433,6 @@ const doSomethingAsync = () => {
 When you want to **call** this function you prepend `await`, and **the calling code will stop until the promise is resolved or rejected**. One caveat: the client function must be defined as `async`. Here's an example:
 
 ```js
-//
 const doSomething = async () => {
     console.log(await doSomethingAsync());
 };
@@ -3555,12 +3442,9 @@ const doSomething = async () => {
 
 This is a simple example of async/await used to run a function asynchronously:
 
-<iframe title="Modern Asynchronous JavaScript with Async and Await" src="https://stackblitz.com/edit/nodejs-dev-0007-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0007-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Modern Asynchronous JavaScript with Async and Await" src="https://stackblitz.com/edit/nodejs-dev-0007-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0007-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 const doSomethingAsync = () => {
     return new Promise((resolve) => {
         setTimeout(() => resolve('I did something'), 3000);
@@ -3599,7 +3483,6 @@ Even if it's not doing so explicitly, it will internally make it return a promis
 This is why this code is valid:
 
 ```js
-//
 const aFunction = async () => {
     return 'test';
 };
@@ -3610,7 +3493,6 @@ aFunction().then(alert); // This will alert 'test'
 and it's the same as:
 
 ```js
-//
 const aFunction = () => {
     return Promise.resolve('test');
 };
@@ -3627,7 +3509,6 @@ And this is a very simple example, the major benefits will arise when the code i
 For example here's how you would get a JSON resource, and parse it, using promises:
 
 ```js
-//
 const getFirstUserData = () => {
     return fetch('/users.json') // get users list
         .then((response) => response.json()) // parse JSON
@@ -3645,7 +3526,6 @@ getFirstUserData();
 And here is the same functionality provided using await/async:
 
 ```js
-//
 const getFirstUserData = async () => {
     const response = await fetch('/users.json'); // get users list
 
@@ -3667,12 +3547,9 @@ getFirstUserData();
 
 Async functions can be chained very easily, and the syntax is much more readable than with plain promises:
 
-<iframe title="Multiple async functions in series" src="https://stackblitz.com/edit/nodejs-dev-0008-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0008-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Multiple async functions in series" src="https://stackblitz.com/edit/nodejs-dev-0008-01?index.js&zenmode=1&view=editor" alt="nodejs-dev-0008-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 const promiseToDoSomething = () => {
     return new Promise((resolve) => {
         setTimeout(() => resolve('I did something'), 10000);
@@ -3716,14 +3593,13 @@ description: 'How to work with custom events in Node.js'
 
 If you worked with JavaScript in the browser, you know how much of the interaction of the user is handled through events: mouse clicks, keyboard button presses, reacting to mouse movements, and so on.
 
-On the backend side, Node.js offers us the option to build a similar system using the [`events` module](https://nodejs.org/api/events.html).
+On the backend side, Node.js offers us the option to build a similar system using the [`events` module](images/https://nodejs.org/api/events.html).
 
 This module, in particular, offers the `EventEmitter` class, which we'll use to handle our events.
 
 You initialize that using
 
 ```js
-//
 const EventEmitter = require('events');
 
 const eventEmitter = new EventEmitter();
@@ -3731,14 +3607,13 @@ const eventEmitter = new EventEmitter();
 
 This object exposes, among many others, the `on` and `emit` methods.
 
--   `emit` is used to trigger an event
--
--   `on` is used to add a callback function that's going to be executed when the event is triggered
+- `emit` is used to trigger an event
+- 
+- `on` is used to add a callback function that's going to be executed when the event is triggered
 
 For example, let's create a `start` event, and as a matter of providing a sample, we react to that by just logging to the console:
 
 ```js
-//
 eventEmitter.on('start', () => {
     console.log('started');
 });
@@ -3747,7 +3622,6 @@ eventEmitter.on('start', () => {
 When we run
 
 ```js
-//
 eventEmitter.emit('start');
 ```
 
@@ -3756,7 +3630,6 @@ the event handler function is triggered, and we get the console log.
 You can pass arguments to the event handler by passing them as additional arguments to `emit()`:
 
 ```js
-//
 eventEmitter.on('start', (number) => {
     console.log(`started ${number}`);
 });
@@ -3767,7 +3640,6 @@ eventEmitter.emit('start', 23);
 Multiple arguments:
 
 ```js
-//
 eventEmitter.on('start', (start, end) => {
     console.log(`started from ${start} to ${end}`);
 });
@@ -3777,11 +3649,11 @@ eventEmitter.emit('start', 1, 100);
 
 The EventEmitter object also exposes several other methods to interact with events, like
 
--   `once()`: add a one-time listener
--
--   `removeListener()` / `off()`: remove an event listener from an event
+- `once()`: add a one-time listener
+- 
+- `removeListener()` / `off()`: remove an event listener from an event
 
--   `removeAllListeners()`: remove all listeners for an event
+- `removeAllListeners()`: remove all listeners for an event
 
 You can read all their details on the events module page at <https://nodejs.org/api/events.html>
 
@@ -3791,12 +3663,9 @@ description: 'How to build an HTTP server with Node.js'
 
 Here is a sample Hello World HTTP web server:
 
-<iframe title="Build an HTTP Server" src="https://stackblitz.com/edit/nodejs-dev-0009-01?index.js&zenmode=1" alt="nodejs-dev-0009-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;">
-</iframe>
-<br>
+<iframe title="Build an HTTP Server" src="https://stackblitz.com/edit/nodejs-dev-0009-01?index.js&zenmode=1" alt="nodejs-dev-0009-01 on StackBlitz" style="height: 400px; width: 100%; border: 0;"></iframe>
 
 ```js
-//
 
 const http = require('http')
 
@@ -3820,13 +3689,13 @@ server.listen(port, () => {
 
 ```-->
 
-Let's analyze it briefly. We include the [`http` module](https://nodejs.org/api/http.html).
+Let's analyze it briefly. We include the [`http` module](images/https://nodejs.org/api/http.html).
 
 We use the module to create an HTTP server.
 
 The server is set to listen on the specified port, `3000`. When the server is ready, the `listen` callback function is called.
 
-The callback function we pass is the one that's going to be executed upon every request that comes in. Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
+The callback function we pass is the one that's going to be executed upon every request that comes in. Whenever a new request is received, the [`request` event](images/https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](images/https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](images/https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 `request` provides the request details. Through it, we access the request headers and request data.
 
@@ -3835,7 +3704,6 @@ The callback function we pass is the one that's going to be executed upon every 
 In this case with
 
 ```js
-//
 res.statusCode = 200;
 ```
 
@@ -3844,14 +3712,12 @@ we set the statusCode property to 200, to indicate a successful response.
 We also set the Content-Type header:
 
 ```js
-//
 res.setHeader('Content-Type', 'text/html');
 ```
 
 and we end close the response, adding the content as an argument to `end()`:
 
 ```js
-//
 res.end('<h1>Hello, World!</h1>');
 ```
 
@@ -3862,7 +3728,6 @@ description: 'How to perform HTTP requests with Node.js using GET, POST, PUT and
 ## Perform a GET Request
 
 ```js
-//
 const https = require('https');
 
 const options = {
@@ -3893,7 +3758,6 @@ req.end();
 ## Perform a POST Request
 
 ```js
-//
 const https = require('https');
 
 const data = new TextEncoder().encode(
@@ -3945,10 +3809,9 @@ description: 'Find out how to make an HTTP POST request using Node.js'
 
 There are many ways to perform an HTTP POST request in Node.js, depending on the abstraction level you want to use.
 
-The simplest way to perform an HTTP request using Node.js is to use the [Axios library](https://github.com/axios/axios):
+The simplest way to perform an HTTP request using Node.js is to use the [Axios library](images/https://github.com/axios/axios):
 
 ```js
-//
 const axios = require('axios');
 
 axios
@@ -3973,7 +3836,6 @@ Axios requires the use of a 3rd party library.
 A POST request is possible just using the Node.js standard modules, although it's more verbose than the two preceding options:
 
 ```js
-//
 const https = require('https');
 
 const data = JSON.stringify({
@@ -4024,7 +3886,6 @@ If you are using Express, that's quite simple: use the `body-parser` Node.js mod
 For example, to get the body of this request:
 
 ```js
-//
 const axios = require('axios');
 
 axios.post('https://whatever.com/todos', {
@@ -4035,7 +3896,6 @@ axios.post('https://whatever.com/todos', {
 This is the matching server-side code:
 
 ```js
-//
 const express = require('express');
 
 const app = express();
@@ -4064,7 +3924,6 @@ So, we must listen for the body content to be processed, and it's processed in c
 We first get the data by listening to the stream `data` events, and when the data ends, the stream `end` event is called, once:
 
 ```js
-//
 const server = http.createServer((req, res) => {
     // we can access HTTP headers
 
@@ -4081,7 +3940,6 @@ const server = http.createServer((req, res) => {
 So to access the data, assuming we expect to receive a string, we must concatenate the chunks into a string when listening to the stream `data`, and when the stream `end`, we parse the string to JSON:
 
 ```js
-//
 const server = http.createServer((req, res) => {
     let data = '';
 
@@ -4100,7 +3958,6 @@ const server = http.createServer((req, res) => {
 Starting from Node.js v10 a `for await .. of` syntax is available for use. It simplifies the example above and makes it look more linear:
 
 ```js
-//
 const server = http.createServer(async (req, res) => {
     const buffers = [];
 
@@ -4145,7 +4002,6 @@ Before you're able to interact with a file that sits in your filesystem, you mus
 A file descriptor is a reference to an open file, a number (fd) returned by opening the file using the `open()` method offered by the `fs` module. This number (`fd`) uniquely identifies an open file in operating system:
 
 ```js
-//
 const fs = require('fs');
 
 fs.open('/Users/joe/test.txt', 'r', (err, fd) => {
@@ -4159,18 +4015,17 @@ That flag means we open the file for reading.
 
 Other flags you'll commonly use are
 
--   `r+` open the file for reading and writing, if file don't exist it won't be created.
--
--   `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is create
--
--   `a` open the file for writing, positioning the stream at the end of the file. The file is created if not existing
+- `r+` open the file for reading and writing, if file don't exist it won't be created.
+- 
+- `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is create
+- 
+- `a` open the file for writing, positioning the stream at the end of the file. The file is created if not existing
 
--   `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing
+- `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing
 
 You can also open the file by using the `fs.openSync` method, which returns the file descriptor, instead of providing it in a callback:
 
 ```js
-//
 const fs = require('fs');
 
 try {
@@ -4193,7 +4048,6 @@ In particular, using the `stat()` method provided by the `fs` module.
 You call it passing a file path, and once Node.js gets the file details it will call the callback function you pass, with 2 parameters: an error message, and the file stats:
 
 ```js
-//
 const fs = require('fs');
 
 fs.stat('/Users/joe/test.txt', (err, stats) => {
@@ -4210,7 +4064,6 @@ fs.stat('/Users/joe/test.txt', (err, stats) => {
 Node.js provides also a sync method, which blocks the thread until the file stats are ready:
 
 ```js
-//
 const fs = require('fs');
 
 try {
@@ -4224,16 +4077,15 @@ The file information is included in the stats variable. What kind of information
 
 A lot, including:
 
--   if the file is a directory or a file, using `stats.isFile()` and `stats.isDirectory()`
--
--   if the file is a symbolic link using `stats.isSymbolicLink()`
+- if the file is a directory or a file, using `stats.isFile()` and `stats.isDirectory()`
+- 
+- if the file is a symbolic link using `stats.isSymbolicLink()`
 
--   the file size in bytes using `stats.size`.
+- the file size in bytes using `stats.size`.
 
 There are other advanced methods, but the bulk of what you'll use in your day-to-day programming is this.
 
 ```js
-//
 const fs = require('fs');
 
 fs.stat('/Users/joe/test.txt', (err, stats) => {
@@ -4272,7 +4124,6 @@ You need to pay attention when using paths in your applications, as this differe
 You include this module in your files using
 
 ```js
-//
 const path = require('path');
 ```
 
@@ -4282,16 +4133,15 @@ and you can start using its methods.
 
 Given a path, you can extract information out of it using those methods:
 
--   `dirname`: get the parent folder of a file
--
--   `basename`: get the filename part
+- `dirname`: get the parent folder of a file
+- 
+- `basename`: get the filename part
 
--   `extname`: get the file extension
+- `extname`: get the file extension
 
 Example:
 
 ```js
-//
 const notes = '/users/joe/notes.txt';
 
 path.dirname(notes); // /users/joe
@@ -4304,7 +4154,6 @@ path.extname(notes); // .txt
 You can get the file name without the extension by specifying a second argument to `basename`:
 
 ```js
-//
 path.basename(notes, path.extname(notes)); //notes
 ```
 
@@ -4313,7 +4162,6 @@ path.basename(notes, path.extname(notes)); //notes
 You can join two or more parts of a path by using `path.join()`:
 
 ```js
-//
 const name = 'joe';
 
 path.join('/', 'users', name, 'notes.txt'); //'/users/joe/notes.txt'
@@ -4322,28 +4170,24 @@ path.join('/', 'users', name, 'notes.txt'); //'/users/joe/notes.txt'
 You can get the absolute path calculation of a relative path using `path.resolve()`:
 
 ```js
-//
 path.resolve('joe.txt'); //'/Users/joe/joe.txt' if run from my home folder
 ```
 
 In this case Node.js will simply append `/joe.txt` to the current working directory. If you specify a second parameter folder, `resolve` will use the first as a base for the second:
 
 ```js
-//
 path.resolve('tmp', 'joe.txt'); //'/Users/joe/tmp/joe.txt' if run from my home folder
 ```
 
 If the first parameter starts with a slash, that means it's an absolute path:
 
 ```js
-//
 path.resolve('/etc', 'joe.txt'); //'/etc/joe.txt'
 ```
 
 `path.normalize()` is another useful function, that will try and calculate the actual path, when it contains relative specifiers like `.` or `..`, or double slashes:
 
 ```js
-//
 path.normalize('/users/joe/..//test.txt'); //'/users/test.txt'
 ```
 
@@ -4356,7 +4200,6 @@ description: 'How to read files using Node.js'
 The simplest way to read a file in Node.js is to use the `fs.readFile()` method, passing it the file path, encoding and a callback function that will be called with the file data (and the error):
 
 ```js
-//
 const fs = require('fs');
 
 fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
@@ -4373,7 +4216,6 @@ fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
 Alternatively, you can use the synchronous version `fs.readFileSync()`:
 
 ```js
-//
 const fs = require('fs');
 
 try {
@@ -4400,7 +4242,6 @@ The easiest way to write to files in Node.js is to use the `fs.writeFile()` API.
 Example:
 
 ```js
-//
 const fs = require('fs');
 
 const content = 'Some content!';
@@ -4419,7 +4260,6 @@ fs.writeFile('/Users/joe/test.txt', content, (err) => {
 Alternatively, you can use the synchronous version `fs.writeFileSync()`:
 
 ```js
-//
 const fs = require('fs');
 
 const content = 'Some content!';
@@ -4438,19 +4278,18 @@ By default, this API will **replace the contents of the file** if it does alread
 You can modify the default by specifying a flag:
 
 ```js
-//
 fs.writeFile('/Users/joe/test.txt', content, { flag: 'a+' }, (err) => {});
 ```
 
 The flags you'll likely use are
 
--   `r+` open the file for reading and writing
--
--   `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if
--
--   `a` open the file for writing, positioning the stream at the end of the file. The file is created if it does not exist
+- `r+` open the file for reading and writing
+- 
+- `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if 
+- 
+- `a` open the file for writing, positioning the stream at the end of the file. The file is created if it does not exist
 
--   `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if it does not exist
+- `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if it does not exist
 
 (you can find more flags at <https://nodejs.org/api/fs.html#fs_file_system_flags>)
 
@@ -4459,7 +4298,6 @@ The flags you'll likely use are
 A handy method to append content to the end of a file is `fs.appendFile()` (and its `fs.appendFileSync()` counterpart):
 
 ```js
-//
 const content = 'Some content!';
 
 fs.appendFile('file.log', content, (err) => {
@@ -4494,7 +4332,6 @@ Use `fs.access()` to check if the folder exists and Node.js can access it with i
 Use `fs.mkdir()` or `fs.mkdirSync()` to create a new folder.
 
 ```js
-//
 const fs = require('fs');
 
 const folderName = '/Users/joe/test';
@@ -4515,7 +4352,6 @@ Use `fs.readdir()` or `fs.readdirSync()` to read the contents of a directory.
 This piece of code reads the content of a folder, both files and subfolders, and returns their relative path:
 
 ```js
-//
 const fs = require('fs');
 
 const folderPath = '/Users/joe';
@@ -4526,7 +4362,6 @@ fs.readdirSync(folderPath);
 You can get the full path:
 
 ```js
-//
 fs.readdirSync(folderPath).map((fileName) => {
     return path.join(folderPath, fileName);
 });
@@ -4535,7 +4370,6 @@ fs.readdirSync(folderPath).map((fileName) => {
 You can also filter the results to only return the files, and exclude the folders:
 
 ```js
-//
 const isFile = (fileName) => {
     return fs.lstatSync(fileName).isFile();
 };
@@ -4553,7 +4387,6 @@ fs.readdirSync(folderPath)
 Use `fs.rename()` or `fs.renameSync()` to rename folder. The first parameter is the current path, the second the new path:
 
 ```js
-//
 const fs = require('fs');
 
 fs.rename('/Users/joe', '/Users/roger', (err) => {
@@ -4570,7 +4403,6 @@ fs.rename('/Users/joe', '/Users/roger', (err) => {
 `fs.renameSync()` is the synchronous version:
 
 ```js
-//
 const fs = require('fs');
 
 try {
@@ -4587,7 +4419,6 @@ Use `fs.rmdir()` or `fs.rmdirSync()` to remove a folder.
 Removing a folder that has content can be more complicated than you need. You can pass the option `{ recursive: true }` to recursively remove the contents.
 
 ```js
-//
 const fs = require('fs');
 
 fs.rmdir(dir, { recursive: true }, (err) => {
@@ -4602,7 +4433,6 @@ fs.rmdir(dir, { recursive: true }, (err) => {
 > **NOTE:** In Node `v16.x` the option `recursive` is **deprecated** for `fs.rmdir` of callback API, instead use `fs.rm` to delete folders that have content in them:
 
 ```js
-//
 const fs = require('fs');
 
 fs.rm(dir, { recursive: true, force: true }, (err) => {
@@ -4614,7 +4444,7 @@ fs.rm(dir, { recursive: true, force: true }, (err) => {
 });
 ```
 
-Or you can install and make use of the [`fs-extra`](https://www.npmjs.com/package/fs-extra) module, which is very popular and well maintained. It's a drop-in replacement of the `fs` module, which provides more features on top of it.
+Or you can install and make use of the [`fs-extra`](images/https://www.npmjs.com/package/fs-extra) module, which is very popular and well maintained. It's a drop-in replacement of the `fs` module, which provides more features on top of it.
 
 In this case the `remove()` method is what you want.
 
@@ -4629,7 +4459,6 @@ npm install fs-extra
 and use it like this:
 
 ```js
-//
 const fs = require('fs-extra');
 
 const folder = '/Users/joe';
@@ -4642,7 +4471,6 @@ fs.remove(folder, (err) => {
 It can also be used with promises:
 
 ```js
-//
 fs.remove(folder)
 
     .then(() => {
@@ -4657,7 +4485,6 @@ fs.remove(folder)
 or with async/await:
 
 ```js
-//
 async function removeFolder(folder) {
     try {
         await fs.remove(folder);
@@ -4682,84 +4509,82 @@ The `fs` module provides a lot of very useful functionality to access and intera
 There is no need to install it. Being part of the Node.js core, it can be used by simply requiring it:
 
 ```js
-//
 const fs = require('fs');
 ```
 
 Once you do so, you have access to all its methods, which include:
 
--   `fs.access()`: check if the file exists and Node.js can access it with its permissions
--
--   `fs.appendFile()`: append data to a file. If the file does not exist, it's created
--
--   `fs.chmod()`: change the permissions of
--
--   `fs.chown()`: change the owner and group of a file speci
--
--   `fs.close()`: close a file descriptor
--
--   `fs.copyFile()`: copies a file
--
--   `fs.createReadStream()`: create a readable file st
--
--   `fs.createWriteStream()`: create a writable file str
--
--   `fs.link()`: create a new hard link to a
--
--   `fs.mkdir()`: create a new folder
--
--   `fs.mkdtemp()`: create a temporary directory
--
--   `fs.open()`: set the file mode
--
--   `fs.readdir()`: read the contents of a directory
--
--   `fs.readFile()`: read the content of a file. Related: `fs.read()`
+- `fs.access()`: check if the file exists and Node.js can access it with its permissions
+- 
+- `fs.appendFile()`: append data to a file. If the file does not exist, it's created
+- 
+- `fs.chmod()`: change the permissions of
+- 
+- `fs.chown()`: change the owner and group of a file speci
+- 
+- `fs.close()`: close a file descriptor
+- 
+- `fs.copyFile()`: copies a file
+- 
+- `fs.createReadStream()`: create a readable file st
+- 
+- `fs.createWriteStream()`: create a writable file str
+- 
+- `fs.link()`: create a new hard link to a
+- 
+- `fs.mkdir()`: create a new folder
+- 
+- `fs.mkdtemp()`: create a temporary directory
+- 
+- `fs.open()`: set the file mode
+- 
+- `fs.readdir()`: read the contents of a directory
+- 
+- `fs.readFile()`: read the content of a file. Related: `fs.read()`
 
--   `fs.readlink()`: read the value of a symbolic link
+- `fs.readlink()`: read the value of a symbolic link
 
--   `fs.realpath()`: resolve relative file path pointers (`.`, `..`) to the full path
+- `fs.realpath()`: resolve relative file path pointers (`.`, `..`) to the full path
 
--   `fs.rename()`: rename a file or folder
+- `fs.rename()`: rename a file or folder
 
--   `fs.rmdir()`: remove a folder
+- `fs.rmdir()`: remove a folder
 
--   `fs.stat()`: returns the status of the file identified by the filename passed. Related: `fs.fstat()`, `fs.lstat()`
+- `fs.stat()`: returns the status of the file identified by the filename passed. Related: `fs.fstat()`, `fs.lstat()`
 
--   `fs.symlink()`: create a new symbolic link to a file
+- `fs.symlink()`: create a new symbolic link to a file
 
--   `fs.truncate()`: truncate to the specified length the file identified by the filename passed. Related: `fs.ftruncate()`
+- `fs.truncate()`: truncate to the specified length the file identified by the filename passed. Related: `fs.ftruncate()`
 
--   `fs.unlink()`: remove a file or a symbolic link
+- `fs.unlink()`: remove a file or a symbolic link
 
--   `fs.unwatchFile()`: stop watching for changes on a file
+- `fs.unwatchFile()`: stop watching for changes on a file
 
--   `fs.utimes()`: change the timestamp of the file identified by the filename passed. Related: `fs.futimes()`
+- `fs.utimes()`: change the timestamp of the file identified by the filename passed. Related: `fs.futimes()`
 
--   `fs.watchFile()`: start watching for changes on a file. Related: `fs.watch()`
+- `fs.watchFile()`: start watching for changes on a file. Related: `fs.watch()`
 
--   `fs.writeFile()`: write data to a file. Related: `fs.write()`
+- `fs.writeFile()`: write data to a file. Related: `fs.write()`
 
 One peculiar thing about the `fs` module is that all the methods are asynchronous by default, but they can also work synchronously by appending `Sync`.
 
 For example:
 
--   `fs.rename()`
--
--   `fs.renameSync
--
--   `fs.write()`
+- `fs.rename()`
+- 
+- `fs.renameSync
+- 
+- `fs.write()`
 
--   `fs.writeSync()`
+- `fs.writeSync()`
 
 This makes a huge difference in your application flow.
 
-> Node.js 10 includes [experimental support](https://nodejs.org/api/fs.html#fs_fs_promises_api) for a promise based API
+> Node.js 10 includes [experimental support](images/https://nodejs.org/api/fs.html#fs_fs_promises_api) for a promise based API
 
 For example let's examine the `fs.rename()` method. The asynchronous API is used with a callback:
 
 ```js
-//
 const fs = require('fs');
 
 fs.rename('before.json', 'after.json', (err) => {
@@ -4774,7 +4599,6 @@ fs.rename('before.json', 'after.json', (err) => {
 A synchronous API can be used like this, with a try/catch block to handle errors:
 
 ```js
-//
 const fs = require('fs');
 
 try {
@@ -4797,7 +4621,6 @@ The `path` module provides a lot of very useful functionality to access and inte
 There is no need to install it. Being part of the Node.js core, it can be used by simply requiring it:
 
 ```js
-//
 const path = require('path');
 ```
 
@@ -4810,7 +4633,6 @@ These are the `path` methods:
 Return the last portion of a path. A second parameter can filter out the file extension:
 
 ```js
-//
 require('path').basename('/test/something'); //something
 
 require('path').basename('/test/something.txt'); //something.txt
@@ -4823,7 +4645,6 @@ require('path').basename('/test/something.txt', '.txt'); //something
 Return the directory part of a path:
 
 ```js
-//
 require('path').dirname('/test/something'); // /test
 
 require('path').dirname('/test/something/file.txt'); // /test/something
@@ -4834,7 +4655,6 @@ require('path').dirname('/test/something/file.txt'); // /test/something
 Return the extension part of a path
 
 ```js
-//
 require('path').extname('/test/something'); // ''
 
 require('path').extname('/test/something/file.txt'); // '.txt'
@@ -4846,22 +4666,21 @@ Returns a path string from an object, This is the opposite of `path.parse`<br/>
 
 `path.format` accepts an object as argument with the follwing keys:
 
--   `root`: the root
--
--   `dir`: the folder path starting fro
--
--   `base`: the file name + extension
+- `root`: the root
+- 
+- `dir`: the folder path starting fro
+- 
+- `base`: the file name + extension
 
--   `name`: the file name
+- `name`: the file name
 
--   `ext`: the file extension
+- `ext`: the file extension
 
 `root` is ignored if `dir` is provided<br/>
 
 `ext` and `name` are ignored if `base` exists
 
 ```js
-//
 // POSIX
 
 require('path').format({ dir: '/Users/joe', base: 'test.txt' }); //  '/Users/joe/test.txt'
@@ -4878,7 +4697,6 @@ require('path').format({ dir: 'C:\\Users\\joe', base: 'test.txt' }); //  'C:\\Us
 Returns true if it's an absolute path
 
 ```js
-//
 require('path').isAbsolute('/test/something'); // true
 
 require('path').isAbsolute('./test/something'); // false
@@ -4889,7 +4707,6 @@ require('path').isAbsolute('./test/something'); // false
 Joins two or more parts of a path:
 
 ```js
-//
 const name = 'joe';
 
 require('path').join('/', 'users', name, 'notes.txt'); //'/users/joe/notes.txt'
@@ -4900,7 +4717,6 @@ require('path').join('/', 'users', name, 'notes.txt'); //'/users/joe/notes.txt'
 Tries to calculate the actual path when it contains relative specifiers like `.` or `..`, or double slashes:
 
 ```js
-//
 require('path').normalize('/users/joe/..//test.txt'); //'/users/test.txt'
 ```
 
@@ -4908,27 +4724,25 @@ require('path').normalize('/users/joe/..//test.txt'); //'/users/test.txt'
 
 Parses a path to an object with the segments that compose it:
 
--   `root`: the root
--
--   `dir`: the folder path starting fro
--
--   `base`: the file name + extension
+- `root`: the root
+- 
+- `dir`: the folder path starting fro
+- 
+- `base`: the file name + extension
 
--   `name`: the file name
+- `name`: the file name
 
--   `ext`: the file extension
+- `ext`: the file extension
 
 Example:
 
 ```js
-//
 require('path').parse('/users/test.txt');
 ```
 
 results in
 
 ```js
-//
 
 {
 
@@ -4953,7 +4767,6 @@ Accepts 2 paths as arguments. Returns the relative path from the first path to t
 Example:
 
 ```js
-//
 require('path').relative('/Users/joe', '/Users/joe/test.txt'); //'test.txt'
 
 require('path').relative('/Users/joe', '/Users/joe/something/test.txt'); //'something/test.txt'
@@ -4964,21 +4777,18 @@ require('path').relative('/Users/joe', '/Users/joe/something/test.txt'); //'some
 You can get the absolute path calculation of a relative path using `path.resolve()`:
 
 ```js
-//
 path.resolve('joe.txt'); //'/Users/joe/joe.txt' if run from my home folder
 ```
 
 By specifying a second parameter, `resolve` will use the first as a base for the second:
 
 ```js
-//
 path.resolve('tmp', 'joe.txt'); //'/Users/joe/tmp/joe.txt' if run from my home folder
 ```
 
 If the first parameter starts with a slash, that means it's an absolute path:
 
 ```js
-//
 path.resolve('/etc', 'joe.txt'); //'/etc/joe.txt'
 ```
 
@@ -4989,7 +4799,6 @@ description: 'The os module of Node.js provides useful functions to interact wit
 This module provides many functions that you can use to retrieve information from the underlying operating system and the computer the program runs on, and interact with it.
 
 ```js
-//
 const os = require('os');
 ```
 
@@ -5016,7 +4825,6 @@ Return information on the CPUs available on your system.
 Example:
 
 ```js
-//
 [
     {
         model: 'Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz',
@@ -5058,7 +4866,7 @@ Example:
 
 ## `os.endianness()`
 
-Return `BE` or `LE` depending if Node.js was compiled with [Big Endian or Little Endian](https://en.wikipedia.org/wiki/Endianness).
+Return `BE` or `LE` depending if Node.js was compiled with [Big Endian or Little Endian](images/https://en.wikipedia.org/wiki/Endianness).
 
 ## `os.freemem()`
 
@@ -5071,7 +4879,6 @@ Return the path to the home directory of the current user.
 Example:
 
 ```js
-//
 '/Users/joe';
 ```
 
@@ -5088,7 +4895,6 @@ It only returns a meaningful value on Linux and macOS.
 Example:
 
 ```js
-//
 [3.68798828125, 4.00244140625, 11.1181640625];
 ```
 
@@ -5099,7 +4905,6 @@ Returns the details of the network interfaces available on your system.
 Example:
 
 ```js
-//
 
 { lo0:
 
@@ -5181,17 +4986,17 @@ Example:
 
 Return the platform that Node.js was compiled for:
 
--   `darwin`
--
--   `freebsd`
--
--   `linux`
--
--   `openbsd`
+- `darwin`
+- 
+- `freebsd`
+- 
+- `linux`
+- 
+- `openbsd`
 
--   `win32`
+- `win32`
 
--   ...more
+- ...more
 
 ## `os.release()`
 
@@ -5209,11 +5014,11 @@ Returns the number of bytes that represent the total memory available in the sys
 
 Identifies the operating system:
 
--   `Linux`
--
--   `Darwin` on macOS
+- `Linux`
+- 
+- `Darwin` on macOS
 
--   `Windows_NT` on Windows
+- `Windows_NT` on Windows
 
 ## `os.uptime()`
 
@@ -5230,7 +5035,6 @@ description: 'The events module of Node.js provides the EventEmitter class'
 The `events` module provides us the EventEmitter class, which is key to working with events in Node.js.
 
 ```js
-//
 const EventEmitter = require('events');
 
 const door = new EventEmitter();
@@ -5238,9 +5042,9 @@ const door = new EventEmitter();
 
 The event listener has these in-built events:
 
--   `newListener` when a listener is added
--
--   `removeListener` when a listener is removed
+- `newListener` when a listener is added
+- 
+- `removeListener` when a listener is removed
 
 Here's a detailed description of the most useful methods:
 
@@ -5253,7 +5057,6 @@ Alias for `emitter.on()`.
 Emits an event. It synchronously calls every event listener in the order they were registered.
 
 ```js
-//
 door.emit('slam'); // emitting the event "slam"
 ```
 
@@ -5262,7 +5065,6 @@ door.emit('slam'); // emitting the event "slam"
 Return an array of strings that represent the events registered on the current `EventEmitter` object:
 
 ```js
-//
 door.eventNames();
 ```
 
@@ -5271,7 +5073,6 @@ door.eventNames();
 Get the maximum amount of listeners one can add to an `EventEmitter` object, which defaults to 10 but can be increased or lowered by using `setMaxListeners()`
 
 ```js
-//
 door.getMaxListeners();
 ```
 
@@ -5280,7 +5081,6 @@ door.getMaxListeners();
 Get the count of listeners of the event passed as parameter:
 
 ```js
-//
 door.listenerCount('open');
 ```
 
@@ -5289,7 +5089,6 @@ door.listenerCount('open');
 Gets an array of listeners of the event passed as parameter:
 
 ```js
-//
 door.listeners('open');
 ```
 
@@ -5304,7 +5103,6 @@ Adds a callback function that's called when an event is emitted.
 Usage:
 
 ```js
-//
 door.on('open', () => {
     console.log('Door was opened');
 });
@@ -5315,7 +5113,6 @@ door.on('open', () => {
 Adds a callback function that's called when an event is emitted for the first time after registering this. This callback is only going to be called once, never again.
 
 ```js
-//
 const EventEmitter = require('events');
 
 const ee = new EventEmitter();
@@ -5338,7 +5135,6 @@ When you add a listener using `once`, it's added last in the queue of listeners,
 Removes all listeners of an `EventEmitter` object listening to a specific event:
 
 ```js
-//
 door.removeAllListeners('open');
 ```
 
@@ -5347,7 +5143,6 @@ door.removeAllListeners('open');
 Remove a specific listener. You can do this by saving the callback function to a variable, when added, so you can reference it later:
 
 ```js
-//
 const doSomething = () => {};
 
 door.on('open', doSomething);
@@ -5360,7 +5155,6 @@ door.removeListener('open', doSomething);
 Sets the maximum amount of listeners one can add to an `EventEmitter` object, which defaults to 10 but can be increased or lowered.
 
 ```js
-//
 door.setMaxListeners(50);
 ```
 
@@ -5374,51 +5168,51 @@ While learning to code, you might also be confused at where does JavaScript end,
 
 I would recommend you to have a good grasp of the main JavaScript concepts before diving into Node.js:
 
--   Lexical Structure
--
--   Express
--
--   Types
--
--   Classe
--
--   Variabl
--
--   Function
--
--   this
--
--   Arrow Functions
+- Lexical Structure
+- 
+- Express
+- 
+- Types
+- 
+- Classe
+- 
+- Variabl
+- 
+- Function
+- 
+- this
+- 
+- Arrow Functions
 
--   Loops
+- Loops
 
--   Scopes
+- Scopes
 
--   Arrays
+- Arrays
 
--   Template Literals
+- Template Literals
 
--   Semicolons
+- Semicolons
 
--   Strict Mode
+- Strict Mode
 
--   ECMAScript 6, 2016, 2017
+- ECMAScript 6, 2016, 2017
 
 With those concepts in mind, you are well on your road to become a proficient JavaScript developer, in both the browser and in Node.js.
 
 The following concepts are also key to understand asynchronous programming, which is one fundamental part of Node.js:
 
--   [Asynchronous programming and callbacks](https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
--
--   [Timers](https://nodejs.dev/learn/discover-javascript-timers)
--
--   [Promises]
--
--   [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
+- [Asynchronous programming and callbacks](images/https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks)
+- 
+- [Timers](images/https://nodejs.dev/learn/discover-javascript-timers)
+- 
+- [Promises]
+- 
+- [Async and Await](images/https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
 
--   Closures
+- Closures
 
--   [The Event Loop](https://nodejs.dev/learn/the-nodejs-event-loop)
+- [The Event Loop](images/https://nodejs.dev/learn/the-nodejs-event-loop)
 
 # 'The Node.js http module'
 
@@ -5429,7 +5223,6 @@ The HTTP core module is a key module to Node.js networking.
 It can be included using
 
 ```js
-//
 const http = require('http');
 ```
 
@@ -5442,7 +5235,6 @@ The module provides some properties and methods, and some classes.
 This property lists all the HTTP methods supported:
 
 ```js
-//
 
 > require('http').METHODS
 
@@ -5519,7 +5311,6 @@ This property lists all the HTTP methods supported:
 This property lists all the HTTP status codes and their description:
 
 ```js
-//
 
 > require('http').STATUS_CODES
 
@@ -5666,7 +5457,6 @@ Return a new instance of the `http.Server` class.
 Usage:
 
 ```js
-//
 const server = http.createServer((req, res) => {
     //handle every single request with this callback
 });
@@ -5684,15 +5474,15 @@ Similar to `http.request()`, but automatically sets the HTTP method to GET, and 
 
 The HTTP module provides 5 classes:
 
--   `http.Agent`
--
--   `http.ClientReq
--
--   `http.Server`
+- `http.Agent`
+- 
+- `http.ClientReq
+- 
+- `http.Server`
 
--   `http.ServerResponse`
+- `http.ServerResponse`
 
--   `http.IncomingMessage`
+- `http.IncomingMessage`
 
 ### `http.Agent`
 
@@ -5710,9 +5500,9 @@ When a response is received, the `response` event is called with the response, w
 
 The returned data of a response can be read in 2 ways:
 
--   you can call the `response.read()` method
--
--   in the `response` event handler you can setup an event listener for the `data` event, so you can listen for the data streamed into.
+- you can call the `response.read()` method
+- 
+- in the `response` event handler you can setup an event listener for the `data` event, so you can listen for the data streamed into.
 
 ### `http.Server`
 
@@ -5720,9 +5510,9 @@ This class is commonly instantiated and returned when creating a new server usin
 
 Once you have a server object, you have access to its methods:
 
--   `close()` stops the server from accepting new connections
--
--   `listen()` starts the HTTP server and listens for connections
+- `close()` stops the server from accepting new connections
+- 
+- `listen()` starts the HTTP server and listens for connections
 
 ### `http.ServerResponse`
 
@@ -5731,7 +5521,6 @@ Created by an `http.Server` and passed as the second parameter to the `request` 
 Commonly known and used in code as `res`:
 
 ```js
-//
 const server = http.createServer((req, res) => {
     //res is an http.ServerResponse object
 });
@@ -5741,19 +5530,19 @@ The method you'll always call in the handler is `end()`, which closes the respon
 
 These methods are used to interact with HTTP headers:
 
--   `getHeaderNames()` get the list of the names of the HTTP headers already set
--
--   `getHeaders()` get a copy of the HTTP headers already set
--
--   `setHeader('headername', value)` sets an HTTP header value
--
--   `getHeader('headername')` gets an HTTP header already set
+- `getHeaderNames()` get the list of the names of the HTTP headers already set
+- 
+- `getHeaders()` get a copy of the HTTP headers already set
+- 
+- `setHeader('headername', value)` sets an HTTP header value
+- 
+- `getHeader('headername')` gets an HTTP header already set
 
--   `removeHeader('headername')` removes an HTTP header already set
+- `removeHeader('headername')` removes an HTTP header already set
 
--   `hasHeader('headername')` return true if the response has that header set
+- `hasHeader('headername')` return true if the response has that header set
 
--   `headersSent()` return true if the headers have already been sent to the client
+- `headersSent()` return true if the headers have already been sent to the client
 
 After processing the headers you can send them to the client by calling `response.writeHead()`, which accepts the statusCode as the first parameter, the optional status message, and the headers object.
 
@@ -5762,7 +5551,6 @@ To send data to the client in the response body, you use `write()`. It will send
 If the headers were not sent yet using `response.writeHead()`, it will send the headers first, with the status code and message that's set in the request, which you can edit by setting the `statusCode` and `statusMessage` properties values:
 
 ```js
-//
 response.statusCode = 500;
 
 response.statusMessage = 'Internal Server Error';
@@ -5772,23 +5560,23 @@ response.statusMessage = 'Internal Server Error';
 
 An `http.IncomingMessage` object is created by:
 
--   `http.Server` when listening to the `request` event
--
--   `http.ClientRequest` when listening to the `response` event
+- `http.Server` when listening to the `request` event
+- 
+- `http.ClientRequest` when listening to the `response` event
 
 It can be used to access the response:
 
--   status using its `statusCode` and `statusMessage` methods
--
--   headers using its `headers` method or `
--
--   HTTP method using its `metho
--
--   HTTP version using the `httpVersion` method
+- status using its `statusCode` and `statusMessage` methods
+- 
+- headers using its `headers` method or `
+- 
+- HTTP method using its `metho
+- 
+- HTTP version using the `httpVersion` method
 
--   URL using the `url` method
+- URL using the `url` method
 
--   underlying socket using the `socket` method
+- underlying socket using the `socket` method
 
 The data is accessed using streams, since `http.IncomingMessage` implements the Readable Stream interface.
 
@@ -5804,7 +5592,7 @@ It represents a fixed-size chunk of memory (can't be resized) allocated outside 
 
 You can think of a buffer like an array of integers, which each represent a byte of data.
 
-It is implemented by the Node.js [Buffer class](https://nodejs.org/api/buffer.html).
+It is implemented by the Node.js [Buffer class](images/https://nodejs.org/api/buffer.html).
 
 ## Why do we need a buffer?
 
@@ -5814,25 +5602,23 @@ Buffers in Node.js are not related to the concept of buffering data. That is wha
 
 ## How to create a buffer
 
-A buffer is created using the [`Buffer.from()`](https://nodejs.org/api/buffer.html#buffer_buffer_from_buffer_alloc_and_buffer_allocunsafe), [`Buffer.alloc()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_alloc_size_fill_encoding), and [`Buffer.allocUnsafe()`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_allocunsafe_size) methods.
+A buffer is created using the [`Buffer.from()`](images/https://nodejs.org/api/buffer.html#buffer_buffer_from_buffer_alloc_and_buffer_allocunsafe), [`Buffer.alloc()`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_alloc_size_fill_encoding), and [`Buffer.allocUnsafe()`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_allocunsafe_size) methods.
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 ```
 
--   [`Buffer.from(array)`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_array)
--
--   [`Buffer.from(arrayBuffer[, byteOffset[, length]])`](https://nodejs.org/api/buffer.html#buffer_class
--
--   [`Buffer.from(buffer)`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_buffer)
+- [`Buffer.from(array)`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_array)
+- 
+- [`Buffer.from(arrayBuffer[, byteOffset[, length]])`](images/https://nodejs.org/api/buffer.html#buffer_class
+- 
+- [`Buffer.from(buffer)`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_buffer)
 
--   [`Buffer.from(string[, encoding])`](https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_string_encoding)
+- [`Buffer.from(string[, encoding])`](images/https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_string_encoding)
 
 You can also just initialize the buffer passing the size. This creates a 1KB buffer:
 
 ```js
-//
 const buf = Buffer.alloc(1024);
 
 //or
@@ -5851,7 +5637,6 @@ Older data, if present in the memory, can be accessed or leaked when the `Buffer
 A buffer, being an array of bytes, can be accessed like an array:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 console.log(buf[0]); //72
@@ -5868,7 +5653,6 @@ Keep in mind that some characters may occupy more than one byte in the buffer (`
 You can print the full content of the buffer using the `toString()` method:
 
 ```js
-//
 console.log(buf.toString());
 ```
 
@@ -5881,7 +5665,6 @@ console.log(buf.toString());
 Use the `length` property:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 console.log(buf.length);
@@ -5890,7 +5673,6 @@ console.log(buf.length);
 ### Iterate over the contents of a buffer
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 for (const item of buf) {
@@ -5903,7 +5685,6 @@ for (const item of buf) {
 You can write to a buffer a whole string of data by using the `write()` method:
 
 ```js
-//
 const buf = Buffer.alloc(4);
 
 buf.write('Hey!');
@@ -5912,7 +5693,6 @@ buf.write('Hey!');
 Just like you can access a buffer with an array syntax, you can also set the contents of the buffer in the same way:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 buf[1] = 111; //o in UTF-8
@@ -5927,7 +5707,6 @@ If you want to create a partial visualization of a buffer, you can create a slic
 Use the `subarray()` method to create it. The first parameter is the starting position, and you can specify an optional second parameter with the end position:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 buf.subarray(0).toString(); //Hey!
@@ -5946,7 +5725,6 @@ console.log(slice.toString()); //Ho
 Copying a buffer is possible using the `set()` method:
 
 ```js
-//
 const buf = Buffer.from('Hey!');
 
 const bufcopy = Buffer.alloc(4); //allocate 4 bytes
@@ -5957,7 +5735,6 @@ bufcopy.set(buf);
 By default you copy the whole buffer. If you only want to copy a part of the buffer, you can use `.subarray()` and the `offset` argument that specifies an offset to write to:
 
 ```js
-//
 const buf = Buffer.from('Hey?');
 
 const bufcopy = Buffer.from('Moo!');
@@ -5983,17 +5760,17 @@ For example, in the traditional way, when you tell the program to read a file, t
 
 Using streams you read it piece by piece, processing its content without keeping it all in memory.
 
-The Node.js [`stream` module](https://nodejs.org/api/stream.html) provides the foundation upon which all streaming APIs are built.
+The Node.js [`stream` module](images/https://nodejs.org/api/stream.html) provides the foundation upon which all streaming APIs are built.
 
-All streams are instances of [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter)
+All streams are instances of [EventEmitter](images/https://nodejs.org/api/events.html#events_class_eventemitter)
 
 ## Why streams
 
 Streams basically provide two major advantages over using other data handling methods:
 
--   **Memory efficiency**: you don't need to load large amounts of data in memory before you are able to process it
--
--   **Time efficiency**: it takes way less time to start processing data, since you can start processing as soon as you have it, rather than waiting till the whole data payload is available
+- **Memory efficiency**: you don't need to load large amounts of data in memory before you are able to process it
+- 
+- **Time efficiency**: it takes way less time to start processing data, since you can start processing as soon as you have it, rather than waiting till the whole data payload is available
 
 ## An example of a stream
 
@@ -6002,7 +5779,6 @@ A typical example is reading files from a disk.
 Using the Node.js `fs` module, you can read a file, and serve it over HTTP when a new connection is established to your HTTP server:
 
 ```js
-//
 const http = require('http');
 
 const fs = require('fs');
@@ -6023,7 +5799,6 @@ server.listen(3000);
 If the file is big, the operation will take quite a bit of time. Here is the same thing written using streams:
 
 ```js
-//
 const http = require('http');
 
 const fs = require('fs');
@@ -6050,14 +5825,12 @@ You call it on the source stream, so in this case, the file stream is piped to t
 The return value of the `pipe()` method is the destination stream, which is a very convenient thing that lets us chain multiple `pipe()` calls, like this:
 
 ```js
-//
 src.pipe(dest1).pipe(dest2);
 ```
 
 This construct is the same as doing
 
 ```js
-//
 src.pipe(dest1);
 
 dest1.pipe(dest2);
@@ -6067,48 +5840,47 @@ dest1.pipe(dest2);
 
 Due to their advantages, many Node.js core modules provide native stream handling capabilities, most notably:
 
--   `process.stdin` returns a stream connected to stdin
--
--   `process.stdout` returns a stream connected to stdout
--
--   `process.stderr` returns a stream connected to stderr
--
--   `fs.createReadStream()` creates a readable stream to a file
--
--   `fs.createWriteStream()` creates a writable strea
--
--   `net.connect()` initiates a stream-based connection
+- `process.stdin` returns a stream connected to stdin
+- 
+- `process.stdout` returns a stream connected to stdout
+- 
+- `process.stderr` returns a stream connected to stderr
+- 
+- `fs.createReadStream()` creates a readable stream to a file
+- 
+- `fs.createWriteStream()` creates a writable strea
+- 
+- `net.connect()` initiates a stream-based connection
 
--   `http.request()` returns an instance of the http.ClientRequest class, which is a writable stream
+- `http.request()` returns an instance of the http.ClientRequest class, which is a writable stream
 
--   `zlib.createGzip()` compress data using gzip (a compression algorithm) into a stream
+- `zlib.createGzip()` compress data using gzip (a compression algorithm) into a stream
 
--   `zlib.createGunzip()` decompress a gzip stream.
+- `zlib.createGunzip()` decompress a gzip stream.
 
--   `zlib.createDeflate()` compress data using deflate (a compression algorithm) into a stream
+- `zlib.createDeflate()` compress data using deflate (a compression algorithm) into a stream
 
--   `zlib.createInflate()` decompress a deflate stream
+- `zlib.createInflate()` decompress a deflate stream
 
 ## Different types of streams
 
 There are four classes of streams:
 
--   `Readable`: a stream you can pipe from, but not pipe into (you can receive data, but not send data to it). When you push data into a readable stream, it is buffered, until a consumer starts to read the data.
--
--   `Writable`: a stream you can pipe into, but not pipe from (you can send data, but not receive from it)
--
--   `Duplex`: a stream you can both pipe into and pipe from, basically a combination of a Readable and Writable stream
+- `Readable`: a stream you can pipe from, but not pipe into (you can receive data, but not send data to it). When you push data into a readable stream, it is buffered, until a consumer starts to read the data.
+- 
+- `Writable`: a stream you can pipe into, but not pipe from (you can send data, but not receive from it)
+- 
+- `Duplex`: a stream you can both pipe into and pipe from, basically a combination of a Readable and Writable stream
 
--   `Transform`: a Transform stream is similar to a Duplex, but the output is a transform of its input
+- `Transform`: a Transform stream is similar to a Duplex, but the output is a transform of its input
 
 ## How to create a readable stream
 
-We get the Readable stream from the [`stream` module](https://nodejs.org/api/stream.html), and we initialize it and implement the `readable._read()` method.
+We get the Readable stream from the [`stream` module](images/https://nodejs.org/api/stream.html), and we initialize it and implement the `readable._read()` method.
 
 First create a stream object:
 
 ```js
-//
 const Stream = require('stream');
 
 const readableStream = new Stream.Readable();
@@ -6117,14 +5889,12 @@ const readableStream = new Stream.Readable();
 then implement `_read`:
 
 ```js
-//
 readableStream._read = () => {};
 ```
 
 You can also implement `_read` using the `read` option:
 
 ```js
-//
 const readableStream = new Stream.Readable({
     read() {}
 });
@@ -6133,7 +5903,6 @@ const readableStream = new Stream.Readable({
 Now that the stream is initialized, we can send data to it:
 
 ```js
-//
 readableStream.push('hi!');
 
 readableStream.push('ho!');
@@ -6146,7 +5915,6 @@ To create a writable stream we extend the base `Writable` object, and we impleme
 First create a stream object:
 
 ```js
-//
 const Stream = require('stream');
 
 const writableStream = new Stream.Writable();
@@ -6155,7 +5923,6 @@ const writableStream = new Stream.Writable();
 then implement `_write`:
 
 ```js
-//
 writableStream._write = (chunk, encoding, next) => {
     console.log(chunk.toString());
 
@@ -6168,7 +5935,6 @@ You can now pipe a
 readable stream in:
 
 ```js
-//
 process.stdin.pipe(writableStream);
 ```
 
@@ -6177,7 +5943,6 @@ process.stdin.pipe(writableStream);
 How do we read data from a readable stream? Using a writable stream:
 
 ```js
-//
 const Stream = require('stream');
 
 const readableStream = new Stream.Readable({
@@ -6202,7 +5967,6 @@ readableStream.push('ho!');
 You can also consume a readable stream directly, using the `readable` event:
 
 ```js
-//
 readableStream.on('readable', () => {
     console.log(readableStream.read());
 });
@@ -6213,7 +5977,6 @@ readableStream.on('readable', () => {
 Using the stream `write()` method:
 
 ```js
-//
 writableStream.write('hey!\n');
 ```
 
@@ -6222,7 +5985,6 @@ writableStream.write('hey!\n');
 Use the `end()` method:
 
 ```js
-//
 const Stream = require('stream');
 
 const readableStream = new Stream.Readable({
@@ -6248,12 +6010,11 @@ writableStream.end();
 
 ## How to create a transform stream
 
-We get the Transform stream from the [`stream` module](https://nodejs.org/api/stream.html), and we initialize it and implement the `transform._transform()` method.
+We get the Transform stream from the [`stream` module](images/https://nodejs.org/api/stream.html), and we initialize it and implement the `transform._transform()` method.
 
 First create a transform stream object:
 
 ```js
-//
 const { Transform } = require('stream');
 
 const TransformStream = new Transform();
@@ -6262,7 +6023,6 @@ const TransformStream = new Transform();
 then implement `_transform`:
 
 ```js
-//
 TransformStream._transform = (chunk, encoding, callback) => {
     TransformStream.push(chunk.toString().toUpperCase());
 
@@ -6273,7 +6033,6 @@ TransformStream._transform = (chunk, encoding, callback) => {
 Pipe readable stream:
 
 ```js
-//
 process.stdin.pipe(TransformStream).pipe(process.stdout);
 ```
 
@@ -6309,16 +6068,15 @@ This environment variable is a convention that is widely used in external librar
 
 Setting the environment to `production` generally ensures that
 
--   logging is kept to a minimum, essential level
--
--   more caching levels take place to optimize performance
+- logging is kept to a minimum, essential level
+- 
+- more caching levels take place to optimize performance
 
 For example Pug, the templating library used by Express, compiles in debug mode if `NODE_ENV` is not set to `production`. Express views are compiled in every request in development mode, while in production they are cached. There are many more examples.
 
 You can use conditional statements to execute code in different environments:
 
 ```js
-//
 
 if (process.env.NODE_ENV === "development") {
 
@@ -6343,7 +6101,6 @@ if(['production', 'staging'].indexOf(process.env.NODE_ENV) >= 0) {
 For example, in an Express app, you can use this to set different error handlers per environment:
 
 ```js
-//
 
 if (process.env.NODE_ENV === "development") {
 
@@ -6370,7 +6127,6 @@ Errors in Node.js are handled through exceptions.
 An exception is created using the `throw` keyword:
 
 ```js
-//
 throw value;
 ```
 
@@ -6382,17 +6138,15 @@ In Node.js, we don't throw strings, we just throw Error objects.
 
 ## Error objects
 
-An error object is an object that is either an instance of the Error object, or extends the Error class, provided in the [Error core module](https://nodejs.org/api/errors.html):
+An error object is an object that is either an instance of the Error object, or extends the Error class, provided in the [Error core module](images/https://nodejs.org/api/errors.html):
 
 ```js
-//
 throw new Error('Ran out of coffee');
 ```
 
 or
 
 ```js
-//
 class NotEnoughCoffeeError extends Error {
     //...
 }
@@ -6407,7 +6161,6 @@ An exception handler is a `try`/`catch` statement.
 Any exception raised in the lines of code included in the `try` block is handled in the corresponding `catch` block:
 
 ```js
-//
 try {
     //lines of code
 } catch (e) {}
@@ -6424,7 +6177,6 @@ If an uncaught exception gets thrown during the execution of your program, your 
 To solve this, you listen for the `uncaughtException` event on the `process` object:
 
 ```js
-//
 process.on('uncaughtException', (err) => {
     console.error('There was an uncaught error', err);
 
@@ -6439,7 +6191,6 @@ You don't need to import the `process` core module for this, as it's automatical
 Using promises you can chain different operations, and handle errors at the end:
 
 ```js
-//
 doSomething1()
     .then(doSomething2)
 
@@ -6451,7 +6202,6 @@ doSomething1()
 How do you know where the error occurred? You don't really know, but you can handle errors in each of the functions you call (`doSomethingX`), and inside the error handler throw a new error, that's going to call the outside `catch` handler:
 
 ```js
-//
 const doSomething1 = () => {
     //...
 
@@ -6470,7 +6220,6 @@ const doSomething1 = () => {
 To be able to handle errors locally without handling them in the function we call, we can break the chain. You can create a function in each `then()` and process the exception:
 
 ```js
-//
 doSomething1()
     .then(() => {
         return doSomething2().catch((err) => {
@@ -6496,7 +6245,6 @@ doSomething1()
 Using async/await, you still need to catch errors, and you do it this way:
 
 ```js
-//
 async function someFunction() {
     try {
         await someOtherFunction();
@@ -6512,11 +6260,11 @@ description: 'Logging objects in Node.js'
 
 When you type `console.log()` into a JavaScript program that runs in the browser, that is going to create a nice entry in the Browser Console:
 
-![alt-text](images/console-log-browser.png)
+![](images/console-log-browser.png)
 
 Once you click the arrow, the log is expanded, and you can clearly see the object properties:
 
-![alt-text](images/console-log-browser-expanded.png)
+![](images/console-log-browser-expanded.png)
 
 In Node.js, the same happens.
 
@@ -6525,7 +6273,6 @@ We don't have such luxury when we log something to the console, because that's g
 Now, all is fine until a certain level of nesting. After two levels of nesting, Node.js gives up and prints `[Object]` as a placeholder:
 
 ```js
-//
 
 const obj = {
 
@@ -6594,7 +6341,6 @@ How can you print the whole object?
 The best way to do so, while preserving the pretty print, is to use
 
 ```js
-//
 console.log(JSON.stringify(obj, null, 2));
 ```
 
@@ -6603,7 +6349,6 @@ where `2` is the number of spaces to use for indentation.
 Another option is to use
 
 ```js
-//
 require('util').inspect.defaultOptions.depth = null;
 
 console.log(obj);
@@ -6628,7 +6373,6 @@ We can talk about other TypeScript benefits later, let's see some examples now!
 Take a look at this code snippet and then we can unpack it together:
 
 ```js
-//
 type User = {
     name: string,
 
@@ -6679,7 +6423,6 @@ Now when we know how to compile and run TypeScript code let's see TypeScript bug
 This is how we will modify our code:
 
 ```js
-//
 type User = {
     name: string,
 
@@ -6702,7 +6445,6 @@ const isJustineAnAdult: string = isAdult(justine, "I shouldn't be here!");
 And this is what TypeScript has to say about this:
 
 ```js
-//
 
 example.ts:12:3 - error TS2322: Type 'string' is not assignable to type 'number'.
 
@@ -6738,7 +6480,7 @@ As you can see TypeScript successfully prevents us from shipping code that could
 
 ## More about TypeScript
 
-TypeScript offers a whole lot of other great mechanisms like interfaces, classes, utility types and so on. Also, on bigger projects you can declare your TypeScript compiler configuration in a separate file and granularly adjust how it works, how strict it is and where it stores compiled files for example. You can read more about all this awesome stuff in [the official TypeScript docs](https://www.typescriptlang.org/docs).
+TypeScript offers a whole lot of other great mechanisms like interfaces, classes, utility types and so on. Also, on bigger projects you can declare your TypeScript compiler configuration in a separate file and granularly adjust how it works, how strict it is and where it stores compiled files for example. You can read more about all this awesome stuff in [the official TypeScript docs](images/https://www.typescriptlang.org/docs).
 
 Some of the other benefits of TypeScript that are worth mentioning are that it can be adopted progressively, it helps making code more readable and understandable and it allows developers to use modern language features while shipping code for older Node.js versions.
 
@@ -6748,15 +6490,15 @@ TypeScript is well-established in the Node.js world and used by many companies, 
 
 Some of the notable examples of open-source projects using TypeScript are:
 
--   [NestJS](https://nestjs.com/) - robust and fully-featured framework that makes creating scalable and well-architected systems easy and pleasant
--
--   [TypeORM](https://typeorm.io/#/) - great ORM influenced by other well-known tools from other languages like Hibernate, Doctrine or Entity Framewor
--
--   [Prisma](https://prisma.io/) - next-generation ORM featuring a declarative data model, generated migrations and fully type-safe database queries
+- [NestJS](images/https://nestjs.com/) - robust and fully-featured framework that makes creating scalable and well-architected systems easy and pleasant
+- 
+- [TypeORM](images/https://typeorm.io/#/) - great ORM influenced by other well-known tools from other languages like Hibernate, Doctrine or Entity Framewor
+- 
+- [Prisma](images/https://prisma.io/) - next-generation ORM featuring a declarative data model, generated migrations and fully type-safe database queries
 
--   [RxJS](https://rxjs.dev/) - widely used library for reactive programming
+- [RxJS](images/https://rxjs.dev/) - widely used library for reactive programming
 
--   [AdonisJS](https://adonisjs.com) - A fully featured web framework with Node.js
+- [AdonisJS](images/https://adonisjs.com) - A fully featured web framework with Node.js
 
 And many, many more great projects... Maybe even your next one!
 
@@ -6810,21 +6552,21 @@ The Node.js ecosystem is huge and thanks to V8 which also powers desktop apps, w
 
 Other browsers have their own JavaScript engine:
 
--   Firefox has [**SpiderMonkey**](https://spidermonkey.dev)
--
--   Safari has [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) (also called Nitro)
+- Firefox has [**SpiderMonkey**](images/https://spidermonkey.dev)
+- 
+- Safari has [**JavaScriptCore**](images/https://developer.apple.com/documentation/javascriptcore) (also called Nitro)
 
--   Edge was originally based on [**Chakra**](https://github.com/Microsoft/ChakraCore) but has more recently been [rebuilt using Chromium](https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium) and the V8 engine.
+- Edge was originally based on [**Chakra**](images/https://github.com/Microsoft/ChakraCore) but has more recently been [rebuilt using Chromium](images/https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium) and the V8 engine.
 
 and many others exist as well.
 
-All those engines implement the [ECMA ES-262 standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm), also called ECMAScript, the standard used by JavaScript.
+All those engines implement the [ECMA ES-262 standard](images/https://www.ecma-international.org/publications/standards/Ecma-262.htm), also called ECMAScript, the standard used by JavaScript.
 
 ## The quest for performance
 
 V8 is written in C++, and it's continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.
 
-In this V8 introduction, we will ignore the implementation details of V8: they can be found on more authoritative sites (e.g. the [V8 official site](https://v8.dev/)), and they change over time, often radically.
+In this V8 introduction, we will ignore the implementation details of V8: they can be found on more authoritative sites (e.g. the [V8 official site](images/https://v8.dev/)), and they change over time, often radically.
 
 V8 is always evolving, just like the other JavaScript engines around, to speed up the Web and the Node.js ecosystem.
 
@@ -6905,7 +6647,6 @@ This means that any callback that's pending, any network request still being sen
 If this is fine for you, you can pass an integer that signals the operating system the exit code:
 
 ```js
-//
 process.exit(1);
 ```
 
@@ -6916,7 +6657,6 @@ You can read more on exit codes at <https://nodejs.org/api/process.html#process_
 You can also set the `process.exitCode` property:
 
 ```js
-//
 process.exitCode = 1;
 ```
 
@@ -6927,7 +6667,6 @@ A program will gracefully exit when all the processing is done.
 Many times with Node.js we start servers, like this HTTP server:
 
 ```js
-//
 const express = require('express');
 
 const app = express();
@@ -6948,7 +6687,6 @@ In this case you need to send the command a SIGTERM signal, and handle that with
 > Note: `process` does not require a "require", it's automatically available.
 
 ```js
-//
 const express = require('express');
 
 const app = express();
@@ -6975,7 +6713,6 @@ process.on('SIGTERM', () => {
 You can send this signal from inside the program, in another function:
 
 ```js
-//
 process.kill(process.pid, 'SIGTERM');
 ```
 
@@ -7002,7 +6739,6 @@ That will pass the user `USER_ID` as **239482** and the `USER_KEY` as **foobar**
 Here is an example that accesses the `USER_ID` and `USER_KEY` environment variables, which we set in above code.
 
 ```js
-//
 process.env.USER_ID; // "239482"
 
 process.env.USER_KEY; // "foobar"
@@ -7010,7 +6746,7 @@ process.env.USER_KEY; // "foobar"
 
 In the same way you can access any custom environment variable you set.
 
-If you have multiple environment variables in your node project, you can also create an `.env` file in the root directory of your project, and then use the [dotenv](https://www.npmjs.com/package/dotenv) package to load them during runtime.
+If you have multiple environment variables in your node project, you can also create an `.env` file in the root directory of your project, and then use the [dotenv](images/https://www.npmjs.com/package/dotenv) package to load them during runtime.
 
 ```bash
 
@@ -7027,7 +6763,6 @@ NODE_ENV="development"
 In your js file
 
 ```js
-//
 require('dotenv').config();
 
 process.env.USER_ID; // "239482"
@@ -7049,18 +6784,17 @@ The WebAssembly specification details two file formats, a binary format called a
 
 ## Key Concepts
 
--   Module - A compiled WebAssembly binary, ie a `.wasm` file.
--
--   Memory - A resizable ArrayBuffer.
--
--   Table - A resizable typed array of references not stored in Memory.
+- Module - A compiled WebAssembly binary, ie a `.wasm` file.
+- 
+- Memory - A resizable ArrayBuffer.
+- 
+- Table - A resizable typed array of references not stored in Memory.
 
--   Instance - An instantiation of a Module with its Memory, Table, and variables.
+- Instance - An instantiation of a Module with its Memory, Table, and variables.
 
 In order to use WebAssembly, you need a `.wasm` binary file and a set of APIs to communicate with WebAssembly. Node.js provides the necessary APIs via the global `WebAssembly` object.
 
 ```js
-//
 console.log(WebAssembly);
 
 /*
@@ -7082,13 +6816,13 @@ Object [WebAssembly] {
 
 There are multiple methods available to generate WebAssembly binary files including:
 
--   Writing WebAssembly (`.wat`) by hand and converting to binary format using tools such as [wabt](https://github.com/webassembly/wabt)
--
--   Using [emscripten](https://emscripten.org/) with a C/C++ application
--
--   Using [wasm-pack](https://rustwasm.github.io/wasm-pack/book/) with a Rust application
+- Writing WebAssembly (`.wat`) by hand and converting to binary format using tools such as [wabt](images/https://github.com/webassembly/wabt)
+- 
+- Using [emscripten](images/https://emscripten.org/) with a C/C++ application
+- 
+- Using [wasm-pack](images/https://rustwasm.github.io/wasm-pack/book/) with a Rust application
 
--   Using [AssemblyScript](https://www.assemblyscript.org/) if you prefer a TypeScript-like experience
+- Using [AssemblyScript](images/https://www.assemblyscript.org/) if you prefer a TypeScript-like experience
 
 > Some of these tools generate not only the binary file, but the JavaScript "glue" code and corresponding HTML files to run in the browser.
 
@@ -7097,7 +6831,6 @@ There are multiple methods available to generate WebAssembly binary files includ
 Once you have a WebAssembly module, you can use the Node.js `WebAssembly` object to instantiate it.
 
 ```js
-//
 // Assume add.wasm file exists that contains a single function adding 2 provided arguments
 
 const fs = require('fs');
@@ -7117,12 +6850,12 @@ WebAssembly.instantiate(wasmBuffer).then((wasmModule) => {
 
 ## Interacting with the OS
 
-WebAssembly modules cannot directly access OS functionality on its own. A third-party tool [Wasmtime](https://docs.wasmtime.dev/) can be used to access this functionality. `Wasmtime` utilizes the [WASI](https://wasi.dev/) API to access the OS functionality.
+WebAssembly modules cannot directly access OS functionality on its own. A third-party tool [Wasmtime](images/https://docs.wasmtime.dev/) can be used to access this functionality. `Wasmtime` utilizes the [WASI](images/https://wasi.dev/) API to access the OS functionality.
 
 ## Resources
 
--   [General WebAssembly Information](https://webassembly.org/)
--
--   [MDN Docs](https://developer.mozilla.org/en-US/docs/WebAssembly)
+- [General WebAssembly Information](images/https://webassembly.org/)
+- 
+- [MDN Docs](images/https://developer.mozilla.org/en-US/docs/WebAssembly)
 
--   [Write WebAssembly by hand](https://webassembly.github.io/spec/core/text/index.html)
+- [Write WebAssembly by hand](images/https://webassembly.github.io/spec/core/text/index.html)
