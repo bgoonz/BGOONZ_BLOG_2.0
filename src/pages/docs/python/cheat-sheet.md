@@ -20,7 +20,6 @@ template: docs
 
 
 
-
 # Python Cheat Sheet
 
 ## Python Basics
