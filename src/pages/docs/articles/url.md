@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ### Let's look at the anatomy of a URL:&#xA;&#xA;
 
 The first part of the URL is http://, this is often left out when URLs are written, so we might see the above as www.mq.edu.au/about/profile/history.html. This will work when you type it into your web browser because the browser will assume you meant this as an HTTP URL. However, if we are being pedantic, the prefix is required as it tells us something about the web address - that we should use the HTTP protocol to access it.
