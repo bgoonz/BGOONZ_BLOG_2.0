@@ -15,7 +15,6 @@ export default class Body extends React.Component {
                         _.get(this.props, "pageContext.frontmatter.seo.title", null) ? _.get(this.props, "pageContext.frontmatter.seo.title", null) : _.get(this.props, "pageContext.frontmatter.title", null) + " | " + _.get(this.props, "pageContext.site.siteMetadata.title", null)
                     } </title>
                     <meta charSet="utf-8"/>
-                    <meta name="google-site-verification" content="JzC5eRJ3cpAJk6gfrMzLwxEhOd3QnM6c6AYP8-1EWiw" />
                     <meta name="viewport" content="width=device-width, initialScale=1.0"/>
                     <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU"/>
                     <meta charset="UTF-8"/>
