@@ -1,4 +1,4 @@
-[Widgets](https://www.wappalyzer.com/technologies/widgets/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Widgets](https://www.wappalyzer.com/technologies/widgets/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -12,7 +12,7 @@ Facebook](https://www.wappalyzer.com/technologies/widgets/facebook/?utm_source=p
 
 AddThis](https://www.wappalyzer.com/technologies/widgets/addthis/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Analytics](https://www.wappalyzer.com/technologies/analytics/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Analytics](https://www.wappalyzer.com/technologies/analytics/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -32,7 +32,7 @@ Google Analytics](https://www.wappalyzer.com/technologies/analytics/google-analy
 
 Google Ads Conversion Tracking](https://www.wappalyzer.com/technologies/analytics/google-ads-conversion-tracking/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[JavaScript frameworks](https://www.wappalyzer.com/technologies/javascript-frameworks/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[JavaScript frameworks](https://www.wappalyzer.com/technologies/javascript-frameworks/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -46,7 +46,7 @@ React](https://www.wappalyzer.com/technologies/javascript-frameworks/react/?utm_
 
 Gatsby2.25.4](https://www.wappalyzer.com/technologies/javascript-frameworks/gatsby/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Font scripts](https://www.wappalyzer.com/technologies/font-scripts/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Font scripts](https://www.wappalyzer.com/technologies/font-scripts/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -54,7 +54,7 @@ Gatsby2.25.4](https://www.wappalyzer.com/technologies/javascript-frameworks/gats
 
 Google Font API](https://www.wappalyzer.com/technologies/font-scripts/google-font-api/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Miscellaneous](https://www.wappalyzer.com/technologies/miscellaneous/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Miscellaneous](https://www.wappalyzer.com/technologies/miscellaneous/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -68,7 +68,7 @@ webpack](https://www.wappalyzer.com/technologies/miscellaneous/webpack/?utm_sour
 
 Prism](https://www.wappalyzer.com/technologies/miscellaneous/prism/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[CDN](https://www.wappalyzer.com/technologies/cdn/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[CDN](https://www.wappalyzer.com/technologies/cdn/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -94,7 +94,7 @@ jQuery CDN](https://www.wappalyzer.com/technologies/cdn/jquery-cdn/?utm_source=p
 
 Netlify](https://www.wappalyzer.com/technologies/cdn/netlify/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Marketing automation](https://www.wappalyzer.com/technologies/marketing-automation/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Marketing automation](https://www.wappalyzer.com/technologies/marketing-automation/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -102,7 +102,7 @@ Netlify](https://www.wappalyzer.com/technologies/cdn/netlify/?utm_source=popup&u
 
 MailChimp](https://www.wappalyzer.com/technologies/marketing-automation/mailchimp/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Advertising](https://www.wappalyzer.com/technologies/advertising/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Advertising](https://www.wappalyzer.com/technologies/advertising/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -110,7 +110,7 @@ MailChimp](https://www.wappalyzer.com/technologies/marketing-automation/mailchim
 
 Google AdSense](https://www.wappalyzer.com/technologies/advertising/google-adsense/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Tag managers](https://www.wappalyzer.com/technologies/tag-managers/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Tag managers](https://www.wappalyzer.com/technologies/tag-managers/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -118,7 +118,7 @@ Google AdSense](https://www.wappalyzer.com/technologies/advertising/google-adsen
 
 Google Tag Manager](https://www.wappalyzer.com/technologies/tag-managers/google-tag-manager/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Live chat](https://www.wappalyzer.com/technologies/live-chat/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Live chat](https://www.wappalyzer.com/technologies/live-chat/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -132,7 +132,7 @@ Smartsupp1](https://www.wappalyzer.com/technologies/live-chat/smartsupp/?utm_sou
 
 LiveChat](https://www.wappalyzer.com/technologies/live-chat/livechat/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Static site generators](https://www.wappalyzer.com/technologies/static-site-generator/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Static site generators](https://www.wappalyzer.com/technologies/static-site-generator/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -140,7 +140,7 @@ LiveChat](https://www.wappalyzer.com/technologies/live-chat/livechat/?utm_source
 
 Gatsby2.25.4](https://www.wappalyzer.com/technologies/static-site-generator/gatsby/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[JavaScript libraries](https://www.wappalyzer.com/technologies/javascript-libraries/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[JavaScript libraries](https://www.wappalyzer.com/technologies/javascript-libraries/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -166,7 +166,7 @@ core-js3.10.2](https://www.wappalyzer.com/technologies/javascript-libraries/core
 
 jQuery3.1.1](https://www.wappalyzer.com/technologies/javascript-libraries/jquery/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[PaaS](https://www.wappalyzer.com/technologies/paas/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[PaaS](https://www.wappalyzer.com/technologies/paas/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -174,7 +174,7 @@ jQuery3.1.1](https://www.wappalyzer.com/technologies/javascript-libraries/jquery
 
 Netlify](https://www.wappalyzer.com/technologies/paas/netlify/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[UI frameworks](https://www.wappalyzer.com/technologies/ui-frameworks/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[UI frameworks](https://www.wappalyzer.com/technologies/ui-frameworks/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -182,7 +182,7 @@ Netlify](https://www.wappalyzer.com/technologies/paas/netlify/?utm_source=popup&
 
 Bootstrap5.1.1](https://www.wappalyzer.com/technologies/ui-frameworks/bootstrap/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Authentication](https://www.wappalyzer.com/technologies/authentication/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Authentication](https://www.wappalyzer.com/technologies/authentication/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -190,7 +190,7 @@ Bootstrap5.1.1](https://www.wappalyzer.com/technologies/ui-frameworks/bootstrap/
 
 Facebook Login](https://www.wappalyzer.com/technologies/authentication/facebook-login/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Email](https://www.wappalyzer.com/technologies/email/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Email](https://www.wappalyzer.com/technologies/email/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
@@ -198,7 +198,7 @@ Facebook Login](https://www.wappalyzer.com/technologies/authentication/facebook-
 
 MailChimp](https://www.wappalyzer.com/technologies/email/mailchimp/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
 
-[Retargeting](https://www.wappalyzer.com/technologies/retargeting/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
+[Retargeting](https://www.wappalyzer.com/technologies/retargeting/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer) 
 
 [
 
