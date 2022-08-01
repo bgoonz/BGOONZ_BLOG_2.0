@@ -23,7 +23,7 @@ seo:
 template: docs
 ---
 
-![](images/0001-76d89ef6.jpg)
+![alt-text](images/0001-76d89ef6.jpg)
 
 # Title
 
@@ -411,7 +411,7 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-![](images/md-cheat-sheet-42411273.png)
+![alt-text](images/md-cheat-sheet-42411273.png)
 
 Here's our logo (hover to see the title text):
 
