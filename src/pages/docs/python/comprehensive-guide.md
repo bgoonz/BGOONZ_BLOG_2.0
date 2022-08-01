@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Comprehensive Python Guide
 
 -   [Comprehensive Python Guide](#comprehensive-python-guide)
@@ -4001,7 +4002,7 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```console
+```bash
 pip install anyconfig
 ```
 
@@ -4487,7 +4488,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```console
+```bash
 python setup.py install
 ```
 

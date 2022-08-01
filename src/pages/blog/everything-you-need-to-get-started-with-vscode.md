@@ -38,13 +38,13 @@ Commands:
 [**VSCodeExtensions**\
 5fff5b9a2430bb564bfd451d–stoic-mccarthy-2c335f.netlify.app](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18 "https\://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18")[](https://5fff5b9a2430bb564bfd451d--stoic-mccarthy-2c335f.netlify.app/#h18)
 
-### Here’s the repo it was deployed from:
+### Here’s the repo it was deployed from
 
 <https://github.com/bgoonz/vscode-Extension-readmes>
 
 - - -
 
-### Commands:
+### Commands
 
 > Command Palette
 >
@@ -82,7 +82,7 @@ Commands:
 
 - - -
 
-### Tips-N-Tricks:
+### Tips-N-Tricks
 
 Here is a selection of common features for editing code. If the keyboard shortcuts aren’t comfortable for you, consider installing a [keymap extension](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Downloads) for your old editor.
 
@@ -118,7 +118,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 - - -
 
-### Extensions:
+### Extensions
 
 #### [AutoHotkey Plus](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-autohotkey-plus)
 
@@ -630,7 +630,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
 
-> *Align your code by colon(:), assignment(=, +=, -=, *=, /=) and arrow(=> ). It has additional support for comma-first coding style and trailing comment.*
+> *Align your code by colon(:), assignment(=, +=, -=,*=, /=) and arrow(=> ). It has additional support for comma-first coding style and trailing comment.*
 >
 > *And it doesn’t require you to select what to be aligned, the extension will figure it out by itself.*
 
@@ -808,7 +808,7 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Quokka](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 
-#### This one is super cool!
+#### This one is super cool
 
 > *Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project’s files, inline reporting, code coverage and rich output formatting.*
 
@@ -856,7 +856,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 ![alt-text](https://cdn-images-1.medium.com/max/800/0*mMBU6d1iCkt5VHq2.gif)
 
-### Themes:
+### Themes
 
 In the interest of not making the reader scroll endlessly as I often do… I’ve made a separate post for that here. If you’ve made it this far, I thank you!
 
