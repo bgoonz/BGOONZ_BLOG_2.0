@@ -1,16 +1,17 @@
 // install: "npm install pdfcrowd"
 let currentUrl = window.location.href;
-let pdfcrowd = require('pdfcrowd');
-let api = new pdfcrowd.HtmlToPdfClient('demo', 'ce544b6ea52a5621fb9d55f8b542d14d');
-api.convertUrlToFile('currentUrl', 'document.pdf', function (err, fileName) {
+import {
+    HtmlToPdfClient
+} from 'pdfcrowd';
+let api = new HtmlToPdfClient('demo', 'ce544b6ea52a5621fb9d55f8b542d14d');
+api.convertUrlToFile('currentUrl', 'document.pdf', function(err, fileName) {
     /* done */
 });
-
 ('use strict');
-
-!(function () {
+!(function() {
     var t =
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTQzZmFlY2I2NjkwNWMyZGJkMGVmZCIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTY0MjM0ODUyNiwiZXhwIjoxNDI1Njc0ODUyNn0.VD7Lxgh5cWuOzOhV9KH51TZVdPVXvsIJgRUx-oacfVM';
+
     function e() {
         var e = document.createElement('script'),
             a = navigator.language || navigator.userLanguage;
