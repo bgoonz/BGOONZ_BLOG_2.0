@@ -42,26 +42,20 @@ template: docs
 <br>
 <h1>   Algorithms </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz-branch-the-algos.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz-branch-the-algos.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
 
 <h1>  The Algos Bgoonz Branch </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://thealgorithms.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://thealgorithms.netlify.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
 <br>
 <br>
 <br>
 <br>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;" height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0" allowfullscreen style="zoom:0.7;">
-</iframe>
-<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" height="1400" src="https://ds-algo-official.netlify.app/" frameborder="0" allowfullscreen style="zoom:0.7;"></iframe>
 
 Fundamental Data Structures In JavaScript
 
@@ -81,45 +75,31 @@ Here's the repo that the website is built on:
 
 -   [Abdul Bari: YouTubeChannel for Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=2&t=0s)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/0IAPZzGSbME"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/0IAPZzGSbME"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and algorithms](https://www.youtube.com/watch?v=lxja8wBwN0k&list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/lxja8wBwN0k"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/lxja8wBwN0k"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and algorithms Course](https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="714" height="401" src="https://www.youtube.com/embed/CvSOaYi89B4"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data structures by mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)Pre-requisite for this lesson is good understanding of pointers in C.
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [MIT 6.006: Intro to Algorithms(2011)](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/HtSuA80QTyo"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/HtSuA80QTyo"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 -   [Data Structures and Algorithms by Codewithharry](https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi)
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="1000px" height="800px" src="https://www.youtube.com/embed/5_5oE5lgrhw"   allowfullscreen>
-</iframe>
-<br>
+<iframe width="700" height="515" src="https://www.youtube.com/embed/5_5oE5lgrhw"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Books
 
@@ -204,7 +184,7 @@ Here's the repo that the website is built on:
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
 -   **The best-case complexity: when the data looks the best**
--
+
 -   **The worst-case complexity: when the data looks the worst**
 
 -   **The average-case complexity: when the data looks average**
@@ -215,7 +195,7 @@ The complexity is usually expressed with the Big O notation. The wikipedia page 
 
 ## The Array data structure
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
+![](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
 
 ## Definition
 
@@ -230,7 +210,6 @@ _Access Search Insertion Deletion_
 O(1) O(n) O(1) O(n)
 
 ```js
-//
 class ArrayADT {
     constructor() {
         this.array = [];
@@ -325,7 +304,7 @@ console.log('-------------------------------');
      */
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
+![](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
 
 indexvalue0 … this is the first value, stored at zero position
 
@@ -336,7 +315,6 @@ indexvalue0 … this is the first value, stored at zero position
 3. In JavaScript, array's value could be mixed; meaning value of each index could be of different data, be it String, Number or even Objects
 
 ```js
-//
     // 1. Creating Arrays
     let firstArray = ["a","b","c"];
     let secondArray = ["d","e","f"];
@@ -394,6 +372,7 @@ indexvalue0 … this is the first value, stored at zero position
     renderer.3d.setTexture(model, 'character.png');     // a syntax error
     renderer['3d'].setTexture(model, 'character.png');  // works properly
 
+
     // 12. Combine two Arrays
     let thirdArray = firstArray.concat(secondArray);
     console.log(thirdArray);
@@ -423,10 +402,9 @@ I also visualize an object as a table.
 
 The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
-![alt-text](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
+![](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
 
 ```js
-//
 // 16. Creating an Object
 
 let newObj = {
@@ -479,9 +457,9 @@ newObj.helloWorld();
 
 ## The Hash Table
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
+![](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
 
-![alt-text](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
+![](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
 
 ## _Definition_
 
@@ -499,7 +477,6 @@ Access Search Insertion Deletion
 Note, here I am storing another object for every hash in my Hash Table.
 
 ```js
-//
 class HashTable {
     constructor(size) {
         this.values = {};
@@ -577,7 +554,6 @@ console.log('length gives 3:', hashTable.length()); // => 3
 Sets are pretty much what it sounds like. It's the same intuition as Set in Mathematics. I visualize Sets as Venn Diagrams.
 
 ```js
-//
 // 23. Creating a new Set
 let newSet = new Set();
 
@@ -655,7 +631,7 @@ console.log(symmetricDifference(setA, setC)); // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC)); // => Set [1, 2]
 ```
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
+![](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
 
 ## _Definition_
 
@@ -670,10 +646,7 @@ Access Search Insertion Deletion
 -   O(n) O(n) O(n)
     > _The code_
 
----
-
 ```js
-//
 function Set() {
     this.values = [];
     this.numberOfValues = 0;
@@ -768,7 +741,7 @@ console.log('set3 length gives 3:', set3.length()); // => 3
 
 ## The Singly Linked List
 
-![alt-text](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
+![](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
 
 ## _Definition_
 
@@ -783,10 +756,7 @@ O(n) O(n) O(1) O(1)
 
 > _The code_
 
----
-
 ```js
-//
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -910,7 +880,7 @@ console.log('length is 7:', singlyLinkedList.length()); // => 7
 
 ## The Doubly Linked List
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
+![](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
 
 ## _Definition_
 
@@ -1119,7 +1089,7 @@ O(n) O(n) O(1) O(1)
 
 ## The Stack
 
-![alt-text](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
+![](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
 
 ## _Definition_
 
@@ -1172,7 +1142,7 @@ O(n) O(n) O(1) O(1)
 
 ## The Queue
 
-![alt-text](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
+![](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
 
 ## _Definition_
 
@@ -1225,7 +1195,7 @@ O(n) O(n) O(1) O(n)
 
 ## The Tree
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
+![](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
 
 ## _Definition_
 
@@ -1237,7 +1207,7 @@ Access Search Insertion Deletion
 O(n) O(n) O(n) O(n)
 To get a full overview of the time and space complexity of the Tree data structure, have a look to this excellent Big O cheat sheet.
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
+![](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
 
 > _The code_
 
@@ -1401,7 +1371,7 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 ## The Graph
 
-![alt-text](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
+![](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
 
 ## _Definition_
 
@@ -1428,8 +1398,7 @@ Graph
 
     //below uses the adjacency list representation.
 
-```js
-//
+````js
         function Graph() {
           this.vertices = [];
           this.edges = [];
@@ -1547,7 +1516,7 @@ Graph
             return (vertex + ' -> ' + this.edges[vertex].join(', ')).trim();
           }, this).join(' | '));
         };
-  ```
+        ```
         let graph = new Graph();
         graph.addVertex(1);
         graph.addVertex(2);
@@ -1586,4 +1555,4 @@ Graph
         console.log('graph size (number of vertices):', graph.size()); // => 5
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
-```
+````

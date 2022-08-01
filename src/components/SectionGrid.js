@@ -1,9 +1,9 @@
-/* It renders a section with a title, subtitle, and a grid of items */
-
-import _ from 'lodash';
 import React from 'react';
-import { classNames, htmlToReact, Link, markdownify, withPrefix } from '../utils';
+import _ from 'lodash';
+
+import {classNames, htmlToReact, withPrefix, Link, markdownify} from '../utils';
 import CtaButtons from './CtaButtons';
+
 export default class SectionGrid extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);

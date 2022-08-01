@@ -1,10 +1,10 @@
 ---
-title: Mini Projects
+title: Mini Projects 2
 excerpt: >-
     In this section you'll learn how to add syntax highlighting, examples,
     callouts and much more.
 seo:
-    title: Mini Projects
+    title: Mini Projects 2
     description: This is the Mini Projects page
     extra:
         - name: 'og:type'
@@ -26,529 +26,234 @@ template: docs
 weight: 0
 ---
 
-<br>
 
 <br>
+<hr>
 <br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1> Random Embedable Content  </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://random-list-of-embedable-content.vercel.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://random-list-of-embedable-content.vercel.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
 <br>
+<hr>
 <br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>  </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://futuristic-rosemary-d4acc.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://futuristic-rosemary-d4acc.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
 <br>
+<hr>
 <br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>   </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://iframeshowcase.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://iframeshowcase.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
-<br>
-<br>
-<br>
-<br>
 
 <br>
-
+<hr>
 <br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>  </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.blogspot.com/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://bgoonz.blogspot.com/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
 <br>
+<hr>
 <br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>   </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://www.youtube.com/embed/xGZSWvFess8" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://www.youtube.com/embed/xGZSWvFess8" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
-<br>
-<br>
-<br>
-<br>
+
 
 <br>
-
+<hr>
 <br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>  </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://ds-unit-5-lambda.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://ds-unit-5-lambda.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
+<hr>
+
+<hr>
 <br>
 
 <br>
+<hr>
 <br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
+<hr>
 <br>
 <h1>   </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://sanity-gatsby-blog-web-skwx3b17.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sanity-gatsby-blog-web-skwx3b17.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<h1>  </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://kguner-fractions-website.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<h1>   </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://dev-journal42.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<h1>  </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://sanity-gatsby-hey-sugar-5.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<h1>   </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://friendly-amaranth-51833.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<h1>  </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://sidebar-blog.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
-
-<br>
-<br>
-<br>
 <br>
 
-<br>
-<br>
-<br>
-<br>
+<hr>
 
+<hr>
 <br>
 
-<br>
 
-<br>
-<br>
-<br>
-<br>
 
-<br>
 <br>
+<hr>
 <br>
-<h1>   </h1>
+<hr>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://markdown-templates-42.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
+<h1> Fractions Website </h1>
 <br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://kguner-fractions-website.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
-<br>
+<hr>
 
-<br>
-<br>
+<hr>
 <br>
-<br>
 
 <br>
-
+<hr>
 <br>
-
+<hr>
 <br>
+<h1>  Dev Journal </h1>
 <br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://dev-journal42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
-<h1>  </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="  " width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
+<hr>
 
-<br>
+<hr>
 <br>
 
-<br>
-<br>
-<br>
-<br>
 
-<br>
-<br>
-<br>
-<br>
 
 <br>
-
+<hr>
 <br>
-
+<hr>
 <br>
+<h1> Blood Sugars for  </h1>
 <br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sanity-gatsby-hey-sugar-5.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
-<h1>   </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="  " width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
+<hr>
 
-<br>
+<hr>
 <br>
 
 <br>
+<hr>
 <br>
+<hr>
 <br>
+<h1> Norwex Ecommerce  </h1>
 <br>
-
-<br>
-<br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://friendly-amaranth-51833.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-
-<br>
+<hr>
 
-<br>
+<hr>
 <br>
-<br>
-<br>
 
-<br>
-<br>
-<br>
-<h1>  </h1>
-<br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="  " width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
 
-<br>
-<br>
 
-<br>
 <br>
+<hr>
 <br>
+<hr>
 <br>
-
-<br>
+<h1> Sidebar Blog </h1>
 <br>
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://sidebar-blog.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
-<br>
-
 <br>
 
-<br>
+<hr>
 
-<br>
-<br>
+<hr>
 <br>
-<br>
 
-<br>
 <br>
+<hr>
 <br>
-<h1>   </h1>
+<hr>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="  " width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
+<h1>  Markdown Templates  </h1>
 <br>
-
+<iframe  style="z-index:-1!important; overflow:scroll;resize:both;" class="block-content" src="https://markdown-templates-42.netlify.app/" height="1000px" style="width: 1300px; scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" ></iframe>
+                                                       
 <br>
 <br>
 
-<br>
-<br>
-<br>
-<br>
+<hr>
 
+<hr>
 <br>
-<br>
-<br>
-<br>
 
-<br>

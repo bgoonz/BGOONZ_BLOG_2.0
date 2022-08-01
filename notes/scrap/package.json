@@ -1,0 +1,46 @@
+{
+      "name": "dark-mode-minimal",
+      "private": true,
+      "description": "SSR compatible, flicker-free dark mode MVP mode in Gatsby",
+      "version": "0.1.0",
+      "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
+      "dependencies": {
+            "@mdx-js/mdx": "^1.6.22",
+            "@mdx-js/react": "^1.6.22",
+            "babel-plugin-styled-components": "^1.12.0",
+            "gatsby": "3.2.1",
+            "gatsby-plugin-mdx": "^2.2.0",
+            "gatsby-plugin-styled-components": "^4.2.0",
+            "gatsby-remark-copy-linked-files": "^3.2.0",
+            "gatsby-source-filesystem": "^3.2.0",
+            "react": "^17.0.2",
+            "react-dom": "^17.0.2",
+            "react-helmet": "^6.1.0",
+            "react-spring": "^9.1.0",
+            "styled-components": "^5.2.3",
+            "styled-icons": "^10.33.0"
+      },
+      "devDependencies": {
+            "eslint": "^7.23.0",
+            "eslint-plugin-react-hooks": "^4.2.0",
+            "prettier": "^2.2.1"
+      },
+      "keywords": [
+            "gatsby",
+            "dark mode",
+            "mvp"
+      ],
+      "license": "MIT",
+      "scripts": {
+            "dev": "gatsby develop -o -H 0.0.0.0",
+            "serve": "gatsby build && gatsby serve -o -H 0.0.0.0",
+            "clean": "gatsby clean && gatsby build && gatsby serve -o -H 0.0.0.0"
+      },
+      "repository": {
+            "type": "git",
+            "url": "https://github.com/janosh/dark-mode-minimal"
+      },
+      "bugs": {
+            "url": "https://github.com/janosh/dark-mode-minimal/issues"
+      }
+}

@@ -4,7 +4,7 @@ sections:
     - section_id: hero
       type: section_hero
       title: Showcase
-      image: images/spin-cube.gif
+      image: images/charming-dolphin.gif
       content: |
           Some of my more engaging projects!
     - section_id: showcase
@@ -13,7 +13,7 @@ sections:
       grid_items:
           - title: Git HTML PREVIEW
             title_url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
-            image: images/git-preview.gif
+            image: images/futuristic-mars.gif
             content: >
                 Preview html files by pasting their url into the search bar
                 **Access-Control-Allow-Origin Header When Site A tries to fetch
@@ -29,7 +29,7 @@ sections:
             image_alt: git html preview
           - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-            image: images/dtw-slideshow.gif
+            image: images/curious-europa.gif
             content: >
                 **Modified subsequence dynamic time warping feature detection using
                 pure data implemented in python**
@@ -58,7 +58,7 @@ sections:
                   type: action
           - title: Learning Redux
             title_url: 'https://learning-redux42.netlify.app/'
-            image_alt: image of
+            image_alt: lorem-ipsum
             content: >
                 ***React Redux provides a pair of custom React hooks that allow your
                 React components to interact with the Redux store.***
@@ -71,10 +71,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/redux-state.gif
+            image: images/best-birch.gif
           - title: Mihir-Beg-Music.com
             title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
-            image: images/mihir.png
+            image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
             content: |
                 Artist Showcase & Podcasting Site
             actions:
@@ -99,10 +99,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/blog-form.png
+            image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
-            image_alt: image of
+            image_alt: lorem-ipsum
             content: >+
                 ## Potluck Planner
                 If you have ever tried to organize a potluck through text messages,
@@ -111,7 +111,7 @@ sections:
                 Planner" is king. This is your place for all things pot luck.
             actions: []
             type: grid_item
-            image: images/potluck-planner.jpg
+            image: images/potluck-planner.JPG
           - title: Zumzi Video Conferencing
             title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
             image_alt: video chat
@@ -129,10 +129,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/zumzi-video-chat.png
+            image: images/energetic-sunflower.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
-            image_alt: image of
+            image_alt: lorem-ipsum
             content: |+
                 Made using jQuery and Vanilla JS
             actions:
@@ -151,7 +151,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/royal-kangaroo.jpg
+            image: images/royal-kangaroo.JPG
 seo:
     title: Showcase
     extra:
