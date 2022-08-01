@@ -1,4 +1,3 @@
-/* It's a React component that renders a menu of links to pages in a Hugo site. */
 import React from 'react';
 import _ from 'lodash';
 
