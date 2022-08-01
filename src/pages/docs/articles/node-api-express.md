@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ### Overview
 
 `REST` is a generally agreed-upon set of principles and constraints. They are **recommendations**, not a standard.

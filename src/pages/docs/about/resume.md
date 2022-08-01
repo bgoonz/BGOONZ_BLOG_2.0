@@ -26,7 +26,6 @@ seo:
 template: docs
 ---
 
-
 # _**Resume**_
 
 <div align="center">

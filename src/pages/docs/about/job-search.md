@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Job Boards and The Hunt
 
 I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the…

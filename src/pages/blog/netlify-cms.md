@@ -36,11 +36,11 @@ Netlify CMS is an open source content management system for your Git workflow th
 At its core, Netlify CMS is an open-source React app that acts as a wrapper for the Git workflow, using the GitHub, GitLab, or Bitbucket API. This provides many advantages, including:
 
 - **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
--
+- 
 - **Platform agnostic:** Works with most static site generators.
--
+- 
 - **Easy installation:** Add two files to your site and hook up the backend by including those f
--
+- 
 - **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
 
 - **Flexible content types:** Specify an unlimited number of content types with custom fields.
@@ -56,7 +56,7 @@ The folks at Netlify created Netlify CMS to fill a gap in the static site genera
 With this in mind, you can:
 
 - Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
--
+- 
 - Use Netlify without Netlify CMS and edit your static site in your code editor.
 
 - Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
@@ -81,7 +81,7 @@ The first file, admin/index.html, is the entry point for the Netlify CMS admin i
 
 In this example, we pull the admin/index.html file from a public CDN.
 
-In the code above the script is loaded from the unpkg CDN. Should there be any issue, jsDelivr can be used as an alternative source. Simply set the src to <https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js>
+In the code above the script is loaded from the unpkg CDN. Should there be any issue, jsDelivr can be used as an alternative source. Simply set the src to https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js
 
 ### Installing with npm
 
@@ -99,7 +99,7 @@ We're using [Netlify](https://www.netlify.com/) for our hosting and authenticati
 
 For GitHub and GitLab repositories, you can start your Netlify CMS config.yml file with these lines:
 
-_(For Bitbucket repositories, use the_[_Bitbucket backend_](https://www.netlifycms.org/docs/bitbucket-backend)_instructions instead.)_
+_(For Bitbucket repositories, use the _[_Bitbucket backend_](https://www.netlifycms.org/docs/bitbucket-backend)_ instructions instead.)_
 
 The configuration above specifies your backend protocol and your publication branch. Git Gateway is an open source API that acts as a proxy between authenticated users of your site and your site repo. (We'll get to the details of that in the [Authentication section](https://www.netlifycms.org/docs/add-to-your-site/#authentication) below.) If you leave out the branch declaration, it defaults to master.
 
@@ -132,9 +132,9 @@ Given this example, our collections settings would look like this in your Netlif
 Let's break that down:
 
 - label: Field label in the editor UI.
--
+- 
 - name: Field name in the document front matter.
--
+- 
 - widget: Determines UI style and value data type (details below).
 
 - default (optional): Sets a default value for the field.

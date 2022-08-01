@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 Three different aspects of web site production:
 
 - Content -- the text, images, etc. What the user wants to read.

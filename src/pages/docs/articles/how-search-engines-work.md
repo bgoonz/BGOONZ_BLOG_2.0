@@ -20,7 +20,6 @@ systems like Google.'
 template: docs
 ---
 
-
 # The Anatomy of a Search Engine
 
 > ## Excerpt
