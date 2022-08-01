@@ -1621,7 +1621,7 @@ There is a shortcut for this using the logical NOT `!` operator. Using `!` once 
 ```js
 //
 !!''; // false
-!![]; // true
+!![alt-text]; // true
 ```
 
 ### <span style="color:red;"> Don't forget:
@@ -4010,7 +4010,7 @@ var x = y >= 0 ? y : -y
 Boolean("") // false
 Boolean([]) // true
 !!"" // false
-!![] // true
+!![alt-text] // true
 const fibonacci = n =>
   [...Array(n)].reduce(
     (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i),
