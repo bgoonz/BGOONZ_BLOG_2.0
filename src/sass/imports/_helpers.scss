@@ -4,9 +4,9 @@
     clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
     height: 1px;
     overflow: hidden;
-    position: absolute;
+    position: absolute !important;
     width: 1px;
-    word-wrap: normal;
+    word-wrap: normal !important;
 }
 
 // Heading decorations
@@ -71,12 +71,12 @@
     h4,
     h5,
     h6 {
-        color: inherit;
+        color: inherit !important;
     }
 
     a {
         &:not(.button) {
-            color: inherit;
+            color: inherit !important;
 
             &:hover {
                 opacity: 0.8;
@@ -98,7 +98,7 @@
     }
 
     .button-secondary {
-        color: #fff;
+        color: #fff !important;
     }
 
     .inner-sm {
@@ -123,7 +123,6 @@
 // Grid
 .grid {
     display: -ms-flexbox;
-    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto ;
     display: flex;
     border-radius: 5px;
     -ms-flex-wrap: wrap;
@@ -133,12 +132,11 @@
 }
 
 .grid-item {
-  box-sizing: border-box;
-  // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
-  padding-left: $grid-gap / 2;
-  padding-right: $grid-gap / 2;
-  position: relative;
-  width: 100%;
+    box-sizing: border-box;
+    padding-left: $grid-gap / 2;
+    padding-right: $grid-gap / 2;
+    position: relative;
+    width: 100%;
 }
 
 .grid-center {
