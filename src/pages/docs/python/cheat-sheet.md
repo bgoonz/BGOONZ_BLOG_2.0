@@ -509,7 +509,7 @@ def hello(name):
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
 -   The return keyword.
-
+-
 -   The value or expression that the function should return.
 
 ```python
@@ -566,9 +566,9 @@ print('cats', 'dogs', 'mice', sep=',')
 ### Local and Global Scope
 
 -   Code in the global scope cannot use any local variables.
-
+-
 -   However, a local scope can access global variables.
-
+-
 -   Code in a function's local scope cannot use variables in any other local scope.
 
 -   You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
@@ -1208,7 +1208,7 @@ The _itertools_ module is a collection of tools intented to be fast and use memo
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
-> The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+> The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an "iterator algebra" making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
 The _itertools_ module comes in the standard library and must be imported.
 
@@ -1942,7 +1942,7 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
-```shell
+```consoleell
 pip install pyperclip
 ```
 
@@ -2143,7 +2143,7 @@ mo2.group()
 
 ### Matching Zero or More with the Star
 
-The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The \* (called the star or asterisk) means "match zero or more"—the group that precedes the star can occur any number of times in the text.
 
 ```python
 bat_regex = re.compile(r'Bat(wo)*man')
@@ -2163,7 +2163,7 @@ mo3.group()
 
 ### Matching One or More with the Plus
 
-While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+While \* means "match zero or more," the + (or plus) means "match one or more". The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 bat_regex = re.compile(r'Bat(wo)+man')
@@ -2226,7 +2226,7 @@ phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 To summarize what the findall() method returns, remember the following:
 
 -   When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
-
+-
 -   When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
@@ -2250,7 +2250,7 @@ consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 ### The Caret and Dollar Sign Characters
 
 -   You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
-
+-
 -   Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
 
 -   And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it's not enough for a match to be made on some subset of the string.
@@ -2390,7 +2390,7 @@ agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve kn
 
 ### Managing Complex Regexes
 
-To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
+To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, "verbose mode" can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
 
 Now instead of a hard-to-read regular expression like this:
 
@@ -2543,7 +2543,7 @@ There are two ways to specify a file path.
 -   An absolute path, which always begins with the root folder
 -   A relative path, which is relative to the program's current working directory
 
-There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
+There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period ("dot") for a folder name is shorthand for "this directory." Two periods ("dot-dot") means "the parent folder."
 
 ### Handling Absolute and Relative Paths
 
@@ -2843,7 +2843,7 @@ shutil.move('C:\\bacon.txt', 'C:\\eggs')
 ### Permanently Deleting Files and Folders
 
 -   Calling os.unlink(path) or Path.unlink() will delete the file at path.
-
+-
 -   Calling os.rmdir(path) or Path.rmdir() will delete the folder at path. This folder must be empty of any files or folders.
 
 -   Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
@@ -3074,7 +3074,7 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```bash
+```console
 pip install anyconfig
 ```
 
@@ -3165,7 +3165,7 @@ pod_bay_door_status = 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
 assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
 ```
 
-In plain English, an assert statement says, “I assert that this condition holds true, and if not, there is a bug somewhere in the program.” Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
+In plain English, an assert statement says, "I assert that this condition holds true, and if not, there is a bug somewhere in the program." Unlike exceptions, your code should not handle assert statements with try and except; if an assert fails, your program should crash. By failing fast like this, you shorten the time between the original cause of the bug and when you first notice the bug. This will reduce the amount of code you will have to check before finding the code that's causing the bug.
 
 Disabling Assertions
 
@@ -3316,9 +3316,9 @@ else:
 
 The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
-1. In a function declaration, `*` means “pack all remaining positional arguments into a tuple named `<name>`”, while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, `*` means "pack all remaining positional arguments into a tuple named `<name>`", while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, `*` means “unpack tuple or list named `<name>` to positional arguments at this position”, while `**` is the same for keyword arguments.
+2. In a function call, `*` means "unpack tuple or list named `<name>` to positional arguments at this position", while `**` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -3470,7 +3470,7 @@ calculate.add(3, 5)
 1. Every Python module has it's `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
-4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
+4. if `__name__ == "main":` is used to execute some code only if the file was run directly, and not imported.
 
 ## setup.py
 
@@ -3480,7 +3480,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```bash
+```console
 python setup.py install
 ```
 

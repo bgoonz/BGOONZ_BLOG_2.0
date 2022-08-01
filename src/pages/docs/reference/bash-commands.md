@@ -23,84 +23,92 @@ seo:
 template: docs
 ---
 
-
-
-## My Commands: 
-
+## My Commands:
 
 #### Find:
 
+# To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG):
 
-# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG):
-find . -iname "*.jpg"
+find . -iname "\*.jpg"
 
 # To find directories:
+
 find . -type d
 
 # To find files:
+
 find . -type f
 
 # To find files by octal permission:
+
 find . -type f -perm 777
 
 # To find files with setuid bit set:
+
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
 # To find files with extension '.txt' and remove them:
-find ./path/ -name '*.txt' -exec rm '{}' \;
+
+find ./path/ -name '\*.txt' -exec rm '{}' \;
 
 # To find files with extension '.txt' and look for a string into them:
-find ./path/ -name '*.txt' | xargs grep 'string'
+
+find ./path/ -name '\*.txt' | xargs grep 'string'
 
 # To find files with size bigger than 5 Mebibyte and sort them by size:
+
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
 
 # To find files bigger than 2 Megabyte and list them:
+
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 
 # To find files modified more than 7 days ago and list file information:
+
 find . -type f -mtime +7d -ls
 
 # To find symlinks owned by a user and list file information:
+
 find . -type l -user <username-or-userid> -ls
 
 # To search for and delete empty directories:
+
 find . -type d -empty -exec rmdir {} \;
 
 # To search for directories named build at a max depth of 2 directories:
+
 find . -maxdepth 2 -name build -type d
 
 # To search all files who are not in .git directory:
-find . ! -iwholename '*.git*' -type f
+
+find . ! -iwholename '_.git_' -type f
 
 # To find all files that have the same node (hard link) as MY_FILE_HERE:
+
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
 
 # To find all files in the current directory and modify their permissions:
+
 find . -type f -exec chmod 644 {} \;
 
-
 ---
-
 
 # 1. Remove spaces from file and folder names and then remove numbers from files and folder names....
 
 ### Description: need to : `sudo apt install rename`
 
-
->Notes: Issue when renaming file without numbers collides with existing file name...
-
+> Notes: Issue when renaming file without numbers collides with existing file name...
 
 ###### code:
 
-
-```sh
-find . -name "* *" -type d | rename 's/ /_/g'   
+```console
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
-```sh
 
-```sh
+````console
+
+```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -112,14 +120,12 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ---
 ### Description: combine the contents of every file in the contaning directory.
 
-
 >Notes: this includes the contents of the file it's self...
-
 
 ###### code:
 
-
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -129,72 +135,57 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-
-```
-
+````
 
 ---
-# 2. Download Website Using Wget:
 
+# 2. Download Website Using Wget:
 
 ### Description:
 
-
->Notes:       ==>     sudo apt install wget
-
+> Notes: ==> sudo apt install wget
 
 ###### code:
 
-
-```sh
+```console
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
 ```
 
-
 ---
+
 # 3. Clean Out Messy Git Repo:
 
-### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders 
+### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 
-
->Notes:   To clear up clutter in repositories that only get used on your local machine.
-
+> Notes: To clear up clutter in repositories that only get used on your local machine.
 
 ###### code:
 
+```console
 
-```sh
-
-
-find . -empty -type d -print -delete        
-
+find . -empty -type d -print -delete
 
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 
-
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
-
 
 ```
 
-
 ---
+
 # 4. clone all of a user's git repositories
 
-### Description: clone all of a user or organization's git  repositories.
+### Description: clone all of a user or organization's git repositories.
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
 # Generalized:
-```sh
 
-
+```console
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -205,19 +196,18 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```sh
+```console
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
 
-
 ```
 
 # Clone all Git Organization:
 
-```sh
+```console
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -225,164 +215,139 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   cut -d \" -f 4 |
   xargs -L1 git clone
 
-
 ```
 
 ---
+
 # 5. Git Workflow
 
 ### Description:
 
-
-
 ###### code:
 
-
-```sh
+```console
 git pull
 git init
 git add .
 git commit -m"update"
 git push -u origin master
 ```
-```sh
+
+```console
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
-```sh
+
+```console
 
 git init
 git add .
 git commit -m"update"
 git push -u origin bryan-guner
 ```
-```sh
+
+```console
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
-```sh
+
+```console
 git init
 git add .
 git commit -m"update"
 git push -u origin preview
 ```
 
-
 ---
+
 # 6. Recursive Unzip In Place
 
 ### Description: recursively unzips folders and then deletes the zip file by the same name.
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
-
-
 
 find . -name "*.zip" -type f -print -delete
 
 ```
 
-
 ---
+
 # 7. git pull keeping local changes:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-
+```console
 
 git stash
 git pull
 git stash pop
 
-
 ```
 
-
 ---
+
 # 8. Prettier Code Formatter:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 sudo npm i prettier -g
 
 prettier --write .
 
-
-
 ```
 
-
 ---
-# 9.  Pandoc
+
+# 9. Pandoc
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
-
-
 find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
-
-
 
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
 
-
 ```
 
-
 ---
+
 # 10. Gitpod Installs
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-sudo apt install tree 
+```console
+sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
 sudo apt install black -y
@@ -391,9 +356,9 @@ npm i lebab -g
 npm i prettier -g
 npm i npm-recursive-install -g
 
-
 ```
-```sh
+
+```console
 black .
 
 prettier --write .
@@ -401,36 +366,31 @@ npm-recursive-install
 ```
 
 ---
+
 # 11. Repo Utils Package:
 
 ### Description: my standard repo utis package
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 npm i @bgoonz11/repoutils
 
 ```
 
-
 ---
-# 12.  Unix Tree Package Usage:
+
+# 12. Unix Tree Package Usage:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -441,68 +401,51 @@ tree -f -L 2  >README.md
 
 tree -f  -I  'node_modules' >listing-path.md
 
-
 tree -f  -I  'node_modules' -d >TREE.md
 
 tree -f >README.md
 
 ```
 
-
 ---
+
 # 13. Find & Replace string in file & folder names recursively..
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
-
 find . -type d -exec rename 's/-master//g' {} +
-
 
 find . -type f -exec rename 's/\.download//g' {} +
 
-
-
-
 find . -type d -exec rename 's/-main//g' {} +
 
+rename 's/\.js\.download$/.js/' *.js\.download
 
-
-rename 's/\.js\.download$/.js/' *.js\.download 
-
-
-rename 's/\.html\.markdown$/.md/' *.html\.markdown 
-
+rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
 find . -type d -exec rename 's/es6//g' {} +
 
-
 ```
 
-
 ---
+
 # 14. Remove double extensions :
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 #!/bin/bash
 
 for file in *.md.md
@@ -517,8 +460,8 @@ do
     mv "${file}" "${file%.html}"
 done
 ```
-```sh
 
+```console
 
 #!/bin/bash
 
@@ -535,83 +478,69 @@ done
 ```
 
 ---
+
 # 15. Truncate folder names down to 12 characters:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 for d in ./*; do mv $d ${d:0:12}; done
 
 ```
 
-
 ---
+
 # 16.Appendir.js
 
 ### Description: combine the contents of every file in the contaning directory.
 
-
->Notes: this includes the contents of the file it's self...
-
+> Notes: this includes the contents of the file it's self...
 
 ###### code:
 
-
 ```js
+//
 //APPEND-DIR.js
 const fs = require('fs');
-let cat = require('child_process')
-  .execSync('cat *')
-  .toString('UTF-8');
-fs.writeFile('output.md', cat, err => {
-  if (err) throw err;
+let cat = require('child_process').execSync('cat *').toString('UTF-8');
+fs.writeFile('output.md', cat, (err) => {
+    if (err) throw err;
 });
-
-
 ```
 
-
 ---
+
 # 17. Replace space in filename with underscore
 
 ### Description: followed by replace `'#' with '_'` in directory name
 
-
->Notes: Can be re-purposed to find and replace any set of strings in file or folder names. 
-
+> Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 
 ###### code:
 
-
-```sh
+```console
 find . -name "* *" -type f | rename 's/_//g'
 
-find . -name "* *" -type d | rename 's/#/_/g'   
+find . -name "* *" -type d | rename 's/#/_/g'
 
 ```
 
-
 ---
+
 # 18. Filter & delete files by name and extension
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -628,85 +557,68 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 ```
 
-
 ---
-# 19. Remove lines containing string:
 
+# 19. Remove lines containing string:
 
 ### Description:
 
+> Notes: Remove lines not containing `'.js'`
 
->Notes: Remove lines not containing `'.js'`
-```sh
+```console
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
-
 
 ```
 
 ###### code:
 
-
-```sh
+```console
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
-
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
 
-
-
 sudo sed -i '/github\.com/d' ./*out.md
-
 
 sudo sed -i '/author/d' ./*
 
 ```
 
-
 ---
+
 # 20. Remove duplicate lines from a text file
 
 ### Description:
 
+> Notes:
+> //...syntax of uniq...//
+> $uniq [OPTION] [INPUT[OUTPUT]]
+> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output.
 
->Notes:
- //...syntax of uniq...// 
-$uniq [OPTION] [INPUT[OUTPUT]]
-The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn’t specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn’t specified then uniq writes to the standard output. 
-
-Now, let’s understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq. 
-
- 
-
+Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 
 ###### code:
 
-
-```sh
+```console
 sudo apt install uniq
 uniq -u input.txt output.txt
 
 ```
 
-
 ---
+
 # 21. Remove lines containing string:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
-
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
 
 sudo sed -i '/github\.com/d' ./*out.md
 
@@ -724,32 +636,24 @@ sudo sed -i '/tags:/d' ./*output.md
 
 sudo sed -i '/badstring/d' ./*
 
-
 sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
 
-
-
 ```
 
-
 ---
-# 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
+# 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-
+```console
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -757,51 +661,43 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-# usage: 
+# usage:
 # - zipdir thedir
 # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add 'zip' command this way: 
+# if in windows/git-bash, add 'zip' command this way:
 # https://stackoverflow.com/a/55749636/1482990
-
 
 ```
 
-
 ---
-# 23. Delete files containing a certain string:
 
+# 23. Delete files containing a certain string:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
 
 ```
 
-
 ---
-# 24. 
+
+# 24.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 #!/bin/sh
 
@@ -825,7 +721,8 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
     echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
@@ -833,7 +730,6 @@ cmd() {
   echo ""
   echo '<style>'
 
-
 echo '    a {'
 echo '      color: black;'
 echo '    }'
@@ -881,11 +777,14 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
+  awk '{print "<li>
+<a href=\""$1"\">",$1,"&nbsp;</a>
+</li>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -901,29 +800,21 @@ cmd $listing --sort=extension >>$html
 
 ```
 
-
 ---
+
 # 25. Index of Iframes
 
 ### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags.
 
+> Notes: Useful Follow up Code:
 
->Notes: Useful Follow up Code:
-
-
-```sh
-
-
-
-
+```console
 
 ```
 
 ###### code:
 
-
-```sh
-
+```console
 
 #!/bin/sh
 
@@ -947,13 +838,13 @@ cmd() {
   echo '  <meta name="Author" content="Bryan Guner">'
   echo '<link rel="stylesheet" href="./assets/prism.css">'
   echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
+  echo ' <script async defer src="./assets/prism.js">
+</script>'
 
   echo "  <title> directory </title>"
 
   echo ""
   echo '<style>'
-
 
 echo '    a {'
 echo '      color: black;'
@@ -1002,11 +893,13 @@ echo '  </style>'
 
   echo "<ul>"
 
-  awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
+  awk '{print "<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src=\""$1"\">","</iframe>
+<br>"}' $listing
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  # 	{print " <a href=\""$1"\">",$1,"</a>
+</li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1022,45 +915,37 @@ cmd $listing --sort=extension >>$html
 
 ```
 
-
 ---
+
 # 26. Filter Corrupted Git Repo For Troublesome File:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
-
 ```
 
-
 ---
-# 27.  OVERWRITE LOCAL CHANGES:
 
-### Description: 
+# 27. OVERWRITE LOCAL CHANGES:
+
+### Description:
+
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
 
-
->Notes: 
-First, run a fetch to update all origin/<branch> refs to latest:
-
-
-
+> Notes:
+> First, run a fetch to update all origin/<branch> refs to latest:
 
 ###### code:
 
-
-```sh
+```console
 
 git fetch --all
 # Backup your current branch:
@@ -1081,135 +966,110 @@ git reset --hard origin/master
 
 ```
 
-
 ---
+
 # 28. Remove Submodules:
 
 ### Description: To remove a submodule you need to:
 
-
->Notes:
-
+> Notes:
 
 > Delete the relevant section from the .gitmodules file.
-Stage the .gitmodules changes git add .gitmodules
-Delete the relevant section from .git/config.
-Run git rm --cached path_to_submodule (no trailing slash).
-Run rm -rf .git/modules/path_to_submodule (no trailing slash).
-Commit git commit -m "Removed submodule "
-Delete the now untracked submodule files rm -rf path_to_submodule
+> Stage the .gitmodules changes git add .gitmodules
+> Delete the relevant section from .git/config.
+> Run git rm --cached path_to_submodule (no trailing slash).
+> Run rm -rf .git/modules/path_to_submodule (no trailing slash).
+> Commit git commit -m "Removed submodule "
+> Delete the now untracked submodule files rm -rf path_to_submodule
 
 ###### code:
 
-
-```sh
+```console
 git submodule deinit
 ```
 
-
 ---
+
 # 29. GET GISTS
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 sudo apt install wget
-
-
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
 
-
 wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
-
 
 wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
 wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
-
 ```
 
-
 ---
+
 # 30. Remove Remote OriginL
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 git remote remove origin
 
 ```
 
-
 ---
+
 # 31. just clone .git folder:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-
+```console
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
 ```
 
-
 ---
+
 # 32. Undo recent pull request:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 git reset --hard master@{"10 minutes ago"}
 
-
 ```
 
-
 ---
+
 # 33. Lebab
 
 ### Description: ES5 --> ES6
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1222,9 +1082,7 @@ git reset --hard master@{"10 minutes ago"}
  lebab --replace ./ --transform obj-shorthand
  lebab --replace ./ --transform multi-var
 
-
 # ALL:
-
 
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1234,12 +1092,12 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
 lebab --replace ./ --transform obj-method
 lebab --replace ./ --transform class
@@ -1248,314 +1106,312 @@ lebab --replace ./ --transform arg-spread
 lebab --replace ./ --transform arg-rest
 lebab --replace ./ --transform for-each
 lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs 
+lebab --replace ./ --transform commonjs
 lebab --replace ./ --transform exponent
 lebab --replace ./ --transform multi-var
 lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param 
+lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
-
 
 ```
 
-
 ---
+
 # 34. Troubleshoot Ubuntu Input/Output Error
 
 ### Description: Open Powershell as Administrator...
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```ps1
+```
 
  wsl.exe --shutdown
 
  Get-Service LxssManager | Restart-Service
 
-
 ```
 
-
 ---
+
 # 35. Export Medium as Markdown
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 npm i mediumexporter -g
-
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
 
-
 ```
 
-
 ---
+
 # 36. Delete files in violation of a given size range (100MB for git)
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 find . -size +75M -a -print -a -exec rm -f {} \;
-
-
-
 
 find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```
 
-
 ---
+
 # 37. download all links of given file type
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-
+```console
 
 wget -r -A.pdf https://overapi.com/git
 
-
 ```
 
-
 ---
+
 # 38. Kill all node processes
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 killall -s KILL node
 
 ```
 
-
 ---
+
 # 39. Remove string from file names recursively
 
-### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories. 
+### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories.
 
 ###### code:
 
-
-```sh
+```console
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
-
-
-
 
 find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
->Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
-
-```sh
+```console
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
-
-
-
 
 find . -type d -exec rename 's/-master//g' {} +
 
 ```
 
-
-
-
 ---
-# 40. Remove spaces from file and folder names recursively 
+
+# 40. Remove spaces from file and folder names recursively
 
 ### Description: replaces spaces in file and folder names with an `_` underscore
 
-
->Notes: need to run `sudo apt install rename` to use this command
-
+> Notes: need to run `sudo apt install rename` to use this command
 
 ###### code:
 
+```console
 
-```sh
-
-find . -name "* *" -type d | rename 's/ /_/g'   
+find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-
 ---
-# 41.  Zip Each subdirectories in a given directory into their own zip file
+
+# 41. Zip Each subdirectories in a given directory into their own zip file
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
 
-
 ---
-# 42. 
-# 43. 
-# 44. 
-# 45. 
-# 46. 
-# 47. 
-# 48. 
-# 49. 
-# 50. 
-# 51. 
-# 52. 
-# 53. 
-# 54. 
-# 55. 
-# 56. 
-# 57. 
-# 58. 
-# 59. 
-# 60. 
-# 61. 
-# 62. 
-# 63. 
-# 64. 
-# 65. 
-# 66. 
-# 67. 
-# 68. 
-# 69. 
-# 70. 
-# 71. 
-# 72. 
-# 73. 
-# 74. 
-# 75. 
-# 76. 
-# 77. 
-# 78. 
-# 79. 
-# 80. 
-# 81. 
-# 82. 
-# 83. 
-# 84. 
-# 85. 
-# 86. 
-# 87. 
-# 88. 
-# 89. 
-# 90. 
+
+# 42.
+
+# 43.
+
+# 44.
+
+# 45.
+
+# 46.
+
+# 47.
+
+# 48.
+
+# 49.
+
+# 50.
+
+# 51.
+
+# 52.
+
+# 53.
+
+# 54.
+
+# 55.
+
+# 56.
+
+# 57.
+
+# 58.
+
+# 59.
+
+# 60.
+
+# 61.
+
+# 62.
+
+# 63.
+
+# 64.
+
+# 65.
+
+# 66.
+
+# 67.
+
+# 68.
+
+# 69.
+
+# 70.
+
+# 71.
+
+# 72.
+
+# 73.
+
+# 74.
+
+# 75.
+
+# 76.
+
+# 77.
+
+# 78.
+
+# 79.
+
+# 80.
+
+# 81.
+
+# 82.
+
+# 83.
+
+# 84.
+
+# 85.
+
+# 86.
+
+# 87.
+
+# 88.
+
+# 89.
+
+# 90.
+
 # 91. Unzip PowerShell
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```ps1
+```
 
 PARAM (
     [string] $ZipFilesPath = "./",
     [string] $UnzipPath = "./RESULT"
 )
- 
+
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
- 
+
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
- 
+
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
- 
- 
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
+
+    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
     $progress++
 }
 
-
 ```
 
-
 ---
+
 # 92. return to bash from zsh
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
  sudo apt --purge remove zsh
 
 ```
 
-
 ---
+
 # 93. Symbolic Link
 
 ### Description: to working directory
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -1563,55 +1419,45 @@ ln -s "$(pwd)" ~/Downloads
 
 ```
 
-
 ---
+
 # 94. auto generate readme
 
 ### Description: rename existing readme to blueprint.md
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 
 npx @appnest/readme generate
 
-
 ```
 
-
 ---
+
 # 95. Log into postgres:
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 sudo -u postgres psql
 ```
 
-
 ---
+
 # 96. URL To Subscribe To YouTube Channel
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
-
 
 ```txt
 
@@ -1619,70 +1465,57 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 
 ```
 
-
 ---
+
 # 97. Embed Repl.it In Medium Post:
 
-
 ###### code:
-
 
 ```txt
 
 https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/node-db1-project?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
 https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
-
 ```
 
-
 ---
-# 98. 
+
+# 98.
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
-
+```console
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ```
 
-
 ---
-# 99.  Cheat Sheet
+
+# 99. Cheat Sheet
 
 ### Description:
 
-
->Notes:
-
+> Notes:
 
 ###### code:
 
-
-```sh
+```console
 #!/bin/bash
-##############################################################################
+
 # SHORTCUTS and HISTORY
-##############################################################################
+
 
 CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
@@ -1719,7 +1552,7 @@ ALT+.   # pastes last word from the last command. Pressing it repeatedly travers
 ALT+U   # capitalizes every character from the current cursor position to the end of the word
 ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
 ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
-ALT+R   # reverts any changes to a command you’ve pulled from your history if you’ve edited it.
+ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
 ALT+?   # list possible completions to what is typed
 ALT+^   # expand line to most recent match from history
 
@@ -1739,9 +1572,8 @@ history   # shows command line history
 exit      # logs out of current session
 
 
-##############################################################################
 # BASH BASICS
-##############################################################################
+
 
 env                 # displays all environment variables
 
@@ -1755,9 +1587,7 @@ which bash          # finds out which program is executed as 'bash' (default: /b
 clear               # clears content on window (hide displayed lines)
 
 
-##############################################################################
 # FILE COMMANDS
-##############################################################################
 
 
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
@@ -1799,9 +1629,7 @@ head -n file_name | tail +n   # Print nth line from file.
 head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
 
 
-##############################################################################
 # DIRECTORY COMMANDS
-##############################################################################
 
 
 mkdir <dirname>               # makes a new directory
@@ -1814,11 +1642,10 @@ cd <dirname>                  # changes directory
 cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
 pwd                           # tells you where you currently are
 cd ~                          # changes to home.
-cd -                          # changes to previous working directory
+cd -                        # changes to previous working directory
 
-##############################################################################
+
 # SSH, SYSTEM INFO & NETWORK COMMANDS
-##############################################################################
 
 
 ssh user@host            # connects to host as user
@@ -1856,9 +1683,7 @@ wget <file>              # downloads file
 time <command>             # report time consumed by command execution
 
 
-##############################################################################
 # VARIABLES
-##############################################################################
 
 
 varname=value                # defines a variable
@@ -1868,7 +1693,7 @@ echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
 read <varname>               # reads a string from the input and assigns it to a variable
-read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value 
+read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
 column -t <filename>         # display info in pretty columns (often used with pipe)
 let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
@@ -1915,14 +1740,11 @@ ${#varname}                  # returns the length of the value of the variable a
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
 
-##############################################################################
 # FUNCTIONS
-##############################################################################
 
 
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 # $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
-
 
 function functname() {
   shell commands
@@ -1932,9 +1754,7 @@ unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
 
-##############################################################################
 # FLOW CONTROLS
-##############################################################################
 
 
 statement1 && statement2  # and operator
@@ -2023,9 +1843,8 @@ until condition; do
   statements
 done
 
-##############################################################################
+
 # COMMAND-LINE PROCESSING CYCLE
-##############################################################################
 
 
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
@@ -2038,9 +1857,7 @@ enable   # enables and disables shell built-ins
 eval     # takes arguments and run them through the command-line processing steps all over again
 
 
-##############################################################################
 # INPUT/OUTPUT REDIRECTORS
-##############################################################################
 
 
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
@@ -2059,17 +1876,15 @@ n<&        # duplicates standard input from file descriptor n
 n>&m       # file descriptor n is made to be a copy of the output file descriptor
 n<&m       # file descriptor n is made to be a copy of the input file descriptor
 &>file     # directs standard output and standard error to file
-<&-        # closes the standard input
->&-        # closes the standard output
-n>&-       # closes the ouput from file descriptor n
-n<&-       # closes the input from file descripor n
+<&-      # closes the standard input
+>&-      # closes the standard output
+n>&-     # closes the ouput from file descriptor n
+n<&-     # closes the input from file descripor n
 
 |tee <file># output command to both terminal and a file (-a to append to file)
 
 
-##############################################################################
 # PROCESS HANDLING
-##############################################################################
 
 
 # To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
@@ -2082,7 +1897,7 @@ jobs         # lists all jobs (use with -l to see associated PID)
 
 fg           # brings a background job into the foreground
 fg %+        # brings most recently invoked background job
-fg %-        # brings second most recently invoked background job
+fg %-      # brings second most recently invoked background job
 fg %N        # brings job number N
 fg %string   # brings job whose command begins with string
 fg %?string  # brings job whose command contains string
@@ -2109,9 +1924,7 @@ pv                  # display progress bar for data handling commands. often use
 yes                 # give yes response everytime an input is requested from script/process
 
 
-##############################################################################
 # TIPS & TRICKS
-##############################################################################
 
 
 # set an alias
@@ -2127,9 +1940,7 @@ source .bashrc
 cd $websites
 
 
-##############################################################################
 # DEBUGGING SHELL PROGRAMS
-##############################################################################
 
 
 bash -n scriptname  # don't run commands; check for syntax errors only
@@ -2164,10 +1975,10 @@ function returntrap {
 
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
-##############################################################################
-# COLORS AND BACKGROUNDS 
-##############################################################################
-# note: \e or \x1B also work instead of \033 
+
+# COLORS AND BACKGROUNDS
+
+# note: \e or \x1B also work instead of \033
 # Reset
 Color_Off='\033[0m' # Text Reset
 
@@ -2190,7 +2001,6 @@ LYellow='\033[0;93m'# Ligth Yellow
 LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
-
 
 # Bold
 BBlack='\033[1;30m' # Black
@@ -2224,9 +2034,8 @@ On_White='\033[47m' # White
 
 # Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
-echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
+echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
-
 
 ```

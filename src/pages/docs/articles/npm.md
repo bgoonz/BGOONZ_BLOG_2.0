@@ -35,7 +35,7 @@ There are many things that `npm` does.
 
 If a project has a `package.json` file, by running
 
-```bash
+```console
 npm install
 ```
 
@@ -45,7 +45,7 @@ it will install everything the project needs, in the `node_modules` folder, crea
 
 You can also install a specific package by running
 
-```bash
+```console
 npm install <package-name>
 ```
 
@@ -94,7 +94,8 @@ npm run <task-name>
 
 For example:
 
-```json
+```js
+//on
 {
     "scripts": {
         "start-dev": "node lib/server-development",
@@ -105,7 +106,8 @@ For example:
 
 It's very common to use this feature to run Webpack:
 
-```json
+```js
+//on
 {
     "scripts": {
         "watch": "webpack --watch --progress --colors --config webpack.conf.js",

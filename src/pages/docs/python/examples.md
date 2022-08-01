@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Python Practice:
 
 # Python Problems & Solutions For Beginners
@@ -24,17 +25,27 @@ Introduction to python taught through example problems. Solutions are included i
 
 ### Python Practice Problems
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*dMdMGwOJKHJ-5sOP.gif" class="graf-image" />
+</figure>
 
 ---
 
 #### Here are some other articles for reference if you need them:
 
-<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d"><strong>Beginners Guide To Python</strong><br />
-<em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a><a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d">
+<strong>Beginners Guide To Python</strong>
+<br />
+<em>My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…</em>medium.com</a>
+<a href="https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb"><strong>Python Study Guide for a JavaScript Programmer</strong><br />
-<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a><a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb">
+<strong>Python Study Guide for a JavaScript Programmer</strong>
+<br />
+<em>A guide to commands in Python from what you know in JavaScript</em>levelup.gitconnected.com</a>
+<a href="https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ---
 
@@ -50,8 +61,12 @@ The `datetime` module supplies classes for manipulating dates and times.
 
 While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation.
 
-<a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html"><strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong><br />
-<em>Only one concrete class, the class, is supplied by the module. The class can represent simple timezones with fixed…</em>docs.python.org</a><a href="https://docs.python.org/3/library/datetime.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://docs.python.org/3/library/datetime.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/datetime.html">
+<strong>datetime - Basic date and time types - Python 3.9.6 documentation</strong>
+<br />
+<em>Only one concrete class, the class, is supplied by the module. The class can represent simple timezones with fixed…</em>docs.python.org</a>
+<a href="https://docs.python.org/3/library/datetime.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 ### Problem 2
 
@@ -82,8 +97,12 @@ For example, `13` is a divisor of `26` because `26 / 13` has no remainder.)
 
 Take two lists, and write a program that returns a list that contains only the elements that are `common between the lists (without duplicates)`. Make sure your program works on two lists of different sizes.
 
-<a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html"><strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong><br />
-<em>Source code: Lib/random.py This module implements pseudo-random number generators for various distributions. For…</em>docs.python.org</a><a href="https://docs.python.org/3/library/random.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://docs.python.org/3/library/random.html" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://docs.python.org/3/library/random.html">
+<strong>random - Generate pseudo-random numbers - Python 3.9.6 documentation</strong>
+<br />
+<em>Source code: Lib/random.py This module implements pseudo-random number generators for various distributions. For…</em>docs.python.org</a>
+<a href="https://docs.python.org/3/library/random.html" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 Bonus:
 
@@ -111,7 +130,9 @@ Make a two-player `Rock-Paper-Scissors` game.
 **Hint:**  
 Ask for player plays (using input), compare them. Print out a message of congratulations to the winner, and ask if the players want to start a new game.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*1_4w6u4D7EDi2r4h.png" class="graf-image" /></figure>### Problem 9
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*1_4w6u4D7EDi2r4h.png" class="graf-image" />
+</figure>### Problem 9
 
 Generate a random number between `1 and 100 (including 1 and 100)`. Ask the user to guess the number, then tell them whether they guessed `too low`, `too high`, or `exactly right`.
 
@@ -119,7 +140,7 @@ Generate a random number between `1 and 100 (including 1 and 100)`. Ask the user
 > Remember to use the user input from the very first exercise.
 
 **Extras:**  
-Keep the game going until the user types `“exit”`.  
+Keep the game going until the user types `"exit"`.  
 Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
 ### Problem 10
@@ -129,13 +150,17 @@ Write a program that asks the user how many Fibonacci numbers to generate and th
 **Hint:**  
 The Fibonacci sequence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: `1, 1, 2, 3, 5, 8, 13, …`
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*2xJsVLGikF6dg7qc.png" class="graf-image" />
+</figure>
 
 ---
 
 ### Intermediate Problems:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*hTU58jGsgkrszi76.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*hTU58jGsgkrszi76.gif" class="graf-image" />
+</figure>
 
 ---
 
@@ -172,22 +197,30 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 
 ### My Blog:
 
-<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a><a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://master--bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://master--bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
+<br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>master--bgoonz-blog.netlify.app</a>
+<a href="https://master--bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b">
+<strong>A list of all of my articles to link to future posts</strong>
+<br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ---
 
 # Python
 
 -   Python is an interpreted, high-level and general-purpose, dynamically typed programming language
-
--   It is also Object oriented, modular oriented and a scripting language.
-
+-
+-   It is also Object oriented, modular oriented and a
+-
 -   In Python, everything is considered as an Object.
-
+-
 -   A python file has an extension of .py
 
 -   Python follows Indentation to separate code blocks instead of flower brackets({}).
@@ -294,7 +327,7 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 ### List
 
 -   List is a collection which is ordered and changeable. Allows duplicate members.
-
+-
 -   Lists are created using square brackets:
 
 ```py
@@ -302,9 +335,9 @@ thislist = ["apple", "banana", "cherry"]
 ```
 
 -   List items are ordered, changeable, and allow duplicate values.
-
+-
 -   List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
-
+-
 -   The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
 
 -   To determine how many items a list has, use the `len()` function.
@@ -334,8 +367,8 @@ thistuple = ("apple", "banana", "cherry")
 -   Tuple items are ordered, unchangeable, and allow duplicate values.
 -   Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
 -   When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
-
--   Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+-
+-   Tuples are unchangeable, meaning that we cannot change, add or remo
 -   Since tuple are indexed, tuples can have items with the same value:
 -   Tuples allow duplicate values:
 
@@ -380,9 +413,9 @@ thisset = {"apple", "banana", "cherry"}
 
 -   Set items are unordered, unchangeable, and do not allow duplicate values.
 -   Unordered means that the items in a set do not have a defined order.
-
--   Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
-
+-
+-   Set items can appear in a different order every time you use them, and cannot be referred to b
+-
 -   Sets are unchangeable, meaning that we cannot change the items after the set has been created.
 -   Duplicate values will be ignored.
 -   To determine how many items a set has, use the `len()` method.
@@ -486,13 +519,13 @@ while i < 6:
 -   The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
 -   With the `break` statement we can stop the loop even if the while condition is true
 -   With the continue statement we can stop the current iteration, and continue with the next.
-
+-
 -   With the else statement we can run a block of code once when the condition no longer is true.
 
 #### For loop
 
 -   A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
-
+-
 -   This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
 
 -   With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
@@ -982,6 +1015,5 @@ person = {"name": "Corina", "age": 32, "height": 1.4}
 # This loops through and capitalizes the first letter of all keys
 newPerson = {key.title(): value for key, value in person.items()}
 print(list(newPerson.items()))
-
 
 ```

@@ -1,7 +1,7 @@
 ---
-title: lorem-ipsum
+title: Flow Control
 weight: 0
-excerpt: lorem-ipsum
+excerpt: These operators evaluate to True or False depending on the values you give them.
 seo:
     title: ''
     description: ''
@@ -9,6 +9,7 @@ seo:
     extra: []
 template: docs
 ---
+
 
 ## Flow Control:
 

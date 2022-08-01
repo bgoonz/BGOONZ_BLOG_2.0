@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # History Api
 
 # &#xA;&#xA;
@@ -44,7 +45,7 @@ You can determine the number of pages in the history stack by looking at the val
 
 ## [Interfaces](https://developer.mozilla.org/en-US/docs/Web/API/History_API#interfaces)
 
-Allows manipulation of the browser *session history* (that is, the pages visited in the tab or frame that the current page is loaded in).
+Allows manipulation of the browser _session history_ (that is, the pages visited in the tab or frame that the current page is loaded in).
 
 ## [Examples](https://developer.mozilla.org/en-US/docs/Web/API/History_API#examples)
 
@@ -86,13 +87,13 @@ In a sense, calling pushState() is similar to setting window.location = "#foo", 
 
 But pushState() has a few advantages:
 
--   The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
+- The new URL can be any URL in the same origin as the current URL. In contrast, setting window.location keeps you at the same [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) only if you modify only the hash.
+- 
+- You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn
+- 
+- You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
 
--   You don't have to change the URL if you don't want to. In contrast, setting window.location = "#foo"; creates a new history entry only if the current hash isn't #foo.
-
--   You can associate arbitrary data with your new history entry. With the hash-based approach, you need to encode all of the relevant data into a short string.
-
--   If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
+- If title is subsequently used by browsers, this data can be utilized (independent of, say, the hash).
 
 Note that pushState() never causes a hashchange event to be fired, even if the new URL differs from the old URL only in its hash.
 
@@ -126,21 +127,21 @@ See [WindowEventHandlers.onpopstate](https://developer.mozilla.org/en-US/docs/We
 
 ### [Reading the current state](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#reading_the_current_state)
 
-When your page loads, it might have a non-null state object.  This can happen, for example, if the page sets a state object (using [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) or [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)) and then the user restarts their browser. When the page reloads, the page will receive an onload event, but no popstate event. However, if you read the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property, you'll get back the state object you would have gotten if a popstate had fired.
+When your page loads, it might have a non-null state object. This can happen, for example, if the page sets a state object (using [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) or [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)) and then the user restarts their browser. When the page reloads, the page will receive an onload event, but no popstate event. However, if you read the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property, you'll get back the state object you would have gotten if a popstate had fired.
 
 You can read the state of the current history entry without waiting for a popstate event using the [history.state](https://developer.mozilla.org/en-US/docs/Web/API/History/state) property like this:
 
 ## [See also](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API#see_also)
 
--   [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+- [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+- 
+- [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
 
--   [Ajax navigation example](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Example)
-
--   [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
+- [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history)
 
 # Window.historyCopy to Clipboard&#xA;&#xA;
 
-The Window.history read-only property returns a reference to the [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object, which provides an interface for manipulating the browser *session history* (pages visited in the tab or frame that the current page is loaded in).
+The Window.history read-only property returns a reference to the [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object, which provides an interface for manipulating the browser _session history_ (pages visited in the tab or frame that the current page is loaded in).
 
 See [Manipulating the browser history](https://developer.mozilla.org/en-US/docs/Web/API/History_API) for examples and details. In particular, that article explains security features of the [pushState()](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState) and [replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState) methods that you should be aware of before using them.
 

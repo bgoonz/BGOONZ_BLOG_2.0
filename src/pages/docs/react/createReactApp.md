@@ -39,14 +39,13 @@ npm start
 
 #### Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project.
 
-```bash
+```console
 |15:25:30|bryan@LAPTOP-9LGJ3JGS:[05-installing-nodejs] 05-installing-nodejs_exitstatus:0__________________________________________________________o>
 
 npx create-react-app my-app
 y-app
 npm start
 Creating a new React app in /mnt/c/MY-WEB-DEV/10-React-V3/05-installing-nodejs/my-app.
-
 
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...

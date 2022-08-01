@@ -1,26 +1,14 @@
 ---
-title: React Patterns & Use Cases
+title: React By Usecase
 weight: 0
-excerpt: React Patterns & Use Cases
+excerpt: cheat sheet
 seo:
-    title: React Patterns & Use Cases
-    description: React Patterns & Use Cases
+    title: 'React By Usecase'
+    description: 'Of course, if you get a DOM node for the component via refs, you can do anything you want with the DOM nodes of other components, but it will likely mess up React.'
     robots: []
-    extra:
-        - name: 'og:image'
-          value: images/py-code.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:title'
-          value: python cheat sheet
-          keyName: name
-          relativeUrl: false
+    extra: []
 template: docs
 ---
-
-
-
-
 
 
 ## Wrapping/Mirroring
@@ -34,21 +22,21 @@ Strategy: extend `React.ComponentPropsWithoutRef<'button'>`
 ```tsx
 // usage
 function App() {
-  // Type '"foo"' is not assignable to type '"button" | "submit" | "reset" | undefined'.(2322)
-  // return <Button type="foo"> sldkj </Button>
+    // Type '"foo"' is not assignable to type '"button" | "submit" | "reset" | undefined'.(2322)
+    // return <Button type="foo"> sldkj </Button>
 
-  // no error
-  return <Button type="button"> text </Button>;
+    // no error
+    return <Button type="button"> text </Button>;
 }
 
 // implementation
-export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
-  specialProp?: string;
+export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
+    specialProp?: string;
 }
 export function Button(props: ButtonProps) {
-  const { specialProp, ...rest } = props;
-  // do something with specialProp
-  return <button {...rest} />;
+    const { specialProp, ...rest } = props;
+    // do something with specialProp
+    return <button {...rest} />;
 }
 ```
 
@@ -96,12 +84,12 @@ This is what happens when you use `React.HTMLProps`:
 
 ```tsx
 export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
-  specialProp: string;
+    specialProp: string;
 }
 export function Button(props: ButtonProps) {
-  const { specialProp, ...rest } = props;
-  // ERROR: Type 'string' is not assignable to type '"button" | "submit" | "reset" | undefined'.
-  return <button {...rest} />;
+    const { specialProp, ...rest } = props;
+    // ERROR: Type 'string' is not assignable to type '"button" | "submit" | "reset" | undefined'.
+    return <button {...rest} />;
 }
 ```
 
@@ -111,12 +99,12 @@ This is what happens when you use `React.HTMLAttributes`:
 
 ```tsx
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  /* etc */
+    /* etc */
 }
 // usage
 function App() {
-  // Property 'type' does not exist on type 'IntrinsicAttributes & ButtonProps'
-  return <Button type="submit"> text </Button>;
+    // Property 'type' does not exist on type 'IntrinsicAttributes & ButtonProps'
+    return <Button type="submit"> text </Button>;
 }
 ```
 
@@ -132,11 +120,11 @@ Usecase: same as above, but for a React Component you don't have access to the u
 const Box = (props: React.CSSProperties) => <div style={props} />;
 
 const Card = (
-  { title, children, ...props }: { title: string } & $ElementProps<typeof Box> // new utility, see below
+    { title, children, ...props }: { title: string } & $ElementProps<typeof Box> // new utility, see below
 ) => (
-  <Box {...props}>
-    {title}: {children}
-  </Box>
+    <Box {...props}>
+        {title}: {children}
+    </Box>
 );
 ```
 
@@ -146,25 +134,17 @@ Example:
 
 ```tsx
 // ReactUtilityTypes.d.ts
-declare type $ElementProps<T> = T extends React.ComponentType<infer Props>
-  ? Props extends object
-    ? Props
-    : never
-  : never;
+declare type $ElementProps<T> = T extends React.ComponentType<infer Props> ? (Props extends object ? Props : never) : never;
 ```
 
 Usage:
 
 ```tsx
-import * as Recompose from "recompose";
-export const defaultProps = <
-  C extends React.ComponentType,
-  D extends Partial<$ElementProps<C>>
->(
-  defaults: D,
-  Component: C
-): React.ComponentType<$ElementProps<C> & Partial<D>> =>
-  Recompose.defaultProps(defaults)(Component);
+import * as Recompose from 'recompose';
+export const defaultProps = <C extends React.ComponentType, D extends Partial<$ElementProps<C>>>(
+    defaults: D,
+    Component: C
+): React.ComponentType<$ElementProps<C> & Partial<D>> => Recompose.defaultProps(defaults)(Component);
 ```
 
 _thanks [dmisdm](https://github.com/typescript-cheatsheets/react/issues/23)_
@@ -173,33 +153,32 @@ _thanks [dmisdm](https://github.com/typescript-cheatsheets/react/issues/23)_
 
 ```tsx
 // base button, with ref forwarding
-type Props = { children: React.ReactNode; type: "submit" | "button" };
+type Props = { children: React.ReactNode; type: 'submit' | 'button' };
 export type Ref = HTMLButtonElement;
 export const FancyButton = React.forwardRef<Ref, Props>((props, ref) => (
-  <button ref={ref} className="MyCustomButtonClass" type={props.type}>
-    {props.children}
-  </button>
+    <button ref={ref} className="MyCustomButtonClass" type={props.type}>
+        {props.children}
+    </button>
 ));
 
 // second layer button, no need for forwardRef (TODO: doublecheck this)
-export interface DoubleWrappedProps
-  extends React.ComponentPropsWithRef<typeof FancyButton> {
-  specialProp?: string;
+export interface DoubleWrappedProps extends React.ComponentPropsWithRef<typeof FancyButton> {
+    specialProp?: string;
 }
 export function DoubleWrappedButton(props: DoubleWrappedProps) {
-  const { specialProp, ref, ...rest } = props;
-  return <button ref={ref} {...rest} />;
+    const { specialProp, ref, ...rest } = props;
+    return <button ref={ref} {...rest} />;
 }
 
 // usage
 function App() {
-  const btnRef = React.useRef<HTMLButtonElement>(null!);
-  return (
-    <DoubleWrappedButton type="button" ref={btnRef}>
-      {" "}
-      text{" "}
-    </DoubleWrappedButton>
-  );
+    const btnRef = React.useRef<HTMLButtonElement>(null!);
+    return (
+        <DoubleWrappedButton type="button" ref={btnRef}>
+            {' '}
+            text{' '}
+        </DoubleWrappedButton>
+    );
 }
 ```
 
@@ -213,9 +192,9 @@ _[TS Playground link](https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAKj
 
 ```tsx
 function PassThrough(props: { as: React.ElementType<any> }) {
-  const { as: Component } = props;
+    const { as: Component } = props;
 
-  return <Component />;
+    return <Component />;
 }
 ```
 
@@ -223,9 +202,9 @@ You might also see this with React Router:
 
 ```tsx
 const PrivateRoute = ({ component: Component, ...rest }: PrivateRouteProps) => {
-  const { isLoggedIn } = useAuth();
+    const { isLoggedIn } = useAuth();
 
-  return isLoggedIn ? <Component {...rest} /> : <Redirect to="/" />;
+    return isLoggedIn ? <Component {...rest} /> : <Redirect to="/" />;
 };
 ```
 
@@ -243,19 +222,19 @@ Just as you can make generic functions and classes in TypeScript, you can also m
 
 ```tsx
 interface Props<T> {
-  items: T[];
-  renderItem: (item: T) => React.ReactNode;
+    items: T[];
+    renderItem: (item: T) => React.ReactNode;
 }
 function List<T>(props: Props<T>) {
-  const { items, renderItem } = props;
-  const [state, setState] = React.useState<T[]>([]); // You can use type T in List function scope.
-  return (
-    <div>
-      {items.map(renderItem)}
-      <button onClick={() => setState(items)}>Clone</button>
-      {JSON.stringify(state, null, 2)}
-    </div>
-  );
+    const { items, renderItem } = props;
+    const [state, setState] = React.useState<T[]>([]); // You can use type T in List function scope.
+    return (
+        <div>
+            {items.map(renderItem)}
+            <button onClick={() => setState(items)}>Clone</button>
+            {JSON.stringify(state, null, 2)}
+        </div>
+    );
 }
 ```
 
@@ -263,16 +242,16 @@ You can then use the generic components and get nice type safety through type in
 
 ```tsx
 ReactDOM.render(
-  <List
-    items={["a", "b"]} // type of 'string' inferred
-    renderItem={(item) => (
-      <li key={item}>
-        {/* Error: Property 'toPrecision' does not exist on type 'string'. */}
-        {item.toPrecision(3)}
-      </li>
-    )}
-  />,
-  document.body
+    <List
+        items={['a', 'b']} // type of 'string' inferred
+        renderItem={(item) => (
+            <li key={item}>
+                {/* Error: Property 'toPrecision' does not exist on type 'string'. */}
+                {item.toPrecision(3)}
+            </li>
+        )}
+    />,
+    document.body
 );
 ```
 
@@ -280,11 +259,11 @@ As of [TS 2.9](#typescript-29), you can also supply the type parameter in your J
 
 ```tsx
 ReactDOM.render(
-  <List<number>
-    items={["a", "b"]} // Error: Type 'string' is not assignable to type 'number'.
-    renderItem={(item) => <li key={item}>{item.toPrecision(3)}</li>}
-  />,
-  document.body
+    <List<number>
+        items={['a', 'b']} // Error: Type 'string' is not assignable to type 'number'.
+        renderItem={(item) => <li key={item}>{item.toPrecision(3)}</li>}
+    />,
+    document.body
 );
 ```
 
@@ -292,23 +271,23 @@ You can also use Generics using fat arrow function style:
 
 ```tsx
 interface Props<T> {
-  items: T[];
-  renderItem: (item: T) => React.ReactNode;
+    items: T[];
+    renderItem: (item: T) => React.ReactNode;
 }
 
 // Note the <T extends unknown> before the function definition.
 // You can't use just `<T>` as it will confuse the TSX parser whether it's a JSX tag or a Generic Declaration.
 // You can also use <T,> https://github.com/microsoft/TypeScript/issues/15713#issuecomment-499474386
 const List = <T extends unknown>(props: Props<T>) => {
-  const { items, renderItem } = props;
-  const [state, setState] = React.useState<T[]>([]); // You can use type T in List function scope.
-  return (
-    <div>
-      {items.map(renderItem)}
-      <button onClick={() => setState(items)}>Clone</button>
-      {JSON.stringify(state, null, 2)}
-    </div>
-  );
+    const { items, renderItem } = props;
+    const [state, setState] = React.useState<T[]>([]); // You can use type T in List function scope.
+    return (
+        <div>
+            {items.map(renderItem)}
+            <button onClick={() => setState(items)}>Clone</button>
+            {JSON.stringify(state, null, 2)}
+        </div>
+    );
 };
 ```
 
@@ -316,31 +295,31 @@ The same for using classes: (Credit: [Karol Majewski](https://twitter.com/WrocTy
 
 ```tsx
 interface Props<T> {
-  items: T[];
-  renderItem: (item: T) => React.ReactNode;
+    items: T[];
+    renderItem: (item: T) => React.ReactNode;
 }
 
 interface State<T> {
-  items: T[];
+    items: T[];
 }
 
 class List<T> extends React.PureComponent<Props<T>, State<T>> {
-  // You can use type T inside List class.
-  state: Readonly<State<T>> = {
-    items: [],
-  };
-  render() {
-    const { items, renderItem } = this.props;
     // You can use type T inside List class.
-    const clone: T[] = items.slice(0);
-    return (
-      <div>
-        {items.map(renderItem)}
-        <button onClick={() => this.setState({ items: clone })}>Clone</button>
-        {JSON.stringify(this.state, null, 2)}
-      </div>
-    );
-  }
+    state: Readonly<State<T>> = {
+        items: []
+    };
+    render() {
+        const { items, renderItem } = this.props;
+        // You can use type T inside List class.
+        const clone: T[] = items.slice(0);
+        return (
+            <div>
+                {items.map(renderItem)}
+                <button onClick={() => this.setState({ items: clone })}>Clone</button>
+                {JSON.stringify(this.state, null, 2)}
+            </div>
+        );
+    }
 }
 ```
 
@@ -348,10 +327,10 @@ Though you can't use Generic Type Parameters for Static Members:
 
 ```tsx
 class List<T> extends React.PureComponent<Props<T>, State<T>> {
-  // Static members cannot reference class type parameters.ts(2302)
-  static getDerivedStateFromProps(props: Props<T>, state: State<T>) {
-    return { items: props.items };
-  }
+    // Static members cannot reference class type parameters.ts(2302)
+    static getDerivedStateFromProps(props: Props<T>, state: State<T>) {
+        return { items: props.items };
+    }
 }
 ```
 
@@ -359,9 +338,9 @@ To fix this you need to convert your static function to a type inferred function
 
 ```tsx
 class List<T> extends React.PureComponent<Props<T>, State<T>> {
-  static getDerivedStateFromProps<T>(props: Props<T>, state: State<T>) {
-    return { items: props.items };
-  }
+    static getDerivedStateFromProps<T>(props: Props<T>, state: State<T>) {
+        return { items: props.items };
+    }
 }
 ```
 
@@ -371,18 +350,18 @@ class List<T> extends React.PureComponent<Props<T>, State<T>> {
 
 ```tsx
 interface WrapperProps<T> {
-  item: T;
-  renderItem: (item: T) => React.ReactNode;
+    item: T;
+    renderItem: (item: T) => React.ReactNode;
 }
 
 /* Property 'children' does not exist on type 'WrapperProps<T>'. */
 const Wrapper = <T extends {}>(props: WrapperProps<T>) => {
-  return (
-    <div>
-      {props.renderItem(props.item)}
-      {props.children}
-    </div>
-  );
+    return (
+        <div>
+            {props.renderItem(props.item)}
+            {props.children}
+        </div>
+    );
 };
 
 /*
@@ -391,9 +370,9 @@ Type '{ children: string; item: string; renderItem: (item: string) => string; }'
 */
 
 const wrapper = (
-  <Wrapper item="test" renderItem={(item) => item}>
-    {test}
-  </Wrapper>
+    <Wrapper item="test" renderItem={(item) => item}>
+        {test}
+    </Wrapper>
 );
 ```
 
@@ -403,18 +382,18 @@ To work around that, either add `children` to the `WrapperProps` definition (pos
 
 ```tsx
 interface WrapperProps<T> {
-  item: T;
-  renderItem: (item: T) => React.ReactNode;
-  children: string; // The component will only accept a single string child
+    item: T;
+    renderItem: (item: T) => React.ReactNode;
+    children: string; // The component will only accept a single string child
 }
 
 const Wrapper = <T extends {}>(props: WrapperProps<T>) => {
-  return (
-    <div>
-      {props.renderItem(props.item)}
-      {props.children}
-    </div>
-  );
+    return (
+        <div>
+            {props.renderItem(props.item)}
+            {props.children}
+        </div>
+    );
 };
 ```
 
@@ -422,19 +401,17 @@ or wrap the type of the props in `React.PropsWithChildren` (this is what `React.
 
 ```tsx
 interface WrapperProps<T> {
-  item: T;
-  renderItem: (item: T) => React.ReactNode;
+    item: T;
+    renderItem: (item: T) => React.ReactNode;
 }
 
-const Wrapper = <T extends {}>(
-  props: React.PropsWithChildren<WrapperProps<T>>
-) => {
-  return (
-    <div>
-      {props.renderItem(props.item)}
-      {props.children}
-    </div>
-  );
+const Wrapper = <T extends {}>(props: React.PropsWithChildren<WrapperProps<T>>) => {
+    return (
+        <div>
+            {props.renderItem(props.item)}
+            {props.children}
+        </div>
+    );
 };
 ```
 
@@ -463,12 +440,12 @@ Don't forget that you can also use `prop-types` if TS fails you.
 
 ```ts
 Parent.propTypes = {
-  children: PropTypes.shape({
-    props: PropTypes.shape({
-      // could share `propTypes` to the child
-      value: PropTypes.string.isRequired,
-    }),
-  }).isRequired,
+    children: PropTypes.shape({
+        props: PropTypes.shape({
+            // could share `propTypes` to the child
+            value: PropTypes.string.isRequired
+        })
+    }).isRequired
 };
 ```
 
@@ -487,18 +464,18 @@ What you want:
 ```tsx
 // Usage
 function App() {
-  return (
-    <>
-      {/* 😎 All good */}
-      <Button target="_blank" href="https://www.google.com">
-        Test
-      </Button>
-      {/* 😭 Error, `disabled` doesnt exist on anchor element */}
-      <Button disabled href="x">
-        Test
-      </Button>
-    </>
-  );
+    return (
+        <>
+            {/* 😎 All good */}
+            <Button target="_blank" href="https://www.google.com">
+                Test
+            </Button>
+            {/* 😭 Error, `disabled` doesnt exist on anchor element */}
+            <Button disabled href="x">
+                Test
+            </Button>
+        </>
+    );
 }
 ```
 
@@ -507,30 +484,29 @@ How to implement: Use [type guards](https://basarat.gitbooks.io/typescript/docs/
 ```tsx
 // Button props
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  href?: undefined;
+    href?: undefined;
 };
 
 // Anchor props
 type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  href?: string;
+    href?: string;
 };
 
 // Input/output options
 type Overload = {
-  (props: ButtonProps): JSX.Element;
-  (props: AnchorProps): JSX.Element;
+    (props: ButtonProps): JSX.Element;
+    (props: AnchorProps): JSX.Element;
 };
 
 // Guard to check if href exists in props
-const hasHref = (props: ButtonProps | AnchorProps): props is AnchorProps =>
-  "href" in props;
+const hasHref = (props: ButtonProps | AnchorProps): props is AnchorProps => 'href' in props;
 
 // Component
 const Button: Overload = (props: ButtonProps | AnchorProps) => {
-  // anchor render
-  if (hasHref(props)) return <a {...props} />;
-  // button render
-  return <button {...props} />;
+    // anchor render
+    if (hasHref(props)) return <a {...props} />;
+    // button render
+    return <button {...props} />;
 };
 ```
 
@@ -541,102 +517,98 @@ Components, and JSX in general, are analogous to functions. When a component can
 A very common use case for this is to render something as either a button or an anchor, based on if it receives a `href` attribute.
 
 ```tsx
-type ButtonProps = JSX.IntrinsicElements["button"];
-type AnchorProps = JSX.IntrinsicElements["a"];
+type ButtonProps = JSX.IntrinsicElements['button'];
+type AnchorProps = JSX.IntrinsicElements['a'];
 
 // optionally use a custom type guard
-function isPropsForAnchorElement(
-  props: ButtonProps | AnchorProps
-): props is AnchorProps {
-  return "href" in props;
+function isPropsForAnchorElement(props: ButtonProps | AnchorProps): props is AnchorProps {
+    return 'href' in props;
 }
 
 function Clickable(props: ButtonProps | AnchorProps) {
-  if (isPropsForAnchorElement(props)) {
-    return <a {...props} />;
-  } else {
-    return <button {...props} />;
-  }
+    if (isPropsForAnchorElement(props)) {
+        return <a {...props} />;
+    } else {
+        return <button {...props} />;
+    }
 }
 ```
 
 They don't even need to be completely different props, as long as they have at least one difference in properties:
 
 ```tsx
-type LinkProps = Omit<JSX.IntrinsicElements["a"], "href"> & { to?: string };
+type LinkProps = Omit<JSX.IntrinsicElements['a'], 'href'> & { to?: string };
 
 function RouterLink(props: LinkProps | AnchorProps) {
-  if ("href" in props) {
-    return <a {...props} />;
-  } else {
-    return <Link {...props} />;
-  }
+    if ('href' in props) {
+        return <a {...props} />;
+    } else {
+        return <Link {...props} />;
+    }
 }
 ```
 
 <details>
-  <summary><b>Approach: Generic Components</b></summary>
+  <summary>
+<b>Approach: Generic Components</b>
+</summary>
 
 Here is an example solution, see the further discussion for other solutions. _thanks to [@jpavon](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/12#issuecomment-394440577)_
 
 ```tsx
 interface LinkProps {}
 type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
-type RouterLinkProps = Omit<NavLinkProps, "href">;
+type RouterLinkProps = Omit<NavLinkProps, 'href'>;
 
-const Link = <T extends {}>(
-  props: LinkProps & T extends RouterLinkProps ? RouterLinkProps : AnchorProps
-) => {
-  if ((props as RouterLinkProps).to) {
-    return <NavLink {...(props as RouterLinkProps)} />;
-  } else {
-    return <a {...(props as AnchorProps)} />;
-  }
+const Link = <T extends {}>(props: LinkProps & T extends RouterLinkProps ? RouterLinkProps : AnchorProps) => {
+    if ((props as RouterLinkProps).to) {
+        return <NavLink {...(props as RouterLinkProps)} />;
+    } else {
+        return <a {...(props as AnchorProps)} />;
+    }
 };
 
 <Link<RouterLinkProps> to="/">My link</Link>; // ok
 <Link<AnchorProps> href="/">My link</Link>; // ok
 <Link<RouterLinkProps> to="/" href="/">
-  My link
+    My link
 </Link>; // error
 ```
 
 </details>
 
 <details>
-  <summary><b>Approach: Composition</b></summary>
+  <summary>
+<b>Approach: Composition</b>
+</summary>
 
 If you want to conditionally render a component, sometimes is better to use [React's composition model](https://reactjs.org/docs/composition-vs-inheritance.html) to have simpler components and better to understand typings:
 
 ```tsx
 type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
-type RouterLinkProps = Omit<AnchorProps, "href">;
+type RouterLinkProps = Omit<AnchorProps, 'href'>;
 
 interface Button {
-  as: React.ComponentClass | "a";
+    as: React.ComponentClass | 'a';
 }
 
 const Button: React.FunctionComponent<Button> = (props) => {
-  const { as: Component, children, ...rest } = props;
-  return (
-    <Component className="button" {...rest}>
-      {children}
-    </Component>
-  );
+    const { as: Component, children, ...rest } = props;
+    return (
+        <Component className="button" {...rest}>
+            {children}
+        </Component>
+    );
 };
 
-const AnchorButton: React.FunctionComponent<AnchorProps> = (props) => (
-  <Button as="a" {...props} />
-);
+const AnchorButton: React.FunctionComponent<AnchorProps> = (props) => <Button as="a" {...props} />;
 
-const LinkButton: React.FunctionComponent<RouterLinkProps> = (props) => (
-  <Button as={NavLink} {...props} />
-);
+const LinkButton: React.FunctionComponent<RouterLinkProps> = (props) => <Button as={NavLink} {...props} />;
 
 <LinkButton to="/login">Login</LinkButton>;
 <AnchorButton href="/login">Login</AnchorButton>;
 <AnchorButton href="/login" to="/test">
-  Login
+    Login
 </AnchorButton>; // Error: Property 'to' does not exist on type...
 ```
 
@@ -648,24 +620,24 @@ Here is a brief intuition for **Discriminated Union Types**:
 
 ```ts
 type UserTextEvent = {
-  type: "TextEvent";
-  value: string;
-  target: HTMLInputElement;
+    type: 'TextEvent';
+    value: string;
+    target: HTMLInputElement;
 };
 type UserMouseEvent = {
-  type: "MouseEvent";
-  value: [number, number];
-  target: HTMLElement;
+    type: 'MouseEvent';
+    value: [number, number];
+    target: HTMLElement;
 };
 type UserEvent = UserTextEvent | UserMouseEvent;
 function handle(event: UserEvent) {
-  if (event.type === "TextEvent") {
-    event.value; // string
-    event.target; // HTMLInputElement
-    return;
-  }
-  event.value; // [number, number]
-  event.target; // HTMLElement
+    if (event.type === 'TextEvent') {
+        event.value; // string
+        event.target; // HTMLInputElement
+        return;
+    }
+    event.value; // [number, number]
+    event.target; // HTMLElement
 }
 ```
 
@@ -679,13 +651,13 @@ type UserTextEvent = { value: string; target: HTMLInputElement };
 type UserMouseEvent = { value: [number, number]; target: HTMLElement };
 type UserEvent = UserTextEvent | UserMouseEvent;
 function handle(event: UserEvent) {
-  if (typeof event.value === "string") {
-    event.value; // string
+    if (typeof event.value === 'string') {
+        event.value; // string
+        event.target; // HTMLInputElement | HTMLElement (!!!!)
+        return;
+    }
+    event.value; // [number, number]
     event.target; // HTMLInputElement | HTMLElement (!!!!)
-    return;
-  }
-  event.value; // [number, number]
-  event.target; // HTMLInputElement | HTMLElement (!!!!)
 }
 ```
 
@@ -696,42 +668,44 @@ The above example does not work as we are not checking the value of `event.value
 <details>
   <summary>
   Discriminated Unions in TypeScript can also work with hook dependencies in React. The type matched is automatically updated when the corresponding union member based on which a hook depends, changes. Expand more to see an example usecase.
-   <br/><br/>
+   <br/>
+<br/>
   </summary>
 
 ```tsx
 type SingleElement = {
-  isArray: true;
-  value: string[];
+    isArray: true;
+    value: string[];
 };
 type MultiElement = {
-  isArray: false;
-  value: string;
+    isArray: false;
+    value: string;
 };
 type Props = SingleElement | MultiElement;
 function Sequence(p: Props) {
-  return React.useMemo(
-    () => (
-      <div>
-        value(s):
-        {p.isArray && p.value.join(",")}
-        {!p.isArray && p.value}
-      </div>
-    ),
-    [p.isArray, p.value] // TypeScript automatically matches the corresponding value type based on dependency change
-  );
+    return React.useMemo(
+        () => (
+            <div>
+                value(s):
+                {p.isArray && p.value.join(',')}
+                {!p.isArray && p.value}
+            </div>
+        ),
+        [p.isArray, p.value] // TypeScript automatically matches the corresponding value type based on dependency change
+    );
 }
 function App() {
-  return (
-    <div>
-      <Sequence isArray={false} value={"foo"} />
-      <Sequence isArray={true} value={["foo", "bar", "baz"]} />
-    </div>
-  );
+    return (
+        <div>
+            <Sequence isArray={false} value={'foo'} />
+            <Sequence isArray={true} value={['foo', 'bar', 'baz']} />
+        </div>
+    );
 }
 ```
 
-<a href="https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAKjgQwM5wEoFNkGN4BmUEIcA5FDvmQNwBQdMAnmFnAArFjoC8dccAD5wA3vwETgqAIJQoyJgC44MKAFcs9CRIBuyADYblqVcAB2AcwDaAXRpxxAgL7jhY7QKmz5SuAQOomo66BkZwJlDmFloSTvS4EGYmcAAacDxwABRgypwQ3ACU6QB8ouKUMGpQZphUMAB0aoEAslggEJnBmUU8pZ0ecAA8ACbAOsXB2nqGWJmoBYqTEiJg9V5yCnAAZFtwq9Ma9QBWEOaZZAA0ZAUuAwIiAISr6z7bu-uhWLcegwD0o+NggULsErM8ZBsmBc9vUDlgbNDfr84AAVFhYVC4SJgeDINQwEjIGDAXAGfRMOAgIm4AAWGJUdLgCTkGMgZlGljgcJU6PEBXocToBDUZnwwEScGkYDA3TKAgqVRq-QkIzGTP0aFQADlkCAsDwAERSsAGiYDQZpF4KHgifz6QJOLmfG1kAgQCBkR2-M0-S0Qnw21QaR1wm1WV3uy7kABGyCgUbIsYAXmQbF6fQI-gCffy6E4gA"><i>See this in TS Playground</i>
+<a href="https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAKjgQwM5wEoFNkGN4BmUEIcA5FDvmQNwBQdMAnmFnAArFjoC8dccAD5wA3vwETgqAIJQoyJgC44MKAFcs9CRIBuyADYblqVcAB2AcwDaAXRpxxAgL7jhY7QKmz5SuAQOomo66BkZwJlDmFloSTvS4EGYmcAAacDxwABRgypwQ3ACU6QB8ouKUMGpQZphUMAB0aoEAslggEJnBmUU8pZ0ecAA8ACbAOsXB2nqGWJmoBYqTEiJg9V5yCnAAZFtwq9Ma9QBWEOaZZAA0ZAUuAwIiAISr6z7bu-uhWLcegwD0o+NggULsErM8ZBsmBc9vUDlgbNDfr84AAVFhYVC4SJgeDINQwEjIGDAXAGfRMOAgIm4AAWGJUdLgCTkGMgZlGljgcJU6PEBXocToBDUZnwwEScGkYDA3TKAgqVRq-QkIzGTP0aFQADlkCAsDwAERSsAGiYDQZpF4KHgifz6QJOLmfG1kAgQCBkR2-M0-S0Qnw21QaR1wm1WV3uy7kABGyCgUbIsYAXmQbF6fQI-gCffy6E4gA">
+<i>See this in TS Playground</i>
 </a>
 
 In the above example, based on the `isArray` union member, the type of the `value` hook dependency changes.
@@ -742,7 +716,7 @@ To streamline this you may also combine this with the concept of **User-Defined 
 
 ```ts
 function isString(a: unknown): a is string {
-  return typeof a === "string";
+    return typeof a === 'string';
 }
 ```
 
@@ -757,20 +731,20 @@ type Props1 = { foo: string };
 type Props2 = { bar: string };
 
 function MyComponent(props: Props1 | Props2) {
-  if ("foo" in props) {
-    // props.bar // error
-    return <div>{props.foo}</div>;
-  } else {
-    // props.foo // error
-    return <div>{props.bar}</div>;
-  }
+    if ('foo' in props) {
+        // props.bar // error
+        return <div>{props.foo}</div>;
+    } else {
+        // props.foo // error
+        return <div>{props.bar}</div>;
+    }
 }
 const UsageComponent: React.FC = () => (
-  <div>
-    <MyComponent foo="foo" />
-    <MyComponent bar="bar" />
-    {/* <MyComponent foo="foo" bar="bar"/> // invalid */}
-  </div>
+    <div>
+        <MyComponent foo="foo" />
+        <MyComponent bar="bar" />
+        {/* <MyComponent foo="foo" bar="bar"/> // invalid */}
+    </div>
 );
 ```
 
@@ -781,15 +755,13 @@ Further reading: [how to ban passing `{}` if you have a `NoFields` type.](http:/
 ## Props: Must Pass Both
 
 ```tsx
-type OneOrAnother<T1, T2> =
-  | (T1 & { [K in keyof T2]?: undefined })
-  | (T2 & { [K in keyof T1]?: undefined });
+type OneOrAnother<T1, T2> = (T1 & { [K in keyof T2]?: undefined }) | (T2 & { [K in keyof T1]?: undefined });
 
 type Props = OneOrAnother<{ a: string; b: string }, {}>;
 
-const a: Props = { a: "a" }; // error
-const b: Props = { b: "b" }; // error
-const ab: Props = { a: "a", b: "b" }; // ok
+const a: Props = { a: 'a' }; // error
+const b: Props = { b: 'b' }; // error
+const ab: Props = { a: 'a', b: 'b' }; // ok
 ```
 
 Thanks [diegohaz](https://twitter.com/kentcdodds/status/1085655423611367426)
@@ -804,16 +776,16 @@ Usage example:
 
 ```tsx
 const App: React.FC = () => (
-  <>
-    {/* these all typecheck */}
-    <Text>not truncated</Text>
-    <Text truncate>truncated</Text>
-    <Text truncate expanded>
-      truncate-able but expanded
-    </Text>
-    {/* TS error: Property 'truncate' is missing in type '{ children: string; expanded: true; }' but required in type '{ truncate: true; expanded?: boolean | undefined; }'. */}
-    <Text expanded>truncate-able but expanded</Text>
-  </>
+    <>
+        {/* these all typecheck */}
+        <Text>not truncated</Text>
+        <Text truncate>truncated</Text>
+        <Text truncate expanded>
+            truncate-able but expanded
+        </Text>
+        {/* TS error: Property 'truncate' is missing in type '{ children: string; expanded: true; }' but required in type '{ truncate: true; expanded?: boolean | undefined; }'. */}
+        <Text expanded>truncate-able but expanded</Text>
+    </>
 );
 ```
 
@@ -821,8 +793,8 @@ You can implement this by function overloads:
 
 ```tsx
 type CommonProps = {
-  children: React.ReactNode;
-  miscProps?: any;
+    children: React.ReactNode;
+    miscProps?: any;
 };
 
 type NoTruncateProps = CommonProps & { truncate?: false };
@@ -833,13 +805,13 @@ type TruncateProps = CommonProps & { truncate: true; expanded?: boolean };
 function Text(props: NoTruncateProps): JSX.Element;
 function Text(props: TruncateProps): JSX.Element;
 function Text(props: CommonProps & { truncate?: boolean; expanded?: boolean }) {
-  const { children, truncate, expanded, ...otherProps } = props;
-  const classNames = truncate ? ".truncate" : "";
-  return (
-    <div className={classNames} aria-expanded={!!expanded} {...otherProps}>
-      {children}
-    </div>
-  );
+    const { children, truncate, expanded, ...otherProps } = props;
+    const classNames = truncate ? '.truncate' : '';
+    return (
+        <div className={classNames} aria-expanded={!!expanded} {...otherProps}>
+            {children}
+        </div>
+    );
 }
 ```
 
@@ -851,25 +823,23 @@ Sometimes when intersecting types, we want to define our own version of a prop. 
 
 ```tsx
 export interface Props {
-  label: React.ReactNode; // this will conflict with the InputElement's label
+    label: React.ReactNode; // this will conflict with the InputElement's label
 }
 
 // this comes inbuilt with TS 3.5
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 
 // usage
-export const Checkbox = (
-  props: Props & Omit<React.HTMLProps<HTMLInputElement>, "label">
-) => {
-  const { label } = props;
-  return (
-    <div className="Checkbox">
-      <label className="Checkbox-label">
-        <input type="checkbox" {...props} />
-      </label>
-      <span>{label}</span>
-    </div>
-  );
+export const Checkbox = (props: Props & Omit<React.HTMLProps<HTMLInputElement>, 'label'>) => {
+    const { label } = props;
+    return (
+        <div className="Checkbox">
+            <label className="Checkbox-label">
+                <input type="checkbox" {...props} />
+            </label>
+            <span>{label}</span>
+        </div>
+    );
 };
 ```
 
@@ -877,14 +847,12 @@ When your component defines multiple props, chances of those conflicts increase.
 
 ```tsx
 export interface Props {
-  label: React.ReactNode; // conflicts with the InputElement's label
-  onChange: (text: string) => void; // conflicts with InputElement's onChange
+    label: React.ReactNode; // conflicts with the InputElement's label
+    onChange: (text: string) => void; // conflicts with InputElement's onChange
 }
 
-export const Textbox = (
-  props: Props & Omit<React.HTMLProps<HTMLInputElement>, keyof Props>
-) => {
-  // implement Textbox component ...
+export const Textbox = (props: Props & Omit<React.HTMLProps<HTMLInputElement>, keyof Props>) => {
+    // implement Textbox component ...
 };
 ```
 
@@ -899,9 +867,9 @@ A simple solution is to use `React.ComponentProps`:
 ```tsx
 // a Modal component defined elsewhere
 const defaultProps: React.ComponentProps<typeof Modal> = {
-  title: "Hello World",
-  visible: true,
-  onClick: jest.fn(),
+    title: 'Hello World',
+    visible: true,
+    onClick: jest.fn()
 };
 ```
 
@@ -915,16 +883,16 @@ Sometimes you will want to write a function that can take a React element or a s
 
 ```tsx
 export interface Props {
-  label?: React.ReactNode;
-  children: React.ReactNode;
+    label?: React.ReactNode;
+    children: React.ReactNode;
 }
 export const Card = (props: Props) => {
-  return (
-    <div>
-      {props.label && <div>{props.label}</div>}
-      {props.children}
-    </div>
-  );
+    return (
+        <div>
+            {props.label && <div>{props.label}</div>}
+            {props.children}
+        </div>
+    );
 };
 ```
 
@@ -932,7 +900,7 @@ If you are using a function-as-a-child render prop:
 
 ```tsx
 export interface Props {
-  children: (foo: string) => React.ReactNode;
+    children: (foo: string) => React.ReactNode;
 }
 ```
 
@@ -953,22 +921,21 @@ class DateIsInFutureError extends RangeError {}
  *
  */
 function parse(date: string) {
-  if (!isValid(date))
-    throw new InvalidDateFormatError("not a valid date format");
-  if (isInFuture(date)) throw new DateIsInFutureError("date is in the future");
-  // ...
+    if (!isValid(date)) throw new InvalidDateFormatError('not a valid date format');
+    if (isInFuture(date)) throw new DateIsInFutureError('date is in the future');
+    // ...
 }
 
 try {
-  // call parse(date) somewhere
+    // call parse(date) somewhere
 } catch (e) {
-  if (e instanceof InvalidDateFormatError) {
-    console.error("invalid date format", e);
-  } else if (e instanceof DateIsInFutureError) {
-    console.warn("date is in future", e);
-  } else {
-    throw e;
-  }
+    if (e instanceof InvalidDateFormatError) {
+        console.error('invalid date format', e);
+    } else if (e instanceof DateIsInFutureError) {
+        console.warn('date is in future', e);
+    } else {
+        throw e;
+    }
 }
 ```
 
@@ -977,30 +944,27 @@ try {
 Simply throwing an exception is fine, however it would be nice to make TypeScript remind the consumer of your code to handle your exception. We can do that just by returning instead of throwing:
 
 ```ts
-function parse(
-  date: string
-): Date | InvalidDateFormatError | DateIsInFutureError {
-  if (!isValid(date))
-    return new InvalidDateFormatError("not a valid date format");
-  if (isInFuture(date)) return new DateIsInFutureError("date is in the future");
-  // ...
+function parse(date: string): Date | InvalidDateFormatError | DateIsInFutureError {
+    if (!isValid(date)) return new InvalidDateFormatError('not a valid date format');
+    if (isInFuture(date)) return new DateIsInFutureError('date is in the future');
+    // ...
 }
 
 // now consumer *has* to handle the errors
-let result = parse("mydate");
+let result = parse('mydate');
 if (result instanceof InvalidDateFormatError) {
-  console.error("invalid date format", result.message);
+    console.error('invalid date format', result.message);
 } else if (result instanceof DateIsInFutureError) {
-  console.warn("date is in future", result.message);
+    console.warn('date is in future', result.message);
 } else {
-  /// use result safely
+    /// use result safely
 }
 
 // alternately you can just handle all errors
 if (result instanceof Error) {
-  console.error("error", result);
+    console.error('error', result);
 } else {
-  /// use result safely
+    /// use result safely
 }
 ```
 
@@ -1008,39 +972,39 @@ You can also describe exceptions with special-purpose data types (don't say mona
 
 ```ts
 interface Option<T> {
-  flatMap<U>(f: (value: T) => None): None;
-  flatMap<U>(f: (value: T) => Option<U>): FormikOption<U>;
-  getOrElse(value: T): T;
+    flatMap<U>(f: (value: T) => None): None;
+    flatMap<U>(f: (value: T) => Option<U>): FormikOption<U>;
+    getOrElse(value: T): T;
 }
 class Some<T> implements Option<T> {
-  constructor(private value: T) {}
-  flatMap<U>(f: (value: T) => None): None;
-  flatMap<U>(f: (value: T) => Some<U>): Some<U>;
-  flatMap<U>(f: (value: T) => Option<U>): Option<U> {
-    return f(this.value);
-  }
-  getOrElse(): T {
-    return this.value;
-  }
+    constructor(private value: T) {}
+    flatMap<U>(f: (value: T) => None): None;
+    flatMap<U>(f: (value: T) => Some<U>): Some<U>;
+    flatMap<U>(f: (value: T) => Option<U>): Option<U> {
+        return f(this.value);
+    }
+    getOrElse(): T {
+        return this.value;
+    }
 }
 class None implements Option<never> {
-  flatMap<U>(): None {
-    return this;
-  }
-  getOrElse<U>(value: U): U {
-    return value;
-  }
+    flatMap<U>(): None {
+        return this;
+    }
+    getOrElse<U>(value: U): U {
+        return value;
+    }
 }
 
 // now you can use it like:
 let result = Option(6) // Some<number>
-  .flatMap((n) => Option(n * 3)) // Some<number>
-  .flatMap((n = new None())) // None
-  .getOrElse(7);
+    .flatMap((n) => Option(n * 3)) // Some<number>
+    .flatMap((n = new None())) // None
+    .getOrElse(7);
 
 // or:
 let result = ask() // Option<string>
-  .flatMap(parse) // Option<Date>
-  .flatMap((d) => new Some(d.toISOString())) // Option<string>
-  .getOrElse("error parsing string");
+    .flatMap(parse) // Option<Date>
+    .flatMap((d) => new Some(d.toISOString())) // Option<string>
+    .getOrElse('error parsing string');
 ```
