@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bgoonz-blog</title>
+    <meta name="description" content="Docky">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hljs-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <header style="background-color:#2E8CFF">
+          <div class="title">Bgoonz-blog</div>
+          <div class="info"><span class="version">(1.11.5)</span>
+          </div>
+        </header>
+        <ul class="grouped">
+          <li class="heading"><a href="#introduction">Introduction</a></li>
+        </ul>
+        <footer>
+          <p>Generated with<a href="https://github.com/markmur/docky"> Docky</a></p>
+        </footer>
+      </aside>
+      <section id="methods">
+        <div class="components">
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      var sidebar = document.querySelector('aside');
+      sidebar.addEventListener('mouseover', (e) => {
+        document.body.classList.add('noscroll');
+      });
+      
+      sidebar.addEventListener('mouseleave', (e) => {
+        document.body.classList.remove('noscroll');
+      });
+    </script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+      $('a[href^=\\#]').click(function(event) {
+        $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        event.preventDefault();
+      });
+    </script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
