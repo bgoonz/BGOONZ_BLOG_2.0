@@ -1,27 +1,28 @@
 ---
-title: React Interview Questions & Answers
-subtitle: lorem-ipsum
-date: '2021-11-24'
-thumb_image_alt: image of
+title: React Questions
+subtitle: react excel sheet
+date: '2022-01-17'
+thumb_image_alt: es6
 excerpt: lorem-ipsum
 seo:
-    title: 'React Interview Questions & Answers'
-    description: ''
-    robots: []
-    extra: []
+  title: ''
+  description: ''
+  robots: []
+  extra: []
 template: post
-thumb_image: images/es6.jpg
+thumb_image: images/web-development-abstract.jpg
 ---
 
 ## React Interview Questions & Answers
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True">
-</iframe>
-<br>
+<iframe width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+
+
 
 <details>
 
-<summary> Questions Table  </summary>
+<summary> Questions Table  </summary>   
+
 
 #### Table of Contents
 
@@ -2415,4 +2416,11 @@ thumb_image: images/es6.jpg
 </tbody>
 </table>
 
+
+
+
 </details>
+
+
+
+
